@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Problem Concern Act - conformance rules</title>
+<shortdesc id="shortdesc">[Act: templateId <tt>2.16.840.1.113883.10.20.22.4.3</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Act</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.22.4.3"/>
+</prolog>
+<body>
+<section id="description">
+<p>Observations of problems or other clinical statements captured at a point in time are wrapped in a "Concern" act, which represents the ongoing process tracked over time. This allows for binding related observations of problems. For example, the observation of "Acute MI" in 2004 can be related to the observation of "History of MI" in 2006 because they are the same concern. The conformance statements in this section define an outer "problem act" (representing the "Concern") that can contain a nested "problem observation" or other nested clinical statements.</p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ACT" </tt><i>Act</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:9024)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:9025)
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:9026)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="CONC" </tt><i>Concern</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:9440)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> 2.16.840.1.113883.11.20.9.19 <xref href="../../terminology/ProblemActStatusCode.dita">ProblemActStatusCode</xref></tt><b> STATIC</b> 2011-09-09 (CONF:9029)
+<ul><li><p>
+The statusCode associated with any concern must be one of the following values:
+</p>
+<p>
+<b>active</b>: A concern that is still being tracked.
+<b>suspended</b>: A concern that is active, but which may be set aside. For example, this value might be used to suspend concern
+about a patient problem after some period of remission, but before assumption that the concern has been resolved.
+<b>aborted</b>: A concern that is no longer actively being tracked, but for reasons other than because the problem was resolved.
+This value might be used to mark a concern as being aborted after a patient leaves care against medical advice.
+<b>completed</b>:
+The problem, allergy or medical state has been resolved and the concern no longer needs to be tracked except for
+historical purposes.
+</p></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:9030)
+<ul><li>The effectiveTime element records the starting and ending times during which the concern was active on the Problem List.</li></ul></li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>problemObservation</b></tt> (CONF:9036)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>SUBJ" </tt><i>SUBJ</i></li>
+<li>Contains exactly one [1..1] <xref href="../ProblemObservation.dita">Problem Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.4</tt>)</li></ol></li>
+<li>effectiveTime <b>SHALL</b> contain exactly one [1..1] low (CONF:9032)</li>
+<li>effectiveTime <b>SHOULD</b> contain zero or one [0..1] high (CONF:9033)</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ACT" </tt><i>Act</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:9024)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:9025)
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:9026)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="CONC" </tt><i>Concern</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:9440)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> 2.16.840.1.113883.11.20.9.19 <xref href="../../terminology/ProblemActStatusCode.dita">ProblemActStatusCode</xref></tt><b> STATIC</b> 2011-09-09 (CONF:9029)
+<ul><li><p>
+The statusCode associated with any concern must be one of the following values:
+</p>
+<p>
+<b>active</b>: A concern that is still being tracked.
+<b>suspended</b>: A concern that is active, but which may be set aside. For example, this value might be used to suspend concern
+about a patient problem after some period of remission, but before assumption that the concern has been resolved.
+<b>aborted</b>: A concern that is no longer actively being tracked, but for reasons other than because the problem was resolved.
+This value might be used to mark a concern as being aborted after a patient leaves care against medical advice.
+<b>completed</b>:
+The problem, allergy or medical state has been resolved and the concern no longer needs to be tracked except for
+historical purposes.
+</p></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:9030)
+<ul><li>The effectiveTime element records the starting and ending times during which the concern was active on the Problem List.</li></ul></li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>problemObservation</b></tt> (CONF:9036)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>SUBJ" </tt><i>SUBJ</i></li>
+<li>Contains exactly one [1..1] <xref href="../ProblemObservation.dita">Problem Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.4</tt>)</li></ol></li>
+<li>effectiveTime <b>SHALL</b> contain exactly one [1..1] low (CONF:9032)</li>
+<li>effectiveTime <b>SHOULD</b> contain zero or one [0..1] high (CONF:9033)</li>
+</ol>
+<section id="tableconformance">
+</section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<act xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="ACT" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.22.4.3"/>
+  <id root="1319098243"/>
+  <code code="CONC" codeSystem="2.16.840.1.113883.5.6" codeSystemName="HL7ActClass" displayName="Concern"/>
+  <statusCode code="completed"/>
+  <effectiveTime>
+    <low value="2012"/>
+    <high value="2012"/>
+  </effectiveTime>
+  <entryRelationship>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.4"/>
+      <id root="1297875119"/>
+      <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.31"/>
+          <id root="2088164725"/>
+          <code code="445518008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age At Onset"/>
+          <statusCode code="completed"/>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.5"/>
+          <id root="262444706"/>
+          <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
+          <statusCode code="completed"/>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.6"/>
+          <id root="2121248794"/>
+          <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+          <statusCode code="completed"/>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+    </observation>
+  </entryRelationship>
+</act>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Problem Concern Act</ph></p>
+<p id="shortdesc">[Act: templateId <tt>2.16.840.1.113883.10.20.22.4.3</tt>]</p>
+</body>
+</topic>

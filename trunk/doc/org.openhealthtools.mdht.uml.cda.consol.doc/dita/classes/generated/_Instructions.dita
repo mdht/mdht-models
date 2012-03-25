@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Instructions - conformance rules</title>
+<shortdesc id="shortdesc">[Act: templateId <tt>2.16.840.1.113883.10.20.22.4.20</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Act</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.22.4.20"/>
+</prolog>
+<body>
+<section id="description">
+<p>The Instructions template can be used in several ways, such as to record patient instructions within a Medication Activity or to record fill instructions within a supply order. The act/code defines the type of instruction.Though not defined in this template, a Vaccine Information Statement (VIS) document could be referenced through act/reference/externalDocument, and patient awareness of the instructions can be represented with the generic participant and the participant/awarenessCode.</p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ACT" </tt><i>Act</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:7391)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="INT" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:7392)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> 4. 2.16.840.1.113883.11.20.9.34 <xref href="../../terminology/PatientEducation.dita">PatientEducation</xref></tt><b> DYNAMIC</b> (CONF:7394)
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>text</b></tt> (CONF:7395)
+</li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF:7396)
+</li>
+<li>This text, if present, <b>SHOULD</b> contain zero or one [0..1] reference/@value (CONF:7397) (CONF:7397)</li>
+<li>reference/@value <b>SHALL</b> begin with a '#' and <b>SHALL</b> point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1) (CONF:7398)</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ACT" </tt><i>Act</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:7391)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="INT" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:7392)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> 4. 2.16.840.1.113883.11.20.9.34 <xref href="../../terminology/PatientEducation.dita">PatientEducation</xref></tt><b> DYNAMIC</b> (CONF:7394)
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>text</b></tt> (CONF:7395)
+</li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF:7396)
+</li>
+<li>This text, if present, <b>SHOULD</b> contain zero or one [0..1] reference/@value (CONF:7397) (CONF:7397)</li>
+<li>reference/@value <b>SHALL</b> begin with a '#' and <b>SHALL</b> point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1) (CONF:7398)</li>
+</ol>
+<section id="tableconformance">
+</section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<act xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="ACT" moodCode="INT">
+  <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+  <id root="7194304"/>
+  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+  <text>Text Value</text>
+  <statusCode code="completed"/>
+  <effectiveTime>
+    <low value="2012"/>
+    <high value="2012"/>
+  </effectiveTime>
+</act>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Instructions</ph></p>
+<p id="shortdesc">[Act: templateId <tt>2.16.840.1.113883.10.20.22.4.20</tt>]</p>
+</body>
+</topic>

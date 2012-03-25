@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Encounter Activities - conformance rules</title>
+<shortdesc id="shortdesc">[Encounter: templateId <tt>2.16.840.1.113883.10.20.22.4.49</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Encounter</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.22.4.49"/>
+</prolog>
+<body>
+<section id="description">
+<p>This clinical statement describes the interactions between the patient and clinicians. Interactions include in-person encounters, telephone conversations, and email exchanges.</p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ENC" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:8710)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:8711)
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:8713)
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>code</b></tt>, which <b>SHOULD</b> be selected from ValueSet<tt> 2.16.840.1.113883.3.88.12.80.32 <xref href="../../terminology/EncounterTypeCode.dita">EncounterTypeCode</xref></tt><b> DYNAMIC</b> (CONF:8714)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:8715)
+</li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>serviceDeliveryLocation</b></tt> (CONF:8739)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ServiceDeliveryLocation.dita">Service Delivery Location</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.32</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>indication</b></tt> (CONF:8724)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>RSON" </tt><i>RSON</i></li>
+<li>Contains exactly one [1..1] <xref href="../Indication.dita">Indication</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.19</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>performer</b></tt> (CONF:8725)
+</li>
+<li>code, if present, <b>SHOULD</b> contain zero or one [0..1] originalText (CONF:8719)</li>
+<li>originalText, if present, <b>SHOULD</b> contain zero or one [0..1] reference/@value (CONF:8720)</li>
+<li>reference/@value <b>SHALL</b> begin with a '#' and <b>SHALL</b> point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1) (CONF:8721)</li>
+<li><b>MAY</b> have a sdtc:dischargeDispositionCode which <b>SHALL</b> be  selected from ValueSet 2.16.840.1.113883.3.88.12.80.33 NUBC UB-04 FL17-Patient Status DYNAMIC or, if access to NUBC is unavailable, from CodeSystem 2.16.840.1.113883.12.112 HL7 Discharge Disposition. The prefix sdtc: <b>SHALL</b> be bound to the namespace "urn:hl7-org:sdtc�?. The use of the namespace provides a necessary extension to CDA R2 for the use of the dischargeDispositionCode element (CONF:9929)</li>
+<li>EncounterActivities with target entry Service Delivery Location <b>SHALL</b> contain exactly one [1..1] @typeCode="LOC" Location (CodeSystem: 2.16.840.1.113883.5.1002 HL7ActRelationshipType) STATIC (CONF:8740)</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ENC" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:8710)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:8711)
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:8713)
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>code</b></tt>, which <b>SHOULD</b> be selected from ValueSet<tt> 2.16.840.1.113883.3.88.12.80.32 <xref href="../../terminology/EncounterTypeCode.dita">EncounterTypeCode</xref></tt><b> DYNAMIC</b> (CONF:8714)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:8715)
+</li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>serviceDeliveryLocation</b></tt> (CONF:8739)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ServiceDeliveryLocation.dita">Service Delivery Location</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.32</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>indication</b></tt> (CONF:8724)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>RSON" </tt><i>RSON</i></li>
+<li>Contains exactly one [1..1] <xref href="../Indication.dita">Indication</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.19</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>performer</b></tt> (CONF:8725)
+</li>
+<li>code, if present, <b>SHOULD</b> contain zero or one [0..1] originalText (CONF:8719)</li>
+<li>originalText, if present, <b>SHOULD</b> contain zero or one [0..1] reference/@value (CONF:8720)</li>
+<li>reference/@value <b>SHALL</b> begin with a '#' and <b>SHALL</b> point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1) (CONF:8721)</li>
+<li><b>MAY</b> have a sdtc:dischargeDispositionCode which <b>SHALL</b> be  selected from ValueSet 2.16.840.1.113883.3.88.12.80.33 NUBC UB-04 FL17-Patient Status DYNAMIC or, if access to NUBC is unavailable, from CodeSystem 2.16.840.1.113883.12.112 HL7 Discharge Disposition. The prefix sdtc: <b>SHALL</b> be bound to the namespace "urn:hl7-org:sdtc�?. The use of the namespace provides a necessary extension to CDA R2 for the use of the dischargeDispositionCode element (CONF:9929)</li>
+<li>EncounterActivities with target entry Service Delivery Location <b>SHALL</b> contain exactly one [1..1] @typeCode="LOC" Location (CodeSystem: 2.16.840.1.113883.5.1002 HL7ActRelationshipType) STATIC (CONF:8740)</li>
+</ol>
+<section id="tableconformance">
+</section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<encounter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="ENC" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.22.4.49"/>
+  <id root="2027358735"/>
+  <code codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT-4"/>
+  <effectiveTime>
+    <low value="2012"/>
+    <high value="2012"/>
+  </effectiveTime>
+  <performer>
+    <assignedEntity>
+      <id root="139565160"/>
+      <code code="Value"/>
+    </assignedEntity>
+  </performer>
+  <entryRelationship>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
+      <id root="354299898"/>
+      <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <performer>
+        <assignedEntity>
+          <id root="217252669"/>
+          <code code="Value"/>
+        </assignedEntity>
+      </performer>
+    </observation>
+  </entryRelationship>
+</encounter>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Encounter Activities</ph></p>
+<p id="shortdesc">[Encounter: templateId <tt>2.16.840.1.113883.10.20.22.4.49</tt>]</p>
+</body>
+</topic>

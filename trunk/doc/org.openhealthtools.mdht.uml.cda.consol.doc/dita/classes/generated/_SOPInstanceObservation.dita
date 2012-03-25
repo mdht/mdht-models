@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>SOP Instance Observation - conformance rules</title>
+<shortdesc id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.6.2.8</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Observation</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.6.2.8"/>
+</prolog>
+<body>
+<section id="description">
+<p>A SOP Instance Observation contains the DICOM Service Object Pair (SOP) Instance information for referenced DICOM composite objects. The SOP Instance act class is used to reference both image and non-image DICOM instances. The text attribute contains the DICOM WADO reference.</p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="DGIMG" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:9240)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:9250)
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:9242)
+<ul><li>The @root contains an OID representing the DICOM SOP Instance UID</li></ul></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>text</b></tt> (CONF:9246)
+</li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>sOPInstanceObservation</b></tt> (CONF:9254, CONF:9255, CONF:9256)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>SUBJ" </tt><i>SUBJ</i></li>
+<li>Contains exactly one [1..1] <xref href="../SOPInstanceObservation.dita">SOP Instance Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.6.2.8</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>purposeofReferenceObservation</b></tt> (CONF:9257, CONF:9258, CONF:9259)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>RSON" </tt><i>RSON</i></li>
+<li>Contains exactly one [1..1] <xref href="../PurposeofReferenceObservation.dita">Purposeof Reference Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.6.2.9</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>referencedFramesObservation</b></tt> (CONF:9260, CONF:9261, CONF:9262)
+<ul><li>This entryRelationship SHALL be present if the referenced DICOM object is a multiframe object and the reference does not apply to all frames</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../ReferencedFramesObservation.dita">Referenced Frames Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.6.2.10</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:9244)
+</li>
+<li>The effectiveTime, if present, <b>SHALL</b> contain exactly one [1..1] @value (CONF:9251)</li>
+<li>The effectiveTime, if present, <b>SHALL NOT</b> contain [0..0] low (CONF:9252)</li>
+<li>The effectiveTime, if present, <b>SHALL NOT</b> contain [0..0] high (CONF:9253)</li>
+<li>code <b>SHALL</b> contain codeSystem 1.2.840.10008.2.6.1 DCMUID and @code is an OID for a valid SOP class name UID (CONF:9245)</li>
+<li>text, if present, <b>SHALL</b> contain exactly one [1..1] @mediaType="application/dicom" (CONF:9247)</li>
+<li>The text, if present, <b>SHALL</b> contain exactly one [1..1] reference (CONF:9248)</li>
+<li><b>SHALL</b> contain a @value which contains a WADO reference as a URI (CONF:9249)</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="DGIMG" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:9240)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:9242)
+<ul><li>The @root contains an OID representing the DICOM SOP Instance UID</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:9244)
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>text</b></tt> (CONF:9246)
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:9250)
+</li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>sOPInstanceObservation</b></tt> (CONF:9254, CONF:9255, CONF:9256)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>SUBJ" </tt><i>SUBJ</i></li>
+<li>Contains exactly one [1..1] <xref href="../SOPInstanceObservation.dita">SOP Instance Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.6.2.8</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>purposeofReferenceObservation</b></tt> (CONF:9257, CONF:9258, CONF:9259)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>RSON" </tt><i>RSON</i></li>
+<li>Contains exactly one [1..1] <xref href="../PurposeofReferenceObservation.dita">Purposeof Reference Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.6.2.9</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>referencedFramesObservation</b></tt> (CONF:9260, CONF:9261, CONF:9262)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../ReferencedFramesObservation.dita">Referenced Frames Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.6.2.10</tt>)</li></ol><ul><li>This entryRelationship SHALL be present if the referenced DICOM object is a multiframe object and the reference does not apply to all frames</li></ul></li>
+<li>The effectiveTime, if present, <b>SHALL</b> contain exactly one [1..1] @value (CONF:9251)</li>
+<li>The effectiveTime, if present, <b>SHALL NOT</b> contain [0..0] low (CONF:9252)</li>
+<li>The effectiveTime, if present, <b>SHALL NOT</b> contain [0..0] high (CONF:9253)</li>
+<li>code <b>SHALL</b> contain codeSystem 1.2.840.10008.2.6.1 DCMUID and @code is an OID for a valid SOP class name UID (CONF:9245)</li>
+<li>text, if present, <b>SHALL</b> contain exactly one [1..1] @mediaType="application/dicom" (CONF:9247)</li>
+<li>The text, if present, <b>SHALL</b> contain exactly one [1..1] reference (CONF:9248)</li>
+<li><b>SHALL</b> contain a @value which contains a WADO reference as a URI (CONF:9249)</li>
+</ol>
+<section id="tableconformance">
+</section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="DGIMG" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.6.2.8"/>
+  <id root="1869773847"/>
+  <code code="583774435"/>
+  <text>Text Value</text>
+  <effectiveTime>
+    <low value="2012"/>
+    <high value="2012"/>
+  </effectiveTime>
+  <entryRelationship>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.6.2.9"/>
+      <id root="1095447287"/>
+      <code code="1965072212"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation classCode="ROIBND" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.6.2.10"/>
+      <id root="2064758706"/>
+      <code code="121190" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM" displayName="Referenced Frames"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.6.2.11"/>
+          <id root="487156511"/>
+          <code code="113036" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM" displayName="Frames for Display"/>
+          <text>Text Value</text>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+    </observation>
+  </entryRelationship>
+</observation>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">SOP Instance Observation</ph></p>
+<p id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.6.2.8</tt>]</p>
+</body>
+</topic>

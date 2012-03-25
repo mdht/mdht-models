@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Admission Medication - conformance rules</title>
+<shortdesc id="shortdesc">[Act: templateId <tt>2.16.840.1.113883.10.20.22.4.36</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Act</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.22.4.36"/>
+</prolog>
+<body>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ACT" </tt><i>Act</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:7698)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:7699)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="42346-7" </tt> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:7700)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>medicationActivity</b></tt> (CONF:7701, CONF:7702, CONF:7703)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>SUBJ" </tt><i>SUBJ</i></li>
+<li>Contains exactly one [1..1] <xref href="../MedicationActivity.dita">Medication Activity</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.16</tt>)</li></ol></li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ACT" </tt><i>Act</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:7698)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:7699)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="42346-7" </tt> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:7700)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>medicationActivity</b></tt> (CONF:7701, CONF:7702, CONF:7703)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>SUBJ" </tt><i>SUBJ</i></li>
+<li>Contains exactly one [1..1] <xref href="../MedicationActivity.dita">Medication Activity</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.16</tt>)</li></ol></li>
+</ol>
+<section id="tableconformance">
+</section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<act xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="ACT" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.22.4.36"/>
+  <id root="1096037272"/>
+  <code code="42346-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+  <effectiveTime>
+    <low value="2012"/>
+    <high value="2012"/>
+  </effectiveTime>
+  <entryRelationship>
+    <substanceAdministration classCode="SBADM">
+      <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+      <id root="2114859221"/>
+      <code code="1965665251"/>
+      <effectiveTime value="20120325"/>
+      <consumable/>
+      <entryRelationship>
+        <supply classCode="SPLY" moodCode="INT">
+          <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
+          <id root="849333914"/>
+          <code code="1298328627"/>
+          <effectiveTime value="20120325"/>
+          <entryRelationship>
+            <act classCode="ACT" moodCode="INT">
+              <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+              <id root="2140811210"/>
+              <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+            </act>
+          </entryRelationship>
+        </supply>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
+          <id root="1085348622"/>
+          <code code="1543985511"/>
+          <statusCode code="completed"/>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.8"/>
+              <id root="269732070"/>
+              <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Severity observation"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <procedure classCode="PROC">
+              <templateId root="2.16.840.1.113883.10.20.22.4.14"/>
+              <id root="1960637256"/>
+              <code code="2133494103"/>
+              <effectiveTime>
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+              <targetSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
+                  <id root="1654147059"/>
+                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2012"/>
+                    <high value="2012"/>
+                  </effectiveTime>
+                </observation>
+              </entryRelationship>
+              <entryRelationship>
+                <substanceAdministration classCode="SBADM">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+                  <id root="853572730"/>
+                  <code code="9569472"/>
+                  <effectiveTime value="20120325"/>
+                  <consumable/>
+                  <entryRelationship>
+                    <supply/>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <observation/>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <act/>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <observation/>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <supply/>
+                  </entryRelationship>
+                </substanceAdministration>
+              </entryRelationship>
+              <entryRelationship>
+                <act classCode="ACT" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+                  <id root="1232445506"/>
+                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2012"/>
+                    <high value="2012"/>
+                  </effectiveTime>
+                </act>
+              </entryRelationship>
+              <entryRelationship>
+                <encounter>
+                  <id root="764861011"/>
+                  <code code="1235213836"/>
+                  <effectiveTime>
+                    <low value="2012"/>
+                    <high value="2012"/>
+                  </effectiveTime>
+                </encounter>
+              </entryRelationship>
+            </procedure>
+          </entryRelationship>
+          <entryRelationship>
+            <substanceAdministration classCode="SBADM">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+              <id root="1128728056"/>
+              <code code="1261240478"/>
+              <effectiveTime value="20120325"/>
+              <consumable/>
+              <entryRelationship>
+                <supply classCode="SPLY" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
+                  <id root="1069899224"/>
+                  <code code="1079097952"/>
+                  <effectiveTime value="20120325"/>
+                  <entryRelationship>
+                    <act/>
+                  </entryRelationship>
+                </supply>
+              </entryRelationship>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
+                  <id root="1794924641"/>
+                  <code code="488258366"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2012"/>
+                    <high value="2012"/>
+                  </effectiveTime>
+                  <entryRelationship>
+                    <observation/>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <procedure/>
+                  </entryRelationship>
+                  <entryRelationship>
+                    <substanceAdministration/>
+                  </entryRelationship>
+                </observation>
+              </entryRelationship>
+              <entryRelationship>
+                <act classCode="ACT" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+                  <id root="1491512645"/>
+                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2012"/>
+                    <high value="2012"/>
+                  </effectiveTime>
+                </act>
+              </entryRelationship>
+              <entryRelationship>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
+                  <id root="1935662828"/>
+                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2012"/>
+                    <high value="2012"/>
+                  </effectiveTime>
+                </observation>
+              </entryRelationship>
+              <entryRelationship>
+                <supply classCode="SPLY" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.18"/>
+                  <id root="1042892946"/>
+                  <code code="244949922"/>
+                  <effectiveTime value="20120325"/>
+                  <entryRelationship>
+                    <supply/>
+                  </entryRelationship>
+                </supply>
+              </entryRelationship>
+            </substanceAdministration>
+          </entryRelationship>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <act classCode="ACT" moodCode="INT">
+          <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+          <id root="978922816"/>
+          <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+          <statusCode code="completed"/>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </act>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
+          <id root="1916203430"/>
+          <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+          <statusCode code="completed"/>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <supply classCode="SPLY" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.18"/>
+          <id root="75890909"/>
+          <code code="1441738003"/>
+          <effectiveTime value="20120325"/>
+          <entryRelationship>
+            <supply classCode="SPLY" moodCode="INT">
+              <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
+              <id root="861205814"/>
+              <code code="2025539526"/>
+              <effectiveTime value="20120325"/>
+              <entryRelationship>
+                <act classCode="ACT" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+                  <id root="1427512151"/>
+                  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="2012"/>
+                    <high value="2012"/>
+                  </effectiveTime>
+                </act>
+              </entryRelationship>
+            </supply>
+          </entryRelationship>
+        </supply>
+      </entryRelationship>
+    </substanceAdministration>
+  </entryRelationship>
+</act>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Admission Medication</ph></p>
+<p id="shortdesc">[Act: templateId <tt>2.16.840.1.113883.10.20.22.4.36</tt>]</p>
+</body>
+</topic>

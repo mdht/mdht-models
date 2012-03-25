@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map title="Other Classes">
+<topicref href="AllergyObservationParticipant.dita" type="topic" />
+<topicref href="AllergyObservationParticipantRole.dita" type="topic" />
+<topicref href="AllergyObservationPlayingEntity.dita" type="topic" />
+<topicref href="DrugVehicle.dita" type="topic" />
+<topicref href="EncounterPerformer.dita" type="topic" />
+<topicref href="EncounterPerformerAssignedEntity.dita" type="topic" />
+<topicref href="FamilyHistorySubject.dita" type="topic" />
+<topicref href="ImmunizationMedicationInformation.dita" type="topic" />
+<topicref href="ImmunizationMedicationInformationManufacturedMaterial.dita" type="topic" />
+<topicref href="MedicationDispenseAssignedEntity.dita" type="topic" />
+<topicref href="MedicationInformation.dita" type="topic" />
+<topicref href="MedicationInformationManufacturedMaterial.dita" type="topic" />
+<topicref href="PhysicianReadingStudyPerformer.dita" type="topic" />
+<topicref href="PhysicianofRecordParticipant.dita" type="topic" />
+<topicref href="PreconditionForSubstanceAdministration.dita" type="topic" />
+<topicref href="ProcedurePerformer.dita" type="topic" />
+<topicref href="ProcedureSpecimen.dita" type="topic" />
+<topicref href="ProductInstance.dita" type="topic" />
+<topicref href="ServiceDeliveryLocation.dita" type="topic" />
+</map>

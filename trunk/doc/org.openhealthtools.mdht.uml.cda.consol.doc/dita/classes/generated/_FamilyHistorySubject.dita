@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Family History Subject - conformance rules</title>
+<shortdesc id="shortdesc">[Subject: templateId <tt>null</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Subject</category></metadata>
+<resourceid id="null"/>
+</prolog>
+<body>
+<section id="description">
+</section>
+<ol id="conformance">
+<li>subject <b>SHALL</b> contain exactly one [1..1] relatedSubject/@classCode="PRS" Person (CodeSystem: EntityClass 2.16.840.1.113883.5.41) (CONF:8610)</li>
+<li>relatedSubject/@classCode <b>SHALL</b> contain exactly one [1..1] code (CONF:8611)</li>
+<li>value for "RelatedSubject/code" <b>SHOULD</b> be selected from ValueSet 2.16.840.1.113883.1.11.19579 FamilyHistoryRelatedSubjectCode DYNAMIC (CONF:8612)</li>
+<li>relatedSubject/@classCode <b>SHOULD</b> contain zero or one [0..1] subject (CONF:8613)</li>
+<li>subject <b>SHOULD</b> contain zero or more [0..*] sdtc:id. The prefix sdtc: <b>SHALL</b> be bound to the namespace "urn:hl7-org:sdtc�?. The use of the namespace provides a necessary extension to CDA R2 for the use of the id element (CONF:8618)</li>
+<li>subject, if present, <b>SHALL</b> contain exactly one [1..1] administrativeGenderCode, where the @code <b>SHALL</b> be selected from ValueSet Administrative Gender (HL7 V3) 2.16.840.1.113883.1.11.1 DYNAMIC (CONF:8614)</li>
+<li>subject, if present, <b>SHOULD</b> contain zero or one [0..1] birthTime (CONF:8615)</li>
+<li>subject <b>MAY</b> contain zero or one sdtc:deceasedInd. The prefix sdtc: <b>SHALL</b> be bound to the namespace urn:hl7-org:sdtc. The use of the namespace provides a necessary extension to CDA R2 for the use of the deceasedInd element (CONF:8616)</li>
+<li>subject <b>MAY</b> contain zero or one sdtc:deceasedTime.. The prefix sdtc: <b>SHALL</b> be bound to the namespace urn:hl7-org:sdtc. The use of the namespace provides a necessary extension to CDA R2 for the use of the deceasedTime element (CONF:8617)</li>
+<li>age of a relative at the time of a family history observation <b>SHOULD</b> be inferred by comparing RelatedSubject/subject/birthTime with Observation/effectiveTime (CONF:8631)</li>
+<li>age of a relative at the time of death <b>MAY</b> be inferred by comparing RelatedSubject/subject/birthTime with RelatedSubject/subject/sdwg:deceasedTime (CONF:8632)</li>
+</ol>
+<ol id="aggregate">
+<li>Contains exactly one [1..1] <tt><b>relatedSubject</b></tt>, where its type is <xref href="../RelatedSubject.dita">Related Subject</xref>
+</li>
+<li>subject <b>SHALL</b> contain exactly one [1..1] relatedSubject/@classCode="PRS" Person (CodeSystem: EntityClass 2.16.840.1.113883.5.41) (CONF:8610)</li>
+<li>relatedSubject/@classCode <b>SHALL</b> contain exactly one [1..1] code (CONF:8611)</li>
+<li>value for "RelatedSubject/code" <b>SHOULD</b> be selected from ValueSet 2.16.840.1.113883.1.11.19579 FamilyHistoryRelatedSubjectCode DYNAMIC (CONF:8612)</li>
+<li>relatedSubject/@classCode <b>SHOULD</b> contain zero or one [0..1] subject (CONF:8613)</li>
+<li>subject <b>SHOULD</b> contain zero or more [0..*] sdtc:id. The prefix sdtc: <b>SHALL</b> be bound to the namespace "urn:hl7-org:sdtc�?. The use of the namespace provides a necessary extension to CDA R2 for the use of the id element (CONF:8618)</li>
+<li>subject, if present, <b>SHALL</b> contain exactly one [1..1] administrativeGenderCode, where the @code <b>SHALL</b> be selected from ValueSet Administrative Gender (HL7 V3) 2.16.840.1.113883.1.11.1 DYNAMIC (CONF:8614)</li>
+<li>subject, if present, <b>SHOULD</b> contain zero or one [0..1] birthTime (CONF:8615)</li>
+<li>subject <b>MAY</b> contain zero or one sdtc:deceasedInd. The prefix sdtc: <b>SHALL</b> be bound to the namespace urn:hl7-org:sdtc. The use of the namespace provides a necessary extension to CDA R2 for the use of the deceasedInd element (CONF:8616)</li>
+<li>subject <b>MAY</b> contain zero or one sdtc:deceasedTime.. The prefix sdtc: <b>SHALL</b> be bound to the namespace urn:hl7-org:sdtc. The use of the namespace provides a necessary extension to CDA R2 for the use of the deceasedTime element (CONF:8617)</li>
+<li>age of a relative at the time of a family history observation <b>SHOULD</b> be inferred by comparing RelatedSubject/subject/birthTime with Observation/effectiveTime (CONF:8631)</li>
+<li>age of a relative at the time of death <b>MAY</b> be inferred by comparing RelatedSubject/subject/birthTime with RelatedSubject/subject/sdwg:deceasedTime (CONF:8632)</li>
+</ol>
+<section id="tableconformance">
+</section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<subject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <relatedSubject/>
+</subject>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Family History Subject</ph></p>
+<p id="shortdesc">[Subject: templateId <tt>null</tt>]</p>
+</body>
+</topic>

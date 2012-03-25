@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Allergy Observation Participant Role - conformance rules</title>
+<shortdesc id="shortdesc">[ParticipantRole: templateId <tt>null</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>ParticipantRole</category></metadata>
+<resourceid id="null"/>
+</prolog>
+<body>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b></tt><tt><b>/@code</b>="MANU" </tt><i>Manufactured Product</i> (CodeSystem:<tt> 2.16.840.1.113883.5.110 HL7RoleClass</tt>) (CONF:7405)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>playingEntity</b></tt>, where its type is <xref href="../AllergyObservationPlayingEntity.dita">Allergy Observation Playing Entity</xref> (CONF:7406)
+</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b></tt><tt><b>/@code</b>="MANU" </tt><i>Manufactured Product</i> (CodeSystem:<tt> 2.16.840.1.113883.5.110 HL7RoleClass</tt>) (CONF:7405)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>playingEntity</b></tt>, where its type is <xref href="../AllergyObservationPlayingEntity.dita">Allergy Observation Playing Entity</xref> (CONF:7406)
+</li>
+</ol>
+<section id="tableconformance">
+</section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<participantrole xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="MANU">
+  <id root="1185791335"/>
+  <playingEntity>
+    <code code="Value"/>
+  </playingEntity>
+</participantrole>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Allergy Observation Participant Role</ph></p>
+<p id="shortdesc">[ParticipantRole: templateId <tt>null</tt>]</p>
+</body>
+</topic>

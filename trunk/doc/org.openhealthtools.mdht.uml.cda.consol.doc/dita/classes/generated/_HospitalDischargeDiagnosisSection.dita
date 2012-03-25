@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Hospital Discharge Diagnosis Section - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.24</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.22.2.24"/>
+</prolog>
+<body>
+<section id="description">
+<p>The Hospital Discharge Diagnosis section describes the relevant problems or diagnoses at the time of discharge that occurred during the hospitalization or that need to be followed after hospitalization. This section includes an optional entry to record patient conditions.</p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="11535-2" </tt><i>Hospital Discharge Diagnosis</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:7980)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:7981)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:7982)
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>hospitalDischargeDiagnosis</b></tt> (CONF:7984)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../HospitalDischargeDiagnosis.dita">Hospital Discharge Diagnosis</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.33</tt>)</li></ol></li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="11535-2" </tt><i>Hospital Discharge Diagnosis</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:7980)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:7981)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:7982)
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>hospitalDischargeDiagnosis</b></tt> (CONF:7984)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../HospitalDischargeDiagnosis.dita">Hospital Discharge Diagnosis</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.33</tt>)</li></ol></li>
+</ol>
+<section id="tableconformance">
+</section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <templateId root="2.16.840.1.113883.10.20.22.2.24"/>
+  <id root="1807443028"/>
+  <code code="11535-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Hospital Discharge Diagnosis"/>
+  <title/>
+  <text/>
+  <entry>
+    <act classCode="ACT" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.33"/>
+      <id root="1145058663"/>
+      <code code="11535-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Hospital Discharge Diagnosis"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <entryRelationship>
+        <observation moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.4"/>
+          <id root="1036392552"/>
+          <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+          <text>Text Value</text>
+          <statusCode code="completed"/>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.31"/>
+              <id root="919295377"/>
+              <code code="445518008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age At Onset"/>
+              <text>Text Value</text>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.5"/>
+              <id root="63833295"/>
+              <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
+              <text>Text Value</text>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.6"/>
+              <id root="1406007145"/>
+              <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+              <text>Text Value</text>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+            </observation>
+          </entryRelationship>
+        </observation>
+      </entryRelationship>
+    </act>
+  </entry>
+</section>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Hospital Discharge Diagnosis Section</ph></p>
+<p id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.24</tt>]</p>
+</body>
+</topic>

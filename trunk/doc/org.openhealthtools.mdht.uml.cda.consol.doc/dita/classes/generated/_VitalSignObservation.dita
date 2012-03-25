@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Vital Sign Observation - conformance rules</title>
+<shortdesc id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.22.4.27</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Observation</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.22.4.27"/>
+</prolog>
+<body>
+<section id="description">
+<p>Vital signs are represented as are other results, with additional vocabulary constraints.</p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:7297)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:7298)
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:7300)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> 2.16.840.1.113883.3.88.12.80.62 <xref href="../../terminology/HITSPVitalSignResultType.dita">HITSP Vital Sign Result Type</xref></tt><b> STATIC</b> 1 (CONF:7301)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF:7303)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:7304)
+<ul><li>Represents the biologically relevant time (e.g. time the specimen was obtained from the patient).</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt>, where its data type is PQ (CONF:7305)
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>interpretationCode</b></tt> (CONF:7307)
+<ul><li>The interpretation code may be present to provide an interpretation of the vital signs measure (e.g., High, Normal, Low, et cetera).</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>methodCode</b></tt> (CONF:7308)
+<ul><li>The method code element may be present to indicate the method used to obtain the measure. Note that method used is distinct from, but possibly related to the target site.</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>targetSiteCode</b></tt> (CONF:7309)
+<ul><li>The target site of the measure may be identified in the targetSiteCode element (e.g., Left arm [blood pressure], oral [temperature], et cetera).</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>author</b></tt> (CONF:7310)
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>text</b></tt> (CONF:7302)
+</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:7297)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:7298)
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:7300)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> 2.16.840.1.113883.3.88.12.80.62 <xref href="../../terminology/HITSPVitalSignResultType.dita">HITSP Vital Sign Result Type</xref></tt><b> STATIC</b> 1 (CONF:7301)
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>text</b></tt> (CONF:7302)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF:7303)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:7304)
+<ul><li>Represents the biologically relevant time (e.g. time the specimen was obtained from the patient).</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt>, where its data type is PQ (CONF:7305)
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>interpretationCode</b></tt> (CONF:7307)
+<ul><li>The interpretation code may be present to provide an interpretation of the vital signs measure (e.g., High, Normal, Low, et cetera).</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>methodCode</b></tt> (CONF:7308)
+<ul><li>The method code element may be present to indicate the method used to obtain the measure. Note that method used is distinct from, but possibly related to the target site.</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>targetSiteCode</b></tt> (CONF:7309)
+<ul><li>The target site of the measure may be identified in the targetSiteCode element (e.g., Left arm [blood pressure], oral [temperature], et cetera).</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>author</b></tt> (CONF:7310)
+</li>
+</ol>
+<section id="tableconformance">
+</section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="OBS" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
+  <id root="738565519"/>
+  <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+  <text>Text Value</text>
+  <statusCode code="completed"/>
+  <effectiveTime>
+    <low value="2012"/>
+    <high value="2012"/>
+  </effectiveTime>
+  <value xsi:type="PQ"/>
+  <interpretationCode code="Value"/>
+  <methodCode code="Value"/>
+  <targetSiteCode code="1359885884"/>
+  <author>
+    <time/>
+    <assignedAuthor>
+      <id root="1264253466"/>
+      <assignedPerson/>
+      <assignedAuthoringDevice>
+        <asMaintainedEntity>
+          <maintainingPerson/>
+        </asMaintainedEntity>
+      </assignedAuthoringDevice>
+      <representedOrganization>
+        <asOrganizationPartOf>
+          <wholeOrganization/>
+        </asOrganizationPartOf>
+      </representedOrganization>
+    </assignedAuthor>
+  </author>
+</observation>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Vital Sign Observation</ph></p>
+<p id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.22.4.27</tt>]</p>
+</body>
+</topic>

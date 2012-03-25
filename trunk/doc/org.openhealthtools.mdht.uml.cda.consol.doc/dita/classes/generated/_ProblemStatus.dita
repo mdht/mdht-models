@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Problem Status - conformance rules</title>
+<shortdesc id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.22.4.6</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Observation</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.22.4.6"/>
+</prolog>
+<body>
+<section id="description">
+<p>The Problem Status records whether the indicated problem is active, inactive, or resolved.</p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:7357)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:7358)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="33999-4" </tt><i>Status</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:7361)
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>text</b></tt> (CONF:7362)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt><i>Completed</i> (CodeSystem:<tt> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF:7364)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> 2.16.840.1.113883.3.88.12.80.68 <xref href="../../terminology/HITSPProblemStatus.dita">HITSP Problem Status</xref></tt><b> STATIC</b>, where its data type is CD (CONF:7365)
+</li>
+<li>text, if present, <b>SHOULD</b> contain zero or one [0..1] reference/@value (CONF:7363)</li>
+<li>reference/@value <b>SHALL</b> begin with a '#' and <b>SHALL</b> point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1) (CONF:7375)</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:7357)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:7358)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="33999-4" </tt><i>Status</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:7361)
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>text</b></tt> (CONF:7362)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt><i>Completed</i> (CodeSystem:<tt> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF:7364)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> 2.16.840.1.113883.3.88.12.80.68 <xref href="../../terminology/HITSPProblemStatus.dita">HITSP Problem Status</xref></tt><b> STATIC</b>, where its data type is CD (CONF:7365)
+</li>
+<li>text, if present, <b>SHOULD</b> contain zero or one [0..1] reference/@value (CONF:7363)</li>
+<li>reference/@value <b>SHALL</b> begin with a '#' and <b>SHALL</b> point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1) (CONF:7375)</li>
+</ol>
+<section id="tableconformance">
+</section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="OBS" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.22.4.6"/>
+  <id root="326011344"/>
+  <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+  <text>Text Value</text>
+  <statusCode code="completed"/>
+  <effectiveTime>
+    <low value="2012"/>
+    <high value="2012"/>
+  </effectiveTime>
+  <value xsi:type="CD" code="695163034"/>
+</observation>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Problem Status</ph></p>
+<p id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.22.4.6</tt>]</p>
+</body>
+</topic>

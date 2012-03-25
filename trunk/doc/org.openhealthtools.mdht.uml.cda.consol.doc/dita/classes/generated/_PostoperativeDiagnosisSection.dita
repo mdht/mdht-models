@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Postoperative Diagnosis Section - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.35</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.22.2.35"/>
+</prolog>
+<body>
+<section id="description">
+<p>The Postoperative Diagnosis section records the diagnosis or diagnoses discovered or confirmed during the surgery. Often it is the same as the preoperative diagnosis.</p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="10218-6" </tt><i>Postoperative Diagnosis</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:8102)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:8104)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:8103)
+</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="10218-6" </tt><i>Postoperative Diagnosis</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:8102)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:8103)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:8104)
+</li>
+</ol>
+<section id="tableconformance">
+</section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <templateId root="2.16.840.1.113883.10.20.22.2.35"/>
+  <id root="642384740"/>
+  <code code="10218-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Postoperative Diagnosis"/>
+  <title/>
+  <text/>
+</section>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Postoperative Diagnosis Section</ph></p>
+<p id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.35</tt>]</p>
+</body>
+</topic>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Boundary Observation - conformance rules</title>
+<shortdesc id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.6.2.11</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Observation</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.6.2.11"/>
+</prolog>
+<body>
+<section id="description">
+<p>A Boundary Observation contains a list of integer values for the referenced frames of a DICOM multiframe image SOP instance. It identifies the frame numbers within the referenced SOP instance to which the reference applies. The CDA Boundary Observation numbers frames using the same convention as DICOM, with the first frame in the referenced object being Frame 1. A Boundary Observation must be used if a referenced DICOM SOP instance is a multiframe image and the reference does not apply to all frames.</p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:9282)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:9283)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="113036" </tt><i>Frames for Display</i> (CodeSystem:<tt> 1.2.840.10008.2.16.4 DCM</tt>) (CONF:9284)
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>value</b></tt>, where its data type is INT (CONF:9285, CONF:9286)
+<ul><li>Each numbers represents a frame for display</li></ul></li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:9282)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:9283)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="113036" </tt><i>Frames for Display</i> (CodeSystem:<tt> 1.2.840.10008.2.16.4 DCM</tt>) (CONF:9284)
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>value</b></tt>, where its data type is INT (CONF:9285, CONF:9286)
+<ul><li>Each numbers represents a frame for display</li></ul></li>
+</ol>
+<section id="tableconformance">
+</section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="OBS" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.6.2.11"/>
+  <id root="144793234"/>
+  <code code="113036" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM" displayName="Frames for Display"/>
+  <effectiveTime>
+    <low value="2012"/>
+    <high value="2012"/>
+  </effectiveTime>
+  <value xsi:type="INT" value="1"/>
+</observation>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Boundary Observation</ph></p>
+<p id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.6.2.11</tt>]</p>
+</body>
+</topic>

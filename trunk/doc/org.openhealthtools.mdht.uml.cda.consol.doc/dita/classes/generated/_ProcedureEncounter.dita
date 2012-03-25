@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Procedure Encounter - conformance rules</title>
+<shortdesc id="shortdesc">[Encounter: templateId <tt>null</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Encounter</category></metadata>
+<resourceid id="null"/>
+</prolog>
+<body>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ENC" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:7771)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:7772)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt> (CONF:7773)
+</li>
+<li><b>MAY</b> satisfy: Set the encounter ID to the ID of an encounter in another section to signify they are the same encounter. (CONF:7774)</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ENC" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:7771)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:7772)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt> (CONF:7773)
+</li>
+<li><b>MAY</b> satisfy: Set the encounter ID to the ID of an encounter in another section to signify they are the same encounter. (CONF:7774)</li>
+</ol>
+<section id="tableconformance">
+</section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<encounter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="ENC" moodCode="EVN">
+  <id root="1691150484"/>
+  <effectiveTime>
+    <low value="2012"/>
+    <high value="2012"/>
+  </effectiveTime>
+</encounter>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Procedure Encounter</ph></p>
+<p id="shortdesc">[Encounter: templateId <tt>null</tt>]</p>
+</body>
+</topic>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Quantity Measurement Observation - conformance rules</title>
+<shortdesc id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.6.2.14</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Observation</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.6.2.14"/>
+</prolog>
+<body>
+<section id="description">
+<p>A Quantity Measurement Observation records quantity measurements based on image data such as linear, area, volume, and numeric measurements. The codes in DIRQuantityMeasurementTypeCodes (ValueSet: 2.16.840.1.113883.11.20.9.29) are from the qualifier hierarchy of SNOMED CT and are not valid for observation/code according to the Term Info guidelines. These codes can be used for backwards compatibility, but going forward, codes from the observable entity hierarchy will be requested and used.</p>
+</section>
+<ol id="conformance">
+<li></li>
+</ol>
+<ol id="aggregate">
+<li>Contains exactly one [1..1] <tt><b>@classCode</b></tt>, where its data type is ActClassObservation
+</li>
+<li>Contains exactly one [1..1] <tt><b>@moodCode</b></tt>, where its data type is x_ActMoodDocumentObservation
+</li>
+<li>Contains exactly one [1..1] <tt><b>code</b></tt>, where its data type is CD
+</li>
+</ol>
+<section id="tableconformance">
+</section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <templateId root="2.16.840.1.113883.10.20.6.2.14"/>
+  <id root="355681227"/>
+  <code code="1288259888"/>
+  <effectiveTime>
+    <low value="2012"/>
+    <high value="2012"/>
+  </effectiveTime>
+</observation>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Quantity Measurement Observation</ph></p>
+<p id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.6.2.14</tt>]</p>
+</body>
+</topic>

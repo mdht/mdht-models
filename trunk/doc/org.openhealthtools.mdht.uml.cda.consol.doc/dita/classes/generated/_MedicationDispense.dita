@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Medication Dispense - conformance rules</title>
+<shortdesc id="shortdesc">[Supply: templateId <tt>2.16.840.1.113883.10.20.22.4.18</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Supply</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.22.4.18"/>
+</prolog>
+<body>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="SPLY" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:7451)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:7452)
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:7456)
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:7454)
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>repeatNumber</b></tt> (CONF:7457)
+<ul><li>In "EVN" (event) mood, the repeatNumber is the number of occurrences. For example, a repeatNumber of "3" in a dispense act means that the current dispensation is the 3rd</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> 2.16.840.1.113883.3.88.12.80.64 <xref href="../../terminology/MedicationFillStatus.dita">Medication Fill Status</xref></tt><b> STATIC</b> 1 (CONF:7455)
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>performer</b></tt>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>medicationSupplyOrder</b></tt> (CONF:7473, CONF:7474, CONF:7476)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
+<li>Contains exactly one [1..1] <xref href="../MedicationSupplyOrder.dita">Medication Supply Order</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.17</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>quantity</b></tt> (CONF:7458)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>assignedEntity</b></tt> (CONF:7467)
+</li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>product</b></tt> (CONF:7459, CONF:9331) <ol><li> This product supply act <b>SHALL</b> contain one product/Medication Information or one product/Immunization Medication Information template (CONF:7460, CONF:9332, CONF:9333)</li></ol>
+</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="SPLY" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:7451)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:7452)
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:7454)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> 2.16.840.1.113883.3.88.12.80.64 <xref href="../../terminology/MedicationFillStatus.dita">Medication Fill Status</xref></tt><b> STATIC</b> 1 (CONF:7455)
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:7456)
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>repeatNumber</b></tt> (CONF:7457)
+<ul><li>In "EVN" (event) mood, the repeatNumber is the number of occurrences. For example, a repeatNumber of "3" in a dispense act means that the current dispensation is the 3rd</li></ul></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>quantity</b></tt> (CONF:7458)
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>performer</b></tt>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>medicationSupplyOrder</b></tt> (CONF:7473, CONF:7474, CONF:7476)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
+<li>Contains exactly one [1..1] <xref href="../MedicationSupplyOrder.dita">Medication Supply Order</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.17</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>assignedEntity</b></tt> (CONF:7467)
+</li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>product</b></tt> (CONF:7459, CONF:9331) <ol><li> This product supply act <b>SHALL</b> contain one product/Medication Information or one product/Immunization Medication Information template (CONF:7460, CONF:9332, CONF:9333)</li></ol>
+</li>
+</ol>
+<section id="tableconformance">
+</section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<supply xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="SPLY" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.22.4.18"/>
+  <id root="909232494"/>
+  <statusCode code="completed"/>
+  <effectiveTime value="20120325"/>
+  <repeatNumber value="1"/>
+  <quantity/>
+  <product>
+    <manufacturedProduct/>
+  </product>
+  <performer>
+    <assignedEntity>
+      <id root="1210040472"/>
+      <assignedPerson/>
+      <representedOrganization>
+        <asOrganizationPartOf>
+          <wholeOrganization/>
+        </asOrganizationPartOf>
+      </representedOrganization>
+    </assignedEntity>
+  </performer>
+  <entryRelationship>
+    <supply classCode="SPLY" moodCode="INT">
+      <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
+      <id root="804859917"/>
+      <statusCode code="completed"/>
+      <effectiveTime value="20120325"/>
+      <repeatNumber value="1"/>
+      <quantity/>
+      <product>
+        <manufacturedProduct/>
+      </product>
+      <performer>
+        <assignedEntity>
+          <id root="1437422167"/>
+          <assignedPerson/>
+          <representedOrganization>
+            <asOrganizationPartOf/>
+          </representedOrganization>
+        </assignedEntity>
+      </performer>
+      <entryRelationship>
+        <act classCode="ACT" moodCode="INT">
+          <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+          <id root="160842853"/>
+          <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+          <statusCode code="completed"/>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+          <performer>
+            <assignedEntity>
+              <id root="859972599"/>
+              <assignedPerson/>
+              <representedOrganization/>
+            </assignedEntity>
+          </performer>
+        </act>
+      </entryRelationship>
+    </supply>
+  </entryRelationship>
+</supply>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Medication Dispense</ph></p>
+<p id="shortdesc">[Supply: templateId <tt>2.16.840.1.113883.10.20.22.4.18</tt>]</p>
+</body>
+</topic>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Product Instance - conformance rules</title>
+<shortdesc id="shortdesc">[ParticipantRole: templateId <tt>2.16.840.1.113883.10.20.22.4.37</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>ParticipantRole</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.22.4.37"/>
+</prolog>
+<body>
+<section id="description">
+<p>This clinical statement represents a particular device that was placed in or used as part of a procedure or other act. This provides a record of the identifier and other details about the given product that was used. For example, it is important to have a record that indicates not just that a hip prostheses was placed in a patient but that it was a particular hip prostheses number with a unique identifier.
+The FDA Amendments Act specifies the creation of a Unique Device Identification (UDI) System that requires the label of devices to bear a unique identifier that will standardize device identification and identify the device through distribution and use.  
+The UDI should be sent in the participantRole/id.</p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="MANU" </tt> (CONF:7900)
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:7902)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>scopingEntity</b></tt> (CONF:7905) <ol><li> This scopingEntity <b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:7908)</li></ol>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>playingDevice</b></tt> (CONF:7903) <ol><li> This playingDevice <b>SHOULD</b> contain zero or one [0..1] <tt><b>code</b></tt> (CONF:7904)</li></ol>
+</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="MANU" </tt> (CONF:7900)
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:7902)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>scopingEntity</b></tt> (CONF:7905) <ol><li> This scopingEntity <b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:7908)</li></ol>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>playingDevice</b></tt> (CONF:7903) <ol><li> This playingDevice <b>SHOULD</b> contain zero or one [0..1] <tt><b>code</b></tt> (CONF:7904)</li></ol>
+</li>
+</ol>
+<section id="tableconformance">
+</section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<participantrole xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="MANU">
+  <templateId root="2.16.840.1.113883.10.20.22.4.37"/>
+  <id root="2078403159"/>
+  <playingDevice>
+    <code code="Value"/>
+  </playingDevice>
+  <scopingEntity>
+    <id root="1975563541"/>
+  </scopingEntity>
+</participantrole>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Product Instance</ph></p>
+<p id="shortdesc">[ParticipantRole: templateId <tt>2.16.840.1.113883.10.20.22.4.37</tt>]</p>
+</body>
+</topic>

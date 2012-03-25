@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Family History Section - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.15</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.22.2.15"/>
+</prolog>
+<body>
+<section id="description">
+<p>This section contains data defining the patient's genetic relatives in terms of possible or relevant health risk factors that have a potential impact on the patient's healthcare risk profile.</p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="10157-6" </tt><i>Family History</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:7933)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:7934)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:7935)
+</li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>familyHistory</b></tt> (CONF:7955)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../FamilyHistoryOrganizer.dita">Family History Organizer</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.45</tt>)</li></ol></li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="10157-6" </tt><i>Family History</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:7933)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:7934)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:7935)
+</li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>familyHistory</b></tt> (CONF:7955)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../FamilyHistoryOrganizer.dita">Family History Organizer</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.45</tt>)</li></ol></li>
+</ol>
+<section id="tableconformance">
+</section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <templateId root="2.16.840.1.113883.10.20.22.2.15"/>
+  <id root="1568274541"/>
+  <code code="10157-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Family History"/>
+  <title/>
+  <text/>
+  <entry>
+    <organizer classCode="CLUSTER" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.45"/>
+      <id root="1266231331"/>
+      <code code="1661321950"/>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <component>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.46"/>
+          <id root="519801496"/>
+          <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+          <text>Text Value</text>
+          <statusCode code="completed"/>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.31"/>
+              <id root="1208524501"/>
+              <code code="445518008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age At Onset"/>
+              <text>Text Value</text>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.47"/>
+              <id root="1656906922"/>
+              <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Assertion"/>
+              <text>Text Value</text>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+            </observation>
+          </entryRelationship>
+        </observation>
+      </component>
+    </organizer>
+  </entry>
+</section>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Family History Section</ph></p>
+<p id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.15</tt>]</p>
+</body>
+</topic>

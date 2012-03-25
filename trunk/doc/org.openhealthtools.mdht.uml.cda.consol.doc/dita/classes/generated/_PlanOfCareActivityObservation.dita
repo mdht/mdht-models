@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Plan Of Care Activity Observation - conformance rules</title>
+<shortdesc id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.1.25</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Observation</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.1.25"/>
+</prolog>
+<body>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><tt><b>/@code</b>="" </tt><i></i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:8581)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> 2.16.840.1.113883.11.20.9.25 <xref href="../../terminology/PlanOfCareMoodCodeObservation.dita">Plan of Care moodCode (Observation)</xref></tt><b> STATIC</b> (CONF:8582)
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:8584)
+</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><tt><b>/@code</b>="" </tt><i></i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:8581)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> 2.16.840.1.113883.11.20.9.25 <xref href="../../terminology/PlanOfCareMoodCodeObservation.dita">Plan of Care moodCode (Observation)</xref></tt><b> STATIC</b> (CONF:8582)
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:8584)
+</li>
+<li>Contains exactly one [1..1] <tt><b>code</b></tt>, where its data type is CD
+</li>
+</ol>
+<section id="tableconformance">
+</section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="OBS">
+  <templateId root="2.16.840.1.113883.10.20.1.25"/>
+  <id root="679387987"/>
+  <code code="1919588255"/>
+  <effectiveTime>
+    <low value="2012"/>
+    <high value="2012"/>
+  </effectiveTime>
+</observation>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Plan Of Care Activity Observation</ph></p>
+<p id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.1.25</tt>]</p>
+</body>
+</topic>

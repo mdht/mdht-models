@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Drug Vehicle - conformance rules</title>
+<shortdesc id="shortdesc">[ParticipantRole: templateId <tt>2.16.840.1.113883.10.20.22.4.24</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>ParticipantRole</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.22.4.24"/>
+</prolog>
+<body>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="MANU" </tt> (CONF:7490)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="412307009" </tt> (CodeSystem:<tt> 2.16.840.1.113883.6.96 SNOMEDCT</tt>) (CONF:7491)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>playingEntity</b></tt> (CONF:7492)
+</li>
+<li>This playingEntity <b>SHALL</b> contain exactly one [1..1] code (CONF:7493). 
+	This playingEntity/code is used to supply a coded term for the drug  vehicle (CONF:10086) (CONF:7493, CONF:10086)</li>
+<li>This playingEntity <b>MAY</b> contain zero or one [0..1] name (CONF:7494). 
+	This playingEntity/name <b>MAY</b> be used for the vehicle name in text, such as Normal Saline (CONF:10087) (CONF:7494, CONF:10087)</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="MANU" </tt> (CONF:7490)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="412307009" </tt> (CodeSystem:<tt> 2.16.840.1.113883.6.96 SNOMEDCT</tt>) (CONF:7491)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>playingEntity</b></tt> (CONF:7492)
+</li>
+<li>This playingEntity <b>SHALL</b> contain exactly one [1..1] code (CONF:7493). 
+	This playingEntity/code is used to supply a coded term for the drug  vehicle (CONF:10086) (CONF:7493, CONF:10086)</li>
+<li>This playingEntity <b>MAY</b> contain zero or one [0..1] name (CONF:7494). 
+	This playingEntity/name <b>MAY</b> be used for the vehicle name in text, such as Normal Saline (CONF:10087) (CONF:7494, CONF:10087)</li>
+</ol>
+<section id="tableconformance">
+</section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<participantrole xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="MANU">
+  <templateId root="2.16.840.1.113883.10.20.22.4.24"/>
+  <id root="747393743"/>
+  <code code="412307009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+  <playingEntity/>
+</participantrole>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Drug Vehicle</ph></p>
+<p id="shortdesc">[ParticipantRole: templateId <tt>2.16.840.1.113883.10.20.22.4.24</tt>]</p>
+</body>
+</topic>

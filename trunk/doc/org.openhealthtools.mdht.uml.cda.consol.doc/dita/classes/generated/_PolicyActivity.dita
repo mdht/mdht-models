@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Policy Activity - conformance rules</title>
+<shortdesc id="shortdesc">[Act: templateId <tt>2.16.840.1.113883.10.20.22.4.61</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Act</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.22.4.61"/>
+</prolog>
+<body>
+<section id="description">
+<p>A policy activity represents the policy or program providing the coverage.</p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ACT" </tt><i>Act</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:8898)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:8899)
+</li>
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>code</b></tt>, which <b>SHOULD</b> be selected from ValueSet<tt> 2.16.840.1.113883.3.88.12.3221.5.2 <xref href="../../terminology/HealthInsuranceTypeValueSet.dita">Health Insurance Type Value Set</xref></tt><b> STATIC</b> 20081218 (CONF:8903)
+<ol>
+<li>The code, if present, <b>SHOULD</b> contain zero or one [0..1] code, where the @code <b>SHOULD</b> be selected from ValueSet Health Insurance Type Value Set 2.16.840.1.113883.3.88.12.3221.5.2 DYNAMIC (CONF:8904)</li></ol></li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:8901, CONF:10119)
+<ul><li>This id is a unique identifier for the policy or program providing the coverage (CONF:10119)</li></ul></li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt><i>Completed</i> (CodeSystem:<tt> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF:8902)
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>authorizationActivity</b></tt> (CONF:8939, CONF:8940)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
+<li>Contains exactly one [1..1] <xref href="../AuthorizationActivity.dita">Authorization Activity</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.19</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>performer</b></tt> <ol><li> This performer <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="PRF" </tt> (CONF:8907)</li><li> This performer <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedEntity</b></tt> (CONF:8908) <ol><li> This assignedEntity <b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:8909)</li><li> This assignedEntity <b>SHALL</b> contain zero or one [0..1] <tt><b>code</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> 2.16.840.1.113883.1.11.10416 <xref href="../../terminology/FinanciallyResponsiblePartyType.dita">FinanciallyResponsiblePartyType</xref></tt><b> DYNAMIC</b> (CONF:8914, CONF:8915)</li><li> This assignedEntity <b>MAY</b> contain zero or one [0..1] <tt><b>addr</b></tt> (CONF:8910, CONF:10481)</li><li> This assignedEntity <b>MAY</b> contain zero or one [0..1] <tt><b>telecom</b></tt> (CONF:8910)</li><li> This assignedEntity <b>SHOULD</b> contain zero or one [0..1] <tt><b>representedOrganization</b></tt> (CONF:8912) <ol><li> This representedOrganization <b>SHOULD</b> contain zero or one [0..1] <tt><b>name</b></tt> (CONF:8913)</li></ol> </li><li> This assignedEntity 1.	The content of addr <b>SHALL</b> be a conformant US Realm Address (AD.US.FIELDED) (2.16.840.1.113883.10.20.22.5.2) (CONF:10481)</li></ol> </li></ol>
+</li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>performer</b></tt> <ol><li> This performer <b>SHOULD</b> contain exactly one [1..1] <tt><b>@typeCode</b>="PRF" </tt> (CONF:8961)</li><li> This performer <b>SHOULD</b> contain exactly one [1..1] <tt><b>time</b></tt> (CONF:8963)</li><li> This performer <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedEntity</b></tt> (CONF:8962) <ol><li> This assignedEntity <b>SHOULD</b> contain zero or one [0..1] <tt><b>code</b></tt><tt><b>/@code</b>="GUAR" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.111 RoleCode</tt>) (CONF:8968, CONF:10566)</li><li> This assignedEntity <b>SHOULD</b> contain zero or one [0..1] <tt><b>addr</b></tt> (CONF:8964, CONF:10482)<p><i>The content of addr SHALL be a conformant US Realm Address (AD.US.FIELDED) (2.16.840.1.113883.10.20.22.5.2) (CONF:10482)</i></p></li><li> This assignedEntity <b>SHOULD</b> contain zero or one [0..1] <tt><b>telecom</b></tt> (CONF:8965)</li><li> This assignedEntity <b>SHOULD</b> include assignedEntity/assignedPerson/name AND/OR assignedEntity/representedOrganization/name (CONF:8967)</li><li> This assignedEntity The content of addr <b>SHALL</b> be a conformant US Realm Address (AD.US.FIELDED) (2.16.840.1.113883.10.20.22.5.2) (CONF:10482)</li></ol> </li></ol>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>participant</b></tt> (CONF:8916) <ol><li> This participant <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="COV" </tt> (CONF:8917)</li><li> This participant <b>SHOULD</b> contain zero or one [0..1] <tt><b>time</b></tt> (CONF:8918)</li><li> This participant <b>SHALL</b> contain exactly one [1..1] <tt><b>participantRole</b></tt> (CONF:8921) <ol><li> This participantRole <b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:8922)</li><li> This participantRole <b>SHALL</b> contain zero or one [0..1] <tt><b>code</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> 2.16.840.1.113883.1.11.18877 <xref href="../../terminology/CoverageRoleTypeValueSet.dita">Coverage Role Type Value Set</xref></tt><b> DYNAMIC</b> (CONF:8923, CONF:8924)</li><li> This participantRole <b>SHOULD</b> contain zero or one [0..1] <tt><b>addr</b></tt> (CONF:8956)</li><li> This participantRole <b>SHOULD</b> contain zero or one [0..1] <tt><b>playingEntity</b></tt> (CONF:8932) <ol><li> This playingEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>name</b></tt> (CONF:8930)</li></ol> </li></ol> </li><li> This participant The time, if present, <b>SHOULD</b> contain zero or one [0..1] low (CONF:8919)</li><li> This participant The time, if present, <b>SHOULD</b> contain zero or one [0..1] high (CONF:8920)</li></ol>
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>participant</b></tt> (CONF:8934) <ol><li> This participant <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="HLD" </tt> (CONF:8935)</li><li> This participant <b>MAY</b> contain zero or one [0..1] <tt><b>time</b></tt> (CONF:8938)</li><li> This participant <b>SHALL</b> contain exactly one [1..1] <tt><b>participantRole</b></tt> (CONF:8936) <ol><li> This participantRole <b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:8937)<p><i>This id is a unique identifier for the subscriber of the coverage (CONF:10120)</i></p></li><li> This participantRole <b>SHOULD</b> contain zero or one [0..1] <tt><b>addr</b></tt> (CONF:8925)</li></ol> </li></ol>
+</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ACT" </tt><i>Act</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:8898)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:8899)
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:8901, CONF:10119)
+<ul><li>This id is a unique identifier for the policy or program providing the coverage (CONF:10119)</li></ul></li>
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>code</b></tt>, which <b>SHOULD</b> be selected from ValueSet<tt> 2.16.840.1.113883.3.88.12.3221.5.2 <xref href="../../terminology/HealthInsuranceTypeValueSet.dita">Health Insurance Type Value Set</xref></tt><b> STATIC</b> 20081218 (CONF:8903)
+<ol>
+<li>The code, if present, <b>SHOULD</b> contain zero or one [0..1] code, where the @code <b>SHOULD</b> be selected from ValueSet Health Insurance Type Value Set 2.16.840.1.113883.3.88.12.3221.5.2 DYNAMIC (CONF:8904)</li></ol></li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt><i>Completed</i> (CodeSystem:<tt> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF:8902)
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>authorizationActivity</b></tt> (CONF:8939, CONF:8940)
+<ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
+<li>Contains exactly one [1..1] <xref href="../AuthorizationActivity.dita">Authorization Activity</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.19</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>performer</b></tt> <ol><li> This performer <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="PRF" </tt> (CONF:8907)</li><li> This performer <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedEntity</b></tt> (CONF:8908) <ol><li> This assignedEntity <b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:8909)</li><li> This assignedEntity <b>SHALL</b> contain zero or one [0..1] <tt><b>code</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> 2.16.840.1.113883.1.11.10416 <xref href="../../terminology/FinanciallyResponsiblePartyType.dita">FinanciallyResponsiblePartyType</xref></tt><b> DYNAMIC</b> (CONF:8914, CONF:8915)</li><li> This assignedEntity <b>MAY</b> contain zero or one [0..1] <tt><b>addr</b></tt> (CONF:8910, CONF:10481)</li><li> This assignedEntity <b>MAY</b> contain zero or one [0..1] <tt><b>telecom</b></tt> (CONF:8910)</li><li> This assignedEntity <b>SHOULD</b> contain zero or one [0..1] <tt><b>representedOrganization</b></tt> (CONF:8912) <ol><li> This representedOrganization <b>SHOULD</b> contain zero or one [0..1] <tt><b>name</b></tt> (CONF:8913)</li></ol> </li><li> This assignedEntity 1.	The content of addr <b>SHALL</b> be a conformant US Realm Address (AD.US.FIELDED) (2.16.840.1.113883.10.20.22.5.2) (CONF:10481)</li></ol> </li></ol>
+</li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>performer</b></tt> <ol><li> This performer <b>SHOULD</b> contain exactly one [1..1] <tt><b>@typeCode</b>="PRF" </tt> (CONF:8961)</li><li> This performer <b>SHOULD</b> contain exactly one [1..1] <tt><b>time</b></tt> (CONF:8963)</li><li> This performer <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedEntity</b></tt> (CONF:8962) <ol><li> This assignedEntity <b>SHOULD</b> contain zero or one [0..1] <tt><b>code</b></tt><tt><b>/@code</b>="GUAR" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.111 RoleCode</tt>) (CONF:8968, CONF:10566)</li><li> This assignedEntity <b>SHOULD</b> contain zero or one [0..1] <tt><b>addr</b></tt> (CONF:8964, CONF:10482)<p><i>The content of addr SHALL be a conformant US Realm Address (AD.US.FIELDED) (2.16.840.1.113883.10.20.22.5.2) (CONF:10482)</i></p></li><li> This assignedEntity <b>SHOULD</b> contain zero or one [0..1] <tt><b>telecom</b></tt> (CONF:8965)</li><li> This assignedEntity <b>SHOULD</b> include assignedEntity/assignedPerson/name AND/OR assignedEntity/representedOrganization/name (CONF:8967)</li><li> This assignedEntity The content of addr <b>SHALL</b> be a conformant US Realm Address (AD.US.FIELDED) (2.16.840.1.113883.10.20.22.5.2) (CONF:10482)</li></ol> </li></ol>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>participant</b></tt> (CONF:8916) <ol><li> This participant <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="COV" </tt> (CONF:8917)</li><li> This participant <b>SHOULD</b> contain zero or one [0..1] <tt><b>time</b></tt> (CONF:8918)</li><li> This participant <b>SHALL</b> contain exactly one [1..1] <tt><b>participantRole</b></tt> (CONF:8921) <ol><li> This participantRole <b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:8922)</li><li> This participantRole <b>SHALL</b> contain zero or one [0..1] <tt><b>code</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> 2.16.840.1.113883.1.11.18877 <xref href="../../terminology/CoverageRoleTypeValueSet.dita">Coverage Role Type Value Set</xref></tt><b> DYNAMIC</b> (CONF:8923, CONF:8924)</li><li> This participantRole <b>SHOULD</b> contain zero or one [0..1] <tt><b>addr</b></tt> (CONF:8956)</li><li> This participantRole <b>SHOULD</b> contain zero or one [0..1] <tt><b>playingEntity</b></tt> (CONF:8932) <ol><li> This playingEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>name</b></tt> (CONF:8930)</li></ol> </li></ol> </li><li> This participant The time, if present, <b>SHOULD</b> contain zero or one [0..1] low (CONF:8919)</li><li> This participant The time, if present, <b>SHOULD</b> contain zero or one [0..1] high (CONF:8920)</li></ol>
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>participant</b></tt> (CONF:8934) <ol><li> This participant <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="HLD" </tt> (CONF:8935)</li><li> This participant <b>MAY</b> contain zero or one [0..1] <tt><b>time</b></tt> (CONF:8938)</li><li> This participant <b>SHALL</b> contain exactly one [1..1] <tt><b>participantRole</b></tt> (CONF:8936) <ol><li> This participantRole <b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:8937)<p><i>This id is a unique identifier for the subscriber of the coverage (CONF:10120)</i></p></li><li> This participantRole <b>SHOULD</b> contain zero or one [0..1] <tt><b>addr</b></tt> (CONF:8925)</li></ol> </li></ol>
+</li>
+<li>The code, if present, <b>SHOULD</b> contain zero or one [0..1] code, where the @code <b>SHOULD</b> be selected from ValueSet Health Insurance Type Value Set 2.16.840.1.113883.3.88.12.3221.5.2 DYNAMIC (CONF:8904)</li>
+</ol>
+<section id="tableconformance">
+</section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<act xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="ACT" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.22.4.61"/>
+  <id root="1766551521"/>
+  <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+  <statusCode code="completed"/>
+  <effectiveTime>
+    <low value="2012"/>
+    <high value="2012"/>
+  </effectiveTime>
+  <performer typeCode="PRF">
+    <templateId root="null"/>
+    <assignedEntity>
+      <id root="1021644814"/>
+      <code codeSystem="2.16.840.1.113883.5.110" codeSystemName="HL7RoleClass"/>
+      <addr/>
+      <telecom/>
+      <representedOrganization>
+        <name/>
+      </representedOrganization>
+    </assignedEntity>
+  </performer>
+  <performer typeCode="PRF">
+    <time>
+      <low value="2012"/>
+      <high value="2012"/>
+    </time>
+    <assignedEntity>
+      <id root="1487875637"/>
+      <code code="GUAR" codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode"/>
+      <addr/>
+      <telecom/>
+    </assignedEntity>
+  </performer>
+  <participant typeCode="COV">
+    <time>
+      <low value="2012"/>
+      <high value="2012"/>
+    </time>
+    <participantRole>
+      <id root="515396991"/>
+      <code codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode"/>
+      <addr/>
+      <playingEntity>
+        <name/>
+      </playingEntity>
+    </participantRole>
+  </participant>
+  <participant typeCode="HLD">
+    <time>
+      <low value="2012"/>
+      <high value="2012"/>
+    </time>
+    <participantRole>
+      <id root="1761599550"/>
+      <addr/>
+    </participantRole>
+  </participant>
+  <entryRelationship>
+    <act>
+      <templateId root="2.16.840.1.113883.10.20.1.19"/>
+      <id root="1214976620"/>
+      <code code="2081907530"/>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <performer typeCode="PRF">
+        <templateId root="null"/>
+        <assignedEntity>
+          <id root="33437415"/>
+          <code codeSystem="2.16.840.1.113883.5.110" codeSystemName="HL7RoleClass"/>
+          <addr/>
+          <telecom/>
+          <representedOrganization>
+            <name/>
+          </representedOrganization>
+        </assignedEntity>
+      </performer>
+      <performer typeCode="PRF">
+        <time>
+          <low value="2012"/>
+          <high value="2012"/>
+        </time>
+        <assignedEntity>
+          <id root="1009234482"/>
+          <code code="GUAR" codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode"/>
+          <addr/>
+          <telecom/>
+        </assignedEntity>
+      </performer>
+      <participant typeCode="COV">
+        <time>
+          <low value="2012"/>
+          <high value="2012"/>
+        </time>
+        <participantRole>
+          <id root="2102117147"/>
+          <code codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode"/>
+          <addr/>
+          <playingEntity>
+            <name/>
+          </playingEntity>
+        </participantRole>
+      </participant>
+      <participant typeCode="HLD">
+        <time>
+          <low value="2012"/>
+          <high value="2012"/>
+        </time>
+        <participantRole>
+          <id root="1841119611"/>
+          <addr/>
+        </participantRole>
+      </participant>
+    </act>
+  </entryRelationship>
+</act>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Policy Activity</ph></p>
+<p id="shortdesc">[Act: templateId <tt>2.16.840.1.113883.10.20.22.4.61</tt>]</p>
+</body>
+</topic>

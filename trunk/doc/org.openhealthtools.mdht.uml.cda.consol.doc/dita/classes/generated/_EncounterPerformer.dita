@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Encounter Performer - conformance rules</title>
+<shortdesc id="shortdesc">[Performer2: templateId <tt>null</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Performer2</category></metadata>
+<resourceid id="null"/>
+</prolog>
+<body>
+<section id="description">
+<p>INLINE</p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>assignedEntity</b></tt>, where its type is <xref href="../EncounterPerformerAssignedEntity.dita">Encounter Performer Assigned Entity</xref> (CONF:8726)
+</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>assignedEntity</b></tt>, where its type is <xref href="../EncounterPerformerAssignedEntity.dita">Encounter Performer Assigned Entity</xref> (CONF:8726)
+</li>
+</ol>
+<section id="tableconformance">
+</section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<performer2 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <time>
+    <low value="2012"/>
+    <high value="2012"/>
+  </time>
+  <assignedEntity>
+    <id root="93339830"/>
+    <code code="Value"/>
+  </assignedEntity>
+</performer2>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Encounter Performer</ph></p>
+<p id="shortdesc">[Performer2: templateId <tt>null</tt>]</p>
+</body>
+</topic>

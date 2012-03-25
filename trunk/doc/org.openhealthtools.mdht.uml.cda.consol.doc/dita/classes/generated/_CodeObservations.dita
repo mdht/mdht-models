@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Code Observations - conformance rules</title>
+<shortdesc id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.6.2.13</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Observation</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.6.2.13"/>
+</prolog>
+<body>
+<section id="description">
+<p>DICOM Template 2000 specifies that Imaging Report Elements of Value Type Code are contained in sections. The Imaging Report Elements are inferred from Basic Diagnostic Imaging Report Observations that consist of image references and measurements (linear, area, volume, and numeric). Coded DICOM Imaging Report Elements in this context are mapped to CDA-coded observations that are section components and are related to the SOP Instance Observations (templateId 2.16.840.1.113883.10.20.6.2.8) or Quantity Measurement Observations (templateId 2.16.840.1.113883.10.20.6.2.14) by the SPRT (Support) act relationship.</p>
+</section>
+<ol id="conformance">
+<li></li>
+</ol>
+<ol id="aggregate">
+<li>Contains exactly one [1..1] <tt><b>@classCode</b></tt>, where its data type is ActClassObservation
+</li>
+<li>Contains exactly one [1..1] <tt><b>@moodCode</b></tt>, where its data type is x_ActMoodDocumentObservation
+</li>
+<li>Contains exactly one [1..1] <tt><b>code</b></tt>, where its data type is CD
+</li>
+</ol>
+<section id="tableconformance">
+</section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <templateId root="2.16.840.1.113883.10.20.6.2.13"/>
+  <id root="904005359"/>
+  <code code="89355305"/>
+  <effectiveTime>
+    <low value="2012"/>
+    <high value="2012"/>
+  </effectiveTime>
+</observation>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Code Observations</ph></p>
+<p id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.6.2.13</tt>]</p>
+</body>
+</topic>

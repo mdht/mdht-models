@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Indication - conformance rules</title>
+<shortdesc id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.22.4.19</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Observation</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.22.4.19"/>
+</prolog>
+<body>
+<section id="description">
+<p>The Indication Observation documents the rationale for an activity. It can do this with the id element to reference a problem recorded elsewhere in the document or with a code and value to record the problem type and problem within the Indication. For example, the indication for a prescription of a painkiller might be a headache that is documented in the Problems Section</p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:7480)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:7481)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt> (CONF:7483)
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>code</b></tt>, which <b>SHOULD</b> be selected from ValueSet<tt> 2.16.840.1.113883.3.88.12.3221.7.2 <xref href="../../terminology/ProblemType.dita">Problem Type</xref></tt><b> STATIC</b> 2008-12-18 (CONF:7484)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF:7487)
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:7488)
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>value</b></tt>, which <b>SHOULD</b> be selected from ValueSet<tt> 2.16.840.1.113883.3.88.12.3221.7.4 <xref href="../../terminology/Problem.dita">Problem</xref></tt><b> DYNAMIC</b>, where its data type is CD (CONF:7489, CONF:7991)
+</li>
+<li><b>MAY</b> satisfy: Set the observation/id equal to an ID on the problem list to signify that problem as an indication (CONF:9321)</li>
+<li>The value element <b>MAY</b> contain @nullFlavor (CONF:10088)</li>
+<li>If the diagnosis is unkown or the SNOMED code is unknown, @nullFlavor <b>SHOULD</b> be "UNK".  If the code is something other than SNOMED, @nullFlavor <b>SHOULD</b> be "OTH" and the other code <b>SHOULD</b> be placed in the translation element. (CONF:10089)</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:7480)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:7481)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt> (CONF:7483)
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>code</b></tt>, which <b>SHOULD</b> be selected from ValueSet<tt> 2.16.840.1.113883.3.88.12.3221.7.2 <xref href="../../terminology/ProblemType.dita">Problem Type</xref></tt><b> STATIC</b> 2008-12-18 (CONF:7484)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF:7487)
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:7488)
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>value</b></tt>, which <b>SHOULD</b> be selected from ValueSet<tt> 2.16.840.1.113883.3.88.12.3221.7.4 <xref href="../../terminology/Problem.dita">Problem</xref></tt><b> DYNAMIC</b>, where its data type is CD (CONF:7489, CONF:7991)
+</li>
+<li><b>MAY</b> satisfy: Set the observation/id equal to an ID on the problem list to signify that problem as an indication (CONF:9321)</li>
+<li>The value element <b>MAY</b> contain @nullFlavor (CONF:10088)</li>
+<li>If the diagnosis is unkown or the SNOMED code is unknown, @nullFlavor <b>SHOULD</b> be "UNK".  If the code is something other than SNOMED, @nullFlavor <b>SHOULD</b> be "OTH" and the other code <b>SHOULD</b> be placed in the translation element. (CONF:10089)</li>
+</ol>
+<section id="tableconformance">
+</section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="OBS" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
+  <id root="2106550563"/>
+  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+  <statusCode code="completed"/>
+  <effectiveTime>
+    <low value="2012"/>
+    <high value="2012"/>
+  </effectiveTime>
+  <value xsi:type="CD" code="2083779007"/>
+</observation>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Indication</ph></p>
+<p id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.22.4.19</tt>]</p>
+</body>
+</topic>

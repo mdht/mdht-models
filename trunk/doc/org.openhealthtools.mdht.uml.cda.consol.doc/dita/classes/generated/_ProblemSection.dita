@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Problem Section - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.5.1</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.22.2.5.1"/>
+</prolog>
+<body>
+<section id="description">
+<p>This section lists and describes all relevant clinical problems at the time the document is generated. At a minimum, all pertinent current and historical problems should be listed.</p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> conform to <xref href="../ProblemSectionEntriesOptional.dita">Problem Section Entries Optional</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.2.5</tt>)</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>problemConcern</b></tt> (CONF:9183)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ProblemConcernAct.dita">Problem Concern Act</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.3</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="11450-4" </tt><i>Problem List</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:9180)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:9182)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:9181)
+</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> conform to <xref href="../ProblemSectionEntriesOptional.dita">Problem Section Entries Optional</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.2.5</tt>)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="11450-4" </tt><i>Problem List</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:9180)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:9181)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:9182)
+</li>
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>problemConcern</b></tt> (CONF:7882)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ProblemConcernAct.dita">Problem Concern Act</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.3</tt>)</li></ol></li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>problemConcern</b></tt> (CONF:9183)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ProblemConcernAct.dita">Problem Concern Act</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.3</tt>)</li></ol></li>
+</ol>
+<section id="tableconformance">
+</section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <templateId root="2.16.840.1.113883.10.20.22.2.5"/>
+  <templateId root="2.16.840.1.113883.10.20.22.2.5.1"/>
+  <id root="1868626414"/>
+  <code code="11450-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problem List"/>
+  <title/>
+  <text/>
+  <entry>
+    <act classCode="ACT" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.3"/>
+      <id root="1260156158"/>
+      <code code="CONC" codeSystem="2.16.840.1.113883.5.6" codeSystemName="HL7ActClass" displayName="Concern"/>
+      <text>Text Value</text>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <entryRelationship>
+        <observation moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.4"/>
+          <id root="462755578"/>
+          <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+          <text>Text Value</text>
+          <statusCode code="completed"/>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.31"/>
+              <id root="1014135810"/>
+              <code code="445518008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age At Onset"/>
+              <text>Text Value</text>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.5"/>
+              <id root="2016206360"/>
+              <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
+              <text>Text Value</text>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+            </observation>
+          </entryRelationship>
+          <entryRelationship>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.6"/>
+              <id root="152481043"/>
+              <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+              <text>Text Value</text>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+            </observation>
+          </entryRelationship>
+        </observation>
+      </entryRelationship>
+    </act>
+  </entry>
+</section>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Problem Section</ph></p>
+<p id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.5.1</tt>]</p>
+</body>
+</topic>

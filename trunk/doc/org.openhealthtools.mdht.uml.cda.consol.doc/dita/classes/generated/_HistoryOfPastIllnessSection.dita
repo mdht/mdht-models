@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>History Of Past Illness Section - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.20</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.22.2.20"/>
+</prolog>
+<body>
+<section id="description">
+<p>This section describes the history related to the patient's current complaints, problems, or diagnoses. It records the historical details leading up to and pertaining to the patient's current complaint or reason for seeking medical care.</p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="11348-0" </tt><i>HISTORY OF PAST ILLNESS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:7830)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:7831)
+</li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>problemObservation</b></tt> (CONF:8792)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ProblemObservation.dita">Problem Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.4</tt>)</li></ol></li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="11348-0" </tt><i>HISTORY OF PAST ILLNESS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:7830)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:7831)
+</li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>problemObservation</b></tt> (CONF:8792)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ProblemObservation.dita">Problem Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.4</tt>)</li></ol></li>
+</ol>
+<section id="tableconformance">
+</section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <templateId root="2.16.840.1.113883.10.20.22.2.20"/>
+  <id root="1347939883"/>
+  <code code="11348-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HISTORY OF PAST ILLNESS"/>
+  <title/>
+  <text/>
+  <entry>
+    <observation moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.22.4.4"/>
+      <id root="1935706445"/>
+      <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+      <text>Text Value</text>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.31"/>
+          <id root="1053110023"/>
+          <code code="445518008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age At Onset"/>
+          <text>Text Value</text>
+          <statusCode code="completed"/>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.5"/>
+          <id root="489428228"/>
+          <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
+          <text>Text Value</text>
+          <statusCode code="completed"/>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+      <entryRelationship>
+        <observation classCode="OBS" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.4.6"/>
+          <id root="1569977162"/>
+          <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+          <text>Text Value</text>
+          <statusCode code="completed"/>
+          <effectiveTime>
+            <low value="2012"/>
+            <high value="2012"/>
+          </effectiveTime>
+        </observation>
+      </entryRelationship>
+    </observation>
+  </entry>
+</section>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">History Of Past Illness Section</ph></p>
+<p id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.20</tt>]</p>
+</body>
+</topic>

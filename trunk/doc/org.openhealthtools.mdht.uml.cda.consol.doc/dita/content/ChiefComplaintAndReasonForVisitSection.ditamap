@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
+<bookmap id="cdabook">
+
+	<chapter navtitle="Chief Complaint And Reason For Visit Section" type="topic">
+		<topicref href="../classes/ChiefComplaintAndReasonForVisitSectionSection.dita" type="topic" />
+		<topicref href="../classes/ChiefComplaintAndReasonForVisitSectionTable.dita" type="topic" />
+		<topicref href="../classes/ChiefComplaintAndReasonForVisitSectionSample.dita" type="topic" />			                         
+	</chapter>
+
+	
+</bookmap>
+
