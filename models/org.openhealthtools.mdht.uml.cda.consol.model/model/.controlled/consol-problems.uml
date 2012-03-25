@@ -4,7 +4,11 @@
     <ownedComment xmi:id="_hb8PkCAnEeGetMjKLkqR8g">
       <body>This section lists and describes all relevant clinical problems at the time the document is generated. At a minimum, all pertinent current and historical problems should be listed.</body>
     </ownedComment>
-    <generalization xmi:id="_blmF8BVgEeGQCvUGzi1kDQ" general="_naxrkBVdEeGQCvUGzi1kDQ"/>
+    <generalization xmi:id="_blmF8BVgEeGQCvUGzi1kDQ" general="_naxrkBVdEeGQCvUGzi1kDQ">
+      <ownedComment xmi:id="_CN40QHavEeGK39q3kclbsA">
+        <body>couple</body>
+      </ownedComment>
+    </generalization>
     <ownedAttribute xmi:id="_uvodUCf1EeGO5_JBy9h6BA" name="problemConcern" type="_2H6yUBSVEeGGzu7fmW9pXw" redefinedProperty="_kwGNICT3EeGEp-w8SGFAPw" association="_uvodUyf1EeGO5_JBy9h6BA">
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wJfMMCf1EeGO5_JBy9h6BA" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wJfMMSf1EeGO5_JBy9h6BA" value="1"/>

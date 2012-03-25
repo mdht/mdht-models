@@ -10,7 +10,11 @@
         <body>If medication use is unknown, the appropriate nullFlavor MAY be present (see unknown information in Section 1)</body>
       </specification>
     </ownedRule>
-    <generalization xmi:id="_UeEpoBVgEeGQCvUGzi1kDQ" general="_iAoXEBVdEeGQCvUGzi1kDQ"/>
+    <generalization xmi:id="_UeEpoBVgEeGQCvUGzi1kDQ" general="_iAoXEBVdEeGQCvUGzi1kDQ">
+      <ownedComment xmi:id="_4MdWIHavEeGK39q3kclbsA">
+        <body>couple</body>
+      </ownedComment>
+    </generalization>
     <ownedAttribute xmi:id="_2NJ3pBSVEeGGzu7fmW9pXw" name="code" visibility="private">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
     </ownedAttribute>

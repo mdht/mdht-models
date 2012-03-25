@@ -13,7 +13,11 @@ The length of an encounter is documented in the documentationOf/encompassingEnco
         <body>self.getActs()->exists(a : cda::Act | a.oclIsKindOf(consol::ProcedureActivityAct)) or self.getObservations()->exists(o : cda::Observation | o.oclIsKindOf(consol::ProcedureActivityObservation)) or self.getProcedures()->exists(p : cda::Procedure | p.oclIsKindOf(consol::ProcedureActivityProcedure))</body>
       </specification>
     </ownedRule>
-    <generalization xmi:id="_gNO_cBVgEeGQCvUGzi1kDQ" general="_s9Ig4BVdEeGQCvUGzi1kDQ"/>
+    <generalization xmi:id="_gNO_cBVgEeGQCvUGzi1kDQ" general="_s9Ig4BVdEeGQCvUGzi1kDQ">
+      <ownedComment xmi:id="_G90uIHavEeGK39q3kclbsA">
+        <body>couple</body>
+      </ownedComment>
+    </generalization>
     <ownedAttribute xmi:id="_2OAzTRSVEeGGzu7fmW9pXw" name="title" visibility="private">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
     </ownedAttribute>

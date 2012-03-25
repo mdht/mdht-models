@@ -4,7 +4,11 @@
     <ownedComment xmi:id="_2L7IkBSVEeGGzu7fmW9pXw" annotatedElement="_2LWg0BSVEeGGzu7fmW9pXw">
       <body>This section lists and describes any healthcare encounters pertinent to the patient's current health status or historical health history. An Encounter is an interaction, regardless of the setting, between a patient and a practitioner who is vested with primary responsibility for diagnosing, evaluating, or treating the patient's condition. It may include visits, appointments, as well as non face-to-face interactions. It is also a contact between a patient and a practitioner who has primary responsibility for assessing and treating the patient at a given contact, exercising independent judgment. This section may contain all encounters for the time period being summarized, but should include notable encounters.</body>
     </ownedComment>
-    <generalization xmi:id="_KVkvoBVgEeGQCvUGzi1kDQ" general="_4yj2wBVdEeGQCvUGzi1kDQ"/>
+    <generalization xmi:id="_KVkvoBVgEeGQCvUGzi1kDQ" general="_4yj2wBVdEeGQCvUGzi1kDQ">
+      <ownedComment xmi:id="_pkUdgHauEeGK39q3kclbsA">
+        <body>couple</body>
+      </ownedComment>
+    </generalization>
     <ownedAttribute xmi:id="_qg2HIDFVEeGbx9xBxK_Upg" name="encounterActivities" type="_2LayQBSVEeGGzu7fmW9pXw" association="_qg2uMDFVEeGbx9xBxK_Upg">
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8QzhwDFVEeGbx9xBxK_Upg" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8Q0I0DFVEeGbx9xBxK_Upg" value="1"/>
