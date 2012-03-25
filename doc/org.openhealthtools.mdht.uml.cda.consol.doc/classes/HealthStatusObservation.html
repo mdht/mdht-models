@@ -11,7 +11,6 @@
 <meta name="abstract" content="[Observation: templateId 2.16.840.1.113883.10.20.22.4.5]"/>
 <meta name="description" content="[Observation: templateId 2.16.840.1.113883.10.20.22.4.5]"/>
 <meta name="DC.Coverage" content="Observation"/>
-<meta name="DC.Relation" scheme="URI" content="../content/ClinicalStatementTemplates.html"/>
 <meta name="DC.Format" content="XHTML"/>
 <meta name="DC.Identifier" content="classId"/>
 <meta name="DC.Language" content="en-us"/>
@@ -24,84 +23,69 @@
 	may be found on the HL7, IHE, and HITSP web sites.</p>
 </div>
 
-<h1 class="title topictitle1">Health Status Observation</h1>
+	<h1 class="title topictitle1"><span class="ph">Health Status Observation</span></h1>
 
+	
+	
+	<div class="body"><p class="shortdesc">[Observation: templateId <tt class="ph tt">2.16.840.1.113883.10.20.22.4.5</tt>]</p>
 
-
-<div class="body"><p class="shortdesc">[Observation: templateId <tt class="ph tt">2.16.840.1.113883.10.20.22.4.5</tt>]</p>
-
-
-<div class="section">
-<p class="p">The health status observation records information about the current health status of the patient.</p>
+		
+		<div class="section">
+<p class="p">The Health Status Observation records information about the current health status of the patient.</p>
 
 </div>
 
+		
 
-
-<ol class="ol">
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="OBS" </tt><em class="ph i">Observation</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+		<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="OBS" </tt><em class="ph i">Observation</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:9057)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:9072)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="11323-3" </tt><em class="ph i">Health status</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-166)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="11323-3" </tt><em class="ph i">Health status</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:9073)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">statusCode</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="completed" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.14 HL7ActStatus</tt>)
+<li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">text</strong></tt> (CONF:9270)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt>, which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> 2.16.840.1.113883.1.11.20.12 ProblemHealthStatusCode</tt><strong class="ph b"> STATIC</strong> (CONF-CONSOL-545)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">statusCode</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="completed" </tt><em class="ph i">Completed</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF:9074)
 </li>
 
-<li class="li"><strong class="ph b">SHOULD</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">text</strong></tt> (CONF-CONSOL-546)
-<ol class="ol" type="a">
-<li class="li">The 'text' elements <strong class="ph b">SHOULD</strong> contain a 'reference' element pointing to the narrative where the severity is recorded, rather than duplicate text to avoid ambiguity. (CONF-CONSOL-544)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not self.text.reference.oclIsUndefined()</pre>
-</li>
-</ul>
-</li>
-</ol>
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt>, which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> 2.16.840.1.113883.3.88.12.80.68 <a class="xref" href="../terminology/HITSPProblemStatus.html">HITSP Problem Status</a></tt><strong class="ph b"> STATIC</strong>, where its data type is CD (CONF:9075)
 </li>
 
-<li class="li"><strong class="ph b">SHALL NOT</strong> contain any additional Observation attributes.</li>
+<li class="li">text, if present, <strong class="ph b">SHOULD</strong> contain zero or one [0..1] reference/@value (CONF:9271)</li>
 
-<li class="li"><strong class="ph b">SHALL NOT</strong> contain any Observation participants.<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.participant-&gt;isEmpty()</pre>
-</li>
-</ul>
-</li>
-
-<li class="li"><strong class="ph b">SHALL NOT</strong> be the source of any Observation relationships.</li>
+<li class="li">reference/@value <strong class="ph b">SHALL</strong> begin with a '#' and <strong class="ph b">SHALL</strong> point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1) (CONF:9272)</li>
 
 </ol>
 
+		
+		<p class="p">
+		</p>
 
-<p class="p"> </p>
-
-<p class="p"><strong class="ph b">Health Status Observation example</strong></p>
-
-
-
-<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+		<p class="p">
+			<strong class="ph b"><span class="ph">Health Status Observation</span> example</strong>
+		</p>
+		
+		<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="OBS" moodCode="EVN"&gt;
-  &lt;templateId root="2.16.840.1.113883.10.20.1.57"/&gt;
-  &lt;templateId root="2.16.840.1.113883.10.20.21.4.5"/&gt;
-  &lt;id root="9878b0b0-4d23-43df-bd31-3ec05dcdb17e"/&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.22.4.5"/&gt;
+  &lt;id root="1398957629"/&gt;
   &lt;code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/&gt;
-  &lt;text/&gt;
+  &lt;text&gt;Text Value&lt;/text&gt;
   &lt;statusCode code="completed"/&gt;
   &lt;effectiveTime&gt;
-    &lt;low value="2011"/&gt;
-    &lt;high value="2011"/&gt;
+    &lt;low value="2012"/&gt;
+    &lt;high value="2012"/&gt;
   &lt;/effectiveTime&gt;
+  &lt;value xsi:type="CD" code="736986542"/&gt;
 &lt;/observation&gt;</pre>
 
-</div>
+	</div>
 
-<div class="related-links">
-<div class="familylinks">
-<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../content/ClinicalStatementTemplates.html">CLINICAL STATEMENT TEMPLATES</a></div>
-</div>
-</div>
 
 </body>
 </html>

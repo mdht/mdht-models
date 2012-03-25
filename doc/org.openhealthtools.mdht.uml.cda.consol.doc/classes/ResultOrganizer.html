@@ -11,7 +11,6 @@
 <meta name="abstract" content="[Organizer: templateId 2.16.840.1.113883.10.20.22.4.1]"/>
 <meta name="description" content="[Organizer: templateId 2.16.840.1.113883.10.20.22.4.1]"/>
 <meta name="DC.Coverage" content="Organizer"/>
-<meta name="DC.Relation" scheme="URI" content="../content/ClinicalStatementTemplates.html"/>
 <meta name="DC.Format" content="XHTML"/>
 <meta name="DC.Identifier" content="classId"/>
 <meta name="DC.Language" content="en-us"/>
@@ -24,118 +23,89 @@
 	may be found on the HL7, IHE, and HITSP web sites.</p>
 </div>
 
-<h1 class="title topictitle1">Result Organizer</h1>
+	<h1 class="title topictitle1"><span class="ph">Result Organizer</span></h1>
 
+	
+	
+	<div class="body"><p class="shortdesc">[Organizer: templateId <tt class="ph tt">2.16.840.1.113883.10.20.22.4.1</tt>]</p>
 
-
-<div class="body"><p class="shortdesc">[Organizer: templateId <tt class="ph tt">2.16.840.1.113883.10.20.22.4.1</tt>]</p>
-
-
-<div class="section">
+		
+		<div class="section">
 <p class="p">
-    The result organizer identifies an observation set, contained with the result organizer
-    as a set of result observations. It contains information applicable to all of the contained result
-    observations.
+This clinical statement identifies set of result observations. It contains information applicable to all of the contained result observations. Result type codes categorize a result into one of several commonly accepted values (e.g., "Hematology", "Chemistry", "Nuclear Medicine"). These values are often implicit in the Organizer/code (e.g., an Organizer/code of "complete blood count" implies a ResultTypeCode of "Hematology"). This template requires Organizer/code to include a ResultTypeCode either directly or as a translation of a code from some other code system.
 </p>
 
+
 <p class="p">
-    Results in ASTM CCR and CCD are structured similarly to the HL7 Version 2 ORU Observation message, where
-    there is an outer result organizer (templateId 2.16.840.1.113883.10.20.1.32), analogous to the HL7 Version 2 OBR
-    Observation Result Segment, which contains one or more result observations (templateId 2.16.840.1.113883.10.20.1.31),
-    analogous to the HL7 Version 2 OBX Observation/Result Segment.
+An appropriate nullFlavor can be used when a single result observation is contained in the organizer, and organizer/code or organizer/id is unknown.
 </p>
 
 </div>
 
+		
 
-
-<ol class="ol">
-<li class="li">Contains exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong></tt>
+		<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@classCode</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:7121, CONF:7165)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF-394)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@moodCode</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="EVN" </tt><em class="ph i">Event</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:7122)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF-395)
+<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF:7127)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF-397)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">statusCode</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="completed" </tt><em class="ph i">Completed</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF:7123)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">resultObservation</strong></tt> (CONF:7124, CONF:7125)
 <ol class="ol" type="a">
-<li class="li">The value for 'code' in a result organizer <strong class="ph b">SHOULD</strong> be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96), and <strong class="ph b">MAY</strong> be selected from CPT-4 (codeSystem 2.16.840.1.113883.6.12) or ValueSet 2.16.840.1.113883.1.11.20.16 ResultTypeCode STATIC. (CONF-398)</li>
+<li class="li">Contains exactly one [1..1] <a class="xref" href="ResultObservation.html" title="[Observation: templateId 2.16.840.1.113883.10.20.22.4.2]">Result Observation</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.4.2</tt>)</li>
 </ol>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">statusCode</strong></tt> (CONF-396)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CONF:7128)
 </li>
 
-<li class="li">Contains at least one [1..*] <tt class="ph tt"><strong class="ph b">component</strong></tt>, such that
-<ol class="ol" type="a">
-<li class="li">Contains exactly one [1..1] <a class="xref" href="Result.html" title="[Observation: templateId 2.16.840.1.113883.10.20.22.4.2]">Result</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.4.2</tt>)</li>
-</ol>
-</li>
+<li class="li">The value for 'code' in a result organizer <strong class="ph b">SHOULD</strong> be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96) and <strong class="ph b">MAY</strong> be selected from CPT-4 (codeSystem 2.16.840.1.113883.6.12).  Laboratory results <strong class="ph b">SHOULD</strong> be from LOINC (CodeSystem: 2.16.840.1.113883.6.1) or other constrained terminology named by the US Department of Health and Human Services Office of National Coordinator or other federal agency. Local and/or regional codes for laboratory results <strong class="ph b">SHOULD</strong> also be allowed. (CONF:7164)</li>
 
-<li class="li">Contains at least one [1..*] <tt class="ph tt"><strong class="ph b">specimen</strong></tt>, such that
-</li>
-
-<li class="li">The specimen element <strong class="ph b">SHALL NOT</strong> conflict with the specimen inherent in code (CONF-400)</li>
-
-<li class="li">specimen / specimenRole / id <strong class="ph b">SHOULD</strong> be set to equal a Procedure / specimen / specimenRole / id to indicate that the Results and the Procedure are referring to the same specimen. (CONF-401)</li>
-
-<li class="li"><strong class="ph b">SHALL</strong> satisfy: Contains one or more component (CONF-402)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not self.component-&gt;isEmpty()</pre>
-</li>
-</ul>
-</li>
-
-<li class="li">The target of one or more result organizer component relationships <strong class="ph b">MAY</strong> be a procedure, to indicate the means or technique by which a result is obtained, particularly if the means or technique isn't inherent in code or if there is a need to further specialize the code value. (CONF-403)</li>
-
-<li class="li">A result organizer component / procedure <strong class="ph b">MAY</strong> be a reference to a procedure described in the Procedure section. (CONF-404)</li>
-
-<li class="li"><strong class="ph b">SHALL</strong> satisfy: Contains one or more sources of information. (CONF-406)<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not self.informant-&gt;isEmpty() 
-or not self.getSection().informant-&gt;isEmpty()
-or not self.getClinicalDocument().informant-&gt;isEmpty()
-or self.reference-&gt;exists(ref : cda::Reference | ref.typeCode = vocab::x_ActRelationshipExternalReference::XCRPT)</pre>
-</li>
-</ul>
-</li>
+<li class="li"><strong class="ph b">SHOULD</strong> contain zero or one [0..1] @classCode="CLUSTER" Cluster (CodeSystem: 2.16.840.1.113883.5.6 HL7ActClass) OR <strong class="ph b">SHOULD</strong> contain zero or one [0..1] @classCode="BATTERY" Battery (CodeSystem: 2.16.840.1.113883.5.6 HL7ActClass) (CONF:7165)</li>
 
 </ol>
 
+		
+		<p class="p">
+		</p>
 
-<p class="p"> </p>
-
-<p class="p"><strong class="ph b">Result Organizer example</strong></p>
-
-
-
-<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+		<p class="p">
+			<strong class="ph b"><span class="ph">Result Organizer</span> example</strong>
+		</p>
+		
+		<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;organizer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" moodCode="EVN"&gt;
-  &lt;templateId root="2.16.840.1.113883.10.20.21.4.1"/&gt;
-  &lt;id root="28e0bc09-e97a-40d7-8714-2cd08da65251"/&gt;
-  &lt;code/&gt;
-  &lt;statusCode/&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.22.4.1"/&gt;
+  &lt;id root="450039037"/&gt;
+  &lt;code code="105243504"/&gt;
+  &lt;statusCode code="completed"/&gt;
   &lt;effectiveTime&gt;
-    &lt;low value="2011"/&gt;
-    &lt;high value="2011"/&gt;
+    &lt;low value="2012"/&gt;
+    &lt;high value="2012"/&gt;
   &lt;/effectiveTime&gt;
   &lt;component&gt;
-    &lt;observation moodCode="EVN"&gt;
-      &lt;templateId root="2.16.840.1.113883.10.20.21.4.2"/&gt;
-      &lt;id root="d9b65e2f-6ab1-4432-8be3-b3fed77d68df"/&gt;
+    &lt;observation classCode="OBS" moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.22.4.2"/&gt;
+      &lt;id root="1742292489"/&gt;
+      &lt;code code="245120801"/&gt;
+      &lt;statusCode code="completed"/&gt;
       &lt;effectiveTime&gt;
-        &lt;low value="2011"/&gt;
-        &lt;high value="2011"/&gt;
+        &lt;low value="2012"/&gt;
+        &lt;high value="2012"/&gt;
       &lt;/effectiveTime&gt;
     &lt;/observation&gt;
   &lt;/component&gt;
 &lt;/organizer&gt;</pre>
 
-</div>
+	</div>
 
-<div class="related-links">
-<div class="familylinks">
-<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../content/ClinicalStatementTemplates.html">CLINICAL STATEMENT TEMPLATES</a></div>
-</div>
-</div>
 
 </body>
 </html>
