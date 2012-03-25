@@ -40,14 +40,14 @@
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="OBS" moodCode="EVN">
   <templateId root="2.16.840.1.113883.10.20.22.4.47"/>
-  <id root="143280304"/>
+  <id root="1602366777"/>
   <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Assertion"/>
   <statusCode code="completed"/>
   <effectiveTime>
     <low value="2012"/>
     <high value="2012"/>
   </effectiveTime>
-  <value xsi:type="CD" code="1262642219"/>
+  <value xsi:type="CD" code="1020328375"/>
 </observation>]]></codeblock>
 <section id="changes">
 </section>

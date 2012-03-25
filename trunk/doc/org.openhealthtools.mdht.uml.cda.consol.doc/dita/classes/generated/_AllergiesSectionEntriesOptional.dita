@@ -38,14 +38,14 @@
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
   <templateId root="2.16.840.1.113883.10.20.22.2.6"/>
-  <id root="1207457165"/>
+  <id root="1397226493"/>
   <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergies, adverse reactions, alerts"/>
   <title/>
   <text/>
   <entry>
     <act classCode="ACT" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.22.4.30"/>
-      <id root="1436811838"/>
+      <id root="1904332823"/>
       <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergies, adverse reactions, alerts"/>
       <text>Text Value</text>
       <effectiveTime>
@@ -55,7 +55,7 @@
       <entryRelationship>
         <observation classCode="OBS" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.22.4.7"/>
-          <id root="1692534857"/>
+          <id root="397803736"/>
           <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/>
           <text>Text Value</text>
           <statusCode code="completed"/>
@@ -66,8 +66,8 @@
           <entryRelationship>
             <observation classCode="OBS" moodCode="EVN">
               <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
-              <id root="730313811"/>
-              <code code="1987202441"/>
+              <id root="2107611058"/>
+              <code code="1432093878"/>
               <text>Text Value</text>
               <statusCode code="completed"/>
               <effectiveTime>
@@ -77,7 +77,7 @@
               <entryRelationship>
                 <observation classCode="OBS" moodCode="EVN">
                   <templateId root="2.16.840.1.113883.10.20.22.4.8"/>
-                  <id root="421073847"/>
+                  <id root="1866295756"/>
                   <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Severity observation"/>
                   <text>Text Value</text>
                   <statusCode code="completed"/>
@@ -90,8 +90,8 @@
               <entryRelationship>
                 <procedure classCode="PROC">
                   <templateId root="2.16.840.1.113883.10.20.22.4.14"/>
-                  <id root="336992045"/>
-                  <code code="1718695900"/>
+                  <id root="1242925917"/>
+                  <code code="1462370947"/>
                   <text>Text Value</text>
                   <effectiveTime>
                     <low value="2012"/>
@@ -115,8 +115,8 @@
               <entryRelationship>
                 <substanceAdministration classCode="SBADM">
                   <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
-                  <id root="2124025924"/>
-                  <code code="1699872645"/>
+                  <id root="2096269450"/>
+                  <code code="1479035748"/>
                   <text>Text Value</text>
                   <effectiveTime value="20120325"/>
                   <consumable/>
@@ -142,7 +142,7 @@
           <entryRelationship>
             <observation classCode="OBS" moodCode="EVN">
               <templateId root="2.16.840.1.113883.10.20.22.4.8"/>
-              <id root="1904737664"/>
+              <id root="749833834"/>
               <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Severity observation"/>
               <text>Text Value</text>
               <statusCode code="completed"/>
@@ -155,7 +155,7 @@
           <entryRelationship>
             <observation classCode="OBS" moodCode="EVN">
               <templateId root="2.16.840.1.113883.10.20.22.4.28"/>
-              <id root="1915927675"/>
+              <id root="1256599387"/>
               <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
               <text>Text Value</text>
               <statusCode code="completed"/>

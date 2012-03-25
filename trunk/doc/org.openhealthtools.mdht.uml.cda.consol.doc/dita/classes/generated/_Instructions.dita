@@ -44,7 +44,7 @@
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <act xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="ACT" moodCode="INT">
   <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-  <id root="7194304"/>
+  <id root="28251490"/>
   <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
   <text>Text Value</text>
   <statusCode code="completed"/>

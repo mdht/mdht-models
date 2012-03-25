@@ -64,15 +64,15 @@
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
   <templateId root="2.16.840.1.113883.10.20.22.2.10"/>
-  <id root="928775625"/>
+  <id root="44379479"/>
   <code code="18776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treatment plan"/>
   <title/>
   <text/>
   <entry>
     <act classCode="ACT">
       <templateId root="2.16.840.1.113883.10.20.22.4.39"/>
-      <id root="978399482"/>
-      <code code="985764266"/>
+      <id root="1331765001"/>
+      <code code="1583283457"/>
       <text>Text Value</text>
       <effectiveTime>
         <low value="2012"/>
@@ -83,8 +83,8 @@
   <entry>
     <encounter classCode="ENC">
       <templateId root="2.16.840.1.113883.10.20.22.4.40"/>
-      <id root="1763283430"/>
-      <code code="1332605924"/>
+      <id root="1355459235"/>
+      <code code="1320403464"/>
       <text>Text Value</text>
       <effectiveTime>
         <low value="2012"/>
@@ -95,8 +95,8 @@
   <entry>
     <observation classCode="OBS">
       <templateId root="2.16.840.1.113883.10.20.1.25"/>
-      <id root="118233406"/>
-      <code code="55918899"/>
+      <id root="1605077927"/>
+      <code code="1683635729"/>
       <text>Text Value</text>
       <effectiveTime>
         <low value="2012"/>
@@ -107,8 +107,8 @@
   <entry>
     <procedure classCode="PROC">
       <templateId root="2.16.840.1.113883.10.20.22.4.41"/>
-      <id root="1610257348"/>
-      <code code="1280341086"/>
+      <id root="556221398"/>
+      <code code="1110082346"/>
       <text>Text Value</text>
       <effectiveTime>
         <low value="2012"/>
@@ -119,8 +119,8 @@
   <entry>
     <substanceAdministration classCode="SBADM">
       <templateId root="2.16.840.1.113883.10.20.1.25"/>
-      <id root="1698058358"/>
-      <code code="1470822396"/>
+      <id root="418033602"/>
+      <code code="1930995262"/>
       <text>Text Value</text>
       <effectiveTime value="20120325"/>
       <consumable/>
@@ -129,8 +129,8 @@
   <entry>
     <supply classCode="SPLY">
       <templateId root="2.16.840.1.113883.10.20.22.4.43"/>
-      <id root="1863178578"/>
-      <code code="1370367786"/>
+      <id root="1839167246"/>
+      <code code="215103444"/>
       <text>Text Value</text>
       <effectiveTime value="20120325"/>
     </supply>

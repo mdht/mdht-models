@@ -165,21 +165,21 @@ Not pre-coordinated consumable: If the consumable code is not pre-coordinated (e
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <substanceadministration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="SBADM">
   <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
-  <id root="1092142169"/>
-  <code code="1858764471"/>
+  <id root="492023212"/>
+  <code code="2057204577"/>
   <text>Text Value</text>
   <statusCode code="completed"/>
   <effectiveTime value="20120325"/>
   <repeatNumber value="1"/>
   <routeCode code="Value"/>
-  <approachSiteCode code="720175282"/>
+  <approachSiteCode code="1228241767"/>
   <doseQuantity/>
   <rateQuantity/>
   <maxDoseQuantity/>
   <administrationUnitCode code="Value"/>
   <consumable>
     <manufacturedProduct>
-      <id root="617353124"/>
+      <id root="121299580"/>
       <manufacturedMaterial>
         <code code="Value"/>
       </manufacturedMaterial>
@@ -192,7 +192,7 @@ Not pre-coordinated consumable: If the consumable code is not pre-coordinated (e
   </consumable>
   <performer>
     <assignedEntity>
-      <id root="1289773024"/>
+      <id root="1079103225"/>
       <assignedPerson/>
       <representedOrganization>
         <asOrganizationPartOf>
@@ -204,15 +204,15 @@ Not pre-coordinated consumable: If the consumable code is not pre-coordinated (e
   <entryRelationship>
     <supply classCode="SPLY" moodCode="INT">
       <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
-      <id root="1859735729"/>
-      <code code="656013632"/>
+      <id root="203611261"/>
+      <code code="459967298"/>
       <text>Text Value</text>
       <statusCode code="completed"/>
       <effectiveTime value="20120325"/>
       <repeatNumber value="1"/>
       <performer>
         <assignedEntity>
-          <id root="486974218"/>
+          <id root="1828234525"/>
           <assignedPerson/>
           <representedOrganization>
             <asOrganizationPartOf/>
@@ -222,7 +222,7 @@ Not pre-coordinated consumable: If the consumable code is not pre-coordinated (e
       <entryRelationship>
         <act classCode="ACT" moodCode="INT">
           <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-          <id root="1619623412"/>
+          <id root="730434831"/>
           <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
           <text>Text Value</text>
           <statusCode code="completed"/>
@@ -232,7 +232,7 @@ Not pre-coordinated consumable: If the consumable code is not pre-coordinated (e
           </effectiveTime>
           <performer>
             <assignedEntity>
-              <id root="1410856495"/>
+              <id root="1578109990"/>
               <assignedPerson/>
               <representedOrganization/>
             </assignedEntity>
@@ -250,8 +250,8 @@ Not pre-coordinated consumable: If the consumable code is not pre-coordinated (e
   <entryRelationship>
     <observation classCode="OBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
-      <id root="490725123"/>
-      <code code="364109916"/>
+      <id root="1764775321"/>
+      <code code="675381395"/>
       <text>Text Value</text>
       <statusCode code="completed"/>
       <effectiveTime>
@@ -261,7 +261,7 @@ Not pre-coordinated consumable: If the consumable code is not pre-coordinated (e
       <repeatNumber value="1"/>
       <performer>
         <assignedEntity>
-          <id root="814211503"/>
+          <id root="860880336"/>
           <assignedPerson/>
           <representedOrganization>
             <asOrganizationPartOf/>
@@ -271,7 +271,7 @@ Not pre-coordinated consumable: If the consumable code is not pre-coordinated (e
       <entryRelationship>
         <observation classCode="OBS" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.22.4.8"/>
-          <id root="546689684"/>
+          <id root="236080938"/>
           <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Severity observation"/>
           <text>Text Value</text>
           <statusCode code="completed"/>
@@ -282,7 +282,7 @@ Not pre-coordinated consumable: If the consumable code is not pre-coordinated (e
           <repeatNumber value="1"/>
           <performer>
             <assignedEntity>
-              <id root="1915622982"/>
+              <id root="875553869"/>
               <assignedPerson/>
               <representedOrganization/>
             </assignedEntity>
@@ -295,19 +295,19 @@ Not pre-coordinated consumable: If the consumable code is not pre-coordinated (e
       <entryRelationship>
         <procedure classCode="PROC">
           <templateId root="2.16.840.1.113883.10.20.22.4.14"/>
-          <id root="119253399"/>
-          <code code="230670200"/>
+          <id root="221168870"/>
+          <code code="1726532323"/>
           <text>Text Value</text>
           <statusCode code="completed"/>
           <effectiveTime>
             <low value="2012"/>
             <high value="2012"/>
           </effectiveTime>
-          <approachSiteCode code="178503984"/>
+          <approachSiteCode code="343226875"/>
           <targetSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
           <performer>
             <assignedEntity>
-              <id root="1077553987"/>
+              <id root="1042983104"/>
               <assignedPerson/>
               <representedOrganization/>
             </assignedEntity>
@@ -315,7 +315,7 @@ Not pre-coordinated consumable: If the consumable code is not pre-coordinated (e
           <entryRelationship>
             <observation classCode="OBS" moodCode="EVN">
               <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
-              <id root="853444903"/>
+              <id root="458862062"/>
               <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
               <text>Text Value</text>
               <statusCode code="completed"/>
@@ -335,14 +335,14 @@ Not pre-coordinated consumable: If the consumable code is not pre-coordinated (e
           <entryRelationship>
             <substanceAdministration classCode="SBADM">
               <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
-              <id root="1902031493"/>
-              <code code="57860499"/>
+              <id root="1432879807"/>
+              <code code="1508909654"/>
               <text>Text Value</text>
               <statusCode code="completed"/>
               <effectiveTime value="20120325"/>
               <repeatNumber value="1"/>
               <routeCode code="Value"/>
-              <approachSiteCode code="789991198"/>
+              <approachSiteCode code="544419251"/>
               <doseQuantity/>
               <rateQuantity/>
               <maxDoseQuantity/>
@@ -356,8 +356,8 @@ Not pre-coordinated consumable: If the consumable code is not pre-coordinated (e
               <entryRelationship>
                 <supply classCode="SPLY" moodCode="INT">
                   <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
-                  <id root="989416675"/>
-                  <code code="1133304891"/>
+                  <id root="1698997544"/>
+                  <code code="543104945"/>
                   <text>Text Value</text>
                   <statusCode code="completed"/>
                   <effectiveTime value="20120325"/>
@@ -372,8 +372,8 @@ Not pre-coordinated consumable: If the consumable code is not pre-coordinated (e
               <entryRelationship>
                 <observation classCode="OBS" moodCode="EVN">
                   <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
-                  <id root="94366782"/>
-                  <code code="189380711"/>
+                  <id root="1266134774"/>
+                  <code code="1573736278"/>
                   <text>Text Value</text>
                   <statusCode code="completed"/>
                   <effectiveTime>
@@ -397,7 +397,7 @@ Not pre-coordinated consumable: If the consumable code is not pre-coordinated (e
               <entryRelationship>
                 <act classCode="ACT" moodCode="INT">
                   <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-                  <id root="564118950"/>
+                  <id root="1804543432"/>
                   <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                   <text>Text Value</text>
                   <statusCode code="completed"/>
@@ -412,7 +412,7 @@ Not pre-coordinated consumable: If the consumable code is not pre-coordinated (e
               <entryRelationship>
                 <observation classCode="OBS" moodCode="EVN">
                   <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
-                  <id root="1829427267"/>
+                  <id root="894312378"/>
                   <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                   <text>Text Value</text>
                   <statusCode code="completed"/>
@@ -428,8 +428,8 @@ Not pre-coordinated consumable: If the consumable code is not pre-coordinated (e
               <entryRelationship>
                 <supply classCode="SPLY" moodCode="EVN">
                   <templateId root="2.16.840.1.113883.10.20.22.4.18"/>
-                  <id root="1489882517"/>
-                  <code code="1062138609"/>
+                  <id root="1518573187"/>
+                  <code code="2042163997"/>
                   <text>Text Value</text>
                   <statusCode code="completed"/>
                   <effectiveTime value="20120325"/>
@@ -449,7 +449,7 @@ Not pre-coordinated consumable: If the consumable code is not pre-coordinated (e
           <entryRelationship>
             <act classCode="ACT" moodCode="INT">
               <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-              <id root="1792094294"/>
+              <id root="1059442013"/>
               <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
               <text>Text Value</text>
               <statusCode code="completed"/>
@@ -467,8 +467,8 @@ Not pre-coordinated consumable: If the consumable code is not pre-coordinated (e
           </entryRelationship>
           <entryRelationship>
             <encounter>
-              <id root="117564974"/>
-              <code code="1357447229"/>
+              <id root="565872493"/>
+              <code code="1420658589"/>
               <text>Text Value</text>
               <statusCode code="completed"/>
               <effectiveTime>
@@ -491,28 +491,28 @@ Not pre-coordinated consumable: If the consumable code is not pre-coordinated (e
       <entryRelationship>
         <substanceAdministration classCode="SBADM">
           <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
-          <id root="1808840034"/>
-          <code code="645910495"/>
+          <id root="434448253"/>
+          <code code="862215304"/>
           <text>Text Value</text>
           <statusCode code="completed"/>
           <effectiveTime value="20120325"/>
           <repeatNumber value="1"/>
           <routeCode code="Value"/>
-          <approachSiteCode code="1900891112"/>
+          <approachSiteCode code="2069758821"/>
           <doseQuantity/>
           <rateQuantity/>
           <maxDoseQuantity/>
           <administrationUnitCode code="Value"/>
           <consumable>
             <manufacturedProduct>
-              <id root="410770995"/>
+              <id root="2136760312"/>
               <manufacturedMaterial/>
               <manufacturerOrganization/>
             </manufacturedProduct>
           </consumable>
           <performer>
             <assignedEntity>
-              <id root="1554425327"/>
+              <id root="1065056192"/>
               <assignedPerson/>
               <representedOrganization/>
             </assignedEntity>
@@ -520,8 +520,8 @@ Not pre-coordinated consumable: If the consumable code is not pre-coordinated (e
           <entryRelationship>
             <supply classCode="SPLY" moodCode="INT">
               <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
-              <id root="1614143329"/>
-              <code code="116151402"/>
+              <id root="2035898626"/>
+              <code code="1045817643"/>
               <text>Text Value</text>
               <statusCode code="completed"/>
               <effectiveTime value="20120325"/>
@@ -532,7 +532,7 @@ Not pre-coordinated consumable: If the consumable code is not pre-coordinated (e
               <entryRelationship>
                 <act classCode="ACT" moodCode="INT">
                   <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-                  <id root="1021650436"/>
+                  <id root="2094117017"/>
                   <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                   <text>Text Value</text>
                   <statusCode code="completed"/>
@@ -552,8 +552,8 @@ Not pre-coordinated consumable: If the consumable code is not pre-coordinated (e
           <entryRelationship>
             <observation classCode="OBS" moodCode="EVN">
               <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
-              <id root="1764512872"/>
-              <code code="293746162"/>
+              <id root="351273495"/>
+              <code code="928503407"/>
               <text>Text Value</text>
               <statusCode code="completed"/>
               <effectiveTime>
@@ -567,7 +567,7 @@ Not pre-coordinated consumable: If the consumable code is not pre-coordinated (e
               <entryRelationship>
                 <observation classCode="OBS" moodCode="EVN">
                   <templateId root="2.16.840.1.113883.10.20.22.4.8"/>
-                  <id root="562004517"/>
+                  <id root="959549995"/>
                   <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Severity observation"/>
                   <text>Text Value</text>
                   <statusCode code="completed"/>
@@ -583,15 +583,15 @@ Not pre-coordinated consumable: If the consumable code is not pre-coordinated (e
               <entryRelationship>
                 <procedure classCode="PROC">
                   <templateId root="2.16.840.1.113883.10.20.22.4.14"/>
-                  <id root="964994790"/>
-                  <code code="1167304862"/>
+                  <id root="767211292"/>
+                  <code code="353137925"/>
                   <text>Text Value</text>
                   <statusCode code="completed"/>
                   <effectiveTime>
                     <low value="2012"/>
                     <high value="2012"/>
                   </effectiveTime>
-                  <approachSiteCode code="1116032079"/>
+                  <approachSiteCode code="717643586"/>
                   <targetSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                   <performer/>
                   <entryRelationship>
@@ -612,14 +612,14 @@ Not pre-coordinated consumable: If the consumable code is not pre-coordinated (e
               <entryRelationship>
                 <substanceAdministration classCode="SBADM">
                   <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
-                  <id root="71888089"/>
-                  <code code="1235949579"/>
+                  <id root="926693262"/>
+                  <code code="408499190"/>
                   <text>Text Value</text>
                   <statusCode code="completed"/>
                   <effectiveTime value="20120325"/>
                   <repeatNumber value="1"/>
                   <routeCode code="Value"/>
-                  <approachSiteCode code="1238386632"/>
+                  <approachSiteCode code="1282670274"/>
                   <doseQuantity/>
                   <rateQuantity/>
                   <maxDoseQuantity/>
@@ -652,7 +652,7 @@ Not pre-coordinated consumable: If the consumable code is not pre-coordinated (e
           <entryRelationship>
             <act classCode="ACT" moodCode="INT">
               <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-              <id root="934442049"/>
+              <id root="73603138"/>
               <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
               <text>Text Value</text>
               <statusCode code="completed"/>
@@ -671,7 +671,7 @@ Not pre-coordinated consumable: If the consumable code is not pre-coordinated (e
           <entryRelationship>
             <observation classCode="OBS" moodCode="EVN">
               <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
-              <id root="8473525"/>
+              <id root="361469171"/>
               <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
               <text>Text Value</text>
               <statusCode code="completed"/>
@@ -691,8 +691,8 @@ Not pre-coordinated consumable: If the consumable code is not pre-coordinated (e
           <entryRelationship>
             <supply classCode="SPLY" moodCode="EVN">
               <templateId root="2.16.840.1.113883.10.20.22.4.18"/>
-              <id root="3078809"/>
-              <code code="1835574891"/>
+              <id root="1427239977"/>
+              <code code="2051774672"/>
               <text>Text Value</text>
               <statusCode code="completed"/>
               <effectiveTime value="20120325"/>
@@ -703,8 +703,8 @@ Not pre-coordinated consumable: If the consumable code is not pre-coordinated (e
               <entryRelationship>
                 <supply classCode="SPLY" moodCode="INT">
                   <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
-                  <id root="1330523820"/>
-                  <code code="1516743925"/>
+                  <id root="527174998"/>
+                  <code code="1461454733"/>
                   <text>Text Value</text>
                   <statusCode code="completed"/>
                   <effectiveTime value="20120325"/>
@@ -734,7 +734,7 @@ Not pre-coordinated consumable: If the consumable code is not pre-coordinated (e
   <entryRelationship>
     <act classCode="ACT" moodCode="INT">
       <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-      <id root="2015437397"/>
+      <id root="1805813758"/>
       <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
       <text>Text Value</text>
       <statusCode code="completed"/>
@@ -744,7 +744,7 @@ Not pre-coordinated consumable: If the consumable code is not pre-coordinated (e
       </effectiveTime>
       <performer>
         <assignedEntity>
-          <id root="632392498"/>
+          <id root="1241674487"/>
           <assignedPerson/>
           <representedOrganization>
             <asOrganizationPartOf/>
@@ -759,7 +759,7 @@ Not pre-coordinated consumable: If the consumable code is not pre-coordinated (e
   <entryRelationship>
     <observation classCode="OBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
-      <id root="1222864530"/>
+      <id root="158654455"/>
       <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
       <text>Text Value</text>
       <statusCode code="completed"/>
@@ -770,7 +770,7 @@ Not pre-coordinated consumable: If the consumable code is not pre-coordinated (e
       <repeatNumber value="1"/>
       <performer>
         <assignedEntity>
-          <id root="1782117576"/>
+          <id root="1049252925"/>
           <assignedPerson/>
           <representedOrganization>
             <asOrganizationPartOf/>
@@ -785,15 +785,15 @@ Not pre-coordinated consumable: If the consumable code is not pre-coordinated (e
   <entryRelationship>
     <supply classCode="SPLY" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.22.4.18"/>
-      <id root="1681640425"/>
-      <code code="1430857806"/>
+      <id root="370905574"/>
+      <code code="583062327"/>
       <text>Text Value</text>
       <statusCode code="completed"/>
       <effectiveTime value="20120325"/>
       <repeatNumber value="1"/>
       <performer>
         <assignedEntity>
-          <id root="532106747"/>
+          <id root="1059985976"/>
           <assignedPerson/>
           <representedOrganization>
             <asOrganizationPartOf/>
@@ -803,15 +803,15 @@ Not pre-coordinated consumable: If the consumable code is not pre-coordinated (e
       <entryRelationship>
         <supply classCode="SPLY" moodCode="INT">
           <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
-          <id root="277040128"/>
-          <code code="945487524"/>
+          <id root="1846492638"/>
+          <code code="1623918601"/>
           <text>Text Value</text>
           <statusCode code="completed"/>
           <effectiveTime value="20120325"/>
           <repeatNumber value="1"/>
           <performer>
             <assignedEntity>
-              <id root="1650088847"/>
+              <id root="1124255432"/>
               <assignedPerson/>
               <representedOrganization/>
             </assignedEntity>
@@ -819,7 +819,7 @@ Not pre-coordinated consumable: If the consumable code is not pre-coordinated (e
           <entryRelationship>
             <act classCode="ACT" moodCode="INT">
               <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-              <id root="1296069754"/>
+              <id root="1669440213"/>
               <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
               <text>Text Value</text>
               <statusCode code="completed"/>

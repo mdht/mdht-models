@@ -56,8 +56,8 @@ An appropriate nullFlavor can be used when a single result observation is contai
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <organizer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" moodCode="EVN">
   <templateId root="2.16.840.1.113883.10.20.22.4.1"/>
-  <id root="1741694925"/>
-  <code code="674579716"/>
+  <id root="1414767116"/>
+  <code code="1751446692"/>
   <statusCode code="completed"/>
   <effectiveTime>
     <low value="2012"/>
@@ -66,8 +66,8 @@ An appropriate nullFlavor can be used when a single result observation is contai
   <component>
     <observation classCode="OBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
-      <id root="1240931934"/>
-      <code code="1503041653"/>
+      <id root="1099149904"/>
+      <code code="1833359899"/>
       <statusCode code="completed"/>
       <effectiveTime>
         <low value="2012"/>

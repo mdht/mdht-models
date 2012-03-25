@@ -125,8 +125,8 @@ This clinical statement represents procedures whose immediate and primary outcom
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <procedure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="PROC">
   <templateId root="2.16.840.1.113883.10.20.22.4.14"/>
-  <id root="222233662"/>
-  <code code="1975787710"/>
+  <id root="1930258158"/>
+  <code code="256635095"/>
   <statusCode code="completed"/>
   <effectiveTime>
     <low value="2012"/>
@@ -144,7 +144,7 @@ This clinical statement represents procedures whose immediate and primary outcom
   <entryRelationship>
     <observation classCode="OBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
-      <id root="1143831331"/>
+      <id root="1841300432"/>
       <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
       <statusCode code="completed"/>
       <effectiveTime>
@@ -153,7 +153,7 @@ This clinical statement represents procedures whose immediate and primary outcom
       </effectiveTime>
       <priorityCode code="Value"/>
       <methodCode code="Value"/>
-      <targetSiteCode code="1767152337"/>
+      <targetSiteCode code="39925163"/>
       <specimen>
         <specimenRole/>
       </specimen>
@@ -165,8 +165,8 @@ This clinical statement represents procedures whose immediate and primary outcom
   <entryRelationship>
     <substanceAdministration classCode="SBADM">
       <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
-      <id root="1675967982"/>
-      <code code="1036297741"/>
+      <id root="74892766"/>
+      <code code="1269209733"/>
       <statusCode code="completed"/>
       <effectiveTime xsi:type="IVL_TS">
         <low value="2012"/>
@@ -183,8 +183,8 @@ This clinical statement represents procedures whose immediate and primary outcom
       <entryRelationship>
         <supply classCode="SPLY" moodCode="INT">
           <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
-          <id root="1066670405"/>
-          <code code="2053377632"/>
+          <id root="1992857037"/>
+          <code code="1480252924"/>
           <statusCode code="completed"/>
           <effectiveTime xsi:type="IVL_TS">
             <low value="2012"/>
@@ -200,7 +200,7 @@ This clinical statement represents procedures whose immediate and primary outcom
           <entryRelationship>
             <act classCode="ACT" moodCode="INT">
               <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-              <id root="1250582023"/>
+              <id root="762023353"/>
               <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
               <statusCode code="completed"/>
               <effectiveTime>
@@ -221,8 +221,8 @@ This clinical statement represents procedures whose immediate and primary outcom
       <entryRelationship>
         <observation classCode="OBS" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
-          <id root="1160381249"/>
-          <code code="554287975"/>
+          <id root="1984844287"/>
+          <code code="1518047592"/>
           <statusCode code="completed"/>
           <effectiveTime>
             <low value="2012"/>
@@ -230,7 +230,7 @@ This clinical statement represents procedures whose immediate and primary outcom
           </effectiveTime>
           <priorityCode code="Value"/>
           <methodCode code="Value"/>
-          <targetSiteCode code="1692239745"/>
+          <targetSiteCode code="1964855367"/>
           <specimen>
             <specimenRole/>
           </specimen>
@@ -240,7 +240,7 @@ This clinical statement represents procedures whose immediate and primary outcom
           <entryRelationship>
             <observation classCode="OBS" moodCode="EVN">
               <templateId root="2.16.840.1.113883.10.20.22.4.8"/>
-              <id root="1215974253"/>
+              <id root="2107637444"/>
               <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Severity observation"/>
               <statusCode code="completed"/>
               <effectiveTime>
@@ -249,7 +249,7 @@ This clinical statement represents procedures whose immediate and primary outcom
               </effectiveTime>
               <priorityCode code="Value"/>
               <methodCode code="Value"/>
-              <targetSiteCode code="1774596960"/>
+              <targetSiteCode code="459866048"/>
               <specimen>
                 <specimenRole/>
               </specimen>
@@ -261,8 +261,8 @@ This clinical statement represents procedures whose immediate and primary outcom
           <entryRelationship>
             <procedure classCode="PROC">
               <templateId root="2.16.840.1.113883.10.20.22.4.14"/>
-              <id root="1349658157"/>
-              <code code="1312577452"/>
+              <id root="560898326"/>
+              <code code="378944232"/>
               <statusCode code="completed"/>
               <effectiveTime>
                 <low value="2012"/>
@@ -280,7 +280,7 @@ This clinical statement represents procedures whose immediate and primary outcom
               <entryRelationship>
                 <observation classCode="OBS" moodCode="EVN">
                   <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
-                  <id root="1183466551"/>
+                  <id root="2023375915"/>
                   <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
@@ -289,7 +289,7 @@ This clinical statement represents procedures whose immediate and primary outcom
                   </effectiveTime>
                   <priorityCode code="Value"/>
                   <methodCode code="Value"/>
-                  <targetSiteCode code="1250096688"/>
+                  <targetSiteCode code="799539875"/>
                   <specimen/>
                   <performer/>
                 </observation>
@@ -297,8 +297,8 @@ This clinical statement represents procedures whose immediate and primary outcom
               <entryRelationship>
                 <substanceAdministration classCode="SBADM">
                   <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
-                  <id root="2107146325"/>
-                  <code code="45680473"/>
+                  <id root="1328028504"/>
+                  <code code="1386246711"/>
                   <statusCode code="completed"/>
                   <effectiveTime xsi:type="IVL_TS">
                     <low value="2012"/>
@@ -328,7 +328,7 @@ This clinical statement represents procedures whose immediate and primary outcom
               <entryRelationship>
                 <act classCode="ACT" moodCode="INT">
                   <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-                  <id root="5421229"/>
+                  <id root="1575812253"/>
                   <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
@@ -342,8 +342,8 @@ This clinical statement represents procedures whose immediate and primary outcom
               </entryRelationship>
               <entryRelationship>
                 <encounter>
-                  <id root="665957717"/>
-                  <code code="858083288"/>
+                  <id root="617697590"/>
+                  <code code="2129494211"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
                     <low value="2012"/>
@@ -359,8 +359,8 @@ This clinical statement represents procedures whose immediate and primary outcom
           <entryRelationship>
             <substanceAdministration classCode="SBADM">
               <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
-              <id root="2120340329"/>
-              <code code="486159449"/>
+              <id root="1617469364"/>
+              <code code="98294893"/>
               <statusCode code="completed"/>
               <effectiveTime xsi:type="IVL_TS">
                 <low value="2012"/>
@@ -377,8 +377,8 @@ This clinical statement represents procedures whose immediate and primary outcom
               <entryRelationship>
                 <supply classCode="SPLY" moodCode="INT">
                   <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
-                  <id root="2006683810"/>
-                  <code code="1039845867"/>
+                  <id root="1489677237"/>
+                  <code code="973092547"/>
                   <statusCode code="completed"/>
                   <effectiveTime xsi:type="IVL_TS">
                     <low value="2012"/>
@@ -395,8 +395,8 @@ This clinical statement represents procedures whose immediate and primary outcom
               <entryRelationship>
                 <observation classCode="OBS" moodCode="EVN">
                   <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
-                  <id root="754422605"/>
-                  <code code="166633878"/>
+                  <id root="939062940"/>
+                  <code code="1713725683"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
                     <low value="2012"/>
@@ -404,7 +404,7 @@ This clinical statement represents procedures whose immediate and primary outcom
                   </effectiveTime>
                   <priorityCode code="Value"/>
                   <methodCode code="Value"/>
-                  <targetSiteCode code="1672993242"/>
+                  <targetSiteCode code="603856190"/>
                   <specimen/>
                   <performer/>
                   <entryRelationship>
@@ -421,7 +421,7 @@ This clinical statement represents procedures whose immediate and primary outcom
               <entryRelationship>
                 <act classCode="ACT" moodCode="INT">
                   <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-                  <id root="1416664532"/>
+                  <id root="496393744"/>
                   <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
@@ -436,7 +436,7 @@ This clinical statement represents procedures whose immediate and primary outcom
               <entryRelationship>
                 <observation classCode="OBS" moodCode="EVN">
                   <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
-                  <id root="1038380266"/>
+                  <id root="2041445583"/>
                   <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
@@ -445,7 +445,7 @@ This clinical statement represents procedures whose immediate and primary outcom
                   </effectiveTime>
                   <priorityCode code="Value"/>
                   <methodCode code="Value"/>
-                  <targetSiteCode code="198882299"/>
+                  <targetSiteCode code="1799133396"/>
                   <specimen/>
                   <performer/>
                 </observation>
@@ -453,8 +453,8 @@ This clinical statement represents procedures whose immediate and primary outcom
               <entryRelationship>
                 <supply classCode="SPLY" moodCode="EVN">
                   <templateId root="2.16.840.1.113883.10.20.22.4.18"/>
-                  <id root="823521997"/>
-                  <code code="606696797"/>
+                  <id root="1444010551"/>
+                  <code code="1082982024"/>
                   <statusCode code="completed"/>
                   <effectiveTime xsi:type="IVL_TS">
                     <low value="2012"/>
@@ -475,7 +475,7 @@ This clinical statement represents procedures whose immediate and primary outcom
       <entryRelationship>
         <act classCode="ACT" moodCode="INT">
           <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-          <id root="1431322400"/>
+          <id root="104707752"/>
           <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
           <statusCode code="completed"/>
           <effectiveTime>
@@ -494,7 +494,7 @@ This clinical statement represents procedures whose immediate and primary outcom
       <entryRelationship>
         <observation classCode="OBS" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
-          <id root="539066154"/>
+          <id root="1026536589"/>
           <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
           <statusCode code="completed"/>
           <effectiveTime>
@@ -503,7 +503,7 @@ This clinical statement represents procedures whose immediate and primary outcom
           </effectiveTime>
           <priorityCode code="Value"/>
           <methodCode code="Value"/>
-          <targetSiteCode code="997591734"/>
+          <targetSiteCode code="608574074"/>
           <specimen>
             <specimenRole/>
           </specimen>
@@ -515,8 +515,8 @@ This clinical statement represents procedures whose immediate and primary outcom
       <entryRelationship>
         <supply classCode="SPLY" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.22.4.18"/>
-          <id root="2034243927"/>
-          <code code="339823090"/>
+          <id root="1316170983"/>
+          <code code="18665697"/>
           <statusCode code="completed"/>
           <effectiveTime xsi:type="IVL_TS">
             <low value="2012"/>
@@ -532,8 +532,8 @@ This clinical statement represents procedures whose immediate and primary outcom
           <entryRelationship>
             <supply classCode="SPLY" moodCode="INT">
               <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
-              <id root="851355855"/>
-              <code code="1751265744"/>
+              <id root="1899665949"/>
+              <code code="1351751511"/>
               <statusCode code="completed"/>
               <effectiveTime xsi:type="IVL_TS">
                 <low value="2012"/>
@@ -549,7 +549,7 @@ This clinical statement represents procedures whose immediate and primary outcom
               <entryRelationship>
                 <act classCode="ACT" moodCode="INT">
                   <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-                  <id root="238187057"/>
+                  <id root="2102614180"/>
                   <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
@@ -570,7 +570,7 @@ This clinical statement represents procedures whose immediate and primary outcom
   <entryRelationship>
     <act classCode="ACT" moodCode="INT">
       <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-      <id root="1753257659"/>
+      <id root="668200735"/>
       <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
       <statusCode code="completed"/>
       <effectiveTime>
@@ -588,8 +588,8 @@ This clinical statement represents procedures whose immediate and primary outcom
   </entryRelationship>
   <entryRelationship>
     <encounter>
-      <id root="1425983009"/>
-      <code code="1111468598"/>
+      <id root="2127902506"/>
+      <code code="977174978"/>
       <statusCode code="completed"/>
       <effectiveTime>
         <low value="2012"/>
