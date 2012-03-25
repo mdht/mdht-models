@@ -2,40 +2,67 @@
 <!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
 <bookmap id="cdabook">
 	<booktitle>
-		<booklibrary>Implementation Guide for CDA Release 2</booklibrary>
-		<mainbooktitle>CDA IG Consolidation</mainbooktitle>
-		<booktitlealt>Working Group Draft</booktitlealt>
-		<booktitlealt><image href="images/ONC_logo.png"/></booktitlealt>
-		<booktitlealt>PROTOTYPE: FOR DISCUSSION AND DEMONSTRATION USE ONLY</booktitlealt>
-		<booktitlealt audience="developer">(Consolidated Developer Documentation)</booktitlealt>
+		<booklibrary>Implementation Guide for CDA Release 2.0</booklibrary>
+		<mainbooktitle>Consolidated CDA Templates</mainbooktitle>
+		<booktitlealt>US Realm</booktitlealt>
+		<booktitlealt></booktitlealt>
+		<booktitlealt>
+			<image height="100" width="100" href="images/hl7_logo.gif" />
+		</booktitlealt>
+		<booktitlealt>
+			<ph>Produced in collaboration with:</ph>
+			<ph>
+				<image height="100" width="100" href="images/ihe.png" />
+				<image height="100" width="100" href="images/hsp.jpg" />
+				<image height="100" width="100" href="images/sandi.jpg" />
+			</ph>
+
+		</booktitlealt>
+		<booktitlealt audience="developer">(Consolidated Developer
+			Documentation)</booktitlealt>
 	</booktitle>
 	<bookmeta>
-		<bookid><booknumber></booknumber>
-			<maintainer><organization></organization><person></person></maintainer>
+		<bookid>
+			<booknumber></booknumber>
+			<maintainer>
+				<organization>Health Level Seven, Inc.</organization>
+				<person></person>
+			</maintainer>
 		</bookid>
 		<bookrights>
-			<copyrfirst><year>2005</year></copyrfirst>
-			<copyrlast><year>2011</year></copyrlast>
+			<copyrfirst>
+				<year>2005</year>
+			</copyrfirst>
+			<copyrlast>
+				<year>2012</year>
+			</copyrlast>
 			<bookowner>
-				<organization></organization>
+				<organization>Health Level Seven, Inc.</organization>
 			</bookowner>
 		</bookrights>
 	</bookmeta>
 	<frontmatter>
 		<preface>
-			<topicref href="preface/Acknowledgments.dita" navtitle="Acknowledgments" type="topic"/>
-			<!-- <topicref href="preface/RevisionHistory.dita" navtitle="Authors" type="topic"/> -->
+			<topicref href="preface/Acknowledgments.dita" navtitle="Acknowledgments"
+				type="topic" />
 		</preface>
 		<booklists>
-			<toc/><figurelist/><tablelist/>
-		</booklists> 
+			<toc />
+			<figurelist />
+			<tablelist />
+		</booklists>
 	</frontmatter>
-	
-	<!-- <chapter format="ditamap" href="introduction/introduction.ditamap"/> -->
-	
-	<chapter format="ditamap" href="content/content.ditamap"/>
 
-	<backmatter>
-		<topicref href="References.dita" navtitle="REFERENCES" type="topic"/>
-	</backmatter>
+
+	<chapter format="ditamap" href="introduction/introduction.ditamap" />
+	<chapter format="ditamap" href="generalheader.ditamap" />
+	<chapter format="ditamap" href="documentlevel.ditamap" />
+	<chapter format="ditamap" href="sections.ditamap" />
+	<chapter format="ditamap" href="clinicalstatement.ditamap" />
+	<chapter format="ditamap" href="valuesets.ditamap" />
+
+
+
+
+
 </bookmap>
