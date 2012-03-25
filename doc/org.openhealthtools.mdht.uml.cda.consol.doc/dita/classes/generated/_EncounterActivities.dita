@@ -68,7 +68,7 @@
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <encounter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="ENC" moodCode="EVN">
   <templateId root="2.16.840.1.113883.10.20.22.4.49"/>
-  <id root="2027358735"/>
+  <id root="852960001"/>
   <code codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT-4"/>
   <effectiveTime>
     <low value="2012"/>
@@ -76,14 +76,14 @@
   </effectiveTime>
   <performer>
     <assignedEntity>
-      <id root="139565160"/>
+      <id root="208750515"/>
       <code code="Value"/>
     </assignedEntity>
   </performer>
   <entryRelationship>
     <observation classCode="OBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
-      <id root="354299898"/>
+      <id root="721881574"/>
       <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
       <statusCode code="completed"/>
       <effectiveTime>
@@ -92,7 +92,7 @@
       </effectiveTime>
       <performer>
         <assignedEntity>
-          <id root="217252669"/>
+          <id root="2086169140"/>
           <code code="Value"/>
         </assignedEntity>
       </performer>

@@ -38,14 +38,14 @@
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
   <templateId root="2.16.840.1.113883.10.20.22.2.28"/>
-  <id root="671575937"/>
+  <id root="811735111"/>
   <code code="59776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Procedure Findings"/>
   <title/>
   <text/>
   <entry>
     <observation moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.22.4.4"/>
-      <id root="1999364607"/>
+      <id root="1093156767"/>
       <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
       <text>Text Value</text>
       <statusCode code="completed"/>
@@ -56,7 +56,7 @@
       <entryRelationship>
         <observation classCode="OBS" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.22.4.31"/>
-          <id root="1559226068"/>
+          <id root="2135155762"/>
           <code code="445518008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age At Onset"/>
           <text>Text Value</text>
           <statusCode code="completed"/>
@@ -69,7 +69,7 @@
       <entryRelationship>
         <observation classCode="OBS" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.22.4.5"/>
-          <id root="942840838"/>
+          <id root="689606527"/>
           <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
           <text>Text Value</text>
           <statusCode code="completed"/>
@@ -82,7 +82,7 @@
       <entryRelationship>
         <observation classCode="OBS" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.22.4.6"/>
-          <id root="1013869432"/>
+          <id root="2142177671"/>
           <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
           <text>Text Value</text>
           <statusCode code="completed"/>

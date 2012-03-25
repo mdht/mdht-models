@@ -56,7 +56,7 @@ The vital signs organizer is a cluster of vital signs observations.
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <organizer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="CLUSTER" moodCode="EVN">
   <templateId root="2.16.840.1.113883.10.20.22.4.26"/>
-  <id root="739531090"/>
+  <id root="72896516"/>
   <code code="46680005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Vital signs"/>
   <statusCode code="completed"/>
   <effectiveTime>
@@ -66,7 +66,7 @@ The vital signs organizer is a cluster of vital signs observations.
   <component>
     <observation classCode="OBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
-      <id root="110361738"/>
+      <id root="1726557121"/>
       <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
       <statusCode code="completed"/>
       <effectiveTime>

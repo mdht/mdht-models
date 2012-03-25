@@ -33,8 +33,8 @@
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="OBS">
   <templateId root="2.16.840.1.113883.10.20.1.25"/>
-  <id root="679387987"/>
-  <code code="1919588255"/>
+  <id root="858694580"/>
+  <code code="1070162667"/>
   <effectiveTime>
     <low value="2012"/>
     <high value="2012"/>

@@ -269,13 +269,13 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
   <typeId root="2.16.840.1.113883.1.3"/>
   <templateId root="2.16.840.1.113883.10.20.22.1.1"/>
   <templateId root="2.16.840.1.113883.10.20.22.1.6"/>
-  <id root="229908152"/>
+  <id root="1599555170"/>
   <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
   <title/>
   <effectiveTime/>
   <confidentialityCode codeSystem="2.16.840.1.113883.5.25" codeSystemName="ConfidentialityCode"/>
   <languageCode/>
-  <setId root="a3b19b7f-b371-4947-b302-091e80f7b845"/>
+  <setId root="3f387c1e-97f7-47bb-a574-f646d3749a46"/>
   <versionNumber value="1"/>
   <recordTarget>
     <realmCode/>
@@ -313,7 +313,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
       </encounterParticipant>
       <location>
         <healthCareFacility>
-          <id root="2146586732"/>
+          <id root="1005084354"/>
         </healthCareFacility>
       </location>
     </encompassingEncounter>
@@ -325,7 +325,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
           <realmCode/>
           <typeId root="2.16.840.1.113883.1.3"/>
           <templateId root="2.16.840.1.113883.10.20.22.2.8"/>
-          <id root="1557861787"/>
+          <id root="911959272"/>
           <code code="51848-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Assessments"/>
           <title/>
           <confidentialityCode code="Value"/>
@@ -337,7 +337,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
           <realmCode/>
           <typeId root="2.16.840.1.113883.1.3"/>
           <templateId root="2.16.840.1.113883.10.20.22.2.10"/>
-          <id root="572613601"/>
+          <id root="1312594438"/>
           <code code="18776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treatment plan"/>
           <title/>
           <confidentialityCode code="Value"/>
@@ -347,8 +347,8 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
               <realmCode/>
               <typeId root="2.16.840.1.113883.1.3"/>
               <templateId root="2.16.840.1.113883.10.20.22.4.39"/>
-              <id root="1410955961"/>
-              <code code="601246776"/>
+              <id root="2072897778"/>
+              <code code="945650804"/>
               <effectiveTime>
                 <low value="2012"/>
                 <high value="2012"/>
@@ -371,8 +371,8 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
               <realmCode/>
               <typeId root="2.16.840.1.113883.1.3"/>
               <templateId root="2.16.840.1.113883.10.20.22.4.40"/>
-              <id root="1007060584"/>
-              <code code="352058431"/>
+              <id root="1164060949"/>
+              <code code="288114264"/>
               <effectiveTime>
                 <low value="2012"/>
                 <high value="2012"/>
@@ -394,8 +394,8 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
               <realmCode/>
               <typeId root="2.16.840.1.113883.1.3"/>
               <templateId root="2.16.840.1.113883.10.20.1.25"/>
-              <id root="1635648271"/>
-              <code code="2144407453"/>
+              <id root="1118131564"/>
+              <code code="719615141"/>
               <effectiveTime>
                 <low value="2012"/>
                 <high value="2012"/>
@@ -418,8 +418,8 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
               <realmCode/>
               <typeId root="2.16.840.1.113883.1.3"/>
               <templateId root="2.16.840.1.113883.10.20.22.4.41"/>
-              <id root="76504592"/>
-              <code code="895738735"/>
+              <id root="542326616"/>
+              <code code="1673913782"/>
               <effectiveTime>
                 <low value="2012"/>
                 <high value="2012"/>
@@ -442,8 +442,8 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
               <realmCode/>
               <typeId root="2.16.840.1.113883.1.3"/>
               <templateId root="2.16.840.1.113883.10.20.1.25"/>
-              <id root="1357433483"/>
-              <code code="1289625036"/>
+              <id root="410306727"/>
+              <code code="1840801507"/>
               <effectiveTime value="20120325"/>
               <consumable/>
               <participant>
@@ -463,8 +463,8 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
               <realmCode/>
               <typeId root="2.16.840.1.113883.1.3"/>
               <templateId root="2.16.840.1.113883.10.20.22.4.43"/>
-              <id root="1491024613"/>
-              <code code="291637581"/>
+              <id root="591279393"/>
+              <code code="30855582"/>
               <effectiveTime value="20120325"/>
               <participant>
                 <typeId root="2.16.840.1.113883.1.3"/>
@@ -485,7 +485,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
           <realmCode/>
           <typeId root="2.16.840.1.113883.1.3"/>
           <templateId root="2.16.840.1.113883.10.20.22.2.9"/>
-          <id root="410037258"/>
+          <id root="211468764"/>
           <code code="51847-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="ASSESSMENT AND PLAN"/>
           <title/>
           <confidentialityCode code="Value"/>
@@ -495,8 +495,8 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
               <realmCode/>
               <typeId root="2.16.840.1.113883.1.3"/>
               <templateId root="2.16.840.1.113883.10.20.22.4.39"/>
-              <id root="1325153509"/>
-              <code code="147280606"/>
+              <id root="909137861"/>
+              <code code="1770863792"/>
               <effectiveTime>
                 <low value="2012"/>
                 <high value="2012"/>
@@ -521,7 +521,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
           <realmCode/>
           <typeId root="2.16.840.1.113883.1.3"/>
           <templateId root="2.16.840.1.113883.10.20.22.2.37"/>
-          <id root="1430346500"/>
+          <id root="1283446514"/>
           <code code="55109-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Complications"/>
           <title/>
           <confidentialityCode code="Value"/>
@@ -531,7 +531,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
               <realmCode/>
               <typeId root="2.16.840.1.113883.1.3"/>
               <templateId root="2.16.840.1.113883.10.20.22.4.4"/>
-              <id root="551149814"/>
+              <id root="2021747397"/>
               <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
               <statusCode code="completed"/>
               <effectiveTime>
@@ -554,7 +554,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                   <realmCode/>
                   <typeId root="2.16.840.1.113883.1.3"/>
                   <templateId root="2.16.840.1.113883.10.20.22.4.31"/>
-                  <id root="1706103595"/>
+                  <id root="1503031987"/>
                   <code code="445518008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age At Onset"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
@@ -579,7 +579,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                   <realmCode/>
                   <typeId root="2.16.840.1.113883.1.3"/>
                   <templateId root="2.16.840.1.113883.10.20.22.4.5"/>
-                  <id root="1995531123"/>
+                  <id root="904654418"/>
                   <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
@@ -604,7 +604,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                   <realmCode/>
                   <typeId root="2.16.840.1.113883.1.3"/>
                   <templateId root="2.16.840.1.113883.10.20.22.4.6"/>
-                  <id root="1077676170"/>
+                  <id root="934511554"/>
                   <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
@@ -633,7 +633,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
           <realmCode/>
           <typeId root="2.16.840.1.113883.1.3"/>
           <templateId root="2.16.840.1.113883.10.20.22.2.36"/>
-          <id root="1726816415"/>
+          <id root="1473073342"/>
           <code code="59769-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Postprocedure Diagnosis"/>
           <title/>
           <confidentialityCode code="Value"/>
@@ -643,7 +643,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
               <realmCode/>
               <typeId root="2.16.840.1.113883.1.3"/>
               <templateId root="2.16.840.1.113883.10.20.22.4.51"/>
-              <id root="26190171"/>
+              <id root="1033072198"/>
               <code code="59769-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Postprocedure Diagnosis"/>
               <effectiveTime>
                 <low value="2012"/>
@@ -665,7 +665,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                   <realmCode/>
                   <typeId root="2.16.840.1.113883.1.3"/>
                   <templateId root="2.16.840.1.113883.10.20.22.4.4"/>
-                  <id root="1267134772"/>
+                  <id root="1692672901"/>
                   <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
@@ -688,7 +688,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                       <realmCode/>
                       <typeId root="2.16.840.1.113883.1.3"/>
                       <templateId root="2.16.840.1.113883.10.20.22.4.31"/>
-                      <id root="1565848753"/>
+                      <id root="340848448"/>
                       <code code="445518008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age At Onset"/>
                       <statusCode code="completed"/>
                       <effectiveTime>
@@ -706,7 +706,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                       <realmCode/>
                       <typeId root="2.16.840.1.113883.1.3"/>
                       <templateId root="2.16.840.1.113883.10.20.22.4.5"/>
-                      <id root="636828309"/>
+                      <id root="1448316952"/>
                       <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
                       <statusCode code="completed"/>
                       <effectiveTime>
@@ -724,7 +724,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                       <realmCode/>
                       <typeId root="2.16.840.1.113883.1.3"/>
                       <templateId root="2.16.840.1.113883.10.20.22.4.6"/>
-                      <id root="1971848390"/>
+                      <id root="1664262255"/>
                       <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
                       <statusCode code="completed"/>
                       <effectiveTime>
@@ -748,7 +748,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
           <realmCode/>
           <typeId root="2.16.840.1.113883.1.3"/>
           <templateId root="2.16.840.1.113883.10.20.22.2.27"/>
-          <id root="1109949260"/>
+          <id root="6475121"/>
           <code code="29554-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Procedure Description"/>
           <title/>
           <confidentialityCode code="Value"/>
@@ -760,7 +760,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
           <realmCode/>
           <typeId root="2.16.840.1.113883.1.3"/>
           <templateId root="2.16.840.1.113883.10.20.22.2.29"/>
-          <id root="1742866658"/>
+          <id root="624008617"/>
           <code code="59768-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Procedure Indications"/>
           <title/>
           <confidentialityCode code="Value"/>
@@ -770,7 +770,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
               <realmCode/>
               <typeId root="2.16.840.1.113883.1.3"/>
               <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
-              <id root="868500974"/>
+              <id root="1489875888"/>
               <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
               <statusCode code="completed"/>
               <effectiveTime>
@@ -797,7 +797,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
           <realmCode/>
           <typeId root="2.16.840.1.113883.1.3"/>
           <templateId root="2.16.840.1.113883.10.20.22.2.6"/>
-          <id root="1895036078"/>
+          <id root="2037049073"/>
           <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergies, adverse reactions, alerts"/>
           <title/>
           <confidentialityCode code="Value"/>
@@ -807,7 +807,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
               <realmCode/>
               <typeId root="2.16.840.1.113883.1.3"/>
               <templateId root="2.16.840.1.113883.10.20.22.4.30"/>
-              <id root="861801391"/>
+              <id root="799260432"/>
               <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergies, adverse reactions, alerts"/>
               <effectiveTime>
                 <low value="2012"/>
@@ -829,7 +829,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                   <realmCode/>
                   <typeId root="2.16.840.1.113883.1.3"/>
                   <templateId root="2.16.840.1.113883.10.20.22.4.7"/>
-                  <id root="1953254714"/>
+                  <id root="1703730378"/>
                   <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
@@ -852,8 +852,8 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                       <realmCode/>
                       <typeId root="2.16.840.1.113883.1.3"/>
                       <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
-                      <id root="1289212494"/>
-                      <code code="870001919"/>
+                      <id root="2112641314"/>
+                      <code code="1692692345"/>
                       <statusCode code="completed"/>
                       <effectiveTime>
                         <low value="2012"/>
@@ -879,7 +879,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                       <realmCode/>
                       <typeId root="2.16.840.1.113883.1.3"/>
                       <templateId root="2.16.840.1.113883.10.20.22.4.8"/>
-                      <id root="134262002"/>
+                      <id root="635461904"/>
                       <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Severity observation"/>
                       <statusCode code="completed"/>
                       <effectiveTime>
@@ -897,7 +897,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                       <realmCode/>
                       <typeId root="2.16.840.1.113883.1.3"/>
                       <templateId root="2.16.840.1.113883.10.20.22.4.28"/>
-                      <id root="1923428190"/>
+                      <id root="2083325945"/>
                       <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
                       <statusCode code="completed"/>
                       <effectiveTime>
@@ -921,7 +921,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
           <realmCode/>
           <typeId root="2.16.840.1.113883.1.3"/>
           <templateId root="2.16.840.1.113883.10.20.22.2.25"/>
-          <id root="163995231"/>
+          <id root="435800809"/>
           <code code="59774-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
           <title/>
           <confidentialityCode code="Value"/>
@@ -931,8 +931,8 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
               <realmCode/>
               <typeId root="2.16.840.1.113883.1.3"/>
               <templateId root="2.16.840.1.113883.10.20.22.4.14"/>
-              <id root="376309279"/>
-              <code code="1790669320"/>
+              <id root="1029771933"/>
+              <code code="988998420"/>
               <effectiveTime>
                 <low value="2012"/>
                 <high value="2012"/>
@@ -954,7 +954,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                   <realmCode/>
                   <typeId root="2.16.840.1.113883.1.3"/>
                   <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
-                  <id root="1533286227"/>
+                  <id root="1516239745"/>
                   <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
@@ -979,8 +979,8 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                   <realmCode/>
                   <typeId root="2.16.840.1.113883.1.3"/>
                   <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
-                  <id root="1123178657"/>
-                  <code code="1613979283"/>
+                  <id root="373824319"/>
+                  <code code="1375067290"/>
                   <effectiveTime value="20120325"/>
                   <consumable/>
                   <participant>
@@ -998,8 +998,8 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                       <realmCode/>
                       <typeId root="2.16.840.1.113883.1.3"/>
                       <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
-                      <id root="255104403"/>
-                      <code code="2111317404"/>
+                      <id root="1885640849"/>
+                      <code code="1260965728"/>
                       <effectiveTime value="20120325"/>
                       <participant/>
                       <participant/>
@@ -1014,8 +1014,8 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                       <realmCode/>
                       <typeId root="2.16.840.1.113883.1.3"/>
                       <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
-                      <id root="318054093"/>
-                      <code code="2043394513"/>
+                      <id root="1605197543"/>
+                      <code code="1359890271"/>
                       <statusCode code="completed"/>
                       <effectiveTime>
                         <low value="2012"/>
@@ -1041,7 +1041,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                       <realmCode/>
                       <typeId root="2.16.840.1.113883.1.3"/>
                       <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-                      <id root="2059775140"/>
+                      <id root="303077615"/>
                       <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                       <statusCode code="completed"/>
                       <effectiveTime>
@@ -1059,7 +1059,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                       <realmCode/>
                       <typeId root="2.16.840.1.113883.1.3"/>
                       <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
-                      <id root="1066421876"/>
+                      <id root="59844578"/>
                       <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                       <statusCode code="completed"/>
                       <effectiveTime>
@@ -1077,8 +1077,8 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                       <realmCode/>
                       <typeId root="2.16.840.1.113883.1.3"/>
                       <templateId root="2.16.840.1.113883.10.20.22.4.18"/>
-                      <id root="711355528"/>
-                      <code code="1357448092"/>
+                      <id root="310026073"/>
+                      <code code="1067306382"/>
                       <effectiveTime value="20120325"/>
                       <participant/>
                       <participant/>
@@ -1095,7 +1095,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                   <realmCode/>
                   <typeId root="2.16.840.1.113883.1.3"/>
                   <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-                  <id root="201522720"/>
+                  <id root="827296609"/>
                   <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
@@ -1119,8 +1119,8 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                 <encounter>
                   <realmCode/>
                   <typeId root="2.16.840.1.113883.1.3"/>
-                  <id root="1957759795"/>
-                  <code code="1939066605"/>
+                  <id root="193930400"/>
+                  <code code="601252622"/>
                   <effectiveTime>
                     <low value="2012"/>
                     <high value="2012"/>
@@ -1144,8 +1144,8 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
               <realmCode/>
               <typeId root="2.16.840.1.113883.1.3"/>
               <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
-              <id root="1874637593"/>
-              <code code="628139618"/>
+              <id root="2118531815"/>
+              <code code="324913790"/>
               <effectiveTime value="20120325"/>
               <consumable/>
               <participant>
@@ -1163,8 +1163,8 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                   <realmCode/>
                   <typeId root="2.16.840.1.113883.1.3"/>
                   <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
-                  <id root="27535186"/>
-                  <code code="89926811"/>
+                  <id root="1084616507"/>
+                  <code code="788552446"/>
                   <effectiveTime value="20120325"/>
                   <participant>
                     <typeId root="2.16.840.1.113883.1.3"/>
@@ -1181,7 +1181,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                       <realmCode/>
                       <typeId root="2.16.840.1.113883.1.3"/>
                       <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-                      <id root="549281680"/>
+                      <id root="199171370"/>
                       <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                       <statusCode code="completed"/>
                       <effectiveTime>
@@ -1201,8 +1201,8 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                   <realmCode/>
                   <typeId root="2.16.840.1.113883.1.3"/>
                   <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
-                  <id root="88178843"/>
-                  <code code="2020199340"/>
+                  <id root="1357525666"/>
+                  <code code="1187877911"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
                     <low value="2012"/>
@@ -1224,7 +1224,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                       <realmCode/>
                       <typeId root="2.16.840.1.113883.1.3"/>
                       <templateId root="2.16.840.1.113883.10.20.22.4.8"/>
-                      <id root="1156411108"/>
+                      <id root="1900298277"/>
                       <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Severity observation"/>
                       <statusCode code="completed"/>
                       <effectiveTime>
@@ -1242,8 +1242,8 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                       <realmCode/>
                       <typeId root="2.16.840.1.113883.1.3"/>
                       <templateId root="2.16.840.1.113883.10.20.22.4.14"/>
-                      <id root="19321878"/>
-                      <code code="620876165"/>
+                      <id root="857002286"/>
+                      <code code="147026907"/>
                       <effectiveTime>
                         <low value="2012"/>
                         <high value="2012"/>
@@ -1272,8 +1272,8 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                       <realmCode/>
                       <typeId root="2.16.840.1.113883.1.3"/>
                       <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
-                      <id root="2085283018"/>
-                      <code code="369316084"/>
+                      <id root="505813257"/>
+                      <code code="1518463228"/>
                       <effectiveTime value="20120325"/>
                       <consumable/>
                       <participant/>
@@ -1303,7 +1303,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                   <realmCode/>
                   <typeId root="2.16.840.1.113883.1.3"/>
                   <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-                  <id root="911589791"/>
+                  <id root="1075590797"/>
                   <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
@@ -1328,7 +1328,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                   <realmCode/>
                   <typeId root="2.16.840.1.113883.1.3"/>
                   <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
-                  <id root="1793346574"/>
+                  <id root="607943047"/>
                   <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
@@ -1353,8 +1353,8 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                   <realmCode/>
                   <typeId root="2.16.840.1.113883.1.3"/>
                   <templateId root="2.16.840.1.113883.10.20.22.4.18"/>
-                  <id root="1241740977"/>
-                  <code code="382713511"/>
+                  <id root="1647350685"/>
+                  <code code="278902270"/>
                   <effectiveTime value="20120325"/>
                   <participant>
                     <typeId root="2.16.840.1.113883.1.3"/>
@@ -1371,8 +1371,8 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                       <realmCode/>
                       <typeId root="2.16.840.1.113883.1.3"/>
                       <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
-                      <id root="5391163"/>
-                      <code code="816832314"/>
+                      <id root="279369131"/>
+                      <code code="1467945217"/>
                       <effectiveTime value="20120325"/>
                       <participant/>
                       <participant/>
@@ -1393,7 +1393,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
           <realmCode/>
           <typeId root="2.16.840.1.113883.1.3"/>
           <templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.13.2.1"/>
-          <id root="648399554"/>
+          <id root="1400948620"/>
           <code code="10154-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="CHIEF COMPLAINT"/>
           <title/>
           <confidentialityCode code="Value"/>
@@ -1405,7 +1405,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
           <realmCode/>
           <typeId root="2.16.840.1.113883.1.3"/>
           <templateId root="2.16.840.1.113883.10.20.22.2.13"/>
-          <id root="54240594"/>
+          <id root="1087746304"/>
           <code code="46239-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Chief Complaint and Reason for Visit"/>
           <title/>
           <confidentialityCode code="Value"/>
@@ -1417,7 +1417,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
           <realmCode/>
           <typeId root="2.16.840.1.113883.1.3"/>
           <templateId root="2.16.840.1.113883.10.20.22.2.15"/>
-          <id root="1251682554"/>
+          <id root="995087526"/>
           <code code="10157-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Family History"/>
           <title/>
           <confidentialityCode code="Value"/>
@@ -1427,8 +1427,8 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
               <realmCode/>
               <typeId root="2.16.840.1.113883.1.3"/>
               <templateId root="2.16.840.1.113883.10.20.22.4.45"/>
-              <id root="1081071870"/>
-              <code code="1046132387"/>
+              <id root="1107086875"/>
+              <code code="994227608"/>
               <statusCode code="completed"/>
               <effectiveTime>
                 <low value="2012"/>
@@ -1449,7 +1449,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                   <realmCode/>
                   <typeId root="2.16.840.1.113883.1.3"/>
                   <templateId root="2.16.840.1.113883.10.20.22.4.46"/>
-                  <id root="1231485203"/>
+                  <id root="1909111350"/>
                   <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
@@ -1472,7 +1472,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                       <realmCode/>
                       <typeId root="2.16.840.1.113883.1.3"/>
                       <templateId root="2.16.840.1.113883.10.20.22.4.31"/>
-                      <id root="568122259"/>
+                      <id root="1517072479"/>
                       <code code="445518008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age At Onset"/>
                       <statusCode code="completed"/>
                       <effectiveTime>
@@ -1490,7 +1490,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                       <realmCode/>
                       <typeId root="2.16.840.1.113883.1.3"/>
                       <templateId root="2.16.840.1.113883.10.20.22.4.47"/>
-                      <id root="1298274921"/>
+                      <id root="1253315335"/>
                       <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Assertion"/>
                       <statusCode code="completed"/>
                       <effectiveTime>
@@ -1514,7 +1514,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
           <realmCode/>
           <typeId root="2.16.840.1.113883.1.3"/>
           <templateId root="2.16.840.1.113883.10.20.22.2.20"/>
-          <id root="390819549"/>
+          <id root="1733283116"/>
           <code code="11348-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HISTORY OF PAST ILLNESS"/>
           <title/>
           <confidentialityCode code="Value"/>
@@ -1524,7 +1524,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
               <realmCode/>
               <typeId root="2.16.840.1.113883.1.3"/>
               <templateId root="2.16.840.1.113883.10.20.22.4.4"/>
-              <id root="1282301820"/>
+              <id root="324902927"/>
               <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
               <statusCode code="completed"/>
               <effectiveTime>
@@ -1547,7 +1547,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                   <realmCode/>
                   <typeId root="2.16.840.1.113883.1.3"/>
                   <templateId root="2.16.840.1.113883.10.20.22.4.31"/>
-                  <id root="169505733"/>
+                  <id root="1014785293"/>
                   <code code="445518008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age At Onset"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
@@ -1572,7 +1572,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                   <realmCode/>
                   <typeId root="2.16.840.1.113883.1.3"/>
                   <templateId root="2.16.840.1.113883.10.20.22.4.5"/>
-                  <id root="2068122183"/>
+                  <id root="1200522134"/>
                   <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
@@ -1597,7 +1597,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                   <realmCode/>
                   <typeId root="2.16.840.1.113883.1.3"/>
                   <templateId root="2.16.840.1.113883.10.20.22.4.6"/>
-                  <id root="916204757"/>
+                  <id root="2015560738"/>
                   <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
@@ -1626,7 +1626,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
           <realmCode/>
           <typeId root="2.16.840.1.113883.1.3"/>
           <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.4"/>
-          <id root="1482032016"/>
+          <id root="1061468309"/>
           <code code="10164-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HISTORY OF PRESENT ILLNESS"/>
           <title/>
           <confidentialityCode code="Value"/>
@@ -1638,7 +1638,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
           <realmCode/>
           <typeId root="2.16.840.1.113883.1.3"/>
           <templateId root="2.16.840.1.113883.10.20.22.2.39"/>
-          <id root="1524044099"/>
+          <id root="426908983"/>
           <code code="11329-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
           <title/>
           <confidentialityCode code="Value"/>
@@ -1650,7 +1650,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
           <realmCode/>
           <typeId root="2.16.840.1.113883.1.3"/>
           <templateId root="2.16.840.1.113883.10.20.22.2.1"/>
-          <id root="251447897"/>
+          <id root="101070865"/>
           <code code="10160-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of medication use"/>
           <title>Medications</title>
           <confidentialityCode code="Value"/>
@@ -1660,8 +1660,8 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
               <realmCode/>
               <typeId root="2.16.840.1.113883.1.3"/>
               <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
-              <id root="2127653767"/>
-              <code code="140761614"/>
+              <id root="1066450478"/>
+              <code code="2081336261"/>
               <effectiveTime value="20120325"/>
               <consumable/>
               <participant>
@@ -1679,8 +1679,8 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                   <realmCode/>
                   <typeId root="2.16.840.1.113883.1.3"/>
                   <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
-                  <id root="1770598698"/>
-                  <code code="1333408470"/>
+                  <id root="2048723522"/>
+                  <code code="2005397364"/>
                   <effectiveTime value="20120325"/>
                   <participant>
                     <typeId root="2.16.840.1.113883.1.3"/>
@@ -1697,7 +1697,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                       <realmCode/>
                       <typeId root="2.16.840.1.113883.1.3"/>
                       <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-                      <id root="1945627155"/>
+                      <id root="1937884667"/>
                       <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                       <statusCode code="completed"/>
                       <effectiveTime>
@@ -1717,8 +1717,8 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                   <realmCode/>
                   <typeId root="2.16.840.1.113883.1.3"/>
                   <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
-                  <id root="1693763886"/>
-                  <code code="1137000970"/>
+                  <id root="554013607"/>
+                  <code code="1275671018"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
                     <low value="2012"/>
@@ -1740,7 +1740,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                       <realmCode/>
                       <typeId root="2.16.840.1.113883.1.3"/>
                       <templateId root="2.16.840.1.113883.10.20.22.4.8"/>
-                      <id root="666625764"/>
+                      <id root="1125759052"/>
                       <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Severity observation"/>
                       <statusCode code="completed"/>
                       <effectiveTime>
@@ -1758,8 +1758,8 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                       <realmCode/>
                       <typeId root="2.16.840.1.113883.1.3"/>
                       <templateId root="2.16.840.1.113883.10.20.22.4.14"/>
-                      <id root="696143926"/>
-                      <code code="1753490718"/>
+                      <id root="249721388"/>
+                      <code code="527579988"/>
                       <effectiveTime>
                         <low value="2012"/>
                         <high value="2012"/>
@@ -1788,8 +1788,8 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                       <realmCode/>
                       <typeId root="2.16.840.1.113883.1.3"/>
                       <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
-                      <id root="1007791293"/>
-                      <code code="384178467"/>
+                      <id root="845892239"/>
+                      <code code="1121118529"/>
                       <effectiveTime value="20120325"/>
                       <consumable/>
                       <participant/>
@@ -1819,7 +1819,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                   <realmCode/>
                   <typeId root="2.16.840.1.113883.1.3"/>
                   <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-                  <id root="1851661876"/>
+                  <id root="488503435"/>
                   <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
@@ -1844,7 +1844,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                   <realmCode/>
                   <typeId root="2.16.840.1.113883.1.3"/>
                   <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
-                  <id root="633561562"/>
+                  <id root="812060050"/>
                   <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
@@ -1869,8 +1869,8 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                   <realmCode/>
                   <typeId root="2.16.840.1.113883.1.3"/>
                   <templateId root="2.16.840.1.113883.10.20.22.4.18"/>
-                  <id root="324199399"/>
-                  <code code="1605100418"/>
+                  <id root="252876765"/>
+                  <code code="1531093432"/>
                   <effectiveTime value="20120325"/>
                   <participant>
                     <typeId root="2.16.840.1.113883.1.3"/>
@@ -1887,8 +1887,8 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                       <realmCode/>
                       <typeId root="2.16.840.1.113883.1.3"/>
                       <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
-                      <id root="1841432878"/>
-                      <code code="452430045"/>
+                      <id root="1826170018"/>
+                      <code code="2140887693"/>
                       <effectiveTime value="20120325"/>
                       <participant/>
                       <participant/>
@@ -1909,7 +1909,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
           <realmCode/>
           <typeId root="2.16.840.1.113883.1.3"/>
           <templateId root="2.16.840.1.113883.10.20.22.2.38"/>
-          <id root="1095542825"/>
+          <id root="922290496"/>
           <code code="29549-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Medications Administered"/>
           <title/>
           <confidentialityCode code="Value"/>
@@ -1919,8 +1919,8 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
               <realmCode/>
               <typeId root="2.16.840.1.113883.1.3"/>
               <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
-              <id root="641723013"/>
-              <code code="221910333"/>
+              <id root="668062243"/>
+              <code code="1172187371"/>
               <effectiveTime value="20120325"/>
               <consumable/>
               <participant>
@@ -1938,8 +1938,8 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                   <realmCode/>
                   <typeId root="2.16.840.1.113883.1.3"/>
                   <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
-                  <id root="1995844116"/>
-                  <code code="1083180809"/>
+                  <id root="1942197809"/>
+                  <code code="1920281273"/>
                   <effectiveTime value="20120325"/>
                   <participant>
                     <typeId root="2.16.840.1.113883.1.3"/>
@@ -1956,7 +1956,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                       <realmCode/>
                       <typeId root="2.16.840.1.113883.1.3"/>
                       <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-                      <id root="1345424246"/>
+                      <id root="857453016"/>
                       <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                       <statusCode code="completed"/>
                       <effectiveTime>
@@ -1976,8 +1976,8 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                   <realmCode/>
                   <typeId root="2.16.840.1.113883.1.3"/>
                   <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
-                  <id root="194481985"/>
-                  <code code="1532452446"/>
+                  <id root="38048343"/>
+                  <code code="1762120655"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
                     <low value="2012"/>
@@ -1999,7 +1999,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                       <realmCode/>
                       <typeId root="2.16.840.1.113883.1.3"/>
                       <templateId root="2.16.840.1.113883.10.20.22.4.8"/>
-                      <id root="1049825884"/>
+                      <id root="1350441642"/>
                       <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Severity observation"/>
                       <statusCode code="completed"/>
                       <effectiveTime>
@@ -2017,8 +2017,8 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                       <realmCode/>
                       <typeId root="2.16.840.1.113883.1.3"/>
                       <templateId root="2.16.840.1.113883.10.20.22.4.14"/>
-                      <id root="1994905057"/>
-                      <code code="730910180"/>
+                      <id root="195461026"/>
+                      <code code="1856977046"/>
                       <effectiveTime>
                         <low value="2012"/>
                         <high value="2012"/>
@@ -2047,8 +2047,8 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                       <realmCode/>
                       <typeId root="2.16.840.1.113883.1.3"/>
                       <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
-                      <id root="1919895268"/>
-                      <code code="46756564"/>
+                      <id root="2137122723"/>
+                      <code code="879664124"/>
                       <effectiveTime value="20120325"/>
                       <consumable/>
                       <participant/>
@@ -2078,7 +2078,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                   <realmCode/>
                   <typeId root="2.16.840.1.113883.1.3"/>
                   <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-                  <id root="1748990039"/>
+                  <id root="398377462"/>
                   <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
@@ -2103,7 +2103,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                   <realmCode/>
                   <typeId root="2.16.840.1.113883.1.3"/>
                   <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
-                  <id root="1569552556"/>
+                  <id root="476612828"/>
                   <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
@@ -2128,8 +2128,8 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                   <realmCode/>
                   <typeId root="2.16.840.1.113883.1.3"/>
                   <templateId root="2.16.840.1.113883.10.20.22.4.18"/>
-                  <id root="307204047"/>
-                  <code code="372950664"/>
+                  <id root="1854364051"/>
+                  <code code="1670975150"/>
                   <effectiveTime value="20120325"/>
                   <participant>
                     <typeId root="2.16.840.1.113883.1.3"/>
@@ -2146,8 +2146,8 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                       <realmCode/>
                       <typeId root="2.16.840.1.113883.1.3"/>
                       <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
-                      <id root="975363251"/>
-                      <code code="381531715"/>
+                      <id root="174062799"/>
+                      <code code="1346970787"/>
                       <effectiveTime value="20120325"/>
                       <participant/>
                       <participant/>
@@ -2168,7 +2168,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
           <realmCode/>
           <typeId root="2.16.840.1.113883.1.3"/>
           <templateId root="2.16.840.1.113883.10.20.2.10"/>
-          <id root="1802692691"/>
+          <id root="1509586407"/>
           <code code="29545-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="PHYSICAL EXAMINATION"/>
           <title/>
           <confidentialityCode code="Value"/>
@@ -2180,7 +2180,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
           <realmCode/>
           <typeId root="2.16.840.1.113883.1.3"/>
           <templateId root="2.16.840.1.113883.10.20.22.2.30"/>
-          <id root="251802971"/>
+          <id root="1201004109"/>
           <code code="59772-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Planned Procedure"/>
           <title/>
           <confidentialityCode code="Value"/>
@@ -2190,8 +2190,8 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
               <realmCode/>
               <typeId root="2.16.840.1.113883.1.3"/>
               <templateId root="2.16.840.1.113883.10.20.22.4.41"/>
-              <id root="824157457"/>
-              <code code="251470220"/>
+              <id root="498722942"/>
+              <code code="982070890"/>
               <effectiveTime>
                 <low value="2012"/>
                 <high value="2012"/>
@@ -2216,7 +2216,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
           <realmCode/>
           <typeId root="2.16.840.1.113883.1.3"/>
           <templateId root="2.16.840.1.113883.10.20.18.2.12"/>
-          <id root="512810230"/>
+          <id root="1295053804"/>
           <code code="59775-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Procedure Disposition"/>
           <title/>
           <confidentialityCode code="Value"/>
@@ -2228,7 +2228,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
           <realmCode/>
           <typeId root="2.16.840.1.113883.1.3"/>
           <templateId root="2.16.840.1.113883.10.20.18.2.9"/>
-          <id root="757877470"/>
+          <id root="188648513"/>
           <code code="59770-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Procedure Estimated Blood Loss"/>
           <title/>
           <confidentialityCode code="Value"/>
@@ -2240,7 +2240,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
           <realmCode/>
           <typeId root="2.16.840.1.113883.1.3"/>
           <templateId root="2.16.840.1.113883.10.20.22.2.28"/>
-          <id root="2069754157"/>
+          <id root="943248216"/>
           <code code="59776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Procedure Findings"/>
           <title/>
           <confidentialityCode code="Value"/>
@@ -2250,7 +2250,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
               <realmCode/>
               <typeId root="2.16.840.1.113883.1.3"/>
               <templateId root="2.16.840.1.113883.10.20.22.4.4"/>
-              <id root="823368579"/>
+              <id root="816914304"/>
               <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
               <statusCode code="completed"/>
               <effectiveTime>
@@ -2273,7 +2273,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                   <realmCode/>
                   <typeId root="2.16.840.1.113883.1.3"/>
                   <templateId root="2.16.840.1.113883.10.20.22.4.31"/>
-                  <id root="876842098"/>
+                  <id root="1133976999"/>
                   <code code="445518008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age At Onset"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
@@ -2298,7 +2298,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                   <realmCode/>
                   <typeId root="2.16.840.1.113883.1.3"/>
                   <templateId root="2.16.840.1.113883.10.20.22.4.5"/>
-                  <id root="1518674427"/>
+                  <id root="1969507273"/>
                   <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
@@ -2323,7 +2323,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                   <realmCode/>
                   <typeId root="2.16.840.1.113883.1.3"/>
                   <templateId root="2.16.840.1.113883.10.20.22.4.6"/>
-                  <id root="706187086"/>
+                  <id root="533770518"/>
                   <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
@@ -2352,7 +2352,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
           <realmCode/>
           <typeId root="2.16.840.1.113883.1.3"/>
           <templateId root="2.16.840.1.113883.10.20.22.2.40"/>
-          <id root="1934850837"/>
+          <id root="1655738594"/>
           <code code="59771-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Procedure Implants"/>
           <title/>
           <confidentialityCode code="Value"/>
@@ -2364,7 +2364,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
           <realmCode/>
           <typeId root="2.16.840.1.113883.1.3"/>
           <templateId root="2.16.840.1.113883.10.20.22.2.31"/>
-          <id root="2051118337"/>
+          <id root="1555638770"/>
           <code code="59773-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Procedure Specimens Taken"/>
           <title/>
           <confidentialityCode code="Value"/>
@@ -2376,7 +2376,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
           <realmCode/>
           <typeId root="2.16.840.1.113883.1.3"/>
           <templateId root="2.16.840.1.113883.10.20.22.2.7"/>
-          <id root="123233586"/>
+          <id root="2134721450"/>
           <code code="47519-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of procedures"/>
           <title/>
           <confidentialityCode code="Value"/>
@@ -2386,8 +2386,8 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
               <realmCode/>
               <typeId root="2.16.840.1.113883.1.3"/>
               <templateId root="2.16.840.1.113883.10.20.22.4.14"/>
-              <id root="1679426054"/>
-              <code code="1305113270"/>
+              <id root="1643175085"/>
+              <code code="331012231"/>
               <effectiveTime>
                 <low value="2012"/>
                 <high value="2012"/>
@@ -2409,7 +2409,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                   <realmCode/>
                   <typeId root="2.16.840.1.113883.1.3"/>
                   <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
-                  <id root="1831314741"/>
+                  <id root="697652768"/>
                   <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
@@ -2434,8 +2434,8 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                   <realmCode/>
                   <typeId root="2.16.840.1.113883.1.3"/>
                   <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
-                  <id root="583679609"/>
-                  <code code="1526844676"/>
+                  <id root="2007966304"/>
+                  <code code="1589008617"/>
                   <effectiveTime value="20120325"/>
                   <consumable/>
                   <participant>
@@ -2453,8 +2453,8 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                       <realmCode/>
                       <typeId root="2.16.840.1.113883.1.3"/>
                       <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
-                      <id root="1567692268"/>
-                      <code code="296034740"/>
+                      <id root="648308628"/>
+                      <code code="428230562"/>
                       <effectiveTime value="20120325"/>
                       <participant/>
                       <participant/>
@@ -2469,8 +2469,8 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                       <realmCode/>
                       <typeId root="2.16.840.1.113883.1.3"/>
                       <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
-                      <id root="699561313"/>
-                      <code code="1389026687"/>
+                      <id root="2009914728"/>
+                      <code code="454967690"/>
                       <statusCode code="completed"/>
                       <effectiveTime>
                         <low value="2012"/>
@@ -2496,7 +2496,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                       <realmCode/>
                       <typeId root="2.16.840.1.113883.1.3"/>
                       <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-                      <id root="2140628829"/>
+                      <id root="136282295"/>
                       <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                       <statusCode code="completed"/>
                       <effectiveTime>
@@ -2514,7 +2514,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                       <realmCode/>
                       <typeId root="2.16.840.1.113883.1.3"/>
                       <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
-                      <id root="746777037"/>
+                      <id root="1645001133"/>
                       <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                       <statusCode code="completed"/>
                       <effectiveTime>
@@ -2532,8 +2532,8 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                       <realmCode/>
                       <typeId root="2.16.840.1.113883.1.3"/>
                       <templateId root="2.16.840.1.113883.10.20.22.4.18"/>
-                      <id root="1227813854"/>
-                      <code code="1034478353"/>
+                      <id root="100593942"/>
+                      <code code="1582112734"/>
                       <effectiveTime value="20120325"/>
                       <participant/>
                       <participant/>
@@ -2550,7 +2550,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                   <realmCode/>
                   <typeId root="2.16.840.1.113883.1.3"/>
                   <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-                  <id root="768586178"/>
+                  <id root="1837514318"/>
                   <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
@@ -2574,8 +2574,8 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                 <encounter>
                   <realmCode/>
                   <typeId root="2.16.840.1.113883.1.3"/>
-                  <id root="1352498402"/>
-                  <code code="31691169"/>
+                  <id root="751914387"/>
+                  <code code="372226871"/>
                   <effectiveTime>
                     <low value="2012"/>
                     <high value="2012"/>
@@ -2599,8 +2599,8 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
               <realmCode/>
               <typeId root="2.16.840.1.113883.1.3"/>
               <templateId root="2.16.840.1.113883.10.20.22.4.13"/>
-              <id root="1402694149"/>
-              <code code="544841194"/>
+              <id root="2047135044"/>
+              <code code="882393387"/>
               <effectiveTime>
                 <low value="2012"/>
                 <high value="2012"/>
@@ -2621,8 +2621,8 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                 <encounter>
                   <realmCode/>
                   <typeId root="2.16.840.1.113883.1.3"/>
-                  <id root="388581195"/>
-                  <code code="1866436002"/>
+                  <id root="706112823"/>
+                  <code code="1945436229"/>
                   <effectiveTime>
                     <low value="2012"/>
                     <high value="2012"/>
@@ -2644,7 +2644,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                   <realmCode/>
                   <typeId root="2.16.840.1.113883.1.3"/>
                   <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-                  <id root="1495340442"/>
+                  <id root="1491146583"/>
                   <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
@@ -2669,7 +2669,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                   <realmCode/>
                   <typeId root="2.16.840.1.113883.1.3"/>
                   <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
-                  <id root="344448888"/>
+                  <id root="1658258422"/>
                   <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
@@ -2694,8 +2694,8 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                   <realmCode/>
                   <typeId root="2.16.840.1.113883.1.3"/>
                   <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
-                  <id root="94011543"/>
-                  <code code="1503775483"/>
+                  <id root="1514693996"/>
+                  <code code="70910113"/>
                   <effectiveTime value="20120325"/>
                   <consumable/>
                   <participant>
@@ -2713,8 +2713,8 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                       <realmCode/>
                       <typeId root="2.16.840.1.113883.1.3"/>
                       <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
-                      <id root="51875296"/>
-                      <code code="1319411542"/>
+                      <id root="956567850"/>
+                      <code code="1697189556"/>
                       <effectiveTime value="20120325"/>
                       <participant/>
                       <participant/>
@@ -2729,8 +2729,8 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                       <realmCode/>
                       <typeId root="2.16.840.1.113883.1.3"/>
                       <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
-                      <id root="1901751569"/>
-                      <code code="328670153"/>
+                      <id root="1857708367"/>
+                      <code code="1764430129"/>
                       <statusCode code="completed"/>
                       <effectiveTime>
                         <low value="2012"/>
@@ -2756,7 +2756,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                       <realmCode/>
                       <typeId root="2.16.840.1.113883.1.3"/>
                       <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-                      <id root="1274746265"/>
+                      <id root="775619839"/>
                       <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                       <statusCode code="completed"/>
                       <effectiveTime>
@@ -2774,7 +2774,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                       <realmCode/>
                       <typeId root="2.16.840.1.113883.1.3"/>
                       <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
-                      <id root="1764010939"/>
+                      <id root="461225269"/>
                       <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                       <statusCode code="completed"/>
                       <effectiveTime>
@@ -2792,8 +2792,8 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                       <realmCode/>
                       <typeId root="2.16.840.1.113883.1.3"/>
                       <templateId root="2.16.840.1.113883.10.20.22.4.18"/>
-                      <id root="1908037843"/>
-                      <code code="543228960"/>
+                      <id root="632279234"/>
+                      <code code="731106283"/>
                       <effectiveTime value="20120325"/>
                       <participant/>
                       <participant/>
@@ -2812,8 +2812,8 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
               <realmCode/>
               <typeId root="2.16.840.1.113883.1.3"/>
               <templateId root="2.16.840.1.113883.10.20.22.4.12"/>
-              <id root="1418303659"/>
-              <code code="1518334466"/>
+              <id root="844089749"/>
+              <code code="1654324181"/>
               <effectiveTime>
                 <low value="2012"/>
                 <high value="2012"/>
@@ -2833,8 +2833,8 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                 <encounter>
                   <realmCode/>
                   <typeId root="2.16.840.1.113883.1.3"/>
-                  <id root="1089201360"/>
-                  <code code="734138528"/>
+                  <id root="682511358"/>
+                  <code code="376349221"/>
                   <effectiveTime>
                     <low value="2012"/>
                     <high value="2012"/>
@@ -2856,7 +2856,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                   <realmCode/>
                   <typeId root="2.16.840.1.113883.1.3"/>
                   <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-                  <id root="468393423"/>
+                  <id root="1306614217"/>
                   <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
@@ -2881,7 +2881,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                   <realmCode/>
                   <typeId root="2.16.840.1.113883.1.3"/>
                   <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
-                  <id root="508907026"/>
+                  <id root="144724865"/>
                   <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
@@ -2906,8 +2906,8 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                   <realmCode/>
                   <typeId root="2.16.840.1.113883.1.3"/>
                   <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
-                  <id root="1356158227"/>
-                  <code code="1247950224"/>
+                  <id root="646321865"/>
+                  <code code="1171276369"/>
                   <effectiveTime value="20120325"/>
                   <consumable/>
                   <participant>
@@ -2925,8 +2925,8 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                       <realmCode/>
                       <typeId root="2.16.840.1.113883.1.3"/>
                       <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
-                      <id root="2099715448"/>
-                      <code code="919272642"/>
+                      <id root="1736232074"/>
+                      <code code="609405840"/>
                       <effectiveTime value="20120325"/>
                       <participant/>
                       <participant/>
@@ -2941,8 +2941,8 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                       <realmCode/>
                       <typeId root="2.16.840.1.113883.1.3"/>
                       <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
-                      <id root="402044602"/>
-                      <code code="549134872"/>
+                      <id root="419077069"/>
+                      <code code="1807319105"/>
                       <statusCode code="completed"/>
                       <effectiveTime>
                         <low value="2012"/>
@@ -2968,7 +2968,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                       <realmCode/>
                       <typeId root="2.16.840.1.113883.1.3"/>
                       <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-                      <id root="187334458"/>
+                      <id root="1220349732"/>
                       <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                       <statusCode code="completed"/>
                       <effectiveTime>
@@ -2986,7 +2986,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                       <realmCode/>
                       <typeId root="2.16.840.1.113883.1.3"/>
                       <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
-                      <id root="1392711199"/>
+                      <id root="1386106465"/>
                       <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                       <statusCode code="completed"/>
                       <effectiveTime>
@@ -3004,8 +3004,8 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                       <realmCode/>
                       <typeId root="2.16.840.1.113883.1.3"/>
                       <templateId root="2.16.840.1.113883.10.20.22.4.18"/>
-                      <id root="1560577735"/>
-                      <code code="1118162167"/>
+                      <id root="1349057247"/>
+                      <code code="2145826964"/>
                       <effectiveTime value="20120325"/>
                       <participant/>
                       <participant/>
@@ -3026,7 +3026,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
           <realmCode/>
           <typeId root="2.16.840.1.113883.1.3"/>
           <templateId root="2.16.840.1.113883.10.20.22.2.12"/>
-          <id root="224948502"/>
+          <id root="1769016238"/>
           <code code="29299-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Reason for Visit"/>
           <title/>
           <confidentialityCode code="Value"/>
@@ -3038,7 +3038,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
           <realmCode/>
           <typeId root="2.16.840.1.113883.1.3"/>
           <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.18"/>
-          <id root="1424463113"/>
+          <id root="1198544177"/>
           <code code="10187-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="REVIEW OF SYSTEMS"/>
           <title/>
           <confidentialityCode code="Value"/>
@@ -3050,7 +3050,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
           <realmCode/>
           <typeId root="2.16.840.1.113883.1.3"/>
           <templateId root="2.16.840.1.113883.10.20.22.2.17"/>
-          <id root="852485738"/>
+          <id root="34720096"/>
           <code code="29762-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Social history"/>
           <title/>
           <confidentialityCode code="Value"/>
@@ -3060,7 +3060,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
               <realmCode/>
               <typeId root="2.16.840.1.113883.1.3"/>
               <templateId root="2.16.840.1.113883.10.20.22.4.38"/>
-              <id root="1607121438"/>
+              <id root="953901513"/>
               <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
               <statusCode code="completed"/>
               <effectiveTime>
@@ -3085,7 +3085,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
               <realmCode/>
               <typeId root="2.16.840.1.113883.1.3"/>
               <templateId root="2.16.840.1.113883.10.20.15.3.8"/>
-              <id root="28906909"/>
+              <id root="485705754"/>
               <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Assertion"/>
               <statusCode code="completed"/>
               <effectiveTime>
@@ -3108,7 +3108,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                   <realmCode/>
                   <typeId root="2.16.840.1.113883.1.3"/>
                   <templateId root="2.16.840.1.113883.10.20.15.3.1"/>
-                  <id root="1903448999"/>
+                  <id root="6509483"/>
                   <code code="11778-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                   <statusCode code="completed"/>
                   <effectiveTime>

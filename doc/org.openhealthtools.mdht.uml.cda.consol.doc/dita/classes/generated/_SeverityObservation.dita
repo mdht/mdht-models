@@ -52,7 +52,7 @@
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="OBS" moodCode="EVN">
   <templateId root="2.16.840.1.113883.10.20.22.4.8"/>
-  <id root="311199132"/>
+  <id root="506424344"/>
   <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Severity observation"/>
   <text>Text Value</text>
   <statusCode code="completed"/>
@@ -60,7 +60,7 @@
     <low value="2012"/>
     <high value="2012"/>
   </effectiveTime>
-  <value xsi:type="CD" code="84091941"/>
+  <value xsi:type="CD" code="826132181"/>
   <interpretationCode code="Value"/>
 </observation>]]></codeblock>
 <section id="changes">

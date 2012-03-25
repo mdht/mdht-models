@@ -80,7 +80,7 @@ historical purposes.
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <act xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="ACT" moodCode="EVN">
   <templateId root="2.16.840.1.113883.10.20.22.4.3"/>
-  <id root="1319098243"/>
+  <id root="56399699"/>
   <code code="CONC" codeSystem="2.16.840.1.113883.5.6" codeSystemName="HL7ActClass" displayName="Concern"/>
   <statusCode code="completed"/>
   <effectiveTime>
@@ -90,7 +90,7 @@ historical purposes.
   <entryRelationship>
     <observation moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.22.4.4"/>
-      <id root="1297875119"/>
+      <id root="277945451"/>
       <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
       <statusCode code="completed"/>
       <effectiveTime>
@@ -100,7 +100,7 @@ historical purposes.
       <entryRelationship>
         <observation classCode="OBS" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.22.4.31"/>
-          <id root="2088164725"/>
+          <id root="1815177819"/>
           <code code="445518008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age At Onset"/>
           <statusCode code="completed"/>
           <effectiveTime>
@@ -112,7 +112,7 @@ historical purposes.
       <entryRelationship>
         <observation classCode="OBS" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.22.4.5"/>
-          <id root="262444706"/>
+          <id root="512607745"/>
           <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
           <statusCode code="completed"/>
           <effectiveTime>
@@ -124,7 +124,7 @@ historical purposes.
       <entryRelationship>
         <observation classCode="OBS" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.22.4.6"/>
-          <id root="2121248794"/>
+          <id root="180830124"/>
           <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
           <statusCode code="completed"/>
           <effectiveTime>

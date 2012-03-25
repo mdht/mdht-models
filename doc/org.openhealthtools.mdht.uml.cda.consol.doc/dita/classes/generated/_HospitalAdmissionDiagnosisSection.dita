@@ -38,14 +38,14 @@
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
   <templateId root="2.16.840.1.113883.10.20.22.2.43"/>
-  <id root="608576738"/>
+  <id root="1458359770"/>
   <code code="46241-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HOSPITAL ADMISSION DX"/>
   <title/>
   <text/>
   <entry>
     <act classCode="ACT" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.22.4.34"/>
-      <id root="792069670"/>
+      <id root="713857544"/>
       <code code="46241-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Admission diagnosis"/>
       <text>Text Value</text>
       <effectiveTime>
@@ -55,7 +55,7 @@
       <entryRelationship>
         <observation moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.22.4.4"/>
-          <id root="1612647653"/>
+          <id root="926730431"/>
           <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
           <text>Text Value</text>
           <statusCode code="completed"/>
@@ -66,7 +66,7 @@
           <entryRelationship>
             <observation classCode="OBS" moodCode="EVN">
               <templateId root="2.16.840.1.113883.10.20.22.4.31"/>
-              <id root="1207318237"/>
+              <id root="110748529"/>
               <code code="445518008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age At Onset"/>
               <text>Text Value</text>
               <statusCode code="completed"/>
@@ -79,7 +79,7 @@
           <entryRelationship>
             <observation classCode="OBS" moodCode="EVN">
               <templateId root="2.16.840.1.113883.10.20.22.4.5"/>
-              <id root="1339179846"/>
+              <id root="1375705038"/>
               <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
               <text>Text Value</text>
               <statusCode code="completed"/>
@@ -92,7 +92,7 @@
           <entryRelationship>
             <observation classCode="OBS" moodCode="EVN">
               <templateId root="2.16.840.1.113883.10.20.22.4.6"/>
-              <id root="718947651"/>
+              <id root="129990908"/>
               <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
               <text>Text Value</text>
               <statusCode code="completed"/>
