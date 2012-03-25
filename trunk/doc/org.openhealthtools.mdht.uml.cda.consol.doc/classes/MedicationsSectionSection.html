@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xml:lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="Medications Section"/>
+<meta name="abstract" content="[Section: templateId 2.16.840.1.113883.10.20.22.2.1.1]"/>
+<meta name="description" content="[Section: templateId 2.16.840.1.113883.10.20.22.2.1.1]"/>
+<meta name="DC.Coverage" content="Section"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="classId"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
+<title>Medications Section</title>
+</head>
+<body id="classId"><a name="classId"><!-- --></a>
+<div>
+	<p><b>For Discussion and Demonstration Only</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
+</div>
+
+	<h1 class="title topictitle1">
+		<span class="ph">Medications Section</span>
+	</h1>
+
+	
+	
+	<div class="body"><p class="shortdesc">[Section: templateId <tt class="ph tt">2.16.840.1.113883.10.20.22.2.1.1</tt>]</p>
+
+		
+		<div class="section">
+</div>
+
+		
+
+		<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="generated/../MedicationsSectionEntriesOptional.html">Medications Section Entries Optional</a> template (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.2.1</tt>)</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="10160-0" </tt><em class="ph i">History of medication use</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:7569)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">title</strong></tt> = "Medications" (CONF:7793)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">text</strong></tt> (CONF:7571)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">medication</strong></tt> (CONF:7572, CONF:7573)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="MedicationActivity.html" title="[SubstanceAdministration: templateId 2.16.840.1.113883.10.20.22.4.16]">Medication Activity</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.4.16</tt>)</li>
+</ol>
+</li>
+
+<li class="li">If medication use is unknown, the appropriate nullFlavor <strong class="ph b">MAY</strong> be present (see unknown information in Section 1)</li>
+
+</ol>
+
+		
+		<p class="p">
+		</p>
+
+		<p class="p">
+			<strong class="ph b"><span class="ph">Medications Section</span></strong>
+		</p>
+
+	
+	</div>
+
+
+</body>
+</html>
