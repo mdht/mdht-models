@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.Material;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getImmunizationMedicationInformationManufacturedMaterial()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.warning='ImmunizationMedicationInformationManufacturedMaterialCodeOriginalText ImmunizationMedicationInformationManufacturedMaterialOriginalTextReference ImmunizationMedicationInformationManufacturedMaterialLotNumberText' constraints.validation.info='ImmunizationMedicationInformationManufacturedMaterialCodeTranslation'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.59' constraints.validation.error='ImmunizationMedicationInformationManufacturedMaterialCode' code.codeSystemName='Vaccines administered (CVX)' constraints.validation.warning='ImmunizationMedicationInformationManufacturedMaterialCodeOriginalText ImmunizationMedicationInformationManufacturedMaterialOriginalTextReference ImmunizationMedicationInformationManufacturedMaterialLotNumberText' constraints.validation.info='ImmunizationMedicationInformationManufacturedMaterialCodeTranslation'"
  * @generated
  */
 public interface ImmunizationMedicationInformationManufacturedMaterial extends Material {
@@ -63,6 +63,22 @@ public interface ImmunizationMedicationInformationManufacturedMaterial extends M
 	 * @generated
 	 */
 	boolean validateImmunizationMedicationInformationManufacturedMaterialCodeTranslation(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
+	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+	 * value.codeSystem = '2.16.840.1.113883.6.59' and not value.code.oclIsUndefined())
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and \nlet value : datatypes::CE = self.code.oclAsType(datatypes::CE) in \nvalue.codeSystem = \'2.16.840.1.113883.6.59\' and not value.code.oclIsUndefined())'"
+	 * @generated
+	 */
+	boolean validateImmunizationMedicationInformationManufacturedMaterialCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
 
 	/**
