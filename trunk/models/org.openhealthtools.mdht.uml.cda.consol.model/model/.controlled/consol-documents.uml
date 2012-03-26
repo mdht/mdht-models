@@ -1133,8 +1133,8 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
         </generalization>
         <ownedAttribute xmi:id="_tzLskDzEEeGMk58Mp9-wVA" name="dischargeDispositionCode" visibility="private" aggregation="composite">
           <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tzLskTzEEeGMk58Mp9-wVA" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tzLskjzEEeGMk58Mp9-wVA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_k-ih8HT9EeGB7fSw5LjeyA" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_k-ih8XT9EeGB7fSw5LjeyA" value="1"/>
           <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_wOswwEozEd6c3qsAxlFHaQ"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_tzLskzzEEeGMk58Mp9-wVA" name="effectiveTime" visibility="private" aggregation="composite">
@@ -2249,7 +2249,8 @@ The Consultation Note recommends use of a single document type code, 11488-4 &qu
   <uml:Association xmi:id="_vZAiYjs5EeGXW8k29waQGA" memberEnd="_vZAiYDs5EeGXW8k29waQGA _vZAiYzs5EeGXW8k29waQGA">
     <ownedEnd xmi:id="_vZAiYzs5EeGXW8k29waQGA" type="_Or7FUDsyEeGvzMYhXuqAEA" association="_vZAiYjs5EeGXW8k29waQGA"/>
   </uml:Association>
-  <CDA:ValueSetConstraint xmi:id="_zNL3IDzEEeGMk58Mp9-wVA" base_Property="_tzLskDzEEeGMk58Mp9-wVA">
+  <CDA:ValueSetConstraint xmi:id="_zNL3IDzEEeGMk58Mp9-wVA" base_Property="_tzLskDzEEeGMk58Mp9-wVA" severity="WARNING">
+    <reference href="../consol-vocab.uml#_2L5TYhSVEeGGzu7fmW9pXw"/>
     <ruleId>CONF:8476</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_5hMWYDzFEeGMk58Mp9-wVA" base_Property="_tzLskzzEEeGMk58Mp9-wVA">
@@ -4513,4 +4514,5 @@ OIDs SHALL be no more than 64 characters in length..</body>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_8ccgkHK9EeGig5KF4CgPyw" severity="WARNING" base_Property="_nLKckSymEeGMXrZ0DiQwGg"/>
   <CDA:PropertyValidation xmi:id="_Q2rJEHK-EeGig5KF4CgPyw" severity="INFO" base_Property="_ZGMo0CytEeGMXrZ0DiQwGg"/>
+  <CDA:PropertyValidation xmi:id="_fgoHwHT9EeGB7fSw5LjeyA" base_Property="_tzLskDzEEeGMk58Mp9-wVA"/>
 </xmi:XMI>
