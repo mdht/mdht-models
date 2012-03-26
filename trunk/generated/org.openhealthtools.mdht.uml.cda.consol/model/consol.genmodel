@@ -745,6 +745,10 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SeverityObservation/SeverityObservationValue/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SeverityObservation/SeverityObservationValue/context"/>
       </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//SeverityObservation/SeverityObservationInterpretationCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SeverityObservation/SeverityObservationInterpretationCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SeverityObservation/SeverityObservationInterpretationCode/context"/>
+      </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//ProcedureActivityProcedure">
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ProcedureActivityProcedure/ProcedureActivityProcedureCodeCodeSystems">
@@ -5957,6 +5961,10 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ImmunizationMedicationInformationManufacturedMaterial/ImmunizationMedicationInformationManufacturedMaterialCodeTranslation">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ImmunizationMedicationInformationManufacturedMaterial/ImmunizationMedicationInformationManufacturedMaterialCodeTranslation/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ImmunizationMedicationInformationManufacturedMaterial/ImmunizationMedicationInformationManufacturedMaterialCodeTranslation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ImmunizationMedicationInformationManufacturedMaterial/ImmunizationMedicationInformationManufacturedMaterialCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ImmunizationMedicationInformationManufacturedMaterial/ImmunizationMedicationInformationManufacturedMaterialCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ImmunizationMedicationInformationManufacturedMaterial/ImmunizationMedicationInformationManufacturedMaterialCode/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//ImmunizationMedicationInformationManufacturedMaterial/ImmunizationMedicationInformationManufacturedMaterialLotNumberText">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//ImmunizationMedicationInformationManufacturedMaterial/ImmunizationMedicationInformationManufacturedMaterialLotNumberText/diagnostics"/>

@@ -23,7 +23,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getSeverityObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation statusCode.code='completed' value.codeSystemName='SNOMEDCT' code.codeSystem='2.16.840.1.113883.5.4' code.displayName='Severity observation' templateId.root='2.16.840.1.113883.10.20.22.4.8' constraints.validation.error='SeverityObservationTemplateId SeverityObservationReferenceValue SeverityObservationClassCode SeverityObservationMoodCode SeverityObservationCode SeverityObservationStatusCode SeverityObservationValue' code.codeSystemName='HL7ActCode' classCode='OBS' constraints.validation.warning='SeverityObservationTextReference SeverityObservationText' code.code='SEV' moodCode='EVN' value.codeSystem='2.16.840.1.113883.6.96'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation interpretationCode.codeSystemName='ObservationInterpretation' value.codeSystemName='SNOMEDCT' code.codeSystem='2.16.840.1.113883.5.4' code.displayName='Severity observation' templateId.root='2.16.840.1.113883.10.20.22.4.8' constraints.validation.error='SeverityObservationTemplateId SeverityObservationReferenceValue SeverityObservationClassCode SeverityObservationMoodCode SeverityObservationCode SeverityObservationStatusCode SeverityObservationValue' code.code='SEV' statusCode.code='completed' code.codeSystemName='HL7ActCode' classCode='OBS' constraints.validation.warning='SeverityObservationTextReference SeverityObservationText SeverityObservationInterpretationCode' interpretationCode.codeSystem='2.16.840.1.113883.5.83' moodCode='EVN' value.codeSystem='2.16.840.1.113883.6.96'"
  * @generated
  */
 public interface SeverityObservation extends Observation {
@@ -149,6 +149,21 @@ public interface SeverityObservation extends Observation {
 	 * @generated
 	 */
 	boolean validateSeverityObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * (self.interpretationCode->isEmpty() or self.interpretationCode->exists(element | element.isNullFlavorUndefined())) implies (self.interpretationCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CE) and 
+	 * let value : datatypes::CE = element.oclAsType(datatypes::CE) in 
+	 * value.codeSystem = '2.16.840.1.113883.5.83' and not value.code.oclIsUndefined()))
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.interpretationCode->isEmpty() or self.interpretationCode->exists(element | element.isNullFlavorUndefined())) implies (self.interpretationCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CE) and \nlet value : datatypes::CE = element.oclAsType(datatypes::CE) in \nvalue.codeSystem = \'2.16.840.1.113883.5.83\' and not value.code.oclIsUndefined()))'"
+	 * @generated
+	 */
+	boolean validateSeverityObservationInterpretationCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
