@@ -645,7 +645,9 @@
   <CDA:PropertyValidation xmi:id="_-lG3QEX8EeG6e5lG0YsSyQ" base_Property="_xgWAcEX8EeG6e5lG0YsSyQ">
     <ruleId>CONF:9007</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="__zeu4EX8EeG6e5lG0YsSyQ" identifier="2.16.840.1.113883.3.88.12.80.22" name="Vaccine Administered Value Set" binding="Dynamic" base_Property="_xgWAcEX8EeG6e5lG0YsSyQ"/>
+  <CDA:ValueSetConstraint xmi:id="__zeu4EX8EeG6e5lG0YsSyQ" base_Property="_xgWAcEX8EeG6e5lG0YsSyQ">
+    <reference href="../consol-vocab.uml#_2MRG0BSVEeGGzu7fmW9pXw"/>
+  </CDA:ValueSetConstraint>
   <CDA:TextValue xmi:id="_IuilYEX9EeG6e5lG0YsSyQ" severity="WARNING" base_Property="_xgWngEX8EeG6e5lG0YsSyQ">
     <ruleId>CONF:9014</ruleId>
   </CDA:TextValue>

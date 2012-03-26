@@ -154,7 +154,7 @@ An appropriate nullFlavor can be used when a single result observation is contai
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_2J4hMhSVEeGGzu7fmW9pXw" value="OBS"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2J4hMxSVEeGGzu7fmW9pXw" name="moodCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeW3UDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:InstanceValue" xmi:id="_2J4hNBSVEeGGzu7fmW9pXw" name="EVN">
         <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeW3UDcEd6xYZuu1VKCVw"/>
         <instance xmi:type="uml:EnumerationLiteral" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeW30DcEd6xYZuu1VKCVw"/>
