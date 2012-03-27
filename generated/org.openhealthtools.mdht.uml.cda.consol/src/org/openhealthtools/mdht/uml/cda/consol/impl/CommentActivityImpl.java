@@ -55,44 +55,6 @@ public class CommentActivityImpl extends ActImpl implements CommentActivity {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCommentActivityHasTextReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CommentActivityOperations.validateCommentActivityHasTextReference(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateCommentActivityEffectiveTimeWhenAuthorPresent(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return CommentActivityOperations.validateCommentActivityEffectiveTimeWhenAuthorPresent(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateCommentActivityHasAuthorId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CommentActivityOperations.validateCommentActivityHasAuthorId(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateCommentActivityHasAuthorOrganization(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CommentActivityOperations.validateCommentActivityHasAuthorOrganization(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateCommentActivityTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CommentActivityOperations.validateCommentActivityTemplateId(this, diagnostics, context);
 	}
@@ -138,8 +100,8 @@ public class CommentActivityImpl extends ActImpl implements CommentActivity {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCommentActivityStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CommentActivityOperations.validateCommentActivityStatusCode(this, diagnostics, context);
+	public boolean validateCommentActivityAuthor(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CommentActivityOperations.validateCommentActivityAuthor(this, diagnostics, context);
 	}
 
 	/**
@@ -147,8 +109,37 @@ public class CommentActivityImpl extends ActImpl implements CommentActivity {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCommentActivityAuthor(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CommentActivityOperations.validateCommentActivityAuthor(this, diagnostics, context);
+	public boolean validateCommentActivityAuthorAssignedAuthorAddr(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorAddr(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCommentActivityAuthorAssignedAuthorId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCommentActivityAuthorTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CommentActivityOperations.validateCommentActivityAuthorTime(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCommentActivityAuthorAssignedAuthor(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthor(this, diagnostics, context);
 	}
 
 	/**
