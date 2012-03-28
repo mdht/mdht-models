@@ -176,7 +176,7 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
               <language>Analysis</language>
               <language>OCL</language>
               <body>BirthTime precise to year</body>
-              <body>self.birthTime.value.size() >= 4</body>
+              <body>not birthTime.value.oclIsUndefined() and self.birthTime.value.size() >= 4</body>
             </specification>
           </ownedRule>
           <ownedRule xmi:id="_kIBcYDVREeGIw7CntkyPQw" name="birthTimePreciseToDay" constrainedElement="_wfQTkCylEeGMXrZ0DiQwGg">
@@ -184,7 +184,7 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
               <language>Analysis</language>
               <language>OCL</language>
               <body>BirthTime precise to day</body>
-              <body>self.birthTime.value.size() >= 6</body>
+              <body>not birthTime.value.oclIsUndefined()  and self.birthTime.value.size() >= 6</body>
             </specification>
           </ownedRule>
           <generalization xmi:id="_wfQ6oCylEeGMXrZ0DiQwGg">
@@ -3494,7 +3494,7 @@ A History and Physical Examination is required upon hospital admission as well a
   <CDA:ValueSetConstraint xmi:id="_X_9rsD-UEeGvOdejHZ7dYg" base_Property="_Ttkpcz-UEeGvOdejHZ7dYg">
     <reference href="../consol-vocab.uml#_-bWMgT-UEeGvOdejHZ7dYg"/>
   </CDA:ValueSetConstraint>
-  <CDA:AssociationValidation xmi:id="_EZ7UwD7aEeGvOdejHZ7dYg" severity="INFO" base_Association="_qGyYIT7ZEeGvOdejHZ7dYg">
+  <CDA:AssociationValidation xmi:id="_EZ7UwD7aEeGvOdejHZ7dYg" base_Association="_qGyYIT7ZEeGvOdejHZ7dYg">
     <ruleId>CONF:8505</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_vUABoD-OEeGvOdejHZ7dYg" severity="WARNING" base_Association="_sZD8wT7ZEeGvOdejHZ7dYg">

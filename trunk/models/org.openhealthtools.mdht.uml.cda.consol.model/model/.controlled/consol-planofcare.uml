@@ -101,7 +101,7 @@
     <generalization xmi:id="_2NWE_RSVEeGGzu7fmW9pXw">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_YiANsDxYEd6JwqSGecoePg"/>
     </generalization>
-    <ownedAttribute xmi:id="_2NWE-RSVEeGGzu7fmW9pXw" name="classCode" visibility="private">
+    <ownedAttribute xmi:id="_2NWE-RSVEeGGzu7fmW9pXw" name="classCode" visibility="private" isReadOnly="true">
       <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_uAr30CoSEeGHF88-qhhUMA" value="ACT"/>
     </ownedAttribute>
@@ -306,12 +306,6 @@
   <CDA:PropertyValidation xmi:id="_2NoY8RSVEeGGzu7fmW9pXw" base_Property="_2NoY7BSVEeGGzu7fmW9pXw">
     <ruleId>CONF:8580</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_b0gU4CoKEeGHF88-qhhUMA" base_Property="_2NWE-RSVEeGGzu7fmW9pXw">
-    <ruleId>CONF:8538</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:CodeSystemConstraint xmi:id="_oLp3wCoKEeGHF88-qhhUMA" name="" code="" displayName="" base_Property="_2NWE-RSVEeGGzu7fmW9pXw" message="">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_wOhRcE6REeC5ttwajeXVXg"/>
-  </CDA:CodeSystemConstraint>
   <CDA:ValueSetConstraint xmi:id="_A9gyYCoMEeGHF88-qhhUMA" base_Property="_2NWE8hSVEeGGzu7fmW9pXw" message="">
     <reference href="../consol-vocab.uml#_mYW9kG1HEeGCevFpokwODw"/>
   </CDA:ValueSetConstraint>
@@ -360,4 +354,5 @@
   <CDA:ValueSetConstraint xmi:id="_cICwYCoUEeGHF88-qhhUMA" base_Property="_2NoY7xSVEeGGzu7fmW9pXw">
     <reference href="../consol-vocab.uml#_u3o3AG1HEeGCevFpokwODw"/>
   </CDA:ValueSetConstraint>
+  <CDA:PropertyValidation xmi:id="_qSkasHkLEeGsJLFJFRpA9A" base_Property="_2NWE-RSVEeGGzu7fmW9pXw"/>
 </xmi:XMI>

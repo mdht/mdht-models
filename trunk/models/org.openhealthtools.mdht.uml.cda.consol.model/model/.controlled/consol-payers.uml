@@ -234,7 +234,7 @@ with respect to the payer, so that the identifiers can be recorded.&#xD;
         <generalization xmi:id="_RRYNMF13EeGt2doqSDULjA">
           <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_6qmVsEcDEd6besF9iFIJkQ"/>
         </generalization>
-        <ownedAttribute xmi:id="_pRByUF15EeGt2doqSDULjA" name="code">
+        <ownedAttribute xmi:id="_pRByUF15EeGt2doqSDULjA" name="code" isReadOnly="true">
           <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FfWCMF16EeGt2doqSDULjA" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FffMIF16EeGt2doqSDULjA"/>
@@ -609,7 +609,6 @@ Authorizations are represented using an act subordinate to the policy or program
   <CDA:ConstraintValidation xmi:id="_wXRm0F16EeGt2doqSDULjA" severity="WARNING" base_Constraint="_p4NRoF16EeGt2doqSDULjA">
     <ruleId>CONF:8967</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:CDATemplate xmi:id="_1H0uQF2GEeGt2doqSDULjA" base_Class="_ddyK0FzWEeGt2doqSDULjA"/>
   <uml:Association xmi:id="_eL_LAl2OEeGt2doqSDULjA" memberEnd="_eL_LAF2OEeGt2doqSDULjA _eL_LA12OEeGt2doqSDULjA">
     <ownedEnd xmi:id="_eL_LA12OEeGt2doqSDULjA" type="_deYl8F0REeGt2doqSDULjA" association="_eL_LAl2OEeGt2doqSDULjA"/>
   </uml:Association>
