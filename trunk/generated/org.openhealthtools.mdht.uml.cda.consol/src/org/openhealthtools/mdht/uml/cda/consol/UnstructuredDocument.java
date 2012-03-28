@@ -26,7 +26,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getUnstructuredDocument()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.21.1.10' constraints.validation.error='UnstructuredDocumentTemplateId UnstructuredDocumentRecordTarget UnstructuredDocumentAuthor UnstructuredDocumentComponent UnstructuredDocumentCustodian UnstructuredDocumentRecordTargetPatientRole2Id UnstructuredDocumentAuthorAssignedAuthor2Addr UnstructuredDocumentAuthorAssignedAuthor2Telecom UnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationAddr UnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationId UnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationName UnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationTelecom UnstructuredDocumentCustodianAssignedCustodian2'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.21.1.10' constraints.validation.error='UnstructuredDocumentTemplateId UnstructuredDocumentRecordTarget UnstructuredDocumentAuthor UnstructuredDocumentComponent UnstructuredDocumentCustodian UnstructuredDocumentRecordTargetPatientRole2Id UnstructuredDocumentAuthorAssignedAuthor2Addr UnstructuredDocumentAuthorAssignedAuthor2Telecom UnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationAddr UnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationId UnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationName UnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationTelecom UnstructuredDocumentCustodianAssignedCustodian2' constraints.validation.query='UnstructuredDocumentRecordTargetPatientRole2Id UnstructuredDocumentAuthorAssignedAuthor2Addr UnstructuredDocumentAuthorAssignedAuthor2Telecom UnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationAddr UnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationId UnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationName UnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationTelecom UnstructuredDocumentCustodianAssignedCustodian2'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolUnstructuredDocumentRecordTargetPatientRole2 constraints.validation.error='PatientRole2Id'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolUnstructuredDocumentAuthorAssignedAuthor2 constraints.validation.error='AssignedAuthor2Addr AssignedAuthor2Telecom'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolUnstructuredDocumentCustodian constraints.validation.error='CustodianAssignedCustodian2'"
@@ -104,11 +104,11 @@ public interface UnstructuredDocument extends GeneralHeaderConstraints {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * if self.recordTarget->exists(not oclIsUndefined()) and self.recordTarget.patientRole->exists(not oclIsUndefined()) then self.recordTarget.patientRole->forAll((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (id->size() = 1)) else true endif
+	 * self.recordTarget->excluding(null).patientRole->excluding(null)->reject((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (id->size() = 1))
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='if self.recordTarget->exists(not oclIsUndefined()) and self.recordTarget.patientRole->exists(not oclIsUndefined()) then self.recordTarget.patientRole->forAll((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (id->size() = 1)) else true endif'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.recordTarget->excluding(null).patientRole->excluding(null)->reject((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (id->size() = 1))'"
 	 * @generated
 	 */
 	boolean validateUnstructuredDocumentRecordTargetPatientRole2Id(DiagnosticChain diagnostics,
@@ -118,11 +118,11 @@ public interface UnstructuredDocument extends GeneralHeaderConstraints {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * if self.author->exists(not oclIsUndefined()) and self.author.assignedAuthor->exists(not oclIsUndefined()) then self.author.assignedAuthor->forAll((addr->isEmpty() or addr->exists(element | element.isNullFlavorUndefined())) implies (addr->size() = 1)) else true endif
+	 * self.author->excluding(null).assignedAuthor->excluding(null)->reject((addr->isEmpty() or addr->exists(element | element.isNullFlavorUndefined())) implies (addr->size() = 1))
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='if self.author->exists(not oclIsUndefined()) and self.author.assignedAuthor->exists(not oclIsUndefined()) then self.author.assignedAuthor->forAll((addr->isEmpty() or addr->exists(element | element.isNullFlavorUndefined())) implies (addr->size() = 1)) else true endif'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.author->excluding(null).assignedAuthor->excluding(null)->reject((addr->isEmpty() or addr->exists(element | element.isNullFlavorUndefined())) implies (addr->size() = 1))'"
 	 * @generated
 	 */
 	boolean validateUnstructuredDocumentAuthorAssignedAuthor2Addr(DiagnosticChain diagnostics,
@@ -132,11 +132,11 @@ public interface UnstructuredDocument extends GeneralHeaderConstraints {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * if self.author->exists(not oclIsUndefined()) and self.author.assignedAuthor->exists(not oclIsUndefined()) then self.author.assignedAuthor->forAll((telecom->isEmpty() or telecom->exists(element | element.isNullFlavorUndefined())) implies (telecom->size() = 1)) else true endif
+	 * self.author->excluding(null).assignedAuthor->excluding(null)->reject((telecom->isEmpty() or telecom->exists(element | element.isNullFlavorUndefined())) implies (telecom->size() = 1))
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='if self.author->exists(not oclIsUndefined()) and self.author.assignedAuthor->exists(not oclIsUndefined()) then self.author.assignedAuthor->forAll((telecom->isEmpty() or telecom->exists(element | element.isNullFlavorUndefined())) implies (telecom->size() = 1)) else true endif'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.author->excluding(null).assignedAuthor->excluding(null)->reject((telecom->isEmpty() or telecom->exists(element | element.isNullFlavorUndefined())) implies (telecom->size() = 1))'"
 	 * @generated
 	 */
 	boolean validateUnstructuredDocumentAuthorAssignedAuthor2Telecom(DiagnosticChain diagnostics,
@@ -146,11 +146,11 @@ public interface UnstructuredDocument extends GeneralHeaderConstraints {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * if self.custodian->exists(not oclIsUndefined()) and self.custodian.assignedCustodian->exists(not oclIsUndefined()) and self.custodian.assignedCustodian.representedCustodianOrganization->exists(not oclIsUndefined()) then self.custodian.assignedCustodian.representedCustodianOrganization->forAll((addr.oclIsUndefined() or addr.isNullFlavorUndefined()) implies (not addr.oclIsUndefined())) else true endif
+	 * self.custodian->excluding(null).assignedCustodian->excluding(null).representedCustodianOrganization->excluding(null)->reject((addr.oclIsUndefined() or addr.isNullFlavorUndefined()) implies (not addr.oclIsUndefined()))
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='if self.custodian->exists(not oclIsUndefined()) and self.custodian.assignedCustodian->exists(not oclIsUndefined()) and self.custodian.assignedCustodian.representedCustodianOrganization->exists(not oclIsUndefined()) then self.custodian.assignedCustodian.representedCustodianOrganization->forAll((addr.oclIsUndefined() or addr.isNullFlavorUndefined()) implies (not addr.oclIsUndefined())) else true endif'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.custodian->excluding(null).assignedCustodian->excluding(null).representedCustodianOrganization->excluding(null)->reject((addr.oclIsUndefined() or addr.isNullFlavorUndefined()) implies (not addr.oclIsUndefined()))'"
 	 * @generated
 	 */
 	boolean validateUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationAddr(
@@ -160,11 +160,11 @@ public interface UnstructuredDocument extends GeneralHeaderConstraints {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * if self.custodian->exists(not oclIsUndefined()) and self.custodian.assignedCustodian->exists(not oclIsUndefined()) and self.custodian.assignedCustodian.representedCustodianOrganization->exists(not oclIsUndefined()) then self.custodian.assignedCustodian.representedCustodianOrganization->forAll((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (id->size() = 1)) else true endif
+	 * self.custodian->excluding(null).assignedCustodian->excluding(null).representedCustodianOrganization->excluding(null)->reject((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (id->size() = 1))
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='if self.custodian->exists(not oclIsUndefined()) and self.custodian.assignedCustodian->exists(not oclIsUndefined()) and self.custodian.assignedCustodian.representedCustodianOrganization->exists(not oclIsUndefined()) then self.custodian.assignedCustodian.representedCustodianOrganization->forAll((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (id->size() = 1)) else true endif'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.custodian->excluding(null).assignedCustodian->excluding(null).representedCustodianOrganization->excluding(null)->reject((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (id->size() = 1))'"
 	 * @generated
 	 */
 	boolean validateUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationId(DiagnosticChain diagnostics,
@@ -174,11 +174,11 @@ public interface UnstructuredDocument extends GeneralHeaderConstraints {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * if self.custodian->exists(not oclIsUndefined()) and self.custodian.assignedCustodian->exists(not oclIsUndefined()) and self.custodian.assignedCustodian.representedCustodianOrganization->exists(not oclIsUndefined()) then self.custodian.assignedCustodian.representedCustodianOrganization->forAll((name.oclIsUndefined() or name.isNullFlavorUndefined()) implies (not name.oclIsUndefined())) else true endif
+	 * self.custodian->excluding(null).assignedCustodian->excluding(null).representedCustodianOrganization->excluding(null)->reject((name.oclIsUndefined() or name.isNullFlavorUndefined()) implies (not name.oclIsUndefined()))
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='if self.custodian->exists(not oclIsUndefined()) and self.custodian.assignedCustodian->exists(not oclIsUndefined()) and self.custodian.assignedCustodian.representedCustodianOrganization->exists(not oclIsUndefined()) then self.custodian.assignedCustodian.representedCustodianOrganization->forAll((name.oclIsUndefined() or name.isNullFlavorUndefined()) implies (not name.oclIsUndefined())) else true endif'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.custodian->excluding(null).assignedCustodian->excluding(null).representedCustodianOrganization->excluding(null)->reject((name.oclIsUndefined() or name.isNullFlavorUndefined()) implies (not name.oclIsUndefined()))'"
 	 * @generated
 	 */
 	boolean validateUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationName(
@@ -188,11 +188,11 @@ public interface UnstructuredDocument extends GeneralHeaderConstraints {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * if self.custodian->exists(not oclIsUndefined()) and self.custodian.assignedCustodian->exists(not oclIsUndefined()) and self.custodian.assignedCustodian.representedCustodianOrganization->exists(not oclIsUndefined()) then self.custodian.assignedCustodian.representedCustodianOrganization->forAll((telecom.oclIsUndefined() or telecom.isNullFlavorUndefined()) implies (not telecom.oclIsUndefined())) else true endif
+	 * self.custodian->excluding(null).assignedCustodian->excluding(null).representedCustodianOrganization->excluding(null)->reject((telecom.oclIsUndefined() or telecom.isNullFlavorUndefined()) implies (not telecom.oclIsUndefined()))
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='if self.custodian->exists(not oclIsUndefined()) and self.custodian.assignedCustodian->exists(not oclIsUndefined()) and self.custodian.assignedCustodian.representedCustodianOrganization->exists(not oclIsUndefined()) then self.custodian.assignedCustodian.representedCustodianOrganization->forAll((telecom.oclIsUndefined() or telecom.isNullFlavorUndefined()) implies (not telecom.oclIsUndefined())) else true endif'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.custodian->excluding(null).assignedCustodian->excluding(null).representedCustodianOrganization->excluding(null)->reject((telecom.oclIsUndefined() or telecom.isNullFlavorUndefined()) implies (not telecom.oclIsUndefined()))'"
 	 * @generated
 	 */
 	boolean validateUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationTelecom(
@@ -202,11 +202,11 @@ public interface UnstructuredDocument extends GeneralHeaderConstraints {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * if self.custodian->exists(not oclIsUndefined()) then self.custodian->forAll(assignedCustodian->one(assignedCustodian : cda::AssignedCustodian | not assignedCustodian.oclIsUndefined() and assignedCustodian.oclIsKindOf(cda::AssignedCustodian))) else true endif
+	 * self.custodian->excluding(null)->reject(assignedCustodian->one(assignedCustodian : cda::AssignedCustodian | not assignedCustodian.oclIsUndefined() and assignedCustodian.oclIsKindOf(cda::AssignedCustodian)))
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='if self.custodian->exists(not oclIsUndefined()) then self.custodian->forAll(assignedCustodian->one(assignedCustodian : cda::AssignedCustodian | not assignedCustodian.oclIsUndefined() and assignedCustodian.oclIsKindOf(cda::AssignedCustodian))) else true endif'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.custodian->excluding(null)->reject(assignedCustodian->one(assignedCustodian : cda::AssignedCustodian | not assignedCustodian.oclIsUndefined() and assignedCustodian.oclIsKindOf(cda::AssignedCustodian)))'"
 	 * @generated
 	 */
 	boolean validateUnstructuredDocumentCustodianAssignedCustodian2(DiagnosticChain diagnostics,

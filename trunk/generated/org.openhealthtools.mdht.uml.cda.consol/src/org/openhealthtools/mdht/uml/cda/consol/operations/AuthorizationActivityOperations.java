@@ -6,17 +6,22 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol.operations;
 
+import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 
+import org.eclipse.emf.ecore.EClassifier;
+import org.eclipse.emf.ecore.EObject;
 import org.eclipse.ocl.ParserException;
 
+import org.eclipse.ocl.Query;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 
+import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.consol.AuthorizationActivity;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
@@ -349,7 +354,7 @@ public class AuthorizationActivityOperations extends ClinicalStatementOperations
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_AUTHORIZATION_ACTIVITY_ENTRY_RELATIONSHIP_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "if self.entryRelationship->exists(not oclIsUndefined()) then self.entryRelationship->forAll(typeCode=vocab::x_ActRelationshipEntryRelationship::SUBJ) else true endif";
+	protected static final String VALIDATE_AUTHORIZATION_ACTIVITY_ENTRY_RELATIONSHIP_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->excluding(null)->reject(typeCode=vocab::x_ActRelationshipEntryRelationship::SUBJ)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAuthorizationActivityEntryRelationshipTypeCode(AuthorizationActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Authorization Activity Entry Relationship Type Code</em>}' invariant operation.
@@ -360,13 +365,13 @@ public class AuthorizationActivityOperations extends ClinicalStatementOperations
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_AUTHORIZATION_ACTIVITY_ENTRY_RELATIONSHIP_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static Query<?, ?, ?> VALIDATE_AUTHORIZATION_ACTIVITY_ENTRY_RELATIONSHIP_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * if self.entryRelationship->exists(not oclIsUndefined()) then self.entryRelationship->forAll(typeCode=vocab::x_ActRelationshipEntryRelationship::SUBJ) else true endif
+	 * self.entryRelationship->excluding(null)->reject(typeCode=vocab::x_ActRelationshipEntryRelationship::SUBJ)
 	 * @param authorizationActivity The receiving '<em><b>Authorization Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -374,28 +379,31 @@ public class AuthorizationActivityOperations extends ClinicalStatementOperations
 	 * @generated
 	 */
 
+	@SuppressWarnings("unchecked")
 	public static boolean validateAuthorizationActivityEntryRelationshipTypeCode(
 			AuthorizationActivity authorizationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_AUTHORIZATION_ACTIVITY_ENTRY_RELATIONSHIP_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.AUTHORIZATION_ACTIVITY);
-			try {
-				VALIDATE_AUTHORIZATION_ACTIVITY_ENTRY_RELATIONSHIP_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_AUTHORIZATION_ACTIVITY_ENTRY_RELATIONSHIP_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
+
+		OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		helper.setContext(ConsolPackage.Literals.AUTHORIZATION_ACTIVITY);
+		try {
+			OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_AUTHORIZATION_ACTIVITY_ENTRY_RELATIONSHIP_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			VALIDATE_AUTHORIZATION_ACTIVITY_ENTRY_RELATIONSHIP_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+		} catch (ParserException pe) {
+			throw new UnsupportedOperationException(pe.getLocalizedMessage());
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_AUTHORIZATION_ACTIVITY_ENTRY_RELATIONSHIP_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			authorizationActivity)) {
+
+		Object oclResultSet = VALIDATE_AUTHORIZATION_ACTIVITY_ENTRY_RELATIONSHIP_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(authorizationActivity);
+		if (oclResultSet != null && oclResultSet instanceof Collection) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.AUTHORIZATION_ACTIVITY__AUTHORIZATION_ACTIVITY_ENTRY_RELATIONSHIP_TYPE_CODE,
-					ConsolPlugin.INSTANCE.getString("AuthorizationActivityEntryRelationshipTypeCode"),
-					new Object[] { authorizationActivity }));
+				for (EObject eObject : (Collection<EObject>) oclResultSet) {
+					diagnostics.add(new BasicDiagnostic(
+						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						ConsolValidator.AUTHORIZATION_ACTIVITY__AUTHORIZATION_ACTIVITY_ENTRY_RELATIONSHIP_TYPE_CODE,
+						ConsolPlugin.INSTANCE.getString("AuthorizationActivityEntryRelationshipTypeCode"),
+						new Object[] { eObject }));
+				}
 			}
-			return false;
+			return ((Collection<?>) oclResultSet).isEmpty();
 		}
 		return true;
 	}

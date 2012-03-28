@@ -68,6 +68,15 @@ public class ContinuityOfCareDocumentImpl extends GeneralHeaderConstraintsImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateContinuityOfCareDocumentCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateContinuityOfCareDocumentLanguageCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentLanguageCode(
 			this, diagnostics, context);
@@ -533,16 +542,6 @@ public class ContinuityOfCareDocumentImpl extends GeneralHeaderConstraintsImpl i
 	 */
 	public ProblemSection getProblemSection() {
 		return ContinuityOfCareDocumentOperations.getProblemSection(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateGeneralHeaderConstraintsCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ContinuityOfCareDocumentOperations.validateGeneralHeaderConstraintsCode(this, diagnostics, context);
 	}
 
 	/**

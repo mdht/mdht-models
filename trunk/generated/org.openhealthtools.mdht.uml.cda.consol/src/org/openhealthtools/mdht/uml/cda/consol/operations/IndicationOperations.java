@@ -247,7 +247,7 @@ public class IndicationOperations extends ClinicalStatementOperations {
 		if (!EOCL_ENV.createQuery(VALIDATE_INDICATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(indication)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE, ConsolValidator.INDICATION__INDICATION_CODE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE, ConsolValidator.INDICATION__INDICATION_CODE,
 					ConsolPlugin.INSTANCE.getString("IndicationCode"), new Object[] { indication }));
 			}
 			return false;

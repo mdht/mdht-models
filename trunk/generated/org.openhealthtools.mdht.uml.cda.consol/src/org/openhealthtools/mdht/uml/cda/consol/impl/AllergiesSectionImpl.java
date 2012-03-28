@@ -55,9 +55,8 @@ public class AllergiesSectionImpl extends AllergiesSectionEntriesOptionalImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateAllergiesSectionEntriesOptionalCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AllergiesSectionOperations.validateAllergiesSectionEntriesOptionalCode(this, diagnostics, context);
+	public boolean validateAllergiesSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AllergiesSectionOperations.validateAllergiesSectionCode(this, diagnostics, context);
 	}
 
 	/**

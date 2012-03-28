@@ -55,6 +55,15 @@ public class ResultsSectionImpl extends ResultsSectionEntriesOptionalImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateResultsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ResultsSectionOperations.validateResultsSectionCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateResultsSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResultsSectionOperations.validateResultsSectionTitle(this, diagnostics, context);
 	}
@@ -95,16 +104,6 @@ public class ResultsSectionImpl extends ResultsSectionEntriesOptionalImpl implem
 	public boolean validateResultsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ResultsSectionOperations.validateResultsSectionEntriesOptionalTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateResultsSectionEntriesOptionalCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResultsSectionOperations.validateResultsSectionEntriesOptionalCode(this, diagnostics, context);
 	}
 
 	/**

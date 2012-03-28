@@ -25,7 +25,7 @@ import org.openhealthtools.mdht.uml.cda.ParticipantRole;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getProductInstance()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.22.4.37' constraints.validation.error='ProductInstanceTemplateId ProductInstanceClassCode ProductInstanceId ProductInstanceScopingEntity ProductInstancePlayingDevice ProductInstanceScopingEntityId' constraints.validation.warning='ProductInstancePlayingDeviceCode' classCode='MANU'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.22.4.37' constraints.validation.error='ProductInstanceTemplateId ProductInstanceClassCode ProductInstanceId ProductInstanceScopingEntity ProductInstancePlayingDevice ProductInstanceScopingEntityId' classCode='MANU' constraints.validation.warning='ProductInstancePlayingDeviceCode' constraints.validation.query='ProductInstanceScopingEntityId ProductInstancePlayingDeviceCode'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProductInstanceScopingEntity constraints.validation.error='ScopingEntityId'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProductInstancePlayingDevice constraints.validation.warning='PlayingDeviceCode'"
  * @generated
@@ -100,11 +100,11 @@ public interface ProductInstance extends ParticipantRole {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * if self.scopingEntity->exists(not oclIsUndefined()) then self.scopingEntity->forAll((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (not id->isEmpty())) else true endif
+	 * self.scopingEntity->excluding(null)->reject((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (not id->isEmpty()))
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='if self.scopingEntity->exists(not oclIsUndefined()) then self.scopingEntity->forAll((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (not id->isEmpty())) else true endif'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.scopingEntity->excluding(null)->reject((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (not id->isEmpty()))'"
 	 * @generated
 	 */
 	boolean validateProductInstanceScopingEntityId(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -113,11 +113,11 @@ public interface ProductInstance extends ParticipantRole {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * if self.playingDevice->exists(not oclIsUndefined()) then self.playingDevice->forAll((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined())) else true endif
+	 * self.playingDevice->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='if self.playingDevice->exists(not oclIsUndefined()) then self.playingDevice->forAll((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined())) else true endif'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.playingDevice->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))'"
 	 * @generated
 	 */
 	boolean validateProductInstancePlayingDeviceCode(DiagnosticChain diagnostics, Map<Object, Object> context);

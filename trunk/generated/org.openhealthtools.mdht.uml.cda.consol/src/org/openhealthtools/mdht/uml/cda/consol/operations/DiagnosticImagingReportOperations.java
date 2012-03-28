@@ -183,7 +183,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_DIAGNOSTIC_IMAGING_REPORT_INFORMANT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.informant->exists(informant : cda::Informant12 | not informant.oclIsUndefined() and informant.oclIsKindOf(rim::Participation))";
+	protected static final String VALIDATE_DIAGNOSTIC_IMAGING_REPORT_INFORMANT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.informant->select(informant : cda::Informant12 | not informant.oclIsUndefined() and informant.oclIsKindOf(rim::Participation))->isEmpty()";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateDiagnosticImagingReportInformant(DiagnosticImagingReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Diagnostic Imaging Report Informant</em>}' invariant operation.
@@ -199,7 +199,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.informant->exists(informant : cda::Informant12 | not informant.oclIsUndefined() and informant.oclIsKindOf(rim::Participation))
+	 * self.informant->select(informant : cda::Informant12 | not informant.oclIsUndefined() and informant.oclIsKindOf(rim::Participation))->isEmpty()
 	 * @param diagnosticImagingReport The receiving '<em><b>Diagnostic Imaging Report</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
