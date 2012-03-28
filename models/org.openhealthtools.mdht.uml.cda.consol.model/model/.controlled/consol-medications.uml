@@ -1187,6 +1187,9 @@ The UDI should be sent in the participantRole/id.</body>
     <ruleId>CONF:10100</ruleId>
   </CDA:TextValue>
   <uml:Class xmi:id="_LNP08EFGEeGorO80f-Cppg" name="AdmissionMedication">
+    <ownedComment xmi:id="_NdKLUHhrEeGJtvg2iiStYg">
+      <body>The Admission Medications entry codes medications that the patient took prior to admission.</body>
+    </ownedComment>
     <generalization xmi:id="_LNsg4EFGEeGorO80f-Cppg">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_YiANsDxYEd6JwqSGecoePg"/>
     </generalization>

@@ -209,7 +209,7 @@ with respect to the payer, so that the identifiers can be recorded.&#xD;
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ji5x4F15EeGt2doqSDULjA" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ji5x4V15EeGt2doqSDULjA" value="1"/>
       </ownedAttribute>
-            <ownedAttribute xmi:id="_Wg5iQG7fEeGO5JJTinolhw" name="typeCode" isReadOnly="true">
+      <ownedAttribute xmi:id="_Wg5iQG7fEeGO5JJTinolhw" name="typeCode" isReadOnly="true">
         <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__y7BIEDcEd6xYZuu1VKCVw"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_orts4G7fEeGO5JJTinolhw" value="PRF"/>
       </ownedAttribute>
@@ -240,10 +240,9 @@ with respect to the payer, so that the identifiers can be recorded.&#xD;
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FffMIF16EeGt2doqSDULjA"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_NIzG4F16EeGt2doqSDULjA" name="addr">
-        <ownedComment xmi:id="_mQ0iUG7gEeGO5JJTinolhw">
+          <ownedComment xmi:id="_mQ0iUG7gEeGO5JJTinolhw">
             <body>The content of addr SHALL be a conformant US Realm Address (AD.US.FIELDED) (2.16.840.1.113883.10.20.22.5.2) (CONF:10482)</body>
-        </ownedComment>
-        
+          </ownedComment>
           <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_v0zRUD5yEd6cla2oXsPtlA"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RLNzcF16EeGt2doqSDULjA" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RLNzcV16EeGt2doqSDULjA"/>
@@ -429,25 +428,63 @@ with respect to the payer, so that the identifiers can be recorded.&#xD;
     <ruleId>CONF:10492</ruleId>
   </CDA:CDATemplate>
   <uml:Class xmi:id="_XUoXwBnZEeGs5a462vYX5Q" name="AuthorizationActivity">
+    <ownedComment xmi:id="_1yE5QHhuEeGJtvg2iiStYg">
+      <body>An Authorization Activity represents authorizations or pre-authorizations currently active for the patient for the particular payer. &#xD;
+Authorizations are represented using an act subordinate to the policy or program that provided it.  The authorization refers to the policy or program. Authorized treatments can be grouped into an organizer class, where common properties, such as the reason for the authorization, can be expressed. Subordinate acts represent what was authorized.</body>
+    </ownedComment>
     <generalization xmi:id="_XUoXwRnZEeGs5a462vYX5Q">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_YiANsDxYEd6JwqSGecoePg"/>
     </generalization>
-    <ownedAttribute xmi:id="_aZU30BnZEeGs5a462vYX5Q" name="classCode" visibility="private">
+    <ownedAttribute xmi:id="_aZU30BnZEeGs5a462vYX5Q" name="classCode" visibility="private" isReadOnly="true">
       <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOntkDcEd6xYZuu1VKCVw"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_1DWqEEbnEd6besF9iFIJkQ"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_do-V0HhvEeGJtvg2iiStYg" value="ACT"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_aZU30hnZEeGs5a462vYX5Q" name="id" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aZU30xnZEeGs5a462vYX5Q" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aZU31BnZEeGs5a462vYX5Q"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JKxMQHhvEeGJtvg2iiStYg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JKxMQXhvEeGJtvg2iiStYg" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FHobYEocEd6c3qsAxlFHaQ"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_aZU31hnZEeGs5a462vYX5Q" name="moodCode" visibility="private">
+    <ownedAttribute xmi:id="_aZU31hnZEeGs5a462vYX5Q" name="moodCode" visibility="private" isReadOnly="true">
       <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOpkkDcEd6xYZuu1VKCVw"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_yWn-AEocEd6c3qsAxlFHaQ"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_ah-IoHhvEeGJtvg2iiStYg" value="EVN"/>
     </ownedAttribute>
+    <ownedAttribute xmi:id="_rPHbYHhvEeGJtvg2iiStYg" name="entryRelationship" visibility="private" type="_sWZMgHhvEeGJtvg2iiStYg" aggregation="composite">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uA2jMHhvEeGJtvg2iiStYg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uA2jMXhvEeGJtvg2iiStYg" value="1"/>
+      <association href="../consol.uml#_rPIpgHhvEeGJtvg2iiStYg"/>
+    </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_sWZMgHhvEeGJtvg2iiStYg" name="EntryRelationship">
+      <ownedComment xmi:id="_zCcYUHhwEeGJtvg2iiStYg">
+        <body>INLINE</body>
+      </ownedComment>
+      <ownedRule xmi:id="_Lo6NMHhwEeGJtvg2iiStYg" name="hasClinicalStatement" constrainedElement="_sWZMgHhvEeGJtvg2iiStYg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_NLlg4HhwEeGJtvg2iiStYg">
+          <language>Analysis</language>
+          <body>The target of an authorization activity with act/entryRelationship/@typeCode=&quot;SUBJ&quot; SHALL be a clinical statement with moodCode=&quot;PRMS&quot; Promise (CONF:8951).</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_b7HQYHhwEeGJtvg2iiStYg" name="hasAuhtorixedPerformers" constrainedElement="_sWZMgHhvEeGJtvg2iiStYg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_egCrQHhwEeGJtvg2iiStYg">
+          <language>Analysis</language>
+          <body>The target of an authorization activity MAY contain one or more performer, to indicate the providers that have been authorized to provide treatment.</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_sWZzkHhvEeGJtvg2iiStYg">
+        <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_s4vroHhvEeGJtvg2iiStYg" name="typeCode" visibility="private" isReadOnly="true">
+        <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoTEDcEd6xYZuu1VKCVw"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_HfIpgHhyEeGJtvg2iiStYg" value="SUBJ"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
-  <CDA:CDATemplate xmi:id="_cVJrUBnZEeGs5a462vYX5Q" base_Class="_XUoXwBnZEeGs5a462vYX5Q" templateId="2.16.840.1.113883.10.20.1.19"/>
+  <CDA:CDATemplate xmi:id="_cVJrUBnZEeGs5a462vYX5Q" base_Class="_XUoXwBnZEeGs5a462vYX5Q" templateId="2.16.840.1.113883.10.20.1.19">
+    <ruleId>CONF:8946</ruleId>
+    <ruleId>CONF:10529</ruleId>
+  </CDA:CDATemplate>
   <CDA:AssociationValidation xmi:id="_XcS_gDY0EeGUovy31cP2ng" severity="WARNING" base_Association="_eyK8AhUmEeGvPruliC3crg">
     <ruleId>CONF:7959</ruleId>
     <ruleId>CONF:8905</ruleId>
@@ -649,7 +686,7 @@ with respect to the payer, so that the identifiers can be recorded.&#xD;
   <CDA:PropertyValidation xmi:id="_T04McGAvEeGt2doqSDULjA" severity="WARNING" base_Property="_Qtp80GAvEeGt2doqSDULjA">
     <ruleId>CONF:8925</ruleId>
   </CDA:PropertyValidation>
-    <CDA:PropertyValidation xmi:id="_mSJNcG7fEeGO5JJTinolhw" severity="WARNING" base_Property="_Wg5iQG7fEeGO5JJTinolhw">
+  <CDA:PropertyValidation xmi:id="_mSJNcG7fEeGO5JJTinolhw" severity="WARNING" base_Property="_Wg5iQG7fEeGO5JJTinolhw">
     <ruleId>CONF:8961</ruleId>
   </CDA:PropertyValidation>
   <CDA:ConstraintValidation xmi:id="_O2bfAG7hEeGO5JJTinolhw" base_Constraint="_HFsGkG7hEeGO5JJTinolhw">
@@ -657,5 +694,20 @@ with respect to the payer, so that the identifiers can be recorded.&#xD;
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_hiPd4G7hEeGO5JJTinolhw" base_Constraint="_bk4HkG7hEeGO5JJTinolhw">
     <ruleId>CONF:10481</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:PropertyValidation xmi:id="_Gi_4wHhvEeGJtvg2iiStYg" base_Property="_aZU30BnZEeGs5a462vYX5Q">
+    <ruleId>CONF:8944</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_G-wnsHhvEeGJtvg2iiStYg" base_Property="_aZU30hnZEeGs5a462vYX5Q">
+    <ruleId>CONF:8947</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_HZ65sHhvEeGJtvg2iiStYg" base_Property="_aZU31hnZEeGs5a462vYX5Q">
+    <ruleId>CONF:8945</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_wbDUwHhvEeGJtvg2iiStYg" base_Property="_s4vroHhvEeGJtvg2iiStYg">
+    <ruleId>CONF:8949</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ConstraintValidation xmi:id="_kWQQsHhwEeGJtvg2iiStYg" severity="INFO" base_Constraint="_b7HQYHhwEeGJtvg2iiStYg">
+    <ruleId>CONF:8952</ruleId>
   </CDA:ConstraintValidation>
 </xmi:XMI>
