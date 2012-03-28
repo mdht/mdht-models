@@ -24,10 +24,6 @@ import org.openhealthtools.mdht.uml.cda.Section;
  * <p>
  * NOTE: The descriptions in this section differentiate between "advance directives" and "advance directive documents". The former are the directions whereas the latter are legal documents containing those directions. Thus, an advance directive might be "no cardiopulmonary resuscitation", and this directive might be stated in a legal advance directive document.
  * </p>
- * <p>
- *     The Advance Directives Section contains information that defines the patient's expectations and requests
- *     for care along with the locations of the documents. 
- * </p>
  * <!-- end-model-doc -->
  *
  *
