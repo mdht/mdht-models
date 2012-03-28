@@ -65,8 +65,8 @@
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bGzYjhVdEeGQCvUGzi1kDQ" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_lqJOQB0aEeGGdsHVD60BZA" name="allergyProblemAct" type="_2EAisBSVEeGGzu7fmW9pXw" association="_lqJOQh0aEeGGdsHVD60BZA">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qtWpcB0aEeGGdsHVD60BZA" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qtWpcR0aEeGGdsHVD60BZA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_P3YDoHhuEeGJtvg2iiStYg" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_P3YDoXhuEeGJtvg2iiStYg" value="1"/>
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_45wiEBkaEeGs5a462vYX5Q" base_Class="_bGzYgBVdEeGQCvUGzi1kDQ" templateId="2.16.840.1.113883.10.20.22.2.6">
@@ -178,18 +178,19 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2EaLeBSVEeGGzu7fmW9pXw" name="problemEntryReactionObservationContainer" type="_2E_aIRSVEeGGzu7fmW9pXw" association="_2Ej8URSVEeGGzu7fmW9pXw">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2EaLeRSVEeGGzu7fmW9pXw" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2EaLehSVEeGGzu7fmW9pXw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SkWAMHhuEeGJtvg2iiStYg" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SkWAMXhuEeGJtvg2iiStYg" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2EaLexSVEeGGzu7fmW9pXw" name="severity" type="_2FGu4hSVEeGGzu7fmW9pXw" association="_2EkjYBSVEeGGzu7fmW9pXw">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_E_g2UEyJEeG-cvwiqdenrA" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_E_g2UUyJEeG-cvwiqdenrA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TN23QHhuEeGJtvg2iiStYg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TN23QXhuEeGJtvg2iiStYg" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_-xkhwBUvEeGbmN_W114JUw" name="allergyStatusObservation" type="_2FRuAhSVEeGGzu7fmW9pXw" association="_-xkhwhUvEeGbmN_W114JUw">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-xkhwRUvEeGbmN_W114JUw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_FQD_EDJDEeG6R8Pb5FT2Ow" name="participant" type="_0HgNkDJAEeG6R8Pb5FT2Ow" association="_FQD_EjJDEeG6R8Pb5FT2Ow">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FQD_ETJDEeG6R8Pb5FT2Ow"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ToPtMHhuEeGJtvg2iiStYg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ToPtMXhuEeGJtvg2iiStYg" value="1"/>
     </ownedAttribute>
   </uml:Class>
   <uml:Association xmi:id="_2Ej8URSVEeGGzu7fmW9pXw" memberEnd="_2EaLeBSVEeGGzu7fmW9pXw _2Ej8UhSVEeGGzu7fmW9pXw">
