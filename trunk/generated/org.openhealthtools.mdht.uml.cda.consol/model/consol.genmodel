@@ -3024,6 +3024,26 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AuthorizationActivity/AuthorizationActivityTemplateId/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AuthorizationActivity/AuthorizationActivityTemplateId/context"/>
       </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//AuthorizationActivity/AuthorizationActivityClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AuthorizationActivity/AuthorizationActivityClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AuthorizationActivity/AuthorizationActivityClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//AuthorizationActivity/AuthorizationActivityId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AuthorizationActivity/AuthorizationActivityId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AuthorizationActivity/AuthorizationActivityId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//AuthorizationActivity/AuthorizationActivityMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AuthorizationActivity/AuthorizationActivityMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AuthorizationActivity/AuthorizationActivityMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//AuthorizationActivity/AuthorizationActivityEntryRelationship">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AuthorizationActivity/AuthorizationActivityEntryRelationship/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AuthorizationActivity/AuthorizationActivityEntryRelationship/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//AuthorizationActivity/AuthorizationActivityEntryRelationshipTypeCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AuthorizationActivity/AuthorizationActivityEntryRelationshipTypeCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AuthorizationActivity/AuthorizationActivityEntryRelationshipTypeCode/context"/>
+      </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="consol.ecore#//PlanOfCareSection">
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//PlanOfCareSection/PlanOfCareSectionTemplateId">

@@ -64,6 +64,55 @@ public class AuthorizationActivityImpl extends ActImpl implements AuthorizationA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateAuthorizationActivityClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AuthorizationActivityOperations.validateAuthorizationActivityClassCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAuthorizationActivityId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AuthorizationActivityOperations.validateAuthorizationActivityId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAuthorizationActivityMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AuthorizationActivityOperations.validateAuthorizationActivityMoodCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAuthorizationActivityEntryRelationship(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AuthorizationActivityOperations.validateAuthorizationActivityEntryRelationship(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAuthorizationActivityEntryRelationshipTypeCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AuthorizationActivityOperations.validateAuthorizationActivityEntryRelationshipTypeCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public AuthorizationActivity init() {
 		CDAUtil.init(this);
 		return this;
