@@ -314,17 +314,15 @@ Not pre-coordinated consumable: If the consumable code is not pre-coordinated (e
   <CDA:PropertyValidation xmi:id="_2GZIUBSVEeGGzu7fmW9pXw" severity="INFO" base_Property="_2GHb0hSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7506</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_2GIpoRSVEeGGzu7fmW9pXw" severity="INFO" base_Property="_2GHbvhSVEeGGzu7fmW9pXw">
-    <ruleId>CONF:7514</ruleId>
-  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_2GIpoRSVEeGGzu7fmW9pXw" severity="INFO" base_Property="_2GHbvhSVEeGGzu7fmW9pXw"/>
   <CDA:ValueSetConstraint xmi:id="_2GJQsBSVEeGGzu7fmW9pXw" base_Property="_2GHbvhSVEeGGzu7fmW9pXw">
     <reference href="../consol-vocab.uml#_2H150RSVEeGGzu7fmW9pXw"/>
+    <ruleId>CONF:7514</ruleId>
   </CDA:ValueSetConstraint>
-  <CDA:PropertyValidation xmi:id="_2GMUABSVEeGGzu7fmW9pXw" severity="INFO" base_Property="_2GHbzhSVEeGGzu7fmW9pXw">
-    <ruleId>CONF:7515</ruleId>
-  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_2GMUABSVEeGGzu7fmW9pXw" severity="INFO" base_Property="_2GHbzhSVEeGGzu7fmW9pXw"/>
   <CDA:ValueSetConstraint xmi:id="_2GX6MBSVEeGGzu7fmW9pXw" base_Property="_2GHbzhSVEeGGzu7fmW9pXw">
     <reference href="../consol-vocab.uml#_2H3vABSVEeGGzu7fmW9pXw"/>
+    <ruleId>CONF:7515</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_2GKe0BSVEeGGzu7fmW9pXw" severity="WARNING" base_Property="_2GHbwhSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7516</ruleId>

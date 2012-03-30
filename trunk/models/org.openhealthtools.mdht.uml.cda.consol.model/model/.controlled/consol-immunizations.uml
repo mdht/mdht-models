@@ -261,9 +261,7 @@
   <CDA:PropertyValidation xmi:id="_2ME5kBSVEeGGzu7fmW9pXw" base_Property="_2MEShRSVEeGGzu7fmW9pXw">
     <ruleId>CONF:8834</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_2ME5lBSVEeGGzu7fmW9pXw" severity="INFO" base_Property="_2ME5kRSVEeGGzu7fmW9pXw">
-    <ruleId>CONF:8839</ruleId>
-  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_2ME5lBSVEeGGzu7fmW9pXw" severity="INFO" base_Property="_2ME5kRSVEeGGzu7fmW9pXw"/>
   <CDA:PropertyValidation xmi:id="_2MHV4BSVEeGGzu7fmW9pXw" severity="INFO">
     <ruleId>CONF-312</ruleId>
   </CDA:PropertyValidation>
@@ -450,8 +448,9 @@
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_HZBV8BqlEeGo461UQq-B1g" base_Property="_2ME5kRSVEeGGzu7fmW9pXw">
     <reference href="../consol-vocab.uml#_2H150RSVEeGGzu7fmW9pXw"/>
+    <ruleId>CONF:8839</ruleId>
   </CDA:ValueSetConstraint>
-  <CDA:ValueSetConstraint xmi:id="_T_-PYBqlEeGo461UQq-B1g" base_Property="_2MHV0BSVEeGGzu7fmW9pXw" severity="INFO">
+  <CDA:ValueSetConstraint xmi:id="_T_-PYBqlEeGo461UQq-B1g" base_Property="_2MHV0BSVEeGGzu7fmW9pXw">
     <reference href="../consol-vocab.uml#_2H3vABSVEeGGzu7fmW9pXw"/>
     <ruleId>CONF:8840</ruleId>
   </CDA:ValueSetConstraint>
@@ -663,4 +662,5 @@
   <CDA:AssociationValidation xmi:id="_ghAxkG65EeGeVrQbtyMiPg" base_Association="_efdwkG65EeGeVrQbtyMiPg">
     <ruleId>CONF:8848</ruleId>
   </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="_0rNZoHqkEeGomofqO1s6lQ" severity="INFO" base_Property="_2MHV0BSVEeGGzu7fmW9pXw"/>
 </xmi:XMI>

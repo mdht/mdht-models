@@ -810,11 +810,9 @@ In both cases, inFulfillmentOf/order/id is mapped to the DICOM Accession Number 
   <CDA:PropertyValidation xmi:id="_zduoQErgEeGJpZWiuxRVIw" base_Property="_vFSoYkrgEeGJpZWiuxRVIw">
     <ruleId>CONF:9265</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_z1H0kErgEeGJpZWiuxRVIw" severity="WARNING" base_Property="_vFSoY0rgEeGJpZWiuxRVIw">
-    <ruleId>CONF:9273</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_vXDRUErhEeGJpZWiuxRVIw" base_Property="_vFSoY0rgEeGJpZWiuxRVIw">
+  <CDA:ValueSetConstraint xmi:id="_vXDRUErhEeGJpZWiuxRVIw" base_Property="_vFSoY0rgEeGJpZWiuxRVIw" severity="WARNING">
     <reference href="../consol-vocab.uml#_jyBH4UrhEeGJpZWiuxRVIw"/>
+    <ruleId>CONF:9273</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_LDGhoEriEeGJpZWiuxRVIw" base_Property="_Hv8u0EriEeGJpZWiuxRVIw">
     <ruleId>CONF:9276</ruleId>

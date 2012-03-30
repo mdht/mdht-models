@@ -1174,6 +1174,7 @@
   <CDA:ValueSetConstraint xmi:id="_BbDeoCysEeGMXrZ0DiQwGg">
     <reference href="consol-vocab.uml#_X7aBcGiJEeGjoNbQEEZQtw"/>
     <base_Property href=".controlled/consol-documents.uml#_Cm0V4CymEeGMXrZ0DiQwGg"/>
+    <ruleId>CONF:5326</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_GD6gICysEeGMXrZ0DiQwGg" severity="INFO">
     <base_Property href=".controlled/consol-documents.uml#_Cm088CymEeGMXrZ0DiQwGg"/>
@@ -1225,7 +1226,6 @@
     <base_Property href=".controlled/consol-documents.uml#_93gRoCymEeGMXrZ0DiQwGg"/>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_CLll4Cy7EeGMXrZ0DiQwGg" severity="WARNING">
-    <ruleId>CONF:9942</ruleId>
     <base_Property href=".controlled/consol-documents.uml#_93hfwCymEeGMXrZ0DiQwGg"/>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_AZNpUCy7EeGMXrZ0DiQwGg">
@@ -1249,7 +1249,6 @@
     <base_Property href=".controlled/consol-documents.uml#_NItK0CynEeGMXrZ0DiQwGg"/>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_nZYf8CzAEeGMXrZ0DiQwGg" severity="INFO">
-    <ruleId>CONF:9944</ruleId>
     <base_Property href=".controlled/consol-documents.uml#_NIuY8CynEeGMXrZ0DiQwGg"/>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_kxsE8CzAEeGMXrZ0DiQwGg">
@@ -1273,7 +1272,6 @@
     <base_Property href=".controlled/consol-documents.uml#_IMjo0CzGEeGMXrZ0DiQwGg"/>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_M4RKACzGEeGMXrZ0DiQwGg" severity="INFO">
-    <ruleId>CONF:9951</ruleId>
     <base_Property href=".controlled/consol-documents.uml#_IMkP4CzGEeGMXrZ0DiQwGg"/>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_PjUbACzGEeGMXrZ0DiQwGg">

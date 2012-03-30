@@ -621,10 +621,10 @@ The Assessment and Plan section represents both the clinician's conclusions and 
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_O7wpcBq3EeGo461UQq-B1g" severity="WARNING" base_Property="_2MmWNRUSEeG6PvUxSTZnaw">
     <ruleId>CONF:7489</ruleId>
-    <ruleId>CONF:7991</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_U4xacBq3EeGo461UQq-B1g" base_Property="_2MmWNRUSEeG6PvUxSTZnaw">
+  <CDA:ValueSetConstraint xmi:id="_U4xacBq3EeGo461UQq-B1g" base_Property="_2MmWNRUSEeG6PvUxSTZnaw" severity="WARNING">
     <reference href="../consol-vocab.uml#_2SVSkRSVEeGGzu7fmW9pXw"/>
+    <ruleId>CONF:7991</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_hBSO8Bq4EeGo461UQq-B1g" base_Property="_2G8h-hSVEeGGzu7fmW9pXw">
     <reference href="../consol-vocab.uml#_DhjiABueEeGnMahsPjlwOw"/>

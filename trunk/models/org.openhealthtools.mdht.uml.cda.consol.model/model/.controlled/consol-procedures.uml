@@ -627,9 +627,7 @@ This clinical statement represents procedures whose immediate and primary outcom
     <reference href="../consol-vocab.uml#_-hMgMRrREeGxIZCGAXKxsQ"/>
     <ruleId>CONF:7661</ruleId>
   </CDA:ValueSetConstraint>
-  <CDA:PropertyValidation xmi:id="_u73CsBrUEeGxIZCGAXKxsQ" severity="INFO" base_Property="_ozsKlBrUEeGxIZCGAXKxsQ">
-    <ruleId>CONF:7668</ruleId>
-  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_u73CsBrUEeGxIZCGAXKxsQ" severity="INFO" base_Property="_ozsKlBrUEeGxIZCGAXKxsQ"/>
   <CDA:PropertyValidation xmi:id="_EHrjYBrZEeGrncRpaMCqdA" severity="INFO" base_Property="_ozsKkBrUEeGxIZCGAXKxsQ">
     <ruleId>CONF:7670</ruleId>
   </CDA:PropertyValidation>
@@ -638,6 +636,7 @@ This clinical statement represents procedures whose immediate and primary outcom
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_LFtFcBrZEeGrncRpaMCqdA" base_Property="_ozsKmBrUEeGxIZCGAXKxsQ">
     <reference href="../consol-vocab.uml#_2H3vABSVEeGGzu7fmW9pXw"/>
+    <ruleId>CONF:10122</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:EntryRelationship xmi:id="_nZdHkBrcEeGrncRpaMCqdA" severity="INFO" base_Association="_2OZN0xSVEeGGzu7fmW9pXw" typeCode="SUBJ">
     <ruleId>CONF:7778</ruleId>
@@ -699,9 +698,7 @@ This clinical statement represents procedures whose immediate and primary outcom
   <CDA:PropertyValidation xmi:id="_MR3AUBxqEeGXP8PxDYviDg" severity="WARNING" base_Property="_LJu6oBxqEeGXP8PxDYviDg">
     <ruleId>CONF:8299</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_mIS9YBxrEeGXP8PxDYviDg" severity="INFO" base_Property="_hPwGlhg4EeGs5a462vYX5Q">
-    <ruleId>CONF:8300</ruleId>
-  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_mIS9YBxrEeGXP8PxDYviDg" severity="INFO" base_Property="_hPwGlhg4EeGs5a462vYX5Q"/>
   <CDA:ConstraintValidation xmi:id="_D6CH0BxsEeGXP8PxDYviDg" base_Constraint="_ATZYUBxsEeGXP8PxDYviDg">
     <ruleId>CONF:8316</ruleId>
   </CDA:ConstraintValidation>
@@ -755,12 +752,13 @@ This clinical statement represents procedures whose immediate and primary outcom
   <CDA:ConstraintValidation xmi:id="_KqoVEBxwEeGXP8PxDYviDg" base_Constraint="_I_JDoBxwEeGXP8PxDYviDg">
     <ruleId>CONF:8249</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:PropertyValidation xmi:id="_Vu0bQBxwEeGXP8PxDYviDg" severity="INFO" base_Property="_NMUNgBg4EeGs5a462vYX5Q">
-    <ruleId>CONF:8247</ruleId>
+  <CDA:PropertyValidation xmi:id="_Vu0bQBxwEeGXP8PxDYviDg" severity="INFO" base_Property="_NMUNgBg4EeGs5a462vYX5Q"/>
+  <CDA:PropertyValidation xmi:id="_Y8DzUBxwEeGXP8PxDYviDg" severity="WARNING" base_Property="_NMUNiBg4EeGs5a462vYX5Q">
+    <ruleId>CONF:8250</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_Y8DzUBxwEeGXP8PxDYviDg" severity="WARNING" base_Property="_NMUNiBg4EeGs5a462vYX5Q"/>
   <CDA:ValueSetConstraint xmi:id="_ZtFAkBxwEeGXP8PxDYviDg" base_Property="_NMUNiBg4EeGs5a462vYX5Q">
     <reference href="../consol-vocab.uml#_2H3vABSVEeGGzu7fmW9pXw"/>
+    <ruleId>CONF:10121</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ConstraintValidation xmi:id="_s0jAsBxwEeGXP8PxDYviDg" base_Constraint="_oJm7kBxwEeGXP8PxDYviDg">
     <ruleId>CONF:8266</ruleId>
@@ -1864,11 +1862,14 @@ This clinical statement represents procedures whose immediate and primary outcom
   </CDA:ConstraintValidation>
   <CDA:ValueSetConstraint xmi:id="_je4HoG1KEeGCevFpokwODw" base_Property="_hPwGlhg4EeGs5a462vYX5Q">
     <reference href="../consol-vocab.uml#_I5UjIG07EeGCevFpokwODw"/>
+    <ruleId>CONF:8300</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_lYCBoG1KEeGCevFpokwODw" base_Property="_NMUNgBg4EeGs5a462vYX5Q">
     <reference href="../consol-vocab.uml#_I5UjIG07EeGCevFpokwODw"/>
+    <ruleId>CONF:8247</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_m6mnoG1KEeGCevFpokwODw" base_Property="_ozsKlBrUEeGxIZCGAXKxsQ">
     <reference href="../consol-vocab.uml#_I5UjIG07EeGCevFpokwODw"/>
+    <ruleId>CONF:7668</ruleId>
   </CDA:ValueSetConstraint>
 </xmi:XMI>
