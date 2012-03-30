@@ -10,18 +10,13 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
-
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.EncounterActivities;
 import org.openhealthtools.mdht.uml.cda.consol.Indication;
 import org.openhealthtools.mdht.uml.cda.consol.ServiceDeliveryLocation;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.EncounterActivitiesOperations;
-
 import org.openhealthtools.mdht.uml.cda.impl.EncounterImpl;
-
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**

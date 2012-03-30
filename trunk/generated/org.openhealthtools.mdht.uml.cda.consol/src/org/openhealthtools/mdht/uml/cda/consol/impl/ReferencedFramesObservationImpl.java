@@ -9,17 +9,12 @@ package org.openhealthtools.mdht.uml.cda.consol.impl;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
-
 import org.openhealthtools.mdht.uml.cda.consol.BoundaryObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ReferencedFramesObservation;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.ReferencedFramesObservationOperations;
-
 import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
-
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**

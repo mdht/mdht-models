@@ -7,15 +7,13 @@
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.util.Map;
+
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
-
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.EncounterPerformer;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.EncounterPerformerOperations;
 import org.openhealthtools.mdht.uml.cda.impl.Performer2Impl;
-
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**

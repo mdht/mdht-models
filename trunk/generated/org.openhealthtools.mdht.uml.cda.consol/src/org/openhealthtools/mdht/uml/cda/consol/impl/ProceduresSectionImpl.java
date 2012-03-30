@@ -9,14 +9,10 @@ package org.openhealthtools.mdht.uml.cda.consol.impl;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
-
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ProceduresSection;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.ProceduresSectionOperations;
-
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -72,6 +68,15 @@ public class ProceduresSectionImpl extends ProceduresSectionEntriesOptionalImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateProceduresSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProceduresSectionOperations.validateProceduresSectionCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateProceduresSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProceduresSectionOperations.validateProceduresSectionText(this, diagnostics, context);
 	}
@@ -86,16 +91,6 @@ public class ProceduresSectionImpl extends ProceduresSectionEntriesOptionalImpl 
 			Map<Object, Object> context) {
 		return ProceduresSectionOperations.validateProceduresSectionEntriesOptionalTemplateId(
 			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateProceduresSectionEntriesOptionalCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProceduresSectionOperations.validateProceduresSectionEntriesOptionalCode(this, diagnostics, context);
 	}
 
 	/**

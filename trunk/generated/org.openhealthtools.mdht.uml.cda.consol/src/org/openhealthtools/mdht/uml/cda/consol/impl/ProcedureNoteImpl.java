@@ -9,9 +9,7 @@ package org.openhealthtools.mdht.uml.cda.consol.impl;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
-
 import org.openhealthtools.mdht.uml.cda.consol.AllergiesSectionEntriesOptional;
 import org.openhealthtools.mdht.uml.cda.consol.AnesthesiaSection;
 import org.openhealthtools.mdht.uml.cda.consol.AssessmentAndPlanSection;
@@ -37,14 +35,12 @@ import org.openhealthtools.mdht.uml.cda.consol.ProcedureFindingsSection;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureImplantsSection;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureIndicationsSection;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureNote;
-
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureSpecimensTakenSection;
 import org.openhealthtools.mdht.uml.cda.consol.ProceduresSectionEntriesOptional;
 import org.openhealthtools.mdht.uml.cda.consol.ReasonForVisitSection;
 import org.openhealthtools.mdht.uml.cda.consol.ReviewOfSystemsSection;
 import org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ProcedureNoteOperations;
-
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -116,6 +112,15 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	 */
 	public boolean validateProcedureNoteTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureNoteCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureNoteOperations.validateProcedureNoteCode(this, diagnostics, context);
 	}
 
 	/**
@@ -772,16 +777,6 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	 */
 	public SocialHistorySection getSocialHistorySection() {
 		return ProcedureNoteOperations.getSocialHistorySection(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateGeneralHeaderConstraintsCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureNoteOperations.validateGeneralHeaderConstraintsCode(this, diagnostics, context);
 	}
 
 	/**

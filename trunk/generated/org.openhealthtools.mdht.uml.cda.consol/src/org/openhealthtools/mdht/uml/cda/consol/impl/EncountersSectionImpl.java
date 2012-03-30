@@ -11,13 +11,10 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
-
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.EncounterActivities;
 import org.openhealthtools.mdht.uml.cda.consol.EncountersSection;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.EncountersSectionOperations;
-
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -47,6 +44,15 @@ public class EncountersSectionImpl extends EncountersSectionEntriesOptionalImpl 
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.ENCOUNTERS_SECTION;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEncountersSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EncountersSectionOperations.validateEncountersSectionCode(this, diagnostics, context);
 	}
 
 	/**
@@ -95,16 +101,6 @@ public class EncountersSectionImpl extends EncountersSectionEntriesOptionalImpl 
 			Map<Object, Object> context) {
 		return EncountersSectionOperations.validateEncountersSectionEntriesOptionalTemplateId(
 			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateEncountersSectionEntriesOptionalCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EncountersSectionOperations.validateEncountersSectionEntriesOptionalCode(this, diagnostics, context);
 	}
 
 	/**

@@ -9,16 +9,11 @@ package org.openhealthtools.mdht.uml.cda.consol.impl;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
-
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureSpecimen;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.ProcedureSpecimenOperations;
-
 import org.openhealthtools.mdht.uml.cda.impl.SpecimenImpl;
-
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**

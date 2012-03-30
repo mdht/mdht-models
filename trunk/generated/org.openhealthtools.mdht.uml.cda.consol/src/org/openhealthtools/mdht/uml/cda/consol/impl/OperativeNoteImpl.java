@@ -9,9 +9,7 @@ package org.openhealthtools.mdht.uml.cda.consol.impl;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
-
 import org.openhealthtools.mdht.uml.cda.consol.AnesthesiaSection;
 import org.openhealthtools.mdht.uml.cda.consol.ComplicationsSection;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
@@ -30,9 +28,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ProcedureImplantsSection;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureIndicationsSection;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureSpecimensTakenSection;
 import org.openhealthtools.mdht.uml.cda.consol.SurgicalDrainsSection;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.OperativeNoteOperations;
-
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -71,6 +67,15 @@ public class OperativeNoteImpl extends GeneralHeaderConstraintsImpl implements O
 	 */
 	public boolean validateOperativeNoteTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return OperativeNoteOperations.validateOperativeNoteTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOperativeNoteCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return OperativeNoteOperations.validateOperativeNoteCode(this, diagnostics, context);
 	}
 
 	/**
@@ -489,16 +494,6 @@ public class OperativeNoteImpl extends GeneralHeaderConstraintsImpl implements O
 	 */
 	public SurgicalDrainsSection getSurgicalDrainsSection() {
 		return OperativeNoteOperations.getSurgicalDrainsSection(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateGeneralHeaderConstraintsCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return OperativeNoteOperations.validateGeneralHeaderConstraintsCode(this, diagnostics, context);
 	}
 
 	/**

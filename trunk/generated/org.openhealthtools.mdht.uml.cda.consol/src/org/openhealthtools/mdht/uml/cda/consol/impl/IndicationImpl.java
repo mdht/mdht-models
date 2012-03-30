@@ -9,16 +9,11 @@ package org.openhealthtools.mdht.uml.cda.consol.impl;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
-
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.Indication;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.IndicationOperations;
-
 import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
-
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -129,6 +124,15 @@ public class IndicationImpl extends ObservationImpl implements Indication {
 	 */
 	public boolean validateIndicationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return IndicationOperations.validateIndicationValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateIndicationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return IndicationOperations.validateIndicationValueP(this, diagnostics, context);
 	}
 
 	/**

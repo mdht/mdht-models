@@ -9,9 +9,7 @@ package org.openhealthtools.mdht.uml.cda.consol.impl;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
-
 import org.openhealthtools.mdht.uml.cda.consol.AllergiesSectionEntriesOptional;
 import org.openhealthtools.mdht.uml.cda.consol.AssessmentAndPlanSection;
 import org.openhealthtools.mdht.uml.cda.consol.AssessmentSection;
@@ -34,9 +32,7 @@ import org.openhealthtools.mdht.uml.cda.consol.ResultsSectionEntriesOptional;
 import org.openhealthtools.mdht.uml.cda.consol.ReviewOfSystemsSection;
 import org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection;
 import org.openhealthtools.mdht.uml.cda.consol.VitalSignsSectionEntriesOptional;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.HistoryAndPhysicalNoteOperations;
-
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -119,6 +115,15 @@ public class HistoryAndPhysicalNoteImpl extends GeneralHeaderConstraintsImpl imp
 	 */
 	public boolean validateHistoryAndPhysicalNoteTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateHistoryAndPhysicalNoteCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteCode(this, diagnostics, context);
 	}
 
 	/**
@@ -649,16 +654,6 @@ public class HistoryAndPhysicalNoteImpl extends GeneralHeaderConstraintsImpl imp
 	 */
 	public VitalSignsSectionEntriesOptional getVitalSignsSectionEntriesOptional() {
 		return HistoryAndPhysicalNoteOperations.getVitalSignsSectionEntriesOptional(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateGeneralHeaderConstraintsCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HistoryAndPhysicalNoteOperations.validateGeneralHeaderConstraintsCode(this, diagnostics, context);
 	}
 
 	/**
