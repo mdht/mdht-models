@@ -198,6 +198,16 @@ public class ImmunizationActivityImpl extends SubstanceAdministrationImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateImmunizationActivityApproachSiteCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ImmunizationActivityOperations.validateImmunizationActivityApproachSiteCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateImmunizationActivityDoseQuantity(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ImmunizationActivityOperations.validateImmunizationActivityDoseQuantity(this, diagnostics, context);
 	}
