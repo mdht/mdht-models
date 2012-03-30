@@ -133,11 +133,9 @@ historical purposes.&#xD;
   <CDA:PropertyValidation xmi:id="_2H_DwBSVEeGGzu7fmW9pXw" base_Property="_2H-csxSVEeGGzu7fmW9pXw">
     <ruleId>CONF:9026</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_2H_q1BSVEeGGzu7fmW9pXw" base_Property="_2H_q0BSVEeGGzu7fmW9pXw">
-    <ruleId>CONF:9029</ruleId>
-  </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_2IAR4BSVEeGGzu7fmW9pXw" base_Property="_2H_q0BSVEeGGzu7fmW9pXw">
     <reference href="../consol-vocab.uml#_2GDxJhSVEeGGzu7fmW9pXw"/>
+    <ruleId>CONF:9029</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_2IBgBBSVEeGGzu7fmW9pXw" base_Property="_2IBgABSVEeGGzu7fmW9pXw">
     <ruleId>CONF:9030</ruleId>
@@ -540,11 +538,9 @@ historical purposes.&#xD;
   <CDA:TextValue xmi:id="_E7YDACAwEeGetMjKLkqR8g" severity="WARNING" base_Property="_zGbQJCAuEeGetMjKLkqR8g">
     <ruleId>CONF:9185</ruleId>
   </CDA:TextValue>
-  <CDA:PropertyValidation xmi:id="_ObcEACAwEeGetMjKLkqR8g" base_Property="_zGbQICAuEeGetMjKLkqR8g">
-    <ruleId>CONF:9049</ruleId>
-  </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_SsEywCAwEeGetMjKLkqR8g" code="completed" displayName="Completed" base_Property="_zGbQICAuEeGetMjKLkqR8g">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:9049</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:ValueSetConstraint xmi:id="_JUSukCAxEeGetMjKLkqR8g" base_Property="_zGb3MSAuEeGetMjKLkqR8g">
     <reference href="../consol-vocab.uml#_2SVSkRSVEeGGzu7fmW9pXw"/>
@@ -576,11 +572,9 @@ historical purposes.&#xD;
   <CDA:TextValue xmi:id="_22h8UCA8EeG9GZYpu7WBOQ" severity="WARNING" base_Property="_g9ArUCA8EeG9GZYpu7WBOQ">
     <ruleId>CONF:7362</ruleId>
   </CDA:TextValue>
-  <CDA:PropertyValidation xmi:id="_86axYCA8EeG9GZYpu7WBOQ" base_Property="_g9B5cCA8EeG9GZYpu7WBOQ">
-    <ruleId>CONF:7365</ruleId>
-  </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_AiK7MCA9EeG9GZYpu7WBOQ" base_Property="_g9B5cCA8EeG9GZYpu7WBOQ">
     <reference href="../consol-vocab.uml#_2FctIBSVEeGGzu7fmW9pXw"/>
+    <ruleId>CONF:7365</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ConstraintValidation xmi:id="_0SNWsCBCEeG938evaWkvcA" base_Constraint="_sPoAUCBCEeG938evaWkvcA">
     <ruleId>CONF:7618</ruleId>

@@ -114,11 +114,9 @@ DICOM Object Catalog sections are not intended for viewing and contain empty sec
   <CDA:ConstraintValidation xmi:id="_BXdh0EVHEeGAh_iQGJvI5w" base_Constraint="_OdeLQEVGEeGAh_iQGJvI5w">
     <ruleId>CONF:8429</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:PropertyValidation xmi:id="_fW-FwEb4EeGp67IkyTw1fg" base_Property="_eLH9sEb4EeGp67IkyTw1fg">
-    <ruleId>CONF:8526</ruleId>
-  </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_fdFU0Eb4EeGp67IkyTw1fg" code="121181" displayName="Dicom Object Catalog" base_Property="_eLH9sEb4EeGp67IkyTw1fg">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_Q7taAGdNEeGkeaezs0FtvA"/>
+    <ruleId>CONF:8526</ruleId>
   </CDA:CodeSystemConstraint>
   <uml:Class xmi:id="_pmiz8Eb_EeGp67IkyTw1fg" name="CodeObservations">
     <ownedComment xmi:id="_uqo_8Eb_EeGp67IkyTw1fg">
@@ -562,11 +560,9 @@ DICOM Object Catalog sections are not intended for viewing and contain empty sec
   <CDA:PropertyValidation xmi:id="_LbdkIEb5EeGp67IkyTw1fg" base_Property="_FEXfMEb5EeGp67IkyTw1fg">
     <ruleId>CONF:9210</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_Ly2wcEb5EeGp67IkyTw1fg" base_Property="_I445sEb5EeGp67IkyTw1fg">
-    <ruleId>CONF:9214</ruleId>
-  </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_oaNLYEb5EeGp67IkyTw1fg" code="113014" base_Property="_I445sEb5EeGp67IkyTw1fg">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_Q7taAGdNEeGkeaezs0FtvA"/>
+    <ruleId>CONF:9214</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_M7ksAEb5EeGp67IkyTw1fg" severity="WARNING" base_Property="_I445sUb5EeGp67IkyTw1fg">
     <ruleId>CONF:9216</ruleId>
@@ -779,11 +775,9 @@ In both cases, inFulfillmentOf/order/id is mapped to the DICOM Accession Number 
   <CDA:ConstraintValidation xmi:id="_I9R24ErdEeGJpZWiuxRVIw" base_Constraint="_Be9EIErdEeGJpZWiuxRVIw">
     <ruleId>CONF:9211</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:PropertyValidation xmi:id="_Aew9AEreEeGJpZWiuxRVIw" base_Property="_6tqhEErdEeGJpZWiuxRVIw">
-    <ruleId>CONF:9228</ruleId>
-  </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_CdkzEEreEeGJpZWiuxRVIw" code="113015" base_Property="_6tqhEErdEeGJpZWiuxRVIw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_Q7taAGdNEeGkeaezs0FtvA"/>
+    <ruleId>CONF:9228</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:TextValue xmi:id="_N8DBgEreEeGJpZWiuxRVIw" severity="INFO" base_Property="_6tzrBkrdEeGJpZWiuxRVIw">
     <ruleId>CONF:9233</ruleId>
@@ -825,20 +819,15 @@ In both cases, inFulfillmentOf/order/id is mapped to the DICOM Accession Number 
   <CDA:PropertyValidation xmi:id="_LDGhoEriEeGJpZWiuxRVIw" base_Property="_Hv8u0EriEeGJpZWiuxRVIw">
     <ruleId>CONF:9276</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_L6O98EriEeGJpZWiuxRVIw" base_Property="_Hv8u0UriEeGJpZWiuxRVIw">
-    <ruleId>CONF:9278</ruleId>
-  </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_MQb3cEriEeGJpZWiuxRVIw" base_Property="_Hv8u0kriEeGJpZWiuxRVIw">
     <ruleId>CONF:9277</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_TyyOkEriEeGJpZWiuxRVIw" code="121190" displayName="Referenced Frames" base_Property="_Hv8u0UriEeGJpZWiuxRVIw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_Q7taAGdNEeGkeaezs0FtvA"/>
+    <ruleId>CONF:9278</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_470WsEriEeGJpZWiuxRVIw" base_Property="_21tl0EriEeGJpZWiuxRVIw">
     <ruleId>CONF:9282</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_5VmvsEriEeGJpZWiuxRVIw" base_Property="_21tl0UriEeGJpZWiuxRVIw">
-    <ruleId>CONF:9284</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_5rgHMEriEeGJpZWiuxRVIw" base_Property="_21tl0kriEeGJpZWiuxRVIw">
     <ruleId>CONF:9283</ruleId>
@@ -849,6 +838,7 @@ In both cases, inFulfillmentOf/order/id is mapped to the DICOM Accession Number 
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_--Dl8EriEeGJpZWiuxRVIw" code="113036" displayName="Frames for Display" base_Property="_21tl0UriEeGJpZWiuxRVIw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_Q7taAGdNEeGkeaezs0FtvA"/>
+    <ruleId>CONF:9284</ruleId>
   </CDA:CodeSystemConstraint>
   <uml:Association xmi:id="_1B44wkrXEeGJpZWiuxRVIw" memberEnd="_1B44wErXEeGJpZWiuxRVIw _1B44w0rXEeGJpZWiuxRVIw">
     <ownedEnd xmi:id="_1B44w0rXEeGJpZWiuxRVIw" type="_H1UdcEVEEeGAh_iQGJvI5w" association="_1B44wkrXEeGJpZWiuxRVIw"/>

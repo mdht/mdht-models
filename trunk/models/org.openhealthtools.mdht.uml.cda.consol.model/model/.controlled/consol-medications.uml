@@ -818,9 +818,6 @@ The UDI should be sent in the participantRole/id.</body>
   <CDA:PropertyValidation xmi:id="_cMxhsBUTEeG6PvUxSTZnaw" base_Property="_ZXk2MBUTEeG6PvUxSTZnaw">
     <ruleId>CONF:7490</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_d2t7ABUTEeG6PvUxSTZnaw" base_Property="_ZXk2NRUTEeG6PvUxSTZnaw">
-    <ruleId>CONF:7491</ruleId>
-  </CDA:PropertyValidation>
   <uml:Class xmi:id="_2Poj5BSVEeGGzu7fmW9pXw" name="HospitalAdmissionMedicationsSectionEntriesOptional">
     <ownedComment xmi:id="_2Poj6xSVEeGGzu7fmW9pXw" annotatedElement="_2Poj5BSVEeGGzu7fmW9pXw">
       <body>The Hospital Admission Medications section defines the relevant medications administered prior to admission to the facility. The currently active medications must be listed.</body>
@@ -858,6 +855,7 @@ The UDI should be sent in the participantRole/id.</body>
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_3jQucBq1EeGo461UQq-B1g" code="412307009" base_Property="_ZXk2NRUTEeG6PvUxSTZnaw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:7491</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:ConstraintValidation xmi:id="_HhcpcBq2EeGo461UQq-B1g" base_Constraint="_G1AaMBq2EeGo461UQq-B1g">
     <ruleId>CONF:7493</ruleId>
@@ -1051,11 +1049,9 @@ The UDI should be sent in the participantRole/id.</body>
   <CDA:PropertyValidation xmi:id="_RpJawB-vEeGKirKJsFylGA" base_Property="_2GkHcBSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7496</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_ToGawB-vEeGKirKJsFylGA" base_Property="_2GkugRSVEeGGzu7fmW9pXw">
-    <ruleId>CONF:7497</ruleId>
-  </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_jT_r4B-vEeGKirKJsFylGA" base_Property="_2GkugRSVEeGGzu7fmW9pXw">
     <reference href="../consol-vocab.uml#_S8sGQBrNEeGxIZCGAXKxsQ"/>
+    <ruleId>CONF:7497</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:TextValue xmi:id="_zcy7cB-vEeGKirKJsFylGA" severity="WARNING" base_Property="_yhVYwB-vEeGKirKJsFylGA">
     <ruleId>CONF:7501</ruleId>
@@ -1150,11 +1146,9 @@ The UDI should be sent in the participantRole/id.</body>
   <CDA:PropertyValidation xmi:id="_sCeZIDiAEeGSytqLITd2FA" base_Property="_2HSgMRSVEeGGzu7fmW9pXw">
     <ruleId>CONF:8745</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_xYy9kDiAEeGSytqLITd2FA" base_Property="_2HTHQBSVEeGGzu7fmW9pXw">
-    <ruleId>CONF:8746</ruleId>
-  </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_3ny2cDiAEeGSytqLITd2FA" base_Property="_2HTHQBSVEeGGzu7fmW9pXw">
     <reference href="../consol-vocab.uml#_S8sGQBrNEeGxIZCGAXKxsQ"/>
+    <ruleId>CONF:8746</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_61IfsDiBEeGSytqLITd2FA" severity="WARNING" base_Property="_5f05oDiBEeGSytqLITd2FA">
     <ruleId>CONF:8750</ruleId>

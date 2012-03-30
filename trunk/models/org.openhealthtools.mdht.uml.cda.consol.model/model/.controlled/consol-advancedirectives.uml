@@ -237,11 +237,9 @@
   <CDA:PropertyValidation xmi:id="_2KtnphSVEeGGzu7fmW9pXw" base_Property="_2KtnoxSVEeGGzu7fmW9pXw">
     <ruleId>CONF:8654</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_2Klr0BSVEeGGzu7fmW9pXw" base_Property="_2KlE3hSVEeGGzu7fmW9pXw">
-    <ruleId>CONF:8651</ruleId>
-  </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_2KmS4BSVEeGGzu7fmW9pXw" base_Property="_2KlE3hSVEeGGzu7fmW9pXw">
     <reference href="../consol-vocab.uml#_2LHQRxSVEeGGzu7fmW9pXw"/>
+    <ruleId>CONF:8651</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:CodeSystemConstraint xmi:id="_2KuOsRSVEeGGzu7fmW9pXw" code="completed" base_Property="_2KuOsBSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
@@ -325,11 +323,9 @@ NOTE: The descriptions in this section differentiate between &quot;advance direc
     <ruleId>CONF:7928</ruleId>
     <ruleId>CONF:10376</ruleId>
   </CDA:CDATemplate>
-  <CDA:PropertyValidation xmi:id="_B2Si4CscEeGQ5rkpDKAt8A" base_Property="_1RZdJxVdEeGQCvUGzi1kDQ">
-    <ruleId>CONF:7929</ruleId>
-  </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_DLW4YCscEeGQ5rkpDKAt8A" code="42348-3" displayName="Advance Directives" base_Property="_1RZdJxVdEeGQCvUGzi1kDQ">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:7929</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:TextValue xmi:id="_SzayYCscEeGQ5rkpDKAt8A" base_Property="_1RZdKBVdEeGQCvUGzi1kDQ">
     <ruleId>CONF:7930</ruleId>
@@ -349,9 +345,6 @@ NOTE: The descriptions in this section differentiate between &quot;advance direc
   <uml:Association xmi:id="_GTulQCshEeGQ5rkpDKAt8A" memberEnd="_GTt-MCshEeGQ5rkpDKAt8A _GTulQSshEeGQ5rkpDKAt8A">
     <ownedEnd xmi:id="_GTulQSshEeGQ5rkpDKAt8A" type="_2KlEwBSVEeGGzu7fmW9pXw" association="_GTulQCshEeGQ5rkpDKAt8A"/>
   </uml:Association>
-  <CDA:PropertyValidation xmi:id="_-ENZcHhsEeGJtvg2iiStYg" base_Property="_PfjRECsgEeGQ5rkpDKAt8A">
-    <ruleId>CONF:8694</ruleId>
-  </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_Ed9w0HhtEeGJtvg2iiStYg" severity="INFO" base_Property="_WJKpYCsgEeGQ5rkpDKAt8A">
     <ruleId>CONF:8696</ruleId>
   </CDA:PropertyValidation>

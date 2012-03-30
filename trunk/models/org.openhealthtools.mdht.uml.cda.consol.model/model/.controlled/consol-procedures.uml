@@ -573,9 +573,6 @@ This clinical statement represents procedures whose immediate and primary outcom
   <CDA:PropertyValidation xmi:id="_2ONAgRSVEeGGzu7fmW9pXw" base_Property="_2OG5_hSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7652</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_2OTHJRSVEeGGzu7fmW9pXw" base_Property="_2OTHIxSVEeGGzu7fmW9pXw">
-    <ruleId>CONF:7653</ruleId>
-  </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_2OTHKRSVEeGGzu7fmW9pXw" base_Property="_2OTHJhSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7655</ruleId>
   </CDA:PropertyValidation>
@@ -583,9 +580,6 @@ This clinical statement represents procedures whose immediate and primary outcom
     <ruleId>CONF:7656</ruleId>
   </CDA:PropertyValidation>
   <CDA:TextValue xmi:id="_2ONAghSVEeGGzu7fmW9pXw"/>
-  <CDA:PropertyValidation xmi:id="_2ONAgxSVEeGGzu7fmW9pXw" base_Property="_2OG6CBSVEeGGzu7fmW9pXw">
-    <ruleId>CONF:7661</ruleId>
-  </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_2OTHLxSVEeGGzu7fmW9pXw" severity="WARNING" base_Property="_2OTHLBSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7662</ruleId>
   </CDA:PropertyValidation>
@@ -609,11 +603,9 @@ This clinical statement represents procedures whose immediate and primary outcom
   <CDA:EntryRelationship xmi:id="_2OTHIhSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2OTHIBSVEeGGzu7fmW9pXw" typeCode="RSON">
     <ruleId>CONF:7781</ruleId>
   </CDA:EntryRelationship>
-  <CDA:PropertyValidation xmi:id="_jDk6ABq8EeGYcL3NfEQErA" base_Property="_s9Ig6hVdEeGQCvUGzi1kDQ">
-    <ruleId>CONF:6272</ruleId>
-  </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_pvbG8Bq8EeGYcL3NfEQErA" code="47519-4" displayName="History of procedures" base_Property="_s9Ig6hVdEeGQCvUGzi1kDQ">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:6272</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_9DL2oBq8EeGYcL3NfEQErA" base_Property="_s9Ig7BVdEeGQCvUGzi1kDQ">
     <ruleId>CONF:6273</ruleId>
@@ -633,6 +625,7 @@ This clinical statement represents procedures whose immediate and primary outcom
   </CDA:ConstraintValidation>
   <CDA:ValueSetConstraint xmi:id="_4Aw5EBrREeGxIZCGAXKxsQ" base_Property="_2OG6CBSVEeGGzu7fmW9pXw">
     <reference href="../consol-vocab.uml#_-hMgMRrREeGxIZCGAXKxsQ"/>
+    <ruleId>CONF:7661</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_u73CsBrUEeGxIZCGAXKxsQ" severity="INFO" base_Property="_ozsKlBrUEeGxIZCGAXKxsQ">
     <ruleId>CONF:7668</ruleId>
@@ -660,6 +653,7 @@ This clinical statement represents procedures whose immediate and primary outcom
   </uml:Association>
   <CDA:ValueSetConstraint xmi:id="_e6YP4BxEEeGIELeDlfT77A" base_Property="_2OTHIxSVEeGGzu7fmW9pXw">
     <reference href="../consol-vocab.uml#_S8sGQBrNEeGxIZCGAXKxsQ"/>
+    <ruleId>CONF:7653</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ConstraintValidation xmi:id="_wonhUBxGEeGIELeDlfT77A" base_Constraint="_tJGGcBxGEeGIELeDlfT77A">
     <ruleId>CONF:7890</ruleId>
@@ -676,11 +670,9 @@ This clinical statement represents procedures whose immediate and primary outcom
   <CDA:PropertyValidation xmi:id="__0M3sBxnEeGXP8PxDYviDg" base_Property="_hPmVkBg4EeGs5a462vYX5Q">
     <ruleId>CONF:8289</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_PViCIBxpEeGXP8PxDYviDg" base_Property="_hPwGlBg4EeGs5a462vYX5Q">
-    <ruleId>CONF:8290</ruleId>
-  </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_R8Hp4BxpEeGXP8PxDYviDg" base_Property="_hPwGlBg4EeGs5a462vYX5Q">
     <reference href="../consol-vocab.uml#_S8sGQBrNEeGxIZCGAXKxsQ"/>
+    <ruleId>CONF:8290</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_YBfFoBxpEeGXP8PxDYviDg" base_Property="_hPwGkBg4EeGs5a462vYX5Q">
     <ruleId>CONF:8292</ruleId>
@@ -725,11 +717,9 @@ This clinical statement represents procedures whose immediate and primary outcom
   <CDA:PropertyValidation xmi:id="_TWiAIBxuEeGXP8PxDYviDg" base_Property="_NL3hgBg4EeGs5a462vYX5Q">
     <ruleId>CONF:8282</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_YH-V4BxuEeGXP8PxDYviDg" base_Property="_NMUNfhg4EeGs5a462vYX5Q">
-    <ruleId>CONF:8237</ruleId>
-  </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_aAWMwBxuEeGXP8PxDYviDg" base_Property="_NMUNfhg4EeGs5a462vYX5Q">
     <reference href="../consol-vocab.uml#_S8sGQBrNEeGxIZCGAXKxsQ"/>
+    <ruleId>CONF:8237</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_tDr60BxuEeGXP8PxDYviDg" base_Property="_NMUNdhg4EeGs5a462vYX5Q">
     <ruleId>CONF:8239</ruleId>
@@ -749,11 +739,9 @@ This clinical statement represents procedures whose immediate and primary outcom
   <CDA:ConstraintValidation xmi:id="_mGqB0BxvEeGXP8PxDYviDg" base_Constraint="_jzsgsBxvEeGXP8PxDYviDg">
     <ruleId>CONF:8244</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:PropertyValidation xmi:id="_0DiMYBxvEeGXP8PxDYviDg" base_Property="_NMUNhBg4EeGs5a462vYX5Q">
-    <ruleId>CONF:8245</ruleId>
-  </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_1RgbYBxvEeGXP8PxDYviDg" base_Property="_NMUNhBg4EeGs5a462vYX5Q">
     <reference href="../consol-vocab.uml#_-hMgMRrREeGxIZCGAXKxsQ"/>
+    <ruleId>CONF:8245</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_8S1wIBxvEeGXP8PxDYviDg" base_Property="_NMUNjBg4EeGs5a462vYX5Q">
     <ruleId>CONF:8368</ruleId>
@@ -1567,9 +1555,6 @@ This clinical statement represents procedures whose immediate and primary outcom
     <ruleId>CONF:8086</ruleId>
     <ruleId>CONF:10446</ruleId>
   </CDA:CDATemplate>
-  <CDA:PropertyValidation xmi:id="_4oeoEDWmEeG32vxjh5_fjg" base_Property="_kPlcUDWmEeG32vxjh5_fjg">
-    <ruleId>CONF:8067</ruleId>
-  </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_4_k5cDWmEeG32vxjh5_fjg" base_Property="_kPlcUzWmEeG32vxjh5_fjg">
     <ruleId>CONF:8069</ruleId>
   </CDA:PropertyValidation>
@@ -1578,13 +1563,11 @@ This clinical statement represents procedures whose immediate and primary outcom
   </CDA:TextValue>
   <CDA:CodeSystemConstraint xmi:id="_8E32cDWmEeG32vxjh5_fjg" code="59774-0" base_Property="_kPlcUDWmEeG32vxjh5_fjg">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:8067</ruleId>
   </CDA:CodeSystemConstraint>
   <uml:Association xmi:id="_w85ccjWmEeG32vxjh5_fjg" memberEnd="_w85ccDWmEeG32vxjh5_fjg _w85cczWmEeG32vxjh5_fjg">
     <ownedEnd xmi:id="_w85cczWmEeG32vxjh5_fjg" type="_OA_Q0DVyEeGaW4kr-GbV8Q" association="_w85ccjWmEeG32vxjh5_fjg"/>
   </uml:Association>
-  <CDA:PropertyValidation xmi:id="_esIxcECUEeGELr7uj3LK_Q" base_Property="_d03LMECUEeGELr7uj3LK_Q">
-    <ruleId>CONF:8102</ruleId>
-  </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_fCMhAECUEeGELr7uj3LK_Q" base_Property="_d03LM0CUEeGELr7uj3LK_Q">
     <ruleId>CONF:8104</ruleId>
   </CDA:PropertyValidation>
@@ -1593,10 +1576,8 @@ This clinical statement represents procedures whose immediate and primary outcom
   </CDA:TextValue>
   <CDA:CodeSystemConstraint xmi:id="_lUhasECUEeGELr7uj3LK_Q" code="10218-6" displayName="Postoperative Diagnosis" base_Property="_d03LMECUEeGELr7uj3LK_Q">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:8102</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:PropertyValidation xmi:id="_G6BKoECVEeGELr7uj3LK_Q" base_Property="_A-MFYECVEeGELr7uj3LK_Q">
-    <ruleId>CONF:8063</ruleId>
-  </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_HRkH8ECVEeGELr7uj3LK_Q" base_Property="_A-MFY0CVEeGELr7uj3LK_Q">
     <ruleId>CONF:8065</ruleId>
   </CDA:PropertyValidation>
@@ -1605,12 +1586,11 @@ This clinical statement represents procedures whose immediate and primary outcom
   </CDA:TextValue>
   <CDA:CodeSystemConstraint xmi:id="_L6GZUECVEeGELr7uj3LK_Q" code="29554-3" displayName="Procedure Description" base_Property="_A-MFYECVEeGELr7uj3LK_Q">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:8063</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:PropertyValidation xmi:id="_e9TkgECVEeGELr7uj3LK_Q" base_Property="_bXiXsECVEeGELr7uj3LK_Q">
-    <ruleId>CONF:8071</ruleId>
-  </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_e_sKIECVEeGELr7uj3LK_Q" code="59775-7" displayName="Procedure Disposition" base_Property="_bXiXsECVEeGELr7uj3LK_Q">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:8071</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_jNaHwECVEeGELr7uj3LK_Q" base_Property="_bXiXs0CVEeGELr7uj3LK_Q">
     <ruleId>CONF:8073</ruleId>
@@ -1674,9 +1654,6 @@ This clinical statement represents procedures whose immediate and primary outcom
   <CDA:ConstraintValidation xmi:id="_ST3CYEEyEeGdmoWy_aLP0Q" base_Constraint="_Jw_CYEEyEeGdmoWy_aLP0Q">
     <ruleId>CONF:8741</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:PropertyValidation xmi:id="_axqVIEEyEeGdmoWy_aLP0Q" base_Property="_V8xCwEEyEeGdmoWy_aLP0Q">
-    <ruleId>CONF:8079</ruleId>
-  </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_bJXDcEEyEeGdmoWy_aLP0Q" base_Property="_V8xCw0EyEeGdmoWy_aLP0Q">
     <ruleId>CONF:8081</ruleId>
   </CDA:PropertyValidation>
@@ -1685,6 +1662,7 @@ This clinical statement represents procedures whose immediate and primary outcom
   </CDA:TextValue>
   <CDA:CodeSystemConstraint xmi:id="_dAkcsEEyEeGdmoWy_aLP0Q" code="59776-5" displayName="Procedure Findings" base_Property="_V8xCwEEyEeGdmoWy_aLP0Q">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:8079</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:ConformsTo xmi:id="_vBBKYEEyEeGdmoWy_aLP0Q" base_Generalization="_W4UBYTVzEeGaW4kr-GbV8Q"/>
   <CDA:CodeSystemConstraint xmi:id="_CRpGgEEzEeGdmoWy_aLP0Q" code="59771-6" displayName="Procedure Implants" base_Property="_1yMjQEEyEeGdmoWy_aLP0Q">
@@ -1697,9 +1675,6 @@ This clinical statement represents procedures whose immediate and primary outcom
   <CDA:TextValue xmi:id="_JPV4cEEzEeGdmoWy_aLP0Q" base_Property="_1yMjRkEyEeGdmoWy_aLP0Q">
     <ruleId>CONF:8180</ruleId>
   </CDA:TextValue>
-  <CDA:PropertyValidation xmi:id="_Z6aHkEEzEeGdmoWy_aLP0Q" base_Property="_Xia8gEEzEeGdmoWy_aLP0Q">
-    <ruleId>CONF:8059</ruleId>
-  </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_aTTIsEEzEeGdmoWy_aLP0Q" base_Property="_Xia8g0EzEeGdmoWy_aLP0Q">
     <ruleId>CONF:8061</ruleId>
   </CDA:PropertyValidation>
@@ -1708,6 +1683,7 @@ This clinical statement represents procedures whose immediate and primary outcom
   </CDA:TextValue>
   <CDA:CodeSystemConstraint xmi:id="_c7FDQEEzEeGdmoWy_aLP0Q" code="59768-2" displayName="Procedure Indications" base_Property="_Xia8gEEzEeGdmoWy_aLP0Q">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:8059</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_4frnwEEzEeGdmoWy_aLP0Q" code="59773-2" displayName="Procedure Specimens Taken" base_Property="_0OiisEEzEeGdmoWy_aLP0Q">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
@@ -1722,9 +1698,6 @@ This clinical statement represents procedures whose immediate and primary outcom
   <CDA:ConstraintValidation xmi:id="_OvobwEE0EeGdmoWy_aLP0Q" base_Constraint="_GvCCYEE0EeGdmoWy_aLP0Q">
     <ruleId>CONF:8742</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:PropertyValidation xmi:id="_xb6NkEE0EeGdmoWy_aLP0Q" base_Property="_rYLJgEE0EeGdmoWy_aLP0Q">
-    <ruleId>CONF:8039</ruleId>
-  </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_x499AEE0EeGdmoWy_aLP0Q" base_Property="_rYLJg0E0EeGdmoWy_aLP0Q">
     <ruleId>CONF:8041</ruleId>
   </CDA:PropertyValidation>
@@ -1733,6 +1706,7 @@ This clinical statement represents procedures whose immediate and primary outcom
   </CDA:TextValue>
   <CDA:CodeSystemConstraint xmi:id="_02NKMEE0EeGdmoWy_aLP0Q" code="11537-8" displayName="Surgical Drains" base_Property="_rYLJgEE0EeGdmoWy_aLP0Q">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:8039</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:ConstraintValidation xmi:id="_HPsqAEE1EeGdmoWy_aLP0Q" base_Constraint="__OWpwEE0EeGdmoWy_aLP0Q">
     <ruleId>CONF:8056</ruleId>
@@ -1768,11 +1742,9 @@ This clinical statement represents procedures whose immediate and primary outcom
   <CDA:PropertyValidation xmi:id="_3j-74EEwEeGdmoWy_aLP0Q" base_Property="_2Q1R8EEwEeGdmoWy_aLP0Q">
     <ruleId>CONF:10090</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_379-EEEwEeGdmoWy_aLP0Q" base_Property="_2Q1R8UEwEeGdmoWy_aLP0Q">
-    <ruleId>CONF:10092</ruleId>
-  </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_F-zmsEExEeGdmoWy_aLP0Q" code="10219-4" base_Property="_2Q1R8UEwEeGdmoWy_aLP0Q">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:10092</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_4SnjgEEwEeGdmoWy_aLP0Q" base_Property="_2Q1R8kEwEeGdmoWy_aLP0Q">
     <ruleId>CONF:10091</ruleId>
@@ -1816,11 +1788,9 @@ This clinical statement represents procedures whose immediate and primary outcom
   <CDA:PropertyValidation xmi:id="_4BTmgEEvEeGdmoWy_aLP0Q" base_Property="_2HQ7sEEvEeGdmoWy_aLP0Q">
     <ruleId>CONF:8756</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_40aecEEvEeGdmoWy_aLP0Q" base_Property="_2HQ7sUEvEeGdmoWy_aLP0Q">
-    <ruleId>CONF:8758</ruleId>
-  </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="__n-c8EEvEeGdmoWy_aLP0Q" code="59769-0" displayName="Postprocedure Diagnosis" base_Property="_2HQ7sUEvEeGdmoWy_aLP0Q">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:8758</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_4brOUEEvEeGdmoWy_aLP0Q" base_Property="_2HQ7skEvEeGdmoWy_aLP0Q">
     <ruleId>CONF:8757</ruleId>
@@ -1842,11 +1812,9 @@ This clinical statement represents procedures whose immediate and primary outcom
   <uml:Association xmi:id="_j8WtokEzEeGdmoWy_aLP0Q" memberEnd="_j8WtoEEzEeGdmoWy_aLP0Q _j8Wto0EzEeGdmoWy_aLP0Q">
     <ownedEnd xmi:id="_j8Wto0EzEeGdmoWy_aLP0Q" type="_cjmJMDVzEeGaW4kr-GbV8Q" association="_j8WtokEzEeGdmoWy_aLP0Q"/>
   </uml:Association>
-  <CDA:PropertyValidation xmi:id="_7eV1sVGkEeG3H6xvuD7Z0Q" base_Property="_7eV1sFGkEeG3H6xvuD7Z0Q">
-    <ruleId>CONF:7892</ruleId>
-  </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_7eV1slGkEeG3H6xvuD7Z0Q" code="47519-4" displayName="History of procedures" base_Property="_7eV1sFGkEeG3H6xvuD7Z0Q">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:7892</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_7eV1tlGkEeG3H6xvuD7Z0Q" base_Property="_7eV1s1GkEeG3H6xvuD7Z0Q">
     <ruleId>CONF:7894</ruleId>
@@ -1874,11 +1842,9 @@ This clinical statement represents procedures whose immediate and primary outcom
   <CDA:ConstraintValidation xmi:id="_d1NEAFmvEeGRqYkwoeymcA" base_Constraint="_ZcsLoFmvEeGRqYkwoeymcA">
     <ruleId>CONF:8052</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:PropertyValidation xmi:id="__rGdsFvvEeGxXeivz89y3A" base_Property="_5vgB8FvvEeGxXeivz89y3A">
-    <ruleId>CONF:8098</ruleId>
-  </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_hUkusFvwEeG0y_7i0ygc4g" code="10219-4" displayName="Preoperative Diagnosis" base_Property="_5vgB8FvvEeGxXeivz89y3A">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:8098</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_cDaQ4FwNEeG0y_7i0ygc4g" base_Property="_5vrBEFvvEeGxXeivz89y3A">
     <ruleId>CONF:8100</ruleId>

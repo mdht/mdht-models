@@ -1088,22 +1088,15 @@
     <ruleId>CONF:5580</ruleId>
     <base_Property href=".controlled/consol-documents.uml#_Zc4cwCyoEeGMXrZ0DiQwGg"/>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_T_SsgCzFEeGMXrZ0DiQwGg">
-    <ruleId>CONF:5583</ruleId>
-    <ruleId>CONF:5584</ruleId>
-    <base_Property href=".controlled/consol-documents.uml#_S_jt0CzFEeGMXrZ0DiQwGg"/>
-  </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_WS6U8CzFEeGMXrZ0DiQwGg" code="S">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_xwG2cGdIEeGkeaezs0FtvA"/>
     <base_Property href=".controlled/consol-documents.uml#_S_jt0CzFEeGMXrZ0DiQwGg"/>
+    <ruleId>CONF:5583</ruleId>
+    <ruleId>CONF:5584</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_mRLTACzGEeGMXrZ0DiQwGg">
     <ruleId>CONF:5608</ruleId>
     <base_Property href=".controlled/consol-documents.uml#_eA2-QCyoEeGMXrZ0DiQwGg"/>
-  </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_qWaDACzGEeGMXrZ0DiQwGg">
-    <ruleId>CONF:5610</ruleId>
-    <base_Property href=".controlled/consol-documents.uml#_pL6l0CzGEeGMXrZ0DiQwGg"/>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_iW7OgCzHEeGMXrZ0DiQwGg" severity="INFO">
     <ruleId>CONF:10004</ruleId>
@@ -1129,13 +1122,10 @@
     <ruleId>CONF:5283</ruleId>
     <base_Association href=".controlled/consol-documents.uml#_A7_O8CyqEeGMXrZ0DiQwGg"/>
   </CDA:AssociationValidation>
-  <CDA:PropertyValidation xmi:id="_L3ZzoCyqEeGMXrZ0DiQwGg">
-    <ruleId>CONF:6394</ruleId>
-    <base_Property href=".controlled/consol-documents.uml#_7OrqsCylEeGMXrZ0DiQwGg"/>
-  </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_ohHwoCyrEeGMXrZ0DiQwGg">
     <reference href="consol-vocab.uml#_LGTEUDVREeGIw7CntkyPQw"/>
     <base_Property href=".controlled/consol-documents.uml#_7OrqsCylEeGMXrZ0DiQwGg"/>
+    <ruleId>CONF:6394</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_iCncICyrEeGMXrZ0DiQwGg">
     <base_Property href=".controlled/consol-documents.uml#_7Os40CylEeGMXrZ0DiQwGg"/>
@@ -1143,15 +1133,9 @@
   <CDA:PropertyValidation xmi:id="_u46ZICyrEeGMXrZ0DiQwGg" severity="INFO">
     <base_Property href=".controlled/consol-documents.uml#_7Os41CylEeGMXrZ0DiQwGg"/>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_j72OoCyrEeGMXrZ0DiQwGg" severity="WARNING">
-    <base_Property href=".controlled/consol-documents.uml#_7Otf4SylEeGMXrZ0DiQwGg"/>
-  </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_J8keoCyqEeGMXrZ0DiQwGg">
     <ruleId>CONF:5284</ruleId>
     <base_Property href=".controlled/consol-documents.uml#_7OuG8SylEeGMXrZ0DiQwGg"/>
-  </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_qnPvoCyrEeGMXrZ0DiQwGg" severity="INFO">
-    <base_Property href=".controlled/consol-documents.uml#_7OvVECylEeGMXrZ0DiQwGg"/>
   </CDA:PropertyValidation>
   <CDA:AssociationValidation xmi:id="_6HJMICyrEeGMXrZ0DiQwGg" severity="INFO">
     <ruleId>CONF:5325</ruleId>
@@ -1202,13 +1186,10 @@
     <ruleId>CONF:5396</ruleId>
     <base_Association href=".controlled/consol-documents.uml#_5K0RUSysEeGMXrZ0DiQwGg"/>
   </CDA:AssociationValidation>
-  <CDA:PropertyValidation xmi:id="_QwRfsCytEeGMXrZ0DiQwGg">
-    <ruleId>CONF:5407</ruleId>
-    <base_Property href=".controlled/consol-documents.uml#_nLJOcCymEeGMXrZ0DiQwGg"/>
-  </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_S5cLoCytEeGMXrZ0DiQwGg">
     <reference href="consol-vocab.uml#_2SbZNRSVEeGGzu7fmW9pXw"/>
     <base_Property href=".controlled/consol-documents.uml#_nLJOcCymEeGMXrZ0DiQwGg"/>
+    <ruleId>CONF:5407</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_pkK3ICytEeGMXrZ0DiQwGg" severity="INFO">
     <ruleId>CONF:5414</ruleId>

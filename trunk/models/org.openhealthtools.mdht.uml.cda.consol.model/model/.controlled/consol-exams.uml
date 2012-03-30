@@ -28,11 +28,9 @@
   <CDA:CDATemplate xmi:id="_2Pxt8xSVEeGGzu7fmW9pXw" base_Class="_2Pxt6xSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.2.5" assigningAuthorityName="HL7">
     <ruleId>CONF:10457</ruleId>
   </CDA:CDATemplate>
-  <CDA:PropertyValidation xmi:id="_2Pxt9BSVEeGGzu7fmW9pXw" base_Property="_2Pxt7hSVEeGGzu7fmW9pXw">
-    <ruleId>CONF:7986</ruleId>
-  </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_2Pxt9RSVEeGGzu7fmW9pXw" code="10210-3" displayName="GENERAL STATUS" base_Property="_2Pxt7hSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:7986</ruleId>
   </CDA:CodeSystemConstraint>
   <uml:Class xmi:id="_2Pxt0hSVEeGGzu7fmW9pXw" name="PhysicalExamSection">
     <ownedComment xmi:id="_2RkdqBSVEeGGzu7fmW9pXw" annotatedElement="_2Pxt0hSVEeGGzu7fmW9pXw">

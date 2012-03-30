@@ -955,9 +955,6 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
   <CDA:PropertyValidation xmi:id="_2DNSERSVEeGGzu7fmW9pXw" base_Property="_2DNR6xSVEeGGzu7fmW9pXw">
     <ruleId>CONF:5256</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_2DTYERSVEeGGzu7fmW9pXw" base_Property="_2DNR8RSVEeGGzu7fmW9pXw">
-    <ruleId>CONF:5372</ruleId>
-  </CDA:PropertyValidation>
   <uml:Class xmi:id="_2UnxkRSVEeGGzu7fmW9pXw" name="DischargeSummary">
     <ownedRule xmi:id="_43rsEGjHEeGNoZ3kEkcY2A" name="doesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection" constrainedElement="_-Qa60D1jEeG3tde5scYNWA">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_43rsEWjHEeGNoZ3kEkcY2A">
@@ -1664,9 +1661,6 @@ For conformance with both specifications, please review the appendix on XDS-SD a
   </CDA:CDATemplate>
   <CDA:ConstraintValidation xmi:id="_2UVdyxSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_2UVdzhSVEeGGzu7fmW9pXw"/>
-  <CDA:PropertyValidation xmi:id="_RPh9oCykEeGMXrZ0DiQwGg" base_Property="_2DNR6RSVEeGGzu7fmW9pXw">
-    <ruleId>CONF:5259</ruleId>
-  </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_a6CUECykEeGMXrZ0DiQwGg" severity="INFO" base_Property="_ZxPgACykEeGMXrZ0DiQwGg">
     <ruleId>CONF:5261</ruleId>
   </CDA:PropertyValidation>
@@ -1709,9 +1703,11 @@ For conformance with both specifications, please review the appendix on XDS-SD a
   </uml:Association>
   <CDA:ValueSetConstraint xmi:id="_cfM7wDVPEeGIw7CntkyPQw" base_Property="_2DNR6RSVEeGGzu7fmW9pXw">
     <reference href="../consol-vocab.uml#_8K870TVPEeGIw7CntkyPQw"/>
+    <ruleId>CONF:5259</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_J18sMDVQEeGIw7CntkyPQw" base_Property="_2DNR8RSVEeGGzu7fmW9pXw">
     <reference href="../consol-vocab.uml#_2SbZNRSVEeGGzu7fmW9pXw"/>
+    <ruleId>CONF:5372</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ConstraintValidation xmi:id="_jCk3QDVREeGIw7CntkyPQw" base_Constraint="_dqXccDVREeGIw7CntkyPQw"/>
   <CDA:ConstraintValidation xmi:id="_nYyCgDVREeGIw7CntkyPQw" severity="WARNING" base_Constraint="_kIBcYDVREeGIw7CntkyPQw"/>
@@ -1749,6 +1745,7 @@ For conformance with both specifications, please review the appendix on XDS-SD a
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_Ox1BQDVZEeGIw7CntkyPQw" code="S" base_Property="_pL6l0CzGEeGMXrZ0DiQwGg">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_xwG2cGdIEeGkeaezs0FtvA"/>
+    <ruleId>CONF:5610</ruleId>
   </CDA:CodeSystemConstraint>
   <uml:Association xmi:id="__eO7YjVYEeGIw7CntkyPQw" memberEnd="__eO7YDVYEeGIw7CntkyPQw __eO7YzVYEeGIw7CntkyPQw">
     <ownedEnd xmi:id="__eO7YzVYEeGIw7CntkyPQw" type="_nlqjwDVYEeGIw7CntkyPQw" association="__eO7YjVYEeGIw7CntkyPQw"/>
@@ -2147,11 +2144,9 @@ The Consultation Note recommends use of a single document type code, 11488-4 &qu
     <ruleId>CONF:9477</ruleId>
     <ruleId>CONF:10039</ruleId>
   </CDA:ConformsTo>
-  <CDA:PropertyValidation xmi:id="_X-4tMzssEeGvzMYhXuqAEA" base_Property="_X-4tMDssEeGvzMYhXuqAEA">
-    <ruleId>CONF:5253</ruleId>
-  </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_GzN18DstEeGvzMYhXuqAEA" base_Property="_X-4tMDssEeGvzMYhXuqAEA">
     <reference href="../consol-vocab.uml#_Z8iQMTstEeGvzMYhXuqAEA"/>
+    <ruleId>CONF:5253</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_1sbh4DsxEeGvzMYhXuqAEA" base_Property="_yVHAwDsxEeGvzMYhXuqAEA">
     <ruleId>CONF:8389</ruleId>
@@ -2619,11 +2614,9 @@ A History and Physical Examination is required upon hospital admission as well a
   <CDA:ConformsTo xmi:id="_HCyIUD1kEeG3tde5scYNWA" base_Generalization="_-QelMD1jEeG3tde5scYNWA" requiresParentId="true">
     <ruleId>CONF:9968</ruleId>
   </CDA:ConformsTo>
-  <CDA:PropertyValidation xmi:id="_-2NIcD1jEeG3tde5scYNWA" base_Property="_-2L6UD1jEeG3tde5scYNWA">
-    <ruleId>CONF:5253</ruleId>
-  </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_bHudUD1kEeG3tde5scYNWA" base_Property="_-2L6UD1jEeG3tde5scYNWA">
     <reference href="../consol-vocab.uml#_MBvVoD1kEeG3tde5scYNWA"/>
+    <ruleId>CONF:5253</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_i1MC0D1lEeG3tde5scYNWA" base_Property="_hFaHQD1lEeG3tde5scYNWA">
     <ruleId>ii.</ruleId>
@@ -2907,11 +2900,9 @@ A History and Physical Examination is required upon hospital admission as well a
     <ruleId>CONF:9914</ruleId>
     <ruleId>CONF:10047</ruleId>
   </CDA:ConformsTo>
-  <CDA:PropertyValidation xmi:id="_3GQMYD4iEeGhnL_c4sBHGg" base_Property="_3GPlUD4iEeGhnL_c4sBHGg">
-    <ruleId>CONF:8484</ruleId>
-  </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_UWlS4D4jEeGhnL_c4sBHGg" base_Property="_3GPlUD4iEeGhnL_c4sBHGg">
     <reference href="../consol-vocab.uml#_IuPWwT4jEeGhnL_c4sBHGg"/>
+    <ruleId>CONF:8484</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_pg8iYD4kEeGhnL_c4sBHGg" base_Property="_hRyvoD4kEeGhnL_c4sBHGg">
     <ruleId>i.</ruleId>
@@ -3453,11 +3444,9 @@ A History and Physical Examination is required upon hospital admission as well a
     <ruleId>CONF:9969</ruleId>
     <ruleId>CONF:10049</ruleId>
   </CDA:ConformsTo>
-  <CDA:PropertyValidation xmi:id="_S9Np8z7YEeGvOdejHZ7dYg" base_Property="_S9Np8D7YEeGvOdejHZ7dYg">
-    <ruleId>CONF:5253</ruleId>
-  </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_kv8rwD7YEeGvOdejHZ7dYg" base_Property="_S9Np8D7YEeGvOdejHZ7dYg">
     <reference href="../consol-vocab.uml#_oDanoD7YEeGvOdejHZ7dYg"/>
+    <ruleId>CONF:5253</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_J87WID-REeGvOdejHZ7dYg" base_Property="_JYhokD-REeGvOdejHZ7dYg">
     <ruleId>CONF:8501</ruleId>
@@ -3841,11 +3830,9 @@ The Progress Note recommends use of a single document type code, 11506-3 &quot;S
   <CDA:ConformsTo xmi:id="_tO2mUD_LEeGXieeKs7NJjA" base_Generalization="_UCQbAD_LEeGXieeKs7NJjA" requiresParentId="true">
     <ruleId>CONF:9483</ruleId>
   </CDA:ConformsTo>
-  <CDA:PropertyValidation xmi:id="_X72iwz_LEeGXieeKs7NJjA" base_Property="_X72iwD_LEeGXieeKs7NJjA">
-    <ruleId>CONF:7589</ruleId>
-  </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_IyHHAD_MEeGXieeKs7NJjA" base_Property="_X72iwD_LEeGXieeKs7NJjA">
     <reference href="../consol-vocab.uml#_6yjb4T_LEeGXieeKs7NJjA"/>
+    <ruleId>CONF:7589</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_XosSAD_SEeGXieeKs7NJjA" base_Property="_uTQ3YD_QEeGXieeKs7NJjA">
     <ruleId>CONF:7598</ruleId>
@@ -3961,11 +3948,9 @@ The Progress Note recommends use of a single document type code, 11506-3 &quot;S
   <CDA:PropertyValidation xmi:id="_DLUMgEIPEeGfG6GbxF_VQQ" base_Property="_BSK5k0IPEeGfG6GbxF_VQQ">
     <ruleId>CONF:10027</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_EzoOIEIPEeGfG6GbxF_VQQ" severity="INFO" base_Property="_BSK5kEIPEeGfG6GbxF_VQQ">
-    <ruleId>CONF:8461</ruleId>
-  </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_LxxE8EIPEeGfG6GbxF_VQQ" base_Property="_BSK5kEIPEeGfG6GbxF_VQQ" severity="INFO">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_7Du1gHHeEeGeeZysMrDRUg"/>
+    <ruleId>CONF:8461</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:ConstraintValidation xmi:id="_jU3i4EIPEeGfG6GbxF_VQQ" severity="WARNING" base_Constraint="_f4CPoEIPEeGfG6GbxF_VQQ">
     <ruleId>CONF:10027</ruleId>
@@ -4348,11 +4333,9 @@ OIDs SHALL be no more than 64 characters in length..</body>
     <ruleId>CONF:9405</ruleId>
     <ruleId>CONF:10041</ruleId>
   </CDA:ConformsTo>
-  <CDA:PropertyValidation xmi:id="_Z-7JI0UuEeGdQ4KWAmnbhw" base_Property="_Z-7JIEUuEeGdQ4KWAmnbhw">
-    <ruleId>CONF:8408</ruleId>
-  </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_4p4lIEUvEeGdQ4KWAmnbhw" base_Property="_Z-7JIEUuEeGdQ4KWAmnbhw">
     <reference href="../consol-vocab.uml#_hJA70UUvEeGdQ4KWAmnbhw"/>
+    <ruleId>CONF:8408</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_Z_g_A0UuEeGdQ4KWAmnbhw" base_Property="_Z_g_AEUuEeGdQ4KWAmnbhw">
     <ruleId>CONF:5363</ruleId>
