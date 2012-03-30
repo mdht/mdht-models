@@ -129,8 +129,9 @@
   <CDA:PropertyValidation xmi:id="_2JPoABSVEeGGzu7fmW9pXw" severity="WARNING" base_Property="_2JOZ4hSVEeGGzu7fmW9pXw">
     <ruleId>CONF:8558</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_2JPoARSVEeGGzu7fmW9pXw" base_Property="_2JOZ4hSVEeGGzu7fmW9pXw">
+  <CDA:ValueSetConstraint xmi:id="_2JPoARSVEeGGzu7fmW9pXw" base_Property="_2JOZ4hSVEeGGzu7fmW9pXw" severity="WARNING">
     <reference href="../consol-vocab.uml#_2JjKCRSVEeGGzu7fmW9pXw"/>
+    <ruleId>CONF:8896</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:TextValue xmi:id="_2JRdMBSVEeGGzu7fmW9pXw"/>
   <CDA:CodeSystemConstraint xmi:id="_2JTSYRSVEeGGzu7fmW9pXw" code="completed" base_Property="_2JTSYBSVEeGGzu7fmW9pXw">

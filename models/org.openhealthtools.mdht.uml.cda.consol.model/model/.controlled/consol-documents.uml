@@ -1727,8 +1727,9 @@ For conformance with both specifications, please review the appendix on XDS-SD a
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_7Du1gHHeEeGeeZysMrDRUg"/>
     <ruleId>CONF:9944</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:CodeSystemConstraint xmi:id="_LwnaYDVWEeGIw7CntkyPQw" base_Property="_NmVGtSzCEeGMXrZ0DiQwGg">
+  <CDA:CodeSystemConstraint xmi:id="_LwnaYDVWEeGIw7CntkyPQw" base_Property="_NmVGtSzCEeGMXrZ0DiQwGg" severity="WARNING">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_7Du1gHHeEeGeeZysMrDRUg"/>
+    <ruleId>CONF:9947</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:ConstraintValidation xmi:id="_ADa-ADVXEeGIw7CntkyPQw" base_Constraint="_72wJQDVWEeGIw7CntkyPQw">
     <ruleId>CONF:8002</ruleId>
@@ -1737,11 +1738,12 @@ For conformance with both specifications, please review the appendix on XDS-SD a
     <ruleId>CONF:8220</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_rRZ1sDVYEeGIw7CntkyPQw" base_Property="_nlqjyjVYEeGIw7CntkyPQw"/>
-  <CDA:PropertyValidation xmi:id="_srGzkDVYEeGIw7CntkyPQw" severity="WARNING" base_Property="_nlqjxzVYEeGIw7CntkyPQw"/>
+  <CDA:PropertyValidation xmi:id="_srGzkDVYEeGIw7CntkyPQw" severity="INFO" base_Property="_nlqjxzVYEeGIw7CntkyPQw"/>
   <CDA:PropertyValidation xmi:id="_wQSxkDVYEeGIw7CntkyPQw" base_Property="_nlqjxDVYEeGIw7CntkyPQw"/>
   <CDA:PropertyValidation xmi:id="_yu_BkDVYEeGIw7CntkyPQw" base_Property="_nlqjzTVYEeGIw7CntkyPQw"/>
-  <CDA:CodeSystemConstraint xmi:id="_5bjAMDVYEeGIw7CntkyPQw" base_Property="_nlqjxzVYEeGIw7CntkyPQw">
+  <CDA:CodeSystemConstraint xmi:id="_5bjAMDVYEeGIw7CntkyPQw" base_Property="_nlqjxzVYEeGIw7CntkyPQw" severity="WARNING">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_7Du1gHHeEeGeeZysMrDRUg"/>
+    <ruleId>CONF:9949</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_Ox1BQDVZEeGIw7CntkyPQw" code="S" base_Property="_pL6l0CzGEeGMXrZ0DiQwGg">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_xwG2cGdIEeGkeaezs0FtvA"/>
@@ -4488,12 +4490,15 @@ OIDs SHALL be no more than 64 characters in length..</body>
   </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_K_GwoG1LEeGCevFpokwODw" base_Property="_7Os41CylEeGMXrZ0DiQwGg">
     <reference href="../consol-vocab.uml#_fgCQUG1GEeGCevFpokwODw"/>
+    <ruleId>CONF:5323</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:CodeSystemConstraint xmi:id="_xWGhcG3fEeGKP5KxpnP4iw" base_Property="_IMkP4CzGEeGMXrZ0DiQwGg" severity="WARNING">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_7Du1gHHeEeGeeZysMrDRUg"/>
+    <ruleId>CONF:9951</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:CodeSystemConstraint xmi:id="_6c9LwG-hEeG_IMhuXZR2Eg" base_Property="_93hfwCymEeGMXrZ0DiQwGg">
+  <CDA:CodeSystemConstraint xmi:id="_6c9LwG-hEeG_IMhuXZR2Eg" base_Property="_93hfwCymEeGMXrZ0DiQwGg" severity="WARNING">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_7Du1gHHeEeGeeZysMrDRUg"/>
+    <ruleId>CONF:9942</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_8ccgkHK9EeGig5KF4CgPyw" severity="WARNING" base_Property="_nLKckSymEeGMXrZ0DiQwGg"/>
   <CDA:PropertyValidation xmi:id="_Q2rJEHK-EeGig5KF4CgPyw" severity="INFO" base_Property="_ZGMo0CytEeGMXrZ0DiQwGg"/>

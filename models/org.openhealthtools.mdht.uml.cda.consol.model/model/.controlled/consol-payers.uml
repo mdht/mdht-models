@@ -543,8 +543,9 @@ Authorizations are represented using an act subordinate to the policy or program
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:8902</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:ValueSetConstraint xmi:id="_NF9QgFzFEeGt2doqSDULjA" base_Property="_UdHpMBUlEeGvPruliC3crg">
+  <CDA:ValueSetConstraint xmi:id="_NF9QgFzFEeGt2doqSDULjA" base_Property="_UdHpMBUlEeGvPruliC3crg" severity="WARNING">
     <reference href="../consol-vocab.uml#_F4z3QDrtEeG-aJb2h_4S8w"/>
+    <ruleId>CONF:8904</ruleId>
   </CDA:ValueSetConstraint>
   <uml:Association xmi:id="_sLvNAlzWEeGt2doqSDULjA" memberEnd="_sLvNAFzWEeGt2doqSDULjA _sLvNA1zWEeGt2doqSDULjA">
     <ownedEnd xmi:id="_sLvNA1zWEeGt2doqSDULjA" type="_PZBdMBUlEeGvPruliC3crg" association="_sLvNAlzWEeGt2doqSDULjA"/>
