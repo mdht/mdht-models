@@ -9,16 +9,11 @@ package org.openhealthtools.mdht.uml.cda.consol.impl;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
-
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.PurposeofReferenceObservation;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.PurposeofReferenceObservationOperations;
-
 import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
-
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -100,6 +95,16 @@ public class PurposeofReferenceObservationImpl extends ObservationImpl implement
 	 */
 	public boolean validatePurposeofReferenceObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PurposeofReferenceObservationOperations.validatePurposeofReferenceObservationValue(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePurposeofReferenceObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PurposeofReferenceObservationOperations.validatePurposeofReferenceObservationValueP(
 			this, diagnostics, context);
 	}
 

@@ -7,6 +7,7 @@
 package org.openhealthtools.mdht.uml.cda.consol;
 
 import java.util.Map;
+
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.openhealthtools.mdht.uml.cda.Performer2;
 

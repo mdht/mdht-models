@@ -9,15 +9,11 @@ package org.openhealthtools.mdht.uml.cda.consol.impl;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
-
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.DiagnosticImagingReport;
 import org.openhealthtools.mdht.uml.cda.consol.FindingsSection;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.DiagnosticImagingReportOperations;
-
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -56,6 +52,15 @@ public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl im
 	 */
 	public boolean validateDiagnosticImagingReportTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateDiagnosticImagingReportCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportCode(this, diagnostics, context);
 	}
 
 	/**
@@ -156,16 +161,6 @@ public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl im
 	 */
 	public FindingsSection getFindingsSection() {
 		return DiagnosticImagingReportOperations.getFindingsSection(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateGeneralHeaderConstraintsCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DiagnosticImagingReportOperations.validateGeneralHeaderConstraintsCode(this, diagnostics, context);
 	}
 
 	/**

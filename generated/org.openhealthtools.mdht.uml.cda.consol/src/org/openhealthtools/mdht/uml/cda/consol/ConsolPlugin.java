@@ -7,7 +7,6 @@
 package org.openhealthtools.mdht.uml.cda.consol;
 
 import org.eclipse.emf.common.EMFPlugin;
-
 import org.eclipse.emf.common.util.ResourceLocator;
 
 /**
