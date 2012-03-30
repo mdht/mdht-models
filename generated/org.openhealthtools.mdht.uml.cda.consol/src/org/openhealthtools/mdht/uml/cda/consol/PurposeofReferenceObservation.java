@@ -18,7 +18,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getPurposeofReferenceObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation value.codeSystemName='DCM' templateId.root='2.16.840.1.113883.10.20.6.2.9' constraints.validation.error='PurposeofReferenceObservationTemplateId PurposeofReferenceObservationClassCode PurposeofReferenceObservationCode PurposeofReferenceObservationMoodCode' classCode='OBS' constraints.validation.warning='PurposeofReferenceObservationValue PurposeofReferenceObservationValueP' moodCode='EVN' value.codeSystem='1.2.840.10008.2.16.4'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation value.codeSystemName='DCM' templateId.root='2.16.840.1.113883.10.20.6.2.9' constraints.validation.error='PurposeofReferenceObservationTemplateId PurposeofReferenceObservationClassCode PurposeofReferenceObservationCode PurposeofReferenceObservationMoodCode PurposeofReferenceObservationValue' classCode='OBS' moodCode='EVN' value.codeSystem='1.2.840.10008.2.16.4'"
  * @generated
  */
 public interface PurposeofReferenceObservation extends Observation {
@@ -88,19 +88,6 @@ public interface PurposeofReferenceObservation extends Observation {
 	 * @generated
 	 */
 	boolean validatePurposeofReferenceObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * (self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))'"
-	 * @generated
-	 */
-	boolean validatePurposeofReferenceObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
