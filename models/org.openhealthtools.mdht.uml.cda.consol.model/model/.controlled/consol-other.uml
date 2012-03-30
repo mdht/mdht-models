@@ -144,11 +144,9 @@ The Assessment and Plan section represents both the clinician's conclusions and 
   <CDA:PropertyValidation xmi:id="_2FkB4hSVEeGGzu7fmW9pXw" base_Property="_2FkB4BSVEeGGzu7fmW9pXw">
     <ruleId>CONF:9426</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_2Fko8BSVEeGGzu7fmW9pXw" base_Property="_2FkB4xSVEeGGzu7fmW9pXw">
-    <ruleId>CONF:9428</ruleId>
-  </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_2Fko8RSVEeGGzu7fmW9pXw" code="48767-8" displayName="Annotation comment" base_Property="_2FkB4xSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:9428</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_2FnFMxSVEeGGzu7fmW9pXw" code="completed">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
@@ -495,15 +493,9 @@ The Assessment and Plan section represents both the clinician's conclusions and 
   <CDA:PropertyValidation xmi:id="_2HBacBSVEeGGzu7fmW9pXw" base_Property="_2HAzYRSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7392</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_2G9wEBSVEeGGzu7fmW9pXw" base_Property="_2G8h-hSVEeGGzu7fmW9pXw">
-    <ruleId>CONF:7394</ruleId>
-  </CDA:PropertyValidation>
   <CDA:TextValue xmi:id="_2HAMUBSVEeGGzu7fmW9pXw" severity="WARNING" base_Property="_2G8iABSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7395</ruleId>
   </CDA:TextValue>
-  <CDA:PropertyValidation xmi:id="_2G_lQBSVEeGGzu7fmW9pXw" base_Property="_2G8h-xSVEeGGzu7fmW9pXw">
-    <ruleId>CONF:7396</ruleId>
-  </CDA:PropertyValidation>
   <uml:Class xmi:id="_2PWQFxSVEeGGzu7fmW9pXw" name="ReasonForReferralSection">
     <ownedComment xmi:id="_2PcWrxSVEeGGzu7fmW9pXw" annotatedElement="_2PWQFxSVEeGGzu7fmW9pXw">
       <body>A Reason for Referral section records the reason the patient is being referred for a consultation by a provider. An optional Chief Complaint section may capture the patient's description of the reason for the consultation.</body>
@@ -636,9 +628,11 @@ The Assessment and Plan section represents both the clinician's conclusions and 
   </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_hBSO8Bq4EeGo461UQq-B1g" base_Property="_2G8h-hSVEeGGzu7fmW9pXw">
     <reference href="../consol-vocab.uml#_DhjiABueEeGnMahsPjlwOw"/>
+    <ruleId>CONF:7394</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:CodeSystemConstraint xmi:id="_wN9NcBq4EeGo461UQq-B1g" code="completed" base_Property="_2G8h-xSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:7396</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:ConstraintValidation xmi:id="_XbW-ABueEeGnMahsPjlwOw" severity="WARNING" base_Constraint="_VsoLUBueEeGnMahsPjlwOw">
     <ruleId>CONF:7397</ruleId>
@@ -658,12 +652,6 @@ The Assessment and Plan section represents both the clinician's conclusions and 
   <CDA:ConstraintValidation xmi:id="_80CEgB-XEeGtfPlBCjHWkw" severity="INFO" base_Constraint="_5t29wB-XEeGtfPlBCjHWkw">
     <ruleId>CONF:9321</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:PropertyValidation xmi:id="_rVPc8B-YEeGtfPlBCjHWkw" base_Property="_nD-cEB-YEeGtfPlBCjHWkw">
-    <ruleId>CONF:7758</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_sAy7YB-YEeGtfPlBCjHWkw" base_Property="_nD_qMB-YEeGtfPlBCjHWkw">
-    <ruleId>CONF:7759</ruleId>
-  </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_suiLIB-YEeGtfPlBCjHWkw" severity="WARNING" base_Property="_nD7_0B-YEeGtfPlBCjHWkw">
     <ruleId>CONF:7760</ruleId>
   </CDA:PropertyValidation>
@@ -672,9 +660,11 @@ The Assessment and Plan section represents both the clinician's conclusions and 
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_2cHDsB-YEeGtfPlBCjHWkw" base_Property="_nD-cEB-YEeGtfPlBCjHWkw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ywdZ4Gg7Ed-ilOLYnIx0jA"/>
+    <ruleId>CONF:7758</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:ValueSetConstraint xmi:id="_B4zJcB-ZEeGtfPlBCjHWkw" base_Property="_nD_qMB-YEeGtfPlBCjHWkw">
     <reference href="../consol-vocab.uml#_IzJFYR-ZEeGtfPlBCjHWkw"/>
+    <ruleId>CONF:7759</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ConstraintValidation xmi:id="_bC3lMB-ZEeGtfPlBCjHWkw" severity="INFO" base_Constraint="_U1PlUB-ZEeGtfPlBCjHWkw">
     <ruleId>CONF:7762</ruleId>
@@ -988,9 +978,6 @@ The Assessment and Plan section represents both the clinician's conclusions and 
   <CDA:PropertyValidation xmi:id="_IWSNwD33EeGYzOhiGkMbTA" base_Property="_8PsPYz32EeGYzOhiGkMbTA">
     <ruleId>CONF:7713</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_C6qggECSEeGELr7uj3LK_Q" base_Property="__fxG8ECREeGELr7uj3LK_Q">
-    <ruleId>CONF:9916</ruleId>
-  </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_DQkfEECSEeGELr7uj3LK_Q" base_Property="__fxG80CREeGELr7uj3LK_Q">
     <ruleId>CONF:9918</ruleId>
   </CDA:PropertyValidation>
@@ -999,10 +986,8 @@ The Assessment and Plan section represents both the clinician's conclusions and 
   </CDA:TextValue>
   <CDA:CodeSystemConstraint xmi:id="_OyoNAECSEeGELr7uj3LK_Q" code="18841-7" base_Property="__fxG8ECREeGELr7uj3LK_Q">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:9916</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:PropertyValidation xmi:id="_2MfvUECSEeGELr7uj3LK_Q" base_Property="_la3lMECSEeGELr7uj3LK_Q">
-    <ruleId>CONF:8681</ruleId>
-  </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_2l1cYECSEeGELr7uj3LK_Q" base_Property="_la3lM0CSEeGELr7uj3LK_Q">
     <ruleId>CONF:8683</ruleId>
   </CDA:PropertyValidation>
@@ -1011,10 +996,8 @@ The Assessment and Plan section represents both the clinician's conclusions and 
   </CDA:TextValue>
   <CDA:CodeSystemConstraint xmi:id="_4jJdoECSEeGELr7uj3LK_Q" code="62387-6" base_Property="_la3lMECSEeGELr7uj3LK_Q">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:8681</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:PropertyValidation xmi:id="_XxizUECTEeGELr7uj3LK_Q" base_Property="_U8WH0ECTEeGELr7uj3LK_Q">
-    <ruleId>CONF:8161</ruleId>
-  </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_YH5d0ECTEeGELr7uj3LK_Q" base_Property="_U8WH00CTEeGELr7uj3LK_Q">
     <ruleId>CONF:8163</ruleId>
   </CDA:PropertyValidation>
@@ -1023,10 +1006,8 @@ The Assessment and Plan section represents both the clinician's conclusions and 
   </CDA:TextValue>
   <CDA:CodeSystemConstraint xmi:id="_aeZbIECTEeGELr7uj3LK_Q" code="11329-0" base_Property="_U8WH0ECTEeGELr7uj3LK_Q">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:8161</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:PropertyValidation xmi:id="_1DEMoECTEeGELr7uj3LK_Q" base_Property="_z5J-QECTEeGELr7uj3LK_Q">
-    <ruleId>CONF:7870</ruleId>
-  </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_1YYVUECTEeGELr7uj3LK_Q" base_Property="_z5J-Q0CTEeGELr7uj3LK_Q">
     <ruleId>CONF:7872</ruleId>
   </CDA:PropertyValidation>
@@ -1035,6 +1016,7 @@ The Assessment and Plan section represents both the clinician's conclusions and 
   </CDA:TextValue>
   <CDA:CodeSystemConstraint xmi:id="_22ZygECTEeGELr7uj3LK_Q" code="61149-1" displayName="Objective" base_Property="_z5J-QECTEeGELr7uj3LK_Q">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:7870</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_dN41EEE0EeGdmoWy_aLP0Q" code="61150-9" displayName="Subjective" base_Property="_bLDaoEE0EeGdmoWy_aLP0Q">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
@@ -1125,11 +1107,9 @@ The Assessment and Plan section represents both the clinician's conclusions and 
   </uml:Association>
   <CDA:CDATemplate xmi:id="__hRrIEFHEeGorO80f-Cppg" base_Class="_5K6mAEFHEeGorO80f-Cppg" templateId="2.16.840.1.113883.10.20.22.4.34"/>
   <CDA:PropertyValidation xmi:id="_CFLyUEFIEeGorO80f-Cppg" base_Property="_7tCkgEFHEeGorO80f-Cppg"/>
-  <CDA:PropertyValidation xmi:id="_CiGX0EFIEeGorO80f-Cppg" base_Property="_7tCkgUFHEeGorO80f-Cppg">
-    <ruleId>CONF:7673</ruleId>
-  </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_F24iUEFIEeGorO80f-Cppg" code="46241-6" displayName="Admission diagnosis" base_Property="_7tCkgUFHEeGorO80f-Cppg">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:7673</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_C32lYEFIEeGorO80f-Cppg" base_Property="_7tCkgkFHEeGorO80f-Cppg"/>
   <CDA:EntryRelationship xmi:id="_U-aiIEFIEeGorO80f-Cppg" base_Association="_SgUIAkFIEeGorO80f-Cppg" typeCode="SUBJ">

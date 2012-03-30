@@ -186,15 +186,10 @@
   <CDA:PropertyValidation xmi:id="_2OxoShSVEeGGzu7fmW9pXw" base_Property="_2OxoRxSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7300</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_2OrhuhSVEeGGzu7fmW9pXw" base_Property="_2OrhuBSVEeGGzu7fmW9pXw">
-    <ruleId>CONF:7301</ruleId>
-  </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_2OrhuxSVEeGGzu7fmW9pXw" base_Property="_2OrhuBSVEeGGzu7fmW9pXw">
     <reference href="../consol-vocab.uml#_2O3u9BSVEeGGzu7fmW9pXw"/>
+    <ruleId>CONF:7301</ruleId>
   </CDA:ValueSetConstraint>
-  <CDA:PropertyValidation xmi:id="_2OxoTBSVEeGGzu7fmW9pXw" base_Property="_2OxoSxSVEeGGzu7fmW9pXw">
-    <ruleId>CONF:7303</ruleId>
-  </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_2OxoURSVEeGGzu7fmW9pXw" base_Property="_2OxoTRSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7304</ruleId>
   </CDA:PropertyValidation>
@@ -312,9 +307,6 @@ The vital signs organizer is a cluster of vital signs observations.&#xD;
     <ruleId>CONF:7285</ruleId>
     <ruleId>CONF:7286</ruleId>
   </CDA:AssociationValidation>
-  <CDA:PropertyValidation xmi:id="_-zMwgBwhEeG_RY8fzJjtMw" base_Property="_bRH8uxVeEeGQCvUGzi1kDQ">
-    <ruleId>CONF:7269</ruleId>
-  </CDA:PropertyValidation>
   <CDA:TextValue xmi:id="__bdqYBwhEeG_RY8fzJjtMw"/>
   <CDA:PropertyValidation xmi:id="_ALh1YBwiEeG_RY8fzJjtMw" base_Property="_bRH8vRVeEeGQCvUGzi1kDQ">
     <ruleId>CONF:7270</ruleId>
@@ -328,9 +320,11 @@ The vital signs organizer is a cluster of vital signs observations.&#xD;
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_7-leYBwiEeG_RY8fzJjtMw" code="completed" base_Property="_2OxoSxSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:7303</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_uBdeYBwxEeG_RY8fzJjtMw" code="8716-3" base_Property="_bRH8uxVeEeGQCvUGzi1kDQ">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:7269</ruleId>
   </CDA:CodeSystemConstraint>
   <uml:Association xmi:id="_NgICgBwjEeG_RY8fzJjtMw" memberEnd="_NgHbcBwjEeG_RY8fzJjtMw _NgICgRwjEeG_RY8fzJjtMw">
     <ownedEnd xmi:id="_NgICgRwjEeG_RY8fzJjtMw" type="_2OrhsRSVEeGGzu7fmW9pXw" association="_NgICgBwjEeG_RY8fzJjtMw"/>

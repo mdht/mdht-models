@@ -191,11 +191,9 @@
   <CDA:AssociationValidation xmi:id="_2Lg44hSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2Lg44BSVEeGGzu7fmW9pXw">
     <ruleId>CONF:8739</ruleId>
   </CDA:AssociationValidation>
-  <CDA:PropertyValidation xmi:id="_kTFNsCwNEeGKLc4ckmfDag" base_Property="_4yj2yBVdEeGQCvUGzi1kDQ">
-    <ruleId>CONF:7941</ruleId>
-  </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_lUGl0CwNEeGKLc4ckmfDag" code="46240-8" displayName="Encounters" base_Property="_4yj2yBVdEeGQCvUGzi1kDQ">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:7941</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:TextValue xmi:id="_oPZ5UCwNEeGKLc4ckmfDag" base_Property="_4yj2yRVdEeGQCvUGzi1kDQ">
     <ruleId>CONF:7942</ruleId>
@@ -256,11 +254,9 @@
   <uml:Association xmi:id="_qg2uMDFVEeGbx9xBxK_Upg" memberEnd="_qg2HIDFVEeGbx9xBxK_Upg _qg2uMTFVEeGbx9xBxK_Upg">
     <ownedEnd xmi:id="_qg2uMTFVEeGbx9xBxK_Upg" type="_2LWg0BSVEeGGzu7fmW9pXw" association="_qg2uMDFVEeGbx9xBxK_Upg"/>
   </uml:Association>
-  <CDA:PropertyValidation xmi:id="_mURhIVGjEeG3H6xvuD7Z0Q" base_Property="_mURhIFGjEeG3H6xvuD7Z0Q">
-    <ruleId>CONF:8706</ruleId>
-  </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_mURhIlGjEeG3H6xvuD7Z0Q" code="46240-8" displayName="Encounters" base_Property="_mURhIFGjEeG3H6xvuD7Z0Q">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:8706</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_mUbSI1GjEeG3H6xvuD7Z0Q" base_Property="_mUbSIFGjEeG3H6xvuD7Z0Q">
     <ruleId>CONF:8708</ruleId>

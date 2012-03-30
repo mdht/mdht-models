@@ -69,11 +69,9 @@
   <CDA:PropertyValidation xmi:id="_sfKdsCUPEeGiOPpZVnfEJA" base_Property="_iYdTcCUPEeGiOPpZVnfEJA">
     <ruleId>CONF:7690</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_v1oDMCUPEeGiOPpZVnfEJA" base_Property="_iYcFUCUPEeGiOPpZVnfEJA">
-    <ruleId>CONF:7691</ruleId>
-  </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_wW7ZcCUPEeGiOPpZVnfEJA" code="10183-2" displayName="Discharge Medication" base_Property="_iYcFUCUPEeGiOPpZVnfEJA">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:7691</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:EntryRelationship xmi:id="_49JBUCUPEeGiOPpZVnfEJA" base_Association="_3InvsCUPEeGiOPpZVnfEJA" typeCode="SUBJ">
     <ruleId>CONF:7692</ruleId>
