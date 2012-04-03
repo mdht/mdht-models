@@ -36,8 +36,18 @@
 <li>reference/@value <b>SHALL</b> begin with a '#' and <b>SHALL</b> point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1 (CONF:7426)</li>
 <li>code <b>MAY</b> contain zero or more [0..*] translation (CONF:7431)</li>
 </ol>
-<section id="tableconformance">
-</section>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::AllergyObservationPlayingEntity</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::playingentity[cda:templateId/@root = ]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>EntityClassRoot</entry><entry>CONF:7407</entry><entry> ENT</entry></row> 
+<row><entry>determinerCode</entry><entry>@determinerCode</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>EntityDeterminer</entry><entry></entry><entry> INSTANCE</entry></row> 
+<row><entry>nullFlavor</entry><entry>@nullFlavor</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>NullFlavor</entry><entry></entry><entry> ASKU</entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:7419</entry><entry> </entry></row> 
+<row><entry>desc</entry><entry>desc</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>ED</entry><entry></entry><entry> </entry></row> 
+<row><entry>name</entry><entry>name</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>PN</entry><entry></entry><entry> </entry></row> 
+<row><entry>quantity</entry><entry>quantity</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>PQ</entry><entry></entry><entry> </entry></row> 
+<row><entry>realmCode</entry><entry>realmCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
+<row><entry>sDTCBirthTime</entry><entry>sDTCBirthTime</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>TS</entry><entry></entry><entry> </entry></row> 
+<row><entry>templateId</entry><entry>templateId</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> </entry></row> 
+<row><entry>typeId</entry><entry>typeId</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>InfrastructureRootTypeId</entry><entry></entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <playingentity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="MMAT">
   <code code="Value"/>

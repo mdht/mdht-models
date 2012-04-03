@@ -24,7 +24,7 @@
 </li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>text</b></tt> (CONF:9233)
 <ul><li>If present, the text element contains the description of the series</li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>sOPInstanceObservation</b></tt> (CONF:9237, CONF:9238, CONF:9239)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt> (CONF:9237, CONF:9238, CONF:9239)
 <ol>
 <li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
 <li>Contains exactly one [1..1] <xref href="../SOPInstanceObservation.dita">SOP Instance Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.6.2.8</tt>)</li></ol></li>
@@ -49,7 +49,7 @@
 <ul><li>If present, the text element contains the description of the series</li></ul></li>
 <li><b>SHOULD</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:9235)
 <ul><li>If present, the effectiveTime contains the time the series was started</li></ul></li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>sOPInstanceObservation</b></tt> (CONF:9237, CONF:9238, CONF:9239)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt> (CONF:9237, CONF:9238, CONF:9239)
 <ol>
 <li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
 <li>Contains exactly one [1..1] <xref href="../SOPInstanceObservation.dita">SOP Instance Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.6.2.8</tt>)</li></ol></li>
@@ -61,12 +61,35 @@
 <li>This qualifier <b>SHALL</b> contain exactly one [1..1] value with @xsi:type="ANY" (CONF:9231)</li>
 <li><b>SHALL</b> satisfy: The value element code contains a modality code and codeSystem is 1.2.840.10008.2.16.4 (CONF:9232)</li>
 </ol>
-<section id="tableconformance">
-</section>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::SeriesAct</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::act[cda:templateId/@root = 2.16.840.1.113883.10.20.22.4.63]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActClassDocumentEntryAct</entry><entry>CONF:9222</entry><entry> ACCM</entry></row> 
+<row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_DocumentActMood</entry><entry>CONF:9223</entry><entry> APT</entry></row> 
+<row><entry>negationInd</entry><entry>@negationInd</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>Boolean</entry><entry></entry><entry> </entry></row> 
+<row><entry>nullFlavor</entry><entry>@nullFlavor</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>NullFlavor</entry><entry></entry><entry> ASKU</entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:9228</entry><entry>DCM 1.2.840.10008.2.16.4 113015</entry></row> 
+<row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>IVL_TS</entry><entry>CONF:9235</entry><entry> </entry></row> 
+<row><entry>id</entry><entry>id</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>II</entry><entry>CONF:9224</entry><entry> </entry></row> 
+<row><entry>languageCode</entry><entry>languageCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
+<row><entry>priorityCode</entry><entry>priorityCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
+<row><entry>realmCode</entry><entry>realmCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
+<row><entry>statusCode</entry><entry>statusCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
+<row><entry>templateId</entry><entry>templateId</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> 2.16.840.1.113883.10.20.22.4.63</entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>ED</entry><entry>CONF:9233</entry><entry> </entry></row> 
+<row><entry>author</entry><entry>author</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Author</entry><entry></entry><entry> </entry></row> 
+<row><entry>entryRelationship</entry><entry>entryRelationship</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>EntryRelationship</entry><entry></entry><entry> </entry></row> 
+<row><entry>informant</entry><entry>informant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Informant12</entry><entry></entry><entry> </entry></row> 
+<row><entry>participant</entry><entry>participant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Participant2</entry><entry></entry><entry> </entry></row> 
+<row><entry>performer</entry><entry>performer</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Performer2</entry><entry></entry><entry> </entry></row> 
+<row><entry>precondition</entry><entry>precondition</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Precondition</entry><entry></entry><entry> </entry></row> 
+<row><entry>reference</entry><entry>reference</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Reference</entry><entry></entry><entry> </entry></row> 
+<row><entry>sOPInstanceObservation</entry><entry>sOPInstanceObservation</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>SOPInstanceObservation</entry><entry>CONF:9237CONF:9238CONF:9239</entry><entry> </entry></row> 
+<row><entry>specimen</entry><entry>specimen</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Specimen</entry><entry></entry><entry> </entry></row> 
+<row><entry>subject</entry><entry>subject</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>Subject</entry><entry></entry><entry> </entry></row> 
+<row><entry>typeId</entry><entry>typeId</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>InfrastructureRootTypeId</entry><entry></entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <act xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="ACT" moodCode="EVN">
   <templateId root="2.16.840.1.113883.10.20.22.4.63"/>
-  <id root="2107666949"/>
+  <id root="1545953355"/>
   <code code="113015" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM"/>
   <text>Text Value</text>
   <effectiveTime>
@@ -76,8 +99,8 @@
   <entryRelationship>
     <observation classCode="DGIMG" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.6.2.8"/>
-      <id root="931554913"/>
-      <code code="117018995"/>
+      <id root="1156527816"/>
+      <code code="1720411755"/>
       <text>Text Value</text>
       <effectiveTime>
         <low value="2012"/>
@@ -86,8 +109,8 @@
       <entryRelationship>
         <observation classCode="OBS" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.6.2.9"/>
-          <id root="1818622002"/>
-          <code code="690129391"/>
+          <id root="1873316137"/>
+          <code code="1565767798"/>
           <text>Text Value</text>
           <effectiveTime>
             <low value="2012"/>
@@ -98,7 +121,7 @@
       <entryRelationship>
         <observation classCode="ROIBND" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.6.2.10"/>
-          <id root="1028696405"/>
+          <id root="936599791"/>
           <code code="121190" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM" displayName="Referenced Frames"/>
           <text>Text Value</text>
           <effectiveTime>
@@ -108,7 +131,7 @@
           <entryRelationship>
             <observation classCode="OBS" moodCode="EVN">
               <templateId root="2.16.840.1.113883.10.20.6.2.11"/>
-              <id root="2073950252"/>
+              <id root="500325710"/>
               <code code="113036" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM" displayName="Frames for Display"/>
               <text>Text Value</text>
               <effectiveTime>

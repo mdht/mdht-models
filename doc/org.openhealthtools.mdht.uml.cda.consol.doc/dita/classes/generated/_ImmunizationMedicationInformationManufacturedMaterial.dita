@@ -11,7 +11,7 @@
 <section id="description">
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> 2.16.840.1.113883.3.88.12.80.22 Vaccine Administered Value Set</tt><b> DYNAMIC</b> (CONF:9007)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/VaccinesAdministeredValueSet.dita">Vaccines Administered Value Set</xref> 2.16.840.1.114222.4.11.934</tt><b> STATIC</b> 3 (CONF:9007)
 </li>
 <li><b>SHOULD</b> contain zero or one [0..1] <tt><b>lotNumberText</b></tt> (CONF:9014)
 </li>
@@ -21,7 +21,7 @@
 <li>code <b>MAY</b> contain zero or more [0..*] translation (CONF:9011)</li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> 2.16.840.1.113883.3.88.12.80.22 Vaccine Administered Value Set</tt><b> DYNAMIC</b> (CONF:9007)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/VaccinesAdministeredValueSet.dita">Vaccines Administered Value Set</xref> 2.16.840.1.114222.4.11.934</tt><b> STATIC</b> 3 (CONF:9007)
 </li>
 <li><b>SHOULD</b> contain zero or one [0..1] <tt><b>lotNumberText</b></tt> (CONF:9014)
 </li>
@@ -30,11 +30,19 @@
 <li>reference/@value <b>SHALL</b> begin with a '#' and <b>SHALL</b> point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1) (CONF:9010)</li>
 <li>code <b>MAY</b> contain zero or more [0..*] translation (CONF:9011)</li>
 </ol>
-<section id="tableconformance">
-</section>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::ImmunizationMedicationInformationManufacturedMaterial</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::material[cda:templateId/@root = ]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>EntityClassManufacturedMaterial</entry><entry></entry><entry> MMAT</entry></row> 
+<row><entry>determinerCode</entry><entry>@determinerCode</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>EntityDeterminerDetermined</entry><entry></entry><entry> KIND</entry></row> 
+<row><entry>nullFlavor</entry><entry>@nullFlavor</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>NullFlavor</entry><entry></entry><entry> ASKU</entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:9007</entry><entry> null</entry></row> 
+<row><entry>lotNumberText</entry><entry>lotNumberText</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>ST</entry><entry>CONF:9014</entry><entry> </entry></row> 
+<row><entry>name</entry><entry>name</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>EN</entry><entry></entry><entry> </entry></row> 
+<row><entry>realmCode</entry><entry>realmCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
+<row><entry>templateId</entry><entry>templateId</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> </entry></row> 
+<row><entry>typeId</entry><entry>typeId</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>InfrastructureRootTypeId</entry><entry></entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <material xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
-  <code code="Value"/>
+  <code codeSystem="2.16.840.1.113883.6.59" codeSystemName="Vaccines administered (CVX)"/>
   <lotNumberText/>
 </material>]]></codeblock>
 <section id="changes">

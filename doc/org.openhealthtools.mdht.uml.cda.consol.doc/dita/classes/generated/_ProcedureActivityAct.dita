@@ -15,35 +15,35 @@ This clinical statement represents any procedure that cannot be classified as an
 <ol id="conformance">
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ACT" </tt><i>Act</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:8289)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> 2.16.840.1.113883.11.20.9.18 <xref href="../../terminology/MoodCodeEvnInt.dita">MoodCodeEvnInt</xref></tt><b> STATIC</b> 2011-04-03 (CONF:8290)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b></tt>, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/MoodCodeEvnInt.dita">MoodCodeEvnInt</xref> 2.16.840.1.113883.11.20.9.18</tt><b> STATIC</b> 2011-04-03 (CONF:8290)
 </li>
 <li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:8292)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:8293)
 </li>
-<li><b>SHALL</b> contain zero or one [0..1] <tt><b>statusCode</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> 2.16.840.1.113883.11.20.9.22 <xref href="../../terminology/ProcedureActStatusCode.dita">ProcedureActStatusCode</xref></tt><b> DYNAMIC</b> (CONF:8298)
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>statusCode</b></tt>, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ProcedureActStatusCode.dita">ProcedureActStatusCode</xref> 2.16.840.1.113883.11.20.9.22</tt><b> DYNAMIC</b> (CONF:8298)
 </li>
 <li><b>SHOULD</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:8299)
 </li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>priorityCode</b></tt>, which <b>MAY</b> be selected from ValueSet<tt> 2.16.840.1.113883.1.11.16866 <xref href="../../terminology/ActPriority.dita">ActPriority</xref></tt><b> STATIC</b> (CONF:8300)
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>priorityCode</b></tt>, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ActPriority.dita">ActPriority</xref> 2.16.840.1.113883.1.11.16866</tt><b> STATIC</b> (CONF:8300)
 </li>
 <li><b>SHOULD</b> contain zero or more [0..*] <tt><b>performer</b></tt> (CONF:8301)
 </li>
-<li><b>MAY</b> contain zero or more [0..*] <tt><b>serviceDeliveryLocation</b></tt> (CONF:8313)
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>participant</b></tt> (CONF:8313)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../ServiceDeliveryLocation.dita">Service Delivery Location</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.32</tt>)</li></ol></li>
-<li><b>MAY</b> contain zero or more [0..*] <tt><b>procedureEncounter</b></tt> (CONF:8317)
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:8317)
 <ol>
 <li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>instructions</b></tt> (CONF:8325)
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:8325)
 <ol>
 <li>Contains <tt><b>@typeCode="</b>SUBJ" </tt><i>SUBJ</i></li>
 <li>Contains exactly one [1..1] <xref href="../Instructions.dita">Instructions</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.20</tt>)</li></ol></li>
-<li><b>MAY</b> contain zero or more [0..*] <tt><b>indication</b></tt> (CONF:8328)
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:8328)
 <ol>
 <li>Contains <tt><b>@typeCode="</b>RSON" </tt><i>RSON</i></li>
 <li>Contains exactly one [1..1] <xref href="../Indication.dita">Indication</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.19</tt>)</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>medicationActivity</b></tt> (CONF:8329)
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:8329)
 <ol>
 <li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
 <li>Contains exactly one [1..1] <xref href="../MedicationActivity.dita">Medication Activity</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.16</tt>)</li></ol></li>
@@ -58,35 +58,35 @@ This clinical statement represents any procedure that cannot be classified as an
 <ol id="aggregate">
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ACT" </tt><i>Act</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:8289)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> 2.16.840.1.113883.11.20.9.18 <xref href="../../terminology/MoodCodeEvnInt.dita">MoodCodeEvnInt</xref></tt><b> STATIC</b> 2011-04-03 (CONF:8290)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b></tt>, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/MoodCodeEvnInt.dita">MoodCodeEvnInt</xref> 2.16.840.1.113883.11.20.9.18</tt><b> STATIC</b> 2011-04-03 (CONF:8290)
 </li>
 <li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:8292)
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:8293)
 </li>
-<li><b>SHALL</b> contain zero or one [0..1] <tt><b>statusCode</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> 2.16.840.1.113883.11.20.9.22 <xref href="../../terminology/ProcedureActStatusCode.dita">ProcedureActStatusCode</xref></tt><b> DYNAMIC</b> (CONF:8298)
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>statusCode</b></tt>, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ProcedureActStatusCode.dita">ProcedureActStatusCode</xref> 2.16.840.1.113883.11.20.9.22</tt><b> DYNAMIC</b> (CONF:8298)
 </li>
 <li><b>SHOULD</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:8299)
 </li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>priorityCode</b></tt>, which <b>MAY</b> be selected from ValueSet<tt> 2.16.840.1.113883.1.11.16866 <xref href="../../terminology/ActPriority.dita">ActPriority</xref></tt><b> STATIC</b> (CONF:8300)
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>priorityCode</b></tt>, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ActPriority.dita">ActPriority</xref> 2.16.840.1.113883.1.11.16866</tt><b> STATIC</b> (CONF:8300)
 </li>
 <li><b>SHOULD</b> contain zero or more [0..*] <tt><b>performer</b></tt> (CONF:8301)
 </li>
-<li><b>MAY</b> contain zero or more [0..*] <tt><b>serviceDeliveryLocation</b></tt> (CONF:8313)
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>participant</b></tt> (CONF:8313)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../ServiceDeliveryLocation.dita">Service Delivery Location</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.32</tt>)</li></ol></li>
-<li><b>MAY</b> contain zero or more [0..*] <tt><b>procedureEncounter</b></tt> (CONF:8317)
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:8317)
 <ol>
 <li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>instructions</b></tt> (CONF:8325)
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:8325)
 <ol>
 <li>Contains <tt><b>@typeCode="</b>SUBJ" </tt><i>SUBJ</i></li>
 <li>Contains exactly one [1..1] <xref href="../Instructions.dita">Instructions</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.20</tt>)</li></ol></li>
-<li><b>MAY</b> contain zero or more [0..*] <tt><b>indication</b></tt> (CONF:8328)
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt> (CONF:8328)
 <ol>
 <li>Contains <tt><b>@typeCode="</b>RSON" </tt><i>RSON</i></li>
 <li>Contains exactly one [1..1] <xref href="../Indication.dita">Indication</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.19</tt>)</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>medicationActivity</b></tt> (CONF:8329)
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:8329)
 <ol>
 <li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
 <li>Contains exactly one [1..1] <xref href="../MedicationActivity.dita">Medication Activity</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.16</tt>)</li></ol></li>
@@ -98,14 +98,40 @@ This clinical statement represents any procedure that cannot be classified as an
 <li>participant with target class Service Delivery Location <b>SHALL</b> contain exactly one [1..1] @typeCode="LOC" Location (CodeSystem: 2.16.840.1.113883.5.1002 HL7ActRelationshipType) STATIC (CONF:8312)</li>
 <li>entryRelationship with target class Instructions <b>SHALL</b> contain exactly one [1..1] @inversionInd="true" (CONF:8324)</li>
 </ol>
-<section id="tableconformance">
-</section>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::ProcedureActivityAct</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::act[cda:templateId/@root = 2.16.840.1.113883.10.20.22.4.12]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActClassDocumentEntryAct</entry><entry>CONF:8289</entry><entry> ACCM</entry></row> 
+<row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_DocumentActMood</entry><entry>CONF:8290</entry><entry> APT</entry></row> 
+<row><entry>negationInd</entry><entry>@negationInd</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>Boolean</entry><entry></entry><entry> </entry></row> 
+<row><entry>nullFlavor</entry><entry>@nullFlavor</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>NullFlavor</entry><entry></entry><entry> ASKU</entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:8293</entry><entry> </entry></row> 
+<row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>IVL_TS</entry><entry>CONF:8299</entry><entry> </entry></row> 
+<row><entry>id</entry><entry>id</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>II</entry><entry>CONF:8292</entry><entry> </entry></row> 
+<row><entry>languageCode</entry><entry>languageCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
+<row><entry>priorityCode</entry><entry>priorityCode</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
+<row><entry>realmCode</entry><entry>realmCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
+<row><entry>statusCode</entry><entry>statusCode</entry><entry>0..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CS</entry><entry>CONF:8298</entry><entry> </entry></row> 
+<row><entry>templateId</entry><entry>templateId</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> 2.16.840.1.113883.10.20.22.4.12</entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>ED</entry><entry></entry><entry> </entry></row> 
+<row><entry>author</entry><entry>author</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Author</entry><entry></entry><entry> </entry></row> 
+<row><entry>entryRelationship</entry><entry>entryRelationship</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>EntryRelationship</entry><entry></entry><entry> </entry></row> 
+<row><entry>indication</entry><entry>indication</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>Indication</entry><entry>CONF:8328</entry><entry> </entry></row> 
+<row><entry>informant</entry><entry>informant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Informant12</entry><entry></entry><entry> </entry></row> 
+<row><entry>instructions</entry><entry>instructions</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Instructions</entry><entry>CONF:8325</entry><entry> </entry></row> 
+<row><entry>medicationActivity</entry><entry>medicationActivity</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>MedicationActivity</entry><entry>CONF:8329</entry><entry> </entry></row> 
+<row><entry>participant</entry><entry>participant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Participant2</entry><entry></entry><entry> </entry></row> 
+<row><entry>performer</entry><entry>performer</entry><entry>0..*</entry><entry>SHOULD</entry><entry>YES</entry><entry>ProcedurePerformer</entry><entry>CONF:8301</entry><entry> </entry></row> 
+<row><entry>precondition</entry><entry>precondition</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Precondition</entry><entry></entry><entry> </entry></row> 
+<row><entry>procedureEncounter</entry><entry>procedureEncounter</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>ProcedureEncounter</entry><entry>CONF:8317</entry><entry> </entry></row> 
+<row><entry>reference</entry><entry>reference</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Reference</entry><entry></entry><entry> </entry></row> 
+<row><entry>serviceDeliveryLocation</entry><entry>serviceDeliveryLocation</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>ServiceDeliveryLocation</entry><entry>CONF:8313</entry><entry> </entry></row> 
+<row><entry>specimen</entry><entry>specimen</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Specimen</entry><entry></entry><entry> </entry></row> 
+<row><entry>subject</entry><entry>subject</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>Subject</entry><entry></entry><entry> </entry></row> 
+<row><entry>typeId</entry><entry>typeId</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>InfrastructureRootTypeId</entry><entry></entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <act xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="ACT">
   <templateId root="2.16.840.1.113883.10.20.22.4.12"/>
-  <id root="503388069"/>
-  <code code="219580143"/>
-  <statusCode code="completed"/>
+  <id root="56201594"/>
+  <code code="1579310305"/>
   <effectiveTime>
     <low value="2012"/>
     <high value="2012"/>
@@ -116,9 +142,8 @@ This clinical statement represents any procedure that cannot be classified as an
   </performer>
   <entryRelationship>
     <encounter>
-      <id root="1830949528"/>
-      <code code="790080232"/>
-      <statusCode code="completed"/>
+      <id root="1556921823"/>
+      <code code="1417429626"/>
       <effectiveTime>
         <low value="2012"/>
         <high value="2012"/>
@@ -132,7 +157,7 @@ This clinical statement represents any procedure that cannot be classified as an
   <entryRelationship>
     <act classCode="ACT" moodCode="INT">
       <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-      <id root="329395520"/>
+      <id root="1672665535"/>
       <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
       <statusCode code="completed"/>
       <effectiveTime>
@@ -148,7 +173,7 @@ This clinical statement represents any procedure that cannot be classified as an
   <entryRelationship>
     <observation classCode="OBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
-      <id root="1608125196"/>
+      <id root="586665373"/>
       <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
       <statusCode code="completed"/>
       <effectiveTime>
@@ -164,14 +189,14 @@ This clinical statement represents any procedure that cannot be classified as an
   <entryRelationship>
     <substanceAdministration classCode="SBADM">
       <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
-      <id root="1953911735"/>
-      <code code="1608720872"/>
-      <statusCode code="completed"/>
+      <id root="1661448982"/>
+      <code code="1296027914"/>
       <effectiveTime xsi:type="IVL_TS">
         <low value="2012"/>
         <high value="2012"/>
       </effectiveTime>
       <priorityCode code="Value"/>
+      <administrationUnitCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
       <consumable/>
       <performer>
         <assignedEntity/>
@@ -179,9 +204,8 @@ This clinical statement represents any procedure that cannot be classified as an
       <entryRelationship>
         <supply classCode="SPLY" moodCode="INT">
           <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
-          <id root="2060013931"/>
-          <code code="1741259165"/>
-          <statusCode code="completed"/>
+          <id root="601791006"/>
+          <code code="1102865132"/>
           <effectiveTime xsi:type="IVL_TS">
             <low value="2012"/>
             <high value="2012"/>
@@ -193,7 +217,7 @@ This clinical statement represents any procedure that cannot be classified as an
           <entryRelationship>
             <act classCode="ACT" moodCode="INT">
               <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-              <id root="812012371"/>
+              <id root="907603440"/>
               <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
               <statusCode code="completed"/>
               <effectiveTime>
@@ -211,8 +235,8 @@ This clinical statement represents any procedure that cannot be classified as an
       <entryRelationship>
         <observation classCode="OBS" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
-          <id root="1851769910"/>
-          <code code="1880337130"/>
+          <id root="1202631174"/>
+          <code code="463440621"/>
           <statusCode code="completed"/>
           <effectiveTime>
             <low value="2012"/>
@@ -225,7 +249,7 @@ This clinical statement represents any procedure that cannot be classified as an
           <entryRelationship>
             <observation classCode="OBS" moodCode="EVN">
               <templateId root="2.16.840.1.113883.10.20.22.4.8"/>
-              <id root="811664848"/>
+              <id root="2018213255"/>
               <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Severity observation"/>
               <statusCode code="completed"/>
               <effectiveTime>
@@ -233,6 +257,7 @@ This clinical statement represents any procedure that cannot be classified as an
                 <high value="2012"/>
               </effectiveTime>
               <priorityCode code="Value"/>
+              <interpretationCode codeSystem="2.16.840.1.113883.5.83" codeSystemName="ObservationInterpretation"/>
               <performer>
                 <assignedEntity/>
               </performer>
@@ -241,9 +266,8 @@ This clinical statement represents any procedure that cannot be classified as an
           <entryRelationship>
             <procedure classCode="PROC">
               <templateId root="2.16.840.1.113883.10.20.22.4.14"/>
-              <id root="175441378"/>
-              <code code="1394101650"/>
-              <statusCode code="completed"/>
+              <id root="472497140"/>
+              <code code="1007938846"/>
               <effectiveTime>
                 <low value="2012"/>
                 <high value="2012"/>
@@ -256,7 +280,7 @@ This clinical statement represents any procedure that cannot be classified as an
               <entryRelationship>
                 <observation classCode="OBS" moodCode="EVN">
                   <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
-                  <id root="1053229516"/>
+                  <id root="1066745816"/>
                   <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
@@ -270,14 +294,14 @@ This clinical statement represents any procedure that cannot be classified as an
               <entryRelationship>
                 <substanceAdministration classCode="SBADM">
                   <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
-                  <id root="1778011758"/>
-                  <code code="1063144685"/>
-                  <statusCode code="completed"/>
+                  <id root="133330856"/>
+                  <code code="1872499102"/>
                   <effectiveTime xsi:type="IVL_TS">
                     <low value="2012"/>
                     <high value="2012"/>
                   </effectiveTime>
                   <priorityCode code="Value"/>
+                  <administrationUnitCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
                   <consumable/>
                   <performer/>
                   <entryRelationship>
@@ -300,7 +324,7 @@ This clinical statement represents any procedure that cannot be classified as an
               <entryRelationship>
                 <act classCode="ACT" moodCode="INT">
                   <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-                  <id root="2076709365"/>
+                  <id root="1266351781"/>
                   <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
@@ -313,9 +337,8 @@ This clinical statement represents any procedure that cannot be classified as an
               </entryRelationship>
               <entryRelationship>
                 <encounter>
-                  <id root="1311608922"/>
-                  <code code="1993424018"/>
-                  <statusCode code="completed"/>
+                  <id root="27759704"/>
+                  <code code="919405943"/>
                   <effectiveTime>
                     <low value="2012"/>
                     <high value="2012"/>
@@ -329,14 +352,14 @@ This clinical statement represents any procedure that cannot be classified as an
           <entryRelationship>
             <substanceAdministration classCode="SBADM">
               <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
-              <id root="1387340780"/>
-              <code code="942541159"/>
-              <statusCode code="completed"/>
+              <id root="74810151"/>
+              <code code="1672070946"/>
               <effectiveTime xsi:type="IVL_TS">
                 <low value="2012"/>
                 <high value="2012"/>
               </effectiveTime>
               <priorityCode code="Value"/>
+              <administrationUnitCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
               <consumable/>
               <performer>
                 <assignedEntity/>
@@ -344,9 +367,8 @@ This clinical statement represents any procedure that cannot be classified as an
               <entryRelationship>
                 <supply classCode="SPLY" moodCode="INT">
                   <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
-                  <id root="1378602095"/>
-                  <code code="1612080253"/>
-                  <statusCode code="completed"/>
+                  <id root="421847604"/>
+                  <code code="1779025450"/>
                   <effectiveTime xsi:type="IVL_TS">
                     <low value="2012"/>
                     <high value="2012"/>
@@ -361,8 +383,8 @@ This clinical statement represents any procedure that cannot be classified as an
               <entryRelationship>
                 <observation classCode="OBS" moodCode="EVN">
                   <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
-                  <id root="1353537576"/>
-                  <code code="629742383"/>
+                  <id root="829039469"/>
+                  <code code="2474710"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
                     <low value="2012"/>
@@ -384,7 +406,7 @@ This clinical statement represents any procedure that cannot be classified as an
               <entryRelationship>
                 <act classCode="ACT" moodCode="INT">
                   <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-                  <id root="323876188"/>
+                  <id root="621872705"/>
                   <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
@@ -398,7 +420,7 @@ This clinical statement represents any procedure that cannot be classified as an
               <entryRelationship>
                 <observation classCode="OBS" moodCode="EVN">
                   <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
-                  <id root="1370573816"/>
+                  <id root="1212899566"/>
                   <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
@@ -412,9 +434,8 @@ This clinical statement represents any procedure that cannot be classified as an
               <entryRelationship>
                 <supply classCode="SPLY" moodCode="EVN">
                   <templateId root="2.16.840.1.113883.10.20.22.4.18"/>
-                  <id root="816824915"/>
-                  <code code="1715510212"/>
-                  <statusCode code="completed"/>
+                  <id root="521395758"/>
+                  <code code="88245372"/>
                   <effectiveTime xsi:type="IVL_TS">
                     <low value="2012"/>
                     <high value="2012"/>
@@ -433,7 +454,7 @@ This clinical statement represents any procedure that cannot be classified as an
       <entryRelationship>
         <act classCode="ACT" moodCode="INT">
           <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-          <id root="1469009340"/>
+          <id root="161618906"/>
           <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
           <statusCode code="completed"/>
           <effectiveTime>
@@ -449,7 +470,7 @@ This clinical statement represents any procedure that cannot be classified as an
       <entryRelationship>
         <observation classCode="OBS" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
-          <id root="784065419"/>
+          <id root="1369740247"/>
           <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
           <statusCode code="completed"/>
           <effectiveTime>
@@ -465,9 +486,8 @@ This clinical statement represents any procedure that cannot be classified as an
       <entryRelationship>
         <supply classCode="SPLY" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.22.4.18"/>
-          <id root="991201533"/>
-          <code code="2111925504"/>
-          <statusCode code="completed"/>
+          <id root="1526477094"/>
+          <code code="1731207690"/>
           <effectiveTime xsi:type="IVL_TS">
             <low value="2012"/>
             <high value="2012"/>
@@ -479,9 +499,8 @@ This clinical statement represents any procedure that cannot be classified as an
           <entryRelationship>
             <supply classCode="SPLY" moodCode="INT">
               <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
-              <id root="1405269615"/>
-              <code code="1599059709"/>
-              <statusCode code="completed"/>
+              <id root="1117228502"/>
+              <code code="280082799"/>
               <effectiveTime xsi:type="IVL_TS">
                 <low value="2012"/>
                 <high value="2012"/>
@@ -493,7 +512,7 @@ This clinical statement represents any procedure that cannot be classified as an
               <entryRelationship>
                 <act classCode="ACT" moodCode="INT">
                   <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-                  <id root="138601260"/>
+                  <id root="1163488001"/>
                   <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                   <statusCode code="completed"/>
                   <effectiveTime>

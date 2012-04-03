@@ -20,7 +20,7 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="48765-2" </tt><i>Allergies, adverse reactions, alerts</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:7477)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> 2.16.840.1.113883.3.88.12.80.68 <xref href="../../terminology/HITSPProblemStatus.dita">HITSP Problem Status</xref></tt><b> STATIC</b> (CONF:7485)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt>, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/HITSPProblemStatus.dita">HITSP Problem Status</xref> 2.16.840.1.113883.3.88.12.80.68</tt><b> STATIC</b> (CONF:7485)
 <ul><li><p>
 The statusCode associated with any concern must be one of the following values:
 </p>
@@ -36,7 +36,7 @@ historical purposes.
 </p></li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:7498)
 <ul><li>The effectiveTime element records the starting and ending times during which the concern was active.</li></ul></li>
-<li><b>SHALL</b> contain at least one [1..*] <tt><b>allergyObservation</b></tt> (CONF:7509, CONF:7915, CONF:7510)
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>entryRelationship</b></tt> (CONF:7509, CONF:7915, CONF:7510)
 <ol>
 <li>Contains <tt><b>@typeCode="</b>SUBJ" </tt><i>SUBJ</i></li>
 <li>Contains exactly one [1..1] <xref href="../AllergyObservation.dita">Allergy Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.7</tt>)</li></ol></li>
@@ -52,7 +52,7 @@ historical purposes.
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="48765-2" </tt><i>Allergies, adverse reactions, alerts</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:7477)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> 2.16.840.1.113883.3.88.12.80.68 <xref href="../../terminology/HITSPProblemStatus.dita">HITSP Problem Status</xref></tt><b> STATIC</b> (CONF:7485)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt>, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/HITSPProblemStatus.dita">HITSP Problem Status</xref> 2.16.840.1.113883.3.88.12.80.68</tt><b> STATIC</b> (CONF:7485)
 <ul><li><p>
 The statusCode associated with any concern must be one of the following values:
 </p>
@@ -68,21 +68,43 @@ historical purposes.
 </p></li></ul></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:7498)
 <ul><li>The effectiveTime element records the starting and ending times during which the concern was active.</li></ul></li>
-<li><b>SHALL</b> contain at least one [1..*] <tt><b>allergyObservation</b></tt> (CONF:7509, CONF:7915, CONF:7510)
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>entryRelationship</b></tt> (CONF:7509, CONF:7915, CONF:7510)
 <ol>
 <li>Contains <tt><b>@typeCode="</b>SUBJ" </tt><i>SUBJ</i></li>
 <li>Contains exactly one [1..1] <xref href="../AllergyObservation.dita">Allergy Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.7</tt>)</li></ol></li>
 <li>If statusCode = "55561003" Active, then effectiveTime <b>SHALL</b> contain [1..1] low (CONF:7504). (CONF:7504)</li>
 <li>If statusCode = "413322009", then effectiveTime <b>SHALL</b> contain  high [1..1] (CONF:10085). (CONF:10085)</li>
 </ol>
-<section id="tableconformance">
-</section>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::AllergyProblemAct</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::act[cda:templateId/@root = 2.16.840.1.113883.10.20.22.4.30]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClass</entry><entry>CONF:7469</entry><entry> ACCM</entry></row> 
+<row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActMood</entry><entry>CONF:7470</entry><entry> APT</entry></row> 
+<row><entry>negationInd</entry><entry>@negationInd</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>Boolean</entry><entry></entry><entry> </entry></row> 
+<row><entry>nullFlavor</entry><entry>@nullFlavor</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>NullFlavor</entry><entry></entry><entry> ASKU</entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:7477</entry><entry>LOINC 2.16.840.1.113883.6.1 48765-2</entry></row> 
+<row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>IVL_TS</entry><entry>CONF:7498</entry><entry> </entry></row> 
+<row><entry>id</entry><entry>id</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>II</entry><entry>CONF:7472</entry><entry> </entry></row> 
+<row><entry>languageCode</entry><entry>languageCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
+<row><entry>priorityCode</entry><entry>priorityCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
+<row><entry>realmCode</entry><entry>realmCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
+<row><entry>statusCode</entry><entry>statusCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CS</entry><entry>CONF:7485</entry><entry> </entry></row> 
+<row><entry>templateId</entry><entry>templateId</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> 2.16.840.1.113883.10.20.22.4.30</entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>ED</entry><entry></entry><entry> </entry></row> 
+<row><entry>allergyObservation</entry><entry>allergyObservation</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>AllergyObservation</entry><entry>CONF:7509CONF:7915CONF:7510</entry><entry> </entry></row> 
+<row><entry>author</entry><entry>author</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Author</entry><entry></entry><entry> </entry></row> 
+<row><entry>entryRelationship</entry><entry>entryRelationship</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>EntryRelationship</entry><entry></entry><entry> </entry></row> 
+<row><entry>informant</entry><entry>informant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Informant12</entry><entry></entry><entry> </entry></row> 
+<row><entry>participant</entry><entry>participant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Participant2</entry><entry></entry><entry> </entry></row> 
+<row><entry>performer</entry><entry>performer</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Performer2</entry><entry></entry><entry> </entry></row> 
+<row><entry>precondition</entry><entry>precondition</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Precondition</entry><entry></entry><entry> </entry></row> 
+<row><entry>reference</entry><entry>reference</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Reference</entry><entry></entry><entry> </entry></row> 
+<row><entry>specimen</entry><entry>specimen</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Specimen</entry><entry></entry><entry> </entry></row> 
+<row><entry>subject</entry><entry>subject</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>Subject</entry><entry></entry><entry> </entry></row> 
+<row><entry>typeId</entry><entry>typeId</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>InfrastructureRootTypeId</entry><entry></entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <act xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="ACT" moodCode="EVN">
   <templateId root="2.16.840.1.113883.10.20.22.4.30"/>
-  <id root="1661346225"/>
+  <id root="1193722776"/>
   <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergies, adverse reactions, alerts"/>
-  <statusCode code="completed"/>
   <effectiveTime>
     <low value="2012"/>
     <high value="2012"/>
@@ -90,7 +112,7 @@ historical purposes.
   <entryRelationship>
     <observation classCode="OBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.22.4.7"/>
-      <id root="310566168"/>
+      <id root="1131858113"/>
       <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/>
       <statusCode code="completed"/>
       <effectiveTime>
@@ -100,8 +122,8 @@ historical purposes.
       <entryRelationship>
         <observation classCode="OBS" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
-          <id root="103273540"/>
-          <code code="1811724662"/>
+          <id root="1237263478"/>
+          <code code="125587223"/>
           <statusCode code="completed"/>
           <effectiveTime>
             <low value="2012"/>
@@ -110,21 +132,20 @@ historical purposes.
           <entryRelationship>
             <observation classCode="OBS" moodCode="EVN">
               <templateId root="2.16.840.1.113883.10.20.22.4.8"/>
-              <id root="88016036"/>
+              <id root="566980331"/>
               <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Severity observation"/>
               <statusCode code="completed"/>
               <effectiveTime>
                 <low value="2012"/>
                 <high value="2012"/>
               </effectiveTime>
+              <interpretationCode codeSystem="2.16.840.1.113883.5.83" codeSystemName="ObservationInterpretation"/>
             </observation>
           </entryRelationship>
           <entryRelationship>
             <procedure classCode="PROC">
               <templateId root="2.16.840.1.113883.10.20.22.4.14"/>
-              <id root="536136310"/>
-              <code code="1452611300"/>
-              <statusCode code="completed"/>
+              <id root="384107626"/>
               <effectiveTime>
                 <low value="2012"/>
                 <high value="2012"/>
@@ -133,7 +154,7 @@ historical purposes.
               <entryRelationship>
                 <observation classCode="OBS" moodCode="EVN">
                   <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
-                  <id root="1083762340"/>
+                  <id root="1053780744"/>
                   <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
@@ -145,13 +166,12 @@ historical purposes.
               <entryRelationship>
                 <substanceAdministration classCode="SBADM">
                   <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
-                  <id root="1375523323"/>
-                  <code code="519384019"/>
-                  <statusCode code="completed"/>
+                  <id root="700429229"/>
                   <effectiveTime xsi:type="IVL_TS">
                     <low value="2012"/>
                     <high value="2012"/>
                   </effectiveTime>
+                  <administrationUnitCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
                   <consumable/>
                   <entryRelationship>
                     <supply/>
@@ -173,7 +193,7 @@ historical purposes.
               <entryRelationship>
                 <act classCode="ACT" moodCode="INT">
                   <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-                  <id root="1505446316"/>
+                  <id root="1050419389"/>
                   <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
@@ -184,9 +204,7 @@ historical purposes.
               </entryRelationship>
               <entryRelationship>
                 <encounter>
-                  <id root="34502010"/>
-                  <code code="334475838"/>
-                  <statusCode code="completed"/>
+                  <id root="237753866"/>
                   <effectiveTime>
                     <low value="2012"/>
                     <high value="2012"/>
@@ -198,20 +216,17 @@ historical purposes.
           <entryRelationship>
             <substanceAdministration classCode="SBADM">
               <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
-              <id root="62677474"/>
-              <code code="673022240"/>
-              <statusCode code="completed"/>
+              <id root="1820279011"/>
               <effectiveTime xsi:type="IVL_TS">
                 <low value="2012"/>
                 <high value="2012"/>
               </effectiveTime>
+              <administrationUnitCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
               <consumable/>
               <entryRelationship>
                 <supply classCode="SPLY" moodCode="INT">
                   <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
-                  <id root="1258450220"/>
-                  <code code="2016301067"/>
-                  <statusCode code="completed"/>
+                  <id root="1788139584"/>
                   <effectiveTime xsi:type="IVL_TS">
                     <low value="2012"/>
                     <high value="2012"/>
@@ -224,8 +239,8 @@ historical purposes.
               <entryRelationship>
                 <observation classCode="OBS" moodCode="EVN">
                   <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
-                  <id root="1968102197"/>
-                  <code code="1404349468"/>
+                  <id root="2057415282"/>
+                  <code code="2023713026"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
                     <low value="2012"/>
@@ -245,7 +260,7 @@ historical purposes.
               <entryRelationship>
                 <act classCode="ACT" moodCode="INT">
                   <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-                  <id root="1388682004"/>
+                  <id root="1753076004"/>
                   <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
@@ -257,7 +272,7 @@ historical purposes.
               <entryRelationship>
                 <observation classCode="OBS" moodCode="EVN">
                   <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
-                  <id root="793815876"/>
+                  <id root="1943337495"/>
                   <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
@@ -269,9 +284,7 @@ historical purposes.
               <entryRelationship>
                 <supply classCode="SPLY" moodCode="EVN">
                   <templateId root="2.16.840.1.113883.10.20.22.4.18"/>
-                  <id root="1598300635"/>
-                  <code code="812897558"/>
-                  <statusCode code="completed"/>
+                  <id root="1339063894"/>
                   <effectiveTime xsi:type="IVL_TS">
                     <low value="2012"/>
                     <high value="2012"/>
@@ -288,19 +301,20 @@ historical purposes.
       <entryRelationship>
         <observation classCode="OBS" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.22.4.8"/>
-          <id root="1433458280"/>
+          <id root="652583724"/>
           <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Severity observation"/>
           <statusCode code="completed"/>
           <effectiveTime>
             <low value="2012"/>
             <high value="2012"/>
           </effectiveTime>
+          <interpretationCode codeSystem="2.16.840.1.113883.5.83" codeSystemName="ObservationInterpretation"/>
         </observation>
       </entryRelationship>
       <entryRelationship>
         <observation classCode="OBS" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.22.4.28"/>
-          <id root="404126554"/>
+          <id root="1479164897"/>
           <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
           <statusCode code="completed"/>
           <effectiveTime>
