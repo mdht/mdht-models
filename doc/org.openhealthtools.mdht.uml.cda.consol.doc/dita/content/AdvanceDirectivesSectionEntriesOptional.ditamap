@@ -3,7 +3,7 @@
 <bookmap id="cdabook">
 
 	<chapter navtitle="Advance Directives Section Entries Optional" type="topic">
-		<topicref href="../classes/AdvanceDirectivesSectionEntriesOptionalSection.dita" type="topic" />
+		<topicref href="../classes/AdvanceDirectivesSectionEntriesOptional.dita" type="topic" />
 		<topicref href="../classes/AdvanceDirectivesSectionEntriesOptionalTable.dita" type="topic" />
 		<topicref href="../classes/AdvanceDirectivesSectionEntriesOptionalSample.dita" type="topic" />			                         
 	</chapter>

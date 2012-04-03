@@ -3,7 +3,7 @@
 <bookmap id="cdabook">
 
 	<chapter navtitle="Procedures Section" type="topic">
-		<topicref href="../classes/ProceduresSectionSection.dita" type="topic" />
+		<topicref href="../classes/ProceduresSection.dita" type="topic" />
 		<topicref href="../classes/ProceduresSectionTable.dita" type="topic" />
 		<topicref href="../classes/ProceduresSectionSample.dita" type="topic" />			                         
 	</chapter>

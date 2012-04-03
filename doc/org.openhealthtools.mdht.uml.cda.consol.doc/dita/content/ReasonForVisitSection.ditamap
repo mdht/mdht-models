@@ -3,7 +3,7 @@
 <bookmap id="cdabook">
 
 	<chapter navtitle="Reason For Visit Section" type="topic">
-		<topicref href="../classes/ReasonForVisitSectionSection.dita" type="topic" />
+		<topicref href="../classes/ReasonForVisitSection.dita" type="topic" />
 		<topicref href="../classes/ReasonForVisitSectionTable.dita" type="topic" />
 		<topicref href="../classes/ReasonForVisitSectionSample.dita" type="topic" />			                         
 	</chapter>

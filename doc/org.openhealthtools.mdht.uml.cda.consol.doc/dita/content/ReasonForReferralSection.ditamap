@@ -3,7 +3,7 @@
 <bookmap id="cdabook">
 
 	<chapter navtitle="Reason For Referral Section" type="topic">
-		<topicref href="../classes/ReasonForReferralSectionSection.dita" type="topic" />
+		<topicref href="../classes/ReasonForReferralSection.dita" type="topic" />
 		<topicref href="../classes/ReasonForReferralSectionTable.dita" type="topic" />
 		<topicref href="../classes/ReasonForReferralSectionSample.dita" type="topic" />			                         
 	</chapter>

@@ -65,28 +65,28 @@
 <section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
   <templateId root="2.16.840.1.113883.10.20.22.2.1"/>
   <templateId root="2.16.840.1.113883.10.20.22.2.1.1"/>
-  <id root="1757152146"/>
+  <id root="713032289"/>
   <code code="10160-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of medication use"/>
   <title>MedicationsMedications</title>
   <text/>
   <entry>
     <substanceAdministration classCode="SBADM">
       <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
-      <id root="1957020715"/>
+      <id root="1343249200"/>
       <text>Text Value</text>
-      <effectiveTime value="20120402"/>
+      <effectiveTime value="20120403"/>
       <administrationUnitCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
       <consumable/>
       <entryRelationship>
         <supply classCode="SPLY" moodCode="INT">
           <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
-          <id root="1141243028"/>
+          <id root="388484749"/>
           <text>Text Value</text>
-          <effectiveTime value="20120402"/>
+          <effectiveTime value="20120403"/>
           <entryRelationship>
             <act classCode="ACT" moodCode="INT">
               <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-              <id root="121733420"/>
+              <id root="991716825"/>
               <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
               <text>Text Value</text>
               <statusCode code="completed"/>
@@ -101,8 +101,8 @@
       <entryRelationship>
         <observation classCode="OBS" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
-          <id root="1647418586"/>
-          <code code="1381302400"/>
+          <id root="1478571375"/>
+          <code code="559750966"/>
           <text>Text Value</text>
           <statusCode code="completed"/>
           <effectiveTime>
@@ -112,7 +112,7 @@
           <entryRelationship>
             <observation classCode="OBS" moodCode="EVN">
               <templateId root="2.16.840.1.113883.10.20.22.4.8"/>
-              <id root="575008663"/>
+              <id root="1641089246"/>
               <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Severity observation"/>
               <text>Text Value</text>
               <statusCode code="completed"/>
@@ -126,7 +126,7 @@
           <entryRelationship>
             <procedure classCode="PROC">
               <templateId root="2.16.840.1.113883.10.20.22.4.14"/>
-              <id root="1536705016"/>
+              <id root="1662302393"/>
               <text>Text Value</text>
               <effectiveTime>
                 <low value="2012"/>
@@ -136,7 +136,7 @@
               <entryRelationship>
                 <observation classCode="OBS" moodCode="EVN">
                   <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
-                  <id root="1039013726"/>
+                  <id root="861261237"/>
                   <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                   <text>Text Value</text>
                   <statusCode code="completed"/>
@@ -149,9 +149,9 @@
               <entryRelationship>
                 <substanceAdministration classCode="SBADM">
                   <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
-                  <id root="616121847"/>
+                  <id root="1328932005"/>
                   <text>Text Value</text>
-                  <effectiveTime value="20120402"/>
+                  <effectiveTime value="20120403"/>
                   <administrationUnitCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
                   <consumable/>
                   <entryRelationship>
@@ -174,7 +174,7 @@
               <entryRelationship>
                 <act classCode="ACT" moodCode="INT">
                   <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-                  <id root="527491446"/>
+                  <id root="1045881053"/>
                   <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                   <text>Text Value</text>
                   <statusCode code="completed"/>
@@ -186,7 +186,7 @@
               </entryRelationship>
               <entryRelationship>
                 <encounter>
-                  <id root="2023259133"/>
+                  <id root="848575438"/>
                   <text>Text Value</text>
                   <effectiveTime>
                     <low value="2012"/>
@@ -199,17 +199,17 @@
           <entryRelationship>
             <substanceAdministration classCode="SBADM">
               <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
-              <id root="41646888"/>
+              <id root="1283585307"/>
               <text>Text Value</text>
-              <effectiveTime value="20120402"/>
+              <effectiveTime value="20120403"/>
               <administrationUnitCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
               <consumable/>
               <entryRelationship>
                 <supply classCode="SPLY" moodCode="INT">
                   <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
-                  <id root="1621104588"/>
+                  <id root="410867463"/>
                   <text>Text Value</text>
-                  <effectiveTime value="20120402"/>
+                  <effectiveTime value="20120403"/>
                   <entryRelationship>
                     <act/>
                   </entryRelationship>
@@ -218,8 +218,8 @@
               <entryRelationship>
                 <observation classCode="OBS" moodCode="EVN">
                   <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
-                  <id root="1700753354"/>
-                  <code code="1079940031"/>
+                  <id root="979595856"/>
+                  <code code="1131371251"/>
                   <text>Text Value</text>
                   <statusCode code="completed"/>
                   <effectiveTime>
@@ -240,7 +240,7 @@
               <entryRelationship>
                 <act classCode="ACT" moodCode="INT">
                   <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-                  <id root="1295333948"/>
+                  <id root="352082505"/>
                   <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                   <text>Text Value</text>
                   <statusCode code="completed"/>
@@ -253,7 +253,7 @@
               <entryRelationship>
                 <observation classCode="OBS" moodCode="EVN">
                   <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
-                  <id root="864286819"/>
+                  <id root="823228507"/>
                   <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                   <text>Text Value</text>
                   <statusCode code="completed"/>
@@ -266,9 +266,9 @@
               <entryRelationship>
                 <supply classCode="SPLY" moodCode="EVN">
                   <templateId root="2.16.840.1.113883.10.20.22.4.18"/>
-                  <id root="550496994"/>
+                  <id root="1921143238"/>
                   <text>Text Value</text>
-                  <effectiveTime value="20120402"/>
+                  <effectiveTime value="20120403"/>
                   <entryRelationship>
                     <supply/>
                   </entryRelationship>
@@ -281,7 +281,7 @@
       <entryRelationship>
         <act classCode="ACT" moodCode="INT">
           <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-          <id root="544972902"/>
+          <id root="1779698494"/>
           <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
           <text>Text Value</text>
           <statusCode code="completed"/>
@@ -294,7 +294,7 @@
       <entryRelationship>
         <observation classCode="OBS" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
-          <id root="164451306"/>
+          <id root="1554083517"/>
           <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
           <text>Text Value</text>
           <statusCode code="completed"/>
@@ -307,19 +307,19 @@
       <entryRelationship>
         <supply classCode="SPLY" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.22.4.18"/>
-          <id root="591238217"/>
+          <id root="1224224539"/>
           <text>Text Value</text>
-          <effectiveTime value="20120402"/>
+          <effectiveTime value="20120403"/>
           <entryRelationship>
             <supply classCode="SPLY" moodCode="INT">
               <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
-              <id root="2099126951"/>
+              <id root="1196400024"/>
               <text>Text Value</text>
-              <effectiveTime value="20120402"/>
+              <effectiveTime value="20120403"/>
               <entryRelationship>
                 <act classCode="ACT" moodCode="INT">
                   <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-                  <id root="1837695269"/>
+                  <id root="1901260987"/>
                   <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                   <text>Text Value</text>
                   <statusCode code="completed"/>

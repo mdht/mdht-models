@@ -3,7 +3,7 @@
 <bookmap id="cdabook">
 
 	<chapter navtitle="Postoperative Diagnosis Section" type="topic">
-		<topicref href="../classes/PostoperativeDiagnosisSectionSection.dita" type="topic" />
+		<topicref href="../classes/PostoperativeDiagnosisSection.dita" type="topic" />
 		<topicref href="../classes/PostoperativeDiagnosisSectionTable.dita" type="topic" />
 		<topicref href="../classes/PostoperativeDiagnosisSectionSample.dita" type="topic" />			                         
 	</chapter>

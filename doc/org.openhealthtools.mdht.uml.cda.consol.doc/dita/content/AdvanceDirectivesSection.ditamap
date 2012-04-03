@@ -3,7 +3,7 @@
 <bookmap id="cdabook">
 
 	<chapter navtitle="Advance Directives Section" type="topic">
-		<topicref href="../classes/AdvanceDirectivesSectionSection.dita" type="topic" />
+		<topicref href="../classes/AdvanceDirectivesSection.dita" type="topic" />
 		<topicref href="../classes/AdvanceDirectivesSectionTable.dita" type="topic" />
 		<topicref href="../classes/AdvanceDirectivesSectionSample.dita" type="topic" />			                         
 	</chapter>

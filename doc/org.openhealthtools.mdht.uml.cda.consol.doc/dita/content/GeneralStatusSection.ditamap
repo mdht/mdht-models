@@ -3,7 +3,7 @@
 <bookmap id="cdabook">
 
 	<chapter navtitle="General Status Section" type="topic">
-		<topicref href="../classes/GeneralStatusSectionSection.dita" type="topic" />
+		<topicref href="../classes/GeneralStatusSection.dita" type="topic" />
 		<topicref href="../classes/GeneralStatusSectionTable.dita" type="topic" />
 		<topicref href="../classes/GeneralStatusSectionSample.dita" type="topic" />			                         
 	</chapter>

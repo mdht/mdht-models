@@ -62,7 +62,7 @@
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <act xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="ACT" moodCode="EVN">
   <templateId root="2.16.840.1.113883.10.20.22.4.64"/>
-  <id root="1984856173"/>
+  <id root="1377504104"/>
   <code code="48767-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Annotation comment"/>
   <text>Text Value</text>
   <effectiveTime>
@@ -72,7 +72,7 @@
   <author>
     <time/>
     <assignedAuthor>
-      <id root="1599632223"/>
+      <id root="163815314"/>
       <addr/>
     </assignedAuthor>
   </author>

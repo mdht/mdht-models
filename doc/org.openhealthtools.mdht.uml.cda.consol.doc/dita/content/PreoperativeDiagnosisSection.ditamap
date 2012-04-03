@@ -3,7 +3,7 @@
 <bookmap id="cdabook">
 
 	<chapter navtitle="Preoperative Diagnosis Section" type="topic">
-		<topicref href="../classes/PreoperativeDiagnosisSectionSection.dita" type="topic" />
+		<topicref href="../classes/PreoperativeDiagnosisSection.dita" type="topic" />
 		<topicref href="../classes/PreoperativeDiagnosisSectionTable.dita" type="topic" />
 		<topicref href="../classes/PreoperativeDiagnosisSectionSample.dita" type="topic" />			                         
 	</chapter>

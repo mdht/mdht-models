@@ -227,13 +227,13 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
   <typeId root="2.16.840.1.113883.1.3"/>
   <templateId root="2.16.840.1.113883.10.20.22.1.1"/>
   <templateId root="2.16.840.1.113883.10.20.22.1.2"/>
-  <id root="288619090"/>
+  <id root="1124503861"/>
   <code code="34133-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Summarization of Episode Note"/>
   <title/>
   <effectiveTime/>
   <confidentialityCode codeSystem="2.16.840.1.113883.5.25" codeSystemName="ConfidentialityCode"/>
   <languageCode/>
-  <setId root="877987af-5687-4c6f-a84a-e22a57f03676"/>
+  <setId root="80ac34f3-8554-427f-ac40-4ff3151ee377"/>
   <versionNumber value="1"/>
   <recordTarget>
     <typeId root="2.16.840.1.113883.1.3"/>
@@ -242,7 +242,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
   <author>
     <time/>
     <assignedAuthor>
-      <id root="2065846735"/>
+      <id root="100865744"/>
     </assignedAuthor>
   </author>
   <custodian/>
@@ -254,7 +254,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
       </effectiveTime>
       <performer typeCode="PRF">
         <assignedEntity>
-          <id root="1388880393"/>
+          <id root="1166962316"/>
           <code codeSystem="2.16.840.1.113883.6.101" codeSystemName="NUCC Health Care Provider Taxonomy"/>
         </assignedEntity>
       </performer>
@@ -267,21 +267,21 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
           <typeId root="2.16.840.1.113883.1.3"/>
           <templateId root="2.16.840.1.113883.10.20.22.2.6"/>
           <templateId root="2.16.840.1.113883.10.20.22.2.6.1"/>
-          <id root="500228729"/>
+          <id root="1417043594"/>
           <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergies, adverse reactions, alerts"/>
           <title/>
           <languageCode/>
           <author>
             <time/>
             <assignedAuthor>
-              <id root="351191141"/>
+              <id root="1524355205"/>
             </assignedAuthor>
           </author>
           <entry>
             <act classCode="ACT" moodCode="EVN">
               <typeId root="2.16.840.1.113883.1.3"/>
               <templateId root="2.16.840.1.113883.10.20.22.4.30"/>
-              <id root="1528019916"/>
+              <id root="1945007896"/>
               <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergies, adverse reactions, alerts"/>
               <effectiveTime>
                 <low value="2012"/>
@@ -291,14 +291,14 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
               <author>
                 <time/>
                 <assignedAuthor>
-                  <id root="875669645"/>
+                  <id root="143472266"/>
                 </assignedAuthor>
               </author>
               <entryRelationship>
                 <observation classCode="OBS" moodCode="EVN">
                   <typeId root="2.16.840.1.113883.1.3"/>
                   <templateId root="2.16.840.1.113883.10.20.22.4.7"/>
-                  <id root="1239800730"/>
+                  <id root="2141214770"/>
                   <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
@@ -314,8 +314,8 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                     <observation classCode="OBS" moodCode="EVN">
                       <typeId root="2.16.840.1.113883.1.3"/>
                       <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
-                      <id root="63553924"/>
-                      <code code="498644081"/>
+                      <id root="1547845743"/>
+                      <code code="567203331"/>
                       <statusCode code="completed"/>
                       <effectiveTime>
                         <low value="2012"/>
@@ -338,7 +338,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                     <observation classCode="OBS" moodCode="EVN">
                       <typeId root="2.16.840.1.113883.1.3"/>
                       <templateId root="2.16.840.1.113883.10.20.22.4.8"/>
-                      <id root="11791255"/>
+                      <id root="788527679"/>
                       <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Severity observation"/>
                       <statusCode code="completed"/>
                       <effectiveTime>
@@ -354,7 +354,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                     <observation classCode="OBS" moodCode="EVN">
                       <typeId root="2.16.840.1.113883.1.3"/>
                       <templateId root="2.16.840.1.113883.10.20.22.4.28"/>
-                      <id root="780593909"/>
+                      <id root="1226642305"/>
                       <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
                       <statusCode code="completed"/>
                       <effectiveTime>
@@ -376,38 +376,38 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
           <typeId root="2.16.840.1.113883.1.3"/>
           <templateId root="2.16.840.1.113883.10.20.22.2.1"/>
           <templateId root="2.16.840.1.113883.10.20.22.2.1.1"/>
-          <id root="459031160"/>
+          <id root="1494936874"/>
           <code code="10160-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of medication use"/>
           <title>MedicationsMedications</title>
           <languageCode/>
           <author>
             <time/>
             <assignedAuthor>
-              <id root="836656928"/>
+              <id root="987838797"/>
             </assignedAuthor>
           </author>
           <entry>
             <substanceAdministration classCode="SBADM">
               <typeId root="2.16.840.1.113883.1.3"/>
               <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
-              <id root="1976335788"/>
-              <code code="659470973"/>
-              <effectiveTime value="20120402"/>
+              <id root="942782896"/>
+              <code code="538249198"/>
+              <effectiveTime value="20120403"/>
               <administrationUnitCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
               <consumable/>
               <author>
                 <time/>
                 <assignedAuthor>
-                  <id root="1660405593"/>
+                  <id root="64821252"/>
                 </assignedAuthor>
               </author>
               <entryRelationship>
                 <supply classCode="SPLY" moodCode="INT">
                   <typeId root="2.16.840.1.113883.1.3"/>
                   <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
-                  <id root="2043629775"/>
-                  <code code="1961813621"/>
-                  <effectiveTime value="20120402"/>
+                  <id root="1343936060"/>
+                  <code code="508677854"/>
+                  <effectiveTime value="20120403"/>
                   <author>
                     <time/>
                     <assignedAuthor/>
@@ -416,7 +416,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                     <act classCode="ACT" moodCode="INT">
                       <typeId root="2.16.840.1.113883.1.3"/>
                       <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-                      <id root="1120282500"/>
+                      <id root="948624917"/>
                       <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                       <statusCode code="completed"/>
                       <effectiveTime>
@@ -433,8 +433,8 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                 <observation classCode="OBS" moodCode="EVN">
                   <typeId root="2.16.840.1.113883.1.3"/>
                   <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
-                  <id root="955564295"/>
-                  <code code="266513804"/>
+                  <id root="283980561"/>
+                  <code code="542588953"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
                     <low value="2012"/>
@@ -449,7 +449,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                     <observation classCode="OBS" moodCode="EVN">
                       <typeId root="2.16.840.1.113883.1.3"/>
                       <templateId root="2.16.840.1.113883.10.20.22.4.8"/>
-                      <id root="1096476506"/>
+                      <id root="1783873740"/>
                       <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Severity observation"/>
                       <statusCode code="completed"/>
                       <effectiveTime>
@@ -465,8 +465,8 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                     <procedure classCode="PROC">
                       <typeId root="2.16.840.1.113883.1.3"/>
                       <templateId root="2.16.840.1.113883.10.20.22.4.14"/>
-                      <id root="1529028980"/>
-                      <code code="1091954727"/>
+                      <id root="12246852"/>
+                      <code code="395309589"/>
                       <effectiveTime>
                         <low value="2012"/>
                         <high value="2012"/>
@@ -492,9 +492,9 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                     <substanceAdministration classCode="SBADM">
                       <typeId root="2.16.840.1.113883.1.3"/>
                       <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
-                      <id root="353583864"/>
-                      <code code="2039933573"/>
-                      <effectiveTime value="20120402"/>
+                      <id root="1728899860"/>
+                      <code code="2062454348"/>
+                      <effectiveTime value="20120403"/>
                       <administrationUnitCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
                       <consumable/>
                       <author/>
@@ -521,7 +521,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                 <act classCode="ACT" moodCode="INT">
                   <typeId root="2.16.840.1.113883.1.3"/>
                   <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-                  <id root="71769604"/>
+                  <id root="469815342"/>
                   <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
@@ -539,7 +539,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                 <observation classCode="OBS" moodCode="EVN">
                   <typeId root="2.16.840.1.113883.1.3"/>
                   <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
-                  <id root="1332863772"/>
+                  <id root="100554906"/>
                   <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
@@ -557,9 +557,9 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                 <supply classCode="SPLY" moodCode="EVN">
                   <typeId root="2.16.840.1.113883.1.3"/>
                   <templateId root="2.16.840.1.113883.10.20.22.4.18"/>
-                  <id root="625535489"/>
-                  <code code="1447313321"/>
-                  <effectiveTime value="20120402"/>
+                  <id root="2135468816"/>
+                  <code code="1634396910"/>
+                  <effectiveTime value="20120403"/>
                   <author>
                     <time/>
                     <assignedAuthor/>
@@ -568,9 +568,9 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                     <supply classCode="SPLY" moodCode="INT">
                       <typeId root="2.16.840.1.113883.1.3"/>
                       <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
-                      <id root="649101512"/>
-                      <code code="551801323"/>
-                      <effectiveTime value="20120402"/>
+                      <id root="312945045"/>
+                      <code code="1540435915"/>
+                      <effectiveTime value="20120403"/>
                       <author/>
                       <entryRelationship>
                         <act/>
@@ -588,21 +588,21 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
           <typeId root="2.16.840.1.113883.1.3"/>
           <templateId root="2.16.840.1.113883.10.20.22.2.5"/>
           <templateId root="2.16.840.1.113883.10.20.22.2.5.1"/>
-          <id root="1081414056"/>
+          <id root="1923374310"/>
           <code code="11450-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problem List"/>
           <title/>
           <languageCode/>
           <author>
             <time/>
             <assignedAuthor>
-              <id root="210811764"/>
+              <id root="1393485976"/>
             </assignedAuthor>
           </author>
           <entry>
             <act classCode="ACT" moodCode="EVN">
               <typeId root="2.16.840.1.113883.1.3"/>
               <templateId root="2.16.840.1.113883.10.20.22.4.3"/>
-              <id root="1207289888"/>
+              <id root="1149128183"/>
               <code code="CONC" codeSystem="2.16.840.1.113883.5.6" codeSystemName="HL7ActClass" displayName="Concern"/>
               <effectiveTime>
                 <low value="2012"/>
@@ -612,14 +612,14 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
               <author>
                 <time/>
                 <assignedAuthor>
-                  <id root="1923270556"/>
+                  <id root="1192537787"/>
                 </assignedAuthor>
               </author>
               <entryRelationship>
                 <observation moodCode="EVN">
                   <typeId root="2.16.840.1.113883.1.3"/>
                   <templateId root="2.16.840.1.113883.10.20.22.4.4"/>
-                  <id root="377711607"/>
+                  <id root="1083734550"/>
                   <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
@@ -635,7 +635,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                     <observation classCode="OBS" moodCode="EVN">
                       <typeId root="2.16.840.1.113883.1.3"/>
                       <templateId root="2.16.840.1.113883.10.20.22.4.31"/>
-                      <id root="2123654691"/>
+                      <id root="741728515"/>
                       <code code="445518008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age At Onset"/>
                       <statusCode code="completed"/>
                       <effectiveTime>
@@ -650,7 +650,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                     <observation classCode="OBS" moodCode="EVN">
                       <typeId root="2.16.840.1.113883.1.3"/>
                       <templateId root="2.16.840.1.113883.10.20.22.4.5"/>
-                      <id root="1502926472"/>
+                      <id root="386636526"/>
                       <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
                       <statusCode code="completed"/>
                       <effectiveTime>
@@ -665,7 +665,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                     <observation classCode="OBS" moodCode="EVN">
                       <typeId root="2.16.840.1.113883.1.3"/>
                       <templateId root="2.16.840.1.113883.10.20.22.4.6"/>
-                      <id root="1406713532"/>
+                      <id root="241342307"/>
                       <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
                       <statusCode code="completed"/>
                       <effectiveTime>
@@ -687,14 +687,14 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
           <typeId root="2.16.840.1.113883.1.3"/>
           <templateId root="2.16.840.1.113883.10.20.22.2.7"/>
           <templateId root="2.16.840.1.113883.10.20.22.2.7.1"/>
-          <id root="12770768"/>
+          <id root="233133646"/>
           <code code="47519-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of procedures"/>
           <title>Procedures</title>
           <languageCode/>
           <author>
             <time/>
             <assignedAuthor>
-              <id root="1110597822"/>
+              <id root="1441139044"/>
             </assignedAuthor>
           </author>
         </section>
@@ -704,22 +704,22 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
           <typeId root="2.16.840.1.113883.1.3"/>
           <templateId root="2.16.840.1.113883.10.20.22.2.3"/>
           <templateId root="2.16.840.1.113883.10.20.22.2.3.1"/>
-          <id root="171374964"/>
+          <id root="1666692064"/>
           <code code="30954-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Relevant diagnostic tests and/or laboratory data"/>
           <title/>
           <languageCode/>
           <author>
             <time/>
             <assignedAuthor>
-              <id root="468216350"/>
+              <id root="681737053"/>
             </assignedAuthor>
           </author>
           <entry>
             <organizer moodCode="EVN">
               <typeId root="2.16.840.1.113883.1.3"/>
               <templateId root="2.16.840.1.113883.10.20.22.4.1"/>
-              <id root="340116667"/>
-              <code code="1574266226"/>
+              <id root="4336995"/>
+              <code code="86000502"/>
               <statusCode code="completed"/>
               <effectiveTime>
                 <low value="2012"/>
@@ -728,15 +728,15 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
               <author>
                 <time/>
                 <assignedAuthor>
-                  <id root="477530299"/>
+                  <id root="1202209563"/>
                 </assignedAuthor>
               </author>
               <component>
                 <observation classCode="OBS" moodCode="EVN">
                   <typeId root="2.16.840.1.113883.1.3"/>
                   <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
-                  <id root="1358064442"/>
-                  <code code="797733650"/>
+                  <id root="203958456"/>
+                  <code code="1291474283"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
                     <low value="2012"/>
@@ -758,21 +758,21 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
           <typeId root="2.16.840.1.113883.1.3"/>
           <templateId root="2.16.840.1.113883.10.20.22.2.21"/>
           <templateId root="2.16.840.1.113883.10.20.22.2.21.1"/>
-          <id root="421997936"/>
+          <id root="212793297"/>
           <code code="42348-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Advance directives"/>
           <title/>
           <languageCode/>
           <author>
             <time/>
             <assignedAuthor>
-              <id root="858075183"/>
+              <id root="469186475"/>
             </assignedAuthor>
           </author>
           <entry>
             <observation classCode="OBS" moodCode="EVN">
               <typeId root="2.16.840.1.113883.1.3"/>
               <templateId root="2.16.840.1.113883.10.20.22.4.48"/>
-              <id root="1905972640"/>
+              <id root="1038212033"/>
               <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
               <statusCode code="completed"/>
               <effectiveTime>
@@ -783,7 +783,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
               <author>
                 <time/>
                 <assignedAuthor>
-                  <id root="143157159"/>
+                  <id root="377664402"/>
                 </assignedAuthor>
               </author>
             </observation>
@@ -795,21 +795,21 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
           <typeId root="2.16.840.1.113883.1.3"/>
           <templateId root="2.16.840.1.113883.10.20.22.2.22"/>
           <templateId root="2.16.840.1.113883.10.20.22.2.22.1"/>
-          <id root="1098873703"/>
+          <id root="211685614"/>
           <code code="46240-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Encounters"/>
           <title/>
           <languageCode/>
           <author>
             <time/>
             <assignedAuthor>
-              <id root="597462403"/>
+              <id root="918390239"/>
             </assignedAuthor>
           </author>
           <entry>
             <encounter classCode="ENC" moodCode="EVN">
               <typeId root="2.16.840.1.113883.1.3"/>
               <templateId root="2.16.840.1.113883.10.20.22.4.49"/>
-              <id root="1556474250"/>
+              <id root="190960950"/>
               <code codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT-4"/>
               <effectiveTime>
                 <low value="2012"/>
@@ -818,14 +818,14 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
               <author>
                 <time/>
                 <assignedAuthor>
-                  <id root="606892792"/>
+                  <id root="1704297907"/>
                 </assignedAuthor>
               </author>
               <entryRelationship>
                 <observation classCode="OBS" moodCode="EVN">
                   <typeId root="2.16.840.1.113883.1.3"/>
                   <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
-                  <id root="466215303"/>
+                  <id root="709927217"/>
                   <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
@@ -847,22 +847,22 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
         <section>
           <typeId root="2.16.840.1.113883.1.3"/>
           <templateId root="2.16.840.1.113883.10.20.22.2.15"/>
-          <id root="991812533"/>
+          <id root="1177382502"/>
           <code code="10157-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Family History"/>
           <title/>
           <languageCode/>
           <author>
             <time/>
             <assignedAuthor>
-              <id root="1739430756"/>
+              <id root="1622026441"/>
             </assignedAuthor>
           </author>
           <entry>
             <organizer classCode="CLUSTER" moodCode="EVN">
               <typeId root="2.16.840.1.113883.1.3"/>
               <templateId root="2.16.840.1.113883.10.20.22.4.45"/>
-              <id root="1443155285"/>
-              <code code="201458813"/>
+              <id root="563574501"/>
+              <code code="1253633028"/>
               <statusCode code="completed"/>
               <effectiveTime>
                 <low value="2012"/>
@@ -871,14 +871,14 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
               <author>
                 <time/>
                 <assignedAuthor>
-                  <id root="283343191"/>
+                  <id root="623087628"/>
                 </assignedAuthor>
               </author>
               <component>
                 <observation classCode="OBS" moodCode="EVN">
                   <typeId root="2.16.840.1.113883.1.3"/>
                   <templateId root="2.16.840.1.113883.10.20.22.4.46"/>
-                  <id root="465921140"/>
+                  <id root="1246655394"/>
                   <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
@@ -894,7 +894,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                     <observation classCode="OBS" moodCode="EVN">
                       <typeId root="2.16.840.1.113883.1.3"/>
                       <templateId root="2.16.840.1.113883.10.20.22.4.31"/>
-                      <id root="993850566"/>
+                      <id root="1922962553"/>
                       <code code="445518008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age At Onset"/>
                       <statusCode code="completed"/>
                       <effectiveTime>
@@ -909,7 +909,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                     <observation classCode="OBS" moodCode="EVN">
                       <typeId root="2.16.840.1.113883.1.3"/>
                       <templateId root="2.16.840.1.113883.10.20.22.4.47"/>
-                      <id root="510638322"/>
+                      <id root="674641051"/>
                       <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Assertion"/>
                       <statusCode code="completed"/>
                       <effectiveTime>
@@ -930,21 +930,21 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
         <section>
           <typeId root="2.16.840.1.113883.1.3"/>
           <templateId root="2.16.840.1.113883.10.20.22.2.14"/>
-          <id root="2047335305"/>
+          <id root="1591767821"/>
           <code code="47420-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Functional status assessment"/>
           <title/>
           <languageCode/>
           <author>
             <time/>
             <assignedAuthor>
-              <id root="1626814468"/>
+              <id root="2094660894"/>
             </assignedAuthor>
           </author>
           <entry>
             <observation moodCode="EVN">
               <typeId root="2.16.840.1.113883.1.3"/>
               <templateId root="2.16.840.1.113883.10.20.22.4.4"/>
-              <id root="1557059145"/>
+              <id root="1606603341"/>
               <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
               <statusCode code="completed"/>
               <effectiveTime>
@@ -955,14 +955,14 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
               <author>
                 <time/>
                 <assignedAuthor>
-                  <id root="228978906"/>
+                  <id root="350383404"/>
                 </assignedAuthor>
               </author>
               <entryRelationship>
                 <observation classCode="OBS" moodCode="EVN">
                   <typeId root="2.16.840.1.113883.1.3"/>
                   <templateId root="2.16.840.1.113883.10.20.22.4.31"/>
-                  <id root="1547609793"/>
+                  <id root="9337681"/>
                   <code code="445518008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age At Onset"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
@@ -980,7 +980,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                 <observation classCode="OBS" moodCode="EVN">
                   <typeId root="2.16.840.1.113883.1.3"/>
                   <templateId root="2.16.840.1.113883.10.20.22.4.5"/>
-                  <id root="1773463083"/>
+                  <id root="173341949"/>
                   <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
@@ -998,7 +998,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                 <observation classCode="OBS" moodCode="EVN">
                   <typeId root="2.16.840.1.113883.1.3"/>
                   <templateId root="2.16.840.1.113883.10.20.22.4.6"/>
-                  <id root="174482760"/>
+                  <id root="570564854"/>
                   <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
@@ -1018,8 +1018,8 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
             <observation classCode="OBS" moodCode="EVN">
               <typeId root="2.16.840.1.113883.1.3"/>
               <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
-              <id root="2055213649"/>
-              <code code="1668480954"/>
+              <id root="2041091595"/>
+              <code code="661931082"/>
               <statusCode code="completed"/>
               <effectiveTime>
                 <low value="2012"/>
@@ -1029,7 +1029,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
               <author>
                 <time/>
                 <assignedAuthor>
-                  <id root="799776431"/>
+                  <id root="1279652615"/>
                 </assignedAuthor>
               </author>
             </observation>
@@ -1040,35 +1040,35 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
         <section>
           <typeId root="2.16.840.1.113883.1.3"/>
           <templateId root="2.16.840.1.113883.10.20.22.2.2"/>
-          <id root="454188777"/>
+          <id root="408684515"/>
           <code code="11369-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
           <title/>
           <languageCode/>
           <author>
             <time/>
             <assignedAuthor>
-              <id root="222912095"/>
+              <id root="1540788477"/>
             </assignedAuthor>
           </author>
           <entry>
             <substanceAdministration classCode="SBADM" negationInd="false">
               <typeId root="2.16.840.1.113883.1.3"/>
               <templateId root="2.16.840.1.113883.10.20.22.4.52"/>
-              <id root="1924128790"/>
-              <code code="907673339"/>
-              <effectiveTime value="20120402"/>
+              <id root="216432658"/>
+              <code code="186338900"/>
+              <effectiveTime value="20120403"/>
               <consumable/>
               <author>
                 <time/>
                 <assignedAuthor>
-                  <id root="506852147"/>
+                  <id root="293212686"/>
                 </assignedAuthor>
               </author>
               <entryRelationship>
                 <observation classCode="OBS" moodCode="EVN">
                   <typeId root="2.16.840.1.113883.1.3"/>
                   <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
-                  <id root="629079325"/>
+                  <id root="1460677719"/>
                   <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
@@ -1086,7 +1086,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                 <act classCode="ACT" moodCode="INT">
                   <typeId root="2.16.840.1.113883.1.3"/>
                   <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-                  <id root="677502978"/>
+                  <id root="1078772814"/>
                   <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
@@ -1104,9 +1104,9 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                 <supply classCode="SPLY" moodCode="EVN">
                   <typeId root="2.16.840.1.113883.1.3"/>
                   <templateId root="2.16.840.1.113883.10.20.22.4.18"/>
-                  <id root="85068461"/>
-                  <code code="1756645300"/>
-                  <effectiveTime value="20120402"/>
+                  <id root="604128447"/>
+                  <code code="1497218511"/>
+                  <effectiveTime value="20120403"/>
                   <author>
                     <time/>
                     <assignedAuthor/>
@@ -1115,9 +1115,9 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                     <supply classCode="SPLY" moodCode="INT">
                       <typeId root="2.16.840.1.113883.1.3"/>
                       <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
-                      <id root="638426393"/>
-                      <code code="2067314462"/>
-                      <effectiveTime value="20120402"/>
+                      <id root="2111122806"/>
+                      <code code="1335222265"/>
+                      <effectiveTime value="20120403"/>
                       <author/>
                       <entryRelationship>
                         <act/>
@@ -1130,8 +1130,8 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                 <observation classCode="OBS" moodCode="EVN">
                   <typeId root="2.16.840.1.113883.1.3"/>
                   <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
-                  <id root="1888773904"/>
-                  <code code="268022886"/>
+                  <id root="1163061927"/>
+                  <code code="1362433221"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
                     <low value="2012"/>
@@ -1146,7 +1146,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                     <observation classCode="OBS" moodCode="EVN">
                       <typeId root="2.16.840.1.113883.1.3"/>
                       <templateId root="2.16.840.1.113883.10.20.22.4.8"/>
-                      <id root="1019911933"/>
+                      <id root="984308172"/>
                       <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Severity observation"/>
                       <statusCode code="completed"/>
                       <effectiveTime>
@@ -1162,8 +1162,8 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                     <procedure classCode="PROC">
                       <typeId root="2.16.840.1.113883.1.3"/>
                       <templateId root="2.16.840.1.113883.10.20.22.4.14"/>
-                      <id root="514352833"/>
-                      <code code="1957005509"/>
+                      <id root="150515548"/>
+                      <code code="1399972048"/>
                       <effectiveTime>
                         <low value="2012"/>
                         <high value="2012"/>
@@ -1189,9 +1189,9 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                     <substanceAdministration classCode="SBADM">
                       <typeId root="2.16.840.1.113883.1.3"/>
                       <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
-                      <id root="760824850"/>
-                      <code code="2021701420"/>
-                      <effectiveTime value="20120402"/>
+                      <id root="357872780"/>
+                      <code code="329254488"/>
+                      <effectiveTime value="20120403"/>
                       <administrationUnitCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
                       <consumable/>
                       <author/>
@@ -1218,7 +1218,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                 <observation classCode="OBS" moodCode="EVN">
                   <typeId root="2.16.840.1.113883.1.3"/>
                   <templateId root="2.16.840.1.113883.10.20.22.4.53"/>
-                  <id root="1552467205"/>
+                  <id root="426021165"/>
                   <code codeSystem="2.16.840.1.113883.5.8" codeSystemName="ActReason"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
@@ -1236,9 +1236,9 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                 <supply classCode="SPLY" moodCode="INT">
                   <typeId root="2.16.840.1.113883.1.3"/>
                   <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
-                  <id root="862422684"/>
-                  <code code="36559182"/>
-                  <effectiveTime value="20120402"/>
+                  <id root="149357921"/>
+                  <code code="967734161"/>
+                  <effectiveTime value="20120403"/>
                   <author>
                     <time/>
                     <assignedAuthor/>
@@ -1247,7 +1247,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                     <act classCode="ACT" moodCode="INT">
                       <typeId root="2.16.840.1.113883.1.3"/>
                       <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-                      <id root="1590630678"/>
+                      <id root="1088143069"/>
                       <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                       <statusCode code="completed"/>
                       <effectiveTime>
@@ -1268,27 +1268,27 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
         <section>
           <typeId root="2.16.840.1.113883.1.3"/>
           <templateId root="2.16.840.1.113883.10.20.22.2.23"/>
-          <id root="433990532"/>
+          <id root="705411575"/>
           <code code="46264-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Medical Equipment"/>
           <title/>
           <languageCode/>
           <author>
             <time/>
             <assignedAuthor>
-              <id root="1405493436"/>
+              <id root="934339641"/>
             </assignedAuthor>
           </author>
           <entry>
             <supply classCode="SPLY">
               <typeId root="2.16.840.1.113883.1.3"/>
               <templateId root="2.16.840.1.113883.10.20.22.4.50"/>
-              <id root="462676489"/>
-              <code code="232682548"/>
-              <effectiveTime value="20120402"/>
+              <id root="808355875"/>
+              <code code="476942513"/>
+              <effectiveTime value="20120403"/>
               <author>
                 <time/>
                 <assignedAuthor>
-                  <id root="1549486927"/>
+                  <id root="1960114441"/>
                 </assignedAuthor>
               </author>
             </supply>
@@ -1299,21 +1299,21 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
         <section>
           <typeId root="2.16.840.1.113883.1.3"/>
           <templateId root="2.16.840.1.113883.10.20.22.2.18"/>
-          <id root="967883623"/>
+          <id root="883814849"/>
           <code code="48768-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Payers"/>
           <title/>
           <languageCode/>
           <author>
             <time/>
             <assignedAuthor>
-              <id root="405353804"/>
+              <id root="97525437"/>
             </assignedAuthor>
           </author>
           <entry>
             <act classCode="ACT" moodCode="EVN">
               <typeId root="2.16.840.1.113883.1.3"/>
               <templateId root="2.16.840.1.113883.10.20.22.4.60"/>
-              <id root="2024913318"/>
+              <id root="1427281678"/>
               <code code="48768-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Payment Sources"/>
               <statusCode code="completed"/>
               <effectiveTime>
@@ -1324,14 +1324,14 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
               <author>
                 <time/>
                 <assignedAuthor>
-                  <id root="1565155360"/>
+                  <id root="1068012500"/>
                 </assignedAuthor>
               </author>
               <entryRelationship>
                 <act classCode="ACT" moodCode="EVN">
                   <typeId root="2.16.840.1.113883.1.3"/>
                   <templateId root="2.16.840.1.113883.10.20.22.4.61"/>
-                  <id root="803527444"/>
+                  <id root="817883040"/>
                   <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
@@ -1347,8 +1347,8 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
                     <act classCode="ACT" moodCode="EVN">
                       <typeId root="2.16.840.1.113883.1.3"/>
                       <templateId root="2.16.840.1.113883.10.20.1.19"/>
-                      <id root="347489439"/>
-                      <code code="1656841344"/>
+                      <id root="1591262266"/>
+                      <code code="2081185673"/>
                       <effectiveTime>
                         <low value="2012"/>
                         <high value="2012"/>
@@ -1367,22 +1367,22 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
         <section>
           <typeId root="2.16.840.1.113883.1.3"/>
           <templateId root="2.16.840.1.113883.10.20.22.2.10"/>
-          <id root="355155021"/>
+          <id root="1446868396"/>
           <code code="18776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treatment plan"/>
           <title/>
           <languageCode/>
           <author>
             <time/>
             <assignedAuthor>
-              <id root="1170062543"/>
+              <id root="35599657"/>
             </assignedAuthor>
           </author>
           <entry>
             <act classCode="ACT">
               <typeId root="2.16.840.1.113883.1.3"/>
               <templateId root="2.16.840.1.113883.10.20.22.4.39"/>
-              <id root="1357961989"/>
-              <code code="936024204"/>
+              <id root="1270996533"/>
+              <code code="952876168"/>
               <effectiveTime>
                 <low value="2012"/>
                 <high value="2012"/>
@@ -1391,7 +1391,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
               <author>
                 <time/>
                 <assignedAuthor>
-                  <id root="122673022"/>
+                  <id root="2094628965"/>
                 </assignedAuthor>
               </author>
             </act>
@@ -1400,8 +1400,8 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
             <encounter classCode="ENC">
               <typeId root="2.16.840.1.113883.1.3"/>
               <templateId root="2.16.840.1.113883.10.20.22.4.40"/>
-              <id root="138740678"/>
-              <code code="1164307159"/>
+              <id root="983950385"/>
+              <code code="1031384957"/>
               <effectiveTime>
                 <low value="2012"/>
                 <high value="2012"/>
@@ -1409,7 +1409,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
               <author>
                 <time/>
                 <assignedAuthor>
-                  <id root="1791224391"/>
+                  <id root="1119787082"/>
                 </assignedAuthor>
               </author>
             </encounter>
@@ -1418,8 +1418,8 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
             <observation classCode="OBS">
               <typeId root="2.16.840.1.113883.1.3"/>
               <templateId root="2.16.840.1.113883.10.20.1.25"/>
-              <id root="505629795"/>
-              <code code="655177647"/>
+              <id root="128346712"/>
+              <code code="874230708"/>
               <effectiveTime>
                 <low value="2012"/>
                 <high value="2012"/>
@@ -1428,7 +1428,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
               <author>
                 <time/>
                 <assignedAuthor>
-                  <id root="783291056"/>
+                  <id root="209944450"/>
                 </assignedAuthor>
               </author>
             </observation>
@@ -1437,8 +1437,8 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
             <procedure classCode="PROC">
               <typeId root="2.16.840.1.113883.1.3"/>
               <templateId root="2.16.840.1.113883.10.20.22.4.41"/>
-              <id root="1194210351"/>
-              <code code="1036848432"/>
+              <id root="1968805814"/>
+              <code code="439212589"/>
               <effectiveTime>
                 <low value="2012"/>
                 <high value="2012"/>
@@ -1447,7 +1447,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
               <author>
                 <time/>
                 <assignedAuthor>
-                  <id root="1250253177"/>
+                  <id root="347499664"/>
                 </assignedAuthor>
               </author>
             </procedure>
@@ -1456,14 +1456,14 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
             <substanceAdministration classCode="SBADM">
               <typeId root="2.16.840.1.113883.1.3"/>
               <templateId root="2.16.840.1.113883.10.20.1.25"/>
-              <id root="1853046395"/>
-              <code code="2124174400"/>
-              <effectiveTime value="20120402"/>
+              <id root="1829671695"/>
+              <code code="750699341"/>
+              <effectiveTime value="20120403"/>
               <consumable/>
               <author>
                 <time/>
                 <assignedAuthor>
-                  <id root="814383792"/>
+                  <id root="1398892599"/>
                 </assignedAuthor>
               </author>
             </substanceAdministration>
@@ -1472,13 +1472,13 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
             <supply classCode="SPLY">
               <typeId root="2.16.840.1.113883.1.3"/>
               <templateId root="2.16.840.1.113883.10.20.22.4.43"/>
-              <id root="659866283"/>
-              <code code="1310366236"/>
-              <effectiveTime value="20120402"/>
+              <id root="1611532904"/>
+              <code code="2143737399"/>
+              <effectiveTime value="20120403"/>
               <author>
                 <time/>
                 <assignedAuthor>
-                  <id root="1966380448"/>
+                  <id root="103586472"/>
                 </assignedAuthor>
               </author>
             </supply>
@@ -1489,21 +1489,21 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
         <section>
           <typeId root="2.16.840.1.113883.1.3"/>
           <templateId root="2.16.840.1.113883.10.20.22.2.17"/>
-          <id root="725692221"/>
+          <id root="796842163"/>
           <code code="29762-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Social history"/>
           <title/>
           <languageCode/>
           <author>
             <time/>
             <assignedAuthor>
-              <id root="1739622099"/>
+              <id root="450535500"/>
             </assignedAuthor>
           </author>
           <entry>
             <observation classCode="OBS" moodCode="EVN">
               <typeId root="2.16.840.1.113883.1.3"/>
               <templateId root="2.16.840.1.113883.10.20.22.4.38"/>
-              <id root="1451604490"/>
+              <id root="199940940"/>
               <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
               <statusCode code="completed"/>
               <effectiveTime>
@@ -1514,7 +1514,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
               <author>
                 <time/>
                 <assignedAuthor>
-                  <id root="1612567972"/>
+                  <id root="1626120270"/>
                 </assignedAuthor>
               </author>
             </observation>
@@ -1523,7 +1523,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
             <observation classCode="OBS" moodCode="EVN">
               <typeId root="2.16.840.1.113883.1.3"/>
               <templateId root="2.16.840.1.113883.10.20.15.3.8"/>
-              <id root="159967963"/>
+              <id root="1061379196"/>
               <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Assertion"/>
               <statusCode code="completed"/>
               <effectiveTime>
@@ -1534,14 +1534,14 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
               <author>
                 <time/>
                 <assignedAuthor>
-                  <id root="441051299"/>
+                  <id root="1175282518"/>
                 </assignedAuthor>
               </author>
               <entryRelationship>
                 <observation classCode="OBS" moodCode="EVN">
                   <typeId root="2.16.840.1.113883.1.3"/>
                   <templateId root="2.16.840.1.113883.10.20.15.3.1"/>
-                  <id root="193332204"/>
+                  <id root="1769652473"/>
                   <code code="11778-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
@@ -1563,21 +1563,21 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
         <section>
           <typeId root="2.16.840.1.113883.1.3"/>
           <templateId root="2.16.840.1.113883.10.20.22.2.4"/>
-          <id root="549679703"/>
+          <id root="379304894"/>
           <code code="8716-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
           <title/>
           <languageCode/>
           <author>
             <time/>
             <assignedAuthor>
-              <id root="1984793524"/>
+              <id root="354500969"/>
             </assignedAuthor>
           </author>
           <entry>
             <organizer classCode="CLUSTER" moodCode="EVN">
               <typeId root="2.16.840.1.113883.1.3"/>
               <templateId root="2.16.840.1.113883.10.20.22.4.26"/>
-              <id root="1039396195"/>
+              <id root="1538115507"/>
               <code code="46680005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Vital signs"/>
               <statusCode code="completed"/>
               <effectiveTime>
@@ -1587,14 +1587,14 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
               <author>
                 <time/>
                 <assignedAuthor>
-                  <id root="1442003612"/>
+                  <id root="844929845"/>
                 </assignedAuthor>
               </author>
               <component>
                 <observation classCode="OBS" moodCode="EVN">
                   <typeId root="2.16.840.1.113883.1.3"/>
                   <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
-                  <id root="588579398"/>
+                  <id root="160311082"/>
                   <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                   <statusCode code="completed"/>
                   <effectiveTime>

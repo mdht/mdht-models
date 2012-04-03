@@ -107,8 +107,8 @@ Laboratory results <b>SHOULD</b> be from LOINC (CodeSystem: 2.16.840.1.113883.6.
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="OBS" moodCode="EVN">
   <templateId root="2.16.840.1.113883.10.20.22.4.2"/>
-  <id root="1858957986"/>
-  <code code="1394175148"/>
+  <id root="612125523"/>
+  <code code="940069414"/>
   <text>Text Value</text>
   <statusCode code="completed"/>
   <effectiveTime>

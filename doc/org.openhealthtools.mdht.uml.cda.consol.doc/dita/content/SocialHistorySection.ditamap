@@ -3,7 +3,7 @@
 <bookmap id="cdabook">
 
 	<chapter navtitle="Social History Section" type="topic">
-		<topicref href="../classes/SocialHistorySectionSection.dita" type="topic" />
+		<topicref href="../classes/SocialHistorySection.dita" type="topic" />
 		<topicref href="../classes/SocialHistorySectionTable.dita" type="topic" />
 		<topicref href="../classes/SocialHistorySectionSample.dita" type="topic" />			                         
 	</chapter>

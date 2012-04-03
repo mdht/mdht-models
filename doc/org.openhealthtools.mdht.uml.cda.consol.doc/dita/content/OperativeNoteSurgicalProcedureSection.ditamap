@@ -3,7 +3,7 @@
 <bookmap id="cdabook">
 
 	<chapter navtitle="Operative Note Surgical Procedure Section" type="topic">
-		<topicref href="../classes/OperativeNoteSurgicalProcedureSectionSection.dita" type="topic" />
+		<topicref href="../classes/OperativeNoteSurgicalProcedureSection.dita" type="topic" />
 		<topicref href="../classes/OperativeNoteSurgicalProcedureSectionTable.dita" type="topic" />
 		<topicref href="../classes/OperativeNoteSurgicalProcedureSectionSample.dita" type="topic" />			                         
 	</chapter>

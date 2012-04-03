@@ -114,8 +114,8 @@
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="DGIMG" moodCode="EVN">
   <templateId root="2.16.840.1.113883.10.20.6.2.8"/>
-  <id root="1866499056"/>
-  <code code="504610494"/>
+  <id root="1258989278"/>
+  <code code="1777377181"/>
   <text>Text Value</text>
   <effectiveTime>
     <low value="2012"/>
@@ -124,8 +124,8 @@
   <entryRelationship>
     <observation classCode="OBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.6.2.9"/>
-      <id root="2071104387"/>
-      <code code="431916938"/>
+      <id root="1114604754"/>
+      <code code="256012694"/>
       <text>Text Value</text>
       <effectiveTime>
         <low value="2012"/>
@@ -136,7 +136,7 @@
   <entryRelationship>
     <observation classCode="ROIBND" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.6.2.10"/>
-      <id root="1008216204"/>
+      <id root="1841673104"/>
       <code code="121190" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM" displayName="Referenced Frames"/>
       <text>Text Value</text>
       <effectiveTime>
@@ -146,7 +146,7 @@
       <entryRelationship>
         <observation classCode="OBS" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.6.2.11"/>
-          <id root="1094880936"/>
+          <id root="978255041"/>
           <code code="113036" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM" displayName="Frames for Display"/>
           <text>Text Value</text>
           <effectiveTime>

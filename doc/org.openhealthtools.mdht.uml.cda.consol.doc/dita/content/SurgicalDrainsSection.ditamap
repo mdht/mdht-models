@@ -3,7 +3,7 @@
 <bookmap id="cdabook">
 
 	<chapter navtitle="Surgical Drains Section" type="topic">
-		<topicref href="../classes/SurgicalDrainsSectionSection.dita" type="topic" />
+		<topicref href="../classes/SurgicalDrainsSection.dita" type="topic" />
 		<topicref href="../classes/SurgicalDrainsSectionTable.dita" type="topic" />
 		<topicref href="../classes/SurgicalDrainsSectionSample.dita" type="topic" />			                         
 	</chapter>

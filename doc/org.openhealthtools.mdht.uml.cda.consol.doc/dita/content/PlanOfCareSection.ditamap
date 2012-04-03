@@ -3,7 +3,7 @@
 <bookmap id="cdabook">
 
 	<chapter navtitle="Plan Of Care Section" type="topic">
-		<topicref href="../classes/PlanOfCareSectionSection.dita" type="topic" />
+		<topicref href="../classes/PlanOfCareSection.dita" type="topic" />
 		<topicref href="../classes/PlanOfCareSectionTable.dita" type="topic" />
 		<topicref href="../classes/PlanOfCareSectionSample.dita" type="topic" />			                         
 	</chapter>

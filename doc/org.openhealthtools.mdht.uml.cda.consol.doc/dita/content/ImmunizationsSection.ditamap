@@ -3,7 +3,7 @@
 <bookmap id="cdabook">
 
 	<chapter navtitle="Immunizations Section" type="topic">
-		<topicref href="../classes/ImmunizationsSectionSection.dita" type="topic" />
+		<topicref href="../classes/ImmunizationsSection.dita" type="topic" />
 		<topicref href="../classes/ImmunizationsSectionTable.dita" type="topic" />
 		<topicref href="../classes/ImmunizationsSectionSample.dita" type="topic" />			                         
 	</chapter>

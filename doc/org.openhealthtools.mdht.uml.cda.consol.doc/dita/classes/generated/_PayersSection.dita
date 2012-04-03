@@ -74,14 +74,14 @@ with respect to the payer, so that the identifiers can be recorded.
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
   <templateId root="2.16.840.1.113883.10.20.22.2.18"/>
-  <id root="493268143"/>
+  <id root="1478832475"/>
   <code code="48768-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Payers"/>
   <title/>
   <text/>
   <entry>
     <act classCode="ACT" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.22.4.60"/>
-      <id root="374213812"/>
+      <id root="1922464926"/>
       <code code="48768-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Payment Sources"/>
       <text>Text Value</text>
       <statusCode code="completed"/>
@@ -92,7 +92,7 @@ with respect to the payer, so that the identifiers can be recorded.
       <entryRelationship>
         <act classCode="ACT" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.22.4.61"/>
-          <id root="99997692"/>
+          <id root="1359826297"/>
           <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
           <text>Text Value</text>
           <statusCode code="completed"/>
@@ -103,8 +103,8 @@ with respect to the payer, so that the identifiers can be recorded.
           <entryRelationship>
             <act classCode="ACT" moodCode="EVN">
               <templateId root="2.16.840.1.113883.10.20.1.19"/>
-              <id root="152075779"/>
-              <code code="318933466"/>
+              <id root="1389373697"/>
+              <code code="2061043882"/>
               <text>Text Value</text>
               <effectiveTime>
                 <low value="2012"/>

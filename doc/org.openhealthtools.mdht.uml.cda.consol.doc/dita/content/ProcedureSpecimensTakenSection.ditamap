@@ -3,7 +3,7 @@
 <bookmap id="cdabook">
 
 	<chapter navtitle="Procedure Specimens Taken Section" type="topic">
-		<topicref href="../classes/ProcedureSpecimensTakenSectionSection.dita" type="topic" />
+		<topicref href="../classes/ProcedureSpecimensTakenSection.dita" type="topic" />
 		<topicref href="../classes/ProcedureSpecimensTakenSectionTable.dita" type="topic" />
 		<topicref href="../classes/ProcedureSpecimensTakenSectionSample.dita" type="topic" />			                         
 	</chapter>

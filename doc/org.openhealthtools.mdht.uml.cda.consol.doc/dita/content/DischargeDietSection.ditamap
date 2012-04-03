@@ -3,7 +3,7 @@
 <bookmap id="cdabook">
 
 	<chapter navtitle="Discharge Diet Section" type="topic">
-		<topicref href="../classes/DischargeDietSectionSection.dita" type="topic" />
+		<topicref href="../classes/DischargeDietSection.dita" type="topic" />
 		<topicref href="../classes/DischargeDietSectionTable.dita" type="topic" />
 		<topicref href="../classes/DischargeDietSectionSample.dita" type="topic" />			                         
 	</chapter>

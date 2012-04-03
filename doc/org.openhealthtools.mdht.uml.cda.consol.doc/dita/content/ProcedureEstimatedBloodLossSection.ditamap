@@ -3,7 +3,7 @@
 <bookmap id="cdabook">
 
 	<chapter navtitle="Procedure Estimated Blood Loss Section" type="topic">
-		<topicref href="../classes/ProcedureEstimatedBloodLossSectionSection.dita" type="topic" />
+		<topicref href="../classes/ProcedureEstimatedBloodLossSection.dita" type="topic" />
 		<topicref href="../classes/ProcedureEstimatedBloodLossSectionTable.dita" type="topic" />
 		<topicref href="../classes/ProcedureEstimatedBloodLossSectionSample.dita" type="topic" />			                         
 	</chapter>

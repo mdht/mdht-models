@@ -3,7 +3,7 @@
 <bookmap id="cdabook">
 
 	<chapter navtitle="Allergies Section Entries Optional" type="topic">
-		<topicref href="../classes/AllergiesSectionEntriesOptionalSection.dita" type="topic" />
+		<topicref href="../classes/AllergiesSectionEntriesOptional.dita" type="topic" />
 		<topicref href="../classes/AllergiesSectionEntriesOptionalTable.dita" type="topic" />
 		<topicref href="../classes/AllergiesSectionEntriesOptionalSample.dita" type="topic" />			                         
 	</chapter>

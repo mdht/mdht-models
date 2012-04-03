@@ -97,7 +97,7 @@
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="OBS" moodCode="EVN">
   <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
-  <id root="1925636797"/>
+  <id root="195928112"/>
   <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
   <text>Text Value</text>
   <statusCode code="completed"/>
@@ -108,11 +108,11 @@
   <value xsi:type="PQ"/>
   <interpretationCode code="Value"/>
   <methodCode code="Value"/>
-  <targetSiteCode code="76964875"/>
+  <targetSiteCode code="350429567"/>
   <author>
     <time/>
     <assignedAuthor>
-      <id root="914056917"/>
+      <id root="886619020"/>
       <assignedPerson/>
       <assignedAuthoringDevice>
         <asMaintainedEntity>

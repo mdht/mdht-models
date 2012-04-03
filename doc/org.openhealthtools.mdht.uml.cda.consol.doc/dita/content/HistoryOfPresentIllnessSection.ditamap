@@ -3,7 +3,7 @@
 <bookmap id="cdabook">
 
 	<chapter navtitle="History Of Present Illness Section" type="topic">
-		<topicref href="../classes/HistoryOfPresentIllnessSectionSection.dita" type="topic" />
+		<topicref href="../classes/HistoryOfPresentIllnessSection.dita" type="topic" />
 		<topicref href="../classes/HistoryOfPresentIllnessSectionTable.dita" type="topic" />
 		<topicref href="../classes/HistoryOfPresentIllnessSectionSample.dita" type="topic" />			                         
 	</chapter>

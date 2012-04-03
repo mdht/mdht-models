@@ -3,7 +3,7 @@
 <bookmap id="cdabook">
 
 	<chapter navtitle="Assessment Section" type="topic">
-		<topicref href="../classes/AssessmentSectionSection.dita" type="topic" />
+		<topicref href="../classes/AssessmentSection.dita" type="topic" />
 		<topicref href="../classes/AssessmentSectionTable.dita" type="topic" />
 		<topicref href="../classes/AssessmentSectionSample.dita" type="topic" />			                         
 	</chapter>

@@ -44,7 +44,7 @@
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <manufacturedproduct xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="MANU">
   <templateId root="2.16.840.1.113883.10.20.22.4.23"/>
-  <id root="1529607867"/>
+  <id root="418215728"/>
   <manufacturedMaterial/>
   <manufacturerOrganization>
     <asOrganizationPartOf>

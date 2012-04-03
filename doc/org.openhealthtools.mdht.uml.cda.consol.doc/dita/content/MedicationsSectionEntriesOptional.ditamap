@@ -3,7 +3,7 @@
 <bookmap id="cdabook">
 
 	<chapter navtitle="Medications Section Entries Optional" type="topic">
-		<topicref href="../classes/MedicationsSectionEntriesOptionalSection.dita" type="topic" />
+		<topicref href="../classes/MedicationsSectionEntriesOptional.dita" type="topic" />
 		<topicref href="../classes/MedicationsSectionEntriesOptionalTable.dita" type="topic" />
 		<topicref href="../classes/MedicationsSectionEntriesOptionalSample.dita" type="topic" />			                         
 	</chapter>

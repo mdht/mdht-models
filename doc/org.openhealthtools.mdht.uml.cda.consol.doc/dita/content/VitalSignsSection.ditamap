@@ -3,7 +3,7 @@
 <bookmap id="cdabook">
 
 	<chapter navtitle="Vital Signs Section" type="topic">
-		<topicref href="../classes/VitalSignsSectionSection.dita" type="topic" />
+		<topicref href="../classes/VitalSignsSection.dita" type="topic" />
 		<topicref href="../classes/VitalSignsSectionTable.dita" type="topic" />
 		<topicref href="../classes/VitalSignsSectionSample.dita" type="topic" />			                         
 	</chapter>

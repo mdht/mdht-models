@@ -3,7 +3,7 @@
 <bookmap id="cdabook">
 
 	<chapter navtitle="Procedure Indications Section" type="topic">
-		<topicref href="../classes/ProcedureIndicationsSectionSection.dita" type="topic" />
+		<topicref href="../classes/ProcedureIndicationsSection.dita" type="topic" />
 		<topicref href="../classes/ProcedureIndicationsSectionTable.dita" type="topic" />
 		<topicref href="../classes/ProcedureIndicationsSectionSample.dita" type="topic" />			                         
 	</chapter>

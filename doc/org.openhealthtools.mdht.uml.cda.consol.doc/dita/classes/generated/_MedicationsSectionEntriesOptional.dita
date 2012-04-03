@@ -59,28 +59,28 @@ This section requires that there be either an entry indicating the subject is no
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
   <templateId root="2.16.840.1.113883.10.20.22.2.1"/>
-  <id root="1188106181"/>
+  <id root="717279016"/>
   <code code="10160-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of medication use"/>
   <title>Medications</title>
   <text/>
   <entry>
     <substanceAdministration classCode="SBADM">
       <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
-      <id root="1343740796"/>
+      <id root="1588092065"/>
       <text>Text Value</text>
-      <effectiveTime value="20120402"/>
+      <effectiveTime value="20120403"/>
       <administrationUnitCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
       <consumable/>
       <entryRelationship>
         <supply classCode="SPLY" moodCode="INT">
           <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
-          <id root="1635272145"/>
+          <id root="1971660554"/>
           <text>Text Value</text>
-          <effectiveTime value="20120402"/>
+          <effectiveTime value="20120403"/>
           <entryRelationship>
             <act classCode="ACT" moodCode="INT">
               <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-              <id root="1153891619"/>
+              <id root="1637929389"/>
               <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
               <text>Text Value</text>
               <statusCode code="completed"/>
@@ -95,8 +95,8 @@ This section requires that there be either an entry indicating the subject is no
       <entryRelationship>
         <observation classCode="OBS" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
-          <id root="64354945"/>
-          <code code="1368093110"/>
+          <id root="505191954"/>
+          <code code="1939433296"/>
           <text>Text Value</text>
           <statusCode code="completed"/>
           <effectiveTime>
@@ -106,7 +106,7 @@ This section requires that there be either an entry indicating the subject is no
           <entryRelationship>
             <observation classCode="OBS" moodCode="EVN">
               <templateId root="2.16.840.1.113883.10.20.22.4.8"/>
-              <id root="854744154"/>
+              <id root="77321126"/>
               <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Severity observation"/>
               <text>Text Value</text>
               <statusCode code="completed"/>
@@ -120,7 +120,7 @@ This section requires that there be either an entry indicating the subject is no
           <entryRelationship>
             <procedure classCode="PROC">
               <templateId root="2.16.840.1.113883.10.20.22.4.14"/>
-              <id root="1195174122"/>
+              <id root="12202774"/>
               <text>Text Value</text>
               <effectiveTime>
                 <low value="2012"/>
@@ -130,7 +130,7 @@ This section requires that there be either an entry indicating the subject is no
               <entryRelationship>
                 <observation classCode="OBS" moodCode="EVN">
                   <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
-                  <id root="286729419"/>
+                  <id root="1408914643"/>
                   <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                   <text>Text Value</text>
                   <statusCode code="completed"/>
@@ -143,9 +143,9 @@ This section requires that there be either an entry indicating the subject is no
               <entryRelationship>
                 <substanceAdministration classCode="SBADM">
                   <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
-                  <id root="94834221"/>
+                  <id root="1110285435"/>
                   <text>Text Value</text>
-                  <effectiveTime value="20120402"/>
+                  <effectiveTime value="20120403"/>
                   <administrationUnitCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
                   <consumable/>
                   <entryRelationship>
@@ -168,7 +168,7 @@ This section requires that there be either an entry indicating the subject is no
               <entryRelationship>
                 <act classCode="ACT" moodCode="INT">
                   <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-                  <id root="995046687"/>
+                  <id root="1065899749"/>
                   <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                   <text>Text Value</text>
                   <statusCode code="completed"/>
@@ -180,7 +180,7 @@ This section requires that there be either an entry indicating the subject is no
               </entryRelationship>
               <entryRelationship>
                 <encounter>
-                  <id root="1208134429"/>
+                  <id root="1234249557"/>
                   <text>Text Value</text>
                   <effectiveTime>
                     <low value="2012"/>
@@ -193,17 +193,17 @@ This section requires that there be either an entry indicating the subject is no
           <entryRelationship>
             <substanceAdministration classCode="SBADM">
               <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
-              <id root="1292919480"/>
+              <id root="418929935"/>
               <text>Text Value</text>
-              <effectiveTime value="20120402"/>
+              <effectiveTime value="20120403"/>
               <administrationUnitCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
               <consumable/>
               <entryRelationship>
                 <supply classCode="SPLY" moodCode="INT">
                   <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
-                  <id root="403236648"/>
+                  <id root="1882747946"/>
                   <text>Text Value</text>
-                  <effectiveTime value="20120402"/>
+                  <effectiveTime value="20120403"/>
                   <entryRelationship>
                     <act/>
                   </entryRelationship>
@@ -212,8 +212,8 @@ This section requires that there be either an entry indicating the subject is no
               <entryRelationship>
                 <observation classCode="OBS" moodCode="EVN">
                   <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
-                  <id root="1296624118"/>
-                  <code code="1045771757"/>
+                  <id root="814224751"/>
+                  <code code="1292773617"/>
                   <text>Text Value</text>
                   <statusCode code="completed"/>
                   <effectiveTime>
@@ -234,7 +234,7 @@ This section requires that there be either an entry indicating the subject is no
               <entryRelationship>
                 <act classCode="ACT" moodCode="INT">
                   <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-                  <id root="33131022"/>
+                  <id root="1560210664"/>
                   <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                   <text>Text Value</text>
                   <statusCode code="completed"/>
@@ -247,7 +247,7 @@ This section requires that there be either an entry indicating the subject is no
               <entryRelationship>
                 <observation classCode="OBS" moodCode="EVN">
                   <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
-                  <id root="1404220826"/>
+                  <id root="351906526"/>
                   <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                   <text>Text Value</text>
                   <statusCode code="completed"/>
@@ -260,9 +260,9 @@ This section requires that there be either an entry indicating the subject is no
               <entryRelationship>
                 <supply classCode="SPLY" moodCode="EVN">
                   <templateId root="2.16.840.1.113883.10.20.22.4.18"/>
-                  <id root="914555170"/>
+                  <id root="1352839274"/>
                   <text>Text Value</text>
-                  <effectiveTime value="20120402"/>
+                  <effectiveTime value="20120403"/>
                   <entryRelationship>
                     <supply/>
                   </entryRelationship>
@@ -275,7 +275,7 @@ This section requires that there be either an entry indicating the subject is no
       <entryRelationship>
         <act classCode="ACT" moodCode="INT">
           <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-          <id root="605171082"/>
+          <id root="49383812"/>
           <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
           <text>Text Value</text>
           <statusCode code="completed"/>
@@ -288,7 +288,7 @@ This section requires that there be either an entry indicating the subject is no
       <entryRelationship>
         <observation classCode="OBS" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
-          <id root="1150728187"/>
+          <id root="224011192"/>
           <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
           <text>Text Value</text>
           <statusCode code="completed"/>
@@ -301,19 +301,19 @@ This section requires that there be either an entry indicating the subject is no
       <entryRelationship>
         <supply classCode="SPLY" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.22.4.18"/>
-          <id root="1956741028"/>
+          <id root="1225069299"/>
           <text>Text Value</text>
-          <effectiveTime value="20120402"/>
+          <effectiveTime value="20120403"/>
           <entryRelationship>
             <supply classCode="SPLY" moodCode="INT">
               <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
-              <id root="356539570"/>
+              <id root="160797884"/>
               <text>Text Value</text>
-              <effectiveTime value="20120402"/>
+              <effectiveTime value="20120403"/>
               <entryRelationship>
                 <act classCode="ACT" moodCode="INT">
                   <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-                  <id root="367578641"/>
+                  <id root="644820864"/>
                   <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                   <text>Text Value</text>
                   <statusCode code="completed"/>

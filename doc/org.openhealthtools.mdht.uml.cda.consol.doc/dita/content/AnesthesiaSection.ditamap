@@ -3,7 +3,7 @@
 <bookmap id="cdabook">
 
 	<chapter navtitle="Anesthesia Section" type="topic">
-		<topicref href="../classes/AnesthesiaSectionSection.dita" type="topic" />
+		<topicref href="../classes/AnesthesiaSection.dita" type="topic" />
 		<topicref href="../classes/AnesthesiaSectionTable.dita" type="topic" />
 		<topicref href="../classes/AnesthesiaSectionSample.dita" type="topic" />			                         
 	</chapter>

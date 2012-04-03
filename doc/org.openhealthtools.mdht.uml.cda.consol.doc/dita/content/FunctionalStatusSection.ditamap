@@ -3,7 +3,7 @@
 <bookmap id="cdabook">
 
 	<chapter navtitle="Functional Status Section" type="topic">
-		<topicref href="../classes/FunctionalStatusSectionSection.dita" type="topic" />
+		<topicref href="../classes/FunctionalStatusSection.dita" type="topic" />
 		<topicref href="../classes/FunctionalStatusSectionTable.dita" type="topic" />
 		<topicref href="../classes/FunctionalStatusSectionSample.dita" type="topic" />			                         
 	</chapter>
