@@ -22,7 +22,7 @@
 <ul><li>negationInd="true" SHALL be used to represent that the problem was not observed</li></ul></li>
 <li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:9043)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> 2.16.840.1.113883.3.88.12.3221.7.2 <xref href="../../terminology/ProblemType.dita">Problem Type</xref></tt><b> STATIC</b> 2008-12-18 (CONF:9045)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ProblemType.dita">Problem Type</xref> 2.16.840.1.113883.3.88.12.3221.7.2</tt><b> STATIC</b> 2008-12-18 (CONF:9045)
 </li>
 <li><b>SHOULD</b> contain zero or one [0..1] <tt><b>text</b></tt> (CONF:9185)
 </li>
@@ -30,17 +30,17 @@
 </li>
 <li><b>SHOULD</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:9050)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> 2.16.840.1.113883.3.88.12.3221.7.4 <xref href="../../terminology/Problem.dita">Problem</xref></tt><b> DYNAMIC</b>, where its data type is CD (CONF:9058)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/Problem.dita">Problem</xref> 2.16.840.1.113883.3.88.12.3221.7.4</tt><b> DYNAMIC</b> (CONF:9058)
 </li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>ageObservation</b></tt> (CONF:9059)
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:9059)
 <ol>
 <li>Contains <tt><b>@typeCode="</b>SUBJ" </tt><i>SUBJ</i></li>
 <li>Contains exactly one [1..1] <xref href="../AgeObservation.dita">Age Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.31</tt>)</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>problemStatus</b></tt> (CONF:9063)
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:9063)
 <ol>
 <li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
 <li>Contains exactly one [1..1] <xref href="../ProblemStatus.dita">Problem Status</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.6</tt>)</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>healthStatusObservation</b></tt> (CONF:9067)
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:9067)
 <ol>
 <li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
 <li>Contains exactly one [1..1] <xref href="../HealthStatusObservation.dita">Health Status Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.5</tt>)</li></ol></li>
@@ -50,7 +50,7 @@
 <li>resolution date <b>SHALL</b> be recorded in the high element of the effectiveTime element when known (CONF:9052)</li>
 <li>If the problem is known to be resolved, but the date of resolution is not known, then the high element <b>SHALL</b> be present, and the nullFlavor attribute <b>SHALL</b> be set to 'UNK'. Therefore, the existence of an high element within a problem does indicate that the problem has been resolved (CONF:9053)</li>
 <li>value <b>MAY</b> contain zero or one [0..1] @nullFlavor (CONF:10141)</li>
-<li>If the diagnosis is unkown or the SNOMED code is unknown, @nullFlavor <b>SHOULD</b> be �UNK�.  If the code is something other than SNOMED, @nullFlavor <b>SHOULD</b> be �OTH� and the other code <b>SHOULD</b> be placed in the translation element (CONF:10142)</li>
+<li>If the diagnosis is unkown or the SNOMED code is unknown, @nullFlavor <b>SHOULD</b> be ?UNK?.  If the code is something other than SNOMED, @nullFlavor <b>SHOULD</b> be ?OTH? and the other code <b>SHOULD</b> be placed in the translation element (CONF:10142)</li>
 <li>entryRelationship with target entry Age Observation <b>SHALL</b> contain exactly one [1..1] @inversionInd="true" True (CONF:9069)</li>
 </ol>
 <ol id="aggregate">
@@ -62,7 +62,7 @@
 <ul><li>negationInd="true" SHALL be used to represent that the problem was not observed</li></ul></li>
 <li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:9043)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> 2.16.840.1.113883.3.88.12.3221.7.2 <xref href="../../terminology/ProblemType.dita">Problem Type</xref></tt><b> STATIC</b> 2008-12-18 (CONF:9045)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ProblemType.dita">Problem Type</xref> 2.16.840.1.113883.3.88.12.3221.7.2</tt><b> STATIC</b> 2008-12-18 (CONF:9045)
 </li>
 <li><b>SHOULD</b> contain zero or one [0..1] <tt><b>text</b></tt> (CONF:9185)
 </li>
@@ -70,17 +70,17 @@
 </li>
 <li><b>SHOULD</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:9050)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> 2.16.840.1.113883.3.88.12.3221.7.4 <xref href="../../terminology/Problem.dita">Problem</xref></tt><b> DYNAMIC</b>, where its data type is CD (CONF:9058)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/Problem.dita">Problem</xref> 2.16.840.1.113883.3.88.12.3221.7.4</tt><b> DYNAMIC</b> (CONF:9058)
 </li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>ageObservation</b></tt> (CONF:9059)
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:9059)
 <ol>
 <li>Contains <tt><b>@typeCode="</b>SUBJ" </tt><i>SUBJ</i></li>
 <li>Contains exactly one [1..1] <xref href="../AgeObservation.dita">Age Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.31</tt>)</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>problemStatus</b></tt> (CONF:9063)
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:9063)
 <ol>
 <li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
 <li>Contains exactly one [1..1] <xref href="../ProblemStatus.dita">Problem Status</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.6</tt>)</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>healthStatusObservation</b></tt> (CONF:9067)
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:9067)
 <ol>
 <li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
 <li>Contains exactly one [1..1] <xref href="../HealthStatusObservation.dita">Health Status Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.5</tt>)</li></ol></li>
@@ -90,15 +90,47 @@
 <li>resolution date <b>SHALL</b> be recorded in the high element of the effectiveTime element when known (CONF:9052)</li>
 <li>If the problem is known to be resolved, but the date of resolution is not known, then the high element <b>SHALL</b> be present, and the nullFlavor attribute <b>SHALL</b> be set to 'UNK'. Therefore, the existence of an high element within a problem does indicate that the problem has been resolved (CONF:9053)</li>
 <li>value <b>MAY</b> contain zero or one [0..1] @nullFlavor (CONF:10141)</li>
-<li>If the diagnosis is unkown or the SNOMED code is unknown, @nullFlavor <b>SHOULD</b> be �UNK�.  If the code is something other than SNOMED, @nullFlavor <b>SHOULD</b> be �OTH� and the other code <b>SHOULD</b> be placed in the translation element (CONF:10142)</li>
+<li>If the diagnosis is unkown or the SNOMED code is unknown, @nullFlavor <b>SHOULD</b> be ?UNK?.  If the code is something other than SNOMED, @nullFlavor <b>SHOULD</b> be ?OTH? and the other code <b>SHOULD</b> be placed in the translation element (CONF:10142)</li>
 <li>entryRelationship with target entry Age Observation <b>SHALL</b> contain exactly one [1..1] @inversionInd="true" True (CONF:9069)</li>
 </ol>
-<section id="tableconformance">
-</section>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::ProblemObservation</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::observation[cda:templateId/@root = 2.16.840.1.113883.10.20.22.4.4]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClassObservation</entry><entry>CONF:9041</entry><entry> ALRT</entry></row> 
+<row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActMoodDocumentObservation</entry><entry>CONF:9042</entry><entry> DEF</entry></row> 
+<row><entry>negationInd</entry><entry>@negationInd</entry><entry>0..1</entry><entry>MAY</entry><entry>NO</entry><entry>Boolean</entry><entry>CONF:10139</entry><entry> </entry></row> 
+<row><entry>nullFlavor</entry><entry>@nullFlavor</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>NullFlavor</entry><entry></entry><entry> ASKU</entry></row> 
+<row><entry>derivationExpr</entry><entry>derivationExpr</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>ST</entry><entry></entry><entry> </entry></row> 
+<row><entry>id</entry><entry>id</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>II</entry><entry>CONF:9043</entry><entry> </entry></row> 
+<row><entry>interpretationCode</entry><entry>interpretationCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
+<row><entry>languageCode</entry><entry>languageCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
+<row><entry>methodCode</entry><entry>methodCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
+<row><entry>priorityCode</entry><entry>priorityCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
+<row><entry>Problem Code ( value )</entry><entry>value</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:9058</entry><entry> </entry></row> 
+<row><entry>Problem Date ( effectiveTime )</entry><entry>effectiveTime</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>IVL_TS</entry><entry>CONF:9050</entry><entry> </entry></row> 
+<row><entry>Problem Name ( text )</entry><entry>text</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>ED</entry><entry>CONF:9185</entry><entry> </entry></row> 
+<row><entry>Problem Type ( code )</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:9045</entry><entry> null</entry></row> 
+<row><entry>realmCode</entry><entry>realmCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
+<row><entry>repeatNumber</entry><entry>repeatNumber</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>IVL_INT</entry><entry></entry><entry> </entry></row> 
+<row><entry>statusCode</entry><entry>statusCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CS</entry><entry>CONF:9049</entry><entry>ActStatus 2.16.840.1.113883.5.14 completed</entry></row> 
+<row><entry>targetSiteCode</entry><entry>targetSiteCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CD</entry><entry></entry><entry> </entry></row> 
+<row><entry>templateId</entry><entry>templateId</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> 2.16.840.1.113883.10.20.22.4.4</entry></row> 
+<row><entry>Age At Onset ( ageObservation )</entry><entry>ageObservation</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>AgeObservation</entry><entry>CONF:9059</entry><entry> </entry></row> 
+<row><entry>author</entry><entry>author</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Author</entry><entry></entry><entry> </entry></row> 
+<row><entry>entryRelationship</entry><entry>entryRelationship</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>EntryRelationship</entry><entry></entry><entry> </entry></row> 
+<row><entry>Health Status ( healthStatusObservation )</entry><entry>healthStatusObservation</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>HealthStatusObservation</entry><entry>CONF:9067</entry><entry> </entry></row> 
+<row><entry>informant</entry><entry>informant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Informant12</entry><entry></entry><entry> </entry></row> 
+<row><entry>participant</entry><entry>participant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Participant2</entry><entry></entry><entry> </entry></row> 
+<row><entry>performer</entry><entry>performer</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Performer2</entry><entry></entry><entry> </entry></row> 
+<row><entry>precondition</entry><entry>precondition</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Precondition</entry><entry></entry><entry> </entry></row> 
+<row><entry>Problem Status ( problemStatus )</entry><entry>problemStatus</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>ProblemStatus</entry><entry>CONF:9063</entry><entry> </entry></row> 
+<row><entry>reference</entry><entry>reference</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Reference</entry><entry></entry><entry> </entry></row> 
+<row><entry>referenceRange</entry><entry>referenceRange</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>ReferenceRange</entry><entry></entry><entry> </entry></row> 
+<row><entry>specimen</entry><entry>specimen</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Specimen</entry><entry></entry><entry> </entry></row> 
+<row><entry>subject</entry><entry>subject</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>Subject</entry><entry></entry><entry> </entry></row> 
+<row><entry>typeId</entry><entry>typeId</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>InfrastructureRootTypeId</entry><entry></entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" moodCode="EVN">
   <templateId root="2.16.840.1.113883.10.20.22.4.4"/>
-  <id root="319179948"/>
+  <id root="1647715347"/>
   <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
   <text>Text Value</text>
   <statusCode code="completed"/>
@@ -106,11 +138,10 @@
     <low value="2012"/>
     <high value="2012"/>
   </effectiveTime>
-  <value xsi:type="CD" code="1608915315"/>
   <entryRelationship>
     <observation classCode="OBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.22.4.31"/>
-      <id root="1297387146"/>
+      <id root="902474220"/>
       <code code="445518008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age At Onset"/>
       <text>Text Value</text>
       <statusCode code="completed"/>
@@ -118,13 +149,12 @@
         <low value="2012"/>
         <high value="2012"/>
       </effectiveTime>
-      <value xsi:type="CD" code="1493359112"/>
     </observation>
   </entryRelationship>
   <entryRelationship>
     <observation classCode="OBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.22.4.5"/>
-      <id root="1253092531"/>
+      <id root="1412753597"/>
       <code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/>
       <text>Text Value</text>
       <statusCode code="completed"/>
@@ -132,13 +162,12 @@
         <low value="2012"/>
         <high value="2012"/>
       </effectiveTime>
-      <value xsi:type="CD" code="390987843"/>
     </observation>
   </entryRelationship>
   <entryRelationship>
     <observation classCode="OBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.22.4.6"/>
-      <id root="1601439468"/>
+      <id root="626697391"/>
       <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
       <text>Text Value</text>
       <statusCode code="completed"/>
@@ -146,7 +175,6 @@
         <low value="2012"/>
         <high value="2012"/>
       </effectiveTime>
-      <value xsi:type="CD" code="1305425852"/>
     </observation>
   </entryRelationship>
 </observation>]]></codeblock>

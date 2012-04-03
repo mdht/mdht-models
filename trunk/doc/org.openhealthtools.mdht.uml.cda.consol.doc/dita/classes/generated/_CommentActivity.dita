@@ -9,61 +9,62 @@
 </prolog>
 <body>
 <section id="description">
-<p>Used to contain comments associated with any of the data within the document.</p>
-<p>This entry allows for a comment to be supplied with each entry. For CDA this structure is usually included in the target act using the &lt;entryRelationship> element defined in the CDA Schema, but can also be used in the &lt;component> element when the comment appears within an &lt;organizer>.</p>
-
-<p>Any condition or allergy may be the subject of a comment.</p>
-<p>This module contains a comment to be supplied for any other entry Content Modules.</p>
+<p>Comments are free text data that cannot otherwise be recorded using data elements already defined by this specification. They are not to be used to record information that can be recorded elsewhere. For example, a free text description of the severity of an allergic reaction would not be recorded in a comment.</p>
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ACT" </tt><i>Act</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF-504)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ACT" </tt><i>Act</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:9425)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF-505)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:9426)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="48767-8" </tt><i>Annotation comment</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-506, CONF-507)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="48767-8" </tt><i>Annotation comment</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:9428)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:9430)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF-6.3.4.6.8)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>author</b></tt> (CONF:9433) <ol><li> This author <b>SHALL</b> contain exactly one [1..1] <tt><b>time</b></tt> (CONF:9434)</li><li> This author <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedAuthor</b></tt> (CONF:9435) <ol><li> This assignedAuthor <b>SHALL</b> contain exactly one [1..1] <tt><b>addr</b></tt> (CONF:9437)</li><li> This assignedAuthor <b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt> (CONF:9436)</li><li> This assignedAuthor <b>SHALL</b> satisfy: include assignedPerson/name or representedOrganization/name (CONF:9438)</li><li> This assignedAuthor An  assignedPerson/name <b>SHALL</b> be a conformant US Realm Person Name (PN.US.FIELDED) (2.16.840.1.113883.10.20.22.5.1.1) (CONF:9439)</li></ol> </li></ol>
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>author</b></tt> (C83-[DE-10-CDA-4])
-</li>
-<li><b>SHALL</b> satisfy: A related statement is made about another section or entry. In CDA the former shall be recorded inside an &lt;entryRelationship&gt; element occurring at the end of the entry. The containing entry is the subject (typeCode='SUBJ') of this comment, which is the inverse of the normal containment structure, thus inversionInd='true'. (CONF-6.3.4.6.3)</li>
-<li><b>SHALL</b> satisfy: The 'text' element contains a 'reference' element pointing to the narrative text section of the CDA, rather than duplicate text to avoid ambiguity. (CONF-6.3.4.6.7)</li>
-<li><b>SHALL</b> satisfy: The time of the comment creation is recorded in the 'time' element when the 'author' element is present. (CONF-6.3.4.6.10)</li>
-<li><b>SHALL</b> satisfy: The identifier of the author, and their address and telephone number must be present inside the 'id', 'addr' and 'telecom' elements when the 'author' element is present. (CONF-6.3.4.6.11)</li>
-<li><b>SHALL</b> satisfy: The author's and/or the organization's name must be present when the 'author' element is present. (CONF-6.3.4.6.12)</li>
-<li>Data elements defined elsewhere in the specification <b>SHALL NOT</b> be recorded using the Comments Module. (C83-[DE-10-CDA-1])</li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ACT" </tt><i>Act</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF-504)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ACT" </tt><i>Act</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:9425)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF-505)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:9426)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="48767-8" </tt><i>Annotation comment</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-506, CONF-507)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="48767-8" </tt><i>Annotation comment</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:9428)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:9430)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF-6.3.4.6.8)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>author</b></tt> (CONF:9433) <ol><li> This author <b>SHALL</b> contain exactly one [1..1] <tt><b>time</b></tt> (CONF:9434)</li><li> This author <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedAuthor</b></tt> (CONF:9435) <ol><li> This assignedAuthor <b>SHALL</b> contain exactly one [1..1] <tt><b>addr</b></tt> (CONF:9437)</li><li> This assignedAuthor <b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt> (CONF:9436)</li><li> This assignedAuthor <b>SHALL</b> satisfy: include assignedPerson/name or representedOrganization/name (CONF:9438)</li><li> This assignedAuthor An  assignedPerson/name <b>SHALL</b> be a conformant US Realm Person Name (PN.US.FIELDED) (2.16.840.1.113883.10.20.22.5.1.1) (CONF:9439)</li></ol> </li></ol>
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>author</b></tt> (C83-[DE-10-CDA-4])
-</li>
-<li><b>SHALL</b> satisfy: A related statement is made about another section or entry. In CDA the former shall be recorded inside an &lt;entryRelationship&gt; element occurring at the end of the entry. The containing entry is the subject (typeCode='SUBJ') of this comment, which is the inverse of the normal containment structure, thus inversionInd='true'. (CONF-6.3.4.6.3)</li>
-<li><b>SHALL</b> satisfy: The 'text' element contains a 'reference' element pointing to the narrative text section of the CDA, rather than duplicate text to avoid ambiguity. (CONF-6.3.4.6.7)</li>
-<li><b>SHALL</b> satisfy: The time of the comment creation is recorded in the 'time' element when the 'author' element is present. (CONF-6.3.4.6.10)</li>
-<li><b>SHALL</b> satisfy: The identifier of the author, and their address and telephone number must be present inside the 'id', 'addr' and 'telecom' elements when the 'author' element is present. (CONF-6.3.4.6.11)</li>
-<li><b>SHALL</b> satisfy: The author's and/or the organization's name must be present when the 'author' element is present. (CONF-6.3.4.6.12)</li>
-<li>Data elements defined elsewhere in the specification <b>SHALL NOT</b> be recorded using the Comments Module. (C83-[DE-10-CDA-1])</li>
 </ol>
-<section id="tableconformance">
-</section>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::CommentActivity</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::act[cda:templateId/@root = 2.16.840.1.113883.10.20.22.4.64]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActClassDocumentEntryAct</entry><entry>CONF:9425</entry><entry> ACCM</entry></row> 
+<row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_DocumentActMood</entry><entry>CONF:9426</entry><entry> APT</entry></row> 
+<row><entry>negationInd</entry><entry>@negationInd</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>Boolean</entry><entry></entry><entry> </entry></row> 
+<row><entry>nullFlavor</entry><entry>@nullFlavor</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>NullFlavor</entry><entry></entry><entry> ASKU</entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:9428</entry><entry>LOINC 2.16.840.1.113883.6.1 48767-8</entry></row> 
+<row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>IVL_TS</entry><entry></entry><entry> </entry></row> 
+<row><entry>id</entry><entry>id</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> </entry></row> 
+<row><entry>languageCode</entry><entry>languageCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
+<row><entry>priorityCode</entry><entry>priorityCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
+<row><entry>realmCode</entry><entry>realmCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
+<row><entry>statusCode</entry><entry>statusCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
+<row><entry>templateId</entry><entry>templateId</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> 2.16.840.1.113883.10.20.22.4.64</entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ED</entry><entry>CONF:9430</entry><entry> </entry></row> 
+<row><entry>author</entry><entry>author</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Author</entry><entry>CONF:9433</entry><entry> </entry></row> 
+<row><entry>entryRelationship</entry><entry>entryRelationship</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>EntryRelationship</entry><entry></entry><entry> </entry></row> 
+<row><entry>informant</entry><entry>informant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Informant12</entry><entry></entry><entry> </entry></row> 
+<row><entry>participant</entry><entry>participant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Participant2</entry><entry></entry><entry> </entry></row> 
+<row><entry>performer</entry><entry>performer</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Performer2</entry><entry></entry><entry> </entry></row> 
+<row><entry>precondition</entry><entry>precondition</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Precondition</entry><entry></entry><entry> </entry></row> 
+<row><entry>reference</entry><entry>reference</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Reference</entry><entry></entry><entry> </entry></row> 
+<row><entry>specimen</entry><entry>specimen</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Specimen</entry><entry></entry><entry> </entry></row> 
+<row><entry>subject</entry><entry>subject</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>Subject</entry><entry></entry><entry> </entry></row> 
+<row><entry>typeId</entry><entry>typeId</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>InfrastructureRootTypeId</entry><entry></entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <act xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="ACT" moodCode="EVN">
   <templateId root="2.16.840.1.113883.10.20.22.4.64"/>
-  <id root="663516857"/>
+  <id root="1984856173"/>
   <code code="48767-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Annotation comment"/>
   <text>Text Value</text>
-  <statusCode code="completed"/>
   <effectiveTime>
     <low value="2012"/>
     <high value="2012"/>
@@ -71,18 +72,8 @@
   <author>
     <time/>
     <assignedAuthor>
-      <id root="217896901"/>
-      <assignedPerson/>
-      <assignedAuthoringDevice>
-        <asMaintainedEntity>
-          <maintainingPerson/>
-        </asMaintainedEntity>
-      </assignedAuthoringDevice>
-      <representedOrganization>
-        <asOrganizationPartOf>
-          <wholeOrganization/>
-        </asOrganizationPartOf>
-      </representedOrganization>
+      <id root="1599632223"/>
+      <addr/>
     </assignedAuthor>
   </author>
 </act>]]></codeblock>

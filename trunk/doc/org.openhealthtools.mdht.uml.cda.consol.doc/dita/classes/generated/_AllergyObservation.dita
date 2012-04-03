@@ -25,21 +25,21 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:7387)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> 2.16.840.1.113883.3.88.12.3221.6.2 <xref href="../../terminology/AllergyAdverseEventType.dita">Allergy/Adverse Event Type</xref></tt><b> DYNAMIC</b>, where its data type is CD (CONF:7390, CONF:9139)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/AllergyAdverseEventType.dita">Allergy/Adverse Event Type</xref> 2.16.840.1.113883.3.88.12.3221.6.2</tt><b> DYNAMIC</b> (CONF:7390, CONF:9139)
 </li>
-<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>problemEntryReactionObservationContainer</b></tt> (CONF:7447, CONF:7907, CONF:7450)
+<li><b>SHOULD</b> contain at least one [1..*] <tt><b>entryRelationship</b></tt> (CONF:7447, CONF:7907, CONF:7450)
 <ol>
 <li>Contains <tt><b>@typeCode="</b>MFST" </tt><i>MFST</i></li>
 <li>Contains exactly one [1..1] <xref href="../ReactionObservation.dita">Reaction Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.9</tt>)</li></ol></li>
-<li><b>SHALL</b> contain zero or one [0..1] <tt><b>severity</b></tt> (CONF:9961, CONF:9962, CONF:9963)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt> (CONF:9961, CONF:9962, CONF:9963)
 <ol>
 <li>Contains <tt><b>@typeCode="</b>SUBJ" </tt><i>SUBJ</i></li>
 <li>Contains exactly one [1..1] <xref href="../SeverityObservation.dita">Severity Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.8</tt>)</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>allergyStatusObservation</b></tt> (CONF:7440, CONF:7906, CONF:7441)
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:7440, CONF:7906, CONF:7441)
 <ol>
 <li>Contains <tt><b>@typeCode="</b>SUBJ" </tt><i>SUBJ</i></li>
 <li>Contains exactly one [1..1] <xref href="../AllergyStatusObservation.dita">Allergy Status Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.28</tt>)</li></ol></li>
-<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>participant</b></tt> (CONF:7402)
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>participant</b></tt> (CONF:7402)
 </li>
 <li>If it is unknown when the allergy began, this effectiveTime <b>SHALL</b> contain low/@nullFLavor="UNK" (CONF:9103)</li>
 <li>If the allergy is no longer a concern, this effectiveTime <b>MAY</b> contain zero or one [0..1] high (CONF:10082)</li>
@@ -63,21 +63,21 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt> (CONF:7387)
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> 2.16.840.1.113883.3.88.12.3221.6.2 <xref href="../../terminology/AllergyAdverseEventType.dita">Allergy/Adverse Event Type</xref></tt><b> DYNAMIC</b>, where its data type is CD (CONF:7390, CONF:9139)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/AllergyAdverseEventType.dita">Allergy/Adverse Event Type</xref> 2.16.840.1.113883.3.88.12.3221.6.2</tt><b> DYNAMIC</b> (CONF:7390, CONF:9139)
 </li>
-<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>problemEntryReactionObservationContainer</b></tt> (CONF:7447, CONF:7907, CONF:7450)
+<li><b>SHOULD</b> contain at least one [1..*] <tt><b>entryRelationship</b></tt> (CONF:7447, CONF:7907, CONF:7450)
 <ol>
 <li>Contains <tt><b>@typeCode="</b>MFST" </tt><i>MFST</i></li>
 <li>Contains exactly one [1..1] <xref href="../ReactionObservation.dita">Reaction Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.9</tt>)</li></ol></li>
-<li><b>SHALL</b> contain zero or one [0..1] <tt><b>severity</b></tt> (CONF:9961, CONF:9962, CONF:9963)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt> (CONF:9961, CONF:9962, CONF:9963)
 <ol>
 <li>Contains <tt><b>@typeCode="</b>SUBJ" </tt><i>SUBJ</i></li>
 <li>Contains exactly one [1..1] <xref href="../SeverityObservation.dita">Severity Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.8</tt>)</li></ol></li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>allergyStatusObservation</b></tt> (CONF:7440, CONF:7906, CONF:7441)
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:7440, CONF:7906, CONF:7441)
 <ol>
 <li>Contains <tt><b>@typeCode="</b>SUBJ" </tt><i>SUBJ</i></li>
 <li>Contains exactly one [1..1] <xref href="../AllergyStatusObservation.dita">Allergy Status Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.28</tt>)</li></ol></li>
-<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>participant</b></tt> (CONF:7402)
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>participant</b></tt> (CONF:7402)
 </li>
 <li>If it is unknown when the allergy began, this effectiveTime <b>SHALL</b> contain low/@nullFLavor="UNK" (CONF:9103)</li>
 <li>If the allergy is no longer a concern, this effectiveTime <b>MAY</b> contain zero or one [0..1] high (CONF:10082)</li>
@@ -88,19 +88,50 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
 <li><b>SHALL</b> contain exactly one [1..1] @inversionInd="true" True (CONF:7449)</li>
 <li><b>SHALL</b> contain exactly one [1..1] @inversionInd="true" True (CONF:9964)</li>
 </ol>
-<section id="tableconformance">
-</section>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::AllergyObservation</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::observation[cda:templateId/@root = 2.16.840.1.113883.10.20.22.4.7]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClass</entry><entry>CONF:7379</entry><entry> ALRT</entry></row> 
+<row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActMood</entry><entry>CONF:7380</entry><entry> DEF</entry></row> 
+<row><entry>negationInd</entry><entry>@negationInd</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>Boolean</entry><entry></entry><entry> </entry></row> 
+<row><entry>nullFlavor</entry><entry>@nullFlavor</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>NullFlavor</entry><entry></entry><entry> ASKU</entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:7383</entry><entry>HL7ActCode 2.16.840.1.113883.5.4 ASSERTION</entry></row> 
+<row><entry>derivationExpr</entry><entry>derivationExpr</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>ST</entry><entry></entry><entry> </entry></row> 
+<row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>IVL_TS</entry><entry>CONF:7387</entry><entry> </entry></row> 
+<row><entry>id</entry><entry>id</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>II</entry><entry>CONF:7382</entry><entry> </entry></row> 
+<row><entry>interpretationCode</entry><entry>interpretationCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
+<row><entry>languageCode</entry><entry>languageCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
+<row><entry>methodCode</entry><entry>methodCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
+<row><entry>priorityCode</entry><entry>priorityCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
+<row><entry>realmCode</entry><entry>realmCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
+<row><entry>repeatNumber</entry><entry>repeatNumber</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>IVL_INT</entry><entry></entry><entry> </entry></row> 
+<row><entry>statusCode</entry><entry>statusCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CS</entry><entry>CONF:7386</entry><entry>ActStatus 2.16.840.1.113883.5.14 completed</entry></row> 
+<row><entry>targetSiteCode</entry><entry>targetSiteCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CD</entry><entry></entry><entry> </entry></row> 
+<row><entry>templateId</entry><entry>templateId</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> 2.16.840.1.113883.10.20.22.4.7</entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>ED</entry><entry></entry><entry> </entry></row> 
+<row><entry>value</entry><entry>value</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry>CONF:7390CONF:9139</entry><entry> </entry></row> 
+<row><entry>allergyStatusObservation</entry><entry>allergyStatusObservation</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>AllergyStatusObservation</entry><entry>CONF:7440CONF:7906CONF:7441</entry><entry> </entry></row> 
+<row><entry>author</entry><entry>author</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Author</entry><entry></entry><entry> </entry></row> 
+<row><entry>entryRelationship</entry><entry>entryRelationship</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>EntryRelationship</entry><entry></entry><entry> </entry></row> 
+<row><entry>informant</entry><entry>informant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Informant12</entry><entry></entry><entry> </entry></row> 
+<row><entry>participant</entry><entry>participant</entry><entry>1..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>AllergyObservationParticipant</entry><entry>CONF:7402</entry><entry> </entry></row> 
+<row><entry>performer</entry><entry>performer</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Performer2</entry><entry></entry><entry> </entry></row> 
+<row><entry>precondition</entry><entry>precondition</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Precondition</entry><entry></entry><entry> </entry></row> 
+<row><entry>problemEntryReactionObservationContainer</entry><entry>problemEntryReactionObservationContainer</entry><entry>1..*</entry><entry>SHOULD</entry><entry>YES</entry><entry>ReactionObservation</entry><entry>CONF:7447CONF:7907CONF:7450</entry><entry> </entry></row> 
+<row><entry>reference</entry><entry>reference</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Reference</entry><entry></entry><entry> </entry></row> 
+<row><entry>referenceRange</entry><entry>referenceRange</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>ReferenceRange</entry><entry></entry><entry> </entry></row> 
+<row><entry>severity</entry><entry>severity</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>SeverityObservation</entry><entry>CONF:9961CONF:9962CONF:9963</entry><entry> </entry></row> 
+<row><entry>specimen</entry><entry>specimen</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Specimen</entry><entry></entry><entry> </entry></row> 
+<row><entry>subject</entry><entry>subject</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>Subject</entry><entry></entry><entry> </entry></row> 
+<row><entry>typeId</entry><entry>typeId</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>InfrastructureRootTypeId</entry><entry></entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="OBS" moodCode="EVN">
   <templateId root="2.16.840.1.113883.10.20.22.4.7"/>
-  <id root="669276930"/>
+  <id root="906109360"/>
   <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/>
   <statusCode code="completed"/>
   <effectiveTime>
     <low value="2012"/>
     <high value="2012"/>
   </effectiveTime>
-  <value xsi:type="CD" code="954140550"/>
   <participant>
     <participantRole>
       <playingEntity>
@@ -111,14 +142,13 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
   <entryRelationship>
     <observation classCode="OBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
-      <id root="1185371345"/>
-      <code code="575618221"/>
+      <id root="909168811"/>
+      <code code="687431814"/>
       <statusCode code="completed"/>
       <effectiveTime>
         <low value="2012"/>
         <high value="2012"/>
       </effectiveTime>
-      <value xsi:type="CD" code="1994263426"/>
       <participant>
         <participantRole>
           <playingEntity>
@@ -129,14 +159,14 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
       <entryRelationship>
         <observation classCode="OBS" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.22.4.8"/>
-          <id root="1870977661"/>
+          <id root="740757369"/>
           <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Severity observation"/>
           <statusCode code="completed"/>
           <effectiveTime>
             <low value="2012"/>
             <high value="2012"/>
           </effectiveTime>
-          <value xsi:type="CD" code="1468776517"/>
+          <interpretationCode codeSystem="2.16.840.1.113883.5.83" codeSystemName="ObservationInterpretation"/>
           <participant>
             <participantRole>
               <playingEntity/>
@@ -147,9 +177,7 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
       <entryRelationship>
         <procedure classCode="PROC">
           <templateId root="2.16.840.1.113883.10.20.22.4.14"/>
-          <id root="630345947"/>
-          <code code="1873485220"/>
-          <statusCode code="completed"/>
+          <id root="571889487"/>
           <effectiveTime>
             <low value="2012"/>
             <high value="2012"/>
@@ -163,14 +191,13 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
           <entryRelationship>
             <observation classCode="OBS" moodCode="EVN">
               <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
-              <id root="319915512"/>
+              <id root="1805240769"/>
               <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
               <statusCode code="completed"/>
               <effectiveTime>
                 <low value="2012"/>
                 <high value="2012"/>
               </effectiveTime>
-              <value xsi:type="CD" code="177175702"/>
               <participant>
                 <participantRole/>
               </participant>
@@ -179,13 +206,12 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
           <entryRelationship>
             <substanceAdministration classCode="SBADM">
               <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
-              <id root="1949620955"/>
-              <code code="1833193576"/>
-              <statusCode code="completed"/>
+              <id root="1752299710"/>
               <effectiveTime xsi:type="IVL_TS">
                 <low value="2012"/>
                 <high value="2012"/>
               </effectiveTime>
+              <administrationUnitCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
               <consumable/>
               <participant>
                 <participantRole/>
@@ -193,9 +219,7 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
               <entryRelationship>
                 <supply classCode="SPLY" moodCode="INT">
                   <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
-                  <id root="924613779"/>
-                  <code code="438760535"/>
-                  <statusCode code="completed"/>
+                  <id root="1112233547"/>
                   <effectiveTime xsi:type="IVL_TS">
                     <low value="2012"/>
                     <high value="2012"/>
@@ -209,14 +233,13 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
               <entryRelationship>
                 <observation classCode="OBS" moodCode="EVN">
                   <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
-                  <id root="1412129507"/>
-                  <code code="1166443607"/>
+                  <id root="198139652"/>
+                  <code code="336248186"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
                     <low value="2012"/>
                     <high value="2012"/>
                   </effectiveTime>
-                  <value xsi:type="CD" code="1202686761"/>
                   <participant/>
                   <entryRelationship>
                     <observation/>
@@ -232,7 +255,7 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
               <entryRelationship>
                 <act classCode="ACT" moodCode="INT">
                   <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-                  <id root="1376274944"/>
+                  <id root="1527812144"/>
                   <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
@@ -245,23 +268,20 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
               <entryRelationship>
                 <observation classCode="OBS" moodCode="EVN">
                   <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
-                  <id root="2054401196"/>
+                  <id root="1191955928"/>
                   <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
                     <low value="2012"/>
                     <high value="2012"/>
                   </effectiveTime>
-                  <value xsi:type="CD" code="2118124875"/>
                   <participant/>
                 </observation>
               </entryRelationship>
               <entryRelationship>
                 <supply classCode="SPLY" moodCode="EVN">
                   <templateId root="2.16.840.1.113883.10.20.22.4.18"/>
-                  <id root="1126598099"/>
-                  <code code="696592941"/>
-                  <statusCode code="completed"/>
+                  <id root="491682235"/>
                   <effectiveTime xsi:type="IVL_TS">
                     <low value="2012"/>
                     <high value="2012"/>
@@ -277,7 +297,7 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
           <entryRelationship>
             <act classCode="ACT" moodCode="INT">
               <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-              <id root="446620420"/>
+              <id root="1215444702"/>
               <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
               <statusCode code="completed"/>
               <effectiveTime>
@@ -291,9 +311,7 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
           </entryRelationship>
           <entryRelationship>
             <encounter>
-              <id root="448069081"/>
-              <code code="493261341"/>
-              <statusCode code="completed"/>
+              <id root="247668234"/>
               <effectiveTime>
                 <low value="2012"/>
                 <high value="2012"/>
@@ -308,13 +326,12 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
       <entryRelationship>
         <substanceAdministration classCode="SBADM">
           <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
-          <id root="513909538"/>
-          <code code="544914265"/>
-          <statusCode code="completed"/>
+          <id root="652417057"/>
           <effectiveTime xsi:type="IVL_TS">
             <low value="2012"/>
             <high value="2012"/>
           </effectiveTime>
+          <administrationUnitCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
           <consumable/>
           <participant>
             <participantRole>
@@ -324,9 +341,7 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
           <entryRelationship>
             <supply classCode="SPLY" moodCode="INT">
               <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
-              <id root="134375087"/>
-              <code code="1062326286"/>
-              <statusCode code="completed"/>
+              <id root="2091144113"/>
               <effectiveTime xsi:type="IVL_TS">
                 <low value="2012"/>
                 <high value="2012"/>
@@ -337,7 +352,7 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
               <entryRelationship>
                 <act classCode="ACT" moodCode="INT">
                   <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-                  <id root="1545540463"/>
+                  <id root="674182506"/>
                   <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
@@ -352,37 +367,34 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
           <entryRelationship>
             <observation classCode="OBS" moodCode="EVN">
               <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
-              <id root="1864704214"/>
-              <code code="32502899"/>
+              <id root="1213570898"/>
+              <code code="1862492799"/>
               <statusCode code="completed"/>
               <effectiveTime>
                 <low value="2012"/>
                 <high value="2012"/>
               </effectiveTime>
-              <value xsi:type="CD" code="878760389"/>
               <participant>
                 <participantRole/>
               </participant>
               <entryRelationship>
                 <observation classCode="OBS" moodCode="EVN">
                   <templateId root="2.16.840.1.113883.10.20.22.4.8"/>
-                  <id root="1616469373"/>
+                  <id root="472755051"/>
                   <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Severity observation"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
                     <low value="2012"/>
                     <high value="2012"/>
                   </effectiveTime>
-                  <value xsi:type="CD" code="593175397"/>
+                  <interpretationCode codeSystem="2.16.840.1.113883.5.83" codeSystemName="ObservationInterpretation"/>
                   <participant/>
                 </observation>
               </entryRelationship>
               <entryRelationship>
                 <procedure classCode="PROC">
                   <templateId root="2.16.840.1.113883.10.20.22.4.14"/>
-                  <id root="1092663648"/>
-                  <code code="918632"/>
-                  <statusCode code="completed"/>
+                  <id root="646641296"/>
                   <effectiveTime>
                     <low value="2012"/>
                     <high value="2012"/>
@@ -406,13 +418,12 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
               <entryRelationship>
                 <substanceAdministration classCode="SBADM">
                   <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
-                  <id root="22611210"/>
-                  <code code="280286774"/>
-                  <statusCode code="completed"/>
+                  <id root="1058076909"/>
                   <effectiveTime xsi:type="IVL_TS">
                     <low value="2012"/>
                     <high value="2012"/>
                   </effectiveTime>
+                  <administrationUnitCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
                   <consumable/>
                   <participant/>
                   <entryRelationship>
@@ -437,7 +448,7 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
           <entryRelationship>
             <act classCode="ACT" moodCode="INT">
               <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-              <id root="790485172"/>
+              <id root="1294711877"/>
               <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
               <statusCode code="completed"/>
               <effectiveTime>
@@ -452,14 +463,13 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
           <entryRelationship>
             <observation classCode="OBS" moodCode="EVN">
               <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
-              <id root="1372728212"/>
+              <id root="1635700500"/>
               <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
               <statusCode code="completed"/>
               <effectiveTime>
                 <low value="2012"/>
                 <high value="2012"/>
               </effectiveTime>
-              <value xsi:type="CD" code="920279130"/>
               <participant>
                 <participantRole/>
               </participant>
@@ -468,9 +478,7 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
           <entryRelationship>
             <supply classCode="SPLY" moodCode="EVN">
               <templateId root="2.16.840.1.113883.10.20.22.4.18"/>
-              <id root="514017453"/>
-              <code code="2099559909"/>
-              <statusCode code="completed"/>
+              <id root="1041353867"/>
               <effectiveTime xsi:type="IVL_TS">
                 <low value="2012"/>
                 <high value="2012"/>
@@ -481,9 +489,7 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
               <entryRelationship>
                 <supply classCode="SPLY" moodCode="INT">
                   <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
-                  <id root="1524289799"/>
-                  <code code="1770220729"/>
-                  <statusCode code="completed"/>
+                  <id root="241858691"/>
                   <effectiveTime xsi:type="IVL_TS">
                     <low value="2012"/>
                     <high value="2012"/>
@@ -503,14 +509,14 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
   <entryRelationship>
     <observation classCode="OBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.22.4.8"/>
-      <id root="1316339335"/>
+      <id root="1115731310"/>
       <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Severity observation"/>
       <statusCode code="completed"/>
       <effectiveTime>
         <low value="2012"/>
         <high value="2012"/>
       </effectiveTime>
-      <value xsi:type="CD" code="2052933772"/>
+      <interpretationCode codeSystem="2.16.840.1.113883.5.83" codeSystemName="ObservationInterpretation"/>
       <participant>
         <participantRole>
           <playingEntity>
@@ -523,14 +529,13 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
   <entryRelationship>
     <observation classCode="OBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.22.4.28"/>
-      <id root="124397511"/>
+      <id root="1135507866"/>
       <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
       <statusCode code="completed"/>
       <effectiveTime>
         <low value="2012"/>
         <high value="2012"/>
       </effectiveTime>
-      <value xsi:type="CD" code="1273866850"/>
       <participant>
         <participantRole>
           <playingEntity>
