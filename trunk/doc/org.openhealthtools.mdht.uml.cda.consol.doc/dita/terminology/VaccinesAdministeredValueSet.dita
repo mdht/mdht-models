@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Vaccines Administered Value Set</title>
+<prolog id="prolog">
+<resourceid id="2.16.840.1.114222.4.11.934"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table><tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>Vaccines Administered Value Set - 2.16.840.1.114222.4.11.934</entry></row>
+<row><entry>Code System</entry><entry>Vaccines administered (CVX) - 2.16.840.1.113883.6.59</entry></row>
+<row><entry>Version</entry><entry>3</entry></row>
+<row><entry>Definition</entry><entry>Vaccine Name Keyword: Clinical Vaccines, Vaccine Names</entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>
