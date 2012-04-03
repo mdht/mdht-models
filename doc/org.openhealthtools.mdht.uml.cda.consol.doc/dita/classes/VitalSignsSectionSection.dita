@@ -26,7 +26,7 @@
 		</p>
 
 
-		<ol conref="generated/_VitalSignsSectionEntriesOptional.dita#classId/aggregate">
+		<ol conref="generated/_VitalSignsSectionEntriesOptional.dita#classId/conformance">
 			<li></li>
 		</ol>
 		<p>
@@ -39,7 +39,7 @@
 			in which entries are required.
 		</p>
 
-		<ol conref="generated/_VitalSignsSection.dita#classId/aggregate">
+		<ol conref="generated/_VitalSignsSection.dita#classId/conformance">
 			<li></li>
 		</ol>
 	</body>
