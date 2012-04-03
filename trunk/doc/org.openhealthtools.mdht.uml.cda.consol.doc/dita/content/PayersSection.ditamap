@@ -3,7 +3,7 @@
 <bookmap id="cdabook">
 
 	<chapter navtitle="Payers Section" type="topic">
-		<topicref href="../classes/PayersSectionSection.dita" type="topic" />
+		<topicref href="../classes/PayersSection.dita" type="topic" />
 		<topicref href="../classes/PayersSectionTable.dita" type="topic" />
 		<topicref href="../classes/PayersSectionSample.dita" type="topic" />			                         
 	</chapter>

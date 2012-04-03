@@ -3,7 +3,7 @@
 <bookmap id="cdabook">
 
 	<chapter navtitle="DICOM Object Catalog Section" type="topic">
-		<topicref href="../classes/DICOMObjectCatalogSectionSection.dita" type="topic" />
+		<topicref href="../classes/DICOMObjectCatalogSection.dita" type="topic" />
 		<topicref href="../classes/DICOMObjectCatalogSectionTable.dita" type="topic" />
 		<topicref href="../classes/DICOMObjectCatalogSectionSample.dita" type="topic" />			                         
 	</chapter>

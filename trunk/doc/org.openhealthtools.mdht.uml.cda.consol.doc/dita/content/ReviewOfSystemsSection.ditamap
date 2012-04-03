@@ -3,7 +3,7 @@
 <bookmap id="cdabook">
 
 	<chapter navtitle="Review Of Systems Section" type="topic">
-		<topicref href="../classes/ReviewOfSystemsSectionSection.dita" type="topic" />
+		<topicref href="../classes/ReviewOfSystemsSection.dita" type="topic" />
 		<topicref href="../classes/ReviewOfSystemsSectionTable.dita" type="topic" />
 		<topicref href="../classes/ReviewOfSystemsSectionSample.dita" type="topic" />			                         
 	</chapter>

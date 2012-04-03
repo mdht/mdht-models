@@ -3,7 +3,7 @@
 <bookmap id="cdabook">
 
 	<chapter navtitle="Hospital Discharge Medications Section Entries Optional" type="topic">
-		<topicref href="../classes/HospitalDischargeMedicationsSectionEntriesOptionalSection.dita" type="topic" />
+		<topicref href="../classes/HospitalDischargeMedicationsSectionEntriesOptional.dita" type="topic" />
 		<topicref href="../classes/HospitalDischargeMedicationsSectionEntriesOptionalTable.dita" type="topic" />
 		<topicref href="../classes/HospitalDischargeMedicationsSectionEntriesOptionalSample.dita" type="topic" />			                         
 	</chapter>

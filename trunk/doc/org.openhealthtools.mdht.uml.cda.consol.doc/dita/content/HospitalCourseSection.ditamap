@@ -3,7 +3,7 @@
 <bookmap id="cdabook">
 
 	<chapter navtitle="Hospital Course Section" type="topic">
-		<topicref href="../classes/HospitalCourseSectionSection.dita" type="topic" />
+		<topicref href="../classes/HospitalCourseSection.dita" type="topic" />
 		<topicref href="../classes/HospitalCourseSectionTable.dita" type="topic" />
 		<topicref href="../classes/HospitalCourseSectionSample.dita" type="topic" />			                         
 	</chapter>

@@ -3,7 +3,7 @@
 <bookmap id="cdabook">
 
 	<chapter navtitle="Hospital Discharge Physical Section" type="topic">
-		<topicref href="../classes/HospitalDischargePhysicalSectionSection.dita" type="topic" />
+		<topicref href="../classes/HospitalDischargePhysicalSection.dita" type="topic" />
 		<topicref href="../classes/HospitalDischargePhysicalSectionTable.dita" type="topic" />
 		<topicref href="../classes/HospitalDischargePhysicalSectionSample.dita" type="topic" />			                         
 	</chapter>

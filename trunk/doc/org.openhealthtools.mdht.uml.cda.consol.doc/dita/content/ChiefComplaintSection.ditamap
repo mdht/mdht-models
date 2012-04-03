@@ -3,7 +3,7 @@
 <bookmap id="cdabook">
 
 	<chapter navtitle="Chief Complaint Section" type="topic">
-		<topicref href="../classes/ChiefComplaintSectionSection.dita" type="topic" />
+		<topicref href="../classes/ChiefComplaintSection.dita" type="topic" />
 		<topicref href="../classes/ChiefComplaintSectionTable.dita" type="topic" />
 		<topicref href="../classes/ChiefComplaintSectionSample.dita" type="topic" />			                         
 	</chapter>

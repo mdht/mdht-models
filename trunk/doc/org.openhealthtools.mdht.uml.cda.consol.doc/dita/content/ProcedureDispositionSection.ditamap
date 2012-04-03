@@ -3,7 +3,7 @@
 <bookmap id="cdabook">
 
 	<chapter navtitle="Procedure Disposition Section" type="topic">
-		<topicref href="../classes/ProcedureDispositionSectionSection.dita" type="topic" />
+		<topicref href="../classes/ProcedureDispositionSection.dita" type="topic" />
 		<topicref href="../classes/ProcedureDispositionSectionTable.dita" type="topic" />
 		<topicref href="../classes/ProcedureDispositionSectionSample.dita" type="topic" />			                         
 	</chapter>

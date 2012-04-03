@@ -176,12 +176,12 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
   <typeId root="2.16.840.1.113883.1.3"/>
   <templateId root="2.16.840.1.113883.10.20.22.1.1"/>
   <templateId root="2.16.840.1.113883.10.20.22.1.5"/>
-  <id root="759359192"/>
+  <id root="399935042"/>
   <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
   <title/>
   <effectiveTime/>
   <confidentialityCode codeSystem="2.16.840.1.113883.5.25" codeSystemName="ConfidentialityCode"/>
-  <setId root="f8b4fc9b-dda1-4ba4-93c8-382293f4eae2"/>
+  <setId root="be02be0e-3567-485c-95a6-5267bbfc164c"/>
   <versionNumber value="1"/>
   <recordTarget>
     <typeId root="2.16.840.1.113883.1.3"/>
@@ -194,7 +194,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
   </author>
   <informant>
     <assignedEntity>
-      <id root="1038799139"/>
+      <id root="349247013"/>
       <assignedPerson/>
       <representedOrganization>
         <asOrganizationPartOf>
@@ -229,7 +229,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
   </inFulfillmentOf>
   <documentationOf>
     <serviceEvent classCode="ACT">
-      <id root="5988145"/>
+      <id root="31038670"/>
       <code code="Value"/>
       <performer>
         <time>
@@ -237,7 +237,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
           <high value="2012"/>
         </time>
         <assignedEntity>
-          <id root="1684123286"/>
+          <id root="1294374794"/>
           <code code="Value"/>
         </assignedEntity>
       </performer>
@@ -248,19 +248,19 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
   </relatedDocument>
   <componentOf>
     <encompassingEncounter>
-      <id root="250603486"/>
+      <id root="695994350"/>
       <effectiveTime>
         <low value="2012"/>
         <high value="2012"/>
       </effectiveTime>
       <responsibleParty>
         <assignedEntity>
-          <id root="1798435051"/>
+          <id root="818531087"/>
         </assignedEntity>
       </responsibleParty>
       <encounterParticipant>
         <assignedEntity>
-          <id root="891559467"/>
+          <id root="2076875121"/>
           <code code="Value"/>
           <assignedPerson/>
         </assignedEntity>
@@ -273,12 +273,12 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
         <section>
           <typeId root="2.16.840.1.113883.1.3"/>
           <templateId root="2.16.840.1.113883.10.20.6.1.2"/>
-          <id root="841810844"/>
+          <id root="1910407794"/>
           <code code="Value"/>
           <title/>
           <informant>
             <assignedEntity>
-              <id root="104651193"/>
+              <id root="277631089"/>
               <assignedPerson/>
               <representedOrganization>
                 <asOrganizationPartOf/>

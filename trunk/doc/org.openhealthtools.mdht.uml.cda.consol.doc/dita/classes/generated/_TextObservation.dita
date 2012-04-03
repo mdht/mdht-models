@@ -55,8 +55,8 @@
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
   <templateId root="2.16.840.1.113883.10.20.6.2.12"/>
-  <id root="660017160"/>
-  <code code="1520623857"/>
+  <id root="287484944"/>
+  <code code="1184071868"/>
   <effectiveTime>
     <low value="2012"/>
     <high value="2012"/>

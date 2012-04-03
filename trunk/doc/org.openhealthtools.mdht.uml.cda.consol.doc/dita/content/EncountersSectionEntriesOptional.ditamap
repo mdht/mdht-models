@@ -3,7 +3,7 @@
 <bookmap id="cdabook">
 
 	<chapter navtitle="Encounters Section Entries Optional" type="topic">
-		<topicref href="../classes/EncountersSectionEntriesOptionalSection.dita" type="topic" />
+		<topicref href="../classes/EncountersSectionEntriesOptional.dita" type="topic" />
 		<topicref href="../classes/EncountersSectionEntriesOptionalTable.dita" type="topic" />
 		<topicref href="../classes/EncountersSectionEntriesOptionalSample.dita" type="topic" />			                         
 	</chapter>

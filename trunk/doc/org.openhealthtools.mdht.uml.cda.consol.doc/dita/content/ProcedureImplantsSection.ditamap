@@ -3,7 +3,7 @@
 <bookmap id="cdabook">
 
 	<chapter navtitle="Procedure Implants Section" type="topic">
-		<topicref href="../classes/ProcedureImplantsSectionSection.dita" type="topic" />
+		<topicref href="../classes/ProcedureImplantsSection.dita" type="topic" />
 		<topicref href="../classes/ProcedureImplantsSectionTable.dita" type="topic" />
 		<topicref href="../classes/ProcedureImplantsSectionSample.dita" type="topic" />			                         
 	</chapter>

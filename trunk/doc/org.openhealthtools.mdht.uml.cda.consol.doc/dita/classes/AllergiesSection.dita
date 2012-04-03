@@ -32,7 +32,6 @@
 		<p>
 			<b>Required Entries</b>
 		</p>
-		<p conref="generated/_ResultsSection.dita#classId/shortdesc" />
 		<p>
 			The following constraints apply to a
 			<ph conref="generated/_AllergiesSection.dita#classId/classformalname" />

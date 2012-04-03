@@ -3,7 +3,7 @@
 <bookmap id="cdabook">
 
 	<chapter navtitle="Medical History Section" type="topic">
-		<topicref href="../classes/MedicalHistorySectionSection.dita" type="topic" />
+		<topicref href="../classes/MedicalHistorySection.dita" type="topic" />
 		<topicref href="../classes/MedicalHistorySectionTable.dita" type="topic" />
 		<topicref href="../classes/MedicalHistorySectionSample.dita" type="topic" />			                         
 	</chapter>

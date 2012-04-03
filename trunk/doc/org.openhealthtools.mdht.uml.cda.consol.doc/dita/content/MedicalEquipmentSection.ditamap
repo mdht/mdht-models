@@ -3,7 +3,7 @@
 <bookmap id="cdabook">
 
 	<chapter navtitle="Medical Equipment Section" type="topic">
-		<topicref href="../classes/MedicalEquipmentSectionSection.dita" type="topic" />
+		<topicref href="../classes/MedicalEquipmentSection.dita" type="topic" />
 		<topicref href="../classes/MedicalEquipmentSectionTable.dita" type="topic" />
 		<topicref href="../classes/MedicalEquipmentSectionSample.dita" type="topic" />			                         
 	</chapter>
