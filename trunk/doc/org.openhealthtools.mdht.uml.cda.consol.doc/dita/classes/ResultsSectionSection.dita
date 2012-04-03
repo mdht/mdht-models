@@ -26,7 +26,7 @@
 		</p>
 
 
-		<ol conref="generated/_ResultsSectionEntriesOptional.dita#classId/aggregate">
+		<ol conref="generated/_ResultsSectionEntriesOptional.dita#classId/conformance">
 			<li></li>
 		</ol>
 		<p>
@@ -39,7 +39,7 @@
 			in which entries are required.
 		</p>
 
-		<ol conref="generated/_ResultsSection.dita#classId/aggregate">
+		<ol conref="generated/_ResultsSection.dita#classId/conformance">
 			<li></li>
 		</ol>
 	</body>
