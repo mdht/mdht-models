@@ -20,7 +20,7 @@
 <body id="classId"><a name="classId"><!-- --></a>
 <div>
 	<p><b>For Discussion and Demonstration Only</b> The Normative content for these specifications
-	may be found on the HL7, IHE, and HITSP web sites.</p>
+	may be found on the HL7 web site.</p>
 </div>
 
 	<h1 class="title topictitle1"><span class="ph">Vital Signs Organizer</span></h1>
@@ -70,7 +70,7 @@ The vital signs organizer is a cluster of vital signs observations.
 </ul>
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">vitalSignObservation</strong></tt> (CONF:7285, CONF:7286)
+<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:7285, CONF:7286)
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="VitalSignObservation.html" title="[Observation: templateId 2.16.840.1.113883.10.20.22.4.27]">Vital Sign Observation</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.4.27</tt>)</li>
 </ol>
@@ -89,7 +89,7 @@ The vital signs organizer is a cluster of vital signs observations.
 		<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;organizer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="CLUSTER" moodCode="EVN"&gt;
   &lt;templateId root="2.16.840.1.113883.10.20.22.4.26"/&gt;
-  &lt;id root="132954472"/&gt;
+  &lt;id root="1269834492"/&gt;
   &lt;code code="46680005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Vital signs"/&gt;
   &lt;statusCode code="completed"/&gt;
   &lt;effectiveTime&gt;
@@ -99,7 +99,7 @@ The vital signs organizer is a cluster of vital signs observations.
   &lt;component&gt;
     &lt;observation classCode="OBS" moodCode="EVN"&gt;
       &lt;templateId root="2.16.840.1.113883.10.20.22.4.27"/&gt;
-      &lt;id root="2041544337"/&gt;
+      &lt;id root="992078079"/&gt;
       &lt;code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
       &lt;statusCode code="completed"/&gt;
       &lt;effectiveTime&gt;

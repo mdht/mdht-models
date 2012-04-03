@@ -20,7 +20,7 @@
 <body id="classId"><a name="classId"><!-- --></a>
 <div>
 	<p><b>For Discussion and Demonstration Only</b> The Normative content for these specifications
-	may be found on the HL7, IHE, and HITSP web sites.</p>
+	may be found on the HL7 web site.</p>
 </div>
 
 	<h1 class="title topictitle1"><span class="ph">Health Status Observation</span></h1>
@@ -53,7 +53,7 @@
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">statusCode</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="completed" </tt><em class="ph i">Completed</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF:9074)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt>, which <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> 2.16.840.1.113883.3.88.12.80.68 <a class="xref" href="../terminology/HITSPProblemStatus.html">HITSP Problem Status</a></tt><strong class="ph b"> STATIC</strong>, where its data type is CD (CONF:9075)
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/HITSPProblemStatus.html">HITSP Problem Status</a> 2.16.840.1.113883.3.88.12.80.68</tt><strong class="ph b"> STATIC</strong> (CONF:9075)
 </li>
 
 <li class="li">text, if present, <strong class="ph b">SHOULD</strong> contain zero or one [0..1] reference/@value (CONF:9271)</li>
@@ -73,7 +73,7 @@
 		<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="OBS" moodCode="EVN"&gt;
   &lt;templateId root="2.16.840.1.113883.10.20.22.4.5"/&gt;
-  &lt;id root="1398957629"/&gt;
+  &lt;id root="1619281809"/&gt;
   &lt;code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/&gt;
   &lt;text&gt;Text Value&lt;/text&gt;
   &lt;statusCode code="completed"/&gt;
@@ -81,7 +81,6 @@
     &lt;low value="2012"/&gt;
     &lt;high value="2012"/&gt;
   &lt;/effectiveTime&gt;
-  &lt;value xsi:type="CD" code="736986542"/&gt;
 &lt;/observation&gt;</pre>
 
 	</div>

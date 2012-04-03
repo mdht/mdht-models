@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xml:lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="Procedures Section"/>
+<meta name="DC.Coverage" content="Section"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="classId"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
+<title>Procedures Section</title>
+</head>
+<body id="classId"><a name="classId"><!-- --></a>
+<div>
+	<p><b>For Discussion and Demonstration Only</b> The Normative content for these specifications
+	may be found on the HL7 web site.</p>
+</div>
+
+	<h1 class="title topictitle1"><span class="ph">Procedures Section</span></h1>
+
+					
+					
+					
+	<div class="body">		
+	
+		<div class="section">
+<p class="p">This section defines all interventional, surgical, diagnostic, or therapeutic procedures or treatments pertinent to the patient historically at the time the document is generated. The section is intended to include notable procedures, but can contain all procedures for the period of time being summarized. The common notion of "procedure" is broader than that specified by the HL7 Version 3 Reference Information Model (RIM). Therefore this section contains procedure templates represented with three RIM classes: Act. Observation, and Procedure. Procedure act is for procedures the alter that physical condition of a patient (Splenectomy). Observation act is for procedures that result in new information about a patient but do not cause physical alteration (EEG). Act is for all other types of procedures (dressing change).
+The length of an encounter is documented in the documentationOf/encompassingEncounter/effectiveTime and length of service in documentationOf/ServiceEvent/effectiveTime.</p>
+
+</div>
+
+	
+		<div class="section">
+<p class="p">This section defines all interventional, surgical, diagnostic, or therapeutic procedures or treatments pertinent to the patient historically at the time the document is generated. The section is intended to include notable procedures, but can contain all procedures for the period of time being summarized. The common notion of "procedure" is broader than that specified by the HL7 Version 3 Reference Information Model (RIM). Therefore this section contains procedure templates represented with three RIM classes: Act. Observation, and Procedure. Procedure act is for procedures the alter that physical condition of a patient (Splenectomy). Observation act is for procedures that result in new information about a patient but do not cause physical alteration (EEG). Act is for all other types of procedures (dressing change).
+The length of an encounter is documented in the documentationOf/encompassingEncounter/effectiveTime and length of service in documentationOf/ServiceEvent/effectiveTime.</p>
+
+</div>
+
+
+		<p class="p">
+			<strong class="ph b">Optional Entries</strong>
+		</p>
+
+		
+
+		<p class="p">[Section: templateId <tt class="ph tt">2.16.840.1.113883.10.20.22.2.7</tt>]</p>
+
+
+		<p class="p">
+			The following constraints apply to a
+			<span class="ph">Procedures Section</span>
+			in which entries are not required.
+		</p>
+
+
+
+		<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="47519-4" </tt><em class="ph i">History of procedures</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:6272)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">text</strong></tt> (CONF:6273)
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:6277, CONF:8534)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="ProcedureActivityProcedure.html" title="[Procedure: templateId 2.16.840.1.113883.10.20.22.4.14]">Procedure Activity Procedure</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.4.14</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:6279)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="ProcedureActivityObservation.html" title="[Observation: templateId 2.16.840.1.113883.10.20.22.4.13]">Procedure Activity Observation</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.4.13</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:8534)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="ProcedureActivityAct.html" title="[Act: templateId 2.16.840.1.113883.10.20.22.4.12]">Procedure Activity Act</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.4.12</tt>)</li>
+</ol>
+</li>
+
+</ol>
+
+		<p class="p">
+			<strong class="ph b">Required Entries</strong>
+		</p>
+
+		<p class="p">[Section: templateId <tt class="ph tt">2.16.840.1.113883.10.20.22.2.3.1</tt>]</p>
+
+		<p class="p">
+			The following constraints apply to a
+			<span class="ph">Procedures Section</span>
+			in which entries are required.
+		</p>
+
+
+		<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="generated/../ProceduresSectionEntriesOptional.html">Procedures Section Entries Optional</a> template (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.2.7</tt>)</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">title</strong></tt> = "Procedures" (CONF:7893)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="47519-4" </tt><em class="ph i">History of procedures</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:7892)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">text</strong></tt> (CONF:7894)
+</li>
+
+<li class="li">There <strong class="ph b">SHALL</strong> be at least one procedure, observation or act entry conformant to Procedure Activity Procedure template, Procedure Activity Observation template or Procedure Activity Act template in the Procedure Section. (CONF:8021)</li>
+
+</ol>
+
+	</div>
+
+
+</body>
+</html>
