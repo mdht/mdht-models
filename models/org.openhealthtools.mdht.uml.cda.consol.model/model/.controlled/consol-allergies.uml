@@ -65,8 +65,8 @@
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bGzYjhVdEeGQCvUGzi1kDQ" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_lqJOQB0aEeGGdsHVD60BZA" name="allergyProblemAct" type="_2EAisBSVEeGGzu7fmW9pXw" association="_lqJOQh0aEeGGdsHVD60BZA">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_P3YDoHhuEeGJtvg2iiStYg" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_P3YDoXhuEeGJtvg2iiStYg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_66g44H0zEeGvKYp6-l7PnQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_66g44X0zEeGvKYp6-l7PnQ"/>
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_45wiEBkaEeGs5a462vYX5Q" base_Class="_bGzYgBVdEeGQCvUGzi1kDQ" templateId="2.16.840.1.113883.10.20.22.2.6">
