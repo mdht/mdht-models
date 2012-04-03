@@ -20,7 +20,7 @@
 <body id="classId"><a name="classId"><!-- --></a>
 <div>
 	<p><b>For Discussion and Demonstration Only</b> The Normative content for these specifications
-	may be found on the HL7, IHE, and HITSP web sites.</p>
+	may be found on the HL7 web site.</p>
 </div>
 
 	<h1 class="title topictitle1"><span class="ph">Result Organizer</span></h1>
@@ -57,7 +57,7 @@ An appropriate nullFlavor can be used when a single result observation is contai
 <li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">statusCode</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="completed" </tt><em class="ph i">Completed</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF:7123)
 </li>
 
-<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">resultObservation</strong></tt> (CONF:7124, CONF:7125)
+<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:7124, CONF:7125)
 <ol class="ol" type="a">
 <li class="li">Contains exactly one [1..1] <a class="xref" href="ResultObservation.html" title="[Observation: templateId 2.16.840.1.113883.10.20.22.4.2]">Result Observation</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.4.2</tt>)</li>
 </ol>
@@ -83,8 +83,8 @@ An appropriate nullFlavor can be used when a single result observation is contai
 		<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;organizer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" moodCode="EVN"&gt;
   &lt;templateId root="2.16.840.1.113883.10.20.22.4.1"/&gt;
-  &lt;id root="450039037"/&gt;
-  &lt;code code="105243504"/&gt;
+  &lt;id root="1412339011"/&gt;
+  &lt;code code="1655507261"/&gt;
   &lt;statusCode code="completed"/&gt;
   &lt;effectiveTime&gt;
     &lt;low value="2012"/&gt;
@@ -93,8 +93,8 @@ An appropriate nullFlavor can be used when a single result observation is contai
   &lt;component&gt;
     &lt;observation classCode="OBS" moodCode="EVN"&gt;
       &lt;templateId root="2.16.840.1.113883.10.20.22.4.2"/&gt;
-      &lt;id root="1742292489"/&gt;
-      &lt;code code="245120801"/&gt;
+      &lt;id root="628016699"/&gt;
+      &lt;code code="365755837"/&gt;
       &lt;statusCode code="completed"/&gt;
       &lt;effectiveTime&gt;
         &lt;low value="2012"/&gt;
