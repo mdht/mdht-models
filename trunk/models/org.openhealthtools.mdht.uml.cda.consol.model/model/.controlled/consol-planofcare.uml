@@ -102,7 +102,7 @@
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_YiANsDxYEd6JwqSGecoePg"/>
     </generalization>
     <ownedAttribute xmi:id="_2NWE-RSVEeGGzu7fmW9pXw" name="classCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
+      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOntkDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_uAr30CoSEeGHF88-qhhUMA" value="ACT"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2NWE8hSVEeGGzu7fmW9pXw" name="moodCode" visibility="private">
