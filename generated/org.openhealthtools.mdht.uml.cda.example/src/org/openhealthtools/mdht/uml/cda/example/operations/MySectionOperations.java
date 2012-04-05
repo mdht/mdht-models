@@ -23,13 +23,13 @@ import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 import org.eclipse.ocl.expressions.OCLExpression;
+import org.openhealthtools.mdht.uml.cda.consol.EncounterActivities;
+import org.openhealthtools.mdht.uml.cda.consol.MedicationActivity;
 import org.openhealthtools.mdht.uml.cda.example.ExamplePackage;
 import org.openhealthtools.mdht.uml.cda.example.ExamplePlugin;
 import org.openhealthtools.mdht.uml.cda.example.MyObservation;
 import org.openhealthtools.mdht.uml.cda.example.MySection;
 import org.openhealthtools.mdht.uml.cda.example.util.ExampleValidator;
-import org.openhealthtools.mdht.uml.cda.hitsp.Encounter;
-import org.openhealthtools.mdht.uml.cda.ihe.Medication;
 import org.openhealthtools.mdht.uml.cda.operations.SectionOperations;
 
 /**
@@ -132,8 +132,8 @@ public class MySectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_MY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
-"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("+
-"value.code = '48764-5' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "+
+"value.code = '48764-5' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMySectionCode(MySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate My Section Code</em>}' invariant operation.
@@ -150,8 +150,8 @@ public class MySectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in (
-	 * value.code = '48764-5' and value.codeSystem = '2.16.840.1.113883.6.1'))
+	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+	 * value.code = '48764-5' and value.codeSystem = '2.16.840.1.113883.6.1')
 	 * @param mySection The receiving '<em><b>My Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -367,7 +367,7 @@ public class MySectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MY_SECTION_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.substanceAdministration.oclIsUndefined() and entry.substanceAdministration.oclIsKindOf(ihe::Medication))";
+	protected static final String VALIDATE_MY_SECTION_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.substanceAdministration.oclIsUndefined() and entry.substanceAdministration.oclIsKindOf(consol::MedicationActivity))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMySectionMedication(MySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate My Section Medication</em>}' invariant operation.
@@ -383,7 +383,7 @@ public class MySectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entry->one(entry : cda::Entry | not entry.substanceAdministration.oclIsUndefined() and entry.substanceAdministration.oclIsKindOf(ihe::Medication))
+	 * self.entry->one(entry : cda::Entry | not entry.substanceAdministration.oclIsUndefined() and entry.substanceAdministration.oclIsKindOf(consol::MedicationActivity))
 	 * @param mySection The receiving '<em><b>My Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -424,7 +424,7 @@ public class MySectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MY_SECTION_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.encounter.oclIsUndefined() and entry.encounter.oclIsKindOf(hitsp::Encounter))";
+	protected static final String VALIDATE_MY_SECTION_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.encounter.oclIsUndefined() and entry.encounter.oclIsKindOf(consol::EncounterActivities))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMySectionEncounter(MySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate My Section Encounter</em>}' invariant operation.
@@ -440,7 +440,7 @@ public class MySectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.entry->one(entry : cda::Entry | not entry.encounter.oclIsUndefined() and entry.encounter.oclIsKindOf(hitsp::Encounter))
+	 * self.entry->one(entry : cda::Entry | not entry.encounter.oclIsUndefined() and entry.encounter.oclIsKindOf(consol::EncounterActivities))
 	 * @param mySection The receiving '<em><b>My Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -527,7 +527,7 @@ public class MySectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_MEDICATION__EOCL_EXP = "self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(ihe::Medication))->asSequence()->first().oclAsType(ihe::Medication)";
+	protected static final String GET_MEDICATION__EOCL_EXP = "self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(consol::MedicationActivity))->asSequence()->first().oclAsType(consol::MedicationActivity)";
 
 	/**
 	 * The cached OCL query for the '{@link #getMedication(MySection) <em>Get Medication</em>}' query operation.
@@ -543,12 +543,12 @@ public class MySectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(ihe::Medication))->asSequence()->first().oclAsType(ihe::Medication)
+	 * self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(consol::MedicationActivity))->asSequence()->first().oclAsType(consol::MedicationActivity)
 	 * @param mySection The receiving '<em><b>My Section</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  Medication getMedication(MySection mySection) {
+	public static  MedicationActivity getMedication(MySection mySection) {
 		if (GET_MEDICATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(ExamplePackage.Literals.MY_SECTION, ExamplePackage.Literals.MY_SECTION.getEAllOperations().get(63));
@@ -560,7 +560,7 @@ public class MySectionOperations extends SectionOperations {
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_MEDICATION__EOCL_QRY);
-		return (Medication) query.evaluate(mySection);
+		return (MedicationActivity) query.evaluate(mySection);
 	}
 
 	/**
@@ -571,7 +571,7 @@ public class MySectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_ENCOUNTER__EOCL_EXP = "self.getEncounters()->select(encounter : cda::Encounter | not encounter.oclIsUndefined() and encounter.oclIsKindOf(hitsp::Encounter))->asSequence()->first().oclAsType(hitsp::Encounter)";
+	protected static final String GET_ENCOUNTER__EOCL_EXP = "self.getEncounters()->select(encounter : cda::Encounter | not encounter.oclIsUndefined() and encounter.oclIsKindOf(consol::EncounterActivities))->asSequence()->first().oclAsType(consol::EncounterActivities)";
 
 	/**
 	 * The cached OCL query for the '{@link #getEncounter(MySection) <em>Get Encounter</em>}' query operation.
@@ -587,12 +587,12 @@ public class MySectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getEncounters()->select(encounter : cda::Encounter | not encounter.oclIsUndefined() and encounter.oclIsKindOf(hitsp::Encounter))->asSequence()->first().oclAsType(hitsp::Encounter)
+	 * self.getEncounters()->select(encounter : cda::Encounter | not encounter.oclIsUndefined() and encounter.oclIsKindOf(consol::EncounterActivities))->asSequence()->first().oclAsType(consol::EncounterActivities)
 	 * @param mySection The receiving '<em><b>My Section</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  Encounter getEncounter(MySection mySection) {
+	public static  EncounterActivities getEncounter(MySection mySection) {
 		if (GET_ENCOUNTER__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(ExamplePackage.Literals.MY_SECTION, ExamplePackage.Literals.MY_SECTION.getEAllOperations().get(64));
@@ -604,7 +604,7 @@ public class MySectionOperations extends SectionOperations {
 			}
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_ENCOUNTER__EOCL_QRY);
-		return (Encounter) query.evaluate(mySection);
+		return (EncounterActivities) query.evaluate(mySection);
 	}
 
 } // MySectionOperations

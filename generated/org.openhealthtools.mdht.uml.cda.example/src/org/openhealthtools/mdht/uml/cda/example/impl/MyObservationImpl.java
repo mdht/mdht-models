@@ -14,7 +14,7 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
-import org.openhealthtools.mdht.uml.cda.ccd.impl.ProblemObservationImpl;
+import org.openhealthtools.mdht.uml.cda.consol.impl.ProblemObservationImpl;
 import org.openhealthtools.mdht.uml.cda.example.ExamplePackage;
 import org.openhealthtools.mdht.uml.cda.example.MyObservation;
 import org.openhealthtools.mdht.uml.cda.example.operations.MyObservationOperations;
@@ -63,8 +63,8 @@ public class MyObservationImpl extends ProblemObservationImpl implements MyObser
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProblemObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MyObservationOperations.validateProblemObservationCode(this, diagnostics, context);
+	public boolean validateMyObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MyObservationOperations.validateMyObservationCode(this, diagnostics, context);
 	}
 
 	/**

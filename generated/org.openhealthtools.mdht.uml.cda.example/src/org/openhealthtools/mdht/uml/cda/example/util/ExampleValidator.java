@@ -16,8 +16,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.ResourceLocator;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.util.EObjectValidator;
-import org.openhealthtools.mdht.uml.cda.ccd.util.CCDValidator;
-import org.openhealthtools.mdht.uml.cda.cdt.util.CDTValidator;
+import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
 import org.openhealthtools.mdht.uml.cda.example.ExamplePackage;
 import org.openhealthtools.mdht.uml.cda.example.ExamplePlugin;
 import org.openhealthtools.mdht.uml.cda.example.MyDocument;
@@ -140,12 +139,12 @@ public class ExampleValidator extends EObjectValidator {
 	public static final int MY_OBSERVATION__MY_OBSERVATION_CLASS_CODE = 11;
 
 	/**
-	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Observation Code' of 'My Observation'.
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate My Observation Code' of 'My Observation'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MY_OBSERVATION__PROBLEM_OBSERVATION_CODE = 12;
+	public static final int MY_OBSERVATION__MY_OBSERVATION_CODE = 12;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate My Observation Effective Time' of 'My Observation'.
@@ -209,15 +208,7 @@ public class ExampleValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected CDTValidator cdtValidator;
-
-	/**
-	 * The cached base package validator.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected CCDValidator ccdValidator;
+	protected ConsolValidator consolValidator;
 
 	/**
 	 * Creates an instance of the switch.
@@ -228,8 +219,7 @@ public class ExampleValidator extends EObjectValidator {
 	public ExampleValidator() {
 		super();
 		cdaValidator = CDAValidator.INSTANCE;
-		cdtValidator = CDTValidator.INSTANCE;
-		ccdValidator = CCDValidator.INSTANCE;
+		consolValidator = ConsolValidator.INSTANCE;
 	}
 
 	/**
@@ -279,43 +269,137 @@ public class ExampleValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(myDocument, diagnostics, context);
 		if (result || diagnostics != null) result &= cdaValidator.validateClinicalDocument_validateClassCode(myDocument, diagnostics, context);
 		if (result || diagnostics != null) result &= cdaValidator.validateClinicalDocument_validateMoodCode(myDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsPersonHasName(myDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRolesShallHaveAddrAndTelecom(myDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRolesShouldHaveAddrAndTelecom(myDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsOrganizationsHaveContactInfo(myDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTimePreciseToDay(myDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTimePreciseToYear(myDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTelephoneMatchesRegex(myDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasTelephoneDialingDigits(myDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsUnknownTelephoneUsesNullFlavor(myDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeIdExtension(myDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsOidLength(myDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSetIdAndVersionNumber(myDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSetIdAndIdAreUnique(myDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCopyTimeNotPresent(myDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasRecordTargetPatientRole(myDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasPatientBirthTime(myDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasAdministrativeGenderCode(myDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasProviderOrganization(myDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasAuthorTime(myDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasAssignedAuthorId(myDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasAssignedAuthorPersonOrDevice(myDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasDataEntererAssignedPerson(myDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasDataEntererTime(myDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasInformant(myDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasInformantAssignedPersonOrRelatedPerson(myDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorHasAssignedPerson(myDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorHasAssignedPerson(myDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTimePreciseToSecond(myDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTimePreciseToYearAndDay(myDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTemplateId(myDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCode(myDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsEffectiveTime(myDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsId(myDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLanguageCode(myDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRealmCode(myDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTitle(myDocument, diagnostics, context);
-		if (result || diagnostics != null) result &= cdtValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeId(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsUSRealmAddress(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsUSRealmPatientName(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTemplateId(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRealmCode(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeId(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsId(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCode(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTitle(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsEffectiveTime(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsConfidentialityCode(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLanguageCode(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSetId(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsVersionNumber(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthor(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEnterer(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodian(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformationRecipient(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticator(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticator(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTarget(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsComponentOf(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformant(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSupportParticipant(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInFulfillmentOf(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorAuthoringDeviceManufacturerModelName(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorAuthoringDeviceSoftwareName(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorPersonName(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorHasAssignedPersonOrAssignedAuthoringDevice(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorHasNationalProviderIdentifier(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorAddr(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorCode(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorCodeP(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorId(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorTelecom(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthor(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityPersonName(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityHasNationalProviderIdentifier(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityAddr(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityCode(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityCodeP(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityId(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityTelecom(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityAssignedPerson(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntity(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationHasNationalProviderIdentifier(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationAddr(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationId(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationName(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationTelecom(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianRepresentedCustodianOrganization(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodian(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientOrganizationName(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientPersonName(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientInformationRecipient(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientRecievedOrganization(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformationRecipientIntendedRecipient(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityPersonName(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityHasNationalProviderIdentifier(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityAddr(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityCode(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityCodeP(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityId(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityTelecom(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityAssignedPerson(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorTime(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorSignatureCode(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityPersonName(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityHasNationalProviderIdentifier(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityAddr(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityCode(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityCodeP(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityId(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityTelecom(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorTime(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorSignatureCode(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntity(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationHasNationalProviderIdentifier(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationAddr(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationId(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationName(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationTelecom(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationPreferenceInd(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationProficiencyLevelCode(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationProficiencyLevelCodeP(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationModeCode(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationModeCodeP(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlaceAddr(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlace(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianPersonName(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianAddr(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCode(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCodeP(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTelecom(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGuardianPerson(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTimePreciseToYear(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTimePreciseToDay(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientAdministrativeGenderCode(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTime(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeP(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientMaritalStatusCode(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientName(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientReligiousAffiliationCode(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardian(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplace(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleAddr(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleId(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleTelecom(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatient(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRole(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsComponentOfEncompassingEncounterEffectiveTime(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsComponentOfEncompassingEncounterId(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsComponentOfEncompassingEncounter(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityPersonName(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityAddr(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityPerson(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityPersonName(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityHasNationalProviderIdentifier(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityAddr(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityCode(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityCodeP(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityId(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityPerson(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantHasAssignedEntityOrRelatedEntity(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsParticipantSupportAssociatedEntityHasAssociatedPersonOrScopingOrganization(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsParticipantSupportTime(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInFulfillmentOfOrderId(myDocument, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInFulfillmentOfOrder(myDocument, diagnostics, context);
 		if (result || diagnostics != null) result &= validateMyDocument_validateMyDocumentHasPatientNameGivenAndFamily(myDocument, diagnostics, context);
 		if (result || diagnostics != null) result &= validateMyDocument_validateMyDocumentTemplateId(myDocument, diagnostics, context);
 		if (result || diagnostics != null) result &= validateMyDocument_validateMyDocumentMySection(myDocument, diagnostics, context);
@@ -471,17 +555,24 @@ public class ExampleValidator extends EObjectValidator {
 		if (result || diagnostics != null) result &= validate_UniqueID(myObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryKeyUnique(myObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(myObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateProblemObservation_validateProblemObservationInformationSource(myObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateProblemObservation_validateProblemObservationContainsPatientAwareness(myObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateProblemObservation_validateProblemObservationHasTextReference(myObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateProblemObservation_validateProblemObservationHasTextReferenceValue(myObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateProblemObservation_validateProblemObservationAgeObservationInversion(myObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validateMyObservation_validateProblemObservationTemplateId(myObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateProblemObservation_validateProblemObservationMoodCode(myObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateProblemObservation_validateProblemObservationStatusCode(myObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateProblemObservation_validateProblemObservationEffectiveTime(myObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateProblemObservation_validateProblemObservationProblemStatus(myObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateProblemObservation_validateProblemObservationProblemHealthStatus(myObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateProblemObservation_validateProblemObservationAgeObservation(myObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateProblemObservation_validateProblemObservationClassCode(myObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateProblemObservation_validateProblemObservationMoodCode(myObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateProblemObservation_validateProblemObservationNegationInd(myObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateProblemObservation_validateProblemObservationId(myObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateProblemObservation_validateProblemObservationCode(myObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateProblemObservation_validateProblemObservationText(myObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateProblemObservation_validateProblemObservationStatusCode(myObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateProblemObservation_validateProblemObservationEffectiveTime(myObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateProblemObservation_validateProblemObservationValue(myObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateProblemObservation_validateProblemObservationAgeObservation(myObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateProblemObservation_validateProblemObservationHealthStatusObservation(myObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= consolValidator.validateProblemObservation_validateProblemObservationProblemStatus(myObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validateMyObservation_validateMyObservationClassCode(myObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= validateMyObservation_validateProblemObservationCode(myObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMyObservation_validateMyObservationCode(myObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validateMyObservation_validateMyObservationEffectiveTime(myObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validateMyObservation_validateMyObservationTargetSiteCode(myObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validateMyObservation_validateMyObservationValue(myObservation, diagnostics, context);
@@ -500,14 +591,13 @@ public class ExampleValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the validateProblemObservationCode constraint of '<em>My Observation</em>'.
+	 * Validates the validateMyObservationCode constraint of '<em>My Observation</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMyObservation_validateProblemObservationCode(MyObservation myObservation,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return myObservation.validateProblemObservationCode(diagnostics, context);
+	public boolean validateMyObservation_validateMyObservationCode(MyObservation myObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return myObservation.validateMyObservationCode(diagnostics, context);
 	}
 
 	/**

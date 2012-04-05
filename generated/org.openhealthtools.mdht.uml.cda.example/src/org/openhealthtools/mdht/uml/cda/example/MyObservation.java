@@ -13,7 +13,7 @@ package org.openhealthtools.mdht.uml.cda.example;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-import org.openhealthtools.mdht.uml.cda.ccd.ProblemObservation;
+import org.openhealthtools.mdht.uml.cda.consol.ProblemObservation;
 
 /**
  * <!-- begin-user-doc -->
@@ -26,7 +26,7 @@ import org.openhealthtools.mdht.uml.cda.ccd.ProblemObservation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.example.ExamplePackage#getMyObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation value.codeSystemName='SNOMEDCT' code.codeSystem='2.16.840.1.113883.6.96' templateId.root='1.2.3.4.2' constraints.validation.error='MyObservationTemplateId MyObservationClassCode ProblemObservationCode MyObservationEffectiveTime MyObservationValue' code.codeSystemName='SNOMEDCT' classCode='OBS' constraints.validation.info='MyObservationTargetSiteCode' value.codeSystem='2.16.840.1.113883.6.96'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation value.codeSystemName='SNOMEDCT' code.codeSystem='2.16.840.1.113883.6.96' templateId.root='1.2.3.4.2' constraints.validation.error='MyObservationTemplateId MyObservationClassCode MyObservationCode MyObservationEffectiveTime MyObservationValue' code.codeSystemName='SNOMEDCT' classCode='OBS' constraints.validation.info='MyObservationTargetSiteCode' value.codeSystem='2.16.840.1.113883.6.96'"
  * @generated
  */
 public interface MyObservation extends ProblemObservation {
@@ -48,15 +48,15 @@ public interface MyObservation extends ProblemObservation {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
-	 * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (
-	 * value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '404684003' or value.code = '409586006' or value.code = '282291009' or value.code = '64572001' or value.code = '248536006' or value.code = '418799008' or value.code = '55607006')))
+	 * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+	 * value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '404684003' or value.code = '409586006' or value.code = '282291009' or value.code = '64572001' or value.code = '248536006' or value.code = '418799008' or value.code = '55607006'))
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (\r\nvalue.codeSystem = \'2.16.840.1.113883.6.96\' and (value.code = \'404684003\' or value.code = \'409586006\' or value.code = \'282291009\' or value.code = \'64572001\' or value.code = \'248536006\' or value.code = \'418799008\' or value.code = \'55607006\')))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.96\' and (value.code = \'404684003\' or value.code = \'409586006\' or value.code = \'282291009\' or value.code = \'64572001\' or value.code = \'248536006\' or value.code = \'418799008\' or value.code = \'55607006\'))'"
 	 * @generated
 	 */
-	boolean validateProblemObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMyObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

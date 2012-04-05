@@ -20,7 +20,7 @@ import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 import org.eclipse.ocl.expressions.OCLExpression;
-import org.openhealthtools.mdht.uml.cda.cdt.operations.GeneralHeaderConstraintsOperations;
+import org.openhealthtools.mdht.uml.cda.consol.operations.GeneralHeaderConstraintsOperations;
 import org.openhealthtools.mdht.uml.cda.example.ExamplePackage;
 import org.openhealthtools.mdht.uml.cda.example.ExamplePlugin;
 import org.openhealthtools.mdht.uml.cda.example.MyDocument;
@@ -262,7 +262,7 @@ public class MyDocumentOperations extends GeneralHeaderConstraintsOperations {
 	public static MySection getMySection(MyDocument myDocument) {
 		if (GET_MY_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ExamplePackage.Literals.MY_DOCUMENT, ExamplePackage.Literals.MY_DOCUMENT.getEAllOperations().get(69));
+			helper.setOperationContext(ExamplePackage.Literals.MY_DOCUMENT, ExamplePackage.Literals.MY_DOCUMENT.getEAllOperations().get(163));
 			try {
 				GET_MY_SECTION__EOCL_QRY = helper.createQuery(GET_MY_SECTION__EOCL_EXP);
 			}

@@ -18,7 +18,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-import org.openhealthtools.mdht.uml.cda.ccd.operations.ProblemObservationOperations;
+import org.openhealthtools.mdht.uml.cda.consol.operations.ProblemObservationOperations;
 import org.openhealthtools.mdht.uml.cda.example.ExamplePackage;
 import org.openhealthtools.mdht.uml.cda.example.ExamplePlugin;
 import org.openhealthtools.mdht.uml.cda.example.MyObservation;
@@ -33,7 +33,7 @@ import org.openhealthtools.mdht.uml.cda.example.util.ExampleValidator;
  * The following operations are supported:
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.example.MyObservation#validateMyObservationClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate My Observation Class Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.example.MyObservation#validateProblemObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.example.MyObservation#validateMyObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate My Observation Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.example.MyObservation#validateMyObservationEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate My Observation Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.example.MyObservation#validateMyObservationTargetSiteCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate My Observation Target Site Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.example.MyObservation#validateMyObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate My Observation Value</em>}</li>
@@ -112,60 +112,61 @@ public class MyObservationOperations extends ProblemObservationOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateProblemObservationCode(MyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation Code</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateMyObservationCode(MyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate My Observation Code</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateProblemObservationCode(MyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateMyObservationCode(MyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROBLEM_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in ("+
-"value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '404684003' or value.code = '409586006' or value.code = '282291009' or value.code = '64572001' or value.code = '248536006' or value.code = '418799008' or value.code = '55607006')))";
+	protected static final String VALIDATE_MY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '404684003' or value.code = '409586006' or value.code = '282291009' or value.code = '64572001' or value.code = '248536006' or value.code = '418799008' or value.code = '55607006'))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateProblemObservationCode(MyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation Code</em>}' invariant operation.
+	 * The cached OCL invariant for the '{@link #validateMyObservationCode(MyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate My Observation Code</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateProblemObservationCode(MyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateMyObservationCode(MyObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_PROBLEM_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	
+	protected static Constraint VALIDATE_MY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
-	 * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (
-	 * value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '404684003' or value.code = '409586006' or value.code = '282291009' or value.code = '64572001' or value.code = '248536006' or value.code = '418799008' or value.code = '55607006')))
+	 * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+	 * value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '404684003' or value.code = '409586006' or value.code = '282291009' or value.code = '64572001' or value.code = '248536006' or value.code = '418799008' or value.code = '55607006'))
 	 * @param myObservation The receiving '<em><b>My Observation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateProblemObservationCode(MyObservation myObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		if (VALIDATE_PROBLEM_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+	
+	public static  boolean validateMyObservationCode(MyObservation myObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (VALIDATE_MY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ExamplePackage.Literals.MY_OBSERVATION);
 			try {
-				VALIDATE_PROBLEM_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(myObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(myObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 ExampleValidator.DIAGNOSTIC_SOURCE,
-						 ExampleValidator.MY_OBSERVATION__PROBLEM_OBSERVATION_CODE,
-						 ExamplePlugin.INSTANCE.getString("ProblemObservationCode"),
+						 ExampleValidator.MY_OBSERVATION__MY_OBSERVATION_CODE,
+						 ExamplePlugin.INSTANCE.getString("MyObservationCode"),
 						 new Object [] { myObservation }));
 			}
 			return false;
