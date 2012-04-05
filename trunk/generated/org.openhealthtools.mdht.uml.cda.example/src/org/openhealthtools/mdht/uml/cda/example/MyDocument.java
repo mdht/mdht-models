@@ -13,7 +13,7 @@ package org.openhealthtools.mdht.uml.cda.example;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-import org.openhealthtools.mdht.uml.cda.cdt.GeneralHeaderConstraints;
+import org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraints;
 
 /**
  * <!-- begin-user-doc -->

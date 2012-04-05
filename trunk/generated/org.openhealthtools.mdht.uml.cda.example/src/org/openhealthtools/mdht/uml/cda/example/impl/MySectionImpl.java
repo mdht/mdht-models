@@ -15,12 +15,12 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
+import org.openhealthtools.mdht.uml.cda.consol.EncounterActivities;
+import org.openhealthtools.mdht.uml.cda.consol.MedicationActivity;
 import org.openhealthtools.mdht.uml.cda.example.ExamplePackage;
 import org.openhealthtools.mdht.uml.cda.example.MyObservation;
 import org.openhealthtools.mdht.uml.cda.example.MySection;
 import org.openhealthtools.mdht.uml.cda.example.operations.MySectionOperations;
-import org.openhealthtools.mdht.uml.cda.hitsp.Encounter;
-import org.openhealthtools.mdht.uml.cda.ihe.Medication;
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
@@ -130,7 +130,7 @@ public class MySectionImpl extends SectionImpl implements MySection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Medication getMedication() {
+	public MedicationActivity getMedication() {
 		return MySectionOperations.getMedication(this);
 	}
 
@@ -139,7 +139,7 @@ public class MySectionImpl extends SectionImpl implements MySection {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Encounter getEncounter() {
+	public EncounterActivities getEncounter() {
 		return MySectionOperations.getEncounter(this);
 	}
 

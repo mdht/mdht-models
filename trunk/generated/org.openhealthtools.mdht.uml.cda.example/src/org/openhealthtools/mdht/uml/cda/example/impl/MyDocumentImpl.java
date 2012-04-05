@@ -14,7 +14,7 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
-import org.openhealthtools.mdht.uml.cda.cdt.impl.GeneralHeaderConstraintsImpl;
+import org.openhealthtools.mdht.uml.cda.consol.impl.GeneralHeaderConstraintsImpl;
 import org.openhealthtools.mdht.uml.cda.example.ExamplePackage;
 import org.openhealthtools.mdht.uml.cda.example.MyDocument;
 import org.openhealthtools.mdht.uml.cda.example.MySection;

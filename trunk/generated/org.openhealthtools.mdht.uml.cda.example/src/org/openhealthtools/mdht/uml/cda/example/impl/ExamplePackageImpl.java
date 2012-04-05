@@ -17,16 +17,13 @@ import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EValidator;
 import org.eclipse.emf.ecore.impl.EPackageImpl;
 import org.openhealthtools.mdht.uml.cda.CDAPackage;
-import org.openhealthtools.mdht.uml.cda.ccd.CCDPackage;
-import org.openhealthtools.mdht.uml.cda.cdt.CDTPackage;
+import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.example.ExampleFactory;
 import org.openhealthtools.mdht.uml.cda.example.ExamplePackage;
 import org.openhealthtools.mdht.uml.cda.example.MyDocument;
 import org.openhealthtools.mdht.uml.cda.example.MyObservation;
 import org.openhealthtools.mdht.uml.cda.example.MySection;
 import org.openhealthtools.mdht.uml.cda.example.util.ExampleValidator;
-import org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage;
-import org.openhealthtools.mdht.uml.cda.ihe.IHEPackage;
 
 /**
  * <!-- begin-user-doc -->
@@ -103,7 +100,7 @@ public class ExamplePackageImpl extends EPackageImpl implements ExamplePackage {
 		isInited = true;
 
 		// Initialize simple dependencies
-		HITSPPackage.eINSTANCE.eClass();
+		ConsolPackage.eINSTANCE.eClass();
 
 		// Create package meta-data objects
 		theExamplePackage.createPackageContents();
@@ -215,20 +212,17 @@ public class ExamplePackageImpl extends EPackageImpl implements ExamplePackage {
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		CDTPackage theCDTPackage = (CDTPackage)EPackage.Registry.INSTANCE.getEPackage(CDTPackage.eNS_URI);
+		ConsolPackage theConsolPackage = (ConsolPackage)EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI);
 		CDAPackage theCDAPackage = (CDAPackage)EPackage.Registry.INSTANCE.getEPackage(CDAPackage.eNS_URI);
-		IHEPackage theIHEPackage = (IHEPackage)EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI);
-		HITSPPackage theHITSPPackage = (HITSPPackage)EPackage.Registry.INSTANCE.getEPackage(HITSPPackage.eNS_URI);
-		CCDPackage theCCDPackage = (CCDPackage)EPackage.Registry.INSTANCE.getEPackage(CCDPackage.eNS_URI);
 
 		// Create type parameters
 
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		myDocumentEClass.getESuperTypes().add(theCDTPackage.getGeneralHeaderConstraints());
+		myDocumentEClass.getESuperTypes().add(theConsolPackage.getGeneralHeaderConstraints());
 		mySectionEClass.getESuperTypes().add(theCDAPackage.getSection());
-		myObservationEClass.getESuperTypes().add(theCCDPackage.getProblemObservation());
+		myObservationEClass.getESuperTypes().add(theConsolPackage.getProblemObservation());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(myDocumentEClass, MyDocument.class, "MyDocument", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -329,9 +323,9 @@ public class ExamplePackageImpl extends EPackageImpl implements ExamplePackage {
 
 		addEOperation(mySectionEClass, this.getMyObservation(), "getMyObservations", 1, -1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(mySectionEClass, theIHEPackage.getMedication(), "getMedication", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		addEOperation(mySectionEClass, theConsolPackage.getMedicationActivity(), "getMedication", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-		addEOperation(mySectionEClass, theHITSPPackage.getEncounter(), "getEncounter", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		addEOperation(mySectionEClass, theConsolPackage.getEncounterActivities(), "getEncounter", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
 		initEClass(myObservationEClass, MyObservation.class, "MyObservation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
@@ -344,7 +338,7 @@ public class ExamplePackageImpl extends EPackageImpl implements ExamplePackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = addEOperation(myObservationEClass, ecorePackage.getEBoolean(), "validateProblemObservationCode", 0, 1, IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(myObservationEClass, ecorePackage.getEBoolean(), "validateMyObservationCode", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -424,7 +418,7 @@ public class ExamplePackageImpl extends EPackageImpl implements ExamplePackage {
 			 "value.codeSystemName", "SNOMEDCT",
 			 "code.codeSystem", "2.16.840.1.113883.6.96",
 			 "templateId.root", "1.2.3.4.2",
-			 "constraints.validation.error", "MyObservationTemplateId MyObservationClassCode ProblemObservationCode MyObservationEffectiveTime MyObservationValue",
+			 "constraints.validation.error", "MyObservationTemplateId MyObservationClassCode MyObservationCode MyObservationEffectiveTime MyObservationValue",
 			 "code.codeSystemName", "SNOMEDCT",
 			 "classCode", "OBS",
 			 "constraints.validation.info", "MyObservationTargetSiteCode",

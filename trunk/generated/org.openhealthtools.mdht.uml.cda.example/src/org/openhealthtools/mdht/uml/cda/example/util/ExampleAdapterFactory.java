@@ -18,8 +18,8 @@ import org.openhealthtools.mdht.uml.cda.ClinicalDocument;
 import org.openhealthtools.mdht.uml.cda.ClinicalStatement;
 import org.openhealthtools.mdht.uml.cda.Observation;
 import org.openhealthtools.mdht.uml.cda.Section;
-import org.openhealthtools.mdht.uml.cda.ccd.ProblemObservation;
-import org.openhealthtools.mdht.uml.cda.cdt.GeneralHeaderConstraints;
+import org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraints;
+import org.openhealthtools.mdht.uml.cda.consol.ProblemObservation;
 import org.openhealthtools.mdht.uml.cda.example.ExamplePackage;
 import org.openhealthtools.mdht.uml.cda.example.MyDocument;
 import org.openhealthtools.mdht.uml.cda.example.MyObservation;
@@ -230,13 +230,13 @@ public class ExampleAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.cdt.GeneralHeaderConstraints <em>General Header Constraints</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraints <em>General Header Constraints</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.cdt.GeneralHeaderConstraints
+	 * @see org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraints
 	 * @generated
 	 */
 	public Adapter createGeneralHeaderConstraintsAdapter() {
@@ -272,13 +272,13 @@ public class ExampleAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.ccd.ProblemObservation <em>Problem Observation</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.ProblemObservation <em>Problem Observation</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.ccd.ProblemObservation
+	 * @see org.openhealthtools.mdht.uml.cda.consol.ProblemObservation
 	 * @generated
 	 */
 	public Adapter createProblemObservationAdapter() {
