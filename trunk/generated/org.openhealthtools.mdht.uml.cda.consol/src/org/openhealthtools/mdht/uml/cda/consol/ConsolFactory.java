@@ -800,33 +800,6 @@ public interface ConsolFactory extends EFactory {
 	EncounterPerformerAssignedEntity createEncounterPerformerAssignedEntity();
 
 	/**
-	 * Returns a new object of class '<em>Allergy Observation Participant</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Allergy Observation Participant</em>'.
-	 * @generated
-	 */
-	AllergyObservationParticipant createAllergyObservationParticipant();
-
-	/**
-	 * Returns a new object of class '<em>Allergy Observation Participant Role</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Allergy Observation Participant Role</em>'.
-	 * @generated
-	 */
-	AllergyObservationParticipantRole createAllergyObservationParticipantRole();
-
-	/**
-	 * Returns a new object of class '<em>Allergy Observation Playing Entity</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Allergy Observation Playing Entity</em>'.
-	 * @generated
-	 */
-	AllergyObservationPlayingEntity createAllergyObservationPlayingEntity();
-
-	/**
 	 * Returns a new object of class '<em>Anesthesia Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

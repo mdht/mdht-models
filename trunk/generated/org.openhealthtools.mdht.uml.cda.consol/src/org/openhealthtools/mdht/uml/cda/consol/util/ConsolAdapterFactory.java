@@ -19,11 +19,9 @@ import org.openhealthtools.mdht.uml.cda.ManufacturedProduct;
 import org.openhealthtools.mdht.uml.cda.Material;
 import org.openhealthtools.mdht.uml.cda.Observation;
 import org.openhealthtools.mdht.uml.cda.Organizer;
-import org.openhealthtools.mdht.uml.cda.Participant2;
 import org.openhealthtools.mdht.uml.cda.ParticipantRole;
 import org.openhealthtools.mdht.uml.cda.Performer1;
 import org.openhealthtools.mdht.uml.cda.Performer2;
-import org.openhealthtools.mdht.uml.cda.PlayingEntity;
 import org.openhealthtools.mdht.uml.cda.Precondition;
 import org.openhealthtools.mdht.uml.cda.Procedure;
 import org.openhealthtools.mdht.uml.cda.Section;
@@ -652,21 +650,6 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		}
 
 		@Override
-		public Adapter caseAllergyObservationParticipant(AllergyObservationParticipant object) {
-			return createAllergyObservationParticipantAdapter();
-		}
-
-		@Override
-		public Adapter caseAllergyObservationParticipantRole(AllergyObservationParticipantRole object) {
-			return createAllergyObservationParticipantRoleAdapter();
-		}
-
-		@Override
-		public Adapter caseAllergyObservationPlayingEntity(AllergyObservationPlayingEntity object) {
-			return createAllergyObservationPlayingEntityAdapter();
-		}
-
-		@Override
 		public Adapter caseAnesthesiaSection(AnesthesiaSection object) {
 			return createAnesthesiaSectionAdapter();
 		}
@@ -1010,16 +993,6 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 		@Override
 		public Adapter caseAssignedEntity(AssignedEntity object) {
 			return createAssignedEntityAdapter();
-		}
-
-		@Override
-		public Adapter caseParticipant2(Participant2 object) {
-			return createParticipant2Adapter();
-		}
-
-		@Override
-		public Adapter casePlayingEntity(PlayingEntity object) {
-			return createPlayingEntityAdapter();
 		}
 
 		@Override
@@ -2788,20 +2761,6 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.Participant2 <em>Participant2</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.Participant2
-	 * @generated
-	 */
-	public Adapter createParticipant2Adapter() {
-		return null;
-	}
-
-	/**
 	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.hl7.rim.ActRelationship <em>Act Relationship</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -2812,48 +2771,6 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createActRelationshipAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservationParticipant <em>Allergy Observation Participant</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.consol.AllergyObservationParticipant
-	 * @generated
-	 */
-	public Adapter createAllergyObservationParticipantAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservationParticipantRole <em>Allergy Observation Participant Role</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.consol.AllergyObservationParticipantRole
-	 * @generated
-	 */
-	public Adapter createAllergyObservationParticipantRoleAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.AllergyObservationPlayingEntity <em>Allergy Observation Playing Entity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.consol.AllergyObservationPlayingEntity
-	 * @generated
-	 */
-	public Adapter createAllergyObservationPlayingEntityAdapter() {
 		return null;
 	}
 
@@ -3652,20 +3569,6 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createAssignedEntityAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.PlayingEntity <em>Playing Entity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see org.openhealthtools.mdht.uml.cda.PlayingEntity
-	 * @generated
-	 */
-	public Adapter createPlayingEntityAdapter() {
 		return null;
 	}
 

@@ -278,9 +278,6 @@
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-documents.uml#_z9s3oTCbEeGKv64oQf5fow"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-encounters.uml#_qg2uMDFVEeGbx9xBxK_Upg"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-encounters.uml#_tEK_gDFVEeGbx9xBxK_Upg"/>
-    <packagedElement xmi:type="uml:Class" href=".controlled/consol-allergies.uml#_0HgNkDJAEeG6R8Pb5FT2Ow"/>
-    <packagedElement xmi:type="uml:Class" href=".controlled/consol-allergies.uml#_4Lj44DJAEeG6R8Pb5FT2Ow"/>
-    <packagedElement xmi:type="uml:Class" href=".controlled/consol-allergies.uml#_E1B60DJBEeG6R8Pb5FT2Ow"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-allergies.uml#_Oi4gMjJBEeG6R8Pb5FT2Ow"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-allergies.uml#_QPyG4jJBEeG6R8Pb5FT2Ow"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-allergies.uml#_FQD_EjJDEeG6R8Pb5FT2Ow"/>
