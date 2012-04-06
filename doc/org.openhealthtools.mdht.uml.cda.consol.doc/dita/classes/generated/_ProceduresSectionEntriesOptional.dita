@@ -67,14 +67,14 @@ The length of an encounter is documented in the documentationOf/encompassingEnco
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
   <templateId root="2.16.840.1.113883.10.20.22.2.7"/>
-  <id root="1141754659"/>
+  <id root="531772494"/>
   <code code="47519-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of procedures"/>
   <title/>
   <text/>
   <entry>
     <procedure classCode="PROC">
       <templateId root="2.16.840.1.113883.10.20.22.4.14"/>
-      <id root="1547450816"/>
+      <id root="167305491"/>
       <text>Text Value</text>
       <effectiveTime>
         <low value="2012"/>
@@ -84,7 +84,7 @@ The length of an encounter is documented in the documentationOf/encompassingEnco
       <entryRelationship>
         <observation classCode="OBS" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
-          <id root="313915698"/>
+          <id root="1760102977"/>
           <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
           <text>Text Value</text>
           <statusCode code="completed"/>
@@ -97,21 +97,21 @@ The length of an encounter is documented in the documentationOf/encompassingEnco
       <entryRelationship>
         <substanceAdministration classCode="SBADM">
           <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
-          <id root="962258037"/>
+          <id root="1994452439"/>
           <text>Text Value</text>
-          <effectiveTime value="20120403"/>
+          <effectiveTime value="20120405"/>
           <administrationUnitCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
           <consumable/>
           <entryRelationship>
             <supply classCode="SPLY" moodCode="INT">
               <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
-              <id root="111605652"/>
+              <id root="774591376"/>
               <text>Text Value</text>
-              <effectiveTime value="20120403"/>
+              <effectiveTime value="20120405"/>
               <entryRelationship>
                 <act classCode="ACT" moodCode="INT">
                   <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-                  <id root="166150761"/>
+                  <id root="26886345"/>
                   <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                   <text>Text Value</text>
                   <statusCode code="completed"/>
@@ -126,8 +126,8 @@ The length of an encounter is documented in the documentationOf/encompassingEnco
           <entryRelationship>
             <observation classCode="OBS" moodCode="EVN">
               <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
-              <id root="1919603694"/>
-              <code code="1246581249"/>
+              <id root="1923668508"/>
+              <code code="1615262047"/>
               <text>Text Value</text>
               <statusCode code="completed"/>
               <effectiveTime>
@@ -137,7 +137,7 @@ The length of an encounter is documented in the documentationOf/encompassingEnco
               <entryRelationship>
                 <observation classCode="OBS" moodCode="EVN">
                   <templateId root="2.16.840.1.113883.10.20.22.4.8"/>
-                  <id root="3965158"/>
+                  <id root="692229607"/>
                   <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Severity observation"/>
                   <text>Text Value</text>
                   <statusCode code="completed"/>
@@ -151,7 +151,7 @@ The length of an encounter is documented in the documentationOf/encompassingEnco
               <entryRelationship>
                 <procedure classCode="PROC">
                   <templateId root="2.16.840.1.113883.10.20.22.4.14"/>
-                  <id root="108929902"/>
+                  <id root="95813883"/>
                   <text>Text Value</text>
                   <effectiveTime>
                     <low value="2012"/>
@@ -175,9 +175,9 @@ The length of an encounter is documented in the documentationOf/encompassingEnco
               <entryRelationship>
                 <substanceAdministration classCode="SBADM">
                   <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
-                  <id root="149128201"/>
+                  <id root="1401043229"/>
                   <text>Text Value</text>
-                  <effectiveTime value="20120403"/>
+                  <effectiveTime value="20120405"/>
                   <administrationUnitCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
                   <consumable/>
                   <entryRelationship>
@@ -202,7 +202,7 @@ The length of an encounter is documented in the documentationOf/encompassingEnco
           <entryRelationship>
             <act classCode="ACT" moodCode="INT">
               <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-              <id root="769217546"/>
+              <id root="2108285426"/>
               <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
               <text>Text Value</text>
               <statusCode code="completed"/>
@@ -215,7 +215,7 @@ The length of an encounter is documented in the documentationOf/encompassingEnco
           <entryRelationship>
             <observation classCode="OBS" moodCode="EVN">
               <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
-              <id root="349654682"/>
+              <id root="1437706577"/>
               <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
               <text>Text Value</text>
               <statusCode code="completed"/>
@@ -228,15 +228,15 @@ The length of an encounter is documented in the documentationOf/encompassingEnco
           <entryRelationship>
             <supply classCode="SPLY" moodCode="EVN">
               <templateId root="2.16.840.1.113883.10.20.22.4.18"/>
-              <id root="1491822045"/>
+              <id root="239600534"/>
               <text>Text Value</text>
-              <effectiveTime value="20120403"/>
+              <effectiveTime value="20120405"/>
               <entryRelationship>
                 <supply classCode="SPLY" moodCode="INT">
                   <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
-                  <id root="948772781"/>
+                  <id root="837267173"/>
                   <text>Text Value</text>
-                  <effectiveTime value="20120403"/>
+                  <effectiveTime value="20120405"/>
                   <entryRelationship>
                     <act/>
                   </entryRelationship>
@@ -249,7 +249,7 @@ The length of an encounter is documented in the documentationOf/encompassingEnco
       <entryRelationship>
         <act classCode="ACT" moodCode="INT">
           <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-          <id root="1817184986"/>
+          <id root="1574110578"/>
           <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
           <text>Text Value</text>
           <statusCode code="completed"/>
@@ -261,7 +261,7 @@ The length of an encounter is documented in the documentationOf/encompassingEnco
       </entryRelationship>
       <entryRelationship>
         <encounter>
-          <id root="217363385"/>
+          <id root="1530696894"/>
           <text>Text Value</text>
           <effectiveTime>
             <low value="2012"/>
@@ -274,8 +274,8 @@ The length of an encounter is documented in the documentationOf/encompassingEnco
   <entry>
     <observation classCode="OBS">
       <templateId root="2.16.840.1.113883.10.20.22.4.13"/>
-      <id root="212136657"/>
-      <code code="680306803"/>
+      <id root="823796102"/>
+      <code code="555862727"/>
       <text>Text Value</text>
       <effectiveTime>
         <low value="2012"/>
@@ -284,7 +284,7 @@ The length of an encounter is documented in the documentationOf/encompassingEnco
       <targetSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
       <entryRelationship>
         <encounter>
-          <id root="1848373717"/>
+          <id root="1398043890"/>
           <text>Text Value</text>
           <effectiveTime>
             <low value="2012"/>
@@ -295,7 +295,7 @@ The length of an encounter is documented in the documentationOf/encompassingEnco
       <entryRelationship>
         <act classCode="ACT" moodCode="INT">
           <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-          <id root="1874830107"/>
+          <id root="1523626918"/>
           <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
           <text>Text Value</text>
           <statusCode code="completed"/>
@@ -308,7 +308,7 @@ The length of an encounter is documented in the documentationOf/encompassingEnco
       <entryRelationship>
         <observation classCode="OBS" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
-          <id root="578422239"/>
+          <id root="1211797540"/>
           <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
           <text>Text Value</text>
           <statusCode code="completed"/>
@@ -321,21 +321,21 @@ The length of an encounter is documented in the documentationOf/encompassingEnco
       <entryRelationship>
         <substanceAdministration classCode="SBADM">
           <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
-          <id root="1133886850"/>
+          <id root="199835187"/>
           <text>Text Value</text>
-          <effectiveTime value="20120403"/>
+          <effectiveTime value="20120405"/>
           <administrationUnitCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
           <consumable/>
           <entryRelationship>
             <supply classCode="SPLY" moodCode="INT">
               <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
-              <id root="1363948153"/>
+              <id root="798754533"/>
               <text>Text Value</text>
-              <effectiveTime value="20120403"/>
+              <effectiveTime value="20120405"/>
               <entryRelationship>
                 <act classCode="ACT" moodCode="INT">
                   <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-                  <id root="1237231891"/>
+                  <id root="1117265986"/>
                   <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                   <text>Text Value</text>
                   <statusCode code="completed"/>
@@ -350,8 +350,8 @@ The length of an encounter is documented in the documentationOf/encompassingEnco
           <entryRelationship>
             <observation classCode="OBS" moodCode="EVN">
               <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
-              <id root="763048039"/>
-              <code code="1479484946"/>
+              <id root="303394996"/>
+              <code code="723720590"/>
               <text>Text Value</text>
               <statusCode code="completed"/>
               <effectiveTime>
@@ -361,7 +361,7 @@ The length of an encounter is documented in the documentationOf/encompassingEnco
               <entryRelationship>
                 <observation classCode="OBS" moodCode="EVN">
                   <templateId root="2.16.840.1.113883.10.20.22.4.8"/>
-                  <id root="988087580"/>
+                  <id root="1085312093"/>
                   <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Severity observation"/>
                   <text>Text Value</text>
                   <statusCode code="completed"/>
@@ -375,7 +375,7 @@ The length of an encounter is documented in the documentationOf/encompassingEnco
               <entryRelationship>
                 <procedure classCode="PROC">
                   <templateId root="2.16.840.1.113883.10.20.22.4.14"/>
-                  <id root="1489609970"/>
+                  <id root="798408718"/>
                   <text>Text Value</text>
                   <effectiveTime>
                     <low value="2012"/>
@@ -399,9 +399,9 @@ The length of an encounter is documented in the documentationOf/encompassingEnco
               <entryRelationship>
                 <substanceAdministration classCode="SBADM">
                   <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
-                  <id root="1701881633"/>
+                  <id root="1805590975"/>
                   <text>Text Value</text>
-                  <effectiveTime value="20120403"/>
+                  <effectiveTime value="20120405"/>
                   <administrationUnitCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
                   <consumable/>
                   <entryRelationship>
@@ -426,7 +426,7 @@ The length of an encounter is documented in the documentationOf/encompassingEnco
           <entryRelationship>
             <act classCode="ACT" moodCode="INT">
               <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-              <id root="1226042478"/>
+              <id root="1708869048"/>
               <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
               <text>Text Value</text>
               <statusCode code="completed"/>
@@ -439,7 +439,7 @@ The length of an encounter is documented in the documentationOf/encompassingEnco
           <entryRelationship>
             <observation classCode="OBS" moodCode="EVN">
               <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
-              <id root="1903456119"/>
+              <id root="125506962"/>
               <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
               <text>Text Value</text>
               <statusCode code="completed"/>
@@ -452,15 +452,15 @@ The length of an encounter is documented in the documentationOf/encompassingEnco
           <entryRelationship>
             <supply classCode="SPLY" moodCode="EVN">
               <templateId root="2.16.840.1.113883.10.20.22.4.18"/>
-              <id root="1388555943"/>
+              <id root="267370927"/>
               <text>Text Value</text>
-              <effectiveTime value="20120403"/>
+              <effectiveTime value="20120405"/>
               <entryRelationship>
                 <supply classCode="SPLY" moodCode="INT">
                   <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
-                  <id root="1797021357"/>
+                  <id root="1913047063"/>
                   <text>Text Value</text>
-                  <effectiveTime value="20120403"/>
+                  <effectiveTime value="20120405"/>
                   <entryRelationship>
                     <act/>
                   </entryRelationship>
@@ -475,8 +475,8 @@ The length of an encounter is documented in the documentationOf/encompassingEnco
   <entry>
     <act classCode="ACT">
       <templateId root="2.16.840.1.113883.10.20.22.4.12"/>
-      <id root="1624289432"/>
-      <code code="962733790"/>
+      <id root="2022660802"/>
+      <code code="460734592"/>
       <text>Text Value</text>
       <effectiveTime>
         <low value="2012"/>
@@ -484,7 +484,7 @@ The length of an encounter is documented in the documentationOf/encompassingEnco
       </effectiveTime>
       <entryRelationship>
         <encounter>
-          <id root="1595624401"/>
+          <id root="91007088"/>
           <text>Text Value</text>
           <effectiveTime>
             <low value="2012"/>
@@ -495,7 +495,7 @@ The length of an encounter is documented in the documentationOf/encompassingEnco
       <entryRelationship>
         <act classCode="ACT" moodCode="INT">
           <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-          <id root="269842414"/>
+          <id root="2141692424"/>
           <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
           <text>Text Value</text>
           <statusCode code="completed"/>
@@ -508,7 +508,7 @@ The length of an encounter is documented in the documentationOf/encompassingEnco
       <entryRelationship>
         <observation classCode="OBS" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
-          <id root="945077855"/>
+          <id root="1543261210"/>
           <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
           <text>Text Value</text>
           <statusCode code="completed"/>
@@ -521,21 +521,21 @@ The length of an encounter is documented in the documentationOf/encompassingEnco
       <entryRelationship>
         <substanceAdministration classCode="SBADM">
           <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
-          <id root="587912168"/>
+          <id root="1042351253"/>
           <text>Text Value</text>
-          <effectiveTime value="20120403"/>
+          <effectiveTime value="20120405"/>
           <administrationUnitCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
           <consumable/>
           <entryRelationship>
             <supply classCode="SPLY" moodCode="INT">
               <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
-              <id root="1735299545"/>
+              <id root="607743997"/>
               <text>Text Value</text>
-              <effectiveTime value="20120403"/>
+              <effectiveTime value="20120405"/>
               <entryRelationship>
                 <act classCode="ACT" moodCode="INT">
                   <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-                  <id root="799527279"/>
+                  <id root="2141528268"/>
                   <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                   <text>Text Value</text>
                   <statusCode code="completed"/>
@@ -550,8 +550,8 @@ The length of an encounter is documented in the documentationOf/encompassingEnco
           <entryRelationship>
             <observation classCode="OBS" moodCode="EVN">
               <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
-              <id root="1416108508"/>
-              <code code="363369087"/>
+              <id root="647934682"/>
+              <code code="1971819649"/>
               <text>Text Value</text>
               <statusCode code="completed"/>
               <effectiveTime>
@@ -561,7 +561,7 @@ The length of an encounter is documented in the documentationOf/encompassingEnco
               <entryRelationship>
                 <observation classCode="OBS" moodCode="EVN">
                   <templateId root="2.16.840.1.113883.10.20.22.4.8"/>
-                  <id root="1010633621"/>
+                  <id root="701158594"/>
                   <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Severity observation"/>
                   <text>Text Value</text>
                   <statusCode code="completed"/>
@@ -575,7 +575,7 @@ The length of an encounter is documented in the documentationOf/encompassingEnco
               <entryRelationship>
                 <procedure classCode="PROC">
                   <templateId root="2.16.840.1.113883.10.20.22.4.14"/>
-                  <id root="733041816"/>
+                  <id root="2189147"/>
                   <text>Text Value</text>
                   <effectiveTime>
                     <low value="2012"/>
@@ -599,9 +599,9 @@ The length of an encounter is documented in the documentationOf/encompassingEnco
               <entryRelationship>
                 <substanceAdministration classCode="SBADM">
                   <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
-                  <id root="978696626"/>
+                  <id root="464727452"/>
                   <text>Text Value</text>
-                  <effectiveTime value="20120403"/>
+                  <effectiveTime value="20120405"/>
                   <administrationUnitCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
                   <consumable/>
                   <entryRelationship>
@@ -626,7 +626,7 @@ The length of an encounter is documented in the documentationOf/encompassingEnco
           <entryRelationship>
             <act classCode="ACT" moodCode="INT">
               <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-              <id root="1120183601"/>
+              <id root="1584022691"/>
               <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
               <text>Text Value</text>
               <statusCode code="completed"/>
@@ -639,7 +639,7 @@ The length of an encounter is documented in the documentationOf/encompassingEnco
           <entryRelationship>
             <observation classCode="OBS" moodCode="EVN">
               <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
-              <id root="1899861661"/>
+              <id root="2014616362"/>
               <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
               <text>Text Value</text>
               <statusCode code="completed"/>
@@ -652,15 +652,15 @@ The length of an encounter is documented in the documentationOf/encompassingEnco
           <entryRelationship>
             <supply classCode="SPLY" moodCode="EVN">
               <templateId root="2.16.840.1.113883.10.20.22.4.18"/>
-              <id root="1634196620"/>
+              <id root="1330007157"/>
               <text>Text Value</text>
-              <effectiveTime value="20120403"/>
+              <effectiveTime value="20120405"/>
               <entryRelationship>
                 <supply classCode="SPLY" moodCode="INT">
                   <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
-                  <id root="897464894"/>
+                  <id root="165682028"/>
                   <text>Text Value</text>
-                  <effectiveTime value="20120403"/>
+                  <effectiveTime value="20120405"/>
                   <entryRelationship>
                     <act/>
                   </entryRelationship>

@@ -1,3 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?NLS TYPE="org.eclipse.help.toc"?>
-<toc topic="../classes/PreoperativeDiagnosisSection.html"><topic label="Preoperative Diagnosis Section"><topic label="Preoperative Diagnosis Section" href="../classes/PreoperativeDiagnosisSection.html"/><topic label="Preoperative Diagnosis Section Table" href="../classes/PreoperativeDiagnosisSectionTable.html"/><topic label="Preoperative Diagnosis Section Sample" href="../classes/PreoperativeDiagnosisSectionSample.html"/></topic></toc>
+<toc label="Preoperative Diagnosis Section" topic="../classes/PreoperativeDiagnosisSection.html"><topic label="Preoperative Diagnosis Section" href="../classes/PreoperativeDiagnosisSection.html"><topic label="Preoperative Diagnosis Section Table" href="../classes/PreoperativeDiagnosisSectionTable.html"/><topic label="Preoperative Diagnosis Section Sample" href="../classes/PreoperativeDiagnosisSectionSample.html"/></topic></toc>

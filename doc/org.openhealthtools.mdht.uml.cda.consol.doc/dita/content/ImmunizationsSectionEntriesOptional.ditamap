@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
-<bookmap id="cdabook">
-
-	<chapter navtitle="Immunizations Section Entries Optional" type="topic">
-		<topicref href="../classes/ImmunizationsSectionEntriesOptional.dita" type="topic" />
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+	<title>Immunizations Section Entries Optional</title>
+	<topicref href="../classes/ImmunizationsSectionEntriesOptional.dita" type="topic" >
 		<topicref href="../classes/ImmunizationsSectionEntriesOptionalTable.dita" type="topic" />
-		<topicref href="../classes/ImmunizationsSectionEntriesOptionalSample.dita" type="topic" />			                         
-	</chapter>
-
-	
-</bookmap>
+		<topicref href="../classes/ImmunizationsSectionEntriesOptionalSample.dita" type="topic" />	
+	</topicref>
+</map>
 

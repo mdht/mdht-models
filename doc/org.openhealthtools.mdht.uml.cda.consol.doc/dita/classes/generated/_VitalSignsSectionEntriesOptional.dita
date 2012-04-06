@@ -58,14 +58,14 @@
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
   <templateId root="2.16.840.1.113883.10.20.22.2.4"/>
-  <id root="1934127817"/>
+  <id root="1380804739"/>
   <code code="8716-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
   <title/>
   <text/>
   <entry>
     <organizer classCode="CLUSTER" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.22.4.26"/>
-      <id root="2053469436"/>
+      <id root="566727496"/>
       <code code="46680005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Vital signs"/>
       <statusCode code="completed"/>
       <effectiveTime>
@@ -75,7 +75,7 @@
       <component>
         <observation classCode="OBS" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.22.4.27"/>
-          <id root="431935651"/>
+          <id root="1471704526"/>
           <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
           <text>Text Value</text>
           <statusCode code="completed"/>

@@ -159,16 +159,16 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
   <realmCode code="US"/>
   <typeId root="2.16.840.1.113883.1.3"/>
   <templateId root="2.16.840.1.113883.10.20.22.1.1"/>
-  <id root="902741906"/>
+  <id root="706333280"/>
   <code code="Value"/>
   <title/>
   <effectiveTime/>
   <confidentialityCode codeSystem="2.16.840.1.113883.5.25" codeSystemName="ConfidentialityCode"/>
-  <setId root="0c156aaa-a64d-4dab-ad63-7e1a5dcc780b"/>
+  <setId root="1c11521b-0f5e-47b3-bb5f-a497e6184fe6"/>
   <versionNumber value="1"/>
   <recordTarget>
     <patientRole>
-      <id root="1229184273"/>
+      <id root="918205428"/>
       <addr/>
       <telecom/>
       <patient>
@@ -195,7 +195,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
         </languageCommunication>
       </patient>
       <providerOrganization>
-        <id root="1416732665"/>
+        <id root="1774454644"/>
         <name/>
         <telecom/>
         <addr/>
@@ -205,7 +205,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
   <author>
     <time/>
     <assignedAuthor>
-      <id root="1225022592"/>
+      <id root="188748652"/>
       <code codeSystem="2.16.840.1.113883.6.101" codeSystemName="NUCC Health Care Provider Taxonomy"/>
       <addr/>
       <telecom/>
@@ -220,7 +220,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
   </author>
   <dataEnterer>
     <assignedEntity>
-      <id root="2144623673"/>
+      <id root="1649561253"/>
       <code code="Value"/>
       <addr/>
       <telecom/>
@@ -231,7 +231,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
   </dataEnterer>
   <informant>
     <assignedEntity>
-      <id root="834716327"/>
+      <id root="1267689088"/>
       <code code="Value"/>
       <addr/>
       <assignedPerson>
@@ -248,7 +248,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
   <custodian>
     <assignedCustodian>
       <representedCustodianOrganization>
-        <id root="1886617945"/>
+        <id root="1466120236"/>
         <name/>
         <telecom/>
         <addr/>
@@ -269,7 +269,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
     <time/>
     <signatureCode code="S"/>
     <assignedEntity>
-      <id root="51958934"/>
+      <id root="1647304705"/>
       <code code="Value"/>
       <addr/>
       <telecom/>
@@ -282,7 +282,7 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
     <time/>
     <signatureCode code="S"/>
     <assignedEntity>
-      <id root="2056851587"/>
+      <id root="1359039720"/>
       <code code="Value"/>
       <addr/>
       <telecom/>
@@ -300,12 +300,12 @@ nullFlavor, "Not Applicable" (NA), in the other field.</li>
   </participant>
   <inFulfillmentOf>
     <order>
-      <id root="1415564270"/>
+      <id root="1116262030"/>
     </order>
   </inFulfillmentOf>
   <componentOf>
     <encompassingEncounter>
-      <id root="221626382"/>
+      <id root="1670851173"/>
       <effectiveTime>
         <low value="2012"/>
         <high value="2012"/>

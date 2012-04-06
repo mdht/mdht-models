@@ -56,14 +56,14 @@
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
   <templateId root="2.16.840.1.113883.10.20.22.2.22"/>
-  <id root="2069112063"/>
+  <id root="44953156"/>
   <code code="46240-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Encounters"/>
   <title/>
   <text/>
   <entry>
     <encounter classCode="ENC" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.22.4.49"/>
-      <id root="2096088814"/>
+      <id root="2066535128"/>
       <code codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT-4"/>
       <text>Text Value</text>
       <effectiveTime>
@@ -73,7 +73,7 @@
       <entryRelationship>
         <observation classCode="OBS" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
-          <id root="889686889"/>
+          <id root="29722068"/>
           <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
           <text>Text Value</text>
           <statusCode code="completed"/>

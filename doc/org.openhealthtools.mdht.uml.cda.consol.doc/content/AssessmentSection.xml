@@ -1,3 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?NLS TYPE="org.eclipse.help.toc"?>
-<toc topic="../classes/AssessmentSection.html"><topic label="Assessment Section"><topic label="Assessment Section" href="../classes/AssessmentSection.html"/><topic label="Assessment Section Table" href="../classes/AssessmentSectionTable.html"/><topic label="Assessment Section Sample" href="../classes/AssessmentSectionSample.html"/></topic></toc>
+<toc label="Assessment Section" topic="../classes/AssessmentSection.html"><topic label="Assessment Section" href="../classes/AssessmentSection.html"><topic label="Assessment Section Table" href="../classes/AssessmentSectionTable.html"/><topic label="Assessment Section Sample" href="../classes/AssessmentSectionSample.html"/></topic></toc>

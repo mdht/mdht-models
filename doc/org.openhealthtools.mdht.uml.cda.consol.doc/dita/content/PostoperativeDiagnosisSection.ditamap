@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
-<bookmap id="cdabook">
-
-	<chapter navtitle="Postoperative Diagnosis Section" type="topic">
-		<topicref href="../classes/PostoperativeDiagnosisSection.dita" type="topic" />
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+	<title>Postoperative Diagnosis Section</title>
+	<topicref href="../classes/PostoperativeDiagnosisSection.dita" type="topic" >
 		<topicref href="../classes/PostoperativeDiagnosisSectionTable.dita" type="topic" />
-		<topicref href="../classes/PostoperativeDiagnosisSectionSample.dita" type="topic" />			                         
-	</chapter>
-
-	
-</bookmap>
+		<topicref href="../classes/PostoperativeDiagnosisSectionSample.dita" type="topic" />	
+	</topicref>
+</map>
 

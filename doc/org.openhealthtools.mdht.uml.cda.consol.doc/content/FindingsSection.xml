@@ -1,3 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?NLS TYPE="org.eclipse.help.toc"?>
-<toc topic="../classes/FindingsSection.html"><topic label="Findings Section"><topic label="Findings Section" href="../classes/FindingsSection.html"/><topic label="Findings Section Table" href="../classes/FindingsSectionTable.html"/><topic label="Findings Section Sample" href="../classes/FindingsSectionSample.html"/></topic></toc>
+<toc label="Findings Section" topic="../classes/FindingsSection.html"><topic label="Findings Section" href="../classes/FindingsSection.html"><topic label="Findings Section Table" href="../classes/FindingsSectionTable.html"/><topic label="Findings Section Sample" href="../classes/FindingsSectionSample.html"/></topic></toc>
