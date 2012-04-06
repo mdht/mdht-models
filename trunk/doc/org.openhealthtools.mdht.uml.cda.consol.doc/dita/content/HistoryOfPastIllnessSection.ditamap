@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
-<bookmap id="cdabook">
-
-	<chapter navtitle="History Of Past Illness Section" type="topic">
-		<topicref href="../classes/HistoryOfPastIllnessSection.dita" type="topic" />
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+	<title>History Of Past Illness Section</title>
+	<topicref href="../classes/HistoryOfPastIllnessSection.dita" type="topic" >
 		<topicref href="../classes/HistoryOfPastIllnessSectionTable.dita" type="topic" />
-		<topicref href="../classes/HistoryOfPastIllnessSectionSample.dita" type="topic" />			                         
-	</chapter>
-
-	
-</bookmap>
+		<topicref href="../classes/HistoryOfPastIllnessSectionSample.dita" type="topic" />	
+	</topicref>
+</map>
 

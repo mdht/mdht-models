@@ -56,8 +56,8 @@
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <supply xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="SPLY">
   <templateId root="2.16.840.1.113883.10.20.22.4.43"/>
-  <id root="110630561"/>
-  <effectiveTime value="20120403"/>
+  <id root="2069082165"/>
+  <effectiveTime value="20120405"/>
 </supply>]]></codeblock>
 <section id="changes">
 </section>

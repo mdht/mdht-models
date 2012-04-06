@@ -39,7 +39,7 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
 <ol>
 <li>Contains <tt><b>@typeCode="</b>SUBJ" </tt><i>SUBJ</i></li>
 <li>Contains exactly one [1..1] <xref href="../AllergyStatusObservation.dita">Allergy Status Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.28</tt>)</li></ol></li>
-<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>participant</b></tt> (CONF:7402)
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>participant</b></tt> (CONF:7402) <ol><li> This participant <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b></tt><tt><b>/@code</b>="CSM" </tt><i>Consumable</i> (CodeSystem:<tt> 2.16.840.1.113883.5.90 HL7ParticipationType</tt>) (CONF:7403)</li><li> This participant <b>SHALL</b> contain exactly one [1..1] <tt><b>participantRole</b></tt> (CONF:7404) <ol><li> This participantRole <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b></tt><tt><b>/@code</b>="MANU" </tt><i>Manufactured Product</i> (CodeSystem:<tt> 2.16.840.1.113883.5.110 HL7RoleClass</tt>) (CONF:7405)</li><li> This participantRole <b>SHALL</b> contain exactly one [1..1] <tt><b>playingEntity</b></tt> (CONF:7406) <ol><li> This playingEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="MMAT" </tt> (CONF:7407)</li><li> This playingEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:7419)</li><li> This playingEntity In an allergy to a specific medication the code <b>SHALL</b> be selected from the ValueSet 2.16.840.1.113883.3.88.12.80.16 Medication Brand Name DYNAMIC or the ValueSet 2.16.840.1.113883.3.88.12.80.17 Medication Clinical Drug DYNAMIC (CONF:7421)</li><li> This playingEntity In an allergy to a class of medications the code <b>SHALL</b> be selected from the ValueSet 2.16.840.1.113883.3.88.12.80.18 Medication Drug Class DYNAMIC (CONF:10083)</li><li> This playingEntity In an allergy to a food or other substance the code <b>SHALL</b> be selected from the ValueSet 2.16.840.1.113883.3.88.12.80.20 Ingredient Name DYNAMIC (CONF:10084)</li><li> This playingEntity code <b>SHOULD</b> contain zero or one [0..1] originalText (CONF:7424)</li><li> This playingEntity originalText, if present, <b>SHOULD</b> contain zero or one [0..1] reference (CONF:7425)</li><li> This playingEntity reference/@value <b>SHALL</b> begin with a '#' and <b>SHALL</b> point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1 (CONF:7426)</li><li> This playingEntity code <b>MAY</b> contain zero or more [0..*] translation (CONF:7431)</li></ol> </li></ol> </li></ol>
 </li>
 <li>If it is unknown when the allergy began, this effectiveTime <b>SHALL</b> contain low/@nullFLavor="UNK" (CONF:9103)</li>
 <li>If the allergy is no longer a concern, this effectiveTime <b>MAY</b> contain zero or one [0..1] high (CONF:10082)</li>
@@ -77,7 +77,7 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
 <ol>
 <li>Contains <tt><b>@typeCode="</b>SUBJ" </tt><i>SUBJ</i></li>
 <li>Contains exactly one [1..1] <xref href="../AllergyStatusObservation.dita">Allergy Status Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.28</tt>)</li></ol></li>
-<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>participant</b></tt> (CONF:7402)
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>participant</b></tt> (CONF:7402) <ol><li> This participant <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b></tt><tt><b>/@code</b>="CSM" </tt><i>Consumable</i> (CodeSystem:<tt> 2.16.840.1.113883.5.90 HL7ParticipationType</tt>) (CONF:7403)</li><li> This participant <b>SHALL</b> contain exactly one [1..1] <tt><b>participantRole</b></tt> (CONF:7404) <ol><li> This participantRole <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b></tt><tt><b>/@code</b>="MANU" </tt><i>Manufactured Product</i> (CodeSystem:<tt> 2.16.840.1.113883.5.110 HL7RoleClass</tt>) (CONF:7405)</li><li> This participantRole <b>SHALL</b> contain exactly one [1..1] <tt><b>playingEntity</b></tt> (CONF:7406) <ol><li> This playingEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="MMAT" </tt> (CONF:7407)</li><li> This playingEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:7419)</li><li> This playingEntity In an allergy to a specific medication the code <b>SHALL</b> be selected from the ValueSet 2.16.840.1.113883.3.88.12.80.16 Medication Brand Name DYNAMIC or the ValueSet 2.16.840.1.113883.3.88.12.80.17 Medication Clinical Drug DYNAMIC (CONF:7421)</li><li> This playingEntity In an allergy to a class of medications the code <b>SHALL</b> be selected from the ValueSet 2.16.840.1.113883.3.88.12.80.18 Medication Drug Class DYNAMIC (CONF:10083)</li><li> This playingEntity In an allergy to a food or other substance the code <b>SHALL</b> be selected from the ValueSet 2.16.840.1.113883.3.88.12.80.20 Ingredient Name DYNAMIC (CONF:10084)</li><li> This playingEntity code <b>SHOULD</b> contain zero or one [0..1] originalText (CONF:7424)</li><li> This playingEntity originalText, if present, <b>SHOULD</b> contain zero or one [0..1] reference (CONF:7425)</li><li> This playingEntity reference/@value <b>SHALL</b> begin with a '#' and <b>SHALL</b> point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1 (CONF:7426)</li><li> This playingEntity code <b>MAY</b> contain zero or more [0..*] translation (CONF:7431)</li></ol> </li></ol> </li></ol>
 </li>
 <li>If it is unknown when the allergy began, this effectiveTime <b>SHALL</b> contain low/@nullFLavor="UNK" (CONF:9103)</li>
 <li>If the allergy is no longer a concern, this effectiveTime <b>MAY</b> contain zero or one [0..1] high (CONF:10082)</li>
@@ -125,16 +125,16 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="OBS" moodCode="EVN">
   <templateId root="2.16.840.1.113883.10.20.22.4.7"/>
-  <id root="39298971"/>
+  <id root="2007281136"/>
   <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/>
   <statusCode code="completed"/>
   <effectiveTime>
     <low value="2012"/>
     <high value="2012"/>
   </effectiveTime>
-  <participant>
-    <participantRole>
-      <playingEntity>
+  <participant typeCode="CSM">
+    <participantRole classCode="MANU">
+      <playingEntity classCode="MMAT">
         <code code="Value"/>
       </playingEntity>
     </participantRole>
@@ -142,16 +142,16 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
   <entryRelationship>
     <observation classCode="OBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
-      <id root="1657251368"/>
-      <code code="8234592"/>
+      <id root="1875572545"/>
+      <code code="390655548"/>
       <statusCode code="completed"/>
       <effectiveTime>
         <low value="2012"/>
         <high value="2012"/>
       </effectiveTime>
-      <participant>
-        <participantRole>
-          <playingEntity>
+      <participant typeCode="CSM">
+        <participantRole classCode="MANU">
+          <playingEntity classCode="MMAT">
             <code code="Value"/>
           </playingEntity>
         </participantRole>
@@ -159,7 +159,7 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
       <entryRelationship>
         <observation classCode="OBS" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.22.4.8"/>
-          <id root="1663045839"/>
+          <id root="1191694130"/>
           <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Severity observation"/>
           <statusCode code="completed"/>
           <effectiveTime>
@@ -167,9 +167,9 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
             <high value="2012"/>
           </effectiveTime>
           <interpretationCode codeSystem="2.16.840.1.113883.5.83" codeSystemName="ObservationInterpretation"/>
-          <participant>
-            <participantRole>
-              <playingEntity/>
+          <participant typeCode="CSM">
+            <participantRole classCode="MANU">
+              <playingEntity classCode="MMAT"/>
             </participantRole>
           </participant>
         </observation>
@@ -177,54 +177,54 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
       <entryRelationship>
         <procedure classCode="PROC">
           <templateId root="2.16.840.1.113883.10.20.22.4.14"/>
-          <id root="1356321218"/>
+          <id root="1532177753"/>
           <effectiveTime>
             <low value="2012"/>
             <high value="2012"/>
           </effectiveTime>
           <targetSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
-          <participant>
-            <participantRole>
-              <playingEntity/>
+          <participant typeCode="CSM">
+            <participantRole classCode="MANU">
+              <playingEntity classCode="MMAT"/>
             </participantRole>
           </participant>
           <entryRelationship>
             <observation classCode="OBS" moodCode="EVN">
               <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
-              <id root="2084886036"/>
+              <id root="17098781"/>
               <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
               <statusCode code="completed"/>
               <effectiveTime>
                 <low value="2012"/>
                 <high value="2012"/>
               </effectiveTime>
-              <participant>
-                <participantRole/>
+              <participant typeCode="CSM">
+                <participantRole classCode="MANU"/>
               </participant>
             </observation>
           </entryRelationship>
           <entryRelationship>
             <substanceAdministration classCode="SBADM">
               <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
-              <id root="671977907"/>
+              <id root="2121617478"/>
               <effectiveTime xsi:type="IVL_TS">
                 <low value="2012"/>
                 <high value="2012"/>
               </effectiveTime>
               <administrationUnitCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
               <consumable/>
-              <participant>
-                <participantRole/>
+              <participant typeCode="CSM">
+                <participantRole classCode="MANU"/>
               </participant>
               <entryRelationship>
                 <supply classCode="SPLY" moodCode="INT">
                   <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
-                  <id root="1556985803"/>
+                  <id root="2054892826"/>
                   <effectiveTime xsi:type="IVL_TS">
                     <low value="2012"/>
                     <high value="2012"/>
                   </effectiveTime>
-                  <participant/>
+                  <participant typeCode="CSM"/>
                   <entryRelationship>
                     <act/>
                   </entryRelationship>
@@ -233,14 +233,14 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
               <entryRelationship>
                 <observation classCode="OBS" moodCode="EVN">
                   <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
-                  <id root="689428396"/>
-                  <code code="177130382"/>
+                  <id root="802497407"/>
+                  <code code="517179101"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
                     <low value="2012"/>
                     <high value="2012"/>
                   </effectiveTime>
-                  <participant/>
+                  <participant typeCode="CSM"/>
                   <entryRelationship>
                     <observation/>
                   </entryRelationship>
@@ -255,38 +255,38 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
               <entryRelationship>
                 <act classCode="ACT" moodCode="INT">
                   <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-                  <id root="120176356"/>
+                  <id root="2064629789"/>
                   <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
                     <low value="2012"/>
                     <high value="2012"/>
                   </effectiveTime>
-                  <participant/>
+                  <participant typeCode="CSM"/>
                 </act>
               </entryRelationship>
               <entryRelationship>
                 <observation classCode="OBS" moodCode="EVN">
                   <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
-                  <id root="727323135"/>
+                  <id root="157390097"/>
                   <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
                     <low value="2012"/>
                     <high value="2012"/>
                   </effectiveTime>
-                  <participant/>
+                  <participant typeCode="CSM"/>
                 </observation>
               </entryRelationship>
               <entryRelationship>
                 <supply classCode="SPLY" moodCode="EVN">
                   <templateId root="2.16.840.1.113883.10.20.22.4.18"/>
-                  <id root="394221494"/>
+                  <id root="1115811365"/>
                   <effectiveTime xsi:type="IVL_TS">
                     <low value="2012"/>
                     <high value="2012"/>
                   </effectiveTime>
-                  <participant/>
+                  <participant typeCode="CSM"/>
                   <entryRelationship>
                     <supply/>
                   </entryRelationship>
@@ -297,27 +297,27 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
           <entryRelationship>
             <act classCode="ACT" moodCode="INT">
               <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-              <id root="630754362"/>
+              <id root="1544700444"/>
               <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
               <statusCode code="completed"/>
               <effectiveTime>
                 <low value="2012"/>
                 <high value="2012"/>
               </effectiveTime>
-              <participant>
-                <participantRole/>
+              <participant typeCode="CSM">
+                <participantRole classCode="MANU"/>
               </participant>
             </act>
           </entryRelationship>
           <entryRelationship>
             <encounter>
-              <id root="1850711519"/>
+              <id root="101556581"/>
               <effectiveTime>
                 <low value="2012"/>
                 <high value="2012"/>
               </effectiveTime>
-              <participant>
-                <participantRole/>
+              <participant typeCode="CSM">
+                <participantRole classCode="MANU"/>
               </participant>
             </encounter>
           </entryRelationship>
@@ -326,40 +326,40 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
       <entryRelationship>
         <substanceAdministration classCode="SBADM">
           <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
-          <id root="1714963828"/>
+          <id root="1900263228"/>
           <effectiveTime xsi:type="IVL_TS">
             <low value="2012"/>
             <high value="2012"/>
           </effectiveTime>
           <administrationUnitCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
           <consumable/>
-          <participant>
-            <participantRole>
-              <playingEntity/>
+          <participant typeCode="CSM">
+            <participantRole classCode="MANU">
+              <playingEntity classCode="MMAT"/>
             </participantRole>
           </participant>
           <entryRelationship>
             <supply classCode="SPLY" moodCode="INT">
               <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
-              <id root="1519633080"/>
+              <id root="1221614751"/>
               <effectiveTime xsi:type="IVL_TS">
                 <low value="2012"/>
                 <high value="2012"/>
               </effectiveTime>
-              <participant>
-                <participantRole/>
+              <participant typeCode="CSM">
+                <participantRole classCode="MANU"/>
               </participant>
               <entryRelationship>
                 <act classCode="ACT" moodCode="INT">
                   <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-                  <id root="60608918"/>
+                  <id root="1346339494"/>
                   <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
                     <low value="2012"/>
                     <high value="2012"/>
                   </effectiveTime>
-                  <participant/>
+                  <participant typeCode="CSM"/>
                 </act>
               </entryRelationship>
             </supply>
@@ -367,20 +367,20 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
           <entryRelationship>
             <observation classCode="OBS" moodCode="EVN">
               <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
-              <id root="394472483"/>
-              <code code="1710251179"/>
+              <id root="1795540208"/>
+              <code code="1438910826"/>
               <statusCode code="completed"/>
               <effectiveTime>
                 <low value="2012"/>
                 <high value="2012"/>
               </effectiveTime>
-              <participant>
-                <participantRole/>
+              <participant typeCode="CSM">
+                <participantRole classCode="MANU"/>
               </participant>
               <entryRelationship>
                 <observation classCode="OBS" moodCode="EVN">
                   <templateId root="2.16.840.1.113883.10.20.22.4.8"/>
-                  <id root="45645317"/>
+                  <id root="1956254167"/>
                   <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Severity observation"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
@@ -388,19 +388,19 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
                     <high value="2012"/>
                   </effectiveTime>
                   <interpretationCode codeSystem="2.16.840.1.113883.5.83" codeSystemName="ObservationInterpretation"/>
-                  <participant/>
+                  <participant typeCode="CSM"/>
                 </observation>
               </entryRelationship>
               <entryRelationship>
                 <procedure classCode="PROC">
                   <templateId root="2.16.840.1.113883.10.20.22.4.14"/>
-                  <id root="1402353618"/>
+                  <id root="847582980"/>
                   <effectiveTime>
                     <low value="2012"/>
                     <high value="2012"/>
                   </effectiveTime>
                   <targetSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
-                  <participant/>
+                  <participant typeCode="CSM"/>
                   <entryRelationship>
                     <observation/>
                   </entryRelationship>
@@ -418,14 +418,14 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
               <entryRelationship>
                 <substanceAdministration classCode="SBADM">
                   <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
-                  <id root="834746174"/>
+                  <id root="866722966"/>
                   <effectiveTime xsi:type="IVL_TS">
                     <low value="2012"/>
                     <high value="2012"/>
                   </effectiveTime>
                   <administrationUnitCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
                   <consumable/>
-                  <participant/>
+                  <participant typeCode="CSM"/>
                   <entryRelationship>
                     <supply/>
                   </entryRelationship>
@@ -448,53 +448,53 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
           <entryRelationship>
             <act classCode="ACT" moodCode="INT">
               <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-              <id root="2072680839"/>
+              <id root="1751421923"/>
               <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
               <statusCode code="completed"/>
               <effectiveTime>
                 <low value="2012"/>
                 <high value="2012"/>
               </effectiveTime>
-              <participant>
-                <participantRole/>
+              <participant typeCode="CSM">
+                <participantRole classCode="MANU"/>
               </participant>
             </act>
           </entryRelationship>
           <entryRelationship>
             <observation classCode="OBS" moodCode="EVN">
               <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
-              <id root="477281335"/>
+              <id root="175750415"/>
               <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
               <statusCode code="completed"/>
               <effectiveTime>
                 <low value="2012"/>
                 <high value="2012"/>
               </effectiveTime>
-              <participant>
-                <participantRole/>
+              <participant typeCode="CSM">
+                <participantRole classCode="MANU"/>
               </participant>
             </observation>
           </entryRelationship>
           <entryRelationship>
             <supply classCode="SPLY" moodCode="EVN">
               <templateId root="2.16.840.1.113883.10.20.22.4.18"/>
-              <id root="562843250"/>
+              <id root="304700425"/>
               <effectiveTime xsi:type="IVL_TS">
                 <low value="2012"/>
                 <high value="2012"/>
               </effectiveTime>
-              <participant>
-                <participantRole/>
+              <participant typeCode="CSM">
+                <participantRole classCode="MANU"/>
               </participant>
               <entryRelationship>
                 <supply classCode="SPLY" moodCode="INT">
                   <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
-                  <id root="1026574589"/>
+                  <id root="1852128209"/>
                   <effectiveTime xsi:type="IVL_TS">
                     <low value="2012"/>
                     <high value="2012"/>
                   </effectiveTime>
-                  <participant/>
+                  <participant typeCode="CSM"/>
                   <entryRelationship>
                     <act/>
                   </entryRelationship>
@@ -509,7 +509,7 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
   <entryRelationship>
     <observation classCode="OBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.22.4.8"/>
-      <id root="107216233"/>
+      <id root="1619745698"/>
       <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Severity observation"/>
       <statusCode code="completed"/>
       <effectiveTime>
@@ -517,9 +517,9 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
         <high value="2012"/>
       </effectiveTime>
       <interpretationCode codeSystem="2.16.840.1.113883.5.83" codeSystemName="ObservationInterpretation"/>
-      <participant>
-        <participantRole>
-          <playingEntity>
+      <participant typeCode="CSM">
+        <participantRole classCode="MANU">
+          <playingEntity classCode="MMAT">
             <code code="Value"/>
           </playingEntity>
         </participantRole>
@@ -529,16 +529,16 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
   <entryRelationship>
     <observation classCode="OBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.22.4.28"/>
-      <id root="609678834"/>
+      <id root="1857153786"/>
       <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
       <statusCode code="completed"/>
       <effectiveTime>
         <low value="2012"/>
         <high value="2012"/>
       </effectiveTime>
-      <participant>
-        <participantRole>
-          <playingEntity>
+      <participant typeCode="CSM">
+        <participantRole classCode="MANU">
+          <playingEntity classCode="MMAT">
             <code code="Value"/>
           </playingEntity>
         </participantRole>

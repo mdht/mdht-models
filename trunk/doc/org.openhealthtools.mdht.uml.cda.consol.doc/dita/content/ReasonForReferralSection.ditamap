@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
-<bookmap id="cdabook">
-
-	<chapter navtitle="Reason For Referral Section" type="topic">
-		<topicref href="../classes/ReasonForReferralSection.dita" type="topic" />
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+	<title>Reason For Referral Section</title>
+	<topicref href="../classes/ReasonForReferralSection.dita" type="topic" >
 		<topicref href="../classes/ReasonForReferralSectionTable.dita" type="topic" />
-		<topicref href="../classes/ReasonForReferralSectionSample.dita" type="topic" />			                         
-	</chapter>
-
-	
-</bookmap>
+		<topicref href="../classes/ReasonForReferralSectionSample.dita" type="topic" />	
+	</topicref>
+</map>
 

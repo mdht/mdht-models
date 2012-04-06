@@ -38,6 +38,12 @@
     	</antcall>
 	</target>
 
+	<target name="standards-epub">
+		<antcall target="epub">
+    		<param name="dita.input.valfile" value="${ditaFilePath}/ditaval_standards.xml" />
+    	</antcall>
+	</target>
+
 	<target name="developer-pdf">
     	<antcall target="pdf">
     		<param name="dita.input.valfile" value="${ditaFilePath}/ditaval_developer.xml" />
@@ -113,6 +119,25 @@
 		<delete file="${xhtml.output}/dita.xml.properties"/>
 		<delete file="${xhtml.output}/delta.gif"/>
 		<delete file="${xhtml.output}/deltaend.gif"/>
+	</target>
+	
+	<target name="epub" depends="integrate">
+		<property name="epub.output" value="${basedir}/epub" />
+		
+		<ant antfile="${dita.dir}/build.xml" target="init">
+			<property name="transtype" value="epub" />
+			<property name="args.input" value="${ditaFilePath}/spec-book.ditamap" />
+			<property name="args.hdr" value="${ditaFilePath}/header.xml" />
+			<property name="output.dir" value="${epub.output}" />
+			<property name="dita.temp.dir" location="temp" />
+			<property name="clean.temp" value="true" />
+		</ant>
+		
+		<delete dir="temp"/>
+		<delete file="${epub.output}/dita.list"/>
+		<delete file="${epub.output}/dita.xml.properties"/>
+		<delete file="${epub.output}/delta.gif"/>
+		<delete file="${epub.output}/deltaend.gif"/>
 	</target>
 
 	<target name="wordrtf" depends="integrate">

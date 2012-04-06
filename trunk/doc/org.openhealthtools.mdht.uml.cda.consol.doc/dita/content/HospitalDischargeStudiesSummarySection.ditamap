@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
-<bookmap id="cdabook">
-
-	<chapter navtitle="Hospital Discharge Studies Summary Section" type="topic">
-		<topicref href="../classes/HospitalDischargeStudiesSummarySection.dita" type="topic" />
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+	<title>Hospital Discharge Studies Summary Section</title>
+	<topicref href="../classes/HospitalDischargeStudiesSummarySection.dita" type="topic" >
 		<topicref href="../classes/HospitalDischargeStudiesSummarySectionTable.dita" type="topic" />
-		<topicref href="../classes/HospitalDischargeStudiesSummarySectionSample.dita" type="topic" />			                         
-	</chapter>
-
-	
-</bookmap>
+		<topicref href="../classes/HospitalDischargeStudiesSummarySectionSample.dita" type="topic" />	
+	</topicref>
+</map>
 

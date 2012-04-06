@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
-<bookmap id="cdabook">
-
-	<chapter navtitle="Planned Procedure Section" type="topic">
-		<topicref href="../classes/PlannedProcedureSection.dita" type="topic" />
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+	<title>Planned Procedure Section</title>
+	<topicref href="../classes/PlannedProcedureSection.dita" type="topic" >
 		<topicref href="../classes/PlannedProcedureSectionTable.dita" type="topic" />
-		<topicref href="../classes/PlannedProcedureSectionSample.dita" type="topic" />			                         
-	</chapter>
-
-	
-</bookmap>
+		<topicref href="../classes/PlannedProcedureSectionSample.dita" type="topic" />	
+	</topicref>
+</map>
 

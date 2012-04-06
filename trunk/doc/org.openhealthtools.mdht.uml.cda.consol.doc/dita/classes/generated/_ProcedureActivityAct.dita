@@ -130,8 +130,8 @@ This clinical statement represents any procedure that cannot be classified as an
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <act xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="ACT">
   <templateId root="2.16.840.1.113883.10.20.22.4.12"/>
-  <id root="765136765"/>
-  <code code="456444167"/>
+  <id root="2009015114"/>
+  <code code="392262767"/>
   <effectiveTime>
     <low value="2012"/>
     <high value="2012"/>
@@ -142,8 +142,8 @@ This clinical statement represents any procedure that cannot be classified as an
   </performer>
   <entryRelationship>
     <encounter>
-      <id root="2014713965"/>
-      <code code="1591219496"/>
+      <id root="429872038"/>
+      <code code="153270339"/>
       <effectiveTime>
         <low value="2012"/>
         <high value="2012"/>
@@ -157,7 +157,7 @@ This clinical statement represents any procedure that cannot be classified as an
   <entryRelationship>
     <act classCode="ACT" moodCode="INT">
       <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-      <id root="770459253"/>
+      <id root="554984950"/>
       <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
       <statusCode code="completed"/>
       <effectiveTime>
@@ -173,7 +173,7 @@ This clinical statement represents any procedure that cannot be classified as an
   <entryRelationship>
     <observation classCode="OBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
-      <id root="991989568"/>
+      <id root="2076194595"/>
       <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
       <statusCode code="completed"/>
       <effectiveTime>
@@ -189,8 +189,8 @@ This clinical statement represents any procedure that cannot be classified as an
   <entryRelationship>
     <substanceAdministration classCode="SBADM">
       <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
-      <id root="1503649234"/>
-      <code code="804610830"/>
+      <id root="1039499851"/>
+      <code code="773910958"/>
       <effectiveTime xsi:type="IVL_TS">
         <low value="2012"/>
         <high value="2012"/>
@@ -204,8 +204,8 @@ This clinical statement represents any procedure that cannot be classified as an
       <entryRelationship>
         <supply classCode="SPLY" moodCode="INT">
           <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
-          <id root="62556261"/>
-          <code code="1032463726"/>
+          <id root="711348516"/>
+          <code code="119264092"/>
           <effectiveTime xsi:type="IVL_TS">
             <low value="2012"/>
             <high value="2012"/>
@@ -217,7 +217,7 @@ This clinical statement represents any procedure that cannot be classified as an
           <entryRelationship>
             <act classCode="ACT" moodCode="INT">
               <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-              <id root="1070691969"/>
+              <id root="741144391"/>
               <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
               <statusCode code="completed"/>
               <effectiveTime>
@@ -235,8 +235,8 @@ This clinical statement represents any procedure that cannot be classified as an
       <entryRelationship>
         <observation classCode="OBS" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
-          <id root="755892700"/>
-          <code code="210546362"/>
+          <id root="1246477852"/>
+          <code code="1280250606"/>
           <statusCode code="completed"/>
           <effectiveTime>
             <low value="2012"/>
@@ -249,7 +249,7 @@ This clinical statement represents any procedure that cannot be classified as an
           <entryRelationship>
             <observation classCode="OBS" moodCode="EVN">
               <templateId root="2.16.840.1.113883.10.20.22.4.8"/>
-              <id root="109364153"/>
+              <id root="1259307047"/>
               <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Severity observation"/>
               <statusCode code="completed"/>
               <effectiveTime>
@@ -266,8 +266,8 @@ This clinical statement represents any procedure that cannot be classified as an
           <entryRelationship>
             <procedure classCode="PROC">
               <templateId root="2.16.840.1.113883.10.20.22.4.14"/>
-              <id root="1569441148"/>
-              <code code="1787487031"/>
+              <id root="450121034"/>
+              <code code="1263886884"/>
               <effectiveTime>
                 <low value="2012"/>
                 <high value="2012"/>
@@ -280,7 +280,7 @@ This clinical statement represents any procedure that cannot be classified as an
               <entryRelationship>
                 <observation classCode="OBS" moodCode="EVN">
                   <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
-                  <id root="1945198202"/>
+                  <id root="742520646"/>
                   <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
@@ -294,8 +294,8 @@ This clinical statement represents any procedure that cannot be classified as an
               <entryRelationship>
                 <substanceAdministration classCode="SBADM">
                   <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
-                  <id root="555848021"/>
-                  <code code="1570376982"/>
+                  <id root="1982725332"/>
+                  <code code="1921011167"/>
                   <effectiveTime xsi:type="IVL_TS">
                     <low value="2012"/>
                     <high value="2012"/>
@@ -324,7 +324,7 @@ This clinical statement represents any procedure that cannot be classified as an
               <entryRelationship>
                 <act classCode="ACT" moodCode="INT">
                   <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-                  <id root="106016152"/>
+                  <id root="1434394088"/>
                   <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
@@ -337,8 +337,8 @@ This clinical statement represents any procedure that cannot be classified as an
               </entryRelationship>
               <entryRelationship>
                 <encounter>
-                  <id root="2134805848"/>
-                  <code code="2065639282"/>
+                  <id root="1461830564"/>
+                  <code code="2093926687"/>
                   <effectiveTime>
                     <low value="2012"/>
                     <high value="2012"/>
@@ -352,8 +352,8 @@ This clinical statement represents any procedure that cannot be classified as an
           <entryRelationship>
             <substanceAdministration classCode="SBADM">
               <templateId root="2.16.840.1.113883.10.20.22.4.16"/>
-              <id root="1671858657"/>
-              <code code="1748313441"/>
+              <id root="1112075724"/>
+              <code code="646999622"/>
               <effectiveTime xsi:type="IVL_TS">
                 <low value="2012"/>
                 <high value="2012"/>
@@ -367,8 +367,8 @@ This clinical statement represents any procedure that cannot be classified as an
               <entryRelationship>
                 <supply classCode="SPLY" moodCode="INT">
                   <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
-                  <id root="1817153131"/>
-                  <code code="980082285"/>
+                  <id root="1940371708"/>
+                  <code code="1778300438"/>
                   <effectiveTime xsi:type="IVL_TS">
                     <low value="2012"/>
                     <high value="2012"/>
@@ -383,8 +383,8 @@ This clinical statement represents any procedure that cannot be classified as an
               <entryRelationship>
                 <observation classCode="OBS" moodCode="EVN">
                   <templateId root="2.16.840.1.113883.10.20.22.4.9"/>
-                  <id root="2044165897"/>
-                  <code code="576482819"/>
+                  <id root="1107956601"/>
+                  <code code="1593395910"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
                     <low value="2012"/>
@@ -406,7 +406,7 @@ This clinical statement represents any procedure that cannot be classified as an
               <entryRelationship>
                 <act classCode="ACT" moodCode="INT">
                   <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-                  <id root="543110637"/>
+                  <id root="266503266"/>
                   <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
@@ -420,7 +420,7 @@ This clinical statement represents any procedure that cannot be classified as an
               <entryRelationship>
                 <observation classCode="OBS" moodCode="EVN">
                   <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
-                  <id root="1611325552"/>
+                  <id root="757553810"/>
                   <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                   <statusCode code="completed"/>
                   <effectiveTime>
@@ -434,8 +434,8 @@ This clinical statement represents any procedure that cannot be classified as an
               <entryRelationship>
                 <supply classCode="SPLY" moodCode="EVN">
                   <templateId root="2.16.840.1.113883.10.20.22.4.18"/>
-                  <id root="190647828"/>
-                  <code code="1586288823"/>
+                  <id root="1946645739"/>
+                  <code code="1573540545"/>
                   <effectiveTime xsi:type="IVL_TS">
                     <low value="2012"/>
                     <high value="2012"/>
@@ -454,7 +454,7 @@ This clinical statement represents any procedure that cannot be classified as an
       <entryRelationship>
         <act classCode="ACT" moodCode="INT">
           <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-          <id root="1027394382"/>
+          <id root="1212164498"/>
           <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
           <statusCode code="completed"/>
           <effectiveTime>
@@ -470,7 +470,7 @@ This clinical statement represents any procedure that cannot be classified as an
       <entryRelationship>
         <observation classCode="OBS" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
-          <id root="474887561"/>
+          <id root="560346787"/>
           <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
           <statusCode code="completed"/>
           <effectiveTime>
@@ -486,8 +486,8 @@ This clinical statement represents any procedure that cannot be classified as an
       <entryRelationship>
         <supply classCode="SPLY" moodCode="EVN">
           <templateId root="2.16.840.1.113883.10.20.22.4.18"/>
-          <id root="1548709707"/>
-          <code code="2087662863"/>
+          <id root="1402933784"/>
+          <code code="807800311"/>
           <effectiveTime xsi:type="IVL_TS">
             <low value="2012"/>
             <high value="2012"/>
@@ -499,8 +499,8 @@ This clinical statement represents any procedure that cannot be classified as an
           <entryRelationship>
             <supply classCode="SPLY" moodCode="INT">
               <templateId root="2.16.840.1.113883.10.20.22.4.17"/>
-              <id root="1427804962"/>
-              <code code="795955892"/>
+              <id root="353950643"/>
+              <code code="2143687167"/>
               <effectiveTime xsi:type="IVL_TS">
                 <low value="2012"/>
                 <high value="2012"/>
@@ -512,7 +512,7 @@ This clinical statement represents any procedure that cannot be classified as an
               <entryRelationship>
                 <act classCode="ACT" moodCode="INT">
                   <templateId root="2.16.840.1.113883.10.20.22.4.20"/>
-                  <id root="1447687667"/>
+                  <id root="375448964"/>
                   <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
                   <statusCode code="completed"/>
                   <effectiveTime>

@@ -56,16 +56,16 @@
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
   <templateId root="2.16.840.1.113883.10.20.22.2.23"/>
-  <id root="1854202454"/>
+  <id root="379108130"/>
   <code code="46264-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Medical Equipment"/>
   <title/>
   <text/>
   <entry>
     <supply classCode="SPLY">
       <templateId root="2.16.840.1.113883.10.20.22.4.50"/>
-      <id root="2117223310"/>
+      <id root="211190273"/>
       <text>Text Value</text>
-      <effectiveTime value="20120403"/>
+      <effectiveTime value="20120405"/>
     </supply>
   </entry>
 </section>]]></codeblock>

@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
 <map title="Other Classes">
-<topicref href="AllergyObservationParticipant.dita" type="topic" />
-<topicref href="AllergyObservationParticipantRole.dita" type="topic" />
-<topicref href="AllergyObservationPlayingEntity.dita" type="topic" />
 <topicref href="DrugVehicle.dita" type="topic" />
 <topicref href="EncounterPerformer.dita" type="topic" />
 <topicref href="EncounterPerformerAssignedEntity.dita" type="topic" />

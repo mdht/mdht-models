@@ -70,7 +70,7 @@
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="ROIBND" moodCode="EVN">
   <templateId root="2.16.840.1.113883.10.20.6.2.10"/>
-  <id root="1784873372"/>
+  <id root="1000727528"/>
   <code code="121190" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM" displayName="Referenced Frames"/>
   <effectiveTime>
     <low value="2012"/>
@@ -79,7 +79,7 @@
   <entryRelationship>
     <observation classCode="OBS" moodCode="EVN">
       <templateId root="2.16.840.1.113883.10.20.6.2.11"/>
-      <id root="549988102"/>
+      <id root="236149885"/>
       <code code="113036" codeSystem="1.2.840.10008.2.16.4" codeSystemName="DCM" displayName="Frames for Display"/>
       <effectiveTime>
         <low value="2012"/>

@@ -1,3 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?NLS TYPE="org.eclipse.help.toc"?>
-<toc topic="../classes/MedicalHistorySection.html"><topic label="Medical History Section"><topic label="Medical History Section" href="../classes/MedicalHistorySection.html"/><topic label="Medical History Section Table" href="../classes/MedicalHistorySectionTable.html"/><topic label="Medical History Section Sample" href="../classes/MedicalHistorySectionSample.html"/></topic></toc>
+<toc label="Medical History Section" topic="../classes/MedicalHistorySection.html"><topic label="Medical History Section" href="../classes/MedicalHistorySection.html"><topic label="Medical History Section Table" href="../classes/MedicalHistorySectionTable.html"/><topic label="Medical History Section Sample" href="../classes/MedicalHistorySectionSample.html"/></topic></toc>

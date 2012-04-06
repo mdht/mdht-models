@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
-<bookmap id="cdabook">
-
-	<chapter navtitle="Results Section" type="topic">
-		<topicref href="../classes/ResultsSection.dita" type="topic" />
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+	<title>Results Section</title>
+	<topicref href="../classes/ResultsSection.dita" type="topic" >
 		<topicref href="../classes/ResultsSectionTable.dita" type="topic" />
-		<topicref href="../classes/ResultsSectionSample.dita" type="topic" />			                         
-	</chapter>
-
-	
-</bookmap>
+		<topicref href="../classes/ResultsSectionSample.dita" type="topic" />	
+	</topicref>
+</map>
 

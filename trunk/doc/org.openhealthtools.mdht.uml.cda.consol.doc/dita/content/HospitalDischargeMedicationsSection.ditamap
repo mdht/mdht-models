@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
-<bookmap id="cdabook">
-
-	<chapter navtitle="Hospital Discharge Medications Section" type="topic">
-		<topicref href="../classes/HospitalDischargeMedicationsSection.dita" type="topic" />
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+	<title>Hospital Discharge Medications Section</title>
+	<topicref href="../classes/HospitalDischargeMedicationsSection.dita" type="topic" >
 		<topicref href="../classes/HospitalDischargeMedicationsSectionTable.dita" type="topic" />
-		<topicref href="../classes/HospitalDischargeMedicationsSectionSample.dita" type="topic" />			                         
-	</chapter>
-
-	
-</bookmap>
+		<topicref href="../classes/HospitalDischargeMedicationsSectionSample.dita" type="topic" />	
+	</topicref>
+</map>
 
