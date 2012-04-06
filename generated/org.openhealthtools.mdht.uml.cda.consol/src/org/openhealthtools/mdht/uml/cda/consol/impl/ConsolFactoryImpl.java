@@ -278,12 +278,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 				return createEncounterPerformer();
 			case ConsolPackage.ENCOUNTER_PERFORMER_ASSIGNED_ENTITY:
 				return createEncounterPerformerAssignedEntity();
-			case ConsolPackage.ALLERGY_OBSERVATION_PARTICIPANT:
-				return createAllergyObservationParticipant();
-			case ConsolPackage.ALLERGY_OBSERVATION_PARTICIPANT_ROLE:
-				return createAllergyObservationParticipantRole();
-			case ConsolPackage.ALLERGY_OBSERVATION_PLAYING_ENTITY:
-				return createAllergyObservationPlayingEntity();
 			case ConsolPackage.ANESTHESIA_SECTION:
 				return createAnesthesiaSection();
 			case ConsolPackage.COMPLICATIONS_SECTION:
@@ -1237,36 +1231,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public EncounterPerformerAssignedEntity createEncounterPerformerAssignedEntity() {
 		EncounterPerformerAssignedEntityImpl encounterPerformerAssignedEntity = new EncounterPerformerAssignedEntityImpl();
 		return encounterPerformerAssignedEntity;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public AllergyObservationParticipant createAllergyObservationParticipant() {
-		AllergyObservationParticipantImpl allergyObservationParticipant = new AllergyObservationParticipantImpl();
-		return allergyObservationParticipant;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public AllergyObservationParticipantRole createAllergyObservationParticipantRole() {
-		AllergyObservationParticipantRoleImpl allergyObservationParticipantRole = new AllergyObservationParticipantRoleImpl();
-		return allergyObservationParticipantRole;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public AllergyObservationPlayingEntity createAllergyObservationPlayingEntity() {
-		AllergyObservationPlayingEntityImpl allergyObservationPlayingEntity = new AllergyObservationPlayingEntityImpl();
-		return allergyObservationPlayingEntity;
 	}
 
 	/**

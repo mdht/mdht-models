@@ -192,6 +192,98 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ToPtMHhuEeGJtvg2iiStYg" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ToPtMXhuEeGJtvg2iiStYg" value="1"/>
     </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_0HgNkDJAEeG6R8Pb5FT2Ow" name="AllergyObservationParticipant">
+      <generalization xmi:id="_0HgNkTJAEeG6R8Pb5FT2Ow">
+        <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_51DLwEcZEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_098tYDJAEeG6R8Pb5FT2Ow" name="typeCode" visibility="private">
+        <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__y7BekDcEd6xYZuu1VKCVw"/>
+        <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_CRBsgEreEd6FXKclYGEDCw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Oi4gMDJBEeG6R8Pb5FT2Ow" name="participantRole" type="_4Lj44DJAEeG6R8Pb5FT2Ow" association="_Oi4gMjJBEeG6R8Pb5FT2Ow">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tJrDUDJBEeG6R8Pb5FT2Ow" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tJrDUTJBEeG6R8Pb5FT2Ow" value="1"/>
+      </ownedAttribute>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_4Lj44DJAEeG6R8Pb5FT2Ow" name="AllergyObservationParticipantRole">
+        <generalization xmi:id="_4Lj44TJAEeG6R8Pb5FT2Ow">
+          <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#__QZaIEcZEd6besF9iFIJkQ"/>
+        </generalization>
+        <ownedAttribute xmi:id="_6LgXYDJAEeG6R8Pb5FT2Ow" name="classCode" visibility="private">
+          <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zE4tEDcEd6xYZuu1VKCVw"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uiVfYDJBEeG6R8Pb5FT2Ow" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uiVfYTJBEeG6R8Pb5FT2Ow" value="1"/>
+          <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_Z6ZKgEreEd6FXKclYGEDCw"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_QPyG4DJBEeG6R8Pb5FT2Ow" name="playingEntity" type="_E1B60DJBEeG6R8Pb5FT2Ow" association="_QPyG4jJBEeG6R8Pb5FT2Ow">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tvKWADJBEeG6R8Pb5FT2Ow" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tvKWATJBEeG6R8Pb5FT2Ow" value="1"/>
+        </ownedAttribute>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_E1B60DJBEeG6R8Pb5FT2Ow" name="AllergyObservationPlayingEntity">
+          <ownedRule xmi:id="_Q7cdkDJCEeG6R8Pb5FT2Ow" name="allergySpecificMedication" constrainedElement="_E1B60DJBEeG6R8Pb5FT2Ow">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_irU_sDJCEeG6R8Pb5FT2Ow">
+              <language>Analysis</language>
+              <body>In an allergy to a specific medication the code SHALL be selected from the ValueSet 2.16.840.1.113883.3.88.12.80.16 Medication Brand Name DYNAMIC or the ValueSet 2.16.840.1.113883.3.88.12.80.17 Medication Clinical Drug DYNAMIC</body>
+            </specification>
+          </ownedRule>
+          <ownedRule xmi:id="_UYE8gDJCEeG6R8Pb5FT2Ow" name="allergyClassMedication" constrainedElement="_Q7cdkDJCEeG6R8Pb5FT2Ow">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_5MrFsDJCEeG6R8Pb5FT2Ow">
+              <language>Analysis</language>
+              <body>In an allergy to a class of medications the code SHALL be selected from the ValueSet 2.16.840.1.113883.3.88.12.80.18 Medication Drug Class DYNAMIC</body>
+            </specification>
+          </ownedRule>
+          <ownedRule xmi:id="_WDVkcDJCEeG6R8Pb5FT2Ow" name="allergyFoodOtherSubstance" constrainedElement="_UYE8gDJCEeG6R8Pb5FT2Ow">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_1ChZcDJCEeG6R8Pb5FT2Ow">
+              <language>Analysis</language>
+              <body>In an allergy to a food or other substance the code SHALL be selected from the ValueSet 2.16.840.1.113883.3.88.12.80.20 Ingredient Name DYNAMIC</body>
+            </specification>
+          </ownedRule>
+          <ownedRule xmi:id="_ZIdiUDJCEeG6R8Pb5FT2Ow" name="codeOriginalText" constrainedElement="_WDVkcDJCEeG6R8Pb5FT2Ow">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_xtJZEDJCEeG6R8Pb5FT2Ow">
+              <language>Analysis</language>
+              <language>OCL</language>
+              <body>code SHOULD contain zero or one [0..1] originalText</body>
+              <body>not self.code.originalText.oclIsUndefined()</body>
+            </specification>
+          </ownedRule>
+          <ownedRule xmi:id="_aK9hIDJCEeG6R8Pb5FT2Ow" name="originalTextReference" constrainedElement="_ZIdiUDJCEeG6R8Pb5FT2Ow">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_uNieoDJCEeG6R8Pb5FT2Ow">
+              <language>Analysis</language>
+              <body>originalText, if present, SHOULD contain zero or one [0..1] reference</body>
+            </specification>
+          </ownedRule>
+          <ownedRule xmi:id="_c0knsDJCEeG6R8Pb5FT2Ow" name="originalTextReferenceValue" constrainedElement="_aK9hIDJCEeG6R8Pb5FT2Ow">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_ol9LEDJCEeG6R8Pb5FT2Ow">
+              <language>Analysis</language>
+              <body>reference/@value SHALL begin with a '#' and SHALL point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1</body>
+            </specification>
+          </ownedRule>
+          <ownedRule xmi:id="_eR_n8DJCEeG6R8Pb5FT2Ow" name="codeTranslation" constrainedElement="_c0knsDJCEeG6R8Pb5FT2Ow">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_lW3Y4DJCEeG6R8Pb5FT2Ow">
+              <language>Analysis</language>
+              <language>OCL</language>
+              <body>code MAY contain zero or more [0..*] translation</body>
+              <body>not self.code.translation->isEmpty()</body>
+            </specification>
+          </ownedRule>
+          <generalization xmi:id="_E1B60TJBEeG6R8Pb5FT2Ow">
+            <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_Lr9i8EcaEd6besF9iFIJkQ"/>
+          </generalization>
+          <ownedAttribute xmi:id="_F56fQDJBEeG6R8Pb5FT2Ow" name="classCode" visibility="private">
+            <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yoL-EDcEd6xYZuu1VKCVw"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7gMc8DJBEeG6R8Pb5FT2Ow" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7gMc8TJBEeG6R8Pb5FT2Ow" value="1"/>
+            <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_SxK9sErhEd6FXKclYGEDCw"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_IIVpMDJCEeG6R8Pb5FT2Ow" value="MMAT"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_KmLkoDJCEeG6R8Pb5FT2Ow" name="code" visibility="private" aggregation="composite">
+            <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MFs2oDJCEeG6R8Pb5FT2Ow" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MFs2oTJCEeG6R8Pb5FT2Ow" value="1"/>
+            <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_JVhioErhEd6FXKclYGEDCw"/>
+          </ownedAttribute>
+        </nestedClassifier>
+      </nestedClassifier>
+    </nestedClassifier>
   </uml:Class>
   <uml:Association xmi:id="_2Ej8URSVEeGGzu7fmW9pXw" memberEnd="_2EaLeBSVEeGGzu7fmW9pXw _2Ej8UhSVEeGGzu7fmW9pXw">
     <ownedEnd xmi:id="_2Ej8UhSVEeGGzu7fmW9pXw" type="_2EaLUBSVEeGGzu7fmW9pXw" association="_2Ej8URSVEeGGzu7fmW9pXw"/>
@@ -843,98 +935,6 @@ historical purposes.&#xD;
     <reference href="../consol-vocab.uml#_2SVSkRSVEeGGzu7fmW9pXw"/>
     <ruleId>CONF:7335</ruleId>
   </CDA:ValueSetConstraint>
-  <uml:Class xmi:id="_0HgNkDJAEeG6R8Pb5FT2Ow" name="AllergyObservationParticipant">
-    <generalization xmi:id="_0HgNkTJAEeG6R8Pb5FT2Ow">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_51DLwEcZEd6besF9iFIJkQ"/>
-    </generalization>
-    <ownedAttribute xmi:id="_098tYDJAEeG6R8Pb5FT2Ow" name="typeCode" visibility="private">
-      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__y7BekDcEd6xYZuu1VKCVw"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_CRBsgEreEd6FXKclYGEDCw"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_Oi4gMDJBEeG6R8Pb5FT2Ow" name="participantRole" type="_4Lj44DJAEeG6R8Pb5FT2Ow" association="_Oi4gMjJBEeG6R8Pb5FT2Ow">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tJrDUDJBEeG6R8Pb5FT2Ow" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tJrDUTJBEeG6R8Pb5FT2Ow" value="1"/>
-    </ownedAttribute>
-  </uml:Class>
-  <uml:Class xmi:id="_4Lj44DJAEeG6R8Pb5FT2Ow" name="AllergyObservationParticipantRole">
-    <generalization xmi:id="_4Lj44TJAEeG6R8Pb5FT2Ow">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#__QZaIEcZEd6besF9iFIJkQ"/>
-    </generalization>
-    <ownedAttribute xmi:id="_6LgXYDJAEeG6R8Pb5FT2Ow" name="classCode" visibility="private">
-      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zE4tEDcEd6xYZuu1VKCVw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uiVfYDJBEeG6R8Pb5FT2Ow" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uiVfYTJBEeG6R8Pb5FT2Ow" value="1"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_Z6ZKgEreEd6FXKclYGEDCw"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_QPyG4DJBEeG6R8Pb5FT2Ow" name="playingEntity" type="_E1B60DJBEeG6R8Pb5FT2Ow" association="_QPyG4jJBEeG6R8Pb5FT2Ow">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tvKWADJBEeG6R8Pb5FT2Ow" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tvKWATJBEeG6R8Pb5FT2Ow" value="1"/>
-    </ownedAttribute>
-  </uml:Class>
-  <uml:Class xmi:id="_E1B60DJBEeG6R8Pb5FT2Ow" name="AllergyObservationPlayingEntity">
-    <ownedRule xmi:id="_Q7cdkDJCEeG6R8Pb5FT2Ow" name="allergySpecificMedication" constrainedElement="_E1B60DJBEeG6R8Pb5FT2Ow">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_irU_sDJCEeG6R8Pb5FT2Ow">
-        <language>Analysis</language>
-        <body>In an allergy to a specific medication the code SHALL be selected from the ValueSet 2.16.840.1.113883.3.88.12.80.16 Medication Brand Name DYNAMIC or the ValueSet 2.16.840.1.113883.3.88.12.80.17 Medication Clinical Drug DYNAMIC</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_UYE8gDJCEeG6R8Pb5FT2Ow" name="allergyClassMedication" constrainedElement="_Q7cdkDJCEeG6R8Pb5FT2Ow">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_5MrFsDJCEeG6R8Pb5FT2Ow">
-        <language>Analysis</language>
-        <body>In an allergy to a class of medications the code SHALL be selected from the ValueSet 2.16.840.1.113883.3.88.12.80.18 Medication Drug Class DYNAMIC</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_WDVkcDJCEeG6R8Pb5FT2Ow" name="allergyFoodOtherSubstance" constrainedElement="_UYE8gDJCEeG6R8Pb5FT2Ow">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_1ChZcDJCEeG6R8Pb5FT2Ow">
-        <language>Analysis</language>
-        <body>In an allergy to a food or other substance the code SHALL be selected from the ValueSet 2.16.840.1.113883.3.88.12.80.20 Ingredient Name DYNAMIC</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_ZIdiUDJCEeG6R8Pb5FT2Ow" name="codeOriginalText" constrainedElement="_WDVkcDJCEeG6R8Pb5FT2Ow">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_xtJZEDJCEeG6R8Pb5FT2Ow">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>code SHOULD contain zero or one [0..1] originalText</body>
-        <body>not self.code.originalText.oclIsUndefined()</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_aK9hIDJCEeG6R8Pb5FT2Ow" name="originalTextReference" constrainedElement="_ZIdiUDJCEeG6R8Pb5FT2Ow">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_uNieoDJCEeG6R8Pb5FT2Ow">
-        <language>Analysis</language>
-        <body>originalText, if present, SHOULD contain zero or one [0..1] reference</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_c0knsDJCEeG6R8Pb5FT2Ow" name="originalTextReferenceValue" constrainedElement="_aK9hIDJCEeG6R8Pb5FT2Ow">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ol9LEDJCEeG6R8Pb5FT2Ow">
-        <language>Analysis</language>
-        <body>reference/@value SHALL begin with a '#' and SHALL point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_eR_n8DJCEeG6R8Pb5FT2Ow" name="codeTranslation" constrainedElement="_c0knsDJCEeG6R8Pb5FT2Ow">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_lW3Y4DJCEeG6R8Pb5FT2Ow">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>code MAY contain zero or more [0..*] translation</body>
-        <body>not self.code.translation->isEmpty()</body>
-      </specification>
-    </ownedRule>
-    <generalization xmi:id="_E1B60TJBEeG6R8Pb5FT2Ow">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_Lr9i8EcaEd6besF9iFIJkQ"/>
-    </generalization>
-    <ownedAttribute xmi:id="_F56fQDJBEeG6R8Pb5FT2Ow" name="classCode" visibility="private">
-      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yoL-EDcEd6xYZuu1VKCVw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7gMc8DJBEeG6R8Pb5FT2Ow" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7gMc8TJBEeG6R8Pb5FT2Ow" value="1"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_SxK9sErhEd6FXKclYGEDCw"/>
-      <defaultValue xmi:type="uml:LiteralString" xmi:id="_IIVpMDJCEeG6R8Pb5FT2Ow" value="MMAT"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:id="_KmLkoDJCEeG6R8Pb5FT2Ow" name="code" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MFs2oDJCEeG6R8Pb5FT2Ow" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MFs2oTJCEeG6R8Pb5FT2Ow" value="1"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_JVhioErhEd6FXKclYGEDCw"/>
-    </ownedAttribute>
-  </uml:Class>
   <CDA:CodeSystemConstraint xmi:id="_bVJRwDJBEeG6R8Pb5FT2Ow" code="CSM" displayName="Consumable" base_Property="_098tYDJAEeG6R8Pb5FT2Ow">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_Z0Bk4E6SEeC5ttwajeXVXg"/>
     <ruleId>CONF:7403</ruleId>

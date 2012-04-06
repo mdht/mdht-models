@@ -19,11 +19,9 @@ import org.openhealthtools.mdht.uml.cda.ManufacturedProduct;
 import org.openhealthtools.mdht.uml.cda.Material;
 import org.openhealthtools.mdht.uml.cda.Observation;
 import org.openhealthtools.mdht.uml.cda.Organizer;
-import org.openhealthtools.mdht.uml.cda.Participant2;
 import org.openhealthtools.mdht.uml.cda.ParticipantRole;
 import org.openhealthtools.mdht.uml.cda.Performer1;
 import org.openhealthtools.mdht.uml.cda.Performer2;
-import org.openhealthtools.mdht.uml.cda.PlayingEntity;
 import org.openhealthtools.mdht.uml.cda.Precondition;
 import org.openhealthtools.mdht.uml.cda.Procedure;
 import org.openhealthtools.mdht.uml.cda.Section;
@@ -2175,57 +2173,6 @@ public class ConsolSwitch<T> {
 				}
 				if (result == null) {
 					result = caseInfrastructureRoot(encounterPerformerAssignedEntity);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.ALLERGY_OBSERVATION_PARTICIPANT: {
-				AllergyObservationParticipant allergyObservationParticipant = (AllergyObservationParticipant) theEObject;
-				T result = caseAllergyObservationParticipant(allergyObservationParticipant);
-				if (result == null) {
-					result = caseParticipant2(allergyObservationParticipant);
-				}
-				if (result == null) {
-					result = caseParticipation(allergyObservationParticipant);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(allergyObservationParticipant);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.ALLERGY_OBSERVATION_PARTICIPANT_ROLE: {
-				AllergyObservationParticipantRole allergyObservationParticipantRole = (AllergyObservationParticipantRole) theEObject;
-				T result = caseAllergyObservationParticipantRole(allergyObservationParticipantRole);
-				if (result == null) {
-					result = caseParticipantRole(allergyObservationParticipantRole);
-				}
-				if (result == null) {
-					result = caseRole(allergyObservationParticipantRole);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(allergyObservationParticipantRole);
-				}
-				if (result == null) {
-					result = defaultCase(theEObject);
-				}
-				return result;
-			}
-			case ConsolPackage.ALLERGY_OBSERVATION_PLAYING_ENTITY: {
-				AllergyObservationPlayingEntity allergyObservationPlayingEntity = (AllergyObservationPlayingEntity) theEObject;
-				T result = caseAllergyObservationPlayingEntity(allergyObservationPlayingEntity);
-				if (result == null) {
-					result = casePlayingEntity(allergyObservationPlayingEntity);
-				}
-				if (result == null) {
-					result = caseEntity(allergyObservationPlayingEntity);
-				}
-				if (result == null) {
-					result = caseInfrastructureRoot(allergyObservationPlayingEntity);
 				}
 				if (result == null) {
 					result = defaultCase(theEObject);
@@ -4919,21 +4866,6 @@ public class ConsolSwitch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Participant2</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Participant2</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseParticipant2(Participant2 object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Act Relationship</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -4945,51 +4877,6 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T caseActRelationship(ActRelationship object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Allergy Observation Participant</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Allergy Observation Participant</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseAllergyObservationParticipant(AllergyObservationParticipant object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Allergy Observation Participant Role</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Allergy Observation Participant Role</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseAllergyObservationParticipantRole(AllergyObservationParticipantRole object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Allergy Observation Playing Entity</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Allergy Observation Playing Entity</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseAllergyObservationPlayingEntity(AllergyObservationPlayingEntity object) {
 		return null;
 	}
 
@@ -5846,21 +5733,6 @@ public class ConsolSwitch<T> {
 	 * @generated
 	 */
 	public T caseAssignedEntity(AssignedEntity object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Playing Entity</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Playing Entity</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T casePlayingEntity(PlayingEntity object) {
 		return null;
 	}
 
