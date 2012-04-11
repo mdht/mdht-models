@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Payers Section - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.1.9</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.1.9"/>
+</prolog>
+<body>
+<section id="description">
+<p>
+    <i>Payers</i> contains data on the patient's payers, whether a 'third party' insurance,
+    self-pay, other payer or guarantor, or some combination of payers, and is used to define which entity is the
+    responsible fiduciary for the financial aspects of a patient's care.
+</p>
+<p>
+    Each unique
+    instance of a payer and all the pertinent data needed to contact, bill to, and collect from that payer should be
+    included. Authorization information that can be used to define pertinent referral, authorization tracking number,
+    procedure, therapy, intervention, device, or similar authorizations for the patient or provider, or both should be
+    included. At a minimum, the patient's pertinent current payment sources should be listed.
+</p>
+<p>
+    The CCD
+    represents the sources of payment as a coverage act, which identifies all of the insurance policies or government or
+    other programs that cover some or all of the patient's healthcare expenses. The policies or programs are sequenced by
+    order of preference. Each policy or program identifies the covered party with respect to the payer, so that the
+    identifiers can be recorded.
+</p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="48768-6" </tt><i>Payment sources</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-31, CONF-32)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF-33)
+<ol>
+<li><b>SHOULD</b> satisfy: Contains a case-insensitive language-insensitive string containing 'insurance' or 'payers'. (CONF-34)<ul><li>UNIMPLEMENTABLE</li></ul></li></ol></li>
+<li><b>SHOULD</b> contain at least one [1..*] <tt><b>entry</b></tt> (CONF-30), such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../CoverageActivity.dita">Coverage Activity</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.20</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF-30)
+</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="48768-6" </tt><i>Payment sources</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-31, CONF-32)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF-33)
+<ol>
+<li><b>SHOULD</b> satisfy: Contains a case-insensitive language-insensitive string containing 'insurance' or 'payers'. (CONF-34)<ul><li>UNIMPLEMENTABLE</li></ul></li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF-30)
+</li>
+<li><b>SHOULD</b> contain at least one [1..*] <tt><b>entry</b></tt> (CONF-30), such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../CoverageActivity.dita">Coverage Activity</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.20</tt>)</li></ol></li>
+<li><b>SHOULD</b> satisfy: Contains a case-insensitive language-insensitive string containing 'insurance' or 'payers'. (CONF-34)<ul><li>UNIMPLEMENTABLE</li></ul></li>
+</ol>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <templateId root="2.16.840.1.113883.10.20.1.9"/>
+  <id root="1012586074"/>
+  <code code="48768-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Payment sources"/>
+  <title/>
+  <text/>
+  <entry>
+    <act classCode="ACT" moodCode="DEF">
+      <templateId root="2.16.840.1.113883.10.20.1.20"/>
+      <id root="857690443"/>
+      <code code="48768-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Payment sources"/>
+      <text/>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2011"/>
+        <high value="2011"/>
+      </effectiveTime>
+      <entryRelationship>
+        <act/>
+      </entryRelationship>
+    </act>
+  </entry>
+</section>]]></codeblock>
+</body>
+</topic>

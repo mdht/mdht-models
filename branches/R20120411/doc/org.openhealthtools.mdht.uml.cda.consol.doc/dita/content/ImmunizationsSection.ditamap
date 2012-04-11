@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+	<title>Immunizations Section</title>
+	<topicref href="../classes/ImmunizationsSection.dita" type="topic" >
+		<topicref href="../classes/ImmunizationsSectionTable.dita" type="topic" />
+		<topicref href="../classes/ImmunizationsSectionSample.dita" type="topic" />	
+	</topicref>
+</map>
+

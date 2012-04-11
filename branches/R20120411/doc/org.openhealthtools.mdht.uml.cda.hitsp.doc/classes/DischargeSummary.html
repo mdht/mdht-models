@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xml:lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="Discharge Summary"/>
+<meta name="abstract" content="[ClinicalDocument: templateId 2.16.840.1.113883.3.88.11.48.2]"/>
+<meta name="description" content="[ClinicalDocument: templateId 2.16.840.1.113883.3.88.11.48.2]"/>
+<meta name="DC.Coverage" content="ClinicalDocument"/>
+<meta name="DC.Relation" scheme="URI" content="../content/DocumentTemplates.html"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="classId"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
+<title>Discharge Summary</title>
+</head>
+<body id="classId"><a name="classId"><!-- --></a>
+<div>
+	<p><b>Development Only.</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
+</div>
+
+<h1 class="title topictitle1">Discharge Summary</h1>
+
+
+
+<div class="body"><p class="shortdesc">[ClinicalDocument: templateId <tt class="ph tt">2.16.840.1.113883.3.88.11.48.2</tt>]</p>
+
+
+<div class="section">
+</div>
+
+
+
+<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/MedicalSummary.html">IHE Medical Summary</a> template (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.5.3.1.1.2</tt>) (C48-[CT3-1])</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (C48-[CT2-1]), such that
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="ProblemListSection.html" title="[Section: templateId 2.16.840.1.113883.3.88.11.83.103]">Problem List Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.3.88.11.83.103</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (C48-[CT2-2]), such that
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="AdmissionMedicationHistorySection.html" title="[Section: templateId 2.16.840.1.113883.3.88.11.83.113]">Admission Medication History Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.3.88.11.83.113</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (C48-[CT2-3]), such that
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="HospitalAdmissionDiagnosisSection.html" title="[Section: templateId 2.16.840.1.113883.3.88.11.83.110]">Hospital Admission Diagnosis Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.3.88.11.83.110</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (C48-[CT2-4]), such that
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="AdvanceDirectivesSection.html" title="[Section: templateId 2.16.840.1.113883.3.88.11.83.116]">Advance Directives Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.3.88.11.83.116</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (C48-[CT2-5]), such that
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="AllergiesReactionsSection.html" title="[Section: templateId 2.16.840.1.113883.3.88.11.83.102]">Allergies Reactions Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.3.88.11.83.102</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (C48-[CT2-6]), such that
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="DischargeDiagnosisSection.html" title="[Section: templateId 2.16.840.1.113883.3.88.11.83.111]">Discharge Diagnosis Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.3.88.11.83.111</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (C48-[CT2-7]), such that
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/DischargeDiet.html">IHE Discharge Diet</a> (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.5.3.1.3.33</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (C48-[CT2-8]), such that
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="HospitalDischargeMedicationsSection.html" title="[Section: templateId 2.16.840.1.113883.3.88.11.83.114]">Hospital Discharge Medications Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.3.88.11.83.114</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (C48-[CT2-9]), such that
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="DiagnosticResultsSection.html" title="[Section: templateId 2.16.840.1.113883.3.88.11.83.122]">Diagnostic Results Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.3.88.11.83.122</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (C48-[CT2-10]), such that
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="FunctionalStatusSection.html" title="[Section: templateId 2.16.840.1.113883.3.88.11.83.109]">Functional Status Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.3.88.11.83.109</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (C48-[CT2-11]), such that
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="HistoryOfPresentIllness.html" title="[Section: templateId 2.16.840.1.113883.3.88.11.83.107]">History Of Present Illness</a> (templateId: <tt class="ph tt">2.16.840.1.113883.3.88.11.83.107</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (C48-[CT2-12]), such that
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="HospitalCourseSection.html" title="[Section: templateId 2.16.840.1.113883.3.88.11.83.121]">Hospital Course Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.3.88.11.83.121</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (C48-[CT2-13]), such that
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="MedicalEquipmentSection.html" title="[Section: templateId 2.16.840.1.113883.3.88.11.83.128]">Medical Equipment Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.3.88.11.83.128</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (C48-[CT2-15]), such that
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="PhysicalExamSection.html" title="[Section: templateId 2.16.840.1.113883.3.88.11.83.118]">Physical Exam Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.3.88.11.83.118</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (C48-[CT2-16]), such that
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="PlanOfCareSection.html" title="[Section: templateId 2.16.840.1.113883.3.88.11.83.124]">Plan Of Care Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.3.88.11.83.124</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (C48-[CT2-17]), such that
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="HistoryOfPastIllnessSection.html" title="[Section: templateId 2.16.840.1.113883.3.88.11.83.104]">History Of Past Illness Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.3.88.11.83.104</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (C48-[CT2-18]), such that
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="ReviewOfSystemsSection.html" title="[Section: templateId 2.16.840.1.113883.3.88.11.83.120]">Review Of Systems Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.3.88.11.83.120</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (C48-[CT2-19]), such that
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="MedicationsAdministeredSection.html" title="[Section: templateId 2.16.840.1.113883.3.88.11.83.115]">Medications Administered Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.3.88.11.83.115</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (C48-[CT2-20]), such that
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="VitalSignsSection.html" title="[Section: templateId 2.16.840.1.113883.3.88.11.83.119]">Vital Signs Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.3.88.11.83.119</tt>)</li>
+</ol>
+</li>
+
+</ol>
+
+
+<p class="p"> </p>
+
+
+<p class="p"> </p>
+
+<p class="p"> </p>
+
+<p class="p"><strong class="ph b">Discharge Summary example</strong></p>
+
+
+
+<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
+  &lt;realmCode code="US"/&gt;
+  &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.3"/&gt;
+  &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.1"/&gt;
+  &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.2"/&gt;
+  &lt;templateId root="2.16.840.1.113883.3.88.11.48.2"/&gt;
+  &lt;id root="2084918618"/&gt;
+  &lt;code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+  &lt;title/&gt;
+  &lt;effectiveTime/&gt;
+  &lt;confidentialityCode code="Value"/&gt;
+  &lt;languageCode/&gt;
+  &lt;recordTarget/&gt;
+  &lt;author/&gt;
+  &lt;custodian/&gt;
+  &lt;component&gt;
+    &lt;structuredBody&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;realmCode/&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.1.11"/&gt;
+          &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.6"/&gt;
+          &lt;templateId root="2.16.840.1.113883.3.88.11.83.103"/&gt;
+          &lt;id root="1519942135"/&gt;
+          &lt;code code="11450-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problem list"/&gt;
+          &lt;title/&gt;
+          &lt;languageCode/&gt;
+          &lt;entry&gt;
+            &lt;act/&gt;
+          &lt;/entry&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section/&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section/&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section/&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section/&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section/&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section/&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section/&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section/&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section/&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section/&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section/&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section/&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section/&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section/&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section/&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section/&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section/&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section/&gt;
+      &lt;/component&gt;
+    &lt;/structuredBody&gt;
+  &lt;/component&gt;
+&lt;/ClinicalDocument&gt;</pre>
+
+</div>
+
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../content/DocumentTemplates.html">DOCUMENT TEMPLATES</a></div>
+</div>
+</div>
+
+</body>
+</html>

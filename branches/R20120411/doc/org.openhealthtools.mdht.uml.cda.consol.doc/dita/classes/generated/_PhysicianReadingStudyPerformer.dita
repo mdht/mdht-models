@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Physician Reading Study Performer - conformance rules</title>
+<shortdesc id="shortdesc">[Performer1: templateId <tt>2.16.840.1.113883.10.20.6.2.1</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Performer1</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.6.2.1"/>
+</prolog>
+<body>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b></tt> (CONF:8424)
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>time</b></tt> (CONF:8425)
+</li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>assignedEntity</b></tt> (CONF:8426) <ol><li> This assignedEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:8427)</li><li> This assignedEntity <b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:10033)</li><li> This assignedEntity The id <b>SHOULD</b> include zero or one [0..1] id where id/@root ="2.16.840.1.113883.4.6" National Provider Identifier (CONF:10034)</li><li> This assignedEntity <b>SHALL</b> contain a valid DICOM personal identification code sequence (@codeSystem is 1.2.840.10008.2.16.4) or an appropriate national health care provider coding system (e.g., NUCC in the U.S., where @code is 2.16.840.1.113883.6.101).</li><li> This assignedEntity Every assignedEntity element <b>SHALL</b> have at least one assignedPerson or representedOrganization. (CONF:8429)</li></ol>
+</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b></tt> (CONF:8424)
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>time</b></tt> (CONF:8425)
+</li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>assignedEntity</b></tt> (CONF:8426) <ol><li> This assignedEntity <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:8427)</li><li> This assignedEntity <b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF:10033)</li><li> This assignedEntity The id <b>SHOULD</b> include zero or one [0..1] id where id/@root ="2.16.840.1.113883.4.6" National Provider Identifier (CONF:10034)</li><li> This assignedEntity <b>SHALL</b> contain a valid DICOM personal identification code sequence (@codeSystem is 1.2.840.10008.2.16.4) or an appropriate national health care provider coding system (e.g., NUCC in the U.S., where @code is 2.16.840.1.113883.6.101).</li><li> This assignedEntity Every assignedEntity element <b>SHALL</b> have at least one assignedPerson or representedOrganization. (CONF:8429)</li></ol>
+</li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >consol::PhysicianReadingStudyPerformer</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::performer1[cda:templateId/@root = 2.16.840.1.113883.10.20.6.2.1]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>nullFlavor</entry><entry>@nullFlavor</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>NullFlavor</entry><entry></entry><entry> ASKU</entry></row> 
+<row><entry>typeCode</entry><entry>@typeCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ServiceEventPerformer</entry><entry>CONF:8424</entry><entry> PRF</entry></row> 
+<row><entry>functionCode</entry><entry>functionCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
+<row><entry>realmCode</entry><entry>realmCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
+<row><entry>templateId</entry><entry>templateId</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> 2.16.840.1.113883.10.20.6.2.1</entry></row> 
+<row><entry>time</entry><entry>time</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>IVL_TS</entry><entry>CONF:8425</entry><entry> </entry></row> 
+<row><entry>assignedEntity</entry><entry>assignedEntity</entry><entry>0..1</entry><entry>SHALL</entry><entry>YES</entry><entry>AssignedEntity</entry><entry>CONF:8426</entry><entry> </entry></row> 
+<row><entry>typeId</entry><entry>typeId</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>InfrastructureRootTypeId</entry><entry></entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<performer1 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <templateId root="2.16.840.1.113883.10.20.6.2.1"/>
+  <time>
+    <low value="2012"/>
+    <high value="2012"/>
+  </time>
+  <assignedEntity>
+    <id root="1076012122"/>
+    <code code="Value"/>
+  </assignedEntity>
+</performer1>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Physician Reading Study Performer</ph></p>
+<p id="shortdesc">[Performer1: templateId <tt>2.16.840.1.113883.10.20.6.2.1</tt>]</p>
+</body>
+</topic>

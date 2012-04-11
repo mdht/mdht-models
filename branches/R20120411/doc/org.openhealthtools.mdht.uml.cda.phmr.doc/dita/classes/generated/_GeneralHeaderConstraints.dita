@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>General Header Constraints - conformance rules</title>
+<shortdesc id="shortdesc">[ClinicalDocument: templateId <tt>null</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>ClinicalDocument</category></metadata>
+<resourceid id="null"/>
+</prolog>
+<body>
+<section id="description">
+<p>This section describes constraints that apply to the H and P Note and to other types of CDA
+documents defined for general exchange. The template defined here should be reused
+wherever these general header constraints are applied.</p>
+<p>To support communication between the receiver of the document and the patient or any
+other person or organization mentioned within it, the elements representing them will
+be named.</p>
+<p>When name, address, or telecom information is unknown and where these elements are
+required to be present, as with CDA conformance if the information is unknown, these
+elements will be represented using an appropriate value for the nullFlavor attribute on
+the element.</p>
+<p>Events occurring at a single point in time that are represented in the Clinical Document
+header will in general be precise to the day. These point-in-time events are the time of
+creation of the document; the starting time of a participation by an author, data
+enterer, authenticator, or legal authenticator; or the starting and ending time of an
+encounter.</p>
+<p>Within the specification, all telephone numbers are to be encoded using a grammar
+which is a restriction on the TEL data type and RFC 2806. It simplifies interchange between applications as
+it removes optional URL components found in RFC 2806 that applications typically do
+not know how to process, such as ISDN sub-address, phone context, or other dialing
+parameters.</p>
+<p>Organizations that wish to use OIDs should properly register their OID root and ensure
+uniqueness of the OID roots used in identifiers. A large number of mechanisms exist
+for obtaining OID roots for free or for a reasonable fee. HL7 maintains an OID registry
+page from which organizations may request an OID root under the HL7 OID root. This
+page can be accessed at: http://www.hl7.org/oid.</p>
+<p>Another useful resource lists the many ways to obtain a registered OID Root for free or
+a small fee anywhere in the world and is located at:</p>
+<p>http://www.dclunie.com/medical-image-faq/html/part8.html#UIDRegistration.</p>
+<p>The manner in which the OID root is obtained is not constrained by this DSTU.</p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="53576-5" </tt><i>Personal Health Monitoring Report</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+<ul><li>Specifies the type of the clinical document.</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>confidentialityCode</b></tt>
+<ul><li>Specifies the confidentiality assigned to the document. This specification provides no further guidance beyond CDA R2
+on documents with respect to the vocabulary used for confidentialityCode, nor
+treatment or implementation of confidentiality.</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt>
+<ul><li>Specifies the creation time of the document. All documents
+authored by direct input to a computer system should record an effectiveTime that is
+precise to the second. When authored in other ways, for example, by filling out a
+paper form that is then transferred into an EHR system, the precision of
+effectiveTime may be less than to the second.</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt>
+<ul><li>The ClinicalDocument/id element is an instance identifier data type (see HL7 Version 3
+Abstract Data in Section 5 REFERENCES). The root attribute is a UUID or OID. The
+root uniquely identifies the scope of the extension. The root and extension attributes
+uniquely identify the document.</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>languageCode</b></tt>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt>
+<ul><li>Specifies the local name used for the document.
+Note that the title does not need to be the same as the display name provided with the
+document type code. For example, the display name provided by LOINC&#174; as an aid in
+debugging may be "HISTORY AND PHYSICAL." The title can be localized, as appropriate.</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>typeId</b></tt>
+<ul><li>The clinical document type ID identifies the constraints imposed by CDA R2 on the
+content, essentially acting as a version identifier.</li></ul></li>
+<li>Contains at least one [1..*] <tt><b>author</b></tt>, where its type is CDA Author
+</li>
+<li>Contains zero or one [0..1] <tt><b>dataEnterer</b></tt>, where its type is CDA Data Enterer
+</li>
+<li>Contains exactly one [1..1] <tt><b>custodian</b></tt>, where its type is CDA Custodian
+</li>
+<li>Contains zero or more [0..*] <tt><b>informationRecipient</b></tt>, where its type is CDA Information Recipient
+</li>
+<li>Contains zero or one [0..1] <tt><b>legalAuthenticator</b></tt>, where its type is CDA Legal Authenticator
+</li>
+<li>Contains zero or more [0..*] <tt><b>authenticator</b></tt>, where its type is CDA Authenticator
+</li>
+<li><b>SHALL</b> satisfy: All patient, guardianPerson, assignedPerson, maintainingPerson, relatedPerson, intendedRecipient/informationRecipient, associatedPerson, and relatedSubject/subject elements have a name.</li>
+<li><b>SHALL</b> satisfy: All patientRole, assignedAuthor, assignedEntity[not(parent::dataEnterer)] and associatedEntity elements have an addr and telecom element.</li>
+<li><b>SHOULD</b> satisfy: All guardian, dataEnterer/assignedEntity, relatedEntity, intendedRecipient, relatedSubject and participantRole elements have an addr and telecom element.</li>
+<li><b>SHALL</b> satisfy: All guardianOrganization, providerOrganization, wholeOrganization, representedOrganization, representedCustodianOrganization, receivedOrganization, scopingOrganization and serviceProviderOrganization elements have name, addr and telecom elements.<ul><li>When name, address, or telecom information is unknown and where these elements are
+required to be present, as with CDA conformance if the information is unknown, these
+elements will be represented using an appropriate value for the nullFlavor attribute on
+the element. Legal values according to this specification come from the HL7 NullFlavor
+vocabulary.</li></ul></li>
+<li>Times or time intervals found in the ClinicalDocument/effectiveTime,
+author/time, dataEnterer/time, legalAuthenticator/time, authenticator/time and
+encompassingEncounter/effectiveTime elements <b>SHALL</b> be precise to the day, <b>SHALL</b>
+include a time zone if more precise than to the day, and <b>SHOULD</b> be precise to the
+second.</li>
+<li>Times or time intervals found in the asOrganizationPartOf/effectiveTime,
+asMaintainedEntity/effectiveTime, relatedEntity/effectiveTime,
+serviceEvent/effectiveTime, ClinicalDocument/participant/time,
+serviceEvent/performer/time and encounterParticipant/time <b>SHALL</b> be precise at
+least to the year, <b>SHOULD</b> be precise to the day, and <b>MAY</b> omit time zone.</li>
+<li><b>SHALL</b> satisfy: Telephone numbers match the regular expression pattern tel:\+?[-0-9().]+<ul><li>The telecom element is used to provide a contact telephone number for the various
+participants that require it. The value attribute ofthis elements is a URL that specifies
+the telephone number, as indicated by the TEL data type.</li><li>All telephone numbers are to be encoded using a restricted form of the tel: URL scheme. 
+A telephone number used for voice calls begins with the URL scheme tel:. If the
+number is a global phone number, it starts with a plus (+) sign. The remaining number
+is made up of the dialing digits and an optional extension and may also contain visual
+separators.</li></ul></li>
+<li><b>SHALL</b> satisfy: At least one dialing digit is present in the phone number after visual separators are removed.</li>
+<li><b>SHALL</b> satisfy: If the telephone number is unknown it is represented using the appropriate flavor of null.<ul><li>There is no way to distinguish between an unknown phone number and an unknown
+e-mail or other telecommunications address. Therefore, the following convention will be
+used: Any telecom element that uses a flavor of null (has a nullFlavor attribute) is
+assumed to be a telephone number, which is the only required telecommunications
+address element within this DSTU.</li></ul></li>
+<li><b>SHALL</b> satisfy: The extension attribute of the typeId element is POCD_HD000040.<ul><li><codeblock>[OCL]: self.typeId.extension = 'POCD_HD000040'</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: The id/@root attribute is a syntactically correct UUID or OID.</li>
+<li><b>SHALL</b> satisfy: UUIDs are represented in the form XXXXXXXX-XXXX-XXXX-XXXXXXXXXXXXXXXX, where each X is a character from the set [A-Fa-f0-9].</li>
+<li>OIDs are represented in dotted decimal notation, where each decimal number is either 0, or starts with a nonzero digit. More formally, an OID <b>SHALL</b> be in the form ([0-2])(.([1-9][0-9]*|0))+.<ul><li><p>Organizations that wish to use OIDs should properly register their OID root and ensure
+uniqueness of the OID roots used in identifiers. A large number of mechanisms exist
+for obtaining OID roots for free or for a reasonable fee. HL7 maintains an OID registry
+page from which organizations may request an OID root under the HL7 OID root. This
+page can be accessed at: http://www.hl7.org/oid.</p>
+<p>Another useful resource lists the many ways to obtain a registered OID Root for free or
+a small fee anywhere in the world and is located at:
+http://www.dclunie.com/medical-image-faq/html/part8.html#UIDRegistration. </p>
+<p>The manner in which the OID root is obtained is not constrained by this DSTU.</p></li></ul></li>
+<li><b>SHALL</b> satisfy: OIDs are no more than 64 characters in length.<ul><li>OIDs are limited by this specification to no more than 64 characters in length for
+compatibility with other standards and Implementation Guides.</li></ul></li>
+<li><b>SHALL</b> satisfy: languageCode has the form nn, or nn-CC.</li>
+<li><b>SHALL</b> satisfy: The nn portion of languageCode is a legal ISO-639-1 language code in lowercase.</li>
+<li>The CC portion languageCode, if present, <b>SHALL</b> be an ISO-3166 country code in uppercase.</li>
+<li>Both setId and versionNumber <b>SHALL</b> be present or both <b>SHALL</b> be absent.<ul><li>The ClinicalDocument/setId element uses the instance identifier (II) data type. The root
+attribute is a UUID or OID that uniquely identifies the scope of the identifier, and the
+extension attribute is a value that is unique within the scope of the root for the set of
+versions of the document. See Document Identification, Revisions, and Addenda in
+Section 4.2.3.1 of the CDA Specification for some examples showing the use of the setId
+element.</li></ul><ul><li><codeblock>[OCL]: (self.setId.oclIsUndefined() and self.versionNumber.oclIsUndefined())
+   xor (not self.setId.oclIsUndefined() and not self.versionNumber.oclIsUndefined())</codeblock></li></ul></li>
+<li>The @extension and/or @root of setId and id <b>SHALL</b> be different when both are present.<ul><li><codeblock>[OCL]: (not self.setId.oclIsUndefined() and not self.id.oclIsUndefined())
+   implies (self.setId.root &lt;&gt; self.id.root or self.setId.extension &lt;&gt; self.id.extension)</codeblock></li></ul></li>
+<li>A copyTime element <b>SHALL NOT</b> be present.<ul><li>The ClinicalDocument/copyTime element has been deprecated in CDA R2.</li></ul><ul><li><codeblock>[OCL]: self.copyTime.oclIsUndefined()</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: At least one recordTarget/patientRole element is present.<ul><li><codeblock>[OCL]: self.recordTarget-&gt;size() &gt; 0 and self.recordTarget-&gt;exists(target : cda::RecordTarget | not target.patientRole.oclIsUndefined())</codeblock></li></ul></li>
+<li>A patient/birthTime element <b>SHALL</b> be present. The patient/birthTime
+element <b>SHALL</b> be precise at least to the year, and <b>SHOULD</b> be precise at least to the
+day, and <b>MAY</b> omit time zone. If unknown, it <b>SHALL</b> be represented using a flavor of
+null.<ul><li><codeblock>[OCL]: self.recordTarget-&gt;forAll(target : cda::RecordTarget | not target.patientRole.oclIsUndefined()
+   implies (not target.patientRole.patient.birthTime.value.oclIsUndefined()
+      or not target.patientRole.patient.birthTime.nullFlavor.oclIsUndefined()))</codeblock></li></ul></li>
+<li>A patient/administrativeGenderCode element <b>SHALL</b> be present. If
+unknown, it <b>SHALL</b> be represented using a flavor of null. Values for
+administrativeGenderCode <b>SHOULD</b> be drawn from the HL7 AdministrativeGender
+vocabulary.<ul><li><codeblock>[OCL]: self.recordTarget-&gt;forAll(target : cda::RecordTarget | not target.patientRole.oclIsUndefined()
+   implies (not target.patientRole.patient.administrativeGenderCode.code.oclIsUndefined()
+      or not target.patientRole.patient.administrativeGenderCode.nullFlavor.oclIsUndefined()))</codeblock></li></ul></li>
+<li>The maritalStatusCode, religiousAffiliationCode, raceCode and
+ethnicGroupCode <b>MAY</b> be present. If maritalStatusCode, religiousAffiliationCode,
+raceCode and ethnicGroupCode elements are present, they <b>SHOULD</b> be encoded using
+the appropriate HL7 vocabularies.</li>
+<li><b>SHOULD</b> satisfy: The guardian element is present when the patient is a minor child.</li>
+<li><b>MAY</b> satisfy: The providerOrganization element is present.<ul><li><codeblock>[OCL]: self.recordTarget-&gt;exists(target : cda::RecordTarget | not target.patientRole.providerOrganization.oclIsUndefined())</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: The author/time element is present.<ul><li>The author/time element represents the start time of the author's
+participation in the creation of the clinical document.</li></ul><ul><li><codeblock>[OCL]: self.author-&gt;forAll(author : cda::Author | not author.time.oclIsUndefined())</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: The assignedAuthor/id element is present.<ul><li><codeblock>[OCL]: self.author-&gt;forAll(author : cda::Author | author.assignedAuthor.id-&gt;size() &gt; 0)</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: An assignedAuthor element contains at least one assignedPerson
+or assignedAuthoringDevice elements.<ul><li><codeblock>[OCL]: self.author-&gt;forAll(author : cda::Author | not author.assignedAuthor.assignedPerson.oclIsUndefined() 
+   or not author.assignedAuthor.assignedAuthoringDevice.oclIsUndefined())</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: When dataEnterer is present, an assignedEntity/assignedPerson element is present.<ul><li><codeblock>[OCL]: not self.dataEnterer.oclIsUndefined() implies not self.dataEnterer.assignedEntity.assignedPerson.oclIsUndefined()</codeblock></li></ul></li>
+<li>The dataEnterer/time element <b>MAY</b> be present. If present, it represents the starting time of entry of the data.<ul><li><codeblock>[OCL]: not self.dataEnterer.oclIsUndefined() implies not self.dataEnterer.time.oclIsUndefined()</codeblock></li></ul></li>
+<li><b>MAY</b> satisfy: The informant element is present.<ul><li><codeblock>[OCL]: self.informant-&gt;size() &gt; 0</codeblock></li></ul></li>
+<li>When informant is present, an assignedEntity/assignedPerson or
+relatedEntity/relatedPerson element <b>SHALL</b> be present.<ul><li><codeblock>[OCL]: self.informant-&gt;forAll(i : cda::Informant12 | not i.assignedEntity.assignedPerson.oclIsUndefined()
+   or not i.relatedEntity.relatedPerson.oclIsUndefined())</codeblock></li></ul></li>
+<li>When the informant is a healthcare provider with an assigned role, the
+informant <b>SHALL</b> be represented using the assignedEntity element<ul><li>Assigned health care providers may be a source of information when a document is
+created. (e.g., a nurse's aide who provides information about a recent significant health
+care event that occurred within an acute care facility.) In these cases, the
+assignedEntity element is used.</li></ul></li>
+<li>Allowable values for informant/relatedEntity/@classCode <b>SHALL</b> be CON,
+PRS, CAREGIVER, AGNT or PROV from the RoleClass vocabulary.<ul><li><p>When the informant is a personal relation, that informant is represented in the
+relatedEntity element. The code element of the relatedEntity describes the relationship
+between the informant and the patient.</p>
+<p>The relationship between the informant and the patient needs to be described to help
+the receiver of the clinical document understand the information in the document.</p></li></ul></li>
+<li>When relatedEntity/@classCode is PRS, values in relatedEntity/code
+<b>SHALL</b> come from the HL7 PersonalRelationshipRoleType vocabulary or from
+SNOMED, any subtype of "Person in the family" (303071001).</li>
+<li>When an informant is an unrelated person not otherwise specified, the
+value relatedEntity/@classCode <b>SHALL</b> be set to CON to indicate that this person is a
+contact.<ul><li>Individuals with no prior personal relationship to the patient (e.g., a witness to a
+significant health care event) may provide information about the patient.</li></ul></li>
+<li>When the informant is a healthcare provider without an assigned role,
+the informant <b>SHALL</b> be represented using the relatedEntity element and the value of
+relatedEntity/@classCode <b>SHALL</b> be set to PROV.<ul><li>A health care provider who does not have an assigned role at the institution may
+provide information. To record an informant that does not have an assigned role that
+can be represented within the context of the document, the information will be
+represented using the relatedEntity element and the value of relatedEntity/@classCode
+will be set to PROV.</li></ul></li>
+<li>When the informant is a healthcare provider, the value of relatedEntity/code <b>SHOULD</b> be present and indicate the type of healthcare provider.</li>
+<li>The ClinicalDocument/informationRecipient element <b>MAY</b> be present.
+When informationRecipient is used, at least one
+informationRecipient/intendedRecipient/informationRecipient or
+informationRecipient/intendedRecipient/receivedOrganization <b>SHALL</b> be present.</li>
+<li>The assignedEntity/assignedPerson element <b>SHALL</b> be present in legalAuthenticator.<ul><li><codeblock>[OCL]: not self.legalAuthenticator.oclIsUndefined() implies not self.legalAuthenticator.assignedEntity.assignedPerson.oclIsUndefined()</codeblock></li></ul></li>
+<li>The assignedEntity/assignedPerson element <b>SHALL</b> be present in an authenticator element.<ul><li><codeblock>[OCL]: self.authenticator-&gt;forAll(auth : cda::Authenticator | auth.assignedEntity-&gt;forAll(entity : cda::AssignedEntity |
+   not entity.assignedPerson.oclIsUndefined()))</codeblock></li></ul></li>
+<li>Times or time intervals found in the ClinicalDocument/effectiveTime,
+author/time, dataEnterer/time, legalAuthenticator/time, authenticator/time and
+encompassingEncounter/effectiveTime elements <b>SHALL</b> be precise to the day, <b>SHALL</b>
+include a time zone if more precise than to the day, and <b>SHOULD</b> be precise to the
+second.</li>
+<li>Times or time intervals found in the asOrganizationPartOf/effectiveTime,
+asMaintainedEntity/effectiveTime, relatedEntity/effectiveTime,
+serviceEvent/effectiveTime, ClinicalDocument/participant/time,
+serviceEvent/performer/time and encounterParticipant/time <b>SHALL</b> be precise at
+least to the year, <b>SHOULD</b> be precise to the day, and <b>MAY</b> omit time zone.</li>
+<li>if a template has no templateId (OID) then the templateId <b>SHALL NOT</b> be present</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>typeId</b></tt>
+<ul><li>The clinical document type ID identifies the constraints imposed by CDA R2 on the
+content, essentially acting as a version identifier.</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt>
+<ul><li>The ClinicalDocument/id element is an instance identifier data type (see HL7 Version 3
+Abstract Data in Section 5 REFERENCES). The root attribute is a UUID or OID. The
+root uniquely identifies the scope of the extension. The root and extension attributes
+uniquely identify the document.</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="53576-5" </tt><i>Personal Health Monitoring Report</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+<ul><li>Specifies the type of the clinical document.</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt>
+<ul><li>Specifies the local name used for the document.
+Note that the title does not need to be the same as the display name provided with the
+document type code. For example, the display name provided by LOINC&#174; as an aid in
+debugging may be "HISTORY AND PHYSICAL." The title can be localized, as appropriate.</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt>
+<ul><li>Specifies the creation time of the document. All documents
+authored by direct input to a computer system should record an effectiveTime that is
+precise to the second. When authored in other ways, for example, by filling out a
+paper form that is then transferred into an EHR system, the precision of
+effectiveTime may be less than to the second.</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>confidentialityCode</b></tt>
+<ul><li>Specifies the confidentiality assigned to the document. This specification provides no further guidance beyond CDA R2
+on documents with respect to the vocabulary used for confidentialityCode, nor
+treatment or implementation of confidentiality.</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>languageCode</b></tt>
+</li>
+<li>Contains at least one [1..*] <tt><b>recordTarget</b></tt>, where its type is <xref href="../RecordTarget.dita">Record Target</xref>
+</li>
+<li>Contains at least one [1..*] <tt><b>author</b></tt>, where its type is <xref href="../Author.dita">Author</xref>
+</li>
+<li>Contains exactly one [1..1] <tt><b>custodian</b></tt>, where its type is <xref href="../Custodian.dita">Custodian</xref>
+</li>
+<li>Contains exactly one [1..1] <tt><b>component</b></tt>, where its type is <xref href="../Component2.dita">Component2</xref>
+</li>
+<li>Contains at least one [1..*] <tt><b>author</b></tt>, where its type is CDA Author
+</li>
+<li>Contains zero or one [0..1] <tt><b>dataEnterer</b></tt>, where its type is CDA Data Enterer
+</li>
+<li>Contains exactly one [1..1] <tt><b>custodian</b></tt>, where its type is CDA Custodian
+</li>
+<li>Contains zero or more [0..*] <tt><b>informationRecipient</b></tt>, where its type is CDA Information Recipient
+</li>
+<li>Contains zero or one [0..1] <tt><b>legalAuthenticator</b></tt>, where its type is CDA Legal Authenticator
+</li>
+<li>Contains zero or more [0..*] <tt><b>authenticator</b></tt>, where its type is CDA Authenticator
+</li>
+<li><b>SHALL</b> satisfy: All patient, guardianPerson, assignedPerson, maintainingPerson, relatedPerson, intendedRecipient/informationRecipient, associatedPerson, and relatedSubject/subject elements have a name.</li>
+<li><b>SHALL</b> satisfy: All patientRole, assignedAuthor, assignedEntity[not(parent::dataEnterer)] and associatedEntity elements have an addr and telecom element.</li>
+<li><b>SHOULD</b> satisfy: All guardian, dataEnterer/assignedEntity, relatedEntity, intendedRecipient, relatedSubject and participantRole elements have an addr and telecom element.</li>
+<li><b>SHALL</b> satisfy: All guardianOrganization, providerOrganization, wholeOrganization, representedOrganization, representedCustodianOrganization, receivedOrganization, scopingOrganization and serviceProviderOrganization elements have name, addr and telecom elements.<ul><li>When name, address, or telecom information is unknown and where these elements are
+required to be present, as with CDA conformance if the information is unknown, these
+elements will be represented using an appropriate value for the nullFlavor attribute on
+the element. Legal values according to this specification come from the HL7 NullFlavor
+vocabulary.</li></ul></li>
+<li>Times or time intervals found in the ClinicalDocument/effectiveTime,
+author/time, dataEnterer/time, legalAuthenticator/time, authenticator/time and
+encompassingEncounter/effectiveTime elements <b>SHALL</b> be precise to the day, <b>SHALL</b>
+include a time zone if more precise than to the day, and <b>SHOULD</b> be precise to the
+second.</li>
+<li>Times or time intervals found in the asOrganizationPartOf/effectiveTime,
+asMaintainedEntity/effectiveTime, relatedEntity/effectiveTime,
+serviceEvent/effectiveTime, ClinicalDocument/participant/time,
+serviceEvent/performer/time and encounterParticipant/time <b>SHALL</b> be precise at
+least to the year, <b>SHOULD</b> be precise to the day, and <b>MAY</b> omit time zone.</li>
+<li><b>SHALL</b> satisfy: Telephone numbers match the regular expression pattern tel:\+?[-0-9().]+<ul><li>The telecom element is used to provide a contact telephone number for the various
+participants that require it. The value attribute ofthis elements is a URL that specifies
+the telephone number, as indicated by the TEL data type.</li><li>All telephone numbers are to be encoded using a restricted form of the tel: URL scheme. 
+A telephone number used for voice calls begins with the URL scheme tel:. If the
+number is a global phone number, it starts with a plus (+) sign. The remaining number
+is made up of the dialing digits and an optional extension and may also contain visual
+separators.</li></ul></li>
+<li><b>SHALL</b> satisfy: At least one dialing digit is present in the phone number after visual separators are removed.</li>
+<li><b>SHALL</b> satisfy: If the telephone number is unknown it is represented using the appropriate flavor of null.<ul><li>There is no way to distinguish between an unknown phone number and an unknown
+e-mail or other telecommunications address. Therefore, the following convention will be
+used: Any telecom element that uses a flavor of null (has a nullFlavor attribute) is
+assumed to be a telephone number, which is the only required telecommunications
+address element within this DSTU.</li></ul></li>
+<li><b>SHALL</b> satisfy: The extension attribute of the typeId element is POCD_HD000040.<ul><li><codeblock>[OCL]: self.typeId.extension = 'POCD_HD000040'</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: The id/@root attribute is a syntactically correct UUID or OID.</li>
+<li><b>SHALL</b> satisfy: UUIDs are represented in the form XXXXXXXX-XXXX-XXXX-XXXXXXXXXXXXXXXX, where each X is a character from the set [A-Fa-f0-9].</li>
+<li>OIDs are represented in dotted decimal notation, where each decimal number is either 0, or starts with a nonzero digit. More formally, an OID <b>SHALL</b> be in the form ([0-2])(.([1-9][0-9]*|0))+.<ul><li><p>Organizations that wish to use OIDs should properly register their OID root and ensure
+uniqueness of the OID roots used in identifiers. A large number of mechanisms exist
+for obtaining OID roots for free or for a reasonable fee. HL7 maintains an OID registry
+page from which organizations may request an OID root under the HL7 OID root. This
+page can be accessed at: http://www.hl7.org/oid.</p>
+<p>Another useful resource lists the many ways to obtain a registered OID Root for free or
+a small fee anywhere in the world and is located at:
+http://www.dclunie.com/medical-image-faq/html/part8.html#UIDRegistration. </p>
+<p>The manner in which the OID root is obtained is not constrained by this DSTU.</p></li></ul></li>
+<li><b>SHALL</b> satisfy: OIDs are no more than 64 characters in length.<ul><li>OIDs are limited by this specification to no more than 64 characters in length for
+compatibility with other standards and Implementation Guides.</li></ul></li>
+<li><b>SHALL</b> satisfy: languageCode has the form nn, or nn-CC.</li>
+<li><b>SHALL</b> satisfy: The nn portion of languageCode is a legal ISO-639-1 language code in lowercase.</li>
+<li>The CC portion languageCode, if present, <b>SHALL</b> be an ISO-3166 country code in uppercase.</li>
+<li>Both setId and versionNumber <b>SHALL</b> be present or both <b>SHALL</b> be absent.<ul><li>The ClinicalDocument/setId element uses the instance identifier (II) data type. The root
+attribute is a UUID or OID that uniquely identifies the scope of the identifier, and the
+extension attribute is a value that is unique within the scope of the root for the set of
+versions of the document. See Document Identification, Revisions, and Addenda in
+Section 4.2.3.1 of the CDA Specification for some examples showing the use of the setId
+element.</li></ul><ul><li><codeblock>[OCL]: (self.setId.oclIsUndefined() and self.versionNumber.oclIsUndefined())
+   xor (not self.setId.oclIsUndefined() and not self.versionNumber.oclIsUndefined())</codeblock></li></ul></li>
+<li>The @extension and/or @root of setId and id <b>SHALL</b> be different when both are present.<ul><li><codeblock>[OCL]: (not self.setId.oclIsUndefined() and not self.id.oclIsUndefined())
+   implies (self.setId.root &lt;&gt; self.id.root or self.setId.extension &lt;&gt; self.id.extension)</codeblock></li></ul></li>
+<li>A copyTime element <b>SHALL NOT</b> be present.<ul><li>The ClinicalDocument/copyTime element has been deprecated in CDA R2.</li></ul><ul><li><codeblock>[OCL]: self.copyTime.oclIsUndefined()</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: At least one recordTarget/patientRole element is present.<ul><li><codeblock>[OCL]: self.recordTarget-&gt;size() &gt; 0 and self.recordTarget-&gt;exists(target : cda::RecordTarget | not target.patientRole.oclIsUndefined())</codeblock></li></ul></li>
+<li>A patient/birthTime element <b>SHALL</b> be present. The patient/birthTime
+element <b>SHALL</b> be precise at least to the year, and <b>SHOULD</b> be precise at least to the
+day, and <b>MAY</b> omit time zone. If unknown, it <b>SHALL</b> be represented using a flavor of
+null.<ul><li><codeblock>[OCL]: self.recordTarget-&gt;forAll(target : cda::RecordTarget | not target.patientRole.oclIsUndefined()
+   implies (not target.patientRole.patient.birthTime.value.oclIsUndefined()
+      or not target.patientRole.patient.birthTime.nullFlavor.oclIsUndefined()))</codeblock></li></ul></li>
+<li>A patient/administrativeGenderCode element <b>SHALL</b> be present. If
+unknown, it <b>SHALL</b> be represented using a flavor of null. Values for
+administrativeGenderCode <b>SHOULD</b> be drawn from the HL7 AdministrativeGender
+vocabulary.<ul><li><codeblock>[OCL]: self.recordTarget-&gt;forAll(target : cda::RecordTarget | not target.patientRole.oclIsUndefined()
+   implies (not target.patientRole.patient.administrativeGenderCode.code.oclIsUndefined()
+      or not target.patientRole.patient.administrativeGenderCode.nullFlavor.oclIsUndefined()))</codeblock></li></ul></li>
+<li>The maritalStatusCode, religiousAffiliationCode, raceCode and
+ethnicGroupCode <b>MAY</b> be present. If maritalStatusCode, religiousAffiliationCode,
+raceCode and ethnicGroupCode elements are present, they <b>SHOULD</b> be encoded using
+the appropriate HL7 vocabularies.</li>
+<li><b>SHOULD</b> satisfy: The guardian element is present when the patient is a minor child.</li>
+<li><b>MAY</b> satisfy: The providerOrganization element is present.<ul><li><codeblock>[OCL]: self.recordTarget-&gt;exists(target : cda::RecordTarget | not target.patientRole.providerOrganization.oclIsUndefined())</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: The author/time element is present.<ul><li>The author/time element represents the start time of the author's
+participation in the creation of the clinical document.</li></ul><ul><li><codeblock>[OCL]: self.author-&gt;forAll(author : cda::Author | not author.time.oclIsUndefined())</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: The assignedAuthor/id element is present.<ul><li><codeblock>[OCL]: self.author-&gt;forAll(author : cda::Author | author.assignedAuthor.id-&gt;size() &gt; 0)</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: An assignedAuthor element contains at least one assignedPerson
+or assignedAuthoringDevice elements.<ul><li><codeblock>[OCL]: self.author-&gt;forAll(author : cda::Author | not author.assignedAuthor.assignedPerson.oclIsUndefined() 
+   or not author.assignedAuthor.assignedAuthoringDevice.oclIsUndefined())</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: When dataEnterer is present, an assignedEntity/assignedPerson element is present.<ul><li><codeblock>[OCL]: not self.dataEnterer.oclIsUndefined() implies not self.dataEnterer.assignedEntity.assignedPerson.oclIsUndefined()</codeblock></li></ul></li>
+<li>The dataEnterer/time element <b>MAY</b> be present. If present, it represents the starting time of entry of the data.<ul><li><codeblock>[OCL]: not self.dataEnterer.oclIsUndefined() implies not self.dataEnterer.time.oclIsUndefined()</codeblock></li></ul></li>
+<li><b>MAY</b> satisfy: The informant element is present.<ul><li><codeblock>[OCL]: self.informant-&gt;size() &gt; 0</codeblock></li></ul></li>
+<li>When informant is present, an assignedEntity/assignedPerson or
+relatedEntity/relatedPerson element <b>SHALL</b> be present.<ul><li><codeblock>[OCL]: self.informant-&gt;forAll(i : cda::Informant12 | not i.assignedEntity.assignedPerson.oclIsUndefined()
+   or not i.relatedEntity.relatedPerson.oclIsUndefined())</codeblock></li></ul></li>
+<li>When the informant is a healthcare provider with an assigned role, the
+informant <b>SHALL</b> be represented using the assignedEntity element<ul><li>Assigned health care providers may be a source of information when a document is
+created. (e.g., a nurse's aide who provides information about a recent significant health
+care event that occurred within an acute care facility.) In these cases, the
+assignedEntity element is used.</li></ul></li>
+<li>Allowable values for informant/relatedEntity/@classCode <b>SHALL</b> be CON,
+PRS, CAREGIVER, AGNT or PROV from the RoleClass vocabulary.<ul><li><p>When the informant is a personal relation, that informant is represented in the
+relatedEntity element. The code element of the relatedEntity describes the relationship
+between the informant and the patient.</p>
+<p>The relationship between the informant and the patient needs to be described to help
+the receiver of the clinical document understand the information in the document.</p></li></ul></li>
+<li>When relatedEntity/@classCode is PRS, values in relatedEntity/code
+<b>SHALL</b> come from the HL7 PersonalRelationshipRoleType vocabulary or from
+SNOMED, any subtype of "Person in the family" (303071001).</li>
+<li>When an informant is an unrelated person not otherwise specified, the
+value relatedEntity/@classCode <b>SHALL</b> be set to CON to indicate that this person is a
+contact.<ul><li>Individuals with no prior personal relationship to the patient (e.g., a witness to a
+significant health care event) may provide information about the patient.</li></ul></li>
+<li>When the informant is a healthcare provider without an assigned role,
+the informant <b>SHALL</b> be represented using the relatedEntity element and the value of
+relatedEntity/@classCode <b>SHALL</b> be set to PROV.<ul><li>A health care provider who does not have an assigned role at the institution may
+provide information. To record an informant that does not have an assigned role that
+can be represented within the context of the document, the information will be
+represented using the relatedEntity element and the value of relatedEntity/@classCode
+will be set to PROV.</li></ul></li>
+<li>When the informant is a healthcare provider, the value of relatedEntity/code <b>SHOULD</b> be present and indicate the type of healthcare provider.</li>
+<li>The ClinicalDocument/informationRecipient element <b>MAY</b> be present.
+When informationRecipient is used, at least one
+informationRecipient/intendedRecipient/informationRecipient or
+informationRecipient/intendedRecipient/receivedOrganization <b>SHALL</b> be present.</li>
+<li>The assignedEntity/assignedPerson element <b>SHALL</b> be present in legalAuthenticator.<ul><li><codeblock>[OCL]: not self.legalAuthenticator.oclIsUndefined() implies not self.legalAuthenticator.assignedEntity.assignedPerson.oclIsUndefined()</codeblock></li></ul></li>
+<li>The assignedEntity/assignedPerson element <b>SHALL</b> be present in an authenticator element.<ul><li><codeblock>[OCL]: self.authenticator-&gt;forAll(auth : cda::Authenticator | auth.assignedEntity-&gt;forAll(entity : cda::AssignedEntity |
+   not entity.assignedPerson.oclIsUndefined()))</codeblock></li></ul></li>
+<li>Times or time intervals found in the ClinicalDocument/effectiveTime,
+author/time, dataEnterer/time, legalAuthenticator/time, authenticator/time and
+encompassingEncounter/effectiveTime elements <b>SHALL</b> be precise to the day, <b>SHALL</b>
+include a time zone if more precise than to the day, and <b>SHOULD</b> be precise to the
+second.</li>
+<li>Times or time intervals found in the asOrganizationPartOf/effectiveTime,
+asMaintainedEntity/effectiveTime, relatedEntity/effectiveTime,
+serviceEvent/effectiveTime, ClinicalDocument/participant/time,
+serviceEvent/performer/time and encounterParticipant/time <b>SHALL</b> be precise at
+least to the year, <b>SHOULD</b> be precise to the day, and <b>MAY</b> omit time zone.</li>
+<li>if a template has no templateId (OID) then the templateId <b>SHALL NOT</b> be present</li>
+</ol>
+
+<codeblock id="example"><![CDATA[]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">General Header Constraints</ph></p>
+<p id="shortdesc">[ClinicalDocument: templateId <tt>null</tt>]</p>
+</body>
+</topic>

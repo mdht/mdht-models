@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+	<title>Hospital Admission Medications Section Entries Optional</title>
+	<topicref href="../classes/HospitalAdmissionMedicationsSectionEntriesOptional.dita" type="topic" >
+		<topicref href="../classes/HospitalAdmissionMedicationsSectionEntriesOptionalTable.dita" type="topic" />
+		<topicref href="../classes/HospitalAdmissionMedicationsSectionEntriesOptionalSample.dita" type="topic" />	
+	</topicref>
+</map>
+

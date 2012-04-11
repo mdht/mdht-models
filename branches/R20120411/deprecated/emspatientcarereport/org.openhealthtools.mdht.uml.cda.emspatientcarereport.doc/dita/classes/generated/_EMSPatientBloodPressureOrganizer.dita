@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>EMS Patient Blood Pressure Organizer - conformance rules</title>
+<body>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-EmergencyRunReport-112)
+</li>
+<li>Contains zero or one [0..1] <tt><b>eMSPatientDiastolicBloodPressure</b></tt>, where its type is <xref href="../EMSPatientDiastolicBloodPressure.dita">EMS Patient Diastolic Blood Pressure</xref>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../EMSPatientDiastolicBloodPressure.dita">EMS Patient Diastolic Blood Pressure</xref></li></ol></li>
+<li>Contains zero or one [0..1] <tt><b>eMSPatientSystolicBloodPressure</b></tt>, where its type is <xref href="../EMSPatientSystolicBloodPressure.dita">EMS Patient Systolic Blood Pressure</xref>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../EMSPatientSystolicBloodPressure.dita">EMS Patient Systolic Blood Pressure</xref></li></ol></li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF-EmergencyRunReport-112)
+</li>
+<li>Contains zero or one [0..1] <tt><b>eMSPatientDiastolicBloodPressure</b></tt>, where its type is <xref href="../EMSPatientDiastolicBloodPressure.dita">EMS Patient Diastolic Blood Pressure</xref>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../EMSPatientDiastolicBloodPressure.dita">EMS Patient Diastolic Blood Pressure</xref></li></ol></li>
+<li>Contains zero or one [0..1] <tt><b>eMSPatientSystolicBloodPressure</b></tt>, where its type is <xref href="../EMSPatientSystolicBloodPressure.dita">EMS Patient Systolic Blood Pressure</xref>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../EMSPatientSystolicBloodPressure.dita">EMS Patient Systolic Blood Pressure</xref></li></ol></li>
+</ol>
+
+<codeblock id="example"><![CDATA[Unable to create XML Snippet]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">EMS Patient Blood Pressure Organizer</ph></p>
+</body>
+</topic>
