@@ -617,7 +617,7 @@ public class SeverityObservationOperations extends ClinicalStatementOperations {
 			severityObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.SEVERITY_OBSERVATION__SEVERITY_OBSERVATION_INTERPRETATION_CODE,
 					ConsolPlugin.INSTANCE.getString("SeverityObservationInterpretationCode"),
 					new Object[] { severityObservation }));

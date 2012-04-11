@@ -329,7 +329,7 @@ public class PurposeofReferenceObservationOperations extends ClinicalStatementOp
 			purposeofReferenceObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PURPOSEOF_REFERENCE_OBSERVATION__PURPOSEOF_REFERENCE_OBSERVATION_VALUE,
 					ConsolPlugin.INSTANCE.getString("PurposeofReferenceObservationValue"),
 					new Object[] { purposeofReferenceObservation }));

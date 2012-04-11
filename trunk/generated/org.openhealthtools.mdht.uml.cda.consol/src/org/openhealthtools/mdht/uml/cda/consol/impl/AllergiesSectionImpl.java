@@ -51,15 +51,6 @@ public class AllergiesSectionImpl extends AllergiesSectionEntriesOptionalImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAllergiesSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AllergiesSectionOperations.validateAllergiesSectionCode(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateAllergiesSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergiesSectionOperations.validateAllergiesSectionTitle(this, diagnostics, context);
 	}
@@ -100,6 +91,16 @@ public class AllergiesSectionImpl extends AllergiesSectionEntriesOptionalImpl im
 	public boolean validateAllergiesSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AllergiesSectionOperations.validateAllergiesSectionEntriesOptionalTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateAllergiesSectionEntriesOptionalCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AllergiesSectionOperations.validateAllergiesSectionEntriesOptionalCode(this, diagnostics, context);
 	}
 
 	/**

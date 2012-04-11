@@ -1386,7 +1386,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 			if (diagnostics != null) {
 				for (EObject eObject : (Collection<EObject>) oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_GUARANTOR_GUARANTOR_ASSIGNED_ENTITY_CODE,
 						ConsolPlugin.INSTANCE.getString("PolicyActivityGuarantorGuarantorAssignedEntityCode"),
 						new Object[] { eObject }));

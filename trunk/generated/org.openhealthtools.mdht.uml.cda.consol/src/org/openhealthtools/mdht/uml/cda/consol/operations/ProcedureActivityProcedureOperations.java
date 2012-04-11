@@ -621,7 +621,7 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 			procedureActivityProcedure)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_TARGET_SITE_CODE,
 					ConsolPlugin.INSTANCE.getString("ProcedureActivityProcedureTargetSiteCode"),
 					new Object[] { procedureActivityProcedure }));
@@ -1237,7 +1237,7 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 	 */
 	protected static final String VALIDATE_PROCEDURE_ACTIVITY_PROCEDURE_PRIORITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.priorityCode.oclIsUndefined() or self.priorityCode.isNullFlavorUndefined()) implies (self.priorityCode.oclIsKindOf(datatypes::CE) and "
 			+ "let value : datatypes::CE = self.priorityCode.oclAsType(datatypes::CE) in "
-			+ "not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined())";
+			+ "value.codeSystem = '2.16.840.1.113883.5.7' and not value.code.oclIsUndefined())";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateProcedureActivityProcedurePriorityCode(ProcedureActivityProcedure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Activity Procedure Priority Code</em>}' invariant operation.
@@ -1256,7 +1256,7 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 	 * <!-- begin-model-doc -->
 	 * (self.priorityCode.oclIsUndefined() or self.priorityCode.isNullFlavorUndefined()) implies (self.priorityCode.oclIsKindOf(datatypes::CE) and 
 	 * let value : datatypes::CE = self.priorityCode.oclAsType(datatypes::CE) in 
-	 * not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined())
+	 * value.codeSystem = '2.16.840.1.113883.5.7' and not value.code.oclIsUndefined())
 	 * @param procedureActivityProcedure The receiving '<em><b>Procedure Activity Procedure</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1280,7 +1280,7 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 			procedureActivityProcedure)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_PRIORITY_CODE,
 					ConsolPlugin.INSTANCE.getString("ProcedureActivityProcedurePriorityCode"),
 					new Object[] { procedureActivityProcedure }));

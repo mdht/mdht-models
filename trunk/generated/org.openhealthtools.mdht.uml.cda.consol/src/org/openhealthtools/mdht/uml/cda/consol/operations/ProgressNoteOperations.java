@@ -49,7 +49,6 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote#validateProgressNoteHasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note Has An Assement And Plan Section Or Individual Assement And Plan Sections</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote#validateProgressNoteDoesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresent(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note Does Not Have Individual Assement And Plan Sections When Assement And Plan Section Present</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote#validateProgressNoteTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note Template Id</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote#validateProgressNoteCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote#validateProgressNoteDocumentationOf(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note Documentation Of</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote#validateProgressNoteComponentOf(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note Component Of</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote#validateProgressNoteAssessmentSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note Assessment Section</em>}</li>
@@ -87,6 +86,7 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote#getReviewOfSystemsSection() <em>Get Review Of Systems Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote#getSubjectiveSection() <em>Get Subjective Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote#getVitalSignsSectionEntriesOptional() <em>Get Vital Signs Section Entries Optional</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.ProgressNote#validateGeneralHeaderConstraintsCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Code</em>}</li>
  * </ul>
  * </p>
  *
@@ -267,66 +267,6 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.PROGRESS_NOTE__PROGRESS_NOTE_TEMPLATE_ID,
 					ConsolPlugin.INSTANCE.getString("ProgressNoteTemplateId"), new Object[] { progressNote }));
-			}
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateProgressNoteCode(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note Code</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateProgressNoteCode(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_PROGRESS_NOTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.1' and not value.code.oclIsUndefined())";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateProgressNoteCode(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Progress Note Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateProgressNoteCode(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_PROGRESS_NOTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
-	 * value.codeSystem = '2.16.840.1.113883.6.1' and not value.code.oclIsUndefined())
-	 * @param progressNote The receiving '<em><b>Progress Note</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-
-	public static boolean validateProgressNoteCode(ProgressNote progressNote, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		if (VALIDATE_PROGRESS_NOTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.PROGRESS_NOTE);
-			try {
-				VALIDATE_PROGRESS_NOTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROGRESS_NOTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROGRESS_NOTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(progressNote)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.PROGRESS_NOTE__PROGRESS_NOTE_CODE,
-					ConsolPlugin.INSTANCE.getString("ProgressNoteCode"), new Object[] { progressNote }));
 			}
 			return false;
 		}
@@ -1685,7 +1625,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 		if (GET_ASSESSMENT_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.PROGRESS_NOTE, ConsolPackage.Literals.PROGRESS_NOTE.getEAllOperations().get(187));
+				ConsolPackage.Literals.PROGRESS_NOTE, ConsolPackage.Literals.PROGRESS_NOTE.getEAllOperations().get(186));
 			try {
 				GET_ASSESSMENT_SECTION__EOCL_QRY = helper.createQuery(GET_ASSESSMENT_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1729,7 +1669,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 		if (GET_PLAN_OF_CARE_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.PROGRESS_NOTE, ConsolPackage.Literals.PROGRESS_NOTE.getEAllOperations().get(188));
+				ConsolPackage.Literals.PROGRESS_NOTE, ConsolPackage.Literals.PROGRESS_NOTE.getEAllOperations().get(187));
 			try {
 				GET_PLAN_OF_CARE_SECTION__EOCL_QRY = helper.createQuery(GET_PLAN_OF_CARE_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1773,7 +1713,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 		if (GET_ASSESSMENT_AND_PLAN_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.PROGRESS_NOTE, ConsolPackage.Literals.PROGRESS_NOTE.getEAllOperations().get(189));
+				ConsolPackage.Literals.PROGRESS_NOTE, ConsolPackage.Literals.PROGRESS_NOTE.getEAllOperations().get(188));
 			try {
 				GET_ASSESSMENT_AND_PLAN_SECTION__EOCL_QRY = helper.createQuery(GET_ASSESSMENT_AND_PLAN_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1817,7 +1757,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 		if (GET_ALLERGIES_SECTION_ENTRIES_OPTIONAL__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.PROGRESS_NOTE, ConsolPackage.Literals.PROGRESS_NOTE.getEAllOperations().get(190));
+				ConsolPackage.Literals.PROGRESS_NOTE, ConsolPackage.Literals.PROGRESS_NOTE.getEAllOperations().get(189));
 			try {
 				GET_ALLERGIES_SECTION_ENTRIES_OPTIONAL__EOCL_QRY = helper.createQuery(GET_ALLERGIES_SECTION_ENTRIES_OPTIONAL__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1861,7 +1801,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 		if (GET_CHIEF_COMPLAINT_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.PROGRESS_NOTE, ConsolPackage.Literals.PROGRESS_NOTE.getEAllOperations().get(191));
+				ConsolPackage.Literals.PROGRESS_NOTE, ConsolPackage.Literals.PROGRESS_NOTE.getEAllOperations().get(190));
 			try {
 				GET_CHIEF_COMPLAINT_SECTION__EOCL_QRY = helper.createQuery(GET_CHIEF_COMPLAINT_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1905,7 +1845,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 		if (GET_INTERVENTIONS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.PROGRESS_NOTE, ConsolPackage.Literals.PROGRESS_NOTE.getEAllOperations().get(192));
+				ConsolPackage.Literals.PROGRESS_NOTE, ConsolPackage.Literals.PROGRESS_NOTE.getEAllOperations().get(191));
 			try {
 				GET_INTERVENTIONS_SECTION__EOCL_QRY = helper.createQuery(GET_INTERVENTIONS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1949,7 +1889,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 		if (GET_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.PROGRESS_NOTE, ConsolPackage.Literals.PROGRESS_NOTE.getEAllOperations().get(193));
+				ConsolPackage.Literals.PROGRESS_NOTE, ConsolPackage.Literals.PROGRESS_NOTE.getEAllOperations().get(192));
 			try {
 				GET_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__EOCL_QRY = helper.createQuery(GET_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1993,7 +1933,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 		if (GET_OBJECTIVE_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.PROGRESS_NOTE, ConsolPackage.Literals.PROGRESS_NOTE.getEAllOperations().get(194));
+				ConsolPackage.Literals.PROGRESS_NOTE, ConsolPackage.Literals.PROGRESS_NOTE.getEAllOperations().get(193));
 			try {
 				GET_OBJECTIVE_SECTION__EOCL_QRY = helper.createQuery(GET_OBJECTIVE_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2037,7 +1977,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 		if (GET_PHYSICAL_EXAM_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.PROGRESS_NOTE, ConsolPackage.Literals.PROGRESS_NOTE.getEAllOperations().get(195));
+				ConsolPackage.Literals.PROGRESS_NOTE, ConsolPackage.Literals.PROGRESS_NOTE.getEAllOperations().get(194));
 			try {
 				GET_PHYSICAL_EXAM_SECTION__EOCL_QRY = helper.createQuery(GET_PHYSICAL_EXAM_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2081,7 +2021,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 		if (GET_PROBLEM_SECTION_ENTRIES_OPTIONAL__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.PROGRESS_NOTE, ConsolPackage.Literals.PROGRESS_NOTE.getEAllOperations().get(196));
+				ConsolPackage.Literals.PROGRESS_NOTE, ConsolPackage.Literals.PROGRESS_NOTE.getEAllOperations().get(195));
 			try {
 				GET_PROBLEM_SECTION_ENTRIES_OPTIONAL__EOCL_QRY = helper.createQuery(GET_PROBLEM_SECTION_ENTRIES_OPTIONAL__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2125,7 +2065,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 		if (GET_RESULTS_SECTION_ENTRIES_OPTIONAL__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.PROGRESS_NOTE, ConsolPackage.Literals.PROGRESS_NOTE.getEAllOperations().get(197));
+				ConsolPackage.Literals.PROGRESS_NOTE, ConsolPackage.Literals.PROGRESS_NOTE.getEAllOperations().get(196));
 			try {
 				GET_RESULTS_SECTION_ENTRIES_OPTIONAL__EOCL_QRY = helper.createQuery(GET_RESULTS_SECTION_ENTRIES_OPTIONAL__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2169,7 +2109,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 		if (GET_REVIEW_OF_SYSTEMS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.PROGRESS_NOTE, ConsolPackage.Literals.PROGRESS_NOTE.getEAllOperations().get(198));
+				ConsolPackage.Literals.PROGRESS_NOTE, ConsolPackage.Literals.PROGRESS_NOTE.getEAllOperations().get(197));
 			try {
 				GET_REVIEW_OF_SYSTEMS_SECTION__EOCL_QRY = helper.createQuery(GET_REVIEW_OF_SYSTEMS_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2213,7 +2153,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 		if (GET_SUBJECTIVE_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.PROGRESS_NOTE, ConsolPackage.Literals.PROGRESS_NOTE.getEAllOperations().get(199));
+				ConsolPackage.Literals.PROGRESS_NOTE, ConsolPackage.Literals.PROGRESS_NOTE.getEAllOperations().get(198));
 			try {
 				GET_SUBJECTIVE_SECTION__EOCL_QRY = helper.createQuery(GET_SUBJECTIVE_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2257,7 +2197,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 		if (GET_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.PROGRESS_NOTE, ConsolPackage.Literals.PROGRESS_NOTE.getEAllOperations().get(200));
+				ConsolPackage.Literals.PROGRESS_NOTE, ConsolPackage.Literals.PROGRESS_NOTE.getEAllOperations().get(199));
 			try {
 				GET_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL__EOCL_QRY = helper.createQuery(GET_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -2266,6 +2206,67 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL__EOCL_QRY);
 		return (VitalSignsSectionEntriesOptional) query.evaluate(progressNote);
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateGeneralHeaderConstraintsCode(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Code</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateGeneralHeaderConstraintsCode(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
+			+ "value.codeSystem = '2.16.840.1.113883.6.1' and not value.code.oclIsUndefined())";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsCode(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateGeneralHeaderConstraintsCode(ProgressNote, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_GENERAL_HEADER_CONSTRAINTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
+	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+	 * value.codeSystem = '2.16.840.1.113883.6.1' and not value.code.oclIsUndefined())
+	 * @param progressNote The receiving '<em><b>Progress Note</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validateGeneralHeaderConstraintsCode(ProgressNote progressNote, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.PROGRESS_NOTE);
+			try {
+				VALIDATE_GENERAL_HEADER_CONSTRAINTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GENERAL_HEADER_CONSTRAINTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_GENERAL_HEADER_CONSTRAINTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			progressNote)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PROGRESS_NOTE__GENERAL_HEADER_CONSTRAINTS_CODE,
+					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsCode"), new Object[] { progressNote }));
+			}
+			return false;
+		}
+		return true;
 	}
 
 } // ProgressNoteOperations

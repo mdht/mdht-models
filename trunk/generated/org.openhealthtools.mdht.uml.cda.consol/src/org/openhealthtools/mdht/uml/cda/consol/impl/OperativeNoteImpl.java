@@ -74,15 +74,6 @@ public class OperativeNoteImpl extends GeneralHeaderConstraintsImpl implements O
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateOperativeNoteCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return OperativeNoteOperations.validateOperativeNoteCode(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateOperativeNoteDocumentationOf(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return OperativeNoteOperations.validateOperativeNoteDocumentationOf(this, diagnostics, context);
 	}
@@ -494,6 +485,16 @@ public class OperativeNoteImpl extends GeneralHeaderConstraintsImpl implements O
 	 */
 	public SurgicalDrainsSection getSurgicalDrainsSection() {
 		return OperativeNoteOperations.getSurgicalDrainsSection(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateGeneralHeaderConstraintsCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return OperativeNoteOperations.validateGeneralHeaderConstraintsCode(this, diagnostics, context);
 	}
 
 	/**

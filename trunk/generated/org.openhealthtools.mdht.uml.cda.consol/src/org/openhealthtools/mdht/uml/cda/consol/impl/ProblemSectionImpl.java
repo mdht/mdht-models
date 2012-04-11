@@ -51,15 +51,6 @@ public class ProblemSectionImpl extends ProblemSectionEntriesOptionalImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProblemSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProblemSectionOperations.validateProblemSectionCode(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateProblemSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemSectionOperations.validateProblemSectionText(this, diagnostics, context);
 	}
@@ -100,6 +91,16 @@ public class ProblemSectionImpl extends ProblemSectionEntriesOptionalImpl implem
 	public boolean validateProblemSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProblemSectionOperations.validateProblemSectionEntriesOptionalTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateProblemSectionEntriesOptionalCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemSectionOperations.validateProblemSectionEntriesOptionalCode(this, diagnostics, context);
 	}
 
 	/**

@@ -392,7 +392,7 @@ public class FamilyHistoryObservationOperations extends ClinicalStatementOperati
 			familyHistoryObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 					ConsolValidator.FAMILY_HISTORY_OBSERVATION__FAMILY_HISTORY_OBSERVATION_CODE,
 					ConsolPlugin.INSTANCE.getString("FamilyHistoryObservationCode"),
 					new Object[] { familyHistoryObservation }));

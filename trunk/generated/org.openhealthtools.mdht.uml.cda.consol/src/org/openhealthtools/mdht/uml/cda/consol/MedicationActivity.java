@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.SubstanceAdministration;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getMedicationActivity()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation administrationUnitCode.codeSystem='2.16.840.1.113883.3.26.1.1' administrationUnitCode.codeSystemName='NCI Thesaurus' templateId.root='2.16.840.1.113883.10.20.22.4.16' constraints.validation.error='MedicationActivityTemplateId MedicationActivityEffectiveTimeIVLTS MedicationActivityDrugVehicleTypeCode MedicationActivityInstructionsInversionInd MedicationActivityPreconditionSubstanceAdmTypeCode MedicationActivityClassCode MedicationActivityMoodCode MedicationActivityId MedicationActivityStatusCode MedicationActivityAdministrationUnitCode MedicationActivityConsumable' constraints.validation.warning='MedicationActivityDoseQuantityorrateQuantity MedicationActivityTextReference MedicationActivityEffectiveTimePIVLTS MedicationActivityDoseQuantityUnit MedicationActivityDoseQuantity MedicationActivityText' classCode='SBADM' constraints.validation.info='MedicationActivityCode MedicationActivityRouteCode MedicationActivityRouteCodeP MedicationActivityApproachSiteCode MedicationActivityApproachSiteCodeP MedicationActivityRateQuantity MedicationActivityMaxDoseQuantity MedicationActivityRepeatNumber MedicationActivityMedicationSupplyOrder MedicationActivityReactionObservation MedicationActivityPerformer MedicationActivityInstructions MedicationActivityIndication MedicationActivityMedicationDispense MedicationActivityPrecondition MedicationActivityDrugVehicle'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.22.4.16' approachSiteCode.codeSystem='2.16.840.1.113883.6.96' constraints.validation.error='MedicationActivityTemplateId MedicationActivityEffectiveTimeIVLTS MedicationActivityDrugVehicleTypeCode MedicationActivityInstructionsInversionInd MedicationActivityPreconditionSubstanceAdmTypeCode MedicationActivityClassCode MedicationActivityMoodCode MedicationActivityId MedicationActivityStatusCode MedicationActivityRouteCode MedicationActivityApproachSiteCode MedicationActivityConsumable' routeCode.codeSystem='2.16.840.1.113883.3.26.1.1' approachSiteCode.codeSystemName='SNOMEDCT' routeCode.codeSystemName='NCI Thesaurus' classCode='SBADM' constraints.validation.warning='MedicationActivityDoseQuantityorrateQuantity MedicationActivityTextReference MedicationActivityEffectiveTimePIVLTS MedicationActivityDoseQuantityUnit MedicationActivityDoseQuantity MedicationActivityText' constraints.validation.info='MedicationActivityCode MedicationActivityRouteCodeP MedicationActivityApproachSiteCodeP MedicationActivityRateQuantity MedicationActivityMaxDoseQuantity MedicationActivityAdministrationUnitCode MedicationActivityRepeatNumber MedicationActivityMedicationSupplyOrder MedicationActivityReactionObservation MedicationActivityPerformer MedicationActivityInstructions MedicationActivityIndication MedicationActivityMedicationDispense MedicationActivityPrecondition MedicationActivityDrugVehicle'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolMedicationActivityConsumable constraints.validation.error='ConsumableMedicationInformation'"
  * @generated
  */
@@ -216,11 +216,11 @@ public interface MedicationActivity extends SubstanceAdministration {
 	 * <!-- begin-model-doc -->
 	 * (self.routeCode.oclIsUndefined() or self.routeCode.isNullFlavorUndefined()) implies (self.routeCode.oclIsKindOf(datatypes::CE) and 
 	 * let value : datatypes::CE = self.routeCode.oclAsType(datatypes::CE) in 
-	 * not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined())
+	 * value.codeSystem = '2.16.840.1.113883.3.26.1.1' and not value.code.oclIsUndefined())
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.routeCode.oclIsUndefined() or self.routeCode.isNullFlavorUndefined()) implies (self.routeCode.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = self.routeCode.oclAsType(datatypes::CE) in \r\nnot value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined())'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.routeCode.oclIsUndefined() or self.routeCode.isNullFlavorUndefined()) implies (self.routeCode.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = self.routeCode.oclAsType(datatypes::CE) in \r\nvalue.codeSystem = \'2.16.840.1.113883.3.26.1.1\' and not value.code.oclIsUndefined())'"
 	 * @generated
 	 */
 	boolean validateMedicationActivityRouteCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -244,11 +244,11 @@ public interface MedicationActivity extends SubstanceAdministration {
 	 * <!-- begin-model-doc -->
 	 * (self.approachSiteCode->isEmpty() or self.approachSiteCode->exists(element | element.isNullFlavorUndefined())) implies (self.approachSiteCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
 	 * let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
-	 * not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))
+	 * value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined()))
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.approachSiteCode->isEmpty() or self.approachSiteCode->exists(element | element.isNullFlavorUndefined())) implies (self.approachSiteCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \r\nnot value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.approachSiteCode->isEmpty() or self.approachSiteCode->exists(element | element.isNullFlavorUndefined())) implies (self.approachSiteCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = element.oclAsType(datatypes::CD) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.96\' and not value.code.oclIsUndefined()))'"
 	 * @generated
 	 */
 	boolean validateMedicationActivityApproachSiteCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -311,11 +311,11 @@ public interface MedicationActivity extends SubstanceAdministration {
 	 * <!-- begin-model-doc -->
 	 * (self.administrationUnitCode.oclIsUndefined() or self.administrationUnitCode.isNullFlavorUndefined()) implies (self.administrationUnitCode.oclIsKindOf(datatypes::CE) and 
 	 * let value : datatypes::CE = self.administrationUnitCode.oclAsType(datatypes::CE) in 
-	 * value.codeSystem = '2.16.840.1.113883.3.26.1.1' and not value.code.oclIsUndefined())
+	 * not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined())
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.administrationUnitCode.oclIsUndefined() or self.administrationUnitCode.isNullFlavorUndefined()) implies (self.administrationUnitCode.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = self.administrationUnitCode.oclAsType(datatypes::CE) in \r\nvalue.codeSystem = \'2.16.840.1.113883.3.26.1.1\' and not value.code.oclIsUndefined())'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.administrationUnitCode.oclIsUndefined() or self.administrationUnitCode.isNullFlavorUndefined()) implies (self.administrationUnitCode.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = self.administrationUnitCode.oclAsType(datatypes::CE) in \r\nnot value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined())'"
 	 * @generated
 	 */
 	boolean validateMedicationActivityAdministrationUnitCode(DiagnosticChain diagnostics, Map<Object, Object> context);

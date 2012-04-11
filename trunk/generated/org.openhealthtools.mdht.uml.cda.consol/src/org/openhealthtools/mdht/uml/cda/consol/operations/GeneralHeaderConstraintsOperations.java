@@ -2660,7 +2660,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	 */
 	protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_DATA_ENTERER_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.dataEnterer->excluding(null).assignedEntity->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (code.oclIsKindOf(datatypes::CE) and "
 			+ "let value : datatypes::CE = code.oclAsType(datatypes::CE) in "
-			+ "not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))";
+			+ "value.codeSystem = '2.16.840.1.113883.6.101'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsDataEntererAssignedEntityCode(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Data Enterer Assigned Entity Code</em>}' invariant operation.
@@ -2679,7 +2679,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	 * <!-- begin-model-doc -->
 	 * self.dataEnterer->excluding(null).assignedEntity->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (code.oclIsKindOf(datatypes::CE) and 
 	 * let value : datatypes::CE = code.oclAsType(datatypes::CE) in 
-	 * not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))
+	 * value.codeSystem = '2.16.840.1.113883.6.101'))
 	 * @param generalHeaderConstraints The receiving '<em><b>General Header Constraints</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -2705,7 +2705,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			if (diagnostics != null) {
 				for (EObject eObject : (Collection<EObject>) oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.INFO,
+						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_DATA_ENTERER_ASSIGNED_ENTITY_CODE,
 						ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsDataEntererAssignedEntityCode"),
@@ -3970,7 +3970,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	 */
 	protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.legalAuthenticator->excluding(null).assignedEntity->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (code.oclIsKindOf(datatypes::CE) and "
 			+ "let value : datatypes::CE = code.oclAsType(datatypes::CE) in "
-			+ "not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))";
+			+ "value.codeSystem = '2.16.840.1.113883.6.101'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityCode(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Legal Authenticator Assigned Entity Code</em>}' invariant operation.
@@ -3989,7 +3989,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	 * <!-- begin-model-doc -->
 	 * self.legalAuthenticator->excluding(null).assignedEntity->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (code.oclIsKindOf(datatypes::CE) and 
 	 * let value : datatypes::CE = code.oclAsType(datatypes::CE) in 
-	 * not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))
+	 * value.codeSystem = '2.16.840.1.113883.6.101'))
 	 * @param generalHeaderConstraints The receiving '<em><b>General Header Constraints</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -4015,7 +4015,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			if (diagnostics != null) {
 				for (EObject eObject : (Collection<EObject>) oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.INFO,
+						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY_CODE,
 						ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsLegalAuthenticatorAssignedEntityCode"),
@@ -4599,7 +4599,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	 */
 	protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_AUTHENTICATOR_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.authenticator->excluding(null).assignedEntity->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (code.oclIsKindOf(datatypes::CE) and "
 			+ "let value : datatypes::CE = code.oclAsType(datatypes::CE) in "
-			+ "not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))";
+			+ "value.codeSystem = '2.16.840.1.113883.6.101'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsAuthenticatorAssignedEntityCode(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Authenticator Assigned Entity Code</em>}' invariant operation.
@@ -4618,7 +4618,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	 * <!-- begin-model-doc -->
 	 * self.authenticator->excluding(null).assignedEntity->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (code.oclIsKindOf(datatypes::CE) and 
 	 * let value : datatypes::CE = code.oclAsType(datatypes::CE) in 
-	 * not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))
+	 * value.codeSystem = '2.16.840.1.113883.6.101'))
 	 * @param generalHeaderConstraints The receiving '<em><b>General Header Constraints</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -4644,7 +4644,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			if (diagnostics != null) {
 				for (EObject eObject : (Collection<EObject>) oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.INFO,
+						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_AUTHENTICATOR_ASSIGNED_ENTITY_CODE,
 						ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsAuthenticatorAssignedEntityCode"),
@@ -5165,7 +5165,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			if (diagnostics != null) {
 				for (EObject eObject : (Collection<EObject>) oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.WARNING,
+						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_CODE,
 						ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCode"),
@@ -5622,7 +5622,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			if (diagnostics != null) {
 				for (EObject eObject : (Collection<EObject>) oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.WARNING,
+						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION_PROFICIENCY_LEVEL_CODE,
 						ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationProficiencyLevelCode"),
@@ -5681,7 +5681,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	 * <!-- begin-model-doc -->
 	 * self.recordTarget->excluding(null).patientRole->excluding(null).patient->excluding(null).languageCommunication->excluding(null)->reject((modeCode.oclIsUndefined() or modeCode.isNullFlavorUndefined()) implies (modeCode.oclIsKindOf(datatypes::CE) and 
 	 * let value : datatypes::CE = modeCode.oclAsType(datatypes::CE) in 
-	 * not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))
+	 * value.codeSystem = '2.16.840.1.113883.5.60' and (value.code = 'ESGN' or value.code = 'ESP' or value.code = 'EWR' or value.code = 'RSGN' or value.code = 'RSP' or value.code = 'RWR')))
 	 * @param generalHeaderConstraints The receiving '<em><b>General Header Constraints</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -5706,7 +5706,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			if (diagnostics != null) {
 				for (EObject eObject : (Collection<EObject>) oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.INFO,
+						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION_MODE_CODE,
 						ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationModeCode"),
@@ -5788,7 +5788,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			if (diagnostics != null) {
 				for (EObject eObject : (Collection<EObject>) oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.WARNING,
+						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_BIRTH_TIME,
 						ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTime"),
@@ -5806,7 +5806,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	 * <!-- begin-model-doc -->
 	 * self.recordTarget->excluding(null).patientRole->excluding(null).patient->excluding(null)->reject((ethnicGroupCode.oclIsUndefined() or ethnicGroupCode.isNullFlavorUndefined()) implies (ethnicGroupCode.oclIsKindOf(datatypes::CE) and 
 	 * let value : datatypes::CE = ethnicGroupCode.oclAsType(datatypes::CE) in 
-	 * not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))
+	 * value.codeSystem = '2.16.840.1.113883.6.238' and not value.code.oclIsUndefined()))
 	 * @param generalHeaderConstraints The receiving '<em><b>General Header Constraints</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -5832,7 +5832,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			if (diagnostics != null) {
 				for (EObject eObject : (Collection<EObject>) oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.INFO,
+						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_ETHNIC_GROUP_CODE,
 						ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode"),
@@ -5916,7 +5916,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			if (diagnostics != null) {
 				for (EObject eObject : (Collection<EObject>) oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
+						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_MARITAL_STATUS_CODE,
 						ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsRecordTargetPatientRolePatientMaritalStatusCode"),
@@ -5975,7 +5975,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	 * <!-- begin-model-doc -->
 	 * self.recordTarget->excluding(null).patientRole->excluding(null).patient->excluding(null)->reject((raceCode.oclIsUndefined() or raceCode.isNullFlavorUndefined()) implies (raceCode.oclIsKindOf(datatypes::CE) and 
 	 * let value : datatypes::CE = raceCode.oclAsType(datatypes::CE) in 
-	 * value.codeSystem = '2.16.840.1.113883.6.238' and not value.code.oclIsUndefined()))
+	 * not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))
 	 * @param generalHeaderConstraints The receiving '<em><b>General Header Constraints</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -6000,7 +6000,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			if (diagnostics != null) {
 				for (EObject eObject : (Collection<EObject>) oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
+						Diagnostic.INFO,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_RACE_CODE,
 						ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode"),
@@ -6018,7 +6018,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	 * <!-- begin-model-doc -->
 	 * self.recordTarget->excluding(null).patientRole->excluding(null).patient->excluding(null)->reject((religiousAffiliationCode.oclIsUndefined() or religiousAffiliationCode.isNullFlavorUndefined()) implies (religiousAffiliationCode.oclIsKindOf(datatypes::CE) and 
 	 * let value : datatypes::CE = religiousAffiliationCode.oclAsType(datatypes::CE) in 
-	 * value.codeSystem = '2.16.840.1.113883.5.1076' and not value.code.oclIsUndefined()))
+	 * not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))
 	 * @param generalHeaderConstraints The receiving '<em><b>General Header Constraints</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -6043,7 +6043,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			if (diagnostics != null) {
 				for (EObject eObject : (Collection<EObject>) oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.ERROR,
+						Diagnostic.INFO,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_RELIGIOUS_AFFILIATION_CODE,
 						ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsRecordTargetPatientRolePatientReligiousAffiliationCode"),
@@ -6524,7 +6524,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	 */
 	protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION_MODE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.recordTarget->excluding(null).patientRole->excluding(null).patient->excluding(null).languageCommunication->excluding(null)->reject((modeCode.oclIsUndefined() or modeCode.isNullFlavorUndefined()) implies (modeCode.oclIsKindOf(datatypes::CE) and "
 			+ "let value : datatypes::CE = modeCode.oclAsType(datatypes::CE) in "
-			+ "not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))";
+			+ "value.codeSystem = '2.16.840.1.113883.5.60' and (value.code = 'ESGN' or value.code = 'ESP' or value.code = 'EWR' or value.code = 'RSGN' or value.code = 'RSP' or value.code = 'RWR')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationModeCode(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Language Communication Mode Code</em>}' invariant operation.
@@ -6824,7 +6824,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	 */
 	protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_ETHNIC_GROUP_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.recordTarget->excluding(null).patientRole->excluding(null).patient->excluding(null)->reject((ethnicGroupCode.oclIsUndefined() or ethnicGroupCode.isNullFlavorUndefined()) implies (ethnicGroupCode.oclIsKindOf(datatypes::CE) and "
 			+ "let value : datatypes::CE = ethnicGroupCode.oclAsType(datatypes::CE) in "
-			+ "not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))";
+			+ "value.codeSystem = '2.16.840.1.113883.6.238' and not value.code.oclIsUndefined()))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Ethnic Group Code</em>}' invariant operation.
@@ -6912,7 +6912,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	 */
 	protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_RACE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.recordTarget->excluding(null).patientRole->excluding(null).patient->excluding(null)->reject((raceCode.oclIsUndefined() or raceCode.isNullFlavorUndefined()) implies (raceCode.oclIsKindOf(datatypes::CE) and "
 			+ "let value : datatypes::CE = raceCode.oclAsType(datatypes::CE) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.238' and not value.code.oclIsUndefined()))";
+			+ "not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Race Code</em>}' invariant operation.
@@ -6935,7 +6935,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	 */
 	protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_RELIGIOUS_AFFILIATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.recordTarget->excluding(null).patientRole->excluding(null).patient->excluding(null)->reject((religiousAffiliationCode.oclIsUndefined() or religiousAffiliationCode.isNullFlavorUndefined()) implies (religiousAffiliationCode.oclIsKindOf(datatypes::CE) and "
 			+ "let value : datatypes::CE = religiousAffiliationCode.oclAsType(datatypes::CE) in "
-			+ "value.codeSystem = '2.16.840.1.113883.5.1076' and not value.code.oclIsUndefined()))";
+			+ "not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientReligiousAffiliationCode(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Religious Affiliation Code</em>}' invariant operation.
@@ -7660,7 +7660,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	 * <!-- begin-model-doc -->
 	 * self.informant->excluding(null).assignedEntity->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (code.oclIsKindOf(datatypes::CE) and 
 	 * let value : datatypes::CE = code.oclAsType(datatypes::CE) in 
-	 * not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))
+	 * value.codeSystem = '2.16.840.1.113883.6.101'))
 	 * @param generalHeaderConstraints The receiving '<em><b>General Header Constraints</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -7686,7 +7686,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 			if (diagnostics != null) {
 				for (EObject eObject : (Collection<EObject>) oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
-						Diagnostic.INFO,
+						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_INFORMANT_ASSIGNED_ENTITY_CODE,
 						ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsInformantAssignedEntityCode"),
@@ -8142,7 +8142,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	 */
 	protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_INFORMANT_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.informant->excluding(null).assignedEntity->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (code.oclIsKindOf(datatypes::CE) and "
 			+ "let value : datatypes::CE = code.oclAsType(datatypes::CE) in "
-			+ "not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))";
+			+ "value.codeSystem = '2.16.840.1.113883.6.101'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsInformantAssignedEntityCode(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Informant Assigned Entity Code</em>}' invariant operation.
