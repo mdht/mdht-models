@@ -122,15 +122,6 @@ public class HistoryAndPhysicalNoteImpl extends GeneralHeaderConstraintsImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHistoryAndPhysicalNoteCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteCode(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateHistoryAndPhysicalNoteInFulfillmentOf(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HistoryAndPhysicalNoteOperations.validateHistoryAndPhysicalNoteInFulfillmentOf(
@@ -654,6 +645,16 @@ public class HistoryAndPhysicalNoteImpl extends GeneralHeaderConstraintsImpl imp
 	 */
 	public VitalSignsSectionEntriesOptional getVitalSignsSectionEntriesOptional() {
 		return HistoryAndPhysicalNoteOperations.getVitalSignsSectionEntriesOptional(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateGeneralHeaderConstraintsCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HistoryAndPhysicalNoteOperations.validateGeneralHeaderConstraintsCode(this, diagnostics, context);
 	}
 
 	/**

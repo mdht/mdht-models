@@ -94,15 +94,6 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProgressNoteCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProgressNoteOperations.validateProgressNoteCode(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateProgressNoteDocumentationOf(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProgressNoteOperations.validateProgressNoteDocumentationOf(this, diagnostics, context);
 	}
@@ -447,6 +438,16 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	 */
 	public VitalSignsSectionEntriesOptional getVitalSignsSectionEntriesOptional() {
 		return ProgressNoteOperations.getVitalSignsSectionEntriesOptional(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateGeneralHeaderConstraintsCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProgressNoteOperations.validateGeneralHeaderConstraintsCode(this, diagnostics, context);
 	}
 
 	/**
