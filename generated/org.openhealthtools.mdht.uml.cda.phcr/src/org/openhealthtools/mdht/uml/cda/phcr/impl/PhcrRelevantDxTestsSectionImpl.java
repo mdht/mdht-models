@@ -58,6 +58,15 @@ public class PhcrRelevantDxTestsSectionImpl extends ResultsSectionImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validatePhcrRelevantDxTestsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PhcrRelevantDxTestsSectionOperations.validatePhcrRelevantDxTestsSectionCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validatePhcrRelevantDxTestsSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PhcrRelevantDxTestsSectionOperations.validatePhcrRelevantDxTestsSectionTitle(this, diagnostics, context);
 	}
@@ -133,16 +142,6 @@ public class PhcrRelevantDxTestsSectionImpl extends ResultsSectionImpl implement
 	@Override
 	public boolean validateResultsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PhcrRelevantDxTestsSectionOperations.validateResultsSectionTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateResultsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhcrRelevantDxTestsSectionOperations.validateResultsSectionCode(this, diagnostics, context);
 	}
 
 	/**

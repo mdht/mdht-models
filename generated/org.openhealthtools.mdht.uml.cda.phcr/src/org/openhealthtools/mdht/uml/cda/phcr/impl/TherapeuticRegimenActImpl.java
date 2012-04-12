@@ -111,6 +111,15 @@ public class TherapeuticRegimenActImpl extends ActImpl implements TherapeuticReg
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateTherapeuticRegimenActStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return TherapeuticRegimenActOperations.validateTherapeuticRegimenActStatusCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateTherapeuticRegimenActTreatmentGivenSubstanceAdministration(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return TherapeuticRegimenActOperations.validateTherapeuticRegimenActTreatmentGivenSubstanceAdministration(this, diagnostics, context);
 	}

@@ -108,6 +108,15 @@ public class PatientConditionDeceasedObservationImpl extends ObservationImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validatePatientConditionDeceasedObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PatientConditionDeceasedObservationOperations.validatePatientConditionDeceasedObservationValueP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validatePatientConditionDeceasedObservationEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientConditionDeceasedObservationOperations.validatePatientConditionDeceasedObservationEffectiveTime(this, diagnostics, context);
 	}

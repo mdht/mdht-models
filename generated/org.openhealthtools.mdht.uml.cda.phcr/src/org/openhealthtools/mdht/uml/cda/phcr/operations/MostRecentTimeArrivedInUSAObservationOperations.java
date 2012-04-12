@@ -229,8 +229,8 @@ public class MostRecentTimeArrivedInUSAObservationOperations extends ClinicalSta
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
-	 * let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in (
-	 * value.code = 'completed'))
+	 * let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
+	 * value.code = 'completed')
 	 * @param mostRecentTimeArrivedInUSAObservation The receiving '<em><b>Most Recent Time Arrived In USA Observation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -309,8 +309,8 @@ public class MostRecentTimeArrivedInUSAObservationOperations extends ClinicalSta
 	 * @ordered
 	 */
 	protected static final String VALIDATE_MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in ("+
-"value.code = '55209-1' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = '55209-1' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMostRecentTimeArrivedInUSAObservationCode(MostRecentTimeArrivedInUSAObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Most Recent Time Arrived In USA Observation Code</em>}' invariant operation.
@@ -331,8 +331,8 @@ public class MostRecentTimeArrivedInUSAObservationOperations extends ClinicalSta
 	 * @ordered
 	 */
 	protected static final String VALIDATE_MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "+
-"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in ("+
-"value.code = 'completed'))";
+"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in "+
+"value.code = 'completed')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMostRecentTimeArrivedInUSAObservationStatusCode(MostRecentTimeArrivedInUSAObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Most Recent Time Arrived In USA Observation Status Code</em>}' invariant operation.
@@ -369,8 +369,8 @@ public class MostRecentTimeArrivedInUSAObservationOperations extends ClinicalSta
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
-	 * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (
-	 * value.code = '55209-1' and value.codeSystem = '2.16.840.1.113883.6.1'))
+	 * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+	 * value.code = '55209-1' and value.codeSystem = '2.16.840.1.113883.6.1')
 	 * @param mostRecentTimeArrivedInUSAObservation The receiving '<em><b>Most Recent Time Arrived In USA Observation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.

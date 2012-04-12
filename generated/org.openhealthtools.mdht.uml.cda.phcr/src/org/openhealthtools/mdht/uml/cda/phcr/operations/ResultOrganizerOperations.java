@@ -42,6 +42,7 @@ import org.openhealthtools.mdht.uml.cda.phcr.util.PhcrValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.ResultOrganizer#validatePHCRResultOrganizerMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate PHCR Result Organizer Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.ResultOrganizer#validatePHCRResultOrganizerId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate PHCR Result Organizer Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.ResultOrganizer#validatePHCRResultOrganizerCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate PHCR Result Organizer Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.ResultOrganizer#validatePHCRResultOrganizerStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate PHCR Result Organizer Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.ResultOrganizer#validatePHCRResultOrganizerEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate PHCR Result Organizer Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.ResultOrganizer#validatePHCRResultOrganizerResultObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate PHCR Result Organizer Result Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.ResultOrganizer#validatePHCRResultOrganizerSpecimenCollectionProcedure(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate PHCR Result Organizer Specimen Collection Procedure</em>}</li>
@@ -293,6 +294,65 @@ public class ResultOrganizerOperations extends org.openhealthtools.mdht.uml.cda.
 	}
 
 	/**
+	 * The cached OCL expression body for the '{@link #validatePHCRResultOrganizerStatusCode(ResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate PHCR Result Organizer Status Code</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validatePHCRResultOrganizerStatusCode(ResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_PHCR_RESULT_ORGANIZER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validatePHCRResultOrganizerStatusCode(ResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate PHCR Result Organizer Status Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validatePHCRResultOrganizerStatusCode(ResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Constraint VALIDATE_PHCR_RESULT_ORGANIZER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())
+	 * @param resultOrganizer The receiving '<em><b>Result Organizer</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	
+	public static  boolean validatePHCRResultOrganizerStatusCode(ResultOrganizer resultOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (VALIDATE_PHCR_RESULT_ORGANIZER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(PhcrPackage.Literals.RESULT_ORGANIZER);
+			try {
+				VALIDATE_PHCR_RESULT_ORGANIZER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHCR_RESULT_ORGANIZER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_PHCR_RESULT_ORGANIZER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(resultOrganizer)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 PhcrValidator.DIAGNOSTIC_SOURCE,
+						 PhcrValidator.RESULT_ORGANIZER__PHCR_RESULT_ORGANIZER_STATUS_CODE,
+						 PhcrPlugin.INSTANCE.getString("PHCRResultOrganizerStatusCode"),
+						 new Object [] { resultOrganizer }));
+			}
+			return false;
+		}
+		return true;
+	}
+
+	/**
 	 * The cached OCL expression body for the '{@link #validatePHCRResultOrganizerEffectiveTime(ResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate PHCR Result Organizer Effective Time</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -300,7 +360,7 @@ public class ResultOrganizerOperations extends org.openhealthtools.mdht.uml.cda.
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PHCR_RESULT_ORGANIZER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())";
+	protected static final String VALIDATE_PHCR_RESULT_ORGANIZER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.effectiveTime.oclIsUndefined()";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePHCRResultOrganizerEffectiveTime(ResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate PHCR Result Organizer Effective Time</em>}' invariant operation.
@@ -316,7 +376,7 @@ public class ResultOrganizerOperations extends org.openhealthtools.mdht.uml.cda.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())
+	 * not self.effectiveTime.oclIsUndefined()
 	 * @param resultOrganizer The receiving '<em><b>Result Organizer</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -495,7 +555,7 @@ public class ResultOrganizerOperations extends org.openhealthtools.mdht.uml.cda.
 	public static  EList<ResultObservation> getPHCRResultObservations(ResultOrganizer resultOrganizer) {
 		if (GET_PHCR_RESULT_OBSERVATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(PhcrPackage.Literals.RESULT_ORGANIZER, PhcrPackage.Literals.RESULT_ORGANIZER.getEAllOperations().get(67));
+			helper.setOperationContext(PhcrPackage.Literals.RESULT_ORGANIZER, PhcrPackage.Literals.RESULT_ORGANIZER.getEAllOperations().get(71));
 			try {
 				GET_PHCR_RESULT_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_PHCR_RESULT_OBSERVATIONS__EOCL_EXP);
 			}
@@ -541,7 +601,7 @@ public class ResultOrganizerOperations extends org.openhealthtools.mdht.uml.cda.
 	public static  SpecimenCollectionProcedure getSpecimenCollectionProcedure(ResultOrganizer resultOrganizer) {
 		if (GET_SPECIMEN_COLLECTION_PROCEDURE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(PhcrPackage.Literals.RESULT_ORGANIZER, PhcrPackage.Literals.RESULT_ORGANIZER.getEAllOperations().get(68));
+			helper.setOperationContext(PhcrPackage.Literals.RESULT_ORGANIZER, PhcrPackage.Literals.RESULT_ORGANIZER.getEAllOperations().get(72));
 			try {
 				GET_SPECIMEN_COLLECTION_PROCEDURE__EOCL_QRY = helper.createQuery(GET_SPECIMEN_COLLECTION_PROCEDURE__EOCL_EXP);
 			}
@@ -619,8 +679,8 @@ public class ResultOrganizerOperations extends org.openhealthtools.mdht.uml.cda.
 	 * @ordered
 	 */
 	protected static final String VALIDATE_RESULT_ORGANIZER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "+
-"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in ("+
-"value.code = 'completed'))";
+"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in "+
+"value.code = 'completed')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateResultOrganizerStatusCode(ResultOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Status Code</em>}' invariant operation.
@@ -637,8 +697,8 @@ public class ResultOrganizerOperations extends org.openhealthtools.mdht.uml.cda.
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
-	 * let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in (
-	 * value.code = 'completed'))
+	 * let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
+	 * value.code = 'completed')
 	 * @param resultOrganizer The receiving '<em><b>Result Organizer</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.

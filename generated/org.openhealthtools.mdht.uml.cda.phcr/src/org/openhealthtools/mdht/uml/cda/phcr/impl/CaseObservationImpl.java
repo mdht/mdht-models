@@ -93,15 +93,6 @@ public class CaseObservationImpl extends ProblemObservationImpl implements CaseO
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProblemObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CaseObservationOperations.validateProblemObservationCode(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateCaseObservationEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CaseObservationOperations.validateCaseObservationEffectiveTime(this, diagnostics, context);
 	}
@@ -165,6 +156,24 @@ public class CaseObservationImpl extends ProblemObservationImpl implements CaseO
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateCaseObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CaseObservationOperations.validateCaseObservationCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCaseObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CaseObservationOperations.validateCaseObservationStatusCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EList<SignsAndSymptomsObservation> getSignsAndSymptomsObservations() {
 		return CaseObservationOperations.getSignsAndSymptomsObservations(this);
 	}
@@ -177,16 +186,6 @@ public class CaseObservationImpl extends ProblemObservationImpl implements CaseO
 	@Override
 	public boolean validateProblemObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CaseObservationOperations.validateProblemObservationTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateProblemObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CaseObservationOperations.validateProblemObservationStatusCode(this, diagnostics, context);
 	}
 
 	/**

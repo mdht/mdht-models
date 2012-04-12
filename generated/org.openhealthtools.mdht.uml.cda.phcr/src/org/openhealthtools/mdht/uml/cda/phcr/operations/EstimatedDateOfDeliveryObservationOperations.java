@@ -172,8 +172,8 @@ public class EstimatedDateOfDeliveryObservationOperations extends ClinicalStatem
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
-	 * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (
-	 * value.code = '11778-8' and value.codeSystem = '2.16.840.1.113883.6.1'))
+	 * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+	 * value.code = '11778-8' and value.codeSystem = '2.16.840.1.113883.6.1')
 	 * @param estimatedDateOfDeliveryObservation The receiving '<em><b>Estimated Date Of Delivery Observation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -235,8 +235,8 @@ public class EstimatedDateOfDeliveryObservationOperations extends ClinicalStatem
 	 * @ordered
 	 */
 	protected static final String VALIDATE_ESTIMATED_DATE_OF_DELIVERY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in ("+
-"value.code = '11778-8' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = '11778-8' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateEstimatedDateOfDeliveryObservationCode(EstimatedDateOfDeliveryObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Estimated Date Of Delivery Observation Code</em>}' invariant operation.
@@ -294,8 +294,8 @@ public class EstimatedDateOfDeliveryObservationOperations extends ClinicalStatem
 	 * @ordered
 	 */
 	protected static final String VALIDATE_ESTIMATED_DATE_OF_DELIVERY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "+
-"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in ("+
-"value.code = 'completed'))";
+"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in "+
+"value.code = 'completed')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateEstimatedDateOfDeliveryObservationStatusCode(EstimatedDateOfDeliveryObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Estimated Date Of Delivery Observation Status Code</em>}' invariant operation.
@@ -312,8 +312,8 @@ public class EstimatedDateOfDeliveryObservationOperations extends ClinicalStatem
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
-	 * let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in (
-	 * value.code = 'completed'))
+	 * let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
+	 * value.code = 'completed')
 	 * @param estimatedDateOfDeliveryObservation The receiving '<em><b>Estimated Date Of Delivery Observation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.

@@ -99,6 +99,15 @@ public class RaceObservationImpl extends ObservationImpl implements RaceObservat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateRaceObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RaceObservationOperations.validateRaceObservationValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public RaceObservation init() {
     	CDAUtil.init(this);
     	return this;

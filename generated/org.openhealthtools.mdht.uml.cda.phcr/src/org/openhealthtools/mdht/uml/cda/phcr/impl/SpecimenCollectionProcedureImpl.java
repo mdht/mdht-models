@@ -13,16 +13,11 @@ package org.openhealthtools.mdht.uml.cda.phcr.impl;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
-
 import org.openhealthtools.mdht.uml.cda.impl.ProcedureImpl;
-
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrPackage;
 import org.openhealthtools.mdht.uml.cda.phcr.SpecimenCollectionProcedure;
-
 import org.openhealthtools.mdht.uml.cda.phcr.operations.SpecimenCollectionProcedureOperations;
-
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**

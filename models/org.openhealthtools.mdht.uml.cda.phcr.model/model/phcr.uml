@@ -228,18 +228,18 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qmunoNWKEeClfZ1QFvr8fw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qmunodWKEeClfZ1QFvr8fw"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_5vlPkNM5EeCbJdgmSYxI0g" name="phcrRelevantDxTestsSection " type="_2dxgkNM5EeCbJdgmSYxI0g" association="_5vlPktM5EeCbJdgmSYxI0g">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5vlPkdM5EeCbJdgmSYxI0g"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_UGQUQNWeEeCFBrheYXatQw" name="immunizationsSection" association="_UGaFQNWeEeCFBrheYXatQw">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-immunizations.uml#_CinbMHDPEd6eItyqb1FoWg"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UGQUQdWeEeCFBrheYXatQw"/>
-      </ownedAttribute>
       <ownedAttribute xmi:id="_re3KwOrZEeCRnaXEDkDPMQ" name="code" visibility="private" aggregation="composite">
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_re3KwerZEeCRnaXEDkDPMQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_re3KwurZEeCRnaXEDkDPMQ" value="1"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jS4QEAIEd6wZe6nFLrjsw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_K5PtQIQVEeGRypoUd5okyA" name="phcrRelevantDxTestsSection" type="_2dxgkNM5EeCbJdgmSYxI0g" association="_K5PtQoQVEeGRypoUd5okyA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_K5PtQYQVEeGRypoUd5okyA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_QSzL4IQVEeGRypoUd5okyA" name="immunizationsSection" association="_QSzL4oQVEeGRypoUd5okyA">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-immunizations.uml#_CinbMHDPEd6eItyqb1FoWg"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QSzL4YQVEeGRypoUd5okyA"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_Fw7f4MgpEeCI5ZpfyBisiQ" name="PhcrSocialHistorySection">
@@ -649,7 +649,7 @@
     <packagedElement xmi:type="uml:Association" xmi:id="_KHZoAtM5EeCbJdgmSYxI0g" memberEnd="_KHZoANM5EeCbJdgmSYxI0g _KHZoA9M5EeCbJdgmSYxI0g">
       <ownedEnd xmi:id="_KHZoA9M5EeCbJdgmSYxI0g" type="_6PmAIcgnEeCI5ZpfyBisiQ" association="_KHZoAtM5EeCbJdgmSYxI0g"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_2dxgkNM5EeCbJdgmSYxI0g" name="PhcrRelevantDxTestsSection ">
+    <packagedElement xmi:type="uml:Class" xmi:id="_2dxgkNM5EeCbJdgmSYxI0g" name="PhcrRelevantDxTestsSection">
       <generalization xmi:id="_IwNZ4PNqEeCOm7Y48UO5Tg">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-results.uml#_7TVToIiAEd66cKocspyVOg"/>
       </generalization>
@@ -680,9 +680,6 @@
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-results.uml#_JTQaQBtBEd-vGNAsDUJvgw"/>
       </ownedAttribute>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_5vlPktM5EeCbJdgmSYxI0g" memberEnd="_5vlPkNM5EeCbJdgmSYxI0g _5vlPk9M5EeCbJdgmSYxI0g">
-      <ownedEnd xmi:id="_5vlPk9M5EeCbJdgmSYxI0g" type="_6PmAIcgnEeCI5ZpfyBisiQ" association="_5vlPktM5EeCbJdgmSYxI0g"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_h_hhcNM-EeCbJdgmSYxI0g" name="PatientConditionAliveObservation">
       <generalization xmi:id="_h_hhcdM-EeCbJdgmSYxI0g">
@@ -878,7 +875,7 @@
           <body>Shall contain consumable</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_FEco0DryEeGN27-qWOHvLQ" name="negationInd" constrainedElement="_XOKZ4NStEeC18pmrrt-Mbg">
+      <ownedRule xmi:id="_FEco0DryEeGN27-qWOHvLQ" name="TreatmentGivenNegationInd" constrainedElement="_XOKZ4NStEeC18pmrrt-Mbg">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_RJXzQDryEeGN27-qWOHvLQ">
           <language>Analysis</language>
           <language>OCL</language>
@@ -934,7 +931,7 @@
           <body>Shall contain consumable</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_c4r6EDryEeGN27-qWOHvLQ" name="negationInd" constrainedElement="_NbgssNSwEeC18pmrrt-Mbg">
+      <ownedRule xmi:id="_c4r6EDryEeGN27-qWOHvLQ" name="TreatmentNotGivenNegationInd" constrainedElement="_NbgssNSwEeC18pmrrt-Mbg">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_f-a78DryEeGN27-qWOHvLQ">
           <language>Analysis</language>
           <language>OCL</language>
@@ -1090,9 +1087,6 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_VZ2kwtWLEeClfZ1QFvr8fw" memberEnd="_VZ2kwNWLEeClfZ1QFvr8fw _VZ2kw9WLEeClfZ1QFvr8fw">
       <ownedEnd xmi:id="_VZ2kw9WLEeClfZ1QFvr8fw" type="_2SAeUMqaEeCRBIG_Gkv9FQ" association="_VZ2kwtWLEeClfZ1QFvr8fw"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_UGaFQNWeEeCFBrheYXatQw" memberEnd="_UGQUQNWeEeCFBrheYXatQw _UGaFQdWeEeCFBrheYXatQw">
-      <ownedEnd xmi:id="_UGaFQdWeEeCFBrheYXatQw" type="_6PmAIcgnEeCI5ZpfyBisiQ" association="_UGaFQNWeEeCFBrheYXatQw"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_P4VyEu33EeC3U4HbCHnHkw" memberEnd="_P4VyEO33EeC3U4HbCHnHkw _P4VyE-33EeC3U4HbCHnHkw">
       <ownedEnd xmi:id="_P4VyE-33EeC3U4HbCHnHkw" type="_84uJEMqZEeCRBIG_Gkv9FQ" association="_P4VyEu33EeC3U4HbCHnHkw"/>
@@ -1324,6 +1318,12 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WG92cTMiEeGXS8s8x7j2Fg" value="1"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_c-D3cEo8Ed6c3qsAxlFHaQ"/>
       </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_K5PtQoQVEeGRypoUd5okyA" memberEnd="_K5PtQIQVEeGRypoUd5okyA _K5PtQ4QVEeGRypoUd5okyA">
+      <ownedEnd xmi:id="_K5PtQ4QVEeGRypoUd5okyA" type="_6PmAIcgnEeCI5ZpfyBisiQ" association="_K5PtQoQVEeGRypoUd5okyA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_QSzL4oQVEeGRypoUd5okyA" memberEnd="_QSzL4IQVEeGRypoUd5okyA _QSzL44QVEeGRypoUd5okyA">
+      <ownedEnd xmi:id="_QSzL44QVEeGRypoUd5okyA" type="_6PmAIcgnEeCI5ZpfyBisiQ" association="_QSzL4oQVEeGRypoUd5okyA"/>
     </packagedElement>
     <profileApplication xmi:id="_6MwumcgnEeCI5ZpfyBisiQ">
       <eAnnotations xmi:id="_6MwumsgnEeCI5ZpfyBisiQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -1682,14 +1682,14 @@
     <ruleId>CONF:643</ruleId>
     <ruleId>CONF:609</ruleId>
   </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_r9wE8NWKEeClfZ1QFvr8fw" severity="WARNING" base_Association="_5vlPktM5EeCbJdgmSYxI0g">
+  <CDA:AssociationValidation xmi:id="_r9wE8NWKEeClfZ1QFvr8fw" severity="WARNING">
     <ruleId>CONF:608</ruleId>
     <ruleId>CONF:743</ruleId>
   </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_GEdvINWLEeClfZ1QFvr8fw" base_Property="_E91eQNWLEeClfZ1QFvr8fw">
     <ruleId>CONF:599</ruleId>
   </CDA:PropertyValidation>
-  <CDA:AssociationValidation xmi:id="_WAS_ENWeEeCFBrheYXatQw" severity="INFO" base_Association="_UGaFQNWeEeCFBrheYXatQw">
+  <CDA:AssociationValidation xmi:id="_WAS_ENWeEeCFBrheYXatQw" severity="INFO">
     <ruleId>CONF:1285</ruleId>
     <ruleId>CONF:1286</ruleId>
   </CDA:AssociationValidation>
@@ -2236,4 +2236,7 @@
   <CDA:PropertyValidation xmi:id="_kdJ7oDrzEeGN27-qWOHvLQ" base_Property="_cqQnEDrzEeGN27-qWOHvLQ">
     <ruleId>CONF:1921</ruleId>
   </CDA:PropertyValidation>
+  <CDA:AssociationValidation xmi:id="_BEHbMIQVEeGRypoUd5okyA" severity="WARNING"/>
+  <CDA:AssociationValidation xmi:id="_L5UqMIQVEeGRypoUd5okyA" severity="WARNING" base_Association="_K5PtQoQVEeGRypoUd5okyA"/>
+  <CDA:AssociationValidation xmi:id="_Q7VLgIQVEeGRypoUd5okyA" severity="INFO" base_Association="_QSzL4oQVEeGRypoUd5okyA"/>
 </xmi:XMI>

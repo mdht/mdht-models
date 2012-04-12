@@ -42,6 +42,7 @@ import org.openhealthtools.mdht.uml.cda.phcr.util.PhcrValidator;
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrSocialHistorySection#validatePhcrSocialHistorySectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Social History Section Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrSocialHistorySection#validatePhcrSocialHistorySectionTitle(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Social History Section Title</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrSocialHistorySection#validatePhcrSocialHistorySectionText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Social History Section Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrSocialHistorySection#validatePhcrSocialHistorySectionGeotemporalHistoryObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Social History Section Geotemporal History Observation</em>}</li>
@@ -55,7 +56,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.util.PhcrValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrSocialHistorySection#getOccupationObservations() <em>Get Occupation Observations</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrSocialHistorySection#getPregnancyObservations() <em>Get Pregnancy Observations</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrSocialHistorySection#validateSocialHistorySectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section Template Id</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrSocialHistorySection#validateSocialHistorySectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section Code</em>}</li>
  * </ul>
  * </p>
  *
@@ -69,6 +69,69 @@ public class PhcrSocialHistorySectionOperations extends SocialHistorySectionOper
 	 */
 	protected PhcrSocialHistorySectionOperations() {
 		super();
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validatePhcrSocialHistorySectionCode(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Social History Section Code</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validatePhcrSocialHistorySectionCode(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
+"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "+
+"value.code = '29762-2' and value.codeSystem = '2.16.840.1.113883.6.1')";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validatePhcrSocialHistorySectionCode(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Social History Section Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validatePhcrSocialHistorySectionCode(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Constraint VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
+	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+	 * value.code = '29762-2' and value.codeSystem = '2.16.840.1.113883.6.1')
+	 * @param phcrSocialHistorySection The receiving '<em><b>Social History Section</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	
+	public static  boolean validatePhcrSocialHistorySectionCode(PhcrSocialHistorySection phcrSocialHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(PhcrPackage.Literals.PHCR_SOCIAL_HISTORY_SECTION);
+			try {
+				VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(phcrSocialHistorySection)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 PhcrValidator.DIAGNOSTIC_SOURCE,
+						 PhcrValidator.PHCR_SOCIAL_HISTORY_SECTION__PHCR_SOCIAL_HISTORY_SECTION_CODE,
+						 PhcrPlugin.INSTANCE.getString("PhcrSocialHistorySectionCode"),
+						 new Object [] { phcrSocialHistorySection }));
+			}
+			return false;
+		}
+		return true;
 	}
 
 	/**
@@ -502,7 +565,7 @@ public class PhcrSocialHistorySectionOperations extends SocialHistorySectionOper
 	public static  EList<GeotemporalHistoryObservation> getGeotemporalHistoryObservations(PhcrSocialHistorySection phcrSocialHistorySection) {
 		if (GET_GEOTEMPORAL_HISTORY_OBSERVATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(PhcrPackage.Literals.PHCR_SOCIAL_HISTORY_SECTION, PhcrPackage.Literals.PHCR_SOCIAL_HISTORY_SECTION.getEAllOperations().get(68));
+			helper.setOperationContext(PhcrPackage.Literals.PHCR_SOCIAL_HISTORY_SECTION, PhcrPackage.Literals.PHCR_SOCIAL_HISTORY_SECTION.getEAllOperations().get(75));
 			try {
 				GET_GEOTEMPORAL_HISTORY_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_GEOTEMPORAL_HISTORY_OBSERVATIONS__EOCL_EXP);
 			}
@@ -548,7 +611,7 @@ public class PhcrSocialHistorySectionOperations extends SocialHistorySectionOper
 	public static  MostRecentTimeArrivedInUSAObservation getMostRecentTimeArrivedInUSAObservation(PhcrSocialHistorySection phcrSocialHistorySection) {
 		if (GET_MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(PhcrPackage.Literals.PHCR_SOCIAL_HISTORY_SECTION, PhcrPackage.Literals.PHCR_SOCIAL_HISTORY_SECTION.getEAllOperations().get(69));
+			helper.setOperationContext(PhcrPackage.Literals.PHCR_SOCIAL_HISTORY_SECTION, PhcrPackage.Literals.PHCR_SOCIAL_HISTORY_SECTION.getEAllOperations().get(76));
 			try {
 				GET_MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION__EOCL_QRY = helper.createQuery(GET_MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION__EOCL_EXP);
 			}
@@ -592,7 +655,7 @@ public class PhcrSocialHistorySectionOperations extends SocialHistorySectionOper
 	public static  EList<RaceObservation> getRaceObservations(PhcrSocialHistorySection phcrSocialHistorySection) {
 		if (GET_RACE_OBSERVATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(PhcrPackage.Literals.PHCR_SOCIAL_HISTORY_SECTION, PhcrPackage.Literals.PHCR_SOCIAL_HISTORY_SECTION.getEAllOperations().get(70));
+			helper.setOperationContext(PhcrPackage.Literals.PHCR_SOCIAL_HISTORY_SECTION, PhcrPackage.Literals.PHCR_SOCIAL_HISTORY_SECTION.getEAllOperations().get(77));
 			try {
 				GET_RACE_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_RACE_OBSERVATIONS__EOCL_EXP);
 			}
@@ -638,7 +701,7 @@ public class PhcrSocialHistorySectionOperations extends SocialHistorySectionOper
 	public static  EList<OccupationObservation> getOccupationObservations(PhcrSocialHistorySection phcrSocialHistorySection) {
 		if (GET_OCCUPATION_OBSERVATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(PhcrPackage.Literals.PHCR_SOCIAL_HISTORY_SECTION, PhcrPackage.Literals.PHCR_SOCIAL_HISTORY_SECTION.getEAllOperations().get(71));
+			helper.setOperationContext(PhcrPackage.Literals.PHCR_SOCIAL_HISTORY_SECTION, PhcrPackage.Literals.PHCR_SOCIAL_HISTORY_SECTION.getEAllOperations().get(78));
 			try {
 				GET_OCCUPATION_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_OCCUPATION_OBSERVATIONS__EOCL_EXP);
 			}
@@ -684,7 +747,7 @@ public class PhcrSocialHistorySectionOperations extends SocialHistorySectionOper
 	public static  EList<PregnancyObservation> getPregnancyObservations(PhcrSocialHistorySection phcrSocialHistorySection) {
 		if (GET_PREGNANCY_OBSERVATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(PhcrPackage.Literals.PHCR_SOCIAL_HISTORY_SECTION, PhcrPackage.Literals.PHCR_SOCIAL_HISTORY_SECTION.getEAllOperations().get(72));
+			helper.setOperationContext(PhcrPackage.Literals.PHCR_SOCIAL_HISTORY_SECTION, PhcrPackage.Literals.PHCR_SOCIAL_HISTORY_SECTION.getEAllOperations().get(79));
 			try {
 				GET_PREGNANCY_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_PREGNANCY_OBSERVATIONS__EOCL_EXP);
 			}
@@ -748,67 +811,6 @@ public class PhcrSocialHistorySectionOperations extends SocialHistorySectionOper
 						 PhcrValidator.DIAGNOSTIC_SOURCE,
 						 PhcrValidator.PHCR_SOCIAL_HISTORY_SECTION__SOCIAL_HISTORY_SECTION_TEMPLATE_ID,
 						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SocialHistorySectionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(phcrSocialHistorySection, context) }),
-						 new Object [] { phcrSocialHistorySection }));
-			}
-			return false;
-		}
-		return true;
-	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateSocialHistorySectionCode(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section Code</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateSocialHistorySectionCode(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_SOCIAL_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
-"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("+
-"value.code = '29762-2' and value.codeSystem = '2.16.840.1.113883.6.1'))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateSocialHistorySectionCode(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateSocialHistorySectionCode(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static Constraint VALIDATE_SOCIAL_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in (
-	 * value.code = '29762-2' and value.codeSystem = '2.16.840.1.113883.6.1'))
-	 * @param phcrSocialHistorySection The receiving '<em><b>Social History Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-	public static  boolean validateSocialHistorySectionCode(PhcrSocialHistorySection phcrSocialHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_SOCIAL_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(PhcrPackage.Literals.PHCR_SOCIAL_HISTORY_SECTION);
-			try {
-				VALIDATE_SOCIAL_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SOCIAL_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SOCIAL_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(phcrSocialHistorySection)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 PhcrValidator.DIAGNOSTIC_SOURCE,
-						 PhcrValidator.PHCR_SOCIAL_HISTORY_SECTION__SOCIAL_HISTORY_SECTION_CODE,
-						 PhcrPlugin.INSTANCE.getString("SocialHistorySectionCode"),
 						 new Object [] { phcrSocialHistorySection }));
 			}
 			return false;
