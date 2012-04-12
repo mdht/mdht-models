@@ -22,10 +22,23 @@ import org.openhealthtools.mdht.uml.cda.SubstanceAdministration;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.phcr.PhcrPackage#getTreatmentGivenSubstanceAdministration()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.3.55' constraints.validation.error='TreatmentGivenSubstanceAdministrationTemplateId TreatmentGivenSubstanceAdministrationNegationInd TreatmentGivenSubstanceAdministrationClassCode TreatmentGivenSubstanceAdministrationMoodCode' routeCode.codeSystem='2.16.840.1.113883.3.88.12.3221.8.7' constraints.validation.warning='TreatmentGivenSubstanceAdministrationEffectiveTime TreatmentGivenSubstanceAdministrationRouteCode' classCode='SBADM' routeCode.codeSystemName='Medication Route FDA' moodCode='EVN'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation moodCode='EVN' routeCode.codeSystem='2.16.840.1.113883.3.88.12.3221.8.7' classCode='SBADM' templateId.root='2.16.840.1.113883.10.20.15.3.55' constraints.validation.error='TreatmentGivenSubstanceAdministrationTemplateId TreatmentGivenSubstanceAdministrationTreatmentGivenNegationInd TreatmentGivenSubstanceAdministrationClassCode TreatmentGivenSubstanceAdministrationMoodCode TreatmentGivenSubstanceAdministrationNegationInd TreatmentGivenSubstanceAdministrationStatusCode TreatmentGivenSubstanceAdministrationRouteCode' constraints.validation.warning='TreatmentGivenSubstanceAdministrationEffectiveTime' routeCode.codeSystemName='Medication Route FDA'"
  * @generated
  */
 public interface TreatmentGivenSubstanceAdministration extends SubstanceAdministration {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.negationInd=false
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.negationInd=false'"
+	 * @generated
+	 */
+	boolean validateTreatmentGivenSubstanceAdministrationTreatmentGivenNegationInd(DiagnosticChain diagnostics, Map<Object, Object> context);
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -82,11 +95,11 @@ public interface TreatmentGivenSubstanceAdministration extends SubstanceAdminist
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.negationInd=false
+	 * not self.negationInd.oclIsUndefined()
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.negationInd=false'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.negationInd.oclIsUndefined()'"
 	 * @generated
 	 */
 	boolean validateTreatmentGivenSubstanceAdministrationNegationInd(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -95,13 +108,26 @@ public interface TreatmentGivenSubstanceAdministration extends SubstanceAdminist
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.routeCode.oclIsUndefined() or self.routeCode.isNullFlavorUndefined()) implies (self.routeCode.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = self.routeCode.oclAsType(datatypes::CE) in (
-	 * value.codeSystem = '2.16.840.1.113883.3.88.12.3221.8.7'))
+	 * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.routeCode.oclIsUndefined() or self.routeCode.isNullFlavorUndefined()) implies (self.routeCode.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = self.routeCode.oclAsType(datatypes::CE) in (\r\nvalue.codeSystem = \'2.16.840.1.113883.3.88.12.3221.8.7\'))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())'"
+	 * @generated
+	 */
+	boolean validateTreatmentGivenSubstanceAdministrationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * (self.routeCode.oclIsUndefined() or self.routeCode.isNullFlavorUndefined()) implies (self.routeCode.oclIsKindOf(datatypes::CE) and 
+	 * let value : datatypes::CE = self.routeCode.oclAsType(datatypes::CE) in 
+	 * value.codeSystem = '2.16.840.1.113883.3.88.12.3221.8.7')
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.routeCode.oclIsUndefined() or self.routeCode.isNullFlavorUndefined()) implies (self.routeCode.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = self.routeCode.oclAsType(datatypes::CE) in \r\nvalue.codeSystem = \'2.16.840.1.113883.3.88.12.3221.8.7\')'"
 	 * @generated
 	 */
 	boolean validateTreatmentGivenSubstanceAdministrationRouteCode(DiagnosticChain diagnostics, Map<Object, Object> context);

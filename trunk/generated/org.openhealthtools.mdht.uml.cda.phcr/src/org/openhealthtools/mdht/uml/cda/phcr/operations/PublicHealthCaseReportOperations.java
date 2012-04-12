@@ -15,20 +15,13 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClassifier;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.eclipse.ocl.expressions.OCLExpression;
-
 import org.openhealthtools.mdht.uml.cda.ccd.ImmunizationsSection;
-
 import org.openhealthtools.mdht.uml.cda.operations.ClinicalDocumentOperations;
-
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrClinicalInformationSection;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrEncountersSection;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrPackage;
@@ -37,7 +30,6 @@ import org.openhealthtools.mdht.uml.cda.phcr.PhcrRelevantDxTestsSection;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrSocialHistorySection;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrTreatmentInformationSection;
 import org.openhealthtools.mdht.uml.cda.phcr.PublicHealthCaseReport;
-
 import org.openhealthtools.mdht.uml.cda.phcr.util.PhcrValidator;
 
 /**
@@ -1071,8 +1063,8 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
 	 * @ordered
 	 */
 	protected static final String VALIDATE_PUBLIC_HEALTH_CASE_REPORT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
-"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("+
-"value.code = '55751-2' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "+
+"value.code = '55751-2' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePublicHealthCaseReportCode(PublicHealthCaseReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Public Health Case Report Code</em>}' invariant operation.
@@ -1089,8 +1081,8 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in (
-	 * value.code = '55751-2' and value.codeSystem = '2.16.840.1.113883.6.1'))
+	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+	 * value.code = '55751-2' and value.codeSystem = '2.16.840.1.113883.6.1')
 	 * @param publicHealthCaseReport The receiving '<em><b>Public Health Case Report</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1359,7 +1351,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_RELEVANT_DX_TESTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(phcr::PhcrRelevantDxTestsSection ))";
+	protected static final String VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_RELEVANT_DX_TESTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(phcr::PhcrRelevantDxTestsSection))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePublicHealthCaseReportPhcrRelevantDxTestsSection(PublicHealthCaseReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Public Health Case Report Phcr Relevant Dx Tests Section</em>}' invariant operation.
@@ -1375,7 +1367,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(phcr::PhcrRelevantDxTestsSection ))
+	 * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(phcr::PhcrRelevantDxTestsSection))
 	 * @param publicHealthCaseReport The receiving '<em><b>Public Health Case Report</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1649,7 +1641,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_PHCR_RELEVANT_DX_TESTS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(phcr::PhcrRelevantDxTestsSection ))->asSequence()->first().oclAsType(phcr::PhcrRelevantDxTestsSection )";
+	protected static final String GET_PHCR_RELEVANT_DX_TESTS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(phcr::PhcrRelevantDxTestsSection))->asSequence()->first().oclAsType(phcr::PhcrRelevantDxTestsSection)";
 
 	/**
 	 * The cached OCL query for the '{@link #getPhcrRelevantDxTestsSection(PublicHealthCaseReport) <em>Get Phcr Relevant Dx Tests Section</em>}' query operation.
@@ -1665,7 +1657,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(phcr::PhcrRelevantDxTestsSection ))->asSequence()->first().oclAsType(phcr::PhcrRelevantDxTestsSection )
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(phcr::PhcrRelevantDxTestsSection))->asSequence()->first().oclAsType(phcr::PhcrRelevantDxTestsSection)
 	 * @param publicHealthCaseReport The receiving '<em><b>Public Health Case Report</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated

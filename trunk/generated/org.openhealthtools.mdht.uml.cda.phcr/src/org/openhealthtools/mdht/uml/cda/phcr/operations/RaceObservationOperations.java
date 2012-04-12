@@ -37,6 +37,7 @@ import org.openhealthtools.mdht.uml.cda.phcr.util.PhcrValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.RaceObservation#validateRaceObservationMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Race Observation Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.RaceObservation#validateRaceObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Race Observation Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.RaceObservation#validateRaceObservationStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Race Observation Status Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.RaceObservation#validateRaceObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Race Observation Value</em>}</li>
  * </ul>
  * </p>
  *
@@ -171,8 +172,8 @@ public class RaceObservationOperations extends ClinicalStatementOperations {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
-	 * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (
-	 * value.code = '32624-9' and value.codeSystem = '2.16.840.1.113883.6.1'))
+	 * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+	 * value.code = '32624-9' and value.codeSystem = '2.16.840.1.113883.6.1')
 	 * @param raceObservation The receiving '<em><b>Race Observation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -234,8 +235,8 @@ public class RaceObservationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_RACE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in ("+
-"value.code = '32624-9' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = '32624-9' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateRaceObservationCode(RaceObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Race Observation Code</em>}' invariant operation.
@@ -293,8 +294,8 @@ public class RaceObservationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_RACE_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "+
-"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in ("+
-"value.code = 'completed'))";
+"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in "+
+"value.code = 'completed')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateRaceObservationStatusCode(RaceObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Race Observation Status Code</em>}' invariant operation.
@@ -311,8 +312,8 @@ public class RaceObservationOperations extends ClinicalStatementOperations {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
-	 * let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in (
-	 * value.code = 'completed'))
+	 * let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
+	 * value.code = 'completed')
 	 * @param raceObservation The receiving '<em><b>Race Observation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -338,6 +339,65 @@ public class RaceObservationOperations extends ClinicalStatementOperations {
 						 PhcrValidator.DIAGNOSTIC_SOURCE,
 						 PhcrValidator.RACE_OBSERVATION__RACE_OBSERVATION_STATUS_CODE,
 						 PhcrPlugin.INSTANCE.getString("RaceObservationStatusCode"),
+						 new Object [] { raceObservation }));
+			}
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateRaceObservationValue(RaceObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Race Observation Value</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateRaceObservationValue(RaceObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_RACE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateRaceObservationValue(RaceObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Race Observation Value</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateRaceObservationValue(RaceObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Constraint VALIDATE_RACE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * (self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))
+	 * @param raceObservation The receiving '<em><b>Race Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	
+	public static  boolean validateRaceObservationValue(RaceObservation raceObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (VALIDATE_RACE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(PhcrPackage.Literals.RACE_OBSERVATION);
+			try {
+				VALIDATE_RACE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_RACE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_RACE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(raceObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 PhcrValidator.DIAGNOSTIC_SOURCE,
+						 PhcrValidator.RACE_OBSERVATION__RACE_OBSERVATION_VALUE,
+						 PhcrPlugin.INSTANCE.getString("RaceObservationValue"),
 						 new Object [] { raceObservation }));
 			}
 			return false;

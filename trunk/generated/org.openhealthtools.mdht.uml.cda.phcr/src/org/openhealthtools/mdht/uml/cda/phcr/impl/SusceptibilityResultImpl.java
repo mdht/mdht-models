@@ -90,6 +90,15 @@ public class SusceptibilityResultImpl extends ObservationImpl implements Suscept
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateSusceptibilityResultCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SusceptibilityResultOperations.validateSusceptibilityResultCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateSusceptibilityResultStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SusceptibilityResultOperations.validateSusceptibilityResultStatusCode(this, diagnostics, context);
 	}

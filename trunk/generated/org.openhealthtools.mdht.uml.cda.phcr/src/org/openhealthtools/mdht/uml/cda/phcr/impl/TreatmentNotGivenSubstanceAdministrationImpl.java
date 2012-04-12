@@ -54,6 +54,15 @@ public class TreatmentNotGivenSubstanceAdministrationImpl extends SubstanceAdmin
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateTreatmentNotGivenSubstanceAdministrationTreatmentNotGivenNegationInd(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return TreatmentNotGivenSubstanceAdministrationOperations.validateTreatmentNotGivenSubstanceAdministrationTreatmentNotGivenNegationInd(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateTreatmentNotGivenSubstanceAdministrationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return TreatmentNotGivenSubstanceAdministrationOperations.validateTreatmentNotGivenSubstanceAdministrationTemplateId(this, diagnostics, context);
 	}
@@ -92,6 +101,15 @@ public class TreatmentNotGivenSubstanceAdministrationImpl extends SubstanceAdmin
 	 */
 	public boolean validateTreatmentNotGivenSubstanceAdministrationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return TreatmentNotGivenSubstanceAdministrationOperations.validateTreatmentNotGivenSubstanceAdministrationStatusCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateTreatmentNotGivenSubstanceAdministrationStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return TreatmentNotGivenSubstanceAdministrationOperations.validateTreatmentNotGivenSubstanceAdministrationStatusCodeP(this, diagnostics, context);
 	}
 
 	/**

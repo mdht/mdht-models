@@ -92,6 +92,15 @@ public class ResultOrganizerImpl extends org.openhealthtools.mdht.uml.cda.ccd.im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validatePHCRResultOrganizerStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ResultOrganizerOperations.validatePHCRResultOrganizerStatusCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validatePHCRResultOrganizerEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResultOrganizerOperations.validatePHCRResultOrganizerEffectiveTime(this, diagnostics, context);
 	}

@@ -39,6 +39,7 @@ import org.openhealthtools.mdht.uml.cda.phcr.util.PhcrValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PatientConditionDeceasedObservation#validatePatientConditionDeceasedObservationStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Condition Deceased Observation Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PatientConditionDeceasedObservation#validatePatientConditionDeceasedObservationEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Condition Deceased Observation Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PatientConditionDeceasedObservation#validatePatientConditionDeceasedObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Condition Deceased Observation Value</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PatientConditionDeceasedObservation#validatePatientConditionDeceasedObservationValueP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Condition Deceased Observation Value P</em>}</li>
  * </ul>
  * </p>
  *
@@ -173,8 +174,8 @@ public class PatientConditionDeceasedObservationOperations extends ClinicalState
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
-	 * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (
-	 * value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4'))
+	 * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+	 * value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4')
 	 * @param patientConditionDeceasedObservation The receiving '<em><b>Patient Condition Deceased Observation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -236,8 +237,8 @@ public class PatientConditionDeceasedObservationOperations extends ClinicalState
 	 * @ordered
 	 */
 	protected static final String VALIDATE_PATIENT_CONDITION_DECEASED_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in ("+
-"value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4'))";
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePatientConditionDeceasedObservationCode(PatientConditionDeceasedObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Condition Deceased Observation Code</em>}' invariant operation.
@@ -295,8 +296,8 @@ public class PatientConditionDeceasedObservationOperations extends ClinicalState
 	 * @ordered
 	 */
 	protected static final String VALIDATE_PATIENT_CONDITION_DECEASED_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "+
-"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in ("+
-"value.code = 'completed'))";
+"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in "+
+"value.code = 'completed')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePatientConditionDeceasedObservationStatusCode(PatientConditionDeceasedObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Condition Deceased Observation Status Code</em>}' invariant operation.
@@ -313,8 +314,8 @@ public class PatientConditionDeceasedObservationOperations extends ClinicalState
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
-	 * let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in (
-	 * value.code = 'completed'))
+	 * let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
+	 * value.code = 'completed')
 	 * @param patientConditionDeceasedObservation The receiving '<em><b>Patient Condition Deceased Observation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -387,6 +388,44 @@ public class PatientConditionDeceasedObservationOperations extends ClinicalState
 	}
 
 	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * (self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))
+	 * @param patientConditionDeceasedObservation The receiving '<em><b>Patient Condition Deceased Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	
+	public static  boolean validatePatientConditionDeceasedObservationValueP(PatientConditionDeceasedObservation patientConditionDeceasedObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (VALIDATE_PATIENT_CONDITION_DECEASED_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(PhcrPackage.Literals.PATIENT_CONDITION_DECEASED_OBSERVATION);
+			try {
+				VALIDATE_PATIENT_CONDITION_DECEASED_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_CONDITION_DECEASED_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_CONDITION_DECEASED_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientConditionDeceasedObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 PhcrValidator.DIAGNOSTIC_SOURCE,
+						 PhcrValidator.PATIENT_CONDITION_DECEASED_OBSERVATION__PATIENT_CONDITION_DECEASED_OBSERVATION_VALUE_P,
+						 PhcrPlugin.INSTANCE.getString("PatientConditionDeceasedObservationValueP"),
+						 new Object [] { patientConditionDeceasedObservation }));
+			}
+			return false;
+		}
+		return true;
+	}
+
+	/**
 	 * The cached OCL expression body for the '{@link #validatePatientConditionDeceasedObservationEffectiveTime(PatientConditionDeceasedObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Condition Deceased Observation Effective Time</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -427,6 +466,27 @@ public class PatientConditionDeceasedObservationOperations extends ClinicalState
 	 * @ordered
 	 */
 	protected static Constraint VALIDATE_PATIENT_CONDITION_DECEASED_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * The cached OCL expression body for the '{@link #validatePatientConditionDeceasedObservationValueP(PatientConditionDeceasedObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Condition Deceased Observation Value P</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validatePatientConditionDeceasedObservationValueP(PatientConditionDeceasedObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_PATIENT_CONDITION_DECEASED_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validatePatientConditionDeceasedObservationValueP(PatientConditionDeceasedObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Condition Deceased Observation Value P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validatePatientConditionDeceasedObservationValueP(PatientConditionDeceasedObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Constraint VALIDATE_PATIENT_CONDITION_DECEASED_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->

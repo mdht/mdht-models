@@ -63,6 +63,15 @@ public class GeotemporalHistoryObservationImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateGeotemporalHistoryObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return GeotemporalHistoryObservationOperations.validateGeotemporalHistoryObservationValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateGeotemporalHistoryObservationText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return GeotemporalHistoryObservationOperations.validateGeotemporalHistoryObservationText(this, diagnostics, context);
 	}

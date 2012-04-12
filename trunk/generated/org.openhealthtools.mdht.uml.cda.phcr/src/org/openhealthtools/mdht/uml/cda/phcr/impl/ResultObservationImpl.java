@@ -62,6 +62,15 @@ public class ResultObservationImpl extends org.openhealthtools.mdht.uml.cda.ccd.
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validatePHCRResultObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ResultObservationOperations.validatePHCRResultObservationStatusCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean validateResultObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResultObservationOperations.validateResultObservationTemplateId(this, diagnostics, context);

@@ -45,6 +45,7 @@ import org.openhealthtools.mdht.uml.cda.phcr.util.PhcrValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.TherapeuticRegimenAct#validateTherapeuticRegimenActNegationInd(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Therapeutic Regimen Act Negation Ind</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.TherapeuticRegimenAct#validateTherapeuticRegimenActCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Therapeutic Regimen Act Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.TherapeuticRegimenAct#validateTherapeuticRegimenActStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Therapeutic Regimen Act Status Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.TherapeuticRegimenAct#validateTherapeuticRegimenActStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Therapeutic Regimen Act Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.TherapeuticRegimenAct#validateTherapeuticRegimenActTreatmentGivenSubstanceAdministration(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Therapeutic Regimen Act Treatment Given Substance Administration</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.TherapeuticRegimenAct#validateTherapeuticRegimenActTreatmentNotGivenSubstanceAdministration(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Therapeutic Regimen Act Treatment Not Given Substance Administration</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.TherapeuticRegimenAct#getTreatmentGivenSubstanceAdministrations() <em>Get Treatment Given Substance Administrations</em>}</li>
@@ -183,8 +184,8 @@ public class TherapeuticRegimenActOperations extends ClinicalStatementOperations
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
-	 * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (
-	 * value.code = '133877004' and value.codeSystem = '2.16.840.1.113883.6.96'))
+	 * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+	 * value.code = '133877004' and value.codeSystem = '2.16.840.1.113883.6.96')
 	 * @param therapeuticRegimenAct The receiving '<em><b>Therapeutic Regimen Act</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -303,8 +304,8 @@ public class TherapeuticRegimenActOperations extends ClinicalStatementOperations
 	 * @ordered
 	 */
 	protected static final String VALIDATE_THERAPEUTIC_REGIMEN_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in ("+
-"value.code = '133877004' and value.codeSystem = '2.16.840.1.113883.6.96'))";
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = '133877004' and value.codeSystem = '2.16.840.1.113883.6.96')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateTherapeuticRegimenActCode(TherapeuticRegimenAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Therapeutic Regimen Act Code</em>}' invariant operation.
@@ -362,8 +363,8 @@ public class TherapeuticRegimenActOperations extends ClinicalStatementOperations
 	 * @ordered
 	 */
 	protected static final String VALIDATE_THERAPEUTIC_REGIMEN_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "+
-"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in ("+
-"value.code = 'completed'))";
+"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in "+
+"value.code = 'completed')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateTherapeuticRegimenActStatusCode(TherapeuticRegimenAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Therapeutic Regimen Act Status Code</em>}' invariant operation.
@@ -380,8 +381,8 @@ public class TherapeuticRegimenActOperations extends ClinicalStatementOperations
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
-	 * let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in (
-	 * value.code = 'completed'))
+	 * let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
+	 * value.code = 'completed')
 	 * @param therapeuticRegimenAct The receiving '<em><b>Therapeutic Regimen Act</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -407,6 +408,65 @@ public class TherapeuticRegimenActOperations extends ClinicalStatementOperations
 						 PhcrValidator.DIAGNOSTIC_SOURCE,
 						 PhcrValidator.THERAPEUTIC_REGIMEN_ACT__THERAPEUTIC_REGIMEN_ACT_STATUS_CODE,
 						 PhcrPlugin.INSTANCE.getString("TherapeuticRegimenActStatusCode"),
+						 new Object [] { therapeuticRegimenAct }));
+			}
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateTherapeuticRegimenActStatusCodeP(TherapeuticRegimenAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Therapeutic Regimen Act Status Code P</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateTherapeuticRegimenActStatusCodeP(TherapeuticRegimenAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_THERAPEUTIC_REGIMEN_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateTherapeuticRegimenActStatusCodeP(TherapeuticRegimenAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Therapeutic Regimen Act Status Code P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateTherapeuticRegimenActStatusCodeP(TherapeuticRegimenAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Constraint VALIDATE_THERAPEUTIC_REGIMEN_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())
+	 * @param therapeuticRegimenAct The receiving '<em><b>Therapeutic Regimen Act</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	
+	public static  boolean validateTherapeuticRegimenActStatusCodeP(TherapeuticRegimenAct therapeuticRegimenAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (VALIDATE_THERAPEUTIC_REGIMEN_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(PhcrPackage.Literals.THERAPEUTIC_REGIMEN_ACT);
+			try {
+				VALIDATE_THERAPEUTIC_REGIMEN_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_THERAPEUTIC_REGIMEN_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_THERAPEUTIC_REGIMEN_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(therapeuticRegimenAct)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 PhcrValidator.DIAGNOSTIC_SOURCE,
+						 PhcrValidator.THERAPEUTIC_REGIMEN_ACT__THERAPEUTIC_REGIMEN_ACT_STATUS_CODE_P,
+						 PhcrPlugin.INSTANCE.getString("TherapeuticRegimenActStatusCodeP"),
 						 new Object [] { therapeuticRegimenAct }));
 			}
 			return false;
@@ -560,7 +620,7 @@ public class TherapeuticRegimenActOperations extends ClinicalStatementOperations
 	public static  EList<TreatmentGivenSubstanceAdministration> getTreatmentGivenSubstanceAdministrations(TherapeuticRegimenAct therapeuticRegimenAct) {
 		if (GET_TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(PhcrPackage.Literals.THERAPEUTIC_REGIMEN_ACT, PhcrPackage.Literals.THERAPEUTIC_REGIMEN_ACT.getEAllOperations().get(57));
+			helper.setOperationContext(PhcrPackage.Literals.THERAPEUTIC_REGIMEN_ACT, PhcrPackage.Literals.THERAPEUTIC_REGIMEN_ACT.getEAllOperations().get(60));
 			try {
 				GET_TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATIONS__EOCL_QRY = helper.createQuery(GET_TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATIONS__EOCL_EXP);
 			}
@@ -606,7 +666,7 @@ public class TherapeuticRegimenActOperations extends ClinicalStatementOperations
 	public static  EList<TreatmentNotGivenSubstanceAdministration> getTreatmentNotGivenSubstanceAdministrations(TherapeuticRegimenAct therapeuticRegimenAct) {
 		if (GET_TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(PhcrPackage.Literals.THERAPEUTIC_REGIMEN_ACT, PhcrPackage.Literals.THERAPEUTIC_REGIMEN_ACT.getEAllOperations().get(58));
+			helper.setOperationContext(PhcrPackage.Literals.THERAPEUTIC_REGIMEN_ACT, PhcrPackage.Literals.THERAPEUTIC_REGIMEN_ACT.getEAllOperations().get(61));
 			try {
 				GET_TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATIONS__EOCL_QRY = helper.createQuery(GET_TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATIONS__EOCL_EXP);
 			}

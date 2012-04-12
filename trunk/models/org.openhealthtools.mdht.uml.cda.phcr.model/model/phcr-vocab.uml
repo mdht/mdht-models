@@ -434,9 +434,7 @@
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_qTVNoTMYEeGXS8s8x7j2Fg" conceptName="12 minute walk test"/>
-  <term:ValueSetVersion xmi:id="_0NOq8TMYEeGXS8s8x7j2Fg" identifier="2.16.840.1.113883.3.88.12.3221.8.9" fullName="Body Site" source="PHIN VADS" url="https://phinvads.cdc.gov/vads/ViewValueSet.action?id=9A2D4051-3AA6-42EB-AE88-541C9094B0FB" definition="Body site value set is based upon the concepts descending from the SNOMED CT Anatomical Structure (91723000) hierarchy." binding="Dynamic" base_Enumeration="_0NOq8DMYEeGXS8s8x7j2Fg">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
-  </term:ValueSetVersion>
+  <term:ValueSetVersion xmi:id="_0NOq8TMYEeGXS8s8x7j2Fg" identifier="2.16.840.1.113883.3.88.12.3221.8.9" fullName="Body Site" source="PHIN VADS" url="https://phinvads.cdc.gov/vads/ViewValueSet.action?id=9A2D4051-3AA6-42EB-AE88-541C9094B0FB" definition="Body site value set is based upon the concepts descending from the SNOMED CT Anatomical Structure (91723000) hierarchy." binding="Dynamic" base_Enumeration="_0NOq8DMYEeGXS8s8x7j2Fg"/>
   <term:ValueSetCode xmi:id="_9kQEsTMYEeGXS8s8x7j2Fg" conceptName="Upper respiratory tract"/>
   <term:ValueSetVersion xmi:id="_swk2sTMZEeGXS8s8x7j2Fg" identifier="2.16.840.1.114222.4.11.1071" fullName="Drug Susceptibility Test Result Name" source="PHIN VADS" url="https://phinvads.cdc.gov/vads/ViewValueSet.action?id=15E98D4C-BBE5-4191-80C9-ADEC75DA7FFB" definition="Drug / Antimicrobial Test Result Name" binding="Dynamic" base_Enumeration="_swk2sDMZEeGXS8s8x7j2Fg">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>

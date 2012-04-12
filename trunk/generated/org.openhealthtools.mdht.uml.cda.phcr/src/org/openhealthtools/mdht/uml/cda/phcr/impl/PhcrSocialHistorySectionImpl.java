@@ -60,6 +60,15 @@ public class PhcrSocialHistorySectionImpl extends SocialHistorySectionImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validatePhcrSocialHistorySectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PhcrSocialHistorySectionOperations.validatePhcrSocialHistorySectionCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validatePhcrSocialHistorySectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PhcrSocialHistorySectionOperations.validatePhcrSocialHistorySectionTitle(this, diagnostics, context);
 	}
@@ -171,16 +180,6 @@ public class PhcrSocialHistorySectionImpl extends SocialHistorySectionImpl imple
 	@Override
 	public boolean validateSocialHistorySectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PhcrSocialHistorySectionOperations.validateSocialHistorySectionTemplateId(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateSocialHistorySectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhcrSocialHistorySectionOperations.validateSocialHistorySectionCode(this, diagnostics, context);
 	}
 
 	/**

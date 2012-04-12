@@ -13,7 +13,6 @@ package org.openhealthtools.mdht.uml.cda.phcr;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.openhealthtools.mdht.uml.cda.Procedure;
 
 /**
@@ -23,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.Procedure;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.phcr.PhcrPackage#getSpecimenCollectionProcedure()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.3.2' constraints.validation.error='SpecimenCollectionProcedureTemplateId SpecimenCollectionProcedureClassCode SpecimenCollectionProcedureMoodCode' constraints.validation.warning='SpecimenCollectionProcedureEffectiveTime' classCode='PROC' moodCode='EVN'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation moodCode='EVN' classCode='PROC' constraints.validation.error='SpecimenCollectionProcedureTemplateId SpecimenCollectionProcedureClassCode SpecimenCollectionProcedureMoodCode' templateId.root='2.16.840.1.113883.10.20.15.3.2' constraints.validation.warning='SpecimenCollectionProcedureEffectiveTime'"
  * @generated
  */
 public interface SpecimenCollectionProcedure extends Procedure {

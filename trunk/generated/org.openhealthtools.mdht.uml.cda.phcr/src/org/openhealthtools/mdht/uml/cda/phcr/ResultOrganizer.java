@@ -22,7 +22,7 @@ import org.eclipse.emf.common.util.EList;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.phcr.PhcrPackage#getResultOrganizer()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation statusCode.code='completed' templateId.root='2.16.840.1.113883.10.20.15.3.59' constraints.validation.error='PHCRResultOrganizerTemplateId PHCRResultOrganizerClassCode PHCRResultOrganizerMoodCode PHCRResultOrganizerId PHCRResultOrganizerCode ResultOrganizerStatusCode PHCRResultOrganizerEffectiveTime PHCRResultOrganizerResultObservation' classCode='BATTERY' constraints.validation.info='PHCRResultOrganizerSpecimenCollectionProcedure' moodCode='EVN'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation moodCode='EVN' classCode='BATTERY' constraints.validation.info='PHCRResultOrganizerSpecimenCollectionProcedure' templateId.root='2.16.840.1.113883.10.20.15.3.59' constraints.validation.error='PHCRResultOrganizerTemplateId PHCRResultOrganizerClassCode PHCRResultOrganizerMoodCode PHCRResultOrganizerId PHCRResultOrganizerCode ResultOrganizerStatusCode PHCRResultOrganizerStatusCode PHCRResultOrganizerEffectiveTime PHCRResultOrganizerResultObservation' statusCode.code='completed'"
  * @generated
  */
 public interface ResultOrganizer extends org.openhealthtools.mdht.uml.cda.ccd.ResultOrganizer {
@@ -82,11 +82,24 @@ public interface ResultOrganizer extends org.openhealthtools.mdht.uml.cda.ccd.Re
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())
+	 * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.effectiveTime.oclIsUndefined() or self.effectiveTime.isNullFlavorUndefined()) implies (not self.effectiveTime.oclIsUndefined())'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())'"
+	 * @generated
+	 */
+	boolean validatePHCRResultOrganizerStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * not self.effectiveTime.oclIsUndefined()
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.effectiveTime.oclIsUndefined()'"
 	 * @generated
 	 */
 	boolean validatePHCRResultOrganizerEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context);
