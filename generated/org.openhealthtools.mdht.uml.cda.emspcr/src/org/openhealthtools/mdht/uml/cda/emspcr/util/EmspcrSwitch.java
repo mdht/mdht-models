@@ -115,13 +115,63 @@ public class EmspcrSwitch<T>
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
-      case EmspcrPackage.BILLING:
+      case EmspcrPackage.EMS_BILLING:
       {
-        Billing billing = (Billing)theEObject;
-        T result = caseBilling(billing);
-        if (result == null) result = caseSection(billing);
-        if (result == null) result = caseAct(billing);
-        if (result == null) result = caseInfrastructureRoot(billing);
+        EMSBilling emsBilling = (EMSBilling)theEObject;
+        T result = caseEMSBilling(emsBilling);
+        if (result == null) result = caseSection(emsBilling);
+        if (result == null) result = caseAct(emsBilling);
+        if (result == null) result = caseInfrastructureRoot(emsBilling);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case EmspcrPackage.EMS_INJURY_INCIDENT_DESCRIPTION:
+      {
+        EMSInjuryIncidentDescription emsInjuryIncidentDescription = (EMSInjuryIncidentDescription)theEObject;
+        T result = caseEMSInjuryIncidentDescription(emsInjuryIncidentDescription);
+        if (result == null) result = caseSection(emsInjuryIncidentDescription);
+        if (result == null) result = caseAct(emsInjuryIncidentDescription);
+        if (result == null) result = caseInfrastructureRoot(emsInjuryIncidentDescription);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case EmspcrPackage.EMS_CARDIAC_ARREST_EVENT:
+      {
+        EMSCardiacArrestEvent emsCardiacArrestEvent = (EMSCardiacArrestEvent)theEObject;
+        T result = caseEMSCardiacArrestEvent(emsCardiacArrestEvent);
+        if (result == null) result = caseSection(emsCardiacArrestEvent);
+        if (result == null) result = caseAct(emsCardiacArrestEvent);
+        if (result == null) result = caseInfrastructureRoot(emsCardiacArrestEvent);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case EmspcrPackage.EMS_ADVANCE_DIRECTIVES:
+      {
+        EMSAdvanceDirectives emsAdvanceDirectives = (EMSAdvanceDirectives)theEObject;
+        T result = caseEMSAdvanceDirectives(emsAdvanceDirectives);
+        if (result == null) result = caseSection(emsAdvanceDirectives);
+        if (result == null) result = caseAct(emsAdvanceDirectives);
+        if (result == null) result = caseInfrastructureRoot(emsAdvanceDirectives);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case EmspcrPackage.EMS_ALLERGIES_AND_ADVERSE_REACTIONS:
+      {
+        EMSAllergiesAndAdverseReactions emsAllergiesAndAdverseReactions = (EMSAllergiesAndAdverseReactions)theEObject;
+        T result = caseEMSAllergiesAndAdverseReactions(emsAllergiesAndAdverseReactions);
+        if (result == null) result = caseSection(emsAllergiesAndAdverseReactions);
+        if (result == null) result = caseAct(emsAllergiesAndAdverseReactions);
+        if (result == null) result = caseInfrastructureRoot(emsAllergiesAndAdverseReactions);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case EmspcrPackage.EMS_CURRENT_MEDICATION_SECTION:
+      {
+        EMSCurrentMedicationSection emsCurrentMedicationSection = (EMSCurrentMedicationSection)theEObject;
+        T result = caseEMSCurrentMedicationSection(emsCurrentMedicationSection);
+        if (result == null) result = caseSection(emsCurrentMedicationSection);
+        if (result == null) result = caseAct(emsCurrentMedicationSection);
+        if (result == null) result = caseInfrastructureRoot(emsCurrentMedicationSection);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -146,17 +196,97 @@ public class EmspcrSwitch<T>
   }
 
   /**
-   * Returns the result of interpreting the object as an instance of '<em>Billing</em>'.
+   * Returns the result of interpreting the object as an instance of '<em>EMS Billing</em>'.
    * <!-- begin-user-doc -->
    * This implementation returns null;
    * returning a non-null result will terminate the switch.
    * <!-- end-user-doc -->
    * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Billing</em>'.
+   * @return the result of interpreting the object as an instance of '<em>EMS Billing</em>'.
    * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
    * @generated
    */
-  public T caseBilling(Billing object)
+  public T caseEMSBilling(EMSBilling object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>EMS Injury Incident Description</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>EMS Injury Incident Description</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseEMSInjuryIncidentDescription(EMSInjuryIncidentDescription object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>EMS Cardiac Arrest Event</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>EMS Cardiac Arrest Event</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseEMSCardiacArrestEvent(EMSCardiacArrestEvent object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>EMS Advance Directives</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>EMS Advance Directives</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseEMSAdvanceDirectives(EMSAdvanceDirectives object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>EMS Allergies And Adverse Reactions</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>EMS Allergies And Adverse Reactions</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseEMSAllergiesAndAdverseReactions(EMSAllergiesAndAdverseReactions object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>EMS Current Medication Section</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>EMS Current Medication Section</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseEMSCurrentMedicationSection(EMSCurrentMedicationSection object)
   {
     return null;
   }

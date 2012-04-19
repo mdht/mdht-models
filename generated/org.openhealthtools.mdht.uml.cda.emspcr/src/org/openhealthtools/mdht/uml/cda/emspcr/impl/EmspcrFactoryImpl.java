@@ -69,7 +69,12 @@ public class EmspcrFactoryImpl extends EFactoryImpl implements EmspcrFactory
     switch (eClass.getClassifierID())
     {
       case EmspcrPackage.PATIENT_CARE_REPORT: return createPatientCareReport();
-      case EmspcrPackage.BILLING: return createBilling();
+      case EmspcrPackage.EMS_BILLING: return createEMSBilling();
+      case EmspcrPackage.EMS_INJURY_INCIDENT_DESCRIPTION: return createEMSInjuryIncidentDescription();
+      case EmspcrPackage.EMS_CARDIAC_ARREST_EVENT: return createEMSCardiacArrestEvent();
+      case EmspcrPackage.EMS_ADVANCE_DIRECTIVES: return createEMSAdvanceDirectives();
+      case EmspcrPackage.EMS_ALLERGIES_AND_ADVERSE_REACTIONS: return createEMSAllergiesAndAdverseReactions();
+      case EmspcrPackage.EMS_CURRENT_MEDICATION_SECTION: return createEMSCurrentMedicationSection();
       default:
         throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
     }
@@ -91,10 +96,65 @@ public class EmspcrFactoryImpl extends EFactoryImpl implements EmspcrFactory
    * <!-- end-user-doc -->
    * @generated
    */
-  public Billing createBilling()
+  public EMSBilling createEMSBilling()
   {
-    BillingImpl billing = new BillingImpl();
-    return billing;
+    EMSBillingImpl emsBilling = new EMSBillingImpl();
+    return emsBilling;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EMSInjuryIncidentDescription createEMSInjuryIncidentDescription()
+  {
+    EMSInjuryIncidentDescriptionImpl emsInjuryIncidentDescription = new EMSInjuryIncidentDescriptionImpl();
+    return emsInjuryIncidentDescription;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EMSCardiacArrestEvent createEMSCardiacArrestEvent()
+  {
+    EMSCardiacArrestEventImpl emsCardiacArrestEvent = new EMSCardiacArrestEventImpl();
+    return emsCardiacArrestEvent;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EMSAdvanceDirectives createEMSAdvanceDirectives()
+  {
+    EMSAdvanceDirectivesImpl emsAdvanceDirectives = new EMSAdvanceDirectivesImpl();
+    return emsAdvanceDirectives;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EMSAllergiesAndAdverseReactions createEMSAllergiesAndAdverseReactions()
+  {
+    EMSAllergiesAndAdverseReactionsImpl emsAllergiesAndAdverseReactions = new EMSAllergiesAndAdverseReactionsImpl();
+    return emsAllergiesAndAdverseReactions;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EMSCurrentMedicationSection createEMSCurrentMedicationSection()
+  {
+    EMSCurrentMedicationSectionImpl emsCurrentMedicationSection = new EMSCurrentMedicationSectionImpl();
+    return emsCurrentMedicationSection;
   }
 
   /**

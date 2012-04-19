@@ -36,13 +36,58 @@ public interface EmspcrFactory extends EFactory
   PatientCareReport createPatientCareReport();
 
   /**
-   * Returns a new object of class '<em>Billing</em>'.
+   * Returns a new object of class '<em>EMS Billing</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>Billing</em>'.
+   * @return a new object of class '<em>EMS Billing</em>'.
    * @generated
    */
-  Billing createBilling();
+  EMSBilling createEMSBilling();
+
+  /**
+   * Returns a new object of class '<em>EMS Injury Incident Description</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>EMS Injury Incident Description</em>'.
+   * @generated
+   */
+  EMSInjuryIncidentDescription createEMSInjuryIncidentDescription();
+
+  /**
+   * Returns a new object of class '<em>EMS Cardiac Arrest Event</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>EMS Cardiac Arrest Event</em>'.
+   * @generated
+   */
+  EMSCardiacArrestEvent createEMSCardiacArrestEvent();
+
+  /**
+   * Returns a new object of class '<em>EMS Advance Directives</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>EMS Advance Directives</em>'.
+   * @generated
+   */
+  EMSAdvanceDirectives createEMSAdvanceDirectives();
+
+  /**
+   * Returns a new object of class '<em>EMS Allergies And Adverse Reactions</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>EMS Allergies And Adverse Reactions</em>'.
+   * @generated
+   */
+  EMSAllergiesAndAdverseReactions createEMSAllergiesAndAdverseReactions();
+
+  /**
+   * Returns a new object of class '<em>EMS Current Medication Section</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>EMS Current Medication Section</em>'.
+   * @generated
+   */
+  EMSCurrentMedicationSection createEMSCurrentMedicationSection();
 
   /**
    * Returns the package supported by this factory.

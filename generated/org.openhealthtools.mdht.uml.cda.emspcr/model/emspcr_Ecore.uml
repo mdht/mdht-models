@@ -11,56 +11,74 @@
       <importedPackage href="../../org.openhealthtools.mdht.uml.cda.emspcr.model/model/emspcr-vocab.uml#_xpzscGeQEeGtXKebdWh3hg"/>
     </packageImport>
     <packagedElement xmi:type="uml:Class" xmi:id="_xs1LQWeQEeGtXKebdWh3hg" name="PatientCareReport">
-      <ownedRule xmi:id="_bWAa0WlfEeG4boS-IbG8Zw" name="GeneralHeaderConstraintsTemplateId" constrainedElement="_xs1LQWeQEeGtXKebdWh3hg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_bWBB4GlfEeG4boS-IbG8Zw">
+      <ownedRule xmi:id="_IIdMEIp1EeGmnLk1tJji5A" name="GeneralHeaderConstraintsTemplateId" constrainedElement="_xs1LQWeQEeGtXKebdWh3hg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_IIdMEYp1EeGmnLk1tJji5A">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.17.3.10.1')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_bWEFMGlfEeG4boS-IbG8Zw" name="PatientCareReportClassCode" constrainedElement="_xs1LQWeQEeGtXKebdWh3hg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_bWEFMWlfEeG4boS-IbG8Zw">
+      <ownedRule xmi:id="_IIfBQIp1EeGmnLk1tJji5A" name="PatientCareReportClassCode" constrainedElement="_xs1LQWeQEeGtXKebdWh3hg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_IIfBQYp1EeGmnLk1tJji5A">
           <language>OCL</language>
           <body>isDefined('classCode') and self.classCode=vocab::ActClinicalDocument::DOCCLIN</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_bWF6YGlfEeG4boS-IbG8Zw" name="PatientCareReportMoodCode" constrainedElement="_xs1LQWeQEeGtXKebdWh3hg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_bWF6YWlfEeG4boS-IbG8Zw">
+      <ownedRule xmi:id="_IIg2cIp1EeGmnLk1tJji5A" name="PatientCareReportMoodCode" constrainedElement="_xs1LQWeQEeGtXKebdWh3hg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_IIg2cYp1EeGmnLk1tJji5A">
           <language>OCL</language>
           <body>isDefined('moodCode') and self.moodCode=vocab::ActMood::EVN</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_bWHIgGlfEeG4boS-IbG8Zw" name="PatientCareReportSetId" constrainedElement="_xs1LQWeQEeGtXKebdWh3hg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_bWHIgWlfEeG4boS-IbG8Zw">
+      <ownedRule xmi:id="_IIj5wIp1EeGmnLk1tJji5A" name="GeneralHeaderConstraintsCode" constrainedElement="_xs1LQWeQEeGtXKebdWh3hg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_IIj5wYp1EeGmnLk1tJji5A">
           <language>OCL</language>
-          <body>(self.setId.oclIsUndefined() or self.setId.isNullFlavorUndefined()) implies (not self.setId.oclIsUndefined())</body>
+          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and &#xD;&#xA;let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in &#xD;&#xA;value.code = '67796-3' and value.codeSystem = '2.16.840.1.113883.6.1')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_bWKL0GlfEeG4boS-IbG8Zw" name="GeneralHeaderConstraintsCode" constrainedElement="_xs1LQWeQEeGtXKebdWh3hg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_bWKL0WlfEeG4boS-IbG8Zw">
+      <ownedRule xmi:id="_IImWAIp1EeGmnLk1tJji5A" name="PatientCareReportCode" constrainedElement="_xs1LQWeQEeGtXKebdWh3hg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_IImWAYp1EeGmnLk1tJji5A">
           <language>OCL</language>
-          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and &#xA;let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in (&#xA;value.code = '67796-3' and value.codeSystem = '2.16.840.1.113883.6.1'))</body>
+          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_bWkbgGlfEeG4boS-IbG8Zw" name="PatientCareReportHumanAuthor" constrainedElement="_xs1LQWeQEeGtXKebdWh3hg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_bWkbgWlfEeG4boS-IbG8Zw">
+      <ownedRule xmi:id="_IIpZUIp1EeGmnLk1tJji5A" name="PatientCareReportVersionNumber" constrainedElement="_xs1LQWeQEeGtXKebdWh3hg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_IIpZUYp1EeGmnLk1tJji5A">
+          <language>OCL</language>
+          <body>(self.versionNumber.oclIsUndefined() or self.versionNumber.isNullFlavorUndefined()) implies (not self.versionNumber.oclIsUndefined())</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_IIqncIp1EeGmnLk1tJji5A" name="PatientCareReportId" constrainedElement="_xs1LQWeQEeGtXKebdWh3hg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_IIqncYp1EeGmnLk1tJji5A">
+          <language>OCL</language>
+          <body>(self.id.oclIsUndefined() or self.id.isNullFlavorUndefined()) implies (not self.id.oclIsUndefined())</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_IIscoIp1EeGmnLk1tJji5A" name="PatientCareReportTitle" constrainedElement="_xs1LQWeQEeGtXKebdWh3hg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_IIscoYp1EeGmnLk1tJji5A">
+          <language>OCL</language>
+          <body>(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined())</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_IJqF8Ip1EeGmnLk1tJji5A" name="PatientCareReportHumanAuthor" constrainedElement="_xs1LQWeQEeGtXKebdWh3hg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_IJqF8Yp1EeGmnLk1tJji5A">
           <language>OCL</language>
           <body>self.author->one(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(cda::Author))</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_bWlpoGlfEeG4boS-IbG8Zw" name="PatientCareReportComponentOf" constrainedElement="_xs1LQWeQEeGtXKebdWh3hg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_bWlpoWlfEeG4boS-IbG8Zw">
+      <ownedRule xmi:id="_IJrUEIp1EeGmnLk1tJji5A" name="PatientCareReportComponentOf" constrainedElement="_xs1LQWeQEeGtXKebdWh3hg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_IJrUEYp1EeGmnLk1tJji5A">
           <language>OCL</language>
           <body>self.componentOf->one(componentOf : cda::Component1 | not componentOf.oclIsUndefined() and componentOf.oclIsKindOf(cda::Component1))</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_bWrwQGlfEeG4boS-IbG8Zw" name="PatientCareReportAdvanceDirectivesSectionEntriesOptional" constrainedElement="_xs1LQWeQEeGtXKebdWh3hg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_bWsXUGlfEeG4boS-IbG8Zw">
+      <ownedRule xmi:id="_IJwzoIp1EeGmnLk1tJji5A" name="PatientCareReportAdvanceDirectivesSectionEntriesOptional" constrainedElement="_xs1LQWeQEeGtXKebdWh3hg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_IJxasIp1EeGmnLk1tJji5A">
           <language>OCL</language>
           <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AdvanceDirectivesSectionEntriesOptional))</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_bWuzk2lfEeG4boS-IbG8Zw" name="PatientCareReportAllergiesSectionEntriesOptional" constrainedElement="_xs1LQWeQEeGtXKebdWh3hg">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_bWuzlGlfEeG4boS-IbG8Zw">
+      <ownedRule xmi:id="_IJzP4Ip1EeGmnLk1tJji5A" name="PatientCareReportAllergiesSectionEntriesOptional" constrainedElement="_xs1LQWeQEeGtXKebdWh3hg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_IJzP4Yp1EeGmnLk1tJji5A">
           <language>OCL</language>
           <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AllergiesSectionEntriesOptional))</body>
         </specification>
@@ -68,57 +86,68 @@
       <generalization xmi:id="_xs3ngWeQEeGtXKebdWh3hg">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol/model/consol_Ecore.uml#_2DNRcBSVEeGGzu7fmW9pXw"/>
       </generalization>
-      <ownedOperation xmi:id="_bWuMgGlfEeG4boS-IbG8Zw" name="getAdvanceDirectivesSectionEntriesOptional" isQuery="true" bodyCondition="_bWuzkWlfEeG4boS-IbG8Zw">
-        <ownedRule xmi:id="_bWuzkWlfEeG4boS-IbG8Zw" name="body" constrainedElement="_bWuMgGlfEeG4boS-IbG8Zw">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_bWuzkmlfEeG4boS-IbG8Zw">
+      <ownedOperation xmi:id="_IJyo0Ip1EeGmnLk1tJji5A" name="getAdvanceDirectivesSectionEntriesOptional" isQuery="true" bodyCondition="_IJyo04p1EeGmnLk1tJji5A">
+        <ownedRule xmi:id="_IJyo04p1EeGmnLk1tJji5A" name="body" constrainedElement="_IJyo0Ip1EeGmnLk1tJji5A">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_IJyo1Ip1EeGmnLk1tJji5A">
             <language>OCL</language>
             <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AdvanceDirectivesSectionEntriesOptional))->asSequence()->first().oclAsType(consol::AdvanceDirectivesSectionEntriesOptional)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_bWuMgWlfEeG4boS-IbG8Zw" direction="return">
+        <ownedParameter xmi:id="_IJyo0Yp1EeGmnLk1tJji5A" direction="return">
           <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol/model/consol_Ecore.uml#_1RZdIBVdEeGQCvUGzi1kDQ"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bWuzkGlfEeG4boS-IbG8Zw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IJyo0op1EeGmnLk1tJji5A" value="1"/>
         </ownedParameter>
       </ownedOperation>
-      <ownedOperation xmi:id="_bWwBsGlfEeG4boS-IbG8Zw" name="getAllergiesSectionEntriesOptional" isQuery="true" bodyCondition="_bWwBs2lfEeG4boS-IbG8Zw">
-        <ownedRule xmi:id="_bWwBs2lfEeG4boS-IbG8Zw" name="body" constrainedElement="_bWwBsGlfEeG4boS-IbG8Zw">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_bWwBtGlfEeG4boS-IbG8Zw">
+      <ownedOperation xmi:id="_IJ0eAIp1EeGmnLk1tJji5A" name="getAllergiesSectionEntriesOptional" isQuery="true" bodyCondition="_IJ0eA4p1EeGmnLk1tJji5A">
+        <ownedRule xmi:id="_IJ0eA4p1EeGmnLk1tJji5A" name="body" constrainedElement="_IJ0eAIp1EeGmnLk1tJji5A">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_IJ0eBIp1EeGmnLk1tJji5A">
             <language>OCL</language>
             <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AllergiesSectionEntriesOptional))->asSequence()->first().oclAsType(consol::AllergiesSectionEntriesOptional)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_bWwBsWlfEeG4boS-IbG8Zw" direction="return">
+        <ownedParameter xmi:id="_IJ0eAYp1EeGmnLk1tJji5A" direction="return">
           <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol/model/consol_Ecore.uml#_bGzYgBVdEeGQCvUGzi1kDQ"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bWwBsmlfEeG4boS-IbG8Zw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IJ0eAop1EeGmnLk1tJji5A" value="1"/>
         </ownedParameter>
       </ownedOperation>
-      <ownedOperation xmi:id="_bW7A0GlfEeG4boS-IbG8Zw" name="getBilling" isQuery="true" bodyCondition="_bW7A02lfEeG4boS-IbG8Zw">
-        <ownedRule xmi:id="_bW7A02lfEeG4boS-IbG8Zw" name="body" constrainedElement="_bW7A0GlfEeG4boS-IbG8Zw">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_bW7A1GlfEeG4boS-IbG8Zw">
+      <ownedOperation xmi:id="_IKWCcIp1EeGmnLk1tJji5A" name="getBilling" isQuery="true" bodyCondition="_IKWpgop1EeGmnLk1tJji5A">
+        <ownedRule xmi:id="_IKWpgop1EeGmnLk1tJji5A" name="body" constrainedElement="_IKWCcIp1EeGmnLk1tJji5A">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_IKWpg4p1EeGmnLk1tJji5A">
             <language>OCL</language>
-            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::Billing))->asSequence()->first().oclAsType(emspcr::Billing)</body>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSBilling))->asSequence()->first().oclAsType(emspcr::EMSBilling)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_bW7A0WlfEeG4boS-IbG8Zw" type="_S-YTcGldEeG4boS-IbG8Zw" direction="return">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bW7A0mlfEeG4boS-IbG8Zw" value="1"/>
+        <ownedParameter xmi:id="_IKWpgIp1EeGmnLk1tJji5A" type="_S-YTcGldEeG4boS-IbG8Zw" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IKWpgYp1EeGmnLk1tJji5A" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_IMqWoIp1EeGmnLk1tJji5A" name="getSection" isQuery="true" bodyCondition="_IMqWo4p1EeGmnLk1tJji5A">
+        <ownedRule xmi:id="_IMqWo4p1EeGmnLk1tJji5A" name="body" constrainedElement="_IMqWoIp1EeGmnLk1tJji5A">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_IMqWpIp1EeGmnLk1tJji5A">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSInjuryIncidentDescription))->asSequence()->first().oclAsType(emspcr::EMSInjuryIncidentDescription)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_IMqWoYp1EeGmnLk1tJji5A" type="_3dRe0HSUEeGa4IXs2ghZEw" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IMqWoop1EeGmnLk1tJji5A" value="1"/>
         </ownedParameter>
       </ownedOperation>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_S-YTcGldEeG4boS-IbG8Zw" name="Billing">
-      <ownedRule xmi:id="_bWwowGlfEeG4boS-IbG8Zw" name="BillingTemplateId" constrainedElement="_S-YTcGldEeG4boS-IbG8Zw">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_bWwowWlfEeG4boS-IbG8Zw">
+    <packagedElement xmi:type="uml:Class" xmi:id="_S-YTcGldEeG4boS-IbG8Zw" name="EMSBilling">
+      <ownedRule xmi:id="_IJ1FEIp1EeGmnLk1tJji5A" name="EMSBillingTemplateId" constrainedElement="_S-YTcGldEeG4boS-IbG8Zw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_IJ1FEYp1EeGmnLk1tJji5A">
           <language>OCL</language>
           <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.17.3.10.1.5')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_bWyd8GlfEeG4boS-IbG8Zw" name="BillingCode" constrainedElement="_S-YTcGldEeG4boS-IbG8Zw">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_bWyd8WlfEeG4boS-IbG8Zw">
+      <ownedRule xmi:id="_IJ3hUIp1EeGmnLk1tJji5A" name="EMSBillingCode" constrainedElement="_S-YTcGldEeG4boS-IbG8Zw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_IJ3hUYp1EeGmnLk1tJji5A">
           <language>OCL</language>
-          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (self.code.oclIsKindOf(datatypes::CE) and &#xA;let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in (&#xA;value.code = '67659‐3' and value.codeSystem = '2.16.840.1.113883.6.1'))</body>
+          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (self.code.oclIsKindOf(datatypes::CE) and &#xD;&#xA;let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in &#xD;&#xA;value.code = '67659-3' and value.codeSystem = '2.16.840.1.113883.6.1')</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_bW7n4GlfEeG4boS-IbG8Zw" name="BillingLevelOfService" constrainedElement="_S-YTcGldEeG4boS-IbG8Zw">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_bW7n4WlfEeG4boS-IbG8Zw">
+      <ownedRule xmi:id="_IKXQkIp1EeGmnLk1tJji5A" name="EMSBillingLevelOfService" constrainedElement="_S-YTcGldEeG4boS-IbG8Zw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_IKXQkYp1EeGmnLk1tJji5A">
           <language>OCL</language>
           <body>self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(cda::Observation))</body>
         </specification>
@@ -126,30 +155,238 @@
       <generalization xmi:id="_S-YTcWldEeG4boS-IbG8Zw">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
       </generalization>
-      <ownedOperation xmi:id="_bW8O8GlfEeG4boS-IbG8Zw" name="getLevelOfService" isQuery="true" bodyCondition="_bW8O82lfEeG4boS-IbG8Zw">
-        <ownedRule xmi:id="_bW8O82lfEeG4boS-IbG8Zw" name="body" constrainedElement="_bW8O8GlfEeG4boS-IbG8Zw">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_bW8O9GlfEeG4boS-IbG8Zw">
+      <ownedOperation xmi:id="_IKYesIp1EeGmnLk1tJji5A" name="getLevelOfService" isQuery="true" bodyCondition="_IKYes4p1EeGmnLk1tJji5A">
+        <ownedRule xmi:id="_IKYes4p1EeGmnLk1tJji5A" name="body" constrainedElement="_IKYesIp1EeGmnLk1tJji5A">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_IKYetIp1EeGmnLk1tJji5A">
             <language>OCL</language>
             <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation))->asSequence()->first().oclAsType(cda::Observation)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_bW8O8WlfEeG4boS-IbG8Zw" direction="return">
+        <ownedParameter xmi:id="_IKYesYp1EeGmnLk1tJji5A" direction="return">
           <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bW8O8mlfEeG4boS-IbG8Zw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IKYesop1EeGmnLk1tJji5A" value="1"/>
         </ownedParameter>
       </ownedOperation>
-      <ownedOperation xmi:id="_bW82AGlfEeG4boS-IbG8Zw" name="getBillingCondition" isQuery="true" bodyCondition="_bW82A2lfEeG4boS-IbG8Zw">
-        <ownedRule xmi:id="_bW82A2lfEeG4boS-IbG8Zw" name="body" constrainedElement="_bW82AGlfEeG4boS-IbG8Zw">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_bW82BGlfEeG4boS-IbG8Zw">
+      <ownedOperation xmi:id="_IKZFwIp1EeGmnLk1tJji5A" name="getBillingCondition" isQuery="true" bodyCondition="_IKZFw4p1EeGmnLk1tJji5A">
+        <ownedRule xmi:id="_IKZFw4p1EeGmnLk1tJji5A" name="body" constrainedElement="_IKZFwIp1EeGmnLk1tJji5A">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_IKZFxIp1EeGmnLk1tJji5A">
             <language>OCL</language>
             <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation))->asSequence()->first().oclAsType(cda::Observation)</body>
           </specification>
         </ownedRule>
-        <ownedParameter xmi:id="_bW82AWlfEeG4boS-IbG8Zw" direction="return">
+        <ownedParameter xmi:id="_IKZFwYp1EeGmnLk1tJji5A" direction="return">
           <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bW82AmlfEeG4boS-IbG8Zw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IKZFwop1EeGmnLk1tJji5A" value="1"/>
         </ownedParameter>
       </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3dRe0HSUEeGa4IXs2ghZEw" name="EMSInjuryIncidentDescription">
+      <ownedRule xmi:id="_IKZs0Ip1EeGmnLk1tJji5A" name="EMSInjuryIncidentDescriptionTemplateId" constrainedElement="_3dRe0HSUEeGa4IXs2ghZEw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_IKZs0Yp1EeGmnLk1tJji5A">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.17.3.10.1.17')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_IKcJEIp1EeGmnLk1tJji5A" name="EMSInjuryIncidentDescriptionCode" constrainedElement="_3dRe0HSUEeGa4IXs2ghZEw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_IKcJEYp1EeGmnLk1tJji5A">
+          <language>OCL</language>
+          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and &#xD;&#xA;let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in &#xD;&#xA;value.code = '11374-6' and value.codeSystem = '2.16.840.1.113883.6.1')</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_3dSF4HSUEeGa4IXs2ghZEw">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedOperation xmi:id="_ILX9MIp1EeGmnLk1tJji5A" name="getInjuryCauseCategory" isQuery="true" bodyCondition="_ILYkQYp1EeGmnLk1tJji5A">
+        <ownedRule xmi:id="_ILYkQYp1EeGmnLk1tJji5A" name="body" constrainedElement="_ILX9MIp1EeGmnLk1tJji5A">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_ILYkQop1EeGmnLk1tJji5A">
+            <language>OCL</language>
+            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation))->asSequence()->first().oclAsType(cda::Observation)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_ILX9MYp1EeGmnLk1tJji5A" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ILYkQIp1EeGmnLk1tJji5A" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_ILYkQ4p1EeGmnLk1tJji5A" name="getInjuryMechanism" isQuery="true" bodyCondition="_ILYkRop1EeGmnLk1tJji5A">
+        <ownedRule xmi:id="_ILYkRop1EeGmnLk1tJji5A" name="body" constrainedElement="_ILYkQ4p1EeGmnLk1tJji5A">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_ILYkR4p1EeGmnLk1tJji5A">
+            <language>OCL</language>
+            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation))->asSequence()->first().oclAsType(cda::Observation)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_ILYkRIp1EeGmnLk1tJji5A" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ILYkRYp1EeGmnLk1tJji5A" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_IMnTUIp1EeGmnLk1tJji5A" name="getTraumaCenterCriteria" isQuery="true" bodyCondition="_IMnTU4p1EeGmnLk1tJji5A">
+        <ownedRule xmi:id="_IMnTU4p1EeGmnLk1tJji5A" name="body" constrainedElement="_IMnTUIp1EeGmnLk1tJji5A">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_IMnTVIp1EeGmnLk1tJji5A">
+            <language>OCL</language>
+            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation))->asSequence()->first().oclAsType(cda::Observation)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_IMnTUYp1EeGmnLk1tJji5A" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IMnTUop1EeGmnLk1tJji5A" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_IMn6YIp1EeGmnLk1tJji5A" name="getInjuryRiskFactor" isQuery="true" bodyCondition="_IMn6Y4p1EeGmnLk1tJji5A">
+        <ownedRule xmi:id="_IMn6Y4p1EeGmnLk1tJji5A" name="body" constrainedElement="_IMn6YIp1EeGmnLk1tJji5A">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_IMn6ZIp1EeGmnLk1tJji5A">
+            <language>OCL</language>
+            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation))->asSequence()->first().oclAsType(cda::Observation)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_IMn6YYp1EeGmnLk1tJji5A" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IMn6Yop1EeGmnLk1tJji5A" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_IMn6ZYp1EeGmnLk1tJji5A" name="getVehicleImpactArea" isQuery="true" bodyCondition="_IMn6aIp1EeGmnLk1tJji5A">
+        <ownedRule xmi:id="_IMn6aIp1EeGmnLk1tJji5A" name="body" constrainedElement="_IMn6ZYp1EeGmnLk1tJji5A">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_IMohcIp1EeGmnLk1tJji5A">
+            <language>OCL</language>
+            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation))->asSequence()->first().oclAsType(cda::Observation)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_IMn6Zop1EeGmnLk1tJji5A" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IMn6Z4p1EeGmnLk1tJji5A" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_IMohcYp1EeGmnLk1tJji5A" name="getPatientLocationInVehicle" isQuery="true" bodyCondition="_IMohdIp1EeGmnLk1tJji5A">
+        <ownedRule xmi:id="_IMohdIp1EeGmnLk1tJji5A" name="body" constrainedElement="_IMohcYp1EeGmnLk1tJji5A">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_IMohdYp1EeGmnLk1tJji5A">
+            <language>OCL</language>
+            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation))->asSequence()->first().oclAsType(cda::Observation)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_IMohcop1EeGmnLk1tJji5A" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IMohc4p1EeGmnLk1tJji5A" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_IMpIgIp1EeGmnLk1tJji5A" name="getVehicleOccupantSafetyEquipment" isQuery="true" bodyCondition="_IMpIg4p1EeGmnLk1tJji5A">
+        <ownedRule xmi:id="_IMpIg4p1EeGmnLk1tJji5A" name="body" constrainedElement="_IMpIgIp1EeGmnLk1tJji5A">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_IMpIhIp1EeGmnLk1tJji5A">
+            <language>OCL</language>
+            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation))->asSequence()->first().oclAsType(cda::Observation)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_IMpIgYp1EeGmnLk1tJji5A" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IMpIgop1EeGmnLk1tJji5A" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_IMpIhYp1EeGmnLk1tJji5A" name="getAirbagDeploymentStatus" isQuery="true" bodyCondition="_IMpIiIp1EeGmnLk1tJji5A">
+        <ownedRule xmi:id="_IMpIiIp1EeGmnLk1tJji5A" name="body" constrainedElement="_IMpIhYp1EeGmnLk1tJji5A">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_IMpvkIp1EeGmnLk1tJji5A">
+            <language>OCL</language>
+            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation))->asSequence()->first().oclAsType(cda::Observation)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_IMpIhop1EeGmnLk1tJji5A" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IMpIh4p1EeGmnLk1tJji5A" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_IMpvkYp1EeGmnLk1tJji5A" name="getHeightOfFall" isQuery="true" bodyCondition="_IMpvlIp1EeGmnLk1tJji5A">
+        <ownedRule xmi:id="_IMpvlIp1EeGmnLk1tJji5A" name="body" constrainedElement="_IMpvkYp1EeGmnLk1tJji5A">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_IMpvlYp1EeGmnLk1tJji5A">
+            <language>OCL</language>
+            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation))->asSequence()->first().oclAsType(cda::Observation)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_IMpvkop1EeGmnLk1tJji5A" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IMpvk4p1EeGmnLk1tJji5A" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_pIikMHwDEeGW3cDolvqrTA" name="EMSCardiacArrestEvent">
+      <ownedRule xmi:id="_ILaZcIp1EeGmnLk1tJji5A" name="EMSCardiacArrestEventTemplateId" constrainedElement="_pIikMHwDEeGW3cDolvqrTA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ILaZcYp1EeGmnLk1tJji5A">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.17.3.10.1.14')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_ILc1sIp1EeGmnLk1tJji5A" name="EMSCardiacArrestEventCode" constrainedElement="_pIikMHwDEeGW3cDolvqrTA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ILc1sYp1EeGmnLk1tJji5A">
+          <language>OCL</language>
+          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (self.code.oclIsKindOf(datatypes::CE) and &#xD;&#xA;let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in &#xD;&#xA;value.code = '67799-7' and value.codeSystem = '2.16.840.1.113883.6.1')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_ILggEIp1EeGmnLk1tJji5A" name="EMSCardiacArrestEventTitle" constrainedElement="_pIikMHwDEeGW3cDolvqrTA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ILggEYp1EeGmnLk1tJji5A">
+          <language>OCL</language>
+          <body>(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined() and self.title.getText() = 'EMS Cardiac Arrest Event')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_IMbGEIp1EeGmnLk1tJji5A" name="EMSCardiacArrestEventCardiacArrestExistence" constrainedElement="_pIikMHwDEeGW3cDolvqrTA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_IMbGEYp1EeGmnLk1tJji5A">
+          <language>OCL</language>
+          <body>self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(cda::Observation))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_pIlAcHwDEeGW3cDolvqrTA">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedOperation xmi:id="_IMcUMIp1EeGmnLk1tJji5A" name="getCardiacArrestExistence" isQuery="true" bodyCondition="_IMcUM4p1EeGmnLk1tJji5A">
+        <ownedRule xmi:id="_IMcUM4p1EeGmnLk1tJji5A" name="body" constrainedElement="_IMcUMIp1EeGmnLk1tJji5A">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_IMcUNIp1EeGmnLk1tJji5A">
+            <language>OCL</language>
+            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(cda::Observation))->asSequence()->first().oclAsType(cda::Observation)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_IMcUMYp1EeGmnLk1tJji5A" direction="return">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IMcUMop1EeGmnLk1tJji5A" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_i4C-AH9aEeGht55Sz1eBOw" name="EMSAdvanceDirectives">
+      <ownedRule xmi:id="_IMf-kIp1EeGmnLk1tJji5A" name="EMSAdvanceDirectivesTemplateId" constrainedElement="_i4C-AH9aEeGht55Sz1eBOw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_IMf-kYp1EeGmnLk1tJji5A">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.17.3.10.1.12')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_IMjB4Ip1EeGmnLk1tJji5A" name="EMSAdvanceDirectivesCode" constrainedElement="_i4C-AH9aEeGht55Sz1eBOw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_IMjB4Yp1EeGmnLk1tJji5A">
+          <language>OCL</language>
+          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (self.code.oclIsKindOf(datatypes::CE) and &#xD;&#xA;let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in &#xD;&#xA;value.code = '67840-9' and value.codeSystem = '2.16.840.1.113883.6.1')</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_kG590H9aEeGht55Sz1eBOw">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_nSjIgH9cEeGht55Sz1eBOw" name="EMSAllergiesAndAdverseReactions">
+      <ownedRule xmi:id="_IMleIIp1EeGmnLk1tJji5A" name="EMSAllergiesAndAdverseReactionsTemplateId" constrainedElement="_nSjIgH9cEeGht55Sz1eBOw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_IMleIYp1EeGmnLk1tJji5A">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.17.3.10.1.13')</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_p8HLwH9cEeGht55Sz1eBOw">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_aDO5AIcnEeGqF6qfYwLiQw" name="EMSCurrentMedicationSection">
+      <ownedComment xmi:id="_1bUEcIcnEeGqF6qfYwLiQw">
+        <body>NEMSIS Trace: EHistory.12</body>
+      </ownedComment>
+      <ownedRule xmi:id="_IMrkwIp1EeGmnLk1tJji5A" name="EMSCurrentMedicationSectionCode" constrainedElement="_aDO5AIcnEeGqF6qfYwLiQw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_IMrkwYp1EeGmnLk1tJji5A">
+          <language>OCL</language>
+          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (self.code.oclIsKindOf(datatypes::CE) and &#xD;&#xA;let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in &#xD;&#xA;value.code = '67844-1' and value.codeSystem = '2.16.840.1.113883.6.1')</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_cWgjMIcnEeGqF6qfYwLiQw">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+      </generalization>
     </packagedElement>
     <profileApplication xmi:id="_xpUkQWeQEeGtXKebdWh3hg">
       <eAnnotations xmi:id="_xpUkQmeQEeGtXKebdWh3hg" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -163,8 +400,8 @@
       </eAnnotations>
       <appliedProfile href="pathmap://CDA_PROFILES/CDA.profile.uml#_cxOJEIEVEd6H8o-hO3-B4Q"/>
     </profileApplication>
-    <profileApplication xmi:id="_bV8JYGlfEeG4boS-IbG8Zw">
-      <eAnnotations xmi:id="_bV9XgGlfEeG4boS-IbG8Zw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <profileApplication xmi:id="_IIUCIIp1EeGmnLk1tJji5A">
+      <eAnnotations xmi:id="_IIUCIYp1EeGmnLk1tJji5A" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA"/>
       </eAnnotations>
       <appliedProfile href="pathmap://UML_PROFILES/Ecore.profile.uml#_0"/>
@@ -172,28 +409,100 @@
   </uml:Package>
   <CDA:CodegenSupport xmi:id="_xs1LQGeQEeGtXKebdWh3hg" basePackage="org.openhealthtools.mdht.uml.cda" nsPrefix="emspcr" nsURI="http://www.openhealthtools.org/mdht/uml/cda/emspcr" packageName="emspcr" prefix="emspcr" base_Namespace="_xpUkQGeQEeGtXKebdWh3hg"/>
   <CDA:CDATemplate xmi:id="_xs3ngGeQEeGtXKebdWh3hg" base_Class="_xs1LQWeQEeGtXKebdWh3hg" templateId="2.16.840.1.113883.17.3.10.1" assigningAuthorityName=""/>
+  <CDA:PropertyValidation xmi:id="_0IF3U2eREeGtXKebdWh3hg">
+    <ruleId>CONF:5261</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_0pgRkGetEeGtXKebdWh3hg"/>
+  <CDA:PropertyValidation xmi:id="_NkgWkGeuEeGtXKebdWh3hg"/>
+  <CDA:PropertyValidation xmi:id="_iLBHkGeuEeGtXKebdWh3hg"/>
+  <CDA:PropertyValidation xmi:id="_TAlPsGlZEeG4boS-IbG8Zw"/>
+  <CDA:PropertyValidation xmi:id="_TblwsGlZEeG4boS-IbG8Zw"/>
+  <CDA:PropertyValidation xmi:id="_x7o9MGlaEeG4boS-IbG8Zw"/>
   <CDA:CDATemplate xmi:id="_WJI_QGldEeG4boS-IbG8Zw" base_Class="_S-YTcGldEeG4boS-IbG8Zw" templateId="2.16.840.1.113883.17.3.10.1.5"/>
-  <Ecore:EPackage xmi:id="_bV_MsGlfEeG4boS-IbG8Zw" base_Package="_xpUkQGeQEeGtXKebdWh3hg" packageName="emspcr" nsPrefix="emspcr" nsURI="http://www.openhealthtools.org/mdht/uml/cda/emspcr" basePackage="org.openhealthtools.mdht.uml.cda" prefix="emspcr"/>
-  <CDA:ConformsTo xmi:id="_bWAa0GlfEeG4boS-IbG8Zw" base_Generalization="_xs3ngWeQEeGtXKebdWh3hg"/>
-  <Ecore:EClass xmi:id="_bWCQAGlfEeG4boS-IbG8Zw" base_Class="_xs1LQWeQEeGtXKebdWh3hg">
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' templateId.root='2.16.840.1.113883.17.3.10.1' code.displayName='EMS Patient Care Report' constraints.validation.error='PatientCareReportTemplateId PatientCareReportClassCode PatientCareReportMoodCode PatientCareReportSetId GeneralHeaderConstraintsCode' code.codeSystemName='LOINC' classCode='DOCCLIN' constraints.validation.warning='PatientCareReportAdvanceDirectivesSectionEntriesOptional PatientCareReportAllergiesSectionEntriesOptional' code.code='67796-3' moodCode='EVN' constraints.validation.info='PatientCareReportHumanAuthor PatientCareReportComponentOf'</annotation>
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportRecordTarget contextControlCode='OP' constraints.validation.error='RecordTargetTypeId RecordTargetContextControlCode'</annotation>
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportRecordTargetPatientRole constraints.validation.error='PatientRoleClassCode' classCode='PAT'</annotation>
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportAuthor constraints.validation.error='AuthorTypeCode' typeCode='AUT'</annotation>
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportAuthorAssignedAuthor constraints.validation.error='AssignedAuthorClassCode' classCode='ASSIGNED'</annotation>
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportHumanAuthorAssignedAuthor constraints.validation.error='AssignedAuthorId AssignedAuthorAddr AssignedAuthorTelecom'</annotation>
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportComponentOf constraints.validation.error='ComponentOfTypeCode' typeCode='COMP'</annotation>
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportComponentOfEncompassingEncounter constraints.validation.error='EncompassingEncounterClassCode EncompassingEncounterMoodCode EncompassingEncounterEffectiveTime' classCode='ENC' moodCode='EVN'</annotation>
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportComponentOfEncompassingEncounterLocation constraints.validation.error='LocationHealthCareFacility'</annotation>
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportComponentOfEncompassingEncounterLocationHealthCareFacility constraints.validation.error='HealthCareFacilityId HealthCareFacilityClassCode HealthCareFacilityPlace' classCode='SDLOC'</annotation>
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportComponentOfEncompassingEncounterLocationHealthCareFacilityPlace classCode.codeSystem='2.16.840.1.113883.6.3' classCode.codeSystemName='ICD-10' constraints.validation.info='PlaceName PlaceAddr'</annotation>
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportDestinationParticipantAssociatedEntity code.codeSystem='2.16.840.1.113993.17.3.5.69' constraints.validation.error='AssociatedEntityAddr AssociatedEntityCode AssociatedEntityAssociatedPerson AssociatedEntityOrganization' code.codeSystemName='Facility Type'</annotation>
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportDestinationParticipantAssociatedEntityPerson constraints.validation.error='PersonName'</annotation>
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportDestinationParticipantAssociatedEntityOrganization constraints.validation.error='OrganizationName'</annotation>
+  <CDA:ValueSetConstraint xmi:id="_-lMo8HSCEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.1.11.1" name="HL7 AdministrativeGenderCode"/>
+  <CDA:CDATemplate xmi:id="_EFDesHSVEeGa4IXs2ghZEw" base_Class="_3dRe0HSUEeGa4IXs2ghZEw" templateId="2.16.840.1.113883.17.3.10.1.17"/>
+  <CDA:PropertyValidation xmi:id="_djjwEns9EeGs2I-Db78R9w">
+    <ruleId>CONF:5372</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ValueSetConstraint xmi:id="_djk-MHs9EeGs2I-Db78R9w">
+    <reference href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/consol-vocab.uml#_2SbZNRSVEeGGzu7fmW9pXw"/>
+  </CDA:ValueSetConstraint>
+  <CDA:CDATemplate xmi:id="_uyNtAHwEEeGW3cDolvqrTA" base_Class="_pIikMHwDEeGW3cDolvqrTA" templateId="2.16.840.1.113883.17.3.10.1.14"/>
+  <CDA:CDATemplate xmi:id="_19lEcH9aEeGht55Sz1eBOw" base_Class="_i4C-AH9aEeGht55Sz1eBOw" templateId="2.16.840.1.113883.17.3.10.1.12"/>
+  <CDA:CDATemplate xmi:id="_vwwq8H9cEeGht55Sz1eBOw" base_Class="_nSjIgH9cEeGht55Sz1eBOw" templateId="2.16.840.1.113883.17.3.10.1.13"/>
+  <Ecore:EPackage xmi:id="_IIb98Ip1EeGmnLk1tJji5A" base_Package="_xpUkQGeQEeGtXKebdWh3hg" packageName="emspcr" nsPrefix="emspcr" nsURI="http://www.openhealthtools.org/mdht/uml/cda/emspcr" basePackage="org.openhealthtools.mdht.uml.cda" prefix="emspcr"/>
+  <CDA:ConformsTo xmi:id="_IIclAIp1EeGmnLk1tJji5A" base_Generalization="_xs3ngWeQEeGtXKebdWh3hg"/>
+  <Ecore:EClass xmi:id="_IIdzIIp1EeGmnLk1tJji5A" base_Class="_xs1LQWeQEeGtXKebdWh3hg">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' templateId.root='2.16.840.1.113883.17.3.10.1' code.displayName='EMS Patient Care Report' constraints.validation.error='PatientCareReportTemplateId PatientCareReportClassCode PatientCareReportMoodCode GeneralHeaderConstraintsCode PatientCareReportCode PatientCareReportId PatientCareReportTitle' code.codeSystemName='LOINC' classCode='DOCCLIN' constraints.validation.warning='PatientCareReportAdvanceDirectivesSectionEntriesOptional PatientCareReportAllergiesSectionEntriesOptional' code.code='67796-3' constraints.validation.info='PatientCareReportVersionNumber PatientCareReportHumanAuthor PatientCareReportComponentOf' moodCode='EVN'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSRecordTargetPatientRole constraints.validation.error='PatientRoleAddr'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSRecordTargetPatientRolePatient constraints.validation.error='PatientAdministrativeGenderCode'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSAuthoringDeviceParticipation constraints.validation.error='EMSAuthoringDeviceParticipationTypeCode' typeCode='AUT'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSAuthoringDeviceParticipationEMSAuthoringDeviceRole constraints.validation.error='EMSAuthoringDeviceRoleClassCode' classCode='ASSIGNED'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSAuthoringDeviceParticipationEMSAuthoringDeviceRoleEMSAuthoringDevice constraints.validation.error='EMSAuthoringDeviceManufacturerModelName EMSAuthoringDeviceSoftwareName'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSHumanAuthorParticipationEMSHumanAuthorRole constraints.validation.error='EMSHumanAuthorRoleId EMSHumanAuthorRoleAddr EMSHumanAuthorRoleTelecom'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSHumanAuthorParticipationEMSHumanAuthorRoleEMSHumanAuthor constraints.validation.error='EMSHumanAuthorName'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSEncompassingEncounterRelationship constraints.validation.error='EMSEncompassingEncounterRelationshipTypeCode' typeCode='COMP'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSEncompassingEncounterRelationshipEncompassingEncounter constraints.validation.error='EncompassingEncounterEffectiveTime'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSEncompassingEncounterRelationshipEncompassingEncounterLocation constraints.validation.error='LocationHealthCareFacility'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSEncompassingEncounterRelationshipEncompassingEncounterLocationHealthCareFacility constraints.validation.error='HealthCareFacilityId HealthCareFacilityPlace'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSEncompassingEncounterRelationshipEncompassingEncounterLocationHealthCareFacilityPlace constraints.validation.error='PlaceClassCode' classCode='PLC' constraints.validation.info='PlaceName PlaceAddr'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSDestinationParticipantAssociatedEntity code.codeSystem='2.16.840.1.113993.17.3.5.69' constraints.validation.error='AssociatedEntityAddr AssociatedEntityCode AssociatedEntityCodeP AssociatedEntityAssociatedPerson AssociatedEntityOrganization' code.codeSystemName='Facility Type'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSDestinationParticipantAssociatedEntityPerson constraints.validation.error='PersonName'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSDestinationParticipantAssociatedEntityOrganization constraints.validation.error='OrganizationName'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSParentDocumentRelationship typeCode='RPLC'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSDestinationParticipantParticipation typeCode='DST'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSMedicalHistory code.codeSystem='2.16.840.1.113883.6.1' code.displayName='EMS History of past illness' constraints.validation.error='EMSMedicalHistoryCode' code.codeSystemName='LOINC' code.code='67842-5'</annotation>
   </Ecore:EClass>
-  <Ecore:EClass xmi:id="_bWxP0GlfEeG4boS-IbG8Zw" base_Class="_S-YTcGldEeG4boS-IbG8Zw">
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' templateId.root='2.16.840.1.113883.17.3.10.1.5' constraints.validation.error='BillingTemplateId BillingCode BillingLevelOfService' code.codeSystemName='LOINC' code.code='67659‐3'</annotation>
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrBillingLevelOfService value.codeSystemName='LOINC' code.codeSystem='2.16.840.1.113883.6.1' constraints.validation.error='LevelOfServiceCode LevelOfServiceValue' code.codeSystemName='LOINC' code.code='67556‐1' value.codeSystem='2.16.840.1.113883.6.1'</annotation>
-    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrBillingBillingCondition code.codeSystem='2.16.840.1.113883.6.1' constraints.validation.error='BillingConditionCode BillingConditionValue' code.codeSystemName='LOINC'</annotation>
+  <Ecore:EClass xmi:id="_IJ1sIIp1EeGmnLk1tJji5A" base_Class="_S-YTcGldEeG4boS-IbG8Zw">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' templateId.root='2.16.840.1.113883.17.3.10.1.5' constraints.validation.error='EMSBillingTemplateId EMSBillingCode EMSBillingLevelOfService' code.codeSystemName='LOINC' code.code='67659-3'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSBillingLevelOfService value.codeSystemName='LOINC' code.codeSystem='2.16.840.1.113883.6.1' code.displayName='EMS level of service' constraints.validation.error='LevelOfServiceCode LevelOfServiceCodeP LevelOfServiceValue LevelOfServiceValueP' code.codeSystemName='LOINC' code.code='69464-6' value.codeSystem='2.16.840.1.113883.6.1'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSBillingBillingCondition value.codeSystemName='LOINC' code.codeSystem='2.16.840.1.113883.6.1' constraints.validation.error='BillingConditionCode BillingConditionCodeVS BillingConditionCodeP BillingConditionValue BillingConditionValueP' code.codeSystemName='LOINC' code.code='67556-1' value.codeSystem='2.16.840.1.113883.6.1'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_IKaT4Ip1EeGmnLk1tJji5A" base_Class="_3dRe0HSUEeGa4IXs2ghZEw">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' templateId.root='2.16.840.1.113883.17.3.10.1.17' code.displayName='Injury incident description' constraints.validation.error='EMSInjuryIncidentDescriptionTemplateId EMSInjuryIncidentDescriptionCode' code.codeSystemName='LOINC' code.code='11374-6'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSInjuryIncidentDescriptionInjuryCauseCategory code.codeSystem='2.16.840.1.113883.6.1' code.displayName='Injury Cause' constraints.validation.error='InjuryCauseCategoryCode' code.codeSystemName='LOINC' code.code='69543-7'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSInjuryIncidentDescriptionInjuryMechanism code.codeSystem='2.16.840.1.113883.6.1' code.displayName='Injury Mechanism' constraints.validation.error='InjuryMechanismCode' code.codeSystemName='LOINC' code.code='67494-5'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSInjuryIncidentDescriptionTraumaCenterCriteria code.codeSystem='2.16.840.1.113883.6.1' code.displayName='Trauma Center Critieria' constraints.validation.error='TraumaCenterCriteriaCode' code.codeSystemName='LOINC' code.code='67495-2'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSInjuryIncidentDescriptionInjuryRiskFactor code.codeSystem='2.16.840.1.113883.6.1' code.displayName='Other injury risk factors' constraints.validation.error='InjuryRiskFactorCode' code.codeSystemName='LOINC' code.code='67496-0'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSInjuryIncidentDescriptionVehicleImpactArea code.codeSystem='2.16.840.1.113883.6.1' code.displayName='Location of impact on the vehicle' constraints.validation.error='VehicleImpactAreaCode' code.codeSystemName='LOINC' code.code='67497-8'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSInjuryIncidentDescriptionPatientLocationInVehicle code.codeSystem='2.16.840.1.113883.6.1' code.displayName='Location of patient in vehicle' constraints.validation.error='PatientLocationInVehicleCode' code.codeSystemName='LOINC' code.code='67498-6'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSInjuryIncidentDescriptionVehicleOccupantSafetyEquipment code.codeSystem='2.16.840.1.113883.6.1' code.displayName='Safety equipment' constraints.validation.error='VehicleOccupantSafetyEquipmentCode' code.codeSystemName='LOINC' code.code='67499-4'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSInjuryIncidentDescriptionAirbagDeploymentStatus code.codeSystem='2.16.840.1.113883.6.1' code.displayName='Airbag deployment' constraints.validation.error='AirbagDeploymentStatusCode' code.codeSystemName='LOINC' code.code='67500-9'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSInjuryIncidentDescriptionHeightOfFall code.codeSystem='2.16.840.1.113883.6.1' code.displayName='Height of fall' constraints.validation.error='HeightOfFallCode' code.codeSystemName='LOINC' code.code='67501-7'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSInjuryIncidentDescriptionDisasterType code.codeSystem='2.16.840.1.113883.6.1' code.displayName='Suspected intentional or unintentional disaster' constraints.validation.error='DisasterTypeCode' code.codeSystemName='LOINC' code.code='69463-8'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_ILbAgIp1EeGmnLk1tJji5A" base_Class="_pIikMHwDEeGW3cDolvqrTA">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation title.mixed='EMS Cardiac Arrest Event' code.codeSystem='2.16.840.1.113883.6.1' code.displayName='EMS CARDIAC ARREST EVENT' templateId.root='2.16.840.1.113883.17.3.10.1.14' constraints.validation.error='EMSCardiacArrestEventTemplateId EMSCardiacArrestEventCode EMSCardiacArrestEventCardiacArrestExistence' code.codeSystemName='LOINC' constraints.validation.warning='EMSCardiacArrestEventTitle' code.code='67799-7'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventCardiacArrestExistence value.displayName='cardiac arrest' value.codeSystemName='SNOMEDCT' code.codeSystem='2.16.840.1.113883.5.4' code.displayName='ASSERTION' value.code='410429000' constraints.validation.error='CardiacArrestExistenceCode CardiacArrestExistenceValue' code.codeSystemName='HL7ActCode' code.code='ASSERTION' value.codeSystem='2.16.840.1.113883.6.96'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventCardiacArrestExistenceCardiacArrestTimingRelationship inversionInd='TRUE' constraints.validation.error='CardiacArrestTimingRelationshipInversionInd' typeCode='SUBJ'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventCardiacArrestExistenceCardiacArrestTimingRelationshipCardiacArrestTiming code.codeSystem='2.16.840.1.113883.6.1' constraints.validation.error='CardiacArrestTimingCode' code.codeSystemName='LOINC' code.code='67502-5'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventCardiacArrestExistenceCardiacArrestCauseRelationship inversionInd='TRUE' typeCode='SUBJ'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventCardiacArrestExistenceCardiacArrestCauseRelationshipCardiacArrestCause code.codeSystem='2.16.840.1.113883.6.1' code.displayName='Cardiac arrest cause' constraints.validation.error='CardiacArrestCauseCode' code.codeSystemName='LOINC' code.code='67503-3'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventCardiacArrestExistenceCardiacArrestInformantParticipation typeCode='INF'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventCardiacArrestExistenceCardiacArrestInformantParticipationCardiacArrestInformantRole classCode='AGNT'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventCardiacArrestExistencePriorCPRRelationship inversionInd='TRUE' typeCode='SUBJ'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventCardiacArrestExistencePriorCPRRelationshipPriorCPR code.codeSystem='2.16.840.1.113883.6.1' code.displayName='CPR prior to EMS arrival' constraints.validation.error='PriorCPRCode' code.codeSystemName='LOINC' code.code='67506-6'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventCardiacArrestExistencePriorCPRRelationshipPriorCPRPriorCPRProviderParticipation typeCode='RESP'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventCardiacArrestExistencePriorAEDRelationship inversionInd='TRUE' typeCode='SUBJ'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventCardiacArrestExistencePriorAEDRelationshipPriorAEDUse code.codeSystem='2.16.840.1.113883.6.1' code.displayName='AED use prior to EMS arrival' constraints.validation.error='PriorAEDUseCode' code.codeSystemName='LOINC' code.code='67508-2'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventCardiacArrestExistencePriorAEDRelationshipPriorAEDUsePriorAEDProviderParticipation typeCode='RESP'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventCardiacArrestExistenceArrestRhythmRelationship inversionInd='TRUE' typeCode='SUBJ'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventCardiacArrestExistenceArrestRhythmRelationshipArrestRhythm code.codeSystem='2.16.840.1.113883.6.1' code.displayName='First monitored rhythm' constraints.validation.error='ArrestRhythmCode' code.codeSystemName='LOINC' code.code='67512-4'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventCardiacArrestExistenceSpontaneousCirculationRelationship inversionInd='TRUE' typeCode='SUBJ'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventCardiacArrestExistenceSpontaneousCirculationRelationshipReturnOfSpontaneousCirculation code.codeSystem='2.16.840.1.113883.6.1' code.displayName='Return of spontaneous circulation' constraints.validation.error='ReturnOfSpontaneousCirculationCode' code.codeSystemName='LOINC' code.code='67513-2'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventCardiacArrestExistenceDestinationRhythmRelationship inversionInd='TRUE' typeCode='SUBJ'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventCardiacArrestExistenceDestinationRhythmRelationshipDestinationRhythm code.codeSystem='2.16.840.1.113883.6.1' code.displayName='Cardiac rhythm' constraints.validation.error='DestinationRhythmCode' code.codeSystemName='LOINC' code.code='67519-9'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_IMgloIp1EeGmnLk1tJji5A" base_Class="_i4C-AH9aEeGht55Sz1eBOw">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' templateId.root='2.16.840.1.113883.17.3.10.1.12' code.displayName='EMS Advance Directives' constraints.validation.error='EMSAdvanceDirectivesTemplateId EMSAdvanceDirectivesCode' code.codeSystemName='LOINC' code.code='67840-9'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_IMmFMIp1EeGmnLk1tJji5A" base_Class="_nSjIgH9cEeGht55Sz1eBOw">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.17.3.10.1.13' constraints.validation.error='EMSAllergiesAndAdverseReactionsTemplateId'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_IMq9sIp1EeGmnLk1tJji5A" base_Class="_aDO5AIcnEeGqF6qfYwLiQw">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.displayName='EMS Current Medications' constraints.validation.error='EMSCurrentMedicationSectionCode' code.codeSystemName='LOINC' code.code='67844-1'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCurrentMedicationSectionCurrentlyOnMedication code.codeSystem='2.16.840.1.113883.6.1' code.displayName='Currently on medication' constraints.validation.error='CurrentlyOnMedicationCode' code.codeSystemName='LOINC' code.code='67791-4'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCurrentMedicationSectionPatientOnAnticoagulants code.codeSystem='2.16.840.1.113883.6.1' constraints.validation.error='PatientOnAnticoagulantsCode' code.codeSystemName='LOINC' code.code='69749-0'</annotation>
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCurrentMedicationSectionEMSCurrentMedicationEMSCurrentMedicationConsumableEMSCurrentMedicationProductEMSCurrentMedicationDrug code.codeSystem='2.16.840.1.113883.6.88' constraints.validation.error='EMSCurrentMedicationDrugCode' code.codeSystemName='RxNorm'</annotation>
   </Ecore:EClass>
 </xmi:XMI>
