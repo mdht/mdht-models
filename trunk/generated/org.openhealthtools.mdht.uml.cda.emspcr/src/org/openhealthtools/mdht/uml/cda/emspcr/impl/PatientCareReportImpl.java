@@ -14,9 +14,11 @@ import org.eclipse.emf.ecore.EClass;
 
 import org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSectionEntriesOptional;
 import org.openhealthtools.mdht.uml.cda.consol.AllergiesSectionEntriesOptional;
+
 import org.openhealthtools.mdht.uml.cda.consol.impl.GeneralHeaderConstraintsImpl;
 
-import org.openhealthtools.mdht.uml.cda.emspcr.Billing;
+import org.openhealthtools.mdht.uml.cda.emspcr.EMSBilling;
+import org.openhealthtools.mdht.uml.cda.emspcr.EMSInjuryIncidentDescription;
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.PatientCareReport;
 
@@ -81,9 +83,39 @@ public class PatientCareReportImpl extends GeneralHeaderConstraintsImpl implemen
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validatePatientCareReportSetId(DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validatePatientCareReportCode(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return PatientCareReportOperations.validatePatientCareReportSetId(this, diagnostics, context);
+    return PatientCareReportOperations.validatePatientCareReportCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validatePatientCareReportVersionNumber(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return PatientCareReportOperations.validatePatientCareReportVersionNumber(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validatePatientCareReportId(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return PatientCareReportOperations.validatePatientCareReportId(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validatePatientCareReportTitle(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return PatientCareReportOperations.validatePatientCareReportTitle(this, diagnostics, context);
   }
 
   /**
@@ -151,9 +183,19 @@ public class PatientCareReportImpl extends GeneralHeaderConstraintsImpl implemen
    * <!-- end-user-doc -->
    * @generated
    */
-  public Billing getBilling()
+  public EMSBilling getBilling()
   {
     return PatientCareReportOperations.getBilling(this);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EMSInjuryIncidentDescription getSection()
+  {
+    return PatientCareReportOperations.getSection(this);
   }
 
   /**
