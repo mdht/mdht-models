@@ -31,7 +31,7 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.openhealthtools.mdht.uml.hl7.datatypes.PN;
 import org.openhealthtools.mdht.uml.hl7.vocab.PostalAddressUse;
 
-public class Main {
+public class TestDischargeSummary {
 	public static void main(String[] args) {
 		System.out.println("=========================");
 		testDS("DS.sample.l3.conformances");
