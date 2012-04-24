@@ -90,6 +90,7 @@ public class NonMedicinalSupplyActivityOperations extends SupplyOperations {
 	public static boolean validateNonMedicinalSupplyActivityProductInstanceTypeCode(
 			NonMedicinalSupplyActivity nonMedicinalSupplyActivity, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_PRODUCT_INSTANCE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.NON_MEDICINAL_SUPPLY_ACTIVITY);
@@ -110,6 +111,7 @@ public class NonMedicinalSupplyActivityOperations extends SupplyOperations {
 					ConsolPlugin.INSTANCE.getString("NonMedicinalSupplyActivityProductInstanceTypeCode"),
 					new Object[] { nonMedicinalSupplyActivity }));
 			}
+
 			return false;
 		}
 		return true;
@@ -149,6 +151,7 @@ public class NonMedicinalSupplyActivityOperations extends SupplyOperations {
 	public static boolean validateNonMedicinalSupplyActivityTemplateId(
 			NonMedicinalSupplyActivity nonMedicinalSupplyActivity, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.NON_MEDICINAL_SUPPLY_ACTIVITY);
@@ -167,6 +170,7 @@ public class NonMedicinalSupplyActivityOperations extends SupplyOperations {
 					ConsolPlugin.INSTANCE.getString("NonMedicinalSupplyActivityTemplateId"),
 					new Object[] { nonMedicinalSupplyActivity }));
 			}
+
 			return false;
 		}
 		return true;
@@ -206,6 +210,7 @@ public class NonMedicinalSupplyActivityOperations extends SupplyOperations {
 	public static boolean validateNonMedicinalSupplyActivityClassCode(
 			NonMedicinalSupplyActivity nonMedicinalSupplyActivity, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.NON_MEDICINAL_SUPPLY_ACTIVITY);
@@ -224,6 +229,7 @@ public class NonMedicinalSupplyActivityOperations extends SupplyOperations {
 					ConsolPlugin.INSTANCE.getString("NonMedicinalSupplyActivityClassCode"),
 					new Object[] { nonMedicinalSupplyActivity }));
 			}
+
 			return false;
 		}
 		return true;
@@ -269,6 +275,7 @@ public class NonMedicinalSupplyActivityOperations extends SupplyOperations {
 	public static boolean validateNonMedicinalSupplyActivityMoodCode(
 			NonMedicinalSupplyActivity nonMedicinalSupplyActivity, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.NON_MEDICINAL_SUPPLY_ACTIVITY);
@@ -287,6 +294,7 @@ public class NonMedicinalSupplyActivityOperations extends SupplyOperations {
 					ConsolPlugin.INSTANCE.getString("NonMedicinalSupplyActivityMoodCode"),
 					new Object[] { nonMedicinalSupplyActivity }));
 			}
+
 			return false;
 		}
 		return true;
@@ -325,6 +333,7 @@ public class NonMedicinalSupplyActivityOperations extends SupplyOperations {
 	 */
 	public static boolean validateNonMedicinalSupplyActivityId(NonMedicinalSupplyActivity nonMedicinalSupplyActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.NON_MEDICINAL_SUPPLY_ACTIVITY);
@@ -343,6 +352,7 @@ public class NonMedicinalSupplyActivityOperations extends SupplyOperations {
 					ConsolPlugin.INSTANCE.getString("NonMedicinalSupplyActivityId"),
 					new Object[] { nonMedicinalSupplyActivity }));
 			}
+
 			return false;
 		}
 		return true;
@@ -382,6 +392,7 @@ public class NonMedicinalSupplyActivityOperations extends SupplyOperations {
 	public static boolean validateNonMedicinalSupplyActivityStatusCode(
 			NonMedicinalSupplyActivity nonMedicinalSupplyActivity, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.NON_MEDICINAL_SUPPLY_ACTIVITY);
@@ -400,6 +411,7 @@ public class NonMedicinalSupplyActivityOperations extends SupplyOperations {
 					ConsolPlugin.INSTANCE.getString("NonMedicinalSupplyActivityStatusCode"),
 					new Object[] { nonMedicinalSupplyActivity }));
 			}
+
 			return false;
 		}
 		return true;
@@ -439,6 +451,7 @@ public class NonMedicinalSupplyActivityOperations extends SupplyOperations {
 	public static boolean validateNonMedicinalSupplyActivityEffectiveTime(
 			NonMedicinalSupplyActivity nonMedicinalSupplyActivity, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.NON_MEDICINAL_SUPPLY_ACTIVITY);
@@ -457,6 +470,7 @@ public class NonMedicinalSupplyActivityOperations extends SupplyOperations {
 					ConsolPlugin.INSTANCE.getString("NonMedicinalSupplyActivityEffectiveTime"),
 					new Object[] { nonMedicinalSupplyActivity }));
 			}
+
 			return false;
 		}
 		return true;
@@ -496,6 +510,7 @@ public class NonMedicinalSupplyActivityOperations extends SupplyOperations {
 	public static boolean validateNonMedicinalSupplyActivityQuantity(
 			NonMedicinalSupplyActivity nonMedicinalSupplyActivity, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.NON_MEDICINAL_SUPPLY_ACTIVITY);
@@ -514,6 +529,7 @@ public class NonMedicinalSupplyActivityOperations extends SupplyOperations {
 					ConsolPlugin.INSTANCE.getString("NonMedicinalSupplyActivityQuantity"),
 					new Object[] { nonMedicinalSupplyActivity }));
 			}
+
 			return false;
 		}
 		return true;
@@ -553,6 +569,7 @@ public class NonMedicinalSupplyActivityOperations extends SupplyOperations {
 	public static boolean validateNonMedicinalSupplyActivityProductInstance(
 			NonMedicinalSupplyActivity nonMedicinalSupplyActivity, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_NON_MEDICINAL_SUPPLY_ACTIVITY_PRODUCT_INSTANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.NON_MEDICINAL_SUPPLY_ACTIVITY);
@@ -572,6 +589,7 @@ public class NonMedicinalSupplyActivityOperations extends SupplyOperations {
 					ConsolPlugin.INSTANCE.getString("NonMedicinalSupplyActivityProductInstance"),
 					new Object[] { nonMedicinalSupplyActivity }));
 			}
+
 			return false;
 		}
 		return true;
@@ -611,7 +629,7 @@ public class NonMedicinalSupplyActivityOperations extends SupplyOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.NON_MEDICINAL_SUPPLY_ACTIVITY,
-				ConsolPackage.Literals.NON_MEDICINAL_SUPPLY_ACTIVITY.getEAllOperations().get(59));
+				ConsolPackage.Literals.NON_MEDICINAL_SUPPLY_ACTIVITY.getEAllOperations().get(61));
 			try {
 				GET_PRODUCT_INSTANCE__EOCL_QRY = helper.createQuery(GET_PRODUCT_INSTANCE__EOCL_EXP);
 			} catch (ParserException pe) {

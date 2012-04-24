@@ -182,6 +182,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 */
 	public static boolean validateProcedureNoteHasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections(
 			ProcedureNote procedureNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_NOTE_HAS_AN_ASSEMENT_AND_PLAN_SECTION_OR_INDIVIDUAL_ASSEMENT_AND_PLAN_SECTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_NOTE);
@@ -202,6 +203,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 					ConsolPlugin.INSTANCE.getString("ProcedureNoteHasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections"),
 					new Object[] { procedureNote }));
 			}
+
 			return false;
 		}
 		return true;
@@ -240,6 +242,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 */
 	public static boolean validateProcedureNoteDoesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresent(
 			ProcedureNote procedureNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_NOTE_DOES_NOT_HAVE_INDIVIDUAL_ASSEMENT_AND_PLAN_SECTIONS_WHEN_ASSEMENT_AND_PLAN_SECTION_PRESENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_NOTE);
@@ -260,6 +263,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 					ConsolPlugin.INSTANCE.getString("ProcedureNoteDoesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresent"),
 					new Object[] { procedureNote }));
 			}
+
 			return false;
 		}
 		return true;
@@ -300,6 +304,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 
 	public static boolean validateProcedureNoteDoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection(
 			ProcedureNote procedureNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_NOTE_DOES_NOT_HAVE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_WITH_CHIEF_COMPLAINT_SECTION_OR_REASON_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_NOTE);
@@ -320,6 +325,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 					ConsolPlugin.INSTANCE.getString("ProcedureNoteDoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection"),
 					new Object[] { procedureNote }));
 			}
+
 			return false;
 		}
 		return true;
@@ -358,6 +364,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 */
 	public static boolean validateProcedureNoteTemplateId(ProcedureNote procedureNote, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_NOTE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_NOTE);
@@ -375,6 +382,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 					ConsolValidator.PROCEDURE_NOTE__PROCEDURE_NOTE_TEMPLATE_ID,
 					ConsolPlugin.INSTANCE.getString("ProcedureNoteTemplateId"), new Object[] { procedureNote }));
 			}
+
 			return false;
 		}
 		return true;
@@ -413,6 +421,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 */
 	public static boolean validateProcedureNoteIndividual(ProcedureNote procedureNote, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_NOTE_INDIVIDUAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_NOTE);
@@ -430,6 +439,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 					ConsolValidator.PROCEDURE_NOTE__PROCEDURE_NOTE_INDIVIDUAL,
 					ConsolPlugin.INSTANCE.getString("ProcedureNoteIndividual"), new Object[] { procedureNote }));
 			}
+
 			return false;
 		}
 		return true;
@@ -468,6 +478,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 */
 	public static boolean validateProcedureNoteComponentOf(ProcedureNote procedureNote, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_NOTE_COMPONENT_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_NOTE);
@@ -485,6 +496,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 					ConsolValidator.PROCEDURE_NOTE__PROCEDURE_NOTE_COMPONENT_OF,
 					ConsolPlugin.INSTANCE.getString("ProcedureNoteComponentOf"), new Object[] { procedureNote }));
 			}
+
 			return false;
 		}
 		return true;
@@ -523,6 +535,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 */
 	public static boolean validateProcedureNotePrimaryCarePhysician(ProcedureNote procedureNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_NOTE_PRIMARY_CARE_PHYSICIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_NOTE);
@@ -541,6 +554,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 					ConsolPlugin.INSTANCE.getString("ProcedureNotePrimaryCarePhysician"),
 					new Object[] { procedureNote }));
 			}
+
 			return false;
 		}
 		return true;
@@ -579,6 +593,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 */
 	public static boolean validateProcedureNoteProvider(ProcedureNote procedureNote, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_NOTE_PROVIDER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_NOTE);
@@ -595,6 +610,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 					ConsolValidator.PROCEDURE_NOTE__PROCEDURE_NOTE_PROVIDER,
 					ConsolPlugin.INSTANCE.getString("ProcedureNoteProvider"), new Object[] { procedureNote }));
 			}
+
 			return false;
 		}
 		return true;
@@ -633,6 +649,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 */
 	public static boolean validateProcedureNoteAssessmentSection(ProcedureNote procedureNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_NOTE_ASSESSMENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_NOTE);
@@ -650,6 +667,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 					ConsolValidator.PROCEDURE_NOTE__PROCEDURE_NOTE_ASSESSMENT_SECTION,
 					ConsolPlugin.INSTANCE.getString("ProcedureNoteAssessmentSection"), new Object[] { procedureNote }));
 			}
+
 			return false;
 		}
 		return true;
@@ -688,6 +706,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 */
 	public static boolean validateProcedureNotePlanOfCareSection(ProcedureNote procedureNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_NOTE_PLAN_OF_CARE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_NOTE);
@@ -705,6 +724,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 					ConsolValidator.PROCEDURE_NOTE__PROCEDURE_NOTE_PLAN_OF_CARE_SECTION,
 					ConsolPlugin.INSTANCE.getString("ProcedureNotePlanOfCareSection"), new Object[] { procedureNote }));
 			}
+
 			return false;
 		}
 		return true;
@@ -743,6 +763,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 */
 	public static boolean validateProcedureNoteAssessmentAndPlanSection(ProcedureNote procedureNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_NOTE_ASSESSMENT_AND_PLAN_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_NOTE);
@@ -761,6 +782,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 					ConsolPlugin.INSTANCE.getString("ProcedureNoteAssessmentAndPlanSection"),
 					new Object[] { procedureNote }));
 			}
+
 			return false;
 		}
 		return true;
@@ -799,6 +821,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 */
 	public static boolean validateProcedureNoteComplicationsSection(ProcedureNote procedureNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_NOTE_COMPLICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_NOTE);
@@ -817,6 +840,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 					ConsolPlugin.INSTANCE.getString("ProcedureNoteComplicationsSection"),
 					new Object[] { procedureNote }));
 			}
+
 			return false;
 		}
 		return true;
@@ -855,6 +879,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 */
 	public static boolean validateProcedureNotePostprocedureDiagnosisSection(ProcedureNote procedureNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_NOTE_POSTPROCEDURE_DIAGNOSIS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_NOTE);
@@ -874,6 +899,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 					ConsolPlugin.INSTANCE.getString("ProcedureNotePostprocedureDiagnosisSection"),
 					new Object[] { procedureNote }));
 			}
+
 			return false;
 		}
 		return true;
@@ -912,6 +938,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 */
 	public static boolean validateProcedureNoteProcedureDescriptionSection(ProcedureNote procedureNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_NOTE_PROCEDURE_DESCRIPTION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_NOTE);
@@ -930,6 +957,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 					ConsolPlugin.INSTANCE.getString("ProcedureNoteProcedureDescriptionSection"),
 					new Object[] { procedureNote }));
 			}
+
 			return false;
 		}
 		return true;
@@ -968,6 +996,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 */
 	public static boolean validateProcedureNoteProcedureIndicationsSection(ProcedureNote procedureNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_NOTE_PROCEDURE_INDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_NOTE);
@@ -986,6 +1015,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 					ConsolPlugin.INSTANCE.getString("ProcedureNoteProcedureIndicationsSection"),
 					new Object[] { procedureNote }));
 			}
+
 			return false;
 		}
 		return true;
@@ -1024,6 +1054,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 */
 	public static boolean validateProcedureNoteAllergiesSectionEntriesOptional(ProcedureNote procedureNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_NOTE_ALLERGIES_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_NOTE);
@@ -1043,6 +1074,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 					ConsolPlugin.INSTANCE.getString("ProcedureNoteAllergiesSectionEntriesOptional"),
 					new Object[] { procedureNote }));
 			}
+
 			return false;
 		}
 		return true;
@@ -1081,6 +1113,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 */
 	public static boolean validateProcedureNoteAnesthesiaSection(ProcedureNote procedureNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_NOTE_ANESTHESIA_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_NOTE);
@@ -1098,6 +1131,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 					ConsolValidator.PROCEDURE_NOTE__PROCEDURE_NOTE_ANESTHESIA_SECTION,
 					ConsolPlugin.INSTANCE.getString("ProcedureNoteAnesthesiaSection"), new Object[] { procedureNote }));
 			}
+
 			return false;
 		}
 		return true;
@@ -1136,6 +1170,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 */
 	public static boolean validateProcedureNoteChiefComplaintSection(ProcedureNote procedureNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_NOTE_CHIEF_COMPLAINT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_NOTE);
@@ -1154,6 +1189,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 					ConsolPlugin.INSTANCE.getString("ProcedureNoteChiefComplaintSection"),
 					new Object[] { procedureNote }));
 			}
+
 			return false;
 		}
 		return true;
@@ -1192,6 +1228,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 */
 	public static boolean validateProcedureNoteChiefComplaintAndReasonForVisitSection(ProcedureNote procedureNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_NOTE_CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_NOTE);
@@ -1211,6 +1248,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 					ConsolPlugin.INSTANCE.getString("ProcedureNoteChiefComplaintAndReasonForVisitSection"),
 					new Object[] { procedureNote }));
 			}
+
 			return false;
 		}
 		return true;
@@ -1249,6 +1287,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 */
 	public static boolean validateProcedureNoteFamilyHistorySection(ProcedureNote procedureNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_NOTE_FAMILY_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_NOTE);
@@ -1267,6 +1306,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 					ConsolPlugin.INSTANCE.getString("ProcedureNoteFamilyHistorySection"),
 					new Object[] { procedureNote }));
 			}
+
 			return false;
 		}
 		return true;
@@ -1305,6 +1345,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 */
 	public static boolean validateProcedureNoteHistoryOfPastIllnessSection(ProcedureNote procedureNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_NOTE_HISTORY_OF_PAST_ILLNESS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_NOTE);
@@ -1324,6 +1365,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 					ConsolPlugin.INSTANCE.getString("ProcedureNoteHistoryOfPastIllnessSection"),
 					new Object[] { procedureNote }));
 			}
+
 			return false;
 		}
 		return true;
@@ -1362,6 +1404,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 */
 	public static boolean validateProcedureNoteHistoryOfPresentIllnessSection(ProcedureNote procedureNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_NOTE_HISTORY_OF_PRESENT_ILLNESS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_NOTE);
@@ -1381,6 +1424,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 					ConsolPlugin.INSTANCE.getString("ProcedureNoteHistoryOfPresentIllnessSection"),
 					new Object[] { procedureNote }));
 			}
+
 			return false;
 		}
 		return true;
@@ -1419,6 +1463,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 */
 	public static boolean validateProcedureNoteMedicalHistorySection(ProcedureNote procedureNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_NOTE_MEDICAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_NOTE);
@@ -1437,6 +1482,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 					ConsolPlugin.INSTANCE.getString("ProcedureNoteMedicalHistorySection"),
 					new Object[] { procedureNote }));
 			}
+
 			return false;
 		}
 		return true;
@@ -1475,6 +1521,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 */
 	public static boolean validateProcedureNoteMedicationsSectionEntriesOptional(ProcedureNote procedureNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_NOTE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_NOTE);
@@ -1494,6 +1541,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 					ConsolPlugin.INSTANCE.getString("ProcedureNoteMedicationsSectionEntriesOptional"),
 					new Object[] { procedureNote }));
 			}
+
 			return false;
 		}
 		return true;
@@ -1532,6 +1580,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 */
 	public static boolean validateProcedureNoteMedicationsAdministeredSection(ProcedureNote procedureNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_NOTE_MEDICATIONS_ADMINISTERED_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_NOTE);
@@ -1551,6 +1600,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 					ConsolPlugin.INSTANCE.getString("ProcedureNoteMedicationsAdministeredSection"),
 					new Object[] { procedureNote }));
 			}
+
 			return false;
 		}
 		return true;
@@ -1589,6 +1639,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 */
 	public static boolean validateProcedureNotePhysicalExamSection(ProcedureNote procedureNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_NOTE_PHYSICAL_EXAM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_NOTE);
@@ -1606,6 +1657,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 					ConsolValidator.PROCEDURE_NOTE__PROCEDURE_NOTE_PHYSICAL_EXAM_SECTION,
 					ConsolPlugin.INSTANCE.getString("ProcedureNotePhysicalExamSection"), new Object[] { procedureNote }));
 			}
+
 			return false;
 		}
 		return true;
@@ -1644,6 +1696,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 */
 	public static boolean validateProcedureNotePlannedProcedureSection(ProcedureNote procedureNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_NOTE_PLANNED_PROCEDURE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_NOTE);
@@ -1662,6 +1715,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 					ConsolPlugin.INSTANCE.getString("ProcedureNotePlannedProcedureSection"),
 					new Object[] { procedureNote }));
 			}
+
 			return false;
 		}
 		return true;
@@ -1700,6 +1754,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 */
 	public static boolean validateProcedureNoteProcedureDispositionSection(ProcedureNote procedureNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_NOTE_PROCEDURE_DISPOSITION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_NOTE);
@@ -1718,6 +1773,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 					ConsolPlugin.INSTANCE.getString("ProcedureNoteProcedureDispositionSection"),
 					new Object[] { procedureNote }));
 			}
+
 			return false;
 		}
 		return true;
@@ -1756,6 +1812,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 */
 	public static boolean validateProcedureNoteProcedureEstimatedBloodLossSection(ProcedureNote procedureNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_NOTE_PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_NOTE);
@@ -1775,6 +1832,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 					ConsolPlugin.INSTANCE.getString("ProcedureNoteProcedureEstimatedBloodLossSection"),
 					new Object[] { procedureNote }));
 			}
+
 			return false;
 		}
 		return true;
@@ -1813,6 +1871,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 */
 	public static boolean validateProcedureNoteProcedureFindingsSection(ProcedureNote procedureNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_NOTE_PROCEDURE_FINDINGS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_NOTE);
@@ -1831,6 +1890,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 					ConsolPlugin.INSTANCE.getString("ProcedureNoteProcedureFindingsSection"),
 					new Object[] { procedureNote }));
 			}
+
 			return false;
 		}
 		return true;
@@ -1869,6 +1929,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 */
 	public static boolean validateProcedureNoteProcedureImplantsSection(ProcedureNote procedureNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_NOTE_PROCEDURE_IMPLANTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_NOTE);
@@ -1887,6 +1948,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 					ConsolPlugin.INSTANCE.getString("ProcedureNoteProcedureImplantsSection"),
 					new Object[] { procedureNote }));
 			}
+
 			return false;
 		}
 		return true;
@@ -1925,6 +1987,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 */
 	public static boolean validateProcedureNoteProcedureSpecimensTakenSection(ProcedureNote procedureNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_NOTE_PROCEDURE_SPECIMENS_TAKEN_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_NOTE);
@@ -1944,6 +2007,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 					ConsolPlugin.INSTANCE.getString("ProcedureNoteProcedureSpecimensTakenSection"),
 					new Object[] { procedureNote }));
 			}
+
 			return false;
 		}
 		return true;
@@ -1982,6 +2046,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 */
 	public static boolean validateProcedureNoteProceduresSectionEntriesOptional(ProcedureNote procedureNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_NOTE_PROCEDURES_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_NOTE);
@@ -2001,6 +2066,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 					ConsolPlugin.INSTANCE.getString("ProcedureNoteProceduresSectionEntriesOptional"),
 					new Object[] { procedureNote }));
 			}
+
 			return false;
 		}
 		return true;
@@ -2039,6 +2105,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 */
 	public static boolean validateProcedureNoteReasonForVisitSection(ProcedureNote procedureNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_NOTE_REASON_FOR_VISIT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_NOTE);
@@ -2057,6 +2124,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 					ConsolPlugin.INSTANCE.getString("ProcedureNoteReasonForVisitSection"),
 					new Object[] { procedureNote }));
 			}
+
 			return false;
 		}
 		return true;
@@ -2095,6 +2163,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 */
 	public static boolean validateProcedureNoteReviewOfSystemsSection(ProcedureNote procedureNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_NOTE_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_NOTE);
@@ -2113,6 +2182,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 					ConsolPlugin.INSTANCE.getString("ProcedureNoteReviewOfSystemsSection"),
 					new Object[] { procedureNote }));
 			}
+
 			return false;
 		}
 		return true;
@@ -2151,6 +2221,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 	 */
 	public static boolean validateProcedureNoteSocialHistorySection(ProcedureNote procedureNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_NOTE_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_NOTE);
@@ -2169,6 +2240,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 					ConsolPlugin.INSTANCE.getString("ProcedureNoteSocialHistorySection"),
 					new Object[] { procedureNote }));
 			}
+
 			return false;
 		}
 		return true;
@@ -2219,17 +2291,20 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 			throw new UnsupportedOperationException(pe.getLocalizedMessage());
 		}
 
-		Object oclResultSet = VALIDATE_PROCEDURE_NOTE_INDIVIDUAL_TYPE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(procedureNote);
-		if (oclResultSet != null && oclResultSet instanceof Collection) {
+		Object oclResult = VALIDATE_PROCEDURE_NOTE_INDIVIDUAL_TYPE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(procedureNote);
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+
 			if (diagnostics != null) {
-				for (EObject eObject : (Collection<EObject>) oclResultSet) {
+				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_NOTE__PROCEDURE_NOTE_INDIVIDUAL_TYPE_ID,
 						ConsolPlugin.INSTANCE.getString("ProcedureNoteIndividualTypeId"), new Object[] { eObject }));
 				}
+
 			}
-			return ((Collection<?>) oclResultSet).isEmpty();
+			return oclResultSet.isEmpty();
 		}
 		return true;
 	}
@@ -2279,10 +2354,12 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 			throw new UnsupportedOperationException(pe.getLocalizedMessage());
 		}
 
-		Object oclResultSet = VALIDATE_PROCEDURE_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER5_LOCATION_HEALTH_CARE_FACILITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(procedureNote);
-		if (oclResultSet != null && oclResultSet instanceof Collection) {
+		Object oclResult = VALIDATE_PROCEDURE_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER5_LOCATION_HEALTH_CARE_FACILITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(procedureNote);
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+
 			if (diagnostics != null) {
-				for (EObject eObject : (Collection<EObject>) oclResultSet) {
+				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
@@ -2290,8 +2367,9 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 						ConsolPlugin.INSTANCE.getString("ProcedureNoteComponentOfEncompassingEncounter5LocationHealthCareFacilityId"),
 						new Object[] { eObject }));
 				}
+
 			}
-			return ((Collection<?>) oclResultSet).isEmpty();
+			return oclResultSet.isEmpty();
 		}
 		return true;
 	}
@@ -2341,10 +2419,12 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 			throw new UnsupportedOperationException(pe.getLocalizedMessage());
 		}
 
-		Object oclResultSet = VALIDATE_PROCEDURE_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER5_LOCATION_HEALTH_CARE_FACILITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(procedureNote);
-		if (oclResultSet != null && oclResultSet instanceof Collection) {
+		Object oclResult = VALIDATE_PROCEDURE_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER5_LOCATION_HEALTH_CARE_FACILITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(procedureNote);
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+
 			if (diagnostics != null) {
-				for (EObject eObject : (Collection<EObject>) oclResultSet) {
+				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
@@ -2352,8 +2432,9 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 						ConsolPlugin.INSTANCE.getString("ProcedureNoteComponentOfEncompassingEncounter5LocationHealthCareFacility"),
 						new Object[] { eObject }));
 				}
+
 			}
-			return ((Collection<?>) oclResultSet).isEmpty();
+			return oclResultSet.isEmpty();
 		}
 		return true;
 	}
@@ -2403,10 +2484,12 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 			throw new UnsupportedOperationException(pe.getLocalizedMessage());
 		}
 
-		Object oclResultSet = VALIDATE_PROCEDURE_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER5_ENCOUNTER_PARTICIPANT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(procedureNote);
-		if (oclResultSet != null && oclResultSet instanceof Collection) {
+		Object oclResult = VALIDATE_PROCEDURE_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER5_ENCOUNTER_PARTICIPANT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(procedureNote);
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+
 			if (diagnostics != null) {
-				for (EObject eObject : (Collection<EObject>) oclResultSet) {
+				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
@@ -2414,8 +2497,9 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 						ConsolPlugin.INSTANCE.getString("ProcedureNoteComponentOfEncompassingEncounter5EncounterParticipantTypeCode"),
 						new Object[] { eObject }));
 				}
+
 			}
-			return ((Collection<?>) oclResultSet).isEmpty();
+			return oclResultSet.isEmpty();
 		}
 		return true;
 	}
@@ -2465,18 +2549,21 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 			throw new UnsupportedOperationException(pe.getLocalizedMessage());
 		}
 
-		Object oclResultSet = VALIDATE_PROCEDURE_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER5_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(procedureNote);
-		if (oclResultSet != null && oclResultSet instanceof Collection) {
+		Object oclResult = VALIDATE_PROCEDURE_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER5_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(procedureNote);
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+
 			if (diagnostics != null) {
-				for (EObject eObject : (Collection<EObject>) oclResultSet) {
+				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_NOTE__PROCEDURE_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER5_CODE,
 						ConsolPlugin.INSTANCE.getString("ProcedureNoteComponentOfEncompassingEncounter5Code"),
 						new Object[] { eObject }));
 				}
+
 			}
-			return ((Collection<?>) oclResultSet).isEmpty();
+			return oclResultSet.isEmpty();
 		}
 		return true;
 	}
@@ -2526,18 +2613,21 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 			throw new UnsupportedOperationException(pe.getLocalizedMessage());
 		}
 
-		Object oclResultSet = VALIDATE_PROCEDURE_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER5_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(procedureNote);
-		if (oclResultSet != null && oclResultSet instanceof Collection) {
+		Object oclResult = VALIDATE_PROCEDURE_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER5_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(procedureNote);
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+
 			if (diagnostics != null) {
-				for (EObject eObject : (Collection<EObject>) oclResultSet) {
+				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_NOTE__PROCEDURE_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER5_LOCATION,
 						ConsolPlugin.INSTANCE.getString("ProcedureNoteComponentOfEncompassingEncounter5Location"),
 						new Object[] { eObject }));
 				}
+
 			}
-			return ((Collection<?>) oclResultSet).isEmpty();
+			return oclResultSet.isEmpty();
 		}
 		return true;
 	}
@@ -2587,10 +2677,12 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 			throw new UnsupportedOperationException(pe.getLocalizedMessage());
 		}
 
-		Object oclResultSet = VALIDATE_PROCEDURE_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER5_ENCOUNTER_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(procedureNote);
-		if (oclResultSet != null && oclResultSet instanceof Collection) {
+		Object oclResult = VALIDATE_PROCEDURE_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER5_ENCOUNTER_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(procedureNote);
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+
 			if (diagnostics != null) {
-				for (EObject eObject : (Collection<EObject>) oclResultSet) {
+				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.INFO,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
@@ -2598,8 +2690,9 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 						ConsolPlugin.INSTANCE.getString("ProcedureNoteComponentOfEncompassingEncounter5EncounterParticipant"),
 						new Object[] { eObject }));
 				}
+
 			}
-			return ((Collection<?>) oclResultSet).isEmpty();
+			return oclResultSet.isEmpty();
 		}
 		return true;
 	}
@@ -2649,18 +2742,21 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 			throw new UnsupportedOperationException(pe.getLocalizedMessage());
 		}
 
-		Object oclResultSet = VALIDATE_PROCEDURE_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER5__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(procedureNote);
-		if (oclResultSet != null && oclResultSet instanceof Collection) {
+		Object oclResult = VALIDATE_PROCEDURE_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER5__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(procedureNote);
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+
 			if (diagnostics != null) {
-				for (EObject eObject : (Collection<EObject>) oclResultSet) {
+				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_NOTE__PROCEDURE_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER5,
 						ConsolPlugin.INSTANCE.getString("ProcedureNoteComponentOfEncompassingEncounter5"),
 						new Object[] { eObject }));
 				}
+
 			}
-			return ((Collection<?>) oclResultSet).isEmpty();
+			return oclResultSet.isEmpty();
 		}
 		return true;
 	}
@@ -2710,18 +2806,21 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 			throw new UnsupportedOperationException(pe.getLocalizedMessage());
 		}
 
-		Object oclResultSet = VALIDATE_PROCEDURE_NOTE_PROVIDER_ASSOCIATED_ENTITY_ASSOCIATED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(procedureNote);
-		if (oclResultSet != null && oclResultSet instanceof Collection) {
+		Object oclResult = VALIDATE_PROCEDURE_NOTE_PROVIDER_ASSOCIATED_ENTITY_ASSOCIATED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(procedureNote);
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+
 			if (diagnostics != null) {
-				for (EObject eObject : (Collection<EObject>) oclResultSet) {
+				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_NOTE__PROCEDURE_NOTE_PROVIDER_ASSOCIATED_ENTITY_ASSOCIATED_PERSON,
 						ConsolPlugin.INSTANCE.getString("ProcedureNoteProviderAssociatedEntityAssociatedPerson"),
 						new Object[] { eObject }));
 				}
+
 			}
-			return ((Collection<?>) oclResultSet).isEmpty();
+			return oclResultSet.isEmpty();
 		}
 		return true;
 	}
@@ -4026,6 +4125,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 
 	public static boolean validateGeneralHeaderConstraintsCode(ProcedureNote procedureNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_NOTE);
@@ -4043,6 +4143,7 @@ public class ProcedureNoteOperations extends GeneralHeaderConstraintsOperations 
 					ConsolValidator.PROCEDURE_NOTE__GENERAL_HEADER_CONSTRAINTS_CODE,
 					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsCode"), new Object[] { procedureNote }));
 			}
+
 			return false;
 		}
 		return true;

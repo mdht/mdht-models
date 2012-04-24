@@ -80,6 +80,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 */
 	public static boolean validatePhysicalExamSectionTemplateId(PhysicalExamSection physicalExamSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PHYSICAL_EXAM_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION);
@@ -98,6 +99,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("PhysicalExamSectionTemplateId"),
 					new Object[] { physicalExamSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -140,6 +142,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 */
 	public static boolean validatePhysicalExamSectionCode(PhysicalExamSection physicalExamSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PHYSICAL_EXAM_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION);
@@ -157,6 +160,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 					ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_CODE,
 					ConsolPlugin.INSTANCE.getString("PhysicalExamSectionCode"), new Object[] { physicalExamSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -195,6 +199,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 */
 	public static boolean validatePhysicalExamSectionTitle(PhysicalExamSection physicalExamSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PHYSICAL_EXAM_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION);
@@ -212,6 +217,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 					ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_TITLE,
 					ConsolPlugin.INSTANCE.getString("PhysicalExamSectionTitle"), new Object[] { physicalExamSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -250,6 +256,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 	 */
 	public static boolean validatePhysicalExamSectionText(PhysicalExamSection physicalExamSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PHYSICAL_EXAM_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PHYSICAL_EXAM_SECTION);
@@ -267,6 +274,7 @@ public class PhysicalExamSectionOperations extends SectionOperations {
 					ConsolValidator.PHYSICAL_EXAM_SECTION__PHYSICAL_EXAM_SECTION_TEXT,
 					ConsolPlugin.INSTANCE.getString("PhysicalExamSectionText"), new Object[] { physicalExamSection }));
 			}
+
 			return false;
 		}
 		return true;

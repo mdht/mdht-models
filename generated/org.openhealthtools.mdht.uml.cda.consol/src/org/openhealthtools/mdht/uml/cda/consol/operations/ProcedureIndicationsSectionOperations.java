@@ -89,6 +89,7 @@ public class ProcedureIndicationsSectionOperations extends SectionOperations {
 	public static boolean validateProcedureIndicationsSectionTemplateId(
 			ProcedureIndicationsSection procedureIndicationsSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_INDICATIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_INDICATIONS_SECTION);
@@ -107,6 +108,7 @@ public class ProcedureIndicationsSectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("ProcedureIndicationsSectionTemplateId"),
 					new Object[] { procedureIndicationsSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -150,6 +152,7 @@ public class ProcedureIndicationsSectionOperations extends SectionOperations {
 	public static boolean validateProcedureIndicationsSectionCode(
 			ProcedureIndicationsSection procedureIndicationsSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_INDICATIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_INDICATIONS_SECTION);
@@ -168,6 +171,7 @@ public class ProcedureIndicationsSectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("ProcedureIndicationsSectionCode"),
 					new Object[] { procedureIndicationsSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -207,6 +211,7 @@ public class ProcedureIndicationsSectionOperations extends SectionOperations {
 	public static boolean validateProcedureIndicationsSectionText(
 			ProcedureIndicationsSection procedureIndicationsSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_INDICATIONS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_INDICATIONS_SECTION);
@@ -225,6 +230,7 @@ public class ProcedureIndicationsSectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("ProcedureIndicationsSectionText"),
 					new Object[] { procedureIndicationsSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -264,6 +270,7 @@ public class ProcedureIndicationsSectionOperations extends SectionOperations {
 	public static boolean validateProcedureIndicationsSectionTitle(
 			ProcedureIndicationsSection procedureIndicationsSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_INDICATIONS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_INDICATIONS_SECTION);
@@ -282,6 +289,7 @@ public class ProcedureIndicationsSectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("ProcedureIndicationsSectionTitle"),
 					new Object[] { procedureIndicationsSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -321,6 +329,7 @@ public class ProcedureIndicationsSectionOperations extends SectionOperations {
 	public static boolean validateProcedureIndicationsSectionIndication(
 			ProcedureIndicationsSection procedureIndicationsSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_INDICATIONS_SECTION_INDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_INDICATIONS_SECTION);
@@ -339,6 +348,7 @@ public class ProcedureIndicationsSectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("ProcedureIndicationsSectionIndication"),
 					new Object[] { procedureIndicationsSection }));
 			}
+
 			return false;
 		}
 		return true;

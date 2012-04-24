@@ -81,6 +81,7 @@ public class OperativeNoteFluidSectionOperations extends SectionOperations {
 	public static boolean validateOperativeNoteFluidSectionTemplateId(
 			OperativeNoteFluidSection operativeNoteFluidSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_OPERATIVE_NOTE_FLUID_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE_FLUID_SECTION);
@@ -99,6 +100,7 @@ public class OperativeNoteFluidSectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("OperativeNoteFluidSectionTemplateId"),
 					new Object[] { operativeNoteFluidSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -141,6 +143,7 @@ public class OperativeNoteFluidSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateOperativeNoteFluidSectionCode(OperativeNoteFluidSection operativeNoteFluidSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_OPERATIVE_NOTE_FLUID_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE_FLUID_SECTION);
@@ -159,6 +162,7 @@ public class OperativeNoteFluidSectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("OperativeNoteFluidSectionCode"),
 					new Object[] { operativeNoteFluidSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -197,6 +201,7 @@ public class OperativeNoteFluidSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateOperativeNoteFluidSectionText(OperativeNoteFluidSection operativeNoteFluidSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_OPERATIVE_NOTE_FLUID_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE_FLUID_SECTION);
@@ -215,6 +220,7 @@ public class OperativeNoteFluidSectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("OperativeNoteFluidSectionText"),
 					new Object[] { operativeNoteFluidSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -253,6 +259,7 @@ public class OperativeNoteFluidSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateOperativeNoteFluidSectionTitle(OperativeNoteFluidSection operativeNoteFluidSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_OPERATIVE_NOTE_FLUID_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE_FLUID_SECTION);
@@ -271,6 +278,7 @@ public class OperativeNoteFluidSectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("OperativeNoteFluidSectionTitle"),
 					new Object[] { operativeNoteFluidSection }));
 			}
+
 			return false;
 		}
 		return true;

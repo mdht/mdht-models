@@ -80,6 +80,7 @@ public class ChiefComplaintSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateChiefComplaintSectionTemplateId(ChiefComplaintSection chiefComplaintSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CHIEF_COMPLAINT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CHIEF_COMPLAINT_SECTION);
@@ -98,6 +99,7 @@ public class ChiefComplaintSectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("ChiefComplaintSectionTemplateId"),
 					new Object[] { chiefComplaintSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -140,6 +142,7 @@ public class ChiefComplaintSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateChiefComplaintSectionCode(ChiefComplaintSection chiefComplaintSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CHIEF_COMPLAINT_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CHIEF_COMPLAINT_SECTION);
@@ -158,6 +161,7 @@ public class ChiefComplaintSectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("ChiefComplaintSectionCode"),
 					new Object[] { chiefComplaintSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -196,6 +200,7 @@ public class ChiefComplaintSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateChiefComplaintSectionText(ChiefComplaintSection chiefComplaintSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CHIEF_COMPLAINT_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CHIEF_COMPLAINT_SECTION);
@@ -214,6 +219,7 @@ public class ChiefComplaintSectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("ChiefComplaintSectionText"),
 					new Object[] { chiefComplaintSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -252,6 +258,7 @@ public class ChiefComplaintSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateChiefComplaintSectionTitle(ChiefComplaintSection chiefComplaintSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CHIEF_COMPLAINT_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CHIEF_COMPLAINT_SECTION);
@@ -270,6 +277,7 @@ public class ChiefComplaintSectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("ChiefComplaintSectionTitle"),
 					new Object[] { chiefComplaintSection }));
 			}
+
 			return false;
 		}
 		return true;

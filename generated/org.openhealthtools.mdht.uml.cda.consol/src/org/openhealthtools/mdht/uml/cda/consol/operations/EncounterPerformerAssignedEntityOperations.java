@@ -78,6 +78,7 @@ public class EncounterPerformerAssignedEntityOperations extends AssignedEntityOp
 	public static boolean validateEncounterPerformerAssignedEntityCode(
 			EncounterPerformerAssignedEntity encounterPerformerAssignedEntity, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_ENCOUNTER_PERFORMER_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ENCOUNTER_PERFORMER_ASSIGNED_ENTITY);
@@ -96,6 +97,7 @@ public class EncounterPerformerAssignedEntityOperations extends AssignedEntityOp
 					ConsolPlugin.INSTANCE.getString("EncounterPerformerAssignedEntityCode"),
 					new Object[] { encounterPerformerAssignedEntity }));
 			}
+
 			return false;
 		}
 		return true;

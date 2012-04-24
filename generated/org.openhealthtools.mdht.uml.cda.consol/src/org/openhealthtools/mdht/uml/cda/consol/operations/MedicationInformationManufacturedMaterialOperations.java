@@ -81,6 +81,7 @@ public class MedicationInformationManufacturedMaterialOperations extends Materia
 	public static boolean validateMedicationInformationManufacturedMaterialCodeOriginalText(
 			MedicationInformationManufacturedMaterial medicationInformationManufacturedMaterial,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_CODE_ORIGINAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_INFORMATION_MANUFACTURED_MATERIAL);
@@ -101,6 +102,7 @@ public class MedicationInformationManufacturedMaterialOperations extends Materia
 					ConsolPlugin.INSTANCE.getString("MedicationInformationManufacturedMaterialCodeOriginalText"),
 					new Object[] { medicationInformationManufacturedMaterial }));
 			}
+
 			return false;
 		}
 		return true;
@@ -140,6 +142,7 @@ public class MedicationInformationManufacturedMaterialOperations extends Materia
 	public static boolean validateMedicationInformationManufacturedMaterialReference(
 			MedicationInformationManufacturedMaterial medicationInformationManufacturedMaterial,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_INFORMATION_MANUFACTURED_MATERIAL);
@@ -160,6 +163,7 @@ public class MedicationInformationManufacturedMaterialOperations extends Materia
 					ConsolPlugin.INSTANCE.getString("MedicationInformationManufacturedMaterialReference"),
 					new Object[] { medicationInformationManufacturedMaterial }));
 			}
+
 			return false;
 		}
 		return true;
@@ -199,6 +203,7 @@ public class MedicationInformationManufacturedMaterialOperations extends Materia
 	public static boolean validateMedicationInformationManufacturedMaterialCodeTranslation(
 			MedicationInformationManufacturedMaterial medicationInformationManufacturedMaterial,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_CODE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_INFORMATION_MANUFACTURED_MATERIAL);
@@ -219,6 +224,7 @@ public class MedicationInformationManufacturedMaterialOperations extends Materia
 					ConsolPlugin.INSTANCE.getString("MedicationInformationManufacturedMaterialCodeTranslation"),
 					new Object[] { medicationInformationManufacturedMaterial }));
 			}
+
 			return false;
 		}
 		return true;
@@ -262,6 +268,7 @@ public class MedicationInformationManufacturedMaterialOperations extends Materia
 	public static boolean validateMedicationInformationManufacturedMaterialCode(
 			MedicationInformationManufacturedMaterial medicationInformationManufacturedMaterial,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_INFORMATION_MANUFACTURED_MATERIAL);
@@ -282,6 +289,7 @@ public class MedicationInformationManufacturedMaterialOperations extends Materia
 					ConsolPlugin.INSTANCE.getString("MedicationInformationManufacturedMaterialCode"),
 					new Object[] { medicationInformationManufacturedMaterial }));
 			}
+
 			return false;
 		}
 		return true;

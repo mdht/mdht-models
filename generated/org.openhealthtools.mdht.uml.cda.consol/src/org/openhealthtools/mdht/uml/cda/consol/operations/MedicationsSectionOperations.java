@@ -87,6 +87,7 @@ public class MedicationsSectionOperations extends MedicationsSectionEntriesOptio
 	 */
 	public static boolean validateMedicationsSectionTitle(MedicationsSection medicationsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATIONS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATIONS_SECTION);
@@ -104,6 +105,7 @@ public class MedicationsSectionOperations extends MedicationsSectionEntriesOptio
 					ConsolValidator.MEDICATIONS_SECTION__MEDICATIONS_SECTION_TITLE,
 					ConsolPlugin.INSTANCE.getString("MedicationsSectionTitle"), new Object[] { medicationsSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -142,6 +144,7 @@ public class MedicationsSectionOperations extends MedicationsSectionEntriesOptio
 	 */
 	public static boolean validateMedicationsSectionText(MedicationsSection medicationsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATIONS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATIONS_SECTION);
@@ -159,6 +162,7 @@ public class MedicationsSectionOperations extends MedicationsSectionEntriesOptio
 					ConsolValidator.MEDICATIONS_SECTION__MEDICATIONS_SECTION_TEXT,
 					ConsolPlugin.INSTANCE.getString("MedicationsSectionText"), new Object[] { medicationsSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -197,6 +201,7 @@ public class MedicationsSectionOperations extends MedicationsSectionEntriesOptio
 	 */
 	public static boolean validateMedicationsSectionMedication(MedicationsSection medicationsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATIONS_SECTION_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATIONS_SECTION);
@@ -215,6 +220,7 @@ public class MedicationsSectionOperations extends MedicationsSectionEntriesOptio
 					ConsolPlugin.INSTANCE.getString("MedicationsSectionMedication"),
 					new Object[] { medicationsSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -300,6 +306,7 @@ public class MedicationsSectionOperations extends MedicationsSectionEntriesOptio
 	 */
 	public static boolean validateMedicationsSectionEntriesOptionalTemplateId(MedicationsSection medicationsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATIONS_SECTION);
@@ -324,6 +331,7 @@ public class MedicationsSectionOperations extends MedicationsSectionEntriesOptio
 								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(medicationsSection, context) }),
 					new Object[] { medicationsSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -368,6 +376,7 @@ public class MedicationsSectionOperations extends MedicationsSectionEntriesOptio
 
 	public static boolean validateMedicationsSectionEntriesOptionalCode(MedicationsSection medicationsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATIONS_SECTION);
@@ -386,6 +395,7 @@ public class MedicationsSectionOperations extends MedicationsSectionEntriesOptio
 					ConsolPlugin.INSTANCE.getString("MedicationsSectionEntriesOptionalCode"),
 					new Object[] { medicationsSection }));
 			}
+
 			return false;
 		}
 		return true;

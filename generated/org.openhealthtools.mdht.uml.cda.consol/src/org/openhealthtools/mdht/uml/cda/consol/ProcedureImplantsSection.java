@@ -18,7 +18,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getProcedureImplantsSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' templateId.root='2.16.840.1.113883.10.20.22.2.40' code.displayName='Procedure Implants' constraints.validation.error='ProcedureImplantsSectionTemplateId ProcedureImplantsSectionCode ProcedureImplantsSectionText ProcedureImplantsSectionTitle' code.codeSystemName='LOINC' code.code='59771-6'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProcedureImplantsSectionTemplateId ProcedureImplantsSectionCode ProcedureImplantsSectionText ProcedureImplantsSectionTitle' templateId.root='2.16.840.1.113883.10.20.22.2.40' code.codeSystem='2.16.840.1.113883.6.1' code.displayName='Procedure Implants' code.codeSystemName='LOINC' code.code='59771-6'"
  * @generated
  */
 public interface ProcedureImplantsSection extends Section {

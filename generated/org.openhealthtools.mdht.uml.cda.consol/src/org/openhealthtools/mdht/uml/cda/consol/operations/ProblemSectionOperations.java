@@ -89,6 +89,7 @@ public class ProblemSectionOperations extends ProblemSectionEntriesOptionalOpera
 
 	public static boolean validateProblemSectionText(ProblemSection problemSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PROBLEM_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROBLEM_SECTION);
@@ -105,6 +106,7 @@ public class ProblemSectionOperations extends ProblemSectionEntriesOptionalOpera
 					ConsolValidator.PROBLEM_SECTION__PROBLEM_SECTION_TEXT,
 					ConsolPlugin.INSTANCE.getString("ProblemSectionText"), new Object[] { problemSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -145,6 +147,7 @@ public class ProblemSectionOperations extends ProblemSectionEntriesOptionalOpera
 
 	public static boolean validateProblemSectionTitle(ProblemSection problemSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PROBLEM_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROBLEM_SECTION);
@@ -161,6 +164,7 @@ public class ProblemSectionOperations extends ProblemSectionEntriesOptionalOpera
 					ConsolValidator.PROBLEM_SECTION__PROBLEM_SECTION_TITLE,
 					ConsolPlugin.INSTANCE.getString("ProblemSectionTitle"), new Object[] { problemSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -199,6 +203,7 @@ public class ProblemSectionOperations extends ProblemSectionEntriesOptionalOpera
 	 */
 	public static boolean validateProblemSectionProblemConcern(ProblemSection problemSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROBLEM_SECTION_PROBLEM_CONCERN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROBLEM_SECTION);
@@ -216,6 +221,7 @@ public class ProblemSectionOperations extends ProblemSectionEntriesOptionalOpera
 					ConsolValidator.PROBLEM_SECTION__PROBLEM_SECTION_PROBLEM_CONCERN,
 					ConsolPlugin.INSTANCE.getString("ProblemSectionProblemConcern"), new Object[] { problemSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -301,6 +307,7 @@ public class ProblemSectionOperations extends ProblemSectionEntriesOptionalOpera
 	 */
 	public static boolean validateProblemSectionEntriesOptionalTemplateId(ProblemSection problemSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROBLEM_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROBLEM_SECTION);
@@ -323,6 +330,7 @@ public class ProblemSectionOperations extends ProblemSectionEntriesOptionalOpera
 								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(problemSection, context) }),
 					new Object[] { problemSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -367,6 +375,7 @@ public class ProblemSectionOperations extends ProblemSectionEntriesOptionalOpera
 
 	public static boolean validateProblemSectionEntriesOptionalCode(ProblemSection problemSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROBLEM_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROBLEM_SECTION);
@@ -385,6 +394,7 @@ public class ProblemSectionOperations extends ProblemSectionEntriesOptionalOpera
 					ConsolPlugin.INSTANCE.getString("ProblemSectionEntriesOptionalCode"),
 					new Object[] { problemSection }));
 			}
+
 			return false;
 		}
 		return true;

@@ -81,6 +81,7 @@ public class MedicationInformationOperations extends ManufacturedProductOperatio
 	 */
 	public static boolean validateMedicationInformationTemplateId(MedicationInformation medicationInformation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_INFORMATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_INFORMATION);
@@ -99,6 +100,7 @@ public class MedicationInformationOperations extends ManufacturedProductOperatio
 					ConsolPlugin.INSTANCE.getString("MedicationInformationTemplateId"),
 					new Object[] { medicationInformation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -137,6 +139,7 @@ public class MedicationInformationOperations extends ManufacturedProductOperatio
 	 */
 	public static boolean validateMedicationInformationId(MedicationInformation medicationInformation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_INFORMATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_INFORMATION);
@@ -154,6 +157,7 @@ public class MedicationInformationOperations extends ManufacturedProductOperatio
 					ConsolValidator.MEDICATION_INFORMATION__MEDICATION_INFORMATION_ID,
 					ConsolPlugin.INSTANCE.getString("MedicationInformationId"), new Object[] { medicationInformation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -192,6 +196,7 @@ public class MedicationInformationOperations extends ManufacturedProductOperatio
 	 */
 	public static boolean validateMedicationInformationClassCode(MedicationInformation medicationInformation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_INFORMATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_INFORMATION);
@@ -210,6 +215,7 @@ public class MedicationInformationOperations extends ManufacturedProductOperatio
 					ConsolPlugin.INSTANCE.getString("MedicationInformationClassCode"),
 					new Object[] { medicationInformation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -228,6 +234,7 @@ public class MedicationInformationOperations extends ManufacturedProductOperatio
 	 */
 	public static boolean validateMedicationInformationManufacturedMaterial(
 			MedicationInformation medicationInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_INFORMATION);
@@ -246,6 +253,7 @@ public class MedicationInformationOperations extends ManufacturedProductOperatio
 					ConsolPlugin.INSTANCE.getString("MedicationInformationManufacturedMaterial"),
 					new Object[] { medicationInformation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -304,6 +312,7 @@ public class MedicationInformationOperations extends ManufacturedProductOperatio
 	 */
 	public static boolean validateMedicationInformationManufacturerOrganization(
 			MedicationInformation medicationInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_INFORMATION_MANUFACTURER_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_INFORMATION);
@@ -323,6 +332,7 @@ public class MedicationInformationOperations extends ManufacturedProductOperatio
 					ConsolPlugin.INSTANCE.getString("MedicationInformationManufacturerOrganization"),
 					new Object[] { medicationInformation }));
 			}
+
 			return false;
 		}
 		return true;

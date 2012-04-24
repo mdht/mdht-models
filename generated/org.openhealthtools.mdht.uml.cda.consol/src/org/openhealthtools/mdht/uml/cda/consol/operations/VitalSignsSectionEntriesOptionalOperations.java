@@ -89,6 +89,7 @@ public class VitalSignsSectionEntriesOptionalOperations extends SectionOperation
 	public static boolean validateVitalSignsSectionEntriesOptionalTemplateId(
 			VitalSignsSectionEntriesOptional vitalSignsSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL);
@@ -109,6 +110,7 @@ public class VitalSignsSectionEntriesOptionalOperations extends SectionOperation
 					ConsolPlugin.INSTANCE.getString("VitalSignsSectionEntriesOptionalTemplateId"),
 					new Object[] { vitalSignsSectionEntriesOptional }));
 			}
+
 			return false;
 		}
 		return true;
@@ -152,6 +154,7 @@ public class VitalSignsSectionEntriesOptionalOperations extends SectionOperation
 	public static boolean validateVitalSignsSectionEntriesOptionalCode(
 			VitalSignsSectionEntriesOptional vitalSignsSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL);
@@ -170,6 +173,7 @@ public class VitalSignsSectionEntriesOptionalOperations extends SectionOperation
 					ConsolPlugin.INSTANCE.getString("VitalSignsSectionEntriesOptionalCode"),
 					new Object[] { vitalSignsSectionEntriesOptional }));
 			}
+
 			return false;
 		}
 		return true;
@@ -189,6 +193,7 @@ public class VitalSignsSectionEntriesOptionalOperations extends SectionOperation
 	public static boolean validateVitalSignsSectionEntriesOptionalTitle(
 			VitalSignsSectionEntriesOptional vitalSignsSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL);
@@ -207,6 +212,7 @@ public class VitalSignsSectionEntriesOptionalOperations extends SectionOperation
 					ConsolPlugin.INSTANCE.getString("VitalSignsSectionEntriesOptionalTitle"),
 					new Object[] { vitalSignsSectionEntriesOptional }));
 			}
+
 			return false;
 		}
 		return true;
@@ -226,6 +232,7 @@ public class VitalSignsSectionEntriesOptionalOperations extends SectionOperation
 	public static boolean validateVitalSignsSectionEntriesOptionalVitalSignsOrganizer(
 			VitalSignsSectionEntriesOptional vitalSignsSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_VITAL_SIGNS_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL);
@@ -246,6 +253,7 @@ public class VitalSignsSectionEntriesOptionalOperations extends SectionOperation
 					ConsolPlugin.INSTANCE.getString("VitalSignsSectionEntriesOptionalVitalSignsOrganizer"),
 					new Object[] { vitalSignsSectionEntriesOptional }));
 			}
+
 			return false;
 		}
 		return true;
@@ -373,6 +381,7 @@ public class VitalSignsSectionEntriesOptionalOperations extends SectionOperation
 	public static boolean validateVitalSignsSectionEntriesOptionalText(
 			VitalSignsSectionEntriesOptional vitalSignsSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL);
@@ -391,6 +400,7 @@ public class VitalSignsSectionEntriesOptionalOperations extends SectionOperation
 					ConsolPlugin.INSTANCE.getString("VitalSignsSectionEntriesOptionalText"),
 					new Object[] { vitalSignsSectionEntriesOptional }));
 			}
+
 			return false;
 		}
 		return true;

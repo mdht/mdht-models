@@ -18,7 +18,7 @@ import org.openhealthtools.mdht.uml.cda.Specimen;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getProcedureSpecimen()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='null' constraints.validation.error='ProcedureSpecimenTemplateId ProcedureSpecimenSpecimenRole' constraints.validation.warning='ProcedureSpecimenSpecimentRoleId'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProcedureSpecimenTemplateId ProcedureSpecimenSpecimenRole' templateId.root='null' constraints.validation.warning='ProcedureSpecimenSpecimentRoleId'"
  * @generated
  */
 public interface ProcedureSpecimen extends Specimen {

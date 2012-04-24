@@ -87,6 +87,7 @@ public class AuthorizationActivityOperations extends ClinicalStatementOperations
 	 */
 	public static boolean validateAuthorizationActivityTemplateId(AuthorizationActivity authorizationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_AUTHORIZATION_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.AUTHORIZATION_ACTIVITY);
@@ -105,6 +106,7 @@ public class AuthorizationActivityOperations extends ClinicalStatementOperations
 					ConsolPlugin.INSTANCE.getString("AuthorizationActivityTemplateId"),
 					new Object[] { authorizationActivity }));
 			}
+
 			return false;
 		}
 		return true;
@@ -145,6 +147,7 @@ public class AuthorizationActivityOperations extends ClinicalStatementOperations
 
 	public static boolean validateAuthorizationActivityClassCode(AuthorizationActivity authorizationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_AUTHORIZATION_ACTIVITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.AUTHORIZATION_ACTIVITY);
@@ -163,6 +166,7 @@ public class AuthorizationActivityOperations extends ClinicalStatementOperations
 					ConsolPlugin.INSTANCE.getString("AuthorizationActivityClassCode"),
 					new Object[] { authorizationActivity }));
 			}
+
 			return false;
 		}
 		return true;
@@ -203,6 +207,7 @@ public class AuthorizationActivityOperations extends ClinicalStatementOperations
 
 	public static boolean validateAuthorizationActivityId(AuthorizationActivity authorizationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_AUTHORIZATION_ACTIVITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.AUTHORIZATION_ACTIVITY);
@@ -220,6 +225,7 @@ public class AuthorizationActivityOperations extends ClinicalStatementOperations
 					ConsolValidator.AUTHORIZATION_ACTIVITY__AUTHORIZATION_ACTIVITY_ID,
 					ConsolPlugin.INSTANCE.getString("AuthorizationActivityId"), new Object[] { authorizationActivity }));
 			}
+
 			return false;
 		}
 		return true;
@@ -260,6 +266,7 @@ public class AuthorizationActivityOperations extends ClinicalStatementOperations
 
 	public static boolean validateAuthorizationActivityMoodCode(AuthorizationActivity authorizationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_AUTHORIZATION_ACTIVITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.AUTHORIZATION_ACTIVITY);
@@ -278,6 +285,7 @@ public class AuthorizationActivityOperations extends ClinicalStatementOperations
 					ConsolPlugin.INSTANCE.getString("AuthorizationActivityMoodCode"),
 					new Object[] { authorizationActivity }));
 			}
+
 			return false;
 		}
 		return true;
@@ -318,6 +326,7 @@ public class AuthorizationActivityOperations extends ClinicalStatementOperations
 
 	public static boolean validateAuthorizationActivityEntryRelationship(AuthorizationActivity authorizationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_AUTHORIZATION_ACTIVITY_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.AUTHORIZATION_ACTIVITY);
@@ -336,6 +345,7 @@ public class AuthorizationActivityOperations extends ClinicalStatementOperations
 					ConsolPlugin.INSTANCE.getString("AuthorizationActivityEntryRelationship"),
 					new Object[] { authorizationActivity }));
 			}
+
 			return false;
 		}
 		return true;
@@ -387,18 +397,21 @@ public class AuthorizationActivityOperations extends ClinicalStatementOperations
 			throw new UnsupportedOperationException(pe.getLocalizedMessage());
 		}
 
-		Object oclResultSet = VALIDATE_AUTHORIZATION_ACTIVITY_ENTRY_RELATIONSHIP_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(authorizationActivity);
-		if (oclResultSet != null && oclResultSet instanceof Collection) {
+		Object oclResult = VALIDATE_AUTHORIZATION_ACTIVITY_ENTRY_RELATIONSHIP_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(authorizationActivity);
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+
 			if (diagnostics != null) {
-				for (EObject eObject : (Collection<EObject>) oclResultSet) {
+				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.AUTHORIZATION_ACTIVITY__AUTHORIZATION_ACTIVITY_ENTRY_RELATIONSHIP_TYPE_CODE,
 						ConsolPlugin.INSTANCE.getString("AuthorizationActivityEntryRelationshipTypeCode"),
 						new Object[] { eObject }));
 				}
+
 			}
-			return ((Collection<?>) oclResultSet).isEmpty();
+			return oclResultSet.isEmpty();
 		}
 		return true;
 	}

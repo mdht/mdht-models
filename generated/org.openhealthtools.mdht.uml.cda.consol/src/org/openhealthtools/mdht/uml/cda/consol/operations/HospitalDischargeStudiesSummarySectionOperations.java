@@ -81,6 +81,7 @@ public class HospitalDischargeStudiesSummarySectionOperations extends SectionOpe
 	public static boolean validateHospitalDischargeStudiesSummarySectionTemplateId(
 			HospitalDischargeStudiesSummarySection hospitalDischargeStudiesSummarySection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION);
@@ -101,6 +102,7 @@ public class HospitalDischargeStudiesSummarySectionOperations extends SectionOpe
 					ConsolPlugin.INSTANCE.getString("HospitalDischargeStudiesSummarySectionTemplateId"),
 					new Object[] { hospitalDischargeStudiesSummarySection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -144,6 +146,7 @@ public class HospitalDischargeStudiesSummarySectionOperations extends SectionOpe
 	public static boolean validateHospitalDischargeStudiesSummarySectionCode(
 			HospitalDischargeStudiesSummarySection hospitalDischargeStudiesSummarySection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION);
@@ -164,6 +167,7 @@ public class HospitalDischargeStudiesSummarySectionOperations extends SectionOpe
 					ConsolPlugin.INSTANCE.getString("HospitalDischargeStudiesSummarySectionCode"),
 					new Object[] { hospitalDischargeStudiesSummarySection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -203,6 +207,7 @@ public class HospitalDischargeStudiesSummarySectionOperations extends SectionOpe
 	public static boolean validateHospitalDischargeStudiesSummarySectionTitle(
 			HospitalDischargeStudiesSummarySection hospitalDischargeStudiesSummarySection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION);
@@ -223,6 +228,7 @@ public class HospitalDischargeStudiesSummarySectionOperations extends SectionOpe
 					ConsolPlugin.INSTANCE.getString("HospitalDischargeStudiesSummarySectionTitle"),
 					new Object[] { hospitalDischargeStudiesSummarySection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -262,6 +268,7 @@ public class HospitalDischargeStudiesSummarySectionOperations extends SectionOpe
 	public static boolean validateHospitalDischargeStudiesSummarySectionText(
 			HospitalDischargeStudiesSummarySection hospitalDischargeStudiesSummarySection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION);
@@ -282,6 +289,7 @@ public class HospitalDischargeStudiesSummarySectionOperations extends SectionOpe
 					ConsolPlugin.INSTANCE.getString("HospitalDischargeStudiesSummarySectionText"),
 					new Object[] { hospitalDischargeStudiesSummarySection }));
 			}
+
 			return false;
 		}
 		return true;

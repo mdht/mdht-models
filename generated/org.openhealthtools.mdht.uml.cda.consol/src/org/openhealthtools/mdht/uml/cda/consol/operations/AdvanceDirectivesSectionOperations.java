@@ -87,6 +87,7 @@ public class AdvanceDirectivesSectionOperations extends AdvanceDirectivesSection
 	 */
 	public static boolean validateAdvanceDirectivesSectionTitle(AdvanceDirectivesSection advanceDirectivesSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ADVANCE_DIRECTIVES_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ADVANCE_DIRECTIVES_SECTION);
@@ -105,6 +106,7 @@ public class AdvanceDirectivesSectionOperations extends AdvanceDirectivesSection
 					ConsolPlugin.INSTANCE.getString("AdvanceDirectivesSectionTitle"),
 					new Object[] { advanceDirectivesSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -143,6 +145,7 @@ public class AdvanceDirectivesSectionOperations extends AdvanceDirectivesSection
 	 */
 	public static boolean validateAdvanceDirectivesSectionText(AdvanceDirectivesSection advanceDirectivesSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ADVANCE_DIRECTIVES_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ADVANCE_DIRECTIVES_SECTION);
@@ -161,6 +164,7 @@ public class AdvanceDirectivesSectionOperations extends AdvanceDirectivesSection
 					ConsolPlugin.INSTANCE.getString("AdvanceDirectivesSectionText"),
 					new Object[] { advanceDirectivesSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -199,6 +203,7 @@ public class AdvanceDirectivesSectionOperations extends AdvanceDirectivesSection
 	 */
 	public static boolean validateAdvanceDirectivesSectionAdvanceDirectiveObservation(
 			AdvanceDirectivesSection advanceDirectivesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ADVANCE_DIRECTIVES_SECTION_ADVANCE_DIRECTIVE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ADVANCE_DIRECTIVES_SECTION);
@@ -219,6 +224,7 @@ public class AdvanceDirectivesSectionOperations extends AdvanceDirectivesSection
 					ConsolPlugin.INSTANCE.getString("AdvanceDirectivesSectionAdvanceDirectiveObservation"),
 					new Object[] { advanceDirectivesSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -305,6 +311,7 @@ public class AdvanceDirectivesSectionOperations extends AdvanceDirectivesSection
 	 */
 	public static boolean validateAdvanceDirectivesSectionEntriesOptionalTemplateId(
 			AdvanceDirectivesSection advanceDirectivesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ADVANCE_DIRECTIVES_SECTION);
@@ -329,6 +336,7 @@ public class AdvanceDirectivesSectionOperations extends AdvanceDirectivesSection
 								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
 									advanceDirectivesSection, context) }), new Object[] { advanceDirectivesSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -373,6 +381,7 @@ public class AdvanceDirectivesSectionOperations extends AdvanceDirectivesSection
 
 	public static boolean validateAdvanceDirectivesSectionEntriesOptionalCode(
 			AdvanceDirectivesSection advanceDirectivesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ADVANCE_DIRECTIVES_SECTION);
@@ -392,6 +401,7 @@ public class AdvanceDirectivesSectionOperations extends AdvanceDirectivesSection
 					ConsolPlugin.INSTANCE.getString("AdvanceDirectivesSectionEntriesOptionalCode"),
 					new Object[] { advanceDirectivesSection }));
 			}
+
 			return false;
 		}
 		return true;

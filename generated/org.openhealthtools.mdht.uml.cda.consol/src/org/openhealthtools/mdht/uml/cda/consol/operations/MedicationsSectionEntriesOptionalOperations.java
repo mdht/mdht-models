@@ -89,6 +89,7 @@ public class MedicationsSectionEntriesOptionalOperations extends SectionOperatio
 	public static boolean validateMedicationsSectionEntriesOptionalTemplateId(
 			MedicationsSectionEntriesOptional medicationsSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATIONS_SECTION_ENTRIES_OPTIONAL);
@@ -109,6 +110,7 @@ public class MedicationsSectionEntriesOptionalOperations extends SectionOperatio
 					ConsolPlugin.INSTANCE.getString("MedicationsSectionEntriesOptionalTemplateId"),
 					new Object[] { medicationsSectionEntriesOptional }));
 			}
+
 			return false;
 		}
 		return true;
@@ -152,6 +154,7 @@ public class MedicationsSectionEntriesOptionalOperations extends SectionOperatio
 	public static boolean validateMedicationsSectionEntriesOptionalCode(
 			MedicationsSectionEntriesOptional medicationsSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATIONS_SECTION_ENTRIES_OPTIONAL);
@@ -170,6 +173,7 @@ public class MedicationsSectionEntriesOptionalOperations extends SectionOperatio
 					ConsolPlugin.INSTANCE.getString("MedicationsSectionEntriesOptionalCode"),
 					new Object[] { medicationsSectionEntriesOptional }));
 			}
+
 			return false;
 		}
 		return true;
@@ -209,6 +213,7 @@ public class MedicationsSectionEntriesOptionalOperations extends SectionOperatio
 	public static boolean validateMedicationsSectionEntriesOptionalTitle(
 			MedicationsSectionEntriesOptional medicationsSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATIONS_SECTION_ENTRIES_OPTIONAL);
@@ -227,6 +232,7 @@ public class MedicationsSectionEntriesOptionalOperations extends SectionOperatio
 					ConsolPlugin.INSTANCE.getString("MedicationsSectionEntriesOptionalTitle"),
 					new Object[] { medicationsSectionEntriesOptional }));
 			}
+
 			return false;
 		}
 		return true;
@@ -266,6 +272,7 @@ public class MedicationsSectionEntriesOptionalOperations extends SectionOperatio
 	public static boolean validateMedicationsSectionEntriesOptionalText(
 			MedicationsSectionEntriesOptional medicationsSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATIONS_SECTION_ENTRIES_OPTIONAL);
@@ -284,6 +291,7 @@ public class MedicationsSectionEntriesOptionalOperations extends SectionOperatio
 					ConsolPlugin.INSTANCE.getString("MedicationsSectionEntriesOptionalText"),
 					new Object[] { medicationsSectionEntriesOptional }));
 			}
+
 			return false;
 		}
 		return true;
@@ -323,6 +331,7 @@ public class MedicationsSectionEntriesOptionalOperations extends SectionOperatio
 	public static boolean validateMedicationsSectionEntriesOptionalMedicationActivity(
 			MedicationsSectionEntriesOptional medicationsSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATIONS_SECTION_ENTRIES_OPTIONAL);
@@ -343,6 +352,7 @@ public class MedicationsSectionEntriesOptionalOperations extends SectionOperatio
 					ConsolPlugin.INSTANCE.getString("MedicationsSectionEntriesOptionalMedicationActivity"),
 					new Object[] { medicationsSectionEntriesOptional }));
 			}
+
 			return false;
 		}
 		return true;

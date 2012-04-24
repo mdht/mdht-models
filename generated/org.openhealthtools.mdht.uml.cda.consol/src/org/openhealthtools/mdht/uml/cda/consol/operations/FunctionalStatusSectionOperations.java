@@ -91,6 +91,7 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateFunctionalStatusSectionTemplateId(FunctionalStatusSection functionalStatusSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_FUNCTIONAL_STATUS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.FUNCTIONAL_STATUS_SECTION);
@@ -109,6 +110,7 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("FunctionalStatusSectionTemplateId"),
 					new Object[] { functionalStatusSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -151,6 +153,7 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateFunctionalStatusSectionCode(FunctionalStatusSection functionalStatusSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_FUNCTIONAL_STATUS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.FUNCTIONAL_STATUS_SECTION);
@@ -169,6 +172,7 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("FunctionalStatusSectionCode"),
 					new Object[] { functionalStatusSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -207,6 +211,7 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateFunctionalStatusSectionTitle(FunctionalStatusSection functionalStatusSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_FUNCTIONAL_STATUS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.FUNCTIONAL_STATUS_SECTION);
@@ -225,6 +230,7 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("FunctionalStatusSectionTitle"),
 					new Object[] { functionalStatusSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -263,6 +269,7 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateFunctionalStatusSectionText(FunctionalStatusSection functionalStatusSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_FUNCTIONAL_STATUS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.FUNCTIONAL_STATUS_SECTION);
@@ -281,6 +288,7 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("FunctionalStatusSectionText"),
 					new Object[] { functionalStatusSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -319,6 +327,7 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateFunctionalStatusSectionProblemObservation(
 			FunctionalStatusSection functionalStatusSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_FUNCTIONAL_STATUS_SECTION_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.FUNCTIONAL_STATUS_SECTION);
@@ -338,6 +347,7 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("FunctionalStatusSectionProblemObservation"),
 					new Object[] { functionalStatusSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -376,6 +386,7 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateFunctionalStatusSectionResultObservation(
 			FunctionalStatusSection functionalStatusSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_FUNCTIONAL_STATUS_SECTION_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.FUNCTIONAL_STATUS_SECTION);
@@ -394,6 +405,7 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("FunctionalStatusSectionResultObservation"),
 					new Object[] { functionalStatusSection }));
 			}
+
 			return false;
 		}
 		return true;

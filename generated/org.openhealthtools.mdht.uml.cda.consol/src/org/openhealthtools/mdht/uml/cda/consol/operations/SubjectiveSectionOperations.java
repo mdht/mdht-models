@@ -80,6 +80,7 @@ public class SubjectiveSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateSubjectiveSectionTemplateId(SubjectiveSection subjectiveSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_SUBJECTIVE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SUBJECTIVE_SECTION);
@@ -97,6 +98,7 @@ public class SubjectiveSectionOperations extends SectionOperations {
 					ConsolValidator.SUBJECTIVE_SECTION__SUBJECTIVE_SECTION_TEMPLATE_ID,
 					ConsolPlugin.INSTANCE.getString("SubjectiveSectionTemplateId"), new Object[] { subjectiveSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -139,6 +141,7 @@ public class SubjectiveSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateSubjectiveSectionCode(SubjectiveSection subjectiveSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_SUBJECTIVE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SUBJECTIVE_SECTION);
@@ -156,6 +159,7 @@ public class SubjectiveSectionOperations extends SectionOperations {
 					ConsolValidator.SUBJECTIVE_SECTION__SUBJECTIVE_SECTION_CODE,
 					ConsolPlugin.INSTANCE.getString("SubjectiveSectionCode"), new Object[] { subjectiveSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -194,6 +198,7 @@ public class SubjectiveSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateSubjectiveSectionText(SubjectiveSection subjectiveSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_SUBJECTIVE_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SUBJECTIVE_SECTION);
@@ -211,6 +216,7 @@ public class SubjectiveSectionOperations extends SectionOperations {
 					ConsolValidator.SUBJECTIVE_SECTION__SUBJECTIVE_SECTION_TEXT,
 					ConsolPlugin.INSTANCE.getString("SubjectiveSectionText"), new Object[] { subjectiveSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -249,6 +255,7 @@ public class SubjectiveSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateSubjectiveSectionTitle(SubjectiveSection subjectiveSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_SUBJECTIVE_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SUBJECTIVE_SECTION);
@@ -266,6 +273,7 @@ public class SubjectiveSectionOperations extends SectionOperations {
 					ConsolValidator.SUBJECTIVE_SECTION__SUBJECTIVE_SECTION_TITLE,
 					ConsolPlugin.INSTANCE.getString("SubjectiveSectionTitle"), new Object[] { subjectiveSection }));
 			}
+
 			return false;
 		}
 		return true;

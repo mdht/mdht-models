@@ -87,6 +87,7 @@ public class AllergiesSectionOperations extends AllergiesSectionEntriesOptionalO
 	 */
 	public static boolean validateAllergiesSectionTitle(AllergiesSection allergiesSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_ALLERGIES_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ALLERGIES_SECTION);
@@ -104,6 +105,7 @@ public class AllergiesSectionOperations extends AllergiesSectionEntriesOptionalO
 					ConsolValidator.ALLERGIES_SECTION__ALLERGIES_SECTION_TITLE,
 					ConsolPlugin.INSTANCE.getString("AllergiesSectionTitle"), new Object[] { allergiesSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -142,6 +144,7 @@ public class AllergiesSectionOperations extends AllergiesSectionEntriesOptionalO
 	 */
 	public static boolean validateAllergiesSectionText(AllergiesSection allergiesSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_ALLERGIES_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ALLERGIES_SECTION);
@@ -159,6 +162,7 @@ public class AllergiesSectionOperations extends AllergiesSectionEntriesOptionalO
 					ConsolValidator.ALLERGIES_SECTION__ALLERGIES_SECTION_TEXT,
 					ConsolPlugin.INSTANCE.getString("AllergiesSectionText"), new Object[] { allergiesSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -199,6 +203,7 @@ public class AllergiesSectionOperations extends AllergiesSectionEntriesOptionalO
 
 	public static boolean validateAllergiesSectionAllergyProblemAct(AllergiesSection allergiesSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ALLERGIES_SECTION_ALLERGY_PROBLEM_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ALLERGIES_SECTION);
@@ -217,6 +222,7 @@ public class AllergiesSectionOperations extends AllergiesSectionEntriesOptionalO
 					ConsolPlugin.INSTANCE.getString("AllergiesSectionAllergyProblemAct"),
 					new Object[] { allergiesSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -303,6 +309,7 @@ public class AllergiesSectionOperations extends AllergiesSectionEntriesOptionalO
 	 */
 	public static boolean validateAllergiesSectionEntriesOptionalTemplateId(AllergiesSection allergiesSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ALLERGIES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ALLERGIES_SECTION);
@@ -326,6 +333,7 @@ public class AllergiesSectionOperations extends AllergiesSectionEntriesOptionalO
 								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(allergiesSection, context) }),
 					new Object[] { allergiesSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -370,6 +378,7 @@ public class AllergiesSectionOperations extends AllergiesSectionEntriesOptionalO
 
 	public static boolean validateAllergiesSectionEntriesOptionalCode(AllergiesSection allergiesSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ALLERGIES_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ALLERGIES_SECTION);
@@ -388,6 +397,7 @@ public class AllergiesSectionOperations extends AllergiesSectionEntriesOptionalO
 					ConsolPlugin.INSTANCE.getString("AllergiesSectionEntriesOptionalCode"),
 					new Object[] { allergiesSection }));
 			}
+
 			return false;
 		}
 		return true;

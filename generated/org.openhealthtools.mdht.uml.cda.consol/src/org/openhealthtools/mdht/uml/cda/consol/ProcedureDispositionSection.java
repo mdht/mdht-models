@@ -18,7 +18,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getProcedureDispositionSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' templateId.root='2.16.840.1.113883.10.20.18.2.12' code.displayName='Procedure Disposition' constraints.validation.error='ProcedureDispositionSectionTemplateId ProcedureDispositionSectionCode ProcedureDispositionSectionText ProcedureDispositionSectionTitle' code.codeSystemName='LOINC' code.code='59775-7'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProcedureDispositionSectionTemplateId ProcedureDispositionSectionCode ProcedureDispositionSectionText ProcedureDispositionSectionTitle' templateId.root='2.16.840.1.113883.10.20.18.2.12' code.codeSystem='2.16.840.1.113883.6.1' code.displayName='Procedure Disposition' code.codeSystemName='LOINC' code.code='59775-7'"
  * @generated
  */
 public interface ProcedureDispositionSection extends Section {

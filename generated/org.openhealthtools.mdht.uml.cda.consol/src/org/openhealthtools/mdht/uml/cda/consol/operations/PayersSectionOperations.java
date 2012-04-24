@@ -88,6 +88,7 @@ public class PayersSectionOperations extends SectionOperations {
 	 */
 	public static boolean validatePayersSectionTemplateId(PayersSection payersSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PAYERS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PAYERS_SECTION);
@@ -105,6 +106,7 @@ public class PayersSectionOperations extends SectionOperations {
 					ConsolValidator.PAYERS_SECTION__PAYERS_SECTION_TEMPLATE_ID,
 					ConsolPlugin.INSTANCE.getString("PayersSectionTemplateId"), new Object[] { payersSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -147,6 +149,7 @@ public class PayersSectionOperations extends SectionOperations {
 	 */
 	public static boolean validatePayersSectionCode(PayersSection payersSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PAYERS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PAYERS_SECTION);
@@ -163,6 +166,7 @@ public class PayersSectionOperations extends SectionOperations {
 					ConsolValidator.PAYERS_SECTION__PAYERS_SECTION_CODE,
 					ConsolPlugin.INSTANCE.getString("PayersSectionCode"), new Object[] { payersSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -201,6 +205,7 @@ public class PayersSectionOperations extends SectionOperations {
 	 */
 	public static boolean validatePayersSectionTitle(PayersSection payersSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PAYERS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PAYERS_SECTION);
@@ -217,6 +222,7 @@ public class PayersSectionOperations extends SectionOperations {
 					ConsolValidator.PAYERS_SECTION__PAYERS_SECTION_TITLE,
 					ConsolPlugin.INSTANCE.getString("PayersSectionTitle"), new Object[] { payersSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -255,6 +261,7 @@ public class PayersSectionOperations extends SectionOperations {
 	 */
 	public static boolean validatePayersSectionText(PayersSection payersSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PAYERS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PAYERS_SECTION);
@@ -271,6 +278,7 @@ public class PayersSectionOperations extends SectionOperations {
 					ConsolValidator.PAYERS_SECTION__PAYERS_SECTION_TEXT,
 					ConsolPlugin.INSTANCE.getString("PayersSectionText"), new Object[] { payersSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -309,6 +317,7 @@ public class PayersSectionOperations extends SectionOperations {
 	 */
 	public static boolean validatePayersSectionCoverageActivity(PayersSection payersSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PAYERS_SECTION_COVERAGE_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PAYERS_SECTION);
@@ -326,6 +335,7 @@ public class PayersSectionOperations extends SectionOperations {
 					ConsolValidator.PAYERS_SECTION__PAYERS_SECTION_COVERAGE_ACTIVITY,
 					ConsolPlugin.INSTANCE.getString("PayersSectionCoverageActivity"), new Object[] { payersSection }));
 			}
+
 			return false;
 		}
 		return true;

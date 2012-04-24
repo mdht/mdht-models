@@ -86,6 +86,7 @@ public class AdvanceDirectivesSectionEntriesOptionalOperations extends SectionOp
 	public static boolean validateAdvanceDirectivesSectionEntriesOptionalTemplateId(
 			AdvanceDirectivesSectionEntriesOptional advanceDirectivesSectionEntriesOptional,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL);
@@ -106,6 +107,7 @@ public class AdvanceDirectivesSectionEntriesOptionalOperations extends SectionOp
 					ConsolPlugin.INSTANCE.getString("AdvanceDirectivesSectionEntriesOptionalTemplateId"),
 					new Object[] { advanceDirectivesSectionEntriesOptional }));
 			}
+
 			return false;
 		}
 		return true;
@@ -149,6 +151,7 @@ public class AdvanceDirectivesSectionEntriesOptionalOperations extends SectionOp
 	public static boolean validateAdvanceDirectivesSectionEntriesOptionalCode(
 			AdvanceDirectivesSectionEntriesOptional advanceDirectivesSectionEntriesOptional,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL);
@@ -169,6 +172,7 @@ public class AdvanceDirectivesSectionEntriesOptionalOperations extends SectionOp
 					ConsolPlugin.INSTANCE.getString("AdvanceDirectivesSectionEntriesOptionalCode"),
 					new Object[] { advanceDirectivesSectionEntriesOptional }));
 			}
+
 			return false;
 		}
 		return true;
@@ -208,6 +212,7 @@ public class AdvanceDirectivesSectionEntriesOptionalOperations extends SectionOp
 	public static boolean validateAdvanceDirectivesSectionEntriesOptionalTitle(
 			AdvanceDirectivesSectionEntriesOptional advanceDirectivesSectionEntriesOptional,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL);
@@ -228,6 +233,7 @@ public class AdvanceDirectivesSectionEntriesOptionalOperations extends SectionOp
 					ConsolPlugin.INSTANCE.getString("AdvanceDirectivesSectionEntriesOptionalTitle"),
 					new Object[] { advanceDirectivesSectionEntriesOptional }));
 			}
+
 			return false;
 		}
 		return true;
@@ -267,6 +273,7 @@ public class AdvanceDirectivesSectionEntriesOptionalOperations extends SectionOp
 	public static boolean validateAdvanceDirectivesSectionEntriesOptionalText(
 			AdvanceDirectivesSectionEntriesOptional advanceDirectivesSectionEntriesOptional,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL);
@@ -287,6 +294,7 @@ public class AdvanceDirectivesSectionEntriesOptionalOperations extends SectionOp
 					ConsolPlugin.INSTANCE.getString("AdvanceDirectivesSectionEntriesOptionalText"),
 					new Object[] { advanceDirectivesSectionEntriesOptional }));
 			}
+
 			return false;
 		}
 		return true;
@@ -326,6 +334,7 @@ public class AdvanceDirectivesSectionEntriesOptionalOperations extends SectionOp
 	public static boolean validateAdvanceDirectivesSectionEntriesOptionalAdvanceDirectiveObservation(
 			AdvanceDirectivesSectionEntriesOptional advanceDirectivesSectionEntriesOptional,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL_ADVANCE_DIRECTIVE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL);
@@ -346,6 +355,7 @@ public class AdvanceDirectivesSectionEntriesOptionalOperations extends SectionOp
 					ConsolPlugin.INSTANCE.getString("AdvanceDirectivesSectionEntriesOptionalAdvanceDirectiveObservation"),
 					new Object[] { advanceDirectivesSectionEntriesOptional }));
 			}
+
 			return false;
 		}
 		return true;

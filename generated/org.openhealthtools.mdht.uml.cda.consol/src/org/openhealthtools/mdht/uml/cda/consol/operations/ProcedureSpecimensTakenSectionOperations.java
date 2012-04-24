@@ -81,6 +81,7 @@ public class ProcedureSpecimensTakenSectionOperations extends SectionOperations 
 	public static boolean validateProcedureSpecimensTakenSectionTemplateId(
 			ProcedureSpecimensTakenSection procedureSpecimensTakenSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_SPECIMENS_TAKEN_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_SPECIMENS_TAKEN_SECTION);
@@ -100,6 +101,7 @@ public class ProcedureSpecimensTakenSectionOperations extends SectionOperations 
 					ConsolPlugin.INSTANCE.getString("ProcedureSpecimensTakenSectionTemplateId"),
 					new Object[] { procedureSpecimensTakenSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -143,6 +145,7 @@ public class ProcedureSpecimensTakenSectionOperations extends SectionOperations 
 	public static boolean validateProcedureSpecimensTakenSectionCode(
 			ProcedureSpecimensTakenSection procedureSpecimensTakenSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_SPECIMENS_TAKEN_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_SPECIMENS_TAKEN_SECTION);
@@ -161,6 +164,7 @@ public class ProcedureSpecimensTakenSectionOperations extends SectionOperations 
 					ConsolPlugin.INSTANCE.getString("ProcedureSpecimensTakenSectionCode"),
 					new Object[] { procedureSpecimensTakenSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -200,6 +204,7 @@ public class ProcedureSpecimensTakenSectionOperations extends SectionOperations 
 	public static boolean validateProcedureSpecimensTakenSectionText(
 			ProcedureSpecimensTakenSection procedureSpecimensTakenSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_SPECIMENS_TAKEN_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_SPECIMENS_TAKEN_SECTION);
@@ -218,6 +223,7 @@ public class ProcedureSpecimensTakenSectionOperations extends SectionOperations 
 					ConsolPlugin.INSTANCE.getString("ProcedureSpecimensTakenSectionText"),
 					new Object[] { procedureSpecimensTakenSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -257,6 +263,7 @@ public class ProcedureSpecimensTakenSectionOperations extends SectionOperations 
 	public static boolean validateProcedureSpecimensTakenSectionTitle(
 			ProcedureSpecimensTakenSection procedureSpecimensTakenSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_SPECIMENS_TAKEN_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_SPECIMENS_TAKEN_SECTION);
@@ -275,6 +282,7 @@ public class ProcedureSpecimensTakenSectionOperations extends SectionOperations 
 					ConsolPlugin.INSTANCE.getString("ProcedureSpecimensTakenSectionTitle"),
 					new Object[] { procedureSpecimensTakenSection }));
 			}
+
 			return false;
 		}
 		return true;

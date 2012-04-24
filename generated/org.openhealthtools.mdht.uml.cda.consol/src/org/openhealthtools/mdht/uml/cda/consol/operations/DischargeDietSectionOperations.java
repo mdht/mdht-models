@@ -80,6 +80,7 @@ public class DischargeDietSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateDischargeDietSectionTemplateId(DischargeDietSection dischargeDietSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_DISCHARGE_DIET_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DISCHARGE_DIET_SECTION);
@@ -98,6 +99,7 @@ public class DischargeDietSectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("DischargeDietSectionTemplateId"),
 					new Object[] { dischargeDietSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -140,6 +142,7 @@ public class DischargeDietSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateDischargeDietSectionCode(DischargeDietSection dischargeDietSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_DISCHARGE_DIET_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DISCHARGE_DIET_SECTION);
@@ -157,6 +160,7 @@ public class DischargeDietSectionOperations extends SectionOperations {
 					ConsolValidator.DISCHARGE_DIET_SECTION__DISCHARGE_DIET_SECTION_CODE,
 					ConsolPlugin.INSTANCE.getString("DischargeDietSectionCode"), new Object[] { dischargeDietSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -195,6 +199,7 @@ public class DischargeDietSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateDischargeDietSectionTitle(DischargeDietSection dischargeDietSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_DISCHARGE_DIET_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DISCHARGE_DIET_SECTION);
@@ -212,6 +217,7 @@ public class DischargeDietSectionOperations extends SectionOperations {
 					ConsolValidator.DISCHARGE_DIET_SECTION__DISCHARGE_DIET_SECTION_TITLE,
 					ConsolPlugin.INSTANCE.getString("DischargeDietSectionTitle"), new Object[] { dischargeDietSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -250,6 +256,7 @@ public class DischargeDietSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateDischargeDietSectionText(DischargeDietSection dischargeDietSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_DISCHARGE_DIET_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DISCHARGE_DIET_SECTION);
@@ -267,6 +274,7 @@ public class DischargeDietSectionOperations extends SectionOperations {
 					ConsolValidator.DISCHARGE_DIET_SECTION__DISCHARGE_DIET_SECTION_TEXT,
 					ConsolPlugin.INSTANCE.getString("DischargeDietSectionText"), new Object[] { dischargeDietSection }));
 			}
+
 			return false;
 		}
 		return true;

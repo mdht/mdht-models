@@ -89,6 +89,7 @@ public class ImmunizationsSectionEntriesOptionalOperations extends SectionOperat
 	public static boolean validateImmunizationsSectionEntriesOptionalTemplateId(
 			ImmunizationsSectionEntriesOptional immunizationsSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL);
@@ -109,6 +110,7 @@ public class ImmunizationsSectionEntriesOptionalOperations extends SectionOperat
 					ConsolPlugin.INSTANCE.getString("ImmunizationsSectionEntriesOptionalTemplateId"),
 					new Object[] { immunizationsSectionEntriesOptional }));
 			}
+
 			return false;
 		}
 		return true;
@@ -152,6 +154,7 @@ public class ImmunizationsSectionEntriesOptionalOperations extends SectionOperat
 	public static boolean validateImmunizationsSectionEntriesOptionalCode(
 			ImmunizationsSectionEntriesOptional immunizationsSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL);
@@ -171,6 +174,7 @@ public class ImmunizationsSectionEntriesOptionalOperations extends SectionOperat
 					ConsolPlugin.INSTANCE.getString("ImmunizationsSectionEntriesOptionalCode"),
 					new Object[] { immunizationsSectionEntriesOptional }));
 			}
+
 			return false;
 		}
 		return true;
@@ -210,6 +214,7 @@ public class ImmunizationsSectionEntriesOptionalOperations extends SectionOperat
 	public static boolean validateImmunizationsSectionEntriesOptionalTitle(
 			ImmunizationsSectionEntriesOptional immunizationsSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL);
@@ -229,6 +234,7 @@ public class ImmunizationsSectionEntriesOptionalOperations extends SectionOperat
 					ConsolPlugin.INSTANCE.getString("ImmunizationsSectionEntriesOptionalTitle"),
 					new Object[] { immunizationsSectionEntriesOptional }));
 			}
+
 			return false;
 		}
 		return true;
@@ -268,6 +274,7 @@ public class ImmunizationsSectionEntriesOptionalOperations extends SectionOperat
 	public static boolean validateImmunizationsSectionEntriesOptionalText(
 			ImmunizationsSectionEntriesOptional immunizationsSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL);
@@ -287,6 +294,7 @@ public class ImmunizationsSectionEntriesOptionalOperations extends SectionOperat
 					ConsolPlugin.INSTANCE.getString("ImmunizationsSectionEntriesOptionalText"),
 					new Object[] { immunizationsSectionEntriesOptional }));
 			}
+
 			return false;
 		}
 		return true;
@@ -326,6 +334,7 @@ public class ImmunizationsSectionEntriesOptionalOperations extends SectionOperat
 	public static boolean validateImmunizationsSectionEntriesOptionalImmunizationActivity(
 			ImmunizationsSectionEntriesOptional immunizationsSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_IMMUNIZATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL);
@@ -346,6 +355,7 @@ public class ImmunizationsSectionEntriesOptionalOperations extends SectionOperat
 					ConsolPlugin.INSTANCE.getString("ImmunizationsSectionEntriesOptionalImmunizationActivity"),
 					new Object[] { immunizationsSectionEntriesOptional }));
 			}
+
 			return false;
 		}
 		return true;

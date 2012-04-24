@@ -102,6 +102,7 @@ public class EncounterActivitiesOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateEncounterActivitiesCodeOriginalText(EncounterActivities encounterActivities,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ENCOUNTER_ACTIVITIES_CODE_ORIGINAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ENCOUNTER_ACTIVITIES);
@@ -120,6 +121,7 @@ public class EncounterActivitiesOperations extends ClinicalStatementOperations {
 					ConsolPlugin.INSTANCE.getString("EncounterActivitiesCodeOriginalText"),
 					new Object[] { encounterActivities }));
 			}
+
 			return false;
 		}
 		return true;
@@ -158,6 +160,7 @@ public class EncounterActivitiesOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateEncounterActivitiesCodeOriginalTextReference(EncounterActivities encounterActivities,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ENCOUNTER_ACTIVITIES_CODE_ORIGINAL_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ENCOUNTER_ACTIVITIES);
@@ -177,6 +180,7 @@ public class EncounterActivitiesOperations extends ClinicalStatementOperations {
 					ConsolPlugin.INSTANCE.getString("EncounterActivitiesCodeOriginalTextReference"),
 					new Object[] { encounterActivities }));
 			}
+
 			return false;
 		}
 		return true;
@@ -215,6 +219,7 @@ public class EncounterActivitiesOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateEncounterActivitiesCodeOriginalTextReferenceValue(
 			EncounterActivities encounterActivities, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ENCOUNTER_ACTIVITIES_CODE_ORIGINAL_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ENCOUNTER_ACTIVITIES);
@@ -234,6 +239,7 @@ public class EncounterActivitiesOperations extends ClinicalStatementOperations {
 					ConsolPlugin.INSTANCE.getString("EncounterActivitiesCodeOriginalTextReferenceValue"),
 					new Object[] { encounterActivities }));
 			}
+
 			return false;
 		}
 		return true;
@@ -272,6 +278,7 @@ public class EncounterActivitiesOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateEncounterActivitiesServiceDeliveryTypeCode(EncounterActivities encounterActivities,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ENCOUNTER_ACTIVITIES_SERVICE_DELIVERY_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ENCOUNTER_ACTIVITIES);
@@ -291,6 +298,7 @@ public class EncounterActivitiesOperations extends ClinicalStatementOperations {
 					ConsolPlugin.INSTANCE.getString("EncounterActivitiesServiceDeliveryTypeCode"),
 					new Object[] { encounterActivities }));
 			}
+
 			return false;
 		}
 		return true;
@@ -329,6 +337,7 @@ public class EncounterActivitiesOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateEncounterActivitiesTemplateId(EncounterActivities encounterActivities,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ENCOUNTER_ACTIVITIES_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ENCOUNTER_ACTIVITIES);
@@ -347,6 +356,7 @@ public class EncounterActivitiesOperations extends ClinicalStatementOperations {
 					ConsolPlugin.INSTANCE.getString("EncounterActivitiesTemplateId"),
 					new Object[] { encounterActivities }));
 			}
+
 			return false;
 		}
 		return true;
@@ -385,6 +395,7 @@ public class EncounterActivitiesOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateEncounterActivitiesClassCode(EncounterActivities encounterActivities,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ENCOUNTER_ACTIVITIES_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ENCOUNTER_ACTIVITIES);
@@ -403,6 +414,7 @@ public class EncounterActivitiesOperations extends ClinicalStatementOperations {
 					ConsolPlugin.INSTANCE.getString("EncounterActivitiesClassCode"),
 					new Object[] { encounterActivities }));
 			}
+
 			return false;
 		}
 		return true;
@@ -441,6 +453,7 @@ public class EncounterActivitiesOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateEncounterActivitiesMoodCode(EncounterActivities encounterActivities,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ENCOUNTER_ACTIVITIES_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ENCOUNTER_ACTIVITIES);
@@ -459,6 +472,7 @@ public class EncounterActivitiesOperations extends ClinicalStatementOperations {
 					ConsolPlugin.INSTANCE.getString("EncounterActivitiesMoodCode"),
 					new Object[] { encounterActivities }));
 			}
+
 			return false;
 		}
 		return true;
@@ -497,6 +511,7 @@ public class EncounterActivitiesOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateEncounterActivitiesId(EncounterActivities encounterActivities,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ENCOUNTER_ACTIVITIES_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ENCOUNTER_ACTIVITIES);
@@ -514,6 +529,7 @@ public class EncounterActivitiesOperations extends ClinicalStatementOperations {
 					ConsolValidator.ENCOUNTER_ACTIVITIES__ENCOUNTER_ACTIVITIES_ID,
 					ConsolPlugin.INSTANCE.getString("EncounterActivitiesId"), new Object[] { encounterActivities }));
 			}
+
 			return false;
 		}
 		return true;
@@ -556,6 +572,7 @@ public class EncounterActivitiesOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateEncounterActivitiesCode(EncounterActivities encounterActivities,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ENCOUNTER_ACTIVITIES_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ENCOUNTER_ACTIVITIES);
@@ -573,6 +590,7 @@ public class EncounterActivitiesOperations extends ClinicalStatementOperations {
 					ConsolValidator.ENCOUNTER_ACTIVITIES__ENCOUNTER_ACTIVITIES_CODE,
 					ConsolPlugin.INSTANCE.getString("EncounterActivitiesCode"), new Object[] { encounterActivities }));
 			}
+
 			return false;
 		}
 		return true;
@@ -611,6 +629,7 @@ public class EncounterActivitiesOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateEncounterActivitiesEffectiveTime(EncounterActivities encounterActivities,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ENCOUNTER_ACTIVITIES_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ENCOUNTER_ACTIVITIES);
@@ -629,6 +648,7 @@ public class EncounterActivitiesOperations extends ClinicalStatementOperations {
 					ConsolPlugin.INSTANCE.getString("EncounterActivitiesEffectiveTime"),
 					new Object[] { encounterActivities }));
 			}
+
 			return false;
 		}
 		return true;
@@ -667,6 +687,7 @@ public class EncounterActivitiesOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateEncounterActivitiesServiceDeliveryLocation(EncounterActivities encounterActivities,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ENCOUNTER_ACTIVITIES_SERVICE_DELIVERY_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ENCOUNTER_ACTIVITIES);
@@ -686,6 +707,7 @@ public class EncounterActivitiesOperations extends ClinicalStatementOperations {
 					ConsolPlugin.INSTANCE.getString("EncounterActivitiesServiceDeliveryLocation"),
 					new Object[] { encounterActivities }));
 			}
+
 			return false;
 		}
 		return true;
@@ -724,6 +746,7 @@ public class EncounterActivitiesOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateEncounterActivitiesIndication(EncounterActivities encounterActivities,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ENCOUNTER_ACTIVITIES_INDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ENCOUNTER_ACTIVITIES);
@@ -742,6 +765,7 @@ public class EncounterActivitiesOperations extends ClinicalStatementOperations {
 					ConsolPlugin.INSTANCE.getString("EncounterActivitiesIndication"),
 					new Object[] { encounterActivities }));
 			}
+
 			return false;
 		}
 		return true;
@@ -782,6 +806,7 @@ public class EncounterActivitiesOperations extends ClinicalStatementOperations {
 
 	public static boolean validateEncounterActivitiesEncounterPerformer(EncounterActivities encounterActivities,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ENCOUNTER_ACTIVITIES_ENCOUNTER_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ENCOUNTER_ACTIVITIES);
@@ -800,6 +825,7 @@ public class EncounterActivitiesOperations extends ClinicalStatementOperations {
 					ConsolPlugin.INSTANCE.getString("EncounterActivitiesEncounterPerformer"),
 					new Object[] { encounterActivities }));
 			}
+
 			return false;
 		}
 		return true;
@@ -851,10 +877,12 @@ public class EncounterActivitiesOperations extends ClinicalStatementOperations {
 			throw new UnsupportedOperationException(pe.getLocalizedMessage());
 		}
 
-		Object oclResultSet = VALIDATE_ENCOUNTER_ACTIVITIES_ENCOUNTER_PERFORMER_ENCOUNTER_PERFORMER_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(encounterActivities);
-		if (oclResultSet != null && oclResultSet instanceof Collection) {
+		Object oclResult = VALIDATE_ENCOUNTER_ACTIVITIES_ENCOUNTER_PERFORMER_ENCOUNTER_PERFORMER_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(encounterActivities);
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+
 			if (diagnostics != null) {
-				for (EObject eObject : (Collection<EObject>) oclResultSet) {
+				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.INFO,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
@@ -862,8 +890,9 @@ public class EncounterActivitiesOperations extends ClinicalStatementOperations {
 						ConsolPlugin.INSTANCE.getString("EncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityCode"),
 						new Object[] { eObject }));
 				}
+
 			}
-			return ((Collection<?>) oclResultSet).isEmpty();
+			return oclResultSet.isEmpty();
 		}
 		return true;
 	}
@@ -914,10 +943,12 @@ public class EncounterActivitiesOperations extends ClinicalStatementOperations {
 			throw new UnsupportedOperationException(pe.getLocalizedMessage());
 		}
 
-		Object oclResultSet = VALIDATE_ENCOUNTER_ACTIVITIES_ENCOUNTER_PERFORMER_ENCOUNTER_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(encounterActivities);
-		if (oclResultSet != null && oclResultSet instanceof Collection) {
+		Object oclResult = VALIDATE_ENCOUNTER_ACTIVITIES_ENCOUNTER_PERFORMER_ENCOUNTER_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(encounterActivities);
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+
 			if (diagnostics != null) {
-				for (EObject eObject : (Collection<EObject>) oclResultSet) {
+				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
@@ -925,8 +956,9 @@ public class EncounterActivitiesOperations extends ClinicalStatementOperations {
 						ConsolPlugin.INSTANCE.getString("EncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntity"),
 						new Object[] { eObject }));
 				}
+
 			}
-			return ((Collection<?>) oclResultSet).isEmpty();
+			return oclResultSet.isEmpty();
 		}
 		return true;
 	}
@@ -965,7 +997,7 @@ public class EncounterActivitiesOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.ENCOUNTER_ACTIVITIES,
-				ConsolPackage.Literals.ENCOUNTER_ACTIVITIES.getEAllOperations().get(64));
+				ConsolPackage.Literals.ENCOUNTER_ACTIVITIES.getEAllOperations().get(66));
 			try {
 				GET_SERVICE_DELIVERY_LOCATIONS__EOCL_QRY = helper.createQuery(GET_SERVICE_DELIVERY_LOCATIONS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1012,7 +1044,7 @@ public class EncounterActivitiesOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.ENCOUNTER_ACTIVITIES,
-				ConsolPackage.Literals.ENCOUNTER_ACTIVITIES.getEAllOperations().get(65));
+				ConsolPackage.Literals.ENCOUNTER_ACTIVITIES.getEAllOperations().get(67));
 			try {
 				GET_INDICATIONS__EOCL_QRY = helper.createQuery(GET_INDICATIONS__EOCL_EXP);
 			} catch (ParserException pe) {

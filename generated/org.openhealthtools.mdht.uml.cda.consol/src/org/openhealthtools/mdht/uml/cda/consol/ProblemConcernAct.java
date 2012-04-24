@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.Act;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getProblemConcernAct()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.5.6' code.displayName='Concern' templateId.root='2.16.840.1.113883.10.20.22.4.3' constraints.validation.error='ProblemConcernActTemplateId ProblemConcernActEffectiveTimeLow ProblemConcernActClassCode ProblemConcernActMoodCode ProblemConcernActId ProblemConcernActCode ProblemConcernActStatusCode ProblemConcernActEffectiveTime ProblemConcernActProblemObservation' code.codeSystemName='HL7ActClass' constraints.validation.warning='ProblemConcernActEffectiveTimeHigh' classCode='ACT' code.code='CONC' moodCode='EVN'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProblemConcernActTemplateId ProblemConcernActEffectiveTimeLow ProblemConcernActClassCode ProblemConcernActMoodCode ProblemConcernActId ProblemConcernActCode ProblemConcernActStatusCode ProblemConcernActEffectiveTime ProblemConcernActProblemObservation' templateId.root='2.16.840.1.113883.10.20.22.4.3' constraints.validation.warning='ProblemConcernActEffectiveTimeHigh' classCode='ACT' moodCode='EVN' code.codeSystem='2.16.840.1.113883.5.6' code.displayName='Concern' code.codeSystemName='HL7ActClass' code.code='CONC'"
  * @generated
  */
 public interface ProblemConcernAct extends Act {

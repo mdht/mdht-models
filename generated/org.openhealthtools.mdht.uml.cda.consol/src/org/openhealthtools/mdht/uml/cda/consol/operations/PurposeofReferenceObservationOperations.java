@@ -82,6 +82,7 @@ public class PurposeofReferenceObservationOperations extends ClinicalStatementOp
 	public static boolean validatePurposeofReferenceObservationTemplateId(
 			PurposeofReferenceObservation purposeofReferenceObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PURPOSEOF_REFERENCE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PURPOSEOF_REFERENCE_OBSERVATION);
@@ -100,6 +101,7 @@ public class PurposeofReferenceObservationOperations extends ClinicalStatementOp
 					ConsolPlugin.INSTANCE.getString("PurposeofReferenceObservationTemplateId"),
 					new Object[] { purposeofReferenceObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -139,6 +141,7 @@ public class PurposeofReferenceObservationOperations extends ClinicalStatementOp
 	public static boolean validatePurposeofReferenceObservationClassCode(
 			PurposeofReferenceObservation purposeofReferenceObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PURPOSEOF_REFERENCE_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PURPOSEOF_REFERENCE_OBSERVATION);
@@ -157,6 +160,7 @@ public class PurposeofReferenceObservationOperations extends ClinicalStatementOp
 					ConsolPlugin.INSTANCE.getString("PurposeofReferenceObservationClassCode"),
 					new Object[] { purposeofReferenceObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -196,6 +200,7 @@ public class PurposeofReferenceObservationOperations extends ClinicalStatementOp
 	public static boolean validatePurposeofReferenceObservationCode(
 			PurposeofReferenceObservation purposeofReferenceObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PURPOSEOF_REFERENCE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PURPOSEOF_REFERENCE_OBSERVATION);
@@ -214,6 +219,7 @@ public class PurposeofReferenceObservationOperations extends ClinicalStatementOp
 					ConsolPlugin.INSTANCE.getString("PurposeofReferenceObservationCode"),
 					new Object[] { purposeofReferenceObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -253,6 +259,7 @@ public class PurposeofReferenceObservationOperations extends ClinicalStatementOp
 	public static boolean validatePurposeofReferenceObservationMoodCode(
 			PurposeofReferenceObservation purposeofReferenceObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PURPOSEOF_REFERENCE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PURPOSEOF_REFERENCE_OBSERVATION);
@@ -271,6 +278,7 @@ public class PurposeofReferenceObservationOperations extends ClinicalStatementOp
 					ConsolPlugin.INSTANCE.getString("PurposeofReferenceObservationMoodCode"),
 					new Object[] { purposeofReferenceObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -316,6 +324,7 @@ public class PurposeofReferenceObservationOperations extends ClinicalStatementOp
 	public static boolean validatePurposeofReferenceObservationValue(
 			PurposeofReferenceObservation purposeofReferenceObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PURPOSEOF_REFERENCE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PURPOSEOF_REFERENCE_OBSERVATION);
@@ -334,6 +343,7 @@ public class PurposeofReferenceObservationOperations extends ClinicalStatementOp
 					ConsolPlugin.INSTANCE.getString("PurposeofReferenceObservationValue"),
 					new Object[] { purposeofReferenceObservation }));
 			}
+
 			return false;
 		}
 		return true;

@@ -80,6 +80,7 @@ public class SurgicalDrainsSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateSurgicalDrainsSectionTemplateId(SurgicalDrainsSection surgicalDrainsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_SURGICAL_DRAINS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SURGICAL_DRAINS_SECTION);
@@ -98,6 +99,7 @@ public class SurgicalDrainsSectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("SurgicalDrainsSectionTemplateId"),
 					new Object[] { surgicalDrainsSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -140,6 +142,7 @@ public class SurgicalDrainsSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateSurgicalDrainsSectionCode(SurgicalDrainsSection surgicalDrainsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_SURGICAL_DRAINS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SURGICAL_DRAINS_SECTION);
@@ -158,6 +161,7 @@ public class SurgicalDrainsSectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("SurgicalDrainsSectionCode"),
 					new Object[] { surgicalDrainsSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -196,6 +200,7 @@ public class SurgicalDrainsSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateSurgicalDrainsSectionText(SurgicalDrainsSection surgicalDrainsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_SURGICAL_DRAINS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SURGICAL_DRAINS_SECTION);
@@ -214,6 +219,7 @@ public class SurgicalDrainsSectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("SurgicalDrainsSectionText"),
 					new Object[] { surgicalDrainsSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -252,6 +258,7 @@ public class SurgicalDrainsSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateSurgicalDrainsSectionTitle(SurgicalDrainsSection surgicalDrainsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_SURGICAL_DRAINS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SURGICAL_DRAINS_SECTION);
@@ -270,6 +277,7 @@ public class SurgicalDrainsSectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("SurgicalDrainsSectionTitle"),
 					new Object[] { surgicalDrainsSection }));
 			}
+
 			return false;
 		}
 		return true;

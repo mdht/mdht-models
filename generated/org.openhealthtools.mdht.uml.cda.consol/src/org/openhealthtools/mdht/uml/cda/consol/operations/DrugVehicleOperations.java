@@ -82,6 +82,7 @@ public class DrugVehicleOperations extends ParticipantRoleOperations {
 	 */
 	public static boolean validateDrugVehiclePlayingEntityCode(DrugVehicle drugVehicle, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_DRUG_VEHICLE_PLAYING_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DRUG_VEHICLE);
@@ -99,6 +100,7 @@ public class DrugVehicleOperations extends ParticipantRoleOperations {
 					ConsolValidator.DRUG_VEHICLE__DRUG_VEHICLE_PLAYING_ENTITY_CODE,
 					ConsolPlugin.INSTANCE.getString("DrugVehiclePlayingEntityCode"), new Object[] { drugVehicle }));
 			}
+
 			return false;
 		}
 		return true;
@@ -137,6 +139,7 @@ public class DrugVehicleOperations extends ParticipantRoleOperations {
 	 */
 	public static boolean validateDrugVehiclePlayingEntityName(DrugVehicle drugVehicle, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_DRUG_VEHICLE_PLAYING_ENTITY_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DRUG_VEHICLE);
@@ -154,6 +157,7 @@ public class DrugVehicleOperations extends ParticipantRoleOperations {
 					ConsolValidator.DRUG_VEHICLE__DRUG_VEHICLE_PLAYING_ENTITY_NAME,
 					ConsolPlugin.INSTANCE.getString("DrugVehiclePlayingEntityName"), new Object[] { drugVehicle }));
 			}
+
 			return false;
 		}
 		return true;
@@ -192,6 +196,7 @@ public class DrugVehicleOperations extends ParticipantRoleOperations {
 	 */
 	public static boolean validateDrugVehicleTemplateId(DrugVehicle drugVehicle, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_DRUG_VEHICLE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DRUG_VEHICLE);
@@ -208,6 +213,7 @@ public class DrugVehicleOperations extends ParticipantRoleOperations {
 					ConsolValidator.DRUG_VEHICLE__DRUG_VEHICLE_TEMPLATE_ID,
 					ConsolPlugin.INSTANCE.getString("DrugVehicleTemplateId"), new Object[] { drugVehicle }));
 			}
+
 			return false;
 		}
 		return true;
@@ -246,6 +252,7 @@ public class DrugVehicleOperations extends ParticipantRoleOperations {
 	 */
 	public static boolean validateDrugVehicleClassCode(DrugVehicle drugVehicle, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_DRUG_VEHICLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DRUG_VEHICLE);
@@ -262,6 +269,7 @@ public class DrugVehicleOperations extends ParticipantRoleOperations {
 					ConsolValidator.DRUG_VEHICLE__DRUG_VEHICLE_CLASS_CODE,
 					ConsolPlugin.INSTANCE.getString("DrugVehicleClassCode"), new Object[] { drugVehicle }));
 			}
+
 			return false;
 		}
 		return true;
@@ -304,6 +312,7 @@ public class DrugVehicleOperations extends ParticipantRoleOperations {
 	 */
 	public static boolean validateDrugVehicleCode(DrugVehicle drugVehicle, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_DRUG_VEHICLE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DRUG_VEHICLE);
@@ -320,6 +329,7 @@ public class DrugVehicleOperations extends ParticipantRoleOperations {
 					ConsolValidator.DRUG_VEHICLE__DRUG_VEHICLE_CODE,
 					ConsolPlugin.INSTANCE.getString("DrugVehicleCode"), new Object[] { drugVehicle }));
 			}
+
 			return false;
 		}
 		return true;
@@ -358,6 +368,7 @@ public class DrugVehicleOperations extends ParticipantRoleOperations {
 	 */
 	public static boolean validateDrugVehiclePlayingEntity(DrugVehicle drugVehicle, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_DRUG_VEHICLE_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DRUG_VEHICLE);
@@ -375,6 +386,7 @@ public class DrugVehicleOperations extends ParticipantRoleOperations {
 					ConsolValidator.DRUG_VEHICLE__DRUG_VEHICLE_PLAYING_ENTITY,
 					ConsolPlugin.INSTANCE.getString("DrugVehiclePlayingEntity"), new Object[] { drugVehicle }));
 			}
+
 			return false;
 		}
 		return true;

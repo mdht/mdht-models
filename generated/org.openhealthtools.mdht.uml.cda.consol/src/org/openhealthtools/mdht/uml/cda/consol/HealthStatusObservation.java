@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getHealthStatusObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation statusCode.code='completed' value.codeSystemName='SNOMEDCT' code.codeSystem='2.16.840.1.113883.6.1' code.displayName='Health status' templateId.root='2.16.840.1.113883.10.20.22.4.5' constraints.validation.error='HealthStatusObservationTemplateId HealthStatusObservationHasTextReference HealthStatusObservationHasTextReferenceValue HealthStatusObservationClassCode HealthStatusObservationMoodCode HealthStatusObservationCode HealthStatusObservationStatusCode HealthStatusObservationValue' code.codeSystemName='LOINC' constraints.validation.warning='HealthStatusObservationText' classCode='OBS' code.code='11323-3' moodCode='EVN' value.codeSystem='2.16.840.1.113883.6.96'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='HealthStatusObservationTemplateId HealthStatusObservationHasTextReference HealthStatusObservationHasTextReferenceValue HealthStatusObservationClassCode HealthStatusObservationMoodCode HealthStatusObservationCode HealthStatusObservationStatusCode HealthStatusObservationValue' templateId.root='2.16.840.1.113883.10.20.22.4.5' classCode='OBS' moodCode='EVN' code.codeSystem='2.16.840.1.113883.6.1' code.displayName='Health status' code.codeSystemName='LOINC' code.code='11323-3' constraints.validation.warning='HealthStatusObservationText' statusCode.code='completed' value.codeSystemName='SNOMEDCT' value.codeSystem='2.16.840.1.113883.6.96'"
  * @generated
  */
 public interface HealthStatusObservation extends Observation {

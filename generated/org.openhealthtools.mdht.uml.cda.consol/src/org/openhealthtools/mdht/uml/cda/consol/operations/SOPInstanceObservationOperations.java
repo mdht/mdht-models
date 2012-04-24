@@ -96,6 +96,7 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 	 */
 	public static boolean validateSOPInstanceObservationTemplateId(SOPInstanceObservation sopInstanceObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_SOP_INSTANCE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SOP_INSTANCE_OBSERVATION);
@@ -114,6 +115,7 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 					ConsolPlugin.INSTANCE.getString("SOPInstanceObservationTemplateId"),
 					new Object[] { sopInstanceObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -152,6 +154,7 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 	 */
 	public static boolean validateSOPInstanceObservationClassCode(SOPInstanceObservation sopInstanceObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_SOP_INSTANCE_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SOP_INSTANCE_OBSERVATION);
@@ -170,6 +173,7 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 					ConsolPlugin.INSTANCE.getString("SOPInstanceObservationClassCode"),
 					new Object[] { sopInstanceObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -208,6 +212,7 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 	 */
 	public static boolean validateSOPInstanceObservationEffectiveTime(SOPInstanceObservation sopInstanceObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_SOP_INSTANCE_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SOP_INSTANCE_OBSERVATION);
@@ -226,6 +231,7 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 					ConsolPlugin.INSTANCE.getString("SOPInstanceObservationEffectiveTime"),
 					new Object[] { sopInstanceObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -264,6 +270,7 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 	 */
 	public static boolean validateSOPInstanceObservationId(SOPInstanceObservation sopInstanceObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_SOP_INSTANCE_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SOP_INSTANCE_OBSERVATION);
@@ -282,6 +289,7 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 					ConsolPlugin.INSTANCE.getString("SOPInstanceObservationId"),
 					new Object[] { sopInstanceObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -320,6 +328,7 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 	 */
 	public static boolean validateSOPInstanceObservationMoodCode(SOPInstanceObservation sopInstanceObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_SOP_INSTANCE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SOP_INSTANCE_OBSERVATION);
@@ -338,6 +347,7 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 					ConsolPlugin.INSTANCE.getString("SOPInstanceObservationMoodCode"),
 					new Object[] { sopInstanceObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -376,6 +386,7 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 	 */
 	public static boolean validateSOPInstanceObservationText(SOPInstanceObservation sopInstanceObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_SOP_INSTANCE_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SOP_INSTANCE_OBSERVATION);
@@ -394,6 +405,7 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 					ConsolPlugin.INSTANCE.getString("SOPInstanceObservationText"),
 					new Object[] { sopInstanceObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -434,6 +446,7 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 
 	public static boolean validateSOPInstanceObservationCode(SOPInstanceObservation sopInstanceObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_SOP_INSTANCE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SOP_INSTANCE_OBSERVATION);
@@ -452,6 +465,7 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 					ConsolPlugin.INSTANCE.getString("SOPInstanceObservationCode"),
 					new Object[] { sopInstanceObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -490,6 +504,7 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 	 */
 	public static boolean validateSOPInstanceObservationSOPInstanceObservation(
 			SOPInstanceObservation sopInstanceObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_SOP_INSTANCE_OBSERVATION_SOP_INSTANCE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SOP_INSTANCE_OBSERVATION);
@@ -509,6 +524,7 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 					ConsolPlugin.INSTANCE.getString("SOPInstanceObservationSOPInstanceObservation"),
 					new Object[] { sopInstanceObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -547,6 +563,7 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 	 */
 	public static boolean validateSOPInstanceObservationPurposeofReferenceObservation(
 			SOPInstanceObservation sopInstanceObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_SOP_INSTANCE_OBSERVATION_PURPOSEOF_REFERENCE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SOP_INSTANCE_OBSERVATION);
@@ -566,6 +583,7 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 					ConsolPlugin.INSTANCE.getString("SOPInstanceObservationPurposeofReferenceObservation"),
 					new Object[] { sopInstanceObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -604,6 +622,7 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 	 */
 	public static boolean validateSOPInstanceObservationReferencedFramesObservation(
 			SOPInstanceObservation sopInstanceObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_SOP_INSTANCE_OBSERVATION_REFERENCED_FRAMES_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SOP_INSTANCE_OBSERVATION);
@@ -623,6 +642,7 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 					ConsolPlugin.INSTANCE.getString("SOPInstanceObservationReferencedFramesObservation"),
 					new Object[] { sopInstanceObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -663,7 +683,7 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.SOP_INSTANCE_OBSERVATION,
-				ConsolPackage.Literals.SOP_INSTANCE_OBSERVATION.getEAllOperations().get(59));
+				ConsolPackage.Literals.SOP_INSTANCE_OBSERVATION.getEAllOperations().get(61));
 			try {
 				GET_SOP_INSTANCE_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_SOP_INSTANCE_OBSERVATIONS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -712,7 +732,7 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.SOP_INSTANCE_OBSERVATION,
-				ConsolPackage.Literals.SOP_INSTANCE_OBSERVATION.getEAllOperations().get(60));
+				ConsolPackage.Literals.SOP_INSTANCE_OBSERVATION.getEAllOperations().get(62));
 			try {
 				GET_PURPOSEOF_REFERENCE_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_PURPOSEOF_REFERENCE_OBSERVATIONS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -761,7 +781,7 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.SOP_INSTANCE_OBSERVATION,
-				ConsolPackage.Literals.SOP_INSTANCE_OBSERVATION.getEAllOperations().get(61));
+				ConsolPackage.Literals.SOP_INSTANCE_OBSERVATION.getEAllOperations().get(63));
 			try {
 				GET_REFERENCED_FRAMES_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_REFERENCED_FRAMES_OBSERVATIONS__EOCL_EXP);
 			} catch (ParserException pe) {

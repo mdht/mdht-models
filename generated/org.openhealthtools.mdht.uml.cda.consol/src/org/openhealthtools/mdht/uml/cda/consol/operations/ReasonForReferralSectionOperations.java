@@ -80,6 +80,7 @@ public class ReasonForReferralSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateReasonForReferralSectionTemplateId(ReasonForReferralSection reasonForReferralSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_REASON_FOR_REFERRAL_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REASON_FOR_REFERRAL_SECTION);
@@ -98,6 +99,7 @@ public class ReasonForReferralSectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("ReasonForReferralSectionTemplateId"),
 					new Object[] { reasonForReferralSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -140,6 +142,7 @@ public class ReasonForReferralSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateReasonForReferralSectionCode(ReasonForReferralSection reasonForReferralSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_REASON_FOR_REFERRAL_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REASON_FOR_REFERRAL_SECTION);
@@ -158,6 +161,7 @@ public class ReasonForReferralSectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("ReasonForReferralSectionCode"),
 					new Object[] { reasonForReferralSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -196,6 +200,7 @@ public class ReasonForReferralSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateReasonForReferralSectionTitle(ReasonForReferralSection reasonForReferralSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_REASON_FOR_REFERRAL_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REASON_FOR_REFERRAL_SECTION);
@@ -214,6 +219,7 @@ public class ReasonForReferralSectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("ReasonForReferralSectionTitle"),
 					new Object[] { reasonForReferralSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -252,6 +258,7 @@ public class ReasonForReferralSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateReasonForReferralSectionText(ReasonForReferralSection reasonForReferralSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_REASON_FOR_REFERRAL_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REASON_FOR_REFERRAL_SECTION);
@@ -270,6 +277,7 @@ public class ReasonForReferralSectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("ReasonForReferralSectionText"),
 					new Object[] { reasonForReferralSection }));
 			}
+
 			return false;
 		}
 		return true;

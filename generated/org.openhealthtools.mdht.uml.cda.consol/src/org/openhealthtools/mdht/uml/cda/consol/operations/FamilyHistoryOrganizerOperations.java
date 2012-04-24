@@ -88,6 +88,7 @@ public class FamilyHistoryOrganizerOperations extends OrganizerOperations {
 	 */
 	public static boolean validateFamilyHistoryOrganizerTemplateId(FamilyHistoryOrganizer familyHistoryOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_FAMILY_HISTORY_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.FAMILY_HISTORY_ORGANIZER);
@@ -106,6 +107,7 @@ public class FamilyHistoryOrganizerOperations extends OrganizerOperations {
 					ConsolPlugin.INSTANCE.getString("FamilyHistoryOrganizerTemplateId"),
 					new Object[] { familyHistoryOrganizer }));
 			}
+
 			return false;
 		}
 		return true;
@@ -144,6 +146,7 @@ public class FamilyHistoryOrganizerOperations extends OrganizerOperations {
 	 */
 	public static boolean validateFamilyHistoryOrganizerClassCode(FamilyHistoryOrganizer familyHistoryOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_FAMILY_HISTORY_ORGANIZER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.FAMILY_HISTORY_ORGANIZER);
@@ -162,6 +165,7 @@ public class FamilyHistoryOrganizerOperations extends OrganizerOperations {
 					ConsolPlugin.INSTANCE.getString("FamilyHistoryOrganizerClassCode"),
 					new Object[] { familyHistoryOrganizer }));
 			}
+
 			return false;
 		}
 		return true;
@@ -200,6 +204,7 @@ public class FamilyHistoryOrganizerOperations extends OrganizerOperations {
 	 */
 	public static boolean validateFamilyHistoryOrganizerMoodCode(FamilyHistoryOrganizer familyHistoryOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_FAMILY_HISTORY_ORGANIZER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.FAMILY_HISTORY_ORGANIZER);
@@ -218,6 +223,7 @@ public class FamilyHistoryOrganizerOperations extends OrganizerOperations {
 					ConsolPlugin.INSTANCE.getString("FamilyHistoryOrganizerMoodCode"),
 					new Object[] { familyHistoryOrganizer }));
 			}
+
 			return false;
 		}
 		return true;
@@ -256,6 +262,7 @@ public class FamilyHistoryOrganizerOperations extends OrganizerOperations {
 	 */
 	public static boolean validateFamilyHistoryOrganizerFamilyHistoryObservation(
 			FamilyHistoryOrganizer familyHistoryOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_FAMILY_HISTORY_ORGANIZER_FAMILY_HISTORY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.FAMILY_HISTORY_ORGANIZER);
@@ -275,6 +282,7 @@ public class FamilyHistoryOrganizerOperations extends OrganizerOperations {
 					ConsolPlugin.INSTANCE.getString("FamilyHistoryOrganizerFamilyHistoryObservation"),
 					new Object[] { familyHistoryOrganizer }));
 			}
+
 			return false;
 		}
 		return true;
@@ -313,6 +321,7 @@ public class FamilyHistoryOrganizerOperations extends OrganizerOperations {
 	 */
 	public static boolean validateFamilyHistoryOrganizerSubject(FamilyHistoryOrganizer familyHistoryOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_FAMILY_HISTORY_ORGANIZER_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.FAMILY_HISTORY_ORGANIZER);
@@ -331,6 +340,7 @@ public class FamilyHistoryOrganizerOperations extends OrganizerOperations {
 					ConsolPlugin.INSTANCE.getString("FamilyHistoryOrganizerSubject"),
 					new Object[] { familyHistoryOrganizer }));
 			}
+
 			return false;
 		}
 		return true;
@@ -371,7 +381,7 @@ public class FamilyHistoryOrganizerOperations extends OrganizerOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.FAMILY_HISTORY_ORGANIZER,
-				ConsolPackage.Literals.FAMILY_HISTORY_ORGANIZER.getEAllOperations().get(55));
+				ConsolPackage.Literals.FAMILY_HISTORY_ORGANIZER.getEAllOperations().get(57));
 			try {
 				GET_FAMILY_HISTORY_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_FAMILY_HISTORY_OBSERVATIONS__EOCL_EXP);
 			} catch (ParserException pe) {

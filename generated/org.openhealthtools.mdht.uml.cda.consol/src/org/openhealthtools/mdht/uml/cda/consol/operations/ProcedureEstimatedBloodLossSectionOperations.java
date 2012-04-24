@@ -81,6 +81,7 @@ public class ProcedureEstimatedBloodLossSectionOperations extends SectionOperati
 	public static boolean validateProcedureEstimatedBloodLossSectionTemplateId(
 			ProcedureEstimatedBloodLossSection procedureEstimatedBloodLossSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION);
@@ -101,6 +102,7 @@ public class ProcedureEstimatedBloodLossSectionOperations extends SectionOperati
 					ConsolPlugin.INSTANCE.getString("ProcedureEstimatedBloodLossSectionTemplateId"),
 					new Object[] { procedureEstimatedBloodLossSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -144,6 +146,7 @@ public class ProcedureEstimatedBloodLossSectionOperations extends SectionOperati
 	public static boolean validateProcedureEstimatedBloodLossSectionCode(
 			ProcedureEstimatedBloodLossSection procedureEstimatedBloodLossSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION);
@@ -163,6 +166,7 @@ public class ProcedureEstimatedBloodLossSectionOperations extends SectionOperati
 					ConsolPlugin.INSTANCE.getString("ProcedureEstimatedBloodLossSectionCode"),
 					new Object[] { procedureEstimatedBloodLossSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -202,6 +206,7 @@ public class ProcedureEstimatedBloodLossSectionOperations extends SectionOperati
 	public static boolean validateProcedureEstimatedBloodLossSectionText(
 			ProcedureEstimatedBloodLossSection procedureEstimatedBloodLossSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION);
@@ -221,6 +226,7 @@ public class ProcedureEstimatedBloodLossSectionOperations extends SectionOperati
 					ConsolPlugin.INSTANCE.getString("ProcedureEstimatedBloodLossSectionText"),
 					new Object[] { procedureEstimatedBloodLossSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -260,6 +266,7 @@ public class ProcedureEstimatedBloodLossSectionOperations extends SectionOperati
 	public static boolean validateProcedureEstimatedBloodLossSectionTitle(
 			ProcedureEstimatedBloodLossSection procedureEstimatedBloodLossSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION);
@@ -279,6 +286,7 @@ public class ProcedureEstimatedBloodLossSectionOperations extends SectionOperati
 					ConsolPlugin.INSTANCE.getString("ProcedureEstimatedBloodLossSectionTitle"),
 					new Object[] { procedureEstimatedBloodLossSection }));
 			}
+
 			return false;
 		}
 		return true;

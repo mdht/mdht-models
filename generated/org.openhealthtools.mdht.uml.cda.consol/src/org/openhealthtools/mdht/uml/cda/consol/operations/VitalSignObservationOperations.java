@@ -89,6 +89,7 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 	 */
 	public static boolean validateVitalSignObservationTemplateId(VitalSignObservation vitalSignObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_VITAL_SIGN_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.VITAL_SIGN_OBSERVATION);
@@ -107,6 +108,7 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 					ConsolPlugin.INSTANCE.getString("VitalSignObservationTemplateId"),
 					new Object[] { vitalSignObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -145,6 +147,7 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 	 */
 	public static boolean validateVitalSignObservationClassCode(VitalSignObservation vitalSignObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_VITAL_SIGN_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.VITAL_SIGN_OBSERVATION);
@@ -163,6 +166,7 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 					ConsolPlugin.INSTANCE.getString("VitalSignObservationClassCode"),
 					new Object[] { vitalSignObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -201,6 +205,7 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 	 */
 	public static boolean validateVitalSignObservationMoodCode(VitalSignObservation vitalSignObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_VITAL_SIGN_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.VITAL_SIGN_OBSERVATION);
@@ -219,6 +224,7 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 					ConsolPlugin.INSTANCE.getString("VitalSignObservationMoodCode"),
 					new Object[] { vitalSignObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -257,6 +263,7 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 	 */
 	public static boolean validateVitalSignObservationId(VitalSignObservation vitalSignObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_VITAL_SIGN_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.VITAL_SIGN_OBSERVATION);
@@ -274,6 +281,7 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 					ConsolValidator.VITAL_SIGN_OBSERVATION__VITAL_SIGN_OBSERVATION_ID,
 					ConsolPlugin.INSTANCE.getString("VitalSignObservationId"), new Object[] { vitalSignObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -318,6 +326,7 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 
 	public static boolean validateVitalSignObservationCode(VitalSignObservation vitalSignObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_VITAL_SIGN_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.VITAL_SIGN_OBSERVATION);
@@ -335,6 +344,7 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 					ConsolValidator.VITAL_SIGN_OBSERVATION__VITAL_SIGN_OBSERVATION_CODE,
 					ConsolPlugin.INSTANCE.getString("VitalSignObservationCode"), new Object[] { vitalSignObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -376,6 +386,7 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 	 */
 	public static boolean validateVitalSignObservationStatusCode(VitalSignObservation vitalSignObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_VITAL_SIGN_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.VITAL_SIGN_OBSERVATION);
@@ -394,6 +405,7 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 					ConsolPlugin.INSTANCE.getString("VitalSignObservationStatusCode"),
 					new Object[] { vitalSignObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -432,6 +444,7 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 	 */
 	public static boolean validateVitalSignObservationEffectiveTime(VitalSignObservation vitalSignObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_VITAL_SIGN_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.VITAL_SIGN_OBSERVATION);
@@ -450,6 +463,7 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 					ConsolPlugin.INSTANCE.getString("VitalSignObservationEffectiveTime"),
 					new Object[] { vitalSignObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -488,6 +502,7 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 	 */
 	public static boolean validateVitalSignObservationValue(VitalSignObservation vitalSignObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_VITAL_SIGN_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.VITAL_SIGN_OBSERVATION);
@@ -505,6 +520,7 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 					ConsolValidator.VITAL_SIGN_OBSERVATION__VITAL_SIGN_OBSERVATION_VALUE,
 					ConsolPlugin.INSTANCE.getString("VitalSignObservationValue"), new Object[] { vitalSignObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -543,6 +559,7 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 	 */
 	public static boolean validateVitalSignObservationInterpretationCode(VitalSignObservation vitalSignObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_VITAL_SIGN_OBSERVATION_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.VITAL_SIGN_OBSERVATION);
@@ -561,6 +578,7 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 					ConsolPlugin.INSTANCE.getString("VitalSignObservationInterpretationCode"),
 					new Object[] { vitalSignObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -599,6 +617,7 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 	 */
 	public static boolean validateVitalSignObservationMethodCode(VitalSignObservation vitalSignObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_VITAL_SIGN_OBSERVATION_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.VITAL_SIGN_OBSERVATION);
@@ -617,6 +636,7 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 					ConsolPlugin.INSTANCE.getString("VitalSignObservationMethodCode"),
 					new Object[] { vitalSignObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -655,6 +675,7 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 	 */
 	public static boolean validateVitalSignObservationTargetSiteCode(VitalSignObservation vitalSignObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_VITAL_SIGN_OBSERVATION_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.VITAL_SIGN_OBSERVATION);
@@ -673,6 +694,7 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 					ConsolPlugin.INSTANCE.getString("VitalSignObservationTargetSiteCode"),
 					new Object[] { vitalSignObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -711,6 +733,7 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 	 */
 	public static boolean validateVitalSignObservationText(VitalSignObservation vitalSignObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_VITAL_SIGN_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.VITAL_SIGN_OBSERVATION);
@@ -728,6 +751,7 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 					ConsolValidator.VITAL_SIGN_OBSERVATION__VITAL_SIGN_OBSERVATION_TEXT,
 					ConsolPlugin.INSTANCE.getString("VitalSignObservationText"), new Object[] { vitalSignObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -766,6 +790,7 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 	 */
 	public static boolean validateVitalSignObservationAuthor(VitalSignObservation vitalSignObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_VITAL_SIGN_OBSERVATION_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.VITAL_SIGN_OBSERVATION);
@@ -784,6 +809,7 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 					ConsolPlugin.INSTANCE.getString("VitalSignObservationAuthor"),
 					new Object[] { vitalSignObservation }));
 			}
+
 			return false;
 		}
 		return true;

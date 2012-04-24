@@ -89,6 +89,7 @@ public class EncountersSectionEntriesOptionalOperations extends SectionOperation
 	public static boolean validateEncountersSectionEntriesOptionalTemplateId(
 			EncountersSectionEntriesOptional encountersSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ENCOUNTERS_SECTION_ENTRIES_OPTIONAL);
@@ -109,6 +110,7 @@ public class EncountersSectionEntriesOptionalOperations extends SectionOperation
 					ConsolPlugin.INSTANCE.getString("EncountersSectionEntriesOptionalTemplateId"),
 					new Object[] { encountersSectionEntriesOptional }));
 			}
+
 			return false;
 		}
 		return true;
@@ -152,6 +154,7 @@ public class EncountersSectionEntriesOptionalOperations extends SectionOperation
 	public static boolean validateEncountersSectionEntriesOptionalCode(
 			EncountersSectionEntriesOptional encountersSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ENCOUNTERS_SECTION_ENTRIES_OPTIONAL);
@@ -170,6 +173,7 @@ public class EncountersSectionEntriesOptionalOperations extends SectionOperation
 					ConsolPlugin.INSTANCE.getString("EncountersSectionEntriesOptionalCode"),
 					new Object[] { encountersSectionEntriesOptional }));
 			}
+
 			return false;
 		}
 		return true;
@@ -209,6 +213,7 @@ public class EncountersSectionEntriesOptionalOperations extends SectionOperation
 	public static boolean validateEncountersSectionEntriesOptionalTitle(
 			EncountersSectionEntriesOptional encountersSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ENCOUNTERS_SECTION_ENTRIES_OPTIONAL);
@@ -227,6 +232,7 @@ public class EncountersSectionEntriesOptionalOperations extends SectionOperation
 					ConsolPlugin.INSTANCE.getString("EncountersSectionEntriesOptionalTitle"),
 					new Object[] { encountersSectionEntriesOptional }));
 			}
+
 			return false;
 		}
 		return true;
@@ -266,6 +272,7 @@ public class EncountersSectionEntriesOptionalOperations extends SectionOperation
 	public static boolean validateEncountersSectionEntriesOptionalText(
 			EncountersSectionEntriesOptional encountersSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ENCOUNTERS_SECTION_ENTRIES_OPTIONAL);
@@ -284,6 +291,7 @@ public class EncountersSectionEntriesOptionalOperations extends SectionOperation
 					ConsolPlugin.INSTANCE.getString("EncountersSectionEntriesOptionalText"),
 					new Object[] { encountersSectionEntriesOptional }));
 			}
+
 			return false;
 		}
 		return true;
@@ -323,6 +331,7 @@ public class EncountersSectionEntriesOptionalOperations extends SectionOperation
 	public static boolean validateEncountersSectionEntriesOptionalEncounterActivities(
 			EncountersSectionEntriesOptional encountersSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_ENCOUNTER_ACTIVITIES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ENCOUNTERS_SECTION_ENTRIES_OPTIONAL);
@@ -343,6 +352,7 @@ public class EncountersSectionEntriesOptionalOperations extends SectionOperation
 					ConsolPlugin.INSTANCE.getString("EncountersSectionEntriesOptionalEncounterActivities"),
 					new Object[] { encountersSectionEntriesOptional }));
 			}
+
 			return false;
 		}
 		return true;

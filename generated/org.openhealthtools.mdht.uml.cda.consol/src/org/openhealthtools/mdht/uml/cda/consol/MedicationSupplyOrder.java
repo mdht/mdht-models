@@ -18,7 +18,7 @@ import org.openhealthtools.mdht.uml.cda.Supply;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getMedicationSupplyOrder()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.22.4.17' constraints.validation.error='MedicationSupplyOrderTemplateId MedicationSupplyOrderInstructionInversionInd MedicationSupplyOrderClassCode MedicationSupplyOrderMoodCode MedicationSupplyOrderStatusCode MedicationSupplyOrderId MedicationSupplyOrderProduct' classCode='SPLY' constraints.validation.warning='MedicationSupplyOrderEffectiveTime MedicationSupplyOrderQuantity MedicationSupplyOrderRepeatNumber' moodCode='INT' constraints.validation.info='MedicationSupplyOrderAuthor MedicationSupplyOrderInstructions'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MedicationSupplyOrderTemplateId MedicationSupplyOrderInstructionInversionInd MedicationSupplyOrderClassCode MedicationSupplyOrderMoodCode MedicationSupplyOrderStatusCode MedicationSupplyOrderId MedicationSupplyOrderProduct' templateId.root='2.16.840.1.113883.10.20.22.4.17' classCode='SPLY' constraints.validation.warning='MedicationSupplyOrderEffectiveTime MedicationSupplyOrderQuantity MedicationSupplyOrderRepeatNumber' moodCode='INT' constraints.validation.info='MedicationSupplyOrderAuthor MedicationSupplyOrderInstructions'"
  * @generated
  */
 public interface MedicationSupplyOrder extends Supply {

@@ -77,6 +77,7 @@ public class TextObservationOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateTextObservationTemplateId(TextObservation textObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_TEXT_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.TEXT_OBSERVATION);
@@ -94,6 +95,7 @@ public class TextObservationOperations extends ClinicalStatementOperations {
 					ConsolValidator.TEXT_OBSERVATION__TEXT_OBSERVATION_TEMPLATE_ID,
 					ConsolPlugin.INSTANCE.getString("TextObservationTemplateId"), new Object[] { textObservation }));
 			}
+
 			return false;
 		}
 		return true;

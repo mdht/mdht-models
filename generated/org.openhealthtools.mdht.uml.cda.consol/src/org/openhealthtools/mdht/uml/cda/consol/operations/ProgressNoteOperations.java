@@ -135,6 +135,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	 */
 	public static boolean validateProgressNoteHasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections(
 			ProgressNote progressNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROGRESS_NOTE_HAS_AN_ASSEMENT_AND_PLAN_SECTION_OR_INDIVIDUAL_ASSEMENT_AND_PLAN_SECTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROGRESS_NOTE);
@@ -155,6 +156,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 					ConsolPlugin.INSTANCE.getString("ProgressNoteHasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections"),
 					new Object[] { progressNote }));
 			}
+
 			return false;
 		}
 		return true;
@@ -193,6 +195,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	 */
 	public static boolean validateProgressNoteDoesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresent(
 			ProgressNote progressNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROGRESS_NOTE_DOES_NOT_HAVE_INDIVIDUAL_ASSEMENT_AND_PLAN_SECTIONS_WHEN_ASSEMENT_AND_PLAN_SECTION_PRESENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROGRESS_NOTE);
@@ -213,6 +216,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 					ConsolPlugin.INSTANCE.getString("ProgressNoteDoesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresent"),
 					new Object[] { progressNote }));
 			}
+
 			return false;
 		}
 		return true;
@@ -251,6 +255,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	 */
 	public static boolean validateProgressNoteTemplateId(ProgressNote progressNote, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PROGRESS_NOTE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROGRESS_NOTE);
@@ -268,6 +273,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 					ConsolValidator.PROGRESS_NOTE__PROGRESS_NOTE_TEMPLATE_ID,
 					ConsolPlugin.INSTANCE.getString("ProgressNoteTemplateId"), new Object[] { progressNote }));
 			}
+
 			return false;
 		}
 		return true;
@@ -306,6 +312,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	 */
 	public static boolean validateProgressNoteDocumentationOf(ProgressNote progressNote, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PROGRESS_NOTE_DOCUMENTATION_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROGRESS_NOTE);
@@ -323,6 +330,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 					ConsolValidator.PROGRESS_NOTE__PROGRESS_NOTE_DOCUMENTATION_OF,
 					ConsolPlugin.INSTANCE.getString("ProgressNoteDocumentationOf"), new Object[] { progressNote }));
 			}
+
 			return false;
 		}
 		return true;
@@ -361,6 +369,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	 */
 	public static boolean validateProgressNoteComponentOf(ProgressNote progressNote, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PROGRESS_NOTE_COMPONENT_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROGRESS_NOTE);
@@ -378,6 +387,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 					ConsolValidator.PROGRESS_NOTE__PROGRESS_NOTE_COMPONENT_OF,
 					ConsolPlugin.INSTANCE.getString("ProgressNoteComponentOf"), new Object[] { progressNote }));
 			}
+
 			return false;
 		}
 		return true;
@@ -416,6 +426,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	 */
 	public static boolean validateProgressNoteAssessmentSection(ProgressNote progressNote, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PROGRESS_NOTE_ASSESSMENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROGRESS_NOTE);
@@ -433,6 +444,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 					ConsolValidator.PROGRESS_NOTE__PROGRESS_NOTE_ASSESSMENT_SECTION,
 					ConsolPlugin.INSTANCE.getString("ProgressNoteAssessmentSection"), new Object[] { progressNote }));
 			}
+
 			return false;
 		}
 		return true;
@@ -471,6 +483,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	 */
 	public static boolean validateProgressNotePlanOfCareSection(ProgressNote progressNote, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PROGRESS_NOTE_PLAN_OF_CARE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROGRESS_NOTE);
@@ -488,6 +501,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 					ConsolValidator.PROGRESS_NOTE__PROGRESS_NOTE_PLAN_OF_CARE_SECTION,
 					ConsolPlugin.INSTANCE.getString("ProgressNotePlanOfCareSection"), new Object[] { progressNote }));
 			}
+
 			return false;
 		}
 		return true;
@@ -526,6 +540,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	 */
 	public static boolean validateProgressNoteAssessmentAndPlanSection(ProgressNote progressNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROGRESS_NOTE_ASSESSMENT_AND_PLAN_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROGRESS_NOTE);
@@ -544,6 +559,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 					ConsolPlugin.INSTANCE.getString("ProgressNoteAssessmentAndPlanSection"),
 					new Object[] { progressNote }));
 			}
+
 			return false;
 		}
 		return true;
@@ -582,6 +598,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	 */
 	public static boolean validateProgressNoteAllergiesSectionEntriesOptional(ProgressNote progressNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROGRESS_NOTE_ALLERGIES_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROGRESS_NOTE);
@@ -601,6 +618,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 					ConsolPlugin.INSTANCE.getString("ProgressNoteAllergiesSectionEntriesOptional"),
 					new Object[] { progressNote }));
 			}
+
 			return false;
 		}
 		return true;
@@ -639,6 +657,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	 */
 	public static boolean validateProgressNoteChiefComplaintSection(ProgressNote progressNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROGRESS_NOTE_CHIEF_COMPLAINT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROGRESS_NOTE);
@@ -656,6 +675,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 					ConsolValidator.PROGRESS_NOTE__PROGRESS_NOTE_CHIEF_COMPLAINT_SECTION,
 					ConsolPlugin.INSTANCE.getString("ProgressNoteChiefComplaintSection"), new Object[] { progressNote }));
 			}
+
 			return false;
 		}
 		return true;
@@ -694,6 +714,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	 */
 	public static boolean validateProgressNoteInterventionsSection(ProgressNote progressNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROGRESS_NOTE_INTERVENTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROGRESS_NOTE);
@@ -711,6 +732,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 					ConsolValidator.PROGRESS_NOTE__PROGRESS_NOTE_INTERVENTIONS_SECTION,
 					ConsolPlugin.INSTANCE.getString("ProgressNoteInterventionsSection"), new Object[] { progressNote }));
 			}
+
 			return false;
 		}
 		return true;
@@ -749,6 +771,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	 */
 	public static boolean validateProgressNoteMedicationsSectionEntriesOptional(ProgressNote progressNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROGRESS_NOTE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROGRESS_NOTE);
@@ -768,6 +791,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 					ConsolPlugin.INSTANCE.getString("ProgressNoteMedicationsSectionEntriesOptional"),
 					new Object[] { progressNote }));
 			}
+
 			return false;
 		}
 		return true;
@@ -806,6 +830,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	 */
 	public static boolean validateProgressNoteObjectiveSection(ProgressNote progressNote, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PROGRESS_NOTE_OBJECTIVE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROGRESS_NOTE);
@@ -823,6 +848,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 					ConsolValidator.PROGRESS_NOTE__PROGRESS_NOTE_OBJECTIVE_SECTION,
 					ConsolPlugin.INSTANCE.getString("ProgressNoteObjectiveSection"), new Object[] { progressNote }));
 			}
+
 			return false;
 		}
 		return true;
@@ -861,6 +887,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	 */
 	public static boolean validateProgressNotePhysicalExamSection(ProgressNote progressNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROGRESS_NOTE_PHYSICAL_EXAM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROGRESS_NOTE);
@@ -878,6 +905,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 					ConsolValidator.PROGRESS_NOTE__PROGRESS_NOTE_PHYSICAL_EXAM_SECTION,
 					ConsolPlugin.INSTANCE.getString("ProgressNotePhysicalExamSection"), new Object[] { progressNote }));
 			}
+
 			return false;
 		}
 		return true;
@@ -916,6 +944,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	 */
 	public static boolean validateProgressNoteProblemSectionEntriesOptional(ProgressNote progressNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROGRESS_NOTE_PROBLEM_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROGRESS_NOTE);
@@ -934,6 +963,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 					ConsolPlugin.INSTANCE.getString("ProgressNoteProblemSectionEntriesOptional"),
 					new Object[] { progressNote }));
 			}
+
 			return false;
 		}
 		return true;
@@ -972,6 +1002,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	 */
 	public static boolean validateProgressNoteResultsSectionEntriesOptional(ProgressNote progressNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROGRESS_NOTE_RESULTS_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROGRESS_NOTE);
@@ -990,6 +1021,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 					ConsolPlugin.INSTANCE.getString("ProgressNoteResultsSectionEntriesOptional"),
 					new Object[] { progressNote }));
 			}
+
 			return false;
 		}
 		return true;
@@ -1028,6 +1060,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	 */
 	public static boolean validateProgressNoteReviewOfSystemsSection(ProgressNote progressNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROGRESS_NOTE_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROGRESS_NOTE);
@@ -1046,6 +1079,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 					ConsolPlugin.INSTANCE.getString("ProgressNoteReviewOfSystemsSection"),
 					new Object[] { progressNote }));
 			}
+
 			return false;
 		}
 		return true;
@@ -1084,6 +1118,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	 */
 	public static boolean validateProgressNoteSubjectiveSection(ProgressNote progressNote, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PROGRESS_NOTE_SUBJECTIVE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROGRESS_NOTE);
@@ -1101,6 +1136,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 					ConsolValidator.PROGRESS_NOTE__PROGRESS_NOTE_SUBJECTIVE_SECTION,
 					ConsolPlugin.INSTANCE.getString("ProgressNoteSubjectiveSection"), new Object[] { progressNote }));
 			}
+
 			return false;
 		}
 		return true;
@@ -1139,6 +1175,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	 */
 	public static boolean validateProgressNoteVitalSignsSectionEntriesOptional(ProgressNote progressNote,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROGRESS_NOTE_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROGRESS_NOTE);
@@ -1158,6 +1195,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 					ConsolPlugin.INSTANCE.getString("ProgressNoteVitalSignsSectionEntriesOptional"),
 					new Object[] { progressNote }));
 			}
+
 			return false;
 		}
 		return true;
@@ -1208,18 +1246,21 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 			throw new UnsupportedOperationException(pe.getLocalizedMessage());
 		}
 
-		Object oclResultSet = VALIDATE_PROGRESS_NOTE_DOCUMENTATION_OF_SERVICE_EVENT2_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(progressNote);
-		if (oclResultSet != null && oclResultSet instanceof Collection) {
+		Object oclResult = VALIDATE_PROGRESS_NOTE_DOCUMENTATION_OF_SERVICE_EVENT2_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(progressNote);
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+
 			if (diagnostics != null) {
-				for (EObject eObject : (Collection<EObject>) oclResultSet) {
+				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROGRESS_NOTE__PROGRESS_NOTE_DOCUMENTATION_OF_SERVICE_EVENT2_CLASS_CODE,
 						ConsolPlugin.INSTANCE.getString("ProgressNoteDocumentationOfServiceEvent2ClassCode"),
 						new Object[] { eObject }));
 				}
+
 			}
-			return ((Collection<?>) oclResultSet).isEmpty();
+			return oclResultSet.isEmpty();
 		}
 		return true;
 	}
@@ -1269,18 +1310,21 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 			throw new UnsupportedOperationException(pe.getLocalizedMessage());
 		}
 
-		Object oclResultSet = VALIDATE_PROGRESS_NOTE_DOCUMENTATION_OF_SERVICE_EVENT2_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(progressNote);
-		if (oclResultSet != null && oclResultSet instanceof Collection) {
+		Object oclResult = VALIDATE_PROGRESS_NOTE_DOCUMENTATION_OF_SERVICE_EVENT2_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(progressNote);
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+
 			if (diagnostics != null) {
-				for (EObject eObject : (Collection<EObject>) oclResultSet) {
+				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROGRESS_NOTE__PROGRESS_NOTE_DOCUMENTATION_OF_SERVICE_EVENT2_EFFECTIVE_TIME,
 						ConsolPlugin.INSTANCE.getString("ProgressNoteDocumentationOfServiceEvent2EffectiveTime"),
 						new Object[] { eObject }));
 				}
+
 			}
-			return ((Collection<?>) oclResultSet).isEmpty();
+			return oclResultSet.isEmpty();
 		}
 		return true;
 	}
@@ -1330,18 +1374,21 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 			throw new UnsupportedOperationException(pe.getLocalizedMessage());
 		}
 
-		Object oclResultSet = VALIDATE_PROGRESS_NOTE_DOCUMENTATION_OF_SERVICE_EVENT2__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(progressNote);
-		if (oclResultSet != null && oclResultSet instanceof Collection) {
+		Object oclResult = VALIDATE_PROGRESS_NOTE_DOCUMENTATION_OF_SERVICE_EVENT2__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(progressNote);
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+
 			if (diagnostics != null) {
-				for (EObject eObject : (Collection<EObject>) oclResultSet) {
+				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROGRESS_NOTE__PROGRESS_NOTE_DOCUMENTATION_OF_SERVICE_EVENT2,
 						ConsolPlugin.INSTANCE.getString("ProgressNoteDocumentationOfServiceEvent2"),
 						new Object[] { eObject }));
 				}
+
 			}
-			return ((Collection<?>) oclResultSet).isEmpty();
+			return oclResultSet.isEmpty();
 		}
 		return true;
 	}
@@ -1391,10 +1438,12 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 			throw new UnsupportedOperationException(pe.getLocalizedMessage());
 		}
 
-		Object oclResultSet = VALIDATE_PROGRESS_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER6_LOCATION_HEALTH_CARE_FACILITY1_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(progressNote);
-		if (oclResultSet != null && oclResultSet instanceof Collection) {
+		Object oclResult = VALIDATE_PROGRESS_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER6_LOCATION_HEALTH_CARE_FACILITY1_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(progressNote);
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+
 			if (diagnostics != null) {
-				for (EObject eObject : (Collection<EObject>) oclResultSet) {
+				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
@@ -1402,8 +1451,9 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 						ConsolPlugin.INSTANCE.getString("ProgressNoteComponentOfEncompassingEncounter6LocationHealthCareFacility1Id"),
 						new Object[] { eObject }));
 				}
+
 			}
-			return ((Collection<?>) oclResultSet).isEmpty();
+			return oclResultSet.isEmpty();
 		}
 		return true;
 	}
@@ -1453,10 +1503,12 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 			throw new UnsupportedOperationException(pe.getLocalizedMessage());
 		}
 
-		Object oclResultSet = VALIDATE_PROGRESS_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER6_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(progressNote);
-		if (oclResultSet != null && oclResultSet instanceof Collection) {
+		Object oclResult = VALIDATE_PROGRESS_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER6_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(progressNote);
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+
 			if (diagnostics != null) {
-				for (EObject eObject : (Collection<EObject>) oclResultSet) {
+				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
@@ -1464,8 +1516,9 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 						ConsolPlugin.INSTANCE.getString("ProgressNoteComponentOfEncompassingEncounter6EffectiveTime"),
 						new Object[] { eObject }));
 				}
+
 			}
-			return ((Collection<?>) oclResultSet).isEmpty();
+			return oclResultSet.isEmpty();
 		}
 		return true;
 	}
@@ -1515,18 +1568,21 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 			throw new UnsupportedOperationException(pe.getLocalizedMessage());
 		}
 
-		Object oclResultSet = VALIDATE_PROGRESS_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER6_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(progressNote);
-		if (oclResultSet != null && oclResultSet instanceof Collection) {
+		Object oclResult = VALIDATE_PROGRESS_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER6_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(progressNote);
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+
 			if (diagnostics != null) {
-				for (EObject eObject : (Collection<EObject>) oclResultSet) {
+				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROGRESS_NOTE__PROGRESS_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER6_ID,
 						ConsolPlugin.INSTANCE.getString("ProgressNoteComponentOfEncompassingEncounter6Id"),
 						new Object[] { eObject }));
 				}
+
 			}
-			return ((Collection<?>) oclResultSet).isEmpty();
+			return oclResultSet.isEmpty();
 		}
 		return true;
 	}
@@ -1576,18 +1632,21 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 			throw new UnsupportedOperationException(pe.getLocalizedMessage());
 		}
 
-		Object oclResultSet = VALIDATE_PROGRESS_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER6_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(progressNote);
-		if (oclResultSet != null && oclResultSet instanceof Collection) {
+		Object oclResult = VALIDATE_PROGRESS_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER6_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(progressNote);
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+
 			if (diagnostics != null) {
-				for (EObject eObject : (Collection<EObject>) oclResultSet) {
+				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROGRESS_NOTE__PROGRESS_NOTE_COMPONENT_OF_ENCOMPASSING_ENCOUNTER6_LOCATION,
 						ConsolPlugin.INSTANCE.getString("ProgressNoteComponentOfEncompassingEncounter6Location"),
 						new Object[] { eObject }));
 				}
+
 			}
-			return ((Collection<?>) oclResultSet).isEmpty();
+			return oclResultSet.isEmpty();
 		}
 		return true;
 	}
@@ -2247,6 +2306,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 
 	public static boolean validateGeneralHeaderConstraintsCode(ProgressNote progressNote, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROGRESS_NOTE);
@@ -2264,6 +2324,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 					ConsolValidator.PROGRESS_NOTE__GENERAL_HEADER_CONSTRAINTS_CODE,
 					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsCode"), new Object[] { progressNote }));
 			}
+
 			return false;
 		}
 		return true;

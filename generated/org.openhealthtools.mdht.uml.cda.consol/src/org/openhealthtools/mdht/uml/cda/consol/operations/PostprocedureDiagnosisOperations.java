@@ -88,6 +88,7 @@ public class PostprocedureDiagnosisOperations extends ClinicalStatementOperation
 	 */
 	public static boolean validatePostprocedureDiagnosisTemplateId(PostprocedureDiagnosis postprocedureDiagnosis,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_POSTPROCEDURE_DIAGNOSIS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.POSTPROCEDURE_DIAGNOSIS);
@@ -106,6 +107,7 @@ public class PostprocedureDiagnosisOperations extends ClinicalStatementOperation
 					ConsolPlugin.INSTANCE.getString("PostprocedureDiagnosisTemplateId"),
 					new Object[] { postprocedureDiagnosis }));
 			}
+
 			return false;
 		}
 		return true;
@@ -144,6 +146,7 @@ public class PostprocedureDiagnosisOperations extends ClinicalStatementOperation
 	 */
 	public static boolean validatePostprocedureDiagnosisClassCode(PostprocedureDiagnosis postprocedureDiagnosis,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_POSTPROCEDURE_DIAGNOSIS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.POSTPROCEDURE_DIAGNOSIS);
@@ -162,6 +165,7 @@ public class PostprocedureDiagnosisOperations extends ClinicalStatementOperation
 					ConsolPlugin.INSTANCE.getString("PostprocedureDiagnosisClassCode"),
 					new Object[] { postprocedureDiagnosis }));
 			}
+
 			return false;
 		}
 		return true;
@@ -204,6 +208,7 @@ public class PostprocedureDiagnosisOperations extends ClinicalStatementOperation
 	 */
 	public static boolean validatePostprocedureDiagnosisCode(PostprocedureDiagnosis postprocedureDiagnosis,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_POSTPROCEDURE_DIAGNOSIS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.POSTPROCEDURE_DIAGNOSIS);
@@ -222,6 +227,7 @@ public class PostprocedureDiagnosisOperations extends ClinicalStatementOperation
 					ConsolPlugin.INSTANCE.getString("PostprocedureDiagnosisCode"),
 					new Object[] { postprocedureDiagnosis }));
 			}
+
 			return false;
 		}
 		return true;
@@ -260,6 +266,7 @@ public class PostprocedureDiagnosisOperations extends ClinicalStatementOperation
 	 */
 	public static boolean validatePostprocedureDiagnosisMoodCode(PostprocedureDiagnosis postprocedureDiagnosis,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_POSTPROCEDURE_DIAGNOSIS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.POSTPROCEDURE_DIAGNOSIS);
@@ -278,6 +285,7 @@ public class PostprocedureDiagnosisOperations extends ClinicalStatementOperation
 					ConsolPlugin.INSTANCE.getString("PostprocedureDiagnosisMoodCode"),
 					new Object[] { postprocedureDiagnosis }));
 			}
+
 			return false;
 		}
 		return true;
@@ -316,6 +324,7 @@ public class PostprocedureDiagnosisOperations extends ClinicalStatementOperation
 	 */
 	public static boolean validatePostprocedureDiagnosisProblemObservation(
 			PostprocedureDiagnosis postprocedureDiagnosis, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_POSTPROCEDURE_DIAGNOSIS_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.POSTPROCEDURE_DIAGNOSIS);
@@ -334,6 +343,7 @@ public class PostprocedureDiagnosisOperations extends ClinicalStatementOperation
 					ConsolPlugin.INSTANCE.getString("PostprocedureDiagnosisProblemObservation"),
 					new Object[] { postprocedureDiagnosis }));
 			}
+
 			return false;
 		}
 		return true;
@@ -373,7 +383,7 @@ public class PostprocedureDiagnosisOperations extends ClinicalStatementOperation
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.POSTPROCEDURE_DIAGNOSIS,
-				ConsolPackage.Literals.POSTPROCEDURE_DIAGNOSIS.getEAllOperations().get(54));
+				ConsolPackage.Literals.POSTPROCEDURE_DIAGNOSIS.getEAllOperations().get(56));
 			try {
 				GET_PROBLEM_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_PROBLEM_OBSERVATIONS__EOCL_EXP);
 			} catch (ParserException pe) {

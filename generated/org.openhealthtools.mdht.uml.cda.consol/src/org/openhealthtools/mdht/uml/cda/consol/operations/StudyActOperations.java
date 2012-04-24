@@ -88,6 +88,7 @@ public class StudyActOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateStudyActTemplateId(StudyAct studyAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_STUDY_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.STUDY_ACT);
@@ -104,6 +105,7 @@ public class StudyActOperations extends ClinicalStatementOperations {
 					ConsolValidator.STUDY_ACT__STUDY_ACT_TEMPLATE_ID,
 					ConsolPlugin.INSTANCE.getString("StudyActTemplateId"), new Object[] { studyAct }));
 			}
+
 			return false;
 		}
 		return true;
@@ -142,6 +144,7 @@ public class StudyActOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateStudyActClassCode(StudyAct studyAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_STUDY_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.STUDY_ACT);
@@ -158,6 +161,7 @@ public class StudyActOperations extends ClinicalStatementOperations {
 					ConsolValidator.STUDY_ACT__STUDY_ACT_CLASS_CODE,
 					ConsolPlugin.INSTANCE.getString("StudyActClassCode"), new Object[] { studyAct }));
 			}
+
 			return false;
 		}
 		return true;
@@ -196,6 +200,7 @@ public class StudyActOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateStudyActMoodCode(StudyAct studyAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_STUDY_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.STUDY_ACT);
@@ -212,6 +217,7 @@ public class StudyActOperations extends ClinicalStatementOperations {
 					ConsolValidator.STUDY_ACT__STUDY_ACT_MOOD_CODE,
 					ConsolPlugin.INSTANCE.getString("StudyActMoodCode"), new Object[] { studyAct }));
 			}
+
 			return false;
 		}
 		return true;
@@ -249,6 +255,7 @@ public class StudyActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 */
 	public static boolean validateStudyActId(StudyAct studyAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_STUDY_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.STUDY_ACT);
@@ -264,6 +271,7 @@ public class StudyActOperations extends ClinicalStatementOperations {
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE, ConsolValidator.STUDY_ACT__STUDY_ACT_ID,
 					ConsolPlugin.INSTANCE.getString("StudyActId"), new Object[] { studyAct }));
 			}
+
 			return false;
 		}
 		return true;
@@ -306,6 +314,7 @@ public class StudyActOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateStudyActCode(StudyAct studyAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_STUDY_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.STUDY_ACT);
@@ -321,6 +330,7 @@ public class StudyActOperations extends ClinicalStatementOperations {
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE, ConsolValidator.STUDY_ACT__STUDY_ACT_CODE,
 					ConsolPlugin.INSTANCE.getString("StudyActCode"), new Object[] { studyAct }));
 			}
+
 			return false;
 		}
 		return true;
@@ -359,6 +369,7 @@ public class StudyActOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateStudyActEffectiveTime(StudyAct studyAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_STUDY_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.STUDY_ACT);
@@ -375,6 +386,7 @@ public class StudyActOperations extends ClinicalStatementOperations {
 					ConsolValidator.STUDY_ACT__STUDY_ACT_EFFECTIVE_TIME,
 					ConsolPlugin.INSTANCE.getString("StudyActEffectiveTime"), new Object[] { studyAct }));
 			}
+
 			return false;
 		}
 		return true;
@@ -413,6 +425,7 @@ public class StudyActOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateStudyActText(StudyAct studyAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_STUDY_ACT_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.STUDY_ACT);
@@ -428,6 +441,7 @@ public class StudyActOperations extends ClinicalStatementOperations {
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE, ConsolValidator.STUDY_ACT__STUDY_ACT_TEXT,
 					ConsolPlugin.INSTANCE.getString("StudyActText"), new Object[] { studyAct }));
 			}
+
 			return false;
 		}
 		return true;
@@ -466,6 +480,7 @@ public class StudyActOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateStudyActSeriesAct(StudyAct studyAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_STUDY_ACT_SERIES_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.STUDY_ACT);
@@ -482,6 +497,7 @@ public class StudyActOperations extends ClinicalStatementOperations {
 					ConsolValidator.STUDY_ACT__STUDY_ACT_SERIES_ACT,
 					ConsolPlugin.INSTANCE.getString("StudyActSeriesAct"), new Object[] { studyAct }));
 			}
+
 			return false;
 		}
 		return true;
@@ -520,7 +536,7 @@ public class StudyActOperations extends ClinicalStatementOperations {
 		if (GET_SERIES_ACT__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.STUDY_ACT, ConsolPackage.Literals.STUDY_ACT.getEAllOperations().get(57));
+				ConsolPackage.Literals.STUDY_ACT, ConsolPackage.Literals.STUDY_ACT.getEAllOperations().get(59));
 			try {
 				GET_SERIES_ACT__EOCL_QRY = helper.createQuery(GET_SERIES_ACT__EOCL_EXP);
 			} catch (ParserException pe) {

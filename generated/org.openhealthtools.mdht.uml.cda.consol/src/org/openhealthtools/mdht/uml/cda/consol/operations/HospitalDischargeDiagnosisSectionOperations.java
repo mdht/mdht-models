@@ -86,6 +86,7 @@ public class HospitalDischargeDiagnosisSectionOperations extends SectionOperatio
 	public static boolean validateHospitalDischargeDiagnosisSectionTemplateId(
 			HospitalDischargeDiagnosisSection hospitalDischargeDiagnosisSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION);
@@ -106,6 +107,7 @@ public class HospitalDischargeDiagnosisSectionOperations extends SectionOperatio
 					ConsolPlugin.INSTANCE.getString("HospitalDischargeDiagnosisSectionTemplateId"),
 					new Object[] { hospitalDischargeDiagnosisSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -149,6 +151,7 @@ public class HospitalDischargeDiagnosisSectionOperations extends SectionOperatio
 	public static boolean validateHospitalDischargeDiagnosisSectionCode(
 			HospitalDischargeDiagnosisSection hospitalDischargeDiagnosisSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION);
@@ -167,6 +170,7 @@ public class HospitalDischargeDiagnosisSectionOperations extends SectionOperatio
 					ConsolPlugin.INSTANCE.getString("HospitalDischargeDiagnosisSectionCode"),
 					new Object[] { hospitalDischargeDiagnosisSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -206,6 +210,7 @@ public class HospitalDischargeDiagnosisSectionOperations extends SectionOperatio
 	public static boolean validateHospitalDischargeDiagnosisSectionTitle(
 			HospitalDischargeDiagnosisSection hospitalDischargeDiagnosisSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION);
@@ -224,6 +229,7 @@ public class HospitalDischargeDiagnosisSectionOperations extends SectionOperatio
 					ConsolPlugin.INSTANCE.getString("HospitalDischargeDiagnosisSectionTitle"),
 					new Object[] { hospitalDischargeDiagnosisSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -263,6 +269,7 @@ public class HospitalDischargeDiagnosisSectionOperations extends SectionOperatio
 	public static boolean validateHospitalDischargeDiagnosisSectionText(
 			HospitalDischargeDiagnosisSection hospitalDischargeDiagnosisSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION);
@@ -281,6 +288,7 @@ public class HospitalDischargeDiagnosisSectionOperations extends SectionOperatio
 					ConsolPlugin.INSTANCE.getString("HospitalDischargeDiagnosisSectionText"),
 					new Object[] { hospitalDischargeDiagnosisSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -320,6 +328,7 @@ public class HospitalDischargeDiagnosisSectionOperations extends SectionOperatio
 	public static boolean validateHospitalDischargeDiagnosisSectionHospitalDischargeDiagnosis(
 			HospitalDischargeDiagnosisSection hospitalDischargeDiagnosisSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION_HOSPITAL_DISCHARGE_DIAGNOSIS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HOSPITAL_DISCHARGE_DIAGNOSIS_SECTION);
@@ -340,6 +349,7 @@ public class HospitalDischargeDiagnosisSectionOperations extends SectionOperatio
 					ConsolPlugin.INSTANCE.getString("HospitalDischargeDiagnosisSectionHospitalDischargeDiagnosis"),
 					new Object[] { hospitalDischargeDiagnosisSection }));
 			}
+
 			return false;
 		}
 		return true;

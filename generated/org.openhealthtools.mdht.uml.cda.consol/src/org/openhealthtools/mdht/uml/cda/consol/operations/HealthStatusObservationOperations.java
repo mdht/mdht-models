@@ -85,6 +85,7 @@ public class HealthStatusObservationOperations extends ClinicalStatementOperatio
 	 */
 	public static boolean validateHealthStatusObservationHasTextReference(
 			HealthStatusObservation healthStatusObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_HEALTH_STATUS_OBSERVATION_HAS_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HEALTH_STATUS_OBSERVATION);
@@ -103,6 +104,7 @@ public class HealthStatusObservationOperations extends ClinicalStatementOperatio
 					ConsolPlugin.INSTANCE.getString("HealthStatusObservationHasTextReference"),
 					new Object[] { healthStatusObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -141,6 +143,7 @@ public class HealthStatusObservationOperations extends ClinicalStatementOperatio
 	 */
 	public static boolean validateHealthStatusObservationHasTextReferenceValue(
 			HealthStatusObservation healthStatusObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_HEALTH_STATUS_OBSERVATION_HAS_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HEALTH_STATUS_OBSERVATION);
@@ -160,6 +163,7 @@ public class HealthStatusObservationOperations extends ClinicalStatementOperatio
 					ConsolPlugin.INSTANCE.getString("HealthStatusObservationHasTextReferenceValue"),
 					new Object[] { healthStatusObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -198,6 +202,7 @@ public class HealthStatusObservationOperations extends ClinicalStatementOperatio
 	 */
 	public static boolean validateHealthStatusObservationTemplateId(HealthStatusObservation healthStatusObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_HEALTH_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HEALTH_STATUS_OBSERVATION);
@@ -216,6 +221,7 @@ public class HealthStatusObservationOperations extends ClinicalStatementOperatio
 					ConsolPlugin.INSTANCE.getString("HealthStatusObservationTemplateId"),
 					new Object[] { healthStatusObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -254,6 +260,7 @@ public class HealthStatusObservationOperations extends ClinicalStatementOperatio
 	 */
 	public static boolean validateHealthStatusObservationClassCode(HealthStatusObservation healthStatusObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_HEALTH_STATUS_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HEALTH_STATUS_OBSERVATION);
@@ -272,6 +279,7 @@ public class HealthStatusObservationOperations extends ClinicalStatementOperatio
 					ConsolPlugin.INSTANCE.getString("HealthStatusObservationClassCode"),
 					new Object[] { healthStatusObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -310,6 +318,7 @@ public class HealthStatusObservationOperations extends ClinicalStatementOperatio
 	 */
 	public static boolean validateHealthStatusObservationMoodCode(HealthStatusObservation healthStatusObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_HEALTH_STATUS_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HEALTH_STATUS_OBSERVATION);
@@ -328,6 +337,7 @@ public class HealthStatusObservationOperations extends ClinicalStatementOperatio
 					ConsolPlugin.INSTANCE.getString("HealthStatusObservationMoodCode"),
 					new Object[] { healthStatusObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -370,6 +380,7 @@ public class HealthStatusObservationOperations extends ClinicalStatementOperatio
 	 */
 	public static boolean validateHealthStatusObservationCode(HealthStatusObservation healthStatusObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_HEALTH_STATUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HEALTH_STATUS_OBSERVATION);
@@ -388,6 +399,7 @@ public class HealthStatusObservationOperations extends ClinicalStatementOperatio
 					ConsolPlugin.INSTANCE.getString("HealthStatusObservationCode"),
 					new Object[] { healthStatusObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -426,6 +438,7 @@ public class HealthStatusObservationOperations extends ClinicalStatementOperatio
 	 */
 	public static boolean validateHealthStatusObservationText(HealthStatusObservation healthStatusObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_HEALTH_STATUS_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HEALTH_STATUS_OBSERVATION);
@@ -444,6 +457,7 @@ public class HealthStatusObservationOperations extends ClinicalStatementOperatio
 					ConsolPlugin.INSTANCE.getString("HealthStatusObservationText"),
 					new Object[] { healthStatusObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -485,6 +499,7 @@ public class HealthStatusObservationOperations extends ClinicalStatementOperatio
 	 */
 	public static boolean validateHealthStatusObservationStatusCode(HealthStatusObservation healthStatusObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_HEALTH_STATUS_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HEALTH_STATUS_OBSERVATION);
@@ -503,6 +518,7 @@ public class HealthStatusObservationOperations extends ClinicalStatementOperatio
 					ConsolPlugin.INSTANCE.getString("HealthStatusObservationStatusCode"),
 					new Object[] { healthStatusObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -545,6 +561,7 @@ public class HealthStatusObservationOperations extends ClinicalStatementOperatio
 	 */
 	public static boolean validateHealthStatusObservationValue(HealthStatusObservation healthStatusObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_HEALTH_STATUS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HEALTH_STATUS_OBSERVATION);
@@ -563,6 +580,7 @@ public class HealthStatusObservationOperations extends ClinicalStatementOperatio
 					ConsolPlugin.INSTANCE.getString("HealthStatusObservationValue"),
 					new Object[] { healthStatusObservation }));
 			}
+
 			return false;
 		}
 		return true;

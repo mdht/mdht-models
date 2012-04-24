@@ -89,6 +89,7 @@ public class HospitalAdmissionMedicationsSectionEntriesOptionalOperations extend
 	public static boolean validateHospitalAdmissionMedicationsSectionEntriesOptionalTemplateId(
 			HospitalAdmissionMedicationsSectionEntriesOptional hospitalAdmissionMedicationsSectionEntriesOptional,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL);
@@ -109,6 +110,7 @@ public class HospitalAdmissionMedicationsSectionEntriesOptionalOperations extend
 					ConsolPlugin.INSTANCE.getString("HospitalAdmissionMedicationsSectionEntriesOptionalTemplateId"),
 					new Object[] { hospitalAdmissionMedicationsSectionEntriesOptional }));
 			}
+
 			return false;
 		}
 		return true;
@@ -152,6 +154,7 @@ public class HospitalAdmissionMedicationsSectionEntriesOptionalOperations extend
 	public static boolean validateHospitalAdmissionMedicationsSectionEntriesOptionalCode(
 			HospitalAdmissionMedicationsSectionEntriesOptional hospitalAdmissionMedicationsSectionEntriesOptional,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL);
@@ -172,6 +175,7 @@ public class HospitalAdmissionMedicationsSectionEntriesOptionalOperations extend
 					ConsolPlugin.INSTANCE.getString("HospitalAdmissionMedicationsSectionEntriesOptionalCode"),
 					new Object[] { hospitalAdmissionMedicationsSectionEntriesOptional }));
 			}
+
 			return false;
 		}
 		return true;
@@ -211,6 +215,7 @@ public class HospitalAdmissionMedicationsSectionEntriesOptionalOperations extend
 	public static boolean validateHospitalAdmissionMedicationsSectionEntriesOptionalText(
 			HospitalAdmissionMedicationsSectionEntriesOptional hospitalAdmissionMedicationsSectionEntriesOptional,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL);
@@ -231,6 +236,7 @@ public class HospitalAdmissionMedicationsSectionEntriesOptionalOperations extend
 					ConsolPlugin.INSTANCE.getString("HospitalAdmissionMedicationsSectionEntriesOptionalText"),
 					new Object[] { hospitalAdmissionMedicationsSectionEntriesOptional }));
 			}
+
 			return false;
 		}
 		return true;
@@ -270,6 +276,7 @@ public class HospitalAdmissionMedicationsSectionEntriesOptionalOperations extend
 	public static boolean validateHospitalAdmissionMedicationsSectionEntriesOptionalTitle(
 			HospitalAdmissionMedicationsSectionEntriesOptional hospitalAdmissionMedicationsSectionEntriesOptional,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL);
@@ -290,6 +297,7 @@ public class HospitalAdmissionMedicationsSectionEntriesOptionalOperations extend
 					ConsolPlugin.INSTANCE.getString("HospitalAdmissionMedicationsSectionEntriesOptionalTitle"),
 					new Object[] { hospitalAdmissionMedicationsSectionEntriesOptional }));
 			}
+
 			return false;
 		}
 		return true;
@@ -329,6 +337,7 @@ public class HospitalAdmissionMedicationsSectionEntriesOptionalOperations extend
 	public static boolean validateHospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedication(
 			HospitalAdmissionMedicationsSectionEntriesOptional hospitalAdmissionMedicationsSectionEntriesOptional,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_ADMISSION_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HOSPITAL_ADMISSION_MEDICATIONS_SECTION_ENTRIES_OPTIONAL);
@@ -349,6 +358,7 @@ public class HospitalAdmissionMedicationsSectionEntriesOptionalOperations extend
 					ConsolPlugin.INSTANCE.getString("HospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedication"),
 					new Object[] { hospitalAdmissionMedicationsSectionEntriesOptional }));
 			}
+
 			return false;
 		}
 		return true;

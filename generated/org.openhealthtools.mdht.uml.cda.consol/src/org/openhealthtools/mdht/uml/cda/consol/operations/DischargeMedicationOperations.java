@@ -85,6 +85,7 @@ public class DischargeMedicationOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateDischargeMedicationMedicationActivity(DischargeMedication dischargeMedication,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_DISCHARGE_MEDICATION_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DISCHARGE_MEDICATION);
@@ -103,6 +104,7 @@ public class DischargeMedicationOperations extends ClinicalStatementOperations {
 					ConsolPlugin.INSTANCE.getString("DischargeMedicationMedicationActivity"),
 					new Object[] { dischargeMedication }));
 			}
+
 			return false;
 		}
 		return true;
@@ -141,6 +143,7 @@ public class DischargeMedicationOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateDischargeMedicationTemplateId(DischargeMedication dischargeMedication,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_DISCHARGE_MEDICATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DISCHARGE_MEDICATION);
@@ -159,6 +162,7 @@ public class DischargeMedicationOperations extends ClinicalStatementOperations {
 					ConsolPlugin.INSTANCE.getString("DischargeMedicationTemplateId"),
 					new Object[] { dischargeMedication }));
 			}
+
 			return false;
 		}
 		return true;
@@ -197,6 +201,7 @@ public class DischargeMedicationOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateDischargeMedicationClassCode(DischargeMedication dischargeMedication,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_DISCHARGE_MEDICATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DISCHARGE_MEDICATION);
@@ -215,6 +220,7 @@ public class DischargeMedicationOperations extends ClinicalStatementOperations {
 					ConsolPlugin.INSTANCE.getString("DischargeMedicationClassCode"),
 					new Object[] { dischargeMedication }));
 			}
+
 			return false;
 		}
 		return true;
@@ -253,6 +259,7 @@ public class DischargeMedicationOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateDischargeMedicationMoodCode(DischargeMedication dischargeMedication,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_DISCHARGE_MEDICATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DISCHARGE_MEDICATION);
@@ -271,6 +278,7 @@ public class DischargeMedicationOperations extends ClinicalStatementOperations {
 					ConsolPlugin.INSTANCE.getString("DischargeMedicationMoodCode"),
 					new Object[] { dischargeMedication }));
 			}
+
 			return false;
 		}
 		return true;
@@ -313,6 +321,7 @@ public class DischargeMedicationOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateDischargeMedicationCode(DischargeMedication dischargeMedication,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_DISCHARGE_MEDICATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DISCHARGE_MEDICATION);
@@ -330,6 +339,7 @@ public class DischargeMedicationOperations extends ClinicalStatementOperations {
 					ConsolValidator.DISCHARGE_MEDICATION__DISCHARGE_MEDICATION_CODE,
 					ConsolPlugin.INSTANCE.getString("DischargeMedicationCode"), new Object[] { dischargeMedication }));
 			}
+
 			return false;
 		}
 		return true;
@@ -369,7 +379,7 @@ public class DischargeMedicationOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.DISCHARGE_MEDICATION,
-				ConsolPackage.Literals.DISCHARGE_MEDICATION.getEAllOperations().get(54));
+				ConsolPackage.Literals.DISCHARGE_MEDICATION.getEAllOperations().get(56));
 			try {
 				GET_MEDICATION_ACTIVITY__EOCL_QRY = helper.createQuery(GET_MEDICATION_ACTIVITY__EOCL_EXP);
 			} catch (ParserException pe) {

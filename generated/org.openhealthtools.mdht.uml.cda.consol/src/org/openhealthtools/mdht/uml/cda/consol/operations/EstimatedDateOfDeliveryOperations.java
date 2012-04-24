@@ -82,6 +82,7 @@ public class EstimatedDateOfDeliveryOperations extends ClinicalStatementOperatio
 	 */
 	public static boolean validateEstimatedDateOfDeliveryTemplateId(EstimatedDateOfDelivery estimatedDateOfDelivery,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ESTIMATED_DATE_OF_DELIVERY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ESTIMATED_DATE_OF_DELIVERY);
@@ -100,6 +101,7 @@ public class EstimatedDateOfDeliveryOperations extends ClinicalStatementOperatio
 					ConsolPlugin.INSTANCE.getString("EstimatedDateOfDeliveryTemplateId"),
 					new Object[] { estimatedDateOfDelivery }));
 			}
+
 			return false;
 		}
 		return true;
@@ -138,6 +140,7 @@ public class EstimatedDateOfDeliveryOperations extends ClinicalStatementOperatio
 	 */
 	public static boolean validateEstimatedDateOfDeliveryClassCode(EstimatedDateOfDelivery estimatedDateOfDelivery,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ESTIMATED_DATE_OF_DELIVERY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ESTIMATED_DATE_OF_DELIVERY);
@@ -156,6 +159,7 @@ public class EstimatedDateOfDeliveryOperations extends ClinicalStatementOperatio
 					ConsolPlugin.INSTANCE.getString("EstimatedDateOfDeliveryClassCode"),
 					new Object[] { estimatedDateOfDelivery }));
 			}
+
 			return false;
 		}
 		return true;
@@ -198,6 +202,7 @@ public class EstimatedDateOfDeliveryOperations extends ClinicalStatementOperatio
 	 */
 	public static boolean validateEstimatedDateOfDeliveryCode(EstimatedDateOfDelivery estimatedDateOfDelivery,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ESTIMATED_DATE_OF_DELIVERY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ESTIMATED_DATE_OF_DELIVERY);
@@ -216,6 +221,7 @@ public class EstimatedDateOfDeliveryOperations extends ClinicalStatementOperatio
 					ConsolPlugin.INSTANCE.getString("EstimatedDateOfDeliveryCode"),
 					new Object[] { estimatedDateOfDelivery }));
 			}
+
 			return false;
 		}
 		return true;
@@ -254,6 +260,7 @@ public class EstimatedDateOfDeliveryOperations extends ClinicalStatementOperatio
 	 */
 	public static boolean validateEstimatedDateOfDeliveryMoodCode(EstimatedDateOfDelivery estimatedDateOfDelivery,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ESTIMATED_DATE_OF_DELIVERY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ESTIMATED_DATE_OF_DELIVERY);
@@ -272,6 +279,7 @@ public class EstimatedDateOfDeliveryOperations extends ClinicalStatementOperatio
 					ConsolPlugin.INSTANCE.getString("EstimatedDateOfDeliveryMoodCode"),
 					new Object[] { estimatedDateOfDelivery }));
 			}
+
 			return false;
 		}
 		return true;
@@ -313,6 +321,7 @@ public class EstimatedDateOfDeliveryOperations extends ClinicalStatementOperatio
 	 */
 	public static boolean validateEstimatedDateOfDeliveryStatusCode(EstimatedDateOfDelivery estimatedDateOfDelivery,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ESTIMATED_DATE_OF_DELIVERY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ESTIMATED_DATE_OF_DELIVERY);
@@ -331,6 +340,7 @@ public class EstimatedDateOfDeliveryOperations extends ClinicalStatementOperatio
 					ConsolPlugin.INSTANCE.getString("EstimatedDateOfDeliveryStatusCode"),
 					new Object[] { estimatedDateOfDelivery }));
 			}
+
 			return false;
 		}
 		return true;
@@ -369,6 +379,7 @@ public class EstimatedDateOfDeliveryOperations extends ClinicalStatementOperatio
 	 */
 	public static boolean validateEstimatedDateOfDeliveryValue(EstimatedDateOfDelivery estimatedDateOfDelivery,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ESTIMATED_DATE_OF_DELIVERY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ESTIMATED_DATE_OF_DELIVERY);
@@ -387,6 +398,7 @@ public class EstimatedDateOfDeliveryOperations extends ClinicalStatementOperatio
 					ConsolPlugin.INSTANCE.getString("EstimatedDateOfDeliveryValue"),
 					new Object[] { estimatedDateOfDelivery }));
 			}
+
 			return false;
 		}
 		return true;

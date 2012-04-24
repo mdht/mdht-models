@@ -86,6 +86,7 @@ public class SeverityObservationOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateSeverityObservationTextReference(SeverityObservation severityObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_SEVERITY_OBSERVATION_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SEVERITY_OBSERVATION);
@@ -104,6 +105,7 @@ public class SeverityObservationOperations extends ClinicalStatementOperations {
 					ConsolPlugin.INSTANCE.getString("SeverityObservationTextReference"),
 					new Object[] { severityObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -142,6 +144,7 @@ public class SeverityObservationOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateSeverityObservationReferenceValue(SeverityObservation severityObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_SEVERITY_OBSERVATION_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SEVERITY_OBSERVATION);
@@ -160,6 +163,7 @@ public class SeverityObservationOperations extends ClinicalStatementOperations {
 					ConsolPlugin.INSTANCE.getString("SeverityObservationReferenceValue"),
 					new Object[] { severityObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -198,6 +202,7 @@ public class SeverityObservationOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateSeverityObservationTemplateId(SeverityObservation severityObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_SEVERITY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SEVERITY_OBSERVATION);
@@ -216,6 +221,7 @@ public class SeverityObservationOperations extends ClinicalStatementOperations {
 					ConsolPlugin.INSTANCE.getString("SeverityObservationTemplateId"),
 					new Object[] { severityObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -254,6 +260,7 @@ public class SeverityObservationOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateSeverityObservationClassCode(SeverityObservation severityObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_SEVERITY_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SEVERITY_OBSERVATION);
@@ -272,6 +279,7 @@ public class SeverityObservationOperations extends ClinicalStatementOperations {
 					ConsolPlugin.INSTANCE.getString("SeverityObservationClassCode"),
 					new Object[] { severityObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -310,6 +318,7 @@ public class SeverityObservationOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateSeverityObservationMoodCode(SeverityObservation severityObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_SEVERITY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SEVERITY_OBSERVATION);
@@ -328,6 +337,7 @@ public class SeverityObservationOperations extends ClinicalStatementOperations {
 					ConsolPlugin.INSTANCE.getString("SeverityObservationMoodCode"),
 					new Object[] { severityObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -370,6 +380,7 @@ public class SeverityObservationOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateSeverityObservationCode(SeverityObservation severityObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_SEVERITY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SEVERITY_OBSERVATION);
@@ -387,6 +398,7 @@ public class SeverityObservationOperations extends ClinicalStatementOperations {
 					ConsolValidator.SEVERITY_OBSERVATION__SEVERITY_OBSERVATION_CODE,
 					ConsolPlugin.INSTANCE.getString("SeverityObservationCode"), new Object[] { severityObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -425,6 +437,7 @@ public class SeverityObservationOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateSeverityObservationText(SeverityObservation severityObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_SEVERITY_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SEVERITY_OBSERVATION);
@@ -442,6 +455,7 @@ public class SeverityObservationOperations extends ClinicalStatementOperations {
 					ConsolValidator.SEVERITY_OBSERVATION__SEVERITY_OBSERVATION_TEXT,
 					ConsolPlugin.INSTANCE.getString("SeverityObservationText"), new Object[] { severityObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -483,6 +497,7 @@ public class SeverityObservationOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateSeverityObservationStatusCode(SeverityObservation severityObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_SEVERITY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SEVERITY_OBSERVATION);
@@ -501,6 +516,7 @@ public class SeverityObservationOperations extends ClinicalStatementOperations {
 					ConsolPlugin.INSTANCE.getString("SeverityObservationStatusCode"),
 					new Object[] { severityObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -543,6 +559,7 @@ public class SeverityObservationOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateSeverityObservationValue(SeverityObservation severityObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_SEVERITY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SEVERITY_OBSERVATION);
@@ -560,6 +577,7 @@ public class SeverityObservationOperations extends ClinicalStatementOperations {
 					ConsolValidator.SEVERITY_OBSERVATION__SEVERITY_OBSERVATION_VALUE,
 					ConsolPlugin.INSTANCE.getString("SeverityObservationValue"), new Object[] { severityObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -604,6 +622,7 @@ public class SeverityObservationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateSeverityObservationInterpretationCode(SeverityObservation severityObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_SEVERITY_OBSERVATION_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SEVERITY_OBSERVATION);
@@ -622,6 +641,7 @@ public class SeverityObservationOperations extends ClinicalStatementOperations {
 					ConsolPlugin.INSTANCE.getString("SeverityObservationInterpretationCode"),
 					new Object[] { severityObservation }));
 			}
+
 			return false;
 		}
 		return true;

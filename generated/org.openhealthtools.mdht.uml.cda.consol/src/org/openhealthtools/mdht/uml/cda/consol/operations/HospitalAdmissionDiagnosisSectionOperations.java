@@ -86,6 +86,7 @@ public class HospitalAdmissionDiagnosisSectionOperations extends SectionOperatio
 	public static boolean validateHospitalAdmissionDiagnosisSectionTemplateId(
 			HospitalAdmissionDiagnosisSection hospitalAdmissionDiagnosisSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HOSPITAL_ADMISSION_DIAGNOSIS_SECTION);
@@ -106,6 +107,7 @@ public class HospitalAdmissionDiagnosisSectionOperations extends SectionOperatio
 					ConsolPlugin.INSTANCE.getString("HospitalAdmissionDiagnosisSectionTemplateId"),
 					new Object[] { hospitalAdmissionDiagnosisSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -149,6 +151,7 @@ public class HospitalAdmissionDiagnosisSectionOperations extends SectionOperatio
 	public static boolean validateHospitalAdmissionDiagnosisSectionCode(
 			HospitalAdmissionDiagnosisSection hospitalAdmissionDiagnosisSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HOSPITAL_ADMISSION_DIAGNOSIS_SECTION);
@@ -167,6 +170,7 @@ public class HospitalAdmissionDiagnosisSectionOperations extends SectionOperatio
 					ConsolPlugin.INSTANCE.getString("HospitalAdmissionDiagnosisSectionCode"),
 					new Object[] { hospitalAdmissionDiagnosisSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -208,6 +212,7 @@ public class HospitalAdmissionDiagnosisSectionOperations extends SectionOperatio
 	public static boolean validateHospitalAdmissionDiagnosisSectionTitle(
 			HospitalAdmissionDiagnosisSection hospitalAdmissionDiagnosisSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HOSPITAL_ADMISSION_DIAGNOSIS_SECTION);
@@ -226,6 +231,7 @@ public class HospitalAdmissionDiagnosisSectionOperations extends SectionOperatio
 					ConsolPlugin.INSTANCE.getString("HospitalAdmissionDiagnosisSectionTitle"),
 					new Object[] { hospitalAdmissionDiagnosisSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -267,6 +273,7 @@ public class HospitalAdmissionDiagnosisSectionOperations extends SectionOperatio
 	public static boolean validateHospitalAdmissionDiagnosisSectionText(
 			HospitalAdmissionDiagnosisSection hospitalAdmissionDiagnosisSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HOSPITAL_ADMISSION_DIAGNOSIS_SECTION);
@@ -285,6 +292,7 @@ public class HospitalAdmissionDiagnosisSectionOperations extends SectionOperatio
 					ConsolPlugin.INSTANCE.getString("HospitalAdmissionDiagnosisSectionText"),
 					new Object[] { hospitalAdmissionDiagnosisSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -326,6 +334,7 @@ public class HospitalAdmissionDiagnosisSectionOperations extends SectionOperatio
 	public static boolean validateHospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosis(
 			HospitalAdmissionDiagnosisSection hospitalAdmissionDiagnosisSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_HOSPITAL_ADMISSION_DIAGNOSIS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HOSPITAL_ADMISSION_DIAGNOSIS_SECTION);
@@ -346,6 +355,7 @@ public class HospitalAdmissionDiagnosisSectionOperations extends SectionOperatio
 					ConsolPlugin.INSTANCE.getString("HospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosis"),
 					new Object[] { hospitalAdmissionDiagnosisSection }));
 			}
+
 			return false;
 		}
 		return true;

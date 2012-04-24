@@ -80,6 +80,7 @@ public class ProceduresSectionOperations extends ProceduresSectionEntriesOptiona
 	 */
 	public static boolean validateProceduresSectionHasProcedureActivity(ProceduresSection proceduresSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURES_SECTION_HAS_PROCEDURE_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURES_SECTION);
@@ -98,6 +99,7 @@ public class ProceduresSectionOperations extends ProceduresSectionEntriesOptiona
 					ConsolPlugin.INSTANCE.getString("ProceduresSectionHasProcedureActivity"),
 					new Object[] { proceduresSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -136,6 +138,7 @@ public class ProceduresSectionOperations extends ProceduresSectionEntriesOptiona
 	 */
 	public static boolean validateProceduresSectionTitle(ProceduresSection proceduresSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURES_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURES_SECTION);
@@ -153,6 +156,7 @@ public class ProceduresSectionOperations extends ProceduresSectionEntriesOptiona
 					ConsolValidator.PROCEDURES_SECTION__PROCEDURES_SECTION_TITLE,
 					ConsolPlugin.INSTANCE.getString("ProceduresSectionTitle"), new Object[] { proceduresSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -193,6 +197,7 @@ public class ProceduresSectionOperations extends ProceduresSectionEntriesOptiona
 
 	public static boolean validateProceduresSectionText(ProceduresSection proceduresSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURES_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURES_SECTION);
@@ -210,6 +215,7 @@ public class ProceduresSectionOperations extends ProceduresSectionEntriesOptiona
 					ConsolValidator.PROCEDURES_SECTION__PROCEDURES_SECTION_TEXT,
 					ConsolPlugin.INSTANCE.getString("ProceduresSectionText"), new Object[] { proceduresSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -248,6 +254,7 @@ public class ProceduresSectionOperations extends ProceduresSectionEntriesOptiona
 	 */
 	public static boolean validateProceduresSectionEntriesOptionalTemplateId(ProceduresSection proceduresSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURES_SECTION);
@@ -272,6 +279,7 @@ public class ProceduresSectionOperations extends ProceduresSectionEntriesOptiona
 								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(proceduresSection, context) }),
 					new Object[] { proceduresSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -316,6 +324,7 @@ public class ProceduresSectionOperations extends ProceduresSectionEntriesOptiona
 
 	public static boolean validateProceduresSectionEntriesOptionalCode(ProceduresSection proceduresSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURES_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURES_SECTION);
@@ -334,6 +343,7 @@ public class ProceduresSectionOperations extends ProceduresSectionEntriesOptiona
 					ConsolPlugin.INSTANCE.getString("ProceduresSectionEntriesOptionalCode"),
 					new Object[] { proceduresSection }));
 			}
+
 			return false;
 		}
 		return true;

@@ -77,6 +77,7 @@ public class FindingsSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateFindingsSectionTemplateId(FindingsSection findingsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_FINDINGS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.FINDINGS_SECTION);
@@ -94,6 +95,7 @@ public class FindingsSectionOperations extends SectionOperations {
 					ConsolValidator.FINDINGS_SECTION__FINDINGS_SECTION_TEMPLATE_ID,
 					ConsolPlugin.INSTANCE.getString("FindingsSectionTemplateId"), new Object[] { findingsSection }));
 			}
+
 			return false;
 		}
 		return true;

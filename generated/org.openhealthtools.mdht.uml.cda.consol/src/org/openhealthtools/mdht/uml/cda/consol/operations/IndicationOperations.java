@@ -86,6 +86,7 @@ public class IndicationOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateIndicationCodeNullFlavor(Indication indication, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_INDICATION_CODE_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.INDICATION);
@@ -103,6 +104,7 @@ public class IndicationOperations extends ClinicalStatementOperations {
 					ConsolValidator.INDICATION__INDICATION_CODE_NULL_FLAVOR,
 					ConsolPlugin.INSTANCE.getString("IndicationCodeNullFlavor"), new Object[] { indication }));
 			}
+
 			return false;
 		}
 		return true;
@@ -141,6 +143,7 @@ public class IndicationOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateIndicationTemplateId(Indication indication, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_INDICATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.INDICATION);
@@ -157,6 +160,7 @@ public class IndicationOperations extends ClinicalStatementOperations {
 					ConsolValidator.INDICATION__INDICATION_TEMPLATE_ID,
 					ConsolPlugin.INSTANCE.getString("IndicationTemplateId"), new Object[] { indication }));
 			}
+
 			return false;
 		}
 		return true;
@@ -195,6 +199,7 @@ public class IndicationOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateIndicationClassCode(Indication indication, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_INDICATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.INDICATION);
@@ -211,6 +216,7 @@ public class IndicationOperations extends ClinicalStatementOperations {
 					ConsolValidator.INDICATION__INDICATION_CLASS_CODE,
 					ConsolPlugin.INSTANCE.getString("IndicationClassCode"), new Object[] { indication }));
 			}
+
 			return false;
 		}
 		return true;
@@ -231,6 +237,7 @@ public class IndicationOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateIndicationCode(Indication indication, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_INDICATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.INDICATION);
@@ -246,6 +253,7 @@ public class IndicationOperations extends ClinicalStatementOperations {
 					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE, ConsolValidator.INDICATION__INDICATION_CODE,
 					ConsolPlugin.INSTANCE.getString("IndicationCode"), new Object[] { indication }));
 			}
+
 			return false;
 		}
 		return true;
@@ -264,6 +272,7 @@ public class IndicationOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateIndicationEffectiveTime(Indication indication, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_INDICATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.INDICATION);
@@ -280,6 +289,7 @@ public class IndicationOperations extends ClinicalStatementOperations {
 					ConsolValidator.INDICATION__INDICATION_EFFECTIVE_TIME,
 					ConsolPlugin.INSTANCE.getString("IndicationEffectiveTime"), new Object[] { indication }));
 			}
+
 			return false;
 		}
 		return true;
@@ -298,6 +308,7 @@ public class IndicationOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateIndicationId(Indication indication, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_INDICATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.INDICATION);
@@ -313,6 +324,7 @@ public class IndicationOperations extends ClinicalStatementOperations {
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE, ConsolValidator.INDICATION__INDICATION_ID,
 					ConsolPlugin.INSTANCE.getString("IndicationId"), new Object[] { indication }));
 			}
+
 			return false;
 		}
 		return true;
@@ -393,6 +405,7 @@ public class IndicationOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateIndicationMoodCode(Indication indication, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_INDICATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.INDICATION);
@@ -409,6 +422,7 @@ public class IndicationOperations extends ClinicalStatementOperations {
 					ConsolValidator.INDICATION__INDICATION_MOOD_CODE,
 					ConsolPlugin.INSTANCE.getString("IndicationMoodCode"), new Object[] { indication }));
 			}
+
 			return false;
 		}
 		return true;
@@ -470,6 +484,7 @@ public class IndicationOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateIndicationStatusCode(Indication indication, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_INDICATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.INDICATION);
@@ -486,6 +501,7 @@ public class IndicationOperations extends ClinicalStatementOperations {
 					ConsolValidator.INDICATION__INDICATION_STATUS_CODE,
 					ConsolPlugin.INSTANCE.getString("IndicationStatusCode"), new Object[] { indication }));
 			}
+
 			return false;
 		}
 		return true;
@@ -528,6 +544,7 @@ public class IndicationOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateIndicationValue(Indication indication, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_INDICATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.INDICATION);
@@ -544,6 +561,7 @@ public class IndicationOperations extends ClinicalStatementOperations {
 					ConsolValidator.INDICATION__INDICATION_VALUE, ConsolPlugin.INSTANCE.getString("IndicationValue"),
 					new Object[] { indication }));
 			}
+
 			return false;
 		}
 		return true;
@@ -584,6 +602,7 @@ public class IndicationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateIndicationValueP(Indication indication, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_INDICATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.INDICATION);
@@ -600,6 +619,7 @@ public class IndicationOperations extends ClinicalStatementOperations {
 					ConsolValidator.INDICATION__INDICATION_VALUE_P,
 					ConsolPlugin.INSTANCE.getString("IndicationValueP"), new Object[] { indication }));
 			}
+
 			return false;
 		}
 		return true;

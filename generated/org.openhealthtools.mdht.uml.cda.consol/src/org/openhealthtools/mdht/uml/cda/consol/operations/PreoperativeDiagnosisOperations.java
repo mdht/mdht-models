@@ -85,6 +85,7 @@ public class PreoperativeDiagnosisOperations extends ClinicalStatementOperations
 	 */
 	public static boolean validatePreoperativeDiagnosisTemplateId(PreoperativeDiagnosis preoperativeDiagnosis,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PREOPERATIVE_DIAGNOSIS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PREOPERATIVE_DIAGNOSIS);
@@ -103,6 +104,7 @@ public class PreoperativeDiagnosisOperations extends ClinicalStatementOperations
 					ConsolPlugin.INSTANCE.getString("PreoperativeDiagnosisTemplateId"),
 					new Object[] { preoperativeDiagnosis }));
 			}
+
 			return false;
 		}
 		return true;
@@ -141,6 +143,7 @@ public class PreoperativeDiagnosisOperations extends ClinicalStatementOperations
 	 */
 	public static boolean validatePreoperativeDiagnosisClassCode(PreoperativeDiagnosis preoperativeDiagnosis,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PREOPERATIVE_DIAGNOSIS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PREOPERATIVE_DIAGNOSIS);
@@ -159,6 +162,7 @@ public class PreoperativeDiagnosisOperations extends ClinicalStatementOperations
 					ConsolPlugin.INSTANCE.getString("PreoperativeDiagnosisClassCode"),
 					new Object[] { preoperativeDiagnosis }));
 			}
+
 			return false;
 		}
 		return true;
@@ -201,6 +205,7 @@ public class PreoperativeDiagnosisOperations extends ClinicalStatementOperations
 	 */
 	public static boolean validatePreoperativeDiagnosisCode(PreoperativeDiagnosis preoperativeDiagnosis,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PREOPERATIVE_DIAGNOSIS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PREOPERATIVE_DIAGNOSIS);
@@ -219,6 +224,7 @@ public class PreoperativeDiagnosisOperations extends ClinicalStatementOperations
 					ConsolPlugin.INSTANCE.getString("PreoperativeDiagnosisCode"),
 					new Object[] { preoperativeDiagnosis }));
 			}
+
 			return false;
 		}
 		return true;
@@ -257,6 +263,7 @@ public class PreoperativeDiagnosisOperations extends ClinicalStatementOperations
 	 */
 	public static boolean validatePreoperativeDiagnosisMoodCode(PreoperativeDiagnosis preoperativeDiagnosis,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PREOPERATIVE_DIAGNOSIS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PREOPERATIVE_DIAGNOSIS);
@@ -275,6 +282,7 @@ public class PreoperativeDiagnosisOperations extends ClinicalStatementOperations
 					ConsolPlugin.INSTANCE.getString("PreoperativeDiagnosisMoodCode"),
 					new Object[] { preoperativeDiagnosis }));
 			}
+
 			return false;
 		}
 		return true;
@@ -313,6 +321,7 @@ public class PreoperativeDiagnosisOperations extends ClinicalStatementOperations
 	 */
 	public static boolean validatePreoperativeDiagnosisProblemObservation(PreoperativeDiagnosis preoperativeDiagnosis,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PREOPERATIVE_DIAGNOSIS_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PREOPERATIVE_DIAGNOSIS);
@@ -331,6 +340,7 @@ public class PreoperativeDiagnosisOperations extends ClinicalStatementOperations
 					ConsolPlugin.INSTANCE.getString("PreoperativeDiagnosisProblemObservation"),
 					new Object[] { preoperativeDiagnosis }));
 			}
+
 			return false;
 		}
 		return true;
@@ -370,7 +380,7 @@ public class PreoperativeDiagnosisOperations extends ClinicalStatementOperations
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PREOPERATIVE_DIAGNOSIS,
-				ConsolPackage.Literals.PREOPERATIVE_DIAGNOSIS.getEAllOperations().get(54));
+				ConsolPackage.Literals.PREOPERATIVE_DIAGNOSIS.getEAllOperations().get(56));
 			try {
 				GET_PROBLEM_OBSERVATION__EOCL_QRY = helper.createQuery(GET_PROBLEM_OBSERVATION__EOCL_EXP);
 			} catch (ParserException pe) {

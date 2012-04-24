@@ -82,6 +82,7 @@ public class ImmunizationMedicationInformationManufacturedMaterialOperations ext
 	public static boolean validateImmunizationMedicationInformationManufacturedMaterialCodeOriginalText(
 			ImmunizationMedicationInformationManufacturedMaterial immunizationMedicationInformationManufacturedMaterial,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_CODE_ORIGINAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL);
@@ -102,6 +103,7 @@ public class ImmunizationMedicationInformationManufacturedMaterialOperations ext
 					ConsolPlugin.INSTANCE.getString("ImmunizationMedicationInformationManufacturedMaterialCodeOriginalText"),
 					new Object[] { immunizationMedicationInformationManufacturedMaterial }));
 			}
+
 			return false;
 		}
 		return true;
@@ -141,6 +143,7 @@ public class ImmunizationMedicationInformationManufacturedMaterialOperations ext
 	public static boolean validateImmunizationMedicationInformationManufacturedMaterialOriginalTextReference(
 			ImmunizationMedicationInformationManufacturedMaterial immunizationMedicationInformationManufacturedMaterial,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_ORIGINAL_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL);
@@ -161,6 +164,7 @@ public class ImmunizationMedicationInformationManufacturedMaterialOperations ext
 					ConsolPlugin.INSTANCE.getString("ImmunizationMedicationInformationManufacturedMaterialOriginalTextReference"),
 					new Object[] { immunizationMedicationInformationManufacturedMaterial }));
 			}
+
 			return false;
 		}
 		return true;
@@ -200,6 +204,7 @@ public class ImmunizationMedicationInformationManufacturedMaterialOperations ext
 	public static boolean validateImmunizationMedicationInformationManufacturedMaterialCodeTranslation(
 			ImmunizationMedicationInformationManufacturedMaterial immunizationMedicationInformationManufacturedMaterial,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_CODE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL);
@@ -220,6 +225,7 @@ public class ImmunizationMedicationInformationManufacturedMaterialOperations ext
 					ConsolPlugin.INSTANCE.getString("ImmunizationMedicationInformationManufacturedMaterialCodeTranslation"),
 					new Object[] { immunizationMedicationInformationManufacturedMaterial }));
 			}
+
 			return false;
 		}
 		return true;
@@ -265,6 +271,7 @@ public class ImmunizationMedicationInformationManufacturedMaterialOperations ext
 	public static boolean validateImmunizationMedicationInformationManufacturedMaterialCode(
 			ImmunizationMedicationInformationManufacturedMaterial immunizationMedicationInformationManufacturedMaterial,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL);
@@ -285,6 +292,7 @@ public class ImmunizationMedicationInformationManufacturedMaterialOperations ext
 					ConsolPlugin.INSTANCE.getString("ImmunizationMedicationInformationManufacturedMaterialCode"),
 					new Object[] { immunizationMedicationInformationManufacturedMaterial }));
 			}
+
 			return false;
 		}
 		return true;
@@ -324,6 +332,7 @@ public class ImmunizationMedicationInformationManufacturedMaterialOperations ext
 	public static boolean validateImmunizationMedicationInformationManufacturedMaterialLotNumberText(
 			ImmunizationMedicationInformationManufacturedMaterial immunizationMedicationInformationManufacturedMaterial,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_LOT_NUMBER_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL);
@@ -344,6 +353,7 @@ public class ImmunizationMedicationInformationManufacturedMaterialOperations ext
 					ConsolPlugin.INSTANCE.getString("ImmunizationMedicationInformationManufacturedMaterialLotNumberText"),
 					new Object[] { immunizationMedicationInformationManufacturedMaterial }));
 			}
+
 			return false;
 		}
 		return true;

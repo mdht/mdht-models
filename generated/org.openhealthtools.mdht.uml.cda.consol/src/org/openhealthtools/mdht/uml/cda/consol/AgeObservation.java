@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getAgeObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation statusCode.code='completed' code.codeSystem='2.16.840.1.113883.6.96' code.displayName='Age At Onset' templateId.root='2.16.840.1.113883.10.20.22.4.31' constraints.validation.error='AgeObservationTemplateId AgeObservationClassCode AgeObservationMoodCode AgeObservationCode AgeObservationStatusCode AgeObservationValue' code.codeSystemName='SNOMEDCT' classCode='OBS' code.code='445518008' moodCode='EVN'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AgeObservationTemplateId AgeObservationClassCode AgeObservationMoodCode AgeObservationCode AgeObservationStatusCode AgeObservationValue' templateId.root='2.16.840.1.113883.10.20.22.4.31' classCode='OBS' moodCode='EVN' code.codeSystem='2.16.840.1.113883.6.96' code.displayName='Age At Onset' code.codeSystemName='SNOMEDCT' code.code='445518008' statusCode.code='completed'"
  * @generated
  */
 public interface AgeObservation extends Observation {

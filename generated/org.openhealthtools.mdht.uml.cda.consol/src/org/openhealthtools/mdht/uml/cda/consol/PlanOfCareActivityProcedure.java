@@ -18,7 +18,7 @@ import org.openhealthtools.mdht.uml.cda.Procedure;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getPlanOfCareActivityProcedure()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.22.4.41' constraints.validation.error='PlanOfCareActivityProcedureTemplateId PlanOfCareActivityProcedureClassCode PlanOfCareActivityProcedureMoodCode PlanOfCareActivityProcedureId' classCode='PROC'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PlanOfCareActivityProcedureTemplateId PlanOfCareActivityProcedureClassCode PlanOfCareActivityProcedureMoodCode PlanOfCareActivityProcedureId' templateId.root='2.16.840.1.113883.10.20.22.4.41' classCode='PROC'"
  * @generated
  */
 public interface PlanOfCareActivityProcedure extends Procedure {

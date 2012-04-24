@@ -6,6 +6,7 @@
  */
 package org.openhealthtools.mdht.uml.cda.consol.operations;
 
+import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
@@ -35,8 +36,8 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservation#validateSocialHistoryObservationClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservation#validateSocialHistoryObservationMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservation#validateSocialHistoryObservationId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation Id</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservation#validateSocialHistoryObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservation#validateSocialHistoryObservationCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation Code P</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservation#validateSocialHistoryObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservation#validateSocialHistoryObservationStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservation#validateSocialHistoryObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation Value</em>}</li>
  * </ul>
@@ -87,6 +88,7 @@ public class SocialHistoryObservationOperations extends ClinicalStatementOperati
 	 */
 	public static boolean validateSocialHistoryObservationOriginalText(
 			SocialHistoryObservation socialHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_SOCIAL_HISTORY_OBSERVATION_ORIGINAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SOCIAL_HISTORY_OBSERVATION);
@@ -105,6 +107,7 @@ public class SocialHistoryObservationOperations extends ClinicalStatementOperati
 					ConsolPlugin.INSTANCE.getString("SocialHistoryObservationOriginalText"),
 					new Object[] { socialHistoryObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -143,6 +146,7 @@ public class SocialHistoryObservationOperations extends ClinicalStatementOperati
 	 */
 	public static boolean validateSocialHistoryObservationReference(SocialHistoryObservation socialHistoryObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_SOCIAL_HISTORY_OBSERVATION_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SOCIAL_HISTORY_OBSERVATION);
@@ -161,6 +165,7 @@ public class SocialHistoryObservationOperations extends ClinicalStatementOperati
 					ConsolPlugin.INSTANCE.getString("SocialHistoryObservationReference"),
 					new Object[] { socialHistoryObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -199,6 +204,7 @@ public class SocialHistoryObservationOperations extends ClinicalStatementOperati
 	 */
 	public static boolean validateSocialHistoryObservationReferenceValue(
 			SocialHistoryObservation socialHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_SOCIAL_HISTORY_OBSERVATION_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SOCIAL_HISTORY_OBSERVATION);
@@ -217,6 +223,7 @@ public class SocialHistoryObservationOperations extends ClinicalStatementOperati
 					ConsolPlugin.INSTANCE.getString("SocialHistoryObservationReferenceValue"),
 					new Object[] { socialHistoryObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -235,6 +242,7 @@ public class SocialHistoryObservationOperations extends ClinicalStatementOperati
 	 */
 	public static boolean validateSocialHistoryObservationTemplateId(SocialHistoryObservation socialHistoryObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_SOCIAL_HISTORY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SOCIAL_HISTORY_OBSERVATION);
@@ -253,6 +261,7 @@ public class SocialHistoryObservationOperations extends ClinicalStatementOperati
 					ConsolPlugin.INSTANCE.getString("SocialHistoryObservationTemplateId"),
 					new Object[] { socialHistoryObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -271,6 +280,7 @@ public class SocialHistoryObservationOperations extends ClinicalStatementOperati
 	 */
 	public static boolean validateSocialHistoryObservationClassCode(SocialHistoryObservation socialHistoryObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_SOCIAL_HISTORY_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SOCIAL_HISTORY_OBSERVATION);
@@ -289,6 +299,7 @@ public class SocialHistoryObservationOperations extends ClinicalStatementOperati
 					ConsolPlugin.INSTANCE.getString("SocialHistoryObservationClassCode"),
 					new Object[] { socialHistoryObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -307,6 +318,7 @@ public class SocialHistoryObservationOperations extends ClinicalStatementOperati
 	 */
 	public static boolean validateSocialHistoryObservationMoodCode(SocialHistoryObservation socialHistoryObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_SOCIAL_HISTORY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SOCIAL_HISTORY_OBSERVATION);
@@ -325,6 +337,7 @@ public class SocialHistoryObservationOperations extends ClinicalStatementOperati
 					ConsolPlugin.INSTANCE.getString("SocialHistoryObservationMoodCode"),
 					new Object[] { socialHistoryObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -343,6 +356,7 @@ public class SocialHistoryObservationOperations extends ClinicalStatementOperati
 	 */
 	public static boolean validateSocialHistoryObservationId(SocialHistoryObservation socialHistoryObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_SOCIAL_HISTORY_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SOCIAL_HISTORY_OBSERVATION);
@@ -361,6 +375,7 @@ public class SocialHistoryObservationOperations extends ClinicalStatementOperati
 					ConsolPlugin.INSTANCE.getString("SocialHistoryObservationId"),
 					new Object[] { socialHistoryObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -381,6 +396,15 @@ public class SocialHistoryObservationOperations extends ClinicalStatementOperati
 	 */
 	public static boolean validateSocialHistoryObservationCode(SocialHistoryObservation socialHistoryObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservationCodeP");
+		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(socialHistoryObservation)) {
+			// I have a free pass to short-circuit
+			return true;
+		}
+
 		if (VALIDATE_SOCIAL_HISTORY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SOCIAL_HISTORY_OBSERVATION);
@@ -399,6 +423,7 @@ public class SocialHistoryObservationOperations extends ClinicalStatementOperati
 					ConsolPlugin.INSTANCE.getString("SocialHistoryObservationCode"),
 					new Object[] { socialHistoryObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -418,6 +443,7 @@ public class SocialHistoryObservationOperations extends ClinicalStatementOperati
 
 	public static boolean validateSocialHistoryObservationCodeP(SocialHistoryObservation socialHistoryObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_SOCIAL_HISTORY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SOCIAL_HISTORY_OBSERVATION);
@@ -436,6 +462,19 @@ public class SocialHistoryObservationOperations extends ClinicalStatementOperati
 					ConsolPlugin.INSTANCE.getString("SocialHistoryObservationCodeP"),
 					new Object[] { socialHistoryObservation }));
 			}
+
+			if (context != null) {
+				// generate a pass token for my dependent constraints to short-circuit or filter results
+				@SuppressWarnings("unchecked")
+				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservationCodeP");
+				if (passToken == null) {
+					// anticipate a reasonably healthy model
+					passToken = new java.util.ArrayList<Object>(3);
+					context.put("org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservationCodeP", passToken);
+				}
+				passToken.add(socialHistoryObservation);
+			}
+
 			return false;
 		}
 		return true;
@@ -456,6 +495,7 @@ public class SocialHistoryObservationOperations extends ClinicalStatementOperati
 	 */
 	public static boolean validateSocialHistoryObservationStatusCode(SocialHistoryObservation socialHistoryObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_SOCIAL_HISTORY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SOCIAL_HISTORY_OBSERVATION);
@@ -474,6 +514,7 @@ public class SocialHistoryObservationOperations extends ClinicalStatementOperati
 					ConsolPlugin.INSTANCE.getString("SocialHistoryObservationStatusCode"),
 					new Object[] { socialHistoryObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -560,6 +601,27 @@ public class SocialHistoryObservationOperations extends ClinicalStatementOperati
 	protected static Constraint VALIDATE_SOCIAL_HISTORY_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
+	 * The cached OCL expression body for the '{@link #validateSocialHistoryObservationCodeP(SocialHistoryObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation Code P</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateSocialHistoryObservationCodeP(SocialHistoryObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_SOCIAL_HISTORY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateSocialHistoryObservationCodeP(SocialHistoryObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation Code P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateSocialHistoryObservationCodeP(SocialHistoryObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_SOCIAL_HISTORY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
 	 * The cached OCL expression body for the '{@link #validateSocialHistoryObservationCode(SocialHistoryObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation Code</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -580,27 +642,6 @@ public class SocialHistoryObservationOperations extends ClinicalStatementOperati
 	 * @ordered
 	 */
 	protected static Constraint VALIDATE_SOCIAL_HISTORY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateSocialHistoryObservationCodeP(SocialHistoryObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation Code P</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateSocialHistoryObservationCodeP(SocialHistoryObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_SOCIAL_HISTORY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateSocialHistoryObservationCodeP(SocialHistoryObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation Code P</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateSocialHistoryObservationCodeP(SocialHistoryObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_SOCIAL_HISTORY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateSocialHistoryObservationStatusCode(SocialHistoryObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation Status Code</em>}' operation.
@@ -656,6 +697,7 @@ public class SocialHistoryObservationOperations extends ClinicalStatementOperati
 	 */
 	public static boolean validateSocialHistoryObservationValue(SocialHistoryObservation socialHistoryObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_SOCIAL_HISTORY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SOCIAL_HISTORY_OBSERVATION);
@@ -674,6 +716,7 @@ public class SocialHistoryObservationOperations extends ClinicalStatementOperati
 					ConsolPlugin.INSTANCE.getString("SocialHistoryObservationValue"),
 					new Object[] { socialHistoryObservation }));
 			}
+
 			return false;
 		}
 		return true;

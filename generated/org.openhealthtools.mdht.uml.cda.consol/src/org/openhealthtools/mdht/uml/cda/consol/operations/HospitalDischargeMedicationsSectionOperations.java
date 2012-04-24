@@ -91,6 +91,7 @@ public class HospitalDischargeMedicationsSectionOperations extends
 	public static boolean validateHospitalDischargeMedicationsSectionText(
 			HospitalDischargeMedicationsSection hospitalDischargeMedicationsSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HOSPITAL_DISCHARGE_MEDICATIONS_SECTION);
@@ -110,6 +111,7 @@ public class HospitalDischargeMedicationsSectionOperations extends
 					ConsolPlugin.INSTANCE.getString("HospitalDischargeMedicationsSectionText"),
 					new Object[] { hospitalDischargeMedicationsSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -151,6 +153,7 @@ public class HospitalDischargeMedicationsSectionOperations extends
 	public static boolean validateHospitalDischargeMedicationsSectionTitle(
 			HospitalDischargeMedicationsSection hospitalDischargeMedicationsSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HOSPITAL_DISCHARGE_MEDICATIONS_SECTION);
@@ -170,6 +173,7 @@ public class HospitalDischargeMedicationsSectionOperations extends
 					ConsolPlugin.INSTANCE.getString("HospitalDischargeMedicationsSectionTitle"),
 					new Object[] { hospitalDischargeMedicationsSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -209,6 +213,7 @@ public class HospitalDischargeMedicationsSectionOperations extends
 	public static boolean validateHospitalDischargeMedicationsSectionDischargeMedication(
 			HospitalDischargeMedicationsSection hospitalDischargeMedicationsSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_DISCHARGE_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HOSPITAL_DISCHARGE_MEDICATIONS_SECTION);
@@ -229,6 +234,7 @@ public class HospitalDischargeMedicationsSectionOperations extends
 					ConsolPlugin.INSTANCE.getString("HospitalDischargeMedicationsSectionDischargeMedication"),
 					new Object[] { hospitalDischargeMedicationsSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -316,6 +322,7 @@ public class HospitalDischargeMedicationsSectionOperations extends
 	public static boolean validateHospitalDischargeMedicationsSectionEntriesOptionalTemplateId(
 			HospitalDischargeMedicationsSection hospitalDischargeMedicationsSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HOSPITAL_DISCHARGE_MEDICATIONS_SECTION);
@@ -341,6 +348,7 @@ public class HospitalDischargeMedicationsSectionOperations extends
 									hospitalDischargeMedicationsSection, context) }),
 					new Object[] { hospitalDischargeMedicationsSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -386,6 +394,7 @@ public class HospitalDischargeMedicationsSectionOperations extends
 	public static boolean validateHospitalDischargeMedicationsSectionEntriesOptionalCode(
 			HospitalDischargeMedicationsSection hospitalDischargeMedicationsSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HOSPITAL_DISCHARGE_MEDICATIONS_SECTION);
@@ -406,6 +415,7 @@ public class HospitalDischargeMedicationsSectionOperations extends
 					ConsolPlugin.INSTANCE.getString("HospitalDischargeMedicationsSectionEntriesOptionalCode"),
 					new Object[] { hospitalDischargeMedicationsSection }));
 			}
+
 			return false;
 		}
 		return true;

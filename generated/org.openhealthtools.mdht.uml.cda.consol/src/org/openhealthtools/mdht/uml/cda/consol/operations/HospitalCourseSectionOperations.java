@@ -80,6 +80,7 @@ public class HospitalCourseSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateHospitalCourseSectionTemplateId(HospitalCourseSection hospitalCourseSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_HOSPITAL_COURSE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HOSPITAL_COURSE_SECTION);
@@ -98,6 +99,7 @@ public class HospitalCourseSectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("HospitalCourseSectionTemplateId"),
 					new Object[] { hospitalCourseSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -140,6 +142,7 @@ public class HospitalCourseSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateHospitalCourseSectionCode(HospitalCourseSection hospitalCourseSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_HOSPITAL_COURSE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HOSPITAL_COURSE_SECTION);
@@ -158,6 +161,7 @@ public class HospitalCourseSectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("HospitalCourseSectionCode"),
 					new Object[] { hospitalCourseSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -196,6 +200,7 @@ public class HospitalCourseSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateHospitalCourseSectionTitle(HospitalCourseSection hospitalCourseSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_HOSPITAL_COURSE_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HOSPITAL_COURSE_SECTION);
@@ -214,6 +219,7 @@ public class HospitalCourseSectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("HospitalCourseSectionTitle"),
 					new Object[] { hospitalCourseSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -252,6 +258,7 @@ public class HospitalCourseSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateHospitalCourseSectionText(HospitalCourseSection hospitalCourseSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_HOSPITAL_COURSE_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HOSPITAL_COURSE_SECTION);
@@ -270,6 +277,7 @@ public class HospitalCourseSectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("HospitalCourseSectionText"),
 					new Object[] { hospitalCourseSection }));
 			}
+
 			return false;
 		}
 		return true;

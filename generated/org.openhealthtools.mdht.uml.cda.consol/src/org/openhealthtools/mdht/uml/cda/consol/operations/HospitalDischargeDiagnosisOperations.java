@@ -89,6 +89,7 @@ public class HospitalDischargeDiagnosisOperations extends ClinicalStatementOpera
 	public static boolean validateHospitalDischargeDiagnosisProblemObservation(
 			HospitalDischargeDiagnosis hospitalDischargeDiagnosis, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HOSPITAL_DISCHARGE_DIAGNOSIS);
@@ -108,6 +109,7 @@ public class HospitalDischargeDiagnosisOperations extends ClinicalStatementOpera
 					ConsolPlugin.INSTANCE.getString("HospitalDischargeDiagnosisProblemObservation"),
 					new Object[] { hospitalDischargeDiagnosis }));
 			}
+
 			return false;
 		}
 		return true;
@@ -147,6 +149,7 @@ public class HospitalDischargeDiagnosisOperations extends ClinicalStatementOpera
 	public static boolean validateHospitalDischargeDiagnosisTemplateId(
 			HospitalDischargeDiagnosis hospitalDischargeDiagnosis, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HOSPITAL_DISCHARGE_DIAGNOSIS);
@@ -165,6 +168,7 @@ public class HospitalDischargeDiagnosisOperations extends ClinicalStatementOpera
 					ConsolPlugin.INSTANCE.getString("HospitalDischargeDiagnosisTemplateId"),
 					new Object[] { hospitalDischargeDiagnosis }));
 			}
+
 			return false;
 		}
 		return true;
@@ -204,6 +208,7 @@ public class HospitalDischargeDiagnosisOperations extends ClinicalStatementOpera
 	public static boolean validateHospitalDischargeDiagnosisClassCode(
 			HospitalDischargeDiagnosis hospitalDischargeDiagnosis, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HOSPITAL_DISCHARGE_DIAGNOSIS);
@@ -222,6 +227,7 @@ public class HospitalDischargeDiagnosisOperations extends ClinicalStatementOpera
 					ConsolPlugin.INSTANCE.getString("HospitalDischargeDiagnosisClassCode"),
 					new Object[] { hospitalDischargeDiagnosis }));
 			}
+
 			return false;
 		}
 		return true;
@@ -261,6 +267,7 @@ public class HospitalDischargeDiagnosisOperations extends ClinicalStatementOpera
 	public static boolean validateHospitalDischargeDiagnosisMoodCode(
 			HospitalDischargeDiagnosis hospitalDischargeDiagnosis, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HOSPITAL_DISCHARGE_DIAGNOSIS);
@@ -279,6 +286,7 @@ public class HospitalDischargeDiagnosisOperations extends ClinicalStatementOpera
 					ConsolPlugin.INSTANCE.getString("HospitalDischargeDiagnosisMoodCode"),
 					new Object[] { hospitalDischargeDiagnosis }));
 			}
+
 			return false;
 		}
 		return true;
@@ -321,6 +329,7 @@ public class HospitalDischargeDiagnosisOperations extends ClinicalStatementOpera
 	 */
 	public static boolean validateHospitalDischargeDiagnosisCode(HospitalDischargeDiagnosis hospitalDischargeDiagnosis,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_HOSPITAL_DISCHARGE_DIAGNOSIS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HOSPITAL_DISCHARGE_DIAGNOSIS);
@@ -339,6 +348,7 @@ public class HospitalDischargeDiagnosisOperations extends ClinicalStatementOpera
 					ConsolPlugin.INSTANCE.getString("HospitalDischargeDiagnosisCode"),
 					new Object[] { hospitalDischargeDiagnosis }));
 			}
+
 			return false;
 		}
 		return true;
@@ -378,7 +388,7 @@ public class HospitalDischargeDiagnosisOperations extends ClinicalStatementOpera
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.HOSPITAL_DISCHARGE_DIAGNOSIS,
-				ConsolPackage.Literals.HOSPITAL_DISCHARGE_DIAGNOSIS.getEAllOperations().get(54));
+				ConsolPackage.Literals.HOSPITAL_DISCHARGE_DIAGNOSIS.getEAllOperations().get(56));
 			try {
 				GET_PROBLEM_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_PROBLEM_OBSERVATIONS__EOCL_EXP);
 			} catch (ParserException pe) {

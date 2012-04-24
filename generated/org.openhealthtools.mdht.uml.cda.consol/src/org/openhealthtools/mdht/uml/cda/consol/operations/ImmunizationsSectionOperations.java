@@ -87,6 +87,7 @@ public class ImmunizationsSectionOperations extends ImmunizationsSectionEntriesO
 	 */
 	public static boolean validateImmunizationsSectionTitle(ImmunizationsSection immunizationsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_IMMUNIZATIONS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.IMMUNIZATIONS_SECTION);
@@ -104,6 +105,7 @@ public class ImmunizationsSectionOperations extends ImmunizationsSectionEntriesO
 					ConsolValidator.IMMUNIZATIONS_SECTION__IMMUNIZATIONS_SECTION_TITLE,
 					ConsolPlugin.INSTANCE.getString("ImmunizationsSectionTitle"), new Object[] { immunizationsSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -142,6 +144,7 @@ public class ImmunizationsSectionOperations extends ImmunizationsSectionEntriesO
 	 */
 	public static boolean validateImmunizationsSectionText(ImmunizationsSection immunizationsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_IMMUNIZATIONS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.IMMUNIZATIONS_SECTION);
@@ -159,6 +162,7 @@ public class ImmunizationsSectionOperations extends ImmunizationsSectionEntriesO
 					ConsolValidator.IMMUNIZATIONS_SECTION__IMMUNIZATIONS_SECTION_TEXT,
 					ConsolPlugin.INSTANCE.getString("ImmunizationsSectionText"), new Object[] { immunizationsSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -197,6 +201,7 @@ public class ImmunizationsSectionOperations extends ImmunizationsSectionEntriesO
 	 */
 	public static boolean validateImmunizationsSectionImmunization(ImmunizationsSection immunizationsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_IMMUNIZATIONS_SECTION_IMMUNIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.IMMUNIZATIONS_SECTION);
@@ -215,6 +220,7 @@ public class ImmunizationsSectionOperations extends ImmunizationsSectionEntriesO
 					ConsolPlugin.INSTANCE.getString("ImmunizationsSectionImmunization"),
 					new Object[] { immunizationsSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -300,6 +306,7 @@ public class ImmunizationsSectionOperations extends ImmunizationsSectionEntriesO
 	 */
 	public static boolean validateImmunizationsSectionEntriesOptionalTemplateId(
 			ImmunizationsSection immunizationsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.IMMUNIZATIONS_SECTION);
@@ -323,6 +330,7 @@ public class ImmunizationsSectionOperations extends ImmunizationsSectionEntriesO
 								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
 									immunizationsSection, context) }), new Object[] { immunizationsSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -367,6 +375,7 @@ public class ImmunizationsSectionOperations extends ImmunizationsSectionEntriesO
 
 	public static boolean validateImmunizationsSectionEntriesOptionalCode(ImmunizationsSection immunizationsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.IMMUNIZATIONS_SECTION);
@@ -385,6 +394,7 @@ public class ImmunizationsSectionOperations extends ImmunizationsSectionEntriesO
 					ConsolPlugin.INSTANCE.getString("ImmunizationsSectionEntriesOptionalCode"),
 					new Object[] { immunizationsSection }));
 			}
+
 			return false;
 		}
 		return true;
