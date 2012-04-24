@@ -78,6 +78,7 @@ public class QuantityMeasurementObservationOperations extends ClinicalStatementO
 	public static boolean validateQuantityMeasurementObservationTemplateId(
 			QuantityMeasurementObservation quantityMeasurementObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_QUANTITY_MEASUREMENT_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.QUANTITY_MEASUREMENT_OBSERVATION);
@@ -96,6 +97,7 @@ public class QuantityMeasurementObservationOperations extends ClinicalStatementO
 					ConsolPlugin.INSTANCE.getString("QuantityMeasurementObservationTemplateId"),
 					new Object[] { quantityMeasurementObservation }));
 			}
+
 			return false;
 		}
 		return true;

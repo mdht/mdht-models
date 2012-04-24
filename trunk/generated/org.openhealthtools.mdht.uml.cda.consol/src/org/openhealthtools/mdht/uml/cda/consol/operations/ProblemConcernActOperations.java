@@ -93,6 +93,7 @@ public class ProblemConcernActOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateProblemConcernActEffectiveTimeLow(ProblemConcernAct problemConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROBLEM_CONCERN_ACT_EFFECTIVE_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROBLEM_CONCERN_ACT);
@@ -111,6 +112,7 @@ public class ProblemConcernActOperations extends ClinicalStatementOperations {
 					ConsolPlugin.INSTANCE.getString("ProblemConcernActEffectiveTimeLow"),
 					new Object[] { problemConcernAct }));
 			}
+
 			return false;
 		}
 		return true;
@@ -149,6 +151,7 @@ public class ProblemConcernActOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateProblemConcernActEffectiveTimeHigh(ProblemConcernAct problemConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROBLEM_CONCERN_ACT_EFFECTIVE_TIME_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROBLEM_CONCERN_ACT);
@@ -167,6 +170,7 @@ public class ProblemConcernActOperations extends ClinicalStatementOperations {
 					ConsolPlugin.INSTANCE.getString("ProblemConcernActEffectiveTimeHigh"),
 					new Object[] { problemConcernAct }));
 			}
+
 			return false;
 		}
 		return true;
@@ -205,6 +209,7 @@ public class ProblemConcernActOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateProblemConcernActTemplateId(ProblemConcernAct problemConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROBLEM_CONCERN_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROBLEM_CONCERN_ACT);
@@ -222,6 +227,7 @@ public class ProblemConcernActOperations extends ClinicalStatementOperations {
 					ConsolValidator.PROBLEM_CONCERN_ACT__PROBLEM_CONCERN_ACT_TEMPLATE_ID,
 					ConsolPlugin.INSTANCE.getString("ProblemConcernActTemplateId"), new Object[] { problemConcernAct }));
 			}
+
 			return false;
 		}
 		return true;
@@ -260,6 +266,7 @@ public class ProblemConcernActOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateProblemConcernActClassCode(ProblemConcernAct problemConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROBLEM_CONCERN_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROBLEM_CONCERN_ACT);
@@ -277,6 +284,7 @@ public class ProblemConcernActOperations extends ClinicalStatementOperations {
 					ConsolValidator.PROBLEM_CONCERN_ACT__PROBLEM_CONCERN_ACT_CLASS_CODE,
 					ConsolPlugin.INSTANCE.getString("ProblemConcernActClassCode"), new Object[] { problemConcernAct }));
 			}
+
 			return false;
 		}
 		return true;
@@ -315,6 +323,7 @@ public class ProblemConcernActOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateProblemConcernActMoodCode(ProblemConcernAct problemConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROBLEM_CONCERN_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROBLEM_CONCERN_ACT);
@@ -332,6 +341,7 @@ public class ProblemConcernActOperations extends ClinicalStatementOperations {
 					ConsolValidator.PROBLEM_CONCERN_ACT__PROBLEM_CONCERN_ACT_MOOD_CODE,
 					ConsolPlugin.INSTANCE.getString("ProblemConcernActMoodCode"), new Object[] { problemConcernAct }));
 			}
+
 			return false;
 		}
 		return true;
@@ -370,6 +380,7 @@ public class ProblemConcernActOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateProblemConcernActId(ProblemConcernAct problemConcernAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PROBLEM_CONCERN_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROBLEM_CONCERN_ACT);
@@ -387,6 +398,7 @@ public class ProblemConcernActOperations extends ClinicalStatementOperations {
 					ConsolValidator.PROBLEM_CONCERN_ACT__PROBLEM_CONCERN_ACT_ID,
 					ConsolPlugin.INSTANCE.getString("ProblemConcernActId"), new Object[] { problemConcernAct }));
 			}
+
 			return false;
 		}
 		return true;
@@ -429,6 +441,7 @@ public class ProblemConcernActOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateProblemConcernActCode(ProblemConcernAct problemConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROBLEM_CONCERN_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROBLEM_CONCERN_ACT);
@@ -446,6 +459,7 @@ public class ProblemConcernActOperations extends ClinicalStatementOperations {
 					ConsolValidator.PROBLEM_CONCERN_ACT__PROBLEM_CONCERN_ACT_CODE,
 					ConsolPlugin.INSTANCE.getString("ProblemConcernActCode"), new Object[] { problemConcernAct }));
 			}
+
 			return false;
 		}
 		return true;
@@ -490,6 +504,7 @@ public class ProblemConcernActOperations extends ClinicalStatementOperations {
 
 	public static boolean validateProblemConcernActStatusCode(ProblemConcernAct problemConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROBLEM_CONCERN_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROBLEM_CONCERN_ACT);
@@ -507,6 +522,7 @@ public class ProblemConcernActOperations extends ClinicalStatementOperations {
 					ConsolValidator.PROBLEM_CONCERN_ACT__PROBLEM_CONCERN_ACT_STATUS_CODE,
 					ConsolPlugin.INSTANCE.getString("ProblemConcernActStatusCode"), new Object[] { problemConcernAct }));
 			}
+
 			return false;
 		}
 		return true;
@@ -545,6 +561,7 @@ public class ProblemConcernActOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateProblemConcernActEffectiveTime(ProblemConcernAct problemConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROBLEM_CONCERN_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROBLEM_CONCERN_ACT);
@@ -563,6 +580,7 @@ public class ProblemConcernActOperations extends ClinicalStatementOperations {
 					ConsolPlugin.INSTANCE.getString("ProblemConcernActEffectiveTime"),
 					new Object[] { problemConcernAct }));
 			}
+
 			return false;
 		}
 		return true;
@@ -601,6 +619,7 @@ public class ProblemConcernActOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateProblemConcernActProblemObservation(ProblemConcernAct problemConcernAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROBLEM_CONCERN_ACT_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROBLEM_CONCERN_ACT);
@@ -619,6 +638,7 @@ public class ProblemConcernActOperations extends ClinicalStatementOperations {
 					ConsolPlugin.INSTANCE.getString("ProblemConcernActProblemObservation"),
 					new Object[] { problemConcernAct }));
 			}
+
 			return false;
 		}
 		return true;
@@ -658,7 +678,7 @@ public class ProblemConcernActOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PROBLEM_CONCERN_ACT,
-				ConsolPackage.Literals.PROBLEM_CONCERN_ACT.getEAllOperations().get(59));
+				ConsolPackage.Literals.PROBLEM_CONCERN_ACT.getEAllOperations().get(61));
 			try {
 				GET_PROBLEM_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_PROBLEM_OBSERVATIONS__EOCL_EXP);
 			} catch (ParserException pe) {

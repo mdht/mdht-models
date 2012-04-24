@@ -88,6 +88,7 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
 	 */
 	public static boolean validatePregnancyObservationTemplateId(PregnancyObservation pregnancyObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PREGNANCY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PREGNANCY_OBSERVATION);
@@ -106,6 +107,7 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
 					ConsolPlugin.INSTANCE.getString("PregnancyObservationTemplateId"),
 					new Object[] { pregnancyObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -144,6 +146,7 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
 	 */
 	public static boolean validatePregnancyObservationClassCode(PregnancyObservation pregnancyObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PREGNANCY_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PREGNANCY_OBSERVATION);
@@ -162,6 +165,7 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
 					ConsolPlugin.INSTANCE.getString("PregnancyObservationClassCode"),
 					new Object[] { pregnancyObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -200,6 +204,7 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
 	 */
 	public static boolean validatePregnancyObservationMoodCode(PregnancyObservation pregnancyObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PREGNANCY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PREGNANCY_OBSERVATION);
@@ -218,6 +223,7 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
 					ConsolPlugin.INSTANCE.getString("PregnancyObservationMoodCode"),
 					new Object[] { pregnancyObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -260,6 +266,7 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
 	 */
 	public static boolean validatePregnancyObservationCode(PregnancyObservation pregnancyObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PREGNANCY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PREGNANCY_OBSERVATION);
@@ -277,6 +284,7 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
 					ConsolValidator.PREGNANCY_OBSERVATION__PREGNANCY_OBSERVATION_CODE,
 					ConsolPlugin.INSTANCE.getString("PregnancyObservationCode"), new Object[] { pregnancyObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -318,6 +326,7 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
 	 */
 	public static boolean validatePregnancyObservationStatusCode(PregnancyObservation pregnancyObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PREGNANCY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PREGNANCY_OBSERVATION);
@@ -336,6 +345,7 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
 					ConsolPlugin.INSTANCE.getString("PregnancyObservationStatusCode"),
 					new Object[] { pregnancyObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -378,6 +388,7 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
 	 */
 	public static boolean validatePregnancyObservationValue(PregnancyObservation pregnancyObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PREGNANCY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PREGNANCY_OBSERVATION);
@@ -395,6 +406,7 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
 					ConsolValidator.PREGNANCY_OBSERVATION__PREGNANCY_OBSERVATION_VALUE,
 					ConsolPlugin.INSTANCE.getString("PregnancyObservationValue"), new Object[] { pregnancyObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -433,6 +445,7 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
 	 */
 	public static boolean validatePregnancyObservationEffectiveTime(PregnancyObservation pregnancyObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PREGNANCY_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PREGNANCY_OBSERVATION);
@@ -451,6 +464,7 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
 					ConsolPlugin.INSTANCE.getString("PregnancyObservationEffectiveTime"),
 					new Object[] { pregnancyObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -491,6 +505,7 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
 
 	public static boolean validatePregnancyObservationEstimatedDateOfDelivery(
 			PregnancyObservation pregnancyObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PREGNANCY_OBSERVATION_ESTIMATED_DATE_OF_DELIVERY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PREGNANCY_OBSERVATION);
@@ -510,6 +525,7 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
 					ConsolPlugin.INSTANCE.getString("PregnancyObservationEstimatedDateOfDelivery"),
 					new Object[] { pregnancyObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -549,7 +565,7 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.PREGNANCY_OBSERVATION,
-				ConsolPackage.Literals.PREGNANCY_OBSERVATION.getEAllOperations().get(57));
+				ConsolPackage.Literals.PREGNANCY_OBSERVATION.getEAllOperations().get(59));
 			try {
 				GET_ESTIMATED_DATE_OF_DELIVERY__EOCL_QRY = helper.createQuery(GET_ESTIMATED_DATE_OF_DELIVERY__EOCL_EXP);
 			} catch (ParserException pe) {

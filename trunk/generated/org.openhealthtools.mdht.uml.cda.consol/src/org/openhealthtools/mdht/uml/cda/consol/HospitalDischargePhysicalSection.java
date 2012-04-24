@@ -18,7 +18,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getHospitalDischargePhysicalSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.3.26' code.displayName='Hospital Discharge Physical' constraints.validation.error='HospitalDischargePhysicalSectionTemplateId HospitalDischargePhysicalSectionCode HospitalDischargePhysicalSectionTitle HospitalDischargePhysicalSectionText' code.codeSystemName='LOINC' code.code='10184-0'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='HospitalDischargePhysicalSectionTemplateId HospitalDischargePhysicalSectionCode HospitalDischargePhysicalSectionTitle HospitalDischargePhysicalSectionText' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.3.26' code.codeSystem='2.16.840.1.113883.6.1' code.displayName='Hospital Discharge Physical' code.codeSystemName='LOINC' code.code='10184-0'"
  * @generated
  */
 public interface HospitalDischargePhysicalSection extends Section {

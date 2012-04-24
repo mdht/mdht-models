@@ -88,6 +88,7 @@ public class SeriesActOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateSeriesActTemplateId(SeriesAct seriesAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_SERIES_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SERIES_ACT);
@@ -104,6 +105,7 @@ public class SeriesActOperations extends ClinicalStatementOperations {
 					ConsolValidator.SERIES_ACT__SERIES_ACT_TEMPLATE_ID,
 					ConsolPlugin.INSTANCE.getString("SeriesActTemplateId"), new Object[] { seriesAct }));
 			}
+
 			return false;
 		}
 		return true;
@@ -142,6 +144,7 @@ public class SeriesActOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateSeriesActClassCode(SeriesAct seriesAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_SERIES_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SERIES_ACT);
@@ -158,6 +161,7 @@ public class SeriesActOperations extends ClinicalStatementOperations {
 					ConsolValidator.SERIES_ACT__SERIES_ACT_CLASS_CODE,
 					ConsolPlugin.INSTANCE.getString("SeriesActClassCode"), new Object[] { seriesAct }));
 			}
+
 			return false;
 		}
 		return true;
@@ -196,6 +200,7 @@ public class SeriesActOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateSeriesActMoodCode(SeriesAct seriesAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_SERIES_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SERIES_ACT);
@@ -212,6 +217,7 @@ public class SeriesActOperations extends ClinicalStatementOperations {
 					ConsolValidator.SERIES_ACT__SERIES_ACT_MOOD_CODE,
 					ConsolPlugin.INSTANCE.getString("SeriesActMoodCode"), new Object[] { seriesAct }));
 			}
+
 			return false;
 		}
 		return true;
@@ -254,6 +260,7 @@ public class SeriesActOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateSeriesActCode(SeriesAct seriesAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_SERIES_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SERIES_ACT);
@@ -269,6 +276,7 @@ public class SeriesActOperations extends ClinicalStatementOperations {
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE, ConsolValidator.SERIES_ACT__SERIES_ACT_CODE,
 					ConsolPlugin.INSTANCE.getString("SeriesActCode"), new Object[] { seriesAct }));
 			}
+
 			return false;
 		}
 		return true;
@@ -307,6 +315,7 @@ public class SeriesActOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateSeriesActEffectiveTime(SeriesAct seriesAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_SERIES_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SERIES_ACT);
@@ -323,6 +332,7 @@ public class SeriesActOperations extends ClinicalStatementOperations {
 					ConsolValidator.SERIES_ACT__SERIES_ACT_EFFECTIVE_TIME,
 					ConsolPlugin.INSTANCE.getString("SeriesActEffectiveTime"), new Object[] { seriesAct }));
 			}
+
 			return false;
 		}
 		return true;
@@ -361,6 +371,7 @@ public class SeriesActOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateSeriesActId(SeriesAct seriesAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_SERIES_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SERIES_ACT);
@@ -376,6 +387,7 @@ public class SeriesActOperations extends ClinicalStatementOperations {
 					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE, ConsolValidator.SERIES_ACT__SERIES_ACT_ID,
 					ConsolPlugin.INSTANCE.getString("SeriesActId"), new Object[] { seriesAct }));
 			}
+
 			return false;
 		}
 		return true;
@@ -414,6 +426,7 @@ public class SeriesActOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateSeriesActText(SeriesAct seriesAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_SERIES_ACT_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SERIES_ACT);
@@ -429,6 +442,7 @@ public class SeriesActOperations extends ClinicalStatementOperations {
 					Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE, ConsolValidator.SERIES_ACT__SERIES_ACT_TEXT,
 					ConsolPlugin.INSTANCE.getString("SeriesActText"), new Object[] { seriesAct }));
 			}
+
 			return false;
 		}
 		return true;
@@ -467,6 +481,7 @@ public class SeriesActOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateSeriesActSOPInstanceObservation(SeriesAct seriesAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_SERIES_ACT_SOP_INSTANCE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SERIES_ACT);
@@ -484,6 +499,7 @@ public class SeriesActOperations extends ClinicalStatementOperations {
 					ConsolValidator.SERIES_ACT__SERIES_ACT_SOP_INSTANCE_OBSERVATION,
 					ConsolPlugin.INSTANCE.getString("SeriesActSOPInstanceObservation"), new Object[] { seriesAct }));
 			}
+
 			return false;
 		}
 		return true;
@@ -522,7 +538,7 @@ public class SeriesActOperations extends ClinicalStatementOperations {
 		if (GET_SOP_INSTANCE_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				ConsolPackage.Literals.SERIES_ACT, ConsolPackage.Literals.SERIES_ACT.getEAllOperations().get(57));
+				ConsolPackage.Literals.SERIES_ACT, ConsolPackage.Literals.SERIES_ACT.getEAllOperations().get(59));
 			try {
 				GET_SOP_INSTANCE_OBSERVATION__EOCL_QRY = helper.createQuery(GET_SOP_INSTANCE_OBSERVATION__EOCL_EXP);
 			} catch (ParserException pe) {

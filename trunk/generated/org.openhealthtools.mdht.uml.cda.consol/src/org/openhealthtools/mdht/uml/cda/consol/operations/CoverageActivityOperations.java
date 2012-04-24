@@ -90,6 +90,7 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateCoverageActivityTemplateId(CoverageActivity coverageActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_COVERAGE_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.COVERAGE_ACTIVITY);
@@ -107,6 +108,7 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 					ConsolValidator.COVERAGE_ACTIVITY__COVERAGE_ACTIVITY_TEMPLATE_ID,
 					ConsolPlugin.INSTANCE.getString("CoverageActivityTemplateId"), new Object[] { coverageActivity }));
 			}
+
 			return false;
 		}
 		return true;
@@ -145,6 +147,7 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateCoverageActivityClassCode(CoverageActivity coverageActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_COVERAGE_ACTIVITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.COVERAGE_ACTIVITY);
@@ -162,6 +165,7 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 					ConsolValidator.COVERAGE_ACTIVITY__COVERAGE_ACTIVITY_CLASS_CODE,
 					ConsolPlugin.INSTANCE.getString("CoverageActivityClassCode"), new Object[] { coverageActivity }));
 			}
+
 			return false;
 		}
 		return true;
@@ -204,6 +208,7 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateCoverageActivityCode(CoverageActivity coverageActivity, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_COVERAGE_ACTIVITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.COVERAGE_ACTIVITY);
@@ -221,6 +226,7 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 					ConsolValidator.COVERAGE_ACTIVITY__COVERAGE_ACTIVITY_CODE,
 					ConsolPlugin.INSTANCE.getString("CoverageActivityCode"), new Object[] { coverageActivity }));
 			}
+
 			return false;
 		}
 		return true;
@@ -259,6 +265,7 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateCoverageActivityId(CoverageActivity coverageActivity, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_COVERAGE_ACTIVITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.COVERAGE_ACTIVITY);
@@ -275,6 +282,7 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 					ConsolValidator.COVERAGE_ACTIVITY__COVERAGE_ACTIVITY_ID,
 					ConsolPlugin.INSTANCE.getString("CoverageActivityId"), new Object[] { coverageActivity }));
 			}
+
 			return false;
 		}
 		return true;
@@ -313,6 +321,7 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateCoverageActivityMoodCode(CoverageActivity coverageActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_COVERAGE_ACTIVITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.COVERAGE_ACTIVITY);
@@ -330,6 +339,7 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 					ConsolValidator.COVERAGE_ACTIVITY__COVERAGE_ACTIVITY_MOOD_CODE,
 					ConsolPlugin.INSTANCE.getString("CoverageActivityMoodCode"), new Object[] { coverageActivity }));
 			}
+
 			return false;
 		}
 		return true;
@@ -371,6 +381,7 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateCoverageActivityStatusCode(CoverageActivity coverageActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_COVERAGE_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.COVERAGE_ACTIVITY);
@@ -388,6 +399,7 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 					ConsolValidator.COVERAGE_ACTIVITY__COVERAGE_ACTIVITY_STATUS_CODE,
 					ConsolPlugin.INSTANCE.getString("CoverageActivityStatusCode"), new Object[] { coverageActivity }));
 			}
+
 			return false;
 		}
 		return true;
@@ -426,6 +438,7 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateCoverageActivityPolicyActivity(CoverageActivity coverageActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_COVERAGE_ACTIVITY_POLICY_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.COVERAGE_ACTIVITY);
@@ -444,6 +457,7 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 					ConsolPlugin.INSTANCE.getString("CoverageActivityPolicyActivity"),
 					new Object[] { coverageActivity }));
 			}
+
 			return false;
 		}
 		return true;
@@ -483,7 +497,7 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.COVERAGE_ACTIVITY,
-				ConsolPackage.Literals.COVERAGE_ACTIVITY.getEAllOperations().get(56));
+				ConsolPackage.Literals.COVERAGE_ACTIVITY.getEAllOperations().get(58));
 			try {
 				GET_POLICY_ACTIVITIES__EOCL_QRY = helper.createQuery(GET_POLICY_ACTIVITIES__EOCL_EXP);
 			} catch (ParserException pe) {

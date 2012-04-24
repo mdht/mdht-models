@@ -89,6 +89,7 @@ public class ResultsSectionEntriesOptionalOperations extends SectionOperations {
 	public static boolean validateResultsSectionEntriesOptionalTemplateId(
 			ResultsSectionEntriesOptional resultsSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_RESULTS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.RESULTS_SECTION_ENTRIES_OPTIONAL);
@@ -107,6 +108,7 @@ public class ResultsSectionEntriesOptionalOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("ResultsSectionEntriesOptionalTemplateId"),
 					new Object[] { resultsSectionEntriesOptional }));
 			}
+
 			return false;
 		}
 		return true;
@@ -150,6 +152,7 @@ public class ResultsSectionEntriesOptionalOperations extends SectionOperations {
 	public static boolean validateResultsSectionEntriesOptionalCode(
 			ResultsSectionEntriesOptional resultsSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_RESULTS_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.RESULTS_SECTION_ENTRIES_OPTIONAL);
@@ -168,6 +171,7 @@ public class ResultsSectionEntriesOptionalOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("ResultsSectionEntriesOptionalCode"),
 					new Object[] { resultsSectionEntriesOptional }));
 			}
+
 			return false;
 		}
 		return true;
@@ -207,6 +211,7 @@ public class ResultsSectionEntriesOptionalOperations extends SectionOperations {
 	public static boolean validateResultsSectionEntriesOptionalTitle(
 			ResultsSectionEntriesOptional resultsSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_RESULTS_SECTION_ENTRIES_OPTIONAL_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.RESULTS_SECTION_ENTRIES_OPTIONAL);
@@ -225,6 +230,7 @@ public class ResultsSectionEntriesOptionalOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("ResultsSectionEntriesOptionalTitle"),
 					new Object[] { resultsSectionEntriesOptional }));
 			}
+
 			return false;
 		}
 		return true;
@@ -264,6 +270,7 @@ public class ResultsSectionEntriesOptionalOperations extends SectionOperations {
 	public static boolean validateResultsSectionEntriesOptionalText(
 			ResultsSectionEntriesOptional resultsSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_RESULTS_SECTION_ENTRIES_OPTIONAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.RESULTS_SECTION_ENTRIES_OPTIONAL);
@@ -282,6 +289,7 @@ public class ResultsSectionEntriesOptionalOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("ResultsSectionEntriesOptionalText"),
 					new Object[] { resultsSectionEntriesOptional }));
 			}
+
 			return false;
 		}
 		return true;
@@ -321,6 +329,7 @@ public class ResultsSectionEntriesOptionalOperations extends SectionOperations {
 	public static boolean validateResultsSectionEntriesOptionalResultOrganizer(
 			ResultsSectionEntriesOptional resultsSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_RESULTS_SECTION_ENTRIES_OPTIONAL_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.RESULTS_SECTION_ENTRIES_OPTIONAL);
@@ -341,6 +350,7 @@ public class ResultsSectionEntriesOptionalOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("ResultsSectionEntriesOptionalResultOrganizer"),
 					new Object[] { resultsSectionEntriesOptional }));
 			}
+
 			return false;
 		}
 		return true;

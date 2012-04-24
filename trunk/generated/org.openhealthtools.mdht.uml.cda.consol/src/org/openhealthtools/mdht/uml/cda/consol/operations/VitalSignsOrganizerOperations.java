@@ -91,6 +91,7 @@ public class VitalSignsOrganizerOperations extends OrganizerOperations {
 	 */
 	public static boolean validateVitalSignsOrganizerTemplateId(VitalSignsOrganizer vitalSignsOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_VITAL_SIGNS_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.VITAL_SIGNS_ORGANIZER);
@@ -109,6 +110,7 @@ public class VitalSignsOrganizerOperations extends OrganizerOperations {
 					ConsolPlugin.INSTANCE.getString("VitalSignsOrganizerTemplateId"),
 					new Object[] { vitalSignsOrganizer }));
 			}
+
 			return false;
 		}
 		return true;
@@ -147,6 +149,7 @@ public class VitalSignsOrganizerOperations extends OrganizerOperations {
 	 */
 	public static boolean validateVitalSignsOrganizerClassCode(VitalSignsOrganizer vitalSignsOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_VITAL_SIGNS_ORGANIZER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.VITAL_SIGNS_ORGANIZER);
@@ -165,6 +168,7 @@ public class VitalSignsOrganizerOperations extends OrganizerOperations {
 					ConsolPlugin.INSTANCE.getString("VitalSignsOrganizerClassCode"),
 					new Object[] { vitalSignsOrganizer }));
 			}
+
 			return false;
 		}
 		return true;
@@ -203,6 +207,7 @@ public class VitalSignsOrganizerOperations extends OrganizerOperations {
 	 */
 	public static boolean validateVitalSignsOrganizerMoodCode(VitalSignsOrganizer vitalSignsOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_VITAL_SIGNS_ORGANIZER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.VITAL_SIGNS_ORGANIZER);
@@ -221,6 +226,7 @@ public class VitalSignsOrganizerOperations extends OrganizerOperations {
 					ConsolPlugin.INSTANCE.getString("VitalSignsOrganizerMoodCode"),
 					new Object[] { vitalSignsOrganizer }));
 			}
+
 			return false;
 		}
 		return true;
@@ -259,6 +265,7 @@ public class VitalSignsOrganizerOperations extends OrganizerOperations {
 	 */
 	public static boolean validateVitalSignsOrganizerId(VitalSignsOrganizer vitalSignsOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_VITAL_SIGNS_ORGANIZER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.VITAL_SIGNS_ORGANIZER);
@@ -276,6 +283,7 @@ public class VitalSignsOrganizerOperations extends OrganizerOperations {
 					ConsolValidator.VITAL_SIGNS_ORGANIZER__VITAL_SIGNS_ORGANIZER_ID,
 					ConsolPlugin.INSTANCE.getString("VitalSignsOrganizerId"), new Object[] { vitalSignsOrganizer }));
 			}
+
 			return false;
 		}
 		return true;
@@ -318,6 +326,7 @@ public class VitalSignsOrganizerOperations extends OrganizerOperations {
 	 */
 	public static boolean validateVitalSignsOrganizerCode(VitalSignsOrganizer vitalSignsOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_VITAL_SIGNS_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.VITAL_SIGNS_ORGANIZER);
@@ -335,6 +344,7 @@ public class VitalSignsOrganizerOperations extends OrganizerOperations {
 					ConsolValidator.VITAL_SIGNS_ORGANIZER__VITAL_SIGNS_ORGANIZER_CODE,
 					ConsolPlugin.INSTANCE.getString("VitalSignsOrganizerCode"), new Object[] { vitalSignsOrganizer }));
 			}
+
 			return false;
 		}
 		return true;
@@ -376,6 +386,7 @@ public class VitalSignsOrganizerOperations extends OrganizerOperations {
 	 */
 	public static boolean validateVitalSignsOrganizerStatusCode(VitalSignsOrganizer vitalSignsOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_VITAL_SIGNS_ORGANIZER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.VITAL_SIGNS_ORGANIZER);
@@ -394,6 +405,7 @@ public class VitalSignsOrganizerOperations extends OrganizerOperations {
 					ConsolPlugin.INSTANCE.getString("VitalSignsOrganizerStatusCode"),
 					new Object[] { vitalSignsOrganizer }));
 			}
+
 			return false;
 		}
 		return true;
@@ -432,6 +444,7 @@ public class VitalSignsOrganizerOperations extends OrganizerOperations {
 	 */
 	public static boolean validateVitalSignsOrganizerEffectiveTime(VitalSignsOrganizer vitalSignsOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_VITAL_SIGNS_ORGANIZER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.VITAL_SIGNS_ORGANIZER);
@@ -450,6 +463,7 @@ public class VitalSignsOrganizerOperations extends OrganizerOperations {
 					ConsolPlugin.INSTANCE.getString("VitalSignsOrganizerEffectiveTime"),
 					new Object[] { vitalSignsOrganizer }));
 			}
+
 			return false;
 		}
 		return true;
@@ -488,6 +502,7 @@ public class VitalSignsOrganizerOperations extends OrganizerOperations {
 	 */
 	public static boolean validateVitalSignsOrganizerVitalSignObservation(VitalSignsOrganizer vitalSignsOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_VITAL_SIGNS_ORGANIZER_VITAL_SIGN_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.VITAL_SIGNS_ORGANIZER);
@@ -506,6 +521,7 @@ public class VitalSignsOrganizerOperations extends OrganizerOperations {
 					ConsolPlugin.INSTANCE.getString("VitalSignsOrganizerVitalSignObservation"),
 					new Object[] { vitalSignsOrganizer }));
 			}
+
 			return false;
 		}
 		return true;
@@ -545,7 +561,7 @@ public class VitalSignsOrganizerOperations extends OrganizerOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.VITAL_SIGNS_ORGANIZER,
-				ConsolPackage.Literals.VITAL_SIGNS_ORGANIZER.getEAllOperations().get(58));
+				ConsolPackage.Literals.VITAL_SIGNS_ORGANIZER.getEAllOperations().get(60));
 			try {
 				GET_VITAL_SIGN_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_VITAL_SIGN_OBSERVATIONS__EOCL_EXP);
 			} catch (ParserException pe) {

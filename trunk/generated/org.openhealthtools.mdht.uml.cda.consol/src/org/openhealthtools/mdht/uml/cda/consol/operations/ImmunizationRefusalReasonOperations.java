@@ -83,6 +83,7 @@ public class ImmunizationRefusalReasonOperations extends ClinicalStatementOperat
 	public static boolean validateImmunizationRefusalReasonTemplateId(
 			ImmunizationRefusalReason immunizationRefusalReason, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_IMMUNIZATION_REFUSAL_REASON_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.IMMUNIZATION_REFUSAL_REASON);
@@ -101,6 +102,7 @@ public class ImmunizationRefusalReasonOperations extends ClinicalStatementOperat
 					ConsolPlugin.INSTANCE.getString("ImmunizationRefusalReasonTemplateId"),
 					new Object[] { immunizationRefusalReason }));
 			}
+
 			return false;
 		}
 		return true;
@@ -140,6 +142,7 @@ public class ImmunizationRefusalReasonOperations extends ClinicalStatementOperat
 	public static boolean validateImmunizationRefusalReasonClassCode(
 			ImmunizationRefusalReason immunizationRefusalReason, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_IMMUNIZATION_REFUSAL_REASON_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.IMMUNIZATION_REFUSAL_REASON);
@@ -158,6 +161,7 @@ public class ImmunizationRefusalReasonOperations extends ClinicalStatementOperat
 					ConsolPlugin.INSTANCE.getString("ImmunizationRefusalReasonClassCode"),
 					new Object[] { immunizationRefusalReason }));
 			}
+
 			return false;
 		}
 		return true;
@@ -202,6 +206,7 @@ public class ImmunizationRefusalReasonOperations extends ClinicalStatementOperat
 
 	public static boolean validateImmunizationRefusalReasonCode(ImmunizationRefusalReason immunizationRefusalReason,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_IMMUNIZATION_REFUSAL_REASON_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.IMMUNIZATION_REFUSAL_REASON);
@@ -220,6 +225,7 @@ public class ImmunizationRefusalReasonOperations extends ClinicalStatementOperat
 					ConsolPlugin.INSTANCE.getString("ImmunizationRefusalReasonCode"),
 					new Object[] { immunizationRefusalReason }));
 			}
+
 			return false;
 		}
 		return true;
@@ -258,6 +264,7 @@ public class ImmunizationRefusalReasonOperations extends ClinicalStatementOperat
 	 */
 	public static boolean validateImmunizationRefusalReasonId(ImmunizationRefusalReason immunizationRefusalReason,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_IMMUNIZATION_REFUSAL_REASON_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.IMMUNIZATION_REFUSAL_REASON);
@@ -276,6 +283,7 @@ public class ImmunizationRefusalReasonOperations extends ClinicalStatementOperat
 					ConsolPlugin.INSTANCE.getString("ImmunizationRefusalReasonId"),
 					new Object[] { immunizationRefusalReason }));
 			}
+
 			return false;
 		}
 		return true;
@@ -315,6 +323,7 @@ public class ImmunizationRefusalReasonOperations extends ClinicalStatementOperat
 	public static boolean validateImmunizationRefusalReasonMoodCode(
 			ImmunizationRefusalReason immunizationRefusalReason, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_IMMUNIZATION_REFUSAL_REASON_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.IMMUNIZATION_REFUSAL_REASON);
@@ -333,6 +342,7 @@ public class ImmunizationRefusalReasonOperations extends ClinicalStatementOperat
 					ConsolPlugin.INSTANCE.getString("ImmunizationRefusalReasonMoodCode"),
 					new Object[] { immunizationRefusalReason }));
 			}
+
 			return false;
 		}
 		return true;
@@ -375,6 +385,7 @@ public class ImmunizationRefusalReasonOperations extends ClinicalStatementOperat
 	public static boolean validateImmunizationRefusalReasonStatusCode(
 			ImmunizationRefusalReason immunizationRefusalReason, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_IMMUNIZATION_REFUSAL_REASON_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.IMMUNIZATION_REFUSAL_REASON);
@@ -393,6 +404,7 @@ public class ImmunizationRefusalReasonOperations extends ClinicalStatementOperat
 					ConsolPlugin.INSTANCE.getString("ImmunizationRefusalReasonStatusCode"),
 					new Object[] { immunizationRefusalReason }));
 			}
+
 			return false;
 		}
 		return true;

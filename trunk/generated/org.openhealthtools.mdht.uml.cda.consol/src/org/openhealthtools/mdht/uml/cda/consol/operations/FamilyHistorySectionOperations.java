@@ -88,6 +88,7 @@ public class FamilyHistorySectionOperations extends SectionOperations {
 	 */
 	public static boolean validateFamilyHistorySectionTemplateId(FamilyHistorySection familyHistorySection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_FAMILY_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.FAMILY_HISTORY_SECTION);
@@ -106,6 +107,7 @@ public class FamilyHistorySectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("FamilyHistorySectionTemplateId"),
 					new Object[] { familyHistorySection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -148,6 +150,7 @@ public class FamilyHistorySectionOperations extends SectionOperations {
 	 */
 	public static boolean validateFamilyHistorySectionCode(FamilyHistorySection familyHistorySection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_FAMILY_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.FAMILY_HISTORY_SECTION);
@@ -165,6 +168,7 @@ public class FamilyHistorySectionOperations extends SectionOperations {
 					ConsolValidator.FAMILY_HISTORY_SECTION__FAMILY_HISTORY_SECTION_CODE,
 					ConsolPlugin.INSTANCE.getString("FamilyHistorySectionCode"), new Object[] { familyHistorySection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -203,6 +207,7 @@ public class FamilyHistorySectionOperations extends SectionOperations {
 	 */
 	public static boolean validateFamilyHistorySectionTitle(FamilyHistorySection familyHistorySection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_FAMILY_HISTORY_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.FAMILY_HISTORY_SECTION);
@@ -220,6 +225,7 @@ public class FamilyHistorySectionOperations extends SectionOperations {
 					ConsolValidator.FAMILY_HISTORY_SECTION__FAMILY_HISTORY_SECTION_TITLE,
 					ConsolPlugin.INSTANCE.getString("FamilyHistorySectionTitle"), new Object[] { familyHistorySection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -258,6 +264,7 @@ public class FamilyHistorySectionOperations extends SectionOperations {
 	 */
 	public static boolean validateFamilyHistorySectionText(FamilyHistorySection familyHistorySection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_FAMILY_HISTORY_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.FAMILY_HISTORY_SECTION);
@@ -275,6 +282,7 @@ public class FamilyHistorySectionOperations extends SectionOperations {
 					ConsolValidator.FAMILY_HISTORY_SECTION__FAMILY_HISTORY_SECTION_TEXT,
 					ConsolPlugin.INSTANCE.getString("FamilyHistorySectionText"), new Object[] { familyHistorySection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -313,6 +321,7 @@ public class FamilyHistorySectionOperations extends SectionOperations {
 	 */
 	public static boolean validateFamilyHistorySectionFamilyHistory(FamilyHistorySection familyHistorySection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_FAMILY_HISTORY_SECTION_FAMILY_HISTORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.FAMILY_HISTORY_SECTION);
@@ -331,6 +340,7 @@ public class FamilyHistorySectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("FamilyHistorySectionFamilyHistory"),
 					new Object[] { familyHistorySection }));
 			}
+
 			return false;
 		}
 		return true;

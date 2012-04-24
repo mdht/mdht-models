@@ -81,6 +81,7 @@ public class PostoperativeDiagnosisSectionOperations extends SectionOperations {
 	public static boolean validatePostoperativeDiagnosisSectionTemplateId(
 			PostoperativeDiagnosisSection postoperativeDiagnosisSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_POSTOPERATIVE_DIAGNOSIS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.POSTOPERATIVE_DIAGNOSIS_SECTION);
@@ -99,6 +100,7 @@ public class PostoperativeDiagnosisSectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("PostoperativeDiagnosisSectionTemplateId"),
 					new Object[] { postoperativeDiagnosisSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -142,6 +144,7 @@ public class PostoperativeDiagnosisSectionOperations extends SectionOperations {
 	public static boolean validatePostoperativeDiagnosisSectionCode(
 			PostoperativeDiagnosisSection postoperativeDiagnosisSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_POSTOPERATIVE_DIAGNOSIS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.POSTOPERATIVE_DIAGNOSIS_SECTION);
@@ -160,6 +163,7 @@ public class PostoperativeDiagnosisSectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("PostoperativeDiagnosisSectionCode"),
 					new Object[] { postoperativeDiagnosisSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -199,6 +203,7 @@ public class PostoperativeDiagnosisSectionOperations extends SectionOperations {
 	public static boolean validatePostoperativeDiagnosisSectionText(
 			PostoperativeDiagnosisSection postoperativeDiagnosisSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_POSTOPERATIVE_DIAGNOSIS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.POSTOPERATIVE_DIAGNOSIS_SECTION);
@@ -217,6 +222,7 @@ public class PostoperativeDiagnosisSectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("PostoperativeDiagnosisSectionText"),
 					new Object[] { postoperativeDiagnosisSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -256,6 +262,7 @@ public class PostoperativeDiagnosisSectionOperations extends SectionOperations {
 	public static boolean validatePostoperativeDiagnosisSectionTitle(
 			PostoperativeDiagnosisSection postoperativeDiagnosisSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_POSTOPERATIVE_DIAGNOSIS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.POSTOPERATIVE_DIAGNOSIS_SECTION);
@@ -274,6 +281,7 @@ public class PostoperativeDiagnosisSectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("PostoperativeDiagnosisSectionTitle"),
 					new Object[] { postoperativeDiagnosisSection }));
 			}
+
 			return false;
 		}
 		return true;

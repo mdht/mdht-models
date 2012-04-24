@@ -82,6 +82,7 @@ public class AllergyStatusObservationOperations extends ClinicalStatementOperati
 	 */
 	public static boolean validateAllergyStatusObservationTemplateId(AllergyStatusObservation allergyStatusObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ALLERGY_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ALLERGY_STATUS_OBSERVATION);
@@ -100,6 +101,7 @@ public class AllergyStatusObservationOperations extends ClinicalStatementOperati
 					ConsolPlugin.INSTANCE.getString("AllergyStatusObservationTemplateId"),
 					new Object[] { allergyStatusObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -138,6 +140,7 @@ public class AllergyStatusObservationOperations extends ClinicalStatementOperati
 	 */
 	public static boolean validateAllergyStatusObservationClassCode(AllergyStatusObservation allergyStatusObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ALLERGY_STATUS_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ALLERGY_STATUS_OBSERVATION);
@@ -156,6 +159,7 @@ public class AllergyStatusObservationOperations extends ClinicalStatementOperati
 					ConsolPlugin.INSTANCE.getString("AllergyStatusObservationClassCode"),
 					new Object[] { allergyStatusObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -194,6 +198,7 @@ public class AllergyStatusObservationOperations extends ClinicalStatementOperati
 	 */
 	public static boolean validateAllergyStatusObservationMoodCode(AllergyStatusObservation allergyStatusObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ALLERGY_STATUS_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ALLERGY_STATUS_OBSERVATION);
@@ -212,6 +217,7 @@ public class AllergyStatusObservationOperations extends ClinicalStatementOperati
 					ConsolPlugin.INSTANCE.getString("AllergyStatusObservationMoodCode"),
 					new Object[] { allergyStatusObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -254,6 +260,7 @@ public class AllergyStatusObservationOperations extends ClinicalStatementOperati
 	 */
 	public static boolean validateAllergyStatusObservationCode(AllergyStatusObservation allergyStatusObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ALLERGY_STATUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ALLERGY_STATUS_OBSERVATION);
@@ -272,6 +279,7 @@ public class AllergyStatusObservationOperations extends ClinicalStatementOperati
 					ConsolPlugin.INSTANCE.getString("AllergyStatusObservationCode"),
 					new Object[] { allergyStatusObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -313,6 +321,7 @@ public class AllergyStatusObservationOperations extends ClinicalStatementOperati
 	 */
 	public static boolean validateAllergyStatusObservationStatusCode(AllergyStatusObservation allergyStatusObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ALLERGY_STATUS_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ALLERGY_STATUS_OBSERVATION);
@@ -331,6 +340,7 @@ public class AllergyStatusObservationOperations extends ClinicalStatementOperati
 					ConsolPlugin.INSTANCE.getString("AllergyStatusObservationStatusCode"),
 					new Object[] { allergyStatusObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -373,6 +383,7 @@ public class AllergyStatusObservationOperations extends ClinicalStatementOperati
 	 */
 	public static boolean validateAllergyStatusObservationValue(AllergyStatusObservation allergyStatusObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ALLERGY_STATUS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ALLERGY_STATUS_OBSERVATION);
@@ -391,6 +402,7 @@ public class AllergyStatusObservationOperations extends ClinicalStatementOperati
 					ConsolPlugin.INSTANCE.getString("AllergyStatusObservationValue"),
 					new Object[] { allergyStatusObservation }));
 			}
+
 			return false;
 		}
 		return true;

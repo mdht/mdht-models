@@ -78,6 +78,7 @@ public class MedicationDispenseAssignedEntityOperations extends AssignedEntityOp
 	public static boolean validateMedicationDispenseAssignedEntityAddr(
 			MedicationDispenseAssignedEntity medicationDispenseAssignedEntity, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_DISPENSE_ASSIGNED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATION_DISPENSE_ASSIGNED_ENTITY);
@@ -96,6 +97,7 @@ public class MedicationDispenseAssignedEntityOperations extends AssignedEntityOp
 					ConsolPlugin.INSTANCE.getString("MedicationDispenseAssignedEntityAddr"),
 					new Object[] { medicationDispenseAssignedEntity }));
 			}
+
 			return false;
 		}
 		return true;

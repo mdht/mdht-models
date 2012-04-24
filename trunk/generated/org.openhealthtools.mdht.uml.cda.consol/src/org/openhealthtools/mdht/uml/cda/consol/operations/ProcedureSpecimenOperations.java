@@ -79,6 +79,7 @@ public class ProcedureSpecimenOperations extends SpecimenOperations {
 	 */
 	public static boolean validateProcedureSpecimenSpecimenRole(ProcedureSpecimen procedureSpecimen,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_SPECIMEN_SPECIMEN_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_SPECIMEN);
@@ -97,6 +98,7 @@ public class ProcedureSpecimenOperations extends SpecimenOperations {
 					ConsolPlugin.INSTANCE.getString("ProcedureSpecimenSpecimenRole"),
 					new Object[] { procedureSpecimen }));
 			}
+
 			return false;
 		}
 		return true;
@@ -135,6 +137,7 @@ public class ProcedureSpecimenOperations extends SpecimenOperations {
 	 */
 	public static boolean validateProcedureSpecimenSpecimentRoleId(ProcedureSpecimen procedureSpecimen,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_SPECIMEN_SPECIMENT_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_SPECIMEN);
@@ -153,6 +156,7 @@ public class ProcedureSpecimenOperations extends SpecimenOperations {
 					ConsolPlugin.INSTANCE.getString("ProcedureSpecimenSpecimentRoleId"),
 					new Object[] { procedureSpecimen }));
 			}
+
 			return false;
 		}
 		return true;
@@ -191,6 +195,7 @@ public class ProcedureSpecimenOperations extends SpecimenOperations {
 	 */
 	public static boolean validateProcedureSpecimenTemplateId(ProcedureSpecimen procedureSpecimen,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_SPECIMEN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_SPECIMEN);
@@ -208,6 +213,7 @@ public class ProcedureSpecimenOperations extends SpecimenOperations {
 					ConsolValidator.PROCEDURE_SPECIMEN__PROCEDURE_SPECIMEN_TEMPLATE_ID,
 					ConsolPlugin.INSTANCE.getString("ProcedureSpecimenTemplateId"), new Object[] { procedureSpecimen }));
 			}
+
 			return false;
 		}
 		return true;

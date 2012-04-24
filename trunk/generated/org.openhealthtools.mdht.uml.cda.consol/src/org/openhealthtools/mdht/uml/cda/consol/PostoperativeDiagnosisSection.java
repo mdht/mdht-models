@@ -18,7 +18,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getPostoperativeDiagnosisSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' templateId.root='2.16.840.1.113883.10.20.22.2.35' code.displayName='Postoperative Diagnosis' constraints.validation.error='PostoperativeDiagnosisSectionTemplateId PostoperativeDiagnosisSectionCode PostoperativeDiagnosisSectionText PostoperativeDiagnosisSectionTitle' code.codeSystemName='LOINC' code.code='10218-6'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PostoperativeDiagnosisSectionTemplateId PostoperativeDiagnosisSectionCode PostoperativeDiagnosisSectionText PostoperativeDiagnosisSectionTitle' templateId.root='2.16.840.1.113883.10.20.22.2.35' code.codeSystem='2.16.840.1.113883.6.1' code.displayName='Postoperative Diagnosis' code.codeSystemName='LOINC' code.code='10218-6'"
  * @generated
  */
 public interface PostoperativeDiagnosisSection extends Section {

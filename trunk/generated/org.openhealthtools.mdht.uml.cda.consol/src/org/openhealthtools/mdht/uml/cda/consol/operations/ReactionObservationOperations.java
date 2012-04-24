@@ -106,6 +106,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateReactionObservationTextReference(ReactionObservation reactionObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_REACTION_OBSERVATION_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REACTION_OBSERVATION);
@@ -124,6 +125,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 					ConsolPlugin.INSTANCE.getString("ReactionObservationTextReference"),
 					new Object[] { reactionObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -162,6 +164,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateReactionObservationReferenceValue(ReactionObservation reactionObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_REACTION_OBSERVATION_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REACTION_OBSERVATION);
@@ -180,6 +183,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 					ConsolPlugin.INSTANCE.getString("ReactionObservationReferenceValue"),
 					new Object[] { reactionObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -218,6 +222,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateReactionObservationEffectiveTimeLow(ReactionObservation reactionObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_REACTION_OBSERVATION_EFFECTIVE_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REACTION_OBSERVATION);
@@ -236,6 +241,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 					ConsolPlugin.INSTANCE.getString("ReactionObservationEffectiveTimeLow"),
 					new Object[] { reactionObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -274,6 +280,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateReactionObservationEffectiveTimeHigh(ReactionObservation reactionObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_REACTION_OBSERVATION_EFFECTIVE_TIME_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REACTION_OBSERVATION);
@@ -292,6 +299,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 					ConsolPlugin.INSTANCE.getString("ReactionObservationEffectiveTimeHigh"),
 					new Object[] { reactionObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -330,6 +338,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateReactionObservationSeverityObservationInversionInd(
 			ReactionObservation reactionObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_REACTION_OBSERVATION_SEVERITY_OBSERVATION_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REACTION_OBSERVATION);
@@ -349,6 +358,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 					ConsolPlugin.INSTANCE.getString("ReactionObservationSeverityObservationInversionInd"),
 					new Object[] { reactionObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -387,6 +397,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateReactionObservationProcedureActivityProcedureInversionInd(
 			ReactionObservation reactionObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_REACTION_OBSERVATION_PROCEDURE_ACTIVITY_PROCEDURE_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REACTION_OBSERVATION);
@@ -407,6 +418,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 					ConsolPlugin.INSTANCE.getString("ReactionObservationProcedureActivityProcedureInversionInd"),
 					new Object[] { reactionObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -445,6 +457,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateReactionObservationMedicationActivityInversionInd(
 			ReactionObservation reactionObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_REACTION_OBSERVATION_MEDICATION_ACTIVITY_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REACTION_OBSERVATION);
@@ -464,6 +477,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 					ConsolPlugin.INSTANCE.getString("ReactionObservationMedicationActivityInversionInd"),
 					new Object[] { reactionObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -502,6 +516,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateReactionObservationTemplateId(ReactionObservation reactionObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_REACTION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REACTION_OBSERVATION);
@@ -520,6 +535,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 					ConsolPlugin.INSTANCE.getString("ReactionObservationTemplateId"),
 					new Object[] { reactionObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -558,6 +574,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateReactionObservationClassCode(ReactionObservation reactionObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_REACTION_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REACTION_OBSERVATION);
@@ -576,6 +593,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 					ConsolPlugin.INSTANCE.getString("ReactionObservationClassCode"),
 					new Object[] { reactionObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -614,6 +632,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateReactionObservationMoodCode(ReactionObservation reactionObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_REACTION_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REACTION_OBSERVATION);
@@ -632,6 +651,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 					ConsolPlugin.INSTANCE.getString("ReactionObservationMoodCode"),
 					new Object[] { reactionObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -670,6 +690,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateReactionObservationId(ReactionObservation reactionObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_REACTION_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REACTION_OBSERVATION);
@@ -687,6 +708,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 					ConsolValidator.REACTION_OBSERVATION__REACTION_OBSERVATION_ID,
 					ConsolPlugin.INSTANCE.getString("ReactionObservationId"), new Object[] { reactionObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -725,6 +747,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateReactionObservationCode(ReactionObservation reactionObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_REACTION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REACTION_OBSERVATION);
@@ -742,6 +765,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 					ConsolValidator.REACTION_OBSERVATION__REACTION_OBSERVATION_CODE,
 					ConsolPlugin.INSTANCE.getString("ReactionObservationCode"), new Object[] { reactionObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -780,6 +804,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateReactionObservationText(ReactionObservation reactionObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_REACTION_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REACTION_OBSERVATION);
@@ -797,6 +822,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 					ConsolValidator.REACTION_OBSERVATION__REACTION_OBSERVATION_TEXT,
 					ConsolPlugin.INSTANCE.getString("ReactionObservationText"), new Object[] { reactionObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -838,6 +864,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateReactionObservationStatusCode(ReactionObservation reactionObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_REACTION_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REACTION_OBSERVATION);
@@ -856,6 +883,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 					ConsolPlugin.INSTANCE.getString("ReactionObservationStatusCode"),
 					new Object[] { reactionObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -894,6 +922,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateReactionObservationEffectiveTime(ReactionObservation reactionObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_REACTION_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REACTION_OBSERVATION);
@@ -912,6 +941,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 					ConsolPlugin.INSTANCE.getString("ReactionObservationEffectiveTime"),
 					new Object[] { reactionObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -954,6 +984,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateReactionObservationValue(ReactionObservation reactionObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_REACTION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REACTION_OBSERVATION);
@@ -971,6 +1002,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 					ConsolValidator.REACTION_OBSERVATION__REACTION_OBSERVATION_VALUE,
 					ConsolPlugin.INSTANCE.getString("ReactionObservationValue"), new Object[] { reactionObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -1009,6 +1041,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateReactionObservationSeverityObservation(ReactionObservation reactionObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_REACTION_OBSERVATION_SEVERITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REACTION_OBSERVATION);
@@ -1027,6 +1060,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 					ConsolPlugin.INSTANCE.getString("ReactionObservationSeverityObservation"),
 					new Object[] { reactionObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -1065,6 +1099,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateReactionObservationProcedureActivityProcedure(
 			ReactionObservation reactionObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_REACTION_OBSERVATION_PROCEDURE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REACTION_OBSERVATION);
@@ -1084,6 +1119,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 					ConsolPlugin.INSTANCE.getString("ReactionObservationProcedureActivityProcedure"),
 					new Object[] { reactionObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -1122,6 +1158,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateReactionObservationMedicationActivity(ReactionObservation reactionObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_REACTION_OBSERVATION_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REACTION_OBSERVATION);
@@ -1140,6 +1177,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 					ConsolPlugin.INSTANCE.getString("ReactionObservationMedicationActivity"),
 					new Object[] { reactionObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -1179,7 +1217,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.REACTION_OBSERVATION,
-				ConsolPackage.Literals.REACTION_OBSERVATION.getEAllOperations().get(68));
+				ConsolPackage.Literals.REACTION_OBSERVATION.getEAllOperations().get(70));
 			try {
 				GET_SEVERITY_OBSERVATION__EOCL_QRY = helper.createQuery(GET_SEVERITY_OBSERVATION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1225,7 +1263,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.REACTION_OBSERVATION,
-				ConsolPackage.Literals.REACTION_OBSERVATION.getEAllOperations().get(69));
+				ConsolPackage.Literals.REACTION_OBSERVATION.getEAllOperations().get(71));
 			try {
 				GET_PROCEDURE_ACTIVITY_PROCEDURES__EOCL_QRY = helper.createQuery(GET_PROCEDURE_ACTIVITY_PROCEDURES__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1272,7 +1310,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.REACTION_OBSERVATION,
-				ConsolPackage.Literals.REACTION_OBSERVATION.getEAllOperations().get(70));
+				ConsolPackage.Literals.REACTION_OBSERVATION.getEAllOperations().get(72));
 			try {
 				GET_MEDICATION_ACTIVITIES__EOCL_QRY = helper.createQuery(GET_MEDICATION_ACTIVITIES__EOCL_EXP);
 			} catch (ParserException pe) {

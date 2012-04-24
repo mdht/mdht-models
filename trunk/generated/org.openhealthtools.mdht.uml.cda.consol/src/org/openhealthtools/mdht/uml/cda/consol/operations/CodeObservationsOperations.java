@@ -77,6 +77,7 @@ public class CodeObservationsOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateCodeObservationsTemplateId(CodeObservations codeObservations,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CODE_OBSERVATIONS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CODE_OBSERVATIONS);
@@ -94,6 +95,7 @@ public class CodeObservationsOperations extends ClinicalStatementOperations {
 					ConsolValidator.CODE_OBSERVATIONS__CODE_OBSERVATIONS_TEMPLATE_ID,
 					ConsolPlugin.INSTANCE.getString("CodeObservationsTemplateId"), new Object[] { codeObservations }));
 			}
+
 			return false;
 		}
 		return true;

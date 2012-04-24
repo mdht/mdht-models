@@ -84,6 +84,7 @@ public class DICOMObjectCatalogSectionOperations extends SectionOperations {
 	public static boolean validateDICOMObjectCatalogSectionTemplateId(
 			DICOMObjectCatalogSection dicomObjectCatalogSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_DICOM_OBJECT_CATALOG_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DICOM_OBJECT_CATALOG_SECTION);
@@ -102,6 +103,7 @@ public class DICOMObjectCatalogSectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("DICOMObjectCatalogSectionTemplateId"),
 					new Object[] { dicomObjectCatalogSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -144,6 +146,7 @@ public class DICOMObjectCatalogSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateDICOMObjectCatalogSectionCode(DICOMObjectCatalogSection dicomObjectCatalogSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_DICOM_OBJECT_CATALOG_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DICOM_OBJECT_CATALOG_SECTION);
@@ -162,6 +165,7 @@ public class DICOMObjectCatalogSectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("DICOMObjectCatalogSectionCode"),
 					new Object[] { dicomObjectCatalogSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -201,6 +205,7 @@ public class DICOMObjectCatalogSectionOperations extends SectionOperations {
 	public static boolean validateDICOMObjectCatalogSectionStudyAct(
 			DICOMObjectCatalogSection dicomObjectCatalogSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_DICOM_OBJECT_CATALOG_SECTION_STUDY_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DICOM_OBJECT_CATALOG_SECTION);
@@ -219,6 +224,7 @@ public class DICOMObjectCatalogSectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("DICOMObjectCatalogSectionStudyAct"),
 					new Object[] { dicomObjectCatalogSection }));
 			}
+
 			return false;
 		}
 		return true;

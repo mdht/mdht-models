@@ -91,6 +91,7 @@ public class SocialHistorySectionOperations extends SectionOperations {
 	 */
 	public static boolean validateSocialHistorySectionTemplateId(SocialHistorySection socialHistorySection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_SOCIAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SOCIAL_HISTORY_SECTION);
@@ -109,6 +110,7 @@ public class SocialHistorySectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("SocialHistorySectionTemplateId"),
 					new Object[] { socialHistorySection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -151,6 +153,7 @@ public class SocialHistorySectionOperations extends SectionOperations {
 	 */
 	public static boolean validateSocialHistorySectionCode(SocialHistorySection socialHistorySection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_SOCIAL_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SOCIAL_HISTORY_SECTION);
@@ -168,6 +171,7 @@ public class SocialHistorySectionOperations extends SectionOperations {
 					ConsolValidator.SOCIAL_HISTORY_SECTION__SOCIAL_HISTORY_SECTION_CODE,
 					ConsolPlugin.INSTANCE.getString("SocialHistorySectionCode"), new Object[] { socialHistorySection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -206,6 +210,7 @@ public class SocialHistorySectionOperations extends SectionOperations {
 	 */
 	public static boolean validateSocialHistorySectionTitle(SocialHistorySection socialHistorySection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_SOCIAL_HISTORY_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SOCIAL_HISTORY_SECTION);
@@ -223,6 +228,7 @@ public class SocialHistorySectionOperations extends SectionOperations {
 					ConsolValidator.SOCIAL_HISTORY_SECTION__SOCIAL_HISTORY_SECTION_TITLE,
 					ConsolPlugin.INSTANCE.getString("SocialHistorySectionTitle"), new Object[] { socialHistorySection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -261,6 +267,7 @@ public class SocialHistorySectionOperations extends SectionOperations {
 	 */
 	public static boolean validateSocialHistorySectionText(SocialHistorySection socialHistorySection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_SOCIAL_HISTORY_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SOCIAL_HISTORY_SECTION);
@@ -278,6 +285,7 @@ public class SocialHistorySectionOperations extends SectionOperations {
 					ConsolValidator.SOCIAL_HISTORY_SECTION__SOCIAL_HISTORY_SECTION_TEXT,
 					ConsolPlugin.INSTANCE.getString("SocialHistorySectionText"), new Object[] { socialHistorySection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -316,6 +324,7 @@ public class SocialHistorySectionOperations extends SectionOperations {
 	 */
 	public static boolean validateSocialHistorySectionSocialHistoryObservation(
 			SocialHistorySection socialHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_SOCIAL_HISTORY_SECTION_SOCIAL_HISTORY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SOCIAL_HISTORY_SECTION);
@@ -335,6 +344,7 @@ public class SocialHistorySectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("SocialHistorySectionSocialHistoryObservation"),
 					new Object[] { socialHistorySection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -373,6 +383,7 @@ public class SocialHistorySectionOperations extends SectionOperations {
 	 */
 	public static boolean validateSocialHistorySectionPregnancyObservation(SocialHistorySection socialHistorySection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_SOCIAL_HISTORY_SECTION_PREGNANCY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.SOCIAL_HISTORY_SECTION);
@@ -391,6 +402,7 @@ public class SocialHistorySectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("SocialHistorySectionPregnancyObservation"),
 					new Object[] { socialHistorySection }));
 			}
+
 			return false;
 		}
 		return true;

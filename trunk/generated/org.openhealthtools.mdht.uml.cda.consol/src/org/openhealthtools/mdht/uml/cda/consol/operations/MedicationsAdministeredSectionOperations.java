@@ -89,6 +89,7 @@ public class MedicationsAdministeredSectionOperations extends SectionOperations 
 	public static boolean validateMedicationsAdministeredSectionTemplateId(
 			MedicationsAdministeredSection medicationsAdministeredSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATIONS_ADMINISTERED_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATIONS_ADMINISTERED_SECTION);
@@ -107,6 +108,7 @@ public class MedicationsAdministeredSectionOperations extends SectionOperations 
 					ConsolPlugin.INSTANCE.getString("MedicationsAdministeredSectionTemplateId"),
 					new Object[] { medicationsAdministeredSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -150,6 +152,7 @@ public class MedicationsAdministeredSectionOperations extends SectionOperations 
 	public static boolean validateMedicationsAdministeredSectionCode(
 			MedicationsAdministeredSection medicationsAdministeredSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATIONS_ADMINISTERED_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATIONS_ADMINISTERED_SECTION);
@@ -168,6 +171,7 @@ public class MedicationsAdministeredSectionOperations extends SectionOperations 
 					ConsolPlugin.INSTANCE.getString("MedicationsAdministeredSectionCode"),
 					new Object[] { medicationsAdministeredSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -209,6 +213,7 @@ public class MedicationsAdministeredSectionOperations extends SectionOperations 
 	public static boolean validateMedicationsAdministeredSectionText(
 			MedicationsAdministeredSection medicationsAdministeredSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATIONS_ADMINISTERED_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATIONS_ADMINISTERED_SECTION);
@@ -227,6 +232,7 @@ public class MedicationsAdministeredSectionOperations extends SectionOperations 
 					ConsolPlugin.INSTANCE.getString("MedicationsAdministeredSectionText"),
 					new Object[] { medicationsAdministeredSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -268,6 +274,7 @@ public class MedicationsAdministeredSectionOperations extends SectionOperations 
 	public static boolean validateMedicationsAdministeredSectionTitle(
 			MedicationsAdministeredSection medicationsAdministeredSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATIONS_ADMINISTERED_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATIONS_ADMINISTERED_SECTION);
@@ -286,6 +293,7 @@ public class MedicationsAdministeredSectionOperations extends SectionOperations 
 					ConsolPlugin.INSTANCE.getString("MedicationsAdministeredSectionTitle"),
 					new Object[] { medicationsAdministeredSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -327,6 +335,7 @@ public class MedicationsAdministeredSectionOperations extends SectionOperations 
 	public static boolean validateMedicationsAdministeredSectionMedicationActivity(
 			MedicationsAdministeredSection medicationsAdministeredSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATIONS_ADMINISTERED_SECTION_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICATIONS_ADMINISTERED_SECTION);
@@ -347,6 +356,7 @@ public class MedicationsAdministeredSectionOperations extends SectionOperations 
 					ConsolPlugin.INSTANCE.getString("MedicationsAdministeredSectionMedicationActivity"),
 					new Object[] { medicationsAdministeredSection }));
 			}
+
 			return false;
 		}
 		return true;

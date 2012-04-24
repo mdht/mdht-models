@@ -80,6 +80,7 @@ public class ProcedureImplantsSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateProcedureImplantsSectionTemplateId(ProcedureImplantsSection procedureImplantsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_IMPLANTS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_IMPLANTS_SECTION);
@@ -98,6 +99,7 @@ public class ProcedureImplantsSectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("ProcedureImplantsSectionTemplateId"),
 					new Object[] { procedureImplantsSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -140,6 +142,7 @@ public class ProcedureImplantsSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateProcedureImplantsSectionCode(ProcedureImplantsSection procedureImplantsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_IMPLANTS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_IMPLANTS_SECTION);
@@ -158,6 +161,7 @@ public class ProcedureImplantsSectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("ProcedureImplantsSectionCode"),
 					new Object[] { procedureImplantsSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -196,6 +200,7 @@ public class ProcedureImplantsSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateProcedureImplantsSectionText(ProcedureImplantsSection procedureImplantsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_IMPLANTS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_IMPLANTS_SECTION);
@@ -214,6 +219,7 @@ public class ProcedureImplantsSectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("ProcedureImplantsSectionText"),
 					new Object[] { procedureImplantsSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -252,6 +258,7 @@ public class ProcedureImplantsSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateProcedureImplantsSectionTitle(ProcedureImplantsSection procedureImplantsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_IMPLANTS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_IMPLANTS_SECTION);
@@ -270,6 +277,7 @@ public class ProcedureImplantsSectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("ProcedureImplantsSectionTitle"),
 					new Object[] { procedureImplantsSection }));
 			}
+
 			return false;
 		}
 		return true;

@@ -80,6 +80,7 @@ public class InterventionsSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateInterventionsSectionTemplateId(InterventionsSection interventionsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_INTERVENTIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.INTERVENTIONS_SECTION);
@@ -98,6 +99,7 @@ public class InterventionsSectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("InterventionsSectionTemplateId"),
 					new Object[] { interventionsSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -140,6 +142,7 @@ public class InterventionsSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateInterventionsSectionCode(InterventionsSection interventionsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_INTERVENTIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.INTERVENTIONS_SECTION);
@@ -157,6 +160,7 @@ public class InterventionsSectionOperations extends SectionOperations {
 					ConsolValidator.INTERVENTIONS_SECTION__INTERVENTIONS_SECTION_CODE,
 					ConsolPlugin.INSTANCE.getString("InterventionsSectionCode"), new Object[] { interventionsSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -195,6 +199,7 @@ public class InterventionsSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateInterventionsSectionText(InterventionsSection interventionsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_INTERVENTIONS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.INTERVENTIONS_SECTION);
@@ -212,6 +217,7 @@ public class InterventionsSectionOperations extends SectionOperations {
 					ConsolValidator.INTERVENTIONS_SECTION__INTERVENTIONS_SECTION_TEXT,
 					ConsolPlugin.INSTANCE.getString("InterventionsSectionText"), new Object[] { interventionsSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -250,6 +256,7 @@ public class InterventionsSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateInterventionsSectionTitle(InterventionsSection interventionsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_INTERVENTIONS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.INTERVENTIONS_SECTION);
@@ -267,6 +274,7 @@ public class InterventionsSectionOperations extends SectionOperations {
 					ConsolValidator.INTERVENTIONS_SECTION__INTERVENTIONS_SECTION_TITLE,
 					ConsolPlugin.INSTANCE.getString("InterventionsSectionTitle"), new Object[] { interventionsSection }));
 			}
+
 			return false;
 		}
 		return true;

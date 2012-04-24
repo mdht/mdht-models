@@ -79,6 +79,7 @@ public class AssessmentSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateAssessmentSectionTemplateId(AssessmentSection assessmentSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ASSESSMENT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ASSESSMENT_SECTION);
@@ -96,6 +97,7 @@ public class AssessmentSectionOperations extends SectionOperations {
 					ConsolValidator.ASSESSMENT_SECTION__ASSESSMENT_SECTION_TEMPLATE_ID,
 					ConsolPlugin.INSTANCE.getString("AssessmentSectionTemplateId"), new Object[] { assessmentSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -138,6 +140,7 @@ public class AssessmentSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateAssessmentSectionCode(AssessmentSection assessmentSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ASSESSMENT_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ASSESSMENT_SECTION);
@@ -155,6 +158,7 @@ public class AssessmentSectionOperations extends SectionOperations {
 					ConsolValidator.ASSESSMENT_SECTION__ASSESSMENT_SECTION_CODE,
 					ConsolPlugin.INSTANCE.getString("AssessmentSectionCode"), new Object[] { assessmentSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -193,6 +197,7 @@ public class AssessmentSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateAssessmentSectionText(AssessmentSection assessmentSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ASSESSMENT_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ASSESSMENT_SECTION);
@@ -210,6 +215,7 @@ public class AssessmentSectionOperations extends SectionOperations {
 					ConsolValidator.ASSESSMENT_SECTION__ASSESSMENT_SECTION_TEXT,
 					ConsolPlugin.INSTANCE.getString("AssessmentSectionText"), new Object[] { assessmentSection }));
 			}
+
 			return false;
 		}
 		return true;

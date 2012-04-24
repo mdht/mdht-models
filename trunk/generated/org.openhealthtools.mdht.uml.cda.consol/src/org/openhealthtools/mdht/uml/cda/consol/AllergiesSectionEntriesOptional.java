@@ -23,7 +23,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getAllergiesSectionEntriesOptional()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.displayName='Allergies, adverse reactions, alerts' templateId.root='2.16.840.1.113883.10.20.22.2.6' constraints.validation.error='AllergiesSectionEntriesOptionalTemplateId AllergiesSectionEntriesOptionalCode AllergiesSectionEntriesOptionalTitle AllergiesSectionEntriesOptionalText' code.codeSystemName='LOINC' constraints.validation.warning='AllergiesSectionEntriesOptionalAllergyProblemAct' code.code='48765-2'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AllergiesSectionEntriesOptionalTemplateId AllergiesSectionEntriesOptionalCode AllergiesSectionEntriesOptionalTitle AllergiesSectionEntriesOptionalText' templateId.root='2.16.840.1.113883.10.20.22.2.6' code.codeSystem='2.16.840.1.113883.6.1' code.displayName='Allergies, adverse reactions, alerts' code.codeSystemName='LOINC' code.code='48765-2' constraints.validation.warning='AllergiesSectionEntriesOptionalAllergyProblemAct'"
  * @generated
  */
 public interface AllergiesSectionEntriesOptional extends Section {

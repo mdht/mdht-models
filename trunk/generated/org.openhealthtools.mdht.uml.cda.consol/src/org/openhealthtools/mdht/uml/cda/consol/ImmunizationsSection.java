@@ -18,7 +18,7 @@ import org.eclipse.emf.common.util.EList;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getImmunizationsSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' templateId.root='2.16.840.1.113883.10.20.22.2.2.1' constraints.validation.error='ImmunizationsSectionTemplateId ImmunizationsSectionEntriesOptionalCode ImmunizationsSectionTitle ImmunizationsSectionText ImmunizationsSectionImmunization' code.codeSystemName='LOINC' code.code='11369-6'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ImmunizationsSectionTemplateId ImmunizationsSectionEntriesOptionalCode ImmunizationsSectionTitle ImmunizationsSectionText ImmunizationsSectionImmunization' templateId.root='2.16.840.1.113883.10.20.22.2.2.1' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.code='11369-6'"
  * @generated
  */
 public interface ImmunizationsSection extends ImmunizationsSectionEntriesOptional {

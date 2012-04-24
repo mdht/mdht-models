@@ -80,6 +80,7 @@ public class MedicalHistorySectionOperations extends SectionOperations {
 	 */
 	public static boolean validateMedicalHistorySectionTemplateId(MedicalHistorySection medicalHistorySection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICAL_HISTORY_SECTION);
@@ -98,6 +99,7 @@ public class MedicalHistorySectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("MedicalHistorySectionTemplateId"),
 					new Object[] { medicalHistorySection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -140,6 +142,7 @@ public class MedicalHistorySectionOperations extends SectionOperations {
 	 */
 	public static boolean validateMedicalHistorySectionCode(MedicalHistorySection medicalHistorySection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICAL_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICAL_HISTORY_SECTION);
@@ -158,6 +161,7 @@ public class MedicalHistorySectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("MedicalHistorySectionCode"),
 					new Object[] { medicalHistorySection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -196,6 +200,7 @@ public class MedicalHistorySectionOperations extends SectionOperations {
 	 */
 	public static boolean validateMedicalHistorySectionText(MedicalHistorySection medicalHistorySection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICAL_HISTORY_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICAL_HISTORY_SECTION);
@@ -214,6 +219,7 @@ public class MedicalHistorySectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("MedicalHistorySectionText"),
 					new Object[] { medicalHistorySection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -252,6 +258,7 @@ public class MedicalHistorySectionOperations extends SectionOperations {
 	 */
 	public static boolean validateMedicalHistorySectionTitle(MedicalHistorySection medicalHistorySection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICAL_HISTORY_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICAL_HISTORY_SECTION);
@@ -270,6 +277,7 @@ public class MedicalHistorySectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("MedicalHistorySectionTitle"),
 					new Object[] { medicalHistorySection }));
 			}
+
 			return false;
 		}
 		return true;

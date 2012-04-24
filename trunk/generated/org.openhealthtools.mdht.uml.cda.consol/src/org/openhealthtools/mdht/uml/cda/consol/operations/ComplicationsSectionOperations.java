@@ -88,6 +88,7 @@ public class ComplicationsSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateComplicationsSectionTemplateId(ComplicationsSection complicationsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_COMPLICATIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.COMPLICATIONS_SECTION);
@@ -106,6 +107,7 @@ public class ComplicationsSectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("ComplicationsSectionTemplateId"),
 					new Object[] { complicationsSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -150,6 +152,7 @@ public class ComplicationsSectionOperations extends SectionOperations {
 
 	public static boolean validateComplicationsSectionCode(ComplicationsSection complicationsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_COMPLICATIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.COMPLICATIONS_SECTION);
@@ -167,6 +170,7 @@ public class ComplicationsSectionOperations extends SectionOperations {
 					ConsolValidator.COMPLICATIONS_SECTION__COMPLICATIONS_SECTION_CODE,
 					ConsolPlugin.INSTANCE.getString("ComplicationsSectionCode"), new Object[] { complicationsSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -207,6 +211,7 @@ public class ComplicationsSectionOperations extends SectionOperations {
 
 	public static boolean validateComplicationsSectionTitle(ComplicationsSection complicationsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_COMPLICATIONS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.COMPLICATIONS_SECTION);
@@ -224,6 +229,7 @@ public class ComplicationsSectionOperations extends SectionOperations {
 					ConsolValidator.COMPLICATIONS_SECTION__COMPLICATIONS_SECTION_TITLE,
 					ConsolPlugin.INSTANCE.getString("ComplicationsSectionTitle"), new Object[] { complicationsSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -264,6 +270,7 @@ public class ComplicationsSectionOperations extends SectionOperations {
 
 	public static boolean validateComplicationsSectionText(ComplicationsSection complicationsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_COMPLICATIONS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.COMPLICATIONS_SECTION);
@@ -281,6 +288,7 @@ public class ComplicationsSectionOperations extends SectionOperations {
 					ConsolValidator.COMPLICATIONS_SECTION__COMPLICATIONS_SECTION_TEXT,
 					ConsolPlugin.INSTANCE.getString("ComplicationsSectionText"), new Object[] { complicationsSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -321,6 +329,7 @@ public class ComplicationsSectionOperations extends SectionOperations {
 
 	public static boolean validateComplicationsSectionProblemObservation(ComplicationsSection complicationsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_COMPLICATIONS_SECTION_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.COMPLICATIONS_SECTION);
@@ -339,6 +348,7 @@ public class ComplicationsSectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("ComplicationsSectionProblemObservation"),
 					new Object[] { complicationsSection }));
 			}
+
 			return false;
 		}
 		return true;

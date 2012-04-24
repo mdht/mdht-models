@@ -18,7 +18,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getReasonForVisitSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' templateId.root='2.16.840.1.113883.10.20.22.2.12' code.displayName='Reason for Visit' constraints.validation.error='ReasonForVisitSectionTemplateId ReasonForVisitSectionCode ReasonForVisitSectionText ReasonForVisitSectionTitle' code.codeSystemName='LOINC' code.code='29299-5'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ReasonForVisitSectionTemplateId ReasonForVisitSectionCode ReasonForVisitSectionText ReasonForVisitSectionTitle' templateId.root='2.16.840.1.113883.10.20.22.2.12' code.codeSystem='2.16.840.1.113883.6.1' code.displayName='Reason for Visit' code.codeSystemName='LOINC' code.code='29299-5'"
  * @generated
  */
 public interface ReasonForVisitSection extends Section {

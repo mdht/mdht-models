@@ -144,6 +144,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 
 	public static boolean validateContinuityOfCareDocumentLanguageCode(
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_LANGUAGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT);
@@ -162,6 +163,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentLanguageCode"),
 					new Object[] { continuityOfCareDocument }));
 			}
+
 			return false;
 		}
 		return true;
@@ -200,6 +202,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 	 */
 	public static boolean validateContinuityOfCareDocumentDocumentationOf(
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT);
@@ -218,6 +221,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentDocumentationOf"),
 					new Object[] { continuityOfCareDocument }));
 			}
+
 			return false;
 		}
 		return true;
@@ -256,6 +260,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 	 */
 	public static boolean validateContinuityOfCareDocumentAuthor(ContinuityOfCareDocument continuityOfCareDocument,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT);
@@ -274,6 +279,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentAuthor"),
 					new Object[] { continuityOfCareDocument }));
 			}
+
 			return false;
 		}
 		return true;
@@ -292,6 +298,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 	 */
 	public static boolean validateContinuityOfCareDocumentAdvanceDirectivesSection(
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_ADVANCE_DIRECTIVES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT);
@@ -312,6 +319,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentAdvanceDirectivesSection"),
 					new Object[] { continuityOfCareDocument }));
 			}
+
 			return false;
 		}
 		return true;
@@ -350,6 +358,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 	 */
 	public static boolean validateContinuityOfCareDocumentAllergiesSection(
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_ALLERGIES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT);
@@ -369,6 +378,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentAllergiesSection"),
 					new Object[] { continuityOfCareDocument }));
 			}
+
 			return false;
 		}
 		return true;
@@ -387,6 +397,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 	 */
 	public static boolean validateContinuityOfCareDocumentEncountersSection(
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_ENCOUNTERS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT);
@@ -406,6 +417,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentEncountersSection"),
 					new Object[] { continuityOfCareDocument }));
 			}
+
 			return false;
 		}
 		return true;
@@ -424,6 +436,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 	 */
 	public static boolean validateContinuityOfCareDocumentPayersSection(
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_PAYERS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT);
@@ -442,6 +455,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentPayersSection"),
 					new Object[] { continuityOfCareDocument }));
 			}
+
 			return false;
 		}
 		return true;
@@ -480,6 +494,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 	 */
 	public static boolean validateContinuityOfCareDocumentMedicationsSection(
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_MEDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT);
@@ -499,6 +514,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentMedicationsSection"),
 					new Object[] { continuityOfCareDocument }));
 			}
+
 			return false;
 		}
 		return true;
@@ -517,6 +533,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 	 */
 	public static boolean validateContinuityOfCareDocumentPlanOfCareSection(
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_PLAN_OF_CARE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT);
@@ -536,6 +553,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentPlanOfCareSection"),
 					new Object[] { continuityOfCareDocument }));
 			}
+
 			return false;
 		}
 		return true;
@@ -554,6 +572,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 	 */
 	public static boolean validateContinuityOfCareDocumentProceduresSection(
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_PROCEDURES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT);
@@ -573,6 +592,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentProceduresSection"),
 					new Object[] { continuityOfCareDocument }));
 			}
+
 			return false;
 		}
 		return true;
@@ -591,6 +611,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 	 */
 	public static boolean validateContinuityOfCareDocumentFamilyHistorySection(
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_FAMILY_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT);
@@ -610,6 +631,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentFamilyHistorySection"),
 					new Object[] { continuityOfCareDocument }));
 			}
+
 			return false;
 		}
 		return true;
@@ -628,6 +650,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 	 */
 	public static boolean validateContinuityOfCareDocumentSocialHistorySection(
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT);
@@ -647,6 +670,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentSocialHistorySection"),
 					new Object[] { continuityOfCareDocument }));
 			}
+
 			return false;
 		}
 		return true;
@@ -665,6 +689,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 	 */
 	public static boolean validateContinuityOfCareDocumentVitalSignsSectionEntriesOptional(
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT);
@@ -685,6 +710,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentVitalSignsSectionEntriesOptional"),
 					new Object[] { continuityOfCareDocument }));
 			}
+
 			return false;
 		}
 		return true;
@@ -715,10 +741,12 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 			throw new UnsupportedOperationException(pe.getLocalizedMessage());
 		}
 
-		Object oclResultSet = VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_HAS_NATIONAL_PROVIDER_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(continuityOfCareDocument);
-		if (oclResultSet != null && oclResultSet instanceof Collection) {
+		Object oclResult = VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_HAS_NATIONAL_PROVIDER_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(continuityOfCareDocument);
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+
 			if (diagnostics != null) {
-				for (EObject eObject : (Collection<EObject>) oclResultSet) {
+				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
@@ -726,8 +754,9 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityHasNationalProviderIdentifier"),
 						new Object[] { eObject }));
 				}
+
 			}
-			return ((Collection<?>) oclResultSet).isEmpty();
+			return oclResultSet.isEmpty();
 		}
 		return true;
 	}
@@ -759,10 +788,12 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 			throw new UnsupportedOperationException(pe.getLocalizedMessage());
 		}
 
-		Object oclResultSet = VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(continuityOfCareDocument);
-		if (oclResultSet != null && oclResultSet instanceof Collection) {
+		Object oclResult = VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(continuityOfCareDocument);
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+
 			if (diagnostics != null) {
-				for (EObject eObject : (Collection<EObject>) oclResultSet) {
+				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.INFO,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
@@ -770,8 +801,9 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityCode"),
 						new Object[] { eObject }));
 				}
+
 			}
-			return ((Collection<?>) oclResultSet).isEmpty();
+			return oclResultSet.isEmpty();
 		}
 		return true;
 	}
@@ -801,10 +833,12 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 			throw new UnsupportedOperationException(pe.getLocalizedMessage());
 		}
 
-		Object oclResultSet = VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(continuityOfCareDocument);
-		if (oclResultSet != null && oclResultSet instanceof Collection) {
+		Object oclResult = VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(continuityOfCareDocument);
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+
 			if (diagnostics != null) {
-				for (EObject eObject : (Collection<EObject>) oclResultSet) {
+				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
@@ -812,8 +846,9 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityId"),
 						new Object[] { eObject }));
 				}
+
 			}
-			return ((Collection<?>) oclResultSet).isEmpty();
+			return oclResultSet.isEmpty();
 		}
 		return true;
 	}
@@ -843,10 +878,12 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 			throw new UnsupportedOperationException(pe.getLocalizedMessage());
 		}
 
-		Object oclResultSet = VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(continuityOfCareDocument);
-		if (oclResultSet != null && oclResultSet instanceof Collection) {
+		Object oclResult = VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(continuityOfCareDocument);
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+
 			if (diagnostics != null) {
-				for (EObject eObject : (Collection<EObject>) oclResultSet) {
+				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
@@ -854,8 +891,9 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentDocumentationOfServiceEventPerformerTypeCode"),
 						new Object[] { eObject }));
 				}
+
 			}
-			return ((Collection<?>) oclResultSet).isEmpty();
+			return oclResultSet.isEmpty();
 		}
 		return true;
 	}
@@ -885,10 +923,12 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 			throw new UnsupportedOperationException(pe.getLocalizedMessage());
 		}
 
-		Object oclResultSet = VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(continuityOfCareDocument);
-		if (oclResultSet != null && oclResultSet instanceof Collection) {
+		Object oclResult = VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(continuityOfCareDocument);
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+
 			if (diagnostics != null) {
-				for (EObject eObject : (Collection<EObject>) oclResultSet) {
+				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.INFO,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
@@ -896,8 +936,9 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntity"),
 						new Object[] { eObject }));
 				}
+
 			}
-			return ((Collection<?>) oclResultSet).isEmpty();
+			return oclResultSet.isEmpty();
 		}
 		return true;
 	}
@@ -927,10 +968,12 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 			throw new UnsupportedOperationException(pe.getLocalizedMessage());
 		}
 
-		Object oclResultSet = VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(continuityOfCareDocument);
-		if (oclResultSet != null && oclResultSet instanceof Collection) {
+		Object oclResult = VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(continuityOfCareDocument);
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+
 			if (diagnostics != null) {
-				for (EObject eObject : (Collection<EObject>) oclResultSet) {
+				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
@@ -938,8 +981,9 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTimeLow"),
 						new Object[] { eObject }));
 				}
+
 			}
-			return ((Collection<?>) oclResultSet).isEmpty();
+			return oclResultSet.isEmpty();
 		}
 		return true;
 	}
@@ -969,10 +1013,12 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 			throw new UnsupportedOperationException(pe.getLocalizedMessage());
 		}
 
-		Object oclResultSet = VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(continuityOfCareDocument);
-		if (oclResultSet != null && oclResultSet instanceof Collection) {
+		Object oclResult = VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(continuityOfCareDocument);
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+
 			if (diagnostics != null) {
-				for (EObject eObject : (Collection<EObject>) oclResultSet) {
+				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
@@ -980,8 +1026,9 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTimeHigh"),
 						new Object[] { eObject }));
 				}
+
 			}
-			return ((Collection<?>) oclResultSet).isEmpty();
+			return oclResultSet.isEmpty();
 		}
 		return true;
 	}
@@ -1011,10 +1058,12 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 			throw new UnsupportedOperationException(pe.getLocalizedMessage());
 		}
 
-		Object oclResultSet = VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(continuityOfCareDocument);
-		if (oclResultSet != null && oclResultSet instanceof Collection) {
+		Object oclResult = VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(continuityOfCareDocument);
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+
 			if (diagnostics != null) {
-				for (EObject eObject : (Collection<EObject>) oclResultSet) {
+				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
@@ -1022,8 +1071,9 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentDocumentationOfServiceEventClassCode"),
 						new Object[] { eObject }));
 				}
+
 			}
-			return ((Collection<?>) oclResultSet).isEmpty();
+			return oclResultSet.isEmpty();
 		}
 		return true;
 	}
@@ -1053,10 +1103,12 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 			throw new UnsupportedOperationException(pe.getLocalizedMessage());
 		}
 
-		Object oclResultSet = VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(continuityOfCareDocument);
-		if (oclResultSet != null && oclResultSet instanceof Collection) {
+		Object oclResult = VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(continuityOfCareDocument);
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+
 			if (diagnostics != null) {
-				for (EObject eObject : (Collection<EObject>) oclResultSet) {
+				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
@@ -1064,8 +1116,9 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTime"),
 						new Object[] { eObject }));
 				}
+
 			}
-			return ((Collection<?>) oclResultSet).isEmpty();
+			return oclResultSet.isEmpty();
 		}
 		return true;
 	}
@@ -1095,10 +1148,12 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 			throw new UnsupportedOperationException(pe.getLocalizedMessage());
 		}
 
-		Object oclResultSet = VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(continuityOfCareDocument);
-		if (oclResultSet != null && oclResultSet instanceof Collection) {
+		Object oclResult = VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(continuityOfCareDocument);
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+
 			if (diagnostics != null) {
-				for (EObject eObject : (Collection<EObject>) oclResultSet) {
+				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.WARNING,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
@@ -1106,8 +1161,9 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentDocumentationOfServiceEventPerformer"),
 						new Object[] { eObject }));
 				}
+
 			}
-			return ((Collection<?>) oclResultSet).isEmpty();
+			return oclResultSet.isEmpty();
 		}
 		return true;
 	}
@@ -1136,10 +1192,12 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 			throw new UnsupportedOperationException(pe.getLocalizedMessage());
 		}
 
-		Object oclResultSet = VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(continuityOfCareDocument);
-		if (oclResultSet != null && oclResultSet instanceof Collection) {
+		Object oclResult = VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_DOCUMENTATION_OF_SERVICE_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(continuityOfCareDocument);
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+
 			if (diagnostics != null) {
-				for (EObject eObject : (Collection<EObject>) oclResultSet) {
+				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
@@ -1147,8 +1205,9 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentDocumentationOfServiceEvent"),
 						new Object[] { eObject }));
 				}
+
 			}
-			return ((Collection<?>) oclResultSet).isEmpty();
+			return oclResultSet.isEmpty();
 		}
 		return true;
 	}
@@ -1178,10 +1237,12 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 			throw new UnsupportedOperationException(pe.getLocalizedMessage());
 		}
 
-		Object oclResultSet = VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(continuityOfCareDocument);
-		if (oclResultSet != null && oclResultSet instanceof Collection) {
+		Object oclResult = VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(continuityOfCareDocument);
+		if (oclResult != null && oclResult instanceof Collection) {
+			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+
 			if (diagnostics != null) {
-				for (EObject eObject : (Collection<EObject>) oclResultSet) {
+				for (EObject eObject : oclResultSet) {
 					diagnostics.add(new BasicDiagnostic(
 						Diagnostic.ERROR,
 						ConsolValidator.DIAGNOSTIC_SOURCE,
@@ -1189,8 +1250,9 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 						ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentAuthorAssignedAuthor"),
 						new Object[] { eObject }));
 				}
+
 			}
-			return ((Collection<?>) oclResultSet).isEmpty();
+			return oclResultSet.isEmpty();
 		}
 		return true;
 	}
@@ -1208,6 +1270,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 	 */
 	public static boolean validateContinuityOfCareDocumentResultsSection(
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_RESULTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT);
@@ -1226,6 +1289,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentResultsSection"),
 					new Object[] { continuityOfCareDocument }));
 			}
+
 			return false;
 		}
 		return true;
@@ -1244,6 +1308,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 	 */
 	public static boolean validateContinuityOfCareDocumentMedicalEquipmentSection(
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_MEDICAL_EQUIPMENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT);
@@ -1263,6 +1328,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentMedicalEquipmentSection"),
 					new Object[] { continuityOfCareDocument }));
 			}
+
 			return false;
 		}
 		return true;
@@ -1281,6 +1347,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 	 */
 	public static boolean validateContinuityOfCareDocumentFunctionalStatusSection(
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_FUNCTIONAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT);
@@ -1300,6 +1367,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentFunctionalStatusSection"),
 					new Object[] { continuityOfCareDocument }));
 			}
+
 			return false;
 		}
 		return true;
@@ -1318,6 +1386,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 	 */
 	public static boolean validateContinuityOfCareDocumentImmunizationsSectionEntriesOptional(
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT);
@@ -1338,6 +1407,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentImmunizationsSectionEntriesOptional"),
 					new Object[] { continuityOfCareDocument }));
 			}
+
 			return false;
 		}
 		return true;
@@ -1870,6 +1940,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 	 */
 	public static boolean validateContinuityOfCareDocumentProblemSection(
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_PROBLEM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT);
@@ -1888,6 +1959,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 					ConsolPlugin.INSTANCE.getString("ContinuityOfCareDocumentProblemSection"),
 					new Object[] { continuityOfCareDocument }));
 			}
+
 			return false;
 		}
 		return true;
@@ -2198,6 +2270,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 
 	public static boolean validateGeneralHeaderConstraintsTemplateId(ContinuityOfCareDocument continuityOfCareDocument,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT);
@@ -2220,6 +2293,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
 									continuityOfCareDocument, context) }), new Object[] { continuityOfCareDocument }));
 			}
+
 			return false;
 		}
 		return true;
@@ -2241,6 +2315,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 
 	public static boolean validateGeneralHeaderConstraintsCode(ContinuityOfCareDocument continuityOfCareDocument,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT);
@@ -2259,6 +2334,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
 					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsCode"),
 					new Object[] { continuityOfCareDocument }));
 			}
+
 			return false;
 		}
 		return true;

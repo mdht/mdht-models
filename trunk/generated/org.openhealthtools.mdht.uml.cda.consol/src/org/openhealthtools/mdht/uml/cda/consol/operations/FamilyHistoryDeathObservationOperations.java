@@ -83,6 +83,7 @@ public class FamilyHistoryDeathObservationOperations extends ClinicalStatementOp
 	public static boolean validateFamilyHistoryDeathObservationTemplateId(
 			FamilyHistoryDeathObservation familyHistoryDeathObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.FAMILY_HISTORY_DEATH_OBSERVATION);
@@ -101,6 +102,7 @@ public class FamilyHistoryDeathObservationOperations extends ClinicalStatementOp
 					ConsolPlugin.INSTANCE.getString("FamilyHistoryDeathObservationTemplateId"),
 					new Object[] { familyHistoryDeathObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -140,6 +142,7 @@ public class FamilyHistoryDeathObservationOperations extends ClinicalStatementOp
 	public static boolean validateFamilyHistoryDeathObservationClassCode(
 			FamilyHistoryDeathObservation familyHistoryDeathObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.FAMILY_HISTORY_DEATH_OBSERVATION);
@@ -158,6 +161,7 @@ public class FamilyHistoryDeathObservationOperations extends ClinicalStatementOp
 					ConsolPlugin.INSTANCE.getString("FamilyHistoryDeathObservationClassCode"),
 					new Object[] { familyHistoryDeathObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -197,6 +201,7 @@ public class FamilyHistoryDeathObservationOperations extends ClinicalStatementOp
 	public static boolean validateFamilyHistoryDeathObservationMoodCode(
 			FamilyHistoryDeathObservation familyHistoryDeathObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.FAMILY_HISTORY_DEATH_OBSERVATION);
@@ -215,6 +220,7 @@ public class FamilyHistoryDeathObservationOperations extends ClinicalStatementOp
 					ConsolPlugin.INSTANCE.getString("FamilyHistoryDeathObservationMoodCode"),
 					new Object[] { familyHistoryDeathObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -258,6 +264,7 @@ public class FamilyHistoryDeathObservationOperations extends ClinicalStatementOp
 	public static boolean validateFamilyHistoryDeathObservationCode(
 			FamilyHistoryDeathObservation familyHistoryDeathObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.FAMILY_HISTORY_DEATH_OBSERVATION);
@@ -276,6 +283,7 @@ public class FamilyHistoryDeathObservationOperations extends ClinicalStatementOp
 					ConsolPlugin.INSTANCE.getString("FamilyHistoryDeathObservationCode"),
 					new Object[] { familyHistoryDeathObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -318,6 +326,7 @@ public class FamilyHistoryDeathObservationOperations extends ClinicalStatementOp
 	public static boolean validateFamilyHistoryDeathObservationStatusCode(
 			FamilyHistoryDeathObservation familyHistoryDeathObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.FAMILY_HISTORY_DEATH_OBSERVATION);
@@ -336,6 +345,7 @@ public class FamilyHistoryDeathObservationOperations extends ClinicalStatementOp
 					ConsolPlugin.INSTANCE.getString("FamilyHistoryDeathObservationStatusCode"),
 					new Object[] { familyHistoryDeathObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -379,6 +389,7 @@ public class FamilyHistoryDeathObservationOperations extends ClinicalStatementOp
 	public static boolean validateFamilyHistoryDeathObservationValue(
 			FamilyHistoryDeathObservation familyHistoryDeathObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_FAMILY_HISTORY_DEATH_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.FAMILY_HISTORY_DEATH_OBSERVATION);
@@ -397,6 +408,7 @@ public class FamilyHistoryDeathObservationOperations extends ClinicalStatementOp
 					ConsolPlugin.INSTANCE.getString("FamilyHistoryDeathObservationValue"),
 					new Object[] { familyHistoryDeathObservation }));
 			}
+
 			return false;
 		}
 		return true;

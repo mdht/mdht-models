@@ -18,7 +18,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getOperativeNoteSurgicalProcedureSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' templateId.root='2.16.840.1.113883.10.20.7.14' code.displayName='Operative Note Surgical' constraints.validation.error='OperativeNoteSurgicalProcedureSectionTemplateId OperativeNoteSurgicalProcedureSectionCode OperativeNoteSurgicalProcedureSectionText OperativeNoteSurgicalProcedureSectionTitle' code.codeSystemName='LOINC' code.code='10223-6'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='OperativeNoteSurgicalProcedureSectionTemplateId OperativeNoteSurgicalProcedureSectionCode OperativeNoteSurgicalProcedureSectionText OperativeNoteSurgicalProcedureSectionTitle' templateId.root='2.16.840.1.113883.10.20.7.14' code.codeSystem='2.16.840.1.113883.6.1' code.displayName='Operative Note Surgical' code.codeSystemName='LOINC' code.code='10223-6'"
  * @generated
  */
 public interface OperativeNoteSurgicalProcedureSection extends Section {

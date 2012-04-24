@@ -86,6 +86,7 @@ public class PreoperativeDiagnosisSectionOperations extends SectionOperations {
 	public static boolean validatePreoperativeDiagnosisSectionTemplateId(
 			PreoperativeDiagnosisSection preoperativeDiagnosisSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PREOPERATIVE_DIAGNOSIS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PREOPERATIVE_DIAGNOSIS_SECTION);
@@ -104,6 +105,7 @@ public class PreoperativeDiagnosisSectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("PreoperativeDiagnosisSectionTemplateId"),
 					new Object[] { preoperativeDiagnosisSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -149,6 +151,7 @@ public class PreoperativeDiagnosisSectionOperations extends SectionOperations {
 	public static boolean validatePreoperativeDiagnosisSectionCode(
 			PreoperativeDiagnosisSection preoperativeDiagnosisSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PREOPERATIVE_DIAGNOSIS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PREOPERATIVE_DIAGNOSIS_SECTION);
@@ -167,6 +170,7 @@ public class PreoperativeDiagnosisSectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("PreoperativeDiagnosisSectionCode"),
 					new Object[] { preoperativeDiagnosisSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -208,6 +212,7 @@ public class PreoperativeDiagnosisSectionOperations extends SectionOperations {
 	public static boolean validatePreoperativeDiagnosisSectionText(
 			PreoperativeDiagnosisSection preoperativeDiagnosisSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PREOPERATIVE_DIAGNOSIS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PREOPERATIVE_DIAGNOSIS_SECTION);
@@ -226,6 +231,7 @@ public class PreoperativeDiagnosisSectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("PreoperativeDiagnosisSectionText"),
 					new Object[] { preoperativeDiagnosisSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -267,6 +273,7 @@ public class PreoperativeDiagnosisSectionOperations extends SectionOperations {
 	public static boolean validatePreoperativeDiagnosisSectionTitle(
 			PreoperativeDiagnosisSection preoperativeDiagnosisSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PREOPERATIVE_DIAGNOSIS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PREOPERATIVE_DIAGNOSIS_SECTION);
@@ -285,6 +292,7 @@ public class PreoperativeDiagnosisSectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("PreoperativeDiagnosisSectionTitle"),
 					new Object[] { preoperativeDiagnosisSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -326,6 +334,7 @@ public class PreoperativeDiagnosisSectionOperations extends SectionOperations {
 	public static boolean validatePreoperativeDiagnosisSectionPreoperativeDiagnosis(
 			PreoperativeDiagnosisSection preoperativeDiagnosisSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PREOPERATIVE_DIAGNOSIS_SECTION_PREOPERATIVE_DIAGNOSIS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PREOPERATIVE_DIAGNOSIS_SECTION);
@@ -346,6 +355,7 @@ public class PreoperativeDiagnosisSectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("PreoperativeDiagnosisSectionPreoperativeDiagnosis"),
 					new Object[] { preoperativeDiagnosisSection }));
 			}
+
 			return false;
 		}
 		return true;

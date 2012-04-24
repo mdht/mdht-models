@@ -88,6 +88,7 @@ public class MedicalEquipmentSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateMedicalEquipmentSectionTemplateId(MedicalEquipmentSection medicalEquipmentSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICAL_EQUIPMENT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICAL_EQUIPMENT_SECTION);
@@ -106,6 +107,7 @@ public class MedicalEquipmentSectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("MedicalEquipmentSectionTemplateId"),
 					new Object[] { medicalEquipmentSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -148,6 +150,7 @@ public class MedicalEquipmentSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateMedicalEquipmentSectionCode(MedicalEquipmentSection medicalEquipmentSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICAL_EQUIPMENT_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICAL_EQUIPMENT_SECTION);
@@ -166,6 +169,7 @@ public class MedicalEquipmentSectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("MedicalEquipmentSectionCode"),
 					new Object[] { medicalEquipmentSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -204,6 +208,7 @@ public class MedicalEquipmentSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateMedicalEquipmentSectionTitle(MedicalEquipmentSection medicalEquipmentSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICAL_EQUIPMENT_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICAL_EQUIPMENT_SECTION);
@@ -222,6 +227,7 @@ public class MedicalEquipmentSectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("MedicalEquipmentSectionTitle"),
 					new Object[] { medicalEquipmentSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -260,6 +266,7 @@ public class MedicalEquipmentSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateMedicalEquipmentSectionText(MedicalEquipmentSection medicalEquipmentSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICAL_EQUIPMENT_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICAL_EQUIPMENT_SECTION);
@@ -278,6 +285,7 @@ public class MedicalEquipmentSectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("MedicalEquipmentSectionText"),
 					new Object[] { medicalEquipmentSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -316,6 +324,7 @@ public class MedicalEquipmentSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateMedicalEquipmentSectionNonMedicinalSupplyActivity(
 			MedicalEquipmentSection medicalEquipmentSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICAL_EQUIPMENT_SECTION_NON_MEDICINAL_SUPPLY_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.MEDICAL_EQUIPMENT_SECTION);
@@ -335,6 +344,7 @@ public class MedicalEquipmentSectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("MedicalEquipmentSectionNonMedicinalSupplyActivity"),
 					new Object[] { medicalEquipmentSection }));
 			}
+
 			return false;
 		}
 		return true;

@@ -86,6 +86,7 @@ public class ReferencedFramesObservationOperations extends ClinicalStatementOper
 	public static boolean validateReferencedFramesObservationTemplateId(
 			ReferencedFramesObservation referencedFramesObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_REFERENCED_FRAMES_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REFERENCED_FRAMES_OBSERVATION);
@@ -104,6 +105,7 @@ public class ReferencedFramesObservationOperations extends ClinicalStatementOper
 					ConsolPlugin.INSTANCE.getString("ReferencedFramesObservationTemplateId"),
 					new Object[] { referencedFramesObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -143,6 +145,7 @@ public class ReferencedFramesObservationOperations extends ClinicalStatementOper
 	public static boolean validateReferencedFramesObservationClassCode(
 			ReferencedFramesObservation referencedFramesObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_REFERENCED_FRAMES_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REFERENCED_FRAMES_OBSERVATION);
@@ -161,6 +164,7 @@ public class ReferencedFramesObservationOperations extends ClinicalStatementOper
 					ConsolPlugin.INSTANCE.getString("ReferencedFramesObservationClassCode"),
 					new Object[] { referencedFramesObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -204,6 +208,7 @@ public class ReferencedFramesObservationOperations extends ClinicalStatementOper
 	public static boolean validateReferencedFramesObservationCode(
 			ReferencedFramesObservation referencedFramesObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_REFERENCED_FRAMES_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REFERENCED_FRAMES_OBSERVATION);
@@ -222,6 +227,7 @@ public class ReferencedFramesObservationOperations extends ClinicalStatementOper
 					ConsolPlugin.INSTANCE.getString("ReferencedFramesObservationCode"),
 					new Object[] { referencedFramesObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -261,6 +267,7 @@ public class ReferencedFramesObservationOperations extends ClinicalStatementOper
 	public static boolean validateReferencedFramesObservationMoodCode(
 			ReferencedFramesObservation referencedFramesObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_REFERENCED_FRAMES_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REFERENCED_FRAMES_OBSERVATION);
@@ -279,6 +286,7 @@ public class ReferencedFramesObservationOperations extends ClinicalStatementOper
 					ConsolPlugin.INSTANCE.getString("ReferencedFramesObservationMoodCode"),
 					new Object[] { referencedFramesObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -318,6 +326,7 @@ public class ReferencedFramesObservationOperations extends ClinicalStatementOper
 	public static boolean validateReferencedFramesObservationBoundaryObservation(
 			ReferencedFramesObservation referencedFramesObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_REFERENCED_FRAMES_OBSERVATION_BOUNDARY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REFERENCED_FRAMES_OBSERVATION);
@@ -337,6 +346,7 @@ public class ReferencedFramesObservationOperations extends ClinicalStatementOper
 					ConsolPlugin.INSTANCE.getString("ReferencedFramesObservationBoundaryObservation"),
 					new Object[] { referencedFramesObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -376,7 +386,7 @@ public class ReferencedFramesObservationOperations extends ClinicalStatementOper
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				ConsolPackage.Literals.REFERENCED_FRAMES_OBSERVATION,
-				ConsolPackage.Literals.REFERENCED_FRAMES_OBSERVATION.getEAllOperations().get(54));
+				ConsolPackage.Literals.REFERENCED_FRAMES_OBSERVATION.getEAllOperations().get(56));
 			try {
 				GET_BOUNDARY_OBSERVATION__EOCL_QRY = helper.createQuery(GET_BOUNDARY_OBSERVATION__EOCL_EXP);
 			} catch (ParserException pe) {

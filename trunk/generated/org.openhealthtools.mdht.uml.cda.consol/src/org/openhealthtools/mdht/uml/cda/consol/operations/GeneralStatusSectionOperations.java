@@ -80,6 +80,7 @@ public class GeneralStatusSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateGeneralStatusSectionTemplateId(GeneralStatusSection generalStatusSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_GENERAL_STATUS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.GENERAL_STATUS_SECTION);
@@ -98,6 +99,7 @@ public class GeneralStatusSectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("GeneralStatusSectionTemplateId"),
 					new Object[] { generalStatusSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -140,6 +142,7 @@ public class GeneralStatusSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateGeneralStatusSectionCode(GeneralStatusSection generalStatusSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_GENERAL_STATUS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.GENERAL_STATUS_SECTION);
@@ -157,6 +160,7 @@ public class GeneralStatusSectionOperations extends SectionOperations {
 					ConsolValidator.GENERAL_STATUS_SECTION__GENERAL_STATUS_SECTION_CODE,
 					ConsolPlugin.INSTANCE.getString("GeneralStatusSectionCode"), new Object[] { generalStatusSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -195,6 +199,7 @@ public class GeneralStatusSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateGeneralStatusSectionTitle(GeneralStatusSection generalStatusSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_GENERAL_STATUS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.GENERAL_STATUS_SECTION);
@@ -212,6 +217,7 @@ public class GeneralStatusSectionOperations extends SectionOperations {
 					ConsolValidator.GENERAL_STATUS_SECTION__GENERAL_STATUS_SECTION_TITLE,
 					ConsolPlugin.INSTANCE.getString("GeneralStatusSectionTitle"), new Object[] { generalStatusSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -250,6 +256,7 @@ public class GeneralStatusSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateGeneralStatusSectionText(GeneralStatusSection generalStatusSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_GENERAL_STATUS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.GENERAL_STATUS_SECTION);
@@ -267,6 +274,7 @@ public class GeneralStatusSectionOperations extends SectionOperations {
 					ConsolValidator.GENERAL_STATUS_SECTION__GENERAL_STATUS_SECTION_TEXT,
 					ConsolPlugin.INSTANCE.getString("GeneralStatusSectionText"), new Object[] { generalStatusSection }));
 			}
+
 			return false;
 		}
 		return true;

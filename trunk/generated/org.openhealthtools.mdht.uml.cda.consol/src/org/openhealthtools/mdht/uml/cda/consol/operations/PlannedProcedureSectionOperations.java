@@ -88,6 +88,7 @@ public class PlannedProcedureSectionOperations extends SectionOperations {
 	 */
 	public static boolean validatePlannedProcedureSectionTemplateId(PlannedProcedureSection plannedProcedureSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PLANNED_PROCEDURE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_PROCEDURE_SECTION);
@@ -106,6 +107,7 @@ public class PlannedProcedureSectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("PlannedProcedureSectionTemplateId"),
 					new Object[] { plannedProcedureSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -148,6 +150,7 @@ public class PlannedProcedureSectionOperations extends SectionOperations {
 	 */
 	public static boolean validatePlannedProcedureSectionCode(PlannedProcedureSection plannedProcedureSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PLANNED_PROCEDURE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_PROCEDURE_SECTION);
@@ -166,6 +169,7 @@ public class PlannedProcedureSectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("PlannedProcedureSectionCode"),
 					new Object[] { plannedProcedureSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -204,6 +208,7 @@ public class PlannedProcedureSectionOperations extends SectionOperations {
 	 */
 	public static boolean validatePlannedProcedureSectionText(PlannedProcedureSection plannedProcedureSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PLANNED_PROCEDURE_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_PROCEDURE_SECTION);
@@ -222,6 +227,7 @@ public class PlannedProcedureSectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("PlannedProcedureSectionText"),
 					new Object[] { plannedProcedureSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -260,6 +266,7 @@ public class PlannedProcedureSectionOperations extends SectionOperations {
 	 */
 	public static boolean validatePlannedProcedureSectionTitle(PlannedProcedureSection plannedProcedureSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PLANNED_PROCEDURE_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_PROCEDURE_SECTION);
@@ -278,6 +285,7 @@ public class PlannedProcedureSectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("PlannedProcedureSectionTitle"),
 					new Object[] { plannedProcedureSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -316,6 +324,7 @@ public class PlannedProcedureSectionOperations extends SectionOperations {
 	 */
 	public static boolean validatePlannedProcedureSectionPlanOfCareActivityProcedure(
 			PlannedProcedureSection plannedProcedureSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PLANNED_PROCEDURE_SECTION_PLAN_OF_CARE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PLANNED_PROCEDURE_SECTION);
@@ -336,6 +345,7 @@ public class PlannedProcedureSectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("PlannedProcedureSectionPlanOfCareActivityProcedure"),
 					new Object[] { plannedProcedureSection }));
 			}
+
 			return false;
 		}
 		return true;

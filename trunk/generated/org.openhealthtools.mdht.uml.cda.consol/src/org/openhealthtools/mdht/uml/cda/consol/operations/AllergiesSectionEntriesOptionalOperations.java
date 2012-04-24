@@ -89,6 +89,7 @@ public class AllergiesSectionEntriesOptionalOperations extends SectionOperations
 	public static boolean validateAllergiesSectionEntriesOptionalTemplateId(
 			AllergiesSectionEntriesOptional allergiesSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_ALLERGIES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ALLERGIES_SECTION_ENTRIES_OPTIONAL);
@@ -108,6 +109,7 @@ public class AllergiesSectionEntriesOptionalOperations extends SectionOperations
 					ConsolPlugin.INSTANCE.getString("AllergiesSectionEntriesOptionalTemplateId"),
 					new Object[] { allergiesSectionEntriesOptional }));
 			}
+
 			return false;
 		}
 		return true;
@@ -151,6 +153,7 @@ public class AllergiesSectionEntriesOptionalOperations extends SectionOperations
 	public static boolean validateAllergiesSectionEntriesOptionalCode(
 			AllergiesSectionEntriesOptional allergiesSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_ALLERGIES_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ALLERGIES_SECTION_ENTRIES_OPTIONAL);
@@ -169,6 +172,7 @@ public class AllergiesSectionEntriesOptionalOperations extends SectionOperations
 					ConsolPlugin.INSTANCE.getString("AllergiesSectionEntriesOptionalCode"),
 					new Object[] { allergiesSectionEntriesOptional }));
 			}
+
 			return false;
 		}
 		return true;
@@ -208,6 +212,7 @@ public class AllergiesSectionEntriesOptionalOperations extends SectionOperations
 	public static boolean validateAllergiesSectionEntriesOptionalTitle(
 			AllergiesSectionEntriesOptional allergiesSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_ALLERGIES_SECTION_ENTRIES_OPTIONAL_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ALLERGIES_SECTION_ENTRIES_OPTIONAL);
@@ -226,6 +231,7 @@ public class AllergiesSectionEntriesOptionalOperations extends SectionOperations
 					ConsolPlugin.INSTANCE.getString("AllergiesSectionEntriesOptionalTitle"),
 					new Object[] { allergiesSectionEntriesOptional }));
 			}
+
 			return false;
 		}
 		return true;
@@ -265,6 +271,7 @@ public class AllergiesSectionEntriesOptionalOperations extends SectionOperations
 	public static boolean validateAllergiesSectionEntriesOptionalText(
 			AllergiesSectionEntriesOptional allergiesSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_ALLERGIES_SECTION_ENTRIES_OPTIONAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ALLERGIES_SECTION_ENTRIES_OPTIONAL);
@@ -283,6 +290,7 @@ public class AllergiesSectionEntriesOptionalOperations extends SectionOperations
 					ConsolPlugin.INSTANCE.getString("AllergiesSectionEntriesOptionalText"),
 					new Object[] { allergiesSectionEntriesOptional }));
 			}
+
 			return false;
 		}
 		return true;
@@ -322,6 +330,7 @@ public class AllergiesSectionEntriesOptionalOperations extends SectionOperations
 	public static boolean validateAllergiesSectionEntriesOptionalAllergyProblemAct(
 			AllergiesSectionEntriesOptional allergiesSectionEntriesOptional, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_ALLERGIES_SECTION_ENTRIES_OPTIONAL_ALLERGY_PROBLEM_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ALLERGIES_SECTION_ENTRIES_OPTIONAL);
@@ -342,6 +351,7 @@ public class AllergiesSectionEntriesOptionalOperations extends SectionOperations
 					ConsolPlugin.INSTANCE.getString("AllergiesSectionEntriesOptionalAllergyProblemAct"),
 					new Object[] { allergiesSectionEntriesOptional }));
 			}
+
 			return false;
 		}
 		return true;

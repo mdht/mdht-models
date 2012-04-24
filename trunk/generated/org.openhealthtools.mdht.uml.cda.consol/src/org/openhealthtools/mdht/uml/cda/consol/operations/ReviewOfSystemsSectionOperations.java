@@ -80,6 +80,7 @@ public class ReviewOfSystemsSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateReviewOfSystemsSectionTemplateId(ReviewOfSystemsSection reviewOfSystemsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_REVIEW_OF_SYSTEMS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REVIEW_OF_SYSTEMS_SECTION);
@@ -98,6 +99,7 @@ public class ReviewOfSystemsSectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("ReviewOfSystemsSectionTemplateId"),
 					new Object[] { reviewOfSystemsSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -140,6 +142,7 @@ public class ReviewOfSystemsSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateReviewOfSystemsSectionCode(ReviewOfSystemsSection reviewOfSystemsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_REVIEW_OF_SYSTEMS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REVIEW_OF_SYSTEMS_SECTION);
@@ -158,6 +161,7 @@ public class ReviewOfSystemsSectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("ReviewOfSystemsSectionCode"),
 					new Object[] { reviewOfSystemsSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -196,6 +200,7 @@ public class ReviewOfSystemsSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateReviewOfSystemsSectionTitle(ReviewOfSystemsSection reviewOfSystemsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_REVIEW_OF_SYSTEMS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REVIEW_OF_SYSTEMS_SECTION);
@@ -214,6 +219,7 @@ public class ReviewOfSystemsSectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("ReviewOfSystemsSectionTitle"),
 					new Object[] { reviewOfSystemsSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -252,6 +258,7 @@ public class ReviewOfSystemsSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateReviewOfSystemsSectionText(ReviewOfSystemsSection reviewOfSystemsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_REVIEW_OF_SYSTEMS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REVIEW_OF_SYSTEMS_SECTION);
@@ -270,6 +277,7 @@ public class ReviewOfSystemsSectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("ReviewOfSystemsSectionText"),
 					new Object[] { reviewOfSystemsSection }));
 			}
+
 			return false;
 		}
 		return true;

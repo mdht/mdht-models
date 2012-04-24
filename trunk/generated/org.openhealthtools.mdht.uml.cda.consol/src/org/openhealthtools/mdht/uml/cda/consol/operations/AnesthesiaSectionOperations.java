@@ -91,6 +91,7 @@ public class AnesthesiaSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateAnesthesiaSectionTemplateId(AnesthesiaSection anesthesiaSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ANESTHESIA_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ANESTHESIA_SECTION);
@@ -108,6 +109,7 @@ public class AnesthesiaSectionOperations extends SectionOperations {
 					ConsolValidator.ANESTHESIA_SECTION__ANESTHESIA_SECTION_TEMPLATE_ID,
 					ConsolPlugin.INSTANCE.getString("AnesthesiaSectionTemplateId"), new Object[] { anesthesiaSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -150,6 +152,7 @@ public class AnesthesiaSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateAnesthesiaSectionCode(AnesthesiaSection anesthesiaSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ANESTHESIA_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ANESTHESIA_SECTION);
@@ -167,6 +170,7 @@ public class AnesthesiaSectionOperations extends SectionOperations {
 					ConsolValidator.ANESTHESIA_SECTION__ANESTHESIA_SECTION_CODE,
 					ConsolPlugin.INSTANCE.getString("AnesthesiaSectionCode"), new Object[] { anesthesiaSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -205,6 +209,7 @@ public class AnesthesiaSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateAnesthesiaSectionText(AnesthesiaSection anesthesiaSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ANESTHESIA_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ANESTHESIA_SECTION);
@@ -222,6 +227,7 @@ public class AnesthesiaSectionOperations extends SectionOperations {
 					ConsolValidator.ANESTHESIA_SECTION__ANESTHESIA_SECTION_TEXT,
 					ConsolPlugin.INSTANCE.getString("AnesthesiaSectionText"), new Object[] { anesthesiaSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -260,6 +266,7 @@ public class AnesthesiaSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateAnesthesiaSectionTitle(AnesthesiaSection anesthesiaSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ANESTHESIA_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ANESTHESIA_SECTION);
@@ -277,6 +284,7 @@ public class AnesthesiaSectionOperations extends SectionOperations {
 					ConsolValidator.ANESTHESIA_SECTION__ANESTHESIA_SECTION_TITLE,
 					ConsolPlugin.INSTANCE.getString("AnesthesiaSectionTitle"), new Object[] { anesthesiaSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -315,6 +323,7 @@ public class AnesthesiaSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateAnesthesiaSectionProcedureActivityProcedure(AnesthesiaSection anesthesiaSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ANESTHESIA_SECTION_PROCEDURE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ANESTHESIA_SECTION);
@@ -334,6 +343,7 @@ public class AnesthesiaSectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("AnesthesiaSectionProcedureActivityProcedure"),
 					new Object[] { anesthesiaSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -372,6 +382,7 @@ public class AnesthesiaSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateAnesthesiaSectionMedicationActivity(AnesthesiaSection anesthesiaSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ANESTHESIA_SECTION_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ANESTHESIA_SECTION);
@@ -390,6 +401,7 @@ public class AnesthesiaSectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("AnesthesiaSectionMedicationActivity"),
 					new Object[] { anesthesiaSection }));
 			}
+
 			return false;
 		}
 		return true;

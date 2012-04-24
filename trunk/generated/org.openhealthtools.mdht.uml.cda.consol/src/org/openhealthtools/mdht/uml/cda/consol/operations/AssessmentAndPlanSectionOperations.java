@@ -87,6 +87,7 @@ public class AssessmentAndPlanSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateAssessmentAndPlanSectionTemplateId(AssessmentAndPlanSection assessmentAndPlanSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ASSESSMENT_AND_PLAN_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ASSESSMENT_AND_PLAN_SECTION);
@@ -105,6 +106,7 @@ public class AssessmentAndPlanSectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("AssessmentAndPlanSectionTemplateId"),
 					new Object[] { assessmentAndPlanSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -147,6 +149,7 @@ public class AssessmentAndPlanSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateAssessmentAndPlanSectionCode(AssessmentAndPlanSection assessmentAndPlanSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ASSESSMENT_AND_PLAN_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ASSESSMENT_AND_PLAN_SECTION);
@@ -165,6 +168,7 @@ public class AssessmentAndPlanSectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("AssessmentAndPlanSectionCode"),
 					new Object[] { assessmentAndPlanSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -203,6 +207,7 @@ public class AssessmentAndPlanSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateAssessmentAndPlanSectionText(AssessmentAndPlanSection assessmentAndPlanSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ASSESSMENT_AND_PLAN_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ASSESSMENT_AND_PLAN_SECTION);
@@ -221,6 +226,7 @@ public class AssessmentAndPlanSectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("AssessmentAndPlanSectionText"),
 					new Object[] { assessmentAndPlanSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -259,6 +265,7 @@ public class AssessmentAndPlanSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateAssessmentAndPlanSectionPlanOfCareActivityAct(
 			AssessmentAndPlanSection assessmentAndPlanSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ASSESSMENT_AND_PLAN_SECTION_PLAN_OF_CARE_ACTIVITY_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ASSESSMENT_AND_PLAN_SECTION);
@@ -278,6 +285,7 @@ public class AssessmentAndPlanSectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("AssessmentAndPlanSectionPlanOfCareActivityAct"),
 					new Object[] { assessmentAndPlanSection }));
 			}
+
 			return false;
 		}
 		return true;

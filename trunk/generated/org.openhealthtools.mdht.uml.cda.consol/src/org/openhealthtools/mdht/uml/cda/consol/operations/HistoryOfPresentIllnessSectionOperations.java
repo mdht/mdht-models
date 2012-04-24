@@ -81,6 +81,7 @@ public class HistoryOfPresentIllnessSectionOperations extends SectionOperations 
 	public static boolean validateHistoryOfPresentIllnessSectionTemplateId(
 			HistoryOfPresentIllnessSection historyOfPresentIllnessSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_HISTORY_OF_PRESENT_ILLNESS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HISTORY_OF_PRESENT_ILLNESS_SECTION);
@@ -100,6 +101,7 @@ public class HistoryOfPresentIllnessSectionOperations extends SectionOperations 
 					ConsolPlugin.INSTANCE.getString("HistoryOfPresentIllnessSectionTemplateId"),
 					new Object[] { historyOfPresentIllnessSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -143,6 +145,7 @@ public class HistoryOfPresentIllnessSectionOperations extends SectionOperations 
 	public static boolean validateHistoryOfPresentIllnessSectionCode(
 			HistoryOfPresentIllnessSection historyOfPresentIllnessSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_HISTORY_OF_PRESENT_ILLNESS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HISTORY_OF_PRESENT_ILLNESS_SECTION);
@@ -161,6 +164,7 @@ public class HistoryOfPresentIllnessSectionOperations extends SectionOperations 
 					ConsolPlugin.INSTANCE.getString("HistoryOfPresentIllnessSectionCode"),
 					new Object[] { historyOfPresentIllnessSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -200,6 +204,7 @@ public class HistoryOfPresentIllnessSectionOperations extends SectionOperations 
 	public static boolean validateHistoryOfPresentIllnessSectionTitle(
 			HistoryOfPresentIllnessSection historyOfPresentIllnessSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_HISTORY_OF_PRESENT_ILLNESS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HISTORY_OF_PRESENT_ILLNESS_SECTION);
@@ -218,6 +223,7 @@ public class HistoryOfPresentIllnessSectionOperations extends SectionOperations 
 					ConsolPlugin.INSTANCE.getString("HistoryOfPresentIllnessSectionTitle"),
 					new Object[] { historyOfPresentIllnessSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -257,6 +263,7 @@ public class HistoryOfPresentIllnessSectionOperations extends SectionOperations 
 	public static boolean validateHistoryOfPresentIllnessSectionText(
 			HistoryOfPresentIllnessSection historyOfPresentIllnessSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_HISTORY_OF_PRESENT_ILLNESS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.HISTORY_OF_PRESENT_ILLNESS_SECTION);
@@ -275,6 +282,7 @@ public class HistoryOfPresentIllnessSectionOperations extends SectionOperations 
 					ConsolPlugin.INSTANCE.getString("HistoryOfPresentIllnessSectionText"),
 					new Object[] { historyOfPresentIllnessSection }));
 			}
+
 			return false;
 		}
 		return true;

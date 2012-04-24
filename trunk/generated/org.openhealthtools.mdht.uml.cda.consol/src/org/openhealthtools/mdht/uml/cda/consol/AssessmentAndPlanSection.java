@@ -24,7 +24,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getAssessmentAndPlanSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' templateId.root='2.16.840.1.113883.10.20.22.2.9' code.displayName='ASSESSMENT AND PLAN' constraints.validation.error='AssessmentAndPlanSectionTemplateId AssessmentAndPlanSectionCode AssessmentAndPlanSectionText' code.codeSystemName='LOINC' code.code='51847-2' constraints.validation.info='AssessmentAndPlanSectionPlanOfCareActivityAct'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AssessmentAndPlanSectionTemplateId AssessmentAndPlanSectionCode AssessmentAndPlanSectionText' templateId.root='2.16.840.1.113883.10.20.22.2.9' code.codeSystem='2.16.840.1.113883.6.1' code.displayName='ASSESSMENT AND PLAN' code.codeSystemName='LOINC' code.code='51847-2' constraints.validation.info='AssessmentAndPlanSectionPlanOfCareActivityAct'"
  * @generated
  */
 public interface AssessmentAndPlanSection extends Section {

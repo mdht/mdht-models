@@ -18,7 +18,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getReferencedFramesObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='1.2.840.10008.2.16.4' code.displayName='Referenced Frames' templateId.root='2.16.840.1.113883.10.20.6.2.10' constraints.validation.error='ReferencedFramesObservationTemplateId ReferencedFramesObservationClassCode ReferencedFramesObservationCode ReferencedFramesObservationMoodCode ReferencedFramesObservationBoundaryObservation' code.codeSystemName='DCM' classCode='ROIBND' code.code='121190' moodCode='EVN'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ReferencedFramesObservationTemplateId ReferencedFramesObservationClassCode ReferencedFramesObservationCode ReferencedFramesObservationMoodCode ReferencedFramesObservationBoundaryObservation' templateId.root='2.16.840.1.113883.10.20.6.2.10' classCode='ROIBND' code.codeSystem='1.2.840.10008.2.16.4' code.displayName='Referenced Frames' code.codeSystemName='DCM' code.code='121190' moodCode='EVN'"
  * @generated
  */
 public interface ReferencedFramesObservation extends Observation {

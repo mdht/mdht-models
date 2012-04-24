@@ -81,6 +81,7 @@ public class OperativeNoteSurgicalProcedureSectionOperations extends SectionOper
 	public static boolean validateOperativeNoteSurgicalProcedureSectionTemplateId(
 			OperativeNoteSurgicalProcedureSection operativeNoteSurgicalProcedureSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION);
@@ -101,6 +102,7 @@ public class OperativeNoteSurgicalProcedureSectionOperations extends SectionOper
 					ConsolPlugin.INSTANCE.getString("OperativeNoteSurgicalProcedureSectionTemplateId"),
 					new Object[] { operativeNoteSurgicalProcedureSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -144,6 +146,7 @@ public class OperativeNoteSurgicalProcedureSectionOperations extends SectionOper
 	public static boolean validateOperativeNoteSurgicalProcedureSectionCode(
 			OperativeNoteSurgicalProcedureSection operativeNoteSurgicalProcedureSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION);
@@ -164,6 +167,7 @@ public class OperativeNoteSurgicalProcedureSectionOperations extends SectionOper
 					ConsolPlugin.INSTANCE.getString("OperativeNoteSurgicalProcedureSectionCode"),
 					new Object[] { operativeNoteSurgicalProcedureSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -203,6 +207,7 @@ public class OperativeNoteSurgicalProcedureSectionOperations extends SectionOper
 	public static boolean validateOperativeNoteSurgicalProcedureSectionText(
 			OperativeNoteSurgicalProcedureSection operativeNoteSurgicalProcedureSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION);
@@ -223,6 +228,7 @@ public class OperativeNoteSurgicalProcedureSectionOperations extends SectionOper
 					ConsolPlugin.INSTANCE.getString("OperativeNoteSurgicalProcedureSectionText"),
 					new Object[] { operativeNoteSurgicalProcedureSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -262,6 +268,7 @@ public class OperativeNoteSurgicalProcedureSectionOperations extends SectionOper
 	public static boolean validateOperativeNoteSurgicalProcedureSectionTitle(
 			OperativeNoteSurgicalProcedureSection operativeNoteSurgicalProcedureSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION);
@@ -282,6 +289,7 @@ public class OperativeNoteSurgicalProcedureSectionOperations extends SectionOper
 					ConsolPlugin.INSTANCE.getString("OperativeNoteSurgicalProcedureSectionTitle"),
 					new Object[] { operativeNoteSurgicalProcedureSection }));
 			}
+
 			return false;
 		}
 		return true;

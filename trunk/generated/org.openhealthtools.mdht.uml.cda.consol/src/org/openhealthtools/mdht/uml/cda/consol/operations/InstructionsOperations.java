@@ -84,6 +84,7 @@ public class InstructionsOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateInstructionsTextReference(Instructions instructions, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_INSTRUCTIONS_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.INSTRUCTIONS);
@@ -101,6 +102,7 @@ public class InstructionsOperations extends ClinicalStatementOperations {
 					ConsolValidator.INSTRUCTIONS__INSTRUCTIONS_TEXT_REFERENCE,
 					ConsolPlugin.INSTANCE.getString("InstructionsTextReference"), new Object[] { instructions }));
 			}
+
 			return false;
 		}
 		return true;
@@ -139,6 +141,7 @@ public class InstructionsOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateInstructionsTextReferenceValue(Instructions instructions,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_INSTRUCTIONS_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.INSTRUCTIONS);
@@ -156,6 +159,7 @@ public class InstructionsOperations extends ClinicalStatementOperations {
 					ConsolValidator.INSTRUCTIONS__INSTRUCTIONS_TEXT_REFERENCE_VALUE,
 					ConsolPlugin.INSTANCE.getString("InstructionsTextReferenceValue"), new Object[] { instructions }));
 			}
+
 			return false;
 		}
 		return true;
@@ -194,6 +198,7 @@ public class InstructionsOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateInstructionsTemplateId(Instructions instructions, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_INSTRUCTIONS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.INSTRUCTIONS);
@@ -210,6 +215,7 @@ public class InstructionsOperations extends ClinicalStatementOperations {
 					ConsolValidator.INSTRUCTIONS__INSTRUCTIONS_TEMPLATE_ID,
 					ConsolPlugin.INSTANCE.getString("InstructionsTemplateId"), new Object[] { instructions }));
 			}
+
 			return false;
 		}
 		return true;
@@ -248,6 +254,7 @@ public class InstructionsOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateInstructionsClassCode(Instructions instructions, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_INSTRUCTIONS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.INSTRUCTIONS);
@@ -264,6 +271,7 @@ public class InstructionsOperations extends ClinicalStatementOperations {
 					ConsolValidator.INSTRUCTIONS__INSTRUCTIONS_CLASS_CODE,
 					ConsolPlugin.INSTANCE.getString("InstructionsClassCode"), new Object[] { instructions }));
 			}
+
 			return false;
 		}
 		return true;
@@ -302,6 +310,7 @@ public class InstructionsOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateInstructionsMoodCode(Instructions instructions, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_INSTRUCTIONS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.INSTRUCTIONS);
@@ -318,6 +327,7 @@ public class InstructionsOperations extends ClinicalStatementOperations {
 					ConsolValidator.INSTRUCTIONS__INSTRUCTIONS_MOOD_CODE,
 					ConsolPlugin.INSTANCE.getString("InstructionsMoodCode"), new Object[] { instructions }));
 			}
+
 			return false;
 		}
 		return true;
@@ -362,6 +372,7 @@ public class InstructionsOperations extends ClinicalStatementOperations {
 
 	public static boolean validateInstructionsCode(Instructions instructions, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_INSTRUCTIONS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.INSTRUCTIONS);
@@ -378,6 +389,7 @@ public class InstructionsOperations extends ClinicalStatementOperations {
 					ConsolValidator.INSTRUCTIONS__INSTRUCTIONS_CODE,
 					ConsolPlugin.INSTANCE.getString("InstructionsCode"), new Object[] { instructions }));
 			}
+
 			return false;
 		}
 		return true;
@@ -416,6 +428,7 @@ public class InstructionsOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateInstructionsText(Instructions instructions, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_INSTRUCTIONS_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.INSTRUCTIONS);
@@ -432,6 +445,7 @@ public class InstructionsOperations extends ClinicalStatementOperations {
 					ConsolValidator.INSTRUCTIONS__INSTRUCTIONS_TEXT,
 					ConsolPlugin.INSTANCE.getString("InstructionsText"), new Object[] { instructions }));
 			}
+
 			return false;
 		}
 		return true;
@@ -473,6 +487,7 @@ public class InstructionsOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateInstructionsStatusCode(Instructions instructions, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_INSTRUCTIONS_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.INSTRUCTIONS);
@@ -489,6 +504,7 @@ public class InstructionsOperations extends ClinicalStatementOperations {
 					ConsolValidator.INSTRUCTIONS__INSTRUCTIONS_STATUS_CODE,
 					ConsolPlugin.INSTANCE.getString("InstructionsStatusCode"), new Object[] { instructions }));
 			}
+
 			return false;
 		}
 		return true;

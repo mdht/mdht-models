@@ -90,6 +90,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 	 */
 	public static boolean validateDiagnosticImagingReportTemplateId(DiagnosticImagingReport diagnosticImagingReport,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT);
@@ -108,6 +109,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 					ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportTemplateId"),
 					new Object[] { diagnosticImagingReport }));
 			}
+
 			return false;
 		}
 		return true;
@@ -146,6 +148,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 	 */
 	public static boolean validateDiagnosticImagingReportId(DiagnosticImagingReport diagnosticImagingReport,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT);
@@ -164,6 +167,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 					ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportId"),
 					new Object[] { diagnosticImagingReport }));
 			}
+
 			return false;
 		}
 		return true;
@@ -202,6 +206,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 	 */
 	public static boolean validateDiagnosticImagingReportInformant(DiagnosticImagingReport diagnosticImagingReport,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT_INFORMANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT);
@@ -220,6 +225,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 					ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportInformant"),
 					new Object[] { diagnosticImagingReport }));
 			}
+
 			return false;
 		}
 		return true;
@@ -258,6 +264,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 	 */
 	public static boolean validateDiagnosticImagingReportInformationRecipient(
 			DiagnosticImagingReport diagnosticImagingReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT_INFORMATION_RECIPIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT);
@@ -277,6 +284,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 					ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportInformationRecipient"),
 					new Object[] { diagnosticImagingReport }));
 			}
+
 			return false;
 		}
 		return true;
@@ -315,6 +323,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 	 */
 	public static boolean validateDiagnosticImagingReportParticipant1(DiagnosticImagingReport diagnosticImagingReport,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT_PARTICIPANT1__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT);
@@ -333,6 +342,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 					ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportParticipant1"),
 					new Object[] { diagnosticImagingReport }));
 			}
+
 			return false;
 		}
 		return true;
@@ -371,6 +381,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 	 */
 	public static boolean validateDiagnosticImagingReportInFulfillmentOf(
 			DiagnosticImagingReport diagnosticImagingReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT_IN_FULFILLMENT_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT);
@@ -389,6 +400,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 					ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportInFulfillmentOf"),
 					new Object[] { diagnosticImagingReport }));
 			}
+
 			return false;
 		}
 		return true;
@@ -427,6 +439,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 	 */
 	public static boolean validateDiagnosticImagingReportDocumentationOf(
 			DiagnosticImagingReport diagnosticImagingReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT_DOCUMENTATION_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT);
@@ -445,6 +458,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 					ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportDocumentationOf"),
 					new Object[] { diagnosticImagingReport }));
 			}
+
 			return false;
 		}
 		return true;
@@ -483,6 +497,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 	 */
 	public static boolean validateDiagnosticImagingReportRelatedDocument(
 			DiagnosticImagingReport diagnosticImagingReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT_RELATED_DOCUMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT);
@@ -501,6 +516,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 					ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportRelatedDocument"),
 					new Object[] { diagnosticImagingReport }));
 			}
+
 			return false;
 		}
 		return true;
@@ -539,6 +555,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 	 */
 	public static boolean validateDiagnosticImagingReportComponentOf(DiagnosticImagingReport diagnosticImagingReport,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT_COMPONENT_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT);
@@ -557,6 +574,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 					ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportComponentOf"),
 					new Object[] { diagnosticImagingReport }));
 			}
+
 			return false;
 		}
 		return true;
@@ -595,6 +613,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 	 */
 	public static boolean validateDiagnosticImagingReportFindingsSection(
 			DiagnosticImagingReport diagnosticImagingReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT_FINDINGS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT);
@@ -613,6 +632,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 					ConsolPlugin.INSTANCE.getString("DiagnosticImagingReportFindingsSection"),
 					new Object[] { diagnosticImagingReport }));
 			}
+
 			return false;
 		}
 		return true;
@@ -702,6 +722,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 
 	public static boolean validateGeneralHeaderConstraintsCode(DiagnosticImagingReport diagnosticImagingReport,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.DIAGNOSTIC_IMAGING_REPORT);
@@ -720,6 +741,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 					ConsolPlugin.INSTANCE.getString("GeneralHeaderConstraintsCode"),
 					new Object[] { diagnosticImagingReport }));
 			}
+
 			return false;
 		}
 		return true;

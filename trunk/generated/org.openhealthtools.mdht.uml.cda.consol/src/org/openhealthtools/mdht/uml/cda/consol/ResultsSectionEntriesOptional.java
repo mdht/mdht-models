@@ -32,7 +32,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getResultsSectionEntriesOptional()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.displayName='Relevant diagnostic tests and/or laboratory data' templateId.root='2.16.840.1.113883.10.20.22.2.3' constraints.validation.error='ResultsSectionEntriesOptionalTemplateId ResultsSectionEntriesOptionalCode ResultsSectionEntriesOptionalTitle ResultsSectionEntriesOptionalText' code.codeSystemName='LOINC' constraints.validation.warning='ResultsSectionEntriesOptionalResultOrganizer' code.code='30954-2'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ResultsSectionEntriesOptionalTemplateId ResultsSectionEntriesOptionalCode ResultsSectionEntriesOptionalTitle ResultsSectionEntriesOptionalText' templateId.root='2.16.840.1.113883.10.20.22.2.3' code.codeSystem='2.16.840.1.113883.6.1' code.displayName='Relevant diagnostic tests and/or laboratory data' code.codeSystemName='LOINC' code.code='30954-2' constraints.validation.warning='ResultsSectionEntriesOptionalResultOrganizer'"
  * @generated
  */
 public interface ResultsSectionEntriesOptional extends Section {

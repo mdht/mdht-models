@@ -80,6 +80,7 @@ public class ReasonForVisitSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateReasonForVisitSectionTemplateId(ReasonForVisitSection reasonForVisitSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_REASON_FOR_VISIT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REASON_FOR_VISIT_SECTION);
@@ -98,6 +99,7 @@ public class ReasonForVisitSectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("ReasonForVisitSectionTemplateId"),
 					new Object[] { reasonForVisitSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -140,6 +142,7 @@ public class ReasonForVisitSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateReasonForVisitSectionCode(ReasonForVisitSection reasonForVisitSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_REASON_FOR_VISIT_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REASON_FOR_VISIT_SECTION);
@@ -158,6 +161,7 @@ public class ReasonForVisitSectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("ReasonForVisitSectionCode"),
 					new Object[] { reasonForVisitSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -196,6 +200,7 @@ public class ReasonForVisitSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateReasonForVisitSectionText(ReasonForVisitSection reasonForVisitSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_REASON_FOR_VISIT_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REASON_FOR_VISIT_SECTION);
@@ -214,6 +219,7 @@ public class ReasonForVisitSectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("ReasonForVisitSectionText"),
 					new Object[] { reasonForVisitSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -252,6 +258,7 @@ public class ReasonForVisitSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateReasonForVisitSectionTitle(ReasonForVisitSection reasonForVisitSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_REASON_FOR_VISIT_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REASON_FOR_VISIT_SECTION);
@@ -270,6 +277,7 @@ public class ReasonForVisitSectionOperations extends SectionOperations {
 					ConsolPlugin.INSTANCE.getString("ReasonForVisitSectionTitle"),
 					new Object[] { reasonForVisitSection }));
 			}
+
 			return false;
 		}
 		return true;
