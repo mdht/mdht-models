@@ -96,6 +96,7 @@ public class VitalSignsOrganizerOperations extends
 	 */
 	public static boolean validateIHEVitalSignsOrganizerRequireResultsOrganizerTemplateID(
 			VitalSignsOrganizer vitalSignsOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_IHE_VITAL_SIGNS_ORGANIZER_REQUIRE_RESULTS_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.VITAL_SIGNS_ORGANIZER);
@@ -116,6 +117,7 @@ public class VitalSignsOrganizerOperations extends
 					IHEPlugin.INSTANCE.getString("IHEVitalSignsOrganizerRequireResultsOrganizerTemplateID"),
 					new Object[] { vitalSignsOrganizer }));
 			}
+
 			return false;
 		}
 		return true;
@@ -154,6 +156,7 @@ public class VitalSignsOrganizerOperations extends
 	 */
 	public static boolean validateIHEVitalSignsOrganizerTemplateId(VitalSignsOrganizer vitalSignsOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_IHE_VITAL_SIGNS_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.VITAL_SIGNS_ORGANIZER);
@@ -172,6 +175,7 @@ public class VitalSignsOrganizerOperations extends
 					IHEPlugin.INSTANCE.getString("IHEVitalSignsOrganizerTemplateId"),
 					new Object[] { vitalSignsOrganizer }));
 			}
+
 			return false;
 		}
 		return true;
@@ -210,6 +214,7 @@ public class VitalSignsOrganizerOperations extends
 	 */
 	public static boolean validateIHEVitalSignsOrganizerClassCode(VitalSignsOrganizer vitalSignsOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_IHE_VITAL_SIGNS_ORGANIZER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.VITAL_SIGNS_ORGANIZER);
@@ -228,6 +233,7 @@ public class VitalSignsOrganizerOperations extends
 					IHEPlugin.INSTANCE.getString("IHEVitalSignsOrganizerClassCode"),
 					new Object[] { vitalSignsOrganizer }));
 			}
+
 			return false;
 		}
 		return true;
@@ -266,6 +272,7 @@ public class VitalSignsOrganizerOperations extends
 	 */
 	public static boolean validateIHEVitalSignsOrganizerEffectiveTime(VitalSignsOrganizer vitalSignsOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_IHE_VITAL_SIGNS_ORGANIZER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.VITAL_SIGNS_ORGANIZER);
@@ -284,6 +291,7 @@ public class VitalSignsOrganizerOperations extends
 					IHEPlugin.INSTANCE.getString("IHEVitalSignsOrganizerEffectiveTime"),
 					new Object[] { vitalSignsOrganizer }));
 			}
+
 			return false;
 		}
 		return true;
@@ -322,6 +330,7 @@ public class VitalSignsOrganizerOperations extends
 	 */
 	public static boolean validateIHEVitalSignsOrganizerId(VitalSignsOrganizer vitalSignsOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_IHE_VITAL_SIGNS_ORGANIZER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.VITAL_SIGNS_ORGANIZER);
@@ -339,6 +348,7 @@ public class VitalSignsOrganizerOperations extends
 					IHEValidator.VITAL_SIGNS_ORGANIZER__IHE_VITAL_SIGNS_ORGANIZER_ID,
 					IHEPlugin.INSTANCE.getString("IHEVitalSignsOrganizerId"), new Object[] { vitalSignsOrganizer }));
 			}
+
 			return false;
 		}
 		return true;
@@ -377,6 +387,7 @@ public class VitalSignsOrganizerOperations extends
 	 */
 	public static boolean validateIHEVitalSignsOrganizerVitalSignObservation(VitalSignsOrganizer vitalSignsOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_IHE_VITAL_SIGNS_ORGANIZER_VITAL_SIGN_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.VITAL_SIGNS_ORGANIZER);
@@ -396,6 +407,7 @@ public class VitalSignsOrganizerOperations extends
 					IHEPlugin.INSTANCE.getString("IHEVitalSignsOrganizerVitalSignObservation"),
 					new Object[] { vitalSignsOrganizer }));
 			}
+
 			return false;
 		}
 		return true;
@@ -436,6 +448,7 @@ public class VitalSignsOrganizerOperations extends
 
 	public static boolean validateIHEVitalSignsOrganizerAuthor(VitalSignsOrganizer vitalSignsOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_IHE_VITAL_SIGNS_ORGANIZER_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.VITAL_SIGNS_ORGANIZER);
@@ -453,6 +466,7 @@ public class VitalSignsOrganizerOperations extends
 					IHEValidator.VITAL_SIGNS_ORGANIZER__IHE_VITAL_SIGNS_ORGANIZER_AUTHOR,
 					IHEPlugin.INSTANCE.getString("IHEVitalSignsOrganizerAuthor"), new Object[] { vitalSignsOrganizer }));
 			}
+
 			return false;
 		}
 		return true;
@@ -492,7 +506,7 @@ public class VitalSignsOrganizerOperations extends
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				IHEPackage.Literals.VITAL_SIGNS_ORGANIZER,
-				IHEPackage.Literals.VITAL_SIGNS_ORGANIZER.getEAllOperations().get(69));
+				IHEPackage.Literals.VITAL_SIGNS_ORGANIZER.getEAllOperations().get(71));
 			try {
 				GET_VITAL_SIGN_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_VITAL_SIGN_OBSERVATIONS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -514,8 +528,8 @@ public class VitalSignsOrganizerOperations extends
 	 * @ordered
 	 */
 	protected static final String VALIDATE_RESULT_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in ("
-			+ "value.code = '46680005' and value.codeSystem = '2.16.840.1.113883.6.96'))";
+			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
+			+ "value.code = '46680005' and value.codeSystem = '2.16.840.1.113883.6.96')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateResultOrganizerCode(VitalSignsOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Code</em>}' invariant operation.
@@ -532,8 +546,8 @@ public class VitalSignsOrganizerOperations extends
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
-	 * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (
-	 * value.code = '46680005' and value.codeSystem = '2.16.840.1.113883.6.96'))
+	 * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+	 * value.code = '46680005' and value.codeSystem = '2.16.840.1.113883.6.96')
 	 * @param vitalSignsOrganizer The receiving '<em><b>Vital Signs Organizer</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -542,6 +556,7 @@ public class VitalSignsOrganizerOperations extends
 	 */
 	public static boolean validateResultOrganizerCode(VitalSignsOrganizer vitalSignsOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_RESULT_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.VITAL_SIGNS_ORGANIZER);
@@ -559,6 +574,7 @@ public class VitalSignsOrganizerOperations extends
 					IHEValidator.VITAL_SIGNS_ORGANIZER__RESULT_ORGANIZER_CODE,
 					IHEPlugin.INSTANCE.getString("ResultOrganizerCode"), new Object[] { vitalSignsOrganizer }));
 			}
+
 			return false;
 		}
 		return true;
@@ -573,8 +589,7 @@ public class VitalSignsOrganizerOperations extends
 	 * @ordered
 	 */
 	protected static final String VALIDATE_RESULT_ORGANIZER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "
-			+ "let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in ("
-			+ "value.code = 'completed'))";
+			+ "let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in " + "value.code = 'completed')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateResultOrganizerStatusCode(VitalSignsOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Organizer Status Code</em>}' invariant operation.
@@ -591,8 +606,8 @@ public class VitalSignsOrganizerOperations extends
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
-	 * let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in (
-	 * value.code = 'completed'))
+	 * let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
+	 * value.code = 'completed')
 	 * @param vitalSignsOrganizer The receiving '<em><b>Vital Signs Organizer</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -601,6 +616,7 @@ public class VitalSignsOrganizerOperations extends
 	 */
 	public static boolean validateResultOrganizerStatusCode(VitalSignsOrganizer vitalSignsOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_RESULT_ORGANIZER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.VITAL_SIGNS_ORGANIZER);
@@ -618,6 +634,7 @@ public class VitalSignsOrganizerOperations extends
 					IHEValidator.VITAL_SIGNS_ORGANIZER__RESULT_ORGANIZER_STATUS_CODE,
 					IHEPlugin.INSTANCE.getString("ResultOrganizerStatusCode"), new Object[] { vitalSignsOrganizer }));
 			}
+
 			return false;
 		}
 		return true;

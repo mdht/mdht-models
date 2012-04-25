@@ -80,6 +80,7 @@ public class PHRExtractOperations extends MedicalSummaryOperations {
 	 */
 	public static boolean validatePHRExtractTemplateId(PHRExtract phrExtract, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PHR_EXTRACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.PHR_EXTRACT);
@@ -96,6 +97,7 @@ public class PHRExtractOperations extends MedicalSummaryOperations {
 					IHEValidator.PHR_EXTRACT__PHR_EXTRACT_TEMPLATE_ID,
 					IHEPlugin.INSTANCE.getString("PHRExtractTemplateId"), new Object[] { phrExtract }));
 			}
+
 			return false;
 		}
 		return true;

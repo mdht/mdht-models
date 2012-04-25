@@ -10,6 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp.operations;
 
+import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
@@ -45,6 +46,7 @@ import org.openhealthtools.mdht.uml.cda.ihe.operations.SupplyEntryOperations;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.hitsp.MedicationOrderInformation#validateMedicationOrderInformationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Order Information Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.hitsp.MedicationOrderInformation#validateMedicationOrderInformationRepeatNumber(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Order Information Repeat Number</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.hitsp.MedicationOrderInformation#validateMedicationOrderInformationStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Order Information Status Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.hitsp.MedicationOrderInformation#validateSupplyActivityStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Supply Activity Status Code</em>}</li>
  * </ul>
  * </p>
  *
@@ -94,6 +96,7 @@ public class MedicationOrderInformationOperations extends SupplyEntryOperations 
 	public static boolean validateMedicationOrderInformationOrderNumber(
 			MedicationOrderInformation medicationOrderInformation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_ORDER_INFORMATION_ORDER_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.MEDICATION_ORDER_INFORMATION);
@@ -112,6 +115,7 @@ public class MedicationOrderInformationOperations extends SupplyEntryOperations 
 					HITSPPlugin.INSTANCE.getString("MedicationOrderInformationOrderNumber"),
 					new Object[] { medicationOrderInformation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -151,6 +155,7 @@ public class MedicationOrderInformationOperations extends SupplyEntryOperations 
 	public static boolean validateMedicationOrderInformationOrderExpiration(
 			MedicationOrderInformation medicationOrderInformation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_ORDER_INFORMATION_ORDER_EXPIRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.MEDICATION_ORDER_INFORMATION);
@@ -170,6 +175,7 @@ public class MedicationOrderInformationOperations extends SupplyEntryOperations 
 					HITSPPlugin.INSTANCE.getString("MedicationOrderInformationOrderExpiration"),
 					new Object[] { medicationOrderInformation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -209,6 +215,7 @@ public class MedicationOrderInformationOperations extends SupplyEntryOperations 
 	public static boolean validateMedicationOrderInformationQuantityOrdered(
 			MedicationOrderInformation medicationOrderInformation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_ORDER_INFORMATION_QUANTITY_ORDERED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.MEDICATION_ORDER_INFORMATION);
@@ -228,6 +235,7 @@ public class MedicationOrderInformationOperations extends SupplyEntryOperations 
 					HITSPPlugin.INSTANCE.getString("MedicationOrderInformationQuantityOrdered"),
 					new Object[] { medicationOrderInformation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -267,6 +275,7 @@ public class MedicationOrderInformationOperations extends SupplyEntryOperations 
 	public static boolean validateMedicationOrderInformationQuantityUnit(
 			MedicationOrderInformation medicationOrderInformation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_ORDER_INFORMATION_QUANTITY_UNIT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.MEDICATION_ORDER_INFORMATION);
@@ -285,6 +294,7 @@ public class MedicationOrderInformationOperations extends SupplyEntryOperations 
 					HITSPPlugin.INSTANCE.getString("MedicationOrderInformationQuantityUnit"),
 					new Object[] { medicationOrderInformation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -324,6 +334,7 @@ public class MedicationOrderInformationOperations extends SupplyEntryOperations 
 	public static boolean validateMedicationOrderInformationPrescriptionNumber(
 			MedicationOrderInformation medicationOrderInformation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_ORDER_INFORMATION_PRESCRIPTION_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.MEDICATION_ORDER_INFORMATION);
@@ -343,6 +354,7 @@ public class MedicationOrderInformationOperations extends SupplyEntryOperations 
 					HITSPPlugin.INSTANCE.getString("MedicationOrderInformationPrescriptionNumber"),
 					new Object[] { medicationOrderInformation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -382,6 +394,7 @@ public class MedicationOrderInformationOperations extends SupplyEntryOperations 
 	public static boolean validateMedicationOrderInformationAssigningAuthority(
 			MedicationOrderInformation medicationOrderInformation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_ORDER_INFORMATION_ASSIGNING_AUTHORITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.MEDICATION_ORDER_INFORMATION);
@@ -401,6 +414,7 @@ public class MedicationOrderInformationOperations extends SupplyEntryOperations 
 					HITSPPlugin.INSTANCE.getString("MedicationOrderInformationAssigningAuthority"),
 					new Object[] { medicationOrderInformation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -440,6 +454,7 @@ public class MedicationOrderInformationOperations extends SupplyEntryOperations 
 	public static boolean validateMedicationOrderInformationDispenseDate(
 			MedicationOrderInformation medicationOrderInformation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_ORDER_INFORMATION_DISPENSE_DATE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.MEDICATION_ORDER_INFORMATION);
@@ -458,6 +473,7 @@ public class MedicationOrderInformationOperations extends SupplyEntryOperations 
 					HITSPPlugin.INSTANCE.getString("MedicationOrderInformationDispenseDate"),
 					new Object[] { medicationOrderInformation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -497,6 +513,7 @@ public class MedicationOrderInformationOperations extends SupplyEntryOperations 
 	public static boolean validateMedicationOrderInformationDispensingPharmacyLocation(
 			MedicationOrderInformation medicationOrderInformation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_ORDER_INFORMATION_DISPENSING_PHARMACY_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.MEDICATION_ORDER_INFORMATION);
@@ -517,6 +534,7 @@ public class MedicationOrderInformationOperations extends SupplyEntryOperations 
 					HITSPPlugin.INSTANCE.getString("MedicationOrderInformationDispensingPharmacyLocation"),
 					new Object[] { medicationOrderInformation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -556,6 +574,7 @@ public class MedicationOrderInformationOperations extends SupplyEntryOperations 
 	public static boolean validateMedicationOrderInformationQuantityDispensed(
 			MedicationOrderInformation medicationOrderInformation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_ORDER_INFORMATION_QUANTITY_DISPENSED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.MEDICATION_ORDER_INFORMATION);
@@ -575,6 +594,7 @@ public class MedicationOrderInformationOperations extends SupplyEntryOperations 
 					HITSPPlugin.INSTANCE.getString("MedicationOrderInformationQuantityDispensed"),
 					new Object[] { medicationOrderInformation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -614,6 +634,7 @@ public class MedicationOrderInformationOperations extends SupplyEntryOperations 
 	public static boolean validateMedicationOrderInformationHasFillNumber(
 			MedicationOrderInformation medicationOrderInformation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_ORDER_INFORMATION_HAS_FILL_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.MEDICATION_ORDER_INFORMATION);
@@ -632,6 +653,7 @@ public class MedicationOrderInformationOperations extends SupplyEntryOperations 
 					HITSPPlugin.INSTANCE.getString("MedicationOrderInformationHasFillNumber"),
 					new Object[] { medicationOrderInformation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -671,6 +693,7 @@ public class MedicationOrderInformationOperations extends SupplyEntryOperations 
 	public static boolean validateMedicationOrderInformationTemplateId(
 			MedicationOrderInformation medicationOrderInformation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_ORDER_INFORMATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.MEDICATION_ORDER_INFORMATION);
@@ -689,6 +712,7 @@ public class MedicationOrderInformationOperations extends SupplyEntryOperations 
 					HITSPPlugin.INSTANCE.getString("MedicationOrderInformationTemplateId"),
 					new Object[] { medicationOrderInformation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -728,6 +752,7 @@ public class MedicationOrderInformationOperations extends SupplyEntryOperations 
 	public static boolean validateMedicationOrderInformationRepeatNumber(
 			MedicationOrderInformation medicationOrderInformation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_ORDER_INFORMATION_REPEAT_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.MEDICATION_ORDER_INFORMATION);
@@ -746,6 +771,7 @@ public class MedicationOrderInformationOperations extends SupplyEntryOperations 
 					HITSPPlugin.INSTANCE.getString("MedicationOrderInformationRepeatNumber"),
 					new Object[] { medicationOrderInformation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -759,9 +785,7 @@ public class MedicationOrderInformationOperations extends SupplyEntryOperations 
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MEDICATION_ORDER_INFORMATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "
-			+ "let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in ("
-			+ "not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))";
+	protected static final String VALIDATE_MEDICATION_ORDER_INFORMATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMedicationOrderInformationStatusCode(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Order Information Status Code</em>}' invariant operation.
@@ -777,9 +801,7 @@ public class MedicationOrderInformationOperations extends SupplyEntryOperations 
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
-	 * let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in (
-	 * not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))
+	 * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())
 	 * @param medicationOrderInformation The receiving '<em><b>Medication Order Information</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -789,6 +811,7 @@ public class MedicationOrderInformationOperations extends SupplyEntryOperations 
 	public static boolean validateMedicationOrderInformationStatusCode(
 			MedicationOrderInformation medicationOrderInformation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_ORDER_INFORMATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.MEDICATION_ORDER_INFORMATION);
@@ -807,6 +830,92 @@ public class MedicationOrderInformationOperations extends SupplyEntryOperations 
 					HITSPPlugin.INSTANCE.getString("MedicationOrderInformationStatusCode"),
 					new Object[] { medicationOrderInformation }));
 			}
+
+			if (context != null) {
+				// generate a pass token for my dependent constraints to short-circuit or filter results
+				@SuppressWarnings("unchecked")
+				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.hitsp.MedicationOrderInformationStatusCode");
+				if (passToken == null) {
+					// anticipate a reasonably healthy model
+					passToken = new java.util.ArrayList<Object>(3);
+					context.put(
+						"org.openhealthtools.mdht.uml.cda.hitsp.MedicationOrderInformationStatusCode", passToken);
+				}
+				passToken.add(medicationOrderInformation);
+			}
+
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateSupplyActivityStatusCode(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Supply Activity Status Code</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateSupplyActivityStatusCode(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_SUPPLY_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "
+			+ "let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in "
+			+ "value.code = 'aborted' or value.code = 'completed')";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateSupplyActivityStatusCode(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Supply Activity Status Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateSupplyActivityStatusCode(MedicationOrderInformation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_SUPPLY_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
+	 * let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
+	 * value.code = 'aborted' or value.code = 'completed')
+	 * @param medicationOrderInformation The receiving '<em><b>Medication Order Information</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validateSupplyActivityStatusCode(MedicationOrderInformation medicationOrderInformation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.hitsp.MedicationOrderInformationStatusCode");
+		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(medicationOrderInformation)) {
+			// I have a free pass to short-circuit
+			return true;
+		}
+
+		if (VALIDATE_SUPPLY_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(HITSPPackage.Literals.MEDICATION_ORDER_INFORMATION);
+			try {
+				VALIDATE_SUPPLY_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUPPLY_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_SUPPLY_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medicationOrderInformation)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.MEDICATION_ORDER_INFORMATION__SUPPLY_ACTIVITY_STATUS_CODE,
+					HITSPPlugin.INSTANCE.getString("SupplyActivityStatusCode"),
+					new Object[] { medicationOrderInformation }));
+			}
+
 			return false;
 		}
 		return true;

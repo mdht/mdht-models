@@ -88,6 +88,7 @@ public class ProblemConcernEntryOperations extends ConcernEntryOperations {
 	 */
 	public static boolean validateProblemConcernEntryTemplateId(ProblemConcernEntry problemConcernEntry,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROBLEM_CONCERN_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.PROBLEM_CONCERN_ENTRY);
@@ -105,6 +106,7 @@ public class ProblemConcernEntryOperations extends ConcernEntryOperations {
 					IHEValidator.PROBLEM_CONCERN_ENTRY__PROBLEM_CONCERN_ENTRY_TEMPLATE_ID,
 					IHEPlugin.INSTANCE.getString("ProblemConcernEntryTemplateId"), new Object[] { problemConcernEntry }));
 			}
+
 			return false;
 		}
 		return true;
@@ -143,6 +145,7 @@ public class ProblemConcernEntryOperations extends ConcernEntryOperations {
 	 */
 	public static boolean validateProblemConcernEntryProblemEntry(ProblemConcernEntry problemConcernEntry,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROBLEM_CONCERN_ENTRY_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.PROBLEM_CONCERN_ENTRY);
@@ -161,6 +164,7 @@ public class ProblemConcernEntryOperations extends ConcernEntryOperations {
 					IHEPlugin.INSTANCE.getString("ProblemConcernEntryProblemEntry"),
 					new Object[] { problemConcernEntry }));
 			}
+
 			return false;
 		}
 		return true;
@@ -200,7 +204,7 @@ public class ProblemConcernEntryOperations extends ConcernEntryOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				IHEPackage.Literals.PROBLEM_CONCERN_ENTRY,
-				IHEPackage.Literals.PROBLEM_CONCERN_ENTRY.getEAllOperations().get(70));
+				IHEPackage.Literals.PROBLEM_CONCERN_ENTRY.getEAllOperations().get(72));
 			try {
 				GET_PROBLEM_ENTRIES__EOCL_QRY = helper.createQuery(GET_PROBLEM_ENTRIES__EOCL_EXP);
 			} catch (ParserException pe) {

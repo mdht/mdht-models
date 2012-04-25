@@ -83,6 +83,7 @@ public class HistoryOfPastIllnessSectionOperations extends SectionOperations {
 	public static boolean validateHistoryOfPastIllnessSectionTemplateId(
 			HistoryOfPastIllnessSection historyOfPastIllnessSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.HISTORY_OF_PAST_ILLNESS_SECTION);
@@ -101,6 +102,7 @@ public class HistoryOfPastIllnessSectionOperations extends SectionOperations {
 					IHEPlugin.INSTANCE.getString("HistoryOfPastIllnessSectionTemplateId"),
 					new Object[] { historyOfPastIllnessSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -115,8 +117,8 @@ public class HistoryOfPastIllnessSectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
-			+ "value.code = '11348-0' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
+			+ "value.code = '11348-0' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateHistoryOfPastIllnessSectionCode(HistoryOfPastIllnessSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History Of Past Illness Section Code</em>}' invariant operation.
@@ -133,8 +135,8 @@ public class HistoryOfPastIllnessSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in (
-	 * value.code = '11348-0' and value.codeSystem = '2.16.840.1.113883.6.1'))
+	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+	 * value.code = '11348-0' and value.codeSystem = '2.16.840.1.113883.6.1')
 	 * @param historyOfPastIllnessSection The receiving '<em><b>History Of Past Illness Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -144,6 +146,7 @@ public class HistoryOfPastIllnessSectionOperations extends SectionOperations {
 	public static boolean validateHistoryOfPastIllnessSectionCode(
 			HistoryOfPastIllnessSection historyOfPastIllnessSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_HISTORY_OF_PAST_ILLNESS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.HISTORY_OF_PAST_ILLNESS_SECTION);
@@ -162,6 +165,7 @@ public class HistoryOfPastIllnessSectionOperations extends SectionOperations {
 					IHEPlugin.INSTANCE.getString("HistoryOfPastIllnessSectionCode"),
 					new Object[] { historyOfPastIllnessSection }));
 			}
+
 			return false;
 		}
 		return true;

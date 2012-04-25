@@ -124,6 +124,7 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 */
 	public static boolean validatePatientSummaryHealthcareProvider(PatientSummary patientSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PATIENT_SUMMARY_HEALTHCARE_PROVIDER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.PATIENT_SUMMARY);
@@ -141,6 +142,7 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 					HITSPValidator.PATIENT_SUMMARY__PATIENT_SUMMARY_HEALTHCARE_PROVIDER,
 					HITSPPlugin.INSTANCE.getString("PatientSummaryHealthcareProvider"), new Object[] { patientSummary }));
 			}
+
 			return false;
 		}
 		return true;
@@ -179,6 +181,7 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 */
 	public static boolean validatePatientSummaryTemplateId(PatientSummary patientSummary, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PATIENT_SUMMARY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.PATIENT_SUMMARY);
@@ -196,6 +199,7 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 					HITSPValidator.PATIENT_SUMMARY__PATIENT_SUMMARY_TEMPLATE_ID,
 					HITSPPlugin.INSTANCE.getString("PatientSummaryTemplateId"), new Object[] { patientSummary }));
 			}
+
 			return false;
 		}
 		return true;
@@ -234,6 +238,7 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 */
 	public static boolean validatePatientSummaryAdvanceDirectivesSection(PatientSummary patientSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PATIENT_SUMMARY_ADVANCE_DIRECTIVES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.PATIENT_SUMMARY);
@@ -252,6 +257,7 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 					HITSPPlugin.INSTANCE.getString("PatientSummaryAdvanceDirectivesSection"),
 					new Object[] { patientSummary }));
 			}
+
 			return false;
 		}
 		return true;
@@ -290,6 +296,7 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 */
 	public static boolean validatePatientSummaryAllergiesReactionsSection(PatientSummary patientSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PATIENT_SUMMARY_ALLERGIES_REACTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.PATIENT_SUMMARY);
@@ -308,6 +315,7 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 					HITSPPlugin.INSTANCE.getString("PatientSummaryAllergiesReactionsSection"),
 					new Object[] { patientSummary }));
 			}
+
 			return false;
 		}
 		return true;
@@ -346,6 +354,7 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 */
 	public static boolean validatePatientSummaryProblemListSection(PatientSummary patientSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PATIENT_SUMMARY_PROBLEM_LIST_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.PATIENT_SUMMARY);
@@ -363,6 +372,7 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 					HITSPValidator.PATIENT_SUMMARY__PATIENT_SUMMARY_PROBLEM_LIST_SECTION,
 					HITSPPlugin.INSTANCE.getString("PatientSummaryProblemListSection"), new Object[] { patientSummary }));
 			}
+
 			return false;
 		}
 		return true;
@@ -401,6 +411,7 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 */
 	public static boolean validatePatientSummaryEncountersSection(PatientSummary patientSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PATIENT_SUMMARY_ENCOUNTERS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.PATIENT_SUMMARY);
@@ -418,6 +429,7 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 					HITSPValidator.PATIENT_SUMMARY__PATIENT_SUMMARY_ENCOUNTERS_SECTION,
 					HITSPPlugin.INSTANCE.getString("PatientSummaryEncountersSection"), new Object[] { patientSummary }));
 			}
+
 			return false;
 		}
 		return true;
@@ -456,6 +468,7 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 */
 	public static boolean validatePatientSummaryImmunizationsSection(PatientSummary patientSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PATIENT_SUMMARY_IMMUNIZATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.PATIENT_SUMMARY);
@@ -474,6 +487,7 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 					HITSPPlugin.INSTANCE.getString("PatientSummaryImmunizationsSection"),
 					new Object[] { patientSummary }));
 			}
+
 			return false;
 		}
 		return true;
@@ -512,6 +526,7 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 */
 	public static boolean validatePatientSummaryPayersSection(PatientSummary patientSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PATIENT_SUMMARY_PAYERS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.PATIENT_SUMMARY);
@@ -529,6 +544,7 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 					HITSPValidator.PATIENT_SUMMARY__PATIENT_SUMMARY_PAYERS_SECTION,
 					HITSPPlugin.INSTANCE.getString("PatientSummaryPayersSection"), new Object[] { patientSummary }));
 			}
+
 			return false;
 		}
 		return true;
@@ -567,6 +583,7 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 */
 	public static boolean validatePatientSummaryMedicationsSection(PatientSummary patientSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PATIENT_SUMMARY_MEDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.PATIENT_SUMMARY);
@@ -584,6 +601,7 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 					HITSPValidator.PATIENT_SUMMARY__PATIENT_SUMMARY_MEDICATIONS_SECTION,
 					HITSPPlugin.INSTANCE.getString("PatientSummaryMedicationsSection"), new Object[] { patientSummary }));
 			}
+
 			return false;
 		}
 		return true;
@@ -622,6 +640,7 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 */
 	public static boolean validatePatientSummarySurgeriesSection(PatientSummary patientSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PATIENT_SUMMARY_SURGERIES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.PATIENT_SUMMARY);
@@ -639,6 +658,7 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 					HITSPValidator.PATIENT_SUMMARY__PATIENT_SUMMARY_SURGERIES_SECTION,
 					HITSPPlugin.INSTANCE.getString("PatientSummarySurgeriesSection"), new Object[] { patientSummary }));
 			}
+
 			return false;
 		}
 		return true;
@@ -677,6 +697,7 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 */
 	public static boolean validatePatientSummaryPlanOfCareSection(PatientSummary patientSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PATIENT_SUMMARY_PLAN_OF_CARE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.PATIENT_SUMMARY);
@@ -694,6 +715,7 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 					HITSPValidator.PATIENT_SUMMARY__PATIENT_SUMMARY_PLAN_OF_CARE_SECTION,
 					HITSPPlugin.INSTANCE.getString("PatientSummaryPlanOfCareSection"), new Object[] { patientSummary }));
 			}
+
 			return false;
 		}
 		return true;
@@ -732,6 +754,7 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 */
 	public static boolean validatePatientSummaryPregnancyHistorySection(PatientSummary patientSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PATIENT_SUMMARY_PREGNANCY_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.PATIENT_SUMMARY);
@@ -750,6 +773,7 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 					HITSPPlugin.INSTANCE.getString("PatientSummaryPregnancyHistorySection"),
 					new Object[] { patientSummary }));
 			}
+
 			return false;
 		}
 		return true;
@@ -788,6 +812,7 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 */
 	public static boolean validatePatientSummaryVitalSignsSection(PatientSummary patientSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PATIENT_SUMMARY_VITAL_SIGNS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.PATIENT_SUMMARY);
@@ -805,6 +830,7 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 					HITSPValidator.PATIENT_SUMMARY__PATIENT_SUMMARY_VITAL_SIGNS_SECTION,
 					HITSPPlugin.INSTANCE.getString("PatientSummaryVitalSignsSection"), new Object[] { patientSummary }));
 			}
+
 			return false;
 		}
 		return true;
@@ -843,6 +869,7 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 	 */
 	public static boolean validatePatientSummaryDiagnosticResultsSection(PatientSummary patientSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PATIENT_SUMMARY_DIAGNOSTIC_RESULTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.PATIENT_SUMMARY);
@@ -861,6 +888,7 @@ public class PatientSummaryOperations extends ContinuityOfCareDocumentOperations
 					HITSPPlugin.INSTANCE.getString("PatientSummaryDiagnosticResultsSection"),
 					new Object[] { patientSummary }));
 			}
+
 			return false;
 		}
 		return true;

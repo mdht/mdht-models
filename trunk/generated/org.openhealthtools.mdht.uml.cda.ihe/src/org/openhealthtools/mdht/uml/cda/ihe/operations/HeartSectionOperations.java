@@ -83,6 +83,7 @@ public class HeartSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateHeartSectionTemplateId(HeartSection heartSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_HEART_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.HEART_SECTION);
@@ -100,6 +101,7 @@ public class HeartSectionOperations extends SectionOperations {
 					IHEValidator.HEART_SECTION__HEART_SECTION_TEMPLATE_ID,
 					IHEPlugin.INSTANCE.getString("HeartSectionTemplateId"), new Object[] { heartSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -114,8 +116,8 @@ public class HeartSectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_HEART_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
-			+ "value.code = '10200-4' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
+			+ "value.code = '10200-4' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateHeartSectionCode(HeartSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Heart Section Code</em>}' invariant operation.
@@ -132,8 +134,8 @@ public class HeartSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in (
-	 * value.code = '10200-4' and value.codeSystem = '2.16.840.1.113883.6.1'))
+	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+	 * value.code = '10200-4' and value.codeSystem = '2.16.840.1.113883.6.1')
 	 * @param heartSection The receiving '<em><b>Heart Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -142,6 +144,7 @@ public class HeartSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateHeartSectionCode(HeartSection heartSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_HEART_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.HEART_SECTION);
@@ -157,6 +160,7 @@ public class HeartSectionOperations extends SectionOperations {
 					Diagnostic.ERROR, IHEValidator.DIAGNOSTIC_SOURCE, IHEValidator.HEART_SECTION__HEART_SECTION_CODE,
 					IHEPlugin.INSTANCE.getString("HeartSectionCode"), new Object[] { heartSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -195,6 +199,7 @@ public class HeartSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateHeartSectionProblemEntry(HeartSection heartSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_HEART_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.HEART_SECTION);
@@ -212,6 +217,7 @@ public class HeartSectionOperations extends SectionOperations {
 					IHEValidator.HEART_SECTION__HEART_SECTION_PROBLEM_ENTRY,
 					IHEPlugin.INSTANCE.getString("HeartSectionProblemEntry"), new Object[] { heartSection }));
 			}
+
 			return false;
 		}
 		return true;

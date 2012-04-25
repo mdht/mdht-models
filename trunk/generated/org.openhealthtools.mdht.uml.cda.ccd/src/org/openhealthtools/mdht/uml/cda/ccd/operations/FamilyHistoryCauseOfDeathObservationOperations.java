@@ -91,6 +91,7 @@ public class FamilyHistoryCauseOfDeathObservationOperations extends FamilyHistor
 	public static boolean validateFamilyHistoryCauseOfDeathObservationCauseOfDeathObservation(
 			FamilyHistoryCauseOfDeathObservation familyHistoryCauseOfDeathObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_FAMILY_HISTORY_CAUSE_OF_DEATH_OBSERVATION_CAUSE_OF_DEATH_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.FAMILY_HISTORY_CAUSE_OF_DEATH_OBSERVATION);
@@ -111,6 +112,7 @@ public class FamilyHistoryCauseOfDeathObservationOperations extends FamilyHistor
 					CCDPlugin.INSTANCE.getString("FamilyHistoryCauseOfDeathObservationCauseOfDeathObservation"),
 					new Object[] { familyHistoryCauseOfDeathObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -151,7 +153,7 @@ public class FamilyHistoryCauseOfDeathObservationOperations extends FamilyHistor
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				CCDPackage.Literals.FAMILY_HISTORY_CAUSE_OF_DEATH_OBSERVATION,
-				CCDPackage.Literals.FAMILY_HISTORY_CAUSE_OF_DEATH_OBSERVATION.getEAllOperations().get(66));
+				CCDPackage.Literals.FAMILY_HISTORY_CAUSE_OF_DEATH_OBSERVATION.getEAllOperations().get(68));
 			try {
 				GET_CAUSE_OF_DEATH_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_CAUSE_OF_DEATH_OBSERVATIONS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -198,6 +200,7 @@ public class FamilyHistoryCauseOfDeathObservationOperations extends FamilyHistor
 	public static boolean validateFamilyHistoryObservationTemplateId(
 			FamilyHistoryCauseOfDeathObservation familyHistoryCauseOfDeathObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_FAMILY_HISTORY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.FAMILY_HISTORY_CAUSE_OF_DEATH_OBSERVATION);
@@ -221,6 +224,7 @@ public class FamilyHistoryCauseOfDeathObservationOperations extends FamilyHistor
 									familyHistoryCauseOfDeathObservation, context) }),
 					new Object[] { familyHistoryCauseOfDeathObservation }));
 			}
+
 			return false;
 		}
 		return true;

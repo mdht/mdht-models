@@ -26,7 +26,7 @@ import org.eclipse.emf.common.util.EList;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ihe.IHEPackage#getProblemConcernEntry()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.5.2' constraints.validation.error='ProblemConcernEntryTemplateId ProblemConcernEntryProblemEntry'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProblemConcernEntryTemplateId ProblemConcernEntryProblemEntry' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.5.2'"
  *        annotation="uml2.alias Problem\040Concern\040Entry='null'"
  * @generated
  */

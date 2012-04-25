@@ -79,6 +79,7 @@ public class FamilyHistoryObservationOperations extends
 	 */
 	public static boolean validateSimpleObservationTemplateId(FamilyHistoryObservation familyHistoryObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_SIMPLE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.FAMILY_HISTORY_OBSERVATION);
@@ -101,6 +102,7 @@ public class FamilyHistoryObservationOperations extends
 								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
 									familyHistoryObservation, context) }), new Object[] { familyHistoryObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -115,8 +117,8 @@ public class FamilyHistoryObservationOperations extends
 	 * @ordered
 	 */
 	protected static final String VALIDATE_IHE_FAMILY_HISTORY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in ("
-			+ "value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '404684003' or value.code = '409586006' or value.code = '282291009' or value.code = '64572001' or value.code = '248536006' or value.code = '418799008' or value.code = '55607006')))";
+			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
+			+ "value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '404684003' or value.code = '409586006' or value.code = '282291009' or value.code = '64572001' or value.code = '248536006' or value.code = '418799008' or value.code = '55607006'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateIHEFamilyHistoryObservationCode(FamilyHistoryObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate IHE Family History Observation Code</em>}' invariant operation.
@@ -133,8 +135,8 @@ public class FamilyHistoryObservationOperations extends
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
-	 * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (
-	 * value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '404684003' or value.code = '409586006' or value.code = '282291009' or value.code = '64572001' or value.code = '248536006' or value.code = '418799008' or value.code = '55607006')))
+	 * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+	 * value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '404684003' or value.code = '409586006' or value.code = '282291009' or value.code = '64572001' or value.code = '248536006' or value.code = '418799008' or value.code = '55607006'))
 	 * @param familyHistoryObservation The receiving '<em><b>Family History Observation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -143,6 +145,7 @@ public class FamilyHistoryObservationOperations extends
 	 */
 	public static boolean validateIHEFamilyHistoryObservationCode(FamilyHistoryObservation familyHistoryObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_IHE_FAMILY_HISTORY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.FAMILY_HISTORY_OBSERVATION);
@@ -161,6 +164,7 @@ public class FamilyHistoryObservationOperations extends
 					IHEPlugin.INSTANCE.getString("IHEFamilyHistoryObservationCode"),
 					new Object[] { familyHistoryObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -199,6 +203,7 @@ public class FamilyHistoryObservationOperations extends
 	 */
 	public static boolean validateIHEFamilyHistoryObservationValue(FamilyHistoryObservation familyHistoryObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_IHE_FAMILY_HISTORY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.FAMILY_HISTORY_OBSERVATION);
@@ -217,6 +222,7 @@ public class FamilyHistoryObservationOperations extends
 					IHEPlugin.INSTANCE.getString("IHEFamilyHistoryObservationValue"),
 					new Object[] { familyHistoryObservation }));
 			}
+
 			return false;
 		}
 		return true;

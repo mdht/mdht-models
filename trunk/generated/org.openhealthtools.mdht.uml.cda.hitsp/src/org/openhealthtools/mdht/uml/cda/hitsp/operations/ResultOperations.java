@@ -87,6 +87,7 @@ public class ResultOperations extends ResultObservationOperations {
 	 */
 	public static boolean validateResultTypeCodeSystem(Result result, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_RESULT_TYPE_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.RESULT);
@@ -103,6 +104,7 @@ public class ResultOperations extends ResultObservationOperations {
 					HITSPValidator.RESULT__RESULT_TYPE_CODE_SYSTEM,
 					HITSPPlugin.INSTANCE.getString("ResultTypeCodeSystem"), new Object[] { result }));
 			}
+
 			return false;
 		}
 		return true;
@@ -141,6 +143,7 @@ public class ResultOperations extends ResultObservationOperations {
 	 */
 	public static boolean validateResultLaboratoryResultsValueSet(Result result, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_RESULT_LABORATORY_RESULTS_VALUE_SET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.RESULT);
@@ -158,6 +161,7 @@ public class ResultOperations extends ResultObservationOperations {
 					HITSPValidator.RESULT__RESULT_LABORATORY_RESULTS_VALUE_SET,
 					HITSPPlugin.INSTANCE.getString("ResultLaboratoryResultsValueSet"), new Object[] { result }));
 			}
+
 			return false;
 		}
 		return true;
@@ -202,6 +206,7 @@ public class ResultOperations extends ResultObservationOperations {
 	 */
 	public static boolean validateResultValuePresence(Result result, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_RESULT_VALUE_PRESENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.RESULT);
@@ -217,6 +222,7 @@ public class ResultOperations extends ResultObservationOperations {
 					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE, HITSPValidator.RESULT__RESULT_VALUE_PRESENCE,
 					HITSPPlugin.INSTANCE.getString("ResultValuePresence"), new Object[] { result }));
 			}
+
 			return false;
 		}
 		return true;
@@ -255,6 +261,7 @@ public class ResultOperations extends ResultObservationOperations {
 	 */
 	public static boolean validateResultTemplateId(Result result, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_RESULT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.RESULT);
@@ -270,6 +277,7 @@ public class ResultOperations extends ResultObservationOperations {
 					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE, HITSPValidator.RESULT__RESULT_TEMPLATE_ID,
 					HITSPPlugin.INSTANCE.getString("ResultTemplateId"), new Object[] { result }));
 			}
+
 			return false;
 		}
 		return true;
@@ -307,6 +315,7 @@ public class ResultOperations extends ResultObservationOperations {
 	 * @generated
 	 */
 	public static boolean validateResultCode(Result result, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_RESULT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.RESULT);
@@ -322,6 +331,7 @@ public class ResultOperations extends ResultObservationOperations {
 					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE, HITSPValidator.RESULT__RESULT_CODE,
 					HITSPPlugin.INSTANCE.getString("ResultCode"), new Object[] { result }));
 			}
+
 			return false;
 		}
 		return true;
@@ -360,6 +370,7 @@ public class ResultOperations extends ResultObservationOperations {
 	 */
 	public static boolean validateResultEffectiveTime(Result result, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_RESULT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.RESULT);
@@ -375,6 +386,7 @@ public class ResultOperations extends ResultObservationOperations {
 					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE, HITSPValidator.RESULT__RESULT_EFFECTIVE_TIME,
 					HITSPPlugin.INSTANCE.getString("ResultEffectiveTime"), new Object[] { result }));
 			}
+
 			return false;
 		}
 		return true;
@@ -412,6 +424,7 @@ public class ResultOperations extends ResultObservationOperations {
 	 * @generated
 	 */
 	public static boolean validateResultValue(Result result, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_RESULT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.RESULT);
@@ -427,6 +440,7 @@ public class ResultOperations extends ResultObservationOperations {
 					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE, HITSPValidator.RESULT__RESULT_VALUE,
 					HITSPPlugin.INSTANCE.getString("ResultValue"), new Object[] { result }));
 			}
+
 			return false;
 		}
 		return true;

@@ -81,6 +81,7 @@ public class PolicySubscriberOperations extends ParticipantRoleOperations {
 	 */
 	public static boolean validatePolicySubscriberId(PolicySubscriber policySubscriber, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_POLICY_SUBSCRIBER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.POLICY_SUBSCRIBER);
@@ -97,6 +98,7 @@ public class PolicySubscriberOperations extends ParticipantRoleOperations {
 					CCDValidator.POLICY_SUBSCRIBER__POLICY_SUBSCRIBER_ID,
 					CCDPlugin.INSTANCE.getString("PolicySubscriberId"), new Object[] { policySubscriber }));
 			}
+
 			return false;
 		}
 		return true;

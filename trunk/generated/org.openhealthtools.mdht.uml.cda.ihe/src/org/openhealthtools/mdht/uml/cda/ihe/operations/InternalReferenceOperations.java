@@ -83,6 +83,7 @@ public class InternalReferenceOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateInternalReferenceTemplateId(InternalReference internalReference,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_INTERNAL_REFERENCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.INTERNAL_REFERENCE);
@@ -100,6 +101,7 @@ public class InternalReferenceOperations extends ClinicalStatementOperations {
 					IHEValidator.INTERNAL_REFERENCE__INTERNAL_REFERENCE_TEMPLATE_ID,
 					IHEPlugin.INSTANCE.getString("InternalReferenceTemplateId"), new Object[] { internalReference }));
 			}
+
 			return false;
 		}
 		return true;
@@ -138,6 +140,7 @@ public class InternalReferenceOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateInternalReferenceCode(InternalReference internalReference,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_INTERNAL_REFERENCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.INTERNAL_REFERENCE);
@@ -155,6 +158,7 @@ public class InternalReferenceOperations extends ClinicalStatementOperations {
 					IHEValidator.INTERNAL_REFERENCE__INTERNAL_REFERENCE_CODE,
 					IHEPlugin.INSTANCE.getString("InternalReferenceCode"), new Object[] { internalReference }));
 			}
+
 			return false;
 		}
 		return true;
@@ -193,6 +197,7 @@ public class InternalReferenceOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateInternalReferenceId(InternalReference internalReference, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_INTERNAL_REFERENCE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.INTERNAL_REFERENCE);
@@ -210,6 +215,7 @@ public class InternalReferenceOperations extends ClinicalStatementOperations {
 					IHEValidator.INTERNAL_REFERENCE__INTERNAL_REFERENCE_ID,
 					IHEPlugin.INSTANCE.getString("InternalReferenceId"), new Object[] { internalReference }));
 			}
+
 			return false;
 		}
 		return true;

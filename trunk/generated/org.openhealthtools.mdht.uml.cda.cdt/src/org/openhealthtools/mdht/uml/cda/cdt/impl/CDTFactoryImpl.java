@@ -15,7 +15,6 @@ import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.impl.EFactoryImpl;
 import org.eclipse.emf.ecore.plugin.EcorePlugin;
-import org.openhealthtools.mdht.uml.cda.cdt.*;
 import org.openhealthtools.mdht.uml.cda.cdt.AssessmentAndPlanSection;
 import org.openhealthtools.mdht.uml.cda.cdt.AssessmentAndPlanSectionProcNote;
 import org.openhealthtools.mdht.uml.cda.cdt.AssessmentSection;
@@ -66,12 +65,11 @@ public class CDTFactoryImpl extends EFactoryImpl implements CDTFactory {
 	 */
 	public static CDTFactory init() {
 		try {
-			CDTFactory theCDTFactory = (CDTFactory)EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/cdt"); 
+			CDTFactory theCDTFactory = (CDTFactory) EPackage.Registry.INSTANCE.getEFactory("http://www.openhealthtools.org/mdht/uml/cda/cdt");
 			if (theCDTFactory != null) {
 				return theCDTFactory;
 			}
-		}
-		catch (Exception exception) {
+		} catch (Exception exception) {
 			EcorePlugin.INSTANCE.log(exception);
 		}
 		return new CDTFactoryImpl();
@@ -95,38 +93,70 @@ public class CDTFactoryImpl extends EFactoryImpl implements CDTFactory {
 	@Override
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
-			case CDTPackage.GENERAL_HEADER_CONSTRAINTS: return createGeneralHeaderConstraints();
-			case CDTPackage.HISTORY_AND_PHYSICAL: return createHistoryAndPhysical();
-			case CDTPackage.HISTORY_OF_PRESENT_ILLNESS: return createHistoryOfPresentIllness();
-			case CDTPackage.PAST_MEDICAL_HISTORY_SECTION: return createPastMedicalHistorySection();
-			case CDTPackage.REVIEW_OF_SYSTEMS_SECTION_IHE: return createReviewOfSystemsSectionIHE();
-			case CDTPackage.PHYSICAL_EXAMINATION_SECTION: return createPhysicalExaminationSection();
-			case CDTPackage.VITAL_SIGNS_SECTION: return createVitalSignsSection();
-			case CDTPackage.GENERAL_STATUS_SECTION: return createGeneralStatusSection();
-			case CDTPackage.DIAGNOSTIC_FINDINGS: return createDiagnosticFindings();
-			case CDTPackage.CONSULTATION_NOTE: return createConsultationNote();
-			case CDTPackage.PAST_MEDICAL_HISTORY_SECTION_CONSULT: return createPastMedicalHistorySectionConsult();
-			case CDTPackage.REVIEW_OF_SYSTEMS_SECTION: return createReviewOfSystemsSection();
-			case CDTPackage.REASON_FOR_REFERRAL_SECTION: return createReasonForReferralSection();
-			case CDTPackage.REASON_FOR_VISIT_SECTION_CONSULT: return createReasonForVisitSectionConsult();
-			case CDTPackage.LEVEL_ONE_CONFORMANCE: return createLevelOneConformance();
-			case CDTPackage.LEVEL_TWO_CONFORMANCE: return createLevelTwoConformance();
-			case CDTPackage.LEVEL_THREE_CONFORMANCE: return createLevelThreeConformance();
-			case CDTPackage.ASSESSMENT_SECTION: return createAssessmentSection();
-			case CDTPackage.PLAN_SECTION: return createPlanSection();
-			case CDTPackage.ASSESSMENT_AND_PLAN_SECTION: return createAssessmentAndPlanSection();
-			case CDTPackage.REASON_FOR_VISIT_SECTION: return createReasonForVisitSection();
-			case CDTPackage.CHIEF_COMPLAINT_SECTION: return createChiefComplaintSection();
-			case CDTPackage.REASON_FOR_VISIT_AND_CHIEF_COMPLAINT_SECTION: return createReasonForVisitAndChiefComplaintSection();
-			case CDTPackage.PROGRESS_NOTE: return createProgressNote();
-			case CDTPackage.ASSESSMENT_AND_PLAN_SECTION_PROC_NOTE: return createAssessmentAndPlanSectionProcNote();
-			case CDTPackage.ASSESSMENT_SECTION_PROC_NOTE: return createAssessmentSectionProcNote();
-			case CDTPackage.CHIEF_COMPLAINT_SECTION_PROC_NOTE: return createChiefComplaintSectionProcNote();
-			case CDTPackage.OBJECTIVE_SECTION: return createObjectiveSection();
-			case CDTPackage.SUBJECTIVE_SECTION: return createSubjectiveSection();
-			case CDTPackage.UNSTRUCTURED_DOCUMENT: return createUnstructuredDocument();
-			case CDTPackage.HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION: return createHospitalDischargeStudiesSummarySection();
-			case CDTPackage.CDT_REGISTRY_DELEGATE: return createCDTRegistryDelegate();
+			case CDTPackage.GENERAL_HEADER_CONSTRAINTS:
+				return createGeneralHeaderConstraints();
+			case CDTPackage.HISTORY_AND_PHYSICAL:
+				return createHistoryAndPhysical();
+			case CDTPackage.HISTORY_OF_PRESENT_ILLNESS:
+				return createHistoryOfPresentIllness();
+			case CDTPackage.PAST_MEDICAL_HISTORY_SECTION:
+				return createPastMedicalHistorySection();
+			case CDTPackage.REVIEW_OF_SYSTEMS_SECTION_IHE:
+				return createReviewOfSystemsSectionIHE();
+			case CDTPackage.PHYSICAL_EXAMINATION_SECTION:
+				return createPhysicalExaminationSection();
+			case CDTPackage.VITAL_SIGNS_SECTION:
+				return createVitalSignsSection();
+			case CDTPackage.GENERAL_STATUS_SECTION:
+				return createGeneralStatusSection();
+			case CDTPackage.DIAGNOSTIC_FINDINGS:
+				return createDiagnosticFindings();
+			case CDTPackage.CONSULTATION_NOTE:
+				return createConsultationNote();
+			case CDTPackage.PAST_MEDICAL_HISTORY_SECTION_CONSULT:
+				return createPastMedicalHistorySectionConsult();
+			case CDTPackage.REVIEW_OF_SYSTEMS_SECTION:
+				return createReviewOfSystemsSection();
+			case CDTPackage.REASON_FOR_REFERRAL_SECTION:
+				return createReasonForReferralSection();
+			case CDTPackage.REASON_FOR_VISIT_SECTION_CONSULT:
+				return createReasonForVisitSectionConsult();
+			case CDTPackage.LEVEL_ONE_CONFORMANCE:
+				return createLevelOneConformance();
+			case CDTPackage.LEVEL_TWO_CONFORMANCE:
+				return createLevelTwoConformance();
+			case CDTPackage.LEVEL_THREE_CONFORMANCE:
+				return createLevelThreeConformance();
+			case CDTPackage.ASSESSMENT_SECTION:
+				return createAssessmentSection();
+			case CDTPackage.PLAN_SECTION:
+				return createPlanSection();
+			case CDTPackage.ASSESSMENT_AND_PLAN_SECTION:
+				return createAssessmentAndPlanSection();
+			case CDTPackage.REASON_FOR_VISIT_SECTION:
+				return createReasonForVisitSection();
+			case CDTPackage.CHIEF_COMPLAINT_SECTION:
+				return createChiefComplaintSection();
+			case CDTPackage.REASON_FOR_VISIT_AND_CHIEF_COMPLAINT_SECTION:
+				return createReasonForVisitAndChiefComplaintSection();
+			case CDTPackage.PROGRESS_NOTE:
+				return createProgressNote();
+			case CDTPackage.ASSESSMENT_AND_PLAN_SECTION_PROC_NOTE:
+				return createAssessmentAndPlanSectionProcNote();
+			case CDTPackage.ASSESSMENT_SECTION_PROC_NOTE:
+				return createAssessmentSectionProcNote();
+			case CDTPackage.CHIEF_COMPLAINT_SECTION_PROC_NOTE:
+				return createChiefComplaintSectionProcNote();
+			case CDTPackage.OBJECTIVE_SECTION:
+				return createObjectiveSection();
+			case CDTPackage.SUBJECTIVE_SECTION:
+				return createSubjectiveSection();
+			case CDTPackage.UNSTRUCTURED_DOCUMENT:
+				return createUnstructuredDocument();
+			case CDTPackage.HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION:
+				return createHospitalDischargeStudiesSummarySection();
+			case CDTPackage.CDT_REGISTRY_DELEGATE:
+				return createCDTRegistryDelegate();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -458,7 +488,7 @@ public class CDTFactoryImpl extends EFactoryImpl implements CDTFactory {
 	 * @generated
 	 */
 	public CDTPackage getCDTPackage() {
-		return (CDTPackage)getEPackage();
+		return (CDTPackage) getEPackage();
 	}
 
 	/**

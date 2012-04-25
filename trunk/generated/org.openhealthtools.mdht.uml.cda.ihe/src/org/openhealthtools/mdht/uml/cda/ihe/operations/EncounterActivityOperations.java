@@ -79,6 +79,7 @@ public class EncounterActivityOperations extends EncounterEntryOperations {
 	 */
 	public static boolean validateEncountersActivityTemplateId(EncounterActivity encounterActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ENCOUNTERS_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.ENCOUNTER_ACTIVITY);
@@ -102,6 +103,7 @@ public class EncounterActivityOperations extends EncounterEntryOperations {
 								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(encounterActivity, context) }),
 					new Object[] { encounterActivity }));
 			}
+
 			return false;
 		}
 		return true;

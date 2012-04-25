@@ -84,6 +84,7 @@ public class AdvanceDirectiveVerificationOperations extends Participant2Operatio
 	public static boolean validateAdvanceDirectiveVerificationTemplateId(
 			AdvanceDirectiveVerification advanceDirectiveVerification, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_ADVANCE_DIRECTIVE_VERIFICATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.ADVANCE_DIRECTIVE_VERIFICATION);
@@ -102,6 +103,7 @@ public class AdvanceDirectiveVerificationOperations extends Participant2Operatio
 					CCDPlugin.INSTANCE.getString("AdvanceDirectiveVerificationTemplateId"),
 					new Object[] { advanceDirectiveVerification }));
 			}
+
 			return false;
 		}
 		return true;
@@ -141,6 +143,7 @@ public class AdvanceDirectiveVerificationOperations extends Participant2Operatio
 	public static boolean validateAdvanceDirectiveVerificationTypeCode(
 			AdvanceDirectiveVerification advanceDirectiveVerification, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_ADVANCE_DIRECTIVE_VERIFICATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.ADVANCE_DIRECTIVE_VERIFICATION);
@@ -159,6 +162,7 @@ public class AdvanceDirectiveVerificationOperations extends Participant2Operatio
 					CCDPlugin.INSTANCE.getString("AdvanceDirectiveVerificationTypeCode"),
 					new Object[] { advanceDirectiveVerification }));
 			}
+
 			return false;
 		}
 		return true;
@@ -198,6 +202,7 @@ public class AdvanceDirectiveVerificationOperations extends Participant2Operatio
 	public static boolean validateAdvanceDirectiveVerificationTime(
 			AdvanceDirectiveVerification advanceDirectiveVerification, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_ADVANCE_DIRECTIVE_VERIFICATION_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.ADVANCE_DIRECTIVE_VERIFICATION);
@@ -216,6 +221,7 @@ public class AdvanceDirectiveVerificationOperations extends Participant2Operatio
 					CCDPlugin.INSTANCE.getString("AdvanceDirectiveVerificationTime"),
 					new Object[] { advanceDirectiveVerification }));
 			}
+
 			return false;
 		}
 		return true;

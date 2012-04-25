@@ -81,6 +81,7 @@ public class AdvanceDirectivesSectionOperations extends
 	 */
 	public static boolean validateIHEAdvanceDirectivesSectionTemplateId(
 			AdvanceDirectivesSection advanceDirectivesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_IHE_ADVANCE_DIRECTIVES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.ADVANCE_DIRECTIVES_SECTION);
@@ -99,6 +100,7 @@ public class AdvanceDirectivesSectionOperations extends
 					IHEPlugin.INSTANCE.getString("IHEAdvanceDirectivesSectionTemplateId"),
 					new Object[] { advanceDirectivesSection }));
 			}
+
 			return false;
 		}
 		return true;

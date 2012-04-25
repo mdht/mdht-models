@@ -23,7 +23,7 @@ import org.openhealthtools.mdht.uml.cda.ihe.ProcedureEntry;
  *
  * @see org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage#getProcedure()
  * @model abstract="true"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation contextDependent='true' templateId.root='2.16.840.1.113883.3.88.11.83.17' constraints.validation.error='HITSPProcedureTemplateId HITSPProcedureHasCodeOriginalText' targetSiteCode.codeSystem='2.16.840.1.113883.6.96' constraints.validation.warning='HITSPProcedurePerformerAssignedEntity HITSPProcedureTargetSiteCode HITSPProcedureCode' targetSiteCode.codeSystemName='SNOMEDCT'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='HITSPProcedureTemplateId HITSPProcedureHasCodeOriginalText' contextDependent='true' templateId.root='2.16.840.1.113883.3.88.11.83.17' constraints.validation.warning='HITSPProcedurePerformerAssignedEntity HITSPProcedureTargetSiteCode HITSPProcedureCode' targetSiteCode.codeSystemName='SNOMEDCT' targetSiteCode.codeSystem='2.16.840.1.113883.6.96'"
  * @generated
  */
 public interface Procedure extends ProcedureEntry {

@@ -82,6 +82,7 @@ public class TaperedDoseOperations extends MedicationOperations {
 	 */
 	public static boolean validateTaperedDoseTaperedDosingSubstanceAdministration(TaperedDose taperedDose,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_TAPERED_DOSE_TAPERED_DOSING_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.TAPERED_DOSE);
@@ -101,6 +102,7 @@ public class TaperedDoseOperations extends MedicationOperations {
 					IHEPlugin.INSTANCE.getString("TaperedDoseTaperedDosingSubstanceAdministration"),
 					new Object[] { taperedDose }));
 			}
+
 			return false;
 		}
 		return true;
@@ -139,6 +141,7 @@ public class TaperedDoseOperations extends MedicationOperations {
 	 */
 	public static boolean validateTaperedDoseTemplateId(TaperedDose taperedDose, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_TAPERED_DOSE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.TAPERED_DOSE);
@@ -155,6 +158,7 @@ public class TaperedDoseOperations extends MedicationOperations {
 					IHEValidator.TAPERED_DOSE__TAPERED_DOSE_TEMPLATE_ID,
 					IHEPlugin.INSTANCE.getString("TaperedDoseTemplateId"), new Object[] { taperedDose }));
 			}
+
 			return false;
 		}
 		return true;

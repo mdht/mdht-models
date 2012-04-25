@@ -109,6 +109,7 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 	public static boolean validateProcedureActivityProcedureTemplateId(
 			ProcedureActivityProcedure procedureActivityProcedure, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_ACTIVITY_PROCEDURE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PROCEDURE_ACTIVITY_PROCEDURE);
@@ -127,6 +128,7 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 					CCDPlugin.INSTANCE.getString("ProcedureActivityProcedureTemplateId"),
 					new Object[] { procedureActivityProcedure }));
 			}
+
 			return false;
 		}
 		return true;
@@ -166,6 +168,7 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 	public static boolean validateProcedureActivityProcedureMoodCode(
 			ProcedureActivityProcedure procedureActivityProcedure, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_ACTIVITY_PROCEDURE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PROCEDURE_ACTIVITY_PROCEDURE);
@@ -184,6 +187,7 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 					CCDPlugin.INSTANCE.getString("ProcedureActivityProcedureMoodCode"),
 					new Object[] { procedureActivityProcedure }));
 			}
+
 			return false;
 		}
 		return true;
@@ -222,6 +226,7 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 	 */
 	public static boolean validateProcedureActivityProcedureCode(ProcedureActivityProcedure procedureActivityProcedure,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_ACTIVITY_PROCEDURE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PROCEDURE_ACTIVITY_PROCEDURE);
@@ -240,6 +245,7 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 					CCDPlugin.INSTANCE.getString("ProcedureActivityProcedureCode"),
 					new Object[] { procedureActivityProcedure }));
 			}
+
 			return false;
 		}
 		return true;
@@ -279,6 +285,7 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 	public static boolean validateProcedureActivityProcedureEffectiveTime(
 			ProcedureActivityProcedure procedureActivityProcedure, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_ACTIVITY_PROCEDURE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PROCEDURE_ACTIVITY_PROCEDURE);
@@ -297,6 +304,7 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 					CCDPlugin.INSTANCE.getString("ProcedureActivityProcedureEffectiveTime"),
 					new Object[] { procedureActivityProcedure }));
 			}
+
 			return false;
 		}
 		return true;
@@ -335,6 +343,7 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 	 */
 	public static boolean validateProcedureActivityProcedureId(ProcedureActivityProcedure procedureActivityProcedure,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_ACTIVITY_PROCEDURE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PROCEDURE_ACTIVITY_PROCEDURE);
@@ -353,6 +362,7 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 					CCDPlugin.INSTANCE.getString("ProcedureActivityProcedureId"),
 					new Object[] { procedureActivityProcedure }));
 			}
+
 			return false;
 		}
 		return true;
@@ -394,6 +404,7 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 	public static boolean validateProcedureActivityProcedureSpecimen(
 			ProcedureActivityProcedure procedureActivityProcedure, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_ACTIVITY_PROCEDURE_SPECIMEN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PROCEDURE_ACTIVITY_PROCEDURE);
@@ -412,6 +423,7 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 					CCDPlugin.INSTANCE.getString("ProcedureActivityProcedureSpecimen"),
 					new Object[] { procedureActivityProcedure }));
 			}
+
 			return false;
 		}
 		return true;
@@ -453,6 +465,7 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 	public static boolean validateProcedureActivityProcedureEncounterLocation(
 			ProcedureActivityProcedure procedureActivityProcedure, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_ACTIVITY_PROCEDURE_ENCOUNTER_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PROCEDURE_ACTIVITY_PROCEDURE);
@@ -472,6 +485,7 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 					CCDPlugin.INSTANCE.getString("ProcedureActivityProcedureEncounterLocation"),
 					new Object[] { procedureActivityProcedure }));
 			}
+
 			return false;
 		}
 		return true;
@@ -513,6 +527,7 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 	public static boolean validateProcedureActivityProcedurePerformer2(
 			ProcedureActivityProcedure procedureActivityProcedure, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_ACTIVITY_PROCEDURE_PERFORMER2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PROCEDURE_ACTIVITY_PROCEDURE);
@@ -531,6 +546,7 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 					CCDPlugin.INSTANCE.getString("ProcedureActivityProcedurePerformer2"),
 					new Object[] { procedureActivityProcedure }));
 			}
+
 			return false;
 		}
 		return true;
@@ -570,6 +586,7 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 	public static boolean validateProcedureActivityProcedureProblemObservation(
 			ProcedureActivityProcedure procedureActivityProcedure, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_ACTIVITY_PROCEDURE_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PROCEDURE_ACTIVITY_PROCEDURE);
@@ -589,6 +606,7 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 					CCDPlugin.INSTANCE.getString("ProcedureActivityProcedureProblemObservation"),
 					new Object[] { procedureActivityProcedure }));
 			}
+
 			return false;
 		}
 		return true;
@@ -628,6 +646,7 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 	public static boolean validateProcedureActivityProcedureProblemAct(
 			ProcedureActivityProcedure procedureActivityProcedure, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_ACTIVITY_PROCEDURE_PROBLEM_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PROCEDURE_ACTIVITY_PROCEDURE);
@@ -646,6 +665,7 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 					CCDPlugin.INSTANCE.getString("ProcedureActivityProcedureProblemAct"),
 					new Object[] { procedureActivityProcedure }));
 			}
+
 			return false;
 		}
 		return true;
@@ -685,6 +705,7 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 	public static boolean validateProcedureActivityProcedureAgeObservation(
 			ProcedureActivityProcedure procedureActivityProcedure, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_ACTIVITY_PROCEDURE_AGE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PROCEDURE_ACTIVITY_PROCEDURE);
@@ -703,6 +724,7 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 					CCDPlugin.INSTANCE.getString("ProcedureActivityProcedureAgeObservation"),
 					new Object[] { procedureActivityProcedure }));
 			}
+
 			return false;
 		}
 		return true;
@@ -742,6 +764,7 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 	public static boolean validateProcedureActivityProcedureMedicationActivity(
 			ProcedureActivityProcedure procedureActivityProcedure, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_ACTIVITY_PROCEDURE_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PROCEDURE_ACTIVITY_PROCEDURE);
@@ -761,6 +784,7 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 					CCDPlugin.INSTANCE.getString("ProcedureActivityProcedureMedicationActivity"),
 					new Object[] { procedureActivityProcedure }));
 			}
+
 			return false;
 		}
 		return true;
@@ -800,6 +824,7 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 	public static boolean validateProcedureActivityProcedurePatientInstruction(
 			ProcedureActivityProcedure procedureActivityProcedure, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_ACTIVITY_PROCEDURE_PATIENT_INSTRUCTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PROCEDURE_ACTIVITY_PROCEDURE);
@@ -819,6 +844,7 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 					CCDPlugin.INSTANCE.getString("ProcedureActivityProcedurePatientInstruction"),
 					new Object[] { procedureActivityProcedure }));
 			}
+
 			return false;
 		}
 		return true;
@@ -858,7 +884,7 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				CCDPackage.Literals.PROCEDURE_ACTIVITY_PROCEDURE,
-				CCDPackage.Literals.PROCEDURE_ACTIVITY_PROCEDURE.getEAllOperations().get(62));
+				CCDPackage.Literals.PROCEDURE_ACTIVITY_PROCEDURE.getEAllOperations().get(64));
 			try {
 				GET_PROBLEM_OBSERVATION__EOCL_QRY = helper.createQuery(GET_PROBLEM_OBSERVATION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -903,7 +929,7 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				CCDPackage.Literals.PROCEDURE_ACTIVITY_PROCEDURE,
-				CCDPackage.Literals.PROCEDURE_ACTIVITY_PROCEDURE.getEAllOperations().get(63));
+				CCDPackage.Literals.PROCEDURE_ACTIVITY_PROCEDURE.getEAllOperations().get(65));
 			try {
 				GET_PROBLEM_ACT__EOCL_QRY = helper.createQuery(GET_PROBLEM_ACT__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -948,7 +974,7 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				CCDPackage.Literals.PROCEDURE_ACTIVITY_PROCEDURE,
-				CCDPackage.Literals.PROCEDURE_ACTIVITY_PROCEDURE.getEAllOperations().get(64));
+				CCDPackage.Literals.PROCEDURE_ACTIVITY_PROCEDURE.getEAllOperations().get(66));
 			try {
 				GET_AGE_OBSERVATION__EOCL_QRY = helper.createQuery(GET_AGE_OBSERVATION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -994,7 +1020,7 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				CCDPackage.Literals.PROCEDURE_ACTIVITY_PROCEDURE,
-				CCDPackage.Literals.PROCEDURE_ACTIVITY_PROCEDURE.getEAllOperations().get(65));
+				CCDPackage.Literals.PROCEDURE_ACTIVITY_PROCEDURE.getEAllOperations().get(67));
 			try {
 				GET_MEDICATION_ACTIVITIES__EOCL_QRY = helper.createQuery(GET_MEDICATION_ACTIVITIES__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1041,7 +1067,7 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				CCDPackage.Literals.PROCEDURE_ACTIVITY_PROCEDURE,
-				CCDPackage.Literals.PROCEDURE_ACTIVITY_PROCEDURE.getEAllOperations().get(66));
+				CCDPackage.Literals.PROCEDURE_ACTIVITY_PROCEDURE.getEAllOperations().get(68));
 			try {
 				GET_PATIENT_INSTRUCTIONS__EOCL_QRY = helper.createQuery(GET_PATIENT_INSTRUCTIONS__EOCL_EXP);
 			} catch (ParserException pe) {

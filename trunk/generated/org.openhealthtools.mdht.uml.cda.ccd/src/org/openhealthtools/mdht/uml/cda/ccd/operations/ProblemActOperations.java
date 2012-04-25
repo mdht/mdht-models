@@ -96,6 +96,7 @@ public class ProblemActOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateProblemActEntryRelationshipRequired(ProblemAct problemAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROBLEM_ACT_ENTRY_RELATIONSHIP_REQUIRED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PROBLEM_ACT);
@@ -113,6 +114,7 @@ public class ProblemActOperations extends ClinicalStatementOperations {
 					CCDValidator.PROBLEM_ACT__PROBLEM_ACT_ENTRY_RELATIONSHIP_REQUIRED,
 					CCDPlugin.INSTANCE.getString("ProblemActEntryRelationshipRequired"), new Object[] { problemAct }));
 			}
+
 			return false;
 		}
 		return true;
@@ -153,6 +155,7 @@ public class ProblemActOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateProblemActSubjectOfTarget(ProblemAct problemAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PROBLEM_ACT_SUBJECT_OF_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PROBLEM_ACT);
@@ -170,6 +173,7 @@ public class ProblemActOperations extends ClinicalStatementOperations {
 					CCDValidator.PROBLEM_ACT__PROBLEM_ACT_SUBJECT_OF_TARGET,
 					CCDPlugin.INSTANCE.getString("ProblemActSubjectOfTarget"), new Object[] { problemAct }));
 			}
+
 			return false;
 		}
 		return true;
@@ -210,6 +214,7 @@ public class ProblemActOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateProblemActContainsProblemObservation(ProblemAct problemAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROBLEM_ACT_CONTAINS_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PROBLEM_ACT);
@@ -227,6 +232,7 @@ public class ProblemActOperations extends ClinicalStatementOperations {
 					CCDValidator.PROBLEM_ACT__PROBLEM_ACT_CONTAINS_PROBLEM_OBSERVATION,
 					CCDPlugin.INSTANCE.getString("ProblemActContainsProblemObservation"), new Object[] { problemAct }));
 			}
+
 			return false;
 		}
 		return true;
@@ -267,6 +273,7 @@ public class ProblemActOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateProblemActContainsAlertObservation(ProblemAct problemAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROBLEM_ACT_CONTAINS_ALERT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PROBLEM_ACT);
@@ -284,6 +291,7 @@ public class ProblemActOperations extends ClinicalStatementOperations {
 					CCDValidator.PROBLEM_ACT__PROBLEM_ACT_CONTAINS_ALERT_OBSERVATION,
 					CCDPlugin.INSTANCE.getString("ProblemActContainsAlertObservation"), new Object[] { problemAct }));
 			}
+
 			return false;
 		}
 		return true;
@@ -322,6 +330,7 @@ public class ProblemActOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateProblemActContainsPatientAwareness(ProblemAct problemAct,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROBLEM_ACT_CONTAINS_PATIENT_AWARENESS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PROBLEM_ACT);
@@ -339,6 +348,7 @@ public class ProblemActOperations extends ClinicalStatementOperations {
 					CCDValidator.PROBLEM_ACT__PROBLEM_ACT_CONTAINS_PATIENT_AWARENESS,
 					CCDPlugin.INSTANCE.getString("ProblemActContainsPatientAwareness"), new Object[] { problemAct }));
 			}
+
 			return false;
 		}
 		return true;
@@ -377,6 +387,7 @@ public class ProblemActOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateProblemActTemplateId(ProblemAct problemAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PROBLEM_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PROBLEM_ACT);
@@ -393,6 +404,7 @@ public class ProblemActOperations extends ClinicalStatementOperations {
 					CCDValidator.PROBLEM_ACT__PROBLEM_ACT_TEMPLATE_ID,
 					CCDPlugin.INSTANCE.getString("ProblemActTemplateId"), new Object[] { problemAct }));
 			}
+
 			return false;
 		}
 		return true;
@@ -431,6 +443,7 @@ public class ProblemActOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateProblemActClassCode(ProblemAct problemAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PROBLEM_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PROBLEM_ACT);
@@ -446,6 +459,7 @@ public class ProblemActOperations extends ClinicalStatementOperations {
 					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE, CCDValidator.PROBLEM_ACT__PROBLEM_ACT_CLASS_CODE,
 					CCDPlugin.INSTANCE.getString("ProblemActClassCode"), new Object[] { problemAct }));
 			}
+
 			return false;
 		}
 		return true;
@@ -484,6 +498,7 @@ public class ProblemActOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateProblemActMoodCode(ProblemAct problemAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PROBLEM_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PROBLEM_ACT);
@@ -499,6 +514,7 @@ public class ProblemActOperations extends ClinicalStatementOperations {
 					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE, CCDValidator.PROBLEM_ACT__PROBLEM_ACT_MOOD_CODE,
 					CCDPlugin.INSTANCE.getString("ProblemActMoodCode"), new Object[] { problemAct }));
 			}
+
 			return false;
 		}
 		return true;
@@ -537,6 +553,7 @@ public class ProblemActOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateProblemActId(ProblemAct problemAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PROBLEM_ACT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PROBLEM_ACT);
@@ -552,6 +569,7 @@ public class ProblemActOperations extends ClinicalStatementOperations {
 					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE, CCDValidator.PROBLEM_ACT__PROBLEM_ACT_ID,
 					CCDPlugin.INSTANCE.getString("ProblemActId"), new Object[] { problemAct }));
 			}
+
 			return false;
 		}
 		return true;
@@ -590,6 +608,7 @@ public class ProblemActOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateProblemActCodeNullFlavor(ProblemAct problemAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PROBLEM_ACT_CODE_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PROBLEM_ACT);
@@ -607,6 +626,7 @@ public class ProblemActOperations extends ClinicalStatementOperations {
 					CCDValidator.PROBLEM_ACT__PROBLEM_ACT_CODE_NULL_FLAVOR,
 					CCDPlugin.INSTANCE.getString("ProblemActCodeNullFlavor"), new Object[] { problemAct }));
 			}
+
 			return false;
 		}
 		return true;
@@ -645,6 +665,7 @@ public class ProblemActOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateProblemActEffectiveTime(ProblemAct problemAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PROBLEM_ACT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PROBLEM_ACT);
@@ -661,6 +682,7 @@ public class ProblemActOperations extends ClinicalStatementOperations {
 					CCDValidator.PROBLEM_ACT__PROBLEM_ACT_EFFECTIVE_TIME,
 					CCDPlugin.INSTANCE.getString("ProblemActEffectiveTime"), new Object[] { problemAct }));
 			}
+
 			return false;
 		}
 		return true;
@@ -699,6 +721,7 @@ public class ProblemActOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateProblemActEpisodeObservation(ProblemAct problemAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PROBLEM_ACT_EPISODE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PROBLEM_ACT);
@@ -716,6 +739,7 @@ public class ProblemActOperations extends ClinicalStatementOperations {
 					CCDValidator.PROBLEM_ACT__PROBLEM_ACT_EPISODE_OBSERVATION,
 					CCDPlugin.INSTANCE.getString("ProblemActEpisodeObservation"), new Object[] { problemAct }));
 			}
+
 			return false;
 		}
 		return true;
@@ -754,7 +778,7 @@ public class ProblemActOperations extends ClinicalStatementOperations {
 		if (GET_EPISODE_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				CCDPackage.Literals.PROBLEM_ACT, CCDPackage.Literals.PROBLEM_ACT.getEAllOperations().get(61));
+				CCDPackage.Literals.PROBLEM_ACT, CCDPackage.Literals.PROBLEM_ACT.getEAllOperations().get(63));
 			try {
 				GET_EPISODE_OBSERVATION__EOCL_QRY = helper.createQuery(GET_EPISODE_OBSERVATION__EOCL_EXP);
 			} catch (ParserException pe) {

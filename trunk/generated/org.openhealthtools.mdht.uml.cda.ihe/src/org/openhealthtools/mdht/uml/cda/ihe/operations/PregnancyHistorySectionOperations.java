@@ -90,6 +90,7 @@ public class PregnancyHistorySectionOperations extends SectionOperations {
 	 */
 	public static boolean validatePregnancyHistorySectionTemplateId(PregnancyHistorySection pregnancyHistorySection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PREGNANCY_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.PREGNANCY_HISTORY_SECTION);
@@ -108,6 +109,7 @@ public class PregnancyHistorySectionOperations extends SectionOperations {
 					IHEPlugin.INSTANCE.getString("PregnancyHistorySectionTemplateId"),
 					new Object[] { pregnancyHistorySection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -122,8 +124,8 @@ public class PregnancyHistorySectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_PREGNANCY_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
-			+ "value.code = '10162-6' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
+			+ "value.code = '10162-6' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePregnancyHistorySectionCode(PregnancyHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pregnancy History Section Code</em>}' invariant operation.
@@ -140,8 +142,8 @@ public class PregnancyHistorySectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (self.code.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in (
-	 * value.code = '10162-6' and value.codeSystem = '2.16.840.1.113883.6.1'))
+	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+	 * value.code = '10162-6' and value.codeSystem = '2.16.840.1.113883.6.1')
 	 * @param pregnancyHistorySection The receiving '<em><b>Pregnancy History Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -150,6 +152,7 @@ public class PregnancyHistorySectionOperations extends SectionOperations {
 	 */
 	public static boolean validatePregnancyHistorySectionCode(PregnancyHistorySection pregnancyHistorySection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PREGNANCY_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.PREGNANCY_HISTORY_SECTION);
@@ -168,6 +171,7 @@ public class PregnancyHistorySectionOperations extends SectionOperations {
 					IHEPlugin.INSTANCE.getString("PregnancyHistorySectionCode"),
 					new Object[] { pregnancyHistorySection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -206,6 +210,7 @@ public class PregnancyHistorySectionOperations extends SectionOperations {
 	 */
 	public static boolean validatePregnancyHistorySectionPregnancyObservation(
 			PregnancyHistorySection pregnancyHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PREGNANCY_HISTORY_SECTION_PREGNANCY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.PREGNANCY_HISTORY_SECTION);
@@ -225,6 +230,7 @@ public class PregnancyHistorySectionOperations extends SectionOperations {
 					IHEPlugin.INSTANCE.getString("PregnancyHistorySectionPregnancyObservation"),
 					new Object[] { pregnancyHistorySection }));
 			}
+
 			return false;
 		}
 		return true;

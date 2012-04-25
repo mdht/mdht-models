@@ -85,6 +85,7 @@ public class ScanOriginalAuthorOperations extends AuthorOperations {
 	 */
 	public static boolean validateScanOriginalAuthorHasAssignedAuthorId(ScanOriginalAuthor scanOriginalAuthor,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_SCAN_ORIGINAL_AUTHOR_HAS_ASSIGNED_AUTHOR_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.SCAN_ORIGINAL_AUTHOR);
@@ -103,6 +104,7 @@ public class ScanOriginalAuthorOperations extends AuthorOperations {
 					IHEPlugin.INSTANCE.getString("ScanOriginalAuthorHasAssignedAuthorId"),
 					new Object[] { scanOriginalAuthor }));
 			}
+
 			return false;
 		}
 		return true;
@@ -143,6 +145,7 @@ public class ScanOriginalAuthorOperations extends AuthorOperations {
 	 */
 	public static boolean validateScanOriginalAuthorHasAssignedAuthorRepresentedOrganizationId(
 			ScanOriginalAuthor scanOriginalAuthor, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_SCAN_ORIGINAL_AUTHOR_HAS_ASSIGNED_AUTHOR_REPRESENTED_ORGANIZATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.SCAN_ORIGINAL_AUTHOR);
@@ -163,6 +166,7 @@ public class ScanOriginalAuthorOperations extends AuthorOperations {
 					IHEPlugin.INSTANCE.getString("ScanOriginalAuthorHasAssignedAuthorRepresentedOrganizationId"),
 					new Object[] { scanOriginalAuthor }));
 			}
+
 			return false;
 		}
 		return true;
@@ -201,6 +205,7 @@ public class ScanOriginalAuthorOperations extends AuthorOperations {
 	 */
 	public static boolean validateScanOriginalAuthorTemplateId(ScanOriginalAuthor scanOriginalAuthor,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_SCAN_ORIGINAL_AUTHOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.SCAN_ORIGINAL_AUTHOR);
@@ -218,6 +223,7 @@ public class ScanOriginalAuthorOperations extends AuthorOperations {
 					IHEValidator.SCAN_ORIGINAL_AUTHOR__SCAN_ORIGINAL_AUTHOR_TEMPLATE_ID,
 					IHEPlugin.INSTANCE.getString("ScanOriginalAuthorTemplateId"), new Object[] { scanOriginalAuthor }));
 			}
+
 			return false;
 		}
 		return true;

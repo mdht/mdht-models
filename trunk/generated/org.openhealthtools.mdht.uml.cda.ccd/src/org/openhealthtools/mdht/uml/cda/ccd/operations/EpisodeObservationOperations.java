@@ -90,6 +90,7 @@ public class EpisodeObservationOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateEpisodeObservationOneEntryRelationshipSUBJ(EpisodeObservation episodeObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_EPISODE_OBSERVATION_ONE_ENTRY_RELATIONSHIP_SUBJ__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.EPISODE_OBSERVATION);
@@ -109,6 +110,7 @@ public class EpisodeObservationOperations extends ClinicalStatementOperations {
 					CCDPlugin.INSTANCE.getString("EpisodeObservationOneEntryRelationshipSUBJ"),
 					new Object[] { episodeObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -149,6 +151,7 @@ public class EpisodeObservationOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateEpisodeObservationExistsEntryRelationshipSAS(EpisodeObservation episodeObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_EPISODE_OBSERVATION_EXISTS_ENTRY_RELATIONSHIP_SAS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.EPISODE_OBSERVATION);
@@ -168,6 +171,7 @@ public class EpisodeObservationOperations extends ClinicalStatementOperations {
 					CCDPlugin.INSTANCE.getString("EpisodeObservationExistsEntryRelationshipSAS"),
 					new Object[] { episodeObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -206,6 +210,7 @@ public class EpisodeObservationOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateEpisodeObservationTemplateId(EpisodeObservation episodeObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_EPISODE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.EPISODE_OBSERVATION);
@@ -223,6 +228,7 @@ public class EpisodeObservationOperations extends ClinicalStatementOperations {
 					CCDValidator.EPISODE_OBSERVATION__EPISODE_OBSERVATION_TEMPLATE_ID,
 					CCDPlugin.INSTANCE.getString("EpisodeObservationTemplateId"), new Object[] { episodeObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -261,6 +267,7 @@ public class EpisodeObservationOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateEpisodeObservationClassCode(EpisodeObservation episodeObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_EPISODE_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.EPISODE_OBSERVATION);
@@ -278,6 +285,7 @@ public class EpisodeObservationOperations extends ClinicalStatementOperations {
 					CCDValidator.EPISODE_OBSERVATION__EPISODE_OBSERVATION_CLASS_CODE,
 					CCDPlugin.INSTANCE.getString("EpisodeObservationClassCode"), new Object[] { episodeObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -316,6 +324,7 @@ public class EpisodeObservationOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateEpisodeObservationMoodCode(EpisodeObservation episodeObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_EPISODE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.EPISODE_OBSERVATION);
@@ -333,6 +342,7 @@ public class EpisodeObservationOperations extends ClinicalStatementOperations {
 					CCDValidator.EPISODE_OBSERVATION__EPISODE_OBSERVATION_MOOD_CODE,
 					CCDPlugin.INSTANCE.getString("EpisodeObservationMoodCode"), new Object[] { episodeObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -347,8 +357,7 @@ public class EpisodeObservationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_EPISODE_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "
-			+ "let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in ("
-			+ "value.code = 'completed'))";
+			+ "let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in " + "value.code = 'completed')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateEpisodeObservationStatusCode(EpisodeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Episode Observation Status Code</em>}' invariant operation.
@@ -365,8 +374,8 @@ public class EpisodeObservationOperations extends ClinicalStatementOperations {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
-	 * let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in (
-	 * value.code = 'completed'))
+	 * let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
+	 * value.code = 'completed')
 	 * @param episodeObservation The receiving '<em><b>Episode Observation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -375,6 +384,7 @@ public class EpisodeObservationOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateEpisodeObservationStatusCode(EpisodeObservation episodeObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_EPISODE_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.EPISODE_OBSERVATION);
@@ -392,6 +402,7 @@ public class EpisodeObservationOperations extends ClinicalStatementOperations {
 					CCDValidator.EPISODE_OBSERVATION__EPISODE_OBSERVATION_STATUS_CODE,
 					CCDPlugin.INSTANCE.getString("EpisodeObservationStatusCode"), new Object[] { episodeObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -406,8 +417,8 @@ public class EpisodeObservationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_EPISODE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in ("
-			+ "value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4'))";
+			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
+			+ "value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateEpisodeObservationCode(EpisodeObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Episode Observation Code</em>}' invariant operation.
@@ -424,8 +435,8 @@ public class EpisodeObservationOperations extends ClinicalStatementOperations {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
-	 * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (
-	 * value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4'))
+	 * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+	 * value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4')
 	 * @param episodeObservation The receiving '<em><b>Episode Observation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -434,6 +445,7 @@ public class EpisodeObservationOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateEpisodeObservationCode(EpisodeObservation episodeObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_EPISODE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.EPISODE_OBSERVATION);
@@ -451,6 +463,7 @@ public class EpisodeObservationOperations extends ClinicalStatementOperations {
 					CCDValidator.EPISODE_OBSERVATION__EPISODE_OBSERVATION_CODE,
 					CCDPlugin.INSTANCE.getString("EpisodeObservationCode"), new Object[] { episodeObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -493,6 +506,7 @@ public class EpisodeObservationOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateEpisodeObservationValue(EpisodeObservation episodeObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_EPISODE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.EPISODE_OBSERVATION);
@@ -510,6 +524,7 @@ public class EpisodeObservationOperations extends ClinicalStatementOperations {
 					CCDValidator.EPISODE_OBSERVATION__EPISODE_OBSERVATION_VALUE,
 					CCDPlugin.INSTANCE.getString("EpisodeObservationValue"), new Object[] { episodeObservation }));
 			}
+
 			return false;
 		}
 		return true;

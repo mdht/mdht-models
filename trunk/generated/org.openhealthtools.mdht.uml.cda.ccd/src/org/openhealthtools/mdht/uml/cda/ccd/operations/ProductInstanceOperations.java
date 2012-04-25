@@ -83,6 +83,7 @@ public class ProductInstanceOperations extends ParticipantRoleOperations {
 	 */
 	public static boolean validateProductInstanceHasScopingEntity(ProductInstance productInstance,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PRODUCT_INSTANCE_HAS_SCOPING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PRODUCT_INSTANCE);
@@ -100,6 +101,7 @@ public class ProductInstanceOperations extends ParticipantRoleOperations {
 					CCDValidator.PRODUCT_INSTANCE__PRODUCT_INSTANCE_HAS_SCOPING_ENTITY,
 					CCDPlugin.INSTANCE.getString("ProductInstanceHasScopingEntity"), new Object[] { productInstance }));
 			}
+
 			return false;
 		}
 		return true;
@@ -138,6 +140,7 @@ public class ProductInstanceOperations extends ParticipantRoleOperations {
 	 */
 	public static boolean validateProductInstanceTemplateId(ProductInstance productInstance,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PRODUCT_INSTANCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PRODUCT_INSTANCE);
@@ -155,6 +158,7 @@ public class ProductInstanceOperations extends ParticipantRoleOperations {
 					CCDValidator.PRODUCT_INSTANCE__PRODUCT_INSTANCE_TEMPLATE_ID,
 					CCDPlugin.INSTANCE.getString("ProductInstanceTemplateId"), new Object[] { productInstance }));
 			}
+
 			return false;
 		}
 		return true;
@@ -193,6 +197,7 @@ public class ProductInstanceOperations extends ParticipantRoleOperations {
 	 */
 	public static boolean validateProductInstanceClassCode(ProductInstance productInstance,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PRODUCT_INSTANCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PRODUCT_INSTANCE);
@@ -210,6 +215,7 @@ public class ProductInstanceOperations extends ParticipantRoleOperations {
 					CCDValidator.PRODUCT_INSTANCE__PRODUCT_INSTANCE_CLASS_CODE,
 					CCDPlugin.INSTANCE.getString("ProductInstanceClassCode"), new Object[] { productInstance }));
 			}
+
 			return false;
 		}
 		return true;

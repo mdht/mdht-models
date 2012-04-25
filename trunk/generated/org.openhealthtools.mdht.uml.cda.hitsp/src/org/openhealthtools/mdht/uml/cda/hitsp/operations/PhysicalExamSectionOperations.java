@@ -89,6 +89,7 @@ public class PhysicalExamSectionOperations extends PhysicalExaminationSectionOpe
 	 */
 	public static boolean validateHITSPPhysicalExamSectionTemplateId(PhysicalExamSection physicalExamSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_PHYSICAL_EXAM_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.PHYSICAL_EXAM_SECTION);
@@ -107,6 +108,7 @@ public class PhysicalExamSectionOperations extends PhysicalExaminationSectionOpe
 					HITSPPlugin.INSTANCE.getString("HITSPPhysicalExamSectionTemplateId"),
 					new Object[] { physicalExamSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -145,6 +147,7 @@ public class PhysicalExamSectionOperations extends PhysicalExaminationSectionOpe
 	 */
 	public static boolean validateHITSPPhysicalExamSectionCondition(PhysicalExamSection physicalExamSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_PHYSICAL_EXAM_SECTION_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.PHYSICAL_EXAM_SECTION);
@@ -163,6 +166,7 @@ public class PhysicalExamSectionOperations extends PhysicalExaminationSectionOpe
 					HITSPPlugin.INSTANCE.getString("HITSPPhysicalExamSectionCondition"),
 					new Object[] { physicalExamSection }));
 			}
+
 			return false;
 		}
 		return true;

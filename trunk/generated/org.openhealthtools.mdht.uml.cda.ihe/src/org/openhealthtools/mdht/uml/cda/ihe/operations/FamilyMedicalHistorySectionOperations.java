@@ -82,6 +82,7 @@ public class FamilyMedicalHistorySectionOperations extends FamilyHistorySectionO
 	public static boolean validateFamilyMedicalHistorySectionTemplateId(
 			FamilyMedicalHistorySection familyMedicalHistorySection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_FAMILY_MEDICAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.FAMILY_MEDICAL_HISTORY_SECTION);
@@ -100,6 +101,7 @@ public class FamilyMedicalHistorySectionOperations extends FamilyHistorySectionO
 					IHEPlugin.INSTANCE.getString("FamilyMedicalHistorySectionTemplateId"),
 					new Object[] { familyMedicalHistorySection }));
 			}
+
 			return false;
 		}
 		return true;

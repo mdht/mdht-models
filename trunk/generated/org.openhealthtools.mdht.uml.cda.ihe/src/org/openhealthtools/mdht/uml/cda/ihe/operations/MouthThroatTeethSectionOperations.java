@@ -83,6 +83,7 @@ public class MouthThroatTeethSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateMouthThroatTeethSectionTemplateId(MouthThroatTeethSection mouthThroatTeethSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MOUTH_THROAT_TEETH_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.MOUTH_THROAT_TEETH_SECTION);
@@ -101,6 +102,7 @@ public class MouthThroatTeethSectionOperations extends SectionOperations {
 					IHEPlugin.INSTANCE.getString("MouthThroatTeethSectionTemplateId"),
 					new Object[] { mouthThroatTeethSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -115,8 +117,8 @@ public class MouthThroatTeethSectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_MOUTH_THROAT_TEETH_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
-			+ "value.code = '10201-2' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
+			+ "value.code = '10201-2' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMouthThroatTeethSectionCode(MouthThroatTeethSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mouth Throat Teeth Section Code</em>}' invariant operation.
@@ -133,8 +135,8 @@ public class MouthThroatTeethSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in (
-	 * value.code = '10201-2' and value.codeSystem = '2.16.840.1.113883.6.1'))
+	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+	 * value.code = '10201-2' and value.codeSystem = '2.16.840.1.113883.6.1')
 	 * @param mouthThroatTeethSection The receiving '<em><b>Mouth Throat Teeth Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -143,6 +145,7 @@ public class MouthThroatTeethSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateMouthThroatTeethSectionCode(MouthThroatTeethSection mouthThroatTeethSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MOUTH_THROAT_TEETH_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.MOUTH_THROAT_TEETH_SECTION);
@@ -161,6 +164,7 @@ public class MouthThroatTeethSectionOperations extends SectionOperations {
 					IHEPlugin.INSTANCE.getString("MouthThroatTeethSectionCode"),
 					new Object[] { mouthThroatTeethSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -199,6 +203,7 @@ public class MouthThroatTeethSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateMouthThroatTeethSectionProblemEntry(MouthThroatTeethSection mouthThroatTeethSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MOUTH_THROAT_TEETH_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.MOUTH_THROAT_TEETH_SECTION);
@@ -217,6 +222,7 @@ public class MouthThroatTeethSectionOperations extends SectionOperations {
 					IHEPlugin.INSTANCE.getString("MouthThroatTeethSectionProblemEntry"),
 					new Object[] { mouthThroatTeethSection }));
 			}
+
 			return false;
 		}
 		return true;

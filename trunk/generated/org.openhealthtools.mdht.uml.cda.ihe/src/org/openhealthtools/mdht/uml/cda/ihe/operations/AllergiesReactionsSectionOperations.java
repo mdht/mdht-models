@@ -90,6 +90,7 @@ public class AllergiesReactionsSectionOperations extends AlertsSectionOperations
 	public static boolean validateAllergiesReactionsSectionTemplateId(
 			AllergiesReactionsSection allergiesReactionsSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_ALLERGIES_REACTIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.ALLERGIES_REACTIONS_SECTION);
@@ -108,6 +109,7 @@ public class AllergiesReactionsSectionOperations extends AlertsSectionOperations
 					IHEPlugin.INSTANCE.getString("AllergiesReactionsSectionTemplateId"),
 					new Object[] { allergiesReactionsSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -147,6 +149,7 @@ public class AllergiesReactionsSectionOperations extends AlertsSectionOperations
 	public static boolean validateAllergiesReactionsSectionAllergyIntoleranceConcern(
 			AllergiesReactionsSection allergiesReactionsSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_ALLERGIES_REACTIONS_SECTION_ALLERGY_INTOLERANCE_CONCERN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.ALLERGIES_REACTIONS_SECTION);
@@ -166,6 +169,7 @@ public class AllergiesReactionsSectionOperations extends AlertsSectionOperations
 					IHEPlugin.INSTANCE.getString("AllergiesReactionsSectionAllergyIntoleranceConcern"),
 					new Object[] { allergiesReactionsSection }));
 			}
+
 			return false;
 		}
 		return true;

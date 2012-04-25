@@ -103,6 +103,7 @@ public class InsuranceProviderOperations extends CoverageEntryOperations {
 	 */
 	public static boolean validateInsuranceProviderPaymentProviders(InsuranceProvider insuranceProvider,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_INSURANCE_PROVIDER_PAYMENT_PROVIDERS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.INSURANCE_PROVIDER);
@@ -121,6 +122,7 @@ public class InsuranceProviderOperations extends CoverageEntryOperations {
 					HITSPPlugin.INSTANCE.getString("InsuranceProviderPaymentProviders"),
 					new Object[] { insuranceProvider }));
 			}
+
 			return false;
 		}
 		return true;
@@ -159,6 +161,7 @@ public class InsuranceProviderOperations extends CoverageEntryOperations {
 	 */
 	public static boolean validateInsuranceProviderPayerEntryID(InsuranceProvider insuranceProvider,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_INSURANCE_PROVIDER_PAYER_ENTRY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.INSURANCE_PROVIDER);
@@ -176,6 +179,7 @@ public class InsuranceProviderOperations extends CoverageEntryOperations {
 					HITSPValidator.INSURANCE_PROVIDER__INSURANCE_PROVIDER_PAYER_ENTRY_ID,
 					HITSPPlugin.INSTANCE.getString("InsuranceProviderPayerEntryID"), new Object[] { insuranceProvider }));
 			}
+
 			return false;
 		}
 		return true;
@@ -214,6 +218,7 @@ public class InsuranceProviderOperations extends CoverageEntryOperations {
 	 */
 	public static boolean validateInsuranceProviderHealthInsuranceType(InsuranceProvider insuranceProvider,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_INSURANCE_PROVIDER_HEALTH_INSURANCE_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.INSURANCE_PROVIDER);
@@ -232,6 +237,7 @@ public class InsuranceProviderOperations extends CoverageEntryOperations {
 					HITSPPlugin.INSTANCE.getString("InsuranceProviderHealthInsuranceType"),
 					new Object[] { insuranceProvider }));
 			}
+
 			return false;
 		}
 		return true;
@@ -270,6 +276,7 @@ public class InsuranceProviderOperations extends CoverageEntryOperations {
 	 */
 	public static boolean validateInsuranceProviderInsuranceInformation(InsuranceProvider insuranceProvider,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_INSURANCE_PROVIDER_INSURANCE_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.INSURANCE_PROVIDER);
@@ -288,6 +295,7 @@ public class InsuranceProviderOperations extends CoverageEntryOperations {
 					HITSPPlugin.INSTANCE.getString("InsuranceProviderInsuranceInformation"),
 					new Object[] { insuranceProvider }));
 			}
+
 			return false;
 		}
 		return true;
@@ -326,6 +334,7 @@ public class InsuranceProviderOperations extends CoverageEntryOperations {
 	 */
 	public static boolean validateInsuranceProviderInsuranceInfoSourceID(InsuranceProvider insuranceProvider,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_INSURANCE_PROVIDER_INSURANCE_INFO_SOURCE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.INSURANCE_PROVIDER);
@@ -344,6 +353,7 @@ public class InsuranceProviderOperations extends CoverageEntryOperations {
 					HITSPPlugin.INSTANCE.getString("InsuranceProviderInsuranceInfoSourceID"),
 					new Object[] { insuranceProvider }));
 			}
+
 			return false;
 		}
 		return true;
@@ -382,6 +392,7 @@ public class InsuranceProviderOperations extends CoverageEntryOperations {
 	 */
 	public static boolean validateInsuranceProviderInsuranceInfoSourceAddr(InsuranceProvider insuranceProvider,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_INSURANCE_PROVIDER_INSURANCE_INFO_SOURCE_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.INSURANCE_PROVIDER);
@@ -401,6 +412,7 @@ public class InsuranceProviderOperations extends CoverageEntryOperations {
 					HITSPPlugin.INSTANCE.getString("InsuranceProviderInsuranceInfoSourceAddr"),
 					new Object[] { insuranceProvider }));
 			}
+
 			return false;
 		}
 		return true;
@@ -439,6 +451,7 @@ public class InsuranceProviderOperations extends CoverageEntryOperations {
 	 */
 	public static boolean validateInsuranceProviderHealthPlanCoverageStartTime(InsuranceProvider insuranceProvider,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_INSURANCE_PROVIDER_HEALTH_PLAN_COVERAGE_START_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.INSURANCE_PROVIDER);
@@ -458,6 +471,7 @@ public class InsuranceProviderOperations extends CoverageEntryOperations {
 					HITSPPlugin.INSTANCE.getString("InsuranceProviderHealthPlanCoverageStartTime"),
 					new Object[] { insuranceProvider }));
 			}
+
 			return false;
 		}
 		return true;
@@ -496,6 +510,7 @@ public class InsuranceProviderOperations extends CoverageEntryOperations {
 	 */
 	public static boolean validateInsuranceProviderHealthPlanCoverageStopTime(InsuranceProvider insuranceProvider,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_INSURANCE_PROVIDER_HEALTH_PLAN_COVERAGE_STOP_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.INSURANCE_PROVIDER);
@@ -515,6 +530,7 @@ public class InsuranceProviderOperations extends CoverageEntryOperations {
 					HITSPPlugin.INSTANCE.getString("InsuranceProviderHealthPlanCoverageStopTime"),
 					new Object[] { insuranceProvider }));
 			}
+
 			return false;
 		}
 		return true;
@@ -553,6 +569,7 @@ public class InsuranceProviderOperations extends CoverageEntryOperations {
 	 */
 	public static boolean validateInsuranceProviderPatientInformation(InsuranceProvider insuranceProvider,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_INSURANCE_PROVIDER_PATIENT_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.INSURANCE_PROVIDER);
@@ -571,6 +588,7 @@ public class InsuranceProviderOperations extends CoverageEntryOperations {
 					HITSPPlugin.INSTANCE.getString("InsuranceProviderPatientInformation"),
 					new Object[] { insuranceProvider }));
 			}
+
 			return false;
 		}
 		return true;
@@ -609,6 +627,7 @@ public class InsuranceProviderOperations extends CoverageEntryOperations {
 	 */
 	public static boolean validateInsuranceProviderMemberId(InsuranceProvider insuranceProvider,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_INSURANCE_PROVIDER_MEMBER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.INSURANCE_PROVIDER);
@@ -626,6 +645,7 @@ public class InsuranceProviderOperations extends CoverageEntryOperations {
 					HITSPValidator.INSURANCE_PROVIDER__INSURANCE_PROVIDER_MEMBER_ID,
 					HITSPPlugin.INSTANCE.getString("InsuranceProviderMemberId"), new Object[] { insuranceProvider }));
 			}
+
 			return false;
 		}
 		return true;
@@ -664,6 +684,7 @@ public class InsuranceProviderOperations extends CoverageEntryOperations {
 	 */
 	public static boolean validateInsuranceProviderMemberIdRoot(InsuranceProvider insuranceProvider,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_INSURANCE_PROVIDER_MEMBER_ID_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.INSURANCE_PROVIDER);
@@ -681,6 +702,7 @@ public class InsuranceProviderOperations extends CoverageEntryOperations {
 					HITSPValidator.INSURANCE_PROVIDER__INSURANCE_PROVIDER_MEMBER_ID_ROOT,
 					HITSPPlugin.INSTANCE.getString("InsuranceProviderMemberIdRoot"), new Object[] { insuranceProvider }));
 			}
+
 			return false;
 		}
 		return true;
@@ -719,6 +741,7 @@ public class InsuranceProviderOperations extends CoverageEntryOperations {
 	 */
 	public static boolean validateInsuranceProviderRelationshipToSubscriber(InsuranceProvider insuranceProvider,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_INSURANCE_PROVIDER_RELATIONSHIP_TO_SUBSCRIBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.INSURANCE_PROVIDER);
@@ -738,6 +761,7 @@ public class InsuranceProviderOperations extends CoverageEntryOperations {
 					HITSPPlugin.INSTANCE.getString("InsuranceProviderRelationshipToSubscriber"),
 					new Object[] { insuranceProvider }));
 			}
+
 			return false;
 		}
 		return true;
@@ -776,6 +800,7 @@ public class InsuranceProviderOperations extends CoverageEntryOperations {
 	 */
 	public static boolean validateInsuranceProviderRelationshipToSubscriberCodeSystem(
 			InsuranceProvider insuranceProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_INSURANCE_PROVIDER_RELATIONSHIP_TO_SUBSCRIBER_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.INSURANCE_PROVIDER);
@@ -795,6 +820,7 @@ public class InsuranceProviderOperations extends CoverageEntryOperations {
 					HITSPPlugin.INSTANCE.getString("InsuranceProviderRelationshipToSubscriberCodeSystem"),
 					new Object[] { insuranceProvider }));
 			}
+
 			return false;
 		}
 		return true;
@@ -833,6 +859,7 @@ public class InsuranceProviderOperations extends CoverageEntryOperations {
 	 */
 	public static boolean validateInsuranceProviderPatientName(InsuranceProvider insuranceProvider,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_INSURANCE_PROVIDER_PATIENT_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.INSURANCE_PROVIDER);
@@ -850,6 +877,7 @@ public class InsuranceProviderOperations extends CoverageEntryOperations {
 					HITSPValidator.INSURANCE_PROVIDER__INSURANCE_PROVIDER_PATIENT_NAME,
 					HITSPPlugin.INSTANCE.getString("InsuranceProviderPatientName"), new Object[] { insuranceProvider }));
 			}
+
 			return false;
 		}
 		return true;
@@ -888,6 +916,7 @@ public class InsuranceProviderOperations extends CoverageEntryOperations {
 	 */
 	public static boolean validateInsuranceProviderSubscriberInformation(InsuranceProvider insuranceProvider,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_INSURANCE_PROVIDER_SUBSCRIBER_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.INSURANCE_PROVIDER);
@@ -906,6 +935,7 @@ public class InsuranceProviderOperations extends CoverageEntryOperations {
 					HITSPPlugin.INSTANCE.getString("InsuranceProviderSubscriberInformation"),
 					new Object[] { insuranceProvider }));
 			}
+
 			return false;
 		}
 		return true;
@@ -944,6 +974,7 @@ public class InsuranceProviderOperations extends CoverageEntryOperations {
 	 */
 	public static boolean validateInsuranceProviderSubscriberId(InsuranceProvider insuranceProvider,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_INSURANCE_PROVIDER_SUBSCRIBER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.INSURANCE_PROVIDER);
@@ -961,6 +992,7 @@ public class InsuranceProviderOperations extends CoverageEntryOperations {
 					HITSPValidator.INSURANCE_PROVIDER__INSURANCE_PROVIDER_SUBSCRIBER_ID,
 					HITSPPlugin.INSTANCE.getString("InsuranceProviderSubscriberId"), new Object[] { insuranceProvider }));
 			}
+
 			return false;
 		}
 		return true;
@@ -999,6 +1031,7 @@ public class InsuranceProviderOperations extends CoverageEntryOperations {
 	 */
 	public static boolean validateInsuranceProviderSubscriberIdRoot(InsuranceProvider insuranceProvider,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_INSURANCE_PROVIDER_SUBSCRIBER_ID_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.INSURANCE_PROVIDER);
@@ -1017,6 +1050,7 @@ public class InsuranceProviderOperations extends CoverageEntryOperations {
 					HITSPPlugin.INSTANCE.getString("InsuranceProviderSubscriberIdRoot"),
 					new Object[] { insuranceProvider }));
 			}
+
 			return false;
 		}
 		return true;
@@ -1055,6 +1089,7 @@ public class InsuranceProviderOperations extends CoverageEntryOperations {
 	 */
 	public static boolean validateInsuranceProviderSubscriberAddress(InsuranceProvider insuranceProvider,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_INSURANCE_PROVIDER_SUBSCRIBER_ADDRESS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.INSURANCE_PROVIDER);
@@ -1073,6 +1108,7 @@ public class InsuranceProviderOperations extends CoverageEntryOperations {
 					HITSPPlugin.INSTANCE.getString("InsuranceProviderSubscriberAddress"),
 					new Object[] { insuranceProvider }));
 			}
+
 			return false;
 		}
 		return true;
@@ -1111,6 +1147,7 @@ public class InsuranceProviderOperations extends CoverageEntryOperations {
 	 */
 	public static boolean validateInsuranceProviderFinancialResponsibilityPartyType(
 			InsuranceProvider insuranceProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_INSURANCE_PROVIDER_FINANCIAL_RESPONSIBILITY_PARTY_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.INSURANCE_PROVIDER);
@@ -1130,6 +1167,7 @@ public class InsuranceProviderOperations extends CoverageEntryOperations {
 					HITSPPlugin.INSTANCE.getString("InsuranceProviderFinancialResponsibilityPartyType"),
 					new Object[] { insuranceProvider }));
 			}
+
 			return false;
 		}
 		return true;
@@ -1168,6 +1206,7 @@ public class InsuranceProviderOperations extends CoverageEntryOperations {
 	 */
 	public static boolean validateInsuranceProviderFinancialResponsibilityPartyTypeCode(
 			InsuranceProvider insuranceProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_INSURANCE_PROVIDER_FINANCIAL_RESPONSIBILITY_PARTY_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.INSURANCE_PROVIDER);
@@ -1187,6 +1226,7 @@ public class InsuranceProviderOperations extends CoverageEntryOperations {
 					HITSPPlugin.INSTANCE.getString("InsuranceProviderFinancialResponsibilityPartyTypeCode"),
 					new Object[] { insuranceProvider }));
 			}
+
 			return false;
 		}
 		return true;
@@ -1225,6 +1265,7 @@ public class InsuranceProviderOperations extends CoverageEntryOperations {
 	 */
 	public static boolean validateInsuranceProviderFinancialResponsibilityPartyAddress(
 			InsuranceProvider insuranceProvider, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_INSURANCE_PROVIDER_FINANCIAL_RESPONSIBILITY_PARTY_ADDRESS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.INSURANCE_PROVIDER);
@@ -1244,6 +1285,7 @@ public class InsuranceProviderOperations extends CoverageEntryOperations {
 					HITSPPlugin.INSTANCE.getString("InsuranceProviderFinancialResponsibilityPartyAddress"),
 					new Object[] { insuranceProvider }));
 			}
+
 			return false;
 		}
 		return true;
@@ -1282,6 +1324,7 @@ public class InsuranceProviderOperations extends CoverageEntryOperations {
 	 */
 	public static boolean validateInsuranceProviderTemplateId(InsuranceProvider insuranceProvider,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_INSURANCE_PROVIDER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.INSURANCE_PROVIDER);
@@ -1299,6 +1342,7 @@ public class InsuranceProviderOperations extends CoverageEntryOperations {
 					HITSPValidator.INSURANCE_PROVIDER__INSURANCE_PROVIDER_TEMPLATE_ID,
 					HITSPPlugin.INSTANCE.getString("InsuranceProviderTemplateId"), new Object[] { insuranceProvider }));
 			}
+
 			return false;
 		}
 		return true;
@@ -1313,8 +1357,8 @@ public class InsuranceProviderOperations extends CoverageEntryOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_COVERAGE_ACTIVITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in ("
-			+ "value.code = '48768-6' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
+			+ "value.code = '48768-6' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateCoverageActivityCode(InsuranceProvider, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Activity Code</em>}' invariant operation.
@@ -1331,8 +1375,8 @@ public class InsuranceProviderOperations extends CoverageEntryOperations {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
-	 * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (
-	 * value.code = '48768-6' and value.codeSystem = '2.16.840.1.113883.6.1'))
+	 * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+	 * value.code = '48768-6' and value.codeSystem = '2.16.840.1.113883.6.1')
 	 * @param insuranceProvider The receiving '<em><b>Insurance Provider</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1341,6 +1385,7 @@ public class InsuranceProviderOperations extends CoverageEntryOperations {
 	 */
 	public static boolean validateCoverageActivityCode(InsuranceProvider insuranceProvider,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_COVERAGE_ACTIVITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.INSURANCE_PROVIDER);
@@ -1358,6 +1403,7 @@ public class InsuranceProviderOperations extends CoverageEntryOperations {
 					HITSPValidator.INSURANCE_PROVIDER__COVERAGE_ACTIVITY_CODE,
 					HITSPPlugin.INSTANCE.getString("CoverageActivityCode"), new Object[] { insuranceProvider }));
 			}
+
 			return false;
 		}
 		return true;

@@ -63,9 +63,8 @@ public class VitalSignImpl extends VitalSignObservationImpl implements VitalSign
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	public boolean validateResultObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return VitalSignOperations.validateResultObservationCode(this, diagnostics, context);
+	public boolean validateVitalSignObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return VitalSignOperations.validateVitalSignObservationCode(this, diagnostics, context);
 	}
 
 	/**

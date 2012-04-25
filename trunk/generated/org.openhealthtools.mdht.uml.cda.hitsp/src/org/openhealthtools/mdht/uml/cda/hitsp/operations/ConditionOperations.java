@@ -98,6 +98,7 @@ public class ConditionOperations extends ProblemConcernEntryOperations {
 	 */
 	public static boolean validateConditionHasTreatingProvider(Condition condition, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_CONDITION_HAS_TREATING_PROVIDER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.CONDITION);
@@ -115,6 +116,7 @@ public class ConditionOperations extends ProblemConcernEntryOperations {
 					HITSPValidator.CONDITION__CONDITION_HAS_TREATING_PROVIDER,
 					HITSPPlugin.INSTANCE.getString("ConditionHasTreatingProvider"), new Object[] { condition }));
 			}
+
 			return false;
 		}
 		return true;
@@ -153,6 +155,7 @@ public class ConditionOperations extends ProblemConcernEntryOperations {
 	 */
 	public static boolean validateConditionHasProviderId(Condition condition, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_CONDITION_HAS_PROVIDER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.CONDITION);
@@ -169,6 +172,7 @@ public class ConditionOperations extends ProblemConcernEntryOperations {
 					HITSPValidator.CONDITION__CONDITION_HAS_PROVIDER_ID,
 					HITSPPlugin.INSTANCE.getString("ConditionHasProviderId"), new Object[] { condition }));
 			}
+
 			return false;
 		}
 		return true;
@@ -207,6 +211,7 @@ public class ConditionOperations extends ProblemConcernEntryOperations {
 	 */
 	public static boolean validateConditionHasProviderTreatmentTime(Condition condition, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_CONDITION_HAS_PROVIDER_TREATMENT_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.CONDITION);
@@ -224,6 +229,7 @@ public class ConditionOperations extends ProblemConcernEntryOperations {
 					HITSPValidator.CONDITION__CONDITION_HAS_PROVIDER_TREATMENT_TIME,
 					HITSPPlugin.INSTANCE.getString("ConditionHasProviderTreatmentTime"), new Object[] { condition }));
 			}
+
 			return false;
 		}
 		return true;
@@ -262,6 +268,7 @@ public class ConditionOperations extends ProblemConcernEntryOperations {
 	 */
 	public static boolean validateConditionTemplateId(Condition condition, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_CONDITION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.CONDITION);
@@ -278,6 +285,7 @@ public class ConditionOperations extends ProblemConcernEntryOperations {
 					HITSPValidator.CONDITION__CONDITION_TEMPLATE_ID,
 					HITSPPlugin.INSTANCE.getString("ConditionTemplateId"), new Object[] { condition }));
 			}
+
 			return false;
 		}
 		return true;
@@ -316,6 +324,7 @@ public class ConditionOperations extends ProblemConcernEntryOperations {
 	 */
 	public static boolean validateConditionConditionEntry(Condition condition, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_CONDITION_CONDITION_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.CONDITION);
@@ -332,6 +341,7 @@ public class ConditionOperations extends ProblemConcernEntryOperations {
 					HITSPValidator.CONDITION__CONDITION_CONDITION_ENTRY,
 					HITSPPlugin.INSTANCE.getString("ConditionConditionEntry"), new Object[] { condition }));
 			}
+
 			return false;
 		}
 		return true;
@@ -385,7 +395,7 @@ public class ConditionOperations extends ProblemConcernEntryOperations {
 		if (GET_CONDITION_ENTRIES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				HITSPPackage.Literals.CONDITION, HITSPPackage.Literals.CONDITION.getEAllOperations().get(77));
+				HITSPPackage.Literals.CONDITION, HITSPPackage.Literals.CONDITION.getEAllOperations().get(79));
 			try {
 				GET_CONDITION_ENTRIES__EOCL_QRY = helper.createQuery(GET_CONDITION_ENTRIES__EOCL_EXP);
 			} catch (ParserException pe) {

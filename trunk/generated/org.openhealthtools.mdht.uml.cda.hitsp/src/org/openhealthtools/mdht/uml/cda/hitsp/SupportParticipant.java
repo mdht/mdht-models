@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.ihe.PatientContactParticipant;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage#getSupportParticipant()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.3.88.11.83.3' constraints.validation.error='HITSPSupportParticipantTemplateId'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='HITSPSupportParticipantTemplateId' templateId.root='2.16.840.1.113883.3.88.11.83.3'"
  * @generated
  */
 public interface SupportParticipant extends PatientContactParticipant, Support {

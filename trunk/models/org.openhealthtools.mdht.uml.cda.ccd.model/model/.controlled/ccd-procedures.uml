@@ -555,10 +555,6 @@ The value for &quot;[Act | Observation | Procedure] / statusCode&quot; in a proc
   <CDA:PropertyValidation xmi:id="_srep8AoJEeGu0LskOlDe_A" base_Property="_kZciUwoJEeGu0LskOlDe_A">
     <ruleId>CONF-429</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_wJQYYAoJEeGu0LskOlDe_A" base_Property="_kZdJYgoJEeGu0LskOlDe_A">
-    <ruleId>CONF-430</ruleId>
-    <ruleId>CONF-431</ruleId>
-  </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_0SdpcAoJEeGu0LskOlDe_A" severity="WARNING" base_Property="_kZciUAoJEeGu0LskOlDe_A">
     <ruleId>CONF-432</ruleId>
   </CDA:PropertyValidation>
@@ -566,7 +562,10 @@ The value for &quot;[Act | Observation | Procedure] / statusCode&quot; in a proc
     <ruleId>CONF-433</ruleId>
     <ruleId>CONF-434</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ValueSetConstraint xmi:id="_QZ01YAoNEeGu0LskOlDe_A" base_Property="_kZdJYgoJEeGu0LskOlDe_A"/>
+  <CDA:ValueSetConstraint xmi:id="_QZ01YAoNEeGu0LskOlDe_A" base_Property="_kZdJYgoJEeGu0LskOlDe_A">
+    <ruleId>CONF-430</ruleId>
+    <ruleId>CONF-431</ruleId>
+  </CDA:ValueSetConstraint>
   <CDA:ConstraintValidation xmi:id="_Imto8AoOEeGu0LskOlDe_A" base_Constraint="_APAXIAoOEeGu0LskOlDe_A">
     <ruleId>CONF-447</ruleId>
   </CDA:ConstraintValidation>

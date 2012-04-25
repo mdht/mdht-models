@@ -92,6 +92,7 @@ public class EncountersSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateEncountersSectionTemplateId(EncountersSection encountersSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ENCOUNTERS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.ENCOUNTERS_SECTION);
@@ -109,6 +110,7 @@ public class EncountersSectionOperations extends SectionOperations {
 					CCDValidator.ENCOUNTERS_SECTION__ENCOUNTERS_SECTION_TEMPLATE_ID,
 					CCDPlugin.INSTANCE.getString("EncountersSectionTemplateId"), new Object[] { encountersSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -123,8 +125,8 @@ public class EncountersSectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_ENCOUNTERS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
-			+ "value.code = '46240-8' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
+			+ "value.code = '46240-8' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateEncountersSectionCode(EncountersSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounters Section Code</em>}' invariant operation.
@@ -141,8 +143,8 @@ public class EncountersSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in (
-	 * value.code = '46240-8' and value.codeSystem = '2.16.840.1.113883.6.1'))
+	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+	 * value.code = '46240-8' and value.codeSystem = '2.16.840.1.113883.6.1')
 	 * @param encountersSection The receiving '<em><b>Encounters Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -151,6 +153,7 @@ public class EncountersSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateEncountersSectionCode(EncountersSection encountersSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ENCOUNTERS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.ENCOUNTERS_SECTION);
@@ -168,6 +171,7 @@ public class EncountersSectionOperations extends SectionOperations {
 					CCDValidator.ENCOUNTERS_SECTION__ENCOUNTERS_SECTION_CODE,
 					CCDPlugin.INSTANCE.getString("EncountersSectionCode"), new Object[] { encountersSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -206,6 +210,7 @@ public class EncountersSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateEncountersSectionTitle(EncountersSection encountersSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ENCOUNTERS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.ENCOUNTERS_SECTION);
@@ -223,6 +228,7 @@ public class EncountersSectionOperations extends SectionOperations {
 					CCDValidator.ENCOUNTERS_SECTION__ENCOUNTERS_SECTION_TITLE,
 					CCDPlugin.INSTANCE.getString("EncountersSectionTitle"), new Object[] { encountersSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -261,6 +267,7 @@ public class EncountersSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateEncountersSectionText(EncountersSection encountersSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ENCOUNTERS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.ENCOUNTERS_SECTION);
@@ -278,6 +285,7 @@ public class EncountersSectionOperations extends SectionOperations {
 					CCDValidator.ENCOUNTERS_SECTION__ENCOUNTERS_SECTION_TEXT,
 					CCDPlugin.INSTANCE.getString("EncountersSectionText"), new Object[] { encountersSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -316,6 +324,7 @@ public class EncountersSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateEncountersSectionEncountersActivity(EncountersSection encountersSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ENCOUNTERS_SECTION_ENCOUNTERS_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.ENCOUNTERS_SECTION);
@@ -334,6 +343,7 @@ public class EncountersSectionOperations extends SectionOperations {
 					CCDPlugin.INSTANCE.getString("EncountersSectionEncountersActivity"),
 					new Object[] { encountersSection }));
 			}
+
 			return false;
 		}
 		return true;

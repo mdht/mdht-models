@@ -92,6 +92,7 @@ public class AdvanceDirectivesSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateAdvanceDirectivesSectionTemplateId(AdvanceDirectivesSection advanceDirectivesSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ADVANCE_DIRECTIVES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.ADVANCE_DIRECTIVES_SECTION);
@@ -110,6 +111,7 @@ public class AdvanceDirectivesSectionOperations extends SectionOperations {
 					CCDPlugin.INSTANCE.getString("AdvanceDirectivesSectionTemplateId"),
 					new Object[] { advanceDirectivesSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -124,8 +126,8 @@ public class AdvanceDirectivesSectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_ADVANCE_DIRECTIVES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
-			+ "value.code = '42348-3' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
+			+ "value.code = '42348-3' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAdvanceDirectivesSectionCode(AdvanceDirectivesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directives Section Code</em>}' invariant operation.
@@ -142,8 +144,8 @@ public class AdvanceDirectivesSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in (
-	 * value.code = '42348-3' and value.codeSystem = '2.16.840.1.113883.6.1'))
+	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+	 * value.code = '42348-3' and value.codeSystem = '2.16.840.1.113883.6.1')
 	 * @param advanceDirectivesSection The receiving '<em><b>Advance Directives Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -152,6 +154,7 @@ public class AdvanceDirectivesSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateAdvanceDirectivesSectionCode(AdvanceDirectivesSection advanceDirectivesSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ADVANCE_DIRECTIVES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.ADVANCE_DIRECTIVES_SECTION);
@@ -170,6 +173,7 @@ public class AdvanceDirectivesSectionOperations extends SectionOperations {
 					CCDPlugin.INSTANCE.getString("AdvanceDirectivesSectionCode"),
 					new Object[] { advanceDirectivesSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -208,6 +212,7 @@ public class AdvanceDirectivesSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateAdvanceDirectivesSectionTitle(AdvanceDirectivesSection advanceDirectivesSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ADVANCE_DIRECTIVES_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.ADVANCE_DIRECTIVES_SECTION);
@@ -226,6 +231,7 @@ public class AdvanceDirectivesSectionOperations extends SectionOperations {
 					CCDPlugin.INSTANCE.getString("AdvanceDirectivesSectionTitle"),
 					new Object[] { advanceDirectivesSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -264,6 +270,7 @@ public class AdvanceDirectivesSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateAdvanceDirectivesSectionText(AdvanceDirectivesSection advanceDirectivesSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ADVANCE_DIRECTIVES_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.ADVANCE_DIRECTIVES_SECTION);
@@ -282,6 +289,7 @@ public class AdvanceDirectivesSectionOperations extends SectionOperations {
 					CCDPlugin.INSTANCE.getString("AdvanceDirectivesSectionText"),
 					new Object[] { advanceDirectivesSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -320,6 +328,7 @@ public class AdvanceDirectivesSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateAdvanceDirectivesSectionAdvanceDirectiveObservation(
 			AdvanceDirectivesSection advanceDirectivesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ADVANCE_DIRECTIVES_SECTION_ADVANCE_DIRECTIVE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.ADVANCE_DIRECTIVES_SECTION);
@@ -339,6 +348,7 @@ public class AdvanceDirectivesSectionOperations extends SectionOperations {
 					CCDPlugin.INSTANCE.getString("AdvanceDirectivesSectionAdvanceDirectiveObservation"),
 					new Object[] { advanceDirectivesSection }));
 			}
+
 			return false;
 		}
 		return true;

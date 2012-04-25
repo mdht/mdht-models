@@ -89,6 +89,7 @@ public class PurposeActivityOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validatePurposeActivityHasReason(PurposeActivity purposeActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PURPOSE_ACTIVITY_HAS_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PURPOSE_ACTIVITY);
@@ -106,6 +107,7 @@ public class PurposeActivityOperations extends ClinicalStatementOperations {
 					CCDValidator.PURPOSE_ACTIVITY__PURPOSE_ACTIVITY_HAS_REASON,
 					CCDPlugin.INSTANCE.getString("PurposeActivityHasReason"), new Object[] { purposeActivity }));
 			}
+
 			return false;
 		}
 		return true;
@@ -152,6 +154,7 @@ public class PurposeActivityOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validatePurposeActivityReasonType(PurposeActivity purposeActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PURPOSE_ACTIVITY_REASON_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PURPOSE_ACTIVITY);
@@ -169,6 +172,7 @@ public class PurposeActivityOperations extends ClinicalStatementOperations {
 					CCDValidator.PURPOSE_ACTIVITY__PURPOSE_ACTIVITY_REASON_TYPE,
 					CCDPlugin.INSTANCE.getString("PurposeActivityReasonType"), new Object[] { purposeActivity }));
 			}
+
 			return false;
 		}
 		return true;
@@ -207,6 +211,7 @@ public class PurposeActivityOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validatePurposeActivityTemplateId(PurposeActivity purposeActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PURPOSE_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PURPOSE_ACTIVITY);
@@ -224,6 +229,7 @@ public class PurposeActivityOperations extends ClinicalStatementOperations {
 					CCDValidator.PURPOSE_ACTIVITY__PURPOSE_ACTIVITY_TEMPLATE_ID,
 					CCDPlugin.INSTANCE.getString("PurposeActivityTemplateId"), new Object[] { purposeActivity }));
 			}
+
 			return false;
 		}
 		return true;
@@ -262,6 +268,7 @@ public class PurposeActivityOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validatePurposeActivityClassCode(PurposeActivity purposeActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PURPOSE_ACTIVITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PURPOSE_ACTIVITY);
@@ -279,6 +286,7 @@ public class PurposeActivityOperations extends ClinicalStatementOperations {
 					CCDValidator.PURPOSE_ACTIVITY__PURPOSE_ACTIVITY_CLASS_CODE,
 					CCDPlugin.INSTANCE.getString("PurposeActivityClassCode"), new Object[] { purposeActivity }));
 			}
+
 			return false;
 		}
 		return true;
@@ -317,6 +325,7 @@ public class PurposeActivityOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validatePurposeActivityMoodCode(PurposeActivity purposeActivity, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PURPOSE_ACTIVITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PURPOSE_ACTIVITY);
@@ -334,6 +343,7 @@ public class PurposeActivityOperations extends ClinicalStatementOperations {
 					CCDValidator.PURPOSE_ACTIVITY__PURPOSE_ACTIVITY_MOOD_CODE,
 					CCDPlugin.INSTANCE.getString("PurposeActivityMoodCode"), new Object[] { purposeActivity }));
 			}
+
 			return false;
 		}
 		return true;
@@ -348,8 +358,8 @@ public class PurposeActivityOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_PURPOSE_ACTIVITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in ("
-			+ "value.code = '23745001' and value.codeSystem = '2.16.840.1.113883.6.96'))";
+			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
+			+ "value.code = '23745001' and value.codeSystem = '2.16.840.1.113883.6.96')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePurposeActivityCode(PurposeActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Purpose Activity Code</em>}' invariant operation.
@@ -366,8 +376,8 @@ public class PurposeActivityOperations extends ClinicalStatementOperations {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
-	 * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (
-	 * value.code = '23745001' and value.codeSystem = '2.16.840.1.113883.6.96'))
+	 * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+	 * value.code = '23745001' and value.codeSystem = '2.16.840.1.113883.6.96')
 	 * @param purposeActivity The receiving '<em><b>Purpose Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -376,6 +386,7 @@ public class PurposeActivityOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validatePurposeActivityCode(PurposeActivity purposeActivity, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PURPOSE_ACTIVITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PURPOSE_ACTIVITY);
@@ -392,6 +403,7 @@ public class PurposeActivityOperations extends ClinicalStatementOperations {
 					CCDValidator.PURPOSE_ACTIVITY__PURPOSE_ACTIVITY_CODE,
 					CCDPlugin.INSTANCE.getString("PurposeActivityCode"), new Object[] { purposeActivity }));
 			}
+
 			return false;
 		}
 		return true;
@@ -406,8 +418,7 @@ public class PurposeActivityOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_PURPOSE_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "
-			+ "let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in ("
-			+ "value.code = 'completed'))";
+			+ "let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in " + "value.code = 'completed')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePurposeActivityStatusCode(PurposeActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Purpose Activity Status Code</em>}' invariant operation.
@@ -424,8 +435,8 @@ public class PurposeActivityOperations extends ClinicalStatementOperations {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
-	 * let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in (
-	 * value.code = 'completed'))
+	 * let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
+	 * value.code = 'completed')
 	 * @param purposeActivity The receiving '<em><b>Purpose Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -434,6 +445,7 @@ public class PurposeActivityOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validatePurposeActivityStatusCode(PurposeActivity purposeActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PURPOSE_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PURPOSE_ACTIVITY);
@@ -451,6 +463,7 @@ public class PurposeActivityOperations extends ClinicalStatementOperations {
 					CCDValidator.PURPOSE_ACTIVITY__PURPOSE_ACTIVITY_STATUS_CODE,
 					CCDPlugin.INSTANCE.getString("PurposeActivityStatusCode"), new Object[] { purposeActivity }));
 			}
+
 			return false;
 		}
 		return true;

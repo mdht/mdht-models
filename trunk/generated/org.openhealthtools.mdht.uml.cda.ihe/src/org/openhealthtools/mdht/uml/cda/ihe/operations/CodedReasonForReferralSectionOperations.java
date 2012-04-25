@@ -88,6 +88,7 @@ public class CodedReasonForReferralSectionOperations extends ReasonForReferralSe
 	public static boolean validateCodedReasonForReferralSectionTemplateId(
 			CodedReasonForReferralSection codedReasonForReferralSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_CODED_REASON_FOR_REFERRAL_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.CODED_REASON_FOR_REFERRAL_SECTION);
@@ -107,6 +108,7 @@ public class CodedReasonForReferralSectionOperations extends ReasonForReferralSe
 					IHEPlugin.INSTANCE.getString("CodedReasonForReferralSectionTemplateId"),
 					new Object[] { codedReasonForReferralSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -146,6 +148,7 @@ public class CodedReasonForReferralSectionOperations extends ReasonForReferralSe
 	public static boolean validateCodedReasonForReferralSectionSimpleObservation(
 			CodedReasonForReferralSection codedReasonForReferralSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_CODED_REASON_FOR_REFERRAL_SECTION_SIMPLE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.CODED_REASON_FOR_REFERRAL_SECTION);
@@ -166,6 +169,7 @@ public class CodedReasonForReferralSectionOperations extends ReasonForReferralSe
 					IHEPlugin.INSTANCE.getString("CodedReasonForReferralSectionSimpleObservation"),
 					new Object[] { codedReasonForReferralSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -205,6 +209,7 @@ public class CodedReasonForReferralSectionOperations extends ReasonForReferralSe
 	public static boolean validateCodedReasonForReferralSectionProblemEntry(
 			CodedReasonForReferralSection codedReasonForReferralSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_CODED_REASON_FOR_REFERRAL_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.CODED_REASON_FOR_REFERRAL_SECTION);
@@ -224,6 +229,7 @@ public class CodedReasonForReferralSectionOperations extends ReasonForReferralSe
 					IHEPlugin.INSTANCE.getString("CodedReasonForReferralSectionProblemEntry"),
 					new Object[] { codedReasonForReferralSection }));
 			}
+
 			return false;
 		}
 		return true;

@@ -83,6 +83,7 @@ public class GeneralAppearanceSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateGeneralAppearanceSectionTemplateId(GeneralAppearanceSection generalAppearanceSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_GENERAL_APPEARANCE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.GENERAL_APPEARANCE_SECTION);
@@ -101,6 +102,7 @@ public class GeneralAppearanceSectionOperations extends SectionOperations {
 					IHEPlugin.INSTANCE.getString("GeneralAppearanceSectionTemplateId"),
 					new Object[] { generalAppearanceSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -115,8 +117,8 @@ public class GeneralAppearanceSectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_GENERAL_APPEARANCE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
-			+ "value.code = '10210-3' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
+			+ "value.code = '10210-3' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateGeneralAppearanceSectionCode(GeneralAppearanceSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Appearance Section Code</em>}' invariant operation.
@@ -133,8 +135,8 @@ public class GeneralAppearanceSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in (
-	 * value.code = '10210-3' and value.codeSystem = '2.16.840.1.113883.6.1'))
+	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+	 * value.code = '10210-3' and value.codeSystem = '2.16.840.1.113883.6.1')
 	 * @param generalAppearanceSection The receiving '<em><b>General Appearance Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -143,6 +145,7 @@ public class GeneralAppearanceSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateGeneralAppearanceSectionCode(GeneralAppearanceSection generalAppearanceSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_GENERAL_APPEARANCE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.GENERAL_APPEARANCE_SECTION);
@@ -161,6 +164,7 @@ public class GeneralAppearanceSectionOperations extends SectionOperations {
 					IHEPlugin.INSTANCE.getString("GeneralAppearanceSectionCode"),
 					new Object[] { generalAppearanceSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -199,6 +203,7 @@ public class GeneralAppearanceSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateGeneralAppearanceSectionProblemEntry(
 			GeneralAppearanceSection generalAppearanceSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_GENERAL_APPEARANCE_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.GENERAL_APPEARANCE_SECTION);
@@ -217,6 +222,7 @@ public class GeneralAppearanceSectionOperations extends SectionOperations {
 					IHEPlugin.INSTANCE.getString("GeneralAppearanceSectionProblemEntry"),
 					new Object[] { generalAppearanceSection }));
 			}
+
 			return false;
 		}
 		return true;

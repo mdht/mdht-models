@@ -88,6 +88,7 @@ public class AuthorizationActivityOperations extends ClinicalStatementOperations
 	 */
 	public static boolean validateAuthorizationActivityEntryRelationshipTypeCode(
 			AuthorizationActivity authorizationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_AUTHORIZATION_ACTIVITY_ENTRY_RELATIONSHIP_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.AUTHORIZATION_ACTIVITY);
@@ -107,6 +108,7 @@ public class AuthorizationActivityOperations extends ClinicalStatementOperations
 					CCDPlugin.INSTANCE.getString("AuthorizationActivityEntryRelationshipTypeCode"),
 					new Object[] { authorizationActivity }));
 			}
+
 			return false;
 		}
 		return true;
@@ -145,6 +147,7 @@ public class AuthorizationActivityOperations extends ClinicalStatementOperations
 	 */
 	public static boolean validateAuthorizationActivityEntryRelationshipTarget(
 			AuthorizationActivity authorizationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_AUTHORIZATION_ACTIVITY_ENTRY_RELATIONSHIP_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.AUTHORIZATION_ACTIVITY);
@@ -164,6 +167,7 @@ public class AuthorizationActivityOperations extends ClinicalStatementOperations
 					CCDPlugin.INSTANCE.getString("AuthorizationActivityEntryRelationshipTarget"),
 					new Object[] { authorizationActivity }));
 			}
+
 			return false;
 		}
 		return true;
@@ -202,6 +206,7 @@ public class AuthorizationActivityOperations extends ClinicalStatementOperations
 	 */
 	public static boolean validateAuthorizationActivityHasPerformers(AuthorizationActivity authorizationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_AUTHORIZATION_ACTIVITY_HAS_PERFORMERS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.AUTHORIZATION_ACTIVITY);
@@ -220,6 +225,7 @@ public class AuthorizationActivityOperations extends ClinicalStatementOperations
 					CCDPlugin.INSTANCE.getString("AuthorizationActivityHasPerformers"),
 					new Object[] { authorizationActivity }));
 			}
+
 			return false;
 		}
 		return true;
@@ -258,6 +264,7 @@ public class AuthorizationActivityOperations extends ClinicalStatementOperations
 	 */
 	public static boolean validateAuthorizationActivityTemplateId(AuthorizationActivity authorizationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_AUTHORIZATION_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.AUTHORIZATION_ACTIVITY);
@@ -276,6 +283,7 @@ public class AuthorizationActivityOperations extends ClinicalStatementOperations
 					CCDPlugin.INSTANCE.getString("AuthorizationActivityTemplateId"),
 					new Object[] { authorizationActivity }));
 			}
+
 			return false;
 		}
 		return true;
@@ -314,6 +322,7 @@ public class AuthorizationActivityOperations extends ClinicalStatementOperations
 	 */
 	public static boolean validateAuthorizationActivityClassCode(AuthorizationActivity authorizationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_AUTHORIZATION_ACTIVITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.AUTHORIZATION_ACTIVITY);
@@ -332,6 +341,7 @@ public class AuthorizationActivityOperations extends ClinicalStatementOperations
 					CCDPlugin.INSTANCE.getString("AuthorizationActivityClassCode"),
 					new Object[] { authorizationActivity }));
 			}
+
 			return false;
 		}
 		return true;
@@ -370,6 +380,7 @@ public class AuthorizationActivityOperations extends ClinicalStatementOperations
 	 */
 	public static boolean validateAuthorizationActivityMoodCode(AuthorizationActivity authorizationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_AUTHORIZATION_ACTIVITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.AUTHORIZATION_ACTIVITY);
@@ -388,6 +399,7 @@ public class AuthorizationActivityOperations extends ClinicalStatementOperations
 					CCDPlugin.INSTANCE.getString("AuthorizationActivityMoodCode"),
 					new Object[] { authorizationActivity }));
 			}
+
 			return false;
 		}
 		return true;
@@ -426,6 +438,7 @@ public class AuthorizationActivityOperations extends ClinicalStatementOperations
 	 */
 	public static boolean validateAuthorizationActivityId(AuthorizationActivity authorizationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_AUTHORIZATION_ACTIVITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.AUTHORIZATION_ACTIVITY);
@@ -443,6 +456,7 @@ public class AuthorizationActivityOperations extends ClinicalStatementOperations
 					CCDValidator.AUTHORIZATION_ACTIVITY__AUTHORIZATION_ACTIVITY_ID,
 					CCDPlugin.INSTANCE.getString("AuthorizationActivityId"), new Object[] { authorizationActivity }));
 			}
+
 			return false;
 		}
 		return true;
@@ -483,6 +497,7 @@ public class AuthorizationActivityOperations extends ClinicalStatementOperations
 
 	public static boolean validateAuthorizationActivityEntryRelationship(AuthorizationActivity authorizationActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_AUTHORIZATION_ACTIVITY_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.AUTHORIZATION_ACTIVITY);
@@ -501,6 +516,7 @@ public class AuthorizationActivityOperations extends ClinicalStatementOperations
 					CCDPlugin.INSTANCE.getString("AuthorizationActivityEntryRelationship"),
 					new Object[] { authorizationActivity }));
 			}
+
 			return false;
 		}
 		return true;

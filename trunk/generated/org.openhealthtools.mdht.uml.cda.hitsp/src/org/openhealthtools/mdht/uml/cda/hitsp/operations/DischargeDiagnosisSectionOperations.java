@@ -87,6 +87,7 @@ public class DischargeDiagnosisSectionOperations extends
 	public static boolean validateHITSPDischargeDiagnosisSectionTemplateId(
 			DischargeDiagnosisSection dischargeDiagnosisSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_DISCHARGE_DIAGNOSIS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.DISCHARGE_DIAGNOSIS_SECTION);
@@ -106,6 +107,7 @@ public class DischargeDiagnosisSectionOperations extends
 					HITSPPlugin.INSTANCE.getString("HITSPDischargeDiagnosisSectionTemplateId"),
 					new Object[] { dischargeDiagnosisSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -145,6 +147,7 @@ public class DischargeDiagnosisSectionOperations extends
 	public static boolean validateHITSPDischargeDiagnosisSectionCondition(
 			DischargeDiagnosisSection dischargeDiagnosisSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_DISCHARGE_DIAGNOSIS_SECTION_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.DISCHARGE_DIAGNOSIS_SECTION);
@@ -163,6 +166,7 @@ public class DischargeDiagnosisSectionOperations extends
 					HITSPPlugin.INSTANCE.getString("HITSPDischargeDiagnosisSectionCondition"),
 					new Object[] { dischargeDiagnosisSection }));
 			}
+
 			return false;
 		}
 		return true;

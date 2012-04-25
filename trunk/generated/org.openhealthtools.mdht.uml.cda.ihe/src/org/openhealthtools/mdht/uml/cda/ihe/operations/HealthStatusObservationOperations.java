@@ -84,6 +84,7 @@ public class HealthStatusObservationOperations extends ProblemHealthStatusObserv
 	 */
 	public static boolean validateHealthStatusObservationHasTextReference(
 			HealthStatusObservation healthStatusObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_HEALTH_STATUS_OBSERVATION_HAS_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.HEALTH_STATUS_OBSERVATION);
@@ -102,6 +103,7 @@ public class HealthStatusObservationOperations extends ProblemHealthStatusObserv
 					IHEPlugin.INSTANCE.getString("HealthStatusObservationHasTextReference"),
 					new Object[] { healthStatusObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -140,6 +142,7 @@ public class HealthStatusObservationOperations extends ProblemHealthStatusObserv
 	 */
 	public static boolean validateHealthStatusObservationTemplateId(HealthStatusObservation healthStatusObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_HEALTH_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.HEALTH_STATUS_OBSERVATION);
@@ -158,6 +161,7 @@ public class HealthStatusObservationOperations extends ProblemHealthStatusObserv
 					IHEPlugin.INSTANCE.getString("HealthStatusObservationTemplateId"),
 					new Object[] { healthStatusObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -196,6 +200,7 @@ public class HealthStatusObservationOperations extends ProblemHealthStatusObserv
 	 */
 	public static boolean validateHealthStatusObservationText(HealthStatusObservation healthStatusObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_HEALTH_STATUS_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.HEALTH_STATUS_OBSERVATION);
@@ -214,6 +219,7 @@ public class HealthStatusObservationOperations extends ProblemHealthStatusObserv
 					IHEPlugin.INSTANCE.getString("HealthStatusObservationText"),
 					new Object[] { healthStatusObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -256,6 +262,7 @@ public class HealthStatusObservationOperations extends ProblemHealthStatusObserv
 	 */
 	public static boolean validateStatusObservationValue(HealthStatusObservation healthStatusObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_STATUS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.HEALTH_STATUS_OBSERVATION);
@@ -273,6 +280,7 @@ public class HealthStatusObservationOperations extends ProblemHealthStatusObserv
 					IHEValidator.HEALTH_STATUS_OBSERVATION__STATUS_OBSERVATION_VALUE,
 					IHEPlugin.INSTANCE.getString("StatusObservationValue"), new Object[] { healthStatusObservation }));
 			}
+
 			return false;
 		}
 		return true;

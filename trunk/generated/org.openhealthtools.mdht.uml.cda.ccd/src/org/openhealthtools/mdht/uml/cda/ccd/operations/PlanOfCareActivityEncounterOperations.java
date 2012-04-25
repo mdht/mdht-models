@@ -89,6 +89,7 @@ public class PlanOfCareActivityEncounterOperations extends ClinicalStatementOper
 	public static boolean validatePlanOfCareActivityEncounterMoodCodeValue(
 			PlanOfCareActivityEncounter planOfCareActivityEncounter, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PLAN_OF_CARE_ACTIVITY_ENCOUNTER_MOOD_CODE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PLAN_OF_CARE_ACTIVITY_ENCOUNTER);
@@ -108,6 +109,7 @@ public class PlanOfCareActivityEncounterOperations extends ClinicalStatementOper
 					CCDPlugin.INSTANCE.getString("PlanOfCareActivityEncounterMoodCodeValue"),
 					new Object[] { planOfCareActivityEncounter }));
 			}
+
 			return false;
 		}
 		return true;
@@ -147,6 +149,7 @@ public class PlanOfCareActivityEncounterOperations extends ClinicalStatementOper
 	public static boolean validatePlanOfCareActivityEncounterTemplateId(
 			PlanOfCareActivityEncounter planOfCareActivityEncounter, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PLAN_OF_CARE_ACTIVITY_ENCOUNTER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PLAN_OF_CARE_ACTIVITY_ENCOUNTER);
@@ -165,6 +168,7 @@ public class PlanOfCareActivityEncounterOperations extends ClinicalStatementOper
 					CCDPlugin.INSTANCE.getString("PlanOfCareActivityEncounterTemplateId"),
 					new Object[] { planOfCareActivityEncounter }));
 			}
+
 			return false;
 		}
 		return true;
@@ -204,6 +208,7 @@ public class PlanOfCareActivityEncounterOperations extends ClinicalStatementOper
 	public static boolean validatePlanOfCareActivityEncounterId(
 			PlanOfCareActivityEncounter planOfCareActivityEncounter, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PLAN_OF_CARE_ACTIVITY_ENCOUNTER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PLAN_OF_CARE_ACTIVITY_ENCOUNTER);
@@ -222,6 +227,7 @@ public class PlanOfCareActivityEncounterOperations extends ClinicalStatementOper
 					CCDPlugin.INSTANCE.getString("PlanOfCareActivityEncounterId"),
 					new Object[] { planOfCareActivityEncounter }));
 			}
+
 			return false;
 		}
 		return true;
@@ -261,6 +267,7 @@ public class PlanOfCareActivityEncounterOperations extends ClinicalStatementOper
 	public static boolean validatePlanOfCareActivityEncounterMoodCode(
 			PlanOfCareActivityEncounter planOfCareActivityEncounter, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PLAN_OF_CARE_ACTIVITY_ENCOUNTER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PLAN_OF_CARE_ACTIVITY_ENCOUNTER);
@@ -279,6 +286,7 @@ public class PlanOfCareActivityEncounterOperations extends ClinicalStatementOper
 					CCDPlugin.INSTANCE.getString("PlanOfCareActivityEncounterMoodCode"),
 					new Object[] { planOfCareActivityEncounter }));
 			}
+
 			return false;
 		}
 		return true;

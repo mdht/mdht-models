@@ -79,6 +79,7 @@ public class MedicationStatusObservationOperations extends StatusObservationOper
 	 */
 	public static boolean validateStatusObservationTemplateId(MedicationStatusObservation medicationStatusObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.MEDICATION_STATUS_OBSERVATION);
@@ -102,6 +103,7 @@ public class MedicationStatusObservationOperations extends StatusObservationOper
 									medicationStatusObservation, context) }),
 					new Object[] { medicationStatusObservation }));
 			}
+
 			return false;
 		}
 		return true;

@@ -89,6 +89,7 @@ public class ProblemListSectionOperations extends ActiveProblemsSectionOperation
 	 */
 	public static boolean validateProblemListSectionTemplateId(ProblemListSection problemListSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROBLEM_LIST_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.PROBLEM_LIST_SECTION);
@@ -106,6 +107,7 @@ public class ProblemListSectionOperations extends ActiveProblemsSectionOperation
 					HITSPValidator.PROBLEM_LIST_SECTION__PROBLEM_LIST_SECTION_TEMPLATE_ID,
 					HITSPPlugin.INSTANCE.getString("ProblemListSectionTemplateId"), new Object[] { problemListSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -144,6 +146,7 @@ public class ProblemListSectionOperations extends ActiveProblemsSectionOperation
 	 */
 	public static boolean validateProblemListSectionCondition(ProblemListSection problemListSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROBLEM_LIST_SECTION_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.PROBLEM_LIST_SECTION);
@@ -161,6 +164,7 @@ public class ProblemListSectionOperations extends ActiveProblemsSectionOperation
 					HITSPValidator.PROBLEM_LIST_SECTION__PROBLEM_LIST_SECTION_CONDITION,
 					HITSPPlugin.INSTANCE.getString("ProblemListSectionCondition"), new Object[] { problemListSection }));
 			}
+
 			return false;
 		}
 		return true;

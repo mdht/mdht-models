@@ -93,6 +93,7 @@ public class ResultObservationOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateResultObservationCodeValue(ResultObservation resultObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_RESULT_OBSERVATION_CODE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.RESULT_OBSERVATION);
@@ -110,6 +111,7 @@ public class ResultObservationOperations extends ClinicalStatementOperations {
 					CCDValidator.RESULT_OBSERVATION__RESULT_OBSERVATION_CODE_VALUE,
 					CCDPlugin.INSTANCE.getString("ResultObservationCodeValue"), new Object[] { resultObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -148,6 +150,7 @@ public class ResultObservationOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateResultObservationReferenceRangeRequired(ResultObservation resultObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_RESULT_OBSERVATION_REFERENCE_RANGE_REQUIRED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.RESULT_OBSERVATION);
@@ -166,6 +169,7 @@ public class ResultObservationOperations extends ClinicalStatementOperations {
 					CCDPlugin.INSTANCE.getString("ResultObservationReferenceRangeRequired"),
 					new Object[] { resultObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -204,6 +208,7 @@ public class ResultObservationOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateResultObservationNoObservationRangeCode(ResultObservation resultObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_RESULT_OBSERVATION_NO_OBSERVATION_RANGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.RESULT_OBSERVATION);
@@ -222,6 +227,7 @@ public class ResultObservationOperations extends ClinicalStatementOperations {
 					CCDPlugin.INSTANCE.getString("ResultObservationNoObservationRangeCode"),
 					new Object[] { resultObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -272,6 +278,7 @@ public class ResultObservationOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateResultObservationInformationSource(ResultObservation resultObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_RESULT_OBSERVATION_INFORMATION_SOURCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.RESULT_OBSERVATION);
@@ -290,6 +297,7 @@ public class ResultObservationOperations extends ClinicalStatementOperations {
 					CCDPlugin.INSTANCE.getString("ResultObservationInformationSource"),
 					new Object[] { resultObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -328,6 +336,7 @@ public class ResultObservationOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateResultObservationTemplateId(ResultObservation resultObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_RESULT_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.RESULT_OBSERVATION);
@@ -345,6 +354,7 @@ public class ResultObservationOperations extends ClinicalStatementOperations {
 					CCDValidator.RESULT_OBSERVATION__RESULT_OBSERVATION_TEMPLATE_ID,
 					CCDPlugin.INSTANCE.getString("ResultObservationTemplateId"), new Object[] { resultObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -383,6 +393,7 @@ public class ResultObservationOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateResultObservationMoodCode(ResultObservation resultObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_RESULT_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.RESULT_OBSERVATION);
@@ -400,6 +411,7 @@ public class ResultObservationOperations extends ClinicalStatementOperations {
 					CCDValidator.RESULT_OBSERVATION__RESULT_OBSERVATION_MOOD_CODE,
 					CCDPlugin.INSTANCE.getString("ResultObservationMoodCode"), new Object[] { resultObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -438,6 +450,7 @@ public class ResultObservationOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateResultObservationId(ResultObservation resultObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_RESULT_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.RESULT_OBSERVATION);
@@ -455,6 +468,7 @@ public class ResultObservationOperations extends ClinicalStatementOperations {
 					CCDValidator.RESULT_OBSERVATION__RESULT_OBSERVATION_ID,
 					CCDPlugin.INSTANCE.getString("ResultObservationId"), new Object[] { resultObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -493,6 +507,7 @@ public class ResultObservationOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateResultObservationEffectiveTime(ResultObservation resultObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_RESULT_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.RESULT_OBSERVATION);
@@ -510,6 +525,7 @@ public class ResultObservationOperations extends ClinicalStatementOperations {
 					CCDValidator.RESULT_OBSERVATION__RESULT_OBSERVATION_EFFECTIVE_TIME,
 					CCDPlugin.INSTANCE.getString("ResultObservationEffectiveTime"), new Object[] { resultObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -548,6 +564,7 @@ public class ResultObservationOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateResultObservationStatusCode(ResultObservation resultObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_RESULT_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.RESULT_OBSERVATION);
@@ -565,6 +582,7 @@ public class ResultObservationOperations extends ClinicalStatementOperations {
 					CCDValidator.RESULT_OBSERVATION__RESULT_OBSERVATION_STATUS_CODE,
 					CCDPlugin.INSTANCE.getString("ResultObservationStatusCode"), new Object[] { resultObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -603,6 +621,7 @@ public class ResultObservationOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateResultObservationCode(ResultObservation resultObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_RESULT_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.RESULT_OBSERVATION);
@@ -620,6 +639,7 @@ public class ResultObservationOperations extends ClinicalStatementOperations {
 					CCDValidator.RESULT_OBSERVATION__RESULT_OBSERVATION_CODE,
 					CCDPlugin.INSTANCE.getString("ResultObservationCode"), new Object[] { resultObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -658,6 +678,7 @@ public class ResultObservationOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateResultObservationMethodCode(ResultObservation resultObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_RESULT_OBSERVATION_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.RESULT_OBSERVATION);
@@ -675,6 +696,7 @@ public class ResultObservationOperations extends ClinicalStatementOperations {
 					CCDValidator.RESULT_OBSERVATION__RESULT_OBSERVATION_METHOD_CODE,
 					CCDPlugin.INSTANCE.getString("ResultObservationMethodCode"), new Object[] { resultObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -713,6 +735,7 @@ public class ResultObservationOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateResultObservationInterpretationCode(ResultObservation resultObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_RESULT_OBSERVATION_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.RESULT_OBSERVATION);
@@ -731,6 +754,7 @@ public class ResultObservationOperations extends ClinicalStatementOperations {
 					CCDPlugin.INSTANCE.getString("ResultObservationInterpretationCode"),
 					new Object[] { resultObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -769,6 +793,7 @@ public class ResultObservationOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateResultObservationValue(ResultObservation resultObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_RESULT_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.RESULT_OBSERVATION);
@@ -786,6 +811,7 @@ public class ResultObservationOperations extends ClinicalStatementOperations {
 					CCDValidator.RESULT_OBSERVATION__RESULT_OBSERVATION_VALUE,
 					CCDPlugin.INSTANCE.getString("ResultObservationValue"), new Object[] { resultObservation }));
 			}
+
 			return false;
 		}
 		return true;

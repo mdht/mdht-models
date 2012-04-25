@@ -95,6 +95,7 @@ public class PlanOfCareSectionOperations extends AssessmentAndPlanSectionOperati
 	 */
 	public static boolean validateHITSPPlanOfCareSectionTemplateId(PlanOfCareSection planOfCareSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_PLAN_OF_CARE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.PLAN_OF_CARE_SECTION);
@@ -113,6 +114,7 @@ public class PlanOfCareSectionOperations extends AssessmentAndPlanSectionOperati
 					HITSPPlugin.INSTANCE.getString("HITSPPlanOfCareSectionTemplateId"),
 					new Object[] { planOfCareSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -151,6 +153,7 @@ public class PlanOfCareSectionOperations extends AssessmentAndPlanSectionOperati
 	 */
 	public static boolean validateHITSPPlanOfCareSectionMedication(PlanOfCareSection planOfCareSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_PLAN_OF_CARE_SECTION_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.PLAN_OF_CARE_SECTION);
@@ -169,6 +172,7 @@ public class PlanOfCareSectionOperations extends AssessmentAndPlanSectionOperati
 					HITSPPlugin.INSTANCE.getString("HITSPPlanOfCareSectionMedication"),
 					new Object[] { planOfCareSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -207,6 +211,7 @@ public class PlanOfCareSectionOperations extends AssessmentAndPlanSectionOperati
 	 */
 	public static boolean validateHITSPPlanOfCareSectionImmunization(PlanOfCareSection planOfCareSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_PLAN_OF_CARE_SECTION_IMMUNIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.PLAN_OF_CARE_SECTION);
@@ -225,6 +230,7 @@ public class PlanOfCareSectionOperations extends AssessmentAndPlanSectionOperati
 					HITSPPlugin.INSTANCE.getString("HITSPPlanOfCareSectionImmunization"),
 					new Object[] { planOfCareSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -263,6 +269,7 @@ public class PlanOfCareSectionOperations extends AssessmentAndPlanSectionOperati
 	 */
 	public static boolean validateHITSPPlanOfCareSectionEncounter(PlanOfCareSection planOfCareSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_PLAN_OF_CARE_SECTION_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.PLAN_OF_CARE_SECTION);
@@ -281,6 +288,7 @@ public class PlanOfCareSectionOperations extends AssessmentAndPlanSectionOperati
 					HITSPPlugin.INSTANCE.getString("HITSPPlanOfCareSectionEncounter"),
 					new Object[] { planOfCareSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -319,6 +327,7 @@ public class PlanOfCareSectionOperations extends AssessmentAndPlanSectionOperati
 	 */
 	public static boolean validateHITSPPlanOfCareSectionProcedure(PlanOfCareSection planOfCareSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_PLAN_OF_CARE_SECTION_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.PLAN_OF_CARE_SECTION);
@@ -337,6 +346,7 @@ public class PlanOfCareSectionOperations extends AssessmentAndPlanSectionOperati
 					HITSPPlugin.INSTANCE.getString("HITSPPlanOfCareSectionProcedure"),
 					new Object[] { planOfCareSection }));
 			}
+
 			return false;
 		}
 		return true;

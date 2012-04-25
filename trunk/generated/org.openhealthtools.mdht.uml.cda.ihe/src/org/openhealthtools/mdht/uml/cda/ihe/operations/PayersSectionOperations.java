@@ -88,6 +88,7 @@ public class PayersSectionOperations extends org.openhealthtools.mdht.uml.cda.cc
 	 */
 	public static boolean validateIHEPayersSectionTemplateId(PayersSection payersSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_IHE_PAYERS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.PAYERS_SECTION);
@@ -105,6 +106,7 @@ public class PayersSectionOperations extends org.openhealthtools.mdht.uml.cda.cc
 					IHEValidator.PAYERS_SECTION__IHE_PAYERS_SECTION_TEMPLATE_ID,
 					IHEPlugin.INSTANCE.getString("IHEPayersSectionTemplateId"), new Object[] { payersSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -143,6 +145,7 @@ public class PayersSectionOperations extends org.openhealthtools.mdht.uml.cda.cc
 	 */
 	public static boolean validateIHEPayersSectionCoverageEntry(PayersSection payersSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_IHE_PAYERS_SECTION_COVERAGE_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.PAYERS_SECTION);
@@ -160,6 +163,7 @@ public class PayersSectionOperations extends org.openhealthtools.mdht.uml.cda.cc
 					IHEValidator.PAYERS_SECTION__IHE_PAYERS_SECTION_COVERAGE_ENTRY,
 					IHEPlugin.INSTANCE.getString("IHEPayersSectionCoverageEntry"), new Object[] { payersSection }));
 			}
+
 			return false;
 		}
 		return true;

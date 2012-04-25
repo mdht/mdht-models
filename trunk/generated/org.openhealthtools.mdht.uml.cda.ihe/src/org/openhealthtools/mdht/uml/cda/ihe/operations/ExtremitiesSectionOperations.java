@@ -83,6 +83,7 @@ public class ExtremitiesSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateExtremitiesSectionTemplateId(ExtremitiesSection extremitiesSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_EXTREMITIES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.EXTREMITIES_SECTION);
@@ -100,6 +101,7 @@ public class ExtremitiesSectionOperations extends SectionOperations {
 					IHEValidator.EXTREMITIES_SECTION__EXTREMITIES_SECTION_TEMPLATE_ID,
 					IHEPlugin.INSTANCE.getString("ExtremitiesSectionTemplateId"), new Object[] { extremitiesSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -114,8 +116,8 @@ public class ExtremitiesSectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_EXTREMITIES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
-			+ "value.code = '10196-4' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
+			+ "value.code = '10196-4' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateExtremitiesSectionCode(ExtremitiesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Extremities Section Code</em>}' invariant operation.
@@ -132,8 +134,8 @@ public class ExtremitiesSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in (
-	 * value.code = '10196-4' and value.codeSystem = '2.16.840.1.113883.6.1'))
+	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+	 * value.code = '10196-4' and value.codeSystem = '2.16.840.1.113883.6.1')
 	 * @param extremitiesSection The receiving '<em><b>Extremities Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -142,6 +144,7 @@ public class ExtremitiesSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateExtremitiesSectionCode(ExtremitiesSection extremitiesSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_EXTREMITIES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.EXTREMITIES_SECTION);
@@ -159,6 +162,7 @@ public class ExtremitiesSectionOperations extends SectionOperations {
 					IHEValidator.EXTREMITIES_SECTION__EXTREMITIES_SECTION_CODE,
 					IHEPlugin.INSTANCE.getString("ExtremitiesSectionCode"), new Object[] { extremitiesSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -197,6 +201,7 @@ public class ExtremitiesSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateExtremitiesSectionProblemEntry(ExtremitiesSection extremitiesSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_EXTREMITIES_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.EXTREMITIES_SECTION);
@@ -214,6 +219,7 @@ public class ExtremitiesSectionOperations extends SectionOperations {
 					IHEValidator.EXTREMITIES_SECTION__EXTREMITIES_SECTION_PROBLEM_ENTRY,
 					IHEPlugin.INSTANCE.getString("ExtremitiesSectionProblemEntry"), new Object[] { extremitiesSection }));
 			}
+
 			return false;
 		}
 		return true;

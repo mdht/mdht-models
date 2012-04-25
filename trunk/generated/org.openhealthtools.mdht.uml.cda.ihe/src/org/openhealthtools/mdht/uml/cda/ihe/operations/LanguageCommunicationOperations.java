@@ -89,6 +89,7 @@ public class LanguageCommunicationOperations {
 	 */
 	public static boolean validateIHELanguageCommunicationTemplateId(LanguageCommunication languageCommunication,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_IHE_LANGUAGE_COMMUNICATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.LANGUAGE_COMMUNICATION);
@@ -107,6 +108,7 @@ public class LanguageCommunicationOperations {
 					IHEPlugin.INSTANCE.getString("IHELanguageCommunicationTemplateId"),
 					new Object[] { languageCommunication }));
 			}
+
 			return false;
 		}
 		return true;

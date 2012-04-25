@@ -88,6 +88,7 @@ public class MedicationInformationOperations extends ProductEntryOperations {
 	 */
 	public static boolean validateMedicationInformationCodedProductName(MedicationInformation medicationInformation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_INFORMATION_CODED_PRODUCT_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.MEDICATION_INFORMATION);
@@ -106,6 +107,7 @@ public class MedicationInformationOperations extends ProductEntryOperations {
 					HITSPPlugin.INSTANCE.getString("MedicationInformationCodedProductName"),
 					new Object[] { medicationInformation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -144,6 +146,7 @@ public class MedicationInformationOperations extends ProductEntryOperations {
 	 */
 	public static boolean validateMedicationInformationCodedProductVocab(MedicationInformation medicationInformation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_INFORMATION_CODED_PRODUCT_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.MEDICATION_INFORMATION);
@@ -162,6 +165,7 @@ public class MedicationInformationOperations extends ProductEntryOperations {
 					HITSPPlugin.INSTANCE.getString("MedicationInformationCodedProductVocab"),
 					new Object[] { medicationInformation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -200,6 +204,7 @@ public class MedicationInformationOperations extends ProductEntryOperations {
 	 */
 	public static boolean validateMedicationInformationCodedIngredientVocab(
 			MedicationInformation medicationInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_INFORMATION_CODED_INGREDIENT_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.MEDICATION_INFORMATION);
@@ -219,6 +224,7 @@ public class MedicationInformationOperations extends ProductEntryOperations {
 					HITSPPlugin.INSTANCE.getString("MedicationInformationCodedIngredientVocab"),
 					new Object[] { medicationInformation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -257,6 +263,7 @@ public class MedicationInformationOperations extends ProductEntryOperations {
 	 */
 	public static boolean validateMedicationInformationCodedBrandName(MedicationInformation medicationInformation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_INFORMATION_CODED_BRAND_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.MEDICATION_INFORMATION);
@@ -275,6 +282,7 @@ public class MedicationInformationOperations extends ProductEntryOperations {
 					HITSPPlugin.INSTANCE.getString("MedicationInformationCodedBrandName"),
 					new Object[] { medicationInformation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -313,6 +321,7 @@ public class MedicationInformationOperations extends ProductEntryOperations {
 	 */
 	public static boolean validateMedicationInformationCodedBrandNameVocab(MedicationInformation medicationInformation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_INFORMATION_CODED_BRAND_NAME_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.MEDICATION_INFORMATION);
@@ -332,6 +341,7 @@ public class MedicationInformationOperations extends ProductEntryOperations {
 					HITSPPlugin.INSTANCE.getString("MedicationInformationCodedBrandNameVocab"),
 					new Object[] { medicationInformation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -370,6 +380,7 @@ public class MedicationInformationOperations extends ProductEntryOperations {
 	 */
 	public static boolean validateMedicationInformationFreeTextProductName(MedicationInformation medicationInformation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_INFORMATION_FREE_TEXT_PRODUCT_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.MEDICATION_INFORMATION);
@@ -389,6 +400,7 @@ public class MedicationInformationOperations extends ProductEntryOperations {
 					HITSPPlugin.INSTANCE.getString("MedicationInformationFreeTextProductName"),
 					new Object[] { medicationInformation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -427,6 +439,7 @@ public class MedicationInformationOperations extends ProductEntryOperations {
 	 */
 	public static boolean validateMedicationInformationFreeTextBrandName(MedicationInformation medicationInformation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_INFORMATION_FREE_TEXT_BRAND_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.MEDICATION_INFORMATION);
@@ -445,6 +458,7 @@ public class MedicationInformationOperations extends ProductEntryOperations {
 					HITSPPlugin.INSTANCE.getString("MedicationInformationFreeTextBrandName"),
 					new Object[] { medicationInformation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -483,6 +497,7 @@ public class MedicationInformationOperations extends ProductEntryOperations {
 	 */
 	public static boolean validateMedicationInformationTemplateId(MedicationInformation medicationInformation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_INFORMATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.MEDICATION_INFORMATION);
@@ -501,6 +516,7 @@ public class MedicationInformationOperations extends ProductEntryOperations {
 					HITSPPlugin.INSTANCE.getString("MedicationInformationTemplateId"),
 					new Object[] { medicationInformation }));
 			}
+
 			return false;
 		}
 		return true;

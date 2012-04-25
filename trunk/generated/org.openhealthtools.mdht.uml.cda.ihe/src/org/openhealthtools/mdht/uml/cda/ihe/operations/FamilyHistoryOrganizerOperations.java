@@ -90,6 +90,7 @@ public class FamilyHistoryOrganizerOperations extends
 	 */
 	public static boolean validateIHEFamilyHistoryOrganizerHasParticipant(
 			FamilyHistoryOrganizer familyHistoryOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_IHE_FAMILY_HISTORY_ORGANIZER_HAS_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.FAMILY_HISTORY_ORGANIZER);
@@ -108,6 +109,7 @@ public class FamilyHistoryOrganizerOperations extends
 					IHEPlugin.INSTANCE.getString("IHEFamilyHistoryOrganizerHasParticipant"),
 					new Object[] { familyHistoryOrganizer }));
 			}
+
 			return false;
 		}
 		return true;
@@ -146,6 +148,7 @@ public class FamilyHistoryOrganizerOperations extends
 	 */
 	public static boolean validateIHEFamilyHistoryOrganizerHasParticipantParticipantRole(
 			FamilyHistoryOrganizer familyHistoryOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_IHE_FAMILY_HISTORY_ORGANIZER_HAS_PARTICIPANT_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.FAMILY_HISTORY_ORGANIZER);
@@ -166,6 +169,7 @@ public class FamilyHistoryOrganizerOperations extends
 					IHEPlugin.INSTANCE.getString("IHEFamilyHistoryOrganizerHasParticipantParticipantRole"),
 					new Object[] { familyHistoryOrganizer }));
 			}
+
 			return false;
 		}
 		return true;
@@ -204,6 +208,7 @@ public class FamilyHistoryOrganizerOperations extends
 	 */
 	public static boolean validateIHEFamilyHistoryOrganizerHasParticipantRoleCode(
 			FamilyHistoryOrganizer familyHistoryOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_IHE_FAMILY_HISTORY_ORGANIZER_HAS_PARTICIPANT_ROLE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.FAMILY_HISTORY_ORGANIZER);
@@ -223,6 +228,7 @@ public class FamilyHistoryOrganizerOperations extends
 					IHEPlugin.INSTANCE.getString("IHEFamilyHistoryOrganizerHasParticipantRoleCode"),
 					new Object[] { familyHistoryOrganizer }));
 			}
+
 			return false;
 		}
 		return true;
@@ -261,6 +267,7 @@ public class FamilyHistoryOrganizerOperations extends
 	 */
 	public static boolean validateIHEFamilyHistoryOrganizerHasParticipantRolePlayingEntity(
 			FamilyHistoryOrganizer familyHistoryOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_IHE_FAMILY_HISTORY_ORGANIZER_HAS_PARTICIPANT_ROLE_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.FAMILY_HISTORY_ORGANIZER);
@@ -281,6 +288,7 @@ public class FamilyHistoryOrganizerOperations extends
 					IHEPlugin.INSTANCE.getString("IHEFamilyHistoryOrganizerHasParticipantRolePlayingEntity"),
 					new Object[] { familyHistoryOrganizer }));
 			}
+
 			return false;
 		}
 		return true;
@@ -319,6 +327,7 @@ public class FamilyHistoryOrganizerOperations extends
 	 */
 	public static boolean validateIHEFamilyHistoryOrganizerTemplateId(FamilyHistoryOrganizer familyHistoryOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_IHE_FAMILY_HISTORY_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.FAMILY_HISTORY_ORGANIZER);
@@ -337,6 +346,7 @@ public class FamilyHistoryOrganizerOperations extends
 					IHEPlugin.INSTANCE.getString("IHEFamilyHistoryOrganizerTemplateId"),
 					new Object[] { familyHistoryOrganizer }));
 			}
+
 			return false;
 		}
 		return true;
@@ -351,8 +361,8 @@ public class FamilyHistoryOrganizerOperations extends
 	 * @ordered
 	 */
 	protected static final String VALIDATE_IHE_FAMILY_HISTORY_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in ("
-			+ "value.codeSystem = '2.16.840.1.113883.5.111'))";
+			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
+			+ "value.codeSystem = '2.16.840.1.113883.5.111')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateIHEFamilyHistoryOrganizerCode(FamilyHistoryOrganizer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate IHE Family History Organizer Code</em>}' invariant operation.
@@ -369,8 +379,8 @@ public class FamilyHistoryOrganizerOperations extends
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
-	 * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (
-	 * value.codeSystem = '2.16.840.1.113883.5.111'))
+	 * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+	 * value.codeSystem = '2.16.840.1.113883.5.111')
 	 * @param familyHistoryOrganizer The receiving '<em><b>Family History Organizer</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -379,6 +389,7 @@ public class FamilyHistoryOrganizerOperations extends
 	 */
 	public static boolean validateIHEFamilyHistoryOrganizerCode(FamilyHistoryOrganizer familyHistoryOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_IHE_FAMILY_HISTORY_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.FAMILY_HISTORY_ORGANIZER);
@@ -397,6 +408,7 @@ public class FamilyHistoryOrganizerOperations extends
 					IHEPlugin.INSTANCE.getString("IHEFamilyHistoryOrganizerCode"),
 					new Object[] { familyHistoryOrganizer }));
 			}
+
 			return false;
 		}
 		return true;
@@ -435,6 +447,7 @@ public class FamilyHistoryOrganizerOperations extends
 	 */
 	public static boolean validateIHEFamilyHistoryOrganizerFamilyHistoryObservation(
 			FamilyHistoryOrganizer familyHistoryOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_IHE_FAMILY_HISTORY_ORGANIZER_FAMILY_HISTORY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.FAMILY_HISTORY_ORGANIZER);
@@ -454,6 +467,7 @@ public class FamilyHistoryOrganizerOperations extends
 					IHEPlugin.INSTANCE.getString("IHEFamilyHistoryOrganizerFamilyHistoryObservation"),
 					new Object[] { familyHistoryOrganizer }));
 			}
+
 			return false;
 		}
 		return true;
@@ -494,7 +508,7 @@ public class FamilyHistoryOrganizerOperations extends
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				IHEPackage.Literals.FAMILY_HISTORY_ORGANIZER,
-				IHEPackage.Literals.FAMILY_HISTORY_ORGANIZER.getEAllOperations().get(73));
+				IHEPackage.Literals.FAMILY_HISTORY_ORGANIZER.getEAllOperations().get(75));
 			try {
 				GET_IHE_FAMILY_HISTORY_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_IHE_FAMILY_HISTORY_OBSERVATIONS__EOCL_EXP);
 			} catch (ParserException pe) {

@@ -45,6 +45,7 @@ import org.openhealthtools.mdht.uml.cda.ihe.util.IHEValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.ihe.ProblemEntry#validateProblemEntryCommentInversionInd(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Entry Comment Inversion Ind</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.ihe.ProblemEntry#validateProblemEntryTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Entry Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.ihe.ProblemEntry#validateProblemEntryCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Entry Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.ihe.ProblemEntry#validateProblemObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.ihe.ProblemEntry#validateProblemEntryEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Entry Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.ihe.ProblemEntry#validateProblemEntryId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Entry Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.ihe.ProblemEntry#validateProblemEntryText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Entry Text</em>}</li>
@@ -105,6 +106,7 @@ public class ProblemEntryOperations extends ProblemObservationOperations {
 	 */
 	public static boolean validateProblemEntryHasTextReference(ProblemEntry problemEntry, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PROBLEM_ENTRY_HAS_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.PROBLEM_ENTRY);
@@ -122,6 +124,7 @@ public class ProblemEntryOperations extends ProblemObservationOperations {
 					IHEValidator.PROBLEM_ENTRY__PROBLEM_ENTRY_HAS_TEXT_REFERENCE,
 					IHEPlugin.INSTANCE.getString("ProblemEntryHasTextReference"), new Object[] { problemEntry }));
 			}
+
 			return false;
 		}
 		return true;
@@ -160,6 +163,7 @@ public class ProblemEntryOperations extends ProblemObservationOperations {
 	 */
 	public static boolean validateProblemEntryCommentInversionInd(ProblemEntry problemEntry,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROBLEM_ENTRY_COMMENT_INVERSION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.PROBLEM_ENTRY);
@@ -177,6 +181,7 @@ public class ProblemEntryOperations extends ProblemObservationOperations {
 					IHEValidator.PROBLEM_ENTRY__PROBLEM_ENTRY_COMMENT_INVERSION_IND,
 					IHEPlugin.INSTANCE.getString("ProblemEntryCommentInversionInd"), new Object[] { problemEntry }));
 			}
+
 			return false;
 		}
 		return true;
@@ -215,6 +220,7 @@ public class ProblemEntryOperations extends ProblemObservationOperations {
 	 */
 	public static boolean validateProblemEntryTemplateId(ProblemEntry problemEntry, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PROBLEM_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.PROBLEM_ENTRY);
@@ -232,6 +238,7 @@ public class ProblemEntryOperations extends ProblemObservationOperations {
 					IHEValidator.PROBLEM_ENTRY__PROBLEM_ENTRY_TEMPLATE_ID,
 					IHEPlugin.INSTANCE.getString("ProblemEntryTemplateId"), new Object[] { problemEntry }));
 			}
+
 			return false;
 		}
 		return true;
@@ -245,9 +252,7 @@ public class ProblemEntryOperations extends ProblemObservationOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROBLEM_ENTRY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in ("
-			+ "value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '404684003' or value.code = '409586006' or value.code = '282291009' or value.code = '64572001' or value.code = '248536006' or value.code = '418799008' or value.code = '55607006')))";
+	protected static final String VALIDATE_PROBLEM_ENTRY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateProblemEntryCode(ProblemEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Entry Code</em>}' invariant operation.
@@ -263,9 +268,7 @@ public class ProblemEntryOperations extends ProblemObservationOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
-	 * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (
-	 * value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '404684003' or value.code = '409586006' or value.code = '282291009' or value.code = '64572001' or value.code = '248536006' or value.code = '418799008' or value.code = '55607006')))
+	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
 	 * @param problemEntry The receiving '<em><b>Problem Entry</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -274,6 +277,7 @@ public class ProblemEntryOperations extends ProblemObservationOperations {
 	 */
 	public static boolean validateProblemEntryCode(ProblemEntry problemEntry, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PROBLEM_ENTRY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.PROBLEM_ENTRY);
@@ -289,6 +293,89 @@ public class ProblemEntryOperations extends ProblemObservationOperations {
 					Diagnostic.WARNING, IHEValidator.DIAGNOSTIC_SOURCE, IHEValidator.PROBLEM_ENTRY__PROBLEM_ENTRY_CODE,
 					IHEPlugin.INSTANCE.getString("ProblemEntryCode"), new Object[] { problemEntry }));
 			}
+
+			if (context != null) {
+				// generate a pass token for my dependent constraints to short-circuit or filter results
+				@SuppressWarnings("unchecked")
+				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.ihe.ProblemEntryCode");
+				if (passToken == null) {
+					// anticipate a reasonably healthy model
+					passToken = new java.util.ArrayList<Object>(3);
+					context.put("org.openhealthtools.mdht.uml.cda.ihe.ProblemEntryCode", passToken);
+				}
+				passToken.add(problemEntry);
+			}
+
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateProblemObservationCode(ProblemEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation Code</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateProblemObservationCode(ProblemEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_PROBLEM_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
+			+ "value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '404684003' or value.code = '409586006' or value.code = '282291009' or value.code = '64572001' or value.code = '248536006' or value.code = '418799008' or value.code = '55607006'))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateProblemObservationCode(ProblemEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateProblemObservationCode(ProblemEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_PROBLEM_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+	 * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+	 * value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '404684003' or value.code = '409586006' or value.code = '282291009' or value.code = '64572001' or value.code = '248536006' or value.code = '418799008' or value.code = '55607006'))
+	 * @param problemEntry The receiving '<em><b>Problem Entry</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validateProblemObservationCode(ProblemEntry problemEntry, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.ihe.ProblemEntryCode");
+		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(problemEntry)) {
+			// I have a free pass to short-circuit
+			return true;
+		}
+
+		if (VALIDATE_PROBLEM_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(IHEPackage.Literals.PROBLEM_ENTRY);
+			try {
+				VALIDATE_PROBLEM_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(problemEntry)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, IHEValidator.DIAGNOSTIC_SOURCE,
+					IHEValidator.PROBLEM_ENTRY__PROBLEM_OBSERVATION_CODE,
+					IHEPlugin.INSTANCE.getString("ProblemObservationCode"), new Object[] { problemEntry }));
+			}
+
 			return false;
 		}
 		return true;
@@ -327,6 +414,7 @@ public class ProblemEntryOperations extends ProblemObservationOperations {
 	 */
 	public static boolean validateProblemEntryEffectiveTime(ProblemEntry problemEntry, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PROBLEM_ENTRY_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.PROBLEM_ENTRY);
@@ -344,6 +432,7 @@ public class ProblemEntryOperations extends ProblemObservationOperations {
 					IHEValidator.PROBLEM_ENTRY__PROBLEM_ENTRY_EFFECTIVE_TIME,
 					IHEPlugin.INSTANCE.getString("ProblemEntryEffectiveTime"), new Object[] { problemEntry }));
 			}
+
 			return false;
 		}
 		return true;
@@ -382,6 +471,7 @@ public class ProblemEntryOperations extends ProblemObservationOperations {
 	 */
 	public static boolean validateProblemEntryId(ProblemEntry problemEntry, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PROBLEM_ENTRY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.PROBLEM_ENTRY);
@@ -397,6 +487,7 @@ public class ProblemEntryOperations extends ProblemObservationOperations {
 					Diagnostic.ERROR, IHEValidator.DIAGNOSTIC_SOURCE, IHEValidator.PROBLEM_ENTRY__PROBLEM_ENTRY_ID,
 					IHEPlugin.INSTANCE.getString("ProblemEntryId"), new Object[] { problemEntry }));
 			}
+
 			return false;
 		}
 		return true;
@@ -435,6 +526,7 @@ public class ProblemEntryOperations extends ProblemObservationOperations {
 	 */
 	public static boolean validateProblemEntryText(ProblemEntry problemEntry, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PROBLEM_ENTRY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.PROBLEM_ENTRY);
@@ -450,6 +542,7 @@ public class ProblemEntryOperations extends ProblemObservationOperations {
 					Diagnostic.ERROR, IHEValidator.DIAGNOSTIC_SOURCE, IHEValidator.PROBLEM_ENTRY__PROBLEM_ENTRY_TEXT,
 					IHEPlugin.INSTANCE.getString("ProblemEntryText"), new Object[] { problemEntry }));
 			}
+
 			return false;
 		}
 		return true;
@@ -488,6 +581,7 @@ public class ProblemEntryOperations extends ProblemObservationOperations {
 	 */
 	public static boolean validateProblemEntryValue(ProblemEntry problemEntry, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PROBLEM_ENTRY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.PROBLEM_ENTRY);
@@ -503,6 +597,7 @@ public class ProblemEntryOperations extends ProblemObservationOperations {
 					Diagnostic.ERROR, IHEValidator.DIAGNOSTIC_SOURCE, IHEValidator.PROBLEM_ENTRY__PROBLEM_ENTRY_VALUE,
 					IHEPlugin.INSTANCE.getString("ProblemEntryValue"), new Object[] { problemEntry }));
 			}
+
 			return false;
 		}
 		return true;
@@ -541,6 +636,7 @@ public class ProblemEntryOperations extends ProblemObservationOperations {
 	 */
 	public static boolean validateProblemEntrySeverity(ProblemEntry problemEntry, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PROBLEM_ENTRY_SEVERITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.PROBLEM_ENTRY);
@@ -557,6 +653,7 @@ public class ProblemEntryOperations extends ProblemObservationOperations {
 					IHEValidator.PROBLEM_ENTRY__PROBLEM_ENTRY_SEVERITY,
 					IHEPlugin.INSTANCE.getString("ProblemEntrySeverity"), new Object[] { problemEntry }));
 			}
+
 			return false;
 		}
 		return true;
@@ -595,6 +692,7 @@ public class ProblemEntryOperations extends ProblemObservationOperations {
 	 */
 	public static boolean validateProblemEntryProblemStatusObservation(ProblemEntry problemEntry,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROBLEM_ENTRY_PROBLEM_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.PROBLEM_ENTRY);
@@ -612,6 +710,7 @@ public class ProblemEntryOperations extends ProblemObservationOperations {
 					IHEValidator.PROBLEM_ENTRY__PROBLEM_ENTRY_PROBLEM_STATUS_OBSERVATION,
 					IHEPlugin.INSTANCE.getString("ProblemEntryProblemStatusObservation"), new Object[] { problemEntry }));
 			}
+
 			return false;
 		}
 		return true;
@@ -650,6 +749,7 @@ public class ProblemEntryOperations extends ProblemObservationOperations {
 	 */
 	public static boolean validateProblemEntryHealthStatusObservation(ProblemEntry problemEntry,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROBLEM_ENTRY_HEALTH_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.PROBLEM_ENTRY);
@@ -667,6 +767,7 @@ public class ProblemEntryOperations extends ProblemObservationOperations {
 					IHEValidator.PROBLEM_ENTRY__PROBLEM_ENTRY_HEALTH_STATUS_OBSERVATION,
 					IHEPlugin.INSTANCE.getString("ProblemEntryHealthStatusObservation"), new Object[] { problemEntry }));
 			}
+
 			return false;
 		}
 		return true;
@@ -705,6 +806,7 @@ public class ProblemEntryOperations extends ProblemObservationOperations {
 	 */
 	public static boolean validateProblemEntryComment(ProblemEntry problemEntry, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PROBLEM_ENTRY_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.PROBLEM_ENTRY);
@@ -720,6 +822,7 @@ public class ProblemEntryOperations extends ProblemObservationOperations {
 					Diagnostic.INFO, IHEValidator.DIAGNOSTIC_SOURCE, IHEValidator.PROBLEM_ENTRY__PROBLEM_ENTRY_COMMENT,
 					IHEPlugin.INSTANCE.getString("ProblemEntryComment"), new Object[] { problemEntry }));
 			}
+
 			return false;
 		}
 		return true;
@@ -758,7 +861,7 @@ public class ProblemEntryOperations extends ProblemObservationOperations {
 		if (GET_SEVERITY__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				IHEPackage.Literals.PROBLEM_ENTRY, IHEPackage.Literals.PROBLEM_ENTRY.getEAllOperations().get(73));
+				IHEPackage.Literals.PROBLEM_ENTRY, IHEPackage.Literals.PROBLEM_ENTRY.getEAllOperations().get(76));
 			try {
 				GET_SEVERITY__EOCL_QRY = helper.createQuery(GET_SEVERITY__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -802,7 +905,7 @@ public class ProblemEntryOperations extends ProblemObservationOperations {
 		if (GET_PROBLEM_STATUS_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				IHEPackage.Literals.PROBLEM_ENTRY, IHEPackage.Literals.PROBLEM_ENTRY.getEAllOperations().get(74));
+				IHEPackage.Literals.PROBLEM_ENTRY, IHEPackage.Literals.PROBLEM_ENTRY.getEAllOperations().get(77));
 			try {
 				GET_PROBLEM_STATUS_OBSERVATION__EOCL_QRY = helper.createQuery(GET_PROBLEM_STATUS_OBSERVATION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -846,7 +949,7 @@ public class ProblemEntryOperations extends ProblemObservationOperations {
 		if (GET_HEALTH_STATUS_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				IHEPackage.Literals.PROBLEM_ENTRY, IHEPackage.Literals.PROBLEM_ENTRY.getEAllOperations().get(75));
+				IHEPackage.Literals.PROBLEM_ENTRY, IHEPackage.Literals.PROBLEM_ENTRY.getEAllOperations().get(78));
 			try {
 				GET_HEALTH_STATUS_OBSERVATION__EOCL_QRY = helper.createQuery(GET_HEALTH_STATUS_OBSERVATION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -890,7 +993,7 @@ public class ProblemEntryOperations extends ProblemObservationOperations {
 		if (GET_COMMENTS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				IHEPackage.Literals.PROBLEM_ENTRY, IHEPackage.Literals.PROBLEM_ENTRY.getEAllOperations().get(76));
+				IHEPackage.Literals.PROBLEM_ENTRY, IHEPackage.Literals.PROBLEM_ENTRY.getEAllOperations().get(79));
 			try {
 				GET_COMMENTS__EOCL_QRY = helper.createQuery(GET_COMMENTS__EOCL_EXP);
 			} catch (ParserException pe) {

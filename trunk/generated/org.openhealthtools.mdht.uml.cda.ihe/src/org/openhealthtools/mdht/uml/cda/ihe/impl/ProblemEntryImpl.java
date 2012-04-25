@@ -95,6 +95,15 @@ public class ProblemEntryImpl extends ProblemObservationImpl implements ProblemE
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateProblemObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemEntryOperations.validateProblemObservationCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateProblemEntryEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemEntryOperations.validateProblemEntryEffectiveTime(this, diagnostics, context);
 	}

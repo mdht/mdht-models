@@ -83,6 +83,7 @@ public class ThoraxLungsSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateThoraxLungsSectionTemplateId(ThoraxLungsSection thoraxLungsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_THORAX_LUNGS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.THORAX_LUNGS_SECTION);
@@ -100,6 +101,7 @@ public class ThoraxLungsSectionOperations extends SectionOperations {
 					IHEValidator.THORAX_LUNGS_SECTION__THORAX_LUNGS_SECTION_TEMPLATE_ID,
 					IHEPlugin.INSTANCE.getString("ThoraxLungsSectionTemplateId"), new Object[] { thoraxLungsSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -114,8 +116,8 @@ public class ThoraxLungsSectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_THORAX_LUNGS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
-			+ "value.code = '10207-9' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
+			+ "value.code = '10207-9' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateThoraxLungsSectionCode(ThoraxLungsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Thorax Lungs Section Code</em>}' invariant operation.
@@ -132,8 +134,8 @@ public class ThoraxLungsSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in (
-	 * value.code = '10207-9' and value.codeSystem = '2.16.840.1.113883.6.1'))
+	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+	 * value.code = '10207-9' and value.codeSystem = '2.16.840.1.113883.6.1')
 	 * @param thoraxLungsSection The receiving '<em><b>Thorax Lungs Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -142,6 +144,7 @@ public class ThoraxLungsSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateThoraxLungsSectionCode(ThoraxLungsSection thoraxLungsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_THORAX_LUNGS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.THORAX_LUNGS_SECTION);
@@ -159,6 +162,7 @@ public class ThoraxLungsSectionOperations extends SectionOperations {
 					IHEValidator.THORAX_LUNGS_SECTION__THORAX_LUNGS_SECTION_CODE,
 					IHEPlugin.INSTANCE.getString("ThoraxLungsSectionCode"), new Object[] { thoraxLungsSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -197,6 +201,7 @@ public class ThoraxLungsSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateThoraxLungsSectionProblemEntry(ThoraxLungsSection thoraxLungsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_THORAX_LUNGS_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.THORAX_LUNGS_SECTION);
@@ -214,6 +219,7 @@ public class ThoraxLungsSectionOperations extends SectionOperations {
 					IHEValidator.THORAX_LUNGS_SECTION__THORAX_LUNGS_SECTION_PROBLEM_ENTRY,
 					IHEPlugin.INSTANCE.getString("ThoraxLungsSectionProblemEntry"), new Object[] { thoraxLungsSection }));
 			}
+
 			return false;
 		}
 		return true;

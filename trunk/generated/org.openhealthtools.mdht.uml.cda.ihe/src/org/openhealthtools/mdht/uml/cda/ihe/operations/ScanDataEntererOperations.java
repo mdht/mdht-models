@@ -84,6 +84,7 @@ public class ScanDataEntererOperations extends DataEntererOperations {
 	 */
 	public static boolean validateScanDataEntererTimeEqualsDocumentEffectiveTime(ScanDataEnterer scanDataEnterer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_SCAN_DATA_ENTERER_TIME_EQUALS_DOCUMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.SCAN_DATA_ENTERER);
@@ -103,6 +104,7 @@ public class ScanDataEntererOperations extends DataEntererOperations {
 					IHEPlugin.INSTANCE.getString("ScanDataEntererTimeEqualsDocumentEffectiveTime"),
 					new Object[] { scanDataEnterer }));
 			}
+
 			return false;
 		}
 		return true;
@@ -141,6 +143,7 @@ public class ScanDataEntererOperations extends DataEntererOperations {
 	 */
 	public static boolean validateScanDataEntererHasAssignedEntityId(ScanDataEnterer scanDataEnterer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_SCAN_DATA_ENTERER_HAS_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.SCAN_DATA_ENTERER);
@@ -159,6 +162,7 @@ public class ScanDataEntererOperations extends DataEntererOperations {
 					IHEPlugin.INSTANCE.getString("ScanDataEntererHasAssignedEntityId"),
 					new Object[] { scanDataEnterer }));
 			}
+
 			return false;
 		}
 		return true;
@@ -197,6 +201,7 @@ public class ScanDataEntererOperations extends DataEntererOperations {
 	 */
 	public static boolean validateScanDataEntererTemplateId(ScanDataEnterer scanDataEnterer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_SCAN_DATA_ENTERER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.SCAN_DATA_ENTERER);
@@ -214,6 +219,7 @@ public class ScanDataEntererOperations extends DataEntererOperations {
 					IHEValidator.SCAN_DATA_ENTERER__SCAN_DATA_ENTERER_TEMPLATE_ID,
 					IHEPlugin.INSTANCE.getString("ScanDataEntererTemplateId"), new Object[] { scanDataEnterer }));
 			}
+
 			return false;
 		}
 		return true;
@@ -252,6 +258,7 @@ public class ScanDataEntererOperations extends DataEntererOperations {
 	 */
 	public static boolean validateScanDataEntererTime(ScanDataEnterer scanDataEnterer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_SCAN_DATA_ENTERER_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.SCAN_DATA_ENTERER);
@@ -269,6 +276,7 @@ public class ScanDataEntererOperations extends DataEntererOperations {
 					IHEValidator.SCAN_DATA_ENTERER__SCAN_DATA_ENTERER_TIME,
 					IHEPlugin.INSTANCE.getString("ScanDataEntererTime"), new Object[] { scanDataEnterer }));
 			}
+
 			return false;
 		}
 		return true;

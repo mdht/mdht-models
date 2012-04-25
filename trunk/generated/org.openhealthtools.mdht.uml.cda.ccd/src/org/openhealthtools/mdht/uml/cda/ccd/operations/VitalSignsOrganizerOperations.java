@@ -87,6 +87,7 @@ public class VitalSignsOrganizerOperations extends ResultOrganizerOperations {
 	 */
 	public static boolean validateVitalSignsOrganizerInformationSource(VitalSignsOrganizer vitalSignsOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_VITAL_SIGNS_ORGANIZER_INFORMATION_SOURCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.VITAL_SIGNS_ORGANIZER);
@@ -105,6 +106,7 @@ public class VitalSignsOrganizerOperations extends ResultOrganizerOperations {
 					CCDPlugin.INSTANCE.getString("VitalSignsOrganizerInformationSource"),
 					new Object[] { vitalSignsOrganizer }));
 			}
+
 			return false;
 		}
 		return true;
@@ -143,6 +145,7 @@ public class VitalSignsOrganizerOperations extends ResultOrganizerOperations {
 	 */
 	public static boolean validateResultOrganizerTemplateId(VitalSignsOrganizer vitalSignsOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_RESULT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.VITAL_SIGNS_ORGANIZER);
@@ -166,6 +169,7 @@ public class VitalSignsOrganizerOperations extends ResultOrganizerOperations {
 								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSignsOrganizer, context) }),
 					new Object[] { vitalSignsOrganizer }));
 			}
+
 			return false;
 		}
 		return true;

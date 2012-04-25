@@ -2274,11 +2274,9 @@ document may come from sources or contain information that the author cannot val
     <ruleId>CONF-PRGN-30</ruleId>
   </CDA:AssociationValidation>
   <CDA:CDATemplate xmi:id="_ZV6hgMv5Ed-hi-1hHmWxvw" base_Class="_W3syoMv5Ed-hi-1hHmWxvw" templateId="2.16.840.1.113883.10.20.21.2.2"/>
-  <CDA:PropertyValidation xmi:id="_c4AIMMv5Ed-hi-1hHmWxvw" base_Property="_XxHt8Mv5Ed-hi-1hHmWxvw">
-    <ruleId>CONF-PRGN-32</ruleId>
-  </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_dNaXgMv5Ed-hi-1hHmWxvw" code="SUBJ-X" displayName="SUBJECTIVE DATA" base_Property="_XxHt8Mv5Ed-hi-1hHmWxvw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF-PRGN-32</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:AssociationValidation xmi:id="_wKJuUMv5Ed-hi-1hHmWxvw" severity="INFO" base_Association="_tbqu0cv5Ed-hi-1hHmWxvw">
     <ruleId>CONF-PRGN-31</ruleId>
@@ -2326,17 +2324,13 @@ document may come from sources or contain information that the author cannot val
     <ruleId>CONF-PN-46</ruleId>
   </CDA:ClassValidation>
   <CDA:CDATemplate xmi:id="_1BXikMzCEd-RYrNQjqkPtg" base_Class="_SMDJgMzCEd-RYrNQjqkPtg" templateId="2.16.840.1.113883.10.20.18.2.14"/>
-  <CDA:PropertyValidation xmi:id="_87xNUMzCEd-RYrNQjqkPtg" base_Property="_Yt8JMszCEd-RYrNQjqkPtg">
-    <ruleId>CONF-PN-45</ruleId>
-  </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_88xS4MzCEd-RYrNQjqkPtg" code="51848-0" displayName="ASSESSMENT" base_Property="_Yt8JMszCEd-RYrNQjqkPtg">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF-PN-45</ruleId>
   </CDA:CodeSystemConstraint>
-  <CDA:PropertyValidation xmi:id="_L32LEMzDEd-RYrNQjqkPtg" base_Property="_SMDJgszCEd-RYrNQjqkPtg">
-    <ruleId>CONF-PN-46</ruleId>
-  </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_L4r4kMzDEd-RYrNQjqkPtg" code="51847-2" displayName="ASSESSMENT AND PLAN" base_Property="_SMDJgszCEd-RYrNQjqkPtg">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF-PN-46</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:ConstraintValidation xmi:id="_T-YC0PzSEd-9y7w_HH-hnA" base_Constraint="_M7vtkPzSEd-9y7w_HH-hnA">
     <ruleId>CONF-HP-6</ruleId>

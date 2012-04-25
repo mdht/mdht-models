@@ -88,6 +88,7 @@ public class HospitalDischargeMedicationsSectionOperations extends SectionOperat
 	public static boolean validateHospitalDischargeMedicationsSectionTemplateId(
 			HospitalDischargeMedicationsSection hospitalDischargeMedicationsSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.HOSPITAL_DISCHARGE_MEDICATIONS_SECTION);
@@ -108,6 +109,7 @@ public class HospitalDischargeMedicationsSectionOperations extends SectionOperat
 					IHEPlugin.INSTANCE.getString("HospitalDischargeMedicationsSectionTemplateId"),
 					new Object[] { hospitalDischargeMedicationsSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -122,8 +124,8 @@ public class HospitalDischargeMedicationsSectionOperations extends SectionOperat
 	 * @ordered
 	 */
 	protected static final String VALIDATE_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
-			+ "value.code = '10183-2' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
+			+ "value.code = '10183-2' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateHospitalDischargeMedicationsSectionCode(HospitalDischargeMedicationsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Discharge Medications Section Code</em>}' invariant operation.
@@ -140,8 +142,8 @@ public class HospitalDischargeMedicationsSectionOperations extends SectionOperat
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in (
-	 * value.code = '10183-2' and value.codeSystem = '2.16.840.1.113883.6.1'))
+	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+	 * value.code = '10183-2' and value.codeSystem = '2.16.840.1.113883.6.1')
 	 * @param hospitalDischargeMedicationsSection The receiving '<em><b>Hospital Discharge Medications Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -151,6 +153,7 @@ public class HospitalDischargeMedicationsSectionOperations extends SectionOperat
 	public static boolean validateHospitalDischargeMedicationsSectionCode(
 			HospitalDischargeMedicationsSection hospitalDischargeMedicationsSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.HOSPITAL_DISCHARGE_MEDICATIONS_SECTION);
@@ -169,6 +172,7 @@ public class HospitalDischargeMedicationsSectionOperations extends SectionOperat
 					IHEPlugin.INSTANCE.getString("HospitalDischargeMedicationsSectionCode"),
 					new Object[] { hospitalDischargeMedicationsSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -208,6 +212,7 @@ public class HospitalDischargeMedicationsSectionOperations extends SectionOperat
 	public static boolean validateHospitalDischargeMedicationsSectionMedication(
 			HospitalDischargeMedicationsSection hospitalDischargeMedicationsSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.HOSPITAL_DISCHARGE_MEDICATIONS_SECTION);
@@ -228,6 +233,7 @@ public class HospitalDischargeMedicationsSectionOperations extends SectionOperat
 					IHEPlugin.INSTANCE.getString("HospitalDischargeMedicationsSectionMedication"),
 					new Object[] { hospitalDischargeMedicationsSection }));
 			}
+
 			return false;
 		}
 		return true;

@@ -56,7 +56,8 @@ public class ChiefComplaintSectionProcNoteImpl extends SectionImpl implements Ch
 	 */
 	public boolean validateChiefComplaintSectionProcNoteTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ChiefComplaintSectionProcNoteOperations.validateChiefComplaintSectionProcNoteTemplateId(this, diagnostics, context);
+		return ChiefComplaintSectionProcNoteOperations.validateChiefComplaintSectionProcNoteTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -65,7 +66,8 @@ public class ChiefComplaintSectionProcNoteImpl extends SectionImpl implements Ch
 	 * @generated
 	 */
 	public boolean validateChiefComplaintSectionProcNoteCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ChiefComplaintSectionProcNoteOperations.validateChiefComplaintSectionProcNoteCode(this, diagnostics, context);
+		return ChiefComplaintSectionProcNoteOperations.validateChiefComplaintSectionProcNoteCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -74,7 +76,7 @@ public class ChiefComplaintSectionProcNoteImpl extends SectionImpl implements Ch
 	 * @generated
 	 */
 	public ChiefComplaintSectionProcNote init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // ChiefComplaintSectionProcNoteImpl

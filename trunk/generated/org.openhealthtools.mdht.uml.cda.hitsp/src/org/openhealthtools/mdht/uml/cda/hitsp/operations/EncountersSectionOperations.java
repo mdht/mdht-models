@@ -89,6 +89,7 @@ public class EncountersSectionOperations extends EncounterHistorySectionOperatio
 	 */
 	public static boolean validateHITSPEncountersSectionTemplateId(EncountersSection encountersSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_ENCOUNTERS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.ENCOUNTERS_SECTION);
@@ -107,6 +108,7 @@ public class EncountersSectionOperations extends EncounterHistorySectionOperatio
 					HITSPPlugin.INSTANCE.getString("HITSPEncountersSectionTemplateId"),
 					new Object[] { encountersSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -145,6 +147,7 @@ public class EncountersSectionOperations extends EncounterHistorySectionOperatio
 	 */
 	public static boolean validateHITSPEncountersSectionEncounterEntry(EncountersSection encountersSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_ENCOUNTERS_SECTION_ENCOUNTER_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.ENCOUNTERS_SECTION);
@@ -163,6 +166,7 @@ public class EncountersSectionOperations extends EncounterHistorySectionOperatio
 					HITSPPlugin.INSTANCE.getString("HITSPEncountersSectionEncounterEntry"),
 					new Object[] { encountersSection }));
 			}
+
 			return false;
 		}
 		return true;

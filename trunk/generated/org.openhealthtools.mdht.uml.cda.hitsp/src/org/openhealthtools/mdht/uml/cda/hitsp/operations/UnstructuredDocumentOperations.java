@@ -83,6 +83,7 @@ public class UnstructuredDocumentOperations extends MedicalDocumentOperations {
 	 */
 	public static boolean validateScannedDocumentTemplateId(UnstructuredDocument unstructuredDocument,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_SCANNED_DOCUMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.UNSTRUCTURED_DOCUMENT);
@@ -105,6 +106,7 @@ public class UnstructuredDocumentOperations extends MedicalDocumentOperations {
 								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
 									unstructuredDocument, context) }), new Object[] { unstructuredDocument }));
 			}
+
 			return false;
 		}
 		return true;
@@ -143,6 +145,7 @@ public class UnstructuredDocumentOperations extends MedicalDocumentOperations {
 	 */
 	public static boolean validateUnstructuredDocumentNoStructuredData(UnstructuredDocument unstructuredDocument,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_UNSTRUCTURED_DOCUMENT_NO_STRUCTURED_DATA__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.UNSTRUCTURED_DOCUMENT);
@@ -161,6 +164,7 @@ public class UnstructuredDocumentOperations extends MedicalDocumentOperations {
 					HITSPPlugin.INSTANCE.getString("UnstructuredDocumentNoStructuredData"),
 					new Object[] { unstructuredDocument }));
 			}
+
 			return false;
 		}
 		return true;
@@ -199,6 +203,7 @@ public class UnstructuredDocumentOperations extends MedicalDocumentOperations {
 	 */
 	public static boolean validateUnstructuredDocumentOnePatientPerDocument(UnstructuredDocument unstructuredDocument,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_UNSTRUCTURED_DOCUMENT_ONE_PATIENT_PER_DOCUMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.UNSTRUCTURED_DOCUMENT);
@@ -218,6 +223,7 @@ public class UnstructuredDocumentOperations extends MedicalDocumentOperations {
 					HITSPPlugin.INSTANCE.getString("UnstructuredDocumentOnePatientPerDocument"),
 					new Object[] { unstructuredDocument }));
 			}
+
 			return false;
 		}
 		return true;

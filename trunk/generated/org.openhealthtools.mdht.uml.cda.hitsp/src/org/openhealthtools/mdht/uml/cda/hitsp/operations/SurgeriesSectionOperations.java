@@ -89,6 +89,7 @@ public class SurgeriesSectionOperations extends CodedSurgeriesSectionOperations 
 	 */
 	public static boolean validateHITSPSurgeriesSectionTemplateId(SurgeriesSection surgeriesSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_SURGERIES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.SURGERIES_SECTION);
@@ -107,6 +108,7 @@ public class SurgeriesSectionOperations extends CodedSurgeriesSectionOperations 
 					HITSPPlugin.INSTANCE.getString("HITSPSurgeriesSectionTemplateId"),
 					new Object[] { surgeriesSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -145,6 +147,7 @@ public class SurgeriesSectionOperations extends CodedSurgeriesSectionOperations 
 	 */
 	public static boolean validateHITSPSurgeriesSectionProcedureActivity(SurgeriesSection surgeriesSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_SURGERIES_SECTION_PROCEDURE_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.SURGERIES_SECTION);
@@ -163,6 +166,7 @@ public class SurgeriesSectionOperations extends CodedSurgeriesSectionOperations 
 					HITSPPlugin.INSTANCE.getString("HITSPSurgeriesSectionProcedureActivity"),
 					new Object[] { surgeriesSection }));
 			}
+
 			return false;
 		}
 		return true;

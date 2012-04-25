@@ -90,6 +90,7 @@ public class FamilyHistoryOperations extends FamilyHistoryOrganizerOperations {
 	 */
 	public static boolean validateFamilyHistoryRelatedSubjectCodeValueSet(FamilyHistory familyHistory,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_FAMILY_HISTORY_RELATED_SUBJECT_CODE_VALUE_SET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.FAMILY_HISTORY);
@@ -108,6 +109,7 @@ public class FamilyHistoryOperations extends FamilyHistoryOrganizerOperations {
 					HITSPPlugin.INSTANCE.getString("FamilyHistoryRelatedSubjectCodeValueSet"),
 					new Object[] { familyHistory }));
 			}
+
 			return false;
 		}
 		return true;
@@ -148,6 +150,7 @@ public class FamilyHistoryOperations extends FamilyHistoryOrganizerOperations {
 
 	public static boolean validateFamilyHistoryHasSDTCid(FamilyHistory familyHistory, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_FAMILY_HISTORY_HAS_SDT_CID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.FAMILY_HISTORY);
@@ -165,6 +168,7 @@ public class FamilyHistoryOperations extends FamilyHistoryOrganizerOperations {
 					HITSPValidator.FAMILY_HISTORY__FAMILY_HISTORY_HAS_SDT_CID,
 					HITSPPlugin.INSTANCE.getString("FamilyHistoryHasSDTCid"), new Object[] { familyHistory }));
 			}
+
 			return false;
 		}
 		return true;
@@ -203,6 +207,7 @@ public class FamilyHistoryOperations extends FamilyHistoryOrganizerOperations {
 	 */
 	public static boolean validateFamilyHistoryHasFamilyName(FamilyHistory familyHistory, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_FAMILY_HISTORY_HAS_FAMILY_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.FAMILY_HISTORY);
@@ -220,6 +225,7 @@ public class FamilyHistoryOperations extends FamilyHistoryOrganizerOperations {
 					HITSPValidator.FAMILY_HISTORY__FAMILY_HISTORY_HAS_FAMILY_NAME,
 					HITSPPlugin.INSTANCE.getString("FamilyHistoryHasFamilyName"), new Object[] { familyHistory }));
 			}
+
 			return false;
 		}
 		return true;
@@ -258,6 +264,7 @@ public class FamilyHistoryOperations extends FamilyHistoryOrganizerOperations {
 	 */
 	public static boolean validateFamilyHistoryHasGenderCode(FamilyHistory familyHistory, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_FAMILY_HISTORY_HAS_GENDER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.FAMILY_HISTORY);
@@ -275,6 +282,7 @@ public class FamilyHistoryOperations extends FamilyHistoryOrganizerOperations {
 					HITSPValidator.FAMILY_HISTORY__FAMILY_HISTORY_HAS_GENDER_CODE,
 					HITSPPlugin.INSTANCE.getString("FamilyHistoryHasGenderCode"), new Object[] { familyHistory }));
 			}
+
 			return false;
 		}
 		return true;
@@ -313,6 +321,7 @@ public class FamilyHistoryOperations extends FamilyHistoryOrganizerOperations {
 	 */
 	public static boolean validateFamilyHistoryFamilyMemberCondition(FamilyHistory familyHistory,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_FAMILY_HISTORY_FAMILY_MEMBER_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.FAMILY_HISTORY);
@@ -331,6 +340,7 @@ public class FamilyHistoryOperations extends FamilyHistoryOrganizerOperations {
 					HITSPPlugin.INSTANCE.getString("FamilyHistoryFamilyMemberCondition"),
 					new Object[] { familyHistory }));
 			}
+
 			return false;
 		}
 		return true;
@@ -369,6 +379,7 @@ public class FamilyHistoryOperations extends FamilyHistoryOrganizerOperations {
 	 */
 	public static boolean validateFamilyHistoryTemplateId(FamilyHistory familyHistory, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_FAMILY_HISTORY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.FAMILY_HISTORY);
@@ -386,6 +397,7 @@ public class FamilyHistoryOperations extends FamilyHistoryOrganizerOperations {
 					HITSPValidator.FAMILY_HISTORY__FAMILY_HISTORY_TEMPLATE_ID,
 					HITSPPlugin.INSTANCE.getString("FamilyHistoryTemplateId"), new Object[] { familyHistory }));
 			}
+
 			return false;
 		}
 		return true;
@@ -424,6 +436,7 @@ public class FamilyHistoryOperations extends FamilyHistoryOrganizerOperations {
 	 */
 	public static boolean validateFamilyHistoryProblemStatusObservation(FamilyHistory familyHistory,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_FAMILY_HISTORY_PROBLEM_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.FAMILY_HISTORY);
@@ -442,6 +455,7 @@ public class FamilyHistoryOperations extends FamilyHistoryOrganizerOperations {
 					HITSPPlugin.INSTANCE.getString("FamilyHistoryProblemStatusObservation"),
 					new Object[] { familyHistory }));
 			}
+
 			return false;
 		}
 		return true;
@@ -480,7 +494,7 @@ public class FamilyHistoryOperations extends FamilyHistoryOrganizerOperations {
 		if (GET_PROBLEM_STATUS_OBSERVATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				HITSPPackage.Literals.FAMILY_HISTORY, HITSPPackage.Literals.FAMILY_HISTORY.getEAllOperations().get(81));
+				HITSPPackage.Literals.FAMILY_HISTORY, HITSPPackage.Literals.FAMILY_HISTORY.getEAllOperations().get(83));
 			try {
 				GET_PROBLEM_STATUS_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_PROBLEM_STATUS_OBSERVATIONS__EOCL_EXP);
 			} catch (ParserException pe) {

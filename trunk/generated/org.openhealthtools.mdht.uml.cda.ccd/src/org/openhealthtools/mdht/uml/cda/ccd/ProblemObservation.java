@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ccd.CCDPackage#getProblemObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation moodCode='EVN' classCode='OBS' constraints.validation.error='ProblemObservationTemplateId ProblemObservationInformationSource ProblemObservationMoodCode ProblemObservationStatusCode' templateId.root='2.16.840.1.113883.10.20.1.28' constraints.validation.info='ProblemObservationContainsPatientAwareness ProblemObservationProblemStatus ProblemObservationProblemHealthStatus ProblemObservationAgeObservation' statusCode.code='completed' constraints.validation.warning='ProblemObservationEffectiveTime'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProblemObservationTemplateId ProblemObservationInformationSource ProblemObservationMoodCode ProblemObservationStatusCode' templateId.root='2.16.840.1.113883.10.20.1.28' constraints.validation.info='ProblemObservationContainsPatientAwareness ProblemObservationProblemStatus ProblemObservationProblemHealthStatus ProblemObservationAgeObservation' classCode='OBS' moodCode='EVN' statusCode.code='completed' constraints.validation.warning='ProblemObservationEffectiveTime'"
  * @generated
  */
 public interface ProblemObservation extends Observation {
@@ -89,12 +89,12 @@ public interface ProblemObservation extends Observation {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
-	 * let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in (
-	 * value.code = 'completed'))
+	 * let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
+	 * value.code = 'completed')
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and \r\nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in (\r\nvalue.code = \'completed\'))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and \r\nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in \r\nvalue.code = \'completed\')'"
 	 * @generated
 	 */
 	boolean validateProblemObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context);

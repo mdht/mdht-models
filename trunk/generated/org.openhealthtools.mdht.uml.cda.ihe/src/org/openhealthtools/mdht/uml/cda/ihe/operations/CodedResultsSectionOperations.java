@@ -96,6 +96,7 @@ public class CodedResultsSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateCodedResultsSectionTemplateId(CodedResultsSection codedResultsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CODED_RESULTS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.CODED_RESULTS_SECTION);
@@ -113,6 +114,7 @@ public class CodedResultsSectionOperations extends SectionOperations {
 					IHEValidator.CODED_RESULTS_SECTION__CODED_RESULTS_SECTION_TEMPLATE_ID,
 					IHEPlugin.INSTANCE.getString("CodedResultsSectionTemplateId"), new Object[] { codedResultsSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -127,8 +129,8 @@ public class CodedResultsSectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_CODED_RESULTS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
-			+ "value.code = '30954-2' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
+			+ "value.code = '30954-2' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateCodedResultsSectionCode(CodedResultsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coded Results Section Code</em>}' invariant operation.
@@ -145,8 +147,8 @@ public class CodedResultsSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in (
-	 * value.code = '30954-2' and value.codeSystem = '2.16.840.1.113883.6.1'))
+	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+	 * value.code = '30954-2' and value.codeSystem = '2.16.840.1.113883.6.1')
 	 * @param codedResultsSection The receiving '<em><b>Coded Results Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -155,6 +157,7 @@ public class CodedResultsSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateCodedResultsSectionCode(CodedResultsSection codedResultsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CODED_RESULTS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.CODED_RESULTS_SECTION);
@@ -172,6 +175,7 @@ public class CodedResultsSectionOperations extends SectionOperations {
 					IHEValidator.CODED_RESULTS_SECTION__CODED_RESULTS_SECTION_CODE,
 					IHEPlugin.INSTANCE.getString("CodedResultsSectionCode"), new Object[] { codedResultsSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -210,6 +214,7 @@ public class CodedResultsSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateCodedResultsSectionProcedureEntry(CodedResultsSection codedResultsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CODED_RESULTS_SECTION_PROCEDURE_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.CODED_RESULTS_SECTION);
@@ -228,6 +233,7 @@ public class CodedResultsSectionOperations extends SectionOperations {
 					IHEPlugin.INSTANCE.getString("CodedResultsSectionProcedureEntry"),
 					new Object[] { codedResultsSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -266,6 +272,7 @@ public class CodedResultsSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateCodedResultsSectionExternalReference(CodedResultsSection codedResultsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CODED_RESULTS_SECTION_EXTERNAL_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.CODED_RESULTS_SECTION);
@@ -284,6 +291,7 @@ public class CodedResultsSectionOperations extends SectionOperations {
 					IHEPlugin.INSTANCE.getString("CodedResultsSectionExternalReference"),
 					new Object[] { codedResultsSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -322,6 +330,7 @@ public class CodedResultsSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateCodedResultsSectionSimpleObservation(CodedResultsSection codedResultsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CODED_RESULTS_SECTION_SIMPLE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.CODED_RESULTS_SECTION);
@@ -340,6 +349,7 @@ public class CodedResultsSectionOperations extends SectionOperations {
 					IHEPlugin.INSTANCE.getString("CodedResultsSectionSimpleObservation"),
 					new Object[] { codedResultsSection }));
 			}
+
 			return false;
 		}
 		return true;

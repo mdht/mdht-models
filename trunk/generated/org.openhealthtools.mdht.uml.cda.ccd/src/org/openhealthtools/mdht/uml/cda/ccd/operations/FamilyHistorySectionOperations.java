@@ -94,6 +94,7 @@ public class FamilyHistorySectionOperations extends SectionOperations {
 	 */
 	public static boolean validateFamilyHistorySectionFamilyHistoryObsOrgs(FamilyHistorySection familyHistorySection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_FAMILY_HISTORY_SECTION_FAMILY_HISTORY_OBS_ORGS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.FAMILY_HISTORY_SECTION);
@@ -113,6 +114,7 @@ public class FamilyHistorySectionOperations extends SectionOperations {
 					CCDPlugin.INSTANCE.getString("FamilyHistorySectionFamilyHistoryObsOrgs"),
 					new Object[] { familyHistorySection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -151,6 +153,7 @@ public class FamilyHistorySectionOperations extends SectionOperations {
 	 */
 	public static boolean validateFamilyHistorySectionNoSubject(FamilyHistorySection familyHistorySection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_FAMILY_HISTORY_SECTION_NO_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.FAMILY_HISTORY_SECTION);
@@ -169,6 +172,7 @@ public class FamilyHistorySectionOperations extends SectionOperations {
 					CCDPlugin.INSTANCE.getString("FamilyHistorySectionNoSubject"),
 					new Object[] { familyHistorySection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -207,6 +211,7 @@ public class FamilyHistorySectionOperations extends SectionOperations {
 	 */
 	public static boolean validateFamilyHistorySectionTemplateId(FamilyHistorySection familyHistorySection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_FAMILY_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.FAMILY_HISTORY_SECTION);
@@ -225,6 +230,7 @@ public class FamilyHistorySectionOperations extends SectionOperations {
 					CCDPlugin.INSTANCE.getString("FamilyHistorySectionTemplateId"),
 					new Object[] { familyHistorySection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -239,8 +245,8 @@ public class FamilyHistorySectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_FAMILY_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
-			+ "value.code = '10157-6' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
+			+ "value.code = '10157-6' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateFamilyHistorySectionCode(FamilyHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Section Code</em>}' invariant operation.
@@ -257,8 +263,8 @@ public class FamilyHistorySectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in (
-	 * value.code = '10157-6' and value.codeSystem = '2.16.840.1.113883.6.1'))
+	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+	 * value.code = '10157-6' and value.codeSystem = '2.16.840.1.113883.6.1')
 	 * @param familyHistorySection The receiving '<em><b>Family History Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -267,6 +273,7 @@ public class FamilyHistorySectionOperations extends SectionOperations {
 	 */
 	public static boolean validateFamilyHistorySectionCode(FamilyHistorySection familyHistorySection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_FAMILY_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.FAMILY_HISTORY_SECTION);
@@ -284,6 +291,7 @@ public class FamilyHistorySectionOperations extends SectionOperations {
 					CCDValidator.FAMILY_HISTORY_SECTION__FAMILY_HISTORY_SECTION_CODE,
 					CCDPlugin.INSTANCE.getString("FamilyHistorySectionCode"), new Object[] { familyHistorySection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -322,6 +330,7 @@ public class FamilyHistorySectionOperations extends SectionOperations {
 	 */
 	public static boolean validateFamilyHistorySectionTitle(FamilyHistorySection familyHistorySection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_FAMILY_HISTORY_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.FAMILY_HISTORY_SECTION);
@@ -339,6 +348,7 @@ public class FamilyHistorySectionOperations extends SectionOperations {
 					CCDValidator.FAMILY_HISTORY_SECTION__FAMILY_HISTORY_SECTION_TITLE,
 					CCDPlugin.INSTANCE.getString("FamilyHistorySectionTitle"), new Object[] { familyHistorySection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -377,6 +387,7 @@ public class FamilyHistorySectionOperations extends SectionOperations {
 	 */
 	public static boolean validateFamilyHistorySectionText(FamilyHistorySection familyHistorySection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_FAMILY_HISTORY_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.FAMILY_HISTORY_SECTION);
@@ -394,6 +405,7 @@ public class FamilyHistorySectionOperations extends SectionOperations {
 					CCDValidator.FAMILY_HISTORY_SECTION__FAMILY_HISTORY_SECTION_TEXT,
 					CCDPlugin.INSTANCE.getString("FamilyHistorySectionText"), new Object[] { familyHistorySection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -432,6 +444,7 @@ public class FamilyHistorySectionOperations extends SectionOperations {
 	 */
 	public static boolean validateFamilyHistorySectionFamilyHistoryOrganizer(FamilyHistorySection familyHistorySection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_FAMILY_HISTORY_SECTION_FAMILY_HISTORY_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.FAMILY_HISTORY_SECTION);
@@ -451,6 +464,7 @@ public class FamilyHistorySectionOperations extends SectionOperations {
 					CCDPlugin.INSTANCE.getString("FamilyHistorySectionFamilyHistoryOrganizer"),
 					new Object[] { familyHistorySection }));
 			}
+
 			return false;
 		}
 		return true;

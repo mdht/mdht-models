@@ -86,6 +86,7 @@ public class ImmunizationOperations extends MedicationActivityOperations {
 	 */
 	public static boolean validateImmunizationComments(Immunization immunization, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_IMMUNIZATION_COMMENTS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.IMMUNIZATION);
@@ -101,6 +102,7 @@ public class ImmunizationOperations extends MedicationActivityOperations {
 					Diagnostic.ERROR, IHEValidator.DIAGNOSTIC_SOURCE, IHEValidator.IMMUNIZATION__IMMUNIZATION_COMMENTS,
 					IHEPlugin.INSTANCE.getString("ImmunizationComments"), new Object[] { immunization }));
 			}
+
 			return false;
 		}
 		return true;
@@ -139,6 +141,7 @@ public class ImmunizationOperations extends MedicationActivityOperations {
 	 */
 	public static boolean validateImmunizationTemplateId(Immunization immunization, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_IMMUNIZATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.IMMUNIZATION);
@@ -155,6 +158,7 @@ public class ImmunizationOperations extends MedicationActivityOperations {
 					IHEValidator.IMMUNIZATION__IMMUNIZATION_TEMPLATE_ID,
 					IHEPlugin.INSTANCE.getString("ImmunizationTemplateId"), new Object[] { immunization }));
 			}
+
 			return false;
 		}
 		return true;
@@ -169,8 +173,8 @@ public class ImmunizationOperations extends MedicationActivityOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_IMMUNIZATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in ("
-			+ "value.code = 'IMMUNIZ' and value.codeSystem = '2.16.840.1.113883.5.4'))";
+			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
+			+ "value.code = 'IMMUNIZ' and value.codeSystem = '2.16.840.1.113883.5.4')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateImmunizationCode(Immunization, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Code</em>}' invariant operation.
@@ -187,8 +191,8 @@ public class ImmunizationOperations extends MedicationActivityOperations {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (self.code.oclIsKindOf(datatypes::CD) and 
-	 * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (
-	 * value.code = 'IMMUNIZ' and value.codeSystem = '2.16.840.1.113883.5.4'))
+	 * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+	 * value.code = 'IMMUNIZ' and value.codeSystem = '2.16.840.1.113883.5.4')
 	 * @param immunization The receiving '<em><b>Immunization</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -197,6 +201,7 @@ public class ImmunizationOperations extends MedicationActivityOperations {
 	 */
 	public static boolean validateImmunizationCode(Immunization immunization, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_IMMUNIZATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.IMMUNIZATION);
@@ -212,6 +217,7 @@ public class ImmunizationOperations extends MedicationActivityOperations {
 					Diagnostic.ERROR, IHEValidator.DIAGNOSTIC_SOURCE, IHEValidator.IMMUNIZATION__IMMUNIZATION_CODE,
 					IHEPlugin.INSTANCE.getString("ImmunizationCode"), new Object[] { immunization }));
 			}
+
 			return false;
 		}
 		return true;
@@ -250,6 +256,7 @@ public class ImmunizationOperations extends MedicationActivityOperations {
 	 */
 	public static boolean validateImmunizationStatusCode(Immunization immunization, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_IMMUNIZATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.IMMUNIZATION);
@@ -266,6 +273,7 @@ public class ImmunizationOperations extends MedicationActivityOperations {
 					IHEValidator.IMMUNIZATION__IMMUNIZATION_STATUS_CODE,
 					IHEPlugin.INSTANCE.getString("ImmunizationStatusCode"), new Object[] { immunization }));
 			}
+
 			return false;
 		}
 		return true;
@@ -304,6 +312,7 @@ public class ImmunizationOperations extends MedicationActivityOperations {
 	 */
 	public static boolean validateImmunizationMoodCode(Immunization immunization, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_IMMUNIZATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.IMMUNIZATION);
@@ -320,6 +329,7 @@ public class ImmunizationOperations extends MedicationActivityOperations {
 					IHEValidator.IMMUNIZATION__IMMUNIZATION_MOOD_CODE,
 					IHEPlugin.INSTANCE.getString("ImmunizationMoodCode"), new Object[] { immunization }));
 			}
+
 			return false;
 		}
 		return true;
@@ -358,6 +368,7 @@ public class ImmunizationOperations extends MedicationActivityOperations {
 	 */
 	public static boolean validateImmunizationEffectiveTime(Immunization immunization, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_IMMUNIZATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.IMMUNIZATION);
@@ -375,6 +386,7 @@ public class ImmunizationOperations extends MedicationActivityOperations {
 					IHEValidator.IMMUNIZATION__IMMUNIZATION_EFFECTIVE_TIME,
 					IHEPlugin.INSTANCE.getString("ImmunizationEffectiveTime"), new Object[] { immunization }));
 			}
+
 			return false;
 		}
 		return true;

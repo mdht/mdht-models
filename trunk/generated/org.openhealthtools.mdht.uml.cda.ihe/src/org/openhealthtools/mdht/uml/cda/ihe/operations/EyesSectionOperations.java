@@ -83,6 +83,7 @@ public class EyesSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateEyesSectionTemplateId(EyesSection eyesSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_EYES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.EYES_SECTION);
@@ -99,6 +100,7 @@ public class EyesSectionOperations extends SectionOperations {
 					IHEValidator.EYES_SECTION__EYES_SECTION_TEMPLATE_ID,
 					IHEPlugin.INSTANCE.getString("EyesSectionTemplateId"), new Object[] { eyesSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -113,8 +115,8 @@ public class EyesSectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_EYES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
-			+ "value.code = '10197-2' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
+			+ "value.code = '10197-2' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateEyesSectionCode(EyesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Eyes Section Code</em>}' invariant operation.
@@ -131,8 +133,8 @@ public class EyesSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in (
-	 * value.code = '10197-2' and value.codeSystem = '2.16.840.1.113883.6.1'))
+	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+	 * value.code = '10197-2' and value.codeSystem = '2.16.840.1.113883.6.1')
 	 * @param eyesSection The receiving '<em><b>Eyes Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -141,6 +143,7 @@ public class EyesSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateEyesSectionCode(EyesSection eyesSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_EYES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.EYES_SECTION);
@@ -156,6 +159,7 @@ public class EyesSectionOperations extends SectionOperations {
 					Diagnostic.ERROR, IHEValidator.DIAGNOSTIC_SOURCE, IHEValidator.EYES_SECTION__EYES_SECTION_CODE,
 					IHEPlugin.INSTANCE.getString("EyesSectionCode"), new Object[] { eyesSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -194,6 +198,7 @@ public class EyesSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateEyesSectionProblemEntry(EyesSection eyesSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_EYES_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.EYES_SECTION);
@@ -211,6 +216,7 @@ public class EyesSectionOperations extends SectionOperations {
 					IHEValidator.EYES_SECTION__EYES_SECTION_PROBLEM_ENTRY,
 					IHEPlugin.INSTANCE.getString("EyesSectionProblemEntry"), new Object[] { eyesSection }));
 			}
+
 			return false;
 		}
 		return true;

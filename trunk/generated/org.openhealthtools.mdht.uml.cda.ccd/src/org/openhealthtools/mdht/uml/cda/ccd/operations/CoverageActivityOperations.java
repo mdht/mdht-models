@@ -108,6 +108,7 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateCoverageActivityInformationSource(CoverageActivity coverageActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_COVERAGE_ACTIVITY_INFORMATION_SOURCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.COVERAGE_ACTIVITY);
@@ -126,6 +127,7 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 					CCDPlugin.INSTANCE.getString("CoverageActivityInformationSource"),
 					new Object[] { coverageActivity }));
 			}
+
 			return false;
 		}
 		return true;
@@ -164,6 +166,7 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateCoverageActivitySequenceNumber(CoverageActivity coverageActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_COVERAGE_ACTIVITY_SEQUENCE_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.COVERAGE_ACTIVITY);
@@ -181,6 +184,7 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 					CCDValidator.COVERAGE_ACTIVITY__COVERAGE_ACTIVITY_SEQUENCE_NUMBER,
 					CCDPlugin.INSTANCE.getString("CoverageActivitySequenceNumber"), new Object[] { coverageActivity }));
 			}
+
 			return false;
 		}
 		return true;
@@ -219,6 +223,7 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateCoverageActivityTemplateId(CoverageActivity coverageActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_COVERAGE_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.COVERAGE_ACTIVITY);
@@ -236,6 +241,7 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 					CCDValidator.COVERAGE_ACTIVITY__COVERAGE_ACTIVITY_TEMPLATE_ID,
 					CCDPlugin.INSTANCE.getString("CoverageActivityTemplateId"), new Object[] { coverageActivity }));
 			}
+
 			return false;
 		}
 		return true;
@@ -274,6 +280,7 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateCoverageActivityClassCode(CoverageActivity coverageActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_COVERAGE_ACTIVITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.COVERAGE_ACTIVITY);
@@ -291,6 +298,7 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 					CCDValidator.COVERAGE_ACTIVITY__COVERAGE_ACTIVITY_CLASS_CODE,
 					CCDPlugin.INSTANCE.getString("CoverageActivityClassCode"), new Object[] { coverageActivity }));
 			}
+
 			return false;
 		}
 		return true;
@@ -329,6 +337,7 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateCoverageActivityMoodCode(CoverageActivity coverageActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_COVERAGE_ACTIVITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.COVERAGE_ACTIVITY);
@@ -346,6 +355,7 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 					CCDValidator.COVERAGE_ACTIVITY__COVERAGE_ACTIVITY_MOOD_CODE,
 					CCDPlugin.INSTANCE.getString("CoverageActivityMoodCode"), new Object[] { coverageActivity }));
 			}
+
 			return false;
 		}
 		return true;
@@ -384,6 +394,7 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateCoverageActivityId(CoverageActivity coverageActivity, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_COVERAGE_ACTIVITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.COVERAGE_ACTIVITY);
@@ -400,6 +411,7 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 					CCDValidator.COVERAGE_ACTIVITY__COVERAGE_ACTIVITY_ID,
 					CCDPlugin.INSTANCE.getString("CoverageActivityId"), new Object[] { coverageActivity }));
 			}
+
 			return false;
 		}
 		return true;
@@ -414,8 +426,7 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_COVERAGE_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "
-			+ "let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in ("
-			+ "value.code = 'completed'))";
+			+ "let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in " + "value.code = 'completed')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateCoverageActivityStatusCode(CoverageActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Activity Status Code</em>}' invariant operation.
@@ -432,8 +443,8 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
-	 * let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in (
-	 * value.code = 'completed'))
+	 * let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
+	 * value.code = 'completed')
 	 * @param coverageActivity The receiving '<em><b>Coverage Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -442,6 +453,7 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateCoverageActivityStatusCode(CoverageActivity coverageActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_COVERAGE_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.COVERAGE_ACTIVITY);
@@ -459,6 +471,7 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 					CCDValidator.COVERAGE_ACTIVITY__COVERAGE_ACTIVITY_STATUS_CODE,
 					CCDPlugin.INSTANCE.getString("CoverageActivityStatusCode"), new Object[] { coverageActivity }));
 			}
+
 			return false;
 		}
 		return true;
@@ -473,8 +486,8 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_COVERAGE_ACTIVITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in ("
-			+ "value.code = '48768-6' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
+			+ "value.code = '48768-6' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateCoverageActivityCode(CoverageActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Activity Code</em>}' invariant operation.
@@ -491,8 +504,8 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
-	 * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (
-	 * value.code = '48768-6' and value.codeSystem = '2.16.840.1.113883.6.1'))
+	 * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+	 * value.code = '48768-6' and value.codeSystem = '2.16.840.1.113883.6.1')
 	 * @param coverageActivity The receiving '<em><b>Coverage Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -501,6 +514,7 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateCoverageActivityCode(CoverageActivity coverageActivity, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_COVERAGE_ACTIVITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.COVERAGE_ACTIVITY);
@@ -518,6 +532,7 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 					CCDValidator.COVERAGE_ACTIVITY__COVERAGE_ACTIVITY_CODE,
 					CCDPlugin.INSTANCE.getString("CoverageActivityCode"), new Object[] { coverageActivity }));
 			}
+
 			return false;
 		}
 		return true;
@@ -556,6 +571,7 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateCoverageActivityPolicyActivity(CoverageActivity coverageActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_COVERAGE_ACTIVITY_POLICY_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.COVERAGE_ACTIVITY);
@@ -573,6 +589,7 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 					CCDValidator.COVERAGE_ACTIVITY__COVERAGE_ACTIVITY_POLICY_ACTIVITY,
 					CCDPlugin.INSTANCE.getString("CoverageActivityPolicyActivity"), new Object[] { coverageActivity }));
 			}
+
 			return false;
 		}
 		return true;
@@ -612,7 +629,7 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				CCDPackage.Literals.COVERAGE_ACTIVITY,
-				CCDPackage.Literals.COVERAGE_ACTIVITY.getEAllOperations().get(58));
+				CCDPackage.Literals.COVERAGE_ACTIVITY.getEAllOperations().get(60));
 			try {
 				GET_POLICY_ACTIVITIES__EOCL_QRY = helper.createQuery(GET_POLICY_ACTIVITIES__EOCL_EXP);
 			} catch (ParserException pe) {

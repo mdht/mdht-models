@@ -11,18 +11,13 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.openhealthtools.mdht.uml.cda.ccd.operations.PlanOfCareActivityProcedureOperations;
-
 import org.openhealthtools.mdht.uml.cda.ihe.IHEPackage;
 import org.openhealthtools.mdht.uml.cda.ihe.IHEPlugin;
 import org.openhealthtools.mdht.uml.cda.ihe.ProcedureEntryPlanOfCareActivityProcedure;
-
 import org.openhealthtools.mdht.uml.cda.ihe.util.IHEValidator;
 
 /**
@@ -83,6 +78,7 @@ public class ProcedureEntryPlanOfCareActivityProcedureOperations extends PlanOfC
 	public static boolean validateProcedureEntryPlanOfCareActivityProcedureMoodCode(
 			ProcedureEntryPlanOfCareActivityProcedure procedureEntryPlanOfCareActivityProcedure,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_ENTRY_PLAN_OF_CARE_ACTIVITY_PROCEDURE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.PROCEDURE_ENTRY_PLAN_OF_CARE_ACTIVITY_PROCEDURE);
@@ -103,6 +99,7 @@ public class ProcedureEntryPlanOfCareActivityProcedureOperations extends PlanOfC
 					IHEPlugin.INSTANCE.getString("ProcedureEntryPlanOfCareActivityProcedureMoodCode"),
 					new Object[] { procedureEntryPlanOfCareActivityProcedure }));
 			}
+
 			return false;
 		}
 		return true;

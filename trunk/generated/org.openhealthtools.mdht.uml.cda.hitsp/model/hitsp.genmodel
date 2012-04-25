@@ -788,6 +788,10 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//VitalSign/VitalSignTemplateId/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//VitalSign/VitalSignTemplateId/context"/>
       </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//VitalSign/VitalSignObservationCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//VitalSign/VitalSignObservationCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//VitalSign/VitalSignObservationCode/context"/>
+      </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="hitsp.ecore#//HistoryOfPastIllnessSection">
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//HistoryOfPastIllnessSection/HITSPHistoryOfPastIllnessSectionTemplateId">
@@ -986,6 +990,10 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//SocialHistory/SocialHistoryTemplateId">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//SocialHistory/SocialHistoryTemplateId/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//SocialHistory/SocialHistoryTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//SocialHistory/SocialHistoryCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//SocialHistory/SocialHistoryCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//SocialHistory/SocialHistoryCodeP/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hitsp.ecore#//SocialHistory/SocialHistoryCode">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hitsp.ecore#//SocialHistory/SocialHistoryCode/diagnostics"/>

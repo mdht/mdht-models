@@ -83,6 +83,7 @@ public class LymphaticSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateLymphaticSectionTemplateId(LymphaticSection lymphaticSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_LYMPHATIC_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.LYMPHATIC_SECTION);
@@ -100,6 +101,7 @@ public class LymphaticSectionOperations extends SectionOperations {
 					IHEValidator.LYMPHATIC_SECTION__LYMPHATIC_SECTION_TEMPLATE_ID,
 					IHEPlugin.INSTANCE.getString("LymphaticSectionTemplateId"), new Object[] { lymphaticSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -114,8 +116,8 @@ public class LymphaticSectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_LYMPHATIC_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
-			+ "value.code = '11447-0' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
+			+ "value.code = '11447-0' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateLymphaticSectionCode(LymphaticSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Lymphatic Section Code</em>}' invariant operation.
@@ -132,8 +134,8 @@ public class LymphaticSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in (
-	 * value.code = '11447-0' and value.codeSystem = '2.16.840.1.113883.6.1'))
+	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+	 * value.code = '11447-0' and value.codeSystem = '2.16.840.1.113883.6.1')
 	 * @param lymphaticSection The receiving '<em><b>Lymphatic Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -142,6 +144,7 @@ public class LymphaticSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateLymphaticSectionCode(LymphaticSection lymphaticSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_LYMPHATIC_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.LYMPHATIC_SECTION);
@@ -159,6 +162,7 @@ public class LymphaticSectionOperations extends SectionOperations {
 					IHEValidator.LYMPHATIC_SECTION__LYMPHATIC_SECTION_CODE,
 					IHEPlugin.INSTANCE.getString("LymphaticSectionCode"), new Object[] { lymphaticSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -197,6 +201,7 @@ public class LymphaticSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateLymphaticSectionProblemEntry(LymphaticSection lymphaticSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_LYMPHATIC_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.LYMPHATIC_SECTION);
@@ -214,6 +219,7 @@ public class LymphaticSectionOperations extends SectionOperations {
 					IHEValidator.LYMPHATIC_SECTION__LYMPHATIC_SECTION_PROBLEM_ENTRY,
 					IHEPlugin.INSTANCE.getString("LymphaticSectionProblemEntry"), new Object[] { lymphaticSection }));
 			}
+
 			return false;
 		}
 		return true;

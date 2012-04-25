@@ -84,6 +84,7 @@ public class ResultOrganizerOperations extends
 	 */
 	public static boolean validateHITSPResultOrganizerResult(ResultOrganizer resultOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_RESULT_ORGANIZER_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.RESULT_ORGANIZER);
@@ -101,6 +102,7 @@ public class ResultOrganizerOperations extends
 					HITSPValidator.RESULT_ORGANIZER__HITSP_RESULT_ORGANIZER_RESULT,
 					HITSPPlugin.INSTANCE.getString("HITSPResultOrganizerResult"), new Object[] { resultOrganizer }));
 			}
+
 			return false;
 		}
 		return true;
@@ -140,7 +142,7 @@ public class ResultOrganizerOperations extends
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				HITSPPackage.Literals.RESULT_ORGANIZER,
-				HITSPPackage.Literals.RESULT_ORGANIZER.getEAllOperations().get(62));
+				HITSPPackage.Literals.RESULT_ORGANIZER.getEAllOperations().get(64));
 			try {
 				GET_RESULTS__EOCL_QRY = helper.createQuery(GET_RESULTS__EOCL_EXP);
 			} catch (ParserException pe) {

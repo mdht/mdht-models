@@ -24,7 +24,7 @@ import org.openhealthtools.mdht.uml.cda.ihe.ProblemEntry;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage#getCondition()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.3.88.11.83.7' constraints.validation.error='ConditionTemplateId ConditionHasTreatingProvider ConditionHasProviderId ConditionConditionEntry' constraints.validation.info='ConditionHasProviderTreatmentTime'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ConditionTemplateId ConditionHasTreatingProvider ConditionHasProviderId ConditionConditionEntry' templateId.root='2.16.840.1.113883.3.88.11.83.7' constraints.validation.info='ConditionHasProviderTreatmentTime'"
  * @generated
  */
 public interface Condition extends ProblemConcernEntry {

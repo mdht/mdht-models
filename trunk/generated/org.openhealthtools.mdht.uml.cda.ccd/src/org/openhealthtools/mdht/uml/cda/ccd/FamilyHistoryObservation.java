@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ccd.CCDPackage#getFamilyHistoryObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation moodCode='EVN' constraints.validation.error='FamilyHistoryObservationTemplateId FamilyHistoryObservationHasSubjectPatientRelationship FamilyHistoryObservationRelationshipValueCode FamilyHistoryObservationHasRelatedSubjectCode FamilyHistoryObservationId FamilyHistoryObservationStatusCode FamilyHistoryObservationMoodCode' templateId.root='2.16.840.1.113883.10.20.1.22' constraints.validation.info='FamilyHistoryObservationAgeObservation FamilyHistoryObservationProblemStatusObservation' statusCode.code='completed' constraints.validation.warning='FamilyHistoryObservationRelatedSubjectCodeValueSet FamilyHistoryObservationHasRelatedSubjectSubject FamilyHistoryObservationHasGenderCode FamilyHistoryObservationRelatedSubjectBirthTime FamilyHistoryObservationEffectiveTime'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='FamilyHistoryObservationTemplateId FamilyHistoryObservationHasSubjectPatientRelationship FamilyHistoryObservationRelationshipValueCode FamilyHistoryObservationHasRelatedSubjectCode FamilyHistoryObservationId FamilyHistoryObservationStatusCode FamilyHistoryObservationMoodCode' templateId.root='2.16.840.1.113883.10.20.1.22' constraints.validation.warning='FamilyHistoryObservationRelatedSubjectCodeValueSet FamilyHistoryObservationHasRelatedSubjectSubject FamilyHistoryObservationHasGenderCode FamilyHistoryObservationRelatedSubjectBirthTime FamilyHistoryObservationEffectiveTime' statusCode.code='completed' moodCode='EVN' constraints.validation.info='FamilyHistoryObservationAgeObservation FamilyHistoryObservationProblemStatusObservation'"
  * @generated
  */
 public interface FamilyHistoryObservation extends Observation {
@@ -154,12 +154,12 @@ public interface FamilyHistoryObservation extends Observation {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
-	 * let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in (
-	 * value.code = 'completed'))
+	 * let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
+	 * value.code = 'completed')
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and \r\nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in (\r\nvalue.code = \'completed\'))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and \r\nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in \r\nvalue.code = \'completed\')'"
 	 * @generated
 	 */
 	boolean validateFamilyHistoryObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context);

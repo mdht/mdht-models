@@ -82,6 +82,7 @@ public class FulfillmentInstructionOperations extends ClinicalStatementOperation
 	 */
 	public static boolean validateFulfillmentInstructionTemplateId(FulfillmentInstruction fulfillmentInstruction,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_FULFILLMENT_INSTRUCTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.FULFILLMENT_INSTRUCTION);
@@ -100,6 +101,7 @@ public class FulfillmentInstructionOperations extends ClinicalStatementOperation
 					CCDPlugin.INSTANCE.getString("FulfillmentInstructionTemplateId"),
 					new Object[] { fulfillmentInstruction }));
 			}
+
 			return false;
 		}
 		return true;
@@ -138,6 +140,7 @@ public class FulfillmentInstructionOperations extends ClinicalStatementOperation
 	 */
 	public static boolean validateFulfillmentInstructionMoodCode(FulfillmentInstruction fulfillmentInstruction,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_FULFILLMENT_INSTRUCTION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.FULFILLMENT_INSTRUCTION);
@@ -156,6 +159,7 @@ public class FulfillmentInstructionOperations extends ClinicalStatementOperation
 					CCDPlugin.INSTANCE.getString("FulfillmentInstructionMoodCode"),
 					new Object[] { fulfillmentInstruction }));
 			}
+
 			return false;
 		}
 		return true;

@@ -90,6 +90,7 @@ public class ConcernEntryOperations extends ProblemActOperations {
 	 */
 	public static boolean validateConcernEntryEffectiveTimeLowHigh(ConcernEntry concernEntry,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CONCERN_ENTRY_EFFECTIVE_TIME_LOW_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.CONCERN_ENTRY);
@@ -107,6 +108,7 @@ public class ConcernEntryOperations extends ProblemActOperations {
 					IHEValidator.CONCERN_ENTRY__CONCERN_ENTRY_EFFECTIVE_TIME_LOW_HIGH,
 					IHEPlugin.INSTANCE.getString("ConcernEntryEffectiveTimeLowHigh"), new Object[] { concernEntry }));
 			}
+
 			return false;
 		}
 		return true;
@@ -145,6 +147,7 @@ public class ConcernEntryOperations extends ProblemActOperations {
 	 */
 	public static boolean validateConcernEntryHasRelatedObservations(ConcernEntry concernEntry,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CONCERN_ENTRY_HAS_RELATED_OBSERVATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.CONCERN_ENTRY);
@@ -162,6 +165,7 @@ public class ConcernEntryOperations extends ProblemActOperations {
 					IHEValidator.CONCERN_ENTRY__CONCERN_ENTRY_HAS_RELATED_OBSERVATIONS,
 					IHEPlugin.INSTANCE.getString("ConcernEntryHasRelatedObservations"), new Object[] { concernEntry }));
 			}
+
 			return false;
 		}
 		return true;
@@ -200,6 +204,7 @@ public class ConcernEntryOperations extends ProblemActOperations {
 	 */
 	public static boolean validateConcernEntryRelatedObservationsTypeCode(ConcernEntry concernEntry,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CONCERN_ENTRY_RELATED_OBSERVATIONS_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.CONCERN_ENTRY);
@@ -218,6 +223,7 @@ public class ConcernEntryOperations extends ProblemActOperations {
 					IHEPlugin.INSTANCE.getString("ConcernEntryRelatedObservationsTypeCode"),
 					new Object[] { concernEntry }));
 			}
+
 			return false;
 		}
 		return true;
@@ -256,6 +262,7 @@ public class ConcernEntryOperations extends ProblemActOperations {
 	 */
 	public static boolean validateConcernEntryHasRelatedReferencesTypeCode(ConcernEntry concernEntry,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CONCERN_ENTRY_HAS_RELATED_REFERENCES_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.CONCERN_ENTRY);
@@ -274,6 +281,7 @@ public class ConcernEntryOperations extends ProblemActOperations {
 					IHEPlugin.INSTANCE.getString("ConcernEntryHasRelatedReferencesTypeCode"),
 					new Object[] { concernEntry }));
 			}
+
 			return false;
 		}
 		return true;
@@ -312,6 +320,7 @@ public class ConcernEntryOperations extends ProblemActOperations {
 	 */
 	public static boolean validateConcernEntryTemplateId(ConcernEntry concernEntry, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_CONCERN_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.CONCERN_ENTRY);
@@ -329,6 +338,7 @@ public class ConcernEntryOperations extends ProblemActOperations {
 					IHEValidator.CONCERN_ENTRY__CONCERN_ENTRY_TEMPLATE_ID,
 					IHEPlugin.INSTANCE.getString("ConcernEntryTemplateId"), new Object[] { concernEntry }));
 			}
+
 			return false;
 		}
 		return true;
@@ -367,6 +377,7 @@ public class ConcernEntryOperations extends ProblemActOperations {
 	 */
 	public static boolean validateConcernEntryEffectiveTime(ConcernEntry concernEntry, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_CONCERN_ENTRY_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.CONCERN_ENTRY);
@@ -384,6 +395,7 @@ public class ConcernEntryOperations extends ProblemActOperations {
 					IHEValidator.CONCERN_ENTRY__CONCERN_ENTRY_EFFECTIVE_TIME,
 					IHEPlugin.INSTANCE.getString("ConcernEntryEffectiveTime"), new Object[] { concernEntry }));
 			}
+
 			return false;
 		}
 		return true;

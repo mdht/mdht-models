@@ -82,6 +82,7 @@ public class AdvanceDirectiveReferenceOperations extends ReferenceOperations {
 	 */
 	public static boolean validateAdvanceDirectiveReferenceHasURL(AdvanceDirectiveReference advanceDirectiveReference,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ADVANCE_DIRECTIVE_REFERENCE_HAS_URL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.ADVANCE_DIRECTIVE_REFERENCE);
@@ -100,6 +101,7 @@ public class AdvanceDirectiveReferenceOperations extends ReferenceOperations {
 					CCDPlugin.INSTANCE.getString("AdvanceDirectiveReferenceHasURL"),
 					new Object[] { advanceDirectiveReference }));
 			}
+
 			return false;
 		}
 		return true;
@@ -139,6 +141,7 @@ public class AdvanceDirectiveReferenceOperations extends ReferenceOperations {
 	public static boolean validateAdvanceDirectiveReferenceHasMIMEType(
 			AdvanceDirectiveReference advanceDirectiveReference, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_ADVANCE_DIRECTIVE_REFERENCE_HAS_MIME_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.ADVANCE_DIRECTIVE_REFERENCE);
@@ -157,6 +160,7 @@ public class AdvanceDirectiveReferenceOperations extends ReferenceOperations {
 					CCDPlugin.INSTANCE.getString("AdvanceDirectiveReferenceHasMIMEType"),
 					new Object[] { advanceDirectiveReference }));
 			}
+
 			return false;
 		}
 		return true;
@@ -196,6 +200,7 @@ public class AdvanceDirectiveReferenceOperations extends ReferenceOperations {
 	public static boolean validateAdvanceDirectiveReferenceExternalDocumentHasId(
 			AdvanceDirectiveReference advanceDirectiveReference, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_ADVANCE_DIRECTIVE_REFERENCE_EXTERNAL_DOCUMENT_HAS_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.ADVANCE_DIRECTIVE_REFERENCE);
@@ -215,6 +220,7 @@ public class AdvanceDirectiveReferenceOperations extends ReferenceOperations {
 					CCDPlugin.INSTANCE.getString("AdvanceDirectiveReferenceExternalDocumentHasId"),
 					new Object[] { advanceDirectiveReference }));
 			}
+
 			return false;
 		}
 		return true;
@@ -254,6 +260,7 @@ public class AdvanceDirectiveReferenceOperations extends ReferenceOperations {
 	public static boolean validateAdvanceDirectiveReferenceTemplateId(
 			AdvanceDirectiveReference advanceDirectiveReference, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_ADVANCE_DIRECTIVE_REFERENCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.ADVANCE_DIRECTIVE_REFERENCE);
@@ -272,6 +279,7 @@ public class AdvanceDirectiveReferenceOperations extends ReferenceOperations {
 					CCDPlugin.INSTANCE.getString("AdvanceDirectiveReferenceTemplateId"),
 					new Object[] { advanceDirectiveReference }));
 			}
+
 			return false;
 		}
 		return true;
@@ -311,6 +319,7 @@ public class AdvanceDirectiveReferenceOperations extends ReferenceOperations {
 	public static boolean validateAdvanceDirectiveReferenceTypeCode(
 			AdvanceDirectiveReference advanceDirectiveReference, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_ADVANCE_DIRECTIVE_REFERENCE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.ADVANCE_DIRECTIVE_REFERENCE);
@@ -329,6 +338,7 @@ public class AdvanceDirectiveReferenceOperations extends ReferenceOperations {
 					CCDPlugin.INSTANCE.getString("AdvanceDirectiveReferenceTypeCode"),
 					new Object[] { advanceDirectiveReference }));
 			}
+
 			return false;
 		}
 		return true;
@@ -370,6 +380,7 @@ public class AdvanceDirectiveReferenceOperations extends ReferenceOperations {
 	public static boolean validateAdvanceDirectiveReferenceExternalDocument(
 			AdvanceDirectiveReference advanceDirectiveReference, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_ADVANCE_DIRECTIVE_REFERENCE_EXTERNAL_DOCUMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.ADVANCE_DIRECTIVE_REFERENCE);
@@ -389,6 +400,7 @@ public class AdvanceDirectiveReferenceOperations extends ReferenceOperations {
 					CCDPlugin.INSTANCE.getString("AdvanceDirectiveReferenceExternalDocument"),
 					new Object[] { advanceDirectiveReference }));
 			}
+
 			return false;
 		}
 		return true;

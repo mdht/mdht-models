@@ -353,7 +353,7 @@ public class ConsultationNoteImpl extends GeneralHeaderConstraintsImpl implement
 	 */
 	@Override
 	public ConsultationNote init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // ConsultationNoteImpl

@@ -78,6 +78,7 @@ public class SocialHistoryStatusObservationOperations extends StatusObservationO
 	public static boolean validateStatusObservationTemplateId(
 			SocialHistoryStatusObservation socialHistoryStatusObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.SOCIAL_HISTORY_STATUS_OBSERVATION);
@@ -101,6 +102,7 @@ public class SocialHistoryStatusObservationOperations extends StatusObservationO
 									socialHistoryStatusObservation, context) }),
 					new Object[] { socialHistoryStatusObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -143,6 +145,7 @@ public class SocialHistoryStatusObservationOperations extends StatusObservationO
 	 */
 	public static boolean validateStatusObservationValue(SocialHistoryStatusObservation socialHistoryStatusObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_STATUS_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.SOCIAL_HISTORY_STATUS_OBSERVATION);
@@ -161,6 +164,7 @@ public class SocialHistoryStatusObservationOperations extends StatusObservationO
 					CCDPlugin.INSTANCE.getString("StatusObservationValue"),
 					new Object[] { socialHistoryStatusObservation }));
 			}
+
 			return false;
 		}
 		return true;

@@ -82,6 +82,7 @@ public class MedicationsAdministeredSectionOperations extends
 	public static boolean validateHITSPMedicationsAdministeredSectionTemplateId(
 			MedicationsAdministeredSection medicationsAdministeredSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_MEDICATIONS_ADMINISTERED_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.MEDICATIONS_ADMINISTERED_SECTION);
@@ -102,6 +103,7 @@ public class MedicationsAdministeredSectionOperations extends
 					HITSPPlugin.INSTANCE.getString("HITSPMedicationsAdministeredSectionTemplateId"),
 					new Object[] { medicationsAdministeredSection }));
 			}
+
 			return false;
 		}
 		return true;

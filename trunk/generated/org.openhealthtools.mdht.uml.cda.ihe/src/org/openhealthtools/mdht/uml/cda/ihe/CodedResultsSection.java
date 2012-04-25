@@ -29,7 +29,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ihe.IHEPackage#getCodedResultsSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.displayName='STUDIES SUMMARY' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.3.28' constraints.validation.error='CodedResultsSectionTemplateId CodedResultsSectionCode CodedResultsSectionProcedureEntry' code.codeSystemName='LOINC' constraints.validation.warning='CodedResultsSectionExternalReference' code.code='30954-2' constraints.validation.info='CodedResultsSectionSimpleObservation'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='CodedResultsSectionTemplateId CodedResultsSectionCode CodedResultsSectionProcedureEntry' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.3.28' code.codeSystemName='LOINC' code.displayName='STUDIES SUMMARY' code.codeSystem='2.16.840.1.113883.6.1' code.code='30954-2' constraints.validation.warning='CodedResultsSectionExternalReference' constraints.validation.info='CodedResultsSectionSimpleObservation'"
  * @generated
  */
 public interface CodedResultsSection extends Section {
@@ -51,12 +51,12 @@ public interface CodedResultsSection extends Section {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in (
-	 * value.code = '30954-2' and value.codeSystem = '2.16.840.1.113883.6.1'))
+	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+	 * value.code = '30954-2' and value.codeSystem = '2.16.840.1.113883.6.1')
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = self.code.oclAsType(datatypes::CE) in (\r\nvalue.code = \'30954-2\' and value.codeSystem = \'2.16.840.1.113883.6.1\'))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = self.code.oclAsType(datatypes::CE) in \r\nvalue.code = \'30954-2\' and value.codeSystem = \'2.16.840.1.113883.6.1\')'"
 	 * @generated
 	 */
 	boolean validateCodedResultsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context);

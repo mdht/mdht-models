@@ -79,6 +79,7 @@ public class FunctionalStatusObservationOperations extends StatusObservationOper
 	 */
 	public static boolean validateStatusObservationTemplateId(FunctionalStatusObservation functionalStatusObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.FUNCTIONAL_STATUS_OBSERVATION);
@@ -102,6 +103,7 @@ public class FunctionalStatusObservationOperations extends StatusObservationOper
 									functionalStatusObservation, context) }),
 					new Object[] { functionalStatusObservation }));
 			}
+
 			return false;
 		}
 		return true;

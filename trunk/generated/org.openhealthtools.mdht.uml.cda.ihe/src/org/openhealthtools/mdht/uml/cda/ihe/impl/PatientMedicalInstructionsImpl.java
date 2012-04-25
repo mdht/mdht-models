@@ -74,6 +74,15 @@ public class PatientMedicalInstructionsImpl extends PatientInstructionImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validatePatientMedicalInstructionsCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PatientMedicalInstructionsOperations.validatePatientMedicalInstructionsCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validatePatientMedicalInstructionsCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientMedicalInstructionsOperations.validatePatientMedicalInstructionsCode(this, diagnostics, context);
 	}

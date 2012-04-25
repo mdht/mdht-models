@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.DataEnterer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ihe.IHEPackage#getScanDataEnterer()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='1.3.6.1.4.1.19376.1.2.20.3' constraints.validation.error='ScanDataEntererTemplateId ScanDataEntererTimeEqualsDocumentEffectiveTime ScanDataEntererHasAssignedEntityId ScanDataEntererTime'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ScanDataEntererTemplateId ScanDataEntererTimeEqualsDocumentEffectiveTime ScanDataEntererHasAssignedEntityId ScanDataEntererTime' templateId.root='1.3.6.1.4.1.19376.1.2.20.3'"
  * @generated
  */
 public interface ScanDataEnterer extends DataEnterer {

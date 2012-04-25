@@ -59,6 +59,15 @@ public class SocialHistoryImpl extends SocialHistoryObservationImpl implements S
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateSocialHistoryCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SocialHistoryOperations.validateSocialHistoryCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateSocialHistoryCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SocialHistoryOperations.validateSocialHistoryCode(this, diagnostics, context);
 	}

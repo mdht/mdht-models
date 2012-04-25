@@ -87,6 +87,7 @@ public class HistoryOfPastIllnessSectionOperations extends
 	public static boolean validateHITSPHistoryOfPastIllnessSectionTemplateId(
 			HistoryOfPastIllnessSection historyOfPastIllnessSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_HISTORY_OF_PAST_ILLNESS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.HISTORY_OF_PAST_ILLNESS_SECTION);
@@ -106,6 +107,7 @@ public class HistoryOfPastIllnessSectionOperations extends
 					HITSPPlugin.INSTANCE.getString("HITSPHistoryOfPastIllnessSectionTemplateId"),
 					new Object[] { historyOfPastIllnessSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -145,6 +147,7 @@ public class HistoryOfPastIllnessSectionOperations extends
 	public static boolean validateHITSPHistoryOfPastIllnessSectionCondition(
 			HistoryOfPastIllnessSection historyOfPastIllnessSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_HISTORY_OF_PAST_ILLNESS_SECTION_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.HISTORY_OF_PAST_ILLNESS_SECTION);
@@ -164,6 +167,7 @@ public class HistoryOfPastIllnessSectionOperations extends
 					HITSPPlugin.INSTANCE.getString("HITSPHistoryOfPastIllnessSectionCondition"),
 					new Object[] { historyOfPastIllnessSection }));
 			}
+
 			return false;
 		}
 		return true;

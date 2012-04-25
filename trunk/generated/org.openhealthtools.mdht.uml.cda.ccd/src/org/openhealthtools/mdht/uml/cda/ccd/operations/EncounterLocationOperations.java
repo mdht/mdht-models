@@ -88,6 +88,7 @@ public class EncounterLocationOperations extends Participant2Operations {
 	 */
 	public static boolean validateEncounterLocationHasParticipantRole(EncounterLocation encounterLocation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ENCOUNTER_LOCATION_HAS_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.ENCOUNTER_LOCATION);
@@ -106,6 +107,7 @@ public class EncounterLocationOperations extends Participant2Operations {
 					CCDPlugin.INSTANCE.getString("EncounterLocationHasParticipantRole"),
 					new Object[] { encounterLocation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -144,6 +146,7 @@ public class EncounterLocationOperations extends Participant2Operations {
 	 */
 	public static boolean validateEncounterLocationHasParticipantRoleLocation(EncounterLocation encounterLocation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ENCOUNTER_LOCATION_HAS_PARTICIPANT_ROLE_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.ENCOUNTER_LOCATION);
@@ -163,6 +166,7 @@ public class EncounterLocationOperations extends Participant2Operations {
 					CCDPlugin.INSTANCE.getString("EncounterLocationHasParticipantRoleLocation"),
 					new Object[] { encounterLocation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -201,6 +205,7 @@ public class EncounterLocationOperations extends Participant2Operations {
 	 */
 	public static boolean validateEncounterLocationHasParticipantRoleCode(EncounterLocation encounterLocation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ENCOUNTER_LOCATION_HAS_PARTICIPANT_ROLE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.ENCOUNTER_LOCATION);
@@ -219,6 +224,7 @@ public class EncounterLocationOperations extends Participant2Operations {
 					CCDPlugin.INSTANCE.getString("EncounterLocationHasParticipantRoleCode"),
 					new Object[] { encounterLocation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -257,6 +263,7 @@ public class EncounterLocationOperations extends Participant2Operations {
 	 */
 	public static boolean validateEncounterLocationHasParticipantRoleCodeVocab(EncounterLocation encounterLocation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ENCOUNTER_LOCATION_HAS_PARTICIPANT_ROLE_CODE_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.ENCOUNTER_LOCATION);
@@ -276,6 +283,7 @@ public class EncounterLocationOperations extends Participant2Operations {
 					CCDPlugin.INSTANCE.getString("EncounterLocationHasParticipantRoleCodeVocab"),
 					new Object[] { encounterLocation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -314,6 +322,7 @@ public class EncounterLocationOperations extends Participant2Operations {
 	 */
 	public static boolean validateEncounterLocationHasPlayingEntity(EncounterLocation encounterLocation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ENCOUNTER_LOCATION_HAS_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.ENCOUNTER_LOCATION);
@@ -332,6 +341,7 @@ public class EncounterLocationOperations extends Participant2Operations {
 					CCDPlugin.INSTANCE.getString("EncounterLocationHasPlayingEntity"),
 					new Object[] { encounterLocation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -370,6 +380,7 @@ public class EncounterLocationOperations extends Participant2Operations {
 	 */
 	public static boolean validateEncounterLocationHasPlayingEntityPlace(EncounterLocation encounterLocation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ENCOUNTER_LOCATION_HAS_PLAYING_ENTITY_PLACE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.ENCOUNTER_LOCATION);
@@ -388,6 +399,7 @@ public class EncounterLocationOperations extends Participant2Operations {
 					CCDPlugin.INSTANCE.getString("EncounterLocationHasPlayingEntityPlace"),
 					new Object[] { encounterLocation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -426,6 +438,7 @@ public class EncounterLocationOperations extends Participant2Operations {
 	 */
 	public static boolean validateEncounterLocationTemplateId(EncounterLocation encounterLocation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ENCOUNTER_LOCATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.ENCOUNTER_LOCATION);
@@ -443,6 +456,7 @@ public class EncounterLocationOperations extends Participant2Operations {
 					CCDValidator.ENCOUNTER_LOCATION__ENCOUNTER_LOCATION_TEMPLATE_ID,
 					CCDPlugin.INSTANCE.getString("EncounterLocationTemplateId"), new Object[] { encounterLocation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -481,6 +495,7 @@ public class EncounterLocationOperations extends Participant2Operations {
 	 */
 	public static boolean validateEncounterLocationTypeCode(EncounterLocation encounterLocation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ENCOUNTER_LOCATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.ENCOUNTER_LOCATION);
@@ -498,6 +513,7 @@ public class EncounterLocationOperations extends Participant2Operations {
 					CCDValidator.ENCOUNTER_LOCATION__ENCOUNTER_LOCATION_TYPE_CODE,
 					CCDPlugin.INSTANCE.getString("EncounterLocationTypeCode"), new Object[] { encounterLocation }));
 			}
+
 			return false;
 		}
 		return true;

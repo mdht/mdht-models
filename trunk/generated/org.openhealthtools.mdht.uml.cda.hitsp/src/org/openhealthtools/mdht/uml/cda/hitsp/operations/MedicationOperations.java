@@ -66,6 +66,8 @@ import org.openhealthtools.mdht.uml.cda.hitsp.util.HITSPValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.hitsp.Medication#getMedicationType() <em>Get Medication Type</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.hitsp.Medication#getMedicationOrderInformations() <em>Get Medication Order Informations</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.hitsp.Medication#getHITSPReactionObservation() <em>Get HITSP Reaction Observation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.hitsp.Medication#validateMedicationActivityRouteCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Route Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.hitsp.Medication#validateMedicationApproachSiteCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Approach Site Code</em>}</li>
  * </ul>
  * </p>
  *
@@ -114,6 +116,7 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 	 */
 	public static boolean validateHITSPMedicationFirstEffectiveTimeDatatype(Medication medication,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_MEDICATION_FIRST_EFFECTIVE_TIME_DATATYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.MEDICATION);
@@ -132,6 +135,7 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 					HITSPPlugin.INSTANCE.getString("HITSPMedicationFirstEffectiveTimeDatatype"),
 					new Object[] { medication }));
 			}
+
 			return false;
 		}
 		return true;
@@ -170,6 +174,7 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 	 */
 	public static boolean validateHITSPMedicationDoseUnits(Medication medication, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_MEDICATION_DOSE_UNITS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.MEDICATION);
@@ -187,6 +192,7 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 					HITSPValidator.MEDICATION__HITSP_MEDICATION_DOSE_UNITS,
 					HITSPPlugin.INSTANCE.getString("HITSPMedicationDoseUnits"), new Object[] { medication }));
 			}
+
 			return false;
 		}
 		return true;
@@ -225,6 +231,7 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 	 */
 	public static boolean validateHITSPMedicationDeliveryMethodDescription(Medication medication,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_MEDICATION_DELIVERY_METHOD_DESCRIPTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.MEDICATION);
@@ -243,6 +250,7 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 					HITSPPlugin.INSTANCE.getString("HITSPMedicationDeliveryMethodDescription"),
 					new Object[] { medication }));
 			}
+
 			return false;
 		}
 		return true;
@@ -281,6 +289,7 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 	 */
 	public static boolean validateHITSPMedicationHasMedicationInformation(Medication medication,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_MEDICATION_HAS_MEDICATION_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.MEDICATION);
@@ -299,6 +308,7 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 					HITSPPlugin.INSTANCE.getString("HITSPMedicationHasMedicationInformation"),
 					new Object[] { medication }));
 			}
+
 			return false;
 		}
 		return true;
@@ -337,6 +347,7 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 	 */
 	public static boolean validateHITSPMedicationHasStatusOfMedication(Medication medication,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_MEDICATION_HAS_STATUS_OF_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.MEDICATION);
@@ -354,6 +365,7 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 					HITSPValidator.MEDICATION__HITSP_MEDICATION_HAS_STATUS_OF_MEDICATION,
 					HITSPPlugin.INSTANCE.getString("HITSPMedicationHasStatusOfMedication"), new Object[] { medication }));
 			}
+
 			return false;
 		}
 		return true;
@@ -392,6 +404,7 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 	 */
 	public static boolean validateHITSPMedicationHasIndication(Medication medication, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_MEDICATION_HAS_INDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.MEDICATION);
@@ -409,6 +422,7 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 					HITSPValidator.MEDICATION__HITSP_MEDICATION_HAS_INDICATION,
 					HITSPPlugin.INSTANCE.getString("HITSPMedicationHasIndication"), new Object[] { medication }));
 			}
+
 			return false;
 		}
 		return true;
@@ -447,6 +461,7 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 	 */
 	public static boolean validateHITSPMedicationHasIndicationNarrativeText(Medication medication,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_MEDICATION_HAS_INDICATION_NARRATIVE_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.MEDICATION);
@@ -465,6 +480,7 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 					HITSPPlugin.INSTANCE.getString("HITSPMedicationHasIndicationNarrativeText"),
 					new Object[] { medication }));
 			}
+
 			return false;
 		}
 		return true;
@@ -503,6 +519,7 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 	 */
 	public static boolean validateHITSPMedicationHasIndicationVocab(Medication medication, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_MEDICATION_HAS_INDICATION_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.MEDICATION);
@@ -520,6 +537,7 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 					HITSPValidator.MEDICATION__HITSP_MEDICATION_HAS_INDICATION_VOCAB,
 					HITSPPlugin.INSTANCE.getString("HITSPMedicationHasIndicationVocab"), new Object[] { medication }));
 			}
+
 			return false;
 		}
 		return true;
@@ -558,6 +576,7 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 	 */
 	public static boolean validateHITSPMedicationHasPatientInstructions(Medication medication,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_MEDICATION_HAS_PATIENT_INSTRUCTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.MEDICATION);
@@ -576,6 +595,7 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 					HITSPPlugin.INSTANCE.getString("HITSPMedicationHasPatientInstructions"),
 					new Object[] { medication }));
 			}
+
 			return false;
 		}
 		return true;
@@ -614,6 +634,7 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 	 */
 	public static boolean validateHITSPMedicationHasMedicationVehicle(Medication medication,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_MEDICATION_HAS_MEDICATION_VEHICLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.MEDICATION);
@@ -631,6 +652,7 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 					HITSPValidator.MEDICATION__HITSP_MEDICATION_HAS_MEDICATION_VEHICLE,
 					HITSPPlugin.INSTANCE.getString("HITSPMedicationHasMedicationVehicle"), new Object[] { medication }));
 			}
+
 			return false;
 		}
 		return true;
@@ -669,6 +691,7 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 	 */
 	public static boolean validateHITSPMedicationMedicationVehicleType(Medication medication,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_MEDICATION_MEDICATION_VEHICLE_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.MEDICATION);
@@ -686,6 +709,7 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 					HITSPValidator.MEDICATION__HITSP_MEDICATION_MEDICATION_VEHICLE_TYPE,
 					HITSPPlugin.INSTANCE.getString("HITSPMedicationMedicationVehicleType"), new Object[] { medication }));
 			}
+
 			return false;
 		}
 		return true;
@@ -724,6 +748,7 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 	 */
 	public static boolean validateHITSPMedicationMedicationVehicleClass(Medication medication,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_MEDICATION_MEDICATION_VEHICLE_CLASS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.MEDICATION);
@@ -742,6 +767,7 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 					HITSPPlugin.INSTANCE.getString("HITSPMedicationMedicationVehicleClass"),
 					new Object[] { medication }));
 			}
+
 			return false;
 		}
 		return true;
@@ -780,6 +806,7 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 	 */
 	public static boolean validateHITSPMedicationMedicationVehicleCode(Medication medication,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_MEDICATION_MEDICATION_VEHICLE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.MEDICATION);
@@ -797,6 +824,7 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 					HITSPValidator.MEDICATION__HITSP_MEDICATION_MEDICATION_VEHICLE_CODE,
 					HITSPPlugin.INSTANCE.getString("HITSPMedicationMedicationVehicleCode"), new Object[] { medication }));
 			}
+
 			return false;
 		}
 		return true;
@@ -835,6 +863,7 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 	 */
 	public static boolean validateHITSPMedicationMedicationVehicleName(Medication medication,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_MEDICATION_MEDICATION_VEHICLE_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.MEDICATION);
@@ -852,6 +881,7 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 					HITSPValidator.MEDICATION__HITSP_MEDICATION_MEDICATION_VEHICLE_NAME,
 					HITSPPlugin.INSTANCE.getString("HITSPMedicationMedicationVehicleName"), new Object[] { medication }));
 			}
+
 			return false;
 		}
 		return true;
@@ -890,6 +920,7 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 	 */
 	public static boolean validateHITSPMedicationMedicationVehicleCodedName(Medication medication,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_MEDICATION_MEDICATION_VEHICLE_CODED_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.MEDICATION);
@@ -908,6 +939,7 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 					HITSPPlugin.INSTANCE.getString("HITSPMedicationMedicationVehicleCodedName"),
 					new Object[] { medication }));
 			}
+
 			return false;
 		}
 		return true;
@@ -946,6 +978,7 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 	 */
 	public static boolean validateHITSPMedicationMedicationVehicleCodedNameVocab(Medication medication,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_MEDICATION_MEDICATION_VEHICLE_CODED_NAME_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.MEDICATION);
@@ -965,6 +998,7 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 					HITSPPlugin.INSTANCE.getString("HITSPMedicationMedicationVehicleCodedNameVocab"),
 					new Object[] { medication }));
 			}
+
 			return false;
 		}
 		return true;
@@ -1003,6 +1037,7 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 	 */
 	public static boolean validateHITSPMedicationTemplateId(Medication medication, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_MEDICATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.MEDICATION);
@@ -1020,6 +1055,7 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 					HITSPValidator.MEDICATION__HITSP_MEDICATION_TEMPLATE_ID,
 					HITSPPlugin.INSTANCE.getString("HITSPMedicationTemplateId"), new Object[] { medication }));
 			}
+
 			return false;
 		}
 		return true;
@@ -1058,6 +1094,7 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 	 */
 	public static boolean validateHITSPMedicationEffectiveTime(Medication medication, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_MEDICATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.MEDICATION);
@@ -1075,6 +1112,7 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 					HITSPValidator.MEDICATION__HITSP_MEDICATION_EFFECTIVE_TIME,
 					HITSPPlugin.INSTANCE.getString("HITSPMedicationEffectiveTime"), new Object[] { medication }));
 			}
+
 			return false;
 		}
 		return true;
@@ -1088,9 +1126,7 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_HITSP_MEDICATION_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.routeCode.oclIsUndefined() or self.routeCode.isNullFlavorUndefined()) implies (not self.routeCode.oclIsUndefined() and self.routeCode.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.routeCode.oclAsType(datatypes::CE) in ("
-			+ "not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))";
+	protected static final String VALIDATE_HITSP_MEDICATION_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.routeCode.oclIsUndefined() or self.routeCode.isNullFlavorUndefined()) implies (not self.routeCode.oclIsUndefined())";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateHITSPMedicationRouteCode(Medication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Medication Route Code</em>}' invariant operation.
@@ -1106,9 +1142,7 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.routeCode.oclIsUndefined() or self.routeCode.isNullFlavorUndefined()) implies (not self.routeCode.oclIsUndefined() and self.routeCode.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = self.routeCode.oclAsType(datatypes::CE) in (
-	 * not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))
+	 * (self.routeCode.oclIsUndefined() or self.routeCode.isNullFlavorUndefined()) implies (not self.routeCode.oclIsUndefined())
 	 * @param medication The receiving '<em><b>Medication</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1117,6 +1151,7 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 	 */
 	public static boolean validateHITSPMedicationRouteCode(Medication medication, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_MEDICATION_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.MEDICATION);
@@ -1134,6 +1169,7 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 					HITSPValidator.MEDICATION__HITSP_MEDICATION_ROUTE_CODE,
 					HITSPPlugin.INSTANCE.getString("HITSPMedicationRouteCode"), new Object[] { medication }));
 			}
+
 			return false;
 		}
 		return true;
@@ -1172,6 +1208,7 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 	 */
 	public static boolean validateHITSPMedicationDoseQuantity(Medication medication, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_MEDICATION_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.MEDICATION);
@@ -1189,6 +1226,7 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 					HITSPValidator.MEDICATION__HITSP_MEDICATION_DOSE_QUANTITY,
 					HITSPPlugin.INSTANCE.getString("HITSPMedicationDoseQuantity"), new Object[] { medication }));
 			}
+
 			return false;
 		}
 		return true;
@@ -1203,8 +1241,8 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 	 * @ordered
 	 */
 	protected static final String VALIDATE_HITSP_MEDICATION_ADMINISTRATION_UNIT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.administrationUnitCode.oclIsUndefined() or self.administrationUnitCode.isNullFlavorUndefined()) implies (not self.administrationUnitCode.oclIsUndefined() and self.administrationUnitCode.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.administrationUnitCode.oclAsType(datatypes::CE) in ("
-			+ "not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))";
+			+ "let value : datatypes::CE = self.administrationUnitCode.oclAsType(datatypes::CE) in "
+			+ "not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined())";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateHITSPMedicationAdministrationUnitCode(Medication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Medication Administration Unit Code</em>}' invariant operation.
@@ -1221,8 +1259,8 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.administrationUnitCode.oclIsUndefined() or self.administrationUnitCode.isNullFlavorUndefined()) implies (not self.administrationUnitCode.oclIsUndefined() and self.administrationUnitCode.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = self.administrationUnitCode.oclAsType(datatypes::CE) in (
-	 * not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))
+	 * let value : datatypes::CE = self.administrationUnitCode.oclAsType(datatypes::CE) in 
+	 * not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined())
 	 * @param medication The receiving '<em><b>Medication</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1231,6 +1269,7 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 	 */
 	public static boolean validateHITSPMedicationAdministrationUnitCode(Medication medication,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_MEDICATION_ADMINISTRATION_UNIT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.MEDICATION);
@@ -1249,6 +1288,7 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 					HITSPPlugin.INSTANCE.getString("HITSPMedicationAdministrationUnitCode"),
 					new Object[] { medication }));
 			}
+
 			return false;
 		}
 		return true;
@@ -1287,6 +1327,7 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 	 */
 	public static boolean validateHITSPMedicationMaxDoseQuantity(Medication medication, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_MEDICATION_MAX_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.MEDICATION);
@@ -1304,6 +1345,7 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 					HITSPValidator.MEDICATION__HITSP_MEDICATION_MAX_DOSE_QUANTITY,
 					HITSPPlugin.INSTANCE.getString("HITSPMedicationMaxDoseQuantity"), new Object[] { medication }));
 			}
+
 			return false;
 		}
 		return true;
@@ -1317,9 +1359,7 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_HITSP_MEDICATION_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.approachSiteCode->isEmpty() or self.approachSiteCode->exists(element | element.isNullFlavorUndefined())) implies (self.approachSiteCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
-			+ "not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))";
+	protected static final String VALIDATE_HITSP_MEDICATION_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.approachSiteCode->isEmpty() or self.approachSiteCode->exists(element | element.isNullFlavorUndefined())) implies (not self.approachSiteCode->isEmpty())";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateHITSPMedicationApproachSiteCode(Medication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate HITSP Medication Approach Site Code</em>}' invariant operation.
@@ -1335,9 +1375,7 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.approachSiteCode->isEmpty() or self.approachSiteCode->exists(element | element.isNullFlavorUndefined())) implies (self.approachSiteCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
-	 * let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
-	 * not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))
+	 * (self.approachSiteCode->isEmpty() or self.approachSiteCode->exists(element | element.isNullFlavorUndefined())) implies (not self.approachSiteCode->isEmpty())
 	 * @param medication The receiving '<em><b>Medication</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1346,6 +1384,7 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 	 */
 	public static boolean validateHITSPMedicationApproachSiteCode(Medication medication, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_MEDICATION_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.MEDICATION);
@@ -1363,6 +1402,19 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 					HITSPValidator.MEDICATION__HITSP_MEDICATION_APPROACH_SITE_CODE,
 					HITSPPlugin.INSTANCE.getString("HITSPMedicationApproachSiteCode"), new Object[] { medication }));
 			}
+
+			if (context != null) {
+				// generate a pass token for my dependent constraints to short-circuit or filter results
+				@SuppressWarnings("unchecked")
+				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.hitsp.HITSPMedicationApproachSiteCode");
+				if (passToken == null) {
+					// anticipate a reasonably healthy model
+					passToken = new java.util.ArrayList<Object>(3);
+					context.put("org.openhealthtools.mdht.uml.cda.hitsp.HITSPMedicationApproachSiteCode", passToken);
+				}
+				passToken.add(medication);
+			}
+
 			return false;
 		}
 		return true;
@@ -1401,6 +1453,7 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 	 */
 	public static boolean validateHITSPMedicationCode(Medication medication, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_MEDICATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.MEDICATION);
@@ -1417,6 +1470,7 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 					HITSPValidator.MEDICATION__HITSP_MEDICATION_CODE,
 					HITSPPlugin.INSTANCE.getString("HITSPMedicationCode"), new Object[] { medication }));
 			}
+
 			return false;
 		}
 		return true;
@@ -1455,7 +1509,7 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 		if (GET_MEDICATION_TYPE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				HITSPPackage.Literals.MEDICATION, HITSPPackage.Literals.MEDICATION.getEAllOperations().get(122));
+				HITSPPackage.Literals.MEDICATION, HITSPPackage.Literals.MEDICATION.getEAllOperations().get(125));
 			try {
 				GET_MEDICATION_TYPE__EOCL_QRY = helper.createQuery(GET_MEDICATION_TYPE__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1499,7 +1553,7 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 		if (GET_MEDICATION_ORDER_INFORMATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				HITSPPackage.Literals.MEDICATION, HITSPPackage.Literals.MEDICATION.getEAllOperations().get(123));
+				HITSPPackage.Literals.MEDICATION, HITSPPackage.Literals.MEDICATION.getEAllOperations().get(126));
 			try {
 				GET_MEDICATION_ORDER_INFORMATIONS__EOCL_QRY = helper.createQuery(GET_MEDICATION_ORDER_INFORMATIONS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1545,7 +1599,7 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 		if (GET_HITSP_REACTION_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				HITSPPackage.Literals.MEDICATION, HITSPPackage.Literals.MEDICATION.getEAllOperations().get(124));
+				HITSPPackage.Literals.MEDICATION, HITSPPackage.Literals.MEDICATION.getEAllOperations().get(127));
 			try {
 				GET_HITSP_REACTION_OBSERVATION__EOCL_QRY = helper.createQuery(GET_HITSP_REACTION_OBSERVATION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1554,6 +1608,140 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_HITSP_REACTION_OBSERVATION__EOCL_QRY);
 		return (ReactionObservation) query.evaluate(medication);
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateMedicationActivityRouteCode(Medication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Route Code</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateMedicationActivityRouteCode(Medication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_MEDICATION_ACTIVITY_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.routeCode.oclIsUndefined() or self.routeCode.isNullFlavorUndefined()) implies (not self.routeCode.oclIsUndefined() and self.routeCode.oclIsKindOf(datatypes::CE) and "
+			+ "let value : datatypes::CE = self.routeCode.oclAsType(datatypes::CE) in "
+			+ "value.codeSystem = '2.16.840.1.113883.3.26.1.1' and not value.code.oclIsUndefined())";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateMedicationActivityRouteCode(Medication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Activity Route Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateMedicationActivityRouteCode(Medication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_MEDICATION_ACTIVITY_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * (self.routeCode.oclIsUndefined() or self.routeCode.isNullFlavorUndefined()) implies (not self.routeCode.oclIsUndefined() and self.routeCode.oclIsKindOf(datatypes::CE) and 
+	 * let value : datatypes::CE = self.routeCode.oclAsType(datatypes::CE) in 
+	 * value.codeSystem = '2.16.840.1.113883.3.26.1.1' and not value.code.oclIsUndefined())
+	 * @param medication The receiving '<em><b>Medication</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validateMedicationActivityRouteCode(Medication medication, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		if (VALIDATE_MEDICATION_ACTIVITY_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(HITSPPackage.Literals.MEDICATION);
+			try {
+				VALIDATE_MEDICATION_ACTIVITY_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_ACTIVITY_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_ACTIVITY_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medication)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.MEDICATION__MEDICATION_ACTIVITY_ROUTE_CODE,
+					HITSPPlugin.INSTANCE.getString("MedicationActivityRouteCode"), new Object[] { medication }));
+			}
+
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateMedicationApproachSiteCode(Medication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Approach Site Code</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateMedicationApproachSiteCode(Medication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_MEDICATION_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.approachSiteCode->isEmpty() or self.approachSiteCode->exists(element | element.isNullFlavorUndefined())) implies (self.approachSiteCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
+			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
+			+ "value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined()))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateMedicationApproachSiteCode(Medication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Approach Site Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateMedicationApproachSiteCode(Medication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_MEDICATION_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * (self.approachSiteCode->isEmpty() or self.approachSiteCode->exists(element | element.isNullFlavorUndefined())) implies (self.approachSiteCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
+	 * let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
+	 * value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined()))
+	 * @param medication The receiving '<em><b>Medication</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validateMedicationApproachSiteCode(Medication medication, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.hitsp.HITSPMedicationApproachSiteCode");
+		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(medication)) {
+			// I have a free pass to short-circuit
+			return true;
+		}
+
+		if (VALIDATE_MEDICATION_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(HITSPPackage.Literals.MEDICATION);
+			try {
+				VALIDATE_MEDICATION_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			medication)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
+					HITSPValidator.MEDICATION__MEDICATION_APPROACH_SITE_CODE,
+					HITSPPlugin.INSTANCE.getString("MedicationApproachSiteCode"), new Object[] { medication }));
+			}
+
+			return false;
+		}
+		return true;
 	}
 
 } // MedicationOperations

@@ -83,6 +83,7 @@ public class NeurologicSystemSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateNeurologicSystemSectionTemplateId(NeurologicSystemSection neurologicSystemSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_NEUROLOGIC_SYSTEM_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.NEUROLOGIC_SYSTEM_SECTION);
@@ -101,6 +102,7 @@ public class NeurologicSystemSectionOperations extends SectionOperations {
 					IHEPlugin.INSTANCE.getString("NeurologicSystemSectionTemplateId"),
 					new Object[] { neurologicSystemSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -115,8 +117,8 @@ public class NeurologicSystemSectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_NEUROLOGIC_SYSTEM_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
-			+ "value.code = '10202-0' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
+			+ "value.code = '10202-0' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateNeurologicSystemSectionCode(NeurologicSystemSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Neurologic System Section Code</em>}' invariant operation.
@@ -133,8 +135,8 @@ public class NeurologicSystemSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in (
-	 * value.code = '10202-0' and value.codeSystem = '2.16.840.1.113883.6.1'))
+	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+	 * value.code = '10202-0' and value.codeSystem = '2.16.840.1.113883.6.1')
 	 * @param neurologicSystemSection The receiving '<em><b>Neurologic System Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -143,6 +145,7 @@ public class NeurologicSystemSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateNeurologicSystemSectionCode(NeurologicSystemSection neurologicSystemSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_NEUROLOGIC_SYSTEM_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.NEUROLOGIC_SYSTEM_SECTION);
@@ -161,6 +164,7 @@ public class NeurologicSystemSectionOperations extends SectionOperations {
 					IHEPlugin.INSTANCE.getString("NeurologicSystemSectionCode"),
 					new Object[] { neurologicSystemSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -199,6 +203,7 @@ public class NeurologicSystemSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateNeurologicSystemSectionProblemEntry(NeurologicSystemSection neurologicSystemSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_NEUROLOGIC_SYSTEM_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.NEUROLOGIC_SYSTEM_SECTION);
@@ -217,6 +222,7 @@ public class NeurologicSystemSectionOperations extends SectionOperations {
 					IHEPlugin.INSTANCE.getString("NeurologicSystemSectionProblemEntry"),
 					new Object[] { neurologicSystemSection }));
 			}
+
 			return false;
 		}
 		return true;

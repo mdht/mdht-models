@@ -83,6 +83,7 @@ public class EndocrineSystemSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateEndocrineSystemSectionTemplateId(EndocrineSystemSection endocrineSystemSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ENDOCRINE_SYSTEM_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.ENDOCRINE_SYSTEM_SECTION);
@@ -101,6 +102,7 @@ public class EndocrineSystemSectionOperations extends SectionOperations {
 					IHEPlugin.INSTANCE.getString("EndocrineSystemSectionTemplateId"),
 					new Object[] { endocrineSystemSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -115,8 +117,8 @@ public class EndocrineSystemSectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_ENDOCRINE_SYSTEM_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
-			+ "value.code = '29307-6' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
+			+ "value.code = '29307-6' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateEndocrineSystemSectionCode(EndocrineSystemSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Endocrine System Section Code</em>}' invariant operation.
@@ -133,8 +135,8 @@ public class EndocrineSystemSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in (
-	 * value.code = '29307-6' and value.codeSystem = '2.16.840.1.113883.6.1'))
+	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+	 * value.code = '29307-6' and value.codeSystem = '2.16.840.1.113883.6.1')
 	 * @param endocrineSystemSection The receiving '<em><b>Endocrine System Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -143,6 +145,7 @@ public class EndocrineSystemSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateEndocrineSystemSectionCode(EndocrineSystemSection endocrineSystemSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ENDOCRINE_SYSTEM_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.ENDOCRINE_SYSTEM_SECTION);
@@ -160,6 +163,7 @@ public class EndocrineSystemSectionOperations extends SectionOperations {
 					IHEValidator.ENDOCRINE_SYSTEM_SECTION__ENDOCRINE_SYSTEM_SECTION_CODE,
 					IHEPlugin.INSTANCE.getString("EndocrineSystemSectionCode"), new Object[] { endocrineSystemSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -198,6 +202,7 @@ public class EndocrineSystemSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateEndocrineSystemSectionProblemEntry(EndocrineSystemSection endocrineSystemSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ENDOCRINE_SYSTEM_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.ENDOCRINE_SYSTEM_SECTION);
@@ -216,6 +221,7 @@ public class EndocrineSystemSectionOperations extends SectionOperations {
 					IHEPlugin.INSTANCE.getString("EndocrineSystemSectionProblemEntry"),
 					new Object[] { endocrineSystemSection }));
 			}
+
 			return false;
 		}
 		return true;

@@ -89,6 +89,7 @@ public class AllergyIntoleranceConcernOperations extends ConcernEntryOperations 
 	public static boolean validateAllergyIntoleranceConcernTemplateId(
 			AllergyIntoleranceConcern allergyIntoleranceConcern, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_ALLERGY_INTOLERANCE_CONCERN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.ALLERGY_INTOLERANCE_CONCERN);
@@ -107,6 +108,7 @@ public class AllergyIntoleranceConcernOperations extends ConcernEntryOperations 
 					IHEPlugin.INSTANCE.getString("AllergyIntoleranceConcernTemplateId"),
 					new Object[] { allergyIntoleranceConcern }));
 			}
+
 			return false;
 		}
 		return true;
@@ -146,6 +148,7 @@ public class AllergyIntoleranceConcernOperations extends ConcernEntryOperations 
 	public static boolean validateAllergyIntoleranceConcernAllergyIntolerance(
 			AllergyIntoleranceConcern allergyIntoleranceConcern, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_ALLERGY_INTOLERANCE_CONCERN_ALLERGY_INTOLERANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.ALLERGY_INTOLERANCE_CONCERN);
@@ -165,6 +168,7 @@ public class AllergyIntoleranceConcernOperations extends ConcernEntryOperations 
 					IHEPlugin.INSTANCE.getString("AllergyIntoleranceConcernAllergyIntolerance"),
 					new Object[] { allergyIntoleranceConcern }));
 			}
+
 			return false;
 		}
 		return true;
@@ -204,7 +208,7 @@ public class AllergyIntoleranceConcernOperations extends ConcernEntryOperations 
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				IHEPackage.Literals.ALLERGY_INTOLERANCE_CONCERN,
-				IHEPackage.Literals.ALLERGY_INTOLERANCE_CONCERN.getEAllOperations().get(70));
+				IHEPackage.Literals.ALLERGY_INTOLERANCE_CONCERN.getEAllOperations().get(72));
 			try {
 				GET_ALLERGY_INTOLERANCES__EOCL_QRY = helper.createQuery(GET_ALLERGY_INTOLERANCES__EOCL_EXP);
 			} catch (ParserException pe) {

@@ -81,6 +81,7 @@ public class HealthcareProviderOperations extends HealthcareProvidersPharmaciesO
 	 */
 	public static boolean validateHealthcareProviderTemplateId(HealthcareProvider healthcareProvider,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_HEALTHCARE_PROVIDER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.HEALTHCARE_PROVIDER);
@@ -98,6 +99,7 @@ public class HealthcareProviderOperations extends HealthcareProvidersPharmaciesO
 					HITSPValidator.HEALTHCARE_PROVIDER__HEALTHCARE_PROVIDER_TEMPLATE_ID,
 					HITSPPlugin.INSTANCE.getString("HealthcareProviderTemplateId"), new Object[] { healthcareProvider }));
 			}
+
 			return false;
 		}
 		return true;

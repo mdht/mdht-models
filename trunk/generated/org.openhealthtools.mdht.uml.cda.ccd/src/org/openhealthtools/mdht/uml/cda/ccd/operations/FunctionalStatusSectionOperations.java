@@ -93,6 +93,7 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateFunctionalStatusSectionClinicalStatements(
 			FunctionalStatusSection functionalStatusSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_FUNCTIONAL_STATUS_SECTION_CLINICAL_STATEMENTS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.FUNCTIONAL_STATUS_SECTION);
@@ -112,6 +113,7 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 					CCDPlugin.INSTANCE.getString("FunctionalStatusSectionClinicalStatements"),
 					new Object[] { functionalStatusSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -150,6 +152,7 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateFunctionalStatusSectionObservationCode(
 			FunctionalStatusSection functionalStatusSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_FUNCTIONAL_STATUS_SECTION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.FUNCTIONAL_STATUS_SECTION);
@@ -168,6 +171,7 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 					CCDPlugin.INSTANCE.getString("FunctionalStatusSectionObservationCode"),
 					new Object[] { functionalStatusSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -206,6 +210,7 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateFunctionalStatusSectionObservationCodeValueSet(
 			FunctionalStatusSection functionalStatusSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_FUNCTIONAL_STATUS_SECTION_OBSERVATION_CODE_VALUE_SET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.FUNCTIONAL_STATUS_SECTION);
@@ -225,6 +230,7 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 					CCDPlugin.INSTANCE.getString("FunctionalStatusSectionObservationCodeValueSet"),
 					new Object[] { functionalStatusSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -263,6 +269,7 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateFunctionalStatusSectionValueDatatype(FunctionalStatusSection functionalStatusSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_FUNCTIONAL_STATUS_SECTION_VALUE_DATATYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.FUNCTIONAL_STATUS_SECTION);
@@ -281,6 +288,7 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 					CCDPlugin.INSTANCE.getString("FunctionalStatusSectionValueDatatype"),
 					new Object[] { functionalStatusSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -319,6 +327,7 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateFunctionalStatusSectionIcfCodeSystem(FunctionalStatusSection functionalStatusSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_FUNCTIONAL_STATUS_SECTION_ICF_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.FUNCTIONAL_STATUS_SECTION);
@@ -337,6 +346,7 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 					CCDPlugin.INSTANCE.getString("FunctionalStatusSectionIcfCodeSystem"),
 					new Object[] { functionalStatusSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -375,6 +385,7 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateFunctionalStatusSectionProblemStatusObservation(
 			FunctionalStatusSection functionalStatusSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_FUNCTIONAL_STATUS_SECTION_PROBLEM_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.FUNCTIONAL_STATUS_SECTION);
@@ -394,6 +405,7 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 					CCDPlugin.INSTANCE.getString("FunctionalStatusSectionProblemStatusObservation"),
 					new Object[] { functionalStatusSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -434,6 +446,7 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateFunctionalStatusSectionResultStatusObservation(
 			FunctionalStatusSection functionalStatusSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_FUNCTIONAL_STATUS_SECTION_RESULT_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.FUNCTIONAL_STATUS_SECTION);
@@ -453,6 +466,7 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 					CCDPlugin.INSTANCE.getString("FunctionalStatusSectionResultStatusObservation"),
 					new Object[] { functionalStatusSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -491,6 +505,7 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateFunctionalStatusSectionTemplateId(FunctionalStatusSection functionalStatusSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_FUNCTIONAL_STATUS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.FUNCTIONAL_STATUS_SECTION);
@@ -509,6 +524,7 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 					CCDPlugin.INSTANCE.getString("FunctionalStatusSectionTemplateId"),
 					new Object[] { functionalStatusSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -523,8 +539,8 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_FUNCTIONAL_STATUS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
-			+ "value.code = '47420-5' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
+			+ "value.code = '47420-5' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateFunctionalStatusSectionCode(FunctionalStatusSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Functional Status Section Code</em>}' invariant operation.
@@ -541,8 +557,8 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in (
-	 * value.code = '47420-5' and value.codeSystem = '2.16.840.1.113883.6.1'))
+	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+	 * value.code = '47420-5' and value.codeSystem = '2.16.840.1.113883.6.1')
 	 * @param functionalStatusSection The receiving '<em><b>Functional Status Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -551,6 +567,7 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateFunctionalStatusSectionCode(FunctionalStatusSection functionalStatusSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_FUNCTIONAL_STATUS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.FUNCTIONAL_STATUS_SECTION);
@@ -569,6 +586,7 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 					CCDPlugin.INSTANCE.getString("FunctionalStatusSectionCode"),
 					new Object[] { functionalStatusSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -607,6 +625,7 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateFunctionalStatusSectionTitle(FunctionalStatusSection functionalStatusSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_FUNCTIONAL_STATUS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.FUNCTIONAL_STATUS_SECTION);
@@ -625,6 +644,7 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 					CCDPlugin.INSTANCE.getString("FunctionalStatusSectionTitle"),
 					new Object[] { functionalStatusSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -663,6 +683,7 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateFunctionalStatusSectionText(FunctionalStatusSection functionalStatusSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_FUNCTIONAL_STATUS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.FUNCTIONAL_STATUS_SECTION);
@@ -681,6 +702,7 @@ public class FunctionalStatusSectionOperations extends SectionOperations {
 					CCDPlugin.INSTANCE.getString("FunctionalStatusSectionText"),
 					new Object[] { functionalStatusSection }));
 			}
+
 			return false;
 		}
 		return true;

@@ -85,6 +85,7 @@ public class ProcedureOperations extends ProcedureEntryOperations {
 	 */
 	public static boolean validateHITSPProcedureHasCodeOriginalText(Procedure procedure, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_PROCEDURE_HAS_CODE_ORIGINAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.PROCEDURE);
@@ -102,6 +103,7 @@ public class ProcedureOperations extends ProcedureEntryOperations {
 					HITSPValidator.PROCEDURE__HITSP_PROCEDURE_HAS_CODE_ORIGINAL_TEXT,
 					HITSPPlugin.INSTANCE.getString("HITSPProcedureHasCodeOriginalText"), new Object[] { procedure }));
 			}
+
 			return false;
 		}
 		return true;
@@ -140,6 +142,7 @@ public class ProcedureOperations extends ProcedureEntryOperations {
 	 */
 	public static boolean validateHITSPProcedurePerformerAssignedEntity(Procedure procedure,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_PROCEDURE_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.PROCEDURE);
@@ -157,6 +160,7 @@ public class ProcedureOperations extends ProcedureEntryOperations {
 					HITSPValidator.PROCEDURE__HITSP_PROCEDURE_PERFORMER_ASSIGNED_ENTITY,
 					HITSPPlugin.INSTANCE.getString("HITSPProcedurePerformerAssignedEntity"), new Object[] { procedure }));
 			}
+
 			return false;
 		}
 		return true;
@@ -195,6 +199,7 @@ public class ProcedureOperations extends ProcedureEntryOperations {
 	 */
 	public static boolean validateHITSPProcedureTemplateId(Procedure procedure, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_PROCEDURE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.PROCEDURE);
@@ -211,6 +216,7 @@ public class ProcedureOperations extends ProcedureEntryOperations {
 					HITSPValidator.PROCEDURE__HITSP_PROCEDURE_TEMPLATE_ID,
 					HITSPPlugin.INSTANCE.getString("HITSPProcedureTemplateId"), new Object[] { procedure }));
 			}
+
 			return false;
 		}
 		return true;
@@ -253,6 +259,7 @@ public class ProcedureOperations extends ProcedureEntryOperations {
 	 */
 	public static boolean validateHITSPProcedureTargetSiteCode(Procedure procedure, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_PROCEDURE_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.PROCEDURE);
@@ -270,6 +277,7 @@ public class ProcedureOperations extends ProcedureEntryOperations {
 					HITSPValidator.PROCEDURE__HITSP_PROCEDURE_TARGET_SITE_CODE,
 					HITSPPlugin.INSTANCE.getString("HITSPProcedureTargetSiteCode"), new Object[] { procedure }));
 			}
+
 			return false;
 		}
 		return true;
@@ -308,6 +316,7 @@ public class ProcedureOperations extends ProcedureEntryOperations {
 	 */
 	public static boolean validateHITSPProcedureCode(Procedure procedure, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_PROCEDURE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.PROCEDURE);
@@ -324,6 +333,7 @@ public class ProcedureOperations extends ProcedureEntryOperations {
 					HITSPValidator.PROCEDURE__HITSP_PROCEDURE_CODE,
 					HITSPPlugin.INSTANCE.getString("HITSPProcedureCode"), new Object[] { procedure }));
 			}
+
 			return false;
 		}
 		return true;

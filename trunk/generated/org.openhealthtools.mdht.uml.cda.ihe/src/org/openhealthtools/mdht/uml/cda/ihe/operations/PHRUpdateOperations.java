@@ -80,6 +80,7 @@ public class PHRUpdateOperations extends MedicalSummaryOperations {
 	 */
 	public static boolean validatePHRUpdateTemplateId(PHRUpdate phrUpdate, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PHR_UPDATE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.PHR_UPDATE);
@@ -95,6 +96,7 @@ public class PHRUpdateOperations extends MedicalSummaryOperations {
 					Diagnostic.ERROR, IHEValidator.DIAGNOSTIC_SOURCE, IHEValidator.PHR_UPDATE__PHR_UPDATE_TEMPLATE_ID,
 					IHEPlugin.INSTANCE.getString("PHRUpdateTemplateId"), new Object[] { phrUpdate }));
 			}
+
 			return false;
 		}
 		return true;

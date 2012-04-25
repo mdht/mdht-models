@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.Act;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ihe.IHEPackage#getInternalReference()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.4.1' constraints.validation.error='InternalReferenceTemplateId InternalReferenceCode InternalReferenceId'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='InternalReferenceTemplateId InternalReferenceCode InternalReferenceId' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.4.1'"
  * @generated
  */
 public interface InternalReference extends Act {

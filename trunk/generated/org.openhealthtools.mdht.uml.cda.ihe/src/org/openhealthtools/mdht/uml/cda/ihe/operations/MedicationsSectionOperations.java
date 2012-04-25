@@ -89,6 +89,7 @@ public class MedicationsSectionOperations extends
 	 */
 	public static boolean validateIHEMedicationsSectionTemplateId(MedicationsSection medicationsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_IHE_MEDICATIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.MEDICATIONS_SECTION);
@@ -107,6 +108,7 @@ public class MedicationsSectionOperations extends
 					IHEPlugin.INSTANCE.getString("IHEMedicationsSectionTemplateId"),
 					new Object[] { medicationsSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -145,6 +147,7 @@ public class MedicationsSectionOperations extends
 	 */
 	public static boolean validateIHEMedicationsSectionMedication(MedicationsSection medicationsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_IHE_MEDICATIONS_SECTION_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.MEDICATIONS_SECTION);
@@ -163,6 +166,7 @@ public class MedicationsSectionOperations extends
 					IHEPlugin.INSTANCE.getString("IHEMedicationsSectionMedication"),
 					new Object[] { medicationsSection }));
 			}
+
 			return false;
 		}
 		return true;

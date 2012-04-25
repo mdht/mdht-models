@@ -76,6 +76,7 @@ public class ReferralSummaryOperations extends MedicalSummaryOperations {
 	 */
 	public static boolean validateMedicalSummaryTemplateId(ReferralSummary referralSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICAL_SUMMARY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.REFERRAL_SUMMARY);
@@ -99,6 +100,7 @@ public class ReferralSummaryOperations extends MedicalSummaryOperations {
 								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(referralSummary, context) }),
 					new Object[] { referralSummary }));
 			}
+
 			return false;
 		}
 		return true;

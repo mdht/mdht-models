@@ -83,26 +83,26 @@ public class PhysicalExaminationSectionOperations extends SectionOperations {
 	public static boolean validatePhysicalExaminationSectionTemplateId(
 			PhysicalExaminationSection physicalExaminationSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PHYSICAL_EXAMINATION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CDTPackage.Literals.PHYSICAL_EXAMINATION_SECTION);
 			try {
 				VALIDATE_PHYSICAL_EXAMINATION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHYSICAL_EXAMINATION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_EXAMINATION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(physicalExaminationSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_EXAMINATION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			physicalExaminationSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CDTValidator.DIAGNOSTIC_SOURCE,
-						 CDTValidator.PHYSICAL_EXAMINATION_SECTION__PHYSICAL_EXAMINATION_SECTION_TEMPLATE_ID,
-						 CDTPlugin.INSTANCE.getString("PhysicalExaminationSectionTemplateId"),
-						 new Object [] { physicalExaminationSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
+					CDTValidator.PHYSICAL_EXAMINATION_SECTION__PHYSICAL_EXAMINATION_SECTION_TEMPLATE_ID,
+					CDTPlugin.INSTANCE.getString("PhysicalExaminationSectionTemplateId"),
+					new Object[] { physicalExaminationSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -116,9 +116,9 @@ public class PhysicalExaminationSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PHYSICAL_EXAMINATION_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
-"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("+
-"value.code = '29545-1' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+	protected static final String VALIDATE_PHYSICAL_EXAMINATION_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
+			+ "value.code = '29545-1' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePhysicalExaminationSectionCode(PhysicalExaminationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Physical Examination Section Code</em>}' invariant operation.
@@ -135,8 +135,8 @@ public class PhysicalExaminationSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in (
-	 * value.code = '29545-1' and value.codeSystem = '2.16.840.1.113883.6.1'))
+	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+	 * value.code = '29545-1' and value.codeSystem = '2.16.840.1.113883.6.1')
 	 * @param physicalExaminationSection The receiving '<em><b>Physical Examination Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -145,26 +145,26 @@ public class PhysicalExaminationSectionOperations extends SectionOperations {
 	 */
 	public static boolean validatePhysicalExaminationSectionCode(PhysicalExaminationSection physicalExaminationSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PHYSICAL_EXAMINATION_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CDTPackage.Literals.PHYSICAL_EXAMINATION_SECTION);
 			try {
 				VALIDATE_PHYSICAL_EXAMINATION_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHYSICAL_EXAMINATION_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_EXAMINATION_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(physicalExaminationSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PHYSICAL_EXAMINATION_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			physicalExaminationSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 CDTValidator.DIAGNOSTIC_SOURCE,
-						 CDTValidator.PHYSICAL_EXAMINATION_SECTION__PHYSICAL_EXAMINATION_SECTION_CODE,
-						 CDTPlugin.INSTANCE.getString("PhysicalExaminationSectionCode"),
-						 new Object [] { physicalExaminationSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
+					CDTValidator.PHYSICAL_EXAMINATION_SECTION__PHYSICAL_EXAMINATION_SECTION_CODE,
+					CDTPlugin.INSTANCE.getString("PhysicalExaminationSectionCode"),
+					new Object[] { physicalExaminationSection }));
 			}
+
 			return false;
 		}
 		return true;

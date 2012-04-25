@@ -27,7 +27,7 @@ import org.openhealthtools.mdht.uml.cda.ihe.ActiveProblemsSection;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage#getProblemListSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.3.88.11.83.103' constraints.validation.error='ProblemListSectionTemplateId ProblemListSectionCondition'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProblemListSectionTemplateId ProblemListSectionCondition' templateId.root='2.16.840.1.113883.3.88.11.83.103'"
  * @generated
  */
 public interface ProblemListSection extends ActiveProblemsSection {

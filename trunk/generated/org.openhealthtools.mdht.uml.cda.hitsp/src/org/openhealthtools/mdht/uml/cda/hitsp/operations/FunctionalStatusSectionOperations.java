@@ -81,6 +81,7 @@ public class FunctionalStatusSectionOperations extends
 	 */
 	public static boolean validateHITSPFunctionalStatusSectionTemplateId(
 			FunctionalStatusSection functionalStatusSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_FUNCTIONAL_STATUS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.FUNCTIONAL_STATUS_SECTION);
@@ -99,6 +100,7 @@ public class FunctionalStatusSectionOperations extends
 					HITSPPlugin.INSTANCE.getString("HITSPFunctionalStatusSectionTemplateId"),
 					new Object[] { functionalStatusSection }));
 			}
+
 			return false;
 		}
 		return true;

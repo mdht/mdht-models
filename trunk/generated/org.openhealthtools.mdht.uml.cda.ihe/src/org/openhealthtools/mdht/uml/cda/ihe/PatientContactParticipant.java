@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.ccd.SupportParticipant;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ihe.IHEPackage#getPatientContactParticipant()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation contextDependent='true' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.2.4' constraints.validation.error='PatientContactParticipantTemplateId PatientContactParticipantTypeCode' typeCode='IND' constraints.validation.info='PatientContactParticipantTime'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PatientContactParticipantTemplateId PatientContactParticipantTypeCode' contextDependent='true' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.2.4' constraints.validation.info='PatientContactParticipantTime' typeCode='IND'"
  * @generated
  */
 public interface PatientContactParticipant extends SupportParticipant, PatientContact {

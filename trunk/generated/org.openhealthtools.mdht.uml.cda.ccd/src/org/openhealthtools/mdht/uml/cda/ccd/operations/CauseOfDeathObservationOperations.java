@@ -79,6 +79,7 @@ public class CauseOfDeathObservationOperations extends FamilyHistoryObservationO
 	 */
 	public static boolean validateFamilyHistoryObservationTemplateId(CauseOfDeathObservation causeOfDeathObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_FAMILY_HISTORY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.CAUSE_OF_DEATH_OBSERVATION);
@@ -101,6 +102,7 @@ public class CauseOfDeathObservationOperations extends FamilyHistoryObservationO
 								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
 									causeOfDeathObservation, context) }), new Object[] { causeOfDeathObservation }));
 			}
+
 			return false;
 		}
 		return true;

@@ -10,19 +10,13 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
-
 import org.openhealthtools.mdht.uml.cda.ccd.AgeObservation;
 import org.openhealthtools.mdht.uml.cda.ccd.PatientInstruction;
-
 import org.openhealthtools.mdht.uml.cda.ccd.operations.EncountersActivityOperations;
-
 import org.openhealthtools.mdht.uml.cda.ihe.EncounterActivity;
 import org.openhealthtools.mdht.uml.cda.ihe.IHEPackage;
-
 import org.openhealthtools.mdht.uml.cda.ihe.operations.EncounterActivityOperations;
-
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**

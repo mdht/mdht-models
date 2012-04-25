@@ -78,6 +78,7 @@ public class BreastSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateBreastSectionTemplateId(BreastSection breastSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_BREAST_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.BREAST_SECTION);
@@ -95,6 +96,7 @@ public class BreastSectionOperations extends SectionOperations {
 					IHEValidator.BREAST_SECTION__BREAST_SECTION_TEMPLATE_ID,
 					IHEPlugin.INSTANCE.getString("BreastSectionTemplateId"), new Object[] { breastSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -109,8 +111,8 @@ public class BreastSectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_BREAST_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
-			+ "value.code = '10193-1' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
+			+ "value.code = '10193-1' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateBreastSectionCode(BreastSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Breast Section Code</em>}' invariant operation.
@@ -127,8 +129,8 @@ public class BreastSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in (
-	 * value.code = '10193-1' and value.codeSystem = '2.16.840.1.113883.6.1'))
+	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+	 * value.code = '10193-1' and value.codeSystem = '2.16.840.1.113883.6.1')
 	 * @param breastSection The receiving '<em><b>Breast Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -137,6 +139,7 @@ public class BreastSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateBreastSectionCode(BreastSection breastSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_BREAST_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.BREAST_SECTION);
@@ -152,6 +155,7 @@ public class BreastSectionOperations extends SectionOperations {
 					Diagnostic.ERROR, IHEValidator.DIAGNOSTIC_SOURCE, IHEValidator.BREAST_SECTION__BREAST_SECTION_CODE,
 					IHEPlugin.INSTANCE.getString("BreastSectionCode"), new Object[] { breastSection }));
 			}
+
 			return false;
 		}
 		return true;

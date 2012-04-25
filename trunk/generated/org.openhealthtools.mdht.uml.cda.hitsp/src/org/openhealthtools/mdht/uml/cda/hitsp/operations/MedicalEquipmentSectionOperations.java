@@ -81,6 +81,7 @@ public class MedicalEquipmentSectionOperations extends MedicalDevicesSectionOper
 	 */
 	public static boolean validateHITSPMedicalEquipmentSectionTemplateId(
 			MedicalEquipmentSection medicalEquipmentSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_MEDICAL_EQUIPMENT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.MEDICAL_EQUIPMENT_SECTION);
@@ -99,6 +100,7 @@ public class MedicalEquipmentSectionOperations extends MedicalDevicesSectionOper
 					HITSPPlugin.INSTANCE.getString("HITSPMedicalEquipmentSectionTemplateId"),
 					new Object[] { medicalEquipmentSection }));
 			}
+
 			return false;
 		}
 		return true;

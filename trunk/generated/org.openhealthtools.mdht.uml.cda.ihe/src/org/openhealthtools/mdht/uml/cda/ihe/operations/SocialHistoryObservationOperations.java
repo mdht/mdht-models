@@ -81,6 +81,7 @@ public class SocialHistoryObservationOperations extends SimpleObservationOperati
 	 */
 	public static boolean validateIHESocialHistoryObservationNoRepeatNumber(
 			SocialHistoryObservation socialHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_IHE_SOCIAL_HISTORY_OBSERVATION_NO_REPEAT_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.SOCIAL_HISTORY_OBSERVATION);
@@ -100,6 +101,7 @@ public class SocialHistoryObservationOperations extends SimpleObservationOperati
 					IHEPlugin.INSTANCE.getString("IHESocialHistoryObservationNoRepeatNumber"),
 					new Object[] { socialHistoryObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -138,6 +140,7 @@ public class SocialHistoryObservationOperations extends SimpleObservationOperati
 	 */
 	public static boolean validateIHESocialHistoryObservationNoInterpretationCode(
 			SocialHistoryObservation socialHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_IHE_SOCIAL_HISTORY_OBSERVATION_NO_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.SOCIAL_HISTORY_OBSERVATION);
@@ -157,6 +160,7 @@ public class SocialHistoryObservationOperations extends SimpleObservationOperati
 					IHEPlugin.INSTANCE.getString("IHESocialHistoryObservationNoInterpretationCode"),
 					new Object[] { socialHistoryObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -195,6 +199,7 @@ public class SocialHistoryObservationOperations extends SimpleObservationOperati
 	 */
 	public static boolean validateIHESocialHistoryObservationNoMethodCode(
 			SocialHistoryObservation socialHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_IHE_SOCIAL_HISTORY_OBSERVATION_NO_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.SOCIAL_HISTORY_OBSERVATION);
@@ -214,6 +219,7 @@ public class SocialHistoryObservationOperations extends SimpleObservationOperati
 					IHEPlugin.INSTANCE.getString("IHESocialHistoryObservationNoMethodCode"),
 					new Object[] { socialHistoryObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -252,6 +258,7 @@ public class SocialHistoryObservationOperations extends SimpleObservationOperati
 	 */
 	public static boolean validateIHESocialHistoryObservationNoTargetSiteCode(
 			SocialHistoryObservation socialHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_IHE_SOCIAL_HISTORY_OBSERVATION_NO_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.SOCIAL_HISTORY_OBSERVATION);
@@ -271,6 +278,7 @@ public class SocialHistoryObservationOperations extends SimpleObservationOperati
 					IHEPlugin.INSTANCE.getString("IHESocialHistoryObservationNoTargetSiteCode"),
 					new Object[] { socialHistoryObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -309,6 +317,7 @@ public class SocialHistoryObservationOperations extends SimpleObservationOperati
 	 */
 	public static boolean validateIHESocialHistoryObservationTemplateId(
 			SocialHistoryObservation socialHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_IHE_SOCIAL_HISTORY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.SOCIAL_HISTORY_OBSERVATION);
@@ -327,6 +336,7 @@ public class SocialHistoryObservationOperations extends SimpleObservationOperati
 					IHEPlugin.INSTANCE.getString("IHESocialHistoryObservationTemplateId"),
 					new Object[] { socialHistoryObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -365,6 +375,7 @@ public class SocialHistoryObservationOperations extends SimpleObservationOperati
 	 */
 	public static boolean validateIHESocialHistoryObservationValue(SocialHistoryObservation socialHistoryObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_IHE_SOCIAL_HISTORY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.SOCIAL_HISTORY_OBSERVATION);
@@ -383,6 +394,7 @@ public class SocialHistoryObservationOperations extends SimpleObservationOperati
 					IHEPlugin.INSTANCE.getString("IHESocialHistoryObservationValue"),
 					new Object[] { socialHistoryObservation }));
 			}
+
 			return false;
 		}
 		return true;

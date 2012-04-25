@@ -92,6 +92,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateReactionObservationHasReactionIntervention(ReactionObservation reactionObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_REACTION_OBSERVATION_HAS_REACTION_INTERVENTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.REACTION_OBSERVATION);
@@ -111,6 +112,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 					CCDPlugin.INSTANCE.getString("ReactionObservationHasReactionIntervention"),
 					new Object[] { reactionObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -149,6 +151,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateReactionObservationReactionInterventionTypeCode(
 			ReactionObservation reactionObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_REACTION_OBSERVATION_REACTION_INTERVENTION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.REACTION_OBSERVATION);
@@ -168,6 +171,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 					CCDPlugin.INSTANCE.getString("ReactionObservationReactionInterventionTypeCode"),
 					new Object[] { reactionObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -206,6 +210,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateReactionObservationReactionInterventionType(ReactionObservation reactionObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_REACTION_OBSERVATION_REACTION_INTERVENTION_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.REACTION_OBSERVATION);
@@ -225,6 +230,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 					CCDPlugin.INSTANCE.getString("ReactionObservationReactionInterventionType"),
 					new Object[] { reactionObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -263,6 +269,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateReactionObservationTemplateId(ReactionObservation reactionObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_REACTION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.REACTION_OBSERVATION);
@@ -280,6 +287,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 					CCDValidator.REACTION_OBSERVATION__REACTION_OBSERVATION_TEMPLATE_ID,
 					CCDPlugin.INSTANCE.getString("ReactionObservationTemplateId"), new Object[] { reactionObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -318,6 +326,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateReactionObservationClassCode(ReactionObservation reactionObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_REACTION_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.REACTION_OBSERVATION);
@@ -335,6 +344,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 					CCDValidator.REACTION_OBSERVATION__REACTION_OBSERVATION_CLASS_CODE,
 					CCDPlugin.INSTANCE.getString("ReactionObservationClassCode"), new Object[] { reactionObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -373,6 +383,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateReactionObservationMoodCode(ReactionObservation reactionObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_REACTION_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.REACTION_OBSERVATION);
@@ -390,6 +401,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 					CCDValidator.REACTION_OBSERVATION__REACTION_OBSERVATION_MOOD_CODE,
 					CCDPlugin.INSTANCE.getString("ReactionObservationMoodCode"), new Object[] { reactionObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -404,8 +416,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_REACTION_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "
-			+ "let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in ("
-			+ "value.code = 'completed'))";
+			+ "let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in " + "value.code = 'completed')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateReactionObservationStatusCode(ReactionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reaction Observation Status Code</em>}' invariant operation.
@@ -422,8 +433,8 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
-	 * let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in (
-	 * value.code = 'completed'))
+	 * let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
+	 * value.code = 'completed')
 	 * @param reactionObservation The receiving '<em><b>Reaction Observation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -432,6 +443,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateReactionObservationStatusCode(ReactionObservation reactionObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_REACTION_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.REACTION_OBSERVATION);
@@ -449,6 +461,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 					CCDValidator.REACTION_OBSERVATION__REACTION_OBSERVATION_STATUS_CODE,
 					CCDPlugin.INSTANCE.getString("ReactionObservationStatusCode"), new Object[] { reactionObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -487,6 +500,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateReactionObservationSeverityObservation(ReactionObservation reactionObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_REACTION_OBSERVATION_SEVERITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.REACTION_OBSERVATION);
@@ -505,6 +519,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 					CCDPlugin.INSTANCE.getString("ReactionObservationSeverityObservation"),
 					new Object[] { reactionObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -544,7 +559,7 @@ public class ReactionObservationOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				CCDPackage.Literals.REACTION_OBSERVATION,
-				CCDPackage.Literals.REACTION_OBSERVATION.getEAllOperations().get(57));
+				CCDPackage.Literals.REACTION_OBSERVATION.getEAllOperations().get(59));
 			try {
 				GET_SEVERITY_OBSERVATION__EOCL_QRY = helper.createQuery(GET_SEVERITY_OBSERVATION__EOCL_EXP);
 			} catch (ParserException pe) {

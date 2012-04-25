@@ -27,7 +27,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage#getChiefComplaintSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.3.88.11.83.105' constraints.validation.error='HITSPChiefComplaintSectionTemplateId' constraints.validation.info='HITSPChiefComplaintSectionCondition'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='HITSPChiefComplaintSectionTemplateId' templateId.root='2.16.840.1.113883.3.88.11.83.105' constraints.validation.info='HITSPChiefComplaintSectionCondition'"
  * @generated
  */
 public interface ChiefComplaintSection extends org.openhealthtools.mdht.uml.cda.ihe.ChiefComplaintSection,

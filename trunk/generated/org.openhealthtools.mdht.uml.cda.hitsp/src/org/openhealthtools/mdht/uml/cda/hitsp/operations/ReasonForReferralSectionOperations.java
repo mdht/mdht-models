@@ -92,6 +92,7 @@ public class ReasonForReferralSectionOperations extends CodedReasonForReferralSe
 	 */
 	public static boolean validateHITSPReasonForReferralSectionCondition(
 			ReasonForReferralSection reasonForReferralSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_REASON_FOR_REFERRAL_SECTION_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.REASON_FOR_REFERRAL_SECTION);
@@ -110,6 +111,7 @@ public class ReasonForReferralSectionOperations extends CodedReasonForReferralSe
 					HITSPPlugin.INSTANCE.getString("HITSPReasonForReferralSectionCondition"),
 					new Object[] { reasonForReferralSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -148,6 +150,7 @@ public class ReasonForReferralSectionOperations extends CodedReasonForReferralSe
 	 */
 	public static boolean validateHITSPReasonForReferralSectionResult(
 			ReasonForReferralSection reasonForReferralSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_REASON_FOR_REFERRAL_SECTION_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.REASON_FOR_REFERRAL_SECTION);
@@ -166,6 +169,7 @@ public class ReasonForReferralSectionOperations extends CodedReasonForReferralSe
 					HITSPPlugin.INSTANCE.getString("HITSPReasonForReferralSectionResult"),
 					new Object[] { reasonForReferralSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -298,6 +302,7 @@ public class ReasonForReferralSectionOperations extends CodedReasonForReferralSe
 	 */
 	public static boolean validateCodedReasonForReferralSectionTemplateId(
 			ReasonForReferralSection reasonForReferralSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CODED_REASON_FOR_REFERRAL_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.REASON_FOR_REFERRAL_SECTION);
@@ -321,6 +326,7 @@ public class ReasonForReferralSectionOperations extends CodedReasonForReferralSe
 								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
 									reasonForReferralSection, context) }), new Object[] { reasonForReferralSection }));
 			}
+
 			return false;
 		}
 		return true;

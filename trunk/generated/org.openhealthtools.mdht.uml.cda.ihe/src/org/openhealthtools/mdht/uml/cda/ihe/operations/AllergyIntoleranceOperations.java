@@ -51,6 +51,7 @@ import org.openhealthtools.mdht.uml.cda.ihe.util.IHEValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.ihe.AllergyIntolerance#validateAllergyIntoleranceAllergySubstancePlayingEntityCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Intolerance Allergy Substance Playing Entity Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.ihe.AllergyIntolerance#validateAllergyIntolerancePlayingEntityCodeReference(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Intolerance Playing Entity Code Reference</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.ihe.AllergyIntolerance#validateAllergyIntoleranceTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Intolerance Template Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.ihe.AllergyIntolerance#validateAllergyIntoleranceCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Intolerance Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.ihe.AllergyIntolerance#validateAllergyIntoleranceValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Intolerance Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.ihe.AllergyIntolerance#validateAllergyIntoleranceProblemEntryReactionObservationContainer(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Intolerance Problem Entry Reaction Observation Container</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.ihe.AllergyIntolerance#validateAllergyIntoleranceSeverity(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Intolerance Severity</em>}</li>
@@ -109,6 +110,7 @@ public class AllergyIntoleranceOperations extends ProblemEntryOperations {
 	 */
 	public static boolean validateAllergyIntoleranceCodeCodeSystemRequired(AllergyIntolerance allergyIntolerance,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ALLERGY_INTOLERANCE_CODE_CODE_SYSTEM_REQUIRED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.ALLERGY_INTOLERANCE);
@@ -128,6 +130,7 @@ public class AllergyIntoleranceOperations extends ProblemEntryOperations {
 					IHEPlugin.INSTANCE.getString("AllergyIntoleranceCodeCodeSystemRequired"),
 					new Object[] { allergyIntolerance }));
 			}
+
 			return false;
 		}
 		return true;
@@ -166,6 +169,7 @@ public class AllergyIntoleranceOperations extends ProblemEntryOperations {
 	 */
 	public static boolean validateAllergyIntoleranceDisplayNameCodeName(AllergyIntolerance allergyIntolerance,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ALLERGY_INTOLERANCE_DISPLAY_NAME_CODE_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.ALLERGY_INTOLERANCE);
@@ -184,6 +188,7 @@ public class AllergyIntoleranceOperations extends ProblemEntryOperations {
 					IHEPlugin.INSTANCE.getString("AllergyIntoleranceDisplayNameCodeName"),
 					new Object[] { allergyIntolerance }));
 			}
+
 			return false;
 		}
 		return true;
@@ -222,6 +227,7 @@ public class AllergyIntoleranceOperations extends ProblemEntryOperations {
 	 */
 	public static boolean validateAllergyIntoleranceAllergySubstance(AllergyIntolerance allergyIntolerance,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ALLERGY_INTOLERANCE_ALLERGY_SUBSTANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.ALLERGY_INTOLERANCE);
@@ -240,6 +246,7 @@ public class AllergyIntoleranceOperations extends ProblemEntryOperations {
 					IHEPlugin.INSTANCE.getString("AllergyIntoleranceAllergySubstance"),
 					new Object[] { allergyIntolerance }));
 			}
+
 			return false;
 		}
 		return true;
@@ -278,6 +285,7 @@ public class AllergyIntoleranceOperations extends ProblemEntryOperations {
 	 */
 	public static boolean validateAllergyIntoleranceAllergySubstanceTypeCode(AllergyIntolerance allergyIntolerance,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ALLERGY_INTOLERANCE_ALLERGY_SUBSTANCE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.ALLERGY_INTOLERANCE);
@@ -297,6 +305,7 @@ public class AllergyIntoleranceOperations extends ProblemEntryOperations {
 					IHEPlugin.INSTANCE.getString("AllergyIntoleranceAllergySubstanceTypeCode"),
 					new Object[] { allergyIntolerance }));
 			}
+
 			return false;
 		}
 		return true;
@@ -335,6 +344,7 @@ public class AllergyIntoleranceOperations extends ProblemEntryOperations {
 	 */
 	public static boolean validateAllergyIntoleranceAllergySubstanceParticipantRole(
 			AllergyIntolerance allergyIntolerance, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ALLERGY_INTOLERANCE_ALLERGY_SUBSTANCE_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.ALLERGY_INTOLERANCE);
@@ -354,6 +364,7 @@ public class AllergyIntoleranceOperations extends ProblemEntryOperations {
 					IHEPlugin.INSTANCE.getString("AllergyIntoleranceAllergySubstanceParticipantRole"),
 					new Object[] { allergyIntolerance }));
 			}
+
 			return false;
 		}
 		return true;
@@ -392,6 +403,7 @@ public class AllergyIntoleranceOperations extends ProblemEntryOperations {
 	 */
 	public static boolean validateAllergyIntoleranceAllergySubstanceParticipantRoleClassCode(
 			AllergyIntolerance allergyIntolerance, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ALLERGY_INTOLERANCE_ALLERGY_SUBSTANCE_PARTICIPANT_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.ALLERGY_INTOLERANCE);
@@ -412,6 +424,7 @@ public class AllergyIntoleranceOperations extends ProblemEntryOperations {
 					IHEPlugin.INSTANCE.getString("AllergyIntoleranceAllergySubstanceParticipantRoleClassCode"),
 					new Object[] { allergyIntolerance }));
 			}
+
 			return false;
 		}
 		return true;
@@ -450,6 +463,7 @@ public class AllergyIntoleranceOperations extends ProblemEntryOperations {
 	 */
 	public static boolean validateAllergyIntoleranceAllergySubstancePlayingEntity(
 			AllergyIntolerance allergyIntolerance, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ALLERGY_INTOLERANCE_ALLERGY_SUBSTANCE_PLAYING_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.ALLERGY_INTOLERANCE);
@@ -469,6 +483,7 @@ public class AllergyIntoleranceOperations extends ProblemEntryOperations {
 					IHEPlugin.INSTANCE.getString("AllergyIntoleranceAllergySubstancePlayingEntity"),
 					new Object[] { allergyIntolerance }));
 			}
+
 			return false;
 		}
 		return true;
@@ -507,6 +522,7 @@ public class AllergyIntoleranceOperations extends ProblemEntryOperations {
 	 */
 	public static boolean validateAllergyIntoleranceAllergySubstancePlayingEntityClassCode(
 			AllergyIntolerance allergyIntolerance, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ALLERGY_INTOLERANCE_ALLERGY_SUBSTANCE_PLAYING_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.ALLERGY_INTOLERANCE);
@@ -526,6 +542,7 @@ public class AllergyIntoleranceOperations extends ProblemEntryOperations {
 					IHEPlugin.INSTANCE.getString("AllergyIntoleranceAllergySubstancePlayingEntityClassCode"),
 					new Object[] { allergyIntolerance }));
 			}
+
 			return false;
 		}
 		return true;
@@ -564,6 +581,7 @@ public class AllergyIntoleranceOperations extends ProblemEntryOperations {
 	 */
 	public static boolean validateAllergyIntoleranceAllergySubstancePlayingEntityCode(
 			AllergyIntolerance allergyIntolerance, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ALLERGY_INTOLERANCE_ALLERGY_SUBSTANCE_PLAYING_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.ALLERGY_INTOLERANCE);
@@ -583,6 +601,7 @@ public class AllergyIntoleranceOperations extends ProblemEntryOperations {
 					IHEPlugin.INSTANCE.getString("AllergyIntoleranceAllergySubstancePlayingEntityCode"),
 					new Object[] { allergyIntolerance }));
 			}
+
 			return false;
 		}
 		return true;
@@ -621,6 +640,7 @@ public class AllergyIntoleranceOperations extends ProblemEntryOperations {
 	 */
 	public static boolean validateAllergyIntolerancePlayingEntityCodeReference(AllergyIntolerance allergyIntolerance,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ALLERGY_INTOLERANCE_PLAYING_ENTITY_CODE_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.ALLERGY_INTOLERANCE);
@@ -640,6 +660,7 @@ public class AllergyIntoleranceOperations extends ProblemEntryOperations {
 					IHEPlugin.INSTANCE.getString("AllergyIntolerancePlayingEntityCodeReference"),
 					new Object[] { allergyIntolerance }));
 			}
+
 			return false;
 		}
 		return true;
@@ -678,6 +699,7 @@ public class AllergyIntoleranceOperations extends ProblemEntryOperations {
 	 */
 	public static boolean validateAllergyIntoleranceTemplateId(AllergyIntolerance allergyIntolerance,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ALLERGY_INTOLERANCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.ALLERGY_INTOLERANCE);
@@ -695,6 +717,78 @@ public class AllergyIntoleranceOperations extends ProblemEntryOperations {
 					IHEValidator.ALLERGY_INTOLERANCE__ALLERGY_INTOLERANCE_TEMPLATE_ID,
 					IHEPlugin.INSTANCE.getString("AllergyIntoleranceTemplateId"), new Object[] { allergyIntolerance }));
 			}
+
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateAllergyIntoleranceCode(AllergyIntolerance, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Intolerance Code</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateAllergyIntoleranceCode(AllergyIntolerance, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_ALLERGY_INTOLERANCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateAllergyIntoleranceCode(AllergyIntolerance, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergy Intolerance Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateAllergyIntoleranceCode(AllergyIntolerance, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_ALLERGY_INTOLERANCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
+	 * @param allergyIntolerance The receiving '<em><b>Allergy Intolerance</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validateAllergyIntoleranceCode(AllergyIntolerance allergyIntolerance,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+		if (VALIDATE_ALLERGY_INTOLERANCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(IHEPackage.Literals.ALLERGY_INTOLERANCE);
+			try {
+				VALIDATE_ALLERGY_INTOLERANCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGY_INTOLERANCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGY_INTOLERANCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			allergyIntolerance)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, IHEValidator.DIAGNOSTIC_SOURCE,
+					IHEValidator.ALLERGY_INTOLERANCE__ALLERGY_INTOLERANCE_CODE,
+					IHEPlugin.INSTANCE.getString("AllergyIntoleranceCode"), new Object[] { allergyIntolerance }));
+			}
+
+			if (context != null) {
+				// generate a pass token for my dependent constraints to short-circuit or filter results
+				@SuppressWarnings("unchecked")
+				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.ihe.AllergyIntoleranceCode");
+				if (passToken == null) {
+					// anticipate a reasonably healthy model
+					passToken = new java.util.ArrayList<Object>(3);
+					context.put("org.openhealthtools.mdht.uml.cda.ihe.AllergyIntoleranceCode", passToken);
+				}
+				passToken.add(allergyIntolerance);
+			}
+
 			return false;
 		}
 		return true;
@@ -733,6 +827,7 @@ public class AllergyIntoleranceOperations extends ProblemEntryOperations {
 	 */
 	public static boolean validateAllergyIntoleranceValue(AllergyIntolerance allergyIntolerance,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ALLERGY_INTOLERANCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.ALLERGY_INTOLERANCE);
@@ -750,6 +845,7 @@ public class AllergyIntoleranceOperations extends ProblemEntryOperations {
 					IHEValidator.ALLERGY_INTOLERANCE__ALLERGY_INTOLERANCE_VALUE,
 					IHEPlugin.INSTANCE.getString("AllergyIntoleranceValue"), new Object[] { allergyIntolerance }));
 			}
+
 			return false;
 		}
 		return true;
@@ -788,6 +884,7 @@ public class AllergyIntoleranceOperations extends ProblemEntryOperations {
 	 */
 	public static boolean validateAllergyIntoleranceProblemEntryReactionObservationContainer(
 			AllergyIntolerance allergyIntolerance, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ALLERGY_INTOLERANCE_PROBLEM_ENTRY_REACTION_OBSERVATION_CONTAINER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.ALLERGY_INTOLERANCE);
@@ -807,6 +904,7 @@ public class AllergyIntoleranceOperations extends ProblemEntryOperations {
 					IHEPlugin.INSTANCE.getString("AllergyIntoleranceProblemEntryReactionObservationContainer"),
 					new Object[] { allergyIntolerance }));
 			}
+
 			return false;
 		}
 		return true;
@@ -845,6 +943,7 @@ public class AllergyIntoleranceOperations extends ProblemEntryOperations {
 	 */
 	public static boolean validateAllergyIntoleranceSeverity(AllergyIntolerance allergyIntolerance,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ALLERGY_INTOLERANCE_SEVERITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.ALLERGY_INTOLERANCE);
@@ -862,6 +961,7 @@ public class AllergyIntoleranceOperations extends ProblemEntryOperations {
 					IHEValidator.ALLERGY_INTOLERANCE__ALLERGY_INTOLERANCE_SEVERITY,
 					IHEPlugin.INSTANCE.getString("AllergyIntoleranceSeverity"), new Object[] { allergyIntolerance }));
 			}
+
 			return false;
 		}
 		return true;
@@ -900,6 +1000,7 @@ public class AllergyIntoleranceOperations extends ProblemEntryOperations {
 	 */
 	public static boolean validateAllergyIntoleranceProblemStatusObservation(AllergyIntolerance allergyIntolerance,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ALLERGY_INTOLERANCE_PROBLEM_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.ALLERGY_INTOLERANCE);
@@ -919,6 +1020,7 @@ public class AllergyIntoleranceOperations extends ProblemEntryOperations {
 					IHEPlugin.INSTANCE.getString("AllergyIntoleranceProblemStatusObservation"),
 					new Object[] { allergyIntolerance }));
 			}
+
 			return false;
 		}
 		return true;
@@ -957,6 +1059,7 @@ public class AllergyIntoleranceOperations extends ProblemEntryOperations {
 	 */
 	public static boolean validateAllergyIntoleranceComment(AllergyIntolerance allergyIntolerance,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ALLERGY_INTOLERANCE_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.ALLERGY_INTOLERANCE);
@@ -974,6 +1077,7 @@ public class AllergyIntoleranceOperations extends ProblemEntryOperations {
 					IHEValidator.ALLERGY_INTOLERANCE__ALLERGY_INTOLERANCE_COMMENT,
 					IHEPlugin.INSTANCE.getString("AllergyIntoleranceComment"), new Object[] { allergyIntolerance }));
 			}
+
 			return false;
 		}
 		return true;
@@ -1014,7 +1118,7 @@ public class AllergyIntoleranceOperations extends ProblemEntryOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				IHEPackage.Literals.ALLERGY_INTOLERANCE,
-				IHEPackage.Literals.ALLERGY_INTOLERANCE.getEAllOperations().get(93));
+				IHEPackage.Literals.ALLERGY_INTOLERANCE.getEAllOperations().get(97));
 			try {
 				GET_PROBLEM_ENTRY_REACTION_OBSERVATION_CONTAINERS__EOCL_QRY = helper.createQuery(GET_PROBLEM_ENTRY_REACTION_OBSERVATION_CONTAINERS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1062,7 +1166,7 @@ public class AllergyIntoleranceOperations extends ProblemEntryOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				IHEPackage.Literals.ALLERGY_INTOLERANCE,
-				IHEPackage.Literals.ALLERGY_INTOLERANCE.getEAllOperations().get(94));
+				IHEPackage.Literals.ALLERGY_INTOLERANCE.getEAllOperations().get(98));
 			try {
 				GET_IHE_SEVERITY__EOCL_QRY = helper.createQuery(GET_IHE_SEVERITY__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1107,7 +1211,7 @@ public class AllergyIntoleranceOperations extends ProblemEntryOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				IHEPackage.Literals.ALLERGY_INTOLERANCE,
-				IHEPackage.Literals.ALLERGY_INTOLERANCE.getEAllOperations().get(95));
+				IHEPackage.Literals.ALLERGY_INTOLERANCE.getEAllOperations().get(99));
 			try {
 				GET_IHE_PROBLEM_STATUS_OBSERVATION__EOCL_QRY = helper.createQuery(GET_IHE_PROBLEM_STATUS_OBSERVATION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1152,7 +1256,7 @@ public class AllergyIntoleranceOperations extends ProblemEntryOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				IHEPackage.Literals.ALLERGY_INTOLERANCE,
-				IHEPackage.Literals.ALLERGY_INTOLERANCE.getEAllOperations().get(96));
+				IHEPackage.Literals.ALLERGY_INTOLERANCE.getEAllOperations().get(100));
 			try {
 				GET_IHE_COMMENTS__EOCL_QRY = helper.createQuery(GET_IHE_COMMENTS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1174,8 +1278,8 @@ public class AllergyIntoleranceOperations extends ProblemEntryOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_PROBLEM_ENTRY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in ("
-			+ "value.codeSystem = '2.16.840.1.113883.5.4'))";
+			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
+			+ "value.codeSystem = '2.16.840.1.113883.5.4')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateProblemEntryCode(AllergyIntolerance, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Entry Code</em>}' invariant operation.
@@ -1192,8 +1296,8 @@ public class AllergyIntoleranceOperations extends ProblemEntryOperations {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
-	 * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (
-	 * value.codeSystem = '2.16.840.1.113883.5.4'))
+	 * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+	 * value.codeSystem = '2.16.840.1.113883.5.4')
 	 * @param allergyIntolerance The receiving '<em><b>Allergy Intolerance</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -1202,6 +1306,15 @@ public class AllergyIntoleranceOperations extends ProblemEntryOperations {
 	 */
 	public static boolean validateProblemEntryCode(AllergyIntolerance allergyIntolerance, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.ihe.AllergyIntoleranceCode");
+		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(allergyIntolerance)) {
+			// I have a free pass to short-circuit
+			return true;
+		}
+
 		if (VALIDATE_PROBLEM_ENTRY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.ALLERGY_INTOLERANCE);
@@ -1218,6 +1331,7 @@ public class AllergyIntoleranceOperations extends ProblemEntryOperations {
 					IHEValidator.ALLERGY_INTOLERANCE__PROBLEM_ENTRY_CODE,
 					IHEPlugin.INSTANCE.getString("ProblemEntryCode"), new Object[] { allergyIntolerance }));
 			}
+
 			return false;
 		}
 		return true;

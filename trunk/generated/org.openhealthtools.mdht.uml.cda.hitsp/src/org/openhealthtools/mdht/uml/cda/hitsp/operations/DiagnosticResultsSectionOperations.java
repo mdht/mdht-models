@@ -96,6 +96,7 @@ public class DiagnosticResultsSectionOperations extends CodedResultsSectionOpera
 	 */
 	public static boolean validateDiagnosticResultsSectionHasResult(DiagnosticResultsSection diagnosticResultsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_DIAGNOSTIC_RESULTS_SECTION_HAS_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.DIAGNOSTIC_RESULTS_SECTION);
@@ -114,6 +115,7 @@ public class DiagnosticResultsSectionOperations extends CodedResultsSectionOpera
 					HITSPPlugin.INSTANCE.getString("DiagnosticResultsSectionHasResult"),
 					new Object[] { diagnosticResultsSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -152,6 +154,7 @@ public class DiagnosticResultsSectionOperations extends CodedResultsSectionOpera
 	 */
 	public static boolean validateDiagnosticResultsSectionTemplateId(DiagnosticResultsSection diagnosticResultsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_DIAGNOSTIC_RESULTS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.DIAGNOSTIC_RESULTS_SECTION);
@@ -170,6 +173,7 @@ public class DiagnosticResultsSectionOperations extends CodedResultsSectionOpera
 					HITSPPlugin.INSTANCE.getString("DiagnosticResultsSectionTemplateId"),
 					new Object[] { diagnosticResultsSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -208,6 +212,7 @@ public class DiagnosticResultsSectionOperations extends CodedResultsSectionOpera
 	 */
 	public static boolean validateDiagnosticResultsSectionDiagnosticProcedure(
 			DiagnosticResultsSection diagnosticResultsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_DIAGNOSTIC_RESULTS_SECTION_DIAGNOSTIC_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.DIAGNOSTIC_RESULTS_SECTION);
@@ -227,6 +232,7 @@ public class DiagnosticResultsSectionOperations extends CodedResultsSectionOpera
 					HITSPPlugin.INSTANCE.getString("DiagnosticResultsSectionDiagnosticProcedure"),
 					new Object[] { diagnosticResultsSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -265,6 +271,7 @@ public class DiagnosticResultsSectionOperations extends CodedResultsSectionOpera
 	 */
 	public static boolean validateDiagnosticResultsSectionResult(DiagnosticResultsSection diagnosticResultsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_DIAGNOSTIC_RESULTS_SECTION_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.DIAGNOSTIC_RESULTS_SECTION);
@@ -283,6 +290,7 @@ public class DiagnosticResultsSectionOperations extends CodedResultsSectionOpera
 					HITSPPlugin.INSTANCE.getString("DiagnosticResultsSectionResult"),
 					new Object[] { diagnosticResultsSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -321,6 +329,7 @@ public class DiagnosticResultsSectionOperations extends CodedResultsSectionOpera
 	 */
 	public static boolean validateDiagnosticResultsSectionResultOrganizer(
 			DiagnosticResultsSection diagnosticResultsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_DIAGNOSTIC_RESULTS_SECTION_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.DIAGNOSTIC_RESULTS_SECTION);
@@ -339,6 +348,7 @@ public class DiagnosticResultsSectionOperations extends CodedResultsSectionOpera
 					HITSPPlugin.INSTANCE.getString("DiagnosticResultsSectionResultOrganizer"),
 					new Object[] { diagnosticResultsSection }));
 			}
+
 			return false;
 		}
 		return true;
