@@ -84,6 +84,7 @@ public class MedicalSummaryOperations extends MedicalDocumentOperations {
 	 */
 	public static boolean validateMedicalSummaryProblemConcernEntry(MedicalSummary medicalSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICAL_SUMMARY_PROBLEM_CONCERN_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.MEDICAL_SUMMARY);
@@ -101,6 +102,7 @@ public class MedicalSummaryOperations extends MedicalDocumentOperations {
 					IHEValidator.MEDICAL_SUMMARY__MEDICAL_SUMMARY_PROBLEM_CONCERN_ENTRY,
 					IHEPlugin.INSTANCE.getString("MedicalSummaryProblemConcernEntry"), new Object[] { medicalSummary }));
 			}
+
 			return false;
 		}
 		return true;
@@ -139,6 +141,7 @@ public class MedicalSummaryOperations extends MedicalDocumentOperations {
 	 */
 	public static boolean validateMedicalSummaryAllergyConcernEntry(MedicalSummary medicalSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICAL_SUMMARY_ALLERGY_CONCERN_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.MEDICAL_SUMMARY);
@@ -156,6 +159,7 @@ public class MedicalSummaryOperations extends MedicalDocumentOperations {
 					IHEValidator.MEDICAL_SUMMARY__MEDICAL_SUMMARY_ALLERGY_CONCERN_ENTRY,
 					IHEPlugin.INSTANCE.getString("MedicalSummaryAllergyConcernEntry"), new Object[] { medicalSummary }));
 			}
+
 			return false;
 		}
 		return true;
@@ -194,6 +198,7 @@ public class MedicalSummaryOperations extends MedicalDocumentOperations {
 	 */
 	public static boolean validateMedicalSummaryMedications(MedicalSummary medicalSummary, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICAL_SUMMARY_MEDICATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.MEDICAL_SUMMARY);
@@ -211,6 +216,7 @@ public class MedicalSummaryOperations extends MedicalDocumentOperations {
 					IHEValidator.MEDICAL_SUMMARY__MEDICAL_SUMMARY_MEDICATIONS,
 					IHEPlugin.INSTANCE.getString("MedicalSummaryMedications"), new Object[] { medicalSummary }));
 			}
+
 			return false;
 		}
 		return true;
@@ -249,6 +255,7 @@ public class MedicalSummaryOperations extends MedicalDocumentOperations {
 	 */
 	public static boolean validateMedicalSummaryTemplateId(MedicalSummary medicalSummary, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICAL_SUMMARY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.MEDICAL_SUMMARY);
@@ -266,6 +273,7 @@ public class MedicalSummaryOperations extends MedicalDocumentOperations {
 					IHEValidator.MEDICAL_SUMMARY__MEDICAL_SUMMARY_TEMPLATE_ID,
 					IHEPlugin.INSTANCE.getString("MedicalSummaryTemplateId"), new Object[] { medicalSummary }));
 			}
+
 			return false;
 		}
 		return true;
@@ -280,8 +288,8 @@ public class MedicalSummaryOperations extends MedicalDocumentOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
-			+ "value.codeSystem = '2.16.840.1.113883.6.1'))";
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
+			+ "value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsCode(MedicalSummary, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Code</em>}' invariant operation.
@@ -298,8 +306,8 @@ public class MedicalSummaryOperations extends MedicalDocumentOperations {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in (
-	 * value.codeSystem = '2.16.840.1.113883.6.1'))
+	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+	 * value.codeSystem = '2.16.840.1.113883.6.1')
 	 * @param medicalSummary The receiving '<em><b>Medical Summary</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -308,6 +316,7 @@ public class MedicalSummaryOperations extends MedicalDocumentOperations {
 	 */
 	public static boolean validateGeneralHeaderConstraintsCode(MedicalSummary medicalSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.MEDICAL_SUMMARY);
@@ -325,6 +334,7 @@ public class MedicalSummaryOperations extends MedicalDocumentOperations {
 					IHEValidator.MEDICAL_SUMMARY__GENERAL_HEADER_CONSTRAINTS_CODE,
 					IHEPlugin.INSTANCE.getString("GeneralHeaderConstraintsCode"), new Object[] { medicalSummary }));
 			}
+
 			return false;
 		}
 		return true;

@@ -81,6 +81,7 @@ public class MedicalDocumentOperations extends GeneralHeaderConstraintsOperation
 	 */
 	public static boolean validateMedicalDocumentTemplateId(MedicalDocument medicalDocument,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICAL_DOCUMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.MEDICAL_DOCUMENT);
@@ -98,6 +99,7 @@ public class MedicalDocumentOperations extends GeneralHeaderConstraintsOperation
 					IHEValidator.MEDICAL_DOCUMENT__MEDICAL_DOCUMENT_TEMPLATE_ID,
 					IHEPlugin.INSTANCE.getString("MedicalDocumentTemplateId"), new Object[] { medicalDocument }));
 			}
+
 			return false;
 		}
 		return true;

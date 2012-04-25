@@ -81,6 +81,7 @@ public class SurgeriesSectionOperations extends ProceduresSectionOperations {
 	 */
 	public static boolean validateSurgeriesSectionTemplateId(SurgeriesSection surgeriesSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_SURGERIES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.SURGERIES_SECTION);
@@ -98,6 +99,7 @@ public class SurgeriesSectionOperations extends ProceduresSectionOperations {
 					IHEValidator.SURGERIES_SECTION__SURGERIES_SECTION_TEMPLATE_ID,
 					IHEPlugin.INSTANCE.getString("SurgeriesSectionTemplateId"), new Object[] { surgeriesSection }));
 			}
+
 			return false;
 		}
 		return true;

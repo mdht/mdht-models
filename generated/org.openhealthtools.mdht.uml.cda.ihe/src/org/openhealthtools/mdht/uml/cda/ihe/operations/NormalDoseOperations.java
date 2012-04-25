@@ -82,6 +82,7 @@ public class NormalDoseOperations extends MedicationOperations {
 	 */
 	public static boolean validateNormalDoseNoSubordinateSubstanceAdministration(NormalDose normalDose,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_NORMAL_DOSE_NO_SUBORDINATE_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.NORMAL_DOSE);
@@ -101,6 +102,7 @@ public class NormalDoseOperations extends MedicationOperations {
 					IHEPlugin.INSTANCE.getString("NormalDoseNoSubordinateSubstanceAdministration"),
 					new Object[] { normalDose }));
 			}
+
 			return false;
 		}
 		return true;
@@ -139,6 +141,7 @@ public class NormalDoseOperations extends MedicationOperations {
 	 */
 	public static boolean validateNormalDoseTemplateId(NormalDose normalDose, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_NORMAL_DOSE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.NORMAL_DOSE);
@@ -155,6 +158,7 @@ public class NormalDoseOperations extends MedicationOperations {
 					IHEValidator.NORMAL_DOSE__NORMAL_DOSE_TEMPLATE_ID,
 					IHEPlugin.INSTANCE.getString("NormalDoseTemplateId"), new Object[] { normalDose }));
 			}
+
 			return false;
 		}
 		return true;

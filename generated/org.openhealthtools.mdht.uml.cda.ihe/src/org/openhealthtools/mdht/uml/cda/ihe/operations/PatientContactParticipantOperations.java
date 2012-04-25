@@ -84,6 +84,7 @@ public class PatientContactParticipantOperations extends Participant1Operations 
 	public static boolean validatePatientContactParticipantTemplateId(
 			PatientContactParticipant patientContactParticipant, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PATIENT_CONTACT_PARTICIPANT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.PATIENT_CONTACT_PARTICIPANT);
@@ -102,6 +103,7 @@ public class PatientContactParticipantOperations extends Participant1Operations 
 					IHEPlugin.INSTANCE.getString("PatientContactParticipantTemplateId"),
 					new Object[] { patientContactParticipant }));
 			}
+
 			return false;
 		}
 		return true;
@@ -140,6 +142,7 @@ public class PatientContactParticipantOperations extends Participant1Operations 
 	 */
 	public static boolean validatePatientContactParticipantTime(PatientContactParticipant patientContactParticipant,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PATIENT_CONTACT_PARTICIPANT_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.PATIENT_CONTACT_PARTICIPANT);
@@ -158,6 +161,7 @@ public class PatientContactParticipantOperations extends Participant1Operations 
 					IHEPlugin.INSTANCE.getString("PatientContactParticipantTime"),
 					new Object[] { patientContactParticipant }));
 			}
+
 			return false;
 		}
 		return true;
@@ -197,6 +201,7 @@ public class PatientContactParticipantOperations extends Participant1Operations 
 	public static boolean validatePatientContactParticipantTypeCode(
 			PatientContactParticipant patientContactParticipant, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PATIENT_CONTACT_PARTICIPANT_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.PATIENT_CONTACT_PARTICIPANT);
@@ -215,6 +220,7 @@ public class PatientContactParticipantOperations extends Participant1Operations 
 					IHEPlugin.INSTANCE.getString("PatientContactParticipantTypeCode"),
 					new Object[] { patientContactParticipant }));
 			}
+
 			return false;
 		}
 		return true;

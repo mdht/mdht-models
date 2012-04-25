@@ -79,6 +79,7 @@ public class HospitalDischargePhysicalOperations extends SectionOperations {
 	public static boolean validateHospitalDischargePhysicalTemplateId(
 			HospitalDischargePhysical hospitalDischargePhysical, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_HOSPITAL_DISCHARGE_PHYSICAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.HOSPITAL_DISCHARGE_PHYSICAL);
@@ -97,6 +98,7 @@ public class HospitalDischargePhysicalOperations extends SectionOperations {
 					IHEPlugin.INSTANCE.getString("HospitalDischargePhysicalTemplateId"),
 					new Object[] { hospitalDischargePhysical }));
 			}
+
 			return false;
 		}
 		return true;
@@ -111,8 +113,8 @@ public class HospitalDischargePhysicalOperations extends SectionOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_HOSPITAL_DISCHARGE_PHYSICAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
-			+ "value.code = '10184-0' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
+			+ "value.code = '10184-0' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateHospitalDischargePhysicalCode(HospitalDischargePhysical, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Hospital Discharge Physical Code</em>}' invariant operation.
@@ -129,8 +131,8 @@ public class HospitalDischargePhysicalOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in (
-	 * value.code = '10184-0' and value.codeSystem = '2.16.840.1.113883.6.1'))
+	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+	 * value.code = '10184-0' and value.codeSystem = '2.16.840.1.113883.6.1')
 	 * @param hospitalDischargePhysical The receiving '<em><b>Hospital Discharge Physical</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -139,6 +141,7 @@ public class HospitalDischargePhysicalOperations extends SectionOperations {
 	 */
 	public static boolean validateHospitalDischargePhysicalCode(HospitalDischargePhysical hospitalDischargePhysical,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_HOSPITAL_DISCHARGE_PHYSICAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.HOSPITAL_DISCHARGE_PHYSICAL);
@@ -157,6 +160,7 @@ public class HospitalDischargePhysicalOperations extends SectionOperations {
 					IHEPlugin.INSTANCE.getString("HospitalDischargePhysicalCode"),
 					new Object[] { hospitalDischargePhysical }));
 			}
+
 			return false;
 		}
 		return true;

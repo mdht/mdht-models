@@ -89,6 +89,7 @@ public class EncounterHistorySectionOperations extends EncountersSectionOperatio
 	 */
 	public static boolean validateEncounterHistorySectionTemplateId(EncounterHistorySection encounterHistorySection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ENCOUNTER_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.ENCOUNTER_HISTORY_SECTION);
@@ -107,6 +108,7 @@ public class EncounterHistorySectionOperations extends EncountersSectionOperatio
 					IHEPlugin.INSTANCE.getString("EncounterHistorySectionTemplateId"),
 					new Object[] { encounterHistorySection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -145,6 +147,7 @@ public class EncounterHistorySectionOperations extends EncountersSectionOperatio
 	 */
 	public static boolean validateEncounterHistorySectionEncounterEntry(
 			EncounterHistorySection encounterHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ENCOUNTER_HISTORY_SECTION_ENCOUNTER_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.ENCOUNTER_HISTORY_SECTION);
@@ -163,6 +166,7 @@ public class EncounterHistorySectionOperations extends EncountersSectionOperatio
 					IHEPlugin.INSTANCE.getString("EncounterHistorySectionEncounterEntry"),
 					new Object[] { encounterHistorySection }));
 			}
+
 			return false;
 		}
 		return true;

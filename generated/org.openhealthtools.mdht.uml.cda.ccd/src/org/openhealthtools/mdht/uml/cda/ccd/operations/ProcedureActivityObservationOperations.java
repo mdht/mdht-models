@@ -109,6 +109,7 @@ public class ProcedureActivityObservationOperations extends ClinicalStatementOpe
 	public static boolean validateProcedureActivityObservationTemplateId(
 			ProcedureActivityObservation procedureActivityObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PROCEDURE_ACTIVITY_OBSERVATION);
@@ -127,6 +128,7 @@ public class ProcedureActivityObservationOperations extends ClinicalStatementOpe
 					CCDPlugin.INSTANCE.getString("ProcedureActivityObservationTemplateId"),
 					new Object[] { procedureActivityObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -166,6 +168,7 @@ public class ProcedureActivityObservationOperations extends ClinicalStatementOpe
 	public static boolean validateProcedureActivityObservationMoodCode(
 			ProcedureActivityObservation procedureActivityObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PROCEDURE_ACTIVITY_OBSERVATION);
@@ -184,6 +187,7 @@ public class ProcedureActivityObservationOperations extends ClinicalStatementOpe
 					CCDPlugin.INSTANCE.getString("ProcedureActivityObservationMoodCode"),
 					new Object[] { procedureActivityObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -223,6 +227,7 @@ public class ProcedureActivityObservationOperations extends ClinicalStatementOpe
 	public static boolean validateProcedureActivityObservationCode(
 			ProcedureActivityObservation procedureActivityObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PROCEDURE_ACTIVITY_OBSERVATION);
@@ -241,6 +246,7 @@ public class ProcedureActivityObservationOperations extends ClinicalStatementOpe
 					CCDPlugin.INSTANCE.getString("ProcedureActivityObservationCode"),
 					new Object[] { procedureActivityObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -280,6 +286,7 @@ public class ProcedureActivityObservationOperations extends ClinicalStatementOpe
 	public static boolean validateProcedureActivityObservationEffectiveTime(
 			ProcedureActivityObservation procedureActivityObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PROCEDURE_ACTIVITY_OBSERVATION);
@@ -299,6 +306,7 @@ public class ProcedureActivityObservationOperations extends ClinicalStatementOpe
 					CCDPlugin.INSTANCE.getString("ProcedureActivityObservationEffectiveTime"),
 					new Object[] { procedureActivityObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -338,6 +346,7 @@ public class ProcedureActivityObservationOperations extends ClinicalStatementOpe
 	public static boolean validateProcedureActivityObservationId(
 			ProcedureActivityObservation procedureActivityObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PROCEDURE_ACTIVITY_OBSERVATION);
@@ -356,6 +365,7 @@ public class ProcedureActivityObservationOperations extends ClinicalStatementOpe
 					CCDPlugin.INSTANCE.getString("ProcedureActivityObservationId"),
 					new Object[] { procedureActivityObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -395,6 +405,7 @@ public class ProcedureActivityObservationOperations extends ClinicalStatementOpe
 	public static boolean validateProcedureActivityObservationStatusCode(
 			ProcedureActivityObservation procedureActivityObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PROCEDURE_ACTIVITY_OBSERVATION);
@@ -413,6 +424,7 @@ public class ProcedureActivityObservationOperations extends ClinicalStatementOpe
 					CCDPlugin.INSTANCE.getString("ProcedureActivityObservationStatusCode"),
 					new Object[] { procedureActivityObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -454,6 +466,7 @@ public class ProcedureActivityObservationOperations extends ClinicalStatementOpe
 	public static boolean validateProcedureActivityObservationEncounterLocation(
 			ProcedureActivityObservation procedureActivityObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_ENCOUNTER_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PROCEDURE_ACTIVITY_OBSERVATION);
@@ -473,6 +486,7 @@ public class ProcedureActivityObservationOperations extends ClinicalStatementOpe
 					CCDPlugin.INSTANCE.getString("ProcedureActivityObservationEncounterLocation"),
 					new Object[] { procedureActivityObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -514,6 +528,7 @@ public class ProcedureActivityObservationOperations extends ClinicalStatementOpe
 	public static boolean validateProcedureActivityObservationPerformer2(
 			ProcedureActivityObservation procedureActivityObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_PERFORMER2__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PROCEDURE_ACTIVITY_OBSERVATION);
@@ -532,6 +547,7 @@ public class ProcedureActivityObservationOperations extends ClinicalStatementOpe
 					CCDPlugin.INSTANCE.getString("ProcedureActivityObservationPerformer2"),
 					new Object[] { procedureActivityObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -571,6 +587,7 @@ public class ProcedureActivityObservationOperations extends ClinicalStatementOpe
 	public static boolean validateProcedureActivityObservationProblemObservation(
 			ProcedureActivityObservation procedureActivityObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_PROBLEM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PROCEDURE_ACTIVITY_OBSERVATION);
@@ -590,6 +607,7 @@ public class ProcedureActivityObservationOperations extends ClinicalStatementOpe
 					CCDPlugin.INSTANCE.getString("ProcedureActivityObservationProblemObservation"),
 					new Object[] { procedureActivityObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -629,6 +647,7 @@ public class ProcedureActivityObservationOperations extends ClinicalStatementOpe
 	public static boolean validateProcedureActivityObservationAgeObservation(
 			ProcedureActivityObservation procedureActivityObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_AGE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PROCEDURE_ACTIVITY_OBSERVATION);
@@ -648,6 +667,7 @@ public class ProcedureActivityObservationOperations extends ClinicalStatementOpe
 					CCDPlugin.INSTANCE.getString("ProcedureActivityObservationAgeObservation"),
 					new Object[] { procedureActivityObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -687,6 +707,7 @@ public class ProcedureActivityObservationOperations extends ClinicalStatementOpe
 	public static boolean validateProcedureActivityObservationMedicationActivity(
 			ProcedureActivityObservation procedureActivityObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PROCEDURE_ACTIVITY_OBSERVATION);
@@ -706,6 +727,7 @@ public class ProcedureActivityObservationOperations extends ClinicalStatementOpe
 					CCDPlugin.INSTANCE.getString("ProcedureActivityObservationMedicationActivity"),
 					new Object[] { procedureActivityObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -745,6 +767,7 @@ public class ProcedureActivityObservationOperations extends ClinicalStatementOpe
 	public static boolean validateProcedureActivityObservationPatientInstruction(
 			ProcedureActivityObservation procedureActivityObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_PATIENT_INSTRUCTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PROCEDURE_ACTIVITY_OBSERVATION);
@@ -764,6 +787,7 @@ public class ProcedureActivityObservationOperations extends ClinicalStatementOpe
 					CCDPlugin.INSTANCE.getString("ProcedureActivityObservationPatientInstruction"),
 					new Object[] { procedureActivityObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -803,6 +827,7 @@ public class ProcedureActivityObservationOperations extends ClinicalStatementOpe
 	public static boolean validateProcedureActivityObservationProblemAct(
 			ProcedureActivityObservation procedureActivityObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_PROBLEM_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PROCEDURE_ACTIVITY_OBSERVATION);
@@ -821,6 +846,7 @@ public class ProcedureActivityObservationOperations extends ClinicalStatementOpe
 					CCDPlugin.INSTANCE.getString("ProcedureActivityObservationProblemAct"),
 					new Object[] { procedureActivityObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -860,7 +886,7 @@ public class ProcedureActivityObservationOperations extends ClinicalStatementOpe
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				CCDPackage.Literals.PROCEDURE_ACTIVITY_OBSERVATION,
-				CCDPackage.Literals.PROCEDURE_ACTIVITY_OBSERVATION.getEAllOperations().get(62));
+				CCDPackage.Literals.PROCEDURE_ACTIVITY_OBSERVATION.getEAllOperations().get(64));
 			try {
 				GET_PROBLEM_OBSERVATION__EOCL_QRY = helper.createQuery(GET_PROBLEM_OBSERVATION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -905,7 +931,7 @@ public class ProcedureActivityObservationOperations extends ClinicalStatementOpe
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				CCDPackage.Literals.PROCEDURE_ACTIVITY_OBSERVATION,
-				CCDPackage.Literals.PROCEDURE_ACTIVITY_OBSERVATION.getEAllOperations().get(63));
+				CCDPackage.Literals.PROCEDURE_ACTIVITY_OBSERVATION.getEAllOperations().get(65));
 			try {
 				GET_AGE_OBSERVATION__EOCL_QRY = helper.createQuery(GET_AGE_OBSERVATION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -951,7 +977,7 @@ public class ProcedureActivityObservationOperations extends ClinicalStatementOpe
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				CCDPackage.Literals.PROCEDURE_ACTIVITY_OBSERVATION,
-				CCDPackage.Literals.PROCEDURE_ACTIVITY_OBSERVATION.getEAllOperations().get(64));
+				CCDPackage.Literals.PROCEDURE_ACTIVITY_OBSERVATION.getEAllOperations().get(66));
 			try {
 				GET_MEDICATION_ACTIVITIES__EOCL_QRY = helper.createQuery(GET_MEDICATION_ACTIVITIES__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -999,7 +1025,7 @@ public class ProcedureActivityObservationOperations extends ClinicalStatementOpe
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				CCDPackage.Literals.PROCEDURE_ACTIVITY_OBSERVATION,
-				CCDPackage.Literals.PROCEDURE_ACTIVITY_OBSERVATION.getEAllOperations().get(65));
+				CCDPackage.Literals.PROCEDURE_ACTIVITY_OBSERVATION.getEAllOperations().get(67));
 			try {
 				GET_PATIENT_INSTRUCTIONS__EOCL_QRY = helper.createQuery(GET_PATIENT_INSTRUCTIONS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1046,7 +1072,7 @@ public class ProcedureActivityObservationOperations extends ClinicalStatementOpe
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				CCDPackage.Literals.PROCEDURE_ACTIVITY_OBSERVATION,
-				CCDPackage.Literals.PROCEDURE_ACTIVITY_OBSERVATION.getEAllOperations().get(66));
+				CCDPackage.Literals.PROCEDURE_ACTIVITY_OBSERVATION.getEAllOperations().get(68));
 			try {
 				GET_PROBLEM_ACT__EOCL_QRY = helper.createQuery(GET_PROBLEM_ACT__EOCL_EXP);
 			} catch (ParserException pe) {

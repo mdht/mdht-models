@@ -94,6 +94,7 @@ public class SocialHistoryObservationOperations extends ClinicalStatementOperati
 	 */
 	public static boolean validateSocialHistoryObservationCodeValueSet(
 			SocialHistoryObservation socialHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_SOCIAL_HISTORY_OBSERVATION_CODE_VALUE_SET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.SOCIAL_HISTORY_OBSERVATION);
@@ -112,6 +113,7 @@ public class SocialHistoryObservationOperations extends ClinicalStatementOperati
 					CCDPlugin.INSTANCE.getString("SocialHistoryObservationCodeValueSet"),
 					new Object[] { socialHistoryObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -150,6 +152,7 @@ public class SocialHistoryObservationOperations extends ClinicalStatementOperati
 	 */
 	public static boolean validateSocialHistoryObservationTemplateId(SocialHistoryObservation socialHistoryObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_SOCIAL_HISTORY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.SOCIAL_HISTORY_OBSERVATION);
@@ -168,6 +171,7 @@ public class SocialHistoryObservationOperations extends ClinicalStatementOperati
 					CCDPlugin.INSTANCE.getString("SocialHistoryObservationTemplateId"),
 					new Object[] { socialHistoryObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -206,6 +210,7 @@ public class SocialHistoryObservationOperations extends ClinicalStatementOperati
 	 */
 	public static boolean validateSocialHistoryObservationClassCode(SocialHistoryObservation socialHistoryObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_SOCIAL_HISTORY_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.SOCIAL_HISTORY_OBSERVATION);
@@ -224,6 +229,7 @@ public class SocialHistoryObservationOperations extends ClinicalStatementOperati
 					CCDPlugin.INSTANCE.getString("SocialHistoryObservationClassCode"),
 					new Object[] { socialHistoryObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -262,6 +268,7 @@ public class SocialHistoryObservationOperations extends ClinicalStatementOperati
 	 */
 	public static boolean validateSocialHistoryObservationId(SocialHistoryObservation socialHistoryObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_SOCIAL_HISTORY_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.SOCIAL_HISTORY_OBSERVATION);
@@ -280,6 +287,7 @@ public class SocialHistoryObservationOperations extends ClinicalStatementOperati
 					CCDPlugin.INSTANCE.getString("SocialHistoryObservationId"),
 					new Object[] { socialHistoryObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -318,6 +326,7 @@ public class SocialHistoryObservationOperations extends ClinicalStatementOperati
 	 */
 	public static boolean validateSocialHistoryObservationMoodCode(SocialHistoryObservation socialHistoryObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_SOCIAL_HISTORY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.SOCIAL_HISTORY_OBSERVATION);
@@ -336,6 +345,7 @@ public class SocialHistoryObservationOperations extends ClinicalStatementOperati
 					CCDPlugin.INSTANCE.getString("SocialHistoryObservationMoodCode"),
 					new Object[] { socialHistoryObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -350,8 +360,7 @@ public class SocialHistoryObservationOperations extends ClinicalStatementOperati
 	 * @ordered
 	 */
 	protected static final String VALIDATE_SOCIAL_HISTORY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "
-			+ "let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in ("
-			+ "value.code = 'completed'))";
+			+ "let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in " + "value.code = 'completed')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateSocialHistoryObservationStatusCode(SocialHistoryObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Observation Status Code</em>}' invariant operation.
@@ -368,8 +377,8 @@ public class SocialHistoryObservationOperations extends ClinicalStatementOperati
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
-	 * let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in (
-	 * value.code = 'completed'))
+	 * let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
+	 * value.code = 'completed')
 	 * @param socialHistoryObservation The receiving '<em><b>Social History Observation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -378,6 +387,7 @@ public class SocialHistoryObservationOperations extends ClinicalStatementOperati
 	 */
 	public static boolean validateSocialHistoryObservationStatusCode(SocialHistoryObservation socialHistoryObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_SOCIAL_HISTORY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.SOCIAL_HISTORY_OBSERVATION);
@@ -396,6 +406,7 @@ public class SocialHistoryObservationOperations extends ClinicalStatementOperati
 					CCDPlugin.INSTANCE.getString("SocialHistoryObservationStatusCode"),
 					new Object[] { socialHistoryObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -434,6 +445,7 @@ public class SocialHistoryObservationOperations extends ClinicalStatementOperati
 	 */
 	public static boolean validateSocialHistoryObservationSocialHistoryStatusObservation(
 			SocialHistoryObservation socialHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_SOCIAL_HISTORY_OBSERVATION_SOCIAL_HISTORY_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.SOCIAL_HISTORY_OBSERVATION);
@@ -454,6 +466,7 @@ public class SocialHistoryObservationOperations extends ClinicalStatementOperati
 					CCDPlugin.INSTANCE.getString("SocialHistoryObservationSocialHistoryStatusObservation"),
 					new Object[] { socialHistoryObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -492,6 +505,7 @@ public class SocialHistoryObservationOperations extends ClinicalStatementOperati
 	 */
 	public static boolean validateSocialHistoryObservationEpisodeObservation(
 			SocialHistoryObservation socialHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_SOCIAL_HISTORY_OBSERVATION_EPISODE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.SOCIAL_HISTORY_OBSERVATION);
@@ -511,6 +525,7 @@ public class SocialHistoryObservationOperations extends ClinicalStatementOperati
 					CCDPlugin.INSTANCE.getString("SocialHistoryObservationEpisodeObservation"),
 					new Object[] { socialHistoryObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -551,7 +566,7 @@ public class SocialHistoryObservationOperations extends ClinicalStatementOperati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				CCDPackage.Literals.SOCIAL_HISTORY_OBSERVATION,
-				CCDPackage.Literals.SOCIAL_HISTORY_OBSERVATION.getEAllOperations().get(57));
+				CCDPackage.Literals.SOCIAL_HISTORY_OBSERVATION.getEAllOperations().get(59));
 			try {
 				GET_SOCIAL_HISTORY_STATUS_OBSERVATION__EOCL_QRY = helper.createQuery(GET_SOCIAL_HISTORY_STATUS_OBSERVATION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -596,7 +611,7 @@ public class SocialHistoryObservationOperations extends ClinicalStatementOperati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				CCDPackage.Literals.SOCIAL_HISTORY_OBSERVATION,
-				CCDPackage.Literals.SOCIAL_HISTORY_OBSERVATION.getEAllOperations().get(58));
+				CCDPackage.Literals.SOCIAL_HISTORY_OBSERVATION.getEAllOperations().get(60));
 			try {
 				GET_EPISODE_OBSERVATION__EOCL_QRY = helper.createQuery(GET_EPISODE_OBSERVATION__EOCL_EXP);
 			} catch (ParserException pe) {

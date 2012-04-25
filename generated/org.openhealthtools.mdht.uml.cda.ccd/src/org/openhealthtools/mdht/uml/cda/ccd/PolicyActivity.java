@@ -24,7 +24,7 @@ import org.openhealthtools.mdht.uml.cda.ParticipantRole;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ccd.CCDPackage#getPolicyActivity()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation moodCode='EVN' classCode='ACT' constraints.validation.info='PolicyActivityCoveredPartyTime PolicyActivitySubscriberIsAllowed PolicyActivitySubscriberTime PolicyActivitySubscriber' constraints.validation.error='PolicyActivityTemplateId PolicyActivityPayerEntityIsRequired PolicyActivityCoveredPartyIsRequired PolicyActivityEntryRelationshipREFR PolicyActivityEntryRelationshipTarget PolicyActivityClassCode PolicyActivityMoodCode PolicyActivityId PolicyActivityStatusCode PolicyActivityPayerEntity PolicyActivityCoveredParty' templateId.root='2.16.840.1.113883.10.20.1.26' statusCode.code='completed'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PolicyActivityTemplateId PolicyActivityPayerEntityIsRequired PolicyActivityCoveredPartyIsRequired PolicyActivityEntryRelationshipREFR PolicyActivityEntryRelationshipTarget PolicyActivityClassCode PolicyActivityMoodCode PolicyActivityId PolicyActivityStatusCode PolicyActivityPayerEntity PolicyActivityCoveredParty' templateId.root='2.16.840.1.113883.10.20.1.26' constraints.validation.info='PolicyActivityCoveredPartyTime PolicyActivitySubscriberIsAllowed PolicyActivitySubscriberTime PolicyActivitySubscriber' classCode='ACT' moodCode='EVN' statusCode.code='completed'"
  * @generated
  */
 public interface PolicyActivity extends Act {
@@ -179,12 +179,12 @@ public interface PolicyActivity extends Act {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
-	 * let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in (
-	 * value.code = 'completed'))
+	 * let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
+	 * value.code = 'completed')
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and \r\nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in (\r\nvalue.code = \'completed\'))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and \r\nlet value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in \r\nvalue.code = \'completed\')'"
 	 * @generated
 	 */
 	boolean validatePolicyActivityStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context);

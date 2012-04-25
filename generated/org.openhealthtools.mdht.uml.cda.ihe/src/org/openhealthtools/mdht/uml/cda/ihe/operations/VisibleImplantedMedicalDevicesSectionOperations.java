@@ -84,6 +84,7 @@ public class VisibleImplantedMedicalDevicesSectionOperations extends SectionOper
 	public static boolean validateVisibleImplantedMedicalDevicesSectionTemplateId(
 			VisibleImplantedMedicalDevicesSection visibleImplantedMedicalDevicesSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_VISIBLE_IMPLANTED_MEDICAL_DEVICES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.VISIBLE_IMPLANTED_MEDICAL_DEVICES_SECTION);
@@ -104,6 +105,7 @@ public class VisibleImplantedMedicalDevicesSectionOperations extends SectionOper
 					IHEPlugin.INSTANCE.getString("VisibleImplantedMedicalDevicesSectionTemplateId"),
 					new Object[] { visibleImplantedMedicalDevicesSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -118,8 +120,8 @@ public class VisibleImplantedMedicalDevicesSectionOperations extends SectionOper
 	 * @ordered
 	 */
 	protected static final String VALIDATE_VISIBLE_IMPLANTED_MEDICAL_DEVICES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
-			+ "value.code = 'XX-VisibleImplantedDevices' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
+			+ "value.code = 'XX-VisibleImplantedDevices' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateVisibleImplantedMedicalDevicesSectionCode(VisibleImplantedMedicalDevicesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Visible Implanted Medical Devices Section Code</em>}' invariant operation.
@@ -136,8 +138,8 @@ public class VisibleImplantedMedicalDevicesSectionOperations extends SectionOper
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in (
-	 * value.code = 'XX-VisibleImplantedDevices' and value.codeSystem = '2.16.840.1.113883.6.1'))
+	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+	 * value.code = 'XX-VisibleImplantedDevices' and value.codeSystem = '2.16.840.1.113883.6.1')
 	 * @param visibleImplantedMedicalDevicesSection The receiving '<em><b>Visible Implanted Medical Devices Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -147,6 +149,7 @@ public class VisibleImplantedMedicalDevicesSectionOperations extends SectionOper
 	public static boolean validateVisibleImplantedMedicalDevicesSectionCode(
 			VisibleImplantedMedicalDevicesSection visibleImplantedMedicalDevicesSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_VISIBLE_IMPLANTED_MEDICAL_DEVICES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.VISIBLE_IMPLANTED_MEDICAL_DEVICES_SECTION);
@@ -167,6 +170,7 @@ public class VisibleImplantedMedicalDevicesSectionOperations extends SectionOper
 					IHEPlugin.INSTANCE.getString("VisibleImplantedMedicalDevicesSectionCode"),
 					new Object[] { visibleImplantedMedicalDevicesSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -206,6 +210,7 @@ public class VisibleImplantedMedicalDevicesSectionOperations extends SectionOper
 	public static boolean validateVisibleImplantedMedicalDevicesSectionProblemEntry(
 			VisibleImplantedMedicalDevicesSection visibleImplantedMedicalDevicesSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_VISIBLE_IMPLANTED_MEDICAL_DEVICES_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.VISIBLE_IMPLANTED_MEDICAL_DEVICES_SECTION);
@@ -226,6 +231,7 @@ public class VisibleImplantedMedicalDevicesSectionOperations extends SectionOper
 					IHEPlugin.INSTANCE.getString("VisibleImplantedMedicalDevicesSectionProblemEntry"),
 					new Object[] { visibleImplantedMedicalDevicesSection }));
 			}
+
 			return false;
 		}
 		return true;

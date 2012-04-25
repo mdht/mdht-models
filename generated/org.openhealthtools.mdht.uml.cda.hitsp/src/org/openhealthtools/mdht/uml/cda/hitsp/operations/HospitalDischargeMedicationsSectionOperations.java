@@ -87,6 +87,7 @@ public class HospitalDischargeMedicationsSectionOperations extends
 	public static boolean validateHITSPHospitalDischargeMedicationsSectionTemplateId(
 			HospitalDischargeMedicationsSection hospitalDischargeMedicationsSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.HOSPITAL_DISCHARGE_MEDICATIONS_SECTION);
@@ -107,6 +108,7 @@ public class HospitalDischargeMedicationsSectionOperations extends
 					HITSPPlugin.INSTANCE.getString("HITSPHospitalDischargeMedicationsSectionTemplateId"),
 					new Object[] { hospitalDischargeMedicationsSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -146,6 +148,7 @@ public class HospitalDischargeMedicationsSectionOperations extends
 	public static boolean validateHITSPHospitalDischargeMedicationsSectionMedication(
 			HospitalDischargeMedicationsSection hospitalDischargeMedicationsSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.HOSPITAL_DISCHARGE_MEDICATIONS_SECTION);
@@ -166,6 +169,7 @@ public class HospitalDischargeMedicationsSectionOperations extends
 					HITSPPlugin.INSTANCE.getString("HITSPHospitalDischargeMedicationsSectionMedication"),
 					new Object[] { hospitalDischargeMedicationsSection }));
 			}
+
 			return false;
 		}
 		return true;

@@ -87,6 +87,7 @@ public class MedicationSeriesNumberObservationOperations extends ClinicalStateme
 	public static boolean validateMedicationSeriesNumberObservationTemplateId(
 			MedicationSeriesNumberObservation medicationSeriesNumberObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_SERIES_NUMBER_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.MEDICATION_SERIES_NUMBER_OBSERVATION);
@@ -107,6 +108,7 @@ public class MedicationSeriesNumberObservationOperations extends ClinicalStateme
 					CCDPlugin.INSTANCE.getString("MedicationSeriesNumberObservationTemplateId"),
 					new Object[] { medicationSeriesNumberObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -146,6 +148,7 @@ public class MedicationSeriesNumberObservationOperations extends ClinicalStateme
 	public static boolean validateMedicationSeriesNumberObservationClassCode(
 			MedicationSeriesNumberObservation medicationSeriesNumberObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_SERIES_NUMBER_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.MEDICATION_SERIES_NUMBER_OBSERVATION);
@@ -165,6 +168,7 @@ public class MedicationSeriesNumberObservationOperations extends ClinicalStateme
 					CCDPlugin.INSTANCE.getString("MedicationSeriesNumberObservationClassCode"),
 					new Object[] { medicationSeriesNumberObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -204,6 +208,7 @@ public class MedicationSeriesNumberObservationOperations extends ClinicalStateme
 	public static boolean validateMedicationSeriesNumberObservationMoodCode(
 			MedicationSeriesNumberObservation medicationSeriesNumberObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_SERIES_NUMBER_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.MEDICATION_SERIES_NUMBER_OBSERVATION);
@@ -223,6 +228,7 @@ public class MedicationSeriesNumberObservationOperations extends ClinicalStateme
 					CCDPlugin.INSTANCE.getString("MedicationSeriesNumberObservationMoodCode"),
 					new Object[] { medicationSeriesNumberObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -262,6 +268,7 @@ public class MedicationSeriesNumberObservationOperations extends ClinicalStateme
 	public static boolean validateMedicationSeriesNumberObservationStatusCode(
 			MedicationSeriesNumberObservation medicationSeriesNumberObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_SERIES_NUMBER_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.MEDICATION_SERIES_NUMBER_OBSERVATION);
@@ -282,6 +289,7 @@ public class MedicationSeriesNumberObservationOperations extends ClinicalStateme
 					CCDPlugin.INSTANCE.getString("MedicationSeriesNumberObservationStatusCode"),
 					new Object[] { medicationSeriesNumberObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -296,8 +304,8 @@ public class MedicationSeriesNumberObservationOperations extends ClinicalStateme
 	 * @ordered
 	 */
 	protected static final String VALIDATE_MEDICATION_SERIES_NUMBER_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in ("
-			+ "value.code = '30973-2' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
+			+ "value.code = '30973-2' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMedicationSeriesNumberObservationCode(MedicationSeriesNumberObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Series Number Observation Code</em>}' invariant operation.
@@ -314,8 +322,8 @@ public class MedicationSeriesNumberObservationOperations extends ClinicalStateme
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
-	 * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (
-	 * value.code = '30973-2' and value.codeSystem = '2.16.840.1.113883.6.1'))
+	 * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+	 * value.code = '30973-2' and value.codeSystem = '2.16.840.1.113883.6.1')
 	 * @param medicationSeriesNumberObservation The receiving '<em><b>Medication Series Number Observation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -325,6 +333,7 @@ public class MedicationSeriesNumberObservationOperations extends ClinicalStateme
 	public static boolean validateMedicationSeriesNumberObservationCode(
 			MedicationSeriesNumberObservation medicationSeriesNumberObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_SERIES_NUMBER_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.MEDICATION_SERIES_NUMBER_OBSERVATION);
@@ -343,6 +352,7 @@ public class MedicationSeriesNumberObservationOperations extends ClinicalStateme
 					CCDPlugin.INSTANCE.getString("MedicationSeriesNumberObservationCode"),
 					new Object[] { medicationSeriesNumberObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -382,6 +392,7 @@ public class MedicationSeriesNumberObservationOperations extends ClinicalStateme
 	public static boolean validateMedicationSeriesNumberObservationValue(
 			MedicationSeriesNumberObservation medicationSeriesNumberObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_SERIES_NUMBER_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.MEDICATION_SERIES_NUMBER_OBSERVATION);
@@ -400,6 +411,7 @@ public class MedicationSeriesNumberObservationOperations extends ClinicalStateme
 					CCDPlugin.INSTANCE.getString("MedicationSeriesNumberObservationValue"),
 					new Object[] { medicationSeriesNumberObservation }));
 			}
+
 			return false;
 		}
 		return true;

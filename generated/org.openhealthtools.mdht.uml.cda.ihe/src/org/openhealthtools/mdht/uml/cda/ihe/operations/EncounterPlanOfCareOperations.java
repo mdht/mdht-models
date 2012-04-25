@@ -81,6 +81,7 @@ public class EncounterPlanOfCareOperations extends EncounterEntryOperations {
 	 */
 	public static boolean validatePlanOfCareActivityEncounterTemplateId(EncounterPlanOfCare encounterPlanOfCare,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PLAN_OF_CARE_ACTIVITY_ENCOUNTER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.ENCOUNTER_PLAN_OF_CARE);
@@ -104,6 +105,7 @@ public class EncounterPlanOfCareOperations extends EncounterEntryOperations {
 								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(encounterPlanOfCare, context) }),
 					new Object[] { encounterPlanOfCare }));
 			}
+
 			return false;
 		}
 		return true;
@@ -144,6 +146,7 @@ public class EncounterPlanOfCareOperations extends EncounterEntryOperations {
 	 */
 	public static boolean validateEncounterPlanOfCareMoodCodeValue(EncounterPlanOfCare encounterPlanOfCare,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ENCOUNTER_PLAN_OF_CARE_MOOD_CODE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.ENCOUNTER_PLAN_OF_CARE);
@@ -162,6 +165,7 @@ public class EncounterPlanOfCareOperations extends EncounterEntryOperations {
 					IHEPlugin.INSTANCE.getString("EncounterPlanOfCareMoodCodeValue"),
 					new Object[] { encounterPlanOfCare }));
 			}
+
 			return false;
 		}
 		return true;

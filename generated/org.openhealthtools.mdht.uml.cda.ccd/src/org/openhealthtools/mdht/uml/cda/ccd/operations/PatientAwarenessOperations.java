@@ -87,6 +87,7 @@ public class PatientAwarenessOperations extends Participant2Operations {
 	 */
 	public static boolean validatePatientAwarenessParticipantRoleId(PatientAwareness patientAwareness,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PATIENT_AWARENESS_PARTICIPANT_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PATIENT_AWARENESS);
@@ -105,6 +106,7 @@ public class PatientAwarenessOperations extends Participant2Operations {
 					CCDPlugin.INSTANCE.getString("PatientAwarenessParticipantRoleId"),
 					new Object[] { patientAwareness }));
 			}
+
 			return false;
 		}
 		return true;
@@ -143,6 +145,7 @@ public class PatientAwarenessOperations extends Participant2Operations {
 	 */
 	public static boolean validatePatientAwarenessTemplateId(PatientAwareness patientAwareness,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PATIENT_AWARENESS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PATIENT_AWARENESS);
@@ -160,6 +163,7 @@ public class PatientAwarenessOperations extends Participant2Operations {
 					CCDValidator.PATIENT_AWARENESS__PATIENT_AWARENESS_TEMPLATE_ID,
 					CCDPlugin.INSTANCE.getString("PatientAwarenessTemplateId"), new Object[] { patientAwareness }));
 			}
+
 			return false;
 		}
 		return true;
@@ -198,6 +202,7 @@ public class PatientAwarenessOperations extends Participant2Operations {
 	 */
 	public static boolean validatePatientAwarenessTypeCode(PatientAwareness patientAwareness,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PATIENT_AWARENESS_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PATIENT_AWARENESS);
@@ -215,6 +220,7 @@ public class PatientAwarenessOperations extends Participant2Operations {
 					CCDValidator.PATIENT_AWARENESS__PATIENT_AWARENESS_TYPE_CODE,
 					CCDPlugin.INSTANCE.getString("PatientAwarenessTypeCode"), new Object[] { patientAwareness }));
 			}
+
 			return false;
 		}
 		return true;
@@ -253,6 +259,7 @@ public class PatientAwarenessOperations extends Participant2Operations {
 	 */
 	public static boolean validatePatientAwarenessAwarenessCode(PatientAwareness patientAwareness,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PATIENT_AWARENESS_AWARENESS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PATIENT_AWARENESS);
@@ -270,6 +277,7 @@ public class PatientAwarenessOperations extends Participant2Operations {
 					CCDValidator.PATIENT_AWARENESS__PATIENT_AWARENESS_AWARENESS_CODE,
 					CCDPlugin.INSTANCE.getString("PatientAwarenessAwarenessCode"), new Object[] { patientAwareness }));
 			}
+
 			return false;
 		}
 		return true;

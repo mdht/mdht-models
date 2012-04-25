@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.Author;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ihe.IHEPackage#getScanOriginalAuthor()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='1.3.6.1.4.1.19376.1.2.20.1' constraints.validation.error='ScanOriginalAuthorTemplateId' constraints.validation.warning='ScanOriginalAuthorHasAssignedAuthorId ScanOriginalAuthorHasAssignedAuthorRepresentedOrganizationId'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ScanOriginalAuthorTemplateId' templateId.root='1.3.6.1.4.1.19376.1.2.20.1' constraints.validation.warning='ScanOriginalAuthorHasAssignedAuthorId ScanOriginalAuthorHasAssignedAuthorRepresentedOrganizationId'"
  * @generated
  */
 public interface ScanOriginalAuthor extends Author {

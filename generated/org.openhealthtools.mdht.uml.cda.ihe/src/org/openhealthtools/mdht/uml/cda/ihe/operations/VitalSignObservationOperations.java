@@ -86,6 +86,7 @@ public class VitalSignObservationOperations extends ResultObservationOperations 
 	 */
 	public static boolean validateVitalSignObservationTemplateId(VitalSignObservation vitalSignObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_VITAL_SIGN_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.VITAL_SIGN_OBSERVATION);
@@ -104,6 +105,7 @@ public class VitalSignObservationOperations extends ResultObservationOperations 
 					IHEPlugin.INSTANCE.getString("VitalSignObservationTemplateId"),
 					new Object[] { vitalSignObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -122,6 +124,7 @@ public class VitalSignObservationOperations extends ResultObservationOperations 
 	 */
 	public static boolean validateVitalSignObservationValue(VitalSignObservation vitalSignObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_VITAL_SIGN_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.VITAL_SIGN_OBSERVATION);
@@ -139,6 +142,7 @@ public class VitalSignObservationOperations extends ResultObservationOperations 
 					IHEValidator.VITAL_SIGN_OBSERVATION__VITAL_SIGN_OBSERVATION_VALUE,
 					IHEPlugin.INSTANCE.getString("VitalSignObservationValue"), new Object[] { vitalSignObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -177,6 +181,7 @@ public class VitalSignObservationOperations extends ResultObservationOperations 
 	 */
 	public static boolean validateVitalSignObservationInterpretationCode(VitalSignObservation vitalSignObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_VITAL_SIGN_OBSERVATION_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.VITAL_SIGN_OBSERVATION);
@@ -195,6 +200,7 @@ public class VitalSignObservationOperations extends ResultObservationOperations 
 					IHEPlugin.INSTANCE.getString("VitalSignObservationInterpretationCode"),
 					new Object[] { vitalSignObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -233,6 +239,7 @@ public class VitalSignObservationOperations extends ResultObservationOperations 
 	 */
 	public static boolean validateVitalSignObservationMethodCode(VitalSignObservation vitalSignObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_VITAL_SIGN_OBSERVATION_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.VITAL_SIGN_OBSERVATION);
@@ -251,6 +258,7 @@ public class VitalSignObservationOperations extends ResultObservationOperations 
 					IHEPlugin.INSTANCE.getString("VitalSignObservationMethodCode"),
 					new Object[] { vitalSignObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -309,6 +317,7 @@ public class VitalSignObservationOperations extends ResultObservationOperations 
 	 */
 	public static boolean validateVitalSignObservationTargetSiteCode(VitalSignObservation vitalSignObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_VITAL_SIGN_OBSERVATION_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.VITAL_SIGN_OBSERVATION);
@@ -327,6 +336,7 @@ public class VitalSignObservationOperations extends ResultObservationOperations 
 					IHEPlugin.INSTANCE.getString("VitalSignObservationTargetSiteCode"),
 					new Object[] { vitalSignObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -341,8 +351,8 @@ public class VitalSignObservationOperations extends ResultObservationOperations 
 	 * @ordered
 	 */
 	protected static final String VALIDATE_RESULT_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in ("
-			+ "value.codeSystem = '2.16.840.1.113883.6.1'))";
+			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
+			+ "value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateResultObservationCode(VitalSignObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Result Observation Code</em>}' invariant operation.
@@ -359,8 +369,8 @@ public class VitalSignObservationOperations extends ResultObservationOperations 
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
-	 * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (
-	 * value.codeSystem = '2.16.840.1.113883.6.1'))
+	 * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+	 * value.codeSystem = '2.16.840.1.113883.6.1')
 	 * @param vitalSignObservation The receiving '<em><b>Vital Sign Observation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -369,6 +379,7 @@ public class VitalSignObservationOperations extends ResultObservationOperations 
 	 */
 	public static boolean validateResultObservationCode(VitalSignObservation vitalSignObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_RESULT_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.VITAL_SIGN_OBSERVATION);
@@ -386,6 +397,7 @@ public class VitalSignObservationOperations extends ResultObservationOperations 
 					IHEValidator.VITAL_SIGN_OBSERVATION__RESULT_OBSERVATION_CODE,
 					IHEPlugin.INSTANCE.getString("ResultObservationCode"), new Object[] { vitalSignObservation }));
 			}
+
 			return false;
 		}
 		return true;

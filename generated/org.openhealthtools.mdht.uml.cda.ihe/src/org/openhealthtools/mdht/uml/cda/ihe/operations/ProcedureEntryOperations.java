@@ -94,6 +94,7 @@ public class ProcedureEntryOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateProcedureEntryMoodCode(ProcedureEntry procedureEntry, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_ENTRY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.PROCEDURE_ENTRY);
@@ -111,6 +112,7 @@ public class ProcedureEntryOperations extends ClinicalStatementOperations {
 					IHEValidator.PROCEDURE_ENTRY__PROCEDURE_ENTRY_MOOD_CODE,
 					IHEPlugin.INSTANCE.getString("ProcedureEntryMoodCode"), new Object[] { procedureEntry }));
 			}
+
 			return false;
 		}
 		return true;
@@ -149,6 +151,7 @@ public class ProcedureEntryOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateProcedureEntryHasTextReference(ProcedureEntry procedureEntry,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_ENTRY_HAS_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.PROCEDURE_ENTRY);
@@ -166,6 +169,7 @@ public class ProcedureEntryOperations extends ClinicalStatementOperations {
 					IHEValidator.PROCEDURE_ENTRY__PROCEDURE_ENTRY_HAS_TEXT_REFERENCE,
 					IHEPlugin.INSTANCE.getString("ProcedureEntryHasTextReference"), new Object[] { procedureEntry }));
 			}
+
 			return false;
 		}
 		return true;
@@ -204,6 +208,7 @@ public class ProcedureEntryOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateProcedureEntryPriorityCode(ProcedureEntry procedureEntry,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_ENTRY_PRIORITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.PROCEDURE_ENTRY);
@@ -221,6 +226,7 @@ public class ProcedureEntryOperations extends ClinicalStatementOperations {
 					IHEValidator.PROCEDURE_ENTRY__PROCEDURE_ENTRY_PRIORITY_CODE,
 					IHEPlugin.INSTANCE.getString("ProcedureEntryPriorityCode"), new Object[] { procedureEntry }));
 			}
+
 			return false;
 		}
 		return true;
@@ -259,6 +265,7 @@ public class ProcedureEntryOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateProcedureEntryHasInversionIndForEncounter(ProcedureEntry procedureEntry,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_ENTRY_HAS_INVERSION_IND_FOR_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.PROCEDURE_ENTRY);
@@ -278,6 +285,7 @@ public class ProcedureEntryOperations extends ClinicalStatementOperations {
 					IHEPlugin.INSTANCE.getString("ProcedureEntryHasInversionIndForEncounter"),
 					new Object[] { procedureEntry }));
 			}
+
 			return false;
 		}
 		return true;
@@ -316,6 +324,7 @@ public class ProcedureEntryOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateProcedureEntryTemplateId(ProcedureEntry procedureEntry, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.PROCEDURE_ENTRY);
@@ -333,6 +342,7 @@ public class ProcedureEntryOperations extends ClinicalStatementOperations {
 					IHEValidator.PROCEDURE_ENTRY__PROCEDURE_ENTRY_TEMPLATE_ID,
 					IHEPlugin.INSTANCE.getString("ProcedureEntryTemplateId"), new Object[] { procedureEntry }));
 			}
+
 			return false;
 		}
 		return true;
@@ -371,6 +381,7 @@ public class ProcedureEntryOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateProcedureEntryClassCode(ProcedureEntry procedureEntry, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_ENTRY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.PROCEDURE_ENTRY);
@@ -388,6 +399,7 @@ public class ProcedureEntryOperations extends ClinicalStatementOperations {
 					IHEValidator.PROCEDURE_ENTRY__PROCEDURE_ENTRY_CLASS_CODE,
 					IHEPlugin.INSTANCE.getString("ProcedureEntryClassCode"), new Object[] { procedureEntry }));
 			}
+
 			return false;
 		}
 		return true;
@@ -426,6 +438,7 @@ public class ProcedureEntryOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateProcedureEntryText(ProcedureEntry procedureEntry, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_ENTRY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.PROCEDURE_ENTRY);
@@ -442,6 +455,7 @@ public class ProcedureEntryOperations extends ClinicalStatementOperations {
 					IHEValidator.PROCEDURE_ENTRY__PROCEDURE_ENTRY_TEXT,
 					IHEPlugin.INSTANCE.getString("ProcedureEntryText"), new Object[] { procedureEntry }));
 			}
+
 			return false;
 		}
 		return true;
@@ -480,6 +494,7 @@ public class ProcedureEntryOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateProcedureEntryApproachSiteCode(ProcedureEntry procedureEntry,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_ENTRY_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.PROCEDURE_ENTRY);
@@ -497,6 +512,7 @@ public class ProcedureEntryOperations extends ClinicalStatementOperations {
 					IHEValidator.PROCEDURE_ENTRY__PROCEDURE_ENTRY_APPROACH_SITE_CODE,
 					IHEPlugin.INSTANCE.getString("ProcedureEntryApproachSiteCode"), new Object[] { procedureEntry }));
 			}
+
 			return false;
 		}
 		return true;
@@ -535,6 +551,7 @@ public class ProcedureEntryOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateProcedureEntryInternalReference(ProcedureEntry procedureEntry,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_ENTRY_INTERNAL_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.PROCEDURE_ENTRY);
@@ -552,6 +569,7 @@ public class ProcedureEntryOperations extends ClinicalStatementOperations {
 					IHEValidator.PROCEDURE_ENTRY__PROCEDURE_ENTRY_INTERNAL_REFERENCE,
 					IHEPlugin.INSTANCE.getString("ProcedureEntryInternalReference"), new Object[] { procedureEntry }));
 			}
+
 			return false;
 		}
 		return true;
@@ -590,6 +608,7 @@ public class ProcedureEntryOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateProcedureEntryInternalReferenceReason(ProcedureEntry procedureEntry,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_ENTRY_INTERNAL_REFERENCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.PROCEDURE_ENTRY);
@@ -608,6 +627,7 @@ public class ProcedureEntryOperations extends ClinicalStatementOperations {
 					IHEPlugin.INSTANCE.getString("ProcedureEntryInternalReferenceReason"),
 					new Object[] { procedureEntry }));
 			}
+
 			return false;
 		}
 		return true;
@@ -646,7 +666,7 @@ public class ProcedureEntryOperations extends ClinicalStatementOperations {
 		if (GET_INTERNAL_REFERENCE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				IHEPackage.Literals.PROCEDURE_ENTRY, IHEPackage.Literals.PROCEDURE_ENTRY.getEAllOperations().get(59));
+				IHEPackage.Literals.PROCEDURE_ENTRY, IHEPackage.Literals.PROCEDURE_ENTRY.getEAllOperations().get(61));
 			try {
 				GET_INTERNAL_REFERENCE__EOCL_QRY = helper.createQuery(GET_INTERNAL_REFERENCE__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -690,7 +710,7 @@ public class ProcedureEntryOperations extends ClinicalStatementOperations {
 		if (GET_INTERNAL_REFERENCE_REASONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				IHEPackage.Literals.PROCEDURE_ENTRY, IHEPackage.Literals.PROCEDURE_ENTRY.getEAllOperations().get(60));
+				IHEPackage.Literals.PROCEDURE_ENTRY, IHEPackage.Literals.PROCEDURE_ENTRY.getEAllOperations().get(62));
 			try {
 				GET_INTERNAL_REFERENCE_REASONS__EOCL_QRY = helper.createQuery(GET_INTERNAL_REFERENCE_REASONS__EOCL_EXP);
 			} catch (ParserException pe) {

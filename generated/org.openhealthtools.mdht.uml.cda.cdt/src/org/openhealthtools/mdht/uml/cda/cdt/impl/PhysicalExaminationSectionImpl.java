@@ -55,7 +55,8 @@ public class PhysicalExaminationSectionImpl extends SectionImpl implements Physi
 	 * @generated
 	 */
 	public boolean validatePhysicalExaminationSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhysicalExaminationSectionOperations.validatePhysicalExaminationSectionTemplateId(this, diagnostics, context);
+		return PhysicalExaminationSectionOperations.validatePhysicalExaminationSectionTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -73,7 +74,7 @@ public class PhysicalExaminationSectionImpl extends SectionImpl implements Physi
 	 * @generated
 	 */
 	public PhysicalExaminationSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // PhysicalExaminationSectionImpl

@@ -196,6 +196,16 @@ public class MedicationOrderInformationImpl extends SupplyEntryImpl implements M
 	 * @generated
 	 */
 	@Override
+	public boolean validateSupplyActivityStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationOrderInformationOperations.validateSupplyActivityStatusCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public MedicationOrderInformation init() {
 		CDAUtil.init(this);
 		return this;

@@ -82,6 +82,7 @@ public class SplitDoseOperations extends MedicationOperations {
 	 */
 	public static boolean validateSplitDoseSplitDosingSubstanceAdministration(SplitDose splitDose,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_SPLIT_DOSE_SPLIT_DOSING_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.SPLIT_DOSE);
@@ -100,6 +101,7 @@ public class SplitDoseOperations extends MedicationOperations {
 					IHEPlugin.INSTANCE.getString("SplitDoseSplitDosingSubstanceAdministration"),
 					new Object[] { splitDose }));
 			}
+
 			return false;
 		}
 		return true;
@@ -138,6 +140,7 @@ public class SplitDoseOperations extends MedicationOperations {
 	 */
 	public static boolean validateSplitDoseTemplateId(SplitDose splitDose, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_SPLIT_DOSE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.SPLIT_DOSE);
@@ -153,6 +156,7 @@ public class SplitDoseOperations extends MedicationOperations {
 					Diagnostic.ERROR, IHEValidator.DIAGNOSTIC_SOURCE, IHEValidator.SPLIT_DOSE__SPLIT_DOSE_TEMPLATE_ID,
 					IHEPlugin.INSTANCE.getString("SplitDoseTemplateId"), new Object[] { splitDose }));
 			}
+
 			return false;
 		}
 		return true;

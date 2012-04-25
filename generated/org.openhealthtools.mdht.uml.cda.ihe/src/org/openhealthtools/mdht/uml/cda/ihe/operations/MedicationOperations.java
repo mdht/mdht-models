@@ -110,6 +110,7 @@ public class MedicationOperations extends MedicationActivityOperations {
 	 */
 	public static boolean validateMedicationHasDosing(Medication medication, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_HAS_DOSING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.MEDICATION);
@@ -125,6 +126,7 @@ public class MedicationOperations extends MedicationActivityOperations {
 					Diagnostic.ERROR, IHEValidator.DIAGNOSTIC_SOURCE, IHEValidator.MEDICATION__MEDICATION_HAS_DOSING,
 					IHEPlugin.INSTANCE.getString("MedicationHasDosing"), new Object[] { medication }));
 			}
+
 			return false;
 		}
 		return true;
@@ -170,6 +172,7 @@ public class MedicationOperations extends MedicationActivityOperations {
 	 */
 	public static boolean validateMedicationDosingRelationship(Medication medication, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_DOSING_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.MEDICATION);
@@ -187,6 +190,7 @@ public class MedicationOperations extends MedicationActivityOperations {
 					IHEValidator.MEDICATION__MEDICATION_DOSING_RELATIONSHIP,
 					IHEPlugin.INSTANCE.getString("MedicationDosingRelationship"), new Object[] { medication }));
 			}
+
 			return false;
 		}
 		return true;
@@ -226,6 +230,7 @@ public class MedicationOperations extends MedicationActivityOperations {
 	 */
 	public static boolean validateMedicationHasDescriptionNoMedNotKnown(Medication medication,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_HAS_DESCRIPTION_NO_MED_NOT_KNOWN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.MEDICATION);
@@ -243,6 +248,7 @@ public class MedicationOperations extends MedicationActivityOperations {
 					IHEValidator.MEDICATION__MEDICATION_HAS_DESCRIPTION_NO_MED_NOT_KNOWN,
 					IHEPlugin.INSTANCE.getString("MedicationHasDescriptionNoMedNotKnown"), new Object[] { medication }));
 			}
+
 			return false;
 		}
 		return true;
@@ -281,6 +287,7 @@ public class MedicationOperations extends MedicationActivityOperations {
 	 */
 	public static boolean validateMedicationReasonClassMood(Medication medication, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_REASON_CLASS_MOOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.MEDICATION);
@@ -298,6 +305,7 @@ public class MedicationOperations extends MedicationActivityOperations {
 					IHEValidator.MEDICATION__MEDICATION_REASON_CLASS_MOOD,
 					IHEPlugin.INSTANCE.getString("MedicationReasonClassMood"), new Object[] { medication }));
 			}
+
 			return false;
 		}
 		return true;
@@ -340,6 +348,7 @@ public class MedicationOperations extends MedicationActivityOperations {
 	 */
 	public static boolean validateMedicationHasProductEntry(Medication medication, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_HAS_PRODUCT_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.MEDICATION);
@@ -357,6 +366,7 @@ public class MedicationOperations extends MedicationActivityOperations {
 					IHEValidator.MEDICATION__MEDICATION_HAS_PRODUCT_ENTRY,
 					IHEPlugin.INSTANCE.getString("MedicationHasProductEntry"), new Object[] { medication }));
 			}
+
 			return false;
 		}
 		return true;
@@ -396,6 +406,7 @@ public class MedicationOperations extends MedicationActivityOperations {
 	 */
 	public static boolean validateMedicationHasIntructionsInversion(Medication medication, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_HAS_INTRUCTIONS_INVERSION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.MEDICATION);
@@ -413,6 +424,7 @@ public class MedicationOperations extends MedicationActivityOperations {
 					IHEValidator.MEDICATION__MEDICATION_HAS_INTRUCTIONS_INVERSION,
 					IHEPlugin.INSTANCE.getString("MedicationHasIntructionsInversion"), new Object[] { medication }));
 			}
+
 			return false;
 		}
 		return true;
@@ -452,6 +464,7 @@ public class MedicationOperations extends MedicationActivityOperations {
 	 */
 	public static boolean validateMedicationProductStrength(Medication medication, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_PRODUCT_STRENGTH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.MEDICATION);
@@ -469,6 +482,7 @@ public class MedicationOperations extends MedicationActivityOperations {
 					IHEValidator.MEDICATION__MEDICATION_PRODUCT_STRENGTH,
 					IHEPlugin.INSTANCE.getString("MedicationProductStrength"), new Object[] { medication }));
 			}
+
 			return false;
 		}
 		return true;
@@ -508,6 +522,7 @@ public class MedicationOperations extends MedicationActivityOperations {
 	 */
 	public static boolean validateMedicationProductName(Medication medication, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_PRODUCT_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.MEDICATION);
@@ -523,6 +538,7 @@ public class MedicationOperations extends MedicationActivityOperations {
 					Diagnostic.ERROR, IHEValidator.DIAGNOSTIC_SOURCE, IHEValidator.MEDICATION__MEDICATION_PRODUCT_NAME,
 					IHEPlugin.INSTANCE.getString("MedicationProductName"), new Object[] { medication }));
 			}
+
 			return false;
 		}
 		return true;
@@ -562,6 +578,7 @@ public class MedicationOperations extends MedicationActivityOperations {
 	 */
 	public static boolean validateMedicationPreconditionReference(Medication medication, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_PRECONDITION_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.MEDICATION);
@@ -579,6 +596,7 @@ public class MedicationOperations extends MedicationActivityOperations {
 					IHEValidator.MEDICATION__MEDICATION_PRECONDITION_REFERENCE,
 					IHEPlugin.INSTANCE.getString("MedicationPreconditionReference"), new Object[] { medication }));
 			}
+
 			return false;
 		}
 		return true;
@@ -618,6 +636,7 @@ public class MedicationOperations extends MedicationActivityOperations {
 	 */
 	public static boolean validateMedicationHasSupplyEntryInversion(Medication medication, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_HAS_SUPPLY_ENTRY_INVERSION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.MEDICATION);
@@ -635,6 +654,7 @@ public class MedicationOperations extends MedicationActivityOperations {
 					IHEValidator.MEDICATION__MEDICATION_HAS_SUPPLY_ENTRY_INVERSION,
 					IHEPlugin.INSTANCE.getString("MedicationHasSupplyEntryInversion"), new Object[] { medication }));
 			}
+
 			return false;
 		}
 		return true;
@@ -674,6 +694,7 @@ public class MedicationOperations extends MedicationActivityOperations {
 	 */
 	public static boolean validateMedicationHasFillNumber(Medication medication, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_HAS_FILL_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.MEDICATION);
@@ -690,6 +711,7 @@ public class MedicationOperations extends MedicationActivityOperations {
 					IHEValidator.MEDICATION__MEDICATION_HAS_FILL_NUMBER,
 					IHEPlugin.INSTANCE.getString("MedicationHasFillNumber"), new Object[] { medication }));
 			}
+
 			return false;
 		}
 		return true;
@@ -728,6 +750,7 @@ public class MedicationOperations extends MedicationActivityOperations {
 	 */
 	public static boolean validateMedicationTemplateId(Medication medication, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.MEDICATION);
@@ -743,6 +766,7 @@ public class MedicationOperations extends MedicationActivityOperations {
 					Diagnostic.ERROR, IHEValidator.DIAGNOSTIC_SOURCE, IHEValidator.MEDICATION__MEDICATION_TEMPLATE_ID,
 					IHEPlugin.INSTANCE.getString("MedicationTemplateId"), new Object[] { medication }));
 			}
+
 			return false;
 		}
 		return true;
@@ -781,6 +805,7 @@ public class MedicationOperations extends MedicationActivityOperations {
 	 */
 	public static boolean validateMedicationApproachSiteCode(Medication medication, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.MEDICATION);
@@ -798,6 +823,7 @@ public class MedicationOperations extends MedicationActivityOperations {
 					IHEValidator.MEDICATION__MEDICATION_APPROACH_SITE_CODE,
 					IHEPlugin.INSTANCE.getString("MedicationApproachSiteCode"), new Object[] { medication }));
 			}
+
 			return false;
 		}
 		return true;
@@ -836,6 +862,7 @@ public class MedicationOperations extends MedicationActivityOperations {
 	 */
 	public static boolean validateMedicationDoseQuantity(Medication medication, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.MEDICATION);
@@ -852,6 +879,7 @@ public class MedicationOperations extends MedicationActivityOperations {
 					IHEValidator.MEDICATION__MEDICATION_DOSE_QUANTITY,
 					IHEPlugin.INSTANCE.getString("MedicationDoseQuantity"), new Object[] { medication }));
 			}
+
 			return false;
 		}
 		return true;
@@ -890,6 +918,7 @@ public class MedicationOperations extends MedicationActivityOperations {
 	 */
 	public static boolean validateMedicationRateQuantity(Medication medication, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_RATE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.MEDICATION);
@@ -906,6 +935,7 @@ public class MedicationOperations extends MedicationActivityOperations {
 					IHEValidator.MEDICATION__MEDICATION_RATE_QUANTITY,
 					IHEPlugin.INSTANCE.getString("MedicationRateQuantity"), new Object[] { medication }));
 			}
+
 			return false;
 		}
 		return true;
@@ -920,8 +950,8 @@ public class MedicationOperations extends MedicationActivityOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_MEDICATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in ("
-			+ "value.codeSystem = '2.16.840.1.113883.6.96'))";
+			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
+			+ "value.codeSystem = '2.16.840.1.113883.6.96')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMedicationCode(Medication, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Code</em>}' invariant operation.
@@ -939,8 +969,8 @@ public class MedicationOperations extends MedicationActivityOperations {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
-	 * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (
-	 * value.codeSystem = '2.16.840.1.113883.6.96'))
+	 * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+	 * value.codeSystem = '2.16.840.1.113883.6.96')
 	 * @param medication The receiving '<em><b>Medication</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -949,6 +979,7 @@ public class MedicationOperations extends MedicationActivityOperations {
 	 */
 	public static boolean validateMedicationCode(Medication medication, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.MEDICATION);
@@ -964,6 +995,7 @@ public class MedicationOperations extends MedicationActivityOperations {
 					Diagnostic.ERROR, IHEValidator.DIAGNOSTIC_SOURCE, IHEValidator.MEDICATION__MEDICATION_CODE,
 					IHEPlugin.INSTANCE.getString("MedicationCode"), new Object[] { medication }));
 			}
+
 			return false;
 		}
 		return true;
@@ -1002,6 +1034,7 @@ public class MedicationOperations extends MedicationActivityOperations {
 	 */
 	public static boolean validateMedicationStatusCode(Medication medication, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.MEDICATION);
@@ -1017,6 +1050,7 @@ public class MedicationOperations extends MedicationActivityOperations {
 					Diagnostic.ERROR, IHEValidator.DIAGNOSTIC_SOURCE, IHEValidator.MEDICATION__MEDICATION_STATUS_CODE,
 					IHEPlugin.INSTANCE.getString("MedicationStatusCode"), new Object[] { medication }));
 			}
+
 			return false;
 		}
 		return true;
@@ -1056,6 +1090,7 @@ public class MedicationOperations extends MedicationActivityOperations {
 	 */
 	public static boolean validateMedicationEffectiveTime(Medication medication, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.MEDICATION);
@@ -1072,6 +1107,7 @@ public class MedicationOperations extends MedicationActivityOperations {
 					IHEValidator.MEDICATION__MEDICATION_EFFECTIVE_TIME,
 					IHEPlugin.INSTANCE.getString("MedicationEffectiveTime"), new Object[] { medication }));
 			}
+
 			return false;
 		}
 		return true;
@@ -1110,7 +1146,7 @@ public class MedicationOperations extends MedicationActivityOperations {
 		if (GET_INTERNAL_REFERENCES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				IHEPackage.Literals.MEDICATION, IHEPackage.Literals.MEDICATION.getEAllOperations().get(95));
+				IHEPackage.Literals.MEDICATION, IHEPackage.Literals.MEDICATION.getEAllOperations().get(98));
 			try {
 				GET_INTERNAL_REFERENCES__EOCL_QRY = helper.createQuery(GET_INTERNAL_REFERENCES__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1156,7 +1192,7 @@ public class MedicationOperations extends MedicationActivityOperations {
 		if (GET_PATIENT_MEDICAL_INSTRUCTIONSS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				IHEPackage.Literals.MEDICATION, IHEPackage.Literals.MEDICATION.getEAllOperations().get(96));
+				IHEPackage.Literals.MEDICATION, IHEPackage.Literals.MEDICATION.getEAllOperations().get(99));
 			try {
 				GET_PATIENT_MEDICAL_INSTRUCTIONSS__EOCL_QRY = helper.createQuery(GET_PATIENT_MEDICAL_INSTRUCTIONSS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1202,7 +1238,7 @@ public class MedicationOperations extends MedicationActivityOperations {
 		if (GET_SUPPLY_ENTRY__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				IHEPackage.Literals.MEDICATION, IHEPackage.Literals.MEDICATION.getEAllOperations().get(97));
+				IHEPackage.Literals.MEDICATION, IHEPackage.Literals.MEDICATION.getEAllOperations().get(100));
 			try {
 				GET_SUPPLY_ENTRY__EOCL_QRY = helper.createQuery(GET_SUPPLY_ENTRY__EOCL_EXP);
 			} catch (ParserException pe) {

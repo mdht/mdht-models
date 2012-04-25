@@ -1417,12 +1417,10 @@
   <CDA:PropertyValidation xmi:id="_VFdXICQYEeCxCon8a79rfA" base_Property="_TvY8ESQYEeCxCon8a79rfA">
     <ruleId>CONF-505</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_VehXYCQYEeCxCon8a79rfA" base_Property="_TvY8ECQYEeCxCon8a79rfA">
-    <ruleId>CONF-506</ruleId>
-    <ruleId>CONF-507</ruleId>
-  </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_cWswICQYEeCxCon8a79rfA" code="48767-8" displayName="Annotation comment" base_Property="_TvY8ECQYEeCxCon8a79rfA">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF-506</ruleId>
+    <ruleId>CONF-507</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:ConformsTo xmi:id="_ps2bYCToEeCvyarv2dSCoQ" base_Generalization="_AwcXk2aKEd6Hk_bPOfEjYA">
     <ruleId>CONF-169</ruleId>
@@ -1543,10 +1541,9 @@
     <ruleId>CONF-471</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_n9vXYMg9EeCHk-lvWGDTdA" severity="WARNING" base_Association="_mqdKkMg9EeCHk-lvWGDTdA"/>
-  <CDA:PropertyValidation xmi:id="_no3MMMhAEeCHk-lvWGDTdA" base_Property="_no2lIMhAEeCHk-lvWGDTdA">
+  <CDA:CodeSystemConstraint xmi:id="_8WkxYMhAEeCHk-lvWGDTdA" identifier="2.16.840.1.113883.1.11.20.17" name="SocialHistoryStatusCode" version="20061017" base_Property="_no2lIMhAEeCHk-lvWGDTdA">
     <ruleId>CONF-248</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:CodeSystemConstraint xmi:id="_8WkxYMhAEeCHk-lvWGDTdA" identifier="2.16.840.1.113883.1.11.20.17" name="SocialHistoryStatusCode" version="20061017" base_Property="_no2lIMhAEeCHk-lvWGDTdA"/>
+  </CDA:CodeSystemConstraint>
   <CDA:CDATemplate xmi:id="_bf4ywMhBEeCHk-lvWGDTdA" base_Class="_mRUKcMhAEeCHk-lvWGDTdA" templateId="2.16.840.1.113883.10.20.1.56" assigningAuthorityName="HL7"/>
   <CDA:AssociationValidation xmi:id="_oO9tcMhBEeCHk-lvWGDTdA" severity="INFO" base_Association="_nZp2EMhBEeCHk-lvWGDTdA">
     <ruleId>CONF-246</ruleId>

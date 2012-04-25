@@ -66,6 +66,17 @@ public class MedicationFullfillmentInstructionsImpl extends FulfillmentInstructi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateMedicationFullfillmentInstructionsCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationFullfillmentInstructionsOperations.validateMedicationFullfillmentInstructionsCodeP(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateMedicationFullfillmentInstructionsCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationFullfillmentInstructionsOperations.validateMedicationFullfillmentInstructionsCode(

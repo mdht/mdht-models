@@ -81,6 +81,7 @@ public class VitalSignsSectionOperations extends
 	 */
 	public static boolean validateIHEVitalSignsSectionTemplateId(VitalSignsSection vitalSignsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_IHE_VITAL_SIGNS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.VITAL_SIGNS_SECTION);
@@ -98,6 +99,7 @@ public class VitalSignsSectionOperations extends
 					IHEValidator.VITAL_SIGNS_SECTION__IHE_VITAL_SIGNS_SECTION_TEMPLATE_ID,
 					IHEPlugin.INSTANCE.getString("IHEVitalSignsSectionTemplateId"), new Object[] { vitalSignsSection }));
 			}
+
 			return false;
 		}
 		return true;

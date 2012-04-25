@@ -85,6 +85,7 @@ public class PatientContactGuardianOperations extends GuardianOperations {
 	 */
 	public static boolean validatePatientContactGuardianTemplateId(PatientContactGuardian patientContactGuardian,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PATIENT_CONTACT_GUARDIAN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.PATIENT_CONTACT_GUARDIAN);
@@ -103,6 +104,7 @@ public class PatientContactGuardianOperations extends GuardianOperations {
 					IHEPlugin.INSTANCE.getString("PatientContactGuardianTemplateId"),
 					new Object[] { patientContactGuardian }));
 			}
+
 			return false;
 		}
 		return true;
@@ -141,6 +143,7 @@ public class PatientContactGuardianOperations extends GuardianOperations {
 	 */
 	public static boolean validatePatientContactGuardianAddr(PatientContactGuardian patientContactGuardian,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PATIENT_CONTACT_GUARDIAN_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.PATIENT_CONTACT_GUARDIAN);
@@ -158,6 +161,7 @@ public class PatientContactGuardianOperations extends GuardianOperations {
 					IHEValidator.PATIENT_CONTACT_GUARDIAN__PATIENT_CONTACT_GUARDIAN_ADDR,
 					IHEPlugin.INSTANCE.getString("PatientContactGuardianAddr"), new Object[] { patientContactGuardian }));
 			}
+
 			return false;
 		}
 		return true;
@@ -196,6 +200,7 @@ public class PatientContactGuardianOperations extends GuardianOperations {
 	 */
 	public static boolean validatePatientContactGuardianClassCode(PatientContactGuardian patientContactGuardian,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PATIENT_CONTACT_GUARDIAN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.PATIENT_CONTACT_GUARDIAN);
@@ -214,6 +219,7 @@ public class PatientContactGuardianOperations extends GuardianOperations {
 					IHEPlugin.INSTANCE.getString("PatientContactGuardianClassCode"),
 					new Object[] { patientContactGuardian }));
 			}
+
 			return false;
 		}
 		return true;
@@ -228,8 +234,8 @@ public class PatientContactGuardianOperations extends GuardianOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_PATIENT_CONTACT_GUARDIAN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
-			+ "value.codeSystem = '2.16.840.1.113883.5.111'))";
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
+			+ "value.codeSystem = '2.16.840.1.113883.5.111')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePatientContactGuardianCode(PatientContactGuardian, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Contact Guardian Code</em>}' invariant operation.
@@ -246,8 +252,8 @@ public class PatientContactGuardianOperations extends GuardianOperations {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (self.code.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in (
-	 * value.codeSystem = '2.16.840.1.113883.5.111'))
+	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+	 * value.codeSystem = '2.16.840.1.113883.5.111')
 	 * @param patientContactGuardian The receiving '<em><b>Patient Contact Guardian</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -256,6 +262,7 @@ public class PatientContactGuardianOperations extends GuardianOperations {
 	 */
 	public static boolean validatePatientContactGuardianCode(PatientContactGuardian patientContactGuardian,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PATIENT_CONTACT_GUARDIAN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.PATIENT_CONTACT_GUARDIAN);
@@ -273,6 +280,7 @@ public class PatientContactGuardianOperations extends GuardianOperations {
 					IHEValidator.PATIENT_CONTACT_GUARDIAN__PATIENT_CONTACT_GUARDIAN_CODE,
 					IHEPlugin.INSTANCE.getString("PatientContactGuardianCode"), new Object[] { patientContactGuardian }));
 			}
+
 			return false;
 		}
 		return true;
@@ -311,6 +319,7 @@ public class PatientContactGuardianOperations extends GuardianOperations {
 	 */
 	public static boolean validatePatientContactGuardianTelecom(PatientContactGuardian patientContactGuardian,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PATIENT_CONTACT_GUARDIAN_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.PATIENT_CONTACT_GUARDIAN);
@@ -329,6 +338,7 @@ public class PatientContactGuardianOperations extends GuardianOperations {
 					IHEPlugin.INSTANCE.getString("PatientContactGuardianTelecom"),
 					new Object[] { patientContactGuardian }));
 			}
+
 			return false;
 		}
 		return true;

@@ -89,6 +89,7 @@ public class ImmunizationsSectionOperations extends
 	 */
 	public static boolean validateHITSPImmunizationsSectionTemplateId(ImmunizationsSection immunizationsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_IMMUNIZATIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.IMMUNIZATIONS_SECTION);
@@ -107,6 +108,7 @@ public class ImmunizationsSectionOperations extends
 					HITSPPlugin.INSTANCE.getString("HITSPImmunizationsSectionTemplateId"),
 					new Object[] { immunizationsSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -145,6 +147,7 @@ public class ImmunizationsSectionOperations extends
 	 */
 	public static boolean validateHITSPImmunizationsSectionImmunization(ImmunizationsSection immunizationsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_IMMUNIZATIONS_SECTION_IMMUNIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.IMMUNIZATIONS_SECTION);
@@ -163,6 +166,7 @@ public class ImmunizationsSectionOperations extends
 					HITSPPlugin.INSTANCE.getString("HITSPImmunizationsSectionImmunization"),
 					new Object[] { immunizationsSection }));
 			}
+
 			return false;
 		}
 		return true;

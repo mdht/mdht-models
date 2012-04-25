@@ -89,6 +89,7 @@ public class ActiveProblemsSectionOperations extends ProblemSectionOperations {
 	 */
 	public static boolean validateActiveProblemsSectionTemplateId(ActiveProblemsSection activeProblemsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ACTIVE_PROBLEMS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.ACTIVE_PROBLEMS_SECTION);
@@ -107,6 +108,7 @@ public class ActiveProblemsSectionOperations extends ProblemSectionOperations {
 					IHEPlugin.INSTANCE.getString("ActiveProblemsSectionTemplateId"),
 					new Object[] { activeProblemsSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -145,6 +147,7 @@ public class ActiveProblemsSectionOperations extends ProblemSectionOperations {
 	 */
 	public static boolean validateActiveProblemsSectionProblemConcernEntry(ActiveProblemsSection activeProblemsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ACTIVE_PROBLEMS_SECTION_PROBLEM_CONCERN_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.ACTIVE_PROBLEMS_SECTION);
@@ -164,6 +167,7 @@ public class ActiveProblemsSectionOperations extends ProblemSectionOperations {
 					IHEPlugin.INSTANCE.getString("ActiveProblemsSectionProblemConcernEntry"),
 					new Object[] { activeProblemsSection }));
 			}
+
 			return false;
 		}
 		return true;

@@ -79,6 +79,7 @@ public class MedicationTaperedDoseOperations extends MedicationOperations {
 	 */
 	public static boolean validateHITSPMedicationTemplateId(MedicationTaperedDose medicationTaperedDose,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_MEDICATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.MEDICATION_TAPERED_DOSE);
@@ -101,6 +102,7 @@ public class MedicationTaperedDoseOperations extends MedicationOperations {
 								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
 									medicationTaperedDose, context) }), new Object[] { medicationTaperedDose }));
 			}
+
 			return false;
 		}
 		return true;

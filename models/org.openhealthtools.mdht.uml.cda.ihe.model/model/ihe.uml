@@ -2037,7 +2037,6 @@ patient's extremities.</body>
   <CDA:PropertyValidation xmi:id="_XomL0O5uEd-70KBGpEgX1Q" base_Property="_Skgm4O5uEd-70KBGpEgX1Q"/>
   <CDA:PropertyValidation xmi:id="_ekBs4O5uEd-70KBGpEgX1Q" severity="INFO" base_Property="_VmdU8O5uEd-70KBGpEgX1Q"/>
   <CDA:PropertyValidation xmi:id="_kRjQYO5uEd-70KBGpEgX1Q" base_Property="_Vmd8AO5uEd-70KBGpEgX1Q"/>
-  <CDA:PropertyValidation xmi:id="_yZVqcO5uEd-70KBGpEgX1Q" base_Property="_SkhN8O5uEd-70KBGpEgX1Q"/>
   <CDA:CodeSystemConstraint xmi:id="_y7KlIO5uEd-70KBGpEgX1Q" identifier="2.16.840.1.113883.5.111" name="RoleCode" base_Property="_SkhN8O5uEd-70KBGpEgX1Q"/>
   <CDA:PropertyValidation xmi:id="_4CiHkO5uEd-70KBGpEgX1Q" severity="WARNING" base_Property="_SkeKoO5uEd-70KBGpEgX1Q"/>
   <CDA:PropertyValidation xmi:id="_4f-4kO5uEd-70KBGpEgX1Q" severity="WARNING" base_Property="_Skh1AO5uEd-70KBGpEgX1Q"/>
@@ -2100,7 +2099,6 @@ patient's extremities.</body>
   <CDA:ConstraintValidation xmi:id="_BBpjoBdsEeCf9aMNaCAtDQ" severity="INFO"/>
   <CDA:ConstraintValidation xmi:id="_BhEDgBdsEeCf9aMNaCAtDQ" severity="INFO"/>
   <CDA:ConstraintValidation xmi:id="_OehYcBdsEeCf9aMNaCAtDQ"/>
-  <CDA:PropertyValidation xmi:id="_eg2VkCM-EeCxCon8a79rfA" base_Property="_cSAfcCM-EeCxCon8a79rfA"/>
   <CDA:ValueSetConstraint xmi:id="_etdOMCM-EeCxCon8a79rfA" base_Property="_cSAfcCM-EeCxCon8a79rfA">
     <reference href="ihe-vocab.uml#_9ys50SM8EeCxCon8a79rfA"/>
   </CDA:ValueSetConstraint>
@@ -2174,7 +2172,6 @@ patient's extremities.</body>
   <CDA:CDATemplate xmi:id="__OvjMMkCEeChgrgmBsw26A" base_Class="_7wLKkMkCEeChgrgmBsw26A" templateId="1.3.6.1.4.1.19376.1.5.3.1.4.15"/>
   <CDA:CDATemplate xmi:id="_Mrps4MkGEeChgrgmBsw26A" base_Class="_IOqkMMkGEeChgrgmBsw26A" templateId="1.3.6.1.4.1.19376.1.5.3.1.4.13.3" assigningAuthorityName="IHE PCC"/>
   <CDA:AssociationValidation xmi:id="_Rf6tIMkGEeChgrgmBsw26A" base_Association="_PWneUckGEeChgrgmBsw26A"/>
-  <CDA:PropertyValidation xmi:id="_F5f-cMkYEeChgrgmBsw26A" base_Property="_FSEyEMkYEeChgrgmBsw26A"/>
   <CDA:CodeSystemConstraint xmi:id="_Lw2MUMkYEeChgrgmBsw26A" base_Property="_FSEyEMkYEeChgrgmBsw26A">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ywdZ4Gg7Ed-ilOLYnIx0jA"/>
   </CDA:CodeSystemConstraint>
@@ -2182,7 +2179,6 @@ patient's extremities.</body>
   <CDA:ConstraintValidation xmi:id="_OosNEMkhEeCcAd9ZGNykiw" severity="INFO" base_Constraint="_JAhDoMkhEeCcAd9ZGNykiw"/>
   <CDA:ConstraintValidation xmi:id="_xA_6AMkhEeCcAd9ZGNykiw" base_Constraint="_POMG0MkhEeCcAd9ZGNykiw"/>
   <CDA:ConstraintValidation xmi:id="_Df5eQMkiEeCcAd9ZGNykiw" base_Constraint="_9Nwx0MkhEeCcAd9ZGNykiw"/>
-  <CDA:PropertyValidation xmi:id="_XxkLMMkjEeCcAd9ZGNykiw" base_Property="_WvN9YMkjEeCcAd9ZGNykiw"/>
   <CDA:ValueSetConstraint xmi:id="_cL8EwMkjEeCcAd9ZGNykiw" base_Property="_WvN9YMkjEeCcAd9ZGNykiw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/hitsp-c80.uml#_RS_-oCvBEd-LFp1hgdmc1w"/>
   </CDA:ValueSetConstraint>
@@ -2193,7 +2189,6 @@ patient's extremities.</body>
   <CDA:ConstraintValidation xmi:id="_Md3FQMnGEeCDOYZyQPaRHg" base_Constraint="_LxkHUMnDEeCDOYZyQPaRHg"/>
   <CDA:CDATemplate xmi:id="_NNqB4MzkEeCvbrjDQpuvkw" base_Class="_JkYOEMzkEeCvbrjDQpuvkw" templateId="1.3.6.1.4.1.19376.1.5.3.1.4.13.7" assigningAuthorityName="IHE PCC"/>
   <CDA:AssociationValidation xmi:id="_VneMgMzkEeCvbrjDQpuvkw" severity="WARNING" base_Association="_S5QSwszkEeCvbrjDQpuvkw"/>
-  <CDA:PropertyValidation xmi:id="_3dC_0MzkEeCvbrjDQpuvkw" base_Property="_3dCYwMzkEeCvbrjDQpuvkw"/>
   <CDA:CodeSystemConstraint xmi:id="_3-YLQMzkEeCvbrjDQpuvkw" base_Property="_3dCYwMzkEeCvbrjDQpuvkw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
@@ -2208,49 +2203,41 @@ patient's extremities.</body>
   <CDA:ConformsTo xmi:id="_GcNHwM9LEeCBIMy4xFlonQ" base_Generalization="_b0JLIc9KEeCBIMy4xFlonQ" requiresParentId="true"/>
   <CDA:AssociationValidation xmi:id="_w5POMM9NEeCBIMy4xFlonQ" severity="INFO" base_Association="_v-LUIs9NEeCBIMy4xFlonQ"/>
   <CDA:CDATemplate xmi:id="_PYNKsM9REeCBIMy4xFlonQ" base_Class="_NwEIMM9REeCBIMy4xFlonQ" templateId="1.3.6.1.4.1.19376.1.5.3.1.1.9.16" assigningAuthorityName="IHE PCC"/>
-  <CDA:PropertyValidation xmi:id="_SHBhYM9REeCBIMy4xFlonQ" base_Property="_RIYu4M9REeCBIMy4xFlonQ"/>
   <CDA:CodeSystemConstraint xmi:id="_Sh8i0M9REeCBIMy4xFlonQ" code="10210-3" displayName="GENERAL STATUS" base_Property="_RIYu4M9REeCBIMy4xFlonQ">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:AssociationValidation xmi:id="_a8NZYM9REeCBIMy4xFlonQ" severity="INFO" base_Association="_ZXVtUs9REeCBIMy4xFlonQ"/>
-  <CDA:PropertyValidation xmi:id="_llS38M9REeCBIMy4xFlonQ" base_Property="_kV2pUM9REeCBIMy4xFlonQ"/>
   <CDA:CodeSystemConstraint xmi:id="_l4C00M9REeCBIMy4xFlonQ" code="XX-VisibleImplantedDevices" displayName="Visible implanted medical devices" base_Property="_kV2pUM9REeCBIMy4xFlonQ">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:AssociationValidation xmi:id="_sPrsUM9REeCBIMy4xFlonQ" severity="INFO" base_Association="_rKDhAs9REeCBIMy4xFlonQ"/>
   <CDA:CDATemplate xmi:id="_u4ru4M9REeCBIMy4xFlonQ" base_Class="_j2TmkM9REeCBIMy4xFlonQ" templateId="1.3.6.1.4.1.19376.1.5.3.1.1.9.48" assigningAuthorityName="IHE PCC"/>
   <CDA:CDATemplate xmi:id="_NDnccM9SEeCBIMy4xFlonQ" base_Class="_KhAVwM9SEeCBIMy4xFlonQ" templateId="1.3.6.1.4.1.19376.1.5.3.1.1.9.17" assigningAuthorityName="IHE PCC"/>
-  <CDA:PropertyValidation xmi:id="_PUFDMM9SEeCBIMy4xFlonQ" base_Property="_K4N74M9SEeCBIMy4xFlonQ"/>
   <CDA:CodeSystemConstraint xmi:id="_PjGWoM9SEeCBIMy4xFlonQ" identifier="" code="29302-7" displayName="INTEGUMENTARY SYSTEM" base_Property="_K4N74M9SEeCBIMy4xFlonQ">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:AssociationValidation xmi:id="_bL3JgM9SEeCBIMy4xFlonQ" severity="INFO" base_Association="_aP53ks9SEeCBIMy4xFlonQ"/>
-  <CDA:PropertyValidation xmi:id="_wqDCAM9VEeCBIMy4xFlonQ" base_Property="_uHSxYM9VEeCBIMy4xFlonQ"/>
   <CDA:CodeSystemConstraint xmi:id="_wxML0M9VEeCBIMy4xFlonQ" code="10199-8" displayName="HEAD" base_Property="_uHSxYM9VEeCBIMy4xFlonQ">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:CDATemplate xmi:id="_3EXaEM9VEeCBIMy4xFlonQ" base_Class="_tvofUM9VEeCBIMy4xFlonQ" templateId="1.3.6.1.4.1.19376.1.5.3.1.1.9.18" assigningAuthorityName="IHE PCC"/>
   <CDA:AssociationValidation xmi:id="_5_hjoM9VEeCBIMy4xFlonQ" severity="INFO" base_Association="_5eDOQs9VEeCBIMy4xFlonQ"/>
-  <CDA:PropertyValidation xmi:id="_CNSPQM9WEeCBIMy4xFlonQ" base_Property="_A6kqMM9WEeCBIMy4xFlonQ"/>
   <CDA:CodeSystemConstraint xmi:id="_CTPGQM9WEeCBIMy4xFlonQ" code="10197-2" displayName="EYE" base_Property="_A6kqMM9WEeCBIMy4xFlonQ">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:AssociationValidation xmi:id="_KJDL8M9WEeCBIMy4xFlonQ" severity="INFO" base_Association="_JF9XQs9WEeCBIMy4xFlonQ"/>
   <CDA:CDATemplate xmi:id="_MSqj0M9WEeCBIMy4xFlonQ" base_Class="_AieTQM9WEeCBIMy4xFlonQ" templateId="1.3.6.1.4.1.19376.1.5.3.1.1.9.19" assigningAuthorityName="IHE PCC"/>
-  <CDA:PropertyValidation xmi:id="_YvWuAM9WEeCBIMy4xFlonQ" base_Property="_YPzrQM9WEeCBIMy4xFlonQ"/>
   <CDA:CDATemplate xmi:id="_aCETEM9WEeCBIMy4xFlonQ" base_Class="_X4APQM9WEeCBIMy4xFlonQ" templateId="1.3.6.1.4.1.19376.1.5.3.1.1.9.20" assigningAuthorityName="IHE PCC"/>
   <CDA:CodeSystemConstraint xmi:id="_dyVfsM9WEeCBIMy4xFlonQ" code="11393-6" displayName="EARS and NOSE and MOUTH and THROAT" base_Property="_YPzrQM9WEeCBIMy4xFlonQ">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:AssociationValidation xmi:id="_khxzMM9WEeCBIMy4xFlonQ" severity="INFO" base_Association="_j0sqws9WEeCBIMy4xFlonQ"/>
   <CDA:CDATemplate xmi:id="_ue-cIM9WEeCBIMy4xFlonQ" base_Class="_stnMMM9WEeCBIMy4xFlonQ" templateId="1.3.6.1.4.1.19376.1.5.3.1.1.9.21" assigningAuthorityName="IHE PCC"/>
-  <CDA:PropertyValidation xmi:id="_vwzQYM9WEeCBIMy4xFlonQ" base_Property="_tQkvUM9WEeCBIMy4xFlonQ"/>
   <CDA:CodeSystemConstraint xmi:id="_v41yEM9WEeCBIMy4xFlonQ" identifier="" code="10195-6" displayName="EAR" base_Property="_tQkvUM9WEeCBIMy4xFlonQ">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:AssociationValidation xmi:id="_30c9wM9WEeCBIMy4xFlonQ" severity="INFO" base_Association="_20xpcM9WEeCBIMy4xFlonQ"/>
   <CDA:CDATemplate xmi:id="_-5UHoM9WEeCBIMy4xFlonQ" base_Class="_9L0rEM9WEeCBIMy4xFlonQ" templateId="1.3.6.1.4.1.19376.1.5.3.1.1.9.22" assigningAuthorityName="IHE PCC"/>
-  <CDA:PropertyValidation xmi:id="_C1V4UM9XEeCBIMy4xFlonQ" base_Property="_9iuvMM9WEeCBIMy4xFlonQ"/>
   <CDA:CodeSystemConstraint xmi:id="_DBihQM9XEeCBIMy4xFlonQ" code="10203-8" displayName="NOSE" base_Property="_9iuvMM9WEeCBIMy4xFlonQ">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
@@ -2368,17 +2355,16 @@ patient's extremities.</body>
   <CDA:EntryRelationship xmi:id="_7fBrQBt3EeG6kfZwwf5nmQ" severity="INFO" base_Association="_IGCrkht3EeG6kfZwwf5nmQ" typeCode="RSON"/>
   <CDA:PropertyValidation xmi:id="__MQK8Bt3EeG6kfZwwf5nmQ" base_Property="_40-VQBt2EeG6kfZwwf5nmQ"/>
   <CDA:TextValue xmi:id="_AJ8iQBt4EeG6kfZwwf5nmQ" base_Property="_6FI8oBt2EeG6kfZwwf5nmQ"/>
-  <CDA:PropertyValidation xmi:id="_A0tWgBt4EeG6kfZwwf5nmQ" base_Property="_7bazEBt2EeG6kfZwwf5nmQ">
-    <ruleId>CONF-430</ruleId>
-    <ruleId>CONF-431</ruleId>
-  </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_CAtPkBt4EeG6kfZwwf5nmQ" severity="INFO" base_Property="_9ZfCQBt2EeG6kfZwwf5nmQ"/>
   <CDA:ConstraintValidation xmi:id="_HU5tEBt4EeG6kfZwwf5nmQ" base_Constraint="_LXP9oBt3EeG6kfZwwf5nmQ"/>
   <CDA:ConstraintValidation xmi:id="_HwKswBt4EeG6kfZwwf5nmQ" base_Constraint="_MrAEgBt3EeG6kfZwwf5nmQ"/>
   <CDA:ConstraintValidation xmi:id="_IOH0EBt4EeG6kfZwwf5nmQ" base_Constraint="_N9QWkBt3EeG6kfZwwf5nmQ"/>
   <CDA:ConstraintValidation xmi:id="_IrLjgBt4EeG6kfZwwf5nmQ" base_Constraint="_PQs7cBt3EeG6kfZwwf5nmQ"/>
   <CDA:ConstraintValidation xmi:id="_JeSbcBt4EeG6kfZwwf5nmQ" base_Constraint="_QanJ0Bt3EeG6kfZwwf5nmQ"/>
-  <CDA:ValueSetConstraint xmi:id="_ROyjUBt4EeG6kfZwwf5nmQ" identifier="2.16.840.1.113883.1.11.20.15" name="ProcedureStatusCode" version="20061017" base_Property="_7bazEBt2EeG6kfZwwf5nmQ"/>
+  <CDA:ValueSetConstraint xmi:id="_ROyjUBt4EeG6kfZwwf5nmQ" identifier="2.16.840.1.113883.1.11.20.15" name="ProcedureStatusCode" version="20061017" base_Property="_7bazEBt2EeG6kfZwwf5nmQ">
+    <ruleId>CONF-430</ruleId>
+    <ruleId>CONF-431</ruleId>
+  </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_dkt4ARuVEeG6kfZwwf5nmQ" base_Property="_dkt4ABuVEeG6kfZwwf5nmQ">
     <ruleId>CONF-487</ruleId>
   </CDA:PropertyValidation>

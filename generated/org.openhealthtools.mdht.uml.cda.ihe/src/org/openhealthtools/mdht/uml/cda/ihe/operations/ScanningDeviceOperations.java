@@ -87,6 +87,7 @@ public class ScanningDeviceOperations extends AuthorOperations {
 	 */
 	public static boolean validateScanningDeviceTimeEqualsDocumentEffectiveTime(ScanningDevice scanningDevice,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_SCANNING_DEVICE_TIME_EQUALS_DOCUMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.SCANNING_DEVICE);
@@ -106,6 +107,7 @@ public class ScanningDeviceOperations extends AuthorOperations {
 					IHEPlugin.INSTANCE.getString("ScanningDeviceTimeEqualsDocumentEffectiveTime"),
 					new Object[] { scanningDevice }));
 			}
+
 			return false;
 		}
 		return true;
@@ -144,6 +146,7 @@ public class ScanningDeviceOperations extends AuthorOperations {
 	 */
 	public static boolean validateScanningDeviceHasAssignedAuthorId(ScanningDevice scanningDevice,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_SCANNING_DEVICE_HAS_ASSIGNED_AUTHOR_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.SCANNING_DEVICE);
@@ -161,6 +164,7 @@ public class ScanningDeviceOperations extends AuthorOperations {
 					IHEValidator.SCANNING_DEVICE__SCANNING_DEVICE_HAS_ASSIGNED_AUTHOR_ID,
 					IHEPlugin.INSTANCE.getString("ScanningDeviceHasAssignedAuthorId"), new Object[] { scanningDevice }));
 			}
+
 			return false;
 		}
 		return true;
@@ -203,6 +207,7 @@ public class ScanningDeviceOperations extends AuthorOperations {
 	 */
 	public static boolean validateScanningDeviceHasAssignedAuthoringDeviceCode(ScanningDevice scanningDevice,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_SCANNING_DEVICE_HAS_ASSIGNED_AUTHORING_DEVICE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.SCANNING_DEVICE);
@@ -222,6 +227,7 @@ public class ScanningDeviceOperations extends AuthorOperations {
 					IHEPlugin.INSTANCE.getString("ScanningDeviceHasAssignedAuthoringDeviceCode"),
 					new Object[] { scanningDevice }));
 			}
+
 			return false;
 		}
 		return true;
@@ -260,6 +266,7 @@ public class ScanningDeviceOperations extends AuthorOperations {
 	 */
 	public static boolean validateScanningDeviceHasDeviceManufacturerModelName(ScanningDevice scanningDevice,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_SCANNING_DEVICE_HAS_DEVICE_MANUFACTURER_MODEL_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.SCANNING_DEVICE);
@@ -279,6 +286,7 @@ public class ScanningDeviceOperations extends AuthorOperations {
 					IHEPlugin.INSTANCE.getString("ScanningDeviceHasDeviceManufacturerModelName"),
 					new Object[] { scanningDevice }));
 			}
+
 			return false;
 		}
 		return true;
@@ -317,6 +325,7 @@ public class ScanningDeviceOperations extends AuthorOperations {
 	 */
 	public static boolean validateScanningDeviceHasDeviceSoftwareName(ScanningDevice scanningDevice,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_SCANNING_DEVICE_HAS_DEVICE_SOFTWARE_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.SCANNING_DEVICE);
@@ -335,6 +344,7 @@ public class ScanningDeviceOperations extends AuthorOperations {
 					IHEPlugin.INSTANCE.getString("ScanningDeviceHasDeviceSoftwareName"),
 					new Object[] { scanningDevice }));
 			}
+
 			return false;
 		}
 		return true;
@@ -373,6 +383,7 @@ public class ScanningDeviceOperations extends AuthorOperations {
 	 */
 	public static boolean validateScanningDeviceHasAssignedAuthorRepresentedOrganizationId(
 			ScanningDevice scanningDevice, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_SCANNING_DEVICE_HAS_ASSIGNED_AUTHOR_REPRESENTED_ORGANIZATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.SCANNING_DEVICE);
@@ -392,6 +403,7 @@ public class ScanningDeviceOperations extends AuthorOperations {
 					IHEPlugin.INSTANCE.getString("ScanningDeviceHasAssignedAuthorRepresentedOrganizationId"),
 					new Object[] { scanningDevice }));
 			}
+
 			return false;
 		}
 		return true;
@@ -430,6 +442,7 @@ public class ScanningDeviceOperations extends AuthorOperations {
 	 */
 	public static boolean validateScanningDeviceTemplateId(ScanningDevice scanningDevice, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_SCANNING_DEVICE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.SCANNING_DEVICE);
@@ -447,6 +460,7 @@ public class ScanningDeviceOperations extends AuthorOperations {
 					IHEValidator.SCANNING_DEVICE__SCANNING_DEVICE_TEMPLATE_ID,
 					IHEPlugin.INSTANCE.getString("ScanningDeviceTemplateId"), new Object[] { scanningDevice }));
 			}
+
 			return false;
 		}
 		return true;

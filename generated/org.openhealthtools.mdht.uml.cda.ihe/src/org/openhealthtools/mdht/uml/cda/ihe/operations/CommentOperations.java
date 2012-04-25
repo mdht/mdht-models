@@ -87,6 +87,7 @@ public class CommentOperations extends org.openhealthtools.mdht.uml.cda.ccd.oper
 	 */
 	public static boolean validateIHECommentHasTextReference(Comment comment, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_IHE_COMMENT_HAS_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.COMMENT);
@@ -104,6 +105,7 @@ public class CommentOperations extends org.openhealthtools.mdht.uml.cda.ccd.oper
 					IHEValidator.COMMENT__IHE_COMMENT_HAS_TEXT_REFERENCE,
 					IHEPlugin.INSTANCE.getString("IHECommentHasTextReference"), new Object[] { comment }));
 			}
+
 			return false;
 		}
 		return true;
@@ -142,6 +144,7 @@ public class CommentOperations extends org.openhealthtools.mdht.uml.cda.ccd.oper
 	 */
 	public static boolean validateIHECommentEffectiveTimeWhenAuthorPresent(Comment comment,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_IHE_COMMENT_EFFECTIVE_TIME_WHEN_AUTHOR_PRESENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.COMMENT);
@@ -159,6 +162,7 @@ public class CommentOperations extends org.openhealthtools.mdht.uml.cda.ccd.oper
 					IHEValidator.COMMENT__IHE_COMMENT_EFFECTIVE_TIME_WHEN_AUTHOR_PRESENT,
 					IHEPlugin.INSTANCE.getString("IHECommentEffectiveTimeWhenAuthorPresent"), new Object[] { comment }));
 			}
+
 			return false;
 		}
 		return true;
@@ -198,6 +202,7 @@ public class CommentOperations extends org.openhealthtools.mdht.uml.cda.ccd.oper
 	 */
 	public static boolean validateIHECommentHasAuthorId(Comment comment, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_IHE_COMMENT_HAS_AUTHOR_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.COMMENT);
@@ -213,6 +218,7 @@ public class CommentOperations extends org.openhealthtools.mdht.uml.cda.ccd.oper
 					Diagnostic.ERROR, IHEValidator.DIAGNOSTIC_SOURCE, IHEValidator.COMMENT__IHE_COMMENT_HAS_AUTHOR_ID,
 					IHEPlugin.INSTANCE.getString("IHECommentHasAuthorId"), new Object[] { comment }));
 			}
+
 			return false;
 		}
 		return true;
@@ -257,6 +263,7 @@ public class CommentOperations extends org.openhealthtools.mdht.uml.cda.ccd.oper
 	 */
 	public static boolean validateIHECommentHasAuthorOrganization(Comment comment, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_IHE_COMMENT_HAS_AUTHOR_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.COMMENT);
@@ -274,6 +281,7 @@ public class CommentOperations extends org.openhealthtools.mdht.uml.cda.ccd.oper
 					IHEValidator.COMMENT__IHE_COMMENT_HAS_AUTHOR_ORGANIZATION,
 					IHEPlugin.INSTANCE.getString("IHECommentHasAuthorOrganization"), new Object[] { comment }));
 			}
+
 			return false;
 		}
 		return true;
@@ -288,8 +296,7 @@ public class CommentOperations extends org.openhealthtools.mdht.uml.cda.ccd.oper
 	 * @ordered
 	 */
 	protected static final String VALIDATE_IHE_COMMENT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "
-			+ "let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in ("
-			+ "value.code = 'completed'))";
+			+ "let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in " + "value.code = 'completed')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateIHECommentStatusCode(Comment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate IHE Comment Status Code</em>}' invariant operation.
@@ -306,8 +313,8 @@ public class CommentOperations extends org.openhealthtools.mdht.uml.cda.ccd.oper
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
-	 * let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in (
-	 * value.code = 'completed'))
+	 * let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
+	 * value.code = 'completed')
 	 * @param comment The receiving '<em><b>Comment</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -316,6 +323,7 @@ public class CommentOperations extends org.openhealthtools.mdht.uml.cda.ccd.oper
 	 */
 	public static boolean validateIHECommentStatusCode(Comment comment, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_IHE_COMMENT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.COMMENT);
@@ -331,6 +339,7 @@ public class CommentOperations extends org.openhealthtools.mdht.uml.cda.ccd.oper
 					Diagnostic.ERROR, IHEValidator.DIAGNOSTIC_SOURCE, IHEValidator.COMMENT__IHE_COMMENT_STATUS_CODE,
 					IHEPlugin.INSTANCE.getString("IHECommentStatusCode"), new Object[] { comment }));
 			}
+
 			return false;
 		}
 		return true;
@@ -369,6 +378,7 @@ public class CommentOperations extends org.openhealthtools.mdht.uml.cda.ccd.oper
 	 */
 	public static boolean validateIHECommentText(Comment comment, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_IHE_COMMENT_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.COMMENT);
@@ -384,6 +394,7 @@ public class CommentOperations extends org.openhealthtools.mdht.uml.cda.ccd.oper
 					Diagnostic.ERROR, IHEValidator.DIAGNOSTIC_SOURCE, IHEValidator.COMMENT__IHE_COMMENT_TEXT,
 					IHEPlugin.INSTANCE.getString("IHECommentText"), new Object[] { comment }));
 			}
+
 			return false;
 		}
 		return true;
@@ -424,6 +435,7 @@ public class CommentOperations extends org.openhealthtools.mdht.uml.cda.ccd.oper
 
 	public static boolean validateIHECommentAuthor(Comment comment, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_IHE_COMMENT_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.COMMENT);
@@ -439,6 +451,7 @@ public class CommentOperations extends org.openhealthtools.mdht.uml.cda.ccd.oper
 					Diagnostic.INFO, IHEValidator.DIAGNOSTIC_SOURCE, IHEValidator.COMMENT__IHE_COMMENT_AUTHOR,
 					IHEPlugin.INSTANCE.getString("IHECommentAuthor"), new Object[] { comment }));
 			}
+
 			return false;
 		}
 		return true;
@@ -477,6 +490,7 @@ public class CommentOperations extends org.openhealthtools.mdht.uml.cda.ccd.oper
 	 */
 	public static boolean validateCommentTemplateId(Comment comment, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_COMMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.COMMENT);
@@ -497,6 +511,7 @@ public class CommentOperations extends org.openhealthtools.mdht.uml.cda.ccd.oper
 								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(comment, context) }),
 					new Object[] { comment }));
 			}
+
 			return false;
 		}
 		return true;

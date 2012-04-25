@@ -82,6 +82,7 @@ public class CodedFamilyMedicalHistorySectionOperations extends FamilyMedicalHis
 	public static boolean validateCodedFamilyMedicalHistorySectionTemplateId(
 			CodedFamilyMedicalHistorySection codedFamilyMedicalHistorySection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_CODED_FAMILY_MEDICAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.CODED_FAMILY_MEDICAL_HISTORY_SECTION);
@@ -102,6 +103,7 @@ public class CodedFamilyMedicalHistorySectionOperations extends FamilyMedicalHis
 					IHEPlugin.INSTANCE.getString("CodedFamilyMedicalHistorySectionTemplateId"),
 					new Object[] { codedFamilyMedicalHistorySection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -141,6 +143,7 @@ public class CodedFamilyMedicalHistorySectionOperations extends FamilyMedicalHis
 	public static boolean validateCodedFamilyMedicalHistorySectionFamilyHistoryOrganizer(
 			CodedFamilyMedicalHistorySection codedFamilyMedicalHistorySection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_CODED_FAMILY_MEDICAL_HISTORY_SECTION_FAMILY_HISTORY_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.CODED_FAMILY_MEDICAL_HISTORY_SECTION);
@@ -161,6 +164,7 @@ public class CodedFamilyMedicalHistorySectionOperations extends FamilyMedicalHis
 					IHEPlugin.INSTANCE.getString("CodedFamilyMedicalHistorySectionFamilyHistoryOrganizer"),
 					new Object[] { codedFamilyMedicalHistorySection }));
 			}
+
 			return false;
 		}
 		return true;

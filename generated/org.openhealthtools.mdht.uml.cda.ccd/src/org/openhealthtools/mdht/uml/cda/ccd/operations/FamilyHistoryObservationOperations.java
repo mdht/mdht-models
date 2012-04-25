@@ -100,6 +100,7 @@ public class FamilyHistoryObservationOperations extends ClinicalStatementOperati
 	 */
 	public static boolean validateFamilyHistoryObservationHasSubjectPatientRelationship(
 			FamilyHistoryObservation familyHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_FAMILY_HISTORY_OBSERVATION_HAS_SUBJECT_PATIENT_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.FAMILY_HISTORY_OBSERVATION);
@@ -120,6 +121,7 @@ public class FamilyHistoryObservationOperations extends ClinicalStatementOperati
 					CCDPlugin.INSTANCE.getString("FamilyHistoryObservationHasSubjectPatientRelationship"),
 					new Object[] { familyHistoryObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -158,6 +160,7 @@ public class FamilyHistoryObservationOperations extends ClinicalStatementOperati
 	 */
 	public static boolean validateFamilyHistoryObservationRelationshipValueCode(
 			FamilyHistoryObservation familyHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_FAMILY_HISTORY_OBSERVATION_RELATIONSHIP_VALUE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.FAMILY_HISTORY_OBSERVATION);
@@ -177,6 +180,7 @@ public class FamilyHistoryObservationOperations extends ClinicalStatementOperati
 					CCDPlugin.INSTANCE.getString("FamilyHistoryObservationRelationshipValueCode"),
 					new Object[] { familyHistoryObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -215,6 +219,7 @@ public class FamilyHistoryObservationOperations extends ClinicalStatementOperati
 	 */
 	public static boolean validateFamilyHistoryObservationHasRelatedSubjectCode(
 			FamilyHistoryObservation familyHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_FAMILY_HISTORY_OBSERVATION_HAS_RELATED_SUBJECT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.FAMILY_HISTORY_OBSERVATION);
@@ -234,6 +239,7 @@ public class FamilyHistoryObservationOperations extends ClinicalStatementOperati
 					CCDPlugin.INSTANCE.getString("FamilyHistoryObservationHasRelatedSubjectCode"),
 					new Object[] { familyHistoryObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -272,6 +278,7 @@ public class FamilyHistoryObservationOperations extends ClinicalStatementOperati
 	 */
 	public static boolean validateFamilyHistoryObservationRelatedSubjectCodeValueSet(
 			FamilyHistoryObservation familyHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_FAMILY_HISTORY_OBSERVATION_RELATED_SUBJECT_CODE_VALUE_SET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.FAMILY_HISTORY_OBSERVATION);
@@ -291,6 +298,7 @@ public class FamilyHistoryObservationOperations extends ClinicalStatementOperati
 					CCDPlugin.INSTANCE.getString("FamilyHistoryObservationRelatedSubjectCodeValueSet"),
 					new Object[] { familyHistoryObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -329,6 +337,7 @@ public class FamilyHistoryObservationOperations extends ClinicalStatementOperati
 	 */
 	public static boolean validateFamilyHistoryObservationHasRelatedSubjectSubject(
 			FamilyHistoryObservation familyHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_FAMILY_HISTORY_OBSERVATION_HAS_RELATED_SUBJECT_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.FAMILY_HISTORY_OBSERVATION);
@@ -348,6 +357,7 @@ public class FamilyHistoryObservationOperations extends ClinicalStatementOperati
 					CCDPlugin.INSTANCE.getString("FamilyHistoryObservationHasRelatedSubjectSubject"),
 					new Object[] { familyHistoryObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -386,6 +396,7 @@ public class FamilyHistoryObservationOperations extends ClinicalStatementOperati
 	 */
 	public static boolean validateFamilyHistoryObservationHasGenderCode(
 			FamilyHistoryObservation familyHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_FAMILY_HISTORY_OBSERVATION_HAS_GENDER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.FAMILY_HISTORY_OBSERVATION);
@@ -404,6 +415,7 @@ public class FamilyHistoryObservationOperations extends ClinicalStatementOperati
 					CCDPlugin.INSTANCE.getString("FamilyHistoryObservationHasGenderCode"),
 					new Object[] { familyHistoryObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -442,6 +454,7 @@ public class FamilyHistoryObservationOperations extends ClinicalStatementOperati
 	 */
 	public static boolean validateFamilyHistoryObservationRelatedSubjectBirthTime(
 			FamilyHistoryObservation familyHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_FAMILY_HISTORY_OBSERVATION_RELATED_SUBJECT_BIRTH_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.FAMILY_HISTORY_OBSERVATION);
@@ -461,6 +474,7 @@ public class FamilyHistoryObservationOperations extends ClinicalStatementOperati
 					CCDPlugin.INSTANCE.getString("FamilyHistoryObservationRelatedSubjectBirthTime"),
 					new Object[] { familyHistoryObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -499,6 +513,7 @@ public class FamilyHistoryObservationOperations extends ClinicalStatementOperati
 	 */
 	public static boolean validateFamilyHistoryObservationTemplateId(FamilyHistoryObservation familyHistoryObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_FAMILY_HISTORY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.FAMILY_HISTORY_OBSERVATION);
@@ -517,6 +532,7 @@ public class FamilyHistoryObservationOperations extends ClinicalStatementOperati
 					CCDPlugin.INSTANCE.getString("FamilyHistoryObservationTemplateId"),
 					new Object[] { familyHistoryObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -555,6 +571,7 @@ public class FamilyHistoryObservationOperations extends ClinicalStatementOperati
 	 */
 	public static boolean validateFamilyHistoryObservationId(FamilyHistoryObservation familyHistoryObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_FAMILY_HISTORY_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.FAMILY_HISTORY_OBSERVATION);
@@ -573,6 +590,7 @@ public class FamilyHistoryObservationOperations extends ClinicalStatementOperati
 					CCDPlugin.INSTANCE.getString("FamilyHistoryObservationId"),
 					new Object[] { familyHistoryObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -587,8 +605,7 @@ public class FamilyHistoryObservationOperations extends ClinicalStatementOperati
 	 * @ordered
 	 */
 	protected static final String VALIDATE_FAMILY_HISTORY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "
-			+ "let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in ("
-			+ "value.code = 'completed'))";
+			+ "let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in " + "value.code = 'completed')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateFamilyHistoryObservationStatusCode(FamilyHistoryObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Observation Status Code</em>}' invariant operation.
@@ -605,8 +622,8 @@ public class FamilyHistoryObservationOperations extends ClinicalStatementOperati
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
-	 * let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in (
-	 * value.code = 'completed'))
+	 * let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
+	 * value.code = 'completed')
 	 * @param familyHistoryObservation The receiving '<em><b>Family History Observation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -615,6 +632,7 @@ public class FamilyHistoryObservationOperations extends ClinicalStatementOperati
 	 */
 	public static boolean validateFamilyHistoryObservationStatusCode(FamilyHistoryObservation familyHistoryObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_FAMILY_HISTORY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.FAMILY_HISTORY_OBSERVATION);
@@ -633,6 +651,7 @@ public class FamilyHistoryObservationOperations extends ClinicalStatementOperati
 					CCDPlugin.INSTANCE.getString("FamilyHistoryObservationStatusCode"),
 					new Object[] { familyHistoryObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -671,6 +690,7 @@ public class FamilyHistoryObservationOperations extends ClinicalStatementOperati
 	 */
 	public static boolean validateFamilyHistoryObservationEffectiveTime(
 			FamilyHistoryObservation familyHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_FAMILY_HISTORY_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.FAMILY_HISTORY_OBSERVATION);
@@ -689,6 +709,7 @@ public class FamilyHistoryObservationOperations extends ClinicalStatementOperati
 					CCDPlugin.INSTANCE.getString("FamilyHistoryObservationEffectiveTime"),
 					new Object[] { familyHistoryObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -727,6 +748,7 @@ public class FamilyHistoryObservationOperations extends ClinicalStatementOperati
 	 */
 	public static boolean validateFamilyHistoryObservationMoodCode(FamilyHistoryObservation familyHistoryObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_FAMILY_HISTORY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.FAMILY_HISTORY_OBSERVATION);
@@ -745,6 +767,7 @@ public class FamilyHistoryObservationOperations extends ClinicalStatementOperati
 					CCDPlugin.INSTANCE.getString("FamilyHistoryObservationMoodCode"),
 					new Object[] { familyHistoryObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -783,6 +806,7 @@ public class FamilyHistoryObservationOperations extends ClinicalStatementOperati
 	 */
 	public static boolean validateFamilyHistoryObservationAgeObservation(
 			FamilyHistoryObservation familyHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_FAMILY_HISTORY_OBSERVATION_AGE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.FAMILY_HISTORY_OBSERVATION);
@@ -801,6 +825,7 @@ public class FamilyHistoryObservationOperations extends ClinicalStatementOperati
 					CCDPlugin.INSTANCE.getString("FamilyHistoryObservationAgeObservation"),
 					new Object[] { familyHistoryObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -839,6 +864,7 @@ public class FamilyHistoryObservationOperations extends ClinicalStatementOperati
 	 */
 	public static boolean validateFamilyHistoryObservationProblemStatusObservation(
 			FamilyHistoryObservation familyHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_FAMILY_HISTORY_OBSERVATION_PROBLEM_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.FAMILY_HISTORY_OBSERVATION);
@@ -858,6 +884,7 @@ public class FamilyHistoryObservationOperations extends ClinicalStatementOperati
 					CCDPlugin.INSTANCE.getString("FamilyHistoryObservationProblemStatusObservation"),
 					new Object[] { familyHistoryObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -897,7 +924,7 @@ public class FamilyHistoryObservationOperations extends ClinicalStatementOperati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				CCDPackage.Literals.FAMILY_HISTORY_OBSERVATION,
-				CCDPackage.Literals.FAMILY_HISTORY_OBSERVATION.getEAllOperations().get(63));
+				CCDPackage.Literals.FAMILY_HISTORY_OBSERVATION.getEAllOperations().get(65));
 			try {
 				GET_AGE_OBSERVATION__EOCL_QRY = helper.createQuery(GET_AGE_OBSERVATION__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -942,7 +969,7 @@ public class FamilyHistoryObservationOperations extends ClinicalStatementOperati
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				CCDPackage.Literals.FAMILY_HISTORY_OBSERVATION,
-				CCDPackage.Literals.FAMILY_HISTORY_OBSERVATION.getEAllOperations().get(64));
+				CCDPackage.Literals.FAMILY_HISTORY_OBSERVATION.getEAllOperations().get(66));
 			try {
 				GET_PROBLEM_STATUS_OBSERVATION__EOCL_QRY = helper.createQuery(GET_PROBLEM_STATUS_OBSERVATION__EOCL_EXP);
 			} catch (ParserException pe) {

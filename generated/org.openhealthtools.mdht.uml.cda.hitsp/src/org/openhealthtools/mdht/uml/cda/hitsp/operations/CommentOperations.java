@@ -81,6 +81,7 @@ public class CommentOperations extends org.openhealthtools.mdht.uml.cda.ihe.oper
 	 */
 	public static boolean validateHITSPCommentTemplateId(Comment comment, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_COMMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.COMMENT);
@@ -97,6 +98,7 @@ public class CommentOperations extends org.openhealthtools.mdht.uml.cda.ihe.oper
 					HITSPValidator.COMMENT__HITSP_COMMENT_TEMPLATE_ID,
 					HITSPPlugin.INSTANCE.getString("HITSPCommentTemplateId"), new Object[] { comment }));
 			}
+
 			return false;
 		}
 		return true;
@@ -137,6 +139,7 @@ public class CommentOperations extends org.openhealthtools.mdht.uml.cda.ihe.oper
 
 	public static boolean validateHITSPCommentAuthor(Comment comment, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_COMMENT_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.COMMENT);
@@ -152,6 +155,7 @@ public class CommentOperations extends org.openhealthtools.mdht.uml.cda.ihe.oper
 					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE, HITSPValidator.COMMENT__HITSP_COMMENT_AUTHOR,
 					HITSPPlugin.INSTANCE.getString("HITSPCommentAuthor"), new Object[] { comment }));
 			}
+
 			return false;
 		}
 		return true;

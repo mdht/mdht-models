@@ -83,6 +83,7 @@ public class AbdomenSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateAbdomenSectionTemplateId(AbdomenSection abdomenSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_ABDOMEN_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.ABDOMEN_SECTION);
@@ -100,6 +101,7 @@ public class AbdomenSectionOperations extends SectionOperations {
 					IHEValidator.ABDOMEN_SECTION__ABDOMEN_SECTION_TEMPLATE_ID,
 					IHEPlugin.INSTANCE.getString("AbdomenSectionTemplateId"), new Object[] { abdomenSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -114,8 +116,8 @@ public class AbdomenSectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_ABDOMEN_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
-			+ "value.code = '10191-5' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
+			+ "value.code = '10191-5' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAbdomenSectionCode(AbdomenSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Abdomen Section Code</em>}' invariant operation.
@@ -132,8 +134,8 @@ public class AbdomenSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in (
-	 * value.code = '10191-5' and value.codeSystem = '2.16.840.1.113883.6.1'))
+	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+	 * value.code = '10191-5' and value.codeSystem = '2.16.840.1.113883.6.1')
 	 * @param abdomenSection The receiving '<em><b>Abdomen Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -142,6 +144,7 @@ public class AbdomenSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateAbdomenSectionCode(AbdomenSection abdomenSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_ABDOMEN_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.ABDOMEN_SECTION);
@@ -158,6 +161,7 @@ public class AbdomenSectionOperations extends SectionOperations {
 					IHEValidator.ABDOMEN_SECTION__ABDOMEN_SECTION_CODE,
 					IHEPlugin.INSTANCE.getString("AbdomenSectionCode"), new Object[] { abdomenSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -196,6 +200,7 @@ public class AbdomenSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateAbdomenSectionProblemEntry(AbdomenSection abdomenSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ABDOMEN_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.ABDOMEN_SECTION);
@@ -213,6 +218,7 @@ public class AbdomenSectionOperations extends SectionOperations {
 					IHEValidator.ABDOMEN_SECTION__ABDOMEN_SECTION_PROBLEM_ENTRY,
 					IHEPlugin.INSTANCE.getString("AbdomenSectionProblemEntry"), new Object[] { abdomenSection }));
 			}
+
 			return false;
 		}
 		return true;

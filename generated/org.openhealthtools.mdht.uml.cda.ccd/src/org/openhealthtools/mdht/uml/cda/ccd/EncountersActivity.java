@@ -23,7 +23,7 @@ import org.openhealthtools.mdht.uml.cda.Encounter;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ccd.CCDPackage#getEncountersActivity()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation moodCode='EVN' classCode='ENC' templateId.root='2.16.840.1.113883.10.20.1.21' constraints.validation.error='EncountersActivityTemplateId EncountersActivityClassCode EncountersActivityMoodCode EncountersActivityId' constraints.validation.info='EncountersActivityHasIndications EncountersActivityHasPractitioners EncountersActivityPractitionerRole EncountersActivityEffectiveTime EncountersActivityPatientInstruction EncountersActivityAgeObservation EncountersActivityEncounterLocation'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='EncountersActivityTemplateId EncountersActivityClassCode EncountersActivityMoodCode EncountersActivityId' templateId.root='2.16.840.1.113883.10.20.1.21' constraints.validation.info='EncountersActivityHasIndications EncountersActivityHasPractitioners EncountersActivityPractitionerRole EncountersActivityEffectiveTime EncountersActivityPatientInstruction EncountersActivityAgeObservation EncountersActivityEncounterLocation' classCode='ENC' moodCode='EVN'"
  * @generated
  */
 public interface EncountersActivity extends Encounter {

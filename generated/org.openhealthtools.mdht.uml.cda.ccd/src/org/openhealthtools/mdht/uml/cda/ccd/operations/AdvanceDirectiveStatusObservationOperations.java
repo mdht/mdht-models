@@ -80,6 +80,7 @@ public class AdvanceDirectiveStatusObservationOperations extends StatusObservati
 	public static boolean validateStatusObservationTemplateId(
 			AdvanceDirectiveStatusObservation advanceDirectiveStatusObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.ADVANCE_DIRECTIVE_STATUS_OBSERVATION);
@@ -103,6 +104,7 @@ public class AdvanceDirectiveStatusObservationOperations extends StatusObservati
 									advanceDirectiveStatusObservation, context) }),
 					new Object[] { advanceDirectiveStatusObservation }));
 			}
+
 			return false;
 		}
 		return true;

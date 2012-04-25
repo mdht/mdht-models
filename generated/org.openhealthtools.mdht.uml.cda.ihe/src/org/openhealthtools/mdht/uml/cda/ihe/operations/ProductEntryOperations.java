@@ -81,6 +81,7 @@ public class ProductEntryOperations extends ProductOperations {
 	 */
 	public static boolean validateProductEntryTemplateId(ProductEntry productEntry, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PRODUCT_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.PRODUCT_ENTRY);
@@ -98,6 +99,7 @@ public class ProductEntryOperations extends ProductOperations {
 					IHEValidator.PRODUCT_ENTRY__PRODUCT_ENTRY_TEMPLATE_ID,
 					IHEPlugin.INSTANCE.getString("ProductEntryTemplateId"), new Object[] { productEntry }));
 			}
+
 			return false;
 		}
 		return true;

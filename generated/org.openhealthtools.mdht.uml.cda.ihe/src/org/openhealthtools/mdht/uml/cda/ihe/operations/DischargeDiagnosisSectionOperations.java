@@ -88,6 +88,7 @@ public class DischargeDiagnosisSectionOperations extends SectionOperations {
 	public static boolean validateDischargeDiagnosisSectionTemplateId(
 			DischargeDiagnosisSection dischargeDiagnosisSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_DISCHARGE_DIAGNOSIS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.DISCHARGE_DIAGNOSIS_SECTION);
@@ -106,6 +107,7 @@ public class DischargeDiagnosisSectionOperations extends SectionOperations {
 					IHEPlugin.INSTANCE.getString("DischargeDiagnosisSectionTemplateId"),
 					new Object[] { dischargeDiagnosisSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -120,8 +122,8 @@ public class DischargeDiagnosisSectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_DISCHARGE_DIAGNOSIS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
-			+ "value.code = '11535-2' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
+			+ "value.code = '11535-2' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateDischargeDiagnosisSectionCode(DischargeDiagnosisSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Discharge Diagnosis Section Code</em>}' invariant operation.
@@ -138,8 +140,8 @@ public class DischargeDiagnosisSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in (
-	 * value.code = '11535-2' and value.codeSystem = '2.16.840.1.113883.6.1'))
+	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+	 * value.code = '11535-2' and value.codeSystem = '2.16.840.1.113883.6.1')
 	 * @param dischargeDiagnosisSection The receiving '<em><b>Discharge Diagnosis Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -148,6 +150,7 @@ public class DischargeDiagnosisSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateDischargeDiagnosisSectionCode(DischargeDiagnosisSection dischargeDiagnosisSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_DISCHARGE_DIAGNOSIS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.DISCHARGE_DIAGNOSIS_SECTION);
@@ -166,6 +169,7 @@ public class DischargeDiagnosisSectionOperations extends SectionOperations {
 					IHEPlugin.INSTANCE.getString("DischargeDiagnosisSectionCode"),
 					new Object[] { dischargeDiagnosisSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -205,6 +209,7 @@ public class DischargeDiagnosisSectionOperations extends SectionOperations {
 	public static boolean validateDischargeDiagnosisSectionProblemConcernEntry(
 			DischargeDiagnosisSection dischargeDiagnosisSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_DISCHARGE_DIAGNOSIS_SECTION_PROBLEM_CONCERN_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.DISCHARGE_DIAGNOSIS_SECTION);
@@ -224,6 +229,7 @@ public class DischargeDiagnosisSectionOperations extends SectionOperations {
 					IHEPlugin.INSTANCE.getString("DischargeDiagnosisSectionProblemConcernEntry"),
 					new Object[] { dischargeDiagnosisSection }));
 			}
+
 			return false;
 		}
 		return true;

@@ -84,6 +84,7 @@ public class EarsNoseMouthThroatSectionOperations extends SectionOperations {
 	public static boolean validateEarsNoseMouthThroatSectionTemplateId(
 			EarsNoseMouthThroatSection earsNoseMouthThroatSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_EARS_NOSE_MOUTH_THROAT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.EARS_NOSE_MOUTH_THROAT_SECTION);
@@ -102,6 +103,7 @@ public class EarsNoseMouthThroatSectionOperations extends SectionOperations {
 					IHEPlugin.INSTANCE.getString("EarsNoseMouthThroatSectionTemplateId"),
 					new Object[] { earsNoseMouthThroatSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -116,8 +118,8 @@ public class EarsNoseMouthThroatSectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_EARS_NOSE_MOUTH_THROAT_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
-			+ "value.code = '11393-6' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
+			+ "value.code = '11393-6' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateEarsNoseMouthThroatSectionCode(EarsNoseMouthThroatSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Ears Nose Mouth Throat Section Code</em>}' invariant operation.
@@ -134,8 +136,8 @@ public class EarsNoseMouthThroatSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in (
-	 * value.code = '11393-6' and value.codeSystem = '2.16.840.1.113883.6.1'))
+	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+	 * value.code = '11393-6' and value.codeSystem = '2.16.840.1.113883.6.1')
 	 * @param earsNoseMouthThroatSection The receiving '<em><b>Ears Nose Mouth Throat Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -144,6 +146,7 @@ public class EarsNoseMouthThroatSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateEarsNoseMouthThroatSectionCode(EarsNoseMouthThroatSection earsNoseMouthThroatSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_EARS_NOSE_MOUTH_THROAT_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.EARS_NOSE_MOUTH_THROAT_SECTION);
@@ -162,6 +165,7 @@ public class EarsNoseMouthThroatSectionOperations extends SectionOperations {
 					IHEPlugin.INSTANCE.getString("EarsNoseMouthThroatSectionCode"),
 					new Object[] { earsNoseMouthThroatSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -201,6 +205,7 @@ public class EarsNoseMouthThroatSectionOperations extends SectionOperations {
 	public static boolean validateEarsNoseMouthThroatSectionProblemEntry(
 			EarsNoseMouthThroatSection earsNoseMouthThroatSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_EARS_NOSE_MOUTH_THROAT_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.EARS_NOSE_MOUTH_THROAT_SECTION);
@@ -219,6 +224,7 @@ public class EarsNoseMouthThroatSectionOperations extends SectionOperations {
 					IHEPlugin.INSTANCE.getString("EarsNoseMouthThroatSectionProblemEntry"),
 					new Object[] { earsNoseMouthThroatSection }));
 			}
+
 			return false;
 		}
 		return true;

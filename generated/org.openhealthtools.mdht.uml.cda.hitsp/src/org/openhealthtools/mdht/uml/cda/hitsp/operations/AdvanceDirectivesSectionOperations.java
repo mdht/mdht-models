@@ -89,6 +89,7 @@ public class AdvanceDirectivesSectionOperations extends CodedAdvanceDirectivesSe
 	 */
 	public static boolean validateHITSPAdvanceDirectivesSectionTemplateId(
 			AdvanceDirectivesSection advanceDirectivesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_ADVANCE_DIRECTIVES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.ADVANCE_DIRECTIVES_SECTION);
@@ -107,6 +108,7 @@ public class AdvanceDirectivesSectionOperations extends CodedAdvanceDirectivesSe
 					HITSPPlugin.INSTANCE.getString("HITSPAdvanceDirectivesSectionTemplateId"),
 					new Object[] { advanceDirectivesSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -145,6 +147,7 @@ public class AdvanceDirectivesSectionOperations extends CodedAdvanceDirectivesSe
 	 */
 	public static boolean validateHITSPAdvanceDirectivesSectionAdvanceDirective(
 			AdvanceDirectivesSection advanceDirectivesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_ADVANCE_DIRECTIVES_SECTION_ADVANCE_DIRECTIVE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.ADVANCE_DIRECTIVES_SECTION);
@@ -164,6 +167,7 @@ public class AdvanceDirectivesSectionOperations extends CodedAdvanceDirectivesSe
 					HITSPPlugin.INSTANCE.getString("HITSPAdvanceDirectivesSectionAdvanceDirective"),
 					new Object[] { advanceDirectivesSection }));
 			}
+
 			return false;
 		}
 		return true;

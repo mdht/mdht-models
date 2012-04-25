@@ -82,6 +82,7 @@ public class CombinationMedicationOperations extends MedicationOperations {
 	 */
 	public static boolean validateCombinationMedicationSubstanceAdministration(
 			CombinationMedication combinationMedication, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_COMBINATION_MEDICATION_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.COMBINATION_MEDICATION);
@@ -101,6 +102,7 @@ public class CombinationMedicationOperations extends MedicationOperations {
 					IHEPlugin.INSTANCE.getString("CombinationMedicationSubstanceAdministration"),
 					new Object[] { combinationMedication }));
 			}
+
 			return false;
 		}
 		return true;
@@ -139,6 +141,7 @@ public class CombinationMedicationOperations extends MedicationOperations {
 	 */
 	public static boolean validateCombinationMedicationTemplateId(CombinationMedication combinationMedication,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_COMBINATION_MEDICATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.COMBINATION_MEDICATION);
@@ -157,6 +160,7 @@ public class CombinationMedicationOperations extends MedicationOperations {
 					IHEPlugin.INSTANCE.getString("CombinationMedicationTemplateId"),
 					new Object[] { combinationMedication }));
 			}
+
 			return false;
 		}
 		return true;

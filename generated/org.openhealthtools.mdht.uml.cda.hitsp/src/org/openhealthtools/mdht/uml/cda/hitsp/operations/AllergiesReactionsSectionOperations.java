@@ -90,6 +90,7 @@ public class AllergiesReactionsSectionOperations extends
 	public static boolean validateHITSPAllergiesReactionsSectionTemplateId(
 			AllergiesReactionsSection allergiesReactionsSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_ALLERGIES_REACTIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.ALLERGIES_REACTIONS_SECTION);
@@ -109,6 +110,7 @@ public class AllergiesReactionsSectionOperations extends
 					HITSPPlugin.INSTANCE.getString("HITSPAllergiesReactionsSectionTemplateId"),
 					new Object[] { allergiesReactionsSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -148,6 +150,7 @@ public class AllergiesReactionsSectionOperations extends
 	public static boolean validateHITSPAllergiesReactionsSectionAllergyDrugSensitivity(
 			AllergiesReactionsSection allergiesReactionsSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_ALLERGIES_REACTIONS_SECTION_ALLERGY_DRUG_SENSITIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.ALLERGIES_REACTIONS_SECTION);
@@ -168,6 +171,7 @@ public class AllergiesReactionsSectionOperations extends
 					HITSPPlugin.INSTANCE.getString("HITSPAllergiesReactionsSectionAllergyDrugSensitivity"),
 					new Object[] { allergiesReactionsSection }));
 			}
+
 			return false;
 		}
 		return true;

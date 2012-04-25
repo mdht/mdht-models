@@ -91,6 +91,7 @@ public class CodedSurgeriesSectionOperations extends SurgeriesSectionOperations 
 	 */
 	public static boolean validateCodedSurgeriesSectionTemplateId(CodedSurgeriesSection codedSurgeriesSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CODED_SURGERIES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.CODED_SURGERIES_SECTION);
@@ -109,6 +110,7 @@ public class CodedSurgeriesSectionOperations extends SurgeriesSectionOperations 
 					IHEPlugin.INSTANCE.getString("CodedSurgeriesSectionTemplateId"),
 					new Object[] { codedSurgeriesSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -147,6 +149,7 @@ public class CodedSurgeriesSectionOperations extends SurgeriesSectionOperations 
 	 */
 	public static boolean validateCodedSurgeriesSectionExternalReference(CodedSurgeriesSection codedSurgeriesSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CODED_SURGERIES_SECTION_EXTERNAL_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.CODED_SURGERIES_SECTION);
@@ -165,6 +168,7 @@ public class CodedSurgeriesSectionOperations extends SurgeriesSectionOperations 
 					IHEPlugin.INSTANCE.getString("CodedSurgeriesSectionExternalReference"),
 					new Object[] { codedSurgeriesSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -203,6 +207,7 @@ public class CodedSurgeriesSectionOperations extends SurgeriesSectionOperations 
 	 */
 	public static boolean validateCodedSurgeriesSectionProcedureEntryProcedureActivityProcedure(
 			CodedSurgeriesSection codedSurgeriesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CODED_SURGERIES_SECTION_PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.CODED_SURGERIES_SECTION);
@@ -223,6 +228,7 @@ public class CodedSurgeriesSectionOperations extends SurgeriesSectionOperations 
 					IHEPlugin.INSTANCE.getString("CodedSurgeriesSectionProcedureEntryProcedureActivityProcedure"),
 					new Object[] { codedSurgeriesSection }));
 			}
+
 			return false;
 		}
 		return true;

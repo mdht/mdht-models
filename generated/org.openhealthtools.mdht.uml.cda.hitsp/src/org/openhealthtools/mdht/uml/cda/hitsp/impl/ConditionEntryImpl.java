@@ -160,6 +160,16 @@ public class ConditionEntryImpl extends ProblemEntryImpl implements ConditionEnt
 	 * @generated
 	 */
 	@Override
+	public boolean validateProblemObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ConditionEntryOperations.validateProblemObservationCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public boolean validateProblemEntryValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ConditionEntryOperations.validateProblemEntryValue(this, diagnostics, context);
 	}

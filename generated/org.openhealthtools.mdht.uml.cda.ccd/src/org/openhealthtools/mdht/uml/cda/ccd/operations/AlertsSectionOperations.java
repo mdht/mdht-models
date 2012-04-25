@@ -92,6 +92,7 @@ public class AlertsSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateAlertsSectionTemplateId(AlertsSection alertsSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_ALERTS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.ALERTS_SECTION);
@@ -109,6 +110,7 @@ public class AlertsSectionOperations extends SectionOperations {
 					CCDValidator.ALERTS_SECTION__ALERTS_SECTION_TEMPLATE_ID,
 					CCDPlugin.INSTANCE.getString("AlertsSectionTemplateId"), new Object[] { alertsSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -123,8 +125,8 @@ public class AlertsSectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_ALERTS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
-			+ "value.code = '48765-2' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
+			+ "value.code = '48765-2' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAlertsSectionCode(AlertsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Alerts Section Code</em>}' invariant operation.
@@ -141,8 +143,8 @@ public class AlertsSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in (
-	 * value.code = '48765-2' and value.codeSystem = '2.16.840.1.113883.6.1'))
+	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+	 * value.code = '48765-2' and value.codeSystem = '2.16.840.1.113883.6.1')
 	 * @param alertsSection The receiving '<em><b>Alerts Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -151,6 +153,7 @@ public class AlertsSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateAlertsSectionCode(AlertsSection alertsSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_ALERTS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.ALERTS_SECTION);
@@ -166,6 +169,7 @@ public class AlertsSectionOperations extends SectionOperations {
 					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE, CCDValidator.ALERTS_SECTION__ALERTS_SECTION_CODE,
 					CCDPlugin.INSTANCE.getString("AlertsSectionCode"), new Object[] { alertsSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -204,6 +208,7 @@ public class AlertsSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateAlertsSectionTitle(AlertsSection alertsSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_ALERTS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.ALERTS_SECTION);
@@ -220,6 +225,7 @@ public class AlertsSectionOperations extends SectionOperations {
 					CCDValidator.ALERTS_SECTION__ALERTS_SECTION_TITLE,
 					CCDPlugin.INSTANCE.getString("AlertsSectionTitle"), new Object[] { alertsSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -258,6 +264,7 @@ public class AlertsSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateAlertsSectionText(AlertsSection alertsSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_ALERTS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.ALERTS_SECTION);
@@ -273,6 +280,7 @@ public class AlertsSectionOperations extends SectionOperations {
 					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE, CCDValidator.ALERTS_SECTION__ALERTS_SECTION_TEXT,
 					CCDPlugin.INSTANCE.getString("AlertsSectionText"), new Object[] { alertsSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -311,6 +319,7 @@ public class AlertsSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateAlertsSectionProblemAct(AlertsSection alertsSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_ALERTS_SECTION_PROBLEM_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.ALERTS_SECTION);
@@ -328,6 +337,7 @@ public class AlertsSectionOperations extends SectionOperations {
 					CCDValidator.ALERTS_SECTION__ALERTS_SECTION_PROBLEM_ACT,
 					CCDPlugin.INSTANCE.getString("AlertsSectionProblemAct"), new Object[] { alertsSection }));
 			}
+
 			return false;
 		}
 		return true;

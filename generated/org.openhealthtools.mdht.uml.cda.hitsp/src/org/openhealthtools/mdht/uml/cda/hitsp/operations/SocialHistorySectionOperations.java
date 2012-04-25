@@ -89,6 +89,7 @@ public class SocialHistorySectionOperations extends
 	 */
 	public static boolean validateHITSPSocialHistorySectionTemplateId(SocialHistorySection socialHistorySection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_SOCIAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.SOCIAL_HISTORY_SECTION);
@@ -107,6 +108,7 @@ public class SocialHistorySectionOperations extends
 					HITSPPlugin.INSTANCE.getString("HITSPSocialHistorySectionTemplateId"),
 					new Object[] { socialHistorySection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -145,6 +147,7 @@ public class SocialHistorySectionOperations extends
 	 */
 	public static boolean validateHITSPSocialHistorySectionSocialHistory(SocialHistorySection socialHistorySection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_SOCIAL_HISTORY_SECTION_SOCIAL_HISTORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.SOCIAL_HISTORY_SECTION);
@@ -163,6 +166,7 @@ public class SocialHistorySectionOperations extends
 					HITSPPlugin.INSTANCE.getString("HITSPSocialHistorySectionSocialHistory"),
 					new Object[] { socialHistorySection }));
 			}
+
 			return false;
 		}
 		return true;

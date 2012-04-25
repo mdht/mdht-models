@@ -82,6 +82,7 @@ public class CoveredPartyOperations extends ParticipantRoleOperations {
 	 */
 	public static boolean validateCoveredPartyId(CoveredParty coveredParty, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_COVERED_PARTY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.COVERED_PARTY);
@@ -97,6 +98,7 @@ public class CoveredPartyOperations extends ParticipantRoleOperations {
 					Diagnostic.WARNING, CCDValidator.DIAGNOSTIC_SOURCE, CCDValidator.COVERED_PARTY__COVERED_PARTY_ID,
 					CCDPlugin.INSTANCE.getString("CoveredPartyId"), new Object[] { coveredParty }));
 			}
+
 			return false;
 		}
 		return true;
@@ -135,6 +137,7 @@ public class CoveredPartyOperations extends ParticipantRoleOperations {
 	 */
 	public static boolean validateCoveredPartyCode(CoveredParty coveredParty, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_COVERED_PARTY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.COVERED_PARTY);
@@ -150,6 +153,7 @@ public class CoveredPartyOperations extends ParticipantRoleOperations {
 					Diagnostic.WARNING, CCDValidator.DIAGNOSTIC_SOURCE, CCDValidator.COVERED_PARTY__COVERED_PARTY_CODE,
 					CCDPlugin.INSTANCE.getString("CoveredPartyCode"), new Object[] { coveredParty }));
 			}
+
 			return false;
 		}
 		return true;

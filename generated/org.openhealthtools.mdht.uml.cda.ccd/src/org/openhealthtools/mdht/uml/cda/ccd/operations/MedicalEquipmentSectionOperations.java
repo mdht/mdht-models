@@ -95,6 +95,7 @@ public class MedicalEquipmentSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateMedicalEquipmentSectionTemplateId(MedicalEquipmentSection medicalEquipmentSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICAL_EQUIPMENT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.MEDICAL_EQUIPMENT_SECTION);
@@ -113,6 +114,7 @@ public class MedicalEquipmentSectionOperations extends SectionOperations {
 					CCDPlugin.INSTANCE.getString("MedicalEquipmentSectionTemplateId"),
 					new Object[] { medicalEquipmentSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -127,8 +129,8 @@ public class MedicalEquipmentSectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_MEDICAL_EQUIPMENT_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
-			+ "value.code = '46264-8' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
+			+ "value.code = '46264-8' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMedicalEquipmentSectionCode(MedicalEquipmentSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medical Equipment Section Code</em>}' invariant operation.
@@ -145,8 +147,8 @@ public class MedicalEquipmentSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in (
-	 * value.code = '46264-8' and value.codeSystem = '2.16.840.1.113883.6.1'))
+	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+	 * value.code = '46264-8' and value.codeSystem = '2.16.840.1.113883.6.1')
 	 * @param medicalEquipmentSection The receiving '<em><b>Medical Equipment Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -155,6 +157,7 @@ public class MedicalEquipmentSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateMedicalEquipmentSectionCode(MedicalEquipmentSection medicalEquipmentSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICAL_EQUIPMENT_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.MEDICAL_EQUIPMENT_SECTION);
@@ -173,6 +176,7 @@ public class MedicalEquipmentSectionOperations extends SectionOperations {
 					CCDPlugin.INSTANCE.getString("MedicalEquipmentSectionCode"),
 					new Object[] { medicalEquipmentSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -211,6 +215,7 @@ public class MedicalEquipmentSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateMedicalEquipmentSectionTitle(MedicalEquipmentSection medicalEquipmentSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICAL_EQUIPMENT_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.MEDICAL_EQUIPMENT_SECTION);
@@ -229,6 +234,7 @@ public class MedicalEquipmentSectionOperations extends SectionOperations {
 					CCDPlugin.INSTANCE.getString("MedicalEquipmentSectionTitle"),
 					new Object[] { medicalEquipmentSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -267,6 +273,7 @@ public class MedicalEquipmentSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateMedicalEquipmentSectionText(MedicalEquipmentSection medicalEquipmentSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICAL_EQUIPMENT_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.MEDICAL_EQUIPMENT_SECTION);
@@ -285,6 +292,7 @@ public class MedicalEquipmentSectionOperations extends SectionOperations {
 					CCDPlugin.INSTANCE.getString("MedicalEquipmentSectionText"),
 					new Object[] { medicalEquipmentSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -323,6 +331,7 @@ public class MedicalEquipmentSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateMedicalEquipmentSectionSupplyActivity(
 			MedicalEquipmentSection medicalEquipmentSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICAL_EQUIPMENT_SECTION_SUPPLY_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.MEDICAL_EQUIPMENT_SECTION);
@@ -341,6 +350,7 @@ public class MedicalEquipmentSectionOperations extends SectionOperations {
 					CCDPlugin.INSTANCE.getString("MedicalEquipmentSectionSupplyActivity"),
 					new Object[] { medicalEquipmentSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -379,6 +389,7 @@ public class MedicalEquipmentSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateMedicalEquipmentSectionMedicationActivity(
 			MedicalEquipmentSection medicalEquipmentSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICAL_EQUIPMENT_SECTION_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.MEDICAL_EQUIPMENT_SECTION);
@@ -398,6 +409,7 @@ public class MedicalEquipmentSectionOperations extends SectionOperations {
 					CCDPlugin.INSTANCE.getString("MedicalEquipmentSectionMedicationActivity"),
 					new Object[] { medicalEquipmentSection }));
 			}
+
 			return false;
 		}
 		return true;

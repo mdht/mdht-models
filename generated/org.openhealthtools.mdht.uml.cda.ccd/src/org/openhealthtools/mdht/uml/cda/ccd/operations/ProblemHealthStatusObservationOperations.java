@@ -82,6 +82,7 @@ public class ProblemHealthStatusObservationOperations extends StatusObservationO
 	public static boolean validateStatusObservationTemplateId(
 			ProblemHealthStatusObservation problemHealthStatusObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PROBLEM_HEALTH_STATUS_OBSERVATION);
@@ -105,6 +106,7 @@ public class ProblemHealthStatusObservationOperations extends StatusObservationO
 									problemHealthStatusObservation, context) }),
 					new Object[] { problemHealthStatusObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -119,8 +121,8 @@ public class ProblemHealthStatusObservationOperations extends StatusObservationO
 	 * @ordered
 	 */
 	protected static final String VALIDATE_STATUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in ("
-			+ "value.code = '11323-3' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
+			+ "value.code = '11323-3' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateStatusObservationCode(ProblemHealthStatusObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Status Observation Code</em>}' invariant operation.
@@ -137,8 +139,8 @@ public class ProblemHealthStatusObservationOperations extends StatusObservationO
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
-	 * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (
-	 * value.code = '11323-3' and value.codeSystem = '2.16.840.1.113883.6.1'))
+	 * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+	 * value.code = '11323-3' and value.codeSystem = '2.16.840.1.113883.6.1')
 	 * @param problemHealthStatusObservation The receiving '<em><b>Problem Health Status Observation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -147,6 +149,7 @@ public class ProblemHealthStatusObservationOperations extends StatusObservationO
 	 */
 	public static boolean validateStatusObservationCode(ProblemHealthStatusObservation problemHealthStatusObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_STATUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PROBLEM_HEALTH_STATUS_OBSERVATION);
@@ -165,6 +168,7 @@ public class ProblemHealthStatusObservationOperations extends StatusObservationO
 					CCDPlugin.INSTANCE.getString("StatusObservationCode"),
 					new Object[] { problemHealthStatusObservation }));
 			}
+
 			return false;
 		}
 		return true;

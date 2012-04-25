@@ -89,6 +89,7 @@ public class FamilyHistorySectionOperations extends FamilyMedicalHistorySectionO
 	 */
 	public static boolean validateHITSPFamilyHistorySectionTemplateId(FamilyHistorySection familyHistorySection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_FAMILY_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.FAMILY_HISTORY_SECTION);
@@ -107,6 +108,7 @@ public class FamilyHistorySectionOperations extends FamilyMedicalHistorySectionO
 					HITSPPlugin.INSTANCE.getString("HITSPFamilyHistorySectionTemplateId"),
 					new Object[] { familyHistorySection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -145,6 +147,7 @@ public class FamilyHistorySectionOperations extends FamilyMedicalHistorySectionO
 	 */
 	public static boolean validateHITSPFamilyHistorySectionFamilyHistory(FamilyHistorySection familyHistorySection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_FAMILY_HISTORY_SECTION_FAMILY_HISTORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.FAMILY_HISTORY_SECTION);
@@ -163,6 +166,7 @@ public class FamilyHistorySectionOperations extends FamilyMedicalHistorySectionO
 					HITSPPlugin.INSTANCE.getString("HITSPFamilyHistorySectionFamilyHistory"),
 					new Object[] { familyHistorySection }));
 			}
+
 			return false;
 		}
 		return true;

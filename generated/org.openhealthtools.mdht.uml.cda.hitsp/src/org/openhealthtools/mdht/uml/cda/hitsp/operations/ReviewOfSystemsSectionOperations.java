@@ -81,6 +81,7 @@ public class ReviewOfSystemsSectionOperations extends
 	 */
 	public static boolean validateHITSPReviewOfSystemsSectionTemplateId(ReviewOfSystemsSection reviewOfSystemsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_REVIEW_OF_SYSTEMS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.REVIEW_OF_SYSTEMS_SECTION);
@@ -99,6 +100,7 @@ public class ReviewOfSystemsSectionOperations extends
 					HITSPPlugin.INSTANCE.getString("HITSPReviewOfSystemsSectionTemplateId"),
 					new Object[] { reviewOfSystemsSection }));
 			}
+
 			return false;
 		}
 		return true;

@@ -180,12 +180,10 @@ The ASTM CCR includes 'administrative data (ADT) such as marital status, ethnici
   <CDA:PropertyValidation xmi:id="_jjfuwMg_EeCHk-lvWGDTdA" base_Property="_PPK59Mg_EeCHk-lvWGDTdA">
     <ruleId>CONF-239</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_mrs10Mg_EeCHk-lvWGDTdA" base_Property="_PPLhAMg_EeCHk-lvWGDTdA">
-    <ruleId>CONF-241</ruleId>
-    <ruleId>CONF-242</ruleId>
-  </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_nUBaEMg_EeCHk-lvWGDTdA" code="completed" displayName="" base_Property="_PPLhAMg_EeCHk-lvWGDTdA">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF-241</ruleId>
+    <ruleId>CONF-242</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:ConstraintValidation xmi:id="_KizcAMhAEeCHk-lvWGDTdA" base_Constraint="_GdWpkMhAEeCHk-lvWGDTdA">
     <ruleId>CONF-244</ruleId>

@@ -97,6 +97,7 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 	public static boolean validateAdvanceDirectiveObservationAdvDirectiveCodeValueSet(
 			AdvanceDirectiveObservation advanceDirectiveObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_ADV_DIRECTIVE_CODE_VALUE_SET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.ADVANCE_DIRECTIVE_OBSERVATION);
@@ -117,6 +118,7 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 					CCDPlugin.INSTANCE.getString("AdvanceDirectiveObservationAdvDirectiveCodeValueSet"),
 					new Object[] { advanceDirectiveObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -156,6 +158,7 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 	public static boolean validateAdvanceDirectiveObservationAdvDirectiveCodeCodeSystem(
 			AdvanceDirectiveObservation advanceDirectiveObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_ADV_DIRECTIVE_CODE_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.ADVANCE_DIRECTIVE_OBSERVATION);
@@ -176,6 +179,7 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 					CCDPlugin.INSTANCE.getString("AdvanceDirectiveObservationAdvDirectiveCodeCodeSystem"),
 					new Object[] { advanceDirectiveObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -215,6 +219,7 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 	public static boolean validateAdvanceDirectiveObservationTemplateId(
 			AdvanceDirectiveObservation advanceDirectiveObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.ADVANCE_DIRECTIVE_OBSERVATION);
@@ -233,6 +238,7 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 					CCDPlugin.INSTANCE.getString("AdvanceDirectiveObservationTemplateId"),
 					new Object[] { advanceDirectiveObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -272,6 +278,7 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 	public static boolean validateAdvanceDirectiveObservationClassCode(
 			AdvanceDirectiveObservation advanceDirectiveObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.ADVANCE_DIRECTIVE_OBSERVATION);
@@ -290,6 +297,7 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 					CCDPlugin.INSTANCE.getString("AdvanceDirectiveObservationClassCode"),
 					new Object[] { advanceDirectiveObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -329,6 +337,7 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 	public static boolean validateAdvanceDirectiveObservationMoodCode(
 			AdvanceDirectiveObservation advanceDirectiveObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.ADVANCE_DIRECTIVE_OBSERVATION);
@@ -347,6 +356,7 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 					CCDPlugin.INSTANCE.getString("AdvanceDirectiveObservationMoodCode"),
 					new Object[] { advanceDirectiveObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -386,6 +396,7 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 	public static boolean validateAdvanceDirectiveObservationId(
 			AdvanceDirectiveObservation advanceDirectiveObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.ADVANCE_DIRECTIVE_OBSERVATION);
@@ -404,6 +415,7 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 					CCDPlugin.INSTANCE.getString("AdvanceDirectiveObservationId"),
 					new Object[] { advanceDirectiveObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -418,8 +430,7 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 	 * @ordered
 	 */
 	protected static final String VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "
-			+ "let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in ("
-			+ "value.code = 'completed'))";
+			+ "let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in " + "value.code = 'completed')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAdvanceDirectiveObservationStatusCode(AdvanceDirectiveObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation Status Code</em>}' invariant operation.
@@ -436,8 +447,8 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
-	 * let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in (
-	 * value.code = 'completed'))
+	 * let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
+	 * value.code = 'completed')
 	 * @param advanceDirectiveObservation The receiving '<em><b>Advance Directive Observation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -447,6 +458,7 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 	public static boolean validateAdvanceDirectiveObservationStatusCode(
 			AdvanceDirectiveObservation advanceDirectiveObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.ADVANCE_DIRECTIVE_OBSERVATION);
@@ -465,6 +477,7 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 					CCDPlugin.INSTANCE.getString("AdvanceDirectiveObservationStatusCode"),
 					new Object[] { advanceDirectiveObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -504,6 +517,7 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 	public static boolean validateAdvanceDirectiveObservationEffectiveTime(
 			AdvanceDirectiveObservation advanceDirectiveObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.ADVANCE_DIRECTIVE_OBSERVATION);
@@ -522,6 +536,7 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 					CCDPlugin.INSTANCE.getString("AdvanceDirectiveObservationEffectiveTime"),
 					new Object[] { advanceDirectiveObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -561,6 +576,7 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 	public static boolean validateAdvanceDirectiveObservationCode(
 			AdvanceDirectiveObservation advanceDirectiveObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.ADVANCE_DIRECTIVE_OBSERVATION);
@@ -579,6 +595,7 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 					CCDPlugin.INSTANCE.getString("AdvanceDirectiveObservationCode"),
 					new Object[] { advanceDirectiveObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -620,6 +637,7 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 	public static boolean validateAdvanceDirectiveObservationAdvanceDirectiveVerification(
 			AdvanceDirectiveObservation advanceDirectiveObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_ADVANCE_DIRECTIVE_VERIFICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.ADVANCE_DIRECTIVE_OBSERVATION);
@@ -640,6 +658,7 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 					CCDPlugin.INSTANCE.getString("AdvanceDirectiveObservationAdvanceDirectiveVerification"),
 					new Object[] { advanceDirectiveObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -679,6 +698,7 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 	public static boolean validateAdvanceDirectiveObservationAdvanceDirectiveStatusObservation(
 			AdvanceDirectiveObservation advanceDirectiveObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_ADVANCE_DIRECTIVE_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.ADVANCE_DIRECTIVE_OBSERVATION);
@@ -699,6 +719,7 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 					CCDPlugin.INSTANCE.getString("AdvanceDirectiveObservationAdvanceDirectiveStatusObservation"),
 					new Object[] { advanceDirectiveObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -740,6 +761,7 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 	public static boolean validateAdvanceDirectiveObservationAdvanceDirectiveReference(
 			AdvanceDirectiveObservation advanceDirectiveObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_ADVANCE_DIRECTIVE_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.ADVANCE_DIRECTIVE_OBSERVATION);
@@ -760,6 +782,7 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 					CCDPlugin.INSTANCE.getString("AdvanceDirectiveObservationAdvanceDirectiveReference"),
 					new Object[] { advanceDirectiveObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -800,7 +823,7 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				CCDPackage.Literals.ADVANCE_DIRECTIVE_OBSERVATION,
-				CCDPackage.Literals.ADVANCE_DIRECTIVE_OBSERVATION.getEAllOperations().get(61));
+				CCDPackage.Literals.ADVANCE_DIRECTIVE_OBSERVATION.getEAllOperations().get(63));
 			try {
 				GET_ADVANCE_DIRECTIVE_STATUS_OBSERVATION__EOCL_QRY = helper.createQuery(GET_ADVANCE_DIRECTIVE_STATUS_OBSERVATION__EOCL_EXP);
 			} catch (ParserException pe) {

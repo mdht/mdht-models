@@ -81,6 +81,7 @@ public class PayerEntityOperations extends AssignedEntityOperations {
 	 */
 	public static boolean validatePayerEntityId(PayerEntity payerEntity, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_PAYER_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PAYER_ENTITY);
@@ -96,6 +97,7 @@ public class PayerEntityOperations extends AssignedEntityOperations {
 					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE, CCDValidator.PAYER_ENTITY__PAYER_ENTITY_ID,
 					CCDPlugin.INSTANCE.getString("PayerEntityId"), new Object[] { payerEntity }));
 			}
+
 			return false;
 		}
 		return true;

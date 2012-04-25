@@ -102,6 +102,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validatePolicyActivityPayerEntityIsRequired(PolicyActivity policyActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_POLICY_ACTIVITY_PAYER_ENTITY_IS_REQUIRED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.POLICY_ACTIVITY);
@@ -120,6 +121,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 					CCDPlugin.INSTANCE.getString("PolicyActivityPayerEntityIsRequired"),
 					new Object[] { policyActivity }));
 			}
+
 			return false;
 		}
 		return true;
@@ -158,6 +160,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validatePolicyActivityCoveredPartyIsRequired(PolicyActivity policyActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_POLICY_ACTIVITY_COVERED_PARTY_IS_REQUIRED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.POLICY_ACTIVITY);
@@ -176,6 +179,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 					CCDPlugin.INSTANCE.getString("PolicyActivityCoveredPartyIsRequired"),
 					new Object[] { policyActivity }));
 			}
+
 			return false;
 		}
 		return true;
@@ -216,6 +220,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validatePolicyActivityCoveredPartyTime(PolicyActivity policyActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_POLICY_ACTIVITY_COVERED_PARTY_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.POLICY_ACTIVITY);
@@ -233,6 +238,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 					CCDValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_COVERED_PARTY_TIME,
 					CCDPlugin.INSTANCE.getString("PolicyActivityCoveredPartyTime"), new Object[] { policyActivity }));
 			}
+
 			return false;
 		}
 		return true;
@@ -271,6 +277,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validatePolicyActivitySubscriberIsAllowed(PolicyActivity policyActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_POLICY_ACTIVITY_SUBSCRIBER_IS_ALLOWED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.POLICY_ACTIVITY);
@@ -288,6 +295,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 					CCDValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_SUBSCRIBER_IS_ALLOWED,
 					CCDPlugin.INSTANCE.getString("PolicyActivitySubscriberIsAllowed"), new Object[] { policyActivity }));
 			}
+
 			return false;
 		}
 		return true;
@@ -328,6 +336,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validatePolicyActivitySubscriberTime(PolicyActivity policyActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_POLICY_ACTIVITY_SUBSCRIBER_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.POLICY_ACTIVITY);
@@ -345,6 +354,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 					CCDValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_SUBSCRIBER_TIME,
 					CCDPlugin.INSTANCE.getString("PolicyActivitySubscriberTime"), new Object[] { policyActivity }));
 			}
+
 			return false;
 		}
 		return true;
@@ -383,6 +393,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validatePolicyActivityEntryRelationshipREFR(PolicyActivity policyActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_POLICY_ACTIVITY_ENTRY_RELATIONSHIP_REFR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.POLICY_ACTIVITY);
@@ -401,6 +412,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 					CCDPlugin.INSTANCE.getString("PolicyActivityEntryRelationshipREFR"),
 					new Object[] { policyActivity }));
 			}
+
 			return false;
 		}
 		return true;
@@ -441,6 +453,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validatePolicyActivityEntryRelationshipTarget(PolicyActivity policyActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_POLICY_ACTIVITY_ENTRY_RELATIONSHIP_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.POLICY_ACTIVITY);
@@ -459,6 +472,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 					CCDPlugin.INSTANCE.getString("PolicyActivityEntryRelationshipTarget"),
 					new Object[] { policyActivity }));
 			}
+
 			return false;
 		}
 		return true;
@@ -497,6 +511,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validatePolicyActivityTemplateId(PolicyActivity policyActivity, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_POLICY_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.POLICY_ACTIVITY);
@@ -514,6 +529,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 					CCDValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_TEMPLATE_ID,
 					CCDPlugin.INSTANCE.getString("PolicyActivityTemplateId"), new Object[] { policyActivity }));
 			}
+
 			return false;
 		}
 		return true;
@@ -552,6 +568,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validatePolicyActivityClassCode(PolicyActivity policyActivity, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_POLICY_ACTIVITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.POLICY_ACTIVITY);
@@ -569,6 +586,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 					CCDValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_CLASS_CODE,
 					CCDPlugin.INSTANCE.getString("PolicyActivityClassCode"), new Object[] { policyActivity }));
 			}
+
 			return false;
 		}
 		return true;
@@ -607,6 +625,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validatePolicyActivityMoodCode(PolicyActivity policyActivity, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_POLICY_ACTIVITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.POLICY_ACTIVITY);
@@ -624,6 +643,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 					CCDValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_MOOD_CODE,
 					CCDPlugin.INSTANCE.getString("PolicyActivityMoodCode"), new Object[] { policyActivity }));
 			}
+
 			return false;
 		}
 		return true;
@@ -662,6 +682,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validatePolicyActivityId(PolicyActivity policyActivity, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_POLICY_ACTIVITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.POLICY_ACTIVITY);
@@ -677,6 +698,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE, CCDValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_ID,
 					CCDPlugin.INSTANCE.getString("PolicyActivityId"), new Object[] { policyActivity }));
 			}
+
 			return false;
 		}
 		return true;
@@ -691,8 +713,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_POLICY_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "
-			+ "let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in ("
-			+ "value.code = 'completed'))";
+			+ "let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in " + "value.code = 'completed')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePolicyActivityStatusCode(PolicyActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Policy Activity Status Code</em>}' invariant operation.
@@ -709,8 +730,8 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
-	 * let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in (
-	 * value.code = 'completed'))
+	 * let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
+	 * value.code = 'completed')
 	 * @param policyActivity The receiving '<em><b>Policy Activity</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -719,6 +740,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validatePolicyActivityStatusCode(PolicyActivity policyActivity, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_POLICY_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.POLICY_ACTIVITY);
@@ -736,6 +758,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 					CCDValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_STATUS_CODE,
 					CCDPlugin.INSTANCE.getString("PolicyActivityStatusCode"), new Object[] { policyActivity }));
 			}
+
 			return false;
 		}
 		return true;
@@ -774,6 +797,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validatePolicyActivityPayerEntity(PolicyActivity policyActivity, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_POLICY_ACTIVITY_PAYER_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.POLICY_ACTIVITY);
@@ -791,6 +815,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 					CCDValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_PAYER_ENTITY,
 					CCDPlugin.INSTANCE.getString("PolicyActivityPayerEntity"), new Object[] { policyActivity }));
 			}
+
 			return false;
 		}
 		return true;
@@ -829,6 +854,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validatePolicyActivityCoveredParty(PolicyActivity policyActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_POLICY_ACTIVITY_COVERED_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.POLICY_ACTIVITY);
@@ -846,6 +872,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 					CCDValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_COVERED_PARTY,
 					CCDPlugin.INSTANCE.getString("PolicyActivityCoveredParty"), new Object[] { policyActivity }));
 			}
+
 			return false;
 		}
 		return true;
@@ -884,6 +911,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validatePolicyActivitySubscriber(PolicyActivity policyActivity, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_POLICY_ACTIVITY_SUBSCRIBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.POLICY_ACTIVITY);
@@ -901,6 +929,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 					CCDValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_SUBSCRIBER,
 					CCDPlugin.INSTANCE.getString("PolicyActivitySubscriber"), new Object[] { policyActivity }));
 			}
+
 			return false;
 		}
 		return true;
@@ -939,7 +968,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 		if (GET_PAYER_ENTITY__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				CCDPackage.Literals.POLICY_ACTIVITY, CCDPackage.Literals.POLICY_ACTIVITY.getEAllOperations().get(64));
+				CCDPackage.Literals.POLICY_ACTIVITY, CCDPackage.Literals.POLICY_ACTIVITY.getEAllOperations().get(66));
 			try {
 				GET_PAYER_ENTITY__EOCL_QRY = helper.createQuery(GET_PAYER_ENTITY__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -983,7 +1012,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 		if (GET_COVERED_PARTY__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				CCDPackage.Literals.POLICY_ACTIVITY, CCDPackage.Literals.POLICY_ACTIVITY.getEAllOperations().get(65));
+				CCDPackage.Literals.POLICY_ACTIVITY, CCDPackage.Literals.POLICY_ACTIVITY.getEAllOperations().get(67));
 			try {
 				GET_COVERED_PARTY__EOCL_QRY = helper.createQuery(GET_COVERED_PARTY__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1027,7 +1056,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 		if (GET_SUBSCRIBER__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				CCDPackage.Literals.POLICY_ACTIVITY, CCDPackage.Literals.POLICY_ACTIVITY.getEAllOperations().get(66));
+				CCDPackage.Literals.POLICY_ACTIVITY, CCDPackage.Literals.POLICY_ACTIVITY.getEAllOperations().get(68));
 			try {
 				GET_SUBSCRIBER__EOCL_QRY = helper.createQuery(GET_SUBSCRIBER__EOCL_EXP);
 			} catch (ParserException pe) {

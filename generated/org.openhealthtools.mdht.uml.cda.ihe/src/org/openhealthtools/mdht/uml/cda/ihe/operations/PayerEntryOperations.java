@@ -80,6 +80,7 @@ public class PayerEntryOperations extends PolicyActivityOperations {
 	 */
 	public static boolean validatePolicyActivityTemplateId(PayerEntry payerEntry, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_POLICY_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.PAYER_ENTRY);
@@ -102,6 +103,7 @@ public class PayerEntryOperations extends PolicyActivityOperations {
 								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(payerEntry, context) }),
 					new Object[] { payerEntry }));
 			}
+
 			return false;
 		}
 		return true;

@@ -133,7 +133,8 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	 */
 	public boolean validateProgressNoteHasEncompassingEncounterEffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProgressNoteOperations.validateProgressNoteHasEncompassingEncounterEffectiveTime(this, diagnostics, context);
+		return ProgressNoteOperations.validateProgressNoteHasEncompassingEncounterEffectiveTime(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -143,7 +144,8 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	 */
 	public boolean validateProgressNoteHasEncompassingEncounterEffectiveTimeLow(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProgressNoteOperations.validateProgressNoteHasEncompassingEncounterEffectiveTimeLow(this, diagnostics, context);
+		return ProgressNoteOperations.validateProgressNoteHasEncompassingEncounterEffectiveTimeLow(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -391,7 +393,7 @@ public class ProgressNoteImpl extends GeneralHeaderConstraintsImpl implements Pr
 	 */
 	@Override
 	public ProgressNote init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // ProgressNoteImpl

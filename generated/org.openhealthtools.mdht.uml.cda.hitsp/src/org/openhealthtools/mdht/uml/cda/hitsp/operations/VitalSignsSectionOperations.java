@@ -82,6 +82,7 @@ public class VitalSignsSectionOperations extends CodedVitalSignsSectionOperation
 	 */
 	public static boolean validateHITSPVitalSignsSectionVitalSignEntry(VitalSignsSection vitalSignsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_VITAL_SIGNS_SECTION_VITAL_SIGN_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.VITAL_SIGNS_SECTION);
@@ -100,6 +101,7 @@ public class VitalSignsSectionOperations extends CodedVitalSignsSectionOperation
 					HITSPPlugin.INSTANCE.getString("HITSPVitalSignsSectionVitalSignEntry"),
 					new Object[] { vitalSignsSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -138,6 +140,7 @@ public class VitalSignsSectionOperations extends CodedVitalSignsSectionOperation
 	 */
 	public static boolean validateHITSPVitalSignsSectionTemplateId(VitalSignsSection vitalSignsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_VITAL_SIGNS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.VITAL_SIGNS_SECTION);
@@ -156,6 +159,7 @@ public class VitalSignsSectionOperations extends CodedVitalSignsSectionOperation
 					HITSPPlugin.INSTANCE.getString("HITSPVitalSignsSectionTemplateId"),
 					new Object[] { vitalSignsSection }));
 			}
+
 			return false;
 		}
 		return true;

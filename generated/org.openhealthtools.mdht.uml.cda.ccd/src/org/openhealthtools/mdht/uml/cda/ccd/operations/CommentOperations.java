@@ -84,6 +84,7 @@ public class CommentOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateCommentTemplateId(Comment comment, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_COMMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.COMMENT);
@@ -99,6 +100,7 @@ public class CommentOperations extends ClinicalStatementOperations {
 					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE, CCDValidator.COMMENT__COMMENT_TEMPLATE_ID,
 					CCDPlugin.INSTANCE.getString("CommentTemplateId"), new Object[] { comment }));
 			}
+
 			return false;
 		}
 		return true;
@@ -137,6 +139,7 @@ public class CommentOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateCommentClassCode(Comment comment, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_COMMENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.COMMENT);
@@ -152,6 +155,7 @@ public class CommentOperations extends ClinicalStatementOperations {
 					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE, CCDValidator.COMMENT__COMMENT_CLASS_CODE,
 					CCDPlugin.INSTANCE.getString("CommentClassCode"), new Object[] { comment }));
 			}
+
 			return false;
 		}
 		return true;
@@ -190,6 +194,7 @@ public class CommentOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateCommentMoodCode(Comment comment, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_COMMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.COMMENT);
@@ -205,6 +210,7 @@ public class CommentOperations extends ClinicalStatementOperations {
 					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE, CCDValidator.COMMENT__COMMENT_MOOD_CODE,
 					CCDPlugin.INSTANCE.getString("CommentMoodCode"), new Object[] { comment }));
 			}
+
 			return false;
 		}
 		return true;
@@ -219,8 +225,8 @@ public class CommentOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_COMMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in ("
-			+ "value.code = '48767-8' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
+			+ "value.code = '48767-8' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateCommentCode(Comment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Comment Code</em>}' invariant operation.
@@ -237,8 +243,8 @@ public class CommentOperations extends ClinicalStatementOperations {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
-	 * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (
-	 * value.code = '48767-8' and value.codeSystem = '2.16.840.1.113883.6.1'))
+	 * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+	 * value.code = '48767-8' and value.codeSystem = '2.16.840.1.113883.6.1')
 	 * @param comment The receiving '<em><b>Comment</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -246,6 +252,7 @@ public class CommentOperations extends ClinicalStatementOperations {
 	 * @generated
 	 */
 	public static boolean validateCommentCode(Comment comment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_COMMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.COMMENT);
@@ -261,6 +268,7 @@ public class CommentOperations extends ClinicalStatementOperations {
 					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE, CCDValidator.COMMENT__COMMENT_CODE,
 					CCDPlugin.INSTANCE.getString("CommentCode"), new Object[] { comment }));
 			}
+
 			return false;
 		}
 		return true;

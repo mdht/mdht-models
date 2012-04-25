@@ -144,6 +144,7 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 	 */
 	public static boolean validateContinuityOfCareDocumentServiceEventRequired(
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_SERVICE_EVENT_REQUIRED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT);
@@ -163,6 +164,7 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 					CCDPlugin.INSTANCE.getString("ContinuityOfCareDocumentServiceEventRequired"),
 					new Object[] { continuityOfCareDocument }));
 			}
+
 			return false;
 		}
 		return true;
@@ -201,6 +203,7 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 	 */
 	public static boolean validateContinuityOfCareDocumentServiceEventClassCode(
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_SERVICE_EVENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT);
@@ -220,6 +223,7 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 					CCDPlugin.INSTANCE.getString("ContinuityOfCareDocumentServiceEventClassCode"),
 					new Object[] { continuityOfCareDocument }));
 			}
+
 			return false;
 		}
 		return true;
@@ -260,6 +264,7 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 	 */
 	public static boolean validateContinuityOfCareDocumentServiceEventEffectiveTime(
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_SERVICE_EVENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT);
@@ -279,6 +284,7 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 					CCDPlugin.INSTANCE.getString("ContinuityOfCareDocumentServiceEventEffectiveTime"),
 					new Object[] { continuityOfCareDocument }));
 			}
+
 			return false;
 		}
 		return true;
@@ -317,6 +323,7 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 	 */
 	public static boolean validateContinuityOfCareDocumentLanguageCodeFormat(
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_LANGUAGE_CODE_FORMAT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT);
@@ -336,6 +343,7 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 					CCDPlugin.INSTANCE.getString("ContinuityOfCareDocumentLanguageCodeFormat"),
 					new Object[] { continuityOfCareDocument }));
 			}
+
 			return false;
 		}
 		return true;
@@ -374,6 +382,7 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 	 */
 	public static boolean validateContinuityOfCareDocumentNoTemplateIdExtension(
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_NO_TEMPLATE_ID_EXTENSION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT);
@@ -393,6 +402,7 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 					CCDPlugin.INSTANCE.getString("ContinuityOfCareDocumentNoTemplateIdExtension"),
 					new Object[] { continuityOfCareDocument }));
 			}
+
 			return false;
 		}
 		return true;
@@ -431,6 +441,7 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 	 */
 	public static boolean validateContinuityOfCareDocumentHasEffectiveTimeSeconds(
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_HAS_EFFECTIVE_TIME_SECONDS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT);
@@ -450,6 +461,7 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 					CCDPlugin.INSTANCE.getString("ContinuityOfCareDocumentHasEffectiveTimeSeconds"),
 					new Object[] { continuityOfCareDocument }));
 			}
+
 			return false;
 		}
 		return true;
@@ -488,6 +500,7 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 	 */
 	public static boolean validateContinuityOfCareDocumentHasEffectiveTimeZone(
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_HAS_EFFECTIVE_TIME_ZONE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT);
@@ -507,6 +520,7 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 					CCDPlugin.INSTANCE.getString("ContinuityOfCareDocumentHasEffectiveTimeZone"),
 					new Object[] { continuityOfCareDocument }));
 			}
+
 			return false;
 		}
 		return true;
@@ -545,6 +559,7 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 	 */
 	public static boolean validateContinuityOfCareDocumentOneOrTwoRecordTarget(
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_ONE_OR_TWO_RECORD_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT);
@@ -564,6 +579,7 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 					CCDPlugin.INSTANCE.getString("ContinuityOfCareDocumentOneOrTwoRecordTarget"),
 					new Object[] { continuityOfCareDocument }));
 			}
+
 			return false;
 		}
 		return true;
@@ -604,6 +620,7 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 	 */
 	public static boolean validateContinuityOfCareDocumentHasAssignedAuthor(
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_HAS_ASSIGNED_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT);
@@ -623,6 +640,7 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 					CCDPlugin.INSTANCE.getString("ContinuityOfCareDocumentHasAssignedAuthor"),
 					new Object[] { continuityOfCareDocument }));
 			}
+
 			return false;
 		}
 		return true;
@@ -665,6 +683,7 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 	 */
 	public static boolean validateContinuityOfCareDocumentHasAssignedAuthorNullFlavor(
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_HAS_ASSIGNED_AUTHOR_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT);
@@ -685,6 +704,7 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 					CCDPlugin.INSTANCE.getString("ContinuityOfCareDocumentHasAssignedAuthorNullFlavor"),
 					new Object[] { continuityOfCareDocument }));
 			}
+
 			return false;
 		}
 		return true;
@@ -723,6 +743,7 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 	 */
 	public static boolean validateContinuityOfCareDocumentHasInformationRecipient(
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_HAS_INFORMATION_RECIPIENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT);
@@ -742,6 +763,7 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 					CCDPlugin.INSTANCE.getString("ContinuityOfCareDocumentHasInformationRecipient"),
 					new Object[] { continuityOfCareDocument }));
 			}
+
 			return false;
 		}
 		return true;
@@ -780,6 +802,7 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 	 */
 	public static boolean validateContinuityOfCareDocumentTemplateId(ContinuityOfCareDocument continuityOfCareDocument,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT);
@@ -798,6 +821,7 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 					CCDPlugin.INSTANCE.getString("ContinuityOfCareDocumentTemplateId"),
 					new Object[] { continuityOfCareDocument }));
 			}
+
 			return false;
 		}
 		return true;
@@ -812,8 +836,8 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 	 * @ordered
 	 */
 	protected static final String VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
-			+ "value.code = '34133-9' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
+			+ "value.code = '34133-9' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateContinuityOfCareDocumentCode(ContinuityOfCareDocument, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Continuity Of Care Document Code</em>}' invariant operation.
@@ -830,8 +854,8 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in (
-	 * value.code = '34133-9' and value.codeSystem = '2.16.840.1.113883.6.1'))
+	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+	 * value.code = '34133-9' and value.codeSystem = '2.16.840.1.113883.6.1')
 	 * @param continuityOfCareDocument The receiving '<em><b>Continuity Of Care Document</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -840,6 +864,7 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 	 */
 	public static boolean validateContinuityOfCareDocumentCode(ContinuityOfCareDocument continuityOfCareDocument,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT);
@@ -858,6 +883,7 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 					CCDPlugin.INSTANCE.getString("ContinuityOfCareDocumentCode"),
 					new Object[] { continuityOfCareDocument }));
 			}
+
 			return false;
 		}
 		return true;
@@ -896,6 +922,7 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 	 */
 	public static boolean validateContinuityOfCareDocumentLanguageCode(
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_LANGUAGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT);
@@ -914,6 +941,7 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 					CCDPlugin.INSTANCE.getString("ContinuityOfCareDocumentLanguageCode"),
 					new Object[] { continuityOfCareDocument }));
 			}
+
 			return false;
 		}
 		return true;
@@ -952,6 +980,7 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 	 */
 	public static boolean validateContinuityOfCareDocumentProblemSection(
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_PROBLEM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT);
@@ -970,6 +999,7 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 					CCDPlugin.INSTANCE.getString("ContinuityOfCareDocumentProblemSection"),
 					new Object[] { continuityOfCareDocument }));
 			}
+
 			return false;
 		}
 		return true;
@@ -1008,6 +1038,7 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 	 */
 	public static boolean validateContinuityOfCareDocumentFamilyHistorySection(
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_FAMILY_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT);
@@ -1027,6 +1058,7 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 					CCDPlugin.INSTANCE.getString("ContinuityOfCareDocumentFamilyHistorySection"),
 					new Object[] { continuityOfCareDocument }));
 			}
+
 			return false;
 		}
 		return true;
@@ -1065,6 +1097,7 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 	 */
 	public static boolean validateContinuityOfCareDocumentSocialHistorySection(
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT);
@@ -1084,6 +1117,7 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 					CCDPlugin.INSTANCE.getString("ContinuityOfCareDocumentSocialHistorySection"),
 					new Object[] { continuityOfCareDocument }));
 			}
+
 			return false;
 		}
 		return true;
@@ -1122,6 +1156,7 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 	 */
 	public static boolean validateContinuityOfCareDocumentAlertsSection(
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_ALERTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT);
@@ -1140,6 +1175,7 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 					CCDPlugin.INSTANCE.getString("ContinuityOfCareDocumentAlertsSection"),
 					new Object[] { continuityOfCareDocument }));
 			}
+
 			return false;
 		}
 		return true;
@@ -1178,6 +1214,7 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 	 */
 	public static boolean validateContinuityOfCareDocumentMedicationsSection(
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_MEDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT);
@@ -1197,6 +1234,7 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 					CCDPlugin.INSTANCE.getString("ContinuityOfCareDocumentMedicationsSection"),
 					new Object[] { continuityOfCareDocument }));
 			}
+
 			return false;
 		}
 		return true;
@@ -1235,6 +1273,7 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 	 */
 	public static boolean validateContinuityOfCareDocumentResultsSection(
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_RESULTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT);
@@ -1253,6 +1292,7 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 					CCDPlugin.INSTANCE.getString("ContinuityOfCareDocumentResultsSection"),
 					new Object[] { continuityOfCareDocument }));
 			}
+
 			return false;
 		}
 		return true;
@@ -1291,6 +1331,7 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 	 */
 	public static boolean validateContinuityOfCareDocumentProceduresSection(
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_PROCEDURES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT);
@@ -1310,6 +1351,7 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 					CCDPlugin.INSTANCE.getString("ContinuityOfCareDocumentProceduresSection"),
 					new Object[] { continuityOfCareDocument }));
 			}
+
 			return false;
 		}
 		return true;
@@ -1348,6 +1390,7 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 	 */
 	public static boolean validateContinuityOfCareDocumentEncountersSection(
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_ENCOUNTERS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT);
@@ -1367,6 +1410,7 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 					CCDPlugin.INSTANCE.getString("ContinuityOfCareDocumentEncountersSection"),
 					new Object[] { continuityOfCareDocument }));
 			}
+
 			return false;
 		}
 		return true;
@@ -1405,6 +1449,7 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 	 */
 	public static boolean validateContinuityOfCareDocumentPlanOfCareSection(
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_PLAN_OF_CARE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT);
@@ -1424,6 +1469,7 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 					CCDPlugin.INSTANCE.getString("ContinuityOfCareDocumentPlanOfCareSection"),
 					new Object[] { continuityOfCareDocument }));
 			}
+
 			return false;
 		}
 		return true;
@@ -1462,6 +1508,7 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 	 */
 	public static boolean validateContinuityOfCareDocumentImmunizationsSection(
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_IMMUNIZATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT);
@@ -1481,6 +1528,7 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 					CCDPlugin.INSTANCE.getString("ContinuityOfCareDocumentImmunizationsSection"),
 					new Object[] { continuityOfCareDocument }));
 			}
+
 			return false;
 		}
 		return true;
@@ -1519,6 +1567,7 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 	 */
 	public static boolean validateContinuityOfCareDocumentVitalSignsSection(
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_VITAL_SIGNS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT);
@@ -1538,6 +1587,7 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 					CCDPlugin.INSTANCE.getString("ContinuityOfCareDocumentVitalSignsSection"),
 					new Object[] { continuityOfCareDocument }));
 			}
+
 			return false;
 		}
 		return true;
@@ -1576,6 +1626,7 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 	 */
 	public static boolean validateContinuityOfCareDocumentMedicalEquipmentSection(
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_MEDICAL_EQUIPMENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT);
@@ -1595,6 +1646,7 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 					CCDPlugin.INSTANCE.getString("ContinuityOfCareDocumentMedicalEquipmentSection"),
 					new Object[] { continuityOfCareDocument }));
 			}
+
 			return false;
 		}
 		return true;
@@ -1633,6 +1685,7 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 	 */
 	public static boolean validateContinuityOfCareDocumentFunctionalStatusSection(
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_FUNCTIONAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT);
@@ -1652,6 +1705,7 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 					CCDPlugin.INSTANCE.getString("ContinuityOfCareDocumentFunctionalStatusSection"),
 					new Object[] { continuityOfCareDocument }));
 			}
+
 			return false;
 		}
 		return true;
@@ -1690,6 +1744,7 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 	 */
 	public static boolean validateContinuityOfCareDocumentAdvanceDirectivesSection(
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_ADVANCE_DIRECTIVES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT);
@@ -1709,6 +1764,7 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 					CCDPlugin.INSTANCE.getString("ContinuityOfCareDocumentAdvanceDirectivesSection"),
 					new Object[] { continuityOfCareDocument }));
 			}
+
 			return false;
 		}
 		return true;
@@ -1747,6 +1803,7 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 	 */
 	public static boolean validateContinuityOfCareDocumentPayersSection(
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_PAYERS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT);
@@ -1765,6 +1822,7 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 					CCDPlugin.INSTANCE.getString("ContinuityOfCareDocumentPayersSection"),
 					new Object[] { continuityOfCareDocument }));
 			}
+
 			return false;
 		}
 		return true;
@@ -1803,6 +1861,7 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 	 */
 	public static boolean validateContinuityOfCareDocumentPurposeSection(
 			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_PURPOSE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.CONTINUITY_OF_CARE_DOCUMENT);
@@ -1821,6 +1880,7 @@ public class ContinuityOfCareDocumentOperations extends ClinicalDocumentOperatio
 					CCDPlugin.INSTANCE.getString("ContinuityOfCareDocumentPurposeSection"),
 					new Object[] { continuityOfCareDocument }));
 			}
+
 			return false;
 		}
 		return true;

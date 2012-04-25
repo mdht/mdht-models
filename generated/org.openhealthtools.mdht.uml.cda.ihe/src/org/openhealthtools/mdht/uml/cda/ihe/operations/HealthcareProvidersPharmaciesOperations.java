@@ -82,6 +82,7 @@ public class HealthcareProvidersPharmaciesOperations extends ParticipationOperat
 	public static boolean validateHealthcareProvidersPharmaciesTemplateId(
 			HealthcareProvidersPharmacies healthcareProvidersPharmacies, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_HEALTHCARE_PROVIDERS_PHARMACIES_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.HEALTHCARE_PROVIDERS_PHARMACIES);
@@ -100,6 +101,7 @@ public class HealthcareProvidersPharmaciesOperations extends ParticipationOperat
 					IHEPlugin.INSTANCE.getString("HealthcareProvidersPharmaciesTemplateId"),
 					new Object[] { healthcareProvidersPharmacies }));
 			}
+
 			return false;
 		}
 		return true;

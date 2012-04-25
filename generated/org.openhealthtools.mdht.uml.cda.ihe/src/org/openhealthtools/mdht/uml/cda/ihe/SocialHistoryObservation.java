@@ -17,7 +17,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ihe.IHEPackage#getSocialHistoryObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.13.4' constraints.validation.error='IHESocialHistoryObservationTemplateId' constraints.validation.warning='IHESocialHistoryObservationNoRepeatNumber IHESocialHistoryObservationNoInterpretationCode IHESocialHistoryObservationNoMethodCode IHESocialHistoryObservationNoTargetSiteCode' constraints.validation.info='IHESocialHistoryObservationValue'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='IHESocialHistoryObservationTemplateId' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.13.4' constraints.validation.warning='IHESocialHistoryObservationNoRepeatNumber IHESocialHistoryObservationNoInterpretationCode IHESocialHistoryObservationNoMethodCode IHESocialHistoryObservationNoTargetSiteCode' constraints.validation.info='IHESocialHistoryObservationValue'"
  * @generated
  */
 public interface SocialHistoryObservation extends SimpleObservation,

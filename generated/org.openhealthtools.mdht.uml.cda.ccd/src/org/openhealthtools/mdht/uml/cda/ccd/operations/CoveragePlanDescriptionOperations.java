@@ -83,6 +83,7 @@ public class CoveragePlanDescriptionOperations extends ClinicalStatementOperatio
 	 */
 	public static boolean validateCoveragePlanDescriptionClassCode(CoveragePlanDescription coveragePlanDescription,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_COVERAGE_PLAN_DESCRIPTION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.COVERAGE_PLAN_DESCRIPTION);
@@ -101,6 +102,7 @@ public class CoveragePlanDescriptionOperations extends ClinicalStatementOperatio
 					CCDPlugin.INSTANCE.getString("CoveragePlanDescriptionClassCode"),
 					new Object[] { coveragePlanDescription }));
 			}
+
 			return false;
 		}
 		return true;
@@ -139,6 +141,7 @@ public class CoveragePlanDescriptionOperations extends ClinicalStatementOperatio
 	 */
 	public static boolean validateCoveragePlanDescriptionId(CoveragePlanDescription coveragePlanDescription,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_COVERAGE_PLAN_DESCRIPTION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.COVERAGE_PLAN_DESCRIPTION);
@@ -156,6 +159,7 @@ public class CoveragePlanDescriptionOperations extends ClinicalStatementOperatio
 					CCDValidator.COVERAGE_PLAN_DESCRIPTION__COVERAGE_PLAN_DESCRIPTION_ID,
 					CCDPlugin.INSTANCE.getString("CoveragePlanDescriptionId"), new Object[] { coveragePlanDescription }));
 			}
+
 			return false;
 		}
 		return true;
@@ -194,6 +198,7 @@ public class CoveragePlanDescriptionOperations extends ClinicalStatementOperatio
 	 */
 	public static boolean validateCoveragePlanDescriptionMoodCode(CoveragePlanDescription coveragePlanDescription,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_COVERAGE_PLAN_DESCRIPTION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.COVERAGE_PLAN_DESCRIPTION);
@@ -212,6 +217,7 @@ public class CoveragePlanDescriptionOperations extends ClinicalStatementOperatio
 					CCDPlugin.INSTANCE.getString("CoveragePlanDescriptionMoodCode"),
 					new Object[] { coveragePlanDescription }));
 			}
+
 			return false;
 		}
 		return true;

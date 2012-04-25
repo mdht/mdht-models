@@ -82,6 +82,7 @@ public class ConditionalDoseOperations extends MedicationOperations {
 	 */
 	public static boolean validateConditionalDoseConditionalDosingSubstanceAdministration(
 			ConditionalDose conditionalDose, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CONDITIONAL_DOSE_CONDITIONAL_DOSING_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.CONDITIONAL_DOSE);
@@ -101,6 +102,7 @@ public class ConditionalDoseOperations extends MedicationOperations {
 					IHEPlugin.INSTANCE.getString("ConditionalDoseConditionalDosingSubstanceAdministration"),
 					new Object[] { conditionalDose }));
 			}
+
 			return false;
 		}
 		return true;
@@ -139,6 +141,7 @@ public class ConditionalDoseOperations extends MedicationOperations {
 	 */
 	public static boolean validateConditionalDoseTemplateId(ConditionalDose conditionalDose,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CONDITIONAL_DOSE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.CONDITIONAL_DOSE);
@@ -156,6 +159,7 @@ public class ConditionalDoseOperations extends MedicationOperations {
 					IHEValidator.CONDITIONAL_DOSE__CONDITIONAL_DOSE_TEMPLATE_ID,
 					IHEPlugin.INSTANCE.getString("ConditionalDoseTemplateId"), new Object[] { conditionalDose }));
 			}
+
 			return false;
 		}
 		return true;

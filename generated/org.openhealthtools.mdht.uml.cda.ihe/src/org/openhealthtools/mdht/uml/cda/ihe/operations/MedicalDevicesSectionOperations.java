@@ -81,6 +81,7 @@ public class MedicalDevicesSectionOperations extends MedicalEquipmentSectionOper
 	 */
 	public static boolean validateMedicalDevicesSectionTemplateId(MedicalDevicesSection medicalDevicesSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICAL_DEVICES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.MEDICAL_DEVICES_SECTION);
@@ -99,6 +100,7 @@ public class MedicalDevicesSectionOperations extends MedicalEquipmentSectionOper
 					IHEPlugin.INSTANCE.getString("MedicalDevicesSectionTemplateId"),
 					new Object[] { medicalDevicesSection }));
 			}
+
 			return false;
 		}
 		return true;

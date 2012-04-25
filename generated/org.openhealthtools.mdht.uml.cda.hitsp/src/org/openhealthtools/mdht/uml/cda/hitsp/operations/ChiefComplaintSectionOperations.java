@@ -86,6 +86,7 @@ public class ChiefComplaintSectionOperations extends
 	 */
 	public static boolean validateHITSPChiefComplaintSectionTemplateId(ChiefComplaintSection chiefComplaintSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_CHIEF_COMPLAINT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.CHIEF_COMPLAINT_SECTION);
@@ -104,6 +105,7 @@ public class ChiefComplaintSectionOperations extends
 					HITSPPlugin.INSTANCE.getString("HITSPChiefComplaintSectionTemplateId"),
 					new Object[] { chiefComplaintSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -142,6 +144,7 @@ public class ChiefComplaintSectionOperations extends
 	 */
 	public static boolean validateHITSPChiefComplaintSectionCondition(ChiefComplaintSection chiefComplaintSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_CHIEF_COMPLAINT_SECTION_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.CHIEF_COMPLAINT_SECTION);
@@ -160,6 +163,7 @@ public class ChiefComplaintSectionOperations extends
 					HITSPPlugin.INSTANCE.getString("HITSPChiefComplaintSectionCondition"),
 					new Object[] { chiefComplaintSection }));
 			}
+
 			return false;
 		}
 		return true;

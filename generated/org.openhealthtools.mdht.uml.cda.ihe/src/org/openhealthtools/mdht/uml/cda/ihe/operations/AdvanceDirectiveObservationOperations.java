@@ -83,6 +83,7 @@ public class AdvanceDirectiveObservationOperations extends
 	public static boolean validateIHEAdvanceDirectiveObservationHasExternalReference(
 			AdvanceDirectiveObservation advanceDirectiveObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_IHE_ADVANCE_DIRECTIVE_OBSERVATION_HAS_EXTERNAL_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.ADVANCE_DIRECTIVE_OBSERVATION);
@@ -103,6 +104,7 @@ public class AdvanceDirectiveObservationOperations extends
 					IHEPlugin.INSTANCE.getString("IHEAdvanceDirectiveObservationHasExternalReference"),
 					new Object[] { advanceDirectiveObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -142,6 +144,7 @@ public class AdvanceDirectiveObservationOperations extends
 	public static boolean validateIHEAdvanceDirectiveObservationTemplateId(
 			AdvanceDirectiveObservation advanceDirectiveObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_IHE_ADVANCE_DIRECTIVE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.ADVANCE_DIRECTIVE_OBSERVATION);
@@ -161,6 +164,7 @@ public class AdvanceDirectiveObservationOperations extends
 					IHEPlugin.INSTANCE.getString("IHEAdvanceDirectiveObservationTemplateId"),
 					new Object[] { advanceDirectiveObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -200,6 +204,7 @@ public class AdvanceDirectiveObservationOperations extends
 	public static boolean validateIHEAdvanceDirectiveObservationRepeatNumber(
 			AdvanceDirectiveObservation advanceDirectiveObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_IHE_ADVANCE_DIRECTIVE_OBSERVATION_REPEAT_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.ADVANCE_DIRECTIVE_OBSERVATION);
@@ -219,6 +224,7 @@ public class AdvanceDirectiveObservationOperations extends
 					IHEPlugin.INSTANCE.getString("IHEAdvanceDirectiveObservationRepeatNumber"),
 					new Object[] { advanceDirectiveObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -258,6 +264,7 @@ public class AdvanceDirectiveObservationOperations extends
 	public static boolean validateIHEAdvanceDirectiveObservationInterpretationCode(
 			AdvanceDirectiveObservation advanceDirectiveObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_IHE_ADVANCE_DIRECTIVE_OBSERVATION_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.ADVANCE_DIRECTIVE_OBSERVATION);
@@ -277,6 +284,7 @@ public class AdvanceDirectiveObservationOperations extends
 					IHEPlugin.INSTANCE.getString("IHEAdvanceDirectiveObservationInterpretationCode"),
 					new Object[] { advanceDirectiveObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -316,6 +324,7 @@ public class AdvanceDirectiveObservationOperations extends
 	public static boolean validateIHEAdvanceDirectiveObservationTargetSiteCode(
 			AdvanceDirectiveObservation advanceDirectiveObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_IHE_ADVANCE_DIRECTIVE_OBSERVATION_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.ADVANCE_DIRECTIVE_OBSERVATION);
@@ -335,6 +344,7 @@ public class AdvanceDirectiveObservationOperations extends
 					IHEPlugin.INSTANCE.getString("IHEAdvanceDirectiveObservationTargetSiteCode"),
 					new Object[] { advanceDirectiveObservation }));
 			}
+
 			return false;
 		}
 		return true;
@@ -349,8 +359,8 @@ public class AdvanceDirectiveObservationOperations extends
 	 * @ordered
 	 */
 	protected static final String VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in ("
-			+ "value.codeSystem = '2.16.840.1.113883.6.96'))";
+			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
+			+ "value.codeSystem = '2.16.840.1.113883.6.96')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAdvanceDirectiveObservationCode(AdvanceDirectiveObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directive Observation Code</em>}' invariant operation.
@@ -367,8 +377,8 @@ public class AdvanceDirectiveObservationOperations extends
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
-	 * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (
-	 * value.codeSystem = '2.16.840.1.113883.6.96'))
+	 * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+	 * value.codeSystem = '2.16.840.1.113883.6.96')
 	 * @param advanceDirectiveObservation The receiving '<em><b>Advance Directive Observation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -378,6 +388,7 @@ public class AdvanceDirectiveObservationOperations extends
 	public static boolean validateAdvanceDirectiveObservationCode(
 			AdvanceDirectiveObservation advanceDirectiveObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.ADVANCE_DIRECTIVE_OBSERVATION);
@@ -396,6 +407,7 @@ public class AdvanceDirectiveObservationOperations extends
 					IHEPlugin.INSTANCE.getString("AdvanceDirectiveObservationCode"),
 					new Object[] { advanceDirectiveObservation }));
 			}
+
 			return false;
 		}
 		return true;

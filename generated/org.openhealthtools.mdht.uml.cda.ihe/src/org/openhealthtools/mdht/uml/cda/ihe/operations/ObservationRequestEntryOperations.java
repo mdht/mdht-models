@@ -81,6 +81,7 @@ public class ObservationRequestEntryOperations extends PlanOfCareActivityObserva
 	 */
 	public static boolean validateObservationRequestEntryTemplateId(ObservationRequestEntry observationRequestEntry,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_OBSERVATION_REQUEST_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.OBSERVATION_REQUEST_ENTRY);
@@ -99,6 +100,7 @@ public class ObservationRequestEntryOperations extends PlanOfCareActivityObserva
 					IHEPlugin.INSTANCE.getString("ObservationRequestEntryTemplateId"),
 					new Object[] { observationRequestEntry }));
 			}
+
 			return false;
 		}
 		return true;

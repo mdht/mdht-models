@@ -81,6 +81,7 @@ public class HistoryOfPresentIllnessOperations extends
 	 */
 	public static boolean validateHITSPHistoryOfPresentIllnessTemplateId(
 			HistoryOfPresentIllness historyOfPresentIllness, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_HISTORY_OF_PRESENT_ILLNESS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.HISTORY_OF_PRESENT_ILLNESS);
@@ -99,6 +100,7 @@ public class HistoryOfPresentIllnessOperations extends
 					HITSPPlugin.INSTANCE.getString("HITSPHistoryOfPresentIllnessTemplateId"),
 					new Object[] { historyOfPresentIllness }));
 			}
+
 			return false;
 		}
 		return true;

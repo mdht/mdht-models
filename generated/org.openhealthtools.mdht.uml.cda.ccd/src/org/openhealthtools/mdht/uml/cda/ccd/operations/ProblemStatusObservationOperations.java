@@ -79,6 +79,7 @@ public class ProblemStatusObservationOperations extends StatusObservationOperati
 	 */
 	public static boolean validateStatusObservationTemplateId(ProblemStatusObservation problemStatusObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PROBLEM_STATUS_OBSERVATION);
@@ -101,6 +102,7 @@ public class ProblemStatusObservationOperations extends StatusObservationOperati
 								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
 									problemStatusObservation, context) }), new Object[] { problemStatusObservation }));
 			}
+
 			return false;
 		}
 		return true;

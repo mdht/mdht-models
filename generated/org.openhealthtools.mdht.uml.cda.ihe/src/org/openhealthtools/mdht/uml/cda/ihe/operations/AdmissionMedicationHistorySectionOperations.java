@@ -83,6 +83,7 @@ public class AdmissionMedicationHistorySectionOperations extends SectionOperatio
 	public static boolean validateAdmissionMedicationHistorySectionTemplateId(
 			AdmissionMedicationHistorySection admissionMedicationHistorySection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_ADMISSION_MEDICATION_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.ADMISSION_MEDICATION_HISTORY_SECTION);
@@ -103,6 +104,7 @@ public class AdmissionMedicationHistorySectionOperations extends SectionOperatio
 					IHEPlugin.INSTANCE.getString("AdmissionMedicationHistorySectionTemplateId"),
 					new Object[] { admissionMedicationHistorySection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -117,8 +119,8 @@ public class AdmissionMedicationHistorySectionOperations extends SectionOperatio
 	 * @ordered
 	 */
 	protected static final String VALIDATE_ADMISSION_MEDICATION_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
-			+ "value.code = '42346-7' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
+			+ "value.code = '42346-7' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAdmissionMedicationHistorySectionCode(AdmissionMedicationHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Admission Medication History Section Code</em>}' invariant operation.
@@ -135,8 +137,8 @@ public class AdmissionMedicationHistorySectionOperations extends SectionOperatio
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in (
-	 * value.code = '42346-7' and value.codeSystem = '2.16.840.1.113883.6.1'))
+	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+	 * value.code = '42346-7' and value.codeSystem = '2.16.840.1.113883.6.1')
 	 * @param admissionMedicationHistorySection The receiving '<em><b>Admission Medication History Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -146,6 +148,7 @@ public class AdmissionMedicationHistorySectionOperations extends SectionOperatio
 	public static boolean validateAdmissionMedicationHistorySectionCode(
 			AdmissionMedicationHistorySection admissionMedicationHistorySection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_ADMISSION_MEDICATION_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.ADMISSION_MEDICATION_HISTORY_SECTION);
@@ -164,6 +167,7 @@ public class AdmissionMedicationHistorySectionOperations extends SectionOperatio
 					IHEPlugin.INSTANCE.getString("AdmissionMedicationHistorySectionCode"),
 					new Object[] { admissionMedicationHistorySection }));
 			}
+
 			return false;
 		}
 		return true;

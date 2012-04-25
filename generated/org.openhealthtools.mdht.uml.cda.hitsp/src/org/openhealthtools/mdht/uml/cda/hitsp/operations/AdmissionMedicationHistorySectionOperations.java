@@ -82,6 +82,7 @@ public class AdmissionMedicationHistorySectionOperations extends
 	public static boolean validateHITSPAdmissionMedicationHistorySectionTemplateId(
 			AdmissionMedicationHistorySection admissionMedicationHistorySection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_ADMISSION_MEDICATION_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.ADMISSION_MEDICATION_HISTORY_SECTION);
@@ -102,6 +103,7 @@ public class AdmissionMedicationHistorySectionOperations extends
 					HITSPPlugin.INSTANCE.getString("HITSPAdmissionMedicationHistorySectionTemplateId"),
 					new Object[] { admissionMedicationHistorySection }));
 			}
+
 			return false;
 		}
 		return true;

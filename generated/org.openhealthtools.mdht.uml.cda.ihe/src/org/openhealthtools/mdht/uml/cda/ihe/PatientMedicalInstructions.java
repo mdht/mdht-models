@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.ccd.PatientInstruction;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ihe.IHEPackage#getPatientMedicalInstructions()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='1.3.6.1.4.1.19376.1.5.3.2' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.3' constraints.validation.error='PatientMedicalInstructionsTemplateId PatientMedicalInstructionsClassCode PatientMedicalInstructionsCode PatientMedicalInstructionsStatusCode PatientMedicalInstructionsText' code.codeSystemName='IHEActCode' classCode='ACT' code.code='PINSTRUCT'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PatientMedicalInstructionsTemplateId PatientMedicalInstructionsClassCode PatientMedicalInstructionsCode PatientMedicalInstructionsCodeP PatientMedicalInstructionsStatusCode PatientMedicalInstructionsText' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.3' classCode='ACT' code.codeSystemName='IHEActCode' code.codeSystem='1.3.6.1.4.1.19376.1.5.3.2' code.code='PINSTRUCT' constraints.validation.dependOn.PatientMedicalInstructionsCode='PatientMedicalInstructionsCodeP'"
  * @generated
  */
 public interface PatientMedicalInstructions extends PatientInstruction {
@@ -56,13 +56,26 @@ public interface PatientMedicalInstructions extends PatientInstruction {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
-	 * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (
-	 * value.code = 'PINSTRUCT' and value.codeSystem = '1.3.6.1.4.1.19376.1.5.3.2'))
+	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (\r\nvalue.code = \'PINSTRUCT\' and value.codeSystem = \'1.3.6.1.4.1.19376.1.5.3.2\'))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())'"
+	 * @generated
+	 */
+	boolean validatePatientMedicalInstructionsCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+	 * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+	 * value.code = 'PINSTRUCT' and value.codeSystem = '1.3.6.1.4.1.19376.1.5.3.2')
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \r\nvalue.code = \'PINSTRUCT\' and value.codeSystem = \'1.3.6.1.4.1.19376.1.5.3.2\')'"
 	 * @generated
 	 */
 	boolean validatePatientMedicalInstructionsCode(DiagnosticChain diagnostics, Map<Object, Object> context);

@@ -1559,11 +1559,9 @@ resolved</body>
   <CDA:ConstraintValidation xmi:id="_aRxLcKrsEd-yFfcbpgNFIA" base_Constraint="_MvIF0KrsEd-yFfcbpgNFIA">
     <ruleId>C83-[DE-2.01-CDA-1]</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:PropertyValidation xmi:id="_sd8oAKrsEd-yFfcbpgNFIA" base_Property="_jYv-EKrsEd-yFfcbpgNFIA">
-    <ruleId>C83-[DE-2.01-CDA-4]</ruleId>
-  </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_uQ9dwKrsEd-yFfcbpgNFIA" base_Property="_jYv-EKrsEd-yFfcbpgNFIA">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/hitsp-c80.uml#_dLq58KDqEd-dVeaMP0XXQw"/>
+    <ruleId>C83-[DE-2.01-CDA-4]</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_cclAsKrtEd-yFfcbpgNFIA" severity="WARNING"/>
   <CDA:ValueSetConstraint xmi:id="_f0_uAKrtEd-yFfcbpgNFIA" base_Property="_UrAh0KrtEd-yFfcbpgNFIA">
@@ -1709,7 +1707,7 @@ resolved</body>
   <CDA:AssociationValidation xmi:id="_kYQNgMg0EeCHk-lvWGDTdA" base_Association="_JLF4ocg0EeCHk-lvWGDTdA"/>
   <CDA:AssociationValidation xmi:id="_IXz6MMg3EeCHk-lvWGDTdA" base_Association="_5oC6IMg2EeCHk-lvWGDTdA"/>
   <CDA:ConformsTo xmi:id="_J5ubEMhGEeCHk-lvWGDTdA" base_Generalization="_I06vIMhGEeCHk-lvWGDTdA" requiresParentId="true"/>
-  <CDA:CDATemplate xmi:id="_LicFUMhGEeCHk-lvWGDTdA" base_Class="_I06IEMhGEeCHk-lvWGDTdA" templateId="2.16.840.1.113883.10.20.1.33"/>
+  <CDA:CDATemplate xmi:id="_LicFUMhGEeCHk-lvWGDTdA" base_Class="_I06IEMhGEeCHk-lvWGDTdA" templateId="2.16.840.1.113883.3.88.11.83.19"/>
   <CDA:PropertyValidation xmi:id="_Y0ZDkMhGEeCHk-lvWGDTdA" severity="WARNING" base_Property="_UNRugMhGEeCHk-lvWGDTdA"/>
   <CDA:ValueSetConstraint xmi:id="_bz46kMhGEeCHk-lvWGDTdA" base_Property="_UNRugMhGEeCHk-lvWGDTdA">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/hitsp-c80.uml#_dj_6YaDqEd-dVeaMP0XXQw"/>
@@ -1744,7 +1742,6 @@ resolved</body>
   <CDA:AssociationValidation xmi:id="_a4eeQMnSEeCDOYZyQPaRHg" severity="WARNING" base_Association="_U_oRAsnREeCDOYZyQPaRHg"/>
   <CDA:ConformsTo xmi:id="_aUWOgMzoEeCvbrjDQpuvkw" base_Generalization="_ZsrKgMzoEeCvbrjDQpuvkw" requiresParentId="true"/>
   <CDA:CDATemplate xmi:id="_oGKtsMzqEeCvbrjDQpuvkw" base_Class="_ZsqjcMzoEeCvbrjDQpuvkw" templateId="2.16.840.1.113883.3.88.11.83.12"/>
-  <CDA:PropertyValidation xmi:id="_ycRl4czqEeCvbrjDQpuvkw" base_Property="_ycRl4MzqEeCvbrjDQpuvkw"/>
   <CDA:PropertyValidation xmi:id="_ycUpMMzqEeCvbrjDQpuvkw" base_Property="_ycUCIMzqEeCvbrjDQpuvkw"/>
   <CDA:ValueSetConstraint xmi:id="_4i17gMzqEeCvbrjDQpuvkw" base_Property="_ycRl4MzqEeCvbrjDQpuvkw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/hitsp-c80.uml#_c2q6UaDqEd-dVeaMP0XXQw"/>

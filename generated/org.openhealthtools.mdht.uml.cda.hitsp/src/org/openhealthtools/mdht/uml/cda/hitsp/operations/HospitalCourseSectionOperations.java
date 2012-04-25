@@ -81,6 +81,7 @@ public class HospitalCourseSectionOperations extends
 	 */
 	public static boolean validateHITSPHospitalCourseSectionTemplateId(HospitalCourseSection hospitalCourseSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_HOSPITAL_COURSE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.HOSPITAL_COURSE_SECTION);
@@ -99,6 +100,7 @@ public class HospitalCourseSectionOperations extends
 					HITSPPlugin.INSTANCE.getString("HITSPHospitalCourseSectionTemplateId"),
 					new Object[] { hospitalCourseSection }));
 			}
+
 			return false;
 		}
 		return true;

@@ -81,6 +81,7 @@ public class CarePlanSectionOperations extends PlanOfCareSectionOperations {
 	 */
 	public static boolean validateCarePlanSectionTemplateId(CarePlanSection carePlanSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CARE_PLAN_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.CARE_PLAN_SECTION);
@@ -98,6 +99,7 @@ public class CarePlanSectionOperations extends PlanOfCareSectionOperations {
 					IHEValidator.CARE_PLAN_SECTION__CARE_PLAN_SECTION_TEMPLATE_ID,
 					IHEPlugin.INSTANCE.getString("CarePlanSectionTemplateId"), new Object[] { carePlanSection }));
 			}
+
 			return false;
 		}
 		return true;

@@ -89,6 +89,7 @@ public class CoverageEntryOperations extends CoverageActivityOperations {
 	 */
 	public static boolean validateCoverageEntryTemplateId(CoverageEntry coverageEntry, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_COVERAGE_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.COVERAGE_ENTRY);
@@ -106,6 +107,7 @@ public class CoverageEntryOperations extends CoverageActivityOperations {
 					IHEValidator.COVERAGE_ENTRY__COVERAGE_ENTRY_TEMPLATE_ID,
 					IHEPlugin.INSTANCE.getString("CoverageEntryTemplateId"), new Object[] { coverageEntry }));
 			}
+
 			return false;
 		}
 		return true;
@@ -144,6 +146,7 @@ public class CoverageEntryOperations extends CoverageActivityOperations {
 	 */
 	public static boolean validateCoverageEntryPayerEntry(CoverageEntry coverageEntry, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_COVERAGE_ENTRY_PAYER_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.COVERAGE_ENTRY);
@@ -161,6 +164,7 @@ public class CoverageEntryOperations extends CoverageActivityOperations {
 					IHEValidator.COVERAGE_ENTRY__COVERAGE_ENTRY_PAYER_ENTRY,
 					IHEPlugin.INSTANCE.getString("CoverageEntryPayerEntry"), new Object[] { coverageEntry }));
 			}
+
 			return false;
 		}
 		return true;
@@ -199,7 +203,7 @@ public class CoverageEntryOperations extends CoverageActivityOperations {
 		if (GET_PAYER_ENTRIES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				IHEPackage.Literals.COVERAGE_ENTRY, IHEPackage.Literals.COVERAGE_ENTRY.getEAllOperations().get(61));
+				IHEPackage.Literals.COVERAGE_ENTRY, IHEPackage.Literals.COVERAGE_ENTRY.getEAllOperations().get(63));
 			try {
 				GET_PAYER_ENTRIES__EOCL_QRY = helper.createQuery(GET_PAYER_ENTRIES__EOCL_EXP);
 			} catch (ParserException pe) {

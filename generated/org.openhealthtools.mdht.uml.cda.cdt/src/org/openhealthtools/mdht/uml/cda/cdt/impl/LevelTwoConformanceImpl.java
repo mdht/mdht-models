@@ -65,7 +65,7 @@ public class LevelTwoConformanceImpl extends LevelOneConformanceImpl implements 
 	 */
 	@Override
 	public LevelTwoConformance init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // LevelTwoConformanceImpl

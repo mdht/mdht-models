@@ -81,6 +81,7 @@ public class SupportParticipantOperations extends PatientContactParticipantOpera
 	 */
 	public static boolean validateHITSPSupportParticipantTemplateId(SupportParticipant supportParticipant,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_SUPPORT_PARTICIPANT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.SUPPORT_PARTICIPANT);
@@ -99,6 +100,7 @@ public class SupportParticipantOperations extends PatientContactParticipantOpera
 					HITSPPlugin.INSTANCE.getString("HITSPSupportParticipantTemplateId"),
 					new Object[] { supportParticipant }));
 			}
+
 			return false;
 		}
 		return true;

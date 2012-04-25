@@ -85,6 +85,7 @@ public class ImmunizationOperations extends org.openhealthtools.mdht.uml.cda.ihe
 	 */
 	public static boolean validateHITSPImmunizationRefusalReason(Immunization immunization,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_IMMUNIZATION_REFUSAL_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.IMMUNIZATION);
@@ -102,6 +103,7 @@ public class ImmunizationOperations extends org.openhealthtools.mdht.uml.cda.ihe
 					HITSPValidator.IMMUNIZATION__HITSP_IMMUNIZATION_REFUSAL_REASON,
 					HITSPPlugin.INSTANCE.getString("HITSPImmunizationRefusalReason"), new Object[] { immunization }));
 			}
+
 			return false;
 		}
 		return true;
@@ -140,6 +142,7 @@ public class ImmunizationOperations extends org.openhealthtools.mdht.uml.cda.ihe
 	 */
 	public static boolean validateHITSPImmunizationCodedProductName(Immunization immunization,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_IMMUNIZATION_CODED_PRODUCT_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.IMMUNIZATION);
@@ -157,6 +160,7 @@ public class ImmunizationOperations extends org.openhealthtools.mdht.uml.cda.ihe
 					HITSPValidator.IMMUNIZATION__HITSP_IMMUNIZATION_CODED_PRODUCT_NAME,
 					HITSPPlugin.INSTANCE.getString("HITSPImmunizationCodedProductName"), new Object[] { immunization }));
 			}
+
 			return false;
 		}
 		return true;
@@ -195,6 +199,7 @@ public class ImmunizationOperations extends org.openhealthtools.mdht.uml.cda.ihe
 	 */
 	public static boolean validateHITSPImmunizationTemplateId(Immunization immunization, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_IMMUNIZATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.IMMUNIZATION);
@@ -212,6 +217,7 @@ public class ImmunizationOperations extends org.openhealthtools.mdht.uml.cda.ihe
 					HITSPValidator.IMMUNIZATION__HITSP_IMMUNIZATION_TEMPLATE_ID,
 					HITSPPlugin.INSTANCE.getString("HITSPImmunizationTemplateId"), new Object[] { immunization }));
 			}
+
 			return false;
 		}
 		return true;

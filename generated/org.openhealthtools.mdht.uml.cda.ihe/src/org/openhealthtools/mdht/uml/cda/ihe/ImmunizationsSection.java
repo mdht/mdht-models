@@ -27,7 +27,7 @@ import org.eclipse.emf.common.util.EList;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ihe.IHEPackage#getImmunizationsSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='1.3.6.1.4.1.19376.1.5.3.1.3.23' constraints.validation.error='IHEImmunizationsSectionTemplateId IHEImmunizationsSectionImmunization'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='IHEImmunizationsSectionTemplateId IHEImmunizationsSectionImmunization' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.3.23'"
  * @generated
  */
 public interface ImmunizationsSection extends org.openhealthtools.mdht.uml.cda.ccd.ImmunizationsSection {

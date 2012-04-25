@@ -54,11 +54,9 @@ The differentiation between Vital Signs and Results varies by clinical context. 
   <CDA:ConstraintValidation xmi:id="_AKv5IK7OEd6_ioDelDcPPg" base_Constraint="_hrcTgK7MEd6_ioDelDcPPg">
     <ruleId>C83-[CT-119-2]</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:PropertyValidation xmi:id="_ozph0BvkEd-yI6xBTkJSNw" base_Property="_K4Lk0K7REd6_ioDelDcPPg">
-    <ruleId>C154-[DE-14.03-1]</ruleId>
-  </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_P-2i8DITEd-saqiXO4OYhQ" base_Property="_K4Lk0K7REd6_ioDelDcPPg">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/hitsp-c80.uml#_UvVE0TISEd-saqiXO4OYhQ"/>
+    <ruleId>C154-[DE-14.03-1]</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ConformsTo xmi:id="_rGKkkFF6Ed-Lud-5SYZhMw" base_Generalization="_VeaIMK7HEd6_ioDelDcPPg" requiresParentId="true">
     <ruleId>C83-[CT-119-1]</ruleId>

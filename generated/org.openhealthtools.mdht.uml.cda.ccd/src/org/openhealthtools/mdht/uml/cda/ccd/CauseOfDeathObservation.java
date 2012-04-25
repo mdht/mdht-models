@@ -17,7 +17,7 @@ package org.openhealthtools.mdht.uml.cda.ccd;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ccd.CCDPackage#getCauseOfDeathObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.1.42' constraints.validation.error='CauseOfDeathObservationTemplateId'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='CauseOfDeathObservationTemplateId' templateId.root='2.16.840.1.113883.10.20.1.42'"
  * @generated
  */
 public interface CauseOfDeathObservation extends FamilyHistoryObservation {

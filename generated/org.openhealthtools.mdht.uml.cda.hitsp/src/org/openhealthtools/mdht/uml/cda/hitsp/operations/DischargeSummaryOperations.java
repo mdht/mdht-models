@@ -136,6 +136,7 @@ public class DischargeSummaryOperations extends MedicalSummaryOperations {
 	 */
 	public static boolean validateDischargeSummaryProblemListSection(DischargeSummary dischargeSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_DISCHARGE_SUMMARY_PROBLEM_LIST_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.DISCHARGE_SUMMARY);
@@ -154,6 +155,7 @@ public class DischargeSummaryOperations extends MedicalSummaryOperations {
 					HITSPPlugin.INSTANCE.getString("DischargeSummaryProblemListSection"),
 					new Object[] { dischargeSummary }));
 			}
+
 			return false;
 		}
 		return true;
@@ -192,6 +194,7 @@ public class DischargeSummaryOperations extends MedicalSummaryOperations {
 	 */
 	public static boolean validateDischargeSummaryAdmissionMedicationHistorySection(DischargeSummary dischargeSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_DISCHARGE_SUMMARY_ADMISSION_MEDICATION_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.DISCHARGE_SUMMARY);
@@ -211,6 +214,7 @@ public class DischargeSummaryOperations extends MedicalSummaryOperations {
 					HITSPPlugin.INSTANCE.getString("DischargeSummaryAdmissionMedicationHistorySection"),
 					new Object[] { dischargeSummary }));
 			}
+
 			return false;
 		}
 		return true;
@@ -249,6 +253,7 @@ public class DischargeSummaryOperations extends MedicalSummaryOperations {
 	 */
 	public static boolean validateDischargeSummaryHospitalAdmissionDiagnosisSection(DischargeSummary dischargeSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_DISCHARGE_SUMMARY_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.DISCHARGE_SUMMARY);
@@ -268,6 +273,7 @@ public class DischargeSummaryOperations extends MedicalSummaryOperations {
 					HITSPPlugin.INSTANCE.getString("DischargeSummaryHospitalAdmissionDiagnosisSection"),
 					new Object[] { dischargeSummary }));
 			}
+
 			return false;
 		}
 		return true;
@@ -306,6 +312,7 @@ public class DischargeSummaryOperations extends MedicalSummaryOperations {
 	 */
 	public static boolean validateDischargeSummaryAdvanceDirectivesSection(DischargeSummary dischargeSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_DISCHARGE_SUMMARY_ADVANCE_DIRECTIVES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.DISCHARGE_SUMMARY);
@@ -324,6 +331,7 @@ public class DischargeSummaryOperations extends MedicalSummaryOperations {
 					HITSPPlugin.INSTANCE.getString("DischargeSummaryAdvanceDirectivesSection"),
 					new Object[] { dischargeSummary }));
 			}
+
 			return false;
 		}
 		return true;
@@ -362,6 +370,7 @@ public class DischargeSummaryOperations extends MedicalSummaryOperations {
 	 */
 	public static boolean validateDischargeSummaryAllergiesReactionsSection(DischargeSummary dischargeSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_DISCHARGE_SUMMARY_ALLERGIES_REACTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.DISCHARGE_SUMMARY);
@@ -381,6 +390,7 @@ public class DischargeSummaryOperations extends MedicalSummaryOperations {
 					HITSPPlugin.INSTANCE.getString("DischargeSummaryAllergiesReactionsSection"),
 					new Object[] { dischargeSummary }));
 			}
+
 			return false;
 		}
 		return true;
@@ -419,6 +429,7 @@ public class DischargeSummaryOperations extends MedicalSummaryOperations {
 	 */
 	public static boolean validateDischargeSummaryDischargeDiagnosisSection(DischargeSummary dischargeSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_DISCHARGE_SUMMARY_DISCHARGE_DIAGNOSIS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.DISCHARGE_SUMMARY);
@@ -438,6 +449,7 @@ public class DischargeSummaryOperations extends MedicalSummaryOperations {
 					HITSPPlugin.INSTANCE.getString("DischargeSummaryDischargeDiagnosisSection"),
 					new Object[] { dischargeSummary }));
 			}
+
 			return false;
 		}
 		return true;
@@ -476,6 +488,7 @@ public class DischargeSummaryOperations extends MedicalSummaryOperations {
 	 */
 	public static boolean validateDischargeSummaryDischargeDiet(DischargeSummary dischargeSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_DISCHARGE_SUMMARY_DISCHARGE_DIET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.DISCHARGE_SUMMARY);
@@ -493,6 +506,7 @@ public class DischargeSummaryOperations extends MedicalSummaryOperations {
 					HITSPValidator.DISCHARGE_SUMMARY__DISCHARGE_SUMMARY_DISCHARGE_DIET,
 					HITSPPlugin.INSTANCE.getString("DischargeSummaryDischargeDiet"), new Object[] { dischargeSummary }));
 			}
+
 			return false;
 		}
 		return true;
@@ -531,6 +545,7 @@ public class DischargeSummaryOperations extends MedicalSummaryOperations {
 	 */
 	public static boolean validateDischargeSummaryHospitalDischargeMedicationsSection(
 			DischargeSummary dischargeSummary, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_DISCHARGE_SUMMARY_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.DISCHARGE_SUMMARY);
@@ -550,6 +565,7 @@ public class DischargeSummaryOperations extends MedicalSummaryOperations {
 					HITSPPlugin.INSTANCE.getString("DischargeSummaryHospitalDischargeMedicationsSection"),
 					new Object[] { dischargeSummary }));
 			}
+
 			return false;
 		}
 		return true;
@@ -588,6 +604,7 @@ public class DischargeSummaryOperations extends MedicalSummaryOperations {
 	 */
 	public static boolean validateDischargeSummaryDiagnosticResultsSection(DischargeSummary dischargeSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_DISCHARGE_SUMMARY_DIAGNOSTIC_RESULTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.DISCHARGE_SUMMARY);
@@ -606,6 +623,7 @@ public class DischargeSummaryOperations extends MedicalSummaryOperations {
 					HITSPPlugin.INSTANCE.getString("DischargeSummaryDiagnosticResultsSection"),
 					new Object[] { dischargeSummary }));
 			}
+
 			return false;
 		}
 		return true;
@@ -644,6 +662,7 @@ public class DischargeSummaryOperations extends MedicalSummaryOperations {
 	 */
 	public static boolean validateDischargeSummaryFunctionalStatusSection(DischargeSummary dischargeSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_DISCHARGE_SUMMARY_FUNCTIONAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.DISCHARGE_SUMMARY);
@@ -662,6 +681,7 @@ public class DischargeSummaryOperations extends MedicalSummaryOperations {
 					HITSPPlugin.INSTANCE.getString("DischargeSummaryFunctionalStatusSection"),
 					new Object[] { dischargeSummary }));
 			}
+
 			return false;
 		}
 		return true;
@@ -700,6 +720,7 @@ public class DischargeSummaryOperations extends MedicalSummaryOperations {
 	 */
 	public static boolean validateDischargeSummaryHistoryOfPresentIllness(DischargeSummary dischargeSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_DISCHARGE_SUMMARY_HISTORY_OF_PRESENT_ILLNESS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.DISCHARGE_SUMMARY);
@@ -718,6 +739,7 @@ public class DischargeSummaryOperations extends MedicalSummaryOperations {
 					HITSPPlugin.INSTANCE.getString("DischargeSummaryHistoryOfPresentIllness"),
 					new Object[] { dischargeSummary }));
 			}
+
 			return false;
 		}
 		return true;
@@ -756,6 +778,7 @@ public class DischargeSummaryOperations extends MedicalSummaryOperations {
 	 */
 	public static boolean validateDischargeSummaryHospitalCourseSection(DischargeSummary dischargeSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_DISCHARGE_SUMMARY_HOSPITAL_COURSE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.DISCHARGE_SUMMARY);
@@ -774,6 +797,7 @@ public class DischargeSummaryOperations extends MedicalSummaryOperations {
 					HITSPPlugin.INSTANCE.getString("DischargeSummaryHospitalCourseSection"),
 					new Object[] { dischargeSummary }));
 			}
+
 			return false;
 		}
 		return true;
@@ -812,6 +836,7 @@ public class DischargeSummaryOperations extends MedicalSummaryOperations {
 	 */
 	public static boolean validateDischargeSummaryMedicalEquipmentSection(DischargeSummary dischargeSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_DISCHARGE_SUMMARY_MEDICAL_EQUIPMENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.DISCHARGE_SUMMARY);
@@ -830,6 +855,7 @@ public class DischargeSummaryOperations extends MedicalSummaryOperations {
 					HITSPPlugin.INSTANCE.getString("DischargeSummaryMedicalEquipmentSection"),
 					new Object[] { dischargeSummary }));
 			}
+
 			return false;
 		}
 		return true;
@@ -868,6 +894,7 @@ public class DischargeSummaryOperations extends MedicalSummaryOperations {
 	 */
 	public static boolean validateDischargeSummaryPhysicalExamSection(DischargeSummary dischargeSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_DISCHARGE_SUMMARY_PHYSICAL_EXAM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.DISCHARGE_SUMMARY);
@@ -886,6 +913,7 @@ public class DischargeSummaryOperations extends MedicalSummaryOperations {
 					HITSPPlugin.INSTANCE.getString("DischargeSummaryPhysicalExamSection"),
 					new Object[] { dischargeSummary }));
 			}
+
 			return false;
 		}
 		return true;
@@ -924,6 +952,7 @@ public class DischargeSummaryOperations extends MedicalSummaryOperations {
 	 */
 	public static boolean validateDischargeSummaryPlanOfCareSection(DischargeSummary dischargeSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_DISCHARGE_SUMMARY_PLAN_OF_CARE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.DISCHARGE_SUMMARY);
@@ -942,6 +971,7 @@ public class DischargeSummaryOperations extends MedicalSummaryOperations {
 					HITSPPlugin.INSTANCE.getString("DischargeSummaryPlanOfCareSection"),
 					new Object[] { dischargeSummary }));
 			}
+
 			return false;
 		}
 		return true;
@@ -980,6 +1010,7 @@ public class DischargeSummaryOperations extends MedicalSummaryOperations {
 	 */
 	public static boolean validateDischargeSummaryHistoryOfPastIllnessSection(DischargeSummary dischargeSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_DISCHARGE_SUMMARY_HISTORY_OF_PAST_ILLNESS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.DISCHARGE_SUMMARY);
@@ -999,6 +1030,7 @@ public class DischargeSummaryOperations extends MedicalSummaryOperations {
 					HITSPPlugin.INSTANCE.getString("DischargeSummaryHistoryOfPastIllnessSection"),
 					new Object[] { dischargeSummary }));
 			}
+
 			return false;
 		}
 		return true;
@@ -1037,6 +1069,7 @@ public class DischargeSummaryOperations extends MedicalSummaryOperations {
 	 */
 	public static boolean validateDischargeSummaryReviewOfSystemsSection(DischargeSummary dischargeSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_DISCHARGE_SUMMARY_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.DISCHARGE_SUMMARY);
@@ -1055,6 +1088,7 @@ public class DischargeSummaryOperations extends MedicalSummaryOperations {
 					HITSPPlugin.INSTANCE.getString("DischargeSummaryReviewOfSystemsSection"),
 					new Object[] { dischargeSummary }));
 			}
+
 			return false;
 		}
 		return true;
@@ -1093,6 +1127,7 @@ public class DischargeSummaryOperations extends MedicalSummaryOperations {
 	 */
 	public static boolean validateDischargeSummaryMedicationsAdministeredSection(DischargeSummary dischargeSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_DISCHARGE_SUMMARY_MEDICATIONS_ADMINISTERED_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.DISCHARGE_SUMMARY);
@@ -1112,6 +1147,7 @@ public class DischargeSummaryOperations extends MedicalSummaryOperations {
 					HITSPPlugin.INSTANCE.getString("DischargeSummaryMedicationsAdministeredSection"),
 					new Object[] { dischargeSummary }));
 			}
+
 			return false;
 		}
 		return true;
@@ -1150,6 +1186,7 @@ public class DischargeSummaryOperations extends MedicalSummaryOperations {
 	 */
 	public static boolean validateDischargeSummaryVitalSignsSection(DischargeSummary dischargeSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_DISCHARGE_SUMMARY_VITAL_SIGNS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.DISCHARGE_SUMMARY);
@@ -1168,6 +1205,7 @@ public class DischargeSummaryOperations extends MedicalSummaryOperations {
 					HITSPPlugin.INSTANCE.getString("DischargeSummaryVitalSignsSection"),
 					new Object[] { dischargeSummary }));
 			}
+
 			return false;
 		}
 		return true;
@@ -2064,6 +2102,7 @@ public class DischargeSummaryOperations extends MedicalSummaryOperations {
 	 */
 	public static boolean validateMedicalSummaryTemplateId(DischargeSummary dischargeSummary,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICAL_SUMMARY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.DISCHARGE_SUMMARY);
@@ -2087,6 +2126,7 @@ public class DischargeSummaryOperations extends MedicalSummaryOperations {
 								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(dischargeSummary, context) }),
 					new Object[] { dischargeSummary }));
 			}
+
 			return false;
 		}
 		return true;

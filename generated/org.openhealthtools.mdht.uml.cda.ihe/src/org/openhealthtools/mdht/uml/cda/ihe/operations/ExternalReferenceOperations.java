@@ -90,6 +90,7 @@ public class ExternalReferenceOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateExternalReferenceHasNoCode(ExternalReference externalReference,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_EXTERNAL_REFERENCE_HAS_NO_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.EXTERNAL_REFERENCE);
@@ -107,6 +108,7 @@ public class ExternalReferenceOperations extends ClinicalStatementOperations {
 					IHEValidator.EXTERNAL_REFERENCE__EXTERNAL_REFERENCE_HAS_NO_CODE,
 					IHEPlugin.INSTANCE.getString("ExternalReferenceHasNoCode"), new Object[] { externalReference }));
 			}
+
 			return false;
 		}
 		return true;
@@ -145,6 +147,7 @@ public class ExternalReferenceOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateExternalReferenceHasReference(ExternalReference externalReference,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_EXTERNAL_REFERENCE_HAS_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.EXTERNAL_REFERENCE);
@@ -162,6 +165,7 @@ public class ExternalReferenceOperations extends ClinicalStatementOperations {
 					IHEValidator.EXTERNAL_REFERENCE__EXTERNAL_REFERENCE_HAS_REFERENCE,
 					IHEPlugin.INSTANCE.getString("ExternalReferenceHasReference"), new Object[] { externalReference }));
 			}
+
 			return false;
 		}
 		return true;
@@ -200,6 +204,7 @@ public class ExternalReferenceOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateExternalReferenceHasReferenceExternalDocument(ExternalReference externalReference,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_EXTERNAL_REFERENCE_HAS_REFERENCE_EXTERNAL_DOCUMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.EXTERNAL_REFERENCE);
@@ -219,6 +224,7 @@ public class ExternalReferenceOperations extends ClinicalStatementOperations {
 					IHEPlugin.INSTANCE.getString("ExternalReferenceHasReferenceExternalDocument"),
 					new Object[] { externalReference }));
 			}
+
 			return false;
 		}
 		return true;
@@ -257,6 +263,7 @@ public class ExternalReferenceOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateExternalReferenceHasReferenceExternalDocumentID(ExternalReference externalReference,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_EXTERNAL_REFERENCE_HAS_REFERENCE_EXTERNAL_DOCUMENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.EXTERNAL_REFERENCE);
@@ -276,6 +283,7 @@ public class ExternalReferenceOperations extends ClinicalStatementOperations {
 					IHEPlugin.INSTANCE.getString("ExternalReferenceHasReferenceExternalDocumentID"),
 					new Object[] { externalReference }));
 			}
+
 			return false;
 		}
 		return true;
@@ -314,6 +322,7 @@ public class ExternalReferenceOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateExternalReferenceHasReferenceExternalDocumentText(
 			ExternalReference externalReference, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_EXTERNAL_REFERENCE_HAS_REFERENCE_EXTERNAL_DOCUMENT_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.EXTERNAL_REFERENCE);
@@ -333,6 +342,7 @@ public class ExternalReferenceOperations extends ClinicalStatementOperations {
 					IHEPlugin.INSTANCE.getString("ExternalReferenceHasReferenceExternalDocumentText"),
 					new Object[] { externalReference }));
 			}
+
 			return false;
 		}
 		return true;
@@ -371,6 +381,7 @@ public class ExternalReferenceOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateExternalReferenceTemplateId(ExternalReference externalReference,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_EXTERNAL_REFERENCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.EXTERNAL_REFERENCE);
@@ -388,6 +399,7 @@ public class ExternalReferenceOperations extends ClinicalStatementOperations {
 					IHEValidator.EXTERNAL_REFERENCE__EXTERNAL_REFERENCE_TEMPLATE_ID,
 					IHEPlugin.INSTANCE.getString("ExternalReferenceTemplateId"), new Object[] { externalReference }));
 			}
+
 			return false;
 		}
 		return true;
@@ -426,6 +438,7 @@ public class ExternalReferenceOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateExternalReferenceClassCode(ExternalReference externalReference,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_EXTERNAL_REFERENCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.EXTERNAL_REFERENCE);
@@ -443,6 +456,7 @@ public class ExternalReferenceOperations extends ClinicalStatementOperations {
 					IHEValidator.EXTERNAL_REFERENCE__EXTERNAL_REFERENCE_CLASS_CODE,
 					IHEPlugin.INSTANCE.getString("ExternalReferenceClassCode"), new Object[] { externalReference }));
 			}
+
 			return false;
 		}
 		return true;
@@ -481,6 +495,7 @@ public class ExternalReferenceOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateExternalReferenceMoodCode(ExternalReference externalReference,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_EXTERNAL_REFERENCE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.EXTERNAL_REFERENCE);
@@ -498,6 +513,7 @@ public class ExternalReferenceOperations extends ClinicalStatementOperations {
 					IHEValidator.EXTERNAL_REFERENCE__EXTERNAL_REFERENCE_MOOD_CODE,
 					IHEPlugin.INSTANCE.getString("ExternalReferenceMoodCode"), new Object[] { externalReference }));
 			}
+
 			return false;
 		}
 		return true;
@@ -536,6 +552,7 @@ public class ExternalReferenceOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateExternalReferenceId(ExternalReference externalReference, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_EXTERNAL_REFERENCE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.EXTERNAL_REFERENCE);
@@ -553,6 +570,7 @@ public class ExternalReferenceOperations extends ClinicalStatementOperations {
 					IHEValidator.EXTERNAL_REFERENCE__EXTERNAL_REFERENCE_ID,
 					IHEPlugin.INSTANCE.getString("ExternalReferenceId"), new Object[] { externalReference }));
 			}
+
 			return false;
 		}
 		return true;
@@ -591,6 +609,7 @@ public class ExternalReferenceOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateExternalReferenceText(ExternalReference externalReference,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_EXTERNAL_REFERENCE_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.EXTERNAL_REFERENCE);
@@ -608,6 +627,7 @@ public class ExternalReferenceOperations extends ClinicalStatementOperations {
 					IHEValidator.EXTERNAL_REFERENCE__EXTERNAL_REFERENCE_TEXT,
 					IHEPlugin.INSTANCE.getString("ExternalReferenceText"), new Object[] { externalReference }));
 			}
+
 			return false;
 		}
 		return true;

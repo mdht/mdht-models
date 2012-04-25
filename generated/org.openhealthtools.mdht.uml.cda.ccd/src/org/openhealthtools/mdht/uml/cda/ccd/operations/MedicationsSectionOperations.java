@@ -98,6 +98,7 @@ public class MedicationsSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateMedicationsSectionHasMedicationOrSupplyActivity(
 			MedicationsSection medicationsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATIONS_SECTION_HAS_MEDICATION_OR_SUPPLY_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.MEDICATIONS_SECTION);
@@ -117,6 +118,7 @@ public class MedicationsSectionOperations extends SectionOperations {
 					CCDPlugin.INSTANCE.getString("MedicationsSectionHasMedicationOrSupplyActivity"),
 					new Object[] { medicationsSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -155,6 +157,7 @@ public class MedicationsSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateMedicationsSectionTemplateId(MedicationsSection medicationsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.MEDICATIONS_SECTION);
@@ -172,6 +175,7 @@ public class MedicationsSectionOperations extends SectionOperations {
 					CCDValidator.MEDICATIONS_SECTION__MEDICATIONS_SECTION_TEMPLATE_ID,
 					CCDPlugin.INSTANCE.getString("MedicationsSectionTemplateId"), new Object[] { medicationsSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -186,8 +190,8 @@ public class MedicationsSectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_MEDICATIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
-			+ "value.code = '10160-0' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
+			+ "value.code = '10160-0' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMedicationsSectionCode(MedicationsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medications Section Code</em>}' invariant operation.
@@ -204,8 +208,8 @@ public class MedicationsSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in (
-	 * value.code = '10160-0' and value.codeSystem = '2.16.840.1.113883.6.1'))
+	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+	 * value.code = '10160-0' and value.codeSystem = '2.16.840.1.113883.6.1')
 	 * @param medicationsSection The receiving '<em><b>Medications Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -214,6 +218,7 @@ public class MedicationsSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateMedicationsSectionCode(MedicationsSection medicationsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATIONS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.MEDICATIONS_SECTION);
@@ -231,6 +236,7 @@ public class MedicationsSectionOperations extends SectionOperations {
 					CCDValidator.MEDICATIONS_SECTION__MEDICATIONS_SECTION_CODE,
 					CCDPlugin.INSTANCE.getString("MedicationsSectionCode"), new Object[] { medicationsSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -269,6 +275,7 @@ public class MedicationsSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateMedicationsSectionTitle(MedicationsSection medicationsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATIONS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.MEDICATIONS_SECTION);
@@ -286,6 +293,7 @@ public class MedicationsSectionOperations extends SectionOperations {
 					CCDValidator.MEDICATIONS_SECTION__MEDICATIONS_SECTION_TITLE,
 					CCDPlugin.INSTANCE.getString("MedicationsSectionTitle"), new Object[] { medicationsSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -324,6 +332,7 @@ public class MedicationsSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateMedicationsSectionText(MedicationsSection medicationsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATIONS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.MEDICATIONS_SECTION);
@@ -341,6 +350,7 @@ public class MedicationsSectionOperations extends SectionOperations {
 					CCDValidator.MEDICATIONS_SECTION__MEDICATIONS_SECTION_TEXT,
 					CCDPlugin.INSTANCE.getString("MedicationsSectionText"), new Object[] { medicationsSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -379,6 +389,7 @@ public class MedicationsSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateMedicationsSectionMedicationActivity(MedicationsSection medicationsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATIONS_SECTION_MEDICATION_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.MEDICATIONS_SECTION);
@@ -397,6 +408,7 @@ public class MedicationsSectionOperations extends SectionOperations {
 					CCDPlugin.INSTANCE.getString("MedicationsSectionMedicationActivity"),
 					new Object[] { medicationsSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -435,6 +447,7 @@ public class MedicationsSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateMedicationsSectionSupplyActivity(MedicationsSection medicationsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_MEDICATIONS_SECTION_SUPPLY_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.MEDICATIONS_SECTION);
@@ -453,6 +466,7 @@ public class MedicationsSectionOperations extends SectionOperations {
 					CCDPlugin.INSTANCE.getString("MedicationsSectionSupplyActivity"),
 					new Object[] { medicationsSection }));
 			}
+
 			return false;
 		}
 		return true;

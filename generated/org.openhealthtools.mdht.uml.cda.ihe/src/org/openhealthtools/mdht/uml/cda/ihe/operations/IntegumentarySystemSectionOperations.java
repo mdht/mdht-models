@@ -84,6 +84,7 @@ public class IntegumentarySystemSectionOperations extends SectionOperations {
 	public static boolean validateIntegumentarySystemSectionTemplateId(
 			IntegumentarySystemSection integumentarySystemSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_INTEGUMENTARY_SYSTEM_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.INTEGUMENTARY_SYSTEM_SECTION);
@@ -102,6 +103,7 @@ public class IntegumentarySystemSectionOperations extends SectionOperations {
 					IHEPlugin.INSTANCE.getString("IntegumentarySystemSectionTemplateId"),
 					new Object[] { integumentarySystemSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -116,8 +118,8 @@ public class IntegumentarySystemSectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_INTEGUMENTARY_SYSTEM_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
-			+ "value.code = '29302-7' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
+			+ "value.code = '29302-7' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateIntegumentarySystemSectionCode(IntegumentarySystemSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Integumentary System Section Code</em>}' invariant operation.
@@ -134,8 +136,8 @@ public class IntegumentarySystemSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in (
-	 * value.code = '29302-7' and value.codeSystem = '2.16.840.1.113883.6.1'))
+	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+	 * value.code = '29302-7' and value.codeSystem = '2.16.840.1.113883.6.1')
 	 * @param integumentarySystemSection The receiving '<em><b>Integumentary System Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -144,6 +146,7 @@ public class IntegumentarySystemSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateIntegumentarySystemSectionCode(IntegumentarySystemSection integumentarySystemSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_INTEGUMENTARY_SYSTEM_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.INTEGUMENTARY_SYSTEM_SECTION);
@@ -162,6 +165,7 @@ public class IntegumentarySystemSectionOperations extends SectionOperations {
 					IHEPlugin.INSTANCE.getString("IntegumentarySystemSectionCode"),
 					new Object[] { integumentarySystemSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -201,6 +205,7 @@ public class IntegumentarySystemSectionOperations extends SectionOperations {
 	public static boolean validateIntegumentarySystemSectionProblemEntry(
 			IntegumentarySystemSection integumentarySystemSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_INTEGUMENTARY_SYSTEM_SECTION_PROBLEM_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.INTEGUMENTARY_SYSTEM_SECTION);
@@ -219,6 +224,7 @@ public class IntegumentarySystemSectionOperations extends SectionOperations {
 					IHEPlugin.INSTANCE.getString("IntegumentarySystemSectionProblemEntry"),
 					new Object[] { integumentarySystemSection }));
 			}
+
 			return false;
 		}
 		return true;

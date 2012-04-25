@@ -81,6 +81,7 @@ public class SocialHistorySectionOperations extends
 	 */
 	public static boolean validateIHESocialHistorySectionTemplateId(SocialHistorySection socialHistorySection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_IHE_SOCIAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.SOCIAL_HISTORY_SECTION);
@@ -99,6 +100,7 @@ public class SocialHistorySectionOperations extends
 					IHEPlugin.INSTANCE.getString("IHESocialHistorySectionTemplateId"),
 					new Object[] { socialHistorySection }));
 			}
+
 			return false;
 		}
 		return true;

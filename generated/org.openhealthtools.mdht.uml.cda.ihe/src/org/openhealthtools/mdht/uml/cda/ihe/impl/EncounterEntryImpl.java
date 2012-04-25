@@ -72,6 +72,15 @@ public abstract class EncounterEntryImpl extends EncounterImpl implements Encoun
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateEncounterEntryCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EncounterEntryOperations.validateEncounterEntryCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateEncounterEntryCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EncounterEntryOperations.validateEncounterEntryCode(this, diagnostics, context);
 	}

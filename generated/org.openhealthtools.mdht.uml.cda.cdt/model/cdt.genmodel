@@ -770,6 +770,10 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cdt.ecore#//UnstructuredDocument/UnstructuredDocumentEffectiveTime/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cdt.ecore#//UnstructuredDocument/UnstructuredDocumentEffectiveTime/context"/>
       </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="cdt.ecore#//UnstructuredDocument/UnstructuredDocumentCustodian">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cdt.ecore#//UnstructuredDocument/UnstructuredDocumentCustodian/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="cdt.ecore#//UnstructuredDocument/UnstructuredDocumentCustodian/context"/>
+      </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="cdt.ecore#//HospitalDischargeStudiesSummarySection">
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="cdt.ecore#//HospitalDischargeStudiesSummarySection/HospitalDischargeStudiesSummarySectionTemplateId">

@@ -100,6 +100,7 @@ public class EncountersActivityOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateEncountersActivityHasIndications(EncountersActivity encountersActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ENCOUNTERS_ACTIVITY_HAS_INDICATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.ENCOUNTERS_ACTIVITY);
@@ -118,6 +119,7 @@ public class EncountersActivityOperations extends ClinicalStatementOperations {
 					CCDPlugin.INSTANCE.getString("EncountersActivityHasIndications"),
 					new Object[] { encountersActivity }));
 			}
+
 			return false;
 		}
 		return true;
@@ -156,6 +158,7 @@ public class EncountersActivityOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateEncountersActivityHasPractitioners(EncountersActivity encountersActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ENCOUNTERS_ACTIVITY_HAS_PRACTITIONERS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.ENCOUNTERS_ACTIVITY);
@@ -174,6 +177,7 @@ public class EncountersActivityOperations extends ClinicalStatementOperations {
 					CCDPlugin.INSTANCE.getString("EncountersActivityHasPractitioners"),
 					new Object[] { encountersActivity }));
 			}
+
 			return false;
 		}
 		return true;
@@ -212,6 +216,7 @@ public class EncountersActivityOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateEncountersActivityPractitionerRole(EncountersActivity encountersActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ENCOUNTERS_ACTIVITY_PRACTITIONER_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.ENCOUNTERS_ACTIVITY);
@@ -230,6 +235,7 @@ public class EncountersActivityOperations extends ClinicalStatementOperations {
 					CCDPlugin.INSTANCE.getString("EncountersActivityPractitionerRole"),
 					new Object[] { encountersActivity }));
 			}
+
 			return false;
 		}
 		return true;
@@ -268,6 +274,7 @@ public class EncountersActivityOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateEncountersActivityTemplateId(EncountersActivity encountersActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ENCOUNTERS_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.ENCOUNTERS_ACTIVITY);
@@ -285,6 +292,7 @@ public class EncountersActivityOperations extends ClinicalStatementOperations {
 					CCDValidator.ENCOUNTERS_ACTIVITY__ENCOUNTERS_ACTIVITY_TEMPLATE_ID,
 					CCDPlugin.INSTANCE.getString("EncountersActivityTemplateId"), new Object[] { encountersActivity }));
 			}
+
 			return false;
 		}
 		return true;
@@ -323,6 +331,7 @@ public class EncountersActivityOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateEncountersActivityClassCode(EncountersActivity encountersActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ENCOUNTERS_ACTIVITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.ENCOUNTERS_ACTIVITY);
@@ -340,6 +349,7 @@ public class EncountersActivityOperations extends ClinicalStatementOperations {
 					CCDValidator.ENCOUNTERS_ACTIVITY__ENCOUNTERS_ACTIVITY_CLASS_CODE,
 					CCDPlugin.INSTANCE.getString("EncountersActivityClassCode"), new Object[] { encountersActivity }));
 			}
+
 			return false;
 		}
 		return true;
@@ -378,6 +388,7 @@ public class EncountersActivityOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateEncountersActivityMoodCode(EncountersActivity encountersActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ENCOUNTERS_ACTIVITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.ENCOUNTERS_ACTIVITY);
@@ -395,6 +406,7 @@ public class EncountersActivityOperations extends ClinicalStatementOperations {
 					CCDValidator.ENCOUNTERS_ACTIVITY__ENCOUNTERS_ACTIVITY_MOOD_CODE,
 					CCDPlugin.INSTANCE.getString("EncountersActivityMoodCode"), new Object[] { encountersActivity }));
 			}
+
 			return false;
 		}
 		return true;
@@ -433,6 +445,7 @@ public class EncountersActivityOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateEncountersActivityId(EncountersActivity encountersActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ENCOUNTERS_ACTIVITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.ENCOUNTERS_ACTIVITY);
@@ -450,6 +463,7 @@ public class EncountersActivityOperations extends ClinicalStatementOperations {
 					CCDValidator.ENCOUNTERS_ACTIVITY__ENCOUNTERS_ACTIVITY_ID,
 					CCDPlugin.INSTANCE.getString("EncountersActivityId"), new Object[] { encountersActivity }));
 			}
+
 			return false;
 		}
 		return true;
@@ -488,6 +502,7 @@ public class EncountersActivityOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateEncountersActivityEffectiveTime(EncountersActivity encountersActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ENCOUNTERS_ACTIVITY_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.ENCOUNTERS_ACTIVITY);
@@ -506,6 +521,7 @@ public class EncountersActivityOperations extends ClinicalStatementOperations {
 					CCDPlugin.INSTANCE.getString("EncountersActivityEffectiveTime"),
 					new Object[] { encountersActivity }));
 			}
+
 			return false;
 		}
 		return true;
@@ -544,6 +560,7 @@ public class EncountersActivityOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateEncountersActivityPatientInstruction(EncountersActivity encountersActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ENCOUNTERS_ACTIVITY_PATIENT_INSTRUCTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.ENCOUNTERS_ACTIVITY);
@@ -562,6 +579,7 @@ public class EncountersActivityOperations extends ClinicalStatementOperations {
 					CCDPlugin.INSTANCE.getString("EncountersActivityPatientInstruction"),
 					new Object[] { encountersActivity }));
 			}
+
 			return false;
 		}
 		return true;
@@ -600,6 +618,7 @@ public class EncountersActivityOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateEncountersActivityAgeObservation(EncountersActivity encountersActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ENCOUNTERS_ACTIVITY_AGE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.ENCOUNTERS_ACTIVITY);
@@ -618,6 +637,7 @@ public class EncountersActivityOperations extends ClinicalStatementOperations {
 					CCDPlugin.INSTANCE.getString("EncountersActivityAgeObservation"),
 					new Object[] { encountersActivity }));
 			}
+
 			return false;
 		}
 		return true;
@@ -658,6 +678,7 @@ public class EncountersActivityOperations extends ClinicalStatementOperations {
 
 	public static boolean validateEncountersActivityEncounterLocation(EncountersActivity encountersActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_ENCOUNTERS_ACTIVITY_ENCOUNTER_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.ENCOUNTERS_ACTIVITY);
@@ -676,6 +697,7 @@ public class EncountersActivityOperations extends ClinicalStatementOperations {
 					CCDPlugin.INSTANCE.getString("EncountersActivityEncounterLocation"),
 					new Object[] { encountersActivity }));
 			}
+
 			return false;
 		}
 		return true;
@@ -715,7 +737,7 @@ public class EncountersActivityOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				CCDPackage.Literals.ENCOUNTERS_ACTIVITY,
-				CCDPackage.Literals.ENCOUNTERS_ACTIVITY.getEAllOperations().get(60));
+				CCDPackage.Literals.ENCOUNTERS_ACTIVITY.getEAllOperations().get(62));
 			try {
 				GET_PATIENT_INSTRUCTIONS__EOCL_QRY = helper.createQuery(GET_PATIENT_INSTRUCTIONS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -762,7 +784,7 @@ public class EncountersActivityOperations extends ClinicalStatementOperations {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
 				CCDPackage.Literals.ENCOUNTERS_ACTIVITY,
-				CCDPackage.Literals.ENCOUNTERS_ACTIVITY.getEAllOperations().get(61));
+				CCDPackage.Literals.ENCOUNTERS_ACTIVITY.getEAllOperations().get(63));
 			try {
 				GET_AGE_OBSERVATION__EOCL_QRY = helper.createQuery(GET_AGE_OBSERVATION__EOCL_EXP);
 			} catch (ParserException pe) {

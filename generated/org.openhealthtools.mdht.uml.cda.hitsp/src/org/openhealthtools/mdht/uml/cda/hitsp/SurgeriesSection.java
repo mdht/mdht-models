@@ -23,7 +23,7 @@ import org.openhealthtools.mdht.uml.cda.ihe.CodedSurgeriesSection;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage#getSurgeriesSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.3.88.11.83.108' constraints.validation.error='HITSPSurgeriesSectionTemplateId HITSPSurgeriesSectionProcedureActivity'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='HITSPSurgeriesSectionTemplateId HITSPSurgeriesSectionProcedureActivity' templateId.root='2.16.840.1.113883.3.88.11.83.108'"
  * @generated
  */
 public interface SurgeriesSection extends CodedSurgeriesSection {

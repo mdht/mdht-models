@@ -97,6 +97,7 @@ public class ResultOrganizerOperations extends OrganizerOperations {
 	 */
 	public static boolean validateResultOrganizerCodeValue(ResultOrganizer resultOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_RESULT_ORGANIZER_CODE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.RESULT_ORGANIZER);
@@ -114,6 +115,7 @@ public class ResultOrganizerOperations extends OrganizerOperations {
 					CCDValidator.RESULT_ORGANIZER__RESULT_ORGANIZER_CODE_VALUE,
 					CCDPlugin.INSTANCE.getString("ResultOrganizerCodeValue"), new Object[] { resultOrganizer }));
 			}
+
 			return false;
 		}
 		return true;
@@ -152,6 +154,7 @@ public class ResultOrganizerOperations extends OrganizerOperations {
 	 */
 	public static boolean validateResultOrganizerComponentElement(ResultOrganizer resultOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_RESULT_ORGANIZER_COMPONENT_ELEMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.RESULT_ORGANIZER);
@@ -169,6 +172,7 @@ public class ResultOrganizerOperations extends OrganizerOperations {
 					CCDValidator.RESULT_ORGANIZER__RESULT_ORGANIZER_COMPONENT_ELEMENT,
 					CCDPlugin.INSTANCE.getString("ResultOrganizerComponentElement"), new Object[] { resultOrganizer }));
 			}
+
 			return false;
 		}
 		return true;
@@ -213,6 +217,7 @@ public class ResultOrganizerOperations extends OrganizerOperations {
 	 */
 	public static boolean validateResultOrganizerInformationSource(ResultOrganizer resultOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_RESULT_ORGANIZER_INFORMATION_SOURCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.RESULT_ORGANIZER);
@@ -230,6 +235,7 @@ public class ResultOrganizerOperations extends OrganizerOperations {
 					CCDValidator.RESULT_ORGANIZER__RESULT_ORGANIZER_INFORMATION_SOURCE,
 					CCDPlugin.INSTANCE.getString("ResultOrganizerInformationSource"), new Object[] { resultOrganizer }));
 			}
+
 			return false;
 		}
 		return true;
@@ -268,6 +274,7 @@ public class ResultOrganizerOperations extends OrganizerOperations {
 	 */
 	public static boolean validateResultOrganizerTemplateId(ResultOrganizer resultOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_RESULT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.RESULT_ORGANIZER);
@@ -285,6 +292,7 @@ public class ResultOrganizerOperations extends OrganizerOperations {
 					CCDValidator.RESULT_ORGANIZER__RESULT_ORGANIZER_TEMPLATE_ID,
 					CCDPlugin.INSTANCE.getString("ResultOrganizerTemplateId"), new Object[] { resultOrganizer }));
 			}
+
 			return false;
 		}
 		return true;
@@ -323,6 +331,7 @@ public class ResultOrganizerOperations extends OrganizerOperations {
 	 */
 	public static boolean validateResultOrganizerMoodCode(ResultOrganizer resultOrganizer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_RESULT_ORGANIZER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.RESULT_ORGANIZER);
@@ -340,6 +349,7 @@ public class ResultOrganizerOperations extends OrganizerOperations {
 					CCDValidator.RESULT_ORGANIZER__RESULT_ORGANIZER_MOOD_CODE,
 					CCDPlugin.INSTANCE.getString("ResultOrganizerMoodCode"), new Object[] { resultOrganizer }));
 			}
+
 			return false;
 		}
 		return true;
@@ -378,6 +388,7 @@ public class ResultOrganizerOperations extends OrganizerOperations {
 	 */
 	public static boolean validateResultOrganizerId(ResultOrganizer resultOrganizer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_RESULT_ORGANIZER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.RESULT_ORGANIZER);
@@ -394,6 +405,7 @@ public class ResultOrganizerOperations extends OrganizerOperations {
 					CCDValidator.RESULT_ORGANIZER__RESULT_ORGANIZER_ID,
 					CCDPlugin.INSTANCE.getString("ResultOrganizerId"), new Object[] { resultOrganizer }));
 			}
+
 			return false;
 		}
 		return true;
@@ -432,6 +444,7 @@ public class ResultOrganizerOperations extends OrganizerOperations {
 	 */
 	public static boolean validateResultOrganizerCode(ResultOrganizer resultOrganizer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_RESULT_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.RESULT_ORGANIZER);
@@ -448,6 +461,7 @@ public class ResultOrganizerOperations extends OrganizerOperations {
 					CCDValidator.RESULT_ORGANIZER__RESULT_ORGANIZER_CODE,
 					CCDPlugin.INSTANCE.getString("ResultOrganizerCode"), new Object[] { resultOrganizer }));
 			}
+
 			return false;
 		}
 		return true;
@@ -486,6 +500,7 @@ public class ResultOrganizerOperations extends OrganizerOperations {
 	 */
 	public static boolean validateResultOrganizerStatusCode(ResultOrganizer resultOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_RESULT_ORGANIZER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.RESULT_ORGANIZER);
@@ -503,6 +518,7 @@ public class ResultOrganizerOperations extends OrganizerOperations {
 					CCDValidator.RESULT_ORGANIZER__RESULT_ORGANIZER_STATUS_CODE,
 					CCDPlugin.INSTANCE.getString("ResultOrganizerStatusCode"), new Object[] { resultOrganizer }));
 			}
+
 			return false;
 		}
 		return true;
@@ -541,6 +557,7 @@ public class ResultOrganizerOperations extends OrganizerOperations {
 	 */
 	public static boolean validateResultOrganizerResultObservation(ResultOrganizer resultOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_RESULT_ORGANIZER_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.RESULT_ORGANIZER);
@@ -558,6 +575,7 @@ public class ResultOrganizerOperations extends OrganizerOperations {
 					CCDValidator.RESULT_ORGANIZER__RESULT_ORGANIZER_RESULT_OBSERVATION,
 					CCDPlugin.INSTANCE.getString("ResultOrganizerResultObservation"), new Object[] { resultOrganizer }));
 			}
+
 			return false;
 		}
 		return true;
@@ -598,6 +616,7 @@ public class ResultOrganizerOperations extends OrganizerOperations {
 
 	public static boolean validateResultOrganizerSpecimen(ResultOrganizer resultOrganizer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_RESULT_ORGANIZER_SPECIMEN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.RESULT_ORGANIZER);
@@ -615,6 +634,7 @@ public class ResultOrganizerOperations extends OrganizerOperations {
 					CCDValidator.RESULT_ORGANIZER__RESULT_ORGANIZER_SPECIMEN,
 					CCDPlugin.INSTANCE.getString("ResultOrganizerSpecimen"), new Object[] { resultOrganizer }));
 			}
+
 			return false;
 		}
 		return true;
@@ -653,7 +673,7 @@ public class ResultOrganizerOperations extends OrganizerOperations {
 		if (GET_RESULT_OBSERVATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				CCDPackage.Literals.RESULT_ORGANIZER, CCDPackage.Literals.RESULT_ORGANIZER.getEAllOperations().get(60));
+				CCDPackage.Literals.RESULT_ORGANIZER, CCDPackage.Literals.RESULT_ORGANIZER.getEAllOperations().get(62));
 			try {
 				GET_RESULT_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_RESULT_OBSERVATIONS__EOCL_EXP);
 			} catch (ParserException pe) {

@@ -173,6 +173,15 @@ public class AllergyIntoleranceImpl extends ProblemEntryImpl implements AllergyI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateAllergyIntoleranceCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AllergyIntoleranceOperations.validateAllergyIntoleranceCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateAllergyIntoleranceValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyIntoleranceOperations.validateAllergyIntoleranceValue(this, diagnostics, context);
 	}

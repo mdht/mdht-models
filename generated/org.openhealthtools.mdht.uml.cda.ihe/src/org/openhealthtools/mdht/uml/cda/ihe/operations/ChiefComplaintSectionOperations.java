@@ -82,6 +82,7 @@ public class ChiefComplaintSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateChiefComplaintSectionTemplateId(ChiefComplaintSection chiefComplaintSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CHIEF_COMPLAINT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.CHIEF_COMPLAINT_SECTION);
@@ -100,6 +101,7 @@ public class ChiefComplaintSectionOperations extends SectionOperations {
 					IHEPlugin.INSTANCE.getString("ChiefComplaintSectionTemplateId"),
 					new Object[] { chiefComplaintSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -114,8 +116,8 @@ public class ChiefComplaintSectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_CHIEF_COMPLAINT_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
-			+ "value.code = '10154-3' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
+			+ "value.code = '10154-3' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateChiefComplaintSectionCode(ChiefComplaintSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Chief Complaint Section Code</em>}' invariant operation.
@@ -132,8 +134,8 @@ public class ChiefComplaintSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in (
-	 * value.code = '10154-3' and value.codeSystem = '2.16.840.1.113883.6.1'))
+	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+	 * value.code = '10154-3' and value.codeSystem = '2.16.840.1.113883.6.1')
 	 * @param chiefComplaintSection The receiving '<em><b>Chief Complaint Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -142,6 +144,7 @@ public class ChiefComplaintSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateChiefComplaintSectionCode(ChiefComplaintSection chiefComplaintSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_CHIEF_COMPLAINT_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.CHIEF_COMPLAINT_SECTION);
@@ -159,6 +162,7 @@ public class ChiefComplaintSectionOperations extends SectionOperations {
 					IHEValidator.CHIEF_COMPLAINT_SECTION__CHIEF_COMPLAINT_SECTION_CODE,
 					IHEPlugin.INSTANCE.getString("ChiefComplaintSectionCode"), new Object[] { chiefComplaintSection }));
 			}
+
 			return false;
 		}
 		return true;

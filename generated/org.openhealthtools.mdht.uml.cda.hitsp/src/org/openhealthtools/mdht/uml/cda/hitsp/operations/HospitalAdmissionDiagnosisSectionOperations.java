@@ -87,6 +87,7 @@ public class HospitalAdmissionDiagnosisSectionOperations extends
 	public static boolean validateHITSPHospitalAdmissionDiagnosisSectionTemplateId(
 			HospitalAdmissionDiagnosisSection hospitalAdmissionDiagnosisSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.HOSPITAL_ADMISSION_DIAGNOSIS_SECTION);
@@ -107,6 +108,7 @@ public class HospitalAdmissionDiagnosisSectionOperations extends
 					HITSPPlugin.INSTANCE.getString("HITSPHospitalAdmissionDiagnosisSectionTemplateId"),
 					new Object[] { hospitalAdmissionDiagnosisSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -146,6 +148,7 @@ public class HospitalAdmissionDiagnosisSectionOperations extends
 	public static boolean validateHITSPHospitalAdmissionDiagnosisSectionCondition(
 			HospitalAdmissionDiagnosisSection hospitalAdmissionDiagnosisSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.HOSPITAL_ADMISSION_DIAGNOSIS_SECTION);
@@ -166,6 +169,7 @@ public class HospitalAdmissionDiagnosisSectionOperations extends
 					HITSPPlugin.INSTANCE.getString("HITSPHospitalAdmissionDiagnosisSectionCondition"),
 					new Object[] { hospitalAdmissionDiagnosisSection }));
 			}
+
 			return false;
 		}
 		return true;

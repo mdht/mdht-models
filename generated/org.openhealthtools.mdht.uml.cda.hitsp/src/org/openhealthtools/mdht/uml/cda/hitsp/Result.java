@@ -23,7 +23,7 @@ import org.openhealthtools.mdht.uml.cda.ihe.SimpleObservation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage#getResult()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.3.88.11.83.15.1' constraints.validation.error='ResultTemplateId ResultValuePresence ResultCode ResultEffectiveTime ResultValue' constraints.validation.warning='ResultTypeCodeSystem ResultLaboratoryResultsValueSet'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ResultTemplateId ResultValuePresence ResultCode ResultEffectiveTime ResultValue' templateId.root='2.16.840.1.113883.3.88.11.83.15.1' constraints.validation.warning='ResultTypeCodeSystem ResultLaboratoryResultsValueSet'"
  * @generated
  */
 public interface Result extends ResultObservation, SimpleObservation {

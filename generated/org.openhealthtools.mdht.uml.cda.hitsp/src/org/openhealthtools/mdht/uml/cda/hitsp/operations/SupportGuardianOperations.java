@@ -81,6 +81,7 @@ public class SupportGuardianOperations extends PatientContactGuardianOperations 
 	 */
 	public static boolean validateHITSPSupportGuardianTemplateId(SupportGuardian supportGuardian,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_HITSP_SUPPORT_GUARDIAN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.SUPPORT_GUARDIAN);
@@ -98,6 +99,7 @@ public class SupportGuardianOperations extends PatientContactGuardianOperations 
 					HITSPValidator.SUPPORT_GUARDIAN__HITSP_SUPPORT_GUARDIAN_TEMPLATE_ID,
 					HITSPPlugin.INSTANCE.getString("HITSPSupportGuardianTemplateId"), new Object[] { supportGuardian }));
 			}
+
 			return false;
 		}
 		return true;

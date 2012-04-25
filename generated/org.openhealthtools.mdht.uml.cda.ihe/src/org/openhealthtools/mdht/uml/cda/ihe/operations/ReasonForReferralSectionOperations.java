@@ -82,6 +82,7 @@ public class ReasonForReferralSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateReasonForReferralSectionTemplateId(ReasonForReferralSection reasonForReferralSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_REASON_FOR_REFERRAL_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.REASON_FOR_REFERRAL_SECTION);
@@ -100,6 +101,7 @@ public class ReasonForReferralSectionOperations extends SectionOperations {
 					IHEPlugin.INSTANCE.getString("ReasonForReferralSectionTemplateId"),
 					new Object[] { reasonForReferralSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -114,8 +116,8 @@ public class ReasonForReferralSectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_REASON_FOR_REFERRAL_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
-			+ "value.code = '42349-1' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
+			+ "value.code = '42349-1' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateReasonForReferralSectionCode(ReasonForReferralSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reason For Referral Section Code</em>}' invariant operation.
@@ -132,8 +134,8 @@ public class ReasonForReferralSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in (
-	 * value.code = '42349-1' and value.codeSystem = '2.16.840.1.113883.6.1'))
+	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+	 * value.code = '42349-1' and value.codeSystem = '2.16.840.1.113883.6.1')
 	 * @param reasonForReferralSection The receiving '<em><b>Reason For Referral Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -142,6 +144,7 @@ public class ReasonForReferralSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateReasonForReferralSectionCode(ReasonForReferralSection reasonForReferralSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_REASON_FOR_REFERRAL_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.REASON_FOR_REFERRAL_SECTION);
@@ -160,6 +163,7 @@ public class ReasonForReferralSectionOperations extends SectionOperations {
 					IHEPlugin.INSTANCE.getString("ReasonForReferralSectionCode"),
 					new Object[] { reasonForReferralSection }));
 			}
+
 			return false;
 		}
 		return true;

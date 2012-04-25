@@ -89,6 +89,7 @@ public class CodedAdvanceDirectivesSectionOperations extends AdvanceDirectivesSe
 	public static boolean validateCodedAdvanceDirectivesSectionTemplateId(
 			CodedAdvanceDirectivesSection codedAdvanceDirectivesSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_CODED_ADVANCE_DIRECTIVES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.CODED_ADVANCE_DIRECTIVES_SECTION);
@@ -107,6 +108,7 @@ public class CodedAdvanceDirectivesSectionOperations extends AdvanceDirectivesSe
 					IHEPlugin.INSTANCE.getString("CodedAdvanceDirectivesSectionTemplateId"),
 					new Object[] { codedAdvanceDirectivesSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -146,6 +148,7 @@ public class CodedAdvanceDirectivesSectionOperations extends AdvanceDirectivesSe
 	public static boolean validateCodedAdvanceDirectivesSectionAdvanceDirectivesObservation(
 			CodedAdvanceDirectivesSection codedAdvanceDirectivesSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
+
 		if (VALIDATE_CODED_ADVANCE_DIRECTIVES_SECTION_ADVANCE_DIRECTIVES_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(IHEPackage.Literals.CODED_ADVANCE_DIRECTIVES_SECTION);
@@ -166,6 +169,7 @@ public class CodedAdvanceDirectivesSectionOperations extends AdvanceDirectivesSe
 					IHEPlugin.INSTANCE.getString("CodedAdvanceDirectivesSectionAdvanceDirectivesObservation"),
 					new Object[] { codedAdvanceDirectivesSection }));
 			}
+
 			return false;
 		}
 		return true;

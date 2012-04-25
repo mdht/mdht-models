@@ -107,6 +107,7 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 	 */
 	public static boolean validatePlanOfCareSectionTemplateId(PlanOfCareSection planOfCareSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PLAN_OF_CARE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PLAN_OF_CARE_SECTION);
@@ -124,6 +125,7 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 					CCDValidator.PLAN_OF_CARE_SECTION__PLAN_OF_CARE_SECTION_TEMPLATE_ID,
 					CCDPlugin.INSTANCE.getString("PlanOfCareSectionTemplateId"), new Object[] { planOfCareSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -138,8 +140,8 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 	protected static final String VALIDATE_PLAN_OF_CARE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in ("
-			+ "value.code = '18776-5' and value.codeSystem = '2.16.840.1.113883.6.1'))";
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
+			+ "value.code = '18776-5' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePlanOfCareSectionCode(PlanOfCareSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Section Code</em>}' invariant operation.
@@ -156,8 +158,8 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
 	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in (
-	 * value.code = '18776-5' and value.codeSystem = '2.16.840.1.113883.6.1'))
+	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+	 * value.code = '18776-5' and value.codeSystem = '2.16.840.1.113883.6.1')
 	 * @param planOfCareSection The receiving '<em><b>Plan Of Care Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -166,6 +168,7 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 	 */
 	public static boolean validatePlanOfCareSectionCode(PlanOfCareSection planOfCareSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PLAN_OF_CARE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PLAN_OF_CARE_SECTION);
@@ -183,6 +186,7 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 					CCDValidator.PLAN_OF_CARE_SECTION__PLAN_OF_CARE_SECTION_CODE,
 					CCDPlugin.INSTANCE.getString("PlanOfCareSectionCode"), new Object[] { planOfCareSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -221,6 +225,7 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 	 */
 	public static boolean validatePlanOfCareSectionTitle(PlanOfCareSection planOfCareSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PLAN_OF_CARE_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PLAN_OF_CARE_SECTION);
@@ -238,6 +243,7 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 					CCDValidator.PLAN_OF_CARE_SECTION__PLAN_OF_CARE_SECTION_TITLE,
 					CCDPlugin.INSTANCE.getString("PlanOfCareSectionTitle"), new Object[] { planOfCareSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -276,6 +282,7 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 	 */
 	public static boolean validatePlanOfCareSectionText(PlanOfCareSection planOfCareSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PLAN_OF_CARE_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PLAN_OF_CARE_SECTION);
@@ -293,6 +300,7 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 					CCDValidator.PLAN_OF_CARE_SECTION__PLAN_OF_CARE_SECTION_TEXT,
 					CCDPlugin.INSTANCE.getString("PlanOfCareSectionText"), new Object[] { planOfCareSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -331,6 +339,7 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 	 */
 	public static boolean validatePlanOfCareSectionPlanOfCareActivityAct(PlanOfCareSection planOfCareSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PLAN_OF_CARE_SECTION_PLAN_OF_CARE_ACTIVITY_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PLAN_OF_CARE_SECTION);
@@ -350,6 +359,7 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 					CCDPlugin.INSTANCE.getString("PlanOfCareSectionPlanOfCareActivityAct"),
 					new Object[] { planOfCareSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -388,6 +398,7 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 	 */
 	public static boolean validatePlanOfCareSectionPlanOfCareActivityEncounter(PlanOfCareSection planOfCareSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PLAN_OF_CARE_SECTION_PLAN_OF_CARE_ACTIVITY_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PLAN_OF_CARE_SECTION);
@@ -407,6 +418,7 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 					CCDPlugin.INSTANCE.getString("PlanOfCareSectionPlanOfCareActivityEncounter"),
 					new Object[] { planOfCareSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -445,6 +457,7 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 	 */
 	public static boolean validatePlanOfCareSectionPlanOfCareActivityObservation(PlanOfCareSection planOfCareSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PLAN_OF_CARE_SECTION_PLAN_OF_CARE_ACTIVITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PLAN_OF_CARE_SECTION);
@@ -464,6 +477,7 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 					CCDPlugin.INSTANCE.getString("PlanOfCareSectionPlanOfCareActivityObservation"),
 					new Object[] { planOfCareSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -502,6 +516,7 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 	 */
 	public static boolean validatePlanOfCareSectionPlanOfCareActivityProcedure(PlanOfCareSection planOfCareSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PLAN_OF_CARE_SECTION_PLAN_OF_CARE_ACTIVITY_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PLAN_OF_CARE_SECTION);
@@ -521,6 +536,7 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 					CCDPlugin.INSTANCE.getString("PlanOfCareSectionPlanOfCareActivityProcedure"),
 					new Object[] { planOfCareSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -559,6 +575,7 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 	 */
 	public static boolean validatePlanOfCareSectionPlanOfCareActivitySubstanceAdministration(
 			PlanOfCareSection planOfCareSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PLAN_OF_CARE_SECTION_PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PLAN_OF_CARE_SECTION);
@@ -579,6 +596,7 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 					CCDPlugin.INSTANCE.getString("PlanOfCareSectionPlanOfCareActivitySubstanceAdministration"),
 					new Object[] { planOfCareSection }));
 			}
+
 			return false;
 		}
 		return true;
@@ -617,6 +635,7 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 	 */
 	public static boolean validatePlanOfCareSectionPlanOfCareActivitySupply(PlanOfCareSection planOfCareSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PLAN_OF_CARE_SECTION_PLAN_OF_CARE_ACTIVITY_SUPPLY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PLAN_OF_CARE_SECTION);
@@ -636,6 +655,7 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 					CCDPlugin.INSTANCE.getString("PlanOfCareSectionPlanOfCareActivitySupply"),
 					new Object[] { planOfCareSection }));
 			}
+
 			return false;
 		}
 		return true;
