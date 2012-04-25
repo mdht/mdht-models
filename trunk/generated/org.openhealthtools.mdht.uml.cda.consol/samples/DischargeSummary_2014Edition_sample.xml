@@ -450,7 +450,7 @@
 								<high value="20000421" />
 							</effectiveTime>
 							<value xsi:type="CD" />
-							<targetSiteCode code="91723000" />
+							<targetSiteCode code="91723000"  codeSystem="2.16.840.1.113883.6.96"  codeSystemName="SNOMED CT"/>
 							<performer>
 								<assignedEntity>
 									<id root="2.16.840.1.113883.3.1275" extension="999021" />
@@ -487,7 +487,7 @@
 								<low value="20000421" />
 								<high value="20000422" />
 							</effectiveTime>
-							<targetSiteCode code="91723000" />
+							<targetSiteCode code="91723000"  codeSystem="2.16.840.1.113883.6.96"  codeSystemName="SNOMED CT"/>
 							<performer>
 								<assignedEntity>
 									<id root="2.16.840.1.113883.3.1275" extension="999021" />
@@ -1355,7 +1355,7 @@
 							</text>
 							<statusCode code="completed" />
 							<effectiveTime xsi:type="IVL_TS" value="19981215" />
-							<routeCode code="IM" codeSystem="2.16.840.1.113883.5.112"
+							<routeCode code="C28161" codeSystem="2.16.840.1.113883.3.26.1.1"
 								codeSystemName="RouteOfAdministration" displayName="Intramuscular injection" />
 							<doseQuantity nullFlavor="UNK" />
 							<consumable>
