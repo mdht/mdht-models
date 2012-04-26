@@ -96,7 +96,7 @@ public class BoundaryObservationImpl extends ObservationImpl implements Boundary
 	 * @generated
 	 */
 	public BoundaryObservation init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // BoundaryObservationImpl

@@ -162,8 +162,7 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	 */
 	public boolean validatePolicyActivityPayerPayerAssignedEntityPayerOrganizationName(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PolicyActivityOperations.validatePolicyActivityPayerPayerAssignedEntityPayerOrganizationName(
-			this, diagnostics, context);
+		return PolicyActivityOperations.validatePolicyActivityPayerPayerAssignedEntityPayerOrganizationName(this, diagnostics, context);
 	}
 
 	/**
@@ -203,8 +202,7 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	 */
 	public boolean validatePolicyActivityPayerPayerAssignedEntityTelecom(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PolicyActivityOperations.validatePolicyActivityPayerPayerAssignedEntityTelecom(
-			this, diagnostics, context);
+		return PolicyActivityOperations.validatePolicyActivityPayerPayerAssignedEntityTelecom(this, diagnostics, context);
 	}
 
 	/**
@@ -214,8 +212,7 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	 */
 	public boolean validatePolicyActivityPayerPayerAssignedEntityPayerOrganization(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PolicyActivityOperations.validatePolicyActivityPayerPayerAssignedEntityPayerOrganization(
-			this, diagnostics, context);
+		return PolicyActivityOperations.validatePolicyActivityPayerPayerAssignedEntityPayerOrganization(this, diagnostics, context);
 	}
 
 	/**
@@ -244,8 +241,7 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	 */
 	public boolean validatePolicyActivityGuarantorGuarantorAssignedEntityPersonNameAndOrOrgName(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PolicyActivityOperations.validatePolicyActivityGuarantorGuarantorAssignedEntityPersonNameAndOrOrgName(
-			this, diagnostics, context);
+		return PolicyActivityOperations.validatePolicyActivityGuarantorGuarantorAssignedEntityPersonNameAndOrOrgName(this, diagnostics, context);
 	}
 
 	/**
@@ -255,8 +251,7 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	 */
 	public boolean validatePolicyActivityGuarantorGuarantorAssignedEntityCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PolicyActivityOperations.validatePolicyActivityGuarantorGuarantorAssignedEntityCode(
-			this, diagnostics, context);
+		return PolicyActivityOperations.validatePolicyActivityGuarantorGuarantorAssignedEntityCode(this, diagnostics, context);
 	}
 
 	/**
@@ -266,8 +261,7 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	 */
 	public boolean validatePolicyActivityGuarantorGuarantorAssignedEntityAddr(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PolicyActivityOperations.validatePolicyActivityGuarantorGuarantorAssignedEntityAddr(
-			this, diagnostics, context);
+		return PolicyActivityOperations.validatePolicyActivityGuarantorGuarantorAssignedEntityAddr(this, diagnostics, context);
 	}
 
 	/**
@@ -277,8 +271,7 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	 */
 	public boolean validatePolicyActivityGuarantorGuarantorAssignedEntityTelecom(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PolicyActivityOperations.validatePolicyActivityGuarantorGuarantorAssignedEntityTelecom(
-			this, diagnostics, context);
+		return PolicyActivityOperations.validatePolicyActivityGuarantorGuarantorAssignedEntityTelecom(this, diagnostics, context);
 	}
 
 	/**
@@ -306,8 +299,7 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	 */
 	public boolean validatePolicyActivityGuarantorGuarantorAssignedEntity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PolicyActivityOperations.validatePolicyActivityGuarantorGuarantorAssignedEntity(
-			this, diagnostics, context);
+		return PolicyActivityOperations.validatePolicyActivityGuarantorGuarantorAssignedEntity(this, diagnostics, context);
 	}
 
 	/**
@@ -317,8 +309,7 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	 */
 	public boolean validatePolicyActivityCoverageCoverageRoleCoveragePlayingEntityName(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PolicyActivityOperations.validatePolicyActivityCoverageCoverageRoleCoveragePlayingEntityName(
-			this, diagnostics, context);
+		return PolicyActivityOperations.validatePolicyActivityCoverageCoverageRoleCoveragePlayingEntityName(this, diagnostics, context);
 	}
 
 	/**
@@ -357,8 +348,7 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	 */
 	public boolean validatePolicyActivityCoverageCoverageRoleCoveragePlayingEntity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PolicyActivityOperations.validatePolicyActivityCoverageCoverageRoleCoveragePlayingEntity(
-			this, diagnostics, context);
+		return PolicyActivityOperations.validatePolicyActivityCoverageCoverageRoleCoveragePlayingEntity(this, diagnostics, context);
 	}
 
 	/**
@@ -448,7 +438,7 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	 * @generated
 	 */
 	public PolicyActivity init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // PolicyActivityImpl

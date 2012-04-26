@@ -114,7 +114,7 @@ public class ProductInstanceImpl extends ParticipantRoleImpl implements ProductI
 	 * @generated
 	 */
 	public ProductInstance init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // ProductInstanceImpl

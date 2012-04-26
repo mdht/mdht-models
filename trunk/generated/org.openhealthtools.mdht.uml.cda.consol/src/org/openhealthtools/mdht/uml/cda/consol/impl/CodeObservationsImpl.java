@@ -60,7 +60,7 @@ public class CodeObservationsImpl extends ObservationImpl implements CodeObserva
 	 * @generated
 	 */
 	public CodeObservations init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // CodeObservationsImpl

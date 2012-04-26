@@ -108,7 +108,7 @@ public class ComplicationsSectionImpl extends SectionImpl implements Complicatio
 	 * @generated
 	 */
 	public ComplicationsSection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // ComplicationsSectionImpl

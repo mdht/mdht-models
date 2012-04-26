@@ -87,7 +87,7 @@ public class InterventionsSectionImpl extends SectionImpl implements Interventio
 	 * @generated
 	 */
 	public InterventionsSection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // InterventionsSectionImpl

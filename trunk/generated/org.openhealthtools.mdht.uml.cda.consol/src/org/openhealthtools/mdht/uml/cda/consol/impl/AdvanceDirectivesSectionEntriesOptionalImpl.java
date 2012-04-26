@@ -54,8 +54,7 @@ public class AdvanceDirectivesSectionEntriesOptionalImpl extends SectionImpl imp
 	 */
 	public boolean validateAdvanceDirectivesSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdvanceDirectivesSectionEntriesOptionalOperations.validateAdvanceDirectivesSectionEntriesOptionalTemplateId(
-			this, diagnostics, context);
+		return AdvanceDirectivesSectionEntriesOptionalOperations.validateAdvanceDirectivesSectionEntriesOptionalTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -65,8 +64,7 @@ public class AdvanceDirectivesSectionEntriesOptionalImpl extends SectionImpl imp
 	 */
 	public boolean validateAdvanceDirectivesSectionEntriesOptionalCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdvanceDirectivesSectionEntriesOptionalOperations.validateAdvanceDirectivesSectionEntriesOptionalCode(
-			this, diagnostics, context);
+		return AdvanceDirectivesSectionEntriesOptionalOperations.validateAdvanceDirectivesSectionEntriesOptionalCode(this, diagnostics, context);
 	}
 
 	/**
@@ -76,8 +74,7 @@ public class AdvanceDirectivesSectionEntriesOptionalImpl extends SectionImpl imp
 	 */
 	public boolean validateAdvanceDirectivesSectionEntriesOptionalTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdvanceDirectivesSectionEntriesOptionalOperations.validateAdvanceDirectivesSectionEntriesOptionalTitle(
-			this, diagnostics, context);
+		return AdvanceDirectivesSectionEntriesOptionalOperations.validateAdvanceDirectivesSectionEntriesOptionalTitle(this, diagnostics, context);
 	}
 
 	/**
@@ -87,8 +84,7 @@ public class AdvanceDirectivesSectionEntriesOptionalImpl extends SectionImpl imp
 	 */
 	public boolean validateAdvanceDirectivesSectionEntriesOptionalText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdvanceDirectivesSectionEntriesOptionalOperations.validateAdvanceDirectivesSectionEntriesOptionalText(
-			this, diagnostics, context);
+		return AdvanceDirectivesSectionEntriesOptionalOperations.validateAdvanceDirectivesSectionEntriesOptionalText(this, diagnostics, context);
 	}
 
 	/**
@@ -98,8 +94,7 @@ public class AdvanceDirectivesSectionEntriesOptionalImpl extends SectionImpl imp
 	 */
 	public boolean validateAdvanceDirectivesSectionEntriesOptionalAdvanceDirectiveObservation(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdvanceDirectivesSectionEntriesOptionalOperations.validateAdvanceDirectivesSectionEntriesOptionalAdvanceDirectiveObservation(
-			this, diagnostics, context);
+		return AdvanceDirectivesSectionEntriesOptionalOperations.validateAdvanceDirectivesSectionEntriesOptionalAdvanceDirectiveObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -117,7 +112,7 @@ public class AdvanceDirectivesSectionEntriesOptionalImpl extends SectionImpl imp
 	 * @generated
 	 */
 	public AdvanceDirectivesSectionEntriesOptional init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // AdvanceDirectivesSectionEntriesOptionalImpl

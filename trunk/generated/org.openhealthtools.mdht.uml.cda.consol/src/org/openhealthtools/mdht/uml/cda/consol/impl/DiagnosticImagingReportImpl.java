@@ -79,8 +79,7 @@ public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl im
 	 */
 	public boolean validateDiagnosticImagingReportInformationRecipient(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportInformationRecipient(
-			this, diagnostics, context);
+		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportInformationRecipient(this, diagnostics, context);
 	}
 
 	/**
@@ -99,8 +98,7 @@ public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl im
 	 */
 	public boolean validateDiagnosticImagingReportInFulfillmentOf(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportInFulfillmentOf(
-			this, diagnostics, context);
+		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportInFulfillmentOf(this, diagnostics, context);
 	}
 
 	/**
@@ -110,8 +108,7 @@ public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl im
 	 */
 	public boolean validateDiagnosticImagingReportDocumentationOf(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportDocumentationOf(
-			this, diagnostics, context);
+		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportDocumentationOf(this, diagnostics, context);
 	}
 
 	/**
@@ -121,8 +118,7 @@ public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl im
 	 */
 	public boolean validateDiagnosticImagingReportRelatedDocument(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportRelatedDocument(
-			this, diagnostics, context);
+		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportRelatedDocument(this, diagnostics, context);
 	}
 
 	/**
@@ -141,8 +137,7 @@ public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl im
 	 */
 	public boolean validateDiagnosticImagingReportFindingsSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportFindingsSection(
-			this, diagnostics, context);
+		return DiagnosticImagingReportOperations.validateDiagnosticImagingReportFindingsSection(this, diagnostics, context);
 	}
 
 	/**
@@ -171,7 +166,7 @@ public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl im
 	 */
 	@Override
 	public DiagnosticImagingReport init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // DiagnosticImagingReportImpl

@@ -87,7 +87,7 @@ public class SubjectiveSectionImpl extends SectionImpl implements SubjectiveSect
 	 * @generated
 	 */
 	public SubjectiveSection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // SubjectiveSectionImpl

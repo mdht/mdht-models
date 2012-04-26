@@ -78,7 +78,7 @@ public class ProcedureSpecimenImpl extends SpecimenImpl implements ProcedureSpec
 	 * @generated
 	 */
 	public ProcedureSpecimen init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // ProcedureSpecimenImpl

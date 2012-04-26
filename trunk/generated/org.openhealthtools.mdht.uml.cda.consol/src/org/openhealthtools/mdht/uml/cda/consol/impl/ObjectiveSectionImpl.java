@@ -87,7 +87,7 @@ public class ObjectiveSectionImpl extends SectionImpl implements ObjectiveSectio
 	 * @generated
 	 */
 	public ObjectiveSection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // ObjectiveSectionImpl

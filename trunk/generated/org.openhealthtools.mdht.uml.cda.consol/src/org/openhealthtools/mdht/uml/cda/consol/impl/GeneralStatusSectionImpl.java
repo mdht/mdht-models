@@ -87,7 +87,7 @@ public class GeneralStatusSectionImpl extends SectionImpl implements GeneralStat
 	 * @generated
 	 */
 	public GeneralStatusSection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // GeneralStatusSectionImpl

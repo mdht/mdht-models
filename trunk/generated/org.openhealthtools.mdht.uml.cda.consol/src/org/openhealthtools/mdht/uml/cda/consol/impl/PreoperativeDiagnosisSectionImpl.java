@@ -53,8 +53,7 @@ public class PreoperativeDiagnosisSectionImpl extends SectionImpl implements Pre
 	 */
 	public boolean validatePreoperativeDiagnosisSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PreoperativeDiagnosisSectionOperations.validatePreoperativeDiagnosisSectionTemplateId(
-			this, diagnostics, context);
+		return PreoperativeDiagnosisSectionOperations.validatePreoperativeDiagnosisSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -63,8 +62,7 @@ public class PreoperativeDiagnosisSectionImpl extends SectionImpl implements Pre
 	 * @generated
 	 */
 	public boolean validatePreoperativeDiagnosisSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PreoperativeDiagnosisSectionOperations.validatePreoperativeDiagnosisSectionCode(
-			this, diagnostics, context);
+		return PreoperativeDiagnosisSectionOperations.validatePreoperativeDiagnosisSectionCode(this, diagnostics, context);
 	}
 
 	/**
@@ -73,8 +71,7 @@ public class PreoperativeDiagnosisSectionImpl extends SectionImpl implements Pre
 	 * @generated
 	 */
 	public boolean validatePreoperativeDiagnosisSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PreoperativeDiagnosisSectionOperations.validatePreoperativeDiagnosisSectionText(
-			this, diagnostics, context);
+		return PreoperativeDiagnosisSectionOperations.validatePreoperativeDiagnosisSectionText(this, diagnostics, context);
 	}
 
 	/**
@@ -83,8 +80,7 @@ public class PreoperativeDiagnosisSectionImpl extends SectionImpl implements Pre
 	 * @generated
 	 */
 	public boolean validatePreoperativeDiagnosisSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PreoperativeDiagnosisSectionOperations.validatePreoperativeDiagnosisSectionTitle(
-			this, diagnostics, context);
+		return PreoperativeDiagnosisSectionOperations.validatePreoperativeDiagnosisSectionTitle(this, diagnostics, context);
 	}
 
 	/**
@@ -94,8 +90,7 @@ public class PreoperativeDiagnosisSectionImpl extends SectionImpl implements Pre
 	 */
 	public boolean validatePreoperativeDiagnosisSectionPreoperativeDiagnosis(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PreoperativeDiagnosisSectionOperations.validatePreoperativeDiagnosisSectionPreoperativeDiagnosis(
-			this, diagnostics, context);
+		return PreoperativeDiagnosisSectionOperations.validatePreoperativeDiagnosisSectionPreoperativeDiagnosis(this, diagnostics, context);
 	}
 
 	/**
@@ -113,7 +108,7 @@ public class PreoperativeDiagnosisSectionImpl extends SectionImpl implements Pre
 	 * @generated
 	 */
 	public PreoperativeDiagnosisSection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // PreoperativeDiagnosisSectionImpl

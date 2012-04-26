@@ -80,26 +80,26 @@ public class ReasonForVisitSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateReasonForVisitSectionTemplateId(ReasonForVisitSection reasonForVisitSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
 		if (VALIDATE_REASON_FOR_VISIT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REASON_FOR_VISIT_SECTION);
 			try {
 				VALIDATE_REASON_FOR_VISIT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REASON_FOR_VISIT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_REASON_FOR_VISIT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			reasonForVisitSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_REASON_FOR_VISIT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(reasonForVisitSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.REASON_FOR_VISIT_SECTION__REASON_FOR_VISIT_SECTION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("ReasonForVisitSectionTemplateId"),
-					new Object[] { reasonForVisitSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.REASON_FOR_VISIT_SECTION__REASON_FOR_VISIT_SECTION_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("ReasonForVisitSectionTemplateId"),
+						 new Object [] { reasonForVisitSection }));
 			}
-
 			return false;
 		}
 		return true;
@@ -113,9 +113,9 @@ public class ReasonForVisitSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_REASON_FOR_VISIT_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
-			+ "value.code = '29299-5' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_REASON_FOR_VISIT_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
+"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "+
+"value.code = '29299-5' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateReasonForVisitSectionCode(ReasonForVisitSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reason For Visit Section Code</em>}' invariant operation.
@@ -142,26 +142,26 @@ public class ReasonForVisitSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateReasonForVisitSectionCode(ReasonForVisitSection reasonForVisitSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
 		if (VALIDATE_REASON_FOR_VISIT_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REASON_FOR_VISIT_SECTION);
 			try {
 				VALIDATE_REASON_FOR_VISIT_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REASON_FOR_VISIT_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_REASON_FOR_VISIT_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			reasonForVisitSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_REASON_FOR_VISIT_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(reasonForVisitSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.REASON_FOR_VISIT_SECTION__REASON_FOR_VISIT_SECTION_CODE,
-					ConsolPlugin.INSTANCE.getString("ReasonForVisitSectionCode"),
-					new Object[] { reasonForVisitSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.REASON_FOR_VISIT_SECTION__REASON_FOR_VISIT_SECTION_CODE,
+						 ConsolPlugin.INSTANCE.getString("ReasonForVisitSectionCode"),
+						 new Object [] { reasonForVisitSection }));
 			}
-
 			return false;
 		}
 		return true;
@@ -200,26 +200,26 @@ public class ReasonForVisitSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateReasonForVisitSectionText(ReasonForVisitSection reasonForVisitSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
 		if (VALIDATE_REASON_FOR_VISIT_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REASON_FOR_VISIT_SECTION);
 			try {
 				VALIDATE_REASON_FOR_VISIT_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REASON_FOR_VISIT_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_REASON_FOR_VISIT_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			reasonForVisitSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_REASON_FOR_VISIT_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(reasonForVisitSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.REASON_FOR_VISIT_SECTION__REASON_FOR_VISIT_SECTION_TEXT,
-					ConsolPlugin.INSTANCE.getString("ReasonForVisitSectionText"),
-					new Object[] { reasonForVisitSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.REASON_FOR_VISIT_SECTION__REASON_FOR_VISIT_SECTION_TEXT,
+						 ConsolPlugin.INSTANCE.getString("ReasonForVisitSectionText"),
+						 new Object [] { reasonForVisitSection }));
 			}
-
 			return false;
 		}
 		return true;
@@ -258,26 +258,26 @@ public class ReasonForVisitSectionOperations extends SectionOperations {
 	 */
 	public static boolean validateReasonForVisitSectionTitle(ReasonForVisitSection reasonForVisitSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
 		if (VALIDATE_REASON_FOR_VISIT_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.REASON_FOR_VISIT_SECTION);
 			try {
 				VALIDATE_REASON_FOR_VISIT_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REASON_FOR_VISIT_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_REASON_FOR_VISIT_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			reasonForVisitSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_REASON_FOR_VISIT_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(reasonForVisitSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.REASON_FOR_VISIT_SECTION__REASON_FOR_VISIT_SECTION_TITLE,
-					ConsolPlugin.INSTANCE.getString("ReasonForVisitSectionTitle"),
-					new Object[] { reasonForVisitSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.REASON_FOR_VISIT_SECTION__REASON_FOR_VISIT_SECTION_TITLE,
+						 ConsolPlugin.INSTANCE.getString("ReasonForVisitSectionTitle"),
+						 new Object [] { reasonForVisitSection }));
 			}
-
 			return false;
 		}
 		return true;

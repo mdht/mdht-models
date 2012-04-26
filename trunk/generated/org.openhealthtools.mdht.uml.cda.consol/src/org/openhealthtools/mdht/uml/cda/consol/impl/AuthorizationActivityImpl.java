@@ -88,8 +88,7 @@ public class AuthorizationActivityImpl extends ActImpl implements AuthorizationA
 	 */
 	public boolean validateAuthorizationActivityEntryRelationship(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AuthorizationActivityOperations.validateAuthorizationActivityEntryRelationship(
-			this, diagnostics, context);
+		return AuthorizationActivityOperations.validateAuthorizationActivityEntryRelationship(this, diagnostics, context);
 	}
 
 	/**
@@ -99,8 +98,7 @@ public class AuthorizationActivityImpl extends ActImpl implements AuthorizationA
 	 */
 	public boolean validateAuthorizationActivityEntryRelationshipTypeCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AuthorizationActivityOperations.validateAuthorizationActivityEntryRelationshipTypeCode(
-			this, diagnostics, context);
+		return AuthorizationActivityOperations.validateAuthorizationActivityEntryRelationshipTypeCode(this, diagnostics, context);
 	}
 
 	/**
@@ -109,7 +107,7 @@ public class AuthorizationActivityImpl extends ActImpl implements AuthorizationA
 	 * @generated
 	 */
 	public AuthorizationActivity init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // AuthorizationActivityImpl

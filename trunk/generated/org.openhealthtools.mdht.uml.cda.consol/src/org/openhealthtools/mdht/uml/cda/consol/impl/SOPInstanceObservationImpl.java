@@ -118,8 +118,7 @@ public class SOPInstanceObservationImpl extends ObservationImpl implements SOPIn
 	 */
 	public boolean validateSOPInstanceObservationSOPInstanceObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return SOPInstanceObservationOperations.validateSOPInstanceObservationSOPInstanceObservation(
-			this, diagnostics, context);
+		return SOPInstanceObservationOperations.validateSOPInstanceObservationSOPInstanceObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -129,8 +128,7 @@ public class SOPInstanceObservationImpl extends ObservationImpl implements SOPIn
 	 */
 	public boolean validateSOPInstanceObservationPurposeofReferenceObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return SOPInstanceObservationOperations.validateSOPInstanceObservationPurposeofReferenceObservation(
-			this, diagnostics, context);
+		return SOPInstanceObservationOperations.validateSOPInstanceObservationPurposeofReferenceObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -140,8 +138,7 @@ public class SOPInstanceObservationImpl extends ObservationImpl implements SOPIn
 	 */
 	public boolean validateSOPInstanceObservationReferencedFramesObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return SOPInstanceObservationOperations.validateSOPInstanceObservationReferencedFramesObservation(
-			this, diagnostics, context);
+		return SOPInstanceObservationOperations.validateSOPInstanceObservationReferencedFramesObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -177,7 +174,7 @@ public class SOPInstanceObservationImpl extends ObservationImpl implements SOPIn
 	 * @generated
 	 */
 	public SOPInstanceObservation init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // SOPInstanceObservationImpl

@@ -80,8 +80,7 @@ public class ProceduresSectionImpl extends ProceduresSectionEntriesOptionalImpl 
 	@Override
 	public boolean validateProceduresSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProceduresSectionOperations.validateProceduresSectionEntriesOptionalTemplateId(
-			this, diagnostics, context);
+		return ProceduresSectionOperations.validateProceduresSectionEntriesOptionalTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -101,7 +100,7 @@ public class ProceduresSectionImpl extends ProceduresSectionEntriesOptionalImpl 
 	 */
 	@Override
 	public ProceduresSection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // ProceduresSectionImpl

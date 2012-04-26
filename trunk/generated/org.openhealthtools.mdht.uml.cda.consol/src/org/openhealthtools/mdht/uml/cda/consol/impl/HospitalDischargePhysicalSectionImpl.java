@@ -52,8 +52,7 @@ public class HospitalDischargePhysicalSectionImpl extends SectionImpl implements
 	 */
 	public boolean validateHospitalDischargePhysicalSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalDischargePhysicalSectionOperations.validateHospitalDischargePhysicalSectionTemplateId(
-			this, diagnostics, context);
+		return HospitalDischargePhysicalSectionOperations.validateHospitalDischargePhysicalSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -62,8 +61,7 @@ public class HospitalDischargePhysicalSectionImpl extends SectionImpl implements
 	 * @generated
 	 */
 	public boolean validateHospitalDischargePhysicalSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HospitalDischargePhysicalSectionOperations.validateHospitalDischargePhysicalSectionCode(
-			this, diagnostics, context);
+		return HospitalDischargePhysicalSectionOperations.validateHospitalDischargePhysicalSectionCode(this, diagnostics, context);
 	}
 
 	/**
@@ -73,8 +71,7 @@ public class HospitalDischargePhysicalSectionImpl extends SectionImpl implements
 	 */
 	public boolean validateHospitalDischargePhysicalSectionTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalDischargePhysicalSectionOperations.validateHospitalDischargePhysicalSectionTitle(
-			this, diagnostics, context);
+		return HospitalDischargePhysicalSectionOperations.validateHospitalDischargePhysicalSectionTitle(this, diagnostics, context);
 	}
 
 	/**
@@ -83,8 +80,7 @@ public class HospitalDischargePhysicalSectionImpl extends SectionImpl implements
 	 * @generated
 	 */
 	public boolean validateHospitalDischargePhysicalSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HospitalDischargePhysicalSectionOperations.validateHospitalDischargePhysicalSectionText(
-			this, diagnostics, context);
+		return HospitalDischargePhysicalSectionOperations.validateHospitalDischargePhysicalSectionText(this, diagnostics, context);
 	}
 
 	/**
@@ -93,7 +89,7 @@ public class HospitalDischargePhysicalSectionImpl extends SectionImpl implements
 	 * @generated
 	 */
 	public HospitalDischargePhysicalSection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // HospitalDischargePhysicalSectionImpl

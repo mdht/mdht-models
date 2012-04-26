@@ -87,7 +87,7 @@ public class ChiefComplaintSectionImpl extends SectionImpl implements ChiefCompl
 	 * @generated
 	 */
 	public ChiefComplaintSection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // ChiefComplaintSectionImpl

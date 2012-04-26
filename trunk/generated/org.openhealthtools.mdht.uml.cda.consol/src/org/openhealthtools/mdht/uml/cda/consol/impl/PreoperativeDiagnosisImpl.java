@@ -89,8 +89,7 @@ public class PreoperativeDiagnosisImpl extends ActImpl implements PreoperativeDi
 	 */
 	public boolean validatePreoperativeDiagnosisProblemObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PreoperativeDiagnosisOperations.validatePreoperativeDiagnosisProblemObservation(
-			this, diagnostics, context);
+		return PreoperativeDiagnosisOperations.validatePreoperativeDiagnosisProblemObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -108,7 +107,7 @@ public class PreoperativeDiagnosisImpl extends ActImpl implements PreoperativeDi
 	 * @generated
 	 */
 	public PreoperativeDiagnosis init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // PreoperativeDiagnosisImpl

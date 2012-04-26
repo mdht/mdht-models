@@ -16,6 +16,8 @@ import java.io.FileInputStream;
 
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.uml.cda.AssignedAuthor;
+import org.openhealthtools.mdht.uml.cda.Author;
 import org.openhealthtools.mdht.uml.cda.CDAFactory;
 import org.openhealthtools.mdht.uml.cda.ClinicalDocument;
 import org.openhealthtools.mdht.uml.cda.Patient;
@@ -29,15 +31,17 @@ import org.openhealthtools.mdht.uml.cda.util.ValidationResult;
 import org.openhealthtools.mdht.uml.hl7.datatypes.AD;
 import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.openhealthtools.mdht.uml.hl7.datatypes.PN;
+import org.openhealthtools.mdht.uml.hl7.vocab.NullFlavor;
 import org.openhealthtools.mdht.uml.hl7.vocab.PostalAddressUse;
 
 public class TestDischargeSummary {
 	public static void main(String[] args) {
 		System.out.println("=========================");
-		testDS("DS.sample.l3.conformances");
-		validateDS("DischargeSummary_sample");
-		System.out.println("=========================");
+		// testDS("DS.sample.l3.conformances");
+		// validateDS("DischargeSummary_sample");
+		// validateDS("DischargeSummary_2014Edition_sample");
 		testUSRealmAddressAndPatientName();
+		System.out.println("=========================");
 	}
 
 	public static void testDS(String fileName) {
@@ -77,6 +81,10 @@ public class TestDischargeSummary {
 		System.out.println(sb);
 	}
 
+	/**
+	 * For AD data types, 2 Address data types are being created. One with NullFlavor and the other with content.
+	 * The error messages can be viewed by modifying the AD data.
+	 */
 	public static void testUSRealmAddressAndPatientName() {
 		ContinuityOfCareDocument document = ConsolFactory.eINSTANCE.createContinuityOfCareDocument().init();
 		PatientRole patientRole = CDAFactory.eINSTANCE.createPatientRole();
@@ -97,6 +105,16 @@ public class TestDischargeSummary {
 		// name.addGiven("John");
 		name.addFamily("Doe");
 		patient.getNames().add(name);
+
+		// -- For NullFlavor types
+		AD addr1 = DatatypesFactory.eINSTANCE.createAD();
+		addr1.setNullFlavor(NullFlavor.NI);
+
+		AssignedAuthor assgndAuthor = CDAFactory.eINSTANCE.createAssignedAuthor();
+		Author author = CDAFactory.eINSTANCE.createAuthor();
+		author.setAssignedAuthor(assgndAuthor);
+		assgndAuthor.getAddrs().add(addr1);
+		document.getAuthors().add(author);
 
 		ValidationResult result = new ValidationResult();
 		CDAUtil.validate(document, result);
