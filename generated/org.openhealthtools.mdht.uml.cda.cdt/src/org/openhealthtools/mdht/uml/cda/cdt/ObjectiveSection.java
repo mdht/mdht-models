@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.cdt.CDTPackage#getObjectiveSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ObjectiveSectionTemplateId ObjectiveSectionCode ObjectiveSectionText ObjectiveSectionTitle' templateId.root='2.16.840.1.113883.10.20.21.2.1' constraints.validation.warning='ObjectiveSectionHasClinicalStatements' code.codeSystemName='LOINC' code.displayName='OBJECTIVE DATA' code.codeSystem='2.16.840.1.113883.6.1' code.code='OBJEC-X'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystemName='LOINC' templateId.root='2.16.840.1.113883.10.20.21.2.1' constraints.validation.error='ObjectiveSectionTemplateId ObjectiveSectionCode ObjectiveSectionText ObjectiveSectionTitle' code.displayName='OBJECTIVE DATA' code.codeSystem='2.16.840.1.113883.6.1' code.code='OBJEC-X' constraints.validation.warning='ObjectiveSectionHasClinicalStatements'"
  * @generated
  */
 public interface ObjectiveSection extends Section {

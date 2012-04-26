@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.cdt.CDTPackage#getSubjectiveSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SubjectiveSectionTemplateId SubjectiveSectionCode SubjectiveSectionText SubjectiveSectionTitle' templateId.root='2.16.840.1.113883.10.20.21.2.2' constraints.validation.warning='SubjectiveSectionHasClinicalStatements' code.codeSystemName='LOINC' code.displayName='SUBJECTIVE DATA' code.codeSystem='2.16.840.1.113883.6.1' code.code='SUBJ-X'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystemName='LOINC' templateId.root='2.16.840.1.113883.10.20.21.2.2' constraints.validation.error='SubjectiveSectionTemplateId SubjectiveSectionCode SubjectiveSectionText SubjectiveSectionTitle' code.displayName='SUBJECTIVE DATA' code.codeSystem='2.16.840.1.113883.6.1' code.code='SUBJ-X' constraints.validation.warning='SubjectiveSectionHasClinicalStatements'"
  * @generated
  */
 public interface SubjectiveSection extends Section {

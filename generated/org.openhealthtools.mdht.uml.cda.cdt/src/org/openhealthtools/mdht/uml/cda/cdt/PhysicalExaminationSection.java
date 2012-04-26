@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.cdt.CDTPackage#getPhysicalExaminationSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PhysicalExaminationSectionTemplateId PhysicalExaminationSectionCode' templateId.root='2.16.840.1.113883.10.20.2.10' code.codeSystemName='LOINC' code.displayName='PHYSICAL FINDINGS' code.codeSystem='2.16.840.1.113883.6.1' code.code='29545-1'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystemName='LOINC' templateId.root='2.16.840.1.113883.10.20.2.10' constraints.validation.error='PhysicalExaminationSectionTemplateId PhysicalExaminationSectionCode' code.displayName='PHYSICAL FINDINGS' code.codeSystem='2.16.840.1.113883.6.1' code.code='29545-1'"
  * @generated
  */
 public interface PhysicalExaminationSection extends Section {

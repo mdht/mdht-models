@@ -18,7 +18,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ihe.IHEPackage#getGenitaliaSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='GenitaliaSectionTemplateId GenitaliaSectionCode' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.1.9.36' code.codeSystemName='LOINC' code.displayName='GENITALIA' code.codeSystem='2.16.840.1.113883.6.1' code.code='11400-9' constraints.validation.info='GenitaliaSectionProblemEntry'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystemName='LOINC' constraints.validation.info='GenitaliaSectionProblemEntry' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.1.9.36' constraints.validation.error='GenitaliaSectionTemplateId GenitaliaSectionCode' code.displayName='GENITALIA' code.codeSystem='2.16.840.1.113883.6.1' code.code='11400-9'"
  * @generated
  */
 public interface GenitaliaSection extends Section {

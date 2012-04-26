@@ -18,7 +18,7 @@ import org.eclipse.emf.common.util.EList;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ihe.IHEPackage#getCodedReasonForReferralSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='CodedReasonForReferralSectionTemplateId CodedReasonForReferralSectionSimpleObservation CodedReasonForReferralSectionProblemEntry' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.3.2'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='1.3.6.1.4.1.19376.1.5.3.1.3.2' constraints.validation.error='CodedReasonForReferralSectionTemplateId CodedReasonForReferralSectionSimpleObservation CodedReasonForReferralSectionProblemEntry'"
  * @generated
  */
 public interface CodedReasonForReferralSection extends ReasonForReferralSection {

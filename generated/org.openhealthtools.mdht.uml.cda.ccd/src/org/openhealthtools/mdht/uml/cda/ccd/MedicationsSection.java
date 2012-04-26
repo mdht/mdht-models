@@ -34,7 +34,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ccd.CCDPackage#getMedicationsSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MedicationsSectionTemplateId MedicationsSectionCode MedicationsSectionTitle MedicationsSectionText' templateId.root='2.16.840.1.113883.10.20.1.8' constraints.validation.warning='MedicationsSectionHasMedicationOrSupplyActivity MedicationsSectionMedicationActivity MedicationsSectionSupplyActivity' code.codeSystemName='LOINC' code.displayName='History of medication use' code.codeSystem='2.16.840.1.113883.6.1' code.code='10160-0'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystemName='LOINC' templateId.root='2.16.840.1.113883.10.20.1.8' constraints.validation.error='MedicationsSectionTemplateId MedicationsSectionCode MedicationsSectionTitle MedicationsSectionText' code.displayName='History of medication use' code.codeSystem='2.16.840.1.113883.6.1' code.code='10160-0' constraints.validation.warning='MedicationsSectionHasMedicationOrSupplyActivity MedicationsSectionMedicationActivity MedicationsSectionSupplyActivity'"
  * @generated
  */
 public interface MedicationsSection extends Section {

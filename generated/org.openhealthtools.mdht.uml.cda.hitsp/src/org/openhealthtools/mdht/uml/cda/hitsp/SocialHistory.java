@@ -18,7 +18,7 @@ import org.openhealthtools.mdht.uml.cda.ihe.SocialHistoryObservation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage#getSocialHistory()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SocialHistoryTemplateId SocialHistoryCode SocialHistoryText' templateId.root='2.16.840.1.113883.3.88.11.83.19' code.codeSystemName='SNOMEDCT' code.codeSystem='2.16.840.1.113883.6.96' constraints.validation.warning='SocialHistoryCodeP SocialHistoryEffectiveTime' constraints.validation.dependOn.SocialHistoryCode='SocialHistoryCodeP'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystemName='SNOMEDCT' templateId.root='2.16.840.1.113883.3.88.11.83.19' constraints.validation.error='SocialHistoryTemplateId SocialHistoryCode SocialHistoryText' code.codeSystem='2.16.840.1.113883.6.96' constraints.validation.dependOn.SocialHistoryCode='SocialHistoryCodeP' constraints.validation.warning='SocialHistoryCodeP SocialHistoryEffectiveTime'"
  * @generated
  */
 public interface SocialHistory extends SocialHistoryObservation {

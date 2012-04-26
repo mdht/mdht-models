@@ -18,7 +18,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ihe.IHEPackage#getVisibleImplantedMedicalDevicesSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='VisibleImplantedMedicalDevicesSectionTemplateId VisibleImplantedMedicalDevicesSectionCode' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.1.9.48' code.codeSystemName='LOINC' code.displayName='Visible implanted medical devices' code.codeSystem='2.16.840.1.113883.6.1' code.code='XX-VisibleImplantedDevices' constraints.validation.info='VisibleImplantedMedicalDevicesSectionProblemEntry'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystemName='LOINC' constraints.validation.info='VisibleImplantedMedicalDevicesSectionProblemEntry' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.1.9.48' constraints.validation.error='VisibleImplantedMedicalDevicesSectionTemplateId VisibleImplantedMedicalDevicesSectionCode' code.displayName='Visible implanted medical devices' code.codeSystem='2.16.840.1.113883.6.1' code.code='XX-VisibleImplantedDevices'"
  * @generated
  */
 public interface VisibleImplantedMedicalDevicesSection extends Section {

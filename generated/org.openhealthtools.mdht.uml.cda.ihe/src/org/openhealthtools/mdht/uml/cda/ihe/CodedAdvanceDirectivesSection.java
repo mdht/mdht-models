@@ -22,7 +22,7 @@ import org.eclipse.emf.common.util.EList;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ihe.IHEPackage#getCodedAdvanceDirectivesSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='CodedAdvanceDirectivesSectionTemplateId' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.3.35' constraints.validation.warning='CodedAdvanceDirectivesSectionAdvanceDirectivesObservation'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='1.3.6.1.4.1.19376.1.5.3.1.3.35' constraints.validation.error='CodedAdvanceDirectivesSectionTemplateId' constraints.validation.warning='CodedAdvanceDirectivesSectionAdvanceDirectivesObservation'"
  * @generated
  */
 public interface CodedAdvanceDirectivesSection extends AdvanceDirectivesSection {

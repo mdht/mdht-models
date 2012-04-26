@@ -18,7 +18,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ihe.IHEPackage#getNeckSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='NeckSectionTemplateId NeckSectionCode' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.1.9.24' code.codeSystemName='LOINC' code.displayName='NECK' code.codeSystem='2.16.840.1.113883.6.1' code.code='11411-6' constraints.validation.info='NeckSectionProblemEntry'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystemName='LOINC' constraints.validation.info='NeckSectionProblemEntry' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.1.9.24' constraints.validation.error='NeckSectionTemplateId NeckSectionCode' code.displayName='NECK' code.codeSystem='2.16.840.1.113883.6.1' code.code='11411-6'"
  * @generated
  */
 public interface NeckSection extends Section {

@@ -27,7 +27,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ccd.CCDPackage#getFamilyHistorySection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='FamilyHistorySectionTemplateId FamilyHistorySectionNoSubject FamilyHistorySectionCode FamilyHistorySectionTitle FamilyHistorySectionText' templateId.root='2.16.840.1.113883.10.20.1.4' constraints.validation.warning='FamilyHistorySectionFamilyHistoryObsOrgs' code.codeSystemName='LOINC' code.displayName='History of family member diseases' code.codeSystem='2.16.840.1.113883.6.1' code.code='10157-6' constraints.validation.info='FamilyHistorySectionFamilyHistoryOrganizer'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystemName='LOINC' constraints.validation.info='FamilyHistorySectionFamilyHistoryOrganizer' templateId.root='2.16.840.1.113883.10.20.1.4' constraints.validation.error='FamilyHistorySectionTemplateId FamilyHistorySectionNoSubject FamilyHistorySectionCode FamilyHistorySectionTitle FamilyHistorySectionText' code.displayName='History of family member diseases' code.codeSystem='2.16.840.1.113883.6.1' code.code='10157-6' constraints.validation.warning='FamilyHistorySectionFamilyHistoryObsOrgs'"
  * @generated
  */
 public interface FamilyHistorySection extends Section {

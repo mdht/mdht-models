@@ -86,8 +86,8 @@ public class ProblemEntryImpl extends ProblemObservationImpl implements ProblemE
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProblemEntryCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProblemEntryOperations.validateProblemEntryCode(this, diagnostics, context);
+	public boolean validateProblemEntryCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemEntryOperations.validateProblemEntryCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -95,8 +95,8 @@ public class ProblemEntryImpl extends ProblemObservationImpl implements ProblemE
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProblemObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProblemEntryOperations.validateProblemObservationCode(this, diagnostics, context);
+	public boolean validateProblemEntryCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemEntryOperations.validateProblemEntryCode(this, diagnostics, context);
 	}
 
 	/**

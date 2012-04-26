@@ -20,7 +20,7 @@ import org.openhealthtools.mdht.uml.cda.ihe.ProblemStatusObservation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage#getFamilyHistory()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='FamilyHistoryTemplateId FamilyHistoryRelatedSubjectCodeValueSet FamilyHistoryHasSDTCid FamilyHistoryHasGenderCode FamilyHistoryFamilyMemberCondition' templateId.root='2.16.840.1.113883.3.88.11.83.18' constraints.validation.warning='FamilyHistoryHasFamilyName FamilyHistoryProblemStatusObservation'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.3.88.11.83.18' constraints.validation.error='FamilyHistoryTemplateId FamilyHistoryRelatedSubjectCodeValueSet FamilyHistoryHasSDTCid FamilyHistoryHasGenderCode FamilyHistoryFamilyMemberCondition' constraints.validation.warning='FamilyHistoryHasFamilyName FamilyHistoryProblemStatusObservation'"
  * @generated
  */
 public interface FamilyHistory extends FamilyHistoryOrganizer {

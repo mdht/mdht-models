@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.ihe.TaperedDose;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage#getMedicationTaperedDose()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MedicationTaperedDoseTemplateId' templateId.root='null'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='null' constraints.validation.error='MedicationTaperedDoseTemplateId'"
  * @generated
  */
 public interface MedicationTaperedDose extends Medication, TaperedDose {

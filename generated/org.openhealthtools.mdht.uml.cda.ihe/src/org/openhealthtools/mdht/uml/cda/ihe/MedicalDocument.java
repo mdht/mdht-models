@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.cdt.GeneralHeaderConstraints;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ihe.IHEPackage#getMedicalDocument()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MedicalDocumentTemplateId' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.1.1'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='1.3.6.1.4.1.19376.1.5.3.1.1.1' constraints.validation.error='MedicalDocumentTemplateId'"
  * @generated
  */
 public interface MedicalDocument extends GeneralHeaderConstraints {

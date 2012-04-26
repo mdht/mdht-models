@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.Act;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ccd.CCDPackage#getCoveragePlanDescription()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation classCode='ACT' constraints.validation.error='CoveragePlanDescriptionClassCode CoveragePlanDescriptionId CoveragePlanDescriptionMoodCode' moodCode='DEF'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation moodCode='DEF' classCode='ACT' constraints.validation.error='CoveragePlanDescriptionClassCode CoveragePlanDescriptionId CoveragePlanDescriptionMoodCode'"
  * @generated
  */
 public interface CoveragePlanDescription extends Act {

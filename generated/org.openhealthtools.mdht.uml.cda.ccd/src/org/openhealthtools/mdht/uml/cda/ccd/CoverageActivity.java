@@ -23,7 +23,7 @@ import org.openhealthtools.mdht.uml.cda.Act;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ccd.CCDPackage#getCoverageActivity()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='CoverageActivityTemplateId CoverageActivityInformationSource CoverageActivityClassCode CoverageActivityMoodCode CoverageActivityId CoverageActivityStatusCode CoverageActivityCode CoverageActivityPolicyActivity' templateId.root='2.16.840.1.113883.10.20.1.20' constraints.validation.info='CoverageActivitySequenceNumber' classCode='ACT' moodCode='DEF' statusCode.code='completed' code.codeSystemName='LOINC' code.displayName='Payment sources' code.codeSystem='2.16.840.1.113883.6.1' code.code='48768-6'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation moodCode='DEF' classCode='ACT' code.codeSystemName='LOINC' constraints.validation.info='CoverageActivitySequenceNumber' templateId.root='2.16.840.1.113883.10.20.1.20' constraints.validation.error='CoverageActivityTemplateId CoverageActivityInformationSource CoverageActivityClassCode CoverageActivityMoodCode CoverageActivityId CoverageActivityStatusCode CoverageActivityCode CoverageActivityPolicyActivity' code.displayName='Payment sources' statusCode.code='completed' code.codeSystem='2.16.840.1.113883.6.1' code.code='48768-6'"
  * @generated
  */
 public interface CoverageActivity extends Act {

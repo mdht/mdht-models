@@ -668,11 +668,10 @@
   <CDA:PropertyValidation xmi:id="_1wz38OecEd-aaJELhEID-A" severity="WARNING" base_Property="_w93GUOecEd-aaJELhEID-A">
     <ruleId>CONF-308</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_BTPZUOedEd-aaJELhEID-A" severity="WARNING" base_Property="_w93tY-ecEd-aaJELhEID-A">
+  <CDA:CodeSystemConstraint xmi:id="_K_li0OedEd-aaJELhEID-A" identifier="2.16.840.1.113883.5.112" name="HL7 RouteOfAdministration" binding="Dynamic" base_Property="_w93tY-ecEd-aaJELhEID-A" severity="WARNING">
     <ruleId>CONF-309</ruleId>
     <ruleId>CONF-310</ruleId>
-  </CDA:PropertyValidation>
-  <CDA:CodeSystemConstraint xmi:id="_K_li0OedEd-aaJELhEID-A" identifier="2.16.840.1.113883.5.112" name="HL7 RouteOfAdministration" binding="Dynamic" base_Property="_w93tY-ecEd-aaJELhEID-A"/>
+  </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_dl-PIOedEd-aaJELhEID-A" severity="INFO" base_Property="_w93tYOecEd-aaJELhEID-A">
     <ruleId>CONF-312</ruleId>
   </CDA:PropertyValidation>

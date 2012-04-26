@@ -2921,193 +2921,205 @@ public class CDTPackageImpl extends EPackageImpl implements CDTPackage {
 			generalHeaderConstraintsEClass,
 			source,
 			new String[] {
-					"constraints.validation.error",
-					"GeneralHeaderConstraintsTemplateId GeneralHeaderConstraintsPersonHasName GeneralHeaderConstraintsRolesShallHaveAddrAndTelecom GeneralHeaderConstraintsOrganizationsHaveContactInfo GeneralHeaderConstraintsTimePreciseToDay GeneralHeaderConstraintsTimePreciseToYear GeneralHeaderConstraintsTelephoneMatchesRegex GeneralHeaderConstraintsHasTelephoneDialingDigits GeneralHeaderConstraintsUnknownTelephoneUsesNullFlavor GeneralHeaderConstraintsTypeIdExtension GeneralHeaderConstraintsIdRootFormat GeneralHeaderConstraintsOidLength GeneralHeaderConstraintsLanguageCodeForm GeneralHeaderConstraintsSetIdAndVersionNumber GeneralHeaderConstraintsSetIdAndIdAreUnique GeneralHeaderConstraintsCopyTimeNotPresent GeneralHeaderConstraintsHasRecordTargetPatientRole GeneralHeaderConstraintsHasPatientBirthTime GeneralHeaderConstraintsHasAdministrativeGenderCode GeneralHeaderConstraintsHasAuthorTime GeneralHeaderConstraintsHasAssignedAuthorId GeneralHeaderConstraintsHasAssignedAuthorPersonOrDevice GeneralHeaderConstraintsHasDataEntererAssignedPerson GeneralHeaderConstraintsHasInformantAssignedPersonOrRelatedPerson GeneralHeaderConstraintsLegalAuthenticatorHasAssignedPerson GeneralHeaderConstraintsAuthenticatorHasAssignedPerson GeneralHeaderConstraintsCode GeneralHeaderConstraintsEffectiveTime GeneralHeaderConstraintsId GeneralHeaderConstraintsLanguageCode GeneralHeaderConstraintsRealmCode GeneralHeaderConstraintsTitle GeneralHeaderConstraintsTypeId",
-					"templateId.root",
-					"2.16.840.1.113883.10.20.3",
-					"constraints.validation.warning",
-					"GeneralHeaderConstraintsRolesShouldHaveAddrAndTelecom GeneralHeaderConstraintsTimePreciseToSecond GeneralHeaderConstraintsTimePreciseToYearAndDay",
 					"constraints.validation.info",
 					"GeneralHeaderConstraintsHasProviderOrganization GeneralHeaderConstraintsHasDataEntererTime GeneralHeaderConstraintsHasInformant",
-					"realmCode.code", "US" });
+					"templateId.root",
+					"2.16.840.1.113883.10.20.3",
+					"constraints.validation.error",
+					"GeneralHeaderConstraintsTemplateId GeneralHeaderConstraintsPersonHasName GeneralHeaderConstraintsRolesShallHaveAddrAndTelecom GeneralHeaderConstraintsOrganizationsHaveContactInfo GeneralHeaderConstraintsTimePreciseToDay GeneralHeaderConstraintsTimePreciseToYear GeneralHeaderConstraintsTelephoneMatchesRegex GeneralHeaderConstraintsHasTelephoneDialingDigits GeneralHeaderConstraintsUnknownTelephoneUsesNullFlavor GeneralHeaderConstraintsTypeIdExtension GeneralHeaderConstraintsIdRootFormat GeneralHeaderConstraintsOidLength GeneralHeaderConstraintsLanguageCodeForm GeneralHeaderConstraintsSetIdAndVersionNumber GeneralHeaderConstraintsSetIdAndIdAreUnique GeneralHeaderConstraintsCopyTimeNotPresent GeneralHeaderConstraintsHasRecordTargetPatientRole GeneralHeaderConstraintsHasPatientBirthTime GeneralHeaderConstraintsHasAdministrativeGenderCode GeneralHeaderConstraintsHasAuthorTime GeneralHeaderConstraintsHasAssignedAuthorId GeneralHeaderConstraintsHasAssignedAuthorPersonOrDevice GeneralHeaderConstraintsHasDataEntererAssignedPerson GeneralHeaderConstraintsHasInformantAssignedPersonOrRelatedPerson GeneralHeaderConstraintsLegalAuthenticatorHasAssignedPerson GeneralHeaderConstraintsAuthenticatorHasAssignedPerson GeneralHeaderConstraintsCode GeneralHeaderConstraintsEffectiveTime GeneralHeaderConstraintsId GeneralHeaderConstraintsLanguageCode GeneralHeaderConstraintsRealmCode GeneralHeaderConstraintsTitle GeneralHeaderConstraintsTypeId",
+					"realmCode.code",
+					"US",
+					"constraints.validation.warning",
+					"GeneralHeaderConstraintsRolesShouldHaveAddrAndTelecom GeneralHeaderConstraintsTimePreciseToSecond GeneralHeaderConstraintsTimePreciseToYearAndDay" });
 		addAnnotation(
 			historyAndPhysicalEClass,
 			source,
 			new String[] {
+					"code.codeSystemName",
+					"LOINC",
+					"constraints.validation.info",
+					"HistoryAndPhysicalProblemSection HistoryAndPhysicalProceduresSection HistoryAndPhysicalImmunizationsSection",
+					"templateId.root",
+					"2.16.840.1.113883.10.20.2",
 					"constraints.validation.error",
 					"HistoryAndPhysicalTemplateId HistoryAndPhysicalAssessmentAndPlan HistoryAndPhysicalBothAssessmentAndPlan HistoryAndPhysicalReasonForVisitAndChiefComplaint HistoryAndPhysicalBothReasonForVisitAndChiefComplaint GeneralHeaderConstraintsCode HistoryAndPhysicalHistoryOfPresentIllness HistoryAndPhysicalPastMedicalHistorySection HistoryAndPhysicalMedicationsSection HistoryAndPhysicalAlertsSection HistoryAndPhysicalSocialHistorySection HistoryAndPhysicalFamilyHistorySection HistoryAndPhysicalReviewOfSystemsSection HistoryAndPhysicalPhysicalExaminationSection HistoryAndPhysicalVitalSignsSection HistoryAndPhysicalGeneralStatusSection HistoryAndPhysicalDiagnosticFindings",
-					"templateId.root", "2.16.840.1.113883.10.20.2", "code.codeSystemName", "LOINC", "code.codeSystem",
-					"2.16.840.1.113883.6.1", "constraints.validation.info",
-					"HistoryAndPhysicalProblemSection HistoryAndPhysicalProceduresSection HistoryAndPhysicalImmunizationsSection" });
+					"code.codeSystem", "2.16.840.1.113883.6.1" });
 		addAnnotation(historyOfPresentIllnessEClass, source, new String[] {
+				"code.codeSystemName", "LOINC", "templateId.root", "1.3.6.1.4.1.19376.1.5.3.1.3.4",
 				"constraints.validation.error", "HistoryOfPresentIllnessTemplateId HistoryOfPresentIllnessCode",
-				"templateId.root", "1.3.6.1.4.1.19376.1.5.3.1.3.4", "code.codeSystemName", "LOINC", "code.displayName",
-				"HISTORY OF PRESENT ILLNESS", "code.codeSystem", "2.16.840.1.113883.6.1", "code.code", "10164-2" });
+				"code.displayName", "HISTORY OF PRESENT ILLNESS", "code.codeSystem", "2.16.840.1.113883.6.1",
+				"code.code", "10164-2" });
 		addAnnotation(pastMedicalHistorySectionEClass, source, new String[] {
+				"code.codeSystemName", "LOINC", "templateId.root", "2.16.840.1.113883.10.20.2.9",
 				"constraints.validation.error",
 				"PastMedicalHistorySectionTemplateId PastMedicalHistorySectionCode PastMedicalHistorySectionText",
-				"templateId.root", "2.16.840.1.113883.10.20.2.9", "constraints.validation.warning",
-				"PastMedicalHistorySectionHasClinicalStatements", "code.codeSystemName", "LOINC", "code.displayName",
-				"HISTORY OF PAST ILLNESS", "code.codeSystem", "2.16.840.1.113883.6.1", "code.code", "11348-0" });
+				"code.displayName", "HISTORY OF PAST ILLNESS", "code.codeSystem", "2.16.840.1.113883.6.1", "code.code",
+				"11348-0", "constraints.validation.warning", "PastMedicalHistorySectionHasClinicalStatements" });
 		addAnnotation(reviewOfSystemsSectionIHEEClass, source, new String[] {
+				"code.codeSystemName", "LOINC", "templateId.root", "1.3.6.1.4.1.19376.1.5.3.1.3.18",
 				"constraints.validation.error", "ReviewOfSystemsSectionIHETemplateId ReviewOfSystemsSectionIHECode",
-				"templateId.root", "1.3.6.1.4.1.19376.1.5.3.1.3.18", "code.codeSystemName", "LOINC",
 				"code.displayName", "REVIEW OF SYSTEMS", "code.codeSystem", "2.16.840.1.113883.6.1", "code.code",
 				"10187-3" });
 		addAnnotation(physicalExaminationSectionEClass, source, new String[] {
+				"code.codeSystemName", "LOINC", "templateId.root", "2.16.840.1.113883.10.20.2.10",
 				"constraints.validation.error", "PhysicalExaminationSectionTemplateId PhysicalExaminationSectionCode",
-				"templateId.root", "2.16.840.1.113883.10.20.2.10", "code.codeSystemName", "LOINC", "code.displayName",
-				"PHYSICAL FINDINGS", "code.codeSystem", "2.16.840.1.113883.6.1", "code.code", "29545-1" });
+				"code.displayName", "PHYSICAL FINDINGS", "code.codeSystem", "2.16.840.1.113883.6.1", "code.code",
+				"29545-1" });
 		addAnnotation(vitalSignsSectionEClass, source, new String[] {
+				"code.codeSystemName", "LOINC", "templateId.root", "2.16.840.1.113883.10.20.2.4",
 				"constraints.validation.error",
-				"VitalSignsSectionTemplateId VitalSignsSectionCode VitalSignsSectionText", "templateId.root",
-				"2.16.840.1.113883.10.20.2.4", "constraints.validation.warning",
-				"VitalSignsSectionClinicalStatements VitalSignsSectionVitalSignsOrganizer", "code.codeSystemName",
-				"LOINC", "code.displayName", "VITAL SIGNS", "code.codeSystem", "2.16.840.1.113883.6.1", "code.code",
-				"8716-3" });
-		addAnnotation(
-			generalStatusSectionEClass, source, new String[] {
-					"constraints.validation.error", "GeneralStatusSectionTemplateId GeneralStatusSectionCode",
-					"templateId.root", "2.16.840.1.113883.10.20.2.5", "code.codeSystemName", "LOINC",
-					"code.displayName", "GENERAL STATUS, PHYSICAL FINDINGS", "code.codeSystem",
-					"2.16.840.1.113883.6.1", "code.code", "10210-3" });
+				"VitalSignsSectionTemplateId VitalSignsSectionCode VitalSignsSectionText", "code.displayName",
+				"VITAL SIGNS", "code.codeSystem", "2.16.840.1.113883.6.1", "code.code", "8716-3",
+				"constraints.validation.warning",
+				"VitalSignsSectionClinicalStatements VitalSignsSectionVitalSignsOrganizer" });
+		addAnnotation(generalStatusSectionEClass, source, new String[] {
+				"code.codeSystemName", "LOINC", "templateId.root", "2.16.840.1.113883.10.20.2.5",
+				"constraints.validation.error", "GeneralStatusSectionTemplateId GeneralStatusSectionCode",
+				"code.displayName", "GENERAL STATUS, PHYSICAL FINDINGS", "code.codeSystem", "2.16.840.1.113883.6.1",
+				"code.code", "10210-3" });
 		addAnnotation(diagnosticFindingsEClass, source, new String[] {
 				"constraints.validation.error", "DiagnosticFindingsTitle" });
 		addAnnotation(
 			consultationNoteEClass,
 			source,
 			new String[] {
-					"constraints.validation.error",
-					"ConsultationNoteTemplateId ConsultationNoteReferralOrVisit GeneralHeaderConstraintsCode ConsultationNoteHistoryOfPresentIllness ConsultationNotePhysicalExamination",
-					"templateId.root",
-					"2.16.840.1.113883.10.20.4",
 					"code.codeSystemName",
 					"LOINC",
-					"code.codeSystem",
-					"2.16.840.1.113883.6.1",
 					"constraints.validation.info",
-					"ConsultationNoteProblemSection ConsultationNoteProceduresSection ConsultationNotePastMedicalHistorySection ConsultationNoteImmunizationsSection ConsultationNoteMedicationsSection ConsultationNoteAlertsSection ConsultationNoteSocialHistorySection ConsultationNoteFamilyHistorySection ConsultationNoteReviewOfSystemsSection ConsultationNoteVitalSignsSection ConsultationNoteGeneralStatusSection ConsultationNoteDiagnosticFindings" });
+					"ConsultationNoteProblemSection ConsultationNoteProceduresSection ConsultationNotePastMedicalHistorySection ConsultationNoteImmunizationsSection ConsultationNoteMedicationsSection ConsultationNoteAlertsSection ConsultationNoteSocialHistorySection ConsultationNoteFamilyHistorySection ConsultationNoteReviewOfSystemsSection ConsultationNoteVitalSignsSection ConsultationNoteGeneralStatusSection ConsultationNoteDiagnosticFindings",
+					"templateId.root",
+					"2.16.840.1.113883.10.20.4",
+					"constraints.validation.error",
+					"ConsultationNoteTemplateId ConsultationNoteReferralOrVisit GeneralHeaderConstraintsCode ConsultationNoteHistoryOfPresentIllness ConsultationNotePhysicalExamination",
+					"code.codeSystem", "2.16.840.1.113883.6.1" });
 		addAnnotation(
 			pastMedicalHistorySectionConsultEClass,
 			source,
 			new String[] {
+					"code.codeSystemName",
+					"LOINC",
+					"templateId.root",
+					"2.16.840.1.113883.10.20.4.9",
 					"constraints.validation.error",
 					"PastMedicalHistorySectionConsultTemplateId PastMedicalHistorySectionConsultCode PastMedicalHistorySectionConsultText",
-					"templateId.root", "2.16.840.1.113883.10.20.4.9", "code.codeSystemName", "LOINC",
 					"code.displayName", "HISTORY OF PAST ILLNESS", "code.codeSystem", "2.16.840.1.113883.6.1",
 					"code.code", "11348-0" });
 		addAnnotation(reviewOfSystemsSectionEClass, source, new String[] {
+				"code.codeSystemName", "LOINC", "templateId.root", "2.16.840.1.113883.10.20.4.10",
 				"constraints.validation.error", "ReviewOfSystemsSectionTemplateId ReviewOfSystemsSectionCode",
-				"templateId.root", "2.16.840.1.113883.10.20.4.10", "code.codeSystemName", "LOINC", "code.displayName",
-				"REVIEW OF SYSTEMS", "code.codeSystem", "2.16.840.1.113883.6.1", "code.code", "10187-3" });
+				"code.displayName", "REVIEW OF SYSTEMS", "code.codeSystem", "2.16.840.1.113883.6.1", "code.code",
+				"10187-3" });
 		addAnnotation(reasonForReferralSectionEClass, source, new String[] {
-				"constraints.validation.error", "ReasonForReferralSectionTemplateId ReasonForReferralSectionCode",
-				"contextDependent", "true", "templateId.root", "2.16.840.1.113883.10.20.4.8", "code.codeSystemName",
-				"LOINC", "code.displayName", "REASON FOR REFERRAL", "code.codeSystem", "2.16.840.1.113883.6.1",
-				"code.code", "42349-1" });
+				"contextDependent", "true", "code.codeSystemName", "LOINC", "templateId.root",
+				"2.16.840.1.113883.10.20.4.8", "constraints.validation.error",
+				"ReasonForReferralSectionTemplateId ReasonForReferralSectionCode", "code.displayName",
+				"REASON FOR REFERRAL", "code.codeSystem", "2.16.840.1.113883.6.1", "code.code", "42349-1" });
 		addAnnotation(reasonForVisitSectionConsultEClass, source, new String[] {
-				"constraints.validation.error",
-				"ReasonForVisitSectionConsultTemplateId ReasonForVisitSectionConsultCode", "contextDependent", "true",
-				"templateId.root", "2.16.840.1.113883.10.20.4.8", "code.codeSystemName", "LOINC", "code.displayName",
+				"contextDependent", "true", "code.codeSystemName", "LOINC", "templateId.root",
+				"2.16.840.1.113883.10.20.4.8", "constraints.validation.error",
+				"ReasonForVisitSectionConsultTemplateId ReasonForVisitSectionConsultCode", "code.displayName",
 				"REASON FOR VISIT", "code.codeSystem", "2.16.840.1.113883.6.1", "code.code", "29299-5" });
 		addAnnotation(levelOneConformanceEClass, source, new String[] {
-				"constraints.validation.error", "LevelOneConformanceTemplateId", "templateId.root",
-				"2.16.840.1.113883.10.20.10" });
+				"templateId.root", "2.16.840.1.113883.10.20.10", "constraints.validation.error",
+				"LevelOneConformanceTemplateId" });
 		addAnnotation(levelTwoConformanceEClass, source, new String[] {
-				"constraints.validation.error", "LevelTwoConformanceTemplateId", "templateId.root",
-				"2.16.840.1.113883.10.20.20" });
+				"templateId.root", "2.16.840.1.113883.10.20.20", "constraints.validation.error",
+				"LevelTwoConformanceTemplateId" });
 		addAnnotation(levelThreeConformanceEClass, source, new String[] {
-				"constraints.validation.error", "LevelThreeConformanceTemplateId", "templateId.root",
-				"2.16.840.1.113883.10.20.30" });
+				"templateId.root", "2.16.840.1.113883.10.20.30", "constraints.validation.error",
+				"LevelThreeConformanceTemplateId" });
 		addAnnotation(assessmentSectionEClass, source, new String[] {
-				"constraints.validation.error", "AssessmentSectionTemplateId AssessmentSectionCode",
-				"contextDependent", "true", "templateId.root", "2.16.840.1.113883.10.20.2.7", "code.codeSystemName",
-				"LOINC", "code.displayName", "Assessment", "code.codeSystem", "2.16.840.1.113883.6.1", "code.code",
-				"51848-0" });
+				"contextDependent", "true", "code.codeSystemName", "LOINC", "templateId.root",
+				"2.16.840.1.113883.10.20.2.7", "constraints.validation.error",
+				"AssessmentSectionTemplateId AssessmentSectionCode", "code.displayName", "Assessment",
+				"code.codeSystem", "2.16.840.1.113883.6.1", "code.code", "51848-0" });
 		addAnnotation(planSectionEClass, source, new String[] {
-				"constraints.validation.error", "PlanSectionTemplateId PlanSectionCode", "contextDependent", "true",
-				"templateId.root", "2.16.840.1.113883.10.20.2.7", "code.codeSystemName", "LOINC", "code.displayName",
-				"Plan", "code.codeSystem", "2.16.840.1.113883.6.1", "code.code", "18776-5" });
+				"contextDependent", "true", "code.codeSystemName", "LOINC", "templateId.root",
+				"2.16.840.1.113883.10.20.2.7", "constraints.validation.error", "PlanSectionTemplateId PlanSectionCode",
+				"code.displayName", "Plan", "code.codeSystem", "2.16.840.1.113883.6.1", "code.code", "18776-5" });
 		addAnnotation(assessmentAndPlanSectionEClass, source, new String[] {
-				"constraints.validation.error", "AssessmentAndPlanSectionTemplateId AssessmentAndPlanSectionCode",
-				"contextDependent", "true", "templateId.root", "2.16.840.1.113883.10.20.2.7", "code.codeSystemName",
-				"LOINC", "code.displayName", "Assessment + Plan", "code.codeSystem", "2.16.840.1.113883.6.1",
-				"code.code", "51847-2" });
+				"contextDependent", "true", "code.codeSystemName", "LOINC", "templateId.root",
+				"2.16.840.1.113883.10.20.2.7", "constraints.validation.error",
+				"AssessmentAndPlanSectionTemplateId AssessmentAndPlanSectionCode", "code.displayName",
+				"Assessment + Plan", "code.codeSystem", "2.16.840.1.113883.6.1", "code.code", "51847-2" });
 		addAnnotation(reasonForVisitSectionEClass, source, new String[] {
-				"constraints.validation.error", "ReasonForVisitSectionTemplateId ReasonForVisitSectionCode",
-				"contextDependent", "true", "templateId.root", "2.16.840.1.113883.10.20.2.8", "code.codeSystemName",
-				"LOINC", "code.displayName", "Reason for visit", "code.codeSystem", "2.16.840.1.113883.6.1",
-				"code.code", "29299-5" });
+				"contextDependent", "true", "code.codeSystemName", "LOINC", "templateId.root",
+				"2.16.840.1.113883.10.20.2.8", "constraints.validation.error",
+				"ReasonForVisitSectionTemplateId ReasonForVisitSectionCode", "code.displayName", "Reason for visit",
+				"code.codeSystem", "2.16.840.1.113883.6.1", "code.code", "29299-5" });
 		addAnnotation(chiefComplaintSectionEClass, source, new String[] {
-				"constraints.validation.error", "ChiefComplaintSectionTemplateId ChiefComplaintSectionCode",
-				"contextDependent", "true", "templateId.root", "2.16.840.1.113883.10.20.2.8", "code.codeSystemName",
-				"LOINC", "code.displayName", "Chief complaint", "code.codeSystem", "2.16.840.1.113883.6.1",
-				"code.code", "10154-3" });
+				"contextDependent", "true", "code.codeSystemName", "LOINC", "templateId.root",
+				"2.16.840.1.113883.10.20.2.8", "constraints.validation.error",
+				"ChiefComplaintSectionTemplateId ChiefComplaintSectionCode", "code.displayName", "Chief complaint",
+				"code.codeSystem", "2.16.840.1.113883.6.1", "code.code", "10154-3" });
 		addAnnotation(reasonForVisitAndChiefComplaintSectionEClass, source, new String[] {
-				"constraints.validation.error",
+				"contextDependent", "true", "code.codeSystemName", "LOINC", "templateId.root",
+				"2.16.840.1.113883.10.20.2.8", "constraints.validation.error",
 				"ReasonForVisitAndChiefComplaintSectionTemplateId ReasonForVisitAndChiefComplaintSectionCode",
-				"contextDependent", "true", "templateId.root", "2.16.840.1.113883.10.20.2.8", "code.codeSystemName",
-				"LOINC", "code.displayName", "Reason for visit + Chief complaint", "code.codeSystem",
-				"2.16.840.1.113883.6.1", "code.code", "46239-0" });
+				"code.displayName", "Reason for visit + Chief complaint", "code.codeSystem", "2.16.840.1.113883.6.1",
+				"code.code", "46239-0" });
 		addAnnotation(
 			progressNoteEClass,
 			source,
 			new String[] {
-					"constraints.validation.error",
-					"ProgressNoteTemplateId ProgressNoteAssessmentAndPlan ProgressNoteBothAssessmentAndPlan ProgressNoteHasServiceEventCode ProgressNoteHasComponentOfElement ProgressNoteHasEncompassingEncounterId ProgressNoteHasEncompassingEncounterEffectiveTime ProgressNoteHasEncompassingEncounterEffectiveTimeLow GeneralHeaderConstraintsCode",
-					"templateId.root",
-					"2.16.840.1.113883.10.20.21.1",
-					"constraints.validation.warning",
-					"ProgressNoteHasServiceEvent ProgressNoteHasServiceEventEffectiveTime ProgressNoteHasEncompassingEncounterFacilityId",
 					"code.codeSystemName",
 					"LOINC",
-					"code.codeSystem",
-					"2.16.840.1.113883.6.1",
 					"constraints.validation.info",
-					"ProgressNoteAlertsSection ProgressNoteChiefComplaintSection ProgressNoteMedicationsSection ProgressNoteObjectiveSection ProgressNotePhysicalExaminationSection ProgressNoteProblemSection ProgressNoteResultsSection ProgressNoteVitalSignsSection ProgressNoteReviewOfSystemsSection ProgressNoteSubjectiveSection" });
+					"ProgressNoteAlertsSection ProgressNoteChiefComplaintSection ProgressNoteMedicationsSection ProgressNoteObjectiveSection ProgressNotePhysicalExaminationSection ProgressNoteProblemSection ProgressNoteResultsSection ProgressNoteVitalSignsSection ProgressNoteReviewOfSystemsSection ProgressNoteSubjectiveSection",
+					"templateId.root",
+					"2.16.840.1.113883.10.20.21.1",
+					"constraints.validation.error",
+					"ProgressNoteTemplateId ProgressNoteAssessmentAndPlan ProgressNoteBothAssessmentAndPlan ProgressNoteHasServiceEventCode ProgressNoteHasComponentOfElement ProgressNoteHasEncompassingEncounterId ProgressNoteHasEncompassingEncounterEffectiveTime ProgressNoteHasEncompassingEncounterEffectiveTimeLow GeneralHeaderConstraintsCode",
+					"code.codeSystem", "2.16.840.1.113883.6.1", "constraints.validation.warning",
+					"ProgressNoteHasServiceEvent ProgressNoteHasServiceEventEffectiveTime ProgressNoteHasEncompassingEncounterFacilityId" });
 		addAnnotation(assessmentAndPlanSectionProcNoteEClass, source, new String[] {
+				"code.codeSystemName", "LOINC", "templateId.root", "2.16.840.1.113883.10.20.18.2.14",
 				"constraints.validation.error",
-				"AssessmentAndPlanSectionProcNoteTemplateId AssessmentAndPlanSectionProcNoteCode", "templateId.root",
-				"2.16.840.1.113883.10.20.18.2.14", "code.codeSystemName", "LOINC", "code.displayName",
+				"AssessmentAndPlanSectionProcNoteTemplateId AssessmentAndPlanSectionProcNoteCode", "code.displayName",
 				"ASSESSMENT AND PLAN", "code.codeSystem", "2.16.840.1.113883.6.1", "code.code", "51847-2" });
 		addAnnotation(assessmentSectionProcNoteEClass, source, new String[] {
+				"code.codeSystemName", "LOINC", "templateId.root", "2.16.840.1.113883.10.20.18.2.13",
 				"constraints.validation.error", "AssessmentSectionProcNoteTemplateId AssessmentSectionProcNoteCode",
-				"templateId.root", "2.16.840.1.113883.10.20.18.2.13", "code.codeSystemName", "LOINC",
 				"code.displayName", "ASSESSMENT", "code.codeSystem", "2.16.840.1.113883.6.1", "code.code", "51848-0" });
 		addAnnotation(chiefComplaintSectionProcNoteEClass, source, new String[] {
+				"code.codeSystemName", "LOINC", "templateId.root", "2.16.840.1.113883.10.20.18.2.16",
 				"constraints.validation.error",
-				"ChiefComplaintSectionProcNoteTemplateId ChiefComplaintSectionProcNoteCode", "templateId.root",
-				"2.16.840.1.113883.10.20.18.2.16", "code.codeSystemName", "LOINC", "code.displayName",
+				"ChiefComplaintSectionProcNoteTemplateId ChiefComplaintSectionProcNoteCode", "code.displayName",
 				"CHIEF COMPLAINT", "code.codeSystem", "2.16.840.1.113883.6.1", "code.code", "10154-3" });
 		addAnnotation(objectiveSectionEClass, source, new String[] {
+				"code.codeSystemName", "LOINC", "templateId.root", "2.16.840.1.113883.10.20.21.2.1",
 				"constraints.validation.error",
 				"ObjectiveSectionTemplateId ObjectiveSectionCode ObjectiveSectionText ObjectiveSectionTitle",
-				"templateId.root", "2.16.840.1.113883.10.20.21.2.1", "constraints.validation.warning",
-				"ObjectiveSectionHasClinicalStatements", "code.codeSystemName", "LOINC", "code.displayName",
-				"OBJECTIVE DATA", "code.codeSystem", "2.16.840.1.113883.6.1", "code.code", "OBJEC-X" });
+				"code.displayName", "OBJECTIVE DATA", "code.codeSystem", "2.16.840.1.113883.6.1", "code.code",
+				"OBJEC-X", "constraints.validation.warning", "ObjectiveSectionHasClinicalStatements" });
 		addAnnotation(subjectiveSectionEClass, source, new String[] {
+				"code.codeSystemName", "LOINC", "templateId.root", "2.16.840.1.113883.10.20.21.2.2",
 				"constraints.validation.error",
 				"SubjectiveSectionTemplateId SubjectiveSectionCode SubjectiveSectionText SubjectiveSectionTitle",
-				"templateId.root", "2.16.840.1.113883.10.20.21.2.2", "constraints.validation.warning",
-				"SubjectiveSectionHasClinicalStatements", "code.codeSystemName", "LOINC", "code.displayName",
-				"SUBJECTIVE DATA", "code.codeSystem", "2.16.840.1.113883.6.1", "code.code", "SUBJ-X" });
+				"code.displayName", "SUBJECTIVE DATA", "code.codeSystem", "2.16.840.1.113883.6.1", "code.code",
+				"SUBJ-X", "constraints.validation.warning", "SubjectiveSectionHasClinicalStatements" });
 		addAnnotation(
 			unstructuredDocumentEClass,
 			source,
 			new String[] {
+					"templateId.root",
+					"2.16.840.1.113883.10.20.19.1",
 					"constraints.validation.error",
-					"UnstructuredDocumentTemplateId UnstructuredDocumentPatientRoleHasId UnstructuredDocumentAssignedAuthorHasAddr UnstructuredDocumentAssignedAuthorHasTelecom UnstructuredDocumentHasRepresentedCustodianOrganization UnstructuredDocumentHasRepresentedCustodianOrganizationId UnstructuredDocumentHasRepresentedCustodianOrganizationName UnstructuredDocumentHasRepresentedCustodianOrganizationTelecom UnstructuredDocumentHasRepresentedCustodianOrganizationAddr UnstructuredDocumentHasNonXMLBodyText UnstructuredDocumentHasTextReferenceOrRepresentation UnstructuredDocumentHasTextMediaTypeValueSet UnstructuredDocumentEffectiveTime UnstructuredDocumentCustodian",
-					"templateId.root", "2.16.840.1.113883.10.20.19.1" });
+					"UnstructuredDocumentTemplateId UnstructuredDocumentPatientRoleHasId UnstructuredDocumentAssignedAuthorHasAddr UnstructuredDocumentAssignedAuthorHasTelecom UnstructuredDocumentHasRepresentedCustodianOrganization UnstructuredDocumentHasRepresentedCustodianOrganizationId UnstructuredDocumentHasRepresentedCustodianOrganizationName UnstructuredDocumentHasRepresentedCustodianOrganizationTelecom UnstructuredDocumentHasRepresentedCustodianOrganizationAddr UnstructuredDocumentHasNonXMLBodyText UnstructuredDocumentHasTextReferenceOrRepresentation UnstructuredDocumentHasTextMediaTypeValueSet UnstructuredDocumentEffectiveTime UnstructuredDocumentCustodian" });
 		addAnnotation(
 			hospitalDischargeStudiesSummarySectionEClass,
 			source,
 			new String[] {
+					"title.mixed",
+					"HOSPITAL DISCHARGE STUDIES SUMMARY",
+					"code.codeSystemName",
+					"LOINC",
+					"templateId.root",
+					"2.16.840.1.113883.10.20.16.2.3",
 					"constraints.validation.error",
 					"HospitalDischargeStudiesSummarySectionTemplateId HospitalDischargeStudiesSummarySectionCode HospitalDischargeStudiesSummarySectionTitle",
-					"templateId.root", "2.16.840.1.113883.10.20.16.2.3", "code.codeSystemName", "LOINC",
 					"code.displayName", "Hospital Discharge Studies Summary", "code.codeSystem",
-					"2.16.840.1.113883.6.1", "code.code", "11493-4", "title.mixed",
-					"HOSPITAL DISCHARGE STUDIES SUMMARY" });
+					"2.16.840.1.113883.6.1", "code.code", "11493-4" });
 	}
 
 	/**

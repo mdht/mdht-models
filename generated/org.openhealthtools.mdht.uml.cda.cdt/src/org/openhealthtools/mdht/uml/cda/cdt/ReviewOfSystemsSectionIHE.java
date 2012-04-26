@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.cdt.CDTPackage#getReviewOfSystemsSectionIHE()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ReviewOfSystemsSectionIHETemplateId ReviewOfSystemsSectionIHECode' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.3.18' code.codeSystemName='LOINC' code.displayName='REVIEW OF SYSTEMS' code.codeSystem='2.16.840.1.113883.6.1' code.code='10187-3'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystemName='LOINC' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.3.18' constraints.validation.error='ReviewOfSystemsSectionIHETemplateId ReviewOfSystemsSectionIHECode' code.displayName='REVIEW OF SYSTEMS' code.codeSystem='2.16.840.1.113883.6.1' code.code='10187-3'"
  * @generated
  */
 public interface ReviewOfSystemsSectionIHE extends Section {

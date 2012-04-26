@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.cdt.CDTPackage#getAssessmentAndPlanSectionProcNote()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AssessmentAndPlanSectionProcNoteTemplateId AssessmentAndPlanSectionProcNoteCode' templateId.root='2.16.840.1.113883.10.20.18.2.14' code.codeSystemName='LOINC' code.displayName='ASSESSMENT AND PLAN' code.codeSystem='2.16.840.1.113883.6.1' code.code='51847-2'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystemName='LOINC' templateId.root='2.16.840.1.113883.10.20.18.2.14' constraints.validation.error='AssessmentAndPlanSectionProcNoteTemplateId AssessmentAndPlanSectionProcNoteCode' code.displayName='ASSESSMENT AND PLAN' code.codeSystem='2.16.840.1.113883.6.1' code.code='51847-2'"
  * @generated
  */
 public interface AssessmentAndPlanSectionProcNote extends Section {

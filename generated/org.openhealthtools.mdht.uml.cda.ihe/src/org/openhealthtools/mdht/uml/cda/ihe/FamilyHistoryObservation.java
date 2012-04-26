@@ -17,7 +17,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ihe.IHEPackage#getFamilyHistoryObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='IHEFamilyHistoryObservationTemplateId IHEFamilyHistoryObservationCode IHEFamilyHistoryObservationValue' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.13.3' code.codeSystemName='SNOMEDCT' code.codeSystem='2.16.840.1.113883.6.96'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystemName='SNOMEDCT' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.13.3' constraints.validation.error='IHEFamilyHistoryObservationTemplateId IHEFamilyHistoryObservationCode IHEFamilyHistoryObservationValue' code.codeSystem='2.16.840.1.113883.6.96'"
  * @generated
  */
 public interface FamilyHistoryObservation extends org.openhealthtools.mdht.uml.cda.ccd.FamilyHistoryObservation,

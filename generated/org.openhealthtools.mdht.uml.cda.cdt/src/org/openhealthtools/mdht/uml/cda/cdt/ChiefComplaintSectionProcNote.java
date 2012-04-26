@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.cdt.CDTPackage#getChiefComplaintSectionProcNote()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ChiefComplaintSectionProcNoteTemplateId ChiefComplaintSectionProcNoteCode' templateId.root='2.16.840.1.113883.10.20.18.2.16' code.codeSystemName='LOINC' code.displayName='CHIEF COMPLAINT' code.codeSystem='2.16.840.1.113883.6.1' code.code='10154-3'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystemName='LOINC' templateId.root='2.16.840.1.113883.10.20.18.2.16' constraints.validation.error='ChiefComplaintSectionProcNoteTemplateId ChiefComplaintSectionProcNoteCode' code.displayName='CHIEF COMPLAINT' code.codeSystem='2.16.840.1.113883.6.1' code.code='10154-3'"
  * @generated
  */
 public interface ChiefComplaintSectionProcNote extends Section {

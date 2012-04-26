@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ihe.IHEPackage#getIntakeOutputSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='IntakeOutputSectionTemplateId' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.1.20.2.3'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='1.3.6.1.4.1.19376.1.5.3.1.1.20.2.3' constraints.validation.error='IntakeOutputSectionTemplateId'"
  * @generated
  */
 public interface IntakeOutputSection extends Section {

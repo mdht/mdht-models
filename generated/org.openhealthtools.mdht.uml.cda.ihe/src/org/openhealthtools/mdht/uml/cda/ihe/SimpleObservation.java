@@ -30,7 +30,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  * @see org.openhealthtools.mdht.uml.cda.ihe.IHEPackage#getSimpleObservation()
  * @model abstract="true"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SimpleObservationTemplateId SimpleObservationId SimpleObservationStatusCode' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.13' statusCode.code='completed'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.13' constraints.validation.error='SimpleObservationTemplateId SimpleObservationId SimpleObservationStatusCode' statusCode.code='completed'"
  * @generated
  */
 public interface SimpleObservation extends Observation {

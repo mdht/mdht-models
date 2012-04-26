@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.ccd.ResultObservation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ihe.IHEPackage#getVitalSignObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='VitalSignObservationTemplateId ResultObservationCode VitalSignObservationValue' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.13.2' code.codeSystemName='LOINC' code.codeSystem='2.16.840.1.113883.6.1' constraints.validation.info='VitalSignObservationInterpretationCode VitalSignObservationMethodCode VitalSignObservationTargetSiteCode'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystemName='LOINC' constraints.validation.info='VitalSignObservationInterpretationCode VitalSignObservationMethodCode VitalSignObservationTargetSiteCode' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.13.2' constraints.validation.error='VitalSignObservationTemplateId ResultObservationCode VitalSignObservationValue' code.codeSystem='2.16.840.1.113883.6.1'"
  * @generated
  */
 public interface VitalSignObservation extends ResultObservation, SimpleObservation {

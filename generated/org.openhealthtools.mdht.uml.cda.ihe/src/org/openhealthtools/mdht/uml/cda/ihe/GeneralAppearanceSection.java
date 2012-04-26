@@ -18,7 +18,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ihe.IHEPackage#getGeneralAppearanceSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='GeneralAppearanceSectionTemplateId GeneralAppearanceSectionCode' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.1.9.16' code.codeSystemName='LOINC' code.displayName='GENERAL STATUS' code.codeSystem='2.16.840.1.113883.6.1' code.code='10210-3' constraints.validation.info='GeneralAppearanceSectionProblemEntry'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystemName='LOINC' constraints.validation.info='GeneralAppearanceSectionProblemEntry' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.1.9.16' constraints.validation.error='GeneralAppearanceSectionTemplateId GeneralAppearanceSectionCode' code.displayName='GENERAL STATUS' code.codeSystem='2.16.840.1.113883.6.1' code.code='10210-3'"
  * @generated
  */
 public interface GeneralAppearanceSection extends Section {

@@ -30,7 +30,7 @@ import org.openhealthtools.mdht.uml.cda.ihe.CodedReasonForReferralSection;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage#getReasonForReferralSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='HITSPReasonForReferralSectionTemplateId' templateId.root='2.16.840.1.113883.3.88.11.83.106' constraints.validation.info='HITSPReasonForReferralSectionCondition HITSPReasonForReferralSectionResult'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.info='HITSPReasonForReferralSectionCondition HITSPReasonForReferralSectionResult' templateId.root='2.16.840.1.113883.3.88.11.83.106' constraints.validation.error='HITSPReasonForReferralSectionTemplateId'"
  * @generated
  */
 public interface ReasonForReferralSection extends CodedReasonForReferralSection,

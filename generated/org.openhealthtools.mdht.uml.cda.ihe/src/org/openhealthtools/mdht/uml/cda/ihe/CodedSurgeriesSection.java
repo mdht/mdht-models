@@ -27,7 +27,7 @@ import org.eclipse.emf.common.util.EList;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ihe.IHEPackage#getCodedSurgeriesSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='CodedSurgeriesSectionTemplateId CodedSurgeriesSectionProcedureEntryProcedureActivityProcedure' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.3.12' constraints.validation.warning='CodedSurgeriesSectionExternalReference'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='1.3.6.1.4.1.19376.1.5.3.1.3.12' constraints.validation.error='CodedSurgeriesSectionTemplateId CodedSurgeriesSectionProcedureEntryProcedureActivityProcedure' constraints.validation.warning='CodedSurgeriesSectionExternalReference'"
  * @generated
  */
 public interface CodedSurgeriesSection extends SurgeriesSection {

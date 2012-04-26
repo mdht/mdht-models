@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.Act;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ccd.CCDPackage#getAuthorizationActivity()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AuthorizationActivityTemplateId AuthorizationActivityEntryRelationshipTypeCode AuthorizationActivityEntryRelationshipTarget AuthorizationActivityClassCode AuthorizationActivityMoodCode AuthorizationActivityId AuthorizationActivityEntryRelationship' templateId.root='2.16.840.1.113883.10.20.1.19' constraints.validation.info='AuthorizationActivityHasPerformers' classCode='ACT' moodCode='EVN'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation moodCode='EVN' classCode='ACT' constraints.validation.info='AuthorizationActivityHasPerformers' templateId.root='2.16.840.1.113883.10.20.1.19' constraints.validation.error='AuthorizationActivityTemplateId AuthorizationActivityEntryRelationshipTypeCode AuthorizationActivityEntryRelationshipTarget AuthorizationActivityClassCode AuthorizationActivityMoodCode AuthorizationActivityId AuthorizationActivityEntryRelationship'"
  * @generated
  */
 public interface AuthorizationActivity extends Act {

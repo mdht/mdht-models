@@ -36,7 +36,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ccd.CCDPackage#getSocialHistorySection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SocialHistorySectionTemplateId SocialHistorySectionCode SocialHistorySectionTitle SocialHistorySectionText' templateId.root='2.16.840.1.113883.10.20.1.15' constraints.validation.warning='SocialHistorySectionMaritalStatus SocialHistorySectionReligiousAffiliation SocialHistorySectionPatientRace SocialHistorySectionPatientEthnicity SocialHistorySectionSocialHistoryObservation' constraints.validation.info='SocialHistorySectionPatientRaceCodeSystem SocialHistorySectionPatientEthnicityCodeSystem' code.codeSystemName='LOINC' code.displayName='Social history' code.codeSystem='2.16.840.1.113883.6.1' code.code='29762-2'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystemName='LOINC' constraints.validation.info='SocialHistorySectionPatientRaceCodeSystem SocialHistorySectionPatientEthnicityCodeSystem' templateId.root='2.16.840.1.113883.10.20.1.15' constraints.validation.error='SocialHistorySectionTemplateId SocialHistorySectionCode SocialHistorySectionTitle SocialHistorySectionText' code.displayName='Social history' code.codeSystem='2.16.840.1.113883.6.1' code.code='29762-2' constraints.validation.warning='SocialHistorySectionMaritalStatus SocialHistorySectionReligiousAffiliation SocialHistorySectionPatientRace SocialHistorySectionPatientEthnicity SocialHistorySectionSocialHistoryObservation'"
  * @generated
  */
 public interface SocialHistorySection extends Section {

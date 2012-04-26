@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ccd.CCDPackage#getEpisodeObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='EpisodeObservationTemplateId EpisodeObservationOneEntryRelationshipSUBJ EpisodeObservationClassCode EpisodeObservationMoodCode EpisodeObservationStatusCode' templateId.root='2.16.840.1.113883.10.20.1.41' constraints.validation.info='EpisodeObservationExistsEntryRelationshipSAS' classCode='OBS' moodCode='EVN' statusCode.code='completed' code.codeSystemName='HL7ActCode' code.codeSystem='2.16.840.1.113883.5.4' code.code='ASSERTION' constraints.validation.warning='EpisodeObservationCode EpisodeObservationValue' value.codeSystemName='SNOMEDCT' value.code='404684003' value.displayName='Clinical finding' value.codeSystem='2.16.840.1.113883.6.96'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation moodCode='EVN' value.codeSystemName='SNOMEDCT' classCode='OBS' code.codeSystemName='HL7ActCode' value.code='404684003' constraints.validation.error='EpisodeObservationTemplateId EpisodeObservationOneEntryRelationshipSUBJ EpisodeObservationClassCode EpisodeObservationMoodCode EpisodeObservationStatusCode' constraints.validation.info='EpisodeObservationExistsEntryRelationshipSAS' code.code='ASSERTION' value.displayName='Clinical finding' value.codeSystem='2.16.840.1.113883.6.96' templateId.root='2.16.840.1.113883.10.20.1.41' statusCode.code='completed' code.codeSystem='2.16.840.1.113883.5.4' constraints.validation.warning='EpisodeObservationCode EpisodeObservationValue'"
  * @generated
  */
 public interface EpisodeObservation extends Observation {

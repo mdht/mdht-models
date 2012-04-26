@@ -85,15 +85,6 @@ public class ProblemStatusObservationImpl extends
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateIHEProblemStatusObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProblemStatusObservationOperations.validateIHEProblemStatusObservationValue(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	@Override
 	public boolean validateStatusObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemStatusObservationOperations.validateStatusObservationValue(this, diagnostics, context);

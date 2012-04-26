@@ -18,7 +18,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ihe.IHEPackage#getIntegumentarySystemSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='IntegumentarySystemSectionTemplateId IntegumentarySystemSectionCode' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.1.9.17' code.codeSystemName='LOINC' code.displayName='INTEGUMENTARY SYSTEM' code.codeSystem='2.16.840.1.113883.6.1' code.code='29302-7' constraints.validation.info='IntegumentarySystemSectionProblemEntry'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystemName='LOINC' constraints.validation.info='IntegumentarySystemSectionProblemEntry' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.1.9.17' constraints.validation.error='IntegumentarySystemSectionTemplateId IntegumentarySystemSectionCode' code.displayName='INTEGUMENTARY SYSTEM' code.codeSystem='2.16.840.1.113883.6.1' code.code='29302-7'"
  * @generated
  */
 public interface IntegumentarySystemSection extends Section {
