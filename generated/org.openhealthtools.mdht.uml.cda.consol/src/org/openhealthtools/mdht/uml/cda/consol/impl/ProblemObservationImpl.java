@@ -74,8 +74,7 @@ public class ProblemObservationImpl extends ObservationImpl implements ProblemOb
 	 */
 	public boolean validateProblemObservationAgeObservationInversion(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProblemObservationOperations.validateProblemObservationAgeObservationInversion(
-			this, diagnostics, context);
+		return ProblemObservationOperations.validateProblemObservationAgeObservationInversion(this, diagnostics, context);
 	}
 
 	/**
@@ -184,8 +183,7 @@ public class ProblemObservationImpl extends ObservationImpl implements ProblemOb
 	 */
 	public boolean validateProblemObservationHealthStatusObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProblemObservationOperations.validateProblemObservationHealthStatusObservation(
-			this, diagnostics, context);
+		return ProblemObservationOperations.validateProblemObservationHealthStatusObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -230,7 +228,7 @@ public class ProblemObservationImpl extends ObservationImpl implements ProblemOb
 	 * @generated
 	 */
 	public ProblemObservation init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // ProblemObservationImpl

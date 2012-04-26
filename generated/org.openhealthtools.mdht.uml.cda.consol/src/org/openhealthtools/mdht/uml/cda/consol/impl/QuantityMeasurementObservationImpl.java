@@ -52,8 +52,7 @@ public class QuantityMeasurementObservationImpl extends ObservationImpl implemen
 	 */
 	public boolean validateQuantityMeasurementObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return QuantityMeasurementObservationOperations.validateQuantityMeasurementObservationTemplateId(
-			this, diagnostics, context);
+		return QuantityMeasurementObservationOperations.validateQuantityMeasurementObservationTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -62,7 +61,7 @@ public class QuantityMeasurementObservationImpl extends ObservationImpl implemen
 	 * @generated
 	 */
 	public QuantityMeasurementObservation init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // QuantityMeasurementObservationImpl

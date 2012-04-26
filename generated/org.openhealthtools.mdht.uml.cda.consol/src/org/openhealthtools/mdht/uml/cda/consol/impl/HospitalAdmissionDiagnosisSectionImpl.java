@@ -53,8 +53,7 @@ public class HospitalAdmissionDiagnosisSectionImpl extends SectionImpl implement
 	 */
 	public boolean validateHospitalAdmissionDiagnosisSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalAdmissionDiagnosisSectionOperations.validateHospitalAdmissionDiagnosisSectionTemplateId(
-			this, diagnostics, context);
+		return HospitalAdmissionDiagnosisSectionOperations.validateHospitalAdmissionDiagnosisSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -64,8 +63,7 @@ public class HospitalAdmissionDiagnosisSectionImpl extends SectionImpl implement
 	 */
 	public boolean validateHospitalAdmissionDiagnosisSectionCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalAdmissionDiagnosisSectionOperations.validateHospitalAdmissionDiagnosisSectionCode(
-			this, diagnostics, context);
+		return HospitalAdmissionDiagnosisSectionOperations.validateHospitalAdmissionDiagnosisSectionCode(this, diagnostics, context);
 	}
 
 	/**
@@ -75,8 +73,7 @@ public class HospitalAdmissionDiagnosisSectionImpl extends SectionImpl implement
 	 */
 	public boolean validateHospitalAdmissionDiagnosisSectionTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalAdmissionDiagnosisSectionOperations.validateHospitalAdmissionDiagnosisSectionTitle(
-			this, diagnostics, context);
+		return HospitalAdmissionDiagnosisSectionOperations.validateHospitalAdmissionDiagnosisSectionTitle(this, diagnostics, context);
 	}
 
 	/**
@@ -86,8 +83,7 @@ public class HospitalAdmissionDiagnosisSectionImpl extends SectionImpl implement
 	 */
 	public boolean validateHospitalAdmissionDiagnosisSectionText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalAdmissionDiagnosisSectionOperations.validateHospitalAdmissionDiagnosisSectionText(
-			this, diagnostics, context);
+		return HospitalAdmissionDiagnosisSectionOperations.validateHospitalAdmissionDiagnosisSectionText(this, diagnostics, context);
 	}
 
 	/**
@@ -97,8 +93,7 @@ public class HospitalAdmissionDiagnosisSectionImpl extends SectionImpl implement
 	 */
 	public boolean validateHospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosis(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalAdmissionDiagnosisSectionOperations.validateHospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosis(
-			this, diagnostics, context);
+		return HospitalAdmissionDiagnosisSectionOperations.validateHospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosis(this, diagnostics, context);
 	}
 
 	/**
@@ -116,7 +111,7 @@ public class HospitalAdmissionDiagnosisSectionImpl extends SectionImpl implement
 	 * @generated
 	 */
 	public HospitalAdmissionDiagnosisSection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // HospitalAdmissionDiagnosisSectionImpl

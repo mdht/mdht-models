@@ -78,7 +78,7 @@ public class AssessmentSectionImpl extends SectionImpl implements AssessmentSect
 	 * @generated
 	 */
 	public AssessmentSection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // AssessmentSectionImpl

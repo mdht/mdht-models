@@ -53,8 +53,7 @@ public class ReferencedFramesObservationImpl extends ObservationImpl implements 
 	 */
 	public boolean validateReferencedFramesObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ReferencedFramesObservationOperations.validateReferencedFramesObservationTemplateId(
-			this, diagnostics, context);
+		return ReferencedFramesObservationOperations.validateReferencedFramesObservationTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -63,8 +62,7 @@ public class ReferencedFramesObservationImpl extends ObservationImpl implements 
 	 * @generated
 	 */
 	public boolean validateReferencedFramesObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ReferencedFramesObservationOperations.validateReferencedFramesObservationClassCode(
-			this, diagnostics, context);
+		return ReferencedFramesObservationOperations.validateReferencedFramesObservationClassCode(this, diagnostics, context);
 	}
 
 	/**
@@ -82,8 +80,7 @@ public class ReferencedFramesObservationImpl extends ObservationImpl implements 
 	 * @generated
 	 */
 	public boolean validateReferencedFramesObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ReferencedFramesObservationOperations.validateReferencedFramesObservationMoodCode(
-			this, diagnostics, context);
+		return ReferencedFramesObservationOperations.validateReferencedFramesObservationMoodCode(this, diagnostics, context);
 	}
 
 	/**
@@ -93,8 +90,7 @@ public class ReferencedFramesObservationImpl extends ObservationImpl implements 
 	 */
 	public boolean validateReferencedFramesObservationBoundaryObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ReferencedFramesObservationOperations.validateReferencedFramesObservationBoundaryObservation(
-			this, diagnostics, context);
+		return ReferencedFramesObservationOperations.validateReferencedFramesObservationBoundaryObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -112,7 +108,7 @@ public class ReferencedFramesObservationImpl extends ObservationImpl implements 
 	 * @generated
 	 */
 	public ReferencedFramesObservation init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // ReferencedFramesObservationImpl

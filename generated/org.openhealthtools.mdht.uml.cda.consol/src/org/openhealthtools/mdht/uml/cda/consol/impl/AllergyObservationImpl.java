@@ -56,8 +56,7 @@ public class AllergyObservationImpl extends ObservationImpl implements AllergyOb
 	 */
 	public boolean validateAllergyObservationAllergyStatusInversionIndicator(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AllergyObservationOperations.validateAllergyObservationAllergyStatusInversionIndicator(
-			this, diagnostics, context);
+		return AllergyObservationOperations.validateAllergyObservationAllergyStatusInversionIndicator(this, diagnostics, context);
 	}
 
 	/**
@@ -67,8 +66,7 @@ public class AllergyObservationImpl extends ObservationImpl implements AllergyOb
 	 */
 	public boolean validateAllergyObservationReactionInversionIndicator(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AllergyObservationOperations.validateAllergyObservationReactionInversionIndicator(
-			this, diagnostics, context);
+		return AllergyObservationOperations.validateAllergyObservationReactionInversionIndicator(this, diagnostics, context);
 	}
 
 	/**
@@ -78,8 +76,7 @@ public class AllergyObservationImpl extends ObservationImpl implements AllergyOb
 	 */
 	public boolean validateAllergyObservationSeverityInversionIndicator(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AllergyObservationOperations.validateAllergyObservationSeverityInversionIndicator(
-			this, diagnostics, context);
+		return AllergyObservationOperations.validateAllergyObservationSeverityInversionIndicator(this, diagnostics, context);
 	}
 
 	/**
@@ -161,8 +158,7 @@ public class AllergyObservationImpl extends ObservationImpl implements AllergyOb
 	 */
 	public boolean validateAllergyObservationProblemEntryReactionObservationContainer(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AllergyObservationOperations.validateAllergyObservationProblemEntryReactionObservationContainer(
-			this, diagnostics, context);
+		return AllergyObservationOperations.validateAllergyObservationProblemEntryReactionObservationContainer(this, diagnostics, context);
 	}
 
 	/**
@@ -181,8 +177,7 @@ public class AllergyObservationImpl extends ObservationImpl implements AllergyOb
 	 */
 	public boolean validateAllergyObservationAllergyStatusObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AllergyObservationOperations.validateAllergyObservationAllergyStatusObservation(
-			this, diagnostics, context);
+		return AllergyObservationOperations.validateAllergyObservationAllergyStatusObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -227,7 +222,7 @@ public class AllergyObservationImpl extends ObservationImpl implements AllergyOb
 	 * @generated
 	 */
 	public AllergyObservation init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // AllergyObservationImpl

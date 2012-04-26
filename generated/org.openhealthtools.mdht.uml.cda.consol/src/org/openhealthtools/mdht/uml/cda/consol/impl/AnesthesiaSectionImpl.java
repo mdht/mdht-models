@@ -91,8 +91,7 @@ public class AnesthesiaSectionImpl extends SectionImpl implements AnesthesiaSect
 	 */
 	public boolean validateAnesthesiaSectionProcedureActivityProcedure(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AnesthesiaSectionOperations.validateAnesthesiaSectionProcedureActivityProcedure(
-			this, diagnostics, context);
+		return AnesthesiaSectionOperations.validateAnesthesiaSectionProcedureActivityProcedure(this, diagnostics, context);
 	}
 
 	/**
@@ -128,7 +127,7 @@ public class AnesthesiaSectionImpl extends SectionImpl implements AnesthesiaSect
 	 * @generated
 	 */
 	public AnesthesiaSection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // AnesthesiaSectionImpl

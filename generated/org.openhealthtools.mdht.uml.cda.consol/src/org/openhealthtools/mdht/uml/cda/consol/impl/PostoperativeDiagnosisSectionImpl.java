@@ -52,8 +52,7 @@ public class PostoperativeDiagnosisSectionImpl extends SectionImpl implements Po
 	 */
 	public boolean validatePostoperativeDiagnosisSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PostoperativeDiagnosisSectionOperations.validatePostoperativeDiagnosisSectionTemplateId(
-			this, diagnostics, context);
+		return PostoperativeDiagnosisSectionOperations.validatePostoperativeDiagnosisSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -62,8 +61,7 @@ public class PostoperativeDiagnosisSectionImpl extends SectionImpl implements Po
 	 * @generated
 	 */
 	public boolean validatePostoperativeDiagnosisSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PostoperativeDiagnosisSectionOperations.validatePostoperativeDiagnosisSectionCode(
-			this, diagnostics, context);
+		return PostoperativeDiagnosisSectionOperations.validatePostoperativeDiagnosisSectionCode(this, diagnostics, context);
 	}
 
 	/**
@@ -72,8 +70,7 @@ public class PostoperativeDiagnosisSectionImpl extends SectionImpl implements Po
 	 * @generated
 	 */
 	public boolean validatePostoperativeDiagnosisSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PostoperativeDiagnosisSectionOperations.validatePostoperativeDiagnosisSectionText(
-			this, diagnostics, context);
+		return PostoperativeDiagnosisSectionOperations.validatePostoperativeDiagnosisSectionText(this, diagnostics, context);
 	}
 
 	/**
@@ -82,8 +79,7 @@ public class PostoperativeDiagnosisSectionImpl extends SectionImpl implements Po
 	 * @generated
 	 */
 	public boolean validatePostoperativeDiagnosisSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PostoperativeDiagnosisSectionOperations.validatePostoperativeDiagnosisSectionTitle(
-			this, diagnostics, context);
+		return PostoperativeDiagnosisSectionOperations.validatePostoperativeDiagnosisSectionTitle(this, diagnostics, context);
 	}
 
 	/**
@@ -92,7 +88,7 @@ public class PostoperativeDiagnosisSectionImpl extends SectionImpl implements Po
 	 * @generated
 	 */
 	public PostoperativeDiagnosisSection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // PostoperativeDiagnosisSectionImpl

@@ -110,7 +110,7 @@ public class AllergiesSectionImpl extends AllergiesSectionEntriesOptionalImpl im
 	 */
 	@Override
 	public AllergiesSection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // AllergiesSectionImpl

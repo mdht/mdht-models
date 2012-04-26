@@ -52,8 +52,7 @@ public class HospitalConsultationsSectionImpl extends SectionImpl implements Hos
 	 */
 	public boolean validateHospitalConsultationsSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalConsultationsSectionOperations.validateHospitalConsultationsSectionTemplateId(
-			this, diagnostics, context);
+		return HospitalConsultationsSectionOperations.validateHospitalConsultationsSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -62,8 +61,7 @@ public class HospitalConsultationsSectionImpl extends SectionImpl implements Hos
 	 * @generated
 	 */
 	public boolean validateHospitalConsultationsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HospitalConsultationsSectionOperations.validateHospitalConsultationsSectionCode(
-			this, diagnostics, context);
+		return HospitalConsultationsSectionOperations.validateHospitalConsultationsSectionCode(this, diagnostics, context);
 	}
 
 	/**
@@ -72,8 +70,7 @@ public class HospitalConsultationsSectionImpl extends SectionImpl implements Hos
 	 * @generated
 	 */
 	public boolean validateHospitalConsultationsSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HospitalConsultationsSectionOperations.validateHospitalConsultationsSectionText(
-			this, diagnostics, context);
+		return HospitalConsultationsSectionOperations.validateHospitalConsultationsSectionText(this, diagnostics, context);
 	}
 
 	/**
@@ -82,8 +79,7 @@ public class HospitalConsultationsSectionImpl extends SectionImpl implements Hos
 	 * @generated
 	 */
 	public boolean validateHospitalConsultationsSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HospitalConsultationsSectionOperations.validateHospitalConsultationsSectionTitle(
-			this, diagnostics, context);
+		return HospitalConsultationsSectionOperations.validateHospitalConsultationsSectionTitle(this, diagnostics, context);
 	}
 
 	/**
@@ -92,7 +88,7 @@ public class HospitalConsultationsSectionImpl extends SectionImpl implements Hos
 	 * @generated
 	 */
 	public HospitalConsultationsSection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // HospitalConsultationsSectionImpl

@@ -110,7 +110,7 @@ public class ResultsSectionImpl extends ResultsSectionEntriesOptionalImpl implem
 	 */
 	@Override
 	public ResultsSection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // ResultsSectionImpl

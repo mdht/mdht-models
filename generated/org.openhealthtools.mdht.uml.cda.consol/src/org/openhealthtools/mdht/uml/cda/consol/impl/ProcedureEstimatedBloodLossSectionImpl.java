@@ -52,8 +52,7 @@ public class ProcedureEstimatedBloodLossSectionImpl extends SectionImpl implemen
 	 */
 	public boolean validateProcedureEstimatedBloodLossSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureEstimatedBloodLossSectionOperations.validateProcedureEstimatedBloodLossSectionTemplateId(
-			this, diagnostics, context);
+		return ProcedureEstimatedBloodLossSectionOperations.validateProcedureEstimatedBloodLossSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -63,8 +62,7 @@ public class ProcedureEstimatedBloodLossSectionImpl extends SectionImpl implemen
 	 */
 	public boolean validateProcedureEstimatedBloodLossSectionCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureEstimatedBloodLossSectionOperations.validateProcedureEstimatedBloodLossSectionCode(
-			this, diagnostics, context);
+		return ProcedureEstimatedBloodLossSectionOperations.validateProcedureEstimatedBloodLossSectionCode(this, diagnostics, context);
 	}
 
 	/**
@@ -74,8 +72,7 @@ public class ProcedureEstimatedBloodLossSectionImpl extends SectionImpl implemen
 	 */
 	public boolean validateProcedureEstimatedBloodLossSectionText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureEstimatedBloodLossSectionOperations.validateProcedureEstimatedBloodLossSectionText(
-			this, diagnostics, context);
+		return ProcedureEstimatedBloodLossSectionOperations.validateProcedureEstimatedBloodLossSectionText(this, diagnostics, context);
 	}
 
 	/**
@@ -85,8 +82,7 @@ public class ProcedureEstimatedBloodLossSectionImpl extends SectionImpl implemen
 	 */
 	public boolean validateProcedureEstimatedBloodLossSectionTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureEstimatedBloodLossSectionOperations.validateProcedureEstimatedBloodLossSectionTitle(
-			this, diagnostics, context);
+		return ProcedureEstimatedBloodLossSectionOperations.validateProcedureEstimatedBloodLossSectionTitle(this, diagnostics, context);
 	}
 
 	/**
@@ -95,7 +91,7 @@ public class ProcedureEstimatedBloodLossSectionImpl extends SectionImpl implemen
 	 * @generated
 	 */
 	public ProcedureEstimatedBloodLossSection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // ProcedureEstimatedBloodLossSectionImpl

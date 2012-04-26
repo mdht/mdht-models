@@ -67,37 +67,39 @@ public interface GeneralHeaderConstraints extends ClinicalDocument {
 	 * <!-- begin-model-doc -->
 	 * datatypes::AD.allInstances()->reject(
 	 *     addr : datatypes::AD | 
-	 *     not addr.use->isEmpty() and
-	 *     addr.use->forAll(
-	 *         use : vocab::PostalAddressUse |
-	 *         use=vocab::PostalAddressUse::BAD or
-	 *         use=vocab::PostalAddressUse::DIR or
-	 *         use=vocab::PostalAddressUse::H or
-	 *         use=vocab::PostalAddressUse::HP or
-	 *         use=vocab::PostalAddressUse::HV or
-	 *         use=vocab::PostalAddressUse::PHYS or
-	 *         use=vocab::PostalAddressUse::PST or
-	 *         use=vocab::PostalAddressUse::PUB or
-	 *         use=vocab::PostalAddressUse::TMP or
-	 *         use=vocab::PostalAddressUse::WP
-	 *     ) and
-	 *     addr.streetAddressLine->size() >= 1 and
-	 *     addr.streetAddressLine->size() <= 4 and
-	 *     addr.city->size() = 1 and
-	 *     addr.country->size() <= 1 and
-	 *     (
-	 *         (
-	 *             addr.country->size() = 0 or
-	 *             (
-	 *                 addr.country->size() = 1 and addr.country->asSequence()->first().getText()='US'
-	 *             )
-	 *         ) implies addr.state->size() = 1 and addr.postalCode->size() = 1
-	 *     )
+	 *     addr.isNullFlavorDefined() or ( 
+	 * 		not addr.use->isEmpty() and
+	 * 		addr.use->forAll(
+	 * 			use : vocab::PostalAddressUse |
+	 * 			use=vocab::PostalAddressUse::BAD or
+	 * 			use=vocab::PostalAddressUse::DIR or
+	 * 			use=vocab::PostalAddressUse::H or
+	 * 			use=vocab::PostalAddressUse::HP or
+	 * 			use=vocab::PostalAddressUse::HV or
+	 * 			use=vocab::PostalAddressUse::PHYS or
+	 * 			use=vocab::PostalAddressUse::PST or
+	 * 			use=vocab::PostalAddressUse::PUB or
+	 * 			use=vocab::PostalAddressUse::TMP or
+	 * 			use=vocab::PostalAddressUse::WP
+	 * 		) and
+	 * 		addr.streetAddressLine->size() >= 1 and
+	 * 		addr.streetAddressLine->size() <= 4 and
+	 * 		addr.city->size() = 1 and
+	 * 		addr.country->size() <= 1 and
+	 * 		(
+	 * 			(
+	 * 				addr.country->size() = 0 or
+	 * 				(
+	 * 					addr.country->size() = 1 and addr.country->asSequence()->first().getText()='US'
+	 * 				)
+	 * 			) implies addr.state->size() = 1 and addr.postalCode->size() = 1
+	 * 		)
+	 * 	)
 	 * )
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='datatypes::AD.allInstances()->reject(\r\n    addr : datatypes::AD | \r\n    not addr.use->isEmpty() and\r\n    addr.use->forAll(\r\n        use : vocab::PostalAddressUse |\r\n        use=vocab::PostalAddressUse::BAD or\r\n        use=vocab::PostalAddressUse::DIR or\r\n        use=vocab::PostalAddressUse::H or\r\n        use=vocab::PostalAddressUse::HP or\r\n        use=vocab::PostalAddressUse::HV or\r\n        use=vocab::PostalAddressUse::PHYS or\r\n        use=vocab::PostalAddressUse::PST or\r\n        use=vocab::PostalAddressUse::PUB or\r\n        use=vocab::PostalAddressUse::TMP or\r\n        use=vocab::PostalAddressUse::WP\r\n    ) and\r\n    addr.streetAddressLine->size() >= 1 and\r\n    addr.streetAddressLine->size() <= 4 and\r\n    addr.city->size() = 1 and\r\n    addr.country->size() <= 1 and\r\n    (\r\n        (\r\n            addr.country->size() = 0 or\r\n            (\r\n                addr.country->size() = 1 and addr.country->asSequence()->first().getText()=\'US\'\r\n            )\r\n        ) implies addr.state->size() = 1 and addr.postalCode->size() = 1\r\n    )\r\n)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='datatypes::AD.allInstances()->reject(\r\n    addr : datatypes::AD | \r\n    addr.isNullFlavorDefined() or ( \r\n\t\tnot addr.use->isEmpty() and\r\n\t\taddr.use->forAll(\r\n\t\t\tuse : vocab::PostalAddressUse |\r\n\t\t\tuse=vocab::PostalAddressUse::BAD or\r\n\t\t\tuse=vocab::PostalAddressUse::DIR or\r\n\t\t\tuse=vocab::PostalAddressUse::H or\r\n\t\t\tuse=vocab::PostalAddressUse::HP or\r\n\t\t\tuse=vocab::PostalAddressUse::HV or\r\n\t\t\tuse=vocab::PostalAddressUse::PHYS or\r\n\t\t\tuse=vocab::PostalAddressUse::PST or\r\n\t\t\tuse=vocab::PostalAddressUse::PUB or\r\n\t\t\tuse=vocab::PostalAddressUse::TMP or\r\n\t\t\tuse=vocab::PostalAddressUse::WP\r\n\t\t) and\r\n\t\taddr.streetAddressLine->size() >= 1 and\r\n\t\taddr.streetAddressLine->size() <= 4 and\r\n\t\taddr.city->size() = 1 and\r\n\t\taddr.country->size() <= 1 and\r\n\t\t(\r\n\t\t\t(\r\n\t\t\t\taddr.country->size() = 0 or\r\n\t\t\t\t(\r\n\t\t\t\t\taddr.country->size() = 1 and addr.country->asSequence()->first().getText()=\'US\'\r\n\t\t\t\t)\r\n\t\t\t) implies addr.state->size() = 1 and addr.postalCode->size() = 1\r\n\t\t)\r\n\t)\r\n)'"
 	 * @generated
 	 */
 	boolean validateGeneralHeaderConstraintsUSRealmAddress(DiagnosticChain diagnostics, Map<Object, Object> context);

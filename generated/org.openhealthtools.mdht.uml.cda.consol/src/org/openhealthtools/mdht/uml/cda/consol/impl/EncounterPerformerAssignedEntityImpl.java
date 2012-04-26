@@ -52,8 +52,7 @@ public class EncounterPerformerAssignedEntityImpl extends AssignedEntityImpl imp
 	 * @generated
 	 */
 	public boolean validateEncounterPerformerAssignedEntityCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EncounterPerformerAssignedEntityOperations.validateEncounterPerformerAssignedEntityCode(
-			this, diagnostics, context);
+		return EncounterPerformerAssignedEntityOperations.validateEncounterPerformerAssignedEntityCode(this, diagnostics, context);
 	}
 
 	/**
@@ -62,7 +61,7 @@ public class EncounterPerformerAssignedEntityImpl extends AssignedEntityImpl imp
 	 * @generated
 	 */
 	public EncounterPerformerAssignedEntity init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // EncounterPerformerAssignedEntityImpl
