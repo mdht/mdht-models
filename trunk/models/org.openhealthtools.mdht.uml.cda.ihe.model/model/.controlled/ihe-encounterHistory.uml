@@ -47,8 +47,8 @@
         <body>Developers should take care to check that rational combinations of encounter.code and encounter.moodCode are used , but this profile does not restrict any combination.</body>
       </ownedComment>
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IhgnUasXEd-yFfcbpgNFIA" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IhgnUqsXEd-yFfcbpgNFIA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_o72YMI8sEeGTVKpNUxVE1Q" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_o72YMY8sEeGTVKpNUxVE1Q" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_F_EFwEo0Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_IhgnU6sXEd-yFfcbpgNFIA" name="id" visibility="private" aggregation="composite">
@@ -75,7 +75,7 @@
   <CDA:AssociationValidation xmi:id="_GTAMkKsQEd-yFfcbpgNFIA" base_Association="_6bQigKsPEd-yFfcbpgNFIA"/>
   <CDA:PropertyValidation xmi:id="_tfJ0QKsWEd-yFfcbpgNFIA" base_Property="_qx6x8KsWEd-yFfcbpgNFIA"/>
   <CDA:PropertyValidation xmi:id="_KJuiUKsXEd-yFfcbpgNFIA" base_Property="_IhgnU6sXEd-yFfcbpgNFIA"/>
-  <CDA:PropertyValidation xmi:id="_Xa1zEKsXEd-yFfcbpgNFIA" severity="WARNING" base_Property="_IhgnUKsXEd-yFfcbpgNFIA"/>
-  <CDA:CodeSystemConstraint xmi:id="_i76CgKsXEd-yFfcbpgNFIA" identifier="2.16.840.1.113883.5.4" name="ActEncounterCode" base_Property="_IhgnUKsXEd-yFfcbpgNFIA"/>
+  <CDA:PropertyValidation xmi:id="_Xa1zEKsXEd-yFfcbpgNFIA" base_Property="_IhgnUKsXEd-yFfcbpgNFIA"/>
+  <CDA:CodeSystemConstraint xmi:id="_i76CgKsXEd-yFfcbpgNFIA" identifier="2.16.840.1.113883.5.4" name="ActEncounterCode" base_Property="_IhgnUKsXEd-yFfcbpgNFIA" severity="WARNING"/>
   <CDA:TextValue xmi:id="_1EmGMKsXEd-yFfcbpgNFIA" base_Property="_zhWKwKsXEd-yFfcbpgNFIA"/>
 </xmi:XMI>

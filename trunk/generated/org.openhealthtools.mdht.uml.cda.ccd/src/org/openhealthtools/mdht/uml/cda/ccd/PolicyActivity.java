@@ -24,7 +24,7 @@ import org.openhealthtools.mdht.uml.cda.ParticipantRole;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ccd.CCDPackage#getPolicyActivity()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PolicyActivityTemplateId PolicyActivityPayerEntityIsRequired PolicyActivityCoveredPartyIsRequired PolicyActivityEntryRelationshipREFR PolicyActivityEntryRelationshipTarget PolicyActivityClassCode PolicyActivityMoodCode PolicyActivityId PolicyActivityStatusCode PolicyActivityPayerEntity PolicyActivityCoveredParty' templateId.root='2.16.840.1.113883.10.20.1.26' constraints.validation.info='PolicyActivityCoveredPartyTime PolicyActivitySubscriberIsAllowed PolicyActivitySubscriberTime PolicyActivitySubscriber' classCode='ACT' moodCode='EVN' statusCode.code='completed'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation moodCode='EVN' classCode='ACT' constraints.validation.info='PolicyActivityCoveredPartyTime PolicyActivitySubscriberIsAllowed PolicyActivitySubscriberTime PolicyActivitySubscriber' templateId.root='2.16.840.1.113883.10.20.1.26' constraints.validation.error='PolicyActivityTemplateId PolicyActivityPayerEntityIsRequired PolicyActivityCoveredPartyIsRequired PolicyActivityEntryRelationshipREFR PolicyActivityEntryRelationshipTarget PolicyActivityClassCode PolicyActivityMoodCode PolicyActivityId PolicyActivityStatusCode PolicyActivityPayerEntity PolicyActivityCoveredParty' statusCode.code='completed'"
  * @generated
  */
 public interface PolicyActivity extends Act {

@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage#getMedicationType()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MedicationTypeTemplateId MedicationTypeCode' templateId.root='2.16.840.1.113883.3.88.11.83.8.1' code.codeSystemName='SNOMEDCT' code.codeSystem='2.16.840.1.113883.6.96'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystemName='SNOMEDCT' templateId.root='2.16.840.1.113883.3.88.11.83.8.1' constraints.validation.error='MedicationTypeTemplateId MedicationTypeCode' code.codeSystem='2.16.840.1.113883.6.96'"
  * @generated
  */
 public interface MedicationType extends Observation {

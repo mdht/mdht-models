@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.ihe.PatientContactGuardian;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage#getSupportGuardian()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='HITSPSupportGuardianTemplateId' templateId.root='2.16.840.1.113883.3.88.11.83.3'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.3.88.11.83.3' constraints.validation.error='HITSPSupportGuardianTemplateId'"
  * @generated
  */
 public interface SupportGuardian extends PatientContactGuardian, Support {

@@ -29,7 +29,7 @@ import org.openhealthtools.mdht.uml.cda.cdt.PastMedicalHistorySection;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage#getHistoryOfPastIllnessSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='HITSPHistoryOfPastIllnessSectionTemplateId HITSPHistoryOfPastIllnessSectionCondition' templateId.root='2.16.840.1.113883.3.88.11.83.104'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.3.88.11.83.104' constraints.validation.error='HITSPHistoryOfPastIllnessSectionTemplateId HITSPHistoryOfPastIllnessSectionCondition'"
  * @generated
  */
 public interface HistoryOfPastIllnessSection extends org.openhealthtools.mdht.uml.cda.ihe.HistoryOfPastIllnessSection,

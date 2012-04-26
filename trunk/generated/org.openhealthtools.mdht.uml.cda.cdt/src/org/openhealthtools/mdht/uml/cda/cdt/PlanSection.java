@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.cdt.CDTPackage#getPlanSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PlanSectionTemplateId PlanSectionCode' contextDependent='true' templateId.root='2.16.840.1.113883.10.20.2.7' code.codeSystemName='LOINC' code.displayName='Plan' code.codeSystem='2.16.840.1.113883.6.1' code.code='18776-5'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation contextDependent='true' code.codeSystemName='LOINC' templateId.root='2.16.840.1.113883.10.20.2.7' constraints.validation.error='PlanSectionTemplateId PlanSectionCode' code.displayName='Plan' code.codeSystem='2.16.840.1.113883.6.1' code.code='18776-5'"
  * @generated
  */
 public interface PlanSection extends Section {

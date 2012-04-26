@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.cdt.CDTPackage#getGeneralStatusSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='GeneralStatusSectionTemplateId GeneralStatusSectionCode' templateId.root='2.16.840.1.113883.10.20.2.5' code.codeSystemName='LOINC' code.displayName='GENERAL STATUS, PHYSICAL FINDINGS' code.codeSystem='2.16.840.1.113883.6.1' code.code='10210-3'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystemName='LOINC' templateId.root='2.16.840.1.113883.10.20.2.5' constraints.validation.error='GeneralStatusSectionTemplateId GeneralStatusSectionCode' code.displayName='GENERAL STATUS, PHYSICAL FINDINGS' code.codeSystem='2.16.840.1.113883.6.1' code.code='10210-3'"
  * @generated
  */
 public interface GeneralStatusSection extends Section {

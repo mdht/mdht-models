@@ -26,7 +26,7 @@ import org.eclipse.emf.common.util.EList;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ihe.IHEPackage#getAllergyIntoleranceConcern()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AllergyIntoleranceConcernTemplateId AllergyIntoleranceConcernAllergyIntolerance' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.5.3'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.5.3' constraints.validation.error='AllergyIntoleranceConcernTemplateId AllergyIntoleranceConcernAllergyIntolerance'"
  *        annotation="uml2.alias Allergy\040and\040Intolerance\040Concern='null'"
  * @generated
  */

@@ -1509,7 +1509,7 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 		if (GET_MEDICATION_TYPE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				HITSPPackage.Literals.MEDICATION, HITSPPackage.Literals.MEDICATION.getEAllOperations().get(125));
+				HITSPPackage.Literals.MEDICATION, HITSPPackage.Literals.MEDICATION.getEAllOperations().get(124));
 			try {
 				GET_MEDICATION_TYPE__EOCL_QRY = helper.createQuery(GET_MEDICATION_TYPE__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1553,7 +1553,7 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 		if (GET_MEDICATION_ORDER_INFORMATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				HITSPPackage.Literals.MEDICATION, HITSPPackage.Literals.MEDICATION.getEAllOperations().get(126));
+				HITSPPackage.Literals.MEDICATION, HITSPPackage.Literals.MEDICATION.getEAllOperations().get(125));
 			try {
 				GET_MEDICATION_ORDER_INFORMATIONS__EOCL_QRY = helper.createQuery(GET_MEDICATION_ORDER_INFORMATIONS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1599,7 +1599,7 @@ public class MedicationOperations extends org.openhealthtools.mdht.uml.cda.ihe.o
 		if (GET_HITSP_REACTION_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				HITSPPackage.Literals.MEDICATION, HITSPPackage.Literals.MEDICATION.getEAllOperations().get(127));
+				HITSPPackage.Literals.MEDICATION, HITSPPackage.Literals.MEDICATION.getEAllOperations().get(126));
 			try {
 				GET_HITSP_REACTION_OBSERVATION__EOCL_QRY = helper.createQuery(GET_HITSP_REACTION_OBSERVATION__EOCL_EXP);
 			} catch (ParserException pe) {

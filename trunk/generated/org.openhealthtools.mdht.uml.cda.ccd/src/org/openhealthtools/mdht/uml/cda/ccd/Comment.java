@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.Act;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ccd.CCDPackage#getComment()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='CommentTemplateId CommentClassCode CommentMoodCode CommentCode' templateId.root='2.16.840.1.113883.10.20.1.40' classCode='ACT' moodCode='EVN' code.codeSystemName='LOINC' code.displayName='Annotation comment' code.codeSystem='2.16.840.1.113883.6.1' code.code='48767-8'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation moodCode='EVN' classCode='ACT' code.codeSystemName='LOINC' templateId.root='2.16.840.1.113883.10.20.1.40' constraints.validation.error='CommentTemplateId CommentClassCode CommentMoodCode CommentCode' code.displayName='Annotation comment' code.codeSystem='2.16.840.1.113883.6.1' code.code='48767-8'"
  * @generated
  */
 public interface Comment extends Act {

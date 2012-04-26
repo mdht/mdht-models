@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.cdt.CDTPackage#getPastMedicalHistorySection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PastMedicalHistorySectionTemplateId PastMedicalHistorySectionCode PastMedicalHistorySectionText' templateId.root='2.16.840.1.113883.10.20.2.9' constraints.validation.warning='PastMedicalHistorySectionHasClinicalStatements' code.codeSystemName='LOINC' code.displayName='HISTORY OF PAST ILLNESS' code.codeSystem='2.16.840.1.113883.6.1' code.code='11348-0'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystemName='LOINC' templateId.root='2.16.840.1.113883.10.20.2.9' constraints.validation.error='PastMedicalHistorySectionTemplateId PastMedicalHistorySectionCode PastMedicalHistorySectionText' code.displayName='HISTORY OF PAST ILLNESS' code.codeSystem='2.16.840.1.113883.6.1' code.code='11348-0' constraints.validation.warning='PastMedicalHistorySectionHasClinicalStatements'"
  * @generated
  */
 public interface PastMedicalHistorySection extends Section {

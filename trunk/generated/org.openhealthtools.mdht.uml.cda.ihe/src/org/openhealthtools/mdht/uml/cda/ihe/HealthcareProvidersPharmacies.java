@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.Performer1;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ihe.IHEPackage#getHealthcareProvidersPharmacies()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='HealthcareProvidersPharmaciesTemplateId' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.2.3'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='1.3.6.1.4.1.19376.1.5.3.1.2.3' constraints.validation.error='HealthcareProvidersPharmaciesTemplateId'"
  * @generated
  */
 public interface HealthcareProvidersPharmacies extends Performer1 {

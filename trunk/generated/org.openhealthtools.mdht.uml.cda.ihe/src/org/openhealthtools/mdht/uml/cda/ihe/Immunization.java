@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.ccd.MedicationActivity;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ihe.IHEPackage#getImmunization()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ImmunizationTemplateId ImmunizationComments ImmunizationCode ImmunizationStatusCode ImmunizationMoodCode ImmunizationEffectiveTime' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.12' code.codeSystemName='HL7ActCode' code.codeSystem='2.16.840.1.113883.5.4' code.code='IMMUNIZ' moodCode='EVN'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation moodCode='EVN' code.codeSystemName='HL7ActCode' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.12' constraints.validation.error='ImmunizationTemplateId ImmunizationComments ImmunizationCode ImmunizationStatusCode ImmunizationMoodCode ImmunizationEffectiveTime' code.codeSystem='2.16.840.1.113883.5.4' code.code='IMMUNIZ'"
  * @generated
  */
 public interface Immunization extends MedicationActivity {

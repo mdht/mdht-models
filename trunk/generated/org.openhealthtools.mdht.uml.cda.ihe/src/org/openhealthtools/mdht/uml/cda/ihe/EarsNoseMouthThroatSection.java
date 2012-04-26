@@ -18,7 +18,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ihe.IHEPackage#getEarsNoseMouthThroatSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='EarsNoseMouthThroatSectionTemplateId EarsNoseMouthThroatSectionCode' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.1.9.20' code.codeSystemName='LOINC' code.displayName='EARS and NOSE and MOUTH and THROAT' code.codeSystem='2.16.840.1.113883.6.1' code.code='11393-6' constraints.validation.info='EarsNoseMouthThroatSectionProblemEntry'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystemName='LOINC' constraints.validation.info='EarsNoseMouthThroatSectionProblemEntry' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.1.9.20' constraints.validation.error='EarsNoseMouthThroatSectionTemplateId EarsNoseMouthThroatSectionCode' code.displayName='EARS and NOSE and MOUTH and THROAT' code.codeSystem='2.16.840.1.113883.6.1' code.code='11393-6'"
  * @generated
  */
 public interface EarsNoseMouthThroatSection extends Section {

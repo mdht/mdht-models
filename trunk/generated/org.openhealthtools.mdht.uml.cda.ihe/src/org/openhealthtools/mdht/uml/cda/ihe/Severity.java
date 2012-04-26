@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.ccd.SeverityObservation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ihe.IHEPackage#getSeverity()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SeverityTemplateId SeverityHasTextReference SeverityText SeverityObservationValue SeverityValue' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.1' value.codeSystemName='SeverityObservation' value.codeSystem='2.16.840.1.113883.5.1063'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation value.codeSystemName='SeverityObservation' value.codeSystem='2.16.840.1.113883.5.1063' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.1' constraints.validation.error='SeverityTemplateId SeverityHasTextReference SeverityText SeverityObservationValue'"
  * @generated
  */
 public interface Severity extends SeverityObservation {
@@ -64,19 +64,6 @@ public interface Severity extends SeverityObservation {
 	 * @generated
 	 */
 	boolean validateSeverityText(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * (self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))'"
-	 * @generated
-	 */
-	boolean validateSeverityValue(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

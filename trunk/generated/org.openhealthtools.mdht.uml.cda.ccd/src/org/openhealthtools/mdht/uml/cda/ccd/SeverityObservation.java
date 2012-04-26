@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ccd.CCDPackage#getSeverityObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SeverityObservationTemplateId SeverityObservationClassCode SeverityObservationMoodCode SeverityObservationCode SeverityObservationStatusCode SeverityObservationValue' templateId.root='2.16.840.1.113883.10.20.1.55' classCode='OBS' moodCode='EVN' code.codeSystemName='HL7ActCode' code.displayName='Severity observation' code.codeSystem='2.16.840.1.113883.5.4' code.code='SEV' statusCode.code='completed'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation moodCode='EVN' classCode='OBS' code.codeSystemName='HL7ActCode' templateId.root='2.16.840.1.113883.10.20.1.55' constraints.validation.error='SeverityObservationTemplateId SeverityObservationClassCode SeverityObservationMoodCode SeverityObservationCode SeverityObservationStatusCode SeverityObservationValue' statusCode.code='completed' code.displayName='Severity observation' code.codeSystem='2.16.840.1.113883.5.4' code.code='SEV'"
  * @generated
  */
 public interface SeverityObservation extends Observation {

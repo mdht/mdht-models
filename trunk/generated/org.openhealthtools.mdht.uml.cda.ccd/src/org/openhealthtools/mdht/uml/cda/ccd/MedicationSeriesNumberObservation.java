@@ -29,7 +29,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ccd.CCDPackage#getMedicationSeriesNumberObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MedicationSeriesNumberObservationTemplateId MedicationSeriesNumberObservationClassCode MedicationSeriesNumberObservationMoodCode MedicationSeriesNumberObservationStatusCode MedicationSeriesNumberObservationCode MedicationSeriesNumberObservationValue' templateId.root='2.16.840.1.113883.10.20.1.46' classCode='OBS' moodCode='EVN' code.codeSystemName='LOINC' code.displayName='Dose number' code.codeSystem='2.16.840.1.113883.6.1' code.code='30973-2'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation moodCode='EVN' classCode='OBS' code.codeSystemName='LOINC' templateId.root='2.16.840.1.113883.10.20.1.46' constraints.validation.error='MedicationSeriesNumberObservationTemplateId MedicationSeriesNumberObservationClassCode MedicationSeriesNumberObservationMoodCode MedicationSeriesNumberObservationStatusCode MedicationSeriesNumberObservationCode MedicationSeriesNumberObservationValue' code.displayName='Dose number' code.codeSystem='2.16.840.1.113883.6.1' code.code='30973-2'"
  * @generated
  */
 public interface MedicationSeriesNumberObservation extends Observation {

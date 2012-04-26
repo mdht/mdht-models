@@ -18,7 +18,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ihe.IHEPackage#getHeartSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='HeartSectionTemplateId HeartSectionCode' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.1.9.29' code.codeSystemName='LOINC' code.displayName='HEART' code.codeSystem='2.16.840.1.113883.6.1' code.code='10200-4' constraints.validation.info='HeartSectionProblemEntry'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystemName='LOINC' constraints.validation.info='HeartSectionProblemEntry' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.1.9.29' constraints.validation.error='HeartSectionTemplateId HeartSectionCode' code.displayName='HEART' code.codeSystem='2.16.840.1.113883.6.1' code.code='10200-4'"
  * @generated
  */
 public interface HeartSection extends Section {

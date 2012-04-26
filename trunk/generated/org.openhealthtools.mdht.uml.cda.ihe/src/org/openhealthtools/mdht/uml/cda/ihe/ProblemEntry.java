@@ -23,7 +23,7 @@ import org.openhealthtools.mdht.uml.cda.ccd.ProblemObservation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ihe.IHEPackage#getProblemEntry()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProblemEntryTemplateId ProblemEntryHasTextReference ProblemEntryCommentInversionInd ProblemObservationCode ProblemEntryId ProblemEntryText ProblemEntryValue' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.5' code.codeSystemName='SNOMEDCT' code.codeSystem='2.16.840.1.113883.6.96' constraints.validation.warning='ProblemEntryCode ProblemEntryEffectiveTime' constraints.validation.dependOn.ProblemObservationCode='ProblemEntryCode' constraints.validation.info='ProblemEntrySeverity ProblemEntryProblemStatusObservation ProblemEntryHealthStatusObservation ProblemEntryComment'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.dependOn.ProblemEntryCode='ProblemEntryCodeP' constraints.validation.info='ProblemEntryCode ProblemEntrySeverity ProblemEntryProblemStatusObservation ProblemEntryHealthStatusObservation ProblemEntryComment' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.5' constraints.validation.error='ProblemEntryTemplateId ProblemEntryHasTextReference ProblemEntryCommentInversionInd ProblemEntryId ProblemEntryText ProblemEntryValue' constraints.validation.warning='ProblemEntryCodeP ProblemEntryEffectiveTime'"
  * @generated
  */
 public interface ProblemEntry extends ProblemObservation {
@@ -77,7 +77,7 @@ public interface ProblemEntry extends ProblemObservation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())'"
 	 * @generated
 	 */
-	boolean validateProblemEntryCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateProblemEntryCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -85,14 +85,14 @@ public interface ProblemEntry extends ProblemObservation {
 	 * <!-- begin-model-doc -->
 	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
 	 * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
-	 * value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '404684003' or value.code = '409586006' or value.code = '282291009' or value.code = '64572001' or value.code = '248536006' or value.code = '418799008' or value.code = '55607006'))
+	 * not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined())
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.96\' and (value.code = \'404684003\' or value.code = \'409586006\' or value.code = \'282291009\' or value.code = \'64572001\' or value.code = \'248536006\' or value.code = \'418799008\' or value.code = \'55607006\'))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \r\nnot value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined())'"
 	 * @generated
 	 */
-	boolean validateProblemObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateProblemEntryCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

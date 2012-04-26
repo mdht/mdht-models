@@ -29,7 +29,7 @@ import org.openhealthtools.mdht.uml.cda.SubstanceAdministration;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ccd.CCDPackage#getMedicationActivity()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MedicationActivityTemplateId MedicationActivityMoodCode MedicationActivityInformationSource MedicationActivityHasReasonProblem MedicationActivityHasProduct MedicationActivityId MedicationActivityRouteCode' templateId.root='2.16.840.1.113883.10.20.1.24' constraints.validation.warning='MedicationActivityHasDoseQuantityOrRateQuantity MedicationActivityStatusCode MedicationActivityEffectiveTime MedicationActivityRouteCodeP MedicationActivityDoseQuantity MedicationActivityRateQuantity' constraints.validation.info='MedicationActivityHasConsents MedicationActivityHasPreconditionCriterion MedicationActivityHasReason MedicationActivityMaxDoseQuantity MedicationActivityMedicationSeriesNumberObservation MedicationActivityMedicationStatusObservation MedicationActivityPatientInstruction MedicationActivityPerformer MedicationActivityReactionObservation MedicationActivityProductInstance' routeCode.codeSystem='2.16.840.1.113883.5.112' routeCode.codeSystemName='HL7 RouteOfAdministration'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation routeCode.codeSystem='2.16.840.1.113883.5.112' constraints.validation.info='MedicationActivityHasConsents MedicationActivityHasPreconditionCriterion MedicationActivityHasReason MedicationActivityMaxDoseQuantity MedicationActivityMedicationSeriesNumberObservation MedicationActivityMedicationStatusObservation MedicationActivityPatientInstruction MedicationActivityPerformer MedicationActivityReactionObservation MedicationActivityProductInstance' templateId.root='2.16.840.1.113883.10.20.1.24' constraints.validation.error='MedicationActivityTemplateId MedicationActivityMoodCode MedicationActivityInformationSource MedicationActivityHasReasonProblem MedicationActivityHasProduct MedicationActivityId' routeCode.codeSystemName='HL7 RouteOfAdministration' constraints.validation.warning='MedicationActivityHasDoseQuantityOrRateQuantity MedicationActivityStatusCode MedicationActivityEffectiveTime MedicationActivityRouteCode MedicationActivityDoseQuantity MedicationActivityRateQuantity'"
  * @generated
  */
 public interface MedicationActivity extends SubstanceAdministration {
@@ -226,19 +226,6 @@ public interface MedicationActivity extends SubstanceAdministration {
 	 * @generated
 	 */
 	boolean validateMedicationActivityRouteCode(DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * (self.routeCode.oclIsUndefined() or self.routeCode.isNullFlavorUndefined()) implies (not self.routeCode.oclIsUndefined())
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.routeCode.oclIsUndefined() or self.routeCode.isNullFlavorUndefined()) implies (not self.routeCode.oclIsUndefined())'"
-	 * @generated
-	 */
-	boolean validateMedicationActivityRouteCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

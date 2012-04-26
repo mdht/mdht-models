@@ -32,7 +32,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ccd.CCDPackage#getMedicalEquipmentSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MedicalEquipmentSectionTemplateId MedicalEquipmentSectionCode MedicalEquipmentSectionTitle MedicalEquipmentSectionText' templateId.root='2.16.840.1.113883.10.20.1.7' code.codeSystemName='LOINC' code.displayName='History of medical device use' code.codeSystem='2.16.840.1.113883.6.1' code.code='46264-8' constraints.validation.warning='MedicalEquipmentSectionSupplyActivity' constraints.validation.info='MedicalEquipmentSectionMedicationActivity'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystemName='LOINC' constraints.validation.info='MedicalEquipmentSectionMedicationActivity' templateId.root='2.16.840.1.113883.10.20.1.7' constraints.validation.error='MedicalEquipmentSectionTemplateId MedicalEquipmentSectionCode MedicalEquipmentSectionTitle MedicalEquipmentSectionText' code.displayName='History of medical device use' code.codeSystem='2.16.840.1.113883.6.1' code.code='46264-8' constraints.validation.warning='MedicalEquipmentSectionSupplyActivity'"
  * @generated
  */
 public interface MedicalEquipmentSection extends Section {

@@ -18,7 +18,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ihe.IHEPackage#getRectumSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='RectumSectionTemplateId RectumSectionCode' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.1.9.37' code.codeSystemName='LOINC' code.displayName='RECTUM' code.codeSystem='2.16.840.1.113883.6.1' code.code='10205-3' constraints.validation.info='RectumSectionProblemEntry'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystemName='LOINC' constraints.validation.info='RectumSectionProblemEntry' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.1.9.37' constraints.validation.error='RectumSectionTemplateId RectumSectionCode' code.displayName='RECTUM' code.codeSystem='2.16.840.1.113883.6.1' code.code='10205-3'"
  * @generated
  */
 public interface RectumSection extends Section {

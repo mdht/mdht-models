@@ -18,7 +18,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.cdt.CDTPackage#getHospitalDischargeStudiesSummarySection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='HospitalDischargeStudiesSummarySectionTemplateId HospitalDischargeStudiesSummarySectionCode HospitalDischargeStudiesSummarySectionTitle' templateId.root='2.16.840.1.113883.10.20.16.2.3' code.codeSystemName='LOINC' code.displayName='Hospital Discharge Studies Summary' code.codeSystem='2.16.840.1.113883.6.1' code.code='11493-4' title.mixed='HOSPITAL DISCHARGE STUDIES SUMMARY'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation title.mixed='HOSPITAL DISCHARGE STUDIES SUMMARY' code.codeSystemName='LOINC' templateId.root='2.16.840.1.113883.10.20.16.2.3' constraints.validation.error='HospitalDischargeStudiesSummarySectionTemplateId HospitalDischargeStudiesSummarySectionCode HospitalDischargeStudiesSummarySectionTitle' code.displayName='Hospital Discharge Studies Summary' code.codeSystem='2.16.840.1.113883.6.1' code.code='11493-4'"
  * @generated
  */
 public interface HospitalDischargeStudiesSummarySection extends Section {

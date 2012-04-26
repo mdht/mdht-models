@@ -21,7 +21,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ihe.IHEPackage#getComment()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='IHECommentTemplateId IHECommentHasTextReference IHECommentEffectiveTimeWhenAuthorPresent IHECommentHasAuthorId IHECommentHasAuthorOrganization IHECommentStatusCode IHECommentText' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.2' statusCode.code='completed' constraints.validation.info='IHECommentAuthor'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.info='IHECommentAuthor' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.2' constraints.validation.error='IHECommentTemplateId IHECommentHasTextReference IHECommentEffectiveTimeWhenAuthorPresent IHECommentHasAuthorId IHECommentHasAuthorOrganization IHECommentStatusCode IHECommentText' statusCode.code='completed'"
  * @generated
  */
 public interface Comment extends org.openhealthtools.mdht.uml.cda.ccd.Comment {

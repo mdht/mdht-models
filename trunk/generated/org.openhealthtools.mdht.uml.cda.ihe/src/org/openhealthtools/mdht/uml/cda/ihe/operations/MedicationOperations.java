@@ -1146,7 +1146,7 @@ public class MedicationOperations extends MedicationActivityOperations {
 		if (GET_INTERNAL_REFERENCES__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				IHEPackage.Literals.MEDICATION, IHEPackage.Literals.MEDICATION.getEAllOperations().get(98));
+				IHEPackage.Literals.MEDICATION, IHEPackage.Literals.MEDICATION.getEAllOperations().get(97));
 			try {
 				GET_INTERNAL_REFERENCES__EOCL_QRY = helper.createQuery(GET_INTERNAL_REFERENCES__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1192,7 +1192,7 @@ public class MedicationOperations extends MedicationActivityOperations {
 		if (GET_PATIENT_MEDICAL_INSTRUCTIONSS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				IHEPackage.Literals.MEDICATION, IHEPackage.Literals.MEDICATION.getEAllOperations().get(99));
+				IHEPackage.Literals.MEDICATION, IHEPackage.Literals.MEDICATION.getEAllOperations().get(98));
 			try {
 				GET_PATIENT_MEDICAL_INSTRUCTIONSS__EOCL_QRY = helper.createQuery(GET_PATIENT_MEDICAL_INSTRUCTIONSS__EOCL_EXP);
 			} catch (ParserException pe) {
@@ -1238,7 +1238,7 @@ public class MedicationOperations extends MedicationActivityOperations {
 		if (GET_SUPPLY_ENTRY__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setOperationContext(
-				IHEPackage.Literals.MEDICATION, IHEPackage.Literals.MEDICATION.getEAllOperations().get(100));
+				IHEPackage.Literals.MEDICATION, IHEPackage.Literals.MEDICATION.getEAllOperations().get(99));
 			try {
 				GET_SUPPLY_ENTRY__EOCL_QRY = helper.createQuery(GET_SUPPLY_ENTRY__EOCL_EXP);
 			} catch (ParserException pe) {

@@ -49,7 +49,7 @@ import org.openhealthtools.mdht.uml.cda.ihe.operations.ProblemEntryOperations;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.hitsp.ConditionEntry#getHITSPAgeObservation() <em>Get HITSP Age Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.hitsp.ConditionEntry#getHITSPProblemStatusObservation() <em>Get HITSP Problem Status Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.hitsp.ConditionEntry#getCauseOfDeathObservation() <em>Get Cause Of Death Observation</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.hitsp.ConditionEntry#validateProblemObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.hitsp.ConditionEntry#validateProblemEntryCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Entry Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.hitsp.ConditionEntry#validateProblemEntryValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Entry Value</em>}</li>
  * </ul>
  * </p>
@@ -671,27 +671,27 @@ public class ConditionEntryOperations extends ProblemEntryOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateProblemObservationCode(ConditionEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation Code</em>}' operation.
+	 * The cached OCL expression body for the '{@link #validateProblemEntryCode(ConditionEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Entry Code</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateProblemObservationCode(ConditionEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateProblemEntryCode(ConditionEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROBLEM_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
+	protected static final String VALIDATE_PROBLEM_ENTRY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
 			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
 			+ "value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '404684003' or value.code = '409586006' or value.code = '282291009' or value.code = '64572001' or value.code = '248536006' or value.code = '418799008' or value.code = '55607006'))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateProblemObservationCode(ConditionEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation Code</em>}' invariant operation.
+	 * The cached OCL invariant for the '{@link #validateProblemEntryCode(ConditionEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Entry Code</em>}' invariant operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateProblemObservationCode(ConditionEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @see #validateProblemEntryCode(ConditionEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_PROBLEM_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static Constraint VALIDATE_PROBLEM_ENTRY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -707,7 +707,7 @@ public class ConditionEntryOperations extends ProblemEntryOperations {
 	 * @generated
 	 */
 
-	public static boolean validateProblemObservationCode(ConditionEntry conditionEntry, DiagnosticChain diagnostics,
+	public static boolean validateProblemEntryCode(ConditionEntry conditionEntry, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
 		Object passToken = (context == null)
@@ -718,22 +718,21 @@ public class ConditionEntryOperations extends ProblemEntryOperations {
 			return true;
 		}
 
-		if (VALIDATE_PROBLEM_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+		if (VALIDATE_PROBLEM_ENTRY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.CONDITION_ENTRY);
 			try {
-				VALIDATE_PROBLEM_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PROBLEM_ENTRY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_ENTRY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			conditionEntry)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_ENTRY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(conditionEntry)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(
 					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
-					HITSPValidator.CONDITION_ENTRY__PROBLEM_OBSERVATION_CODE,
-					HITSPPlugin.INSTANCE.getString("ProblemObservationCode"), new Object[] { conditionEntry }));
+					HITSPValidator.CONDITION_ENTRY__PROBLEM_ENTRY_CODE,
+					HITSPPlugin.INSTANCE.getString("ProblemEntryCode"), new Object[] { conditionEntry }));
 			}
 
 			return false;

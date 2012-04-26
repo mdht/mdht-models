@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.ccd.PatientInstruction;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ihe.IHEPackage#getPatientMedicalInstructions()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PatientMedicalInstructionsTemplateId PatientMedicalInstructionsClassCode PatientMedicalInstructionsCode PatientMedicalInstructionsCodeP PatientMedicalInstructionsStatusCode PatientMedicalInstructionsText' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.3' classCode='ACT' code.codeSystemName='IHEActCode' code.codeSystem='1.3.6.1.4.1.19376.1.5.3.2' code.code='PINSTRUCT' constraints.validation.dependOn.PatientMedicalInstructionsCode='PatientMedicalInstructionsCodeP'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.dependOn.PatientMedicalInstructionsCode='PatientMedicalInstructionsCodeP' classCode='ACT' code.codeSystemName='IHEActCode' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.3' constraints.validation.error='PatientMedicalInstructionsTemplateId PatientMedicalInstructionsClassCode PatientMedicalInstructionsCode PatientMedicalInstructionsCodeP PatientMedicalInstructionsStatusCode PatientMedicalInstructionsText' code.codeSystem='1.3.6.1.4.1.19376.1.5.3.2' code.code='PINSTRUCT'"
  * @generated
  */
 public interface PatientMedicalInstructions extends PatientInstruction {

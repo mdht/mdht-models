@@ -18,7 +18,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ihe.IHEPackage#getNoseSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='NoseSectionTemplateId NoseSectionCode' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.1.9.22' code.codeSystemName='LOINC' code.displayName='NOSE' code.codeSystem='2.16.840.1.113883.6.1' code.code='10203-8' constraints.validation.info='NoseSectionProblemEntry'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystemName='LOINC' constraints.validation.info='NoseSectionProblemEntry' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.1.9.22' constraints.validation.error='NoseSectionTemplateId NoseSectionCode' code.displayName='NOSE' code.codeSystem='2.16.840.1.113883.6.1' code.code='10203-8'"
  * @generated
  */
 public interface NoseSection extends Section {
