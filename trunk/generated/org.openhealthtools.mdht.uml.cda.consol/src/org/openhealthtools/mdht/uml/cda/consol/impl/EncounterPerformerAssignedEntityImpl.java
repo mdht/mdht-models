@@ -28,40 +28,41 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 public class EncounterPerformerAssignedEntityImpl extends AssignedEntityImpl implements
 		EncounterPerformerAssignedEntity {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected EncounterPerformerAssignedEntityImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.ENCOUNTER_PERFORMER_ASSIGNED_ENTITY;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateEncounterPerformerAssignedEntityCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EncounterPerformerAssignedEntityOperations.validateEncounterPerformerAssignedEntityCode(this, diagnostics, context);
+		return EncounterPerformerAssignedEntityOperations.validateEncounterPerformerAssignedEntityCode(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EncounterPerformerAssignedEntity init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // EncounterPerformerAssignedEntityImpl

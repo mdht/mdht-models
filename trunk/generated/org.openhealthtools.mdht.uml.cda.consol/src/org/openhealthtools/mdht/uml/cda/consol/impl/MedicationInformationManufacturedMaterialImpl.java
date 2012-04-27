@@ -28,71 +28,75 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 public class MedicationInformationManufacturedMaterialImpl extends MaterialImpl implements
 		MedicationInformationManufacturedMaterial {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected MedicationInformationManufacturedMaterialImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.MEDICATION_INFORMATION_MANUFACTURED_MATERIAL;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMedicationInformationManufacturedMaterialCodeOriginalText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationInformationManufacturedMaterialOperations.validateMedicationInformationManufacturedMaterialCodeOriginalText(this, diagnostics, context);
+		return MedicationInformationManufacturedMaterialOperations.validateMedicationInformationManufacturedMaterialCodeOriginalText(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMedicationInformationManufacturedMaterialReference(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationInformationManufacturedMaterialOperations.validateMedicationInformationManufacturedMaterialReference(this, diagnostics, context);
+		return MedicationInformationManufacturedMaterialOperations.validateMedicationInformationManufacturedMaterialReference(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMedicationInformationManufacturedMaterialCodeTranslation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationInformationManufacturedMaterialOperations.validateMedicationInformationManufacturedMaterialCodeTranslation(this, diagnostics, context);
+		return MedicationInformationManufacturedMaterialOperations.validateMedicationInformationManufacturedMaterialCodeTranslation(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMedicationInformationManufacturedMaterialCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationInformationManufacturedMaterialOperations.validateMedicationInformationManufacturedMaterialCode(this, diagnostics, context);
+		return MedicationInformationManufacturedMaterialOperations.validateMedicationInformationManufacturedMaterialCode(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public MedicationInformationManufacturedMaterial init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // MedicationInformationManufacturedMaterialImpl
