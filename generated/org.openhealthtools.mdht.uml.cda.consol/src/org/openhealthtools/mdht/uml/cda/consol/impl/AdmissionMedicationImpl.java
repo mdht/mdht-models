@@ -28,86 +28,86 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class AdmissionMedicationImpl extends ActImpl implements AdmissionMedication {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected AdmissionMedicationImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.ADMISSION_MEDICATION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateAdmissionMedicationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AdmissionMedicationOperations.validateAdmissionMedicationTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateAdmissionMedicationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AdmissionMedicationOperations.validateAdmissionMedicationClassCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateAdmissionMedicationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AdmissionMedicationOperations.validateAdmissionMedicationCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateAdmissionMedicationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AdmissionMedicationOperations.validateAdmissionMedicationMoodCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateAdmissionMedicationMedicationActivity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AdmissionMedicationOperations.validateAdmissionMedicationMedicationActivity(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public MedicationActivity getMedicationActivity() {
 		return AdmissionMedicationOperations.getMedicationActivity(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public AdmissionMedication init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // AdmissionMedicationImpl

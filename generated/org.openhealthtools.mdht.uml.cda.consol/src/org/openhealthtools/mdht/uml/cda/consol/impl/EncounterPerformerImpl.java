@@ -27,51 +27,53 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class EncounterPerformerImpl extends Performer2Impl implements EncounterPerformer {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected EncounterPerformerImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.ENCOUNTER_PERFORMER;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateEncounterPerformerEncounterPerformerAssignedEntity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return EncounterPerformerOperations.validateEncounterPerformerEncounterPerformerAssignedEntity(this, diagnostics, context);
+		return EncounterPerformerOperations.validateEncounterPerformerEncounterPerformerAssignedEntity(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateEncounterPerformerEncounterPerformerAssignedEntityCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return EncounterPerformerOperations.validateEncounterPerformerEncounterPerformerAssignedEntityCode(this, diagnostics, context);
+		return EncounterPerformerOperations.validateEncounterPerformerEncounterPerformerAssignedEntityCode(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EncounterPerformer init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // EncounterPerformerImpl

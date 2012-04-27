@@ -27,58 +27,58 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class ProcedureSpecimenImpl extends SpecimenImpl implements ProcedureSpecimen {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected ProcedureSpecimenImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.PROCEDURE_SPECIMEN;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateProcedureSpecimenSpecimenRole(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureSpecimenOperations.validateProcedureSpecimenSpecimenRole(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateProcedureSpecimenSpecimentRoleId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureSpecimenOperations.validateProcedureSpecimenSpecimentRoleId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateProcedureSpecimenTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureSpecimenOperations.validateProcedureSpecimenTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public ProcedureSpecimen init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // ProcedureSpecimenImpl

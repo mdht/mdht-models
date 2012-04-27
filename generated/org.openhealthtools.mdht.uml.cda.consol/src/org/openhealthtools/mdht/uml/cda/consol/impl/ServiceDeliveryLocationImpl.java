@@ -27,96 +27,98 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class ServiceDeliveryLocationImpl extends ParticipantRoleImpl implements ServiceDeliveryLocation {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected ServiceDeliveryLocationImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.SERVICE_DELIVERY_LOCATION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateServiceDeliveryLocationHasPlayingEntity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ServiceDeliveryLocationOperations.validateServiceDeliveryLocationHasPlayingEntity(this, diagnostics, context);
+		return ServiceDeliveryLocationOperations.validateServiceDeliveryLocationHasPlayingEntity(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateServiceDeliveryLocationHasPlayingEntityClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ServiceDeliveryLocationOperations.validateServiceDeliveryLocationHasPlayingEntityClassCode(this, diagnostics, context);
+		return ServiceDeliveryLocationOperations.validateServiceDeliveryLocationHasPlayingEntityClassCode(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateServiceDeliveryLocationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ServiceDeliveryLocationOperations.validateServiceDeliveryLocationTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateServiceDeliveryLocationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ServiceDeliveryLocationOperations.validateServiceDeliveryLocationClassCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateServiceDeliveryLocationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ServiceDeliveryLocationOperations.validateServiceDeliveryLocationCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateServiceDeliveryLocationAddr(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ServiceDeliveryLocationOperations.validateServiceDeliveryLocationAddr(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateServiceDeliveryLocationTelecom(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ServiceDeliveryLocationOperations.validateServiceDeliveryLocationTelecom(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public ServiceDeliveryLocation init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // ServiceDeliveryLocationImpl

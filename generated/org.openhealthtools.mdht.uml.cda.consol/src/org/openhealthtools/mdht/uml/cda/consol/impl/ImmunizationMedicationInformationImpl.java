@@ -28,80 +28,85 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 public class ImmunizationMedicationInformationImpl extends ManufacturedProductImpl implements
 		ImmunizationMedicationInformation {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected ImmunizationMedicationInformationImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.IMMUNIZATION_MEDICATION_INFORMATION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateImmunizationMedicationInformationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ImmunizationMedicationInformationOperations.validateImmunizationMedicationInformationTemplateId(this, diagnostics, context);
+		return ImmunizationMedicationInformationOperations.validateImmunizationMedicationInformationTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateImmunizationMedicationInformationClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ImmunizationMedicationInformationOperations.validateImmunizationMedicationInformationClassCode(this, diagnostics, context);
+		return ImmunizationMedicationInformationOperations.validateImmunizationMedicationInformationClassCode(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateImmunizationMedicationInformationId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ImmunizationMedicationInformationOperations.validateImmunizationMedicationInformationId(this, diagnostics, context);
+		return ImmunizationMedicationInformationOperations.validateImmunizationMedicationInformationId(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateImmunizationMedicationInformationManufacturerOrganization(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ImmunizationMedicationInformationOperations.validateImmunizationMedicationInformationManufacturerOrganization(this, diagnostics, context);
+		return ImmunizationMedicationInformationOperations.validateImmunizationMedicationInformationManufacturerOrganization(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateImmunizationMedicationInformationManufacturedMaterial(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ImmunizationMedicationInformationOperations.validateImmunizationMedicationInformationManufacturedMaterial(this, diagnostics, context);
+		return ImmunizationMedicationInformationOperations.validateImmunizationMedicationInformationManufacturedMaterial(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public ImmunizationMedicationInformation init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // ImmunizationMedicationInformationImpl

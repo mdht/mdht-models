@@ -38,183 +38,182 @@ import org.openhealthtools.mdht.uml.cda.operations.SpecimenOperations;
  */
 public class ProcedureSpecimenOperations extends SpecimenOperations {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected ProcedureSpecimenOperations() {
 		super();
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateProcedureSpecimenSpecimenRole(ProcedureSpecimen, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Specimen Specimen Role</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateProcedureSpecimenSpecimenRole(ProcedureSpecimen, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Specimen Specimen Role</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateProcedureSpecimenSpecimenRole(ProcedureSpecimen, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateProcedureSpecimenSpecimenRole(ProcedureSpecimen, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_PROCEDURE_SPECIMEN_SPECIMEN_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.specimenRole->size() = 1";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateProcedureSpecimenSpecimenRole(ProcedureSpecimen, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Specimen Specimen Role</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateProcedureSpecimenSpecimenRole(ProcedureSpecimen, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Specimen Specimen Role</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateProcedureSpecimenSpecimenRole(ProcedureSpecimen, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateProcedureSpecimenSpecimenRole(ProcedureSpecimen, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static Constraint VALIDATE_PROCEDURE_SPECIMEN_SPECIMEN_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.specimenRole->size() = 1
-	 * @param procedureSpecimen The receiving '<em><b>Procedure Specimen</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* self.specimenRole->size() = 1
+	* @param procedureSpecimen The receiving '<em><b>Procedure Specimen</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 	public static boolean validateProcedureSpecimenSpecimenRole(ProcedureSpecimen procedureSpecimen,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_SPECIMEN_SPECIMEN_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_SPECIMEN);
 			try {
 				VALIDATE_PROCEDURE_SPECIMEN_SPECIMEN_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURE_SPECIMEN_SPECIMEN_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_SPECIMEN_SPECIMEN_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(procedureSpecimen)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_SPECIMEN_SPECIMEN_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			procedureSpecimen)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PROCEDURE_SPECIMEN__PROCEDURE_SPECIMEN_SPECIMEN_ROLE,
-						 ConsolPlugin.INSTANCE.getString("ProcedureSpecimenSpecimenRole"),
-						 new Object [] { procedureSpecimen }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PROCEDURE_SPECIMEN__PROCEDURE_SPECIMEN_SPECIMEN_ROLE,
+					ConsolPlugin.INSTANCE.getString("ProcedureSpecimenSpecimenRole"),
+					new Object[] { procedureSpecimen }));
 			}
+
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateProcedureSpecimenSpecimentRoleId(ProcedureSpecimen, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Specimen Speciment Role Id</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateProcedureSpecimenSpecimentRoleId(ProcedureSpecimen, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Specimen Speciment Role Id</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateProcedureSpecimenSpecimentRoleId(ProcedureSpecimen, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateProcedureSpecimenSpecimentRoleId(ProcedureSpecimen, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_PROCEDURE_SPECIMEN_SPECIMENT_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.specimenRole.id->size() > 0";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateProcedureSpecimenSpecimentRoleId(ProcedureSpecimen, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Specimen Speciment Role Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateProcedureSpecimenSpecimentRoleId(ProcedureSpecimen, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Specimen Speciment Role Id</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateProcedureSpecimenSpecimentRoleId(ProcedureSpecimen, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateProcedureSpecimenSpecimentRoleId(ProcedureSpecimen, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static Constraint VALIDATE_PROCEDURE_SPECIMEN_SPECIMENT_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.specimenRole.id->size() > 0
-	 * @param procedureSpecimen The receiving '<em><b>Procedure Specimen</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* self.specimenRole.id->size() > 0
+	* @param procedureSpecimen The receiving '<em><b>Procedure Specimen</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 	public static boolean validateProcedureSpecimenSpecimentRoleId(ProcedureSpecimen procedureSpecimen,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_SPECIMEN_SPECIMENT_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_SPECIMEN);
 			try {
 				VALIDATE_PROCEDURE_SPECIMEN_SPECIMENT_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURE_SPECIMEN_SPECIMENT_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_SPECIMEN_SPECIMENT_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(procedureSpecimen)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_SPECIMEN_SPECIMENT_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			procedureSpecimen)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.WARNING,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PROCEDURE_SPECIMEN__PROCEDURE_SPECIMEN_SPECIMENT_ROLE_ID,
-						 ConsolPlugin.INSTANCE.getString("ProcedureSpecimenSpecimentRoleId"),
-						 new Object [] { procedureSpecimen }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PROCEDURE_SPECIMEN__PROCEDURE_SPECIMEN_SPECIMENT_ROLE_ID,
+					ConsolPlugin.INSTANCE.getString("ProcedureSpecimenSpecimentRoleId"),
+					new Object[] { procedureSpecimen }));
 			}
+
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateProcedureSpecimenTemplateId(ProcedureSpecimen, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Specimen Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateProcedureSpecimenTemplateId(ProcedureSpecimen, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Specimen Template Id</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateProcedureSpecimenTemplateId(ProcedureSpecimen, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateProcedureSpecimenTemplateId(ProcedureSpecimen, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_PROCEDURE_SPECIMEN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = 'null')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateProcedureSpecimenTemplateId(ProcedureSpecimen, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Specimen Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateProcedureSpecimenTemplateId(ProcedureSpecimen, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Specimen Template Id</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateProcedureSpecimenTemplateId(ProcedureSpecimen, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateProcedureSpecimenTemplateId(ProcedureSpecimen, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static Constraint VALIDATE_PROCEDURE_SPECIMEN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = 'null')
-	 * @param procedureSpecimen The receiving '<em><b>Procedure Specimen</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* self.templateId->exists(id : datatypes::II | id.root = 'null')
+	* @param procedureSpecimen The receiving '<em><b>Procedure Specimen</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 	public static boolean validateProcedureSpecimenTemplateId(ProcedureSpecimen procedureSpecimen,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
+
 		if (VALIDATE_PROCEDURE_SPECIMEN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.PROCEDURE_SPECIMEN);
 			try {
 				VALIDATE_PROCEDURE_SPECIMEN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROCEDURE_SPECIMEN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_SPECIMEN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(procedureSpecimen)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_PROCEDURE_SPECIMEN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			procedureSpecimen)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.PROCEDURE_SPECIMEN__PROCEDURE_SPECIMEN_TEMPLATE_ID,
-						 ConsolPlugin.INSTANCE.getString("ProcedureSpecimenTemplateId"),
-						 new Object [] { procedureSpecimen }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.PROCEDURE_SPECIMEN__PROCEDURE_SPECIMEN_TEMPLATE_ID,
+					ConsolPlugin.INSTANCE.getString("ProcedureSpecimenTemplateId"), new Object[] { procedureSpecimen }));
 			}
+
 			return false;
 		}
 		return true;

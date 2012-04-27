@@ -28,81 +28,86 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 public class ImmunizationMedicationInformationManufacturedMaterialImpl extends MaterialImpl implements
 		ImmunizationMedicationInformationManufacturedMaterial {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected ImmunizationMedicationInformationManufacturedMaterialImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateImmunizationMedicationInformationManufacturedMaterialCodeOriginalText(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ImmunizationMedicationInformationManufacturedMaterialOperations.validateImmunizationMedicationInformationManufacturedMaterialCodeOriginalText(this, diagnostics, context);
+		return ImmunizationMedicationInformationManufacturedMaterialOperations.validateImmunizationMedicationInformationManufacturedMaterialCodeOriginalText(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateImmunizationMedicationInformationManufacturedMaterialOriginalTextReference(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ImmunizationMedicationInformationManufacturedMaterialOperations.validateImmunizationMedicationInformationManufacturedMaterialOriginalTextReference(this, diagnostics, context);
+		return ImmunizationMedicationInformationManufacturedMaterialOperations.validateImmunizationMedicationInformationManufacturedMaterialOriginalTextReference(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateImmunizationMedicationInformationManufacturedMaterialCodeTranslation(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ImmunizationMedicationInformationManufacturedMaterialOperations.validateImmunizationMedicationInformationManufacturedMaterialCodeTranslation(this, diagnostics, context);
+		return ImmunizationMedicationInformationManufacturedMaterialOperations.validateImmunizationMedicationInformationManufacturedMaterialCodeTranslation(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateImmunizationMedicationInformationManufacturedMaterialCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ImmunizationMedicationInformationManufacturedMaterialOperations.validateImmunizationMedicationInformationManufacturedMaterialCode(this, diagnostics, context);
+		return ImmunizationMedicationInformationManufacturedMaterialOperations.validateImmunizationMedicationInformationManufacturedMaterialCode(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateImmunizationMedicationInformationManufacturedMaterialLotNumberText(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ImmunizationMedicationInformationManufacturedMaterialOperations.validateImmunizationMedicationInformationManufacturedMaterialLotNumberText(this, diagnostics, context);
+		return ImmunizationMedicationInformationManufacturedMaterialOperations.validateImmunizationMedicationInformationManufacturedMaterialLotNumberText(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public ImmunizationMedicationInformationManufacturedMaterial init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // ImmunizationMedicationInformationManufacturedMaterialImpl

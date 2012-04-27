@@ -27,68 +27,70 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class ProcedureDescriptionSectionImpl extends SectionImpl implements ProcedureDescriptionSection {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected ProcedureDescriptionSectionImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.PROCEDURE_DESCRIPTION_SECTION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateProcedureDescriptionSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureDescriptionSectionOperations.validateProcedureDescriptionSectionTemplateId(this, diagnostics, context);
+		return ProcedureDescriptionSectionOperations.validateProcedureDescriptionSectionTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateProcedureDescriptionSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureDescriptionSectionOperations.validateProcedureDescriptionSectionCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateProcedureDescriptionSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureDescriptionSectionOperations.validateProcedureDescriptionSectionText(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateProcedureDescriptionSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureDescriptionSectionOperations.validateProcedureDescriptionSectionTitle(this, diagnostics, context);
+		return ProcedureDescriptionSectionOperations.validateProcedureDescriptionSectionTitle(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public ProcedureDescriptionSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
 } // ProcedureDescriptionSectionImpl
