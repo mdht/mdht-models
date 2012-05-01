@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2011, 2012 Sean Muir and others.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     Sean Muir (JKM Software) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.operations;
 
 import java.util.Map;
@@ -44,45 +48,45 @@ import org.openhealthtools.mdht.uml.cda.operations.Performer2Operations;
  */
 public class ProcedurePerformerOperations extends Performer2Operations {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected ProcedurePerformerOperations() {
 		super();
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateProcedurePerformerAssignedEntity(ProcedurePerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Performer Assigned Entity</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateProcedurePerformerAssignedEntity(ProcedurePerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Performer Assigned Entity</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProcedurePerformerAssignedEntity(ProcedurePerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProcedurePerformerAssignedEntity(ProcedurePerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PROCEDURE_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.assignedEntity->size() = 1";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateProcedurePerformerAssignedEntity(ProcedurePerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Performer Assigned Entity</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateProcedurePerformerAssignedEntity(ProcedurePerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Performer Assigned Entity</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProcedurePerformerAssignedEntity(ProcedurePerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProcedurePerformerAssignedEntity(ProcedurePerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static Constraint VALIDATE_PROCEDURE_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* self.assignedEntity->size() = 1
-	* @param procedurePerformer The receiving '<em><b>Procedure Performer</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * self.assignedEntity->size() = 1
+	 * @param procedurePerformer The receiving '<em><b>Procedure Performer</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static boolean validateProcedurePerformerAssignedEntity(ProcedurePerformer procedurePerformer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -111,36 +115,36 @@ public class ProcedurePerformerOperations extends Performer2Operations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateProcedurePerformerAssignedEntityId(ProcedurePerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Performer Assigned Entity Id</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateProcedurePerformerAssignedEntityId(ProcedurePerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Performer Assigned Entity Id</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProcedurePerformerAssignedEntityId(ProcedurePerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProcedurePerformerAssignedEntityId(ProcedurePerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PROCEDURE_PERFORMER_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.assignedEntity.id->size() >= 1";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateProcedurePerformerAssignedEntityId(ProcedurePerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Performer Assigned Entity Id</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateProcedurePerformerAssignedEntityId(ProcedurePerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Performer Assigned Entity Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProcedurePerformerAssignedEntityId(ProcedurePerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProcedurePerformerAssignedEntityId(ProcedurePerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static Constraint VALIDATE_PROCEDURE_PERFORMER_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* self.assignedEntity.id->size() >= 1
-	* @param procedurePerformer The receiving '<em><b>Procedure Performer</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * self.assignedEntity.id->size() >= 1
+	 * @param procedurePerformer The receiving '<em><b>Procedure Performer</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static boolean validateProcedurePerformerAssignedEntityId(ProcedurePerformer procedurePerformer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -169,36 +173,36 @@ public class ProcedurePerformerOperations extends Performer2Operations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateProcedurePerformerAssignedEntityAddr(ProcedurePerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Performer Assigned Entity Addr</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateProcedurePerformerAssignedEntityAddr(ProcedurePerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Performer Assigned Entity Addr</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProcedurePerformerAssignedEntityAddr(ProcedurePerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProcedurePerformerAssignedEntityAddr(ProcedurePerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PROCEDURE_PERFORMER_ASSIGNED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.assignedEntity.addr->size() = 1";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateProcedurePerformerAssignedEntityAddr(ProcedurePerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Performer Assigned Entity Addr</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateProcedurePerformerAssignedEntityAddr(ProcedurePerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Performer Assigned Entity Addr</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProcedurePerformerAssignedEntityAddr(ProcedurePerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProcedurePerformerAssignedEntityAddr(ProcedurePerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static Constraint VALIDATE_PROCEDURE_PERFORMER_ASSIGNED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* self.assignedEntity.addr->size() = 1
-	* @param procedurePerformer The receiving '<em><b>Procedure Performer</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * self.assignedEntity.addr->size() = 1
+	 * @param procedurePerformer The receiving '<em><b>Procedure Performer</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static boolean validateProcedurePerformerAssignedEntityAddr(ProcedurePerformer procedurePerformer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -227,36 +231,36 @@ public class ProcedurePerformerOperations extends Performer2Operations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateProcedurePerformerAssignedEntityTelecom(ProcedurePerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Performer Assigned Entity Telecom</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateProcedurePerformerAssignedEntityTelecom(ProcedurePerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Performer Assigned Entity Telecom</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProcedurePerformerAssignedEntityTelecom(ProcedurePerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProcedurePerformerAssignedEntityTelecom(ProcedurePerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PROCEDURE_PERFORMER_ASSIGNED_ENTITY_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.assignedEntity.telecom->size() = 1";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateProcedurePerformerAssignedEntityTelecom(ProcedurePerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Performer Assigned Entity Telecom</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateProcedurePerformerAssignedEntityTelecom(ProcedurePerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Performer Assigned Entity Telecom</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProcedurePerformerAssignedEntityTelecom(ProcedurePerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProcedurePerformerAssignedEntityTelecom(ProcedurePerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static Constraint VALIDATE_PROCEDURE_PERFORMER_ASSIGNED_ENTITY_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* self.assignedEntity.telecom->size() = 1
-	* @param procedurePerformer The receiving '<em><b>Procedure Performer</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * self.assignedEntity.telecom->size() = 1
+	 * @param procedurePerformer The receiving '<em><b>Procedure Performer</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static boolean validateProcedurePerformerAssignedEntityTelecom(ProcedurePerformer procedurePerformer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -285,36 +289,36 @@ public class ProcedurePerformerOperations extends Performer2Operations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateProcedurePerformerAssignedEntityRepOrg(ProcedurePerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Performer Assigned Entity Rep Org</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateProcedurePerformerAssignedEntityRepOrg(ProcedurePerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Performer Assigned Entity Rep Org</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProcedurePerformerAssignedEntityRepOrg(ProcedurePerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProcedurePerformerAssignedEntityRepOrg(ProcedurePerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PROCEDURE_PERFORMER_ASSIGNED_ENTITY_REP_ORG__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.assignedEntity.representedOrganization->size() <= 1";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateProcedurePerformerAssignedEntityRepOrg(ProcedurePerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Performer Assigned Entity Rep Org</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateProcedurePerformerAssignedEntityRepOrg(ProcedurePerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Performer Assigned Entity Rep Org</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProcedurePerformerAssignedEntityRepOrg(ProcedurePerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProcedurePerformerAssignedEntityRepOrg(ProcedurePerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static Constraint VALIDATE_PROCEDURE_PERFORMER_ASSIGNED_ENTITY_REP_ORG__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* self.assignedEntity.representedOrganization->size() <= 1
-	* @param procedurePerformer The receiving '<em><b>Procedure Performer</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * self.assignedEntity.representedOrganization->size() <= 1
+	 * @param procedurePerformer The receiving '<em><b>Procedure Performer</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static boolean validateProcedurePerformerAssignedEntityRepOrg(ProcedurePerformer procedurePerformer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -343,36 +347,36 @@ public class ProcedurePerformerOperations extends Performer2Operations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateProcedurePerformerAssignedEntityRepOrgId(ProcedurePerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Performer Assigned Entity Rep Org Id</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateProcedurePerformerAssignedEntityRepOrgId(ProcedurePerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Performer Assigned Entity Rep Org Id</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProcedurePerformerAssignedEntityRepOrgId(ProcedurePerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProcedurePerformerAssignedEntityRepOrgId(ProcedurePerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PROCEDURE_PERFORMER_ASSIGNED_ENTITY_REP_ORG_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.assignedEntity.representedOrganization.id->size() > 0";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateProcedurePerformerAssignedEntityRepOrgId(ProcedurePerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Performer Assigned Entity Rep Org Id</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateProcedurePerformerAssignedEntityRepOrgId(ProcedurePerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Performer Assigned Entity Rep Org Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProcedurePerformerAssignedEntityRepOrgId(ProcedurePerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProcedurePerformerAssignedEntityRepOrgId(ProcedurePerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static Constraint VALIDATE_PROCEDURE_PERFORMER_ASSIGNED_ENTITY_REP_ORG_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* self.assignedEntity.representedOrganization.id->size() > 0
-	* @param procedurePerformer The receiving '<em><b>Procedure Performer</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * self.assignedEntity.representedOrganization.id->size() > 0
+	 * @param procedurePerformer The receiving '<em><b>Procedure Performer</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static boolean validateProcedurePerformerAssignedEntityRepOrgId(ProcedurePerformer procedurePerformer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -402,36 +406,36 @@ public class ProcedurePerformerOperations extends Performer2Operations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateProcedurePerformerAssignedEntityRepOrgName(ProcedurePerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Performer Assigned Entity Rep Org Name</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateProcedurePerformerAssignedEntityRepOrgName(ProcedurePerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Performer Assigned Entity Rep Org Name</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProcedurePerformerAssignedEntityRepOrgName(ProcedurePerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProcedurePerformerAssignedEntityRepOrgName(ProcedurePerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PROCEDURE_PERFORMER_ASSIGNED_ENTITY_REP_ORG_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.assignedEntity.representedOrganization.name->size() > 0";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateProcedurePerformerAssignedEntityRepOrgName(ProcedurePerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Performer Assigned Entity Rep Org Name</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateProcedurePerformerAssignedEntityRepOrgName(ProcedurePerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Performer Assigned Entity Rep Org Name</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProcedurePerformerAssignedEntityRepOrgName(ProcedurePerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProcedurePerformerAssignedEntityRepOrgName(ProcedurePerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static Constraint VALIDATE_PROCEDURE_PERFORMER_ASSIGNED_ENTITY_REP_ORG_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* self.assignedEntity.representedOrganization.name->size() > 0
-	* @param procedurePerformer The receiving '<em><b>Procedure Performer</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * self.assignedEntity.representedOrganization.name->size() > 0
+	 * @param procedurePerformer The receiving '<em><b>Procedure Performer</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static boolean validateProcedurePerformerAssignedEntityRepOrgName(ProcedurePerformer procedurePerformer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -461,36 +465,36 @@ public class ProcedurePerformerOperations extends Performer2Operations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateProcedurePerformerAssignedEntityRepOrgAddr(ProcedurePerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Performer Assigned Entity Rep Org Addr</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateProcedurePerformerAssignedEntityRepOrgAddr(ProcedurePerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Performer Assigned Entity Rep Org Addr</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProcedurePerformerAssignedEntityRepOrgAddr(ProcedurePerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProcedurePerformerAssignedEntityRepOrgAddr(ProcedurePerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PROCEDURE_PERFORMER_ASSIGNED_ENTITY_REP_ORG_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.assignedEntity.representedOrganization.addr->size() = 1";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateProcedurePerformerAssignedEntityRepOrgAddr(ProcedurePerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Performer Assigned Entity Rep Org Addr</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateProcedurePerformerAssignedEntityRepOrgAddr(ProcedurePerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Performer Assigned Entity Rep Org Addr</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProcedurePerformerAssignedEntityRepOrgAddr(ProcedurePerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProcedurePerformerAssignedEntityRepOrgAddr(ProcedurePerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static Constraint VALIDATE_PROCEDURE_PERFORMER_ASSIGNED_ENTITY_REP_ORG_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* self.assignedEntity.representedOrganization.addr->size() = 1
-	* @param procedurePerformer The receiving '<em><b>Procedure Performer</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * self.assignedEntity.representedOrganization.addr->size() = 1
+	 * @param procedurePerformer The receiving '<em><b>Procedure Performer</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static boolean validateProcedurePerformerAssignedEntityRepOrgAddr(ProcedurePerformer procedurePerformer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
@@ -520,36 +524,36 @@ public class ProcedurePerformerOperations extends Performer2Operations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateProcedurePerformerAssignedEntityRepOrgTelecom(ProcedurePerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Performer Assigned Entity Rep Org Telecom</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateProcedurePerformerAssignedEntityRepOrgTelecom(ProcedurePerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Performer Assigned Entity Rep Org Telecom</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProcedurePerformerAssignedEntityRepOrgTelecom(ProcedurePerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProcedurePerformerAssignedEntityRepOrgTelecom(ProcedurePerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PROCEDURE_PERFORMER_ASSIGNED_ENTITY_REP_ORG_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.assignedEntity.representedOrganization.telecom->size() = 1";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateProcedurePerformerAssignedEntityRepOrgTelecom(ProcedurePerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Performer Assigned Entity Rep Org Telecom</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateProcedurePerformerAssignedEntityRepOrgTelecom(ProcedurePerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Procedure Performer Assigned Entity Rep Org Telecom</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateProcedurePerformerAssignedEntityRepOrgTelecom(ProcedurePerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateProcedurePerformerAssignedEntityRepOrgTelecom(ProcedurePerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static Constraint VALIDATE_PROCEDURE_PERFORMER_ASSIGNED_ENTITY_REP_ORG_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* self.assignedEntity.representedOrganization.telecom->size() = 1
-	* @param procedurePerformer The receiving '<em><b>Procedure Performer</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * self.assignedEntity.representedOrganization.telecom->size() = 1
+	 * @param procedurePerformer The receiving '<em><b>Procedure Performer</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static boolean validateProcedurePerformerAssignedEntityRepOrgTelecom(ProcedurePerformer procedurePerformer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 

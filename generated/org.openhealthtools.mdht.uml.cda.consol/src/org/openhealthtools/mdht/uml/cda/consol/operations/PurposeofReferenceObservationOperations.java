@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2011, 2012 Sean Muir and others.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     Sean Muir (JKM Software) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.operations;
 
 import java.util.Map;
@@ -40,45 +44,45 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  */
 public class PurposeofReferenceObservationOperations extends ClinicalStatementOperations {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected PurposeofReferenceObservationOperations() {
 		super();
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validatePurposeofReferenceObservationTemplateId(PurposeofReferenceObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Purposeof Reference Observation Template Id</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validatePurposeofReferenceObservationTemplateId(PurposeofReferenceObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Purposeof Reference Observation Template Id</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePurposeofReferenceObservationTemplateId(PurposeofReferenceObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePurposeofReferenceObservationTemplateId(PurposeofReferenceObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PURPOSEOF_REFERENCE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.6.2.9')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validatePurposeofReferenceObservationTemplateId(PurposeofReferenceObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Purposeof Reference Observation Template Id</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validatePurposeofReferenceObservationTemplateId(PurposeofReferenceObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Purposeof Reference Observation Template Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePurposeofReferenceObservationTemplateId(PurposeofReferenceObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePurposeofReferenceObservationTemplateId(PurposeofReferenceObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static Constraint VALIDATE_PURPOSEOF_REFERENCE_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.6.2.9')
-	* @param purposeofReferenceObservation The receiving '<em><b>Purposeof Reference Observation</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.6.2.9')
+	 * @param purposeofReferenceObservation The receiving '<em><b>Purposeof Reference Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static boolean validatePurposeofReferenceObservationTemplateId(
 			PurposeofReferenceObservation purposeofReferenceObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -108,36 +112,36 @@ public class PurposeofReferenceObservationOperations extends ClinicalStatementOp
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validatePurposeofReferenceObservationClassCode(PurposeofReferenceObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Purposeof Reference Observation Class Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validatePurposeofReferenceObservationClassCode(PurposeofReferenceObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Purposeof Reference Observation Class Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePurposeofReferenceObservationClassCode(PurposeofReferenceObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePurposeofReferenceObservationClassCode(PurposeofReferenceObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PURPOSEOF_REFERENCE_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.classCode=vocab::ActClassObservation::OBS";
 
 	/**
-	* The cached OCL invariant for the '{@link #validatePurposeofReferenceObservationClassCode(PurposeofReferenceObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Purposeof Reference Observation Class Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validatePurposeofReferenceObservationClassCode(PurposeofReferenceObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Purposeof Reference Observation Class Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePurposeofReferenceObservationClassCode(PurposeofReferenceObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePurposeofReferenceObservationClassCode(PurposeofReferenceObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static Constraint VALIDATE_PURPOSEOF_REFERENCE_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* self.classCode=vocab::ActClassObservation::OBS
-	* @param purposeofReferenceObservation The receiving '<em><b>Purposeof Reference Observation</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * self.classCode=vocab::ActClassObservation::OBS
+	 * @param purposeofReferenceObservation The receiving '<em><b>Purposeof Reference Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static boolean validatePurposeofReferenceObservationClassCode(
 			PurposeofReferenceObservation purposeofReferenceObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -167,36 +171,36 @@ public class PurposeofReferenceObservationOperations extends ClinicalStatementOp
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validatePurposeofReferenceObservationCode(PurposeofReferenceObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Purposeof Reference Observation Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validatePurposeofReferenceObservationCode(PurposeofReferenceObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Purposeof Reference Observation Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePurposeofReferenceObservationCode(PurposeofReferenceObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePurposeofReferenceObservationCode(PurposeofReferenceObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PURPOSEOF_REFERENCE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
 
 	/**
-	* The cached OCL invariant for the '{@link #validatePurposeofReferenceObservationCode(PurposeofReferenceObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Purposeof Reference Observation Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validatePurposeofReferenceObservationCode(PurposeofReferenceObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Purposeof Reference Observation Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePurposeofReferenceObservationCode(PurposeofReferenceObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePurposeofReferenceObservationCode(PurposeofReferenceObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static Constraint VALIDATE_PURPOSEOF_REFERENCE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
-	* @param purposeofReferenceObservation The receiving '<em><b>Purposeof Reference Observation</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
+	 * @param purposeofReferenceObservation The receiving '<em><b>Purposeof Reference Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static boolean validatePurposeofReferenceObservationCode(
 			PurposeofReferenceObservation purposeofReferenceObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -226,36 +230,36 @@ public class PurposeofReferenceObservationOperations extends ClinicalStatementOp
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validatePurposeofReferenceObservationMoodCode(PurposeofReferenceObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Purposeof Reference Observation Mood Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validatePurposeofReferenceObservationMoodCode(PurposeofReferenceObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Purposeof Reference Observation Mood Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePurposeofReferenceObservationMoodCode(PurposeofReferenceObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePurposeofReferenceObservationMoodCode(PurposeofReferenceObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PURPOSEOF_REFERENCE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.moodCode=vocab::x_ActMoodDocumentObservation::EVN";
 
 	/**
-	* The cached OCL invariant for the '{@link #validatePurposeofReferenceObservationMoodCode(PurposeofReferenceObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Purposeof Reference Observation Mood Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validatePurposeofReferenceObservationMoodCode(PurposeofReferenceObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Purposeof Reference Observation Mood Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePurposeofReferenceObservationMoodCode(PurposeofReferenceObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePurposeofReferenceObservationMoodCode(PurposeofReferenceObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static Constraint VALIDATE_PURPOSEOF_REFERENCE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* self.moodCode=vocab::x_ActMoodDocumentObservation::EVN
-	* @param purposeofReferenceObservation The receiving '<em><b>Purposeof Reference Observation</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * self.moodCode=vocab::x_ActMoodDocumentObservation::EVN
+	 * @param purposeofReferenceObservation The receiving '<em><b>Purposeof Reference Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static boolean validatePurposeofReferenceObservationMoodCode(
 			PurposeofReferenceObservation purposeofReferenceObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -285,41 +289,41 @@ public class PurposeofReferenceObservationOperations extends ClinicalStatementOp
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validatePurposeofReferenceObservationValue(PurposeofReferenceObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Purposeof Reference Observation Value</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validatePurposeofReferenceObservationValue(PurposeofReferenceObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Purposeof Reference Observation Value</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePurposeofReferenceObservationValue(PurposeofReferenceObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePurposeofReferenceObservationValue(PurposeofReferenceObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_PURPOSEOF_REFERENCE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
 			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
 			+ "value.codeSystem = '1.2.840.10008.2.16.4' and not value.code.oclIsUndefined()))";
 
 	/**
-	* The cached OCL invariant for the '{@link #validatePurposeofReferenceObservationValue(PurposeofReferenceObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Purposeof Reference Observation Value</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validatePurposeofReferenceObservationValue(PurposeofReferenceObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Purposeof Reference Observation Value</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validatePurposeofReferenceObservationValue(PurposeofReferenceObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validatePurposeofReferenceObservationValue(PurposeofReferenceObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_PURPOSEOF_REFERENCE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* (self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
-	* let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
-	* value.codeSystem = '1.2.840.10008.2.16.4' and not value.code.oclIsUndefined()))
-	* @param purposeofReferenceObservation The receiving '<em><b>Purposeof Reference Observation</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * (self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and 
+	 * let value : datatypes::CD = element.oclAsType(datatypes::CD) in 
+	 * value.codeSystem = '1.2.840.10008.2.16.4' and not value.code.oclIsUndefined()))
+	 * @param purposeofReferenceObservation The receiving '<em><b>Purposeof Reference Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validatePurposeofReferenceObservationValue(
 			PurposeofReferenceObservation purposeofReferenceObservation, DiagnosticChain diagnostics,

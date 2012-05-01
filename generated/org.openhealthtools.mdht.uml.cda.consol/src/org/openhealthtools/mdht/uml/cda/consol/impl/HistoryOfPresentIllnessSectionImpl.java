@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2011, 2012 Sean Muir and others.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     Sean Muir (JKM Software) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.util.Map;
@@ -27,29 +31,29 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class HistoryOfPresentIllnessSectionImpl extends SectionImpl implements HistoryOfPresentIllnessSection {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected HistoryOfPresentIllnessSectionImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.HISTORY_OF_PRESENT_ILLNESS_SECTION;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateHistoryOfPresentIllnessSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HistoryOfPresentIllnessSectionOperations.validateHistoryOfPresentIllnessSectionTemplateId(
@@ -57,40 +61,40 @@ public class HistoryOfPresentIllnessSectionImpl extends SectionImpl implements H
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateHistoryOfPresentIllnessSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HistoryOfPresentIllnessSectionOperations.validateHistoryOfPresentIllnessSectionCode(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateHistoryOfPresentIllnessSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HistoryOfPresentIllnessSectionOperations.validateHistoryOfPresentIllnessSectionTitle(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateHistoryOfPresentIllnessSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HistoryOfPresentIllnessSectionOperations.validateHistoryOfPresentIllnessSectionText(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public HistoryOfPresentIllnessSection init() {
 		CDAUtil.init(this);
 		return this;

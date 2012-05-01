@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2011, 2012 Sean Muir and others.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     Sean Muir (JKM Software) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.util.Map;
@@ -28,29 +32,29 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 public class OperativeNoteSurgicalProcedureSectionImpl extends SectionImpl implements
 		OperativeNoteSurgicalProcedureSection {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected OperativeNoteSurgicalProcedureSectionImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateOperativeNoteSurgicalProcedureSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return OperativeNoteSurgicalProcedureSectionOperations.validateOperativeNoteSurgicalProcedureSectionTemplateId(
@@ -58,10 +62,10 @@ public class OperativeNoteSurgicalProcedureSectionImpl extends SectionImpl imple
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateOperativeNoteSurgicalProcedureSectionCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return OperativeNoteSurgicalProcedureSectionOperations.validateOperativeNoteSurgicalProcedureSectionCode(
@@ -69,10 +73,10 @@ public class OperativeNoteSurgicalProcedureSectionImpl extends SectionImpl imple
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateOperativeNoteSurgicalProcedureSectionText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return OperativeNoteSurgicalProcedureSectionOperations.validateOperativeNoteSurgicalProcedureSectionText(
@@ -80,10 +84,10 @@ public class OperativeNoteSurgicalProcedureSectionImpl extends SectionImpl imple
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateOperativeNoteSurgicalProcedureSectionTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return OperativeNoteSurgicalProcedureSectionOperations.validateOperativeNoteSurgicalProcedureSectionTitle(
@@ -91,10 +95,10 @@ public class OperativeNoteSurgicalProcedureSectionImpl extends SectionImpl imple
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public OperativeNoteSurgicalProcedureSection init() {
 		CDAUtil.init(this);
 		return this;

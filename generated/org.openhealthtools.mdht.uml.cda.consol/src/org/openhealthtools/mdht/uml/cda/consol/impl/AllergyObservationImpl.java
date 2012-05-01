@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2011, 2012 Sean Muir and others.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     Sean Muir (JKM Software) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.util.Map;
@@ -31,29 +35,29 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class AllergyObservationImpl extends ObservationImpl implements AllergyObservation {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected AllergyObservationImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.ALLERGY_OBSERVATION;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateAllergyObservationAllergyStatusInversionIndicator(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AllergyObservationOperations.validateAllergyObservationAllergyStatusInversionIndicator(
@@ -61,10 +65,10 @@ public class AllergyObservationImpl extends ObservationImpl implements AllergyOb
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateAllergyObservationReactionInversionIndicator(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AllergyObservationOperations.validateAllergyObservationReactionInversionIndicator(
@@ -72,10 +76,10 @@ public class AllergyObservationImpl extends ObservationImpl implements AllergyOb
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateAllergyObservationSeverityInversionIndicator(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AllergyObservationOperations.validateAllergyObservationSeverityInversionIndicator(
@@ -83,82 +87,82 @@ public class AllergyObservationImpl extends ObservationImpl implements AllergyOb
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateAllergyObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyObservationOperations.validateAllergyObservationTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateAllergyObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyObservationOperations.validateAllergyObservationClassCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateAllergyObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyObservationOperations.validateAllergyObservationMoodCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateAllergyObservationId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyObservationOperations.validateAllergyObservationId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateAllergyObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyObservationOperations.validateAllergyObservationCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateAllergyObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyObservationOperations.validateAllergyObservationStatusCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateAllergyObservationEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyObservationOperations.validateAllergyObservationEffectiveTime(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateAllergyObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyObservationOperations.validateAllergyObservationValue(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateAllergyObservationProblemEntryReactionObservationContainer(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AllergyObservationOperations.validateAllergyObservationProblemEntryReactionObservationContainer(
@@ -166,19 +170,19 @@ public class AllergyObservationImpl extends ObservationImpl implements AllergyOb
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateAllergyObservationSeverity(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyObservationOperations.validateAllergyObservationSeverity(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateAllergyObservationAllergyStatusObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AllergyObservationOperations.validateAllergyObservationAllergyStatusObservation(
@@ -186,46 +190,46 @@ public class AllergyObservationImpl extends ObservationImpl implements AllergyOb
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateAllergyObservationParticipant(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergyObservationOperations.validateAllergyObservationParticipant(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public EList<ReactionObservation> getProblemEntryReactionObservationContainers() {
 		return AllergyObservationOperations.getProblemEntryReactionObservationContainers(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public SeverityObservation getSeverity() {
 		return AllergyObservationOperations.getSeverity(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public AllergyStatusObservation getAllergyStatusObservation() {
 		return AllergyObservationOperations.getAllergyStatusObservation(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public AllergyObservation init() {
 		CDAUtil.init(this);
 		return this;

@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2011, 2012 Sean Muir and others.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     Sean Muir (JKM Software) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.util.Map;
@@ -29,29 +33,29 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class ProblemSectionEntriesOptionalImpl extends SectionImpl implements ProblemSectionEntriesOptional {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected ProblemSectionEntriesOptionalImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.PROBLEM_SECTION_ENTRIES_OPTIONAL;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProblemSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProblemSectionEntriesOptionalOperations.validateProblemSectionEntriesOptionalTemplateId(
@@ -59,40 +63,40 @@ public class ProblemSectionEntriesOptionalImpl extends SectionImpl implements Pr
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProblemSectionEntriesOptionalCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemSectionEntriesOptionalOperations.validateProblemSectionEntriesOptionalCode(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProblemSectionEntriesOptionalTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemSectionEntriesOptionalOperations.validateProblemSectionEntriesOptionalTitle(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProblemSectionEntriesOptionalText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemSectionEntriesOptionalOperations.validateProblemSectionEntriesOptionalText(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProblemSectionEntriesOptionalProblemConcern(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProblemSectionEntriesOptionalOperations.validateProblemSectionEntriesOptionalProblemConcern(
@@ -100,19 +104,19 @@ public class ProblemSectionEntriesOptionalImpl extends SectionImpl implements Pr
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public EList<ProblemConcernAct> getProblemConcerns() {
 		return ProblemSectionEntriesOptionalOperations.getProblemConcerns(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public ProblemSectionEntriesOptional init() {
 		CDAUtil.init(this);
 		return this;

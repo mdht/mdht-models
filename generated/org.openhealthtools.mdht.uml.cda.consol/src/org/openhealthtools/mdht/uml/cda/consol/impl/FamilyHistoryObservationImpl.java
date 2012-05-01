@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2011, 2012 Sean Muir and others.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     Sean Muir (JKM Software) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.util.Map;
@@ -29,29 +33,29 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class FamilyHistoryObservationImpl extends ObservationImpl implements FamilyHistoryObservation {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected FamilyHistoryObservationImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.FAMILY_HISTORY_OBSERVATION;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateFamilyHistoryObservationAgeObservationInversion(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationAgeObservationInversion(
@@ -59,73 +63,73 @@ public class FamilyHistoryObservationImpl extends ObservationImpl implements Fam
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateFamilyHistoryObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateFamilyHistoryObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationClassCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateFamilyHistoryObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationMoodCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateFamilyHistoryObservationId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateFamilyHistoryObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateFamilyHistoryObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationCodeP(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateFamilyHistoryObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationStatusCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateFamilyHistoryObservationEffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationEffectiveTime(
@@ -133,19 +137,19 @@ public class FamilyHistoryObservationImpl extends ObservationImpl implements Fam
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateFamilyHistoryObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationValue(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateFamilyHistoryObservationAgeObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationAgeObservation(
@@ -153,10 +157,10 @@ public class FamilyHistoryObservationImpl extends ObservationImpl implements Fam
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateFamilyHistoryObservationFamilyHistoryDeathObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationFamilyHistoryDeathObservation(
@@ -164,28 +168,28 @@ public class FamilyHistoryObservationImpl extends ObservationImpl implements Fam
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public AgeObservation getAgeObservation() {
 		return FamilyHistoryObservationOperations.getAgeObservation(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public FamilyHistoryDeathObservation getFamilyHistoryDeathObservation() {
 		return FamilyHistoryObservationOperations.getFamilyHistoryDeathObservation(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public FamilyHistoryObservation init() {
 		CDAUtil.init(this);
 		return this;

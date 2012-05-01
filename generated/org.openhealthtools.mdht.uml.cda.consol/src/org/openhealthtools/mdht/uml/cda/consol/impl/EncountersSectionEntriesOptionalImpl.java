@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2011, 2012 Sean Muir and others.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     Sean Muir (JKM Software) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.util.Map;
@@ -29,29 +33,29 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class EncountersSectionEntriesOptionalImpl extends SectionImpl implements EncountersSectionEntriesOptional {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected EncountersSectionEntriesOptionalImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.ENCOUNTERS_SECTION_ENTRIES_OPTIONAL;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateEncountersSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return EncountersSectionEntriesOptionalOperations.validateEncountersSectionEntriesOptionalTemplateId(
@@ -59,20 +63,20 @@ public class EncountersSectionEntriesOptionalImpl extends SectionImpl implements
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateEncountersSectionEntriesOptionalCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EncountersSectionEntriesOptionalOperations.validateEncountersSectionEntriesOptionalCode(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateEncountersSectionEntriesOptionalTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return EncountersSectionEntriesOptionalOperations.validateEncountersSectionEntriesOptionalTitle(
@@ -80,20 +84,20 @@ public class EncountersSectionEntriesOptionalImpl extends SectionImpl implements
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateEncountersSectionEntriesOptionalText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EncountersSectionEntriesOptionalOperations.validateEncountersSectionEntriesOptionalText(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateEncountersSectionEntriesOptionalEncounterActivities(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return EncountersSectionEntriesOptionalOperations.validateEncountersSectionEntriesOptionalEncounterActivities(
@@ -101,19 +105,19 @@ public class EncountersSectionEntriesOptionalImpl extends SectionImpl implements
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public EList<EncounterActivities> getEncounterActivitiess() {
 		return EncountersSectionEntriesOptionalOperations.getEncounterActivitiess(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public EncountersSectionEntriesOptional init() {
 		CDAUtil.init(this);
 		return this;

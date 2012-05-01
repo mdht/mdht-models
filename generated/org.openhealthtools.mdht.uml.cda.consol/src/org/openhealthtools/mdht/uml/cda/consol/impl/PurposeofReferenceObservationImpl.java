@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2011, 2012 Sean Muir and others.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     Sean Muir (JKM Software) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.util.Map;
@@ -27,29 +31,29 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class PurposeofReferenceObservationImpl extends ObservationImpl implements PurposeofReferenceObservation {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected PurposeofReferenceObservationImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.PURPOSEOF_REFERENCE_OBSERVATION;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePurposeofReferenceObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PurposeofReferenceObservationOperations.validatePurposeofReferenceObservationTemplateId(
@@ -57,10 +61,10 @@ public class PurposeofReferenceObservationImpl extends ObservationImpl implement
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePurposeofReferenceObservationClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PurposeofReferenceObservationOperations.validatePurposeofReferenceObservationClassCode(
@@ -68,20 +72,20 @@ public class PurposeofReferenceObservationImpl extends ObservationImpl implement
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePurposeofReferenceObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PurposeofReferenceObservationOperations.validatePurposeofReferenceObservationCode(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePurposeofReferenceObservationMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PurposeofReferenceObservationOperations.validatePurposeofReferenceObservationMoodCode(
@@ -89,20 +93,20 @@ public class PurposeofReferenceObservationImpl extends ObservationImpl implement
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePurposeofReferenceObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PurposeofReferenceObservationOperations.validatePurposeofReferenceObservationValue(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public PurposeofReferenceObservation init() {
 		CDAUtil.init(this);
 		return this;

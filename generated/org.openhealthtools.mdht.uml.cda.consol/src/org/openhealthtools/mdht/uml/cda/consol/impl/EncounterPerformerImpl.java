@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2011, 2012 Sean Muir and others.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     Sean Muir (JKM Software) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.util.Map;
@@ -27,29 +31,29 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class EncounterPerformerImpl extends Performer2Impl implements EncounterPerformer {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected EncounterPerformerImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.ENCOUNTER_PERFORMER;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateEncounterPerformerEncounterPerformerAssignedEntity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return EncounterPerformerOperations.validateEncounterPerformerEncounterPerformerAssignedEntity(
@@ -57,10 +61,10 @@ public class EncounterPerformerImpl extends Performer2Impl implements EncounterP
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateEncounterPerformerEncounterPerformerAssignedEntityCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return EncounterPerformerOperations.validateEncounterPerformerEncounterPerformerAssignedEntityCode(
@@ -68,10 +72,10 @@ public class EncounterPerformerImpl extends Performer2Impl implements EncounterP
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public EncounterPerformer init() {
 		CDAUtil.init(this);
 		return this;

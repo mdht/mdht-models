@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2011, 2012 Sean Muir and others.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     Sean Muir (JKM Software) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.util.Map;
@@ -30,92 +34,92 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class SOPInstanceObservationImpl extends ObservationImpl implements SOPInstanceObservation {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected SOPInstanceObservationImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.SOP_INSTANCE_OBSERVATION;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateSOPInstanceObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SOPInstanceObservationOperations.validateSOPInstanceObservationTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateSOPInstanceObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SOPInstanceObservationOperations.validateSOPInstanceObservationClassCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateSOPInstanceObservationEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SOPInstanceObservationOperations.validateSOPInstanceObservationEffectiveTime(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateSOPInstanceObservationId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SOPInstanceObservationOperations.validateSOPInstanceObservationId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateSOPInstanceObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SOPInstanceObservationOperations.validateSOPInstanceObservationMoodCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateSOPInstanceObservationText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SOPInstanceObservationOperations.validateSOPInstanceObservationText(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateSOPInstanceObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SOPInstanceObservationOperations.validateSOPInstanceObservationCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateSOPInstanceObservationSOPInstanceObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return SOPInstanceObservationOperations.validateSOPInstanceObservationSOPInstanceObservation(
@@ -123,10 +127,10 @@ public class SOPInstanceObservationImpl extends ObservationImpl implements SOPIn
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateSOPInstanceObservationPurposeofReferenceObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return SOPInstanceObservationOperations.validateSOPInstanceObservationPurposeofReferenceObservation(
@@ -134,10 +138,10 @@ public class SOPInstanceObservationImpl extends ObservationImpl implements SOPIn
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateSOPInstanceObservationReferencedFramesObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return SOPInstanceObservationOperations.validateSOPInstanceObservationReferencedFramesObservation(
@@ -145,37 +149,37 @@ public class SOPInstanceObservationImpl extends ObservationImpl implements SOPIn
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public EList<SOPInstanceObservation> getSOPInstanceObservations() {
 		return SOPInstanceObservationOperations.getSOPInstanceObservations(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public EList<PurposeofReferenceObservation> getPurposeofReferenceObservations() {
 		return SOPInstanceObservationOperations.getPurposeofReferenceObservations(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public EList<ReferencedFramesObservation> getReferencedFramesObservations() {
 		return SOPInstanceObservationOperations.getReferencedFramesObservations(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public SOPInstanceObservation init() {
 		CDAUtil.init(this);
 		return this;

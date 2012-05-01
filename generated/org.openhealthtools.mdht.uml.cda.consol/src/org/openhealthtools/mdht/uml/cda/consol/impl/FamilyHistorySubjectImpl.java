@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2011, 2012 Sean Muir and others.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     Sean Muir (JKM Software) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.util.Map;
@@ -27,29 +31,29 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class FamilyHistorySubjectImpl extends SubjectImpl implements FamilyHistorySubject {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected FamilyHistorySubjectImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.FAMILY_HISTORY_SUBJECT;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateFamilyHistorySubjectRelatedSubjectClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return FamilyHistorySubjectOperations.validateFamilyHistorySubjectRelatedSubjectClassCode(
@@ -57,20 +61,20 @@ public class FamilyHistorySubjectImpl extends SubjectImpl implements FamilyHisto
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateFamilyHistorySubjectRelatedSubjectCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return FamilyHistorySubjectOperations.validateFamilyHistorySubjectRelatedSubjectCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateFamilyHistorySubjectRelatedSubjectCodeValueSet(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return FamilyHistorySubjectOperations.validateFamilyHistorySubjectRelatedSubjectCodeValueSet(
@@ -78,10 +82,10 @@ public class FamilyHistorySubjectImpl extends SubjectImpl implements FamilyHisto
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateFamilyHistorySubjectRelatedSubjectSubject(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return FamilyHistorySubjectOperations.validateFamilyHistorySubjectRelatedSubjectSubject(
@@ -89,10 +93,10 @@ public class FamilyHistorySubjectImpl extends SubjectImpl implements FamilyHisto
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateFamilyHistorySubjectRelatedSubjectSubjectAdmGenderCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return FamilyHistorySubjectOperations.validateFamilyHistorySubjectRelatedSubjectSubjectAdmGenderCode(
@@ -100,10 +104,10 @@ public class FamilyHistorySubjectImpl extends SubjectImpl implements FamilyHisto
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateFamilyHistorySubjectRelatedSubjectSubjectBirthTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return FamilyHistorySubjectOperations.validateFamilyHistorySubjectRelatedSubjectSubjectBirthTime(
@@ -111,10 +115,10 @@ public class FamilyHistorySubjectImpl extends SubjectImpl implements FamilyHisto
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateFamilyHistorySubjectRelatedSubjectSubjectDeceasedInd(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return FamilyHistorySubjectOperations.validateFamilyHistorySubjectRelatedSubjectSubjectDeceasedInd(
@@ -122,10 +126,10 @@ public class FamilyHistorySubjectImpl extends SubjectImpl implements FamilyHisto
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateFamilyHistorySubjectRelatedSubjectSubjectDeceasedTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return FamilyHistorySubjectOperations.validateFamilyHistorySubjectRelatedSubjectSubjectDeceasedTime(
@@ -133,10 +137,10 @@ public class FamilyHistorySubjectImpl extends SubjectImpl implements FamilyHisto
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public FamilyHistorySubject init() {
 		CDAUtil.init(this);
 		return this;

@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2011, 2012 Sean Muir and others.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     Sean Muir (JKM Software) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.util.Map;
@@ -28,29 +32,29 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 public class MedicationInformationManufacturedMaterialImpl extends MaterialImpl implements
 		MedicationInformationManufacturedMaterial {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected MedicationInformationManufacturedMaterialImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.MEDICATION_INFORMATION_MANUFACTURED_MATERIAL;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationInformationManufacturedMaterialCodeOriginalText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationInformationManufacturedMaterialOperations.validateMedicationInformationManufacturedMaterialCodeOriginalText(
@@ -58,10 +62,10 @@ public class MedicationInformationManufacturedMaterialImpl extends MaterialImpl 
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationInformationManufacturedMaterialReference(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationInformationManufacturedMaterialOperations.validateMedicationInformationManufacturedMaterialReference(
@@ -69,10 +73,10 @@ public class MedicationInformationManufacturedMaterialImpl extends MaterialImpl 
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationInformationManufacturedMaterialCodeTranslation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationInformationManufacturedMaterialOperations.validateMedicationInformationManufacturedMaterialCodeTranslation(
@@ -80,10 +84,10 @@ public class MedicationInformationManufacturedMaterialImpl extends MaterialImpl 
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationInformationManufacturedMaterialCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationInformationManufacturedMaterialOperations.validateMedicationInformationManufacturedMaterialCode(
@@ -91,10 +95,10 @@ public class MedicationInformationManufacturedMaterialImpl extends MaterialImpl 
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public MedicationInformationManufacturedMaterial init() {
 		CDAUtil.init(this);
 		return this;

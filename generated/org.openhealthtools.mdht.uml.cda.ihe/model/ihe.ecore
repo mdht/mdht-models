@@ -563,9 +563,11 @@
   <eClassifiers xsi:type="ecore:EClass" name="ProblemEntry" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.ccd/model/ccd.ecore#//ProblemObservation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="constraints.validation.dependOn.ProblemEntryCode" value="ProblemEntryCodeP"/>
+      <details key="code.codeSystemName" value="SNOMEDCT"/>
       <details key="constraints.validation.info" value="ProblemEntryCode ProblemEntrySeverity ProblemEntryProblemStatusObservation ProblemEntryHealthStatusObservation ProblemEntryComment"/>
       <details key="templateId.root" value="1.3.6.1.4.1.19376.1.5.3.1.4.5"/>
       <details key="constraints.validation.error" value="ProblemEntryTemplateId ProblemEntryHasTextReference ProblemEntryCommentInversionInd ProblemEntryId ProblemEntryText ProblemEntryValue"/>
+      <details key="code.codeSystem" value="2.16.840.1.113883.6.96"/>
       <details key="constraints.validation.warning" value="ProblemEntryCodeP ProblemEntryEffectiveTime"/>
     </eAnnotations>
     <eOperations name="ProblemEntryHasTextReference" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">

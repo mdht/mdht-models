@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2011, 2012 Sean Muir and others.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     Sean Muir (JKM Software) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.util.Map;
@@ -28,29 +32,29 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 public class ImmunizationMedicationInformationManufacturedMaterialImpl extends MaterialImpl implements
 		ImmunizationMedicationInformationManufacturedMaterial {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected ImmunizationMedicationInformationManufacturedMaterialImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateImmunizationMedicationInformationManufacturedMaterialCodeOriginalText(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ImmunizationMedicationInformationManufacturedMaterialOperations.validateImmunizationMedicationInformationManufacturedMaterialCodeOriginalText(
@@ -58,10 +62,10 @@ public class ImmunizationMedicationInformationManufacturedMaterialImpl extends M
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateImmunizationMedicationInformationManufacturedMaterialOriginalTextReference(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ImmunizationMedicationInformationManufacturedMaterialOperations.validateImmunizationMedicationInformationManufacturedMaterialOriginalTextReference(
@@ -69,10 +73,10 @@ public class ImmunizationMedicationInformationManufacturedMaterialImpl extends M
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateImmunizationMedicationInformationManufacturedMaterialCodeTranslation(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ImmunizationMedicationInformationManufacturedMaterialOperations.validateImmunizationMedicationInformationManufacturedMaterialCodeTranslation(
@@ -80,10 +84,10 @@ public class ImmunizationMedicationInformationManufacturedMaterialImpl extends M
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateImmunizationMedicationInformationManufacturedMaterialCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ImmunizationMedicationInformationManufacturedMaterialOperations.validateImmunizationMedicationInformationManufacturedMaterialCode(
@@ -91,10 +95,10 @@ public class ImmunizationMedicationInformationManufacturedMaterialImpl extends M
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateImmunizationMedicationInformationManufacturedMaterialLotNumberText(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ImmunizationMedicationInformationManufacturedMaterialOperations.validateImmunizationMedicationInformationManufacturedMaterialLotNumberText(
@@ -102,10 +106,10 @@ public class ImmunizationMedicationInformationManufacturedMaterialImpl extends M
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public ImmunizationMedicationInformationManufacturedMaterial init() {
 		CDAUtil.init(this);
 		return this;
