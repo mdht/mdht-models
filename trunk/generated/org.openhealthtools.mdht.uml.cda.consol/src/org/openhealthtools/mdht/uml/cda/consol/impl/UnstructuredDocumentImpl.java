@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2011, 2012 Sean Muir and others.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     Sean Muir (JKM Software) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.util.Map;
@@ -26,74 +30,74 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class UnstructuredDocumentImpl extends GeneralHeaderConstraintsImpl implements UnstructuredDocument {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected UnstructuredDocumentImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.UNSTRUCTURED_DOCUMENT;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateUnstructuredDocumentTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return UnstructuredDocumentOperations.validateUnstructuredDocumentTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateUnstructuredDocumentRecordTarget(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return UnstructuredDocumentOperations.validateUnstructuredDocumentRecordTarget(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateUnstructuredDocumentAuthor(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return UnstructuredDocumentOperations.validateUnstructuredDocumentAuthor(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateUnstructuredDocumentComponent(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return UnstructuredDocumentOperations.validateUnstructuredDocumentComponent(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateUnstructuredDocumentCustodian(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return UnstructuredDocumentOperations.validateUnstructuredDocumentCustodian(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateUnstructuredDocumentRecordTargetPatientRole2Id(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return UnstructuredDocumentOperations.validateUnstructuredDocumentRecordTargetPatientRole2Id(
@@ -101,10 +105,10 @@ public class UnstructuredDocumentImpl extends GeneralHeaderConstraintsImpl imple
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateUnstructuredDocumentAuthorAssignedAuthor2Addr(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return UnstructuredDocumentOperations.validateUnstructuredDocumentAuthorAssignedAuthor2Addr(
@@ -112,10 +116,10 @@ public class UnstructuredDocumentImpl extends GeneralHeaderConstraintsImpl imple
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateUnstructuredDocumentAuthorAssignedAuthor2Telecom(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return UnstructuredDocumentOperations.validateUnstructuredDocumentAuthorAssignedAuthor2Telecom(
@@ -123,10 +127,10 @@ public class UnstructuredDocumentImpl extends GeneralHeaderConstraintsImpl imple
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationAddr(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return UnstructuredDocumentOperations.validateUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationAddr(
@@ -134,10 +138,10 @@ public class UnstructuredDocumentImpl extends GeneralHeaderConstraintsImpl imple
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationId(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return UnstructuredDocumentOperations.validateUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationId(
@@ -145,10 +149,10 @@ public class UnstructuredDocumentImpl extends GeneralHeaderConstraintsImpl imple
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationName(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return UnstructuredDocumentOperations.validateUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationName(
@@ -156,10 +160,10 @@ public class UnstructuredDocumentImpl extends GeneralHeaderConstraintsImpl imple
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationTelecom(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return UnstructuredDocumentOperations.validateUnstructuredDocumentCustodianAssignedCustodian3CustodianOrganizationTelecom(
@@ -167,10 +171,10 @@ public class UnstructuredDocumentImpl extends GeneralHeaderConstraintsImpl imple
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateUnstructuredDocumentCustodianAssignedCustodian2(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return UnstructuredDocumentOperations.validateUnstructuredDocumentCustodianAssignedCustodian2(
@@ -178,10 +182,10 @@ public class UnstructuredDocumentImpl extends GeneralHeaderConstraintsImpl imple
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	public UnstructuredDocument init() {
 		CDAUtil.init(this);

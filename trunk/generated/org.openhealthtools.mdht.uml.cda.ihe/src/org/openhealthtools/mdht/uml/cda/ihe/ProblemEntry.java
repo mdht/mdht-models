@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2009, 2011 David A Carlson and others.
+ * Copyright (c) 2009, 2012 David A Carlson and others.
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
  * which accompanies this distribution, and is available at
@@ -23,7 +23,7 @@ import org.openhealthtools.mdht.uml.cda.ccd.ProblemObservation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ihe.IHEPackage#getProblemEntry()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.dependOn.ProblemEntryCode='ProblemEntryCodeP' constraints.validation.info='ProblemEntryCode ProblemEntrySeverity ProblemEntryProblemStatusObservation ProblemEntryHealthStatusObservation ProblemEntryComment' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.5' constraints.validation.error='ProblemEntryTemplateId ProblemEntryHasTextReference ProblemEntryCommentInversionInd ProblemEntryId ProblemEntryText ProblemEntryValue' constraints.validation.warning='ProblemEntryCodeP ProblemEntryEffectiveTime'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.dependOn.ProblemEntryCode='ProblemEntryCodeP' code.codeSystemName='SNOMEDCT' constraints.validation.info='ProblemEntryCode ProblemEntrySeverity ProblemEntryProblemStatusObservation ProblemEntryHealthStatusObservation ProblemEntryComment' templateId.root='1.3.6.1.4.1.19376.1.5.3.1.4.5' constraints.validation.error='ProblemEntryTemplateId ProblemEntryHasTextReference ProblemEntryCommentInversionInd ProblemEntryId ProblemEntryText ProblemEntryValue' code.codeSystem='2.16.840.1.113883.6.96' constraints.validation.warning='ProblemEntryCodeP ProblemEntryEffectiveTime'"
  * @generated
  */
 public interface ProblemEntry extends ProblemObservation {

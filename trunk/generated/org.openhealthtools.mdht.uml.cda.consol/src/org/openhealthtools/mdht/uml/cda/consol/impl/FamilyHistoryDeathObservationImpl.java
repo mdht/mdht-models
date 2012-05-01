@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2011, 2012 Sean Muir and others.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     Sean Muir (JKM Software) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.util.Map;
@@ -27,29 +31,29 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class FamilyHistoryDeathObservationImpl extends ObservationImpl implements FamilyHistoryDeathObservation {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected FamilyHistoryDeathObservationImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.FAMILY_HISTORY_DEATH_OBSERVATION;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateFamilyHistoryDeathObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationTemplateId(
@@ -57,10 +61,10 @@ public class FamilyHistoryDeathObservationImpl extends ObservationImpl implement
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateFamilyHistoryDeathObservationClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationClassCode(
@@ -68,10 +72,10 @@ public class FamilyHistoryDeathObservationImpl extends ObservationImpl implement
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateFamilyHistoryDeathObservationMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationMoodCode(
@@ -79,20 +83,20 @@ public class FamilyHistoryDeathObservationImpl extends ObservationImpl implement
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateFamilyHistoryDeathObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationCode(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateFamilyHistoryDeathObservationStatusCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationStatusCode(
@@ -100,20 +104,20 @@ public class FamilyHistoryDeathObservationImpl extends ObservationImpl implement
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateFamilyHistoryDeathObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationValue(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public FamilyHistoryDeathObservation init() {
 		CDAUtil.init(this);
 		return this;

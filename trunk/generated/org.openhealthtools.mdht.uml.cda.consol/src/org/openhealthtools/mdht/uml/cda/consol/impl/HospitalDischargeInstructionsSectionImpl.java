@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2011, 2012 Sean Muir and others.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     Sean Muir (JKM Software) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.util.Map;
@@ -28,29 +32,29 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 public class HospitalDischargeInstructionsSectionImpl extends SectionImpl implements
 		HospitalDischargeInstructionsSection {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected HospitalDischargeInstructionsSectionImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateHospitalDischargeInstructionsSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HospitalDischargeInstructionsSectionOperations.validateHospitalDischargeInstructionsSectionTemplateId(
@@ -58,10 +62,10 @@ public class HospitalDischargeInstructionsSectionImpl extends SectionImpl implem
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateHospitalDischargeInstructionsSectionCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HospitalDischargeInstructionsSectionOperations.validateHospitalDischargeInstructionsSectionCode(
@@ -69,10 +73,10 @@ public class HospitalDischargeInstructionsSectionImpl extends SectionImpl implem
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateHospitalDischargeInstructionsSectionText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HospitalDischargeInstructionsSectionOperations.validateHospitalDischargeInstructionsSectionText(
@@ -80,10 +84,10 @@ public class HospitalDischargeInstructionsSectionImpl extends SectionImpl implem
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateHospitalDischargeInstructionsSectionTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HospitalDischargeInstructionsSectionOperations.validateHospitalDischargeInstructionsSectionTitle(
@@ -91,10 +95,10 @@ public class HospitalDischargeInstructionsSectionImpl extends SectionImpl implem
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public HospitalDischargeInstructionsSection init() {
 		CDAUtil.init(this);
 		return this;

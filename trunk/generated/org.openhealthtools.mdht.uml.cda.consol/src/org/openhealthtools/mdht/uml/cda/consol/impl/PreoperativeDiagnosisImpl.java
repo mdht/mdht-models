@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2011, 2012 Sean Muir and others.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     Sean Muir (JKM Software) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.util.Map;
@@ -28,65 +32,65 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class PreoperativeDiagnosisImpl extends ActImpl implements PreoperativeDiagnosis {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected PreoperativeDiagnosisImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.PREOPERATIVE_DIAGNOSIS;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePreoperativeDiagnosisTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PreoperativeDiagnosisOperations.validatePreoperativeDiagnosisTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePreoperativeDiagnosisClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PreoperativeDiagnosisOperations.validatePreoperativeDiagnosisClassCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePreoperativeDiagnosisCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PreoperativeDiagnosisOperations.validatePreoperativeDiagnosisCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePreoperativeDiagnosisMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PreoperativeDiagnosisOperations.validatePreoperativeDiagnosisMoodCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePreoperativeDiagnosisProblemObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PreoperativeDiagnosisOperations.validatePreoperativeDiagnosisProblemObservation(
@@ -94,19 +98,19 @@ public class PreoperativeDiagnosisImpl extends ActImpl implements PreoperativeDi
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public ProblemObservation getProblemObservation() {
 		return PreoperativeDiagnosisOperations.getProblemObservation(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public PreoperativeDiagnosis init() {
 		CDAUtil.init(this);
 		return this;

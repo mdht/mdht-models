@@ -1,4 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?><!--
+    Copyright (c) 2009, 2012 David A Carlson and others.
+    All rights reserved. This program and the accompanying materials
+    are made available under the terms of the Eclipse Public License v1.0
+    which accompanies this distribution, and is available at
+    http://www.eclipse.org/legal/epl-v10.html
+   
+    Contributors:
+        David A Carlson (XMLmodeling.com) - initial API and implementation
+ -->
+
 <!-- The following sample document depicts a fictional character’s health summary. 
 	Any resemblance to a real person is coincidental. -->
 <ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"

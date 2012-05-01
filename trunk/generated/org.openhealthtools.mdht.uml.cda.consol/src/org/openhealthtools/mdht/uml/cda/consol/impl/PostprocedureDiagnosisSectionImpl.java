@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2011, 2012 Sean Muir and others.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     Sean Muir (JKM Software) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
 import java.util.Map;
@@ -28,29 +32,29 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class PostprocedureDiagnosisSectionImpl extends SectionImpl implements PostprocedureDiagnosisSection {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected PostprocedureDiagnosisSectionImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.POSTPROCEDURE_DIAGNOSIS_SECTION;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePostprocedureDiagnosisSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PostprocedureDiagnosisSectionOperations.validatePostprocedureDiagnosisSectionTemplateId(
@@ -58,40 +62,40 @@ public class PostprocedureDiagnosisSectionImpl extends SectionImpl implements Po
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePostprocedureDiagnosisSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PostprocedureDiagnosisSectionOperations.validatePostprocedureDiagnosisSectionCode(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePostprocedureDiagnosisSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PostprocedureDiagnosisSectionOperations.validatePostprocedureDiagnosisSectionText(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePostprocedureDiagnosisSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PostprocedureDiagnosisSectionOperations.validatePostprocedureDiagnosisSectionTitle(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validatePostprocedureDiagnosisSectionPostprocedureDiagnosis(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PostprocedureDiagnosisSectionOperations.validatePostprocedureDiagnosisSectionPostprocedureDiagnosis(
@@ -99,19 +103,19 @@ public class PostprocedureDiagnosisSectionImpl extends SectionImpl implements Po
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public PostprocedureDiagnosis getPostprocedureDiagnosis() {
 		return PostprocedureDiagnosisSectionOperations.getPostprocedureDiagnosis(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public PostprocedureDiagnosisSection init() {
 		CDAUtil.init(this);
 		return this;

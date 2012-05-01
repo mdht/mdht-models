@@ -1,9 +1,13 @@
-/**
- * <copyright>
- * </copyright>
+/*******************************************************************************
+ * Copyright (c) 2011, 2012 Sean Muir and others.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
  *
- * $Id$
- */
+ * Contributors:
+ *     Sean Muir (JKM Software) - initial API and implementation
+ *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.operations;
 
 import java.util.Map;
@@ -40,45 +44,45 @@ import org.openhealthtools.mdht.uml.cda.operations.MaterialOperations;
  */
 public class ImmunizationMedicationInformationManufacturedMaterialOperations extends MaterialOperations {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected ImmunizationMedicationInformationManufacturedMaterialOperations() {
 		super();
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateImmunizationMedicationInformationManufacturedMaterialCodeOriginalText(ImmunizationMedicationInformationManufacturedMaterial, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Medication Information Manufactured Material Code Original Text</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateImmunizationMedicationInformationManufacturedMaterialCodeOriginalText(ImmunizationMedicationInformationManufacturedMaterial, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Medication Information Manufactured Material Code Original Text</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateImmunizationMedicationInformationManufacturedMaterialCodeOriginalText(ImmunizationMedicationInformationManufacturedMaterial, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateImmunizationMedicationInformationManufacturedMaterialCodeOriginalText(ImmunizationMedicationInformationManufacturedMaterial, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_CODE_ORIGINAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.code.oclIsUndefined() implies self.code.originalText->size() = 1";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateImmunizationMedicationInformationManufacturedMaterialCodeOriginalText(ImmunizationMedicationInformationManufacturedMaterial, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Medication Information Manufactured Material Code Original Text</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateImmunizationMedicationInformationManufacturedMaterialCodeOriginalText(ImmunizationMedicationInformationManufacturedMaterial, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Medication Information Manufactured Material Code Original Text</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateImmunizationMedicationInformationManufacturedMaterialCodeOriginalText(ImmunizationMedicationInformationManufacturedMaterial, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateImmunizationMedicationInformationManufacturedMaterialCodeOriginalText(ImmunizationMedicationInformationManufacturedMaterial, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static Constraint VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_CODE_ORIGINAL_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* not self.code.oclIsUndefined() implies self.code.originalText->size() = 1
-	* @param immunizationMedicationInformationManufacturedMaterial The receiving '<em><b>Immunization Medication Information Manufactured Material</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * not self.code.oclIsUndefined() implies self.code.originalText->size() = 1
+	 * @param immunizationMedicationInformationManufacturedMaterial The receiving '<em><b>Immunization Medication Information Manufactured Material</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static boolean validateImmunizationMedicationInformationManufacturedMaterialCodeOriginalText(
 			ImmunizationMedicationInformationManufacturedMaterial immunizationMedicationInformationManufacturedMaterial,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -110,36 +114,36 @@ public class ImmunizationMedicationInformationManufacturedMaterialOperations ext
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateImmunizationMedicationInformationManufacturedMaterialOriginalTextReference(ImmunizationMedicationInformationManufacturedMaterial, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Medication Information Manufactured Material Original Text Reference</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateImmunizationMedicationInformationManufacturedMaterialOriginalTextReference(ImmunizationMedicationInformationManufacturedMaterial, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Medication Information Manufactured Material Original Text Reference</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateImmunizationMedicationInformationManufacturedMaterialOriginalTextReference(ImmunizationMedicationInformationManufacturedMaterial, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateImmunizationMedicationInformationManufacturedMaterialOriginalTextReference(ImmunizationMedicationInformationManufacturedMaterial, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_ORIGINAL_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.code.originalText->size() = 1 implies not self.code.originalText.reference.value.oclIsUndefined()";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateImmunizationMedicationInformationManufacturedMaterialOriginalTextReference(ImmunizationMedicationInformationManufacturedMaterial, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Medication Information Manufactured Material Original Text Reference</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateImmunizationMedicationInformationManufacturedMaterialOriginalTextReference(ImmunizationMedicationInformationManufacturedMaterial, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Medication Information Manufactured Material Original Text Reference</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateImmunizationMedicationInformationManufacturedMaterialOriginalTextReference(ImmunizationMedicationInformationManufacturedMaterial, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateImmunizationMedicationInformationManufacturedMaterialOriginalTextReference(ImmunizationMedicationInformationManufacturedMaterial, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static Constraint VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_ORIGINAL_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* self.code.originalText->size() = 1 implies not self.code.originalText.reference.value.oclIsUndefined()
-	* @param immunizationMedicationInformationManufacturedMaterial The receiving '<em><b>Immunization Medication Information Manufactured Material</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * self.code.originalText->size() = 1 implies not self.code.originalText.reference.value.oclIsUndefined()
+	 * @param immunizationMedicationInformationManufacturedMaterial The receiving '<em><b>Immunization Medication Information Manufactured Material</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static boolean validateImmunizationMedicationInformationManufacturedMaterialOriginalTextReference(
 			ImmunizationMedicationInformationManufacturedMaterial immunizationMedicationInformationManufacturedMaterial,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -171,36 +175,36 @@ public class ImmunizationMedicationInformationManufacturedMaterialOperations ext
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateImmunizationMedicationInformationManufacturedMaterialCodeTranslation(ImmunizationMedicationInformationManufacturedMaterial, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Medication Information Manufactured Material Code Translation</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateImmunizationMedicationInformationManufacturedMaterialCodeTranslation(ImmunizationMedicationInformationManufacturedMaterial, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Medication Information Manufactured Material Code Translation</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateImmunizationMedicationInformationManufacturedMaterialCodeTranslation(ImmunizationMedicationInformationManufacturedMaterial, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateImmunizationMedicationInformationManufacturedMaterialCodeTranslation(ImmunizationMedicationInformationManufacturedMaterial, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_CODE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.code->size() = 1 implies self.code.translation->size() > 0";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateImmunizationMedicationInformationManufacturedMaterialCodeTranslation(ImmunizationMedicationInformationManufacturedMaterial, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Medication Information Manufactured Material Code Translation</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateImmunizationMedicationInformationManufacturedMaterialCodeTranslation(ImmunizationMedicationInformationManufacturedMaterial, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Medication Information Manufactured Material Code Translation</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateImmunizationMedicationInformationManufacturedMaterialCodeTranslation(ImmunizationMedicationInformationManufacturedMaterial, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateImmunizationMedicationInformationManufacturedMaterialCodeTranslation(ImmunizationMedicationInformationManufacturedMaterial, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static Constraint VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_CODE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* self.code->size() = 1 implies self.code.translation->size() > 0
-	* @param immunizationMedicationInformationManufacturedMaterial The receiving '<em><b>Immunization Medication Information Manufactured Material</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * self.code->size() = 1 implies self.code.translation->size() > 0
+	 * @param immunizationMedicationInformationManufacturedMaterial The receiving '<em><b>Immunization Medication Information Manufactured Material</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static boolean validateImmunizationMedicationInformationManufacturedMaterialCodeTranslation(
 			ImmunizationMedicationInformationManufacturedMaterial immunizationMedicationInformationManufacturedMaterial,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -232,41 +236,41 @@ public class ImmunizationMedicationInformationManufacturedMaterialOperations ext
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateImmunizationMedicationInformationManufacturedMaterialCode(ImmunizationMedicationInformationManufacturedMaterial, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Medication Information Manufactured Material Code</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateImmunizationMedicationInformationManufacturedMaterialCode(ImmunizationMedicationInformationManufacturedMaterial, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Medication Information Manufactured Material Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateImmunizationMedicationInformationManufacturedMaterialCode(ImmunizationMedicationInformationManufacturedMaterial, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateImmunizationMedicationInformationManufacturedMaterialCode(ImmunizationMedicationInformationManufacturedMaterial, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
 			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
 			+ "value.codeSystem = '2.16.840.1.113883.6.59' and not value.code.oclIsUndefined())";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateImmunizationMedicationInformationManufacturedMaterialCode(ImmunizationMedicationInformationManufacturedMaterial, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Medication Information Manufactured Material Code</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateImmunizationMedicationInformationManufacturedMaterialCode(ImmunizationMedicationInformationManufacturedMaterial, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Medication Information Manufactured Material Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateImmunizationMedicationInformationManufacturedMaterialCode(ImmunizationMedicationInformationManufacturedMaterial, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateImmunizationMedicationInformationManufacturedMaterialCode(ImmunizationMedicationInformationManufacturedMaterial, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 
 	protected static Constraint VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
-	* let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
-	* value.codeSystem = '2.16.840.1.113883.6.59' and not value.code.oclIsUndefined())
-	* @param immunizationMedicationInformationManufacturedMaterial The receiving '<em><b>Immunization Medication Information Manufactured Material</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
+	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+	 * value.codeSystem = '2.16.840.1.113883.6.59' and not value.code.oclIsUndefined())
+	 * @param immunizationMedicationInformationManufacturedMaterial The receiving '<em><b>Immunization Medication Information Manufactured Material</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 
 	public static boolean validateImmunizationMedicationInformationManufacturedMaterialCode(
 			ImmunizationMedicationInformationManufacturedMaterial immunizationMedicationInformationManufacturedMaterial,
@@ -299,36 +303,36 @@ public class ImmunizationMedicationInformationManufacturedMaterialOperations ext
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateImmunizationMedicationInformationManufacturedMaterialLotNumberText(ImmunizationMedicationInformationManufacturedMaterial, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Medication Information Manufactured Material Lot Number Text</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateImmunizationMedicationInformationManufacturedMaterialLotNumberText(ImmunizationMedicationInformationManufacturedMaterial, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Medication Information Manufactured Material Lot Number Text</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateImmunizationMedicationInformationManufacturedMaterialLotNumberText(ImmunizationMedicationInformationManufacturedMaterial, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateImmunizationMedicationInformationManufacturedMaterialLotNumberText(ImmunizationMedicationInformationManufacturedMaterial, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_LOT_NUMBER_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.lotNumberText.oclIsUndefined() or self.lotNumberText.isNullFlavorUndefined()) implies (not self.lotNumberText.oclIsUndefined())";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateImmunizationMedicationInformationManufacturedMaterialLotNumberText(ImmunizationMedicationInformationManufacturedMaterial, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Medication Information Manufactured Material Lot Number Text</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateImmunizationMedicationInformationManufacturedMaterialLotNumberText(ImmunizationMedicationInformationManufacturedMaterial, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Immunization Medication Information Manufactured Material Lot Number Text</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateImmunizationMedicationInformationManufacturedMaterialLotNumberText(ImmunizationMedicationInformationManufacturedMaterial, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateImmunizationMedicationInformationManufacturedMaterialLotNumberText(ImmunizationMedicationInformationManufacturedMaterial, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static Constraint VALIDATE_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_LOT_NUMBER_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* (self.lotNumberText.oclIsUndefined() or self.lotNumberText.isNullFlavorUndefined()) implies (not self.lotNumberText.oclIsUndefined())
-	* @param immunizationMedicationInformationManufacturedMaterial The receiving '<em><b>Immunization Medication Information Manufactured Material</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * (self.lotNumberText.oclIsUndefined() or self.lotNumberText.isNullFlavorUndefined()) implies (not self.lotNumberText.oclIsUndefined())
+	 * @param immunizationMedicationInformationManufacturedMaterial The receiving '<em><b>Immunization Medication Information Manufactured Material</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static boolean validateImmunizationMedicationInformationManufacturedMaterialLotNumberText(
 			ImmunizationMedicationInformationManufacturedMaterial immunizationMedicationInformationManufacturedMaterial,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
