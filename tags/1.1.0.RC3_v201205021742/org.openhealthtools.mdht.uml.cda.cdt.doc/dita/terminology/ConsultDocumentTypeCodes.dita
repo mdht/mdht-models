@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Consult Document Type Codes</title>
+<prolog id="prolog">
+<resourceid id="not specified"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table><tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>ConsultDocumentTypeCodes - (OID not specified)</entry></row>
+<row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
+<row><entry>Source</entry><entry>Health Level Seven (HL7)</entry></row>
+<row><entry>Definition</entry><entry>LOINC codes whose scale is DOC, and whose type of service (component) is Consultation Note. Document type codes for "Blood Bank Consultation," "Confirmatory Consultation Note," or those codes giving "Hospital Consultation" as type of service (18841-7 and 8647-0) are not allowed as document type codes. In their place, the code 34104-0 with types of service = Consultation Note and setting = hospital should be used.</entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>

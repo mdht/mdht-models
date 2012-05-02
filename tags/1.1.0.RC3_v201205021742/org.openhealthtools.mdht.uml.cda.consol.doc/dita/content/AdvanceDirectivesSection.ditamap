@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+	<title>Advance Directives Section</title>
+	<topicref href="../classes/AdvanceDirectivesSection.dita" type="topic" >
+		<topicref href="../classes/AdvanceDirectivesSectionTable.dita" type="topic" />
+		<topicref href="../classes/AdvanceDirectivesSectionSample.dita" type="topic" />	
+	</topicref>
+</map>
+

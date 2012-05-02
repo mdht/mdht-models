@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Combination Medication - conformance rules</title>
+<shortdesc id="shortdesc">[SubstanceAdministration: templateId <tt>1.3.6.1.4.1.19376.1.5.3.1.4.11</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>SubstanceAdministration</category></metadata>
+<resourceid id="1.3.6.1.4.1.19376.1.5.3.1.4.11"/>
+</prolog>
+<body>
+<section id="description">
+<p>
+This template identifier is used to identify medication administration events that require special
+processing to handle combination medications. The parent template is
+1.3.6.1.4.1.19376.1.5.3.1.4.7. A combination medication is made up of two or more other
+medications. These may be prepackaged, such as Percocet, which is a combination of
+Acetaminophen and oxycodone in predefined ratios, or prepared by a pharmacist, such as a GI
+cocktail.
+</p>
+<p>
+In the case of the prepackaged combination, it is sufficient to supply the name of the
+combination drug product, and its strength designation in a single &lt;substanceAdministation>
+entry. The dosing information should then be recorded as simply a count of administration units.
+In the latter case of a prepared mixture, the description of the mixture should be provided as the
+product name (e.g., "GI Cocktail") , in the &lt;substanceAdministration> entry. That entry may, but
+is not required, to have subordinate &lt;substanceAdministration> entries included beneath it to record the components of the mixture.
+</p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> conform to <xref href="../Medication.dita">Medication</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.7</tt>)</li>
+<li><b>SHALL</b> satisfy: Subordinate &lt;substanceAdminstration&gt; entries are included to record the components of the prepared mixture. If medication is a prepackaged mixture, a single &lt;substanceAdministration&gt; entry is sufficient.<ul><li><codeblock>[OCL]: not self.entryRelationship.substanceAdministration-&gt;isEmpty()</codeblock></li></ul></li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/MedicationActivity.html">CCD Medication Activity</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.24</tt>)</li>
+<li><b>SHALL</b> conform to <xref href="../Medication.dita">Medication</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.7</tt>)</li>
+<li>Contains exactly one [1..1] <tt><b>@classCode</b>="SBADM" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>), where its data type is ActClass
+</li>
+<li>Contains exactly one [1..1] <tt><b>@moodCode</b></tt>, where its data type is x_DocumentSubstanceMood
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF-306)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CodeSystem:<tt> 2.16.840.1.113883.6.96 SNOMEDCT</tt>)
+<ul><li>The &lt;code> element is used to supply a code that describes the &lt;substanceAdminstration> act,
+not the medication being administered or prescribed. This may be a procedure code, such as
+those found in CPT-4 (and often used for billing), or may describe the method of medication
+administration, such as by intravenous injection. The type of medication is coded in the
+consumable, do not supply the code for the medication in this element. This element is optional.</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt> (CONF-307)
+<ul><li>The status of all 'substanceAdministration' elements must be "completed". The act has either
+occurred, or the request or order has been placed.</li></ul></li>
+<li><b>SHALL</b> contain  [0..2] <tt><b>effectiveTime</b></tt> (CONF-308)
+</li>
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>routeCode</b></tt> (CodeSystem:<tt> 2.16.840.1.113883.5.112 HL7 RouteOfAdministration</tt>) (CONF-309, CONF-310)
+</li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>approachSiteCode</b></tt>
+<ul><li>The site where the medication is administered, usually used with IV or topical drugs. The &lt;approachSiteCode> element describes the site of medication administrion. It may be coded
+to a controlled vocabulary that lists such sites (e.g., SNOMED-CT). In CDA documents, this
+4805 element contains a URI in the value attribute of the &lt;reference> that points to the text in the
+narrative identifying the site. In a message, the &lt;originalText> element shall contain the text
+identifying the site.</li></ul></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>doseQuantity</b></tt>
+<ul><li>The amount of the medication given. This should be in some known and measurable unit, such as grams, milligrams, et cetera. It may be measured in 'administration' units (such as tablets or each), for medications where the strength is relevant. In this case, only the unit count is specified , no units are specified. It may be a range.</li></ul></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>rateQuantity</b></tt>
+<ul><li>The rate is a measurement of how fast the dose is given to the patient over time (e.g., .5 liter / 1 hr), and is often used with IV drugs.</li></ul></li>
+<li><b>MAY</b> contain exactly one [1..1] <tt><b>maxDoseQuantity</b></tt> (CONF-312)
+<ul><li>represents a maximum dose limit</li></ul></li>
+<li>Contains exactly one [1..1] <tt><b>consumable</b></tt>, where its type is <xref href="../Consumable.dita">Consumable</xref>
+</li>
+<li><b>MAY</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt> (CONF-338, CONF-339), such that
+<ol>
+<li>Contains <tt><b>@typeCode="</b>SUBJ" </tt><i>SUBJ (has subject)</i></li>
+<li>Contains exactly one [1..1] <xref href="../MedicationSeriesNumberObservation.dita">Medication Series Number Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.46</tt>)</li></ol></li>
+<li><b>MAY</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt> (CONF-350), such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../MedicationStatusObservation.dita">Medication Status Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.47</tt>)</li></ol></li>
+<li><b>MAY</b> contain at least one [1..*] <tt><b>performer</b></tt> (CONF-313), such that
+<ul><li>Indicates the person administering a substance.</li></ul></li>
+<li><b>MAY</b> contain at least one [1..*] <tt><b>entryRelationship</b></tt> (CONF-348, CONF-349), such that
+<ol>
+<li>Contains <tt><b>@typeCode="</b>CAUS" </tt><i>CAUS (is etiology for)</i></li>
+<li>Contains exactly one [1..1] <xref href="../ReactionObservation.dita">Reaction Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.54</tt>)</li></ol></li>
+<li><b>MAY</b> contain at least one [1..*] <tt><b>participant</b></tt> (CONF-368), such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../ProductInstance.dita">Product Instance</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.52</tt>)</li></ol></li>
+<li>Contains at least one [1..*] <tt><b>entryRelationship</b></tt>, such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../InternalReference.dita">Internal Reference</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.4.1</tt>)</li></ol><ul><li>Entry may indicate one or more reasons for the use of the
+medication. The extension and root of each observation present must match the identifier of a concern entry
+contained elsewhere within the CDA document.
+A consumer of the Medical Summary is encouraged, but not required to maintain these links on
+import.</li></ul></li>
+<li>Contains at least one [1..*] <tt><b>entryRelationship</b></tt>, such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PatientMedicalInstructions.dita">Patient Medical Instructions</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.3</tt>)</li></ol><ul><li>At most one instruction may be provided for each &lt;substanceAdministration> entry. The instructions
+shall contain any special case dosing instructions (e.g., split, tapered, or conditional dosing), and
+may contain other information (take with food, et cetera).</li></ul></li>
+<li>Contains exactly one [1..1] <tt><b>entryRelationship</b></tt>, such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../SupplyEntry.dita">Supply Entry</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.7.3</tt>)</li></ol></li>
+<li><b>SHALL</b> satisfy: Value for moodCode is "EVN" or "INT" 2.16.840.1.113883.5.1001 ActMood STATIC (CONF-305)<ul><li><codeblock>[OCL]: self.moodCode=vocab::x_DocumentSubstanceMood::EVN or self.moodCode=vocab::x_DocumentSubstanceMood::INT </codeblock></li></ul></li>
+<li><b>SHOULD</b> satisfy: Contains exactly one doseQuantity or rateQuantity. (CONF-311)<ul><li><codeblock>[OCL]: not self.doseQuantity.oclIsUndefined() or not self.rateQuantity.oclIsUndefined()</codeblock></li></ul></li>
+<li><b>MAY</b> satisfy: Has one or more associated consents, represented in the CCD Header as ClinicalDocument / authorization / consent. (CONF-314)<ul><li><codeblock>[OCL]: self.getClinicalDocument().authorization-&gt;size() &gt; 0 and self.getClinicalDocument().authorization.consent-&gt;size() &gt; 0</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: Contains one or more sources of information. (CONF-315)<ul><li><codeblock>[OCL]: not self.informant-&gt;isEmpty() 
+or not self.getSection().informant-&gt;isEmpty()
+or not self.getClinicalDocument().informant-&gt;isEmpty()
+or self.reference-&gt;exists(ref : cda::Reference | ref.typeCode = vocab::x_ActRelationshipExternalReference::XCRPT)
+or (self.entryRelationship-&gt;exists(rel : cda::EntryRelationship | 
+   rel.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR
+   and rel.observation.code.code = '48766-0'))</codeblock></li></ul></li>
+<li><b>MAY</b> satisfy: Contains one or more precondition / Criterion, to indicate that the medication is administered only when the associated (coded or free text) criteria are met. (CONF-327)<ul><li>Indicates that the medication is administered only when the associated (coded or free text) criteria are met.</li></ul><ul><li><codeblock>[OCL]: self.precondition-&gt;exists(precondition : cda::Precondition | not precondition.criterion.oclIsUndefined())</codeblock></li></ul></li>
+<li><b>MAY</b> satisfy: Contains one or more entryRelationship, where the value for @typeCode is "RSON" "Has reason" 2.16.840.1.113883.5.1002 ActRelationshipType STATIC. (CONF-328)<ul><li>The target of the relationship represents the indication for the activity.</li></ul><ul><li><codeblock>[OCL]: self.entryRelationship-&gt;exists(entryRel : cda::EntryRelationship | entryRel.typeCode = vocab::x_ActRelationshipEntryRelationship::RSON)</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: entryRelationship / @typeCode="RSON" in a medication activity has a target of problem act (templateId 2.16.840.1.113883.10.20.1.27), problem observation (templateId 2.16.840.1.113883.10.20.1.28), or some other clinical statement. (CONF-329)<ul><li><codeblock>[OCL]: self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::RSON, cda::ClinicalStatement)-&gt;forAll(target : 
+cda::ClinicalStatement | not target.oclIsUndefined() and 
+  (target.oclIsKindOf(ccd::ProblemAct) or target.oclIsKindOf(ccd::ProblemObservation)))</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: Contains exactly one consumable, the target of which is a Product template. (CONF-354)<ul><li><codeblock>[OCL]: self.consumable.manufacturedProduct.oclIsKindOf(ccd::Product)</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: Contains one dosing template to identify this entry as a particular type of medication event. Possible dosing templates: 1.3.6.1.4.1.19376.1.5.3.1.4.7.1 Normal Dosing, 1.3.6.1.4.1.19376.1.5.3.1.4.8, Tapered Dosing, 1.3.6.1.4.1.19376.1.5.3.1.4.9 Split Dosing, 1.3.6.1.4.1.19376.1.5.3.1.4.10 Conditional Dosing, 1.3.6.1.4.1.19376.1.5.3.1.4.11 Combination Dosing.<ul><li>There are a variety of special cases for dosing that need to be accounted for. 
+Most of these special cases involve changing the dosage or frequency over time, or based on
+some measurement. When the dosage changes, then additional entries are required for each differing dosage.</li></ul><ul><li><codeblock>[OCL]: self.templateId-&gt;exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.7.1') xor self.templateId-&gt;exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.8') xor self.templateId-&gt;exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.9') xor self.templateId-&gt;exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.10') xor self.templateId-&gt;exists(id : datatypes::II | id.root =  '1.3.6.1.4.1.19376.1.5.3.1.4.11')</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: contains one or more related components (&lt;entryRelationship typeCode='COMP'&gt;, either to handle split, tapered or conditional dosing, or to support combination medications.<ul><li>n the first three cases, the subordinate components shall specify only the changed &lt;frequency>
+and/or &lt;doseAmount> elements. For conditional dosing, each subordinate component shall have
+a &lt;precondition> element that specifies the &lt;observation> that must be obtained before
+administration of the dose. The value of the &lt;sequenceNumber> shall be an ordinal number,
+starting at 1 for the first component, and increasing by 1 for each subsequent component.
+Components shall be sent in &lt;sequenceNumber> order.</li></ul><ul><li><codeblock>[OCL]: self.templateId-&gt;exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.8') xor 
+self.templateId-&gt;exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.9') xor 
+self.templateId-&gt;exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.10') xor 
+self.templateId-&gt;exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.11') implies self.entryRelationship-&gt;exists(er | er.typeCode=vocab::x_ActRelationshipEntryRelationship::COMP)</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: Values from SNOMED CT shall be used in the &lt;code&gt; element to record that a patient is either not on medications, or that medications are not known.<ul><li><p>
+182904002 "Drug Treatment Unknown" (To indicate lack of knowledge about drug therapy)
+</p>
+<p>
+182849000 "No Drug Therapy Prescribed" (To indicate the absense of any prescribed medications)
+</p>
+<p>
+408350003 "Patient Not On Self-Medications" (To indicate no treatment)
+</p></li></ul><ul><li><codeblock>[OCL]: true</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: The act/@classCode='ACT' and act/@moodCode='EVN' when recording reason for medication in InternalReference Template. (6.3.4.16.22)<ul><li>self.internalReference->exists(ir : ihe::InternalReference | ar.classCode &lt;> 'ACT' or ar.moodCode &lt;> 'EVN')</li><li>OCL Issue - What is the internalReference relationship?  unable to get OCL to reference</li></ul><ul><li><codeblock>[OCL]: true</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: The &lt;consumable&gt; element shall be present, and shall contain a Product Entry template<ul><li><codeblock>[OCL]: self.consumable.manufacturedProduct.templateId-&gt;exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.7.2')</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: The entryRelationship/@inversionInd attribute is 'true' for Patient Medical Instructions relationship<ul><li>OCL Issue - What is the patientInstructions relationship?  unable to get OCL to reference</li></ul><ul><li><codeblock>[OCL]: not self.entryRelationship-&gt;exists( er : cda::EntryRelationship | er.inversionInd &lt;&gt; true and er.act.templateId-&gt;exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.3')  )</codeblock></li></ul></li>
+<li><b>SHOULD</b> satisfy: The name and strength of the medication is recorded in consumable/manufacturedProduct/manufacturedMaterial/code/originalText<ul><li><codeblock>[OCL]: not self.consumable.manufacturedProduct.manufacturedMaterial.code.oclIsUndefined() implies not self.consumable.manufacturedProduct.manufacturedMaterial.code.originalText.oclIsUndefined()</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: Name of the substance or product is recorded in consumable/manufacturedProduct/manufacturedMaterial/name<ul><li><codeblock>[OCL]: not self.consumable.manufacturedProduct.manufacturedMaterial.name.oclIsUndefined()</codeblock></li></ul></li>
+<li><b>MAY</b> satisfy: the preconditions for use of the medication are recorded in the
+&lt;precondition&gt; element. element. The value attribute of the &lt;reference&gt; element is a URL that points to
+the CDA narrative describing those preconditions.<ul><li><codeblock>[OCL]: not self.precondition.criterion.text-&gt;exists (t | t.reference.oclIsUndefined())</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: The entryRelationship/@inversionInd attribute is 'false' for Supply Entry relationship<ul><li><codeblock>[OCL]: not self.entryRelationship-&gt;exists(er : cda::EntryRelationship | (not er.supply-&gt;isEmpty()) and er.inversionInd&lt;&gt;false )</codeblock></li></ul></li>
+<li><b>SHOULD</b> satisfy: entryRelationship/sequenceNumber element should be present when the embedded 'supply' element has a
+moodCode attribute of EVN.<ul><li>The prescription activity may have a &lt;sequenceNumber> element to indicate the fill number. A
+value of 1, 2 or N indicates that it is the first, second, or Nth fill respectively of a specific
+prescription.</li></ul><ul><li><codeblock>[OCL]: not self.entryRelationship-&gt;exists(er| (not er.supply-&gt;isEmpty()) and er.sequenceNumber.value.oclIsUndefined() )</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: Subordinate &lt;substanceAdminstration&gt; entries are included to record the components of the prepared mixture. If medication is a prepackaged mixture, a single &lt;substanceAdministration&gt; entry is sufficient.<ul><li><codeblock>[OCL]: not self.entryRelationship.substanceAdministration-&gt;isEmpty()</codeblock></li></ul></li>
+</ol>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<substanceadministration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <templateId root="2.16.840.1.113883.10.20.1.24"/>
+  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7"/>
+  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.11"/>
+  <id root="1310981408"/>
+  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+  <statusCode code="completed"/>
+  <effectiveTime value="20111114"/>
+  <routeCode codeSystem="2.16.840.1.113883.5.112" codeSystemName="HL7 RouteOfAdministration"/>
+  <approachSiteCode code="1055622845"/>
+  <doseQuantity/>
+  <rateQuantity/>
+  <maxDoseQuantity/>
+  <consumable/>
+</substanceadministration>]]></codeblock>
+</body>
+</topic>

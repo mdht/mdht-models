@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Procedure Activity - conformance rules</title>
+<shortdesc id="shortdesc">[ClinicalStatement: templateId <tt>null</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>ClinicalStatement</category></metadata>
+<resourceid id="null"/>
+</prolog>
+<body>
+<section id="description">
+</section>
+<ol id="conformance">
+<li>A procedure activity <b>MAY</b> have one or more associated consents, represented in the CCD Header as ClinicalDocument / authorization / consent. (CONF-442)</li>
+<li>A procedure activity <b>SHALL</b> contain one or more sources of information, as defined in section 5.2 Source. (CONF-447)<ul><li>UNIMPLEMENTABLE</li></ul></li>
+</ol>
+<ol id="aggregate">
+<li>A procedure activity <b>MAY</b> have one or more associated consents, represented in the CCD Header as ClinicalDocument / authorization / consent. (CONF-442)</li>
+<li>A procedure activity <b>SHALL</b> contain one or more sources of information, as defined in section 5.2 Source. (CONF-447)<ul><li>UNIMPLEMENTABLE</li></ul></li>
+</ol>
+<codeblock id="example"><![CDATA[]]></codeblock>
+</body>
+</topic>

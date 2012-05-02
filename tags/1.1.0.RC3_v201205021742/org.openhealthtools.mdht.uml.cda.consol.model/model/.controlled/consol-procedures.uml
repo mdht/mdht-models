@@ -1,0 +1,1875 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML">
+  <uml:Class xmi:id="_2OAzQRSVEeGGzu7fmW9pXw" name="ProceduresSection">
+    <ownedComment xmi:id="_2OfUahSVEeGGzu7fmW9pXw" annotatedElement="_2OAzQRSVEeGGzu7fmW9pXw">
+      <body>This section defines all interventional, surgical, diagnostic, or therapeutic procedures or treatments pertinent to the patient historically at the time the document is generated. The section is intended to include notable procedures, but can contain all procedures for the period of time being summarized. The common notion of &quot;procedure&quot; is broader than that specified by the HL7 Version 3 Reference Information Model (RIM). Therefore this section contains procedure templates represented with three RIM classes: Act. Observation, and Procedure. Procedure act is for procedures the alter that physical condition of a patient (Splenectomy). Observation act is for procedures that result in new information about a patient but do not cause physical alteration (EEG). Act is for all other types of procedures (dressing change).&#xD;
+The length of an encounter is documented in the documentationOf/encompassingEncounter/effectiveTime and length of service in documentationOf/ServiceEvent/effectiveTime.</body>
+    </ownedComment>
+    <ownedRule xmi:id="_2OfUZxSVEeGGzu7fmW9pXw" name="hasProcedureActivity">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_2OfUaBSVEeGGzu7fmW9pXw">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>There SHALL be at least one procedure, observation or act entry conformant to Procedure Activity Procedure template, Procedure Activity Observation template or Procedure Activity Act template in the Procedure Section.</body>
+        <body>self.getActs()->exists(a : cda::Act | a.oclIsKindOf(consol::ProcedureActivityAct)) or self.getObservations()->exists(o : cda::Observation | o.oclIsKindOf(consol::ProcedureActivityObservation)) or self.getProcedures()->exists(p : cda::Procedure | p.oclIsKindOf(consol::ProcedureActivityProcedure))</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_gNO_cBVgEeGQCvUGzi1kDQ" general="_s9Ig4BVdEeGQCvUGzi1kDQ">
+      <ownedComment xmi:id="_G90uIHavEeGK39q3kclbsA">
+        <body>couple</body>
+      </ownedComment>
+    </generalization>
+    <ownedAttribute xmi:id="_2OAzTRSVEeGGzu7fmW9pXw" name="title" visibility="private">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_7eV1sFGkEeG3H6xvuD7Z0Q" name="code" visibility="private" redefinedProperty="_s9Ig6hVdEeGQCvUGzi1kDQ">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_7eV1s1GkEeG3H6xvuD7Z0Q" name="text" visibility="private" aggregation="composite" redefinedProperty="_s9Ig7BVdEeGQCvUGzi1kDQ">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7eV1tFGkEeG3H6xvuD7Z0Q" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7eV1tVGkEeG3H6xvuD7Z0Q" value="1"/>
+    </ownedAttribute>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_2OAzRhSVEeGGzu7fmW9pXw" base_Class="_2OAzQRSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.2.7.1">
+    <ruleId>CONF:10447</ruleId>
+  </CDA:CDATemplate>
+  <CDA:ConstraintValidation xmi:id="_2OfUaRSVEeGGzu7fmW9pXw" base_Constraint="_2OfUZxSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:8021</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:CodeSystemConstraint xmi:id="_2OAzTBSVEeGGzu7fmW9pXw" code="47519-4" displayName="History of procedures">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF-423</ruleId>
+    <ruleId>CONF-424</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_2OAzThSVEeGGzu7fmW9pXw" base_Property="_2OAzTRSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7893</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_2OAzUhSVEeGGzu7fmW9pXw">
+    <ruleId>CONF-422</ruleId>
+  </CDA:PropertyValidation>
+  <uml:Class xmi:id="_s9Ig4BVdEeGQCvUGzi1kDQ" name="ProceduresSectionEntriesOptional">
+    <ownedComment xmi:id="_s9Ig4RVdEeGQCvUGzi1kDQ" annotatedElement="_s9Ig4BVdEeGQCvUGzi1kDQ">
+      <body>This section defines all interventional, surgical, diagnostic, or therapeutic procedures or treatments pertinent to the patient historically at the time the document is generated. The section is intended to include notable procedures, but can contain all procedures for the period of time being summarized. The common notion of &quot;procedure&quot; is broader than that specified by the HL7 Version 3 Reference Information Model (RIM). Therefore this section contains procedure templates represented with three RIM classes: Act. Observation, and Procedure. Procedure act is for procedures the alter that physical condition of a patient (Splenectomy). Observation act is for procedures that result in new information about a patient but do not cause physical alteration (EEG). Act is for all other types of procedures (dressing change).&#xD;
+The length of an encounter is documented in the documentationOf/encompassingEncounter/effectiveTime and length of service in documentationOf/ServiceEvent/effectiveTime.</body>
+    </ownedComment>
+    <generalization xmi:id="_s9Ig6RVdEeGQCvUGzi1kDQ">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_s9Ig6hVdEeGQCvUGzi1kDQ" name="code" visibility="private">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_s9Ig7BVdEeGQCvUGzi1kDQ" name="text" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_s9Ig7RVdEeGQCvUGzi1kDQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_s9Ig7hVdEeGQCvUGzi1kDQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_HKgr8Bq9EeGYcL3NfEQErA" name="procedureActivityProcedure" type="_2OG58RSVEeGGzu7fmW9pXw" association="_HKhTABq9EeGYcL3NfEQErA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KFVeUBq9EeGYcL3NfEQErA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KFVeURq9EeGYcL3NfEQErA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_MCAmYBq9EeGYcL3NfEQErA" name="procedureAcivityObservation" type="_Aj7JkBg4EeGs5a462vYX5Q" association="_MCBNcBq9EeGYcL3NfEQErA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qolhkBrSEeGxIZCGAXKxsQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qolhkRrSEeGxIZCGAXKxsQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_VDYgQBq9EeGYcL3NfEQErA" name="procedureActivityAct" type="_awdH4Bg4EeGs5a462vYX5Q" association="_VDZHUBq9EeGYcL3NfEQErA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rMKIsBrSEeGxIZCGAXKxsQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rMKIsRrSEeGxIZCGAXKxsQ"/>
+    </ownedAttribute>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_LbH34BVfEeGQCvUGzi1kDQ" base_Class="_s9Ig4BVdEeGQCvUGzi1kDQ" templateId="2.16.840.1.113883.10.20.22.2.7" assigningAuthorityName="HL7">
+    <ruleId>CONF:6271</ruleId>
+  </CDA:CDATemplate>
+  <uml:Class xmi:id="_Aj7JkBg4EeGs5a462vYX5Q" name="ProcedureActivityObservation">
+    <ownedComment xmi:id="_RlVIQBxuEeGXP8PxDYviDg">
+      <body>The common notion of &quot;procedure&quot; is broader than that specified by the HL7 Version 3 Reference Information Model (RIM). Therefore procedure templates can be represented with various RIM classes: act (e.g., dressing change), observation (e.g., EEG), procedure (e.g. splenectomy). &#xD;
+This clinical statement represents procedures that result in new information about the patient that cannot be classified as a procedure according to the HL7 RIM. Examples of these procedures are diagnostic imaging procedures, EEGs and EKGs.</body>
+    </ownedComment>
+    <ownedRule xmi:id="_-WpQYBxuEeGXP8PxDYviDg" name="codeCodeSystems" constrainedElement="_2OG58RSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_-WpQYRxuEeGXP8PxDYviDg">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>code in a procedure activity SHOULD be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96), and MAY be selected from CPT-4 (codeSystem 2.16.840.1.113883.6.12), ICD9 Procedures (codeSystem 2.16.840.1.113883.6.4)</body>
+        <body>self.code.codeSystem = '2.16.840.1.113883.6.1' xor self.code.codeSystem = '2.16.840.1.113883.6.96' xor self.code.codeSystem = '2.16.840.1.113883.6.12' xor self.code.codeSystem = '2.16.840.1.113883.6.104'</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_gpDwsBxvEeGXP8PxDYviDg" name="codeOriginalText" constrainedElement="_qGzKgBrPEeGxIZCGAXKxsQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_gpDwsRxvEeGXP8PxDYviDg">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>code SHOULD contain zero or one [0..1] originalText</body>
+        <body>not self.code.originalText.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_iKsikBxvEeGXP8PxDYviDg" name="originalTextReferenceValue" constrainedElement="_N4ba0BrQEeGxIZCGAXKxsQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_iKsikRxvEeGXP8PxDYviDg">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>originalText, if present, SHOULD contain zero or one [0..1] reference/@value</body>
+        <body>not self.code.originalText.oclIsUndefined() implies not self.code.originalText.reference.value.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_jzsgsBxvEeGXP8PxDYviDg" name="referenceValue" constrainedElement="_WEQMwBrQEeGxIZCGAXKxsQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_jzsgsRxvEeGXP8PxDYviDg">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>reference/@value SHALL begin with a '#' and SHALL point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1)</body>
+        <body>not self.getSection().text.getText(self.code.originalText.reference.value.substring(2, self.code.originalText.reference.value.size())).oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_I_JDoBxwEeGXP8PxDYviDg" name="methodCodeConflict" constrainedElement="_SSUWwBrREeGxIZCGAXKxsQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_I_JDoRxwEeGXP8PxDYviDg">
+        <language>Analysis</language>
+        <body>methodCode SHALL NOT conflict with the method inherent in Procedure / code</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_oJm7kBxwEeGXP8PxDYviDg" name="encounterInversion" constrainedElement="_tJGGcBxGEeGIELeDlfT77A">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_oJm7kRxwEeGXP8PxDYviDg">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>entryRelationship with target class encounter SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot;</body>
+        <body>self.entryRelationship->select(er : cda::EntryRelationship | er.encounter->size() > 0)->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_p26x8BxwEeGXP8PxDYviDg" name="serviceDeliveryLocationTypeCode" constrainedElement="_9s2SABxZEeGXP8PxDYviDg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_p26x8RxwEeGXP8PxDYviDg">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>participant with target class Service Delivery Location SHALL contain exactly one [1..1] @typeCode=&quot;LOC&quot; Location (CodeSystem: 2.16.840.1.113883.5.1002 HL7ActRelationshipType) STATIC</body>
+        <body>self.participant->select(par : cda::Participant2 | par.participantRole.oclIsKindOf(consol::ServiceDeliveryLocation))->forAll(p : cda::Participant2 | p.typeCode=vocab::ParticipationType::LOC)</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_rOfo4BxwEeGXP8PxDYviDg" name="instructionsInversion" constrainedElement="_tJGGcBxGEeGIELeDlfT77A">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_rOfo4RxwEeGXP8PxDYviDg">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>entryRelationship with target class Instructions SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot;</body>
+        <body>self.entryRelationship->select(er : cda::EntryRelationship | er.act.oclIsKindOf(consol::Instructions))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_Aj7JkRg4EeGs5a462vYX5Q">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_NL3hgBg4EeGs5a462vYX5Q" name="classCode" visibility="private">
+      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_Vjb8kBxuEeGXP8PxDYviDg" value="OBS"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_NMUNfhg4EeGs5a462vYX5Q" name="moodCode" visibility="private">
+      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_NMUNdhg4EeGs5a462vYX5Q" name="id" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uDHXgBxuEeGXP8PxDYviDg" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uDH-kBxuEeGXP8PxDYviDg" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_UGBfwEo8Ed6c3qsAxlFHaQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_NMUNcBg4EeGs5a462vYX5Q" name="code" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_NMUNhBg4EeGs5a462vYX5Q" name="statusCode" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zQ8R0BxvEeGXP8PxDYviDg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zQ8R0RxvEeGXP8PxDYviDg" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_c-D3cEo8Ed6c3qsAxlFHaQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_NMUNjBg4EeGs5a462vYX5Q" name="value" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#__I8BwDxZEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_72VaUBxvEeGXP8PxDYviDg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_72VaURxvEeGXP8PxDYviDg" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_NMUNchg4EeGs5a462vYX5Q" name="effectiveTime" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NMUNcxg4EeGs5a462vYX5Q" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NMUNdBg4EeGs5a462vYX5Q"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_NMUNgBg4EeGs5a462vYX5Q" name="priorityCode" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NMUNgRg4EeGs5a462vYX5Q" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NMUNghg4EeGs5a462vYX5Q"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_h3baIEo8Ed6c3qsAxlFHaQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_NMUNehg4EeGs5a462vYX5Q" name="methodCode" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EM7R0BxwEeGXP8PxDYviDg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EM7R0RxwEeGXP8PxDYviDg"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_1jr3cEo-Ed6c3qsAxlFHaQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_NMUNiBg4EeGs5a462vYX5Q" name="targetSiteCode" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NMUNiRg4EeGs5a462vYX5Q" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NMUNihg4EeGs5a462vYX5Q"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_339AIEo-Ed6c3qsAxlFHaQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_x2X70BxwEeGXP8PxDYviDg" name="performer" type="_nbpGUBxEEeGIELeDlfT77A" association="_x2ZJ8BxwEeGXP8PxDYviDg">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1rmg8BxwEeGXP8PxDYviDg" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1rnIABxwEeGXP8PxDYviDg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_5PuH8BxwEeGXP8PxDYviDg" name="serviceDeliveryLocation" association="_5Pv9IBxwEeGXP8PxDYviDg">
+      <type xmi:type="uml:Class" href="consol-other.uml#_2LiHABSVEeGGzu7fmW9pXw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7zDAUBxwEeGXP8PxDYviDg" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7zDnYBxwEeGXP8PxDYviDg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_HGZj4BxxEeGXP8PxDYviDg" name="procedureEncounter" type="_qeLqQBxEEeGIELeDlfT77A" association="_HGaK8BxxEeGXP8PxDYviDg">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IaCWABxxEeGXP8PxDYviDg" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IaCWARxxEeGXP8PxDYviDg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_VUG_wBxxEeGXP8PxDYviDg" name="instructions" association="_VUIN4BxxEeGXP8PxDYviDg">
+      <type xmi:type="uml:Class" href="consol-other.uml#_2G8h9RSVEeGGzu7fmW9pXw"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VUHm0BxxEeGXP8PxDYviDg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_cZZAYBxxEeGXP8PxDYviDg" name="indication" association="_cZaOgBxxEeGXP8PxDYviDg">
+      <type xmi:type="uml:Class" href="consol-other.uml#_sHrUoBUSEeG6PvUxSTZnaw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_evYAUBxxEeGXP8PxDYviDg" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_evYAURxxEeGXP8PxDYviDg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_odtt4BxxEeGXP8PxDYviDg" name="medicationActivity" association="_odu8ABxxEeGXP8PxDYviDg">
+      <type xmi:type="uml:Class" href="consol-medications.uml#_2GHbgBSVEeGGzu7fmW9pXw"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_odtt4RxxEeGXP8PxDYviDg"/>
+    </ownedAttribute>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_PlWhYBg4EeGs5a462vYX5Q" base_Class="_Aj7JkBg4EeGs5a462vYX5Q" templateId="2.16.840.1.113883.10.20.22.4.13">
+    <ruleId>CONF:10520</ruleId>
+  </CDA:CDATemplate>
+  <uml:Class xmi:id="_awdH4Bg4EeGs5a462vYX5Q" name="ProcedureActivityAct">
+    <ownedComment xmi:id="_95KuYBxnEeGXP8PxDYviDg">
+      <body>The common notion of &quot;procedure&quot; is broader than that specified by the HL7 Version 3 Reference Information Model (RIM). Therefore procedure templates can be represented with various RIM classes: act (e.g., dressing change), observation (e.g., EEG), procedure (e.g. splenectomy). &#xD;
+This clinical statement represents any procedure that cannot be classified as an observation or a procedure according to the HL7 RIM. Examples of these procedures are a dressing change, teaching or feeding a patient or providing comfort measures.</body>
+    </ownedComment>
+    <ownedRule xmi:id="_ilhFEBxpEeGXP8PxDYviDg" name="codeCodeSystems" constrainedElement="_2OG58RSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ilhFERxpEeGXP8PxDYviDg">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>code in a procedure activity observation SHOULD be selected from LOINC (CodeSystem: 2.16.840.1.113883.6.1) or SNOMED CT (CodeSystem: 2.16.840.1.113883.6.96)</body>
+        <body>self.code.codeSystem = '2.16.840.1.113883.6.1' xor self.code.codeSystem = '2.16.840.1.113883.6.96'</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_oGW3cBxpEeGXP8PxDYviDg" name="codeOriginalText" constrainedElement="_qGzKgBrPEeGxIZCGAXKxsQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_oGW3cRxpEeGXP8PxDYviDg">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>code SHOULD contain zero or one [0..1] originalText</body>
+        <body>not self.code.originalText.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_rX9yIBxpEeGXP8PxDYviDg" name="originalTextReferenceValue" constrainedElement="_N4ba0BrQEeGxIZCGAXKxsQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_rX9yIRxpEeGXP8PxDYviDg">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>originalText, if present, SHOULD contain zero or one [0..1] reference/@value</body>
+        <body>not self.code.originalText.oclIsUndefined() implies not self.code.originalText.reference.value.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_0i4pkBxpEeGXP8PxDYviDg" name="referenceValue" constrainedElement="_WEQMwBrQEeGxIZCGAXKxsQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_0i4pkRxpEeGXP8PxDYviDg">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>reference/@value SHALL begin with a '#' and SHALL point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1)</body>
+        <body>not self.getSection().text.getText(self.code.originalText.reference.value.substring(2, self.code.originalText.reference.value.size())).oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_ATZYUBxsEeGXP8PxDYviDg" name="encounterInversion" constrainedElement="_tJGGcBxGEeGIELeDlfT77A">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ATZYURxsEeGXP8PxDYviDg">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>entryRelationship with target class encounter SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot;</body>
+        <body>self.entryRelationship->select(er : cda::EntryRelationship | er.encounter->size() > 0)->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_C9KP4BxsEeGXP8PxDYviDg" name="serviceDeliveryLocationTypeCode" constrainedElement="_9s2SABxZEeGXP8PxDYviDg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_C9KP4RxsEeGXP8PxDYviDg">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>participant with target class Service Delivery Location SHALL contain exactly one [1..1] @typeCode=&quot;LOC&quot; Location (CodeSystem: 2.16.840.1.113883.5.1002 HL7ActRelationshipType) STATIC</body>
+        <body>self.participant->select(par : cda::Participant2 | par.participantRole.oclIsKindOf(consol::ServiceDeliveryLocation))->forAll(p : cda::Participant2 | p.typeCode=vocab::ParticipationType::LOC)</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_zFL1IBxsEeGXP8PxDYviDg" name="instructionsInversion" constrainedElement="_tJGGcBxGEeGIELeDlfT77A">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_zFL1IRxsEeGXP8PxDYviDg">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>entryRelationship with target class Instructions SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot;</body>
+        <body>self.entryRelationship->select(er : cda::EntryRelationship | er.act.oclIsKindOf(consol::Instructions))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_awdH4Rg4EeGs5a462vYX5Q">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_YiANsDxYEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_hPmVkBg4EeGs5a462vYX5Q" name="classCode" visibility="private">
+      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOntkDcEd6xYZuu1VKCVw"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_1DWqEEbnEd6besF9iFIJkQ"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="__ciloBxnEeGXP8PxDYviDg" value="ACT"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_hPwGlBg4EeGs5a462vYX5Q" name="moodCode" visibility="private">
+      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOpkkDcEd6xYZuu1VKCVw"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_yWn-AEocEd6c3qsAxlFHaQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_hPwGkBg4EeGs5a462vYX5Q" name="id" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XhjoYBxpEeGXP8PxDYviDg" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XhkPcBxpEeGXP8PxDYviDg" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FHobYEocEd6c3qsAxlFHaQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_hPmVkhg4EeGs5a462vYX5Q" name="code" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_HUTHQEocEd6c3qsAxlFHaQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_hPwGmhg4EeGs5a462vYX5Q" name="statusCode" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hPwGmxg4EeGs5a462vYX5Q" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hPwGnBg4EeGs5a462vYX5Q"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_Q0j8kEocEd6c3qsAxlFHaQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_LJu6oBxqEeGXP8PxDYviDg" name="effectiveTime" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LJu6oRxqEeGXP8PxDYviDg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LJu6ohxqEeGXP8PxDYviDg"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_hbddYEocEd6c3qsAxlFHaQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_hPwGlhg4EeGs5a462vYX5Q" name="priorityCode" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hPwGlxg4EeGs5a462vYX5Q" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hPwGmBg4EeGs5a462vYX5Q"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_olrBUEocEd6c3qsAxlFHaQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_rDWiIBxrEeGXP8PxDYviDg" name="performer" type="_nbpGUBxEEeGIELeDlfT77A" association="_rDXwQBxrEeGXP8PxDYviDg">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uu4_wBxrEeGXP8PxDYviDg" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uu4_wRxrEeGXP8PxDYviDg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_Oyk-sBxsEeGXP8PxDYviDg" name="serviceDeliveryLocation" association="_OymM0BxsEeGXP8PxDYviDg">
+      <type xmi:type="uml:Class" href="consol-other.uml#_2LiHABSVEeGGzu7fmW9pXw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RarpYBxsEeGXP8PxDYviDg" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RarpYRxsEeGXP8PxDYviDg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_Y1qNMBxsEeGXP8PxDYviDg" name="procedureEncounter" type="_qeLqQBxEEeGIELeDlfT77A" association="_Y1sCYBxsEeGXP8PxDYviDg">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hQWhkBxsEeGXP8PxDYviDg" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hQXIoBxsEeGXP8PxDYviDg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_D6qkgBxtEeGXP8PxDYviDg" name="instructions" association="_D6ryoBxtEeGXP8PxDYviDg">
+      <type xmi:type="uml:Class" href="consol-other.uml#_2G8h9RSVEeGGzu7fmW9pXw"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_D6qkgRxtEeGXP8PxDYviDg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_MTaYIBxtEeGXP8PxDYviDg" name="indication" association="_MTbmQBxtEeGXP8PxDYviDg">
+      <type xmi:type="uml:Class" href="consol-other.uml#_sHrUoBUSEeG6PvUxSTZnaw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RCFGsBxtEeGXP8PxDYviDg" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RCFGsRxtEeGXP8PxDYviDg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_cEQasBxtEeGXP8PxDYviDg" name="medicationActivity" association="_cERBwBxtEeGXP8PxDYviDg">
+      <type xmi:type="uml:Class" href="consol-medications.uml#_2GHbgBSVEeGGzu7fmW9pXw"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cEQasRxtEeGXP8PxDYviDg"/>
+    </ownedAttribute>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_kpdNUBg4EeGs5a462vYX5Q" base_Class="_awdH4Bg4EeGs5a462vYX5Q" templateId="2.16.840.1.113883.10.20.22.4.12">
+    <ruleId>CONF:10519</ruleId>
+  </CDA:CDATemplate>
+  <uml:Class xmi:id="_2OG58RSVEeGGzu7fmW9pXw" name="ProcedureActivityProcedure">
+    <ownedComment xmi:id="_w6NZEBxxEeGXP8PxDYviDg">
+      <body>The common notion of &quot;procedure&quot; is broader than that specified by the HL7 Version 3 Reference Information Model (RIM). Therefore procedure templates can be represented with various RIM classes: act (e.g., dressing change), observation (e.g., EEG), procedure (e.g. splenectomy). &#xD;
+This clinical statement represents procedures whose immediate and primary outcome (post-condition) is the alteration of the physical condition of the patient. Examples of these procedures are an appendectomy, hip replacement and a creation of a gastrostomy.</body>
+    </ownedComment>
+    <ownedRule xmi:id="_qGzKgBrPEeGxIZCGAXKxsQ" name="codeCodeSystems" constrainedElement="_2OG58RSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_8J3uYBrPEeGxIZCGAXKxsQ">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>code in a procedure activity SHOULD be selected from LOINC (codeSystem 2.16.840.1.113883.6.1) or SNOMED CT (codeSystem 2.16.840.1.113883.6.96), and MAY be selected from CPT-4 (codeSystem 2.16.840.1.113883.6.12), ICD9 Procedures (codeSystem 2.16.840.1.113883.6.104), ICD10 Procedure Coding System (codeSystem 2.16.840.1.113883.6.4)</body>
+        <body>self.code.codeSystem = '2.16.840.1.113883.6.1' xor self.code.codeSystem = '2.16.840.1.113883.6.96' xor self.code.codeSystem = '2.16.840.1.113883.6.12' xor self.code.codeSystem = '2.16.840.1.113883.6.104' xor self.code.codeSystem = '2.16.840.1.113883.6.4'</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_N4ba0BrQEeGxIZCGAXKxsQ" name="codeOriginalText" constrainedElement="_qGzKgBrPEeGxIZCGAXKxsQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VYc2sBrQEeGxIZCGAXKxsQ">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>code SHOULD contain zero or one [0..1] originalText</body>
+        <body>not self.code.originalText.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_WEQMwBrQEeGxIZCGAXKxsQ" name="originalTextReferenceValue" constrainedElement="_N4ba0BrQEeGxIZCGAXKxsQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Pp6KEBrREeGxIZCGAXKxsQ">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>originalText, if present, SHOULD contain zero or one [0..1] reference/@value</body>
+        <body>not self.code.originalText.oclIsUndefined() implies not self.code.originalText.reference.value.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_SSUWwBrREeGxIZCGAXKxsQ" name="referenceValue" constrainedElement="_WEQMwBrQEeGxIZCGAXKxsQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VD9X8BrREeGxIZCGAXKxsQ">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>reference/@value SHALL begin with a '#' and SHALL point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1)</body>
+        <body>not self.getSection().text.getText(self.code.originalText.reference.value.substring(2, self.code.originalText.reference.value.size())).oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_tJGGcBxGEeGIELeDlfT77A" name="methodCodeConflict" constrainedElement="_SSUWwBrREeGxIZCGAXKxsQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_wGC_wBxGEeGIELeDlfT77A">
+        <language>Analysis</language>
+        <body>methodCode SHALL NOT conflict with the method inherent in Procedure / code</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_t6LqgBxZEeGXP8PxDYviDg" name="encounterInversion" constrainedElement="_tJGGcBxGEeGIELeDlfT77A">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_7DYVYBxZEeGXP8PxDYviDg">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>entryRelationship with target entry encounter SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot;</body>
+        <body>self.entryRelationship->select(er : cda::EntryRelationship | er.encounter->size() > 0)->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_9s2SABxZEeGXP8PxDYviDg" name="productInstanceTypeCode" constrainedElement="_t6LqgBxZEeGXP8PxDYviDg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_FdoGsBxaEeGXP8PxDYviDg">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>participant with target entry Product Instance SHALL contain exactly one [1..1] @typeCode=&quot;DEV&quot; Device (CodeSystem: 2.16.840.1.113883.5.1002 HL7ActRelationshipType) STATIC</body>
+        <body>self.participant->select(par : cda::Participant2 | par.participantRole.oclIsKindOf(consol::ProductInstance))->forAll(p : cda::Participant2 | p.typeCode=vocab::ParticipationType::DEV)</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_JHSVABxaEeGXP8PxDYviDg" name="serviceDeliveryLocationTypeCode" constrainedElement="_9s2SABxZEeGXP8PxDYviDg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Pf0kYBxaEeGXP8PxDYviDg">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>participant with target entry Service Delivery Location SHALL contain exactly one [1..1] @typeCode=&quot;LOC&quot; Location (CodeSystem: 2.16.840.1.113883.5.1002 HL7ActRelationshipType) STATIC</body>
+        <body>self.participant->select(par : cda::Participant2 | par.participantRole.oclIsKindOf(consol::ServiceDeliveryLocation))->forAll(p : cda::Participant2 | p.typeCode=vocab::ParticipationType::LOC)</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_5r5qcBxsEeGXP8PxDYviDg" name="instructionsInversion" constrainedElement="_tJGGcBxGEeGIELeDlfT77A">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_5r5qcRxsEeGXP8PxDYviDg">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>entryRelationship with target entry Instructions SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot;</body>
+        <body>self.entryRelationship->select(er : cda::EntryRelationship | er.act.oclIsKindOf(consol::Instructions))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_2OZN6RSVEeGGzu7fmW9pXw">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_-jiisEbuEd6besF9iFIJkQ"/>
+    </generalization>
+    <ownedAttribute xmi:id="_2OG5_hSVEeGGzu7fmW9pXw" name="classCode" visibility="private">
+      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVdYEDcEd6xYZuu1VKCVw"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_Hp3ssEb9Ed6besF9iFIJkQ"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_2OG5_xSVEeGGzu7fmW9pXw" value="PROC"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2OTHIxSVEeGGzu7fmW9pXw" name="moodCode" visibility="private">
+      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOprUDcEd6xYZuu1VKCVw"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_yWn-AEocEd6c3qsAxlFHaQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2OTHJhSVEeGGzu7fmW9pXw" name="id" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2OTHJxSVEeGGzu7fmW9pXw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2OTHKBSVEeGGzu7fmW9pXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2OTHKhSVEeGGzu7fmW9pXw" name="code" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2OG6CBSVEeGGzu7fmW9pXw" name="statusCode" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2OG6ChSVEeGGzu7fmW9pXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2OG6CxSVEeGGzu7fmW9pXw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2OTHLBSVEeGGzu7fmW9pXw" name="effectiveTime" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2OTHLRSVEeGGzu7fmW9pXw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2OTHLhSVEeGGzu7fmW9pXw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2OTHMBSVEeGGzu7fmW9pXw" name="specimen" type="_JIc0oBxEEeGIELeDlfT77A" association="_2OTHMxSVEeGGzu7fmW9pXw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oMMTcBrZEeGrncRpaMCqdA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oMMTcRrZEeGrncRpaMCqdA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2OTHNhSVEeGGzu7fmW9pXw" name="serviceDeliveryLocation" association="_2OTHORSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="consol-other.uml#_2LiHABSVEeGGzu7fmW9pXw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lkq4cBxWEeGXP8PxDYviDg" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lkq4cRxWEeGXP8PxDYviDg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2OTHPBSVEeGGzu7fmW9pXw" name="performer" type="_nbpGUBxEEeGIELeDlfT77A" association="_2OTHPxSVEeGGzu7fmW9pXw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xALH4BxVEeGXP8PxDYviDg" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xALH4RxVEeGXP8PxDYviDg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2OZNyhSVEeGGzu7fmW9pXw" name="medicationActivity" association="_2OZNzRSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="consol-medications.uml#_2GHbgBSVEeGGzu7fmW9pXw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gf_x4BrbEeGrncRpaMCqdA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gf_x4RrbEeGrncRpaMCqdA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2OZN0BSVEeGGzu7fmW9pXw" name="patientInstruction" association="_2OZN0xSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="consol-other.uml#_2G8h9RSVEeGGzu7fmW9pXw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HkkscBxXEeGXP8PxDYviDg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HkkscRxXEeGXP8PxDYviDg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2OG6BRSVEeGGzu7fmW9pXw" name="indication" association="_2OTHIBSVEeGGzu7fmW9pXw">
+      <type xmi:type="uml:Class" href="consol-other.uml#_sHrUoBUSEeG6PvUxSTZnaw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t4MiEBrbEeGrncRpaMCqdA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t4MiERrbEeGrncRpaMCqdA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_ozsKlBrUEeGxIZCGAXKxsQ" name="priorityCode" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ozsKlRrUEeGxIZCGAXKxsQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ozsKlhrUEeGxIZCGAXKxsQ"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_9miWgErhEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_ozsKkBrUEeGxIZCGAXKxsQ" name="methodCode" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_D1YScBrZEeGrncRpaMCqdA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_D1YScRrZEeGrncRpaMCqdA"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_DrwBQEriEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_ozsKmBrUEeGxIZCGAXKxsQ" name="targetSiteCode" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ozsKmRrUEeGxIZCGAXKxsQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ozsKmhrUEeGxIZCGAXKxsQ"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_Ia2NoEriEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_CG_UUBxVEeGXP8PxDYviDg" name="procedureEncounter" type="_qeLqQBxEEeGIELeDlfT77A" association="_CHBJgBxVEeGXP8PxDYviDg">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sKpG4BxWEeGXP8PxDYviDg" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sKpG4RxWEeGXP8PxDYviDg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_F1Cd8BxWEeGXP8PxDYviDg" name="productInstance" association="_F1DsEBxWEeGXP8PxDYviDg">
+      <type xmi:type="uml:Class" href="consol-medications.uml#_2G2bUxSVEeGGzu7fmW9pXw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ICzWABxWEeGXP8PxDYviDg" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ICzWARxWEeGXP8PxDYviDg"/>
+    </ownedAttribute>
+  </uml:Class>
+  <uml:Association xmi:id="_2OTHMxSVEeGGzu7fmW9pXw" memberEnd="_2OTHMBSVEeGGzu7fmW9pXw _2OTHNBSVEeGGzu7fmW9pXw">
+    <ownedComment xmi:id="_pjuRoBraEeGrncRpaMCqdA">
+      <body>This specimen is for representing specimens obtained from a procedure.</body>
+    </ownedComment>
+    <ownedEnd xmi:id="_2OTHNBSVEeGGzu7fmW9pXw" type="_2OG58RSVEeGGzu7fmW9pXw" association="_2OTHMxSVEeGGzu7fmW9pXw"/>
+  </uml:Association>
+  <uml:Association xmi:id="_2OTHORSVEeGGzu7fmW9pXw" memberEnd="_2OTHNhSVEeGGzu7fmW9pXw _2OTHOhSVEeGGzu7fmW9pXw">
+    <ownedEnd xmi:id="_2OTHOhSVEeGGzu7fmW9pXw" type="_2OG58RSVEeGGzu7fmW9pXw" association="_2OTHORSVEeGGzu7fmW9pXw"/>
+  </uml:Association>
+  <uml:Association xmi:id="_2OTHPxSVEeGGzu7fmW9pXw" memberEnd="_2OTHPBSVEeGGzu7fmW9pXw _2OTHQBSVEeGGzu7fmW9pXw">
+    <ownedEnd xmi:id="_2OTHQBSVEeGGzu7fmW9pXw" type="_2OG58RSVEeGGzu7fmW9pXw" association="_2OTHPxSVEeGGzu7fmW9pXw"/>
+  </uml:Association>
+  <uml:Association xmi:id="_2OZNzRSVEeGGzu7fmW9pXw" memberEnd="_2OZNyhSVEeGGzu7fmW9pXw _2OZNzhSVEeGGzu7fmW9pXw">
+    <ownedEnd xmi:id="_2OZNzhSVEeGGzu7fmW9pXw" type="_2OG58RSVEeGGzu7fmW9pXw" association="_2OZNzRSVEeGGzu7fmW9pXw"/>
+  </uml:Association>
+  <uml:Association xmi:id="_2OZN0xSVEeGGzu7fmW9pXw" memberEnd="_2OZN0BSVEeGGzu7fmW9pXw _2OZN1BSVEeGGzu7fmW9pXw">
+    <ownedEnd xmi:id="_2OZN1BSVEeGGzu7fmW9pXw" type="_2OG58RSVEeGGzu7fmW9pXw" association="_2OZN0xSVEeGGzu7fmW9pXw"/>
+  </uml:Association>
+  <uml:Association xmi:id="_2OTHIBSVEeGGzu7fmW9pXw" memberEnd="_2OG6BRSVEeGGzu7fmW9pXw _2OTHIRSVEeGGzu7fmW9pXw">
+    <ownedEnd xmi:id="_2OTHIRSVEeGGzu7fmW9pXw" type="_2OG58RSVEeGGzu7fmW9pXw" association="_2OTHIBSVEeGGzu7fmW9pXw"/>
+  </uml:Association>
+  <CDA:CDATemplate xmi:id="_2ONAgBSVEeGGzu7fmW9pXw" base_Class="_2OG58RSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.14" assigningAuthorityName="IHE PCC">
+    <ruleId>CONF:7654</ruleId>
+  </CDA:CDATemplate>
+  <CDA:ConstraintValidation xmi:id="_2OZN2BSVEeGGzu7fmW9pXw" severity="INFO">
+    <ruleId>CONF-442</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_2OZN3BSVEeGGzu7fmW9pXw">
+    <ruleId>CONF-447</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_2OZN4BSVEeGGzu7fmW9pXw" severity="INFO">
+    <ruleId>CONF-435</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_2OZN5BSVEeGGzu7fmW9pXw" severity="INFO">
+    <ruleId>CONF-436</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_2OZN6BSVEeGGzu7fmW9pXw" severity="WARNING">
+    <ruleId>CONF-444</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_2ONAhhSVEeGGzu7fmW9pXw"/>
+  <CDA:ConstraintValidation xmi:id="_2ONAhxSVEeGGzu7fmW9pXw"/>
+  <CDA:ConstraintValidation xmi:id="_2ONAiBSVEeGGzu7fmW9pXw"/>
+  <CDA:ConstraintValidation xmi:id="_2ONAiRSVEeGGzu7fmW9pXw"/>
+  <CDA:ConstraintValidation xmi:id="_2ONAihSVEeGGzu7fmW9pXw"/>
+  <CDA:PropertyValidation xmi:id="_2ONAgRSVEeGGzu7fmW9pXw" base_Property="_2OG5_hSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7652</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_2OTHKRSVEeGGzu7fmW9pXw" base_Property="_2OTHJhSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7655</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_2OTHKxSVEeGGzu7fmW9pXw" base_Property="_2OTHKhSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7656</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:TextValue xmi:id="_2ONAghSVEeGGzu7fmW9pXw"/>
+  <CDA:PropertyValidation xmi:id="_2OTHLxSVEeGGzu7fmW9pXw" severity="WARNING" base_Property="_2OTHLBSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7662</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_2ONAhRSVEeGGzu7fmW9pXw" severity="INFO"/>
+  <CDA:AssociationValidation xmi:id="_2OTHNRSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2OTHMxSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7697</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_2OTHOxSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2OTHORSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7767</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_2OTHQRSVEeGGzu7fmW9pXw" severity="WARNING" base_Association="_2OTHPxSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:7718</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:EntryRelationship xmi:id="_2OTHRhSVEeGGzu7fmW9pXw" severity="INFO" typeCode="RSON"/>
+  <CDA:EntryRelationship xmi:id="_2OZNxBSVEeGGzu7fmW9pXw" severity="INFO" typeCode="RSON"/>
+  <CDA:EntryRelationship xmi:id="_2OZNyRSVEeGGzu7fmW9pXw" severity="INFO" typeCode="SUBJ"/>
+  <CDA:EntryRelationship xmi:id="_2OZNzxSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2OZNzRSVEeGGzu7fmW9pXw" typeCode="COMP">
+    <ruleId>CONF:7888</ruleId>
+  </CDA:EntryRelationship>
+  <CDA:EntryRelationship xmi:id="_2ONAjhSVEeGGzu7fmW9pXw" severity="INFO" typeCode="COMP"/>
+  <CDA:EntryRelationship xmi:id="_2OTHIhSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2OTHIBSVEeGGzu7fmW9pXw" typeCode="RSON">
+    <ruleId>CONF:7781</ruleId>
+  </CDA:EntryRelationship>
+  <CDA:CodeSystemConstraint xmi:id="_pvbG8Bq8EeGYcL3NfEQErA" code="47519-4" displayName="History of procedures" base_Property="_s9Ig6hVdEeGQCvUGzi1kDQ">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:6272</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_9DL2oBq8EeGYcL3NfEQErA" base_Property="_s9Ig7BVdEeGQCvUGzi1kDQ">
+    <ruleId>CONF:6273</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:TextValue xmi:id="_IQKvoBrBEeGJnPZ8qwcJ8A" base_Property="_2OAzTRSVEeGGzu7fmW9pXw" value="Procedures"/>
+  <CDA:ConstraintValidation xmi:id="_-LZhQBrPEeGxIZCGAXKxsQ" severity="WARNING" base_Constraint="_qGzKgBrPEeGxIZCGAXKxsQ">
+    <ruleId>CONF:7657</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_Q7LaIBrQEeGxIZCGAXKxsQ" severity="WARNING" base_Constraint="_N4ba0BrQEeGxIZCGAXKxsQ">
+    <ruleId>CONF:7658</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_XSCZEBrREeGxIZCGAXKxsQ" severity="WARNING" base_Constraint="_WEQMwBrQEeGxIZCGAXKxsQ">
+    <ruleId>CONF:7659</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_Xu5UMBrREeGxIZCGAXKxsQ" base_Constraint="_SSUWwBrREeGxIZCGAXKxsQ">
+    <ruleId>CONF:7660</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ValueSetConstraint xmi:id="_4Aw5EBrREeGxIZCGAXKxsQ" base_Property="_2OG6CBSVEeGGzu7fmW9pXw">
+    <reference href="../consol-vocab.uml#_-hMgMRrREeGxIZCGAXKxsQ"/>
+    <ruleId>CONF:7661</ruleId>
+  </CDA:ValueSetConstraint>
+  <CDA:PropertyValidation xmi:id="_u73CsBrUEeGxIZCGAXKxsQ" severity="INFO" base_Property="_ozsKlBrUEeGxIZCGAXKxsQ"/>
+  <CDA:PropertyValidation xmi:id="_EHrjYBrZEeGrncRpaMCqdA" severity="INFO" base_Property="_ozsKkBrUEeGxIZCGAXKxsQ">
+    <ruleId>CONF:7670</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_FOWQgBrZEeGrncRpaMCqdA" severity="WARNING" base_Property="_ozsKmBrUEeGxIZCGAXKxsQ">
+    <ruleId>CONF:7683</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ValueSetConstraint xmi:id="_LFtFcBrZEeGrncRpaMCqdA" base_Property="_ozsKmBrUEeGxIZCGAXKxsQ">
+    <reference href="../consol-vocab.uml#_2H3vABSVEeGGzu7fmW9pXw"/>
+    <ruleId>CONF:10122</ruleId>
+  </CDA:ValueSetConstraint>
+  <CDA:EntryRelationship xmi:id="_nZdHkBrcEeGrncRpaMCqdA" severity="INFO" base_Association="_2OZN0xSVEeGGzu7fmW9pXw" typeCode="SUBJ">
+    <ruleId>CONF:7778</ruleId>
+  </CDA:EntryRelationship>
+  <uml:Association xmi:id="_HKhTABq9EeGYcL3NfEQErA" memberEnd="_HKgr8Bq9EeGYcL3NfEQErA _HKh6EBq9EeGYcL3NfEQErA">
+    <ownedEnd xmi:id="_HKh6EBq9EeGYcL3NfEQErA" type="_s9Ig4BVdEeGQCvUGzi1kDQ" association="_HKhTABq9EeGYcL3NfEQErA"/>
+  </uml:Association>
+  <uml:Association xmi:id="_MCBNcBq9EeGYcL3NfEQErA" memberEnd="_MCAmYBq9EeGYcL3NfEQErA _MCBNcRq9EeGYcL3NfEQErA">
+    <ownedEnd xmi:id="_MCBNcRq9EeGYcL3NfEQErA" type="_s9Ig4BVdEeGQCvUGzi1kDQ" association="_MCBNcBq9EeGYcL3NfEQErA"/>
+  </uml:Association>
+  <uml:Association xmi:id="_VDZHUBq9EeGYcL3NfEQErA" memberEnd="_VDYgQBq9EeGYcL3NfEQErA _VDZHURq9EeGYcL3NfEQErA">
+    <ownedEnd xmi:id="_VDZHURq9EeGYcL3NfEQErA" type="_s9Ig4BVdEeGQCvUGzi1kDQ" association="_VDZHUBq9EeGYcL3NfEQErA"/>
+  </uml:Association>
+  <CDA:ValueSetConstraint xmi:id="_e6YP4BxEEeGIELeDlfT77A" base_Property="_2OTHIxSVEeGGzu7fmW9pXw">
+    <reference href="../consol-vocab.uml#_S8sGQBrNEeGxIZCGAXKxsQ"/>
+    <ruleId>CONF:7653</ruleId>
+  </CDA:ValueSetConstraint>
+  <CDA:ConstraintValidation xmi:id="_wonhUBxGEeGIELeDlfT77A" base_Constraint="_tJGGcBxGEeGIELeDlfT77A">
+    <ruleId>CONF:7890</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_xKCRsBxZEeGXP8PxDYviDg" base_Constraint="_t6LqgBxZEeGXP8PxDYviDg">
+    <ruleId>CONF:8009</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_H8YoIBxaEeGXP8PxDYviDg" base_Constraint="_9s2SABxZEeGXP8PxDYviDg">
+    <ruleId>CONF:7752</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_LXrqUBxaEeGXP8PxDYviDg" base_Constraint="_JHSVABxaEeGXP8PxDYviDg">
+    <ruleId>CONF:7766</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:PropertyValidation xmi:id="__0M3sBxnEeGXP8PxDYviDg" base_Property="_hPmVkBg4EeGs5a462vYX5Q">
+    <ruleId>CONF:8289</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ValueSetConstraint xmi:id="_R8Hp4BxpEeGXP8PxDYviDg" base_Property="_hPwGlBg4EeGs5a462vYX5Q">
+    <reference href="../consol-vocab.uml#_S8sGQBrNEeGxIZCGAXKxsQ"/>
+    <ruleId>CONF:8290</ruleId>
+  </CDA:ValueSetConstraint>
+  <CDA:PropertyValidation xmi:id="_YBfFoBxpEeGXP8PxDYviDg" base_Property="_hPwGkBg4EeGs5a462vYX5Q">
+    <ruleId>CONF:8292</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_ddDWcBxpEeGXP8PxDYviDg" base_Property="_hPmVkhg4EeGs5a462vYX5Q">
+    <ruleId>CONF:8293</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ConstraintValidation xmi:id="_skkvMBxpEeGXP8PxDYviDg" severity="WARNING" base_Constraint="_ilhFEBxpEeGXP8PxDYviDg">
+    <ruleId>CONF:8294</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_vD-w4BxpEeGXP8PxDYviDg" severity="WARNING" base_Constraint="_oGW3cBxpEeGXP8PxDYviDg">
+    <ruleId>CONF:8295</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_xlcBABxpEeGXP8PxDYviDg" severity="WARNING" base_Constraint="_rX9yIBxpEeGXP8PxDYviDg">
+    <ruleId>CONF:8296</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_1T3akBxpEeGXP8PxDYviDg" base_Constraint="_0i4pkBxpEeGXP8PxDYviDg">
+    <ruleId>CONF:8297</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ValueSetConstraint xmi:id="_46eU4BxpEeGXP8PxDYviDg" base_Property="_hPwGmhg4EeGs5a462vYX5Q">
+    <reference href="../consol-vocab.uml#_-hMgMRrREeGxIZCGAXKxsQ"/>
+    <ruleId>CONF:8298</ruleId>
+  </CDA:ValueSetConstraint>
+  <CDA:PropertyValidation xmi:id="_MR3AUBxqEeGXP8PxDYviDg" severity="WARNING" base_Property="_LJu6oBxqEeGXP8PxDYviDg">
+    <ruleId>CONF:8299</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_mIS9YBxrEeGXP8PxDYviDg" severity="INFO" base_Property="_hPwGlhg4EeGs5a462vYX5Q"/>
+  <CDA:ConstraintValidation xmi:id="_D6CH0BxsEeGXP8PxDYviDg" base_Constraint="_ATZYUBxsEeGXP8PxDYviDg">
+    <ruleId>CONF:8316</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_IVsa0BxsEeGXP8PxDYviDg" base_Constraint="_C9KP4BxsEeGXP8PxDYviDg">
+    <ruleId>CONF:8312</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_7D4KABxsEeGXP8PxDYviDg" base_Constraint="_5r5qcBxsEeGXP8PxDYviDg">
+    <ruleId>CONF:7777</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="__lXYMBxsEeGXP8PxDYviDg" base_Constraint="_zFL1IBxsEeGXP8PxDYviDg">
+    <ruleId>CONF:8324</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:PropertyValidation xmi:id="_TWiAIBxuEeGXP8PxDYviDg" base_Property="_NL3hgBg4EeGs5a462vYX5Q">
+    <ruleId>CONF:8282</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ValueSetConstraint xmi:id="_aAWMwBxuEeGXP8PxDYviDg" base_Property="_NMUNfhg4EeGs5a462vYX5Q">
+    <reference href="../consol-vocab.uml#_S8sGQBrNEeGxIZCGAXKxsQ"/>
+    <ruleId>CONF:8237</ruleId>
+  </CDA:ValueSetConstraint>
+  <CDA:PropertyValidation xmi:id="_tDr60BxuEeGXP8PxDYviDg" base_Property="_NMUNdhg4EeGs5a462vYX5Q">
+    <ruleId>CONF:8239</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_w1WOkBxuEeGXP8PxDYviDg" base_Property="_NMUNcBg4EeGs5a462vYX5Q">
+    <ruleId>CONF:8240</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ConstraintValidation xmi:id="_E2CVsBxvEeGXP8PxDYviDg" severity="WARNING" base_Constraint="_-WpQYBxuEeGXP8PxDYviDg">
+    <ruleId>CONF:8241</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_k1et0BxvEeGXP8PxDYviDg" severity="WARNING" base_Constraint="_gpDwsBxvEeGXP8PxDYviDg">
+    <ruleId>CONF:8242</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_leEX0BxvEeGXP8PxDYviDg" severity="WARNING" base_Constraint="_iKsikBxvEeGXP8PxDYviDg">
+    <ruleId>CONF:8243</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_mGqB0BxvEeGXP8PxDYviDg" base_Constraint="_jzsgsBxvEeGXP8PxDYviDg">
+    <ruleId>CONF:8244</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ValueSetConstraint xmi:id="_1RgbYBxvEeGXP8PxDYviDg" base_Property="_NMUNhBg4EeGs5a462vYX5Q">
+    <reference href="../consol-vocab.uml#_-hMgMRrREeGxIZCGAXKxsQ"/>
+    <ruleId>CONF:8245</ruleId>
+  </CDA:ValueSetConstraint>
+  <CDA:PropertyValidation xmi:id="_8S1wIBxvEeGXP8PxDYviDg" base_Property="_NMUNjBg4EeGs5a462vYX5Q">
+    <ruleId>CONF:8368</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_-rtE8BxvEeGXP8PxDYviDg" severity="WARNING" base_Property="_NMUNchg4EeGs5a462vYX5Q">
+    <ruleId>CONF:8246</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_Egz3IBxwEeGXP8PxDYviDg" severity="INFO" base_Property="_NMUNehg4EeGs5a462vYX5Q">
+    <ruleId>CONF:8248</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ConstraintValidation xmi:id="_KqoVEBxwEeGXP8PxDYviDg" base_Constraint="_I_JDoBxwEeGXP8PxDYviDg">
+    <ruleId>CONF:8249</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:PropertyValidation xmi:id="_Vu0bQBxwEeGXP8PxDYviDg" severity="INFO" base_Property="_NMUNgBg4EeGs5a462vYX5Q"/>
+  <CDA:PropertyValidation xmi:id="_Y8DzUBxwEeGXP8PxDYviDg" severity="WARNING" base_Property="_NMUNiBg4EeGs5a462vYX5Q">
+    <ruleId>CONF:8250</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ValueSetConstraint xmi:id="_ZtFAkBxwEeGXP8PxDYviDg" base_Property="_NMUNiBg4EeGs5a462vYX5Q">
+    <reference href="../consol-vocab.uml#_2H3vABSVEeGGzu7fmW9pXw"/>
+    <ruleId>CONF:10121</ruleId>
+  </CDA:ValueSetConstraint>
+  <CDA:ConstraintValidation xmi:id="_s0jAsBxwEeGXP8PxDYviDg" base_Constraint="_oJm7kBxwEeGXP8PxDYviDg">
+    <ruleId>CONF:8266</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_tPtSsBxwEeGXP8PxDYviDg" base_Constraint="_p26x8BxwEeGXP8PxDYviDg">
+    <ruleId>CONF:8262</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_toQ8oBxwEeGXP8PxDYviDg" base_Constraint="_rOfo4BxwEeGXP8PxDYviDg">
+    <ruleId>CONF:8274</ruleId>
+  </CDA:ConstraintValidation>
+  <uml:Class xmi:id="_qeLqQBxEEeGIELeDlfT77A" name="ProcedureEncounter">
+    <ownedRule xmi:id="_UWwzQBxcEeGXP8PxDYviDg" name="sameEncounter" constrainedElement="_qeLqQBxEEeGIELeDlfT77A">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WsHhEBxcEeGXP8PxDYviDg">
+        <language>Analysis</language>
+        <body>Set the encounter ID to the ID of an encounter in another section to signify they are the same encounter.</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_qeMRUBxEEeGIELeDlfT77A">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_AAXtEEbvEd6besF9iFIJkQ"/>
+    </generalization>
+    <ownedAttribute xmi:id="_F7Fz4BxcEeGXP8PxDYviDg" name="classCode" visibility="private">
+      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVdYEDcEd6xYZuu1VKCVw"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_n4VYQEb9Ed6besF9iFIJkQ"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_IxdkEBxcEeGXP8PxDYviDg" value="ENC"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_F7HpEBxcEeGXP8PxDYviDg" name="moodCode" visibility="private">
+      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOpnUDcEd6xYZuu1VKCVw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_F7HpERxcEeGXP8PxDYviDg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_F7HpEhxcEeGXP8PxDYviDg" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_SaymoEo0Ed6c3qsAxlFHaQ"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_NKahUBxcEeGXP8PxDYviDg" value="EVN"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_F7HCABxcEeGXP8PxDYviDg" name="id" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QwXUUBxcEeGXP8PxDYviDg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QwX7YBxcEeGXP8PxDYviDg" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_DKBLQEo0Ed6c3qsAxlFHaQ"/>
+    </ownedAttribute>
+  </uml:Class>
+  <CDA:ConstraintValidation xmi:id="_W6JWABxcEeGXP8PxDYviDg" severity="INFO" base_Constraint="_UWwzQBxcEeGXP8PxDYviDg">
+    <ruleId>CONF:7774</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:PropertyValidation xmi:id="_G9-NMBxcEeGXP8PxDYviDg" base_Property="_F7Fz4BxcEeGXP8PxDYviDg">
+    <ruleId>CONF:7771</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_LbXlkBxcEeGXP8PxDYviDg" base_Property="_F7HpEBxcEeGXP8PxDYviDg">
+    <ruleId>CONF:7772</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_RFZwMBxcEeGXP8PxDYviDg" base_Property="_F7HCABxcEeGXP8PxDYviDg">
+    <ruleId>CONF:7773</ruleId>
+  </CDA:PropertyValidation>
+  <uml:Class xmi:id="_nbpGUBxEEeGIELeDlfT77A" name="ProcedurePerformer">
+    <ownedRule xmi:id="_fu9akBxcEeGXP8PxDYviDg" name="assignedEntity" constrainedElement="_nbpGUBxEEeGIELeDlfT77A">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_kD6BkBxcEeGXP8PxDYviDg">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>SHALL contain exactly one [1..1] assignedEntity</body>
+        <body>self.assignedEntity->size() = 1</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_ofCJEBxcEeGXP8PxDYviDg" name="assignedEntityId" constrainedElement="_fu9akBxcEeGXP8PxDYviDg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_qjD2UBxcEeGXP8PxDYviDg">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>assignedEntity SHALL contain at least one [1..*] id</body>
+        <body>self.assignedEntity.id->size() >= 1</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_IMfKkBxjEeGXP8PxDYviDg" name="assignedEntityAddr" constrainedElement="_ofCJEBxcEeGXP8PxDYviDg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_LGmyUBxjEeGXP8PxDYviDg">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>assignedEntity SHALL contain exactly one [1..1] addr</body>
+        <body>self.assignedEntity.addr->size() = 1</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_NG_8wBxjEeGXP8PxDYviDg" name="assignedEntityTelecom" constrainedElement="_IMfKkBxjEeGXP8PxDYviDg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_QxeDYBxjEeGXP8PxDYviDg">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>assignedEntity SHALL contain exactly one [1..1] telecom</body>
+        <body>self.assignedEntity.telecom->size() = 1</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_Ss84oBxjEeGXP8PxDYviDg" name="assignedEntityRepOrg" constrainedElement="_NG_8wBxjEeGXP8PxDYviDg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_VRCmABxjEeGXP8PxDYviDg">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>assignedEntity SHOULD contain zero or one [0..1] representedOrganization</body>
+        <body>self.assignedEntity.representedOrganization->size() &lt;= 1</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_X3E0IBxjEeGXP8PxDYviDg" name="assignedEntityRepOrgId" constrainedElement="_Ss84oBxjEeGXP8PxDYviDg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_zVWHIBxjEeGXP8PxDYviDg">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>representedOrganization, if present, SHOULD contain zero or more [0..*] id</body>
+        <body>self.assignedEntity.representedOrganization.id->size() > 0</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_bkN0QBxjEeGXP8PxDYviDg" name="assignedEntityRepOrgName" constrainedElement="_X3E0IBxjEeGXP8PxDYviDg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_4NUisBxjEeGXP8PxDYviDg">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>representedOrganization, if present, MAY contain zero or more [0..*] name</body>
+        <body>self.assignedEntity.representedOrganization.name->size() > 0</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_cs-MEBxjEeGXP8PxDYviDg" name="assignedEntityRepOrgAddr" constrainedElement="_bkN0QBxjEeGXP8PxDYviDg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_5BP6ABxjEeGXP8PxDYviDg">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>representedOrganization, if present, SHALL contain exactly one [1..1] addr</body>
+        <body>self.assignedEntity.representedOrganization.addr->size() = 1</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_eFMjQBxjEeGXP8PxDYviDg" name="assignedEntityRepOrgTelecom" constrainedElement="_cs-MEBxjEeGXP8PxDYviDg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_585p8BxjEeGXP8PxDYviDg">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>representedOrganization, if present, SHALL contain exactly one [1..1] telecom</body>
+        <body>self.assignedEntity.representedOrganization.telecom->size() = 1</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_nbptYBxEEeGIELeDlfT77A">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_HP8qoEcaEd6besF9iFIJkQ"/>
+    </generalization>
+  </uml:Class>
+  <CDA:ConstraintValidation xmi:id="_kQwKwBxcEeGXP8PxDYviDg" base_Constraint="_fu9akBxcEeGXP8PxDYviDg">
+    <ruleId>CONF:7720</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_raw6YBxcEeGXP8PxDYviDg" base_Constraint="_ofCJEBxcEeGXP8PxDYviDg">
+    <ruleId>CONF:7722</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_MRlXsBxjEeGXP8PxDYviDg" base_Constraint="_IMfKkBxjEeGXP8PxDYviDg">
+    <ruleId>CONF:7731</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_PIIuEBxjEeGXP8PxDYviDg" base_Constraint="_NG_8wBxjEeGXP8PxDYviDg">
+    <ruleId>CONF:7732</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_VfB-sBxjEeGXP8PxDYviDg" severity="WARNING" base_Constraint="_Ss84oBxjEeGXP8PxDYviDg">
+    <ruleId>CONF:7733</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_7UPQUBxjEeGXP8PxDYviDg" severity="WARNING" base_Constraint="_X3E0IBxjEeGXP8PxDYviDg">
+    <ruleId>CONF:7734</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_8d4Y8BxjEeGXP8PxDYviDg" severity="INFO" base_Constraint="_bkN0QBxjEeGXP8PxDYviDg">
+    <ruleId>CONF:7735</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_9F5bMBxjEeGXP8PxDYviDg" base_Constraint="_cs-MEBxjEeGXP8PxDYviDg">
+    <ruleId>CONF:7736</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_9ha5kBxjEeGXP8PxDYviDg" base_Constraint="_eFMjQBxjEeGXP8PxDYviDg">
+    <ruleId>CONF:7737</ruleId>
+  </CDA:ConstraintValidation>
+  <uml:Class xmi:id="_JIc0oBxEEeGIELeDlfT77A" name="ProcedureSpecimen">
+    <ownedComment xmi:id="_Z47QwBxbEeGXP8PxDYviDg">
+      <body>This specimen is for representing specimens obtained from a procedure</body>
+    </ownedComment>
+    <ownedRule xmi:id="_qp5TkBxbEeGXP8PxDYviDg" name="specimenRole" constrainedElement="_JIc0oBxEEeGIELeDlfT77A">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_t30BEBxbEeGXP8PxDYviDg">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>SHALL contain exactly one [1..1] specimenRole</body>
+        <body>self.specimenRole->size() = 1</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_wOrx0BxbEeGXP8PxDYviDg" name="specimentRoleId" constrainedElement="_qp5TkBxbEeGXP8PxDYviDg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_zIM8oBxbEeGXP8PxDYviDg">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>specimenRole SHOULD contain zero or more [0..*] id</body>
+        <body>self.specimenRole.id->size() > 0</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_1NFlgBxbEeGXP8PxDYviDg" name="sameSpecimen" constrainedElement="_JIc0oBxEEeGIELeDlfT77A">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_5DeoQBxbEeGXP8PxDYviDg">
+        <language>Analysis</language>
+        <body>To indicate that the Procedure and the Results are referring to the same specimen, the Procedure/specimen/specimenRole/id SHOULD be set to equal an Organizer/specimen/ specimenRole/id.</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_JIyy4BxEEeGIELeDlfT77A">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_mdwKcEcaEd6besF9iFIJkQ"/>
+    </generalization>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_6lQbgBxEEeGIELeDlfT77A" base_Class="_JIc0oBxEEeGIELeDlfT77A"/>
+  <CDA:ConstraintValidation xmi:id="_uFpBsBxbEeGXP8PxDYviDg" base_Constraint="_qp5TkBxbEeGXP8PxDYviDg">
+    <ruleId>CONF:7704</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_zgzC0BxbEeGXP8PxDYviDg" severity="WARNING" base_Constraint="_wOrx0BxbEeGXP8PxDYviDg">
+    <ruleId>CONF:7716</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_5TcW4BxbEeGXP8PxDYviDg" severity="WARNING" base_Constraint="_1NFlgBxbEeGXP8PxDYviDg">
+    <ruleId>CONF:7717</ruleId>
+  </CDA:ConstraintValidation>
+  <uml:Association xmi:id="_CHBJgBxVEeGXP8PxDYviDg" memberEnd="_CG_UUBxVEeGXP8PxDYviDg _CHBJgRxVEeGXP8PxDYviDg">
+    <ownedEnd xmi:id="_CHBJgRxVEeGXP8PxDYviDg" type="_2OG58RSVEeGGzu7fmW9pXw" association="_CHBJgBxVEeGXP8PxDYviDg"/>
+  </uml:Association>
+  <uml:Association xmi:id="_F1DsEBxWEeGXP8PxDYviDg" memberEnd="_F1Cd8BxWEeGXP8PxDYviDg _F1DsERxWEeGXP8PxDYviDg">
+    <ownedEnd xmi:id="_F1DsERxWEeGXP8PxDYviDg" type="_2OG58RSVEeGGzu7fmW9pXw" association="_F1DsEBxWEeGXP8PxDYviDg"/>
+  </uml:Association>
+  <uml:Association xmi:id="_rDXwQBxrEeGXP8PxDYviDg" memberEnd="_rDWiIBxrEeGXP8PxDYviDg _rDYXUBxrEeGXP8PxDYviDg">
+    <ownedEnd xmi:id="_rDYXUBxrEeGXP8PxDYviDg" type="_awdH4Bg4EeGs5a462vYX5Q" association="_rDXwQBxrEeGXP8PxDYviDg"/>
+  </uml:Association>
+  <uml:Association xmi:id="_OymM0BxsEeGXP8PxDYviDg" memberEnd="_Oyk-sBxsEeGXP8PxDYviDg _OymM0RxsEeGXP8PxDYviDg">
+    <ownedEnd xmi:id="_OymM0RxsEeGXP8PxDYviDg" type="_awdH4Bg4EeGs5a462vYX5Q" association="_OymM0BxsEeGXP8PxDYviDg"/>
+  </uml:Association>
+  <uml:Association xmi:id="_Y1sCYBxsEeGXP8PxDYviDg" memberEnd="_Y1qNMBxsEeGXP8PxDYviDg _Y1sCYRxsEeGXP8PxDYviDg">
+    <ownedEnd xmi:id="_Y1sCYRxsEeGXP8PxDYviDg" type="_awdH4Bg4EeGs5a462vYX5Q" association="_Y1sCYBxsEeGXP8PxDYviDg"/>
+  </uml:Association>
+  <uml:Association xmi:id="_D6ryoBxtEeGXP8PxDYviDg" memberEnd="_D6qkgBxtEeGXP8PxDYviDg _D6ryoRxtEeGXP8PxDYviDg">
+    <ownedEnd xmi:id="_D6ryoRxtEeGXP8PxDYviDg" type="_awdH4Bg4EeGs5a462vYX5Q" association="_D6ryoBxtEeGXP8PxDYviDg"/>
+  </uml:Association>
+  <uml:Association xmi:id="_MTbmQBxtEeGXP8PxDYviDg" memberEnd="_MTaYIBxtEeGXP8PxDYviDg _MTbmQRxtEeGXP8PxDYviDg">
+    <ownedEnd xmi:id="_MTbmQRxtEeGXP8PxDYviDg" type="_awdH4Bg4EeGs5a462vYX5Q" association="_MTbmQBxtEeGXP8PxDYviDg"/>
+  </uml:Association>
+  <uml:Association xmi:id="_cERBwBxtEeGXP8PxDYviDg" memberEnd="_cEQasBxtEeGXP8PxDYviDg _cERo0BxtEeGXP8PxDYviDg">
+    <ownedEnd xmi:id="_cERo0BxtEeGXP8PxDYviDg" type="_awdH4Bg4EeGs5a462vYX5Q" association="_cERBwBxtEeGXP8PxDYviDg"/>
+  </uml:Association>
+  <uml:Association xmi:id="_x2ZJ8BxwEeGXP8PxDYviDg" memberEnd="_x2X70BxwEeGXP8PxDYviDg _x2ZJ8RxwEeGXP8PxDYviDg">
+    <ownedEnd xmi:id="_x2ZJ8RxwEeGXP8PxDYviDg" type="_Aj7JkBg4EeGs5a462vYX5Q" association="_x2ZJ8BxwEeGXP8PxDYviDg"/>
+  </uml:Association>
+  <uml:Association xmi:id="_5Pv9IBxwEeGXP8PxDYviDg" memberEnd="_5PuH8BxwEeGXP8PxDYviDg _5Pv9IRxwEeGXP8PxDYviDg">
+    <ownedEnd xmi:id="_5Pv9IRxwEeGXP8PxDYviDg" type="_Aj7JkBg4EeGs5a462vYX5Q" association="_5Pv9IBxwEeGXP8PxDYviDg"/>
+  </uml:Association>
+  <uml:Association xmi:id="_HGaK8BxxEeGXP8PxDYviDg" memberEnd="_HGZj4BxxEeGXP8PxDYviDg _HGaK8RxxEeGXP8PxDYviDg">
+    <ownedEnd xmi:id="_HGaK8RxxEeGXP8PxDYviDg" type="_Aj7JkBg4EeGs5a462vYX5Q" association="_HGaK8BxxEeGXP8PxDYviDg"/>
+  </uml:Association>
+  <uml:Association xmi:id="_VUIN4BxxEeGXP8PxDYviDg" memberEnd="_VUG_wBxxEeGXP8PxDYviDg _VUI08BxxEeGXP8PxDYviDg">
+    <ownedEnd xmi:id="_VUI08BxxEeGXP8PxDYviDg" type="_Aj7JkBg4EeGs5a462vYX5Q" association="_VUIN4BxxEeGXP8PxDYviDg"/>
+  </uml:Association>
+  <uml:Association xmi:id="_cZaOgBxxEeGXP8PxDYviDg" memberEnd="_cZZAYBxxEeGXP8PxDYviDg _cZaOgRxxEeGXP8PxDYviDg">
+    <ownedEnd xmi:id="_cZaOgRxxEeGXP8PxDYviDg" type="_Aj7JkBg4EeGs5a462vYX5Q" association="_cZaOgBxxEeGXP8PxDYviDg"/>
+  </uml:Association>
+  <uml:Association xmi:id="_odu8ABxxEeGXP8PxDYviDg" memberEnd="_odtt4BxxEeGXP8PxDYviDg _odu8ARxxEeGXP8PxDYviDg">
+    <ownedEnd xmi:id="_odu8ARxxEeGXP8PxDYviDg" type="_Aj7JkBg4EeGs5a462vYX5Q" association="_odu8ABxxEeGXP8PxDYviDg"/>
+  </uml:Association>
+  <uml:Class xmi:id="_OA_Q0DVyEeGaW4kr-GbV8Q" name="AnesthesiaSection">
+    <ownedComment xmi:id="_dpvJsDWmEeG32vxjh5_fjg">
+      <body>The Anesthesia section briefly records the type of anesthesia (e.g., general or local) and may state the actual agent used. This may or may not be a subsection of the Procedure Description section. The full details of anesthesia are usually found in a separate Anesthesia Note.</body>
+    </ownedComment>
+    <generalization xmi:id="_OA_Q0TVyEeGaW4kr-GbV8Q">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_kPlcUDWmEeG32vxjh5_fjg" name="code" visibility="private" isReadOnly="true" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bWiikDWnEeG32vxjh5_fjg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bWiikTWnEeG32vxjh5_fjg" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_9lgCcErmEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_kPlcUzWmEeG32vxjh5_fjg" name="text" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_b8iyoDWnEeG32vxjh5_fjg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b8iyoTWnEeG32vxjh5_fjg" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_kPlcVjWmEeG32vxjh5_fjg" name="title" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cfHUMDWnEeG32vxjh5_fjg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cfHUMTWnEeG32vxjh5_fjg" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_w85ccDWmEeG32vxjh5_fjg" name="procedureActivityProcedure" type="_2OG58RSVEeGGzu7fmW9pXw" association="_w85ccjWmEeG32vxjh5_fjg">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ewGfYDWnEeG32vxjh5_fjg" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ewGfYTWnEeG32vxjh5_fjg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_zMF34DWmEeG32vxjh5_fjg" name="medicationActivity">
+      <type xmi:type="uml:Class" href="consol-medications.uml#_2GHbgBSVEeGGzu7fmW9pXw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fOfrkDWnEeG32vxjh5_fjg" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_fOfrkTWnEeG32vxjh5_fjg"/>
+      <association href="consol-medications.uml#_zMF34jWmEeG32vxjh5_fjg"/>
+    </ownedAttribute>
+  </uml:Class>
+  <uml:Class xmi:id="_R1OXcDVyEeGaW4kr-GbV8Q" name="ComplicationsSection">
+    <ownedComment xmi:id="_zxyf4FjaEeGRqYkwoeymcA">
+      <body>The Complications section records problems that occurred during the procedure or other activity. The complications may have been known risks or unanticipated problems.</body>
+    </ownedComment>
+    <ownedRule xmi:id="_z_CwYFjoEeGRqYkwoeymcA" name="explicitComplications" constrainedElement="_R1OXcDVyEeGaW4kr-GbV8Q">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_12zjQFjoEeGRqYkwoeymcA">
+        <language>Analysis</language>
+        <body>There SHALL be a statement providing details of the complication(s) or it SHALL explicitly state there were no complications.</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_R1OXcTVyEeGaW4kr-GbV8Q">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_zwZ0QFjkEeGRqYkwoeymcA" name="code" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hPjycFjoEeGRqYkwoeymcA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hPjycVjoEeGRqYkwoeymcA" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_9lgCcErmEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_zwabUFjkEeGRqYkwoeymcA" name="title" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iBgz0FjoEeGRqYkwoeymcA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iBgz0VjoEeGRqYkwoeymcA" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_zwZ0Q1jkEeGRqYkwoeymcA" name="text" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hmmZcFjoEeGRqYkwoeymcA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hmmZcVjoEeGRqYkwoeymcA" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_4XdiIFjoEeGRqYkwoeymcA" name="problemObservation" association="_4XfXUFjoEeGRqYkwoeymcA">
+      <type xmi:type="uml:Class" href="consol-problems.uml#_5Ha7ABUyEeGbmN_W114JUw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6Tr-QFjoEeGRqYkwoeymcA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6TslUFjoEeGRqYkwoeymcA"/>
+    </ownedAttribute>
+  </uml:Class>
+  <uml:Class xmi:id="_vHfXoDVyEeGaW4kr-GbV8Q" name="OperativeNoteFluidSection">
+    <ownedComment xmi:id="_UgHj8FmvEeGRqYkwoeymcA">
+      <body>The Operative Note Fluids section may be used to record fluids administered during the surgical procedure.</body>
+    </ownedComment>
+    <ownedRule xmi:id="_ZcsLoFmvEeGRqYkwoeymcA" name="fluidsAdministered" constrainedElement="_vHfXoDVyEeGaW4kr-GbV8Q">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_c2YrUFmvEeGRqYkwoeymcA">
+        <language>Analysis</language>
+        <body>If the Operative Note Fluids section is present, there SHALL be a statement providing details of the fluids administered or SHALL explicitly state there were no fluids administered</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_vHfXoTVyEeGaW4kr-GbV8Q">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_ZoVu4EEtEeGdmoWy_aLP0Q" name="code" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ab6tQEEuEeGdmoWy_aLP0Q" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ab6tQUEuEeGdmoWy_aLP0Q" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_9lgCcErmEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_ZoVu40EtEeGdmoWy_aLP0Q" name="text" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_A12QMEEuEeGdmoWy_aLP0Q" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_A12QMUEuEeGdmoWy_aLP0Q" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_ZoVu5kEtEeGdmoWy_aLP0Q" name="title" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BNsIcEEuEeGdmoWy_aLP0Q" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BNsIcUEuEeGdmoWy_aLP0Q" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+  </uml:Class>
+  <uml:Class xmi:id="_zel6wDVyEeGaW4kr-GbV8Q" name="OperativeNoteSurgicalProcedureSection">
+    <ownedComment xmi:id="_rxk2EEE2EeGdmoWy_aLP0Q">
+      <body>The Operative Note Surgical Procedure section can be used to restate the procedures performed if appropriate for an enterprise workflow.  The procedure(s) performed associated with the Operative Note are formally modeled in the header using serviceEvent.</body>
+    </ownedComment>
+    <ownedRule xmi:id="_MAXA0EEuEeGdmoWy_aLP0Q" name="hasProcedureText" constrainedElement="_zel6wDVyEeGaW4kr-GbV8Q">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_O6eBgEEuEeGdmoWy_aLP0Q">
+        <language>Analysis</language>
+        <body>If the surgical procedure section is present there SHALL be text indicating the procedure performed.</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_zel6wTVyEeGaW4kr-GbV8Q">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_vJXAUEEtEeGdmoWy_aLP0Q" name="code" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BmkigEEuEeGdmoWy_aLP0Q" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BmkigUEuEeGdmoWy_aLP0Q" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_9lgCcErmEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_vJXAU0EtEeGdmoWy_aLP0Q" name="text" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CBinQEEuEeGdmoWy_aLP0Q" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CBinQUEuEeGdmoWy_aLP0Q" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_vJXAVkEtEeGdmoWy_aLP0Q" name="title" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CgsBYEEuEeGdmoWy_aLP0Q" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CgsBYUEuEeGdmoWy_aLP0Q" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+  </uml:Class>
+  <uml:Class xmi:id="_3b6E4DVyEeGaW4kr-GbV8Q" name="PlannedProcedureSection">
+    <ownedComment xmi:id="_vw-q4EE2EeGdmoWy_aLP0Q">
+      <body>The Planned Procedure section records the procedure(s) that a clinician thought would need to be done based on the preoperative assessment. It may be important to record the procedure(s) that were originally planned for, consented to, and perhaps pre-approved by the payor, particularly if different from the actual procedure(s) and procedure details, to provide evidence to various stakeholders that the providers are aware of the discrepancy and the justification can be found in the procedure details.</body>
+    </ownedComment>
+    <generalization xmi:id="_3b6E4TVyEeGaW4kr-GbV8Q">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_y9eVsEEuEeGdmoWy_aLP0Q" name="code" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_60O2kEEuEeGdmoWy_aLP0Q" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_60O2kUEuEeGdmoWy_aLP0Q" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_9lgCcErmEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_y9eVs0EuEeGdmoWy_aLP0Q" name="text" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7NkjoEEuEeGdmoWy_aLP0Q" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7NkjoUEuEeGdmoWy_aLP0Q" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_y9eVtkEuEeGdmoWy_aLP0Q" name="title" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7npQgEEuEeGdmoWy_aLP0Q" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7npQgUEuEeGdmoWy_aLP0Q" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_HSV9EEEvEeGdmoWy_aLP0Q" name="planOfCareActivityProcedure" association="_HSV9EkEvEeGdmoWy_aLP0Q">
+      <type xmi:type="uml:Class" href="consol-planofcare.uml#_2NiSKhSVEeGGzu7fmW9pXw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VOsEsFmwEeGRqYkwoeymcA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VOsrwFmwEeGRqYkwoeymcA"/>
+    </ownedAttribute>
+  </uml:Class>
+  <uml:Class xmi:id="_7UA-4DVyEeGaW4kr-GbV8Q" name="PostoperativeDiagnosisSection">
+    <ownedComment xmi:id="_0An7IEE2EeGdmoWy_aLP0Q">
+      <body>The Postoperative Diagnosis section records the diagnosis or diagnoses discovered or confirmed during the surgery. Often it is the same as the preoperative diagnosis.</body>
+    </ownedComment>
+    <generalization xmi:id="_7UA-4TVyEeGaW4kr-GbV8Q">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_d03LMECUEeGELr7uj3LK_Q" name="code" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gUvuAECUEeGELr7uj3LK_Q" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gUvuAUCUEeGELr7uj3LK_Q" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_9lgCcErmEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_d03LM0CUEeGELr7uj3LK_Q" name="text" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gpwUsECUEeGELr7uj3LK_Q" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gpwUsUCUEeGELr7uj3LK_Q" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_d03LNkCUEeGELr7uj3LK_Q" name="title" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hFxiUECUEeGELr7uj3LK_Q" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hFxiUUCUEeGELr7uj3LK_Q" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+  </uml:Class>
+  <uml:Class xmi:id="_-jlSMDVyEeGaW4kr-GbV8Q" name="PostprocedureDiagnosisSection">
+    <ownedComment xmi:id="_2BrM4EE2EeGdmoWy_aLP0Q">
+      <body>The Postprocedure Diagnosis section records the diagnosis or diagnoses discovered or confirmed during the procedure. Often it is the same as the pre-procedure diagnosis or indication.</body>
+    </ownedComment>
+    <generalization xmi:id="_-jlSMTVyEeGaW4kr-GbV8Q">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_SQVUoEEvEeGdmoWy_aLP0Q" name="code" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SQVUoUEvEeGdmoWy_aLP0Q" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SQVUokEvEeGdmoWy_aLP0Q"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_9lgCcErmEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_SQVUo0EvEeGdmoWy_aLP0Q" name="text" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SQVUpEEvEeGdmoWy_aLP0Q" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SQVUpUEvEeGdmoWy_aLP0Q"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_SQVUpkEvEeGdmoWy_aLP0Q" name="title" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SQVUp0EvEeGdmoWy_aLP0Q" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SQVUqEEvEeGdmoWy_aLP0Q"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_eZUDMEEwEeGdmoWy_aLP0Q" name="postprocedureDiagnosis" type="_0fjXAEEvEeGdmoWy_aLP0Q" association="_eZUDMkEwEeGdmoWy_aLP0Q">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eZUDMUEwEeGdmoWy_aLP0Q"/>
+    </ownedAttribute>
+  </uml:Class>
+  <uml:Class xmi:id="_Cu6qMDVzEeGaW4kr-GbV8Q" name="PreoperativeDiagnosisSection">
+    <ownedComment xmi:id="_4B0fsEE2EeGdmoWy_aLP0Q">
+      <body>The Preoperative Diagnosis section records the surgical diagnosis or diagnoses assigned to the patient before the surgical procedure and is the reason for the surgery. The preoperative diagnosis is, in the opinion of the surgeon, the diagnosis that will be confirmed during surgery.</body>
+    </ownedComment>
+    <generalization xmi:id="_Cu6qMTVzEeGaW4kr-GbV8Q">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_5vgB8FvvEeGxXeivz89y3A" name="code" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-GLuUFvvEeGxXeivz89y3A" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-GLuUVvvEeGxXeivz89y3A" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_9lgCcErmEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_5vrBEFvvEeGxXeivz89y3A" name="text" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-oRHsFvvEeGxXeivz89y3A" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-oRHsVvvEeGxXeivz89y3A" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_5vroIFvvEeGxXeivz89y3A" name="title" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__NU8kFvvEeGxXeivz89y3A" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__NU8kVvvEeGxXeivz89y3A" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_0c8yIFwOEeG0y_7i0ygc4g" name="preoperativeDiagnosis" type="_0baBYEEwEeGdmoWy_aLP0Q" association="_0c-nUFwOEeG0y_7i0ygc4g">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0c8yIVwOEeG0y_7i0ygc4g"/>
+    </ownedAttribute>
+  </uml:Class>
+  <uml:Class xmi:id="_HNUIIDVzEeGaW4kr-GbV8Q" name="ProcedureDescriptionSection">
+    <ownedComment xmi:id="_Fyfh4ECVEeGELr7uj3LK_Q">
+      <body>The Procedure Description section records the particulars of the procedure and may include procedure site preparation, surgical site preparation, pertinent details related to sedation/anesthesia, pertinent details related to measurements and markings, procedure times, medications administered, estimated blood loss, specimens removed, implants, instrumentation, sponge counts, tissue manipulation, wound closure, sutures used, vital signs and other monitoring data. Local practice often identifies the level and type of detail required based on the procedure or specialty.</body>
+    </ownedComment>
+    <generalization xmi:id="_HNUIITVzEeGaW4kr-GbV8Q">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_A-MFYECVEeGELr7uj3LK_Q" name="code" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IcXuMECVEeGELr7uj3LK_Q" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IcXuMUCVEeGELr7uj3LK_Q" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_9lgCcErmEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_A-MFY0CVEeGELr7uj3LK_Q" name="text" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_I1QIQECVEeGELr7uj3LK_Q" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_I1QIQUCVEeGELr7uj3LK_Q" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_A-MFZkCVEeGELr7uj3LK_Q" name="title" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JM8PgECVEeGELr7uj3LK_Q" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JM8PgUCVEeGELr7uj3LK_Q" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+  </uml:Class>
+  <uml:Class xmi:id="_QhXGYDVzEeGaW4kr-GbV8Q" name="ProcedureDispositionSection">
+    <ownedComment xmi:id="_ZwQ34ECVEeGELr7uj3LK_Q">
+      <body>The Procedure Disposition section records the status and condition of the patient at the completion of the procedure or surgery.  It often also states where the patent was transferred to for the next level of care.</body>
+    </ownedComment>
+    <generalization xmi:id="_QhXGYTVzEeGaW4kr-GbV8Q">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_bXiXsECVEeGELr7uj3LK_Q" name="code" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qcFU8ECVEeGELr7uj3LK_Q" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qcFU8UCVEeGELr7uj3LK_Q" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_9lgCcErmEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_bXiXs0CVEeGELr7uj3LK_Q" name="text" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rcm90ECVEeGELr7uj3LK_Q" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rcm90UCVEeGELr7uj3LK_Q" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_bXiXtkCVEeGELr7uj3LK_Q" name="title" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_r05iAECVEeGELr7uj3LK_Q" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_r05iAUCVEeGELr7uj3LK_Q" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+  </uml:Class>
+  <uml:Class xmi:id="_TvcL8DVzEeGaW4kr-GbV8Q" name="ProcedureEstimatedBloodLossSection">
+    <ownedComment xmi:id="_BuKCIEE3EeGdmoWy_aLP0Q">
+      <body>The Estimated Blood Loss section may be a subsection of another section such as the Procedure Description section. The Estimated Blood Loss section records the approximate amount of blood that the patient lost during the procedure or surgery. It may be an accurate quantitative amount, e.g., 250 milliliters, or it may be descriptive, e.g., &quot;minimal&quot; or &quot;none&quot;.</body>
+    </ownedComment>
+    <ownedRule xmi:id="_Jw_CYEEyEeGdmoWy_aLP0Q" name="bloodLossEstimate" constrainedElement="_TvcL8DVzEeGaW4kr-GbV8Q">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_LuTqsEEyEeGdmoWy_aLP0Q">
+        <language>Analysis</language>
+        <body>The Estimated Blood Loss section SHALL include a statement providing an estimate of the amount of blood lost during the procedure, even if the estimate is text, such as &quot;minimal&quot; or &quot;none&quot;</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_TvcL8TVzEeGaW4kr-GbV8Q">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_0UcBQEExEeGdmoWy_aLP0Q" name="code" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__nlwgEExEeGdmoWy_aLP0Q" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__nlwgUExEeGdmoWy_aLP0Q" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_9lgCcErmEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_0UcBQ0ExEeGdmoWy_aLP0Q" name="text" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AAexoEEyEeGdmoWy_aLP0Q" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AAexoUEyEeGdmoWy_aLP0Q" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_0UcBRkExEeGdmoWy_aLP0Q" name="title" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AbmAUEEyEeGdmoWy_aLP0Q" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AbmAUUEyEeGdmoWy_aLP0Q" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+  </uml:Class>
+  <uml:Class xmi:id="_W4UBYDVzEeGaW4kr-GbV8Q" name="ProcedureFindingsSection">
+    <ownedComment xmi:id="_EXSAgEE3EeGdmoWy_aLP0Q">
+      <body>The Procedure Findings section records clinically significant observations confirmed or discovered during the procedure or surgery.</body>
+    </ownedComment>
+    <generalization xmi:id="_W4UBYTVzEeGaW4kr-GbV8Q">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_V8xCwEEyEeGdmoWy_aLP0Q" name="code" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZUYe0EEyEeGdmoWy_aLP0Q" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZUYe0UEyEeGdmoWy_aLP0Q" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_9lgCcErmEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_V8xCw0EyEeGdmoWy_aLP0Q" name="text" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZqvJUEEyEeGdmoWy_aLP0Q" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZqvJUUEyEeGdmoWy_aLP0Q" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_V86MsEEyEeGdmoWy_aLP0Q" name="title" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aBFMwEEyEeGdmoWy_aLP0Q" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aBFMwUEyEeGdmoWy_aLP0Q" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_oVDosEEyEeGdmoWy_aLP0Q" name="problemObservation" association="_oVNZsEEyEeGdmoWy_aLP0Q">
+      <type xmi:type="uml:Class" href="consol-problems.uml#_5Ha7ABUyEeGbmN_W114JUw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_s1GFYEEyEeGdmoWy_aLP0Q" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_s1GFYUEyEeGdmoWy_aLP0Q"/>
+    </ownedAttribute>
+  </uml:Class>
+  <uml:Class xmi:id="_Z662wDVzEeGaW4kr-GbV8Q" name="ProcedureImplantsSection">
+    <ownedComment xmi:id="_F3ZIYEE3EeGdmoWy_aLP0Q">
+      <body>The Procedure Implants section records any materials placed during the procedure including stents, tubes, and drains.</body>
+    </ownedComment>
+    <ownedRule xmi:id="_L5NdsEEzEeGdmoWy_aLP0Q" name="hasImplantDetails" constrainedElement="_Z662wDVzEeGaW4kr-GbV8Q">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_NTg4gEEzEeGdmoWy_aLP0Q">
+        <language>Analysis</language>
+        <body>The Implants section SHALL include a statement providing details of the implants placed, or assert no implants were placed</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_Z662wTVzEeGaW4kr-GbV8Q">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_1yMjQEEyEeGdmoWy_aLP0Q" name="code" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8h4uYEEyEeGdmoWy_aLP0Q" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8h4uYUEyEeGdmoWy_aLP0Q" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_9lgCcErmEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_1yMjQ0EyEeGdmoWy_aLP0Q" name="text" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_84Yi0EEyEeGdmoWy_aLP0Q" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_84Yi0UEyEeGdmoWy_aLP0Q" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_1yMjRkEyEeGdmoWy_aLP0Q" name="title" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9R3Z0EEyEeGdmoWy_aLP0Q" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9R3Z0UEyEeGdmoWy_aLP0Q" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+  </uml:Class>
+  <uml:Class xmi:id="_cjmJMDVzEeGaW4kr-GbV8Q" name="ProcedureIndicationsSection">
+    <ownedComment xmi:id="_ukS8sEEzEeGdmoWy_aLP0Q">
+      <body>The Procedure Indications section records details about the reason for the procedure or surgery. This section may include the pre-procedure diagnosis or diagnoses as well as one or more symptoms that contribute to the reason the procedure is being performed.</body>
+    </ownedComment>
+    <generalization xmi:id="_cjv6MDVzEeGaW4kr-GbV8Q">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_Xia8gEEzEeGdmoWy_aLP0Q" name="code" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YXKzMEEzEeGdmoWy_aLP0Q" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YXKzMUEzEeGdmoWy_aLP0Q" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_9lgCcErmEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_Xia8g0EzEeGdmoWy_aLP0Q" name="text" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YxjCEEEzEeGdmoWy_aLP0Q" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YxjCEUEzEeGdmoWy_aLP0Q" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_Xia8hkEzEeGdmoWy_aLP0Q" name="title" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZKbcIEEzEeGdmoWy_aLP0Q" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZKbcIUEzEeGdmoWy_aLP0Q" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_j8WtoEEzEeGdmoWy_aLP0Q" name="indication" association="_j8WtokEzEeGdmoWy_aLP0Q">
+      <type xmi:type="uml:Class" href="consol-other.uml#_sHrUoBUSEeG6PvUxSTZnaw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UsxdsFwREeG0y_7i0ygc4g" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UsxdsVwREeG0y_7i0ygc4g"/>
+    </ownedAttribute>
+  </uml:Class>
+  <uml:Class xmi:id="_luQh8DVzEeGaW4kr-GbV8Q" name="SurgicalDrainsSection">
+    <ownedComment xmi:id="_SOgPAEE3EeGdmoWy_aLP0Q">
+      <body>The Surgical Drains section may be used to record drains placed during the surgical procedure. Optionally, surgical drain placement may be represented with a text element in the Procedure Description Section.</body>
+    </ownedComment>
+    <ownedRule xmi:id="__OWpwEE0EeGdmoWy_aLP0Q" name="hasDrainsListed" constrainedElement="_luQh8DVzEeGaW4kr-GbV8Q">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_At37wEE1EeGdmoWy_aLP0Q">
+        <language>Analysis</language>
+        <body>If the Surgical Drains section is present, there SHALL be a statement providing details of the drains placed or SHALL explicitly state there were no drains placed.</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_luQh8TVzEeGaW4kr-GbV8Q">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_rYLJgEE0EeGdmoWy_aLP0Q" name="code" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zcWbUEE0EeGdmoWy_aLP0Q" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zcWbUUE0EeGdmoWy_aLP0Q" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_9lgCcErmEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_rYLJg0E0EeGdmoWy_aLP0Q" name="text" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_z78hYEE0EeGdmoWy_aLP0Q" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_z78hYUE0EeGdmoWy_aLP0Q" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_rYLJhkE0EeGdmoWy_aLP0Q" name="title" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0gAQsEE0EeGdmoWy_aLP0Q" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0gAQsUE0EeGdmoWy_aLP0Q" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+  </uml:Class>
+  <uml:Class xmi:id="_gSUdsDVzEeGaW4kr-GbV8Q" name="ProcedureSpecimensTakenSection">
+    <ownedComment xmi:id="_2NpTsEEzEeGdmoWy_aLP0Q">
+      <body>The Procedure Specimens Taken section records the tissues, objects, or samples taken from the patient during the procedure including biopsies, aspiration fluid, or other samples sent for pathological analysis. The narrative may include a description of the specimens.</body>
+    </ownedComment>
+    <ownedRule xmi:id="_GvCCYEE0EeGdmoWy_aLP0Q" name="hasAllSpecimensListed" constrainedElement="_gSUdsDVzEeGaW4kr-GbV8Q">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_JuD_UEE0EeGdmoWy_aLP0Q">
+        <language>Analysis</language>
+        <body>The Procedure Specimens Taken section SHALL list all specimens removed or SHALL explicitly state that no specimens were taken.</body>
+      </specification>
+    </ownedRule>
+    <generalization xmi:id="_gSUdsTVzEeGaW4kr-GbV8Q">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_0OiisEEzEeGdmoWy_aLP0Q" name="code" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AXobcEE0EeGdmoWy_aLP0Q" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AXobcUE0EeGdmoWy_aLP0Q" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_9lgCcErmEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_0Oiis0EzEeGdmoWy_aLP0Q" name="text" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Au4d0EE0EeGdmoWy_aLP0Q" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Au4d0UE0EeGdmoWy_aLP0Q" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_0OiitkEzEeGdmoWy_aLP0Q" name="title" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BHUL8EE0EeGdmoWy_aLP0Q" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BHUL8UE0EeGdmoWy_aLP0Q" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
+    </ownedAttribute>
+  </uml:Class>
+  <CDA:CDATemplate xmi:id="_cLhVgDV1EeGaW4kr-GbV8Q" base_Class="_luQh8DVzEeGaW4kr-GbV8Q" templateId="2.16.840.1.113883.10.20.7.13">
+    <ruleId>CONF:8038</ruleId>
+    <ruleId>CONF:10473</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_hf3kADV1EeGaW4kr-GbV8Q" base_Class="_OA_Q0DVyEeGaW4kr-GbV8Q" templateId="2.16.840.1.113883.10.20.22.2.25">
+    <ruleId>CONF:8066</ruleId>
+    <ruleId>CONF:10380</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_kL-k8DV1EeGaW4kr-GbV8Q" base_Class="_R1OXcDVyEeGaW4kr-GbV8Q" templateId="2.16.840.1.113883.10.20.22.2.37">
+    <ruleId>CONF:8174</ruleId>
+    <ruleId>CONF:10384</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_DIe5YDV2EeGaW4kr-GbV8Q" base_Class="_vHfXoDVyEeGaW4kr-GbV8Q" templateId="2.16.840.1.113883.10.20.7.12">
+    <ruleId>CONF:8030</ruleId>
+    <ruleId>CONF:10463</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_FHJlgDV2EeGaW4kr-GbV8Q" base_Class="_zel6wDVyEeGaW4kr-GbV8Q" templateId="2.16.840.1.113883.10.20.7.14">
+    <ruleId>CONF:8034</ruleId>
+    <ruleId>CONF:10464</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_IFlFgDV2EeGaW4kr-GbV8Q" base_Class="_3b6E4DVyEeGaW4kr-GbV8Q" templateId="2.16.840.1.113883.10.20.22.2.30">
+    <ruleId>CONF:8082</ruleId>
+    <ruleId>CONF:10436</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_K5SjQDV2EeGaW4kr-GbV8Q" base_Class="_7UA-4DVyEeGaW4kr-GbV8Q" templateId="2.16.840.1.113883.10.20.22.2.35">
+    <ruleId>CONF:8101</ruleId>
+    <ruleId>CONF:10437</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_OjincDV2EeGaW4kr-GbV8Q" base_Class="_-jlSMDVyEeGaW4kr-GbV8Q" templateId="2.16.840.1.113883.10.20.22.2.36">
+    <ruleId>CONF:8167</ruleId>
+    <ruleId>CONF:10438</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_Rt5DkDV2EeGaW4kr-GbV8Q" base_Class="_Cu6qMDVzEeGaW4kr-GbV8Q" templateId="2.16.840.1.113883.10.20.22.2.34">
+    <ruleId>CONF:8097</ruleId>
+    <ruleId>CONF:10439</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_U67nUDV2EeGaW4kr-GbV8Q" base_Class="_HNUIIDVzEeGaW4kr-GbV8Q" templateId="2.16.840.1.113883.10.20.22.2.27">
+    <ruleId>CONF:8062</ruleId>
+    <ruleId>CONF:10442</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_XD4Q0DV2EeGaW4kr-GbV8Q" base_Class="_QhXGYDVzEeGaW4kr-GbV8Q" templateId="2.16.840.1.113883.10.20.18.2.12">
+    <ruleId>CONF:8070</ruleId>
+    <ruleId>CONF:10466</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_ZcBM4DV2EeGaW4kr-GbV8Q" base_Class="_TvcL8DVzEeGaW4kr-GbV8Q" templateId="2.16.840.1.113883.10.20.18.2.9">
+    <ruleId>CONF:8074</ruleId>
+    <ruleId>CONF:10467</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_cTJyEDV2EeGaW4kr-GbV8Q" base_Class="_W4UBYDVzEeGaW4kr-GbV8Q" templateId="2.16.840.1.113883.10.20.22.2.28">
+    <ruleId>CONF:8078</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_eDgVYDV2EeGaW4kr-GbV8Q" base_Class="_Z662wDVzEeGaW4kr-GbV8Q" templateId="2.16.840.1.113883.10.20.22.2.40">
+    <ruleId>CONF:8178</ruleId>
+    <ruleId>CONF:10444</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_f1f3cDV2EeGaW4kr-GbV8Q" base_Class="_cjmJMDVzEeGaW4kr-GbV8Q" templateId="2.16.840.1.113883.10.20.22.2.29">
+    <ruleId>CONF:8058</ruleId>
+    <ruleId>CONF:10445</ruleId>
+  </CDA:CDATemplate>
+  <CDA:CDATemplate xmi:id="_ifYDwDV2EeGaW4kr-GbV8Q" base_Class="_gSUdsDVzEeGaW4kr-GbV8Q" templateId="2.16.840.1.113883.10.20.22.2.31">
+    <ruleId>CONF:8086</ruleId>
+    <ruleId>CONF:10446</ruleId>
+  </CDA:CDATemplate>
+  <CDA:PropertyValidation xmi:id="_4_k5cDWmEeG32vxjh5_fjg" base_Property="_kPlcUzWmEeG32vxjh5_fjg">
+    <ruleId>CONF:8069</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:TextValue xmi:id="_5jpP0DWmEeG32vxjh5_fjg" base_Property="_kPlcVjWmEeG32vxjh5_fjg">
+    <ruleId>CONF:8068</ruleId>
+  </CDA:TextValue>
+  <CDA:CodeSystemConstraint xmi:id="_8E32cDWmEeG32vxjh5_fjg" code="59774-0" base_Property="_kPlcUDWmEeG32vxjh5_fjg">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:8067</ruleId>
+  </CDA:CodeSystemConstraint>
+  <uml:Association xmi:id="_w85ccjWmEeG32vxjh5_fjg" memberEnd="_w85ccDWmEeG32vxjh5_fjg _w85cczWmEeG32vxjh5_fjg">
+    <ownedEnd xmi:id="_w85cczWmEeG32vxjh5_fjg" type="_OA_Q0DVyEeGaW4kr-GbV8Q" association="_w85ccjWmEeG32vxjh5_fjg"/>
+  </uml:Association>
+  <CDA:PropertyValidation xmi:id="_fCMhAECUEeGELr7uj3LK_Q" base_Property="_d03LM0CUEeGELr7uj3LK_Q">
+    <ruleId>CONF:8104</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:TextValue xmi:id="_fZ4oQECUEeGELr7uj3LK_Q" base_Property="_d03LNkCUEeGELr7uj3LK_Q">
+    <ruleId>CONF:8103</ruleId>
+  </CDA:TextValue>
+  <CDA:CodeSystemConstraint xmi:id="_lUhasECUEeGELr7uj3LK_Q" code="10218-6" displayName="Postoperative Diagnosis" base_Property="_d03LMECUEeGELr7uj3LK_Q">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:8102</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_HRkH8ECVEeGELr7uj3LK_Q" base_Property="_A-MFY0CVEeGELr7uj3LK_Q">
+    <ruleId>CONF:8065</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:TextValue xmi:id="_Ht4QgECVEeGELr7uj3LK_Q" base_Property="_A-MFZkCVEeGELr7uj3LK_Q">
+    <ruleId>CONF:8064</ruleId>
+  </CDA:TextValue>
+  <CDA:CodeSystemConstraint xmi:id="_L6GZUECVEeGELr7uj3LK_Q" code="29554-3" displayName="Procedure Description" base_Property="_A-MFYECVEeGELr7uj3LK_Q">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:8063</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:CodeSystemConstraint xmi:id="_e_sKIECVEeGELr7uj3LK_Q" code="59775-7" displayName="Procedure Disposition" base_Property="_bXiXsECVEeGELr7uj3LK_Q">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:8071</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_jNaHwECVEeGELr7uj3LK_Q" base_Property="_bXiXs0CVEeGELr7uj3LK_Q">
+    <ruleId>CONF:8073</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:TextValue xmi:id="_kJA0YECVEeGELr7uj3LK_Q" base_Property="_bXiXtkCVEeGELr7uj3LK_Q">
+    <ruleId>CONF:8072</ruleId>
+  </CDA:TextValue>
+  <CDA:CodeSystemConstraint xmi:id="_dct_cEEtEeGdmoWy_aLP0Q" code="10216-0" displayName="Operative Note Fluids" base_Property="_ZoVu4EEtEeGdmoWy_aLP0Q">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:8031</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_jyenoEEtEeGdmoWy_aLP0Q" base_Property="_ZoVu40EtEeGdmoWy_aLP0Q">
+    <ruleId>CONF:8033</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:TextValue xmi:id="_kLztoEEtEeGdmoWy_aLP0Q" base_Property="_ZoVu5kEtEeGdmoWy_aLP0Q">
+    <ruleId>CONF:8032</ruleId>
+  </CDA:TextValue>
+  <CDA:CodeSystemConstraint xmi:id="_zO4EMEEtEeGdmoWy_aLP0Q" code="10223-6" displayName="Operative Note Surgical" base_Property="_vJXAUEEtEeGdmoWy_aLP0Q">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:8035</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_GgPnMEEuEeGdmoWy_aLP0Q" base_Property="_vJXAU0EtEeGdmoWy_aLP0Q">
+    <ruleId>CONF:8037</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:TextValue xmi:id="_IZirIEEuEeGdmoWy_aLP0Q" base_Property="_vJXAVkEtEeGdmoWy_aLP0Q">
+    <ruleId>CONF:8036</ruleId>
+  </CDA:TextValue>
+  <CDA:ConstraintValidation xmi:id="_PPoZMEEuEeGdmoWy_aLP0Q" base_Constraint="_MAXA0EEuEeGdmoWy_aLP0Q">
+    <ruleId>CONF:8054</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:CodeSystemConstraint xmi:id="_4pgrcEEuEeGdmoWy_aLP0Q" code="59772-4" displayName="Planned Procedure" base_Property="_y9eVsEEuEeGdmoWy_aLP0Q">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:8083</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_BnprIEEvEeGdmoWy_aLP0Q" base_Property="_y9eVs0EuEeGdmoWy_aLP0Q">
+    <ruleId>CONF:8085</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:TextValue xmi:id="_Dd9sgEEvEeGdmoWy_aLP0Q" base_Property="_y9eVtkEuEeGdmoWy_aLP0Q">
+    <ruleId>CONF:8084</ruleId>
+  </CDA:TextValue>
+  <CDA:CodeSystemConstraint xmi:id="_VFiAIEEvEeGdmoWy_aLP0Q" code="59769-0" displayName="Postprocedure Diagnosis" base_Property="_SQVUoEEvEeGdmoWy_aLP0Q">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:8169</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_cNzqYEEvEeGdmoWy_aLP0Q" base_Property="_SQVUo0EvEeGdmoWy_aLP0Q">
+    <ruleId>CONF:8171</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:TextValue xmi:id="_d1rAEEEvEeGdmoWy_aLP0Q" base_Property="_SQVUpkEvEeGdmoWy_aLP0Q">
+    <ruleId>CONF:8170</ruleId>
+  </CDA:TextValue>
+  <CDA:CodeSystemConstraint xmi:id="_5q3TYEExEeGdmoWy_aLP0Q" code="59770-8" displayName="Procedure Estimated Blood Loss" base_Property="_0UcBQEExEeGdmoWy_aLP0Q">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:8075</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_AxW08EEyEeGdmoWy_aLP0Q" base_Property="_0UcBQ0ExEeGdmoWy_aLP0Q">
+    <ruleId>CONF:8077</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:TextValue xmi:id="_BMxloEEyEeGdmoWy_aLP0Q" base_Property="_0UcBRkExEeGdmoWy_aLP0Q">
+    <ruleId>CONF:8076</ruleId>
+  </CDA:TextValue>
+  <CDA:ConstraintValidation xmi:id="_ST3CYEEyEeGdmoWy_aLP0Q" base_Constraint="_Jw_CYEEyEeGdmoWy_aLP0Q">
+    <ruleId>CONF:8741</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:PropertyValidation xmi:id="_bJXDcEEyEeGdmoWy_aLP0Q" base_Property="_V8xCw0EyEeGdmoWy_aLP0Q">
+    <ruleId>CONF:8081</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:TextValue xmi:id="_bkLXMEEyEeGdmoWy_aLP0Q" base_Property="_V86MsEEyEeGdmoWy_aLP0Q">
+    <ruleId>CONF:8080</ruleId>
+  </CDA:TextValue>
+  <CDA:CodeSystemConstraint xmi:id="_dAkcsEEyEeGdmoWy_aLP0Q" code="59776-5" displayName="Procedure Findings" base_Property="_V8xCwEEyEeGdmoWy_aLP0Q">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:8079</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:ConformsTo xmi:id="_vBBKYEEyEeGdmoWy_aLP0Q" base_Generalization="_W4UBYTVzEeGaW4kr-GbV8Q"/>
+  <CDA:CodeSystemConstraint xmi:id="_CRpGgEEzEeGdmoWy_aLP0Q" code="59771-6" displayName="Procedure Implants" base_Property="_1yMjQEEyEeGdmoWy_aLP0Q">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:8179</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_IfzR4EEzEeGdmoWy_aLP0Q" base_Property="_1yMjQ0EyEeGdmoWy_aLP0Q">
+    <ruleId>CONF:8181</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:TextValue xmi:id="_JPV4cEEzEeGdmoWy_aLP0Q" base_Property="_1yMjRkEyEeGdmoWy_aLP0Q">
+    <ruleId>CONF:8180</ruleId>
+  </CDA:TextValue>
+  <CDA:PropertyValidation xmi:id="_aTTIsEEzEeGdmoWy_aLP0Q" base_Property="_Xia8g0EzEeGdmoWy_aLP0Q">
+    <ruleId>CONF:8061</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:TextValue xmi:id="_atOEkEEzEeGdmoWy_aLP0Q" base_Property="_Xia8hkEzEeGdmoWy_aLP0Q">
+    <ruleId>CONF:8060</ruleId>
+  </CDA:TextValue>
+  <CDA:CodeSystemConstraint xmi:id="_c7FDQEEzEeGdmoWy_aLP0Q" code="59768-2" displayName="Procedure Indications" base_Property="_Xia8gEEzEeGdmoWy_aLP0Q">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:8059</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:CodeSystemConstraint xmi:id="_4frnwEEzEeGdmoWy_aLP0Q" code="59773-2" displayName="Procedure Specimens Taken" base_Property="_0OiisEEzEeGdmoWy_aLP0Q">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:8087</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:TextValue xmi:id="_Dk0wMEE0EeGdmoWy_aLP0Q" base_Property="_0OiitkEzEeGdmoWy_aLP0Q">
+    <ruleId>CONF:8088</ruleId>
+  </CDA:TextValue>
+  <CDA:PropertyValidation xmi:id="_EVjCgEE0EeGdmoWy_aLP0Q" base_Property="_0Oiis0EzEeGdmoWy_aLP0Q">
+    <ruleId>CONF:8089</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ConstraintValidation xmi:id="_OvobwEE0EeGdmoWy_aLP0Q" base_Constraint="_GvCCYEE0EeGdmoWy_aLP0Q">
+    <ruleId>CONF:8742</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:PropertyValidation xmi:id="_x499AEE0EeGdmoWy_aLP0Q" base_Property="_rYLJg0E0EeGdmoWy_aLP0Q">
+    <ruleId>CONF:8041</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:TextValue xmi:id="_yVlAgEE0EeGdmoWy_aLP0Q" base_Property="_rYLJhkE0EeGdmoWy_aLP0Q">
+    <ruleId>CONF:8040</ruleId>
+  </CDA:TextValue>
+  <CDA:CodeSystemConstraint xmi:id="_02NKMEE0EeGdmoWy_aLP0Q" code="11537-8" displayName="Surgical Drains" base_Property="_rYLJgEE0EeGdmoWy_aLP0Q">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:8039</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:ConstraintValidation xmi:id="_HPsqAEE1EeGdmoWy_aLP0Q" base_Constraint="__OWpwEE0EeGdmoWy_aLP0Q">
+    <ruleId>CONF:8056</ruleId>
+  </CDA:ConstraintValidation>
+  <uml:Class xmi:id="_0baBYEEwEeGdmoWy_aLP0Q" name="PreoperativeDiagnosis">
+    <generalization xmi:id="_0baBYUEwEeGdmoWy_aLP0Q">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_YiANsDxYEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_2Q1R8EEwEeGdmoWy_aLP0Q" name="classCode" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOntkDcEd6xYZuu1VKCVw"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_1DWqEEbnEd6besF9iFIJkQ"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_BzxwsEExEeGdmoWy_aLP0Q" value="ACT"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2Q1R8UEwEeGdmoWy_aLP0Q" name="code" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_HUTHQEocEd6c3qsAxlFHaQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2Q1R8kEwEeGdmoWy_aLP0Q" name="moodCode" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOpkkDcEd6xYZuu1VKCVw"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_yWn-AEocEd6c3qsAxlFHaQ"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_J9kHAEFMEeG1jJ6BPjCF7A" value="EVN"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_NaJ98EExEeGdmoWy_aLP0Q" name="problemObservation" association="_NaJ98kExEeGdmoWy_aLP0Q">
+      <type xmi:type="uml:Class" href="consol-problems.uml#_5Ha7ABUyEeGbmN_W114JUw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Qr9s8EExEeGdmoWy_aLP0Q" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Qr9s8UExEeGdmoWy_aLP0Q" value="1"/>
+    </ownedAttribute>
+  </uml:Class>
+  <uml:Association xmi:id="_NaJ98kExEeGdmoWy_aLP0Q" memberEnd="_NaJ98EExEeGdmoWy_aLP0Q _NaJ980ExEeGdmoWy_aLP0Q">
+    <ownedEnd xmi:id="_NaJ980ExEeGdmoWy_aLP0Q" type="_0baBYEEwEeGdmoWy_aLP0Q" association="_NaJ98kExEeGdmoWy_aLP0Q"/>
+  </uml:Association>
+  <CDA:CDATemplate xmi:id="_7RNbkEEwEeGdmoWy_aLP0Q" base_Class="_0baBYEEwEeGdmoWy_aLP0Q" templateId="2.16.840.1.113883.10.20.22.4.65"/>
+  <CDA:PropertyValidation xmi:id="_3j-74EEwEeGdmoWy_aLP0Q" base_Property="_2Q1R8EEwEeGdmoWy_aLP0Q">
+    <ruleId>CONF:10090</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_F-zmsEExEeGdmoWy_aLP0Q" code="10219-4" base_Property="_2Q1R8UEwEeGdmoWy_aLP0Q">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:10092</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_4SnjgEEwEeGdmoWy_aLP0Q" base_Property="_2Q1R8kEwEeGdmoWy_aLP0Q">
+    <ruleId>CONF:10091</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:EntryRelationship xmi:id="_RPbmYEExEeGdmoWy_aLP0Q" base_Association="_NaJ98kExEeGdmoWy_aLP0Q" typeCode="SUBJ">
+    <ruleId>CONF:10093</ruleId>
+    <ruleId>CONF:10094</ruleId>
+    <ruleId>CONF:10095</ruleId>
+  </CDA:EntryRelationship>
+  <uml:Class xmi:id="_0fjXAEEvEeGdmoWy_aLP0Q" name="PostprocedureDiagnosis">
+    <ownedComment xmi:id="_rQo48FmwEeGRqYkwoeymcA">
+      <body>The Postprocedure Diagnosis entry encodes the diagnosis or diagnoses discovered or confirmed during the procedure. Often it is the same as the pre-procedure diagnosis or indication.</body>
+    </ownedComment>
+    <generalization xmi:id="_0fjXAUEvEeGdmoWy_aLP0Q">
+      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_YiANsDxYEd6JwqSGecoePg"/>
+    </generalization>
+    <ownedAttribute xmi:id="_2HQ7sEEvEeGdmoWy_aLP0Q" name="classCode" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOntkDcEd6xYZuu1VKCVw"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_1DWqEEbnEd6besF9iFIJkQ"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_8unDIEEvEeGdmoWy_aLP0Q" value="ACT"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2HQ7sUEvEeGdmoWy_aLP0Q" name="code" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_HUTHQEocEd6c3qsAxlFHaQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_2HQ7skEvEeGdmoWy_aLP0Q" name="moodCode" visibility="private" isReadOnly="true">
+      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOpkkDcEd6xYZuu1VKCVw"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_yWn-AEocEd6c3qsAxlFHaQ"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_9ghoQEEvEeGdmoWy_aLP0Q" value="EVN"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_IiPpQEEwEeGdmoWy_aLP0Q" name="problemObservation" association="_IiPpQkEwEeGdmoWy_aLP0Q">
+      <type xmi:type="uml:Class" href="consol-problems.uml#_5Ha7ABUyEeGbmN_W114JUw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_N8Zk0EEwEeGdmoWy_aLP0Q" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_N8Zk0UEwEeGdmoWy_aLP0Q" value="1"/>
+    </ownedAttribute>
+  </uml:Class>
+  <uml:Association xmi:id="_IiPpQkEwEeGdmoWy_aLP0Q" memberEnd="_IiPpQEEwEeGdmoWy_aLP0Q _IiPpQ0EwEeGdmoWy_aLP0Q">
+    <ownedEnd xmi:id="_IiPpQ0EwEeGdmoWy_aLP0Q" type="_0fjXAEEvEeGdmoWy_aLP0Q" association="_IiPpQkEwEeGdmoWy_aLP0Q"/>
+  </uml:Association>
+  <CDA:CDATemplate xmi:id="_ckEjYEExEeGdmoWy_aLP0Q" base_Class="_0fjXAEEvEeGdmoWy_aLP0Q" templateId="2.16.840.1.113883.10.20.22.4.51"/>
+  <CDA:PropertyValidation xmi:id="_4BTmgEEvEeGdmoWy_aLP0Q" base_Property="_2HQ7sEEvEeGdmoWy_aLP0Q">
+    <ruleId>CONF:8756</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="__n-c8EEvEeGdmoWy_aLP0Q" code="59769-0" displayName="Postprocedure Diagnosis" base_Property="_2HQ7sUEvEeGdmoWy_aLP0Q">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:8758</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_4brOUEEvEeGdmoWy_aLP0Q" base_Property="_2HQ7skEvEeGdmoWy_aLP0Q">
+    <ruleId>CONF:8757</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:EntryRelationship xmi:id="_KT8QYEEwEeGdmoWy_aLP0Q" base_Association="_IiPpQkEwEeGdmoWy_aLP0Q" typeCode="SUBJ">
+    <ruleId>CONF:8759</ruleId>
+    <ruleId>CONF:8760</ruleId>
+    <ruleId>CONF:8767</ruleId>
+  </CDA:EntryRelationship>
+  <uml:Association xmi:id="_HSV9EkEvEeGdmoWy_aLP0Q" memberEnd="_HSV9EEEvEeGdmoWy_aLP0Q _HSV9E0EvEeGdmoWy_aLP0Q">
+    <ownedEnd xmi:id="_HSV9E0EvEeGdmoWy_aLP0Q" type="_3b6E4DVyEeGaW4kr-GbV8Q" association="_HSV9EkEvEeGdmoWy_aLP0Q"/>
+  </uml:Association>
+  <uml:Association xmi:id="_eZUDMkEwEeGdmoWy_aLP0Q" memberEnd="_eZUDMEEwEeGdmoWy_aLP0Q _eZUDM0EwEeGdmoWy_aLP0Q">
+    <ownedEnd xmi:id="_eZUDM0EwEeGdmoWy_aLP0Q" type="_-jlSMDVyEeGaW4kr-GbV8Q" association="_eZUDMkEwEeGdmoWy_aLP0Q"/>
+  </uml:Association>
+  <uml:Association xmi:id="_oVNZsEEyEeGdmoWy_aLP0Q" memberEnd="_oVDosEEyEeGdmoWy_aLP0Q _oVNZsUEyEeGdmoWy_aLP0Q">
+    <ownedEnd xmi:id="_oVNZsUEyEeGdmoWy_aLP0Q" type="_W4UBYDVzEeGaW4kr-GbV8Q" association="_oVNZsEEyEeGdmoWy_aLP0Q"/>
+  </uml:Association>
+  <uml:Association xmi:id="_j8WtokEzEeGdmoWy_aLP0Q" memberEnd="_j8WtoEEzEeGdmoWy_aLP0Q _j8Wto0EzEeGdmoWy_aLP0Q">
+    <ownedEnd xmi:id="_j8Wto0EzEeGdmoWy_aLP0Q" type="_cjmJMDVzEeGaW4kr-GbV8Q" association="_j8WtokEzEeGdmoWy_aLP0Q"/>
+  </uml:Association>
+  <CDA:CodeSystemConstraint xmi:id="_7eV1slGkEeG3H6xvuD7Z0Q" code="47519-4" displayName="History of procedures" base_Property="_7eV1sFGkEeG3H6xvuD7Z0Q">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:7892</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_7eV1tlGkEeG3H6xvuD7Z0Q" base_Property="_7eV1s1GkEeG3H6xvuD7Z0Q">
+    <ruleId>CONF:7894</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_c-j3UFjoEeGRqYkwoeymcA" code="55109-3" displayName="Complications" base_Property="_zwZ0QFjkEeGRqYkwoeymcA">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:8175</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:TextValue xmi:id="_uDTKsFjoEeGRqYkwoeymcA" base_Property="_zwabUFjkEeGRqYkwoeymcA">
+    <ruleId>CONF:8176</ruleId>
+  </CDA:TextValue>
+  <CDA:PropertyValidation xmi:id="_vb2SAFjoEeGRqYkwoeymcA" base_Property="_zwZ0Q1jkEeGRqYkwoeymcA">
+    <ruleId>CONF:8177</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ConstraintValidation xmi:id="_2qMIAFjoEeGRqYkwoeymcA" base_Constraint="_z_CwYFjoEeGRqYkwoeymcA">
+    <ruleId>CONF:8797</ruleId>
+  </CDA:ConstraintValidation>
+  <uml:Association xmi:id="_4XfXUFjoEeGRqYkwoeymcA" memberEnd="_4XdiIFjoEeGRqYkwoeymcA _4Xf-YFjoEeGRqYkwoeymcA">
+    <ownedEnd xmi:id="_4Xf-YFjoEeGRqYkwoeymcA" type="_R1OXcDVyEeGaW4kr-GbV8Q" association="_4XfXUFjoEeGRqYkwoeymcA"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_7wZM0FjoEeGRqYkwoeymcA" severity="INFO" base_Association="_4XfXUFjoEeGRqYkwoeymcA">
+    <ruleId>CONF:8795</ruleId>
+    <ruleId>CONF:8796</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:ConstraintValidation xmi:id="_d1NEAFmvEeGRqYkwoeymcA" base_Constraint="_ZcsLoFmvEeGRqYkwoeymcA">
+    <ruleId>CONF:8052</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:CodeSystemConstraint xmi:id="_hUkusFvwEeG0y_7i0ygc4g" code="10219-4" displayName="Preoperative Diagnosis" base_Property="_5vgB8FvvEeGxXeivz89y3A">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:8098</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_cDaQ4FwNEeG0y_7i0ygc4g" base_Property="_5vrBEFvvEeGxXeivz89y3A">
+    <ruleId>CONF:8100</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:TextValue xmi:id="_evZWAFwNEeG0y_7i0ygc4g" base_Property="_5vroIFvvEeGxXeivz89y3A">
+    <ruleId>CONF:8099</ruleId>
+  </CDA:TextValue>
+  <uml:Association xmi:id="_0c-nUFwOEeG0y_7i0ygc4g" memberEnd="_0c8yIFwOEeG0y_7i0ygc4g _0c_OYFwOEeG0y_7i0ygc4g">
+    <ownedEnd xmi:id="_0c_OYFwOEeG0y_7i0ygc4g" type="_Cu6qMDVzEeGaW4kr-GbV8Q" association="_0c-nUFwOEeG0y_7i0ygc4g"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_1fvE0FwOEeG0y_7i0ygc4g" severity="WARNING" base_Association="_0c-nUFwOEeG0y_7i0ygc4g">
+    <ruleId>CONF:10096</ruleId>
+    <ruleId>CONF:10097</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:ConstraintValidation xmi:id="_mrBocFwQEeG0y_7i0ygc4g" base_Constraint="_L5NdsEEzEeGdmoWy_aLP0Q">
+    <ruleId>CONF:8769</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ValueSetConstraint xmi:id="_je4HoG1KEeGCevFpokwODw" base_Property="_hPwGlhg4EeGs5a462vYX5Q">
+    <reference href="../consol-vocab.uml#_I5UjIG07EeGCevFpokwODw"/>
+    <ruleId>CONF:8300</ruleId>
+  </CDA:ValueSetConstraint>
+  <CDA:ValueSetConstraint xmi:id="_lYCBoG1KEeGCevFpokwODw" base_Property="_NMUNgBg4EeGs5a462vYX5Q">
+    <reference href="../consol-vocab.uml#_I5UjIG07EeGCevFpokwODw"/>
+    <ruleId>CONF:8247</ruleId>
+  </CDA:ValueSetConstraint>
+  <CDA:ValueSetConstraint xmi:id="_m6mnoG1KEeGCevFpokwODw" base_Property="_ozsKlBrUEeGxIZCGAXKxsQ">
+    <reference href="../consol-vocab.uml#_I5UjIG07EeGCevFpokwODw"/>
+    <ruleId>CONF:7668</ruleId>
+  </CDA:ValueSetConstraint>
+</xmi:XMI>

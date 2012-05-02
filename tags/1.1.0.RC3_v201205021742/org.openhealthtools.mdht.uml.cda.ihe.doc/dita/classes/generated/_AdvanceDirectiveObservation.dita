@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Advance Directive Observation - conformance rules</title>
+<shortdesc id="shortdesc">[Observation: templateId <tt>1.3.6.1.4.1.19376.1.5.3.1.4.13.7</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Observation</category></metadata>
+<resourceid id="1.3.6.1.4.1.19376.1.5.3.1.4.13.7"/>
+</prolog>
+<body>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/AdvanceDirectiveObservation.html">CCD Advance Directive Observation</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.17</tt>)</li>
+<li><b>SHALL</b> conform to <xref href="../SimpleObservation.dita">Simple Observation</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.13</tt>)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CodeSystem:<tt> 2.16.840.1.113883.6.96 SNOMEDCT</tt>)
+<ul><li>Code	Description	  Data Type
+304251008	Resuscitation	BL
+52765003	Intubation  BL
+225204009	IV Fluid and Support BL
+89666000	CPR    BL
+281789004	Antibiotics   BL
+78823007	Life Support    BL
+61420007	Tube Feedings   BL
+116859006	Transfusion of blood product   BL
+71388002	Other Directive	   <value> not permitted</li></ul></li>
+<li>Contains zero or more [0..*] <tt><b>value</b></tt>, where its data type is BL
+<ul><li>The advance directive observation may include a <value> element using the Boolean (xsi:type='BL') data type to indicate simply whether the procedure described is permitted. Absence of the the <value> element indicates that an advance directive of the specified type has been recorded, and must be examined to determine what type of treatment should be performed. The value element is not permitted when the <code> element describes an Other directive</li></ul></li>
+<li><b>SHALL</b> contain  [0..0] <tt><b>repeatNumber</b></tt>
+</li>
+<li><b>SHALL</b> contain  [0..0] <tt><b>interpretationCode</b></tt>
+</li>
+<li><b>SHALL</b> contain  [0..0] <tt><b>targetSiteCode</b></tt>
+</li>
+<li><b>MAY</b> satisfy: The advanced directive observation may contain a single reference to an external document. The reference may be recorded using CCD :: Advance Directive Reference (2.16.840.1.113883.10.20.1.36)<ul><li><codeblock>[OCL]: self.reference-&gt;select(r | r.oclIsKindOf(ccd::AdvanceDirectiveReference))-&gt;size() =1</codeblock></li></ul></li>
+<li><b>SHALL NOT</b> contain any &lt;repeatNumber&gt;, &lt;interpretationCode&gt;, &lt;methodCode&gt; or &lt;targetSiteCode&gt; elements</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> conform to <xref href="../SimpleObservation.dita">Simple Observation</xref> template (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.4.13</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/AdvanceDirectiveObservation.html">CCD Advance Directive Observation</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.17</tt>)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF-83)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF-84)
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt> (CONF-85)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.14 HL7ActStatus</tt>) (CONF-86, CONF-87)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CodeSystem:<tt> 2.16.840.1.113883.6.96 SNOMEDCT</tt>)
+<ul><li>Code	Description	  Data Type
+304251008	Resuscitation	BL
+52765003	Intubation  BL
+225204009	IV Fluid and Support BL
+89666000	CPR    BL
+281789004	Antibiotics   BL
+78823007	Life Support    BL
+61420007	Tube Feedings   BL
+116859006	Transfusion of blood product   BL
+71388002	Other Directive	   <value> not permitted</li></ul></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF-88)
+</li>
+<li><b>SHALL</b> contain  [0..0] <tt><b>repeatNumber</b></tt>
+</li>
+<li>Contains zero or more [0..*] <tt><b>value</b></tt>, where its data type is BL
+<ul><li>The advance directive observation may include a <value> element using the Boolean (xsi:type='BL') data type to indicate simply whether the procedure described is permitted. Absence of the the <value> element indicates that an advance directive of the specified type has been recorded, and must be examined to determine what type of treatment should be performed. The value element is not permitted when the <code> element describes an Other directive</li></ul></li>
+<li><b>SHALL</b> contain  [0..0] <tt><b>interpretationCode</b></tt>
+</li>
+<li><b>SHALL</b> contain  [0..0] <tt><b>targetSiteCode</b></tt>
+</li>
+<li><b>MAY</b> contain at least one [1..*] <tt><b>advanceDirectiveVerification</b></tt> (CONF-93), such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../AdvanceDirectiveVerification.dita">Advance Directive Verification</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.58</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entryRelationship</b></tt> (CONF-98), such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../AdvanceDirectiveStatusObservation.dita">Advance Directive Status Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.37</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>advanceDirectiveReference</b></tt> (CONF-102, CONF-103), such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../AdvanceDirectiveReference.dita">Advance Directive Reference</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.36</tt>)</li></ol><ul><li>ddddd</li></ul></li>
+<li>The value for Observation / code in an advance directive observation <b>MAY</b> be selected from ValueSet 2.16.840.1.113883.1.11.20.2 AdvanceDirectiveTypeCode STATIC 20061017. (CONF-90)<ul><li><codeblock>[OCL]: self.code.codeSystem = '2.16.840.1.113883.6.96'</codeblock></li></ul></li>
+<li>There <b>SHOULD</b> be an advance directive observation whose value for Observation / code is '304251008' 'Resuscitation status' 2.16.840.1.113883.6.96 SNOMED CT STATIC (CONF-91)<ul><li><codeblock>[OCL]: self.code.code = '304251008' and self.code.codeSystem = '2.16.840.1.113883.6.96'</codeblock></li></ul></li>
+<li><b>SHALL</b> satisfy: Contains one or more sources of information (CONF-97)<ul><li>UNIMPLEMENTABLE</li></ul></li>
+<li><b>MAY</b> satisfy: The advanced directive observation may contain a single reference to an external document. The reference may be recorded using CCD :: Advance Directive Reference (2.16.840.1.113883.10.20.1.36)<ul><li><codeblock>[OCL]: self.reference-&gt;select(r | r.oclIsKindOf(ccd::AdvanceDirectiveReference))-&gt;size() =1</codeblock></li></ul></li>
+<li><b>SHALL NOT</b> contain any &lt;repeatNumber&gt;, &lt;interpretationCode&gt;, &lt;methodCode&gt; or &lt;targetSiteCode&gt; elements</li>
+</ol>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="OBS" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.1.17"/>
+  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13"/>
+  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.13.7"/>
+  <id root="391844959"/>
+  <code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/>
+  <statusCode code="completed"/>
+  <effectiveTime>
+    <low value="2011"/>
+    <high value="2011"/>
+  </effectiveTime>
+  <repeatNumber/>
+  <interpretationCode code="Value"/>
+  <targetSiteCode code="1233017950"/>
+</observation>]]></codeblock>
+</body>
+</topic>

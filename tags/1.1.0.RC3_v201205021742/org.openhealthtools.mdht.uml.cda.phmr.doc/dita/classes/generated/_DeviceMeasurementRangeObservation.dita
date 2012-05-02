@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Device Measurement Range Observation - conformance rules</title>
+<shortdesc id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.9.5</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Observation</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.9.5"/>
+</prolog>
+<body>
+<section id="description">
+<p>The measurement range of the device may be communicated in the PHMR (for example, a thermometer may report values between 0 and 100 degrees Celsius). However, it will not currently be automatically derived from device data, i.e., it may be manually entered or derived through other means.</p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="DEF" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="MDC_ATTR_NU_RANGE_MSMT" </tt> (CodeSystem:<tt> 2.16.840.1.113883.6.24 IEEE 11073</tt>)
+</li>
+<li>Contains exactly one [1..1] <tt><b>value</b></tt>
+</li>
+<li>A value element <b>SHALL</b> be present where @xsi:type is IVL_PQ (for a range of physical quantities) or ST (for a simple text description) describing the resolution of the device.</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="DEF" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="MDC_ATTR_NU_RANGE_MSMT" </tt> (CodeSystem:<tt> 2.16.840.1.113883.6.24 IEEE 11073</tt>)
+</li>
+<li>Contains exactly one [1..1] <tt><b>value</b></tt>
+</li>
+<li>A value element <b>SHALL</b> be present where @xsi:type is IVL_PQ (for a range of physical quantities) or ST (for a simple text description) describing the resolution of the device.</li>
+</ol>
+
+<codeblock id="example"><![CDATA[]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Device Measurement Range Observation</ph></p>
+<p id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.9.5</tt>]</p>
+</body>
+</topic>

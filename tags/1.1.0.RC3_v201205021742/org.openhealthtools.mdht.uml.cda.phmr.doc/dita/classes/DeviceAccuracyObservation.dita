@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Device Accuracy Observation</title>
+<shortdesc conref="generated/_DeviceAccuracyObservation.dita#classId/shortdesc"></shortdesc>
+<prolog conref="generated/_DeviceAccuracyObservation.dita#classId/prolog"></prolog>
+<body>
+<!-- TODO: insert non-model class description markup here -->
+<section conref="generated/_DeviceAccuracyObservation.dita#classId/description">
+</section>
+<!-- TODO: insert UML class diagram here -->
+
+<ol audience="standards" conref="generated/_DeviceAccuracyObservation.dita#classId/conformance">
+<li></li>
+</ol>
+<ol audience="developer" conref="generated/_DeviceAccuracyObservation.dita#classId/aggregate">
+<li></li>
+</ol>
+<p> </p>
+<section conref="generated/_DeviceAccuracyObservation.dita#classId/tableconformance">
+</section>
+<p> </p>
+<p> </p>
+<p><b>Device Accuracy Observation example</b></p>
+<!-- TODO: insert custom instance example here -->
+<!-- generated instance example follows -->
+<codeblock conref="generated/_DeviceAccuracyObservation.dita#classId/example">
+</codeblock>
+</body>
+</topic>

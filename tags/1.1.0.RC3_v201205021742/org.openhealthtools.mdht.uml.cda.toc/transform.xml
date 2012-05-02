@@ -1,0 +1,119 @@
+<?eclipse version="3.0"?><!--
+    Copyright (c) 2011, 2012 David A Carlson and others.
+    All rights reserved. This program and the accompanying materials
+    are made available under the terms of the Eclipse Public License v1.0
+    which accompanies this distribution, and is available at
+    http://www.eclipse.org/legal/epl-v10.html
+   
+    Contributors:
+        David A Carlson (XMLmodeling.com) - initial API and implementation
+ -->
+
+<project name="CDA Model Transformation"  basedir="." default="all">
+<property name="cdaPluginPath" location="${basedir}/../org.openhealthtools.mdht.uml.cda"/>
+<property name="modelName" value="toc"/>
+<macrodef name="convertEcorePaths">
+<attribute name="filePath"/>
+<sequential>
+<replace file="@{filePath}" token=".model/model/consol.uml" value="/model/consol_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/consol-advancedirectives.uml" value="/model/consol_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/consol-allergies.uml" value="/model/consol_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/consol-dicom.uml" value="/model/consol_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/consol-discharge.uml" value="/model/consol_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/consol-documents.uml" value="/model/consol_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/consol-encounters.uml" value="/model/consol_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/consol-exams.uml" value="/model/consol_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/consol-familyhistory.uml" value="/model/consol_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/consol-immunizations.uml" value="/model/consol_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/consol-medications.uml" value="/model/consol_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/consol-other.uml" value="/model/consol_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/consol-payers.uml" value="/model/consol_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/consol-planofcare.uml" value="/model/consol_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/consol-problems.uml" value="/model/consol_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/consol-procedures.uml" value="/model/consol_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/consol-results.uml" value="/model/consol_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/consol-socialhistory.uml" value="/model/consol_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/consol-vitalsigns.uml" value="/model/consol_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/ihe.uml" value="/model/ihe_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/ihe-immunizations.uml" value="/model/ihe_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/ihe-medicationsAdministered.uml" value="/model/ihe_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/ihe-activeProblems.uml" value="/model/ihe_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/ihe-medications.uml" value="/model/ihe_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/ihe-allergiesReactions.uml" value="/model/ihe_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/ihe-vitalSigns.uml" value="/model/ihe_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/ihe-codedVitalSigns.uml" value="/model/ihe_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/ihe-payers.uml" value="/model/ihe_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/ihe-historyOfPastIllness.uml" value="/model/ihe_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/ihe-chiefComplaint.uml" value="/model/ihe_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/ihe-reasonForReferral.uml" value="/model/ihe_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/ihe-surgeries.uml" value="/model/ihe_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/ihe-codedSurgeries.uml" value="/model/ihe_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/ihe-hospitalAdmissionDiagnosis.uml" value="/model/ihe_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/ihe-dischargeDiagnosis.uml" value="/model/ihe_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/ihe-admissionMedicationHistory.uml" value="/model/ihe_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/ihe-hospitalDischargeMedications.uml" value="/model/ihe_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/ihe-codedAdvanceDirectives.uml" value="/model/ihe_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/ihe-advanceDirectives.uml" value="/model/ihe_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/ihe-physicalExamNarrative.uml" value="/model/ihe_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/ihe-physicalExam.uml" value="/model/ihe_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/ihe-reviewOfSystems.uml" value="/model/ihe_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/ihe-hospitalCourse.uml" value="/model/ihe_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/ihe-codedResults.uml" value="/model/ihe_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/ihe-assessmentAndPlan.uml" value="/model/ihe_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/ihe-carePlan.uml" value="/model/ihe_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/ihe-familyMedicalHistory.uml" value="/model/ihe_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/ihe-socialHistory.uml" value="/model/ihe_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/ihe-encounterHistory.uml" value="/model/ihe_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/ihe-medicalDevices.uml" value="/model/ihe_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/ihe-intakeOutput.uml" value="/model/ihe_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/ihe-pregnancyHistory.uml" value="/model/ihe_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/cdt.uml" value="/model/cdt_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/hitsp.uml" value="/model/hitsp_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/hitsp-allergiesReactions.uml" value="/model/hitsp_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/hitsp-medications.uml" value="/model/hitsp_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/hitsp-problemList.uml" value="/model/hitsp_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/hitsp-vitalSigns.uml" value="/model/hitsp_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/hitsp-payers.uml" value="/model/hitsp_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/hitsp-historyOfPastIllness.uml" value="/model/hitsp_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/hitsp-chiefComplaint.uml" value="/model/hitsp_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/hitsp-reasonForReferral.uml" value="/model/hitsp_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/hitsp-surgeries.uml" value="/model/hitsp_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/hitsp-functionalStatus.uml" value="/model/hitsp_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/hitsp-hospitalAdmissionDiagnosis.uml" value="/model/hitsp_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/hitsp-dischargeDiagnosis.uml" value="/model/hitsp_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/hitsp-admissionMedicationHistory.uml" value="/model/hitsp_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/hitsp-hospitalDischargeMedications.uml" value="/model/hitsp_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/hitsp-medicationsAdministered.uml" value="/model/hitsp_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/hitsp-advanceDirectives.uml" value="/model/hitsp_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/hitsp-immunizations.uml" value="/model/hitsp_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/hitsp-physicalExam.uml" value="/model/hitsp_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/hitsp-reviewOfSystems.uml" value="/model/hitsp_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/hitsp-hospitalCourse.uml" value="/model/hitsp_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/hitsp-diagnosticResults.uml" value="/model/hitsp_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/hitsp-assessmentAndPlan.uml" value="/model/hitsp_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/hitsp-planOfCare.uml" value="/model/hitsp_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/hitsp-familyHistory.uml" value="/model/hitsp_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/hitsp-socialHistory.uml" value="/model/hitsp_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/hitsp-encounters.uml" value="/model/hitsp_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/hitsp-medicalEquipment.uml" value="/model/hitsp_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/ccd.uml" value="/model/ccd_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/ccd-medications.uml" value="/model/ccd_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/ccd-problem.uml" value="/model/ccd_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/ccd-familyHistory.uml" value="/model/ccd_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/ccd-results.uml" value="/model/ccd_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/ccd-socialHistory.uml" value="/model/ccd_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/ccd-encounters.uml" value="/model/ccd_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/ccd-immunizations.uml" value="/model/ccd_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/ccd-alerts.uml" value="/model/ccd_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/ccd-procedures.uml" value="/model/ccd_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/ccd-planOfCare.uml" value="/model/ccd_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/ccd-vitalSigns.uml" value="/model/ccd_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/ccd-medicalEquipment.uml" value="/model/ccd_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/ccd-functionalStatus.uml" value="/model/ccd_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/ccd-advanceDirectives.uml" value="/model/ccd_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/ccd-payers.uml" value="/model/ccd_Ecore.uml"/>
+<replace file="@{filePath}" token=".model/model/.controlled/ccd-purpose.uml" value="/model/ccd_Ecore.uml"/>
+</sequential>
+</macrodef>
+<import file="${cdaPluginPath}/transform-common.xml"/>
+</project>

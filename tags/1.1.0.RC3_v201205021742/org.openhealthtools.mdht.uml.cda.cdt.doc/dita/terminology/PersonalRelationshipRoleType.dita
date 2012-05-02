@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Personal Relationship Role Type</title>
+<prolog id="prolog">
+<resourceid id="not specified"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table><tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>PersonalRelationshipRoleType - (OID not specified)</entry></row>
+<row><entry>Code System</entry><entry>RoleCode - 2.16.840.1.113883.5.111</entry></row>
+<row><entry>Source</entry><entry>Health Level Seven (HL7)</entry></row>
+<row><entry>Description</entry><entry>Provides more information about the link between two people in a personal relationship.
+</entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>

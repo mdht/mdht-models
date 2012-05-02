@@ -1,0 +1,52 @@
+<!--
+    Copyright (c) 2011, 2012 Sean Muir and others.
+    All rights reserved. This program and the accompanying materials
+    are made available under the terms of the Eclipse Public License v1.0
+    which accompanies this distribution, and is available at
+    http://www.eclipse.org/legal/epl-v10.html
+   
+    Contributors:
+        Sean Muir (JKM Software) - initial API and implementation
+ -->
+<project name="CDA Model Flattening"  basedir="." default="all">
+
+	<import file="transform.xml"/>
+
+	<target name="all">
+		<antcall target="transformFlatten"/>
+		<antcall target="transformFilter"/>
+		<antcall target="transformDomain"/>
+	</target>
+
+    <target name="transformFlatten" description="Flatten inherited templates.">
+        <cdatools model="${modelPath.uml}">
+            <flattenModel includeBaseModel="true" outputModel="${flattenedModelPath.uml}"/>
+        </cdatools>
+
+    	<antcall target="refresh"/>
+    </target>
+
+    <target name="transformFilter" description="Filter and apply business names.">
+        <cdatools model="${flattenedModelPath.uml}">
+            <filterModel outputModel="${filteredModelPath.uml}"/>
+        </cdatools>
+
+    	<antcall target="refresh"/>
+    </target>
+
+    <target name="transformDomain" description="Flatten inherited templates.">
+    	<property name="generateDomainInterface" value="false"/>
+    	<property name="includeInterfaceRealization" value="false"/>
+    	<property name="generateDomainClasses" value="true"/>
+    	<property name="includeFixedValueGetters" value="false"/>
+    	<property name="useBusinessNames" value="true"/>
+    	
+        <cdatools model="${modelPath.uml}">
+            <transformToDomainModel domainModel="${domainModelPath.uml}"/>
+        </cdatools>
+		<antcall target="convertDomainPaths"/>
+    	
+    	<antcall target="refresh"/>
+    </target>
+	
+</project>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Concern Entry Status</title>
+<prolog id="prolog">
+<resourceid id="TEMP-OID-PROBLEM-STATUS-CODE"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table><tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>ConcernEntryStatus - TEMP-OID-PROBLEM-STATUS-CODE</entry></row>
+<row><entry>Description</entry><entry>A concern in the "active" state represents one for which some ongoing clinical activity is expected, and that no activity is expected in other states. Specific uses of the suspended and aborted states are left to the implementation.
+</entry></row>
+</tbody></tgroup></table>
+<table><tgroup cols="4">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="2*"/>
+<colspec colname="col3" colwidth="1*"/>
+<colspec colname="col4" colwidth="3*"/>
+<thead><row>
+<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
+</row></thead><tbody>
+<row><entry>active</entry><entry></entry><entry></entry><entry></entry></row>
+<row><entry>suspended</entry><entry></entry><entry></entry><entry></entry></row>
+<row><entry>aborted</entry><entry></entry><entry></entry><entry></entry></row>
+<row><entry>completed</entry><entry></entry><entry></entry><entry></entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>

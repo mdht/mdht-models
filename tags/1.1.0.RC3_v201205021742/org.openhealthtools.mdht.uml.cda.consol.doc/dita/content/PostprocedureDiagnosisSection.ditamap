@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+	<title>Postprocedure Diagnosis Section</title>
+	<topicref href="../classes/PostprocedureDiagnosisSection.dita" type="topic" >
+		<topicref href="../classes/PostprocedureDiagnosisSectionTable.dita" type="topic" />
+		<topicref href="../classes/PostprocedureDiagnosisSectionSample.dita" type="topic" />	
+	</topicref>
+</map>
+

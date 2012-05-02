@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xml:lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="Allergy Intolerance"/>
+<meta name="abstract" content="[Observation: templateId 1.3.6.1.4.1.19376.1.5.3.1.4.6]"/>
+<meta name="description" content="[Observation: templateId 1.3.6.1.4.1.19376.1.5.3.1.4.6]"/>
+<meta name="DC.Coverage" content="Observation"/>
+<meta name="DC.Relation" scheme="URI" content="../content/ClinicalStatementTemplates.html"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="classId"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
+<title>Allergy Intolerance</title>
+</head>
+<body id="classId"><a name="classId"><!-- --></a>
+<div>
+	<p><b>Development Only.</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
+</div>
+
+<h1 class="title topictitle1">Allergy Intolerance</h1>
+
+
+
+<div class="body"><p class="shortdesc">[Observation: templateId <tt class="ph tt">1.3.6.1.4.1.19376.1.5.3.1.4.6</tt>]</p>
+
+
+<div class="section">
+<p class="p">Allergies and intolerances are special kinds of problems, and so are also recorded in the CDA
+&lt;observation&gt; element, with classCode='OBS'. They follow the same pattern as the problem
+entry, with exceptions noted below.</p>
+
+</div>
+
+
+
+<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="ProblemEntry.html" title="[Observation: templateId 1.3.6.1.4.1.19376.1.5.3.1.4.5]">Problem Entry</a> template (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.5.3.1.4.5</tt>)</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.4 ObservationIntoleranceType</tt>)
+<ul class="ul"><li class="li">The &lt;code&gt; element represents the kind of allergy observation made, to a drug, food or
+environmental agent, and whether it is an allergy, non-allergy intolerance, or unknown class of
+intolerance (not known to be allergy or intolerance).</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt>
+<ul class="ul"><li class="li">The &lt;value&gt; is a description of the allergy or adverse reaction. While the value may be a coded
+or an uncoded string, the type is always a coded value (xsi: type='CD'). The codingSystem should reference a controlled
+vocabulary describing allergies and adverse reactions. The allergy or intolerance may
+not be known, in which case that fact shall be recorded appropriately. This might occur in the
+case where a patient experiences an allergic reaction to an unknown substance.</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt>, such that
+<ol class="ol" type="a">
+<li class="li">Contains <tt class="ph tt"><strong class="ph b">@typeCode="</strong>MFST" </tt><em class="ph i">MFST (is manifestation of)</em></li>
+
+<li class="li">Contains exactly one [1..1] <a class="xref" href="ProblemEntryReactionObservationContainer.html" title="[Observation: templateId 1.3.6.1.4.1.19376.1.5.3.1.4.5]">Problem Entry Reaction Observation Container</a> (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.5.3.1.4.5</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt>, such that
+<ol class="ol" type="a">
+<li class="li">Contains <tt class="ph tt"><strong class="ph b">@typeCode="</strong>REFR" </tt><em class="ph i">REFR (refers to)</em></li>
+
+<li class="li">Contains exactly one [1..1] <a class="xref" href="Severity.html" title="[Observation: templateId 1.3.6.1.4.1.19376.1.5.3.1.4.1]">Severity</a> (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.5.3.1.4.1</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt>, such that
+<ol class="ol" type="a">
+<li class="li">Contains <tt class="ph tt"><strong class="ph b">@typeCode="</strong>REFR" </tt><em class="ph i">REFR (refers to)</em></li>
+
+<li class="li">Contains exactly one [1..1] <a class="xref" href="ProblemStatusObservation.html" title="[Observation: templateId 1.3.6.1.4.1.19376.1.5.3.1.4.1.1]">Problem Status Observation</a> (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.5.3.1.4.1.1</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt>, such that
+<ol class="ol" type="a">
+<li class="li">Contains <tt class="ph tt"><strong class="ph b">@typeCode="</strong>SUBJ" </tt><em class="ph i">SUBJ (has subject)</em></li>
+
+<li class="li">Contains exactly one [1..1] <a class="xref" href="Comment.html" title="[Act: templateId 1.3.6.1.4.1.19376.1.5.3.1.4.2]">Comment</a> (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.5.3.1.4.2</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> satisfy: Other vocabularies may be used for code/@code, such as SNOMED-CT or MEDCIN.<ul class="ul"><li class="li">UNIMPLEMENTABLE</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: The code /@code and code/@codeSystem attribute shall be present.<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not (code.code.oclIsUndefined() or code.codeSystem.oclIsUndefined())</pre>
+</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> satisfy: The code/@displayName and code/@codeSystemName attributes should be present.<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: not (code.displayName.oclIsUndefined() or code.codeSystemName.oclIsUndefined())</pre>
+</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: If &lt;value&gt; is coded, the code and codeSystem attributes must be present. If uncoded, all attributes other than xsi:type='CD' must be absent.<ul class="ul"><li class="li">UNIMPLEMENTABLE</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> satisfy: the &lt;participant&gt; element may be present<ul class="ul"><li class="li">The substance that causes the allergy or intolerance may be specified in the &lt;participant&gt; element.</li>
+</ul>
+<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.participant-&gt;size() = 1</pre>
+</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: the participant/@typecode attribute shall be 'CSM'<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.participant-&gt;forAll(par : cda::Participant2 | par.typeCode = vocab::ParticipationType::CSM)</pre>
+</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> satisfy: the participant/participantRole element may be present<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.participant.participantRole-&gt;size() = 1</pre>
+</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: the participant/participantRole/@classcode attribute shall be 'MANU'<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.participant.participantRole-&gt;one(pr : cda::ParticipantRole | pr.classCode = vocab::RoleClassRoot::MANU)</pre>
+</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> satisfy: The participant/participantRole/PlayingEntity element may be present<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.participant.participantRole.playingEntity-&gt;size() = 1</pre>
+</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: the participant/participantRole/playingEntity/@classcode attribute shall be 'MMAT'<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.participant.participantRole.playingEntity-&gt;one(pe : cda::PlayingEntity | pe.classCode = vocab::EntityClassRoot::MMAT)</pre>
+</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: The participant/participantRole/playingEntity/code element shall be present. It may contain a code and codeSystem attribute to indicate
+the code for the substance causing the allergy or intolerance.<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.participant.participantRole.playingEntity.code-&gt;size() = 1</pre>
+</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: participant/participantRole/playingEntity/code shall contain a originalText/reference element as reference to the
+original text in the narrative where the substance is named.<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.participant.participantRole.playingEntity.code.originalText.reference-&gt;size() = 1</pre>
+</li>
+</ul>
+</li>
+
+<li class="li">The entryRelationship/@inversionInd for Severity Entry template <strong class="ph b">SHALL</strong> be 'true'</li>
+
+<li class="li">The entryRelationship/@inversionInd for Comment Entry template <strong class="ph b">SHALL</strong> be 'true'</li>
+
+</ol>
+
+
+<p class="p"> </p>
+
+<p class="p"><strong class="ph b">Allergy Intolerance example</strong></p>
+
+
+
+<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="OBS" moodCode="EVN"&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.1.28"/&gt;
+  &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5"/&gt;
+  &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.6"/&gt;
+  &lt;id root="2055171060"/&gt;
+  &lt;code codeSystem="2.16.840.1.113883.5.4" codeSystemName="ObservationIntoleranceType"/&gt;
+  &lt;text/&gt;
+  &lt;statusCode code="completed"/&gt;
+  &lt;effectiveTime&gt;
+    &lt;low value="2011"/&gt;
+    &lt;high value="2011"/&gt;
+  &lt;/effectiveTime&gt;
+  &lt;entryRelationship&gt;
+    &lt;observation classCode="OBS" moodCode="EVN"&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.28"/&gt;
+      &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5"/&gt;
+      &lt;templateId root="2.16.840.1.113883.10.20.1.54"/&gt;
+      &lt;id root="840816419"/&gt;
+      &lt;code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
+      &lt;text/&gt;
+      &lt;statusCode code="completed"/&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2011"/&gt;
+        &lt;high value="2011"/&gt;
+      &lt;/effectiveTime&gt;
+    &lt;/observation&gt;
+  &lt;/entryRelationship&gt;
+  &lt;entryRelationship&gt;
+    &lt;observation/&gt;
+  &lt;/entryRelationship&gt;
+  &lt;entryRelationship&gt;
+    &lt;observation/&gt;
+  &lt;/entryRelationship&gt;
+  &lt;entryRelationship&gt;
+    &lt;act/&gt;
+  &lt;/entryRelationship&gt;
+&lt;/observation&gt;</pre>
+
+</div>
+
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../content/ClinicalStatementTemplates.html">CLINICAL STATEMENT TEMPLATES</a></div>
+</div>
+</div>
+
+</body>
+</html>

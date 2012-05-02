@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+	<title>FORMALCLASSNAME</title>
+	<topicref href="../classes/CLASSNAME.dita" type="topic" >
+		<topicref href="../classes/CLASSNAMETable.dita" type="topic" />
+		<topicref href="../classes/CLASSNAMESample.dita" type="topic" />	
+	</topicref>
+</map>

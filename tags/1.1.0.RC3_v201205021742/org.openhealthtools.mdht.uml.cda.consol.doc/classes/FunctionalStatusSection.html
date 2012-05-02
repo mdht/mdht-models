@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xml:lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="Functional Status Section"/>
+<meta name="abstract" content="[Section: templateId 2.16.840.1.113883.10.20.22.2.14]"/>
+<meta name="description" content="[Section: templateId 2.16.840.1.113883.10.20.22.2.14]"/>
+<meta name="DC.Coverage" content="Section"/>
+<meta name="DC.Relation" scheme="URI" content="../classes/FunctionalStatusSectionTable.html"/>
+<meta name="DC.Relation" scheme="URI" content="../classes/FunctionalStatusSectionSample.html"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="classId"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
+<title>Functional Status Section</title>
+</head>
+<body id="classId"><a name="classId"><!-- --></a>
+<div>
+	<p><b>For Discussion and Demonstration Only</b> The Normative content for these specifications
+	may be found on the HL7 web site.</p>
+</div>
+
+	<h1 class="title topictitle1">
+		<span class="ph">Functional Status Section</span>
+	</h1>
+
+	
+	
+	<div class="body"><p class="shortdesc">[Section: templateId <tt class="ph tt">2.16.840.1.113883.10.20.22.2.14</tt>]</p>
+
+		
+		<div class="section">
+<p class="p">
+    <em class="ph i">Functional Status</em> describes the patient's status of normal functioning at the time the Care Record
+    was created. Functional statuses include information regarding the patient relative to:
+</p>
+
+
+    <ul class="ul"><li class="li">Ambulatory ability</li>
+
+       <li class="li">Mental status or competency</li>
+
+        <li class="li">Activities of Daily Living (ADLs), including bathing, dressing, feeding, grooming</li>
+
+        <li class="li">Home / living situation having an effect on the health status of the patient</li>
+
+        <li class="li">Ability to care for self</li>
+
+        <li class="li">Social activity, including issues with social cognition, participation with
+        friends and acquaintances other than family members</li>
+
+       <li class="li">Occupation activity, including activities partly or directly related to working, housework or volunteering, family
+        and home responsibilities or activities related to home and family</li>
+
+      <li class="li">Communication ability, including issues with speech, writing or cognition required for communication</li>
+
+       <li class="li"> Perception, including sight, hearing, taste, skin sensation, kinesthetic sense, proprioception, or
+        balance</li>
+
+</ul>
+
+<p class="p">
+    Any
+    deviation from normal function that the patient displays and is recorded in the record should be included. Of
+    particular interest are those limitations that would in any way interfere with self care or the medical therapeutic
+    process. In addition, an improvement, any change in or noting that the patient has normal functioning status is also
+    valid for inclusion.
+</p>
+
+<p class="p">Functional Statuses can be expressed in 3 different forms. They can occur as a Problem, a Result or as text. Text can be employed if and only if the Functional Status is neither a Problem nor a Result. Functional Statuses expressed as Problems include relevant clinical conditions, diagnoses, symptoms and findings. Results are the interpretation or conclusion derived from a clinical assessment or test battery, such as the Instrumental Activities of Daily Living (IADL) scale or the Functional Status Index (FSI).
+</p>
+
+</div>
+
+		
+
+		<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="47420-5" </tt><em class="ph i">Functional status assessment</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:7921)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">title</strong></tt> (CONF:7922)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">text</strong></tt> (CONF:7923)
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:9080)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="ProblemObservation.html" title="[Observation: templateId 2.16.840.1.113883.10.20.22.4.4]">Problem Observation</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.4.4</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">entry</strong></tt> (CONF:9082)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="ResultObservation.html" title="[Observation: templateId 2.16.840.1.113883.10.20.22.4.2]">Result Observation</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.4.2</tt>)</li>
+</ol>
+</li>
+
+</ol>
+
+		
+		<p class="p">
+		</p>
+
+	</div>
+
+<div class="related-links">
+<ul class="ullinks">
+<li class="link ulchildlink"><strong><a href="../classes/FunctionalStatusSectionTable.html">Functional Status Section Table</a></strong><br/>
+</li>
+<li class="link ulchildlink"><strong><a href="../classes/FunctionalStatusSectionSample.html">Functional Status Section Sample</a></strong><br/>
+</li>
+</ul>
+</div>
+
+</body>
+</html>

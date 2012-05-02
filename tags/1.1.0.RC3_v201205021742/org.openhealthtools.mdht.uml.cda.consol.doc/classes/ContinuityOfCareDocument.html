@@ -1,0 +1,1593 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xml:lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="Continuity Of Care Document"/>
+<meta name="abstract" content="[ClinicalDocument: templateId 2.16.840.1.113883.10.20.22.1.2]"/>
+<meta name="description" content="[ClinicalDocument: templateId 2.16.840.1.113883.10.20.22.1.2]"/>
+<meta name="DC.Coverage" content="ClinicalDocument"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="classId"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
+<title>Continuity Of Care Document</title>
+</head>
+<body id="classId"><a name="classId"><!-- --></a>
+<div>
+	<p><b>For Discussion and Demonstration Only</b> The Normative content for these specifications
+	may be found on the HL7 web site.</p>
+</div>
+
+	<h1 class="title topictitle1">
+		<span class="ph">Continuity Of Care Document</span>
+	</h1>
+
+	
+	
+	<div class="body"><p class="shortdesc">[ClinicalDocument: templateId <tt class="ph tt">2.16.840.1.113883.10.20.22.1.2</tt>]</p>
+
+		
+		<div class="section">
+<p class="p">This section, Continuity of Care Document (CCD) Release 1.1, describes CDA constraints  in accordance with Stage 1 Meaningful Use. The CCD requirements in this guide supersede CCD Release 1; in the near future, this guide could supersede HITSP C32 .
+
+The CCD is a core data set of the most relevant administrative, demographic, and clinical information facts about a patient's healthcare, covering one or more healthcare encounters. It provides a means for one healthcare practitioner, system, or setting to aggregate all of the pertinent data about a patient and forward it to another practitioner, system, or setting to support the continuity of care. The primary use case for the CCD is to provide a snapshot in time containing the pertinent clinical, demographic, and administrative data for a specific patient . More specific use cases, such as a Discharge Summary or Progress Note, are available as alternative documents in this guide.</p>
+
+</div>
+
+
+		<div class="section"><h2 class="title sectiontitle"><span class="ph">Continuity Of Care Document</span> Header Constraints</h2>
+			
+		</div>
+
+
+
+		<div class="section"><h2 class="title sectiontitle">
+				<span class="ph">Continuity Of Care Document</span> Body Constraints	</h2>
+			
+				<div class="p">
+				<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="GeneralHeaderConstraints.html" title="[ClinicalDocument: templateId 2.16.840.1.113883.10.20.22.1.1]">General Header Constraints</a> template (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.1.1</tt>)</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="34133-9" </tt><em class="ph i">Summarization of Episode Note</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:8451)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">languageCode</strong></tt> (CONF-5)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">documentationOf</strong></tt> (CONF:8452) <ol class="ol" type="a"><li class="li"> This documentationOf <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">serviceEvent</strong></tt> (CONF:8480) <ol class="ol" type="i"><li class="li"> This serviceEvent <strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">@classCode</strong>="PCPR" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:8453)</li>
+<li class="li"> This serviceEvent <strong class="ph b">SHALL</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt> (CONF:8481)</li>
+<li class="li"> This serviceEvent <strong class="ph b">SHOULD</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">performer</strong></tt> (CONF:8482) <ol class="ol"><li class="li"> Such performers <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">@typeCode</strong>="PRF" </tt> (CONF:8458)</li>
+<li class="li"> Such performers <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">assignedEntity</strong></tt> (CONF:8459) <ol class="ol" type="a"><li class="li"> This assignedEntity <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">code</strong></tt>, where the @code <strong class="ph b">MAY</strong> be selected from (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.101 NUCC Health Care Provider Taxonomy</tt>) (CONF:8461)</li>
+<li class="li"> This assignedEntity <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">id</strong></tt> (CONF:10027)</li>
+<li class="li"> This assignedEntity <strong class="ph b">SHOULD</strong> include zero or one [0..1] id where id/@root ="2.16.840.1.113883.4.6" National Provider Identifier (CONF:10027)</li>
+</ol>
+ </li>
+</ol>
+ </li>
+<li class="li"> This serviceEvent This effectiveTime <strong class="ph b">SHALL</strong> contain exactly one [1..1] low (CONF:8454)</li>
+<li class="li"> This serviceEvent This effectiveTime <strong class="ph b">SHALL</strong> contain exactly one [1..1] high (CONF:8455)</li>
+</ol>
+ </li>
+</ol>
+
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">author</strong></tt> (CONF:9442) <ol class="ol" type="a"><li class="li"> Such authors <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">assignedAuthor</strong></tt> (CONF:9443) <ol class="ol" type="i"><li class="li"> This assignedAuthor <strong class="ph b">SHALL</strong> contain exactly one [1..1] assignedPerson or exactly one one [1..1]  representedOrganization. (CONF:8456)</li>
+<li class="li"> This assignedAuthor If assignedAuthor has an associated representedOrganization with no assignedPerson or assignedAuthoringDevice, then the value for "ClinicalDocument/author/assignedAuthor/id/@NullFlavor" <strong class="ph b">SHALL</strong> be "NA" "Not applicable" 2.16.840.1.113883.5.1008 NullFlavor STATIC. (CONF:8457)</li>
+</ol>
+ </li>
+</ol>
+
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:9445)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="AllergiesSection.html">Allergies Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.2.6.1</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:9447)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="MedicationsSection.html">Medications Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.2.1.1</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:9449)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="ProblemSection.html">Problem Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.2.5.1</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:9451)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="ProceduresSection.html">Procedures Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.2.7.1</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:9453)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="ResultsSection.html">Results Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.2.3.1</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:9455)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="AdvanceDirectivesSection.html">Advance Directives Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.2.21.1</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:9457)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="EncountersSection.html">Encounters Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.2.22.1</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:9459)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="FamilyHistorySection.html" title="[Section: templateId 2.16.840.1.113883.10.20.22.2.15]">Family History Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.2.15</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:9461)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="FunctionalStatusSection.html" title="[Section: templateId 2.16.840.1.113883.10.20.22.2.14]">Functional Status Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.2.14</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:9463)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="generated/../ImmunizationsSectionEntriesOptional.html" title="[Section: templateId 2.16.840.1.113883.10.20.22.2.2]">Immunizations Section Entries Optional</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.2.2</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:9466)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="MedicalEquipmentSection.html" title="[Section: templateId 2.16.840.1.113883.10.20.22.2.23]">Medical Equipment Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.2.23</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:9468)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="PayersSection.html" title="[Section: templateId 2.16.840.1.113883.10.20.22.2.18]">Payers Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.2.18</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:9470)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="PlanOfCareSection.html" title="[Section: templateId 2.16.840.1.113883.10.20.22.2.10]">Plan Of Care Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.2.10</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:9472)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="SocialHistorySection.html" title="[Section: templateId 2.16.840.1.113883.10.20.22.2.17]">Social History Section</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.2.17</tt>)</li>
+</ol>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> (CONF:9474)
+<ol class="ol" type="a">
+<li class="li">Contains exactly one [1..1] <a class="xref" href="generated/../VitalSignsSectionEntriesOptional.html">Vital Signs Section Entries Optional</a> (templateId: <tt class="ph tt">2.16.840.1.113883.10.20.22.2.4</tt>)</li>
+</ol>
+</li>
+
+</ol>
+
+				
+				</div>
+
+		</div>
+
+
+
+		<div class="section"><h2 class="title sectiontitle"><span class="ph">Continuity Of Care Document</span> Example</h2>
+			
+			<div class="p">
+			<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd"&gt;
+  &lt;realmCode code="US"/&gt;
+  &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.22.1.1"/&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.22.1.2"/&gt;
+  &lt;id root="1092189210"/&gt;
+  &lt;code code="34133-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Summarization of Episode Note"/&gt;
+  &lt;title/&gt;
+  &lt;effectiveTime/&gt;
+  &lt;confidentialityCode codeSystem="2.16.840.1.113883.5.25" codeSystemName="ConfidentialityCode"/&gt;
+  &lt;languageCode/&gt;
+  &lt;setId root="545098db-3b3d-437d-9481-24308245685b"/&gt;
+  &lt;versionNumber value="1"/&gt;
+  &lt;recordTarget&gt;
+    &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+    &lt;patientRole/&gt;
+  &lt;/recordTarget&gt;
+  &lt;author&gt;
+    &lt;time/&gt;
+    &lt;assignedAuthor&gt;
+      &lt;id root="1206615078"/&gt;
+    &lt;/assignedAuthor&gt;
+  &lt;/author&gt;
+  &lt;custodian/&gt;
+  &lt;documentationOf&gt;
+    &lt;serviceEvent classCode="PCPR"&gt;
+      &lt;effectiveTime&gt;
+        &lt;low value="2012"/&gt;
+        &lt;high value="2012"/&gt;
+      &lt;/effectiveTime&gt;
+      &lt;performer typeCode="PRF"&gt;
+        &lt;assignedEntity&gt;
+          &lt;id root="1340478480"/&gt;
+          &lt;code codeSystem="2.16.840.1.113883.6.101" codeSystemName="NUCC Health Care Provider Taxonomy"/&gt;
+        &lt;/assignedEntity&gt;
+      &lt;/performer&gt;
+    &lt;/serviceEvent&gt;
+  &lt;/documentationOf&gt;
+  &lt;component&gt;
+    &lt;structuredBody&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.22.2.6"/&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.22.2.6.1"/&gt;
+          &lt;id root="673653116"/&gt;
+          &lt;code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergies, adverse reactions, alerts"/&gt;
+          &lt;title/&gt;
+          &lt;languageCode/&gt;
+          &lt;author&gt;
+            &lt;time/&gt;
+            &lt;assignedAuthor&gt;
+              &lt;id root="1123641058"/&gt;
+            &lt;/assignedAuthor&gt;
+          &lt;/author&gt;
+          &lt;entry&gt;
+            &lt;act classCode="ACT" moodCode="EVN"&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;templateId root="2.16.840.1.113883.10.20.22.4.30"/&gt;
+              &lt;id root="1128975399"/&gt;
+              &lt;code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergies, adverse reactions, alerts"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2012"/&gt;
+                &lt;high value="2012"/&gt;
+              &lt;/effectiveTime&gt;
+              &lt;languageCode/&gt;
+              &lt;author&gt;
+                &lt;time/&gt;
+                &lt;assignedAuthor&gt;
+                  &lt;id root="1269062796"/&gt;
+                &lt;/assignedAuthor&gt;
+              &lt;/author&gt;
+              &lt;entryRelationship&gt;
+                &lt;observation classCode="OBS" moodCode="EVN"&gt;
+                  &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+                  &lt;templateId root="2.16.840.1.113883.10.20.22.4.7"/&gt;
+                  &lt;id root="1964296844"/&gt;
+                  &lt;code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/&gt;
+                  &lt;statusCode code="completed"/&gt;
+                  &lt;effectiveTime&gt;
+                    &lt;low value="2012"/&gt;
+                    &lt;high value="2012"/&gt;
+                  &lt;/effectiveTime&gt;
+                  &lt;languageCode/&gt;
+                  &lt;author&gt;
+                    &lt;time/&gt;
+                    &lt;assignedAuthor/&gt;
+                  &lt;/author&gt;
+                  &lt;entryRelationship&gt;
+                    &lt;observation classCode="OBS" moodCode="EVN"&gt;
+                      &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+                      &lt;templateId root="2.16.840.1.113883.10.20.22.4.9"/&gt;
+                      &lt;id root="1593439009"/&gt;
+                      &lt;code code="312301563"/&gt;
+                      &lt;statusCode code="completed"/&gt;
+                      &lt;effectiveTime&gt;
+                        &lt;low value="2012"/&gt;
+                        &lt;high value="2012"/&gt;
+                      &lt;/effectiveTime&gt;
+                      &lt;languageCode/&gt;
+                      &lt;author/&gt;
+                      &lt;entryRelationship&gt;
+                        &lt;observation/&gt;
+                      &lt;/entryRelationship&gt;
+                      &lt;entryRelationship&gt;
+                        &lt;procedure/&gt;
+                      &lt;/entryRelationship&gt;
+                      &lt;entryRelationship&gt;
+                        &lt;substanceAdministration classCode="SBADM"/&gt;
+                      &lt;/entryRelationship&gt;
+                    &lt;/observation&gt;
+                  &lt;/entryRelationship&gt;
+                  &lt;entryRelationship&gt;
+                    &lt;observation classCode="OBS" moodCode="EVN"&gt;
+                      &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+                      &lt;templateId root="2.16.840.1.113883.10.20.22.4.8"/&gt;
+                      &lt;id root="308531335"/&gt;
+                      &lt;code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Severity observation"/&gt;
+                      &lt;statusCode code="completed"/&gt;
+                      &lt;effectiveTime&gt;
+                        &lt;low value="2012"/&gt;
+                        &lt;high value="2012"/&gt;
+                      &lt;/effectiveTime&gt;
+                      &lt;languageCode/&gt;
+                      &lt;interpretationCode codeSystem="2.16.840.1.113883.5.83" codeSystemName="ObservationInterpretation"/&gt;
+                      &lt;author/&gt;
+                    &lt;/observation&gt;
+                  &lt;/entryRelationship&gt;
+                  &lt;entryRelationship&gt;
+                    &lt;observation classCode="OBS" moodCode="EVN"&gt;
+                      &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+                      &lt;templateId root="2.16.840.1.113883.10.20.22.4.28"/&gt;
+                      &lt;id root="1615112474"/&gt;
+                      &lt;code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/&gt;
+                      &lt;statusCode code="completed"/&gt;
+                      &lt;effectiveTime&gt;
+                        &lt;low value="2012"/&gt;
+                        &lt;high value="2012"/&gt;
+                      &lt;/effectiveTime&gt;
+                      &lt;languageCode/&gt;
+                      &lt;author/&gt;
+                    &lt;/observation&gt;
+                  &lt;/entryRelationship&gt;
+                &lt;/observation&gt;
+              &lt;/entryRelationship&gt;
+            &lt;/act&gt;
+          &lt;/entry&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.22.2.1"/&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.22.2.1.1"/&gt;
+          &lt;id root="1837355812"/&gt;
+          &lt;code code="10160-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of medication use"/&gt;
+          &lt;title&gt;MedicationsMedications&lt;/title&gt;
+          &lt;languageCode/&gt;
+          &lt;author&gt;
+            &lt;time/&gt;
+            &lt;assignedAuthor&gt;
+              &lt;id root="382911004"/&gt;
+            &lt;/assignedAuthor&gt;
+          &lt;/author&gt;
+          &lt;entry&gt;
+            &lt;substanceAdministration classCode="SBADM"&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;templateId root="2.16.840.1.113883.10.20.22.4.16"/&gt;
+              &lt;id root="1557959713"/&gt;
+              &lt;code code="900252934"/&gt;
+              &lt;effectiveTime value="20120405"/&gt;
+              &lt;administrationUnitCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/&gt;
+              &lt;consumable/&gt;
+              &lt;author&gt;
+                &lt;time/&gt;
+                &lt;assignedAuthor&gt;
+                  &lt;id root="1242503670"/&gt;
+                &lt;/assignedAuthor&gt;
+              &lt;/author&gt;
+              &lt;entryRelationship&gt;
+                &lt;supply classCode="SPLY" moodCode="INT"&gt;
+                  &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+                  &lt;templateId root="2.16.840.1.113883.10.20.22.4.17"/&gt;
+                  &lt;id root="1510054402"/&gt;
+                  &lt;code code="774628548"/&gt;
+                  &lt;effectiveTime value="20120405"/&gt;
+                  &lt;author&gt;
+                    &lt;time/&gt;
+                    &lt;assignedAuthor/&gt;
+                  &lt;/author&gt;
+                  &lt;entryRelationship&gt;
+                    &lt;act classCode="ACT" moodCode="INT"&gt;
+                      &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+                      &lt;templateId root="2.16.840.1.113883.10.20.22.4.20"/&gt;
+                      &lt;id root="1036612247"/&gt;
+                      &lt;code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
+                      &lt;statusCode code="completed"/&gt;
+                      &lt;effectiveTime&gt;
+                        &lt;low value="2012"/&gt;
+                        &lt;high value="2012"/&gt;
+                      &lt;/effectiveTime&gt;
+                      &lt;languageCode/&gt;
+                      &lt;author/&gt;
+                    &lt;/act&gt;
+                  &lt;/entryRelationship&gt;
+                &lt;/supply&gt;
+              &lt;/entryRelationship&gt;
+              &lt;entryRelationship&gt;
+                &lt;observation classCode="OBS" moodCode="EVN"&gt;
+                  &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+                  &lt;templateId root="2.16.840.1.113883.10.20.22.4.9"/&gt;
+                  &lt;id root="795757343"/&gt;
+                  &lt;code code="1585374443"/&gt;
+                  &lt;statusCode code="completed"/&gt;
+                  &lt;effectiveTime&gt;
+                    &lt;low value="2012"/&gt;
+                    &lt;high value="2012"/&gt;
+                  &lt;/effectiveTime&gt;
+                  &lt;languageCode/&gt;
+                  &lt;author&gt;
+                    &lt;time/&gt;
+                    &lt;assignedAuthor/&gt;
+                  &lt;/author&gt;
+                  &lt;entryRelationship&gt;
+                    &lt;observation classCode="OBS" moodCode="EVN"&gt;
+                      &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+                      &lt;templateId root="2.16.840.1.113883.10.20.22.4.8"/&gt;
+                      &lt;id root="1705455938"/&gt;
+                      &lt;code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Severity observation"/&gt;
+                      &lt;statusCode code="completed"/&gt;
+                      &lt;effectiveTime&gt;
+                        &lt;low value="2012"/&gt;
+                        &lt;high value="2012"/&gt;
+                      &lt;/effectiveTime&gt;
+                      &lt;languageCode/&gt;
+                      &lt;interpretationCode codeSystem="2.16.840.1.113883.5.83" codeSystemName="ObservationInterpretation"/&gt;
+                      &lt;author/&gt;
+                    &lt;/observation&gt;
+                  &lt;/entryRelationship&gt;
+                  &lt;entryRelationship&gt;
+                    &lt;procedure classCode="PROC"&gt;
+                      &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+                      &lt;templateId root="2.16.840.1.113883.10.20.22.4.14"/&gt;
+                      &lt;id root="1041086980"/&gt;
+                      &lt;code code="1174143321"/&gt;
+                      &lt;effectiveTime&gt;
+                        &lt;low value="2012"/&gt;
+                        &lt;high value="2012"/&gt;
+                      &lt;/effectiveTime&gt;
+                      &lt;languageCode/&gt;
+                      &lt;targetSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
+                      &lt;author/&gt;
+                      &lt;entryRelationship&gt;
+                        &lt;observation/&gt;
+                      &lt;/entryRelationship&gt;
+                      &lt;entryRelationship&gt;
+                        &lt;substanceAdministration classCode="SBADM"/&gt;
+                      &lt;/entryRelationship&gt;
+                      &lt;entryRelationship&gt;
+                        &lt;act/&gt;
+                      &lt;/entryRelationship&gt;
+                      &lt;entryRelationship&gt;
+                        &lt;encounter/&gt;
+                      &lt;/entryRelationship&gt;
+                    &lt;/procedure&gt;
+                  &lt;/entryRelationship&gt;
+                  &lt;entryRelationship&gt;
+                    &lt;substanceAdministration classCode="SBADM"&gt;
+                      &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+                      &lt;templateId root="2.16.840.1.113883.10.20.22.4.16"/&gt;
+                      &lt;id root="351179651"/&gt;
+                      &lt;code code="993030896"/&gt;
+                      &lt;effectiveTime value="20120405"/&gt;
+                      &lt;administrationUnitCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/&gt;
+                      &lt;consumable/&gt;
+                      &lt;author/&gt;
+                      &lt;entryRelationship&gt;
+                        &lt;supply classCode="SPLY"/&gt;
+                      &lt;/entryRelationship&gt;
+                      &lt;entryRelationship&gt;
+                        &lt;observation/&gt;
+                      &lt;/entryRelationship&gt;
+                      &lt;entryRelationship&gt;
+                        &lt;act/&gt;
+                      &lt;/entryRelationship&gt;
+                      &lt;entryRelationship&gt;
+                        &lt;observation/&gt;
+                      &lt;/entryRelationship&gt;
+                      &lt;entryRelationship&gt;
+                        &lt;supply classCode="SPLY"/&gt;
+                      &lt;/entryRelationship&gt;
+                    &lt;/substanceAdministration&gt;
+                  &lt;/entryRelationship&gt;
+                &lt;/observation&gt;
+              &lt;/entryRelationship&gt;
+              &lt;entryRelationship&gt;
+                &lt;act classCode="ACT" moodCode="INT"&gt;
+                  &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+                  &lt;templateId root="2.16.840.1.113883.10.20.22.4.20"/&gt;
+                  &lt;id root="1356957081"/&gt;
+                  &lt;code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
+                  &lt;statusCode code="completed"/&gt;
+                  &lt;effectiveTime&gt;
+                    &lt;low value="2012"/&gt;
+                    &lt;high value="2012"/&gt;
+                  &lt;/effectiveTime&gt;
+                  &lt;languageCode/&gt;
+                  &lt;author&gt;
+                    &lt;time/&gt;
+                    &lt;assignedAuthor/&gt;
+                  &lt;/author&gt;
+                &lt;/act&gt;
+              &lt;/entryRelationship&gt;
+              &lt;entryRelationship&gt;
+                &lt;observation classCode="OBS" moodCode="EVN"&gt;
+                  &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+                  &lt;templateId root="2.16.840.1.113883.10.20.22.4.19"/&gt;
+                  &lt;id root="177209163"/&gt;
+                  &lt;code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
+                  &lt;statusCode code="completed"/&gt;
+                  &lt;effectiveTime&gt;
+                    &lt;low value="2012"/&gt;
+                    &lt;high value="2012"/&gt;
+                  &lt;/effectiveTime&gt;
+                  &lt;languageCode/&gt;
+                  &lt;author&gt;
+                    &lt;time/&gt;
+                    &lt;assignedAuthor/&gt;
+                  &lt;/author&gt;
+                &lt;/observation&gt;
+              &lt;/entryRelationship&gt;
+              &lt;entryRelationship&gt;
+                &lt;supply classCode="SPLY" moodCode="EVN"&gt;
+                  &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+                  &lt;templateId root="2.16.840.1.113883.10.20.22.4.18"/&gt;
+                  &lt;id root="1317052635"/&gt;
+                  &lt;code code="1176678741"/&gt;
+                  &lt;effectiveTime value="20120405"/&gt;
+                  &lt;author&gt;
+                    &lt;time/&gt;
+                    &lt;assignedAuthor/&gt;
+                  &lt;/author&gt;
+                  &lt;entryRelationship&gt;
+                    &lt;supply classCode="SPLY" moodCode="INT"&gt;
+                      &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+                      &lt;templateId root="2.16.840.1.113883.10.20.22.4.17"/&gt;
+                      &lt;id root="559412079"/&gt;
+                      &lt;code code="1241299253"/&gt;
+                      &lt;effectiveTime value="20120405"/&gt;
+                      &lt;author/&gt;
+                      &lt;entryRelationship&gt;
+                        &lt;act/&gt;
+                      &lt;/entryRelationship&gt;
+                    &lt;/supply&gt;
+                  &lt;/entryRelationship&gt;
+                &lt;/supply&gt;
+              &lt;/entryRelationship&gt;
+            &lt;/substanceAdministration&gt;
+          &lt;/entry&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.22.2.5"/&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.22.2.5.1"/&gt;
+          &lt;id root="578491403"/&gt;
+          &lt;code code="11450-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problem List"/&gt;
+          &lt;title/&gt;
+          &lt;languageCode/&gt;
+          &lt;author&gt;
+            &lt;time/&gt;
+            &lt;assignedAuthor&gt;
+              &lt;id root="1827518720"/&gt;
+            &lt;/assignedAuthor&gt;
+          &lt;/author&gt;
+          &lt;entry&gt;
+            &lt;act classCode="ACT" moodCode="EVN"&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;templateId root="2.16.840.1.113883.10.20.22.4.3"/&gt;
+              &lt;id root="641755500"/&gt;
+              &lt;code code="CONC" codeSystem="2.16.840.1.113883.5.6" codeSystemName="HL7ActClass" displayName="Concern"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2012"/&gt;
+                &lt;high value="2012"/&gt;
+              &lt;/effectiveTime&gt;
+              &lt;languageCode/&gt;
+              &lt;author&gt;
+                &lt;time/&gt;
+                &lt;assignedAuthor&gt;
+                  &lt;id root="1488536326"/&gt;
+                &lt;/assignedAuthor&gt;
+              &lt;/author&gt;
+              &lt;entryRelationship&gt;
+                &lt;observation moodCode="EVN"&gt;
+                  &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+                  &lt;templateId root="2.16.840.1.113883.10.20.22.4.4"/&gt;
+                  &lt;id root="2015014625"/&gt;
+                  &lt;code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
+                  &lt;statusCode code="completed"/&gt;
+                  &lt;effectiveTime&gt;
+                    &lt;low value="2012"/&gt;
+                    &lt;high value="2012"/&gt;
+                  &lt;/effectiveTime&gt;
+                  &lt;languageCode/&gt;
+                  &lt;author&gt;
+                    &lt;time/&gt;
+                    &lt;assignedAuthor/&gt;
+                  &lt;/author&gt;
+                  &lt;entryRelationship&gt;
+                    &lt;observation classCode="OBS" moodCode="EVN"&gt;
+                      &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+                      &lt;templateId root="2.16.840.1.113883.10.20.22.4.31"/&gt;
+                      &lt;id root="1605160168"/&gt;
+                      &lt;code code="445518008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age At Onset"/&gt;
+                      &lt;statusCode code="completed"/&gt;
+                      &lt;effectiveTime&gt;
+                        &lt;low value="2012"/&gt;
+                        &lt;high value="2012"/&gt;
+                      &lt;/effectiveTime&gt;
+                      &lt;languageCode/&gt;
+                      &lt;author/&gt;
+                    &lt;/observation&gt;
+                  &lt;/entryRelationship&gt;
+                  &lt;entryRelationship&gt;
+                    &lt;observation classCode="OBS" moodCode="EVN"&gt;
+                      &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+                      &lt;templateId root="2.16.840.1.113883.10.20.22.4.5"/&gt;
+                      &lt;id root="1501352941"/&gt;
+                      &lt;code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/&gt;
+                      &lt;statusCode code="completed"/&gt;
+                      &lt;effectiveTime&gt;
+                        &lt;low value="2012"/&gt;
+                        &lt;high value="2012"/&gt;
+                      &lt;/effectiveTime&gt;
+                      &lt;languageCode/&gt;
+                      &lt;author/&gt;
+                    &lt;/observation&gt;
+                  &lt;/entryRelationship&gt;
+                  &lt;entryRelationship&gt;
+                    &lt;observation classCode="OBS" moodCode="EVN"&gt;
+                      &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+                      &lt;templateId root="2.16.840.1.113883.10.20.22.4.6"/&gt;
+                      &lt;id root="1682713464"/&gt;
+                      &lt;code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/&gt;
+                      &lt;statusCode code="completed"/&gt;
+                      &lt;effectiveTime&gt;
+                        &lt;low value="2012"/&gt;
+                        &lt;high value="2012"/&gt;
+                      &lt;/effectiveTime&gt;
+                      &lt;languageCode/&gt;
+                      &lt;author/&gt;
+                    &lt;/observation&gt;
+                  &lt;/entryRelationship&gt;
+                &lt;/observation&gt;
+              &lt;/entryRelationship&gt;
+            &lt;/act&gt;
+          &lt;/entry&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.22.2.7"/&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.22.2.7.1"/&gt;
+          &lt;id root="2121807660"/&gt;
+          &lt;code code="47519-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of procedures"/&gt;
+          &lt;title&gt;Procedures&lt;/title&gt;
+          &lt;languageCode/&gt;
+          &lt;author&gt;
+            &lt;time/&gt;
+            &lt;assignedAuthor&gt;
+              &lt;id root="609574043"/&gt;
+            &lt;/assignedAuthor&gt;
+          &lt;/author&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.22.2.3"/&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.22.2.3.1"/&gt;
+          &lt;id root="1564425391"/&gt;
+          &lt;code code="30954-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Relevant diagnostic tests and/or laboratory data"/&gt;
+          &lt;title/&gt;
+          &lt;languageCode/&gt;
+          &lt;author&gt;
+            &lt;time/&gt;
+            &lt;assignedAuthor&gt;
+              &lt;id root="343312423"/&gt;
+            &lt;/assignedAuthor&gt;
+          &lt;/author&gt;
+          &lt;entry&gt;
+            &lt;organizer moodCode="EVN"&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;templateId root="2.16.840.1.113883.10.20.22.4.1"/&gt;
+              &lt;id root="831896907"/&gt;
+              &lt;code code="1161054026"/&gt;
+              &lt;statusCode code="completed"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2012"/&gt;
+                &lt;high value="2012"/&gt;
+              &lt;/effectiveTime&gt;
+              &lt;author&gt;
+                &lt;time/&gt;
+                &lt;assignedAuthor&gt;
+                  &lt;id root="175097653"/&gt;
+                &lt;/assignedAuthor&gt;
+              &lt;/author&gt;
+              &lt;component&gt;
+                &lt;observation classCode="OBS" moodCode="EVN"&gt;
+                  &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+                  &lt;templateId root="2.16.840.1.113883.10.20.22.4.2"/&gt;
+                  &lt;id root="297116570"/&gt;
+                  &lt;code code="612874967"/&gt;
+                  &lt;statusCode code="completed"/&gt;
+                  &lt;effectiveTime&gt;
+                    &lt;low value="2012"/&gt;
+                    &lt;high value="2012"/&gt;
+                  &lt;/effectiveTime&gt;
+                  &lt;languageCode/&gt;
+                  &lt;author&gt;
+                    &lt;time/&gt;
+                    &lt;assignedAuthor/&gt;
+                  &lt;/author&gt;
+                &lt;/observation&gt;
+              &lt;/component&gt;
+            &lt;/organizer&gt;
+          &lt;/entry&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.22.2.21"/&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.22.2.21.1"/&gt;
+          &lt;id root="1541839068"/&gt;
+          &lt;code code="42348-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Advance directives"/&gt;
+          &lt;title/&gt;
+          &lt;languageCode/&gt;
+          &lt;author&gt;
+            &lt;time/&gt;
+            &lt;assignedAuthor&gt;
+              &lt;id root="1449962340"/&gt;
+            &lt;/assignedAuthor&gt;
+          &lt;/author&gt;
+          &lt;entry&gt;
+            &lt;observation classCode="OBS" moodCode="EVN"&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;templateId root="2.16.840.1.113883.10.20.22.4.48"/&gt;
+              &lt;id root="520983100"/&gt;
+              &lt;code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
+              &lt;statusCode code="completed"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2012"/&gt;
+                &lt;high value="2012"/&gt;
+              &lt;/effectiveTime&gt;
+              &lt;languageCode/&gt;
+              &lt;author&gt;
+                &lt;time/&gt;
+                &lt;assignedAuthor&gt;
+                  &lt;id root="357114006"/&gt;
+                &lt;/assignedAuthor&gt;
+              &lt;/author&gt;
+            &lt;/observation&gt;
+          &lt;/entry&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.22.2.22"/&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.22.2.22.1"/&gt;
+          &lt;id root="829699014"/&gt;
+          &lt;code code="46240-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Encounters"/&gt;
+          &lt;title/&gt;
+          &lt;languageCode/&gt;
+          &lt;author&gt;
+            &lt;time/&gt;
+            &lt;assignedAuthor&gt;
+              &lt;id root="1994631607"/&gt;
+            &lt;/assignedAuthor&gt;
+          &lt;/author&gt;
+          &lt;entry&gt;
+            &lt;encounter classCode="ENC" moodCode="EVN"&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;templateId root="2.16.840.1.113883.10.20.22.4.49"/&gt;
+              &lt;id root="1629938977"/&gt;
+              &lt;code codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT-4"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2012"/&gt;
+                &lt;high value="2012"/&gt;
+              &lt;/effectiveTime&gt;
+              &lt;author&gt;
+                &lt;time/&gt;
+                &lt;assignedAuthor&gt;
+                  &lt;id root="529358955"/&gt;
+                &lt;/assignedAuthor&gt;
+              &lt;/author&gt;
+              &lt;entryRelationship&gt;
+                &lt;observation classCode="OBS" moodCode="EVN"&gt;
+                  &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+                  &lt;templateId root="2.16.840.1.113883.10.20.22.4.19"/&gt;
+                  &lt;id root="479121079"/&gt;
+                  &lt;code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
+                  &lt;statusCode code="completed"/&gt;
+                  &lt;effectiveTime&gt;
+                    &lt;low value="2012"/&gt;
+                    &lt;high value="2012"/&gt;
+                  &lt;/effectiveTime&gt;
+                  &lt;languageCode/&gt;
+                  &lt;author&gt;
+                    &lt;time/&gt;
+                    &lt;assignedAuthor/&gt;
+                  &lt;/author&gt;
+                &lt;/observation&gt;
+              &lt;/entryRelationship&gt;
+            &lt;/encounter&gt;
+          &lt;/entry&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.22.2.15"/&gt;
+          &lt;id root="1422485404"/&gt;
+          &lt;code code="10157-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Family History"/&gt;
+          &lt;title/&gt;
+          &lt;languageCode/&gt;
+          &lt;author&gt;
+            &lt;time/&gt;
+            &lt;assignedAuthor&gt;
+              &lt;id root="258346"/&gt;
+            &lt;/assignedAuthor&gt;
+          &lt;/author&gt;
+          &lt;entry&gt;
+            &lt;organizer classCode="CLUSTER" moodCode="EVN"&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;templateId root="2.16.840.1.113883.10.20.22.4.45"/&gt;
+              &lt;id root="1566439977"/&gt;
+              &lt;code code="1633574186"/&gt;
+              &lt;statusCode code="completed"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2012"/&gt;
+                &lt;high value="2012"/&gt;
+              &lt;/effectiveTime&gt;
+              &lt;author&gt;
+                &lt;time/&gt;
+                &lt;assignedAuthor&gt;
+                  &lt;id root="564948111"/&gt;
+                &lt;/assignedAuthor&gt;
+              &lt;/author&gt;
+              &lt;component&gt;
+                &lt;observation classCode="OBS" moodCode="EVN"&gt;
+                  &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+                  &lt;templateId root="2.16.840.1.113883.10.20.22.4.46"/&gt;
+                  &lt;id root="1435654355"/&gt;
+                  &lt;code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
+                  &lt;statusCode code="completed"/&gt;
+                  &lt;effectiveTime&gt;
+                    &lt;low value="2012"/&gt;
+                    &lt;high value="2012"/&gt;
+                  &lt;/effectiveTime&gt;
+                  &lt;languageCode/&gt;
+                  &lt;author&gt;
+                    &lt;time/&gt;
+                    &lt;assignedAuthor/&gt;
+                  &lt;/author&gt;
+                  &lt;entryRelationship&gt;
+                    &lt;observation classCode="OBS" moodCode="EVN"&gt;
+                      &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+                      &lt;templateId root="2.16.840.1.113883.10.20.22.4.31"/&gt;
+                      &lt;id root="906201560"/&gt;
+                      &lt;code code="445518008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age At Onset"/&gt;
+                      &lt;statusCode code="completed"/&gt;
+                      &lt;effectiveTime&gt;
+                        &lt;low value="2012"/&gt;
+                        &lt;high value="2012"/&gt;
+                      &lt;/effectiveTime&gt;
+                      &lt;languageCode/&gt;
+                      &lt;author/&gt;
+                    &lt;/observation&gt;
+                  &lt;/entryRelationship&gt;
+                  &lt;entryRelationship&gt;
+                    &lt;observation classCode="OBS" moodCode="EVN"&gt;
+                      &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+                      &lt;templateId root="2.16.840.1.113883.10.20.22.4.47"/&gt;
+                      &lt;id root="1962815187"/&gt;
+                      &lt;code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Assertion"/&gt;
+                      &lt;statusCode code="completed"/&gt;
+                      &lt;effectiveTime&gt;
+                        &lt;low value="2012"/&gt;
+                        &lt;high value="2012"/&gt;
+                      &lt;/effectiveTime&gt;
+                      &lt;languageCode/&gt;
+                      &lt;author/&gt;
+                    &lt;/observation&gt;
+                  &lt;/entryRelationship&gt;
+                &lt;/observation&gt;
+              &lt;/component&gt;
+            &lt;/organizer&gt;
+          &lt;/entry&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.22.2.14"/&gt;
+          &lt;id root="2118168384"/&gt;
+          &lt;code code="47420-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Functional status assessment"/&gt;
+          &lt;title/&gt;
+          &lt;languageCode/&gt;
+          &lt;author&gt;
+            &lt;time/&gt;
+            &lt;assignedAuthor&gt;
+              &lt;id root="1307472345"/&gt;
+            &lt;/assignedAuthor&gt;
+          &lt;/author&gt;
+          &lt;entry&gt;
+            &lt;observation moodCode="EVN"&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;templateId root="2.16.840.1.113883.10.20.22.4.4"/&gt;
+              &lt;id root="891789015"/&gt;
+              &lt;code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
+              &lt;statusCode code="completed"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2012"/&gt;
+                &lt;high value="2012"/&gt;
+              &lt;/effectiveTime&gt;
+              &lt;languageCode/&gt;
+              &lt;author&gt;
+                &lt;time/&gt;
+                &lt;assignedAuthor&gt;
+                  &lt;id root="637345212"/&gt;
+                &lt;/assignedAuthor&gt;
+              &lt;/author&gt;
+              &lt;entryRelationship&gt;
+                &lt;observation classCode="OBS" moodCode="EVN"&gt;
+                  &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+                  &lt;templateId root="2.16.840.1.113883.10.20.22.4.31"/&gt;
+                  &lt;id root="1544757142"/&gt;
+                  &lt;code code="445518008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Age At Onset"/&gt;
+                  &lt;statusCode code="completed"/&gt;
+                  &lt;effectiveTime&gt;
+                    &lt;low value="2012"/&gt;
+                    &lt;high value="2012"/&gt;
+                  &lt;/effectiveTime&gt;
+                  &lt;languageCode/&gt;
+                  &lt;author&gt;
+                    &lt;time/&gt;
+                    &lt;assignedAuthor/&gt;
+                  &lt;/author&gt;
+                &lt;/observation&gt;
+              &lt;/entryRelationship&gt;
+              &lt;entryRelationship&gt;
+                &lt;observation classCode="OBS" moodCode="EVN"&gt;
+                  &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+                  &lt;templateId root="2.16.840.1.113883.10.20.22.4.5"/&gt;
+                  &lt;id root="1597962175"/&gt;
+                  &lt;code code="11323-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Health status"/&gt;
+                  &lt;statusCode code="completed"/&gt;
+                  &lt;effectiveTime&gt;
+                    &lt;low value="2012"/&gt;
+                    &lt;high value="2012"/&gt;
+                  &lt;/effectiveTime&gt;
+                  &lt;languageCode/&gt;
+                  &lt;author&gt;
+                    &lt;time/&gt;
+                    &lt;assignedAuthor/&gt;
+                  &lt;/author&gt;
+                &lt;/observation&gt;
+              &lt;/entryRelationship&gt;
+              &lt;entryRelationship&gt;
+                &lt;observation classCode="OBS" moodCode="EVN"&gt;
+                  &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+                  &lt;templateId root="2.16.840.1.113883.10.20.22.4.6"/&gt;
+                  &lt;id root="1234811745"/&gt;
+                  &lt;code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/&gt;
+                  &lt;statusCode code="completed"/&gt;
+                  &lt;effectiveTime&gt;
+                    &lt;low value="2012"/&gt;
+                    &lt;high value="2012"/&gt;
+                  &lt;/effectiveTime&gt;
+                  &lt;languageCode/&gt;
+                  &lt;author&gt;
+                    &lt;time/&gt;
+                    &lt;assignedAuthor/&gt;
+                  &lt;/author&gt;
+                &lt;/observation&gt;
+              &lt;/entryRelationship&gt;
+            &lt;/observation&gt;
+          &lt;/entry&gt;
+          &lt;entry&gt;
+            &lt;observation classCode="OBS" moodCode="EVN"&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;templateId root="2.16.840.1.113883.10.20.22.4.2"/&gt;
+              &lt;id root="1322208663"/&gt;
+              &lt;code code="14167803"/&gt;
+              &lt;statusCode code="completed"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2012"/&gt;
+                &lt;high value="2012"/&gt;
+              &lt;/effectiveTime&gt;
+              &lt;languageCode/&gt;
+              &lt;author&gt;
+                &lt;time/&gt;
+                &lt;assignedAuthor&gt;
+                  &lt;id root="3057927"/&gt;
+                &lt;/assignedAuthor&gt;
+              &lt;/author&gt;
+            &lt;/observation&gt;
+          &lt;/entry&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.22.2.2"/&gt;
+          &lt;id root="743204528"/&gt;
+          &lt;code code="11369-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+          &lt;title/&gt;
+          &lt;languageCode/&gt;
+          &lt;author&gt;
+            &lt;time/&gt;
+            &lt;assignedAuthor&gt;
+              &lt;id root="331366691"/&gt;
+            &lt;/assignedAuthor&gt;
+          &lt;/author&gt;
+          &lt;entry&gt;
+            &lt;substanceAdministration classCode="SBADM" negationInd="false"&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;templateId root="2.16.840.1.113883.10.20.22.4.52"/&gt;
+              &lt;id root="1202177673"/&gt;
+              &lt;code code="1682814653"/&gt;
+              &lt;effectiveTime value="20120405"/&gt;
+              &lt;consumable/&gt;
+              &lt;author&gt;
+                &lt;time/&gt;
+                &lt;assignedAuthor&gt;
+                  &lt;id root="609605028"/&gt;
+                &lt;/assignedAuthor&gt;
+              &lt;/author&gt;
+              &lt;entryRelationship&gt;
+                &lt;observation classCode="OBS" moodCode="EVN"&gt;
+                  &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+                  &lt;templateId root="2.16.840.1.113883.10.20.22.4.19"/&gt;
+                  &lt;id root="482346812"/&gt;
+                  &lt;code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
+                  &lt;statusCode code="completed"/&gt;
+                  &lt;effectiveTime&gt;
+                    &lt;low value="2012"/&gt;
+                    &lt;high value="2012"/&gt;
+                  &lt;/effectiveTime&gt;
+                  &lt;languageCode/&gt;
+                  &lt;author&gt;
+                    &lt;time/&gt;
+                    &lt;assignedAuthor/&gt;
+                  &lt;/author&gt;
+                &lt;/observation&gt;
+              &lt;/entryRelationship&gt;
+              &lt;entryRelationship&gt;
+                &lt;act classCode="ACT" moodCode="INT"&gt;
+                  &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+                  &lt;templateId root="2.16.840.1.113883.10.20.22.4.20"/&gt;
+                  &lt;id root="420974978"/&gt;
+                  &lt;code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
+                  &lt;statusCode code="completed"/&gt;
+                  &lt;effectiveTime&gt;
+                    &lt;low value="2012"/&gt;
+                    &lt;high value="2012"/&gt;
+                  &lt;/effectiveTime&gt;
+                  &lt;languageCode/&gt;
+                  &lt;author&gt;
+                    &lt;time/&gt;
+                    &lt;assignedAuthor/&gt;
+                  &lt;/author&gt;
+                &lt;/act&gt;
+              &lt;/entryRelationship&gt;
+              &lt;entryRelationship&gt;
+                &lt;supply classCode="SPLY" moodCode="EVN"&gt;
+                  &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+                  &lt;templateId root="2.16.840.1.113883.10.20.22.4.18"/&gt;
+                  &lt;id root="2104408412"/&gt;
+                  &lt;code code="2134428049"/&gt;
+                  &lt;effectiveTime value="20120405"/&gt;
+                  &lt;author&gt;
+                    &lt;time/&gt;
+                    &lt;assignedAuthor/&gt;
+                  &lt;/author&gt;
+                  &lt;entryRelationship&gt;
+                    &lt;supply classCode="SPLY" moodCode="INT"&gt;
+                      &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+                      &lt;templateId root="2.16.840.1.113883.10.20.22.4.17"/&gt;
+                      &lt;id root="1932005979"/&gt;
+                      &lt;code code="1195048030"/&gt;
+                      &lt;effectiveTime value="20120405"/&gt;
+                      &lt;author/&gt;
+                      &lt;entryRelationship&gt;
+                        &lt;act/&gt;
+                      &lt;/entryRelationship&gt;
+                    &lt;/supply&gt;
+                  &lt;/entryRelationship&gt;
+                &lt;/supply&gt;
+              &lt;/entryRelationship&gt;
+              &lt;entryRelationship&gt;
+                &lt;observation classCode="OBS" moodCode="EVN"&gt;
+                  &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+                  &lt;templateId root="2.16.840.1.113883.10.20.22.4.9"/&gt;
+                  &lt;id root="1477590766"/&gt;
+                  &lt;code code="2079478424"/&gt;
+                  &lt;statusCode code="completed"/&gt;
+                  &lt;effectiveTime&gt;
+                    &lt;low value="2012"/&gt;
+                    &lt;high value="2012"/&gt;
+                  &lt;/effectiveTime&gt;
+                  &lt;languageCode/&gt;
+                  &lt;author&gt;
+                    &lt;time/&gt;
+                    &lt;assignedAuthor/&gt;
+                  &lt;/author&gt;
+                  &lt;entryRelationship&gt;
+                    &lt;observation classCode="OBS" moodCode="EVN"&gt;
+                      &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+                      &lt;templateId root="2.16.840.1.113883.10.20.22.4.8"/&gt;
+                      &lt;id root="364547182"/&gt;
+                      &lt;code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Severity observation"/&gt;
+                      &lt;statusCode code="completed"/&gt;
+                      &lt;effectiveTime&gt;
+                        &lt;low value="2012"/&gt;
+                        &lt;high value="2012"/&gt;
+                      &lt;/effectiveTime&gt;
+                      &lt;languageCode/&gt;
+                      &lt;interpretationCode codeSystem="2.16.840.1.113883.5.83" codeSystemName="ObservationInterpretation"/&gt;
+                      &lt;author/&gt;
+                    &lt;/observation&gt;
+                  &lt;/entryRelationship&gt;
+                  &lt;entryRelationship&gt;
+                    &lt;procedure classCode="PROC"&gt;
+                      &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+                      &lt;templateId root="2.16.840.1.113883.10.20.22.4.14"/&gt;
+                      &lt;id root="1762372621"/&gt;
+                      &lt;code code="1661480533"/&gt;
+                      &lt;effectiveTime&gt;
+                        &lt;low value="2012"/&gt;
+                        &lt;high value="2012"/&gt;
+                      &lt;/effectiveTime&gt;
+                      &lt;languageCode/&gt;
+                      &lt;targetSiteCode codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
+                      &lt;author/&gt;
+                      &lt;entryRelationship&gt;
+                        &lt;observation/&gt;
+                      &lt;/entryRelationship&gt;
+                      &lt;entryRelationship&gt;
+                        &lt;substanceAdministration classCode="SBADM"/&gt;
+                      &lt;/entryRelationship&gt;
+                      &lt;entryRelationship&gt;
+                        &lt;act/&gt;
+                      &lt;/entryRelationship&gt;
+                      &lt;entryRelationship&gt;
+                        &lt;encounter/&gt;
+                      &lt;/entryRelationship&gt;
+                    &lt;/procedure&gt;
+                  &lt;/entryRelationship&gt;
+                  &lt;entryRelationship&gt;
+                    &lt;substanceAdministration classCode="SBADM"&gt;
+                      &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+                      &lt;templateId root="2.16.840.1.113883.10.20.22.4.16"/&gt;
+                      &lt;id root="429639657"/&gt;
+                      &lt;code code="916821412"/&gt;
+                      &lt;effectiveTime value="20120405"/&gt;
+                      &lt;administrationUnitCode codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/&gt;
+                      &lt;consumable/&gt;
+                      &lt;author/&gt;
+                      &lt;entryRelationship&gt;
+                        &lt;supply classCode="SPLY"/&gt;
+                      &lt;/entryRelationship&gt;
+                      &lt;entryRelationship&gt;
+                        &lt;observation/&gt;
+                      &lt;/entryRelationship&gt;
+                      &lt;entryRelationship&gt;
+                        &lt;act/&gt;
+                      &lt;/entryRelationship&gt;
+                      &lt;entryRelationship&gt;
+                        &lt;observation/&gt;
+                      &lt;/entryRelationship&gt;
+                      &lt;entryRelationship&gt;
+                        &lt;supply classCode="SPLY"/&gt;
+                      &lt;/entryRelationship&gt;
+                    &lt;/substanceAdministration&gt;
+                  &lt;/entryRelationship&gt;
+                &lt;/observation&gt;
+              &lt;/entryRelationship&gt;
+              &lt;entryRelationship&gt;
+                &lt;observation classCode="OBS" moodCode="EVN"&gt;
+                  &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+                  &lt;templateId root="2.16.840.1.113883.10.20.22.4.53"/&gt;
+                  &lt;id root="170870203"/&gt;
+                  &lt;code codeSystem="2.16.840.1.113883.5.8" codeSystemName="ActReason"/&gt;
+                  &lt;statusCode code="completed"/&gt;
+                  &lt;effectiveTime&gt;
+                    &lt;low value="2012"/&gt;
+                    &lt;high value="2012"/&gt;
+                  &lt;/effectiveTime&gt;
+                  &lt;languageCode/&gt;
+                  &lt;author&gt;
+                    &lt;time/&gt;
+                    &lt;assignedAuthor/&gt;
+                  &lt;/author&gt;
+                &lt;/observation&gt;
+              &lt;/entryRelationship&gt;
+              &lt;entryRelationship&gt;
+                &lt;supply classCode="SPLY" moodCode="INT"&gt;
+                  &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+                  &lt;templateId root="2.16.840.1.113883.10.20.22.4.17"/&gt;
+                  &lt;id root="1713263958"/&gt;
+                  &lt;code code="1627459932"/&gt;
+                  &lt;effectiveTime value="20120405"/&gt;
+                  &lt;author&gt;
+                    &lt;time/&gt;
+                    &lt;assignedAuthor/&gt;
+                  &lt;/author&gt;
+                  &lt;entryRelationship&gt;
+                    &lt;act classCode="ACT" moodCode="INT"&gt;
+                      &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+                      &lt;templateId root="2.16.840.1.113883.10.20.22.4.20"/&gt;
+                      &lt;id root="1680085252"/&gt;
+                      &lt;code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
+                      &lt;statusCode code="completed"/&gt;
+                      &lt;effectiveTime&gt;
+                        &lt;low value="2012"/&gt;
+                        &lt;high value="2012"/&gt;
+                      &lt;/effectiveTime&gt;
+                      &lt;languageCode/&gt;
+                      &lt;author/&gt;
+                    &lt;/act&gt;
+                  &lt;/entryRelationship&gt;
+                &lt;/supply&gt;
+              &lt;/entryRelationship&gt;
+            &lt;/substanceAdministration&gt;
+          &lt;/entry&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.22.2.23"/&gt;
+          &lt;id root="1401176266"/&gt;
+          &lt;code code="46264-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Medical Equipment"/&gt;
+          &lt;title/&gt;
+          &lt;languageCode/&gt;
+          &lt;author&gt;
+            &lt;time/&gt;
+            &lt;assignedAuthor&gt;
+              &lt;id root="1812122552"/&gt;
+            &lt;/assignedAuthor&gt;
+          &lt;/author&gt;
+          &lt;entry&gt;
+            &lt;supply classCode="SPLY"&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;templateId root="2.16.840.1.113883.10.20.22.4.50"/&gt;
+              &lt;id root="771756069"/&gt;
+              &lt;code code="1575334544"/&gt;
+              &lt;effectiveTime value="20120405"/&gt;
+              &lt;author&gt;
+                &lt;time/&gt;
+                &lt;assignedAuthor&gt;
+                  &lt;id root="1342337325"/&gt;
+                &lt;/assignedAuthor&gt;
+              &lt;/author&gt;
+            &lt;/supply&gt;
+          &lt;/entry&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.22.2.18"/&gt;
+          &lt;id root="1695998255"/&gt;
+          &lt;code code="48768-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Payers"/&gt;
+          &lt;title/&gt;
+          &lt;languageCode/&gt;
+          &lt;author&gt;
+            &lt;time/&gt;
+            &lt;assignedAuthor&gt;
+              &lt;id root="1939251824"/&gt;
+            &lt;/assignedAuthor&gt;
+          &lt;/author&gt;
+          &lt;entry&gt;
+            &lt;act classCode="ACT" moodCode="EVN"&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;templateId root="2.16.840.1.113883.10.20.22.4.60"/&gt;
+              &lt;id root="950508828"/&gt;
+              &lt;code code="48768-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Payment Sources"/&gt;
+              &lt;statusCode code="completed"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2012"/&gt;
+                &lt;high value="2012"/&gt;
+              &lt;/effectiveTime&gt;
+              &lt;languageCode/&gt;
+              &lt;author&gt;
+                &lt;time/&gt;
+                &lt;assignedAuthor&gt;
+                  &lt;id root="776140194"/&gt;
+                &lt;/assignedAuthor&gt;
+              &lt;/author&gt;
+              &lt;entryRelationship&gt;
+                &lt;act classCode="ACT" moodCode="EVN"&gt;
+                  &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+                  &lt;templateId root="2.16.840.1.113883.10.20.22.4.61"/&gt;
+                  &lt;id root="1528171813"/&gt;
+                  &lt;code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+                  &lt;statusCode code="completed"/&gt;
+                  &lt;effectiveTime&gt;
+                    &lt;low value="2012"/&gt;
+                    &lt;high value="2012"/&gt;
+                  &lt;/effectiveTime&gt;
+                  &lt;languageCode/&gt;
+                  &lt;author&gt;
+                    &lt;time/&gt;
+                    &lt;assignedAuthor/&gt;
+                  &lt;/author&gt;
+                  &lt;entryRelationship&gt;
+                    &lt;act classCode="ACT" moodCode="EVN"&gt;
+                      &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+                      &lt;templateId root="2.16.840.1.113883.10.20.1.19"/&gt;
+                      &lt;id root="578644765"/&gt;
+                      &lt;code code="615650241"/&gt;
+                      &lt;effectiveTime&gt;
+                        &lt;low value="2012"/&gt;
+                        &lt;high value="2012"/&gt;
+                      &lt;/effectiveTime&gt;
+                      &lt;languageCode/&gt;
+                      &lt;author/&gt;
+                    &lt;/act&gt;
+                  &lt;/entryRelationship&gt;
+                &lt;/act&gt;
+              &lt;/entryRelationship&gt;
+            &lt;/act&gt;
+          &lt;/entry&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.22.2.10"/&gt;
+          &lt;id root="438219340"/&gt;
+          &lt;code code="18776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treatment plan"/&gt;
+          &lt;title/&gt;
+          &lt;languageCode/&gt;
+          &lt;author&gt;
+            &lt;time/&gt;
+            &lt;assignedAuthor&gt;
+              &lt;id root="386040940"/&gt;
+            &lt;/assignedAuthor&gt;
+          &lt;/author&gt;
+          &lt;entry&gt;
+            &lt;act classCode="ACT"&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;templateId root="2.16.840.1.113883.10.20.22.4.39"/&gt;
+              &lt;id root="1979654312"/&gt;
+              &lt;code code="821777943"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2012"/&gt;
+                &lt;high value="2012"/&gt;
+              &lt;/effectiveTime&gt;
+              &lt;languageCode/&gt;
+              &lt;author&gt;
+                &lt;time/&gt;
+                &lt;assignedAuthor&gt;
+                  &lt;id root="566746087"/&gt;
+                &lt;/assignedAuthor&gt;
+              &lt;/author&gt;
+            &lt;/act&gt;
+          &lt;/entry&gt;
+          &lt;entry&gt;
+            &lt;encounter classCode="ENC"&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;templateId root="2.16.840.1.113883.10.20.22.4.40"/&gt;
+              &lt;id root="2139909510"/&gt;
+              &lt;code code="1058475791"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2012"/&gt;
+                &lt;high value="2012"/&gt;
+              &lt;/effectiveTime&gt;
+              &lt;author&gt;
+                &lt;time/&gt;
+                &lt;assignedAuthor&gt;
+                  &lt;id root="642659121"/&gt;
+                &lt;/assignedAuthor&gt;
+              &lt;/author&gt;
+            &lt;/encounter&gt;
+          &lt;/entry&gt;
+          &lt;entry&gt;
+            &lt;observation classCode="OBS"&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;templateId root="2.16.840.1.113883.10.20.1.25"/&gt;
+              &lt;id root="1529596545"/&gt;
+              &lt;code code="1191914440"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2012"/&gt;
+                &lt;high value="2012"/&gt;
+              &lt;/effectiveTime&gt;
+              &lt;languageCode/&gt;
+              &lt;author&gt;
+                &lt;time/&gt;
+                &lt;assignedAuthor&gt;
+                  &lt;id root="2078885514"/&gt;
+                &lt;/assignedAuthor&gt;
+              &lt;/author&gt;
+            &lt;/observation&gt;
+          &lt;/entry&gt;
+          &lt;entry&gt;
+            &lt;procedure classCode="PROC"&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;templateId root="2.16.840.1.113883.10.20.22.4.41"/&gt;
+              &lt;id root="1697846466"/&gt;
+              &lt;code code="1818019134"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2012"/&gt;
+                &lt;high value="2012"/&gt;
+              &lt;/effectiveTime&gt;
+              &lt;languageCode/&gt;
+              &lt;author&gt;
+                &lt;time/&gt;
+                &lt;assignedAuthor&gt;
+                  &lt;id root="1430211353"/&gt;
+                &lt;/assignedAuthor&gt;
+              &lt;/author&gt;
+            &lt;/procedure&gt;
+          &lt;/entry&gt;
+          &lt;entry&gt;
+            &lt;substanceAdministration classCode="SBADM"&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;templateId root="2.16.840.1.113883.10.20.1.25"/&gt;
+              &lt;id root="2053324500"/&gt;
+              &lt;code code="1463944016"/&gt;
+              &lt;effectiveTime value="20120405"/&gt;
+              &lt;consumable/&gt;
+              &lt;author&gt;
+                &lt;time/&gt;
+                &lt;assignedAuthor&gt;
+                  &lt;id root="403678687"/&gt;
+                &lt;/assignedAuthor&gt;
+              &lt;/author&gt;
+            &lt;/substanceAdministration&gt;
+          &lt;/entry&gt;
+          &lt;entry&gt;
+            &lt;supply classCode="SPLY"&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;templateId root="2.16.840.1.113883.10.20.22.4.43"/&gt;
+              &lt;id root="1806727551"/&gt;
+              &lt;code code="1248164020"/&gt;
+              &lt;effectiveTime value="20120405"/&gt;
+              &lt;author&gt;
+                &lt;time/&gt;
+                &lt;assignedAuthor&gt;
+                  &lt;id root="269652406"/&gt;
+                &lt;/assignedAuthor&gt;
+              &lt;/author&gt;
+            &lt;/supply&gt;
+          &lt;/entry&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.22.2.17"/&gt;
+          &lt;id root="962583230"/&gt;
+          &lt;code code="29762-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Social history"/&gt;
+          &lt;title/&gt;
+          &lt;languageCode/&gt;
+          &lt;author&gt;
+            &lt;time/&gt;
+            &lt;assignedAuthor&gt;
+              &lt;id root="1197609541"/&gt;
+            &lt;/assignedAuthor&gt;
+          &lt;/author&gt;
+          &lt;entry&gt;
+            &lt;observation classCode="OBS" moodCode="EVN"&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;templateId root="2.16.840.1.113883.10.20.22.4.38"/&gt;
+              &lt;id root="185044114"/&gt;
+              &lt;code codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT"/&gt;
+              &lt;statusCode code="completed"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2012"/&gt;
+                &lt;high value="2012"/&gt;
+              &lt;/effectiveTime&gt;
+              &lt;languageCode/&gt;
+              &lt;author&gt;
+                &lt;time/&gt;
+                &lt;assignedAuthor&gt;
+                  &lt;id root="829479908"/&gt;
+                &lt;/assignedAuthor&gt;
+              &lt;/author&gt;
+            &lt;/observation&gt;
+          &lt;/entry&gt;
+          &lt;entry&gt;
+            &lt;observation classCode="OBS" moodCode="EVN"&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;templateId root="2.16.840.1.113883.10.20.15.3.8"/&gt;
+              &lt;id root="707232030"/&gt;
+              &lt;code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Assertion"/&gt;
+              &lt;statusCode code="completed"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2012"/&gt;
+                &lt;high value="2012"/&gt;
+              &lt;/effectiveTime&gt;
+              &lt;languageCode/&gt;
+              &lt;author&gt;
+                &lt;time/&gt;
+                &lt;assignedAuthor&gt;
+                  &lt;id root="1799636180"/&gt;
+                &lt;/assignedAuthor&gt;
+              &lt;/author&gt;
+              &lt;entryRelationship&gt;
+                &lt;observation classCode="OBS" moodCode="EVN"&gt;
+                  &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+                  &lt;templateId root="2.16.840.1.113883.10.20.15.3.1"/&gt;
+                  &lt;id root="1476367931"/&gt;
+                  &lt;code code="11778-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+                  &lt;statusCode code="completed"/&gt;
+                  &lt;effectiveTime&gt;
+                    &lt;low value="2012"/&gt;
+                    &lt;high value="2012"/&gt;
+                  &lt;/effectiveTime&gt;
+                  &lt;languageCode/&gt;
+                  &lt;author&gt;
+                    &lt;time/&gt;
+                    &lt;assignedAuthor/&gt;
+                  &lt;/author&gt;
+                &lt;/observation&gt;
+              &lt;/entryRelationship&gt;
+            &lt;/observation&gt;
+          &lt;/entry&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+      &lt;component&gt;
+        &lt;section&gt;
+          &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+          &lt;templateId root="2.16.840.1.113883.10.20.22.2.4"/&gt;
+          &lt;id root="407474086"/&gt;
+          &lt;code code="8716-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+          &lt;title/&gt;
+          &lt;languageCode/&gt;
+          &lt;author&gt;
+            &lt;time/&gt;
+            &lt;assignedAuthor&gt;
+              &lt;id root="647394945"/&gt;
+            &lt;/assignedAuthor&gt;
+          &lt;/author&gt;
+          &lt;entry&gt;
+            &lt;organizer classCode="CLUSTER" moodCode="EVN"&gt;
+              &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+              &lt;templateId root="2.16.840.1.113883.10.20.22.4.26"/&gt;
+              &lt;id root="456708265"/&gt;
+              &lt;code code="46680005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Vital signs"/&gt;
+              &lt;statusCode code="completed"/&gt;
+              &lt;effectiveTime&gt;
+                &lt;low value="2012"/&gt;
+                &lt;high value="2012"/&gt;
+              &lt;/effectiveTime&gt;
+              &lt;author&gt;
+                &lt;time/&gt;
+                &lt;assignedAuthor&gt;
+                  &lt;id root="1463012386"/&gt;
+                &lt;/assignedAuthor&gt;
+              &lt;/author&gt;
+              &lt;component&gt;
+                &lt;observation classCode="OBS" moodCode="EVN"&gt;
+                  &lt;typeId root="2.16.840.1.113883.1.3"/&gt;
+                  &lt;templateId root="2.16.840.1.113883.10.20.22.4.27"/&gt;
+                  &lt;id root="1048380910"/&gt;
+                  &lt;code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/&gt;
+                  &lt;statusCode code="completed"/&gt;
+                  &lt;effectiveTime&gt;
+                    &lt;low value="2012"/&gt;
+                    &lt;high value="2012"/&gt;
+                  &lt;/effectiveTime&gt;
+                  &lt;languageCode/&gt;
+                  &lt;author&gt;
+                    &lt;time/&gt;
+                    &lt;assignedAuthor/&gt;
+                  &lt;/author&gt;
+                &lt;/observation&gt;
+              &lt;/component&gt;
+            &lt;/organizer&gt;
+          &lt;/entry&gt;
+        &lt;/section&gt;
+      &lt;/component&gt;
+    &lt;/structuredBody&gt;
+  &lt;/component&gt;
+&lt;/ClinicalDocument&gt;</pre>
+
+			</div>
+
+		</div>
+	
+	</div>
+
+
+</body>
+</html>

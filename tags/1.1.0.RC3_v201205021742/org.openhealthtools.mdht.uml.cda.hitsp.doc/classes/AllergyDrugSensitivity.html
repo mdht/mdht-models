@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xml:lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="Allergy Drug Sensitivity"/>
+<meta name="abstract" content="[Act: templateId 2.16.840.1.113883.3.88.11.83.6]"/>
+<meta name="description" content="[Act: templateId 2.16.840.1.113883.3.88.11.83.6]"/>
+<meta name="DC.Coverage" content="Act"/>
+<meta name="DC.Relation" scheme="URI" content="../content/ClinicalStatementTemplates.html"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="classId"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
+<title>Allergy Drug Sensitivity</title>
+</head>
+<body id="classId"><a name="classId"><!-- --></a>
+<div>
+	<p><b>Development Only.</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
+</div>
+
+<h1 class="title topictitle1">Allergy Drug Sensitivity</h1>
+
+
+
+<div class="body"><p class="shortdesc">[Act: templateId <tt class="ph tt">2.16.840.1.113883.3.88.11.83.6</tt>]</p>
+
+
+<div class="section">
+<p class="p">
+    This module contains the allergy or intolerance conditions and the associated adverse reactions suffered
+    by the patient. See the HL7 Continuity of Care Document Section 3.8 for constraints applicable to this module. 
+</p>
+
+</div>
+
+
+
+<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ihe.doc/classes/AllergyIntoleranceConcern.html">IHE Allergy Intolerance Concern</a> template (templateId: <tt class="ph tt">1.3.6.1.4.1.19376.1.5.3.1.4.5.3</tt>) (C83-[DE-6-CDA-2])</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> satisfy: the observation/effectiveTime element is present to record event date<ul class="ul"><li class="li">This is a date that expresses when this particular
+allergy or intolerance was known to be active for the
+patient</li>
+</ul>
+<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getObservations()-&gt;exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and not obs.effectiveTime.oclIsUndefined())</pre>
+</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: the observation/code element shall be present to record the adverse event type<ul class="ul"><li class="li">Describes the type of product and intolerance suffered
+by the patient. The type of product shall be classified
+with respect to whether the adverse event occurs in
+relationship with a medication, food, or environmental
+or other product. The adverse event should also be
+classified more specifically as an allergy, non-allergy
+intolerance, or just adverse reaction if that level of
+detail is not known</li>
+</ul>
+<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getObservations()-&gt;exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and not obs.code.oclIsUndefined())</pre>
+</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: the code/@code attribute value is from Allergy/Adverse Event Type Value Set, 2.16.840.1.113883.3.88.12.3221.6.2, version: 20081218, Static (C154-[DE-6.02-1])<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getObservations()-&gt;exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and not obs.code.oclIsUndefined() and obs.code.codeSystem = '2.16.840.1.113883.6.96' and (obs.code.code = '420134006' or obs.code.code ='418038007' or obs.code.code='419511003' or obs.code.code='418471000' or obs.code.code='419199007' or obs.code.code='416098002' or obs.code.code='414285001' or obs.code.code='59037007' or obs.code.code='235719002'))</pre>
+</li>
+</ul>
+</li>
+
+<li class="li">the observation/participant element <strong class="ph b">SHOULD</strong> be present<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getObservations()-&gt;exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and 
+obs.participant-&gt;exists( par : cda::Participant2 | not par.oclIsUndefined()))</pre>
+</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: the participant/@typecode attribute shall be 'CSM'<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getObservations()-&gt;exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and 
+obs.participant-&gt;exists( par : cda::Participant2 | not par.oclIsUndefined() implies par.typeCode = vocab::ParticipationType::CSM))</pre>
+</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: the participant/participantRole element may be present<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getObservations()-&gt;exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and 
+obs.participant-&gt;exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole-&gt;exists(prole : cda::ParticipantRole | not prole.oclIsUndefined()))))</pre>
+</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: the participant/participantRole/@classcode attribute shall be 'MANU'<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getObservations()-&gt;exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and 
+obs.participant-&gt;exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole-&gt;exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and 
+prole.classCode=vocab::RoleClassRoot::MANU))))</pre>
+</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: The participant/participantRole/PlayingEntity element may be present<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getObservations()-&gt;exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and 
+obs.participant-&gt;exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode =vocab::ParticipationType::CSM and par.participantRole-&gt;exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and 
+prole.classCode=vocab::RoleClassRoot::MANU and prole.playingEntity-&gt;exists( playe : cda::PlayingEntity | not playe.oclIsUndefined())))))</pre>
+</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: the participant/participantRole/playingEntity/@classcode attribute shall be 'MMAT'<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getObservations()-&gt;exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and 
+obs.participant-&gt;exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode =vocab::ParticipationType::CSM and par.participantRole-&gt;exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and 
+prole.classCode=vocab::RoleClassRoot::MANU and prole.playingEntity-&gt;exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode =vocab::EntityClassRoot::MMAT )))))</pre>
+</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: the participant/participantRole/playingEntity/name element is present<ul class="ul"><li class="li">This is the name or other description of the product or
+agent that causes the intolerance</li>
+</ul>
+<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getObservations()-&gt;exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and 
+obs.participant-&gt;exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole-&gt;exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and 
+prole.classCode=vocab::RoleClassRoot::MANU and prole.playingEntity-&gt;exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = vocab::EntityClassRoot::MMAT and playe.name-&gt;size() = 1)))))</pre>
+</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> satisfy: participant/participantRole/playingEntity/code element is present<ul class="ul"><li class="li">This value is a code describing the product</li>
+</ul>
+<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getObservations()-&gt;exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and 
+obs.participant-&gt;exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole-&gt;exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and 
+prole.classCode=vocab::RoleClassRoot::MANU and prole.playingEntity-&gt;exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = vocab::EntityClassRoot::MMAT and playe.code-&gt;size() = 1)))))</pre>
+</li>
+</ul>
+</li>
+
+<li class="li">For participant/participantRole/playingEntity/code element, Food and substance allergies <strong class="ph b">SHALL</strong> be coded as Ingredient Name Value Set, 2.16.840.1.113883.3.88.12.80.20, Dynamic (C154-[DE-6.04-1])<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getObservations()-&gt;exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and 
+obs.participant-&gt;exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole-&gt;exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and 
+prole.classCode= vocab::RoleClassRoot::MANU and prole.playingEntity-&gt;exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = vocab::EntityClassRoot::MMAT and playe.code-&gt;size() = 1 and (playe.code.codeSystem =
+'2.16.840.1.113883.4.9' or playe.code.codeSystem = '2.16.840.1.113883.3.26.1.5' or playe.code.codeSystem = '2.16.840.1.113883.6.88'))))))</pre>
+</li>
+</ul>
+</li>
+
+<li class="li">For participant/participantRole/playingEntity/code element, Allergies to a class of medication <strong class="ph b">SHALL</strong> be coded as Medication Drug Class Value Set, 2.16.840.1.113883.3.88.12.80.17, version: 20081218, Dynamic (C154-[DE-6.04-2])<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getObservations()-&gt;exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and 
+obs.participant-&gt;exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole-&gt;exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and 
+prole.classCode= vocab::RoleClassRoot::MANU and prole.playingEntity-&gt;exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = vocab::EntityClassRoot::MMAT and playe.code-&gt;size() = 1 and (playe.code.codeSystem =
+'2.16.840.1.113883.4.9' or playe.code.codeSystem = '2.16.840.1.113883.3.26.1.5' or playe.code.codeSystem = '2.16.840.1.113883.6.88'))))))</pre>
+</li>
+</ul>
+</li>
+
+<li class="li">For participant/participantRole/playingEntity/code element, Allergies to a specific medication <strong class="ph b">SHALL</strong> be coded with Medication Brand Name Value Set, 2.16.840.1.113883.3.88.12.80.16, version: 20081218, Dynamic (C154-[DE-6.04-3])<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getObservations()-&gt;exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and 
+obs.participant-&gt;exists( par : cda::Participant2 | not par.oclIsUndefined() implies (par.typeCode = vocab::ParticipationType::CSM and par.participantRole-&gt;exists(prole : cda::ParticipantRole | not prole.oclIsUndefined() and 
+prole.classCode= vocab::RoleClassRoot::MANU and prole.playingEntity-&gt;exists( playe : cda::PlayingEntity | not playe.oclIsUndefined() and playe.classCode = vocab::EntityClassRoot::MMAT and playe.code-&gt;size() = 1 and (playe.code.codeSystem =
+'2.16.840.1.113883.4.9' or playe.code.codeSystem = '2.16.840.1.113883.3.26.1.5' or playe.code.codeSystem = '2.16.840.1.113883.6.88'))))))</pre>
+</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> satisfy: the text element is present in the Reaction Observation entry<ul class="ul"><li class="li">This is the reaction that may be caused by the product
+or agent</li>
+</ul>
+<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getObservations()-&gt;exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and obs.getObservations()-&gt;exists(o : cda::Observation | o.oclIsKindOf(ccd::ReactionObservation) and not o.text.oclIsUndefined()))</pre>
+</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> satisfy: the code element is present in the Reaction Observation entry<ul class="ul"><li class="li">This value is a code describing the reaction</li>
+</ul>
+<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getObservations()-&gt;exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and obs.getObservations()-&gt;exists(o : cda::Observation | o.oclIsKindOf(ccd::ReactionObservation) and not o.code.oclIsUndefined()))</pre>
+</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: the code element is coded as Problem Value Set, 2.16.840.1.113883.3.88.12.3221.7.4, version: 20100125, Dynamic (C154-[DE-6.06-1])<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getObservations()-&gt;exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and obs.getObservations()-&gt;exists(o : cda::Observation | o.oclIsKindOf(ccd::ReactionObservation) and not o.code.oclIsUndefined() and o.code.codeSystem = '2.16.840.1.113883.6.96' and (o.code.code = '404684003' or o.code.code = '243796009')))</pre>
+</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> satisfy: The text element is present in the Severity Observation template<ul class="ul"><li class="li">This is a description of the level of severity of the
+allergy or intolerance</li>
+</ul>
+<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getObservations()-&gt;exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and obs.getObservations()-&gt;exists(o : cda::Observation | o.oclIsKindOf(ccd::SeverityObservation) and not o.text.oclIsUndefined()))</pre>
+</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> satisfy: the code element is present in the Severity Observation entry<ul class="ul"><li class="li">This value is a code describing the level severity of
+the allergy or intolerance</li>
+</ul>
+<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getObservations()-&gt;exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and obs.getObservations()-&gt;exists(o : cda::Observation | o.oclIsKindOf(ccd::SeverityObservation) and not o.code.oclIsUndefined()))</pre>
+</li>
+</ul>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> satisfy: the code element is coded as Problem Severity Value Set, 2.16.840.1.113883.3.88.12.3221.6.8, version: 20081218, Static (C154-[DE-6.08-1])<ul class="ul"><li class="li"><pre class="pre codeblock">[OCL]: self.getObservations()-&gt;exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation) and obs.getObservations()-&gt;exists(o : cda::Observation | o.oclIsKindOf(ccd::SeverityObservation) and not o.code.oclIsUndefined() and o.code.codeSystem = '2.16.840.1.113883.6.96' and (o.code.code = '255604002' or o.code.code = '371923003' or o.code.code = '6736007' or o.code.code = '371924009' or o.code.code = '24484000' or o.code.code = '399166001')))</pre>
+</li>
+</ul>
+</li>
+
+</ol>
+
+
+<p class="p"> </p>
+
+<p class="p"><strong class="ph b">Allergy Drug Sensitivity example</strong></p>
+
+
+
+<pre class="pre codeblock">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;act xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="ACT" moodCode="EVN"&gt;
+  &lt;templateId root="2.16.840.1.113883.10.20.1.27"/&gt;
+  &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.1"/&gt;
+  &lt;templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.3"/&gt;
+  &lt;templateId root="2.16.840.1.113883.3.88.11.83.6"/&gt;
+  &lt;id root="829770452"/&gt;
+  &lt;code nullFlavor="NA"/&gt;
+  &lt;statusCode code="completed"/&gt;
+  &lt;effectiveTime&gt;
+    &lt;low value="2011"/&gt;
+    &lt;high value="2011"/&gt;
+  &lt;/effectiveTime&gt;
+&lt;/act&gt;</pre>
+
+</div>
+
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../content/ClinicalStatementTemplates.html">CLINICAL STATEMENT TEMPLATES</a></div>
+</div>
+</div>
+
+</body>
+</html>
