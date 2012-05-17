@@ -46,6 +46,10 @@
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_0NOq8DMYEeGXS8s8x7j2Fg" name="Body Site"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_swk2sDMZEeGXS8s8x7j2Fg" name="Drug Susceptibility Test Result Name"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_4uCuQDMZEeGXS8s8x7j2Fg" name="Observation Interpretation (HL7)"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_djJRQJ-YEeGpRtS_7CxGlA" name="Relevant Medical Condition Type">
+      <ownedLiteral xmi:id="_kT3-MJ-YEeGpRtS_7CxGlA" name="398192003"/>
+      <ownedLiteral xmi:id="_oyISMJ-YEeGpRtS_7CxGlA" name="370391006"/>
+    </packagedElement>
     <profileApplication xmi:id="_H1PoACF_Ed-M3adQxwHq4g">
       <eAnnotations xmi:id="_H1Q2ICF_Ed-M3adQxwHq4g" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
@@ -306,90 +310,86 @@
   <term:ValueSetCode xmi:id="_F1lVLSp7EeGv5qjnXu9Ufw" conceptName="Non-productive cough" usageNote="SNOMED-CT"/>
   <term:ValueSetCode xmi:id="_F1lVLyp7EeGv5qjnXu9Ufw" conceptName="Productive cough" usageNote="SNOMED-CT"/>
   <term:ValueSetCode xmi:id="_F1lVMSp7EeGv5qjnXu9Ufw" conceptName="Weight loss finding" usageNote="SNOMED-CT"/>
-  <term:ValueSetVersion xmi:id="_UVxoISp7EeGv5qjnXu9Ufw" identifier="2.16.840.1.114222.4.11.837" fullName="Ethnicity Group" source="PHIN VADS" url="https://phinvads.cdc.gov/vads/ViewValueSet.action?id=35D34BBC-617F-DD11-B38D-00188B398520" definition="Whether the patient is hispanic or not" binding="Dynamic" base_Enumeration="_UVxoICp7EeGv5qjnXu9Ufw">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dfdYoKDqEd-dVeaMP0XXQw"/>
-  </term:ValueSetVersion>
+  <term:ValueSetVersion xmi:id="_UVxoISp7EeGv5qjnXu9Ufw" identifier="2.16.840.1.114222.4.11.837" fullName="Ethnicity Group" source="PHIN VADS" url="https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.837" definition="Whether the patient is hispanic or not" binding="Dynamic" base_Enumeration="_UVxoICp7EeGv5qjnXu9Ufw"/>
   <term:ValueSetVersion xmi:id="_nC0goSp8EeGv5qjnXu9Ufw" identifier="2.16.840.1.114222.4.11.876" version="1" fullName="Detailed Race" definition="Specific race codes reported on a limited basis" revisionDate="10/22/2008">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dfdYoKDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
-  <term:ValueSetCode xmi:id="_snjUgSp8EeGv5qjnXu9Ufw" conceptName="Hispanic or Latino" base_EnumerationLiteral="_snjUgCp8EeGv5qjnXu9Ufw">
+  <term:ValueSetCode xmi:id="_snjUgSp8EeGv5qjnXu9Ufw" conceptName="Hispanic or Latino" usageNote="Race and Ethnicity - CDC" base_EnumerationLiteral="_snjUgCp8EeGv5qjnXu9Ufw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dfdYoKDqEd-dVeaMP0XXQw"/>
   </term:ValueSetCode>
-  <term:ValueSetCode xmi:id="_02dPoSp8EeGv5qjnXu9Ufw" conceptName="Not Hispanic or Latino" base_EnumerationLiteral="_02dPoCp8EeGv5qjnXu9Ufw">
+  <term:ValueSetCode xmi:id="_02dPoSp8EeGv5qjnXu9Ufw" conceptName="Not Hispanic or Latino" usageNote="Race and Ethnicity - CDC" base_EnumerationLiteral="_02dPoCp8EeGv5qjnXu9Ufw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dfdYoKDqEd-dVeaMP0XXQw"/>
   </term:ValueSetCode>
-  <term:ValueSetVersion xmi:id="_Fd_NICp-EeGv5qjnXu9Ufw" identifier="2.16.840.1.114222.4.11.3209" fullName="Exposure Location" source="PHIN VADS" url="https://phinvads.cdc.gov/vads/ViewValueSet.action?id=9BE75E17-176B-DE11-9B52-0015173D1785" definition="Locations that have been identified by public health departments as locations that have been associated with higher risk of coming into contact with infectious diseases such as tuberculosis and Hepatitis B" revisionDate="07/07/2009" binding="Dynamic" base_Enumeration="_FbAKkCp-EeGv5qjnXu9Ufw"/>
-  <term:ValueSetCode xmi:id="_Fd_NIip-EeGv5qjnXu9Ufw" conceptName="College" base_EnumerationLiteral="_Fd_NISp-EeGv5qjnXu9Ufw">
+  <term:ValueSetVersion xmi:id="_Fd_NICp-EeGv5qjnXu9Ufw" identifier="2.16.840.1.114222.4.11.3209" fullName="Exposure Location" source="PHIN VADS" url="https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.3209" definition="Locations that have been identified by public health departments as locations that have been associated with higher risk of coming into contact with infectious diseases such as tuberculosis and Hepatitis B" revisionDate="07/07/2009" binding="Dynamic" base_Enumeration="_FbAKkCp-EeGv5qjnXu9Ufw"/>
+  <term:ValueSetCode xmi:id="_Fd_NIip-EeGv5qjnXu9Ufw" conceptName="College" usageNote="SNOMEDCT" base_EnumerationLiteral="_Fd_NISp-EeGv5qjnXu9Ufw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetCode>
-  <term:ValueSetCode xmi:id="_Fd_NJCp-EeGv5qjnXu9Ufw" conceptName="Community environment" base_EnumerationLiteral="_Fd_NIyp-EeGv5qjnXu9Ufw">
+  <term:ValueSetCode xmi:id="_Fd_NJCp-EeGv5qjnXu9Ufw" conceptName="Community environment" usageNote="SNOMEDCT" base_EnumerationLiteral="_Fd_NIyp-EeGv5qjnXu9Ufw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetCode>
-  <term:ValueSetCode xmi:id="_Fd_NJip-EeGv5qjnXu9Ufw" conceptName="Day care center" base_EnumerationLiteral="_Fd_NJSp-EeGv5qjnXu9Ufw">
+  <term:ValueSetCode xmi:id="_Fd_NJip-EeGv5qjnXu9Ufw" conceptName="Day care center" usageNote="SNOMEDCT" base_EnumerationLiteral="_Fd_NJSp-EeGv5qjnXu9Ufw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetCode>
-  <term:ValueSetCode xmi:id="_Fd_NKCp-EeGv5qjnXu9Ufw" conceptName="Federal Prison" base_EnumerationLiteral="_Fd_NJyp-EeGv5qjnXu9Ufw">
+  <term:ValueSetCode xmi:id="_Fd_NKCp-EeGv5qjnXu9Ufw" conceptName="Federal Prison" usageNote="PHIN VS (CDC Local Coding System)" base_EnumerationLiteral="_Fd_NJyp-EeGv5qjnXu9Ufw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_1dcbUKFkEd-dVeaMP0XXQw"/>
   </term:ValueSetCode>
-  <term:ValueSetCode xmi:id="_FeIXESp-EeGv5qjnXu9Ufw" conceptName="Home" base_EnumerationLiteral="_FeIXECp-EeGv5qjnXu9Ufw">
+  <term:ValueSetCode xmi:id="_FeIXESp-EeGv5qjnXu9Ufw" conceptName="Home" usageNote="SNOMEDCT" base_EnumerationLiteral="_FeIXECp-EeGv5qjnXu9Ufw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetCode>
-  <term:ValueSetCode xmi:id="_FeIXEyp-EeGv5qjnXu9Ufw" conceptName="Hospital" base_EnumerationLiteral="_FeIXEip-EeGv5qjnXu9Ufw">
+  <term:ValueSetCode xmi:id="_FeIXEyp-EeGv5qjnXu9Ufw" conceptName="Hospital" usageNote="SNOMEDCT" base_EnumerationLiteral="_FeIXEip-EeGv5qjnXu9Ufw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetCode>
-  <term:ValueSetCode xmi:id="_FeIXFSp-EeGv5qjnXu9Ufw" conceptName="Hospital-Based Facility" base_EnumerationLiteral="_FeIXFCp-EeGv5qjnXu9Ufw">
+  <term:ValueSetCode xmi:id="_FeIXFSp-EeGv5qjnXu9Ufw" conceptName="Hospital-Based Facility" usageNote="PHIN VS (CDC Local Coding System)" base_EnumerationLiteral="_FeIXFCp-EeGv5qjnXu9Ufw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_1dcbUKFkEd-dVeaMP0XXQw"/>
   </term:ValueSetCode>
-  <term:ValueSetCode xmi:id="_FeSIESp-EeGv5qjnXu9Ufw" conceptName="Jail" base_EnumerationLiteral="_FeSIECp-EeGv5qjnXu9Ufw">
+  <term:ValueSetCode xmi:id="_FeSIESp-EeGv5qjnXu9Ufw" conceptName="Jail" usageNote="SNOMEDCT" base_EnumerationLiteral="_FeSIECp-EeGv5qjnXu9Ufw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetCode>
-  <term:ValueSetCode xmi:id="_FeSIEyp-EeGv5qjnXu9Ufw" conceptName="Jet airplane" base_EnumerationLiteral="_FeSIEip-EeGv5qjnXu9Ufw">
+  <term:ValueSetCode xmi:id="_FeSIEyp-EeGv5qjnXu9Ufw" conceptName="Jet airplane" usageNote="SNOMEDCT" base_EnumerationLiteral="_FeSIEip-EeGv5qjnXu9Ufw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetCode>
-  <term:ValueSetCode xmi:id="_FeSIFSp-EeGv5qjnXu9Ufw" conceptName="Juvenile Correctional Facility" base_EnumerationLiteral="_FeSIFCp-EeGv5qjnXu9Ufw">
+  <term:ValueSetCode xmi:id="_FeSIFSp-EeGv5qjnXu9Ufw" conceptName="Juvenile Correctional Facility" usageNote="UMLS" base_EnumerationLiteral="_FeSIFCp-EeGv5qjnXu9Ufw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_1dllQaFkEd-dVeaMP0XXQw"/>
   </term:ValueSetCode>
-  <term:ValueSetCode xmi:id="_FeSIFyp-EeGv5qjnXu9Ufw" conceptName="Local Jail" base_EnumerationLiteral="_FeSIFip-EeGv5qjnXu9Ufw">
+  <term:ValueSetCode xmi:id="_FeSIFyp-EeGv5qjnXu9Ufw" conceptName="Local Jail" usageNote="PHIN VS (CDC Local Coding System)" base_EnumerationLiteral="_FeSIFip-EeGv5qjnXu9Ufw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_1dcbUKFkEd-dVeaMP0XXQw"/>
   </term:ValueSetCode>
-  <term:ValueSetCode xmi:id="_Feb5ESp-EeGv5qjnXu9Ufw" conceptName="Long term care hospital" base_EnumerationLiteral="_Feb5ECp-EeGv5qjnXu9Ufw">
+  <term:ValueSetCode xmi:id="_Feb5ESp-EeGv5qjnXu9Ufw" conceptName="Long term care hospital" usageNote="SNOMEDCT" base_EnumerationLiteral="_Feb5ECp-EeGv5qjnXu9Ufw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetCode>
-  <term:ValueSetCode xmi:id="_Feb5Eyp-EeGv5qjnXu9Ufw" conceptName="Long-Term Care Facility Healthcare " base_EnumerationLiteral="_Feb5Eip-EeGv5qjnXu9Ufw">
+  <term:ValueSetCode xmi:id="_Feb5Eyp-EeGv5qjnXu9Ufw" conceptName="Long-Term Care Facility Healthcare " usageNote="Healthcare Provider Taxonomy (HIPAA)" base_EnumerationLiteral="_Feb5Eip-EeGv5qjnXu9Ufw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dH_64aDqEd-dVeaMP0XXQw"/>
   </term:ValueSetCode>
-  <term:ValueSetCode xmi:id="_Feb5FSp-EeGv5qjnXu9Ufw" conceptName="Nursing Home" base_EnumerationLiteral="_Feb5FCp-EeGv5qjnXu9Ufw">
+  <term:ValueSetCode xmi:id="_Feb5FSp-EeGv5qjnXu9Ufw" conceptName="Nursing Home" usageNote="UMLS" base_EnumerationLiteral="_Feb5FCp-EeGv5qjnXu9Ufw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_1dllQaFkEd-dVeaMP0XXQw"/>
   </term:ValueSetCode>
-  <term:ValueSetCode xmi:id="_FelDASp-EeGv5qjnXu9Ufw" conceptName="Psychiatric Hospital" base_EnumerationLiteral="_FelDACp-EeGv5qjnXu9Ufw">
+  <term:ValueSetCode xmi:id="_FelDASp-EeGv5qjnXu9Ufw" conceptName="Psychiatric Hospital" usageNote="Healthcare Provider Taxonomy (HIPAA)" base_EnumerationLiteral="_FelDACp-EeGv5qjnXu9Ufw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dH_64aDqEd-dVeaMP0XXQw"/>
   </term:ValueSetCode>
-  <term:ValueSetCode xmi:id="_FelDAyp-EeGv5qjnXu9Ufw" conceptName="Residential Facility" base_EnumerationLiteral="_FelDAip-EeGv5qjnXu9Ufw">
+  <term:ValueSetCode xmi:id="_FelDAyp-EeGv5qjnXu9Ufw" conceptName="Residential Facility" usageNote="UMLS" base_EnumerationLiteral="_FelDAip-EeGv5qjnXu9Ufw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_1dllQaFkEd-dVeaMP0XXQw"/>
   </term:ValueSetCode>
-  <term:ValueSetCode xmi:id="_Feu0ASp-EeGv5qjnXu9Ufw" conceptName="School" base_EnumerationLiteral="_Feu0ACp-EeGv5qjnXu9Ufw">
+  <term:ValueSetCode xmi:id="_Feu0ASp-EeGv5qjnXu9Ufw" conceptName="School" usageNote="SNOMEDCT" base_EnumerationLiteral="_Feu0ACp-EeGv5qjnXu9Ufw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetCode>
-  <term:ValueSetCode xmi:id="_Feu0Ayp-EeGv5qjnXu9Ufw" conceptName="Substance Abuse Disorder Rehabilitation" base_EnumerationLiteral="_Feu0Aip-EeGv5qjnXu9Ufw">
+  <term:ValueSetCode xmi:id="_Feu0Ayp-EeGv5qjnXu9Ufw" conceptName="Substance Abuse Disorder Rehabilitation" usageNote="Healthcare Provider Taxonomy (HIPAA)" base_EnumerationLiteral="_Feu0Aip-EeGv5qjnXu9Ufw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dH_64aDqEd-dVeaMP0XXQw"/>
   </term:ValueSetCode>
-  <term:ValueSetCode xmi:id="_Fe4lACp-EeGv5qjnXu9Ufw" conceptName="Work environment" base_EnumerationLiteral="_Feu0BCp-EeGv5qjnXu9Ufw">
+  <term:ValueSetCode xmi:id="_Fe4lACp-EeGv5qjnXu9Ufw" conceptName="Work environment" usageNote="SNOMEDCT" base_EnumerationLiteral="_Feu0BCp-EeGv5qjnXu9Ufw">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetCode>
-  <term:ValueSetVersion xmi:id="_MPVvsCp_EeGv5qjnXu9Ufw" identifier="2.16.840.1.114222.4.11.3201" fullName="Geographical location history" source="PHIN VADS" url="https://phinvads.cdc.gov/vads/ViewValueSet.action?id=9CE75E17-176B-DE11-9B52-0015173D1785" definition="Locations out of US (Birth Country) and jurisdictions within US (states) that are potentially relevent to current condition. This value set is based upon ISO 3166 (Countries) as well as FIPS 5-2 (States)." revisionDate="07/07/2009" binding="Dynamic" base_Enumeration="_MMXUMCp_EeGv5qjnXu9Ufw"/>
-  <term:ValueSetVersion xmi:id="_2jYpITGbEeGTgcZY2IhX4g" identifier="2.16.840.1.114222.4.11.3200" fullName="Birth Country" source="PHIN VADS" url="https://phinvads.cdc.gov/vads/ViewValueSet.action?id=8EE75E17-176B-DE11-9B52-0015173D1785" definition="Country of Birth value set includes current countries as well as historical countries (eg. USSR). This value set is based upon ISO 3166-1, Alpha-3 codes (current countries), ISO 3166-3 (retired countries) and FIPS 10-4 (US Territories, Countries that are not found in ISO 3166)" binding="Dynamic" base_Enumeration="_2jYpIDGbEeGTgcZY2IhX4g">
+  <term:ValueSetVersion xmi:id="_MPVvsCp_EeGv5qjnXu9Ufw" identifier="2.16.840.1.114222.4.11.3201" fullName="Geographical location history" source="PHIN VADS" url="https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.3201" definition="Locations out of US (Birth Country) and jurisdictions within US (states) that are potentially relevent to current condition. This value set is based upon ISO 3166 (Countries) as well as FIPS 5-2 (States)." revisionDate="07/07/2009" binding="Dynamic" base_Enumeration="_MMXUMCp_EeGv5qjnXu9Ufw"/>
+  <term:ValueSetVersion xmi:id="_2jYpITGbEeGTgcZY2IhX4g" identifier="2.16.840.1.114222.4.11.3200" fullName="Birth Country" source="PHIN VADS" url="https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.3200" definition="Country of Birth value set includes current countries as well as historical countries (eg. USSR). This value set is based upon ISO 3166-1, Alpha-3 codes (current countries), ISO 3166-3 (retired countries) and FIPS 10-4 (US Territories, Countries that are not found in ISO 3166)" binding="Dynamic" base_Enumeration="_2jYpIDGbEeGTgcZY2IhX4g">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_1ZiywKFkEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
-  <term:ValueSetVersion xmi:id="_TkneMTMREeGXS8s8x7j2Fg" identifier="2.16.840.1.113883.1.11.1" fullName="Administrative Gender (HL7 V3)" source="PHIN VADS" url="https://phinvads.cdc.gov/vads/ViewValueSet.action?id=8DE75E17-176B-DE11-9B52-0015173D1785" definition="Administrative Gender based upon HL7 V3 vocabulary. This value set contains only male, female and undifferentiated concepts." binding="Dynamic" base_Enumeration="_TkneMDMREeGXS8s8x7j2Fg">
-    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_VXEOQCF_Ed-M3adQxwHq4g"/>
-  </term:ValueSetVersion>
-  <term:ValueSetCode xmi:id="_-sAbITMREeGXS8s8x7j2Fg" conceptName="Male" base_EnumerationLiteral="_-sAbIDMREeGXS8s8x7j2Fg">
+  <term:ValueSetVersion xmi:id="_TkneMTMREeGXS8s8x7j2Fg" identifier="2.16.840.1.113883.1.11.1" fullName="Administrative Gender (HL7 V3)" source="PHIN VADS" url="https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.113883.1.11.1" definition="Administrative Gender based upon HL7 V3 vocabulary. This value set contains only male, female and undifferentiated concepts." binding="Dynamic" base_Enumeration="_TkneMDMREeGXS8s8x7j2Fg"/>
+  <term:ValueSetCode xmi:id="_-sAbITMREeGXS8s8x7j2Fg" conceptName="Male" usageNote="AdministrativeGenderCode" base_EnumerationLiteral="_-sAbIDMREeGXS8s8x7j2Fg">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_VXEOQCF_Ed-M3adQxwHq4g"/>
   </term:ValueSetCode>
-  <term:ValueSetCode xmi:id="__s-v8TMREeGXS8s8x7j2Fg" conceptName="Female" base_EnumerationLiteral="__s-v8DMREeGXS8s8x7j2Fg">
+  <term:ValueSetCode xmi:id="__s-v8TMREeGXS8s8x7j2Fg" conceptName="Female" usageNote="AdministrativeGenderCode" base_EnumerationLiteral="__s-v8DMREeGXS8s8x7j2Fg">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_VXEOQCF_Ed-M3adQxwHq4g"/>
   </term:ValueSetCode>
-  <term:ValueSetCode xmi:id="_BSmp8TMSEeGXS8s8x7j2Fg" conceptName="Undifferentiated" base_EnumerationLiteral="_BSmp8DMSEeGXS8s8x7j2Fg">
+  <term:ValueSetCode xmi:id="_BSmp8TMSEeGXS8s8x7j2Fg" conceptName="Undifferentiated" usageNote="AdministrativeGenderCode" base_EnumerationLiteral="_BSmp8DMSEeGXS8s8x7j2Fg">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_VXEOQCF_Ed-M3adQxwHq4g"/>
   </term:ValueSetCode>
   <term:ValueSetCode xmi:id="_Di__QTMSEeGXS8s8x7j2Fg"/>
@@ -398,11 +398,11 @@
   <term:ValueSetVersion xmi:id="_Kud1gTMUEeGXS8s8x7j2Fg" identifier="2.16.840.1.113883.1.11.13955">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
-  <term:ValueSetVersion xmi:id="_u3AUgTMVEeGXS8s8x7j2Fg" identifier="2.16.840.1.114222.4.11.946" fullName="Specimen" source="PHIN VADS" url="https://phinvads.cdc.gov/vads/ViewValueSet.action?id=1F2170E4-00A6-DF11-9BDD-0015173D1785" binding="Dynamic" base_Enumeration="_u3AUgDMVEeGXS8s8x7j2Fg">
+  <term:ValueSetVersion xmi:id="_u3AUgTMVEeGXS8s8x7j2Fg" identifier="2.16.840.1.114222.4.11.946" fullName="Specimen" source="PHIN VADS" url="https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.946" definition="Specimen based on SNOMED hierarchy (123038009) Keyword: Specimen Source, Specimen Type" binding="Dynamic" base_Enumeration="_u3AUgDMVEeGXS8s8x7j2Fg">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_45Y_cTMVEeGXS8s8x7j2Fg" conceptName="Blood Specimen"/>
-  <term:ValueSetVersion xmi:id="_EZgzsTMWEeGXS8s8x7j2Fg" identifier="2.16.840.1.114222.4.11.1009" fullName="Microorganism" source="PHIN VADS" url="https://phinvads.cdc.gov/vads/ViewValueSet.action?id=08C0FBFB-7C29-E011-B71B-00188B39829B" definition="Microorganisms/infectious agents" binding="Dynamic" base_Enumeration="_EZgzsDMWEeGXS8s8x7j2Fg">
+  <term:ValueSetVersion xmi:id="_EZgzsTMWEeGXS8s8x7j2Fg" identifier="2.16.840.1.114222.4.11.1009" fullName="Microorganism" source="PHIN VADS" url="https://phinvads.cdc.gov/vads/ViewValueSet.action?iod=2.16.840.1.114222.4.11.1009" definition="Microorganisms/infectious agents" binding="Dynamic" base_Enumeration="_EZgzsDMWEeGXS8s8x7j2Fg">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_WN5bUTMWEeGXS8s8x7j2Fg" conceptName="Acid-fast bacillus"/>
@@ -412,37 +412,44 @@
   <term:ValueSetCode xmi:id="_-6UxsTMWEeGXS8s8x7j2Fg" conceptName="Michigan">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dkSOQaDqEd-dVeaMP0XXQw"/>
   </term:ValueSetCode>
-  <term:ValueSetVersion xmi:id="_K7hSsTMXEeGXS8s8x7j2Fg" identifier="2.16.840.1.114222.4.11.887" fullName="Occupation" source="PHIN VADS" url="https://phinvads.cdc.gov/vads/ViewValueSet.action?id=56D34BBC-617F-DD11-B38D-00188B398520" definition="Occupations or job codes" binding="Dynamic" base_Enumeration="_K7hSsDMXEeGXS8s8x7j2Fg">
+  <term:ValueSetVersion xmi:id="_K7hSsTMXEeGXS8s8x7j2Fg" identifier="2.16.840.1.114222.4.11.887" fullName="Occupation" source="PHIN VADS" url="https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.887" definition="Occupations or job codes" binding="Dynamic" base_Enumeration="_K7hSsDMXEeGXS8s8x7j2Fg">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_1pR34aFkEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_U00TETMXEeGXS8s8x7j2Fg" conceptName="Air Crew Members"/>
-  <term:ValueSetVersion xmi:id="_fYu9wTMXEeGXS8s8x7j2Fg" identifier="2.16.840.1.114222.4.11.1100" fullName="Industry (NAICS)" source="PHIN VADS" url="https://phinvads.cdc.gov/vads/ViewValueSet.action?id=3ED34BBC-617F-DD11-B38D-00188B398520" definition="The North American Industry Classification System (NAICS) consists of a set of six digit codes that classify and categorize industries. It also organizes the categories on a production/process-oriented basis. This new, uniform, industry-wide classification system has been designed as the index for statistical reporting of all economic activities of the U.S., Canada, and Mexico." binding="Dynamic" base_Enumeration="_fYu9wDMXEeGXS8s8x7j2Fg">
+  <term:ValueSetVersion xmi:id="_fYu9wTMXEeGXS8s8x7j2Fg" identifier="2.16.840.1.114222.4.11.1100" fullName="Industry (NAICS)" source="PHIN VADS" url="https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.1100" definition="The North American Industry Classification System (NAICS) consists of a set of six digit codes that classify and categorize industries. It also organizes the categories on a production/process-oriented basis. This new, uniform, industry-wide classification system has been designed as the index for statistical reporting of all economic activities of the U.S., Canada, and Mexico." binding="Dynamic" base_Enumeration="_fYu9wDMXEeGXS8s8x7j2Fg">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_1ej1oKFkEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_qNfg0TMXEeGXS8s8x7j2Fg" conceptName="Air Transportation"/>
-  <term:ValueSetVersion xmi:id="_3Bf-0TMXEeGXS8s8x7j2Fg" identifier="2.16.840.1.113883.3.88.12.3221.8.7" fullName="Medication Route FDA" source="PHIN VADS" url="https://phinvads.cdc.gov/vads/ViewValueSet.action?id=A9E75E17-176B-DE11-9B52-0015173D1785" definition="Route of Administration value set is based upon FDA Drug Registration and Listing Database (FDA Orange Book) which are used in FDA structured product and labelling (SPL)." binding="Dynamic" base_Enumeration="_3Bf-0DMXEeGXS8s8x7j2Fg">
+  <term:ValueSetVersion xmi:id="_3Bf-0TMXEeGXS8s8x7j2Fg" identifier="2.16.840.1.113883.3.88.12.3221.8.7" fullName="Medication Route FDA" source="PHIN VADS" url="https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.113883.3.88.12.3221.8.7" definition="Route of Administration value set is based upon FDA Drug Registration and Listing Database (FDA Orange Book) which are used in FDA structured product and labelling (SPL)." binding="Dynamic" base_Enumeration="_3Bf-0DMXEeGXS8s8x7j2Fg">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dWKSsaDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_AVQCITMYEeGXS8s8x7j2Fg" conceptName="Oral">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dWKSsaDqEd-dVeaMP0XXQw"/>
   </term:ValueSetCode>
-  <term:ValueSetVersion xmi:id="_NS8noTMYEeGXS8s8x7j2Fg" identifier="2.16.840.1.113883.1.11.14914" fullName="Race" source="PHIN VADS" url="https://phinvads.cdc.gov/vads/ViewValueSet.action?id=94E75E17-176B-DE11-9B52-0015173D1785" definition="Concepts in the race value set include the OMB minimum categories, 5 races, along with a sixth race category, Other race, and a more detailed set of race categories used by the Bureau of Census." binding="Dynamic" base_Enumeration="_NS8noDMYEeGXS8s8x7j2Fg">
+  <term:ValueSetVersion xmi:id="_NS8noTMYEeGXS8s8x7j2Fg" identifier="2.16.840.1.113883.1.11.14914" fullName="Race" source="PHIN VADS" url="https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.113883.1.11.14914" definition="Concepts in the race value set include the OMB minimum categories, 5 races, along with a sixth race category, Other race, and a more detailed set of race categories used by the Bureau of Census." binding="Dynamic" base_Enumeration="_NS8noDMYEeGXS8s8x7j2Fg">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dfdYoKDqEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_c6N3cTMYEeGXS8s8x7j2Fg" conceptName="Wisconsin Potawatomi"/>
-  <term:ValueSetVersion xmi:id="_im2qITMYEeGXS8s8x7j2Fg" identifier="2.16.840.1.114222.4.11.3204" fullName="Non-Laboratory Intervention and Procedure" source="PHIN VADS" url="https://phinvads.cdc.gov/vads/ViewValueSet.action?id=6231D535-9320-DF11-B334-0015173D1785" definition="This value set includes medical and surgical procedures performed on human body. This is based upon the concepts descending from the SNOMED CT Procedures (71388002) hierarchy. This value set does not include administrative billing procedure or laboratory procedure." binding="Dynamic" base_Enumeration="_im2qIDMYEeGXS8s8x7j2Fg">
+  <term:ValueSetVersion xmi:id="_im2qITMYEeGXS8s8x7j2Fg" identifier="2.16.840.1.114222.4.11.3204" fullName="Non-Laboratory Intervention and Procedure" source="PHIN VADS" url="https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.3204" definition="This value set includes medical and surgical procedures performed on human body. This is based upon the concepts descending from the SNOMED CT Procedures (71388002) hierarchy. This value set does not include administrative billing procedure or laboratory procedure." binding="Dynamic" base_Enumeration="_im2qIDMYEeGXS8s8x7j2Fg">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_qTVNoTMYEeGXS8s8x7j2Fg" conceptName="12 minute walk test"/>
-  <term:ValueSetVersion xmi:id="_0NOq8TMYEeGXS8s8x7j2Fg" identifier="2.16.840.1.113883.3.88.12.3221.8.9" fullName="Body Site" source="PHIN VADS" url="https://phinvads.cdc.gov/vads/ViewValueSet.action?id=9A2D4051-3AA6-42EB-AE88-541C9094B0FB" definition="Body site value set is based upon the concepts descending from the SNOMED CT Anatomical Structure (91723000) hierarchy." binding="Dynamic" base_Enumeration="_0NOq8DMYEeGXS8s8x7j2Fg"/>
+  <term:ValueSetVersion xmi:id="_0NOq8TMYEeGXS8s8x7j2Fg" identifier="2.16.840.1.113883.3.88.12.3221.8.9" fullName="Body Site" source="PHIN VADS" url="https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.113883.3.88.12.3221.8.9" definition="Body site value set is based upon the concepts descending from the SNOMED CT Anatomical Structure (91723000) hierarchy." binding="Dynamic" base_Enumeration="_0NOq8DMYEeGXS8s8x7j2Fg"/>
   <term:ValueSetCode xmi:id="_9kQEsTMYEeGXS8s8x7j2Fg" conceptName="Upper respiratory tract"/>
-  <term:ValueSetVersion xmi:id="_swk2sTMZEeGXS8s8x7j2Fg" identifier="2.16.840.1.114222.4.11.1071" fullName="Drug Susceptibility Test Result Name" source="PHIN VADS" url="https://phinvads.cdc.gov/vads/ViewValueSet.action?id=15E98D4C-BBE5-4191-80C9-ADEC75DA7FFB" definition="Drug / Antimicrobial Test Result Name" binding="Dynamic" base_Enumeration="_swk2sDMZEeGXS8s8x7j2Fg">
+  <term:ValueSetVersion xmi:id="_swk2sTMZEeGXS8s8x7j2Fg" identifier="2.16.840.1.114222.4.11.1071" fullName="Drug Susceptibility Test Result Name" source="PHIN VADS" url="https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.1071" definition="Drug / Antimicrobial Test Result Name" binding="Dynamic" base_Enumeration="_swk2sDMZEeGXS8s8x7j2Fg">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
-  <term:ValueSetVersion xmi:id="_4uCuQTMZEeGXS8s8x7j2Fg" identifier="2.16.840.1.113883.1.11.78" fullName="Observation Interpretation (HL7)" source="PHIN VADS" url="https://phinvads.cdc.gov/vads/ViewValueSet.action?id=A8E75E17-176B-DE11-9B52-0015173D1785" definition="Observation interpretation concepts that are based upon HL7 V3 vocabulary." binding="Dynamic" base_Enumeration="_4uCuQDMZEeGXS8s8x7j2Fg">
+  <term:ValueSetVersion xmi:id="_4uCuQTMZEeGXS8s8x7j2Fg" identifier="2.16.840.1.113883.1.11.78" fullName="Observation Interpretation (HL7)" source="PHIN VADS" url="https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.113883.1.11.78" definition="Observation interpretation concepts that are based upon HL7 V3 vocabulary." binding="Dynamic" base_Enumeration="_4uCuQDMZEeGXS8s8x7j2Fg">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_1o75oaFkEd-dVeaMP0XXQw"/>
   </term:ValueSetVersion>
   <term:ValueSetCode xmi:id="_fsgG8TMaEeGXS8s8x7j2Fg" conceptName="Cefoxitin [Susceptibility]"/>
   <term:ValueSetCode xmi:id="_0LprsTMaEeGXS8s8x7j2Fg" conceptName="Normal"/>
   <term:ValueSetCode xmi:id="_1Bl1MTMaEeGXS8s8x7j2Fg" conceptName="Abnormal"/>
+  <term:ValueSetVersion xmi:id="_djTCQJ-YEeGpRtS_7CxGlA" binding="Dynamic" base_Enumeration="_djJRQJ-YEeGpRtS_7CxGlA"/>
+  <term:ValueSetCode xmi:id="_kT3-MZ-YEeGpRtS_7CxGlA" conceptName="Co-morbid conditions" usageNote="SNOMEDCT" base_EnumerationLiteral="_kT3-MJ-YEeGpRtS_7CxGlA">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_oyISMZ-YEeGpRtS_7CxGlA" conceptName="Patient immunosuppressed" usageNote="SNOMEDCT" base_EnumerationLiteral="_oyISMJ-YEeGpRtS_7CxGlA">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
 </xmi:XMI>

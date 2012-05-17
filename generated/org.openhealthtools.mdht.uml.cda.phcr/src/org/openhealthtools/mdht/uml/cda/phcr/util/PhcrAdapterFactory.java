@@ -37,6 +37,7 @@ import org.openhealthtools.mdht.uml.cda.phcr.PhcrClinicalInformationSection;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrEncountersSection;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrPackage;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrRelevantDxTestsSection;
+import org.openhealthtools.mdht.uml.cda.phcr.PhcrRelevantMedicalConditionHistoryObservation;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrSocialHistorySection;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrTreatmentInformationSection;
 import org.openhealthtools.mdht.uml.cda.phcr.PregnancyObservation;
@@ -165,6 +166,10 @@ public class PhcrAdapterFactory extends AdapterFactoryImpl
 				return createPatientConditionDeceasedObservationAdapter();
 			}
 			@Override
+			public Adapter casePhcrRelevantMedicalConditionHistoryObservation(PhcrRelevantMedicalConditionHistoryObservation object) {
+				return createPhcrRelevantMedicalConditionHistoryObservationAdapter();
+			}
+			@Override
 			public Adapter casePhcrTreatmentInformationSection(PhcrTreatmentInformationSection object) {
 				return createPhcrTreatmentInformationSectionAdapter();
 			}
@@ -201,12 +206,12 @@ public class PhcrAdapterFactory extends AdapterFactoryImpl
 				return createSpecimenCollectionProcedureAdapter();
 			}
 			@Override
-			public Adapter caseImagingObservation(ImagingObservation object) {
-				return createImagingObservationAdapter();
-			}
-			@Override
 			public Adapter caseSusceptibilityResult(SusceptibilityResult object) {
 				return createSusceptibilityResultAdapter();
+			}
+			@Override
+			public Adapter caseImagingObservation(ImagingObservation object) {
+				return createImagingObservationAdapter();
 			}
 			@Override
 			public Adapter caseInfrastructureRoot(InfrastructureRoot object) {
@@ -556,6 +561,20 @@ public class PhcrAdapterFactory extends AdapterFactoryImpl
 	 * @generated
 	 */
 	public Adapter createPatientConditionDeceasedObservationAdapter() {
+		return null;
+	}
+
+		/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrRelevantMedicalConditionHistoryObservation <em>Relevant Medical Condition History Observation</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.phcr.PhcrRelevantMedicalConditionHistoryObservation
+	 * @generated
+	 */
+	public Adapter createPhcrRelevantMedicalConditionHistoryObservationAdapter() {
 		return null;
 	}
 

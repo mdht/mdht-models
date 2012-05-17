@@ -10,6 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.operations;
 
+import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
@@ -35,8 +36,10 @@ import org.openhealthtools.mdht.uml.cda.phcr.util.PhcrValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.EstimatedDateOfDeliveryObservation#validateEstimatedDateOfDeliveryObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Estimated Date Of Delivery Observation Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.EstimatedDateOfDeliveryObservation#validateEstimatedDateOfDeliveryObservationClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Estimated Date Of Delivery Observation Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.EstimatedDateOfDeliveryObservation#validateEstimatedDateOfDeliveryObservationMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Estimated Date Of Delivery Observation Mood Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.EstimatedDateOfDeliveryObservation#validateEstimatedDateOfDeliveryObservationCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Estimated Date Of Delivery Observation Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.EstimatedDateOfDeliveryObservation#validateEstimatedDateOfDeliveryObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Estimated Date Of Delivery Observation Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.EstimatedDateOfDeliveryObservation#validateEstimatedDateOfDeliveryObservationStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Estimated Date Of Delivery Observation Status Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.EstimatedDateOfDeliveryObservation#validateEstimatedDateOfDeliveryObservationStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Estimated Date Of Delivery Observation Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.EstimatedDateOfDeliveryObservation#validateEstimatedDateOfDeliveryObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Estimated Date Of Delivery Observation Value</em>}</li>
  * </ul>
  * </p>
@@ -85,6 +88,7 @@ public class EstimatedDateOfDeliveryObservationOperations extends ClinicalStatem
 	 * @generated
 	 */
 	public static  boolean validateEstimatedDateOfDeliveryObservationTemplateId(EstimatedDateOfDeliveryObservation estimatedDateOfDeliveryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_ESTIMATED_DATE_OF_DELIVERY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.ESTIMATED_DATE_OF_DELIVERY_OBSERVATION);
@@ -105,6 +109,7 @@ public class EstimatedDateOfDeliveryObservationOperations extends ClinicalStatem
 						 PhcrPlugin.INSTANCE.getString("EstimatedDateOfDeliveryObservationTemplateId"),
 						 new Object [] { estimatedDateOfDeliveryObservation }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -142,6 +147,7 @@ public class EstimatedDateOfDeliveryObservationOperations extends ClinicalStatem
 	 * @generated
 	 */
 	public static  boolean validateEstimatedDateOfDeliveryObservationClassCode(EstimatedDateOfDeliveryObservation estimatedDateOfDeliveryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_ESTIMATED_DATE_OF_DELIVERY_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.ESTIMATED_DATE_OF_DELIVERY_OBSERVATION);
@@ -162,6 +168,7 @@ public class EstimatedDateOfDeliveryObservationOperations extends ClinicalStatem
 						 PhcrPlugin.INSTANCE.getString("EstimatedDateOfDeliveryObservationClassCode"),
 						 new Object [] { estimatedDateOfDeliveryObservation }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -181,6 +188,13 @@ public class EstimatedDateOfDeliveryObservationOperations extends ClinicalStatem
 	 * @generated
 	 */
 	public static  boolean validateEstimatedDateOfDeliveryObservationCode(EstimatedDateOfDeliveryObservation estimatedDateOfDeliveryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.phcr.EstimatedDateOfDeliveryObservationCodeP");
+		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(estimatedDateOfDeliveryObservation)) {
+			// I have a free pass to short-circuit
+			return true;
+		}
+  	  
 		if (VALIDATE_ESTIMATED_DATE_OF_DELIVERY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.ESTIMATED_DATE_OF_DELIVERY_OBSERVATION);
@@ -201,6 +215,7 @@ public class EstimatedDateOfDeliveryObservationOperations extends ClinicalStatem
 						 PhcrPlugin.INSTANCE.getString("EstimatedDateOfDeliveryObservationCode"),
 						 new Object [] { estimatedDateOfDeliveryObservation }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -225,6 +240,66 @@ public class EstimatedDateOfDeliveryObservationOperations extends ClinicalStatem
 	 * @ordered
 	 */
 	protected static Constraint VALIDATE_ESTIMATED_DATE_OF_DELIVERY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.moodCode=vocab::x_ActMoodDocumentObservation::EVN
+	 * @param estimatedDateOfDeliveryObservation The receiving '<em><b>Estimated Date Of Delivery Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	public static  boolean validateEstimatedDateOfDeliveryObservationMoodCode(EstimatedDateOfDeliveryObservation estimatedDateOfDeliveryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_ESTIMATED_DATE_OF_DELIVERY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(PhcrPackage.Literals.ESTIMATED_DATE_OF_DELIVERY_OBSERVATION);
+			try {
+				VALIDATE_ESTIMATED_DATE_OF_DELIVERY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ESTIMATED_DATE_OF_DELIVERY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_ESTIMATED_DATE_OF_DELIVERY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(estimatedDateOfDeliveryObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 PhcrValidator.DIAGNOSTIC_SOURCE,
+						 PhcrValidator.ESTIMATED_DATE_OF_DELIVERY_OBSERVATION__ESTIMATED_DATE_OF_DELIVERY_OBSERVATION_MOOD_CODE,
+						 PhcrPlugin.INSTANCE.getString("EstimatedDateOfDeliveryObservationMoodCode"),
+						 new Object [] { estimatedDateOfDeliveryObservation }));
+			}
+			 
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateEstimatedDateOfDeliveryObservationCodeP(EstimatedDateOfDeliveryObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Estimated Date Of Delivery Observation Code P</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateEstimatedDateOfDeliveryObservationCodeP(EstimatedDateOfDeliveryObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_ESTIMATED_DATE_OF_DELIVERY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateEstimatedDateOfDeliveryObservationCodeP(EstimatedDateOfDeliveryObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Estimated Date Of Delivery Observation Code P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateEstimatedDateOfDeliveryObservationCodeP(EstimatedDateOfDeliveryObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Constraint VALIDATE_ESTIMATED_DATE_OF_DELIVERY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateEstimatedDateOfDeliveryObservationCode(EstimatedDateOfDeliveryObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Estimated Date Of Delivery Observation Code</em>}' operation.
@@ -252,34 +327,49 @@ public class EstimatedDateOfDeliveryObservationOperations extends ClinicalStatem
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.moodCode=vocab::x_ActMoodDocumentObservation::EVN
+	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
 	 * @param estimatedDateOfDeliveryObservation The receiving '<em><b>Estimated Date Of Delivery Observation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateEstimatedDateOfDeliveryObservationMoodCode(EstimatedDateOfDeliveryObservation estimatedDateOfDeliveryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_ESTIMATED_DATE_OF_DELIVERY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+	
+	public static  boolean validateEstimatedDateOfDeliveryObservationCodeP(EstimatedDateOfDeliveryObservation estimatedDateOfDeliveryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_ESTIMATED_DATE_OF_DELIVERY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.ESTIMATED_DATE_OF_DELIVERY_OBSERVATION);
 			try {
-				VALIDATE_ESTIMATED_DATE_OF_DELIVERY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ESTIMATED_DATE_OF_DELIVERY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ESTIMATED_DATE_OF_DELIVERY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ESTIMATED_DATE_OF_DELIVERY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ESTIMATED_DATE_OF_DELIVERY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(estimatedDateOfDeliveryObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ESTIMATED_DATE_OF_DELIVERY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(estimatedDateOfDeliveryObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 PhcrValidator.DIAGNOSTIC_SOURCE,
-						 PhcrValidator.ESTIMATED_DATE_OF_DELIVERY_OBSERVATION__ESTIMATED_DATE_OF_DELIVERY_OBSERVATION_MOOD_CODE,
-						 PhcrPlugin.INSTANCE.getString("EstimatedDateOfDeliveryObservationMoodCode"),
+						 PhcrValidator.ESTIMATED_DATE_OF_DELIVERY_OBSERVATION__ESTIMATED_DATE_OF_DELIVERY_OBSERVATION_CODE_P,
+						 PhcrPlugin.INSTANCE.getString("EstimatedDateOfDeliveryObservationCodeP"),
 						 new Object [] { estimatedDateOfDeliveryObservation }));
 			}
+			
+			if (context != null) {
+				// generate a pass token for my dependent constraints to short-circuit or filter results
+				@SuppressWarnings("unchecked")
+				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.phcr.EstimatedDateOfDeliveryObservationCodeP");
+				if (passToken == null) {
+					// anticipate a reasonably healthy model
+					passToken = new java.util.ArrayList<Object>(3);
+					context.put("org.openhealthtools.mdht.uml.cda.phcr.EstimatedDateOfDeliveryObservationCodeP", passToken);
+				}
+				passToken.add(estimatedDateOfDeliveryObservation);
+			}
+			 
 			return false;
 		}
 		return true;
@@ -321,6 +411,7 @@ public class EstimatedDateOfDeliveryObservationOperations extends ClinicalStatem
 	 * @generated
 	 */
 	public static  boolean validateEstimatedDateOfDeliveryObservationStatusCode(EstimatedDateOfDeliveryObservation estimatedDateOfDeliveryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_ESTIMATED_DATE_OF_DELIVERY_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.ESTIMATED_DATE_OF_DELIVERY_OBSERVATION);
@@ -341,6 +432,68 @@ public class EstimatedDateOfDeliveryObservationOperations extends ClinicalStatem
 						 PhcrPlugin.INSTANCE.getString("EstimatedDateOfDeliveryObservationStatusCode"),
 						 new Object [] { estimatedDateOfDeliveryObservation }));
 			}
+			 
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateEstimatedDateOfDeliveryObservationStatusCodeP(EstimatedDateOfDeliveryObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Estimated Date Of Delivery Observation Status Code P</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateEstimatedDateOfDeliveryObservationStatusCodeP(EstimatedDateOfDeliveryObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_ESTIMATED_DATE_OF_DELIVERY_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateEstimatedDateOfDeliveryObservationStatusCodeP(EstimatedDateOfDeliveryObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Estimated Date Of Delivery Observation Status Code P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateEstimatedDateOfDeliveryObservationStatusCodeP(EstimatedDateOfDeliveryObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Constraint VALIDATE_ESTIMATED_DATE_OF_DELIVERY_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())
+	 * @param estimatedDateOfDeliveryObservation The receiving '<em><b>Estimated Date Of Delivery Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	
+	public static  boolean validateEstimatedDateOfDeliveryObservationStatusCodeP(EstimatedDateOfDeliveryObservation estimatedDateOfDeliveryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_ESTIMATED_DATE_OF_DELIVERY_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(PhcrPackage.Literals.ESTIMATED_DATE_OF_DELIVERY_OBSERVATION);
+			try {
+				VALIDATE_ESTIMATED_DATE_OF_DELIVERY_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ESTIMATED_DATE_OF_DELIVERY_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_ESTIMATED_DATE_OF_DELIVERY_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(estimatedDateOfDeliveryObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 PhcrValidator.DIAGNOSTIC_SOURCE,
+						 PhcrValidator.ESTIMATED_DATE_OF_DELIVERY_OBSERVATION__ESTIMATED_DATE_OF_DELIVERY_OBSERVATION_STATUS_CODE_P,
+						 PhcrPlugin.INSTANCE.getString("EstimatedDateOfDeliveryObservationStatusCodeP"),
+						 new Object [] { estimatedDateOfDeliveryObservation }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -378,6 +531,7 @@ public class EstimatedDateOfDeliveryObservationOperations extends ClinicalStatem
 	 * @generated
 	 */
 	public static  boolean validateEstimatedDateOfDeliveryObservationValue(EstimatedDateOfDeliveryObservation estimatedDateOfDeliveryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_ESTIMATED_DATE_OF_DELIVERY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.ESTIMATED_DATE_OF_DELIVERY_OBSERVATION);
@@ -398,6 +552,7 @@ public class EstimatedDateOfDeliveryObservationOperations extends ClinicalStatem
 						 PhcrPlugin.INSTANCE.getString("EstimatedDateOfDeliveryObservationValue"),
 						 new Object [] { estimatedDateOfDeliveryObservation }));
 			}
+			 
 			return false;
 		}
 		return true;

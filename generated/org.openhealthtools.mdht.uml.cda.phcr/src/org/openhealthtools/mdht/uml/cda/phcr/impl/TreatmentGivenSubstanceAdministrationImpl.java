@@ -90,6 +90,15 @@ public class TreatmentGivenSubstanceAdministrationImpl extends SubstanceAdminist
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateTreatmentGivenSubstanceAdministrationRouteCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return TreatmentGivenSubstanceAdministrationOperations.validateTreatmentGivenSubstanceAdministrationRouteCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateTreatmentGivenSubstanceAdministrationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return TreatmentGivenSubstanceAdministrationOperations.validateTreatmentGivenSubstanceAdministrationMoodCode(this, diagnostics, context);
 	}

@@ -37,6 +37,7 @@ import org.openhealthtools.mdht.uml.cda.phcr.PhcrClinicalInformationSection;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrEncountersSection;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrPackage;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrRelevantDxTestsSection;
+import org.openhealthtools.mdht.uml.cda.phcr.PhcrRelevantMedicalConditionHistoryObservation;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrSocialHistorySection;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrTreatmentInformationSection;
 import org.openhealthtools.mdht.uml.cda.phcr.PregnancyObservation;
@@ -261,6 +262,16 @@ public class PhcrSwitch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case PhcrPackage.PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION: {
+				PhcrRelevantMedicalConditionHistoryObservation phcrRelevantMedicalConditionHistoryObservation = (PhcrRelevantMedicalConditionHistoryObservation)theEObject;
+				T result = casePhcrRelevantMedicalConditionHistoryObservation(phcrRelevantMedicalConditionHistoryObservation);
+				if (result == null) result = caseObservation(phcrRelevantMedicalConditionHistoryObservation);
+				if (result == null) result = caseClinicalStatement(phcrRelevantMedicalConditionHistoryObservation);
+				if (result == null) result = caseAct(phcrRelevantMedicalConditionHistoryObservation);
+				if (result == null) result = caseInfrastructureRoot(phcrRelevantMedicalConditionHistoryObservation);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			case PhcrPackage.PHCR_TREATMENT_INFORMATION_SECTION: {
 				PhcrTreatmentInformationSection phcrTreatmentInformationSection = (PhcrTreatmentInformationSection)theEObject;
 				T result = casePhcrTreatmentInformationSection(phcrTreatmentInformationSection);
@@ -352,6 +363,16 @@ public class PhcrSwitch<T>
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case PhcrPackage.SUSCEPTIBILITY_RESULT: {
+				SusceptibilityResult susceptibilityResult = (SusceptibilityResult)theEObject;
+				T result = caseSusceptibilityResult(susceptibilityResult);
+				if (result == null) result = caseObservation(susceptibilityResult);
+				if (result == null) result = caseClinicalStatement(susceptibilityResult);
+				if (result == null) result = caseAct(susceptibilityResult);
+				if (result == null) result = caseInfrastructureRoot(susceptibilityResult);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			case PhcrPackage.IMAGING_OBSERVATION: {
 				ImagingObservation imagingObservation = (ImagingObservation)theEObject;
 				T result = caseImagingObservation(imagingObservation);
@@ -360,16 +381,6 @@ public class PhcrSwitch<T>
 				if (result == null) result = caseClinicalStatement(imagingObservation);
 				if (result == null) result = caseAct(imagingObservation);
 				if (result == null) result = caseInfrastructureRoot(imagingObservation);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case PhcrPackage.SUSCEPTIBILITY_RESULT: {
-				SusceptibilityResult susceptibilityResult = (SusceptibilityResult)theEObject;
-				T result = caseSusceptibilityResult(susceptibilityResult);
-				if (result == null) result = caseObservation(susceptibilityResult);
-				if (result == null) result = caseClinicalStatement(susceptibilityResult);
-				if (result == null) result = caseAct(susceptibilityResult);
-				if (result == null) result = caseInfrastructureRoot(susceptibilityResult);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -659,6 +670,21 @@ public class PhcrSwitch<T>
 	 * @generated
 	 */
 	public T casePatientConditionDeceasedObservation(PatientConditionDeceasedObservation object) {
+		return null;
+	}
+
+		/**
+	 * Returns the result of interpreting the object as an instance of '<em>Relevant Medical Condition History Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Relevant Medical Condition History Observation</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T casePhcrRelevantMedicalConditionHistoryObservation(PhcrRelevantMedicalConditionHistoryObservation object) {
 		return null;
 	}
 

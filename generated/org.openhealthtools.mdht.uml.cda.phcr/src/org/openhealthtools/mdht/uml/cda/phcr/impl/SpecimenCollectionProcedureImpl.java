@@ -81,8 +81,26 @@ public class SpecimenCollectionProcedureImpl extends ProcedureImpl implements Sp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateSpecimenCollectionProcedureCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SpecimenCollectionProcedureOperations.validateSpecimenCollectionProcedureCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateSpecimenCollectionProcedureEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SpecimenCollectionProcedureOperations.validateSpecimenCollectionProcedureEffectiveTime(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSpecimenCollectionProcedureTargetSiteCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SpecimenCollectionProcedureOperations.validateSpecimenCollectionProcedureTargetSiteCode(this, diagnostics, context);
 	}
 
 	/**

@@ -13,9 +13,12 @@ package org.openhealthtools.mdht.uml.cda.phcr.impl;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrPackage;
 import org.openhealthtools.mdht.uml.cda.phcr.ResultObservation;
+import org.openhealthtools.mdht.uml.cda.phcr.SpecimenCollectionProcedure;
+import org.openhealthtools.mdht.uml.cda.phcr.SusceptibilityResult;
 import org.openhealthtools.mdht.uml.cda.phcr.operations.ResultObservationOperations;
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
@@ -64,6 +67,42 @@ public class ResultObservationImpl extends org.openhealthtools.mdht.uml.cda.ccd.
 	 */
 	public boolean validatePHCRResultObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResultObservationOperations.validatePHCRResultObservationStatusCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePHCRResultObservationSpecimenCollectionProcedure(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ResultObservationOperations.validatePHCRResultObservationSpecimenCollectionProcedure(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePHCRResultObservationSusceptibilityResult(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ResultObservationOperations.validatePHCRResultObservationSusceptibilityResult(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<SpecimenCollectionProcedure> getSpecimenCollectionProcedures() {
+		return ResultObservationOperations.getSpecimenCollectionProcedures(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<SusceptibilityResult> getSusceptibilityResults() {
+		return ResultObservationOperations.getSusceptibilityResults(this);
 	}
 
 	/**

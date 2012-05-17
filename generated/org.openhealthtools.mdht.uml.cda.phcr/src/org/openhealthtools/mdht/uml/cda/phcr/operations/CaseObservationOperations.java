@@ -46,6 +46,7 @@ import org.openhealthtools.mdht.uml.cda.phcr.util.PhcrValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.CaseObservation#validateCaseObservationMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Case Observation Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.CaseObservation#validateCaseObservationId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Case Observation Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.CaseObservation#validateCaseObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Case Observation Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.CaseObservation#validateProblemObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.CaseObservation#validateCaseObservationStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Case Observation Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.CaseObservation#validateCaseObservationEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Case Observation Effective Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.CaseObservation#validateCaseObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Case Observation Value</em>}</li>
@@ -54,6 +55,7 @@ import org.openhealthtools.mdht.uml.cda.phcr.util.PhcrValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.CaseObservation#getProblemStatusObservation() <em>Get Problem Status Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.CaseObservation#getSignsAndSymptomsObservations() <em>Get Signs And Symptoms Observations</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.CaseObservation#validateProblemObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation Template Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.CaseObservation#validateProblemObservationStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation Status Code</em>}</li>
  * </ul>
  * </p>
  *
@@ -101,6 +103,7 @@ public class CaseObservationOperations extends ProblemObservationOperations {
 	 * @generated
 	 */
 	public static  boolean validateCaseObservationEffectiveTimeLow(CaseObservation caseObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_CASE_OBSERVATION_EFFECTIVE_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.CASE_OBSERVATION);
@@ -121,6 +124,7 @@ public class CaseObservationOperations extends ProblemObservationOperations {
 						 PhcrPlugin.INSTANCE.getString("CaseObservationEffectiveTimeLow"),
 						 new Object [] { caseObservation }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -158,6 +162,7 @@ public class CaseObservationOperations extends ProblemObservationOperations {
 	 * @generated
 	 */
 	public static  boolean validateCaseObservationAuthor(CaseObservation caseObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_CASE_OBSERVATION_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.CASE_OBSERVATION);
@@ -178,6 +183,7 @@ public class CaseObservationOperations extends ProblemObservationOperations {
 						 PhcrPlugin.INSTANCE.getString("CaseObservationAuthor"),
 						 new Object [] { caseObservation }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -215,6 +221,7 @@ public class CaseObservationOperations extends ProblemObservationOperations {
 	 * @generated
 	 */
 	public static  boolean validateCaseObservationAuthorAssignedAuthor(CaseObservation caseObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_CASE_OBSERVATION_AUTHOR_ASSIGNED_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.CASE_OBSERVATION);
@@ -235,6 +242,7 @@ public class CaseObservationOperations extends ProblemObservationOperations {
 						 PhcrPlugin.INSTANCE.getString("CaseObservationAuthorAssignedAuthor"),
 						 new Object [] { caseObservation }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -272,6 +280,7 @@ public class CaseObservationOperations extends ProblemObservationOperations {
 	 * @generated
 	 */
 	public static  boolean validateCaseObservationClassCode(CaseObservation caseObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_CASE_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.CASE_OBSERVATION);
@@ -292,6 +301,7 @@ public class CaseObservationOperations extends ProblemObservationOperations {
 						 PhcrPlugin.INSTANCE.getString("CaseObservationClassCode"),
 						 new Object [] { caseObservation }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -309,6 +319,7 @@ public class CaseObservationOperations extends ProblemObservationOperations {
 	 * @generated
 	 */
 	public static  boolean validateCaseObservationEffectiveTime(CaseObservation caseObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_CASE_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.CASE_OBSERVATION);
@@ -329,6 +340,7 @@ public class CaseObservationOperations extends ProblemObservationOperations {
 						 PhcrPlugin.INSTANCE.getString("CaseObservationEffectiveTime"),
 						 new Object [] { caseObservation }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -346,6 +358,7 @@ public class CaseObservationOperations extends ProblemObservationOperations {
 	 * @generated
 	 */
 	public static  boolean validateCaseObservationValue(CaseObservation caseObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_CASE_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.CASE_OBSERVATION);
@@ -366,6 +379,7 @@ public class CaseObservationOperations extends ProblemObservationOperations {
 						 PhcrPlugin.INSTANCE.getString("CaseObservationValue"),
 						 new Object [] { caseObservation }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -383,6 +397,7 @@ public class CaseObservationOperations extends ProblemObservationOperations {
 	 * @generated
 	 */
 	public static  boolean validateCaseObservationProblemStatusObservation(CaseObservation caseObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_CASE_OBSERVATION_PROBLEM_STATUS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.CASE_OBSERVATION);
@@ -403,6 +418,7 @@ public class CaseObservationOperations extends ProblemObservationOperations {
 						 PhcrPlugin.INSTANCE.getString("CaseObservationProblemStatusObservation"),
 						 new Object [] { caseObservation }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -420,6 +436,7 @@ public class CaseObservationOperations extends ProblemObservationOperations {
 	 * @generated
 	 */
 	public static  boolean validateCaseObservationSignsAndSymptomsObservation(CaseObservation caseObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_CASE_OBSERVATION_SIGNS_AND_SYMPTOMS_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.CASE_OBSERVATION);
@@ -440,6 +457,7 @@ public class CaseObservationOperations extends ProblemObservationOperations {
 						 PhcrPlugin.INSTANCE.getString("CaseObservationSignsAndSymptomsObservation"),
 						 new Object [] { caseObservation }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -457,7 +475,7 @@ public class CaseObservationOperations extends ProblemObservationOperations {
 	public static  ProblemStatusObservation getProblemStatusObservation(CaseObservation caseObservation) {
 		if (GET_PROBLEM_STATUS_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(PhcrPackage.Literals.CASE_OBSERVATION, PhcrPackage.Literals.CASE_OBSERVATION.getEAllOperations().get(75));
+			helper.setOperationContext(PhcrPackage.Literals.CASE_OBSERVATION, PhcrPackage.Literals.CASE_OBSERVATION.getEAllOperations().get(76));
 			try {
 				GET_PROBLEM_STATUS_OBSERVATION__EOCL_QRY = helper.createQuery(GET_PROBLEM_STATUS_OBSERVATION__EOCL_EXP);
 			}
@@ -501,6 +519,7 @@ public class CaseObservationOperations extends ProblemObservationOperations {
 	 * @generated
 	 */
 	public static  boolean validateCaseObservationMoodCode(CaseObservation caseObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_CASE_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.CASE_OBSERVATION);
@@ -521,6 +540,7 @@ public class CaseObservationOperations extends ProblemObservationOperations {
 						 PhcrPlugin.INSTANCE.getString("CaseObservationMoodCode"),
 						 new Object [] { caseObservation }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -558,6 +578,7 @@ public class CaseObservationOperations extends ProblemObservationOperations {
 	 * @generated
 	 */
 	public static  boolean validateCaseObservationId(CaseObservation caseObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_CASE_OBSERVATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.CASE_OBSERVATION);
@@ -578,6 +599,7 @@ public class CaseObservationOperations extends ProblemObservationOperations {
 						 PhcrPlugin.INSTANCE.getString("CaseObservationId"),
 						 new Object [] { caseObservation }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -591,9 +613,7 @@ public class CaseObservationOperations extends ProblemObservationOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CASE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4')";
+	protected static final String VALIDATE_CASE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateCaseObservationCode(CaseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Case Observation Code</em>}' invariant operation.
@@ -610,9 +630,7 @@ public class CaseObservationOperations extends ProblemObservationOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
-	 * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
-	 * value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4')
+	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
 	 * @param caseObservation The receiving '<em><b>Case Observation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -621,6 +639,7 @@ public class CaseObservationOperations extends ProblemObservationOperations {
 	 */
 	
 	public static  boolean validateCaseObservationCode(CaseObservation caseObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_CASE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.CASE_OBSERVATION);
@@ -641,6 +660,90 @@ public class CaseObservationOperations extends ProblemObservationOperations {
 						 PhcrPlugin.INSTANCE.getString("CaseObservationCode"),
 						 new Object [] { caseObservation }));
 			}
+			
+			if (context != null) {
+				// generate a pass token for my dependent constraints to short-circuit or filter results
+				@SuppressWarnings("unchecked")
+				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.phcr.CaseObservationCode");
+				if (passToken == null) {
+					// anticipate a reasonably healthy model
+					passToken = new java.util.ArrayList<Object>(3);
+					context.put("org.openhealthtools.mdht.uml.cda.phcr.CaseObservationCode", passToken);
+				}
+				passToken.add(caseObservation);
+			}
+			 
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateProblemObservationCode(CaseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation Code</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateProblemObservationCode(CaseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_PROBLEM_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4')";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateProblemObservationCode(CaseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateProblemObservationCode(CaseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Constraint VALIDATE_PROBLEM_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
+	 * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
+	 * value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4')
+	 * @param caseObservation The receiving '<em><b>Case Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	
+	public static  boolean validateProblemObservationCode(CaseObservation caseObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.phcr.CaseObservationCode");
+		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(caseObservation)) {
+			// I have a free pass to short-circuit
+			return true;
+		}
+  	  
+		if (VALIDATE_PROBLEM_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(PhcrPackage.Literals.CASE_OBSERVATION);
+			try {
+				VALIDATE_PROBLEM_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(caseObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 PhcrValidator.DIAGNOSTIC_SOURCE,
+						 PhcrValidator.CASE_OBSERVATION__PROBLEM_OBSERVATION_CODE,
+						 PhcrPlugin.INSTANCE.getString("ProblemObservationCode"),
+						 new Object [] { caseObservation }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -654,9 +757,7 @@ public class CaseObservationOperations extends ProblemObservationOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CASE_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "+
-"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in "+
-"value.code = 'completed')";
+	protected static final String VALIDATE_CASE_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateCaseObservationStatusCode(CaseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Case Observation Status Code</em>}' invariant operation.
@@ -773,9 +874,7 @@ public class CaseObservationOperations extends ProblemObservationOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
-	 * let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
-	 * value.code = 'completed')
+	 * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())
 	 * @param caseObservation The receiving '<em><b>Case Observation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -784,6 +883,7 @@ public class CaseObservationOperations extends ProblemObservationOperations {
 	 */
 	
 	public static  boolean validateCaseObservationStatusCode(CaseObservation caseObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_CASE_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.CASE_OBSERVATION);
@@ -804,6 +904,19 @@ public class CaseObservationOperations extends ProblemObservationOperations {
 						 PhcrPlugin.INSTANCE.getString("CaseObservationStatusCode"),
 						 new Object [] { caseObservation }));
 			}
+			
+			if (context != null) {
+				// generate a pass token for my dependent constraints to short-circuit or filter results
+				@SuppressWarnings("unchecked")
+				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.phcr.CaseObservationStatusCode");
+				if (passToken == null) {
+					// anticipate a reasonably healthy model
+					passToken = new java.util.ArrayList<Object>(3);
+					context.put("org.openhealthtools.mdht.uml.cda.phcr.CaseObservationStatusCode", passToken);
+				}
+				passToken.add(caseObservation);
+			}
+			 
 			return false;
 		}
 		return true;
@@ -841,7 +954,7 @@ public class CaseObservationOperations extends ProblemObservationOperations {
 	public static  EList<SignsAndSymptomsObservation> getSignsAndSymptomsObservations(CaseObservation caseObservation) {
 		if (GET_SIGNS_AND_SYMPTOMS_OBSERVATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(PhcrPackage.Literals.CASE_OBSERVATION, PhcrPackage.Literals.CASE_OBSERVATION.getEAllOperations().get(76));
+			helper.setOperationContext(PhcrPackage.Literals.CASE_OBSERVATION, PhcrPackage.Literals.CASE_OBSERVATION.getEAllOperations().get(77));
 			try {
 				GET_SIGNS_AND_SYMPTOMS_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_SIGNS_AND_SYMPTOMS_OBSERVATIONS__EOCL_EXP);
 			}
@@ -887,6 +1000,7 @@ public class CaseObservationOperations extends ProblemObservationOperations {
 	 * @generated
 	 */
 	public static  boolean validateProblemObservationTemplateId(CaseObservation caseObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.CASE_OBSERVATION);
@@ -907,6 +1021,78 @@ public class CaseObservationOperations extends ProblemObservationOperations {
 						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ProblemObservationTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(caseObservation, context) }),
 						 new Object [] { caseObservation }));
 			}
+			 
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateProblemObservationStatusCode(CaseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation Status Code</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateProblemObservationStatusCode(CaseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_PROBLEM_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "+
+"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in "+
+"value.code = 'completed')";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateProblemObservationStatusCode(CaseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation Status Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateProblemObservationStatusCode(CaseObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Constraint VALIDATE_PROBLEM_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and 
+	 * let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in 
+	 * value.code = 'completed')
+	 * @param caseObservation The receiving '<em><b>Case Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	
+	public static  boolean validateProblemObservationStatusCode(CaseObservation caseObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.phcr.CaseObservationStatusCode");
+		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(caseObservation)) {
+			// I have a free pass to short-circuit
+			return true;
+		}
+  	  
+		if (VALIDATE_PROBLEM_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(PhcrPackage.Literals.CASE_OBSERVATION);
+			try {
+				VALIDATE_PROBLEM_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(caseObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 PhcrValidator.DIAGNOSTIC_SOURCE,
+						 PhcrValidator.CASE_OBSERVATION__PROBLEM_OBSERVATION_STATUS_CODE,
+						 PhcrPlugin.INSTANCE.getString("ProblemObservationStatusCode"),
+						 new Object [] { caseObservation }));
+			}
+			 
 			return false;
 		}
 		return true;

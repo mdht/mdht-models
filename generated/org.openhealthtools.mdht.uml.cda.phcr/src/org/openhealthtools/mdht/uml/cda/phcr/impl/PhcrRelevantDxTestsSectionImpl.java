@@ -149,6 +149,16 @@ public class PhcrRelevantDxTestsSectionImpl extends ResultsSectionImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
+	public boolean validateResultsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PhcrRelevantDxTestsSectionOperations.validateResultsSectionCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public PhcrRelevantDxTestsSection init() {
     	CDAUtil.init(this);
     	return this;

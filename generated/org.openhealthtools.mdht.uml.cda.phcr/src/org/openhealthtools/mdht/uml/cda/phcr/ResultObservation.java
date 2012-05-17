@@ -13,6 +13,7 @@ package org.openhealthtools.mdht.uml.cda.phcr;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+import org.eclipse.emf.common.util.EList;
 
 /**
  * <!-- begin-user-doc -->
@@ -21,7 +22,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.phcr.PhcrPackage#getResultObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation classCode='OBS' constraints.validation.error='PHCRResultObservationTemplateId PHCRResultObservationClassCode ResultObservationStatusCode PHCRResultObservationStatusCode' templateId.root='2.16.840.1.113883.10.20.15.3.58' statusCode.code='completed'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation classCode='OBS' constraints.validation.dependOn.ResultObservationStatusCode='PHCRResultObservationStatusCode' constraints.validation.info='PHCRResultObservationSpecimenCollectionProcedure PHCRResultObservationSusceptibilityResult' templateId.root='2.16.840.1.113883.10.20.15.3.58' constraints.validation.error='PHCRResultObservationTemplateId PHCRResultObservationClassCode ResultObservationStatusCode PHCRResultObservationStatusCode' statusCode.code='completed'"
  * @generated
  */
 public interface ResultObservation extends org.openhealthtools.mdht.uml.cda.ccd.ResultObservation {
@@ -50,6 +51,56 @@ public interface ResultObservation extends org.openhealthtools.mdht.uml.cda.ccd.
 	 * @generated
 	 */
 	boolean validatePHCRResultObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.procedure.oclIsUndefined() and entryRelationship.procedure.oclIsKindOf(phcr::SpecimenCollectionProcedure) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.procedure.oclIsUndefined() and entryRelationship.procedure.oclIsKindOf(phcr::SpecimenCollectionProcedure) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)'"
+	 * @generated
+	 */
+	boolean validatePHCRResultObservationSpecimenCollectionProcedure(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(phcr::SusceptibilityResult) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(phcr::SusceptibilityResult) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)'"
+	 * @generated
+	 */
+	boolean validatePHCRResultObservationSusceptibilityResult(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(phcr::SpecimenCollectionProcedure)).oclAsType(phcr::SpecimenCollectionProcedure)
+	 * <!-- end-model-doc -->
+	 * @model kind="operation" required="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(phcr::SpecimenCollectionProcedure)).oclAsType(phcr::SpecimenCollectionProcedure)'"
+	 * @generated
+	 */
+	EList<SpecimenCollectionProcedure> getSpecimenCollectionProcedures();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(phcr::SusceptibilityResult)).oclAsType(phcr::SusceptibilityResult)
+	 * <!-- end-model-doc -->
+	 * @model kind="operation" required="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(phcr::SusceptibilityResult)).oclAsType(phcr::SusceptibilityResult)'"
+	 * @generated
+	 */
+	EList<SusceptibilityResult> getSusceptibilityResults();
 
 	/**
 	 * <!-- begin-user-doc -->

@@ -50,6 +50,7 @@ import org.openhealthtools.mdht.uml.cda.phcr.util.PhcrValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrRelevantDxTestsSection#getResultObservations() <em>Get Result Observations</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrRelevantDxTestsSection#getImagingObservations() <em>Get Imaging Observations</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrRelevantDxTestsSection#validateResultsSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Results Section Template Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrRelevantDxTestsSection#validateResultsSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Results Section Code</em>}</li>
  * </ul>
  * </p>
  *
@@ -73,9 +74,7 @@ public class PhcrRelevantDxTestsSectionOperations extends ResultsSectionOperatio
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PHCR_RELEVANT_DX_TESTS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
-"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "+
-"value.code = '30954-2' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_PHCR_RELEVANT_DX_TESTS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePhcrRelevantDxTestsSectionCode(PhcrRelevantDxTestsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Relevant Dx Tests Section Code</em>}' invariant operation.
@@ -92,9 +91,7 @@ public class PhcrRelevantDxTestsSectionOperations extends ResultsSectionOperatio
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
-	 * value.code = '30954-2' and value.codeSystem = '2.16.840.1.113883.6.1')
+	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
 	 * @param phcrRelevantDxTestsSection The receiving '<em><b>Relevant Dx Tests Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -103,6 +100,7 @@ public class PhcrRelevantDxTestsSectionOperations extends ResultsSectionOperatio
 	 */
 	
 	public static  boolean validatePhcrRelevantDxTestsSectionCode(PhcrRelevantDxTestsSection phcrRelevantDxTestsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PHCR_RELEVANT_DX_TESTS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.PHCR_RELEVANT_DX_TESTS_SECTION);
@@ -123,6 +121,19 @@ public class PhcrRelevantDxTestsSectionOperations extends ResultsSectionOperatio
 						 PhcrPlugin.INSTANCE.getString("PhcrRelevantDxTestsSectionCode"),
 						 new Object [] { phcrRelevantDxTestsSection }));
 			}
+			
+			if (context != null) {
+				// generate a pass token for my dependent constraints to short-circuit or filter results
+				@SuppressWarnings("unchecked")
+				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.phcr.PhcrRelevantDxTestsSectionCode");
+				if (passToken == null) {
+					// anticipate a reasonably healthy model
+					passToken = new java.util.ArrayList<Object>(3);
+					context.put("org.openhealthtools.mdht.uml.cda.phcr.PhcrRelevantDxTestsSectionCode", passToken);
+				}
+				passToken.add(phcrRelevantDxTestsSection);
+			}
+			 
 			return false;
 		}
 		return true;
@@ -160,6 +171,7 @@ public class PhcrRelevantDxTestsSectionOperations extends ResultsSectionOperatio
 	 * @generated
 	 */
 	public static  boolean validatePhcrRelevantDxTestsSectionTitle(PhcrRelevantDxTestsSection phcrRelevantDxTestsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PHCR_RELEVANT_DX_TESTS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.PHCR_RELEVANT_DX_TESTS_SECTION);
@@ -180,6 +192,7 @@ public class PhcrRelevantDxTestsSectionOperations extends ResultsSectionOperatio
 						 PhcrPlugin.INSTANCE.getString("PhcrRelevantDxTestsSectionTitle"),
 						 new Object [] { phcrRelevantDxTestsSection }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -217,6 +230,7 @@ public class PhcrRelevantDxTestsSectionOperations extends ResultsSectionOperatio
 	 * @generated
 	 */
 	public static  boolean validatePhcrRelevantDxTestsSectionText(PhcrRelevantDxTestsSection phcrRelevantDxTestsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PHCR_RELEVANT_DX_TESTS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.PHCR_RELEVANT_DX_TESTS_SECTION);
@@ -237,6 +251,7 @@ public class PhcrRelevantDxTestsSectionOperations extends ResultsSectionOperatio
 						 PhcrPlugin.INSTANCE.getString("PhcrRelevantDxTestsSectionText"),
 						 new Object [] { phcrRelevantDxTestsSection }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -274,6 +289,7 @@ public class PhcrRelevantDxTestsSectionOperations extends ResultsSectionOperatio
 	 * @generated
 	 */
 	public static  boolean validatePhcrRelevantDxTestsSectionResultOrganizer(PhcrRelevantDxTestsSection phcrRelevantDxTestsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PHCR_RELEVANT_DX_TESTS_SECTION_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.PHCR_RELEVANT_DX_TESTS_SECTION);
@@ -294,6 +310,7 @@ public class PhcrRelevantDxTestsSectionOperations extends ResultsSectionOperatio
 						 PhcrPlugin.INSTANCE.getString("PhcrRelevantDxTestsSectionResultOrganizer"),
 						 new Object [] { phcrRelevantDxTestsSection }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -331,6 +348,7 @@ public class PhcrRelevantDxTestsSectionOperations extends ResultsSectionOperatio
 	 * @generated
 	 */
 	public static  boolean validatePhcrRelevantDxTestsSectionResultObservation(PhcrRelevantDxTestsSection phcrRelevantDxTestsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PHCR_RELEVANT_DX_TESTS_SECTION_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.PHCR_RELEVANT_DX_TESTS_SECTION);
@@ -351,6 +369,7 @@ public class PhcrRelevantDxTestsSectionOperations extends ResultsSectionOperatio
 						 PhcrPlugin.INSTANCE.getString("PhcrRelevantDxTestsSectionResultObservation"),
 						 new Object [] { phcrRelevantDxTestsSection }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -388,6 +407,7 @@ public class PhcrRelevantDxTestsSectionOperations extends ResultsSectionOperatio
 	 * @generated
 	 */
 	public static  boolean validatePhcrRelevantDxTestsSectionImagingObservation(PhcrRelevantDxTestsSection phcrRelevantDxTestsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PHCR_RELEVANT_DX_TESTS_SECTION_IMAGING_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.PHCR_RELEVANT_DX_TESTS_SECTION);
@@ -408,6 +428,7 @@ public class PhcrRelevantDxTestsSectionOperations extends ResultsSectionOperatio
 						 PhcrPlugin.INSTANCE.getString("PhcrRelevantDxTestsSectionImagingObservation"),
 						 new Object [] { phcrRelevantDxTestsSection }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -583,6 +604,7 @@ public class PhcrRelevantDxTestsSectionOperations extends ResultsSectionOperatio
 	 * @generated
 	 */
 	public static  boolean validateResultsSectionTemplateId(PhcrRelevantDxTestsSection phcrRelevantDxTestsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_RESULTS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.PHCR_RELEVANT_DX_TESTS_SECTION);
@@ -603,6 +625,78 @@ public class PhcrRelevantDxTestsSectionOperations extends ResultsSectionOperatio
 						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ResultsSectionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(phcrRelevantDxTestsSection, context) }),
 						 new Object [] { phcrRelevantDxTestsSection }));
 			}
+			 
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateResultsSectionCode(PhcrRelevantDxTestsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Results Section Code</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateResultsSectionCode(PhcrRelevantDxTestsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_RESULTS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
+"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "+
+"value.code = '30954-2' and value.codeSystem = '2.16.840.1.113883.6.1')";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateResultsSectionCode(PhcrRelevantDxTestsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Results Section Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateResultsSectionCode(PhcrRelevantDxTestsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Constraint VALIDATE_RESULTS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
+	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+	 * value.code = '30954-2' and value.codeSystem = '2.16.840.1.113883.6.1')
+	 * @param phcrRelevantDxTestsSection The receiving '<em><b>Relevant Dx Tests Section</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	
+	public static  boolean validateResultsSectionCode(PhcrRelevantDxTestsSection phcrRelevantDxTestsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.phcr.PhcrRelevantDxTestsSectionCode");
+		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(phcrRelevantDxTestsSection)) {
+			// I have a free pass to short-circuit
+			return true;
+		}
+  	  
+		if (VALIDATE_RESULTS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(PhcrPackage.Literals.PHCR_RELEVANT_DX_TESTS_SECTION);
+			try {
+				VALIDATE_RESULTS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_RESULTS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_RESULTS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(phcrRelevantDxTestsSection)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 PhcrValidator.DIAGNOSTIC_SOURCE,
+						 PhcrValidator.PHCR_RELEVANT_DX_TESTS_SECTION__RESULTS_SECTION_CODE,
+						 PhcrPlugin.INSTANCE.getString("ResultsSectionCode"),
+						 new Object [] { phcrRelevantDxTestsSection }));
+			}
+			 
 			return false;
 		}
 		return true;

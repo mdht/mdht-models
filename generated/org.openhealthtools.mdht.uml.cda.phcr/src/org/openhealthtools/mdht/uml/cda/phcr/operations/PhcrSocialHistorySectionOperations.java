@@ -56,6 +56,7 @@ import org.openhealthtools.mdht.uml.cda.phcr.util.PhcrValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrSocialHistorySection#getOccupationObservations() <em>Get Occupation Observations</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrSocialHistorySection#getPregnancyObservations() <em>Get Pregnancy Observations</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrSocialHistorySection#validateSocialHistorySectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section Template Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrSocialHistorySection#validateSocialHistorySectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section Code</em>}</li>
  * </ul>
  * </p>
  *
@@ -79,9 +80,7 @@ public class PhcrSocialHistorySectionOperations extends SocialHistorySectionOper
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
-"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "+
-"value.code = '29762-2' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePhcrSocialHistorySectionCode(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Social History Section Code</em>}' invariant operation.
@@ -98,9 +97,7 @@ public class PhcrSocialHistorySectionOperations extends SocialHistorySectionOper
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
-	 * value.code = '29762-2' and value.codeSystem = '2.16.840.1.113883.6.1')
+	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
 	 * @param phcrSocialHistorySection The receiving '<em><b>Social History Section</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
@@ -109,6 +106,7 @@ public class PhcrSocialHistorySectionOperations extends SocialHistorySectionOper
 	 */
 	
 	public static  boolean validatePhcrSocialHistorySectionCode(PhcrSocialHistorySection phcrSocialHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.PHCR_SOCIAL_HISTORY_SECTION);
@@ -129,6 +127,19 @@ public class PhcrSocialHistorySectionOperations extends SocialHistorySectionOper
 						 PhcrPlugin.INSTANCE.getString("PhcrSocialHistorySectionCode"),
 						 new Object [] { phcrSocialHistorySection }));
 			}
+			
+			if (context != null) {
+				// generate a pass token for my dependent constraints to short-circuit or filter results
+				@SuppressWarnings("unchecked")
+				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.phcr.PhcrSocialHistorySectionCode");
+				if (passToken == null) {
+					// anticipate a reasonably healthy model
+					passToken = new java.util.ArrayList<Object>(3);
+					context.put("org.openhealthtools.mdht.uml.cda.phcr.PhcrSocialHistorySectionCode", passToken);
+				}
+				passToken.add(phcrSocialHistorySection);
+			}
+			 
 			return false;
 		}
 		return true;
@@ -166,6 +177,7 @@ public class PhcrSocialHistorySectionOperations extends SocialHistorySectionOper
 	 * @generated
 	 */
 	public static  boolean validatePhcrSocialHistorySectionTitle(PhcrSocialHistorySection phcrSocialHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.PHCR_SOCIAL_HISTORY_SECTION);
@@ -186,6 +198,7 @@ public class PhcrSocialHistorySectionOperations extends SocialHistorySectionOper
 						 PhcrPlugin.INSTANCE.getString("PhcrSocialHistorySectionTitle"),
 						 new Object [] { phcrSocialHistorySection }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -223,6 +236,7 @@ public class PhcrSocialHistorySectionOperations extends SocialHistorySectionOper
 	 * @generated
 	 */
 	public static  boolean validatePhcrSocialHistorySectionText(PhcrSocialHistorySection phcrSocialHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.PHCR_SOCIAL_HISTORY_SECTION);
@@ -243,6 +257,7 @@ public class PhcrSocialHistorySectionOperations extends SocialHistorySectionOper
 						 PhcrPlugin.INSTANCE.getString("PhcrSocialHistorySectionText"),
 						 new Object [] { phcrSocialHistorySection }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -280,6 +295,7 @@ public class PhcrSocialHistorySectionOperations extends SocialHistorySectionOper
 	 * @generated
 	 */
 	public static  boolean validatePhcrSocialHistorySectionGeotemporalHistoryObservation(PhcrSocialHistorySection phcrSocialHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_GEOTEMPORAL_HISTORY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.PHCR_SOCIAL_HISTORY_SECTION);
@@ -300,6 +316,7 @@ public class PhcrSocialHistorySectionOperations extends SocialHistorySectionOper
 						 PhcrPlugin.INSTANCE.getString("PhcrSocialHistorySectionGeotemporalHistoryObservation"),
 						 new Object [] { phcrSocialHistorySection }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -337,6 +354,7 @@ public class PhcrSocialHistorySectionOperations extends SocialHistorySectionOper
 	 * @generated
 	 */
 	public static  boolean validatePhcrSocialHistorySectionMostRecentTimeArrivedInUSAObservation(PhcrSocialHistorySection phcrSocialHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.PHCR_SOCIAL_HISTORY_SECTION);
@@ -357,6 +375,7 @@ public class PhcrSocialHistorySectionOperations extends SocialHistorySectionOper
 						 PhcrPlugin.INSTANCE.getString("PhcrSocialHistorySectionMostRecentTimeArrivedInUSAObservation"),
 						 new Object [] { phcrSocialHistorySection }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -394,6 +413,7 @@ public class PhcrSocialHistorySectionOperations extends SocialHistorySectionOper
 	 * @generated
 	 */
 	public static  boolean validatePhcrSocialHistorySectionRaceObservation(PhcrSocialHistorySection phcrSocialHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_RACE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.PHCR_SOCIAL_HISTORY_SECTION);
@@ -414,6 +434,7 @@ public class PhcrSocialHistorySectionOperations extends SocialHistorySectionOper
 						 PhcrPlugin.INSTANCE.getString("PhcrSocialHistorySectionRaceObservation"),
 						 new Object [] { phcrSocialHistorySection }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -451,6 +472,7 @@ public class PhcrSocialHistorySectionOperations extends SocialHistorySectionOper
 	 * @generated
 	 */
 	public static  boolean validatePhcrSocialHistorySectionOccupationObservation(PhcrSocialHistorySection phcrSocialHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_OCCUPATION_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.PHCR_SOCIAL_HISTORY_SECTION);
@@ -471,6 +493,7 @@ public class PhcrSocialHistorySectionOperations extends SocialHistorySectionOper
 						 PhcrPlugin.INSTANCE.getString("PhcrSocialHistorySectionOccupationObservation"),
 						 new Object [] { phcrSocialHistorySection }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -508,6 +531,7 @@ public class PhcrSocialHistorySectionOperations extends SocialHistorySectionOper
 	 * @generated
 	 */
 	public static  boolean validatePhcrSocialHistorySectionPregnancyObservation(PhcrSocialHistorySection phcrSocialHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PHCR_SOCIAL_HISTORY_SECTION_PREGNANCY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.PHCR_SOCIAL_HISTORY_SECTION);
@@ -528,6 +552,7 @@ public class PhcrSocialHistorySectionOperations extends SocialHistorySectionOper
 						 PhcrPlugin.INSTANCE.getString("PhcrSocialHistorySectionPregnancyObservation"),
 						 new Object [] { phcrSocialHistorySection }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -793,6 +818,7 @@ public class PhcrSocialHistorySectionOperations extends SocialHistorySectionOper
 	 * @generated
 	 */
 	public static  boolean validateSocialHistorySectionTemplateId(PhcrSocialHistorySection phcrSocialHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_SOCIAL_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.PHCR_SOCIAL_HISTORY_SECTION);
@@ -813,6 +839,78 @@ public class PhcrSocialHistorySectionOperations extends SocialHistorySectionOper
 						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SocialHistorySectionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(phcrSocialHistorySection, context) }),
 						 new Object [] { phcrSocialHistorySection }));
 			}
+			 
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateSocialHistorySectionCode(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section Code</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateSocialHistorySectionCode(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_SOCIAL_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
+"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "+
+"value.code = '29762-2' and value.codeSystem = '2.16.840.1.113883.6.1')";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateSocialHistorySectionCode(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Social History Section Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateSocialHistorySectionCode(PhcrSocialHistorySection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Constraint VALIDATE_SOCIAL_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
+	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
+	 * value.code = '29762-2' and value.codeSystem = '2.16.840.1.113883.6.1')
+	 * @param phcrSocialHistorySection The receiving '<em><b>Social History Section</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	
+	public static  boolean validateSocialHistorySectionCode(PhcrSocialHistorySection phcrSocialHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.phcr.PhcrSocialHistorySectionCode");
+		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(phcrSocialHistorySection)) {
+			// I have a free pass to short-circuit
+			return true;
+		}
+  	  
+		if (VALIDATE_SOCIAL_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(PhcrPackage.Literals.PHCR_SOCIAL_HISTORY_SECTION);
+			try {
+				VALIDATE_SOCIAL_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SOCIAL_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_SOCIAL_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(phcrSocialHistorySection)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 PhcrValidator.DIAGNOSTIC_SOURCE,
+						 PhcrValidator.PHCR_SOCIAL_HISTORY_SECTION__SOCIAL_HISTORY_SECTION_CODE,
+						 PhcrPlugin.INSTANCE.getString("SocialHistorySectionCode"),
+						 new Object [] { phcrSocialHistorySection }));
+			}
+			 
 			return false;
 		}
 		return true;

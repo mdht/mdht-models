@@ -90,8 +90,26 @@ public class EstimatedDateOfDeliveryObservationImpl extends ObservationImpl impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateEstimatedDateOfDeliveryObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EstimatedDateOfDeliveryObservationOperations.validateEstimatedDateOfDeliveryObservationCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateEstimatedDateOfDeliveryObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EstimatedDateOfDeliveryObservationOperations.validateEstimatedDateOfDeliveryObservationStatusCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEstimatedDateOfDeliveryObservationStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EstimatedDateOfDeliveryObservationOperations.validateEstimatedDateOfDeliveryObservationStatusCodeP(this, diagnostics, context);
 	}
 
 	/**

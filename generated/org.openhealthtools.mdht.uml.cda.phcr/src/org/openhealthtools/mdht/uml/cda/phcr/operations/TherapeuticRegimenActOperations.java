@@ -43,6 +43,7 @@ import org.openhealthtools.mdht.uml.cda.phcr.util.PhcrValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.TherapeuticRegimenAct#validateTherapeuticRegimenActClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Therapeutic Regimen Act Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.TherapeuticRegimenAct#validateTherapeuticRegimenActMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Therapeutic Regimen Act Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.TherapeuticRegimenAct#validateTherapeuticRegimenActNegationInd(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Therapeutic Regimen Act Negation Ind</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.TherapeuticRegimenAct#validateTherapeuticRegimenActCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Therapeutic Regimen Act Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.TherapeuticRegimenAct#validateTherapeuticRegimenActCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Therapeutic Regimen Act Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.TherapeuticRegimenAct#validateTherapeuticRegimenActStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Therapeutic Regimen Act Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.TherapeuticRegimenAct#validateTherapeuticRegimenActStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Therapeutic Regimen Act Status Code P</em>}</li>
@@ -97,6 +98,7 @@ public class TherapeuticRegimenActOperations extends ClinicalStatementOperations
 	 * @generated
 	 */
 	public static  boolean validateTherapeuticRegimenActTemplateId(TherapeuticRegimenAct therapeuticRegimenAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_THERAPEUTIC_REGIMEN_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.THERAPEUTIC_REGIMEN_ACT);
@@ -117,6 +119,7 @@ public class TherapeuticRegimenActOperations extends ClinicalStatementOperations
 						 PhcrPlugin.INSTANCE.getString("TherapeuticRegimenActTemplateId"),
 						 new Object [] { therapeuticRegimenAct }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -154,6 +157,7 @@ public class TherapeuticRegimenActOperations extends ClinicalStatementOperations
 	 * @generated
 	 */
 	public static  boolean validateTherapeuticRegimenActClassCode(TherapeuticRegimenAct therapeuticRegimenAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_THERAPEUTIC_REGIMEN_ACT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.THERAPEUTIC_REGIMEN_ACT);
@@ -174,6 +178,7 @@ public class TherapeuticRegimenActOperations extends ClinicalStatementOperations
 						 PhcrPlugin.INSTANCE.getString("TherapeuticRegimenActClassCode"),
 						 new Object [] { therapeuticRegimenAct }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -193,6 +198,13 @@ public class TherapeuticRegimenActOperations extends ClinicalStatementOperations
 	 * @generated
 	 */
 	public static  boolean validateTherapeuticRegimenActCode(TherapeuticRegimenAct therapeuticRegimenAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.phcr.TherapeuticRegimenActCodeP");
+		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(therapeuticRegimenAct)) {
+			// I have a free pass to short-circuit
+			return true;
+		}
+  	  
 		if (VALIDATE_THERAPEUTIC_REGIMEN_ACT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.THERAPEUTIC_REGIMEN_ACT);
@@ -213,6 +225,7 @@ public class TherapeuticRegimenActOperations extends ClinicalStatementOperations
 						 PhcrPlugin.INSTANCE.getString("TherapeuticRegimenActCode"),
 						 new Object [] { therapeuticRegimenAct }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -250,6 +263,7 @@ public class TherapeuticRegimenActOperations extends ClinicalStatementOperations
 	 * @generated
 	 */
 	public static  boolean validateTherapeuticRegimenActMoodCode(TherapeuticRegimenAct therapeuticRegimenAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_THERAPEUTIC_REGIMEN_ACT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.THERAPEUTIC_REGIMEN_ACT);
@@ -270,6 +284,7 @@ public class TherapeuticRegimenActOperations extends ClinicalStatementOperations
 						 PhcrPlugin.INSTANCE.getString("TherapeuticRegimenActMoodCode"),
 						 new Object [] { therapeuticRegimenAct }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -294,6 +309,66 @@ public class TherapeuticRegimenActOperations extends ClinicalStatementOperations
 	 * @ordered
 	 */
 	protected static Constraint VALIDATE_THERAPEUTIC_REGIMEN_ACT_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * not self.negationInd.oclIsUndefined()
+	 * @param therapeuticRegimenAct The receiving '<em><b>Therapeutic Regimen Act</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	public static  boolean validateTherapeuticRegimenActNegationInd(TherapeuticRegimenAct therapeuticRegimenAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_THERAPEUTIC_REGIMEN_ACT_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(PhcrPackage.Literals.THERAPEUTIC_REGIMEN_ACT);
+			try {
+				VALIDATE_THERAPEUTIC_REGIMEN_ACT_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_THERAPEUTIC_REGIMEN_ACT_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_THERAPEUTIC_REGIMEN_ACT_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(therapeuticRegimenAct)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 PhcrValidator.DIAGNOSTIC_SOURCE,
+						 PhcrValidator.THERAPEUTIC_REGIMEN_ACT__THERAPEUTIC_REGIMEN_ACT_NEGATION_IND,
+						 PhcrPlugin.INSTANCE.getString("TherapeuticRegimenActNegationInd"),
+						 new Object [] { therapeuticRegimenAct }));
+			}
+			 
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateTherapeuticRegimenActCodeP(TherapeuticRegimenAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Therapeutic Regimen Act Code P</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateTherapeuticRegimenActCodeP(TherapeuticRegimenAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_THERAPEUTIC_REGIMEN_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateTherapeuticRegimenActCodeP(TherapeuticRegimenAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Therapeutic Regimen Act Code P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateTherapeuticRegimenActCodeP(TherapeuticRegimenAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Constraint VALIDATE_THERAPEUTIC_REGIMEN_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateTherapeuticRegimenActCode(TherapeuticRegimenAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Therapeutic Regimen Act Code</em>}' operation.
@@ -321,34 +396,49 @@ public class TherapeuticRegimenActOperations extends ClinicalStatementOperations
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * not self.negationInd.oclIsUndefined()
+	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
 	 * @param therapeuticRegimenAct The receiving '<em><b>Therapeutic Regimen Act</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateTherapeuticRegimenActNegationInd(TherapeuticRegimenAct therapeuticRegimenAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_THERAPEUTIC_REGIMEN_ACT_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+	
+	public static  boolean validateTherapeuticRegimenActCodeP(TherapeuticRegimenAct therapeuticRegimenAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_THERAPEUTIC_REGIMEN_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.THERAPEUTIC_REGIMEN_ACT);
 			try {
-				VALIDATE_THERAPEUTIC_REGIMEN_ACT_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_THERAPEUTIC_REGIMEN_ACT_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_THERAPEUTIC_REGIMEN_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_THERAPEUTIC_REGIMEN_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_THERAPEUTIC_REGIMEN_ACT_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(therapeuticRegimenAct)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_THERAPEUTIC_REGIMEN_ACT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(therapeuticRegimenAct)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 PhcrValidator.DIAGNOSTIC_SOURCE,
-						 PhcrValidator.THERAPEUTIC_REGIMEN_ACT__THERAPEUTIC_REGIMEN_ACT_NEGATION_IND,
-						 PhcrPlugin.INSTANCE.getString("TherapeuticRegimenActNegationInd"),
+						 PhcrValidator.THERAPEUTIC_REGIMEN_ACT__THERAPEUTIC_REGIMEN_ACT_CODE_P,
+						 PhcrPlugin.INSTANCE.getString("TherapeuticRegimenActCodeP"),
 						 new Object [] { therapeuticRegimenAct }));
 			}
+			
+			if (context != null) {
+				// generate a pass token for my dependent constraints to short-circuit or filter results
+				@SuppressWarnings("unchecked")
+				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.phcr.TherapeuticRegimenActCodeP");
+				if (passToken == null) {
+					// anticipate a reasonably healthy model
+					passToken = new java.util.ArrayList<Object>(3);
+					context.put("org.openhealthtools.mdht.uml.cda.phcr.TherapeuticRegimenActCodeP", passToken);
+				}
+				passToken.add(therapeuticRegimenAct);
+			}
+			 
 			return false;
 		}
 		return true;
@@ -390,6 +480,7 @@ public class TherapeuticRegimenActOperations extends ClinicalStatementOperations
 	 * @generated
 	 */
 	public static  boolean validateTherapeuticRegimenActStatusCode(TherapeuticRegimenAct therapeuticRegimenAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_THERAPEUTIC_REGIMEN_ACT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.THERAPEUTIC_REGIMEN_ACT);
@@ -410,6 +501,7 @@ public class TherapeuticRegimenActOperations extends ClinicalStatementOperations
 						 PhcrPlugin.INSTANCE.getString("TherapeuticRegimenActStatusCode"),
 						 new Object [] { therapeuticRegimenAct }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -449,6 +541,7 @@ public class TherapeuticRegimenActOperations extends ClinicalStatementOperations
 	 */
 	
 	public static  boolean validateTherapeuticRegimenActStatusCodeP(TherapeuticRegimenAct therapeuticRegimenAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_THERAPEUTIC_REGIMEN_ACT_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.THERAPEUTIC_REGIMEN_ACT);
@@ -469,6 +562,7 @@ public class TherapeuticRegimenActOperations extends ClinicalStatementOperations
 						 PhcrPlugin.INSTANCE.getString("TherapeuticRegimenActStatusCodeP"),
 						 new Object [] { therapeuticRegimenAct }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -506,6 +600,7 @@ public class TherapeuticRegimenActOperations extends ClinicalStatementOperations
 	 * @generated
 	 */
 	public static  boolean validateTherapeuticRegimenActTreatmentGivenSubstanceAdministration(TherapeuticRegimenAct therapeuticRegimenAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_THERAPEUTIC_REGIMEN_ACT_TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.THERAPEUTIC_REGIMEN_ACT);
@@ -526,6 +621,7 @@ public class TherapeuticRegimenActOperations extends ClinicalStatementOperations
 						 PhcrPlugin.INSTANCE.getString("TherapeuticRegimenActTreatmentGivenSubstanceAdministration"),
 						 new Object [] { therapeuticRegimenAct }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -563,6 +659,7 @@ public class TherapeuticRegimenActOperations extends ClinicalStatementOperations
 	 * @generated
 	 */
 	public static  boolean validateTherapeuticRegimenActTreatmentNotGivenSubstanceAdministration(TherapeuticRegimenAct therapeuticRegimenAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_THERAPEUTIC_REGIMEN_ACT_TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.THERAPEUTIC_REGIMEN_ACT);
@@ -583,6 +680,7 @@ public class TherapeuticRegimenActOperations extends ClinicalStatementOperations
 						 PhcrPlugin.INSTANCE.getString("TherapeuticRegimenActTreatmentNotGivenSubstanceAdministration"),
 						 new Object [] { therapeuticRegimenAct }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -620,7 +718,7 @@ public class TherapeuticRegimenActOperations extends ClinicalStatementOperations
 	public static  EList<TreatmentGivenSubstanceAdministration> getTreatmentGivenSubstanceAdministrations(TherapeuticRegimenAct therapeuticRegimenAct) {
 		if (GET_TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(PhcrPackage.Literals.THERAPEUTIC_REGIMEN_ACT, PhcrPackage.Literals.THERAPEUTIC_REGIMEN_ACT.getEAllOperations().get(60));
+			helper.setOperationContext(PhcrPackage.Literals.THERAPEUTIC_REGIMEN_ACT, PhcrPackage.Literals.THERAPEUTIC_REGIMEN_ACT.getEAllOperations().get(61));
 			try {
 				GET_TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATIONS__EOCL_QRY = helper.createQuery(GET_TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATIONS__EOCL_EXP);
 			}
@@ -666,7 +764,7 @@ public class TherapeuticRegimenActOperations extends ClinicalStatementOperations
 	public static  EList<TreatmentNotGivenSubstanceAdministration> getTreatmentNotGivenSubstanceAdministrations(TherapeuticRegimenAct therapeuticRegimenAct) {
 		if (GET_TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATIONS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(PhcrPackage.Literals.THERAPEUTIC_REGIMEN_ACT, PhcrPackage.Literals.THERAPEUTIC_REGIMEN_ACT.getEAllOperations().get(61));
+			helper.setOperationContext(PhcrPackage.Literals.THERAPEUTIC_REGIMEN_ACT, PhcrPackage.Literals.THERAPEUTIC_REGIMEN_ACT.getEAllOperations().get(62));
 			try {
 				GET_TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATIONS__EOCL_QRY = helper.createQuery(GET_TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATIONS__EOCL_EXP);
 			}

@@ -100,8 +100,26 @@ public class PregnancyObservationImpl extends ObservationImpl implements Pregnan
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validatePregnancyObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PregnancyObservationOperations.validatePregnancyObservationCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validatePregnancyObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PregnancyObservationOperations.validatePregnancyObservationStatusCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePregnancyObservationStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PregnancyObservationOperations.validatePregnancyObservationStatusCodeP(this, diagnostics, context);
 	}
 
 	/**

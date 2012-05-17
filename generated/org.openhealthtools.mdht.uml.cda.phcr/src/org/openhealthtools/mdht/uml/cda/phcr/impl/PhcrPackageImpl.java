@@ -31,6 +31,7 @@ import org.openhealthtools.mdht.uml.cda.phcr.PhcrEncountersSection;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrFactory;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrPackage;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrRelevantDxTestsSection;
+import org.openhealthtools.mdht.uml.cda.phcr.PhcrRelevantMedicalConditionHistoryObservation;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrSocialHistorySection;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrTreatmentInformationSection;
 import org.openhealthtools.mdht.uml.cda.phcr.PregnancyObservation;
@@ -168,6 +169,12 @@ public class PhcrPackageImpl extends EPackageImpl implements PhcrPackage
 	 * @generated
 	 */
 	private EClass patientConditionDeceasedObservationEClass = null;
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass phcrRelevantMedicalConditionHistoryObservationEClass = null;
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -449,6 +456,15 @@ public class PhcrPackageImpl extends EPackageImpl implements PhcrPackage
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getPhcrRelevantMedicalConditionHistoryObservation() {
+		return phcrRelevantMedicalConditionHistoryObservationEClass;
+	}
+
+		/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getSignsAndSymptomsObservation() {
 		return signsAndSymptomsObservationEClass;
 	}
@@ -545,6 +561,8 @@ public class PhcrPackageImpl extends EPackageImpl implements PhcrPackage
 
 		patientConditionDeceasedObservationEClass = createEClass(PATIENT_CONDITION_DECEASED_OBSERVATION);
 
+		phcrRelevantMedicalConditionHistoryObservationEClass = createEClass(PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION);
+
 		phcrTreatmentInformationSectionEClass = createEClass(PHCR_TREATMENT_INFORMATION_SECTION);
 
 		therapeuticRegimenActEClass = createEClass(THERAPEUTIC_REGIMEN_ACT);
@@ -563,9 +581,9 @@ public class PhcrPackageImpl extends EPackageImpl implements PhcrPackage
 
 		specimenCollectionProcedureEClass = createEClass(SPECIMEN_COLLECTION_PROCEDURE);
 
-		imagingObservationEClass = createEClass(IMAGING_OBSERVATION);
-
 		susceptibilityResultEClass = createEClass(SUSCEPTIBILITY_RESULT);
+
+		imagingObservationEClass = createEClass(IMAGING_OBSERVATION);
 	}
 
   /**
@@ -614,6 +632,7 @@ public class PhcrPackageImpl extends EPackageImpl implements PhcrPackage
 		signsAndSymptomsObservationEClass.getESuperTypes().add(theCDAPackage.getObservation());
 		patientConditionAliveObservationEClass.getESuperTypes().add(theCDAPackage.getObservation());
 		patientConditionDeceasedObservationEClass.getESuperTypes().add(theCDAPackage.getObservation());
+		phcrRelevantMedicalConditionHistoryObservationEClass.getESuperTypes().add(theCDAPackage.getObservation());
 		phcrTreatmentInformationSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
 		therapeuticRegimenActEClass.getESuperTypes().add(theCDAPackage.getAct());
 		treatmentGivenSubstanceAdministrationEClass.getESuperTypes().add(theCDAPackage.getSubstanceAdministration());
@@ -623,8 +642,8 @@ public class PhcrPackageImpl extends EPackageImpl implements PhcrPackage
 		resultOrganizerEClass.getESuperTypes().add(theCCDPackage.getResultOrganizer());
 		resultObservationEClass.getESuperTypes().add(theCCDPackage.getResultObservation());
 		specimenCollectionProcedureEClass.getESuperTypes().add(theCDAPackage.getProcedure());
-		imagingObservationEClass.getESuperTypes().add(theCCDPackage.getProblemObservation());
 		susceptibilityResultEClass.getESuperTypes().add(theCDAPackage.getObservation());
+		imagingObservationEClass.getESuperTypes().add(theCCDPackage.getProblemObservation());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(publicHealthCaseReportEClass, PublicHealthCaseReport.class, "PublicHealthCaseReport", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -774,6 +793,15 @@ public class PhcrPackageImpl extends EPackageImpl implements PhcrPackage
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(publicHealthCaseReportEClass, ecorePackage.getEBoolean(), "validatePublicHealthCaseReportTemplateId", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(publicHealthCaseReportEClass, ecorePackage.getEBoolean(), "validatePublicHealthCaseReportCodeP", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -970,6 +998,15 @@ public class PhcrPackageImpl extends EPackageImpl implements PhcrPackage
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
+		op = addEOperation(geotemporalHistoryObservationEClass, ecorePackage.getEBoolean(), "validateGeotemporalHistoryObservationCodeP", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
 		op = addEOperation(geotemporalHistoryObservationEClass, ecorePackage.getEBoolean(), "validateGeotemporalHistoryObservationCode", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
@@ -989,6 +1026,15 @@ public class PhcrPackageImpl extends EPackageImpl implements PhcrPackage
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(geotemporalHistoryObservationEClass, ecorePackage.getEBoolean(), "validateGeotemporalHistoryObservationStatusCode", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(geotemporalHistoryObservationEClass, ecorePackage.getEBoolean(), "validateGeotemporalHistoryObservationStatusCodeP", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1044,6 +1090,15 @@ public class PhcrPackageImpl extends EPackageImpl implements PhcrPackage
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
+		op = addEOperation(mostRecentTimeArrivedInUSAObservationEClass, ecorePackage.getEBoolean(), "validateMostRecentTimeArrivedInUSAObservationCodeP", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
 		op = addEOperation(mostRecentTimeArrivedInUSAObservationEClass, ecorePackage.getEBoolean(), "validateMostRecentTimeArrivedInUSAObservationCode", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
@@ -1054,6 +1109,15 @@ public class PhcrPackageImpl extends EPackageImpl implements PhcrPackage
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(mostRecentTimeArrivedInUSAObservationEClass, ecorePackage.getEBoolean(), "validateMostRecentTimeArrivedInUSAObservationStatusCode", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(mostRecentTimeArrivedInUSAObservationEClass, ecorePackage.getEBoolean(), "validateMostRecentTimeArrivedInUSAObservationStatusCodeP", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1100,6 +1164,15 @@ public class PhcrPackageImpl extends EPackageImpl implements PhcrPackage
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
+		op = addEOperation(raceObservationEClass, ecorePackage.getEBoolean(), "validateRaceObservationCodeP", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
 		op = addEOperation(raceObservationEClass, ecorePackage.getEBoolean(), "validateRaceObservationCode", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
@@ -1110,6 +1183,15 @@ public class PhcrPackageImpl extends EPackageImpl implements PhcrPackage
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(raceObservationEClass, ecorePackage.getEBoolean(), "validateRaceObservationStatusCode", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(raceObservationEClass, ecorePackage.getEBoolean(), "validateRaceObservationStatusCodeP", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1165,6 +1247,15 @@ public class PhcrPackageImpl extends EPackageImpl implements PhcrPackage
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
+		op = addEOperation(occupationObservationEClass, ecorePackage.getEBoolean(), "validateOccupationObservationCodeP", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
 		op = addEOperation(occupationObservationEClass, ecorePackage.getEBoolean(), "validateOccupationObservationCode", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
@@ -1192,7 +1283,25 @@ public class PhcrPackageImpl extends EPackageImpl implements PhcrPackage
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
+		op = addEOperation(occupationObservationEClass, ecorePackage.getEBoolean(), "validateOccupationObservationStatusCodeP", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
 		op = addEOperation(occupationObservationEClass, ecorePackage.getEBoolean(), "validateOccupationObservationEffectiveTime", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(occupationObservationEClass, ecorePackage.getEBoolean(), "validateOccupationObservationValue", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1230,6 +1339,15 @@ public class PhcrPackageImpl extends EPackageImpl implements PhcrPackage
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
+		op = addEOperation(pregnancyObservationEClass, ecorePackage.getEBoolean(), "validatePregnancyObservationCodeP", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
 		op = addEOperation(pregnancyObservationEClass, ecorePackage.getEBoolean(), "validatePregnancyObservationCode", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
@@ -1240,6 +1358,15 @@ public class PhcrPackageImpl extends EPackageImpl implements PhcrPackage
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(pregnancyObservationEClass, ecorePackage.getEBoolean(), "validatePregnancyObservationStatusCode", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(pregnancyObservationEClass, ecorePackage.getEBoolean(), "validatePregnancyObservationStatusCodeP", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1315,6 +1442,15 @@ public class PhcrPackageImpl extends EPackageImpl implements PhcrPackage
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
+		op = addEOperation(estimatedDateOfDeliveryObservationEClass, ecorePackage.getEBoolean(), "validateEstimatedDateOfDeliveryObservationCodeP", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
 		op = addEOperation(estimatedDateOfDeliveryObservationEClass, ecorePackage.getEBoolean(), "validateEstimatedDateOfDeliveryObservationCode", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
@@ -1325,6 +1461,15 @@ public class PhcrPackageImpl extends EPackageImpl implements PhcrPackage
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(estimatedDateOfDeliveryObservationEClass, ecorePackage.getEBoolean(), "validateEstimatedDateOfDeliveryObservationStatusCode", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(estimatedDateOfDeliveryObservationEClass, ecorePackage.getEBoolean(), "validateEstimatedDateOfDeliveryObservationStatusCodeP", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1363,6 +1508,15 @@ public class PhcrPackageImpl extends EPackageImpl implements PhcrPackage
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(phcrClinicalInformationSectionEClass, ecorePackage.getEBoolean(), "validatePhcrClinicalInformationSectionCode", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(phcrClinicalInformationSectionEClass, ecorePackage.getEBoolean(), "validatePhcrClinicalInformationSectionCodeP", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1416,11 +1570,22 @@ public class PhcrPackageImpl extends EPackageImpl implements PhcrPackage
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
+		op = addEOperation(phcrClinicalInformationSectionEClass, ecorePackage.getEBoolean(), "validatePhcrClinicalInformationSectionPhcrRelevantMedicalConditionHistoryObservation", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
 		addEOperation(phcrClinicalInformationSectionEClass, this.getCaseObservation(), "getCaseObservation", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
 		addEOperation(phcrClinicalInformationSectionEClass, this.getPatientConditionAliveObservation(), "getPatientConditionAliveObservation", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
 		addEOperation(phcrClinicalInformationSectionEClass, this.getPatientConditionDeceasedObservation(), "getPatientConditionDeceasedObservation", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		addEOperation(phcrClinicalInformationSectionEClass, this.getPhcrRelevantMedicalConditionHistoryObservation(), "getPhcrRelevantMedicalConditionHistoryObservations", 1, -1, IS_UNIQUE, !IS_ORDERED);
 
 		initEClass(caseObservationEClass, CaseObservation.class, "CaseObservation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
@@ -1479,6 +1644,15 @@ public class PhcrPackageImpl extends EPackageImpl implements PhcrPackage
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(caseObservationEClass, ecorePackage.getEBoolean(), "validateCaseObservationCode", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(caseObservationEClass, ecorePackage.getEBoolean(), "validateProblemObservationCode", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1574,6 +1748,15 @@ public class PhcrPackageImpl extends EPackageImpl implements PhcrPackage
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
+		op = addEOperation(signsAndSymptomsObservationEClass, ecorePackage.getEBoolean(), "validateSignsAndSymptomsObservationCodeP", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
 		op = addEOperation(signsAndSymptomsObservationEClass, ecorePackage.getEBoolean(), "validateSignsAndSymptomsObservationCode", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
@@ -1584,6 +1767,15 @@ public class PhcrPackageImpl extends EPackageImpl implements PhcrPackage
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(signsAndSymptomsObservationEClass, ecorePackage.getEBoolean(), "validateSignsAndSymptomsObservationStatusCode", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(signsAndSymptomsObservationEClass, ecorePackage.getEBoolean(), "validateSignsAndSymptomsObservationStatusCodeP", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1639,6 +1831,15 @@ public class PhcrPackageImpl extends EPackageImpl implements PhcrPackage
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
+		op = addEOperation(patientConditionAliveObservationEClass, ecorePackage.getEBoolean(), "validatePatientConditionAliveObservationCodeP", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
 		op = addEOperation(patientConditionAliveObservationEClass, ecorePackage.getEBoolean(), "validatePatientConditionAliveObservationCode", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
@@ -1649,6 +1850,15 @@ public class PhcrPackageImpl extends EPackageImpl implements PhcrPackage
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(patientConditionAliveObservationEClass, ecorePackage.getEBoolean(), "validatePatientConditionAliveObservationStatusCode", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(patientConditionAliveObservationEClass, ecorePackage.getEBoolean(), "validatePatientConditionAliveObservationStatusCodeP", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1713,6 +1923,15 @@ public class PhcrPackageImpl extends EPackageImpl implements PhcrPackage
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
+		op = addEOperation(patientConditionDeceasedObservationEClass, ecorePackage.getEBoolean(), "validatePatientConditionDeceasedObservationCodeP", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
 		op = addEOperation(patientConditionDeceasedObservationEClass, ecorePackage.getEBoolean(), "validatePatientConditionDeceasedObservationCode", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
@@ -1723,6 +1942,15 @@ public class PhcrPackageImpl extends EPackageImpl implements PhcrPackage
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(patientConditionDeceasedObservationEClass, ecorePackage.getEBoolean(), "validatePatientConditionDeceasedObservationStatusCode", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(patientConditionDeceasedObservationEClass, ecorePackage.getEBoolean(), "validatePatientConditionDeceasedObservationStatusCodeP", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1758,6 +1986,100 @@ public class PhcrPackageImpl extends EPackageImpl implements PhcrPackage
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
+		initEClass(phcrRelevantMedicalConditionHistoryObservationEClass, PhcrRelevantMedicalConditionHistoryObservation.class, "PhcrRelevantMedicalConditionHistoryObservation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		op = addEOperation(phcrRelevantMedicalConditionHistoryObservationEClass, ecorePackage.getEBoolean(), "validatePhcrRelevantMedicalConditionHistoryObservationTemplateId", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(phcrRelevantMedicalConditionHistoryObservationEClass, ecorePackage.getEBoolean(), "validatePhcrRelevantMedicalConditionHistoryObservationClassCode", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(phcrRelevantMedicalConditionHistoryObservationEClass, ecorePackage.getEBoolean(), "validatePhcrRelevantMedicalConditionHistoryObservationCodeP", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(phcrRelevantMedicalConditionHistoryObservationEClass, ecorePackage.getEBoolean(), "validatePhcrRelevantMedicalConditionHistoryObservationCode", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(phcrRelevantMedicalConditionHistoryObservationEClass, ecorePackage.getEBoolean(), "validatePhcrRelevantMedicalConditionHistoryObservationEffectiveTime", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(phcrRelevantMedicalConditionHistoryObservationEClass, ecorePackage.getEBoolean(), "validatePhcrRelevantMedicalConditionHistoryObservationMoodCode", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(phcrRelevantMedicalConditionHistoryObservationEClass, ecorePackage.getEBoolean(), "validatePhcrRelevantMedicalConditionHistoryObservationNegationInd", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(phcrRelevantMedicalConditionHistoryObservationEClass, ecorePackage.getEBoolean(), "validatePhcrRelevantMedicalConditionHistoryObservationStatusCode", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(phcrRelevantMedicalConditionHistoryObservationEClass, ecorePackage.getEBoolean(), "validatePhcrRelevantMedicalConditionHistoryObservationStatusCodeP", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(phcrRelevantMedicalConditionHistoryObservationEClass, ecorePackage.getEBoolean(), "validatePhcrRelevantMedicalConditionHistoryObservationProblemObservation", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		addEOperation(phcrRelevantMedicalConditionHistoryObservationEClass, theCCDPackage.getProblemObservation(), "getProblemObservations", 1, -1, IS_UNIQUE, !IS_ORDERED);
+
 		initEClass(phcrTreatmentInformationSectionEClass, PhcrTreatmentInformationSection.class, "PhcrTreatmentInformationSection", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		op = addEOperation(phcrTreatmentInformationSectionEClass, ecorePackage.getEBoolean(), "validatePhcrTreatmentInformationSectionTemplateId", 0, 1, IS_UNIQUE, IS_ORDERED);
@@ -1770,6 +2092,15 @@ public class PhcrPackageImpl extends EPackageImpl implements PhcrPackage
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(phcrTreatmentInformationSectionEClass, ecorePackage.getEBoolean(), "validatePhcrTreatmentInformationSectionCode", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(phcrTreatmentInformationSectionEClass, ecorePackage.getEBoolean(), "validatePhcrTreatmentInformationSectionCodeP", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1837,6 +2168,15 @@ public class PhcrPackageImpl extends EPackageImpl implements PhcrPackage
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(therapeuticRegimenActEClass, ecorePackage.getEBoolean(), "validateTherapeuticRegimenActNegationInd", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(therapeuticRegimenActEClass, ecorePackage.getEBoolean(), "validateTherapeuticRegimenActCodeP", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1951,6 +2291,15 @@ public class PhcrPackageImpl extends EPackageImpl implements PhcrPackage
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(treatmentGivenSubstanceAdministrationEClass, ecorePackage.getEBoolean(), "validateTreatmentGivenSubstanceAdministrationEffectiveTime", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(treatmentGivenSubstanceAdministrationEClass, ecorePackage.getEBoolean(), "validateTreatmentGivenSubstanceAdministrationRouteCodeP", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -2224,6 +2573,28 @@ public class PhcrPackageImpl extends EPackageImpl implements PhcrPackage
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
+		op = addEOperation(resultObservationEClass, ecorePackage.getEBoolean(), "validatePHCRResultObservationSpecimenCollectionProcedure", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(resultObservationEClass, ecorePackage.getEBoolean(), "validatePHCRResultObservationSusceptibilityResult", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		addEOperation(resultObservationEClass, this.getSpecimenCollectionProcedure(), "getSpecimenCollectionProcedures", 1, -1, IS_UNIQUE, !IS_ORDERED);
+
+		addEOperation(resultObservationEClass, this.getSusceptibilityResult(), "getSusceptibilityResults", 1, -1, IS_UNIQUE, !IS_ORDERED);
+
 		initEClass(specimenCollectionProcedureEClass, SpecimenCollectionProcedure.class, "SpecimenCollectionProcedure", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		op = addEOperation(specimenCollectionProcedureEClass, ecorePackage.getEBoolean(), "validateSpecimenCollectionProcedureTemplateId", 0, 1, IS_UNIQUE, IS_ORDERED);
@@ -2253,7 +2624,90 @@ public class PhcrPackageImpl extends EPackageImpl implements PhcrPackage
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
+		op = addEOperation(specimenCollectionProcedureEClass, ecorePackage.getEBoolean(), "validateSpecimenCollectionProcedureCode", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
 		op = addEOperation(specimenCollectionProcedureEClass, ecorePackage.getEBoolean(), "validateSpecimenCollectionProcedureEffectiveTime", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(specimenCollectionProcedureEClass, ecorePackage.getEBoolean(), "validateSpecimenCollectionProcedureTargetSiteCode", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		initEClass(susceptibilityResultEClass, SusceptibilityResult.class, "SusceptibilityResult", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		op = addEOperation(susceptibilityResultEClass, ecorePackage.getEBoolean(), "validateSusceptibilityResultTemplateId", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(susceptibilityResultEClass, ecorePackage.getEBoolean(), "validateSusceptibilityResultClassCode", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(susceptibilityResultEClass, ecorePackage.getEBoolean(), "validateSusceptibilityResultMoodCode", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(susceptibilityResultEClass, ecorePackage.getEBoolean(), "validateSusceptibilityResultCodeP", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(susceptibilityResultEClass, ecorePackage.getEBoolean(), "validateSusceptibilityResultCode", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(susceptibilityResultEClass, ecorePackage.getEBoolean(), "validateSusceptibilityResultStatusCode", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(susceptibilityResultEClass, ecorePackage.getEBoolean(), "validateSusceptibilityResultStatusCodeP", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -2283,6 +2737,15 @@ public class PhcrPackageImpl extends EPackageImpl implements PhcrPackage
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(imagingObservationEClass, ecorePackage.getEBoolean(), "validateImagingObservationId", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(imagingObservationEClass, ecorePackage.getEBoolean(), "validateImagingObservationCode", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -2327,62 +2790,6 @@ public class PhcrPackageImpl extends EPackageImpl implements PhcrPackage
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		initEClass(susceptibilityResultEClass, SusceptibilityResult.class, "SusceptibilityResult", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-
-		op = addEOperation(susceptibilityResultEClass, ecorePackage.getEBoolean(), "validateSusceptibilityResultTemplateId", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(susceptibilityResultEClass, ecorePackage.getEBoolean(), "validateSusceptibilityResultClassCode", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(susceptibilityResultEClass, ecorePackage.getEBoolean(), "validateSusceptibilityResultMoodCode", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(susceptibilityResultEClass, ecorePackage.getEBoolean(), "validateSusceptibilityResultCode", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(susceptibilityResultEClass, ecorePackage.getEBoolean(), "validateSusceptibilityResultCodeP", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-		op = addEOperation(susceptibilityResultEClass, ecorePackage.getEBoolean(), "validateSusceptibilityResultStatusCode", 0, 1, IS_UNIQUE, IS_ORDERED);
-		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-		g1 = createEGenericType(ecorePackage.getEMap());
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(ecorePackage.getEJavaObject());
-		g1.getETypeArguments().add(g2);
-		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
 		// Create resource
 		createResource(eNS_URI);
 
@@ -2409,21 +2816,23 @@ public class PhcrPackageImpl extends EPackageImpl implements PhcrPackage
 			 "code.codeSystemName", "LOINC",
 			 "constraints.validation.info", "PublicHealthCaseReportImmunizationsSection",
 			 "templateId.root", "2.16.840.1.113883.10.20.15",
-			 "constraints.validation.error", "PublicHealthCaseReportTemplateId PublicHealthCaseReportPHCRRecordTarget PublicHealthCaseReportPHCRRecordTargetPatientRole PublicHealthCaseReportPHCRRecordTargetPatientRoleId PublicHealthCaseReportPHCRAuthor PublicHealthCaseReportPHCRAuthorTiime PublicHealthCaseReportPHCRAuthorAssignedAuthor PublicHealthCaseReportPHCRAuthorAssignedAuthorId PublicHealthCaseReportPHCRAuthorAssignedAuthorAddr PublicHealthCaseReportPHCRAuthorAssignedAuthorTelecom PublicHealthCaseReportPHCRAuthorAssignedAuthorAssignedPersonName PublicHealthCaseReportPHCRLegalAuthenticator PublicHealthCaseReportPHCRLegalAuthenticatorTime PublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntity PublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntityId PublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntityAddr PublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntityAssignedPersonName PublicHealthCaseReportCode PublicHealthCaseReportPhcrClinicalInformationSection",
+			 "constraints.validation.error", "PublicHealthCaseReportTemplateId PublicHealthCaseReportPHCRRecordTarget PublicHealthCaseReportPHCRRecordTargetPatientRole PublicHealthCaseReportPHCRRecordTargetPatientRoleId PublicHealthCaseReportPHCRAuthor PublicHealthCaseReportPHCRAuthorTiime PublicHealthCaseReportPHCRAuthorAssignedAuthor PublicHealthCaseReportPHCRAuthorAssignedAuthorId PublicHealthCaseReportPHCRAuthorAssignedAuthorAddr PublicHealthCaseReportPHCRAuthorAssignedAuthorTelecom PublicHealthCaseReportPHCRAuthorAssignedAuthorAssignedPersonName PublicHealthCaseReportPHCRLegalAuthenticator PublicHealthCaseReportPHCRLegalAuthenticatorTime PublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntity PublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntityId PublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntityAddr PublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntityAssignedPersonName PublicHealthCaseReportCode PublicHealthCaseReportCodeP PublicHealthCaseReportPhcrClinicalInformationSection",
+			 "constraints.validation.dependOn.PublicHealthCaseReportCode", "PublicHealthCaseReportCodeP",
 			 "code.displayName", "Public Health Case Report",
 			 "code.codeSystem", "2.16.840.1.113883.6.1",
 			 "code.code", "55751-2",
 			 "constraints.validation.warning", "PublicHealthCaseReportPhcrSocialHistorySection PublicHealthCaseReportPhcrTreatmentInformationSection PublicHealthCaseReportPhcrEncountersSection PublicHealthCaseReportPhcrRelevantDxTestsSection"
-		   });																																																																																																														
+		   });																																																																																																																		
 		addAnnotation
 		  (phcrSocialHistorySectionEClass, 
 		   source, 
 		   new String[] {
+			 "constraints.validation.dependOn.SocialHistorySectionCode", "PhcrSocialHistorySectionCode",
 			 "title.mixed", "Social History",
 			 "code.codeSystemName", "LOINC",
 			 "constraints.validation.info", "PhcrSocialHistorySectionPregnancyObservation",
 			 "templateId.root", "2.16.840.1.113883.10.20.15.2.22",
-			 "constraints.validation.error", "PhcrSocialHistorySectionTemplateId PhcrSocialHistorySectionCode PhcrSocialHistorySectionTitle PhcrSocialHistorySectionText",
+			 "constraints.validation.error", "PhcrSocialHistorySectionTemplateId SocialHistorySectionCode PhcrSocialHistorySectionCode PhcrSocialHistorySectionTitle PhcrSocialHistorySectionText",
 			 "code.displayName", "Social History",
 			 "code.codeSystem", "2.16.840.1.113883.6.1",
 			 "code.code", "29762-2",
@@ -2433,61 +2842,66 @@ public class PhcrPackageImpl extends EPackageImpl implements PhcrPackage
 		  (geotemporalHistoryObservationEClass, 
 		   source, 
 		   new String[] {
+			 "constraints.validation.dependOn.GeotemporalHistoryObservationCode", "GeotemporalHistoryObservationCodeP",
 			 "moodCode", "EVN",
 			 "classCode", "OBS",
 			 "code.codeSystemName", "LOINC",
 			 "constraints.validation.info", "GeotemporalHistoryObservationText",
-			 "constraints.validation.error", "GeotemporalHistoryObservationTemplateId GeotemporalHistoryObservationClassCode GeotemporalHistoryObservationMoodCode GeotemporalHistoryObservationCode GeotemporalHistoryObservationStatusCode GeotemporalHistoryObservationValue",
 			 "templateId.root", "2.16.840.1.113883.10.20.15.3.3",
-			 "code.displayName", "Geotemporal History",
+			 "constraints.validation.error", "GeotemporalHistoryObservationTemplateId GeotemporalHistoryObservationClassCode GeotemporalHistoryObservationMoodCode GeotemporalHistoryObservationCode GeotemporalHistoryObservationCodeP GeotemporalHistoryObservationStatusCode GeotemporalHistoryObservationStatusCodeP GeotemporalHistoryObservationValue",
 			 "statusCode.code", "completed",
+			 "code.displayName", "Geotemporal History",
 			 "code.codeSystem", "2.16.840.1.113883.6.1",
 			 "code.code", "55210-9",
 			 "constraints.validation.warning", "GeotemporalHistoryObservationEffectiveTime"
-		   });																																		
+		   });																																										
 		addAnnotation
 		  (mostRecentTimeArrivedInUSAObservationEClass, 
 		   source, 
 		   new String[] {
 			 "moodCode", "EVN",
 			 "classCode", "OBS",
+			 "constraints.validation.dependOn.MostRecentTimeArrivedInUSAObservationCode", "MostRecentTimeArrivedInUSAObservationCodeP",
 			 "code.codeSystemName", "LOINC",
-			 "constraints.validation.error", "MostRecentTimeArrivedInUSAObservationTemplateId MostRecentTimeArrivedInUSAObservationClassCode MostRecentTimeArrivedInUSAObservationMoodCode MostRecentTimeArrivedInUSAObservationCode MostRecentTimeArrivedInUSAObservationStatusCode MostRecentTimeArrivedInUSAObservationValue",
 			 "templateId.root", "2.16.840.1.113883.10.20.15.3.6",
+			 "constraints.validation.error", "MostRecentTimeArrivedInUSAObservationTemplateId MostRecentTimeArrivedInUSAObservationClassCode MostRecentTimeArrivedInUSAObservationMoodCode MostRecentTimeArrivedInUSAObservationCode MostRecentTimeArrivedInUSAObservationCodeP MostRecentTimeArrivedInUSAObservationStatusCode MostRecentTimeArrivedInUSAObservationStatusCodeP MostRecentTimeArrivedInUSAObservationValue",
 			 "statusCode.code", "completed",
 			 "code.displayName", "Most Recent Time Arrived in USA",
 			 "code.codeSystem", "2.16.840.1.113883.6.1",
 			 "code.code", "55209-1"
-		   });																										
+		   });																																		
 		addAnnotation
 		  (raceObservationEClass, 
 		   source, 
 		   new String[] {
+			 "constraints.validation.dependOn.RaceObservationCode", "RaceObservationCodeP",
 			 "moodCode", "EVN",
 			 "classCode", "OBS",
 			 "code.codeSystemName", "LOINC",
-			 "constraints.validation.error", "RaceObservationTemplateId RaceObservationClassCode RaceObservationMoodCode RaceObservationCode RaceObservationStatusCode RaceObservationValue",
 			 "templateId.root", "2.16.840.1.113883.10.20.15.3.9",
+			 "constraints.validation.error", "RaceObservationTemplateId RaceObservationClassCode RaceObservationMoodCode RaceObservationCode RaceObservationCodeP RaceObservationStatusCode RaceObservationStatusCodeP RaceObservationValue",
 			 "statusCode.code", "completed",
 			 "code.displayName", "Race",
 			 "code.codeSystem", "2.16.840.1.113883.6.1",
 			 "code.code", "32624-9"
-		   });																										
+		   });																																		
 		addAnnotation
 		  (occupationObservationEClass, 
 		   source, 
 		   new String[] {
 			 "moodCode", "EVN",
 			 "classCode", "OBS",
+			 "constraints.validation.dependOn.OccupationObservationCode", "OccupationObservationCodeP",
 			 "code.codeSystemName", "LOINC",
-			 "constraints.validation.info", "OccupationObservationNegationInd OccupationObservationText OccupationObservationEffectiveTime",
-			 "constraints.validation.error", "OccupationObservationTemplateId OccupationObservationClassCode OccupationObservationMoodCode OccupationObservationCode OccupationObservationStatusCode",
+			 "constraints.validation.info", "OccupationObservationNegationInd OccupationObservationText",
 			 "templateId.root", "2.16.840.1.113883.10.20.15.3.7",
+			 "constraints.validation.error", "OccupationObservationTemplateId OccupationObservationClassCode OccupationObservationMoodCode OccupationObservationCode OccupationObservationCodeP OccupationObservationStatusCode OccupationObservationStatusCodeP OccupationObservationValue",
 			 "statusCode.code", "completed",
 			 "code.displayName", "History of Occupation",
 			 "code.codeSystem", "2.16.840.1.113883.6.1",
-			 "code.code", "11341-5"
-		   });																																		
+			 "code.code", "11341-5",
+			 "constraints.validation.warning", "OccupationObservationEffectiveTime"
+		   });																																														
 		addAnnotation
 		  (pregnancyObservationEClass, 
 		   source, 
@@ -2498,15 +2912,16 @@ public class PhcrPackageImpl extends EPackageImpl implements PhcrPackage
 			 "code.codeSystemName", "HL7ActCode",
 			 "value.code", "77386006",
 			 "constraints.validation.info", "PregnancyObservationEstimatedDateOfDeliveryObservation",
-			 "constraints.validation.error", "PregnancyObservationTemplateId PregnancyObservationClassCode PregnancyObservationMoodCode PregnancyObservationCode PregnancyObservationStatusCode PregnancyObservationValue PregnancyObservationValueP",
+			 "constraints.validation.error", "PregnancyObservationTemplateId PregnancyObservationClassCode PregnancyObservationMoodCode PregnancyObservationCode PregnancyObservationCodeP PregnancyObservationStatusCode PregnancyObservationStatusCodeP PregnancyObservationValue PregnancyObservationValueP",
 			 "code.code", "ASSERTION",
 			 "value.displayName", "Pregnant",
+			 "constraints.validation.dependOn.PregnancyObservationCode", "PregnancyObservationCodeP",
 			 "value.codeSystem", "2.16.840.1.113883.6.96",
 			 "templateId.root", "2.16.840.1.113883.10.20.15.3.8",
 			 "statusCode.code", "completed",
 			 "code.codeSystem", "2.16.840.1.113883.5.4",
 			 "constraints.validation.warning", "PregnancyObservationEffectiveTime"
-		   });																																								
+		   });																																																
 		addAnnotation
 		  (estimatedDateOfDeliveryObservationEClass, 
 		   source, 
@@ -2514,55 +2929,60 @@ public class PhcrPackageImpl extends EPackageImpl implements PhcrPackage
 			 "moodCode", "EVN",
 			 "classCode", "OBS",
 			 "code.codeSystemName", "LOINC",
-			 "constraints.validation.error", "EstimatedDateOfDeliveryObservationTemplateId EstimatedDateOfDeliveryObservationClassCode EstimatedDateOfDeliveryObservationMoodCode EstimatedDateOfDeliveryObservationCode EstimatedDateOfDeliveryObservationStatusCode EstimatedDateOfDeliveryObservationValue",
+			 "constraints.validation.dependOn.EstimatedDateOfDeliveryObservationCode", "EstimatedDateOfDeliveryObservationCodeP",
 			 "templateId.root", "2.16.840.1.113883.10.20.15.3.1",
+			 "constraints.validation.error", "EstimatedDateOfDeliveryObservationTemplateId EstimatedDateOfDeliveryObservationClassCode EstimatedDateOfDeliveryObservationMoodCode EstimatedDateOfDeliveryObservationCode EstimatedDateOfDeliveryObservationCodeP EstimatedDateOfDeliveryObservationStatusCode EstimatedDateOfDeliveryObservationStatusCodeP EstimatedDateOfDeliveryObservationValue",
 			 "statusCode.code", "completed",
 			 "code.displayName", "Estimated Date of Delivery",
 			 "code.codeSystem", "2.16.840.1.113883.6.1",
 			 "code.code", "11778-8"
-		   });																										
+		   });																																		
 		addAnnotation
 		  (phcrClinicalInformationSectionEClass, 
 		   source, 
 		   new String[] {
 			 "title.mixed", "Clinical Information",
 			 "code.codeSystemName", "LOINC",
-			 "constraints.validation.error", "PhcrClinicalInformationSectionTemplateId PhcrClinicalInformationSectionPatientConditionConstraint PhcrClinicalInformationSectionCode PhcrClinicalInformationSectionTitle PhcrClinicalInformationSectionText PhcrClinicalInformationSectionCaseObservation",
-			 "templateId.root", "2.16.840.1.113883.10.20.15.2.1",
 			 "constraints.validation.info", "PhcrClinicalInformationSectionPatientConditionAliveObservation PhcrClinicalInformationSectionPatientConditionDeceasedObservation",
+			 "templateId.root", "2.16.840.1.113883.10.20.15.2.1",
+			 "constraints.validation.error", "PhcrClinicalInformationSectionTemplateId PhcrClinicalInformationSectionPatientConditionConstraint PhcrClinicalInformationSectionCode PhcrClinicalInformationSectionCodeP PhcrClinicalInformationSectionTitle PhcrClinicalInformationSectionText PhcrClinicalInformationSectionCaseObservation",
 			 "code.displayName", "Clinical Information",
 			 "code.codeSystem", "2.16.840.1.113883.6.1",
-			 "code.code", "55752-0"
-		   });																																								
+			 "code.code", "55752-0",
+			 "constraints.validation.warning", "PhcrClinicalInformationSectionPhcrRelevantMedicalConditionHistoryObservation"
+		   });																																																		
 		addAnnotation
 		  (caseObservationEClass, 
 		   source, 
 		   new String[] {
+			 "constraints.validation.dependOn.ProblemObservationCode", "CaseObservationCode",
+			 "constraints.validation.dependOn.ProblemObservationStatusCode", "CaseObservationStatusCode",
 			 "moodCode", "EVN",
 			 "classCode", "OBS",
 			 "code.codeSystemName", "HL7ActCode",
 			 "constraints.validation.info", "CaseObservationId",
 			 "templateId.root", "2.16.840.1.113883.10.20.15.3.54",
-			 "constraints.validation.error", "CaseObservationTemplateId CaseObservationClassCode CaseObservationMoodCode CaseObservationCode CaseObservationStatusCode CaseObservationValue",
+			 "constraints.validation.error", "CaseObservationTemplateId CaseObservationClassCode CaseObservationMoodCode ProblemObservationCode CaseObservationCode ProblemObservationStatusCode CaseObservationStatusCode CaseObservationValue",
 			 "statusCode.code", "completed",
 			 "code.codeSystem", "2.16.840.1.113883.5.4",
 			 "code.code", "ASSERTION",
 			 "constraints.validation.warning", "CaseObservationEffectiveTimeLow CaseObservationAuthor CaseObservationAuthorAssignedAuthor CaseObservationEffectiveTime CaseObservationProblemStatusObservation CaseObservationSignsAndSymptomsObservation"
-		   });																																																							
+		   });																																																											
 		addAnnotation
 		  (signsAndSymptomsObservationEClass, 
 		   source, 
 		   new String[] {
 			 "moodCode", "EVN",
 			 "classCode", "OBS",
+			 "constraints.validation.dependOn.SignsAndSymptomsObservationCode", "SignsAndSymptomsObservationCodeP",
 			 "code.codeSystemName", "HL7ActCode",
-			 "constraints.validation.error", "SignsAndSymptomsObservationTemplateId SignsAndSymptomsObservationClassCode SignsAndSymptomsObservationMoodCode SignsAndSymptomsObservationNegationInd SignsAndSymptomsObservationCode SignsAndSymptomsObservationStatusCode SignsAndSymptomsObservationValue",
 			 "templateId.root", "2.16.840.1.113883.10.20.15.3.53",
+			 "constraints.validation.error", "SignsAndSymptomsObservationTemplateId SignsAndSymptomsObservationClassCode SignsAndSymptomsObservationMoodCode SignsAndSymptomsObservationNegationInd SignsAndSymptomsObservationCode SignsAndSymptomsObservationCodeP SignsAndSymptomsObservationStatusCode SignsAndSymptomsObservationStatusCodeP SignsAndSymptomsObservationValue",
 			 "statusCode.code", "completed",
 			 "code.codeSystem", "2.16.840.1.113883.5.4",
 			 "code.code", "ASSERTION",
 			 "constraints.validation.warning", "SignsAndSymptomsObservationEffectiveTime"
-		   });																																		
+		   });																																										
 		addAnnotation
 		  (patientConditionAliveObservationEClass, 
 		   source, 
@@ -2571,8 +2991,9 @@ public class PhcrPackageImpl extends EPackageImpl implements PhcrPackage
 			 "value.codeSystemName", "SNOMEDCT",
 			 "classCode", "OBS",
 			 "code.codeSystemName", "HL7ActCode",
+			 "constraints.validation.dependOn.PatientConditionAliveObservationCode", "PatientConditionAliveObservationCodeP",
 			 "value.code", "438949009",
-			 "constraints.validation.error", "PatientConditionAliveObservationTemplateId PatientConditionAliveObservationClassCode PatientConditionAliveObservationMoodCode PatientConditionAliveObservationCode PatientConditionAliveObservationStatusCode PatientConditionAliveObservationValue PatientConditionAliveObservationValueP",
+			 "constraints.validation.error", "PatientConditionAliveObservationTemplateId PatientConditionAliveObservationClassCode PatientConditionAliveObservationMoodCode PatientConditionAliveObservationCode PatientConditionAliveObservationCodeP PatientConditionAliveObservationStatusCode PatientConditionAliveObservationStatusCodeP PatientConditionAliveObservationValue PatientConditionAliveObservationValueP",
 			 "code.code", "ASSERTION",
 			 "value.displayName", "Alive",
 			 "value.codeSystem", "2.16.840.1.113883.6.96",
@@ -2580,7 +3001,7 @@ public class PhcrPackageImpl extends EPackageImpl implements PhcrPackage
 			 "statusCode.code", "completed",
 			 "code.codeSystem", "2.16.840.1.113883.5.4",
 			 "constraints.validation.warning", "PatientConditionAliveObservationEffectiveTime"
-		   });																																		
+		   });																																										
 		addAnnotation
 		  (patientConditionDeceasedObservationEClass, 
 		   source, 
@@ -2589,8 +3010,9 @@ public class PhcrPackageImpl extends EPackageImpl implements PhcrPackage
 			 "value.codeSystemName", "SNOMEDCT",
 			 "classCode", "OBS",
 			 "code.codeSystemName", "HL7ActCode",
+			 "constraints.validation.dependOn.PatientConditionDeceasedObservationCode", "PatientConditionDeceasedObservationCodeP",
 			 "value.code", "419099009",
-			 "constraints.validation.error", "PatientConditionDeceasedObservationTemplateId PatientConditionDeceasedObservationClassCode PatientConditionDeceasedObservationMoodCode PatientConditionDeceasedObservationCode PatientConditionDeceasedObservationStatusCode PatientConditionDeceasedObservationValue PatientConditionDeceasedObservationValueP",
+			 "constraints.validation.error", "PatientConditionDeceasedObservationTemplateId PatientConditionDeceasedObservationClassCode PatientConditionDeceasedObservationMoodCode PatientConditionDeceasedObservationCode PatientConditionDeceasedObservationCodeP PatientConditionDeceasedObservationStatusCode PatientConditionDeceasedObservationStatusCodeP PatientConditionDeceasedObservationValue PatientConditionDeceasedObservationValueP",
 			 "code.code", "ASSERTION",
 			 "value.displayName", "Dead",
 			 "value.codeSystem", "2.16.840.1.113883.6.96",
@@ -2598,7 +3020,23 @@ public class PhcrPackageImpl extends EPackageImpl implements PhcrPackage
 			 "statusCode.code", "completed",
 			 "code.codeSystem", "2.16.840.1.113883.5.4",
 			 "constraints.validation.warning", "PatientConditionDeceasedObservationEffectiveTime"
-		   });																																		
+		   });																																										
+		addAnnotation
+		  (phcrRelevantMedicalConditionHistoryObservationEClass, 
+		   source, 
+		   new String[] {
+			 "moodCode", "EVN",
+			 "classCode", "OBS",
+			 "code.codeSystemName", "HL7ActCode",
+			 "constraints.validation.dependOn.PhcrRelevantMedicalConditionHistoryObservationCode", "PhcrRelevantMedicalConditionHistoryObservationCodeP",
+			 "constraints.validation.info", "PhcrRelevantMedicalConditionHistoryObservationNegationInd",
+			 "templateId.root", "2.16.840.1.113883.10.20.15.3.62",
+			 "constraints.validation.error", "PhcrRelevantMedicalConditionHistoryObservationTemplateId PhcrRelevantMedicalConditionHistoryObservationClassCode PhcrRelevantMedicalConditionHistoryObservationCode PhcrRelevantMedicalConditionHistoryObservationCodeP PhcrRelevantMedicalConditionHistoryObservationMoodCode PhcrRelevantMedicalConditionHistoryObservationStatusCode PhcrRelevantMedicalConditionHistoryObservationStatusCodeP",
+			 "statusCode.code", "completed",
+			 "code.codeSystem", "2.16.840.1.113883.5.4",
+			 "code.code", "ASSERTION",
+			 "constraints.validation.warning", "PhcrRelevantMedicalConditionHistoryObservationEffectiveTime PhcrRelevantMedicalConditionHistoryObservationProblemObservation"
+		   });																																												
 		addAnnotation
 		  (phcrTreatmentInformationSectionEClass, 
 		   source, 
@@ -2606,47 +3044,49 @@ public class PhcrPackageImpl extends EPackageImpl implements PhcrPackage
 			 "title.mixed", "Treatment Information",
 			 "code.codeSystemName", "LOINC",
 			 "templateId.root", "2.16.840.1.113883.10.20.15.2.4",
-			 "constraints.validation.error", "PhcrTreatmentInformationSectionTemplateId PhcrTreatmentInformationSectionCode PhcrTreatmentInformationSectionTitle PhcrTreatmentInformationSectionText PhcrTreatmentInformationSectionTherapeuticRegimenAct",
+			 "constraints.validation.error", "PhcrTreatmentInformationSectionTemplateId PhcrTreatmentInformationSectionCode PhcrTreatmentInformationSectionCodeP PhcrTreatmentInformationSectionTitle PhcrTreatmentInformationSectionText PhcrTreatmentInformationSectionTherapeuticRegimenAct",
 			 "code.displayName", "Treatment Information",
 			 "code.codeSystem", "2.16.840.1.113883.6.1",
 			 "code.code", "55753-8"
-		   });																								
+		   });																												
 		addAnnotation
 		  (therapeuticRegimenActEClass, 
 		   source, 
 		   new String[] {
 			 "moodCode", "EVN",
 			 "classCode", "ACT",
+			 "constraints.validation.dependOn.TherapeuticRegimenActCode", "TherapeuticRegimenActCodeP",
 			 "code.codeSystemName", "SNOMEDCT",
 			 "constraints.validation.info", "TherapeuticRegimenActTreatmentNotGivenSubstanceAdministration",
 			 "templateId.root", "2.16.840.1.113883.10.20.15.3.57",
-			 "constraints.validation.error", "TherapeuticRegimenActTemplateId TherapeuticRegimenActClassCode TherapeuticRegimenActMoodCode TherapeuticRegimenActNegationInd TherapeuticRegimenActCode TherapeuticRegimenActStatusCode TherapeuticRegimenActStatusCodeP",
+			 "constraints.validation.error", "TherapeuticRegimenActTemplateId TherapeuticRegimenActClassCode TherapeuticRegimenActMoodCode TherapeuticRegimenActNegationInd TherapeuticRegimenActCode TherapeuticRegimenActCodeP TherapeuticRegimenActStatusCode TherapeuticRegimenActStatusCodeP",
 			 "statusCode.code", "completed",
 			 "code.displayName", "Therapeutic regimen",
 			 "code.codeSystem", "2.16.840.1.113883.6.96",
 			 "code.code", "133877004",
 			 "constraints.validation.warning", "TherapeuticRegimenActTreatmentGivenSubstanceAdministration"
-		   });																																										
+		   });																																														
 		addAnnotation
 		  (treatmentGivenSubstanceAdministrationEClass, 
 		   source, 
 		   new String[] {
+			 "constraints.validation.dependOn.TreatmentGivenSubstanceAdministrationRouteCode", "TreatmentGivenSubstanceAdministrationRouteCodeP",
+			 "routeCode.codeSystem", "2.16.840.1.113883.3.26.1.1",
 			 "moodCode", "EVN",
-			 "routeCode.codeSystem", "2.16.840.1.113883.3.88.12.3221.8.7",
 			 "classCode", "SBADM",
 			 "templateId.root", "2.16.840.1.113883.10.20.15.3.55",
 			 "constraints.validation.error", "TreatmentGivenSubstanceAdministrationTemplateId TreatmentGivenSubstanceAdministrationTreatmentGivenNegationInd TreatmentGivenSubstanceAdministrationClassCode TreatmentGivenSubstanceAdministrationMoodCode TreatmentGivenSubstanceAdministrationNegationInd TreatmentGivenSubstanceAdministrationStatusCode TreatmentGivenSubstanceAdministrationRouteCode",
-			 "constraints.validation.warning", "TreatmentGivenSubstanceAdministrationEffectiveTime",
-			 "routeCode.codeSystemName", "Medication Route FDA"
-		   });																																		
+			 "routeCode.codeSystemName", "NCI Thesaurus",
+			 "constraints.validation.warning", "TreatmentGivenSubstanceAdministrationEffectiveTime TreatmentGivenSubstanceAdministrationRouteCodeP"
+		   });																																						
 		addAnnotation
 		  (treatmentNotGivenSubstanceAdministrationEClass, 
 		   source, 
 		   new String[] {
 			 "moodCode", "EVN",
 			 "classCode", "SBADM",
-			 "constraints.validation.error", "TreatmentNotGivenSubstanceAdministrationTemplateId TreatmentNotGivenSubstanceAdministrationTreatmentNotGivenNegationInd TreatmentNotGivenSubstanceAdministrationClassCode TreatmentNotGivenSubstanceAdministrationMoodCode TreatmentNotGivenSubstanceAdministrationNegationInd TreatmentNotGivenSubstanceAdministrationStatusCode TreatmentNotGivenSubstanceAdministrationStatusCodeP",
 			 "templateId.root", "2.16.840.1.113883.10.20.15.3.56",
+			 "constraints.validation.error", "TreatmentNotGivenSubstanceAdministrationTemplateId TreatmentNotGivenSubstanceAdministrationTreatmentNotGivenNegationInd TreatmentNotGivenSubstanceAdministrationClassCode TreatmentNotGivenSubstanceAdministrationMoodCode TreatmentNotGivenSubstanceAdministrationNegationInd TreatmentNotGivenSubstanceAdministrationStatusCode TreatmentNotGivenSubstanceAdministrationStatusCodeP",
 			 "statusCode.code", "completed"
 		   });																														
 		addAnnotation
@@ -2661,11 +3101,12 @@ public class PhcrPackageImpl extends EPackageImpl implements PhcrPackage
 		  (phcrRelevantDxTestsSectionEClass, 
 		   source, 
 		   new String[] {
+			 "constraints.validation.dependOn.ResultsSectionCode", "PhcrRelevantDxTestsSectionCode",
 			 "title.mixed", "Relevant diagnostic tests and/or laboratory data",
 			 "code.codeSystemName", "LOINC",
 			 "constraints.validation.info", "PhcrRelevantDxTestsSectionResultOrganizer PhcrRelevantDxTestsSectionResultObservation PhcrRelevantDxTestsSectionImagingObservation",
 			 "templateId.root", "2.16.840.1.113883.10.20.15.2.3",
-			 "constraints.validation.error", "PhcrRelevantDxTestsSectionTemplateId PhcrRelevantDxTestsSectionCode PhcrRelevantDxTestsSectionTitle PhcrRelevantDxTestsSectionText",
+			 "constraints.validation.error", "PhcrRelevantDxTestsSectionTemplateId ResultsSectionCode PhcrRelevantDxTestsSectionCode PhcrRelevantDxTestsSectionTitle PhcrRelevantDxTestsSectionText",
 			 "code.displayName", "Relevant diagnostic tests and/or laboratory data",
 			 "code.codeSystem", "2.16.840.1.113883.6.1",
 			 "code.code", "30954-2"
@@ -2677,6 +3118,7 @@ public class PhcrPackageImpl extends EPackageImpl implements PhcrPackage
 			 "moodCode", "EVN",
 			 "classCode", "BATTERY",
 			 "constraints.validation.info", "PHCRResultOrganizerSpecimenCollectionProcedure",
+			 "constraints.validation.dependOn.ResultOrganizerStatusCode", "PHCRResultOrganizerStatusCode",
 			 "templateId.root", "2.16.840.1.113883.10.20.15.3.59",
 			 "constraints.validation.error", "PHCRResultOrganizerTemplateId PHCRResultOrganizerClassCode PHCRResultOrganizerMoodCode PHCRResultOrganizerId PHCRResultOrganizerCode ResultOrganizerStatusCode PHCRResultOrganizerStatusCode PHCRResultOrganizerEffectiveTime PHCRResultOrganizerResultObservation",
 			 "statusCode.code", "completed"
@@ -2686,32 +3128,22 @@ public class PhcrPackageImpl extends EPackageImpl implements PhcrPackage
 		   source, 
 		   new String[] {
 			 "classCode", "OBS",
-			 "constraints.validation.error", "PHCRResultObservationTemplateId PHCRResultObservationClassCode ResultObservationStatusCode PHCRResultObservationStatusCode",
+			 "constraints.validation.dependOn.ResultObservationStatusCode", "PHCRResultObservationStatusCode",
+			 "constraints.validation.info", "PHCRResultObservationSpecimenCollectionProcedure PHCRResultObservationSusceptibilityResult",
 			 "templateId.root", "2.16.840.1.113883.10.20.15.3.58",
+			 "constraints.validation.error", "PHCRResultObservationTemplateId PHCRResultObservationClassCode ResultObservationStatusCode PHCRResultObservationStatusCode",
 			 "statusCode.code", "completed"
-		   });											
+		   });																							
 		addAnnotation
 		  (specimenCollectionProcedureEClass, 
 		   source, 
 		   new String[] {
 			 "moodCode", "EVN",
 			 "classCode", "PROC",
-			 "constraints.validation.error", "SpecimenCollectionProcedureTemplateId SpecimenCollectionProcedureClassCode SpecimenCollectionProcedureMoodCode",
 			 "templateId.root", "2.16.840.1.113883.10.20.15.3.2",
-			 "constraints.validation.warning", "SpecimenCollectionProcedureEffectiveTime"
-		   });																		
-		addAnnotation
-		  (imagingObservationEClass, 
-		   source, 
-		   new String[] {
-			 "moodCode", "EVN",
-			 "classCode", "OBS",
-			 "constraints.validation.info", "ImagingObservationMethodCode",
-			 "templateId.root", "2.16.840.1.113883.10.20.15.3.5",
-			 "constraints.validation.error", "ImagingObservationTemplateId ImagingObservationClassCode ImagingObservationMoodCode ImagingObservationId ImagingObservationStatusCode ImagingObservationValue",
-			 "statusCode.code", "completed",
-			 "constraints.validation.warning", "ImagingObservationEffectiveTime"
-		   });																															
+			 "constraints.validation.error", "SpecimenCollectionProcedureTemplateId SpecimenCollectionProcedureClassCode SpecimenCollectionProcedureMoodCode SpecimenCollectionProcedureCode",
+			 "constraints.validation.warning", "SpecimenCollectionProcedureEffectiveTime SpecimenCollectionProcedureTargetSiteCode"
+		   });																										
 		addAnnotation
 		  (susceptibilityResultEClass, 
 		   source, 
@@ -2719,13 +3151,27 @@ public class PhcrPackageImpl extends EPackageImpl implements PhcrPackage
 			 "moodCode", "EVN",
 			 "classCode", "OBS",
 			 "code.codeSystemName", "LOINC",
-			 "constraints.validation.error", "SusceptibilityResultTemplateId SusceptibilityResultClassCode SusceptibilityResultMoodCode SusceptibilityResultCode SusceptibilityResultCodeP SusceptibilityResultStatusCode",
+			 "constraints.validation.dependOn.SusceptibilityResultCode", "SusceptibilityResultCodeP",
 			 "templateId.root", "2.16.840.1.113883.10.20.15.3.10",
-			 "code.displayName", "Microbial susceptibility tests",
+			 "constraints.validation.error", "SusceptibilityResultTemplateId SusceptibilityResultClassCode SusceptibilityResultMoodCode SusceptibilityResultCode SusceptibilityResultCodeP SusceptibilityResultStatusCode SusceptibilityResultStatusCodeP",
 			 "statusCode.code", "completed",
+			 "code.displayName", "Microbial susceptibility tests",
 			 "code.codeSystem", "2.16.840.1.113883.6.1",
 			 "code.code", "18769-0"
-		   });																								
+		   });																														
+		addAnnotation
+		  (imagingObservationEClass, 
+		   source, 
+		   new String[] {
+			 "constraints.validation.dependOn.ProblemObservationStatusCode", "ImagingObservationStatusCode",
+			 "moodCode", "EVN",
+			 "classCode", "OBS",
+			 "constraints.validation.info", "ImagingObservationMethodCode",
+			 "templateId.root", "2.16.840.1.113883.10.20.15.3.5",
+			 "constraints.validation.error", "ImagingObservationTemplateId ImagingObservationClassCode ImagingObservationMoodCode ImagingObservationId ImagingObservationCode ProblemObservationStatusCode ImagingObservationStatusCode ImagingObservationValue",
+			 "statusCode.code", "completed",
+			 "constraints.validation.warning", "ImagingObservationEffectiveTime"
+		   });																																	
 	}
 
   /**
@@ -2736,17 +3182,17 @@ public class PhcrPackageImpl extends EPackageImpl implements PhcrPackage
 	 */
   protected void createDuplicatesAnnotations()
   {
-		String source = "duplicates";																																																																																																																
+		String source = "duplicates";																																																																																																																				
 		addAnnotation
 		  (phcrSocialHistorySectionEClass, 
 		   source, 
 		   new String[] {
-		   });																																																																																																																																																																																																																																																																								
+		   });																																																																																																																																																																																																																																																																																																																																						
 		addAnnotation
 		  (caseObservationEClass, 
 		   source, 
 		   new String[] {
-		   });																																																																																																																																																																																																																																																																																								
+		   });																																																																																																																																																																																																																																																																																																																																																																											
 		addAnnotation
 		  (phcrEncountersSectionEClass, 
 		   source, 
@@ -2766,12 +3212,12 @@ public class PhcrPackageImpl extends EPackageImpl implements PhcrPackage
 		  (resultObservationEClass, 
 		   source, 
 		   new String[] {
-		   });																												
+		   });																																																																													
 		addAnnotation
 		  (imagingObservationEClass, 
 		   source, 
 		   new String[] {
-		   });																																																					
+		   });																																
 	}
 
 } //PhcrPackageImpl

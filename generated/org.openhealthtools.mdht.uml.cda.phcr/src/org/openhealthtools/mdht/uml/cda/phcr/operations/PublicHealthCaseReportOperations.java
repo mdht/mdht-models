@@ -10,6 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.operations;
 
+import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
@@ -57,6 +58,7 @@ import org.openhealthtools.mdht.uml.cda.phcr.util.PhcrValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PublicHealthCaseReport#validatePublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntityAddr(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Public Health Case Report PHCR Legal Authenticator Assigned Entity Addr</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PublicHealthCaseReport#validatePublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntityAssignedPersonName(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Public Health Case Report PHCR Legal Authenticator Assigned Entity Assigned Person Name</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PublicHealthCaseReport#validatePublicHealthCaseReportTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Public Health Case Report Template Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PublicHealthCaseReport#validatePublicHealthCaseReportCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Public Health Case Report Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PublicHealthCaseReport#validatePublicHealthCaseReportCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Public Health Case Report Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PublicHealthCaseReport#validatePublicHealthCaseReportPhcrSocialHistorySection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Public Health Case Report Phcr Social History Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PublicHealthCaseReport#validatePublicHealthCaseReportPhcrClinicalInformationSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Public Health Case Report Phcr Clinical Information Section</em>}</li>
@@ -117,6 +119,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
 	 * @generated
 	 */
 	public static  boolean validatePublicHealthCaseReportPHCRRecordTarget(PublicHealthCaseReport publicHealthCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_RECORD_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.PUBLIC_HEALTH_CASE_REPORT);
@@ -137,6 +140,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
 						 PhcrPlugin.INSTANCE.getString("PublicHealthCaseReportPHCRRecordTarget"),
 						 new Object [] { publicHealthCaseReport }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -174,6 +178,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
 	 * @generated
 	 */
 	public static  boolean validatePublicHealthCaseReportPHCRRecordTargetPatientRole(PublicHealthCaseReport publicHealthCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_RECORD_TARGET_PATIENT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.PUBLIC_HEALTH_CASE_REPORT);
@@ -194,6 +199,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
 						 PhcrPlugin.INSTANCE.getString("PublicHealthCaseReportPHCRRecordTargetPatientRole"),
 						 new Object [] { publicHealthCaseReport }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -231,6 +237,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
 	 * @generated
 	 */
 	public static  boolean validatePublicHealthCaseReportPHCRRecordTargetPatientRoleId(PublicHealthCaseReport publicHealthCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_RECORD_TARGET_PATIENT_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.PUBLIC_HEALTH_CASE_REPORT);
@@ -251,6 +258,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
 						 PhcrPlugin.INSTANCE.getString("PublicHealthCaseReportPHCRRecordTargetPatientRoleId"),
 						 new Object [] { publicHealthCaseReport }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -288,6 +296,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
 	 * @generated
 	 */
 	public static  boolean validatePublicHealthCaseReportPHCRAuthor(PublicHealthCaseReport publicHealthCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.PUBLIC_HEALTH_CASE_REPORT);
@@ -308,6 +317,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
 						 PhcrPlugin.INSTANCE.getString("PublicHealthCaseReportPHCRAuthor"),
 						 new Object [] { publicHealthCaseReport }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -345,6 +355,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
 	 * @generated
 	 */
 	public static  boolean validatePublicHealthCaseReportPHCRAuthorTiime(PublicHealthCaseReport publicHealthCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_AUTHOR_TIIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.PUBLIC_HEALTH_CASE_REPORT);
@@ -365,6 +376,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
 						 PhcrPlugin.INSTANCE.getString("PublicHealthCaseReportPHCRAuthorTiime"),
 						 new Object [] { publicHealthCaseReport }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -402,6 +414,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
 	 * @generated
 	 */
 	public static  boolean validatePublicHealthCaseReportPHCRAuthorAssignedAuthor(PublicHealthCaseReport publicHealthCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_AUTHOR_ASSIGNED_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.PUBLIC_HEALTH_CASE_REPORT);
@@ -422,6 +435,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
 						 PhcrPlugin.INSTANCE.getString("PublicHealthCaseReportPHCRAuthorAssignedAuthor"),
 						 new Object [] { publicHealthCaseReport }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -459,6 +473,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
 	 * @generated
 	 */
 	public static  boolean validatePublicHealthCaseReportPHCRAuthorAssignedAuthorId(PublicHealthCaseReport publicHealthCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_AUTHOR_ASSIGNED_AUTHOR_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.PUBLIC_HEALTH_CASE_REPORT);
@@ -479,6 +494,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
 						 PhcrPlugin.INSTANCE.getString("PublicHealthCaseReportPHCRAuthorAssignedAuthorId"),
 						 new Object [] { publicHealthCaseReport }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -516,6 +532,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
 	 * @generated
 	 */
 	public static  boolean validatePublicHealthCaseReportPHCRAuthorAssignedAuthorAddr(PublicHealthCaseReport publicHealthCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_AUTHOR_ASSIGNED_AUTHOR_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.PUBLIC_HEALTH_CASE_REPORT);
@@ -536,6 +553,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
 						 PhcrPlugin.INSTANCE.getString("PublicHealthCaseReportPHCRAuthorAssignedAuthorAddr"),
 						 new Object [] { publicHealthCaseReport }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -573,6 +591,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
 	 * @generated
 	 */
 	public static  boolean validatePublicHealthCaseReportPHCRAuthorAssignedAuthorTelecom(PublicHealthCaseReport publicHealthCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_AUTHOR_ASSIGNED_AUTHOR_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.PUBLIC_HEALTH_CASE_REPORT);
@@ -593,6 +612,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
 						 PhcrPlugin.INSTANCE.getString("PublicHealthCaseReportPHCRAuthorAssignedAuthorTelecom"),
 						 new Object [] { publicHealthCaseReport }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -630,6 +650,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
 	 * @generated
 	 */
 	public static  boolean validatePublicHealthCaseReportPHCRAuthorAssignedAuthorAssignedPersonName(PublicHealthCaseReport publicHealthCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_AUTHOR_ASSIGNED_AUTHOR_ASSIGNED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.PUBLIC_HEALTH_CASE_REPORT);
@@ -650,6 +671,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
 						 PhcrPlugin.INSTANCE.getString("PublicHealthCaseReportPHCRAuthorAssignedAuthorAssignedPersonName"),
 						 new Object [] { publicHealthCaseReport }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -687,6 +709,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
 	 * @generated
 	 */
 	public static  boolean validatePublicHealthCaseReportPHCRLegalAuthenticator(PublicHealthCaseReport publicHealthCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_LEGAL_AUTHENTICATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.PUBLIC_HEALTH_CASE_REPORT);
@@ -707,6 +730,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
 						 PhcrPlugin.INSTANCE.getString("PublicHealthCaseReportPHCRLegalAuthenticator"),
 						 new Object [] { publicHealthCaseReport }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -744,6 +768,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
 	 * @generated
 	 */
 	public static  boolean validatePublicHealthCaseReportPHCRLegalAuthenticatorTime(PublicHealthCaseReport publicHealthCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_LEGAL_AUTHENTICATOR_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.PUBLIC_HEALTH_CASE_REPORT);
@@ -764,6 +789,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
 						 PhcrPlugin.INSTANCE.getString("PublicHealthCaseReportPHCRLegalAuthenticatorTime"),
 						 new Object [] { publicHealthCaseReport }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -801,6 +827,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
 	 * @generated
 	 */
 	public static  boolean validatePublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntity(PublicHealthCaseReport publicHealthCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.PUBLIC_HEALTH_CASE_REPORT);
@@ -821,6 +848,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
 						 PhcrPlugin.INSTANCE.getString("PublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntity"),
 						 new Object [] { publicHealthCaseReport }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -858,6 +886,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
 	 * @generated
 	 */
 	public static  boolean validatePublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntityId(PublicHealthCaseReport publicHealthCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.PUBLIC_HEALTH_CASE_REPORT);
@@ -878,6 +907,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
 						 PhcrPlugin.INSTANCE.getString("PublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntityId"),
 						 new Object [] { publicHealthCaseReport }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -915,6 +945,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
 	 * @generated
 	 */
 	public static  boolean validatePublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntityAddr(PublicHealthCaseReport publicHealthCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.PUBLIC_HEALTH_CASE_REPORT);
@@ -935,6 +966,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
 						 PhcrPlugin.INSTANCE.getString("PublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntityAddr"),
 						 new Object [] { publicHealthCaseReport }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -972,6 +1004,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
 	 * @generated
 	 */
 	public static  boolean validatePublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntityAssignedPersonName(PublicHealthCaseReport publicHealthCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_LEGAL_AUTHENTICATOR_ASSIGNED_ENTITY_ASSIGNED_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.PUBLIC_HEALTH_CASE_REPORT);
@@ -992,6 +1025,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
 						 PhcrPlugin.INSTANCE.getString("PublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntityAssignedPersonName"),
 						 new Object [] { publicHealthCaseReport }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -1029,6 +1063,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
 	 * @generated
 	 */
 	public static  boolean validatePublicHealthCaseReportTemplateId(PublicHealthCaseReport publicHealthCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.PUBLIC_HEALTH_CASE_REPORT);
@@ -1049,6 +1084,80 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
 						 PhcrPlugin.INSTANCE.getString("PublicHealthCaseReportTemplateId"),
 						 new Object [] { publicHealthCaseReport }));
 			}
+			 
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validatePublicHealthCaseReportCodeP(PublicHealthCaseReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Public Health Case Report Code P</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validatePublicHealthCaseReportCodeP(PublicHealthCaseReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_PUBLIC_HEALTH_CASE_REPORT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validatePublicHealthCaseReportCodeP(PublicHealthCaseReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Public Health Case Report Code P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validatePublicHealthCaseReportCodeP(PublicHealthCaseReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Constraint VALIDATE_PUBLIC_HEALTH_CASE_REPORT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
+	 * @param publicHealthCaseReport The receiving '<em><b>Public Health Case Report</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	
+	public static  boolean validatePublicHealthCaseReportCodeP(PublicHealthCaseReport publicHealthCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(PhcrPackage.Literals.PUBLIC_HEALTH_CASE_REPORT);
+			try {
+				VALIDATE_PUBLIC_HEALTH_CASE_REPORT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PUBLIC_HEALTH_CASE_REPORT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_PUBLIC_HEALTH_CASE_REPORT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(publicHealthCaseReport)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 PhcrValidator.DIAGNOSTIC_SOURCE,
+						 PhcrValidator.PUBLIC_HEALTH_CASE_REPORT__PUBLIC_HEALTH_CASE_REPORT_CODE_P,
+						 PhcrPlugin.INSTANCE.getString("PublicHealthCaseReportCodeP"),
+						 new Object [] { publicHealthCaseReport }));
+			}
+			
+			if (context != null) {
+				// generate a pass token for my dependent constraints to short-circuit or filter results
+				@SuppressWarnings("unchecked")
+				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.phcr.PublicHealthCaseReportCodeP");
+				if (passToken == null) {
+					// anticipate a reasonably healthy model
+					passToken = new java.util.ArrayList<Object>(3);
+					context.put("org.openhealthtools.mdht.uml.cda.phcr.PublicHealthCaseReportCodeP", passToken);
+				}
+				passToken.add(publicHealthCaseReport);
+			}
+			 
 			return false;
 		}
 		return true;
@@ -1090,6 +1199,13 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
 	 * @generated
 	 */
 	public static  boolean validatePublicHealthCaseReportCode(PublicHealthCaseReport publicHealthCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.phcr.PublicHealthCaseReportCodeP");
+		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(publicHealthCaseReport)) {
+			// I have a free pass to short-circuit
+			return true;
+		}
+  	  
 		if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.PUBLIC_HEALTH_CASE_REPORT);
@@ -1110,6 +1226,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
 						 PhcrPlugin.INSTANCE.getString("PublicHealthCaseReportCode"),
 						 new Object [] { publicHealthCaseReport }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -1147,6 +1264,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
 	 * @generated
 	 */
 	public static  boolean validatePublicHealthCaseReportPhcrSocialHistorySection(PublicHealthCaseReport publicHealthCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.PUBLIC_HEALTH_CASE_REPORT);
@@ -1167,6 +1285,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
 						 PhcrPlugin.INSTANCE.getString("PublicHealthCaseReportPhcrSocialHistorySection"),
 						 new Object [] { publicHealthCaseReport }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -1204,6 +1323,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
 	 * @generated
 	 */
 	public static  boolean validatePublicHealthCaseReportPhcrClinicalInformationSection(PublicHealthCaseReport publicHealthCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_CLINICAL_INFORMATION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.PUBLIC_HEALTH_CASE_REPORT);
@@ -1224,6 +1344,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
 						 PhcrPlugin.INSTANCE.getString("PublicHealthCaseReportPhcrClinicalInformationSection"),
 						 new Object [] { publicHealthCaseReport }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -1261,6 +1382,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
 	 * @generated
 	 */
 	public static  boolean validatePublicHealthCaseReportPhcrTreatmentInformationSection(PublicHealthCaseReport publicHealthCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_TREATMENT_INFORMATION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.PUBLIC_HEALTH_CASE_REPORT);
@@ -1281,6 +1403,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
 						 PhcrPlugin.INSTANCE.getString("PublicHealthCaseReportPhcrTreatmentInformationSection"),
 						 new Object [] { publicHealthCaseReport }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -1318,6 +1441,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
 	 * @generated
 	 */
 	public static  boolean validatePublicHealthCaseReportPhcrEncountersSection(PublicHealthCaseReport publicHealthCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_ENCOUNTERS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.PUBLIC_HEALTH_CASE_REPORT);
@@ -1338,6 +1462,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
 						 PhcrPlugin.INSTANCE.getString("PublicHealthCaseReportPhcrEncountersSection"),
 						 new Object [] { publicHealthCaseReport }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -1375,6 +1500,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
 	 * @generated
 	 */
 	public static  boolean validatePublicHealthCaseReportPhcrRelevantDxTestsSection(PublicHealthCaseReport publicHealthCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_PHCR_RELEVANT_DX_TESTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.PUBLIC_HEALTH_CASE_REPORT);
@@ -1395,6 +1521,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
 						 PhcrPlugin.INSTANCE.getString("PublicHealthCaseReportPhcrRelevantDxTestsSection"),
 						 new Object [] { publicHealthCaseReport }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -1432,6 +1559,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
 	 * @generated
 	 */
 	public static  boolean validatePublicHealthCaseReportImmunizationsSection(PublicHealthCaseReport publicHealthCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PUBLIC_HEALTH_CASE_REPORT_IMMUNIZATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.PUBLIC_HEALTH_CASE_REPORT);
@@ -1452,6 +1580,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
 						 PhcrPlugin.INSTANCE.getString("PublicHealthCaseReportImmunizationsSection"),
 						 new Object [] { publicHealthCaseReport }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -1489,7 +1618,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
 	public static  PhcrSocialHistorySection getPhcrSocialHistorySection(PublicHealthCaseReport publicHealthCaseReport) {
 		if (GET_PHCR_SOCIAL_HISTORY_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(PhcrPackage.Literals.PUBLIC_HEALTH_CASE_REPORT, PhcrPackage.Literals.PUBLIC_HEALTH_CASE_REPORT.getEAllOperations().get(53));
+			helper.setOperationContext(PhcrPackage.Literals.PUBLIC_HEALTH_CASE_REPORT, PhcrPackage.Literals.PUBLIC_HEALTH_CASE_REPORT.getEAllOperations().get(54));
 			try {
 				GET_PHCR_SOCIAL_HISTORY_SECTION__EOCL_QRY = helper.createQuery(GET_PHCR_SOCIAL_HISTORY_SECTION__EOCL_EXP);
 			}
@@ -1533,7 +1662,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
 	public static  PhcrClinicalInformationSection getPhcrClinicalInformationSection(PublicHealthCaseReport publicHealthCaseReport) {
 		if (GET_PHCR_CLINICAL_INFORMATION_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(PhcrPackage.Literals.PUBLIC_HEALTH_CASE_REPORT, PhcrPackage.Literals.PUBLIC_HEALTH_CASE_REPORT.getEAllOperations().get(54));
+			helper.setOperationContext(PhcrPackage.Literals.PUBLIC_HEALTH_CASE_REPORT, PhcrPackage.Literals.PUBLIC_HEALTH_CASE_REPORT.getEAllOperations().get(55));
 			try {
 				GET_PHCR_CLINICAL_INFORMATION_SECTION__EOCL_QRY = helper.createQuery(GET_PHCR_CLINICAL_INFORMATION_SECTION__EOCL_EXP);
 			}
@@ -1577,7 +1706,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
 	public static  PhcrTreatmentInformationSection getPhcrTreatmentInformationSection(PublicHealthCaseReport publicHealthCaseReport) {
 		if (GET_PHCR_TREATMENT_INFORMATION_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(PhcrPackage.Literals.PUBLIC_HEALTH_CASE_REPORT, PhcrPackage.Literals.PUBLIC_HEALTH_CASE_REPORT.getEAllOperations().get(55));
+			helper.setOperationContext(PhcrPackage.Literals.PUBLIC_HEALTH_CASE_REPORT, PhcrPackage.Literals.PUBLIC_HEALTH_CASE_REPORT.getEAllOperations().get(56));
 			try {
 				GET_PHCR_TREATMENT_INFORMATION_SECTION__EOCL_QRY = helper.createQuery(GET_PHCR_TREATMENT_INFORMATION_SECTION__EOCL_EXP);
 			}
@@ -1621,7 +1750,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
 	public static  PhcrEncountersSection getPhcrEncountersSection(PublicHealthCaseReport publicHealthCaseReport) {
 		if (GET_PHCR_ENCOUNTERS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(PhcrPackage.Literals.PUBLIC_HEALTH_CASE_REPORT, PhcrPackage.Literals.PUBLIC_HEALTH_CASE_REPORT.getEAllOperations().get(56));
+			helper.setOperationContext(PhcrPackage.Literals.PUBLIC_HEALTH_CASE_REPORT, PhcrPackage.Literals.PUBLIC_HEALTH_CASE_REPORT.getEAllOperations().get(57));
 			try {
 				GET_PHCR_ENCOUNTERS_SECTION__EOCL_QRY = helper.createQuery(GET_PHCR_ENCOUNTERS_SECTION__EOCL_EXP);
 			}
@@ -1665,7 +1794,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
 	public static  PhcrRelevantDxTestsSection getPhcrRelevantDxTestsSection(PublicHealthCaseReport publicHealthCaseReport) {
 		if (GET_PHCR_RELEVANT_DX_TESTS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(PhcrPackage.Literals.PUBLIC_HEALTH_CASE_REPORT, PhcrPackage.Literals.PUBLIC_HEALTH_CASE_REPORT.getEAllOperations().get(57));
+			helper.setOperationContext(PhcrPackage.Literals.PUBLIC_HEALTH_CASE_REPORT, PhcrPackage.Literals.PUBLIC_HEALTH_CASE_REPORT.getEAllOperations().get(58));
 			try {
 				GET_PHCR_RELEVANT_DX_TESTS_SECTION__EOCL_QRY = helper.createQuery(GET_PHCR_RELEVANT_DX_TESTS_SECTION__EOCL_EXP);
 			}
@@ -1709,7 +1838,7 @@ public class PublicHealthCaseReportOperations extends ClinicalDocumentOperations
 	public static  ImmunizationsSection getImmunizationsSection(PublicHealthCaseReport publicHealthCaseReport) {
 		if (GET_IMMUNIZATIONS_SECTION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(PhcrPackage.Literals.PUBLIC_HEALTH_CASE_REPORT, PhcrPackage.Literals.PUBLIC_HEALTH_CASE_REPORT.getEAllOperations().get(58));
+			helper.setOperationContext(PhcrPackage.Literals.PUBLIC_HEALTH_CASE_REPORT, PhcrPackage.Literals.PUBLIC_HEALTH_CASE_REPORT.getEAllOperations().get(59));
 			try {
 				GET_IMMUNIZATIONS_SECTION__EOCL_QRY = helper.createQuery(GET_IMMUNIZATIONS_SECTION__EOCL_EXP);
 			}

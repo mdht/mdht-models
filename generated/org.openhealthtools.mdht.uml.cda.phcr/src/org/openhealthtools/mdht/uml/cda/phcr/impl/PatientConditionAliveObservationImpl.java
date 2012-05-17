@@ -90,8 +90,26 @@ public class PatientConditionAliveObservationImpl extends ObservationImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validatePatientConditionAliveObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PatientConditionAliveObservationOperations.validatePatientConditionAliveObservationCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validatePatientConditionAliveObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientConditionAliveObservationOperations.validatePatientConditionAliveObservationStatusCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePatientConditionAliveObservationStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PatientConditionAliveObservationOperations.validatePatientConditionAliveObservationStatusCodeP(this, diagnostics, context);
 	}
 
 	/**

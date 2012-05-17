@@ -28,6 +28,7 @@ import org.openhealthtools.mdht.uml.cda.phcr.PhcrEncountersSection;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrFactory;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrPackage;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrRelevantDxTestsSection;
+import org.openhealthtools.mdht.uml.cda.phcr.PhcrRelevantMedicalConditionHistoryObservation;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrSocialHistorySection;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrTreatmentInformationSection;
 import org.openhealthtools.mdht.uml.cda.phcr.PregnancyObservation;
@@ -103,6 +104,7 @@ public class PhcrFactoryImpl extends EFactoryImpl implements PhcrFactory
 			case PhcrPackage.SIGNS_AND_SYMPTOMS_OBSERVATION: return createSignsAndSymptomsObservation();
 			case PhcrPackage.PATIENT_CONDITION_ALIVE_OBSERVATION: return createPatientConditionAliveObservation();
 			case PhcrPackage.PATIENT_CONDITION_DECEASED_OBSERVATION: return createPatientConditionDeceasedObservation();
+			case PhcrPackage.PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION: return createPhcrRelevantMedicalConditionHistoryObservation();
 			case PhcrPackage.PHCR_TREATMENT_INFORMATION_SECTION: return createPhcrTreatmentInformationSection();
 			case PhcrPackage.THERAPEUTIC_REGIMEN_ACT: return createTherapeuticRegimenAct();
 			case PhcrPackage.TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION: return createTreatmentGivenSubstanceAdministration();
@@ -112,8 +114,8 @@ public class PhcrFactoryImpl extends EFactoryImpl implements PhcrFactory
 			case PhcrPackage.RESULT_ORGANIZER: return createResultOrganizer();
 			case PhcrPackage.RESULT_OBSERVATION: return createResultObservation();
 			case PhcrPackage.SPECIMEN_COLLECTION_PROCEDURE: return createSpecimenCollectionProcedure();
-			case PhcrPackage.IMAGING_OBSERVATION: return createImagingObservation();
 			case PhcrPackage.SUSCEPTIBILITY_RESULT: return createSusceptibilityResult();
+			case PhcrPackage.IMAGING_OBSERVATION: return createImagingObservation();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -307,6 +309,16 @@ public class PhcrFactoryImpl extends EFactoryImpl implements PhcrFactory
 	public PatientConditionDeceasedObservation createPatientConditionDeceasedObservation() {
 		PatientConditionDeceasedObservationImpl patientConditionDeceasedObservation = new PatientConditionDeceasedObservationImpl();
 		return patientConditionDeceasedObservation;
+	}
+
+		/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PhcrRelevantMedicalConditionHistoryObservation createPhcrRelevantMedicalConditionHistoryObservation() {
+		PhcrRelevantMedicalConditionHistoryObservationImpl phcrRelevantMedicalConditionHistoryObservation = new PhcrRelevantMedicalConditionHistoryObservationImpl();
+		return phcrRelevantMedicalConditionHistoryObservation;
 	}
 
 		/**
