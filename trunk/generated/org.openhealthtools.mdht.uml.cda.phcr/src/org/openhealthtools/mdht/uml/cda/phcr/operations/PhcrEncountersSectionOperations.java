@@ -90,6 +90,7 @@ public class PhcrEncountersSectionOperations extends EncountersSectionOperations
 	 * @generated
 	 */
 	public static  boolean validatePhcrEncountersSectionTitle(PhcrEncountersSection phcrEncountersSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PHCR_ENCOUNTERS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.PHCR_ENCOUNTERS_SECTION);
@@ -110,6 +111,7 @@ public class PhcrEncountersSectionOperations extends EncountersSectionOperations
 						 PhcrPlugin.INSTANCE.getString("PhcrEncountersSectionTitle"),
 						 new Object [] { phcrEncountersSection }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -147,6 +149,7 @@ public class PhcrEncountersSectionOperations extends EncountersSectionOperations
 	 * @generated
 	 */
 	public static  boolean validatePhcrEncountersSectionText(PhcrEncountersSection phcrEncountersSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PHCR_ENCOUNTERS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.PHCR_ENCOUNTERS_SECTION);
@@ -167,6 +170,7 @@ public class PhcrEncountersSectionOperations extends EncountersSectionOperations
 						 PhcrPlugin.INSTANCE.getString("PhcrEncountersSectionText"),
 						 new Object [] { phcrEncountersSection }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -204,6 +208,7 @@ public class PhcrEncountersSectionOperations extends EncountersSectionOperations
 	 * @generated
 	 */
 	public static  boolean validatePhcrEncountersSectionEncountersActivity(PhcrEncountersSection phcrEncountersSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PHCR_ENCOUNTERS_SECTION_ENCOUNTERS_ACTIVITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.PHCR_ENCOUNTERS_SECTION);
@@ -224,6 +229,7 @@ public class PhcrEncountersSectionOperations extends EncountersSectionOperations
 						 PhcrPlugin.INSTANCE.getString("PhcrEncountersSectionEncountersActivity"),
 						 new Object [] { phcrEncountersSection }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -307,6 +313,7 @@ public class PhcrEncountersSectionOperations extends EncountersSectionOperations
 	 * @generated
 	 */
 	public static  boolean validateEncountersSectionTemplateId(PhcrEncountersSection phcrEncountersSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_ENCOUNTERS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.PHCR_ENCOUNTERS_SECTION);
@@ -327,6 +334,7 @@ public class PhcrEncountersSectionOperations extends EncountersSectionOperations
 						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "EncountersSectionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(phcrEncountersSection, context) }),
 						 new Object [] { phcrEncountersSection }));
 			}
+			 
 			return false;
 		}
 		return true;

@@ -187,6 +187,16 @@ public class PhcrSocialHistorySectionImpl extends SocialHistorySectionImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
+	public boolean validateSocialHistorySectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PhcrSocialHistorySectionOperations.validateSocialHistorySectionCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public PhcrSocialHistorySection init() {
     	CDAUtil.init(this);
     	return this;

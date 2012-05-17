@@ -10,11 +10,14 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.operations;
 
+import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
+import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
@@ -27,6 +30,7 @@ import org.openhealthtools.mdht.uml.cda.phcr.PatientConditionDeceasedObservation
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrClinicalInformationSection;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrPackage;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrPlugin;
+import org.openhealthtools.mdht.uml.cda.phcr.PhcrRelevantMedicalConditionHistoryObservation;
 import org.openhealthtools.mdht.uml.cda.phcr.util.PhcrValidator;
 
 /**
@@ -40,14 +44,17 @@ import org.openhealthtools.mdht.uml.cda.phcr.util.PhcrValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrClinicalInformationSection#validatePhcrClinicalInformationSectionPatientConditionConstraint(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Clinical Information Section Patient Condition Constraint</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrClinicalInformationSection#validatePhcrClinicalInformationSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Clinical Information Section Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrClinicalInformationSection#validatePhcrClinicalInformationSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Clinical Information Section Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrClinicalInformationSection#validatePhcrClinicalInformationSectionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Clinical Information Section Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrClinicalInformationSection#validatePhcrClinicalInformationSectionTitle(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Clinical Information Section Title</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrClinicalInformationSection#validatePhcrClinicalInformationSectionText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Clinical Information Section Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrClinicalInformationSection#validatePhcrClinicalInformationSectionCaseObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Clinical Information Section Case Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrClinicalInformationSection#validatePhcrClinicalInformationSectionPatientConditionAliveObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Clinical Information Section Patient Condition Alive Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrClinicalInformationSection#validatePhcrClinicalInformationSectionPatientConditionDeceasedObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Clinical Information Section Patient Condition Deceased Observation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrClinicalInformationSection#validatePhcrClinicalInformationSectionPhcrRelevantMedicalConditionHistoryObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Clinical Information Section Phcr Relevant Medical Condition History Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrClinicalInformationSection#getCaseObservation() <em>Get Case Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrClinicalInformationSection#getPatientConditionAliveObservation() <em>Get Patient Condition Alive Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrClinicalInformationSection#getPatientConditionDeceasedObservation() <em>Get Patient Condition Deceased Observation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrClinicalInformationSection#getPhcrRelevantMedicalConditionHistoryObservations() <em>Get Phcr Relevant Medical Condition History Observations</em>}</li>
  * </ul>
  * </p>
  *
@@ -95,6 +102,7 @@ public class PhcrClinicalInformationSectionOperations extends SectionOperations 
 	 * @generated
 	 */
 	public static  boolean validatePhcrClinicalInformationSectionPatientConditionConstraint(PhcrClinicalInformationSection phcrClinicalInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PHCR_CLINICAL_INFORMATION_SECTION_PATIENT_CONDITION_CONSTRAINT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.PHCR_CLINICAL_INFORMATION_SECTION);
@@ -115,6 +123,7 @@ public class PhcrClinicalInformationSectionOperations extends SectionOperations 
 						 PhcrPlugin.INSTANCE.getString("PhcrClinicalInformationSectionPatientConditionConstraint"),
 						 new Object [] { phcrClinicalInformationSection }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -152,6 +161,7 @@ public class PhcrClinicalInformationSectionOperations extends SectionOperations 
 	 * @generated
 	 */
 	public static  boolean validatePhcrClinicalInformationSectionTemplateId(PhcrClinicalInformationSection phcrClinicalInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PHCR_CLINICAL_INFORMATION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.PHCR_CLINICAL_INFORMATION_SECTION);
@@ -172,6 +182,7 @@ public class PhcrClinicalInformationSectionOperations extends SectionOperations 
 						 PhcrPlugin.INSTANCE.getString("PhcrClinicalInformationSectionTemplateId"),
 						 new Object [] { phcrClinicalInformationSection }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -213,6 +224,7 @@ public class PhcrClinicalInformationSectionOperations extends SectionOperations 
 	 * @generated
 	 */
 	public static  boolean validatePhcrClinicalInformationSectionCode(PhcrClinicalInformationSection phcrClinicalInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PHCR_CLINICAL_INFORMATION_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.PHCR_CLINICAL_INFORMATION_SECTION);
@@ -233,6 +245,68 @@ public class PhcrClinicalInformationSectionOperations extends SectionOperations 
 						 PhcrPlugin.INSTANCE.getString("PhcrClinicalInformationSectionCode"),
 						 new Object [] { phcrClinicalInformationSection }));
 			}
+			 
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validatePhcrClinicalInformationSectionCodeP(PhcrClinicalInformationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Clinical Information Section Code P</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validatePhcrClinicalInformationSectionCodeP(PhcrClinicalInformationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_PHCR_CLINICAL_INFORMATION_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validatePhcrClinicalInformationSectionCodeP(PhcrClinicalInformationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Clinical Information Section Code P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validatePhcrClinicalInformationSectionCodeP(PhcrClinicalInformationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Constraint VALIDATE_PHCR_CLINICAL_INFORMATION_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
+	 * @param phcrClinicalInformationSection The receiving '<em><b>Clinical Information Section</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	
+	public static  boolean validatePhcrClinicalInformationSectionCodeP(PhcrClinicalInformationSection phcrClinicalInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_PHCR_CLINICAL_INFORMATION_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(PhcrPackage.Literals.PHCR_CLINICAL_INFORMATION_SECTION);
+			try {
+				VALIDATE_PHCR_CLINICAL_INFORMATION_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHCR_CLINICAL_INFORMATION_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_PHCR_CLINICAL_INFORMATION_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(phcrClinicalInformationSection)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 PhcrValidator.DIAGNOSTIC_SOURCE,
+						 PhcrValidator.PHCR_CLINICAL_INFORMATION_SECTION__PHCR_CLINICAL_INFORMATION_SECTION_CODE_P,
+						 PhcrPlugin.INSTANCE.getString("PhcrClinicalInformationSectionCodeP"),
+						 new Object [] { phcrClinicalInformationSection }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -270,6 +344,7 @@ public class PhcrClinicalInformationSectionOperations extends SectionOperations 
 	 * @generated
 	 */
 	public static  boolean validatePhcrClinicalInformationSectionTitle(PhcrClinicalInformationSection phcrClinicalInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PHCR_CLINICAL_INFORMATION_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.PHCR_CLINICAL_INFORMATION_SECTION);
@@ -290,6 +365,7 @@ public class PhcrClinicalInformationSectionOperations extends SectionOperations 
 						 PhcrPlugin.INSTANCE.getString("PhcrClinicalInformationSectionTitle"),
 						 new Object [] { phcrClinicalInformationSection }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -327,6 +403,7 @@ public class PhcrClinicalInformationSectionOperations extends SectionOperations 
 	 * @generated
 	 */
 	public static  boolean validatePhcrClinicalInformationSectionText(PhcrClinicalInformationSection phcrClinicalInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PHCR_CLINICAL_INFORMATION_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.PHCR_CLINICAL_INFORMATION_SECTION);
@@ -347,6 +424,7 @@ public class PhcrClinicalInformationSectionOperations extends SectionOperations 
 						 PhcrPlugin.INSTANCE.getString("PhcrClinicalInformationSectionText"),
 						 new Object [] { phcrClinicalInformationSection }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -384,6 +462,7 @@ public class PhcrClinicalInformationSectionOperations extends SectionOperations 
 	 * @generated
 	 */
 	public static  boolean validatePhcrClinicalInformationSectionCaseObservation(PhcrClinicalInformationSection phcrClinicalInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PHCR_CLINICAL_INFORMATION_SECTION_CASE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.PHCR_CLINICAL_INFORMATION_SECTION);
@@ -404,6 +483,7 @@ public class PhcrClinicalInformationSectionOperations extends SectionOperations 
 						 PhcrPlugin.INSTANCE.getString("PhcrClinicalInformationSectionCaseObservation"),
 						 new Object [] { phcrClinicalInformationSection }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -441,6 +521,7 @@ public class PhcrClinicalInformationSectionOperations extends SectionOperations 
 	 * @generated
 	 */
 	public static  boolean validatePhcrClinicalInformationSectionPatientConditionAliveObservation(PhcrClinicalInformationSection phcrClinicalInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PHCR_CLINICAL_INFORMATION_SECTION_PATIENT_CONDITION_ALIVE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.PHCR_CLINICAL_INFORMATION_SECTION);
@@ -461,6 +542,7 @@ public class PhcrClinicalInformationSectionOperations extends SectionOperations 
 						 PhcrPlugin.INSTANCE.getString("PhcrClinicalInformationSectionPatientConditionAliveObservation"),
 						 new Object [] { phcrClinicalInformationSection }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -498,6 +580,7 @@ public class PhcrClinicalInformationSectionOperations extends SectionOperations 
 	 * @generated
 	 */
 	public static  boolean validatePhcrClinicalInformationSectionPatientConditionDeceasedObservation(PhcrClinicalInformationSection phcrClinicalInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PHCR_CLINICAL_INFORMATION_SECTION_PATIENT_CONDITION_DECEASED_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.PHCR_CLINICAL_INFORMATION_SECTION);
@@ -518,6 +601,68 @@ public class PhcrClinicalInformationSectionOperations extends SectionOperations 
 						 PhcrPlugin.INSTANCE.getString("PhcrClinicalInformationSectionPatientConditionDeceasedObservation"),
 						 new Object [] { phcrClinicalInformationSection }));
 			}
+			 
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validatePhcrClinicalInformationSectionPhcrRelevantMedicalConditionHistoryObservation(PhcrClinicalInformationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Clinical Information Section Phcr Relevant Medical Condition History Observation</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validatePhcrClinicalInformationSectionPhcrRelevantMedicalConditionHistoryObservation(PhcrClinicalInformationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_PHCR_CLINICAL_INFORMATION_SECTION_PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(phcr::PhcrRelevantMedicalConditionHistoryObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validatePhcrClinicalInformationSectionPhcrRelevantMedicalConditionHistoryObservation(PhcrClinicalInformationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Clinical Information Section Phcr Relevant Medical Condition History Observation</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validatePhcrClinicalInformationSectionPhcrRelevantMedicalConditionHistoryObservation(PhcrClinicalInformationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Constraint VALIDATE_PHCR_CLINICAL_INFORMATION_SECTION_PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(phcr::PhcrRelevantMedicalConditionHistoryObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)
+	 * @param phcrClinicalInformationSection The receiving '<em><b>Clinical Information Section</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	
+	public static  boolean validatePhcrClinicalInformationSectionPhcrRelevantMedicalConditionHistoryObservation(PhcrClinicalInformationSection phcrClinicalInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_PHCR_CLINICAL_INFORMATION_SECTION_PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(PhcrPackage.Literals.PHCR_CLINICAL_INFORMATION_SECTION);
+			try {
+				VALIDATE_PHCR_CLINICAL_INFORMATION_SECTION_PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHCR_CLINICAL_INFORMATION_SECTION_PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_PHCR_CLINICAL_INFORMATION_SECTION_PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(phcrClinicalInformationSection)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 PhcrValidator.DIAGNOSTIC_SOURCE,
+						 PhcrValidator.PHCR_CLINICAL_INFORMATION_SECTION__PHCR_CLINICAL_INFORMATION_SECTION_PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION,
+						 PhcrPlugin.INSTANCE.getString("PhcrClinicalInformationSectionPhcrRelevantMedicalConditionHistoryObservation"),
+						 new Object [] { phcrClinicalInformationSection }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -555,7 +700,7 @@ public class PhcrClinicalInformationSectionOperations extends SectionOperations 
 	public static  CaseObservation getCaseObservation(PhcrClinicalInformationSection phcrClinicalInformationSection) {
 		if (GET_CASE_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(PhcrPackage.Literals.PHCR_CLINICAL_INFORMATION_SECTION, PhcrPackage.Literals.PHCR_CLINICAL_INFORMATION_SECTION.getEAllOperations().get(63));
+			helper.setOperationContext(PhcrPackage.Literals.PHCR_CLINICAL_INFORMATION_SECTION, PhcrPackage.Literals.PHCR_CLINICAL_INFORMATION_SECTION.getEAllOperations().get(65));
 			try {
 				GET_CASE_OBSERVATION__EOCL_QRY = helper.createQuery(GET_CASE_OBSERVATION__EOCL_EXP);
 			}
@@ -599,7 +744,7 @@ public class PhcrClinicalInformationSectionOperations extends SectionOperations 
 	public static  PatientConditionAliveObservation getPatientConditionAliveObservation(PhcrClinicalInformationSection phcrClinicalInformationSection) {
 		if (GET_PATIENT_CONDITION_ALIVE_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(PhcrPackage.Literals.PHCR_CLINICAL_INFORMATION_SECTION, PhcrPackage.Literals.PHCR_CLINICAL_INFORMATION_SECTION.getEAllOperations().get(64));
+			helper.setOperationContext(PhcrPackage.Literals.PHCR_CLINICAL_INFORMATION_SECTION, PhcrPackage.Literals.PHCR_CLINICAL_INFORMATION_SECTION.getEAllOperations().get(66));
 			try {
 				GET_PATIENT_CONDITION_ALIVE_OBSERVATION__EOCL_QRY = helper.createQuery(GET_PATIENT_CONDITION_ALIVE_OBSERVATION__EOCL_EXP);
 			}
@@ -643,7 +788,7 @@ public class PhcrClinicalInformationSectionOperations extends SectionOperations 
 	public static  PatientConditionDeceasedObservation getPatientConditionDeceasedObservation(PhcrClinicalInformationSection phcrClinicalInformationSection) {
 		if (GET_PATIENT_CONDITION_DECEASED_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(PhcrPackage.Literals.PHCR_CLINICAL_INFORMATION_SECTION, PhcrPackage.Literals.PHCR_CLINICAL_INFORMATION_SECTION.getEAllOperations().get(65));
+			helper.setOperationContext(PhcrPackage.Literals.PHCR_CLINICAL_INFORMATION_SECTION, PhcrPackage.Literals.PHCR_CLINICAL_INFORMATION_SECTION.getEAllOperations().get(67));
 			try {
 				GET_PATIENT_CONDITION_DECEASED_OBSERVATION__EOCL_QRY = helper.createQuery(GET_PATIENT_CONDITION_DECEASED_OBSERVATION__EOCL_EXP);
 			}
@@ -653,6 +798,53 @@ public class PhcrClinicalInformationSectionOperations extends SectionOperations 
 		}
 		OCL.Query query = EOCL_ENV.createQuery(GET_PATIENT_CONDITION_DECEASED_OBSERVATION__EOCL_QRY);
 		return (PatientConditionDeceasedObservation) query.evaluate(phcrClinicalInformationSection);
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #getPhcrRelevantMedicalConditionHistoryObservations(PhcrClinicalInformationSection) <em>Get Phcr Relevant Medical Condition History Observations</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getPhcrRelevantMedicalConditionHistoryObservations(PhcrClinicalInformationSection)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String GET_PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(phcr::PhcrRelevantMedicalConditionHistoryObservation)).oclAsType(phcr::PhcrRelevantMedicalConditionHistoryObservation)";
+
+	/**
+	 * The cached OCL query for the '{@link #getPhcrRelevantMedicalConditionHistoryObservations(PhcrClinicalInformationSection) <em>Get Phcr Relevant Medical Condition History Observations</em>}' query operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getPhcrRelevantMedicalConditionHistoryObservations(PhcrClinicalInformationSection)
+	 * @generated
+	 * @ordered
+	 */
+	protected static OCLExpression<EClassifier> GET_PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATIONS__EOCL_QRY;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(phcr::PhcrRelevantMedicalConditionHistoryObservation)).oclAsType(phcr::PhcrRelevantMedicalConditionHistoryObservation)
+	 * @param phcrClinicalInformationSection The receiving '<em><b>Clinical Information Section</b></em>' model object.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	
+	public static  EList<PhcrRelevantMedicalConditionHistoryObservation> getPhcrRelevantMedicalConditionHistoryObservations(PhcrClinicalInformationSection phcrClinicalInformationSection) {
+		if (GET_PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATIONS__EOCL_QRY == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setOperationContext(PhcrPackage.Literals.PHCR_CLINICAL_INFORMATION_SECTION, PhcrPackage.Literals.PHCR_CLINICAL_INFORMATION_SECTION.getEAllOperations().get(68));
+			try {
+				GET_PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATIONS__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		OCL.Query query = EOCL_ENV.createQuery(GET_PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATIONS__EOCL_QRY);
+		@SuppressWarnings("unchecked")
+		Collection<PhcrRelevantMedicalConditionHistoryObservation> result = (Collection<PhcrRelevantMedicalConditionHistoryObservation>) query.evaluate(phcrClinicalInformationSection);
+		return new BasicEList.UnmodifiableEList<PhcrRelevantMedicalConditionHistoryObservation>(result.size(), result.toArray());
 	}
 	
 } // PhcrClinicalInformationSectionOperations

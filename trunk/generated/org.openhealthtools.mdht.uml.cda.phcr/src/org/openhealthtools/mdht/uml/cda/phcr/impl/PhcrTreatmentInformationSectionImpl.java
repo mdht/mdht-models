@@ -73,6 +73,15 @@ public class PhcrTreatmentInformationSectionImpl extends SectionImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validatePhcrTreatmentInformationSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PhcrTreatmentInformationSectionOperations.validatePhcrTreatmentInformationSectionCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validatePhcrTreatmentInformationSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PhcrTreatmentInformationSectionOperations.validatePhcrTreatmentInformationSectionTitle(this, diagnostics, context);
 	}

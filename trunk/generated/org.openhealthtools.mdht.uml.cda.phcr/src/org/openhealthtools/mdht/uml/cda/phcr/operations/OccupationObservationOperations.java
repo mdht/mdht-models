@@ -10,6 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.phcr.operations;
 
+import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
@@ -36,10 +37,13 @@ import org.openhealthtools.mdht.uml.cda.phcr.util.PhcrValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.OccupationObservation#validateOccupationObservationClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Occupation Observation Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.OccupationObservation#validateOccupationObservationMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Occupation Observation Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.OccupationObservation#validateOccupationObservationNegationInd(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Occupation Observation Negation Ind</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.OccupationObservation#validateOccupationObservationCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Occupation Observation Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.OccupationObservation#validateOccupationObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Occupation Observation Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.OccupationObservation#validateOccupationObservationText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Occupation Observation Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.OccupationObservation#validateOccupationObservationStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Occupation Observation Status Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.OccupationObservation#validateOccupationObservationStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Occupation Observation Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.OccupationObservation#validateOccupationObservationEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Occupation Observation Effective Time</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.OccupationObservation#validateOccupationObservationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Occupation Observation Value</em>}</li>
  * </ul>
  * </p>
  *
@@ -87,6 +91,7 @@ public class OccupationObservationOperations extends ClinicalStatementOperations
 	 * @generated
 	 */
 	public static  boolean validateOccupationObservationTemplateId(OccupationObservation occupationObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_OCCUPATION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.OCCUPATION_OBSERVATION);
@@ -107,6 +112,7 @@ public class OccupationObservationOperations extends ClinicalStatementOperations
 						 PhcrPlugin.INSTANCE.getString("OccupationObservationTemplateId"),
 						 new Object [] { occupationObservation }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -144,6 +150,7 @@ public class OccupationObservationOperations extends ClinicalStatementOperations
 	 * @generated
 	 */
 	public static  boolean validateOccupationObservationClassCode(OccupationObservation occupationObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_OCCUPATION_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.OCCUPATION_OBSERVATION);
@@ -164,6 +171,7 @@ public class OccupationObservationOperations extends ClinicalStatementOperations
 						 PhcrPlugin.INSTANCE.getString("OccupationObservationClassCode"),
 						 new Object [] { occupationObservation }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -183,6 +191,13 @@ public class OccupationObservationOperations extends ClinicalStatementOperations
 	 * @generated
 	 */
 	public static  boolean validateOccupationObservationCode(OccupationObservation occupationObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.phcr.OccupationObservationCodeP");
+		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(occupationObservation)) {
+			// I have a free pass to short-circuit
+			return true;
+		}
+  	  
 		if (VALIDATE_OCCUPATION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.OCCUPATION_OBSERVATION);
@@ -203,6 +218,7 @@ public class OccupationObservationOperations extends ClinicalStatementOperations
 						 PhcrPlugin.INSTANCE.getString("OccupationObservationCode"),
 						 new Object [] { occupationObservation }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -220,6 +236,7 @@ public class OccupationObservationOperations extends ClinicalStatementOperations
 	 * @generated
 	 */
 	public static  boolean validateOccupationObservationText(OccupationObservation occupationObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_OCCUPATION_OBSERVATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.OCCUPATION_OBSERVATION);
@@ -240,6 +257,7 @@ public class OccupationObservationOperations extends ClinicalStatementOperations
 						 PhcrPlugin.INSTANCE.getString("OccupationObservationText"),
 						 new Object [] { occupationObservation }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -277,6 +295,7 @@ public class OccupationObservationOperations extends ClinicalStatementOperations
 	 * @generated
 	 */
 	public static  boolean validateOccupationObservationMoodCode(OccupationObservation occupationObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_OCCUPATION_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.OCCUPATION_OBSERVATION);
@@ -297,6 +316,7 @@ public class OccupationObservationOperations extends ClinicalStatementOperations
 						 PhcrPlugin.INSTANCE.getString("OccupationObservationMoodCode"),
 						 new Object [] { occupationObservation }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -321,6 +341,66 @@ public class OccupationObservationOperations extends ClinicalStatementOperations
 	 * @ordered
 	 */
 	protected static Constraint VALIDATE_OCCUPATION_OBSERVATION_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * not self.negationInd.oclIsUndefined()
+	 * @param occupationObservation The receiving '<em><b>Occupation Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	public static  boolean validateOccupationObservationNegationInd(OccupationObservation occupationObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_OCCUPATION_OBSERVATION_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(PhcrPackage.Literals.OCCUPATION_OBSERVATION);
+			try {
+				VALIDATE_OCCUPATION_OBSERVATION_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OCCUPATION_OBSERVATION_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_OCCUPATION_OBSERVATION_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(occupationObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 PhcrValidator.DIAGNOSTIC_SOURCE,
+						 PhcrValidator.OCCUPATION_OBSERVATION__OCCUPATION_OBSERVATION_NEGATION_IND,
+						 PhcrPlugin.INSTANCE.getString("OccupationObservationNegationInd"),
+						 new Object [] { occupationObservation }));
+			}
+			 
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateOccupationObservationCodeP(OccupationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Occupation Observation Code P</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateOccupationObservationCodeP(OccupationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_OCCUPATION_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateOccupationObservationCodeP(OccupationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Occupation Observation Code P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateOccupationObservationCodeP(OccupationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Constraint VALIDATE_OCCUPATION_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateOccupationObservationCode(OccupationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Occupation Observation Code</em>}' operation.
@@ -368,34 +448,49 @@ public class OccupationObservationOperations extends ClinicalStatementOperations
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * not self.negationInd.oclIsUndefined()
+	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
 	 * @param occupationObservation The receiving '<em><b>Occupation Observation</b></em>' model object.
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static  boolean validateOccupationObservationNegationInd(OccupationObservation occupationObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (VALIDATE_OCCUPATION_OBSERVATION_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+	
+	public static  boolean validateOccupationObservationCodeP(OccupationObservation occupationObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_OCCUPATION_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.OCCUPATION_OBSERVATION);
 			try {
-				VALIDATE_OCCUPATION_OBSERVATION_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OCCUPATION_OBSERVATION_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_OCCUPATION_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OCCUPATION_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_OCCUPATION_OBSERVATION_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(occupationObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_OCCUPATION_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(occupationObservation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
-						(Diagnostic.INFO,
+						(Diagnostic.ERROR,
 						 PhcrValidator.DIAGNOSTIC_SOURCE,
-						 PhcrValidator.OCCUPATION_OBSERVATION__OCCUPATION_OBSERVATION_NEGATION_IND,
-						 PhcrPlugin.INSTANCE.getString("OccupationObservationNegationInd"),
+						 PhcrValidator.OCCUPATION_OBSERVATION__OCCUPATION_OBSERVATION_CODE_P,
+						 PhcrPlugin.INSTANCE.getString("OccupationObservationCodeP"),
 						 new Object [] { occupationObservation }));
 			}
+			
+			if (context != null) {
+				// generate a pass token for my dependent constraints to short-circuit or filter results
+				@SuppressWarnings("unchecked")
+				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.phcr.OccupationObservationCodeP");
+				if (passToken == null) {
+					// anticipate a reasonably healthy model
+					passToken = new java.util.ArrayList<Object>(3);
+					context.put("org.openhealthtools.mdht.uml.cda.phcr.OccupationObservationCodeP", passToken);
+				}
+				passToken.add(occupationObservation);
+			}
+			 
 			return false;
 		}
 		return true;
@@ -437,6 +532,7 @@ public class OccupationObservationOperations extends ClinicalStatementOperations
 	 * @generated
 	 */
 	public static  boolean validateOccupationObservationStatusCode(OccupationObservation occupationObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_OCCUPATION_OBSERVATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.OCCUPATION_OBSERVATION);
@@ -457,6 +553,68 @@ public class OccupationObservationOperations extends ClinicalStatementOperations
 						 PhcrPlugin.INSTANCE.getString("OccupationObservationStatusCode"),
 						 new Object [] { occupationObservation }));
 			}
+			 
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateOccupationObservationStatusCodeP(OccupationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Occupation Observation Status Code P</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateOccupationObservationStatusCodeP(OccupationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_OCCUPATION_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateOccupationObservationStatusCodeP(OccupationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Occupation Observation Status Code P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateOccupationObservationStatusCodeP(OccupationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Constraint VALIDATE_OCCUPATION_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())
+	 * @param occupationObservation The receiving '<em><b>Occupation Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	
+	public static  boolean validateOccupationObservationStatusCodeP(OccupationObservation occupationObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_OCCUPATION_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(PhcrPackage.Literals.OCCUPATION_OBSERVATION);
+			try {
+				VALIDATE_OCCUPATION_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OCCUPATION_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_OCCUPATION_OBSERVATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(occupationObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 PhcrValidator.DIAGNOSTIC_SOURCE,
+						 PhcrValidator.OCCUPATION_OBSERVATION__OCCUPATION_OBSERVATION_STATUS_CODE_P,
+						 PhcrPlugin.INSTANCE.getString("OccupationObservationStatusCodeP"),
+						 new Object [] { occupationObservation }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -494,6 +652,7 @@ public class OccupationObservationOperations extends ClinicalStatementOperations
 	 * @generated
 	 */
 	public static  boolean validateOccupationObservationEffectiveTime(OccupationObservation occupationObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_OCCUPATION_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.OCCUPATION_OBSERVATION);
@@ -508,12 +667,74 @@ public class OccupationObservationOperations extends ClinicalStatementOperations
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
-						(Diagnostic.INFO,
+						(Diagnostic.WARNING,
 						 PhcrValidator.DIAGNOSTIC_SOURCE,
 						 PhcrValidator.OCCUPATION_OBSERVATION__OCCUPATION_OBSERVATION_EFFECTIVE_TIME,
 						 PhcrPlugin.INSTANCE.getString("OccupationObservationEffectiveTime"),
 						 new Object [] { occupationObservation }));
 			}
+			 
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateOccupationObservationValue(OccupationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Occupation Observation Value</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateOccupationObservationValue(OccupationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_OCCUPATION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateOccupationObservationValue(OccupationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Occupation Observation Value</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateOccupationObservationValue(OccupationObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Constraint VALIDATE_OCCUPATION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * (self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))
+	 * @param occupationObservation The receiving '<em><b>Occupation Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	
+	public static  boolean validateOccupationObservationValue(OccupationObservation occupationObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_OCCUPATION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(PhcrPackage.Literals.OCCUPATION_OBSERVATION);
+			try {
+				VALIDATE_OCCUPATION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OCCUPATION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_OCCUPATION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(occupationObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 PhcrValidator.DIAGNOSTIC_SOURCE,
+						 PhcrValidator.OCCUPATION_OBSERVATION__OCCUPATION_OBSERVATION_VALUE,
+						 PhcrPlugin.INSTANCE.getString("OccupationObservationValue"),
+						 new Object [] { occupationObservation }));
+			}
+			 
 			return false;
 		}
 		return true;

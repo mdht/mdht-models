@@ -108,6 +108,15 @@ public class SusceptibilityResultImpl extends ObservationImpl implements Suscept
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateSusceptibilityResultStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SusceptibilityResultOperations.validateSusceptibilityResultStatusCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public SusceptibilityResult init() {
     	CDAUtil.init(this);
     	return this;

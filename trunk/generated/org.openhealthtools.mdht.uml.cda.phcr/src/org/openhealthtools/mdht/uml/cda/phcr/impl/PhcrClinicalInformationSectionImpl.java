@@ -13,6 +13,7 @@ package org.openhealthtools.mdht.uml.cda.phcr.impl;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
 import org.openhealthtools.mdht.uml.cda.phcr.CaseObservation;
@@ -20,6 +21,7 @@ import org.openhealthtools.mdht.uml.cda.phcr.PatientConditionAliveObservation;
 import org.openhealthtools.mdht.uml.cda.phcr.PatientConditionDeceasedObservation;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrClinicalInformationSection;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrPackage;
+import org.openhealthtools.mdht.uml.cda.phcr.PhcrRelevantMedicalConditionHistoryObservation;
 import org.openhealthtools.mdht.uml.cda.phcr.operations.PhcrClinicalInformationSectionOperations;
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
@@ -84,6 +86,15 @@ public class PhcrClinicalInformationSectionImpl extends SectionImpl implements P
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validatePhcrClinicalInformationSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PhcrClinicalInformationSectionOperations.validatePhcrClinicalInformationSectionCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validatePhcrClinicalInformationSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PhcrClinicalInformationSectionOperations.validatePhcrClinicalInformationSectionTitle(this, diagnostics, context);
 	}
@@ -129,6 +140,15 @@ public class PhcrClinicalInformationSectionImpl extends SectionImpl implements P
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validatePhcrClinicalInformationSectionPhcrRelevantMedicalConditionHistoryObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PhcrClinicalInformationSectionOperations.validatePhcrClinicalInformationSectionPhcrRelevantMedicalConditionHistoryObservation(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public CaseObservation getCaseObservation() {
 		return PhcrClinicalInformationSectionOperations.getCaseObservation(this);
 	}
@@ -149,6 +169,15 @@ public class PhcrClinicalInformationSectionImpl extends SectionImpl implements P
 	 */
 	public PatientConditionDeceasedObservation getPatientConditionDeceasedObservation() {
 		return PhcrClinicalInformationSectionOperations.getPatientConditionDeceasedObservation(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<PhcrRelevantMedicalConditionHistoryObservation> getPhcrRelevantMedicalConditionHistoryObservations() {
+		return PhcrClinicalInformationSectionOperations.getPhcrRelevantMedicalConditionHistoryObservations(this);
 	}
 
 	/**

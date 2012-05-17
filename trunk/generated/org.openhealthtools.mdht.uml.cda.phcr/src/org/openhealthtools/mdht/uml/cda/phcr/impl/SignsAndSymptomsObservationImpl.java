@@ -99,8 +99,26 @@ public class SignsAndSymptomsObservationImpl extends ObservationImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateSignsAndSymptomsObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SignsAndSymptomsObservationOperations.validateSignsAndSymptomsObservationCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateSignsAndSymptomsObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SignsAndSymptomsObservationOperations.validateSignsAndSymptomsObservationStatusCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSignsAndSymptomsObservationStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SignsAndSymptomsObservationOperations.validateSignsAndSymptomsObservationStatusCodeP(this, diagnostics, context);
 	}
 
 	/**

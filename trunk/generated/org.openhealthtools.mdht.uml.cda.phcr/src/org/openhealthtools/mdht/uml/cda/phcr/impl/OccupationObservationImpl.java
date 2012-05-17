@@ -108,6 +108,15 @@ public class OccupationObservationImpl extends ObservationImpl implements Occupa
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateOccupationObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return OccupationObservationOperations.validateOccupationObservationCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateOccupationObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return OccupationObservationOperations.validateOccupationObservationStatusCode(this, diagnostics, context);
 	}
@@ -117,8 +126,26 @@ public class OccupationObservationImpl extends ObservationImpl implements Occupa
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateOccupationObservationStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return OccupationObservationOperations.validateOccupationObservationStatusCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateOccupationObservationEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return OccupationObservationOperations.validateOccupationObservationEffectiveTime(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOccupationObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return OccupationObservationOperations.validateOccupationObservationValue(this, diagnostics, context);
 	}
 
 	/**

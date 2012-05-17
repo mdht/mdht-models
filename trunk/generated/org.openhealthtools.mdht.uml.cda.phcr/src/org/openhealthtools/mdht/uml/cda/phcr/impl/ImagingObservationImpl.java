@@ -81,6 +81,15 @@ public class ImagingObservationImpl extends ProblemObservationImpl implements Im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateImagingObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ImagingObservationOperations.validateImagingObservationCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateImagingObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ImagingObservationOperations.validateImagingObservationStatusCode(this, diagnostics, context);
 	}
@@ -120,6 +129,16 @@ public class ImagingObservationImpl extends ProblemObservationImpl implements Im
 	@Override
 	public boolean validateProblemObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ImagingObservationOperations.validateProblemObservationTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateProblemObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ImagingObservationOperations.validateProblemObservationStatusCode(this, diagnostics, context);
 	}
 
 	/**

@@ -81,8 +81,26 @@ public class MostRecentTimeArrivedInUSAObservationImpl extends ObservationImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateMostRecentTimeArrivedInUSAObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MostRecentTimeArrivedInUSAObservationOperations.validateMostRecentTimeArrivedInUSAObservationCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateMostRecentTimeArrivedInUSAObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MostRecentTimeArrivedInUSAObservationOperations.validateMostRecentTimeArrivedInUSAObservationStatusCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMostRecentTimeArrivedInUSAObservationStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MostRecentTimeArrivedInUSAObservationOperations.validateMostRecentTimeArrivedInUSAObservationStatusCodeP(this, diagnostics, context);
 	}
 
 	/**

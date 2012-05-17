@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.phcr.PhcrPackage#getSusceptibilityResult()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation moodCode='EVN' classCode='OBS' code.codeSystemName='LOINC' constraints.validation.error='SusceptibilityResultTemplateId SusceptibilityResultClassCode SusceptibilityResultMoodCode SusceptibilityResultCode SusceptibilityResultCodeP SusceptibilityResultStatusCode' templateId.root='2.16.840.1.113883.10.20.15.3.10' code.displayName='Microbial susceptibility tests' statusCode.code='completed' code.codeSystem='2.16.840.1.113883.6.1' code.code='18769-0'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation moodCode='EVN' classCode='OBS' code.codeSystemName='LOINC' constraints.validation.dependOn.SusceptibilityResultCode='SusceptibilityResultCodeP' templateId.root='2.16.840.1.113883.10.20.15.3.10' constraints.validation.error='SusceptibilityResultTemplateId SusceptibilityResultClassCode SusceptibilityResultMoodCode SusceptibilityResultCode SusceptibilityResultCodeP SusceptibilityResultStatusCode SusceptibilityResultStatusCodeP' statusCode.code='completed' code.displayName='Microbial susceptibility tests' code.codeSystem='2.16.840.1.113883.6.1' code.code='18769-0'"
  * @generated
  */
 public interface SusceptibilityResult extends Observation {
@@ -107,6 +107,19 @@ public interface SusceptibilityResult extends Observation {
 	 * @generated
 	 */
 	boolean validateSusceptibilityResultStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * (self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())'"
+	 * @generated
+	 */
+	boolean validateSusceptibilityResultStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

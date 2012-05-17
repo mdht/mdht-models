@@ -35,7 +35,9 @@ import org.openhealthtools.mdht.uml.cda.phcr.util.PhcrValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.SpecimenCollectionProcedure#validateSpecimenCollectionProcedureTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Specimen Collection Procedure Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.SpecimenCollectionProcedure#validateSpecimenCollectionProcedureClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Specimen Collection Procedure Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.SpecimenCollectionProcedure#validateSpecimenCollectionProcedureMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Specimen Collection Procedure Mood Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.SpecimenCollectionProcedure#validateSpecimenCollectionProcedureCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Specimen Collection Procedure Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.SpecimenCollectionProcedure#validateSpecimenCollectionProcedureEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Specimen Collection Procedure Effective Time</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.SpecimenCollectionProcedure#validateSpecimenCollectionProcedureTargetSiteCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Specimen Collection Procedure Target Site Code</em>}</li>
  * </ul>
  * </p>
  *
@@ -83,6 +85,7 @@ public class SpecimenCollectionProcedureOperations extends ClinicalStatementOper
 	 * @generated
 	 */
 	public static  boolean validateSpecimenCollectionProcedureTemplateId(SpecimenCollectionProcedure specimenCollectionProcedure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_SPECIMEN_COLLECTION_PROCEDURE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.SPECIMEN_COLLECTION_PROCEDURE);
@@ -103,6 +106,7 @@ public class SpecimenCollectionProcedureOperations extends ClinicalStatementOper
 						 PhcrPlugin.INSTANCE.getString("SpecimenCollectionProcedureTemplateId"),
 						 new Object [] { specimenCollectionProcedure }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -140,6 +144,7 @@ public class SpecimenCollectionProcedureOperations extends ClinicalStatementOper
 	 * @generated
 	 */
 	public static  boolean validateSpecimenCollectionProcedureClassCode(SpecimenCollectionProcedure specimenCollectionProcedure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_SPECIMEN_COLLECTION_PROCEDURE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.SPECIMEN_COLLECTION_PROCEDURE);
@@ -160,6 +165,7 @@ public class SpecimenCollectionProcedureOperations extends ClinicalStatementOper
 						 PhcrPlugin.INSTANCE.getString("SpecimenCollectionProcedureClassCode"),
 						 new Object [] { specimenCollectionProcedure }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -197,6 +203,7 @@ public class SpecimenCollectionProcedureOperations extends ClinicalStatementOper
 	 * @generated
 	 */
 	public static  boolean validateSpecimenCollectionProcedureMoodCode(SpecimenCollectionProcedure specimenCollectionProcedure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_SPECIMEN_COLLECTION_PROCEDURE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.SPECIMEN_COLLECTION_PROCEDURE);
@@ -217,6 +224,68 @@ public class SpecimenCollectionProcedureOperations extends ClinicalStatementOper
 						 PhcrPlugin.INSTANCE.getString("SpecimenCollectionProcedureMoodCode"),
 						 new Object [] { specimenCollectionProcedure }));
 			}
+			 
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateSpecimenCollectionProcedureCode(SpecimenCollectionProcedure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Specimen Collection Procedure Code</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateSpecimenCollectionProcedureCode(SpecimenCollectionProcedure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_SPECIMEN_COLLECTION_PROCEDURE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateSpecimenCollectionProcedureCode(SpecimenCollectionProcedure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Specimen Collection Procedure Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateSpecimenCollectionProcedureCode(SpecimenCollectionProcedure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Constraint VALIDATE_SPECIMEN_COLLECTION_PROCEDURE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
+	 * @param specimenCollectionProcedure The receiving '<em><b>Specimen Collection Procedure</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	
+	public static  boolean validateSpecimenCollectionProcedureCode(SpecimenCollectionProcedure specimenCollectionProcedure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_SPECIMEN_COLLECTION_PROCEDURE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(PhcrPackage.Literals.SPECIMEN_COLLECTION_PROCEDURE);
+			try {
+				VALIDATE_SPECIMEN_COLLECTION_PROCEDURE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SPECIMEN_COLLECTION_PROCEDURE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_SPECIMEN_COLLECTION_PROCEDURE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(specimenCollectionProcedure)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 PhcrValidator.DIAGNOSTIC_SOURCE,
+						 PhcrValidator.SPECIMEN_COLLECTION_PROCEDURE__SPECIMEN_COLLECTION_PROCEDURE_CODE,
+						 PhcrPlugin.INSTANCE.getString("SpecimenCollectionProcedureCode"),
+						 new Object [] { specimenCollectionProcedure }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -254,6 +323,7 @@ public class SpecimenCollectionProcedureOperations extends ClinicalStatementOper
 	 * @generated
 	 */
 	public static  boolean validateSpecimenCollectionProcedureEffectiveTime(SpecimenCollectionProcedure specimenCollectionProcedure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_SPECIMEN_COLLECTION_PROCEDURE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.SPECIMEN_COLLECTION_PROCEDURE);
@@ -274,6 +344,68 @@ public class SpecimenCollectionProcedureOperations extends ClinicalStatementOper
 						 PhcrPlugin.INSTANCE.getString("SpecimenCollectionProcedureEffectiveTime"),
 						 new Object [] { specimenCollectionProcedure }));
 			}
+			 
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateSpecimenCollectionProcedureTargetSiteCode(SpecimenCollectionProcedure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Specimen Collection Procedure Target Site Code</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateSpecimenCollectionProcedureTargetSiteCode(SpecimenCollectionProcedure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_SPECIMEN_COLLECTION_PROCEDURE_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.targetSiteCode->isEmpty() or self.targetSiteCode->exists(element | element.isNullFlavorUndefined())) implies (not self.targetSiteCode->isEmpty())";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateSpecimenCollectionProcedureTargetSiteCode(SpecimenCollectionProcedure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Specimen Collection Procedure Target Site Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateSpecimenCollectionProcedureTargetSiteCode(SpecimenCollectionProcedure, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Constraint VALIDATE_SPECIMEN_COLLECTION_PROCEDURE_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * (self.targetSiteCode->isEmpty() or self.targetSiteCode->exists(element | element.isNullFlavorUndefined())) implies (not self.targetSiteCode->isEmpty())
+	 * @param specimenCollectionProcedure The receiving '<em><b>Specimen Collection Procedure</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	
+	public static  boolean validateSpecimenCollectionProcedureTargetSiteCode(SpecimenCollectionProcedure specimenCollectionProcedure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_SPECIMEN_COLLECTION_PROCEDURE_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(PhcrPackage.Literals.SPECIMEN_COLLECTION_PROCEDURE);
+			try {
+				VALIDATE_SPECIMEN_COLLECTION_PROCEDURE_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SPECIMEN_COLLECTION_PROCEDURE_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_SPECIMEN_COLLECTION_PROCEDURE_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(specimenCollectionProcedure)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 PhcrValidator.DIAGNOSTIC_SOURCE,
+						 PhcrValidator.SPECIMEN_COLLECTION_PROCEDURE__SPECIMEN_COLLECTION_PROCEDURE_TARGET_SITE_CODE,
+						 PhcrPlugin.INSTANCE.getString("SpecimenCollectionProcedureTargetSiteCode"),
+						 new Object [] { specimenCollectionProcedure }));
+			}
+			 
 			return false;
 		}
 		return true;

@@ -37,6 +37,7 @@ import org.openhealthtools.mdht.uml.cda.phcr.util.PhcrValidator;
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrTreatmentInformationSection#validatePhcrTreatmentInformationSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Treatment Information Section Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrTreatmentInformationSection#validatePhcrTreatmentInformationSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Treatment Information Section Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrTreatmentInformationSection#validatePhcrTreatmentInformationSectionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Treatment Information Section Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrTreatmentInformationSection#validatePhcrTreatmentInformationSectionTitle(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Treatment Information Section Title</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrTreatmentInformationSection#validatePhcrTreatmentInformationSectionText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Treatment Information Section Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phcr.PhcrTreatmentInformationSection#validatePhcrTreatmentInformationSectionTherapeuticRegimenAct(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Treatment Information Section Therapeutic Regimen Act</em>}</li>
@@ -88,6 +89,7 @@ public class PhcrTreatmentInformationSectionOperations extends SectionOperations
 	 * @generated
 	 */
 	public static  boolean validatePhcrTreatmentInformationSectionTemplateId(PhcrTreatmentInformationSection phcrTreatmentInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PHCR_TREATMENT_INFORMATION_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.PHCR_TREATMENT_INFORMATION_SECTION);
@@ -108,6 +110,7 @@ public class PhcrTreatmentInformationSectionOperations extends SectionOperations
 						 PhcrPlugin.INSTANCE.getString("PhcrTreatmentInformationSectionTemplateId"),
 						 new Object [] { phcrTreatmentInformationSection }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -149,6 +152,7 @@ public class PhcrTreatmentInformationSectionOperations extends SectionOperations
 	 * @generated
 	 */
 	public static  boolean validatePhcrTreatmentInformationSectionCode(PhcrTreatmentInformationSection phcrTreatmentInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PHCR_TREATMENT_INFORMATION_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.PHCR_TREATMENT_INFORMATION_SECTION);
@@ -169,6 +173,68 @@ public class PhcrTreatmentInformationSectionOperations extends SectionOperations
 						 PhcrPlugin.INSTANCE.getString("PhcrTreatmentInformationSectionCode"),
 						 new Object [] { phcrTreatmentInformationSection }));
 			}
+			 
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validatePhcrTreatmentInformationSectionCodeP(PhcrTreatmentInformationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Treatment Information Section Code P</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validatePhcrTreatmentInformationSectionCodeP(PhcrTreatmentInformationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_PHCR_TREATMENT_INFORMATION_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validatePhcrTreatmentInformationSectionCodeP(PhcrTreatmentInformationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phcr Treatment Information Section Code P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validatePhcrTreatmentInformationSectionCodeP(PhcrTreatmentInformationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Constraint VALIDATE_PHCR_TREATMENT_INFORMATION_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
+	 * @param phcrTreatmentInformationSection The receiving '<em><b>Treatment Information Section</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	
+	public static  boolean validatePhcrTreatmentInformationSectionCodeP(PhcrTreatmentInformationSection phcrTreatmentInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_PHCR_TREATMENT_INFORMATION_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(PhcrPackage.Literals.PHCR_TREATMENT_INFORMATION_SECTION);
+			try {
+				VALIDATE_PHCR_TREATMENT_INFORMATION_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHCR_TREATMENT_INFORMATION_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_PHCR_TREATMENT_INFORMATION_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(phcrTreatmentInformationSection)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 PhcrValidator.DIAGNOSTIC_SOURCE,
+						 PhcrValidator.PHCR_TREATMENT_INFORMATION_SECTION__PHCR_TREATMENT_INFORMATION_SECTION_CODE_P,
+						 PhcrPlugin.INSTANCE.getString("PhcrTreatmentInformationSectionCodeP"),
+						 new Object [] { phcrTreatmentInformationSection }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -206,6 +272,7 @@ public class PhcrTreatmentInformationSectionOperations extends SectionOperations
 	 * @generated
 	 */
 	public static  boolean validatePhcrTreatmentInformationSectionTitle(PhcrTreatmentInformationSection phcrTreatmentInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PHCR_TREATMENT_INFORMATION_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.PHCR_TREATMENT_INFORMATION_SECTION);
@@ -226,6 +293,7 @@ public class PhcrTreatmentInformationSectionOperations extends SectionOperations
 						 PhcrPlugin.INSTANCE.getString("PhcrTreatmentInformationSectionTitle"),
 						 new Object [] { phcrTreatmentInformationSection }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -263,6 +331,7 @@ public class PhcrTreatmentInformationSectionOperations extends SectionOperations
 	 * @generated
 	 */
 	public static  boolean validatePhcrTreatmentInformationSectionText(PhcrTreatmentInformationSection phcrTreatmentInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PHCR_TREATMENT_INFORMATION_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.PHCR_TREATMENT_INFORMATION_SECTION);
@@ -283,6 +352,7 @@ public class PhcrTreatmentInformationSectionOperations extends SectionOperations
 						 PhcrPlugin.INSTANCE.getString("PhcrTreatmentInformationSectionText"),
 						 new Object [] { phcrTreatmentInformationSection }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -320,6 +390,7 @@ public class PhcrTreatmentInformationSectionOperations extends SectionOperations
 	 * @generated
 	 */
 	public static  boolean validatePhcrTreatmentInformationSectionTherapeuticRegimenAct(PhcrTreatmentInformationSection phcrTreatmentInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PHCR_TREATMENT_INFORMATION_SECTION_THERAPEUTIC_REGIMEN_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.PHCR_TREATMENT_INFORMATION_SECTION);
@@ -340,6 +411,7 @@ public class PhcrTreatmentInformationSectionOperations extends SectionOperations
 						 PhcrPlugin.INSTANCE.getString("PhcrTreatmentInformationSectionTherapeuticRegimenAct"),
 						 new Object [] { phcrTreatmentInformationSection }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -377,7 +449,7 @@ public class PhcrTreatmentInformationSectionOperations extends SectionOperations
 	public static  TherapeuticRegimenAct getTherapeuticRegimenAct(PhcrTreatmentInformationSection phcrTreatmentInformationSection) {
 		if (GET_THERAPEUTIC_REGIMEN_ACT__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(PhcrPackage.Literals.PHCR_TREATMENT_INFORMATION_SECTION, PhcrPackage.Literals.PHCR_TREATMENT_INFORMATION_SECTION.getEAllOperations().get(60));
+			helper.setOperationContext(PhcrPackage.Literals.PHCR_TREATMENT_INFORMATION_SECTION, PhcrPackage.Literals.PHCR_TREATMENT_INFORMATION_SECTION.getEAllOperations().get(61));
 			try {
 				GET_THERAPEUTIC_REGIMEN_ACT__EOCL_QRY = helper.createQuery(GET_THERAPEUTIC_REGIMEN_ACT__EOCL_EXP);
 			}

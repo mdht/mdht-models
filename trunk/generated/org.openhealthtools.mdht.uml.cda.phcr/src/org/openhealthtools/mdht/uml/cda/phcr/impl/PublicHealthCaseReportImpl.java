@@ -213,6 +213,15 @@ public class PublicHealthCaseReportImpl extends ClinicalDocumentImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validatePublicHealthCaseReportCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PublicHealthCaseReportOperations.validatePublicHealthCaseReportCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validatePublicHealthCaseReportCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PublicHealthCaseReportOperations.validatePublicHealthCaseReportCode(this, diagnostics, context);
 	}

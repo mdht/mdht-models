@@ -97,6 +97,7 @@ public class ResultOrganizerOperations extends org.openhealthtools.mdht.uml.cda.
 	 * @generated
 	 */
 	public static  boolean validatePHCRResultOrganizerClassCode(ResultOrganizer resultOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PHCR_RESULT_ORGANIZER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.RESULT_ORGANIZER);
@@ -117,6 +118,7 @@ public class ResultOrganizerOperations extends org.openhealthtools.mdht.uml.cda.
 						 PhcrPlugin.INSTANCE.getString("PHCRResultOrganizerClassCode"),
 						 new Object [] { resultOrganizer }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -154,6 +156,7 @@ public class ResultOrganizerOperations extends org.openhealthtools.mdht.uml.cda.
 	 * @generated
 	 */
 	public static  boolean validatePHCRResultOrganizerMoodCode(ResultOrganizer resultOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PHCR_RESULT_ORGANIZER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.RESULT_ORGANIZER);
@@ -174,6 +177,7 @@ public class ResultOrganizerOperations extends org.openhealthtools.mdht.uml.cda.
 						 PhcrPlugin.INSTANCE.getString("PHCRResultOrganizerMoodCode"),
 						 new Object [] { resultOrganizer }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -211,6 +215,7 @@ public class ResultOrganizerOperations extends org.openhealthtools.mdht.uml.cda.
 	 * @generated
 	 */
 	public static  boolean validatePHCRResultOrganizerId(ResultOrganizer resultOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PHCR_RESULT_ORGANIZER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.RESULT_ORGANIZER);
@@ -231,6 +236,7 @@ public class ResultOrganizerOperations extends org.openhealthtools.mdht.uml.cda.
 						 PhcrPlugin.INSTANCE.getString("PHCRResultOrganizerId"),
 						 new Object [] { resultOrganizer }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -268,6 +274,7 @@ public class ResultOrganizerOperations extends org.openhealthtools.mdht.uml.cda.
 	 * @generated
 	 */
 	public static  boolean validatePHCRResultOrganizerCode(ResultOrganizer resultOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PHCR_RESULT_ORGANIZER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.RESULT_ORGANIZER);
@@ -288,6 +295,7 @@ public class ResultOrganizerOperations extends org.openhealthtools.mdht.uml.cda.
 						 PhcrPlugin.INSTANCE.getString("PHCRResultOrganizerCode"),
 						 new Object [] { resultOrganizer }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -327,6 +335,7 @@ public class ResultOrganizerOperations extends org.openhealthtools.mdht.uml.cda.
 	 */
 	
 	public static  boolean validatePHCRResultOrganizerStatusCode(ResultOrganizer resultOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PHCR_RESULT_ORGANIZER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.RESULT_ORGANIZER);
@@ -347,6 +356,19 @@ public class ResultOrganizerOperations extends org.openhealthtools.mdht.uml.cda.
 						 PhcrPlugin.INSTANCE.getString("PHCRResultOrganizerStatusCode"),
 						 new Object [] { resultOrganizer }));
 			}
+			
+			if (context != null) {
+				// generate a pass token for my dependent constraints to short-circuit or filter results
+				@SuppressWarnings("unchecked")
+				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.phcr.PHCRResultOrganizerStatusCode");
+				if (passToken == null) {
+					// anticipate a reasonably healthy model
+					passToken = new java.util.ArrayList<Object>(3);
+					context.put("org.openhealthtools.mdht.uml.cda.phcr.PHCRResultOrganizerStatusCode", passToken);
+				}
+				passToken.add(resultOrganizer);
+			}
+			 
 			return false;
 		}
 		return true;
@@ -384,6 +406,7 @@ public class ResultOrganizerOperations extends org.openhealthtools.mdht.uml.cda.
 	 * @generated
 	 */
 	public static  boolean validatePHCRResultOrganizerEffectiveTime(ResultOrganizer resultOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PHCR_RESULT_ORGANIZER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.RESULT_ORGANIZER);
@@ -404,6 +427,7 @@ public class ResultOrganizerOperations extends org.openhealthtools.mdht.uml.cda.
 						 PhcrPlugin.INSTANCE.getString("PHCRResultOrganizerEffectiveTime"),
 						 new Object [] { resultOrganizer }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -441,6 +465,7 @@ public class ResultOrganizerOperations extends org.openhealthtools.mdht.uml.cda.
 	 * @generated
 	 */
 	public static  boolean validatePHCRResultOrganizerResultObservation(ResultOrganizer resultOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PHCR_RESULT_ORGANIZER_RESULT_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.RESULT_ORGANIZER);
@@ -461,6 +486,7 @@ public class ResultOrganizerOperations extends org.openhealthtools.mdht.uml.cda.
 						 PhcrPlugin.INSTANCE.getString("PHCRResultOrganizerResultObservation"),
 						 new Object [] { resultOrganizer }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -498,6 +524,7 @@ public class ResultOrganizerOperations extends org.openhealthtools.mdht.uml.cda.
 	 * @generated
 	 */
 	public static  boolean validatePHCRResultOrganizerSpecimenCollectionProcedure(ResultOrganizer resultOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_PHCR_RESULT_ORGANIZER_SPECIMEN_COLLECTION_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.RESULT_ORGANIZER);
@@ -518,6 +545,7 @@ public class ResultOrganizerOperations extends org.openhealthtools.mdht.uml.cda.
 						 PhcrPlugin.INSTANCE.getString("PHCRResultOrganizerSpecimenCollectionProcedure"),
 						 new Object [] { resultOrganizer }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -645,6 +673,7 @@ public class ResultOrganizerOperations extends org.openhealthtools.mdht.uml.cda.
 	 * @generated
 	 */
 	public static  boolean validateResultOrganizerTemplateId(ResultOrganizer resultOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_RESULT_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.RESULT_ORGANIZER);
@@ -665,6 +694,7 @@ public class ResultOrganizerOperations extends org.openhealthtools.mdht.uml.cda.
 						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ResultOrganizerTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(resultOrganizer, context) }),
 						 new Object [] { resultOrganizer }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -706,6 +736,13 @@ public class ResultOrganizerOperations extends org.openhealthtools.mdht.uml.cda.
 	 * @generated
 	 */
 	public static  boolean validateResultOrganizerStatusCode(ResultOrganizer resultOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.phcr.PHCRResultOrganizerStatusCode");
+		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(resultOrganizer)) {
+			// I have a free pass to short-circuit
+			return true;
+		}
+  	  
 		if (VALIDATE_RESULT_ORGANIZER_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.RESULT_ORGANIZER);
@@ -726,6 +763,7 @@ public class ResultOrganizerOperations extends org.openhealthtools.mdht.uml.cda.
 						 PhcrPlugin.INSTANCE.getString("ResultOrganizerStatusCode"),
 						 new Object [] { resultOrganizer }));
 			}
+			 
 			return false;
 		}
 		return true;

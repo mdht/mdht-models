@@ -30,6 +30,7 @@ import org.openhealthtools.mdht.uml.cda.phcr.PhcrEncountersSection;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrPackage;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrPlugin;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrRelevantDxTestsSection;
+import org.openhealthtools.mdht.uml.cda.phcr.PhcrRelevantMedicalConditionHistoryObservation;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrSocialHistorySection;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrTreatmentInformationSection;
 import org.openhealthtools.mdht.uml.cda.phcr.PregnancyObservation;
@@ -209,12 +210,20 @@ public class PhcrValidator extends EObjectValidator
 	public static final int PUBLIC_HEALTH_CASE_REPORT__PUBLIC_HEALTH_CASE_REPORT_TEMPLATE_ID = 17;
 
 		/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Public Health Case Report Code P' of 'Public Health Case Report'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PUBLIC_HEALTH_CASE_REPORT__PUBLIC_HEALTH_CASE_REPORT_CODE_P = 18;
+
+		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Public Health Case Report Code' of 'Public Health Case Report'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PUBLIC_HEALTH_CASE_REPORT__PUBLIC_HEALTH_CASE_REPORT_CODE = 18;
+	public static final int PUBLIC_HEALTH_CASE_REPORT__PUBLIC_HEALTH_CASE_REPORT_CODE = 19;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Public Health Case Report Phcr Social History Section' of 'Public Health Case Report'.
@@ -222,7 +231,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PUBLIC_HEALTH_CASE_REPORT__PUBLIC_HEALTH_CASE_REPORT_PHCR_SOCIAL_HISTORY_SECTION = 19;
+	public static final int PUBLIC_HEALTH_CASE_REPORT__PUBLIC_HEALTH_CASE_REPORT_PHCR_SOCIAL_HISTORY_SECTION = 20;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Public Health Case Report Phcr Clinical Information Section' of 'Public Health Case Report'.
@@ -230,7 +239,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PUBLIC_HEALTH_CASE_REPORT__PUBLIC_HEALTH_CASE_REPORT_PHCR_CLINICAL_INFORMATION_SECTION = 20;
+	public static final int PUBLIC_HEALTH_CASE_REPORT__PUBLIC_HEALTH_CASE_REPORT_PHCR_CLINICAL_INFORMATION_SECTION = 21;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Public Health Case Report Phcr Treatment Information Section' of 'Public Health Case Report'.
@@ -238,7 +247,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PUBLIC_HEALTH_CASE_REPORT__PUBLIC_HEALTH_CASE_REPORT_PHCR_TREATMENT_INFORMATION_SECTION = 21;
+	public static final int PUBLIC_HEALTH_CASE_REPORT__PUBLIC_HEALTH_CASE_REPORT_PHCR_TREATMENT_INFORMATION_SECTION = 22;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Public Health Case Report Phcr Encounters Section' of 'Public Health Case Report'.
@@ -246,7 +255,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PUBLIC_HEALTH_CASE_REPORT__PUBLIC_HEALTH_CASE_REPORT_PHCR_ENCOUNTERS_SECTION = 22;
+	public static final int PUBLIC_HEALTH_CASE_REPORT__PUBLIC_HEALTH_CASE_REPORT_PHCR_ENCOUNTERS_SECTION = 23;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Public Health Case Report Phcr Relevant Dx Tests Section' of 'Public Health Case Report'.
@@ -254,7 +263,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PUBLIC_HEALTH_CASE_REPORT__PUBLIC_HEALTH_CASE_REPORT_PHCR_RELEVANT_DX_TESTS_SECTION = 23;
+	public static final int PUBLIC_HEALTH_CASE_REPORT__PUBLIC_HEALTH_CASE_REPORT_PHCR_RELEVANT_DX_TESTS_SECTION = 24;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Public Health Case Report Immunizations Section' of 'Public Health Case Report'.
@@ -262,7 +271,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PUBLIC_HEALTH_CASE_REPORT__PUBLIC_HEALTH_CASE_REPORT_IMMUNIZATIONS_SECTION = 24;
+	public static final int PUBLIC_HEALTH_CASE_REPORT__PUBLIC_HEALTH_CASE_REPORT_IMMUNIZATIONS_SECTION = 25;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Phcr Social History Section Code' of 'Social History Section'.
@@ -270,7 +279,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PHCR_SOCIAL_HISTORY_SECTION__PHCR_SOCIAL_HISTORY_SECTION_CODE = 25;
+	public static final int PHCR_SOCIAL_HISTORY_SECTION__PHCR_SOCIAL_HISTORY_SECTION_CODE = 26;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Phcr Social History Section Title' of 'Social History Section'.
@@ -278,7 +287,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PHCR_SOCIAL_HISTORY_SECTION__PHCR_SOCIAL_HISTORY_SECTION_TITLE = 26;
+	public static final int PHCR_SOCIAL_HISTORY_SECTION__PHCR_SOCIAL_HISTORY_SECTION_TITLE = 27;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Phcr Social History Section Text' of 'Social History Section'.
@@ -286,7 +295,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PHCR_SOCIAL_HISTORY_SECTION__PHCR_SOCIAL_HISTORY_SECTION_TEXT = 27;
+	public static final int PHCR_SOCIAL_HISTORY_SECTION__PHCR_SOCIAL_HISTORY_SECTION_TEXT = 28;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Phcr Social History Section Geotemporal History Observation' of 'Social History Section'.
@@ -294,7 +303,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PHCR_SOCIAL_HISTORY_SECTION__PHCR_SOCIAL_HISTORY_SECTION_GEOTEMPORAL_HISTORY_OBSERVATION = 28;
+	public static final int PHCR_SOCIAL_HISTORY_SECTION__PHCR_SOCIAL_HISTORY_SECTION_GEOTEMPORAL_HISTORY_OBSERVATION = 29;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Phcr Social History Section Most Recent Time Arrived In USA Observation' of 'Social History Section'.
@@ -302,7 +311,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PHCR_SOCIAL_HISTORY_SECTION__PHCR_SOCIAL_HISTORY_SECTION_MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION = 29;
+	public static final int PHCR_SOCIAL_HISTORY_SECTION__PHCR_SOCIAL_HISTORY_SECTION_MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION = 30;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Phcr Social History Section Race Observation' of 'Social History Section'.
@@ -310,7 +319,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PHCR_SOCIAL_HISTORY_SECTION__PHCR_SOCIAL_HISTORY_SECTION_RACE_OBSERVATION = 30;
+	public static final int PHCR_SOCIAL_HISTORY_SECTION__PHCR_SOCIAL_HISTORY_SECTION_RACE_OBSERVATION = 31;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Phcr Social History Section Occupation Observation' of 'Social History Section'.
@@ -318,7 +327,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PHCR_SOCIAL_HISTORY_SECTION__PHCR_SOCIAL_HISTORY_SECTION_OCCUPATION_OBSERVATION = 31;
+	public static final int PHCR_SOCIAL_HISTORY_SECTION__PHCR_SOCIAL_HISTORY_SECTION_OCCUPATION_OBSERVATION = 32;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Phcr Social History Section Pregnancy Observation' of 'Social History Section'.
@@ -326,7 +335,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PHCR_SOCIAL_HISTORY_SECTION__PHCR_SOCIAL_HISTORY_SECTION_PREGNANCY_OBSERVATION = 32;
+	public static final int PHCR_SOCIAL_HISTORY_SECTION__PHCR_SOCIAL_HISTORY_SECTION_PREGNANCY_OBSERVATION = 33;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Social History Section Template Id' of 'Social History Section'.
@@ -334,7 +343,15 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PHCR_SOCIAL_HISTORY_SECTION__SOCIAL_HISTORY_SECTION_TEMPLATE_ID = 33;
+	public static final int PHCR_SOCIAL_HISTORY_SECTION__SOCIAL_HISTORY_SECTION_TEMPLATE_ID = 34;
+
+		/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Social History Section Code' of 'Social History Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PHCR_SOCIAL_HISTORY_SECTION__SOCIAL_HISTORY_SECTION_CODE = 35;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Geotemporal History Observation Effective Time' of 'Geotemporal History Observation'.
@@ -342,7 +359,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int GEOTEMPORAL_HISTORY_OBSERVATION__GEOTEMPORAL_HISTORY_OBSERVATION_EFFECTIVE_TIME = 40;
+	public static final int GEOTEMPORAL_HISTORY_OBSERVATION__GEOTEMPORAL_HISTORY_OBSERVATION_EFFECTIVE_TIME = 44;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Geotemporal History Observation Value' of 'Geotemporal History Observation'.
@@ -350,7 +367,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int GEOTEMPORAL_HISTORY_OBSERVATION__GEOTEMPORAL_HISTORY_OBSERVATION_VALUE = 41;
+	public static final int GEOTEMPORAL_HISTORY_OBSERVATION__GEOTEMPORAL_HISTORY_OBSERVATION_VALUE = 45;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Geotemporal History Observation Text' of 'Geotemporal History Observation'.
@@ -358,7 +375,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int GEOTEMPORAL_HISTORY_OBSERVATION__GEOTEMPORAL_HISTORY_OBSERVATION_TEXT = 38;
+	public static final int GEOTEMPORAL_HISTORY_OBSERVATION__GEOTEMPORAL_HISTORY_OBSERVATION_TEXT = 41;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Geotemporal History Observation Template Id' of 'Geotemporal History Observation'.
@@ -366,7 +383,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int GEOTEMPORAL_HISTORY_OBSERVATION__GEOTEMPORAL_HISTORY_OBSERVATION_TEMPLATE_ID = 34;
+	public static final int GEOTEMPORAL_HISTORY_OBSERVATION__GEOTEMPORAL_HISTORY_OBSERVATION_TEMPLATE_ID = 36;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Geotemporal History Observation Class Code' of 'Geotemporal History Observation'.
@@ -374,7 +391,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int GEOTEMPORAL_HISTORY_OBSERVATION__GEOTEMPORAL_HISTORY_OBSERVATION_CLASS_CODE = 35;
+	public static final int GEOTEMPORAL_HISTORY_OBSERVATION__GEOTEMPORAL_HISTORY_OBSERVATION_CLASS_CODE = 37;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Geotemporal History Observation Code' of 'Geotemporal History Observation'.
@@ -382,7 +399,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int GEOTEMPORAL_HISTORY_OBSERVATION__GEOTEMPORAL_HISTORY_OBSERVATION_CODE = 37;
+	public static final int GEOTEMPORAL_HISTORY_OBSERVATION__GEOTEMPORAL_HISTORY_OBSERVATION_CODE = 40;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Geotemporal History Observation Mood Code' of 'Geotemporal History Observation'.
@@ -390,7 +407,15 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int GEOTEMPORAL_HISTORY_OBSERVATION__GEOTEMPORAL_HISTORY_OBSERVATION_MOOD_CODE = 36;
+	public static final int GEOTEMPORAL_HISTORY_OBSERVATION__GEOTEMPORAL_HISTORY_OBSERVATION_MOOD_CODE = 38;
+
+		/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Geotemporal History Observation Code P' of 'Geotemporal History Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int GEOTEMPORAL_HISTORY_OBSERVATION__GEOTEMPORAL_HISTORY_OBSERVATION_CODE_P = 39;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Geotemporal History Observation Status Code' of 'Geotemporal History Observation'.
@@ -398,7 +423,15 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int GEOTEMPORAL_HISTORY_OBSERVATION__GEOTEMPORAL_HISTORY_OBSERVATION_STATUS_CODE = 39;
+	public static final int GEOTEMPORAL_HISTORY_OBSERVATION__GEOTEMPORAL_HISTORY_OBSERVATION_STATUS_CODE = 42;
+
+		/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Geotemporal History Observation Status Code P' of 'Geotemporal History Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int GEOTEMPORAL_HISTORY_OBSERVATION__GEOTEMPORAL_HISTORY_OBSERVATION_STATUS_CODE_P = 43;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Most Recent Time Arrived In USA Observation Template Id' of 'Most Recent Time Arrived In USA Observation'.
@@ -406,7 +439,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION__MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION_TEMPLATE_ID = 42;
+	public static final int MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION__MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION_TEMPLATE_ID = 46;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Most Recent Time Arrived In USA Observation Class Code' of 'Most Recent Time Arrived In USA Observation'.
@@ -414,7 +447,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION__MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION_CLASS_CODE = 43;
+	public static final int MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION__MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION_CLASS_CODE = 47;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Most Recent Time Arrived In USA Observation Mood Code' of 'Most Recent Time Arrived In USA Observation'.
@@ -422,7 +455,15 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION__MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION_MOOD_CODE = 44;
+	public static final int MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION__MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION_MOOD_CODE = 48;
+
+		/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Most Recent Time Arrived In USA Observation Code P' of 'Most Recent Time Arrived In USA Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION__MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION_CODE_P = 49;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Most Recent Time Arrived In USA Observation Status Code' of 'Most Recent Time Arrived In USA Observation'.
@@ -430,7 +471,15 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION__MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION_STATUS_CODE = 46;
+	public static final int MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION__MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION_STATUS_CODE = 51;
+
+		/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Most Recent Time Arrived In USA Observation Status Code P' of 'Most Recent Time Arrived In USA Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION__MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION_STATUS_CODE_P = 52;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Most Recent Time Arrived In USA Observation Value' of 'Most Recent Time Arrived In USA Observation'.
@@ -438,7 +487,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION__MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION_VALUE = 47;
+	public static final int MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION__MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION_VALUE = 53;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Most Recent Time Arrived In USA Observation Code' of 'Most Recent Time Arrived In USA Observation'.
@@ -446,7 +495,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION__MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION_CODE = 45;
+	public static final int MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION__MOST_RECENT_TIME_ARRIVED_IN_USA_OBSERVATION_CODE = 50;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Race Observation Template Id' of 'Race Observation'.
@@ -454,7 +503,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RACE_OBSERVATION__RACE_OBSERVATION_TEMPLATE_ID = 48;
+	public static final int RACE_OBSERVATION__RACE_OBSERVATION_TEMPLATE_ID = 54;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Race Observation Class Code' of 'Race Observation'.
@@ -462,7 +511,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RACE_OBSERVATION__RACE_OBSERVATION_CLASS_CODE = 49;
+	public static final int RACE_OBSERVATION__RACE_OBSERVATION_CLASS_CODE = 55;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Race Observation Code' of 'Race Observation'.
@@ -470,7 +519,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RACE_OBSERVATION__RACE_OBSERVATION_CODE = 51;
+	public static final int RACE_OBSERVATION__RACE_OBSERVATION_CODE = 58;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Race Observation Mood Code' of 'Race Observation'.
@@ -478,7 +527,15 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RACE_OBSERVATION__RACE_OBSERVATION_MOOD_CODE = 50;
+	public static final int RACE_OBSERVATION__RACE_OBSERVATION_MOOD_CODE = 56;
+
+		/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Race Observation Code P' of 'Race Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int RACE_OBSERVATION__RACE_OBSERVATION_CODE_P = 57;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Race Observation Status Code' of 'Race Observation'.
@@ -486,7 +543,15 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RACE_OBSERVATION__RACE_OBSERVATION_STATUS_CODE = 52;
+	public static final int RACE_OBSERVATION__RACE_OBSERVATION_STATUS_CODE = 59;
+
+		/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Race Observation Status Code P' of 'Race Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int RACE_OBSERVATION__RACE_OBSERVATION_STATUS_CODE_P = 60;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Race Observation Value' of 'Race Observation'.
@@ -494,7 +559,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RACE_OBSERVATION__RACE_OBSERVATION_VALUE = 53;
+	public static final int RACE_OBSERVATION__RACE_OBSERVATION_VALUE = 61;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Occupation Observation Template Id' of 'Occupation Observation'.
@@ -502,7 +567,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int OCCUPATION_OBSERVATION__OCCUPATION_OBSERVATION_TEMPLATE_ID = 54;
+	public static final int OCCUPATION_OBSERVATION__OCCUPATION_OBSERVATION_TEMPLATE_ID = 62;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Occupation Observation Class Code' of 'Occupation Observation'.
@@ -510,7 +575,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int OCCUPATION_OBSERVATION__OCCUPATION_OBSERVATION_CLASS_CODE = 55;
+	public static final int OCCUPATION_OBSERVATION__OCCUPATION_OBSERVATION_CLASS_CODE = 63;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Occupation Observation Code' of 'Occupation Observation'.
@@ -518,7 +583,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int OCCUPATION_OBSERVATION__OCCUPATION_OBSERVATION_CODE = 58;
+	public static final int OCCUPATION_OBSERVATION__OCCUPATION_OBSERVATION_CODE = 67;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Occupation Observation Text' of 'Occupation Observation'.
@@ -526,7 +591,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int OCCUPATION_OBSERVATION__OCCUPATION_OBSERVATION_TEXT = 59;
+	public static final int OCCUPATION_OBSERVATION__OCCUPATION_OBSERVATION_TEXT = 68;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Occupation Observation Mood Code' of 'Occupation Observation'.
@@ -534,7 +599,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int OCCUPATION_OBSERVATION__OCCUPATION_OBSERVATION_MOOD_CODE = 56;
+	public static final int OCCUPATION_OBSERVATION__OCCUPATION_OBSERVATION_MOOD_CODE = 64;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Occupation Observation Negation Ind' of 'Occupation Observation'.
@@ -542,7 +607,15 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int OCCUPATION_OBSERVATION__OCCUPATION_OBSERVATION_NEGATION_IND = 57;
+	public static final int OCCUPATION_OBSERVATION__OCCUPATION_OBSERVATION_NEGATION_IND = 65;
+
+		/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Occupation Observation Code P' of 'Occupation Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int OCCUPATION_OBSERVATION__OCCUPATION_OBSERVATION_CODE_P = 66;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Occupation Observation Status Code' of 'Occupation Observation'.
@@ -550,7 +623,15 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int OCCUPATION_OBSERVATION__OCCUPATION_OBSERVATION_STATUS_CODE = 60;
+	public static final int OCCUPATION_OBSERVATION__OCCUPATION_OBSERVATION_STATUS_CODE = 69;
+
+		/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Occupation Observation Status Code P' of 'Occupation Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int OCCUPATION_OBSERVATION__OCCUPATION_OBSERVATION_STATUS_CODE_P = 70;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Occupation Observation Effective Time' of 'Occupation Observation'.
@@ -558,7 +639,15 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int OCCUPATION_OBSERVATION__OCCUPATION_OBSERVATION_EFFECTIVE_TIME = 61;
+	public static final int OCCUPATION_OBSERVATION__OCCUPATION_OBSERVATION_EFFECTIVE_TIME = 71;
+
+		/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Occupation Observation Value' of 'Occupation Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int OCCUPATION_OBSERVATION__OCCUPATION_OBSERVATION_VALUE = 72;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Pregnancy Observation Effective Time' of 'Pregnancy Observation'.
@@ -566,7 +655,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PREGNANCY_OBSERVATION__PREGNANCY_OBSERVATION_EFFECTIVE_TIME = 67;
+	public static final int PREGNANCY_OBSERVATION__PREGNANCY_OBSERVATION_EFFECTIVE_TIME = 80;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Pregnancy Observation Template Id' of 'Pregnancy Observation'.
@@ -574,7 +663,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PREGNANCY_OBSERVATION__PREGNANCY_OBSERVATION_TEMPLATE_ID = 62;
+	public static final int PREGNANCY_OBSERVATION__PREGNANCY_OBSERVATION_TEMPLATE_ID = 73;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Pregnancy Observation Class Code' of 'Pregnancy Observation'.
@@ -582,7 +671,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PREGNANCY_OBSERVATION__PREGNANCY_OBSERVATION_CLASS_CODE = 63;
+	public static final int PREGNANCY_OBSERVATION__PREGNANCY_OBSERVATION_CLASS_CODE = 74;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Pregnancy Observation Code' of 'Pregnancy Observation'.
@@ -590,7 +679,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PREGNANCY_OBSERVATION__PREGNANCY_OBSERVATION_CODE = 65;
+	public static final int PREGNANCY_OBSERVATION__PREGNANCY_OBSERVATION_CODE = 77;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Pregnancy Observation Mood Code' of 'Pregnancy Observation'.
@@ -598,7 +687,15 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PREGNANCY_OBSERVATION__PREGNANCY_OBSERVATION_MOOD_CODE = 64;
+	public static final int PREGNANCY_OBSERVATION__PREGNANCY_OBSERVATION_MOOD_CODE = 75;
+
+		/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Pregnancy Observation Code P' of 'Pregnancy Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PREGNANCY_OBSERVATION__PREGNANCY_OBSERVATION_CODE_P = 76;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Pregnancy Observation Status Code' of 'Pregnancy Observation'.
@@ -606,7 +703,15 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PREGNANCY_OBSERVATION__PREGNANCY_OBSERVATION_STATUS_CODE = 66;
+	public static final int PREGNANCY_OBSERVATION__PREGNANCY_OBSERVATION_STATUS_CODE = 78;
+
+		/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Pregnancy Observation Status Code P' of 'Pregnancy Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PREGNANCY_OBSERVATION__PREGNANCY_OBSERVATION_STATUS_CODE_P = 79;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Pregnancy Observation Value' of 'Pregnancy Observation'.
@@ -614,7 +719,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PREGNANCY_OBSERVATION__PREGNANCY_OBSERVATION_VALUE = 68;
+	public static final int PREGNANCY_OBSERVATION__PREGNANCY_OBSERVATION_VALUE = 81;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Pregnancy Observation Value P' of 'Pregnancy Observation'.
@@ -622,7 +727,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PREGNANCY_OBSERVATION__PREGNANCY_OBSERVATION_VALUE_P = 69;
+	public static final int PREGNANCY_OBSERVATION__PREGNANCY_OBSERVATION_VALUE_P = 82;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Pregnancy Observation Estimated Date Of Delivery Observation' of 'Pregnancy Observation'.
@@ -630,7 +735,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PREGNANCY_OBSERVATION__PREGNANCY_OBSERVATION_ESTIMATED_DATE_OF_DELIVERY_OBSERVATION = 70;
+	public static final int PREGNANCY_OBSERVATION__PREGNANCY_OBSERVATION_ESTIMATED_DATE_OF_DELIVERY_OBSERVATION = 83;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Estimated Date Of Delivery Observation Template Id' of 'Estimated Date Of Delivery Observation'.
@@ -638,7 +743,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ESTIMATED_DATE_OF_DELIVERY_OBSERVATION__ESTIMATED_DATE_OF_DELIVERY_OBSERVATION_TEMPLATE_ID = 71;
+	public static final int ESTIMATED_DATE_OF_DELIVERY_OBSERVATION__ESTIMATED_DATE_OF_DELIVERY_OBSERVATION_TEMPLATE_ID = 84;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Estimated Date Of Delivery Observation Class Code' of 'Estimated Date Of Delivery Observation'.
@@ -646,7 +751,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ESTIMATED_DATE_OF_DELIVERY_OBSERVATION__ESTIMATED_DATE_OF_DELIVERY_OBSERVATION_CLASS_CODE = 72;
+	public static final int ESTIMATED_DATE_OF_DELIVERY_OBSERVATION__ESTIMATED_DATE_OF_DELIVERY_OBSERVATION_CLASS_CODE = 85;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Estimated Date Of Delivery Observation Code' of 'Estimated Date Of Delivery Observation'.
@@ -654,7 +759,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ESTIMATED_DATE_OF_DELIVERY_OBSERVATION__ESTIMATED_DATE_OF_DELIVERY_OBSERVATION_CODE = 74;
+	public static final int ESTIMATED_DATE_OF_DELIVERY_OBSERVATION__ESTIMATED_DATE_OF_DELIVERY_OBSERVATION_CODE = 88;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Estimated Date Of Delivery Observation Mood Code' of 'Estimated Date Of Delivery Observation'.
@@ -662,7 +767,15 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ESTIMATED_DATE_OF_DELIVERY_OBSERVATION__ESTIMATED_DATE_OF_DELIVERY_OBSERVATION_MOOD_CODE = 73;
+	public static final int ESTIMATED_DATE_OF_DELIVERY_OBSERVATION__ESTIMATED_DATE_OF_DELIVERY_OBSERVATION_MOOD_CODE = 86;
+
+		/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Estimated Date Of Delivery Observation Code P' of 'Estimated Date Of Delivery Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int ESTIMATED_DATE_OF_DELIVERY_OBSERVATION__ESTIMATED_DATE_OF_DELIVERY_OBSERVATION_CODE_P = 87;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Estimated Date Of Delivery Observation Status Code' of 'Estimated Date Of Delivery Observation'.
@@ -670,7 +783,15 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ESTIMATED_DATE_OF_DELIVERY_OBSERVATION__ESTIMATED_DATE_OF_DELIVERY_OBSERVATION_STATUS_CODE = 75;
+	public static final int ESTIMATED_DATE_OF_DELIVERY_OBSERVATION__ESTIMATED_DATE_OF_DELIVERY_OBSERVATION_STATUS_CODE = 89;
+
+		/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Estimated Date Of Delivery Observation Status Code P' of 'Estimated Date Of Delivery Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int ESTIMATED_DATE_OF_DELIVERY_OBSERVATION__ESTIMATED_DATE_OF_DELIVERY_OBSERVATION_STATUS_CODE_P = 90;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Estimated Date Of Delivery Observation Value' of 'Estimated Date Of Delivery Observation'.
@@ -678,7 +799,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ESTIMATED_DATE_OF_DELIVERY_OBSERVATION__ESTIMATED_DATE_OF_DELIVERY_OBSERVATION_VALUE = 76;
+	public static final int ESTIMATED_DATE_OF_DELIVERY_OBSERVATION__ESTIMATED_DATE_OF_DELIVERY_OBSERVATION_VALUE = 91;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Phcr Clinical Information Section Patient Condition Constraint' of 'Clinical Information Section'.
@@ -686,7 +807,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PHCR_CLINICAL_INFORMATION_SECTION__PHCR_CLINICAL_INFORMATION_SECTION_PATIENT_CONDITION_CONSTRAINT = 77;
+	public static final int PHCR_CLINICAL_INFORMATION_SECTION__PHCR_CLINICAL_INFORMATION_SECTION_PATIENT_CONDITION_CONSTRAINT = 92;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Phcr Clinical Information Section Template Id' of 'Clinical Information Section'.
@@ -694,7 +815,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PHCR_CLINICAL_INFORMATION_SECTION__PHCR_CLINICAL_INFORMATION_SECTION_TEMPLATE_ID = 78;
+	public static final int PHCR_CLINICAL_INFORMATION_SECTION__PHCR_CLINICAL_INFORMATION_SECTION_TEMPLATE_ID = 93;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Phcr Clinical Information Section Code' of 'Clinical Information Section'.
@@ -702,7 +823,15 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PHCR_CLINICAL_INFORMATION_SECTION__PHCR_CLINICAL_INFORMATION_SECTION_CODE = 79;
+	public static final int PHCR_CLINICAL_INFORMATION_SECTION__PHCR_CLINICAL_INFORMATION_SECTION_CODE = 94;
+
+		/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Phcr Clinical Information Section Code P' of 'Clinical Information Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PHCR_CLINICAL_INFORMATION_SECTION__PHCR_CLINICAL_INFORMATION_SECTION_CODE_P = 95;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Phcr Clinical Information Section Title' of 'Clinical Information Section'.
@@ -710,7 +839,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PHCR_CLINICAL_INFORMATION_SECTION__PHCR_CLINICAL_INFORMATION_SECTION_TITLE = 80;
+	public static final int PHCR_CLINICAL_INFORMATION_SECTION__PHCR_CLINICAL_INFORMATION_SECTION_TITLE = 96;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Phcr Clinical Information Section Text' of 'Clinical Information Section'.
@@ -718,7 +847,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PHCR_CLINICAL_INFORMATION_SECTION__PHCR_CLINICAL_INFORMATION_SECTION_TEXT = 81;
+	public static final int PHCR_CLINICAL_INFORMATION_SECTION__PHCR_CLINICAL_INFORMATION_SECTION_TEXT = 97;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Phcr Clinical Information Section Case Observation' of 'Clinical Information Section'.
@@ -726,7 +855,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PHCR_CLINICAL_INFORMATION_SECTION__PHCR_CLINICAL_INFORMATION_SECTION_CASE_OBSERVATION = 82;
+	public static final int PHCR_CLINICAL_INFORMATION_SECTION__PHCR_CLINICAL_INFORMATION_SECTION_CASE_OBSERVATION = 98;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Phcr Clinical Information Section Patient Condition Alive Observation' of 'Clinical Information Section'.
@@ -734,7 +863,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PHCR_CLINICAL_INFORMATION_SECTION__PHCR_CLINICAL_INFORMATION_SECTION_PATIENT_CONDITION_ALIVE_OBSERVATION = 83;
+	public static final int PHCR_CLINICAL_INFORMATION_SECTION__PHCR_CLINICAL_INFORMATION_SECTION_PATIENT_CONDITION_ALIVE_OBSERVATION = 99;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Phcr Clinical Information Section Patient Condition Deceased Observation' of 'Clinical Information Section'.
@@ -742,7 +871,15 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PHCR_CLINICAL_INFORMATION_SECTION__PHCR_CLINICAL_INFORMATION_SECTION_PATIENT_CONDITION_DECEASED_OBSERVATION = 84;
+	public static final int PHCR_CLINICAL_INFORMATION_SECTION__PHCR_CLINICAL_INFORMATION_SECTION_PATIENT_CONDITION_DECEASED_OBSERVATION = 100;
+
+		/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Phcr Clinical Information Section Phcr Relevant Medical Condition History Observation' of 'Clinical Information Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PHCR_CLINICAL_INFORMATION_SECTION__PHCR_CLINICAL_INFORMATION_SECTION_PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION = 101;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Case Observation Effective Time Low' of 'Case Observation'.
@@ -750,7 +887,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CASE_OBSERVATION__CASE_OBSERVATION_EFFECTIVE_TIME_LOW = 85;
+	public static final int CASE_OBSERVATION__CASE_OBSERVATION_EFFECTIVE_TIME_LOW = 102;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Case Observation Author' of 'Case Observation'.
@@ -758,7 +895,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CASE_OBSERVATION__CASE_OBSERVATION_AUTHOR = 86;
+	public static final int CASE_OBSERVATION__CASE_OBSERVATION_AUTHOR = 103;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Case Observation Author Assigned Author' of 'Case Observation'.
@@ -766,7 +903,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CASE_OBSERVATION__CASE_OBSERVATION_AUTHOR_ASSIGNED_AUTHOR = 87;
+	public static final int CASE_OBSERVATION__CASE_OBSERVATION_AUTHOR_ASSIGNED_AUTHOR = 104;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Phcr Treatment Information Section Template Id' of 'Treatment Information Section'.
@@ -774,7 +911,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PHCR_TREATMENT_INFORMATION_SECTION__PHCR_TREATMENT_INFORMATION_SECTION_TEMPLATE_ID = 122;
+	public static final int PHCR_TREATMENT_INFORMATION_SECTION__PHCR_TREATMENT_INFORMATION_SECTION_TEMPLATE_ID = 157;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Phcr Treatment Information Section Code' of 'Treatment Information Section'.
@@ -782,7 +919,15 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PHCR_TREATMENT_INFORMATION_SECTION__PHCR_TREATMENT_INFORMATION_SECTION_CODE = 123;
+	public static final int PHCR_TREATMENT_INFORMATION_SECTION__PHCR_TREATMENT_INFORMATION_SECTION_CODE = 158;
+
+		/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Phcr Treatment Information Section Code P' of 'Treatment Information Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PHCR_TREATMENT_INFORMATION_SECTION__PHCR_TREATMENT_INFORMATION_SECTION_CODE_P = 159;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Phcr Treatment Information Section Title' of 'Treatment Information Section'.
@@ -790,7 +935,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PHCR_TREATMENT_INFORMATION_SECTION__PHCR_TREATMENT_INFORMATION_SECTION_TITLE = 124;
+	public static final int PHCR_TREATMENT_INFORMATION_SECTION__PHCR_TREATMENT_INFORMATION_SECTION_TITLE = 160;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Phcr Treatment Information Section Text' of 'Treatment Information Section'.
@@ -798,7 +943,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PHCR_TREATMENT_INFORMATION_SECTION__PHCR_TREATMENT_INFORMATION_SECTION_TEXT = 125;
+	public static final int PHCR_TREATMENT_INFORMATION_SECTION__PHCR_TREATMENT_INFORMATION_SECTION_TEXT = 161;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Phcr Treatment Information Section Therapeutic Regimen Act' of 'Treatment Information Section'.
@@ -806,7 +951,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PHCR_TREATMENT_INFORMATION_SECTION__PHCR_TREATMENT_INFORMATION_SECTION_THERAPEUTIC_REGIMEN_ACT = 126;
+	public static final int PHCR_TREATMENT_INFORMATION_SECTION__PHCR_TREATMENT_INFORMATION_SECTION_THERAPEUTIC_REGIMEN_ACT = 162;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Therapeutic Regimen Act Template Id' of 'Therapeutic Regimen Act'.
@@ -814,7 +959,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int THERAPEUTIC_REGIMEN_ACT__THERAPEUTIC_REGIMEN_ACT_TEMPLATE_ID = 127;
+	public static final int THERAPEUTIC_REGIMEN_ACT__THERAPEUTIC_REGIMEN_ACT_TEMPLATE_ID = 163;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Therapeutic Regimen Act Class Code' of 'Therapeutic Regimen Act'.
@@ -822,7 +967,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int THERAPEUTIC_REGIMEN_ACT__THERAPEUTIC_REGIMEN_ACT_CLASS_CODE = 128;
+	public static final int THERAPEUTIC_REGIMEN_ACT__THERAPEUTIC_REGIMEN_ACT_CLASS_CODE = 164;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Therapeutic Regimen Act Code' of 'Therapeutic Regimen Act'.
@@ -830,7 +975,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int THERAPEUTIC_REGIMEN_ACT__THERAPEUTIC_REGIMEN_ACT_CODE = 131;
+	public static final int THERAPEUTIC_REGIMEN_ACT__THERAPEUTIC_REGIMEN_ACT_CODE = 168;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Therapeutic Regimen Act Mood Code' of 'Therapeutic Regimen Act'.
@@ -838,7 +983,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int THERAPEUTIC_REGIMEN_ACT__THERAPEUTIC_REGIMEN_ACT_MOOD_CODE = 129;
+	public static final int THERAPEUTIC_REGIMEN_ACT__THERAPEUTIC_REGIMEN_ACT_MOOD_CODE = 165;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Therapeutic Regimen Act Negation Ind' of 'Therapeutic Regimen Act'.
@@ -846,7 +991,15 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int THERAPEUTIC_REGIMEN_ACT__THERAPEUTIC_REGIMEN_ACT_NEGATION_IND = 130;
+	public static final int THERAPEUTIC_REGIMEN_ACT__THERAPEUTIC_REGIMEN_ACT_NEGATION_IND = 166;
+
+		/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Therapeutic Regimen Act Code P' of 'Therapeutic Regimen Act'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int THERAPEUTIC_REGIMEN_ACT__THERAPEUTIC_REGIMEN_ACT_CODE_P = 167;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Therapeutic Regimen Act Status Code' of 'Therapeutic Regimen Act'.
@@ -854,7 +1007,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int THERAPEUTIC_REGIMEN_ACT__THERAPEUTIC_REGIMEN_ACT_STATUS_CODE = 132;
+	public static final int THERAPEUTIC_REGIMEN_ACT__THERAPEUTIC_REGIMEN_ACT_STATUS_CODE = 169;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Therapeutic Regimen Act Status Code P' of 'Therapeutic Regimen Act'.
@@ -862,7 +1015,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int THERAPEUTIC_REGIMEN_ACT__THERAPEUTIC_REGIMEN_ACT_STATUS_CODE_P = 133;
+	public static final int THERAPEUTIC_REGIMEN_ACT__THERAPEUTIC_REGIMEN_ACT_STATUS_CODE_P = 170;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Therapeutic Regimen Act Treatment Given Substance Administration' of 'Therapeutic Regimen Act'.
@@ -870,7 +1023,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int THERAPEUTIC_REGIMEN_ACT__THERAPEUTIC_REGIMEN_ACT_TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION = 134;
+	public static final int THERAPEUTIC_REGIMEN_ACT__THERAPEUTIC_REGIMEN_ACT_TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION = 171;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Therapeutic Regimen Act Treatment Not Given Substance Administration' of 'Therapeutic Regimen Act'.
@@ -878,7 +1031,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int THERAPEUTIC_REGIMEN_ACT__THERAPEUTIC_REGIMEN_ACT_TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION = 135;
+	public static final int THERAPEUTIC_REGIMEN_ACT__THERAPEUTIC_REGIMEN_ACT_TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION = 172;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Treatment Given Substance Administration Treatment Given Negation Ind' of 'Treatment Given Substance Administration'.
@@ -886,7 +1039,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION__TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION_TREATMENT_GIVEN_NEGATION_IND = 136;
+	public static final int TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION__TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION_TREATMENT_GIVEN_NEGATION_IND = 173;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Phcr Encounters Section Title' of 'Encounters Section'.
@@ -894,7 +1047,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PHCR_ENCOUNTERS_SECTION__PHCR_ENCOUNTERS_SECTION_TITLE = 151;
+	public static final int PHCR_ENCOUNTERS_SECTION__PHCR_ENCOUNTERS_SECTION_TITLE = 189;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Phcr Encounters Section Text' of 'Encounters Section'.
@@ -902,7 +1055,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PHCR_ENCOUNTERS_SECTION__PHCR_ENCOUNTERS_SECTION_TEXT = 152;
+	public static final int PHCR_ENCOUNTERS_SECTION__PHCR_ENCOUNTERS_SECTION_TEXT = 190;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Phcr Encounters Section Encounters Activity' of 'Encounters Section'.
@@ -910,7 +1063,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PHCR_ENCOUNTERS_SECTION__PHCR_ENCOUNTERS_SECTION_ENCOUNTERS_ACTIVITY = 153;
+	public static final int PHCR_ENCOUNTERS_SECTION__PHCR_ENCOUNTERS_SECTION_ENCOUNTERS_ACTIVITY = 191;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Encounters Section Template Id' of 'Encounters Section'.
@@ -918,7 +1071,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PHCR_ENCOUNTERS_SECTION__ENCOUNTERS_SECTION_TEMPLATE_ID = 154;
+	public static final int PHCR_ENCOUNTERS_SECTION__ENCOUNTERS_SECTION_TEMPLATE_ID = 192;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Phcr Relevant Dx Tests Section Code' of 'Relevant Dx Tests Section'.
@@ -926,7 +1079,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PHCR_RELEVANT_DX_TESTS_SECTION__PHCR_RELEVANT_DX_TESTS_SECTION_CODE = 155;
+	public static final int PHCR_RELEVANT_DX_TESTS_SECTION__PHCR_RELEVANT_DX_TESTS_SECTION_CODE = 193;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Phcr Relevant Dx Tests Section Title' of 'Relevant Dx Tests Section'.
@@ -934,7 +1087,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PHCR_RELEVANT_DX_TESTS_SECTION__PHCR_RELEVANT_DX_TESTS_SECTION_TITLE = 156;
+	public static final int PHCR_RELEVANT_DX_TESTS_SECTION__PHCR_RELEVANT_DX_TESTS_SECTION_TITLE = 194;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Phcr Relevant Dx Tests Section Text' of 'Relevant Dx Tests Section'.
@@ -942,7 +1095,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PHCR_RELEVANT_DX_TESTS_SECTION__PHCR_RELEVANT_DX_TESTS_SECTION_TEXT = 157;
+	public static final int PHCR_RELEVANT_DX_TESTS_SECTION__PHCR_RELEVANT_DX_TESTS_SECTION_TEXT = 195;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Phcr Relevant Dx Tests Section Result Organizer' of 'Relevant Dx Tests Section'.
@@ -950,7 +1103,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PHCR_RELEVANT_DX_TESTS_SECTION__PHCR_RELEVANT_DX_TESTS_SECTION_RESULT_ORGANIZER = 158;
+	public static final int PHCR_RELEVANT_DX_TESTS_SECTION__PHCR_RELEVANT_DX_TESTS_SECTION_RESULT_ORGANIZER = 196;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Phcr Relevant Dx Tests Section Result Observation' of 'Relevant Dx Tests Section'.
@@ -958,7 +1111,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PHCR_RELEVANT_DX_TESTS_SECTION__PHCR_RELEVANT_DX_TESTS_SECTION_RESULT_OBSERVATION = 159;
+	public static final int PHCR_RELEVANT_DX_TESTS_SECTION__PHCR_RELEVANT_DX_TESTS_SECTION_RESULT_OBSERVATION = 197;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Phcr Relevant Dx Tests Section Imaging Observation' of 'Relevant Dx Tests Section'.
@@ -966,7 +1119,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PHCR_RELEVANT_DX_TESTS_SECTION__PHCR_RELEVANT_DX_TESTS_SECTION_IMAGING_OBSERVATION = 160;
+	public static final int PHCR_RELEVANT_DX_TESTS_SECTION__PHCR_RELEVANT_DX_TESTS_SECTION_IMAGING_OBSERVATION = 198;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Results Section Template Id' of 'Relevant Dx Tests Section'.
@@ -974,7 +1127,15 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PHCR_RELEVANT_DX_TESTS_SECTION__RESULTS_SECTION_TEMPLATE_ID = 161;
+	public static final int PHCR_RELEVANT_DX_TESTS_SECTION__RESULTS_SECTION_TEMPLATE_ID = 199;
+
+		/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Results Section Code' of 'Relevant Dx Tests Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PHCR_RELEVANT_DX_TESTS_SECTION__RESULTS_SECTION_CODE = 200;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate PHCR Result Organizer Class Code' of 'Result Organizer'.
@@ -982,7 +1143,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULT_ORGANIZER__PHCR_RESULT_ORGANIZER_CLASS_CODE = 162;
+	public static final int RESULT_ORGANIZER__PHCR_RESULT_ORGANIZER_CLASS_CODE = 201;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate PHCR Result Organizer Mood Code' of 'Result Organizer'.
@@ -990,7 +1151,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULT_ORGANIZER__PHCR_RESULT_ORGANIZER_MOOD_CODE = 163;
+	public static final int RESULT_ORGANIZER__PHCR_RESULT_ORGANIZER_MOOD_CODE = 202;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate PHCR Result Organizer Id' of 'Result Organizer'.
@@ -998,7 +1159,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULT_ORGANIZER__PHCR_RESULT_ORGANIZER_ID = 164;
+	public static final int RESULT_ORGANIZER__PHCR_RESULT_ORGANIZER_ID = 203;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate PHCR Result Organizer Code' of 'Result Organizer'.
@@ -1006,7 +1167,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULT_ORGANIZER__PHCR_RESULT_ORGANIZER_CODE = 165;
+	public static final int RESULT_ORGANIZER__PHCR_RESULT_ORGANIZER_CODE = 204;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate PHCR Result Organizer Status Code' of 'Result Organizer'.
@@ -1014,7 +1175,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULT_ORGANIZER__PHCR_RESULT_ORGANIZER_STATUS_CODE = 166;
+	public static final int RESULT_ORGANIZER__PHCR_RESULT_ORGANIZER_STATUS_CODE = 205;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate PHCR Result Organizer Effective Time' of 'Result Organizer'.
@@ -1022,7 +1183,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULT_ORGANIZER__PHCR_RESULT_ORGANIZER_EFFECTIVE_TIME = 167;
+	public static final int RESULT_ORGANIZER__PHCR_RESULT_ORGANIZER_EFFECTIVE_TIME = 206;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate PHCR Result Organizer Result Observation' of 'Result Organizer'.
@@ -1030,7 +1191,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULT_ORGANIZER__PHCR_RESULT_ORGANIZER_RESULT_OBSERVATION = 168;
+	public static final int RESULT_ORGANIZER__PHCR_RESULT_ORGANIZER_RESULT_OBSERVATION = 207;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate PHCR Result Organizer Specimen Collection Procedure' of 'Result Organizer'.
@@ -1038,7 +1199,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULT_ORGANIZER__PHCR_RESULT_ORGANIZER_SPECIMEN_COLLECTION_PROCEDURE = 169;
+	public static final int RESULT_ORGANIZER__PHCR_RESULT_ORGANIZER_SPECIMEN_COLLECTION_PROCEDURE = 208;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Organizer Template Id' of 'Result Organizer'.
@@ -1046,7 +1207,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULT_ORGANIZER__RESULT_ORGANIZER_TEMPLATE_ID = 170;
+	public static final int RESULT_ORGANIZER__RESULT_ORGANIZER_TEMPLATE_ID = 209;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Organizer Status Code' of 'Result Organizer'.
@@ -1054,7 +1215,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULT_ORGANIZER__RESULT_ORGANIZER_STATUS_CODE = 171;
+	public static final int RESULT_ORGANIZER__RESULT_ORGANIZER_STATUS_CODE = 210;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate PHCR Result Observation Class Code' of 'Result Observation'.
@@ -1062,7 +1223,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULT_OBSERVATION__PHCR_RESULT_OBSERVATION_CLASS_CODE = 172;
+	public static final int RESULT_OBSERVATION__PHCR_RESULT_OBSERVATION_CLASS_CODE = 211;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate PHCR Result Observation Status Code' of 'Result Observation'.
@@ -1070,7 +1231,23 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULT_OBSERVATION__PHCR_RESULT_OBSERVATION_STATUS_CODE = 173;
+	public static final int RESULT_OBSERVATION__PHCR_RESULT_OBSERVATION_STATUS_CODE = 212;
+
+		/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate PHCR Result Observation Specimen Collection Procedure' of 'Result Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int RESULT_OBSERVATION__PHCR_RESULT_OBSERVATION_SPECIMEN_COLLECTION_PROCEDURE = 213;
+
+		/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate PHCR Result Observation Susceptibility Result' of 'Result Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int RESULT_OBSERVATION__PHCR_RESULT_OBSERVATION_SUSCEPTIBILITY_RESULT = 214;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Template Id' of 'Result Observation'.
@@ -1078,7 +1255,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULT_OBSERVATION__RESULT_OBSERVATION_TEMPLATE_ID = 174;
+	public static final int RESULT_OBSERVATION__RESULT_OBSERVATION_TEMPLATE_ID = 215;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Result Observation Status Code' of 'Result Observation'.
@@ -1086,7 +1263,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESULT_OBSERVATION__RESULT_OBSERVATION_STATUS_CODE = 175;
+	public static final int RESULT_OBSERVATION__RESULT_OBSERVATION_STATUS_CODE = 216;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Specimen Collection Procedure Template Id' of 'Specimen Collection Procedure'.
@@ -1094,7 +1271,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int SPECIMEN_COLLECTION_PROCEDURE__SPECIMEN_COLLECTION_PROCEDURE_TEMPLATE_ID = 176;
+	public static final int SPECIMEN_COLLECTION_PROCEDURE__SPECIMEN_COLLECTION_PROCEDURE_TEMPLATE_ID = 217;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Specimen Collection Procedure Class Code' of 'Specimen Collection Procedure'.
@@ -1102,7 +1279,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int SPECIMEN_COLLECTION_PROCEDURE__SPECIMEN_COLLECTION_PROCEDURE_CLASS_CODE = 177;
+	public static final int SPECIMEN_COLLECTION_PROCEDURE__SPECIMEN_COLLECTION_PROCEDURE_CLASS_CODE = 218;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Specimen Collection Procedure Mood Code' of 'Specimen Collection Procedure'.
@@ -1110,7 +1287,15 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int SPECIMEN_COLLECTION_PROCEDURE__SPECIMEN_COLLECTION_PROCEDURE_MOOD_CODE = 178;
+	public static final int SPECIMEN_COLLECTION_PROCEDURE__SPECIMEN_COLLECTION_PROCEDURE_MOOD_CODE = 219;
+
+		/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Specimen Collection Procedure Code' of 'Specimen Collection Procedure'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int SPECIMEN_COLLECTION_PROCEDURE__SPECIMEN_COLLECTION_PROCEDURE_CODE = 220;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Specimen Collection Procedure Effective Time' of 'Specimen Collection Procedure'.
@@ -1118,7 +1303,15 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int SPECIMEN_COLLECTION_PROCEDURE__SPECIMEN_COLLECTION_PROCEDURE_EFFECTIVE_TIME = 179;
+	public static final int SPECIMEN_COLLECTION_PROCEDURE__SPECIMEN_COLLECTION_PROCEDURE_EFFECTIVE_TIME = 221;
+
+		/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Specimen Collection Procedure Target Site Code' of 'Specimen Collection Procedure'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int SPECIMEN_COLLECTION_PROCEDURE__SPECIMEN_COLLECTION_PROCEDURE_TARGET_SITE_CODE = 222;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Imaging Observation Class Code' of 'Imaging Observation'.
@@ -1126,7 +1319,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int IMAGING_OBSERVATION__IMAGING_OBSERVATION_CLASS_CODE = 180;
+	public static final int IMAGING_OBSERVATION__IMAGING_OBSERVATION_CLASS_CODE = 230;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Imaging Observation Mood Code' of 'Imaging Observation'.
@@ -1134,7 +1327,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int IMAGING_OBSERVATION__IMAGING_OBSERVATION_MOOD_CODE = 181;
+	public static final int IMAGING_OBSERVATION__IMAGING_OBSERVATION_MOOD_CODE = 231;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Imaging Observation Id' of 'Imaging Observation'.
@@ -1142,7 +1335,15 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int IMAGING_OBSERVATION__IMAGING_OBSERVATION_ID = 182;
+	public static final int IMAGING_OBSERVATION__IMAGING_OBSERVATION_ID = 232;
+
+		/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Imaging Observation Code' of 'Imaging Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int IMAGING_OBSERVATION__IMAGING_OBSERVATION_CODE = 233;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Imaging Observation Status Code' of 'Imaging Observation'.
@@ -1150,7 +1351,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int IMAGING_OBSERVATION__IMAGING_OBSERVATION_STATUS_CODE = 183;
+	public static final int IMAGING_OBSERVATION__IMAGING_OBSERVATION_STATUS_CODE = 234;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Imaging Observation Effective Time' of 'Imaging Observation'.
@@ -1158,7 +1359,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int IMAGING_OBSERVATION__IMAGING_OBSERVATION_EFFECTIVE_TIME = 184;
+	public static final int IMAGING_OBSERVATION__IMAGING_OBSERVATION_EFFECTIVE_TIME = 235;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Imaging Observation Value' of 'Imaging Observation'.
@@ -1166,7 +1367,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int IMAGING_OBSERVATION__IMAGING_OBSERVATION_VALUE = 185;
+	public static final int IMAGING_OBSERVATION__IMAGING_OBSERVATION_VALUE = 236;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Imaging Observation Method Code' of 'Imaging Observation'.
@@ -1174,7 +1375,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int IMAGING_OBSERVATION__IMAGING_OBSERVATION_METHOD_CODE = 186;
+	public static final int IMAGING_OBSERVATION__IMAGING_OBSERVATION_METHOD_CODE = 237;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Observation Template Id' of 'Imaging Observation'.
@@ -1182,7 +1383,15 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int IMAGING_OBSERVATION__PROBLEM_OBSERVATION_TEMPLATE_ID = 187;
+	public static final int IMAGING_OBSERVATION__PROBLEM_OBSERVATION_TEMPLATE_ID = 238;
+
+		/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Observation Status Code' of 'Imaging Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int IMAGING_OBSERVATION__PROBLEM_OBSERVATION_STATUS_CODE = 239;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Condition Alive Observation Template Id' of 'Patient Condition Alive Observation'.
@@ -1190,7 +1399,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_CONDITION_ALIVE_OBSERVATION__PATIENT_CONDITION_ALIVE_OBSERVATION_TEMPLATE_ID = 106;
+	public static final int PATIENT_CONDITION_ALIVE_OBSERVATION__PATIENT_CONDITION_ALIVE_OBSERVATION_TEMPLATE_ID = 127;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Condition Alive Observation Class Code' of 'Patient Condition Alive Observation'.
@@ -1198,7 +1407,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_CONDITION_ALIVE_OBSERVATION__PATIENT_CONDITION_ALIVE_OBSERVATION_CLASS_CODE = 107;
+	public static final int PATIENT_CONDITION_ALIVE_OBSERVATION__PATIENT_CONDITION_ALIVE_OBSERVATION_CLASS_CODE = 128;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Condition Alive Observation Code' of 'Patient Condition Alive Observation'.
@@ -1206,7 +1415,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_CONDITION_ALIVE_OBSERVATION__PATIENT_CONDITION_ALIVE_OBSERVATION_CODE = 109;
+	public static final int PATIENT_CONDITION_ALIVE_OBSERVATION__PATIENT_CONDITION_ALIVE_OBSERVATION_CODE = 131;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Condition Alive Observation Mood Code' of 'Patient Condition Alive Observation'.
@@ -1214,7 +1423,15 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_CONDITION_ALIVE_OBSERVATION__PATIENT_CONDITION_ALIVE_OBSERVATION_MOOD_CODE = 108;
+	public static final int PATIENT_CONDITION_ALIVE_OBSERVATION__PATIENT_CONDITION_ALIVE_OBSERVATION_MOOD_CODE = 129;
+
+		/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Condition Alive Observation Code P' of 'Patient Condition Alive Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PATIENT_CONDITION_ALIVE_OBSERVATION__PATIENT_CONDITION_ALIVE_OBSERVATION_CODE_P = 130;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Condition Alive Observation Status Code' of 'Patient Condition Alive Observation'.
@@ -1222,7 +1439,15 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_CONDITION_ALIVE_OBSERVATION__PATIENT_CONDITION_ALIVE_OBSERVATION_STATUS_CODE = 110;
+	public static final int PATIENT_CONDITION_ALIVE_OBSERVATION__PATIENT_CONDITION_ALIVE_OBSERVATION_STATUS_CODE = 132;
+
+		/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Condition Alive Observation Status Code P' of 'Patient Condition Alive Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PATIENT_CONDITION_ALIVE_OBSERVATION__PATIENT_CONDITION_ALIVE_OBSERVATION_STATUS_CODE_P = 133;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Condition Alive Observation Value' of 'Patient Condition Alive Observation'.
@@ -1230,7 +1455,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_CONDITION_ALIVE_OBSERVATION__PATIENT_CONDITION_ALIVE_OBSERVATION_VALUE = 112;
+	public static final int PATIENT_CONDITION_ALIVE_OBSERVATION__PATIENT_CONDITION_ALIVE_OBSERVATION_VALUE = 135;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Condition Alive Observation Value P' of 'Patient Condition Alive Observation'.
@@ -1238,7 +1463,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_CONDITION_ALIVE_OBSERVATION__PATIENT_CONDITION_ALIVE_OBSERVATION_VALUE_P = 113;
+	public static final int PATIENT_CONDITION_ALIVE_OBSERVATION__PATIENT_CONDITION_ALIVE_OBSERVATION_VALUE_P = 136;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Condition Alive Observation Effective Time' of 'Patient Condition Alive Observation'.
@@ -1246,7 +1471,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_CONDITION_ALIVE_OBSERVATION__PATIENT_CONDITION_ALIVE_OBSERVATION_EFFECTIVE_TIME = 111;
+	public static final int PATIENT_CONDITION_ALIVE_OBSERVATION__PATIENT_CONDITION_ALIVE_OBSERVATION_EFFECTIVE_TIME = 134;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Condition Deceased Observation Template Id' of 'Patient Condition Deceased Observation'.
@@ -1254,7 +1479,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_CONDITION_DECEASED_OBSERVATION__PATIENT_CONDITION_DECEASED_OBSERVATION_TEMPLATE_ID = 114;
+	public static final int PATIENT_CONDITION_DECEASED_OBSERVATION__PATIENT_CONDITION_DECEASED_OBSERVATION_TEMPLATE_ID = 137;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Condition Deceased Observation Class Code' of 'Patient Condition Deceased Observation'.
@@ -1262,7 +1487,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_CONDITION_DECEASED_OBSERVATION__PATIENT_CONDITION_DECEASED_OBSERVATION_CLASS_CODE = 115;
+	public static final int PATIENT_CONDITION_DECEASED_OBSERVATION__PATIENT_CONDITION_DECEASED_OBSERVATION_CLASS_CODE = 138;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Condition Deceased Observation Code' of 'Patient Condition Deceased Observation'.
@@ -1270,7 +1495,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_CONDITION_DECEASED_OBSERVATION__PATIENT_CONDITION_DECEASED_OBSERVATION_CODE = 117;
+	public static final int PATIENT_CONDITION_DECEASED_OBSERVATION__PATIENT_CONDITION_DECEASED_OBSERVATION_CODE = 141;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Condition Deceased Observation Mood Code' of 'Patient Condition Deceased Observation'.
@@ -1278,7 +1503,15 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_CONDITION_DECEASED_OBSERVATION__PATIENT_CONDITION_DECEASED_OBSERVATION_MOOD_CODE = 116;
+	public static final int PATIENT_CONDITION_DECEASED_OBSERVATION__PATIENT_CONDITION_DECEASED_OBSERVATION_MOOD_CODE = 139;
+
+		/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Condition Deceased Observation Code P' of 'Patient Condition Deceased Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PATIENT_CONDITION_DECEASED_OBSERVATION__PATIENT_CONDITION_DECEASED_OBSERVATION_CODE_P = 140;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Condition Deceased Observation Status Code' of 'Patient Condition Deceased Observation'.
@@ -1286,7 +1519,15 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_CONDITION_DECEASED_OBSERVATION__PATIENT_CONDITION_DECEASED_OBSERVATION_STATUS_CODE = 118;
+	public static final int PATIENT_CONDITION_DECEASED_OBSERVATION__PATIENT_CONDITION_DECEASED_OBSERVATION_STATUS_CODE = 142;
+
+		/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Condition Deceased Observation Status Code P' of 'Patient Condition Deceased Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PATIENT_CONDITION_DECEASED_OBSERVATION__PATIENT_CONDITION_DECEASED_OBSERVATION_STATUS_CODE_P = 143;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Condition Deceased Observation Value' of 'Patient Condition Deceased Observation'.
@@ -1294,7 +1535,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_CONDITION_DECEASED_OBSERVATION__PATIENT_CONDITION_DECEASED_OBSERVATION_VALUE = 120;
+	public static final int PATIENT_CONDITION_DECEASED_OBSERVATION__PATIENT_CONDITION_DECEASED_OBSERVATION_VALUE = 145;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Condition Deceased Observation Value P' of 'Patient Condition Deceased Observation'.
@@ -1302,7 +1543,87 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_CONDITION_DECEASED_OBSERVATION__PATIENT_CONDITION_DECEASED_OBSERVATION_VALUE_P = 121;
+	public static final int PATIENT_CONDITION_DECEASED_OBSERVATION__PATIENT_CONDITION_DECEASED_OBSERVATION_VALUE_P = 146;
+
+		/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Phcr Relevant Medical Condition History Observation Template Id' of 'Relevant Medical Condition History Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION__PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION_TEMPLATE_ID = 147;
+
+		/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Phcr Relevant Medical Condition History Observation Class Code' of 'Relevant Medical Condition History Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION__PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION_CLASS_CODE = 148;
+
+		/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Phcr Relevant Medical Condition History Observation Code P' of 'Relevant Medical Condition History Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION__PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION_CODE_P = 149;
+
+		/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Phcr Relevant Medical Condition History Observation Code' of 'Relevant Medical Condition History Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION__PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION_CODE = 150;
+
+		/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Phcr Relevant Medical Condition History Observation Effective Time' of 'Relevant Medical Condition History Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION__PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION_EFFECTIVE_TIME = 151;
+
+		/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Phcr Relevant Medical Condition History Observation Mood Code' of 'Relevant Medical Condition History Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION__PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION_MOOD_CODE = 152;
+
+		/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Phcr Relevant Medical Condition History Observation Negation Ind' of 'Relevant Medical Condition History Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION__PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION_NEGATION_IND = 153;
+
+		/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Phcr Relevant Medical Condition History Observation Status Code' of 'Relevant Medical Condition History Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION__PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION_STATUS_CODE = 154;
+
+		/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Phcr Relevant Medical Condition History Observation Status Code P' of 'Relevant Medical Condition History Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION__PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION_STATUS_CODE_P = 155;
+
+		/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Phcr Relevant Medical Condition History Observation Problem Observation' of 'Relevant Medical Condition History Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION__PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION_PROBLEM_OBSERVATION = 156;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Condition Deceased Observation Effective Time' of 'Patient Condition Deceased Observation'.
@@ -1310,7 +1631,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_CONDITION_DECEASED_OBSERVATION__PATIENT_CONDITION_DECEASED_OBSERVATION_EFFECTIVE_TIME = 119;
+	public static final int PATIENT_CONDITION_DECEASED_OBSERVATION__PATIENT_CONDITION_DECEASED_OBSERVATION_EFFECTIVE_TIME = 144;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Signs And Symptoms Observation Template Id' of 'Signs And Symptoms Observation'.
@@ -1318,7 +1639,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int SIGNS_AND_SYMPTOMS_OBSERVATION__SIGNS_AND_SYMPTOMS_OBSERVATION_TEMPLATE_ID = 98;
+	public static final int SIGNS_AND_SYMPTOMS_OBSERVATION__SIGNS_AND_SYMPTOMS_OBSERVATION_TEMPLATE_ID = 117;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Signs And Symptoms Observation Class Code' of 'Signs And Symptoms Observation'.
@@ -1326,7 +1647,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int SIGNS_AND_SYMPTOMS_OBSERVATION__SIGNS_AND_SYMPTOMS_OBSERVATION_CLASS_CODE = 99;
+	public static final int SIGNS_AND_SYMPTOMS_OBSERVATION__SIGNS_AND_SYMPTOMS_OBSERVATION_CLASS_CODE = 118;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Signs And Symptoms Observation Code' of 'Signs And Symptoms Observation'.
@@ -1334,7 +1655,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int SIGNS_AND_SYMPTOMS_OBSERVATION__SIGNS_AND_SYMPTOMS_OBSERVATION_CODE = 102;
+	public static final int SIGNS_AND_SYMPTOMS_OBSERVATION__SIGNS_AND_SYMPTOMS_OBSERVATION_CODE = 122;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Signs And Symptoms Observation Mood Code' of 'Signs And Symptoms Observation'.
@@ -1342,7 +1663,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int SIGNS_AND_SYMPTOMS_OBSERVATION__SIGNS_AND_SYMPTOMS_OBSERVATION_MOOD_CODE = 100;
+	public static final int SIGNS_AND_SYMPTOMS_OBSERVATION__SIGNS_AND_SYMPTOMS_OBSERVATION_MOOD_CODE = 119;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Signs And Symptoms Observation Negation Ind' of 'Signs And Symptoms Observation'.
@@ -1350,7 +1671,15 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int SIGNS_AND_SYMPTOMS_OBSERVATION__SIGNS_AND_SYMPTOMS_OBSERVATION_NEGATION_IND = 101;
+	public static final int SIGNS_AND_SYMPTOMS_OBSERVATION__SIGNS_AND_SYMPTOMS_OBSERVATION_NEGATION_IND = 120;
+
+		/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Signs And Symptoms Observation Code P' of 'Signs And Symptoms Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int SIGNS_AND_SYMPTOMS_OBSERVATION__SIGNS_AND_SYMPTOMS_OBSERVATION_CODE_P = 121;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Signs And Symptoms Observation Status Code' of 'Signs And Symptoms Observation'.
@@ -1358,7 +1687,15 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int SIGNS_AND_SYMPTOMS_OBSERVATION__SIGNS_AND_SYMPTOMS_OBSERVATION_STATUS_CODE = 103;
+	public static final int SIGNS_AND_SYMPTOMS_OBSERVATION__SIGNS_AND_SYMPTOMS_OBSERVATION_STATUS_CODE = 123;
+
+		/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Signs And Symptoms Observation Status Code P' of 'Signs And Symptoms Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int SIGNS_AND_SYMPTOMS_OBSERVATION__SIGNS_AND_SYMPTOMS_OBSERVATION_STATUS_CODE_P = 124;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Signs And Symptoms Observation Value' of 'Signs And Symptoms Observation'.
@@ -1366,7 +1703,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int SIGNS_AND_SYMPTOMS_OBSERVATION__SIGNS_AND_SYMPTOMS_OBSERVATION_VALUE = 105;
+	public static final int SIGNS_AND_SYMPTOMS_OBSERVATION__SIGNS_AND_SYMPTOMS_OBSERVATION_VALUE = 126;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Signs And Symptoms Observation Effective Time' of 'Signs And Symptoms Observation'.
@@ -1374,7 +1711,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int SIGNS_AND_SYMPTOMS_OBSERVATION__SIGNS_AND_SYMPTOMS_OBSERVATION_EFFECTIVE_TIME = 104;
+	public static final int SIGNS_AND_SYMPTOMS_OBSERVATION__SIGNS_AND_SYMPTOMS_OBSERVATION_EFFECTIVE_TIME = 125;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Susceptibility Result Template Id' of 'Susceptibility Result'.
@@ -1382,7 +1719,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int SUSCEPTIBILITY_RESULT__SUSCEPTIBILITY_RESULT_TEMPLATE_ID = 188;
+	public static final int SUSCEPTIBILITY_RESULT__SUSCEPTIBILITY_RESULT_TEMPLATE_ID = 223;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Susceptibility Result Class Code' of 'Susceptibility Result'.
@@ -1390,7 +1727,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int SUSCEPTIBILITY_RESULT__SUSCEPTIBILITY_RESULT_CLASS_CODE = 189;
+	public static final int SUSCEPTIBILITY_RESULT__SUSCEPTIBILITY_RESULT_CLASS_CODE = 224;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Susceptibility Result Mood Code' of 'Susceptibility Result'.
@@ -1398,7 +1735,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int SUSCEPTIBILITY_RESULT__SUSCEPTIBILITY_RESULT_MOOD_CODE = 190;
+	public static final int SUSCEPTIBILITY_RESULT__SUSCEPTIBILITY_RESULT_MOOD_CODE = 225;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Susceptibility Result Code' of 'Susceptibility Result'.
@@ -1406,7 +1743,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int SUSCEPTIBILITY_RESULT__SUSCEPTIBILITY_RESULT_CODE = 191;
+	public static final int SUSCEPTIBILITY_RESULT__SUSCEPTIBILITY_RESULT_CODE = 227;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Susceptibility Result Code P' of 'Susceptibility Result'.
@@ -1414,7 +1751,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int SUSCEPTIBILITY_RESULT__SUSCEPTIBILITY_RESULT_CODE_P = 192;
+	public static final int SUSCEPTIBILITY_RESULT__SUSCEPTIBILITY_RESULT_CODE_P = 226;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Susceptibility Result Status Code' of 'Susceptibility Result'.
@@ -1422,7 +1759,15 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int SUSCEPTIBILITY_RESULT__SUSCEPTIBILITY_RESULT_STATUS_CODE = 193;
+	public static final int SUSCEPTIBILITY_RESULT__SUSCEPTIBILITY_RESULT_STATUS_CODE = 228;
+
+		/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Susceptibility Result Status Code P' of 'Susceptibility Result'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int SUSCEPTIBILITY_RESULT__SUSCEPTIBILITY_RESULT_STATUS_CODE_P = 229;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Treatment Given Substance Administration Template Id' of 'Treatment Given Substance Administration'.
@@ -1430,7 +1775,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION__TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION_TEMPLATE_ID = 137;
+	public static final int TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION__TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION_TEMPLATE_ID = 174;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Treatment Given Substance Administration Class Code' of 'Treatment Given Substance Administration'.
@@ -1438,7 +1783,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION__TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION_CLASS_CODE = 138;
+	public static final int TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION__TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION_CLASS_CODE = 175;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Treatment Given Substance Administration Effective Time' of 'Treatment Given Substance Administration'.
@@ -1446,7 +1791,15 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION__TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION_EFFECTIVE_TIME = 142;
+	public static final int TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION__TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION_EFFECTIVE_TIME = 179;
+
+		/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Treatment Given Substance Administration Route Code P' of 'Treatment Given Substance Administration'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION__TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION_ROUTE_CODE_P = 180;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Treatment Given Substance Administration Mood Code' of 'Treatment Given Substance Administration'.
@@ -1454,7 +1807,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION__TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION_MOOD_CODE = 139;
+	public static final int TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION__TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION_MOOD_CODE = 176;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Treatment Given Substance Administration Negation Ind' of 'Treatment Given Substance Administration'.
@@ -1462,7 +1815,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION__TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION_NEGATION_IND = 140;
+	public static final int TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION__TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION_NEGATION_IND = 177;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Treatment Given Substance Administration Status Code' of 'Treatment Given Substance Administration'.
@@ -1470,7 +1823,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION__TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION_STATUS_CODE = 141;
+	public static final int TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION__TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION_STATUS_CODE = 178;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Treatment Given Substance Administration Route Code' of 'Treatment Given Substance Administration'.
@@ -1478,7 +1831,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION__TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION_ROUTE_CODE = 143;
+	public static final int TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION__TREATMENT_GIVEN_SUBSTANCE_ADMINISTRATION_ROUTE_CODE = 181;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Treatment Not Given Substance Administration Treatment Not Given Negation Ind' of 'Treatment Not Given Substance Administration'.
@@ -1486,7 +1839,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION__TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION_TREATMENT_NOT_GIVEN_NEGATION_IND = 144;
+	public static final int TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION__TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION_TREATMENT_NOT_GIVEN_NEGATION_IND = 182;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Treatment Not Given Substance Administration Template Id' of 'Treatment Not Given Substance Administration'.
@@ -1494,7 +1847,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION__TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION_TEMPLATE_ID = 145;
+	public static final int TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION__TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION_TEMPLATE_ID = 183;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Treatment Not Given Substance Administration Class Code' of 'Treatment Not Given Substance Administration'.
@@ -1502,7 +1855,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION__TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION_CLASS_CODE = 146;
+	public static final int TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION__TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION_CLASS_CODE = 184;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Treatment Not Given Substance Administration Mood Code' of 'Treatment Not Given Substance Administration'.
@@ -1510,7 +1863,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION__TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION_MOOD_CODE = 147;
+	public static final int TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION__TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION_MOOD_CODE = 185;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Treatment Not Given Substance Administration Negation Ind' of 'Treatment Not Given Substance Administration'.
@@ -1518,7 +1871,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION__TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION_NEGATION_IND = 148;
+	public static final int TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION__TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION_NEGATION_IND = 186;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Treatment Not Given Substance Administration Status Code' of 'Treatment Not Given Substance Administration'.
@@ -1526,7 +1879,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION__TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION_STATUS_CODE = 149;
+	public static final int TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION__TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION_STATUS_CODE = 187;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Treatment Not Given Substance Administration Status Code P' of 'Treatment Not Given Substance Administration'.
@@ -1534,7 +1887,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION__TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION_STATUS_CODE_P = 150;
+	public static final int TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION__TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION_STATUS_CODE_P = 188;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Case Observation Class Code' of 'Case Observation'.
@@ -1542,7 +1895,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CASE_OBSERVATION__CASE_OBSERVATION_CLASS_CODE = 88;
+	public static final int CASE_OBSERVATION__CASE_OBSERVATION_CLASS_CODE = 105;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Case Observation Effective Time' of 'Case Observation'.
@@ -1550,7 +1903,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CASE_OBSERVATION__CASE_OBSERVATION_EFFECTIVE_TIME = 93;
+	public static final int CASE_OBSERVATION__CASE_OBSERVATION_EFFECTIVE_TIME = 111;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Case Observation Value' of 'Case Observation'.
@@ -1558,7 +1911,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CASE_OBSERVATION__CASE_OBSERVATION_VALUE = 94;
+	public static final int CASE_OBSERVATION__CASE_OBSERVATION_VALUE = 112;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Case Observation Problem Status Observation' of 'Case Observation'.
@@ -1566,7 +1919,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CASE_OBSERVATION__CASE_OBSERVATION_PROBLEM_STATUS_OBSERVATION = 95;
+	public static final int CASE_OBSERVATION__CASE_OBSERVATION_PROBLEM_STATUS_OBSERVATION = 113;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Case Observation Signs And Symptoms Observation' of 'Case Observation'.
@@ -1574,7 +1927,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CASE_OBSERVATION__CASE_OBSERVATION_SIGNS_AND_SYMPTOMS_OBSERVATION = 96;
+	public static final int CASE_OBSERVATION__CASE_OBSERVATION_SIGNS_AND_SYMPTOMS_OBSERVATION = 114;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Case Observation Mood Code' of 'Case Observation'.
@@ -1582,7 +1935,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CASE_OBSERVATION__CASE_OBSERVATION_MOOD_CODE = 89;
+	public static final int CASE_OBSERVATION__CASE_OBSERVATION_MOOD_CODE = 106;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Case Observation Id' of 'Case Observation'.
@@ -1590,7 +1943,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CASE_OBSERVATION__CASE_OBSERVATION_ID = 90;
+	public static final int CASE_OBSERVATION__CASE_OBSERVATION_ID = 107;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Case Observation Code' of 'Case Observation'.
@@ -1598,7 +1951,15 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CASE_OBSERVATION__CASE_OBSERVATION_CODE = 91;
+	public static final int CASE_OBSERVATION__CASE_OBSERVATION_CODE = 108;
+
+		/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Observation Code' of 'Case Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int CASE_OBSERVATION__PROBLEM_OBSERVATION_CODE = 109;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Case Observation Status Code' of 'Case Observation'.
@@ -1606,7 +1967,7 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CASE_OBSERVATION__CASE_OBSERVATION_STATUS_CODE = 92;
+	public static final int CASE_OBSERVATION__CASE_OBSERVATION_STATUS_CODE = 110;
 
 		/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Observation Template Id' of 'Case Observation'.
@@ -1614,7 +1975,15 @@ public class PhcrValidator extends EObjectValidator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CASE_OBSERVATION__PROBLEM_OBSERVATION_TEMPLATE_ID = 97;
+	public static final int CASE_OBSERVATION__PROBLEM_OBSERVATION_TEMPLATE_ID = 115;
+
+		/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Problem Observation Status Code' of 'Case Observation'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int CASE_OBSERVATION__PROBLEM_OBSERVATION_STATUS_CODE = 116;
 
 		/**
 	 * A constant with a fixed name that can be used as the base value for additional hand written constants.
@@ -1622,7 +1991,7 @@ public class PhcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
 	 * @generated
 	 */
-  private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 193;
+  private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 239;
 
   /**
 	 * A constant with a fixed name that can be used as the base value for additional hand written constants in a derived class.
@@ -1709,6 +2078,8 @@ public class PhcrValidator extends EObjectValidator
 				return validatePatientConditionAliveObservation((PatientConditionAliveObservation)value, diagnostics, context);
 			case PhcrPackage.PATIENT_CONDITION_DECEASED_OBSERVATION:
 				return validatePatientConditionDeceasedObservation((PatientConditionDeceasedObservation)value, diagnostics, context);
+			case PhcrPackage.PHCR_RELEVANT_MEDICAL_CONDITION_HISTORY_OBSERVATION:
+				return validatePhcrRelevantMedicalConditionHistoryObservation((PhcrRelevantMedicalConditionHistoryObservation)value, diagnostics, context);
 			case PhcrPackage.PHCR_TREATMENT_INFORMATION_SECTION:
 				return validatePhcrTreatmentInformationSection((PhcrTreatmentInformationSection)value, diagnostics, context);
 			case PhcrPackage.THERAPEUTIC_REGIMEN_ACT:
@@ -1727,10 +2098,10 @@ public class PhcrValidator extends EObjectValidator
 				return validateResultObservation((ResultObservation)value, diagnostics, context);
 			case PhcrPackage.SPECIMEN_COLLECTION_PROCEDURE:
 				return validateSpecimenCollectionProcedure((SpecimenCollectionProcedure)value, diagnostics, context);
-			case PhcrPackage.IMAGING_OBSERVATION:
-				return validateImagingObservation((ImagingObservation)value, diagnostics, context);
 			case PhcrPackage.SUSCEPTIBILITY_RESULT:
 				return validateSusceptibilityResult((SusceptibilityResult)value, diagnostics, context);
+			case PhcrPackage.IMAGING_OBSERVATION:
+				return validateImagingObservation((ImagingObservation)value, diagnostics, context);
 			default:
 				return true;
 		}
@@ -1769,6 +2140,7 @@ public class PhcrValidator extends EObjectValidator
 		if (result || diagnostics != null) result &= validatePublicHealthCaseReport_validatePublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntityAddr(publicHealthCaseReport, diagnostics, context);
 		if (result || diagnostics != null) result &= validatePublicHealthCaseReport_validatePublicHealthCaseReportPHCRLegalAuthenticatorAssignedEntityAssignedPersonName(publicHealthCaseReport, diagnostics, context);
 		if (result || diagnostics != null) result &= validatePublicHealthCaseReport_validatePublicHealthCaseReportTemplateId(publicHealthCaseReport, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePublicHealthCaseReport_validatePublicHealthCaseReportCodeP(publicHealthCaseReport, diagnostics, context);
 		if (result || diagnostics != null) result &= validatePublicHealthCaseReport_validatePublicHealthCaseReportCode(publicHealthCaseReport, diagnostics, context);
 		if (result || diagnostics != null) result &= validatePublicHealthCaseReport_validatePublicHealthCaseReportPhcrSocialHistorySection(publicHealthCaseReport, diagnostics, context);
 		if (result || diagnostics != null) result &= validatePublicHealthCaseReport_validatePublicHealthCaseReportPhcrClinicalInformationSection(publicHealthCaseReport, diagnostics, context);
@@ -1950,6 +2322,16 @@ public class PhcrValidator extends EObjectValidator
 	}
 
 		/**
+	 * Validates the validatePublicHealthCaseReportCodeP constraint of '<em>Public Health Case Report</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePublicHealthCaseReport_validatePublicHealthCaseReportCodeP(PublicHealthCaseReport publicHealthCaseReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return publicHealthCaseReport.validatePublicHealthCaseReportCodeP(diagnostics, context);
+	}
+
+		/**
 	 * Validates the validatePublicHealthCaseReportCode constraint of '<em>Public Health Case Report</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2042,7 +2424,7 @@ public class PhcrValidator extends EObjectValidator
 		if (result || diagnostics != null) result &= ccdValidator.validateSocialHistorySection_validateSocialHistorySectionPatientEthnicity(phcrSocialHistorySection, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateSocialHistorySection_validateSocialHistorySectionPatientEthnicityCodeSystem(phcrSocialHistorySection, diagnostics, context);
 		if (result || diagnostics != null) result &= validatePhcrSocialHistorySection_validateSocialHistorySectionTemplateId(phcrSocialHistorySection, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateSocialHistorySection_validateSocialHistorySectionCode(phcrSocialHistorySection, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePhcrSocialHistorySection_validateSocialHistorySectionCode(phcrSocialHistorySection, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateSocialHistorySection_validateSocialHistorySectionTitle(phcrSocialHistorySection, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateSocialHistorySection_validateSocialHistorySectionText(phcrSocialHistorySection, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateSocialHistorySection_validateSocialHistorySectionSocialHistoryObservation(phcrSocialHistorySection, diagnostics, context);
@@ -2148,6 +2530,16 @@ public class PhcrValidator extends EObjectValidator
 	}
 
 		/**
+	 * Validates the validateSocialHistorySectionCode constraint of '<em>Social History Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePhcrSocialHistorySection_validateSocialHistorySectionCode(PhcrSocialHistorySection phcrSocialHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return phcrSocialHistorySection.validateSocialHistorySectionCode(diagnostics, context);
+	}
+
+		/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -2164,9 +2556,11 @@ public class PhcrValidator extends EObjectValidator
 		if (result || diagnostics != null) result &= validateGeotemporalHistoryObservation_validateGeotemporalHistoryObservationTemplateId(geotemporalHistoryObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validateGeotemporalHistoryObservation_validateGeotemporalHistoryObservationClassCode(geotemporalHistoryObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validateGeotemporalHistoryObservation_validateGeotemporalHistoryObservationMoodCode(geotemporalHistoryObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateGeotemporalHistoryObservation_validateGeotemporalHistoryObservationCodeP(geotemporalHistoryObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validateGeotemporalHistoryObservation_validateGeotemporalHistoryObservationCode(geotemporalHistoryObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validateGeotemporalHistoryObservation_validateGeotemporalHistoryObservationText(geotemporalHistoryObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validateGeotemporalHistoryObservation_validateGeotemporalHistoryObservationStatusCode(geotemporalHistoryObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateGeotemporalHistoryObservation_validateGeotemporalHistoryObservationStatusCodeP(geotemporalHistoryObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validateGeotemporalHistoryObservation_validateGeotemporalHistoryObservationEffectiveTime(geotemporalHistoryObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validateGeotemporalHistoryObservation_validateGeotemporalHistoryObservationValue(geotemporalHistoryObservation, diagnostics, context);
 		return result;
@@ -2243,6 +2637,16 @@ public class PhcrValidator extends EObjectValidator
 	}
 
 		/**
+	 * Validates the validateGeotemporalHistoryObservationCodeP constraint of '<em>Geotemporal History Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateGeotemporalHistoryObservation_validateGeotemporalHistoryObservationCodeP(GeotemporalHistoryObservation geotemporalHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return geotemporalHistoryObservation.validateGeotemporalHistoryObservationCodeP(diagnostics, context);
+	}
+
+		/**
 	 * Validates the validateGeotemporalHistoryObservationStatusCode constraint of '<em>Geotemporal History Observation</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2250,6 +2654,16 @@ public class PhcrValidator extends EObjectValidator
 	 */
 	public boolean validateGeotemporalHistoryObservation_validateGeotemporalHistoryObservationStatusCode(GeotemporalHistoryObservation geotemporalHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return geotemporalHistoryObservation.validateGeotemporalHistoryObservationStatusCode(diagnostics, context);
+	}
+
+		/**
+	 * Validates the validateGeotemporalHistoryObservationStatusCodeP constraint of '<em>Geotemporal History Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateGeotemporalHistoryObservation_validateGeotemporalHistoryObservationStatusCodeP(GeotemporalHistoryObservation geotemporalHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return geotemporalHistoryObservation.validateGeotemporalHistoryObservationStatusCodeP(diagnostics, context);
 	}
 
 		/**
@@ -2269,8 +2683,10 @@ public class PhcrValidator extends EObjectValidator
 		if (result || diagnostics != null) result &= validateMostRecentTimeArrivedInUSAObservation_validateMostRecentTimeArrivedInUSAObservationTemplateId(mostRecentTimeArrivedInUSAObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validateMostRecentTimeArrivedInUSAObservation_validateMostRecentTimeArrivedInUSAObservationClassCode(mostRecentTimeArrivedInUSAObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validateMostRecentTimeArrivedInUSAObservation_validateMostRecentTimeArrivedInUSAObservationMoodCode(mostRecentTimeArrivedInUSAObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMostRecentTimeArrivedInUSAObservation_validateMostRecentTimeArrivedInUSAObservationCodeP(mostRecentTimeArrivedInUSAObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validateMostRecentTimeArrivedInUSAObservation_validateMostRecentTimeArrivedInUSAObservationCode(mostRecentTimeArrivedInUSAObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validateMostRecentTimeArrivedInUSAObservation_validateMostRecentTimeArrivedInUSAObservationStatusCode(mostRecentTimeArrivedInUSAObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMostRecentTimeArrivedInUSAObservation_validateMostRecentTimeArrivedInUSAObservationStatusCodeP(mostRecentTimeArrivedInUSAObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validateMostRecentTimeArrivedInUSAObservation_validateMostRecentTimeArrivedInUSAObservationValue(mostRecentTimeArrivedInUSAObservation, diagnostics, context);
 		return result;
 	}
@@ -2306,6 +2722,16 @@ public class PhcrValidator extends EObjectValidator
 	}
 
 		/**
+	 * Validates the validateMostRecentTimeArrivedInUSAObservationCodeP constraint of '<em>Most Recent Time Arrived In USA Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMostRecentTimeArrivedInUSAObservation_validateMostRecentTimeArrivedInUSAObservationCodeP(MostRecentTimeArrivedInUSAObservation mostRecentTimeArrivedInUSAObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return mostRecentTimeArrivedInUSAObservation.validateMostRecentTimeArrivedInUSAObservationCodeP(diagnostics, context);
+	}
+
+		/**
 	 * Validates the validateMostRecentTimeArrivedInUSAObservationStatusCode constraint of '<em>Most Recent Time Arrived In USA Observation</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2313,6 +2739,16 @@ public class PhcrValidator extends EObjectValidator
 	 */
 	public boolean validateMostRecentTimeArrivedInUSAObservation_validateMostRecentTimeArrivedInUSAObservationStatusCode(MostRecentTimeArrivedInUSAObservation mostRecentTimeArrivedInUSAObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return mostRecentTimeArrivedInUSAObservation.validateMostRecentTimeArrivedInUSAObservationStatusCode(diagnostics, context);
+	}
+
+		/**
+	 * Validates the validateMostRecentTimeArrivedInUSAObservationStatusCodeP constraint of '<em>Most Recent Time Arrived In USA Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMostRecentTimeArrivedInUSAObservation_validateMostRecentTimeArrivedInUSAObservationStatusCodeP(MostRecentTimeArrivedInUSAObservation mostRecentTimeArrivedInUSAObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return mostRecentTimeArrivedInUSAObservation.validateMostRecentTimeArrivedInUSAObservationStatusCodeP(diagnostics, context);
 	}
 
 		/**
@@ -2352,8 +2788,10 @@ public class PhcrValidator extends EObjectValidator
 		if (result || diagnostics != null) result &= validateRaceObservation_validateRaceObservationTemplateId(raceObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validateRaceObservation_validateRaceObservationClassCode(raceObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validateRaceObservation_validateRaceObservationMoodCode(raceObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateRaceObservation_validateRaceObservationCodeP(raceObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validateRaceObservation_validateRaceObservationCode(raceObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validateRaceObservation_validateRaceObservationStatusCode(raceObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateRaceObservation_validateRaceObservationStatusCodeP(raceObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validateRaceObservation_validateRaceObservationValue(raceObservation, diagnostics, context);
 		return result;
 	}
@@ -2399,6 +2837,16 @@ public class PhcrValidator extends EObjectValidator
 	}
 
 		/**
+	 * Validates the validateRaceObservationCodeP constraint of '<em>Race Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateRaceObservation_validateRaceObservationCodeP(RaceObservation raceObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return raceObservation.validateRaceObservationCodeP(diagnostics, context);
+	}
+
+		/**
 	 * Validates the validateRaceObservationStatusCode constraint of '<em>Race Observation</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2406,6 +2854,16 @@ public class PhcrValidator extends EObjectValidator
 	 */
 	public boolean validateRaceObservation_validateRaceObservationStatusCode(RaceObservation raceObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return raceObservation.validateRaceObservationStatusCode(diagnostics, context);
+	}
+
+		/**
+	 * Validates the validateRaceObservationStatusCodeP constraint of '<em>Race Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateRaceObservation_validateRaceObservationStatusCodeP(RaceObservation raceObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return raceObservation.validateRaceObservationStatusCodeP(diagnostics, context);
 	}
 
 		/**
@@ -2436,10 +2894,13 @@ public class PhcrValidator extends EObjectValidator
 		if (result || diagnostics != null) result &= validateOccupationObservation_validateOccupationObservationClassCode(occupationObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validateOccupationObservation_validateOccupationObservationMoodCode(occupationObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validateOccupationObservation_validateOccupationObservationNegationInd(occupationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateOccupationObservation_validateOccupationObservationCodeP(occupationObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validateOccupationObservation_validateOccupationObservationCode(occupationObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validateOccupationObservation_validateOccupationObservationText(occupationObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validateOccupationObservation_validateOccupationObservationStatusCode(occupationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateOccupationObservation_validateOccupationObservationStatusCodeP(occupationObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validateOccupationObservation_validateOccupationObservationEffectiveTime(occupationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateOccupationObservation_validateOccupationObservationValue(occupationObservation, diagnostics, context);
 		return result;
 	}
 
@@ -2504,6 +2965,16 @@ public class PhcrValidator extends EObjectValidator
 	}
 
 		/**
+	 * Validates the validateOccupationObservationCodeP constraint of '<em>Occupation Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOccupationObservation_validateOccupationObservationCodeP(OccupationObservation occupationObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return occupationObservation.validateOccupationObservationCodeP(diagnostics, context);
+	}
+
+		/**
 	 * Validates the validateOccupationObservationStatusCode constraint of '<em>Occupation Observation</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2514,6 +2985,16 @@ public class PhcrValidator extends EObjectValidator
 	}
 
 		/**
+	 * Validates the validateOccupationObservationStatusCodeP constraint of '<em>Occupation Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOccupationObservation_validateOccupationObservationStatusCodeP(OccupationObservation occupationObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return occupationObservation.validateOccupationObservationStatusCodeP(diagnostics, context);
+	}
+
+		/**
 	 * Validates the validateOccupationObservationEffectiveTime constraint of '<em>Occupation Observation</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2521,6 +3002,16 @@ public class PhcrValidator extends EObjectValidator
 	 */
 	public boolean validateOccupationObservation_validateOccupationObservationEffectiveTime(OccupationObservation occupationObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return occupationObservation.validateOccupationObservationEffectiveTime(diagnostics, context);
+	}
+
+		/**
+	 * Validates the validateOccupationObservationValue constraint of '<em>Occupation Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateOccupationObservation_validateOccupationObservationValue(OccupationObservation occupationObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return occupationObservation.validateOccupationObservationValue(diagnostics, context);
 	}
 
 		/**
@@ -2540,8 +3031,10 @@ public class PhcrValidator extends EObjectValidator
 		if (result || diagnostics != null) result &= validatePregnancyObservation_validatePregnancyObservationTemplateId(pregnancyObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validatePregnancyObservation_validatePregnancyObservationClassCode(pregnancyObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validatePregnancyObservation_validatePregnancyObservationMoodCode(pregnancyObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePregnancyObservation_validatePregnancyObservationCodeP(pregnancyObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validatePregnancyObservation_validatePregnancyObservationCode(pregnancyObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validatePregnancyObservation_validatePregnancyObservationStatusCode(pregnancyObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePregnancyObservation_validatePregnancyObservationStatusCodeP(pregnancyObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validatePregnancyObservation_validatePregnancyObservationEffectiveTime(pregnancyObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validatePregnancyObservation_validatePregnancyObservationValue(pregnancyObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validatePregnancyObservation_validatePregnancyObservationValueP(pregnancyObservation, diagnostics, context);
@@ -2600,6 +3093,16 @@ public class PhcrValidator extends EObjectValidator
 	}
 
 		/**
+	 * Validates the validatePregnancyObservationCodeP constraint of '<em>Pregnancy Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePregnancyObservation_validatePregnancyObservationCodeP(PregnancyObservation pregnancyObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return pregnancyObservation.validatePregnancyObservationCodeP(diagnostics, context);
+	}
+
+		/**
 	 * Validates the validatePregnancyObservationStatusCode constraint of '<em>Pregnancy Observation</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2607,6 +3110,16 @@ public class PhcrValidator extends EObjectValidator
 	 */
 	public boolean validatePregnancyObservation_validatePregnancyObservationStatusCode(PregnancyObservation pregnancyObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return pregnancyObservation.validatePregnancyObservationStatusCode(diagnostics, context);
+	}
+
+		/**
+	 * Validates the validatePregnancyObservationStatusCodeP constraint of '<em>Pregnancy Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePregnancyObservation_validatePregnancyObservationStatusCodeP(PregnancyObservation pregnancyObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return pregnancyObservation.validatePregnancyObservationStatusCodeP(diagnostics, context);
 	}
 
 		/**
@@ -2656,8 +3169,10 @@ public class PhcrValidator extends EObjectValidator
 		if (result || diagnostics != null) result &= validateEstimatedDateOfDeliveryObservation_validateEstimatedDateOfDeliveryObservationTemplateId(estimatedDateOfDeliveryObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validateEstimatedDateOfDeliveryObservation_validateEstimatedDateOfDeliveryObservationClassCode(estimatedDateOfDeliveryObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validateEstimatedDateOfDeliveryObservation_validateEstimatedDateOfDeliveryObservationMoodCode(estimatedDateOfDeliveryObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEstimatedDateOfDeliveryObservation_validateEstimatedDateOfDeliveryObservationCodeP(estimatedDateOfDeliveryObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validateEstimatedDateOfDeliveryObservation_validateEstimatedDateOfDeliveryObservationCode(estimatedDateOfDeliveryObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validateEstimatedDateOfDeliveryObservation_validateEstimatedDateOfDeliveryObservationStatusCode(estimatedDateOfDeliveryObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEstimatedDateOfDeliveryObservation_validateEstimatedDateOfDeliveryObservationStatusCodeP(estimatedDateOfDeliveryObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validateEstimatedDateOfDeliveryObservation_validateEstimatedDateOfDeliveryObservationValue(estimatedDateOfDeliveryObservation, diagnostics, context);
 		return result;
 	}
@@ -2703,6 +3218,16 @@ public class PhcrValidator extends EObjectValidator
 	}
 
 		/**
+	 * Validates the validateEstimatedDateOfDeliveryObservationCodeP constraint of '<em>Estimated Date Of Delivery Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEstimatedDateOfDeliveryObservation_validateEstimatedDateOfDeliveryObservationCodeP(EstimatedDateOfDeliveryObservation estimatedDateOfDeliveryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return estimatedDateOfDeliveryObservation.validateEstimatedDateOfDeliveryObservationCodeP(diagnostics, context);
+	}
+
+		/**
 	 * Validates the validateEstimatedDateOfDeliveryObservationStatusCode constraint of '<em>Estimated Date Of Delivery Observation</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2710,6 +3235,16 @@ public class PhcrValidator extends EObjectValidator
 	 */
 	public boolean validateEstimatedDateOfDeliveryObservation_validateEstimatedDateOfDeliveryObservationStatusCode(EstimatedDateOfDeliveryObservation estimatedDateOfDeliveryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return estimatedDateOfDeliveryObservation.validateEstimatedDateOfDeliveryObservationStatusCode(diagnostics, context);
+	}
+
+		/**
+	 * Validates the validateEstimatedDateOfDeliveryObservationStatusCodeP constraint of '<em>Estimated Date Of Delivery Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateEstimatedDateOfDeliveryObservation_validateEstimatedDateOfDeliveryObservationStatusCodeP(EstimatedDateOfDeliveryObservation estimatedDateOfDeliveryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return estimatedDateOfDeliveryObservation.validateEstimatedDateOfDeliveryObservationStatusCodeP(diagnostics, context);
 	}
 
 		/**
@@ -2741,11 +3276,13 @@ public class PhcrValidator extends EObjectValidator
 		if (result || diagnostics != null) result &= validatePhcrClinicalInformationSection_validatePhcrClinicalInformationSectionPatientConditionConstraint(phcrClinicalInformationSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validatePhcrClinicalInformationSection_validatePhcrClinicalInformationSectionTemplateId(phcrClinicalInformationSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validatePhcrClinicalInformationSection_validatePhcrClinicalInformationSectionCode(phcrClinicalInformationSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePhcrClinicalInformationSection_validatePhcrClinicalInformationSectionCodeP(phcrClinicalInformationSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validatePhcrClinicalInformationSection_validatePhcrClinicalInformationSectionTitle(phcrClinicalInformationSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validatePhcrClinicalInformationSection_validatePhcrClinicalInformationSectionText(phcrClinicalInformationSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validatePhcrClinicalInformationSection_validatePhcrClinicalInformationSectionCaseObservation(phcrClinicalInformationSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validatePhcrClinicalInformationSection_validatePhcrClinicalInformationSectionPatientConditionAliveObservation(phcrClinicalInformationSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validatePhcrClinicalInformationSection_validatePhcrClinicalInformationSectionPatientConditionDeceasedObservation(phcrClinicalInformationSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePhcrClinicalInformationSection_validatePhcrClinicalInformationSectionPhcrRelevantMedicalConditionHistoryObservation(phcrClinicalInformationSection, diagnostics, context);
 		return result;
 	}
 
@@ -2777,6 +3314,16 @@ public class PhcrValidator extends EObjectValidator
 	 */
 	public boolean validatePhcrClinicalInformationSection_validatePhcrClinicalInformationSectionCode(PhcrClinicalInformationSection phcrClinicalInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return phcrClinicalInformationSection.validatePhcrClinicalInformationSectionCode(diagnostics, context);
+	}
+
+		/**
+	 * Validates the validatePhcrClinicalInformationSectionCodeP constraint of '<em>Clinical Information Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePhcrClinicalInformationSection_validatePhcrClinicalInformationSectionCodeP(PhcrClinicalInformationSection phcrClinicalInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return phcrClinicalInformationSection.validatePhcrClinicalInformationSectionCodeP(diagnostics, context);
 	}
 
 		/**
@@ -2830,6 +3377,16 @@ public class PhcrValidator extends EObjectValidator
 	}
 
 		/**
+	 * Validates the validatePhcrClinicalInformationSectionPhcrRelevantMedicalConditionHistoryObservation constraint of '<em>Clinical Information Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePhcrClinicalInformationSection_validatePhcrClinicalInformationSectionPhcrRelevantMedicalConditionHistoryObservation(PhcrClinicalInformationSection phcrClinicalInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return phcrClinicalInformationSection.validatePhcrClinicalInformationSectionPhcrRelevantMedicalConditionHistoryObservation(diagnostics, context);
+	}
+
+		/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -2847,6 +3404,7 @@ public class PhcrValidator extends EObjectValidator
 		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(phcrTreatmentInformationSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validatePhcrTreatmentInformationSection_validatePhcrTreatmentInformationSectionTemplateId(phcrTreatmentInformationSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validatePhcrTreatmentInformationSection_validatePhcrTreatmentInformationSectionCode(phcrTreatmentInformationSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePhcrTreatmentInformationSection_validatePhcrTreatmentInformationSectionCodeP(phcrTreatmentInformationSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validatePhcrTreatmentInformationSection_validatePhcrTreatmentInformationSectionTitle(phcrTreatmentInformationSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validatePhcrTreatmentInformationSection_validatePhcrTreatmentInformationSectionText(phcrTreatmentInformationSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validatePhcrTreatmentInformationSection_validatePhcrTreatmentInformationSectionTherapeuticRegimenAct(phcrTreatmentInformationSection, diagnostics, context);
@@ -2871,6 +3429,16 @@ public class PhcrValidator extends EObjectValidator
 	 */
 	public boolean validatePhcrTreatmentInformationSection_validatePhcrTreatmentInformationSectionCode(PhcrTreatmentInformationSection phcrTreatmentInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return phcrTreatmentInformationSection.validatePhcrTreatmentInformationSectionCode(diagnostics, context);
+	}
+
+		/**
+	 * Validates the validatePhcrTreatmentInformationSectionCodeP constraint of '<em>Treatment Information Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePhcrTreatmentInformationSection_validatePhcrTreatmentInformationSectionCodeP(PhcrTreatmentInformationSection phcrTreatmentInformationSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return phcrTreatmentInformationSection.validatePhcrTreatmentInformationSectionCodeP(diagnostics, context);
 	}
 
 		/**
@@ -2921,6 +3489,7 @@ public class PhcrValidator extends EObjectValidator
 		if (result || diagnostics != null) result &= validateTherapeuticRegimenAct_validateTherapeuticRegimenActClassCode(therapeuticRegimenAct, diagnostics, context);
 		if (result || diagnostics != null) result &= validateTherapeuticRegimenAct_validateTherapeuticRegimenActMoodCode(therapeuticRegimenAct, diagnostics, context);
 		if (result || diagnostics != null) result &= validateTherapeuticRegimenAct_validateTherapeuticRegimenActNegationInd(therapeuticRegimenAct, diagnostics, context);
+		if (result || diagnostics != null) result &= validateTherapeuticRegimenAct_validateTherapeuticRegimenActCodeP(therapeuticRegimenAct, diagnostics, context);
 		if (result || diagnostics != null) result &= validateTherapeuticRegimenAct_validateTherapeuticRegimenActCode(therapeuticRegimenAct, diagnostics, context);
 		if (result || diagnostics != null) result &= validateTherapeuticRegimenAct_validateTherapeuticRegimenActStatusCode(therapeuticRegimenAct, diagnostics, context);
 		if (result || diagnostics != null) result &= validateTherapeuticRegimenAct_validateTherapeuticRegimenActStatusCodeP(therapeuticRegimenAct, diagnostics, context);
@@ -2977,6 +3546,16 @@ public class PhcrValidator extends EObjectValidator
 	 */
 	public boolean validateTherapeuticRegimenAct_validateTherapeuticRegimenActNegationInd(TherapeuticRegimenAct therapeuticRegimenAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return therapeuticRegimenAct.validateTherapeuticRegimenActNegationInd(diagnostics, context);
+	}
+
+		/**
+	 * Validates the validateTherapeuticRegimenActCodeP constraint of '<em>Therapeutic Regimen Act</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateTherapeuticRegimenAct_validateTherapeuticRegimenActCodeP(TherapeuticRegimenAct therapeuticRegimenAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return therapeuticRegimenAct.validateTherapeuticRegimenActCodeP(diagnostics, context);
 	}
 
 		/**
@@ -3103,7 +3682,7 @@ public class PhcrValidator extends EObjectValidator
 		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(phcrRelevantDxTestsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(phcrRelevantDxTestsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= validatePhcrRelevantDxTestsSection_validateResultsSectionTemplateId(phcrRelevantDxTestsSection, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateResultsSection_validateResultsSectionCode(phcrRelevantDxTestsSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePhcrRelevantDxTestsSection_validateResultsSectionCode(phcrRelevantDxTestsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateResultsSection_validateResultsSectionTitle(phcrRelevantDxTestsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateResultsSection_validateResultsSectionText(phcrRelevantDxTestsSection, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateResultsSection_validateResultsSectionResultOrganizer(phcrRelevantDxTestsSection, diagnostics, context);
@@ -3184,6 +3763,16 @@ public class PhcrValidator extends EObjectValidator
 	 */
 	public boolean validatePhcrRelevantDxTestsSection_validateResultsSectionTemplateId(PhcrRelevantDxTestsSection phcrRelevantDxTestsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return phcrRelevantDxTestsSection.validateResultsSectionTemplateId(diagnostics, context);
+	}
+
+		/**
+	 * Validates the validateResultsSectionCode constraint of '<em>Relevant Dx Tests Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePhcrRelevantDxTestsSection_validateResultsSectionCode(PhcrRelevantDxTestsSection phcrRelevantDxTestsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return phcrRelevantDxTestsSection.validateResultsSectionCode(diagnostics, context);
 	}
 
 		/**
@@ -3350,6 +3939,8 @@ public class PhcrValidator extends EObjectValidator
 		if (result || diagnostics != null) result &= ccdValidator.validateResultObservation_validateResultObservationValue(resultObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validateResultObservation_validatePHCRResultObservationClassCode(resultObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validateResultObservation_validatePHCRResultObservationStatusCode(resultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateResultObservation_validatePHCRResultObservationSpecimenCollectionProcedure(resultObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateResultObservation_validatePHCRResultObservationSusceptibilityResult(resultObservation, diagnostics, context);
 		return result;
 	}
 
@@ -3371,6 +3962,26 @@ public class PhcrValidator extends EObjectValidator
 	 */
 	public boolean validateResultObservation_validatePHCRResultObservationStatusCode(ResultObservation resultObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return resultObservation.validatePHCRResultObservationStatusCode(diagnostics, context);
+	}
+
+		/**
+	 * Validates the validatePHCRResultObservationSpecimenCollectionProcedure constraint of '<em>Result Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateResultObservation_validatePHCRResultObservationSpecimenCollectionProcedure(ResultObservation resultObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return resultObservation.validatePHCRResultObservationSpecimenCollectionProcedure(diagnostics, context);
+	}
+
+		/**
+	 * Validates the validatePHCRResultObservationSusceptibilityResult constraint of '<em>Result Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateResultObservation_validatePHCRResultObservationSusceptibilityResult(ResultObservation resultObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return resultObservation.validatePHCRResultObservationSusceptibilityResult(diagnostics, context);
 	}
 
 		/**
@@ -3410,7 +4021,9 @@ public class PhcrValidator extends EObjectValidator
 		if (result || diagnostics != null) result &= validateSpecimenCollectionProcedure_validateSpecimenCollectionProcedureTemplateId(specimenCollectionProcedure, diagnostics, context);
 		if (result || diagnostics != null) result &= validateSpecimenCollectionProcedure_validateSpecimenCollectionProcedureClassCode(specimenCollectionProcedure, diagnostics, context);
 		if (result || diagnostics != null) result &= validateSpecimenCollectionProcedure_validateSpecimenCollectionProcedureMoodCode(specimenCollectionProcedure, diagnostics, context);
+		if (result || diagnostics != null) result &= validateSpecimenCollectionProcedure_validateSpecimenCollectionProcedureCode(specimenCollectionProcedure, diagnostics, context);
 		if (result || diagnostics != null) result &= validateSpecimenCollectionProcedure_validateSpecimenCollectionProcedureEffectiveTime(specimenCollectionProcedure, diagnostics, context);
+		if (result || diagnostics != null) result &= validateSpecimenCollectionProcedure_validateSpecimenCollectionProcedureTargetSiteCode(specimenCollectionProcedure, diagnostics, context);
 		return result;
 	}
 
@@ -3445,6 +4058,16 @@ public class PhcrValidator extends EObjectValidator
 	}
 
 		/**
+	 * Validates the validateSpecimenCollectionProcedureCode constraint of '<em>Specimen Collection Procedure</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSpecimenCollectionProcedure_validateSpecimenCollectionProcedureCode(SpecimenCollectionProcedure specimenCollectionProcedure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return specimenCollectionProcedure.validateSpecimenCollectionProcedureCode(diagnostics, context);
+	}
+
+		/**
 	 * Validates the validateSpecimenCollectionProcedureEffectiveTime constraint of '<em>Specimen Collection Procedure</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3452,6 +4075,16 @@ public class PhcrValidator extends EObjectValidator
 	 */
 	public boolean validateSpecimenCollectionProcedure_validateSpecimenCollectionProcedureEffectiveTime(SpecimenCollectionProcedure specimenCollectionProcedure, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return specimenCollectionProcedure.validateSpecimenCollectionProcedureEffectiveTime(diagnostics, context);
+	}
+
+		/**
+	 * Validates the validateSpecimenCollectionProcedureTargetSiteCode constraint of '<em>Specimen Collection Procedure</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSpecimenCollectionProcedure_validateSpecimenCollectionProcedureTargetSiteCode(SpecimenCollectionProcedure specimenCollectionProcedure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return specimenCollectionProcedure.validateSpecimenCollectionProcedureTargetSiteCode(diagnostics, context);
 	}
 
 		/**
@@ -3472,7 +4105,7 @@ public class PhcrValidator extends EObjectValidator
 		if (result || diagnostics != null) result &= ccdValidator.validateProblemObservation_validateProblemObservationContainsPatientAwareness(imagingObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validateImagingObservation_validateProblemObservationTemplateId(imagingObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateProblemObservation_validateProblemObservationMoodCode(imagingObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateProblemObservation_validateProblemObservationStatusCode(imagingObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateImagingObservation_validateProblemObservationStatusCode(imagingObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateProblemObservation_validateProblemObservationEffectiveTime(imagingObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateProblemObservation_validateProblemObservationProblemStatus(imagingObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateProblemObservation_validateProblemObservationProblemHealthStatus(imagingObservation, diagnostics, context);
@@ -3480,6 +4113,7 @@ public class PhcrValidator extends EObjectValidator
 		if (result || diagnostics != null) result &= validateImagingObservation_validateImagingObservationClassCode(imagingObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validateImagingObservation_validateImagingObservationMoodCode(imagingObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validateImagingObservation_validateImagingObservationId(imagingObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateImagingObservation_validateImagingObservationCode(imagingObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validateImagingObservation_validateImagingObservationStatusCode(imagingObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validateImagingObservation_validateImagingObservationEffectiveTime(imagingObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validateImagingObservation_validateImagingObservationValue(imagingObservation, diagnostics, context);
@@ -3515,6 +4149,16 @@ public class PhcrValidator extends EObjectValidator
 	 */
 	public boolean validateImagingObservation_validateImagingObservationId(ImagingObservation imagingObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return imagingObservation.validateImagingObservationId(diagnostics, context);
+	}
+
+		/**
+	 * Validates the validateImagingObservationCode constraint of '<em>Imaging Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateImagingObservation_validateImagingObservationCode(ImagingObservation imagingObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return imagingObservation.validateImagingObservationCode(diagnostics, context);
 	}
 
 		/**
@@ -3568,6 +4212,16 @@ public class PhcrValidator extends EObjectValidator
 	}
 
 		/**
+	 * Validates the validateProblemObservationStatusCode constraint of '<em>Imaging Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateImagingObservation_validateProblemObservationStatusCode(ImagingObservation imagingObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return imagingObservation.validateProblemObservationStatusCode(diagnostics, context);
+	}
+
+		/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -3584,8 +4238,10 @@ public class PhcrValidator extends EObjectValidator
 		if (result || diagnostics != null) result &= validatePatientConditionAliveObservation_validatePatientConditionAliveObservationTemplateId(patientConditionAliveObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validatePatientConditionAliveObservation_validatePatientConditionAliveObservationClassCode(patientConditionAliveObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validatePatientConditionAliveObservation_validatePatientConditionAliveObservationMoodCode(patientConditionAliveObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePatientConditionAliveObservation_validatePatientConditionAliveObservationCodeP(patientConditionAliveObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validatePatientConditionAliveObservation_validatePatientConditionAliveObservationCode(patientConditionAliveObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validatePatientConditionAliveObservation_validatePatientConditionAliveObservationStatusCode(patientConditionAliveObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePatientConditionAliveObservation_validatePatientConditionAliveObservationStatusCodeP(patientConditionAliveObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validatePatientConditionAliveObservation_validatePatientConditionAliveObservationEffectiveTime(patientConditionAliveObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validatePatientConditionAliveObservation_validatePatientConditionAliveObservationValue(patientConditionAliveObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validatePatientConditionAliveObservation_validatePatientConditionAliveObservationValueP(patientConditionAliveObservation, diagnostics, context);
@@ -3633,6 +4289,16 @@ public class PhcrValidator extends EObjectValidator
 	}
 
 		/**
+	 * Validates the validatePatientConditionAliveObservationCodeP constraint of '<em>Patient Condition Alive Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePatientConditionAliveObservation_validatePatientConditionAliveObservationCodeP(PatientConditionAliveObservation patientConditionAliveObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return patientConditionAliveObservation.validatePatientConditionAliveObservationCodeP(diagnostics, context);
+	}
+
+		/**
 	 * Validates the validatePatientConditionAliveObservationStatusCode constraint of '<em>Patient Condition Alive Observation</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3640,6 +4306,16 @@ public class PhcrValidator extends EObjectValidator
 	 */
 	public boolean validatePatientConditionAliveObservation_validatePatientConditionAliveObservationStatusCode(PatientConditionAliveObservation patientConditionAliveObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return patientConditionAliveObservation.validatePatientConditionAliveObservationStatusCode(diagnostics, context);
+	}
+
+		/**
+	 * Validates the validatePatientConditionAliveObservationStatusCodeP constraint of '<em>Patient Condition Alive Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePatientConditionAliveObservation_validatePatientConditionAliveObservationStatusCodeP(PatientConditionAliveObservation patientConditionAliveObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return patientConditionAliveObservation.validatePatientConditionAliveObservationStatusCodeP(diagnostics, context);
 	}
 
 		/**
@@ -3689,8 +4365,10 @@ public class PhcrValidator extends EObjectValidator
 		if (result || diagnostics != null) result &= validatePatientConditionDeceasedObservation_validatePatientConditionDeceasedObservationTemplateId(patientConditionDeceasedObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validatePatientConditionDeceasedObservation_validatePatientConditionDeceasedObservationClassCode(patientConditionDeceasedObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validatePatientConditionDeceasedObservation_validatePatientConditionDeceasedObservationMoodCode(patientConditionDeceasedObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePatientConditionDeceasedObservation_validatePatientConditionDeceasedObservationCodeP(patientConditionDeceasedObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validatePatientConditionDeceasedObservation_validatePatientConditionDeceasedObservationCode(patientConditionDeceasedObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validatePatientConditionDeceasedObservation_validatePatientConditionDeceasedObservationStatusCode(patientConditionDeceasedObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePatientConditionDeceasedObservation_validatePatientConditionDeceasedObservationStatusCodeP(patientConditionDeceasedObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validatePatientConditionDeceasedObservation_validatePatientConditionDeceasedObservationEffectiveTime(patientConditionDeceasedObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validatePatientConditionDeceasedObservation_validatePatientConditionDeceasedObservationValue(patientConditionDeceasedObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validatePatientConditionDeceasedObservation_validatePatientConditionDeceasedObservationValueP(patientConditionDeceasedObservation, diagnostics, context);
@@ -3738,6 +4416,16 @@ public class PhcrValidator extends EObjectValidator
 	}
 
 		/**
+	 * Validates the validatePatientConditionDeceasedObservationCodeP constraint of '<em>Patient Condition Deceased Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePatientConditionDeceasedObservation_validatePatientConditionDeceasedObservationCodeP(PatientConditionDeceasedObservation patientConditionDeceasedObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return patientConditionDeceasedObservation.validatePatientConditionDeceasedObservationCodeP(diagnostics, context);
+	}
+
+		/**
 	 * Validates the validatePatientConditionDeceasedObservationStatusCode constraint of '<em>Patient Condition Deceased Observation</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3745,6 +4433,16 @@ public class PhcrValidator extends EObjectValidator
 	 */
 	public boolean validatePatientConditionDeceasedObservation_validatePatientConditionDeceasedObservationStatusCode(PatientConditionDeceasedObservation patientConditionDeceasedObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return patientConditionDeceasedObservation.validatePatientConditionDeceasedObservationStatusCode(diagnostics, context);
+	}
+
+		/**
+	 * Validates the validatePatientConditionDeceasedObservationStatusCodeP constraint of '<em>Patient Condition Deceased Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePatientConditionDeceasedObservation_validatePatientConditionDeceasedObservationStatusCodeP(PatientConditionDeceasedObservation patientConditionDeceasedObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return patientConditionDeceasedObservation.validatePatientConditionDeceasedObservationStatusCodeP(diagnostics, context);
 	}
 
 		/**
@@ -3765,6 +4463,133 @@ public class PhcrValidator extends EObjectValidator
 	 */
 	public boolean validatePatientConditionDeceasedObservation_validatePatientConditionDeceasedObservationValueP(PatientConditionDeceasedObservation patientConditionDeceasedObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return patientConditionDeceasedObservation.validatePatientConditionDeceasedObservationValueP(diagnostics, context);
+	}
+
+		/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePhcrRelevantMedicalConditionHistoryObservation(PhcrRelevantMedicalConditionHistoryObservation phcrRelevantMedicalConditionHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		if (!validate_NoCircularContainment(phcrRelevantMedicalConditionHistoryObservation, diagnostics, context)) return false;
+		boolean result = validate_EveryMultiplicityConforms(phcrRelevantMedicalConditionHistoryObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(phcrRelevantMedicalConditionHistoryObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(phcrRelevantMedicalConditionHistoryObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(phcrRelevantMedicalConditionHistoryObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(phcrRelevantMedicalConditionHistoryObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(phcrRelevantMedicalConditionHistoryObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(phcrRelevantMedicalConditionHistoryObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePhcrRelevantMedicalConditionHistoryObservation_validatePhcrRelevantMedicalConditionHistoryObservationTemplateId(phcrRelevantMedicalConditionHistoryObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePhcrRelevantMedicalConditionHistoryObservation_validatePhcrRelevantMedicalConditionHistoryObservationClassCode(phcrRelevantMedicalConditionHistoryObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePhcrRelevantMedicalConditionHistoryObservation_validatePhcrRelevantMedicalConditionHistoryObservationCodeP(phcrRelevantMedicalConditionHistoryObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePhcrRelevantMedicalConditionHistoryObservation_validatePhcrRelevantMedicalConditionHistoryObservationCode(phcrRelevantMedicalConditionHistoryObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePhcrRelevantMedicalConditionHistoryObservation_validatePhcrRelevantMedicalConditionHistoryObservationEffectiveTime(phcrRelevantMedicalConditionHistoryObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePhcrRelevantMedicalConditionHistoryObservation_validatePhcrRelevantMedicalConditionHistoryObservationMoodCode(phcrRelevantMedicalConditionHistoryObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePhcrRelevantMedicalConditionHistoryObservation_validatePhcrRelevantMedicalConditionHistoryObservationNegationInd(phcrRelevantMedicalConditionHistoryObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePhcrRelevantMedicalConditionHistoryObservation_validatePhcrRelevantMedicalConditionHistoryObservationStatusCode(phcrRelevantMedicalConditionHistoryObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePhcrRelevantMedicalConditionHistoryObservation_validatePhcrRelevantMedicalConditionHistoryObservationStatusCodeP(phcrRelevantMedicalConditionHistoryObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePhcrRelevantMedicalConditionHistoryObservation_validatePhcrRelevantMedicalConditionHistoryObservationProblemObservation(phcrRelevantMedicalConditionHistoryObservation, diagnostics, context);
+		return result;
+	}
+
+		/**
+	 * Validates the validatePhcrRelevantMedicalConditionHistoryObservationTemplateId constraint of '<em>Relevant Medical Condition History Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePhcrRelevantMedicalConditionHistoryObservation_validatePhcrRelevantMedicalConditionHistoryObservationTemplateId(PhcrRelevantMedicalConditionHistoryObservation phcrRelevantMedicalConditionHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return phcrRelevantMedicalConditionHistoryObservation.validatePhcrRelevantMedicalConditionHistoryObservationTemplateId(diagnostics, context);
+	}
+
+		/**
+	 * Validates the validatePhcrRelevantMedicalConditionHistoryObservationClassCode constraint of '<em>Relevant Medical Condition History Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePhcrRelevantMedicalConditionHistoryObservation_validatePhcrRelevantMedicalConditionHistoryObservationClassCode(PhcrRelevantMedicalConditionHistoryObservation phcrRelevantMedicalConditionHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return phcrRelevantMedicalConditionHistoryObservation.validatePhcrRelevantMedicalConditionHistoryObservationClassCode(diagnostics, context);
+	}
+
+		/**
+	 * Validates the validatePhcrRelevantMedicalConditionHistoryObservationCodeP constraint of '<em>Relevant Medical Condition History Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePhcrRelevantMedicalConditionHistoryObservation_validatePhcrRelevantMedicalConditionHistoryObservationCodeP(PhcrRelevantMedicalConditionHistoryObservation phcrRelevantMedicalConditionHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return phcrRelevantMedicalConditionHistoryObservation.validatePhcrRelevantMedicalConditionHistoryObservationCodeP(diagnostics, context);
+	}
+
+		/**
+	 * Validates the validatePhcrRelevantMedicalConditionHistoryObservationCode constraint of '<em>Relevant Medical Condition History Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePhcrRelevantMedicalConditionHistoryObservation_validatePhcrRelevantMedicalConditionHistoryObservationCode(PhcrRelevantMedicalConditionHistoryObservation phcrRelevantMedicalConditionHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return phcrRelevantMedicalConditionHistoryObservation.validatePhcrRelevantMedicalConditionHistoryObservationCode(diagnostics, context);
+	}
+
+		/**
+	 * Validates the validatePhcrRelevantMedicalConditionHistoryObservationEffectiveTime constraint of '<em>Relevant Medical Condition History Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePhcrRelevantMedicalConditionHistoryObservation_validatePhcrRelevantMedicalConditionHistoryObservationEffectiveTime(PhcrRelevantMedicalConditionHistoryObservation phcrRelevantMedicalConditionHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return phcrRelevantMedicalConditionHistoryObservation.validatePhcrRelevantMedicalConditionHistoryObservationEffectiveTime(diagnostics, context);
+	}
+
+		/**
+	 * Validates the validatePhcrRelevantMedicalConditionHistoryObservationMoodCode constraint of '<em>Relevant Medical Condition History Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePhcrRelevantMedicalConditionHistoryObservation_validatePhcrRelevantMedicalConditionHistoryObservationMoodCode(PhcrRelevantMedicalConditionHistoryObservation phcrRelevantMedicalConditionHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return phcrRelevantMedicalConditionHistoryObservation.validatePhcrRelevantMedicalConditionHistoryObservationMoodCode(diagnostics, context);
+	}
+
+		/**
+	 * Validates the validatePhcrRelevantMedicalConditionHistoryObservationNegationInd constraint of '<em>Relevant Medical Condition History Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePhcrRelevantMedicalConditionHistoryObservation_validatePhcrRelevantMedicalConditionHistoryObservationNegationInd(PhcrRelevantMedicalConditionHistoryObservation phcrRelevantMedicalConditionHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return phcrRelevantMedicalConditionHistoryObservation.validatePhcrRelevantMedicalConditionHistoryObservationNegationInd(diagnostics, context);
+	}
+
+		/**
+	 * Validates the validatePhcrRelevantMedicalConditionHistoryObservationStatusCode constraint of '<em>Relevant Medical Condition History Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePhcrRelevantMedicalConditionHistoryObservation_validatePhcrRelevantMedicalConditionHistoryObservationStatusCode(PhcrRelevantMedicalConditionHistoryObservation phcrRelevantMedicalConditionHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return phcrRelevantMedicalConditionHistoryObservation.validatePhcrRelevantMedicalConditionHistoryObservationStatusCode(diagnostics, context);
+	}
+
+		/**
+	 * Validates the validatePhcrRelevantMedicalConditionHistoryObservationStatusCodeP constraint of '<em>Relevant Medical Condition History Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePhcrRelevantMedicalConditionHistoryObservation_validatePhcrRelevantMedicalConditionHistoryObservationStatusCodeP(PhcrRelevantMedicalConditionHistoryObservation phcrRelevantMedicalConditionHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return phcrRelevantMedicalConditionHistoryObservation.validatePhcrRelevantMedicalConditionHistoryObservationStatusCodeP(diagnostics, context);
+	}
+
+		/**
+	 * Validates the validatePhcrRelevantMedicalConditionHistoryObservationProblemObservation constraint of '<em>Relevant Medical Condition History Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePhcrRelevantMedicalConditionHistoryObservation_validatePhcrRelevantMedicalConditionHistoryObservationProblemObservation(PhcrRelevantMedicalConditionHistoryObservation phcrRelevantMedicalConditionHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return phcrRelevantMedicalConditionHistoryObservation.validatePhcrRelevantMedicalConditionHistoryObservationProblemObservation(diagnostics, context);
 	}
 
 		/**
@@ -3795,8 +4620,10 @@ public class PhcrValidator extends EObjectValidator
 		if (result || diagnostics != null) result &= validateSignsAndSymptomsObservation_validateSignsAndSymptomsObservationClassCode(signsAndSymptomsObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validateSignsAndSymptomsObservation_validateSignsAndSymptomsObservationMoodCode(signsAndSymptomsObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validateSignsAndSymptomsObservation_validateSignsAndSymptomsObservationNegationInd(signsAndSymptomsObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateSignsAndSymptomsObservation_validateSignsAndSymptomsObservationCodeP(signsAndSymptomsObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validateSignsAndSymptomsObservation_validateSignsAndSymptomsObservationCode(signsAndSymptomsObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validateSignsAndSymptomsObservation_validateSignsAndSymptomsObservationStatusCode(signsAndSymptomsObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateSignsAndSymptomsObservation_validateSignsAndSymptomsObservationStatusCodeP(signsAndSymptomsObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validateSignsAndSymptomsObservation_validateSignsAndSymptomsObservationEffectiveTime(signsAndSymptomsObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validateSignsAndSymptomsObservation_validateSignsAndSymptomsObservationValue(signsAndSymptomsObservation, diagnostics, context);
 		return result;
@@ -3853,6 +4680,16 @@ public class PhcrValidator extends EObjectValidator
 	}
 
 		/**
+	 * Validates the validateSignsAndSymptomsObservationCodeP constraint of '<em>Signs And Symptoms Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSignsAndSymptomsObservation_validateSignsAndSymptomsObservationCodeP(SignsAndSymptomsObservation signsAndSymptomsObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return signsAndSymptomsObservation.validateSignsAndSymptomsObservationCodeP(diagnostics, context);
+	}
+
+		/**
 	 * Validates the validateSignsAndSymptomsObservationStatusCode constraint of '<em>Signs And Symptoms Observation</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3860,6 +4697,16 @@ public class PhcrValidator extends EObjectValidator
 	 */
 	public boolean validateSignsAndSymptomsObservation_validateSignsAndSymptomsObservationStatusCode(SignsAndSymptomsObservation signsAndSymptomsObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return signsAndSymptomsObservation.validateSignsAndSymptomsObservationStatusCode(diagnostics, context);
+	}
+
+		/**
+	 * Validates the validateSignsAndSymptomsObservationStatusCodeP constraint of '<em>Signs And Symptoms Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSignsAndSymptomsObservation_validateSignsAndSymptomsObservationStatusCodeP(SignsAndSymptomsObservation signsAndSymptomsObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return signsAndSymptomsObservation.validateSignsAndSymptomsObservationStatusCodeP(diagnostics, context);
 	}
 
 		/**
@@ -3899,9 +4746,10 @@ public class PhcrValidator extends EObjectValidator
 		if (result || diagnostics != null) result &= validateSusceptibilityResult_validateSusceptibilityResultTemplateId(susceptibilityResult, diagnostics, context);
 		if (result || diagnostics != null) result &= validateSusceptibilityResult_validateSusceptibilityResultClassCode(susceptibilityResult, diagnostics, context);
 		if (result || diagnostics != null) result &= validateSusceptibilityResult_validateSusceptibilityResultMoodCode(susceptibilityResult, diagnostics, context);
-		if (result || diagnostics != null) result &= validateSusceptibilityResult_validateSusceptibilityResultCode(susceptibilityResult, diagnostics, context);
 		if (result || diagnostics != null) result &= validateSusceptibilityResult_validateSusceptibilityResultCodeP(susceptibilityResult, diagnostics, context);
+		if (result || diagnostics != null) result &= validateSusceptibilityResult_validateSusceptibilityResultCode(susceptibilityResult, diagnostics, context);
 		if (result || diagnostics != null) result &= validateSusceptibilityResult_validateSusceptibilityResultStatusCode(susceptibilityResult, diagnostics, context);
+		if (result || diagnostics != null) result &= validateSusceptibilityResult_validateSusceptibilityResultStatusCodeP(susceptibilityResult, diagnostics, context);
 		return result;
 	}
 
@@ -3966,6 +4814,16 @@ public class PhcrValidator extends EObjectValidator
 	}
 
 		/**
+	 * Validates the validateSusceptibilityResultStatusCodeP constraint of '<em>Susceptibility Result</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSusceptibilityResult_validateSusceptibilityResultStatusCodeP(SusceptibilityResult susceptibilityResult, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return susceptibilityResult.validateSusceptibilityResultStatusCodeP(diagnostics, context);
+	}
+
+		/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -3987,6 +4845,7 @@ public class PhcrValidator extends EObjectValidator
 		if (result || diagnostics != null) result &= validateTreatmentGivenSubstanceAdministration_validateTreatmentGivenSubstanceAdministrationNegationInd(treatmentGivenSubstanceAdministration, diagnostics, context);
 		if (result || diagnostics != null) result &= validateTreatmentGivenSubstanceAdministration_validateTreatmentGivenSubstanceAdministrationStatusCode(treatmentGivenSubstanceAdministration, diagnostics, context);
 		if (result || diagnostics != null) result &= validateTreatmentGivenSubstanceAdministration_validateTreatmentGivenSubstanceAdministrationEffectiveTime(treatmentGivenSubstanceAdministration, diagnostics, context);
+		if (result || diagnostics != null) result &= validateTreatmentGivenSubstanceAdministration_validateTreatmentGivenSubstanceAdministrationRouteCodeP(treatmentGivenSubstanceAdministration, diagnostics, context);
 		if (result || diagnostics != null) result &= validateTreatmentGivenSubstanceAdministration_validateTreatmentGivenSubstanceAdministrationRouteCode(treatmentGivenSubstanceAdministration, diagnostics, context);
 		return result;
 	}
@@ -4029,6 +4888,16 @@ public class PhcrValidator extends EObjectValidator
 	 */
 	public boolean validateTreatmentGivenSubstanceAdministration_validateTreatmentGivenSubstanceAdministrationEffectiveTime(TreatmentGivenSubstanceAdministration treatmentGivenSubstanceAdministration, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return treatmentGivenSubstanceAdministration.validateTreatmentGivenSubstanceAdministrationEffectiveTime(diagnostics, context);
+	}
+
+		/**
+	 * Validates the validateTreatmentGivenSubstanceAdministrationRouteCodeP constraint of '<em>Treatment Given Substance Administration</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateTreatmentGivenSubstanceAdministration_validateTreatmentGivenSubstanceAdministrationRouteCodeP(TreatmentGivenSubstanceAdministration treatmentGivenSubstanceAdministration, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return treatmentGivenSubstanceAdministration.validateTreatmentGivenSubstanceAdministrationRouteCodeP(diagnostics, context);
 	}
 
 		/**
@@ -4184,7 +5053,7 @@ public class PhcrValidator extends EObjectValidator
 		if (result || diagnostics != null) result &= ccdValidator.validateProblemObservation_validateProblemObservationContainsPatientAwareness(caseObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validateCaseObservation_validateProblemObservationTemplateId(caseObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateProblemObservation_validateProblemObservationMoodCode(caseObservation, diagnostics, context);
-		if (result || diagnostics != null) result &= ccdValidator.validateProblemObservation_validateProblemObservationStatusCode(caseObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateCaseObservation_validateProblemObservationStatusCode(caseObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateProblemObservation_validateProblemObservationEffectiveTime(caseObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateProblemObservation_validateProblemObservationProblemStatus(caseObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= ccdValidator.validateProblemObservation_validateProblemObservationProblemHealthStatus(caseObservation, diagnostics, context);
@@ -4196,6 +5065,7 @@ public class PhcrValidator extends EObjectValidator
 		if (result || diagnostics != null) result &= validateCaseObservation_validateCaseObservationMoodCode(caseObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validateCaseObservation_validateCaseObservationId(caseObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validateCaseObservation_validateCaseObservationCode(caseObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateCaseObservation_validateProblemObservationCode(caseObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validateCaseObservation_validateCaseObservationStatusCode(caseObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validateCaseObservation_validateCaseObservationEffectiveTime(caseObservation, diagnostics, context);
 		if (result || diagnostics != null) result &= validateCaseObservation_validateCaseObservationValue(caseObservation, diagnostics, context);
@@ -4315,6 +5185,16 @@ public class PhcrValidator extends EObjectValidator
 	}
 
 		/**
+	 * Validates the validateProblemObservationCode constraint of '<em>Case Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCaseObservation_validateProblemObservationCode(CaseObservation caseObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return caseObservation.validateProblemObservationCode(diagnostics, context);
+	}
+
+		/**
 	 * Validates the validateCaseObservationStatusCode constraint of '<em>Case Observation</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -4332,6 +5212,16 @@ public class PhcrValidator extends EObjectValidator
 	 */
 	public boolean validateCaseObservation_validateProblemObservationTemplateId(CaseObservation caseObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return caseObservation.validateProblemObservationTemplateId(diagnostics, context);
+	}
+
+		/**
+	 * Validates the validateProblemObservationStatusCode constraint of '<em>Case Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateCaseObservation_validateProblemObservationStatusCode(CaseObservation caseObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return caseObservation.validateProblemObservationStatusCode(diagnostics, context);
 	}
 
 		/**

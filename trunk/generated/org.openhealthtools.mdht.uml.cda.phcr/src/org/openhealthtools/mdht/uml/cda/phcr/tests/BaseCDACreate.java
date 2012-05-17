@@ -53,6 +53,7 @@ import org.openhealthtools.mdht.uml.cda.ccd.CCDFactory;
 import org.openhealthtools.mdht.uml.cda.ccd.EncountersActivity;
 import org.openhealthtools.mdht.uml.cda.ccd.ImmunizationsSection;
 import org.openhealthtools.mdht.uml.cda.ccd.MedicationActivity;
+import org.openhealthtools.mdht.uml.cda.ccd.ProblemObservation;
 import org.openhealthtools.mdht.uml.cda.ccd.ProblemStatusObservation;
 import org.openhealthtools.mdht.uml.cda.ccd.Product;
 import org.openhealthtools.mdht.uml.cda.phcr.CaseObservation;
@@ -67,6 +68,7 @@ import org.openhealthtools.mdht.uml.cda.phcr.PhcrClinicalInformationSection;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrEncountersSection;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrFactory;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrRelevantDxTestsSection;
+import org.openhealthtools.mdht.uml.cda.phcr.PhcrRelevantMedicalConditionHistoryObservation;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrSocialHistorySection;
 import org.openhealthtools.mdht.uml.cda.phcr.PhcrTreatmentInformationSection;
 import org.openhealthtools.mdht.uml.cda.phcr.PregnancyObservation;
@@ -150,6 +152,8 @@ public class BaseCDACreate {
 		
 		// Output document to console
 		CDAUtil.save(document, System.out);
+		System.out.println();
+		System.out.println();
 
 		// Validate CDA
 		ValidationHandler handler = new BasicValidationHandler() {
@@ -163,10 +167,10 @@ public class BaseCDACreate {
 				System.out.println("WARNING: " + diagnostic.getMessage());
 			}
 			
-			@Override
-			public void handleInfo(Diagnostic diagnostic) {
-				System.out.println("INFO: " + diagnostic.getMessage());
-			}		
+//			@Override
+//			public void handleInfo(Diagnostic diagnostic) {
+//				System.out.println("INFO: " + diagnostic.getMessage());
+//			}		
 		};
 		boolean valid = CDAUtil.validate(document, handler);
 		if (valid) {
@@ -728,9 +732,8 @@ public class BaseCDACreate {
 			// create <text> block
 			StringBuffer buffer = new StringBuffer();
 			buffer.append("<list>" + System.getProperty("line.separator"));
-			buffer.append("            " + "<caption>" + "PHCR Social History Section" + "</caption>");
-			buffer.append("</list>" + System.getProperty("line.separator"));
-			buffer.append("            " + "<list>" + System.getProperty("line.separator"));
+			buffer.append("            " + "            " + "<caption>" + "PHCR Social History Section" + "</caption>");
+			buffer.append(System.getProperty("line.separator"));
 			String listOpen = buffer.toString();
 			
 			buffer = new StringBuffer();
@@ -932,6 +935,58 @@ public class BaseCDACreate {
 			symptomsObservation.setNegationInd(signSymptomNegation);
 		}
 		
+		// Patient Relevant Medical History
+		boolean hasRelevantMedicalHistory = true;
+		String relevantMedicalHistorySectionText1 = "Co-morbid condition - Diabetes type II, status Active";
+		
+		if (hasRelevantMedicalHistory) {
+		
+			IVL_TS diabetesEffectiveTime = Datatypes.createIVL_TS();
+			diabetesEffectiveTime.setNullFlavor(NullFlavor.UNK);
+			
+			CD medicalConditionType = Datatypes.createCD("398192003", SNOMED_OID, SNOMED_SYSTEM_NAME, "Co-morbid conditions");
+			CD medicalConditionCode = Datatypes.createCD("64572001", SNOMED_OID, SNOMED_SYSTEM_NAME, "Condition");
+			
+			CD diabetesCode = Datatypes.createCD("44054006", SNOMED_OID, SNOMED_SYSTEM_NAME, "Diabetes type II");
+			CE diabetesStatusCode = Datatypes.createCE("55561003", SNOMED_OID, SNOMED_SYSTEM_NAME, "Active");
+			
+			// source
+			PN informantPersonName = Datatypes.createPN(); 
+			informantPersonName.addFamily("TRENTON");
+			informantPersonName.addGiven("BETTY");
+		
+			PhcrRelevantMedicalConditionHistoryObservation conditionObservation = PHCR.createPhcrRelevantMedicalConditionHistoryObservation().init();
+			clinicalInformationSection.addObservation(conditionObservation);
+			((Entry) conditionObservation.eContainer()).setTypeCode(x_ActRelationshipEntry.DRIV);
+					
+			conditionObservation.getValues().add(medicalConditionType);
+			
+			ProblemObservation problemObservation = CCD.createProblemObservation().init();
+			conditionObservation.addObservation(problemObservation);
+			((EntryRelationship) problemObservation.eContainer()).setTypeCode(x_ActRelationshipEntryRelationship.CAUS);
+			((EntryRelationship) problemObservation.eContainer()).setInversionInd(true);
+			
+			ProblemStatusObservation statusObservation = CCD.createProblemStatusObservation().init();
+			problemObservation.addObservation(statusObservation);
+			((EntryRelationship) statusObservation.eContainer()).setTypeCode(x_ActRelationshipEntryRelationship.REFR);
+			
+			problemObservation.setNegationInd(false);
+			problemObservation.setEffectiveTime(diabetesEffectiveTime);
+			problemObservation.setCode(medicalConditionCode);
+			problemObservation.getValues().add(diabetesCode);
+			statusObservation.getValues().add(diabetesStatusCode);	
+			
+			Informant12 conditionInformant = CDA.createInformant12();
+			AssignedEntity informantEntity = CDA.createAssignedEntity();
+			Person informantPerson = CDA.createPerson();
+			informantPerson.getNames().add(informantPersonName);
+			informantEntity.getIds().add(Datatypes.createII(NullFlavor.UNK));
+			informantEntity.setAssignedPerson(informantPerson);
+			conditionInformant.setAssignedEntity(informantEntity);
+			problemObservation.getInformants().add(conditionInformant);
+		}
+		
+		
 		// Patient Condition (Alive or Dead) Observation (MAY) 0..1 - if exists and deceased, must have both (Id caseId) and (CD cause)
 		
 		boolean isPatientStatusAlive = false;
@@ -1002,9 +1057,8 @@ public class BaseCDACreate {
 		// create <text> block
 		StringBuffer buffer = new StringBuffer();
 		buffer.append("<list>" + System.getProperty("line.separator"));
-		buffer.append("            " + "<caption>" + "PHCR Clinical Information Section" + "</caption>");
-		buffer.append("</list>" + System.getProperty("line.separator"));
-		buffer.append("            " + "<list>" + System.getProperty("line.separator"));
+		buffer.append("            " + "            " + "<caption>" + "PHCR Clinical Information Section" + "</caption>");
+		buffer.append(System.getProperty("line.separator"));
 		String listOpen = buffer.toString();
 		
 		buffer = new StringBuffer();
@@ -1026,6 +1080,9 @@ public class BaseCDACreate {
 		// case observation > signs and symptoms
 		items.add(signsAndSymptomsSectionText1);
 		items.add(signsAndSymptomsSectionText2);
+		
+		// relevant medical history
+		items.add(relevantMedicalHistorySectionText1);
 		
 		// patient condition alive / deceased (deceased cause)
 		items.add(patientConditionSectionText);
@@ -1229,9 +1286,8 @@ public class BaseCDACreate {
 			// create <text> block
 			StringBuffer buffer = new StringBuffer();
 			buffer.append("<list>" + System.getProperty("line.separator"));
-			buffer.append("            " + "<caption>" + "PHCR Treatment Information Section" + "</caption>");
-			buffer.append("</list>" + System.getProperty("line.separator"));
-			buffer.append("            " + "<list>" + System.getProperty("line.separator"));
+			buffer.append("            " + "            " + "<caption>" + "PHCR Treatment Information Section" + "</caption>");
+			buffer.append(System.getProperty("line.separator"));
 			String listOpen = buffer.toString();
 			
 			buffer = new StringBuffer();
@@ -1395,9 +1451,8 @@ public class BaseCDACreate {
 			// create <text> block
 			StringBuffer buffer = new StringBuffer();
 			buffer.append("<list>" + System.getProperty("line.separator"));
-			buffer.append("            " + "<caption>" + "PHCR Encounters Section" + "</caption>");
-			buffer.append("</list>" + System.getProperty("line.separator"));
-			buffer.append("            " + "<list>" + System.getProperty("line.separator"));
+			buffer.append("            " + "            " + "<caption>" + "PHCR Encounters Section" + "</caption>");
+			buffer.append(System.getProperty("line.separator"));
 			String listOpen = buffer.toString();
 			
 			buffer = new StringBuffer();
@@ -1508,6 +1563,21 @@ public class BaseCDACreate {
 		if (observation1EffectiveTime != null) observation1.setEffectiveTime(observation1EffectiveTime);
 		if (value1 != null) observation1.getValues().add(value1);
 		
+		// Result Organizer > Observation Informant
+		II labObservation1InformantId = Datatypes.createII(TEST_ROOT, "27364276");
+		
+		ON labObservation1OrganizationName = Datatypes.createON();
+		labObservation1OrganizationName.addText("Reference Laboratory");		
+		
+		Informant12 labObservation1Informant = CDA.createInformant12();
+		AssignedEntity labObservation1InformantEntity = CDA.createAssignedEntity();
+		Organization labObservation1Organization = CDA.createOrganization();
+		labObservation1InformantEntity.getIds().add(labObservation1InformantId);
+		labObservation1Organization.getNames().add(labObservation1OrganizationName);
+		labObservation1InformantEntity.getRepresentedOrganizations().add(labObservation1Organization);
+		labObservation1Informant.setAssignedEntity(labObservation1InformantEntity);
+		observation1.getInformants().add(labObservation1Informant);
+		
 		
 		// Result Observation (optional - but must have one result) - if exists, must have (II observationId), (CD observationCode), (ANY value)
 		List<II> observationIdList = new ArrayList<II>();
@@ -1540,7 +1610,7 @@ public class BaseCDACreate {
 			playingEntity.setCode(observationSpecimenType);
 		}
 		
-		// Image Observation Informant
+		// Result Observation Informant
 		II labObservationInformantId = Datatypes.createII(TEST_ROOT, "27364276");
 		
 		ON labObservationOrganizationName = Datatypes.createON();
@@ -1600,9 +1670,8 @@ public class BaseCDACreate {
 		// create <text> block
 		StringBuffer buffer = new StringBuffer();
 		buffer.append("<list>" + System.getProperty("line.separator"));
-		buffer.append("            " + "<caption>" + "PHCR Encounters Section" + "</caption>");
-		buffer.append("</list>" + System.getProperty("line.separator"));
-		buffer.append("            " + "<list>" + System.getProperty("line.separator"));
+		buffer.append("            " + "            " + "<caption>" + "PHCR Relevant Diagnostic Section" + "</caption>");
+		buffer.append(System.getProperty("line.separator"));
 		String listOpen = buffer.toString();
 		
 		buffer = new StringBuffer();

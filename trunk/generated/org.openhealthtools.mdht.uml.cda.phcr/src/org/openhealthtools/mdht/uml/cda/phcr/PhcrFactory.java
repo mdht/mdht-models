@@ -202,6 +202,15 @@ public interface PhcrFactory extends EFactory
 	PatientConditionDeceasedObservation createPatientConditionDeceasedObservation();
 
 		/**
+	 * Returns a new object of class '<em>Relevant Medical Condition History Observation</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Relevant Medical Condition History Observation</em>'.
+	 * @generated
+	 */
+	PhcrRelevantMedicalConditionHistoryObservation createPhcrRelevantMedicalConditionHistoryObservation();
+
+		/**
 	 * Returns a new object of class '<em>Signs And Symptoms Observation</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

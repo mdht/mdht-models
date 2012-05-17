@@ -88,6 +88,7 @@ public class TreatmentNotGivenSubstanceAdministrationOperations extends Substanc
 	 */
 	
 	public static  boolean validateTreatmentNotGivenSubstanceAdministrationTreatmentNotGivenNegationInd(TreatmentNotGivenSubstanceAdministration treatmentNotGivenSubstanceAdministration, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION_TREATMENT_NOT_GIVEN_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION);
@@ -108,6 +109,7 @@ public class TreatmentNotGivenSubstanceAdministrationOperations extends Substanc
 						 PhcrPlugin.INSTANCE.getString("TreatmentNotGivenSubstanceAdministrationTreatmentNotGivenNegationInd"),
 						 new Object [] { treatmentNotGivenSubstanceAdministration }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -125,6 +127,7 @@ public class TreatmentNotGivenSubstanceAdministrationOperations extends Substanc
 	 * @generated
 	 */
 	public static  boolean validateTreatmentNotGivenSubstanceAdministrationTemplateId(TreatmentNotGivenSubstanceAdministration treatmentNotGivenSubstanceAdministration, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION);
@@ -145,6 +148,7 @@ public class TreatmentNotGivenSubstanceAdministrationOperations extends Substanc
 						 PhcrPlugin.INSTANCE.getString("TreatmentNotGivenSubstanceAdministrationTemplateId"),
 						 new Object [] { treatmentNotGivenSubstanceAdministration }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -162,6 +166,7 @@ public class TreatmentNotGivenSubstanceAdministrationOperations extends Substanc
 	 * @generated
 	 */
 	public static  boolean validateTreatmentNotGivenSubstanceAdministrationClassCode(TreatmentNotGivenSubstanceAdministration treatmentNotGivenSubstanceAdministration, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION);
@@ -182,6 +187,7 @@ public class TreatmentNotGivenSubstanceAdministrationOperations extends Substanc
 						 PhcrPlugin.INSTANCE.getString("TreatmentNotGivenSubstanceAdministrationClassCode"),
 						 new Object [] { treatmentNotGivenSubstanceAdministration }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -199,6 +205,7 @@ public class TreatmentNotGivenSubstanceAdministrationOperations extends Substanc
 	 * @generated
 	 */
 	public static  boolean validateTreatmentNotGivenSubstanceAdministrationMoodCode(TreatmentNotGivenSubstanceAdministration treatmentNotGivenSubstanceAdministration, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION);
@@ -219,6 +226,7 @@ public class TreatmentNotGivenSubstanceAdministrationOperations extends Substanc
 						 PhcrPlugin.INSTANCE.getString("TreatmentNotGivenSubstanceAdministrationMoodCode"),
 						 new Object [] { treatmentNotGivenSubstanceAdministration }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -316,6 +324,7 @@ public class TreatmentNotGivenSubstanceAdministrationOperations extends Substanc
 	 * @generated
 	 */
 	public static  boolean validateTreatmentNotGivenSubstanceAdministrationNegationInd(TreatmentNotGivenSubstanceAdministration treatmentNotGivenSubstanceAdministration, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION);
@@ -336,6 +345,7 @@ public class TreatmentNotGivenSubstanceAdministrationOperations extends Substanc
 						 PhcrPlugin.INSTANCE.getString("TreatmentNotGivenSubstanceAdministrationNegationInd"),
 						 new Object [] { treatmentNotGivenSubstanceAdministration }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -377,6 +387,7 @@ public class TreatmentNotGivenSubstanceAdministrationOperations extends Substanc
 	 * @generated
 	 */
 	public static  boolean validateTreatmentNotGivenSubstanceAdministrationStatusCode(TreatmentNotGivenSubstanceAdministration treatmentNotGivenSubstanceAdministration, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION);
@@ -397,6 +408,7 @@ public class TreatmentNotGivenSubstanceAdministrationOperations extends Substanc
 						 PhcrPlugin.INSTANCE.getString("TreatmentNotGivenSubstanceAdministrationStatusCode"),
 						 new Object [] { treatmentNotGivenSubstanceAdministration }));
 			}
+			 
 			return false;
 		}
 		return true;
@@ -436,6 +448,7 @@ public class TreatmentNotGivenSubstanceAdministrationOperations extends Substanc
 	 */
 	
 	public static  boolean validateTreatmentNotGivenSubstanceAdministrationStatusCodeP(TreatmentNotGivenSubstanceAdministration treatmentNotGivenSubstanceAdministration, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
 		if (VALIDATE_TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(PhcrPackage.Literals.TREATMENT_NOT_GIVEN_SUBSTANCE_ADMINISTRATION);
@@ -456,6 +469,7 @@ public class TreatmentNotGivenSubstanceAdministrationOperations extends Substanc
 						 PhcrPlugin.INSTANCE.getString("TreatmentNotGivenSubstanceAdministrationStatusCodeP"),
 						 new Object [] { treatmentNotGivenSubstanceAdministration }));
 			}
+			 
 			return false;
 		}
 		return true;

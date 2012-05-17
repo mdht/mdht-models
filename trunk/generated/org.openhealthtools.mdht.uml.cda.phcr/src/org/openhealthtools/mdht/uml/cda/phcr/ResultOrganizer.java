@@ -22,7 +22,7 @@ import org.eclipse.emf.common.util.EList;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.phcr.PhcrPackage#getResultOrganizer()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation moodCode='EVN' classCode='BATTERY' constraints.validation.info='PHCRResultOrganizerSpecimenCollectionProcedure' templateId.root='2.16.840.1.113883.10.20.15.3.59' constraints.validation.error='PHCRResultOrganizerTemplateId PHCRResultOrganizerClassCode PHCRResultOrganizerMoodCode PHCRResultOrganizerId PHCRResultOrganizerCode ResultOrganizerStatusCode PHCRResultOrganizerStatusCode PHCRResultOrganizerEffectiveTime PHCRResultOrganizerResultObservation' statusCode.code='completed'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation moodCode='EVN' classCode='BATTERY' constraints.validation.info='PHCRResultOrganizerSpecimenCollectionProcedure' constraints.validation.dependOn.ResultOrganizerStatusCode='PHCRResultOrganizerStatusCode' templateId.root='2.16.840.1.113883.10.20.15.3.59' constraints.validation.error='PHCRResultOrganizerTemplateId PHCRResultOrganizerClassCode PHCRResultOrganizerMoodCode PHCRResultOrganizerId PHCRResultOrganizerCode ResultOrganizerStatusCode PHCRResultOrganizerStatusCode PHCRResultOrganizerEffectiveTime PHCRResultOrganizerResultObservation' statusCode.code='completed'"
  * @generated
  */
 public interface ResultOrganizer extends org.openhealthtools.mdht.uml.cda.ccd.ResultOrganizer {

@@ -13,6 +13,7 @@ package org.openhealthtools.mdht.uml.cda.phcr;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+import org.eclipse.emf.common.util.EList;
 import org.openhealthtools.mdht.uml.cda.Section;
 
 /**
@@ -22,7 +23,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.phcr.PhcrPackage#getPhcrClinicalInformationSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation title.mixed='Clinical Information' code.codeSystemName='LOINC' constraints.validation.error='PhcrClinicalInformationSectionTemplateId PhcrClinicalInformationSectionPatientConditionConstraint PhcrClinicalInformationSectionCode PhcrClinicalInformationSectionTitle PhcrClinicalInformationSectionText PhcrClinicalInformationSectionCaseObservation' templateId.root='2.16.840.1.113883.10.20.15.2.1' constraints.validation.info='PhcrClinicalInformationSectionPatientConditionAliveObservation PhcrClinicalInformationSectionPatientConditionDeceasedObservation' code.displayName='Clinical Information' code.codeSystem='2.16.840.1.113883.6.1' code.code='55752-0'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation title.mixed='Clinical Information' code.codeSystemName='LOINC' constraints.validation.info='PhcrClinicalInformationSectionPatientConditionAliveObservation PhcrClinicalInformationSectionPatientConditionDeceasedObservation' templateId.root='2.16.840.1.113883.10.20.15.2.1' constraints.validation.error='PhcrClinicalInformationSectionTemplateId PhcrClinicalInformationSectionPatientConditionConstraint PhcrClinicalInformationSectionCode PhcrClinicalInformationSectionCodeP PhcrClinicalInformationSectionTitle PhcrClinicalInformationSectionText PhcrClinicalInformationSectionCaseObservation' code.displayName='Clinical Information' code.codeSystem='2.16.840.1.113883.6.1' code.code='55752-0' constraints.validation.warning='PhcrClinicalInformationSectionPhcrRelevantMedicalConditionHistoryObservation'"
  * @generated
  */
 public interface PhcrClinicalInformationSection extends Section {
@@ -66,6 +67,19 @@ public interface PhcrClinicalInformationSection extends Section {
 	 * @generated
 	 */
 	boolean validatePhcrClinicalInformationSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())'"
+	 * @generated
+	 */
+	boolean validatePhcrClinicalInformationSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -136,6 +150,19 @@ public interface PhcrClinicalInformationSection extends Section {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
+	 * self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(phcr::PhcrRelevantMedicalConditionHistoryObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(phcr::PhcrRelevantMedicalConditionHistoryObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)'"
+	 * @generated
+	 */
+	boolean validatePhcrClinicalInformationSectionPhcrRelevantMedicalConditionHistoryObservation(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
 	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(phcr::CaseObservation))->asSequence()->first().oclAsType(phcr::CaseObservation)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
@@ -167,6 +194,18 @@ public interface PhcrClinicalInformationSection extends Section {
 	 * @generated
 	 */
 	PatientConditionDeceasedObservation getPatientConditionDeceasedObservation();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(phcr::PhcrRelevantMedicalConditionHistoryObservation)).oclAsType(phcr::PhcrRelevantMedicalConditionHistoryObservation)
+	 * <!-- end-model-doc -->
+	 * @model kind="operation" required="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(phcr::PhcrRelevantMedicalConditionHistoryObservation)).oclAsType(phcr::PhcrRelevantMedicalConditionHistoryObservation)'"
+	 * @generated
+	 */
+	EList<PhcrRelevantMedicalConditionHistoryObservation> getPhcrRelevantMedicalConditionHistoryObservations();
 
 	/**
 	 * <!-- begin-user-doc -->

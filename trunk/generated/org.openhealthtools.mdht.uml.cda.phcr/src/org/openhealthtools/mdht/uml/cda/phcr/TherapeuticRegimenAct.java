@@ -23,7 +23,7 @@ import org.openhealthtools.mdht.uml.cda.Act;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.phcr.PhcrPackage#getTherapeuticRegimenAct()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation moodCode='EVN' classCode='ACT' code.codeSystemName='SNOMEDCT' constraints.validation.info='TherapeuticRegimenActTreatmentNotGivenSubstanceAdministration' templateId.root='2.16.840.1.113883.10.20.15.3.57' constraints.validation.error='TherapeuticRegimenActTemplateId TherapeuticRegimenActClassCode TherapeuticRegimenActMoodCode TherapeuticRegimenActNegationInd TherapeuticRegimenActCode TherapeuticRegimenActStatusCode TherapeuticRegimenActStatusCodeP' statusCode.code='completed' code.displayName='Therapeutic regimen' code.codeSystem='2.16.840.1.113883.6.96' code.code='133877004' constraints.validation.warning='TherapeuticRegimenActTreatmentGivenSubstanceAdministration'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation moodCode='EVN' classCode='ACT' constraints.validation.dependOn.TherapeuticRegimenActCode='TherapeuticRegimenActCodeP' code.codeSystemName='SNOMEDCT' constraints.validation.info='TherapeuticRegimenActTreatmentNotGivenSubstanceAdministration' templateId.root='2.16.840.1.113883.10.20.15.3.57' constraints.validation.error='TherapeuticRegimenActTemplateId TherapeuticRegimenActClassCode TherapeuticRegimenActMoodCode TherapeuticRegimenActNegationInd TherapeuticRegimenActCode TherapeuticRegimenActCodeP TherapeuticRegimenActStatusCode TherapeuticRegimenActStatusCodeP' statusCode.code='completed' code.displayName='Therapeutic regimen' code.codeSystem='2.16.840.1.113883.6.96' code.code='133877004' constraints.validation.warning='TherapeuticRegimenActTreatmentGivenSubstanceAdministration'"
  * @generated
  */
 public interface TherapeuticRegimenAct extends Act {
@@ -93,6 +93,19 @@ public interface TherapeuticRegimenAct extends Act {
 	 * @generated
 	 */
 	boolean validateTherapeuticRegimenActNegationInd(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())'"
+	 * @generated
+	 */
+	boolean validateTherapeuticRegimenActCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

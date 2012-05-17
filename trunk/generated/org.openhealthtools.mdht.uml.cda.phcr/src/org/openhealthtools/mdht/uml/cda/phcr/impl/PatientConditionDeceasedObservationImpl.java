@@ -90,8 +90,26 @@ public class PatientConditionDeceasedObservationImpl extends ObservationImpl imp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validatePatientConditionDeceasedObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PatientConditionDeceasedObservationOperations.validatePatientConditionDeceasedObservationCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validatePatientConditionDeceasedObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PatientConditionDeceasedObservationOperations.validatePatientConditionDeceasedObservationStatusCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validatePatientConditionDeceasedObservationStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return PatientConditionDeceasedObservationOperations.validatePatientConditionDeceasedObservationStatusCodeP(this, diagnostics, context);
 	}
 
 	/**

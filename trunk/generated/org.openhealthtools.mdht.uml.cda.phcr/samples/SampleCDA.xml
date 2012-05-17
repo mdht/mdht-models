@@ -1,18 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><!--
-    Copyright (c) 2009, 2012 IBM Corporation and others.
-    All rights reserved. This program and the accompanying materials
-    are made available under the terms of the Eclipse Public License v1.0
-    which accompanies this distribution, and is available at
-    http://www.eclipse.org/legal/epl-v10.html
-   
-    Contributors:
-        IBM Corporation - initial API and implementation
- -->
-
+<?xml version="1.0" encoding="UTF-8"?>
 <ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
   <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
   <templateId root="2.16.840.1.113883.10.20.15"/>
-  <id root="0b625e01-c376-4bcb-a713-085363c276b1"/>
+  <id root="9e1434f7-4d89-4d49-a2ac-34fda55851f5"/>
   <code code="55751-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Public Health Case Report"/>
   <title>Public Health Case Report</title>
   <effectiveTime value="20110810102500-0500"/>
@@ -79,8 +69,7 @@
           <code code="29762-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Social History"/>
           <title>Social History</title>
           <text><list>
-            <caption>PHCR Social History Section</caption></list>
-            <list>
+                        <caption>PHCR Social History Section</caption>
                         <item>Geotemporal history - Argentina</item>
                         <item>Geotemporal history - Brazil</item>
                         <item>Most Recent Time Arrived in USA - 2011/08/10</item>
@@ -183,14 +172,14 @@
           <code code="55752-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Clinical Information"/>
           <title>Clinical Information</title>
           <text><list>
-            <caption>PHCR Clinical Information Section</caption></list>
-            <list>
+                        <caption>PHCR Clinical Information Section</caption>
                         <item>Condition - PHCR Reportable Condition</item>
                         <item>Condition diagnosed 2011/08/10</item>
                         <item>Diagnosed by Dr Betty Trenton</item>
                         <item>Problem resolved</item>
                         <item>Signs and Symptoms - Patient asymptomatic</item>
                         <item>Signs and Symptoms - Patient had no fever</item>
+                        <item>Co-morbid condition - Diabetes type II, status Active</item>
                         <item>Patient deceased, cause PHCR Reportable Condition</item>
             </list></text>
           <entry typeCode="DRIV">
@@ -253,6 +242,40 @@
           </entry>
           <entry typeCode="DRIV">
             <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.15.3.62"/>
+              <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/>
+              <statusCode code="completed"/>
+              <value xsi:type="CD" code="398192003" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Co-morbid conditions"/>
+              <entryRelationship typeCode="CAUS" inversionInd="true">
+                <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                  <templateId root="2.16.840.1.113883.10.20.1.28"/>
+                  <code code="64572001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Condition"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime nullFlavor="UNK"/>
+                  <value xsi:type="CD" code="44054006" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Diabetes type II"/>
+                  <informant>
+                    <assignedEntity>
+                      <id nullFlavor="UNK"/>
+                      <assignedPerson>
+                        <name><family>TRENTON</family><given>BETTY</given></name>
+                      </assignedPerson>
+                    </assignedEntity>
+                  </informant>
+                  <entryRelationship typeCode="REFR">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.1.57"/>
+                      <templateId root="2.16.840.1.113883.10.20.1.50"/>
+                      <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+                      <statusCode code="completed"/>
+                      <value xsi:type="CE" code="55561003" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Active"/>
+                    </observation>
+                  </entryRelationship>
+                </observation>
+              </entryRelationship>
+            </observation>
+          </entry>
+          <entry typeCode="DRIV">
+            <observation classCode="OBS" moodCode="EVN">
               <templateId root="2.16.840.1.113883.10.20.15.3.17"/>
               <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/>
               <statusCode code="completed"/>
@@ -276,8 +299,7 @@
           <code code="55753-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treatment Information"/>
           <title>Treatment Information</title>
           <text><list>
-            <caption>PHCR Treatment Information Section</caption></list>
-            <list>
+                        <caption>PHCR Treatment Information Section</caption>
                         <item>Condition ID - 9999</item>
                         <item>Multivitamin oral tablet given.</item>
                         <item>Acetominophen not given.</item>
@@ -343,8 +365,7 @@
           <code code="46240-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of encounters"/>
           <title>Encounters</title>
           <text><list>
-            <caption>PHCR Encounters Section</caption></list>
-            <list>
+                        <caption>PHCR Encounters Section</caption>
                         <item>Encounter Date 2011/08/10</item>
                         <item>Encounter Type Inpatient</item>
                         <item>Encounter source location - Janesville, WI</item>
@@ -387,8 +408,7 @@
           <code code="30954-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Relevant diagnostic tests and/or laboratory data"/>
           <title>Relevant diagnostic tests and/or laboratory data</title>
           <text><list>
-            <caption>PHCR Encounters Section</caption></list>
-            <list>
+                        <caption>PHCR Relevant Diagnostic Section</caption>
                         <item>Generic Lab Organizer X for Blood Specimen</item>
                         <item>Generic Lab Test X result: Positive</item>
                         <item>Generic Lab Test Z for Blood Specimen result: Positive</item>
@@ -426,6 +446,14 @@
                   <statusCode code="completed"/>
                   <effectiveTime value="20110810102500-0500"/>
                   <value xsi:type="CD" code="10828004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Positive"/>
+                  <informant>
+                    <assignedEntity>
+                      <id root="1.3.6.1.4.1.19376.1.3.4" extension="27364276"/>
+                      <representedOrganization>
+                        <name>Reference Laboratory</name>
+                      </representedOrganization>
+                    </assignedEntity>
+                  </informant>
                 </observation>
               </component>
             </organizer>

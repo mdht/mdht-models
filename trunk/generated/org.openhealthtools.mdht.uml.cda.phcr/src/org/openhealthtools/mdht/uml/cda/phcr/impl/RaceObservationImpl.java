@@ -90,8 +90,26 @@ public class RaceObservationImpl extends ObservationImpl implements RaceObservat
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateRaceObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RaceObservationOperations.validateRaceObservationCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateRaceObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return RaceObservationOperations.validateRaceObservationStatusCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateRaceObservationStatusCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return RaceObservationOperations.validateRaceObservationStatusCodeP(this, diagnostics, context);
 	}
 
 	/**
