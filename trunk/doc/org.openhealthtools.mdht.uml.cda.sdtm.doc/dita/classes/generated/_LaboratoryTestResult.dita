@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Laboratory Test Result - conformance rules</title>
+<shortdesc id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.23.36</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Observation</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.23.36"/>
+</prolog>
+<body>
+<section id="description">
+<p>Information on laboratory data collected on a reporting form or received from a central provider or vendor.</p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>
+<ul><li>A coded value that identifies the laboratory test result.  The verbatim text is placed within the original text property of the CD data type.  [SDTM: LBTESTCD, LBTEST. LBLOINC]  If the LOINC code is available it should be used as the base code within the CD type.</li></ul></li>
+<li><b>SHALL</b> contain  [1..2] <tt><b>id</b></tt>
+<ul><li>A value that is provided to ensure the uniqueness of the laboratory result.  [SDTM: LBSEQ, LBSPID]   A single identifier, the sequence number, is required.</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>statusCode</b></tt>
+<ul><li>Used to indicate whether or not an exam has been performed.  [SDTM: LBSTAT]</li></ul></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>value</b></tt> with data type CD
+<ul><li>The laboratory result, using both original units and a standard format or set of units.  [SDTM: LBORRES, LBORRESU, LBSTRESC, LBSTRESN, LBSTRESU]</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../GroupIdentifier.dita">Group Identifier</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.15</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>methodCode</b></tt>
+<ul><li>Indicates the method of the test or examination.  [SDTM: LBMETHOD]</li></ul></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../SpecimenInformation.dita">Specimen Information</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.59</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> <ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="COMP" </tt></li><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>laboratoryTestResultCategory</b></tt> with data type <xref href="../LaboratoryTestResultCategory.dita">laboratory Test Result Category</xref></li></ol>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> <ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="COMP" </tt></li><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>laboratoryTestResultSubCategory</b></tt> with data type <xref href="../LaboratoryTestResultSubCategory.dita">laboratory Test Result Sub Category</xref></li></ol>
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>referenceRange</b></tt> <ol><li> This referenceRange <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="REFV" </tt></li><li> This referenceRange <b>SHALL</b> contain exactly one [1..1] <tt><b>observationRange</b></tt> <ol><li> This observationRange <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)</li><li> This observationRange <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN.CRT" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li><li> This observationRange <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.3.26.1.1 NCI Thesaurus</tt>)</li><li> This observationRange <b>SHALL</b> contain zero or one [0..1] <tt><b>interpretationCode</b></tt>, where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.5.83 ObservationInterpretation</tt>)<p><i>The value is used to interpret the meaning of the range information.</i></p></li><li> This observationRange <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type PQR<p><i>Contains the actual reference range value as an interval of physical quantities.  Note,  the predetermined value of interpretation code  indicates that the normal range is being reported.  [SDTM: LBORNRLO, LBORNHRHI, LBSTTNLO, LBSTNRLO, LBSTRNHI, LBSTNRC, LBNRIND] Standard referemce ramge values go into the base value and unt, while the orginal values use the translation property of the PQR type.</i></p></li></ol> </li></ol>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../NonPerformanceReason.dita">Non Performance Reason</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.9</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>study Test Performer</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../StudyTestPerformer.dita">Study Test Performer</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.60</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../BaselineIndicator.dita">Baseline Indicator</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.57</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../DerivedDataIndicator.dita">Derived Data Indicator</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.58</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> <ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="COMP" </tt></li><li> This entryRelationship <b>SHALL</b> contain zero or one [0..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.3.26.1.1 NCI Thesaurus</tt>)<p><i>The code value indicates the observation concerns the subject's fasting status.</i></p></li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type BN<p><i>Information on whether the person was fasting at the time the specimen was collected.  [SDTM: LBFAST]</i></p></li></ol> </li></ol>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> <ol><li> This entryRelationship <b>SHALL</b> contain zero or one [0..1] <tt><b>@typeCode</b>="COMP" </tt></li><li> This entryRelationship Contains zero or one [0..1] <tt><b>LabtoxicityGrade</b></tt> with data type <xref href="../LabToxicityGrade.dita">lab Toxicity Grade</xref></li></ol>
+</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+</li>
+<li><b>SHALL</b> contain  [1..2] <tt><b>id</b></tt>
+<ul><li>A value that is provided to ensure the uniqueness of the laboratory result.  [SDTM: LBSEQ, LBSPID]   A single identifier, the sequence number, is required.</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>
+<ul><li>A coded value that identifies the laboratory test result.  The verbatim text is placed within the original text property of the CD data type.  [SDTM: LBTESTCD, LBTEST. LBLOINC]  If the LOINC code is available it should be used as the base code within the CD type.</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>statusCode</b></tt>
+<ul><li>Used to indicate whether or not an exam has been performed.  [SDTM: LBSTAT]</li></ul></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>value</b></tt> with data type CD
+<ul><li>The laboratory result, using both original units and a standard format or set of units.  [SDTM: LBORRES, LBORRESU, LBSTRESC, LBSTRESN, LBSTRESU]</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>methodCode</b></tt>
+<ul><li>Indicates the method of the test or examination.  [SDTM: LBMETHOD]</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../GroupIdentifier.dita">Group Identifier</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.15</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../SpecimenInformation.dita">Specimen Information</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.59</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> <ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="COMP" </tt></li><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>laboratoryTestResultCategory</b></tt> with data type <xref href="../LaboratoryTestResultCategory.dita">laboratory Test Result Category</xref></li></ol>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> <ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="COMP" </tt></li><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>laboratoryTestResultSubCategory</b></tt> with data type <xref href="../LaboratoryTestResultSubCategory.dita">laboratory Test Result Sub Category</xref></li></ol>
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>referenceRange</b></tt> <ol><li> This referenceRange <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="REFV" </tt></li><li> This referenceRange <b>SHALL</b> contain exactly one [1..1] <tt><b>observationRange</b></tt> <ol><li> This observationRange <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)</li><li> This observationRange <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN.CRT" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li><li> This observationRange <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.3.26.1.1 NCI Thesaurus</tt>)</li><li> This observationRange <b>SHALL</b> contain zero or one [0..1] <tt><b>interpretationCode</b></tt>, where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.5.83 ObservationInterpretation</tt>)<p><i>The value is used to interpret the meaning of the range information.</i></p></li><li> This observationRange <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type PQR<p><i>Contains the actual reference range value as an interval of physical quantities.  Note,  the predetermined value of interpretation code  indicates that the normal range is being reported.  [SDTM: LBORNRLO, LBORNHRHI, LBSTTNLO, LBSTNRLO, LBSTRNHI, LBSTNRC, LBNRIND] Standard referemce ramge values go into the base value and unt, while the orginal values use the translation property of the PQR type.</i></p></li></ol> </li></ol>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../NonPerformanceReason.dita">Non Performance Reason</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.9</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>study Test Performer</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../StudyTestPerformer.dita">Study Test Performer</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.60</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../BaselineIndicator.dita">Baseline Indicator</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.57</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../DerivedDataIndicator.dita">Derived Data Indicator</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.58</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> <ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="COMP" </tt></li><li> This entryRelationship <b>SHALL</b> contain zero or one [0..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.3.26.1.1 NCI Thesaurus</tt>)<p><i>The code value indicates the observation concerns the subject's fasting status.</i></p></li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type BN<p><i>Information on whether the person was fasting at the time the specimen was collected.  [SDTM: LBFAST]</i></p></li></ol> </li></ol>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> <ol><li> This entryRelationship <b>SHALL</b> contain zero or one [0..1] <tt><b>@typeCode</b>="COMP" </tt></li><li> This entryRelationship Contains zero or one [0..1] <tt><b>LabtoxicityGrade</b></tt> with data type <xref href="../LabToxicityGrade.dita">lab Toxicity Grade</xref></li></ol>
+</li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >sdtm::Laboratory Test Result</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::observation[cda:templateId/@root = 2.16.840.1.113883.10.20.23.36]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClassObservation</entry><entry></entry><entry> ALRT</entry></row> 
+<row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActMoodDocumentObservation</entry><entry></entry><entry> DEF</entry></row> 
+<row><entry>negationInd</entry><entry>@negationInd</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>Boolean</entry><entry></entry><entry> </entry></row> 
+<row><entry>nullFlavor</entry><entry>@nullFlavor</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>NullFlavor</entry><entry></entry><entry> ASKU</entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry></entry><entry> </entry></row> 
+<row><entry>derivationExpr</entry><entry>derivationExpr</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>ST</entry><entry></entry><entry> </entry></row> 
+<row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>IVL_TS</entry><entry></entry><entry> </entry></row> 
+<row><entry>id</entry><entry>id</entry><entry>1..2</entry><entry>SHALL</entry><entry>YES</entry><entry>II</entry><entry></entry><entry> </entry></row> 
+<row><entry>interpretationCode</entry><entry>interpretationCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
+<row><entry>languageCode</entry><entry>languageCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
+<row><entry>methodCode</entry><entry>methodCode</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
+<row><entry>priorityCode</entry><entry>priorityCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
+<row><entry>realmCode</entry><entry>realmCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
+<row><entry>repeatNumber</entry><entry>repeatNumber</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>IVL_INT</entry><entry></entry><entry> </entry></row> 
+<row><entry>statusCode</entry><entry>statusCode</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
+<row><entry>targetSiteCode</entry><entry>targetSiteCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CD</entry><entry></entry><entry> </entry></row> 
+<row><entry>templateId</entry><entry>templateId</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> 2.16.840.1.113883.10.20.23.36</entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>ED</entry><entry></entry><entry> </entry></row> 
+<row><entry>value</entry><entry>value</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>CD</entry><entry></entry><entry> </entry></row> 
+<row><entry>author</entry><entry>author</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Author</entry><entry></entry><entry> </entry></row> 
+<row><entry>baseline Indicator</entry><entry>baseline Indicator</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Baseline Indicator</entry><entry></entry><entry> </entry></row> 
+<row><entry>derived Data Indicator</entry><entry>derived Data Indicator</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Derived Data Indicator</entry><entry></entry><entry> </entry></row> 
+<row><entry>entryRelationship</entry><entry>entryRelationship</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>EntryRelationship</entry><entry></entry><entry> </entry></row> 
+<row><entry>fastingAssociation</entry><entry>fastingAssociation</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>fastingAssociation</entry><entry></entry><entry> </entry></row> 
+<row><entry>group Identifier</entry><entry>group Identifier</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Group Identifier</entry><entry></entry><entry> </entry></row> 
+<row><entry>informant</entry><entry>informant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Informant12</entry><entry></entry><entry> </entry></row> 
+<row><entry>laboratoryTestResultCategoryAssociation</entry><entry>laboratoryTestResultCategoryAssociation</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>laboratoryTestResultCategoryAssociation</entry><entry></entry><entry> </entry></row> 
+<row><entry>laboratoryTestResultSubCategoryAssociation</entry><entry>laboratoryTestResultSubCategoryAssociation</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>laboratoryTestResultSubCategoryAssociation</entry><entry></entry><entry> </entry></row> 
+<row><entry>labToxicityAssociation</entry><entry>labToxicityAssociation</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>labToxicityAssociation</entry><entry></entry><entry> </entry></row> 
+<row><entry>nonPerformanceReason</entry><entry>nonPerformanceReason</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Non Performance Reason</entry><entry></entry><entry> </entry></row> 
+<row><entry>participant</entry><entry>participant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Participant2</entry><entry></entry><entry> </entry></row> 
+<row><entry>performer</entry><entry>performer</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Performer2</entry><entry></entry><entry> </entry></row> 
+<row><entry>precondition</entry><entry>precondition</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Precondition</entry><entry></entry><entry> </entry></row> 
+<row><entry>reference</entry><entry>reference</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Reference</entry><entry></entry><entry> </entry></row> 
+<row><entry>referenceRange</entry><entry>referenceRange</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>ReferenceRange</entry><entry></entry><entry> </entry></row> 
+<row><entry>referenceRangeAssociation</entry><entry>referenceRangeAssociation</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>referenceRangeAssociation</entry><entry></entry><entry> </entry></row> 
+<row><entry>specimen</entry><entry>specimen</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Specimen</entry><entry></entry><entry> </entry></row> 
+<row><entry>specimen Information</entry><entry>specimen Information</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>Specimen Information</entry><entry></entry><entry> </entry></row> 
+<row><entry>study Test Performer</entry><entry>study Test Performer</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Study Test Performer</entry><entry></entry><entry> </entry></row> 
+<row><entry>subject</entry><entry>subject</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>Subject</entry><entry></entry><entry> </entry></row> 
+<row><entry>typeId</entry><entry>typeId</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>InfrastructureRootTypeId</entry><entry></entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[

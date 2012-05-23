@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Non-Human Subject Data Document Body - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.23.15</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.23.15"/>
+</prolog>
+<body>
+<section id="description">
+<p>The single section which encompasses the data reported for a subject.</p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="DOCSECT" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+</li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="TBD" </tt> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+</li>
+<li>Contains exactly one [1..1] <tt><b>human Clinical Subject Demographics</b></tt> with data type <xref href="../HumanClinicalSubjectDemographics.dita">Human Clinical Subject Demographics</xref>
+</li>
+<li>Contains zero or more [0..*] <tt><b>human Clinical Visit</b></tt> with data type <xref href="../Visit.dita">Visit</xref>
+</li>
+<li>Contains exactly one [1..1] <tt><b>human Clinical Study Arm</b></tt> with data type <xref href="../StudyArm.dita">Study Arm</xref>
+</li>
+<li>Contains zero or more [0..*] <tt><b>exposureAssociation</b></tt> with data type <xref href="../ExposureAssociation.dita">exposure Association</xref>
+</li>
+<li>Contains zero or more [0..*] <tt><b>subject Element</b></tt> with data type <xref href="../SubjectElement.dita">Subject Element</xref>
+</li>
+<li>Contains zero or more [0..*] <tt><b>substance Use</b></tt> with data type <xref href="../SubstanceUse.dita">Substance Use</xref>
+</li>
+<li>Contains zero or more [0..*] <tt><b>disposition</b></tt> with data type <xref href="../HumanClinicalDisposition.dita">Human Clinical Disposition</xref>
+</li>
+<li>Contains zero or more [0..*] <tt><b>medical History</b></tt> with data type <xref href="../MedicalHistoryItem.dita">Medical History Item</xref>
+</li>
+<li>Contains zero or more [0..*] <tt><b>protocol Deviation</b></tt> with data type <xref href="../ProtocolDeviation.dita">Protocol Deviation</xref>
+</li>
+<li>Contains zero or more [0..*] <tt><b>clinical Event</b></tt> with data type <xref href="../ClinicalEvent.dita">Clinical Event</xref>
+</li>
+<li>Contains zero or more [0..*] <tt><b>eCG Test Result</b></tt> with data type <xref href="../ECGTestResult.dita">ECG Test Result</xref>
+</li>
+<li>Contains zero or one [0..1] <tt><b>subject Characteristic</b></tt> with data type <xref href="../SubjectCharacteristic.dita">Subject Characteristic</xref>
+</li>
+<li>Contains zero or one [0..1] <tt><b>pharmacokinetic Parameter Finding</b></tt> with data type <xref href="../PharmacokineticParameterFinding.dita">Pharmacokinetic Parameter Finding</xref>
+</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="DOCSECT" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+</li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="TBD" </tt> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+</li>
+<li>Contains exactly one [1..1] <tt><b>human Clinical Subject Demographics</b></tt> with data type <xref href="../HumanClinicalSubjectDemographics.dita">Human Clinical Subject Demographics</xref>
+</li>
+<li>Contains zero or more [0..*] <tt><b>human Clinical Visit</b></tt> with data type <xref href="../Visit.dita">Visit</xref>
+</li>
+<li>Contains exactly one [1..1] <tt><b>human Clinical Study Arm</b></tt> with data type <xref href="../StudyArm.dita">Study Arm</xref>
+</li>
+<li>Contains zero or more [0..*] <tt><b>exposureAssociation</b></tt> with data type <xref href="../ExposureAssociation.dita">exposure Association</xref>
+</li>
+<li>Contains zero or more [0..*] <tt><b>subject Element</b></tt> with data type <xref href="../SubjectElement.dita">Subject Element</xref>
+</li>
+<li>Contains zero or more [0..*] <tt><b>substance Use</b></tt> with data type <xref href="../SubstanceUse.dita">Substance Use</xref>
+</li>
+<li>Contains zero or more [0..*] <tt><b>disposition</b></tt> with data type <xref href="../HumanClinicalDisposition.dita">Human Clinical Disposition</xref>
+</li>
+<li>Contains zero or more [0..*] <tt><b>medical History</b></tt> with data type <xref href="../MedicalHistoryItem.dita">Medical History Item</xref>
+</li>
+<li>Contains zero or more [0..*] <tt><b>protocol Deviation</b></tt> with data type <xref href="../ProtocolDeviation.dita">Protocol Deviation</xref>
+</li>
+<li>Contains zero or more [0..*] <tt><b>clinical Event</b></tt> with data type <xref href="../ClinicalEvent.dita">Clinical Event</xref>
+</li>
+<li>Contains zero or more [0..*] <tt><b>eCG Test Result</b></tt> with data type <xref href="../ECGTestResult.dita">ECG Test Result</xref>
+</li>
+<li>Contains zero or one [0..1] <tt><b>subject Characteristic</b></tt> with data type <xref href="../SubjectCharacteristic.dita">Subject Characteristic</xref>
+</li>
+<li>Contains zero or one [0..1] <tt><b>pharmacokinetic Parameter Finding</b></tt> with data type <xref href="../PharmacokineticParameterFinding.dita">Pharmacokinetic Parameter Finding</xref>
+</li>
+</ol>
+<codeblock id="example"><![CDATA[]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Non-Human Subject Data Document Body</ph></p>
+<p id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.23.15</tt>]</p>
+</body>
+</topic>

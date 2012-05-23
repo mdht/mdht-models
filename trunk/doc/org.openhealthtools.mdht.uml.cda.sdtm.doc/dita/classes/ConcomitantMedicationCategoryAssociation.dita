@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>concomitant Medication Category Association</title>
+<shortdesc conref="generated/_ConcomitantMedicationCategoryAssociation.dita#classId/shortdesc"></shortdesc>
+<prolog conref="generated/_ConcomitantMedicationCategoryAssociation.dita#classId/prolog"></prolog>
+<body>
+<!-- TODO: insert non-model class description markup here -->
+<section conref="generated/_ConcomitantMedicationCategoryAssociation.dita#classId/description">
+</section>
+<!-- TODO: insert UML class diagram here -->
+
+<ol audience="standards" conref="generated/_ConcomitantMedicationCategoryAssociation.dita#classId/conformance">
+<li></li>
+</ol>
+<ol audience="developer" conref="generated/_ConcomitantMedicationCategoryAssociation.dita#classId/aggregate">
+<li></li>
+</ol>
+<section conref="generated/_ConcomitantMedicationCategoryAssociation.dita#classId/tableconformance">
+</section>
+<p> </p>
+<p><b>concomitant Medication Category Association example</b></p>
+<!-- TODO: insert custom instance example here -->
+<!-- generated instance example follows -->
+<codeblock conref="generated/_ConcomitantMedicationCategoryAssociation.dita#classId/example">
+</codeblock>
+</body>
+</topic>

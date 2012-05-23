@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Human Clinical Laboratory Test Result - conformance rules</title>
+<shortdesc id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.23.31</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Observation</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.23.31"/>
+</prolog>
+<body>
+<section id="description">
+<p>Information on laboratory data collected on a reporting form or received from a central provider or vendor.</p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>
+<ul><li>A coded value that identifies the laboratory test result.  The verbatim text is placed within the original text property of the CD data type.  [SDTM: LBTESTCD, LBTEST. LBLOINC]  If the LOINC code is available it should be used as the base code within the CD type.</li></ul></li>
+<li><b>SHALL</b> contain  [1..2] <tt><b>id</b></tt>
+<ul><li>A value that is provided to ensure the uniqueness of the laboratory result.  [SDTM: LBSEQ, LBSPID]   A single identifier, the sequence number, is required.</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>statusCode</b></tt>
+<ul><li>Used to indicate whether or not an exam has been performed.  [SDTM: LBSTAT]</li></ul></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>value</b></tt> with data type CD
+<ul><li>The laboratory result, using both original units and a standard format or set of units.  [SDTM: LBORRES, LBORRESU, LBSTRESC, LBSTRESN, LBSTRESU]</li></ul></li>
+<li>Contains zero or one [0..1] <tt><b>group Identifier</b></tt> with data type <xref href="../GroupIdentifier.dita">Group Identifier</xref>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>methodCode</b></tt>
+<ul><li>Indicates the method of the test or examination.  [SDTM: LBMETHOD]</li></ul></li>
+<li>Contains zero or one [0..1] <tt><b>specimen Information</b></tt> with data type <xref href="../SpecimenInformation.dita">Specimen Information</xref>
+</li>
+<li>Contains zero or one [0..1] <tt><b>laboratoryTestResultCategoryAssociation</b></tt> with data type <xref href="../LaboratoryTestResultCategoryAssociation.dita">laboratory Test Result Category Association</xref>
+</li>
+<li>Contains zero or one [0..1] <tt><b>laboratoryTestResultSubCategoryAssociation</b></tt> with data type <xref href="../LaboratoryTestResultSubCategoryAssociation.dita">laboratory Test Result Sub Category Association</xref>
+</li>
+<li>Contains zero or one [0..1] <tt><b>referenceRangeAssociation</b></tt> with data type <xref href="../ReferenceRangeAssociation.dita">reference Range Association</xref>
+</li>
+<li>Contains zero or one [0..1] <tt><b>nonPerformanceReason</b></tt> with data type <xref href="../NonPerformanceReason.dita">Non Performance Reason</xref>
+</li>
+<li>Contains zero or one [0..1] <tt><b>study Test Performer</b></tt> with data type <xref href="../StudyTestPerformer.dita">Study Test Performer</xref>
+</li>
+<li>Contains zero or one [0..1] <tt><b>baseline Indicator</b></tt> with data type <xref href="../BaselineIndicator.dita">Baseline Indicator</xref>
+</li>
+<li>Contains zero or one [0..1] <tt><b>derived Data Indicator</b></tt> with data type <xref href="../DerivedDataIndicator.dita">Derived Data Indicator</xref>
+</li>
+<li>Contains zero or one [0..1] <tt><b>fastingAssociation</b></tt> with data type <xref href="../FastingAssociation.dita">fasting Association</xref>
+</li>
+<li>Contains zero or one [0..1] <tt><b>labToxicityAssociation</b></tt> with data type <xref href="../LabToxicityAssociation.dita">lab Toxicity Association</xref>
+</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+</li>
+<li><b>SHALL</b> contain  [1..2] <tt><b>id</b></tt>
+<ul><li>A value that is provided to ensure the uniqueness of the laboratory result.  [SDTM: LBSEQ, LBSPID]   A single identifier, the sequence number, is required.</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>
+<ul><li>A coded value that identifies the laboratory test result.  The verbatim text is placed within the original text property of the CD data type.  [SDTM: LBTESTCD, LBTEST. LBLOINC]  If the LOINC code is available it should be used as the base code within the CD type.</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>statusCode</b></tt>
+<ul><li>Used to indicate whether or not an exam has been performed.  [SDTM: LBSTAT]</li></ul></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>value</b></tt> with data type CD
+<ul><li>The laboratory result, using both original units and a standard format or set of units.  [SDTM: LBORRES, LBORRESU, LBSTRESC, LBSTRESN, LBSTRESU]</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>methodCode</b></tt>
+<ul><li>Indicates the method of the test or examination.  [SDTM: LBMETHOD]</li></ul></li>
+<li>Contains zero or one [0..1] <tt><b>group Identifier</b></tt> with data type <xref href="../GroupIdentifier.dita">Group Identifier</xref>
+</li>
+<li>Contains zero or one [0..1] <tt><b>specimen Information</b></tt> with data type <xref href="../SpecimenInformation.dita">Specimen Information</xref>
+</li>
+<li>Contains zero or one [0..1] <tt><b>laboratoryTestResultCategoryAssociation</b></tt> with data type <xref href="../LaboratoryTestResultCategoryAssociation.dita">laboratory Test Result Category Association</xref>
+</li>
+<li>Contains zero or one [0..1] <tt><b>laboratoryTestResultSubCategoryAssociation</b></tt> with data type <xref href="../LaboratoryTestResultSubCategoryAssociation.dita">laboratory Test Result Sub Category Association</xref>
+</li>
+<li>Contains zero or one [0..1] <tt><b>referenceRangeAssociation</b></tt> with data type <xref href="../ReferenceRangeAssociation.dita">reference Range Association</xref>
+</li>
+<li>Contains zero or one [0..1] <tt><b>nonPerformanceReason</b></tt> with data type <xref href="../NonPerformanceReason.dita">Non Performance Reason</xref>
+</li>
+<li>Contains zero or one [0..1] <tt><b>study Test Performer</b></tt> with data type <xref href="../StudyTestPerformer.dita">Study Test Performer</xref>
+</li>
+<li>Contains zero or one [0..1] <tt><b>baseline Indicator</b></tt> with data type <xref href="../BaselineIndicator.dita">Baseline Indicator</xref>
+</li>
+<li>Contains zero or one [0..1] <tt><b>derived Data Indicator</b></tt> with data type <xref href="../DerivedDataIndicator.dita">Derived Data Indicator</xref>
+</li>
+<li>Contains zero or one [0..1] <tt><b>fastingAssociation</b></tt> with data type <xref href="../FastingAssociation.dita">fasting Association</xref>
+</li>
+<li>Contains zero or one [0..1] <tt><b>labToxicityAssociation</b></tt> with data type <xref href="../LabToxicityAssociation.dita">lab Toxicity Association</xref>
+</li>
+</ol>
+<codeblock id="example"><![CDATA[]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Human Clinical Laboratory Test Result</ph></p>
+<p id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.23.31</tt>]</p>
+</body>
+</topic>

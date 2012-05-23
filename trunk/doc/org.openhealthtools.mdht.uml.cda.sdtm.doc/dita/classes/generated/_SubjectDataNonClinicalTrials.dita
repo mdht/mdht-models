@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Subject Data Non-Clinical Trials - conformance rules</title>
+<shortdesc id="shortdesc">[ClinicalDocument: templateId <tt>2.16.840.1.113883.10.20.23.12</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>ClinicalDocument</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.23.12"/>
+</prolog>
+<body>
+<section id="description">
+<p>This fundamental template contains the core document related information for reporting the experience of a non-human subject within a trial.</p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="DOCCLIN" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="TBD" </tt> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+</li>
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>confidentialityCode</b></tt>, where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.5.25 Confidentiality</tt>)
+<ul><li>Documents the confidentiality level of the document.</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt>
+<ul><li>The effective date for the contents of the document.</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt>
+<ul><li>The identifier assigned to the subject data report.   It is needed to uniquely identify a particular report of subject data from a study.</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>languageCode</b></tt>
+<ul><li>The language used for the document.  The entry may be left out, if the language used is English.</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>realmCode</b></tt>
+<ul><li>Identifies a country or other administrative unit that has defined particular rules for the format or content of the clinical document.</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>setId</b></tt>
+<ul><li>An identifier that remains consistent across all revisions derived from a common original.  In the first version of the document - VersonNumber = 1, setId and id will be identical.</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>versionNumber</b></tt>
+<ul><li>A unique identifier for a version of a report.</li></ul></li>
+<li>Contains exactly one [1..1] <tt><b>authorParticipation</b></tt> with data type <xref href="../AuthorParticipation.dita">Author Participation</xref>
+</li>
+<li>Contains exactly one [1..1] <tt><b>studyRelationship</b></tt> with data type <xref href="../StudyRelationship.dita">Study Relationship</xref>
+</li>
+<li>Contains exactly one [1..1] <tt><b>subjectParticipation</b></tt> with data type <xref href="../SubjectParticipation.dita">Subject Participation</xref>
+</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="DOCCLIN" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>realmCode</b></tt>
+<ul><li>Identifies a country or other administrative unit that has defined particular rules for the format or content of the clinical document.</li></ul></li>
+<li>Contains exactly one [1..1] <tt><b>typeId</b></tt> with data type <xref href="../InfrastructureRootTypeId.dita">Infrastructure Root Type Id</xref>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt>
+<ul><li>The identifier assigned to the subject data report.   It is needed to uniquely identify a particular report of subject data from a study.</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="TBD" </tt> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt>
+<ul><li>The effective date for the contents of the document.</li></ul></li>
+<li><b>SHOULD</b> contain exactly one [1..1] <tt><b>confidentialityCode</b></tt>, where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.5.25 Confidentiality</tt>)
+<ul><li>Documents the confidentiality level of the document.</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>languageCode</b></tt>
+<ul><li>The language used for the document.  The entry may be left out, if the language used is English.</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>setId</b></tt>
+<ul><li>An identifier that remains consistent across all revisions derived from a common original.  In the first version of the document - VersonNumber = 1, setId and id will be identical.</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>versionNumber</b></tt>
+<ul><li>A unique identifier for a version of a report.</li></ul></li>
+<li>Contains exactly one [1..1] <tt><b>authorParticipation</b></tt> with data type <xref href="../AuthorParticipation.dita">Author Participation</xref>
+</li>
+<li>Contains exactly one [1..1] <tt><b>studyRelationship</b></tt> with data type <xref href="../StudyRelationship.dita">Study Relationship</xref>
+</li>
+<li>Contains exactly one [1..1] <tt><b>subjectParticipation</b></tt> with data type <xref href="../SubjectParticipation.dita">Subject Participation</xref>
+</li>
+<li>Contains at least one [1..*] <tt><b>recordTarget</b></tt>, where its type is <xref href="../RecordTarget.dita">Record Target</xref>
+</li>
+<li>Contains at least one [1..*] <tt><b>author</b></tt>, where its type is <xref href="../Author.dita">Author</xref>
+</li>
+<li>Contains exactly one [1..1] <tt><b>custodian</b></tt>, where its type is <xref href="../Custodian.dita">Custodian</xref>
+</li>
+<li>Contains exactly one [1..1] <tt><b>component</b></tt>, where its type is <xref href="../Component2.dita">Component2</xref>
+</li>
+</ol>
+<codeblock id="example"><![CDATA[]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Subject Data Non-Clinical Trials</ph></p>
+<p id="shortdesc">[ClinicalDocument: templateId <tt>2.16.840.1.113883.10.20.23.12</tt>]</p>
+</body>
+</topic>

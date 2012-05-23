@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>ECG Test Result - conformance rules</title>
+<shortdesc id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.23.29</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Observation</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.23.29"/>
+</prolog>
+<body>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>
+<ul><li>A coded value that indentifies the measurement, test, or examination whose result is being conveyed.  The verbatim text is placed within the original text property of the CD data type.  [SDTM: EGTESTCD, EGTEST]</li></ul></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt>
+<ul><li>The performance date of the ECG test. [SDTM: EGDTC]</li></ul></li>
+<li><b>SHALL</b> contain  [1..3] <tt><b>id</b></tt>
+<ul><li>A value that is provided to ensure the uniqueness of ECG test result items.  [SDTM: EGSEQ, EGREFID, EGSPID]   A single identifier, the sequence number, is required.</li></ul></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>value</b></tt>
+<ul><li>Captures the ECG measurement or finding.  The finding may be recorded as a coded value - if the result is character based - or as a physical quantity - if the result is  numeric. [SDTM: EGORRES, EGORRESU, EGSTRESC, EGSTRESN, EGSTRESU]</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>
+<ul><li>Allows capture of a group identifier for the ECG result.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../GroupIdentifier.dita">Group Identifier</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.63</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> <p><i>Indicates a category the ECG test result is assigned to.</i></p><ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="COMP" </tt></li><li> This entryRelationship Contains exactly one [1..1] <tt><b>ecgTestResultCategory</b></tt> with data type <xref href="../EcgTestResultCategory.dita">ecg Test Result Category</xref></li></ol>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> <p><i>Indicates a subcategory the ECG test result is assigned to.</i></p><ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="COMP" </tt></li><li> This entryRelationship Contains exactly one [1..1] <tt><b>ecgTestResultSubCategory</b></tt> with data type <xref href="../EcgTestResultSubCategory.dita">ecg Test Result Sub Category</xref></li></ol>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> <p><i>Records the body position of the subject at the time of creating the ECG result.</i></p><ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="COMP" </tt></li><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>position</b></tt> with data type <xref href="../Position.dita">position</xref></li></ol>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>statusCode</b></tt>
+<ul><li>Used to indicate whether the activity - performance of the ECG - did occur.  Use statusCode "Completed" if the use occurred. [SDTM: EGSTAT]</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>
+<ul><li>Provides a reason for not capturing information for the ECG test result.</li></ul><ol>
+<li>Contains exactly one [1..1] <xref href="../NonPerformanceReason.dita">Non Performance Reason</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.64</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>methodCode</b></tt>
+<ul><li>Capture the method of the ECG test.  [SDTM: EGMETHOD]</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>text</b></tt>
+<ul><li>The reference property of the ED data type is used to capture the file name and path for the external ECG waveform file.  [SDTM: EGXFN]</li></ul></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> <p><i>captures the location - on the subject's body - of a lead used for collecting ECG information.</i></p><ol><li> This entryRelationship <b>SHALL</b> contain zero or one [0..1] <tt><b>@typeCode</b>="COMP" </tt></li><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>ecgLeadLocation</b></tt> with data type <xref href="../EcgLeadLocation.dita">ecg Lead Location</xref></li></ol>
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>
+<ul><li>Used to indicate whether or not a result is considered a baseline value for the study.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../BaselineIndicator.dita">Baseline Indicator</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.56</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>
+<ul><li>Used to indicate whether or not a data value has derived frrom the results of other tests or inquiries.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../DerivedDataIndicator.dita">Derived Data Indicator</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.60</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>
+<ul><li>Used to record the study day associated with an activity taking place during a single day.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
+<li>Contains exactly one [1..1] <xref href="../EventStudyDay.dita">Event Study Day</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.62</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>
+<ul><li>Orients the performance of the ECG test with respect to a study defined timepoint.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
+<li>Contains exactly one [1..1] <xref href="../TimingReference.dita">Timing Reference</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.74</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>study Test Performer</b></tt>
+<ul><li>Used to record the organization performing the test.</li></ul><ol>
+<li>Contains exactly one [1..1] <xref href="../StudyTestPerformer.dita">Study Test Performer</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.73</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>study Finding Evaluator</b></tt>
+<ul><li>Used to record the role played by the person providing the value of a subjective finding.</li></ul><ol>
+<li>Contains exactly one [1..1] <xref href="../StudyFindingEvaluator.dita">Study Finding Evaluator</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.72</tt>)</li></ol></li>
+<li><b>SHALL</b> satisfy: Use the PQR type.  Capture the numeric result in standard units as value and unit, capture the numeric result in the orginal units as a translation.  Note, this is only necessary if the original result does not use the standard units.</li>
+<li><b>SHALL</b> satisfy: Use the CE type.  Capture the character result in standard units as code and code system, capture the character result in the orginal units as a translation.  Note, this is only necessary if the original result does not use the standard format.</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+</li>
+<li><b>SHALL</b> contain  [1..3] <tt><b>id</b></tt>
+<ul><li>A value that is provided to ensure the uniqueness of ECG test result items.  [SDTM: EGSEQ, EGREFID, EGSPID]   A single identifier, the sequence number, is required.</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>
+<ul><li>A coded value that indentifies the measurement, test, or examination whose result is being conveyed.  The verbatim text is placed within the original text property of the CD data type.  [SDTM: EGTESTCD, EGTEST]</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>text</b></tt>
+<ul><li>The reference property of the ED data type is used to capture the file name and path for the external ECG waveform file.  [SDTM: EGXFN]</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>statusCode</b></tt>
+<ul><li>Used to indicate whether the activity - performance of the ECG - did occur.  Use statusCode "Completed" if the use occurred. [SDTM: EGSTAT]</li></ul></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt>
+<ul><li>The performance date of the ECG test. [SDTM: EGDTC]</li></ul></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>value</b></tt>
+<ul><li>Captures the ECG measurement or finding.  The finding may be recorded as a coded value - if the result is character based - or as a physical quantity - if the result is  numeric. [SDTM: EGORRES, EGORRESU, EGSTRESC, EGSTRESN, EGSTRESU]</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>methodCode</b></tt>
+<ul><li>Capture the method of the ECG test.  [SDTM: EGMETHOD]</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../GroupIdentifier.dita">Group Identifier</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.63</tt>)</li></ol><ul><li>Allows capture of a group identifier for the ECG result.</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> <p><i>Indicates a category the ECG test result is assigned to.</i></p><ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="COMP" </tt></li><li> This entryRelationship Contains exactly one [1..1] <tt><b>ecgTestResultCategory</b></tt> with data type <xref href="../EcgTestResultCategory.dita">ecg Test Result Category</xref></li></ol>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> <p><i>Indicates a subcategory the ECG test result is assigned to.</i></p><ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="COMP" </tt></li><li> This entryRelationship Contains exactly one [1..1] <tt><b>ecgTestResultSubCategory</b></tt> with data type <xref href="../EcgTestResultSubCategory.dita">ecg Test Result Sub Category</xref></li></ol>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> <p><i>Records the body position of the subject at the time of creating the ECG result.</i></p><ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="COMP" </tt></li><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>position</b></tt> with data type <xref href="../Position.dita">position</xref></li></ol>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../NonPerformanceReason.dita">Non Performance Reason</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.64</tt>)</li></ol><ul><li>Provides a reason for not capturing information for the ECG test result.</li></ul></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> <p><i>captures the location - on the subject's body - of a lead used for collecting ECG information.</i></p><ol><li> This entryRelationship <b>SHALL</b> contain zero or one [0..1] <tt><b>@typeCode</b>="COMP" </tt></li><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>ecgLeadLocation</b></tt> with data type <xref href="../EcgLeadLocation.dita">ecg Lead Location</xref></li></ol>
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../BaselineIndicator.dita">Baseline Indicator</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.56</tt>)</li></ol><ul><li>Used to indicate whether or not a result is considered a baseline value for the study.</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../DerivedDataIndicator.dita">Derived Data Indicator</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.60</tt>)</li></ol><ul><li>Used to indicate whether or not a data value has derived frrom the results of other tests or inquiries.</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>
+<ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
+<li>Contains exactly one [1..1] <xref href="../EventStudyDay.dita">Event Study Day</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.62</tt>)</li></ol><ul><li>Used to record the study day associated with an activity taking place during a single day.</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>
+<ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
+<li>Contains exactly one [1..1] <xref href="../TimingReference.dita">Timing Reference</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.74</tt>)</li></ol><ul><li>Orients the performance of the ECG test with respect to a study defined timepoint.</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>study Test Performer</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../StudyTestPerformer.dita">Study Test Performer</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.73</tt>)</li></ol><ul><li>Used to record the organization performing the test.</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>study Finding Evaluator</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../StudyFindingEvaluator.dita">Study Finding Evaluator</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.72</tt>)</li></ol><ul><li>Used to record the role played by the person providing the value of a subjective finding.</li></ul></li>
+<li><b>SHALL</b> satisfy: Use the PQR type.  Capture the numeric result in standard units as value and unit, capture the numeric result in the orginal units as a translation.  Note, this is only necessary if the original result does not use the standard units.</li>
+<li><b>SHALL</b> satisfy: Use the CE type.  Capture the character result in standard units as code and code system, capture the character result in the orginal units as a translation.  Note, this is only necessary if the original result does not use the standard format.</li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >sdtm::ECG Test Result</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::observation[cda:templateId/@root = 2.16.840.1.113883.10.20.23.34]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClassObservation</entry><entry></entry><entry> ALRT</entry></row> 
+<row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActMoodDocumentObservation</entry><entry></entry><entry> DEF</entry></row> 
+<row><entry>negationInd</entry><entry>@negationInd</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>Boolean</entry><entry></entry><entry> </entry></row> 
+<row><entry>nullFlavor</entry><entry>@nullFlavor</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>NullFlavor</entry><entry></entry><entry> ASKU</entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry></entry><entry> </entry></row> 
+<row><entry>derivationExpr</entry><entry>derivationExpr</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>ST</entry><entry></entry><entry> </entry></row> 
+<row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>IVL_TS</entry><entry></entry><entry> </entry></row> 
+<row><entry>id</entry><entry>id</entry><entry>1..3</entry><entry>SHALL</entry><entry>YES</entry><entry>II</entry><entry></entry><entry> </entry></row> 
+<row><entry>interpretationCode</entry><entry>interpretationCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
+<row><entry>languageCode</entry><entry>languageCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
+<row><entry>methodCode</entry><entry>methodCode</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
+<row><entry>priorityCode</entry><entry>priorityCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
+<row><entry>realmCode</entry><entry>realmCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
+<row><entry>repeatNumber</entry><entry>repeatNumber</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>IVL_INT</entry><entry></entry><entry> </entry></row> 
+<row><entry>statusCode</entry><entry>statusCode</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
+<row><entry>targetSiteCode</entry><entry>targetSiteCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CD</entry><entry></entry><entry> </entry></row> 
+<row><entry>templateId</entry><entry>templateId</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> 2.16.840.1.113883.10.20.23.34</entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>ED</entry><entry></entry><entry> </entry></row> 
+<row><entry>value</entry><entry>value</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>ANY</entry><entry></entry><entry> </entry></row> 
+<row><entry>associatedPosition</entry><entry>associatedPosition</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>associatedPosition</entry><entry></entry><entry> </entry></row> 
+<row><entry>author</entry><entry>author</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Author</entry><entry></entry><entry> </entry></row> 
+<row><entry>baseline Indicator</entry><entry>baseline Indicator</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>Baseline Indicator</entry><entry></entry><entry> </entry></row> 
+<row><entry>derived Data Indicator</entry><entry>derived Data Indicator</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Derived Data Indicator</entry><entry></entry><entry> </entry></row> 
+<row><entry>ecgTestResultCategoryAssociation</entry><entry>ecgTestResultCategoryAssociation</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>ecgTestResultCategoryAssociation</entry><entry></entry><entry> </entry></row> 
+<row><entry>ecgTestResultSubCategoryAssociation</entry><entry>ecgTestResultSubCategoryAssociation</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>ecgTestResultSubCategoryAssociation</entry><entry></entry><entry> </entry></row> 
+<row><entry>entryRelationship</entry><entry>entryRelationship</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>EntryRelationship</entry><entry></entry><entry> </entry></row> 
+<row><entry>event Study Day</entry><entry>event Study Day</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Event Study Day</entry><entry></entry><entry> </entry></row> 
+<row><entry>group Identifier</entry><entry>group Identifier</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Group Identifier</entry><entry></entry><entry> </entry></row> 
+<row><entry>informant</entry><entry>informant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Informant12</entry><entry></entry><entry> </entry></row> 
+<row><entry>leadLocationAssociation</entry><entry>leadLocationAssociation</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>leadLocationAssociation</entry><entry></entry><entry> </entry></row> 
+<row><entry>nonPerformanceReason</entry><entry>nonPerformanceReason</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Non Performance Reason</entry><entry></entry><entry> </entry></row> 
+<row><entry>participant</entry><entry>participant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Participant2</entry><entry></entry><entry> </entry></row> 
+<row><entry>performer</entry><entry>performer</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Performer2</entry><entry></entry><entry> </entry></row> 
+<row><entry>precondition</entry><entry>precondition</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Precondition</entry><entry></entry><entry> </entry></row> 
+<row><entry>reference</entry><entry>reference</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Reference</entry><entry></entry><entry> </entry></row> 
+<row><entry>referenceRange</entry><entry>referenceRange</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>ReferenceRange</entry><entry></entry><entry> </entry></row> 
+<row><entry>specimen</entry><entry>specimen</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Specimen</entry><entry></entry><entry> </entry></row> 
+<row><entry>study Finding Evaluator</entry><entry>study Finding Evaluator</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Study Finding Evaluator</entry><entry></entry><entry> </entry></row> 
+<row><entry>study Test Performer</entry><entry>study Test Performer</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Study Test Performer</entry><entry></entry><entry> </entry></row> 
+<row><entry>subject</entry><entry>subject</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>Subject</entry><entry></entry><entry> </entry></row> 
+<row><entry>timing Reference</entry><entry>timing Reference</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Timing Reference</entry><entry></entry><entry> </entry></row> 
+<row><entry>typeId</entry><entry>typeId</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>InfrastructureRootTypeId</entry><entry></entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<observation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="OBS" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.23.34"/>
+  <id root="1202207367" extension="MDHT"/>
+  <code code="1910896248"/>
+  <text>Text Value</text>
+  <statusCode code="completed"/>
+  <effectiveTime>
+    <low value="2012"/>
+    <high value="2012"/>
+  </effectiveTime>
+  <methodCode code="446894458"/>
+  <entryRelationship typeCode="COMP"/>
+  <entryRelationship typeCode="COMP"/>
+  <entryRelationship typeCode="COMP"/>
+  <entryRelationship typeCode="COMP"/>
+  <entryRelationship>
+    <act classCode="ACT" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.23.15"/>
+      <id root="1765888119" extension="MDHT"/>
+      <code code="TBD" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+      <text>Text Value</text>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+    </act>
+  </entryRelationship>
+  <entryRelationship>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.23.9"/>
+      <id root="30911191" extension="MDHT"/>
+      <code code="TBD" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+      <text>Text Value</text>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <value xsi:type="CE" code="296681821"/>
+      <methodCode code="2098570738"/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.23.57"/>
+      <id root="1849704879" extension="MDHT"/>
+      <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+      <text>Text Value</text>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <value xsi:type="BL"/>
+      <methodCode code="1210922584"/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.23.58"/>
+      <id root="1065027885" extension="MDHT"/>
+      <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+      <text>Text Value</text>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <value xsi:type="BL"/>
+      <methodCode code="1299247073"/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.23.11"/>
+      <id root="326231189" extension="MDHT"/>
+      <code code="TBD" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+      <text>Text Value</text>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <value xsi:type="INT" value="1"/>
+      <methodCode code="485271196"/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <act classCode="ACT" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.23.14"/>
+      <id root="525329027" extension="MDHT"/>
+      <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+      <text>Text Value</text>
+      <statusCode code="completed"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <entryRelationship typeCode="COMP">
+        <act classCode="ACT"/>
+      </entryRelationship>
+    </act>
+  </entryRelationship>
+</observation>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">ECG Test Result</ph></p>
+<p id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.23.29</tt>]</p>
+</body>
+</topic>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Drug Accountability - conformance rules</title>
+<shortdesc id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.23.37</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Observation</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.23.37"/>
+</prolog>
+<body>
+<section id="description">
+<p>The structure allows entry of a wide range of data related to the drugs used in a study.   It is intended for use in tracking the receipt, dispensing, return, and packaging of the study drug.  However, the SDTM IG notes that a) one way a sponsor may choose to distinguish between different types of medications (e.g., study medication, rescue medication, run-in medication) is to use DACAT, and b) DAREFID and DASPID are both available for capturing label information.</p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>
+<ul><li>A coded value that indentifies the drug accountability item whose value is being conveyed.  The verbatim text is placed within the original text property of the CD data type.  [SDTM: DATESTCD, DATEST]</li></ul></li>
+<li><b>SHALL</b> contain  [1..3] <tt><b>id</b></tt>
+<ul><li>A value that is provided to ensure the uniqueness of drug accountability items.  [SDTM: DASEQ, DAREFID, DASPID]   A single identifier, the sequence number, is required.</li></ul></li>
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>value</b></tt>
+<ul><li>Captures the drug accountability value.  The finding may be recorded as a coded value - if the result is character based - or as a physical quantity - if the result is  numeric. [SDTM: DAORRES, DAORRESU, DASTRESC, DASTRESN, DASTRESU]</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>
+<ul><li>Allows capture of a group identifier for the drug accountability item.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../GroupIdentifier.dita">Group Identifier</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.63</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> <p><i>Indicates a category the drug accountability item is assigned to.</i></p><ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="COMP" </tt></li><li> This entryRelationship Contains exactly one [1..1] <tt><b>drugAccountabilityCategory</b></tt> with data type <xref href="../DrugAccountabilityCategory.dita">drug Accountability Category</xref></li></ol>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> <p><i>Indicates a subcategory the drug accountability item is assigned to.</i></p><ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="COMP" </tt></li><li> This entryRelationship Contains exactly one [1..1] <tt><b>drugAccountabilitySubCategory</b></tt> with data type <xref href="../DrugAccountabilitySubCategory.dita">drug Accountability Sub Category</xref></li></ol>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>statusCode</b></tt>
+<ul><li>Used to indicate whether the activity - recording the drug accountability value - did occur.  Use statusCode "Completed" if the use occurred. [SDTM: DASTAT]</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>
+<ul><li>Provides a reason for not capturing information for the drug accountability item.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../NonPerformanceReason.dita">Non Performance Reason</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.64</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt>
+<ul><li>The date/time of the accountability assessment.  [SDTM: DADTC]</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>
+<ul><li>Used to record the study day associated with an activity taking place during a single day.</li></ul><ol>
+<li>Contains exactly one [1..1] <xref href="../EventStudyDay.dita">Event Study Day</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.62</tt>)</li></ol></li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+</li>
+<li><b>SHALL</b> contain  [1..3] <tt><b>id</b></tt>
+<ul><li>A value that is provided to ensure the uniqueness of drug accountability items.  [SDTM: DASEQ, DAREFID, DASPID]   A single identifier, the sequence number, is required.</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>
+<ul><li>A coded value that indentifies the drug accountability item whose value is being conveyed.  The verbatim text is placed within the original text property of the CD data type.  [SDTM: DATESTCD, DATEST]</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>statusCode</b></tt>
+<ul><li>Used to indicate whether the activity - recording the drug accountability value - did occur.  Use statusCode "Completed" if the use occurred. [SDTM: DASTAT]</li></ul></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt>
+<ul><li>The date/time of the accountability assessment.  [SDTM: DADTC]</li></ul></li>
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>value</b></tt>
+<ul><li>Captures the drug accountability value.  The finding may be recorded as a coded value - if the result is character based - or as a physical quantity - if the result is  numeric. [SDTM: DAORRES, DAORRESU, DASTRESC, DASTRESN, DASTRESU]</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../GroupIdentifier.dita">Group Identifier</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.63</tt>)</li></ol><ul><li>Allows capture of a group identifier for the drug accountability item.</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> <p><i>Indicates a category the drug accountability item is assigned to.</i></p><ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="COMP" </tt></li><li> This entryRelationship Contains exactly one [1..1] <tt><b>drugAccountabilityCategory</b></tt> with data type <xref href="../DrugAccountabilityCategory.dita">drug Accountability Category</xref></li></ol>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> <p><i>Indicates a subcategory the drug accountability item is assigned to.</i></p><ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="COMP" </tt></li><li> This entryRelationship Contains exactly one [1..1] <tt><b>drugAccountabilitySubCategory</b></tt> with data type <xref href="../DrugAccountabilitySubCategory.dita">drug Accountability Sub Category</xref></li></ol>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>
+<ol>
+<li>Contains <tt><b>@typeCode="</b>COMP" </tt><i>COMP</i></li>
+<li>Contains exactly one [1..1] <xref href="../NonPerformanceReason.dita">Non Performance Reason</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.64</tt>)</li></ol><ul><li>Provides a reason for not capturing information for the drug accountability item.</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../EventStudyDay.dita">Event Study Day</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.62</tt>)</li></ol><ul><li>Used to record the study day associated with an activity taking place during a single day.</li></ul></li>
+</ol>
+<codeblock id="example"><![CDATA[]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Drug Accountability</ph></p>
+<p id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.23.37</tt>]</p>
+</body>
+</topic>

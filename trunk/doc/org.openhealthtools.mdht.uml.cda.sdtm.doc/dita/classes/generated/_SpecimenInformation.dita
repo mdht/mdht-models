@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Specimen Information - conformance rules</title>
+<shortdesc id="shortdesc">[Procedure: templateId <tt>2.16.840.1.113883.10.20.23.67</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Procedure</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.23.67"/>
+</prolog>
+<body>
+<section id="description">
+<p>The reusable structure carrying specimen information is has, as its starting point, the act of specimen collection. Specimen information is captured as characteristics of the entity playing the specimen role, while specimen condition is recorded as a component act.</p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ACT" </tt><i>Act</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt>
+<ul><li>The point in time at which the specimen on which the test is based was collected.  This may also be a time interval with a start point and a stopping point.  [SDTM: LBDTC, LBENDTC, MBDTC, PCDTC, PCENDTC ]  Note the point in time, or the start of the specimen collection interval is expected data, while the end point of a collection interval is optional.</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.3.26.1.1 NCI Thesaurus</tt>)
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>specimen</b></tt> <p><i>Captures information regarding the entity - material item - playing the role of specimen.</i></p><ol><li> This specimen <b>SHALL</b> contain zero or one [0..1] <tt><b>@typeCode</b>="SPC" </tt></li><li> This specimen <b>SHOULD</b> contain zero or one [0..1] <tt><b>specimenRole</b></tt> <ol><li> This specimenRole <b>SHALL</b> contain zero or one [0..1] <tt><b>@classCode</b>="SPEC" </tt></li><li> This specimenRole <b>MAY</b> contain zero or one [0..1] <tt><b>id</b></tt><p><i>An identifier for the specimen on which the test result is based.  [SDTM: LBREFID, MBREFID, MSREFID, PCREFID]</i></p></li><li> This specimenRole <b>SHOULD</b> contain zero or one [0..1] <tt><b>specimenEntity</b></tt> <ol><li> This specimenEntity <b>SHALL</b> contain zero or one [0..1] <tt><b>@classCode</b>="ENT" </tt></li><li> This specimenEntity <b>SHALL</b> contain zero or one [0..1] <tt><b>@determinerCode</b>="INSTANCE" </tt></li><li> This specimenEntity <b>SHALL</b> contain zero or one [0..1] <tt><b>code</b></tt><p><i>Used to indicate the specimen type.  [SDTM: LBSPEC, PCSPEC, PPSPEC]</i></p></li></ol> </li></ol> </li></ol>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> <p><i>Used to record information regarding the condition of the specimen at the point of testing.</i></p><ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="COMP" </tt></li><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> <ol><li> This observation Contains exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.3.26.1.1 NCI Thesaurus</tt>)<p><i>The value indicates the nature of the observation.  It provides information on the specimen condition.</i></p></li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CE<p><i>Information on the condition of a specimen used for testing.   [SDTM: LBSPCCND, MBSPCCND, PCSPCCND]</i></p></li></ol> </li></ol>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>
+<ul><li>Used to record the study day associated with an activity taking place during a single day.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
+<li>Contains exactly one [1..1] <xref href="../EventStudyDay.dita">Event Study Day</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.62</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>
+<ul><li>Orients the performance of the test on the specimen with respect to a study defined timepoint.</li></ul><ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
+<li>Contains exactly one [1..1] <xref href="../TimingReference.dita">Timing Reference</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.74</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>targetSiteCode</b></tt>
+<ul><li>The body site from which a specimen was collected.  {SDTM: MBLOC]</li></ul></li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ACT" </tt><i>Act</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.3.26.1.1 NCI Thesaurus</tt>)
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt>
+<ul><li>The point in time at which the specimen on which the test is based was collected.  This may also be a time interval with a start point and a stopping point.  [SDTM: LBDTC, LBENDTC, MBDTC, PCDTC, PCENDTC ]  Note the point in time, or the start of the specimen collection interval is expected data, while the end point of a collection interval is optional.</li></ul></li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>targetSiteCode</b></tt>
+<ul><li>The body site from which a specimen was collected.  {SDTM: MBLOC]</li></ul></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>specimen</b></tt> <p><i>Captures information regarding the entity - material item - playing the role of specimen.</i></p><ol><li> This specimen <b>SHALL</b> contain zero or one [0..1] <tt><b>@typeCode</b>="SPC" </tt></li><li> This specimen <b>SHOULD</b> contain zero or one [0..1] <tt><b>specimenRole</b></tt> <ol><li> This specimenRole <b>SHALL</b> contain zero or one [0..1] <tt><b>@classCode</b>="SPEC" </tt></li><li> This specimenRole <b>MAY</b> contain zero or one [0..1] <tt><b>id</b></tt><p><i>An identifier for the specimen on which the test result is based.  [SDTM: LBREFID, MBREFID, MSREFID, PCREFID]</i></p></li><li> This specimenRole <b>SHOULD</b> contain zero or one [0..1] <tt><b>specimenEntity</b></tt> <ol><li> This specimenEntity <b>SHALL</b> contain zero or one [0..1] <tt><b>@classCode</b>="ENT" </tt></li><li> This specimenEntity <b>SHALL</b> contain zero or one [0..1] <tt><b>@determinerCode</b>="INSTANCE" </tt></li><li> This specimenEntity <b>SHALL</b> contain zero or one [0..1] <tt><b>code</b></tt><p><i>Used to indicate the specimen type.  [SDTM: LBSPEC, PCSPEC, PPSPEC]</i></p></li></ol> </li></ol> </li></ol>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> <p><i>Used to record information regarding the condition of the specimen at the point of testing.</i></p><ol><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="COMP" </tt></li><li> This entryRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> <ol><li> This observation Contains exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.3.26.1.1 NCI Thesaurus</tt>)<p><i>The value indicates the nature of the observation.  It provides information on the specimen condition.</i></p></li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CE<p><i>Information on the condition of a specimen used for testing.   [SDTM: LBSPCCND, MBSPCCND, PCSPCCND]</i></p></li></ol> </li></ol>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>
+<ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
+<li>Contains exactly one [1..1] <xref href="../EventStudyDay.dita">Event Study Day</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.62</tt>)</li></ol><ul><li>Used to record the study day associated with an activity taking place during a single day.</li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt>
+<ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR</i></li>
+<li>Contains exactly one [1..1] <xref href="../TimingReference.dita">Timing Reference</xref> (templateId: <tt>2.16.840.1.113883.10.20.23.74</tt>)</li></ol><ul><li>Orients the performance of the test on the specimen with respect to a study defined timepoint.</li></ul></li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >sdtm::Specimen Information</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::procedure[cda:templateId/@root = 2.16.840.1.113883.10.20.23.59]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActClass</entry><entry></entry><entry> ACCM</entry></row> 
+<row><entry>moodCode</entry><entry>@moodCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>NO</entry><entry>x_ActMoodDocumentObservation</entry><entry></entry><entry> APT</entry></row> 
+<row><entry>negationInd</entry><entry>@negationInd</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>Boolean</entry><entry></entry><entry> </entry></row> 
+<row><entry>nullFlavor</entry><entry>@nullFlavor</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>NullFlavor</entry><entry></entry><entry> ASKU</entry></row> 
+<row><entry>approachSiteCode</entry><entry>approachSiteCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CD</entry><entry></entry><entry> </entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CD</entry><entry></entry><entry>NCI Thesaurus 2.16.840.1.113883.3.26.1.1 null</entry></row> 
+<row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>IVL_TS</entry><entry></entry><entry> </entry></row> 
+<row><entry>id</entry><entry>id</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> </entry></row> 
+<row><entry>languageCode</entry><entry>languageCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
+<row><entry>methodCode</entry><entry>methodCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
+<row><entry>priorityCode</entry><entry>priorityCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
+<row><entry>realmCode</entry><entry>realmCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
+<row><entry>statusCode</entry><entry>statusCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
+<row><entry>targetSiteCode</entry><entry>targetSiteCode</entry><entry>0..*</entry><entry>MAY</entry><entry>YES</entry><entry>CD</entry><entry></entry><entry> </entry></row> 
+<row><entry>templateId</entry><entry>templateId</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> 2.16.840.1.113883.10.20.23.59</entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>ED</entry><entry></entry><entry> </entry></row> 
+<row><entry>author</entry><entry>author</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Author</entry><entry></entry><entry> </entry></row> 
+<row><entry>conditionAssociation</entry><entry>conditionAssociation</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>conditionAssociation</entry><entry></entry><entry> </entry></row> 
+<row><entry>entryRelationship</entry><entry>entryRelationship</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>EntryRelationship</entry><entry></entry><entry> </entry></row> 
+<row><entry>event Study Day</entry><entry>event Study Day</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Event Study Day</entry><entry></entry><entry> </entry></row> 
+<row><entry>informant</entry><entry>informant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Informant12</entry><entry></entry><entry> </entry></row> 
+<row><entry>participant</entry><entry>participant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Participant2</entry><entry></entry><entry> </entry></row> 
+<row><entry>participatingSpecimen</entry><entry>participatingSpecimen</entry><entry>0..1</entry><entry>SHOULD</entry><entry>YES</entry><entry>participatingSpecimen</entry><entry></entry><entry> </entry></row> 
+<row><entry>performer</entry><entry>performer</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Performer2</entry><entry></entry><entry> </entry></row> 
+<row><entry>precondition</entry><entry>precondition</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Precondition</entry><entry></entry><entry> </entry></row> 
+<row><entry>reference</entry><entry>reference</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Reference</entry><entry></entry><entry> </entry></row> 
+<row><entry>specimen</entry><entry>specimen</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Specimen</entry><entry></entry><entry> </entry></row> 
+<row><entry>subject</entry><entry>subject</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>Subject</entry><entry></entry><entry> </entry></row> 
+<row><entry>timing Reference</entry><entry>timing Reference</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>Timing Reference</entry><entry></entry><entry> </entry></row> 
+<row><entry>typeId</entry><entry>typeId</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>InfrastructureRootTypeId</entry><entry></entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<procedure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="ACT" moodCode="EVN">
+  <templateId root="2.16.840.1.113883.10.20.23.59"/>
+  <id root="89478474" extension="MDHT"/>
+  <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+  <effectiveTime>
+    <low value="2012"/>
+    <high value="2012"/>
+  </effectiveTime>
+  <targetSiteCode code="895488056"/>
+  <specimen typeCode="SPC">
+    <specimenRole classCode="SPEC">
+      <id root="627114671" extension="MDHT"/>
+    </specimenRole>
+  </specimen>
+  <entryRelationship typeCode="COMP">
+    <observation classCode="OBS" moodCode="EVN">
+      <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+      <value xsi:type="CE" code="652208325"/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <observation classCode="OBS" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.23.11"/>
+      <id root="1534968288" extension="MDHT"/>
+      <code code="TBD" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <targetSiteCode code="209927875"/>
+    </observation>
+  </entryRelationship>
+  <entryRelationship>
+    <act classCode="ACT" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10.20.23.14"/>
+      <id root="1742391324" extension="MDHT"/>
+      <code codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+      <effectiveTime>
+        <low value="2012"/>
+        <high value="2012"/>
+      </effectiveTime>
+      <entryRelationship typeCode="COMP">
+        <act classCode="ACT"/>
+      </entryRelationship>
+    </act>
+  </entryRelationship>
+</procedure>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Specimen Information</ph></p>
+<p id="shortdesc">[Procedure: templateId <tt>2.16.840.1.113883.10.20.23.67</tt>]</p>
+</body>
+</topic>
