@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Body System or Organ Class</title>
+<shortdesc conref="generated/_BodySystemOrOrganClass.dita#classId/shortdesc"></shortdesc>
+<prolog conref="generated/_BodySystemOrOrganClass.dita#classId/prolog"></prolog>
+<body>
+<!-- TODO: insert non-model class description markup here -->
+<section conref="generated/_BodySystemOrOrganClass.dita#classId/description">
+</section>
+<!-- TODO: insert UML class diagram here -->
+
+<ol audience="standards" conref="generated/_BodySystemOrOrganClass.dita#classId/conformance">
+<li></li>
+</ol>
+<ol audience="developer" conref="generated/_BodySystemOrOrganClass.dita#classId/aggregate">
+<li></li>
+</ol>
+<section conref="generated/_BodySystemOrOrganClass.dita#classId/tableconformance">
+</section>
+<p> </p>
+<p><b>Body System or Organ Class example</b></p>
+<!-- TODO: insert custom instance example here -->
+<!-- generated instance example follows -->
+<codeblock conref="generated/_BodySystemOrOrganClass.dita#classId/example">
+</codeblock>
+</body>
+</topic>

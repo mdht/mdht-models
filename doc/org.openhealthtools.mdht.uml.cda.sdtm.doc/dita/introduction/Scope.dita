@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN"
+ "dtd/topic.dtd">
+<topic id="topicId" xml:lang="en-us">
+	<title>Implementation Guide Scope</title>
+	<body>
+		<p> TO DO.  Use language from project scope statement
+		</p>
+		
+		<p><b>Vocabulary considerations</b></p>
+		<p>Text needs to be added to address our approach to vocabulary.</p>
+		
+			<p><b>Identifier considerations</b></p>
+		<p>Text needs to be added to address our approach to managing identifiers.</p>
+	</body>
+</topic>

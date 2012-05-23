@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Non-Human Disposition - conformance rules</title>
+<shortdesc id="shortdesc">[Act: templateId <tt>2.16.840.1.113883.10.20.23.25</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Act</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.23.25"/>
+</prolog>
+<body>
+<section id="description">
+<p>Disposition information provides an accounting for all subjects who entered the study and may include protocol milestones, such as randomization, as well as the subject's completion status or reason for discontinuation for the entire study or each phase or segment of the study, including screening and post-treatment follow-up.</p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ACT" </tt><i>Act</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>
+<ul><li>A code drawn from a controlled terminology for the event or protocol milestone.  The verbatim name for the term must be captured as well.  [SDTM:DSTERM; DSDECOD]</li></ul></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt>
+<ul><li>The start date/time of the disposition event.  [SDTM: DSSTDTC]</li></ul></li>
+<li><b>SHALL</b> contain  [1..2] <tt><b>id</b></tt>
+<ul><li>An identifier that is used to ensure the  uniqueness of subject records within the substance use domain.  [SDTM: DSSEQ, DSREFID]  Note, the Sequence Number is required.</li></ul></li>
+<li>Contains zero or one [0..1] <tt><b>dispositionCategoryAssociation</b></tt> with data type <xref href="../DispositionCategoryAssociation.dita">disposition Category Association</xref>
+</li>
+<li>Contains zero or one [0..1] <tt><b>dispositionSubCategoryAssociation</b></tt> with data type <xref href="../DispositionSubCategoryAssociation.dita">disposition Sub Category Association</xref>
+</li>
+<li>Contains zero or one [0..1] <tt><b>study Epoch</b></tt> with data type <xref href="../StudyEpoch.dita">Study Epoch</xref>
+</li>
+<li>Contains zero or one [0..1] <tt><b>data Collection</b></tt> with data type <xref href="../DataCollection.dita">Data Collection</xref>
+</li>
+<li>Contains zero or one [0..1] <tt><b>group Identifier</b></tt> with data type <xref href="../GroupIdentifier.dita">Group Identifier</xref>
+</li>
+<li>Contains zero or one [0..1] <tt><b>study Day Period</b></tt> with data type <xref href="../StudyDayPeriod.dita">Study Day Period</xref>
+</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ACT" </tt><i>Act</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+</li>
+<li><b>SHALL</b> contain  [1..2] <tt><b>id</b></tt>
+<ul><li>An identifier that is used to ensure the  uniqueness of subject records within the substance use domain.  [SDTM: DSSEQ, DSREFID]  Note, the Sequence Number is required.</li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>
+<ul><li>A code drawn from a controlled terminology for the event or protocol milestone.  The verbatim name for the term must be captured as well.  [SDTM:DSTERM; DSDECOD]</li></ul></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt>
+<ul><li>The start date/time of the disposition event.  [SDTM: DSSTDTC]</li></ul></li>
+<li>Contains zero or one [0..1] <tt><b>dispositionCategoryAssociation</b></tt> with data type <xref href="../DispositionCategoryAssociation.dita">disposition Category Association</xref>
+</li>
+<li>Contains zero or one [0..1] <tt><b>dispositionSubCategoryAssociation</b></tt> with data type <xref href="../DispositionSubCategoryAssociation.dita">disposition Sub Category Association</xref>
+</li>
+<li>Contains zero or one [0..1] <tt><b>study Epoch</b></tt> with data type <xref href="../StudyEpoch.dita">Study Epoch</xref>
+</li>
+<li>Contains zero or one [0..1] <tt><b>data Collection</b></tt> with data type <xref href="../DataCollection.dita">Data Collection</xref>
+</li>
+<li>Contains zero or one [0..1] <tt><b>group Identifier</b></tt> with data type <xref href="../GroupIdentifier.dita">Group Identifier</xref>
+</li>
+<li>Contains zero or one [0..1] <tt><b>study Day Period</b></tt> with data type <xref href="../StudyDayPeriod.dita">Study Day Period</xref>
+</li>
+</ol>
+<codeblock id="example"><![CDATA[]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Non-Human Disposition</ph></p>
+<p id="shortdesc">[Act: templateId <tt>2.16.840.1.113883.10.20.23.25</tt>]</p>
+</body>
+</topic>
