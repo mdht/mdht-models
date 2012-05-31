@@ -763,7 +763,7 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
     if (GET_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(161));
+      helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(170));
       try
       {
         GET_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL__EOCL_QRY = helper.createQuery(GET_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL__EOCL_EXP);
@@ -812,7 +812,7 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
     if (GET_ALLERGIES_SECTION_ENTRIES_OPTIONAL__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(162));
+      helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(171));
       try
       {
         GET_ALLERGIES_SECTION_ENTRIES_OPTIONAL__EOCL_QRY = helper.createQuery(GET_ALLERGIES_SECTION_ENTRIES_OPTIONAL__EOCL_EXP);
@@ -861,7 +861,7 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
     if (GET_BILLING__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(163));
+      helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(172));
       try
       {
         GET_BILLING__EOCL_QRY = helper.createQuery(GET_BILLING__EOCL_EXP);
@@ -910,7 +910,7 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
     if (GET_SECTION__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(164));
+      helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(173));
       try
       {
         GET_SECTION__EOCL_QRY = helper.createQuery(GET_SECTION__EOCL_EXP);

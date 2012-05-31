@@ -819,7 +819,15 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        source, 
        new String[] 
        {
-       "constraints.validation.error", "PatientAdministrativeGenderCode"
+       "raceCode.codeSystem", "2.16.840.1.113883.6.238",
+       "raceCode.codeSystemName", "Race and Ethnicity - CDC",
+       "administrativeGenderCode.codeSystemName", "AdministrativeGenderCode",
+       "ethnicGroupCode.codeSystemName", "Race and Ethnicity - CDC",
+       "constraints.validation.error", "PatientEthnicGroupCode PatientRaceCode PatientSDTCRaceCode PatientAdministrativeGenderCode PatientAdministrativeGenderCodeP",
+       "administrativeGenderCode.codeSystem", "2.16.840.1.113883.5.1",
+       "ethnicGroupCode.codeSystem", "2.16.840.1.113883.6.238",
+       "sDTCRaceCode.codeSystem", "2.16.840.1.113883.6.238",
+       "sDTCRaceCode.codeSystemName", "Race and Ethnicity - CDC"
        });																																																																																																																																																																																					
   }
 
