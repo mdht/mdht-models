@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>EMS Medications Administered - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.17.3.10.1.18</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="2.16.840.1.113883.17.3.10.1.18"/>
+</prolog>
+<body>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> conform to <xref href="../DerivedCDASection.dita">Derived CDA Section</xref></li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>code</b></tt><tt><b>/@code</b>="67849?0" </tt><i>Medications administered</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+</li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>text</b></tt>
+</li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>title</b></tt>
+</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> conform to <xref href="../DerivedCDASection.dita">Derived CDA Section</xref></li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>code</b></tt><tt><b>/@code</b>="67849?0" </tt><i>Medications administered</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+</li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>title</b></tt>
+</li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>text</b></tt>
+</li>
+</ol>
+<codeblock id="example"><![CDATA[]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">EMS Medications Administered</ph></p>
+<p id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.17.3.10.1.18</tt>]</p>
+</body>
+</topic>

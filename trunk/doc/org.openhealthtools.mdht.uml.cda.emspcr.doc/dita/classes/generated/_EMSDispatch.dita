@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>EMS Dispatch - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.17.3.10.1.2</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="2.16.840.1.113883.17.3.10.1.2"/>
+</prolog>
+<body>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> conform to <xref href="../DerivedCDASection.dita">Derived CDA Section</xref></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67660?1" </tt><i>Dispatch</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> = "EMS Dispatch"
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>eMSEmergencyMedicalDispatchRelationship</b></tt> <ol><li> This eMSEmergencyMedicalDispatchRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67488?7" </tt><i>EMDPerformed</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/EMDPerformed.dita">EMDPerformed</xref> 2.16.840.1.113883.17.3.5.48</tt><b> STATIC</b></li></ol> </li></ol>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>eMSComplaintReportedByDispatchRelationship</b></tt> <ol><li> This eMSComplaintReportedByDispatchRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt></li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/Complaint.dita">Complaint</xref> 2.16.840.1.113883.17.3.5.49</tt><b> STATIC</b></li></ol> </li></ol>
+</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> conform to <xref href="../DerivedCDASection.dita">Derived CDA Section</xref></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67660?1" </tt><i>Dispatch</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> = "EMS Dispatch"
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>eMSEmergencyMedicalDispatchRelationship</b></tt> <ol><li> This eMSEmergencyMedicalDispatchRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67488?7" </tt><i>EMDPerformed</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/EMDPerformed.dita">EMDPerformed</xref> 2.16.840.1.113883.17.3.5.48</tt><b> STATIC</b></li></ol> </li></ol>
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>eMSComplaintReportedByDispatchRelationship</b></tt> <ol><li> This eMSComplaintReportedByDispatchRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt></li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/Complaint.dita">Complaint</xref> 2.16.840.1.113883.17.3.5.49</tt><b> STATIC</b></li></ol> </li></ol>
+</li>
+</ol>
+<codeblock id="example"><![CDATA[]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">EMS Dispatch</ph></p>
+<p id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.17.3.10.1.2</tt>]</p>
+</body>
+</topic>

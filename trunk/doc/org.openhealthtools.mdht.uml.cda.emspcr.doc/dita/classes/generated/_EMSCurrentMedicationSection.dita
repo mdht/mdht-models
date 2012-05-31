@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>EMS Current Medication Section - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.17.3.10.1.15</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="2.16.840.1.113883.17.3.10.1.15"/>
+</prolog>
+<body>
+<section id="description">
+<p>NEMSIS Trace: EHistory.12</p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> conform to <xref href="../DerivedCDASection.dita">Derived CDA Section</xref></li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>code</b></tt><tt><b>/@code</b>="67844-1" </tt><i>EMS Current Medications</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+</li>
+<li>Contains zero or one [0..1] <tt><b>title</b></tt>
+</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> conform to <xref href="../DerivedCDASection.dita">Derived CDA Section</xref></li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>code</b></tt><tt><b>/@code</b>="67844-1" </tt><i>EMS Current Medications</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+</li>
+<li>Contains zero or one [0..1] <tt><b>title</b></tt>
+</li>
+</ol>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <id root="1535456490" extension="MDHT"/>
+  <code code="67844-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS Current Medications"/>
+  <title>TEXT FOR TITLE</title>
+</section>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">EMS Current Medication Section</ph></p>
+<p id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.17.3.10.1.15</tt>]</p>
+</body>
+</topic>
