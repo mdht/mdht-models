@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>EMS Billing - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.17.3.10.1.5</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="2.16.840.1.113883.17.3.10.1.5"/>
+</prolog>
+<body>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> conform to <xref href="../DerivedCDASection.dita">Derived CDA Section</xref></li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>code</b></tt><tt><b>/@code</b>="67659-3" </tt> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> <ol><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="69464-6" </tt><i>EMS level of service</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)</li><li> This entry <b>SHALL</b> contain zero or more [0..*] <tt><b>value</b></tt> with data type CD, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/EMSLevelOfService.dita">EMSLevelOfService</xref> 2.16.840.1.113883.17.3.5.70</tt><b> STATIC</b></li></ol>
+</li>
+<li>Contains zero or one [0..1] <tt><b>entry</b></tt> <ol><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67556-1" </tt> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)</li><li> This entry <b>SHALL</b> contain zero or more [0..*] <tt><b>value</b></tt> with data type CD, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/EMSBillingCondition.dita">EMSBillingCondition</xref> 2.16.840.1.113883.17.3.5.71</tt><b> STATIC</b></li></ol>
+</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> conform to <xref href="../DerivedCDASection.dita">Derived CDA Section</xref></li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>code</b></tt><tt><b>/@code</b>="67659-3" </tt> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> <ol><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="69464-6" </tt><i>EMS level of service</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)</li><li> This entry <b>SHALL</b> contain zero or more [0..*] <tt><b>value</b></tt> with data type CD, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/EMSLevelOfService.dita">EMSLevelOfService</xref> 2.16.840.1.113883.17.3.5.70</tt><b> STATIC</b></li></ol>
+</li>
+<li>Contains zero or one [0..1] <tt><b>entry</b></tt> <ol><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67556-1" </tt> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)</li><li> This entry <b>SHALL</b> contain zero or more [0..*] <tt><b>value</b></tt> with data type CD, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/EMSBillingCondition.dita">EMSBillingCondition</xref> 2.16.840.1.113883.17.3.5.71</tt><b> STATIC</b></li></ol>
+</li>
+</ol>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <templateId root="2.16.840.1.113883.17.3.10.1.5"/>
+  <id root="1365117042" extension="MDHT"/>
+  <code code="67659-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+  <title>TEXT FOR TITLE</title>
+  <entry>
+    <observation/>
+  </entry>
+  <entry>
+    <observation/>
+  </entry>
+</section>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">EMS Billing</ph></p>
+<p id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.17.3.10.1.5</tt>]</p>
+</body>
+</topic>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>EMS Advance Directives - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.17.3.10.1.12</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="2.16.840.1.113883.17.3.10.1.12"/>
+</prolog>
+<body>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>code</b></tt><tt><b>/@code</b>="67840-9" </tt><i>EMS Advance Directives</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+</li>
+<li>Contains zero or one [0..1] <tt><b>title</b></tt>
+</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>code</b></tt><tt><b>/@code</b>="67840-9" </tt><i>EMS Advance Directives</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+</li>
+<li>Contains zero or one [0..1] <tt><b>title</b></tt>
+</li>
+</ol>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <templateId root="2.16.840.1.113883.17.3.10.1.12"/>
+  <id root="1068170850" extension="MDHT"/>
+  <code code="67840-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS Advance Directives"/>
+  <title>TEXT FOR TITLE</title>
+</section>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">EMS Advance Directives</ph></p>
+<p id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.17.3.10.1.12</tt>]</p>
+</body>
+</topic>
