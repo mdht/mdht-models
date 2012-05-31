@@ -51,7 +51,7 @@
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_WDj6YHSPEeGa4IXs2ghZEw" name="TurnAroundDelayType"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_YT_E4HSPEeGa4IXs2ghZEw" name="TransportationMode"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_dEV1gHSPEeGa4IXs2ghZEw" name="IVSite"/>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_hkC7AHSPEeGa4IXs2ghZEw" name="ResuscitationAttempted"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_hkC7AHSPEeGa4IXs2ghZEw" name="ResuscitationNotAttemptedReason"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_olMCgHSPEeGa4IXs2ghZEw" name="CardiopulmonaryResuscitationType"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_s33YoHSPEeGa4IXs2ghZEw" name="ProcedureComplicationType"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_wrYGgHSPEeGa4IXs2ghZEw" name="VehiclePassengerLocation"/>
@@ -89,6 +89,7 @@
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_Deg4kHSUEeGa4IXs2ghZEw" name="GlasgowComaScoreQualifier"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_HE_3EHSUEeGa4IXs2ghZEw" name="CardiacArrestTiming"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_MkY38HSUEeGa4IXs2ghZEw" name="DisasterType"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_dw32sJsjEeGzXI65shd6Fw" name="MedicationNotGivenReason"/>
     <profileApplication xmi:id="_xpzscWeQEeGtXKebdWh3hg">
       <eAnnotations xmi:id="_xp0TgGeQEeGtXKebdWh3hg" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
@@ -188,4 +189,5 @@
   <term:ValueSetVersion xmi:id="_DehfoHSUEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.5.89" base_Enumeration="_Deg4kHSUEeGa4IXs2ghZEw"/>
   <term:ValueSetVersion xmi:id="_HFAeIHSUEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.5.91" base_Enumeration="_HE_3EHSUEeGa4IXs2ghZEw"/>
   <term:ValueSetVersion xmi:id="_MkZfAHSUEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.5.9" base_Enumeration="_MkY38HSUEeGa4IXs2ghZEw"/>
+  <term:ValueSetVersion xmi:id="_dw5r4JsjEeGzXI65shd6Fw" identifier="2.16.840.1.113883.17.3.5.92" base_Enumeration="_dw32sJsjEeGzXI65shd6Fw"/>
 </xmi:XMI>
