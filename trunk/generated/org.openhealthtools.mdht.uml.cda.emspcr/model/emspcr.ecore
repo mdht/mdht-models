@@ -20,7 +20,15 @@
       <details key="constraints.validation.error" value="PatientRoleAddr"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSRecordTargetPatientRolePatient">
-      <details key="constraints.validation.error" value="PatientAdministrativeGenderCode"/>
+      <details key="raceCode.codeSystem" value="2.16.840.1.113883.6.238"/>
+      <details key="raceCode.codeSystemName" value="Race and Ethnicity - CDC"/>
+      <details key="administrativeGenderCode.codeSystemName" value="AdministrativeGenderCode"/>
+      <details key="ethnicGroupCode.codeSystemName" value="Race and Ethnicity - CDC"/>
+      <details key="constraints.validation.error" value="PatientEthnicGroupCode PatientRaceCode PatientSDTCRaceCode PatientAdministrativeGenderCode PatientAdministrativeGenderCodeP"/>
+      <details key="administrativeGenderCode.codeSystem" value="2.16.840.1.113883.5.1"/>
+      <details key="ethnicGroupCode.codeSystem" value="2.16.840.1.113883.6.238"/>
+      <details key="sDTCRaceCode.codeSystem" value="2.16.840.1.113883.6.238"/>
+      <details key="sDTCRaceCode.codeSystemName" value="Race and Ethnicity - CDC"/>
     </eAnnotations>
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSAuthoringDeviceParticipation">
       <details key="constraints.validation.error" value="EMSAuthoringDeviceParticipationTypeCode"/>
