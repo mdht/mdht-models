@@ -75,6 +75,12 @@
 					link:
 					<xref format="html" href="http://www.hl7.org/v3ballot/html/infrastructure/terminfo/terminfo.htm">Using SNOMED CT in HL7 Version 3</xref>
 				</li>
+				<li>
+					National Emergency Medical Services Information System (NEMSIS) Data Dictionary, version 3. Available at <xref format="html" href="http://www.NEMSIS.org">NEMSIS.org</xref>
+				</li>
+				<li>
+					HL7 EMS Domain Analysis Model, to be published in 2013, but available to members on the HL7 wiki <xref format="html" href="http://wiki.hl7.org/">HL7 wiki</xref>.
+				</li>
 			</ul>
 		</p>
 	</body>

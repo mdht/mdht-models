@@ -25,12 +25,7 @@
 <li>Contains zero or one [0..1] <tt><b>title</b></tt>
 </li>
 </ol>
-<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
-  <id root="1535456490" extension="MDHT"/>
-  <code code="67844-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS Current Medications"/>
-  <title>TEXT FOR TITLE</title>
-</section>]]></codeblock>
+<codeblock id="example"><![CDATA[]]></codeblock>
 <section id="changes">
 </section>
 <p><ph id="classformalname">EMS Current Medication Section</ph></p>
