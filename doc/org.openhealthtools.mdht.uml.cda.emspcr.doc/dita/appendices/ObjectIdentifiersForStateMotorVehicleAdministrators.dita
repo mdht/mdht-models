@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN"
+ "dtd/topic.dtd">
+<topic id="topicId" xml:lang="en-us">
+	<title>Object Identifiers for State Motor Vehicle Administrators</title>
+	<body>
+		<p>test dmv oid section</p>
+	</body>
+</topic>

@@ -34,6 +34,8 @@
 	
 	<chapter format="ditamap" href="content/content.ditamap"/>
 
+	<chapter format="ditamap" href="content/appendices.ditamap"/>
+
 	<backmatter>
 		<topicref href="References.dita" navtitle="REFERENCES" type="topic"/>
 	</backmatter>

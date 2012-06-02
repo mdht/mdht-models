@@ -4,20 +4,81 @@
 <topic id="topicId" xml:lang="en-us">
 	<title>Approach</title>
 	<body>
-		<p>Working with specifications generated from formal UML models provides the
-			opportunity to work with the data from the perspective of the
-			underlying model and electronic format and to explore many design
-			issues thoroughly. Taking this as an initial step ensures that the
-			data set developers and standards community can reach consensus prior
-			to the larger commitment of time that would be required to bring the
-			full data set into standard format.</p>
-		<p>This project supports reusability and ease of data collection
-			through a standard data representation harmonized with work developed
-			through Health Information Technology Expert Panel (HITEP), balloted
-			through Health Level Seven (HL7) and/or recognized by the Health
-			Information Technology Standards Panel (HITSP).</p>
-		<p>This implementation guide (IG) specifies a standard for electronic
-			submission of NCRs in a Clinical Document Architecture (CDA), Release
-			2 format.</p>
+		<p>We first converted the NEMSIS specification into an analysis model 
+		in the Emergency Medical Services Domain Analysis Model (EMS DAM), 
+		initially balloted through HL7 in May of 2010 and finalized for the release in May 2011. 
+		The static part of the analysis model was then constrained to the HL7 Reference Information Model (RIM) 
+		in a Domain Information Model (DIM), balloted in January, 2011, and reballoted 
+		in September, 2011. Both DAM and DIM are scheduled for publication in 2013, but they 
+		can be found on the HL7 Wiki.</p>
+		<p>This guide is the first implementable specification developed based on the EMS DIM.</p>
+		<p>An initial iteration, balloted in May 2011, supports what is commonly termed “level one” 
+		CDA compliance, i.e., a document with structured header information containing an 
+		unstructured document of some form (whether pdf, image, or other recognized format). In  
+		addition, this iteration supported “level two” compliance, in which human-readable text 
+		information is provided for sections identified in XML. A sender of a document, however, 
+		must choose whether to send the “level one” encapsulated document or the “level two” set 
+		of XML sections: a document containing both is not acceptable.</p>
+		<p>The September, 2011 iteration modeled the sections to “level three,” in which the 
+		sections also include detailed, structured information representing the section text. 
+		This structured information follows standard patterns in such a way that receiving 
+		applications will be able to process specific semantically identified elements for storage 
+		in medical records, application of business rules, or other computable services. This 
+		iteration also includes changes to the level two template assignments, so the
+		May 2011 iteration is no longer correct.</p>
+		<p>Harmonization with Emergency Department specifications and <i>Data Elements for Emergency
+		Department Systems</i>(DEEDS) involved use of extant LOINC codes for shared elements.</p>
+		<p><b></b></p>
+		
+			<topic id="nullandnegativevalues">
+		<title>Null and Negative Values</title>
+		<body>
+			<p>We use RIM attributes for observations that may require explicit negation or null values. If I have
+			checked for signs of drug use, I can assert that a particular sign was found (with a proper value), that
+			whether there were signs is unknown (with a null) or that there were no signs (with negation).</p>
+
+			<p>However, in collections of acts other than observations, epistemological attributes may have uncertain
+			semantics. If a procedure is negated, it may not be clear whether the clinician is asserting that the
+			procedure was not performed during the encounter or that it has never been performed on the patient.
+			Similarly, you may document a history of specific disorders, but including a single, general but negated
+			disorder implies assumptions about the scope of the negated disorder that are not explicitly modeled.</p>
+
+			<p>As a result, we manage negation and uncertainty for procedures with explicit observations. Using an
+			observation allows the clinician to assert a history of zero disorders, or a lack of knowledge about
+			disorders, without tying that assertion to a notional disorder that may imply unanticipated facts or
+			questions. Questions supporting observations about procedures can differentiate between encounter
+			and patient history, letting assertions about the truth or existence of the knowledge obtain in the
+			appropriate scope.</p>
+		
+			<p>As a result, the medical history sections include, in addition to problems, procedures, medications, and
+			allergies, observations regarding the existence of problems, procedures, medications, and allergies.</p>
+			
+			<p>In the interest of conformance with other guides, we also represent these null and negative acts with
+			null and negated acts, in line with Consolidation Project recommendations. These notional classes are 
+			annotated to ensure it's clear that they restate the explicit observations, and are not distinct facts.</p>
+		</body>
+	</topic>
+		<topic id="nullvaluemapping">
+		<title>Null Value Mapping</title>
+		<body>
+			<p>NEMSIS contains null values not listed in HL7. “Not applicable” maps directly to “Not applicable,” but
+			“Not recorded” and “Not reported” must be represented as the general concept “No information.”
+			These values may also be copied into Observation.text.</p>
+			
+			<p>NEMSIS also contains “negative action values,” most of which are addressed with negation and special
+			cases in this document. Some of the negative action values, however, are actually null values, and are
+			recorded as “NI,” no information. A mapping of negative action values is provided in Appendix B.</p>
+		</body>
+	</topic>
+	
+		<topic id="units">
+		<title>Units</title>
+		<body>
+			<p>Physical quantities use the HL7 PQ data type, in which units are expressed in the Unified Code for Units
+			of Measure (UCUM; 2.16.840.1.113883.6.8), available at http://www.regenstrief.org. Interface values
+			that are not actual physical units are handled differently: see appendix C for mappings.</p>
+		</body>
+	</topic>
+	
 	</body>
 </topic>
