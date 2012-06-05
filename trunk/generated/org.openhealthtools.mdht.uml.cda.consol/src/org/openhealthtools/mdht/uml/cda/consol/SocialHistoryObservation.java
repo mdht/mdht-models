@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getSocialHistoryObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation moodCode='EVN' classCode='OBS' constraints.validation.dependOn.SocialHistoryObservationCode='SocialHistoryObservationCodeP' code.codeSystemName='SNOMEDCT' templateId.root='2.16.840.1.113883.10.20.22.4.38' constraints.validation.error='SocialHistoryObservationTemplateId SocialHistoryObservationReferenceValue SocialHistoryObservationClassCode SocialHistoryObservationMoodCode SocialHistoryObservationId SocialHistoryObservationStatusCode' statusCode.code='completed' code.codeSystem='2.16.840.1.113883.6.96' constraints.validation.warning='SocialHistoryObservationOriginalText SocialHistoryObservationReference SocialHistoryObservationCode SocialHistoryObservationCodeP SocialHistoryObservationValue'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation statusCode.code='completed' code.codeSystem='2.16.840.1.113883.6.96' templateId.root='2.16.840.1.113883.10.20.22.4.38' constraints.validation.dependOn.SocialHistoryObservationCode='SocialHistoryObservationCodeP' constraints.validation.error='SocialHistoryObservationTemplateId SocialHistoryObservationReferenceValue SocialHistoryObservationClassCode SocialHistoryObservationMoodCode SocialHistoryObservationId SocialHistoryObservationStatusCode' code.codeSystemName='SNOMEDCT' classCode='OBS' constraints.validation.warning='SocialHistoryObservationOriginalText SocialHistoryObservationReference SocialHistoryObservationCode SocialHistoryObservationCodeP SocialHistoryObservationValue' moodCode='EVN'"
  * @generated
  */
 public interface SocialHistoryObservation extends Observation {
@@ -121,13 +121,13 @@ public interface SocialHistoryObservation extends Observation {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (self.code.oclIsKindOf(datatypes::CD) and 
+	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
 	 * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
 	 * value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '160573003' or value.code = '363908000' or value.code = '364703007' or value.code = '256235009' or value.code = '228272008' or value.code = '364393001' or value.code = '229819007' or value.code = '425400000'))
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (self.code.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.96\' and (value.code = \'160573003\' or value.code = \'363908000\' or value.code = \'364703007\' or value.code = \'256235009\' or value.code = \'228272008\' or value.code = \'364393001\' or value.code = \'229819007\' or value.code = \'425400000\'))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.96\' and (value.code = \'160573003\' or value.code = \'363908000\' or value.code = \'364703007\' or value.code = \'256235009\' or value.code = \'228272008\' or value.code = \'364393001\' or value.code = \'229819007\' or value.code = \'425400000\'))'"
 	 * @generated
 	 */
 	boolean validateSocialHistoryObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context);

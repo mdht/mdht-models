@@ -998,7 +998,7 @@ public class ProcedureActivityObservationOperations extends ClinicalStatementOpe
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.priorityCode.oclIsUndefined() or self.priorityCode.isNullFlavorUndefined()) implies (self.priorityCode.oclIsKindOf(datatypes::CE) and 
+	 * (self.priorityCode.oclIsUndefined() or self.priorityCode.isNullFlavorUndefined()) implies (not self.priorityCode.oclIsUndefined() and self.priorityCode.oclIsKindOf(datatypes::CE) and 
 	 * let value : datatypes::CE = self.priorityCode.oclAsType(datatypes::CE) in 
 	 * value.codeSystem = '2.16.840.1.113883.5.7' and not value.code.oclIsUndefined())
 	 * @param procedureActivityObservation The receiving '<em><b>Procedure Activity Observation</b></em>' model object.
@@ -1073,7 +1073,7 @@ public class ProcedureActivityObservationOperations extends ClinicalStatementOpe
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_PRIORITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.priorityCode.oclIsUndefined() or self.priorityCode.isNullFlavorUndefined()) implies (self.priorityCode.oclIsKindOf(datatypes::CE) and "
+	protected static final String VALIDATE_PROCEDURE_ACTIVITY_OBSERVATION_PRIORITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.priorityCode.oclIsUndefined() or self.priorityCode.isNullFlavorUndefined()) implies (not self.priorityCode.oclIsUndefined() and self.priorityCode.oclIsKindOf(datatypes::CE) and "
 			+ "let value : datatypes::CE = self.priorityCode.oclAsType(datatypes::CE) in "
 			+ "value.codeSystem = '2.16.840.1.113883.5.7' and not value.code.oclIsUndefined())";
 
@@ -1810,7 +1810,7 @@ public class ProcedureActivityObservationOperations extends ClinicalStatementOpe
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_INSTRUCTIONS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::Instructions))->asSequence()->first().oclAsType(consol::Instructions)";
+	protected static final String GET_INSTRUCTIONS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::Instructions))->asSequence()->any(true).oclAsType(consol::Instructions)";
 
 	/**
 	 * The cached OCL query for the '{@link #getInstructions(ProcedureActivityObservation) <em>Get Instructions</em>}' query operation.
@@ -1826,7 +1826,7 @@ public class ProcedureActivityObservationOperations extends ClinicalStatementOpe
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::Instructions))->asSequence()->first().oclAsType(consol::Instructions)
+	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::Instructions))->asSequence()->any(true).oclAsType(consol::Instructions)
 	 * @param procedureActivityObservation The receiving '<em><b>Procedure Activity Observation</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
@@ -1902,7 +1902,7 @@ public class ProcedureActivityObservationOperations extends ClinicalStatementOpe
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_MEDICATION_ACTIVITY__EOCL_EXP = "self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(consol::MedicationActivity))->asSequence()->first().oclAsType(consol::MedicationActivity)";
+	protected static final String GET_MEDICATION_ACTIVITY__EOCL_EXP = "self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(consol::MedicationActivity))->asSequence()->any(true).oclAsType(consol::MedicationActivity)";
 
 	/**
 	 * The cached OCL query for the '{@link #getMedicationActivity(ProcedureActivityObservation) <em>Get Medication Activity</em>}' query operation.
@@ -1918,7 +1918,7 @@ public class ProcedureActivityObservationOperations extends ClinicalStatementOpe
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(consol::MedicationActivity))->asSequence()->first().oclAsType(consol::MedicationActivity)
+	 * self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(consol::MedicationActivity))->asSequence()->any(true).oclAsType(consol::MedicationActivity)
 	 * @param procedureActivityObservation The receiving '<em><b>Procedure Activity Observation</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated

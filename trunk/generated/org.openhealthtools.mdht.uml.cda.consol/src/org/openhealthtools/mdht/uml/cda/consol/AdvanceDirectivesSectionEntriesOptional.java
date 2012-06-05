@@ -31,7 +31,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getAdvanceDirectivesSectionEntriesOptional()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystemName='LOINC' constraints.validation.info='AdvanceDirectivesSectionEntriesOptionalAdvanceDirectiveObservation' templateId.root='2.16.840.1.113883.10.20.22.2.21' constraints.validation.error='AdvanceDirectivesSectionEntriesOptionalTemplateId AdvanceDirectivesSectionEntriesOptionalCode AdvanceDirectivesSectionEntriesOptionalTitle AdvanceDirectivesSectionEntriesOptionalText' code.displayName='Advance Directives' code.codeSystem='2.16.840.1.113883.6.1' code.code='42348-3'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.displayName='Advance Directives' templateId.root='2.16.840.1.113883.10.20.22.2.21' constraints.validation.error='AdvanceDirectivesSectionEntriesOptionalTemplateId AdvanceDirectivesSectionEntriesOptionalCode AdvanceDirectivesSectionEntriesOptionalTitle AdvanceDirectivesSectionEntriesOptionalText' code.codeSystemName='LOINC' code.code='42348-3' constraints.validation.info='AdvanceDirectivesSectionEntriesOptionalAdvanceDirectiveObservation'"
  * @generated
  */
 public interface AdvanceDirectivesSectionEntriesOptional extends Section {
@@ -109,10 +109,10 @@ public interface AdvanceDirectivesSectionEntriesOptional extends Section {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AdvanceDirectiveObservation))->asSequence()->first().oclAsType(consol::AdvanceDirectiveObservation)
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AdvanceDirectiveObservation))->asSequence()->any(true).oclAsType(consol::AdvanceDirectiveObservation)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AdvanceDirectiveObservation))->asSequence()->first().oclAsType(consol::AdvanceDirectiveObservation)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AdvanceDirectiveObservation))->asSequence()->any(true).oclAsType(consol::AdvanceDirectiveObservation)'"
 	 * @generated
 	 */
 	AdvanceDirectiveObservation getAdvanceDirectiveObservation();

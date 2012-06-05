@@ -21,14 +21,14 @@ import org.eclipse.emf.common.util.DiagnosticChain;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getDiagnosticImagingReport()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystemName='LOINC' constraints.validation.info='DiagnosticImagingReportInformationRecipient DiagnosticImagingReportParticipant1 DiagnosticImagingReportInFulfillmentOf DiagnosticImagingReportRelatedDocument DiagnosticImagingReportComponentOf' templateId.root='2.16.840.1.113883.10.20.22.1.5' constraints.validation.error='DiagnosticImagingReportTemplateId GeneralHeaderConstraintsCode DiagnosticImagingReportId DiagnosticImagingReportInformant DiagnosticImagingReportDocumentationOf DiagnosticImagingReportFindingsSection' code.codeSystem='2.16.840.1.113883.6.1'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' templateId.root='2.16.840.1.113883.10.20.22.1.5' constraints.validation.error='DiagnosticImagingReportTemplateId GeneralHeaderConstraintsCode DiagnosticImagingReportId DiagnosticImagingReportInformant DiagnosticImagingReportDocumentationOf DiagnosticImagingReportFindingsSection' code.codeSystemName='LOINC' constraints.validation.info='DiagnosticImagingReportInformationRecipient DiagnosticImagingReportParticipant1 DiagnosticImagingReportInFulfillmentOf DiagnosticImagingReportRelatedDocument DiagnosticImagingReportComponentOf'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolDiagnosticImagingReportParticipant constraints.validation.error='ParticipantAssociatedEntity'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolDiagnosticImagingReportParticipantAssociatedEntity constraints.validation.error='AssociatedEntityAssociatedPerson'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolDiagnosticImagingReportParticipantAssociatedEntityPerson constraints.validation.error='PersonName'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolDiagnosticImagingReportDocumentationOf constraints.validation.error='DocumentationOfServiceEvent3'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolDiagnosticImagingReportDocumentationOfServiceEvent4 classCode='ACT' constraints.validation.error='ServiceEvent4ClassCode ServiceEvent4Code' constraints.validation.warning='ServiceEvent4Id ServiceEvent4PhysicianReadingStudyPerformer'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolDiagnosticImagingReportDocumentationOfServiceEvent4 constraints.validation.error='ServiceEvent4ClassCode ServiceEvent4Code' classCode='ACT' constraints.validation.warning='ServiceEvent4Id ServiceEvent4PhysicianReadingStudyPerformer'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolDiagnosticImagingReportComponentOf constraints.validation.error='ComponentOfEncompassingEncounter'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolDiagnosticImagingReportComponentOfEncompassingEncounter7 constraints.validation.error='EncompassingEncounter7EffectiveTime EncompassingEncounter7Id' constraints.validation.info='EncompassingEncounter7ResponsibleParty' constraints.validation.warning='EncompassingEncounter7PhysicianofRecordParticipant'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolDiagnosticImagingReportComponentOfEncompassingEncounter7 constraints.validation.error='EncompassingEncounter7EffectiveTime EncompassingEncounter7Id' constraints.validation.warning='EncompassingEncounter7PhysicianofRecordParticipant' constraints.validation.info='EncompassingEncounter7ResponsibleParty'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolDiagnosticImagingReportComponentOfEncompassingEncounter7ResponsibleParty constraints.validation.error='ResponsiblePartyAssignedEntity'"
  * @generated
  */
@@ -167,10 +167,10 @@ public interface DiagnosticImagingReport extends GeneralHeaderConstraints {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::FindingsSection))->asSequence()->first().oclAsType(consol::FindingsSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::FindingsSection))->asSequence()->any(true).oclAsType(consol::FindingsSection)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::FindingsSection))->asSequence()->first().oclAsType(consol::FindingsSection)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::FindingsSection))->asSequence()->any(true).oclAsType(consol::FindingsSection)'"
 	 * @generated
 	 */
 	FindingsSection getFindingsSection();

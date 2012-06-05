@@ -23,7 +23,7 @@ import org.openhealthtools.mdht.uml.cda.Supply;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getMedicationDispense()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation moodCode='EVN' classCode='SPLY' constraints.validation.info='MedicationDispensePerformer2 MedicationDispenseMedicationSupplyOrder' templateId.root='2.16.840.1.113883.10.20.22.4.18' constraints.validation.error='MedicationDispenseTemplateId MedicationDispenseClassCode MedicationDispenseId MedicationDispenseMoodCode MedicationDispenseStatusCode MedicationDispenseAssignedEntity MedicationDispenseProduct' constraints.validation.warning='MedicationDispenseEffectiveTime MedicationDispenseRepeatNumber MedicationDispenseQuantity'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.22.4.18' constraints.validation.error='MedicationDispenseTemplateId MedicationDispenseClassCode MedicationDispenseId MedicationDispenseMoodCode MedicationDispenseStatusCode MedicationDispenseAssignedEntity MedicationDispenseProduct' constraints.validation.warning='MedicationDispenseEffectiveTime MedicationDispenseRepeatNumber MedicationDispenseQuantity' classCode='SPLY' constraints.validation.info='MedicationDispensePerformer2 MedicationDispenseMedicationSupplyOrder' moodCode='EVN'"
  * @generated
  */
 public interface MedicationDispense extends Supply {
@@ -189,10 +189,10 @@ public interface MedicationDispense extends Supply {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAssignedEntities()->select(assignedEntity : cda::AssignedEntity | not assignedEntity.oclIsUndefined() and assignedEntity.oclIsKindOf(cda::AssignedEntity))->asSequence()->first().oclAsType(cda::AssignedEntity)
+	 * self.getAssignedEntities()->select(assignedEntity : cda::AssignedEntity | not assignedEntity.oclIsUndefined() and assignedEntity.oclIsKindOf(cda::AssignedEntity))->asSequence()->any(true).oclAsType(cda::AssignedEntity)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAssignedEntities()->select(assignedEntity : cda::AssignedEntity | not assignedEntity.oclIsUndefined() and assignedEntity.oclIsKindOf(cda::AssignedEntity))->asSequence()->first().oclAsType(cda::AssignedEntity)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAssignedEntities()->select(assignedEntity : cda::AssignedEntity | not assignedEntity.oclIsUndefined() and assignedEntity.oclIsKindOf(cda::AssignedEntity))->asSequence()->any(true).oclAsType(cda::AssignedEntity)'"
 	 * @generated
 	 */
 	AssignedEntity getAssignedEntity();
@@ -201,10 +201,10 @@ public interface MedicationDispense extends Supply {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getSupplies()->select(supply : cda::Supply | not supply.oclIsUndefined() and supply.oclIsKindOf(consol::MedicationSupplyOrder))->asSequence()->first().oclAsType(consol::MedicationSupplyOrder)
+	 * self.getSupplies()->select(supply : cda::Supply | not supply.oclIsUndefined() and supply.oclIsKindOf(consol::MedicationSupplyOrder))->asSequence()->any(true).oclAsType(consol::MedicationSupplyOrder)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getSupplies()->select(supply : cda::Supply | not supply.oclIsUndefined() and supply.oclIsKindOf(consol::MedicationSupplyOrder))->asSequence()->first().oclAsType(consol::MedicationSupplyOrder)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getSupplies()->select(supply : cda::Supply | not supply.oclIsUndefined() and supply.oclIsKindOf(consol::MedicationSupplyOrder))->asSequence()->any(true).oclAsType(consol::MedicationSupplyOrder)'"
 	 * @generated
 	 */
 	MedicationSupplyOrder getMedicationSupplyOrder();

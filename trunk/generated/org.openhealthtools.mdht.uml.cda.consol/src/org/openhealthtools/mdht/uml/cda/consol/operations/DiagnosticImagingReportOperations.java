@@ -650,7 +650,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_FINDINGS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::FindingsSection))->asSequence()->first().oclAsType(consol::FindingsSection)";
+	protected static final String GET_FINDINGS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::FindingsSection))->asSequence()->any(true).oclAsType(consol::FindingsSection)";
 
 	/**
 	 * The cached OCL query for the '{@link #getFindingsSection(DiagnosticImagingReport) <em>Get Findings Section</em>}' query operation.
@@ -666,7 +666,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::FindingsSection))->asSequence()->first().oclAsType(consol::FindingsSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::FindingsSection))->asSequence()->any(true).oclAsType(consol::FindingsSection)
 	 * @param diagnosticImagingReport The receiving '<em><b>Diagnostic Imaging Report</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated

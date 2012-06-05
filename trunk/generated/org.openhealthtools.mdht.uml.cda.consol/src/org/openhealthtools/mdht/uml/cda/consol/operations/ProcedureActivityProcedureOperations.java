@@ -1300,7 +1300,7 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.priorityCode.oclIsUndefined() or self.priorityCode.isNullFlavorUndefined()) implies (self.priorityCode.oclIsKindOf(datatypes::CE) and 
+	 * (self.priorityCode.oclIsUndefined() or self.priorityCode.isNullFlavorUndefined()) implies (not self.priorityCode.oclIsUndefined() and self.priorityCode.oclIsKindOf(datatypes::CE) and 
 	 * let value : datatypes::CE = self.priorityCode.oclAsType(datatypes::CE) in 
 	 * value.codeSystem = '2.16.840.1.113883.5.7' and not value.code.oclIsUndefined())
 	 * @param procedureActivityProcedure The receiving '<em><b>Procedure Activity Procedure</b></em>' model object.
@@ -1375,7 +1375,7 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROCEDURE_ACTIVITY_PROCEDURE_PRIORITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.priorityCode.oclIsUndefined() or self.priorityCode.isNullFlavorUndefined()) implies (self.priorityCode.oclIsKindOf(datatypes::CE) and "
+	protected static final String VALIDATE_PROCEDURE_ACTIVITY_PROCEDURE_PRIORITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.priorityCode.oclIsUndefined() or self.priorityCode.isNullFlavorUndefined()) implies (not self.priorityCode.oclIsUndefined() and self.priorityCode.oclIsKindOf(datatypes::CE) and "
 			+ "let value : datatypes::CE = self.priorityCode.oclAsType(datatypes::CE) in "
 			+ "value.codeSystem = '2.16.840.1.113883.5.7' and not value.code.oclIsUndefined())";
 
@@ -1929,7 +1929,7 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_MEDICATION_ACTIVITY__EOCL_EXP = "self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(consol::MedicationActivity))->asSequence()->first().oclAsType(consol::MedicationActivity)";
+	protected static final String GET_MEDICATION_ACTIVITY__EOCL_EXP = "self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(consol::MedicationActivity))->asSequence()->any(true).oclAsType(consol::MedicationActivity)";
 
 	/**
 	 * The cached OCL query for the '{@link #getMedicationActivity(ProcedureActivityProcedure) <em>Get Medication Activity</em>}' query operation.
@@ -1945,7 +1945,7 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(consol::MedicationActivity))->asSequence()->first().oclAsType(consol::MedicationActivity)
+	 * self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(consol::MedicationActivity))->asSequence()->any(true).oclAsType(consol::MedicationActivity)
 	 * @param procedureActivityProcedure The receiving '<em><b>Procedure Activity Procedure</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
@@ -1974,7 +1974,7 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_PATIENT_INSTRUCTION__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::Instructions))->asSequence()->first().oclAsType(consol::Instructions)";
+	protected static final String GET_PATIENT_INSTRUCTION__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::Instructions))->asSequence()->any(true).oclAsType(consol::Instructions)";
 
 	/**
 	 * The cached OCL query for the '{@link #getPatientInstruction(ProcedureActivityProcedure) <em>Get Patient Instruction</em>}' query operation.
@@ -1990,7 +1990,7 @@ public class ProcedureActivityProcedureOperations extends ClinicalStatementOpera
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::Instructions))->asSequence()->first().oclAsType(consol::Instructions)
+	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::Instructions))->asSequence()->any(true).oclAsType(consol::Instructions)
 	 * @param procedureActivityProcedure The receiving '<em><b>Procedure Activity Procedure</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated

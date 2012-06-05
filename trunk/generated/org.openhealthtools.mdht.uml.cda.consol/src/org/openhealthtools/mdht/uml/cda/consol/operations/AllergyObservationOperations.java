@@ -1010,7 +1010,7 @@ public class AllergyObservationOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_SEVERITY__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SeverityObservation))->asSequence()->first().oclAsType(consol::SeverityObservation)";
+	protected static final String GET_SEVERITY__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SeverityObservation))->asSequence()->any(true).oclAsType(consol::SeverityObservation)";
 
 	/**
 	 * The cached OCL query for the '{@link #getSeverity(AllergyObservation) <em>Get Severity</em>}' query operation.
@@ -1026,7 +1026,7 @@ public class AllergyObservationOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SeverityObservation))->asSequence()->first().oclAsType(consol::SeverityObservation)
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SeverityObservation))->asSequence()->any(true).oclAsType(consol::SeverityObservation)
 	 * @param allergyObservation The receiving '<em><b>Allergy Observation</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
@@ -1055,7 +1055,7 @@ public class AllergyObservationOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_ALLERGY_STATUS_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AllergyStatusObservation))->asSequence()->first().oclAsType(consol::AllergyStatusObservation)";
+	protected static final String GET_ALLERGY_STATUS_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AllergyStatusObservation))->asSequence()->any(true).oclAsType(consol::AllergyStatusObservation)";
 
 	/**
 	 * The cached OCL query for the '{@link #getAllergyStatusObservation(AllergyObservation) <em>Get Allergy Status Observation</em>}' query operation.
@@ -1071,7 +1071,7 @@ public class AllergyObservationOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AllergyStatusObservation))->asSequence()->first().oclAsType(consol::AllergyStatusObservation)
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AllergyStatusObservation))->asSequence()->any(true).oclAsType(consol::AllergyStatusObservation)
 	 * @param allergyObservation The receiving '<em><b>Allergy Observation</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated

@@ -22,7 +22,7 @@ import org.eclipse.emf.common.util.EList;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getProblemSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystemName='LOINC' templateId.root='2.16.840.1.113883.10.20.22.2.5.1' constraints.validation.error='ProblemSectionTemplateId ProblemSectionEntriesOptionalCode ProblemSectionText ProblemSectionTitle ProblemSectionProblemConcern' code.displayName='Problem List' code.codeSystem='2.16.840.1.113883.6.1' code.code='11450-4'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.displayName='Problem List' templateId.root='2.16.840.1.113883.10.20.22.2.5.1' constraints.validation.error='ProblemSectionTemplateId ProblemSectionEntriesOptionalCode ProblemSectionText ProblemSectionTitle ProblemSectionProblemConcern' code.codeSystemName='LOINC' code.code='11450-4'"
  * @generated
  */
 public interface ProblemSection extends ProblemSectionEntriesOptional {

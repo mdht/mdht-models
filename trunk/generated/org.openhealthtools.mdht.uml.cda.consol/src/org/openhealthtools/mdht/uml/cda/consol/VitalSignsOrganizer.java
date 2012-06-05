@@ -23,7 +23,7 @@ import org.openhealthtools.mdht.uml.cda.Organizer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getVitalSignsOrganizer()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation moodCode='EVN' classCode='CLUSTER' code.codeSystemName='SNOMEDCT' templateId.root='2.16.840.1.113883.10.20.22.4.26' constraints.validation.error='VitalSignsOrganizerTemplateId VitalSignsOrganizerClassCode VitalSignsOrganizerMoodCode VitalSignsOrganizerId VitalSignsOrganizerCode VitalSignsOrganizerStatusCode VitalSignsOrganizerEffectiveTime VitalSignsOrganizerVitalSignObservation' statusCode.code='completed' code.displayName='Vital signs' code.codeSystem='2.16.840.1.113883.6.96' code.code='46680005'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation statusCode.code='completed' code.codeSystem='2.16.840.1.113883.6.96' code.displayName='Vital signs' templateId.root='2.16.840.1.113883.10.20.22.4.26' constraints.validation.error='VitalSignsOrganizerTemplateId VitalSignsOrganizerClassCode VitalSignsOrganizerMoodCode VitalSignsOrganizerId VitalSignsOrganizerCode VitalSignsOrganizerStatusCode VitalSignsOrganizerEffectiveTime VitalSignsOrganizerVitalSignObservation' code.codeSystemName='SNOMEDCT' classCode='CLUSTER' code.code='46680005' moodCode='EVN'"
  * @generated
  */
 public interface VitalSignsOrganizer extends Organizer {

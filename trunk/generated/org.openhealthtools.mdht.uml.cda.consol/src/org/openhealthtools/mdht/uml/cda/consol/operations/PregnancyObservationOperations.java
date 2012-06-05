@@ -543,7 +543,7 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_ESTIMATED_DATE_OF_DELIVERY__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::EstimatedDateOfDelivery))->asSequence()->first().oclAsType(consol::EstimatedDateOfDelivery)";
+	protected static final String GET_ESTIMATED_DATE_OF_DELIVERY__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::EstimatedDateOfDelivery))->asSequence()->any(true).oclAsType(consol::EstimatedDateOfDelivery)";
 
 	/**
 	 * The cached OCL query for the '{@link #getEstimatedDateOfDelivery(PregnancyObservation) <em>Get Estimated Date Of Delivery</em>}' query operation.
@@ -559,7 +559,7 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::EstimatedDateOfDelivery))->asSequence()->first().oclAsType(consol::EstimatedDateOfDelivery)
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::EstimatedDateOfDelivery))->asSequence()->any(true).oclAsType(consol::EstimatedDateOfDelivery)
 	 * @param pregnancyObservation The receiving '<em><b>Pregnancy Observation</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated

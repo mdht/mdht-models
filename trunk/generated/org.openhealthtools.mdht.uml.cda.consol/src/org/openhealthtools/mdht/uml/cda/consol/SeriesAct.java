@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.Act;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getSeriesAct()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation moodCode='EVN' classCode='ACT' code.codeSystemName='DCM' constraints.validation.info='SeriesActText' templateId.root='2.16.840.1.113883.10.20.22.4.63' constraints.validation.error='SeriesActTemplateId SeriesActClassCode SeriesActMoodCode SeriesActCode SeriesActId SeriesActSOPInstanceObservation' code.codeSystem='1.2.840.10008.2.16.4' code.code='113015' constraints.validation.warning='SeriesActEffectiveTime'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='1.2.840.10008.2.16.4' templateId.root='2.16.840.1.113883.10.20.22.4.63' constraints.validation.error='SeriesActTemplateId SeriesActClassCode SeriesActMoodCode SeriesActCode SeriesActId SeriesActSOPInstanceObservation' code.codeSystemName='DCM' constraints.validation.warning='SeriesActEffectiveTime' classCode='ACT' code.code='113015' constraints.validation.info='SeriesActText' moodCode='EVN'"
  * @generated
  */
 public interface SeriesAct extends Act {
@@ -136,10 +136,10 @@ public interface SeriesAct extends Act {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SOPInstanceObservation))->asSequence()->first().oclAsType(consol::SOPInstanceObservation)
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SOPInstanceObservation))->asSequence()->any(true).oclAsType(consol::SOPInstanceObservation)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SOPInstanceObservation))->asSequence()->first().oclAsType(consol::SOPInstanceObservation)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SOPInstanceObservation))->asSequence()->any(true).oclAsType(consol::SOPInstanceObservation)'"
 	 * @generated
 	 */
 	SOPInstanceObservation getSOPInstanceObservation();

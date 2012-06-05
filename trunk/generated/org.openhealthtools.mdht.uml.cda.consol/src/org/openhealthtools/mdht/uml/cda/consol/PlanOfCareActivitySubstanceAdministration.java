@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.SubstanceAdministration;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getPlanOfCareActivitySubstanceAdministration()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation classCode='SBADM' templateId.root='2.16.840.1.113883.10.20.1.25' constraints.validation.error='PlanOfCareActivitySubstanceAdministrationTemplateId PlanOfCareActivitySubstanceAdministrationClassCode PlanOfCareActivitySubstanceAdministrationMoodCode PlanOfCareActivitySubstanceAdministrationId'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.1.25' constraints.validation.error='PlanOfCareActivitySubstanceAdministrationTemplateId PlanOfCareActivitySubstanceAdministrationClassCode PlanOfCareActivitySubstanceAdministrationMoodCode PlanOfCareActivitySubstanceAdministrationId' classCode='SBADM'"
  * @generated
  */
 public interface PlanOfCareActivitySubstanceAdministration extends SubstanceAdministration {

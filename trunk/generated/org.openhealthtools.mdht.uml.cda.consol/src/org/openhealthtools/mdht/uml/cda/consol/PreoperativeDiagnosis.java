@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.Act;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getPreoperativeDiagnosis()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation moodCode='EVN' classCode='ACT' code.codeSystemName='LOINC' templateId.root='2.16.840.1.113883.10.20.22.4.65' constraints.validation.error='PreoperativeDiagnosisTemplateId PreoperativeDiagnosisClassCode PreoperativeDiagnosisCode PreoperativeDiagnosisMoodCode PreoperativeDiagnosisProblemObservation' code.codeSystem='2.16.840.1.113883.6.1' code.code='10219-4'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' templateId.root='2.16.840.1.113883.10.20.22.4.65' constraints.validation.error='PreoperativeDiagnosisTemplateId PreoperativeDiagnosisClassCode PreoperativeDiagnosisCode PreoperativeDiagnosisMoodCode PreoperativeDiagnosisProblemObservation' code.codeSystemName='LOINC' classCode='ACT' code.code='10219-4' moodCode='EVN'"
  * @generated
  */
 public interface PreoperativeDiagnosis extends Act {
@@ -97,10 +97,10 @@ public interface PreoperativeDiagnosis extends Act {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProblemObservation))->asSequence()->first().oclAsType(consol::ProblemObservation)
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProblemObservation))->asSequence()->any(true).oclAsType(consol::ProblemObservation)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProblemObservation))->asSequence()->first().oclAsType(consol::ProblemObservation)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProblemObservation))->asSequence()->any(true).oclAsType(consol::ProblemObservation)'"
 	 * @generated
 	 */
 	ProblemObservation getProblemObservation();

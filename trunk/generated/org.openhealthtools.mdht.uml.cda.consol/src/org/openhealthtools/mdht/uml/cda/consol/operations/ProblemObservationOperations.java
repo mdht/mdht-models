@@ -1014,7 +1014,7 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_AGE_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AgeObservation))->asSequence()->first().oclAsType(consol::AgeObservation)";
+	protected static final String GET_AGE_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AgeObservation))->asSequence()->any(true).oclAsType(consol::AgeObservation)";
 
 	/**
 	 * The cached OCL query for the '{@link #getAgeObservation(ProblemObservation) <em>Get Age Observation</em>}' query operation.
@@ -1030,7 +1030,7 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AgeObservation))->asSequence()->first().oclAsType(consol::AgeObservation)
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AgeObservation))->asSequence()->any(true).oclAsType(consol::AgeObservation)
 	 * @param problemObservation The receiving '<em><b>Problem Observation</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
@@ -1059,7 +1059,7 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_HEALTH_STATUS_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::HealthStatusObservation))->asSequence()->first().oclAsType(consol::HealthStatusObservation)";
+	protected static final String GET_HEALTH_STATUS_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::HealthStatusObservation))->asSequence()->any(true).oclAsType(consol::HealthStatusObservation)";
 
 	/**
 	 * The cached OCL query for the '{@link #getHealthStatusObservation(ProblemObservation) <em>Get Health Status Observation</em>}' query operation.
@@ -1075,7 +1075,7 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::HealthStatusObservation))->asSequence()->first().oclAsType(consol::HealthStatusObservation)
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::HealthStatusObservation))->asSequence()->any(true).oclAsType(consol::HealthStatusObservation)
 	 * @param problemObservation The receiving '<em><b>Problem Observation</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
@@ -1104,7 +1104,7 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_PROBLEM_STATUS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProblemStatus))->asSequence()->first().oclAsType(consol::ProblemStatus)";
+	protected static final String GET_PROBLEM_STATUS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProblemStatus))->asSequence()->any(true).oclAsType(consol::ProblemStatus)";
 
 	/**
 	 * The cached OCL query for the '{@link #getProblemStatus(ProblemObservation) <em>Get Problem Status</em>}' query operation.
@@ -1120,7 +1120,7 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProblemStatus))->asSequence()->first().oclAsType(consol::ProblemStatus)
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProblemStatus))->asSequence()->any(true).oclAsType(consol::ProblemStatus)
 	 * @param problemObservation The receiving '<em><b>Problem Observation</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated

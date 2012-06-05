@@ -23,7 +23,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getAnesthesiaSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystemName='LOINC' constraints.validation.info='AnesthesiaSectionProcedureActivityProcedure AnesthesiaSectionMedicationActivity' templateId.root='2.16.840.1.113883.10.20.22.2.25' constraints.validation.error='AnesthesiaSectionTemplateId AnesthesiaSectionCode AnesthesiaSectionText AnesthesiaSectionTitle' code.codeSystem='2.16.840.1.113883.6.1' code.code='59774-0'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' templateId.root='2.16.840.1.113883.10.20.22.2.25' constraints.validation.error='AnesthesiaSectionTemplateId AnesthesiaSectionCode AnesthesiaSectionText AnesthesiaSectionTitle' code.codeSystemName='LOINC' code.code='59774-0' constraints.validation.info='AnesthesiaSectionProcedureActivityProcedure AnesthesiaSectionMedicationActivity'"
  * @generated
  */
 public interface AnesthesiaSection extends Section {

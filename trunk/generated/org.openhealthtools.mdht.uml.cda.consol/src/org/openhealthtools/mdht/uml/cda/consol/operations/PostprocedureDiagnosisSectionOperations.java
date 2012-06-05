@@ -123,7 +123,7 @@ public class PostprocedureDiagnosisSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_POSTPROCEDURE_DIAGNOSIS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (self.code.oclIsKindOf(datatypes::CE) and "
+	protected static final String VALIDATE_POSTPROCEDURE_DIAGNOSIS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
 			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
 			+ "value.code = '59769-0' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
@@ -141,7 +141,7 @@ public class PostprocedureDiagnosisSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (self.code.oclIsKindOf(datatypes::CE) and 
+	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
 	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
 	 * value.code = '59769-0' and value.codeSystem = '2.16.840.1.113883.6.1')
 	 * @param postprocedureDiagnosisSection The receiving '<em><b>Postprocedure Diagnosis Section</b></em>' model object.
@@ -365,7 +365,7 @@ public class PostprocedureDiagnosisSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_POSTPROCEDURE_DIAGNOSIS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::PostprocedureDiagnosis))->asSequence()->first().oclAsType(consol::PostprocedureDiagnosis)";
+	protected static final String GET_POSTPROCEDURE_DIAGNOSIS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::PostprocedureDiagnosis))->asSequence()->any(true).oclAsType(consol::PostprocedureDiagnosis)";
 
 	/**
 	 * The cached OCL query for the '{@link #getPostprocedureDiagnosis(PostprocedureDiagnosisSection) <em>Get Postprocedure Diagnosis</em>}' query operation.
@@ -381,7 +381,7 @@ public class PostprocedureDiagnosisSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::PostprocedureDiagnosis))->asSequence()->first().oclAsType(consol::PostprocedureDiagnosis)
+	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::PostprocedureDiagnosis))->asSequence()->any(true).oclAsType(consol::PostprocedureDiagnosis)
 	 * @param postprocedureDiagnosisSection The receiving '<em><b>Postprocedure Diagnosis Section</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated

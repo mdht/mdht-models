@@ -367,7 +367,7 @@ public class HospitalDischargeDiagnosisSectionOperations extends SectionOperatio
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_HOSPITAL_DISCHARGE_DIAGNOSIS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::HospitalDischargeDiagnosis))->asSequence()->first().oclAsType(consol::HospitalDischargeDiagnosis)";
+	protected static final String GET_HOSPITAL_DISCHARGE_DIAGNOSIS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::HospitalDischargeDiagnosis))->asSequence()->any(true).oclAsType(consol::HospitalDischargeDiagnosis)";
 
 	/**
 	 * The cached OCL query for the '{@link #getHospitalDischargeDiagnosis(HospitalDischargeDiagnosisSection) <em>Get Hospital Discharge Diagnosis</em>}' query operation.
@@ -383,7 +383,7 @@ public class HospitalDischargeDiagnosisSectionOperations extends SectionOperatio
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::HospitalDischargeDiagnosis))->asSequence()->first().oclAsType(consol::HospitalDischargeDiagnosis)
+	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::HospitalDischargeDiagnosis))->asSequence()->any(true).oclAsType(consol::HospitalDischargeDiagnosis)
 	 * @param hospitalDischargeDiagnosisSection The receiving '<em><b>Hospital Discharge Diagnosis Section</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated

@@ -517,7 +517,7 @@ public class SeriesActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_SOP_INSTANCE_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SOPInstanceObservation))->asSequence()->first().oclAsType(consol::SOPInstanceObservation)";
+	protected static final String GET_SOP_INSTANCE_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SOPInstanceObservation))->asSequence()->any(true).oclAsType(consol::SOPInstanceObservation)";
 
 	/**
 	 * The cached OCL query for the '{@link #getSOPInstanceObservation(SeriesAct) <em>Get SOP Instance Observation</em>}' query operation.
@@ -533,7 +533,7 @@ public class SeriesActOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SOPInstanceObservation))->asSequence()->first().oclAsType(consol::SOPInstanceObservation)
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SOPInstanceObservation))->asSequence()->any(true).oclAsType(consol::SOPInstanceObservation)
 	 * @param seriesAct The receiving '<em><b>Series Act</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated

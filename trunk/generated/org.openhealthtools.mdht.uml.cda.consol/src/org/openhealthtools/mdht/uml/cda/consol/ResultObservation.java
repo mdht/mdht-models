@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getResultObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation moodCode='EVN' classCode='OBS' constraints.validation.info='ResultObservationAuthorMultiplicity ResultObservationMethodCode ResultObservationTargetSiteCode' templateId.root='2.16.840.1.113883.10.20.22.4.2' constraints.validation.error='ResultObservationTemplateId ResultObservationTextReferenceValue ResultObservationNoObservationRangeCode ResultObservationClassCode ResultObservationMoodCode ResultObservationId ResultObservationCode ResultObservationStatusCode ResultObservationEffectiveTime ResultObservationValue' statusCode.code='completed' constraints.validation.warning='ResultObservationTextReference ResultObservationCodeValue ResultObservationText ResultObservationInterpretationCode'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation statusCode.code='completed' templateId.root='2.16.840.1.113883.10.20.22.4.2' constraints.validation.error='ResultObservationTemplateId ResultObservationTextReferenceValue ResultObservationNoObservationRangeCode ResultObservationClassCode ResultObservationMoodCode ResultObservationId ResultObservationCode ResultObservationStatusCode ResultObservationEffectiveTime ResultObservationValue' classCode='OBS' constraints.validation.warning='ResultObservationTextReference ResultObservationCodeValue ResultObservationText ResultObservationInterpretationCode' moodCode='EVN' constraints.validation.info='ResultObservationAuthorMultiplicity ResultObservationMethodCode ResultObservationTargetSiteCode'"
  * @generated
  */
 public interface ResultObservation extends Observation {

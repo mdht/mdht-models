@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getPurposeofReferenceObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation value.codeSystemName='DCM' moodCode='EVN' classCode='OBS' value.codeSystem='1.2.840.10008.2.16.4' templateId.root='2.16.840.1.113883.10.20.6.2.9' constraints.validation.error='PurposeofReferenceObservationTemplateId PurposeofReferenceObservationClassCode PurposeofReferenceObservationCode PurposeofReferenceObservationMoodCode' constraints.validation.warning='PurposeofReferenceObservationValue'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation value.codeSystemName='DCM' templateId.root='2.16.840.1.113883.10.20.6.2.9' constraints.validation.error='PurposeofReferenceObservationTemplateId PurposeofReferenceObservationClassCode PurposeofReferenceObservationCode PurposeofReferenceObservationMoodCode' constraints.validation.warning='PurposeofReferenceObservationValue' classCode='OBS' moodCode='EVN' value.codeSystem='1.2.840.10008.2.16.4'"
  * @generated
  */
 public interface PurposeofReferenceObservation extends Observation {

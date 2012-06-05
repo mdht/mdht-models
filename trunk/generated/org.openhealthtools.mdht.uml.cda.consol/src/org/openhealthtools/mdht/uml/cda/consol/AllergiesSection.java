@@ -26,7 +26,7 @@ import org.eclipse.emf.common.util.EList;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getAllergiesSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystemName='LOINC' templateId.root='2.16.840.1.113883.10.20.22.2.6.1' constraints.validation.error='AllergiesSectionTemplateId AllergiesSectionEntriesOptionalCode AllergiesSectionTitle AllergiesSectionText AllergiesSectionAllergyProblemAct' code.displayName='Allergies, adverse reactions, alerts' code.codeSystem='2.16.840.1.113883.6.1' code.code='48765-2'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.displayName='Allergies, adverse reactions, alerts' templateId.root='2.16.840.1.113883.10.20.22.2.6.1' constraints.validation.error='AllergiesSectionTemplateId AllergiesSectionEntriesOptionalCode AllergiesSectionTitle AllergiesSectionText AllergiesSectionAllergyProblemAct' code.codeSystemName='LOINC' code.code='48765-2'"
  * @generated
  */
 public interface AllergiesSection extends AllergiesSectionEntriesOptional {

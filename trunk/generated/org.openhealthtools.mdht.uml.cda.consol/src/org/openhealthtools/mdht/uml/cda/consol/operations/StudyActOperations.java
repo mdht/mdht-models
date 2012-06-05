@@ -515,7 +515,7 @@ public class StudyActOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_SERIES_ACT__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::SeriesAct))->asSequence()->first().oclAsType(consol::SeriesAct)";
+	protected static final String GET_SERIES_ACT__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::SeriesAct))->asSequence()->any(true).oclAsType(consol::SeriesAct)";
 
 	/**
 	 * The cached OCL query for the '{@link #getSeriesAct(StudyAct) <em>Get Series Act</em>}' query operation.
@@ -531,7 +531,7 @@ public class StudyActOperations extends ClinicalStatementOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::SeriesAct))->asSequence()->first().oclAsType(consol::SeriesAct)
+	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::SeriesAct))->asSequence()->any(true).oclAsType(consol::SeriesAct)
 	 * @param studyAct The receiving '<em><b>Study Act</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated

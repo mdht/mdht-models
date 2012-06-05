@@ -121,7 +121,7 @@ public class DICOMObjectCatalogSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_DICOM_OBJECT_CATALOG_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (self.code.oclIsKindOf(datatypes::CE) and "
+	protected static final String VALIDATE_DICOM_OBJECT_CATALOG_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
 			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
 			+ "value.code = '121181' and value.codeSystem = '1.2.840.10008.2.16.4')";
 
@@ -139,7 +139,7 @@ public class DICOMObjectCatalogSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (self.code.oclIsKindOf(datatypes::CE) and 
+	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
 	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
 	 * value.code = '121181' and value.codeSystem = '1.2.840.10008.2.16.4')
 	 * @param dicomObjectCatalogSection The receiving '<em><b>DICOM Object Catalog Section</b></em>' model object.
@@ -242,7 +242,7 @@ public class DICOMObjectCatalogSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_STUDY_ACT__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::StudyAct))->asSequence()->first().oclAsType(consol::StudyAct)";
+	protected static final String GET_STUDY_ACT__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::StudyAct))->asSequence()->any(true).oclAsType(consol::StudyAct)";
 
 	/**
 	 * The cached OCL query for the '{@link #getStudyAct(DICOMObjectCatalogSection) <em>Get Study Act</em>}' query operation.
@@ -258,7 +258,7 @@ public class DICOMObjectCatalogSectionOperations extends SectionOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::StudyAct))->asSequence()->first().oclAsType(consol::StudyAct)
+	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::StudyAct))->asSequence()->any(true).oclAsType(consol::StudyAct)
 	 * @param dicomObjectCatalogSection The receiving '<em><b>DICOM Object Catalog Section</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated

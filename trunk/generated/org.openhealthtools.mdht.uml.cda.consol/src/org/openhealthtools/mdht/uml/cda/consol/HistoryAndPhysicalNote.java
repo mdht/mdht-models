@@ -21,7 +21,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getHistoryAndPhysicalNote()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystemName='LOINC' constraints.validation.query='HistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsiblePartyAssignedEntityHasPersonOrOrganization HistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsiblePartyAssignedEntity HistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipantAssignedEntityHasPersonOrOrganization HistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipantAssignedEntity HistoryAndPhysicalNoteComponentOfEncompassingEncounter4EffectiveTime HistoryAndPhysicalNoteComponentOfEncompassingEncounter4Id HistoryAndPhysicalNoteComponentOfEncompassingEncounter4Location HistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsibleParty HistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipant HistoryAndPhysicalNoteComponentOfEncompassingEncounter' constraints.validation.info='HistoryAndPhysicalNoteInFulfillmentOf HistoryAndPhysicalNoteAssessmentSection HistoryAndPhysicalNotePlanOfCareSection HistoryAndPhysicalNoteAssessmentAndPlanSection HistoryAndPhysicalNoteChiefComplaintSection HistoryAndPhysicalNoteChiefComplaintAndReasonForVisitSection HistoryAndPhysicalNoteImmunizationsSectionEntriesOptional HistoryAndPhysicalNoteProblemSectionEntriesOptional HistoryAndPhysicalNoteProceduresSectionEntriesOptional HistoryAndPhysicalNoteComponentOfEncompassingEncounter4Location HistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsibleParty HistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipant' templateId.root='2.16.840.1.113883.10.20.22.1.3' constraints.validation.error='HistoryAndPhysicalNoteTemplateId HistoryAndPhysicalNoteHasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections HistoryAndPhysicalNoteDoesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresent HistoryAndPhysicalNoteHasChiefComplaintAndReasonForVisitChiefComplaintOrReasonForVisit HistoryAndPhysicalNoteDoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection GeneralHeaderConstraintsCode HistoryAndPhysicalNoteComponentOf HistoryAndPhysicalNoteAllergiesSectionEntriesOptional HistoryAndPhysicalNoteFamilyHistorySection HistoryAndPhysicalNoteGeneralStatusSection HistoryAndPhysicalNoteHistoryOfPastIllnessSection HistoryAndPhysicalNoteMedicationsSectionEntriesOptional HistoryAndPhysicalNotePhysicalExamSection HistoryAndPhysicalNoteReasonForVisitSection HistoryAndPhysicalNoteResultsSectionEntriesOptional HistoryAndPhysicalNoteReviewOfSystemsSection HistoryAndPhysicalNoteSocialHistorySection HistoryAndPhysicalNoteVitalSignsSectionEntriesOptional HistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsiblePartyAssignedEntityHasPersonOrOrganization HistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsiblePartyAssignedEntity HistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipantAssignedEntityHasPersonOrOrganization HistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipantAssignedEntity HistoryAndPhysicalNoteComponentOfEncompassingEncounter4EffectiveTime HistoryAndPhysicalNoteComponentOfEncompassingEncounter4Id HistoryAndPhysicalNoteComponentOfEncompassingEncounter' code.codeSystem='2.16.840.1.113883.6.1' constraints.validation.warning='HistoryAndPhysicalNoteHistoryOfPresentIllnessSection'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' templateId.root='2.16.840.1.113883.10.20.22.1.3' constraints.validation.error='HistoryAndPhysicalNoteTemplateId HistoryAndPhysicalNoteHasAnAssementAndPlanSectionOrIndividualAssementAndPlanSections HistoryAndPhysicalNoteDoesNotHaveIndividualAssementAndPlanSectionsWhenAssementAndPlanSectionPresent HistoryAndPhysicalNoteHasChiefComplaintAndReasonForVisitChiefComplaintOrReasonForVisit HistoryAndPhysicalNoteDoesNotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection GeneralHeaderConstraintsCode HistoryAndPhysicalNoteComponentOf HistoryAndPhysicalNoteAllergiesSectionEntriesOptional HistoryAndPhysicalNoteFamilyHistorySection HistoryAndPhysicalNoteGeneralStatusSection HistoryAndPhysicalNoteHistoryOfPastIllnessSection HistoryAndPhysicalNoteMedicationsSectionEntriesOptional HistoryAndPhysicalNotePhysicalExamSection HistoryAndPhysicalNoteReasonForVisitSection HistoryAndPhysicalNoteResultsSectionEntriesOptional HistoryAndPhysicalNoteReviewOfSystemsSection HistoryAndPhysicalNoteSocialHistorySection HistoryAndPhysicalNoteVitalSignsSectionEntriesOptional HistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsiblePartyAssignedEntityHasPersonOrOrganization HistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsiblePartyAssignedEntity HistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipantAssignedEntityHasPersonOrOrganization HistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipantAssignedEntity HistoryAndPhysicalNoteComponentOfEncompassingEncounter4EffectiveTime HistoryAndPhysicalNoteComponentOfEncompassingEncounter4Id HistoryAndPhysicalNoteComponentOfEncompassingEncounter' code.codeSystemName='LOINC' constraints.validation.warning='HistoryAndPhysicalNoteHistoryOfPresentIllnessSection' constraints.validation.query='HistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsiblePartyAssignedEntityHasPersonOrOrganization HistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsiblePartyAssignedEntity HistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipantAssignedEntityHasPersonOrOrganization HistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipantAssignedEntity HistoryAndPhysicalNoteComponentOfEncompassingEncounter4EffectiveTime HistoryAndPhysicalNoteComponentOfEncompassingEncounter4Id HistoryAndPhysicalNoteComponentOfEncompassingEncounter4Location HistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsibleParty HistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipant HistoryAndPhysicalNoteComponentOfEncompassingEncounter' constraints.validation.info='HistoryAndPhysicalNoteInFulfillmentOf HistoryAndPhysicalNoteAssessmentSection HistoryAndPhysicalNotePlanOfCareSection HistoryAndPhysicalNoteAssessmentAndPlanSection HistoryAndPhysicalNoteChiefComplaintSection HistoryAndPhysicalNoteChiefComplaintAndReasonForVisitSection HistoryAndPhysicalNoteImmunizationsSectionEntriesOptional HistoryAndPhysicalNoteProblemSectionEntriesOptional HistoryAndPhysicalNoteProceduresSectionEntriesOptional HistoryAndPhysicalNoteComponentOfEncompassingEncounter4Location HistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsibleParty HistoryAndPhysicalNoteComponentOfEncompassingEncounter4EncounterParticipant'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolHistoryAndPhysicalNoteComponentOf constraints.validation.error='ComponentOfEncompassingEncounter'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolHistoryAndPhysicalNoteComponentOfEncompassingEncounter4 constraints.validation.error='EncompassingEncounter4EffectiveTime EncompassingEncounter4Id' constraints.validation.info='EncompassingEncounter4Location EncompassingEncounter4ResponsibleParty EncompassingEncounter4EncounterParticipant'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolHistoryAndPhysicalNoteComponentOfEncompassingEncounter4ResponsibleParty constraints.validation.error='ResponsiblePartyAssignedEntityHasPersonOrOrganization ResponsiblePartyAssignedEntity'"
@@ -540,10 +540,10 @@ public interface HistoryAndPhysicalNote extends GeneralHeaderConstraints {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AllergiesSectionEntriesOptional))->asSequence()->first().oclAsType(consol::AllergiesSectionEntriesOptional)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AllergiesSectionEntriesOptional))->asSequence()->any(true).oclAsType(consol::AllergiesSectionEntriesOptional)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AllergiesSectionEntriesOptional))->asSequence()->first().oclAsType(consol::AllergiesSectionEntriesOptional)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AllergiesSectionEntriesOptional))->asSequence()->any(true).oclAsType(consol::AllergiesSectionEntriesOptional)'"
 	 * @generated
 	 */
 	AllergiesSectionEntriesOptional getAllergiesSectionEntriesOptional();
@@ -552,10 +552,10 @@ public interface HistoryAndPhysicalNote extends GeneralHeaderConstraints {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AssessmentSection))->asSequence()->first().oclAsType(consol::AssessmentSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AssessmentSection))->asSequence()->any(true).oclAsType(consol::AssessmentSection)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AssessmentSection))->asSequence()->first().oclAsType(consol::AssessmentSection)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AssessmentSection))->asSequence()->any(true).oclAsType(consol::AssessmentSection)'"
 	 * @generated
 	 */
 	AssessmentSection getAssessmentSection();
@@ -564,10 +564,10 @@ public interface HistoryAndPhysicalNote extends GeneralHeaderConstraints {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PlanOfCareSection))->asSequence()->first().oclAsType(consol::PlanOfCareSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PlanOfCareSection))->asSequence()->any(true).oclAsType(consol::PlanOfCareSection)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PlanOfCareSection))->asSequence()->first().oclAsType(consol::PlanOfCareSection)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PlanOfCareSection))->asSequence()->any(true).oclAsType(consol::PlanOfCareSection)'"
 	 * @generated
 	 */
 	PlanOfCareSection getPlanOfCareSection();
@@ -576,10 +576,10 @@ public interface HistoryAndPhysicalNote extends GeneralHeaderConstraints {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AssessmentAndPlanSection))->asSequence()->first().oclAsType(consol::AssessmentAndPlanSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AssessmentAndPlanSection))->asSequence()->any(true).oclAsType(consol::AssessmentAndPlanSection)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AssessmentAndPlanSection))->asSequence()->first().oclAsType(consol::AssessmentAndPlanSection)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AssessmentAndPlanSection))->asSequence()->any(true).oclAsType(consol::AssessmentAndPlanSection)'"
 	 * @generated
 	 */
 	AssessmentAndPlanSection getAssessmentAndPlanSection();
@@ -588,10 +588,10 @@ public interface HistoryAndPhysicalNote extends GeneralHeaderConstraints {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintSection))->asSequence()->first().oclAsType(consol::ChiefComplaintSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintSection))->asSequence()->any(true).oclAsType(consol::ChiefComplaintSection)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintSection))->asSequence()->first().oclAsType(consol::ChiefComplaintSection)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintSection))->asSequence()->any(true).oclAsType(consol::ChiefComplaintSection)'"
 	 * @generated
 	 */
 	ChiefComplaintSection getChiefComplaintSection();
@@ -600,10 +600,10 @@ public interface HistoryAndPhysicalNote extends GeneralHeaderConstraints {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintAndReasonForVisitSection))->asSequence()->first().oclAsType(consol::ChiefComplaintAndReasonForVisitSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintAndReasonForVisitSection))->asSequence()->any(true).oclAsType(consol::ChiefComplaintAndReasonForVisitSection)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintAndReasonForVisitSection))->asSequence()->first().oclAsType(consol::ChiefComplaintAndReasonForVisitSection)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintAndReasonForVisitSection))->asSequence()->any(true).oclAsType(consol::ChiefComplaintAndReasonForVisitSection)'"
 	 * @generated
 	 */
 	ChiefComplaintAndReasonForVisitSection getChiefComplaintAndReasonForVisitSection();
@@ -612,10 +612,10 @@ public interface HistoryAndPhysicalNote extends GeneralHeaderConstraints {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::FamilyHistorySection))->asSequence()->first().oclAsType(consol::FamilyHistorySection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::FamilyHistorySection))->asSequence()->any(true).oclAsType(consol::FamilyHistorySection)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::FamilyHistorySection))->asSequence()->first().oclAsType(consol::FamilyHistorySection)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::FamilyHistorySection))->asSequence()->any(true).oclAsType(consol::FamilyHistorySection)'"
 	 * @generated
 	 */
 	FamilyHistorySection getFamilyHistorySection();
@@ -624,10 +624,10 @@ public interface HistoryAndPhysicalNote extends GeneralHeaderConstraints {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::GeneralStatusSection))->asSequence()->first().oclAsType(consol::GeneralStatusSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::GeneralStatusSection))->asSequence()->any(true).oclAsType(consol::GeneralStatusSection)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::GeneralStatusSection))->asSequence()->first().oclAsType(consol::GeneralStatusSection)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::GeneralStatusSection))->asSequence()->any(true).oclAsType(consol::GeneralStatusSection)'"
 	 * @generated
 	 */
 	GeneralStatusSection getGeneralStatusSection();
@@ -636,10 +636,10 @@ public interface HistoryAndPhysicalNote extends GeneralHeaderConstraints {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HistoryOfPastIllnessSection))->asSequence()->first().oclAsType(consol::HistoryOfPastIllnessSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HistoryOfPastIllnessSection))->asSequence()->any(true).oclAsType(consol::HistoryOfPastIllnessSection)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HistoryOfPastIllnessSection))->asSequence()->first().oclAsType(consol::HistoryOfPastIllnessSection)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HistoryOfPastIllnessSection))->asSequence()->any(true).oclAsType(consol::HistoryOfPastIllnessSection)'"
 	 * @generated
 	 */
 	HistoryOfPastIllnessSection getHistoryOfPastIllnessSection();
@@ -648,10 +648,10 @@ public interface HistoryAndPhysicalNote extends GeneralHeaderConstraints {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::MedicationsSectionEntriesOptional))->asSequence()->first().oclAsType(consol::MedicationsSectionEntriesOptional)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::MedicationsSectionEntriesOptional))->asSequence()->any(true).oclAsType(consol::MedicationsSectionEntriesOptional)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::MedicationsSectionEntriesOptional))->asSequence()->first().oclAsType(consol::MedicationsSectionEntriesOptional)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::MedicationsSectionEntriesOptional))->asSequence()->any(true).oclAsType(consol::MedicationsSectionEntriesOptional)'"
 	 * @generated
 	 */
 	MedicationsSectionEntriesOptional getMedicationsSectionEntriesOptional();
@@ -660,10 +660,10 @@ public interface HistoryAndPhysicalNote extends GeneralHeaderConstraints {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PhysicalExamSection))->asSequence()->first().oclAsType(consol::PhysicalExamSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PhysicalExamSection))->asSequence()->any(true).oclAsType(consol::PhysicalExamSection)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PhysicalExamSection))->asSequence()->first().oclAsType(consol::PhysicalExamSection)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PhysicalExamSection))->asSequence()->any(true).oclAsType(consol::PhysicalExamSection)'"
 	 * @generated
 	 */
 	PhysicalExamSection getPhysicalExamSection();
@@ -672,10 +672,10 @@ public interface HistoryAndPhysicalNote extends GeneralHeaderConstraints {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ReasonForVisitSection))->asSequence()->first().oclAsType(consol::ReasonForVisitSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ReasonForVisitSection))->asSequence()->any(true).oclAsType(consol::ReasonForVisitSection)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ReasonForVisitSection))->asSequence()->first().oclAsType(consol::ReasonForVisitSection)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ReasonForVisitSection))->asSequence()->any(true).oclAsType(consol::ReasonForVisitSection)'"
 	 * @generated
 	 */
 	ReasonForVisitSection getReasonForVisitSection();
@@ -684,10 +684,10 @@ public interface HistoryAndPhysicalNote extends GeneralHeaderConstraints {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ResultsSectionEntriesOptional))->asSequence()->first().oclAsType(consol::ResultsSectionEntriesOptional)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ResultsSectionEntriesOptional))->asSequence()->any(true).oclAsType(consol::ResultsSectionEntriesOptional)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ResultsSectionEntriesOptional))->asSequence()->first().oclAsType(consol::ResultsSectionEntriesOptional)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ResultsSectionEntriesOptional))->asSequence()->any(true).oclAsType(consol::ResultsSectionEntriesOptional)'"
 	 * @generated
 	 */
 	ResultsSectionEntriesOptional getResultsSectionEntriesOptional();
@@ -696,10 +696,10 @@ public interface HistoryAndPhysicalNote extends GeneralHeaderConstraints {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ReviewOfSystemsSection))->asSequence()->first().oclAsType(consol::ReviewOfSystemsSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ReviewOfSystemsSection))->asSequence()->any(true).oclAsType(consol::ReviewOfSystemsSection)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ReviewOfSystemsSection))->asSequence()->first().oclAsType(consol::ReviewOfSystemsSection)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ReviewOfSystemsSection))->asSequence()->any(true).oclAsType(consol::ReviewOfSystemsSection)'"
 	 * @generated
 	 */
 	ReviewOfSystemsSection getReviewOfSystemsSection();
@@ -708,10 +708,10 @@ public interface HistoryAndPhysicalNote extends GeneralHeaderConstraints {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::SocialHistorySection))->asSequence()->first().oclAsType(consol::SocialHistorySection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::SocialHistorySection))->asSequence()->any(true).oclAsType(consol::SocialHistorySection)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::SocialHistorySection))->asSequence()->first().oclAsType(consol::SocialHistorySection)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::SocialHistorySection))->asSequence()->any(true).oclAsType(consol::SocialHistorySection)'"
 	 * @generated
 	 */
 	SocialHistorySection getSocialHistorySection();
@@ -720,10 +720,10 @@ public interface HistoryAndPhysicalNote extends GeneralHeaderConstraints {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HistoryOfPresentIllnessSection))->asSequence()->first().oclAsType(consol::HistoryOfPresentIllnessSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HistoryOfPresentIllnessSection))->asSequence()->any(true).oclAsType(consol::HistoryOfPresentIllnessSection)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HistoryOfPresentIllnessSection))->asSequence()->first().oclAsType(consol::HistoryOfPresentIllnessSection)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HistoryOfPresentIllnessSection))->asSequence()->any(true).oclAsType(consol::HistoryOfPresentIllnessSection)'"
 	 * @generated
 	 */
 	HistoryOfPresentIllnessSection getHistoryOfPresentIllnessSection();
@@ -732,10 +732,10 @@ public interface HistoryAndPhysicalNote extends GeneralHeaderConstraints {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ImmunizationsSectionEntriesOptional))->asSequence()->first().oclAsType(consol::ImmunizationsSectionEntriesOptional)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ImmunizationsSectionEntriesOptional))->asSequence()->any(true).oclAsType(consol::ImmunizationsSectionEntriesOptional)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ImmunizationsSectionEntriesOptional))->asSequence()->first().oclAsType(consol::ImmunizationsSectionEntriesOptional)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ImmunizationsSectionEntriesOptional))->asSequence()->any(true).oclAsType(consol::ImmunizationsSectionEntriesOptional)'"
 	 * @generated
 	 */
 	ImmunizationsSectionEntriesOptional getImmunizationsSectionEntriesOptional();
@@ -744,10 +744,10 @@ public interface HistoryAndPhysicalNote extends GeneralHeaderConstraints {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProblemSectionEntriesOptional))->asSequence()->first().oclAsType(consol::ProblemSectionEntriesOptional)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProblemSectionEntriesOptional))->asSequence()->any(true).oclAsType(consol::ProblemSectionEntriesOptional)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProblemSectionEntriesOptional))->asSequence()->first().oclAsType(consol::ProblemSectionEntriesOptional)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProblemSectionEntriesOptional))->asSequence()->any(true).oclAsType(consol::ProblemSectionEntriesOptional)'"
 	 * @generated
 	 */
 	ProblemSectionEntriesOptional getProblemSectionEntriesOptional();
@@ -756,10 +756,10 @@ public interface HistoryAndPhysicalNote extends GeneralHeaderConstraints {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProceduresSectionEntriesOptional))->asSequence()->first().oclAsType(consol::ProceduresSectionEntriesOptional)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProceduresSectionEntriesOptional))->asSequence()->any(true).oclAsType(consol::ProceduresSectionEntriesOptional)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProceduresSectionEntriesOptional))->asSequence()->first().oclAsType(consol::ProceduresSectionEntriesOptional)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProceduresSectionEntriesOptional))->asSequence()->any(true).oclAsType(consol::ProceduresSectionEntriesOptional)'"
 	 * @generated
 	 */
 	ProceduresSectionEntriesOptional getProceduresSectionEntriesOptional();
@@ -768,10 +768,10 @@ public interface HistoryAndPhysicalNote extends GeneralHeaderConstraints {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::VitalSignsSectionEntriesOptional))->asSequence()->first().oclAsType(consol::VitalSignsSectionEntriesOptional)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::VitalSignsSectionEntriesOptional))->asSequence()->any(true).oclAsType(consol::VitalSignsSectionEntriesOptional)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::VitalSignsSectionEntriesOptional))->asSequence()->first().oclAsType(consol::VitalSignsSectionEntriesOptional)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::VitalSignsSectionEntriesOptional))->asSequence()->any(true).oclAsType(consol::VitalSignsSectionEntriesOptional)'"
 	 * @generated
 	 */
 	VitalSignsSectionEntriesOptional getVitalSignsSectionEntriesOptional();

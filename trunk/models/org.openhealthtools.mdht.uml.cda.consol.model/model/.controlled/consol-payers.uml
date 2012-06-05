@@ -125,7 +125,7 @@ with respect to the payer, so that the identifiers can be recorded.&#xD;
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_ddyK0FzWEeGt2doqSDULjA" name="Payer">
       <ownedComment xmi:id="_vEDd8FzWEeGt2doqSDULjA">
-        <body>INLINE&amp;assignedEntity.code.code &lt;> 'GUAR'</body>
+        <body>INLINE&amp;assignedEntity->excluding(null).code->excluding(null).code->excludes('GUAR')</body>
       </ownedComment>
       <ownedComment xmi:id="_5DImUF0PEeGt2doqSDULjA">
         <body>This performer represents the Payer (CONF:9078)</body>
@@ -148,7 +148,7 @@ with respect to the payer, so that the identifiers can be recorded.&#xD;
         <ownedRule xmi:id="_bk4HkG7hEeGO5JJTinolhw" name="usRealmAddress" constrainedElement="_deYl8F0REeGt2doqSDULjA">
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_dIxjQG7hEeGO5JJTinolhw">
             <language>Analysis</language>
-            <body>1.&#x9;The content of addr SHALL be a conformant US Realm Address (AD.US.FIELDED) (2.16.840.1.113883.10.20.22.5.2)</body>
+            <body>1.	The content of addr SHALL be a conformant US Realm Address (AD.US.FIELDED) (2.16.840.1.113883.10.20.22.5.2)</body>
           </specification>
         </ownedRule>
         <generalization xmi:id="_hzOfQF0REeGt2doqSDULjA">
@@ -194,7 +194,7 @@ with respect to the payer, so that the identifiers can be recorded.&#xD;
     </nestedClassifier>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_GX8lgF13EeGt2doqSDULjA" name="Guarantor">
       <ownedComment xmi:id="_KLyDgF13EeGt2doqSDULjA">
-        <body>INLINE&amp;assignedEntity.code.code = 'GUAR'</body>
+        <body>INLINE&amp;assignedEntity->asSequence()->excluding(null).code->excluding(null).code = Sequence{'GUAR'}</body>
       </ownedComment>
       <ownedComment xmi:id="_y3qjgG7fEeGO5JJTinolhw">
         <body>This performer represents the Guarantor (CONF:9079)</body>

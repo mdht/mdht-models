@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getIndication()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation value.codeSystemName='SNOMEDCT' moodCode='EVN' classCode='OBS' code.codeSystemName='SNOMEDCT' value.codeSystem='2.16.840.1.113883.6.96' constraints.validation.info='IndicationCodeNullFlavor' templateId.root='2.16.840.1.113883.10.20.22.4.19' constraints.validation.error='IndicationTemplateId IndicationClassCode IndicationMoodCode IndicationId IndicationStatusCode' statusCode.code='completed' code.codeSystem='2.16.840.1.113883.6.96' constraints.validation.warning='IndicationCode IndicationEffectiveTime IndicationValue IndicationValueP'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation value.codeSystemName='SNOMEDCT' statusCode.code='completed' code.codeSystem='2.16.840.1.113883.6.96' templateId.root='2.16.840.1.113883.10.20.22.4.19' constraints.validation.error='IndicationTemplateId IndicationClassCode IndicationMoodCode IndicationId IndicationStatusCode' code.codeSystemName='SNOMEDCT' constraints.validation.warning='IndicationCode IndicationEffectiveTime IndicationValue IndicationValueP' classCode='OBS' moodCode='EVN' constraints.validation.info='IndicationCodeNullFlavor' value.codeSystem='2.16.840.1.113883.6.96'"
  * @generated
  */
 public interface Indication extends Observation {
@@ -69,13 +69,13 @@ public interface Indication extends Observation {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (self.code.oclIsKindOf(datatypes::CD) and 
+	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
 	 * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
 	 * value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '404684003' or value.code = '409586006' or value.code = '282291009' or value.code = '64572001' or value.code = '248536006' or value.code = '418799008' or value.code = '55607006'))
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (self.code.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.96\' and (value.code = \'404684003\' or value.code = \'409586006\' or value.code = \'282291009\' or value.code = \'64572001\' or value.code = \'248536006\' or value.code = \'418799008\' or value.code = \'55607006\'))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \r\nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.96\' and (value.code = \'404684003\' or value.code = \'409586006\' or value.code = \'282291009\' or value.code = \'64572001\' or value.code = \'248536006\' or value.code = \'418799008\' or value.code = \'55607006\'))'"
 	 * @generated
 	 */
 	boolean validateIndicationCode(DiagnosticChain diagnostics, Map<Object, Object> context);

@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.Supply;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getMedicationSupplyOrder()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation moodCode='INT' classCode='SPLY' constraints.validation.info='MedicationSupplyOrderAuthor MedicationSupplyOrderInstructions' templateId.root='2.16.840.1.113883.10.20.22.4.17' constraints.validation.error='MedicationSupplyOrderTemplateId MedicationSupplyOrderInstructionInversionInd MedicationSupplyOrderClassCode MedicationSupplyOrderMoodCode MedicationSupplyOrderStatusCode MedicationSupplyOrderId MedicationSupplyOrderProduct' constraints.validation.warning='MedicationSupplyOrderEffectiveTime MedicationSupplyOrderQuantity MedicationSupplyOrderRepeatNumber'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.22.4.17' constraints.validation.error='MedicationSupplyOrderTemplateId MedicationSupplyOrderInstructionInversionInd MedicationSupplyOrderClassCode MedicationSupplyOrderMoodCode MedicationSupplyOrderStatusCode MedicationSupplyOrderId MedicationSupplyOrderProduct' constraints.validation.warning='MedicationSupplyOrderEffectiveTime MedicationSupplyOrderQuantity MedicationSupplyOrderRepeatNumber' classCode='SPLY' constraints.validation.info='MedicationSupplyOrderAuthor MedicationSupplyOrderInstructions' moodCode='INT'"
  * @generated
  */
 public interface MedicationSupplyOrder extends Supply {
@@ -187,10 +187,10 @@ public interface MedicationSupplyOrder extends Supply {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::Instructions))->asSequence()->first().oclAsType(consol::Instructions)
+	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::Instructions))->asSequence()->any(true).oclAsType(consol::Instructions)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::Instructions))->asSequence()->first().oclAsType(consol::Instructions)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::Instructions))->asSequence()->any(true).oclAsType(consol::Instructions)'"
 	 * @generated
 	 */
 	Instructions getInstructions();

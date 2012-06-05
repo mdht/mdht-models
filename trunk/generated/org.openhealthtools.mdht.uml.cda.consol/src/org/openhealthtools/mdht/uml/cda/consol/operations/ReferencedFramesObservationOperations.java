@@ -364,7 +364,7 @@ public class ReferencedFramesObservationOperations extends ClinicalStatementOper
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_BOUNDARY_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::BoundaryObservation))->asSequence()->first().oclAsType(consol::BoundaryObservation)";
+	protected static final String GET_BOUNDARY_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::BoundaryObservation))->asSequence()->any(true).oclAsType(consol::BoundaryObservation)";
 
 	/**
 	 * The cached OCL query for the '{@link #getBoundaryObservation(ReferencedFramesObservation) <em>Get Boundary Observation</em>}' query operation.
@@ -380,7 +380,7 @@ public class ReferencedFramesObservationOperations extends ClinicalStatementOper
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::BoundaryObservation))->asSequence()->first().oclAsType(consol::BoundaryObservation)
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::BoundaryObservation))->asSequence()->any(true).oclAsType(consol::BoundaryObservation)
 	 * @param referencedFramesObservation The receiving '<em><b>Referenced Frames Observation</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated

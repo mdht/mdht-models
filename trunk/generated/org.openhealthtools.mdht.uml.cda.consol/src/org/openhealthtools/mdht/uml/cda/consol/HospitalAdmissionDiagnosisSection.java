@@ -26,7 +26,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getHospitalAdmissionDiagnosisSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystemName='LOINC' templateId.root='2.16.840.1.113883.10.20.22.2.43' constraints.validation.error='HospitalAdmissionDiagnosisSectionTemplateId HospitalAdmissionDiagnosisSectionCode HospitalAdmissionDiagnosisSectionTitle HospitalAdmissionDiagnosisSectionText' code.displayName='HOSPITAL ADMISSION DX' code.codeSystem='2.16.840.1.113883.6.1' code.code='46241-6' constraints.validation.warning='HospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosis'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.displayName='HOSPITAL ADMISSION DX' templateId.root='2.16.840.1.113883.10.20.22.2.43' constraints.validation.error='HospitalAdmissionDiagnosisSectionTemplateId HospitalAdmissionDiagnosisSectionCode HospitalAdmissionDiagnosisSectionTitle HospitalAdmissionDiagnosisSectionText' code.codeSystemName='LOINC' constraints.validation.warning='HospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosis' code.code='46241-6'"
  * @generated
  */
 public interface HospitalAdmissionDiagnosisSection extends Section {
@@ -102,10 +102,10 @@ public interface HospitalAdmissionDiagnosisSection extends Section {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::HospitalAdmissionDiagnosis))->asSequence()->first().oclAsType(consol::HospitalAdmissionDiagnosis)
+	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::HospitalAdmissionDiagnosis))->asSequence()->any(true).oclAsType(consol::HospitalAdmissionDiagnosis)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::HospitalAdmissionDiagnosis))->asSequence()->first().oclAsType(consol::HospitalAdmissionDiagnosis)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::HospitalAdmissionDiagnosis))->asSequence()->any(true).oclAsType(consol::HospitalAdmissionDiagnosis)'"
 	 * @generated
 	 */
 	HospitalAdmissionDiagnosis getHospitalAdmissionDiagnosis();

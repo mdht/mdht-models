@@ -1663,7 +1663,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_ASSESSMENT_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AssessmentSection))->asSequence()->first().oclAsType(consol::AssessmentSection)";
+	protected static final String GET_ASSESSMENT_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AssessmentSection))->asSequence()->any(true).oclAsType(consol::AssessmentSection)";
 
 	/**
 	 * The cached OCL query for the '{@link #getAssessmentSection(ProgressNote) <em>Get Assessment Section</em>}' query operation.
@@ -1679,7 +1679,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AssessmentSection))->asSequence()->first().oclAsType(consol::AssessmentSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AssessmentSection))->asSequence()->any(true).oclAsType(consol::AssessmentSection)
 	 * @param progressNote The receiving '<em><b>Progress Note</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
@@ -1707,7 +1707,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_PLAN_OF_CARE_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PlanOfCareSection))->asSequence()->first().oclAsType(consol::PlanOfCareSection)";
+	protected static final String GET_PLAN_OF_CARE_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PlanOfCareSection))->asSequence()->any(true).oclAsType(consol::PlanOfCareSection)";
 
 	/**
 	 * The cached OCL query for the '{@link #getPlanOfCareSection(ProgressNote) <em>Get Plan Of Care Section</em>}' query operation.
@@ -1723,7 +1723,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PlanOfCareSection))->asSequence()->first().oclAsType(consol::PlanOfCareSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PlanOfCareSection))->asSequence()->any(true).oclAsType(consol::PlanOfCareSection)
 	 * @param progressNote The receiving '<em><b>Progress Note</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
@@ -1751,7 +1751,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_ASSESSMENT_AND_PLAN_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AssessmentAndPlanSection))->asSequence()->first().oclAsType(consol::AssessmentAndPlanSection)";
+	protected static final String GET_ASSESSMENT_AND_PLAN_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AssessmentAndPlanSection))->asSequence()->any(true).oclAsType(consol::AssessmentAndPlanSection)";
 
 	/**
 	 * The cached OCL query for the '{@link #getAssessmentAndPlanSection(ProgressNote) <em>Get Assessment And Plan Section</em>}' query operation.
@@ -1767,7 +1767,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AssessmentAndPlanSection))->asSequence()->first().oclAsType(consol::AssessmentAndPlanSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AssessmentAndPlanSection))->asSequence()->any(true).oclAsType(consol::AssessmentAndPlanSection)
 	 * @param progressNote The receiving '<em><b>Progress Note</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
@@ -1795,7 +1795,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_ALLERGIES_SECTION_ENTRIES_OPTIONAL__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AllergiesSectionEntriesOptional))->asSequence()->first().oclAsType(consol::AllergiesSectionEntriesOptional)";
+	protected static final String GET_ALLERGIES_SECTION_ENTRIES_OPTIONAL__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AllergiesSectionEntriesOptional))->asSequence()->any(true).oclAsType(consol::AllergiesSectionEntriesOptional)";
 
 	/**
 	 * The cached OCL query for the '{@link #getAllergiesSectionEntriesOptional(ProgressNote) <em>Get Allergies Section Entries Optional</em>}' query operation.
@@ -1811,7 +1811,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AllergiesSectionEntriesOptional))->asSequence()->first().oclAsType(consol::AllergiesSectionEntriesOptional)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AllergiesSectionEntriesOptional))->asSequence()->any(true).oclAsType(consol::AllergiesSectionEntriesOptional)
 	 * @param progressNote The receiving '<em><b>Progress Note</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
@@ -1839,7 +1839,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_CHIEF_COMPLAINT_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintSection))->asSequence()->first().oclAsType(consol::ChiefComplaintSection)";
+	protected static final String GET_CHIEF_COMPLAINT_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintSection))->asSequence()->any(true).oclAsType(consol::ChiefComplaintSection)";
 
 	/**
 	 * The cached OCL query for the '{@link #getChiefComplaintSection(ProgressNote) <em>Get Chief Complaint Section</em>}' query operation.
@@ -1855,7 +1855,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintSection))->asSequence()->first().oclAsType(consol::ChiefComplaintSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ChiefComplaintSection))->asSequence()->any(true).oclAsType(consol::ChiefComplaintSection)
 	 * @param progressNote The receiving '<em><b>Progress Note</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
@@ -1883,7 +1883,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_INTERVENTIONS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::InterventionsSection))->asSequence()->first().oclAsType(consol::InterventionsSection)";
+	protected static final String GET_INTERVENTIONS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::InterventionsSection))->asSequence()->any(true).oclAsType(consol::InterventionsSection)";
 
 	/**
 	 * The cached OCL query for the '{@link #getInterventionsSection(ProgressNote) <em>Get Interventions Section</em>}' query operation.
@@ -1899,7 +1899,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::InterventionsSection))->asSequence()->first().oclAsType(consol::InterventionsSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::InterventionsSection))->asSequence()->any(true).oclAsType(consol::InterventionsSection)
 	 * @param progressNote The receiving '<em><b>Progress Note</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
@@ -1927,7 +1927,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::MedicationsSectionEntriesOptional))->asSequence()->first().oclAsType(consol::MedicationsSectionEntriesOptional)";
+	protected static final String GET_MEDICATIONS_SECTION_ENTRIES_OPTIONAL__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::MedicationsSectionEntriesOptional))->asSequence()->any(true).oclAsType(consol::MedicationsSectionEntriesOptional)";
 
 	/**
 	 * The cached OCL query for the '{@link #getMedicationsSectionEntriesOptional(ProgressNote) <em>Get Medications Section Entries Optional</em>}' query operation.
@@ -1943,7 +1943,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::MedicationsSectionEntriesOptional))->asSequence()->first().oclAsType(consol::MedicationsSectionEntriesOptional)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::MedicationsSectionEntriesOptional))->asSequence()->any(true).oclAsType(consol::MedicationsSectionEntriesOptional)
 	 * @param progressNote The receiving '<em><b>Progress Note</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
@@ -1971,7 +1971,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_OBJECTIVE_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ObjectiveSection))->asSequence()->first().oclAsType(consol::ObjectiveSection)";
+	protected static final String GET_OBJECTIVE_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ObjectiveSection))->asSequence()->any(true).oclAsType(consol::ObjectiveSection)";
 
 	/**
 	 * The cached OCL query for the '{@link #getObjectiveSection(ProgressNote) <em>Get Objective Section</em>}' query operation.
@@ -1987,7 +1987,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ObjectiveSection))->asSequence()->first().oclAsType(consol::ObjectiveSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ObjectiveSection))->asSequence()->any(true).oclAsType(consol::ObjectiveSection)
 	 * @param progressNote The receiving '<em><b>Progress Note</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
@@ -2015,7 +2015,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_PHYSICAL_EXAM_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PhysicalExamSection))->asSequence()->first().oclAsType(consol::PhysicalExamSection)";
+	protected static final String GET_PHYSICAL_EXAM_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PhysicalExamSection))->asSequence()->any(true).oclAsType(consol::PhysicalExamSection)";
 
 	/**
 	 * The cached OCL query for the '{@link #getPhysicalExamSection(ProgressNote) <em>Get Physical Exam Section</em>}' query operation.
@@ -2031,7 +2031,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PhysicalExamSection))->asSequence()->first().oclAsType(consol::PhysicalExamSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PhysicalExamSection))->asSequence()->any(true).oclAsType(consol::PhysicalExamSection)
 	 * @param progressNote The receiving '<em><b>Progress Note</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
@@ -2059,7 +2059,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_PROBLEM_SECTION_ENTRIES_OPTIONAL__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProblemSectionEntriesOptional))->asSequence()->first().oclAsType(consol::ProblemSectionEntriesOptional)";
+	protected static final String GET_PROBLEM_SECTION_ENTRIES_OPTIONAL__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProblemSectionEntriesOptional))->asSequence()->any(true).oclAsType(consol::ProblemSectionEntriesOptional)";
 
 	/**
 	 * The cached OCL query for the '{@link #getProblemSectionEntriesOptional(ProgressNote) <em>Get Problem Section Entries Optional</em>}' query operation.
@@ -2075,7 +2075,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProblemSectionEntriesOptional))->asSequence()->first().oclAsType(consol::ProblemSectionEntriesOptional)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProblemSectionEntriesOptional))->asSequence()->any(true).oclAsType(consol::ProblemSectionEntriesOptional)
 	 * @param progressNote The receiving '<em><b>Progress Note</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
@@ -2103,7 +2103,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_RESULTS_SECTION_ENTRIES_OPTIONAL__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ResultsSectionEntriesOptional))->asSequence()->first().oclAsType(consol::ResultsSectionEntriesOptional)";
+	protected static final String GET_RESULTS_SECTION_ENTRIES_OPTIONAL__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ResultsSectionEntriesOptional))->asSequence()->any(true).oclAsType(consol::ResultsSectionEntriesOptional)";
 
 	/**
 	 * The cached OCL query for the '{@link #getResultsSectionEntriesOptional(ProgressNote) <em>Get Results Section Entries Optional</em>}' query operation.
@@ -2119,7 +2119,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ResultsSectionEntriesOptional))->asSequence()->first().oclAsType(consol::ResultsSectionEntriesOptional)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ResultsSectionEntriesOptional))->asSequence()->any(true).oclAsType(consol::ResultsSectionEntriesOptional)
 	 * @param progressNote The receiving '<em><b>Progress Note</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
@@ -2147,7 +2147,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_REVIEW_OF_SYSTEMS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ReviewOfSystemsSection))->asSequence()->first().oclAsType(consol::ReviewOfSystemsSection)";
+	protected static final String GET_REVIEW_OF_SYSTEMS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ReviewOfSystemsSection))->asSequence()->any(true).oclAsType(consol::ReviewOfSystemsSection)";
 
 	/**
 	 * The cached OCL query for the '{@link #getReviewOfSystemsSection(ProgressNote) <em>Get Review Of Systems Section</em>}' query operation.
@@ -2163,7 +2163,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ReviewOfSystemsSection))->asSequence()->first().oclAsType(consol::ReviewOfSystemsSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ReviewOfSystemsSection))->asSequence()->any(true).oclAsType(consol::ReviewOfSystemsSection)
 	 * @param progressNote The receiving '<em><b>Progress Note</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
@@ -2191,7 +2191,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_SUBJECTIVE_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::SubjectiveSection))->asSequence()->first().oclAsType(consol::SubjectiveSection)";
+	protected static final String GET_SUBJECTIVE_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::SubjectiveSection))->asSequence()->any(true).oclAsType(consol::SubjectiveSection)";
 
 	/**
 	 * The cached OCL query for the '{@link #getSubjectiveSection(ProgressNote) <em>Get Subjective Section</em>}' query operation.
@@ -2207,7 +2207,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::SubjectiveSection))->asSequence()->first().oclAsType(consol::SubjectiveSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::SubjectiveSection))->asSequence()->any(true).oclAsType(consol::SubjectiveSection)
 	 * @param progressNote The receiving '<em><b>Progress Note</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
@@ -2235,7 +2235,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::VitalSignsSectionEntriesOptional))->asSequence()->first().oclAsType(consol::VitalSignsSectionEntriesOptional)";
+	protected static final String GET_VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::VitalSignsSectionEntriesOptional))->asSequence()->any(true).oclAsType(consol::VitalSignsSectionEntriesOptional)";
 
 	/**
 	 * The cached OCL query for the '{@link #getVitalSignsSectionEntriesOptional(ProgressNote) <em>Get Vital Signs Section Entries Optional</em>}' query operation.
@@ -2251,7 +2251,7 @@ public class ProgressNoteOperations extends GeneralHeaderConstraintsOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::VitalSignsSectionEntriesOptional))->asSequence()->first().oclAsType(consol::VitalSignsSectionEntriesOptional)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::VitalSignsSectionEntriesOptional))->asSequence()->any(true).oclAsType(consol::VitalSignsSectionEntriesOptional)
 	 * @param progressNote The receiving '<em><b>Progress Note</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated

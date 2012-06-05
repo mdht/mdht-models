@@ -21,10 +21,10 @@ import org.eclipse.emf.common.util.DiagnosticChain;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getOperativeNote()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystemName='LOINC' constraints.validation.query='OperativeNoteDocumentationOfServiceEventPrimaryPerformerFunctionCode OperativeNoteDocumentationOfServiceEventPrimaryPerformerTypeCode OperativeNoteDocumentationOfServiceEventProcedureCodes OperativeNoteDocumentationOfServiceEventEffectiveTimeHasLow OperativeNoteDocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth OperativeNoteDocumentationOfServiceEventEffectiveTimeNoHighIfWidth OperativeNoteDocumentationOfServiceEventAnyAssistantsAsSecondary OperativeNoteDocumentationOfServiceEventCode OperativeNoteDocumentationOfServiceEventEffectiveTime OperativeNoteDocumentationOfServiceEvent' constraints.validation.info='OperativeNoteProcedureImplantsSection OperativeNoteOperativeNoteFluidSection OperativeNoteOperativeNoteSurgicalProcedureSection OperativeNotePlanOfCareSection OperativeNotePlannedProcedureSection OperativeNoteProcedureDispositionSection OperativeNoteProcedureIndicationsSection OperativeNoteSurgicalDrainsSection' templateId.root='2.16.840.1.113883.10.20.22.1.7' constraints.validation.error='OperativeNoteTemplateId GeneralHeaderConstraintsCode OperativeNoteDocumentationOf OperativeNoteAnesthesiaSection OperativeNoteComplicationsSection OperativeNotePostoperativeDiagnosisSection OperativeNotePreoperativeDiagnosisSection OperativeNoteProcedureEstimatedBloodLossSection OperativeNoteProcedureFindingsSection OperativeNoteProcedureSpecimensTakenSection OperativeNoteProcedureDescriptionSection OperativeNoteDocumentationOfServiceEventPrimaryPerformerFunctionCode OperativeNoteDocumentationOfServiceEventPrimaryPerformerTypeCode OperativeNoteDocumentationOfServiceEventProcedureCodes OperativeNoteDocumentationOfServiceEventEffectiveTimeHasLow OperativeNoteDocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth OperativeNoteDocumentationOfServiceEventEffectiveTimeNoHighIfWidth OperativeNoteDocumentationOfServiceEventAnyAssistantsAsSecondary OperativeNoteDocumentationOfServiceEventCode OperativeNoteDocumentationOfServiceEventEffectiveTime OperativeNoteDocumentationOfServiceEvent' code.codeSystem='2.16.840.1.113883.6.1'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' templateId.root='2.16.840.1.113883.10.20.22.1.7' constraints.validation.error='OperativeNoteTemplateId GeneralHeaderConstraintsCode OperativeNoteDocumentationOf OperativeNoteAnesthesiaSection OperativeNoteComplicationsSection OperativeNotePostoperativeDiagnosisSection OperativeNotePreoperativeDiagnosisSection OperativeNoteProcedureEstimatedBloodLossSection OperativeNoteProcedureFindingsSection OperativeNoteProcedureSpecimensTakenSection OperativeNoteProcedureDescriptionSection OperativeNoteDocumentationOfServiceEventPrimaryPerformerFunctionCode OperativeNoteDocumentationOfServiceEventPrimaryPerformerTypeCode OperativeNoteDocumentationOfServiceEventProcedureCodes OperativeNoteDocumentationOfServiceEventEffectiveTimeHasLow OperativeNoteDocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth OperativeNoteDocumentationOfServiceEventEffectiveTimeNoHighIfWidth OperativeNoteDocumentationOfServiceEventAnyAssistantsAsSecondary OperativeNoteDocumentationOfServiceEventCode OperativeNoteDocumentationOfServiceEventEffectiveTime OperativeNoteDocumentationOfServiceEvent' code.codeSystemName='LOINC' constraints.validation.query='OperativeNoteDocumentationOfServiceEventPrimaryPerformerFunctionCode OperativeNoteDocumentationOfServiceEventPrimaryPerformerTypeCode OperativeNoteDocumentationOfServiceEventProcedureCodes OperativeNoteDocumentationOfServiceEventEffectiveTimeHasLow OperativeNoteDocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth OperativeNoteDocumentationOfServiceEventEffectiveTimeNoHighIfWidth OperativeNoteDocumentationOfServiceEventAnyAssistantsAsSecondary OperativeNoteDocumentationOfServiceEventCode OperativeNoteDocumentationOfServiceEventEffectiveTime OperativeNoteDocumentationOfServiceEvent' constraints.validation.info='OperativeNoteProcedureImplantsSection OperativeNoteOperativeNoteFluidSection OperativeNoteOperativeNoteSurgicalProcedureSection OperativeNotePlanOfCareSection OperativeNotePlannedProcedureSection OperativeNoteProcedureDispositionSection OperativeNoteProcedureIndicationsSection OperativeNoteSurgicalDrainsSection'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolOperativeNoteDocumentationOf constraints.validation.error='DocumentationOfServiceEvent'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolOperativeNoteDocumentationOfServiceEvent constraints.validation.error='ServiceEventProcedureCodes ServiceEventEffectiveTimeHasLow ServiceEventEffectiveTimeHasHighWhenNoWidth ServiceEventEffectiveTimeNoHighIfWidth ServiceEventAnyAssistantsAsSecondary ServiceEventCode ServiceEventEffectiveTime'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolOperativeNoteDocumentationOfServiceEventPrimaryPerformer functionCode.codeSystemName='NUCC Health Care Provider Taxonomy' functionCode.codeSystem='2.16.840.1.113883.6.101' constraints.validation.error='PrimaryPerformerFunctionCode PrimaryPerformerTypeCode'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolOperativeNoteDocumentationOfServiceEventPrimaryPerformer functionCode.codeSystem='2.16.840.1.113883.6.101' constraints.validation.error='PrimaryPerformerFunctionCode PrimaryPerformerTypeCode' functionCode.codeSystemName='NUCC Health Care Provider Taxonomy'"
  * @generated
  */
 public interface OperativeNote extends GeneralHeaderConstraints {
@@ -268,13 +268,13 @@ public interface OperativeNote extends GeneralHeaderConstraints {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null)->select(typeCode = vocab::x_ServiceEventPerformer::PPRF)->reject((functionCode.oclIsUndefined() or functionCode.isNullFlavorUndefined()) implies (functionCode.oclIsKindOf(datatypes::CE) and 
+	 * self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null)->select(typeCode = vocab::x_ServiceEventPerformer::PPRF)->reject((functionCode.oclIsUndefined() or functionCode.isNullFlavorUndefined()) implies (not functionCode.oclIsUndefined() and functionCode.oclIsKindOf(datatypes::CE) and 
 	 * let value : datatypes::CE = functionCode.oclAsType(datatypes::CE) in 
 	 * value.codeSystem = '2.16.840.1.113883.6.101' and not value.code.oclIsUndefined()))
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null)->select(typeCode = vocab::x_ServiceEventPerformer::PPRF)->reject((functionCode.oclIsUndefined() or functionCode.isNullFlavorUndefined()) implies (functionCode.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = functionCode.oclAsType(datatypes::CE) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.101\' and not value.code.oclIsUndefined()))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null)->select(typeCode = vocab::x_ServiceEventPerformer::PPRF)->reject((functionCode.oclIsUndefined() or functionCode.isNullFlavorUndefined()) implies (not functionCode.oclIsUndefined() and functionCode.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = functionCode.oclAsType(datatypes::CE) in \r\nvalue.codeSystem = \'2.16.840.1.113883.6.101\' and not value.code.oclIsUndefined()))'"
 	 * @generated
 	 */
 	boolean validateOperativeNoteDocumentationOfServiceEventPrimaryPerformerFunctionCode(DiagnosticChain diagnostics,
@@ -409,10 +409,10 @@ public interface OperativeNote extends GeneralHeaderConstraints {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AnesthesiaSection))->asSequence()->first().oclAsType(consol::AnesthesiaSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AnesthesiaSection))->asSequence()->any(true).oclAsType(consol::AnesthesiaSection)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AnesthesiaSection))->asSequence()->first().oclAsType(consol::AnesthesiaSection)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AnesthesiaSection))->asSequence()->any(true).oclAsType(consol::AnesthesiaSection)'"
 	 * @generated
 	 */
 	AnesthesiaSection getAnesthesiaSection();
@@ -421,10 +421,10 @@ public interface OperativeNote extends GeneralHeaderConstraints {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ComplicationsSection))->asSequence()->first().oclAsType(consol::ComplicationsSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ComplicationsSection))->asSequence()->any(true).oclAsType(consol::ComplicationsSection)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ComplicationsSection))->asSequence()->first().oclAsType(consol::ComplicationsSection)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ComplicationsSection))->asSequence()->any(true).oclAsType(consol::ComplicationsSection)'"
 	 * @generated
 	 */
 	ComplicationsSection getComplicationsSection();
@@ -433,10 +433,10 @@ public interface OperativeNote extends GeneralHeaderConstraints {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PostoperativeDiagnosisSection))->asSequence()->first().oclAsType(consol::PostoperativeDiagnosisSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PostoperativeDiagnosisSection))->asSequence()->any(true).oclAsType(consol::PostoperativeDiagnosisSection)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PostoperativeDiagnosisSection))->asSequence()->first().oclAsType(consol::PostoperativeDiagnosisSection)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PostoperativeDiagnosisSection))->asSequence()->any(true).oclAsType(consol::PostoperativeDiagnosisSection)'"
 	 * @generated
 	 */
 	PostoperativeDiagnosisSection getPostoperativeDiagnosisSection();
@@ -445,10 +445,10 @@ public interface OperativeNote extends GeneralHeaderConstraints {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PreoperativeDiagnosisSection))->asSequence()->first().oclAsType(consol::PreoperativeDiagnosisSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PreoperativeDiagnosisSection))->asSequence()->any(true).oclAsType(consol::PreoperativeDiagnosisSection)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PreoperativeDiagnosisSection))->asSequence()->first().oclAsType(consol::PreoperativeDiagnosisSection)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PreoperativeDiagnosisSection))->asSequence()->any(true).oclAsType(consol::PreoperativeDiagnosisSection)'"
 	 * @generated
 	 */
 	PreoperativeDiagnosisSection getPreoperativeDiagnosisSection();
@@ -457,10 +457,10 @@ public interface OperativeNote extends GeneralHeaderConstraints {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProcedureEstimatedBloodLossSection))->asSequence()->first().oclAsType(consol::ProcedureEstimatedBloodLossSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProcedureEstimatedBloodLossSection))->asSequence()->any(true).oclAsType(consol::ProcedureEstimatedBloodLossSection)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProcedureEstimatedBloodLossSection))->asSequence()->first().oclAsType(consol::ProcedureEstimatedBloodLossSection)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProcedureEstimatedBloodLossSection))->asSequence()->any(true).oclAsType(consol::ProcedureEstimatedBloodLossSection)'"
 	 * @generated
 	 */
 	ProcedureEstimatedBloodLossSection getProcedureEstimatedBloodLossSection();
@@ -469,10 +469,10 @@ public interface OperativeNote extends GeneralHeaderConstraints {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProcedureFindingsSection))->asSequence()->first().oclAsType(consol::ProcedureFindingsSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProcedureFindingsSection))->asSequence()->any(true).oclAsType(consol::ProcedureFindingsSection)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProcedureFindingsSection))->asSequence()->first().oclAsType(consol::ProcedureFindingsSection)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProcedureFindingsSection))->asSequence()->any(true).oclAsType(consol::ProcedureFindingsSection)'"
 	 * @generated
 	 */
 	ProcedureFindingsSection getProcedureFindingsSection();
@@ -481,10 +481,10 @@ public interface OperativeNote extends GeneralHeaderConstraints {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProcedureSpecimensTakenSection))->asSequence()->first().oclAsType(consol::ProcedureSpecimensTakenSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProcedureSpecimensTakenSection))->asSequence()->any(true).oclAsType(consol::ProcedureSpecimensTakenSection)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProcedureSpecimensTakenSection))->asSequence()->first().oclAsType(consol::ProcedureSpecimensTakenSection)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProcedureSpecimensTakenSection))->asSequence()->any(true).oclAsType(consol::ProcedureSpecimensTakenSection)'"
 	 * @generated
 	 */
 	ProcedureSpecimensTakenSection getProcedureSpecimensTakenSection();
@@ -493,10 +493,10 @@ public interface OperativeNote extends GeneralHeaderConstraints {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProcedureDescriptionSection))->asSequence()->first().oclAsType(consol::ProcedureDescriptionSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProcedureDescriptionSection))->asSequence()->any(true).oclAsType(consol::ProcedureDescriptionSection)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProcedureDescriptionSection))->asSequence()->first().oclAsType(consol::ProcedureDescriptionSection)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProcedureDescriptionSection))->asSequence()->any(true).oclAsType(consol::ProcedureDescriptionSection)'"
 	 * @generated
 	 */
 	ProcedureDescriptionSection getProcedureDescriptionSection();
@@ -505,10 +505,10 @@ public interface OperativeNote extends GeneralHeaderConstraints {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProcedureImplantsSection))->asSequence()->first().oclAsType(consol::ProcedureImplantsSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProcedureImplantsSection))->asSequence()->any(true).oclAsType(consol::ProcedureImplantsSection)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProcedureImplantsSection))->asSequence()->first().oclAsType(consol::ProcedureImplantsSection)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProcedureImplantsSection))->asSequence()->any(true).oclAsType(consol::ProcedureImplantsSection)'"
 	 * @generated
 	 */
 	ProcedureImplantsSection getProcedureImplantsSection();
@@ -517,10 +517,10 @@ public interface OperativeNote extends GeneralHeaderConstraints {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::OperativeNoteFluidSection))->asSequence()->first().oclAsType(consol::OperativeNoteFluidSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::OperativeNoteFluidSection))->asSequence()->any(true).oclAsType(consol::OperativeNoteFluidSection)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::OperativeNoteFluidSection))->asSequence()->first().oclAsType(consol::OperativeNoteFluidSection)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::OperativeNoteFluidSection))->asSequence()->any(true).oclAsType(consol::OperativeNoteFluidSection)'"
 	 * @generated
 	 */
 	OperativeNoteFluidSection getOperativeNoteFluidSection();
@@ -529,10 +529,10 @@ public interface OperativeNote extends GeneralHeaderConstraints {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::OperativeNoteSurgicalProcedureSection))->asSequence()->first().oclAsType(consol::OperativeNoteSurgicalProcedureSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::OperativeNoteSurgicalProcedureSection))->asSequence()->any(true).oclAsType(consol::OperativeNoteSurgicalProcedureSection)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::OperativeNoteSurgicalProcedureSection))->asSequence()->first().oclAsType(consol::OperativeNoteSurgicalProcedureSection)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::OperativeNoteSurgicalProcedureSection))->asSequence()->any(true).oclAsType(consol::OperativeNoteSurgicalProcedureSection)'"
 	 * @generated
 	 */
 	OperativeNoteSurgicalProcedureSection getOperativeNoteSurgicalProcedureSection();
@@ -541,10 +541,10 @@ public interface OperativeNote extends GeneralHeaderConstraints {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PlanOfCareSection))->asSequence()->first().oclAsType(consol::PlanOfCareSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PlanOfCareSection))->asSequence()->any(true).oclAsType(consol::PlanOfCareSection)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PlanOfCareSection))->asSequence()->first().oclAsType(consol::PlanOfCareSection)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PlanOfCareSection))->asSequence()->any(true).oclAsType(consol::PlanOfCareSection)'"
 	 * @generated
 	 */
 	PlanOfCareSection getPlanOfCareSection();
@@ -553,10 +553,10 @@ public interface OperativeNote extends GeneralHeaderConstraints {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PlannedProcedureSection))->asSequence()->first().oclAsType(consol::PlannedProcedureSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PlannedProcedureSection))->asSequence()->any(true).oclAsType(consol::PlannedProcedureSection)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PlannedProcedureSection))->asSequence()->first().oclAsType(consol::PlannedProcedureSection)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PlannedProcedureSection))->asSequence()->any(true).oclAsType(consol::PlannedProcedureSection)'"
 	 * @generated
 	 */
 	PlannedProcedureSection getPlannedProcedureSection();
@@ -565,10 +565,10 @@ public interface OperativeNote extends GeneralHeaderConstraints {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProcedureDispositionSection))->asSequence()->first().oclAsType(consol::ProcedureDispositionSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProcedureDispositionSection))->asSequence()->any(true).oclAsType(consol::ProcedureDispositionSection)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProcedureDispositionSection))->asSequence()->first().oclAsType(consol::ProcedureDispositionSection)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProcedureDispositionSection))->asSequence()->any(true).oclAsType(consol::ProcedureDispositionSection)'"
 	 * @generated
 	 */
 	ProcedureDispositionSection getProcedureDispositionSection();
@@ -577,10 +577,10 @@ public interface OperativeNote extends GeneralHeaderConstraints {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProcedureIndicationsSection))->asSequence()->first().oclAsType(consol::ProcedureIndicationsSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProcedureIndicationsSection))->asSequence()->any(true).oclAsType(consol::ProcedureIndicationsSection)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProcedureIndicationsSection))->asSequence()->first().oclAsType(consol::ProcedureIndicationsSection)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProcedureIndicationsSection))->asSequence()->any(true).oclAsType(consol::ProcedureIndicationsSection)'"
 	 * @generated
 	 */
 	ProcedureIndicationsSection getProcedureIndicationsSection();
@@ -589,10 +589,10 @@ public interface OperativeNote extends GeneralHeaderConstraints {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::SurgicalDrainsSection))->asSequence()->first().oclAsType(consol::SurgicalDrainsSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::SurgicalDrainsSection))->asSequence()->any(true).oclAsType(consol::SurgicalDrainsSection)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::SurgicalDrainsSection))->asSequence()->first().oclAsType(consol::SurgicalDrainsSection)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::SurgicalDrainsSection))->asSequence()->any(true).oclAsType(consol::SurgicalDrainsSection)'"
 	 * @generated
 	 */
 	SurgicalDrainsSection getSurgicalDrainsSection();

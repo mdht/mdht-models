@@ -806,7 +806,7 @@ public class FamilyHistoryObservationOperations extends ClinicalStatementOperati
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_AGE_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AgeObservation))->asSequence()->first().oclAsType(consol::AgeObservation)";
+	protected static final String GET_AGE_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AgeObservation))->asSequence()->any(true).oclAsType(consol::AgeObservation)";
 
 	/**
 	 * The cached OCL query for the '{@link #getAgeObservation(FamilyHistoryObservation) <em>Get Age Observation</em>}' query operation.
@@ -822,7 +822,7 @@ public class FamilyHistoryObservationOperations extends ClinicalStatementOperati
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AgeObservation))->asSequence()->first().oclAsType(consol::AgeObservation)
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AgeObservation))->asSequence()->any(true).oclAsType(consol::AgeObservation)
 	 * @param familyHistoryObservation The receiving '<em><b>Family History Observation</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated
@@ -851,7 +851,7 @@ public class FamilyHistoryObservationOperations extends ClinicalStatementOperati
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_FAMILY_HISTORY_DEATH_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::FamilyHistoryDeathObservation))->asSequence()->first().oclAsType(consol::FamilyHistoryDeathObservation)";
+	protected static final String GET_FAMILY_HISTORY_DEATH_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::FamilyHistoryDeathObservation))->asSequence()->any(true).oclAsType(consol::FamilyHistoryDeathObservation)";
 
 	/**
 	 * The cached OCL query for the '{@link #getFamilyHistoryDeathObservation(FamilyHistoryObservation) <em>Get Family History Death Observation</em>}' query operation.
@@ -867,7 +867,7 @@ public class FamilyHistoryObservationOperations extends ClinicalStatementOperati
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::FamilyHistoryDeathObservation))->asSequence()->first().oclAsType(consol::FamilyHistoryDeathObservation)
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::FamilyHistoryDeathObservation))->asSequence()->any(true).oclAsType(consol::FamilyHistoryDeathObservation)
 	 * @param familyHistoryObservation The receiving '<em><b>Family History Observation</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated

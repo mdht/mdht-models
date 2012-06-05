@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getProblemStatus()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation value.codeSystemName='SNOMEDCT' moodCode='EVN' classCode='OBS' code.codeSystemName='LOINC' value.codeSystem='2.16.840.1.113883.6.96' templateId.root='2.16.840.1.113883.10.20.22.4.6' constraints.validation.error='ProblemStatusTemplateId ProblemStatusTextReferenceValue ProblemStatusClassCode ProblemStatusMoodCode ProblemStatusCode ProblemStatusStatusCode ProblemStatusValue' statusCode.code='completed' code.displayName='Status' code.codeSystem='2.16.840.1.113883.6.1' code.code='33999-4' constraints.validation.warning='ProblemStatusTextReference ProblemStatusText'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation value.codeSystemName='SNOMEDCT' statusCode.code='completed' code.codeSystem='2.16.840.1.113883.6.1' code.displayName='Status' templateId.root='2.16.840.1.113883.10.20.22.4.6' constraints.validation.error='ProblemStatusTemplateId ProblemStatusTextReferenceValue ProblemStatusClassCode ProblemStatusMoodCode ProblemStatusCode ProblemStatusStatusCode ProblemStatusValue' code.codeSystemName='LOINC' classCode='OBS' constraints.validation.warning='ProblemStatusTextReference ProblemStatusText' code.code='33999-4' moodCode='EVN' value.codeSystem='2.16.840.1.113883.6.96'"
  * @generated
  */
 public interface ProblemStatus extends Observation {

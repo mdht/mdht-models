@@ -27,11 +27,11 @@ import org.eclipse.emf.common.util.DiagnosticChain;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getContinuityOfCareDocument()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystemName='LOINC' constraints.validation.query='ContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityHasNationalProviderIdentifier ContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityCode ContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityId ContinuityOfCareDocumentDocumentationOfServiceEventPerformerTypeCode ContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntity ContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTimeLow ContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTimeHigh ContinuityOfCareDocumentDocumentationOfServiceEventClassCode ContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTime ContinuityOfCareDocumentDocumentationOfServiceEventPerformer ContinuityOfCareDocumentDocumentationOfServiceEvent ContinuityOfCareDocumentAuthorAssignedAuthor' constraints.validation.info='ContinuityOfCareDocumentAdvanceDirectivesSection ContinuityOfCareDocumentEncountersSection ContinuityOfCareDocumentFamilyHistorySection ContinuityOfCareDocumentFunctionalStatusSection ContinuityOfCareDocumentImmunizationsSectionEntriesOptional ContinuityOfCareDocumentMedicalEquipmentSection ContinuityOfCareDocumentPayersSection ContinuityOfCareDocumentPlanOfCareSection ContinuityOfCareDocumentSocialHistorySection ContinuityOfCareDocumentVitalSignsSectionEntriesOptional ContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityCode ContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntity' templateId.root='2.16.840.1.113883.10.20.22.1.2' constraints.validation.error='ContinuityOfCareDocumentTemplateId GeneralHeaderConstraintsCode ContinuityOfCareDocumentLanguageCode ContinuityOfCareDocumentDocumentationOf ContinuityOfCareDocumentAuthor ContinuityOfCareDocumentAllergiesSection ContinuityOfCareDocumentMedicationsSection ContinuityOfCareDocumentProblemSection ContinuityOfCareDocumentProceduresSection ContinuityOfCareDocumentResultsSection ContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityId ContinuityOfCareDocumentDocumentationOfServiceEventPerformerTypeCode ContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTimeLow ContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTimeHigh ContinuityOfCareDocumentDocumentationOfServiceEventClassCode ContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTime ContinuityOfCareDocumentDocumentationOfServiceEvent ContinuityOfCareDocumentAuthorAssignedAuthor' code.displayName='Summarization of Episode Note' code.codeSystem='2.16.840.1.113883.6.1' code.code='34133-9' constraints.validation.warning='ContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityHasNationalProviderIdentifier ContinuityOfCareDocumentDocumentationOfServiceEventPerformer'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.displayName='Summarization of Episode Note' templateId.root='2.16.840.1.113883.10.20.22.1.2' constraints.validation.error='ContinuityOfCareDocumentTemplateId GeneralHeaderConstraintsCode ContinuityOfCareDocumentLanguageCode ContinuityOfCareDocumentDocumentationOf ContinuityOfCareDocumentAuthor ContinuityOfCareDocumentAllergiesSection ContinuityOfCareDocumentMedicationsSection ContinuityOfCareDocumentProblemSection ContinuityOfCareDocumentProceduresSection ContinuityOfCareDocumentResultsSection ContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityId ContinuityOfCareDocumentDocumentationOfServiceEventPerformerTypeCode ContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTimeLow ContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTimeHigh ContinuityOfCareDocumentDocumentationOfServiceEventClassCode ContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTime ContinuityOfCareDocumentDocumentationOfServiceEvent ContinuityOfCareDocumentAuthorAssignedAuthor' code.codeSystemName='LOINC' constraints.validation.warning='ContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityHasNationalProviderIdentifier ContinuityOfCareDocumentDocumentationOfServiceEventPerformer' code.code='34133-9' constraints.validation.query='ContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityHasNationalProviderIdentifier ContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityCode ContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityId ContinuityOfCareDocumentDocumentationOfServiceEventPerformerTypeCode ContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntity ContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTimeLow ContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTimeHigh ContinuityOfCareDocumentDocumentationOfServiceEventClassCode ContinuityOfCareDocumentDocumentationOfServiceEventEffectiveTime ContinuityOfCareDocumentDocumentationOfServiceEventPerformer ContinuityOfCareDocumentDocumentationOfServiceEvent ContinuityOfCareDocumentAuthorAssignedAuthor' constraints.validation.info='ContinuityOfCareDocumentAdvanceDirectivesSection ContinuityOfCareDocumentEncountersSection ContinuityOfCareDocumentFamilyHistorySection ContinuityOfCareDocumentFunctionalStatusSection ContinuityOfCareDocumentImmunizationsSectionEntriesOptional ContinuityOfCareDocumentMedicalEquipmentSection ContinuityOfCareDocumentPayersSection ContinuityOfCareDocumentPlanOfCareSection ContinuityOfCareDocumentSocialHistorySection ContinuityOfCareDocumentVitalSignsSectionEntriesOptional ContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityCode ContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntity'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolContinuityOfCareDocumentDocumentationOf constraints.validation.error='DocumentationOfServiceEvent'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolContinuityOfCareDocumentDocumentationOfServiceEvent classCode='PCPR' constraints.validation.error='ServiceEventEffectiveTimeLow ServiceEventEffectiveTimeHigh ServiceEventClassCode ServiceEventEffectiveTime' constraints.validation.warning='ServiceEventPerformer'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolContinuityOfCareDocumentDocumentationOfServiceEventPerformer typeCode='PRF' constraints.validation.error='PerformerTypeCode' constraints.validation.info='PerformerAssignedEntity'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntity constraints.validation.info='AssignedEntityCode' constraints.validation.error='AssignedEntityId' constraints.validation.warning='AssignedEntityHasNationalProviderIdentifier'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolContinuityOfCareDocumentDocumentationOfServiceEvent constraints.validation.error='ServiceEventEffectiveTimeLow ServiceEventEffectiveTimeHigh ServiceEventClassCode ServiceEventEffectiveTime' classCode='PCPR' constraints.validation.warning='ServiceEventPerformer'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolContinuityOfCareDocumentDocumentationOfServiceEventPerformer constraints.validation.error='PerformerTypeCode' typeCode='PRF' constraints.validation.info='PerformerAssignedEntity'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntity constraints.validation.error='AssignedEntityId' constraints.validation.warning='AssignedEntityHasNationalProviderIdentifier' constraints.validation.info='AssignedEntityCode'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolContinuityOfCareDocumentAuthor constraints.validation.error='AuthorAssignedAuthor'"
  * @generated
  */
@@ -227,13 +227,13 @@ public interface ContinuityOfCareDocument extends GeneralHeaderConstraints {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null).assignedEntity->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (code.oclIsKindOf(datatypes::CE) and 
+	 * self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null).assignedEntity->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CE) and 
 	 * let value : datatypes::CE = code.oclAsType(datatypes::CE) in 
 	 * not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null).assignedEntity->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (code.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = code.oclAsType(datatypes::CE) in \r\nnot value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.documentationOf->excluding(null).serviceEvent->excluding(null).performer->excluding(null).assignedEntity->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = code.oclAsType(datatypes::CE) in \r\nnot value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))'"
 	 * @generated
 	 */
 	boolean validateContinuityOfCareDocumentDocumentationOfServiceEventPerformerAssignedEntityCode(
@@ -451,10 +451,10 @@ public interface ContinuityOfCareDocument extends GeneralHeaderConstraints {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AdvanceDirectivesSection))->asSequence()->first().oclAsType(consol::AdvanceDirectivesSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AdvanceDirectivesSection))->asSequence()->any(true).oclAsType(consol::AdvanceDirectivesSection)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AdvanceDirectivesSection))->asSequence()->first().oclAsType(consol::AdvanceDirectivesSection)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AdvanceDirectivesSection))->asSequence()->any(true).oclAsType(consol::AdvanceDirectivesSection)'"
 	 * @generated
 	 */
 	AdvanceDirectivesSection getAdvanceDirectivesSection();
@@ -463,10 +463,10 @@ public interface ContinuityOfCareDocument extends GeneralHeaderConstraints {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AllergiesSection))->asSequence()->first().oclAsType(consol::AllergiesSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AllergiesSection))->asSequence()->any(true).oclAsType(consol::AllergiesSection)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AllergiesSection))->asSequence()->first().oclAsType(consol::AllergiesSection)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AllergiesSection))->asSequence()->any(true).oclAsType(consol::AllergiesSection)'"
 	 * @generated
 	 */
 	AllergiesSection getAllergiesSection();
@@ -475,10 +475,10 @@ public interface ContinuityOfCareDocument extends GeneralHeaderConstraints {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::EncountersSection))->asSequence()->first().oclAsType(consol::EncountersSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::EncountersSection))->asSequence()->any(true).oclAsType(consol::EncountersSection)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::EncountersSection))->asSequence()->first().oclAsType(consol::EncountersSection)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::EncountersSection))->asSequence()->any(true).oclAsType(consol::EncountersSection)'"
 	 * @generated
 	 */
 	EncountersSection getEncountersSection();
@@ -487,10 +487,10 @@ public interface ContinuityOfCareDocument extends GeneralHeaderConstraints {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PayersSection))->asSequence()->first().oclAsType(consol::PayersSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PayersSection))->asSequence()->any(true).oclAsType(consol::PayersSection)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PayersSection))->asSequence()->first().oclAsType(consol::PayersSection)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PayersSection))->asSequence()->any(true).oclAsType(consol::PayersSection)'"
 	 * @generated
 	 */
 	PayersSection getPayersSection();
@@ -499,10 +499,10 @@ public interface ContinuityOfCareDocument extends GeneralHeaderConstraints {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::MedicationsSection))->asSequence()->first().oclAsType(consol::MedicationsSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::MedicationsSection))->asSequence()->any(true).oclAsType(consol::MedicationsSection)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::MedicationsSection))->asSequence()->first().oclAsType(consol::MedicationsSection)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::MedicationsSection))->asSequence()->any(true).oclAsType(consol::MedicationsSection)'"
 	 * @generated
 	 */
 	MedicationsSection getMedicationsSection();
@@ -511,10 +511,10 @@ public interface ContinuityOfCareDocument extends GeneralHeaderConstraints {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PlanOfCareSection))->asSequence()->first().oclAsType(consol::PlanOfCareSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PlanOfCareSection))->asSequence()->any(true).oclAsType(consol::PlanOfCareSection)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PlanOfCareSection))->asSequence()->first().oclAsType(consol::PlanOfCareSection)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::PlanOfCareSection))->asSequence()->any(true).oclAsType(consol::PlanOfCareSection)'"
 	 * @generated
 	 */
 	PlanOfCareSection getPlanOfCareSection();
@@ -523,10 +523,10 @@ public interface ContinuityOfCareDocument extends GeneralHeaderConstraints {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProceduresSection))->asSequence()->first().oclAsType(consol::ProceduresSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProceduresSection))->asSequence()->any(true).oclAsType(consol::ProceduresSection)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProceduresSection))->asSequence()->first().oclAsType(consol::ProceduresSection)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProceduresSection))->asSequence()->any(true).oclAsType(consol::ProceduresSection)'"
 	 * @generated
 	 */
 	ProceduresSection getProceduresSection();
@@ -535,10 +535,10 @@ public interface ContinuityOfCareDocument extends GeneralHeaderConstraints {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::FamilyHistorySection))->asSequence()->first().oclAsType(consol::FamilyHistorySection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::FamilyHistorySection))->asSequence()->any(true).oclAsType(consol::FamilyHistorySection)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::FamilyHistorySection))->asSequence()->first().oclAsType(consol::FamilyHistorySection)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::FamilyHistorySection))->asSequence()->any(true).oclAsType(consol::FamilyHistorySection)'"
 	 * @generated
 	 */
 	FamilyHistorySection getFamilyHistorySection();
@@ -547,10 +547,10 @@ public interface ContinuityOfCareDocument extends GeneralHeaderConstraints {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::SocialHistorySection))->asSequence()->first().oclAsType(consol::SocialHistorySection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::SocialHistorySection))->asSequence()->any(true).oclAsType(consol::SocialHistorySection)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::SocialHistorySection))->asSequence()->first().oclAsType(consol::SocialHistorySection)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::SocialHistorySection))->asSequence()->any(true).oclAsType(consol::SocialHistorySection)'"
 	 * @generated
 	 */
 	SocialHistorySection getSocialHistorySection();
@@ -559,10 +559,10 @@ public interface ContinuityOfCareDocument extends GeneralHeaderConstraints {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::VitalSignsSectionEntriesOptional))->asSequence()->first().oclAsType(consol::VitalSignsSectionEntriesOptional)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::VitalSignsSectionEntriesOptional))->asSequence()->any(true).oclAsType(consol::VitalSignsSectionEntriesOptional)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::VitalSignsSectionEntriesOptional))->asSequence()->first().oclAsType(consol::VitalSignsSectionEntriesOptional)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::VitalSignsSectionEntriesOptional))->asSequence()->any(true).oclAsType(consol::VitalSignsSectionEntriesOptional)'"
 	 * @generated
 	 */
 	VitalSignsSectionEntriesOptional getVitalSignsSectionEntriesOptional();
@@ -571,10 +571,10 @@ public interface ContinuityOfCareDocument extends GeneralHeaderConstraints {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ResultsSection))->asSequence()->first().oclAsType(consol::ResultsSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ResultsSection))->asSequence()->any(true).oclAsType(consol::ResultsSection)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ResultsSection))->asSequence()->first().oclAsType(consol::ResultsSection)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ResultsSection))->asSequence()->any(true).oclAsType(consol::ResultsSection)'"
 	 * @generated
 	 */
 	ResultsSection getResultsSection();
@@ -583,10 +583,10 @@ public interface ContinuityOfCareDocument extends GeneralHeaderConstraints {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::MedicalEquipmentSection))->asSequence()->first().oclAsType(consol::MedicalEquipmentSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::MedicalEquipmentSection))->asSequence()->any(true).oclAsType(consol::MedicalEquipmentSection)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::MedicalEquipmentSection))->asSequence()->first().oclAsType(consol::MedicalEquipmentSection)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::MedicalEquipmentSection))->asSequence()->any(true).oclAsType(consol::MedicalEquipmentSection)'"
 	 * @generated
 	 */
 	MedicalEquipmentSection getMedicalEquipmentSection();
@@ -595,10 +595,10 @@ public interface ContinuityOfCareDocument extends GeneralHeaderConstraints {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::FunctionalStatusSection))->asSequence()->first().oclAsType(consol::FunctionalStatusSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::FunctionalStatusSection))->asSequence()->any(true).oclAsType(consol::FunctionalStatusSection)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::FunctionalStatusSection))->asSequence()->first().oclAsType(consol::FunctionalStatusSection)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::FunctionalStatusSection))->asSequence()->any(true).oclAsType(consol::FunctionalStatusSection)'"
 	 * @generated
 	 */
 	FunctionalStatusSection getFunctionalStatusSection();
@@ -607,10 +607,10 @@ public interface ContinuityOfCareDocument extends GeneralHeaderConstraints {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ImmunizationsSectionEntriesOptional))->asSequence()->first().oclAsType(consol::ImmunizationsSectionEntriesOptional)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ImmunizationsSectionEntriesOptional))->asSequence()->any(true).oclAsType(consol::ImmunizationsSectionEntriesOptional)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ImmunizationsSectionEntriesOptional))->asSequence()->first().oclAsType(consol::ImmunizationsSectionEntriesOptional)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ImmunizationsSectionEntriesOptional))->asSequence()->any(true).oclAsType(consol::ImmunizationsSectionEntriesOptional)'"
 	 * @generated
 	 */
 	ImmunizationsSectionEntriesOptional getImmunizationsSectionEntriesOptional();
@@ -619,10 +619,10 @@ public interface ContinuityOfCareDocument extends GeneralHeaderConstraints {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProblemSection))->asSequence()->first().oclAsType(consol::ProblemSection)
+	 * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProblemSection))->asSequence()->any(true).oclAsType(consol::ProblemSection)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProblemSection))->asSequence()->first().oclAsType(consol::ProblemSection)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::ProblemSection))->asSequence()->any(true).oclAsType(consol::ProblemSection)'"
 	 * @generated
 	 */
 	ProblemSection getProblemSection();
