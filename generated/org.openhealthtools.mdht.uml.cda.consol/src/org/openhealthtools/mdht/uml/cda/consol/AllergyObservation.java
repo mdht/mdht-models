@@ -28,10 +28,10 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getAllergyObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation value.codeSystemName='SNOMEDCT' moodCode='EVN' classCode='OBS' code.codeSystemName='HL7ActCode' value.codeSystem='2.16.840.1.113883.6.96' constraints.validation.info='AllergyObservationAllergyStatusObservation' templateId.root='2.16.840.1.113883.10.20.22.4.7' constraints.validation.error='AllergyObservationTemplateId AllergyObservationAllergyStatusInversionIndicator AllergyObservationReactionInversionIndicator AllergyObservationSeverityInversionIndicator AllergyObservationClassCode AllergyObservationMoodCode AllergyObservationId AllergyObservationCode AllergyObservationStatusCode AllergyObservationEffectiveTime AllergyObservationValue AllergyObservationSeverity' statusCode.code='completed' code.codeSystem='2.16.840.1.113883.5.4' code.code='ASSERTION' constraints.validation.warning='AllergyObservationProblemEntryReactionObservationContainer AllergyObservationParticipant'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolAllergyObservationAllergyObservationParticipant typeCode='CSM' constraints.validation.error='AllergyObservationParticipantTypeCode AllergyObservationParticipantParticipantRole'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRole classCode='MANU' constraints.validation.error='AllergyObservationParticipantRoleClassCode AllergyObservationParticipantRolePlayingEntity'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntity classCode='MMAT' constraints.validation.info='AllergyObservationPlayingEntityCodeTranslation' constraints.validation.error='AllergyObservationPlayingEntityClassCode AllergyObservationPlayingEntityCode' constraints.validation.warning='AllergyObservationPlayingEntityCodeOriginalText'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation value.codeSystemName='SNOMEDCT' statusCode.code='completed' code.codeSystem='2.16.840.1.113883.5.4' templateId.root='2.16.840.1.113883.10.20.22.4.7' constraints.validation.error='AllergyObservationTemplateId AllergyObservationAllergyStatusInversionIndicator AllergyObservationReactionInversionIndicator AllergyObservationSeverityInversionIndicator AllergyObservationClassCode AllergyObservationMoodCode AllergyObservationId AllergyObservationCode AllergyObservationStatusCode AllergyObservationEffectiveTime AllergyObservationValue AllergyObservationSeverity' code.codeSystemName='HL7ActCode' constraints.validation.warning='AllergyObservationProblemEntryReactionObservationContainer AllergyObservationParticipant' classCode='OBS' code.code='ASSERTION' constraints.validation.info='AllergyObservationAllergyStatusObservation' moodCode='EVN' value.codeSystem='2.16.840.1.113883.6.96'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolAllergyObservationAllergyObservationParticipant constraints.validation.error='AllergyObservationParticipantTypeCode AllergyObservationParticipantParticipantRole' typeCode='CSM'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRole constraints.validation.error='AllergyObservationParticipantRoleClassCode AllergyObservationParticipantRolePlayingEntity' classCode='MANU'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolAllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntity constraints.validation.error='AllergyObservationPlayingEntityClassCode AllergyObservationPlayingEntityCode' constraints.validation.warning='AllergyObservationPlayingEntityCodeOriginalText' classCode='MMAT' constraints.validation.info='AllergyObservationPlayingEntityCodeTranslation'"
  *        annotation="uml2.alias Allergies\040and\040Intolerances='null'"
  * @generated
  */
@@ -257,10 +257,10 @@ public interface AllergyObservation extends Observation {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SeverityObservation))->asSequence()->first().oclAsType(consol::SeverityObservation)
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SeverityObservation))->asSequence()->any(true).oclAsType(consol::SeverityObservation)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SeverityObservation))->asSequence()->first().oclAsType(consol::SeverityObservation)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SeverityObservation))->asSequence()->any(true).oclAsType(consol::SeverityObservation)'"
 	 * @generated
 	 */
 	SeverityObservation getSeverity();
@@ -269,10 +269,10 @@ public interface AllergyObservation extends Observation {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AllergyStatusObservation))->asSequence()->first().oclAsType(consol::AllergyStatusObservation)
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AllergyStatusObservation))->asSequence()->any(true).oclAsType(consol::AllergyStatusObservation)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AllergyStatusObservation))->asSequence()->first().oclAsType(consol::AllergyStatusObservation)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AllergyStatusObservation))->asSequence()->any(true).oclAsType(consol::AllergyStatusObservation)'"
 	 * @generated
 	 */
 	AllergyStatusObservation getAllergyStatusObservation();

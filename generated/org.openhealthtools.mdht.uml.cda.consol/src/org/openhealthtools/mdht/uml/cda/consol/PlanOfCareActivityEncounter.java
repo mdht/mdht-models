@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.Encounter;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getPlanOfCareActivityEncounter()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation classCode='ENC' templateId.root='2.16.840.1.113883.10.20.22.4.40' constraints.validation.error='PlanOfCareActivityEncounterTemplateId PlanOfCareActivityEncounterClassCode PlanOfCareActivityEncounterMoodCode PlanOfCareActivityEncounterId'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.22.4.40' constraints.validation.error='PlanOfCareActivityEncounterTemplateId PlanOfCareActivityEncounterClassCode PlanOfCareActivityEncounterMoodCode PlanOfCareActivityEncounterId' classCode='ENC'"
  * @generated
  */
 public interface PlanOfCareActivityEncounter extends Encounter {

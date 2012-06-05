@@ -23,7 +23,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getReactionObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation value.codeSystemName='SNOMEDCT' moodCode='EVN' classCode='OBS' value.codeSystem='2.16.840.1.113883.6.96' constraints.validation.info='ReactionObservationProcedureActivityProcedure ReactionObservationMedicationActivity' templateId.root='2.16.840.1.113883.10.20.22.4.9' constraints.validation.error='ReactionObservationTemplateId ReactionObservationReferenceValue ReactionObservationSeverityObservationInversionInd ReactionObservationProcedureActivityProcedureInversionInd ReactionObservationMedicationActivityInversionInd ReactionObservationClassCode ReactionObservationMoodCode ReactionObservationId ReactionObservationCode ReactionObservationStatusCode ReactionObservationValue' statusCode.code='completed' constraints.validation.warning='ReactionObservationTextReference ReactionObservationEffectiveTimeLow ReactionObservationEffectiveTimeHigh ReactionObservationText ReactionObservationEffectiveTime ReactionObservationSeverityObservation'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation value.codeSystemName='SNOMEDCT' statusCode.code='completed' templateId.root='2.16.840.1.113883.10.20.22.4.9' constraints.validation.error='ReactionObservationTemplateId ReactionObservationReferenceValue ReactionObservationSeverityObservationInversionInd ReactionObservationProcedureActivityProcedureInversionInd ReactionObservationMedicationActivityInversionInd ReactionObservationClassCode ReactionObservationMoodCode ReactionObservationId ReactionObservationCode ReactionObservationStatusCode ReactionObservationValue' classCode='OBS' constraints.validation.warning='ReactionObservationTextReference ReactionObservationEffectiveTimeLow ReactionObservationEffectiveTimeHigh ReactionObservationText ReactionObservationEffectiveTime ReactionObservationSeverityObservation' constraints.validation.info='ReactionObservationProcedureActivityProcedure ReactionObservationMedicationActivity' moodCode='EVN' value.codeSystem='2.16.840.1.113883.6.96'"
  * @generated
  */
 public interface ReactionObservation extends Observation {
@@ -286,10 +286,10 @@ public interface ReactionObservation extends Observation {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SeverityObservation))->asSequence()->first().oclAsType(consol::SeverityObservation)
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SeverityObservation))->asSequence()->any(true).oclAsType(consol::SeverityObservation)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SeverityObservation))->asSequence()->first().oclAsType(consol::SeverityObservation)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::SeverityObservation))->asSequence()->any(true).oclAsType(consol::SeverityObservation)'"
 	 * @generated
 	 */
 	SeverityObservation getSeverityObservation();

@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.Material;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getImmunizationMedicationInformationManufacturedMaterial()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystemName='Vaccines administered (CVX)' constraints.validation.error='ImmunizationMedicationInformationManufacturedMaterialCode' constraints.validation.info='ImmunizationMedicationInformationManufacturedMaterialCodeTranslation' code.codeSystem='2.16.840.1.113883.6.59' constraints.validation.warning='ImmunizationMedicationInformationManufacturedMaterialCodeOriginalText ImmunizationMedicationInformationManufacturedMaterialOriginalTextReference ImmunizationMedicationInformationManufacturedMaterialLotNumberText'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.59' constraints.validation.error='ImmunizationMedicationInformationManufacturedMaterialCode' code.codeSystemName='Vaccines administered (CVX)' constraints.validation.warning='ImmunizationMedicationInformationManufacturedMaterialCodeOriginalText ImmunizationMedicationInformationManufacturedMaterialOriginalTextReference ImmunizationMedicationInformationManufacturedMaterialLotNumberText' constraints.validation.info='ImmunizationMedicationInformationManufacturedMaterialCodeTranslation'"
  * @generated
  */
 public interface ImmunizationMedicationInformationManufacturedMaterial extends Material {

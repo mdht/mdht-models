@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.Performer2;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getProcedurePerformer()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.info='ProcedurePerformerAssignedEntityRepOrgName' constraints.validation.error='ProcedurePerformerAssignedEntity ProcedurePerformerAssignedEntityId ProcedurePerformerAssignedEntityAddr ProcedurePerformerAssignedEntityTelecom ProcedurePerformerAssignedEntityRepOrgAddr ProcedurePerformerAssignedEntityRepOrgTelecom' constraints.validation.warning='ProcedurePerformerAssignedEntityRepOrg ProcedurePerformerAssignedEntityRepOrgId'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProcedurePerformerAssignedEntity ProcedurePerformerAssignedEntityId ProcedurePerformerAssignedEntityAddr ProcedurePerformerAssignedEntityTelecom ProcedurePerformerAssignedEntityRepOrgAddr ProcedurePerformerAssignedEntityRepOrgTelecom' constraints.validation.warning='ProcedurePerformerAssignedEntityRepOrg ProcedurePerformerAssignedEntityRepOrgId' constraints.validation.info='ProcedurePerformerAssignedEntityRepOrgName'"
  * @generated
  */
 public interface ProcedurePerformer extends Performer2 {

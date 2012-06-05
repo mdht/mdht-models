@@ -767,7 +767,7 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_INSTRUCTIONS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::Instructions))->asSequence()->first().oclAsType(consol::Instructions)";
+	protected static final String GET_INSTRUCTIONS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::Instructions))->asSequence()->any(true).oclAsType(consol::Instructions)";
 
 	/**
 	 * The cached OCL query for the '{@link #getInstructions(MedicationSupplyOrder) <em>Get Instructions</em>}' query operation.
@@ -783,7 +783,7 @@ public class MedicationSupplyOrderOperations extends SupplyOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::Instructions))->asSequence()->first().oclAsType(consol::Instructions)
+	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::Instructions))->asSequence()->any(true).oclAsType(consol::Instructions)
 	 * @param medicationSupplyOrder The receiving '<em><b>Medication Supply Order</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated

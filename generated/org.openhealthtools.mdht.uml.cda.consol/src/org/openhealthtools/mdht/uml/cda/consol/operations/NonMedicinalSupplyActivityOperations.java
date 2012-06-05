@@ -607,7 +607,7 @@ public class NonMedicinalSupplyActivityOperations extends SupplyOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_PRODUCT_INSTANCE__EOCL_EXP = "self.getParticipantRoles()->select(participantRole : cda::ParticipantRole | not participantRole.oclIsUndefined() and participantRole.oclIsKindOf(consol::ProductInstance))->asSequence()->first().oclAsType(consol::ProductInstance)";
+	protected static final String GET_PRODUCT_INSTANCE__EOCL_EXP = "self.getParticipantRoles()->select(participantRole : cda::ParticipantRole | not participantRole.oclIsUndefined() and participantRole.oclIsKindOf(consol::ProductInstance))->asSequence()->any(true).oclAsType(consol::ProductInstance)";
 
 	/**
 	 * The cached OCL query for the '{@link #getProductInstance(NonMedicinalSupplyActivity) <em>Get Product Instance</em>}' query operation.
@@ -623,7 +623,7 @@ public class NonMedicinalSupplyActivityOperations extends SupplyOperations {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getParticipantRoles()->select(participantRole : cda::ParticipantRole | not participantRole.oclIsUndefined() and participantRole.oclIsKindOf(consol::ProductInstance))->asSequence()->first().oclAsType(consol::ProductInstance)
+	 * self.getParticipantRoles()->select(participantRole : cda::ParticipantRole | not participantRole.oclIsUndefined() and participantRole.oclIsKindOf(consol::ProductInstance))->asSequence()->any(true).oclAsType(consol::ProductInstance)
 	 * @param nonMedicinalSupplyActivity The receiving '<em><b>Non Medicinal Supply Activity</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated

@@ -373,7 +373,7 @@ public class AdvanceDirectivesSectionEntriesOptionalOperations extends SectionOp
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_ADVANCE_DIRECTIVE_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AdvanceDirectiveObservation))->asSequence()->first().oclAsType(consol::AdvanceDirectiveObservation)";
+	protected static final String GET_ADVANCE_DIRECTIVE_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AdvanceDirectiveObservation))->asSequence()->any(true).oclAsType(consol::AdvanceDirectiveObservation)";
 
 	/**
 	 * The cached OCL query for the '{@link #getAdvanceDirectiveObservation(AdvanceDirectivesSectionEntriesOptional) <em>Get Advance Directive Observation</em>}' query operation.
@@ -389,7 +389,7 @@ public class AdvanceDirectivesSectionEntriesOptionalOperations extends SectionOp
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AdvanceDirectiveObservation))->asSequence()->first().oclAsType(consol::AdvanceDirectiveObservation)
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AdvanceDirectiveObservation))->asSequence()->any(true).oclAsType(consol::AdvanceDirectiveObservation)
 	 * @param advanceDirectivesSectionEntriesOptional The receiving '<em><b>Advance Directives Section Entries Optional</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated

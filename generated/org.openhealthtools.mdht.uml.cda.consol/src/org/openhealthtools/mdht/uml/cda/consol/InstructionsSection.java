@@ -23,7 +23,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getInstructionsSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystemName='LOINC' templateId.root='2.16.840.1.113883.10.20.22.2.45' constraints.validation.error='InstructionsSectionTemplateId InstructionsSectionCode InstructionsSectionText InstructionsSectionTitle' code.displayName='Instructions' code.codeSystem='2.16.840.1.113883.6.1' code.code='69730-0' constraints.validation.warning='InstructionsSectionInstructions'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.displayName='Instructions' templateId.root='2.16.840.1.113883.10.20.22.2.45' constraints.validation.error='InstructionsSectionTemplateId InstructionsSectionCode InstructionsSectionText InstructionsSectionTitle' code.codeSystemName='LOINC' constraints.validation.warning='InstructionsSectionInstructions' code.code='69730-0'"
  * @generated
  */
 public interface InstructionsSection extends Section {

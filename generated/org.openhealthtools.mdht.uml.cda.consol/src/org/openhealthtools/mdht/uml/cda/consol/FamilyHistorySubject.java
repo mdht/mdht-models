@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.Subject;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getFamilyHistorySubject()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.info='FamilyHistorySubjectRelatedSubjectSubjectDeceasedInd FamilyHistorySubjectRelatedSubjectSubjectDeceasedTime' constraints.validation.error='FamilyHistorySubjectRelatedSubjectClassCode FamilyHistorySubjectRelatedSubjectCode FamilyHistorySubjectRelatedSubjectSubjectAdmGenderCode' constraints.validation.warning='FamilyHistorySubjectRelatedSubjectCodeValueSet FamilyHistorySubjectRelatedSubjectSubject FamilyHistorySubjectRelatedSubjectSubjectBirthTime'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='FamilyHistorySubjectRelatedSubjectClassCode FamilyHistorySubjectRelatedSubjectCode FamilyHistorySubjectRelatedSubjectSubjectAdmGenderCode' constraints.validation.warning='FamilyHistorySubjectRelatedSubjectCodeValueSet FamilyHistorySubjectRelatedSubjectSubject FamilyHistorySubjectRelatedSubjectSubjectBirthTime' constraints.validation.info='FamilyHistorySubjectRelatedSubjectSubjectDeceasedInd FamilyHistorySubjectRelatedSubjectSubjectDeceasedTime'"
  * @generated
  */
 public interface FamilyHistorySubject extends Subject {

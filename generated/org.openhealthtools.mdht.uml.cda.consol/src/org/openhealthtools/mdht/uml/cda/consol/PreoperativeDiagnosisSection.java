@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getPreoperativeDiagnosisSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystemName='LOINC' templateId.root='2.16.840.1.113883.10.20.22.2.34' constraints.validation.error='PreoperativeDiagnosisSectionTemplateId PreoperativeDiagnosisSectionCode PreoperativeDiagnosisSectionText PreoperativeDiagnosisSectionTitle' code.displayName='Preoperative Diagnosis' code.codeSystem='2.16.840.1.113883.6.1' code.code='10219-4' constraints.validation.warning='PreoperativeDiagnosisSectionPreoperativeDiagnosis'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.displayName='Preoperative Diagnosis' templateId.root='2.16.840.1.113883.10.20.22.2.34' constraints.validation.error='PreoperativeDiagnosisSectionTemplateId PreoperativeDiagnosisSectionCode PreoperativeDiagnosisSectionText PreoperativeDiagnosisSectionTitle' code.codeSystemName='LOINC' constraints.validation.warning='PreoperativeDiagnosisSectionPreoperativeDiagnosis' code.code='10219-4'"
  * @generated
  */
 public interface PreoperativeDiagnosisSection extends Section {
@@ -98,10 +98,10 @@ public interface PreoperativeDiagnosisSection extends Section {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::PreoperativeDiagnosis))->asSequence()->first().oclAsType(consol::PreoperativeDiagnosis)
+	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::PreoperativeDiagnosis))->asSequence()->any(true).oclAsType(consol::PreoperativeDiagnosis)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::PreoperativeDiagnosis))->asSequence()->first().oclAsType(consol::PreoperativeDiagnosis)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::PreoperativeDiagnosis))->asSequence()->any(true).oclAsType(consol::PreoperativeDiagnosis)'"
 	 * @generated
 	 */
 	PreoperativeDiagnosis getPreoperativeDiagnosis();

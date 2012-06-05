@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.ManufacturedProduct;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getMedicationInformation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation classCode='MANU' constraints.validation.info='MedicationInformationId MedicationInformationManufacturerOrganization' templateId.root='2.16.840.1.113883.10.20.22.4.23' constraints.validation.error='MedicationInformationTemplateId MedicationInformationClassCode MedicationInformationManufacturedMaterial'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.22.4.23' constraints.validation.error='MedicationInformationTemplateId MedicationInformationClassCode MedicationInformationManufacturedMaterial' classCode='MANU' constraints.validation.info='MedicationInformationId MedicationInformationManufacturerOrganization'"
  * @generated
  */
 public interface MedicationInformation extends ManufacturedProduct {

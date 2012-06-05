@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getReferencedFramesObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation moodCode='EVN' classCode='ROIBND' code.codeSystemName='DCM' templateId.root='2.16.840.1.113883.10.20.6.2.10' constraints.validation.error='ReferencedFramesObservationTemplateId ReferencedFramesObservationClassCode ReferencedFramesObservationCode ReferencedFramesObservationMoodCode ReferencedFramesObservationBoundaryObservation' code.displayName='Referenced Frames' code.codeSystem='1.2.840.10008.2.16.4' code.code='121190'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='1.2.840.10008.2.16.4' code.displayName='Referenced Frames' templateId.root='2.16.840.1.113883.10.20.6.2.10' constraints.validation.error='ReferencedFramesObservationTemplateId ReferencedFramesObservationClassCode ReferencedFramesObservationCode ReferencedFramesObservationMoodCode ReferencedFramesObservationBoundaryObservation' code.codeSystemName='DCM' classCode='ROIBND' code.code='121190' moodCode='EVN'"
  * @generated
  */
 public interface ReferencedFramesObservation extends Observation {
@@ -98,10 +98,10 @@ public interface ReferencedFramesObservation extends Observation {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::BoundaryObservation))->asSequence()->first().oclAsType(consol::BoundaryObservation)
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::BoundaryObservation))->asSequence()->any(true).oclAsType(consol::BoundaryObservation)
 	 * <!-- end-model-doc -->
 	 * @model kind="operation" required="true" ordered="false"
-	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::BoundaryObservation))->asSequence()->first().oclAsType(consol::BoundaryObservation)'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::BoundaryObservation))->asSequence()->any(true).oclAsType(consol::BoundaryObservation)'"
 	 * @generated
 	 */
 	BoundaryObservation getBoundaryObservation();

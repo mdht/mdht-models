@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.ManufacturedProduct;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getImmunizationMedicationInformation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation classCode='MANU' constraints.validation.info='ImmunizationMedicationInformationId' templateId.root='2.16.840.1.113883.10.20.22.4.54' constraints.validation.error='ImmunizationMedicationInformationTemplateId ImmunizationMedicationInformationClassCode ImmunizationMedicationInformationManufacturedMaterial' constraints.validation.warning='ImmunizationMedicationInformationManufacturerOrganization'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.22.4.54' constraints.validation.error='ImmunizationMedicationInformationTemplateId ImmunizationMedicationInformationClassCode ImmunizationMedicationInformationManufacturedMaterial' constraints.validation.warning='ImmunizationMedicationInformationManufacturerOrganization' classCode='MANU' constraints.validation.info='ImmunizationMedicationInformationId'"
  * @generated
  */
 public interface ImmunizationMedicationInformation extends ManufacturedProduct {

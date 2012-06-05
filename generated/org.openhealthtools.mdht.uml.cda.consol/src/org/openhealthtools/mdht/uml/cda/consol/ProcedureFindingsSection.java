@@ -23,7 +23,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getProcedureFindingsSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystemName='LOINC' constraints.validation.info='ProcedureFindingsSectionProblemObservation' templateId.root='2.16.840.1.113883.10.20.22.2.28' constraints.validation.error='ProcedureFindingsSectionTemplateId ProcedureFindingsSectionCode ProcedureFindingsSectionText ProcedureFindingsSectionTitle' code.displayName='Procedure Findings' code.codeSystem='2.16.840.1.113883.6.1' code.code='59776-5'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.displayName='Procedure Findings' templateId.root='2.16.840.1.113883.10.20.22.2.28' constraints.validation.error='ProcedureFindingsSectionTemplateId ProcedureFindingsSectionCode ProcedureFindingsSectionText ProcedureFindingsSectionTitle' code.codeSystemName='LOINC' code.code='59776-5' constraints.validation.info='ProcedureFindingsSectionProblemObservation'"
  * @generated
  */
 public interface ProcedureFindingsSection extends Section {

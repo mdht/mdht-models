@@ -23,7 +23,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getProblemSectionEntriesOptional()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystemName='LOINC' templateId.root='2.16.840.1.113883.10.20.22.2.5' constraints.validation.error='ProblemSectionEntriesOptionalTemplateId ProblemSectionEntriesOptionalCode ProblemSectionEntriesOptionalTitle ProblemSectionEntriesOptionalText' code.displayName='Problem List' code.codeSystem='2.16.840.1.113883.6.1' code.code='11450-4' constraints.validation.warning='ProblemSectionEntriesOptionalProblemConcern'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.displayName='Problem List' templateId.root='2.16.840.1.113883.10.20.22.2.5' constraints.validation.error='ProblemSectionEntriesOptionalTemplateId ProblemSectionEntriesOptionalCode ProblemSectionEntriesOptionalTitle ProblemSectionEntriesOptionalText' code.codeSystemName='LOINC' constraints.validation.warning='ProblemSectionEntriesOptionalProblemConcern' code.code='11450-4'"
  * @generated
  */
 public interface ProblemSectionEntriesOptional extends Section {

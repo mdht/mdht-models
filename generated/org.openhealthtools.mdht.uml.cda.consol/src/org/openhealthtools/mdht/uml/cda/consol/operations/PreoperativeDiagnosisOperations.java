@@ -358,7 +358,7 @@ public class PreoperativeDiagnosisOperations extends ClinicalStatementOperations
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_PROBLEM_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProblemObservation))->asSequence()->first().oclAsType(consol::ProblemObservation)";
+	protected static final String GET_PROBLEM_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProblemObservation))->asSequence()->any(true).oclAsType(consol::ProblemObservation)";
 
 	/**
 	 * The cached OCL query for the '{@link #getProblemObservation(PreoperativeDiagnosis) <em>Get Problem Observation</em>}' query operation.
@@ -374,7 +374,7 @@ public class PreoperativeDiagnosisOperations extends ClinicalStatementOperations
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProblemObservation))->asSequence()->first().oclAsType(consol::ProblemObservation)
+	 * self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProblemObservation))->asSequence()->any(true).oclAsType(consol::ProblemObservation)
 	 * @param preoperativeDiagnosis The receiving '<em><b>Preoperative Diagnosis</b></em>' model object.
 	 * <!-- end-model-doc -->
 	 * @generated

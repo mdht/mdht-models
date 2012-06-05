@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getAssessmentSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystemName='LOINC' templateId.root='2.16.840.1.113883.10.20.22.2.8' constraints.validation.error='AssessmentSectionTemplateId AssessmentSectionCode AssessmentSectionText' code.displayName='Assessments' code.codeSystem='2.16.840.1.113883.6.1' code.code='51848-0'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.displayName='Assessments' templateId.root='2.16.840.1.113883.10.20.22.2.8' constraints.validation.error='AssessmentSectionTemplateId AssessmentSectionCode AssessmentSectionText' code.codeSystemName='LOINC' code.code='51848-0'"
  * @generated
  */
 public interface AssessmentSection extends Section {

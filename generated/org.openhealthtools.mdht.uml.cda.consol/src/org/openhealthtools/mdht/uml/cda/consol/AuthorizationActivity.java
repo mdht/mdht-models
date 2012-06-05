@@ -22,8 +22,8 @@ import org.openhealthtools.mdht.uml.cda.Act;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getAuthorizationActivity()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation moodCode='EVN' classCode='ACT' constraints.validation.query='AuthorizationActivityEntryRelationshipTypeCode' templateId.root='2.16.840.1.113883.10.20.1.19' constraints.validation.error='AuthorizationActivityTemplateId AuthorizationActivityClassCode AuthorizationActivityId AuthorizationActivityMoodCode AuthorizationActivityEntryRelationship AuthorizationActivityEntryRelationshipTypeCode'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolAuthorizationActivityEntryRelationship typeCode='SUBJ' constraints.validation.error='EntryRelationshipTypeCode'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.1.19' constraints.validation.error='AuthorizationActivityTemplateId AuthorizationActivityClassCode AuthorizationActivityId AuthorizationActivityMoodCode AuthorizationActivityEntryRelationship AuthorizationActivityEntryRelationshipTypeCode' classCode='ACT' constraints.validation.query='AuthorizationActivityEntryRelationshipTypeCode' moodCode='EVN'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolAuthorizationActivityEntryRelationship constraints.validation.error='EntryRelationshipTypeCode' typeCode='SUBJ'"
  * @generated
  */
 public interface AuthorizationActivity extends Act {

@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getEstimatedDateOfDelivery()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation moodCode='EVN' classCode='OBS' code.codeSystemName='LOINC' templateId.root='2.16.840.1.113883.10.20.15.3.1' constraints.validation.error='EstimatedDateOfDeliveryTemplateId EstimatedDateOfDeliveryClassCode EstimatedDateOfDeliveryCode EstimatedDateOfDeliveryMoodCode EstimatedDateOfDeliveryStatusCode EstimatedDateOfDeliveryValue' statusCode.code='completed' code.codeSystem='2.16.840.1.113883.6.1' code.code='11778-8'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation statusCode.code='completed' code.codeSystem='2.16.840.1.113883.6.1' templateId.root='2.16.840.1.113883.10.20.15.3.1' constraints.validation.error='EstimatedDateOfDeliveryTemplateId EstimatedDateOfDeliveryClassCode EstimatedDateOfDeliveryCode EstimatedDateOfDeliveryMoodCode EstimatedDateOfDeliveryStatusCode EstimatedDateOfDeliveryValue' code.codeSystemName='LOINC' classCode='OBS' code.code='11778-8' moodCode='EVN'"
  * @generated
  */
 public interface EstimatedDateOfDelivery extends Observation {

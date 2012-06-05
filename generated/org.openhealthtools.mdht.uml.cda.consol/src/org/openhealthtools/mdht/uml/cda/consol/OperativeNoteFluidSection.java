@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getOperativeNoteFluidSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystemName='LOINC' templateId.root='2.16.840.1.113883.10.20.7.12' constraints.validation.error='OperativeNoteFluidSectionTemplateId OperativeNoteFluidSectionCode OperativeNoteFluidSectionText OperativeNoteFluidSectionTitle' code.displayName='Operative Note Fluids' code.codeSystem='2.16.840.1.113883.6.1' code.code='10216-0'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.displayName='Operative Note Fluids' templateId.root='2.16.840.1.113883.10.20.7.12' constraints.validation.error='OperativeNoteFluidSectionTemplateId OperativeNoteFluidSectionCode OperativeNoteFluidSectionText OperativeNoteFluidSectionTitle' code.codeSystemName='LOINC' code.code='10216-0'"
  * @generated
  */
 public interface OperativeNoteFluidSection extends Section {

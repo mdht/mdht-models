@@ -23,7 +23,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getProcedureIndicationsSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystemName='LOINC' constraints.validation.info='ProcedureIndicationsSectionIndication' templateId.root='2.16.840.1.113883.10.20.22.2.29' constraints.validation.error='ProcedureIndicationsSectionTemplateId ProcedureIndicationsSectionCode ProcedureIndicationsSectionText ProcedureIndicationsSectionTitle' code.displayName='Procedure Indications' code.codeSystem='2.16.840.1.113883.6.1' code.code='59768-2'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.displayName='Procedure Indications' templateId.root='2.16.840.1.113883.10.20.22.2.29' constraints.validation.error='ProcedureIndicationsSectionTemplateId ProcedureIndicationsSectionCode ProcedureIndicationsSectionText ProcedureIndicationsSectionTitle' code.codeSystemName='LOINC' code.code='59768-2' constraints.validation.info='ProcedureIndicationsSectionIndication'"
  * @generated
  */
 public interface ProcedureIndicationsSection extends Section {
