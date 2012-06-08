@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xml:lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="EMS Vital Signs Section"/>
+<meta name="abstract" content="[Section: templateId 2.16.840.1.113883.17.3.10.1.23]"/>
+<meta name="description" content="[Section: templateId 2.16.840.1.113883.17.3.10.1.23]"/>
+<meta name="DC.Coverage" content="Section"/>
+<meta name="DC.Relation" scheme="URI" content="../content/SectionTemplates.html"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="classId"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
+<title>EMS Vital Signs Section</title>
+</head>
+<body id="classId"><a name="classId"><!-- --></a>
+<div>
+	<p><b>For Discussion and Demonstration Only</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
+</div>
+
+<h1 class="title topictitle1">EMS Vital Signs Section</h1>
+
+
+
+<div class="body"><p class="shortdesc">[Section: templateId <tt class="ph tt">2.16.840.1.113883.17.3.10.1.23</tt>]</p>
+
+
+<div class="section">
+</div>
+
+
+
+<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="DerivedCDASection.html" title="[Section: templateId null]">Derived CDA Section</a></li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="67801?1" </tt><em class="ph i">EMS Vital Signs</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)
+</li>
+
+<li class="li"><strong class="ph b">SHOULD</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">title</strong></tt> = "EMS Vital Signs"
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">entry</strong></tt> <ol class="ol" type="a"><li class="li"> Such entrys <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">effectiveTime</strong></tt><p class="p"><em class="ph i">NEMSIS Trace: EVitals.01</em></p>
+</li>
+<li class="li"> Such entrys <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> <ol class="ol" type="i"><li class="li"> This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="67518?1" </tt><em class="ph i">Obtained prior to units EMS care</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)</li>
+<li class="li"> This component Contains zero or more [0..*] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type BL</li>
+</ol>
+ </li>
+<li class="li"> Such entrys <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> <ol class="ol" type="i"><li class="li"> This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="67519?9" </tt><em class="ph i">Cardiac rhythm</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)</li>
+<li class="li"> This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">methodCode</strong></tt>, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/MethodOfECGInterpretation.html">MethodOfECGInterpretation</a> 2.16.840.1.113883.17.3.5.20</tt><strong class="ph b"> STATIC</strong><p class="p"><em class="ph i">NEMSIS Trace: EVitals.05</em></p>
+</li>
+<li class="li"> This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/ECGType.html">ECGType</a> 2.16.840.1.113883.17.3.5.19</tt><strong class="ph b"> STATIC</strong><p class="p"><em class="ph i">NEMSIS Trace: EVitals.03</em></p>
+</li>
+</ol>
+ </li>
+<li class="li"> Such entrys <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> <ol class="ol" type="i"><li class="li"> This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="8480?6" </tt><em class="ph i">Intravascular systolic</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)</li>
+<li class="li"> This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type PQ<p class="p"><em class="ph i">UCUM units SHOULD be "mm[Hg]".</em></p>
+</li>
+</ol>
+ </li>
+<li class="li"> Such entrys <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> <ol class="ol" type="i"><li class="li"> This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="8462-4" </tt><em class="ph i">Intravascular diastolic</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)</li>
+<li class="li"> This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type PQ<p class="p"><em class="ph i">UCUM units SHOULD be "mm[Hg]".</em></p>
+</li>
+</ol>
+ </li>
+<li class="li"> Such entrys <strong class="ph b">SHOULD</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> <ol class="ol" type="i"><li class="li"> This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="8867?4" </tt><em class="ph i">Heart rate</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)</li>
+<li class="li"> This component <strong class="ph b">SHALL</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type PQ<p class="p"><em class="ph i">UCUM units SHOULD be "/min".</em></p>
+</li>
+</ol>
+ </li>
+<li class="li"> Such entrys <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> <ol class="ol" type="i"><li class="li"> This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="9279?1" </tt><em class="ph i">Breaths</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)</li>
+<li class="li"> This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type PQ<p class="p"><em class="ph i">UCUM units SHOULD be "/min".</em></p>
+</li>
+</ol>
+ </li>
+<li class="li"> Such entrys <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> <ol class="ol" type="i"><li class="li"> This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="8310?5" </tt><em class="ph i">Body temperature</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)</li>
+<li class="li"> This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type PQ<p class="p"><em class="ph i">UCUM units SHOULD be "Cel".</em></p>
+</li>
+</ol>
+ </li>
+<li class="li"> Such entrys <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> <ol class="ol" type="i"><li class="li"> This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="2710?2" </tt><em class="ph i">Oxygen saturation</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)</li>
+<li class="li"> This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt><p class="p"><em class="ph i">UCUM units will typically be "%".</em></p>
+</li>
+</ol>
+ </li>
+<li class="li"> Such entrys <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> <ol class="ol" type="i"><li class="li"> This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="19889?5" </tt><em class="ph i">Carbon dioxide/Gas.total.at end expiration</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)</li>
+<li class="li"> This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt><p class="p"><em class="ph i">UCUM units will typically be "%".</em></p>
+</li>
+</ol>
+ </li>
+<li class="li"> Such entrys <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> <ol class="ol" type="i"><li class="li"> This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="19911?7" </tt><em class="ph i">Diffusion capacity.carbon monoxide</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)</li>
+<li class="li"> This component <strong class="ph b">SHALL</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type PQ<p class="p"><em class="ph i">UCUM units will typically be "[ppm]".</em></p>
+</li>
+</ol>
+ </li>
+<li class="li"> Such entrys <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> <ol class="ol" type="i"><li class="li"> This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="2339?0" </tt><em class="ph i">Glucose</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)</li>
+<li class="li"> This component <strong class="ph b">SHALL</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type PQ<p class="p"><em class="ph i">UCUM units will typically be "mg/dl".</em></p>
+</li>
+</ol>
+ </li>
+<li class="li"> Such entrys <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> <ol class="ol" type="i"><li class="li"> This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="67775?7" </tt><em class="ph i">Level of responsiveness</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)</li>
+<li class="li"> This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/LevelOfResponsiveness.html">LevelOfResponsiveness</a> 2.16.840.1.113883.17.3.5.21</tt><strong class="ph b"> STATIC</strong></li>
+</ol>
+ </li>
+<li class="li"> Such entrys <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> <ol class="ol" type="i"><li class="li"> This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="56840?2" </tt><em class="ph i">Pain severity verbal numeric scale</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)</li>
+<li class="li"> This component Contains zero or more [0..*] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type INT<p class="p"><em class="ph i">An ordinal value between 0 and 10, inclusive. There are three scales, but the values are equivalent.</em></p>
+</li>
+</ol>
+ </li>
+<li class="li"> Such entrys <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> <ol class="ol" type="i"><li class="li"> This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="67520?7" </tt><em class="ph i">Stroke scale overall interpretation</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)</li>
+<li class="li"> This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"/><strong class="ph b"> STATIC</strong><p class="p"><em class="ph i">NEMSIS Trace: EVitals.29</em></p>
+</li>
+<li class="li"> This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">methodCode</strong></tt>, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/StrokeScale.html">StrokeScale</a> 2.16.840.1.113883.17.3.5.88</tt><strong class="ph b"> STATIC</strong><p class="p"><em class="ph i">NEMSIS Trace: EVitals.30</em></p>
+</li>
+</ol>
+ </li>
+<li class="li"> Such entrys <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> <ol class="ol" type="i"><li class="li"> This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> <ol class="ol"><li class="li"> This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="9267?6" </tt><em class="ph i">Glasgow coma score.eye opening</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)</li>
+<li class="li"> This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type INT</li>
+</ol>
+ </li>
+<li class="li"> This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> <ol class="ol"><li class="li"> This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="9268?4" </tt><em class="ph i">Glasgow coma score.motor</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)</li>
+<li class="li"> This component <strong class="ph b">SHALL</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">value</strong></tt></li>
+</ol>
+ </li>
+<li class="li"> This component <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> <ol class="ol"><li class="li"> This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="55285?1" </tt><em class="ph i">Glasgow coma score special circumstances</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)</li>
+<li class="li"> This component <strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD</li>
+</ol>
+ </li>
+<li class="li"> This component <strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> <ol class="ol"><li class="li"> This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="9269?2" </tt><em class="ph i">Glasgow coma score.total</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)</li>
+<li class="li"> This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type INT<p class="p"><em class="ph i">Integer value equal to the sum of verbal, motor, and eye</em></p>
+</li>
+</ol>
+ </li>
+<li class="li"> This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">component</strong></tt> <ol class="ol"><li class="li"> This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="9270?0" </tt><em class="ph i">Glasgow coma score.verbal</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)</li>
+<li class="li"> This component <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt></li>
+</ol>
+ </li>
+</ol>
+ </li>
+</ol>
+
+</li>
+
+</ol>
+
+
+
+<p class="p"> </p>
+
+<p class="p"><strong class="ph b">EMS Vital Signs Section example</strong></p>
+
+
+
+<pre class="pre codeblock"/>
+
+</div>
+
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../content/SectionTemplates.html">SECTION TEMPLATES</a></div>
+</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xml:lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="EMS Situation Section"/>
+<meta name="abstract" content="[Section: templateId 2.16.840.1.113883.17.3.10.1.9]"/>
+<meta name="description" content="[Section: templateId 2.16.840.1.113883.17.3.10.1.9]"/>
+<meta name="DC.Coverage" content="Section"/>
+<meta name="DC.Relation" scheme="URI" content="../content/SectionTemplates.html"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="classId"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
+<title>EMS Situation Section</title>
+</head>
+<body id="classId"><a name="classId"><!-- --></a>
+<div>
+	<p><b>For Discussion and Demonstration Only</b> The Normative content for these specifications
+	may be found on the HL7, IHE, and HITSP web sites.</p>
+</div>
+
+<h1 class="title topictitle1">EMS Situation Section</h1>
+
+
+
+<div class="body"><p class="shortdesc">[Section: templateId <tt class="ph tt">2.16.840.1.113883.17.3.10.1.9</tt>]</p>
+
+
+<div class="section">
+</div>
+
+
+
+<ol class="ol">
+<li class="li"><strong class="ph b">SHALL</strong> conform to <a class="xref" href="DerivedCDASection.html" title="[Section: templateId null]">Derived CDA Section</a></li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="67666?8" </tt><em class="ph i">EMS Situation</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">text</strong></tt>
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">title</strong></tt>
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">entry</strong></tt> <ol class="ol" type="a"><li class="li"> Such entrys <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="10154?3" </tt><em class="ph i">EMS complaint</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)</li>
+<li class="li"> Such entrys <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type ST</li>
+<li class="li"> Such entrys <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> <ol class="ol" type="i"><li class="li"> This entryRelationship Contains exactly one [1..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt> <ol class="ol"><li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="67491?1" </tt><em class="ph i">Complaint duration</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)</li>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type PQ<p class="p"><em class="ph i">Units SHALL be selected from UCUM time units (i.e., s, min, h, d, wk, mo, a)</em></p>
+</li>
+</ol>
+ </li>
+</ol>
+ </li>
+<li class="li"> Such entrys <strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> <ol class="ol" type="i"><li class="li"> This entryRelationship Contains at least one [1..*] <tt class="ph tt"><strong class="ph b">observation</strong></tt> <ol class="ol"><li class="li"> Such observations <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt>, where the @code <strong class="ph b">SHALL</strong> be selected from (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)</li>
+<li class="li"> Such observations <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD</li>
+</ol>
+ </li>
+</ol>
+ </li>
+<li class="li"> Such entrys <strong class="ph b">SHOULD</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">targetSiteCode</strong></tt>, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/AnatomicLocation.html">AnatomicLocation</a> 2.16.840.1.113883.17.3.5.76</tt><strong class="ph b"> STATIC</strong><p class="p"><em class="ph i">NEMSIS Trace: ESituation.07
+Complaint site is required if complaint is type "Chief complaint"</em></p>
+</li>
+<li class="li"> Such entrys <strong class="ph b">SHOULD</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entryRelationship</strong></tt> <p class="p"><em class="ph i">The organ system is required if the complaint is of type "Chief complaint"</em></p>
+<ol class="ol" type="i"><li class="li"> This entryRelationship <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">observation</strong></tt> <ol class="ol"><li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="69468?7" </tt><em class="ph i">Organ system</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)</li>
+<li class="li"> This observation <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/OrganSystem.html">OrganSystem</a> 2.16.840.1.113883.17.3.5.77</tt><strong class="ph b"> STATIC</strong></li>
+</ol>
+ </li>
+</ol>
+ <p class="p"><em class="ph i">The organ system is required if the complaint is of type "Chief complaint"</em></p>
+</li>
+</ol>
+
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> <ol class="ol" type="a"><li class="li"> This entry <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="TBD" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)</li>
+<li class="li"> This entry <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type TS</li>
+</ol>
+
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> <ol class="ol" type="a"><li class="li"> This entry <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="69467?9" </tt><em class="ph i">Possible injury</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)</li>
+<li class="li"> This entry <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type BL</li>
+</ol>
+
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> <ol class="ol" type="a"><li class="li"> This entry <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="67774?0" </tt><em class="ph i">EMS Primary Symptom</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)</li>
+<li class="li"> This entry <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD<tt class="ph tt"><strong class="ph b">/@code</strong>="ADD ICD 10" </tt></li>
+</ol>
+
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> <ol class="ol" type="a"><li class="li"> This entry <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="67493?7" </tt><em class="ph i">Initial Patient Acuity</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)</li>
+<li class="li"> This entry <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD, where the @code <strong class="ph b">SHALL</strong> be selected from ValueSet<tt class="ph tt"> <a class="xref" href="../terminology/PatientStatus.html">PatientStatus</a> 2.16.840.1.113883.17.3.5.78</tt><strong class="ph b"> STATIC</strong></li>
+</ol>
+
+</li>
+
+<li class="li">Contains exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> <ol class="ol" type="a"><li class="li"> This entry <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="TBD" </tt> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)</li>
+<li class="li"> This entry <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type TS</li>
+</ol>
+
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> <ol class="ol" type="a"><li class="li"> This entry <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="67492?9" </tt><em class="ph i">Provider Primary Impression</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)</li>
+<li class="li"> This entry <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD<tt class="ph tt"><strong class="ph b">/@code</strong>="ADD ICD10 CM" </tt></li>
+</ol>
+
+</li>
+
+<li class="li"><strong class="ph b">MAY</strong> contain zero or one [0..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> <ol class="ol" type="a"><li class="li"> This entry <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="67776?5" </tt><em class="ph i">Other symptoms</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)</li>
+<li class="li"> This entry <strong class="ph b">SHALL</strong> contain zero or more [0..*] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD<tt class="ph tt"><strong class="ph b">/@code</strong>="ADD ICD-10 CM" </tt></li>
+</ol>
+
+</li>
+
+<li class="li"><strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">entry</strong></tt> <ol class="ol" type="a"><li class="li"> This entry <strong class="ph b">SHALL</strong> contain exactly one [1..1] <tt class="ph tt"><strong class="ph b">code</strong></tt><tt class="ph tt"><strong class="ph b">/@code</strong>="69542-9" </tt><em class="ph i">Provider Secondary Impressions</em> (CodeSystem:<tt class="ph tt"> 2.16.840.1.113883.6.1 LOINC</tt>)</li>
+<li class="li"> This entry <strong class="ph b">SHALL</strong> contain at least one [1..*] <tt class="ph tt"><strong class="ph b">value</strong></tt> with data type CD<tt class="ph tt"><strong class="ph b">/@code</strong>="ADD ICD 10 CM" </tt></li>
+</ol>
+
+</li>
+
+</ol>
+
+
+
+<p class="p"> </p>
+
+<p class="p"><strong class="ph b">EMS Situation Section example</strong></p>
+
+
+
+<pre class="pre codeblock"/>
+
+</div>
+
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../content/SectionTemplates.html">SECTION TEMPLATES</a></div>
+</div>
+</div>
+
+</body>
+</html>
