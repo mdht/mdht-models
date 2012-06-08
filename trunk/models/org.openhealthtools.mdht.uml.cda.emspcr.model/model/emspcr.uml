@@ -5553,6 +5553,169 @@ Complaint site is required if complaint is type &quot;Chief complaint&quot;</bod
     <packagedElement xmi:type="uml:Association" xmi:id="_lP1UAKhHEeG79fAvHk6H4g" memberEnd="_lP0F4KhHEeG79fAvHk6H4g _lP17EKhHEeG79fAvHk6H4g">
       <ownedEnd xmi:id="_lP17EKhHEeG79fAvHk6H4g" type="_olqMIKK8EeGOxth0BgV-QA" association="_lP1UAKhHEeG79fAvHk6H4g"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ClVY0KxCEeGLnrdLmr5TaQ" name="EMSTimesSection">
+      <generalization xmi:id="_DaW8UKxCEeGLnrdLmr5TaQ" general="_DqqZoIy7EeGnhceUMXltng"/>
+      <ownedAttribute xmi:id="_Eh5MIKxCEeGLnrdLmr5TaQ" name="code" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Eh5MIaxCEeGLnrdLmr5TaQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Eh5MIqxCEeGLnrdLmr5TaQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Eh5zMKxCEeGLnrdLmr5TaQ" name="text" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Eh5zMaxCEeGLnrdLmr5TaQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Eh5zMqxCEeGLnrdLmr5TaQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Eh6aQKxCEeGLnrdLmr5TaQ" name="title" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Eh6aQaxCEeGLnrdLmr5TaQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Eh6aQqxCEeGLnrdLmr5TaQ"/>
+      </ownedAttribute>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_1u74sKxCEeGLnrdLmr5TaQ" name="EMSCallTime">
+        <ownedComment xmi:id="_HmSUwKxDEeGLnrdLmr5TaQ">
+          <body>NEMSIS Trace: ETimes.01</body>
+        </ownedComment>
+        <generalization xmi:id="_4A3fEKxCEeGLnrdLmr5TaQ">
+          <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+        </generalization>
+        <ownedAttribute xmi:id="_9KgSYKxCEeGLnrdLmr5TaQ" name="code" visibility="private" aggregation="composite">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_9Kg5cKxCEeGLnrdLmr5TaQ" name="value" visibility="private" aggregation="composite">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_4ysYYD59Ed6cla2oXsPtlA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__y1mkKxCEeGLnrdLmr5TaQ" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__y2NoKxCEeGLnrdLmr5TaQ" value="1"/>
+        </ownedAttribute>
+      </nestedClassifier>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_JKerYKxDEeGLnrdLmr5TaQ" name="EMSUnitNotifiedTime">
+        <ownedComment xmi:id="_JKerYaxDEeGLnrdLmr5TaQ">
+          <body>NEMSIS Trace: ETimes.03&#xD;
+This is the value represented in the header for the encompassing encounter</body>
+        </ownedComment>
+        <generalization xmi:id="_JKerYqxDEeGLnrdLmr5TaQ">
+          <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+        </generalization>
+        <ownedAttribute xmi:id="_JKerY6xDEeGLnrdLmr5TaQ" name="code" visibility="private" aggregation="composite">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_JKerZKxDEeGLnrdLmr5TaQ" name="value" visibility="private" aggregation="composite">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_4ysYYD59Ed6cla2oXsPtlA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JKerZaxDEeGLnrdLmr5TaQ" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JKerZqxDEeGLnrdLmr5TaQ" value="1"/>
+        </ownedAttribute>
+      </nestedClassifier>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_UyaX0KxDEeGLnrdLmr5TaQ" name="EMSUnitEnRouteTime">
+        <ownedComment xmi:id="_UyaX0axDEeGLnrdLmr5TaQ">
+          <body>NEMSIS Trace: ETimes.05</body>
+        </ownedComment>
+        <generalization xmi:id="_UyaX0qxDEeGLnrdLmr5TaQ">
+          <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+        </generalization>
+        <ownedAttribute xmi:id="_UyaX06xDEeGLnrdLmr5TaQ" name="code" visibility="private" aggregation="composite">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_UyaX1KxDEeGLnrdLmr5TaQ" name="value" visibility="private" aggregation="composite">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_4ysYYD59Ed6cla2oXsPtlA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UyaX1axDEeGLnrdLmr5TaQ" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UyaX1qxDEeGLnrdLmr5TaQ" value="1"/>
+        </ownedAttribute>
+      </nestedClassifier>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_iGh5QKxDEeGLnrdLmr5TaQ" name="EMSUnitOnSceneTime">
+        <ownedComment xmi:id="_iGh5QaxDEeGLnrdLmr5TaQ">
+          <body>NEMSIS Trace: ETimes.06</body>
+        </ownedComment>
+        <generalization xmi:id="_iGh5QqxDEeGLnrdLmr5TaQ">
+          <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+        </generalization>
+        <ownedAttribute xmi:id="_iGh5Q6xDEeGLnrdLmr5TaQ" name="code" visibility="private" aggregation="composite">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_iGh5RKxDEeGLnrdLmr5TaQ" name="value" visibility="private" aggregation="composite">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_4ysYYD59Ed6cla2oXsPtlA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iGh5RaxDEeGLnrdLmr5TaQ" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iGh5RqxDEeGLnrdLmr5TaQ" value="1"/>
+        </ownedAttribute>
+      </nestedClassifier>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_yt7JUKxDEeGLnrdLmr5TaQ" name="EMSUnitAtPatienttTime">
+        <ownedComment xmi:id="_yt7JUaxDEeGLnrdLmr5TaQ">
+          <body>NEMSIS Trace: ETimes.07</body>
+        </ownedComment>
+        <generalization xmi:id="_yt7JUqxDEeGLnrdLmr5TaQ">
+          <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+        </generalization>
+        <ownedAttribute xmi:id="_yt7JU6xDEeGLnrdLmr5TaQ" name="code" visibility="private" aggregation="composite">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_yt7JVKxDEeGLnrdLmr5TaQ" name="value" visibility="private" aggregation="composite">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_4ysYYD59Ed6cla2oXsPtlA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yt7JVaxDEeGLnrdLmr5TaQ" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yt7JVqxDEeGLnrdLmr5TaQ" value="1"/>
+        </ownedAttribute>
+      </nestedClassifier>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_6w124KxDEeGLnrdLmr5TaQ" name="EMSUnitLeftSceneTime">
+        <ownedComment xmi:id="_6w124axDEeGLnrdLmr5TaQ">
+          <body>NEMSIS Trace: ETimes.09</body>
+        </ownedComment>
+        <generalization xmi:id="_6w124qxDEeGLnrdLmr5TaQ">
+          <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+        </generalization>
+        <ownedAttribute xmi:id="_6w1246xDEeGLnrdLmr5TaQ" name="code" visibility="private" aggregation="composite">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_6w125KxDEeGLnrdLmr5TaQ" name="value" visibility="private" aggregation="composite">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_4ysYYD59Ed6cla2oXsPtlA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6w125axDEeGLnrdLmr5TaQ" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6w125qxDEeGLnrdLmr5TaQ" value="1"/>
+        </ownedAttribute>
+      </nestedClassifier>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_DaIA4KxEEeGLnrdLmr5TaQ" name="EMSPatientArrivedAtDestinationTime">
+        <ownedComment xmi:id="_DaIA4axEEeGLnrdLmr5TaQ">
+          <body>NEMSIS Trace: ETimes.11</body>
+        </ownedComment>
+        <generalization xmi:id="_DaIA4qxEEeGLnrdLmr5TaQ">
+          <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+        </generalization>
+        <ownedAttribute xmi:id="_DaIA46xEEeGLnrdLmr5TaQ" name="code" visibility="private" aggregation="composite">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_DaIA5KxEEeGLnrdLmr5TaQ" name="value" visibility="private" aggregation="composite">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_4ysYYD59Ed6cla2oXsPtlA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DaIA5axEEeGLnrdLmr5TaQ" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DaIA5qxEEeGLnrdLmr5TaQ" value="1"/>
+        </ownedAttribute>
+      </nestedClassifier>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_KrhK4KxEEeGLnrdLmr5TaQ" name="EMSUnitBackInServiceTime">
+        <ownedComment xmi:id="_KrhK4axEEeGLnrdLmr5TaQ">
+          <body>NEMSIS Trace: ETimes.13</body>
+        </ownedComment>
+        <generalization xmi:id="_KrhK4qxEEeGLnrdLmr5TaQ">
+          <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+        </generalization>
+        <ownedAttribute xmi:id="_KrhK46xEEeGLnrdLmr5TaQ" name="code" visibility="private" aggregation="composite">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_KrhK5KxEEeGLnrdLmr5TaQ" name="value" visibility="private" aggregation="composite">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_4ysYYD59Ed6cla2oXsPtlA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KrhK5axEEeGLnrdLmr5TaQ" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KrhK5qxEEeGLnrdLmr5TaQ" value="1"/>
+        </ownedAttribute>
+      </nestedClassifier>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_UFgZEKxEEeGLnrdLmr5TaQ" name="EMSDispatchNotifiedTime">
+        <ownedComment xmi:id="_UFgZEaxEEeGLnrdLmr5TaQ">
+          <body>NEMSIS Trace: ETimes.02</body>
+        </ownedComment>
+        <generalization xmi:id="_UFgZEqxEEeGLnrdLmr5TaQ">
+          <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+        </generalization>
+        <ownedAttribute xmi:id="_UFgZE6xEEeGLnrdLmr5TaQ" name="code" visibility="private" aggregation="composite">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_UFgZFKxEEeGLnrdLmr5TaQ" name="value" visibility="private" aggregation="composite">
+          <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_4ysYYD59Ed6cla2oXsPtlA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UFgZFaxEEeGLnrdLmr5TaQ" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UFgZFqxEEeGLnrdLmr5TaQ" value="1"/>
+        </ownedAttribute>
+      </nestedClassifier>
+    </packagedElement>
     <profileApplication xmi:id="_xpUkQWeQEeGtXKebdWh3hg">
       <eAnnotations xmi:id="_xpUkQmeQEeGtXKebdWh3hg" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
@@ -6932,4 +7095,56 @@ Complaint site is required if complaint is type &quot;Chief complaint&quot;</bod
   <CDA:AssociationValidation xmi:id="_dFo5wKhHEeG79fAvHk6H4g" base_Association="_cGBP0KhHEeG79fAvHk6H4g"/>
   <CDA:AssociationValidation xmi:id="_hLyPwKhHEeG79fAvHk6H4g" severity="INFO" base_Association="_gLa-8KhHEeG79fAvHk6H4g"/>
   <CDA:AssociationValidation xmi:id="_mOYm8KhHEeG79fAvHk6H4g" base_Association="_lP1UAKhHEeG79fAvHk6H4g"/>
+  <CDA:CDATemplate xmi:id="_HtwEIKxCEeGLnrdLmr5TaQ" base_Class="_ClVY0KxCEeGLnrdLmr5TaQ" templateId="2.16.840.1.113883.17.3.10.1.10"/>
+  <CDA:CodeSystemConstraint xmi:id="_kx_PYKxCEeGLnrdLmr5TaQ" code="67667-6" displayName="EMS Times" base_Property="_Eh5MIKxCEeGLnrdLmr5TaQ">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_qM4x0KxCEeGLnrdLmr5TaQ" severity="WARNING" base_Property="_Eh6aQKxCEeGLnrdLmr5TaQ"/>
+  <CDA:TextValue xmi:id="_rSaPcKxCEeGLnrdLmr5TaQ" base_Property="_Eh6aQKxCEeGLnrdLmr5TaQ" value="EMS Times"/>
+  <CDA:PropertyValidation xmi:id="_sW3WEKxCEeGLnrdLmr5TaQ" base_Property="_Eh5zMKxCEeGLnrdLmr5TaQ"/>
+  <CDA:CodeSystemConstraint xmi:id="_Ch08YKxDEeGLnrdLmr5TaQ" code="69469‐5" displayName="Call time" base_Property="_9KgSYKxCEeGLnrdLmr5TaQ">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:CodeSystemConstraint xmi:id="_JKerZ6xDEeGLnrdLmr5TaQ" code="69471‐1" displayName="Unit notified time" base_Property="_JKerY6xDEeGLnrdLmr5TaQ">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:CodeSystemConstraint xmi:id="_UyaX16xDEeGLnrdLmr5TaQ" code="69472‐9" displayName="Unit en route time" base_Property="_UyaX06xDEeGLnrdLmr5TaQ">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:CodeSystemConstraint xmi:id="_iGigUKxDEeGLnrdLmr5TaQ" code="69473‐7" displayName="Unit on scene time" base_Property="_iGh5Q6xDEeGLnrdLmr5TaQ">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_qcNx0KxDEeGLnrdLmr5TaQ" base_Property="_iGh5Q6xDEeGLnrdLmr5TaQ"/>
+  <CDA:PropertyValidation xmi:id="_r0VbUKxDEeGLnrdLmr5TaQ" base_Property="_iGh5RKxDEeGLnrdLmr5TaQ"/>
+  <CDA:PropertyValidation xmi:id="_s6OFUKxDEeGLnrdLmr5TaQ" base_Property="_UyaX06xDEeGLnrdLmr5TaQ"/>
+  <CDA:PropertyValidation xmi:id="_tSyWUKxDEeGLnrdLmr5TaQ" base_Property="_UyaX1KxDEeGLnrdLmr5TaQ"/>
+  <CDA:PropertyValidation xmi:id="_uCPdUKxDEeGLnrdLmr5TaQ" base_Property="_JKerY6xDEeGLnrdLmr5TaQ"/>
+  <CDA:PropertyValidation xmi:id="_ufjrcKxDEeGLnrdLmr5TaQ" base_Property="_JKerZKxDEeGLnrdLmr5TaQ"/>
+  <CDA:PropertyValidation xmi:id="_vIXX4KxDEeGLnrdLmr5TaQ" base_Property="_9KgSYKxCEeGLnrdLmr5TaQ"/>
+  <CDA:PropertyValidation xmi:id="_vgPFUKxDEeGLnrdLmr5TaQ" base_Property="_9Kg5cKxCEeGLnrdLmr5TaQ"/>
+  <CDA:CodeSystemConstraint xmi:id="_yt7JV6xDEeGLnrdLmr5TaQ" code="69474‐5" displayName="Unit at patient time" base_Property="_yt7JU6xDEeGLnrdLmr5TaQ">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_yt7JWKxDEeGLnrdLmr5TaQ" base_Property="_yt7JU6xDEeGLnrdLmr5TaQ"/>
+  <CDA:PropertyValidation xmi:id="_yt7JWaxDEeGLnrdLmr5TaQ" base_Property="_yt7JVKxDEeGLnrdLmr5TaQ"/>
+  <CDA:CodeSystemConstraint xmi:id="_6w1256xDEeGLnrdLmr5TaQ" code="69475‐2" displayName="Unit left scene time" base_Property="_6w1246xDEeGLnrdLmr5TaQ">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_6w126KxDEeGLnrdLmr5TaQ" base_Property="_6w1246xDEeGLnrdLmr5TaQ"/>
+  <CDA:PropertyValidation xmi:id="_6w126axDEeGLnrdLmr5TaQ" base_Property="_6w125KxDEeGLnrdLmr5TaQ"/>
+  <CDA:CodeSystemConstraint xmi:id="_DaIA56xEEeGLnrdLmr5TaQ" code="69476‐0" displayName="Patient arrived at destination time" base_Property="_DaIA46xEEeGLnrdLmr5TaQ">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_DaIA6KxEEeGLnrdLmr5TaQ" base_Property="_DaIA46xEEeGLnrdLmr5TaQ"/>
+  <CDA:PropertyValidation xmi:id="_DaIA6axEEeGLnrdLmr5TaQ" base_Property="_DaIA5KxEEeGLnrdLmr5TaQ"/>
+  <CDA:CodeSystemConstraint xmi:id="_Krhx8KxEEeGLnrdLmr5TaQ" code="69477‐8" displayName="Unit back in service time" base_Property="_KrhK46xEEeGLnrdLmr5TaQ">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_Krhx8axEEeGLnrdLmr5TaQ" base_Property="_KrhK46xEEeGLnrdLmr5TaQ"/>
+  <CDA:PropertyValidation xmi:id="_Krhx8qxEEeGLnrdLmr5TaQ" base_Property="_KrhK5KxEEeGLnrdLmr5TaQ"/>
+  <CDA:CodeSystemConstraint xmi:id="_UFhAIKxEEeGLnrdLmr5TaQ" code="69470‐3" displayName="Dispatch notified time" base_Property="_UFgZE6xEEeGLnrdLmr5TaQ">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_UFhAIaxEEeGLnrdLmr5TaQ" base_Property="_UFgZE6xEEeGLnrdLmr5TaQ"/>
+  <CDA:PropertyValidation xmi:id="_UFhAIqxEEeGLnrdLmr5TaQ" base_Property="_UFgZFKxEEeGLnrdLmr5TaQ"/>
 </xmi:XMI>
