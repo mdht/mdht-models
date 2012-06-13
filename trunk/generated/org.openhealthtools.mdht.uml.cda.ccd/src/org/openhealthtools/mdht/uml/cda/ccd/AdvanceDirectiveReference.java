@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.Reference;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ccd.CCDPackage#getAdvanceDirectiveReference()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation typeCode='REFR' constraints.validation.info='AdvanceDirectiveReferenceHasURL AdvanceDirectiveReferenceHasMIMEType' templateId.root='2.16.840.1.113883.10.20.1.36' constraints.validation.error='AdvanceDirectiveReferenceTemplateId AdvanceDirectiveReferenceExternalDocumentHasId AdvanceDirectiveReferenceTypeCode AdvanceDirectiveReferenceExternalDocument'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.1.36' constraints.validation.error='AdvanceDirectiveReferenceTemplateId AdvanceDirectiveReferenceExternalDocumentHasId AdvanceDirectiveReferenceTypeCode AdvanceDirectiveReferenceExternalDocument' typeCode='REFR' constraints.validation.info='AdvanceDirectiveReferenceHasURL AdvanceDirectiveReferenceHasMIMEType'"
  * @generated
  */
 public interface AdvanceDirectiveReference extends Reference {
