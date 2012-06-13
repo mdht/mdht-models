@@ -23,7 +23,7 @@ import org.openhealthtools.mdht.uml.cda.Supply;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.ccd.CCDPackage#getSupplyActivity()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.info='SupplyActivityHasAuthor SupplyActivityHasPerformer SupplyActivityHasParticipantLocation SupplyActivityHasProduct SupplyActivityQuantity SupplyActivityRepeatNumber SupplyActivityMedicationStatusObservation SupplyActivityFulfillmentInstruction SupplyActivityProductInstance' templateId.root='2.16.840.1.113883.10.20.1.34' constraints.validation.error='SupplyActivityTemplateId SupplyActivityMoodCode SupplyActivityInformationSource SupplyActivityId' constraints.validation.warning='SupplyActivityStatusCode SupplyActivityEffectiveTime'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.1.34' constraints.validation.error='SupplyActivityTemplateId SupplyActivityMoodCode SupplyActivityInformationSource SupplyActivityId' constraints.validation.warning='SupplyActivityStatusCode SupplyActivityEffectiveTime' constraints.validation.info='SupplyActivityHasAuthor SupplyActivityHasPerformer SupplyActivityHasParticipantLocation SupplyActivityHasProduct SupplyActivityQuantity SupplyActivityRepeatNumber SupplyActivityMedicationStatusObservation SupplyActivityFulfillmentInstruction SupplyActivityProductInstance'"
  * @generated
  */
 public interface SupplyActivity extends Supply {
