@@ -44,7 +44,7 @@
           <language>Analysis</language>
           <language>OCL</language>
           <body>languageCode has the form nn, or nn-CC. The nn portion SHALL be an ISO-639-1 language code in lower case. The CC portion, if present, SHALL be an ISO-3166 country code in upper case</body>
-          <body>self.languageCode.matches('code','(([a-z]{2})(\\\\-[A-Z]{2})?)')</body>
+          <body>self.languageCode.matches('code','(([a-z]{2})(-[A-Z]{2})?)')</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_LwvesBgzEd-PS-Y_2ABBMQ" name="noTemplateIdExtension" constrainedElement="_Ze7UsGESEd69D7zx7EkLMA">

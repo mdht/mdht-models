@@ -166,7 +166,7 @@ address element within this DSTU.</body>
           <language>Analysis</language>
           <language>OCL</language>
           <body>The id/@root attribute is a syntactically correct UUID or OID.</body>
-          <body>self.id.matches('root','([0-2])(.([1-9][0-9]*|0))+') or self.id.matches('root','([A-Fa-f0-9]{8})(\\\\-[A-Fa-f0-9]{4}){3}(\\\\-[A-Fa-f0-9]{12})')</body>
+          <body>self.id.matches('root','([0-2])(.([1-9][0-9]*|0))+') or self.id.matches('root','([A-Fa-f0-9]{8})(-[A-Fa-f0-9]{4}){3}(-[A-Fa-f0-9]{12})')</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_OvdGwHMxEd-9_cvcE5QEwg" name="uuidFormat" constrainedElement="_MwGRIGeLEd-ilOLYnIx0jA">
@@ -215,7 +215,7 @@ compatibility with other standards and Implementation Guides.</body>
           <language>Analysis</language>
           <language>OCL</language>
           <body>languageCode has the form nn, or nn-CC.</body>
-          <body>self.languageCode.matches('code','(([a-z]{2})(\\\\-[A-Z]{2})?)')</body>
+          <body>self.languageCode.matches('code','(([a-z]{2})(-[A-Z]{2})?)')</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_70rDQHPqEd-9_cvcE5QEwg" name="languageCodeLanguage" constrainedElement="_MwGRIGeLEd-ilOLYnIx0jA">
