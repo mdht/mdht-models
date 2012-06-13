@@ -2793,7 +2793,7 @@ This nulled notional class is parallel to the explicit question &quot;patient on
         <nestedClassifier xmi:type="uml:Class" xmi:id="_whTHIJojEeG_FLcaRgAa7g" name="LengthBasedPatientBodyWeightClass">
           <ownedComment xmi:id="_RPusMJokEeG_FLcaRgAa7g">
             <body>NEMSIS Trace: EExam.02.&#xD;
-&lt;br>Note: a license is required to implement the Broselow‐Luten measure.</body>
+Note: a license is required to implement the Broselow‐Luten measure.</body>
           </ownedComment>
           <generalization xmi:id="_xRpmAJojEeG_FLcaRgAa7g">
             <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
@@ -3237,10 +3237,10 @@ This nulled notional class is parallel to the explicit question &quot;patient on
         <ownedAttribute xmi:id="_E6D5mJowEeG_FLcaRgAa7g" name="negationInd" visibility="private">
           <ownedComment xmi:id="_bNYxsJowEeG_FLcaRgAa7g">
             <body>NEMSIS Trace: EMedications.03 negative action values&#xD;
-&lt;br>If a substance is recorded as not given, it shall be recorded with a negationInd =True, and with an entryRelationship such that it&#xD;
-&lt;br>SHALL contain exactly one [1..1] @typeCode=&quot;RSON&quot; Has reason (CodeSystem: HL7ActRelationshipType 2.16.840.1.113883.5.1002)&#xD;
-&lt;br>SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot; True&#xD;
-&lt;br>SHALL contain exactly one /Observation with code drawn from  2.16.840.1.113883.17.3.5.42 Medication omission reason and value = &quot;Assertion.&quot;</body>
+If a substance is recorded as not given, it shall be recorded with a negationInd =True, and with an entryRelationship such that it&#xD;
+SHALL contain exactly one [1..1] @typeCode=&quot;RSON&quot; Has reason (CodeSystem: HL7ActRelationshipType 2.16.840.1.113883.5.1002)&#xD;
+SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot; True&#xD;
+SHALL contain exactly one /Observation with code drawn from  2.16.840.1.113883.17.3.5.42 Medication omission reason and value = &quot;Assertion.&quot;</body>
           </ownedComment>
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBooleanObject"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_E6D5mZowEeG_FLcaRgAa7g" value="1"/>
