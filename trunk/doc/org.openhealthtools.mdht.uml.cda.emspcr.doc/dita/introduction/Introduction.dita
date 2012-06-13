@@ -7,19 +7,25 @@
 	<p>This document is intended to guide software developers in generating CDA‐compliant XML patient care
 reports, also known as run reports, from EMS agency crews to emergency departments and other
 interested parties. It consists of a set of constraints on the HL7 CDA R2 model mapped to the National
-EMS Information System (NEMSIS) data elements.<p/>
+EMS Information System (NEMSIS) data elements.</p>
+
 <p>CDA, or Clinical Document Architecture, is a standard for information exchange. It is based on the HL7
 Reference Information Model, but it constrains that model to a specific set of patterns. This document
 adds further constraints, so that it specifies not just a generic clinical document, but an Emergency
 Medical Services (EMS) Patient Care Report—a record of an Emergency Medical Services encounter with
-a patient. An EMS Patient Care Report is also known as a run report.<p/>
-<p>Further information about CDA is available at HL7.org.<p/>
+a patient. An EMS Patient Care Report is also known as a run report.</p>
+
+<p>Further information about CDA is available at HL7.org.</p>
 <p>This guide constrains the NEMSIS data set to the HL7 CDA R2 document format. NEMSIS is maintained
 by the NEMSIS Technical Assistance Center, a US organization funded by the National Highway
 Transportation Safety Administration, the Centers for Disease Control, the Health Resources and
-Services Administration, the University of Utah, and the University of North Carolina.<p/>
+Services Administration, the University of Utah, and the University of North Carolina.</p>
 <p>We expect this standard to change during the DSTU period. Issues should be reported on the HL7 Draft
 Standard for Trial Use (DSTU) comment page at http://www.hl7.org/dstucomments/. For more
 information and status on the DSTU period, consult the HL7 wiki.</p>
-	</body>
+</body>
 </topic>
+
+
+	
+

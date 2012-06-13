@@ -29,56 +29,5 @@
 		<p>Harmonization with Emergency Department specifications and <i>Data Elements for Emergency
 		Department Systems</i>(DEEDS) involved use of extant LOINC codes for shared elements.</p>
 		<p><b></b></p>
-		
-			<topic id="nullandnegativevalues">
-		<title>Null and Negative Values</title>
-		<body>
-			<p>We use RIM attributes for observations that may require explicit negation or null values. If I have
-			checked for signs of drug use, I can assert that a particular sign was found (with a proper value), that
-			whether there were signs is unknown (with a null) or that there were no signs (with negation).</p>
-
-			<p>However, in collections of acts other than observations, epistemological attributes may have uncertain
-			semantics. If a procedure is negated, it may not be clear whether the clinician is asserting that the
-			procedure was not performed during the encounter or that it has never been performed on the patient.
-			Similarly, you may document a history of specific disorders, but including a single, general but negated
-			disorder implies assumptions about the scope of the negated disorder that are not explicitly modeled.</p>
-
-			<p>As a result, we manage negation and uncertainty for procedures with explicit observations. Using an
-			observation allows the clinician to assert a history of zero disorders, or a lack of knowledge about
-			disorders, without tying that assertion to a notional disorder that may imply unanticipated facts or
-			questions. Questions supporting observations about procedures can differentiate between encounter
-			and patient history, letting assertions about the truth or existence of the knowledge obtain in the
-			appropriate scope.</p>
-		
-			<p>As a result, the medical history sections include, in addition to problems, procedures, medications, and
-			allergies, observations regarding the existence of problems, procedures, medications, and allergies.</p>
-			
-			<p>In the interest of conformance with other guides, we also represent these null and negative acts with
-			null and negated acts, in line with Consolidation Project recommendations. These notional classes are 
-			annotated to ensure it's clear that they restate the explicit observations, and are not distinct facts.</p>
 		</body>
-	</topic>
-		<topic id="nullvaluemapping">
-		<title>Null Value Mapping</title>
-		<body>
-			<p>NEMSIS contains null values not listed in HL7. “Not applicable” maps directly to “Not applicable,” but
-			“Not recorded” and “Not reported” must be represented as the general concept “No information.”
-			These values may also be copied into Observation.text.</p>
-			
-			<p>NEMSIS also contains “negative action values,” most of which are addressed with negation and special
-			cases in this document. Some of the negative action values, however, are actually null values, and are
-			recorded as “NI,” no information. A mapping of negative action values is provided in Appendix B.</p>
-		</body>
-	</topic>
-	
-		<topic id="units">
-		<title>Units</title>
-		<body>
-			<p>Physical quantities use the HL7 PQ data type, in which units are expressed in the Unified Code for Units
-			of Measure (UCUM; 2.16.840.1.113883.6.8), available at http://www.regenstrief.org. Interface values
-			that are not actual physical units are handled differently: see appendix C for mappings.</p>
-		</body>
-	</topic>
-	
-	</body>
 </topic>

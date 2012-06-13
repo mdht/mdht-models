@@ -4,7 +4,10 @@
 
 	<chapter href="Introduction.dita" navtitle="INTRODUCTION" type="topic">
 		<topicref href="Overview.dita" navtitle="Overview" type="topic"/>
-		<topicref href="Approach.dita" navtitle="Approach" type="topic"/>
+		<topicref href="Approach.dita" navtitle="Approach" type="topic"/>		
+		<topicref href="NullAndNegativeValues.dita" navtitle="Approach" type="topic"/>
+		<topicref href="NullValueMapping.dita" navtitle="Approach" type="topic"/>
+		<topicref href="Units.dita" navtitle="Approach" type="topic"/>		
 		<topicref href="Scope.dita" navtitle="Scope" type="topic"/>
 		<topicref href="Audience.dita" navtitle="Audience" type="topic"/>
 		<topicref href="OrganizationOfGuide.dita" navtitle="Organization of This Guide" type="topic"/>
