@@ -3814,7 +3814,7 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="PlanOfCareSection" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda.cdt/model/cdt.ecore#//AssessmentAndPlanSection ../../org.openhealthtools.mdht.uml.cda.ihe/model/ihe.ecore#//CarePlanSection">
+  <eClassifiers xsi:type="ecore:EClass" name="PlanOfCareSection" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.cdt/model/cdt.ecore#//AssessmentAndPlanSection ../../org.openhealthtools.mdht.uml.cda.ihe/model/ihe.ecore#//CarePlanSection">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="&lt;p>&#xD;&#xA;    The Plan of Care Section contains information about the expectations for care to be provided including&#xD;&#xA;    proposed interventions and goals for improving the condition of the patient. &#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p>&#xD;&#xA;    A plan of care section varies from the assessment and plan section defined above in that it does not&#xD;&#xA;    include a physician assessment of the patient condition. &#xD;&#xA;&lt;/p>"/>
     </eAnnotations>
@@ -4415,7 +4415,7 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="HistoryOfPastIllnessSection" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.ihe/model/ihe.ecore#//HistoryOfPastIllnessSection platform:/plugin/org.openhealthtools.mdht.uml.cda.cdt/model/cdt.ecore#//PastMedicalHistorySection">
+  <eClassifiers xsi:type="ecore:EClass" name="HistoryOfPastIllnessSection" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.ihe/model/ihe.ecore#//HistoryOfPastIllnessSection ../../org.openhealthtools.mdht.uml.cda.cdt/model/cdt.ecore#//PastMedicalHistorySection">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="&lt;p>&#xD;&#xA;    The History of Past Illness Section contains data about problems the patient suffered in the&#xD;&#xA;    past. &#xD;&#xA;&lt;/p>"/>
     </eAnnotations>
@@ -4476,7 +4476,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ChiefComplaintSection" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.ihe/model/ihe.ecore#//ChiefComplaintSection platform:/plugin/org.openhealthtools.mdht.uml.cda.cdt/model/cdt.ecore#//ChiefComplaintSection">
+  <eClassifiers xsi:type="ecore:EClass" name="ChiefComplaintSection" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.ihe/model/ihe.ecore#//ChiefComplaintSection ../../org.openhealthtools.mdht.uml.cda.cdt/model/cdt.ecore#//ChiefComplaintSection">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="&lt;p>&#xD;&#xA;    The Chief Complaint Section contains information about the patient's chief complaint. &#xD;&#xA;&lt;/p>"/>
     </eAnnotations>
@@ -4538,7 +4538,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ReasonForReferralSection" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.ihe/model/ihe.ecore#//CodedReasonForReferralSection platform:/plugin/org.openhealthtools.mdht.uml.cda.cdt/model/cdt.ecore#//ReasonForReferralSection">
+  <eClassifiers xsi:type="ecore:EClass" name="ReasonForReferralSection" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.ihe/model/ihe.ecore#//CodedReasonForReferralSection ../../org.openhealthtools.mdht.uml.cda.cdt/model/cdt.ecore#//ReasonForReferralSection">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="&lt;p>&#xD;&#xA;    The Reason for Referral Section contains information about the reason that the patient is being&#xD;&#xA;    referred. &#xD;&#xA;&lt;/p>"/>
     </eAnnotations>
@@ -4944,7 +4944,7 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="PhysicalExamSection" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda.cdt/model/cdt.ecore#//PhysicalExaminationSection ../../org.openhealthtools.mdht.uml.cda.ihe/model/ihe.ecore#//PhysicalExamSection">
+  <eClassifiers xsi:type="ecore:EClass" name="PhysicalExamSection" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.cdt/model/cdt.ecore#//PhysicalExaminationSection ../../org.openhealthtools.mdht.uml.cda.ihe/model/ihe.ecore#//PhysicalExamSection">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="&lt;p>&#xD;&#xA;    The Physical Examination Section contains information describing the physical findings. &#xD;&#xA;&lt;/p>"/>
     </eAnnotations>
@@ -5006,7 +5006,7 @@
       </eAnnotations>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ReviewOfSystemsSection" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.ihe/model/ihe.ecore#//ReviewOfSystemsSection platform:/plugin/org.openhealthtools.mdht.uml.cda.cdt/model/cdt.ecore#//ReviewOfSystemsSection">
+  <eClassifiers xsi:type="ecore:EClass" name="ReviewOfSystemsSection" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.ihe/model/ihe.ecore#//ReviewOfSystemsSection ../../org.openhealthtools.mdht.uml.cda.cdt/model/cdt.ecore#//ReviewOfSystemsSection">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="&lt;p>&#xD;&#xA;    The Review of Systems Section contains information describing patient responses to questions about the&#xD;&#xA;    function of various body systems. &#xD;&#xA;&lt;/p>"/>
     </eAnnotations>
@@ -5068,7 +5068,7 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="AssessmentAndPlanSection" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.ihe/model/ihe.ecore#//AssessmentAndPlanSection platform:/plugin/org.openhealthtools.mdht.uml.cda.cdt/model/cdt.ecore#//AssessmentAndPlanSection">
+  <eClassifiers xsi:type="ecore:EClass" name="AssessmentAndPlanSection" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.ihe/model/ihe.ecore#//AssessmentAndPlanSection ../../org.openhealthtools.mdht.uml.cda.cdt/model/cdt.ecore#//AssessmentAndPlanSection">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="&lt;p>&#xD;&#xA;    The Assessment and Plan Section contains information about the assessment of the patient's condition and&#xD;&#xA;    expectations for care including proposals, goals, and order requests for monitoring, tracking, or improving the&#xD;&#xA;    condition of the patient. &#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p>&#xD;&#xA;    An assessment and plan section varies from the plan of care section defined later in that it includes a&#xD;&#xA;    physician assessment of the patient condition. &#xD;&#xA;&lt;/p>&#xD;&#xA;&lt;p>&#xD;&#xA;    &lt;b>NOTE &lt;/b>:&#xD;&#xA;    The assessments described in this section are physician assessments of the patient's current condition, and do not&#xD;&#xA;    include assessments of functional status, or other assessments typically used in nursing. In Implementation Guides&#xD;&#xA;    currently selected, when both the assessment and plan are documented, they are included together in a single section&#xD;&#xA;    documenting both. When the physician assessment is not present, only the plan of care section appears. There are no&#xD;&#xA;    cases where a physician assessment is provided without a plan.   &#xD;&#xA;&lt;/p>"/>
     </eAnnotations>
@@ -6174,7 +6174,7 @@
       </eParameters>
     </eOperations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="UnstructuredOrScannedDocument" eSuperTypes="platform:/plugin/org.openhealthtools.mdht.uml.cda.cdt/model/cdt.ecore#//UnstructuredDocument #//UnstructuredDocument"/>
+  <eClassifiers xsi:type="ecore:EClass" name="UnstructuredOrScannedDocument" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.cdt/model/cdt.ecore#//UnstructuredDocument #//UnstructuredDocument"/>
   <eClassifiers xsi:type="ecore:EClass" name="ReferralSummary" eSuperTypes="../../org.openhealthtools.mdht.uml.cda.ihe/model/ihe.ecore#//MedicalSummary">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
       <details key="templateId.root" value="2.16.840.1.113883.3.88.11.48.1"/>
