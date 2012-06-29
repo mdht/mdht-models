@@ -13,6 +13,64 @@
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
 <row><entry>Value Set</entry><entry>ExtremityFindingLocation - 2.16.840.1.113883.17.3.5.37</entry></row>
+<row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
+</tbody></tgroup></table>
+<table><tgroup cols="4">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="2*"/>
+<colspec colname="col3" colwidth="1*"/>
+<colspec colname="col4" colwidth="3*"/>
+<thead><row>
+<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
+</row></thead><tbody>
+<row><entry>LA18739-5</entry><entry>LA18739-5</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18740-3</entry><entry>LA18740-3</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18741-1</entry><entry>LA18741-1</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18742-9</entry><entry>LA18742-9</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18743-7</entry><entry>LA18743-7</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18744-5</entry><entry>LA18744-5</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18745-2</entry><entry>LA18745-2</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18746-0</entry><entry>LA18746-0</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18747-8</entry><entry>LA18747-8</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18748-6</entry><entry>LA18748-6</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18749-4</entry><entry>LA18749-4</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18750-2</entry><entry>LA18750-2</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18751-0</entry><entry>LA18751-0</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18752-8</entry><entry>LA18752-8</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18753-6</entry><entry>LA18753-6</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18754-4</entry><entry>LA18754-4</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18755-1</entry><entry>LA18755-1</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18756-9</entry><entry>LA18756-9</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18757-7</entry><entry>LA18757-7</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18758-5</entry><entry>LA18758-5</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18759-3</entry><entry>LA18759-3</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18760-1</entry><entry>LA18760-1</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18761-9</entry><entry>LA18761-9</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18762-7</entry><entry>LA18762-7</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18763-5</entry><entry>LA18763-5</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18764-3</entry><entry>LA18764-3</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18765-0</entry><entry>LA18765-0</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18766-8</entry><entry>LA18766-8</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18767-6</entry><entry>LA18767-6</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18768-4</entry><entry>LA18768-4</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18769-2</entry><entry>LA18769-2</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18770-0</entry><entry>LA18770-0</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18771-8</entry><entry>LA18771-8</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18772-6</entry><entry>LA18772-6</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18773-4</entry><entry>LA18773-4</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18774-2</entry><entry>LA18774-2</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18775-9</entry><entry>LA18775-9</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18776-7</entry><entry>LA18776-7</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18777-5</entry><entry>LA18777-5</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18778-3</entry><entry>LA18778-3</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18779-1</entry><entry>LA18779-1</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18780-9</entry><entry>LA18780-9</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18781-7</entry><entry>LA18781-7</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18782-5</entry><entry>LA18782-5</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18783-3</entry><entry>LA18783-3</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18784-1</entry><entry>LA18784-1</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18785-8</entry><entry>LA18785-8</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18786-6</entry><entry>LA18786-6</entry><entry>LOINC</entry><entry></entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

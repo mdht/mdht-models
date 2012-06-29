@@ -13,6 +13,28 @@
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
 <row><entry>Value Set</entry><entry>VehicleImpactArea - 2.16.840.1.113883.17.3.5.5</entry></row>
+<row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
+</tbody></tgroup></table>
+<table><tgroup cols="4">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="2*"/>
+<colspec colname="col3" colwidth="1*"/>
+<colspec colname="col4" colwidth="3*"/>
+<thead><row>
+<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
+</row></thead><tbody>
+<row><entry>LA10137-0</entry><entry>LA10137-0</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA10138-8</entry><entry>LA10138-8</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA10139-6</entry><entry>LA10139-6</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA10140-4</entry><entry>LA10140-4</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA10141-2</entry><entry>LA10141-2</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA13942-0</entry><entry>LA13942-0</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA14557-5</entry><entry>LA14557-5</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA14558-3</entry><entry>LA14558-3</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA6112-2</entry><entry>LA6112-2</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA6113-0</entry><entry>LA6113-0</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA6114-8</entry><entry>LA6114-8</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA6115-5</entry><entry>LA6115-5</entry><entry>LOINC</entry><entry></entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

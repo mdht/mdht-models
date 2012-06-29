@@ -5,6 +5,8 @@
 <shortdesc conref="generated/_EMSProceduresPerformedSection.dita#classId/shortdesc"></shortdesc>
 <prolog conref="generated/_EMSProceduresPerformedSection.dita#classId/prolog"></prolog>
 <body>
+<section conref="generated/_EMSProceduresPerformedSection.dita#classId/knownSubclasses">
+</section>
 <!-- TODO: insert non-model class description markup here -->
 <section conref="generated/_EMSProceduresPerformedSection.dita#classId/description">
 </section>
@@ -16,8 +18,6 @@
 <ol audience="developer" conref="generated/_EMSProceduresPerformedSection.dita#classId/aggregate">
 <li></li>
 </ol>
-<section conref="generated/_EMSProceduresPerformedSection.dita#classId/tableconformance">
-</section>
 <p> </p>
 <p><b>EMS Procedures Performed Section example</b></p>
 <!-- TODO: insert custom instance example here -->

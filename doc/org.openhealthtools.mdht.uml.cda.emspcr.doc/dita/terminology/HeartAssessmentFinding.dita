@@ -13,6 +13,27 @@
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
 <row><entry>Value Set</entry><entry>HeartAssessmentFinding - 2.16.840.1.113883.17.3.5.30</entry></row>
+<row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
+</tbody></tgroup></table>
+<table><tgroup cols="4">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="2*"/>
+<colspec colname="col3" colwidth="1*"/>
+<colspec colname="col4" colwidth="3*"/>
+<thead><row>
+<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
+</row></thead><tbody>
+<row><entry>LA17239-7</entry><entry>LA17239-7</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17240-5</entry><entry>LA17240-5</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17241-3</entry><entry>LA17241-3</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18241-2</entry><entry>LA18241-2</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18242-0</entry><entry>LA18242-0</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18243-8</entry><entry>LA18243-8</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18244-6</entry><entry>LA18244-6</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18245-3</entry><entry>LA18245-3</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18246-1</entry><entry>LA18246-1</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA6626-1</entry><entry>LA6626-1</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA6630-3</entry><entry>LA6630-3</entry><entry>LOINC</entry><entry></entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

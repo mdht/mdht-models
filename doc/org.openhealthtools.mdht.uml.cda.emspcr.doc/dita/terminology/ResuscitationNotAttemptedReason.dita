@@ -14,6 +14,18 @@
 <tbody>
 <row><entry>Value Set</entry><entry>ResuscitationNotAttemptedReason - 2.16.840.1.113883.17.3.5.90</entry></row>
 </tbody></tgroup></table>
+<table><tgroup cols="4">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="2*"/>
+<colspec colname="col3" colwidth="1*"/>
+<colspec colname="col4" colwidth="3*"/>
+<thead><row>
+<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
+</row></thead><tbody>
+<row><entry>LA17063-1</entry><entry>LA17063-1</entry><entry></entry><entry></entry></row>
+<row><entry>LA17064-9</entry><entry>LA17064-9</entry><entry></entry><entry></entry></row>
+<row><entry>LA17065-6</entry><entry>LA17065-6</entry><entry></entry><entry></entry></row>
+</tbody></tgroup></table>
 </section>
 </body>
 </topic>

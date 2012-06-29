@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN"
  "topic.dtd">
-		<topic id="units">
+<topic id="units" xml:lang="en-us">		
 		<title>Units</title>
 		<body>
 			<p>Physical quantities use the HL7 PQ data type, in which units are expressed in the Unified Code for Units
-			of Measure (UCUM; 2.16.840.1.113883.6.8), available at http://www.regenstrief.org. Interface values
+			of Measure (UCUM; 2.16.840.1.113883.6.8), available at. Interface values
 			that are not actual physical units are handled differently: see appendix C for mappings.</p>
 		</body>
 	</topic>

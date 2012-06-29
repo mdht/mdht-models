@@ -13,6 +13,20 @@
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
 <row><entry>Value Set</entry><entry>CardiacArrestWitnessRole - 2.16.840.1.113883.17.3.5.11</entry></row>
+<row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
+</tbody></tgroup></table>
+<table><tgroup cols="4">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="2*"/>
+<colspec colname="col3" colwidth="1*"/>
+<colspec colname="col4" colwidth="3*"/>
+<thead><row>
+<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
+</row></thead><tbody>
+<row><entry>LA18020-0</entry><entry>LA18020-0</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18021-8</entry><entry>LA18021-8</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18022-6</entry><entry>LA18022-6</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18023-4</entry><entry>LA18023-4</entry><entry>LOINC</entry><entry></entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

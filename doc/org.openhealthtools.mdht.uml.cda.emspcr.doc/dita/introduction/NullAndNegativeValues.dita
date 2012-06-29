@@ -2,7 +2,7 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN"
  "topic.dtd">
 
-			<topic id="nullandnegativevalues">
+			<topic id="nullandnegativevalues" xml:lang="en-us" >
 		<title>Null and Negative Values</title>
 		<body>
 			<p>We use RIM attributes for observations that may require explicit negation or null values. A
