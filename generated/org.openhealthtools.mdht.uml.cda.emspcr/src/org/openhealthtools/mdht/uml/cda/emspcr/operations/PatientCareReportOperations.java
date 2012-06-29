@@ -1,15 +1,12 @@
-/*******************************************************************************
- * Copyright (c) 2012 Sean Muir and others.
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
+/**
+ * <copyright>
+ * </copyright>
  *
- * Contributors:
- *     Sean Muir (JKM Software) - initial API and implementation
- *******************************************************************************/
+ * $Id$
+ */
 package org.openhealthtools.mdht.uml.cda.emspcr.operations;
 
+import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
@@ -25,13 +22,21 @@ import org.eclipse.ocl.ecore.OCL;
 
 import org.eclipse.ocl.expressions.OCLExpression;
 
-import org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectivesSectionEntriesOptional;
-import org.openhealthtools.mdht.uml.cda.consol.AllergiesSectionEntriesOptional;
-
 import org.openhealthtools.mdht.uml.cda.consol.operations.GeneralHeaderConstraintsOperations;
 
-import org.openhealthtools.mdht.uml.cda.emspcr.EMSBilling;
-import org.openhealthtools.mdht.uml.cda.emspcr.EMSInjuryIncidentDescription;
+import org.openhealthtools.mdht.uml.cda.emspcr.EMSAdvanceDirectivesSection;
+import org.openhealthtools.mdht.uml.cda.emspcr.EMSAllergiesAndAdverseReactionsSection;
+import org.openhealthtools.mdht.uml.cda.emspcr.EMSBillingSection;
+import org.openhealthtools.mdht.uml.cda.emspcr.EMSCardiacArrestEventSection;
+import org.openhealthtools.mdht.uml.cda.emspcr.EMSCurrentMedicationSection;
+import org.openhealthtools.mdht.uml.cda.emspcr.EMSInjuryIncidentDescriptionSection;
+import org.openhealthtools.mdht.uml.cda.emspcr.EMSMedicationsAdministeredSection;
+import org.openhealthtools.mdht.uml.cda.emspcr.EMSPastMedicalHistory;
+import org.openhealthtools.mdht.uml.cda.emspcr.EMSPatientCareNarrative;
+import org.openhealthtools.mdht.uml.cda.emspcr.EMSPhysicalAssessmentSection;
+import org.openhealthtools.mdht.uml.cda.emspcr.EMSProceduresPerformedSection;
+import org.openhealthtools.mdht.uml.cda.emspcr.EMSSceneSection;
+import org.openhealthtools.mdht.uml.cda.emspcr.EMSSocialHistory;
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPlugin;
 import org.openhealthtools.mdht.uml.cda.emspcr.PatientCareReport;
@@ -52,14 +57,35 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.PatientCareReport#validatePatientCareReportVersionNumber(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Care Report Version Number</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.PatientCareReport#validatePatientCareReportId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Care Report Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.PatientCareReport#validatePatientCareReportTitle(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Care Report Title</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.PatientCareReport#validatePatientCareReportRecordTarget(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Care Report Record Target</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.PatientCareReport#validatePatientCareReportHumanAuthor(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Care Report Human Author</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.PatientCareReport#validatePatientCareReportComponentOf(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Care Report Component Of</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.PatientCareReport#validatePatientCareReportAdvanceDirectivesSectionEntriesOptional(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Care Report Advance Directives Section Entries Optional</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.PatientCareReport#validatePatientCareReportAllergiesSectionEntriesOptional(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Care Report Allergies Section Entries Optional</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.PatientCareReport#getAdvanceDirectivesSectionEntriesOptional() <em>Get Advance Directives Section Entries Optional</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.PatientCareReport#getAllergiesSectionEntriesOptional() <em>Get Allergies Section Entries Optional</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.PatientCareReport#validatePatientCareReportBilling(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Care Report Billing</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.PatientCareReport#validatePatientCareReportSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Care Report Section</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.PatientCareReport#validatePatientCareReportEMSCurrentMedication(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Care Report EMS Current Medication</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.PatientCareReport#validatePatientCareReportEMSCardiacArrestEvent(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Care Report EMS Cardiac Arrest Event</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.PatientCareReport#validatePatientCareReportEMSAdvanceDirectives(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Care Report EMS Advance Directives</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.PatientCareReport#validatePatientCareReportEMSAllergiesAndAdverseReactionsSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Care Report EMS Allergies And Adverse Reactions Section</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.PatientCareReport#validatePatientCareReportEMSPastMedicalHistory(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Care Report EMS Past Medical History</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.PatientCareReport#validatePatientCareReportEMSSocialHistory(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Care Report EMS Social History</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.PatientCareReport#validatePatientCareReportEMSPhysicalAssessmentSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Care Report EMS Physical Assessment Section</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.PatientCareReport#validatePatientCareReportEMSMedicationsAdministeredSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Care Report EMS Medications Administered Section</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.PatientCareReport#validatePatientCareReportEMSProceduresPerformedSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Care Report EMS Procedures Performed Section</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.PatientCareReport#validatePatientCareReportEMSPatientCareNarrative(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Care Report EMS Patient Care Narrative</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.PatientCareReport#validatePatientCareReportEMSSceneSection(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Care Report EMS Scene Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.PatientCareReport#getBilling() <em>Get Billing</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.PatientCareReport#getSection() <em>Get Section</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.PatientCareReport#getEMSCurrentMedication() <em>Get EMS Current Medication</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.PatientCareReport#getEMSCardiacArrestEvent() <em>Get EMS Cardiac Arrest Event</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.PatientCareReport#getEMSAdvanceDirectives() <em>Get EMS Advance Directives</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.PatientCareReport#getEMSAllergiesAndAdverseReactionsSection() <em>Get EMS Allergies And Adverse Reactions Section</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.PatientCareReport#getEMSPastMedicalHistory() <em>Get EMS Past Medical History</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.PatientCareReport#getEMSSocialHistory() <em>Get EMS Social History</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.PatientCareReport#getEMSPhysicalAssessmentSection() <em>Get EMS Physical Assessment Section</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.PatientCareReport#getEMSMedicationsAdministeredSection() <em>Get EMS Medications Administered Section</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.PatientCareReport#getEMSProceduresPerformedSection() <em>Get EMS Procedures Performed Section</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.PatientCareReport#getEMSPatientCareNarrative() <em>Get EMS Patient Care Narrative</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.PatientCareReport#getEMSSceneSection() <em>Get EMS Scene Section</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.PatientCareReport#validateGeneralHeaderConstraintsTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.PatientCareReport#validateGeneralHeaderConstraintsCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Code</em>}</li>
  * </ul>
@@ -114,6 +140,7 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
   
   public static  boolean validatePatientCareReportClassCode(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_PATIENT_CARE_REPORT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT);
@@ -138,6 +165,7 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
              EmspcrPlugin.INSTANCE.getString("PatientCareReportClassCode"),
              new Object [] { patientCareReport }));
       }
+       
       return false;
     }
     return true;
@@ -179,6 +207,7 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
   
   public static  boolean validatePatientCareReportMoodCode(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_PATIENT_CARE_REPORT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT);
@@ -203,6 +232,7 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
              EmspcrPlugin.INSTANCE.getString("PatientCareReportMoodCode"),
              new Object [] { patientCareReport }));
       }
+       
       return false;
     }
     return true;
@@ -244,6 +274,7 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
   
   public static  boolean validatePatientCareReportCode(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_PATIENT_CARE_REPORT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT);
@@ -268,6 +299,19 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
              EmspcrPlugin.INSTANCE.getString("PatientCareReportCode"),
              new Object [] { patientCareReport }));
       }
+      
+      if (context != null) {
+        // generate a pass token for my dependent constraints to short-circuit or filter results
+        @SuppressWarnings("unchecked")
+        Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.emspcr.PatientCareReportCode");
+        if (passToken == null) {
+          // anticipate a reasonably healthy model
+          passToken = new java.util.ArrayList<Object>(3);
+          context.put("org.openhealthtools.mdht.uml.cda.emspcr.PatientCareReportCode", passToken);
+        }
+        passToken.add(patientCareReport);
+      }
+       
       return false;
     }
     return true;
@@ -309,6 +353,7 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
   
   public static  boolean validatePatientCareReportVersionNumber(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_PATIENT_CARE_REPORT_VERSION_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT);
@@ -333,6 +378,7 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
              EmspcrPlugin.INSTANCE.getString("PatientCareReportVersionNumber"),
              new Object [] { patientCareReport }));
       }
+       
       return false;
     }
     return true;
@@ -374,6 +420,7 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
   
   public static  boolean validatePatientCareReportId(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_PATIENT_CARE_REPORT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT);
@@ -398,6 +445,7 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
              EmspcrPlugin.INSTANCE.getString("PatientCareReportId"),
              new Object [] { patientCareReport }));
       }
+       
       return false;
     }
     return true;
@@ -411,7 +459,7 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_PATIENT_CARE_REPORT_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined())";
+  protected static final String VALIDATE_PATIENT_CARE_REPORT_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (self.title.getText() = 'EMS Patient Care Report')";
 
   /**
    * The cached OCL invariant for the '{@link #validatePatientCareReportTitle(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Care Report Title</em>}' invariant operation.
@@ -429,7 +477,7 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined())
+   * (self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (self.title.getText() = 'EMS Patient Care Report')
    * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -439,6 +487,7 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
   
   public static  boolean validatePatientCareReportTitle(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_PATIENT_CARE_REPORT_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT);
@@ -463,6 +512,74 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
              EmspcrPlugin.INSTANCE.getString("PatientCareReportTitle"),
              new Object [] { patientCareReport }));
       }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validatePatientCareReportRecordTarget(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Care Report Record Target</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validatePatientCareReportRecordTarget(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_PATIENT_CARE_REPORT_RECORD_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.recordTarget->one(recordTarget : cda::RecordTarget | not recordTarget.oclIsUndefined() and recordTarget.oclIsKindOf(consol::GeneralHeaderConstraints::RecordTarget))";
+
+  /**
+   * The cached OCL invariant for the '{@link #validatePatientCareReportRecordTarget(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Care Report Record Target</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validatePatientCareReportRecordTarget(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_PATIENT_CARE_REPORT_RECORD_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+  
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.recordTarget->one(recordTarget : cda::RecordTarget | not recordTarget.oclIsUndefined() and recordTarget.oclIsKindOf(consol::GeneralHeaderConstraints::RecordTarget))
+   * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validatePatientCareReportRecordTarget(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_PATIENT_CARE_REPORT_RECORD_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT);
+      try
+      {
+        VALIDATE_PATIENT_CARE_REPORT_RECORD_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_CARE_REPORT_RECORD_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_CARE_REPORT_RECORD_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientCareReport))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             EmspcrValidator.DIAGNOSTIC_SOURCE,
+             EmspcrValidator.PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_RECORD_TARGET,
+             EmspcrPlugin.INSTANCE.getString("PatientCareReportRecordTarget"),
+             new Object [] { patientCareReport }));
+      }
+       
       return false;
     }
     return true;
@@ -504,6 +621,7 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
   
   public static  boolean validatePatientCareReportHumanAuthor(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_PATIENT_CARE_REPORT_HUMAN_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT);
@@ -528,6 +646,7 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
              EmspcrPlugin.INSTANCE.getString("PatientCareReportHumanAuthor"),
              new Object [] { patientCareReport }));
       }
+       
       return false;
     }
     return true;
@@ -569,6 +688,7 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
   
   public static  boolean validatePatientCareReportComponentOf(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_PATIENT_CARE_REPORT_COMPONENT_OF__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT);
@@ -593,38 +713,39 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
              EmspcrPlugin.INSTANCE.getString("PatientCareReportComponentOf"),
              new Object [] { patientCareReport }));
       }
+       
       return false;
     }
     return true;
   }
 
   /**
-   * The cached OCL expression body for the '{@link #validatePatientCareReportAdvanceDirectivesSectionEntriesOptional(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Care Report Advance Directives Section Entries Optional</em>}' operation.
+   * The cached OCL expression body for the '{@link #validatePatientCareReportBilling(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Care Report Billing</em>}' operation.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #validatePatientCareReportAdvanceDirectivesSectionEntriesOptional(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @see #validatePatientCareReportBilling(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_PATIENT_CARE_REPORT_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AdvanceDirectivesSectionEntriesOptional))";
+  protected static final String VALIDATE_PATIENT_CARE_REPORT_BILLING__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSBillingSection))";
 
   /**
-   * The cached OCL invariant for the '{@link #validatePatientCareReportAdvanceDirectivesSectionEntriesOptional(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Care Report Advance Directives Section Entries Optional</em>}' invariant operation.
+   * The cached OCL invariant for the '{@link #validatePatientCareReportBilling(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Care Report Billing</em>}' invariant operation.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #validatePatientCareReportAdvanceDirectivesSectionEntriesOptional(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @see #validatePatientCareReportBilling(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
   
-  protected static Constraint VALIDATE_PATIENT_CARE_REPORT_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+  protected static Constraint VALIDATE_PATIENT_CARE_REPORT_BILLING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
   
 
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AdvanceDirectivesSectionEntriesOptional))
+   * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSBillingSection))
    * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -632,64 +753,66 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
    * @generated
    */
   
-  public static  boolean validatePatientCareReportAdvanceDirectivesSectionEntriesOptional(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public static  boolean validatePatientCareReportBilling(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    if (VALIDATE_PATIENT_CARE_REPORT_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+  	  
+    if (VALIDATE_PATIENT_CARE_REPORT_BILLING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT);
       try
       {
-        VALIDATE_PATIENT_CARE_REPORT_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_CARE_REPORT_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+        VALIDATE_PATIENT_CARE_REPORT_BILLING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_CARE_REPORT_BILLING__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
       }
       catch (ParserException pe)
       {
         throw new UnsupportedOperationException(pe.getLocalizedMessage());
       }
     }
-    if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_CARE_REPORT_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientCareReport))
+    if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_CARE_REPORT_BILLING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientCareReport))
     {
       if (diagnostics != null)
       {
         diagnostics.add
           (new BasicDiagnostic
-            (Diagnostic.WARNING,
+            (Diagnostic.ERROR,
              EmspcrValidator.DIAGNOSTIC_SOURCE,
-             EmspcrValidator.PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL,
-             EmspcrPlugin.INSTANCE.getString("PatientCareReportAdvanceDirectivesSectionEntriesOptional"),
+             EmspcrValidator.PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_BILLING,
+             EmspcrPlugin.INSTANCE.getString("PatientCareReportBilling"),
              new Object [] { patientCareReport }));
       }
+       
       return false;
     }
     return true;
   }
 
   /**
-   * The cached OCL expression body for the '{@link #validatePatientCareReportAllergiesSectionEntriesOptional(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Care Report Allergies Section Entries Optional</em>}' operation.
+   * The cached OCL expression body for the '{@link #validatePatientCareReportSection(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Care Report Section</em>}' operation.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #validatePatientCareReportAllergiesSectionEntriesOptional(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @see #validatePatientCareReportSection(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_PATIENT_CARE_REPORT_ALLERGIES_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AllergiesSectionEntriesOptional))";
+  protected static final String VALIDATE_PATIENT_CARE_REPORT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSInjuryIncidentDescriptionSection))";
 
   /**
-   * The cached OCL invariant for the '{@link #validatePatientCareReportAllergiesSectionEntriesOptional(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Care Report Allergies Section Entries Optional</em>}' invariant operation.
+   * The cached OCL invariant for the '{@link #validatePatientCareReportSection(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Care Report Section</em>}' invariant operation.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #validatePatientCareReportAllergiesSectionEntriesOptional(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @see #validatePatientCareReportSection(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
   
-  protected static Constraint VALIDATE_PATIENT_CARE_REPORT_ALLERGIES_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+  protected static Constraint VALIDATE_PATIENT_CARE_REPORT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
   
 
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AllergiesSectionEntriesOptional))
+   * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSInjuryIncidentDescriptionSection))
    * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -697,21 +820,223 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
    * @generated
    */
   
-  public static  boolean validatePatientCareReportAllergiesSectionEntriesOptional(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public static  boolean validatePatientCareReportSection(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    if (VALIDATE_PATIENT_CARE_REPORT_ALLERGIES_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+  	  
+    if (VALIDATE_PATIENT_CARE_REPORT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT);
       try
       {
-        VALIDATE_PATIENT_CARE_REPORT_ALLERGIES_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_CARE_REPORT_ALLERGIES_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+        VALIDATE_PATIENT_CARE_REPORT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_CARE_REPORT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
       }
       catch (ParserException pe)
       {
         throw new UnsupportedOperationException(pe.getLocalizedMessage());
       }
     }
-    if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_CARE_REPORT_ALLERGIES_SECTION_ENTRIES_OPTIONAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientCareReport))
+    if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_CARE_REPORT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientCareReport))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.INFO,
+             EmspcrValidator.DIAGNOSTIC_SOURCE,
+             EmspcrValidator.PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_SECTION,
+             EmspcrPlugin.INSTANCE.getString("PatientCareReportSection"),
+             new Object [] { patientCareReport }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validatePatientCareReportEMSCurrentMedication(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Care Report EMS Current Medication</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validatePatientCareReportEMSCurrentMedication(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_PATIENT_CARE_REPORT_EMS_CURRENT_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSCurrentMedicationSection))";
+
+  /**
+   * The cached OCL invariant for the '{@link #validatePatientCareReportEMSCurrentMedication(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Care Report EMS Current Medication</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validatePatientCareReportEMSCurrentMedication(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_PATIENT_CARE_REPORT_EMS_CURRENT_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+  
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSCurrentMedicationSection))
+   * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validatePatientCareReportEMSCurrentMedication(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_PATIENT_CARE_REPORT_EMS_CURRENT_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT);
+      try
+      {
+        VALIDATE_PATIENT_CARE_REPORT_EMS_CURRENT_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_CARE_REPORT_EMS_CURRENT_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_CARE_REPORT_EMS_CURRENT_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientCareReport))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             EmspcrValidator.DIAGNOSTIC_SOURCE,
+             EmspcrValidator.PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_EMS_CURRENT_MEDICATION,
+             EmspcrPlugin.INSTANCE.getString("PatientCareReportEMSCurrentMedication"),
+             new Object [] { patientCareReport }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validatePatientCareReportEMSCardiacArrestEvent(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Care Report EMS Cardiac Arrest Event</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validatePatientCareReportEMSCardiacArrestEvent(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_PATIENT_CARE_REPORT_EMS_CARDIAC_ARREST_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSCardiacArrestEventSection))";
+
+  /**
+   * The cached OCL invariant for the '{@link #validatePatientCareReportEMSCardiacArrestEvent(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Care Report EMS Cardiac Arrest Event</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validatePatientCareReportEMSCardiacArrestEvent(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_PATIENT_CARE_REPORT_EMS_CARDIAC_ARREST_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+  
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSCardiacArrestEventSection))
+   * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validatePatientCareReportEMSCardiacArrestEvent(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_PATIENT_CARE_REPORT_EMS_CARDIAC_ARREST_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT);
+      try
+      {
+        VALIDATE_PATIENT_CARE_REPORT_EMS_CARDIAC_ARREST_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_CARE_REPORT_EMS_CARDIAC_ARREST_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_CARE_REPORT_EMS_CARDIAC_ARREST_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientCareReport))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.INFO,
+             EmspcrValidator.DIAGNOSTIC_SOURCE,
+             EmspcrValidator.PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_EMS_CARDIAC_ARREST_EVENT,
+             EmspcrPlugin.INSTANCE.getString("PatientCareReportEMSCardiacArrestEvent"),
+             new Object [] { patientCareReport }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validatePatientCareReportEMSAdvanceDirectives(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Care Report EMS Advance Directives</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validatePatientCareReportEMSAdvanceDirectives(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_PATIENT_CARE_REPORT_EMS_ADVANCE_DIRECTIVES__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSAdvanceDirectivesSection))";
+
+  /**
+   * The cached OCL invariant for the '{@link #validatePatientCareReportEMSAdvanceDirectives(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Care Report EMS Advance Directives</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validatePatientCareReportEMSAdvanceDirectives(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_PATIENT_CARE_REPORT_EMS_ADVANCE_DIRECTIVES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+  
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSAdvanceDirectivesSection))
+   * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validatePatientCareReportEMSAdvanceDirectives(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_PATIENT_CARE_REPORT_EMS_ADVANCE_DIRECTIVES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT);
+      try
+      {
+        VALIDATE_PATIENT_CARE_REPORT_EMS_ADVANCE_DIRECTIVES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_CARE_REPORT_EMS_ADVANCE_DIRECTIVES__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_CARE_REPORT_EMS_ADVANCE_DIRECTIVES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientCareReport))
     {
       if (diagnostics != null)
       {
@@ -719,111 +1044,550 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
           (new BasicDiagnostic
             (Diagnostic.WARNING,
              EmspcrValidator.DIAGNOSTIC_SOURCE,
-             EmspcrValidator.PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_ALLERGIES_SECTION_ENTRIES_OPTIONAL,
-             EmspcrPlugin.INSTANCE.getString("PatientCareReportAllergiesSectionEntriesOptional"),
+             EmspcrValidator.PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_EMS_ADVANCE_DIRECTIVES,
+             EmspcrPlugin.INSTANCE.getString("PatientCareReportEMSAdvanceDirectives"),
              new Object [] { patientCareReport }));
       }
+       
       return false;
     }
     return true;
   }
 
   /**
-   * The cached OCL expression body for the '{@link #getAdvanceDirectivesSectionEntriesOptional(PatientCareReport) <em>Get Advance Directives Section Entries Optional</em>}' operation.
+   * The cached OCL expression body for the '{@link #validatePatientCareReportEMSAllergiesAndAdverseReactionsSection(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Care Report EMS Allergies And Adverse Reactions Section</em>}' operation.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getAdvanceDirectivesSectionEntriesOptional(PatientCareReport)
+   * @see #validatePatientCareReportEMSAllergiesAndAdverseReactionsSection(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-  protected static final String GET_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AdvanceDirectivesSectionEntriesOptional))->asSequence()->first().oclAsType(consol::AdvanceDirectivesSectionEntriesOptional)";
+  protected static final String VALIDATE_PATIENT_CARE_REPORT_EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSAllergiesAndAdverseReactionsSection))";
 
   /**
-   * The cached OCL query for the '{@link #getAdvanceDirectivesSectionEntriesOptional(PatientCareReport) <em>Get Advance Directives Section Entries Optional</em>}' query operation.
+   * The cached OCL invariant for the '{@link #validatePatientCareReportEMSAllergiesAndAdverseReactionsSection(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Care Report EMS Allergies And Adverse Reactions Section</em>}' invariant operation.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getAdvanceDirectivesSectionEntriesOptional(PatientCareReport)
+   * @see #validatePatientCareReportEMSAllergiesAndAdverseReactionsSection(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-  protected static OCLExpression<EClassifier> GET_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL__EOCL_QRY;
+  
+  protected static Constraint VALIDATE_PATIENT_CARE_REPORT_EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+  
 
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AdvanceDirectivesSectionEntriesOptional))->asSequence()->first().oclAsType(consol::AdvanceDirectivesSectionEntriesOptional)
+   * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSAllergiesAndAdverseReactionsSection))
    * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
    * @generated
    */
   
-  public static  AdvanceDirectivesSectionEntriesOptional getAdvanceDirectivesSectionEntriesOptional(PatientCareReport patientCareReport)
+  public static  boolean validatePatientCareReportEMSAllergiesAndAdverseReactionsSection(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    if (GET_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL__EOCL_QRY == null)
-    {
+  	  
+    if (VALIDATE_PATIENT_CARE_REPORT_EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(170));
+      helper.setContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT);
       try
       {
-        GET_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL__EOCL_QRY = helper.createQuery(GET_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL__EOCL_EXP);
+        VALIDATE_PATIENT_CARE_REPORT_EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_CARE_REPORT_EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
       }
       catch (ParserException pe)
       {
         throw new UnsupportedOperationException(pe.getLocalizedMessage());
       }
     }
-    OCL.Query query = EOCL_ENV.createQuery(GET_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL__EOCL_QRY);
-    return (AdvanceDirectivesSectionEntriesOptional) query.evaluate(patientCareReport);
+    if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_CARE_REPORT_EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientCareReport))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             EmspcrValidator.DIAGNOSTIC_SOURCE,
+             EmspcrValidator.PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION,
+             EmspcrPlugin.INSTANCE.getString("PatientCareReportEMSAllergiesAndAdverseReactionsSection"),
+             new Object [] { patientCareReport }));
+      }
+       
+      return false;
+    }
+    return true;
   }
 
   /**
-   * The cached OCL expression body for the '{@link #getAllergiesSectionEntriesOptional(PatientCareReport) <em>Get Allergies Section Entries Optional</em>}' operation.
+   * The cached OCL expression body for the '{@link #validatePatientCareReportEMSPastMedicalHistory(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Care Report EMS Past Medical History</em>}' operation.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getAllergiesSectionEntriesOptional(PatientCareReport)
+   * @see #validatePatientCareReportEMSPastMedicalHistory(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-  protected static final String GET_ALLERGIES_SECTION_ENTRIES_OPTIONAL__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AllergiesSectionEntriesOptional))->asSequence()->first().oclAsType(consol::AllergiesSectionEntriesOptional)";
+  protected static final String VALIDATE_PATIENT_CARE_REPORT_EMS_PAST_MEDICAL_HISTORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSPastMedicalHistory))";
 
   /**
-   * The cached OCL query for the '{@link #getAllergiesSectionEntriesOptional(PatientCareReport) <em>Get Allergies Section Entries Optional</em>}' query operation.
+   * The cached OCL invariant for the '{@link #validatePatientCareReportEMSPastMedicalHistory(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Care Report EMS Past Medical History</em>}' invariant operation.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getAllergiesSectionEntriesOptional(PatientCareReport)
+   * @see #validatePatientCareReportEMSPastMedicalHistory(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-  protected static OCLExpression<EClassifier> GET_ALLERGIES_SECTION_ENTRIES_OPTIONAL__EOCL_QRY;
+  
+  protected static Constraint VALIDATE_PATIENT_CARE_REPORT_EMS_PAST_MEDICAL_HISTORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+  
 
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::AllergiesSectionEntriesOptional))->asSequence()->first().oclAsType(consol::AllergiesSectionEntriesOptional)
+   * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSPastMedicalHistory))
    * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
    * @generated
    */
   
-  public static  AllergiesSectionEntriesOptional getAllergiesSectionEntriesOptional(PatientCareReport patientCareReport)
+  public static  boolean validatePatientCareReportEMSPastMedicalHistory(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    if (GET_ALLERGIES_SECTION_ENTRIES_OPTIONAL__EOCL_QRY == null)
-    {
+  	  
+    if (VALIDATE_PATIENT_CARE_REPORT_EMS_PAST_MEDICAL_HISTORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(171));
+      helper.setContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT);
       try
       {
-        GET_ALLERGIES_SECTION_ENTRIES_OPTIONAL__EOCL_QRY = helper.createQuery(GET_ALLERGIES_SECTION_ENTRIES_OPTIONAL__EOCL_EXP);
+        VALIDATE_PATIENT_CARE_REPORT_EMS_PAST_MEDICAL_HISTORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_CARE_REPORT_EMS_PAST_MEDICAL_HISTORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
       }
       catch (ParserException pe)
       {
         throw new UnsupportedOperationException(pe.getLocalizedMessage());
       }
     }
-    OCL.Query query = EOCL_ENV.createQuery(GET_ALLERGIES_SECTION_ENTRIES_OPTIONAL__EOCL_QRY);
-    return (AllergiesSectionEntriesOptional) query.evaluate(patientCareReport);
+    if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_CARE_REPORT_EMS_PAST_MEDICAL_HISTORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientCareReport))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             EmspcrValidator.DIAGNOSTIC_SOURCE,
+             EmspcrValidator.PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_EMS_PAST_MEDICAL_HISTORY,
+             EmspcrPlugin.INSTANCE.getString("PatientCareReportEMSPastMedicalHistory"),
+             new Object [] { patientCareReport }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validatePatientCareReportEMSSocialHistory(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Care Report EMS Social History</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validatePatientCareReportEMSSocialHistory(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_PATIENT_CARE_REPORT_EMS_SOCIAL_HISTORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSSocialHistory))";
+
+  /**
+   * The cached OCL invariant for the '{@link #validatePatientCareReportEMSSocialHistory(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Care Report EMS Social History</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validatePatientCareReportEMSSocialHistory(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_PATIENT_CARE_REPORT_EMS_SOCIAL_HISTORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+  
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSSocialHistory))
+   * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validatePatientCareReportEMSSocialHistory(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_PATIENT_CARE_REPORT_EMS_SOCIAL_HISTORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT);
+      try
+      {
+        VALIDATE_PATIENT_CARE_REPORT_EMS_SOCIAL_HISTORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_CARE_REPORT_EMS_SOCIAL_HISTORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_CARE_REPORT_EMS_SOCIAL_HISTORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientCareReport))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             EmspcrValidator.DIAGNOSTIC_SOURCE,
+             EmspcrValidator.PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_EMS_SOCIAL_HISTORY,
+             EmspcrPlugin.INSTANCE.getString("PatientCareReportEMSSocialHistory"),
+             new Object [] { patientCareReport }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validatePatientCareReportEMSPhysicalAssessmentSection(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Care Report EMS Physical Assessment Section</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validatePatientCareReportEMSPhysicalAssessmentSection(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_PATIENT_CARE_REPORT_EMS_PHYSICAL_ASSESSMENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSPhysicalAssessmentSection))";
+
+  /**
+   * The cached OCL invariant for the '{@link #validatePatientCareReportEMSPhysicalAssessmentSection(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Care Report EMS Physical Assessment Section</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validatePatientCareReportEMSPhysicalAssessmentSection(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_PATIENT_CARE_REPORT_EMS_PHYSICAL_ASSESSMENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+  
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSPhysicalAssessmentSection))
+   * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validatePatientCareReportEMSPhysicalAssessmentSection(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_PATIENT_CARE_REPORT_EMS_PHYSICAL_ASSESSMENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT);
+      try
+      {
+        VALIDATE_PATIENT_CARE_REPORT_EMS_PHYSICAL_ASSESSMENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_CARE_REPORT_EMS_PHYSICAL_ASSESSMENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_CARE_REPORT_EMS_PHYSICAL_ASSESSMENT_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientCareReport))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             EmspcrValidator.DIAGNOSTIC_SOURCE,
+             EmspcrValidator.PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_EMS_PHYSICAL_ASSESSMENT_SECTION,
+             EmspcrPlugin.INSTANCE.getString("PatientCareReportEMSPhysicalAssessmentSection"),
+             new Object [] { patientCareReport }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validatePatientCareReportEMSMedicationsAdministeredSection(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Care Report EMS Medications Administered Section</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validatePatientCareReportEMSMedicationsAdministeredSection(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_PATIENT_CARE_REPORT_EMS_MEDICATIONS_ADMINISTERED_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSMedicationsAdministeredSection))";
+
+  /**
+   * The cached OCL invariant for the '{@link #validatePatientCareReportEMSMedicationsAdministeredSection(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Care Report EMS Medications Administered Section</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validatePatientCareReportEMSMedicationsAdministeredSection(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_PATIENT_CARE_REPORT_EMS_MEDICATIONS_ADMINISTERED_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+  
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSMedicationsAdministeredSection))
+   * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validatePatientCareReportEMSMedicationsAdministeredSection(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_PATIENT_CARE_REPORT_EMS_MEDICATIONS_ADMINISTERED_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT);
+      try
+      {
+        VALIDATE_PATIENT_CARE_REPORT_EMS_MEDICATIONS_ADMINISTERED_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_CARE_REPORT_EMS_MEDICATIONS_ADMINISTERED_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_CARE_REPORT_EMS_MEDICATIONS_ADMINISTERED_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientCareReport))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.INFO,
+             EmspcrValidator.DIAGNOSTIC_SOURCE,
+             EmspcrValidator.PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_EMS_MEDICATIONS_ADMINISTERED_SECTION,
+             EmspcrPlugin.INSTANCE.getString("PatientCareReportEMSMedicationsAdministeredSection"),
+             new Object [] { patientCareReport }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validatePatientCareReportEMSProceduresPerformedSection(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Care Report EMS Procedures Performed Section</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validatePatientCareReportEMSProceduresPerformedSection(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_PATIENT_CARE_REPORT_EMS_PROCEDURES_PERFORMED_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSProceduresPerformedSection))";
+
+  /**
+   * The cached OCL invariant for the '{@link #validatePatientCareReportEMSProceduresPerformedSection(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Care Report EMS Procedures Performed Section</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validatePatientCareReportEMSProceduresPerformedSection(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_PATIENT_CARE_REPORT_EMS_PROCEDURES_PERFORMED_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+  
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSProceduresPerformedSection))
+   * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validatePatientCareReportEMSProceduresPerformedSection(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_PATIENT_CARE_REPORT_EMS_PROCEDURES_PERFORMED_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT);
+      try
+      {
+        VALIDATE_PATIENT_CARE_REPORT_EMS_PROCEDURES_PERFORMED_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_CARE_REPORT_EMS_PROCEDURES_PERFORMED_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_CARE_REPORT_EMS_PROCEDURES_PERFORMED_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientCareReport))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             EmspcrValidator.DIAGNOSTIC_SOURCE,
+             EmspcrValidator.PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_EMS_PROCEDURES_PERFORMED_SECTION,
+             EmspcrPlugin.INSTANCE.getString("PatientCareReportEMSProceduresPerformedSection"),
+             new Object [] { patientCareReport }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validatePatientCareReportEMSPatientCareNarrative(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Care Report EMS Patient Care Narrative</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validatePatientCareReportEMSPatientCareNarrative(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_PATIENT_CARE_REPORT_EMS_PATIENT_CARE_NARRATIVE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSPatientCareNarrative))";
+
+  /**
+   * The cached OCL invariant for the '{@link #validatePatientCareReportEMSPatientCareNarrative(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Care Report EMS Patient Care Narrative</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validatePatientCareReportEMSPatientCareNarrative(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_PATIENT_CARE_REPORT_EMS_PATIENT_CARE_NARRATIVE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+  
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSPatientCareNarrative))
+   * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validatePatientCareReportEMSPatientCareNarrative(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_PATIENT_CARE_REPORT_EMS_PATIENT_CARE_NARRATIVE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT);
+      try
+      {
+        VALIDATE_PATIENT_CARE_REPORT_EMS_PATIENT_CARE_NARRATIVE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_CARE_REPORT_EMS_PATIENT_CARE_NARRATIVE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_CARE_REPORT_EMS_PATIENT_CARE_NARRATIVE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientCareReport))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             EmspcrValidator.DIAGNOSTIC_SOURCE,
+             EmspcrValidator.PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_EMS_PATIENT_CARE_NARRATIVE,
+             EmspcrPlugin.INSTANCE.getString("PatientCareReportEMSPatientCareNarrative"),
+             new Object [] { patientCareReport }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #validatePatientCareReportEMSSceneSection(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Care Report EMS Scene Section</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validatePatientCareReportEMSSceneSection(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  protected static final String VALIDATE_PATIENT_CARE_REPORT_EMS_SCENE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSSceneSection))";
+
+  /**
+   * The cached OCL invariant for the '{@link #validatePatientCareReportEMSSceneSection(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Patient Care Report EMS Scene Section</em>}' invariant operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #validatePatientCareReportEMSSceneSection(PatientCareReport, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
+  
+  protected static Constraint VALIDATE_PATIENT_CARE_REPORT_EMS_SCENE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+  
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSSceneSection))
+   * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  boolean validatePatientCareReportEMSSceneSection(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+  	  
+    if (VALIDATE_PATIENT_CARE_REPORT_EMS_SCENE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT);
+      try
+      {
+        VALIDATE_PATIENT_CARE_REPORT_EMS_SCENE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PATIENT_CARE_REPORT_EMS_SCENE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_PATIENT_CARE_REPORT_EMS_SCENE_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(patientCareReport))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             EmspcrValidator.DIAGNOSTIC_SOURCE,
+             EmspcrValidator.PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_EMS_SCENE_SECTION,
+             EmspcrPlugin.INSTANCE.getString("PatientCareReportEMSSceneSection"),
+             new Object [] { patientCareReport }));
+      }
+       
+      return false;
+    }
+    return true;
   }
 
   /**
@@ -834,7 +1598,7 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
    * @generated
    * @ordered
    */
-  protected static final String GET_BILLING__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSBilling))->asSequence()->first().oclAsType(emspcr::EMSBilling)";
+  protected static final String GET_BILLING__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSBillingSection))->asSequence()->any(true).oclAsType(emspcr::EMSBillingSection)";
 
   /**
    * The cached OCL query for the '{@link #getBilling(PatientCareReport) <em>Get Billing</em>}' query operation.
@@ -850,18 +1614,18 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSBilling))->asSequence()->first().oclAsType(emspcr::EMSBilling)
+   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSBillingSection))->asSequence()->any(true).oclAsType(emspcr::EMSBillingSection)
    * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
    * <!-- end-model-doc -->
    * @generated
    */
   
-  public static  EMSBilling getBilling(PatientCareReport patientCareReport)
+  public static  EMSBillingSection getBilling(PatientCareReport patientCareReport)
   {
     if (GET_BILLING__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(172));
+      helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(182));
       try
       {
         GET_BILLING__EOCL_QRY = helper.createQuery(GET_BILLING__EOCL_EXP);
@@ -872,7 +1636,7 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
       }
     }
     OCL.Query query = EOCL_ENV.createQuery(GET_BILLING__EOCL_QRY);
-    return (EMSBilling) query.evaluate(patientCareReport);
+    return (EMSBillingSection) query.evaluate(patientCareReport);
   }
 
   /**
@@ -883,7 +1647,7 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
    * @generated
    * @ordered
    */
-  protected static final String GET_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSInjuryIncidentDescription))->asSequence()->first().oclAsType(emspcr::EMSInjuryIncidentDescription)";
+  protected static final String GET_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSInjuryIncidentDescriptionSection))->asSequence()->any(true).oclAsType(emspcr::EMSInjuryIncidentDescriptionSection)";
 
   /**
    * The cached OCL query for the '{@link #getSection(PatientCareReport) <em>Get Section</em>}' query operation.
@@ -899,18 +1663,18 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSInjuryIncidentDescription))->asSequence()->first().oclAsType(emspcr::EMSInjuryIncidentDescription)
+   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSInjuryIncidentDescriptionSection))->asSequence()->any(true).oclAsType(emspcr::EMSInjuryIncidentDescriptionSection)
    * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
    * <!-- end-model-doc -->
    * @generated
    */
   
-  public static  EMSInjuryIncidentDescription getSection(PatientCareReport patientCareReport)
+  public static  EMSInjuryIncidentDescriptionSection getSection(PatientCareReport patientCareReport)
   {
     if (GET_SECTION__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(173));
+      helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(183));
       try
       {
         GET_SECTION__EOCL_QRY = helper.createQuery(GET_SECTION__EOCL_EXP);
@@ -921,7 +1685,546 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
       }
     }
     OCL.Query query = EOCL_ENV.createQuery(GET_SECTION__EOCL_QRY);
-    return (EMSInjuryIncidentDescription) query.evaluate(patientCareReport);
+    return (EMSInjuryIncidentDescriptionSection) query.evaluate(patientCareReport);
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #getEMSCurrentMedication(PatientCareReport) <em>Get EMS Current Medication</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getEMSCurrentMedication(PatientCareReport)
+   * @generated
+   * @ordered
+   */
+  protected static final String GET_EMS_CURRENT_MEDICATION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSCurrentMedicationSection))->asSequence()->any(true).oclAsType(emspcr::EMSCurrentMedicationSection)";
+
+  /**
+   * The cached OCL query for the '{@link #getEMSCurrentMedication(PatientCareReport) <em>Get EMS Current Medication</em>}' query operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getEMSCurrentMedication(PatientCareReport)
+   * @generated
+   * @ordered
+   */
+  protected static OCLExpression<EClassifier> GET_EMS_CURRENT_MEDICATION__EOCL_QRY;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSCurrentMedicationSection))->asSequence()->any(true).oclAsType(emspcr::EMSCurrentMedicationSection)
+   * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  EMSCurrentMedicationSection getEMSCurrentMedication(PatientCareReport patientCareReport)
+  {
+    if (GET_EMS_CURRENT_MEDICATION__EOCL_QRY == null)
+    {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(184));
+      try
+      {
+        GET_EMS_CURRENT_MEDICATION__EOCL_QRY = helper.createQuery(GET_EMS_CURRENT_MEDICATION__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    OCL.Query query = EOCL_ENV.createQuery(GET_EMS_CURRENT_MEDICATION__EOCL_QRY);
+    return (EMSCurrentMedicationSection) query.evaluate(patientCareReport);
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #getEMSCardiacArrestEvent(PatientCareReport) <em>Get EMS Cardiac Arrest Event</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getEMSCardiacArrestEvent(PatientCareReport)
+   * @generated
+   * @ordered
+   */
+  protected static final String GET_EMS_CARDIAC_ARREST_EVENT__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSCardiacArrestEventSection))->asSequence()->any(true).oclAsType(emspcr::EMSCardiacArrestEventSection)";
+
+  /**
+   * The cached OCL query for the '{@link #getEMSCardiacArrestEvent(PatientCareReport) <em>Get EMS Cardiac Arrest Event</em>}' query operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getEMSCardiacArrestEvent(PatientCareReport)
+   * @generated
+   * @ordered
+   */
+  protected static OCLExpression<EClassifier> GET_EMS_CARDIAC_ARREST_EVENT__EOCL_QRY;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSCardiacArrestEventSection))->asSequence()->any(true).oclAsType(emspcr::EMSCardiacArrestEventSection)
+   * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  EMSCardiacArrestEventSection getEMSCardiacArrestEvent(PatientCareReport patientCareReport)
+  {
+    if (GET_EMS_CARDIAC_ARREST_EVENT__EOCL_QRY == null)
+    {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(185));
+      try
+      {
+        GET_EMS_CARDIAC_ARREST_EVENT__EOCL_QRY = helper.createQuery(GET_EMS_CARDIAC_ARREST_EVENT__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    OCL.Query query = EOCL_ENV.createQuery(GET_EMS_CARDIAC_ARREST_EVENT__EOCL_QRY);
+    return (EMSCardiacArrestEventSection) query.evaluate(patientCareReport);
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #getEMSAdvanceDirectives(PatientCareReport) <em>Get EMS Advance Directives</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getEMSAdvanceDirectives(PatientCareReport)
+   * @generated
+   * @ordered
+   */
+  protected static final String GET_EMS_ADVANCE_DIRECTIVES__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSAdvanceDirectivesSection))->asSequence()->any(true).oclAsType(emspcr::EMSAdvanceDirectivesSection)";
+
+  /**
+   * The cached OCL query for the '{@link #getEMSAdvanceDirectives(PatientCareReport) <em>Get EMS Advance Directives</em>}' query operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getEMSAdvanceDirectives(PatientCareReport)
+   * @generated
+   * @ordered
+   */
+  protected static OCLExpression<EClassifier> GET_EMS_ADVANCE_DIRECTIVES__EOCL_QRY;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSAdvanceDirectivesSection))->asSequence()->any(true).oclAsType(emspcr::EMSAdvanceDirectivesSection)
+   * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  EMSAdvanceDirectivesSection getEMSAdvanceDirectives(PatientCareReport patientCareReport)
+  {
+    if (GET_EMS_ADVANCE_DIRECTIVES__EOCL_QRY == null)
+    {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(186));
+      try
+      {
+        GET_EMS_ADVANCE_DIRECTIVES__EOCL_QRY = helper.createQuery(GET_EMS_ADVANCE_DIRECTIVES__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    OCL.Query query = EOCL_ENV.createQuery(GET_EMS_ADVANCE_DIRECTIVES__EOCL_QRY);
+    return (EMSAdvanceDirectivesSection) query.evaluate(patientCareReport);
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #getEMSAllergiesAndAdverseReactionsSection(PatientCareReport) <em>Get EMS Allergies And Adverse Reactions Section</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getEMSAllergiesAndAdverseReactionsSection(PatientCareReport)
+   * @generated
+   * @ordered
+   */
+  protected static final String GET_EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSAllergiesAndAdverseReactionsSection))->asSequence()->any(true).oclAsType(emspcr::EMSAllergiesAndAdverseReactionsSection)";
+
+  /**
+   * The cached OCL query for the '{@link #getEMSAllergiesAndAdverseReactionsSection(PatientCareReport) <em>Get EMS Allergies And Adverse Reactions Section</em>}' query operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getEMSAllergiesAndAdverseReactionsSection(PatientCareReport)
+   * @generated
+   * @ordered
+   */
+  protected static OCLExpression<EClassifier> GET_EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION__EOCL_QRY;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSAllergiesAndAdverseReactionsSection))->asSequence()->any(true).oclAsType(emspcr::EMSAllergiesAndAdverseReactionsSection)
+   * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  EMSAllergiesAndAdverseReactionsSection getEMSAllergiesAndAdverseReactionsSection(PatientCareReport patientCareReport)
+  {
+    if (GET_EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION__EOCL_QRY == null)
+    {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(187));
+      try
+      {
+        GET_EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION__EOCL_QRY = helper.createQuery(GET_EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    OCL.Query query = EOCL_ENV.createQuery(GET_EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION__EOCL_QRY);
+    return (EMSAllergiesAndAdverseReactionsSection) query.evaluate(patientCareReport);
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #getEMSPastMedicalHistory(PatientCareReport) <em>Get EMS Past Medical History</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getEMSPastMedicalHistory(PatientCareReport)
+   * @generated
+   * @ordered
+   */
+  protected static final String GET_EMS_PAST_MEDICAL_HISTORY__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSPastMedicalHistory))->asSequence()->any(true).oclAsType(emspcr::EMSPastMedicalHistory)";
+
+  /**
+   * The cached OCL query for the '{@link #getEMSPastMedicalHistory(PatientCareReport) <em>Get EMS Past Medical History</em>}' query operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getEMSPastMedicalHistory(PatientCareReport)
+   * @generated
+   * @ordered
+   */
+  protected static OCLExpression<EClassifier> GET_EMS_PAST_MEDICAL_HISTORY__EOCL_QRY;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSPastMedicalHistory))->asSequence()->any(true).oclAsType(emspcr::EMSPastMedicalHistory)
+   * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  EMSPastMedicalHistory getEMSPastMedicalHistory(PatientCareReport patientCareReport)
+  {
+    if (GET_EMS_PAST_MEDICAL_HISTORY__EOCL_QRY == null)
+    {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(188));
+      try
+      {
+        GET_EMS_PAST_MEDICAL_HISTORY__EOCL_QRY = helper.createQuery(GET_EMS_PAST_MEDICAL_HISTORY__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    OCL.Query query = EOCL_ENV.createQuery(GET_EMS_PAST_MEDICAL_HISTORY__EOCL_QRY);
+    return (EMSPastMedicalHistory) query.evaluate(patientCareReport);
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #getEMSSocialHistory(PatientCareReport) <em>Get EMS Social History</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getEMSSocialHistory(PatientCareReport)
+   * @generated
+   * @ordered
+   */
+  protected static final String GET_EMS_SOCIAL_HISTORY__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSSocialHistory))->asSequence()->any(true).oclAsType(emspcr::EMSSocialHistory)";
+
+  /**
+   * The cached OCL query for the '{@link #getEMSSocialHistory(PatientCareReport) <em>Get EMS Social History</em>}' query operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getEMSSocialHistory(PatientCareReport)
+   * @generated
+   * @ordered
+   */
+  protected static OCLExpression<EClassifier> GET_EMS_SOCIAL_HISTORY__EOCL_QRY;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSSocialHistory))->asSequence()->any(true).oclAsType(emspcr::EMSSocialHistory)
+   * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  EMSSocialHistory getEMSSocialHistory(PatientCareReport patientCareReport)
+  {
+    if (GET_EMS_SOCIAL_HISTORY__EOCL_QRY == null)
+    {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(189));
+      try
+      {
+        GET_EMS_SOCIAL_HISTORY__EOCL_QRY = helper.createQuery(GET_EMS_SOCIAL_HISTORY__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    OCL.Query query = EOCL_ENV.createQuery(GET_EMS_SOCIAL_HISTORY__EOCL_QRY);
+    return (EMSSocialHistory) query.evaluate(patientCareReport);
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #getEMSPhysicalAssessmentSection(PatientCareReport) <em>Get EMS Physical Assessment Section</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getEMSPhysicalAssessmentSection(PatientCareReport)
+   * @generated
+   * @ordered
+   */
+  protected static final String GET_EMS_PHYSICAL_ASSESSMENT_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSPhysicalAssessmentSection))->asSequence()->any(true).oclAsType(emspcr::EMSPhysicalAssessmentSection)";
+
+  /**
+   * The cached OCL query for the '{@link #getEMSPhysicalAssessmentSection(PatientCareReport) <em>Get EMS Physical Assessment Section</em>}' query operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getEMSPhysicalAssessmentSection(PatientCareReport)
+   * @generated
+   * @ordered
+   */
+  protected static OCLExpression<EClassifier> GET_EMS_PHYSICAL_ASSESSMENT_SECTION__EOCL_QRY;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSPhysicalAssessmentSection))->asSequence()->any(true).oclAsType(emspcr::EMSPhysicalAssessmentSection)
+   * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  EMSPhysicalAssessmentSection getEMSPhysicalAssessmentSection(PatientCareReport patientCareReport)
+  {
+    if (GET_EMS_PHYSICAL_ASSESSMENT_SECTION__EOCL_QRY == null)
+    {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(190));
+      try
+      {
+        GET_EMS_PHYSICAL_ASSESSMENT_SECTION__EOCL_QRY = helper.createQuery(GET_EMS_PHYSICAL_ASSESSMENT_SECTION__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    OCL.Query query = EOCL_ENV.createQuery(GET_EMS_PHYSICAL_ASSESSMENT_SECTION__EOCL_QRY);
+    return (EMSPhysicalAssessmentSection) query.evaluate(patientCareReport);
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #getEMSMedicationsAdministeredSection(PatientCareReport) <em>Get EMS Medications Administered Section</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getEMSMedicationsAdministeredSection(PatientCareReport)
+   * @generated
+   * @ordered
+   */
+  protected static final String GET_EMS_MEDICATIONS_ADMINISTERED_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSMedicationsAdministeredSection))->asSequence()->any(true).oclAsType(emspcr::EMSMedicationsAdministeredSection)";
+
+  /**
+   * The cached OCL query for the '{@link #getEMSMedicationsAdministeredSection(PatientCareReport) <em>Get EMS Medications Administered Section</em>}' query operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getEMSMedicationsAdministeredSection(PatientCareReport)
+   * @generated
+   * @ordered
+   */
+  protected static OCLExpression<EClassifier> GET_EMS_MEDICATIONS_ADMINISTERED_SECTION__EOCL_QRY;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSMedicationsAdministeredSection))->asSequence()->any(true).oclAsType(emspcr::EMSMedicationsAdministeredSection)
+   * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  EMSMedicationsAdministeredSection getEMSMedicationsAdministeredSection(PatientCareReport patientCareReport)
+  {
+    if (GET_EMS_MEDICATIONS_ADMINISTERED_SECTION__EOCL_QRY == null)
+    {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(191));
+      try
+      {
+        GET_EMS_MEDICATIONS_ADMINISTERED_SECTION__EOCL_QRY = helper.createQuery(GET_EMS_MEDICATIONS_ADMINISTERED_SECTION__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    OCL.Query query = EOCL_ENV.createQuery(GET_EMS_MEDICATIONS_ADMINISTERED_SECTION__EOCL_QRY);
+    return (EMSMedicationsAdministeredSection) query.evaluate(patientCareReport);
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #getEMSProceduresPerformedSection(PatientCareReport) <em>Get EMS Procedures Performed Section</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getEMSProceduresPerformedSection(PatientCareReport)
+   * @generated
+   * @ordered
+   */
+  protected static final String GET_EMS_PROCEDURES_PERFORMED_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSProceduresPerformedSection))->asSequence()->any(true).oclAsType(emspcr::EMSProceduresPerformedSection)";
+
+  /**
+   * The cached OCL query for the '{@link #getEMSProceduresPerformedSection(PatientCareReport) <em>Get EMS Procedures Performed Section</em>}' query operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getEMSProceduresPerformedSection(PatientCareReport)
+   * @generated
+   * @ordered
+   */
+  protected static OCLExpression<EClassifier> GET_EMS_PROCEDURES_PERFORMED_SECTION__EOCL_QRY;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSProceduresPerformedSection))->asSequence()->any(true).oclAsType(emspcr::EMSProceduresPerformedSection)
+   * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  EMSProceduresPerformedSection getEMSProceduresPerformedSection(PatientCareReport patientCareReport)
+  {
+    if (GET_EMS_PROCEDURES_PERFORMED_SECTION__EOCL_QRY == null)
+    {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(192));
+      try
+      {
+        GET_EMS_PROCEDURES_PERFORMED_SECTION__EOCL_QRY = helper.createQuery(GET_EMS_PROCEDURES_PERFORMED_SECTION__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    OCL.Query query = EOCL_ENV.createQuery(GET_EMS_PROCEDURES_PERFORMED_SECTION__EOCL_QRY);
+    return (EMSProceduresPerformedSection) query.evaluate(patientCareReport);
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #getEMSPatientCareNarrative(PatientCareReport) <em>Get EMS Patient Care Narrative</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getEMSPatientCareNarrative(PatientCareReport)
+   * @generated
+   * @ordered
+   */
+  protected static final String GET_EMS_PATIENT_CARE_NARRATIVE__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSPatientCareNarrative))->asSequence()->any(true).oclAsType(emspcr::EMSPatientCareNarrative)";
+
+  /**
+   * The cached OCL query for the '{@link #getEMSPatientCareNarrative(PatientCareReport) <em>Get EMS Patient Care Narrative</em>}' query operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getEMSPatientCareNarrative(PatientCareReport)
+   * @generated
+   * @ordered
+   */
+  protected static OCLExpression<EClassifier> GET_EMS_PATIENT_CARE_NARRATIVE__EOCL_QRY;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSPatientCareNarrative))->asSequence()->any(true).oclAsType(emspcr::EMSPatientCareNarrative)
+   * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  EMSPatientCareNarrative getEMSPatientCareNarrative(PatientCareReport patientCareReport)
+  {
+    if (GET_EMS_PATIENT_CARE_NARRATIVE__EOCL_QRY == null)
+    {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(193));
+      try
+      {
+        GET_EMS_PATIENT_CARE_NARRATIVE__EOCL_QRY = helper.createQuery(GET_EMS_PATIENT_CARE_NARRATIVE__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    OCL.Query query = EOCL_ENV.createQuery(GET_EMS_PATIENT_CARE_NARRATIVE__EOCL_QRY);
+    return (EMSPatientCareNarrative) query.evaluate(patientCareReport);
+  }
+
+  /**
+   * The cached OCL expression body for the '{@link #getEMSSceneSection(PatientCareReport) <em>Get EMS Scene Section</em>}' operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getEMSSceneSection(PatientCareReport)
+   * @generated
+   * @ordered
+   */
+  protected static final String GET_EMS_SCENE_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSSceneSection))->asSequence()->any(true).oclAsType(emspcr::EMSSceneSection)";
+
+  /**
+   * The cached OCL query for the '{@link #getEMSSceneSection(PatientCareReport) <em>Get EMS Scene Section</em>}' query operation.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getEMSSceneSection(PatientCareReport)
+   * @generated
+   * @ordered
+   */
+  protected static OCLExpression<EClassifier> GET_EMS_SCENE_SECTION__EOCL_QRY;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(emspcr::EMSSceneSection))->asSequence()->any(true).oclAsType(emspcr::EMSSceneSection)
+   * @param patientCareReport The receiving '<em><b>Patient Care Report</b></em>' model object.
+   * <!-- end-model-doc -->
+   * @generated
+   */
+  
+  public static  EMSSceneSection getEMSSceneSection(PatientCareReport patientCareReport)
+  {
+    if (GET_EMS_SCENE_SECTION__EOCL_QRY == null)
+    {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setOperationContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT, EmspcrPackage.Literals.PATIENT_CARE_REPORT.getEAllOperations().get(194));
+      try
+      {
+        GET_EMS_SCENE_SECTION__EOCL_QRY = helper.createQuery(GET_EMS_SCENE_SECTION__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    OCL.Query query = EOCL_ENV.createQuery(GET_EMS_SCENE_SECTION__EOCL_QRY);
+    return (EMSSceneSection) query.evaluate(patientCareReport);
   }
 
   /**
@@ -960,6 +2263,7 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
   
   public static  boolean validateGeneralHeaderConstraintsTemplateId(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
     if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT);
@@ -984,6 +2288,7 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
              org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "GeneralHeaderConstraintsTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(patientCareReport, context) }),
              new Object [] { patientCareReport }));
       }
+       
       return false;
     }
     return true;
@@ -1029,6 +2334,13 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
   
   public static  boolean validateGeneralHeaderConstraintsCode(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
+  	  
+    Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.emspcr.PatientCareReportCode");
+    if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(patientCareReport)) {
+      // I have a free pass to short-circuit
+      return true;
+    }
+  	  
     if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(EmspcrPackage.Literals.PATIENT_CARE_REPORT);
@@ -1053,6 +2365,7 @@ public class PatientCareReportOperations extends GeneralHeaderConstraintsOperati
              EmspcrPlugin.INSTANCE.getString("GeneralHeaderConstraintsCode"),
              new Object [] { patientCareReport }));
       }
+       
       return false;
     }
     return true;
