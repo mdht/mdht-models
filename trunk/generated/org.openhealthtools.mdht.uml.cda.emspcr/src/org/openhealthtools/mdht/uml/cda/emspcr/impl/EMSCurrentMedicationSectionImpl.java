@@ -1,13 +1,9 @@
-/*******************************************************************************
- * Copyright (c) 2012 Sean Muir and others.
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
+/**
+ * <copyright>
+ * </copyright>
  *
- * Contributors:
- *     Sean Muir (JKM Software) - initial API and implementation
- *******************************************************************************/
+ * $Id$
+ */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
 import java.util.Map;
@@ -21,8 +17,6 @@ import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 
 import org.openhealthtools.mdht.uml.cda.emspcr.operations.EMSCurrentMedicationSectionOperations;
 
-import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
-
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -34,7 +28,7 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  *
  * @generated
  */
-public class EMSCurrentMedicationSectionImpl extends SectionImpl implements EMSCurrentMedicationSection
+public class EMSCurrentMedicationSectionImpl extends DerivedCDASectionImpl implements EMSCurrentMedicationSection
 {
   /**
    * <!-- begin-user-doc -->
@@ -62,9 +56,49 @@ public class EMSCurrentMedicationSectionImpl extends SectionImpl implements EMSC
    * <!-- end-user-doc -->
    * @generated
    */
+  public boolean validateEMSCurrentMedicationSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return EMSCurrentMedicationSectionOperations.validateEMSCurrentMedicationSectionTemplateId(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public boolean validateEMSCurrentMedicationSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return EMSCurrentMedicationSectionOperations.validateEMSCurrentMedicationSectionCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateEMSCurrentMedicationSectionEntry1(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return EMSCurrentMedicationSectionOperations.validateEMSCurrentMedicationSectionEntry1(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateEMSCurrentMedicationSectionEntry2(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return EMSCurrentMedicationSectionOperations.validateEMSCurrentMedicationSectionEntry2(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateEMSCurrentMedicationSectionEntry3(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return EMSCurrentMedicationSectionOperations.validateEMSCurrentMedicationSectionEntry3(this, diagnostics, context);
   }
 
   /**

@@ -1,13 +1,9 @@
-/*******************************************************************************
- * Copyright (c) 2012 Sean Muir and others.
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
+/**
+ * <copyright>
+ * </copyright>
  *
- * Contributors:
- *     Sean Muir (JKM Software) - initial API and implementation
- *******************************************************************************/
+ * $Id$
+ */
 package org.openhealthtools.mdht.uml.cda.emspcr.util;
 
 import org.eclipse.emf.common.notify.Adapter;
@@ -18,13 +14,15 @@ import org.eclipse.emf.common.notify.impl.AdapterFactoryImpl;
 import org.eclipse.emf.ecore.EObject;
 
 import org.openhealthtools.mdht.uml.cda.ClinicalDocument;
-
+import org.openhealthtools.mdht.uml.cda.Entry;
 import org.openhealthtools.mdht.uml.cda.Section;
+
 import org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraints;
 
 import org.openhealthtools.mdht.uml.cda.emspcr.*;
 
 import org.openhealthtools.mdht.uml.hl7.rim.Act;
+import org.openhealthtools.mdht.uml.hl7.rim.ActRelationship;
 import org.openhealthtools.mdht.uml.hl7.rim.InfrastructureRoot;
 
 /**
@@ -96,34 +94,119 @@ public class EmspcrAdapterFactory extends AdapterFactoryImpl
         return createPatientCareReportAdapter();
       }
       @Override
-      public Adapter caseEMSBilling(EMSBilling object)
+      public Adapter caseEMSBillingSection(EMSBillingSection object)
       {
-        return createEMSBillingAdapter();
+        return createEMSBillingSectionAdapter();
       }
       @Override
-      public Adapter caseEMSInjuryIncidentDescription(EMSInjuryIncidentDescription object)
+      public Adapter caseDerivedCDASection(DerivedCDASection object)
       {
-        return createEMSInjuryIncidentDescriptionAdapter();
+        return createDerivedCDASectionAdapter();
       }
       @Override
-      public Adapter caseEMSCardiacArrestEvent(EMSCardiacArrestEvent object)
+      public Adapter caseDerivedEntry(DerivedEntry object)
       {
-        return createEMSCardiacArrestEventAdapter();
+        return createDerivedEntryAdapter();
       }
       @Override
-      public Adapter caseEMSAdvanceDirectives(EMSAdvanceDirectives object)
+      public Adapter caseEMSInjuryIncidentDescriptionSection(EMSInjuryIncidentDescriptionSection object)
       {
-        return createEMSAdvanceDirectivesAdapter();
-      }
-      @Override
-      public Adapter caseEMSAllergiesAndAdverseReactions(EMSAllergiesAndAdverseReactions object)
-      {
-        return createEMSAllergiesAndAdverseReactionsAdapter();
+        return createEMSInjuryIncidentDescriptionSectionAdapter();
       }
       @Override
       public Adapter caseEMSCurrentMedicationSection(EMSCurrentMedicationSection object)
       {
         return createEMSCurrentMedicationSectionAdapter();
+      }
+      @Override
+      public Adapter caseEMSCardiacArrestEventSection(EMSCardiacArrestEventSection object)
+      {
+        return createEMSCardiacArrestEventSectionAdapter();
+      }
+      @Override
+      public Adapter caseEMSAdvanceDirectivesSection(EMSAdvanceDirectivesSection object)
+      {
+        return createEMSAdvanceDirectivesSectionAdapter();
+      }
+      @Override
+      public Adapter caseEMSAllergiesAndAdverseReactionsSection(EMSAllergiesAndAdverseReactionsSection object)
+      {
+        return createEMSAllergiesAndAdverseReactionsSectionAdapter();
+      }
+      @Override
+      public Adapter caseEMSPastMedicalHistory(EMSPastMedicalHistory object)
+      {
+        return createEMSPastMedicalHistoryAdapter();
+      }
+      @Override
+      public Adapter caseEMSSocialHistory(EMSSocialHistory object)
+      {
+        return createEMSSocialHistoryAdapter();
+      }
+      @Override
+      public Adapter caseEMSPhysicalAssessmentSection(EMSPhysicalAssessmentSection object)
+      {
+        return createEMSPhysicalAssessmentSectionAdapter();
+      }
+      @Override
+      public Adapter caseEMSMedicationsAdministeredSection(EMSMedicationsAdministeredSection object)
+      {
+        return createEMSMedicationsAdministeredSectionAdapter();
+      }
+      @Override
+      public Adapter caseEMSProceduresPerformedSection(EMSProceduresPerformedSection object)
+      {
+        return createEMSProceduresPerformedSectionAdapter();
+      }
+      @Override
+      public Adapter caseEMSPatientCareNarrative(EMSPatientCareNarrative object)
+      {
+        return createEMSPatientCareNarrativeAdapter();
+      }
+      @Override
+      public Adapter caseEMSSceneSection(EMSSceneSection object)
+      {
+        return createEMSSceneSectionAdapter();
+      }
+      @Override
+      public Adapter caseEMSVitalSignsSection(EMSVitalSignsSection object)
+      {
+        return createEMSVitalSignsSectionAdapter();
+      }
+      @Override
+      public Adapter caseEMSDispatch(EMSDispatch object)
+      {
+        return createEMSDispatchAdapter();
+      }
+      @Override
+      public Adapter caseEMSResponse(EMSResponse object)
+      {
+        return createEMSResponseAdapter();
+      }
+      @Override
+      public Adapter caseEMSDispositionSection(EMSDispositionSection object)
+      {
+        return createEMSDispositionSectionAdapter();
+      }
+      @Override
+      public Adapter caseEMSPersonnelAdverseEvent(EMSPersonnelAdverseEvent object)
+      {
+        return createEMSPersonnelAdverseEventAdapter();
+      }
+      @Override
+      public Adapter caseEMSProtocolSection(EMSProtocolSection object)
+      {
+        return createEMSProtocolSectionAdapter();
+      }
+      @Override
+      public Adapter caseEMSSituationSection(EMSSituationSection object)
+      {
+        return createEMSSituationSectionAdapter();
+      }
+      @Override
+      public Adapter caseEMSTimesSection(EMSTimesSection object)
+      {
+        return createEMSTimesSectionAdapter();
       }
       @Override
       public Adapter caseInfrastructureRoot(InfrastructureRoot object)
@@ -149,6 +232,16 @@ public class EmspcrAdapterFactory extends AdapterFactoryImpl
       public Adapter caseSection(Section object)
       {
         return createSectionAdapter();
+      }
+      @Override
+      public Adapter caseActRelationship(ActRelationship object)
+      {
+        return createActRelationshipAdapter();
+      }
+      @Override
+      public Adapter caseEntry(Entry object)
+      {
+        return createEntryAdapter();
       }
       @Override
       public Adapter defaultCase(EObject object)
@@ -188,76 +281,61 @@ public class EmspcrAdapterFactory extends AdapterFactoryImpl
   }
 
   /**
-   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.emspcr.EMSBilling <em>EMS Billing</em>}'.
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.emspcr.EMSBillingSection <em>EMS Billing Section</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
    * @return the new adapter.
-   * @see org.openhealthtools.mdht.uml.cda.emspcr.EMSBilling
+   * @see org.openhealthtools.mdht.uml.cda.emspcr.EMSBillingSection
    * @generated
    */
-  public Adapter createEMSBillingAdapter()
+  public Adapter createEMSBillingSectionAdapter()
   {
     return null;
   }
 
   /**
-   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.emspcr.EMSInjuryIncidentDescription <em>EMS Injury Incident Description</em>}'.
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.emspcr.DerivedCDASection <em>Derived CDA Section</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
    * @return the new adapter.
-   * @see org.openhealthtools.mdht.uml.cda.emspcr.EMSInjuryIncidentDescription
+   * @see org.openhealthtools.mdht.uml.cda.emspcr.DerivedCDASection
    * @generated
    */
-  public Adapter createEMSInjuryIncidentDescriptionAdapter()
+  public Adapter createDerivedCDASectionAdapter()
   {
     return null;
   }
 
   /**
-   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.emspcr.EMSCardiacArrestEvent <em>EMS Cardiac Arrest Event</em>}'.
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.emspcr.DerivedEntry <em>Derived Entry</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
    * @return the new adapter.
-   * @see org.openhealthtools.mdht.uml.cda.emspcr.EMSCardiacArrestEvent
+   * @see org.openhealthtools.mdht.uml.cda.emspcr.DerivedEntry
    * @generated
    */
-  public Adapter createEMSCardiacArrestEventAdapter()
+  public Adapter createDerivedEntryAdapter()
   {
     return null;
   }
 
   /**
-   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.emspcr.EMSAdvanceDirectives <em>EMS Advance Directives</em>}'.
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.emspcr.EMSInjuryIncidentDescriptionSection <em>EMS Injury Incident Description Section</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
    * @return the new adapter.
-   * @see org.openhealthtools.mdht.uml.cda.emspcr.EMSAdvanceDirectives
+   * @see org.openhealthtools.mdht.uml.cda.emspcr.EMSInjuryIncidentDescriptionSection
    * @generated
    */
-  public Adapter createEMSAdvanceDirectivesAdapter()
-  {
-    return null;
-  }
-
-  /**
-   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.emspcr.EMSAllergiesAndAdverseReactions <em>EMS Allergies And Adverse Reactions</em>}'.
-   * <!-- begin-user-doc -->
-   * This default implementation returns null so that we can easily ignore cases;
-   * it's useful to ignore a case when inheritance will catch all the cases anyway.
-   * <!-- end-user-doc -->
-   * @return the new adapter.
-   * @see org.openhealthtools.mdht.uml.cda.emspcr.EMSAllergiesAndAdverseReactions
-   * @generated
-   */
-  public Adapter createEMSAllergiesAndAdverseReactionsAdapter()
+  public Adapter createEMSInjuryIncidentDescriptionSectionAdapter()
   {
     return null;
   }
@@ -273,6 +351,276 @@ public class EmspcrAdapterFactory extends AdapterFactoryImpl
    * @generated
    */
   public Adapter createEMSCurrentMedicationSectionAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.emspcr.EMSCardiacArrestEventSection <em>EMS Cardiac Arrest Event Section</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.cda.emspcr.EMSCardiacArrestEventSection
+   * @generated
+   */
+  public Adapter createEMSCardiacArrestEventSectionAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.emspcr.EMSAdvanceDirectivesSection <em>EMS Advance Directives Section</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.cda.emspcr.EMSAdvanceDirectivesSection
+   * @generated
+   */
+  public Adapter createEMSAdvanceDirectivesSectionAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.emspcr.EMSAllergiesAndAdverseReactionsSection <em>EMS Allergies And Adverse Reactions Section</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.cda.emspcr.EMSAllergiesAndAdverseReactionsSection
+   * @generated
+   */
+  public Adapter createEMSAllergiesAndAdverseReactionsSectionAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.emspcr.EMSPastMedicalHistory <em>EMS Past Medical History</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.cda.emspcr.EMSPastMedicalHistory
+   * @generated
+   */
+  public Adapter createEMSPastMedicalHistoryAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.emspcr.EMSSocialHistory <em>EMS Social History</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.cda.emspcr.EMSSocialHistory
+   * @generated
+   */
+  public Adapter createEMSSocialHistoryAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.emspcr.EMSPhysicalAssessmentSection <em>EMS Physical Assessment Section</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.cda.emspcr.EMSPhysicalAssessmentSection
+   * @generated
+   */
+  public Adapter createEMSPhysicalAssessmentSectionAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.emspcr.EMSMedicationsAdministeredSection <em>EMS Medications Administered Section</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.cda.emspcr.EMSMedicationsAdministeredSection
+   * @generated
+   */
+  public Adapter createEMSMedicationsAdministeredSectionAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.emspcr.EMSProceduresPerformedSection <em>EMS Procedures Performed Section</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.cda.emspcr.EMSProceduresPerformedSection
+   * @generated
+   */
+  public Adapter createEMSProceduresPerformedSectionAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.emspcr.EMSPatientCareNarrative <em>EMS Patient Care Narrative</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.cda.emspcr.EMSPatientCareNarrative
+   * @generated
+   */
+  public Adapter createEMSPatientCareNarrativeAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.emspcr.EMSSceneSection <em>EMS Scene Section</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.cda.emspcr.EMSSceneSection
+   * @generated
+   */
+  public Adapter createEMSSceneSectionAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.emspcr.EMSVitalSignsSection <em>EMS Vital Signs Section</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.cda.emspcr.EMSVitalSignsSection
+   * @generated
+   */
+  public Adapter createEMSVitalSignsSectionAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.emspcr.EMSDispatch <em>EMS Dispatch</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.cda.emspcr.EMSDispatch
+   * @generated
+   */
+  public Adapter createEMSDispatchAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.emspcr.EMSResponse <em>EMS Response</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.cda.emspcr.EMSResponse
+   * @generated
+   */
+  public Adapter createEMSResponseAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.emspcr.EMSDispositionSection <em>EMS Disposition Section</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.cda.emspcr.EMSDispositionSection
+   * @generated
+   */
+  public Adapter createEMSDispositionSectionAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.emspcr.EMSPersonnelAdverseEvent <em>EMS Personnel Adverse Event</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.cda.emspcr.EMSPersonnelAdverseEvent
+   * @generated
+   */
+  public Adapter createEMSPersonnelAdverseEventAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.emspcr.EMSProtocolSection <em>EMS Protocol Section</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.cda.emspcr.EMSProtocolSection
+   * @generated
+   */
+  public Adapter createEMSProtocolSectionAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.emspcr.EMSSituationSection <em>EMS Situation Section</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.cda.emspcr.EMSSituationSection
+   * @generated
+   */
+  public Adapter createEMSSituationSectionAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.emspcr.EMSTimesSection <em>EMS Times Section</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.cda.emspcr.EMSTimesSection
+   * @generated
+   */
+  public Adapter createEMSTimesSectionAdapter()
   {
     return null;
   }
@@ -348,6 +696,36 @@ public class EmspcrAdapterFactory extends AdapterFactoryImpl
    * @generated
    */
   public Adapter createSectionAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.hl7.rim.ActRelationship <em>Act Relationship</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.hl7.rim.ActRelationship
+   * @generated
+   */
+  public Adapter createActRelationshipAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.Entry <em>Entry</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see org.openhealthtools.mdht.uml.cda.Entry
+   * @generated
+   */
+  public Adapter createEntryAdapter()
   {
     return null;
   }
