@@ -5,15 +5,17 @@
 			<topic id="nullandnegativevalues">
 		<title>Null and Negative Values</title>
 		<body>
-			<p>We use RIM attributes for observations that may require explicit negation or null values. If I have
-			checked for signs of drug use, I can assert that a particular sign was found (with a proper value), that
-			whether there were signs is unknown (with a null) or that there were no signs (with negation).</p>
+			<p>We use RIM attributes for observations that may require explicit negation or null values. A
+			provider who has checked for signs of drug use can assert that a particular sign was
+			found (with a proper value), that whether there were signs is unknown (with a null) or
+			that there were no signs (with negation).</p>
 
-			<p>However, in collections of acts other than observations, epistemological attributes may have uncertain
-			semantics. If a procedure is negated, it may not be clear whether the clinician is asserting that the
-			procedure was not performed during the encounter or that it has never been performed on the patient.
-			Similarly, you may document a history of specific disorders, but including a single, general but negated
-			disorder implies assumptions about the scope of the negated disorder that are not explicitly modeled.</p>
+			<p>However, in collections of acts other than observations, epistemological attributes may have
+			uncertain semantics. If a procedure is negated, it may not be clear whether the provider
+			is asserting that the procedure was not performed during the encounter or that it has
+			never been performed on the patient. Similarly, one may document a history of specific
+			disorders, but including a single, general but negated disorder implies assumptions
+			about the scope of the negated disorder that are not explicitly modeled.</p>
 
 			<p>As a result, we manage negation and uncertainty for procedures with explicit observations. Using an
 			observation allows the clinician to assert a history of zero disorders, or a lack of knowledge about
@@ -25,9 +27,10 @@
 			<p>As a result, the medical history sections include, in addition to problems, procedures, medications, and
 			allergies, observations regarding the existence of problems, procedures, medications, and allergies.</p>
 			
-			<p>In the interest of conformance with other guides, we also represent these null and negative acts with
-			null and negated acts, in line with Consolidation Project recommendations. These notional classes are 
-			annotated to ensure it's clear that they restate the explicit observations, and are not distinct facts.</p>
+			<p>In the interest of conformance with other guides, we also represent these null and negative
+			acts with null and negated acts, in line with Consolidation Project recommendations.
+			These notional classes are annotated to ensure that it is clear that they restate the
+			explicit observations, and are not distinct facts.</p>
 		</body>
 	
 	

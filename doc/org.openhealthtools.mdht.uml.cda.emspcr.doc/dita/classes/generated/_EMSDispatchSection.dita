@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="classId" xml:lang="en-us">
-<title>EMS Dispatch - conformance rules</title>
+<title>EMS Dispatch Section - conformance rules</title>
 <shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.17.3.10.1.2</tt>]</shortdesc>
 <prolog id="prolog">
 <metadata><category>Section</category></metadata>
@@ -20,7 +20,7 @@
 </li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>eMSEmergencyMedicalDispatchRelationship</b></tt> <ol><li> This eMSEmergencyMedicalDispatchRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67488-7" </tt><i>EMDPerformed</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/EMDPerformed.dita">EMDPerformed</xref> 2.16.840.1.113883.17.3.5.48</tt><b> STATIC</b></li></ol> </li></ol>
 </li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>eMSComplaintReportedByDispatchRelationship</b></tt> <ol><li> This eMSComplaintReportedByDispatchRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt></li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/Complaint.dita">Complaint</xref> 2.16.840.1.113883.17.3.5.49</tt><b> STATIC</b></li></ol> </li></ol>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>eMSComplaintReportedByDispatchRelationship</b></tt> <ol><li> This eMSComplaintReportedByDispatchRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67570?2" </tt><i>Complaint reported by dispatch</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/Complaint.dita">Complaint</xref> 2.16.840.1.113883.17.3.5.49</tt><b> STATIC</b></li></ol> </li></ol>
 </li>
 </ol>
 <ol id="aggregate">
@@ -31,15 +31,18 @@
 </li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
 </li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt> <ol><li> Such entrys <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="DRIV" </tt></li></ol> 
+<ol>
+<li>Contains exactly one [1..1] <xref href="../DerivedCDASectionEntry.dita">Derived CDA Section Entry</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.24</tt>)</li></ol></li>
 <li><b>MAY</b> contain zero or one [0..1] <tt><b>eMSEmergencyMedicalDispatchRelationship</b></tt> <ol><li> This eMSEmergencyMedicalDispatchRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67488-7" </tt><i>EMDPerformed</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/EMDPerformed.dita">EMDPerformed</xref> 2.16.840.1.113883.17.3.5.48</tt><b> STATIC</b></li></ol> </li></ol>
 </li>
-<li><b>MAY</b> contain zero or one [0..1] <tt><b>eMSComplaintReportedByDispatchRelationship</b></tt> <ol><li> This eMSComplaintReportedByDispatchRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt></li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/Complaint.dita">Complaint</xref> 2.16.840.1.113883.17.3.5.49</tt><b> STATIC</b></li></ol> </li></ol>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>eMSComplaintReportedByDispatchRelationship</b></tt> <ol><li> This eMSComplaintReportedByDispatchRelationship <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67570?2" </tt><i>Complaint reported by dispatch</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/Complaint.dita">Complaint</xref> 2.16.840.1.113883.17.3.5.49</tt><b> STATIC</b></li></ol> </li></ol>
 </li>
 </ol>
 <codeblock id="example"><![CDATA[]]></codeblock>
 <section id="changes">
 </section>
-<p><ph id="classformalname">EMS Dispatch</ph></p>
+<p><ph id="classformalname">EMS Dispatch Section</ph></p>
 <p id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.17.3.10.1.2</tt>]</p>
 </body>
 </topic>

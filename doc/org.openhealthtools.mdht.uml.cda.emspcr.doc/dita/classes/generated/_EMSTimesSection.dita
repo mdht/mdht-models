@@ -18,6 +18,22 @@
 </li>
 <li><b>SHOULD</b> contain zero or one [0..1] <tt><b>title</b></tt> = "EMS Times"
 </li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entry</b></tt> <ol><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="69469-5" </tt><i>Call time</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)</li><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type TS</li></ol>
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entry</b></tt> <ol><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="69471-1" </tt><i>Unit notified time</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)</li><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type TS</li></ol>
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entry</b></tt> <ol><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="69472-9" </tt><i>Unit en route time</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)</li><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type TS</li></ol>
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entry</b></tt> <ol><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="69474-5" </tt><i>Unit at patient time</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)</li><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type TS</li></ol>
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entry</b></tt> <ol><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="69475-2" </tt><i>Unit left scene time</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)</li><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type TS</li></ol>
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entry</b></tt> <ol><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="69476-0" </tt><i>Patient arrived at destination time</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)</li><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type TS</li></ol>
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entry</b></tt> <ol><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="69477-8" </tt><i>Unit back in service time</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)</li><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type TS</li></ol>
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entry</b></tt> <ol><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="69470-3" </tt><i>Dispatch notified time</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)</li><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type TS</li></ol>
+</li>
 </ol>
 <ol id="aggregate">
 <li><b>SHALL</b> conform to <xref href="../DerivedCDASection.dita">Derived CDA Section</xref></li>
@@ -26,6 +42,25 @@
 <li><b>SHOULD</b> contain zero or one [0..1] <tt><b>title</b></tt> = "EMS Times"
 </li>
 <li><b>SHALL</b> contain zero or one [0..1] <tt><b>text</b></tt>
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt> <ol><li> Such entrys <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="DRIV" </tt></li></ol> 
+<ol>
+<li>Contains exactly one [1..1] <xref href="../DerivedCDASectionEntry.dita">Derived CDA Section Entry</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.24</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entry</b></tt> <ol><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="69469-5" </tt><i>Call time</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)</li><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type TS</li></ol>
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entry</b></tt> <ol><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="69471-1" </tt><i>Unit notified time</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)</li><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type TS</li></ol>
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entry</b></tt> <ol><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="69472-9" </tt><i>Unit en route time</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)</li><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type TS</li></ol>
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entry</b></tt> <ol><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="69474-5" </tt><i>Unit at patient time</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)</li><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type TS</li></ol>
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entry</b></tt> <ol><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="69475-2" </tt><i>Unit left scene time</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)</li><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type TS</li></ol>
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entry</b></tt> <ol><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="69476-0" </tt><i>Patient arrived at destination time</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)</li><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type TS</li></ol>
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entry</b></tt> <ol><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="69477-8" </tt><i>Unit back in service time</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)</li><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type TS</li></ol>
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entry</b></tt> <ol><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="69470-3" </tt><i>Dispatch notified time</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)</li><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type TS</li></ol>
 </li>
 </ol>
 <codeblock id="example"><![CDATA[]]></codeblock>
