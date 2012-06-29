@@ -17,12 +17,37 @@
 </li>
 <li>Contains zero or one [0..1] <tt><b>title</b></tt>
 </li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> <ol><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67791-4" </tt><i>Currently on medication</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)</li><li> This entry Contains zero or more [0..*] <tt><b>value</b></tt> with data type BL<p><i>If EHistory.12 has the value "None Reported," the value is "False"
+If EHistory.12 has the value "Refused" or "Unable to Complete," the value is "NI"; the
+original value may be recorded in Observation.text.</i></p></li></ol>
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entry</b></tt> <ol><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="69749-0" </tt> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)</li><li> This entry Contains zero or more [0..*] <tt><b>value</b></tt> with data type BL<p><i>If EHistory.12 has the value "No anticoagulants," the value is False</i></p></li></ol>
+</li>
+<li>Contains at least one [1..*] <tt><b>entry</b></tt> <ol><li> Such entrys Contains zero or one [0..1] <tt><b>@negationInd</b></tt><p><i>If EHistory.12 has the value "None Reported," the value is "True"
+This negation of a notional class is parallel to the explicit question "patient on medication"</i></p></li><li> Such entrys Contains zero or one [0..1] <tt><b>@nullFlavor</b></tt><p><i>If EHistory.12 has the value "Refused" or "Unable to Complete," the value is "NI"; the
+original value may be recorded in SubstanceAdministration.text.
+This nulled notional class is parallel to the explicit question "patient on medication"</i></p></li><li> Such entrys Contains zero or one [0..1] <tt><b>doseQuantity</b></tt><p><i>NEMSIS Trace: EHistory.13, EHistory.14</i></p></li><li> Such entrys <b>SHALL</b> contain zero or one [0..1] <tt><b>routeCode</b></tt>, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/CurrentMedicationAdministrationRoute.dita">CurrentMedicationAdministrationRoute</xref> 2.16.840.1.113883.17.3.5.17</tt><b> STATIC</b><p><i>NEMSIS Trace: EMedication.15</i></p></li><li> Such entrys <b>SHALL</b> contain exactly one [1..1] <tt><b>eMSCurrentMedicationConsumable</b></tt> <ol><li> This eMSCurrentMedicationConsumable <b>SHALL</b> contain exactly one [1..1] <tt><b>realmCode</b></tt> <ol><li> This realmCode Contains exactly one [1..1] <tt><b>eMSCurrentMedicationDrug</b></tt> <ol><li> This eMSCurrentMedicationDrug <b>SHALL</b> contain zero or one [0..1] <tt><b>code</b></tt>, where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.88 RxNorm</tt>)</li></ol> </li></ol> </li></ol> </li></ol>
+</li>
 </ol>
 <ol id="aggregate">
 <li><b>SHALL</b> conform to <xref href="../DerivedCDASection.dita">Derived CDA Section</xref></li>
 <li><b>SHALL</b> contain zero or one [0..1] <tt><b>code</b></tt><tt><b>/@code</b>="67844-1" </tt><i>EMS Current Medications</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
 </li>
 <li>Contains zero or one [0..1] <tt><b>title</b></tt>
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt> <ol><li> Such entrys <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="DRIV" </tt></li></ol> 
+<ol>
+<li>Contains exactly one [1..1] <xref href="../DerivedCDASectionEntry.dita">Derived CDA Section Entry</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.24</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> <ol><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67791-4" </tt><i>Currently on medication</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)</li><li> This entry Contains zero or more [0..*] <tt><b>value</b></tt> with data type BL<p><i>If EHistory.12 has the value "None Reported," the value is "False"
+If EHistory.12 has the value "Refused" or "Unable to Complete," the value is "NI"; the
+original value may be recorded in Observation.text.</i></p></li></ol>
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entry</b></tt> <ol><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="69749-0" </tt> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)</li><li> This entry Contains zero or more [0..*] <tt><b>value</b></tt> with data type BL<p><i>If EHistory.12 has the value "No anticoagulants," the value is False</i></p></li></ol>
+</li>
+<li>Contains at least one [1..*] <tt><b>entry</b></tt> <ol><li> Such entrys Contains zero or one [0..1] <tt><b>@negationInd</b></tt><p><i>If EHistory.12 has the value "None Reported," the value is "True"
+This negation of a notional class is parallel to the explicit question "patient on medication"</i></p></li><li> Such entrys Contains zero or one [0..1] <tt><b>@nullFlavor</b></tt><p><i>If EHistory.12 has the value "Refused" or "Unable to Complete," the value is "NI"; the
+original value may be recorded in SubstanceAdministration.text.
+This nulled notional class is parallel to the explicit question "patient on medication"</i></p></li><li> Such entrys Contains zero or one [0..1] <tt><b>doseQuantity</b></tt><p><i>NEMSIS Trace: EHistory.13, EHistory.14</i></p></li><li> Such entrys <b>SHALL</b> contain zero or one [0..1] <tt><b>routeCode</b></tt>, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/CurrentMedicationAdministrationRoute.dita">CurrentMedicationAdministrationRoute</xref> 2.16.840.1.113883.17.3.5.17</tt><b> STATIC</b><p><i>NEMSIS Trace: EMedication.15</i></p></li><li> Such entrys <b>SHALL</b> contain exactly one [1..1] <tt><b>eMSCurrentMedicationConsumable</b></tt> <ol><li> This eMSCurrentMedicationConsumable <b>SHALL</b> contain exactly one [1..1] <tt><b>realmCode</b></tt> <ol><li> This realmCode Contains exactly one [1..1] <tt><b>eMSCurrentMedicationDrug</b></tt> <ol><li> This eMSCurrentMedicationDrug <b>SHALL</b> contain zero or one [0..1] <tt><b>code</b></tt>, where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.88 RxNorm</tt>)</li></ol> </li></ol> </li></ol> </li></ol>
 </li>
 </ol>
 <codeblock id="example"><![CDATA[]]></codeblock>

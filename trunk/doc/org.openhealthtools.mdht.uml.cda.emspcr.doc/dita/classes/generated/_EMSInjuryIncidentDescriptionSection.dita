@@ -45,6 +45,9 @@
 </li>
 <li>Contains zero or one [0..1] <tt><b>text</b></tt>
 </li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt> <ol><li> Such entrys <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="DRIV" </tt></li></ol> 
+<ol>
+<li>Contains exactly one [1..1] <xref href="../DerivedCDASectionEntry.dita">Derived CDA Section Entry</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.24</tt>)</li></ol></li>
 <li>Contains exactly one [1..1] <tt><b>entry</b></tt> <ol><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="69543-7" </tt><i>Injury Cause</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)</li><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD, where the @code <b>SHALL</b> be selected from<p><i>Add binding to ICD-10 chapter XX</i></p></li></ol>
 </li>
 <li>Contains zero or one [0..1] <tt><b>entry</b></tt> <ol><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67494-5" </tt><i>Injury Mechanism</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)</li><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/MechanismOfInjury.dita">MechanismOfInjury</xref> 2.16.840.1.113883.17.3.5.1</tt><b> STATIC</b></li></ol>

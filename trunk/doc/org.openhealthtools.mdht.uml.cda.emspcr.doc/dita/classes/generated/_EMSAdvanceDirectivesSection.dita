@@ -16,12 +16,19 @@
 </li>
 <li><b>SHOULD</b> contain zero or one [0..1] <tt><b>title</b></tt> = "EMS Advance Directives"
 </li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> <ol><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67516-5" </tt><i>Advanced directive</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)</li><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/AdvanceDirectiveType.dita">AdvanceDirectiveType</xref> 2.16.840.1.113883.17.3.5.63</tt><b> STATIC</b></li></ol>
+</li>
 </ol>
 <ol id="aggregate">
 <li><b>SHALL</b> conform to <xref href="../DerivedCDASection.dita">Derived CDA Section</xref></li>
 <li><b>SHALL</b> contain zero or one [0..1] <tt><b>code</b></tt><tt><b>/@code</b>="67840-9" </tt><i>EMS Advance Directives</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
 </li>
 <li><b>SHOULD</b> contain zero or one [0..1] <tt><b>title</b></tt> = "EMS Advance Directives"
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt> <ol><li> Such entrys <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="DRIV" </tt></li></ol> 
+<ol>
+<li>Contains exactly one [1..1] <xref href="../DerivedCDASectionEntry.dita">Derived CDA Section Entry</xref> (templateId: <tt>2.16.840.1.113883.17.3.10.1.24</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> <ol><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67516-5" </tt><i>Advanced directive</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)</li><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/AdvanceDirectiveType.dita">AdvanceDirectiveType</xref> 2.16.840.1.113883.17.3.5.63</tt><b> STATIC</b></li></ol>
 </li>
 </ol>
 <codeblock id="example"><![CDATA[]]></codeblock>

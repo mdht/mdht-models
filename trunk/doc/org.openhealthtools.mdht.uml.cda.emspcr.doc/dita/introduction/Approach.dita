@@ -28,6 +28,10 @@
 		May 2011 iteration is no longer correct.</p>
 		<p>Harmonization with Emergency Department specifications and <i>Data Elements for Emergency
 		Department Systems</i>(DEEDS) involved use of extant LOINC codes for shared elements.</p>
-		<p><b></b></p>
+		<p>This release is generated from UML models developed in the Open Health Tools (OHT)
+			Model-Driven Health Tools (MDHT) project. The data specifications have been formalized
+			into computational models expressed in UML. These models are used by automated tooling
+			to generate this publication, plus validation tools and Java libraries for
+			implementers.</p>
 		</body>
 </topic>
