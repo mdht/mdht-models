@@ -13,6 +13,33 @@
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
 <row><entry>Value Set</entry><entry>ProviderRole - 2.16.840.1.113883.17.3.5.46</entry></row>
+<row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
+</tbody></tgroup></table>
+<table><tgroup cols="4">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="2*"/>
+<colspec colname="col3" colwidth="1*"/>
+<colspec colname="col4" colwidth="3*"/>
+<thead><row>
+<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
+</row></thead><tbody>
+<row><entry>LA15276-1</entry><entry>LA15276-1</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18695-9</entry><entry>LA18695-9</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18696-7</entry><entry>LA18696-7</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18697-5</entry><entry>LA18697-5</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18698-3</entry><entry>LA18698-3</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18699-1</entry><entry>LA18699-1</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18700-7</entry><entry>LA18700-7</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18701-5</entry><entry>LA18701-5</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18702-3</entry><entry>LA18702-3</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18703-1</entry><entry>LA18703-1</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18704-9</entry><entry>LA18704-9</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18705-6</entry><entry>LA18705-6</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18706-4</entry><entry>LA18706-4</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18714-8</entry><entry>LA18714-8</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA4687-5</entry><entry>LA4687-5</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA9297-8</entry><entry>LA9297-8</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA9401-6</entry><entry>LA9401-6</entry><entry>LOINC</entry><entry></entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

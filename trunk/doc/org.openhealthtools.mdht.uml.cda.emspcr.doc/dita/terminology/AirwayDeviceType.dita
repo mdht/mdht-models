@@ -13,6 +13,24 @@
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
 <row><entry>Value Set</entry><entry>AirwayDeviceType - 2.16.840.1.113883.17.3.5.61</entry></row>
+<row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
+</tbody></tgroup></table>
+<table><tgroup cols="4">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="2*"/>
+<colspec colname="col3" colwidth="1*"/>
+<colspec colname="col4" colwidth="3*"/>
+<thead><row>
+<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
+</row></thead><tbody>
+<row><entry>LA18004-4</entry><entry>LA18004-4</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18657-9</entry><entry>LA18657-9</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18658-7</entry><entry>LA18658-7</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18659-5</entry><entry>LA18659-5</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18660-3</entry><entry>LA18660-3</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18661-1</entry><entry>LA18661-1</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18662-9</entry><entry>LA18662-9</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18663-7</entry><entry>LA18663-7</entry><entry>LOINC</entry><entry></entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

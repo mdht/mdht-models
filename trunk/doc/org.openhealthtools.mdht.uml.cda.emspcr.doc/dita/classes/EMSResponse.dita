@@ -5,6 +5,8 @@
 <shortdesc conref="generated/_EMSResponse.dita#classId/shortdesc"></shortdesc>
 <prolog conref="generated/_EMSResponse.dita#classId/prolog"></prolog>
 <body>
+<section conref="generated/_EMSResponse.dita#classId/knownSubclasses">
+</section>
 <!-- TODO: insert non-model class description markup here -->
 <section conref="generated/_EMSResponse.dita#classId/description">
 </section>
@@ -16,8 +18,6 @@
 <ol audience="developer" conref="generated/_EMSResponse.dita#classId/aggregate">
 <li></li>
 </ol>
-<section conref="generated/_EMSResponse.dita#classId/tableconformance">
-</section>
 <p> </p>
 <p><b>EMS Response example</b></p>
 <!-- TODO: insert custom instance example here -->

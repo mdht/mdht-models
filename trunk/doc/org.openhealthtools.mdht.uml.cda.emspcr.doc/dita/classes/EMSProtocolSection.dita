@@ -5,6 +5,8 @@
 <shortdesc conref="generated/_EMSProtocolSection.dita#classId/shortdesc"></shortdesc>
 <prolog conref="generated/_EMSProtocolSection.dita#classId/prolog"></prolog>
 <body>
+<section conref="generated/_EMSProtocolSection.dita#classId/knownSubclasses">
+</section>
 <!-- TODO: insert non-model class description markup here -->
 <section conref="generated/_EMSProtocolSection.dita#classId/description">
 </section>
@@ -16,8 +18,6 @@
 <ol audience="developer" conref="generated/_EMSProtocolSection.dita#classId/aggregate">
 <li></li>
 </ol>
-<section conref="generated/_EMSProtocolSection.dita#classId/tableconformance">
-</section>
 <p> </p>
 <p><b>EMS Protocol Section example</b></p>
 <!-- TODO: insert custom instance example here -->

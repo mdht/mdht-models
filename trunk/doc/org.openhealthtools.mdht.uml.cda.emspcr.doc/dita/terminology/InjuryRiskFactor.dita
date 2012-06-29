@@ -13,6 +13,24 @@
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
 <row><entry>Value Set</entry><entry>InjuryRiskFactor - 2.16.840.1.113883.17.3.5.4</entry></row>
+<row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
+</tbody></tgroup></table>
+<table><tgroup cols="4">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="2*"/>
+<colspec colname="col3" colwidth="1*"/>
+<colspec colname="col4" colwidth="3*"/>
+<thead><row>
+<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
+</row></thead><tbody>
+<row><entry>LA17348-6</entry><entry>LA17348-6</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17349-4</entry><entry>LA17349-4</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17350-2</entry><entry>LA17350-2</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17352-8</entry><entry>LA17352-8</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17353-6</entry><entry>LA17353-6</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17357-7</entry><entry>LA17357-7</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17360-1</entry><entry>LA17360-1</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18124-0</entry><entry>LA18124-0</entry><entry>LOINC</entry><entry></entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

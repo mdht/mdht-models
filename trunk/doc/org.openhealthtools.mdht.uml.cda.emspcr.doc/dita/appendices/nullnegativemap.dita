@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
-<topic id="topic_gjm_g2z_sg">
+<topic id="topic_id" xml:lang="en-us">
   <title>Nulls and Negative Action Values</title>
   <body>
     <p>This table maps NEMSIS null and negative action values to the appropriate values and

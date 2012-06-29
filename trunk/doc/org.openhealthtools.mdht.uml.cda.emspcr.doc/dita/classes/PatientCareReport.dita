@@ -5,6 +5,8 @@
 <shortdesc conref="generated/_PatientCareReport.dita#classId/shortdesc"></shortdesc>
 <prolog conref="generated/_PatientCareReport.dita#classId/prolog"></prolog>
 <body>
+<section conref="generated/_PatientCareReport.dita#classId/knownSubclasses">
+</section>
 <!-- TODO: insert non-model class description markup here -->
 <section conref="generated/_PatientCareReport.dita#classId/description">
 </section>
@@ -16,10 +18,6 @@
 <ol audience="developer" conref="generated/_PatientCareReport.dita#classId/aggregate">
 <li></li>
 </ol>
-<p> </p>
-<section conref="generated/_PatientCareReport.dita#classId/tableconformance">
-</section>
-<p> </p>
 <p> </p>
 <p><b>Patient Care Report example</b></p>
 <!-- TODO: insert custom instance example here -->

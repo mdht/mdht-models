@@ -13,6 +13,35 @@
 <colspec colname="col2" colwidth="4*"/>
 <tbody>
 <row><entry>Value Set</entry><entry>SceneDelayType - 2.16.840.1.113883.17.3.5.52</entry></row>
+<row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
+</tbody></tgroup></table>
+<table><tgroup cols="4">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="2*"/>
+<colspec colname="col3" colwidth="1*"/>
+<colspec colname="col4" colwidth="3*"/>
+<thead><row>
+<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
+</row></thead><tbody>
+<row><entry>LA17059-9</entry><entry>LA17059-9</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17585-3</entry><entry>LA17585-3</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17586-1</entry><entry>LA17586-1</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17587-9</entry><entry>LA17587-9</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17588-7</entry><entry>LA17588-7</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17590-3</entry><entry>LA17590-3</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17591-1</entry><entry>LA17591-1</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17592-9</entry><entry>LA17592-9</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17593-7</entry><entry>LA17593-7</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17594-5</entry><entry>LA17594-5</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17595-2</entry><entry>LA17595-2</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17596-0</entry><entry>LA17596-0</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17597-8</entry><entry>LA17597-8</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18081-2</entry><entry>LA18081-2</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18272-7</entry><entry>LA18272-7</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18273-5</entry><entry>LA18273-5</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18275-0</entry><entry>LA18275-0</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18276-8</entry><entry>LA18276-8</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA7540-3</entry><entry>LA7540-3</entry><entry>LOINC</entry><entry></entry></row>
 </tbody></tgroup></table>
 </section>
 </body>
