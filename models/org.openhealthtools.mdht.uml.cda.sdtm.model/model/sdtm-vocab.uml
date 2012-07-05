@@ -71,11 +71,6 @@
         <body>A list of the valid race codes to be used when categorizing study subjects.</body>
       </ownedComment>
     </packagedElement>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_NOWiYJX7EeGdw75A0B2buQ" name="Serious Event">
-      <ownedComment xmi:id="_UbA9YJX7EeGdw75A0B2buQ">
-        <body>A listing of different types of event that are considered to be serious.</body>
-      </ownedComment>
-    </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_X3OlkJX7EeGdw75A0B2buQ" name="Adverse Event Pattern Type">
       <ownedComment xmi:id="_fNwHMJX7EeGdw75A0B2buQ">
         <body>A list of different patterns that can be assigned to an adverse event.</body>
@@ -386,6 +381,57 @@
         <body>A list of categories used to organize drug accountability information.</body>
       </ownedComment>
     </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_8t5HgL_NEeGhFNoxTbVL8w" name="Observation Types">
+      <ownedComment xmi:id="_JTDRML_OEeGhFNoxTbVL8w">
+        <body>A list of the observation types that are used within the implementation guides for human clinical and non-human non-clinical studies.</body>
+      </ownedComment>
+      <ownedLiteral xmi:id="_KPmZAL_OEeGhFNoxTbVL8w" name="C49562"/>
+      <ownedLiteral xmi:id="_OQro0L_OEeGhFNoxTbVL8w" name="C83204"/>
+      <ownedLiteral xmi:id="_lDZysL_OEeGhFNoxTbVL8w" name="C83212"/>
+      <ownedLiteral xmi:id="_uwY1YL_OEeGhFNoxTbVL8w" name="C83198"/>
+      <ownedLiteral xmi:id="_iCxd0L_PEeGhFNoxTbVL8w" name="tbd"/>
+      <ownedLiteral xmi:id="_kxIhgL_PEeGhFNoxTbVL8w" name="tbd"/>
+      <ownedLiteral xmi:id="_m2SQIL_PEeGhFNoxTbVL8w" name="tbd"/>
+      <ownedLiteral xmi:id="_QQQB8L_QEeGhFNoxTbVL8w" name="tbd"/>
+      <ownedLiteral xmi:id="_UQSv8L_QEeGhFNoxTbVL8w" name="C25150"/>
+      <ownedLiteral xmi:id="_X3oqEL_QEeGhFNoxTbVL8w" name="tbd"/>
+      <ownedLiteral xmi:id="_gMYugL_QEeGhFNoxTbVL8w" name="C83450"/>
+      <ownedLiteral xmi:id="_rUay4L_QEeGhFNoxTbVL8w" name="C53252"/>
+      <ownedLiteral xmi:id="_zSHCML_QEeGhFNoxTbVL8w" name="tbd"/>
+      <ownedLiteral xmi:id="_2BOT0L_QEeGhFNoxTbVL8w" name="C83208"/>
+      <ownedLiteral xmi:id="_AkkWwL_REeGhFNoxTbVL8w" name="C49489"/>
+      <ownedLiteral xmi:id="_E-MpcL_REeGhFNoxTbVL8w" name="C83199"/>
+      <ownedLiteral xmi:id="_fSdncL_REeGhFNoxTbVL8w" name="tbd"/>
+      <ownedLiteral xmi:id="_i1MHUL_REeGhFNoxTbVL8w" name="C83218"/>
+      <ownedLiteral xmi:id="_Qgxp4L_TEeGhFNoxTbVL8w" name="C83232"/>
+      <ownedLiteral xmi:id="_XonPQL_TEeGhFNoxTbVL8w" name="tbd"/>
+      <ownedLiteral xmi:id="_fltosL_TEeGhFNoxTbVL8w" name="tbd"/>
+      <ownedLiteral xmi:id="_g_uIkL_TEeGhFNoxTbVL8w" name="tbd"/>
+      <ownedLiteral xmi:id="_jd3mAL_TEeGhFNoxTbVL8w" name="tbd"/>
+      <ownedLiteral xmi:id="_lHM7UL_TEeGhFNoxTbVL8w" name="tbd"/>
+      <ownedLiteral xmi:id="_T1sh0L_UEeGhFNoxTbVL8w" name="tbd"/>
+      <ownedLiteral xmi:id="_V1DKcL_UEeGhFNoxTbVL8w" name="tbd"/>
+      <ownedLiteral xmi:id="_1uTbAL_UEeGhFNoxTbVL8w" name="tbd"/>
+      <ownedLiteral xmi:id="_4FTuoL_UEeGhFNoxTbVL8w" name="tbd"/>
+      <ownedLiteral xmi:id="_8vvdcL_UEeGhFNoxTbVL8w" name="tbd"/>
+      <ownedLiteral xmi:id="_-X4f8L_UEeGhFNoxTbVL8w" name="tbd"/>
+      <ownedLiteral xmi:id="__srvsL_UEeGhFNoxTbVL8w" name="tbd"/>
+      <ownedLiteral xmi:id="_CQo6ML_VEeGhFNoxTbVL8w" name="tbd"/>
+      <ownedLiteral xmi:id="_ECmAAL_VEeGhFNoxTbVL8w" name="tbd"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_6APYoMRmEeGx2-Pp6bmfHQ" name="Serious Event Type">
+      <ownedComment xmi:id="_8gK-wMRmEeGx2-Pp6bmfHQ">
+        <body>A listing of different types of event that are considered to be serious.  The codes provided are strictly preliminary.</body>
+      </ownedComment>
+      <ownedLiteral xmi:id="_AY6x8MRnEeGx2-Pp6bmfHQ" name="CA"/>
+      <ownedLiteral xmi:id="_DR2G4MRnEeGx2-Pp6bmfHQ" name="BD"/>
+      <ownedLiteral xmi:id="_FkrsMMRnEeGx2-Pp6bmfHQ" name="DIS"/>
+      <ownedLiteral xmi:id="_J5jasMRnEeGx2-Pp6bmfHQ" name="DTH"/>
+      <ownedLiteral xmi:id="_L9qAcMRnEeGx2-Pp6bmfHQ" name="HOSP"/>
+      <ownedLiteral xmi:id="_OZbfUMRnEeGx2-Pp6bmfHQ" name="LT"/>
+      <ownedLiteral xmi:id="_RAzKMMRnEeGx2-Pp6bmfHQ" name="OD"/>
+      <ownedLiteral xmi:id="_SpY4oMRnEeGx2-Pp6bmfHQ" name="OTH"/>
+    </packagedElement>
     <profileApplication xmi:id="_BLRzsV10EeGh_7NFCJ3fGA">
       <eAnnotations xmi:id="_BLRzsl10EeGh_7NFCJ3fGA" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
@@ -407,7 +453,6 @@
   <term:CodeSystemVersion xmi:id="_1yqUAJX6EeGdw75A0B2buQ" base_Enumeration="_1yps8JX6EeGdw75A0B2buQ"/>
   <term:CodeSystemVersion xmi:id="_AVuqIJX7EeGdw75A0B2buQ" base_Enumeration="_AVuDEJX7EeGdw75A0B2buQ"/>
   <term:CodeSystemVersion xmi:id="_IiHcwJX7EeGdw75A0B2buQ" base_Enumeration="_IiG1sJX7EeGdw75A0B2buQ"/>
-  <term:CodeSystemVersion xmi:id="_NOXJcJX7EeGdw75A0B2buQ" base_Enumeration="_NOWiYJX7EeGdw75A0B2buQ"/>
   <term:CodeSystemVersion xmi:id="_X3PMoJX7EeGdw75A0B2buQ" base_Enumeration="_X3OlkJX7EeGdw75A0B2buQ"/>
   <term:CodeSystemVersion xmi:id="_fmTKEJX7EeGdw75A0B2buQ" base_Enumeration="_fmSjAJX7EeGdw75A0B2buQ"/>
   <term:CodeSystemVersion xmi:id="_YUD2EJX8EeGdw75A0B2buQ" base_Enumeration="_YUDPAJX8EeGdw75A0B2buQ"/>
@@ -470,4 +515,49 @@
   <term:CodeSystemVersion xmi:id="_7ok5UJYMEeGdw75A0B2buQ" base_Enumeration="_7okSQJYMEeGdw75A0B2buQ"/>
   <term:CodeSystemVersion xmi:id="_8iPFMJYMEeGdw75A0B2buQ" base_Enumeration="_8iN3EJYMEeGdw75A0B2buQ"/>
   <term:CodeSystemVersion xmi:id="_9TgxIJYMEeGdw75A0B2buQ" base_Enumeration="_9TfjAJYMEeGdw75A0B2buQ"/>
+  <term:ValueSetVersion xmi:id="_8wRGEL_NEeGhFNoxTbVL8w" base_Enumeration="_8t5HgL_NEeGhFNoxTbVL8w">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dWKSsaDqEd-dVeaMP0XXQw"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_KPmZAb_OEeGhFNoxTbVL8w" conceptName="Adverse Event" base_EnumerationLiteral="_KPmZAL_OEeGhFNoxTbVL8w"/>
+  <term:ValueSetCode xmi:id="_OQro0b_OEeGhFNoxTbVL8w" conceptName="Group Identifier" base_EnumerationLiteral="_OQro0L_OEeGhFNoxTbVL8w"/>
+  <term:ValueSetCode xmi:id="_lDZysb_OEeGhFNoxTbVL8w" conceptName="Adverse Event Sub-Category" base_EnumerationLiteral="_lDZysL_OEeGhFNoxTbVL8w"/>
+  <term:ValueSetCode xmi:id="_uwY1Yb_OEeGhFNoxTbVL8w" conceptName="Adverse Event Category" base_EnumerationLiteral="_uwY1YL_OEeGhFNoxTbVL8w"/>
+  <term:ValueSetCode xmi:id="_iCxd0b_PEeGhFNoxTbVL8w" conceptName="Body System or Organ Class" base_EnumerationLiteral="_iCxd0L_PEeGhFNoxTbVL8w"/>
+  <term:ValueSetCode xmi:id="_kxIhgb_PEeGhFNoxTbVL8w" conceptName="Event Severity" base_EnumerationLiteral="_kxIhgL_PEeGhFNoxTbVL8w"/>
+  <term:ValueSetCode xmi:id="_m2SQIb_PEeGhFNoxTbVL8w" conceptName="Position of Subject" base_EnumerationLiteral="_m2SQIL_PEeGhFNoxTbVL8w"/>
+  <term:ValueSetCode xmi:id="_QQQB8b_QEeGhFNoxTbVL8w" conceptName="Event Study Day" base_EnumerationLiteral="_QQQB8L_QEeGhFNoxTbVL8w"/>
+  <term:ValueSetCode xmi:id="_UQSv8b_QEeGhFNoxTbVL8w" conceptName="Age" base_EnumerationLiteral="_UQSv8L_QEeGhFNoxTbVL8w"/>
+  <term:ValueSetCode xmi:id="_X3oqEb_QEeGhFNoxTbVL8w" conceptName="Non-Performance Reason" base_EnumerationLiteral="_X3oqEL_QEeGhFNoxTbVL8w"/>
+  <term:ValueSetCode xmi:id="_gMYugb_QEeGhFNoxTbVL8w" conceptName="Planned Study Day" base_EnumerationLiteral="_gMYugL_QEeGhFNoxTbVL8w"/>
+  <term:ValueSetCode xmi:id="_rUay4b_QEeGhFNoxTbVL8w" conceptName="Serious Event" base_EnumerationLiteral="_rUay4L_QEeGhFNoxTbVL8w"/>
+  <term:ValueSetCode xmi:id="_zSHCMb_QEeGhFNoxTbVL8w" conceptName="Serious Event Type" base_EnumerationLiteral="_zSHCML_QEeGhFNoxTbVL8w"/>
+  <term:ValueSetCode xmi:id="_2BOT0b_QEeGhFNoxTbVL8w" conceptName="Adverse Event Pattern" base_EnumerationLiteral="_2BOT0L_QEeGhFNoxTbVL8w"/>
+  <term:ValueSetCode xmi:id="_AkuHwL_REeGhFNoxTbVL8w" conceptName="Outcome of Adverse Event" base_EnumerationLiteral="_AkkWwL_REeGhFNoxTbVL8w"/>
+  <term:ValueSetCode xmi:id="_E-Mpcb_REeGhFNoxTbVL8w" conceptName="Adverse Event Concomitant Treatment" base_EnumerationLiteral="_E-MpcL_REeGhFNoxTbVL8w"/>
+  <term:ValueSetCode xmi:id="_fSdncb_REeGhFNoxTbVL8w" conceptName="Toxicity Grade" base_EnumerationLiteral="_fSdncL_REeGhFNoxTbVL8w"/>
+  <term:ValueSetCode xmi:id="_i1MHUb_REeGhFNoxTbVL8w" conceptName="Concomitant Medication Category" base_EnumerationLiteral="_i1MHUL_REeGhFNoxTbVL8w"/>
+  <term:ValueSetCode xmi:id="_Qgxp4b_TEeGhFNoxTbVL8w" conceptName="Concomitant Medication Category" base_EnumerationLiteral="_Qgxp4L_TEeGhFNoxTbVL8w"/>
+  <term:ValueSetCode xmi:id="_XonPQb_TEeGhFNoxTbVL8w" conceptName="Indication" base_EnumerationLiteral="_XonPQL_TEeGhFNoxTbVL8w"/>
+  <term:ValueSetCode xmi:id="_fltosb_TEeGhFNoxTbVL8w" conceptName="Intended Regimen" base_EnumerationLiteral="_fltosL_TEeGhFNoxTbVL8w"/>
+  <term:ValueSetCode xmi:id="_g_uIkb_TEeGhFNoxTbVL8w" conceptName="Timing Reference" base_EnumerationLiteral="_g_uIkL_TEeGhFNoxTbVL8w"/>
+  <term:ValueSetCode xmi:id="_jd3mAb_TEeGhFNoxTbVL8w" conceptName="Anchor Time Point" base_EnumerationLiteral="_jd3mAL_TEeGhFNoxTbVL8w"/>
+  <term:ValueSetCode xmi:id="_lHM7Ub_TEeGhFNoxTbVL8w" conceptName="Study Day Period" base_EnumerationLiteral="_lHM7UL_TEeGhFNoxTbVL8w"/>
+  <term:ValueSetCode xmi:id="_T1sh0b_UEeGhFNoxTbVL8w" conceptName="Exposure Category" base_EnumerationLiteral="_T1sh0L_UEeGhFNoxTbVL8w"/>
+  <term:ValueSetCode xmi:id="_V1DKcb_UEeGhFNoxTbVL8w" conceptName="Exposure Sub-Category" base_EnumerationLiteral="_V1DKcL_UEeGhFNoxTbVL8w"/>
+  <term:ValueSetCode xmi:id="_1uTbAb_UEeGhFNoxTbVL8w" conceptName="Dose Adjustment Reason" base_EnumerationLiteral="_1uTbAL_UEeGhFNoxTbVL8w"/>
+  <term:ValueSetCode xmi:id="_4FTuob_UEeGhFNoxTbVL8w" conceptName="Study Epoch" base_EnumerationLiteral="_4FTuoL_UEeGhFNoxTbVL8w"/>
+  <term:ValueSetCode xmi:id="_8vvdcb_UEeGhFNoxTbVL8w" conceptName="Element Order" base_EnumerationLiteral="_8vvdcL_UEeGhFNoxTbVL8w"/>
+  <term:ValueSetCode xmi:id="_-X4f8b_UEeGhFNoxTbVL8w" conceptName="Element" base_EnumerationLiteral="_-X4f8L_UEeGhFNoxTbVL8w"/>
+  <term:ValueSetCode xmi:id="__srvsb_UEeGhFNoxTbVL8w" conceptName="Substance Use Category" base_EnumerationLiteral="__srvsL_UEeGhFNoxTbVL8w"/>
+  <term:ValueSetCode xmi:id="_CQo6Mb_VEeGhFNoxTbVL8w" conceptName="Substance Use Sub-Category" base_EnumerationLiteral="_CQo6ML_VEeGhFNoxTbVL8w"/>
+  <term:ValueSetCode xmi:id="_ECmAAb_VEeGhFNoxTbVL8w" conceptName="Disposition" base_EnumerationLiteral="_ECmAAL_VEeGhFNoxTbVL8w"/>
+  <term:ValueSetVersion xmi:id="_6APYocRmEeGx2-Pp6bmfHQ" base_Enumeration="_6APYoMRmEeGx2-Pp6bmfHQ"/>
+  <term:ValueSetCode xmi:id="_AY6x8cRnEeGx2-Pp6bmfHQ" conceptName="Involves Cancer" base_EnumerationLiteral="_AY6x8MRnEeGx2-Pp6bmfHQ"/>
+  <term:ValueSetCode xmi:id="_DR_Q0MRnEeGx2-Pp6bmfHQ" conceptName="Congenital Anomaly or Birth Defect" base_EnumerationLiteral="_DR2G4MRnEeGx2-Pp6bmfHQ"/>
+  <term:ValueSetCode xmi:id="_FkrsMcRnEeGx2-Pp6bmfHQ" conceptName="Persistant or Significant Disability or Incapacity" base_EnumerationLiteral="_FkrsMMRnEeGx2-Pp6bmfHQ"/>
+  <term:ValueSetCode xmi:id="_J5jascRnEeGx2-Pp6bmfHQ" conceptName="Results in Death" base_EnumerationLiteral="_J5jasMRnEeGx2-Pp6bmfHQ"/>
+  <term:ValueSetCode xmi:id="_L9qAccRnEeGx2-Pp6bmfHQ" conceptName="Requires or Prolongs Hospitalization" base_EnumerationLiteral="_L9qAcMRnEeGx2-Pp6bmfHQ"/>
+  <term:ValueSetCode xmi:id="_OZbfUcRnEeGx2-Pp6bmfHQ" conceptName="Is Life threatening" base_EnumerationLiteral="_OZbfUMRnEeGx2-Pp6bmfHQ"/>
+  <term:ValueSetCode xmi:id="_RAzKMcRnEeGx2-Pp6bmfHQ" conceptName="Occurred with Overdose" base_EnumerationLiteral="_RAzKMMRnEeGx2-Pp6bmfHQ"/>
+  <term:ValueSetCode xmi:id="_SpY4ocRnEeGx2-Pp6bmfHQ" conceptName="Other Medically Important Serious Event" base_EnumerationLiteral="_SpY4oMRnEeGx2-Pp6bmfHQ"/>
 </xmi:XMI>
