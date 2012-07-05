@@ -882,7 +882,7 @@ If NEMSIS EHistory. 08 has proper values, the value should be TRUE.</body>
             <ownedAttribute xmi:id="_6eFncIzdEeGnhceUMXltng" name="value" visibility="private" aggregation="composite">
               <ownedComment xmi:id="_Uv-8AIzgEeGnhceUMXltng">
                 <body>If NEMSIS EHistory.08 is &quot;No bleeding disorder,&quot; the value should be the appropriate&#xD;
-ICD?10 code (D66, D67, D68) and negationIndicator should be TRUE.</body>
+ICD-10 code (D66, D67, D68) and negationIndicator should be TRUE.</body>
               </ownedComment>
               <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5xbgUIzeEeGnhceUMXltng" value="1"/>
@@ -2951,7 +2951,7 @@ This nulled notional class is parallel to the explicit question &quot;patient on
           <nestedClassifier xmi:type="uml:Class" xmi:id="_whTHIJojEeG_FLcaRgAa7g" name="LengthBasedPatientBodyWeightClass">
             <ownedComment xmi:id="_RPusMJokEeG_FLcaRgAa7g">
               <body>NEMSIS Trace: EExam.02.&#xD;
-Note: a license is required to implement the Broselow?Luten measure.</body>
+Note: a license is required to implement the Broselow-Luten measure.</body>
             </ownedComment>
             <generalization xmi:id="_xRpmAJojEeG_FLcaRgAa7g">
               <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
@@ -3739,7 +3739,7 @@ SHALL contain exactly one /Observation with code drawn from  2.16.840.1.113883.1
           <ownedAttribute xmi:id="_YR0LkJuoEeGzXI65shd6Fw" name="code" visibility="private" aggregation="composite">
             <ownedComment xmi:id="_B0emYJupEeGzXI65shd6Fw">
               <body>NEMSIS Trace: EProcedures.03&#xD;
-If EArrest.10 = true, include here as ICD?10 PCS &quot;6A4&quot;&#xD;
+If EArrest.10 = true, include here as ICD-10 PCS &quot;6A4&quot;&#xD;
 For EArrest.03, it is permissible to use NEMSIS value set Cardiopulmonary Resuscitation Type (2.16.840.1.113883.17.3.5.57)&#xD;
 3003001	Attempted Defibrillation = Defibrillation 5A2204Z&#xD;
 3003005	Initiated Chest Compressions: use more detailed Cardiopulmonary Resuscitation Type (2.16.840.1.113883.17.3.5.57); reader may infer from these values if necessary&#xD;
@@ -6549,7 +6549,7 @@ This is the value represented in the header for the encompassing encounter</body
   <CDA:AssociationValidation xmi:id="_JxFawIy6EeGnhceUMXltng" base_Association="_IYFngIy6EeGnhceUMXltng"/>
   <CDA:AssociationValidation xmi:id="_NvHWkIy6EeGnhceUMXltng" severity="INFO" base_Association="_Mg8TQIy6EeGnhceUMXltng"/>
   <CDA:TextValue xmi:id="_ZiI4sIy6EeGnhceUMXltng" severity="WARNING" base_Property="_568R4H9aEeGht55Sz1eBOw" value="EMS Advance Directives"/>
-  <CDA:CodeSystemConstraint xmi:id="_Bk774Iy-EeGnhceUMXltng" code="67841?7" displayName="EMS Allergies and Adverse Reactions" base_Property="_sBzs8H9cEeGht55Sz1eBOw">
+  <CDA:CodeSystemConstraint xmi:id="_Bk774Iy-EeGnhceUMXltng" code="67841-7" displayName="EMS Allergies and Adverse Reactions" base_Property="_sBzs8H9cEeGht55Sz1eBOw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:TextValue xmi:id="_Jb0YkIy-EeGnhceUMXltng" severity="WARNING" base_Property="_sB0UAH9cEeGht55Sz1eBOw" value="EMS Allergies and Adverse Reactions"/>
@@ -6559,7 +6559,7 @@ This is the value represented in the header for the encompassing encounter</body
   <CDA:AssociationValidation xmi:id="_450fsIzaEeGnhceUMXltng" severity="INFO" base_Association="_jcusAIzaEeGnhceUMXltng"/>
   <CDA:AssociationValidation xmi:id="_yA4cgIzbEeGnhceUMXltng" base_Association="_ssX18YzbEeGnhceUMXltng"/>
   <CDA:AssociationValidation xmi:id="_Dpq4IIzcEeGnhceUMXltng" severity="WARNING" base_Association="_6gJDcYy9EeGnhceUMXltng"/>
-  <CDA:CodeSystemConstraint xmi:id="_aOKYwIzcEeGnhceUMXltng" code="67842?5" displayName="EMS past medical history" base_Property="_YG_Q4IzcEeGnhceUMXltng">
+  <CDA:CodeSystemConstraint xmi:id="_aOKYwIzcEeGnhceUMXltng" code="67842-5" displayName="EMS past medical history" base_Property="_YG_Q4IzcEeGnhceUMXltng">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_slANMIzcEeGnhceUMXltng" base_Property="_YG_Q4IzcEeGnhceUMXltng"/>
@@ -6571,14 +6571,14 @@ This is the value represented in the header for the encompassing encounter</body
   <CDA:TextValue xmi:id="_P7CbwIzfEeGnhceUMXltng" severity="WARNING" base_Property="_YG_Q44zcEeGnhceUMXltng" value="EMS Past Medical History"/>
   <CDA:AssociationValidation xmi:id="_qesZQIziEeGnhceUMXltng" base_Association="_pLtucIziEeGnhceUMXltng"/>
   <CDA:CDATemplate xmi:id="_4-4sQIziEeGnhceUMXltng" base_Class="_1XH7YIziEeGnhceUMXltng" templateId="2.16.840.1.113883.17.3.10.1.22"/>
-  <CDA:CodeSystemConstraint xmi:id="_64VhMIziEeGnhceUMXltng" code="67843?3" displayName="EMS Social History" base_Property="_2r1rkIziEeGnhceUMXltng">
+  <CDA:CodeSystemConstraint xmi:id="_64VhMIziEeGnhceUMXltng" code="67843-3" displayName="EMS Social History" base_Property="_2r1rkIziEeGnhceUMXltng">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:TextValue xmi:id="__ItxQIziEeGnhceUMXltng" severity="WARNING" base_Property="_2r1rk4ziEeGnhceUMXltng" value="EMS Social History"/>
   <CDA:PropertyValidation xmi:id="__ejeYIziEeGnhceUMXltng" severity="WARNING" base_Property="_2r1rk4ziEeGnhceUMXltng"/>
   <CDA:PropertyValidation xmi:id="_CbYb4IzjEeGnhceUMXltng" mandatory="true" base_Property="_2r1rkIziEeGnhceUMXltng"/>
   <CDA:AssociationValidation xmi:id="_Lh2bsIzkEeGnhceUMXltng" base_Association="_KBT2AYzkEeGnhceUMXltng"/>
-  <CDA:CodeSystemConstraint xmi:id="_nzIgAIzkEeGnhceUMXltng" code="67801?1" displayName="EMS Vital Signs" base_Property="_kM_fwIzkEeGnhceUMXltng">
+  <CDA:CodeSystemConstraint xmi:id="_nzIgAIzkEeGnhceUMXltng" code="67801-1" displayName="EMS Vital Signs" base_Property="_kM_fwIzkEeGnhceUMXltng">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:TextValue xmi:id="_tBkTwIzkEeGnhceUMXltng" severity="WARNING" base_Property="_kM_fw4zkEeGnhceUMXltng" value="EMS Vital Signs"/>
@@ -6605,7 +6605,7 @@ This is the value represented in the header for the encompassing encounter</body
   <CDA:AssociationValidation xmi:id="_0yg30Iz1EeGnhceUMXltng" base_Association="_JyUvEIz1EeGnhceUMXltng"/>
   <CDA:AssociationValidation xmi:id="_3cXEYJkpEeGXp8PvMoofsw" base_Association="__QeXsWlXEeG4boS-IbG8Zw"/>
   <CDA:CDATemplate xmi:id="_LBR30JoiEeG_FLcaRgAa7g" base_Class="_6223oJohEeG_FLcaRgAa7g" templateId="2.16.840.1.113883.17.3.10.1.20"/>
-  <CDA:CodeSystemConstraint xmi:id="_Vnir4JoiEeG_FLcaRgAa7g" code="67668?4" base_Property="_QRNgYJoiEeG_FLcaRgAa7g">
+  <CDA:CodeSystemConstraint xmi:id="_Vnir4JoiEeG_FLcaRgAa7g" code="67668-4" base_Property="_QRNgYJoiEeG_FLcaRgAa7g">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_X9gdsJoiEeG_FLcaRgAa7g" base_Property="_QRNgY5oiEeG_FLcaRgAa7g"/>
@@ -6628,7 +6628,7 @@ This is the value represented in the header for the encompassing encounter</body
   <CDA:AssociationValidation xmi:id="_jdb5IJosEeG_FLcaRgAa7g" severity="INFO" base_Association="_iY2PoposEeG_FLcaRgAa7g"/>
   <CDA:AssociationValidation xmi:id="_UW7FoJovEeG_FLcaRgAa7g" base_Association="_RUnyQpovEeG_FLcaRgAa7g"/>
   <CDA:PropertyValidation xmi:id="_h0670JovEeG_FLcaRgAa7g" base_Property="_fj3fMJovEeG_FLcaRgAa7g"/>
-  <CDA:CodeSystemConstraint xmi:id="_iPZRUJovEeG_FLcaRgAa7g" code="67849?0" displayName="Medications administered" base_Property="_fj3fMJovEeG_FLcaRgAa7g">
+  <CDA:CodeSystemConstraint xmi:id="_iPZRUJovEeG_FLcaRgAa7g" code="67849-0" displayName="Medications administered" base_Property="_fj3fMJovEeG_FLcaRgAa7g">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:CDATemplate xmi:id="_pLL-wJovEeG_FLcaRgAa7g" base_Class="_c7crcJovEeG_FLcaRgAa7g" templateId="2.16.840.1.113883.17.3.10.1.18"/>
@@ -6650,7 +6650,7 @@ This is the value represented in the header for the encompassing encounter</body
   <CDA:AssociationValidation xmi:id="_FMMtYJsrEeGzXI65shd6Fw" base_Association="_NLJoUJsoEeGzXI65shd6Fw"/>
   <CDA:AssociationValidation xmi:id="_J2M-YJsrEeGzXI65shd6Fw" base_Association="_JM_pUpsrEeGzXI65shd6Fw"/>
   <CDA:AssociationValidation xmi:id="_JYM-UJssEeGzXI65shd6Fw" severity="INFO" base_Association="_IV_6cJssEeGzXI65shd6Fw"/>
-  <CDA:CodeSystemConstraint xmi:id="_BEUmsJunEeGzXI65shd6Fw" code="67802?9" displayName="EMS Procedures Performed" base_Property="_6hM38JumEeGzXI65shd6Fw">
+  <CDA:CodeSystemConstraint xmi:id="_BEUmsJunEeGzXI65shd6Fw" code="67802-9" displayName="EMS Procedures Performed" base_Property="_6hM38JumEeGzXI65shd6Fw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_D5om8JunEeGzXI65shd6Fw" base_Property="_6hM38JumEeGzXI65shd6Fw"/>
@@ -6681,19 +6681,19 @@ This is the value represented in the header for the encompassing encounter</body
   <CDA:PropertyValidation xmi:id="_nDza4J9mEeGw9ZRnaFfEZQ" base_Property="_kZFhE59mEeGw9ZRnaFfEZQ"/>
   <CDA:PropertyValidation xmi:id="_nx0XcJ9mEeGw9ZRnaFfEZQ" base_Property="_kZFhEJ9mEeGw9ZRnaFfEZQ"/>
   <CDA:PropertyValidation xmi:id="_ok4MEJ9mEeGw9ZRnaFfEZQ" base_Property="_kZE6AJ9mEeGw9ZRnaFfEZQ"/>
-  <CDA:CodeSystemConstraint xmi:id="_pPBVQJ9mEeGw9ZRnaFfEZQ" code="67781?5" displayName="EMS Patient Care Report Narrative" base_Property="_kZE6AJ9mEeGw9ZRnaFfEZQ">
+  <CDA:CodeSystemConstraint xmi:id="_pPBVQJ9mEeGw9ZRnaFfEZQ" code="67781-5" displayName="EMS Patient Care Report Narrative" base_Property="_kZE6AJ9mEeGw9ZRnaFfEZQ">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:TextValue xmi:id="_2LcIYJ9mEeGw9ZRnaFfEZQ" severity="WARNING" base_Property="_kZFhE59mEeGw9ZRnaFfEZQ" value="EMS Patient Care Report Narrative"/>
   <CDA:AssociationValidation xmi:id="_9zrsIJ9mEeGw9ZRnaFfEZQ" base_Association="_74vpcZ9mEeGw9ZRnaFfEZQ"/>
-  <CDA:CodeSystemConstraint xmi:id="_TMQzQJ9nEeGw9ZRnaFfEZQ" code="67660?1" displayName="Dispatch" base_Property="_Q22bEJ9nEeGw9ZRnaFfEZQ">
+  <CDA:CodeSystemConstraint xmi:id="_TMQzQJ9nEeGw9ZRnaFfEZQ" code="67660-1" displayName="Dispatch" base_Property="_Q22bEJ9nEeGw9ZRnaFfEZQ">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:CDATemplate xmi:id="_bIdNwJ9nEeGw9ZRnaFfEZQ" base_Class="_OV4TIJ9nEeGw9ZRnaFfEZQ" templateId="2.16.840.1.113883.17.3.10.1.2"/>
   <CDA:PropertyValidation xmi:id="_mbPJkJ9nEeGw9ZRnaFfEZQ" base_Property="_Q22bFp9nEeGw9ZRnaFfEZQ"/>
   <CDA:TextValue xmi:id="_neTJEJ9nEeGw9ZRnaFfEZQ" severity="WARNING" base_Property="_Q22bFp9nEeGw9ZRnaFfEZQ" value="EMS Dispatch"/>
   <CDA:PropertyValidation xmi:id="_q5_z4J9nEeGw9ZRnaFfEZQ" base_Property="_Q22bE59nEeGw9ZRnaFfEZQ"/>
-  <CDA:CodeSystemConstraint xmi:id="_SGO9UJ99EeGw9ZRnaFfEZQ" code="67664?3" displayName="EMS Response" base_Property="_OYybMJ99EeGw9ZRnaFfEZQ">
+  <CDA:CodeSystemConstraint xmi:id="_SGO9UJ99EeGw9ZRnaFfEZQ" code="67664-3" displayName="EMS Response" base_Property="_OYybMJ99EeGw9ZRnaFfEZQ">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_VuFNwJ99EeGw9ZRnaFfEZQ" base_Property="_OYybMJ99EeGw9ZRnaFfEZQ"/>
@@ -6722,7 +6722,7 @@ This is the value represented in the header for the encompassing encounter</body
   <CDA:AssociationValidation xmi:id="_zV6vIJ-aEeGorI3CPDW2ww" severity="INFO" base_Association="_yjU0kJ-aEeGorI3CPDW2ww"/>
   <CDA:AssociationValidation xmi:id="_Lhb38J-bEeGorI3CPDW2ww" base_Association="_J7a8YJ-bEeGorI3CPDW2ww"/>
   <CDA:AssociationValidation xmi:id="_N3AoMJ-bEeGorI3CPDW2ww" severity="INFO" base_Association="_NUwPsZ-bEeGorI3CPDW2ww"/>
-  <CDA:CodeSystemConstraint xmi:id="_p1eMQJ-dEeGorI3CPDW2ww" code="67796?3" displayName="EMS Disposition" base_Property="_lQkdsJ-dEeGorI3CPDW2ww">
+  <CDA:CodeSystemConstraint xmi:id="_p1eMQJ-dEeGorI3CPDW2ww" code="67796-3" displayName="EMS Disposition" base_Property="_lQkdsJ-dEeGorI3CPDW2ww">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:CDATemplate xmi:id="_uS5Z0J-dEeGorI3CPDW2ww" base_Class="_i-lM8J-dEeGorI3CPDW2ww" templateId="2.16.840.1.113883.17.3.10.1.4"/>
@@ -6732,7 +6732,7 @@ This is the value represented in the header for the encompassing encounter</body
   <CDA:TextValue xmi:id="_3O2BIJ-dEeGorI3CPDW2ww" severity="WARNING" base_Property="_lQkdtp-dEeGorI3CPDW2ww" value="EMS Disposition"/>
   <CDA:CDATemplate xmi:id="_7_pEYJ-iEeGorI3CPDW2ww" base_Class="_iDmQYJ9mEeGw9ZRnaFfEZQ" templateId="2.16.840.1.113883.17.3.10.1.1"/>
   <CDA:CDATemplate xmi:id="_BeU6oJ-jEeGorI3CPDW2ww" base_Class="_jCzkkIzkEeGnhceUMXltng" templateId="2.16.840.1.113883.17.3.10.1.23"/>
-  <CDA:CodeSystemConstraint xmi:id="_LPL7QJ-kEeGorI3CPDW2ww" code="67658?5" displayName="Exposures or injuries of EMS personnel" base_Property="_IuJh4J-kEeGorI3CPDW2ww">
+  <CDA:CodeSystemConstraint xmi:id="_LPL7QJ-kEeGorI3CPDW2ww" code="67658-5" displayName="Exposures or injuries of EMS personnel" base_Property="_IuJh4J-kEeGorI3CPDW2ww">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:CDATemplate xmi:id="_UM3A4J-kEeGorI3CPDW2ww" base_Class="_GGotEJ-kEeGorI3CPDW2ww" templateId="2.16.840.1.113883.17.3.10.1.6"/>
@@ -6741,11 +6741,11 @@ This is the value represented in the header for the encompassing encounter</body
   <CDA:PropertyValidation xmi:id="_bRWXUJ-kEeGorI3CPDW2ww" base_Property="_IuL-IJ-kEeGorI3CPDW2ww"/>
   <CDA:TextValue xmi:id="_egJOkJ-kEeGorI3CPDW2ww" severity="WARNING" base_Property="_IuL-IJ-kEeGorI3CPDW2ww" value="Exposures or Injuries of EMS Personnel"/>
   <CDA:CDATemplate xmi:id="_eW46AJ-mEeGorI3CPDW2ww" base_Class="_aK7P4J-mEeGorI3CPDW2ww" templateId="2.16.840.1.113883.17.3.10.1.7"/>
-  <CDA:CodeSystemConstraint xmi:id="_gi9wAJ-mEeGorI3CPDW2ww" code="67537?1" displayName="EMS Protocol" base_Property="_cHId4J-mEeGorI3CPDW2ww">
+  <CDA:CodeSystemConstraint xmi:id="_gi9wAJ-mEeGorI3CPDW2ww" code="67537-1" displayName="EMS Protocol" base_Property="_cHId4J-mEeGorI3CPDW2ww">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:CDATemplate xmi:id="_oGeIAKK3EeGOxth0BgV-QA" base_Class="_h3A8IKK3EeGOxth0BgV-QA" templateId="2.16.840.1.113883.17.3.10.1.8"/>
-  <CDA:CodeSystemConstraint xmi:id="_0ilqcKK3EeGOxth0BgV-QA" code="67665?0" displayName="EMS Scene" base_Property="_z1eFwKK3EeGOxth0BgV-QA">
+  <CDA:CodeSystemConstraint xmi:id="_0ilqcKK3EeGOxth0BgV-QA" code="67665-0" displayName="EMS Scene" base_Property="_z1eFwKK3EeGOxth0BgV-QA">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_Bh4LYKK4EeGOxth0BgV-QA" base_Property="_z1eFw6K3EeGOxth0BgV-QA"/>
@@ -6755,7 +6755,7 @@ This is the value represented in the header for the encompassing encounter</body
   <CDA:PropertyValidation xmi:id="_sGSaQKK8EeGOxth0BgV-QA" base_Property="_q0tdoKK8EeGOxth0BgV-QA"/>
   <CDA:PropertyValidation xmi:id="_tNZzUKK8EeGOxth0BgV-QA" base_Property="_q0uEsKK8EeGOxth0BgV-QA"/>
   <CDA:PropertyValidation xmi:id="_vDEUcKK8EeGOxth0BgV-QA" base_Property="_q0uEs6K8EeGOxth0BgV-QA"/>
-  <CDA:CodeSystemConstraint xmi:id="_vtS9MKK8EeGOxth0BgV-QA" code="67666?8" displayName="EMS Situation" base_Property="_q0tdoKK8EeGOxth0BgV-QA">
+  <CDA:CodeSystemConstraint xmi:id="_vtS9MKK8EeGOxth0BgV-QA" code="67666-8" displayName="EMS Situation" base_Property="_q0tdoKK8EeGOxth0BgV-QA">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:CDATemplate xmi:id="_34FNUKK8EeGOxth0BgV-QA" base_Class="_olqMIKK8EeGOxth0BgV-QA" templateId="2.16.840.1.113883.17.3.10.1.9"/>
@@ -6866,10 +6866,10 @@ This is the value represented in the header for the encompassing encounter</body
   <CDA:AssociationValidation xmi:id="_a-YixcH4EeGOXu0EprM3pw" base_Association="_a-YiwMH4EeGOXu0EprM3pw"/>
   <CDA:AssociationValidation xmi:id="_biripcH4EeGOXu0EprM3pw" base_Association="_birioMH4EeGOXu0EprM3pw"/>
   <CDA:PropertyValidation xmi:id="_NKDy0IzoEeGnhceUMXltng" base_Property="_LSRx0IzoEeGnhceUMXltng"/>
-  <CDA:CodeSystemConstraint xmi:id="_HyeNoIzpEeGnhceUMXltng" code="67518?1" displayName="Obtained prior to units EMS care" base_Property="_FHsCYIzpEeGnhceUMXltng">
+  <CDA:CodeSystemConstraint xmi:id="_HyeNoIzpEeGnhceUMXltng" code="67518-1" displayName="Obtained prior to units EMS care" base_Property="_FHsCYIzpEeGnhceUMXltng">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
-  <CDA:CodeSystemConstraint xmi:id="_G-KmYIzqEeGnhceUMXltng" code="67519?9" displayName="Cardiac rhythm" base_Property="_3BUIIIzpEeGnhceUMXltng">
+  <CDA:CodeSystemConstraint xmi:id="_G-KmYIzqEeGnhceUMXltng" code="67519-9" displayName="Cardiac rhythm" base_Property="_3BUIIIzpEeGnhceUMXltng">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_qhxo0IzqEeGnhceUMXltng" base_Property="_3BUIIIzpEeGnhceUMXltng"/>
@@ -6881,7 +6881,7 @@ This is the value represented in the header for the encompassing encounter</body
   <CDA:ValueSetConstraint xmi:id="_uJ7bQIzqEeGnhceUMXltng" base_Property="_3BVWQIzpEeGnhceUMXltng">
     <reference href="emspcr-vocab.uml#_dd2T8HSKEeGa4IXs2ghZEw"/>
   </CDA:ValueSetConstraint>
-  <CDA:CodeSystemConstraint xmi:id="_WbT0YIzrEeGnhceUMXltng" code="8480?6" displayName="Intravascular systolic" base_Property="_P3Jj0IzrEeGnhceUMXltng">
+  <CDA:CodeSystemConstraint xmi:id="_WbT0YIzrEeGnhceUMXltng" code="8480-6" displayName="Intravascular systolic" base_Property="_P3Jj0IzrEeGnhceUMXltng">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_hQBUIIzrEeGnhceUMXltng" base_Property="_P3KK4IzrEeGnhceUMXltng"/>
@@ -6889,39 +6889,39 @@ This is the value represented in the header for the encompassing encounter</body
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_02hZoIzrEeGnhceUMXltng" base_Property="_nlVQYYzrEeGnhceUMXltng"/>
-  <CDA:CodeSystemConstraint xmi:id="_Er2TkIzsEeGnhceUMXltng" code="8867?4" displayName="Heart rate" base_Property="_AsAZ4IzsEeGnhceUMXltng">
+  <CDA:CodeSystemConstraint xmi:id="_Er2TkIzsEeGnhceUMXltng" code="8867-4" displayName="Heart rate" base_Property="_AsAZ4IzsEeGnhceUMXltng">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_IbsCYIzsEeGnhceUMXltng" base_Property="_AsAZ4IzsEeGnhceUMXltng"/>
   <CDA:PropertyValidation xmi:id="_JaWqEIzsEeGnhceUMXltng" base_Property="_AsBA8IzsEeGnhceUMXltng"/>
-  <CDA:CodeSystemConstraint xmi:id="_WeDw8IzsEeGnhceUMXltng" code="9279?1" displayName="Breaths" base_Property="_R8-ycIzsEeGnhceUMXltng">
+  <CDA:CodeSystemConstraint xmi:id="_WeDw8IzsEeGnhceUMXltng" code="9279-1" displayName="Breaths" base_Property="_R8-ycIzsEeGnhceUMXltng">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_eKpCIIzsEeGnhceUMXltng" base_Property="_R8_ZgIzsEeGnhceUMXltng"/>
-  <CDA:CodeSystemConstraint xmi:id="_sdPlEIzsEeGnhceUMXltng" code="8310?5" displayName="Body temperature" base_Property="_lpOTkIzsEeGnhceUMXltng">
+  <CDA:CodeSystemConstraint xmi:id="_sdPlEIzsEeGnhceUMXltng" code="8310-5" displayName="Body temperature" base_Property="_lpOTkIzsEeGnhceUMXltng">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_qYXjQIzsEeGnhceUMXltng" base_Property="_lpOTkYzsEeGnhceUMXltng"/>
-  <CDA:CodeSystemConstraint xmi:id="_5X754IzsEeGnhceUMXltng" code="2710?2" displayName="Oxygen saturation" base_Property="_10ZhsIzsEeGnhceUMXltng">
+  <CDA:CodeSystemConstraint xmi:id="_5X754IzsEeGnhceUMXltng" code="2710-2" displayName="Oxygen saturation" base_Property="_10ZhsIzsEeGnhceUMXltng">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="__s_XcIzsEeGnhceUMXltng" base_Property="_10aIwIzsEeGnhceUMXltng"/>
-  <CDA:CodeSystemConstraint xmi:id="_NFUqgIztEeGnhceUMXltng" code="19889?5" displayName="Carbon dioxide/Gas.total.at end expiration" base_Property="_JrbWgIztEeGnhceUMXltng">
+  <CDA:CodeSystemConstraint xmi:id="_NFUqgIztEeGnhceUMXltng" code="19889-5" displayName="Carbon dioxide/Gas.total.at end expiration" base_Property="_JrbWgIztEeGnhceUMXltng">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_Q3J9YIztEeGnhceUMXltng" base_Property="_JrbWgIztEeGnhceUMXltng"/>
   <CDA:PropertyValidation xmi:id="_QN9PYIztEeGnhceUMXltng" base_Property="_JrbWgYztEeGnhceUMXltng"/>
-  <CDA:CodeSystemConstraint xmi:id="_Z-RS4IztEeGnhceUMXltng" code="19911?7" displayName="Diffusion capacity.carbon monoxide" base_Property="_W79YcIztEeGnhceUMXltng">
+  <CDA:CodeSystemConstraint xmi:id="_Z-RS4IztEeGnhceUMXltng" code="19911-7" displayName="Diffusion capacity.carbon monoxide" base_Property="_W79YcIztEeGnhceUMXltng">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_gvu_oIztEeGnhceUMXltng" base_Property="_W79YcIztEeGnhceUMXltng"/>
   <CDA:PropertyValidation xmi:id="_e6Hh0IztEeGnhceUMXltng" base_Property="_W79_gIztEeGnhceUMXltng"/>
-  <CDA:CodeSystemConstraint xmi:id="_nx-6YIztEeGnhceUMXltng" code="2339?0" displayName="Glucose" base_Property="_kqTXwIztEeGnhceUMXltng">
+  <CDA:CodeSystemConstraint xmi:id="_nx-6YIztEeGnhceUMXltng" code="2339-0" displayName="Glucose" base_Property="_kqTXwIztEeGnhceUMXltng">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_qvo-UIztEeGnhceUMXltng" base_Property="_kqTXwIztEeGnhceUMXltng"/>
   <CDA:PropertyValidation xmi:id="_sTUXkIztEeGnhceUMXltng" base_Property="_kqT-0IztEeGnhceUMXltng"/>
-  <CDA:CodeSystemConstraint xmi:id="_199Q4IztEeGnhceUMXltng" code="67775?7" displayName="Level of responsiveness" base_Property="_ysNzUIztEeGnhceUMXltng">
+  <CDA:CodeSystemConstraint xmi:id="_199Q4IztEeGnhceUMXltng" code="67775-7" displayName="Level of responsiveness" base_Property="_ysNzUIztEeGnhceUMXltng">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_AY0tQIzuEeGnhceUMXltng" base_Property="_ysNzUIztEeGnhceUMXltng"/>
@@ -6929,10 +6929,10 @@ This is the value represented in the header for the encompassing encounter</body
     <reference href="emspcr-vocab.uml#_jgfy4HSKEeGa4IXs2ghZEw"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="__f1PwIztEeGnhceUMXltng" base_Property="_ysOaYIztEeGnhceUMXltng"/>
-  <CDA:CodeSystemConstraint xmi:id="_qustsIzuEeGnhceUMXltng" code="56840?2" displayName="Pain severity verbal numeric scale" base_Property="_mpdWoIzuEeGnhceUMXltng">
+  <CDA:CodeSystemConstraint xmi:id="_qustsIzuEeGnhceUMXltng" code="56840-2" displayName="Pain severity verbal numeric scale" base_Property="_mpdWoIzuEeGnhceUMXltng">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
-  <CDA:CodeSystemConstraint xmi:id="_ZHl3oIzvEeGnhceUMXltng" code="67520?7" displayName="Stroke scale overall interpretation" base_Property="_-gsRgIzuEeGnhceUMXltng">
+  <CDA:CodeSystemConstraint xmi:id="_ZHl3oIzvEeGnhceUMXltng" code="67520-7" displayName="Stroke scale overall interpretation" base_Property="_-gsRgIzuEeGnhceUMXltng">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_RTpIQIzxEeGnhceUMXltng" base_Property="_-gsRgIzuEeGnhceUMXltng"/>
@@ -6942,74 +6942,74 @@ This is the value represented in the header for the encompassing encounter</body
     <reference href="emspcr-vocab.uml#_BYIa4XSUEeGa4IXs2ghZEw"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_QYThYIzxEeGnhceUMXltng" base_Property="_H8VFgIzvEeGnhceUMXltng"/>
-  <CDA:CodeSystemConstraint xmi:id="_8RDNUIzyEeGnhceUMXltng" code="9269?2" displayName="Glasgow coma score.total" base_Property="_XnSbIIzyEeGnhceUMXltng">
+  <CDA:CodeSystemConstraint xmi:id="_8RDNUIzyEeGnhceUMXltng" code="9269-2" displayName="Glasgow coma score.total" base_Property="_XnSbIIzyEeGnhceUMXltng">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_ws9CkIzzEeGnhceUMXltng" base_Property="_XnSbIIzyEeGnhceUMXltng"/>
   <CDA:PropertyValidation xmi:id="_xIYaUIzzEeGnhceUMXltng" base_Property="_XnTCMIzyEeGnhceUMXltng"/>
-  <CDA:CodeSystemConstraint xmi:id="_T2AFYIzzEeGnhceUMXltng" code="55285?1" displayName="Glasgow coma score special circumstances" base_Property="_aL9-YIzyEeGnhceUMXltng">
+  <CDA:CodeSystemConstraint xmi:id="_T2AFYIzzEeGnhceUMXltng" code="55285-1" displayName="Glasgow coma score special circumstances" base_Property="_aL9-YIzyEeGnhceUMXltng">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_tLmbsIzzEeGnhceUMXltng" base_Property="_aL9-YIzyEeGnhceUMXltng"/>
   <CDA:PropertyValidation xmi:id="_vRX1YIzzEeGnhceUMXltng" severity="INFO" base_Property="_aL-lcIzyEeGnhceUMXltng"/>
-  <CDA:CodeSystemConstraint xmi:id="_jNAEkIzzEeGnhceUMXltng" code="9267?6" displayName="Glasgow coma score.eye opening" base_Property="_ctdqwIzyEeGnhceUMXltng">
+  <CDA:CodeSystemConstraint xmi:id="_jNAEkIzzEeGnhceUMXltng" code="9267-6" displayName="Glasgow coma score.eye opening" base_Property="_ctdqwIzyEeGnhceUMXltng">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_rBCBkIzzEeGnhceUMXltng" base_Property="_ctdqwIzyEeGnhceUMXltng"/>
   <CDA:PropertyValidation xmi:id="_qhKOsIzzEeGnhceUMXltng" base_Property="_cteR0IzyEeGnhceUMXltng"/>
   <CDA:CDATemplate xmi:id="_5wW8wIzzEeGnhceUMXltng" base_Class="_eKfCYIzyEeGnhceUMXltng"/>
   <CDA:PropertyValidation xmi:id="_66Ou4IzzEeGnhceUMXltng" base_Property="_fIlpYIzyEeGnhceUMXltng"/>
-  <CDA:CodeSystemConstraint xmi:id="_7NGnkIzzEeGnhceUMXltng" code="9268?4" displayName="Glasgow coma score.motor" base_Property="_fIlpYIzyEeGnhceUMXltng">
+  <CDA:CodeSystemConstraint xmi:id="_7NGnkIzzEeGnhceUMXltng" code="9268-4" displayName="Glasgow coma score.motor" base_Property="_fIlpYIzyEeGnhceUMXltng">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_CtQmUIz0EeGnhceUMXltng" base_Property="_fIlpYYzyEeGnhceUMXltng"/>
   <CDA:PropertyValidation xmi:id="_KjTVgIz0EeGnhceUMXltng" base_Property="_iMb04IzyEeGnhceUMXltng"/>
-  <CDA:CodeSystemConstraint xmi:id="_K0elEIz0EeGnhceUMXltng" code="9270?0" displayName="Glasgow coma score.verbal" base_Property="_iMb04IzyEeGnhceUMXltng">
+  <CDA:CodeSystemConstraint xmi:id="_K0elEIz0EeGnhceUMXltng" code="9270-0" displayName="Glasgow coma score.verbal" base_Property="_iMb04IzyEeGnhceUMXltng">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_kDubwIz0EeGnhceUMXltng" base_Property="_iMcb8IzyEeGnhceUMXltng"/>
   <CDA:AssociationValidation xmi:id="_oEqchcH4EeGOXu0EprM3pw" base_Association="_oEqcgMH4EeGOXu0EprM3pw"/>
-  <CDA:CodeSystemConstraint xmi:id="_Ch08YKxDEeGLnrdLmr5TaQ" code="69469?5" displayName="Call time" base_Property="_9KgSYKxCEeGLnrdLmr5TaQ">
+  <CDA:CodeSystemConstraint xmi:id="_Ch08YKxDEeGLnrdLmr5TaQ" code="69469-5" displayName="Call time" base_Property="_9KgSYKxCEeGLnrdLmr5TaQ">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_vIXX4KxDEeGLnrdLmr5TaQ" base_Property="_9KgSYKxCEeGLnrdLmr5TaQ"/>
   <CDA:PropertyValidation xmi:id="_vgPFUKxDEeGLnrdLmr5TaQ" base_Property="_9Kg5cKxCEeGLnrdLmr5TaQ"/>
-  <CDA:CodeSystemConstraint xmi:id="_JKerZ6xDEeGLnrdLmr5TaQ" code="69471?1" displayName="Unit notified time" base_Property="_JKerY6xDEeGLnrdLmr5TaQ">
+  <CDA:CodeSystemConstraint xmi:id="_JKerZ6xDEeGLnrdLmr5TaQ" code="69471-1" displayName="Unit notified time" base_Property="_JKerY6xDEeGLnrdLmr5TaQ">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_uCPdUKxDEeGLnrdLmr5TaQ" base_Property="_JKerY6xDEeGLnrdLmr5TaQ"/>
   <CDA:PropertyValidation xmi:id="_ufjrcKxDEeGLnrdLmr5TaQ" base_Property="_JKerZKxDEeGLnrdLmr5TaQ"/>
-  <CDA:CodeSystemConstraint xmi:id="_UyaX16xDEeGLnrdLmr5TaQ" code="69472?9" displayName="Unit en route time" base_Property="_UyaX06xDEeGLnrdLmr5TaQ">
+  <CDA:CodeSystemConstraint xmi:id="_UyaX16xDEeGLnrdLmr5TaQ" code="69472-9" displayName="Unit en route time" base_Property="_UyaX06xDEeGLnrdLmr5TaQ">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_s6OFUKxDEeGLnrdLmr5TaQ" base_Property="_UyaX06xDEeGLnrdLmr5TaQ"/>
   <CDA:PropertyValidation xmi:id="_tSyWUKxDEeGLnrdLmr5TaQ" base_Property="_UyaX1KxDEeGLnrdLmr5TaQ"/>
-  <CDA:CodeSystemConstraint xmi:id="_iGigUKxDEeGLnrdLmr5TaQ" code="69473?7" displayName="Unit on scene time" base_Property="_iGh5Q6xDEeGLnrdLmr5TaQ">
+  <CDA:CodeSystemConstraint xmi:id="_iGigUKxDEeGLnrdLmr5TaQ" code="69473-7" displayName="Unit on scene time" base_Property="_iGh5Q6xDEeGLnrdLmr5TaQ">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_qcNx0KxDEeGLnrdLmr5TaQ" base_Property="_iGh5Q6xDEeGLnrdLmr5TaQ"/>
   <CDA:PropertyValidation xmi:id="_r0VbUKxDEeGLnrdLmr5TaQ" base_Property="_iGh5RKxDEeGLnrdLmr5TaQ"/>
-  <CDA:CodeSystemConstraint xmi:id="_yt7JV6xDEeGLnrdLmr5TaQ" code="69474?5" displayName="Unit at patient time" base_Property="_yt7JU6xDEeGLnrdLmr5TaQ">
+  <CDA:CodeSystemConstraint xmi:id="_yt7JV6xDEeGLnrdLmr5TaQ" code="69474-5" displayName="Unit at patient time" base_Property="_yt7JU6xDEeGLnrdLmr5TaQ">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_yt7JWKxDEeGLnrdLmr5TaQ" base_Property="_yt7JU6xDEeGLnrdLmr5TaQ"/>
   <CDA:PropertyValidation xmi:id="_yt7JWaxDEeGLnrdLmr5TaQ" base_Property="_yt7JVKxDEeGLnrdLmr5TaQ"/>
-  <CDA:CodeSystemConstraint xmi:id="_6w1256xDEeGLnrdLmr5TaQ" code="69475?2" displayName="Unit left scene time" base_Property="_6w1246xDEeGLnrdLmr5TaQ">
+  <CDA:CodeSystemConstraint xmi:id="_6w1256xDEeGLnrdLmr5TaQ" code="69475-2" displayName="Unit left scene time" base_Property="_6w1246xDEeGLnrdLmr5TaQ">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_6w126KxDEeGLnrdLmr5TaQ" base_Property="_6w1246xDEeGLnrdLmr5TaQ"/>
   <CDA:PropertyValidation xmi:id="_6w126axDEeGLnrdLmr5TaQ" base_Property="_6w125KxDEeGLnrdLmr5TaQ"/>
-  <CDA:CodeSystemConstraint xmi:id="_DaIA56xEEeGLnrdLmr5TaQ" code="69476?0" displayName="Patient arrived at destination time" base_Property="_DaIA46xEEeGLnrdLmr5TaQ">
+  <CDA:CodeSystemConstraint xmi:id="_DaIA56xEEeGLnrdLmr5TaQ" code="69476-0" displayName="Patient arrived at destination time" base_Property="_DaIA46xEEeGLnrdLmr5TaQ">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_DaIA6KxEEeGLnrdLmr5TaQ" base_Property="_DaIA46xEEeGLnrdLmr5TaQ"/>
   <CDA:PropertyValidation xmi:id="_DaIA6axEEeGLnrdLmr5TaQ" base_Property="_DaIA5KxEEeGLnrdLmr5TaQ"/>
-  <CDA:CodeSystemConstraint xmi:id="_Krhx8KxEEeGLnrdLmr5TaQ" code="69477?8" displayName="Unit back in service time" base_Property="_KrhK46xEEeGLnrdLmr5TaQ">
+  <CDA:CodeSystemConstraint xmi:id="_Krhx8KxEEeGLnrdLmr5TaQ" code="69477-8" displayName="Unit back in service time" base_Property="_KrhK46xEEeGLnrdLmr5TaQ">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_Krhx8axEEeGLnrdLmr5TaQ" base_Property="_KrhK46xEEeGLnrdLmr5TaQ"/>
   <CDA:PropertyValidation xmi:id="_Krhx8qxEEeGLnrdLmr5TaQ" base_Property="_KrhK5KxEEeGLnrdLmr5TaQ"/>
-  <CDA:CodeSystemConstraint xmi:id="_UFhAIKxEEeGLnrdLmr5TaQ" code="69470?3" displayName="Dispatch notified time" base_Property="_UFgZE6xEEeGLnrdLmr5TaQ">
+  <CDA:CodeSystemConstraint xmi:id="_UFhAIKxEEeGLnrdLmr5TaQ" code="69470-3" displayName="Dispatch notified time" base_Property="_UFgZE6xEEeGLnrdLmr5TaQ">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_UFhAIaxEEeGLnrdLmr5TaQ" base_Property="_UFgZE6xEEeGLnrdLmr5TaQ"/>
@@ -7023,11 +7023,11 @@ This is the value represented in the header for the encompassing encounter</body
   <CDA:AssociationValidation xmi:id="_8Z2XgMH5EeGOXu0EprM3pw" base_Association="_tIhigsH5EeGOXu0EprM3pw"/>
   <CDA:AssociationValidation xmi:id="_9O9akMH5EeGOXu0EprM3pw" base_Association="_vEdDssH5EeGOXu0EprM3pw"/>
   <CDA:AssociationValidation xmi:id="_9330sMH5EeGOXu0EprM3pw" base_Association="_xjWIAcH5EeGOXu0EprM3pw"/>
-  <CDA:CodeSystemConstraint xmi:id="_Qt0mwIzjEeGnhceUMXltng" code="69757?3" displayName="Indications of drug or alcohol use by the patient" base_Property="_OG19cIzjEeGnhceUMXltng">
+  <CDA:CodeSystemConstraint xmi:id="_Qt0mwIzjEeGnhceUMXltng" code="69757-3" displayName="Indications of drug or alcohol use by the patient" base_Property="_OG19cIzjEeGnhceUMXltng">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_iG0S4IzjEeGnhceUMXltng" base_Property="_OG19cIzjEeGnhceUMXltng"/>
-  <CDA:CodeSystemConstraint xmi:id="_rpQ5gIzjEeGnhceUMXltng" code="67669?2" displayName="Alcohol - drug use" base_Property="_pSyKUIzjEeGnhceUMXltng">
+  <CDA:CodeSystemConstraint xmi:id="_rpQ5gIzjEeGnhceUMXltng" code="67669-2" displayName="Alcohol - drug use" base_Property="_pSyKUIzjEeGnhceUMXltng">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:ValueSetConstraint xmi:id="_7EOLoIzjEeGnhceUMXltng" base_Property="_pSyxYIzjEeGnhceUMXltng">
@@ -7036,7 +7036,7 @@ This is the value represented in the header for the encompassing encounter</body
   <CDA:AssociationValidation xmi:id="_GV2tpcH6EeGOXu0EprM3pw" base_Association="_GV2toMH6EeGOXu0EprM3pw"/>
   <CDA:AssociationValidation xmi:id="_HS2hZcH6EeGOXu0EprM3pw" severity="INFO" base_Association="_HS2hYMH6EeGOXu0EprM3pw"/>
   <CDA:PropertyValidation xmi:id="_NTN48Kg-EeG79fAvHk6H4g" base_Property="_LZAPAKg-EeG79fAvHk6H4g"/>
-  <CDA:CodeSystemConstraint xmi:id="_Nms1oKg-EeG79fAvHk6H4g" code="10154?3" displayName="EMS complaint" base_Property="_LZAPAKg-EeG79fAvHk6H4g">
+  <CDA:CodeSystemConstraint xmi:id="_Nms1oKg-EeG79fAvHk6H4g" code="10154-3" displayName="EMS complaint" base_Property="_LZAPAKg-EeG79fAvHk6H4g">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_SyN4QKg-EeG79fAvHk6H4g" severity="INFO" base_Property="_LZA2EKg-EeG79fAvHk6H4g"/>
@@ -7050,11 +7050,11 @@ This is the value represented in the header for the encompassing encounter</body
   <CDA:PropertyValidation xmi:id="_Ppe60KhAEeG79fAvHk6H4g" base_Property="_5cbCwKg_EeG79fAvHk6H4g"/>
   <CDA:PropertyValidation xmi:id="_PEORoKhAEeG79fAvHk6H4g" base_Property="_5cbCwag_EeG79fAvHk6H4g"/>
   <CDA:PropertyValidation xmi:id="_lD4m4KhAEeG79fAvHk6H4g" base_Property="_iC3F4KhAEeG79fAvHk6H4g"/>
-  <CDA:CodeSystemConstraint xmi:id="_msN2oKhAEeG79fAvHk6H4g" code="67491?1" displayName="Complaint duration" base_Property="_iC3F4KhAEeG79fAvHk6H4g">
+  <CDA:CodeSystemConstraint xmi:id="_msN2oKhAEeG79fAvHk6H4g" code="67491-1" displayName="Complaint duration" base_Property="_iC3F4KhAEeG79fAvHk6H4g">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_kQroUKhAEeG79fAvHk6H4g" base_Property="_iC3s8KhAEeG79fAvHk6H4g"/>
-  <CDA:CodeSystemConstraint xmi:id="_bbNVEKhDEeG79fAvHk6H4g" code="69468?7" displayName="Organ system" base_Property="_ZeCdwKhDEeG79fAvHk6H4g">
+  <CDA:CodeSystemConstraint xmi:id="_bbNVEKhDEeG79fAvHk6H4g" code="69468-7" displayName="Organ system" base_Property="_ZeCdwKhDEeG79fAvHk6H4g">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_fsztIKhDEeG79fAvHk6H4g" base_Property="_ZeCdwKhDEeG79fAvHk6H4g"/>
@@ -7068,24 +7068,24 @@ This is the value represented in the header for the encompassing encounter</body
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_pUt4AKhCEeG79fAvHk6H4g" base_Property="_dTXmAKhCEeG79fAvHk6H4g"/>
   <CDA:PropertyValidation xmi:id="_9Z1MIKhCEeG79fAvHk6H4g" base_Property="_8oOwEKhCEeG79fAvHk6H4g"/>
-  <CDA:CodeSystemConstraint xmi:id="__VlHIKhCEeG79fAvHk6H4g" code="69467?9" displayName="Possible injury" base_Property="_8oOwEKhCEeG79fAvHk6H4g">
+  <CDA:CodeSystemConstraint xmi:id="__VlHIKhCEeG79fAvHk6H4g" code="69467-9" displayName="Possible injury" base_Property="_8oOwEKhCEeG79fAvHk6H4g">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_CbERYKhDEeG79fAvHk6H4g" base_Property="_8oPXIKhCEeG79fAvHk6H4g"/>
   <CDA:PropertyValidation xmi:id="_3DzBsKhDEeG79fAvHk6H4g" base_Property="_1FLY4KhDEeG79fAvHk6H4g"/>
-  <CDA:CodeSystemConstraint xmi:id="_3oo0IKhDEeG79fAvHk6H4g" code="67492?9" displayName="Provider Primary Impression" base_Property="_1FLY4KhDEeG79fAvHk6H4g">
+  <CDA:CodeSystemConstraint xmi:id="_3oo0IKhDEeG79fAvHk6H4g" code="67492-9" displayName="Provider Primary Impression" base_Property="_1FLY4KhDEeG79fAvHk6H4g">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_55zlgKhDEeG79fAvHk6H4g" base_Property="_1FLY4ahDEeG79fAvHk6H4g"/>
   <CDA:CodeSystemConstraint xmi:id="_7bD84KhDEeG79fAvHk6H4g" code="ADD ICD10 CM" base_Property="_1FLY4ahDEeG79fAvHk6H4g"/>
   <CDA:PropertyValidation xmi:id="_NoHjMKhEEeG79fAvHk6H4g" base_Property="_LQztkKhEEeG79fAvHk6H4g"/>
-  <CDA:CodeSystemConstraint xmi:id="_N7BREKhEEeG79fAvHk6H4g" code="67774?0" displayName="EMS Primary Symptom" base_Property="_LQztkKhEEeG79fAvHk6H4g">
+  <CDA:CodeSystemConstraint xmi:id="_N7BREKhEEeG79fAvHk6H4g" code="67774-0" displayName="EMS Primary Symptom" base_Property="_LQztkKhEEeG79fAvHk6H4g">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_NRJNoKhEEeG79fAvHk6H4g" base_Property="_LQztkahEEeG79fAvHk6H4g"/>
   <CDA:CodeSystemConstraint xmi:id="_agKMoKhEEeG79fAvHk6H4g" code="ADD ICD 10" base_Property="_LQztkahEEeG79fAvHk6H4g"/>
   <CDA:PropertyValidation xmi:id="_iq4yYKhEEeG79fAvHk6H4g" base_Property="_h3niYKhEEeG79fAvHk6H4g"/>
-  <CDA:CodeSystemConstraint xmi:id="_nGNHIKhEEeG79fAvHk6H4g" code="67776?5" displayName="Other symptoms" base_Property="_h3niYKhEEeG79fAvHk6H4g">
+  <CDA:CodeSystemConstraint xmi:id="_nGNHIKhEEeG79fAvHk6H4g" code="67776-5" displayName="Other symptoms" base_Property="_h3niYKhEEeG79fAvHk6H4g">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_jGFgoKhEEeG79fAvHk6H4g" base_Property="_h3niYahEEeG79fAvHk6H4g"/>
@@ -7097,7 +7097,7 @@ This is the value represented in the header for the encompassing encounter</body
   <CDA:PropertyValidation xmi:id="_3CEG4KhEEeG79fAvHk6H4g" base_Property="_1uniAKhEEeG79fAvHk6H4g"/>
   <CDA:CodeSystemConstraint xmi:id="_E8c-IKhFEeG79fAvHk6H4g" code="ADD ICD 10 CM" base_Property="_1uniAKhEEeG79fAvHk6H4g"/>
   <CDA:PropertyValidation xmi:id="_Q5vPgKhFEeG79fAvHk6H4g" base_Property="_OR64sKhFEeG79fAvHk6H4g"/>
-  <CDA:CodeSystemConstraint xmi:id="_RStJIKhFEeG79fAvHk6H4g" code="67493?7" displayName="Initial Patient Acuity" base_Property="_OR64sKhFEeG79fAvHk6H4g">
+  <CDA:CodeSystemConstraint xmi:id="_RStJIKhFEeG79fAvHk6H4g" code="67493-7" displayName="Initial Patient Acuity" base_Property="_OR64sKhFEeG79fAvHk6H4g">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_QQYwgKhFEeG79fAvHk6H4g" base_Property="_OR7fwKhFEeG79fAvHk6H4g"/>
@@ -7116,7 +7116,7 @@ This is the value represented in the header for the encompassing encounter</body
   <CDA:ValueSetConstraint xmi:id="_wO2Z0Iy9EeGnhceUMXltng" base_Property="_Z6MsAIy9EeGnhceUMXltng">
     <reference href="emspcr-vocab.uml#_D5sVgXSQEeGa4IXs2ghZEw"/>
   </CDA:ValueSetConstraint>
-  <CDA:CodeSystemConstraint xmi:id="_uLp9kIy-EeGnhceUMXltng" code="67794?8" displayName="Existence of drug allergy" base_Property="_lhnloIy-EeGnhceUMXltng">
+  <CDA:CodeSystemConstraint xmi:id="_uLp9kIy-EeGnhceUMXltng" code="67794-8" displayName="Existence of drug allergy" base_Property="_lhnloIy-EeGnhceUMXltng">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_l3drEIzEEeGnhceUMXltng" code="106190000" displayName="allergy" base_Property="_J24KoIzDEeGnhceUMXltng">
@@ -7125,10 +7125,10 @@ This is the value represented in the header for the encompassing encounter</body
   <CDA:CodeSystemConstraint xmi:id="_jlP7YIzFEeGnhceUMXltng" base_Property="_h7aPwIzFEeGnhceUMXltng">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dSLxoaDqEd-dVeaMP0XXQw"/>
   </CDA:CodeSystemConstraint>
-  <CDA:CodeSystemConstraint xmi:id="_yzMKkIzYEeGnhceUMXltng" code="69747?4" displayName="EMS Existence of environmental allergy" base_Property="_vMCdsIzYEeGnhceUMXltng">
+  <CDA:CodeSystemConstraint xmi:id="_yzMKkIzYEeGnhceUMXltng" code="69747-4" displayName="EMS Existence of environmental allergy" base_Property="_vMCdsIzYEeGnhceUMXltng">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
-  <CDA:CodeSystemConstraint xmi:id="_8rgeEIzZEeGnhceUMXltng" code="69748?2" displayName="Known allergies to food or environmental agents" base_Property="_V8B8kIzZEeGnhceUMXltng">
+  <CDA:CodeSystemConstraint xmi:id="_8rgeEIzZEeGnhceUMXltng" code="69748-2" displayName="Known allergies to food or environmental agents" base_Property="_V8B8kIzZEeGnhceUMXltng">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:ValueSetConstraint xmi:id="_O4kEYIzaEeGnhceUMXltng" base_Property="_V8CjoIzZEeGnhceUMXltng">
@@ -7203,7 +7203,7 @@ This is the value represented in the header for the encompassing encounter</body
   <CDA:CodeSystemConstraint xmi:id="_tmXPgIcpEeGqF6qfYwLiQw" base_Property="_sEM5MIcpEeGqF6qfYwLiQw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dSLxoaDqEd-dVeaMP0XXQw"/>
   </CDA:CodeSystemConstraint>
-  <CDA:CodeSystemConstraint xmi:id="_FpGTwJ9oEeGw9ZRnaFfEZQ" code="67488?7" displayName="EMDPerformed" base_Property="_-QE3wJ9nEeGw9ZRnaFfEZQ">
+  <CDA:CodeSystemConstraint xmi:id="_FpGTwJ9oEeGw9ZRnaFfEZQ" code="67488-7" displayName="EMDPerformed" base_Property="_-QE3wJ9nEeGw9ZRnaFfEZQ">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_I4YTMJ9oEeGw9ZRnaFfEZQ" base_Property="_-QE3wJ9nEeGw9ZRnaFfEZQ"/>
@@ -7218,12 +7218,12 @@ This is the value represented in the header for the encompassing encounter</body
   <CDA:PropertyValidation xmi:id="_hd8joJ98EeGw9ZRnaFfEZQ" base_Property="_CGKBYZ98EeGw9ZRnaFfEZQ"/>
   <CDA:AssociationValidation xmi:id="_LJi0NMH8EeGOXu0EprM3pw" severity="INFO" base_Association="_LJi0MMH8EeGOXu0EprM3pw"/>
   <CDA:AssociationValidation xmi:id="_MDkMdMH8EeGOXu0EprM3pw" severity="INFO" base_Association="_MDkMcMH8EeGOXu0EprM3pw"/>
-  <CDA:CodeSystemConstraint xmi:id="_G42b4J-eEeGorI3CPDW2ww" code="67547?0" displayName="EMS Number of patients" base_Property="_E4hi4J-eEeGorI3CPDW2ww">
+  <CDA:CodeSystemConstraint xmi:id="_G42b4J-eEeGorI3CPDW2ww" code="67547-0" displayName="EMS Number of patients" base_Property="_E4hi4J-eEeGorI3CPDW2ww">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_JIaqwJ-eEeGorI3CPDW2ww" base_Property="_E4hi4J-eEeGorI3CPDW2ww"/>
   <CDA:PropertyValidation xmi:id="_MHV6AJ-eEeGorI3CPDW2ww" base_Property="_E4hi4Z-eEeGorI3CPDW2ww"/>
-  <CDA:CodeSystemConstraint xmi:id="_j3ZO0J-eEeGorI3CPDW2ww" code="67548?8" displayName="EMS incident disposition" base_Property="_j3YnyJ-eEeGorI3CPDW2ww">
+  <CDA:CodeSystemConstraint xmi:id="_j3ZO0J-eEeGorI3CPDW2ww" code="67548-8" displayName="EMS incident disposition" base_Property="_j3YnyJ-eEeGorI3CPDW2ww">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_j3ZO0Z-eEeGorI3CPDW2ww" base_Property="_j3YnyJ-eEeGorI3CPDW2ww"/>
@@ -7231,7 +7231,7 @@ This is the value represented in the header for the encompassing encounter</body
   <CDA:ValueSetConstraint xmi:id="_vhjI0J-eEeGorI3CPDW2ww" base_Property="_j3YnyZ-eEeGorI3CPDW2ww">
     <reference href="emspcr-vocab.uml#_KO1SoHSQEeGa4IXs2ghZEw"/>
   </CDA:ValueSetConstraint>
-  <CDA:CodeSystemConstraint xmi:id="_nv_bkJ-fEeGorI3CPDW2ww" code="67550?4" displayName="EMS transport mode" base_Property="_nv-0hZ-fEeGorI3CPDW2ww">
+  <CDA:CodeSystemConstraint xmi:id="_nv_bkJ-fEeGorI3CPDW2ww" code="67550-4" displayName="EMS transport mode" base_Property="_nv-0hZ-fEeGorI3CPDW2ww">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_nv_bkZ-fEeGorI3CPDW2ww" base_Property="_nv-0hZ-fEeGorI3CPDW2ww"/>
@@ -7239,7 +7239,7 @@ This is the value represented in the header for the encompassing encounter</body
   <CDA:ValueSetConstraint xmi:id="_nv_bk5-fEeGorI3CPDW2ww" base_Property="_nv-0hp-fEeGorI3CPDW2ww">
     <reference href="emspcr-vocab.uml#_QD8E0HSQEeGa4IXs2ghZEw"/>
   </CDA:ValueSetConstraint>
-  <CDA:CodeSystemConstraint xmi:id="_Eahi0J-fEeGorI3CPDW2ww" code="67549?6" displayName="EMS transport method" base_Property="_EagUuJ-fEeGorI3CPDW2ww">
+  <CDA:CodeSystemConstraint xmi:id="_Eahi0J-fEeGorI3CPDW2ww" code="67549-6" displayName="EMS transport method" base_Property="_EagUuJ-fEeGorI3CPDW2ww">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_Eahi0Z-fEeGorI3CPDW2ww" base_Property="_EagUuJ-fEeGorI3CPDW2ww"/>
@@ -7247,7 +7247,7 @@ This is the value represented in the header for the encompassing encounter</body
   <CDA:ValueSetConstraint xmi:id="_Eahi05-fEeGorI3CPDW2ww" base_Property="_EagUuZ-fEeGorI3CPDW2ww">
     <reference href="emspcr-vocab.uml#_NwXfsHSQEeGa4IXs2ghZEw"/>
   </CDA:ValueSetConstraint>
-  <CDA:CodeSystemConstraint xmi:id="_cm2SAJ-hEeGorI3CPDW2ww" code="67552?0" displayName="EMS reason for choosing destination" base_Property="_cm1q8p-hEeGorI3CPDW2ww">
+  <CDA:CodeSystemConstraint xmi:id="_cm2SAJ-hEeGorI3CPDW2ww" code="67552-0" displayName="EMS reason for choosing destination" base_Property="_cm1q8p-hEeGorI3CPDW2ww">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_cm2SAZ-hEeGorI3CPDW2ww" base_Property="_cm1q8p-hEeGorI3CPDW2ww"/>
@@ -7255,14 +7255,14 @@ This is the value represented in the header for the encompassing encounter</body
   <CDA:ValueSetConstraint xmi:id="_cm2SA5-hEeGorI3CPDW2ww" base_Property="_cm1q85-hEeGorI3CPDW2ww">
     <reference href="emspcr-vocab.uml#_XTcGgHSSEeGa4IXs2ghZEw"/>
   </CDA:ValueSetConstraint>
-  <CDA:CodeSystemConstraint xmi:id="_084BsJ-hEeGorI3CPDW2ww" code="69462?0" displayName="EMS prearrival activation performed" base_Property="_083aqJ-hEeGorI3CPDW2ww">
+  <CDA:CodeSystemConstraint xmi:id="_084BsJ-hEeGorI3CPDW2ww" code="69462-0" displayName="EMS prearrival activation performed" base_Property="_083aqJ-hEeGorI3CPDW2ww">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_084BsZ-hEeGorI3CPDW2ww" base_Property="_083aqJ-hEeGorI3CPDW2ww"/>
   <CDA:PropertyValidation xmi:id="_084Bsp-hEeGorI3CPDW2ww" base_Property="_083aqZ-hEeGorI3CPDW2ww"/>
   <CDA:PropertyValidation xmi:id="_XZfm4J-iEeGorI3CPDW2ww" base_Property="_OnRjUJ-iEeGorI3CPDW2ww"/>
   <CDA:AssociationValidation xmi:id="_fpb_1cH8EeGOXu0EprM3pw" base_Association="_fpb_0MH8EeGOXu0EprM3pw"/>
-  <CDA:CodeSystemConstraint xmi:id="_Q40aEJ-gEeGorI3CPDW2ww" code="67551?2" displayName="EMS patient condition change at destination" base_Property="_Q4zL-J-gEeGorI3CPDW2ww">
+  <CDA:CodeSystemConstraint xmi:id="_Q40aEJ-gEeGorI3CPDW2ww" code="67551-2" displayName="EMS patient condition change at destination" base_Property="_Q4zL-J-gEeGorI3CPDW2ww">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_Q40aEZ-gEeGorI3CPDW2ww" base_Property="_Q4zL-J-gEeGorI3CPDW2ww"/>
@@ -7358,14 +7358,14 @@ This is the value represented in the header for the encompassing encounter</body
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dSLxoaDqEd-dVeaMP0XXQw"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_oOzt0JsmEeGzXI65shd6Fw" base_Property="_lZnCUJsmEeGzXI65shd6Fw"/>
-  <CDA:CodeSystemConstraint xmi:id="_ovaggJsmEeGzXI65shd6Fw" code="67540?5" displayName="Response to medication" base_Property="_lZnCUJsmEeGzXI65shd6Fw">
+  <CDA:CodeSystemConstraint xmi:id="_ovaggJsmEeGzXI65shd6Fw" code="67540-5" displayName="Response to medication" base_Property="_lZnCUJsmEeGzXI65shd6Fw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:ValueSetConstraint xmi:id="_tgqB8JsmEeGzXI65shd6Fw" base_Property="_lZnpYJsmEeGzXI65shd6Fw">
     <reference href="emspcr-vocab.uml#_TCyJoHSSEeGa4IXs2ghZEw"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_WHV8sJsnEeGzXI65shd6Fw" base_Property="_S3v0MJsnEeGzXI65shd6Fw"/>
-  <CDA:CodeSystemConstraint xmi:id="_WiWdsJsnEeGzXI65shd6Fw" code="67541?3" displayName="Medication complication" base_Property="_S3v0MJsnEeGzXI65shd6Fw">
+  <CDA:CodeSystemConstraint xmi:id="_WiWdsJsnEeGzXI65shd6Fw" code="67541-3" displayName="Medication complication" base_Property="_S3v0MJsnEeGzXI65shd6Fw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_a_jBwJsnEeGzXI65shd6Fw" base_Property="_S3wbQJsnEeGzXI65shd6Fw"/>
@@ -7373,7 +7373,7 @@ This is the value represented in the header for the encompassing encounter</body
     <reference href="emspcr-vocab.uml#_ko6FEHSNEeGa4IXs2ghZEw"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_voAeEJsoEeGzXI65shd6Fw" base_Property="_q-qUYJsoEeGzXI65shd6Fw"/>
-  <CDA:CodeSystemConstraint xmi:id="_xZ22MJsoEeGzXI65shd6Fw" code="67539?7" displayName="Prior administration" base_Property="_q-qUYJsoEeGzXI65shd6Fw">
+  <CDA:CodeSystemConstraint xmi:id="_xZ22MJsoEeGzXI65shd6Fw" code="67539-7" displayName="Prior administration" base_Property="_q-qUYJsoEeGzXI65shd6Fw">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_tcBusJsoEeGzXI65shd6Fw" base_Property="_q-q7cJsoEeGzXI65shd6Fw"/>
@@ -7390,26 +7390,26 @@ This is the value represented in the header for the encompassing encounter</body
     <reference href="emspcr-vocab.uml#_e71YEHSOEeGa4IXs2ghZEw"/>
   </CDA:ValueSetConstraint>
   <CDA:AssociationValidation xmi:id="_Tk-dhMH-EeGOXu0EprM3pw" severity="INFO" base_Association="_Tk-dgMH-EeGOXu0EprM3pw"/>
-  <CDA:CodeSystemConstraint xmi:id="_bSegAIzdEeGnhceUMXltng" code="67793?0" displayName="Has the patient had any significant medical conditions" base_Property="_Ybg58IzdEeGnhceUMXltng">
+  <CDA:CodeSystemConstraint xmi:id="_bSegAIzdEeGnhceUMXltng" code="67793-0" displayName="Has the patient had any significant medical conditions" base_Property="_Ybg58IzdEeGnhceUMXltng">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
-  <CDA:CodeSystemConstraint xmi:id="_-NXVkIzdEeGnhceUMXltng" code="68487?8" displayName="EMS History of Condition" base_Property="_6eFAYIzdEeGnhceUMXltng">
+  <CDA:CodeSystemConstraint xmi:id="_-NXVkIzdEeGnhceUMXltng" code="68487-8" displayName="EMS History of Condition" base_Property="_6eFAYIzdEeGnhceUMXltng">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_7Oc38IzeEeGnhceUMXltng" base_Property="_6eFAYIzdEeGnhceUMXltng"/>
   <CDA:CodeSystemConstraint xmi:id="_t-TQgIzeEeGnhceUMXltng" base_Property="_6eFncIzdEeGnhceUMXltng"/>
   <CDA:PropertyValidation xmi:id="_6JQxgIzeEeGnhceUMXltng" base_Property="_6eFncIzdEeGnhceUMXltng"/>
-  <CDA:CodeSystemConstraint xmi:id="_unaNAIzgEeGnhceUMXltng" code="67792?2" displayName="EMS existence of history of procedures" base_Property="_o-xJgIzgEeGnhceUMXltng">
+  <CDA:CodeSystemConstraint xmi:id="_unaNAIzgEeGnhceUMXltng" code="67792-2" displayName="EMS existence of history of procedures" base_Property="_o-xJgIzgEeGnhceUMXltng">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_HR8NEIzhEeGnhceUMXltng" base_Property="_FM06sIzhEeGnhceUMXltng"/>
   <CDA:AssociationValidation xmi:id="_ZCcLxcH-EeGOXu0EprM3pw" severity="INFO" base_Association="_ZCcLwMH-EeGOXu0EprM3pw"/>
   <CDA:PropertyValidation xmi:id="_vKJGsJ-kEeGorI3CPDW2ww" base_Property="_r12rcJ-kEeGorI3CPDW2ww"/>
-  <CDA:CodeSystemConstraint xmi:id="_vi8oQJ-kEeGorI3CPDW2ww" code="67554?6" displayName="EMS personnel exposed or injured" base_Property="_r12rcJ-kEeGorI3CPDW2ww">
+  <CDA:CodeSystemConstraint xmi:id="_vi8oQJ-kEeGorI3CPDW2ww" code="67554-6" displayName="EMS personnel exposed or injured" base_Property="_r12rcJ-kEeGorI3CPDW2ww">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_ufPvkJ-kEeGorI3CPDW2ww" base_Property="_r13SgJ-kEeGorI3CPDW2ww"/>
-  <CDA:CodeSystemConstraint xmi:id="_s98fcJ-lEeGorI3CPDW2ww" code="67555?3" displayName="EMS personnel adverse event type" base_Property="_hjDJcJ-lEeGorI3CPDW2ww">
+  <CDA:CodeSystemConstraint xmi:id="_s98fcJ-lEeGorI3CPDW2ww" code="67555-3" displayName="EMS personnel adverse event type" base_Property="_hjDJcJ-lEeGorI3CPDW2ww">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_0uRBIJ-lEeGorI3CPDW2ww" base_Property="_hjDJcJ-lEeGorI3CPDW2ww"/>
@@ -7420,7 +7420,7 @@ This is the value represented in the header for the encompassing encounter</body
   <CDA:AssociationValidation xmi:id="_fgB6RcH-EeGOXu0EprM3pw" base_Association="_fgB6QMH-EeGOXu0EprM3pw"/>
   <CDA:AssociationValidation xmi:id="_gGtfxcH-EeGOXu0EprM3pw" base_Association="_gGtfwMH-EeGOXu0EprM3pw"/>
   <CDA:ConformsTo xmi:id="_-U6TQMF7EeGgQc6fI_Esjg" base_Generalization="_17RuAJ99EeGw9ZRnaFfEZQ"/>
-  <CDA:CodeSystemConstraint xmi:id="_ABl2sJ9-EeGw9ZRnaFfEZQ" code="67480?4" displayName="Dispatch delay" base_Property="__PPMsJ99EeGw9ZRnaFfEZQ">
+  <CDA:CodeSystemConstraint xmi:id="_ABl2sJ9-EeGw9ZRnaFfEZQ" code="67480-4" displayName="Dispatch delay" base_Property="__PPMsJ99EeGw9ZRnaFfEZQ">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_Y4zn4J9-EeGw9ZRnaFfEZQ" base_Property="__PPMsJ99EeGw9ZRnaFfEZQ"/>
@@ -7428,7 +7428,7 @@ This is the value represented in the header for the encompassing encounter</body
     <reference href="emspcr-vocab.uml#_9IgLAHSOEeGa4IXs2ghZEw"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_Kp__0J9-EeGw9ZRnaFfEZQ" base_Property="__PPzwJ99EeGw9ZRnaFfEZQ"/>
-  <CDA:CodeSystemConstraint xmi:id="_pCLfMJ9-EeGw9ZRnaFfEZQ" code="67557?9" displayName="Response delay" base_Property="_pCK4KJ9-EeGw9ZRnaFfEZQ">
+  <CDA:CodeSystemConstraint xmi:id="_pCLfMJ9-EeGw9ZRnaFfEZQ" code="67557-9" displayName="Response delay" base_Property="_pCK4KJ9-EeGw9ZRnaFfEZQ">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_pCLfMZ9-EeGw9ZRnaFfEZQ" base_Property="_pCK4KJ9-EeGw9ZRnaFfEZQ"/>
@@ -7436,7 +7436,7 @@ This is the value represented in the header for the encompassing encounter</body
     <reference href="emspcr-vocab.uml#_K6xoEHSPEeGa4IXs2ghZEw"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_pCLfM59-EeGw9ZRnaFfEZQ" base_Property="_pCK4KZ9-EeGw9ZRnaFfEZQ"/>
-  <CDA:CodeSystemConstraint xmi:id="_Vo8kMJ9_EeGw9ZRnaFfEZQ" code="67558?7" displayName="Scene delay" base_Property="_Vo79KJ9_EeGw9ZRnaFfEZQ">
+  <CDA:CodeSystemConstraint xmi:id="_Vo8kMJ9_EeGw9ZRnaFfEZQ" code="67558-7" displayName="Scene delay" base_Property="_Vo79KJ9_EeGw9ZRnaFfEZQ">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_Vo8kMZ9_EeGw9ZRnaFfEZQ" base_Property="_Vo79KJ9_EeGw9ZRnaFfEZQ"/>
@@ -7444,7 +7444,7 @@ This is the value represented in the header for the encompassing encounter</body
     <reference href="emspcr-vocab.uml#_P2etEHSPEeGa4IXs2ghZEw"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_Vo8kM59_EeGw9ZRnaFfEZQ" base_Property="_Vo79KZ9_EeGw9ZRnaFfEZQ"/>
-  <CDA:CodeSystemConstraint xmi:id="_4qxIMJ9_EeGw9ZRnaFfEZQ" code="67559?5" displayName="Transport delay" base_Property="_4qwhKJ9_EeGw9ZRnaFfEZQ">
+  <CDA:CodeSystemConstraint xmi:id="_4qxIMJ9_EeGw9ZRnaFfEZQ" code="67559-5" displayName="Transport delay" base_Property="_4qwhKJ9_EeGw9ZRnaFfEZQ">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_4qxIMZ9_EeGw9ZRnaFfEZQ" base_Property="_4qwhKJ9_EeGw9ZRnaFfEZQ"/>
@@ -7452,7 +7452,7 @@ This is the value represented in the header for the encompassing encounter</body
     <reference href="emspcr-vocab.uml#_TztXoHSPEeGa4IXs2ghZEw"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_4qxIM59_EeGw9ZRnaFfEZQ" base_Property="_4qwhKZ9_EeGw9ZRnaFfEZQ"/>
-  <CDA:CodeSystemConstraint xmi:id="_e7LvIJ-AEeGw9ZRnaFfEZQ" code="67560?3" displayName="Turnaround delay" base_Property="_e7LIGJ-AEeGw9ZRnaFfEZQ">
+  <CDA:CodeSystemConstraint xmi:id="_e7LvIJ-AEeGw9ZRnaFfEZQ" code="67560-3" displayName="Turnaround delay" base_Property="_e7LIGJ-AEeGw9ZRnaFfEZQ">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_e7LvIZ-AEeGw9ZRnaFfEZQ" base_Property="_e7LIGJ-AEeGw9ZRnaFfEZQ"/>
@@ -7461,42 +7461,42 @@ This is the value represented in the header for the encompassing encounter</body
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_e7MWMJ-AEeGw9ZRnaFfEZQ" base_Property="_e7LIGZ-AEeGw9ZRnaFfEZQ"/>
   <CDA:CDATemplate xmi:id="_dRik4J-NEeGorI3CPDW2ww" base_Class="_hwaaYJ-BEeGw9ZRnaFfEZQ"/>
-  <CDA:CodeSystemConstraint xmi:id="_pMApQJ-BEeGw9ZRnaFfEZQ" code="69466?1" displayName="Dispatch Location Name" base_Property="_mwgQIJ-BEeGw9ZRnaFfEZQ">
+  <CDA:CodeSystemConstraint xmi:id="_pMApQJ-BEeGw9ZRnaFfEZQ" code="69466-1" displayName="Dispatch Location Name" base_Property="_mwgQIJ-BEeGw9ZRnaFfEZQ">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_t49gkJ-BEeGw9ZRnaFfEZQ" base_Property="_mwgQIZ-BEeGw9ZRnaFfEZQ"/>
   <CDA:CDATemplate xmi:id="_sPM3AJ-NEeGorI3CPDW2ww" base_Class="_sPMP8J-NEeGorI3CPDW2ww"/>
-  <CDA:CodeSystemConstraint xmi:id="_sPM3AZ-NEeGorI3CPDW2ww" code="52002?3" displayName="Dispatch Location Latitude" base_Property="_sPMP-Z-NEeGorI3CPDW2ww">
+  <CDA:CodeSystemConstraint xmi:id="_sPM3AZ-NEeGorI3CPDW2ww" code="52002-3" displayName="Dispatch Location Latitude" base_Property="_sPMP-Z-NEeGorI3CPDW2ww">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_sPM3Ap-NEeGorI3CPDW2ww" base_Property="_sPMP-p-NEeGorI3CPDW2ww"/>
   <CDA:CDATemplate xmi:id="_UGLzIJ-OEeGorI3CPDW2ww" base_Class="_UGLMEJ-OEeGorI3CPDW2ww"/>
-  <CDA:CodeSystemConstraint xmi:id="_UGLzIZ-OEeGorI3CPDW2ww" code="52003?1" displayName="Dispatch Location Longitude" base_Property="_UGLMGJ-OEeGorI3CPDW2ww">
+  <CDA:CodeSystemConstraint xmi:id="_UGLzIZ-OEeGorI3CPDW2ww" code="52003-1" displayName="Dispatch Location Longitude" base_Property="_UGLMGJ-OEeGorI3CPDW2ww">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_UGLzIp-OEeGorI3CPDW2ww" base_Property="_UGLMGZ-OEeGorI3CPDW2ww"/>
   <CDA:PropertyValidation xmi:id="_2rZ5sJ-ZEeGorI3CPDW2ww" base_Property="_mrSsEJ-ZEeGorI3CPDW2ww"/>
-  <CDA:CodeSystemConstraint xmi:id="_26s58J-ZEeGorI3CPDW2ww" code="67484?6" displayName="EMS Response odometer beginning reading" base_Property="_mrSsEJ-ZEeGorI3CPDW2ww">
+  <CDA:CodeSystemConstraint xmi:id="_26s58J-ZEeGorI3CPDW2ww" code="67484-6" displayName="EMS Response odometer beginning reading" base_Property="_mrSsEJ-ZEeGorI3CPDW2ww">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_tojZIJ-ZEeGorI3CPDW2ww" base_Property="_mrSsEZ-ZEeGorI3CPDW2ww"/>
   <CDA:PropertyValidation xmi:id="_ib2asJ-aEeGorI3CPDW2ww" base_Property="_ib1zqJ-aEeGorI3CPDW2ww"/>
-  <CDA:CodeSystemConstraint xmi:id="_ib2asZ-aEeGorI3CPDW2ww" code="67485?3" displayName="EMS Response odometer on-scene reading" base_Property="_ib1zqJ-aEeGorI3CPDW2ww">
+  <CDA:CodeSystemConstraint xmi:id="_ib2asZ-aEeGorI3CPDW2ww" code="67485-3" displayName="EMS Response odometer on-scene reading" base_Property="_ib1zqJ-aEeGorI3CPDW2ww">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_ib2asp-aEeGorI3CPDW2ww" base_Property="_ib1zqZ-aEeGorI3CPDW2ww"/>
   <CDA:PropertyValidation xmi:id="_7khIQJ-aEeGorI3CPDW2ww" base_Property="_7kghOJ-aEeGorI3CPDW2ww"/>
-  <CDA:CodeSystemConstraint xmi:id="_7khIQZ-aEeGorI3CPDW2ww" code="67486?1" displayName="EMS Response odometer destination reading" base_Property="_7kghOJ-aEeGorI3CPDW2ww">
+  <CDA:CodeSystemConstraint xmi:id="_7khIQZ-aEeGorI3CPDW2ww" code="67486-1" displayName="EMS Response odometer destination reading" base_Property="_7kghOJ-aEeGorI3CPDW2ww">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_7khIQp-aEeGorI3CPDW2ww" base_Property="_7kghOZ-aEeGorI3CPDW2ww"/>
   <CDA:PropertyValidation xmi:id="_TCM6vZ-bEeGorI3CPDW2ww" base_Property="_TCM6uJ-bEeGorI3CPDW2ww"/>
-  <CDA:CodeSystemConstraint xmi:id="_TCM6vp-bEeGorI3CPDW2ww" code="67487?9" displayName="EMS Response odometer ending reading" base_Property="_TCM6uJ-bEeGorI3CPDW2ww">
+  <CDA:CodeSystemConstraint xmi:id="_TCM6vp-bEeGorI3CPDW2ww" code="67487-9" displayName="EMS Response odometer ending reading" base_Property="_TCM6uJ-bEeGorI3CPDW2ww">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_TCM6v5-bEeGorI3CPDW2ww" base_Property="_TCM6uZ-bEeGorI3CPDW2ww"/>
   <CDA:PropertyValidation xmi:id="_q8o6kJ-bEeGorI3CPDW2ww" base_Property="_nf_NgJ-bEeGorI3CPDW2ww"/>
-  <CDA:CodeSystemConstraint xmi:id="_rWyf8J-bEeGorI3CPDW2ww" code="67482?0" displayName="Response mode to scene" base_Property="_nf_NgJ-bEeGorI3CPDW2ww">
+  <CDA:CodeSystemConstraint xmi:id="_rWyf8J-bEeGorI3CPDW2ww" code="67482-0" displayName="Response mode to scene" base_Property="_nf_NgJ-bEeGorI3CPDW2ww">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:ValueSetConstraint xmi:id="_wH6soJ-bEeGorI3CPDW2ww" base_Property="_ngAboJ-bEeGorI3CPDW2ww">
@@ -7507,16 +7507,16 @@ This is the value represented in the header for the encompassing encounter</body
   <CDA:AssociationValidation xmi:id="_eZ3uBcH_EeGOXu0EprM3pw" base_Association="_eZ3uAMH_EeGOXu0EprM3pw"/>
   <CDA:AssociationValidation xmi:id="_fnFIBcH_EeGOXu0EprM3pw" base_Association="_fnFIAMH_EeGOXu0EprM3pw"/>
   <CDA:PropertyValidation xmi:id="_SHmngKK4EeGOxth0BgV-QA" base_Property="_P-cioKK4EeGOxth0BgV-QA"/>
-  <CDA:CodeSystemConstraint xmi:id="_T9-TQKK4EeGOxth0BgV-QA" code="67665?0" displayName="EMS reporter is first unit on scene" base_Property="_P-cioKK4EeGOxth0BgV-QA">
+  <CDA:CodeSystemConstraint xmi:id="_T9-TQKK4EeGOxth0BgV-QA" code="67665-0" displayName="EMS reporter is first unit on scene" base_Property="_P-cioKK4EeGOxth0BgV-QA">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_dHcZMKK4EeGOxth0BgV-QA" base_Property="_P-cioaK4EeGOxth0BgV-QA"/>
-  <CDA:CodeSystemConstraint xmi:id="_Nw3bUKK5EeGOxth0BgV-QA" code="67481?2" displayName="Name of first unit on scene" base_Property="_KR-SkKK5EeGOxth0BgV-QA">
+  <CDA:CodeSystemConstraint xmi:id="_Nw3bUKK5EeGOxth0BgV-QA" code="67481-2" displayName="Name of first unit on scene" base_Property="_KR-SkKK5EeGOxth0BgV-QA">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_RzuMwKK5EeGOxth0BgV-QA" base_Property="_KR-SkKK5EeGOxth0BgV-QA"/>
   <CDA:PropertyValidation xmi:id="_SbG84KK5EeGOxth0BgV-QA" base_Property="_KR-SkaK5EeGOxth0BgV-QA"/>
-  <CDA:CodeSystemConstraint xmi:id="_z0duQKK5EeGOxth0BgV-QA" code="67489?5" displayName="EMS Count of patients at scene" base_Property="_xp-MoKK5EeGOxth0BgV-QA">
+  <CDA:CodeSystemConstraint xmi:id="_z0duQKK5EeGOxth0BgV-QA" code="67489-5" displayName="EMS Count of patients at scene" base_Property="_xp-MoKK5EeGOxth0BgV-QA">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_4brfEKK7EeGOxth0BgV-QA" base_Property="_xp-MoKK5EeGOxth0BgV-QA"/>
@@ -7527,7 +7527,7 @@ This is the value represented in the header for the encompassing encounter</body
   <CDA:AssociationValidation xmi:id="_EYFxtcIAEeGOXu0EprM3pw" base_Association="_EYFxsMIAEeGOXu0EprM3pw"/>
   <CDA:AssociationValidation xmi:id="_Fkaa4MIAEeGOXu0EprM3pw" base_Association="_FkQp4MIAEeGOXu0EprM3pw"/>
   <CDA:AssociationValidation xmi:id="_Gb6DlcIAEeGOXu0EprM3pw" base_Association="_Gb6DkMIAEeGOXu0EprM3pw"/>
-  <CDA:CodeSystemConstraint xmi:id="_rDquoJ-mEeGorI3CPDW2ww" code="67537?1" displayName="EMS protocol" base_Property="_rDpghZ-mEeGorI3CPDW2ww">
+  <CDA:CodeSystemConstraint xmi:id="_rDquoJ-mEeGorI3CPDW2ww" code="67537-1" displayName="EMS protocol" base_Property="_rDpghZ-mEeGorI3CPDW2ww">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_rDquoZ-mEeGorI3CPDW2ww" base_Property="_rDpghZ-mEeGorI3CPDW2ww"/>
@@ -7536,7 +7536,7 @@ This is the value represented in the header for the encompassing encounter</body
     <reference href="emspcr-vocab.uml#_yg9nwHSSEeGa4IXs2ghZEw"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_VDrz0J-nEeGorI3CPDW2ww" base_Property="_N9AsEJ-nEeGorI3CPDW2ww"/>
-  <CDA:CodeSystemConstraint xmi:id="_Vi6tgJ-nEeGorI3CPDW2ww" code="67538?9" displayName="EMS Protocol age category" base_Property="_N9AsEJ-nEeGorI3CPDW2ww">
+  <CDA:CodeSystemConstraint xmi:id="_Vi6tgJ-nEeGorI3CPDW2ww" code="67538-9" displayName="EMS Protocol age category" base_Property="_N9AsEJ-nEeGorI3CPDW2ww">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_T-uW4J-nEeGorI3CPDW2ww" base_Property="_N9AsEZ-nEeGorI3CPDW2ww"/>
@@ -7544,7 +7544,7 @@ This is the value represented in the header for the encompassing encounter</body
     <reference href="emspcr-vocab.uml#_7FZ4kHSTEeGa4IXs2ghZEw"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_n-0oIJ-nEeGorI3CPDW2ww" base_Property="_n-zaCJ-nEeGorI3CPDW2ww"/>
-  <CDA:CodeSystemConstraint xmi:id="_n-0oIZ-nEeGorI3CPDW2ww" code="67553?8" displayName="EMS candidate patient registry" base_Property="_n-zaCJ-nEeGorI3CPDW2ww">
+  <CDA:CodeSystemConstraint xmi:id="_n-0oIZ-nEeGorI3CPDW2ww" code="67553-8" displayName="EMS candidate patient registry" base_Property="_n-zaCJ-nEeGorI3CPDW2ww">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_n-0oIp-nEeGorI3CPDW2ww" base_Property="_n-zaCZ-nEeGorI3CPDW2ww"/>
@@ -7574,30 +7574,30 @@ This is the value represented in the header for the encompassing encounter</body
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_IDbxEJurEeGzXI65shd6Fw" base_Property="_gTkJkZuqEeGzXI65shd6Fw"/>
   <CDA:PropertyValidation xmi:id="_8kEZYJ0sEeGmCMENP40rhA" base_Property="_2EixMJ0sEeGmCMENP40rhA"/>
-  <CDA:CodeSystemConstraint xmi:id="_9PptAJ0sEeGmCMENP40rhA" code="67542?1" displayName="Procedure performed prior to EMS arrival" base_Property="_2EixMJ0sEeGmCMENP40rhA">
+  <CDA:CodeSystemConstraint xmi:id="_9PptAJ0sEeGmCMENP40rhA" code="67542-1" displayName="Procedure performed prior to EMS arrival" base_Property="_2EixMJ0sEeGmCMENP40rhA">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_7qyoAJ0sEeGmCMENP40rhA" base_Property="_2EixMZ0sEeGmCMENP40rhA"/>
   <CDA:PropertyValidation xmi:id="_qJEoQJ0tEeGmCMENP40rhA" base_Property="_khWKwJ0tEeGmCMENP40rhA"/>
-  <CDA:CodeSystemConstraint xmi:id="_qiz98J0tEeGmCMENP40rhA" code="67543?9" displayName="Number of procedure attempts" base_Property="_khWKwJ0tEeGmCMENP40rhA">
+  <CDA:CodeSystemConstraint xmi:id="_qiz98J0tEeGmCMENP40rhA" code="67543-9" displayName="Number of procedure attempts" base_Property="_khWKwJ0tEeGmCMENP40rhA">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_t0vBsJ0tEeGmCMENP40rhA" base_Property="_khWKwZ0tEeGmCMENP40rhA"/>
   <CDA:PropertyValidation xmi:id="_MPukgJ0uEeGmCMENP40rhA" base_Property="_FuH4sJ0uEeGmCMENP40rhA"/>
-  <CDA:CodeSystemConstraint xmi:id="_MscVsJ0uEeGmCMENP40rhA" code="67544?7" displayName="Procedure successful indicator" base_Property="_FuH4sJ0uEeGmCMENP40rhA">
+  <CDA:CodeSystemConstraint xmi:id="_MscVsJ0uEeGmCMENP40rhA" code="67544-7" displayName="Procedure successful indicator" base_Property="_FuH4sJ0uEeGmCMENP40rhA">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_KHAkgJ0uEeGmCMENP40rhA" base_Property="_FuH4sZ0uEeGmCMENP40rhA"/>
   <CDA:CDATemplate xmi:id="_tffVAJ0uEeGmCMENP40rhA" base_Class="_lVl1sJ0uEeGmCMENP40rhA"/>
   <CDA:PropertyValidation xmi:id="_27D3kJ0uEeGmCMENP40rhA" base_Property="_nBv1gJ0uEeGmCMENP40rhA"/>
-  <CDA:CodeSystemConstraint xmi:id="_3YrAoJ0uEeGmCMENP40rhA" code="67545?4" displayName="Procedure complication" base_Property="_nBv1gJ0uEeGmCMENP40rhA">
+  <CDA:CodeSystemConstraint xmi:id="_3YrAoJ0uEeGmCMENP40rhA" code="67545-4" displayName="Procedure complication" base_Property="_nBv1gJ0uEeGmCMENP40rhA">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:ValueSetConstraint xmi:id="_8IBEoJ0uEeGmCMENP40rhA" base_Property="_nBv1gZ0uEeGmCMENP40rhA">
     <reference href="emspcr-vocab.uml#_s33_sHSPEeGa4IXs2ghZEw"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_iKvN0J0vEeGmCMENP40rhA" base_Property="_bVyIMJ0vEeGmCMENP40rhA"/>
-  <CDA:CodeSystemConstraint xmi:id="_kG9p8J0vEeGmCMENP40rhA" code="67546?2" displayName="Procedure patient response" base_Property="_bVyIMJ0vEeGmCMENP40rhA">
+  <CDA:CodeSystemConstraint xmi:id="_kG9p8J0vEeGmCMENP40rhA" code="67546-2" displayName="Procedure patient response" base_Property="_bVyIMJ0vEeGmCMENP40rhA">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_jBLtoJ0vEeGmCMENP40rhA" base_Property="_bVyIMZ0vEeGmCMENP40rhA"/>
@@ -7625,11 +7625,11 @@ This is the value represented in the header for the encompassing encounter</body
   </CDA:ValueSetConstraint>
   <CDA:AssociationValidation xmi:id="_XXurhcIAEeGOXu0EprM3pw" base_Association="_XXurgMIAEeGOXu0EprM3pw"/>
   <CDA:PropertyValidation xmi:id="_3PX-IJoiEeG_FLcaRgAa7g" base_Property="_0vSnAJoiEeG_FLcaRgAa7g"/>
-  <CDA:CodeSystemConstraint xmi:id="_KE4rkJojEeG_FLcaRgAa7g" code="8335?2" base_Property="_IKvTEJojEeG_FLcaRgAa7g">
+  <CDA:CodeSystemConstraint xmi:id="_KE4rkJojEeG_FLcaRgAa7g" code="8335-2" base_Property="_IKvTEJojEeG_FLcaRgAa7g">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_U6KzEJojEeG_FLcaRgAa7g" base_Property="_IKvTEZojEeG_FLcaRgAa7g"/>
-  <CDA:CodeSystemConstraint xmi:id="_12lw0JojEeG_FLcaRgAa7g" code="67670?0" base_Property="_ymc1wJojEeG_FLcaRgAa7g">
+  <CDA:CodeSystemConstraint xmi:id="_12lw0JojEeG_FLcaRgAa7g" code="67670-0" base_Property="_ymc1wJojEeG_FLcaRgAa7g">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_3w4TQJojEeG_FLcaRgAa7g" base_Property="_ymc1wJojEeG_FLcaRgAa7g"/>
@@ -7637,21 +7637,21 @@ This is the value represented in the header for the encompassing encounter</body
     <reference href="emspcr-vocab.uml#_n9WYsHSKEeGa4IXs2ghZEw"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_neJ2MJokEeG_FLcaRgAa7g" base_Property="_c64EsJokEeG_FLcaRgAa7g"/>
-  <CDA:CodeSystemConstraint xmi:id="_oXlYkJokEeG_FLcaRgAa7g" code="67524?9" base_Property="_c64EsJokEeG_FLcaRgAa7g">
+  <CDA:CodeSystemConstraint xmi:id="_oXlYkJokEeG_FLcaRgAa7g" code="67524-9" base_Property="_c64EsJokEeG_FLcaRgAa7g">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_m0f1MJokEeG_FLcaRgAa7g" base_Property="_c64EsZokEeG_FLcaRgAa7g"/>
   <CDA:ValueSetConstraint xmi:id="_rObC0JokEeG_FLcaRgAa7g" base_Property="_c64EsZokEeG_FLcaRgAa7g">
     <reference href="emspcr-vocab.uml#_vNPt4HSKEeGa4IXs2ghZEw"/>
   </CDA:ValueSetConstraint>
-  <CDA:CodeSystemConstraint xmi:id="_9C6_MJokEeG_FLcaRgAa7g" code="67525?6" base_Property="_74YesJokEeG_FLcaRgAa7g">
+  <CDA:CodeSystemConstraint xmi:id="_9C6_MJokEeG_FLcaRgAa7g" code="67525-6" base_Property="_74YesJokEeG_FLcaRgAa7g">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_-z_UMJokEeG_FLcaRgAa7g" base_Property="_74YesJokEeG_FLcaRgAa7g"/>
   <CDA:ValueSetConstraint xmi:id="_C7Kk8JolEeG_FLcaRgAa7g" base_Property="_74YesZokEeG_FLcaRgAa7g">
     <reference href="emspcr-vocab.uml#_ygAfIXSKEeGa4IXs2ghZEw"/>
   </CDA:ValueSetConstraint>
-  <CDA:CodeSystemConstraint xmi:id="_Ud9tUJolEeG_FLcaRgAa7g" code="67526?4" base_Property="_RoAz4JolEeG_FLcaRgAa7g">
+  <CDA:CodeSystemConstraint xmi:id="_Ud9tUJolEeG_FLcaRgAa7g" code="67526-4" base_Property="_RoAz4JolEeG_FLcaRgAa7g">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_WkJ9wJolEeG_FLcaRgAa7g" base_Property="_RoAz4JolEeG_FLcaRgAa7g"/>
@@ -7659,19 +7659,19 @@ This is the value represented in the header for the encompassing encounter</body
   <CDA:ValueSetConstraint xmi:id="_Za2eEJolEeG_FLcaRgAa7g" base_Property="_RoAz4ZolEeG_FLcaRgAa7g">
     <reference href="emspcr-vocab.uml#_Ts2pEHSMEeGa4IXs2ghZEw"/>
   </CDA:ValueSetConstraint>
-  <CDA:CodeSystemConstraint xmi:id="_rz8VQJolEeG_FLcaRgAa7g" code="67527?2" displayName="Neck assessment finding" base_Property="_pmm7AJolEeG_FLcaRgAa7g">
+  <CDA:CodeSystemConstraint xmi:id="_rz8VQJolEeG_FLcaRgAa7g" code="67527-2" displayName="Neck assessment finding" base_Property="_pmm7AJolEeG_FLcaRgAa7g">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:ValueSetConstraint xmi:id="_0s22sJolEeG_FLcaRgAa7g" base_Property="_pmm7AZolEeG_FLcaRgAa7g">
     <reference href="emspcr-vocab.uml#_XG_NoHSMEeGa4IXs2ghZEw"/>
   </CDA:ValueSetConstraint>
-  <CDA:CodeSystemConstraint xmi:id="_I_8VYJomEeG_FLcaRgAa7g" code="67528?0" displayName="Chest and lungs assessment" base_Property="_D1he8JomEeG_FLcaRgAa7g">
+  <CDA:CodeSystemConstraint xmi:id="_I_8VYJomEeG_FLcaRgAa7g" code="67528-0" displayName="Chest and lungs assessment" base_Property="_D1he8JomEeG_FLcaRgAa7g">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:ValueSetConstraint xmi:id="_MHmp4JomEeG_FLcaRgAa7g" base_Property="_D1he8ZomEeG_FLcaRgAa7g">
     <reference href="emspcr-vocab.uml#_aepF8HSMEeGa4IXs2ghZEw"/>
   </CDA:ValueSetConstraint>
-  <CDA:CodeSystemConstraint xmi:id="_eO_tEJomEeG_FLcaRgAa7g" code="67529?8" displayName="Heart assessment finding" base_Property="_bT1jgJomEeG_FLcaRgAa7g">
+  <CDA:CodeSystemConstraint xmi:id="_eO_tEJomEeG_FLcaRgAa7g" code="67529-8" displayName="Heart assessment finding" base_Property="_bT1jgJomEeG_FLcaRgAa7g">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_f-t-QJomEeG_FLcaRgAa7g" base_Property="_bT1jgJomEeG_FLcaRgAa7g"/>
@@ -7679,7 +7679,7 @@ This is the value represented in the header for the encompassing encounter</body
   <CDA:ValueSetConstraint xmi:id="_k0dlMJomEeG_FLcaRgAa7g" base_Property="_bT1jgZomEeG_FLcaRgAa7g">
     <reference href="emspcr-vocab.uml#_jOfyAHSMEeGa4IXs2ghZEw"/>
   </CDA:ValueSetConstraint>
-  <CDA:CodeSystemConstraint xmi:id="_ZegHoJooEeG_FLcaRgAa7g" code="67530?6" displayName="Abdomen assessment" base_Property="_Xrf48JooEeG_FLcaRgAa7g">
+  <CDA:CodeSystemConstraint xmi:id="_ZegHoJooEeG_FLcaRgAa7g" code="67530-6" displayName="Abdomen assessment" base_Property="_Xrf48JooEeG_FLcaRgAa7g">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:ValueSetConstraint xmi:id="_38giMJooEeG_FLcaRgAa7g" base_Property="_Xrf48ZooEeG_FLcaRgAa7g">
@@ -7688,14 +7688,14 @@ This is the value represented in the header for the encompassing encounter</body
   <CDA:ValueSetConstraint xmi:id="_54cDYJooEeG_FLcaRgAa7g" base_Property="_1jIQAJooEeG_FLcaRgAa7g">
     <reference href="emspcr-vocab.uml#_ovhxoHSMEeGa4IXs2ghZEw"/>
   </CDA:ValueSetConstraint>
-  <CDA:CodeSystemConstraint xmi:id="_V1-sUJopEeG_FLcaRgAa7g" code="67531?4" displayName="Pelvic and genitourinary assessment" base_Property="_RyXs8JopEeG_FLcaRgAa7g">
+  <CDA:CodeSystemConstraint xmi:id="_V1-sUJopEeG_FLcaRgAa7g" code="67531-4" displayName="Pelvic and genitourinary assessment" base_Property="_RyXs8JopEeG_FLcaRgAa7g">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:ValueSetConstraint xmi:id="_ZOcc8JopEeG_FLcaRgAa7g" base_Property="_RyXs8ZopEeG_FLcaRgAa7g">
     <reference href="emspcr-vocab.uml#_rf5ngHSMEeGa4IXs2ghZEw"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_c1L6IJopEeG_FLcaRgAa7g" base_Property="_RyXs8ZopEeG_FLcaRgAa7g"/>
-  <CDA:CodeSystemConstraint xmi:id="_v7Nv0JopEeG_FLcaRgAa7g" code="67532?2" displayName="Back and spine assessment" base_Property="_sZ0ssJopEeG_FLcaRgAa7g">
+  <CDA:CodeSystemConstraint xmi:id="_v7Nv0JopEeG_FLcaRgAa7g" code="67532-2" displayName="Back and spine assessment" base_Property="_sZ0ssJopEeG_FLcaRgAa7g">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_yjCGoJopEeG_FLcaRgAa7g" base_Property="_sZ0ssJopEeG_FLcaRgAa7g"/>
@@ -7708,7 +7708,7 @@ This is the value represented in the header for the encompassing encounter</body
     <reference href="emspcr-vocab.uml#_um7C0HSMEeGa4IXs2ghZEw"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_VMpmAJoqEeG_FLcaRgAa7g" base_Property="_P7YgsJoqEeG_FLcaRgAa7g"/>
-  <CDA:CodeSystemConstraint xmi:id="_WlUCEJoqEeG_FLcaRgAa7g" code="67533?0" displayName="Extremities assessment" base_Property="_P7YgsJoqEeG_FLcaRgAa7g">
+  <CDA:CodeSystemConstraint xmi:id="_WlUCEJoqEeG_FLcaRgAa7g" code="67533-0" displayName="Extremities assessment" base_Property="_P7YgsJoqEeG_FLcaRgAa7g">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:ValueSetConstraint xmi:id="_bWmm0JoqEeG_FLcaRgAa7g" base_Property="_P7YgsZoqEeG_FLcaRgAa7g">
@@ -7718,7 +7718,7 @@ This is the value represented in the header for the encompassing encounter</body
   <CDA:ValueSetConstraint xmi:id="_g9cTgJoqEeG_FLcaRgAa7g" base_Property="_P7YgtJoqEeG_FLcaRgAa7g">
     <reference href="emspcr-vocab.uml#_0zvxcXSMEeGa4IXs2ghZEw"/>
   </CDA:ValueSetConstraint>
-  <CDA:CodeSystemConstraint xmi:id="_wsowQJoqEeG_FLcaRgAa7g" code="67534?8" displayName="Eye assessment" base_Property="_tKDaUJoqEeG_FLcaRgAa7g">
+  <CDA:CodeSystemConstraint xmi:id="_wsowQJoqEeG_FLcaRgAa7g" code="67534-8" displayName="Eye assessment" base_Property="_tKDaUJoqEeG_FLcaRgAa7g">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_zR7XgJoqEeG_FLcaRgAa7g" base_Property="_tKDaUJoqEeG_FLcaRgAa7g"/>
@@ -7731,13 +7731,13 @@ This is the value represented in the header for the encompassing encounter</body
     <reference href="emspcr-vocab.uml#_EYTEcHSNEeGa4IXs2ghZEw"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_NPbbUJorEeG_FLcaRgAa7g" severity="INFO" base_Property="_F8R90JorEeG_FLcaRgAa7g"/>
-  <CDA:CodeSystemConstraint xmi:id="_O0cRUJorEeG_FLcaRgAa7g" code="67535?5" displayName="Mental status assessment" base_Property="_F8R90JorEeG_FLcaRgAa7g">
+  <CDA:CodeSystemConstraint xmi:id="_O0cRUJorEeG_FLcaRgAa7g" code="67535-5" displayName="Mental status assessment" base_Property="_F8R90JorEeG_FLcaRgAa7g">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:ValueSetConstraint xmi:id="_Taa98JorEeG_FLcaRgAa7g" base_Property="_F8R90ZorEeG_FLcaRgAa7g">
     <reference href="emspcr-vocab.uml#_1rVckHSTEeGa4IXs2ghZEw"/>
   </CDA:ValueSetConstraint>
-  <CDA:CodeSystemConstraint xmi:id="_l0j-AJorEeG_FLcaRgAa7g" code="67536?3" displayName="Neurological status assessment" base_Property="_hNivkJorEeG_FLcaRgAa7g">
+  <CDA:CodeSystemConstraint xmi:id="_l0j-AJorEeG_FLcaRgAa7g" code="67536-3" displayName="Neurological status assessment" base_Property="_hNivkJorEeG_FLcaRgAa7g">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_pRoh0JorEeG_FLcaRgAa7g" base_Property="_hNivkJorEeG_FLcaRgAa7g"/>
@@ -7746,7 +7746,7 @@ This is the value represented in the header for the encompassing encounter</body
     <reference href="emspcr-vocab.uml#_Nu19EHSNEeGa4IXs2ghZEw"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_Al3A0JotEeG_FLcaRgAa7g" base_Property="_7XbNEJosEeG_FLcaRgAa7g"/>
-  <CDA:CodeSystemConstraint xmi:id="_BJ3s0JotEeG_FLcaRgAa7g" code="67471?3" displayName="Patient Pregnancy" base_Property="_7XbNEJosEeG_FLcaRgAa7g">
+  <CDA:CodeSystemConstraint xmi:id="_BJ3s0JotEeG_FLcaRgAa7g" code="67471-3" displayName="Patient Pregnancy" base_Property="_7XbNEJosEeG_FLcaRgAa7g">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="__rseoJosEeG_FLcaRgAa7g" base_Property="_7XbNEZosEeG_FLcaRgAa7g"/>
@@ -7754,24 +7754,24 @@ This is the value represented in the header for the encompassing encounter</body
     <reference href="emspcr-vocab.uml#_eQZq4HSNEeGa4IXs2ghZEw"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_ZbD_0JotEeG_FLcaRgAa7g" base_Property="_VF5WYJotEeG_FLcaRgAa7g"/>
-  <CDA:CodeSystemConstraint xmi:id="_Z2SjQJotEeG_FLcaRgAa7g" code="67517?3" displayName="Last oral intake" base_Property="_VF5WYJotEeG_FLcaRgAa7g">
+  <CDA:CodeSystemConstraint xmi:id="_Z2SjQJotEeG_FLcaRgAa7g" code="67517-3" displayName="Last oral intake" base_Property="_VF5WYJotEeG_FLcaRgAa7g">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_YdUlMJotEeG_FLcaRgAa7g" base_Property="_VF5WYZotEeG_FLcaRgAa7g"/>
   <CDA:PropertyValidation xmi:id="_z_ikEJotEeG_FLcaRgAa7g" base_Property="_tP9GoJotEeG_FLcaRgAa7g"/>
-  <CDA:CodeSystemConstraint xmi:id="_0znFUJotEeG_FLcaRgAa7g" code="30525?0" displayName="Patient age" base_Property="_tP9GoJotEeG_FLcaRgAa7g">
+  <CDA:CodeSystemConstraint xmi:id="_0znFUJotEeG_FLcaRgAa7g" code="30525-0" displayName="Patient age" base_Property="_tP9GoJotEeG_FLcaRgAa7g">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_5L57QJotEeG_FLcaRgAa7g" base_Property="_tP9GoZotEeG_FLcaRgAa7g"/>
   <CDA:PropertyValidation xmi:id="_Md-o4JouEeG_FLcaRgAa7g" base_Property="_I_28MJouEeG_FLcaRgAa7g"/>
-  <CDA:CodeSystemConstraint xmi:id="_M3HhoJouEeG_FLcaRgAa7g" code="67523?1" displayName="Contraindications to thrombolytic use" base_Property="_I_28MJouEeG_FLcaRgAa7g">
+  <CDA:CodeSystemConstraint xmi:id="_M3HhoJouEeG_FLcaRgAa7g" code="67523-1" displayName="Contraindications to thrombolytic use" base_Property="_I_28MJouEeG_FLcaRgAa7g">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:ValueSetConstraint xmi:id="_UmY6cJouEeG_FLcaRgAa7g" base_Property="_I_28MZouEeG_FLcaRgAa7g">
     <reference href="emspcr-vocab.uml#_RqmoAHSNEeGa4IXs2ghZEw"/>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_wc0OwJouEeG_FLcaRgAa7g" base_Property="_r59uoJouEeG_FLcaRgAa7g"/>
-  <CDA:CodeSystemConstraint xmi:id="_xvPf8JouEeG_FLcaRgAa7g" code="67523?1" displayName="Barriers to patient care" base_Property="_r59uoJouEeG_FLcaRgAa7g">
+  <CDA:CodeSystemConstraint xmi:id="_xvPf8JouEeG_FLcaRgAa7g" code="67523-1" displayName="Barriers to patient care" base_Property="_r59uoJouEeG_FLcaRgAa7g">
     <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_2OX9sJouEeG_FLcaRgAa7g" base_Property="_r59uoZouEeG_FLcaRgAa7g"/>
