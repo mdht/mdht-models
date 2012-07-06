@@ -1,8 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="topic_jbw_dmy_5g">
-  <title>Intellectual Property Notes</title>
+  <title>Licensing and Intellectual Property </title>
   <body>
+    <p/>
+    <p> Publication of this draft standard for trial use and comment has been approved by Health
+      Level Seven International (HL7). This draft standard is not an accredited American National
+      Standard. The comment period for use of this draft standard shall end 18 months from the date
+      of publication. Suggestions for revision should be submitted at
+      http://www.hl7.org/dstucomments/index.cfm.</p>
+      
+      <p>Following this 18 month evaluation period, this draft standard, revised as necessary, will be 
+      submitted to a normative ballot in preparation for approval by ANSI as an American National 
+      Standard. Implementations of this draft standard shall be viable throughout the normative ballot 
+      process and for up to six months after publication of the relevant normative standard. </p>
+      
+    <p>Copyright &#169; 2012
+      Health Level Seven International &#174; ALL RIGHTS RESERVED. The reproduction of this material in
+      any form is strictly forbidden without the written permission of the publisher. HL7
+      International and Health Level Seven are registered trademarks of Health Level Seven
+      International. Reg. U.S. Pat &amp;amp; TM Off.</p>
+    <p/>
     <p> A.         <b>If you are the individual that downloaded or ordered this HL7 Standard,
         specification or other work (in each and every instance "Material")</b>, the following
       describes the permitted uses of the Material.   </p>
