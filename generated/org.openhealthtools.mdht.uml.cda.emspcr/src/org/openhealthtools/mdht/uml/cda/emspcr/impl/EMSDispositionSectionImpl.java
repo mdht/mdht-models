@@ -12,11 +12,12 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 
 import org.eclipse.emf.ecore.EClass;
 
-import org.openhealthtools.mdht.uml.cda.emspcr.DerivedEntry;
 import org.openhealthtools.mdht.uml.cda.emspcr.EMSDispositionSection;
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 
 import org.openhealthtools.mdht.uml.cda.emspcr.operations.EMSDispositionSectionOperations;
+
+import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
 
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
@@ -29,7 +30,7 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  *
  * @generated
  */
-public class EMSDispositionSectionImpl extends DerivedCDASectionImpl implements EMSDispositionSection
+public class EMSDispositionSectionImpl extends SectionImpl implements EMSDispositionSection
 {
   /**
    * <!-- begin-user-doc -->
@@ -137,29 +138,9 @@ public class EMSDispositionSectionImpl extends DerivedCDASectionImpl implements 
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateEMSDispositionSectionEntry4(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return EMSDispositionSectionOperations.validateEMSDispositionSectionEntry4(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
   public boolean validateEMSDispositionSectionEntry5(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return EMSDispositionSectionOperations.validateEMSDispositionSectionEntry5(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateEMSDispositionSectionEntry6(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return EMSDispositionSectionOperations.validateEMSDispositionSectionEntry6(this, diagnostics, context);
   }
 
   /**
@@ -177,9 +158,9 @@ public class EMSDispositionSectionImpl extends DerivedCDASectionImpl implements 
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateEMSDispositionSectionEntry8(DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateEMSDispositionSectionEntry6(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return EMSDispositionSectionOperations.validateEMSDispositionSectionEntry8(this, diagnostics, context);
+    return EMSDispositionSectionOperations.validateEMSDispositionSectionEntry6(this, diagnostics, context);
   }
 
   /**
@@ -187,9 +168,9 @@ public class EMSDispositionSectionImpl extends DerivedCDASectionImpl implements 
    * <!-- end-user-doc -->
    * @generated
    */
-  public DerivedEntry getEntry6()
+  public boolean validateEMSDispositionSectionEntry4(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return EMSDispositionSectionOperations.getEntry6(this);
+    return EMSDispositionSectionOperations.validateEMSDispositionSectionEntry4(this, diagnostics, context);
   }
 
   /**

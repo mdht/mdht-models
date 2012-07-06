@@ -19,14 +19,22 @@ import org.openhealthtools.mdht.uml.cda.emspcr.EMSAllergiesAndAdverseReactionsSe
 import org.openhealthtools.mdht.uml.cda.emspcr.EMSBillingSection;
 import org.openhealthtools.mdht.uml.cda.emspcr.EMSCardiacArrestEventSection;
 import org.openhealthtools.mdht.uml.cda.emspcr.EMSCurrentMedicationSection;
+import org.openhealthtools.mdht.uml.cda.emspcr.EMSDispatchSection;
+import org.openhealthtools.mdht.uml.cda.emspcr.EMSDispositionSection;
 import org.openhealthtools.mdht.uml.cda.emspcr.EMSInjuryIncidentDescriptionSection;
 import org.openhealthtools.mdht.uml.cda.emspcr.EMSMedicationsAdministeredSection;
-import org.openhealthtools.mdht.uml.cda.emspcr.EMSPastMedicalHistory;
-import org.openhealthtools.mdht.uml.cda.emspcr.EMSPatientCareNarrative;
+import org.openhealthtools.mdht.uml.cda.emspcr.EMSPastMedicalHistorySection;
+import org.openhealthtools.mdht.uml.cda.emspcr.EMSPatientCareNarrativeSection;
+import org.openhealthtools.mdht.uml.cda.emspcr.EMSPersonnelAdverseEventSection;
 import org.openhealthtools.mdht.uml.cda.emspcr.EMSPhysicalAssessmentSection;
 import org.openhealthtools.mdht.uml.cda.emspcr.EMSProceduresPerformedSection;
+import org.openhealthtools.mdht.uml.cda.emspcr.EMSProtocolSection;
+import org.openhealthtools.mdht.uml.cda.emspcr.EMSResponseSection;
 import org.openhealthtools.mdht.uml.cda.emspcr.EMSSceneSection;
-import org.openhealthtools.mdht.uml.cda.emspcr.EMSSocialHistory;
+import org.openhealthtools.mdht.uml.cda.emspcr.EMSSituationSection;
+import org.openhealthtools.mdht.uml.cda.emspcr.EMSSocialHistorySection;
+import org.openhealthtools.mdht.uml.cda.emspcr.EMSTimesSection;
+import org.openhealthtools.mdht.uml.cda.emspcr.EMSVitalSignsSection;
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.PatientCareReport;
 
@@ -131,6 +139,16 @@ public class PatientCareReportImpl extends GeneralHeaderConstraintsImpl implemen
    * <!-- end-user-doc -->
    * @generated
    */
+  public boolean validatePatientCareReportAuthor(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return PatientCareReportOperations.validatePatientCareReportAuthor(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public boolean validatePatientCareReportRecordTarget(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return PatientCareReportOperations.validatePatientCareReportRecordTarget(this, diagnostics, context);
@@ -144,16 +162,6 @@ public class PatientCareReportImpl extends GeneralHeaderConstraintsImpl implemen
   public boolean validatePatientCareReportHumanAuthor(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return PatientCareReportOperations.validatePatientCareReportHumanAuthor(this, diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validatePatientCareReportComponentOf(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return PatientCareReportOperations.validatePatientCareReportComponentOf(this, diagnostics, context);
   }
 
   /**
@@ -291,6 +299,146 @@ public class PatientCareReportImpl extends GeneralHeaderConstraintsImpl implemen
    * <!-- end-user-doc -->
    * @generated
    */
+  public boolean validatePatientCareReportComponentOf(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return PatientCareReportOperations.validatePatientCareReportComponentOf(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validatePatientCareReportEMSDispatchSection(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return PatientCareReportOperations.validatePatientCareReportEMSDispatchSection(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validatePatientCareReportEMSDispositionSection(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return PatientCareReportOperations.validatePatientCareReportEMSDispositionSection(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validatePatientCareReportEMSPersonnelAdverseEventSection(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return PatientCareReportOperations.validatePatientCareReportEMSPersonnelAdverseEventSection(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validatePatientCareReportEMSProtocolSection(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return PatientCareReportOperations.validatePatientCareReportEMSProtocolSection(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validatePatientCareReportEMSResponseSection(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return PatientCareReportOperations.validatePatientCareReportEMSResponseSection(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validatePatientCareReportEMSSituationSection(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return PatientCareReportOperations.validatePatientCareReportEMSSituationSection(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validatePatientCareReportEMSTimesSection(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return PatientCareReportOperations.validatePatientCareReportEMSTimesSection(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validatePatientCareReportEMSVitalSignsSection(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return PatientCareReportOperations.validatePatientCareReportEMSVitalSignsSection(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validatePatientCareReportEMSHumanAuthorParticipation(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return PatientCareReportOperations.validatePatientCareReportEMSHumanAuthorParticipation(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validatePatientCareReportCustodian(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return PatientCareReportOperations.validatePatientCareReportCustodian(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validatePatientCareReportDocumentationOf(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return PatientCareReportOperations.validatePatientCareReportDocumentationOf(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validatePatientCareReportRelatedDocument(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return PatientCareReportOperations.validatePatientCareReportRelatedDocument(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validatePatientCareReportParticipant(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return PatientCareReportOperations.validatePatientCareReportParticipant(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public EMSBillingSection getBilling()
   {
     return PatientCareReportOperations.getBilling(this);
@@ -351,7 +499,7 @@ public class PatientCareReportImpl extends GeneralHeaderConstraintsImpl implemen
    * <!-- end-user-doc -->
    * @generated
    */
-  public EMSPastMedicalHistory getEMSPastMedicalHistory()
+  public EMSPastMedicalHistorySection getEMSPastMedicalHistory()
   {
     return PatientCareReportOperations.getEMSPastMedicalHistory(this);
   }
@@ -361,7 +509,7 @@ public class PatientCareReportImpl extends GeneralHeaderConstraintsImpl implemen
    * <!-- end-user-doc -->
    * @generated
    */
-  public EMSSocialHistory getEMSSocialHistory()
+  public EMSSocialHistorySection getEMSSocialHistory()
   {
     return PatientCareReportOperations.getEMSSocialHistory(this);
   }
@@ -401,7 +549,7 @@ public class PatientCareReportImpl extends GeneralHeaderConstraintsImpl implemen
    * <!-- end-user-doc -->
    * @generated
    */
-  public EMSPatientCareNarrative getEMSPatientCareNarrative()
+  public EMSPatientCareNarrativeSection getEMSPatientCareNarrative()
   {
     return PatientCareReportOperations.getEMSPatientCareNarrative(this);
   }
@@ -414,6 +562,86 @@ public class PatientCareReportImpl extends GeneralHeaderConstraintsImpl implemen
   public EMSSceneSection getEMSSceneSection()
   {
     return PatientCareReportOperations.getEMSSceneSection(this);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EMSDispatchSection getEMSDispatchSection()
+  {
+    return PatientCareReportOperations.getEMSDispatchSection(this);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EMSDispositionSection getEMSDispositionSection()
+  {
+    return PatientCareReportOperations.getEMSDispositionSection(this);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EMSPersonnelAdverseEventSection getEMSPersonnelAdverseEventSection()
+  {
+    return PatientCareReportOperations.getEMSPersonnelAdverseEventSection(this);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EMSProtocolSection getEMSProtocolSection()
+  {
+    return PatientCareReportOperations.getEMSProtocolSection(this);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EMSResponseSection getEMSResponseSection()
+  {
+    return PatientCareReportOperations.getEMSResponseSection(this);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EMSSituationSection getEMSSituationSection()
+  {
+    return PatientCareReportOperations.getEMSSituationSection(this);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EMSTimesSection getEMSTimesSection()
+  {
+    return PatientCareReportOperations.getEMSTimesSection(this);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EMSVitalSignsSection getEMSVitalSignsSection()
+  {
+    return PatientCareReportOperations.getEMSVitalSignsSection(this);
   }
 
   /**

@@ -17,6 +17,8 @@ import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 
 import org.openhealthtools.mdht.uml.cda.emspcr.operations.EMSTimesSectionOperations;
 
+import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
+
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -28,7 +30,7 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  *
  * @generated
  */
-public class EMSTimesSectionImpl extends DerivedCDASectionImpl implements EMSTimesSection
+public class EMSTimesSectionImpl extends SectionImpl implements EMSTimesSection
 {
   /**
    * <!-- begin-user-doc -->

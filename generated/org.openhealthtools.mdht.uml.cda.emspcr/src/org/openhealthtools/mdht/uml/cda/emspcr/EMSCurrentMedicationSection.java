@@ -10,6 +10,8 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
+import org.openhealthtools.mdht.uml.cda.Section;
+
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>EMS Current Medication Section</b></em>'.
@@ -17,14 +19,17 @@ import org.eclipse.emf.common.util.DiagnosticChain;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage#getEMSCurrentMedicationSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='EMSCurrentMedicationSectionTemplateId EMSCurrentMedicationSectionCode EMSCurrentMedicationSectionEntry1 EMSCurrentMedicationSectionEntry2 EMSCurrentMedicationSectionEntry3' templateId.root='2.16.840.1.113883.17.3.10.1.15' code.code='67844-1' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='EMS Current Medications'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCurrentMedicationSectionDerivedEntryCurrentlyOnMedication code.code='67791-4' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Currently on medication' constraints.validation.error='CurrentlyOnMedicationCode'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCurrentMedicationSectionDerivedEntryPatientOnAnticoagulants code.code='69749-0' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' constraints.validation.error='PatientOnAnticoagulantsCode'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCurrentMedicationSectionDerivedEntryEMSCurrentMedication routeCode.codeSystem='2.16.840.1.113883.6.1' routeCode.codeSystemName='LOINC' constraints.validation.error='EMSCurrentMedicationRouteCode'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCurrentMedicationSectionDerivedEntryEMSCurrentMedicationEMSCurrentMedicationConsumableEMSCurrentMedicationProductEMSCurrentMedicationDrug code.codeSystem='2.16.840.1.113883.6.88' code.codeSystemName='RxNorm' constraints.validation.error='EMSCurrentMedicationDrugCode'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='EMSCurrentMedicationSectionTemplateId EMSCurrentMedicationSectionCode EMSCurrentMedicationSectionTitle EMSCurrentMedicationSectionEntry1 EMSCurrentMedicationSectionEntry2 EMSCurrentMedicationSectionEntry3' templateId.root='2.16.840.1.113883.17.3.10.1.15' code.code='67844-1' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='EMS Current Medications Section'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCurrentMedicationSectionDerivedEntry constraints.validation.error='DerivedEntryPatientOnAnticoagulants' constraints.validation.info='DerivedEntryEMSCurrentMedication'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCurrentMedicationSectionDerivedEntryCurrentlyOnMedication code.code='67791-4' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Currently on medication' constraints.validation.error='CurrentlyOnMedicationCode CurrentlyOnMedicationValue'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCurrentMedicationSectionDerivedEntryPatientOnAnticoagulants code.code='69749-0' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Patient on anticoagulants' constraints.validation.error='PatientOnAnticoagulantsCode PatientOnAnticoagulantsValue'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCurrentMedicationSectionDerivedEntryEMSCurrentMedication constraints.validation.warning='EMSCurrentMedicationDoseQuantity EMSCurrentMedicationRouteCodeP' routeCode.codeSystem='2.16.840.1.113883.6.1' routeCode.codeSystemName='LOINC' constraints.validation.error='EMSCurrentMedicationRouteCode EMSCurrentMedicationEMSCurrentMedicationConsumable' constraints.validation.dependOn.EMSCurrentMedicationRouteCode='EMSCurrentMedicationRouteCodeP' constraints.validation.info='EMSCurrentMedicationNegationInd EMSCurrentMedicationNullFlavor'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCurrentMedicationSectionDerivedEntryEMSCurrentMedicationEMSCurrentMedicationConsumable constraints.validation.error='EMSCurrentMedicationConsumableManufacturedProduct'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCurrentMedicationSectionDerivedEntryEMSCurrentMedicationEMSCurrentMedicationConsumableEMSCurrentMedicationProduct constraints.validation.error='EMSCurrentMedicationProductManufacturedLabeledDrug'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCurrentMedicationSectionDerivedEntryEMSCurrentMedicationEMSCurrentMedicationConsumableEMSCurrentMedicationProductEMSCurrentMedicationDrug code.codeSystem='2.16.840.1.113883.6.88' code.codeSystemName='RxNorm' constraints.validation.error='EMSCurrentMedicationDrugCode EMSCurrentMedicationDrugCodeP'"
  * @generated
  */
-public interface EMSCurrentMedicationSection extends DerivedCDASection
+public interface EMSCurrentMedicationSection extends Section
 {
   /**
    * <!-- begin-user-doc -->
@@ -53,6 +58,19 @@ public interface EMSCurrentMedicationSection extends DerivedCDASection
    * @generated
    */
   boolean validateEMSCurrentMedicationSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * <!-- begin-model-doc -->
+   * (self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined())
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined())'"
+   * @generated
+   */
+  boolean validateEMSCurrentMedicationSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context);
 
   /**
    * <!-- begin-user-doc -->

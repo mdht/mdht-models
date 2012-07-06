@@ -17,6 +17,8 @@ import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 
 import org.openhealthtools.mdht.uml.cda.emspcr.operations.EMSCurrentMedicationSectionOperations;
 
+import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
+
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -28,7 +30,7 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  *
  * @generated
  */
-public class EMSCurrentMedicationSectionImpl extends DerivedCDASectionImpl implements EMSCurrentMedicationSection
+public class EMSCurrentMedicationSectionImpl extends SectionImpl implements EMSCurrentMedicationSection
 {
   /**
    * <!-- begin-user-doc -->
@@ -69,6 +71,16 @@ public class EMSCurrentMedicationSectionImpl extends DerivedCDASectionImpl imple
   public boolean validateEMSCurrentMedicationSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return EMSCurrentMedicationSectionOperations.validateEMSCurrentMedicationSectionCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateEMSCurrentMedicationSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return EMSCurrentMedicationSectionOperations.validateEMSCurrentMedicationSectionTitle(this, diagnostics, context);
   }
 
   /**

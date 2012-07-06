@@ -18,27 +18,26 @@ import org.openhealthtools.mdht.uml.cda.CDAPackage;
 
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 
-import org.openhealthtools.mdht.uml.cda.emspcr.DerivedCDASection;
 import org.openhealthtools.mdht.uml.cda.emspcr.DerivedEntry;
 import org.openhealthtools.mdht.uml.cda.emspcr.EMSAdvanceDirectivesSection;
 import org.openhealthtools.mdht.uml.cda.emspcr.EMSAllergiesAndAdverseReactionsSection;
 import org.openhealthtools.mdht.uml.cda.emspcr.EMSBillingSection;
 import org.openhealthtools.mdht.uml.cda.emspcr.EMSCardiacArrestEventSection;
 import org.openhealthtools.mdht.uml.cda.emspcr.EMSCurrentMedicationSection;
-import org.openhealthtools.mdht.uml.cda.emspcr.EMSDispatch;
+import org.openhealthtools.mdht.uml.cda.emspcr.EMSDispatchSection;
 import org.openhealthtools.mdht.uml.cda.emspcr.EMSDispositionSection;
 import org.openhealthtools.mdht.uml.cda.emspcr.EMSInjuryIncidentDescriptionSection;
 import org.openhealthtools.mdht.uml.cda.emspcr.EMSMedicationsAdministeredSection;
-import org.openhealthtools.mdht.uml.cda.emspcr.EMSPastMedicalHistory;
-import org.openhealthtools.mdht.uml.cda.emspcr.EMSPatientCareNarrative;
-import org.openhealthtools.mdht.uml.cda.emspcr.EMSPersonnelAdverseEvent;
+import org.openhealthtools.mdht.uml.cda.emspcr.EMSPastMedicalHistorySection;
+import org.openhealthtools.mdht.uml.cda.emspcr.EMSPatientCareNarrativeSection;
+import org.openhealthtools.mdht.uml.cda.emspcr.EMSPersonnelAdverseEventSection;
 import org.openhealthtools.mdht.uml.cda.emspcr.EMSPhysicalAssessmentSection;
 import org.openhealthtools.mdht.uml.cda.emspcr.EMSProceduresPerformedSection;
 import org.openhealthtools.mdht.uml.cda.emspcr.EMSProtocolSection;
-import org.openhealthtools.mdht.uml.cda.emspcr.EMSResponse;
+import org.openhealthtools.mdht.uml.cda.emspcr.EMSResponseSection;
 import org.openhealthtools.mdht.uml.cda.emspcr.EMSSceneSection;
 import org.openhealthtools.mdht.uml.cda.emspcr.EMSSituationSection;
-import org.openhealthtools.mdht.uml.cda.emspcr.EMSSocialHistory;
+import org.openhealthtools.mdht.uml.cda.emspcr.EMSSocialHistorySection;
 import org.openhealthtools.mdht.uml.cda.emspcr.EMSTimesSection;
 import org.openhealthtools.mdht.uml.cda.emspcr.EMSVitalSignsSection;
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrFactory;
@@ -68,20 +67,6 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    * @generated
    */
   private EClass emsBillingSectionEClass = null;
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  private EClass derivedCDASectionEClass = null;
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  private EClass derivedEntryEClass = null;
 
   /**
    * <!-- begin-user-doc -->
@@ -123,14 +108,14 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  private EClass emsPastMedicalHistoryEClass = null;
+  private EClass emsPastMedicalHistorySectionEClass = null;
 
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  private EClass emsSocialHistoryEClass = null;
+  private EClass emsSocialHistorySectionEClass = null;
 
   /**
    * <!-- begin-user-doc -->
@@ -158,7 +143,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  private EClass emsPatientCareNarrativeEClass = null;
+  private EClass emsPatientCareNarrativeSectionEClass = null;
 
   /**
    * <!-- begin-user-doc -->
@@ -172,21 +157,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  private EClass emsVitalSignsSectionEClass = null;
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  private EClass emsDispatchEClass = null;
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  private EClass emsResponseEClass = null;
+  private EClass emsDispatchSectionEClass = null;
 
   /**
    * <!-- begin-user-doc -->
@@ -200,7 +171,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  private EClass emsPersonnelAdverseEventEClass = null;
+  private EClass emsPersonnelAdverseEventSectionEClass = null;
 
   /**
    * <!-- begin-user-doc -->
@@ -208,6 +179,13 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    * @generated
    */
   private EClass emsProtocolSectionEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass emsResponseSectionEClass = null;
 
   /**
    * <!-- begin-user-doc -->
@@ -222,6 +200,20 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    * @generated
    */
   private EClass emsTimesSectionEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass emsVitalSignsSectionEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass derivedEntryEClass = null;
 
   /**
    * Creates an instance of the model <b>Package</b>, registered with
@@ -325,26 +317,6 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EClass getDerivedCDASection()
-  {
-    return derivedCDASectionEClass;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EClass getDerivedEntry()
-  {
-    return derivedEntryEClass;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
   public EClass getEMSInjuryIncidentDescriptionSection()
   {
     return emsInjuryIncidentDescriptionSectionEClass;
@@ -395,9 +367,9 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EClass getEMSPastMedicalHistory()
+  public EClass getEMSPastMedicalHistorySection()
   {
-    return emsPastMedicalHistoryEClass;
+    return emsPastMedicalHistorySectionEClass;
   }
 
   /**
@@ -405,9 +377,9 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EClass getEMSSocialHistory()
+  public EClass getEMSSocialHistorySection()
   {
-    return emsSocialHistoryEClass;
+    return emsSocialHistorySectionEClass;
   }
 
   /**
@@ -445,9 +417,9 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EClass getEMSPatientCareNarrative()
+  public EClass getEMSPatientCareNarrativeSection()
   {
-    return emsPatientCareNarrativeEClass;
+    return emsPatientCareNarrativeSectionEClass;
   }
 
   /**
@@ -465,29 +437,9 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EClass getEMSVitalSignsSection()
+  public EClass getEMSDispatchSection()
   {
-    return emsVitalSignsSectionEClass;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EClass getEMSDispatch()
-  {
-    return emsDispatchEClass;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EClass getEMSResponse()
-  {
-    return emsResponseEClass;
+    return emsDispatchSectionEClass;
   }
 
   /**
@@ -505,9 +457,9 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EClass getEMSPersonnelAdverseEvent()
+  public EClass getEMSPersonnelAdverseEventSection()
   {
-    return emsPersonnelAdverseEventEClass;
+    return emsPersonnelAdverseEventSectionEClass;
   }
 
   /**
@@ -518,6 +470,16 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
   public EClass getEMSProtocolSection()
   {
     return emsProtocolSectionEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EClass getEMSResponseSection()
+  {
+    return emsResponseSectionEClass;
   }
 
   /**
@@ -538,6 +500,26 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
   public EClass getEMSTimesSection()
   {
     return emsTimesSectionEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EClass getEMSVitalSignsSection()
+  {
+    return emsVitalSignsSectionEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EClass getDerivedEntry()
+  {
+    return derivedEntryEClass;
   }
 
   /**
@@ -574,10 +556,6 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
 
     emsBillingSectionEClass = createEClass(EMS_BILLING_SECTION);
 
-    derivedCDASectionEClass = createEClass(DERIVED_CDA_SECTION);
-
-    derivedEntryEClass = createEClass(DERIVED_ENTRY);
-
     emsInjuryIncidentDescriptionSectionEClass = createEClass(EMS_INJURY_INCIDENT_DESCRIPTION_SECTION);
 
     emsCurrentMedicationSectionEClass = createEClass(EMS_CURRENT_MEDICATION_SECTION);
@@ -588,9 +566,9 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
 
     emsAllergiesAndAdverseReactionsSectionEClass = createEClass(EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION);
 
-    emsPastMedicalHistoryEClass = createEClass(EMS_PAST_MEDICAL_HISTORY);
+    emsPastMedicalHistorySectionEClass = createEClass(EMS_PAST_MEDICAL_HISTORY_SECTION);
 
-    emsSocialHistoryEClass = createEClass(EMS_SOCIAL_HISTORY);
+    emsSocialHistorySectionEClass = createEClass(EMS_SOCIAL_HISTORY_SECTION);
 
     emsPhysicalAssessmentSectionEClass = createEClass(EMS_PHYSICAL_ASSESSMENT_SECTION);
 
@@ -598,25 +576,27 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
 
     emsProceduresPerformedSectionEClass = createEClass(EMS_PROCEDURES_PERFORMED_SECTION);
 
-    emsPatientCareNarrativeEClass = createEClass(EMS_PATIENT_CARE_NARRATIVE);
+    emsPatientCareNarrativeSectionEClass = createEClass(EMS_PATIENT_CARE_NARRATIVE_SECTION);
 
     emsSceneSectionEClass = createEClass(EMS_SCENE_SECTION);
 
-    emsVitalSignsSectionEClass = createEClass(EMS_VITAL_SIGNS_SECTION);
-
-    emsDispatchEClass = createEClass(EMS_DISPATCH);
-
-    emsResponseEClass = createEClass(EMS_RESPONSE);
+    emsDispatchSectionEClass = createEClass(EMS_DISPATCH_SECTION);
 
     emsDispositionSectionEClass = createEClass(EMS_DISPOSITION_SECTION);
 
-    emsPersonnelAdverseEventEClass = createEClass(EMS_PERSONNEL_ADVERSE_EVENT);
+    emsPersonnelAdverseEventSectionEClass = createEClass(EMS_PERSONNEL_ADVERSE_EVENT_SECTION);
 
     emsProtocolSectionEClass = createEClass(EMS_PROTOCOL_SECTION);
+
+    emsResponseSectionEClass = createEClass(EMS_RESPONSE_SECTION);
 
     emsSituationSectionEClass = createEClass(EMS_SITUATION_SECTION);
 
     emsTimesSectionEClass = createEClass(EMS_TIMES_SECTION);
+
+    emsVitalSignsSectionEClass = createEClass(EMS_VITAL_SIGNS_SECTION);
+
+    derivedEntryEClass = createEClass(DERIVED_ENTRY);
   }
 
   /**
@@ -653,29 +633,28 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
 
     // Add supertypes to classes
     patientCareReportEClass.getESuperTypes().add(theConsolPackage.getGeneralHeaderConstraints());
-    emsBillingSectionEClass.getESuperTypes().add(this.getDerivedCDASection());
-    derivedCDASectionEClass.getESuperTypes().add(theCDAPackage.getSection());
+    emsBillingSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
+    emsInjuryIncidentDescriptionSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
+    emsCurrentMedicationSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
+    emsCardiacArrestEventSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
+    emsAdvanceDirectivesSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
+    emsAllergiesAndAdverseReactionsSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
+    emsPastMedicalHistorySectionEClass.getESuperTypes().add(theCDAPackage.getSection());
+    emsSocialHistorySectionEClass.getESuperTypes().add(theCDAPackage.getSection());
+    emsPhysicalAssessmentSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
+    emsMedicationsAdministeredSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
+    emsProceduresPerformedSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
+    emsPatientCareNarrativeSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
+    emsSceneSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
+    emsDispatchSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
+    emsDispositionSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
+    emsPersonnelAdverseEventSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
+    emsProtocolSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
+    emsResponseSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
+    emsSituationSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
+    emsTimesSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
+    emsVitalSignsSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
     derivedEntryEClass.getESuperTypes().add(theCDAPackage.getEntry());
-    emsInjuryIncidentDescriptionSectionEClass.getESuperTypes().add(this.getDerivedCDASection());
-    emsCurrentMedicationSectionEClass.getESuperTypes().add(this.getDerivedCDASection());
-    emsCardiacArrestEventSectionEClass.getESuperTypes().add(this.getDerivedCDASection());
-    emsAdvanceDirectivesSectionEClass.getESuperTypes().add(this.getDerivedCDASection());
-    emsAllergiesAndAdverseReactionsSectionEClass.getESuperTypes().add(this.getDerivedCDASection());
-    emsPastMedicalHistoryEClass.getESuperTypes().add(this.getDerivedCDASection());
-    emsSocialHistoryEClass.getESuperTypes().add(this.getDerivedCDASection());
-    emsPhysicalAssessmentSectionEClass.getESuperTypes().add(this.getDerivedCDASection());
-    emsMedicationsAdministeredSectionEClass.getESuperTypes().add(this.getDerivedCDASection());
-    emsProceduresPerformedSectionEClass.getESuperTypes().add(this.getDerivedCDASection());
-    emsPatientCareNarrativeEClass.getESuperTypes().add(theCDAPackage.getSection());
-    emsSceneSectionEClass.getESuperTypes().add(this.getDerivedCDASection());
-    emsVitalSignsSectionEClass.getESuperTypes().add(this.getDerivedCDASection());
-    emsDispatchEClass.getESuperTypes().add(this.getDerivedCDASection());
-    emsResponseEClass.getESuperTypes().add(this.getDerivedCDASection());
-    emsDispositionSectionEClass.getESuperTypes().add(this.getDerivedCDASection());
-    emsPersonnelAdverseEventEClass.getESuperTypes().add(this.getDerivedCDASection());
-    emsProtocolSectionEClass.getESuperTypes().add(this.getDerivedCDASection());
-    emsSituationSectionEClass.getESuperTypes().add(this.getDerivedCDASection());
-    emsTimesSectionEClass.getESuperTypes().add(this.getDerivedCDASection());
 
     // Initialize classes and features; add operations and parameters
     initEClass(patientCareReportEClass, PatientCareReport.class, "PatientCareReport", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -734,6 +713,15 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
     g1.getETypeArguments().add(g2);
     addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
+    op = addEOperation(patientCareReportEClass, ecorePackage.getEBoolean(), "validatePatientCareReportAuthor", 0, 1, IS_UNIQUE, IS_ORDERED);
+    addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+    g1 = createEGenericType(ecorePackage.getEMap());
+    g2 = createEGenericType(ecorePackage.getEJavaObject());
+    g1.getETypeArguments().add(g2);
+    g2 = createEGenericType(ecorePackage.getEJavaObject());
+    g1.getETypeArguments().add(g2);
+    addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
     op = addEOperation(patientCareReportEClass, ecorePackage.getEBoolean(), "validatePatientCareReportRecordTarget", 0, 1, IS_UNIQUE, IS_ORDERED);
     addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
     g1 = createEGenericType(ecorePackage.getEMap());
@@ -744,15 +732,6 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
     addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
     op = addEOperation(patientCareReportEClass, ecorePackage.getEBoolean(), "validatePatientCareReportHumanAuthor", 0, 1, IS_UNIQUE, IS_ORDERED);
-    addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-    g1 = createEGenericType(ecorePackage.getEMap());
-    g2 = createEGenericType(ecorePackage.getEJavaObject());
-    g1.getETypeArguments().add(g2);
-    g2 = createEGenericType(ecorePackage.getEJavaObject());
-    g1.getETypeArguments().add(g2);
-    addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-    op = addEOperation(patientCareReportEClass, ecorePackage.getEBoolean(), "validatePatientCareReportComponentOf", 0, 1, IS_UNIQUE, IS_ORDERED);
     addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
     g1 = createEGenericType(ecorePackage.getEMap());
     g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -878,6 +857,132 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
     g1.getETypeArguments().add(g2);
     addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
+    op = addEOperation(patientCareReportEClass, ecorePackage.getEBoolean(), "validatePatientCareReportComponentOf", 0, 1, IS_UNIQUE, IS_ORDERED);
+    addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+    g1 = createEGenericType(ecorePackage.getEMap());
+    g2 = createEGenericType(ecorePackage.getEJavaObject());
+    g1.getETypeArguments().add(g2);
+    g2 = createEGenericType(ecorePackage.getEJavaObject());
+    g1.getETypeArguments().add(g2);
+    addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+    op = addEOperation(patientCareReportEClass, ecorePackage.getEBoolean(), "validatePatientCareReportEMSDispatchSection", 0, 1, IS_UNIQUE, IS_ORDERED);
+    addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+    g1 = createEGenericType(ecorePackage.getEMap());
+    g2 = createEGenericType(ecorePackage.getEJavaObject());
+    g1.getETypeArguments().add(g2);
+    g2 = createEGenericType(ecorePackage.getEJavaObject());
+    g1.getETypeArguments().add(g2);
+    addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+    op = addEOperation(patientCareReportEClass, ecorePackage.getEBoolean(), "validatePatientCareReportEMSDispositionSection", 0, 1, IS_UNIQUE, IS_ORDERED);
+    addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+    g1 = createEGenericType(ecorePackage.getEMap());
+    g2 = createEGenericType(ecorePackage.getEJavaObject());
+    g1.getETypeArguments().add(g2);
+    g2 = createEGenericType(ecorePackage.getEJavaObject());
+    g1.getETypeArguments().add(g2);
+    addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+    op = addEOperation(patientCareReportEClass, ecorePackage.getEBoolean(), "validatePatientCareReportEMSPersonnelAdverseEventSection", 0, 1, IS_UNIQUE, IS_ORDERED);
+    addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+    g1 = createEGenericType(ecorePackage.getEMap());
+    g2 = createEGenericType(ecorePackage.getEJavaObject());
+    g1.getETypeArguments().add(g2);
+    g2 = createEGenericType(ecorePackage.getEJavaObject());
+    g1.getETypeArguments().add(g2);
+    addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+    op = addEOperation(patientCareReportEClass, ecorePackage.getEBoolean(), "validatePatientCareReportEMSProtocolSection", 0, 1, IS_UNIQUE, IS_ORDERED);
+    addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+    g1 = createEGenericType(ecorePackage.getEMap());
+    g2 = createEGenericType(ecorePackage.getEJavaObject());
+    g1.getETypeArguments().add(g2);
+    g2 = createEGenericType(ecorePackage.getEJavaObject());
+    g1.getETypeArguments().add(g2);
+    addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+    op = addEOperation(patientCareReportEClass, ecorePackage.getEBoolean(), "validatePatientCareReportEMSResponseSection", 0, 1, IS_UNIQUE, IS_ORDERED);
+    addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+    g1 = createEGenericType(ecorePackage.getEMap());
+    g2 = createEGenericType(ecorePackage.getEJavaObject());
+    g1.getETypeArguments().add(g2);
+    g2 = createEGenericType(ecorePackage.getEJavaObject());
+    g1.getETypeArguments().add(g2);
+    addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+    op = addEOperation(patientCareReportEClass, ecorePackage.getEBoolean(), "validatePatientCareReportEMSSituationSection", 0, 1, IS_UNIQUE, IS_ORDERED);
+    addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+    g1 = createEGenericType(ecorePackage.getEMap());
+    g2 = createEGenericType(ecorePackage.getEJavaObject());
+    g1.getETypeArguments().add(g2);
+    g2 = createEGenericType(ecorePackage.getEJavaObject());
+    g1.getETypeArguments().add(g2);
+    addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+    op = addEOperation(patientCareReportEClass, ecorePackage.getEBoolean(), "validatePatientCareReportEMSTimesSection", 0, 1, IS_UNIQUE, IS_ORDERED);
+    addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+    g1 = createEGenericType(ecorePackage.getEMap());
+    g2 = createEGenericType(ecorePackage.getEJavaObject());
+    g1.getETypeArguments().add(g2);
+    g2 = createEGenericType(ecorePackage.getEJavaObject());
+    g1.getETypeArguments().add(g2);
+    addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+    op = addEOperation(patientCareReportEClass, ecorePackage.getEBoolean(), "validatePatientCareReportEMSVitalSignsSection", 0, 1, IS_UNIQUE, IS_ORDERED);
+    addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+    g1 = createEGenericType(ecorePackage.getEMap());
+    g2 = createEGenericType(ecorePackage.getEJavaObject());
+    g1.getETypeArguments().add(g2);
+    g2 = createEGenericType(ecorePackage.getEJavaObject());
+    g1.getETypeArguments().add(g2);
+    addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+    op = addEOperation(patientCareReportEClass, ecorePackage.getEBoolean(), "validatePatientCareReportEMSHumanAuthorParticipation", 0, 1, IS_UNIQUE, IS_ORDERED);
+    addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+    g1 = createEGenericType(ecorePackage.getEMap());
+    g2 = createEGenericType(ecorePackage.getEJavaObject());
+    g1.getETypeArguments().add(g2);
+    g2 = createEGenericType(ecorePackage.getEJavaObject());
+    g1.getETypeArguments().add(g2);
+    addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+    op = addEOperation(patientCareReportEClass, ecorePackage.getEBoolean(), "validatePatientCareReportCustodian", 0, 1, IS_UNIQUE, IS_ORDERED);
+    addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+    g1 = createEGenericType(ecorePackage.getEMap());
+    g2 = createEGenericType(ecorePackage.getEJavaObject());
+    g1.getETypeArguments().add(g2);
+    g2 = createEGenericType(ecorePackage.getEJavaObject());
+    g1.getETypeArguments().add(g2);
+    addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+    op = addEOperation(patientCareReportEClass, ecorePackage.getEBoolean(), "validatePatientCareReportDocumentationOf", 0, 1, IS_UNIQUE, IS_ORDERED);
+    addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+    g1 = createEGenericType(ecorePackage.getEMap());
+    g2 = createEGenericType(ecorePackage.getEJavaObject());
+    g1.getETypeArguments().add(g2);
+    g2 = createEGenericType(ecorePackage.getEJavaObject());
+    g1.getETypeArguments().add(g2);
+    addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+    op = addEOperation(patientCareReportEClass, ecorePackage.getEBoolean(), "validatePatientCareReportRelatedDocument", 0, 1, IS_UNIQUE, IS_ORDERED);
+    addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+    g1 = createEGenericType(ecorePackage.getEMap());
+    g2 = createEGenericType(ecorePackage.getEJavaObject());
+    g1.getETypeArguments().add(g2);
+    g2 = createEGenericType(ecorePackage.getEJavaObject());
+    g1.getETypeArguments().add(g2);
+    addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+    op = addEOperation(patientCareReportEClass, ecorePackage.getEBoolean(), "validatePatientCareReportParticipant", 0, 1, IS_UNIQUE, IS_ORDERED);
+    addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+    g1 = createEGenericType(ecorePackage.getEMap());
+    g2 = createEGenericType(ecorePackage.getEJavaObject());
+    g1.getETypeArguments().add(g2);
+    g2 = createEGenericType(ecorePackage.getEJavaObject());
+    g1.getETypeArguments().add(g2);
+    addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
     addEOperation(patientCareReportEClass, this.getEMSBillingSection(), "getBilling", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
     addEOperation(patientCareReportEClass, this.getEMSInjuryIncidentDescriptionSection(), "getSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
@@ -890,9 +995,9 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
 
     addEOperation(patientCareReportEClass, this.getEMSAllergiesAndAdverseReactionsSection(), "getEMSAllergiesAndAdverseReactionsSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-    addEOperation(patientCareReportEClass, this.getEMSPastMedicalHistory(), "getEMSPastMedicalHistory", 1, 1, IS_UNIQUE, !IS_ORDERED);
+    addEOperation(patientCareReportEClass, this.getEMSPastMedicalHistorySection(), "getEMSPastMedicalHistory", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-    addEOperation(patientCareReportEClass, this.getEMSSocialHistory(), "getEMSSocialHistory", 1, 1, IS_UNIQUE, !IS_ORDERED);
+    addEOperation(patientCareReportEClass, this.getEMSSocialHistorySection(), "getEMSSocialHistory", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
     addEOperation(patientCareReportEClass, this.getEMSPhysicalAssessmentSection(), "getEMSPhysicalAssessmentSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
@@ -900,9 +1005,25 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
 
     addEOperation(patientCareReportEClass, this.getEMSProceduresPerformedSection(), "getEMSProceduresPerformedSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
-    addEOperation(patientCareReportEClass, this.getEMSPatientCareNarrative(), "getEMSPatientCareNarrative", 1, 1, IS_UNIQUE, !IS_ORDERED);
+    addEOperation(patientCareReportEClass, this.getEMSPatientCareNarrativeSection(), "getEMSPatientCareNarrative", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
     addEOperation(patientCareReportEClass, this.getEMSSceneSection(), "getEMSSceneSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+    addEOperation(patientCareReportEClass, this.getEMSDispatchSection(), "getEMSDispatchSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+    addEOperation(patientCareReportEClass, this.getEMSDispositionSection(), "getEMSDispositionSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+    addEOperation(patientCareReportEClass, this.getEMSPersonnelAdverseEventSection(), "getEMSPersonnelAdverseEventSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+    addEOperation(patientCareReportEClass, this.getEMSProtocolSection(), "getEMSProtocolSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+    addEOperation(patientCareReportEClass, this.getEMSResponseSection(), "getEMSResponseSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+    addEOperation(patientCareReportEClass, this.getEMSSituationSection(), "getEMSSituationSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+    addEOperation(patientCareReportEClass, this.getEMSTimesSection(), "getEMSTimesSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+    addEOperation(patientCareReportEClass, this.getEMSVitalSignsSection(), "getEMSVitalSignsSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
     initEClass(emsBillingSectionEClass, EMSBillingSection.class, "EMSBillingSection", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
@@ -934,30 +1055,6 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
     addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
     op = addEOperation(emsBillingSectionEClass, ecorePackage.getEBoolean(), "validateEMSBillingSectionLosentry", 0, 1, IS_UNIQUE, IS_ORDERED);
-    addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-    g1 = createEGenericType(ecorePackage.getEMap());
-    g2 = createEGenericType(ecorePackage.getEJavaObject());
-    g1.getETypeArguments().add(g2);
-    g2 = createEGenericType(ecorePackage.getEJavaObject());
-    g1.getETypeArguments().add(g2);
-    addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-    initEClass(derivedCDASectionEClass, DerivedCDASection.class, "DerivedCDASection", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-
-    addEOperation(derivedCDASectionEClass, this.getDerivedEntry(), "getEntry1", 1, 1, IS_UNIQUE, !IS_ORDERED);
-
-    initEClass(derivedEntryEClass, DerivedEntry.class, "DerivedEntry", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-
-    op = addEOperation(derivedEntryEClass, ecorePackage.getEBoolean(), "validateDerivedEntryTemplateId", 0, 1, IS_UNIQUE, IS_ORDERED);
-    addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-    g1 = createEGenericType(ecorePackage.getEMap());
-    g2 = createEGenericType(ecorePackage.getEJavaObject());
-    g1.getETypeArguments().add(g2);
-    g2 = createEGenericType(ecorePackage.getEJavaObject());
-    g1.getETypeArguments().add(g2);
-    addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-    op = addEOperation(derivedEntryEClass, ecorePackage.getEBoolean(), "validateDerivedEntryTypeCode", 0, 1, IS_UNIQUE, IS_ORDERED);
     addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
     g1 = createEGenericType(ecorePackage.getEMap());
     g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1088,6 +1185,15 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
     addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
     op = addEOperation(emsCurrentMedicationSectionEClass, ecorePackage.getEBoolean(), "validateEMSCurrentMedicationSectionCode", 0, 1, IS_UNIQUE, IS_ORDERED);
+    addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+    g1 = createEGenericType(ecorePackage.getEMap());
+    g2 = createEGenericType(ecorePackage.getEJavaObject());
+    g1.getETypeArguments().add(g2);
+    g2 = createEGenericType(ecorePackage.getEJavaObject());
+    g1.getETypeArguments().add(g2);
+    addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+    op = addEOperation(emsCurrentMedicationSectionEClass, ecorePackage.getEBoolean(), "validateEMSCurrentMedicationSectionTitle", 0, 1, IS_UNIQUE, IS_ORDERED);
     addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
     g1 = createEGenericType(ecorePackage.getEMap());
     g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1246,9 +1352,9 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
     g1.getETypeArguments().add(g2);
     addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-    initEClass(emsPastMedicalHistoryEClass, EMSPastMedicalHistory.class, "EMSPastMedicalHistory", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEClass(emsPastMedicalHistorySectionEClass, EMSPastMedicalHistorySection.class, "EMSPastMedicalHistorySection", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-    op = addEOperation(emsPastMedicalHistoryEClass, ecorePackage.getEBoolean(), "validateEMSPastMedicalHistoryTemplateId", 0, 1, IS_UNIQUE, IS_ORDERED);
+    op = addEOperation(emsPastMedicalHistorySectionEClass, ecorePackage.getEBoolean(), "validateEMSPastMedicalHistorySectionTemplateId", 0, 1, IS_UNIQUE, IS_ORDERED);
     addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
     g1 = createEGenericType(ecorePackage.getEMap());
     g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1257,7 +1363,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
     g1.getETypeArguments().add(g2);
     addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-    op = addEOperation(emsPastMedicalHistoryEClass, ecorePackage.getEBoolean(), "validateEMSPastMedicalHistoryCode", 0, 1, IS_UNIQUE, IS_ORDERED);
+    op = addEOperation(emsPastMedicalHistorySectionEClass, ecorePackage.getEBoolean(), "validateEMSPastMedicalHistorySectionCode", 0, 1, IS_UNIQUE, IS_ORDERED);
     addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
     g1 = createEGenericType(ecorePackage.getEMap());
     g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1266,7 +1372,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
     g1.getETypeArguments().add(g2);
     addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-    op = addEOperation(emsPastMedicalHistoryEClass, ecorePackage.getEBoolean(), "validateEMSPastMedicalHistoryCodeP", 0, 1, IS_UNIQUE, IS_ORDERED);
+    op = addEOperation(emsPastMedicalHistorySectionEClass, ecorePackage.getEBoolean(), "validateEMSPastMedicalHistorySectionCodeP", 0, 1, IS_UNIQUE, IS_ORDERED);
     addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
     g1 = createEGenericType(ecorePackage.getEMap());
     g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1275,7 +1381,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
     g1.getETypeArguments().add(g2);
     addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-    op = addEOperation(emsPastMedicalHistoryEClass, ecorePackage.getEBoolean(), "validateEMSPastMedicalHistoryTitle", 0, 1, IS_UNIQUE, IS_ORDERED);
+    op = addEOperation(emsPastMedicalHistorySectionEClass, ecorePackage.getEBoolean(), "validateEMSPastMedicalHistorySectionTitle", 0, 1, IS_UNIQUE, IS_ORDERED);
     addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
     g1 = createEGenericType(ecorePackage.getEMap());
     g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1284,7 +1390,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
     g1.getETypeArguments().add(g2);
     addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-    op = addEOperation(emsPastMedicalHistoryEClass, ecorePackage.getEBoolean(), "validateEMSPastMedicalHistoryEntry1", 0, 1, IS_UNIQUE, IS_ORDERED);
+    op = addEOperation(emsPastMedicalHistorySectionEClass, ecorePackage.getEBoolean(), "validateEMSPastMedicalHistorySectionEntry1", 0, 1, IS_UNIQUE, IS_ORDERED);
     addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
     g1 = createEGenericType(ecorePackage.getEMap());
     g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1293,7 +1399,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
     g1.getETypeArguments().add(g2);
     addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-    op = addEOperation(emsPastMedicalHistoryEClass, ecorePackage.getEBoolean(), "validateEMSPastMedicalHistoryEntry2", 0, 1, IS_UNIQUE, IS_ORDERED);
+    op = addEOperation(emsPastMedicalHistorySectionEClass, ecorePackage.getEBoolean(), "validateEMSPastMedicalHistorySectionEntry2", 0, 1, IS_UNIQUE, IS_ORDERED);
     addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
     g1 = createEGenericType(ecorePackage.getEMap());
     g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1302,9 +1408,9 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
     g1.getETypeArguments().add(g2);
     addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-    initEClass(emsSocialHistoryEClass, EMSSocialHistory.class, "EMSSocialHistory", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEClass(emsSocialHistorySectionEClass, EMSSocialHistorySection.class, "EMSSocialHistorySection", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-    op = addEOperation(emsSocialHistoryEClass, ecorePackage.getEBoolean(), "validateEMSSocialHistoryTemplateId", 0, 1, IS_UNIQUE, IS_ORDERED);
+    op = addEOperation(emsSocialHistorySectionEClass, ecorePackage.getEBoolean(), "validateEMSSocialHistorySectionTemplateId", 0, 1, IS_UNIQUE, IS_ORDERED);
     addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
     g1 = createEGenericType(ecorePackage.getEMap());
     g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1313,7 +1419,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
     g1.getETypeArguments().add(g2);
     addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-    op = addEOperation(emsSocialHistoryEClass, ecorePackage.getEBoolean(), "validateEMSSocialHistoryCode", 0, 1, IS_UNIQUE, IS_ORDERED);
+    op = addEOperation(emsSocialHistorySectionEClass, ecorePackage.getEBoolean(), "validateEMSSocialHistorySectionCode", 0, 1, IS_UNIQUE, IS_ORDERED);
     addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
     g1 = createEGenericType(ecorePackage.getEMap());
     g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1322,7 +1428,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
     g1.getETypeArguments().add(g2);
     addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-    op = addEOperation(emsSocialHistoryEClass, ecorePackage.getEBoolean(), "validateEMSSocialHistoryCodeP", 0, 1, IS_UNIQUE, IS_ORDERED);
+    op = addEOperation(emsSocialHistorySectionEClass, ecorePackage.getEBoolean(), "validateEMSSocialHistorySectionCodeP", 0, 1, IS_UNIQUE, IS_ORDERED);
     addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
     g1 = createEGenericType(ecorePackage.getEMap());
     g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1331,7 +1437,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
     g1.getETypeArguments().add(g2);
     addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-    op = addEOperation(emsSocialHistoryEClass, ecorePackage.getEBoolean(), "validateEMSSocialHistoryTitle", 0, 1, IS_UNIQUE, IS_ORDERED);
+    op = addEOperation(emsSocialHistorySectionEClass, ecorePackage.getEBoolean(), "validateEMSSocialHistorySectionTitle", 0, 1, IS_UNIQUE, IS_ORDERED);
     addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
     g1 = createEGenericType(ecorePackage.getEMap());
     g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1340,7 +1446,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
     g1.getETypeArguments().add(g2);
     addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-    op = addEOperation(emsSocialHistoryEClass, ecorePackage.getEBoolean(), "validateEMSSocialHistoryEntry1", 0, 1, IS_UNIQUE, IS_ORDERED);
+    op = addEOperation(emsSocialHistorySectionEClass, ecorePackage.getEBoolean(), "validateEMSSocialHistorySectionEntry1", 0, 1, IS_UNIQUE, IS_ORDERED);
     addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
     g1 = createEGenericType(ecorePackage.getEMap());
     g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1349,7 +1455,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
     g1.getETypeArguments().add(g2);
     addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-    op = addEOperation(emsSocialHistoryEClass, ecorePackage.getEBoolean(), "validateEMSSocialHistoryEntry2", 0, 1, IS_UNIQUE, IS_ORDERED);
+    op = addEOperation(emsSocialHistorySectionEClass, ecorePackage.getEBoolean(), "validateEMSSocialHistorySectionEntry2", 0, 1, IS_UNIQUE, IS_ORDERED);
     addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
     g1 = createEGenericType(ecorePackage.getEMap());
     g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1571,9 +1677,9 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
     g1.getETypeArguments().add(g2);
     addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-    initEClass(emsPatientCareNarrativeEClass, EMSPatientCareNarrative.class, "EMSPatientCareNarrative", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEClass(emsPatientCareNarrativeSectionEClass, EMSPatientCareNarrativeSection.class, "EMSPatientCareNarrativeSection", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-    op = addEOperation(emsPatientCareNarrativeEClass, ecorePackage.getEBoolean(), "validateEMSPatientCareNarrativeTemplateId", 0, 1, IS_UNIQUE, IS_ORDERED);
+    op = addEOperation(emsPatientCareNarrativeSectionEClass, ecorePackage.getEBoolean(), "validateEMSPatientCareNarrativeSectionTemplateId", 0, 1, IS_UNIQUE, IS_ORDERED);
     addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
     g1 = createEGenericType(ecorePackage.getEMap());
     g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1582,7 +1688,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
     g1.getETypeArguments().add(g2);
     addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-    op = addEOperation(emsPatientCareNarrativeEClass, ecorePackage.getEBoolean(), "validateEMSPatientCareNarrativeCode", 0, 1, IS_UNIQUE, IS_ORDERED);
+    op = addEOperation(emsPatientCareNarrativeSectionEClass, ecorePackage.getEBoolean(), "validateEMSPatientCareNarrativeSectionCode", 0, 1, IS_UNIQUE, IS_ORDERED);
     addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
     g1 = createEGenericType(ecorePackage.getEMap());
     g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1591,7 +1697,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
     g1.getETypeArguments().add(g2);
     addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-    op = addEOperation(emsPatientCareNarrativeEClass, ecorePackage.getEBoolean(), "validateEMSPatientCareNarrativeCodeP", 0, 1, IS_UNIQUE, IS_ORDERED);
+    op = addEOperation(emsPatientCareNarrativeSectionEClass, ecorePackage.getEBoolean(), "validateEMSPatientCareNarrativeSectionCodeP", 0, 1, IS_UNIQUE, IS_ORDERED);
     addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
     g1 = createEGenericType(ecorePackage.getEMap());
     g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1600,7 +1706,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
     g1.getETypeArguments().add(g2);
     addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-    op = addEOperation(emsPatientCareNarrativeEClass, ecorePackage.getEBoolean(), "validateEMSPatientCareNarrativeText", 0, 1, IS_UNIQUE, IS_ORDERED);
+    op = addEOperation(emsPatientCareNarrativeSectionEClass, ecorePackage.getEBoolean(), "validateEMSPatientCareNarrativeSectionText", 0, 1, IS_UNIQUE, IS_ORDERED);
     addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
     g1 = createEGenericType(ecorePackage.getEMap());
     g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1609,7 +1715,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
     g1.getETypeArguments().add(g2);
     addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-    op = addEOperation(emsPatientCareNarrativeEClass, ecorePackage.getEBoolean(), "validateEMSPatientCareNarrativeTitle", 0, 1, IS_UNIQUE, IS_ORDERED);
+    op = addEOperation(emsPatientCareNarrativeSectionEClass, ecorePackage.getEBoolean(), "validateEMSPatientCareNarrativeSectionTitle", 0, 1, IS_UNIQUE, IS_ORDERED);
     addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
     g1 = createEGenericType(ecorePackage.getEMap());
     g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1692,9 +1798,9 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
     g1.getETypeArguments().add(g2);
     addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-    initEClass(emsVitalSignsSectionEClass, EMSVitalSignsSection.class, "EMSVitalSignsSection", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEClass(emsDispatchSectionEClass, EMSDispatchSection.class, "EMSDispatchSection", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-    op = addEOperation(emsVitalSignsSectionEClass, ecorePackage.getEBoolean(), "validateEMSVitalSignsSectionTemplateId", 0, 1, IS_UNIQUE, IS_ORDERED);
+    op = addEOperation(emsDispatchSectionEClass, ecorePackage.getEBoolean(), "validateEMSDispatchSectionTemplateId", 0, 1, IS_UNIQUE, IS_ORDERED);
     addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
     g1 = createEGenericType(ecorePackage.getEMap());
     g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1703,7 +1809,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
     g1.getETypeArguments().add(g2);
     addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-    op = addEOperation(emsVitalSignsSectionEClass, ecorePackage.getEBoolean(), "validateEMSVitalSignsSectionCode", 0, 1, IS_UNIQUE, IS_ORDERED);
+    op = addEOperation(emsDispatchSectionEClass, ecorePackage.getEBoolean(), "validateEMSDispatchSectionCode", 0, 1, IS_UNIQUE, IS_ORDERED);
     addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
     g1 = createEGenericType(ecorePackage.getEMap());
     g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1712,7 +1818,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
     g1.getETypeArguments().add(g2);
     addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-    op = addEOperation(emsVitalSignsSectionEClass, ecorePackage.getEBoolean(), "validateEMSVitalSignsSectionTitle", 0, 1, IS_UNIQUE, IS_ORDERED);
+    op = addEOperation(emsDispatchSectionEClass, ecorePackage.getEBoolean(), "validateEMSDispatchSectionText", 0, 1, IS_UNIQUE, IS_ORDERED);
     addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
     g1 = createEGenericType(ecorePackage.getEMap());
     g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1721,7 +1827,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
     g1.getETypeArguments().add(g2);
     addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-    op = addEOperation(emsVitalSignsSectionEClass, ecorePackage.getEBoolean(), "validateEMSVitalSignsSectionEntry1", 0, 1, IS_UNIQUE, IS_ORDERED);
+    op = addEOperation(emsDispatchSectionEClass, ecorePackage.getEBoolean(), "validateEMSDispatchSectionTitle", 0, 1, IS_UNIQUE, IS_ORDERED);
     addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
     g1 = createEGenericType(ecorePackage.getEMap());
     g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1730,9 +1836,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
     g1.getETypeArguments().add(g2);
     addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-    initEClass(emsDispatchEClass, EMSDispatch.class, "EMSDispatch", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-
-    op = addEOperation(emsDispatchEClass, ecorePackage.getEBoolean(), "validateEMSDispatchTemplateId", 0, 1, IS_UNIQUE, IS_ORDERED);
+    op = addEOperation(emsDispatchSectionEClass, ecorePackage.getEBoolean(), "validateEMSDispatchSectionEntry1", 0, 1, IS_UNIQUE, IS_ORDERED);
     addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
     g1 = createEGenericType(ecorePackage.getEMap());
     g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1741,126 +1845,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
     g1.getETypeArguments().add(g2);
     addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-    op = addEOperation(emsDispatchEClass, ecorePackage.getEBoolean(), "validateEMSDispatchCode", 0, 1, IS_UNIQUE, IS_ORDERED);
-    addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-    g1 = createEGenericType(ecorePackage.getEMap());
-    g2 = createEGenericType(ecorePackage.getEJavaObject());
-    g1.getETypeArguments().add(g2);
-    g2 = createEGenericType(ecorePackage.getEJavaObject());
-    g1.getETypeArguments().add(g2);
-    addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-    op = addEOperation(emsDispatchEClass, ecorePackage.getEBoolean(), "validateEMSDispatchText", 0, 1, IS_UNIQUE, IS_ORDERED);
-    addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-    g1 = createEGenericType(ecorePackage.getEMap());
-    g2 = createEGenericType(ecorePackage.getEJavaObject());
-    g1.getETypeArguments().add(g2);
-    g2 = createEGenericType(ecorePackage.getEJavaObject());
-    g1.getETypeArguments().add(g2);
-    addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-    op = addEOperation(emsDispatchEClass, ecorePackage.getEBoolean(), "validateEMSDispatchTitle", 0, 1, IS_UNIQUE, IS_ORDERED);
-    addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-    g1 = createEGenericType(ecorePackage.getEMap());
-    g2 = createEGenericType(ecorePackage.getEJavaObject());
-    g1.getETypeArguments().add(g2);
-    g2 = createEGenericType(ecorePackage.getEJavaObject());
-    g1.getETypeArguments().add(g2);
-    addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-    op = addEOperation(emsDispatchEClass, ecorePackage.getEBoolean(), "validateEMSDispatchEntry1", 0, 1, IS_UNIQUE, IS_ORDERED);
-    addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-    g1 = createEGenericType(ecorePackage.getEMap());
-    g2 = createEGenericType(ecorePackage.getEJavaObject());
-    g1.getETypeArguments().add(g2);
-    g2 = createEGenericType(ecorePackage.getEJavaObject());
-    g1.getETypeArguments().add(g2);
-    addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-    op = addEOperation(emsDispatchEClass, ecorePackage.getEBoolean(), "validateEMSDispatchEntry2", 0, 1, IS_UNIQUE, IS_ORDERED);
-    addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-    g1 = createEGenericType(ecorePackage.getEMap());
-    g2 = createEGenericType(ecorePackage.getEJavaObject());
-    g1.getETypeArguments().add(g2);
-    g2 = createEGenericType(ecorePackage.getEJavaObject());
-    g1.getETypeArguments().add(g2);
-    addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-    initEClass(emsResponseEClass, EMSResponse.class, "EMSResponse", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-
-    op = addEOperation(emsResponseEClass, ecorePackage.getEBoolean(), "validateEMSResponseTemplateId", 0, 1, IS_UNIQUE, IS_ORDERED);
-    addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-    g1 = createEGenericType(ecorePackage.getEMap());
-    g2 = createEGenericType(ecorePackage.getEJavaObject());
-    g1.getETypeArguments().add(g2);
-    g2 = createEGenericType(ecorePackage.getEJavaObject());
-    g1.getETypeArguments().add(g2);
-    addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-    op = addEOperation(emsResponseEClass, ecorePackage.getEBoolean(), "validateEMSResponseCode", 0, 1, IS_UNIQUE, IS_ORDERED);
-    addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-    g1 = createEGenericType(ecorePackage.getEMap());
-    g2 = createEGenericType(ecorePackage.getEJavaObject());
-    g1.getETypeArguments().add(g2);
-    g2 = createEGenericType(ecorePackage.getEJavaObject());
-    g1.getETypeArguments().add(g2);
-    addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-    op = addEOperation(emsResponseEClass, ecorePackage.getEBoolean(), "validateEMSResponseCodeP", 0, 1, IS_UNIQUE, IS_ORDERED);
-    addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-    g1 = createEGenericType(ecorePackage.getEMap());
-    g2 = createEGenericType(ecorePackage.getEJavaObject());
-    g1.getETypeArguments().add(g2);
-    g2 = createEGenericType(ecorePackage.getEJavaObject());
-    g1.getETypeArguments().add(g2);
-    addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-    op = addEOperation(emsResponseEClass, ecorePackage.getEBoolean(), "validateEMSResponseText", 0, 1, IS_UNIQUE, IS_ORDERED);
-    addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-    g1 = createEGenericType(ecorePackage.getEMap());
-    g2 = createEGenericType(ecorePackage.getEJavaObject());
-    g1.getETypeArguments().add(g2);
-    g2 = createEGenericType(ecorePackage.getEJavaObject());
-    g1.getETypeArguments().add(g2);
-    addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-    op = addEOperation(emsResponseEClass, ecorePackage.getEBoolean(), "validateEMSResponseTitle", 0, 1, IS_UNIQUE, IS_ORDERED);
-    addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-    g1 = createEGenericType(ecorePackage.getEMap());
-    g2 = createEGenericType(ecorePackage.getEJavaObject());
-    g1.getETypeArguments().add(g2);
-    g2 = createEGenericType(ecorePackage.getEJavaObject());
-    g1.getETypeArguments().add(g2);
-    addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-    op = addEOperation(emsResponseEClass, ecorePackage.getEBoolean(), "validateEMSResponseEntry1", 0, 1, IS_UNIQUE, IS_ORDERED);
-    addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-    g1 = createEGenericType(ecorePackage.getEMap());
-    g2 = createEGenericType(ecorePackage.getEJavaObject());
-    g1.getETypeArguments().add(g2);
-    g2 = createEGenericType(ecorePackage.getEJavaObject());
-    g1.getETypeArguments().add(g2);
-    addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-    op = addEOperation(emsResponseEClass, ecorePackage.getEBoolean(), "validateEMSResponseEntry2", 0, 1, IS_UNIQUE, IS_ORDERED);
-    addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-    g1 = createEGenericType(ecorePackage.getEMap());
-    g2 = createEGenericType(ecorePackage.getEJavaObject());
-    g1.getETypeArguments().add(g2);
-    g2 = createEGenericType(ecorePackage.getEJavaObject());
-    g1.getETypeArguments().add(g2);
-    addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-    op = addEOperation(emsResponseEClass, ecorePackage.getEBoolean(), "validateEMSResponseEntry3", 0, 1, IS_UNIQUE, IS_ORDERED);
-    addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-    g1 = createEGenericType(ecorePackage.getEMap());
-    g2 = createEGenericType(ecorePackage.getEJavaObject());
-    g1.getETypeArguments().add(g2);
-    g2 = createEGenericType(ecorePackage.getEJavaObject());
-    g1.getETypeArguments().add(g2);
-    addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-    op = addEOperation(emsResponseEClass, ecorePackage.getEBoolean(), "validateEMSResponseEntry4", 0, 1, IS_UNIQUE, IS_ORDERED);
+    op = addEOperation(emsDispatchSectionEClass, ecorePackage.getEBoolean(), "validateEMSDispatchSectionEntry2", 0, 1, IS_UNIQUE, IS_ORDERED);
     addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
     g1 = createEGenericType(ecorePackage.getEMap());
     g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1943,25 +1928,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
     g1.getETypeArguments().add(g2);
     addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-    op = addEOperation(emsDispositionSectionEClass, ecorePackage.getEBoolean(), "validateEMSDispositionSectionEntry4", 0, 1, IS_UNIQUE, IS_ORDERED);
-    addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-    g1 = createEGenericType(ecorePackage.getEMap());
-    g2 = createEGenericType(ecorePackage.getEJavaObject());
-    g1.getETypeArguments().add(g2);
-    g2 = createEGenericType(ecorePackage.getEJavaObject());
-    g1.getETypeArguments().add(g2);
-    addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
     op = addEOperation(emsDispositionSectionEClass, ecorePackage.getEBoolean(), "validateEMSDispositionSectionEntry5", 0, 1, IS_UNIQUE, IS_ORDERED);
-    addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-    g1 = createEGenericType(ecorePackage.getEMap());
-    g2 = createEGenericType(ecorePackage.getEJavaObject());
-    g1.getETypeArguments().add(g2);
-    g2 = createEGenericType(ecorePackage.getEJavaObject());
-    g1.getETypeArguments().add(g2);
-    addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-    op = addEOperation(emsDispositionSectionEClass, ecorePackage.getEBoolean(), "validateEMSDispositionSectionEntry6", 0, 1, IS_UNIQUE, IS_ORDERED);
     addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
     g1 = createEGenericType(ecorePackage.getEMap());
     g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1979,7 +1946,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
     g1.getETypeArguments().add(g2);
     addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-    op = addEOperation(emsDispositionSectionEClass, ecorePackage.getEBoolean(), "validateEMSDispositionSectionEntry8", 0, 1, IS_UNIQUE, IS_ORDERED);
+    op = addEOperation(emsDispositionSectionEClass, ecorePackage.getEBoolean(), "validateEMSDispositionSectionEntry6", 0, 1, IS_UNIQUE, IS_ORDERED);
     addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
     g1 = createEGenericType(ecorePackage.getEMap());
     g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1988,11 +1955,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
     g1.getETypeArguments().add(g2);
     addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-    addEOperation(emsDispositionSectionEClass, this.getDerivedEntry(), "getEntry6", 1, 1, IS_UNIQUE, !IS_ORDERED);
-
-    initEClass(emsPersonnelAdverseEventEClass, EMSPersonnelAdverseEvent.class, "EMSPersonnelAdverseEvent", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-
-    op = addEOperation(emsPersonnelAdverseEventEClass, ecorePackage.getEBoolean(), "validateEMSPersonnelAdverseEventTemplateId", 0, 1, IS_UNIQUE, IS_ORDERED);
+    op = addEOperation(emsDispositionSectionEClass, ecorePackage.getEBoolean(), "validateEMSDispositionSectionEntry4", 0, 1, IS_UNIQUE, IS_ORDERED);
     addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
     g1 = createEGenericType(ecorePackage.getEMap());
     g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -2001,7 +1964,9 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
     g1.getETypeArguments().add(g2);
     addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-    op = addEOperation(emsPersonnelAdverseEventEClass, ecorePackage.getEBoolean(), "validateEMSPersonnelAdverseEventCode", 0, 1, IS_UNIQUE, IS_ORDERED);
+    initEClass(emsPersonnelAdverseEventSectionEClass, EMSPersonnelAdverseEventSection.class, "EMSPersonnelAdverseEventSection", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+    op = addEOperation(emsPersonnelAdverseEventSectionEClass, ecorePackage.getEBoolean(), "validateEMSPersonnelAdverseEventSectionTemplateId", 0, 1, IS_UNIQUE, IS_ORDERED);
     addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
     g1 = createEGenericType(ecorePackage.getEMap());
     g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -2010,7 +1975,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
     g1.getETypeArguments().add(g2);
     addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-    op = addEOperation(emsPersonnelAdverseEventEClass, ecorePackage.getEBoolean(), "validateEMSPersonnelAdverseEventCodeP", 0, 1, IS_UNIQUE, IS_ORDERED);
+    op = addEOperation(emsPersonnelAdverseEventSectionEClass, ecorePackage.getEBoolean(), "validateEMSPersonnelAdverseEventSectionCode", 0, 1, IS_UNIQUE, IS_ORDERED);
     addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
     g1 = createEGenericType(ecorePackage.getEMap());
     g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -2019,7 +1984,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
     g1.getETypeArguments().add(g2);
     addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-    op = addEOperation(emsPersonnelAdverseEventEClass, ecorePackage.getEBoolean(), "validateEMSPersonnelAdverseEventText", 0, 1, IS_UNIQUE, IS_ORDERED);
+    op = addEOperation(emsPersonnelAdverseEventSectionEClass, ecorePackage.getEBoolean(), "validateEMSPersonnelAdverseEventSectionCodeP", 0, 1, IS_UNIQUE, IS_ORDERED);
     addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
     g1 = createEGenericType(ecorePackage.getEMap());
     g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -2028,7 +1993,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
     g1.getETypeArguments().add(g2);
     addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-    op = addEOperation(emsPersonnelAdverseEventEClass, ecorePackage.getEBoolean(), "validateEMSPersonnelAdverseEventTitle", 0, 1, IS_UNIQUE, IS_ORDERED);
+    op = addEOperation(emsPersonnelAdverseEventSectionEClass, ecorePackage.getEBoolean(), "validateEMSPersonnelAdverseEventSectionText", 0, 1, IS_UNIQUE, IS_ORDERED);
     addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
     g1 = createEGenericType(ecorePackage.getEMap());
     g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -2037,7 +2002,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
     g1.getETypeArguments().add(g2);
     addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-    op = addEOperation(emsPersonnelAdverseEventEClass, ecorePackage.getEBoolean(), "validateEMSPersonnelAdverseEventEntry1", 0, 1, IS_UNIQUE, IS_ORDERED);
+    op = addEOperation(emsPersonnelAdverseEventSectionEClass, ecorePackage.getEBoolean(), "validateEMSPersonnelAdverseEventSectionTitle", 0, 1, IS_UNIQUE, IS_ORDERED);
     addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
     g1 = createEGenericType(ecorePackage.getEMap());
     g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -2046,7 +2011,16 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
     g1.getETypeArguments().add(g2);
     addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-    op = addEOperation(emsPersonnelAdverseEventEClass, ecorePackage.getEBoolean(), "validateEMSPersonnelAdverseEventEntry2", 0, 1, IS_UNIQUE, IS_ORDERED);
+    op = addEOperation(emsPersonnelAdverseEventSectionEClass, ecorePackage.getEBoolean(), "validateEMSPersonnelAdverseEventSectionEntry1", 0, 1, IS_UNIQUE, IS_ORDERED);
+    addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+    g1 = createEGenericType(ecorePackage.getEMap());
+    g2 = createEGenericType(ecorePackage.getEJavaObject());
+    g1.getETypeArguments().add(g2);
+    g2 = createEGenericType(ecorePackage.getEJavaObject());
+    g1.getETypeArguments().add(g2);
+    addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+    op = addEOperation(emsPersonnelAdverseEventSectionEClass, ecorePackage.getEBoolean(), "validateEMSPersonnelAdverseEventSectionEntry2", 0, 1, IS_UNIQUE, IS_ORDERED);
     addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
     g1 = createEGenericType(ecorePackage.getEMap());
     g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -2094,6 +2068,89 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
     addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
     op = addEOperation(emsProtocolSectionEClass, ecorePackage.getEBoolean(), "validateEMSProtocolSectionEntry3", 0, 1, IS_UNIQUE, IS_ORDERED);
+    addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+    g1 = createEGenericType(ecorePackage.getEMap());
+    g2 = createEGenericType(ecorePackage.getEJavaObject());
+    g1.getETypeArguments().add(g2);
+    g2 = createEGenericType(ecorePackage.getEJavaObject());
+    g1.getETypeArguments().add(g2);
+    addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+    initEClass(emsResponseSectionEClass, EMSResponseSection.class, "EMSResponseSection", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+    op = addEOperation(emsResponseSectionEClass, ecorePackage.getEBoolean(), "validateEMSResponseSectionTemplateId", 0, 1, IS_UNIQUE, IS_ORDERED);
+    addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+    g1 = createEGenericType(ecorePackage.getEMap());
+    g2 = createEGenericType(ecorePackage.getEJavaObject());
+    g1.getETypeArguments().add(g2);
+    g2 = createEGenericType(ecorePackage.getEJavaObject());
+    g1.getETypeArguments().add(g2);
+    addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+    op = addEOperation(emsResponseSectionEClass, ecorePackage.getEBoolean(), "validateEMSResponseSectionCode", 0, 1, IS_UNIQUE, IS_ORDERED);
+    addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+    g1 = createEGenericType(ecorePackage.getEMap());
+    g2 = createEGenericType(ecorePackage.getEJavaObject());
+    g1.getETypeArguments().add(g2);
+    g2 = createEGenericType(ecorePackage.getEJavaObject());
+    g1.getETypeArguments().add(g2);
+    addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+    op = addEOperation(emsResponseSectionEClass, ecorePackage.getEBoolean(), "validateEMSResponseSectionCodeP", 0, 1, IS_UNIQUE, IS_ORDERED);
+    addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+    g1 = createEGenericType(ecorePackage.getEMap());
+    g2 = createEGenericType(ecorePackage.getEJavaObject());
+    g1.getETypeArguments().add(g2);
+    g2 = createEGenericType(ecorePackage.getEJavaObject());
+    g1.getETypeArguments().add(g2);
+    addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+    op = addEOperation(emsResponseSectionEClass, ecorePackage.getEBoolean(), "validateEMSResponseSectionText", 0, 1, IS_UNIQUE, IS_ORDERED);
+    addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+    g1 = createEGenericType(ecorePackage.getEMap());
+    g2 = createEGenericType(ecorePackage.getEJavaObject());
+    g1.getETypeArguments().add(g2);
+    g2 = createEGenericType(ecorePackage.getEJavaObject());
+    g1.getETypeArguments().add(g2);
+    addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+    op = addEOperation(emsResponseSectionEClass, ecorePackage.getEBoolean(), "validateEMSResponseSectionTitle", 0, 1, IS_UNIQUE, IS_ORDERED);
+    addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+    g1 = createEGenericType(ecorePackage.getEMap());
+    g2 = createEGenericType(ecorePackage.getEJavaObject());
+    g1.getETypeArguments().add(g2);
+    g2 = createEGenericType(ecorePackage.getEJavaObject());
+    g1.getETypeArguments().add(g2);
+    addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+    op = addEOperation(emsResponseSectionEClass, ecorePackage.getEBoolean(), "validateEMSResponseSectionEntry1", 0, 1, IS_UNIQUE, IS_ORDERED);
+    addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+    g1 = createEGenericType(ecorePackage.getEMap());
+    g2 = createEGenericType(ecorePackage.getEJavaObject());
+    g1.getETypeArguments().add(g2);
+    g2 = createEGenericType(ecorePackage.getEJavaObject());
+    g1.getETypeArguments().add(g2);
+    addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+    op = addEOperation(emsResponseSectionEClass, ecorePackage.getEBoolean(), "validateEMSResponseSectionEntry2", 0, 1, IS_UNIQUE, IS_ORDERED);
+    addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+    g1 = createEGenericType(ecorePackage.getEMap());
+    g2 = createEGenericType(ecorePackage.getEJavaObject());
+    g1.getETypeArguments().add(g2);
+    g2 = createEGenericType(ecorePackage.getEJavaObject());
+    g1.getETypeArguments().add(g2);
+    addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+    op = addEOperation(emsResponseSectionEClass, ecorePackage.getEBoolean(), "validateEMSResponseSectionEntry3", 0, 1, IS_UNIQUE, IS_ORDERED);
+    addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+    g1 = createEGenericType(ecorePackage.getEMap());
+    g2 = createEGenericType(ecorePackage.getEJavaObject());
+    g1.getETypeArguments().add(g2);
+    g2 = createEGenericType(ecorePackage.getEJavaObject());
+    g1.getETypeArguments().add(g2);
+    addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+    op = addEOperation(emsResponseSectionEClass, ecorePackage.getEBoolean(), "validateEMSResponseSectionEntry4", 0, 1, IS_UNIQUE, IS_ORDERED);
     addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
     g1 = createEGenericType(ecorePackage.getEMap());
     g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -2340,6 +2397,64 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
     g1.getETypeArguments().add(g2);
     addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
+    initEClass(emsVitalSignsSectionEClass, EMSVitalSignsSection.class, "EMSVitalSignsSection", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+    op = addEOperation(emsVitalSignsSectionEClass, ecorePackage.getEBoolean(), "validateEMSVitalSignsSectionTemplateId", 0, 1, IS_UNIQUE, IS_ORDERED);
+    addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+    g1 = createEGenericType(ecorePackage.getEMap());
+    g2 = createEGenericType(ecorePackage.getEJavaObject());
+    g1.getETypeArguments().add(g2);
+    g2 = createEGenericType(ecorePackage.getEJavaObject());
+    g1.getETypeArguments().add(g2);
+    addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+    op = addEOperation(emsVitalSignsSectionEClass, ecorePackage.getEBoolean(), "validateEMSVitalSignsSectionCode", 0, 1, IS_UNIQUE, IS_ORDERED);
+    addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+    g1 = createEGenericType(ecorePackage.getEMap());
+    g2 = createEGenericType(ecorePackage.getEJavaObject());
+    g1.getETypeArguments().add(g2);
+    g2 = createEGenericType(ecorePackage.getEJavaObject());
+    g1.getETypeArguments().add(g2);
+    addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+    op = addEOperation(emsVitalSignsSectionEClass, ecorePackage.getEBoolean(), "validateEMSVitalSignsSectionTitle", 0, 1, IS_UNIQUE, IS_ORDERED);
+    addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+    g1 = createEGenericType(ecorePackage.getEMap());
+    g2 = createEGenericType(ecorePackage.getEJavaObject());
+    g1.getETypeArguments().add(g2);
+    g2 = createEGenericType(ecorePackage.getEJavaObject());
+    g1.getETypeArguments().add(g2);
+    addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+    op = addEOperation(emsVitalSignsSectionEClass, ecorePackage.getEBoolean(), "validateEMSVitalSignsSectionEntry1", 0, 1, IS_UNIQUE, IS_ORDERED);
+    addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+    g1 = createEGenericType(ecorePackage.getEMap());
+    g2 = createEGenericType(ecorePackage.getEJavaObject());
+    g1.getETypeArguments().add(g2);
+    g2 = createEGenericType(ecorePackage.getEJavaObject());
+    g1.getETypeArguments().add(g2);
+    addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+    initEClass(derivedEntryEClass, DerivedEntry.class, "DerivedEntry", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+    op = addEOperation(derivedEntryEClass, ecorePackage.getEBoolean(), "validateDerivedEntryTemplateId", 0, 1, IS_UNIQUE, IS_ORDERED);
+    addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+    g1 = createEGenericType(ecorePackage.getEMap());
+    g2 = createEGenericType(ecorePackage.getEJavaObject());
+    g1.getETypeArguments().add(g2);
+    g2 = createEGenericType(ecorePackage.getEJavaObject());
+    g1.getETypeArguments().add(g2);
+    addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+    op = addEOperation(derivedEntryEClass, ecorePackage.getEBoolean(), "validateDerivedEntryTypeCode", 0, 1, IS_UNIQUE, IS_ORDERED);
+    addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+    g1 = createEGenericType(ecorePackage.getEMap());
+    g2 = createEGenericType(ecorePackage.getEJavaObject());
+    g1.getETypeArguments().add(g2);
+    g2 = createEGenericType(ecorePackage.getEJavaObject());
+    g1.getETypeArguments().add(g2);
+    addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
     // Create resource
     createResource(eNS_URI);
 
@@ -2370,12 +2485,6 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
     createEmspcrPatientCareReportEMSEncompassingEncounterRelationshipEncompassingEncounterLocationHealthCareFacilityAnnotations();
     // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSEncompassingEncounterRelationshipEncompassingEncounterLocationHealthCareFacilityPlace
     createEmspcrPatientCareReportEMSEncompassingEncounterRelationshipEncompassingEncounterLocationHealthCareFacilityPlaceAnnotations();
-    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSDestinationParticipantAssociatedEntity
-    createEmspcrPatientCareReportEMSDestinationParticipantAssociatedEntityAnnotations();
-    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSDestinationParticipantAssociatedEntityPerson
-    createEmspcrPatientCareReportEMSDestinationParticipantAssociatedEntityPersonAnnotations();
-    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSDestinationParticipantAssociatedEntityOrganization
-    createEmspcrPatientCareReportEMSDestinationParticipantAssociatedEntityOrganizationAnnotations();
     // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSServiceEventParticipationEMSServiceEvent
     createEmspcrPatientCareReportEMSServiceEventParticipationEMSServiceEventAnnotations();
     // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSServiceEventParticipationEMSServiceEventEMSPerformerParticipation
@@ -2388,8 +2497,8 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
     createEmspcrPatientCareReportEMSDestinationParticipantParticipationAnnotations();
     // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSDestinationParticipantParticipationEMSDestinationRole
     createEmspcrPatientCareReportEMSDestinationParticipantParticipationEMSDestinationRoleAnnotations();
-    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSMedicalHistory
-    createEmspcrPatientCareReportEMSMedicalHistoryAnnotations();
+    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSDestinationParticipantParticipationEMSDestinationRoleDestinationOrganization
+    createEmspcrPatientCareReportEMSDestinationParticipantParticipationEMSDestinationRoleDestinationOrganizationAnnotations();
     // duplicates
     createDuplicatesAnnotations();
     // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSBillingSectionBillingConditionEntry
@@ -2400,6 +2509,8 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
     createEmspcrEMSBillingSectionLOSDerivedEntryAnnotations();
     // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSBillingSectionLOSDerivedEntryLevelOfService
     createEmspcrEMSBillingSectionLOSDerivedEntryLevelOfServiceAnnotations();
+    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSInjuryIncidentDescriptionSectionDerivedEntry
+    createEmspcrEMSInjuryIncidentDescriptionSectionDerivedEntryAnnotations();
     // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSInjuryIncidentDescriptionSectionDerivedEntryInjuryCauseCategory
     createEmspcrEMSInjuryIncidentDescriptionSectionDerivedEntryInjuryCauseCategoryAnnotations();
     // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSInjuryIncidentDescriptionSectionDerivedEntryInjuryMechanism
@@ -2420,12 +2531,18 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
     createEmspcrEMSInjuryIncidentDescriptionSectionDerivedEntryHeightOfFallAnnotations();
     // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSInjuryIncidentDescriptionSectionDerivedEntryDisasterType
     createEmspcrEMSInjuryIncidentDescriptionSectionDerivedEntryDisasterTypeAnnotations();
+    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCurrentMedicationSectionDerivedEntry
+    createEmspcrEMSCurrentMedicationSectionDerivedEntryAnnotations();
     // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCurrentMedicationSectionDerivedEntryCurrentlyOnMedication
     createEmspcrEMSCurrentMedicationSectionDerivedEntryCurrentlyOnMedicationAnnotations();
     // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCurrentMedicationSectionDerivedEntryPatientOnAnticoagulants
     createEmspcrEMSCurrentMedicationSectionDerivedEntryPatientOnAnticoagulantsAnnotations();
     // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCurrentMedicationSectionDerivedEntryEMSCurrentMedication
     createEmspcrEMSCurrentMedicationSectionDerivedEntryEMSCurrentMedicationAnnotations();
+    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCurrentMedicationSectionDerivedEntryEMSCurrentMedicationEMSCurrentMedicationConsumable
+    createEmspcrEMSCurrentMedicationSectionDerivedEntryEMSCurrentMedicationEMSCurrentMedicationConsumableAnnotations();
+    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCurrentMedicationSectionDerivedEntryEMSCurrentMedicationEMSCurrentMedicationConsumableEMSCurrentMedicationProduct
+    createEmspcrEMSCurrentMedicationSectionDerivedEntryEMSCurrentMedicationEMSCurrentMedicationConsumableEMSCurrentMedicationProductAnnotations();
     // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCurrentMedicationSectionDerivedEntryEMSCurrentMedicationEMSCurrentMedicationConsumableEMSCurrentMedicationProductEMSCurrentMedicationDrug
     createEmspcrEMSCurrentMedicationSectionDerivedEntryEMSCurrentMedicationEMSCurrentMedicationConsumableEMSCurrentMedicationProductEMSCurrentMedicationDrugAnnotations();
     // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntry
@@ -2482,6 +2599,10 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
     createEmspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntryEMSMedicationAllergiesEMSExistenceOfDrugAllergyAnnotations();
     // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntryEMSMedicationAllergiesEMSDrugAllergy
     createEmspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntryEMSMedicationAllergiesEMSDrugAllergyAnnotations();
+    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntryEMSMedicationAllergiesEMSDrugAllergyEMSDrugAllergyParticipation
+    createEmspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntryEMSMedicationAllergiesEMSDrugAllergyEMSDrugAllergyParticipationAnnotations();
+    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntryEMSMedicationAllergiesEMSDrugAllergyEMSDrugAllergyParticipationEMSDrugAllergyParticipantRole
+    createEmspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntryEMSMedicationAllergiesEMSDrugAllergyEMSDrugAllergyParticipationEMSDrugAllergyParticipantRoleAnnotations();
     // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntryEMSMedicationAllergiesEMSDrugAllergyEMSDrugAllergyParticipationEMSDrugAllergyParticipantRoleEMSDrugAllergyEntity
     createEmspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntryEMSMedicationAllergiesEMSDrugAllergyEMSDrugAllergyParticipationEMSDrugAllergyParticipantRoleEMSDrugAllergyEntityAnnotations();
     // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntryEMSEnvironmentalAllergies
@@ -2490,22 +2611,28 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
     createEmspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntryEMSEnvironmentalAllergiesEMSExistenceOfEnvironmentalAllergyAnnotations();
     // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntryEMSEnvironmentalAllergiesEMSEnvironmentalAllergy
     createEmspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntryEMSEnvironmentalAllergiesEMSEnvironmentalAllergyAnnotations();
-    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPastMedicalHistoryDerivedEntry
-    createEmspcrEMSPastMedicalHistoryDerivedEntryAnnotations();
-    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPastMedicalHistoryDerivedEntryEMSHistoryOfConditions
-    createEmspcrEMSPastMedicalHistoryDerivedEntryEMSHistoryOfConditionsAnnotations();
-    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPastMedicalHistoryDerivedEntryEMSHistoryOfConditionsEMSExistenceOfHistoryOfCondition
-    createEmspcrEMSPastMedicalHistoryDerivedEntryEMSHistoryOfConditionsEMSExistenceOfHistoryOfConditionAnnotations();
-    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPastMedicalHistoryDerivedEntryEMSHistoryOfConditionsEMSHistoryOfCondition
-    createEmspcrEMSPastMedicalHistoryDerivedEntryEMSHistoryOfConditionsEMSHistoryOfConditionAnnotations();
-    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPastMedicalHistoryDerivedEntryEMSHistoryOfProceduresEMSExistenceOfHistoryOfProcedures
-    createEmspcrEMSPastMedicalHistoryDerivedEntryEMSHistoryOfProceduresEMSExistenceOfHistoryOfProceduresAnnotations();
-    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSocialHistoryDerivedEntry
-    createEmspcrEMSSocialHistoryDerivedEntryAnnotations();
-    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSocialHistoryDerivedEntryEMSExistenceOfDrugUseIndicator
-    createEmspcrEMSSocialHistoryDerivedEntryEMSExistenceOfDrugUseIndicatorAnnotations();
-    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSocialHistoryDerivedEntryEMSDrugUseIndicator
-    createEmspcrEMSSocialHistoryDerivedEntryEMSDrugUseIndicatorAnnotations();
+    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPastMedicalHistorySectionDerivedEntry
+    createEmspcrEMSPastMedicalHistorySectionDerivedEntryAnnotations();
+    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPastMedicalHistorySectionDerivedEntryEMSHistoryOfConditions
+    createEmspcrEMSPastMedicalHistorySectionDerivedEntryEMSHistoryOfConditionsAnnotations();
+    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPastMedicalHistorySectionDerivedEntryEMSHistoryOfConditionsEMSExistenceOfHistoryOfCondition
+    createEmspcrEMSPastMedicalHistorySectionDerivedEntryEMSHistoryOfConditionsEMSExistenceOfHistoryOfConditionAnnotations();
+    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPastMedicalHistorySectionDerivedEntryEMSHistoryOfConditionsEMSHistoryOfCondition
+    createEmspcrEMSPastMedicalHistorySectionDerivedEntryEMSHistoryOfConditionsEMSHistoryOfConditionAnnotations();
+    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPastMedicalHistorySectionDerivedEntryEMSHistoryOfProcedures
+    createEmspcrEMSPastMedicalHistorySectionDerivedEntryEMSHistoryOfProceduresAnnotations();
+    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPastMedicalHistorySectionDerivedEntryEMSHistoryOfProceduresEMSExistenceOfHistoryOfProcedures
+    createEmspcrEMSPastMedicalHistorySectionDerivedEntryEMSHistoryOfProceduresEMSExistenceOfHistoryOfProceduresAnnotations();
+    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPastMedicalHistorySectionDerivedEntryEMSHistoryOfProceduresEMSHistoryOfProcedure
+    createEmspcrEMSPastMedicalHistorySectionDerivedEntryEMSHistoryOfProceduresEMSHistoryOfProcedureAnnotations();
+    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPastMedicalHistorySectionDerivedEntryEMSHistoryOfProceduresEMSExistenceOfHistoryOfProcedureComponent
+    createEmspcrEMSPastMedicalHistorySectionDerivedEntryEMSHistoryOfProceduresEMSExistenceOfHistoryOfProcedureComponentAnnotations();
+    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSocialHistorySectionDerivedEntry
+    createEmspcrEMSSocialHistorySectionDerivedEntryAnnotations();
+    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSocialHistorySectionDerivedEntryEMSExistenceOfDrugUseIndicator
+    createEmspcrEMSSocialHistorySectionDerivedEntryEMSExistenceOfDrugUseIndicatorAnnotations();
+    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSocialHistorySectionDerivedEntryEMSDrugUseIndicator
+    createEmspcrEMSSocialHistorySectionDerivedEntryEMSDrugUseIndicatorAnnotations();
     // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntry
     createEmspcrEMSPhysicalAssessmentSectionDerivedEntryAnnotations();
     // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizer
@@ -2616,6 +2743,8 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
     createEmspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedurePerformerAnnotations();
     // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedurePerformerEMSProcedurePerformerEntity
     createEmspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedurePerformerEMSProcedurePerformerEntityAnnotations();
+    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSAirwayConfirmationRelationship
+    createEmspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSAirwayConfirmationRelationshipAnnotations();
     // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSAirwayConfirmationRelationshipEMSAirwayConfirmationObservation
     createEmspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSAirwayConfirmationRelationshipEMSAirwayConfirmationObservationAnnotations();
     // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSAirwayConfirmationRelationshipEMSAirwayConfirmationObservationEMSAirwayDeviceParticipant
@@ -2634,112 +2763,12 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
     createEmspcrEMSSceneSectionDerivedEntryEMSScenePatientCountAnnotations();
     // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSceneSectionDerivedEntryEMSMassCasualtyIndicator
     createEmspcrEMSSceneSectionDerivedEntryEMSMassCasualtyIndicatorAnnotations();
-    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntry
-    createEmspcrEMSVitalSignsSectionDerivedEntryAnnotations();
-    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizer
-    createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerAnnotations();
-    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSPriorAidVitals
-    createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSPriorAidVitalsAnnotations();
-    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSCardiacRhythm
-    createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSCardiacRhythmAnnotations();
-    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSSystolicBloodPressure
-    createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSSystolicBloodPressureAnnotations();
-    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSDiastolicBloodPressure
-    createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSDiastolicBloodPressureAnnotations();
-    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSHeartRate
-    createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSHeartRateAnnotations();
-    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSRespiratoryRate
-    createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSRespiratoryRateAnnotations();
-    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSBodyTemperature
-    createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSBodyTemperatureAnnotations();
-    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSOxygenSaturation
-    createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSOxygenSaturationAnnotations();
-    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSCarbonDioxide
-    createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSCarbonDioxideAnnotations();
-    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSCarbonMonoxide
-    createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSCarbonMonoxideAnnotations();
-    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSBloodGlucose
-    createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSBloodGlucoseAnnotations();
-    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSLevelOfResponsiveness
-    createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSLevelOfResponsivenessAnnotations();
-    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSPainScore
-    createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSPainScoreAnnotations();
-    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSStrokeScore
-    createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSStrokeScoreAnnotations();
-    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScore
-    createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScoreAnnotations();
-    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScoreEMSGlasgowTotal
-    createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScoreEMSGlasgowTotalAnnotations();
-    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScoreEMSGlasgowQualifier
-    createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScoreEMSGlasgowQualifierAnnotations();
-    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScoreEMSGlasgowEye
-    createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScoreEMSGlasgowEyeAnnotations();
-    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScoreEMSGlasgowMotor
-    createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScoreEMSGlasgowMotorAnnotations();
-    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScoreEMSGlasgowVerbal
-    createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScoreEMSGlasgowVerbalAnnotations();
-    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSDispatchDerivedEntry
-    createEmspcrEMSDispatchDerivedEntryAnnotations();
-    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSDispatchDerivedEntryEMSEmergencyMedicalDispatchObservation
-    createEmspcrEMSDispatchDerivedEntryEMSEmergencyMedicalDispatchObservationAnnotations();
-    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSDispatchDerivedEntryEMSComplaintReportedByDispatch
-    createEmspcrEMSDispatchDerivedEntryEMSComplaintReportedByDispatchAnnotations();
-    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntry
-    createEmspcrEMSResponseDerivedEntryAnnotations();
-    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSDelayOrganizer
-    createEmspcrEMSResponseDerivedEntryEMSDelayOrganizerAnnotations();
-    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSDelayOrganizerEMSDispatchDelayRelationship
-    createEmspcrEMSResponseDerivedEntryEMSDelayOrganizerEMSDispatchDelayRelationshipAnnotations();
-    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSDelayOrganizerEMSDispatchDelayRelationshipEMSDispatchDelay
-    createEmspcrEMSResponseDerivedEntryEMSDelayOrganizerEMSDispatchDelayRelationshipEMSDispatchDelayAnnotations();
-    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSDelayOrganizerEMSResponseDelayRelationship
-    createEmspcrEMSResponseDerivedEntryEMSDelayOrganizerEMSResponseDelayRelationshipAnnotations();
-    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSDelayOrganizerEMSResponseDelayRelationshipEMSResponseDelay
-    createEmspcrEMSResponseDerivedEntryEMSDelayOrganizerEMSResponseDelayRelationshipEMSResponseDelayAnnotations();
-    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSDelayOrganizerEMSSceneDelayRelationship
-    createEmspcrEMSResponseDerivedEntryEMSDelayOrganizerEMSSceneDelayRelationshipAnnotations();
-    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSDelayOrganizerEMSSceneDelayRelationshipEMSSceneDelay
-    createEmspcrEMSResponseDerivedEntryEMSDelayOrganizerEMSSceneDelayRelationshipEMSSceneDelayAnnotations();
-    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSDelayOrganizerEMSTransportDelayRelationship
-    createEmspcrEMSResponseDerivedEntryEMSDelayOrganizerEMSTransportDelayRelationshipAnnotations();
-    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSDelayOrganizerEMSTransportDelayRelationshipEMSTransportDelay
-    createEmspcrEMSResponseDerivedEntryEMSDelayOrganizerEMSTransportDelayRelationshipEMSTransportDelayAnnotations();
-    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSDelayOrganizerEMSTurnaoundDelayRelationship
-    createEmspcrEMSResponseDerivedEntryEMSDelayOrganizerEMSTurnaoundDelayRelationshipAnnotations();
-    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSDelayOrganizerEMSTurnaoundDelayRelationshipEMSTurnaroundDelay
-    createEmspcrEMSResponseDerivedEntryEMSDelayOrganizerEMSTurnaoundDelayRelationshipEMSTurnaroundDelayAnnotations();
-    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSDispatchLocationOrganizer
-    createEmspcrEMSResponseDerivedEntryEMSDispatchLocationOrganizerAnnotations();
-    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationNameRelationship
-    createEmspcrEMSResponseDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationNameRelationshipAnnotations();
-    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationNameRelationshipEMSDispatchLocationName
-    createEmspcrEMSResponseDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationNameRelationshipEMSDispatchLocationNameAnnotations();
-    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationLatitudeRelationship
-    createEmspcrEMSResponseDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationLatitudeRelationshipAnnotations();
-    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationLatitudeRelationshipEMSDispatchLocationLatitude
-    createEmspcrEMSResponseDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationLatitudeRelationshipEMSDispatchLocationLatitudeAnnotations();
-    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationLongitudeRelationship
-    createEmspcrEMSResponseDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationLongitudeRelationshipAnnotations();
-    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationLongitudeRelationshipEMSDispatchLocationLongitude
-    createEmspcrEMSResponseDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationLongitudeRelationshipEMSDispatchLocationLongitudeAnnotations();
-    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSResponseOdometerReadingOrganizer
-    createEmspcrEMSResponseDerivedEntryEMSResponseOdometerReadingOrganizerAnnotations();
-    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseBeginningOdometerReadingRelationship
-    createEmspcrEMSResponseDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseBeginningOdometerReadingRelationshipAnnotations();
-    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseBeginningOdometerReadingRelationshipEMSResponseBeginningOdometerReading
-    createEmspcrEMSResponseDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseBeginningOdometerReadingRelationshipEMSResponseBeginningOdometerReadingAnnotations();
-    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseOnSceneOdometerReadingRelationship
-    createEmspcrEMSResponseDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseOnSceneOdometerReadingRelationshipAnnotations();
-    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseOnSceneOdometerReadingRelationshipEMSResponseOnSceneOdometerReading
-    createEmspcrEMSResponseDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseOnSceneOdometerReadingRelationshipEMSResponseOnSceneOdometerReadingAnnotations();
-    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseDestinationOdometerReadingRelationship
-    createEmspcrEMSResponseDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseDestinationOdometerReadingRelationshipAnnotations();
-    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseDestinationOdometerReadingRelationshipEMSResponseDestinationOdometerReading
-    createEmspcrEMSResponseDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseDestinationOdometerReadingRelationshipEMSResponseDestinationOdometerReadingAnnotations();
-    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseEndingOdometerReadingRelationshipEMSResponseEndingOdometerReading
-    createEmspcrEMSResponseDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseEndingOdometerReadingRelationshipEMSResponseEndingOdometerReadingAnnotations();
-    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSResponseModeToScene
-    createEmspcrEMSResponseDerivedEntryEMSResponseModeToSceneAnnotations();
+    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSDispatchSectionDerivedEntry
+    createEmspcrEMSDispatchSectionDerivedEntryAnnotations();
+    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSDispatchSectionDerivedEntryEMSEmergencyMedicalDispatchObservation
+    createEmspcrEMSDispatchSectionDerivedEntryEMSEmergencyMedicalDispatchObservationAnnotations();
+    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSDispatchSectionDerivedEntryEMSComplaintReportedByDispatch
+    createEmspcrEMSDispatchSectionDerivedEntryEMSComplaintReportedByDispatchAnnotations();
     // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSDispositionSectionDerivedEntry
     createEmspcrEMSDispositionSectionDerivedEntryAnnotations();
     // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSDispositionSectionDerivedEntryEMSNumberOfPatientsObservation
@@ -2756,12 +2785,12 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
     createEmspcrEMSDispositionSectionDerivedEntryEMSPrearrivalActivationObservationAnnotations();
     // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSDispositionSectionDerivedEntryEMSPatientConditionChangeAtDestinationObservation
     createEmspcrEMSDispositionSectionDerivedEntryEMSPatientConditionChangeAtDestinationObservationAnnotations();
-    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPersonnelAdverseEventDerivedEntry
-    createEmspcrEMSPersonnelAdverseEventDerivedEntryAnnotations();
-    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPersonnelAdverseEventDerivedEntryEMSAdverseEventIndicator
-    createEmspcrEMSPersonnelAdverseEventDerivedEntryEMSAdverseEventIndicatorAnnotations();
-    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPersonnelAdverseEventDerivedEntryEMSAdverseEventTypeObservation
-    createEmspcrEMSPersonnelAdverseEventDerivedEntryEMSAdverseEventTypeObservationAnnotations();
+    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPersonnelAdverseEventSectionDerivedEntry
+    createEmspcrEMSPersonnelAdverseEventSectionDerivedEntryAnnotations();
+    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPersonnelAdverseEventSectionDerivedEntryEMSAdverseEventIndicator
+    createEmspcrEMSPersonnelAdverseEventSectionDerivedEntryEMSAdverseEventIndicatorAnnotations();
+    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPersonnelAdverseEventSectionDerivedEntryEMSAdverseEventTypeObservation
+    createEmspcrEMSPersonnelAdverseEventSectionDerivedEntryEMSAdverseEventTypeObservationAnnotations();
     // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProtocolSectionDerivedEntry
     createEmspcrEMSProtocolSectionDerivedEntryAnnotations();
     // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProtocolSectionDerivedEntryEMSProtocolObservation
@@ -2770,6 +2799,64 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
     createEmspcrEMSProtocolSectionDerivedEntryEMSProtocolAgeCategoryAnnotations();
     // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProtocolSectionDerivedEntryEMSCandidatePatientRegistryType
     createEmspcrEMSProtocolSectionDerivedEntryEMSCandidatePatientRegistryTypeAnnotations();
+    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntry
+    createEmspcrEMSResponseSectionDerivedEntryAnnotations();
+    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDelayOrganizer
+    createEmspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerAnnotations();
+    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSDispatchDelayRelationship
+    createEmspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSDispatchDelayRelationshipAnnotations();
+    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSDispatchDelayRelationshipEMSDispatchDelay
+    createEmspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSDispatchDelayRelationshipEMSDispatchDelayAnnotations();
+    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSResponseDelayRelationship
+    createEmspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSResponseDelayRelationshipAnnotations();
+    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSResponseDelayRelationshipEMSResponseDelay
+    createEmspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSResponseDelayRelationshipEMSResponseDelayAnnotations();
+    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSSceneDelayRelationship
+    createEmspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSSceneDelayRelationshipAnnotations();
+    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSSceneDelayRelationshipEMSSceneDelay
+    createEmspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSSceneDelayRelationshipEMSSceneDelayAnnotations();
+    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSTransportDelayRelationship
+    createEmspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSTransportDelayRelationshipAnnotations();
+    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSTransportDelayRelationshipEMSTransportDelay
+    createEmspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSTransportDelayRelationshipEMSTransportDelayAnnotations();
+    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSTurnaoundDelayRelationship
+    createEmspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSTurnaoundDelayRelationshipAnnotations();
+    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSTurnaoundDelayRelationshipEMSTurnaroundDelay
+    createEmspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSTurnaoundDelayRelationshipEMSTurnaroundDelayAnnotations();
+    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDispatchLocationOrganizer
+    createEmspcrEMSResponseSectionDerivedEntryEMSDispatchLocationOrganizerAnnotations();
+    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationNameRelationship
+    createEmspcrEMSResponseSectionDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationNameRelationshipAnnotations();
+    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationNameRelationshipEMSDispatchLocationName
+    createEmspcrEMSResponseSectionDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationNameRelationshipEMSDispatchLocationNameAnnotations();
+    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationLatitudeRelationship
+    createEmspcrEMSResponseSectionDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationLatitudeRelationshipAnnotations();
+    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationLatitudeRelationshipEMSDispatchLocationLatitude
+    createEmspcrEMSResponseSectionDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationLatitudeRelationshipEMSDispatchLocationLatitudeAnnotations();
+    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationLongitudeRelationship
+    createEmspcrEMSResponseSectionDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationLongitudeRelationshipAnnotations();
+    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationLongitudeRelationshipEMSDispatchLocationLongitude
+    createEmspcrEMSResponseSectionDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationLongitudeRelationshipEMSDispatchLocationLongitudeAnnotations();
+    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizer
+    createEmspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizerAnnotations();
+    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseBeginningOdometerReadingRelationship
+    createEmspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseBeginningOdometerReadingRelationshipAnnotations();
+    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseBeginningOdometerReadingRelationshipEMSResponseBeginningOdometerReading
+    createEmspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseBeginningOdometerReadingRelationshipEMSResponseBeginningOdometerReadingAnnotations();
+    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseOnSceneOdometerReadingRelationship
+    createEmspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseOnSceneOdometerReadingRelationshipAnnotations();
+    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseOnSceneOdometerReadingRelationshipEMSResponseOnSceneOdometerReading
+    createEmspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseOnSceneOdometerReadingRelationshipEMSResponseOnSceneOdometerReadingAnnotations();
+    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseDestinationOdometerReadingRelationship
+    createEmspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseDestinationOdometerReadingRelationshipAnnotations();
+    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseDestinationOdometerReadingRelationshipEMSResponseDestinationOdometerReading
+    createEmspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseDestinationOdometerReadingRelationshipEMSResponseDestinationOdometerReadingAnnotations();
+    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseEndingOdometerReadingRelationship
+    createEmspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseEndingOdometerReadingRelationshipAnnotations();
+    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseEndingOdometerReadingRelationshipEMSResponseEndingOdometerReading
+    createEmspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseEndingOdometerReadingRelationshipEMSResponseEndingOdometerReadingAnnotations();
+    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSResponseModeToScene
+    createEmspcrEMSResponseSectionDerivedEntryEMSResponseModeToSceneAnnotations();
     // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntry1
     createEmspcrEMSSituationSectionDerivedEntry1Annotations();
     // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntry1EMSComplaint
@@ -2824,6 +2911,50 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
     createEmspcrEMSTimesSectionDerivedEntryEMSUnitBackInServiceTimeAnnotations();
     // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSTimesSectionDerivedEntryEMSDispatchNotifiedTime
     createEmspcrEMSTimesSectionDerivedEntryEMSDispatchNotifiedTimeAnnotations();
+    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntry
+    createEmspcrEMSVitalSignsSectionDerivedEntryAnnotations();
+    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizer
+    createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerAnnotations();
+    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSPriorAidVitals
+    createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSPriorAidVitalsAnnotations();
+    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSCardiacRhythm
+    createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSCardiacRhythmAnnotations();
+    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSSystolicBloodPressure
+    createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSSystolicBloodPressureAnnotations();
+    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSDiastolicBloodPressure
+    createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSDiastolicBloodPressureAnnotations();
+    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSHeartRate
+    createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSHeartRateAnnotations();
+    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSRespiratoryRate
+    createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSRespiratoryRateAnnotations();
+    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSBodyTemperature
+    createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSBodyTemperatureAnnotations();
+    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSOxygenSaturation
+    createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSOxygenSaturationAnnotations();
+    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSCarbonDioxide
+    createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSCarbonDioxideAnnotations();
+    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSCarbonMonoxide
+    createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSCarbonMonoxideAnnotations();
+    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSBloodGlucose
+    createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSBloodGlucoseAnnotations();
+    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSLevelOfResponsiveness
+    createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSLevelOfResponsivenessAnnotations();
+    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSPainScore
+    createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSPainScoreAnnotations();
+    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSStrokeScore
+    createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSStrokeScoreAnnotations();
+    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScore
+    createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScoreAnnotations();
+    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScoreEMSGlasgowTotal
+    createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScoreEMSGlasgowTotalAnnotations();
+    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScoreEMSGlasgowQualifier
+    createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScoreEMSGlasgowQualifierAnnotations();
+    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScoreEMSGlasgowEye
+    createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScoreEMSGlasgowEyeAnnotations();
+    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScoreEMSGlasgowMotor
+    createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScoreEMSGlasgowMotorAnnotations();
+    // http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScoreEMSGlasgowVerbal
+    createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScoreEMSGlasgowVerbalAnnotations();
   }
 
   /**
@@ -2840,7 +2971,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        source, 
        new String[] 
        {
-       "constraints.validation.error", "PatientCareReportTemplateId PatientCareReportClassCode PatientCareReportMoodCode GeneralHeaderConstraintsCode PatientCareReportCode PatientCareReportId PatientCareReportTitle PatientCareReportRecordTarget PatientCareReportBilling PatientCareReportEMSCurrentMedication PatientCareReportEMSAllergiesAndAdverseReactionsSection PatientCareReportEMSPastMedicalHistory PatientCareReportEMSSocialHistory PatientCareReportEMSPhysicalAssessmentSection PatientCareReportEMSProceduresPerformedSection PatientCareReportEMSPatientCareNarrative PatientCareReportEMSSceneSection",
+       "constraints.validation.error", "PatientCareReportTemplateId PatientCareReportClassCode PatientCareReportMoodCode GeneralHeaderConstraintsCode PatientCareReportCode PatientCareReportId PatientCareReportTitle PatientCareReportAuthor PatientCareReportRecordTarget PatientCareReportBilling PatientCareReportEMSCurrentMedication PatientCareReportEMSAllergiesAndAdverseReactionsSection PatientCareReportEMSPastMedicalHistory PatientCareReportEMSSocialHistory PatientCareReportEMSPhysicalAssessmentSection PatientCareReportEMSProceduresPerformedSection PatientCareReportEMSPatientCareNarrative PatientCareReportEMSSceneSection PatientCareReportComponentOf PatientCareReportEMSDispatchSection PatientCareReportEMSPersonnelAdverseEventSection PatientCareReportEMSProtocolSection PatientCareReportEMSResponseSection PatientCareReportEMSSituationSection PatientCareReportEMSVitalSignsSection PatientCareReportCustodian PatientCareReportDocumentationOf PatientCareReportRelatedDocument PatientCareReportParticipant",
        "templateId.root", "2.16.840.1.113883.17.3.10.1",
        "classCode", "DOCCLIN",
        "moodCode", "EVN",
@@ -2849,10 +2980,10 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "code.codeSystemName", "LOINC",
        "code.displayName", "EMS Patient Care Report",
        "constraints.validation.dependOn.GeneralHeaderConstraintsCode", "PatientCareReportCode",
-       "constraints.validation.info", "PatientCareReportVersionNumber PatientCareReportHumanAuthor PatientCareReportComponentOf PatientCareReportSection PatientCareReportEMSCardiacArrestEvent PatientCareReportEMSMedicationsAdministeredSection",
+       "constraints.validation.info", "PatientCareReportVersionNumber PatientCareReportHumanAuthor PatientCareReportSection PatientCareReportEMSCardiacArrestEvent PatientCareReportEMSMedicationsAdministeredSection PatientCareReportEMSDispositionSection PatientCareReportEMSTimesSection",
        "title.mixed", "EMS Patient Care Report",
-       "constraints.validation.warning", "PatientCareReportEMSAdvanceDirectives"
-       });																																																																																																																																											
+       "constraints.validation.warning", "PatientCareReportEMSAdvanceDirectives PatientCareReportEMSHumanAuthorParticipation"
+       });																																																																																																																																																																																																																
     addAnnotation
       (emsBillingSectionEClass, 
        source, 
@@ -2862,17 +2993,9 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "templateId.root", "2.16.840.1.113883.17.3.10.1.5",
        "code.code", "67659-3",
        "code.codeSystem", "2.16.840.1.113883.6.1",
-       "code.codeSystemName", "LOINC"
-       });																								
-    addAnnotation
-      (derivedEntryEClass, 
-       source, 
-       new String[] 
-       {
-       "constraints.validation.error", "DerivedEntryTemplateId DerivedEntryTypeCode",
-       "templateId.root", "2.16.840.1.1133883.17.3.10.1.24",
-       "typeCode", "DRIV"
-       });										
+       "code.codeSystemName", "LOINC",
+       "code.displayName", "EMS Billing Section"
+       });																						
     addAnnotation
       (emsInjuryIncidentDescriptionSectionEClass, 
        source, 
@@ -2883,20 +3006,20 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "code.code", "11374-6",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
-       "code.displayName", "Injury incident description"
-       });																																																												
+       "code.displayName", "Injury Incident Description Section"
+       });																																																													
     addAnnotation
       (emsCurrentMedicationSectionEClass, 
        source, 
        new String[] 
        {
-       "constraints.validation.error", "EMSCurrentMedicationSectionTemplateId EMSCurrentMedicationSectionCode EMSCurrentMedicationSectionEntry1 EMSCurrentMedicationSectionEntry2 EMSCurrentMedicationSectionEntry3",
+       "constraints.validation.error", "EMSCurrentMedicationSectionTemplateId EMSCurrentMedicationSectionCode EMSCurrentMedicationSectionTitle EMSCurrentMedicationSectionEntry1 EMSCurrentMedicationSectionEntry2 EMSCurrentMedicationSectionEntry3",
        "templateId.root", "2.16.840.1.113883.17.3.10.1.15",
        "code.code", "67844-1",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
-       "code.displayName", "EMS Current Medications"
-       });																										
+       "code.displayName", "EMS Current Medications Section"
+       });																																	
     addAnnotation
       (emsCardiacArrestEventSectionEClass, 
        source, 
@@ -2907,7 +3030,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "code.code", "67799-7",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
-       "code.displayName", "EMS CARDIAC ARREST EVENT",
+       "code.displayName", "EMS Cardiac Arrest Section",
        "title.mixed", "EMS Cardiac Arrest Event",
        "constraints.validation.warning", "EMSCardiacArrestEventSectionTitle"
        });																																								
@@ -2921,7 +3044,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "code.code", "67840-9",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
-       "code.displayName", "EMS Advance Directives",
+       "code.displayName", "EMS Advance Directives Section",
        "title.mixed", "EMS Advance Directives",
        "constraints.validation.warning", "EMSAdvanceDirectivesSectionTitle"
        });																			
@@ -2932,40 +3055,40 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        {
        "constraints.validation.error", "EMSAllergiesAndAdverseReactionsSectionTemplateId EMSAllergiesAndAdverseReactionsSectionCode EMSAllergiesAndAdverseReactionsSectionEntry1 EMSAllergiesAndAdverseReactionsSectionEntry2",
        "templateId.root", "2.16.840.1.113883.17.3.10.1.13",
-       "code.code", "67841?7",
+       "code.code", "67841-7",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
-       "code.displayName", "EMS Allergies and Adverse Reactions",
+       "code.displayName", "EMS Allergies and Adverse Reactions  Section",
        "title.mixed", "EMS Allergies and Adverse Reactions",
        "constraints.validation.warning", "EMSAllergiesAndAdverseReactionsSectionTitle"
-       });																														
+       });																																
     addAnnotation
-      (emsPastMedicalHistoryEClass, 
+      (emsPastMedicalHistorySectionEClass, 
        source, 
        new String[] 
        {
-       "constraints.validation.error", "EMSPastMedicalHistoryTemplateId EMSPastMedicalHistoryCode EMSPastMedicalHistoryCodeP EMSPastMedicalHistoryEntry1 EMSPastMedicalHistoryEntry2",
+       "constraints.validation.error", "EMSPastMedicalHistorySectionTemplateId EMSPastMedicalHistorySectionCode EMSPastMedicalHistorySectionCodeP EMSPastMedicalHistorySectionEntry1 EMSPastMedicalHistorySectionEntry2",
        "templateId.root", "2.16.840.1.113883.17.3.10.1.19",
-       "code.code", "67842?5",
+       "code.code", "67842-5",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
-       "code.displayName", "EMS past medical history",
+       "code.displayName", "EMS Past Medical History Section",
        "title.mixed", "EMS Past Medical History",
-       "constraints.validation.warning", "EMSPastMedicalHistoryTitle"
-       });																															
+       "constraints.validation.warning", "EMSPastMedicalHistorySectionTitle"
+       });																																		
     addAnnotation
-      (emsSocialHistoryEClass, 
+      (emsSocialHistorySectionEClass, 
        source, 
        new String[] 
        {
-       "constraints.validation.error", "EMSSocialHistoryTemplateId EMSSocialHistoryCode EMSSocialHistoryCodeP EMSSocialHistoryEntry1 EMSSocialHistoryEntry2",
+       "constraints.validation.error", "EMSSocialHistorySectionTemplateId EMSSocialHistorySectionCode EMSSocialHistorySectionCodeP EMSSocialHistorySectionEntry1 EMSSocialHistorySectionEntry2",
        "templateId.root", "2.16.840.1.113883.17.3.10.1.22",
-       "code.code", "67843?3",
+       "code.code", "67843-3",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
-       "code.displayName", "EMS Social History",
+       "code.displayName", "EMS Social History Section",
        "title.mixed", "EMS Social History",
-       "constraints.validation.warning", "EMSSocialHistoryTitle"
+       "constraints.validation.warning", "EMSSocialHistorySectionTitle"
        });																													
     addAnnotation
       (emsPhysicalAssessmentSectionEClass, 
@@ -2974,9 +3097,10 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        {
        "constraints.validation.error", "EMSPhysicalAssessmentSectionTemplateId EMSPhysicalAssessmentSectionCode EMSPhysicalAssessmentSectionCodeP EMSPhysicalAssessmentSectionText EMSPhysicalAssessmentSectionEntry1 EMSPhysicalAssessmentSectionEntry2 EMSPhysicalAssessmentSectionEntry3 EMSPhysicalAssessmentSectionEntry4 EMSPhysicalAssessmentSectionEntry5 EMSPhysicalAssessmentSectionEntry6",
        "templateId.root", "2.16.840.1.113883.17.3.10.1.20",
-       "code.code", "67668?4",
+       "code.code", "67668-4",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
+       "code.displayName", "EMS Physical Assessment Section",
        "constraints.validation.warning", "EMSPhysicalAssessmentSectionTitle"
        });																																																																				
     addAnnotation
@@ -2986,10 +3110,10 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        {
        "constraints.validation.error", "EMSMedicationsAdministeredSectionTemplateId EMSMedicationsAdministeredSectionCode EMSMedicationsAdministeredSectionCodeP EMSMedicationsAdministeredSectionText EMSMedicationsAdministeredSectionTitle EMSMedicationsAdministeredSectionEntry1",
        "templateId.root", "2.16.840.1.113883.17.3.10.1.18",
-       "code.code", "67849?0",
+       "code.code", "67849-0",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
-       "code.displayName", "Medications administered",
+       "code.displayName", "Medications Administered Section",
        "constraints.validation.dependOn.EMSMedicationsAdministeredSectionCode", "EMSMedicationsAdministeredSectionCodeP"
        });																																											
     addAnnotation
@@ -2999,23 +3123,23 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        {
        "constraints.validation.error", "EMSProceduresPerformedSectionTemplateId EMSProceduresPerformedSectionCode EMSProceduresPerformedSectionCodeP EMSProceduresPerformedSectionText EMSProceduresPerformedSectionTitle EMSProceduresPerformedSectionEntry1",
        "templateId.root", "2.16.840.1.113883.17.3.10.1.21",
-       "code.code", "67802?9",
+       "code.code", "67802-9",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
-       "code.displayName", "EMS Procedures Performed",
+       "code.displayName", "EMS Procedures Performed Section",
        "title.mixed", "EMS Procedures Performed"
-       });																																														
+       });																																															
     addAnnotation
-      (emsPatientCareNarrativeEClass, 
+      (emsPatientCareNarrativeSectionEClass, 
        source, 
        new String[] 
        {
-       "constraints.validation.error", "EMSPatientCareNarrativeTemplateId EMSPatientCareNarrativeCode EMSPatientCareNarrativeCodeP EMSPatientCareNarrativeText EMSPatientCareNarrativeTitle",
+       "constraints.validation.error", "EMSPatientCareNarrativeSectionTemplateId EMSPatientCareNarrativeSectionCode EMSPatientCareNarrativeSectionCodeP EMSPatientCareNarrativeSectionText EMSPatientCareNarrativeSectionTitle",
        "templateId.root", "2.16.840.1.113883.17.3.10.1.1",
-       "code.code", "67781?5",
+       "code.code", "67781-5",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
-       "code.displayName", "EMS Patient Care Report Narrative",
+       "code.displayName", "EMS Patient Care Report Narrative Section",
        "title.mixed", "EMS Patient Care Report Narrative"
        });																						
     addAnnotation
@@ -3025,76 +3149,49 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        {
        "constraints.validation.error", "EMSSceneSectionTemplateId EMSSceneSectionCode EMSSceneSectionText EMSSceneSectionTitle EMSSceneSectionEntry1 EMSSceneSectionEntry2 EMSSceneSectionEntry3 EMSSceneSectionEntry4",
        "templateId.root", "2.16.840.1.113883.17.3.10.1.8",
-       "code.code", "67665?0",
+       "code.code", "67665-0",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
-       "code.displayName", "EMS Scene",
+       "code.displayName", "EMS Scene Section",
        "title.mixed", "EMS Scene"
        });																																							
     addAnnotation
-      (emsVitalSignsSectionEClass, 
+      (emsDispatchSectionEClass, 
        source, 
        new String[] 
        {
-       "constraints.validation.error", "EMSVitalSignsSectionTemplateId EMSVitalSignsSectionCode EMSVitalSignsSectionEntry1",
-       "templateId.root", "2.16.840.1.113883.17.3.10.1.23",
-       "code.code", "67801?1",
-       "code.codeSystem", "2.16.840.1.113883.6.1",
-       "code.codeSystemName", "LOINC",
-       "code.displayName", "EMS Vital Signs",
-       "title.mixed", "EMS Vital Signs",
-       "constraints.validation.warning", "EMSVitalSignsSectionTitle"
-       });																																								
-    addAnnotation
-      (emsDispatchEClass, 
-       source, 
-       new String[] 
-       {
-       "constraints.validation.error", "EMSDispatchTemplateId EMSDispatchCode EMSDispatchText EMSDispatchTitle EMSDispatchEntry1 EMSDispatchEntry2",
+       "constraints.validation.error", "EMSDispatchSectionTemplateId EMSDispatchSectionCode EMSDispatchSectionText EMSDispatchSectionTitle EMSDispatchSectionEntry1 EMSDispatchSectionEntry2",
        "templateId.root", "2.16.840.1.113883.17.3.10.1.2",
-       "code.code", "67660?1",
+       "code.code", "67660-1",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
-       "code.displayName", "Dispatch",
+       "code.displayName", "EMS Dispatch Section",
        "title.mixed", "EMS Dispatch"
        });																													
-    addAnnotation
-      (emsResponseEClass, 
-       source, 
-       new String[] 
-       {
-       "constraints.validation.error", "EMSResponseTemplateId EMSResponseCode EMSResponseCodeP EMSResponseText EMSResponseTitle EMSResponseEntry1 EMSResponseEntry2 EMSResponseEntry3 EMSResponseEntry4",
-       "templateId.root", "2.16.840.1.113883.17.3.10.1.3",
-       "code.code", "67664?3",
-       "code.codeSystem", "2.16.840.1.113883.6.1",
-       "code.codeSystemName", "LOINC",
-       "code.displayName", "EMS Response",
-       "title.mixed", "EMS Response"
-       });																																																																		
     addAnnotation
       (emsDispositionSectionEClass, 
        source, 
        new String[] 
        {
-       "constraints.validation.error", "EMSDispositionSectionTemplateId EMSDispositionSectionCode EMSDispositionSectionCodeP EMSDispositionSectionText EMSDispositionSectionTitle EMSDispositionSectionEntry1 EMSDispositionSectionEntry2 EMSDispositionSectionEntry3 EMSDispositionSectionEntry4 EMSDispositionSectionEntry5 EMSDispositionSectionEntry6 EMSDispositionSectionEntry7 EMSDispositionSectionEntry8",
+       "constraints.validation.error", "EMSDispositionSectionTemplateId EMSDispositionSectionCode EMSDispositionSectionCodeP EMSDispositionSectionText EMSDispositionSectionTitle EMSDispositionSectionEntry1 EMSDispositionSectionEntry2 EMSDispositionSectionEntry3 EMSDispositionSectionEntry5 EMSDispositionSectionEntry7 EMSDispositionSectionEntry6 EMSDispositionSectionEntry4",
        "templateId.root", "2.16.840.1.113883.17.3.10.1.4",
-       "code.code", "67796?3",
+       "code.code", "67796-3",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
-       "code.displayName", "EMS Disposition",
+       "code.displayName", "EMS Disposition Section",
        "title.mixed", "EMS Disposition"
-       });																																																																
+       });																																																										
     addAnnotation
-      (emsPersonnelAdverseEventEClass, 
+      (emsPersonnelAdverseEventSectionEClass, 
        source, 
        new String[] 
        {
-       "constraints.validation.error", "EMSPersonnelAdverseEventTemplateId EMSPersonnelAdverseEventCode EMSPersonnelAdverseEventCodeP EMSPersonnelAdverseEventText EMSPersonnelAdverseEventTitle EMSPersonnelAdverseEventEntry1 EMSPersonnelAdverseEventEntry2",
+       "constraints.validation.error", "EMSPersonnelAdverseEventSectionTemplateId EMSPersonnelAdverseEventSectionCode EMSPersonnelAdverseEventSectionCodeP EMSPersonnelAdverseEventSectionText EMSPersonnelAdverseEventSectionTitle EMSPersonnelAdverseEventSectionEntry1 EMSPersonnelAdverseEventSectionEntry2",
        "templateId.root", "2.16.840.1.113883.17.3.10.1.6",
-       "code.code", "67658?5",
+       "code.code", "67658-5",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
-       "code.displayName", "Exposures or injuries of EMS personnel",
+       "code.displayName", "Exposures or Injuries of EMS Personnel Section",
        "title.mixed", "Exposures or Injuries of EMS Personnel"
        });																																	
     addAnnotation
@@ -3104,11 +3201,24 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        {
        "constraints.validation.error", "EMSProtocolSectionTemplateId EMSProtocolSectionCode EMSProtocolSectionEntry1 EMSProtocolSectionEntry2 EMSProtocolSectionEntry3",
        "templateId.root", "2.16.840.1.113883.17.3.10.1.7",
-       "code.code", "67537?1",
+       "code.code", "67537-1",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
-       "code.displayName", "EMS Protocol"
+       "code.displayName", "EMS Protocol Section"
        });																										
+    addAnnotation
+      (emsResponseSectionEClass, 
+       source, 
+       new String[] 
+       {
+       "constraints.validation.error", "EMSResponseSectionTemplateId EMSResponseSectionCode EMSResponseSectionCodeP EMSResponseSectionText EMSResponseSectionTitle EMSResponseSectionEntry1 EMSResponseSectionEntry2 EMSResponseSectionEntry3 EMSResponseSectionEntry4",
+       "templateId.root", "2.16.840.1.113883.17.3.10.1.3",
+       "code.code", "67664-3",
+       "code.codeSystem", "2.16.840.1.113883.6.1",
+       "code.codeSystemName", "LOINC",
+       "code.displayName", "EMS Response Section",
+       "title.mixed", "EMS Response"
+       });																																																																			
     addAnnotation
       (emsSituationSectionEClass, 
        source, 
@@ -3116,10 +3226,10 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        {
        "constraints.validation.error", "EMSSituationSectionTemplateId EMSSituationSectionCode EMSSituationSectionCodeP EMSSituationSectionText EMSSituationSectionTitle EMSSituationSectionEntry1 EMSSituationSectionEntry2 EMSSituationSectionEntry3 EMSSituationSectionEntry4 EMSSituationSectionEntry5 EMSSituationSectionEntry6 EMSSituationSectionEntry7 EMSSituationSectionEntry8",
        "templateId.root", "2.16.840.1.113883.17.3.10.1.9",
-       "code.code", "67666?8",
+       "code.code", "67666-8",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
-       "code.displayName", "EMS Situation"
+       "code.displayName", "EMS Situation Section"
        });																																																																							
     addAnnotation
       (emsTimesSectionEClass, 
@@ -3131,10 +3241,33 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "code.code", "67667-6",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
-       "code.displayName", "EMS Times",
+       "code.displayName", "EMS Times Section",
        "title.mixed", "EMS Times",
        "constraints.validation.warning", "EMSTimesSectionTitle"
-       });																																																														
+       });																																																																
+    addAnnotation
+      (emsVitalSignsSectionEClass, 
+       source, 
+       new String[] 
+       {
+       "constraints.validation.error", "EMSVitalSignsSectionTemplateId EMSVitalSignsSectionCode EMSVitalSignsSectionEntry1",
+       "templateId.root", "2.16.840.1.113883.17.3.10.1.23",
+       "code.code", "67801-1",
+       "code.codeSystem", "2.16.840.1.113883.6.1",
+       "code.codeSystemName", "LOINC",
+       "code.displayName", "EMS Vital Signs Section",
+       "title.mixed", "EMS Vital Signs",
+       "constraints.validation.warning", "EMSVitalSignsSectionTitle"
+       });																																								
+    addAnnotation
+      (derivedEntryEClass, 
+       source, 
+       new String[] 
+       {
+       "constraints.validation.error", "DerivedEntryTemplateId DerivedEntryTypeCode",
+       "templateId.root", "2.16.840.1.1133883.17.3.10.1.24",
+       "typeCode", "DRIV"
+       });								
   }
 
   /**
@@ -3152,7 +3285,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        new String[] 
        {
        "constraints.validation.error", "PatientRoleAddr"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																		
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																														
   }
 
   /**
@@ -3178,7 +3311,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "sDTCRaceCode.codeSystemName", "Race and Ethnicity - CDC",
        "administrativeGenderCode.codeSystem", "2.16.840.1.113883.5.1",
        "administrativeGenderCode.codeSystemName", "AdministrativeGenderCode"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																	
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																													
   }
 
   /**
@@ -3197,7 +3330,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        {
        "typeCode", "AUT",
        "constraints.validation.error", "EMSAuthoringDeviceParticipationTypeCode"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																												
   }
 
   /**
@@ -3216,7 +3349,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        {
        "classCode", "ASSIGNED",
        "constraints.validation.error", "EMSAuthoringDeviceRoleClassCode"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																															
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											
   }
 
   /**
@@ -3234,7 +3367,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        new String[] 
        {
        "constraints.validation.error", "EMSAuthoringDeviceManufacturerModelName EMSAuthoringDeviceSoftwareName"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																														
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																										
   }
 
   /**
@@ -3252,7 +3385,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        new String[] 
        {
        "constraints.validation.error", "EMSHumanAuthorRoleId EMSHumanAuthorRoleAddr EMSHumanAuthorRoleTelecom"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																													
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																									
   }
 
   /**
@@ -3270,7 +3403,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        new String[] 
        {
        "constraints.validation.error", "EMSHumanAuthorName"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																												
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																								
   }
 
   /**
@@ -3289,7 +3422,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        {
        "typeCode", "COMP",
        "constraints.validation.error", "EMSEncompassingEncounterRelationshipTypeCode"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																							
   }
 
   /**
@@ -3307,7 +3440,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        new String[] 
        {
        "constraints.validation.error", "EncompassingEncounterEffectiveTime"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																										
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																						
   }
 
   /**
@@ -3325,7 +3458,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        new String[] 
        {
        "constraints.validation.error", "LocationHealthCareFacility"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																									
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																					
   }
 
   /**
@@ -3345,7 +3478,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "constraints.validation.error", "HealthCareFacilityId HealthCareFacilityCode HealthCareFacilityPlace",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																								
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																				
   }
 
   /**
@@ -3365,63 +3498,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "constraints.validation.info", "PlaceName PlaceAddr",
        "classCode", "PLC",
        "constraints.validation.error", "PlaceClassCode"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																							
-  }
-
-  /**
-   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSDestinationParticipantAssociatedEntity</b>.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  protected void createEmspcrPatientCareReportEMSDestinationParticipantAssociatedEntityAnnotations()
-  {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSDestinationParticipantAssociatedEntity";															
-    addAnnotation
-      (patientCareReportEClass, 
-       source, 
-       new String[] 
-       {
-       "constraints.validation.error", "AssociatedEntityAddr AssociatedEntityCode AssociatedEntityCodeP AssociatedEntityAssociatedPerson AssociatedEntityOrganization",
-       "code.codeSystem", "2.16.840.1.113993.17.3.5.69",
-       "code.codeSystemName", "Facility Type"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																						
-  }
-
-  /**
-   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSDestinationParticipantAssociatedEntityPerson</b>.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  protected void createEmspcrPatientCareReportEMSDestinationParticipantAssociatedEntityPersonAnnotations()
-  {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSDestinationParticipantAssociatedEntityPerson";																
-    addAnnotation
-      (patientCareReportEClass, 
-       source, 
-       new String[] 
-       {
-       "constraints.validation.error", "PersonName"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																					
-  }
-
-  /**
-   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSDestinationParticipantAssociatedEntityOrganization</b>.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  protected void createEmspcrPatientCareReportEMSDestinationParticipantAssociatedEntityOrganizationAnnotations()
-  {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSDestinationParticipantAssociatedEntityOrganization";																	
-    addAnnotation
-      (patientCareReportEClass, 
-       source, 
-       new String[] 
-       {
-       "constraints.validation.error", "OrganizationName"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																				
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																			
   }
 
   /**
@@ -3432,7 +3509,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrPatientCareReportEMSServiceEventParticipationEMSServiceEventAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSServiceEventParticipationEMSServiceEvent";																		
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSServiceEventParticipationEMSServiceEvent";															
     addAnnotation
       (patientCareReportEClass, 
        source, 
@@ -3441,7 +3518,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "constraints.validation.error", "EMSServiceEventCode"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																			
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																		
   }
 
   /**
@@ -3452,7 +3529,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrPatientCareReportEMSServiceEventParticipationEMSServiceEventEMSPerformerParticipationAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSServiceEventParticipationEMSServiceEventEMSPerformerParticipation";																			
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSServiceEventParticipationEMSServiceEventEMSPerformerParticipation";																
     addAnnotation
       (patientCareReportEClass, 
        source, 
@@ -3461,7 +3538,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "functionCode.codeSystem", "2.16.840.1.113883.6.1",
        "functionCode.codeSystemName", "LOINC",
        "constraints.validation.error", "EMSPerformerParticipationFunctionCode"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																		
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																	
   }
 
   /**
@@ -3472,7 +3549,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrPatientCareReportEMSServiceEventParticipationEMSServiceEventEMSPerformerParticipationEMSPerformerRoleAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSServiceEventParticipationEMSServiceEventEMSPerformerParticipationEMSPerformerRole";																				
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSServiceEventParticipationEMSServiceEventEMSPerformerParticipationEMSPerformerRole";																	
     addAnnotation
       (patientCareReportEClass, 
        source, 
@@ -3481,7 +3558,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "constraints.validation.error", "EMSPerformerRoleCode"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																	
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																
   }
 
   /**
@@ -3492,14 +3569,14 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrPatientCareReportEMSParentDocumentRelationshipAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSParentDocumentRelationship";																					
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSParentDocumentRelationship";																		
     addAnnotation
       (patientCareReportEClass, 
        source, 
        new String[] 
        {
        "typeCode", "RPLC"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																															
   }
 
   /**
@@ -3510,14 +3587,15 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrPatientCareReportEMSDestinationParticipantParticipationAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSDestinationParticipantParticipation";																						
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSDestinationParticipantParticipation";																			
     addAnnotation
       (patientCareReportEClass, 
        source, 
        new String[] 
        {
-       "typeCode", "DST"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																															
+       "typeCode", "DST",
+       "constraints.validation.error", "EMSDestinationParticipantParticipationTypeCode"
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																														
   }
 
   /**
@@ -3528,38 +3606,35 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrPatientCareReportEMSDestinationParticipantParticipationEMSDestinationRoleAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSDestinationParticipantParticipationEMSDestinationRole";																							
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSDestinationParticipantParticipationEMSDestinationRole";																				
     addAnnotation
       (patientCareReportEClass, 
        source, 
        new String[] 
        {
+       "constraints.validation.warning", "EMSDestinationRoleAddr",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "constraints.validation.error", "EMSDestinationRoleCode"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																														
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																													
   }
 
   /**
-   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSMedicalHistory</b>.
+   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSDestinationParticipantParticipationEMSDestinationRoleDestinationOrganization</b>.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  protected void createEmspcrPatientCareReportEMSMedicalHistoryAnnotations()
+  protected void createEmspcrPatientCareReportEMSDestinationParticipantParticipationEMSDestinationRoleDestinationOrganizationAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSMedicalHistory";																								
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPatientCareReportEMSDestinationParticipantParticipationEMSDestinationRoleDestinationOrganization";																					
     addAnnotation
       (patientCareReportEClass, 
        source, 
        new String[] 
        {
-       "code.code", "67842-5",
-       "code.codeSystem", "2.16.840.1.113883.6.1",
-       "code.codeSystemName", "LOINC",
-       "code.displayName", "EMS History of past illness",
-       "constraints.validation.error", "EMSMedicalHistoryCode"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																													
+       "constraints.validation.error", "DestinationOrganizationName"
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																												
   }
 
   /**
@@ -3570,13 +3645,13 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createDuplicatesAnnotations()
   {
-    String source = "duplicates";																									
+    String source = "duplicates";																						
     addAnnotation
       (patientCareReportEClass, 
        source, 
        new String[] 
        {
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																												
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											
   }
 
   /**
@@ -3587,14 +3662,14 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSBillingSectionBillingConditionEntryAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSBillingSectionBillingConditionEntry";																																																																																																																																													
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSBillingSectionBillingConditionEntry";																																																																																																																																																																																																																		
     addAnnotation
       (emsBillingSectionEClass, 
        source, 
        new String[] 
        {
        "constraints.validation.error", "BillingConditionEntryObservation"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																								
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																															
   }
 
   /**
@@ -3605,7 +3680,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSBillingSectionBillingConditionEntryBillingConditionAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSBillingSectionBillingConditionEntryBillingCondition";																																																																																																																																														
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSBillingSectionBillingConditionEntryBillingCondition";																																																																																																																																																																																																																			
     addAnnotation
       (emsBillingSectionEClass, 
        source, 
@@ -3614,12 +3689,13 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "code.code", "67556-1",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
+       "code.displayName", "Billing condition",
        "constraints.validation.error", "BillingConditionCode BillingConditionCodeVS BillingConditionCodeP BillingConditionValue BillingConditionValueP",
        "constraints.validation.dependOn.BillingConditionCode", "BillingConditionCodeP",
        "constraints.validation.dependOn.BillingConditionCodeVS", "BillingConditionCodeP",
        "value.codeSystem", "2.16.840.1.113883.6.1",
        "value.codeSystemName", "LOINC"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																							
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																														
   }
 
   /**
@@ -3630,14 +3706,14 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSBillingSectionLOSDerivedEntryAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSBillingSectionLOSDerivedEntry";																																																																																																																																															
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSBillingSectionLOSDerivedEntry";																																																																																																																																																																																																																				
     addAnnotation
       (emsBillingSectionEClass, 
        source, 
        new String[] 
        {
        "constraints.validation.error", "LOSDerivedEntryObservation"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																						
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																													
   }
 
   /**
@@ -3648,7 +3724,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSBillingSectionLOSDerivedEntryLevelOfServiceAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSBillingSectionLOSDerivedEntryLevelOfService";																																																																																																																																																
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSBillingSectionLOSDerivedEntryLevelOfService";																																																																																																																																																																																																																					
     addAnnotation
       (emsBillingSectionEClass, 
        source, 
@@ -3662,7 +3738,26 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "constraints.validation.dependOn.LevelOfServiceCode", "LevelOfServiceCodeP",
        "value.codeSystem", "2.16.840.1.113883.6.1",
        "value.codeSystemName", "LOINC"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																					
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																												
+  }
+
+  /**
+   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSInjuryIncidentDescriptionSectionDerivedEntry</b>.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  protected void createEmspcrEMSInjuryIncidentDescriptionSectionDerivedEntryAnnotations()
+  {
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSInjuryIncidentDescriptionSectionDerivedEntry";																																																																																																																																																																																																																																							
+    addAnnotation
+      (emsInjuryIncidentDescriptionSectionEClass, 
+       source, 
+       new String[] 
+       {
+       "constraints.validation.error", "DerivedEntryAirbagDeploymentStatus",
+       "constraints.validation.info", "DerivedEntryDisasterType"
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																										
   }
 
   /**
@@ -3673,7 +3768,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSInjuryIncidentDescriptionSectionDerivedEntryInjuryCauseCategoryAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSInjuryIncidentDescriptionSectionDerivedEntryInjuryCauseCategory";																																																																																																																																																																													
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSInjuryIncidentDescriptionSectionDerivedEntryInjuryCauseCategory";																																																																																																																																																																																																																																								
     addAnnotation
       (emsInjuryIncidentDescriptionSectionEClass, 
        source, 
@@ -3683,8 +3778,10 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "code.displayName", "Injury Cause",
-       "constraints.validation.error", "InjuryCauseCategoryCode"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																								
+       "constraints.validation.error", "InjuryCauseCategoryCode InjuryCauseCategoryValue",
+       "value.codeSystem", "2.16.840.1.113883.6.3.1",
+       "value.codeSystemName", "ICD-10"
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																									
   }
 
   /**
@@ -3695,7 +3792,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSInjuryIncidentDescriptionSectionDerivedEntryInjuryMechanismAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSInjuryIncidentDescriptionSectionDerivedEntryInjuryMechanism";																																																																																																																																																																														
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSInjuryIncidentDescriptionSectionDerivedEntryInjuryMechanism";																																																																																																																																																																																																																																									
     addAnnotation
       (emsInjuryIncidentDescriptionSectionEClass, 
        source, 
@@ -3708,7 +3805,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "constraints.validation.error", "InjuryMechanismCode InjuryMechanismValue",
        "value.codeSystem", "2.16.840.1.113883.6.1",
        "value.codeSystemName", "LOINC"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																							
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																								
   }
 
   /**
@@ -3719,7 +3816,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSInjuryIncidentDescriptionSectionDerivedEntryTraumaCenterCriteriaAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSInjuryIncidentDescriptionSectionDerivedEntryTraumaCenterCriteria";																																																																																																																																																																															
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSInjuryIncidentDescriptionSectionDerivedEntryTraumaCenterCriteria";																																																																																																																																																																																																																																										
     addAnnotation
       (emsInjuryIncidentDescriptionSectionEClass, 
        source, 
@@ -3732,7 +3829,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "constraints.validation.error", "TraumaCenterCriteriaCode TraumaCenterCriteriaValue",
        "value.codeSystem", "2.16.840.1.113883.6.1",
        "value.codeSystemName", "LOINC"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																						
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																							
   }
 
   /**
@@ -3743,7 +3840,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSInjuryIncidentDescriptionSectionDerivedEntryInjuryRiskFactorAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSInjuryIncidentDescriptionSectionDerivedEntryInjuryRiskFactor";																																																																																																																																																																																
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSInjuryIncidentDescriptionSectionDerivedEntryInjuryRiskFactor";																																																																																																																																																																																																																																											
     addAnnotation
       (emsInjuryIncidentDescriptionSectionEClass, 
        source, 
@@ -3756,7 +3853,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "constraints.validation.error", "InjuryRiskFactorCode InjuryRiskFactorValue",
        "value.codeSystem", "2.16.840.1.113883.6.1",
        "value.codeSystemName", "LOINC"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																					
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																						
   }
 
   /**
@@ -3767,7 +3864,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSInjuryIncidentDescriptionSectionDerivedEntryVehicleImpactAreaAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSInjuryIncidentDescriptionSectionDerivedEntryVehicleImpactArea";																																																																																																																																																																																	
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSInjuryIncidentDescriptionSectionDerivedEntryVehicleImpactArea";																																																																																																																																																																																																																																												
     addAnnotation
       (emsInjuryIncidentDescriptionSectionEClass, 
        source, 
@@ -3780,7 +3877,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "constraints.validation.error", "VehicleImpactAreaCode VehicleImpactAreaValue",
        "value.codeSystem", "2.16.840.1.113883.6.1",
        "value.codeSystemName", "LOINC"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																				
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																					
   }
 
   /**
@@ -3791,7 +3888,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSInjuryIncidentDescriptionSectionDerivedEntryPatientLocationInVehicleAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSInjuryIncidentDescriptionSectionDerivedEntryPatientLocationInVehicle";																																																																																																																																																																																		
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSInjuryIncidentDescriptionSectionDerivedEntryPatientLocationInVehicle";																																																																																																																																																																																																																																													
     addAnnotation
       (emsInjuryIncidentDescriptionSectionEClass, 
        source, 
@@ -3804,7 +3901,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "constraints.validation.error", "PatientLocationInVehicleCode PatientLocationInVehicleValue",
        "value.codeSystem", "2.16.840.1.113883.6.1",
        "value.codeSystemName", "LOINC"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																			
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																				
   }
 
   /**
@@ -3815,7 +3912,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSInjuryIncidentDescriptionSectionDerivedEntryVehicleOccupantSafetyEquipmentAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSInjuryIncidentDescriptionSectionDerivedEntryVehicleOccupantSafetyEquipment";																																																																																																																																																																																			
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSInjuryIncidentDescriptionSectionDerivedEntryVehicleOccupantSafetyEquipment";																																																																																																																																																																																																																																														
     addAnnotation
       (emsInjuryIncidentDescriptionSectionEClass, 
        source, 
@@ -3828,7 +3925,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "constraints.validation.error", "VehicleOccupantSafetyEquipmentCode VehicleOccupantSafetyEquipmentValue",
        "value.codeSystem", "2.16.840.1.113883.6.1",
        "value.codeSystemName", "LOINC"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																		
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																			
   }
 
   /**
@@ -3839,7 +3936,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSInjuryIncidentDescriptionSectionDerivedEntryAirbagDeploymentStatusAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSInjuryIncidentDescriptionSectionDerivedEntryAirbagDeploymentStatus";																																																																																																																																																																																				
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSInjuryIncidentDescriptionSectionDerivedEntryAirbagDeploymentStatus";																																																																																																																																																																																																																																															
     addAnnotation
       (emsInjuryIncidentDescriptionSectionEClass, 
        source, 
@@ -3852,7 +3949,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "constraints.validation.error", "AirbagDeploymentStatusCode AirbagDeploymentStatusValue",
        "value.codeSystem", "2.16.840.1.113883.6.1",
        "value.codeSystemName", "LOINC"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																	
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																		
   }
 
   /**
@@ -3863,7 +3960,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSInjuryIncidentDescriptionSectionDerivedEntryHeightOfFallAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSInjuryIncidentDescriptionSectionDerivedEntryHeightOfFall";																																																																																																																																																																																					
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSInjuryIncidentDescriptionSectionDerivedEntryHeightOfFall";																																																																																																																																																																																																																																																
     addAnnotation
       (emsInjuryIncidentDescriptionSectionEClass, 
        source, 
@@ -3874,7 +3971,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "code.codeSystemName", "LOINC",
        "code.displayName", "Height of fall",
        "constraints.validation.error", "HeightOfFallCode"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																	
   }
 
   /**
@@ -3885,7 +3982,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSInjuryIncidentDescriptionSectionDerivedEntryDisasterTypeAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSInjuryIncidentDescriptionSectionDerivedEntryDisasterType";																																																																																																																																																																																						
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSInjuryIncidentDescriptionSectionDerivedEntryDisasterType";																																																																																																																																																																																																																																																	
     addAnnotation
       (emsInjuryIncidentDescriptionSectionEClass, 
        source, 
@@ -3898,7 +3995,26 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "constraints.validation.error", "DisasterTypeCode DisasterTypeValue",
        "value.codeSystem", "2.16.840.1.113883.6.1",
        "value.codeSystemName", "LOINC"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																															
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																
+  }
+
+  /**
+   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCurrentMedicationSectionDerivedEntry</b>.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  protected void createEmspcrEMSCurrentMedicationSectionDerivedEntryAnnotations()
+  {
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCurrentMedicationSectionDerivedEntry";																																																																																																																																																																																																																																																																																																			
+    addAnnotation
+      (emsCurrentMedicationSectionEClass, 
+       source, 
+       new String[] 
+       {
+       "constraints.validation.error", "DerivedEntryPatientOnAnticoagulants",
+       "constraints.validation.info", "DerivedEntryEMSCurrentMedication"
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																														
   }
 
   /**
@@ -3909,7 +4025,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSCurrentMedicationSectionDerivedEntryCurrentlyOnMedicationAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCurrentMedicationSectionDerivedEntryCurrentlyOnMedication";																																																																																																																																																																																																																																								
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCurrentMedicationSectionDerivedEntryCurrentlyOnMedication";																																																																																																																																																																																																																																																																																																				
     addAnnotation
       (emsCurrentMedicationSectionEClass, 
        source, 
@@ -3919,8 +4035,8 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "code.displayName", "Currently on medication",
-       "constraints.validation.error", "CurrentlyOnMedicationCode"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																													
+       "constraints.validation.error", "CurrentlyOnMedicationCode CurrentlyOnMedicationValue"
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																													
   }
 
   /**
@@ -3931,7 +4047,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSCurrentMedicationSectionDerivedEntryPatientOnAnticoagulantsAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCurrentMedicationSectionDerivedEntryPatientOnAnticoagulants";																																																																																																																																																																																																																																									
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCurrentMedicationSectionDerivedEntryPatientOnAnticoagulants";																																																																																																																																																																																																																																																																																																					
     addAnnotation
       (emsCurrentMedicationSectionEClass, 
        source, 
@@ -3940,8 +4056,9 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "code.code", "69749-0",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
-       "constraints.validation.error", "PatientOnAnticoagulantsCode"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																												
+       "code.displayName", "Patient on anticoagulants",
+       "constraints.validation.error", "PatientOnAnticoagulantsCode PatientOnAnticoagulantsValue"
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																												
   }
 
   /**
@@ -3952,16 +4069,55 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSCurrentMedicationSectionDerivedEntryEMSCurrentMedicationAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCurrentMedicationSectionDerivedEntryEMSCurrentMedication";																																																																																																																																																																																																																																										
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCurrentMedicationSectionDerivedEntryEMSCurrentMedication";																																																																																																																																																																																																																																																																																																						
     addAnnotation
       (emsCurrentMedicationSectionEClass, 
        source, 
        new String[] 
        {
+       "constraints.validation.warning", "EMSCurrentMedicationDoseQuantity EMSCurrentMedicationRouteCodeP",
        "routeCode.codeSystem", "2.16.840.1.113883.6.1",
        "routeCode.codeSystemName", "LOINC",
-       "constraints.validation.error", "EMSCurrentMedicationRouteCode"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											
+       "constraints.validation.error", "EMSCurrentMedicationRouteCode EMSCurrentMedicationEMSCurrentMedicationConsumable",
+       "constraints.validation.dependOn.EMSCurrentMedicationRouteCode", "EMSCurrentMedicationRouteCodeP",
+       "constraints.validation.info", "EMSCurrentMedicationNegationInd EMSCurrentMedicationNullFlavor"
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											
+  }
+
+  /**
+   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCurrentMedicationSectionDerivedEntryEMSCurrentMedicationEMSCurrentMedicationConsumable</b>.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  protected void createEmspcrEMSCurrentMedicationSectionDerivedEntryEMSCurrentMedicationEMSCurrentMedicationConsumableAnnotations()
+  {
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCurrentMedicationSectionDerivedEntryEMSCurrentMedicationEMSCurrentMedicationConsumable";																																																																																																																																																																																																																																																																																																							
+    addAnnotation
+      (emsCurrentMedicationSectionEClass, 
+       source, 
+       new String[] 
+       {
+       "constraints.validation.error", "EMSCurrentMedicationConsumableManufacturedProduct"
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																										
+  }
+
+  /**
+   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCurrentMedicationSectionDerivedEntryEMSCurrentMedicationEMSCurrentMedicationConsumableEMSCurrentMedicationProduct</b>.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  protected void createEmspcrEMSCurrentMedicationSectionDerivedEntryEMSCurrentMedicationEMSCurrentMedicationConsumableEMSCurrentMedicationProductAnnotations()
+  {
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCurrentMedicationSectionDerivedEntryEMSCurrentMedicationEMSCurrentMedicationConsumableEMSCurrentMedicationProduct";																																																																																																																																																																																																																																																																																																								
+    addAnnotation
+      (emsCurrentMedicationSectionEClass, 
+       source, 
+       new String[] 
+       {
+       "constraints.validation.error", "EMSCurrentMedicationProductManufacturedLabeledDrug"
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																									
   }
 
   /**
@@ -3972,7 +4128,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSCurrentMedicationSectionDerivedEntryEMSCurrentMedicationEMSCurrentMedicationConsumableEMSCurrentMedicationProductEMSCurrentMedicationDrugAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCurrentMedicationSectionDerivedEntryEMSCurrentMedicationEMSCurrentMedicationConsumableEMSCurrentMedicationProductEMSCurrentMedicationDrug";																																																																																																																																																																																																																																											
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCurrentMedicationSectionDerivedEntryEMSCurrentMedicationEMSCurrentMedicationConsumableEMSCurrentMedicationProductEMSCurrentMedicationDrug";																																																																																																																																																																																																																																																																																																									
     addAnnotation
       (emsCurrentMedicationSectionEClass, 
        source, 
@@ -3980,8 +4136,8 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        {
        "code.codeSystem", "2.16.840.1.113883.6.88",
        "code.codeSystemName", "RxNorm",
-       "constraints.validation.error", "EMSCurrentMedicationDrugCode"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																										
+       "constraints.validation.error", "EMSCurrentMedicationDrugCode EMSCurrentMedicationDrugCodeP"
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																								
   }
 
   /**
@@ -3992,14 +4148,14 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSCardiacArrestEventSectionDerivedEntryAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntry";																																																																																																																																																																																																																																																																	
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntry";																																																																																																																																																																																																																																																																																																																																			
     addAnnotation
       (emsCardiacArrestEventSectionEClass, 
        source, 
        new String[] 
        {
        "constraints.validation.error", "DerivedEntryCardiacArrestExistence"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																				
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																														
   }
 
   /**
@@ -4010,7 +4166,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistence";																																																																																																																																																																																																																																																																		
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistence";																																																																																																																																																																																																																																																																																																																																				
     addAnnotation
       (emsCardiacArrestEventSectionEClass, 
        source, 
@@ -4021,11 +4177,13 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "code.codeSystemName", "HL7ActCode",
        "code.displayName", "ASSERTION",
        "constraints.validation.error", "CardiacArrestExistenceCode CardiacArrestExistenceValue",
+       "constraints.validation.warning", "CardiacArrestExistenceEffectiveTime CardiacArrestExistenceNegationInd",
        "value.code", "410429000",
        "value.codeSystem", "2.16.840.1.113883.6.96",
        "value.codeSystemName", "SNOMEDCT",
-       "value.displayName", "cardiac arrest"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																			
+       "value.displayName", "cardiac arrest",
+       "constraints.validation.info", "CardiacArrestExistenceCardiacArrestCauseRelationship CardiacArrestExistenceCardiacArrestTimingRelationship CardiacArrestExistenceCardiacArrestInformantParticipation CardiacArrestExistencePriorCPRRelationship CardiacArrestExistencePriorAEDRelationship CardiacArrestExistenceSpontaneousCirculationRelationship CardiacArrestExistenceDestinationRhythmRelationship"
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																													
   }
 
   /**
@@ -4036,16 +4194,16 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceCardiacArrestTimingRelationshipAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceCardiacArrestTimingRelationship";																																																																																																																																																																																																																																																																			
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceCardiacArrestTimingRelationship";																																																																																																																																																																																																																																																																																																																																					
     addAnnotation
       (emsCardiacArrestEventSectionEClass, 
        source, 
        new String[] 
        {
        "inversionInd", "TRUE",
-       "constraints.validation.error", "CardiacArrestTimingRelationshipInversionInd",
+       "constraints.validation.error", "CardiacArrestTimingRelationshipInversionInd CardiacArrestTimingRelationshipTypeCode CardiacArrestTimingRelationshipCardiacArrestTiming",
        "typeCode", "SUBJ"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																		
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																												
   }
 
   /**
@@ -4056,7 +4214,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceCardiacArrestTimingRelationshipCardiacArrestTimingAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceCardiacArrestTimingRelationshipCardiacArrestTiming";																																																																																																																																																																																																																																																																				
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceCardiacArrestTimingRelationshipCardiacArrestTiming";																																																																																																																																																																																																																																																																																																																																						
     addAnnotation
       (emsCardiacArrestEventSectionEClass, 
        source, 
@@ -4065,10 +4223,11 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "code.code", "67502-5",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
+       "code.displayName", "Cardiac arrest occurrence",
        "constraints.validation.error", "CardiacArrestTimingCode CardiacArrestTimingValue",
        "value.codeSystem", "2.16.840.1.113883.6.1",
        "value.codeSystemName", "LOINC"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																	
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											
   }
 
   /**
@@ -4079,15 +4238,16 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceCardiacArrestCauseRelationshipAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceCardiacArrestCauseRelationship";																																																																																																																																																																																																																																																																					
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceCardiacArrestCauseRelationship";																																																																																																																																																																																																																																																																																																																																							
     addAnnotation
       (emsCardiacArrestEventSectionEClass, 
        source, 
        new String[] 
        {
        "inversionInd", "TRUE",
+       "constraints.validation.error", "CardiacArrestCauseRelationshipInversionInd CardiacArrestCauseRelationshipTypeCode",
        "typeCode", "SUBJ"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																										
   }
 
   /**
@@ -4098,7 +4258,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceCardiacArrestCauseRelationshipCardiacArrestCauseAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceCardiacArrestCauseRelationshipCardiacArrestCause";																																																																																																																																																																																																																																																																						
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceCardiacArrestCauseRelationshipCardiacArrestCause";																																																																																																																																																																																																																																																																																																																																								
     addAnnotation
       (emsCardiacArrestEventSectionEClass, 
        source, 
@@ -4111,7 +4271,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "constraints.validation.error", "CardiacArrestCauseCode CardiacArrestCauseValue",
        "value.codeSystem", "2.16.840.1.113883.6.1",
        "value.codeSystemName", "LOINC"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																															
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																									
   }
 
   /**
@@ -4122,14 +4282,15 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceCardiacArrestInformantParticipationAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceCardiacArrestInformantParticipation";																																																																																																																																																																																																																																																																							
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceCardiacArrestInformantParticipation";																																																																																																																																																																																																																																																																																																																																									
     addAnnotation
       (emsCardiacArrestEventSectionEClass, 
        source, 
        new String[] 
        {
-       "typeCode", "INF"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																														
+       "typeCode", "INF",
+       "constraints.validation.error", "CardiacArrestInformantParticipationTypeCode"
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																								
   }
 
   /**
@@ -4140,17 +4301,17 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceCardiacArrestInformantParticipationCardiacArrestInformantRoleAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceCardiacArrestInformantParticipationCardiacArrestInformantRole";																																																																																																																																																																																																																																																																								
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceCardiacArrestInformantParticipationCardiacArrestInformantRole";																																																																																																																																																																																																																																																																																																																																										
     addAnnotation
       (emsCardiacArrestEventSectionEClass, 
        source, 
        new String[] 
        {
        "classCode", "AGNT",
+       "constraints.validation.error", "CardiacArrestInformantRoleClassCode CardiacArrestInformantRoleCode",
        "code.codeSystem", "2.16.840.1.113883.6.1",
-       "code.codeSystemName", "LOINC",
-       "constraints.validation.error", "CardiacArrestInformantRoleCode"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																													
+       "code.codeSystemName", "LOINC"
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																							
   }
 
   /**
@@ -4161,15 +4322,16 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistencePriorCPRRelationshipAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistencePriorCPRRelationship";																																																																																																																																																																																																																																																																									
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistencePriorCPRRelationship";																																																																																																																																																																																																																																																																																																																																											
     addAnnotation
       (emsCardiacArrestEventSectionEClass, 
        source, 
        new String[] 
        {
        "inversionInd", "TRUE",
+       "constraints.validation.error", "PriorCPRRelationshipInversionInd PriorCPRRelationshipTypeCode",
        "typeCode", "SUBJ"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																												
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																						
   }
 
   /**
@@ -4180,7 +4342,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistencePriorCPRRelationshipPriorCPRAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistencePriorCPRRelationshipPriorCPR";																																																																																																																																																																																																																																																																										
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistencePriorCPRRelationshipPriorCPR";																																																																																																																																																																																																																																																																																																																																												
     addAnnotation
       (emsCardiacArrestEventSectionEClass, 
        source, 
@@ -4190,8 +4352,9 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "code.displayName", "CPR prior to EMS arrival",
-       "constraints.validation.error", "PriorCPRCode"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											
+       "constraints.validation.error", "PriorCPRCode PriorCPRValue",
+       "constraints.validation.info", "PriorCPRPriorCPRProviderParticipation"
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																					
   }
 
   /**
@@ -4202,14 +4365,15 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistencePriorCPRRelationshipPriorCPRPriorCPRProviderParticipationAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistencePriorCPRRelationshipPriorCPRPriorCPRProviderParticipation";																																																																																																																																																																																																																																																																											
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistencePriorCPRRelationshipPriorCPRPriorCPRProviderParticipation";																																																																																																																																																																																																																																																																																																																																													
     addAnnotation
       (emsCardiacArrestEventSectionEClass, 
        source, 
        new String[] 
        {
-       "typeCode", "RESP"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																										
+       "typeCode", "RESP",
+       "constraints.validation.info", "PriorCPRProviderParticipationTypeCode"
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																				
   }
 
   /**
@@ -4220,7 +4384,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistencePriorCPRRelationshipPriorCPRPriorCPRProviderParticipationPriorCPRProviderAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistencePriorCPRRelationshipPriorCPRPriorCPRProviderParticipationPriorCPRProvider";																																																																																																																																																																																																																																																																												
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistencePriorCPRRelationshipPriorCPRPriorCPRProviderParticipationPriorCPRProvider";																																																																																																																																																																																																																																																																																																																																														
     addAnnotation
       (emsCardiacArrestEventSectionEClass, 
        source, 
@@ -4229,7 +4393,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "constraints.validation.error", "PriorCPRProviderCode"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																									
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																			
   }
 
   /**
@@ -4240,15 +4404,16 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistencePriorAEDRelationshipAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistencePriorAEDRelationship";																																																																																																																																																																																																																																																																													
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistencePriorAEDRelationship";																																																																																																																																																																																																																																																																																																																																															
     addAnnotation
       (emsCardiacArrestEventSectionEClass, 
        source, 
        new String[] 
        {
        "inversionInd", "TRUE",
+       "constraints.validation.error", "PriorAEDRelationshipInversionInd PriorAEDRelationshipTypeCode PriorAEDRelationshipPriorAEDUse",
        "typeCode", "SUBJ"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																								
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																		
   }
 
   /**
@@ -4259,7 +4424,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistencePriorAEDRelationshipPriorAEDUseAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistencePriorAEDRelationshipPriorAEDUse";																																																																																																																																																																																																																																																																														
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistencePriorAEDRelationshipPriorAEDUse";																																																																																																																																																																																																																																																																																																																																																
     addAnnotation
       (emsCardiacArrestEventSectionEClass, 
        source, 
@@ -4271,8 +4436,9 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "code.displayName", "AED use prior to EMS arrival",
        "constraints.validation.error", "PriorAEDUseCode PriorAEDUseValue",
        "value.codeSystem", "2.16.840.1.113883.6.1",
-       "value.codeSystemName", "LOINC"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																							
+       "value.codeSystemName", "LOINC",
+       "constraints.validation.info", "PriorAEDUsePriorAEDProviderParticipation"
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																	
   }
 
   /**
@@ -4283,14 +4449,15 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistencePriorAEDRelationshipPriorAEDUsePriorAEDProviderParticipationAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistencePriorAEDRelationshipPriorAEDUsePriorAEDProviderParticipation";																																																																																																																																																																																																																																																																															
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistencePriorAEDRelationshipPriorAEDUsePriorAEDProviderParticipation";																																																																																																																																																																																																																																																																																																																																																	
     addAnnotation
       (emsCardiacArrestEventSectionEClass, 
        source, 
        new String[] 
        {
-       "typeCode", "RESP"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																						
+       "typeCode", "RESP",
+       "constraints.validation.info", "PriorAEDProviderParticipationPriorAEDProvider"
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																
   }
 
   /**
@@ -4301,7 +4468,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistencePriorAEDRelationshipPriorAEDUsePriorAEDProviderParticipationPriorAEDProviderAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistencePriorAEDRelationshipPriorAEDUsePriorAEDProviderParticipationPriorAEDProvider";																																																																																																																																																																																																																																																																																
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistencePriorAEDRelationshipPriorAEDUsePriorAEDProviderParticipationPriorAEDProvider";																																																																																																																																																																																																																																																																																																																																																		
     addAnnotation
       (emsCardiacArrestEventSectionEClass, 
        source, 
@@ -4310,7 +4477,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "constraints.validation.error", "PriorAEDProviderCode"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																					
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																															
   }
 
   /**
@@ -4321,15 +4488,16 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceArrestRhythmRelationshipAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceArrestRhythmRelationship";																																																																																																																																																																																																																																																																																	
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceArrestRhythmRelationship";																																																																																																																																																																																																																																																																																																																																																			
     addAnnotation
       (emsCardiacArrestEventSectionEClass, 
        source, 
        new String[] 
        {
        "inversionInd", "TRUE",
+       "constraints.validation.error", "ArrestRhythmRelationshipInversionInd ArrestRhythmRelationshipTypeCode ArrestRhythmRelationshipObservation",
        "typeCode", "SUBJ"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																				
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																														
   }
 
   /**
@@ -4340,7 +4508,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceArrestRhythmRelationshipArrestRhythmAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceArrestRhythmRelationshipArrestRhythm";																																																																																																																																																																																																																																																																																		
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceArrestRhythmRelationshipArrestRhythm";																																																																																																																																																																																																																																																																																																																																																				
     addAnnotation
       (emsCardiacArrestEventSectionEClass, 
        source, 
@@ -4353,7 +4521,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "constraints.validation.error", "ArrestRhythmCode ArrestRhythmValue",
        "value.codeSystem", "2.16.840.1.113883.6.1",
        "value.codeSystemName", "LOINC"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																			
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																													
   }
 
   /**
@@ -4364,15 +4532,16 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceSpontaneousCirculationRelationshipAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceSpontaneousCirculationRelationship";																																																																																																																																																																																																																																																																																			
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceSpontaneousCirculationRelationship";																																																																																																																																																																																																																																																																																																																																																					
     addAnnotation
       (emsCardiacArrestEventSectionEClass, 
        source, 
        new String[] 
        {
        "inversionInd", "TRUE",
+       "constraints.validation.error", "SpontaneousCirculationRelationshipInversionInd SpontaneousCirculationRelationshipTypeCode SpontaneousCirculationRelationshipReturnOfSpontaneousCirculation",
        "typeCode", "SUBJ"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																		
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																												
   }
 
   /**
@@ -4383,7 +4552,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceSpontaneousCirculationRelationshipReturnOfSpontaneousCirculationAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceSpontaneousCirculationRelationshipReturnOfSpontaneousCirculation";																																																																																																																																																																																																																																																																																				
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceSpontaneousCirculationRelationshipReturnOfSpontaneousCirculation";																																																																																																																																																																																																																																																																																																																																																						
     addAnnotation
       (emsCardiacArrestEventSectionEClass, 
        source, 
@@ -4396,7 +4565,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "constraints.validation.error", "ReturnOfSpontaneousCirculationCode ReturnOfSpontaneousCirculationValue",
        "value.codeSystem", "2.16.840.1.113883.6.1",
        "value.codeSystemName", "LOINC"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																	
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											
   }
 
   /**
@@ -4407,15 +4576,16 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceDestinationRhythmRelationshipAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceDestinationRhythmRelationship";																																																																																																																																																																																																																																																																																					
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceDestinationRhythmRelationship";																																																																																																																																																																																																																																																																																																																																																							
     addAnnotation
       (emsCardiacArrestEventSectionEClass, 
        source, 
        new String[] 
        {
        "inversionInd", "TRUE",
+       "constraints.validation.error", "DestinationRhythmRelationshipInversionInd DestinationRhythmRelationshipTypeCode DestinationRhythmRelationshipDestinationRhythm",
        "typeCode", "SUBJ"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																										
   }
 
   /**
@@ -4426,7 +4596,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceDestinationRhythmRelationshipDestinationRhythmAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceDestinationRhythmRelationshipDestinationRhythm";																																																																																																																																																																																																																																																																																						
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSCardiacArrestEventSectionDerivedEntryCardiacArrestExistenceDestinationRhythmRelationshipDestinationRhythm";																																																																																																																																																																																																																																																																																																																																																								
     addAnnotation
       (emsCardiacArrestEventSectionEClass, 
        source, 
@@ -4439,7 +4609,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "constraints.validation.error", "DestinationRhythmCode DestinationRhythmValue",
        "value.codeSystem", "2.16.840.1.113883.6.1",
        "value.codeSystemName", "LOINC"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																															
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																									
   }
 
   /**
@@ -4450,7 +4620,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSAdvanceDirectivesSectionDerivedEntryEMSAdvancedDirectiveObservationAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSAdvanceDirectivesSectionDerivedEntryEMSAdvancedDirectiveObservation";																																																																																																																																																																																																																																																																																																								
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSAdvanceDirectivesSectionDerivedEntryEMSAdvancedDirectiveObservation";																																																																																																																																																																																																																																																																																																																																																																										
     addAnnotation
       (emsAdvanceDirectivesSectionEClass, 
        source, 
@@ -4463,7 +4633,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "constraints.validation.error", "EMSAdvancedDirectiveObservationCode EMSAdvancedDirectiveObservationValue",
        "value.codeSystem", "2.16.840.1.113883.6.1",
        "value.codeSystemName", "LOINC"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																													
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																							
   }
 
   /**
@@ -4474,14 +4644,14 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntryAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntry";																																																																																																																																																																																																																																																																																																																										
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntry";																																																																																																																																																																																																																																																																																																																																																																																												
     addAnnotation
       (emsAllergiesAndAdverseReactionsSectionEClass, 
        source, 
        new String[] 
        {
-       "constraints.validation.error", "DerivedEntryEMSMedicationAllergies"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											
+       "constraints.validation.error", "DerivedEntryEMSEnvironmentalAllergies"
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																					
   }
 
   /**
@@ -4492,7 +4662,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntryEMSMedicationAllergiesAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntryEMSMedicationAllergies";																																																																																																																																																																																																																																																																																																																											
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntryEMSMedicationAllergies";																																																																																																																																																																																																																																																																																																																																																																																													
     addAnnotation
       (emsAllergiesAndAdverseReactionsSectionEClass, 
        source, 
@@ -4500,7 +4670,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        {
        "constraints.validation.error", "EMSMedicationAllergiesEMSExistenceOfDrugAllergy",
        "constraints.validation.info", "EMSMedicationAllergiesEMSDrugAllergy"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																										
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																				
   }
 
   /**
@@ -4511,18 +4681,18 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntryEMSMedicationAllergiesEMSExistenceOfDrugAllergyAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntryEMSMedicationAllergiesEMSExistenceOfDrugAllergy";																																																																																																																																																																																																																																																																																																																												
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntryEMSMedicationAllergiesEMSExistenceOfDrugAllergy";																																																																																																																																																																																																																																																																																																																																																																																														
     addAnnotation
       (emsAllergiesAndAdverseReactionsSectionEClass, 
        source, 
        new String[] 
        {
-       "code.code", "67794?8",
+       "code.code", "67794-8",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "code.displayName", "Existence of drug allergy",
-       "constraints.validation.error", "EMSExistenceOfDrugAllergyCode"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																									
+       "constraints.validation.error", "EMSExistenceOfDrugAllergyCode EMSExistenceOfDrugAllergyValue"
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																			
   }
 
   /**
@@ -4533,18 +4703,59 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntryEMSMedicationAllergiesEMSDrugAllergyAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntryEMSMedicationAllergiesEMSDrugAllergy";																																																																																																																																																																																																																																																																																																																													
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntryEMSMedicationAllergiesEMSDrugAllergy";																																																																																																																																																																																																																																																																																																																																																																																															
     addAnnotation
       (emsAllergiesAndAdverseReactionsSectionEClass, 
        source, 
        new String[] 
        {
+       "code.code", "67850-8",
+       "code.codeSystem", "2.16.840.1.113883.6.1",
+       "code.codeSystemName", "LOINC",
+       "code.displayName", "Drug allergy",
+       "constraints.validation.error", "EMSDrugAllergyCode EMSDrugAllergyCodeP EMSDrugAllergyValue",
+       "constraints.validation.dependOn.EMSDrugAllergyCode", "EMSDrugAllergyCodeP",
        "value.code", "106190000",
        "value.codeSystem", "2.16.840.1.113883.6.96",
        "value.codeSystemName", "SNOMEDCT",
-       "value.displayName", "allergy",
-       "constraints.validation.error", "EMSDrugAllergyValue"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																								
+       "value.displayName", "allergy"
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																		
+  }
+
+  /**
+   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntryEMSMedicationAllergiesEMSDrugAllergyEMSDrugAllergyParticipation</b>.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  protected void createEmspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntryEMSMedicationAllergiesEMSDrugAllergyEMSDrugAllergyParticipationAnnotations()
+  {
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntryEMSMedicationAllergiesEMSDrugAllergyEMSDrugAllergyParticipation";																																																																																																																																																																																																																																																																																																																																																																																																
+    addAnnotation
+      (emsAllergiesAndAdverseReactionsSectionEClass, 
+       source, 
+       new String[] 
+       {
+       "constraints.validation.error", "EMSDrugAllergyParticipationEMSDrugAllergyParticipantRole"
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																	
+  }
+
+  /**
+   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntryEMSMedicationAllergiesEMSDrugAllergyEMSDrugAllergyParticipationEMSDrugAllergyParticipantRole</b>.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  protected void createEmspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntryEMSMedicationAllergiesEMSDrugAllergyEMSDrugAllergyParticipationEMSDrugAllergyParticipantRoleAnnotations()
+  {
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntryEMSMedicationAllergiesEMSDrugAllergyEMSDrugAllergyParticipationEMSDrugAllergyParticipantRole";																																																																																																																																																																																																																																																																																																																																																																																																	
+    addAnnotation
+      (emsAllergiesAndAdverseReactionsSectionEClass, 
+       source, 
+       new String[] 
+       {
+       "constraints.validation.error", "EMSDrugAllergyParticipantRoleEMSDrugAllergyEntity"
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																
   }
 
   /**
@@ -4555,7 +4766,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntryEMSMedicationAllergiesEMSDrugAllergyEMSDrugAllergyParticipationEMSDrugAllergyParticipantRoleEMSDrugAllergyEntityAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntryEMSMedicationAllergiesEMSDrugAllergyEMSDrugAllergyParticipationEMSDrugAllergyParticipantRoleEMSDrugAllergyEntity";																																																																																																																																																																																																																																																																																																																														
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntryEMSMedicationAllergiesEMSDrugAllergyEMSDrugAllergyParticipationEMSDrugAllergyParticipantRoleEMSDrugAllergyEntity";																																																																																																																																																																																																																																																																																																																																																																																																		
     addAnnotation
       (emsAllergiesAndAdverseReactionsSectionEClass, 
        source, 
@@ -4564,7 +4775,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "code.codeSystem", "2.16.840.1.113883.6.88",
        "code.codeSystemName", "RxNorm",
        "constraints.validation.error", "EMSDrugAllergyEntityCode"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																							
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																															
   }
 
   /**
@@ -4575,7 +4786,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntryEMSEnvironmentalAllergiesAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntryEMSEnvironmentalAllergies";																																																																																																																																																																																																																																																																																																																															
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntryEMSEnvironmentalAllergies";																																																																																																																																																																																																																																																																																																																																																																																																			
     addAnnotation
       (emsAllergiesAndAdverseReactionsSectionEClass, 
        source, 
@@ -4583,7 +4794,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        {
        "constraints.validation.error", "EMSEnvironmentalAllergiesEMSExistenceOfEnvironmentalAllergy",
        "constraints.validation.info", "EMSEnvironmentalAllergiesEMSEnvironmentalAllergy"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																						
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																														
   }
 
   /**
@@ -4594,18 +4805,18 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntryEMSEnvironmentalAllergiesEMSExistenceOfEnvironmentalAllergyAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntryEMSEnvironmentalAllergiesEMSExistenceOfEnvironmentalAllergy";																																																																																																																																																																																																																																																																																																																																
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntryEMSEnvironmentalAllergiesEMSExistenceOfEnvironmentalAllergy";																																																																																																																																																																																																																																																																																																																																																																																																				
     addAnnotation
       (emsAllergiesAndAdverseReactionsSectionEClass, 
        source, 
        new String[] 
        {
-       "code.code", "69747?4",
+       "code.code", "69747-4",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "code.displayName", "EMS Existence of environmental allergy",
-       "constraints.validation.error", "EMSExistenceOfEnvironmentalAllergyCode"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																					
+       "constraints.validation.error", "EMSExistenceOfEnvironmentalAllergyCode EMSExistenceOfEnvironmentalAllergyValue"
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																													
   }
 
   /**
@@ -4616,190 +4827,248 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntryEMSEnvironmentalAllergiesEMSEnvironmentalAllergyAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntryEMSEnvironmentalAllergiesEMSEnvironmentalAllergy";																																																																																																																																																																																																																																																																																																																																	
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSAllergiesAndAdverseReactionsSectionDerivedEntryEMSEnvironmentalAllergiesEMSEnvironmentalAllergy";																																																																																																																																																																																																																																																																																																																																																																																																					
     addAnnotation
       (emsAllergiesAndAdverseReactionsSectionEClass, 
        source, 
        new String[] 
        {
-       "code.code", "69748?2",
+       "code.code", "69748-2",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "code.displayName", "Known allergies to food or environmental agents",
        "constraints.validation.error", "EMSEnvironmentalAllergyCode EMSEnvironmentalAllergyValue",
        "value.codeSystem", "2.16.840.1.113883.6.1",
        "value.codeSystemName", "LOINC"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																				
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																												
   }
 
   /**
-   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPastMedicalHistoryDerivedEntry</b>.
+   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPastMedicalHistorySectionDerivedEntry</b>.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  protected void createEmspcrEMSPastMedicalHistoryDerivedEntryAnnotations()
+  protected void createEmspcrEMSPastMedicalHistorySectionDerivedEntryAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPastMedicalHistoryDerivedEntry";																																																																																																																																																																																																																																																																																																																																																							
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPastMedicalHistorySectionDerivedEntry";																																																																																																																																																																																																																																																																																																																																																																																																																											
     addAnnotation
-      (emsPastMedicalHistoryEClass, 
+      (emsPastMedicalHistorySectionEClass, 
        source, 
        new String[] 
        {
        "constraints.validation.info", "DerivedEntryEMSHistoryOfConditions"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																														
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																						
   }
 
   /**
-   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPastMedicalHistoryDerivedEntryEMSHistoryOfConditions</b>.
+   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPastMedicalHistorySectionDerivedEntryEMSHistoryOfConditions</b>.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  protected void createEmspcrEMSPastMedicalHistoryDerivedEntryEMSHistoryOfConditionsAnnotations()
+  protected void createEmspcrEMSPastMedicalHistorySectionDerivedEntryEMSHistoryOfConditionsAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPastMedicalHistoryDerivedEntryEMSHistoryOfConditions";																																																																																																																																																																																																																																																																																																																																																								
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPastMedicalHistorySectionDerivedEntryEMSHistoryOfConditions";																																																																																																																																																																																																																																																																																																																																																																																																																												
     addAnnotation
-      (emsPastMedicalHistoryEClass, 
+      (emsPastMedicalHistorySectionEClass, 
        source, 
        new String[] 
        {
        "constraints.validation.error", "EMSHistoryOfConditionsEMSExistenceOfHistoryOfCondition",
        "constraints.validation.info", "EMSHistoryOfConditionsEMSHistoryOfCondition"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																													
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																					
   }
 
   /**
-   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPastMedicalHistoryDerivedEntryEMSHistoryOfConditionsEMSExistenceOfHistoryOfCondition</b>.
+   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPastMedicalHistorySectionDerivedEntryEMSHistoryOfConditionsEMSExistenceOfHistoryOfCondition</b>.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  protected void createEmspcrEMSPastMedicalHistoryDerivedEntryEMSHistoryOfConditionsEMSExistenceOfHistoryOfConditionAnnotations()
+  protected void createEmspcrEMSPastMedicalHistorySectionDerivedEntryEMSHistoryOfConditionsEMSExistenceOfHistoryOfConditionAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPastMedicalHistoryDerivedEntryEMSHistoryOfConditionsEMSExistenceOfHistoryOfCondition";																																																																																																																																																																																																																																																																																																																																																									
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPastMedicalHistorySectionDerivedEntryEMSHistoryOfConditionsEMSExistenceOfHistoryOfCondition";																																																																																																																																																																																																																																																																																																																																																																																																																													
     addAnnotation
-      (emsPastMedicalHistoryEClass, 
+      (emsPastMedicalHistorySectionEClass, 
        source, 
        new String[] 
        {
-       "code.code", "67793?0",
+       "code.code", "67793-0",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "code.displayName", "Has the patient had any significant medical conditions",
-       "constraints.validation.error", "EMSExistenceOfHistoryOfConditionCode"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																												
+       "constraints.validation.error", "EMSExistenceOfHistoryOfConditionCode EMSExistenceOfHistoryOfConditionValue"
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																				
   }
 
   /**
-   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPastMedicalHistoryDerivedEntryEMSHistoryOfConditionsEMSHistoryOfCondition</b>.
+   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPastMedicalHistorySectionDerivedEntryEMSHistoryOfConditionsEMSHistoryOfCondition</b>.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  protected void createEmspcrEMSPastMedicalHistoryDerivedEntryEMSHistoryOfConditionsEMSHistoryOfConditionAnnotations()
+  protected void createEmspcrEMSPastMedicalHistorySectionDerivedEntryEMSHistoryOfConditionsEMSHistoryOfConditionAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPastMedicalHistoryDerivedEntryEMSHistoryOfConditionsEMSHistoryOfCondition";																																																																																																																																																																																																																																																																																																																																																										
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPastMedicalHistorySectionDerivedEntryEMSHistoryOfConditionsEMSHistoryOfCondition";																																																																																																																																																																																																																																																																																																																																																																																																																														
     addAnnotation
-      (emsPastMedicalHistoryEClass, 
+      (emsPastMedicalHistorySectionEClass, 
        source, 
        new String[] 
        {
-       "code.code", "68487?8",
+       "code.code", "68487-8",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "code.displayName", "EMS History of Condition",
-       "constraints.validation.error", "EMSHistoryOfConditionCode EMSHistoryOfConditionCodeP EMSHistoryOfConditionValue",
-       "constraints.validation.dependOn.EMSHistoryOfConditionCode", "EMSHistoryOfConditionCodeP"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											
+       "constraints.validation.error", "EMSHistoryOfConditionCode EMSHistoryOfConditionCodeP EMSHistoryOfConditionValue EMSHistoryOfConditionValueP",
+       "constraints.validation.dependOn.EMSHistoryOfConditionCode", "EMSHistoryOfConditionCodeP",
+       "value.codeSystem", "2.16.840.1.113883.6.90",
+       "value.codeSystemName", "ICD-10 CM"
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																			
   }
 
   /**
-   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPastMedicalHistoryDerivedEntryEMSHistoryOfProceduresEMSExistenceOfHistoryOfProcedures</b>.
+   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPastMedicalHistorySectionDerivedEntryEMSHistoryOfProcedures</b>.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  protected void createEmspcrEMSPastMedicalHistoryDerivedEntryEMSHistoryOfProceduresEMSExistenceOfHistoryOfProceduresAnnotations()
+  protected void createEmspcrEMSPastMedicalHistorySectionDerivedEntryEMSHistoryOfProceduresAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPastMedicalHistoryDerivedEntryEMSHistoryOfProceduresEMSExistenceOfHistoryOfProcedures";																																																																																																																																																																																																																																																																																																																																																											
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPastMedicalHistorySectionDerivedEntryEMSHistoryOfProcedures";																																																																																																																																																																																																																																																																																																																																																																																																																															
     addAnnotation
-      (emsPastMedicalHistoryEClass, 
+      (emsPastMedicalHistorySectionEClass, 
        source, 
        new String[] 
        {
-       "code.code", "67792?2",
-       "code.codeSystem", "2.16.840.1.113883.6.1",
-       "code.codeSystemName", "LOINC",
-       "code.displayName", "EMS existence of history of procedures",
-       "constraints.validation.error", "EMSExistenceOfHistoryOfProceduresCode"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																										
+       "constraints.validation.error", "EMSHistoryOfProceduresComponent"
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																		
   }
 
   /**
-   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSocialHistoryDerivedEntry</b>.
+   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPastMedicalHistorySectionDerivedEntryEMSHistoryOfProceduresEMSExistenceOfHistoryOfProcedures</b>.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  protected void createEmspcrEMSSocialHistoryDerivedEntryAnnotations()
+  protected void createEmspcrEMSPastMedicalHistorySectionDerivedEntryEMSHistoryOfProceduresEMSExistenceOfHistoryOfProceduresAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSocialHistoryDerivedEntry";																																																																																																																																																																																																																																																																																																																																																																																					
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPastMedicalHistorySectionDerivedEntryEMSHistoryOfProceduresEMSExistenceOfHistoryOfProcedures";																																																																																																																																																																																																																																																																																																																																																																																																																																
     addAnnotation
-      (emsSocialHistoryEClass, 
+      (emsPastMedicalHistorySectionEClass, 
+       source, 
+       new String[] 
+       {
+       "code.code", "67792-2",
+       "code.codeSystem", "2.16.840.1.113883.6.1",
+       "code.codeSystemName", "LOINC",
+       "code.displayName", "EMS existence of history of procedures",
+       "constraints.validation.error", "EMSExistenceOfHistoryOfProceduresCode EMSExistenceOfHistoryOfProceduresValue"
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																	
+  }
+
+  /**
+   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPastMedicalHistorySectionDerivedEntryEMSHistoryOfProceduresEMSHistoryOfProcedure</b>.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  protected void createEmspcrEMSPastMedicalHistorySectionDerivedEntryEMSHistoryOfProceduresEMSHistoryOfProcedureAnnotations()
+  {
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPastMedicalHistorySectionDerivedEntryEMSHistoryOfProceduresEMSHistoryOfProcedure";																																																																																																																																																																																																																																																																																																																																																																																																																																	
+    addAnnotation
+      (emsPastMedicalHistorySectionEClass, 
+       source, 
+       new String[] 
+       {
+       "code.codeSystem", "2.16.840.1.113883.6.4",
+       "code.codeSystemName", "ICD-10 PCS",
+       "constraints.validation.error", "EMSHistoryOfProcedureCode"
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																
+  }
+
+  /**
+   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPastMedicalHistorySectionDerivedEntryEMSHistoryOfProceduresEMSExistenceOfHistoryOfProcedureComponent</b>.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  protected void createEmspcrEMSPastMedicalHistorySectionDerivedEntryEMSHistoryOfProceduresEMSExistenceOfHistoryOfProcedureComponentAnnotations()
+  {
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPastMedicalHistorySectionDerivedEntryEMSHistoryOfProceduresEMSExistenceOfHistoryOfProcedureComponent";																																																																																																																																																																																																																																																																																																																																																																																																																																		
+    addAnnotation
+      (emsPastMedicalHistorySectionEClass, 
+       source, 
+       new String[] 
+       {
+       "constraints.validation.error", "EMSExistenceOfHistoryOfProcedureComponentProcedure"
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																															
+  }
+
+  /**
+   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSocialHistorySectionDerivedEntry</b>.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  protected void createEmspcrEMSSocialHistorySectionDerivedEntryAnnotations()
+  {
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSocialHistorySectionDerivedEntry";																																																																																																																																																																																																																																																																																																																																																																																																																																																												
+    addAnnotation
+      (emsSocialHistorySectionEClass, 
        source, 
        new String[] 
        {
        "constraints.validation.error", "DerivedEntryEMSExistenceOfDrugUseIndicator",
        "constraints.validation.info", "DerivedEntryEMSDrugUseIndicator"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																					
   }
 
   /**
-   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSocialHistoryDerivedEntryEMSExistenceOfDrugUseIndicator</b>.
+   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSocialHistorySectionDerivedEntryEMSExistenceOfDrugUseIndicator</b>.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  protected void createEmspcrEMSSocialHistoryDerivedEntryEMSExistenceOfDrugUseIndicatorAnnotations()
+  protected void createEmspcrEMSSocialHistorySectionDerivedEntryEMSExistenceOfDrugUseIndicatorAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSocialHistoryDerivedEntryEMSExistenceOfDrugUseIndicator";																																																																																																																																																																																																																																																																																																																																																																																						
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSocialHistorySectionDerivedEntryEMSExistenceOfDrugUseIndicator";																																																																																																																																																																																																																																																																																																																																																																																																																																																													
     addAnnotation
-      (emsSocialHistoryEClass, 
+      (emsSocialHistorySectionEClass, 
        source, 
        new String[] 
        {
-       "code.code", "69757?3",
+       "code.code", "69757-3",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "code.displayName", "Indications of drug or alcohol use by the patient",
        "constraints.validation.error", "EMSExistenceOfDrugUseIndicatorCode EMSExistenceOfDrugUseIndicatorCodeP",
        "constraints.validation.dependOn.EMSExistenceOfDrugUseIndicatorCode", "EMSExistenceOfDrugUseIndicatorCodeP"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																															
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																				
   }
 
   /**
-   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSocialHistoryDerivedEntryEMSDrugUseIndicator</b>.
+   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSocialHistorySectionDerivedEntryEMSDrugUseIndicator</b>.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  protected void createEmspcrEMSSocialHistoryDerivedEntryEMSDrugUseIndicatorAnnotations()
+  protected void createEmspcrEMSSocialHistorySectionDerivedEntryEMSDrugUseIndicatorAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSocialHistoryDerivedEntryEMSDrugUseIndicator";																																																																																																																																																																																																																																																																																																																																																																																							
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSocialHistorySectionDerivedEntryEMSDrugUseIndicator";																																																																																																																																																																																																																																																																																																																																																																																																																																																														
     addAnnotation
-      (emsSocialHistoryEClass, 
+      (emsSocialHistorySectionEClass, 
        source, 
        new String[] 
        {
-       "code.code", "67669?2",
+       "code.code", "67669-2",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "code.displayName", "Alcohol - drug use",
        "constraints.validation.error", "EMSDrugUseIndicatorCode EMSDrugUseIndicatorValue",
        "value.codeSystem", "2.16.840.1.113883.6.1",
        "value.codeSystemName", "LOINC"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																														
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																			
   }
 
   /**
@@ -4810,7 +5079,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSPhysicalAssessmentSectionDerivedEntryAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntry";																																																																																																																																																																																																																																																																																																																																																																																																																	
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntry";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																								
     addAnnotation
       (emsPhysicalAssessmentSectionEClass, 
        source, 
@@ -4818,7 +5087,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        {
        "constraints.validation.error", "DerivedEntryEMSBarriersToPatientCare",
        "constraints.validation.info", "DerivedEntryEMSThrombolyticContraindications"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																				
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																									
   }
 
   /**
@@ -4829,7 +5098,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizer";																																																																																																																																																																																																																																																																																																																																																																																																																		
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizer";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																									
     addAnnotation
       (emsPhysicalAssessmentSectionEClass, 
        source, 
@@ -4837,7 +5106,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        {
        "constraints.validation.error", "EMSPhysicalAssessmentOrganizerEffectiveTime",
        "constraints.validation.info", "EMSPhysicalAssessmentOrganizerPatientBodyWeight EMSPhysicalAssessmentOrganizerLengthBasedPatientBodyWeightClass EMSPhysicalAssessmentOrganizerEMSSkinAssessment EMSPhysicalAssessmentOrganizerEMSHeadAssessment EMSPhysicalAssessmentOrganizerEMSFaceAssessment EMSPhysicalAssessmentOrganizerEMSNeckAssessment EMSPhysicalAssessmentOrganizerEMSChestAndLungsAssessment EMSPhysicalAssessmentOrganizerEMSHeartAssessment EMSPhysicalAssessmentOrganizerEMSAbdomenAssessment EMSPhysicalAssessmentOrganizerEMSPelvicAndGenitourinaryAssessment EMSPhysicalAssessmentOrganizerEMSBackAndSpineAssessment EMSPhysicalAssessmentOrganizerEMSExtremitiesAssessment EMSPhysicalAssessmentOrganizerEMSEyeAssessment EMSPhysicalAssessmentOrganizerEMSMentalStatusAssessment EMSPhysicalAssessmentOrganizerEMSNeurologicalAssessment"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																			
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																								
   }
 
   /**
@@ -4848,17 +5117,17 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerPatientBodyWeightAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerPatientBodyWeight";																																																																																																																																																																																																																																																																																																																																																																																																																			
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerPatientBodyWeight";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																										
     addAnnotation
       (emsPhysicalAssessmentSectionEClass, 
        source, 
        new String[] 
        {
-       "code.code", "8335?2",
+       "code.code", "8335-2",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "constraints.validation.error", "PatientBodyWeightCode PatientBodyWeightValue"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																		
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																							
   }
 
   /**
@@ -4869,20 +5138,20 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerLengthBasedPatientBodyWeightClassAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerLengthBasedPatientBodyWeightClass";																																																																																																																																																																																																																																																																																																																																																																																																																				
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerLengthBasedPatientBodyWeightClass";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											
     addAnnotation
       (emsPhysicalAssessmentSectionEClass, 
        source, 
        new String[] 
        {
-       "code.code", "67670?0",
+       "code.code", "67670-0",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "constraints.validation.error", "LengthBasedPatientBodyWeightClassCode LengthBasedPatientBodyWeightClassCodeP LengthBasedPatientBodyWeightClassValue",
        "constraints.validation.dependOn.LengthBasedPatientBodyWeightClassCode", "LengthBasedPatientBodyWeightClassCodeP",
        "value.codeSystem", "2.16.840.1.113883.6.1",
        "value.codeSystemName", "LOINC"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																	
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																						
   }
 
   /**
@@ -4893,20 +5162,20 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSSkinAssessmentAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSSkinAssessment";																																																																																																																																																																																																																																																																																																																																																																																																																					
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSSkinAssessment";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																												
     addAnnotation
       (emsPhysicalAssessmentSectionEClass, 
        source, 
        new String[] 
        {
-       "code.code", "67524?9",
+       "code.code", "67524-9",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "constraints.validation.error", "EMSSkinAssessmentCode EMSSkinAssessmentCodeP EMSSkinAssessmentValue EMSSkinAssessmentValueP",
        "constraints.validation.dependOn.EMSSkinAssessmentCode", "EMSSkinAssessmentCodeP",
        "value.codeSystem", "2.16.840.1.113883.6.1",
        "value.codeSystemName", "LOINC"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																					
   }
 
   /**
@@ -4917,20 +5186,20 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSHeadAssessmentAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSHeadAssessment";																																																																																																																																																																																																																																																																																																																																																																																																																						
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSHeadAssessment";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																													
     addAnnotation
       (emsPhysicalAssessmentSectionEClass, 
        source, 
        new String[] 
        {
-       "code.code", "67525?6",
+       "code.code", "67525-6",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "constraints.validation.error", "EMSHeadAssessmentCode EMSHeadAssessmentCodeP EMSHeadAssessmentValue",
        "constraints.validation.dependOn.EMSHeadAssessmentCode", "EMSHeadAssessmentCodeP",
        "value.codeSystem", "2.16.840.1.113883.6.1",
        "value.codeSystemName", "LOINC"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																															
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																				
   }
 
   /**
@@ -4941,20 +5210,20 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSFaceAssessmentAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSFaceAssessment";																																																																																																																																																																																																																																																																																																																																																																																																																							
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSFaceAssessment";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																														
     addAnnotation
       (emsPhysicalAssessmentSectionEClass, 
        source, 
        new String[] 
        {
-       "code.code", "67526?4",
+       "code.code", "67526-4",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "constraints.validation.error", "EMSFaceAssessmentCode EMSFaceAssessmentCodeP EMSFaceAssessmentValue EMSFaceAssessmentValueP",
        "constraints.validation.dependOn.EMSFaceAssessmentCode", "EMSFaceAssessmentCodeP",
        "value.codeSystem", "2.16.840.1.113883.6.1",
        "value.codeSystemName", "LOINC"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																														
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																			
   }
 
   /**
@@ -4965,20 +5234,20 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSNeckAssessmentAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSNeckAssessment";																																																																																																																																																																																																																																																																																																																																																																																																																								
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSNeckAssessment";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																															
     addAnnotation
       (emsPhysicalAssessmentSectionEClass, 
        source, 
        new String[] 
        {
-       "code.code", "67527?2",
+       "code.code", "67527-2",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "code.displayName", "Neck assessment finding",
        "constraints.validation.error", "EMSNeckAssessmentCode EMSNeckAssessmentValue",
        "value.codeSystem", "2.16.840.1.113883.6.1",
        "value.codeSystemName", "LOINC"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																													
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																		
   }
 
   /**
@@ -4989,20 +5258,20 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSChestAndLungsAssessmentAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSChestAndLungsAssessment";																																																																																																																																																																																																																																																																																																																																																																																																																									
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSChestAndLungsAssessment";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																
     addAnnotation
       (emsPhysicalAssessmentSectionEClass, 
        source, 
        new String[] 
        {
-       "code.code", "67528?0",
+       "code.code", "67528-0",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "code.displayName", "Chest and lungs assessment",
        "constraints.validation.error", "EMSChestAndLungsAssessmentCode EMSChestAndLungsAssessmentValue",
        "value.codeSystem", "2.16.840.1.113883.6.1",
        "value.codeSystemName", "LOINC"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																												
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																	
   }
 
   /**
@@ -5013,13 +5282,13 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSHeartAssessmentAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSHeartAssessment";																																																																																																																																																																																																																																																																																																																																																																																																																										
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSHeartAssessment";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																	
     addAnnotation
       (emsPhysicalAssessmentSectionEClass, 
        source, 
        new String[] 
        {
-       "code.code", "67529?8",
+       "code.code", "67529-8",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "code.displayName", "Heart assessment finding",
@@ -5027,7 +5296,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "constraints.validation.dependOn.EMSHeartAssessmentCode", "EMSHeartAssessmentCodeP",
        "value.codeSystem", "2.16.840.1.113883.6.1",
        "value.codeSystemName", "LOINC"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																
   }
 
   /**
@@ -5038,13 +5307,13 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSAbdomenAssessmentAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSAbdomenAssessment";																																																																																																																																																																																																																																																																																																																																																																																																																											
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSAbdomenAssessment";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																		
     addAnnotation
       (emsPhysicalAssessmentSectionEClass, 
        source, 
        new String[] 
        {
-       "code.code", "67530?6",
+       "code.code", "67530-6",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "code.displayName", "Abdomen assessment",
@@ -5053,7 +5322,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "value.codeSystemName", "LOINC",
        "targetSiteCode.codeSystem", "2.16.840.1.113883.6.1",
        "targetSiteCode.codeSystemName", "LOINC"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																										
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																															
   }
 
   /**
@@ -5064,20 +5333,20 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSPelvicAndGenitourinaryAssessmentAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSPelvicAndGenitourinaryAssessment";																																																																																																																																																																																																																																																																																																																																																																																																																												
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSPelvicAndGenitourinaryAssessment";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																			
     addAnnotation
       (emsPhysicalAssessmentSectionEClass, 
        source, 
        new String[] 
        {
-       "code.code", "67531?4",
+       "code.code", "67531-4",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "code.displayName", "Pelvic and genitourinary assessment",
        "constraints.validation.error", "EMSPelvicAndGenitourinaryAssessmentCode EMSPelvicAndGenitourinaryAssessmentValue EMSPelvicAndGenitourinaryAssessmentValueP",
        "value.codeSystem", "2.16.840.1.113883.6.1",
        "value.codeSystemName", "LOINC"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																									
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																														
   }
 
   /**
@@ -5088,13 +5357,13 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSBackAndSpineAssessmentAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSBackAndSpineAssessment";																																																																																																																																																																																																																																																																																																																																																																																																																													
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSBackAndSpineAssessment";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																				
     addAnnotation
       (emsPhysicalAssessmentSectionEClass, 
        source, 
        new String[] 
        {
-       "code.code", "67532?2",
+       "code.code", "67532-2",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "code.displayName", "Back and spine assessment",
@@ -5104,7 +5373,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "targetSiteCode.codeSystemName", "LOINC",
        "value.codeSystem", "2.16.840.1.113883.6.1",
        "value.codeSystemName", "LOINC"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																								
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																													
   }
 
   /**
@@ -5115,13 +5384,13 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSExtremitiesAssessmentAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSExtremitiesAssessment";																																																																																																																																																																																																																																																																																																																																																																																																																														
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSExtremitiesAssessment";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																					
     addAnnotation
       (emsPhysicalAssessmentSectionEClass, 
        source, 
        new String[] 
        {
-       "code.code", "67533?0",
+       "code.code", "67533-0",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "code.displayName", "Extremities assessment",
@@ -5132,7 +5401,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "constraints.validation.info", "EMSExtremitiesAssessmentTargetSiteCodeP",
        "value.codeSystem", "2.16.840.1.113883.6.1",
        "value.codeSystemName", "LOINC"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																							
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																												
   }
 
   /**
@@ -5143,13 +5412,13 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSEyeAssessmentAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSEyeAssessment";																																																																																																																																																																																																																																																																																																																																																																																																																															
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSEyeAssessment";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																						
     addAnnotation
       (emsPhysicalAssessmentSectionEClass, 
        source, 
        new String[] 
        {
-       "code.code", "67534?8",
+       "code.code", "67534-8",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "code.displayName", "Eye assessment",
@@ -5159,7 +5428,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "targetSiteCode.codeSystemName", "LOINC",
        "value.codeSystem", "2.16.840.1.113883.6.1",
        "value.codeSystemName", "LOINC"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																						
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											
   }
 
   /**
@@ -5170,13 +5439,13 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSMentalStatusAssessmentAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSMentalStatusAssessment";																																																																																																																																																																																																																																																																																																																																																																																																																																
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSMentalStatusAssessment";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																							
     addAnnotation
       (emsPhysicalAssessmentSectionEClass, 
        source, 
        new String[] 
        {
-       "code.code", "67535?5",
+       "code.code", "67535-5",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "code.displayName", "Mental status assessment",
@@ -5185,7 +5454,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "constraints.validation.dependOn.EMSMentalStatusAssessmentCode", "EMSMentalStatusAssessmentCodeP",
        "value.codeSystem", "2.16.840.1.113883.6.1",
        "value.codeSystemName", "LOINC"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																					
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																										
   }
 
   /**
@@ -5196,13 +5465,13 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSNeurologicalAssessmentAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSNeurologicalAssessment";																																																																																																																																																																																																																																																																																																																																																																																																																																	
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPhysicalAssessmentOrganizerEMSNeurologicalAssessment";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																								
     addAnnotation
       (emsPhysicalAssessmentSectionEClass, 
        source, 
        new String[] 
        {
-       "code.code", "67536?3",
+       "code.code", "67536-3",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "code.displayName", "Neurological status assessment",
@@ -5210,7 +5479,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "constraints.validation.dependOn.EMSNeurologicalAssessmentCode", "EMSNeurologicalAssessmentCodeP",
        "value.codeSystem", "2.16.840.1.113883.6.1",
        "value.codeSystemName", "LOINC"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																				
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																									
   }
 
   /**
@@ -5221,13 +5490,13 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSPhysicalAssessmentSectionDerivedEntryPatientPregnancyAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryPatientPregnancy";																																																																																																																																																																																																																																																																																																																																																																																																																																		
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryPatientPregnancy";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																									
     addAnnotation
       (emsPhysicalAssessmentSectionEClass, 
        source, 
        new String[] 
        {
-       "code.code", "67471?3",
+       "code.code", "67471-3",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "code.displayName", "Patient Pregnancy",
@@ -5235,7 +5504,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "constraints.validation.dependOn.PatientPregnancyCode", "PatientPregnancyCodeP",
        "value.codeSystem", "2.16.840.1.113883.6.1",
        "value.codeSystemName", "LOINC"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																			
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																								
   }
 
   /**
@@ -5246,19 +5515,19 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSPhysicalAssessmentSectionDerivedEntryLastOralIntakeAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryLastOralIntake";																																																																																																																																																																																																																																																																																																																																																																																																																																			
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryLastOralIntake";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																										
     addAnnotation
       (emsPhysicalAssessmentSectionEClass, 
        source, 
        new String[] 
        {
-       "code.code", "67517?3",
+       "code.code", "67517-3",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "code.displayName", "Last oral intake",
        "constraints.validation.error", "LastOralIntakeCode LastOralIntakeCodeP LastOralIntakeValue",
        "constraints.validation.dependOn.LastOralIntakeCode", "LastOralIntakeCodeP"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																		
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																							
   }
 
   /**
@@ -5269,19 +5538,19 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPatientAgeAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPatientAge";																																																																																																																																																																																																																																																																																																																																																																																																																																				
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSPatientAge";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											
     addAnnotation
       (emsPhysicalAssessmentSectionEClass, 
        source, 
        new String[] 
        {
-       "code.code", "30525?0",
+       "code.code", "30525-0",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "code.displayName", "Patient age",
        "constraints.validation.error", "EMSPatientAgeCode EMSPatientAgeCodeP EMSPatientAgeValue",
        "constraints.validation.dependOn.EMSPatientAgeCode", "EMSPatientAgeCodeP"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																	
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																						
   }
 
   /**
@@ -5292,13 +5561,13 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSPhysicalAssessmentSectionDerivedEntryEMSThrombolyticContraindicationsAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSThrombolyticContraindications";																																																																																																																																																																																																																																																																																																																																																																																																																																					
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSThrombolyticContraindications";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																												
     addAnnotation
       (emsPhysicalAssessmentSectionEClass, 
        source, 
        new String[] 
        {
-       "code.code", "67523?1",
+       "code.code", "67523-1",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "code.displayName", "Contraindications to thrombolytic use",
@@ -5306,7 +5575,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "constraints.validation.dependOn.EMSThrombolyticContraindicationsCode", "EMSThrombolyticContraindicationsCodeP",
        "value.codeSystem", "2.16.840.1.113883.6.1",
        "value.codeSystemName", "LOINC"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																					
   }
 
   /**
@@ -5317,13 +5586,13 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSPhysicalAssessmentSectionDerivedEntryEMSBarriersToPatientCareAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSBarriersToPatientCare";																																																																																																																																																																																																																																																																																																																																																																																																																																						
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPhysicalAssessmentSectionDerivedEntryEMSBarriersToPatientCare";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																													
     addAnnotation
       (emsPhysicalAssessmentSectionEClass, 
        source, 
        new String[] 
        {
-       "code.code", "67523?1",
+       "code.code", "67523-1",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "code.displayName", "Barriers to patient care",
@@ -5331,7 +5600,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "constraints.validation.dependOn.EMSBarriersToPatientCareCode", "EMSBarriersToPatientCareCodeP",
        "value.codeSystem", "2.16.840.1.113883.6.1",
        "value.codeSystemName", "LOINC"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																															
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																				
   }
 
   /**
@@ -5342,14 +5611,14 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSMedicationsAdministeredSectionDerivedEntryAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntry";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																				
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntry";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											
     addAnnotation
       (emsMedicationsAdministeredSectionEClass, 
        source, 
        new String[] 
        {
-       "constraints.validation.info", "DerivedEntryEMSMedicationAdministered"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																	
+       "constraints.validation.warning", "DerivedEntryEMSMedicationAdministered"
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																						
   }
 
   /**
@@ -5360,7 +5629,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministered";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																					
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministered";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																												
     addAnnotation
       (emsMedicationsAdministeredSectionEClass, 
        source, 
@@ -5372,7 +5641,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "routeCode.codeSystem", "2.16.840.1.113883.6.1",
        "routeCode.codeSystemName", "LOINC",
        "constraints.validation.dependOn.EMSMedicationAdministeredRouteCode", "EMSMedicationAdministeredRouteCodeP"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																					
   }
 
   /**
@@ -5383,7 +5652,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredMedicationNotAdministeredEntryRelationshipAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredMedicationNotAdministeredEntryRelationship";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																						
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredMedicationNotAdministeredEntryRelationship";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																													
     addAnnotation
       (emsMedicationsAdministeredSectionEClass, 
        source, 
@@ -5393,7 +5662,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "constraints.validation.error", "MedicationNotAdministeredEntryRelationshipInversionInd MedicationNotAdministeredEntryRelationshipTypeCode MedicationNotAdministeredEntryRelationshipTypeCodeP MedicationNotAdministeredEntryRelationshipMedicationNotAdministeredReasonObservation",
        "typeCode", "RSON",
        "constraints.validation.dependOn.MedicationNotAdministeredEntryRelationshipTypeCode", "MedicationNotAdministeredEntryRelationshipTypeCodeP"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																															
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																				
   }
 
   /**
@@ -5404,7 +5673,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredMedicationNotAdministeredEntryRelationshipMedicationNotAdministeredReasonObservationAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredMedicationNotAdministeredEntryRelationshipMedicationNotAdministeredReasonObservation";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																							
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredMedicationNotAdministeredEntryRelationshipMedicationNotAdministeredReasonObservation";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																														
     addAnnotation
       (emsMedicationsAdministeredSectionEClass, 
        source, 
@@ -5417,7 +5686,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "constraints.validation.error", "MedicationNotAdministeredReasonObservationCode MedicationNotAdministeredReasonObservationValue MedicationNotAdministeredReasonObservationValueP",
        "value.codeSystem", "2.16.840.1.113883.6.1",
        "value.codeSystemName", "LOINC"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																														
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																			
   }
 
   /**
@@ -5428,14 +5697,14 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationAdministeredConsumableAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationAdministeredConsumable";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																								
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationAdministeredConsumable";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																															
     addAnnotation
       (emsMedicationsAdministeredSectionEClass, 
        source, 
        new String[] 
        {
        "constraints.validation.error", "EMSMedicationAdministeredConsumableEMSMedicationManfacturedProduct"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																													
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																		
   }
 
   /**
@@ -5446,14 +5715,14 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationAdministeredConsumableEMSMedicationManfacturedProductAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationAdministeredConsumableEMSMedicationManfacturedProduct";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																									
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationAdministeredConsumableEMSMedicationManfacturedProduct";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																
     addAnnotation
       (emsMedicationsAdministeredSectionEClass, 
        source, 
        new String[] 
        {
        "constraints.validation.error", "EMSMedicationManfacturedProductEMSMedicationLabeledDrug"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																												
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																	
   }
 
   /**
@@ -5464,7 +5733,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationAdministeredConsumableEMSMedicationManfacturedProductEMSMedicationLabeledDrugAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationAdministeredConsumableEMSMedicationManfacturedProductEMSMedicationLabeledDrug";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																										
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationAdministeredConsumableEMSMedicationManfacturedProductEMSMedicationLabeledDrug";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																	
     addAnnotation
       (emsMedicationsAdministeredSectionEClass, 
        source, 
@@ -5473,7 +5742,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "code.codeSystem", "2.16.840.1.113883.6.88",
        "code.codeSystemName", "RxNorm",
        "constraints.validation.error", "EMSMedicationLabeledDrugCode"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																
   }
 
   /**
@@ -5484,14 +5753,14 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationAdministeredResponseRelationshipAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationAdministeredResponseRelationship";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationAdministeredResponseRelationship";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																		
     addAnnotation
       (emsMedicationsAdministeredSectionEClass, 
        source, 
        new String[] 
        {
        "constraints.validation.error", "EMSMedicationAdministeredResponseRelationshipMedicationResponseObservation"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																										
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																															
   }
 
   /**
@@ -5502,13 +5771,13 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationAdministeredResponseRelationshipMedicationResponseObservationAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationAdministeredResponseRelationshipMedicationResponseObservation";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																												
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationAdministeredResponseRelationshipMedicationResponseObservation";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																			
     addAnnotation
       (emsMedicationsAdministeredSectionEClass, 
        source, 
        new String[] 
        {
-       "code.code", "67540?5",
+       "code.code", "67540-5",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "code.displayName", "Response to medication",
@@ -5516,7 +5785,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "constraints.validation.dependOn.MedicationResponseObservationCode", "MedicationResponseObservationCodeP",
        "value.codeSystem", "2.16.840.1.113883.6.1",
        "value.codeSystemName", "LOINC"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																									
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																														
   }
 
   /**
@@ -5527,14 +5796,14 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationComplicationRelationshipAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationComplicationRelationship";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																													
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationComplicationRelationship";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																				
     addAnnotation
       (emsMedicationsAdministeredSectionEClass, 
        source, 
        new String[] 
        {
        "constraints.validation.error", "EMSMedicationComplicationRelationshipEMSMedicationComplicationObservation"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																								
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																													
   }
 
   /**
@@ -5545,13 +5814,13 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationComplicationRelationshipEMSMedicationComplicationObservationAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationComplicationRelationshipEMSMedicationComplicationObservation";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																														
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationComplicationRelationshipEMSMedicationComplicationObservation";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																					
     addAnnotation
       (emsMedicationsAdministeredSectionEClass, 
        source, 
        new String[] 
        {
-       "code.code", "67541?3",
+       "code.code", "67541-3",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "code.displayName", "Medication complication",
@@ -5559,7 +5828,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "constraints.validation.dependOn.EMSMedicationComplicationObservationCode", "EMSMedicationComplicationObservationCodeP",
        "value.codeSystem", "2.16.840.1.113883.6.1",
        "value.codeSystemName", "LOINC"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																							
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																												
   }
 
   /**
@@ -5570,14 +5839,14 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationPriorAdministrationRelationshipAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationPriorAdministrationRelationship";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																															
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationPriorAdministrationRelationship";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																						
     addAnnotation
       (emsMedicationsAdministeredSectionEClass, 
        source, 
        new String[] 
        {
        "constraints.validation.error", "EMSMedicationPriorAdministrationRelationshipEMSMedicationPriorAdministrationObservation"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																						
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											
   }
 
   /**
@@ -5588,19 +5857,19 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationPriorAdministrationRelationshipEMSMedicationPriorAdministrationObservationAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationPriorAdministrationRelationshipEMSMedicationPriorAdministrationObservation";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationPriorAdministrationRelationshipEMSMedicationPriorAdministrationObservation";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																							
     addAnnotation
       (emsMedicationsAdministeredSectionEClass, 
        source, 
        new String[] 
        {
-       "code.code", "67539?7",
+       "code.code", "67539-7",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "code.displayName", "Prior administration",
        "constraints.validation.error", "EMSMedicationPriorAdministrationObservationCode EMSMedicationPriorAdministrationObservationCodeP EMSMedicationPriorAdministrationObservationValue",
        "constraints.validation.dependOn.EMSMedicationPriorAdministrationObservationCode", "EMSMedicationPriorAdministrationObservationCodeP"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																					
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																										
   }
 
   /**
@@ -5611,14 +5880,14 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationPerformerParticipationAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationPerformerParticipation";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																	
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationPerformerParticipation";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																								
     addAnnotation
       (emsMedicationsAdministeredSectionEClass, 
        source, 
        new String[] 
        {
        "constraints.validation.error", "EMSMedicationPerformerParticipationEMSMedicationPerformerRole"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																				
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																									
   }
 
   /**
@@ -5629,7 +5898,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationPerformerParticipationEMSMedicationPerformerRoleAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationPerformerParticipationEMSMedicationPerformerRole";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																		
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationPerformerParticipationEMSMedicationPerformerRole";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																									
     addAnnotation
       (emsMedicationsAdministeredSectionEClass, 
        source, 
@@ -5638,7 +5907,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "constraints.validation.error", "EMSMedicationPerformerRoleCode EMSMedicationPerformerRoleCodeP EMSMedicationPerformerRoleId"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																			
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																								
   }
 
   /**
@@ -5649,14 +5918,14 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationAuthorizationRelationshipAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationAuthorizationRelationship";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																			
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationAuthorizationRelationship";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																										
     addAnnotation
       (emsMedicationsAdministeredSectionEClass, 
        source, 
        new String[] 
        {
        "constraints.validation.error", "EMSMedicationAuthorizationRelationshipEMSMedicationAuthorization"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																		
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																							
   }
 
   /**
@@ -5667,7 +5936,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationAuthorizationRelationshipEMSMedicationAuthorizationAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationAuthorizationRelationshipEMSMedicationAuthorization";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																				
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredEMSMedicationAuthorizationRelationshipEMSMedicationAuthorization";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											
     addAnnotation
       (emsMedicationsAdministeredSectionEClass, 
        source, 
@@ -5678,7 +5947,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "constraints.validation.dependOn.EMSMedicationAuthorizationClassCode", "EMSMedicationAuthorizationClassCodeP",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																	
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																						
   }
 
   /**
@@ -5689,14 +5958,14 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSProceduresPerformedSectionDerivedEntryAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntry";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																														
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntry";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																					
     addAnnotation
       (emsProceduresPerformedSectionEClass, 
        source, 
        new String[] 
        {
        "constraints.validation.error", "DerivedEntryEMSProcedure"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																							
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																												
   }
 
   /**
@@ -5707,7 +5976,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedure";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																															
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedure";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																						
     addAnnotation
       (emsProceduresPerformedSectionEClass, 
        source, 
@@ -5716,12 +5985,12 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "constraints.validation.error", "EMSProcedureTemplateId EMSProcedureCode EMSProcedureEffectiveTime EMSProcedureStatusCode EMSProcedureApproachSiteCode EMSProcedureEMSProcedurePriorRelationship EMSProcedureEMSProcedureNumberOfAttemptsRelationship EMSProcedureEMSProcedureSuccessfulRelationship EMSProcedureEMSProcedureComplicationsRelationship EMSProcedureEMSProcedurePatientResponseRelationship EMSProcedureEMSProcedurePerformer",
        "templateId.root", "null",
        "statusCode.code", "Aborted",
-       "constraints.validation.info", "EMSProcedureStatusCodeP EMSProcedureApproachSiteCodeP EMSProcedureEMSAbandonedProcedureRelationship EMSProcedureEMSAirwayConfirmationRelationship EMSProcedureEMSAirwayDeviceParticipant",
+       "constraints.validation.info", "EMSProcedureStatusCodeP EMSProcedureApproachSiteCodeP EMSProcedureEMSAbandonedProcedureRelationship EMSProcedureEMSAirwayConfirmationRelationship",
        "constraints.validation.dependOn.EMSProcedureStatusCode", "EMSProcedureStatusCodeP",
        "approachSiteCode.codeSystem", "2.16.840.1.113883.6.1",
        "approachSiteCode.codeSystemName", "LOINC",
        "constraints.validation.dependOn.EMSProcedureApproachSiteCode", "EMSProcedureApproachSiteCodeP"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																						
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											
   }
 
   /**
@@ -5732,14 +6001,14 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSAbandonedProcedureRelationshipAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSAbandonedProcedureRelationship";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSAbandonedProcedureRelationship";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																							
     addAnnotation
       (emsProceduresPerformedSectionEClass, 
        source, 
        new String[] 
        {
        "constraints.validation.error", "EMSAbandonedProcedureRelationshipEMSAbandonedProcedureReasonObservation"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																					
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																										
   }
 
   /**
@@ -5750,7 +6019,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSAbandonedProcedureRelationshipEMSAbandonedProcedureReasonObservationAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSAbandonedProcedureRelationshipEMSAbandonedProcedureReasonObservation";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																	
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSAbandonedProcedureRelationshipEMSAbandonedProcedureReasonObservation";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																								
     addAnnotation
       (emsProceduresPerformedSectionEClass, 
        source, 
@@ -5764,7 +6033,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "constraints.validation.dependOn.EMSAbandonedProcedureReasonObservationCode", "EMSAbandonedProcedureReasonObservationCodeP",
        "value.codeSystem", "2.16.840.1.113883.6.1",
        "value.codeSystemName", "LOINC"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																				
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																									
   }
 
   /**
@@ -5775,14 +6044,14 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedurePriorRelationshipAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedurePriorRelationship";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																		
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedurePriorRelationship";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																									
     addAnnotation
       (emsProceduresPerformedSectionEClass, 
        source, 
        new String[] 
        {
        "constraints.validation.error", "EMSProcedurePriorRelationshipEMSProcedurePriorIndicator"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																			
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																								
   }
 
   /**
@@ -5793,19 +6062,19 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedurePriorRelationshipEMSProcedurePriorIndicatorAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedurePriorRelationshipEMSProcedurePriorIndicator";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																			
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedurePriorRelationshipEMSProcedurePriorIndicator";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																										
     addAnnotation
       (emsProceduresPerformedSectionEClass, 
        source, 
        new String[] 
        {
-       "code.code", "67542?1",
+       "code.code", "67542-1",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "code.displayName", "Procedure performed prior to EMS arrival",
        "constraints.validation.error", "EMSProcedurePriorIndicatorCode EMSProcedurePriorIndicatorCodeP EMSProcedurePriorIndicatorValue",
        "constraints.validation.dependOn.EMSProcedurePriorIndicatorCode", "EMSProcedurePriorIndicatorCodeP"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																		
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																							
   }
 
   /**
@@ -5816,14 +6085,14 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedureNumberOfAttemptsRelationshipAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedureNumberOfAttemptsRelationship";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																				
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedureNumberOfAttemptsRelationship";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											
     addAnnotation
       (emsProceduresPerformedSectionEClass, 
        source, 
        new String[] 
        {
        "constraints.validation.error", "EMSProcedureNumberOfAttemptsRelationshipEMSProcedureNumberOfAttemptsObservation"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																	
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																						
   }
 
   /**
@@ -5834,19 +6103,19 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedureNumberOfAttemptsRelationshipEMSProcedureNumberOfAttemptsObservationAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedureNumberOfAttemptsRelationshipEMSProcedureNumberOfAttemptsObservation";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																					
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedureNumberOfAttemptsRelationshipEMSProcedureNumberOfAttemptsObservation";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																												
     addAnnotation
       (emsProceduresPerformedSectionEClass, 
        source, 
        new String[] 
        {
-       "code.code", "67543?9",
+       "code.code", "67543-9",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "code.displayName", "Number of procedure attempts",
        "constraints.validation.error", "EMSProcedureNumberOfAttemptsObservationCode EMSProcedureNumberOfAttemptsObservationCodeP EMSProcedureNumberOfAttemptsObservationValue",
        "constraints.validation.dependOn.EMSProcedureNumberOfAttemptsObservationCode", "EMSProcedureNumberOfAttemptsObservationCodeP"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																					
   }
 
   /**
@@ -5857,14 +6126,14 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedureSuccessfulRelationshipAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedureSuccessfulRelationship";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																						
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedureSuccessfulRelationship";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																													
     addAnnotation
       (emsProceduresPerformedSectionEClass, 
        source, 
        new String[] 
        {
        "constraints.validation.error", "EMSProcedureSuccessfulRelationshipEMSProcedureSuccessfulObservation"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																															
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																				
   }
 
   /**
@@ -5875,19 +6144,19 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedureSuccessfulRelationshipEMSProcedureSuccessfulObservationAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedureSuccessfulRelationshipEMSProcedureSuccessfulObservation";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																							
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedureSuccessfulRelationshipEMSProcedureSuccessfulObservation";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																														
     addAnnotation
       (emsProceduresPerformedSectionEClass, 
        source, 
        new String[] 
        {
-       "code.code", "67544?7",
+       "code.code", "67544-7",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "code.displayName", "Procedure successful indicator",
        "constraints.validation.error", "EMSProcedureSuccessfulObservationCode EMSProcedureSuccessfulObservationCodeP EMSProcedureSuccessfulObservationValue",
        "constraints.validation.dependOn.EMSProcedureSuccessfulObservationCode", "EMSProcedureSuccessfulObservationCodeP"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																														
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																			
   }
 
   /**
@@ -5898,14 +6167,14 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedureComplicationsRelationshipAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedureComplicationsRelationship";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																								
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedureComplicationsRelationship";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																															
     addAnnotation
       (emsProceduresPerformedSectionEClass, 
        source, 
        new String[] 
        {
        "constraints.validation.error", "EMSProcedureComplicationsRelationshipEMSProcedureComplicationsObservation"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																													
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																		
   }
 
   /**
@@ -5916,7 +6185,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedureComplicationsRelationshipEMSProcedureComplicationsObservationAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedureComplicationsRelationshipEMSProcedureComplicationsObservation";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																									
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedureComplicationsRelationshipEMSProcedureComplicationsObservation";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																
     addAnnotation
       (emsProceduresPerformedSectionEClass, 
        source, 
@@ -5924,14 +6193,14 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        {
        "constraints.validation.error", "EMSProcedureComplicationsObservationTemplateId EMSProcedureComplicationsObservationCode EMSProcedureComplicationsObservationCodeP EMSProcedureComplicationsObservationValue",
        "templateId.root", "null",
-       "code.code", "67545?4",
+       "code.code", "67545-4",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "code.displayName", "Procedure complication",
        "constraints.validation.dependOn.EMSProcedureComplicationsObservationCode", "EMSProcedureComplicationsObservationCodeP",
        "value.codeSystem", "2.16.840.1.113883.6.1",
        "value.codeSystemName", "LOINC"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																												
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																	
   }
 
   /**
@@ -5942,14 +6211,14 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedurePatientResponseRelationshipAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedurePatientResponseRelationship";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																										
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedurePatientResponseRelationship";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																	
     addAnnotation
       (emsProceduresPerformedSectionEClass, 
        source, 
        new String[] 
        {
        "constraints.validation.error", "EMSProcedurePatientResponseRelationshipEMSProcedurePatientResponseObservation"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																
   }
 
   /**
@@ -5960,13 +6229,13 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedurePatientResponseRelationshipEMSProcedurePatientResponseObservationAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedurePatientResponseRelationshipEMSProcedurePatientResponseObservation";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedurePatientResponseRelationshipEMSProcedurePatientResponseObservation";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																		
     addAnnotation
       (emsProceduresPerformedSectionEClass, 
        source, 
        new String[] 
        {
-       "code.code", "67546?2",
+       "code.code", "67546-2",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "code.displayName", "Procedure patient response",
@@ -5974,7 +6243,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "constraints.validation.dependOn.EMSProcedurePatientResponseObservationCode", "EMSProcedurePatientResponseObservationCodeP",
        "value.codeSystem", "2.16.840.1.113883.6.1",
        "value.codeSystemName", "LOINC"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																										
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																															
   }
 
   /**
@@ -5985,14 +6254,14 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedurePerformerAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedurePerformer";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																												
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedurePerformer";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																			
     addAnnotation
       (emsProceduresPerformedSectionEClass, 
        source, 
        new String[] 
        {
        "constraints.validation.error", "EMSProcedurePerformerEMSProcedurePerformerEntity"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																									
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																														
   }
 
   /**
@@ -6003,7 +6272,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedurePerformerEMSProcedurePerformerEntityAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedurePerformerEMSProcedurePerformerEntity";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																													
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSProcedurePerformerEMSProcedurePerformerEntity";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																				
     addAnnotation
       (emsProceduresPerformedSectionEClass, 
        source, 
@@ -6012,7 +6281,25 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "constraints.validation.error", "EMSProcedurePerformerEntityCode EMSProcedurePerformerEntityCodeP EMSProcedurePerformerEntityId"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																								
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																													
+  }
+
+  /**
+   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSAirwayConfirmationRelationship</b>.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  protected void createEmspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSAirwayConfirmationRelationshipAnnotations()
+  {
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSAirwayConfirmationRelationship";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																					
+    addAnnotation
+      (emsProceduresPerformedSectionEClass, 
+       source, 
+       new String[] 
+       {
+       "constraints.validation.error", "EMSAirwayConfirmationRelationshipEMSAirwayConfirmationObservation"
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																												
   }
 
   /**
@@ -6023,7 +6310,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSAirwayConfirmationRelationshipEMSAirwayConfirmationObservationAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSAirwayConfirmationRelationshipEMSAirwayConfirmationObservation";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																														
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSAirwayConfirmationRelationshipEMSAirwayConfirmationObservation";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																						
     addAnnotation
       (emsProceduresPerformedSectionEClass, 
        source, 
@@ -6037,7 +6324,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "constraints.validation.dependOn.EMSAirwayConfirmationObservationCode", "EMSAirwayConfirmationObservationCodeP",
        "methodCode.codeSystem", "2.16.840.1.113883.6.1",
        "methodCode.codeSystemName", "LOINC"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																							
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											
   }
 
   /**
@@ -6048,14 +6335,14 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSAirwayConfirmationRelationshipEMSAirwayConfirmationObservationEMSAirwayDeviceParticipantAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSAirwayConfirmationRelationshipEMSAirwayConfirmationObservationEMSAirwayDeviceParticipant";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																															
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSAirwayConfirmationRelationshipEMSAirwayConfirmationObservationEMSAirwayDeviceParticipant";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																							
     addAnnotation
       (emsProceduresPerformedSectionEClass, 
        source, 
        new String[] 
        {
        "constraints.validation.error", "EMSAirwayDeviceParticipantEMSAirwayDeviceParticipantRole"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																						
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																										
   }
 
   /**
@@ -6066,14 +6353,14 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSAirwayConfirmationRelationshipEMSAirwayConfirmationObservationEMSAirwayDeviceParticipantEMSAirwayDeviceParticipantRoleAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSAirwayConfirmationRelationshipEMSAirwayConfirmationObservationEMSAirwayDeviceParticipantEMSAirwayDeviceParticipantRole";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSAirwayConfirmationRelationshipEMSAirwayConfirmationObservationEMSAirwayDeviceParticipantEMSAirwayDeviceParticipantRole";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																								
     addAnnotation
       (emsProceduresPerformedSectionEClass, 
        source, 
        new String[] 
        {
        "constraints.validation.error", "EMSAirwayDeviceParticipantRoleEMSAirwayDeviceParticipantType"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																					
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																									
   }
 
   /**
@@ -6084,7 +6371,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSAirwayConfirmationRelationshipEMSAirwayConfirmationObservationEMSAirwayDeviceParticipantEMSAirwayDeviceParticipantRoleEMSAirwayDeviceParticipantTypeAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSAirwayConfirmationRelationshipEMSAirwayConfirmationObservationEMSAirwayDeviceParticipantEMSAirwayDeviceParticipantRoleEMSAirwayDeviceParticipantType";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																	
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProceduresPerformedSectionDerivedEntryEMSProcedureEMSAirwayConfirmationRelationshipEMSAirwayConfirmationObservationEMSAirwayDeviceParticipantEMSAirwayDeviceParticipantRoleEMSAirwayDeviceParticipantType";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																									
     addAnnotation
       (emsProceduresPerformedSectionEClass, 
        source, 
@@ -6093,7 +6380,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "constraints.validation.error", "EMSAirwayDeviceParticipantTypeCode"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																				
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																																																																								
   }
 
   /**
@@ -6104,14 +6391,14 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSSceneSectionDerivedEntryAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSceneSectionDerivedEntry";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSceneSectionDerivedEntry";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																								
     addAnnotation
       (emsSceneSectionEClass, 
        source, 
        new String[] 
        {
        "constraints.validation.error", "DerivedEntryEMSMassCasualtyIndicator"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																					
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																									
   }
 
   /**
@@ -6122,19 +6409,19 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSSceneSectionDerivedEntryEMSFirstUnitIndicatorAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSceneSectionDerivedEntryEMSFirstUnitIndicator";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																	
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSceneSectionDerivedEntryEMSFirstUnitIndicator";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																									
     addAnnotation
       (emsSceneSectionEClass, 
        source, 
        new String[] 
        {
-       "code.code", "67665?0",
+       "code.code", "67665-0",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "code.displayName", "EMS reporter is first unit on scene",
        "constraints.validation.error", "EMSFirstUnitIndicatorCode EMSFirstUnitIndicatorCodeP EMSFirstUnitIndicatorValue",
        "constraints.validation.dependOn.EMSFirstUnitIndicatorCode", "EMSFirstUnitIndicatorCodeP"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																				
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																								
   }
 
   /**
@@ -6145,19 +6432,19 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSSceneSectionDerivedEntryEMSFirstUnitOnSceneAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSceneSectionDerivedEntryEMSFirstUnitOnScene";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																		
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSceneSectionDerivedEntryEMSFirstUnitOnScene";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																										
     addAnnotation
       (emsSceneSectionEClass, 
        source, 
        new String[] 
        {
-       "code.code", "67481?2",
+       "code.code", "67481-2",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "code.displayName", "Name of first unit on scene",
        "constraints.validation.error", "EMSFirstUnitOnSceneCode EMSFirstUnitOnSceneCodeP EMSFirstUnitOnSceneValue",
        "constraints.validation.dependOn.EMSFirstUnitOnSceneCode", "EMSFirstUnitOnSceneCodeP"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																			
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																							
   }
 
   /**
@@ -6168,19 +6455,19 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSSceneSectionDerivedEntryEMSScenePatientCountAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSceneSectionDerivedEntryEMSScenePatientCount";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																			
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSceneSectionDerivedEntryEMSScenePatientCount";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											
     addAnnotation
       (emsSceneSectionEClass, 
        source, 
        new String[] 
        {
-       "code.code", "67489?5",
+       "code.code", "67489-5",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "code.displayName", "EMS Count of patients at scene",
        "constraints.validation.error", "EMSScenePatientCountCode EMSScenePatientCountCodeP EMSScenePatientCountValue",
        "constraints.validation.dependOn.EMSScenePatientCountCode", "EMSScenePatientCountCodeP"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																		
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																						
   }
 
   /**
@@ -6191,547 +6478,49 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSSceneSectionDerivedEntryEMSMassCasualtyIndicatorAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSceneSectionDerivedEntryEMSMassCasualtyIndicator";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																				
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSceneSectionDerivedEntryEMSMassCasualtyIndicator";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																												
     addAnnotation
       (emsSceneSectionEClass, 
        source, 
        new String[] 
        {
        "constraints.validation.error", "EMSMassCasualtyIndicatorCode EMSMassCasualtyIndicatorValue"
-       });																																																																																																																																																																																																																																																																																																																																																																																																																																	
+       });																																																																																																																																																																																																																																																																																																																																																																																																																																					
   }
 
   /**
-   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntry</b>.
+   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSDispatchSectionDerivedEntry</b>.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  protected void createEmspcrEMSVitalSignsSectionDerivedEntryAnnotations()
+  protected void createEmspcrEMSDispatchSectionDerivedEntryAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntry";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																						
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSDispatchSectionDerivedEntry";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																														
     addAnnotation
-      (emsVitalSignsSectionEClass, 
-       source, 
-       new String[] 
-       {
-       "constraints.validation.error", "DerivedEntryEMSVitalSignsOrganizer"
-       });																																																																																																																																																																																																																																																																																																																																																																																															
-  }
-
-  /**
-   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizer</b>.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  protected void createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerAnnotations()
-  {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizer";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																							
-    addAnnotation
-      (emsVitalSignsSectionEClass, 
-       source, 
-       new String[] 
-       {
-       "constraints.validation.error", "EMSVitalSignsOrganizerEffectiveTime EMSVitalSignsOrganizerEMSPriorAidVitals EMSVitalSignsOrganizerEMSCardiacRhythm EMSVitalSignsOrganizerEMSSystolicBloodPressure EMSVitalSignsOrganizerEMSRespiratoryRate EMSVitalSignsOrganizerEMSOxygenSaturation EMSVitalSignsOrganizerEMSCarbonDioxide EMSVitalSignsOrganizerEMSBloodGlucose EMSVitalSignsOrganizerEMSLevelOfResponsiveness EMSVitalSignsOrganizerEMSPainScore EMSVitalSignsOrganizerEMSStrokeScore EMSVitalSignsOrganizerEMSGlasgowComaScore",
-       "constraints.validation.info", "EMSVitalSignsOrganizerEMSDiastolicBloodPressure EMSVitalSignsOrganizerEMSBodyTemperature EMSVitalSignsOrganizerEMSCarbonMonoxide",
-       "constraints.validation.warning", "EMSVitalSignsOrganizerEMSHeartRate"
-       });																																																																																																																																																																																																																																																																																																																																																																																														
-  }
-
-  /**
-   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSPriorAidVitals</b>.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  protected void createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSPriorAidVitalsAnnotations()
-  {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSPriorAidVitals";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																								
-    addAnnotation
-      (emsVitalSignsSectionEClass, 
-       source, 
-       new String[] 
-       {
-       "code.code", "67518?1",
-       "code.codeSystem", "2.16.840.1.113883.6.1",
-       "code.codeSystemName", "LOINC",
-       "code.displayName", "Obtained prior to units EMS care",
-       "constraints.validation.error", "EMSPriorAidVitalsCode"
-       });																																																																																																																																																																																																																																																																																																																																																																																													
-  }
-
-  /**
-   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSCardiacRhythm</b>.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  protected void createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSCardiacRhythmAnnotations()
-  {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSCardiacRhythm";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																									
-    addAnnotation
-      (emsVitalSignsSectionEClass, 
-       source, 
-       new String[] 
-       {
-       "code.code", "67519?9",
-       "code.codeSystem", "2.16.840.1.113883.6.1",
-       "code.codeSystemName", "LOINC",
-       "code.displayName", "Cardiac rhythm",
-       "constraints.validation.error", "EMSCardiacRhythmCode EMSCardiacRhythmCodeP EMSCardiacRhythmMethodCode EMSCardiacRhythmMethodCodeP EMSCardiacRhythmValue EMSCardiacRhythmValueP",
-       "constraints.validation.dependOn.EMSCardiacRhythmCode", "EMSCardiacRhythmCodeP",
-       "methodCode.codeSystem", "2.16.840.1.113883.6.1",
-       "methodCode.codeSystemName", "LOINC",
-       "value.codeSystem", "2.16.840.1.113883.6.1",
-       "value.codeSystemName", "LOINC"
-       });																																																																																																																																																																																																																																																																																																																																																																																												
-  }
-
-  /**
-   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSSystolicBloodPressure</b>.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  protected void createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSSystolicBloodPressureAnnotations()
-  {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSSystolicBloodPressure";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																										
-    addAnnotation
-      (emsVitalSignsSectionEClass, 
-       source, 
-       new String[] 
-       {
-       "code.code", "8480?6",
-       "code.codeSystem", "2.16.840.1.113883.6.1",
-       "code.codeSystemName", "LOINC",
-       "code.displayName", "Intravascular systolic",
-       "constraints.validation.error", "EMSSystolicBloodPressureCode EMSSystolicBloodPressureValue"
-       });																																																																																																																																																																																																																																																																																																																																																																																											
-  }
-
-  /**
-   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSDiastolicBloodPressure</b>.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  protected void createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSDiastolicBloodPressureAnnotations()
-  {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSDiastolicBloodPressure";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											
-    addAnnotation
-      (emsVitalSignsSectionEClass, 
-       source, 
-       new String[] 
-       {
-       "code.code", "8462-4",
-       "code.codeSystem", "2.16.840.1.113883.6.1",
-       "code.codeSystemName", "LOINC",
-       "code.displayName", "Intravascular diastolic",
-       "constraints.validation.error", "EMSDiastolicBloodPressureCode EMSDiastolicBloodPressureValue"
-       });																																																																																																																																																																																																																																																																																																																																																																																										
-  }
-
-  /**
-   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSHeartRate</b>.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  protected void createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSHeartRateAnnotations()
-  {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSHeartRate";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																												
-    addAnnotation
-      (emsVitalSignsSectionEClass, 
-       source, 
-       new String[] 
-       {
-       "code.code", "8867?4",
-       "code.codeSystem", "2.16.840.1.113883.6.1",
-       "code.codeSystemName", "LOINC",
-       "code.displayName", "Heart rate",
-       "constraints.validation.error", "EMSHeartRateCode EMSHeartRateCodeP EMSHeartRateValue",
-       "constraints.validation.dependOn.EMSHeartRateCode", "EMSHeartRateCodeP"
-       });																																																																																																																																																																																																																																																																																																																																																																																									
-  }
-
-  /**
-   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSRespiratoryRate</b>.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  protected void createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSRespiratoryRateAnnotations()
-  {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSRespiratoryRate";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																													
-    addAnnotation
-      (emsVitalSignsSectionEClass, 
-       source, 
-       new String[] 
-       {
-       "code.code", "9279?1",
-       "code.codeSystem", "2.16.840.1.113883.6.1",
-       "code.codeSystemName", "LOINC",
-       "code.displayName", "Breaths",
-       "constraints.validation.error", "EMSRespiratoryRateCode EMSRespiratoryRateValue"
-       });																																																																																																																																																																																																																																																																																																																																																																																								
-  }
-
-  /**
-   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSBodyTemperature</b>.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  protected void createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSBodyTemperatureAnnotations()
-  {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSBodyTemperature";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																														
-    addAnnotation
-      (emsVitalSignsSectionEClass, 
-       source, 
-       new String[] 
-       {
-       "code.code", "8310?5",
-       "code.codeSystem", "2.16.840.1.113883.6.1",
-       "code.codeSystemName", "LOINC",
-       "code.displayName", "Body temperature",
-       "constraints.validation.error", "EMSBodyTemperatureCode EMSBodyTemperatureValue"
-       });																																																																																																																																																																																																																																																																																																																																																																																							
-  }
-
-  /**
-   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSOxygenSaturation</b>.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  protected void createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSOxygenSaturationAnnotations()
-  {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSOxygenSaturation";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																															
-    addAnnotation
-      (emsVitalSignsSectionEClass, 
-       source, 
-       new String[] 
-       {
-       "code.code", "2710?2",
-       "code.codeSystem", "2.16.840.1.113883.6.1",
-       "code.codeSystemName", "LOINC",
-       "code.displayName", "Oxygen saturation",
-       "constraints.validation.error", "EMSOxygenSaturationCode EMSOxygenSaturationValue"
-       });																																																																																																																																																																																																																																																																																																																																																																																						
-  }
-
-  /**
-   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSCarbonDioxide</b>.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  protected void createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSCarbonDioxideAnnotations()
-  {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSCarbonDioxide";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																
-    addAnnotation
-      (emsVitalSignsSectionEClass, 
-       source, 
-       new String[] 
-       {
-       "code.code", "19889?5",
-       "code.codeSystem", "2.16.840.1.113883.6.1",
-       "code.codeSystemName", "LOINC",
-       "code.displayName", "Carbon dioxide/Gas.total.at end expiration",
-       "constraints.validation.error", "EMSCarbonDioxideCode EMSCarbonDioxideCodeP EMSCarbonDioxideValue",
-       "constraints.validation.dependOn.EMSCarbonDioxideCode", "EMSCarbonDioxideCodeP"
-       });																																																																																																																																																																																																																																																																																																																																																																																					
-  }
-
-  /**
-   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSCarbonMonoxide</b>.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  protected void createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSCarbonMonoxideAnnotations()
-  {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSCarbonMonoxide";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																	
-    addAnnotation
-      (emsVitalSignsSectionEClass, 
-       source, 
-       new String[] 
-       {
-       "code.code", "19911?7",
-       "code.codeSystem", "2.16.840.1.113883.6.1",
-       "code.codeSystemName", "LOINC",
-       "code.displayName", "Diffusion capacity.carbon monoxide",
-       "constraints.validation.error", "EMSCarbonMonoxideCode EMSCarbonMonoxideCodeP EMSCarbonMonoxideValue",
-       "constraints.validation.dependOn.EMSCarbonMonoxideCode", "EMSCarbonMonoxideCodeP"
-       });																																																																																																																																																																																																																																																																																																																																																																																				
-  }
-
-  /**
-   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSBloodGlucose</b>.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  protected void createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSBloodGlucoseAnnotations()
-  {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSBloodGlucose";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																		
-    addAnnotation
-      (emsVitalSignsSectionEClass, 
-       source, 
-       new String[] 
-       {
-       "code.code", "2339?0",
-       "code.codeSystem", "2.16.840.1.113883.6.1",
-       "code.codeSystemName", "LOINC",
-       "code.displayName", "Glucose",
-       "constraints.validation.error", "EMSBloodGlucoseCode EMSBloodGlucoseCodeP EMSBloodGlucoseValue",
-       "constraints.validation.dependOn.EMSBloodGlucoseCode", "EMSBloodGlucoseCodeP"
-       });																																																																																																																																																																																																																																																																																																																																																																																			
-  }
-
-  /**
-   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSLevelOfResponsiveness</b>.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  protected void createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSLevelOfResponsivenessAnnotations()
-  {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSLevelOfResponsiveness";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																			
-    addAnnotation
-      (emsVitalSignsSectionEClass, 
-       source, 
-       new String[] 
-       {
-       "code.code", "67775?7",
-       "code.codeSystem", "2.16.840.1.113883.6.1",
-       "code.codeSystemName", "LOINC",
-       "code.displayName", "Level of responsiveness",
-       "constraints.validation.error", "EMSLevelOfResponsivenessCode EMSLevelOfResponsivenessCodeP EMSLevelOfResponsivenessValue EMSLevelOfResponsivenessValueP",
-       "constraints.validation.dependOn.EMSLevelOfResponsivenessCode", "EMSLevelOfResponsivenessCodeP",
-       "value.codeSystem", "2.16.840.1.113883.6.1",
-       "value.codeSystemName", "LOINC"
-       });																																																																																																																																																																																																																																																																																																																																																																																		
-  }
-
-  /**
-   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSPainScore</b>.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  protected void createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSPainScoreAnnotations()
-  {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSPainScore";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																				
-    addAnnotation
-      (emsVitalSignsSectionEClass, 
-       source, 
-       new String[] 
-       {
-       "code.code", "56840?2",
-       "code.codeSystem", "2.16.840.1.113883.6.1",
-       "code.codeSystemName", "LOINC",
-       "code.displayName", "Pain severity verbal numeric scale",
-       "constraints.validation.error", "EMSPainScoreCode"
-       });																																																																																																																																																																																																																																																																																																																																																																																	
-  }
-
-  /**
-   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSStrokeScore</b>.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  protected void createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSStrokeScoreAnnotations()
-  {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSStrokeScore";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																					
-    addAnnotation
-      (emsVitalSignsSectionEClass, 
-       source, 
-       new String[] 
-       {
-       "code.code", "67520?7",
-       "code.codeSystem", "2.16.840.1.113883.6.1",
-       "code.codeSystemName", "LOINC",
-       "code.displayName", "Stroke scale overall interpretation",
-       "constraints.validation.error", "EMSStrokeScoreCode EMSStrokeScoreCodeP EMSStrokeScoreValue EMSStrokeScoreMethodCode EMSStrokeScoreMethodCodeP",
-       "constraints.validation.dependOn.EMSStrokeScoreCode", "EMSStrokeScoreCodeP",
-       "methodCode.codeSystem", "2.16.840.1.113883.6.1",
-       "methodCode.codeSystemName", "LOINC"
-       });																																																																																																																																																																																																																																																																																																																																																																																
-  }
-
-  /**
-   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScore</b>.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  protected void createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScoreAnnotations()
-  {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScore";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																						
-    addAnnotation
-      (emsVitalSignsSectionEClass, 
-       source, 
-       new String[] 
-       {
-       "constraints.validation.error", "EMSGlasgowComaScoreEMSGlasgowEye EMSGlasgowComaScoreEMSGlasgowMotor EMSGlasgowComaScoreEMSGlasgowVerbal",
-       "constraints.validation.info", "EMSGlasgowComaScoreEMSGlasgowQualifier",
-       "constraints.validation.warning", "EMSGlasgowComaScoreEMSGlasgowTotal"
-       });																																																																																																																																																																																																																																																																																																																																																																															
-  }
-
-  /**
-   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScoreEMSGlasgowTotal</b>.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  protected void createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScoreEMSGlasgowTotalAnnotations()
-  {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScoreEMSGlasgowTotal";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																							
-    addAnnotation
-      (emsVitalSignsSectionEClass, 
-       source, 
-       new String[] 
-       {
-       "code.code", "9269?2",
-       "code.codeSystem", "2.16.840.1.113883.6.1",
-       "code.codeSystemName", "LOINC",
-       "code.displayName", "Glasgow coma score.total",
-       "constraints.validation.error", "EMSGlasgowTotalCode EMSGlasgowTotalCodeP EMSGlasgowTotalValue",
-       "constraints.validation.dependOn.EMSGlasgowTotalCode", "EMSGlasgowTotalCodeP"
-       });																																																																																																																																																																																																																																																																																																																																																																														
-  }
-
-  /**
-   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScoreEMSGlasgowQualifier</b>.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  protected void createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScoreEMSGlasgowQualifierAnnotations()
-  {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScoreEMSGlasgowQualifier";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																								
-    addAnnotation
-      (emsVitalSignsSectionEClass, 
-       source, 
-       new String[] 
-       {
-       "code.code", "55285?1",
-       "code.codeSystem", "2.16.840.1.113883.6.1",
-       "code.codeSystemName", "LOINC",
-       "code.displayName", "Glasgow coma score special circumstances",
-       "constraints.validation.error", "EMSGlasgowQualifierCode EMSGlasgowQualifierCodeP",
-       "constraints.validation.dependOn.EMSGlasgowQualifierCode", "EMSGlasgowQualifierCodeP",
-       "constraints.validation.info", "EMSGlasgowQualifierValue"
-       });																																																																																																																																																																																																																																																																																																																																																																													
-  }
-
-  /**
-   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScoreEMSGlasgowEye</b>.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  protected void createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScoreEMSGlasgowEyeAnnotations()
-  {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScoreEMSGlasgowEye";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																									
-    addAnnotation
-      (emsVitalSignsSectionEClass, 
-       source, 
-       new String[] 
-       {
-       "code.code", "9267?6",
-       "code.codeSystem", "2.16.840.1.113883.6.1",
-       "code.codeSystemName", "LOINC",
-       "code.displayName", "Glasgow coma score.eye opening",
-       "constraints.validation.error", "EMSGlasgowEyeCode EMSGlasgowEyeCodeP EMSGlasgowEyeValue",
-       "constraints.validation.dependOn.EMSGlasgowEyeCode", "EMSGlasgowEyeCodeP"
-       });																																																																																																																																																																																																																																																																																																																																																																												
-  }
-
-  /**
-   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScoreEMSGlasgowMotor</b>.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  protected void createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScoreEMSGlasgowMotorAnnotations()
-  {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScoreEMSGlasgowMotor";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																										
-    addAnnotation
-      (emsVitalSignsSectionEClass, 
-       source, 
-       new String[] 
-       {
-       "constraints.validation.error", "EMSGlasgowMotorTemplateId EMSGlasgowMotorCode EMSGlasgowMotorCodeP EMSGlasgowMotorValue",
-       "templateId.root", "null",
-       "code.code", "9268?4",
-       "code.codeSystem", "2.16.840.1.113883.6.1",
-       "code.codeSystemName", "LOINC",
-       "code.displayName", "Glasgow coma score.motor",
-       "constraints.validation.dependOn.EMSGlasgowMotorCode", "EMSGlasgowMotorCodeP"
-       });																																																																																																																																																																																																																																																																																																																																																																											
-  }
-
-  /**
-   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScoreEMSGlasgowVerbal</b>.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  protected void createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScoreEMSGlasgowVerbalAnnotations()
-  {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScoreEMSGlasgowVerbal";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											
-    addAnnotation
-      (emsVitalSignsSectionEClass, 
-       source, 
-       new String[] 
-       {
-       "code.code", "9270?0",
-       "code.codeSystem", "2.16.840.1.113883.6.1",
-       "code.codeSystemName", "LOINC",
-       "code.displayName", "Glasgow coma score.verbal",
-       "constraints.validation.error", "EMSGlasgowVerbalCode EMSGlasgowVerbalCodeP EMSGlasgowVerbalValue",
-       "constraints.validation.dependOn.EMSGlasgowVerbalCode", "EMSGlasgowVerbalCodeP"
-       });																																																																																																																																																																																																																																																																																																																																																																										
-  }
-
-  /**
-   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSDispatchDerivedEntry</b>.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  protected void createEmspcrEMSDispatchDerivedEntryAnnotations()
-  {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSDispatchDerivedEntry";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																													
-    addAnnotation
-      (emsDispatchEClass, 
+      (emsDispatchSectionEClass, 
        source, 
        new String[] 
        {
        "constraints.validation.info", "DerivedEntryEMSComplaintReportedByDispatch"
-       });																																																																																																																																																																																																																																																																																																																																																								
+       });																																																																																																																																																																																																																																																																																																																																																																																																			
   }
 
   /**
-   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSDispatchDerivedEntryEMSEmergencyMedicalDispatchObservation</b>.
+   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSDispatchSectionDerivedEntryEMSEmergencyMedicalDispatchObservation</b>.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  protected void createEmspcrEMSDispatchDerivedEntryEMSEmergencyMedicalDispatchObservationAnnotations()
+  protected void createEmspcrEMSDispatchSectionDerivedEntryEMSEmergencyMedicalDispatchObservationAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSDispatchDerivedEntryEMSEmergencyMedicalDispatchObservation";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																														
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSDispatchSectionDerivedEntryEMSEmergencyMedicalDispatchObservation";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																															
     addAnnotation
-      (emsDispatchEClass, 
+      (emsDispatchSectionEClass, 
        source, 
        new String[] 
        {
-       "code.code", "67488?7",
+       "code.code", "67488-7",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "code.displayName", "EMDPerformed",
@@ -6739,608 +6528,32 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "constraints.validation.dependOn.EMSEmergencyMedicalDispatchObservationCode", "EMSEmergencyMedicalDispatchObservationCodeP",
        "value.codeSystem", "2.16.840.1.113883.6.1",
        "value.codeSystemName", "LOINC"
-       });																																																																																																																																																																																																																																																																																																																																																							
+       });																																																																																																																																																																																																																																																																																																																																																																																																		
   }
 
   /**
-   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSDispatchDerivedEntryEMSComplaintReportedByDispatch</b>.
+   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSDispatchSectionDerivedEntryEMSComplaintReportedByDispatch</b>.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  protected void createEmspcrEMSDispatchDerivedEntryEMSComplaintReportedByDispatchAnnotations()
+  protected void createEmspcrEMSDispatchSectionDerivedEntryEMSComplaintReportedByDispatchAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSDispatchDerivedEntryEMSComplaintReportedByDispatch";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																															
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSDispatchSectionDerivedEntryEMSComplaintReportedByDispatch";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																
     addAnnotation
-      (emsDispatchEClass, 
+      (emsDispatchSectionEClass, 
        source, 
        new String[] 
        {
-       "constraints.validation.error", "EMSComplaintReportedByDispatchCode EMSComplaintReportedByDispatchValue EMSComplaintReportedByDispatchValueP",
+       "code.code", "67570-2",
+       "code.codeSystem", "2.16.840.1.113883.6.1",
+       "code.codeSystemName", "LOINC",
+       "code.displayName", "Complaint reported by dispatch",
+       "constraints.validation.error", "EMSComplaintReportedByDispatchCode EMSComplaintReportedByDispatchCodeP EMSComplaintReportedByDispatchValue EMSComplaintReportedByDispatchValueP",
+       "constraints.validation.dependOn.EMSComplaintReportedByDispatchCode", "EMSComplaintReportedByDispatchCodeP",
        "value.codeSystem", "2.16.840.1.113883.6.1",
        "value.codeSystemName", "LOINC"
-       });																																																																																																																																																																																																																																																																																																																																																						
-  }
-
-  /**
-   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntry</b>.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  protected void createEmspcrEMSResponseDerivedEntryAnnotations()
-  {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntry";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																									
-    addAnnotation
-      (emsResponseEClass, 
-       source, 
-       new String[] 
-       {
-       "constraints.validation.error", "DerivedEntryEMSResponseModeToScene"
-       });																																																																																																																																																																																																																																																																																																																												
-  }
-
-  /**
-   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSDelayOrganizer</b>.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  protected void createEmspcrEMSResponseDerivedEntryEMSDelayOrganizerAnnotations()
-  {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSDelayOrganizer";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																										
-    addAnnotation
-      (emsResponseEClass, 
-       source, 
-       new String[] 
-       {
-       "constraints.validation.error", "EMSDelayOrganizerEMSDispatchDelayRelationship EMSDelayOrganizerEMSResponseDelayRelationship EMSDelayOrganizerEMSSceneDelayRelationship EMSDelayOrganizerEMSTransportDelayRelationship EMSDelayOrganizerEMSTurnaoundDelayRelationship"
-       });																																																																																																																																																																																																																																																																																																																											
-  }
-
-  /**
-   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSDelayOrganizerEMSDispatchDelayRelationship</b>.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  protected void createEmspcrEMSResponseDerivedEntryEMSDelayOrganizerEMSDispatchDelayRelationshipAnnotations()
-  {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSDelayOrganizerEMSDispatchDelayRelationship";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											
-    addAnnotation
-      (emsResponseEClass, 
-       source, 
-       new String[] 
-       {
-       "constraints.validation.error", "EMSDispatchDelayRelationshipEMSDispatchDelay"
-       });																																																																																																																																																																																																																																																																																																																										
-  }
-
-  /**
-   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSDelayOrganizerEMSDispatchDelayRelationshipEMSDispatchDelay</b>.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  protected void createEmspcrEMSResponseDerivedEntryEMSDelayOrganizerEMSDispatchDelayRelationshipEMSDispatchDelayAnnotations()
-  {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSDelayOrganizerEMSDispatchDelayRelationshipEMSDispatchDelay";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																												
-    addAnnotation
-      (emsResponseEClass, 
-       source, 
-       new String[] 
-       {
-       "code.code", "67480?4",
-       "code.codeSystem", "2.16.840.1.113883.6.1",
-       "code.codeSystemName", "LOINC",
-       "code.displayName", "Dispatch delay",
-       "constraints.validation.error", "EMSDispatchDelayCode EMSDispatchDelayCodeP EMSDispatchDelayValue EMSDispatchDelayValueP",
-       "constraints.validation.dependOn.EMSDispatchDelayCode", "EMSDispatchDelayCodeP",
-       "value.codeSystem", "2.16.840.1.113883.6.1",
-       "value.codeSystemName", "LOINC"
-       });																																																																																																																																																																																																																																																																																																																									
-  }
-
-  /**
-   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSDelayOrganizerEMSResponseDelayRelationship</b>.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  protected void createEmspcrEMSResponseDerivedEntryEMSDelayOrganizerEMSResponseDelayRelationshipAnnotations()
-  {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSDelayOrganizerEMSResponseDelayRelationship";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																													
-    addAnnotation
-      (emsResponseEClass, 
-       source, 
-       new String[] 
-       {
-       "constraints.validation.error", "EMSResponseDelayRelationshipEMSResponseDelay"
-       });																																																																																																																																																																																																																																																																																																																								
-  }
-
-  /**
-   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSDelayOrganizerEMSResponseDelayRelationshipEMSResponseDelay</b>.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  protected void createEmspcrEMSResponseDerivedEntryEMSDelayOrganizerEMSResponseDelayRelationshipEMSResponseDelayAnnotations()
-  {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSDelayOrganizerEMSResponseDelayRelationshipEMSResponseDelay";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																														
-    addAnnotation
-      (emsResponseEClass, 
-       source, 
-       new String[] 
-       {
-       "code.code", "67557?9",
-       "code.codeSystem", "2.16.840.1.113883.6.1",
-       "code.codeSystemName", "LOINC",
-       "code.displayName", "Response delay",
-       "constraints.validation.error", "EMSResponseDelayCode EMSResponseDelayCodeP EMSResponseDelayValue EMSResponseDelayValueP",
-       "constraints.validation.dependOn.EMSResponseDelayCode", "EMSResponseDelayCodeP",
-       "value.codeSystem", "2.16.840.1.113883.6.1",
-       "value.codeSystemName", "LOINC"
-       });																																																																																																																																																																																																																																																																																																																							
-  }
-
-  /**
-   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSDelayOrganizerEMSSceneDelayRelationship</b>.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  protected void createEmspcrEMSResponseDerivedEntryEMSDelayOrganizerEMSSceneDelayRelationshipAnnotations()
-  {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSDelayOrganizerEMSSceneDelayRelationship";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																															
-    addAnnotation
-      (emsResponseEClass, 
-       source, 
-       new String[] 
-       {
-       "constraints.validation.error", "EMSSceneDelayRelationshipEMSSceneDelay"
-       });																																																																																																																																																																																																																																																																																																																						
-  }
-
-  /**
-   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSDelayOrganizerEMSSceneDelayRelationshipEMSSceneDelay</b>.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  protected void createEmspcrEMSResponseDerivedEntryEMSDelayOrganizerEMSSceneDelayRelationshipEMSSceneDelayAnnotations()
-  {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSDelayOrganizerEMSSceneDelayRelationshipEMSSceneDelay";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																
-    addAnnotation
-      (emsResponseEClass, 
-       source, 
-       new String[] 
-       {
-       "code.code", "67558?7",
-       "code.codeSystem", "2.16.840.1.113883.6.1",
-       "code.codeSystemName", "LOINC",
-       "code.displayName", "Scene delay",
-       "constraints.validation.error", "EMSSceneDelayCode EMSSceneDelayCodeP EMSSceneDelayValue EMSSceneDelayValueP",
-       "constraints.validation.dependOn.EMSSceneDelayCode", "EMSSceneDelayCodeP",
-       "value.codeSystem", "2.16.840.1.113883.6.1",
-       "value.codeSystemName", "LOINC"
-       });																																																																																																																																																																																																																																																																																																																					
-  }
-
-  /**
-   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSDelayOrganizerEMSTransportDelayRelationship</b>.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  protected void createEmspcrEMSResponseDerivedEntryEMSDelayOrganizerEMSTransportDelayRelationshipAnnotations()
-  {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSDelayOrganizerEMSTransportDelayRelationship";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																	
-    addAnnotation
-      (emsResponseEClass, 
-       source, 
-       new String[] 
-       {
-       "constraints.validation.error", "EMSTransportDelayRelationshipEMSTransportDelay"
-       });																																																																																																																																																																																																																																																																																																																				
-  }
-
-  /**
-   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSDelayOrganizerEMSTransportDelayRelationshipEMSTransportDelay</b>.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  protected void createEmspcrEMSResponseDerivedEntryEMSDelayOrganizerEMSTransportDelayRelationshipEMSTransportDelayAnnotations()
-  {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSDelayOrganizerEMSTransportDelayRelationshipEMSTransportDelay";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																		
-    addAnnotation
-      (emsResponseEClass, 
-       source, 
-       new String[] 
-       {
-       "code.code", "67559?5",
-       "code.codeSystem", "2.16.840.1.113883.6.1",
-       "code.codeSystemName", "LOINC",
-       "code.displayName", "Transport delay",
-       "constraints.validation.error", "EMSTransportDelayCode EMSTransportDelayCodeP EMSTransportDelayValue EMSTransportDelayValueP",
-       "constraints.validation.dependOn.EMSTransportDelayCode", "EMSTransportDelayCodeP",
-       "value.codeSystem", "2.16.840.1.113883.6.1",
-       "value.codeSystemName", "LOINC"
-       });																																																																																																																																																																																																																																																																																																																			
-  }
-
-  /**
-   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSDelayOrganizerEMSTurnaoundDelayRelationship</b>.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  protected void createEmspcrEMSResponseDerivedEntryEMSDelayOrganizerEMSTurnaoundDelayRelationshipAnnotations()
-  {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSDelayOrganizerEMSTurnaoundDelayRelationship";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																			
-    addAnnotation
-      (emsResponseEClass, 
-       source, 
-       new String[] 
-       {
-       "constraints.validation.error", "EMSTurnaoundDelayRelationshipEMSTurnaroundDelay"
-       });																																																																																																																																																																																																																																																																																																																		
-  }
-
-  /**
-   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSDelayOrganizerEMSTurnaoundDelayRelationshipEMSTurnaroundDelay</b>.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  protected void createEmspcrEMSResponseDerivedEntryEMSDelayOrganizerEMSTurnaoundDelayRelationshipEMSTurnaroundDelayAnnotations()
-  {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSDelayOrganizerEMSTurnaoundDelayRelationshipEMSTurnaroundDelay";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																				
-    addAnnotation
-      (emsResponseEClass, 
-       source, 
-       new String[] 
-       {
-       "code.code", "67560?3",
-       "code.codeSystem", "2.16.840.1.113883.6.1",
-       "code.codeSystemName", "LOINC",
-       "code.displayName", "Turnaround delay",
-       "constraints.validation.error", "EMSTurnaroundDelayCode EMSTurnaroundDelayCodeP EMSTurnaroundDelayValue EMSTurnaroundDelayValueP",
-       "constraints.validation.dependOn.EMSTurnaroundDelayCode", "EMSTurnaroundDelayCodeP",
-       "value.codeSystem", "2.16.840.1.113883.6.1",
-       "value.codeSystemName", "LOINC"
-       });																																																																																																																																																																																																																																																																																																																	
-  }
-
-  /**
-   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSDispatchLocationOrganizer</b>.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  protected void createEmspcrEMSResponseDerivedEntryEMSDispatchLocationOrganizerAnnotations()
-  {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSDispatchLocationOrganizer";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																					
-    addAnnotation
-      (emsResponseEClass, 
-       source, 
-       new String[] 
-       {
-       "constraints.validation.info", "EMSDispatchLocationOrganizerEMSDispatchLocationNameRelationship EMSDispatchLocationOrganizerEMSDispatchLocationLatitudeRelationship EMSDispatchLocationOrganizerEMSDispatchLocationLongtudeRelationship"
-       });																																																																																																																																																																																																																																																																																																																
-  }
-
-  /**
-   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationNameRelationship</b>.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  protected void createEmspcrEMSResponseDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationNameRelationshipAnnotations()
-  {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationNameRelationship";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																						
-    addAnnotation
-      (emsResponseEClass, 
-       source, 
-       new String[] 
-       {
-       "constraints.validation.error", "EMSDispatchLocationNameRelationshipTemplateId EMSDispatchLocationNameRelationshipEMSDispatchLocationName",
-       "templateId.root", "null"
-       });																																																																																																																																																																																																																																																																																																															
-  }
-
-  /**
-   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationNameRelationshipEMSDispatchLocationName</b>.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  protected void createEmspcrEMSResponseDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationNameRelationshipEMSDispatchLocationNameAnnotations()
-  {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationNameRelationshipEMSDispatchLocationName";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																							
-    addAnnotation
-      (emsResponseEClass, 
-       source, 
-       new String[] 
-       {
-       "code.code", "69466?1",
-       "code.codeSystem", "2.16.840.1.113883.6.1",
-       "code.codeSystemName", "LOINC",
-       "code.displayName", "Dispatch Location Name",
-       "constraints.validation.error", "EMSDispatchLocationNameCode EMSDispatchLocationNameValue"
-       });																																																																																																																																																																																																																																																																																																														
-  }
-
-  /**
-   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationLatitudeRelationship</b>.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  protected void createEmspcrEMSResponseDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationLatitudeRelationshipAnnotations()
-  {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationLatitudeRelationship";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																								
-    addAnnotation
-      (emsResponseEClass, 
-       source, 
-       new String[] 
-       {
-       "constraints.validation.error", "EMSDispatchLocationLatitudeRelationshipTemplateId EMSDispatchLocationLatitudeRelationshipEMSDispatchLocationLatitude",
-       "templateId.root", "null"
-       });																																																																																																																																																																																																																																																																																																													
-  }
-
-  /**
-   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationLatitudeRelationshipEMSDispatchLocationLatitude</b>.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  protected void createEmspcrEMSResponseDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationLatitudeRelationshipEMSDispatchLocationLatitudeAnnotations()
-  {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationLatitudeRelationshipEMSDispatchLocationLatitude";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																									
-    addAnnotation
-      (emsResponseEClass, 
-       source, 
-       new String[] 
-       {
-       "code.code", "52002?3",
-       "code.codeSystem", "2.16.840.1.113883.6.1",
-       "code.codeSystemName", "LOINC",
-       "code.displayName", "Dispatch Location Latitude",
-       "constraints.validation.error", "EMSDispatchLocationLatitudeCode EMSDispatchLocationLatitudeValue"
-       });																																																																																																																																																																																																																																																																																																												
-  }
-
-  /**
-   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationLongitudeRelationship</b>.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  protected void createEmspcrEMSResponseDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationLongitudeRelationshipAnnotations()
-  {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationLongitudeRelationship";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																										
-    addAnnotation
-      (emsResponseEClass, 
-       source, 
-       new String[] 
-       {
-       "constraints.validation.error", "EMSDispatchLocationLongitudeRelationshipTemplateId",
-       "templateId.root", "null"
-       });																																																																																																																																																																																																																																																																																																											
-  }
-
-  /**
-   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationLongitudeRelationshipEMSDispatchLocationLongitude</b>.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  protected void createEmspcrEMSResponseDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationLongitudeRelationshipEMSDispatchLocationLongitudeAnnotations()
-  {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationLongitudeRelationshipEMSDispatchLocationLongitude";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											
-    addAnnotation
-      (emsResponseEClass, 
-       source, 
-       new String[] 
-       {
-       "code.code", "52003?1",
-       "code.codeSystem", "2.16.840.1.113883.6.1",
-       "code.codeSystemName", "LOINC",
-       "code.displayName", "Dispatch Location Longitude",
-       "constraints.validation.error", "EMSDispatchLocationLongitudeCode EMSDispatchLocationLongitudeValue"
-       });																																																																																																																																																																																																																																																																																																										
-  }
-
-  /**
-   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSResponseOdometerReadingOrganizer</b>.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  protected void createEmspcrEMSResponseDerivedEntryEMSResponseOdometerReadingOrganizerAnnotations()
-  {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSResponseOdometerReadingOrganizer";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																												
-    addAnnotation
-      (emsResponseEClass, 
-       source, 
-       new String[] 
-       {
-       "constraints.validation.info", "EMSResponseOdometerReadingOrganizerEMSResponseBeginningOdometerReadingRelationship EMSResponseOdometerReadingOrganizerEMSResponseOnSceneOdometerReadingRelationship EMSResponseOdometerReadingOrganizerEMSResponseDestinationOdometerReadingRelationship"
-       });																																																																																																																																																																																																																																																																																																									
-  }
-
-  /**
-   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseBeginningOdometerReadingRelationship</b>.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  protected void createEmspcrEMSResponseDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseBeginningOdometerReadingRelationshipAnnotations()
-  {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseBeginningOdometerReadingRelationship";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																													
-    addAnnotation
-      (emsResponseEClass, 
-       source, 
-       new String[] 
-       {
-       "constraints.validation.error", "EMSResponseBeginningOdometerReadingRelationshipEMSResponseBeginningOdometerReading"
-       });																																																																																																																																																																																																																																																																																																								
-  }
-
-  /**
-   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseBeginningOdometerReadingRelationshipEMSResponseBeginningOdometerReading</b>.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  protected void createEmspcrEMSResponseDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseBeginningOdometerReadingRelationshipEMSResponseBeginningOdometerReadingAnnotations()
-  {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseBeginningOdometerReadingRelationshipEMSResponseBeginningOdometerReading";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																														
-    addAnnotation
-      (emsResponseEClass, 
-       source, 
-       new String[] 
-       {
-       "code.code", "67484?6",
-       "code.codeSystem", "2.16.840.1.113883.6.1",
-       "code.codeSystemName", "LOINC",
-       "code.displayName", "EMS Response odometer beginning reading",
-       "constraints.validation.error", "EMSResponseBeginningOdometerReadingCode EMSResponseBeginningOdometerReadingCodeP EMSResponseBeginningOdometerReadingValue",
-       "constraints.validation.dependOn.EMSResponseBeginningOdometerReadingCode", "EMSResponseBeginningOdometerReadingCodeP"
-       });																																																																																																																																																																																																																																																																																																							
-  }
-
-  /**
-   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseOnSceneOdometerReadingRelationship</b>.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  protected void createEmspcrEMSResponseDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseOnSceneOdometerReadingRelationshipAnnotations()
-  {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseOnSceneOdometerReadingRelationship";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																															
-    addAnnotation
-      (emsResponseEClass, 
-       source, 
-       new String[] 
-       {
-       "constraints.validation.error", "EMSResponseOnSceneOdometerReadingRelationshipEMSResponseOnSceneOdometerReading"
-       });																																																																																																																																																																																																																																																																																																						
-  }
-
-  /**
-   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseOnSceneOdometerReadingRelationshipEMSResponseOnSceneOdometerReading</b>.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  protected void createEmspcrEMSResponseDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseOnSceneOdometerReadingRelationshipEMSResponseOnSceneOdometerReadingAnnotations()
-  {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseOnSceneOdometerReadingRelationshipEMSResponseOnSceneOdometerReading";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																
-    addAnnotation
-      (emsResponseEClass, 
-       source, 
-       new String[] 
-       {
-       "code.code", "67485?3",
-       "code.codeSystem", "2.16.840.1.113883.6.1",
-       "code.codeSystemName", "LOINC",
-       "code.displayName", "EMS Response odometer on-scene reading",
-       "constraints.validation.error", "EMSResponseOnSceneOdometerReadingCode EMSResponseOnSceneOdometerReadingCodeP EMSResponseOnSceneOdometerReadingValue",
-       "constraints.validation.dependOn.EMSResponseOnSceneOdometerReadingCode", "EMSResponseOnSceneOdometerReadingCodeP"
-       });																																																																																																																																																																																																																																																																																																					
-  }
-
-  /**
-   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseDestinationOdometerReadingRelationship</b>.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  protected void createEmspcrEMSResponseDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseDestinationOdometerReadingRelationshipAnnotations()
-  {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseDestinationOdometerReadingRelationship";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																	
-    addAnnotation
-      (emsResponseEClass, 
-       source, 
-       new String[] 
-       {
-       "constraints.validation.error", "EMSResponseDestinationOdometerReadingRelationshipEMSResponseDestinationOdometerReading"
-       });																																																																																																																																																																																																																																																																																																				
-  }
-
-  /**
-   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseDestinationOdometerReadingRelationshipEMSResponseDestinationOdometerReading</b>.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  protected void createEmspcrEMSResponseDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseDestinationOdometerReadingRelationshipEMSResponseDestinationOdometerReadingAnnotations()
-  {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseDestinationOdometerReadingRelationshipEMSResponseDestinationOdometerReading";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																		
-    addAnnotation
-      (emsResponseEClass, 
-       source, 
-       new String[] 
-       {
-       "code.code", "67486?1",
-       "code.codeSystem", "2.16.840.1.113883.6.1",
-       "code.codeSystemName", "LOINC",
-       "code.displayName", "EMS Response odometer destination reading",
-       "constraints.validation.error", "EMSResponseDestinationOdometerReadingCode EMSResponseDestinationOdometerReadingCodeP EMSResponseDestinationOdometerReadingValue",
-       "constraints.validation.dependOn.EMSResponseDestinationOdometerReadingCode", "EMSResponseDestinationOdometerReadingCodeP"
-       });																																																																																																																																																																																																																																																																																																			
-  }
-
-  /**
-   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseEndingOdometerReadingRelationshipEMSResponseEndingOdometerReading</b>.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  protected void createEmspcrEMSResponseDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseEndingOdometerReadingRelationshipEMSResponseEndingOdometerReadingAnnotations()
-  {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseEndingOdometerReadingRelationshipEMSResponseEndingOdometerReading";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																			
-    addAnnotation
-      (emsResponseEClass, 
-       source, 
-       new String[] 
-       {
-       "code.code", "67487?9",
-       "code.codeSystem", "2.16.840.1.113883.6.1",
-       "code.codeSystemName", "LOINC",
-       "code.displayName", "EMS Response odometer ending reading",
-       "constraints.validation.error", "EMSResponseEndingOdometerReadingCode EMSResponseEndingOdometerReadingCodeP EMSResponseEndingOdometerReadingValue",
-       "constraints.validation.dependOn.EMSResponseEndingOdometerReadingCode", "EMSResponseEndingOdometerReadingCodeP"
-       });																																																																																																																																																																																																																																																																																																		
-  }
-
-  /**
-   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSResponseModeToScene</b>.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  protected void createEmspcrEMSResponseDerivedEntryEMSResponseModeToSceneAnnotations()
-  {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseDerivedEntryEMSResponseModeToScene";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																				
-    addAnnotation
-      (emsResponseEClass, 
-       source, 
-       new String[] 
-       {
-       "code.code", "67482?0",
-       "code.codeSystem", "2.16.840.1.113883.6.1",
-       "code.codeSystemName", "LOINC",
-       "code.displayName", "Response mode to scene",
-       "constraints.validation.error", "EMSResponseModeToSceneCode EMSResponseModeToSceneCodeP EMSResponseModeToSceneValue EMSResponseModeToSceneValueP",
-       "constraints.validation.dependOn.EMSResponseModeToSceneCode", "EMSResponseModeToSceneCodeP",
-       "value.codeSystem", "2.16.840.1.113883.6.1",
-       "value.codeSystemName", "LOINC"
-       });																																																																																																																																																																																																																																																																																																	
+       });																																																																																																																																																																																																																																																																																																																																																																																																	
   }
 
   /**
@@ -7351,14 +6564,14 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSDispositionSectionDerivedEntryAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSDispositionSectionDerivedEntry";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																										
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSDispositionSectionDerivedEntry";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																										
     addAnnotation
       (emsDispositionSectionEClass, 
        source, 
        new String[] 
        {
        "constraints.validation.error", "DerivedEntryEMSPatientConditionChangeAtDestinationObservation"
-       });																																																																																																																																																																																																																																																											
+       });																																																																																																																																																																																																																																																																																																																																																																							
   }
 
   /**
@@ -7369,19 +6582,19 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSDispositionSectionDerivedEntryEMSNumberOfPatientsObservationAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSDispositionSectionDerivedEntryEMSNumberOfPatientsObservation";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSDispositionSectionDerivedEntryEMSNumberOfPatientsObservation";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											
     addAnnotation
       (emsDispositionSectionEClass, 
        source, 
        new String[] 
        {
-       "code.code", "67547?0",
+       "code.code", "67547-0",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "code.displayName", "EMS Number of patients",
        "constraints.validation.error", "EMSNumberOfPatientsObservationCode EMSNumberOfPatientsObservationCodeP EMSNumberOfPatientsObservationValue",
        "constraints.validation.dependOn.EMSNumberOfPatientsObservationCode", "EMSNumberOfPatientsObservationCodeP"
-       });																																																																																																																																																																																																																																																										
+       });																																																																																																																																																																																																																																																																																																																																																																						
   }
 
   /**
@@ -7392,13 +6605,13 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSDispositionSectionDerivedEntryEMSIncidentDispositionObservationAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSDispositionSectionDerivedEntryEMSIncidentDispositionObservation";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																												
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSDispositionSectionDerivedEntryEMSIncidentDispositionObservation";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																												
     addAnnotation
       (emsDispositionSectionEClass, 
        source, 
        new String[] 
        {
-       "code.code", "67548?8",
+       "code.code", "67548-8",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "code.displayName", "EMS incident disposition",
@@ -7406,7 +6619,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "constraints.validation.dependOn.EMSIncidentDispositionObservationCode", "EMSIncidentDispositionObservationCodeP",
        "value.codeSystem", "2.16.840.1.113883.6.1",
        "value.codeSystemName", "LOINC"
-       });																																																																																																																																																																																																																																																									
+       });																																																																																																																																																																																																																																																																																																																																																																					
   }
 
   /**
@@ -7417,13 +6630,13 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSDispositionSectionDerivedEntryEMSTransportModeObservationAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSDispositionSectionDerivedEntryEMSTransportModeObservation";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																													
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSDispositionSectionDerivedEntryEMSTransportModeObservation";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																													
     addAnnotation
       (emsDispositionSectionEClass, 
        source, 
        new String[] 
        {
-       "code.code", "67550?4",
+       "code.code", "67550-4",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "code.displayName", "EMS transport mode",
@@ -7431,7 +6644,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "constraints.validation.dependOn.EMSTransportModeObservationCode", "EMSTransportModeObservationCodeP",
        "value.codeSystem", "2.16.840.1.113883.6.1",
        "value.codeSystemName", "LOINC"
-       });																																																																																																																																																																																																																																																								
+       });																																																																																																																																																																																																																																																																																																																																																																				
   }
 
   /**
@@ -7442,13 +6655,13 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSDispositionSectionDerivedEntryEMSTransportMethodObservationAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSDispositionSectionDerivedEntryEMSTransportMethodObservation";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																														
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSDispositionSectionDerivedEntryEMSTransportMethodObservation";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																														
     addAnnotation
       (emsDispositionSectionEClass, 
        source, 
        new String[] 
        {
-       "code.code", "67549?6",
+       "code.code", "67549-6",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "code.displayName", "EMS transport method",
@@ -7456,7 +6669,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "constraints.validation.dependOn.EMSTransportMethodObservationCode", "EMSTransportMethodObservationCodeP",
        "value.codeSystem", "2.16.840.1.113883.6.1",
        "value.codeSystemName", "LOINC"
-       });																																																																																																																																																																																																																																																							
+       });																																																																																																																																																																																																																																																																																																																																																																			
   }
 
   /**
@@ -7467,13 +6680,13 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSDispositionSectionDerivedEntryEMSReasonForChoosingDestinationObservationAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSDispositionSectionDerivedEntryEMSReasonForChoosingDestinationObservation";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																															
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSDispositionSectionDerivedEntryEMSReasonForChoosingDestinationObservation";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																															
     addAnnotation
       (emsDispositionSectionEClass, 
        source, 
        new String[] 
        {
-       "code.code", "67552?0",
+       "code.code", "67552-0",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "code.displayName", "EMS reason for choosing destination",
@@ -7481,7 +6694,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "constraints.validation.dependOn.EMSReasonForChoosingDestinationObservationCode", "EMSReasonForChoosingDestinationObservationCodeP",
        "value.codeSystem", "2.16.840.1.113883.6.1",
        "value.codeSystemName", "LOINC"
-       });																																																																																																																																																																																																																																																						
+       });																																																																																																																																																																																																																																																																																																																																																																		
   }
 
   /**
@@ -7492,19 +6705,19 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSDispositionSectionDerivedEntryEMSPrearrivalActivationObservationAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSDispositionSectionDerivedEntryEMSPrearrivalActivationObservation";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSDispositionSectionDerivedEntryEMSPrearrivalActivationObservation";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																
     addAnnotation
       (emsDispositionSectionEClass, 
        source, 
        new String[] 
        {
-       "code.code", "69462?0",
+       "code.code", "69462-0",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "code.displayName", "EMS prearrival activation performed",
        "constraints.validation.error", "EMSPrearrivalActivationObservationCode EMSPrearrivalActivationObservationCodeP EMSPrearrivalActivationObservationValue EMSPrearrivalActivationObservationEffectiveTime",
        "constraints.validation.dependOn.EMSPrearrivalActivationObservationCode", "EMSPrearrivalActivationObservationCodeP"
-       });																																																																																																																																																																																																																																																					
+       });																																																																																																																																																																																																																																																																																																																																																																	
   }
 
   /**
@@ -7515,13 +6728,13 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSDispositionSectionDerivedEntryEMSPatientConditionChangeAtDestinationObservationAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSDispositionSectionDerivedEntryEMSPatientConditionChangeAtDestinationObservation";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																	
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSDispositionSectionDerivedEntryEMSPatientConditionChangeAtDestinationObservation";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																	
     addAnnotation
       (emsDispositionSectionEClass, 
        source, 
        new String[] 
        {
-       "code.code", "67551?2",
+       "code.code", "67551-2",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "code.displayName", "EMS patient condition change at destination",
@@ -7529,65 +6742,65 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "constraints.validation.dependOn.EMSPatientConditionChangeAtDestinationObservationCode", "EMSPatientConditionChangeAtDestinationObservationCodeP",
        "value.codeSystem", "2.16.840.1.113883.6.1",
        "value.codeSystemName", "LOINC"
-       });																																																																																																																																																																																																																																																				
+       });																																																																																																																																																																																																																																																																																																																																																																
   }
 
   /**
-   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPersonnelAdverseEventDerivedEntry</b>.
+   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPersonnelAdverseEventSectionDerivedEntry</b>.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  protected void createEmspcrEMSPersonnelAdverseEventDerivedEntryAnnotations()
+  protected void createEmspcrEMSPersonnelAdverseEventSectionDerivedEntryAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPersonnelAdverseEventDerivedEntry";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																									
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPersonnelAdverseEventSectionDerivedEntry";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																			
     addAnnotation
-      (emsPersonnelAdverseEventEClass, 
+      (emsPersonnelAdverseEventSectionEClass, 
        source, 
        new String[] 
        {
        "constraints.validation.error", "DerivedEntryEMSAdverseEventTypeObservation"
-       });																																																																																																																																																																																												
+       });																																																																																																																																																																																																																																																																																																														
   }
 
   /**
-   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPersonnelAdverseEventDerivedEntryEMSAdverseEventIndicator</b>.
+   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPersonnelAdverseEventSectionDerivedEntryEMSAdverseEventIndicator</b>.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  protected void createEmspcrEMSPersonnelAdverseEventDerivedEntryEMSAdverseEventIndicatorAnnotations()
+  protected void createEmspcrEMSPersonnelAdverseEventSectionDerivedEntryEMSAdverseEventIndicatorAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPersonnelAdverseEventDerivedEntryEMSAdverseEventIndicator";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																										
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPersonnelAdverseEventSectionDerivedEntryEMSAdverseEventIndicator";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																				
     addAnnotation
-      (emsPersonnelAdverseEventEClass, 
+      (emsPersonnelAdverseEventSectionEClass, 
        source, 
        new String[] 
        {
-       "code.code", "67554?6",
+       "code.code", "67554-6",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "code.displayName", "EMS personnel exposed or injured",
        "constraints.validation.error", "EMSAdverseEventIndicatorCode EMSAdverseEventIndicatorCodeP EMSAdverseEventIndicatorValue",
        "constraints.validation.dependOn.EMSAdverseEventIndicatorCode", "EMSAdverseEventIndicatorCodeP"
-       });																																																																																																																																																																																											
+       });																																																																																																																																																																																																																																																																																																													
   }
 
   /**
-   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPersonnelAdverseEventDerivedEntryEMSAdverseEventTypeObservation</b>.
+   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPersonnelAdverseEventSectionDerivedEntryEMSAdverseEventTypeObservation</b>.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  protected void createEmspcrEMSPersonnelAdverseEventDerivedEntryEMSAdverseEventTypeObservationAnnotations()
+  protected void createEmspcrEMSPersonnelAdverseEventSectionDerivedEntryEMSAdverseEventTypeObservationAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPersonnelAdverseEventDerivedEntryEMSAdverseEventTypeObservation";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSPersonnelAdverseEventSectionDerivedEntryEMSAdverseEventTypeObservation";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																					
     addAnnotation
-      (emsPersonnelAdverseEventEClass, 
+      (emsPersonnelAdverseEventSectionEClass, 
        source, 
        new String[] 
        {
-       "code.code", "67555?3",
+       "code.code", "67555-3",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "code.displayName", "EMS personnel adverse event type",
@@ -7595,7 +6808,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "constraints.validation.dependOn.EMSAdverseEventTypeObservationCode", "EMSAdverseEventTypeObservationCodeP",
        "value.codeSystem", "2.16.840.1.113883.6.1",
        "value.codeSystemName", "LOINC"
-       });																																																																																																																																																																																										
+       });																																																																																																																																																																																																																																																																																																												
   }
 
   /**
@@ -7606,14 +6819,14 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSProtocolSectionDerivedEntryAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProtocolSectionDerivedEntry";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																									
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProtocolSectionDerivedEntry";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																			
     addAnnotation
       (emsProtocolSectionEClass, 
        source, 
        new String[] 
        {
        "constraints.validation.error", "DerivedEntryEMSCandidatePatientRegistryType"
-       });																																																																																																																																																												
+       });																																																																																																																																																																																																																																																																														
   }
 
   /**
@@ -7624,13 +6837,13 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSProtocolSectionDerivedEntryEMSProtocolObservationAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProtocolSectionDerivedEntryEMSProtocolObservation";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																										
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProtocolSectionDerivedEntryEMSProtocolObservation";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																				
     addAnnotation
       (emsProtocolSectionEClass, 
        source, 
        new String[] 
        {
-       "code.code", "67537?1",
+       "code.code", "67537-1",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "code.displayName", "EMS protocol",
@@ -7638,7 +6851,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "constraints.validation.dependOn.EMSProtocolObservationCode", "EMSProtocolObservationCodeP",
        "value.codeSystem", "2.16.840.1.113883.6.1",
        "value.codeSystemName", "LOINC"
-       });																																																																																																																																																											
+       });																																																																																																																																																																																																																																																																													
   }
 
   /**
@@ -7649,13 +6862,13 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSProtocolSectionDerivedEntryEMSProtocolAgeCategoryAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProtocolSectionDerivedEntryEMSProtocolAgeCategory";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProtocolSectionDerivedEntryEMSProtocolAgeCategory";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																					
     addAnnotation
       (emsProtocolSectionEClass, 
        source, 
        new String[] 
        {
-       "code.code", "67538?9",
+       "code.code", "67538-9",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "code.displayName", "EMS Protocol age category",
@@ -7663,7 +6876,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "constraints.validation.dependOn.EMSProtocolAgeCategoryCode", "EMSProtocolAgeCategoryCodeP",
        "value.codeSystem", "2.16.840.1.113883.6.1",
        "value.codeSystemName", "LOINC"
-       });																																																																																																																																																										
+       });																																																																																																																																																																																																																																																																												
   }
 
   /**
@@ -7674,13 +6887,13 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSProtocolSectionDerivedEntryEMSCandidatePatientRegistryTypeAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProtocolSectionDerivedEntryEMSCandidatePatientRegistryType";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																												
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSProtocolSectionDerivedEntryEMSCandidatePatientRegistryType";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																						
     addAnnotation
       (emsProtocolSectionEClass, 
        source, 
        new String[] 
        {
-       "code.code", "67553?8",
+       "code.code", "67553-8",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "code.displayName", "EMS candidate patient registry",
@@ -7688,7 +6901,606 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "constraints.validation.dependOn.EMSCandidatePatientRegistryTypeCode", "EMSCandidatePatientRegistryTypeCodeP",
        "value.codeSystem", "2.16.840.1.113883.6.1",
        "value.codeSystemName", "LOINC"
-       });																																																																																																																																																									
+       });																																																																																																																																																																																																																																																																											
+  }
+
+  /**
+   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntry</b>.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  protected void createEmspcrEMSResponseSectionDerivedEntryAnnotations()
+  {
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntry";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																												
+    addAnnotation
+      (emsResponseSectionEClass, 
+       source, 
+       new String[] 
+       {
+       "constraints.validation.error", "DerivedEntryEMSResponseModeToScene"
+       });																																																																																																																																																																																																																																																					
+  }
+
+  /**
+   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDelayOrganizer</b>.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  protected void createEmspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerAnnotations()
+  {
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDelayOrganizer";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																													
+    addAnnotation
+      (emsResponseSectionEClass, 
+       source, 
+       new String[] 
+       {
+       "constraints.validation.error", "EMSDelayOrganizerEMSDispatchDelayRelationship EMSDelayOrganizerEMSResponseDelayRelationship EMSDelayOrganizerEMSSceneDelayRelationship EMSDelayOrganizerEMSTransportDelayRelationship EMSDelayOrganizerEMSTurnaoundDelayRelationship"
+       });																																																																																																																																																																																																																																																				
+  }
+
+  /**
+   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSDispatchDelayRelationship</b>.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  protected void createEmspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSDispatchDelayRelationshipAnnotations()
+  {
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSDispatchDelayRelationship";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																														
+    addAnnotation
+      (emsResponseSectionEClass, 
+       source, 
+       new String[] 
+       {
+       "constraints.validation.error", "EMSDispatchDelayRelationshipEMSDispatchDelay"
+       });																																																																																																																																																																																																																																																			
+  }
+
+  /**
+   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSDispatchDelayRelationshipEMSDispatchDelay</b>.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  protected void createEmspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSDispatchDelayRelationshipEMSDispatchDelayAnnotations()
+  {
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSDispatchDelayRelationshipEMSDispatchDelay";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																															
+    addAnnotation
+      (emsResponseSectionEClass, 
+       source, 
+       new String[] 
+       {
+       "code.code", "67480-4",
+       "code.codeSystem", "2.16.840.1.113883.6.1",
+       "code.codeSystemName", "LOINC",
+       "code.displayName", "Dispatch delay",
+       "constraints.validation.error", "EMSDispatchDelayCode EMSDispatchDelayCodeP EMSDispatchDelayValue EMSDispatchDelayValueP",
+       "constraints.validation.dependOn.EMSDispatchDelayCode", "EMSDispatchDelayCodeP",
+       "value.codeSystem", "2.16.840.1.113883.6.1",
+       "value.codeSystemName", "LOINC"
+       });																																																																																																																																																																																																																																																		
+  }
+
+  /**
+   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSResponseDelayRelationship</b>.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  protected void createEmspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSResponseDelayRelationshipAnnotations()
+  {
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSResponseDelayRelationship";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																
+    addAnnotation
+      (emsResponseSectionEClass, 
+       source, 
+       new String[] 
+       {
+       "constraints.validation.error", "EMSResponseDelayRelationshipEMSResponseDelay"
+       });																																																																																																																																																																																																																																																	
+  }
+
+  /**
+   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSResponseDelayRelationshipEMSResponseDelay</b>.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  protected void createEmspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSResponseDelayRelationshipEMSResponseDelayAnnotations()
+  {
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSResponseDelayRelationshipEMSResponseDelay";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																	
+    addAnnotation
+      (emsResponseSectionEClass, 
+       source, 
+       new String[] 
+       {
+       "code.code", "67557-9",
+       "code.codeSystem", "2.16.840.1.113883.6.1",
+       "code.codeSystemName", "LOINC",
+       "code.displayName", "Response delay",
+       "constraints.validation.error", "EMSResponseDelayCode EMSResponseDelayCodeP EMSResponseDelayValue EMSResponseDelayValueP",
+       "constraints.validation.dependOn.EMSResponseDelayCode", "EMSResponseDelayCodeP",
+       "value.codeSystem", "2.16.840.1.113883.6.1",
+       "value.codeSystemName", "LOINC"
+       });																																																																																																																																																																																																																																																
+  }
+
+  /**
+   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSSceneDelayRelationship</b>.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  protected void createEmspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSSceneDelayRelationshipAnnotations()
+  {
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSSceneDelayRelationship";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																		
+    addAnnotation
+      (emsResponseSectionEClass, 
+       source, 
+       new String[] 
+       {
+       "constraints.validation.error", "EMSSceneDelayRelationshipEMSSceneDelay"
+       });																																																																																																																																																																																																																																															
+  }
+
+  /**
+   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSSceneDelayRelationshipEMSSceneDelay</b>.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  protected void createEmspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSSceneDelayRelationshipEMSSceneDelayAnnotations()
+  {
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSSceneDelayRelationshipEMSSceneDelay";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																			
+    addAnnotation
+      (emsResponseSectionEClass, 
+       source, 
+       new String[] 
+       {
+       "code.code", "67558-7",
+       "code.codeSystem", "2.16.840.1.113883.6.1",
+       "code.codeSystemName", "LOINC",
+       "code.displayName", "Scene delay",
+       "constraints.validation.error", "EMSSceneDelayCode EMSSceneDelayCodeP EMSSceneDelayValue EMSSceneDelayValueP",
+       "constraints.validation.dependOn.EMSSceneDelayCode", "EMSSceneDelayCodeP",
+       "value.codeSystem", "2.16.840.1.113883.6.1",
+       "value.codeSystemName", "LOINC"
+       });																																																																																																																																																																																																																																														
+  }
+
+  /**
+   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSTransportDelayRelationship</b>.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  protected void createEmspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSTransportDelayRelationshipAnnotations()
+  {
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSTransportDelayRelationship";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																				
+    addAnnotation
+      (emsResponseSectionEClass, 
+       source, 
+       new String[] 
+       {
+       "constraints.validation.error", "EMSTransportDelayRelationshipEMSTransportDelay"
+       });																																																																																																																																																																																																																																													
+  }
+
+  /**
+   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSTransportDelayRelationshipEMSTransportDelay</b>.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  protected void createEmspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSTransportDelayRelationshipEMSTransportDelayAnnotations()
+  {
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSTransportDelayRelationshipEMSTransportDelay";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																					
+    addAnnotation
+      (emsResponseSectionEClass, 
+       source, 
+       new String[] 
+       {
+       "code.code", "67559-5",
+       "code.codeSystem", "2.16.840.1.113883.6.1",
+       "code.codeSystemName", "LOINC",
+       "code.displayName", "Transport delay",
+       "constraints.validation.error", "EMSTransportDelayCode EMSTransportDelayCodeP EMSTransportDelayValue EMSTransportDelayValueP",
+       "constraints.validation.dependOn.EMSTransportDelayCode", "EMSTransportDelayCodeP",
+       "value.codeSystem", "2.16.840.1.113883.6.1",
+       "value.codeSystemName", "LOINC"
+       });																																																																																																																																																																																																																																												
+  }
+
+  /**
+   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSTurnaoundDelayRelationship</b>.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  protected void createEmspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSTurnaoundDelayRelationshipAnnotations()
+  {
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSTurnaoundDelayRelationship";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																						
+    addAnnotation
+      (emsResponseSectionEClass, 
+       source, 
+       new String[] 
+       {
+       "constraints.validation.error", "EMSTurnaoundDelayRelationshipEMSTurnaroundDelay"
+       });																																																																																																																																																																																																																																											
+  }
+
+  /**
+   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSTurnaoundDelayRelationshipEMSTurnaroundDelay</b>.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  protected void createEmspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSTurnaoundDelayRelationshipEMSTurnaroundDelayAnnotations()
+  {
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDelayOrganizerEMSTurnaoundDelayRelationshipEMSTurnaroundDelay";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																							
+    addAnnotation
+      (emsResponseSectionEClass, 
+       source, 
+       new String[] 
+       {
+       "code.code", "67560-3",
+       "code.codeSystem", "2.16.840.1.113883.6.1",
+       "code.codeSystemName", "LOINC",
+       "code.displayName", "Turnaround delay",
+       "constraints.validation.error", "EMSTurnaroundDelayCode EMSTurnaroundDelayCodeP EMSTurnaroundDelayValue EMSTurnaroundDelayValueP",
+       "constraints.validation.dependOn.EMSTurnaroundDelayCode", "EMSTurnaroundDelayCodeP",
+       "value.codeSystem", "2.16.840.1.113883.6.1",
+       "value.codeSystemName", "LOINC"
+       });																																																																																																																																																																																																																																										
+  }
+
+  /**
+   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDispatchLocationOrganizer</b>.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  protected void createEmspcrEMSResponseSectionDerivedEntryEMSDispatchLocationOrganizerAnnotations()
+  {
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDispatchLocationOrganizer";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																								
+    addAnnotation
+      (emsResponseSectionEClass, 
+       source, 
+       new String[] 
+       {
+       "constraints.validation.info", "EMSDispatchLocationOrganizerEMSDispatchLocationNameRelationship EMSDispatchLocationOrganizerEMSDispatchLocationLatitudeRelationship EMSDispatchLocationOrganizerEMSDispatchLocationLongtudeRelationship"
+       });																																																																																																																																																																																																																																									
+  }
+
+  /**
+   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationNameRelationship</b>.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  protected void createEmspcrEMSResponseSectionDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationNameRelationshipAnnotations()
+  {
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationNameRelationship";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																									
+    addAnnotation
+      (emsResponseSectionEClass, 
+       source, 
+       new String[] 
+       {
+       "constraints.validation.error", "EMSDispatchLocationNameRelationshipTemplateId EMSDispatchLocationNameRelationshipEMSDispatchLocationName",
+       "templateId.root", "null"
+       });																																																																																																																																																																																																																																								
+  }
+
+  /**
+   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationNameRelationshipEMSDispatchLocationName</b>.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  protected void createEmspcrEMSResponseSectionDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationNameRelationshipEMSDispatchLocationNameAnnotations()
+  {
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationNameRelationshipEMSDispatchLocationName";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																										
+    addAnnotation
+      (emsResponseSectionEClass, 
+       source, 
+       new String[] 
+       {
+       "code.code", "69466-1",
+       "code.codeSystem", "2.16.840.1.113883.6.1",
+       "code.codeSystemName", "LOINC",
+       "code.displayName", "Dispatch Location Name",
+       "constraints.validation.error", "EMSDispatchLocationNameCode EMSDispatchLocationNameValue"
+       });																																																																																																																																																																																																																																							
+  }
+
+  /**
+   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationLatitudeRelationship</b>.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  protected void createEmspcrEMSResponseSectionDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationLatitudeRelationshipAnnotations()
+  {
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationLatitudeRelationship";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											
+    addAnnotation
+      (emsResponseSectionEClass, 
+       source, 
+       new String[] 
+       {
+       "constraints.validation.error", "EMSDispatchLocationLatitudeRelationshipTemplateId EMSDispatchLocationLatitudeRelationshipEMSDispatchLocationLatitude",
+       "templateId.root", "null"
+       });																																																																																																																																																																																																																																						
+  }
+
+  /**
+   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationLatitudeRelationshipEMSDispatchLocationLatitude</b>.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  protected void createEmspcrEMSResponseSectionDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationLatitudeRelationshipEMSDispatchLocationLatitudeAnnotations()
+  {
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationLatitudeRelationshipEMSDispatchLocationLatitude";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																												
+    addAnnotation
+      (emsResponseSectionEClass, 
+       source, 
+       new String[] 
+       {
+       "code.code", "52002-3",
+       "code.codeSystem", "2.16.840.1.113883.6.1",
+       "code.codeSystemName", "LOINC",
+       "code.displayName", "Dispatch Location Latitude",
+       "constraints.validation.error", "EMSDispatchLocationLatitudeCode EMSDispatchLocationLatitudeValue"
+       });																																																																																																																																																																																																																																					
+  }
+
+  /**
+   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationLongitudeRelationship</b>.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  protected void createEmspcrEMSResponseSectionDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationLongitudeRelationshipAnnotations()
+  {
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationLongitudeRelationship";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																													
+    addAnnotation
+      (emsResponseSectionEClass, 
+       source, 
+       new String[] 
+       {
+       "constraints.validation.error", "EMSDispatchLocationLongitudeRelationshipTemplateId EMSDispatchLocationLongitudeRelationshipObservation",
+       "templateId.root", "null"
+       });																																																																																																																																																																																																																																				
+  }
+
+  /**
+   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationLongitudeRelationshipEMSDispatchLocationLongitude</b>.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  protected void createEmspcrEMSResponseSectionDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationLongitudeRelationshipEMSDispatchLocationLongitudeAnnotations()
+  {
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSDispatchLocationOrganizerEMSDispatchLocationLongitudeRelationshipEMSDispatchLocationLongitude";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																														
+    addAnnotation
+      (emsResponseSectionEClass, 
+       source, 
+       new String[] 
+       {
+       "code.code", "52003-1",
+       "code.codeSystem", "2.16.840.1.113883.6.1",
+       "code.codeSystemName", "LOINC",
+       "code.displayName", "Dispatch Location Longitude",
+       "constraints.validation.error", "EMSDispatchLocationLongitudeCode EMSDispatchLocationLongitudeValue"
+       });																																																																																																																																																																																																																																			
+  }
+
+  /**
+   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizer</b>.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  protected void createEmspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizerAnnotations()
+  {
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizer";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																															
+    addAnnotation
+      (emsResponseSectionEClass, 
+       source, 
+       new String[] 
+       {
+       "constraints.validation.info", "EMSResponseOdometerReadingOrganizerEMSResponseBeginningOdometerReadingRelationship EMSResponseOdometerReadingOrganizerEMSResponseOnSceneOdometerReadingRelationship EMSResponseOdometerReadingOrganizerEMSResponseDestinationOdometerReadingRelationship EMSResponseOdometerReadingOrganizerEMSResponseEndingOdometerReadingRelationship"
+       });																																																																																																																																																																																																																																		
+  }
+
+  /**
+   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseBeginningOdometerReadingRelationship</b>.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  protected void createEmspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseBeginningOdometerReadingRelationshipAnnotations()
+  {
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseBeginningOdometerReadingRelationship";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																
+    addAnnotation
+      (emsResponseSectionEClass, 
+       source, 
+       new String[] 
+       {
+       "constraints.validation.error", "EMSResponseBeginningOdometerReadingRelationshipEMSResponseBeginningOdometerReading"
+       });																																																																																																																																																																																																																																	
+  }
+
+  /**
+   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseBeginningOdometerReadingRelationshipEMSResponseBeginningOdometerReading</b>.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  protected void createEmspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseBeginningOdometerReadingRelationshipEMSResponseBeginningOdometerReadingAnnotations()
+  {
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseBeginningOdometerReadingRelationshipEMSResponseBeginningOdometerReading";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																	
+    addAnnotation
+      (emsResponseSectionEClass, 
+       source, 
+       new String[] 
+       {
+       "code.code", "67484-6",
+       "code.codeSystem", "2.16.840.1.113883.6.1",
+       "code.codeSystemName", "LOINC",
+       "code.displayName", "EMS Response odometer beginning reading",
+       "constraints.validation.error", "EMSResponseBeginningOdometerReadingCode EMSResponseBeginningOdometerReadingCodeP EMSResponseBeginningOdometerReadingValue",
+       "constraints.validation.dependOn.EMSResponseBeginningOdometerReadingCode", "EMSResponseBeginningOdometerReadingCodeP"
+       });																																																																																																																																																																																																																																
+  }
+
+  /**
+   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseOnSceneOdometerReadingRelationship</b>.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  protected void createEmspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseOnSceneOdometerReadingRelationshipAnnotations()
+  {
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseOnSceneOdometerReadingRelationship";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																		
+    addAnnotation
+      (emsResponseSectionEClass, 
+       source, 
+       new String[] 
+       {
+       "constraints.validation.error", "EMSResponseOnSceneOdometerReadingRelationshipEMSResponseOnSceneOdometerReading"
+       });																																																																																																																																																																																																																															
+  }
+
+  /**
+   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseOnSceneOdometerReadingRelationshipEMSResponseOnSceneOdometerReading</b>.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  protected void createEmspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseOnSceneOdometerReadingRelationshipEMSResponseOnSceneOdometerReadingAnnotations()
+  {
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseOnSceneOdometerReadingRelationshipEMSResponseOnSceneOdometerReading";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																			
+    addAnnotation
+      (emsResponseSectionEClass, 
+       source, 
+       new String[] 
+       {
+       "code.code", "67485-3",
+       "code.codeSystem", "2.16.840.1.113883.6.1",
+       "code.codeSystemName", "LOINC",
+       "code.displayName", "EMS Response odometer on-scene reading",
+       "constraints.validation.error", "EMSResponseOnSceneOdometerReadingCode EMSResponseOnSceneOdometerReadingCodeP EMSResponseOnSceneOdometerReadingValue",
+       "constraints.validation.dependOn.EMSResponseOnSceneOdometerReadingCode", "EMSResponseOnSceneOdometerReadingCodeP"
+       });																																																																																																																																																																																																																														
+  }
+
+  /**
+   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseDestinationOdometerReadingRelationship</b>.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  protected void createEmspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseDestinationOdometerReadingRelationshipAnnotations()
+  {
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseDestinationOdometerReadingRelationship";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																				
+    addAnnotation
+      (emsResponseSectionEClass, 
+       source, 
+       new String[] 
+       {
+       "constraints.validation.error", "EMSResponseDestinationOdometerReadingRelationshipEMSResponseDestinationOdometerReading"
+       });																																																																																																																																																																																																																													
+  }
+
+  /**
+   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseDestinationOdometerReadingRelationshipEMSResponseDestinationOdometerReading</b>.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  protected void createEmspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseDestinationOdometerReadingRelationshipEMSResponseDestinationOdometerReadingAnnotations()
+  {
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseDestinationOdometerReadingRelationshipEMSResponseDestinationOdometerReading";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																					
+    addAnnotation
+      (emsResponseSectionEClass, 
+       source, 
+       new String[] 
+       {
+       "code.code", "67486-1",
+       "code.codeSystem", "2.16.840.1.113883.6.1",
+       "code.codeSystemName", "LOINC",
+       "code.displayName", "EMS Response odometer destination reading",
+       "constraints.validation.error", "EMSResponseDestinationOdometerReadingCode EMSResponseDestinationOdometerReadingCodeP EMSResponseDestinationOdometerReadingValue",
+       "constraints.validation.dependOn.EMSResponseDestinationOdometerReadingCode", "EMSResponseDestinationOdometerReadingCodeP"
+       });																																																																																																																																																																																																																												
+  }
+
+  /**
+   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseEndingOdometerReadingRelationship</b>.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  protected void createEmspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseEndingOdometerReadingRelationshipAnnotations()
+  {
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseEndingOdometerReadingRelationship";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																						
+    addAnnotation
+      (emsResponseSectionEClass, 
+       source, 
+       new String[] 
+       {
+       "constraints.validation.error", "EMSResponseEndingOdometerReadingRelationshipEMSResponseEndingOdometerReading"
+       });																																																																																																																																																																																																																											
+  }
+
+  /**
+   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseEndingOdometerReadingRelationshipEMSResponseEndingOdometerReading</b>.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  protected void createEmspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseEndingOdometerReadingRelationshipEMSResponseEndingOdometerReadingAnnotations()
+  {
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSResponseOdometerReadingOrganizerEMSResponseEndingOdometerReadingRelationshipEMSResponseEndingOdometerReading";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																							
+    addAnnotation
+      (emsResponseSectionEClass, 
+       source, 
+       new String[] 
+       {
+       "code.code", "67487-9",
+       "code.codeSystem", "2.16.840.1.113883.6.1",
+       "code.codeSystemName", "LOINC",
+       "code.displayName", "EMS Response odometer ending reading",
+       "constraints.validation.error", "EMSResponseEndingOdometerReadingCode EMSResponseEndingOdometerReadingCodeP EMSResponseEndingOdometerReadingValue",
+       "constraints.validation.dependOn.EMSResponseEndingOdometerReadingCode", "EMSResponseEndingOdometerReadingCodeP"
+       });																																																																																																																																																																																																																										
+  }
+
+  /**
+   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSResponseModeToScene</b>.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  protected void createEmspcrEMSResponseSectionDerivedEntryEMSResponseModeToSceneAnnotations()
+  {
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSResponseSectionDerivedEntryEMSResponseModeToScene";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																								
+    addAnnotation
+      (emsResponseSectionEClass, 
+       source, 
+       new String[] 
+       {
+       "code.code", "67482-0",
+       "code.codeSystem", "2.16.840.1.113883.6.1",
+       "code.codeSystemName", "LOINC",
+       "code.displayName", "Response mode to scene",
+       "constraints.validation.error", "EMSResponseModeToSceneCode EMSResponseModeToSceneCodeP EMSResponseModeToSceneValue EMSResponseModeToSceneValueP",
+       "constraints.validation.dependOn.EMSResponseModeToSceneCode", "EMSResponseModeToSceneCodeP",
+       "value.codeSystem", "2.16.840.1.113883.6.1",
+       "value.codeSystemName", "LOINC"
+       });																																																																																																																																																																																																																									
   }
 
   /**
@@ -7699,14 +7511,14 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSSituationSectionDerivedEntry1Annotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntry1";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																		
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntry1";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																														
     addAnnotation
       (emsSituationSectionEClass, 
        source, 
        new String[] 
        {
        "constraints.validation.info", "DerivedEntry1EMSComplaint"
-       });																																																																																																																																			
+       });																																																																																																																																																																																			
   }
 
   /**
@@ -7717,13 +7529,13 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSSituationSectionDerivedEntry1EMSComplaintAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntry1EMSComplaint";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																			
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntry1EMSComplaint";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																															
     addAnnotation
       (emsSituationSectionEClass, 
        source, 
        new String[] 
        {
-       "code.code", "10154?3",
+       "code.code", "10154-3",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "code.displayName", "EMS complaint",
@@ -7733,7 +7545,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "targetSiteCode.codeSystem", "2.16.840.1.113883.6.1",
        "targetSiteCode.codeSystemName", "LOINC",
        "constraints.validation.warning", "EMSComplaintTargetSiteCodeP EMSComplaintEMSComplaintOrganSystemRelationship"
-       });																																																																																																																																		
+       });																																																																																																																																																																																		
   }
 
   /**
@@ -7744,7 +7556,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSSituationSectionDerivedEntry1EMSComplaintEMSComplaintTypeRelationshipEMSComplaintTypeAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntry1EMSComplaintEMSComplaintTypeRelationshipEMSComplaintType";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																				
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntry1EMSComplaintEMSComplaintTypeRelationshipEMSComplaintType";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																
     addAnnotation
       (emsSituationSectionEClass, 
        source, 
@@ -7754,7 +7566,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "code.codeSystemName", "LOINC",
        "constraints.validation.error", "EMSComplaintTypeCode EMSComplaintTypeCodeP EMSComplaintTypeValue",
        "constraints.validation.dependOn.EMSComplaintTypeCode", "EMSComplaintTypeCodeP"
-       });																																																																																																																																	
+       });																																																																																																																																																																																	
   }
 
   /**
@@ -7765,19 +7577,19 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSSituationSectionDerivedEntry1EMSComplaintEMSComplaintDurationRelationshipEMSComplaintDurationAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntry1EMSComplaintEMSComplaintDurationRelationshipEMSComplaintDuration";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																					
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntry1EMSComplaintEMSComplaintDurationRelationshipEMSComplaintDuration";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																	
     addAnnotation
       (emsSituationSectionEClass, 
        source, 
        new String[] 
        {
-       "code.code", "67491?1",
+       "code.code", "67491-1",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "code.displayName", "Complaint duration",
        "constraints.validation.error", "EMSComplaintDurationCode EMSComplaintDurationCodeP EMSComplaintDurationValue",
        "constraints.validation.dependOn.EMSComplaintDurationCode", "EMSComplaintDurationCodeP"
-       });																																																																																																																																
+       });																																																																																																																																																																																
   }
 
   /**
@@ -7788,14 +7600,14 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSSituationSectionDerivedEntry1EMSComplaintEMSComplaintOrganSystemRelationshipAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntry1EMSComplaintEMSComplaintOrganSystemRelationship";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																						
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntry1EMSComplaintEMSComplaintOrganSystemRelationship";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																		
     addAnnotation
       (emsSituationSectionEClass, 
        source, 
        new String[] 
        {
        "constraints.validation.error", "EMSComplaintOrganSystemRelationshipEMSComplaintOrganSystem"
-       });																																																																																																																															
+       });																																																																																																																																																																															
   }
 
   /**
@@ -7806,13 +7618,13 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSSituationSectionDerivedEntry1EMSComplaintEMSComplaintOrganSystemRelationshipEMSComplaintOrganSystemAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntry1EMSComplaintEMSComplaintOrganSystemRelationshipEMSComplaintOrganSystem";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																							
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntry1EMSComplaintEMSComplaintOrganSystemRelationshipEMSComplaintOrganSystem";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																			
     addAnnotation
       (emsSituationSectionEClass, 
        source, 
        new String[] 
        {
-       "code.code", "69468?7",
+       "code.code", "69468-7",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "code.displayName", "Organ system",
@@ -7820,7 +7632,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "constraints.validation.dependOn.EMSComplaintOrganSystemCode", "EMSComplaintOrganSystemCodeP",
        "value.codeSystem", "2.16.840.1.113883.6.1",
        "value.codeSystemName", "LOINC"
-       });																																																																																																																														
+       });																																																																																																																																																																														
   }
 
   /**
@@ -7831,14 +7643,14 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSSituationSectionDerivedEntry2Annotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntry2";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																								
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntry2";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																				
     addAnnotation
       (emsSituationSectionEClass, 
        source, 
        new String[] 
        {
        "constraints.validation.error", "DerivedEntry2EMSSituationOnset"
-       });																																																																																																																													
+       });																																																																																																																																																																													
   }
 
   /**
@@ -7849,7 +7661,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSSituationSectionDerivedEntry2EMSSituationOnsetTimeAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntry2EMSSituationOnsetTime";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																									
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntry2EMSSituationOnsetTime";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																					
     addAnnotation
       (emsSituationSectionEClass, 
        source, 
@@ -7860,7 +7672,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "code.codeSystemName", "LOINC",
        "constraints.validation.error", "EMSSituationOnsetTimeCode EMSSituationOnsetTimeCodeP EMSSituationOnsetTimeValue",
        "constraints.validation.dependOn.EMSSituationOnsetTimeCode", "EMSSituationOnsetTimeCodeP"
-       });																																																																																																																												
+       });																																																																																																																																																																												
   }
 
   /**
@@ -7871,14 +7683,14 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSSituationSectionDerivedEntry3Annotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntry3";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																										
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntry3";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																						
     addAnnotation
       (emsSituationSectionEClass, 
        source, 
        new String[] 
        {
        "constraints.validation.error", "DerivedEntry3EMSPossibleInjury"
-       });																																																																																																																											
+       });																																																																																																																																																																											
   }
 
   /**
@@ -7889,19 +7701,19 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSSituationSectionDerivedEntry3EMSPossibleInjuryAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntry3EMSPossibleInjury";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntry3EMSPossibleInjury";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																							
     addAnnotation
       (emsSituationSectionEClass, 
        source, 
        new String[] 
        {
-       "code.code", "69467?9",
+       "code.code", "69467-9",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "code.displayName", "Possible injury",
        "constraints.validation.error", "EMSPossibleInjuryCode EMSPossibleInjuryCodeP EMSPossibleInjuryValue",
        "constraints.validation.dependOn.EMSPossibleInjuryCode", "EMSPossibleInjuryCodeP"
-       });																																																																																																																										
+       });																																																																																																																																																																										
   }
 
   /**
@@ -7912,14 +7724,14 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSSituationSectionDerivedEntry4Annotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntry4";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																												
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntry4";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																								
     addAnnotation
       (emsSituationSectionEClass, 
        source, 
        new String[] 
        {
        "constraints.validation.error", "DerivedEntry4EMSProviderPrimaryImpression"
-       });																																																																																																																									
+       });																																																																																																																																																																									
   }
 
   /**
@@ -7930,20 +7742,20 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSSituationSectionDerivedEntry4EMSProviderPrimaryImpressionAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntry4EMSProviderPrimaryImpression";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																													
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntry4EMSProviderPrimaryImpression";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																									
     addAnnotation
       (emsSituationSectionEClass, 
        source, 
        new String[] 
        {
-       "code.code", "67492?9",
+       "code.code", "67492-9",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "code.displayName", "Provider Primary Impression",
        "constraints.validation.error", "EMSProviderPrimaryImpressionCode EMSProviderPrimaryImpressionCodeP EMSProviderPrimaryImpressionValue EMSProviderPrimaryImpressionValueP",
        "constraints.validation.dependOn.EMSProviderPrimaryImpressionCode", "EMSProviderPrimaryImpressionCodeP",
        "value.code", "ADD ICD10 CM"
-       });																																																																																																																								
+       });																																																																																																																																																																								
   }
 
   /**
@@ -7954,14 +7766,15 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSSituationSectionDerivedEntryAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntry";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																														
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntry";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																										
     addAnnotation
       (emsSituationSectionEClass, 
        source, 
        new String[] 
        {
-       "constraints.validation.error", "DerivedEntryEMSInitialPatientAcuity"
-       });																																																																																																																							
+       "constraints.validation.error", "DerivedEntryEMSInitialPatientAcuity",
+       "constraints.validation.info", "DerivedEntryEMSProviderSecondaryImpressions"
+       });																																																																																																																																																																							
   }
 
   /**
@@ -7972,20 +7785,20 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSSituationSectionDerivedEntryEMSPrimarySymptomAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntryEMSPrimarySymptom";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																															
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntryEMSPrimarySymptom";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											
     addAnnotation
       (emsSituationSectionEClass, 
        source, 
        new String[] 
        {
-       "code.code", "67774?0",
+       "code.code", "67774-0",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "code.displayName", "EMS Primary Symptom",
        "constraints.validation.error", "EMSPrimarySymptomCode EMSPrimarySymptomCodeP EMSPrimarySymptomValue EMSPrimarySymptomValueP",
        "constraints.validation.dependOn.EMSPrimarySymptomCode", "EMSPrimarySymptomCodeP",
        "value.code", "ADD ICD 10"
-       });																																																																																																																						
+       });																																																																																																																																																																						
   }
 
   /**
@@ -7996,20 +7809,20 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSSituationSectionDerivedEntryEMSOtherSymptomsAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntryEMSOtherSymptoms";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntryEMSOtherSymptoms";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																												
     addAnnotation
       (emsSituationSectionEClass, 
        source, 
        new String[] 
        {
-       "code.code", "67776?5",
+       "code.code", "67776-5",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "code.displayName", "Other symptoms",
        "constraints.validation.error", "EMSOtherSymptomsCode EMSOtherSymptomsCodeP EMSOtherSymptomsValue EMSOtherSymptomsValueP",
        "constraints.validation.dependOn.EMSOtherSymptomsCode", "EMSOtherSymptomsCodeP",
        "value.code", "ADD ICD-10 CM"
-       });																																																																																																																					
+       });																																																																																																																																																																					
   }
 
   /**
@@ -8020,7 +7833,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSSituationSectionDerivedEntryEMSProviderSecondaryImpressionsAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntryEMSProviderSecondaryImpressions";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																	
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntryEMSProviderSecondaryImpressions";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																													
     addAnnotation
       (emsSituationSectionEClass, 
        source, 
@@ -8033,7 +7846,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "constraints.validation.error", "EMSProviderSecondaryImpressionsCode EMSProviderSecondaryImpressionsCodeP EMSProviderSecondaryImpressionsValue EMSProviderSecondaryImpressionsValueP",
        "constraints.validation.dependOn.EMSProviderSecondaryImpressionsCode", "EMSProviderSecondaryImpressionsCodeP",
        "value.code", "ADD ICD 10 CM"
-       });																																																																																																																				
+       });																																																																																																																																																																				
   }
 
   /**
@@ -8044,13 +7857,13 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSSituationSectionDerivedEntryEMSInitialPatientAcuityAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntryEMSInitialPatientAcuity";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																		
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSSituationSectionDerivedEntryEMSInitialPatientAcuity";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																														
     addAnnotation
       (emsSituationSectionEClass, 
        source, 
        new String[] 
        {
-       "code.code", "67493?7",
+       "code.code", "67493-7",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "code.displayName", "Initial Patient Acuity",
@@ -8058,7 +7871,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "constraints.validation.dependOn.EMSInitialPatientAcuityCode", "EMSInitialPatientAcuityCodeP",
        "value.codeSystem", "2.16.840.1.113883.6.1",
        "value.codeSystemName", "LOINC"
-       });																																																																																																																			
+       });																																																																																																																																																																			
   }
 
   /**
@@ -8069,14 +7882,14 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSTimesSectionDerivedEntryAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSTimesSectionDerivedEntry";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																								
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSTimesSectionDerivedEntry";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																				
     addAnnotation
       (emsTimesSectionEClass, 
        source, 
        new String[] 
        {
        "constraints.validation.error", "DerivedEntryEMSDispatchNotifiedTime"
-       });																																																													
+       });																																																																																																													
   }
 
   /**
@@ -8087,19 +7900,19 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSTimesSectionDerivedEntryEMSCallTimeAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSTimesSectionDerivedEntryEMSCallTime";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																									
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSTimesSectionDerivedEntryEMSCallTime";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																					
     addAnnotation
       (emsTimesSectionEClass, 
        source, 
        new String[] 
        {
-       "code.code", "69469?5",
+       "code.code", "69469-5",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "code.displayName", "Call time",
        "constraints.validation.error", "EMSCallTimeCode EMSCallTimeCodeP EMSCallTimeValue",
        "constraints.validation.dependOn.EMSCallTimeCode", "EMSCallTimeCodeP"
-       });																																																												
+       });																																																																																																												
   }
 
   /**
@@ -8110,19 +7923,19 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSTimesSectionDerivedEntryEMSUnitNotifiedTimeAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSTimesSectionDerivedEntryEMSUnitNotifiedTime";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																										
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSTimesSectionDerivedEntryEMSUnitNotifiedTime";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																						
     addAnnotation
       (emsTimesSectionEClass, 
        source, 
        new String[] 
        {
-       "code.code", "69471?1",
+       "code.code", "69471-1",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "code.displayName", "Unit notified time",
        "constraints.validation.error", "EMSUnitNotifiedTimeCode EMSUnitNotifiedTimeCodeP EMSUnitNotifiedTimeValue",
        "constraints.validation.dependOn.EMSUnitNotifiedTimeCode", "EMSUnitNotifiedTimeCodeP"
-       });																																																											
+       });																																																																																																											
   }
 
   /**
@@ -8133,19 +7946,19 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSTimesSectionDerivedEntryEMSUnitEnRouteTimeAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSTimesSectionDerivedEntryEMSUnitEnRouteTime";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSTimesSectionDerivedEntryEMSUnitEnRouteTime";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																							
     addAnnotation
       (emsTimesSectionEClass, 
        source, 
        new String[] 
        {
-       "code.code", "69472?9",
+       "code.code", "69472-9",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "code.displayName", "Unit en route time",
        "constraints.validation.error", "EMSUnitEnRouteTimeCode EMSUnitEnRouteTimeCodeP EMSUnitEnRouteTimeValue",
        "constraints.validation.dependOn.EMSUnitEnRouteTimeCode", "EMSUnitEnRouteTimeCodeP"
-       });																																																										
+       });																																																																																																										
   }
 
   /**
@@ -8156,19 +7969,19 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSTimesSectionDerivedEntryEMSUnitOnSceneTimeAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSTimesSectionDerivedEntryEMSUnitOnSceneTime";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																												
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSTimesSectionDerivedEntryEMSUnitOnSceneTime";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																								
     addAnnotation
       (emsTimesSectionEClass, 
        source, 
        new String[] 
        {
-       "code.code", "69473?7",
+       "code.code", "69473-7",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "code.displayName", "Unit on scene time",
        "constraints.validation.error", "EMSUnitOnSceneTimeCode EMSUnitOnSceneTimeCodeP EMSUnitOnSceneTimeValue",
        "constraints.validation.dependOn.EMSUnitOnSceneTimeCode", "EMSUnitOnSceneTimeCodeP"
-       });																																																									
+       });																																																																																																									
   }
 
   /**
@@ -8179,19 +7992,19 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSTimesSectionDerivedEntryEMSUnitAtPatienttTimeAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSTimesSectionDerivedEntryEMSUnitAtPatienttTime";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																													
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSTimesSectionDerivedEntryEMSUnitAtPatienttTime";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																									
     addAnnotation
       (emsTimesSectionEClass, 
        source, 
        new String[] 
        {
-       "code.code", "69474?5",
+       "code.code", "69474-5",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "code.displayName", "Unit at patient time",
        "constraints.validation.error", "EMSUnitAtPatienttTimeCode EMSUnitAtPatienttTimeCodeP EMSUnitAtPatienttTimeValue",
        "constraints.validation.dependOn.EMSUnitAtPatienttTimeCode", "EMSUnitAtPatienttTimeCodeP"
-       });																																																								
+       });																																																																																																								
   }
 
   /**
@@ -8202,19 +8015,19 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSTimesSectionDerivedEntryEMSUnitLeftSceneTimeAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSTimesSectionDerivedEntryEMSUnitLeftSceneTime";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																														
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSTimesSectionDerivedEntryEMSUnitLeftSceneTime";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																										
     addAnnotation
       (emsTimesSectionEClass, 
        source, 
        new String[] 
        {
-       "code.code", "69475?2",
+       "code.code", "69475-2",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "code.displayName", "Unit left scene time",
        "constraints.validation.error", "EMSUnitLeftSceneTimeCode EMSUnitLeftSceneTimeCodeP EMSUnitLeftSceneTimeValue",
        "constraints.validation.dependOn.EMSUnitLeftSceneTimeCode", "EMSUnitLeftSceneTimeCodeP"
-       });																																																							
+       });																																																																																																							
   }
 
   /**
@@ -8225,19 +8038,19 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSTimesSectionDerivedEntryEMSPatientArrivedAtDestinationTimeAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSTimesSectionDerivedEntryEMSPatientArrivedAtDestinationTime";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																															
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSTimesSectionDerivedEntryEMSPatientArrivedAtDestinationTime";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											
     addAnnotation
       (emsTimesSectionEClass, 
        source, 
        new String[] 
        {
-       "code.code", "69476?0",
+       "code.code", "69476-0",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "code.displayName", "Patient arrived at destination time",
        "constraints.validation.error", "EMSPatientArrivedAtDestinationTimeCode EMSPatientArrivedAtDestinationTimeCodeP EMSPatientArrivedAtDestinationTimeValue",
        "constraints.validation.dependOn.EMSPatientArrivedAtDestinationTimeCode", "EMSPatientArrivedAtDestinationTimeCodeP"
-       });																																																						
+       });																																																																																																						
   }
 
   /**
@@ -8248,19 +8061,19 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSTimesSectionDerivedEntryEMSUnitBackInServiceTimeAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSTimesSectionDerivedEntryEMSUnitBackInServiceTime";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSTimesSectionDerivedEntryEMSUnitBackInServiceTime";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																												
     addAnnotation
       (emsTimesSectionEClass, 
        source, 
        new String[] 
        {
-       "code.code", "69477?8",
+       "code.code", "69477-8",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "code.displayName", "Unit back in service time",
        "constraints.validation.error", "EMSUnitBackInServiceTimeCode EMSUnitBackInServiceTimeCodeP EMSUnitBackInServiceTimeValue",
        "constraints.validation.dependOn.EMSUnitBackInServiceTimeCode", "EMSUnitBackInServiceTimeCodeP"
-       });																																																					
+       });																																																																																																					
   }
 
   /**
@@ -8271,19 +8084,523 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
    */
   protected void createEmspcrEMSTimesSectionDerivedEntryEMSDispatchNotifiedTimeAnnotations()
   {
-    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSTimesSectionDerivedEntryEMSDispatchNotifiedTime";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																	
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSTimesSectionDerivedEntryEMSDispatchNotifiedTime";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																													
     addAnnotation
       (emsTimesSectionEClass, 
        source, 
        new String[] 
        {
-       "code.code", "69470?3",
+       "code.code", "69470-3",
        "code.codeSystem", "2.16.840.1.113883.6.1",
        "code.codeSystemName", "LOINC",
        "code.displayName", "Dispatch notified time",
        "constraints.validation.error", "EMSDispatchNotifiedTimeCode EMSDispatchNotifiedTimeCodeP EMSDispatchNotifiedTimeValue",
        "constraints.validation.dependOn.EMSDispatchNotifiedTimeCode", "EMSDispatchNotifiedTimeCodeP"
-       });																																																				
+       });																																																																																																				
+  }
+
+  /**
+   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntry</b>.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  protected void createEmspcrEMSVitalSignsSectionDerivedEntryAnnotations()
+  {
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntry";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																			
+    addAnnotation
+      (emsVitalSignsSectionEClass, 
+       source, 
+       new String[] 
+       {
+       "constraints.validation.error", "DerivedEntryEMSVitalSignsOrganizer"
+       });																																														
+  }
+
+  /**
+   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizer</b>.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  protected void createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerAnnotations()
+  {
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizer";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																				
+    addAnnotation
+      (emsVitalSignsSectionEClass, 
+       source, 
+       new String[] 
+       {
+       "constraints.validation.error", "EMSVitalSignsOrganizerEffectiveTime EMSVitalSignsOrganizerEMSPriorAidVitals EMSVitalSignsOrganizerEMSCardiacRhythm EMSVitalSignsOrganizerEMSSystolicBloodPressure EMSVitalSignsOrganizerEMSRespiratoryRate EMSVitalSignsOrganizerEMSOxygenSaturation EMSVitalSignsOrganizerEMSCarbonDioxide EMSVitalSignsOrganizerEMSBloodGlucose EMSVitalSignsOrganizerEMSLevelOfResponsiveness EMSVitalSignsOrganizerEMSPainScore EMSVitalSignsOrganizerEMSStrokeScore EMSVitalSignsOrganizerEMSGlasgowComaScore",
+       "constraints.validation.info", "EMSVitalSignsOrganizerEMSDiastolicBloodPressure EMSVitalSignsOrganizerEMSBodyTemperature EMSVitalSignsOrganizerEMSCarbonMonoxide",
+       "constraints.validation.warning", "EMSVitalSignsOrganizerEMSHeartRate"
+       });																																													
+  }
+
+  /**
+   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSPriorAidVitals</b>.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  protected void createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSPriorAidVitalsAnnotations()
+  {
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSPriorAidVitals";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																					
+    addAnnotation
+      (emsVitalSignsSectionEClass, 
+       source, 
+       new String[] 
+       {
+       "code.code", "67518-1",
+       "code.codeSystem", "2.16.840.1.113883.6.1",
+       "code.codeSystemName", "LOINC",
+       "code.displayName", "Obtained prior to units EMS care",
+       "constraints.validation.error", "EMSPriorAidVitalsCode"
+       });																																												
+  }
+
+  /**
+   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSCardiacRhythm</b>.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  protected void createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSCardiacRhythmAnnotations()
+  {
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSCardiacRhythm";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																						
+    addAnnotation
+      (emsVitalSignsSectionEClass, 
+       source, 
+       new String[] 
+       {
+       "code.code", "67519-9",
+       "code.codeSystem", "2.16.840.1.113883.6.1",
+       "code.codeSystemName", "LOINC",
+       "code.displayName", "Cardiac rhythm",
+       "constraints.validation.error", "EMSCardiacRhythmCode EMSCardiacRhythmCodeP EMSCardiacRhythmMethodCode EMSCardiacRhythmMethodCodeP EMSCardiacRhythmValue EMSCardiacRhythmValueP",
+       "constraints.validation.dependOn.EMSCardiacRhythmCode", "EMSCardiacRhythmCodeP",
+       "methodCode.codeSystem", "2.16.840.1.113883.6.1",
+       "methodCode.codeSystemName", "LOINC",
+       "value.codeSystem", "2.16.840.1.113883.6.1",
+       "value.codeSystemName", "LOINC"
+       });																																											
+  }
+
+  /**
+   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSSystolicBloodPressure</b>.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  protected void createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSSystolicBloodPressureAnnotations()
+  {
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSSystolicBloodPressure";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																							
+    addAnnotation
+      (emsVitalSignsSectionEClass, 
+       source, 
+       new String[] 
+       {
+       "code.code", "8480-6",
+       "code.codeSystem", "2.16.840.1.113883.6.1",
+       "code.codeSystemName", "LOINC",
+       "code.displayName", "Intravascular systolic",
+       "constraints.validation.error", "EMSSystolicBloodPressureCode EMSSystolicBloodPressureValue"
+       });																																										
+  }
+
+  /**
+   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSDiastolicBloodPressure</b>.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  protected void createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSDiastolicBloodPressureAnnotations()
+  {
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSDiastolicBloodPressure";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																								
+    addAnnotation
+      (emsVitalSignsSectionEClass, 
+       source, 
+       new String[] 
+       {
+       "code.code", "8462-4",
+       "code.codeSystem", "2.16.840.1.113883.6.1",
+       "code.codeSystemName", "LOINC",
+       "code.displayName", "Intravascular diastolic",
+       "constraints.validation.error", "EMSDiastolicBloodPressureCode EMSDiastolicBloodPressureValue"
+       });																																									
+  }
+
+  /**
+   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSHeartRate</b>.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  protected void createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSHeartRateAnnotations()
+  {
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSHeartRate";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																									
+    addAnnotation
+      (emsVitalSignsSectionEClass, 
+       source, 
+       new String[] 
+       {
+       "code.code", "8867-4",
+       "code.codeSystem", "2.16.840.1.113883.6.1",
+       "code.codeSystemName", "LOINC",
+       "code.displayName", "Heart rate",
+       "constraints.validation.error", "EMSHeartRateCode EMSHeartRateCodeP EMSHeartRateValue",
+       "constraints.validation.dependOn.EMSHeartRateCode", "EMSHeartRateCodeP"
+       });																																								
+  }
+
+  /**
+   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSRespiratoryRate</b>.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  protected void createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSRespiratoryRateAnnotations()
+  {
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSRespiratoryRate";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																										
+    addAnnotation
+      (emsVitalSignsSectionEClass, 
+       source, 
+       new String[] 
+       {
+       "code.code", "9279-1",
+       "code.codeSystem", "2.16.840.1.113883.6.1",
+       "code.codeSystemName", "LOINC",
+       "code.displayName", "Breaths",
+       "constraints.validation.error", "EMSRespiratoryRateCode EMSRespiratoryRateValue"
+       });																																							
+  }
+
+  /**
+   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSBodyTemperature</b>.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  protected void createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSBodyTemperatureAnnotations()
+  {
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSBodyTemperature";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																											
+    addAnnotation
+      (emsVitalSignsSectionEClass, 
+       source, 
+       new String[] 
+       {
+       "code.code", "8310-5",
+       "code.codeSystem", "2.16.840.1.113883.6.1",
+       "code.codeSystemName", "LOINC",
+       "code.displayName", "Body temperature",
+       "constraints.validation.error", "EMSBodyTemperatureCode EMSBodyTemperatureValue"
+       });																																						
+  }
+
+  /**
+   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSOxygenSaturation</b>.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  protected void createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSOxygenSaturationAnnotations()
+  {
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSOxygenSaturation";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																												
+    addAnnotation
+      (emsVitalSignsSectionEClass, 
+       source, 
+       new String[] 
+       {
+       "code.code", "2710-2",
+       "code.codeSystem", "2.16.840.1.113883.6.1",
+       "code.codeSystemName", "LOINC",
+       "code.displayName", "Oxygen saturation",
+       "constraints.validation.error", "EMSOxygenSaturationCode EMSOxygenSaturationValue"
+       });																																					
+  }
+
+  /**
+   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSCarbonDioxide</b>.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  protected void createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSCarbonDioxideAnnotations()
+  {
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSCarbonDioxide";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																													
+    addAnnotation
+      (emsVitalSignsSectionEClass, 
+       source, 
+       new String[] 
+       {
+       "code.code", "19889-5",
+       "code.codeSystem", "2.16.840.1.113883.6.1",
+       "code.codeSystemName", "LOINC",
+       "code.displayName", "Carbon dioxide/Gas.total.at end expiration",
+       "constraints.validation.error", "EMSCarbonDioxideCode EMSCarbonDioxideCodeP EMSCarbonDioxideValue",
+       "constraints.validation.dependOn.EMSCarbonDioxideCode", "EMSCarbonDioxideCodeP"
+       });																																				
+  }
+
+  /**
+   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSCarbonMonoxide</b>.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  protected void createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSCarbonMonoxideAnnotations()
+  {
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSCarbonMonoxide";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																														
+    addAnnotation
+      (emsVitalSignsSectionEClass, 
+       source, 
+       new String[] 
+       {
+       "code.code", "19911-7",
+       "code.codeSystem", "2.16.840.1.113883.6.1",
+       "code.codeSystemName", "LOINC",
+       "code.displayName", "Diffusion capacity.carbon monoxide",
+       "constraints.validation.error", "EMSCarbonMonoxideCode EMSCarbonMonoxideCodeP EMSCarbonMonoxideValue",
+       "constraints.validation.dependOn.EMSCarbonMonoxideCode", "EMSCarbonMonoxideCodeP"
+       });																																			
+  }
+
+  /**
+   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSBloodGlucose</b>.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  protected void createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSBloodGlucoseAnnotations()
+  {
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSBloodGlucose";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																															
+    addAnnotation
+      (emsVitalSignsSectionEClass, 
+       source, 
+       new String[] 
+       {
+       "code.code", "2339-0",
+       "code.codeSystem", "2.16.840.1.113883.6.1",
+       "code.codeSystemName", "LOINC",
+       "code.displayName", "Glucose",
+       "constraints.validation.error", "EMSBloodGlucoseCode EMSBloodGlucoseCodeP EMSBloodGlucoseValue",
+       "constraints.validation.dependOn.EMSBloodGlucoseCode", "EMSBloodGlucoseCodeP"
+       });																																		
+  }
+
+  /**
+   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSLevelOfResponsiveness</b>.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  protected void createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSLevelOfResponsivenessAnnotations()
+  {
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSLevelOfResponsiveness";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																
+    addAnnotation
+      (emsVitalSignsSectionEClass, 
+       source, 
+       new String[] 
+       {
+       "code.code", "67775-7",
+       "code.codeSystem", "2.16.840.1.113883.6.1",
+       "code.codeSystemName", "LOINC",
+       "code.displayName", "Level of responsiveness",
+       "constraints.validation.error", "EMSLevelOfResponsivenessCode EMSLevelOfResponsivenessCodeP EMSLevelOfResponsivenessValue EMSLevelOfResponsivenessValueP",
+       "constraints.validation.dependOn.EMSLevelOfResponsivenessCode", "EMSLevelOfResponsivenessCodeP",
+       "value.codeSystem", "2.16.840.1.113883.6.1",
+       "value.codeSystemName", "LOINC"
+       });																																	
+  }
+
+  /**
+   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSPainScore</b>.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  protected void createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSPainScoreAnnotations()
+  {
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSPainScore";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																	
+    addAnnotation
+      (emsVitalSignsSectionEClass, 
+       source, 
+       new String[] 
+       {
+       "code.code", "56840-2",
+       "code.codeSystem", "2.16.840.1.113883.6.1",
+       "code.codeSystemName", "LOINC",
+       "code.displayName", "Pain severity verbal numeric scale",
+       "constraints.validation.error", "EMSPainScoreCode"
+       });																																
+  }
+
+  /**
+   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSStrokeScore</b>.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  protected void createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSStrokeScoreAnnotations()
+  {
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSStrokeScore";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																		
+    addAnnotation
+      (emsVitalSignsSectionEClass, 
+       source, 
+       new String[] 
+       {
+       "code.code", "67520-7",
+       "code.codeSystem", "2.16.840.1.113883.6.1",
+       "code.codeSystemName", "LOINC",
+       "code.displayName", "Stroke scale overall interpretation",
+       "constraints.validation.error", "EMSStrokeScoreCode EMSStrokeScoreCodeP EMSStrokeScoreValue EMSStrokeScoreMethodCode EMSStrokeScoreMethodCodeP",
+       "constraints.validation.dependOn.EMSStrokeScoreCode", "EMSStrokeScoreCodeP",
+       "methodCode.codeSystem", "2.16.840.1.113883.6.1",
+       "methodCode.codeSystemName", "LOINC"
+       });																															
+  }
+
+  /**
+   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScore</b>.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  protected void createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScoreAnnotations()
+  {
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScore";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																			
+    addAnnotation
+      (emsVitalSignsSectionEClass, 
+       source, 
+       new String[] 
+       {
+       "constraints.validation.error", "EMSGlasgowComaScoreEMSGlasgowEye EMSGlasgowComaScoreEMSGlasgowMotor EMSGlasgowComaScoreEMSGlasgowVerbal",
+       "constraints.validation.info", "EMSGlasgowComaScoreEMSGlasgowQualifier",
+       "constraints.validation.warning", "EMSGlasgowComaScoreEMSGlasgowTotal"
+       });																														
+  }
+
+  /**
+   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScoreEMSGlasgowTotal</b>.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  protected void createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScoreEMSGlasgowTotalAnnotations()
+  {
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScoreEMSGlasgowTotal";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																				
+    addAnnotation
+      (emsVitalSignsSectionEClass, 
+       source, 
+       new String[] 
+       {
+       "code.code", "9269-2",
+       "code.codeSystem", "2.16.840.1.113883.6.1",
+       "code.codeSystemName", "LOINC",
+       "code.displayName", "Glasgow coma score.total",
+       "constraints.validation.error", "EMSGlasgowTotalCode EMSGlasgowTotalCodeP EMSGlasgowTotalValue",
+       "constraints.validation.dependOn.EMSGlasgowTotalCode", "EMSGlasgowTotalCodeP"
+       });																													
+  }
+
+  /**
+   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScoreEMSGlasgowQualifier</b>.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  protected void createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScoreEMSGlasgowQualifierAnnotations()
+  {
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScoreEMSGlasgowQualifier";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																					
+    addAnnotation
+      (emsVitalSignsSectionEClass, 
+       source, 
+       new String[] 
+       {
+       "code.code", "55285-1",
+       "code.codeSystem", "2.16.840.1.113883.6.1",
+       "code.codeSystemName", "LOINC",
+       "code.displayName", "Glasgow coma score special circumstances",
+       "constraints.validation.error", "EMSGlasgowQualifierCode EMSGlasgowQualifierCodeP",
+       "constraints.validation.dependOn.EMSGlasgowQualifierCode", "EMSGlasgowQualifierCodeP",
+       "constraints.validation.info", "EMSGlasgowQualifierValue"
+       });																												
+  }
+
+  /**
+   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScoreEMSGlasgowEye</b>.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  protected void createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScoreEMSGlasgowEyeAnnotations()
+  {
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScoreEMSGlasgowEye";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																						
+    addAnnotation
+      (emsVitalSignsSectionEClass, 
+       source, 
+       new String[] 
+       {
+       "code.code", "9267-6",
+       "code.codeSystem", "2.16.840.1.113883.6.1",
+       "code.codeSystemName", "LOINC",
+       "code.displayName", "Glasgow coma score.eye opening",
+       "constraints.validation.error", "EMSGlasgowEyeCode EMSGlasgowEyeCodeP EMSGlasgowEyeValue EMSGlasgowEyeValueP",
+       "constraints.validation.dependOn.EMSGlasgowEyeCode", "EMSGlasgowEyeCodeP",
+       "value.codeSystem", "2.16.840.1.113883.6.1",
+       "value.codeSystemName", "LOINC"
+       });																											
+  }
+
+  /**
+   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScoreEMSGlasgowMotor</b>.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  protected void createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScoreEMSGlasgowMotorAnnotations()
+  {
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScoreEMSGlasgowMotor";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																							
+    addAnnotation
+      (emsVitalSignsSectionEClass, 
+       source, 
+       new String[] 
+       {
+       "constraints.validation.error", "EMSGlasgowMotorTemplateId EMSGlasgowMotorCode EMSGlasgowMotorCodeP EMSGlasgowMotorValue EMSGlasgowMotorValueP",
+       "templateId.root", "null",
+       "code.code", "9268-4",
+       "code.codeSystem", "2.16.840.1.113883.6.1",
+       "code.codeSystemName", "LOINC",
+       "code.displayName", "Glasgow coma score.motor",
+       "constraints.validation.dependOn.EMSGlasgowMotorCode", "EMSGlasgowMotorCodeP",
+       "value.codeSystem", "2.16.840.1.113883.6.1",
+       "value.codeSystemName", "LOINC"
+       });																										
+  }
+
+  /**
+   * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScoreEMSGlasgowVerbal</b>.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  protected void createEmspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScoreEMSGlasgowVerbalAnnotations()
+  {
+    String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSVitalSignsSectionDerivedEntryEMSVitalSignsOrganizerEMSGlasgowComaScoreEMSGlasgowVerbal";																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																								
+    addAnnotation
+      (emsVitalSignsSectionEClass, 
+       source, 
+       new String[] 
+       {
+       "code.code", "9270-0",
+       "code.codeSystem", "2.16.840.1.113883.6.1",
+       "code.codeSystemName", "LOINC",
+       "code.displayName", "Glasgow coma score.verbal",
+       "constraints.validation.error", "EMSGlasgowVerbalCode EMSGlasgowVerbalCodeP EMSGlasgowVerbalValue EMSGlasgowVerbalValueP",
+       "constraints.validation.dependOn.EMSGlasgowVerbalCode", "EMSGlasgowVerbalCodeP",
+       "value.codeSystem", "2.16.840.1.113883.6.1",
+       "value.codeSystemName", "LOINC"
+       });																									
   }
 
 } //EmspcrPackageImpl

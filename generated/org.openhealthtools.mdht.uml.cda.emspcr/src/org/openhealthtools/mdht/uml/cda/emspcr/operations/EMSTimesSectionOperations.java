@@ -23,6 +23,8 @@ import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPlugin;
 
 import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
 
+import org.openhealthtools.mdht.uml.cda.operations.SectionOperations;
+
 /**
  * <!-- begin-user-doc -->
  * A static utility class that provides operations related to '<em><b>EMS Times Section</b></em>' model objects.
@@ -49,7 +51,7 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  *
  * @generated
  */
-public class EMSTimesSectionOperations extends DerivedCDASectionOperations
+public class EMSTimesSectionOperations extends SectionOperations
 {
   /**
    * <!-- begin-user-doc -->
@@ -273,7 +275,7 @@ public class EMSTimesSectionOperations extends DerivedCDASectionOperations
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_EMS_TIMES_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (self.title.getText() = 'EMS Times')";
+  protected static final String VALIDATE_EMS_TIMES_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined() and self.title.getText() = 'EMS Times')";
 
   /**
    * The cached OCL invariant for the '{@link #validateEMSTimesSectionTitle(EMSTimesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Times Section Title</em>}' invariant operation.
@@ -291,7 +293,7 @@ public class EMSTimesSectionOperations extends DerivedCDASectionOperations
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (self.title.getText() = 'EMS Times')
+   * (self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined() and self.title.getText() = 'EMS Times')
    * @param emsTimesSection The receiving '<em><b>EMS Times Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.

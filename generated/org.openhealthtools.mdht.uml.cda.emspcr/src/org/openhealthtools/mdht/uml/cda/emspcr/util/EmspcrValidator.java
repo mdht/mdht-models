@@ -97,12 +97,20 @@ public class EmspcrValidator extends EObjectValidator
   public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_TITLE = 6;
 
   /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Care Report Author' of 'Patient Care Report'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_AUTHOR = 7;
+
+  /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Care Report Record Target' of 'Patient Care Report'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_RECORD_TARGET = 7;
+  public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_RECORD_TARGET = 8;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Care Report Human Author' of 'Patient Care Report'.
@@ -110,7 +118,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_HUMAN_AUTHOR = 8;
+  public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_HUMAN_AUTHOR = 9;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Care Report Component Of' of 'Patient Care Report'.
@@ -118,7 +126,111 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_COMPONENT_OF = 9;
+  public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_COMPONENT_OF = 23;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Care Report EMS Dispatch Section' of 'Patient Care Report'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_EMS_DISPATCH_SECTION = 24;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Care Report EMS Disposition Section' of 'Patient Care Report'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_EMS_DISPOSITION_SECTION = 25;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Care Report EMS Personnel Adverse Event Section' of 'Patient Care Report'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_EMS_PERSONNEL_ADVERSE_EVENT_SECTION = 26;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Care Report EMS Protocol Section' of 'Patient Care Report'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_EMS_PROTOCOL_SECTION = 27;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Care Report EMS Response Section' of 'Patient Care Report'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_EMS_RESPONSE_SECTION = 28;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Care Report EMS Situation Section' of 'Patient Care Report'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_EMS_SITUATION_SECTION = 29;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Care Report EMS Times Section' of 'Patient Care Report'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_EMS_TIMES_SECTION = 30;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Care Report EMS Vital Signs Section' of 'Patient Care Report'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_EMS_VITAL_SIGNS_SECTION = 31;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Care Report EMS Human Author Participation' of 'Patient Care Report'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_EMS_HUMAN_AUTHOR_PARTICIPATION = 32;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Care Report Custodian' of 'Patient Care Report'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_CUSTODIAN = 33;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Care Report Documentation Of' of 'Patient Care Report'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_DOCUMENTATION_OF = 34;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Care Report Related Document' of 'Patient Care Report'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_RELATED_DOCUMENT = 35;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Care Report Participant' of 'Patient Care Report'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_PARTICIPANT = 36;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Care Report Billing' of 'Patient Care Report'.
@@ -230,7 +342,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int PATIENT_CARE_REPORT__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID = 23;
+  public static final int PATIENT_CARE_REPORT__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID = 37;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate General Header Constraints Code' of 'Patient Care Report'.
@@ -238,7 +350,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int PATIENT_CARE_REPORT__GENERAL_HEADER_CONSTRAINTS_CODE = 24;
+  public static final int PATIENT_CARE_REPORT__GENERAL_HEADER_CONSTRAINTS_CODE = 38;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Billing Section Template Id' of 'EMS Billing Section'.
@@ -246,7 +358,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_BILLING_SECTION__EMS_BILLING_SECTION_TEMPLATE_ID = 25;
+  public static final int EMS_BILLING_SECTION__EMS_BILLING_SECTION_TEMPLATE_ID = 39;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Billing Section Code' of 'EMS Billing Section'.
@@ -254,7 +366,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_BILLING_SECTION__EMS_BILLING_SECTION_CODE = 26;
+  public static final int EMS_BILLING_SECTION__EMS_BILLING_SECTION_CODE = 40;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Billing Section Billing Conditionentry' of 'EMS Billing Section'.
@@ -262,7 +374,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_BILLING_SECTION__EMS_BILLING_SECTION_BILLING_CONDITIONENTRY = 27;
+  public static final int EMS_BILLING_SECTION__EMS_BILLING_SECTION_BILLING_CONDITIONENTRY = 41;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Billing Section Losentry' of 'EMS Billing Section'.
@@ -270,7 +382,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_BILLING_SECTION__EMS_BILLING_SECTION_LOSENTRY = 28;
+  public static final int EMS_BILLING_SECTION__EMS_BILLING_SECTION_LOSENTRY = 42;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Derived Entry Template Id' of 'Derived Entry'.
@@ -278,7 +390,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int DERIVED_ENTRY__DERIVED_ENTRY_TEMPLATE_ID = 29;
+  public static final int DERIVED_ENTRY__DERIVED_ENTRY_TEMPLATE_ID = 191;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Derived Entry Type Code' of 'Derived Entry'.
@@ -286,7 +398,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int DERIVED_ENTRY__DERIVED_ENTRY_TYPE_CODE = 30;
+  public static final int DERIVED_ENTRY__DERIVED_ENTRY_TYPE_CODE = 192;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Injury Incident Description Section Template Id' of 'EMS Injury Incident Description Section'.
@@ -294,7 +406,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_INJURY_INCIDENT_DESCRIPTION_SECTION__EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_TEMPLATE_ID = 31;
+  public static final int EMS_INJURY_INCIDENT_DESCRIPTION_SECTION__EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_TEMPLATE_ID = 43;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Injury Incident Description Section Code' of 'EMS Injury Incident Description Section'.
@@ -302,7 +414,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_INJURY_INCIDENT_DESCRIPTION_SECTION__EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_CODE = 32;
+  public static final int EMS_INJURY_INCIDENT_DESCRIPTION_SECTION__EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_CODE = 44;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Injury Incident Description Section Entry3' of 'EMS Injury Incident Description Section'.
@@ -310,7 +422,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_INJURY_INCIDENT_DESCRIPTION_SECTION__EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_ENTRY3 = 33;
+  public static final int EMS_INJURY_INCIDENT_DESCRIPTION_SECTION__EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_ENTRY3 = 45;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Injury Incident Description Section Entry4' of 'EMS Injury Incident Description Section'.
@@ -318,7 +430,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_INJURY_INCIDENT_DESCRIPTION_SECTION__EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_ENTRY4 = 34;
+  public static final int EMS_INJURY_INCIDENT_DESCRIPTION_SECTION__EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_ENTRY4 = 46;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Injury Incident Description Section Entry5' of 'EMS Injury Incident Description Section'.
@@ -326,7 +438,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_INJURY_INCIDENT_DESCRIPTION_SECTION__EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_ENTRY5 = 35;
+  public static final int EMS_INJURY_INCIDENT_DESCRIPTION_SECTION__EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_ENTRY5 = 47;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Injury Incident Description Section Entry6' of 'EMS Injury Incident Description Section'.
@@ -334,7 +446,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_INJURY_INCIDENT_DESCRIPTION_SECTION__EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_ENTRY6 = 36;
+  public static final int EMS_INJURY_INCIDENT_DESCRIPTION_SECTION__EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_ENTRY6 = 48;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Injury Incident Description Section Entry7' of 'EMS Injury Incident Description Section'.
@@ -342,7 +454,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_INJURY_INCIDENT_DESCRIPTION_SECTION__EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_ENTRY7 = 37;
+  public static final int EMS_INJURY_INCIDENT_DESCRIPTION_SECTION__EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_ENTRY7 = 49;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Injury Incident Description Section Entry8' of 'EMS Injury Incident Description Section'.
@@ -350,7 +462,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_INJURY_INCIDENT_DESCRIPTION_SECTION__EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_ENTRY8 = 38;
+  public static final int EMS_INJURY_INCIDENT_DESCRIPTION_SECTION__EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_ENTRY8 = 50;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Injury Incident Description Section Entry9' of 'EMS Injury Incident Description Section'.
@@ -358,7 +470,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_INJURY_INCIDENT_DESCRIPTION_SECTION__EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_ENTRY9 = 39;
+  public static final int EMS_INJURY_INCIDENT_DESCRIPTION_SECTION__EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_ENTRY9 = 51;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Injury Incident Description Section Entry10' of 'EMS Injury Incident Description Section'.
@@ -366,7 +478,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_INJURY_INCIDENT_DESCRIPTION_SECTION__EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_ENTRY10 = 40;
+  public static final int EMS_INJURY_INCIDENT_DESCRIPTION_SECTION__EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_ENTRY10 = 52;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Injury Incident Description Section Entry11' of 'EMS Injury Incident Description Section'.
@@ -374,7 +486,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_INJURY_INCIDENT_DESCRIPTION_SECTION__EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_ENTRY11 = 41;
+  public static final int EMS_INJURY_INCIDENT_DESCRIPTION_SECTION__EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_ENTRY11 = 53;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Injury Incident Description Section Entry12' of 'EMS Injury Incident Description Section'.
@@ -382,7 +494,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_INJURY_INCIDENT_DESCRIPTION_SECTION__EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_ENTRY12 = 42;
+  public static final int EMS_INJURY_INCIDENT_DESCRIPTION_SECTION__EMS_INJURY_INCIDENT_DESCRIPTION_SECTION_ENTRY12 = 54;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Current Medication Section Template Id' of 'EMS Current Medication Section'.
@@ -390,7 +502,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_CURRENT_MEDICATION_SECTION__EMS_CURRENT_MEDICATION_SECTION_TEMPLATE_ID = 43;
+  public static final int EMS_CURRENT_MEDICATION_SECTION__EMS_CURRENT_MEDICATION_SECTION_TEMPLATE_ID = 55;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Current Medication Section Code' of 'EMS Current Medication Section'.
@@ -398,7 +510,15 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_CURRENT_MEDICATION_SECTION__EMS_CURRENT_MEDICATION_SECTION_CODE = 44;
+  public static final int EMS_CURRENT_MEDICATION_SECTION__EMS_CURRENT_MEDICATION_SECTION_CODE = 56;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Current Medication Section Title' of 'EMS Current Medication Section'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int EMS_CURRENT_MEDICATION_SECTION__EMS_CURRENT_MEDICATION_SECTION_TITLE = 57;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Current Medication Section Entry1' of 'EMS Current Medication Section'.
@@ -406,7 +526,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_CURRENT_MEDICATION_SECTION__EMS_CURRENT_MEDICATION_SECTION_ENTRY1 = 45;
+  public static final int EMS_CURRENT_MEDICATION_SECTION__EMS_CURRENT_MEDICATION_SECTION_ENTRY1 = 58;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Current Medication Section Entry2' of 'EMS Current Medication Section'.
@@ -414,7 +534,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_CURRENT_MEDICATION_SECTION__EMS_CURRENT_MEDICATION_SECTION_ENTRY2 = 46;
+  public static final int EMS_CURRENT_MEDICATION_SECTION__EMS_CURRENT_MEDICATION_SECTION_ENTRY2 = 59;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Current Medication Section Entry3' of 'EMS Current Medication Section'.
@@ -422,7 +542,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_CURRENT_MEDICATION_SECTION__EMS_CURRENT_MEDICATION_SECTION_ENTRY3 = 47;
+  public static final int EMS_CURRENT_MEDICATION_SECTION__EMS_CURRENT_MEDICATION_SECTION_ENTRY3 = 60;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Cardiac Arrest Event Section Template Id' of 'EMS Cardiac Arrest Event Section'.
@@ -430,7 +550,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_CARDIAC_ARREST_EVENT_SECTION__EMS_CARDIAC_ARREST_EVENT_SECTION_TEMPLATE_ID = 48;
+  public static final int EMS_CARDIAC_ARREST_EVENT_SECTION__EMS_CARDIAC_ARREST_EVENT_SECTION_TEMPLATE_ID = 61;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Cardiac Arrest Event Section Code' of 'EMS Cardiac Arrest Event Section'.
@@ -438,7 +558,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_CARDIAC_ARREST_EVENT_SECTION__EMS_CARDIAC_ARREST_EVENT_SECTION_CODE = 49;
+  public static final int EMS_CARDIAC_ARREST_EVENT_SECTION__EMS_CARDIAC_ARREST_EVENT_SECTION_CODE = 62;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Cardiac Arrest Event Section Title' of 'EMS Cardiac Arrest Event Section'.
@@ -446,7 +566,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_CARDIAC_ARREST_EVENT_SECTION__EMS_CARDIAC_ARREST_EVENT_SECTION_TITLE = 50;
+  public static final int EMS_CARDIAC_ARREST_EVENT_SECTION__EMS_CARDIAC_ARREST_EVENT_SECTION_TITLE = 63;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Cardiac Arrest Event Section Entry1' of 'EMS Cardiac Arrest Event Section'.
@@ -454,7 +574,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_CARDIAC_ARREST_EVENT_SECTION__EMS_CARDIAC_ARREST_EVENT_SECTION_ENTRY1 = 51;
+  public static final int EMS_CARDIAC_ARREST_EVENT_SECTION__EMS_CARDIAC_ARREST_EVENT_SECTION_ENTRY1 = 64;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Advance Directives Section Template Id' of 'EMS Advance Directives Section'.
@@ -462,7 +582,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_ADVANCE_DIRECTIVES_SECTION__EMS_ADVANCE_DIRECTIVES_SECTION_TEMPLATE_ID = 52;
+  public static final int EMS_ADVANCE_DIRECTIVES_SECTION__EMS_ADVANCE_DIRECTIVES_SECTION_TEMPLATE_ID = 65;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Advance Directives Section Code' of 'EMS Advance Directives Section'.
@@ -470,7 +590,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_ADVANCE_DIRECTIVES_SECTION__EMS_ADVANCE_DIRECTIVES_SECTION_CODE = 53;
+  public static final int EMS_ADVANCE_DIRECTIVES_SECTION__EMS_ADVANCE_DIRECTIVES_SECTION_CODE = 66;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Advance Directives Section Title' of 'EMS Advance Directives Section'.
@@ -478,7 +598,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_ADVANCE_DIRECTIVES_SECTION__EMS_ADVANCE_DIRECTIVES_SECTION_TITLE = 54;
+  public static final int EMS_ADVANCE_DIRECTIVES_SECTION__EMS_ADVANCE_DIRECTIVES_SECTION_TITLE = 67;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Advance Directives Section Entry1' of 'EMS Advance Directives Section'.
@@ -486,7 +606,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_ADVANCE_DIRECTIVES_SECTION__EMS_ADVANCE_DIRECTIVES_SECTION_ENTRY1 = 55;
+  public static final int EMS_ADVANCE_DIRECTIVES_SECTION__EMS_ADVANCE_DIRECTIVES_SECTION_ENTRY1 = 68;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Allergies And Adverse Reactions Section Template Id' of 'EMS Allergies And Adverse Reactions Section'.
@@ -494,7 +614,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION__EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION_TEMPLATE_ID = 56;
+  public static final int EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION__EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION_TEMPLATE_ID = 69;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Allergies And Adverse Reactions Section Code' of 'EMS Allergies And Adverse Reactions Section'.
@@ -502,7 +622,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION__EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION_CODE = 57;
+  public static final int EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION__EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION_CODE = 70;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Allergies And Adverse Reactions Section Title' of 'EMS Allergies And Adverse Reactions Section'.
@@ -510,7 +630,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION__EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION_TITLE = 58;
+  public static final int EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION__EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION_TITLE = 71;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Allergies And Adverse Reactions Section Entry1' of 'EMS Allergies And Adverse Reactions Section'.
@@ -518,7 +638,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION__EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION_ENTRY1 = 59;
+  public static final int EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION__EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION_ENTRY1 = 72;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Allergies And Adverse Reactions Section Entry2' of 'EMS Allergies And Adverse Reactions Section'.
@@ -526,103 +646,103 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION__EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION_ENTRY2 = 60;
+  public static final int EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION__EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION_ENTRY2 = 73;
 
   /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Past Medical History Template Id' of 'EMS Past Medical History'.
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Past Medical History Section Template Id' of 'EMS Past Medical History Section'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_PAST_MEDICAL_HISTORY__EMS_PAST_MEDICAL_HISTORY_TEMPLATE_ID = 61;
+  public static final int EMS_PAST_MEDICAL_HISTORY_SECTION__EMS_PAST_MEDICAL_HISTORY_SECTION_TEMPLATE_ID = 74;
 
   /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Past Medical History Code' of 'EMS Past Medical History'.
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Past Medical History Section Code' of 'EMS Past Medical History Section'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_PAST_MEDICAL_HISTORY__EMS_PAST_MEDICAL_HISTORY_CODE = 62;
+  public static final int EMS_PAST_MEDICAL_HISTORY_SECTION__EMS_PAST_MEDICAL_HISTORY_SECTION_CODE = 75;
 
   /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Past Medical History Code P' of 'EMS Past Medical History'.
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Past Medical History Section Code P' of 'EMS Past Medical History Section'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_PAST_MEDICAL_HISTORY__EMS_PAST_MEDICAL_HISTORY_CODE_P = 63;
+  public static final int EMS_PAST_MEDICAL_HISTORY_SECTION__EMS_PAST_MEDICAL_HISTORY_SECTION_CODE_P = 76;
 
   /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Past Medical History Title' of 'EMS Past Medical History'.
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Past Medical History Section Title' of 'EMS Past Medical History Section'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_PAST_MEDICAL_HISTORY__EMS_PAST_MEDICAL_HISTORY_TITLE = 64;
+  public static final int EMS_PAST_MEDICAL_HISTORY_SECTION__EMS_PAST_MEDICAL_HISTORY_SECTION_TITLE = 77;
 
   /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Past Medical History Entry1' of 'EMS Past Medical History'.
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Past Medical History Section Entry1' of 'EMS Past Medical History Section'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_PAST_MEDICAL_HISTORY__EMS_PAST_MEDICAL_HISTORY_ENTRY1 = 65;
+  public static final int EMS_PAST_MEDICAL_HISTORY_SECTION__EMS_PAST_MEDICAL_HISTORY_SECTION_ENTRY1 = 78;
 
   /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Past Medical History Entry2' of 'EMS Past Medical History'.
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Past Medical History Section Entry2' of 'EMS Past Medical History Section'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_PAST_MEDICAL_HISTORY__EMS_PAST_MEDICAL_HISTORY_ENTRY2 = 66;
+  public static final int EMS_PAST_MEDICAL_HISTORY_SECTION__EMS_PAST_MEDICAL_HISTORY_SECTION_ENTRY2 = 79;
 
   /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Social History Template Id' of 'EMS Social History'.
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Social History Section Template Id' of 'EMS Social History Section'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_SOCIAL_HISTORY__EMS_SOCIAL_HISTORY_TEMPLATE_ID = 67;
+  public static final int EMS_SOCIAL_HISTORY_SECTION__EMS_SOCIAL_HISTORY_SECTION_TEMPLATE_ID = 80;
 
   /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Social History Code' of 'EMS Social History'.
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Social History Section Code' of 'EMS Social History Section'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_SOCIAL_HISTORY__EMS_SOCIAL_HISTORY_CODE = 68;
+  public static final int EMS_SOCIAL_HISTORY_SECTION__EMS_SOCIAL_HISTORY_SECTION_CODE = 81;
 
   /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Social History Code P' of 'EMS Social History'.
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Social History Section Code P' of 'EMS Social History Section'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_SOCIAL_HISTORY__EMS_SOCIAL_HISTORY_CODE_P = 69;
+  public static final int EMS_SOCIAL_HISTORY_SECTION__EMS_SOCIAL_HISTORY_SECTION_CODE_P = 82;
 
   /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Social History Title' of 'EMS Social History'.
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Social History Section Title' of 'EMS Social History Section'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_SOCIAL_HISTORY__EMS_SOCIAL_HISTORY_TITLE = 70;
+  public static final int EMS_SOCIAL_HISTORY_SECTION__EMS_SOCIAL_HISTORY_SECTION_TITLE = 83;
 
   /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Social History Entry1' of 'EMS Social History'.
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Social History Section Entry1' of 'EMS Social History Section'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_SOCIAL_HISTORY__EMS_SOCIAL_HISTORY_ENTRY1 = 71;
+  public static final int EMS_SOCIAL_HISTORY_SECTION__EMS_SOCIAL_HISTORY_SECTION_ENTRY1 = 84;
 
   /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Social History Entry2' of 'EMS Social History'.
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Social History Section Entry2' of 'EMS Social History Section'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_SOCIAL_HISTORY__EMS_SOCIAL_HISTORY_ENTRY2 = 72;
+  public static final int EMS_SOCIAL_HISTORY_SECTION__EMS_SOCIAL_HISTORY_SECTION_ENTRY2 = 85;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Physical Assessment Section Template Id' of 'EMS Physical Assessment Section'.
@@ -630,7 +750,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_PHYSICAL_ASSESSMENT_SECTION__EMS_PHYSICAL_ASSESSMENT_SECTION_TEMPLATE_ID = 73;
+  public static final int EMS_PHYSICAL_ASSESSMENT_SECTION__EMS_PHYSICAL_ASSESSMENT_SECTION_TEMPLATE_ID = 86;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Physical Assessment Section Code' of 'EMS Physical Assessment Section'.
@@ -638,7 +758,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_PHYSICAL_ASSESSMENT_SECTION__EMS_PHYSICAL_ASSESSMENT_SECTION_CODE = 74;
+  public static final int EMS_PHYSICAL_ASSESSMENT_SECTION__EMS_PHYSICAL_ASSESSMENT_SECTION_CODE = 87;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Physical Assessment Section Code P' of 'EMS Physical Assessment Section'.
@@ -646,7 +766,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_PHYSICAL_ASSESSMENT_SECTION__EMS_PHYSICAL_ASSESSMENT_SECTION_CODE_P = 75;
+  public static final int EMS_PHYSICAL_ASSESSMENT_SECTION__EMS_PHYSICAL_ASSESSMENT_SECTION_CODE_P = 88;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Physical Assessment Section Text' of 'EMS Physical Assessment Section'.
@@ -654,7 +774,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_PHYSICAL_ASSESSMENT_SECTION__EMS_PHYSICAL_ASSESSMENT_SECTION_TEXT = 76;
+  public static final int EMS_PHYSICAL_ASSESSMENT_SECTION__EMS_PHYSICAL_ASSESSMENT_SECTION_TEXT = 89;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Physical Assessment Section Title' of 'EMS Physical Assessment Section'.
@@ -662,7 +782,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_PHYSICAL_ASSESSMENT_SECTION__EMS_PHYSICAL_ASSESSMENT_SECTION_TITLE = 77;
+  public static final int EMS_PHYSICAL_ASSESSMENT_SECTION__EMS_PHYSICAL_ASSESSMENT_SECTION_TITLE = 90;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Physical Assessment Section Entry1' of 'EMS Physical Assessment Section'.
@@ -670,7 +790,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_PHYSICAL_ASSESSMENT_SECTION__EMS_PHYSICAL_ASSESSMENT_SECTION_ENTRY1 = 78;
+  public static final int EMS_PHYSICAL_ASSESSMENT_SECTION__EMS_PHYSICAL_ASSESSMENT_SECTION_ENTRY1 = 91;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Physical Assessment Section Entry2' of 'EMS Physical Assessment Section'.
@@ -678,7 +798,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_PHYSICAL_ASSESSMENT_SECTION__EMS_PHYSICAL_ASSESSMENT_SECTION_ENTRY2 = 79;
+  public static final int EMS_PHYSICAL_ASSESSMENT_SECTION__EMS_PHYSICAL_ASSESSMENT_SECTION_ENTRY2 = 92;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Physical Assessment Section Entry3' of 'EMS Physical Assessment Section'.
@@ -686,7 +806,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_PHYSICAL_ASSESSMENT_SECTION__EMS_PHYSICAL_ASSESSMENT_SECTION_ENTRY3 = 80;
+  public static final int EMS_PHYSICAL_ASSESSMENT_SECTION__EMS_PHYSICAL_ASSESSMENT_SECTION_ENTRY3 = 93;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Physical Assessment Section Entry4' of 'EMS Physical Assessment Section'.
@@ -694,7 +814,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_PHYSICAL_ASSESSMENT_SECTION__EMS_PHYSICAL_ASSESSMENT_SECTION_ENTRY4 = 81;
+  public static final int EMS_PHYSICAL_ASSESSMENT_SECTION__EMS_PHYSICAL_ASSESSMENT_SECTION_ENTRY4 = 94;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Physical Assessment Section Entry5' of 'EMS Physical Assessment Section'.
@@ -702,7 +822,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_PHYSICAL_ASSESSMENT_SECTION__EMS_PHYSICAL_ASSESSMENT_SECTION_ENTRY5 = 82;
+  public static final int EMS_PHYSICAL_ASSESSMENT_SECTION__EMS_PHYSICAL_ASSESSMENT_SECTION_ENTRY5 = 95;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Physical Assessment Section Entry6' of 'EMS Physical Assessment Section'.
@@ -710,7 +830,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_PHYSICAL_ASSESSMENT_SECTION__EMS_PHYSICAL_ASSESSMENT_SECTION_ENTRY6 = 83;
+  public static final int EMS_PHYSICAL_ASSESSMENT_SECTION__EMS_PHYSICAL_ASSESSMENT_SECTION_ENTRY6 = 96;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Medications Administered Section Template Id' of 'EMS Medications Administered Section'.
@@ -718,7 +838,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_MEDICATIONS_ADMINISTERED_SECTION__EMS_MEDICATIONS_ADMINISTERED_SECTION_TEMPLATE_ID = 84;
+  public static final int EMS_MEDICATIONS_ADMINISTERED_SECTION__EMS_MEDICATIONS_ADMINISTERED_SECTION_TEMPLATE_ID = 97;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Medications Administered Section Code P' of 'EMS Medications Administered Section'.
@@ -726,7 +846,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_MEDICATIONS_ADMINISTERED_SECTION__EMS_MEDICATIONS_ADMINISTERED_SECTION_CODE_P = 85;
+  public static final int EMS_MEDICATIONS_ADMINISTERED_SECTION__EMS_MEDICATIONS_ADMINISTERED_SECTION_CODE_P = 98;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Medications Administered Section Code' of 'EMS Medications Administered Section'.
@@ -734,7 +854,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_MEDICATIONS_ADMINISTERED_SECTION__EMS_MEDICATIONS_ADMINISTERED_SECTION_CODE = 86;
+  public static final int EMS_MEDICATIONS_ADMINISTERED_SECTION__EMS_MEDICATIONS_ADMINISTERED_SECTION_CODE = 99;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Medications Administered Section Text' of 'EMS Medications Administered Section'.
@@ -742,7 +862,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_MEDICATIONS_ADMINISTERED_SECTION__EMS_MEDICATIONS_ADMINISTERED_SECTION_TEXT = 87;
+  public static final int EMS_MEDICATIONS_ADMINISTERED_SECTION__EMS_MEDICATIONS_ADMINISTERED_SECTION_TEXT = 100;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Medications Administered Section Title' of 'EMS Medications Administered Section'.
@@ -750,7 +870,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_MEDICATIONS_ADMINISTERED_SECTION__EMS_MEDICATIONS_ADMINISTERED_SECTION_TITLE = 88;
+  public static final int EMS_MEDICATIONS_ADMINISTERED_SECTION__EMS_MEDICATIONS_ADMINISTERED_SECTION_TITLE = 101;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Medications Administered Section Entry1' of 'EMS Medications Administered Section'.
@@ -758,7 +878,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_MEDICATIONS_ADMINISTERED_SECTION__EMS_MEDICATIONS_ADMINISTERED_SECTION_ENTRY1 = 89;
+  public static final int EMS_MEDICATIONS_ADMINISTERED_SECTION__EMS_MEDICATIONS_ADMINISTERED_SECTION_ENTRY1 = 102;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Procedures Performed Section Template Id' of 'EMS Procedures Performed Section'.
@@ -766,7 +886,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_PROCEDURES_PERFORMED_SECTION__EMS_PROCEDURES_PERFORMED_SECTION_TEMPLATE_ID = 90;
+  public static final int EMS_PROCEDURES_PERFORMED_SECTION__EMS_PROCEDURES_PERFORMED_SECTION_TEMPLATE_ID = 103;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Procedures Performed Section Code' of 'EMS Procedures Performed Section'.
@@ -774,7 +894,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_PROCEDURES_PERFORMED_SECTION__EMS_PROCEDURES_PERFORMED_SECTION_CODE = 91;
+  public static final int EMS_PROCEDURES_PERFORMED_SECTION__EMS_PROCEDURES_PERFORMED_SECTION_CODE = 104;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Procedures Performed Section Code P' of 'EMS Procedures Performed Section'.
@@ -782,7 +902,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_PROCEDURES_PERFORMED_SECTION__EMS_PROCEDURES_PERFORMED_SECTION_CODE_P = 92;
+  public static final int EMS_PROCEDURES_PERFORMED_SECTION__EMS_PROCEDURES_PERFORMED_SECTION_CODE_P = 105;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Procedures Performed Section Text' of 'EMS Procedures Performed Section'.
@@ -790,7 +910,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_PROCEDURES_PERFORMED_SECTION__EMS_PROCEDURES_PERFORMED_SECTION_TEXT = 93;
+  public static final int EMS_PROCEDURES_PERFORMED_SECTION__EMS_PROCEDURES_PERFORMED_SECTION_TEXT = 106;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Procedures Performed Section Title' of 'EMS Procedures Performed Section'.
@@ -798,7 +918,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_PROCEDURES_PERFORMED_SECTION__EMS_PROCEDURES_PERFORMED_SECTION_TITLE = 94;
+  public static final int EMS_PROCEDURES_PERFORMED_SECTION__EMS_PROCEDURES_PERFORMED_SECTION_TITLE = 107;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Procedures Performed Section Entry1' of 'EMS Procedures Performed Section'.
@@ -806,47 +926,47 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_PROCEDURES_PERFORMED_SECTION__EMS_PROCEDURES_PERFORMED_SECTION_ENTRY1 = 95;
+  public static final int EMS_PROCEDURES_PERFORMED_SECTION__EMS_PROCEDURES_PERFORMED_SECTION_ENTRY1 = 108;
 
   /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Patient Care Narrative Template Id' of 'EMS Patient Care Narrative'.
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Patient Care Narrative Section Template Id' of 'EMS Patient Care Narrative Section'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_PATIENT_CARE_NARRATIVE__EMS_PATIENT_CARE_NARRATIVE_TEMPLATE_ID = 96;
+  public static final int EMS_PATIENT_CARE_NARRATIVE_SECTION__EMS_PATIENT_CARE_NARRATIVE_SECTION_TEMPLATE_ID = 109;
 
   /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Patient Care Narrative Code' of 'EMS Patient Care Narrative'.
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Patient Care Narrative Section Code' of 'EMS Patient Care Narrative Section'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_PATIENT_CARE_NARRATIVE__EMS_PATIENT_CARE_NARRATIVE_CODE = 97;
+  public static final int EMS_PATIENT_CARE_NARRATIVE_SECTION__EMS_PATIENT_CARE_NARRATIVE_SECTION_CODE = 110;
 
   /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Patient Care Narrative Code P' of 'EMS Patient Care Narrative'.
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Patient Care Narrative Section Code P' of 'EMS Patient Care Narrative Section'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_PATIENT_CARE_NARRATIVE__EMS_PATIENT_CARE_NARRATIVE_CODE_P = 98;
+  public static final int EMS_PATIENT_CARE_NARRATIVE_SECTION__EMS_PATIENT_CARE_NARRATIVE_SECTION_CODE_P = 111;
 
   /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Patient Care Narrative Text' of 'EMS Patient Care Narrative'.
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Patient Care Narrative Section Text' of 'EMS Patient Care Narrative Section'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_PATIENT_CARE_NARRATIVE__EMS_PATIENT_CARE_NARRATIVE_TEXT = 99;
+  public static final int EMS_PATIENT_CARE_NARRATIVE_SECTION__EMS_PATIENT_CARE_NARRATIVE_SECTION_TEXT = 112;
 
   /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Patient Care Narrative Title' of 'EMS Patient Care Narrative'.
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Patient Care Narrative Section Title' of 'EMS Patient Care Narrative Section'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_PATIENT_CARE_NARRATIVE__EMS_PATIENT_CARE_NARRATIVE_TITLE = 100;
+  public static final int EMS_PATIENT_CARE_NARRATIVE_SECTION__EMS_PATIENT_CARE_NARRATIVE_SECTION_TITLE = 113;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Scene Section Template Id' of 'EMS Scene Section'.
@@ -854,7 +974,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_SCENE_SECTION__EMS_SCENE_SECTION_TEMPLATE_ID = 101;
+  public static final int EMS_SCENE_SECTION__EMS_SCENE_SECTION_TEMPLATE_ID = 114;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Scene Section Code' of 'EMS Scene Section'.
@@ -862,7 +982,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_SCENE_SECTION__EMS_SCENE_SECTION_CODE = 102;
+  public static final int EMS_SCENE_SECTION__EMS_SCENE_SECTION_CODE = 115;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Scene Section Text' of 'EMS Scene Section'.
@@ -870,7 +990,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_SCENE_SECTION__EMS_SCENE_SECTION_TEXT = 103;
+  public static final int EMS_SCENE_SECTION__EMS_SCENE_SECTION_TEXT = 116;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Scene Section Title' of 'EMS Scene Section'.
@@ -878,7 +998,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_SCENE_SECTION__EMS_SCENE_SECTION_TITLE = 104;
+  public static final int EMS_SCENE_SECTION__EMS_SCENE_SECTION_TITLE = 117;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Scene Section Entry1' of 'EMS Scene Section'.
@@ -886,7 +1006,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_SCENE_SECTION__EMS_SCENE_SECTION_ENTRY1 = 105;
+  public static final int EMS_SCENE_SECTION__EMS_SCENE_SECTION_ENTRY1 = 118;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Scene Section Entry2' of 'EMS Scene Section'.
@@ -894,7 +1014,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_SCENE_SECTION__EMS_SCENE_SECTION_ENTRY2 = 106;
+  public static final int EMS_SCENE_SECTION__EMS_SCENE_SECTION_ENTRY2 = 119;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Scene Section Entry3' of 'EMS Scene Section'.
@@ -902,7 +1022,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_SCENE_SECTION__EMS_SCENE_SECTION_ENTRY3 = 107;
+  public static final int EMS_SCENE_SECTION__EMS_SCENE_SECTION_ENTRY3 = 120;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Scene Section Entry4' of 'EMS Scene Section'.
@@ -910,7 +1030,55 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_SCENE_SECTION__EMS_SCENE_SECTION_ENTRY4 = 108;
+  public static final int EMS_SCENE_SECTION__EMS_SCENE_SECTION_ENTRY4 = 121;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Dispatch Section Template Id' of 'EMS Dispatch Section'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int EMS_DISPATCH_SECTION__EMS_DISPATCH_SECTION_TEMPLATE_ID = 122;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Dispatch Section Code' of 'EMS Dispatch Section'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int EMS_DISPATCH_SECTION__EMS_DISPATCH_SECTION_CODE = 123;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Dispatch Section Text' of 'EMS Dispatch Section'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int EMS_DISPATCH_SECTION__EMS_DISPATCH_SECTION_TEXT = 124;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Dispatch Section Title' of 'EMS Dispatch Section'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int EMS_DISPATCH_SECTION__EMS_DISPATCH_SECTION_TITLE = 125;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Dispatch Section Entry1' of 'EMS Dispatch Section'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int EMS_DISPATCH_SECTION__EMS_DISPATCH_SECTION_ENTRY1 = 126;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Dispatch Section Entry2' of 'EMS Dispatch Section'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int EMS_DISPATCH_SECTION__EMS_DISPATCH_SECTION_ENTRY2 = 127;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Vital Signs Section Template Id' of 'EMS Vital Signs Section'.
@@ -918,7 +1086,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_VITAL_SIGNS_SECTION__EMS_VITAL_SIGNS_SECTION_TEMPLATE_ID = 109;
+  public static final int EMS_VITAL_SIGNS_SECTION__EMS_VITAL_SIGNS_SECTION_TEMPLATE_ID = 187;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Vital Signs Section Code' of 'EMS Vital Signs Section'.
@@ -926,7 +1094,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_VITAL_SIGNS_SECTION__EMS_VITAL_SIGNS_SECTION_CODE = 110;
+  public static final int EMS_VITAL_SIGNS_SECTION__EMS_VITAL_SIGNS_SECTION_CODE = 188;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Vital Signs Section Title' of 'EMS Vital Signs Section'.
@@ -934,7 +1102,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_VITAL_SIGNS_SECTION__EMS_VITAL_SIGNS_SECTION_TITLE = 111;
+  public static final int EMS_VITAL_SIGNS_SECTION__EMS_VITAL_SIGNS_SECTION_TITLE = 189;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Vital Signs Section Entry1' of 'EMS Vital Signs Section'.
@@ -942,127 +1110,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_VITAL_SIGNS_SECTION__EMS_VITAL_SIGNS_SECTION_ENTRY1 = 112;
-
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Dispatch Template Id' of 'EMS Dispatch'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int EMS_DISPATCH__EMS_DISPATCH_TEMPLATE_ID = 113;
-
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Dispatch Code' of 'EMS Dispatch'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int EMS_DISPATCH__EMS_DISPATCH_CODE = 114;
-
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Dispatch Text' of 'EMS Dispatch'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int EMS_DISPATCH__EMS_DISPATCH_TEXT = 115;
-
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Dispatch Title' of 'EMS Dispatch'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int EMS_DISPATCH__EMS_DISPATCH_TITLE = 116;
-
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Dispatch Entry1' of 'EMS Dispatch'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int EMS_DISPATCH__EMS_DISPATCH_ENTRY1 = 117;
-
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Dispatch Entry2' of 'EMS Dispatch'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int EMS_DISPATCH__EMS_DISPATCH_ENTRY2 = 118;
-
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Response Template Id' of 'EMS Response'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int EMS_RESPONSE__EMS_RESPONSE_TEMPLATE_ID = 119;
-
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Response Code' of 'EMS Response'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int EMS_RESPONSE__EMS_RESPONSE_CODE = 120;
-
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Response Code P' of 'EMS Response'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int EMS_RESPONSE__EMS_RESPONSE_CODE_P = 121;
-
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Response Text' of 'EMS Response'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int EMS_RESPONSE__EMS_RESPONSE_TEXT = 122;
-
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Response Title' of 'EMS Response'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int EMS_RESPONSE__EMS_RESPONSE_TITLE = 123;
-
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Response Entry1' of 'EMS Response'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int EMS_RESPONSE__EMS_RESPONSE_ENTRY1 = 124;
-
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Response Entry2' of 'EMS Response'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int EMS_RESPONSE__EMS_RESPONSE_ENTRY2 = 125;
-
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Response Entry3' of 'EMS Response'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int EMS_RESPONSE__EMS_RESPONSE_ENTRY3 = 126;
-
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Response Entry4' of 'EMS Response'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int EMS_RESPONSE__EMS_RESPONSE_ENTRY4 = 127;
+  public static final int EMS_VITAL_SIGNS_SECTION__EMS_VITAL_SIGNS_SECTION_ENTRY1 = 190;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Disposition Section Template Id' of 'EMS Disposition Section'.
@@ -1134,7 +1182,63 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_DISPOSITION_SECTION__EMS_DISPOSITION_SECTION_ENTRY4 = 136;
+  public static final int EMS_DISPOSITION_SECTION__EMS_DISPOSITION_SECTION_ENTRY4 = 139;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Personnel Adverse Event Section Template Id' of 'EMS Personnel Adverse Event Section'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int EMS_PERSONNEL_ADVERSE_EVENT_SECTION__EMS_PERSONNEL_ADVERSE_EVENT_SECTION_TEMPLATE_ID = 140;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Personnel Adverse Event Section Code' of 'EMS Personnel Adverse Event Section'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int EMS_PERSONNEL_ADVERSE_EVENT_SECTION__EMS_PERSONNEL_ADVERSE_EVENT_SECTION_CODE = 141;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Personnel Adverse Event Section Code P' of 'EMS Personnel Adverse Event Section'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int EMS_PERSONNEL_ADVERSE_EVENT_SECTION__EMS_PERSONNEL_ADVERSE_EVENT_SECTION_CODE_P = 142;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Personnel Adverse Event Section Text' of 'EMS Personnel Adverse Event Section'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int EMS_PERSONNEL_ADVERSE_EVENT_SECTION__EMS_PERSONNEL_ADVERSE_EVENT_SECTION_TEXT = 143;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Personnel Adverse Event Section Title' of 'EMS Personnel Adverse Event Section'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int EMS_PERSONNEL_ADVERSE_EVENT_SECTION__EMS_PERSONNEL_ADVERSE_EVENT_SECTION_TITLE = 144;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Personnel Adverse Event Section Entry1' of 'EMS Personnel Adverse Event Section'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int EMS_PERSONNEL_ADVERSE_EVENT_SECTION__EMS_PERSONNEL_ADVERSE_EVENT_SECTION_ENTRY1 = 145;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Personnel Adverse Event Section Entry2' of 'EMS Personnel Adverse Event Section'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int EMS_PERSONNEL_ADVERSE_EVENT_SECTION__EMS_PERSONNEL_ADVERSE_EVENT_SECTION_ENTRY2 = 146;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Disposition Section Entry5' of 'EMS Disposition Section'.
@@ -1142,7 +1246,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_DISPOSITION_SECTION__EMS_DISPOSITION_SECTION_ENTRY5 = 137;
+  public static final int EMS_DISPOSITION_SECTION__EMS_DISPOSITION_SECTION_ENTRY5 = 136;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Disposition Section Entry6' of 'EMS Disposition Section'.
@@ -1158,71 +1262,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_DISPOSITION_SECTION__EMS_DISPOSITION_SECTION_ENTRY7 = 139;
-
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Disposition Section Entry8' of 'EMS Disposition Section'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int EMS_DISPOSITION_SECTION__EMS_DISPOSITION_SECTION_ENTRY8 = 140;
-
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Personnel Adverse Event Template Id' of 'EMS Personnel Adverse Event'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int EMS_PERSONNEL_ADVERSE_EVENT__EMS_PERSONNEL_ADVERSE_EVENT_TEMPLATE_ID = 141;
-
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Personnel Adverse Event Code' of 'EMS Personnel Adverse Event'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int EMS_PERSONNEL_ADVERSE_EVENT__EMS_PERSONNEL_ADVERSE_EVENT_CODE = 142;
-
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Personnel Adverse Event Code P' of 'EMS Personnel Adverse Event'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int EMS_PERSONNEL_ADVERSE_EVENT__EMS_PERSONNEL_ADVERSE_EVENT_CODE_P = 143;
-
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Personnel Adverse Event Text' of 'EMS Personnel Adverse Event'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int EMS_PERSONNEL_ADVERSE_EVENT__EMS_PERSONNEL_ADVERSE_EVENT_TEXT = 144;
-
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Personnel Adverse Event Title' of 'EMS Personnel Adverse Event'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int EMS_PERSONNEL_ADVERSE_EVENT__EMS_PERSONNEL_ADVERSE_EVENT_TITLE = 145;
-
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Personnel Adverse Event Entry1' of 'EMS Personnel Adverse Event'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int EMS_PERSONNEL_ADVERSE_EVENT__EMS_PERSONNEL_ADVERSE_EVENT_ENTRY1 = 146;
-
-  /**
-   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Personnel Adverse Event Entry2' of 'EMS Personnel Adverse Event'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public static final int EMS_PERSONNEL_ADVERSE_EVENT__EMS_PERSONNEL_ADVERSE_EVENT_ENTRY2 = 147;
+  public static final int EMS_DISPOSITION_SECTION__EMS_DISPOSITION_SECTION_ENTRY7 = 137;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Protocol Section Template Id' of 'EMS Protocol Section'.
@@ -1230,7 +1270,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_PROTOCOL_SECTION__EMS_PROTOCOL_SECTION_TEMPLATE_ID = 148;
+  public static final int EMS_PROTOCOL_SECTION__EMS_PROTOCOL_SECTION_TEMPLATE_ID = 147;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Protocol Section Code' of 'EMS Protocol Section'.
@@ -1238,7 +1278,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_PROTOCOL_SECTION__EMS_PROTOCOL_SECTION_CODE = 149;
+  public static final int EMS_PROTOCOL_SECTION__EMS_PROTOCOL_SECTION_CODE = 148;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Protocol Section Entry1' of 'EMS Protocol Section'.
@@ -1246,7 +1286,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_PROTOCOL_SECTION__EMS_PROTOCOL_SECTION_ENTRY1 = 150;
+  public static final int EMS_PROTOCOL_SECTION__EMS_PROTOCOL_SECTION_ENTRY1 = 149;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Protocol Section Entry2' of 'EMS Protocol Section'.
@@ -1254,7 +1294,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_PROTOCOL_SECTION__EMS_PROTOCOL_SECTION_ENTRY2 = 151;
+  public static final int EMS_PROTOCOL_SECTION__EMS_PROTOCOL_SECTION_ENTRY2 = 150;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Protocol Section Entry3' of 'EMS Protocol Section'.
@@ -1262,7 +1302,79 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_PROTOCOL_SECTION__EMS_PROTOCOL_SECTION_ENTRY3 = 152;
+  public static final int EMS_PROTOCOL_SECTION__EMS_PROTOCOL_SECTION_ENTRY3 = 151;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Response Section Template Id' of 'EMS Response Section'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int EMS_RESPONSE_SECTION__EMS_RESPONSE_SECTION_TEMPLATE_ID = 152;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Response Section Code' of 'EMS Response Section'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int EMS_RESPONSE_SECTION__EMS_RESPONSE_SECTION_CODE = 153;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Response Section Code P' of 'EMS Response Section'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int EMS_RESPONSE_SECTION__EMS_RESPONSE_SECTION_CODE_P = 154;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Response Section Text' of 'EMS Response Section'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int EMS_RESPONSE_SECTION__EMS_RESPONSE_SECTION_TEXT = 155;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Response Section Title' of 'EMS Response Section'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int EMS_RESPONSE_SECTION__EMS_RESPONSE_SECTION_TITLE = 156;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Response Section Entry1' of 'EMS Response Section'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int EMS_RESPONSE_SECTION__EMS_RESPONSE_SECTION_ENTRY1 = 157;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Response Section Entry2' of 'EMS Response Section'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int EMS_RESPONSE_SECTION__EMS_RESPONSE_SECTION_ENTRY2 = 158;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Response Section Entry3' of 'EMS Response Section'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int EMS_RESPONSE_SECTION__EMS_RESPONSE_SECTION_ENTRY3 = 159;
+
+  /**
+   * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Response Section Entry4' of 'EMS Response Section'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public static final int EMS_RESPONSE_SECTION__EMS_RESPONSE_SECTION_ENTRY4 = 160;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Situation Section Template Id' of 'EMS Situation Section'.
@@ -1270,7 +1382,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_SITUATION_SECTION__EMS_SITUATION_SECTION_TEMPLATE_ID = 153;
+  public static final int EMS_SITUATION_SECTION__EMS_SITUATION_SECTION_TEMPLATE_ID = 161;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Situation Section Code' of 'EMS Situation Section'.
@@ -1278,7 +1390,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_SITUATION_SECTION__EMS_SITUATION_SECTION_CODE = 154;
+  public static final int EMS_SITUATION_SECTION__EMS_SITUATION_SECTION_CODE = 162;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Situation Section Code P' of 'EMS Situation Section'.
@@ -1286,7 +1398,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_SITUATION_SECTION__EMS_SITUATION_SECTION_CODE_P = 155;
+  public static final int EMS_SITUATION_SECTION__EMS_SITUATION_SECTION_CODE_P = 163;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Situation Section Text' of 'EMS Situation Section'.
@@ -1294,7 +1406,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_SITUATION_SECTION__EMS_SITUATION_SECTION_TEXT = 156;
+  public static final int EMS_SITUATION_SECTION__EMS_SITUATION_SECTION_TEXT = 164;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Situation Section Title' of 'EMS Situation Section'.
@@ -1302,7 +1414,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_SITUATION_SECTION__EMS_SITUATION_SECTION_TITLE = 157;
+  public static final int EMS_SITUATION_SECTION__EMS_SITUATION_SECTION_TITLE = 165;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Situation Section Entry1' of 'EMS Situation Section'.
@@ -1310,7 +1422,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_SITUATION_SECTION__EMS_SITUATION_SECTION_ENTRY1 = 158;
+  public static final int EMS_SITUATION_SECTION__EMS_SITUATION_SECTION_ENTRY1 = 166;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Situation Section Entry2' of 'EMS Situation Section'.
@@ -1318,7 +1430,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_SITUATION_SECTION__EMS_SITUATION_SECTION_ENTRY2 = 159;
+  public static final int EMS_SITUATION_SECTION__EMS_SITUATION_SECTION_ENTRY2 = 167;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Situation Section Entry3' of 'EMS Situation Section'.
@@ -1326,7 +1438,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_SITUATION_SECTION__EMS_SITUATION_SECTION_ENTRY3 = 160;
+  public static final int EMS_SITUATION_SECTION__EMS_SITUATION_SECTION_ENTRY3 = 168;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Situation Section Entry4' of 'EMS Situation Section'.
@@ -1334,7 +1446,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_SITUATION_SECTION__EMS_SITUATION_SECTION_ENTRY4 = 161;
+  public static final int EMS_SITUATION_SECTION__EMS_SITUATION_SECTION_ENTRY4 = 169;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Situation Section Entry5' of 'EMS Situation Section'.
@@ -1342,7 +1454,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_SITUATION_SECTION__EMS_SITUATION_SECTION_ENTRY5 = 162;
+  public static final int EMS_SITUATION_SECTION__EMS_SITUATION_SECTION_ENTRY5 = 170;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Situation Section Entry6' of 'EMS Situation Section'.
@@ -1350,7 +1462,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_SITUATION_SECTION__EMS_SITUATION_SECTION_ENTRY6 = 163;
+  public static final int EMS_SITUATION_SECTION__EMS_SITUATION_SECTION_ENTRY6 = 171;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Situation Section Entry7' of 'EMS Situation Section'.
@@ -1358,7 +1470,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_SITUATION_SECTION__EMS_SITUATION_SECTION_ENTRY7 = 164;
+  public static final int EMS_SITUATION_SECTION__EMS_SITUATION_SECTION_ENTRY7 = 172;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Situation Section Entry8' of 'EMS Situation Section'.
@@ -1366,7 +1478,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_SITUATION_SECTION__EMS_SITUATION_SECTION_ENTRY8 = 165;
+  public static final int EMS_SITUATION_SECTION__EMS_SITUATION_SECTION_ENTRY8 = 173;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Times Section Template Id' of 'EMS Times Section'.
@@ -1374,7 +1486,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_TIMES_SECTION__EMS_TIMES_SECTION_TEMPLATE_ID = 166;
+  public static final int EMS_TIMES_SECTION__EMS_TIMES_SECTION_TEMPLATE_ID = 174;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Times Section Code' of 'EMS Times Section'.
@@ -1382,7 +1494,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_TIMES_SECTION__EMS_TIMES_SECTION_CODE = 167;
+  public static final int EMS_TIMES_SECTION__EMS_TIMES_SECTION_CODE = 175;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Times Section Text' of 'EMS Times Section'.
@@ -1390,7 +1502,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_TIMES_SECTION__EMS_TIMES_SECTION_TEXT = 168;
+  public static final int EMS_TIMES_SECTION__EMS_TIMES_SECTION_TEXT = 176;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Times Section Title' of 'EMS Times Section'.
@@ -1398,7 +1510,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_TIMES_SECTION__EMS_TIMES_SECTION_TITLE = 169;
+  public static final int EMS_TIMES_SECTION__EMS_TIMES_SECTION_TITLE = 177;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Times Section Entry1' of 'EMS Times Section'.
@@ -1406,7 +1518,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_TIMES_SECTION__EMS_TIMES_SECTION_ENTRY1 = 170;
+  public static final int EMS_TIMES_SECTION__EMS_TIMES_SECTION_ENTRY1 = 178;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Times Section Entry2' of 'EMS Times Section'.
@@ -1414,7 +1526,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_TIMES_SECTION__EMS_TIMES_SECTION_ENTRY2 = 171;
+  public static final int EMS_TIMES_SECTION__EMS_TIMES_SECTION_ENTRY2 = 179;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Times Section Entry3' of 'EMS Times Section'.
@@ -1422,7 +1534,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_TIMES_SECTION__EMS_TIMES_SECTION_ENTRY3 = 172;
+  public static final int EMS_TIMES_SECTION__EMS_TIMES_SECTION_ENTRY3 = 180;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Times Section Entry4' of 'EMS Times Section'.
@@ -1430,7 +1542,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_TIMES_SECTION__EMS_TIMES_SECTION_ENTRY4 = 173;
+  public static final int EMS_TIMES_SECTION__EMS_TIMES_SECTION_ENTRY4 = 181;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Times Section Entry5' of 'EMS Times Section'.
@@ -1438,7 +1550,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_TIMES_SECTION__EMS_TIMES_SECTION_ENTRY5 = 174;
+  public static final int EMS_TIMES_SECTION__EMS_TIMES_SECTION_ENTRY5 = 182;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Times Section Entry6' of 'EMS Times Section'.
@@ -1446,7 +1558,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_TIMES_SECTION__EMS_TIMES_SECTION_ENTRY6 = 175;
+  public static final int EMS_TIMES_SECTION__EMS_TIMES_SECTION_ENTRY6 = 183;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Times Section Entry7' of 'EMS Times Section'.
@@ -1454,7 +1566,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_TIMES_SECTION__EMS_TIMES_SECTION_ENTRY7 = 176;
+  public static final int EMS_TIMES_SECTION__EMS_TIMES_SECTION_ENTRY7 = 184;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Times Section Entry8' of 'EMS Times Section'.
@@ -1462,7 +1574,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_TIMES_SECTION__EMS_TIMES_SECTION_ENTRY8 = 177;
+  public static final int EMS_TIMES_SECTION__EMS_TIMES_SECTION_ENTRY8 = 185;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Times Section Entry9' of 'EMS Times Section'.
@@ -1470,7 +1582,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int EMS_TIMES_SECTION__EMS_TIMES_SECTION_ENTRY9 = 178;
+  public static final int EMS_TIMES_SECTION__EMS_TIMES_SECTION_ENTRY9 = 186;
 
   /**
    * A constant with a fixed name that can be used as the base value for additional hand written constants.
@@ -1478,7 +1590,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 178;
+  private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 192;
 
   /**
    * A constant with a fixed name that can be used as the base value for additional hand written constants in a derived class.
@@ -1544,10 +1656,6 @@ public class EmspcrValidator extends EObjectValidator
         return validatePatientCareReport((PatientCareReport)value, diagnostics, context);
       case EmspcrPackage.EMS_BILLING_SECTION:
         return validateEMSBillingSection((EMSBillingSection)value, diagnostics, context);
-      case EmspcrPackage.DERIVED_CDA_SECTION:
-        return validateDerivedCDASection((DerivedCDASection)value, diagnostics, context);
-      case EmspcrPackage.DERIVED_ENTRY:
-        return validateDerivedEntry((DerivedEntry)value, diagnostics, context);
       case EmspcrPackage.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION:
         return validateEMSInjuryIncidentDescriptionSection((EMSInjuryIncidentDescriptionSection)value, diagnostics, context);
       case EmspcrPackage.EMS_CURRENT_MEDICATION_SECTION:
@@ -1558,36 +1666,38 @@ public class EmspcrValidator extends EObjectValidator
         return validateEMSAdvanceDirectivesSection((EMSAdvanceDirectivesSection)value, diagnostics, context);
       case EmspcrPackage.EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION:
         return validateEMSAllergiesAndAdverseReactionsSection((EMSAllergiesAndAdverseReactionsSection)value, diagnostics, context);
-      case EmspcrPackage.EMS_PAST_MEDICAL_HISTORY:
-        return validateEMSPastMedicalHistory((EMSPastMedicalHistory)value, diagnostics, context);
-      case EmspcrPackage.EMS_SOCIAL_HISTORY:
-        return validateEMSSocialHistory((EMSSocialHistory)value, diagnostics, context);
+      case EmspcrPackage.EMS_PAST_MEDICAL_HISTORY_SECTION:
+        return validateEMSPastMedicalHistorySection((EMSPastMedicalHistorySection)value, diagnostics, context);
+      case EmspcrPackage.EMS_SOCIAL_HISTORY_SECTION:
+        return validateEMSSocialHistorySection((EMSSocialHistorySection)value, diagnostics, context);
       case EmspcrPackage.EMS_PHYSICAL_ASSESSMENT_SECTION:
         return validateEMSPhysicalAssessmentSection((EMSPhysicalAssessmentSection)value, diagnostics, context);
       case EmspcrPackage.EMS_MEDICATIONS_ADMINISTERED_SECTION:
         return validateEMSMedicationsAdministeredSection((EMSMedicationsAdministeredSection)value, diagnostics, context);
       case EmspcrPackage.EMS_PROCEDURES_PERFORMED_SECTION:
         return validateEMSProceduresPerformedSection((EMSProceduresPerformedSection)value, diagnostics, context);
-      case EmspcrPackage.EMS_PATIENT_CARE_NARRATIVE:
-        return validateEMSPatientCareNarrative((EMSPatientCareNarrative)value, diagnostics, context);
+      case EmspcrPackage.EMS_PATIENT_CARE_NARRATIVE_SECTION:
+        return validateEMSPatientCareNarrativeSection((EMSPatientCareNarrativeSection)value, diagnostics, context);
       case EmspcrPackage.EMS_SCENE_SECTION:
         return validateEMSSceneSection((EMSSceneSection)value, diagnostics, context);
-      case EmspcrPackage.EMS_VITAL_SIGNS_SECTION:
-        return validateEMSVitalSignsSection((EMSVitalSignsSection)value, diagnostics, context);
-      case EmspcrPackage.EMS_DISPATCH:
-        return validateEMSDispatch((EMSDispatch)value, diagnostics, context);
-      case EmspcrPackage.EMS_RESPONSE:
-        return validateEMSResponse((EMSResponse)value, diagnostics, context);
+      case EmspcrPackage.EMS_DISPATCH_SECTION:
+        return validateEMSDispatchSection((EMSDispatchSection)value, diagnostics, context);
       case EmspcrPackage.EMS_DISPOSITION_SECTION:
         return validateEMSDispositionSection((EMSDispositionSection)value, diagnostics, context);
-      case EmspcrPackage.EMS_PERSONNEL_ADVERSE_EVENT:
-        return validateEMSPersonnelAdverseEvent((EMSPersonnelAdverseEvent)value, diagnostics, context);
+      case EmspcrPackage.EMS_PERSONNEL_ADVERSE_EVENT_SECTION:
+        return validateEMSPersonnelAdverseEventSection((EMSPersonnelAdverseEventSection)value, diagnostics, context);
       case EmspcrPackage.EMS_PROTOCOL_SECTION:
         return validateEMSProtocolSection((EMSProtocolSection)value, diagnostics, context);
+      case EmspcrPackage.EMS_RESPONSE_SECTION:
+        return validateEMSResponseSection((EMSResponseSection)value, diagnostics, context);
       case EmspcrPackage.EMS_SITUATION_SECTION:
         return validateEMSSituationSection((EMSSituationSection)value, diagnostics, context);
       case EmspcrPackage.EMS_TIMES_SECTION:
         return validateEMSTimesSection((EMSTimesSection)value, diagnostics, context);
+      case EmspcrPackage.EMS_VITAL_SIGNS_SECTION:
+        return validateEMSVitalSignsSection((EMSVitalSignsSection)value, diagnostics, context);
+      case EmspcrPackage.DERIVED_ENTRY:
+        return validateDerivedEntry((DerivedEntry)value, diagnostics, context);
       default:
         return true;
     }
@@ -1747,9 +1857,9 @@ public class EmspcrValidator extends EObjectValidator
     if (result || diagnostics != null) result &= validatePatientCareReport_validatePatientCareReportVersionNumber(patientCareReport, diagnostics, context);
     if (result || diagnostics != null) result &= validatePatientCareReport_validatePatientCareReportId(patientCareReport, diagnostics, context);
     if (result || diagnostics != null) result &= validatePatientCareReport_validatePatientCareReportTitle(patientCareReport, diagnostics, context);
+    if (result || diagnostics != null) result &= validatePatientCareReport_validatePatientCareReportAuthor(patientCareReport, diagnostics, context);
     if (result || diagnostics != null) result &= validatePatientCareReport_validatePatientCareReportRecordTarget(patientCareReport, diagnostics, context);
     if (result || diagnostics != null) result &= validatePatientCareReport_validatePatientCareReportHumanAuthor(patientCareReport, diagnostics, context);
-    if (result || diagnostics != null) result &= validatePatientCareReport_validatePatientCareReportComponentOf(patientCareReport, diagnostics, context);
     if (result || diagnostics != null) result &= validatePatientCareReport_validatePatientCareReportBilling(patientCareReport, diagnostics, context);
     if (result || diagnostics != null) result &= validatePatientCareReport_validatePatientCareReportSection(patientCareReport, diagnostics, context);
     if (result || diagnostics != null) result &= validatePatientCareReport_validatePatientCareReportEMSCurrentMedication(patientCareReport, diagnostics, context);
@@ -1763,6 +1873,20 @@ public class EmspcrValidator extends EObjectValidator
     if (result || diagnostics != null) result &= validatePatientCareReport_validatePatientCareReportEMSProceduresPerformedSection(patientCareReport, diagnostics, context);
     if (result || diagnostics != null) result &= validatePatientCareReport_validatePatientCareReportEMSPatientCareNarrative(patientCareReport, diagnostics, context);
     if (result || diagnostics != null) result &= validatePatientCareReport_validatePatientCareReportEMSSceneSection(patientCareReport, diagnostics, context);
+    if (result || diagnostics != null) result &= validatePatientCareReport_validatePatientCareReportComponentOf(patientCareReport, diagnostics, context);
+    if (result || diagnostics != null) result &= validatePatientCareReport_validatePatientCareReportEMSDispatchSection(patientCareReport, diagnostics, context);
+    if (result || diagnostics != null) result &= validatePatientCareReport_validatePatientCareReportEMSDispositionSection(patientCareReport, diagnostics, context);
+    if (result || diagnostics != null) result &= validatePatientCareReport_validatePatientCareReportEMSPersonnelAdverseEventSection(patientCareReport, diagnostics, context);
+    if (result || diagnostics != null) result &= validatePatientCareReport_validatePatientCareReportEMSProtocolSection(patientCareReport, diagnostics, context);
+    if (result || diagnostics != null) result &= validatePatientCareReport_validatePatientCareReportEMSResponseSection(patientCareReport, diagnostics, context);
+    if (result || diagnostics != null) result &= validatePatientCareReport_validatePatientCareReportEMSSituationSection(patientCareReport, diagnostics, context);
+    if (result || diagnostics != null) result &= validatePatientCareReport_validatePatientCareReportEMSTimesSection(patientCareReport, diagnostics, context);
+    if (result || diagnostics != null) result &= validatePatientCareReport_validatePatientCareReportEMSVitalSignsSection(patientCareReport, diagnostics, context);
+    if (result || diagnostics != null) result &= validatePatientCareReport_validatePatientCareReportEMSHumanAuthorParticipation(patientCareReport, diagnostics, context);
+    if (result || diagnostics != null) result &= validatePatientCareReport_validatePatientCareReportCustodian(patientCareReport, diagnostics, context);
+    if (result || diagnostics != null) result &= validatePatientCareReport_validatePatientCareReportDocumentationOf(patientCareReport, diagnostics, context);
+    if (result || diagnostics != null) result &= validatePatientCareReport_validatePatientCareReportRelatedDocument(patientCareReport, diagnostics, context);
+    if (result || diagnostics != null) result &= validatePatientCareReport_validatePatientCareReportParticipant(patientCareReport, diagnostics, context);
     return result;
   }
 
@@ -1833,6 +1957,17 @@ public class EmspcrValidator extends EObjectValidator
   }
 
   /**
+   * Validates the validatePatientCareReportAuthor constraint of '<em>Patient Care Report</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validatePatientCareReport_validatePatientCareReportAuthor(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return patientCareReport.validatePatientCareReportAuthor(diagnostics, context);
+  }
+
+  /**
    * Validates the validatePatientCareReportRecordTarget constraint of '<em>Patient Care Report</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -1863,6 +1998,149 @@ public class EmspcrValidator extends EObjectValidator
   public boolean validatePatientCareReport_validatePatientCareReportComponentOf(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return patientCareReport.validatePatientCareReportComponentOf(diagnostics, context);
+  }
+
+  /**
+   * Validates the validatePatientCareReportEMSDispatchSection constraint of '<em>Patient Care Report</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validatePatientCareReport_validatePatientCareReportEMSDispatchSection(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return patientCareReport.validatePatientCareReportEMSDispatchSection(diagnostics, context);
+  }
+
+  /**
+   * Validates the validatePatientCareReportEMSDispositionSection constraint of '<em>Patient Care Report</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validatePatientCareReport_validatePatientCareReportEMSDispositionSection(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return patientCareReport.validatePatientCareReportEMSDispositionSection(diagnostics, context);
+  }
+
+  /**
+   * Validates the validatePatientCareReportEMSPersonnelAdverseEventSection constraint of '<em>Patient Care Report</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validatePatientCareReport_validatePatientCareReportEMSPersonnelAdverseEventSection(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return patientCareReport.validatePatientCareReportEMSPersonnelAdverseEventSection(diagnostics, context);
+  }
+
+  /**
+   * Validates the validatePatientCareReportEMSProtocolSection constraint of '<em>Patient Care Report</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validatePatientCareReport_validatePatientCareReportEMSProtocolSection(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return patientCareReport.validatePatientCareReportEMSProtocolSection(diagnostics, context);
+  }
+
+  /**
+   * Validates the validatePatientCareReportEMSResponseSection constraint of '<em>Patient Care Report</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validatePatientCareReport_validatePatientCareReportEMSResponseSection(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return patientCareReport.validatePatientCareReportEMSResponseSection(diagnostics, context);
+  }
+
+  /**
+   * Validates the validatePatientCareReportEMSSituationSection constraint of '<em>Patient Care Report</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validatePatientCareReport_validatePatientCareReportEMSSituationSection(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return patientCareReport.validatePatientCareReportEMSSituationSection(diagnostics, context);
+  }
+
+  /**
+   * Validates the validatePatientCareReportEMSTimesSection constraint of '<em>Patient Care Report</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validatePatientCareReport_validatePatientCareReportEMSTimesSection(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return patientCareReport.validatePatientCareReportEMSTimesSection(diagnostics, context);
+  }
+
+  /**
+   * Validates the validatePatientCareReportEMSVitalSignsSection constraint of '<em>Patient Care Report</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validatePatientCareReport_validatePatientCareReportEMSVitalSignsSection(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return patientCareReport.validatePatientCareReportEMSVitalSignsSection(diagnostics, context);
+  }
+
+  /**
+   * Validates the validatePatientCareReportEMSHumanAuthorParticipation constraint of '<em>Patient Care Report</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validatePatientCareReport_validatePatientCareReportEMSHumanAuthorParticipation(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return patientCareReport.validatePatientCareReportEMSHumanAuthorParticipation(diagnostics, context);
+  }
+
+  /**
+   * Validates the validatePatientCareReportCustodian constraint of '<em>Patient Care Report</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validatePatientCareReport_validatePatientCareReportCustodian(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return patientCareReport.validatePatientCareReportCustodian(diagnostics, context);
+  }
+
+  /**
+   * Validates the validatePatientCareReportDocumentationOf constraint of '<em>Patient Care Report</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validatePatientCareReport_validatePatientCareReportDocumentationOf(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return patientCareReport.validatePatientCareReportDocumentationOf(diagnostics, context);
+  }
+
+  /**
+   * Validates the validatePatientCareReportRelatedDocument constraint of '<em>Patient Care Report</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validatePatientCareReport_validatePatientCareReportRelatedDocument(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return patientCareReport.validatePatientCareReportRelatedDocument(diagnostics, context);
+  }
+
+  /**
+   * Validates the validatePatientCareReportParticipant constraint of '<em>Patient Care Report</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validatePatientCareReport_validatePatientCareReportParticipant(PatientCareReport patientCareReport, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return patientCareReport.validatePatientCareReportParticipant(diagnostics, context);
   }
 
   /**
@@ -2103,26 +2381,6 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateDerivedCDASection(DerivedCDASection derivedCDASection, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    if (!validate_NoCircularContainment(derivedCDASection, diagnostics, context)) return false;
-    boolean result = validate_EveryMultiplicityConforms(derivedCDASection, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryDataValueConforms(derivedCDASection, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(derivedCDASection, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryProxyResolves(derivedCDASection, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_UniqueID(derivedCDASection, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryKeyUnique(derivedCDASection, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(derivedCDASection, diagnostics, context);
-    if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(derivedCDASection, diagnostics, context);
-    if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(derivedCDASection, diagnostics, context);
-    return result;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
   public boolean validateDerivedEntry(DerivedEntry derivedEntry, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     if (!validate_NoCircularContainment(derivedEntry, diagnostics, context)) return false;
@@ -2345,6 +2603,7 @@ public class EmspcrValidator extends EObjectValidator
     if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(emsCurrentMedicationSection, diagnostics, context);
     if (result || diagnostics != null) result &= validateEMSCurrentMedicationSection_validateEMSCurrentMedicationSectionTemplateId(emsCurrentMedicationSection, diagnostics, context);
     if (result || diagnostics != null) result &= validateEMSCurrentMedicationSection_validateEMSCurrentMedicationSectionCode(emsCurrentMedicationSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validateEMSCurrentMedicationSection_validateEMSCurrentMedicationSectionTitle(emsCurrentMedicationSection, diagnostics, context);
     if (result || diagnostics != null) result &= validateEMSCurrentMedicationSection_validateEMSCurrentMedicationSectionEntry1(emsCurrentMedicationSection, diagnostics, context);
     if (result || diagnostics != null) result &= validateEMSCurrentMedicationSection_validateEMSCurrentMedicationSectionEntry2(emsCurrentMedicationSection, diagnostics, context);
     if (result || diagnostics != null) result &= validateEMSCurrentMedicationSection_validateEMSCurrentMedicationSectionEntry3(emsCurrentMedicationSection, diagnostics, context);
@@ -2371,6 +2630,17 @@ public class EmspcrValidator extends EObjectValidator
   public boolean validateEMSCurrentMedicationSection_validateEMSCurrentMedicationSectionCode(EMSCurrentMedicationSection emsCurrentMedicationSection, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return emsCurrentMedicationSection.validateEMSCurrentMedicationSectionCode(diagnostics, context);
+  }
+
+  /**
+   * Validates the validateEMSCurrentMedicationSectionTitle constraint of '<em>EMS Current Medication Section</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateEMSCurrentMedicationSection_validateEMSCurrentMedicationSectionTitle(EMSCurrentMedicationSection emsCurrentMedicationSection, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return emsCurrentMedicationSection.validateEMSCurrentMedicationSectionTitle(diagnostics, context);
   }
 
   /**
@@ -2627,91 +2897,91 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateEMSPastMedicalHistory(EMSPastMedicalHistory emsPastMedicalHistory, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateEMSPastMedicalHistorySection(EMSPastMedicalHistorySection emsPastMedicalHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    if (!validate_NoCircularContainment(emsPastMedicalHistory, diagnostics, context)) return false;
-    boolean result = validate_EveryMultiplicityConforms(emsPastMedicalHistory, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryDataValueConforms(emsPastMedicalHistory, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(emsPastMedicalHistory, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryProxyResolves(emsPastMedicalHistory, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_UniqueID(emsPastMedicalHistory, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryKeyUnique(emsPastMedicalHistory, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(emsPastMedicalHistory, diagnostics, context);
-    if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(emsPastMedicalHistory, diagnostics, context);
-    if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(emsPastMedicalHistory, diagnostics, context);
-    if (result || diagnostics != null) result &= validateEMSPastMedicalHistory_validateEMSPastMedicalHistoryTemplateId(emsPastMedicalHistory, diagnostics, context);
-    if (result || diagnostics != null) result &= validateEMSPastMedicalHistory_validateEMSPastMedicalHistoryCode(emsPastMedicalHistory, diagnostics, context);
-    if (result || diagnostics != null) result &= validateEMSPastMedicalHistory_validateEMSPastMedicalHistoryCodeP(emsPastMedicalHistory, diagnostics, context);
-    if (result || diagnostics != null) result &= validateEMSPastMedicalHistory_validateEMSPastMedicalHistoryTitle(emsPastMedicalHistory, diagnostics, context);
-    if (result || diagnostics != null) result &= validateEMSPastMedicalHistory_validateEMSPastMedicalHistoryEntry1(emsPastMedicalHistory, diagnostics, context);
-    if (result || diagnostics != null) result &= validateEMSPastMedicalHistory_validateEMSPastMedicalHistoryEntry2(emsPastMedicalHistory, diagnostics, context);
+    if (!validate_NoCircularContainment(emsPastMedicalHistorySection, diagnostics, context)) return false;
+    boolean result = validate_EveryMultiplicityConforms(emsPastMedicalHistorySection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryDataValueConforms(emsPastMedicalHistorySection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(emsPastMedicalHistorySection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryProxyResolves(emsPastMedicalHistorySection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_UniqueID(emsPastMedicalHistorySection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryKeyUnique(emsPastMedicalHistorySection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(emsPastMedicalHistorySection, diagnostics, context);
+    if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(emsPastMedicalHistorySection, diagnostics, context);
+    if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(emsPastMedicalHistorySection, diagnostics, context);
+    if (result || diagnostics != null) result &= validateEMSPastMedicalHistorySection_validateEMSPastMedicalHistorySectionTemplateId(emsPastMedicalHistorySection, diagnostics, context);
+    if (result || diagnostics != null) result &= validateEMSPastMedicalHistorySection_validateEMSPastMedicalHistorySectionCode(emsPastMedicalHistorySection, diagnostics, context);
+    if (result || diagnostics != null) result &= validateEMSPastMedicalHistorySection_validateEMSPastMedicalHistorySectionCodeP(emsPastMedicalHistorySection, diagnostics, context);
+    if (result || diagnostics != null) result &= validateEMSPastMedicalHistorySection_validateEMSPastMedicalHistorySectionTitle(emsPastMedicalHistorySection, diagnostics, context);
+    if (result || diagnostics != null) result &= validateEMSPastMedicalHistorySection_validateEMSPastMedicalHistorySectionEntry1(emsPastMedicalHistorySection, diagnostics, context);
+    if (result || diagnostics != null) result &= validateEMSPastMedicalHistorySection_validateEMSPastMedicalHistorySectionEntry2(emsPastMedicalHistorySection, diagnostics, context);
     return result;
   }
 
   /**
-   * Validates the validateEMSPastMedicalHistoryTemplateId constraint of '<em>EMS Past Medical History</em>'.
+   * Validates the validateEMSPastMedicalHistorySectionTemplateId constraint of '<em>EMS Past Medical History Section</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateEMSPastMedicalHistory_validateEMSPastMedicalHistoryTemplateId(EMSPastMedicalHistory emsPastMedicalHistory, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateEMSPastMedicalHistorySection_validateEMSPastMedicalHistorySectionTemplateId(EMSPastMedicalHistorySection emsPastMedicalHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return emsPastMedicalHistory.validateEMSPastMedicalHistoryTemplateId(diagnostics, context);
+    return emsPastMedicalHistorySection.validateEMSPastMedicalHistorySectionTemplateId(diagnostics, context);
   }
 
   /**
-   * Validates the validateEMSPastMedicalHistoryCode constraint of '<em>EMS Past Medical History</em>'.
+   * Validates the validateEMSPastMedicalHistorySectionCode constraint of '<em>EMS Past Medical History Section</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateEMSPastMedicalHistory_validateEMSPastMedicalHistoryCode(EMSPastMedicalHistory emsPastMedicalHistory, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateEMSPastMedicalHistorySection_validateEMSPastMedicalHistorySectionCode(EMSPastMedicalHistorySection emsPastMedicalHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return emsPastMedicalHistory.validateEMSPastMedicalHistoryCode(diagnostics, context);
+    return emsPastMedicalHistorySection.validateEMSPastMedicalHistorySectionCode(diagnostics, context);
   }
 
   /**
-   * Validates the validateEMSPastMedicalHistoryCodeP constraint of '<em>EMS Past Medical History</em>'.
+   * Validates the validateEMSPastMedicalHistorySectionCodeP constraint of '<em>EMS Past Medical History Section</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateEMSPastMedicalHistory_validateEMSPastMedicalHistoryCodeP(EMSPastMedicalHistory emsPastMedicalHistory, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateEMSPastMedicalHistorySection_validateEMSPastMedicalHistorySectionCodeP(EMSPastMedicalHistorySection emsPastMedicalHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return emsPastMedicalHistory.validateEMSPastMedicalHistoryCodeP(diagnostics, context);
+    return emsPastMedicalHistorySection.validateEMSPastMedicalHistorySectionCodeP(diagnostics, context);
   }
 
   /**
-   * Validates the validateEMSPastMedicalHistoryTitle constraint of '<em>EMS Past Medical History</em>'.
+   * Validates the validateEMSPastMedicalHistorySectionTitle constraint of '<em>EMS Past Medical History Section</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateEMSPastMedicalHistory_validateEMSPastMedicalHistoryTitle(EMSPastMedicalHistory emsPastMedicalHistory, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateEMSPastMedicalHistorySection_validateEMSPastMedicalHistorySectionTitle(EMSPastMedicalHistorySection emsPastMedicalHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return emsPastMedicalHistory.validateEMSPastMedicalHistoryTitle(diagnostics, context);
+    return emsPastMedicalHistorySection.validateEMSPastMedicalHistorySectionTitle(diagnostics, context);
   }
 
   /**
-   * Validates the validateEMSPastMedicalHistoryEntry1 constraint of '<em>EMS Past Medical History</em>'.
+   * Validates the validateEMSPastMedicalHistorySectionEntry1 constraint of '<em>EMS Past Medical History Section</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateEMSPastMedicalHistory_validateEMSPastMedicalHistoryEntry1(EMSPastMedicalHistory emsPastMedicalHistory, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateEMSPastMedicalHistorySection_validateEMSPastMedicalHistorySectionEntry1(EMSPastMedicalHistorySection emsPastMedicalHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return emsPastMedicalHistory.validateEMSPastMedicalHistoryEntry1(diagnostics, context);
+    return emsPastMedicalHistorySection.validateEMSPastMedicalHistorySectionEntry1(diagnostics, context);
   }
 
   /**
-   * Validates the validateEMSPastMedicalHistoryEntry2 constraint of '<em>EMS Past Medical History</em>'.
+   * Validates the validateEMSPastMedicalHistorySectionEntry2 constraint of '<em>EMS Past Medical History Section</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateEMSPastMedicalHistory_validateEMSPastMedicalHistoryEntry2(EMSPastMedicalHistory emsPastMedicalHistory, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateEMSPastMedicalHistorySection_validateEMSPastMedicalHistorySectionEntry2(EMSPastMedicalHistorySection emsPastMedicalHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return emsPastMedicalHistory.validateEMSPastMedicalHistoryEntry2(diagnostics, context);
+    return emsPastMedicalHistorySection.validateEMSPastMedicalHistorySectionEntry2(diagnostics, context);
   }
 
   /**
@@ -2719,91 +2989,91 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateEMSSocialHistory(EMSSocialHistory emsSocialHistory, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateEMSSocialHistorySection(EMSSocialHistorySection emsSocialHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    if (!validate_NoCircularContainment(emsSocialHistory, diagnostics, context)) return false;
-    boolean result = validate_EveryMultiplicityConforms(emsSocialHistory, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryDataValueConforms(emsSocialHistory, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(emsSocialHistory, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryProxyResolves(emsSocialHistory, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_UniqueID(emsSocialHistory, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryKeyUnique(emsSocialHistory, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(emsSocialHistory, diagnostics, context);
-    if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(emsSocialHistory, diagnostics, context);
-    if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(emsSocialHistory, diagnostics, context);
-    if (result || diagnostics != null) result &= validateEMSSocialHistory_validateEMSSocialHistoryTemplateId(emsSocialHistory, diagnostics, context);
-    if (result || diagnostics != null) result &= validateEMSSocialHistory_validateEMSSocialHistoryCode(emsSocialHistory, diagnostics, context);
-    if (result || diagnostics != null) result &= validateEMSSocialHistory_validateEMSSocialHistoryCodeP(emsSocialHistory, diagnostics, context);
-    if (result || diagnostics != null) result &= validateEMSSocialHistory_validateEMSSocialHistoryTitle(emsSocialHistory, diagnostics, context);
-    if (result || diagnostics != null) result &= validateEMSSocialHistory_validateEMSSocialHistoryEntry1(emsSocialHistory, diagnostics, context);
-    if (result || diagnostics != null) result &= validateEMSSocialHistory_validateEMSSocialHistoryEntry2(emsSocialHistory, diagnostics, context);
+    if (!validate_NoCircularContainment(emsSocialHistorySection, diagnostics, context)) return false;
+    boolean result = validate_EveryMultiplicityConforms(emsSocialHistorySection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryDataValueConforms(emsSocialHistorySection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(emsSocialHistorySection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryProxyResolves(emsSocialHistorySection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_UniqueID(emsSocialHistorySection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryKeyUnique(emsSocialHistorySection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(emsSocialHistorySection, diagnostics, context);
+    if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(emsSocialHistorySection, diagnostics, context);
+    if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(emsSocialHistorySection, diagnostics, context);
+    if (result || diagnostics != null) result &= validateEMSSocialHistorySection_validateEMSSocialHistorySectionTemplateId(emsSocialHistorySection, diagnostics, context);
+    if (result || diagnostics != null) result &= validateEMSSocialHistorySection_validateEMSSocialHistorySectionCode(emsSocialHistorySection, diagnostics, context);
+    if (result || diagnostics != null) result &= validateEMSSocialHistorySection_validateEMSSocialHistorySectionCodeP(emsSocialHistorySection, diagnostics, context);
+    if (result || diagnostics != null) result &= validateEMSSocialHistorySection_validateEMSSocialHistorySectionTitle(emsSocialHistorySection, diagnostics, context);
+    if (result || diagnostics != null) result &= validateEMSSocialHistorySection_validateEMSSocialHistorySectionEntry1(emsSocialHistorySection, diagnostics, context);
+    if (result || diagnostics != null) result &= validateEMSSocialHistorySection_validateEMSSocialHistorySectionEntry2(emsSocialHistorySection, diagnostics, context);
     return result;
   }
 
   /**
-   * Validates the validateEMSSocialHistoryTemplateId constraint of '<em>EMS Social History</em>'.
+   * Validates the validateEMSSocialHistorySectionTemplateId constraint of '<em>EMS Social History Section</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateEMSSocialHistory_validateEMSSocialHistoryTemplateId(EMSSocialHistory emsSocialHistory, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateEMSSocialHistorySection_validateEMSSocialHistorySectionTemplateId(EMSSocialHistorySection emsSocialHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return emsSocialHistory.validateEMSSocialHistoryTemplateId(diagnostics, context);
+    return emsSocialHistorySection.validateEMSSocialHistorySectionTemplateId(diagnostics, context);
   }
 
   /**
-   * Validates the validateEMSSocialHistoryCode constraint of '<em>EMS Social History</em>'.
+   * Validates the validateEMSSocialHistorySectionCode constraint of '<em>EMS Social History Section</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateEMSSocialHistory_validateEMSSocialHistoryCode(EMSSocialHistory emsSocialHistory, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateEMSSocialHistorySection_validateEMSSocialHistorySectionCode(EMSSocialHistorySection emsSocialHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return emsSocialHistory.validateEMSSocialHistoryCode(diagnostics, context);
+    return emsSocialHistorySection.validateEMSSocialHistorySectionCode(diagnostics, context);
   }
 
   /**
-   * Validates the validateEMSSocialHistoryCodeP constraint of '<em>EMS Social History</em>'.
+   * Validates the validateEMSSocialHistorySectionCodeP constraint of '<em>EMS Social History Section</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateEMSSocialHistory_validateEMSSocialHistoryCodeP(EMSSocialHistory emsSocialHistory, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateEMSSocialHistorySection_validateEMSSocialHistorySectionCodeP(EMSSocialHistorySection emsSocialHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return emsSocialHistory.validateEMSSocialHistoryCodeP(diagnostics, context);
+    return emsSocialHistorySection.validateEMSSocialHistorySectionCodeP(diagnostics, context);
   }
 
   /**
-   * Validates the validateEMSSocialHistoryTitle constraint of '<em>EMS Social History</em>'.
+   * Validates the validateEMSSocialHistorySectionTitle constraint of '<em>EMS Social History Section</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateEMSSocialHistory_validateEMSSocialHistoryTitle(EMSSocialHistory emsSocialHistory, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateEMSSocialHistorySection_validateEMSSocialHistorySectionTitle(EMSSocialHistorySection emsSocialHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return emsSocialHistory.validateEMSSocialHistoryTitle(diagnostics, context);
+    return emsSocialHistorySection.validateEMSSocialHistorySectionTitle(diagnostics, context);
   }
 
   /**
-   * Validates the validateEMSSocialHistoryEntry1 constraint of '<em>EMS Social History</em>'.
+   * Validates the validateEMSSocialHistorySectionEntry1 constraint of '<em>EMS Social History Section</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateEMSSocialHistory_validateEMSSocialHistoryEntry1(EMSSocialHistory emsSocialHistory, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateEMSSocialHistorySection_validateEMSSocialHistorySectionEntry1(EMSSocialHistorySection emsSocialHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return emsSocialHistory.validateEMSSocialHistoryEntry1(diagnostics, context);
+    return emsSocialHistorySection.validateEMSSocialHistorySectionEntry1(diagnostics, context);
   }
 
   /**
-   * Validates the validateEMSSocialHistoryEntry2 constraint of '<em>EMS Social History</em>'.
+   * Validates the validateEMSSocialHistorySectionEntry2 constraint of '<em>EMS Social History Section</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateEMSSocialHistory_validateEMSSocialHistoryEntry2(EMSSocialHistory emsSocialHistory, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateEMSSocialHistorySection_validateEMSSocialHistorySectionEntry2(EMSSocialHistorySection emsSocialHistorySection, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return emsSocialHistory.validateEMSSocialHistoryEntry2(diagnostics, context);
+    return emsSocialHistorySection.validateEMSSocialHistorySectionEntry2(diagnostics, context);
   }
 
   /**
@@ -3147,79 +3417,79 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateEMSPatientCareNarrative(EMSPatientCareNarrative emsPatientCareNarrative, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateEMSPatientCareNarrativeSection(EMSPatientCareNarrativeSection emsPatientCareNarrativeSection, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    if (!validate_NoCircularContainment(emsPatientCareNarrative, diagnostics, context)) return false;
-    boolean result = validate_EveryMultiplicityConforms(emsPatientCareNarrative, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryDataValueConforms(emsPatientCareNarrative, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(emsPatientCareNarrative, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryProxyResolves(emsPatientCareNarrative, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_UniqueID(emsPatientCareNarrative, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryKeyUnique(emsPatientCareNarrative, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(emsPatientCareNarrative, diagnostics, context);
-    if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(emsPatientCareNarrative, diagnostics, context);
-    if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(emsPatientCareNarrative, diagnostics, context);
-    if (result || diagnostics != null) result &= validateEMSPatientCareNarrative_validateEMSPatientCareNarrativeTemplateId(emsPatientCareNarrative, diagnostics, context);
-    if (result || diagnostics != null) result &= validateEMSPatientCareNarrative_validateEMSPatientCareNarrativeCode(emsPatientCareNarrative, diagnostics, context);
-    if (result || diagnostics != null) result &= validateEMSPatientCareNarrative_validateEMSPatientCareNarrativeCodeP(emsPatientCareNarrative, diagnostics, context);
-    if (result || diagnostics != null) result &= validateEMSPatientCareNarrative_validateEMSPatientCareNarrativeText(emsPatientCareNarrative, diagnostics, context);
-    if (result || diagnostics != null) result &= validateEMSPatientCareNarrative_validateEMSPatientCareNarrativeTitle(emsPatientCareNarrative, diagnostics, context);
+    if (!validate_NoCircularContainment(emsPatientCareNarrativeSection, diagnostics, context)) return false;
+    boolean result = validate_EveryMultiplicityConforms(emsPatientCareNarrativeSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryDataValueConforms(emsPatientCareNarrativeSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(emsPatientCareNarrativeSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryProxyResolves(emsPatientCareNarrativeSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_UniqueID(emsPatientCareNarrativeSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryKeyUnique(emsPatientCareNarrativeSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(emsPatientCareNarrativeSection, diagnostics, context);
+    if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(emsPatientCareNarrativeSection, diagnostics, context);
+    if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(emsPatientCareNarrativeSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validateEMSPatientCareNarrativeSection_validateEMSPatientCareNarrativeSectionTemplateId(emsPatientCareNarrativeSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validateEMSPatientCareNarrativeSection_validateEMSPatientCareNarrativeSectionCode(emsPatientCareNarrativeSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validateEMSPatientCareNarrativeSection_validateEMSPatientCareNarrativeSectionCodeP(emsPatientCareNarrativeSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validateEMSPatientCareNarrativeSection_validateEMSPatientCareNarrativeSectionText(emsPatientCareNarrativeSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validateEMSPatientCareNarrativeSection_validateEMSPatientCareNarrativeSectionTitle(emsPatientCareNarrativeSection, diagnostics, context);
     return result;
   }
 
   /**
-   * Validates the validateEMSPatientCareNarrativeTemplateId constraint of '<em>EMS Patient Care Narrative</em>'.
+   * Validates the validateEMSPatientCareNarrativeSectionTemplateId constraint of '<em>EMS Patient Care Narrative Section</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateEMSPatientCareNarrative_validateEMSPatientCareNarrativeTemplateId(EMSPatientCareNarrative emsPatientCareNarrative, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateEMSPatientCareNarrativeSection_validateEMSPatientCareNarrativeSectionTemplateId(EMSPatientCareNarrativeSection emsPatientCareNarrativeSection, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return emsPatientCareNarrative.validateEMSPatientCareNarrativeTemplateId(diagnostics, context);
+    return emsPatientCareNarrativeSection.validateEMSPatientCareNarrativeSectionTemplateId(diagnostics, context);
   }
 
   /**
-   * Validates the validateEMSPatientCareNarrativeCode constraint of '<em>EMS Patient Care Narrative</em>'.
+   * Validates the validateEMSPatientCareNarrativeSectionCode constraint of '<em>EMS Patient Care Narrative Section</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateEMSPatientCareNarrative_validateEMSPatientCareNarrativeCode(EMSPatientCareNarrative emsPatientCareNarrative, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateEMSPatientCareNarrativeSection_validateEMSPatientCareNarrativeSectionCode(EMSPatientCareNarrativeSection emsPatientCareNarrativeSection, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return emsPatientCareNarrative.validateEMSPatientCareNarrativeCode(diagnostics, context);
+    return emsPatientCareNarrativeSection.validateEMSPatientCareNarrativeSectionCode(diagnostics, context);
   }
 
   /**
-   * Validates the validateEMSPatientCareNarrativeCodeP constraint of '<em>EMS Patient Care Narrative</em>'.
+   * Validates the validateEMSPatientCareNarrativeSectionCodeP constraint of '<em>EMS Patient Care Narrative Section</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateEMSPatientCareNarrative_validateEMSPatientCareNarrativeCodeP(EMSPatientCareNarrative emsPatientCareNarrative, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateEMSPatientCareNarrativeSection_validateEMSPatientCareNarrativeSectionCodeP(EMSPatientCareNarrativeSection emsPatientCareNarrativeSection, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return emsPatientCareNarrative.validateEMSPatientCareNarrativeCodeP(diagnostics, context);
+    return emsPatientCareNarrativeSection.validateEMSPatientCareNarrativeSectionCodeP(diagnostics, context);
   }
 
   /**
-   * Validates the validateEMSPatientCareNarrativeText constraint of '<em>EMS Patient Care Narrative</em>'.
+   * Validates the validateEMSPatientCareNarrativeSectionText constraint of '<em>EMS Patient Care Narrative Section</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateEMSPatientCareNarrative_validateEMSPatientCareNarrativeText(EMSPatientCareNarrative emsPatientCareNarrative, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateEMSPatientCareNarrativeSection_validateEMSPatientCareNarrativeSectionText(EMSPatientCareNarrativeSection emsPatientCareNarrativeSection, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return emsPatientCareNarrative.validateEMSPatientCareNarrativeText(diagnostics, context);
+    return emsPatientCareNarrativeSection.validateEMSPatientCareNarrativeSectionText(diagnostics, context);
   }
 
   /**
-   * Validates the validateEMSPatientCareNarrativeTitle constraint of '<em>EMS Patient Care Narrative</em>'.
+   * Validates the validateEMSPatientCareNarrativeSectionTitle constraint of '<em>EMS Patient Care Narrative Section</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateEMSPatientCareNarrative_validateEMSPatientCareNarrativeTitle(EMSPatientCareNarrative emsPatientCareNarrative, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public boolean validateEMSPatientCareNarrativeSection_validateEMSPatientCareNarrativeSectionTitle(EMSPatientCareNarrativeSection emsPatientCareNarrativeSection, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return emsPatientCareNarrative.validateEMSPatientCareNarrativeTitle(diagnostics, context);
+    return emsPatientCareNarrativeSection.validateEMSPatientCareNarrativeSectionTitle(diagnostics, context);
   }
 
   /**
@@ -3343,6 +3613,98 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
+  public boolean validateEMSDispatchSection(EMSDispatchSection emsDispatchSection, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    if (!validate_NoCircularContainment(emsDispatchSection, diagnostics, context)) return false;
+    boolean result = validate_EveryMultiplicityConforms(emsDispatchSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryDataValueConforms(emsDispatchSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(emsDispatchSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryProxyResolves(emsDispatchSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_UniqueID(emsDispatchSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryKeyUnique(emsDispatchSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(emsDispatchSection, diagnostics, context);
+    if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(emsDispatchSection, diagnostics, context);
+    if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(emsDispatchSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validateEMSDispatchSection_validateEMSDispatchSectionTemplateId(emsDispatchSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validateEMSDispatchSection_validateEMSDispatchSectionCode(emsDispatchSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validateEMSDispatchSection_validateEMSDispatchSectionText(emsDispatchSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validateEMSDispatchSection_validateEMSDispatchSectionTitle(emsDispatchSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validateEMSDispatchSection_validateEMSDispatchSectionEntry1(emsDispatchSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validateEMSDispatchSection_validateEMSDispatchSectionEntry2(emsDispatchSection, diagnostics, context);
+    return result;
+  }
+
+  /**
+   * Validates the validateEMSDispatchSectionTemplateId constraint of '<em>EMS Dispatch Section</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateEMSDispatchSection_validateEMSDispatchSectionTemplateId(EMSDispatchSection emsDispatchSection, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return emsDispatchSection.validateEMSDispatchSectionTemplateId(diagnostics, context);
+  }
+
+  /**
+   * Validates the validateEMSDispatchSectionCode constraint of '<em>EMS Dispatch Section</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateEMSDispatchSection_validateEMSDispatchSectionCode(EMSDispatchSection emsDispatchSection, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return emsDispatchSection.validateEMSDispatchSectionCode(diagnostics, context);
+  }
+
+  /**
+   * Validates the validateEMSDispatchSectionText constraint of '<em>EMS Dispatch Section</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateEMSDispatchSection_validateEMSDispatchSectionText(EMSDispatchSection emsDispatchSection, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return emsDispatchSection.validateEMSDispatchSectionText(diagnostics, context);
+  }
+
+  /**
+   * Validates the validateEMSDispatchSectionTitle constraint of '<em>EMS Dispatch Section</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateEMSDispatchSection_validateEMSDispatchSectionTitle(EMSDispatchSection emsDispatchSection, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return emsDispatchSection.validateEMSDispatchSectionTitle(diagnostics, context);
+  }
+
+  /**
+   * Validates the validateEMSDispatchSectionEntry1 constraint of '<em>EMS Dispatch Section</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateEMSDispatchSection_validateEMSDispatchSectionEntry1(EMSDispatchSection emsDispatchSection, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return emsDispatchSection.validateEMSDispatchSectionEntry1(diagnostics, context);
+  }
+
+  /**
+   * Validates the validateEMSDispatchSectionEntry2 constraint of '<em>EMS Dispatch Section</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateEMSDispatchSection_validateEMSDispatchSectionEntry2(EMSDispatchSection emsDispatchSection, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return emsDispatchSection.validateEMSDispatchSectionEntry2(diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public boolean validateEMSVitalSignsSection(EMSVitalSignsSection emsVitalSignsSection, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     if (!validate_NoCircularContainment(emsVitalSignsSection, diagnostics, context)) return false;
@@ -3411,226 +3773,6 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateEMSDispatch(EMSDispatch emsDispatch, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    if (!validate_NoCircularContainment(emsDispatch, diagnostics, context)) return false;
-    boolean result = validate_EveryMultiplicityConforms(emsDispatch, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryDataValueConforms(emsDispatch, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(emsDispatch, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryProxyResolves(emsDispatch, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_UniqueID(emsDispatch, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryKeyUnique(emsDispatch, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(emsDispatch, diagnostics, context);
-    if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(emsDispatch, diagnostics, context);
-    if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(emsDispatch, diagnostics, context);
-    if (result || diagnostics != null) result &= validateEMSDispatch_validateEMSDispatchTemplateId(emsDispatch, diagnostics, context);
-    if (result || diagnostics != null) result &= validateEMSDispatch_validateEMSDispatchCode(emsDispatch, diagnostics, context);
-    if (result || diagnostics != null) result &= validateEMSDispatch_validateEMSDispatchText(emsDispatch, diagnostics, context);
-    if (result || diagnostics != null) result &= validateEMSDispatch_validateEMSDispatchTitle(emsDispatch, diagnostics, context);
-    if (result || diagnostics != null) result &= validateEMSDispatch_validateEMSDispatchEntry1(emsDispatch, diagnostics, context);
-    if (result || diagnostics != null) result &= validateEMSDispatch_validateEMSDispatchEntry2(emsDispatch, diagnostics, context);
-    return result;
-  }
-
-  /**
-   * Validates the validateEMSDispatchTemplateId constraint of '<em>EMS Dispatch</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateEMSDispatch_validateEMSDispatchTemplateId(EMSDispatch emsDispatch, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return emsDispatch.validateEMSDispatchTemplateId(diagnostics, context);
-  }
-
-  /**
-   * Validates the validateEMSDispatchCode constraint of '<em>EMS Dispatch</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateEMSDispatch_validateEMSDispatchCode(EMSDispatch emsDispatch, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return emsDispatch.validateEMSDispatchCode(diagnostics, context);
-  }
-
-  /**
-   * Validates the validateEMSDispatchText constraint of '<em>EMS Dispatch</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateEMSDispatch_validateEMSDispatchText(EMSDispatch emsDispatch, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return emsDispatch.validateEMSDispatchText(diagnostics, context);
-  }
-
-  /**
-   * Validates the validateEMSDispatchTitle constraint of '<em>EMS Dispatch</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateEMSDispatch_validateEMSDispatchTitle(EMSDispatch emsDispatch, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return emsDispatch.validateEMSDispatchTitle(diagnostics, context);
-  }
-
-  /**
-   * Validates the validateEMSDispatchEntry1 constraint of '<em>EMS Dispatch</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateEMSDispatch_validateEMSDispatchEntry1(EMSDispatch emsDispatch, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return emsDispatch.validateEMSDispatchEntry1(diagnostics, context);
-  }
-
-  /**
-   * Validates the validateEMSDispatchEntry2 constraint of '<em>EMS Dispatch</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateEMSDispatch_validateEMSDispatchEntry2(EMSDispatch emsDispatch, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return emsDispatch.validateEMSDispatchEntry2(diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateEMSResponse(EMSResponse emsResponse, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    if (!validate_NoCircularContainment(emsResponse, diagnostics, context)) return false;
-    boolean result = validate_EveryMultiplicityConforms(emsResponse, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryDataValueConforms(emsResponse, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(emsResponse, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryProxyResolves(emsResponse, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_UniqueID(emsResponse, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryKeyUnique(emsResponse, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(emsResponse, diagnostics, context);
-    if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(emsResponse, diagnostics, context);
-    if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(emsResponse, diagnostics, context);
-    if (result || diagnostics != null) result &= validateEMSResponse_validateEMSResponseTemplateId(emsResponse, diagnostics, context);
-    if (result || diagnostics != null) result &= validateEMSResponse_validateEMSResponseCode(emsResponse, diagnostics, context);
-    if (result || diagnostics != null) result &= validateEMSResponse_validateEMSResponseCodeP(emsResponse, diagnostics, context);
-    if (result || diagnostics != null) result &= validateEMSResponse_validateEMSResponseText(emsResponse, diagnostics, context);
-    if (result || diagnostics != null) result &= validateEMSResponse_validateEMSResponseTitle(emsResponse, diagnostics, context);
-    if (result || diagnostics != null) result &= validateEMSResponse_validateEMSResponseEntry1(emsResponse, diagnostics, context);
-    if (result || diagnostics != null) result &= validateEMSResponse_validateEMSResponseEntry2(emsResponse, diagnostics, context);
-    if (result || diagnostics != null) result &= validateEMSResponse_validateEMSResponseEntry3(emsResponse, diagnostics, context);
-    if (result || diagnostics != null) result &= validateEMSResponse_validateEMSResponseEntry4(emsResponse, diagnostics, context);
-    return result;
-  }
-
-  /**
-   * Validates the validateEMSResponseTemplateId constraint of '<em>EMS Response</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateEMSResponse_validateEMSResponseTemplateId(EMSResponse emsResponse, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return emsResponse.validateEMSResponseTemplateId(diagnostics, context);
-  }
-
-  /**
-   * Validates the validateEMSResponseCode constraint of '<em>EMS Response</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateEMSResponse_validateEMSResponseCode(EMSResponse emsResponse, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return emsResponse.validateEMSResponseCode(diagnostics, context);
-  }
-
-  /**
-   * Validates the validateEMSResponseCodeP constraint of '<em>EMS Response</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateEMSResponse_validateEMSResponseCodeP(EMSResponse emsResponse, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return emsResponse.validateEMSResponseCodeP(diagnostics, context);
-  }
-
-  /**
-   * Validates the validateEMSResponseText constraint of '<em>EMS Response</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateEMSResponse_validateEMSResponseText(EMSResponse emsResponse, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return emsResponse.validateEMSResponseText(diagnostics, context);
-  }
-
-  /**
-   * Validates the validateEMSResponseTitle constraint of '<em>EMS Response</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateEMSResponse_validateEMSResponseTitle(EMSResponse emsResponse, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return emsResponse.validateEMSResponseTitle(diagnostics, context);
-  }
-
-  /**
-   * Validates the validateEMSResponseEntry1 constraint of '<em>EMS Response</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateEMSResponse_validateEMSResponseEntry1(EMSResponse emsResponse, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return emsResponse.validateEMSResponseEntry1(diagnostics, context);
-  }
-
-  /**
-   * Validates the validateEMSResponseEntry2 constraint of '<em>EMS Response</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateEMSResponse_validateEMSResponseEntry2(EMSResponse emsResponse, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return emsResponse.validateEMSResponseEntry2(diagnostics, context);
-  }
-
-  /**
-   * Validates the validateEMSResponseEntry3 constraint of '<em>EMS Response</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateEMSResponse_validateEMSResponseEntry3(EMSResponse emsResponse, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return emsResponse.validateEMSResponseEntry3(diagnostics, context);
-  }
-
-  /**
-   * Validates the validateEMSResponseEntry4 constraint of '<em>EMS Response</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateEMSResponse_validateEMSResponseEntry4(EMSResponse emsResponse, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return emsResponse.validateEMSResponseEntry4(diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
   public boolean validateEMSDispositionSection(EMSDispositionSection emsDispositionSection, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     if (!validate_NoCircularContainment(emsDispositionSection, diagnostics, context)) return false;
@@ -3651,11 +3793,10 @@ public class EmspcrValidator extends EObjectValidator
     if (result || diagnostics != null) result &= validateEMSDispositionSection_validateEMSDispositionSectionEntry1(emsDispositionSection, diagnostics, context);
     if (result || diagnostics != null) result &= validateEMSDispositionSection_validateEMSDispositionSectionEntry2(emsDispositionSection, diagnostics, context);
     if (result || diagnostics != null) result &= validateEMSDispositionSection_validateEMSDispositionSectionEntry3(emsDispositionSection, diagnostics, context);
-    if (result || diagnostics != null) result &= validateEMSDispositionSection_validateEMSDispositionSectionEntry4(emsDispositionSection, diagnostics, context);
     if (result || diagnostics != null) result &= validateEMSDispositionSection_validateEMSDispositionSectionEntry5(emsDispositionSection, diagnostics, context);
-    if (result || diagnostics != null) result &= validateEMSDispositionSection_validateEMSDispositionSectionEntry6(emsDispositionSection, diagnostics, context);
     if (result || diagnostics != null) result &= validateEMSDispositionSection_validateEMSDispositionSectionEntry7(emsDispositionSection, diagnostics, context);
-    if (result || diagnostics != null) result &= validateEMSDispositionSection_validateEMSDispositionSectionEntry8(emsDispositionSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validateEMSDispositionSection_validateEMSDispositionSectionEntry6(emsDispositionSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validateEMSDispositionSection_validateEMSDispositionSectionEntry4(emsDispositionSection, diagnostics, context);
     return result;
   }
 
@@ -3759,6 +3900,110 @@ public class EmspcrValidator extends EObjectValidator
   }
 
   /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateEMSPersonnelAdverseEventSection(EMSPersonnelAdverseEventSection emsPersonnelAdverseEventSection, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    if (!validate_NoCircularContainment(emsPersonnelAdverseEventSection, diagnostics, context)) return false;
+    boolean result = validate_EveryMultiplicityConforms(emsPersonnelAdverseEventSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryDataValueConforms(emsPersonnelAdverseEventSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(emsPersonnelAdverseEventSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryProxyResolves(emsPersonnelAdverseEventSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_UniqueID(emsPersonnelAdverseEventSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryKeyUnique(emsPersonnelAdverseEventSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(emsPersonnelAdverseEventSection, diagnostics, context);
+    if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(emsPersonnelAdverseEventSection, diagnostics, context);
+    if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(emsPersonnelAdverseEventSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validateEMSPersonnelAdverseEventSection_validateEMSPersonnelAdverseEventSectionTemplateId(emsPersonnelAdverseEventSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validateEMSPersonnelAdverseEventSection_validateEMSPersonnelAdverseEventSectionCode(emsPersonnelAdverseEventSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validateEMSPersonnelAdverseEventSection_validateEMSPersonnelAdverseEventSectionCodeP(emsPersonnelAdverseEventSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validateEMSPersonnelAdverseEventSection_validateEMSPersonnelAdverseEventSectionText(emsPersonnelAdverseEventSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validateEMSPersonnelAdverseEventSection_validateEMSPersonnelAdverseEventSectionTitle(emsPersonnelAdverseEventSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validateEMSPersonnelAdverseEventSection_validateEMSPersonnelAdverseEventSectionEntry1(emsPersonnelAdverseEventSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validateEMSPersonnelAdverseEventSection_validateEMSPersonnelAdverseEventSectionEntry2(emsPersonnelAdverseEventSection, diagnostics, context);
+    return result;
+  }
+
+  /**
+   * Validates the validateEMSPersonnelAdverseEventSectionTemplateId constraint of '<em>EMS Personnel Adverse Event Section</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateEMSPersonnelAdverseEventSection_validateEMSPersonnelAdverseEventSectionTemplateId(EMSPersonnelAdverseEventSection emsPersonnelAdverseEventSection, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return emsPersonnelAdverseEventSection.validateEMSPersonnelAdverseEventSectionTemplateId(diagnostics, context);
+  }
+
+  /**
+   * Validates the validateEMSPersonnelAdverseEventSectionCode constraint of '<em>EMS Personnel Adverse Event Section</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateEMSPersonnelAdverseEventSection_validateEMSPersonnelAdverseEventSectionCode(EMSPersonnelAdverseEventSection emsPersonnelAdverseEventSection, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return emsPersonnelAdverseEventSection.validateEMSPersonnelAdverseEventSectionCode(diagnostics, context);
+  }
+
+  /**
+   * Validates the validateEMSPersonnelAdverseEventSectionCodeP constraint of '<em>EMS Personnel Adverse Event Section</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateEMSPersonnelAdverseEventSection_validateEMSPersonnelAdverseEventSectionCodeP(EMSPersonnelAdverseEventSection emsPersonnelAdverseEventSection, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return emsPersonnelAdverseEventSection.validateEMSPersonnelAdverseEventSectionCodeP(diagnostics, context);
+  }
+
+  /**
+   * Validates the validateEMSPersonnelAdverseEventSectionText constraint of '<em>EMS Personnel Adverse Event Section</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateEMSPersonnelAdverseEventSection_validateEMSPersonnelAdverseEventSectionText(EMSPersonnelAdverseEventSection emsPersonnelAdverseEventSection, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return emsPersonnelAdverseEventSection.validateEMSPersonnelAdverseEventSectionText(diagnostics, context);
+  }
+
+  /**
+   * Validates the validateEMSPersonnelAdverseEventSectionTitle constraint of '<em>EMS Personnel Adverse Event Section</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateEMSPersonnelAdverseEventSection_validateEMSPersonnelAdverseEventSectionTitle(EMSPersonnelAdverseEventSection emsPersonnelAdverseEventSection, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return emsPersonnelAdverseEventSection.validateEMSPersonnelAdverseEventSectionTitle(diagnostics, context);
+  }
+
+  /**
+   * Validates the validateEMSPersonnelAdverseEventSectionEntry1 constraint of '<em>EMS Personnel Adverse Event Section</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateEMSPersonnelAdverseEventSection_validateEMSPersonnelAdverseEventSectionEntry1(EMSPersonnelAdverseEventSection emsPersonnelAdverseEventSection, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return emsPersonnelAdverseEventSection.validateEMSPersonnelAdverseEventSectionEntry1(diagnostics, context);
+  }
+
+  /**
+   * Validates the validateEMSPersonnelAdverseEventSectionEntry2 constraint of '<em>EMS Personnel Adverse Event Section</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateEMSPersonnelAdverseEventSection_validateEMSPersonnelAdverseEventSectionEntry2(EMSPersonnelAdverseEventSection emsPersonnelAdverseEventSection, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return emsPersonnelAdverseEventSection.validateEMSPersonnelAdverseEventSectionEntry2(diagnostics, context);
+  }
+
+  /**
    * Validates the validateEMSDispositionSectionEntry5 constraint of '<em>EMS Disposition Section</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -3789,121 +4034,6 @@ public class EmspcrValidator extends EObjectValidator
   public boolean validateEMSDispositionSection_validateEMSDispositionSectionEntry7(EMSDispositionSection emsDispositionSection, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return emsDispositionSection.validateEMSDispositionSectionEntry7(diagnostics, context);
-  }
-
-  /**
-   * Validates the validateEMSDispositionSectionEntry8 constraint of '<em>EMS Disposition Section</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateEMSDispositionSection_validateEMSDispositionSectionEntry8(EMSDispositionSection emsDispositionSection, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return emsDispositionSection.validateEMSDispositionSectionEntry8(diagnostics, context);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateEMSPersonnelAdverseEvent(EMSPersonnelAdverseEvent emsPersonnelAdverseEvent, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    if (!validate_NoCircularContainment(emsPersonnelAdverseEvent, diagnostics, context)) return false;
-    boolean result = validate_EveryMultiplicityConforms(emsPersonnelAdverseEvent, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryDataValueConforms(emsPersonnelAdverseEvent, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(emsPersonnelAdverseEvent, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryProxyResolves(emsPersonnelAdverseEvent, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_UniqueID(emsPersonnelAdverseEvent, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryKeyUnique(emsPersonnelAdverseEvent, diagnostics, context);
-    if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(emsPersonnelAdverseEvent, diagnostics, context);
-    if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(emsPersonnelAdverseEvent, diagnostics, context);
-    if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(emsPersonnelAdverseEvent, diagnostics, context);
-    if (result || diagnostics != null) result &= validateEMSPersonnelAdverseEvent_validateEMSPersonnelAdverseEventTemplateId(emsPersonnelAdverseEvent, diagnostics, context);
-    if (result || diagnostics != null) result &= validateEMSPersonnelAdverseEvent_validateEMSPersonnelAdverseEventCode(emsPersonnelAdverseEvent, diagnostics, context);
-    if (result || diagnostics != null) result &= validateEMSPersonnelAdverseEvent_validateEMSPersonnelAdverseEventCodeP(emsPersonnelAdverseEvent, diagnostics, context);
-    if (result || diagnostics != null) result &= validateEMSPersonnelAdverseEvent_validateEMSPersonnelAdverseEventText(emsPersonnelAdverseEvent, diagnostics, context);
-    if (result || diagnostics != null) result &= validateEMSPersonnelAdverseEvent_validateEMSPersonnelAdverseEventTitle(emsPersonnelAdverseEvent, diagnostics, context);
-    if (result || diagnostics != null) result &= validateEMSPersonnelAdverseEvent_validateEMSPersonnelAdverseEventEntry1(emsPersonnelAdverseEvent, diagnostics, context);
-    if (result || diagnostics != null) result &= validateEMSPersonnelAdverseEvent_validateEMSPersonnelAdverseEventEntry2(emsPersonnelAdverseEvent, diagnostics, context);
-    return result;
-  }
-
-  /**
-   * Validates the validateEMSPersonnelAdverseEventTemplateId constraint of '<em>EMS Personnel Adverse Event</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateEMSPersonnelAdverseEvent_validateEMSPersonnelAdverseEventTemplateId(EMSPersonnelAdverseEvent emsPersonnelAdverseEvent, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return emsPersonnelAdverseEvent.validateEMSPersonnelAdverseEventTemplateId(diagnostics, context);
-  }
-
-  /**
-   * Validates the validateEMSPersonnelAdverseEventCode constraint of '<em>EMS Personnel Adverse Event</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateEMSPersonnelAdverseEvent_validateEMSPersonnelAdverseEventCode(EMSPersonnelAdverseEvent emsPersonnelAdverseEvent, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return emsPersonnelAdverseEvent.validateEMSPersonnelAdverseEventCode(diagnostics, context);
-  }
-
-  /**
-   * Validates the validateEMSPersonnelAdverseEventCodeP constraint of '<em>EMS Personnel Adverse Event</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateEMSPersonnelAdverseEvent_validateEMSPersonnelAdverseEventCodeP(EMSPersonnelAdverseEvent emsPersonnelAdverseEvent, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return emsPersonnelAdverseEvent.validateEMSPersonnelAdverseEventCodeP(diagnostics, context);
-  }
-
-  /**
-   * Validates the validateEMSPersonnelAdverseEventText constraint of '<em>EMS Personnel Adverse Event</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateEMSPersonnelAdverseEvent_validateEMSPersonnelAdverseEventText(EMSPersonnelAdverseEvent emsPersonnelAdverseEvent, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return emsPersonnelAdverseEvent.validateEMSPersonnelAdverseEventText(diagnostics, context);
-  }
-
-  /**
-   * Validates the validateEMSPersonnelAdverseEventTitle constraint of '<em>EMS Personnel Adverse Event</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateEMSPersonnelAdverseEvent_validateEMSPersonnelAdverseEventTitle(EMSPersonnelAdverseEvent emsPersonnelAdverseEvent, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return emsPersonnelAdverseEvent.validateEMSPersonnelAdverseEventTitle(diagnostics, context);
-  }
-
-  /**
-   * Validates the validateEMSPersonnelAdverseEventEntry1 constraint of '<em>EMS Personnel Adverse Event</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateEMSPersonnelAdverseEvent_validateEMSPersonnelAdverseEventEntry1(EMSPersonnelAdverseEvent emsPersonnelAdverseEvent, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return emsPersonnelAdverseEvent.validateEMSPersonnelAdverseEventEntry1(diagnostics, context);
-  }
-
-  /**
-   * Validates the validateEMSPersonnelAdverseEventEntry2 constraint of '<em>EMS Personnel Adverse Event</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public boolean validateEMSPersonnelAdverseEvent_validateEMSPersonnelAdverseEventEntry2(EMSPersonnelAdverseEvent emsPersonnelAdverseEvent, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return emsPersonnelAdverseEvent.validateEMSPersonnelAdverseEventEntry2(diagnostics, context);
   }
 
   /**
@@ -3984,6 +4114,134 @@ public class EmspcrValidator extends EObjectValidator
   public boolean validateEMSProtocolSection_validateEMSProtocolSectionEntry3(EMSProtocolSection emsProtocolSection, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return emsProtocolSection.validateEMSProtocolSectionEntry3(diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateEMSResponseSection(EMSResponseSection emsResponseSection, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    if (!validate_NoCircularContainment(emsResponseSection, diagnostics, context)) return false;
+    boolean result = validate_EveryMultiplicityConforms(emsResponseSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryDataValueConforms(emsResponseSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(emsResponseSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryProxyResolves(emsResponseSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_UniqueID(emsResponseSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryKeyUnique(emsResponseSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(emsResponseSection, diagnostics, context);
+    if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(emsResponseSection, diagnostics, context);
+    if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(emsResponseSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validateEMSResponseSection_validateEMSResponseSectionTemplateId(emsResponseSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validateEMSResponseSection_validateEMSResponseSectionCode(emsResponseSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validateEMSResponseSection_validateEMSResponseSectionCodeP(emsResponseSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validateEMSResponseSection_validateEMSResponseSectionText(emsResponseSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validateEMSResponseSection_validateEMSResponseSectionTitle(emsResponseSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validateEMSResponseSection_validateEMSResponseSectionEntry1(emsResponseSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validateEMSResponseSection_validateEMSResponseSectionEntry2(emsResponseSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validateEMSResponseSection_validateEMSResponseSectionEntry3(emsResponseSection, diagnostics, context);
+    if (result || diagnostics != null) result &= validateEMSResponseSection_validateEMSResponseSectionEntry4(emsResponseSection, diagnostics, context);
+    return result;
+  }
+
+  /**
+   * Validates the validateEMSResponseSectionTemplateId constraint of '<em>EMS Response Section</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateEMSResponseSection_validateEMSResponseSectionTemplateId(EMSResponseSection emsResponseSection, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return emsResponseSection.validateEMSResponseSectionTemplateId(diagnostics, context);
+  }
+
+  /**
+   * Validates the validateEMSResponseSectionCode constraint of '<em>EMS Response Section</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateEMSResponseSection_validateEMSResponseSectionCode(EMSResponseSection emsResponseSection, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return emsResponseSection.validateEMSResponseSectionCode(diagnostics, context);
+  }
+
+  /**
+   * Validates the validateEMSResponseSectionCodeP constraint of '<em>EMS Response Section</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateEMSResponseSection_validateEMSResponseSectionCodeP(EMSResponseSection emsResponseSection, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return emsResponseSection.validateEMSResponseSectionCodeP(diagnostics, context);
+  }
+
+  /**
+   * Validates the validateEMSResponseSectionText constraint of '<em>EMS Response Section</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateEMSResponseSection_validateEMSResponseSectionText(EMSResponseSection emsResponseSection, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return emsResponseSection.validateEMSResponseSectionText(diagnostics, context);
+  }
+
+  /**
+   * Validates the validateEMSResponseSectionTitle constraint of '<em>EMS Response Section</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateEMSResponseSection_validateEMSResponseSectionTitle(EMSResponseSection emsResponseSection, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return emsResponseSection.validateEMSResponseSectionTitle(diagnostics, context);
+  }
+
+  /**
+   * Validates the validateEMSResponseSectionEntry1 constraint of '<em>EMS Response Section</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateEMSResponseSection_validateEMSResponseSectionEntry1(EMSResponseSection emsResponseSection, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return emsResponseSection.validateEMSResponseSectionEntry1(diagnostics, context);
+  }
+
+  /**
+   * Validates the validateEMSResponseSectionEntry2 constraint of '<em>EMS Response Section</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateEMSResponseSection_validateEMSResponseSectionEntry2(EMSResponseSection emsResponseSection, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return emsResponseSection.validateEMSResponseSectionEntry2(diagnostics, context);
+  }
+
+  /**
+   * Validates the validateEMSResponseSectionEntry3 constraint of '<em>EMS Response Section</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateEMSResponseSection_validateEMSResponseSectionEntry3(EMSResponseSection emsResponseSection, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return emsResponseSection.validateEMSResponseSectionEntry3(diagnostics, context);
+  }
+
+  /**
+   * Validates the validateEMSResponseSectionEntry4 constraint of '<em>EMS Response Section</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateEMSResponseSection_validateEMSResponseSectionEntry4(EMSResponseSection emsResponseSection, DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return emsResponseSection.validateEMSResponseSectionEntry4(diagnostics, context);
   }
 
   /**

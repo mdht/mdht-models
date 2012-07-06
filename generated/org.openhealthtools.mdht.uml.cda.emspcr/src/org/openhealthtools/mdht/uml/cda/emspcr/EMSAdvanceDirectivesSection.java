@@ -10,6 +10,8 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
+import org.openhealthtools.mdht.uml.cda.Section;
+
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>EMS Advance Directives Section</b></em>'.
@@ -17,11 +19,11 @@ import org.eclipse.emf.common.util.DiagnosticChain;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage#getEMSAdvanceDirectivesSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='EMSAdvanceDirectivesSectionTemplateId EMSAdvanceDirectivesSectionCode EMSAdvanceDirectivesSectionEntry1' templateId.root='2.16.840.1.113883.17.3.10.1.12' code.code='67840-9' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='EMS Advance Directives' title.mixed='EMS Advance Directives' constraints.validation.warning='EMSAdvanceDirectivesSectionTitle'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='EMSAdvanceDirectivesSectionTemplateId EMSAdvanceDirectivesSectionCode EMSAdvanceDirectivesSectionEntry1' templateId.root='2.16.840.1.113883.17.3.10.1.12' code.code='67840-9' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='EMS Advance Directives Section' title.mixed='EMS Advance Directives' constraints.validation.warning='EMSAdvanceDirectivesSectionTitle'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSAdvanceDirectivesSectionDerivedEntryEMSAdvancedDirectiveObservation code.code='67516-5' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Advanced directive' constraints.validation.error='EMSAdvancedDirectiveObservationCode EMSAdvancedDirectiveObservationValue' value.codeSystem='2.16.840.1.113883.6.1' value.codeSystemName='LOINC'"
  * @generated
  */
-public interface EMSAdvanceDirectivesSection extends DerivedCDASection
+public interface EMSAdvanceDirectivesSection extends Section
 {
   /**
    * <!-- begin-user-doc -->

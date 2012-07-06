@@ -23,6 +23,8 @@ import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPlugin;
 
 import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
 
+import org.openhealthtools.mdht.uml.cda.operations.SectionOperations;
+
 /**
  * <!-- begin-user-doc -->
  * A static utility class that provides operations related to '<em><b>EMS Protocol Section</b></em>' model objects.
@@ -41,7 +43,7 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  *
  * @generated
  */
-public class EMSProtocolSectionOperations extends DerivedCDASectionOperations
+public class EMSProtocolSectionOperations extends SectionOperations
 {
   /**
    * <!-- begin-user-doc -->
@@ -129,7 +131,7 @@ public class EMSProtocolSectionOperations extends DerivedCDASectionOperations
    */
   protected static final String VALIDATE_EMS_PROTOCOL_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
 "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "+
-"value.code = '67537?1' and value.codeSystem = '2.16.840.1.113883.6.1')";
+"value.code = '67537-1' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
   /**
    * The cached OCL invariant for the '{@link #validateEMSProtocolSectionCode(EMSProtocolSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Protocol Section Code</em>}' invariant operation.
@@ -149,7 +151,7 @@ public class EMSProtocolSectionOperations extends DerivedCDASectionOperations
    * <!-- begin-model-doc -->
    * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
    * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
-   * value.code = '67537?1' and value.codeSystem = '2.16.840.1.113883.6.1')
+   * value.code = '67537-1' and value.codeSystem = '2.16.840.1.113883.6.1')
    * @param emsProtocolSection The receiving '<em><b>EMS Protocol Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
