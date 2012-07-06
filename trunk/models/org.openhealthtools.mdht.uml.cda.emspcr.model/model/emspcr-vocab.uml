@@ -1344,7 +1344,7 @@
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_YdC2YMFTEeGyGv5RKvEgDA" name="HL7 Human Language"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_YdLZQMFTEeGyGv5RKvEgDA" name="Administrative Gender "/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_YdPDoMFTEeGyGv5RKvEgDA" name="HL7 Administrative Gender"/>
-    <packagedElement xmi:type="uml:Enumeration" xmi:id="_YdVxUMFTEeGyGv5RKvEgDA" name="Race and Ethnicity"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_YdVxUMFTEeGyGv5RKvEgDA" name="Race"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_YdY0oMFTEeGyGv5RKvEgDA" name="Race and Ethnicity"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_YgHYgMFTEeGyGv5RKvEgDA" name="Patient Status Change">
       <ownedLiteral xmi:id="_dgKyAMFTEeGyGv5RKvEgDA" name="LA11011-6"/>
@@ -1397,6 +1397,10 @@
       <ownedLiteral xmi:id="_eC65wMFTEeGyGv5RKvEgDA" name="LA9346-3"/>
       <ownedLiteral xmi:id="_eDBAYMFTEeGyGv5RKvEgDA" name="LA9347-1"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_l2HA0McHEeGjDJAyT0XW9Q" name="Ethnicity"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_M5r9gMcdEeGjDJAyT0XW9Q" name="ICD-10"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_q2WlkMcdEeGjDJAyT0XW9Q" name="ICD-10 PCS"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_t_HGQMcdEeGjDJAyT0XW9Q" name="ICD-10 CM"/>
     <profileApplication xmi:id="_xpzscWeQEeGtXKebdWh3hg">
       <eAnnotations xmi:id="_xp0TgGeQEeGtXKebdWh3hg" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
@@ -1431,7 +1435,7 @@
   <term:ValueSetVersion xmi:id="_aepF8HSMEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.5.29" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_aeoe4HSMEeGa4IXs2ghZEw"/>
   <term:ValueSetVersion xmi:id="_f2bqAHSMEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.5.3" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_f2bC8HSMEeGa4IXs2ghZEw"/>
   <term:ValueSetVersion xmi:id="_jOfyAHSMEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.5.30" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_jOfK8HSMEeGa4IXs2ghZEw"/>
-  <term:ValueSetVersion xmi:id="_l0Vy4HSMEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.5.31"  codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_l0VL0HSMEeGa4IXs2ghZEw"/>
+  <term:ValueSetVersion xmi:id="_l0Vy4HSMEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.5.31" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_l0VL0HSMEeGa4IXs2ghZEw"/>
   <term:ValueSetVersion xmi:id="_ovhxoHSMEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.5.32" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_ovhKkHSMEeGa4IXs2ghZEw"/>
   <term:ValueSetVersion xmi:id="_rf5ngHSMEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.5.33" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_rf5AcHSMEeGa4IXs2ghZEw"/>
   <term:ValueSetVersion xmi:id="_um7C0HSMEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.5.34" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_um6bwHSMEeGa4IXs2ghZEw"/>
@@ -1497,23 +1501,25 @@
   <term:ValueSetVersion xmi:id="_HFAeIHSUEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.5.91" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_HE_3EHSUEeGa4IXs2ghZEw"/>
   <term:ValueSetVersion xmi:id="_MkZfAHSUEeGa4IXs2ghZEw" identifier="2.16.840.1.113883.17.3.5.9" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_MkY38HSUEeGa4IXs2ghZEw"/>
   <term:ValueSetVersion xmi:id="_dw5r4JsjEeGzXI65shd6Fw" identifier="2.16.840.1.113883.17.3.5.92" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_dw32sJsjEeGzXI65shd6Fw"/>
-  <term:ValueSetVersion xmi:id="_Ycp00MFTEeGyGv5RKvEgDA" identifier="2.16.840.1.113883.1.11.10228" fullName="Confidentiality" definition="Confidentiality" codeSystem="_YctfMMFTEeGyGv5RKvEgDA" base_Enumeration="_YZGKgMFTEeGyGv5RKvEgDA"/>
+  <term:ValueSetVersion xmi:id="_Ycp00MFTEeGyGv5RKvEgDA" identifier="2.16.840.1.113883.1.11.10228" fullName="Confidentiality" codeSystem="_YctfMMFTEeGyGv5RKvEgDA" base_Enumeration="_YZGKgMFTEeGyGv5RKvEgDA"/>
   <term:CodeSystemVersion xmi:id="_YctfMMFTEeGyGv5RKvEgDA" identifier="2.16.840.1.113883.5.25" version="" source="HL7" base_Enumeration="_Ycs4IMFTEeGyGv5RKvEgDA"/>
-  <term:ValueSetVersion xmi:id="_Yc5sccFTEeGyGv5RKvEgDA" identifier="2.16.840.1.113883.1.11.11526" fullName="Human language" definition="Human language" codeSystem="_YdC2YcFTEeGyGv5RKvEgDA" base_Enumeration="_Yc5scMFTEeGyGv5RKvEgDA"/>
+  <term:ValueSetVersion xmi:id="_Yc5sccFTEeGyGv5RKvEgDA" identifier="2.16.840.1.113883.1.11.11526" fullName="Human language" codeSystem="_YdC2YcFTEeGyGv5RKvEgDA" base_Enumeration="_Yc5scMFTEeGyGv5RKvEgDA"/>
   <term:CodeSystemVersion xmi:id="_YdC2YcFTEeGyGv5RKvEgDA" identifier="2.16.840.1.113883.6.121" version="" source="HL7" base_Enumeration="_YdC2YMFTEeGyGv5RKvEgDA"/>
-  <term:ValueSetVersion xmi:id="_YdLZQcFTEeGyGv5RKvEgDA" identifier="2.16.840.1.113883.1.11.1" fullName="Administrative Gender " definition="Administrative Gender " codeSystem="_YdPqsMFTEeGyGv5RKvEgDA" base_Enumeration="_YdLZQMFTEeGyGv5RKvEgDA"/>
+  <term:ValueSetVersion xmi:id="_YdLZQcFTEeGyGv5RKvEgDA" identifier="2.16.840.1.113883.1.11.1" fullName="Administrative Gender " codeSystem="_YdPqsMFTEeGyGv5RKvEgDA" base_Enumeration="_YdLZQMFTEeGyGv5RKvEgDA"/>
   <term:CodeSystemVersion xmi:id="_YdPqsMFTEeGyGv5RKvEgDA" identifier="2.16.840.1.113883.5.1" version="" source="HL7" base_Enumeration="_YdPDoMFTEeGyGv5RKvEgDA"/>
-  <term:ValueSetVersion xmi:id="_YdVxUcFTEeGyGv5RKvEgDA" identifier="2.16.840.1.113883.6.238" fullName="Race and Ethnicity" definition="Race and Ethnicity" codeSystem="_YdY0ocFTEeGyGv5RKvEgDA" base_Enumeration="_YdVxUMFTEeGyGv5RKvEgDA"/>
-  <term:CodeSystemVersion xmi:id="_YdY0ocFTEeGyGv5RKvEgDA" identifier="2.16.840.1.113883.5.104" version="" source="CDC" base_Enumeration="_YdY0oMFTEeGyGv5RKvEgDA"/>
-  <term:ValueSetVersion xmi:id="_YgHYgcFTEeGyGv5RKvEgDA" identifier="2.16.840.1.113883.17.3.5.67" fullName="Patient Status Change" definition="Patient Status Change" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_YgHYgMFTEeGyGv5RKvEgDA"/>
+  <term:ValueSetVersion xmi:id="_YdVxUcFTEeGyGv5RKvEgDA" identifier="2.16.840.1.113883.1.11.14914" fullName="Race" base_Enumeration="_YdVxUMFTEeGyGv5RKvEgDA">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dfdYoKDqEd-dVeaMP0XXQw"/>
+  </term:ValueSetVersion>
+  <term:CodeSystemVersion xmi:id="_YdY0ocFTEeGyGv5RKvEgDA" identifier="2.16.840.1.113883.6.238" version="" source="CDC" base_Enumeration="_YdY0oMFTEeGyGv5RKvEgDA"/>
+  <term:ValueSetVersion xmi:id="_YgHYgcFTEeGyGv5RKvEgDA" identifier="2.16.840.1.113883.17.3.5.67" fullName="Patient Status Change" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_YgHYgMFTEeGyGv5RKvEgDA"/>
   <term:CodeSystemVersion xmi:id="_YgJ0wcFTEeGyGv5RKvEgDA" identifier="2.16.840.1.113883.6.1" version="" source="NEMSIS" base_Enumeration="_YgJ0wMFTEeGyGv5RKvEgDA"/>
-  <term:ValueSetVersion xmi:id="_YhX8wMFTEeGyGv5RKvEgDA" identifier="2.16.840.1.113883.17.3.5.93" fullName="Stroke Scale Score" definition="Stroke Scale Score" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_YhXVsMFTEeGyGv5RKvEgDA"/>
-  <term:ValueSetVersion xmi:id="_YheDYcFTEeGyGv5RKvEgDA" identifier="2.16.840.1.113883.17.3.5.94" fullName="Complaint Type" definition="Complaint Type" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_YheDYMFTEeGyGv5RKvEgDA"/>
-  <term:ValueSetVersion xmi:id="_YhkKAcFTEeGyGv5RKvEgDA" identifier="2.16.840.1.113883.17.3.5.95" fullName="Reason Procedure not Performed" definition="Reason Procedure not Performed" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_YhkKAMFTEeGyGv5RKvEgDA"/>
-  <term:ValueSetVersion xmi:id="_Yht7AMFTEeGyGv5RKvEgDA" identifier="2.16.840.1.113883.17.3.5.97" fullName="Resuscitation Attempt" definition="Resuscitation Attempt" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_YhtT8MFTEeGyGv5RKvEgDA"/>
-  <term:ValueSetVersion xmi:id="_Yh0BocFTEeGyGv5RKvEgDA" identifier="2.16.840.1.113883.17.3.5.96" fullName="GCS motor response" definition="GCS motor response" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_Yh0BoMFTEeGyGv5RKvEgDA"/>
-  <term:ValueSetVersion xmi:id="_Yh6vUcFTEeGyGv5RKvEgDA" identifier="2.16.840.1.113883.17.3.5.98" fullName="GCS verbal response" definition="GCS verbal response" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_Yh6vUMFTEeGyGv5RKvEgDA"/>
-  <term:ValueSetVersion xmi:id="_YiBdAcFTEeGyGv5RKvEgDA" identifier="2.16.840.1.113883.17.3.5.99" fullName="GCS eye response" definition="GCS eye response" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_YiBdAMFTEeGyGv5RKvEgDA"/>
+  <term:ValueSetVersion xmi:id="_YhX8wMFTEeGyGv5RKvEgDA" identifier="2.16.840.1.113883.17.3.5.93" fullName="Stroke Scale Score" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_YhXVsMFTEeGyGv5RKvEgDA"/>
+  <term:ValueSetVersion xmi:id="_YheDYcFTEeGyGv5RKvEgDA" identifier="2.16.840.1.113883.17.3.5.94" fullName="Complaint Type" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_YheDYMFTEeGyGv5RKvEgDA"/>
+  <term:ValueSetVersion xmi:id="_YhkKAcFTEeGyGv5RKvEgDA" identifier="2.16.840.1.113883.17.3.5.95" fullName="Reason Procedure not Performed" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_YhkKAMFTEeGyGv5RKvEgDA"/>
+  <term:ValueSetVersion xmi:id="_Yht7AMFTEeGyGv5RKvEgDA" identifier="2.16.840.1.113883.17.3.5.97" fullName="Resuscitation Attempt" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_YhtT8MFTEeGyGv5RKvEgDA"/>
+  <term:ValueSetVersion xmi:id="_Yh0BocFTEeGyGv5RKvEgDA" identifier="2.16.840.1.113883.17.3.5.96" fullName="GCS motor response" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_Yh0BoMFTEeGyGv5RKvEgDA"/>
+  <term:ValueSetVersion xmi:id="_Yh6vUcFTEeGyGv5RKvEgDA" identifier="2.16.840.1.113883.17.3.5.98" fullName="GCS verbal response" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_Yh6vUMFTEeGyGv5RKvEgDA"/>
+  <term:ValueSetVersion xmi:id="_YiBdAcFTEeGyGv5RKvEgDA" identifier="2.16.840.1.113883.17.3.5.99" fullName="GCS eye response" codeSystem="_YgJ0wcFTEeGyGv5RKvEgDA" base_Enumeration="_YiBdAMFTEeGyGv5RKvEgDA"/>
   <term:ValueSetCode xmi:id="_cIfNYMFTEeGyGv5RKvEgDA" conceptName="Blunt" base_EnumerationLiteral="_cGxWIMFTEeGyGv5RKvEgDA" xxxxx="LA17335-3"/>
   <term:ValueSetCode xmi:id="_cImiIMFTEeGyGv5RKvEgDA" conceptName="Penetrating" base_EnumerationLiteral="_cIl7EMFTEeGyGv5RKvEgDA" xxxxx="LA17336-1"/>
   <term:ValueSetCode xmi:id="_cIsowcFTEeGyGv5RKvEgDA" conceptName="Other" base_EnumerationLiteral="_cIsowMFTEeGyGv5RKvEgDA" xxxxx="LA46-8"/>
@@ -2714,4 +2720,10 @@
   <term:ValueSetCode xmi:id="_eC0MEcFTEeGyGv5RKvEgDA" conceptName="Opens eyes in response to painful stimulation" base_EnumerationLiteral="_eC0MEMFTEeGyGv5RKvEgDA" xxxxx="LA9345-5"/>
   <term:ValueSetCode xmi:id="_eC65wcFTEeGyGv5RKvEgDA" conceptName="Opens eyes in response to verbal stimulation" base_EnumerationLiteral="_eC65wMFTEeGyGv5RKvEgDA" xxxxx="LA9346-3"/>
   <term:ValueSetCode xmi:id="_eDBncMFTEeGyGv5RKvEgDA" conceptName="Opens eyes spontaneously" base_EnumerationLiteral="_eDBAYMFTEeGyGv5RKvEgDA" xxxxx="LA9347-1"/>
+  <term:ValueSetVersion xmi:id="_l2Hn4McHEeGjDJAyT0XW9Q" identifier="2.16.840.1.113883.1.11.15836" base_Enumeration="_l2HA0McHEeGjDJAyT0XW9Q">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dfdYoKDqEd-dVeaMP0XXQw"/>
+  </term:ValueSetVersion>
+  <term:CodeSystemVersion xmi:id="_M5tLoMcdEeGjDJAyT0XW9Q" identifier="2.16.840.1.113883.6.3.1" base_Enumeration="_M5r9gMcdEeGjDJAyT0XW9Q"/>
+  <term:CodeSystemVersion xmi:id="_q2XMoMcdEeGjDJAyT0XW9Q" identifier="2.16.840.1.113883.6.4" base_Enumeration="_q2WlkMcdEeGjDJAyT0XW9Q"/>
+  <term:CodeSystemVersion xmi:id="_t_IUYMcdEeGjDJAyT0XW9Q" identifier="2.16.840.1.113883.6.90" base_Enumeration="_t_HGQMcdEeGjDJAyT0XW9Q"/>
 </xmi:XMI>
