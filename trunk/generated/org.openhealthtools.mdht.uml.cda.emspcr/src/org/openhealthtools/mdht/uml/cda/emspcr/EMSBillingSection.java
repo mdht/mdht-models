@@ -10,6 +10,8 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
+import org.openhealthtools.mdht.uml.cda.Section;
+
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>EMS Billing Section</b></em>'.
@@ -17,14 +19,14 @@ import org.eclipse.emf.common.util.DiagnosticChain;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage#getEMSBillingSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='EMSBillingSectionTemplateId EMSBillingSectionCode EMSBillingSectionBillingConditionentry EMSBillingSectionLosentry' templateId.root='2.16.840.1.113883.17.3.10.1.5' code.code='67659-3' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='EMSBillingSectionTemplateId EMSBillingSectionCode EMSBillingSectionBillingConditionentry EMSBillingSectionLosentry' templateId.root='2.16.840.1.113883.17.3.10.1.5' code.code='67659-3' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='EMS Billing Section'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSBillingSectionBillingConditionEntry constraints.validation.error='BillingConditionEntryObservation'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSBillingSectionBillingConditionEntryBillingCondition code.code='67556-1' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' constraints.validation.error='BillingConditionCode BillingConditionCodeVS BillingConditionCodeP BillingConditionValue BillingConditionValueP' constraints.validation.dependOn.BillingConditionCode='BillingConditionCodeP' constraints.validation.dependOn.BillingConditionCodeVS='BillingConditionCodeP' value.codeSystem='2.16.840.1.113883.6.1' value.codeSystemName='LOINC'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSBillingSectionBillingConditionEntryBillingCondition code.code='67556-1' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Billing condition' constraints.validation.error='BillingConditionCode BillingConditionCodeVS BillingConditionCodeP BillingConditionValue BillingConditionValueP' constraints.validation.dependOn.BillingConditionCode='BillingConditionCodeP' constraints.validation.dependOn.BillingConditionCodeVS='BillingConditionCodeP' value.codeSystem='2.16.840.1.113883.6.1' value.codeSystemName='LOINC'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSBillingSectionLOSDerivedEntry constraints.validation.error='LOSDerivedEntryObservation'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSBillingSectionLOSDerivedEntryLevelOfService code.code='69464-6' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='EMS level of service' constraints.validation.error='LevelOfServiceCode LevelOfServiceCodeP LevelOfServiceValue LevelOfServiceValueP' constraints.validation.dependOn.LevelOfServiceCode='LevelOfServiceCodeP' value.codeSystem='2.16.840.1.113883.6.1' value.codeSystemName='LOINC'"
  * @generated
  */
-public interface EMSBillingSection extends DerivedCDASection
+public interface EMSBillingSection extends Section
 {
   /**
    * <!-- begin-user-doc -->

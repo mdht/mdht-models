@@ -17,6 +17,8 @@ import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 
 import org.openhealthtools.mdht.uml.cda.emspcr.operations.EMSPhysicalAssessmentSectionOperations;
 
+import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
+
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -28,7 +30,7 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  *
  * @generated
  */
-public class EMSPhysicalAssessmentSectionImpl extends DerivedCDASectionImpl implements EMSPhysicalAssessmentSection
+public class EMSPhysicalAssessmentSectionImpl extends SectionImpl implements EMSPhysicalAssessmentSection
 {
   /**
    * <!-- begin-user-doc -->

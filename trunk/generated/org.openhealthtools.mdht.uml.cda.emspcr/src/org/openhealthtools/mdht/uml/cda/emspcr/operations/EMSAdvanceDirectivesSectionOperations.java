@@ -23,6 +23,8 @@ import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPlugin;
 
 import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
 
+import org.openhealthtools.mdht.uml.cda.operations.SectionOperations;
+
 /**
  * <!-- begin-user-doc -->
  * A static utility class that provides operations related to '<em><b>EMS Advance Directives Section</b></em>' model objects.
@@ -40,7 +42,7 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  *
  * @generated
  */
-public class EMSAdvanceDirectivesSectionOperations extends DerivedCDASectionOperations
+public class EMSAdvanceDirectivesSectionOperations extends SectionOperations
 {
   /**
    * <!-- begin-user-doc -->

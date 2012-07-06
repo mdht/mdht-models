@@ -23,6 +23,8 @@ import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPlugin;
 
 import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
 
+import org.openhealthtools.mdht.uml.cda.operations.SectionOperations;
+
 /**
  * <!-- begin-user-doc -->
  * A static utility class that provides operations related to '<em><b>EMS Situation Section</b></em>' model objects.
@@ -49,7 +51,7 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  *
  * @generated
  */
-public class EMSSituationSectionOperations extends DerivedCDASectionOperations
+public class EMSSituationSectionOperations extends SectionOperations
 {
   /**
    * <!-- begin-user-doc -->
@@ -137,7 +139,7 @@ public class EMSSituationSectionOperations extends DerivedCDASectionOperations
    */
   protected static final String VALIDATE_EMS_SITUATION_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
 "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "+
-"value.code = '67666?8' and value.codeSystem = '2.16.840.1.113883.6.1')";
+"value.code = '67666-8' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
   /**
    * The cached OCL invariant for the '{@link #validateEMSSituationSectionCode(EMSSituationSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Situation Section Code</em>}' invariant operation.
@@ -157,7 +159,7 @@ public class EMSSituationSectionOperations extends DerivedCDASectionOperations
    * <!-- begin-model-doc -->
    * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
    * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
-   * value.code = '67666?8' and value.codeSystem = '2.16.840.1.113883.6.1')
+   * value.code = '67666-8' and value.codeSystem = '2.16.840.1.113883.6.1')
    * @param emsSituationSection The receiving '<em><b>EMS Situation Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.

@@ -70,28 +70,27 @@ public class EmspcrFactoryImpl extends EFactoryImpl implements EmspcrFactory
     {
       case EmspcrPackage.PATIENT_CARE_REPORT: return createPatientCareReport();
       case EmspcrPackage.EMS_BILLING_SECTION: return createEMSBillingSection();
-      case EmspcrPackage.DERIVED_CDA_SECTION: return createDerivedCDASection();
-      case EmspcrPackage.DERIVED_ENTRY: return createDerivedEntry();
       case EmspcrPackage.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION: return createEMSInjuryIncidentDescriptionSection();
       case EmspcrPackage.EMS_CURRENT_MEDICATION_SECTION: return createEMSCurrentMedicationSection();
       case EmspcrPackage.EMS_CARDIAC_ARREST_EVENT_SECTION: return createEMSCardiacArrestEventSection();
       case EmspcrPackage.EMS_ADVANCE_DIRECTIVES_SECTION: return createEMSAdvanceDirectivesSection();
       case EmspcrPackage.EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION: return createEMSAllergiesAndAdverseReactionsSection();
-      case EmspcrPackage.EMS_PAST_MEDICAL_HISTORY: return createEMSPastMedicalHistory();
-      case EmspcrPackage.EMS_SOCIAL_HISTORY: return createEMSSocialHistory();
+      case EmspcrPackage.EMS_PAST_MEDICAL_HISTORY_SECTION: return createEMSPastMedicalHistorySection();
+      case EmspcrPackage.EMS_SOCIAL_HISTORY_SECTION: return createEMSSocialHistorySection();
       case EmspcrPackage.EMS_PHYSICAL_ASSESSMENT_SECTION: return createEMSPhysicalAssessmentSection();
       case EmspcrPackage.EMS_MEDICATIONS_ADMINISTERED_SECTION: return createEMSMedicationsAdministeredSection();
       case EmspcrPackage.EMS_PROCEDURES_PERFORMED_SECTION: return createEMSProceduresPerformedSection();
-      case EmspcrPackage.EMS_PATIENT_CARE_NARRATIVE: return createEMSPatientCareNarrative();
+      case EmspcrPackage.EMS_PATIENT_CARE_NARRATIVE_SECTION: return createEMSPatientCareNarrativeSection();
       case EmspcrPackage.EMS_SCENE_SECTION: return createEMSSceneSection();
-      case EmspcrPackage.EMS_VITAL_SIGNS_SECTION: return createEMSVitalSignsSection();
-      case EmspcrPackage.EMS_DISPATCH: return createEMSDispatch();
-      case EmspcrPackage.EMS_RESPONSE: return createEMSResponse();
+      case EmspcrPackage.EMS_DISPATCH_SECTION: return createEMSDispatchSection();
       case EmspcrPackage.EMS_DISPOSITION_SECTION: return createEMSDispositionSection();
-      case EmspcrPackage.EMS_PERSONNEL_ADVERSE_EVENT: return createEMSPersonnelAdverseEvent();
+      case EmspcrPackage.EMS_PERSONNEL_ADVERSE_EVENT_SECTION: return createEMSPersonnelAdverseEventSection();
       case EmspcrPackage.EMS_PROTOCOL_SECTION: return createEMSProtocolSection();
+      case EmspcrPackage.EMS_RESPONSE_SECTION: return createEMSResponseSection();
       case EmspcrPackage.EMS_SITUATION_SECTION: return createEMSSituationSection();
       case EmspcrPackage.EMS_TIMES_SECTION: return createEMSTimesSection();
+      case EmspcrPackage.EMS_VITAL_SIGNS_SECTION: return createEMSVitalSignsSection();
+      case EmspcrPackage.DERIVED_ENTRY: return createDerivedEntry();
       default:
         throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
     }
@@ -117,28 +116,6 @@ public class EmspcrFactoryImpl extends EFactoryImpl implements EmspcrFactory
   {
     EMSBillingSectionImpl emsBillingSection = new EMSBillingSectionImpl();
     return emsBillingSection;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public DerivedCDASection createDerivedCDASection()
-  {
-    DerivedCDASectionImpl derivedCDASection = new DerivedCDASectionImpl();
-    return derivedCDASection;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public DerivedEntry createDerivedEntry()
-  {
-    DerivedEntryImpl derivedEntry = new DerivedEntryImpl();
-    return derivedEntry;
   }
 
   /**
@@ -201,10 +178,10 @@ public class EmspcrFactoryImpl extends EFactoryImpl implements EmspcrFactory
    * <!-- end-user-doc -->
    * @generated
    */
-  public EMSPastMedicalHistory createEMSPastMedicalHistory()
+  public EMSPastMedicalHistorySection createEMSPastMedicalHistorySection()
   {
-    EMSPastMedicalHistoryImpl emsPastMedicalHistory = new EMSPastMedicalHistoryImpl();
-    return emsPastMedicalHistory;
+    EMSPastMedicalHistorySectionImpl emsPastMedicalHistorySection = new EMSPastMedicalHistorySectionImpl();
+    return emsPastMedicalHistorySection;
   }
 
   /**
@@ -212,10 +189,10 @@ public class EmspcrFactoryImpl extends EFactoryImpl implements EmspcrFactory
    * <!-- end-user-doc -->
    * @generated
    */
-  public EMSSocialHistory createEMSSocialHistory()
+  public EMSSocialHistorySection createEMSSocialHistorySection()
   {
-    EMSSocialHistoryImpl emsSocialHistory = new EMSSocialHistoryImpl();
-    return emsSocialHistory;
+    EMSSocialHistorySectionImpl emsSocialHistorySection = new EMSSocialHistorySectionImpl();
+    return emsSocialHistorySection;
   }
 
   /**
@@ -256,10 +233,10 @@ public class EmspcrFactoryImpl extends EFactoryImpl implements EmspcrFactory
    * <!-- end-user-doc -->
    * @generated
    */
-  public EMSPatientCareNarrative createEMSPatientCareNarrative()
+  public EMSPatientCareNarrativeSection createEMSPatientCareNarrativeSection()
   {
-    EMSPatientCareNarrativeImpl emsPatientCareNarrative = new EMSPatientCareNarrativeImpl();
-    return emsPatientCareNarrative;
+    EMSPatientCareNarrativeSectionImpl emsPatientCareNarrativeSection = new EMSPatientCareNarrativeSectionImpl();
+    return emsPatientCareNarrativeSection;
   }
 
   /**
@@ -278,32 +255,10 @@ public class EmspcrFactoryImpl extends EFactoryImpl implements EmspcrFactory
    * <!-- end-user-doc -->
    * @generated
    */
-  public EMSVitalSignsSection createEMSVitalSignsSection()
+  public EMSDispatchSection createEMSDispatchSection()
   {
-    EMSVitalSignsSectionImpl emsVitalSignsSection = new EMSVitalSignsSectionImpl();
-    return emsVitalSignsSection;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EMSDispatch createEMSDispatch()
-  {
-    EMSDispatchImpl emsDispatch = new EMSDispatchImpl();
-    return emsDispatch;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EMSResponse createEMSResponse()
-  {
-    EMSResponseImpl emsResponse = new EMSResponseImpl();
-    return emsResponse;
+    EMSDispatchSectionImpl emsDispatchSection = new EMSDispatchSectionImpl();
+    return emsDispatchSection;
   }
 
   /**
@@ -322,10 +277,10 @@ public class EmspcrFactoryImpl extends EFactoryImpl implements EmspcrFactory
    * <!-- end-user-doc -->
    * @generated
    */
-  public EMSPersonnelAdverseEvent createEMSPersonnelAdverseEvent()
+  public EMSPersonnelAdverseEventSection createEMSPersonnelAdverseEventSection()
   {
-    EMSPersonnelAdverseEventImpl emsPersonnelAdverseEvent = new EMSPersonnelAdverseEventImpl();
-    return emsPersonnelAdverseEvent;
+    EMSPersonnelAdverseEventSectionImpl emsPersonnelAdverseEventSection = new EMSPersonnelAdverseEventSectionImpl();
+    return emsPersonnelAdverseEventSection;
   }
 
   /**
@@ -337,6 +292,17 @@ public class EmspcrFactoryImpl extends EFactoryImpl implements EmspcrFactory
   {
     EMSProtocolSectionImpl emsProtocolSection = new EMSProtocolSectionImpl();
     return emsProtocolSection;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EMSResponseSection createEMSResponseSection()
+  {
+    EMSResponseSectionImpl emsResponseSection = new EMSResponseSectionImpl();
+    return emsResponseSection;
   }
 
   /**
@@ -359,6 +325,28 @@ public class EmspcrFactoryImpl extends EFactoryImpl implements EmspcrFactory
   {
     EMSTimesSectionImpl emsTimesSection = new EMSTimesSectionImpl();
     return emsTimesSection;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EMSVitalSignsSection createEMSVitalSignsSection()
+  {
+    EMSVitalSignsSectionImpl emsVitalSignsSection = new EMSVitalSignsSectionImpl();
+    return emsVitalSignsSection;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public DerivedEntry createDerivedEntry()
+  {
+    DerivedEntryImpl derivedEntry = new DerivedEntryImpl();
+    return derivedEntry;
   }
 
   /**

@@ -23,6 +23,8 @@ import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPlugin;
 
 import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
 
+import org.openhealthtools.mdht.uml.cda.operations.SectionOperations;
+
 /**
  * <!-- begin-user-doc -->
  * A static utility class that provides operations related to '<em><b>EMS Injury Incident Description Section</b></em>' model objects.
@@ -48,7 +50,7 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  *
  * @generated
  */
-public class EMSInjuryIncidentDescriptionSectionOperations extends DerivedCDASectionOperations
+public class EMSInjuryIncidentDescriptionSectionOperations extends SectionOperations
 {
   /**
    * <!-- begin-user-doc -->

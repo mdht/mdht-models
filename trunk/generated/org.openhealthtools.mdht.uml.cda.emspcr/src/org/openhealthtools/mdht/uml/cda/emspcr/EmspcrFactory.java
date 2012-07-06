@@ -45,24 +45,6 @@ public interface EmspcrFactory extends EFactory
   EMSBillingSection createEMSBillingSection();
 
   /**
-   * Returns a new object of class '<em>Derived CDA Section</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return a new object of class '<em>Derived CDA Section</em>'.
-   * @generated
-   */
-  DerivedCDASection createDerivedCDASection();
-
-  /**
-   * Returns a new object of class '<em>Derived Entry</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return a new object of class '<em>Derived Entry</em>'.
-   * @generated
-   */
-  DerivedEntry createDerivedEntry();
-
-  /**
    * Returns a new object of class '<em>EMS Injury Incident Description Section</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -108,22 +90,22 @@ public interface EmspcrFactory extends EFactory
   EMSAllergiesAndAdverseReactionsSection createEMSAllergiesAndAdverseReactionsSection();
 
   /**
-   * Returns a new object of class '<em>EMS Past Medical History</em>'.
+   * Returns a new object of class '<em>EMS Past Medical History Section</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>EMS Past Medical History</em>'.
+   * @return a new object of class '<em>EMS Past Medical History Section</em>'.
    * @generated
    */
-  EMSPastMedicalHistory createEMSPastMedicalHistory();
+  EMSPastMedicalHistorySection createEMSPastMedicalHistorySection();
 
   /**
-   * Returns a new object of class '<em>EMS Social History</em>'.
+   * Returns a new object of class '<em>EMS Social History Section</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>EMS Social History</em>'.
+   * @return a new object of class '<em>EMS Social History Section</em>'.
    * @generated
    */
-  EMSSocialHistory createEMSSocialHistory();
+  EMSSocialHistorySection createEMSSocialHistorySection();
 
   /**
    * Returns a new object of class '<em>EMS Physical Assessment Section</em>'.
@@ -153,13 +135,13 @@ public interface EmspcrFactory extends EFactory
   EMSProceduresPerformedSection createEMSProceduresPerformedSection();
 
   /**
-   * Returns a new object of class '<em>EMS Patient Care Narrative</em>'.
+   * Returns a new object of class '<em>EMS Patient Care Narrative Section</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>EMS Patient Care Narrative</em>'.
+   * @return a new object of class '<em>EMS Patient Care Narrative Section</em>'.
    * @generated
    */
-  EMSPatientCareNarrative createEMSPatientCareNarrative();
+  EMSPatientCareNarrativeSection createEMSPatientCareNarrativeSection();
 
   /**
    * Returns a new object of class '<em>EMS Scene Section</em>'.
@@ -171,31 +153,13 @@ public interface EmspcrFactory extends EFactory
   EMSSceneSection createEMSSceneSection();
 
   /**
-   * Returns a new object of class '<em>EMS Vital Signs Section</em>'.
+   * Returns a new object of class '<em>EMS Dispatch Section</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>EMS Vital Signs Section</em>'.
+   * @return a new object of class '<em>EMS Dispatch Section</em>'.
    * @generated
    */
-  EMSVitalSignsSection createEMSVitalSignsSection();
-
-  /**
-   * Returns a new object of class '<em>EMS Dispatch</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return a new object of class '<em>EMS Dispatch</em>'.
-   * @generated
-   */
-  EMSDispatch createEMSDispatch();
-
-  /**
-   * Returns a new object of class '<em>EMS Response</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return a new object of class '<em>EMS Response</em>'.
-   * @generated
-   */
-  EMSResponse createEMSResponse();
+  EMSDispatchSection createEMSDispatchSection();
 
   /**
    * Returns a new object of class '<em>EMS Disposition Section</em>'.
@@ -207,13 +171,13 @@ public interface EmspcrFactory extends EFactory
   EMSDispositionSection createEMSDispositionSection();
 
   /**
-   * Returns a new object of class '<em>EMS Personnel Adverse Event</em>'.
+   * Returns a new object of class '<em>EMS Personnel Adverse Event Section</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>EMS Personnel Adverse Event</em>'.
+   * @return a new object of class '<em>EMS Personnel Adverse Event Section</em>'.
    * @generated
    */
-  EMSPersonnelAdverseEvent createEMSPersonnelAdverseEvent();
+  EMSPersonnelAdverseEventSection createEMSPersonnelAdverseEventSection();
 
   /**
    * Returns a new object of class '<em>EMS Protocol Section</em>'.
@@ -223,6 +187,15 @@ public interface EmspcrFactory extends EFactory
    * @generated
    */
   EMSProtocolSection createEMSProtocolSection();
+
+  /**
+   * Returns a new object of class '<em>EMS Response Section</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>EMS Response Section</em>'.
+   * @generated
+   */
+  EMSResponseSection createEMSResponseSection();
 
   /**
    * Returns a new object of class '<em>EMS Situation Section</em>'.
@@ -241,6 +214,24 @@ public interface EmspcrFactory extends EFactory
    * @generated
    */
   EMSTimesSection createEMSTimesSection();
+
+  /**
+   * Returns a new object of class '<em>EMS Vital Signs Section</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>EMS Vital Signs Section</em>'.
+   * @generated
+   */
+  EMSVitalSignsSection createEMSVitalSignsSection();
+
+  /**
+   * Returns a new object of class '<em>Derived Entry</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Derived Entry</em>'.
+   * @generated
+   */
+  DerivedEntry createDerivedEntry();
 
   /**
    * Returns the package supported by this factory.

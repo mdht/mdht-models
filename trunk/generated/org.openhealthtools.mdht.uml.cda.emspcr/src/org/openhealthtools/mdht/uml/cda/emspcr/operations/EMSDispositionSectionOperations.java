@@ -12,21 +12,18 @@ import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 
-import org.eclipse.emf.ecore.EClassifier;
-
 import org.eclipse.ocl.ParserException;
 
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 
-import org.eclipse.ocl.expressions.OCLExpression;
-
-import org.openhealthtools.mdht.uml.cda.emspcr.DerivedEntry;
 import org.openhealthtools.mdht.uml.cda.emspcr.EMSDispositionSection;
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPlugin;
 
 import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
+
+import org.openhealthtools.mdht.uml.cda.operations.SectionOperations;
 
 /**
  * <!-- begin-user-doc -->
@@ -44,18 +41,16 @@ import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.EMSDispositionSection#validateEMSDispositionSectionEntry1(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Disposition Section Entry1</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.EMSDispositionSection#validateEMSDispositionSectionEntry2(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Disposition Section Entry2</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.EMSDispositionSection#validateEMSDispositionSectionEntry3(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Disposition Section Entry3</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.EMSDispositionSection#validateEMSDispositionSectionEntry4(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Disposition Section Entry4</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.EMSDispositionSection#validateEMSDispositionSectionEntry5(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Disposition Section Entry5</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.EMSDispositionSection#validateEMSDispositionSectionEntry6(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Disposition Section Entry6</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.EMSDispositionSection#validateEMSDispositionSectionEntry7(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Disposition Section Entry7</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.EMSDispositionSection#validateEMSDispositionSectionEntry8(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Disposition Section Entry8</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.EMSDispositionSection#getEntry6() <em>Get Entry6</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.EMSDispositionSection#validateEMSDispositionSectionEntry6(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Disposition Section Entry6</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.emspcr.EMSDispositionSection#validateEMSDispositionSectionEntry4(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Disposition Section Entry4</em>}</li>
  * </ul>
  * </p>
  *
  * @generated
  */
-public class EMSDispositionSectionOperations extends DerivedCDASectionOperations
+public class EMSDispositionSectionOperations extends SectionOperations
 {
   /**
    * <!-- begin-user-doc -->
@@ -143,7 +138,7 @@ public class EMSDispositionSectionOperations extends DerivedCDASectionOperations
    */
   protected static final String VALIDATE_EMS_DISPOSITION_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
 "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "+
-"value.code = '67796?3' and value.codeSystem = '2.16.840.1.113883.6.1')";
+"value.code = '67796-3' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
   /**
    * The cached OCL invariant for the '{@link #validateEMSDispositionSectionCode(EMSDispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Disposition Section Code</em>}' invariant operation.
@@ -163,7 +158,7 @@ public class EMSDispositionSectionOperations extends DerivedCDASectionOperations
    * <!-- begin-model-doc -->
    * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
    * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
-   * value.code = '67796?3' and value.codeSystem = '2.16.840.1.113883.6.1')
+   * value.code = '67796-3' and value.codeSystem = '2.16.840.1.113883.6.1')
    * @param emsDispositionSection The receiving '<em><b>EMS Disposition Section</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -607,73 +602,6 @@ public class EMSDispositionSectionOperations extends DerivedCDASectionOperations
   }
 
   /**
-   * The cached OCL expression body for the '{@link #validateEMSDispositionSectionEntry4(EMSDispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Disposition Section Entry4</em>}' operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateEMSDispositionSectionEntry4(EMSDispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  protected static final String VALIDATE_EMS_DISPOSITION_SECTION_ENTRY4__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::EMSDispositionSection::DerivedEntry))";
-
-  /**
-   * The cached OCL invariant for the '{@link #validateEMSDispositionSectionEntry4(EMSDispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Disposition Section Entry4</em>}' invariant operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateEMSDispositionSectionEntry4(EMSDispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  
-  protected static Constraint VALIDATE_EMS_DISPOSITION_SECTION_ENTRY4__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-  
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::EMSDispositionSection::DerivedEntry))
-   * @param emsDispositionSection The receiving '<em><b>EMS Disposition Section</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
-  
-  public static  boolean validateEMSDispositionSectionEntry4(EMSDispositionSection emsDispositionSection, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-  	  
-    if (VALIDATE_EMS_DISPOSITION_SECTION_ENTRY4__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(EmspcrPackage.Literals.EMS_DISPOSITION_SECTION);
-      try
-      {
-        VALIDATE_EMS_DISPOSITION_SECTION_ENTRY4__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_DISPOSITION_SECTION_ENTRY4__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_EMS_DISPOSITION_SECTION_ENTRY4__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsDispositionSection))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             EmspcrValidator.DIAGNOSTIC_SOURCE,
-             EmspcrValidator.EMS_DISPOSITION_SECTION__EMS_DISPOSITION_SECTION_ENTRY4,
-             EmspcrPlugin.INSTANCE.getString("EMSDispositionSectionEntry4"),
-             new Object [] { emsDispositionSection }));
-      }
-       
-      return false;
-    }
-    return true;
-  }
-
-  /**
    * The cached OCL expression body for the '{@link #validateEMSDispositionSectionEntry5(EMSDispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Disposition Section Entry5</em>}' operation.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -732,73 +660,6 @@ public class EMSDispositionSectionOperations extends DerivedCDASectionOperations
              EmspcrValidator.DIAGNOSTIC_SOURCE,
              EmspcrValidator.EMS_DISPOSITION_SECTION__EMS_DISPOSITION_SECTION_ENTRY5,
              EmspcrPlugin.INSTANCE.getString("EMSDispositionSectionEntry5"),
-             new Object [] { emsDispositionSection }));
-      }
-       
-      return false;
-    }
-    return true;
-  }
-
-  /**
-   * The cached OCL expression body for the '{@link #validateEMSDispositionSectionEntry6(EMSDispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Disposition Section Entry6</em>}' operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateEMSDispositionSectionEntry6(EMSDispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  protected static final String VALIDATE_EMS_DISPOSITION_SECTION_ENTRY6__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::DerivedEntry))";
-
-  /**
-   * The cached OCL invariant for the '{@link #validateEMSDispositionSectionEntry6(EMSDispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Disposition Section Entry6</em>}' invariant operation.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #validateEMSDispositionSectionEntry6(EMSDispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-  
-  protected static Constraint VALIDATE_EMS_DISPOSITION_SECTION_ENTRY6__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-  
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::DerivedEntry))
-   * @param emsDispositionSection The receiving '<em><b>EMS Disposition Section</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
-  
-  public static  boolean validateEMSDispositionSectionEntry6(EMSDispositionSection emsDispositionSection, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-  	  
-    if (VALIDATE_EMS_DISPOSITION_SECTION_ENTRY6__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(EmspcrPackage.Literals.EMS_DISPOSITION_SECTION);
-      try
-      {
-        VALIDATE_EMS_DISPOSITION_SECTION_ENTRY6__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_DISPOSITION_SECTION_ENTRY6__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_EMS_DISPOSITION_SECTION_ENTRY6__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsDispositionSection))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             EmspcrValidator.DIAGNOSTIC_SOURCE,
-             EmspcrValidator.EMS_DISPOSITION_SECTION__EMS_DISPOSITION_SECTION_ENTRY6,
-             EmspcrPlugin.INSTANCE.getString("EMSDispositionSectionEntry6"),
              new Object [] { emsDispositionSection }));
       }
        
@@ -875,25 +736,25 @@ public class EMSDispositionSectionOperations extends DerivedCDASectionOperations
   }
 
   /**
-   * The cached OCL expression body for the '{@link #validateEMSDispositionSectionEntry8(EMSDispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Disposition Section Entry8</em>}' operation.
+   * The cached OCL expression body for the '{@link #validateEMSDispositionSectionEntry6(EMSDispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Disposition Section Entry6</em>}' operation.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #validateEMSDispositionSectionEntry8(EMSDispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @see #validateEMSDispositionSectionEntry6(EMSDispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_EMS_DISPOSITION_SECTION_ENTRY8__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::EMSDispositionSection::DerivedEntry))";
+  protected static final String VALIDATE_EMS_DISPOSITION_SECTION_ENTRY6__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::EMSDispositionSection::DerivedEntry))";
 
   /**
-   * The cached OCL invariant for the '{@link #validateEMSDispositionSectionEntry8(EMSDispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Disposition Section Entry8</em>}' invariant operation.
+   * The cached OCL invariant for the '{@link #validateEMSDispositionSectionEntry6(EMSDispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Disposition Section Entry6</em>}' invariant operation.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #validateEMSDispositionSectionEntry8(EMSDispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @see #validateEMSDispositionSectionEntry6(EMSDispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
   
-  protected static Constraint VALIDATE_EMS_DISPOSITION_SECTION_ENTRY8__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+  protected static Constraint VALIDATE_EMS_DISPOSITION_SECTION_ENTRY6__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
   
 
   /**
@@ -908,22 +769,22 @@ public class EMSDispositionSectionOperations extends DerivedCDASectionOperations
    * @generated
    */
   
-  public static  boolean validateEMSDispositionSectionEntry8(EMSDispositionSection emsDispositionSection, DiagnosticChain diagnostics, Map<Object, Object> context)
+  public static  boolean validateEMSDispositionSectionEntry6(EMSDispositionSection emsDispositionSection, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
   	  
-    if (VALIDATE_EMS_DISPOSITION_SECTION_ENTRY8__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+    if (VALIDATE_EMS_DISPOSITION_SECTION_ENTRY6__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
       helper.setContext(EmspcrPackage.Literals.EMS_DISPOSITION_SECTION);
       try
       {
-        VALIDATE_EMS_DISPOSITION_SECTION_ENTRY8__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_DISPOSITION_SECTION_ENTRY8__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+        VALIDATE_EMS_DISPOSITION_SECTION_ENTRY6__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_DISPOSITION_SECTION_ENTRY6__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
       }
       catch (ParserException pe)
       {
         throw new UnsupportedOperationException(pe.getLocalizedMessage());
       }
     }
-    if (!EOCL_ENV.createQuery(VALIDATE_EMS_DISPOSITION_SECTION_ENTRY8__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsDispositionSection))
+    if (!EOCL_ENV.createQuery(VALIDATE_EMS_DISPOSITION_SECTION_ENTRY6__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsDispositionSection))
     {
       if (diagnostics != null)
       {
@@ -931,8 +792,8 @@ public class EMSDispositionSectionOperations extends DerivedCDASectionOperations
           (new BasicDiagnostic
             (Diagnostic.ERROR,
              EmspcrValidator.DIAGNOSTIC_SOURCE,
-             EmspcrValidator.EMS_DISPOSITION_SECTION__EMS_DISPOSITION_SECTION_ENTRY8,
-             EmspcrPlugin.INSTANCE.getString("EMSDispositionSectionEntry8"),
+             EmspcrValidator.EMS_DISPOSITION_SECTION__EMS_DISPOSITION_SECTION_ENTRY6,
+             EmspcrPlugin.INSTANCE.getString("EMSDispositionSectionEntry6"),
              new Object [] { emsDispositionSection }));
       }
        
@@ -942,52 +803,70 @@ public class EMSDispositionSectionOperations extends DerivedCDASectionOperations
   }
 
   /**
-   * The cached OCL expression body for the '{@link #getEntry6(EMSDispositionSection) <em>Get Entry6</em>}' operation.
+   * The cached OCL expression body for the '{@link #validateEMSDispositionSectionEntry4(EMSDispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Disposition Section Entry4</em>}' operation.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getEntry6(EMSDispositionSection)
+   * @see #validateEMSDispositionSectionEntry4(EMSDispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-  protected static final String GET_ENTRY6__EOCL_EXP = "self.getEntries()->select(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::DerivedEntry))->asSequence()->any(true).oclAsType(emspcr::DerivedEntry)";
+  protected static final String VALIDATE_EMS_DISPOSITION_SECTION_ENTRY4__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(cda::Observation))";
 
   /**
-   * The cached OCL query for the '{@link #getEntry6(EMSDispositionSection) <em>Get Entry6</em>}' query operation.
+   * The cached OCL invariant for the '{@link #validateEMSDispositionSectionEntry4(EMSDispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Disposition Section Entry4</em>}' invariant operation.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getEntry6(EMSDispositionSection)
+   * @see #validateEMSDispositionSectionEntry4(EMSDispositionSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-  protected static OCLExpression<EClassifier> GET_ENTRY6__EOCL_QRY;
+  
+  protected static Constraint VALIDATE_EMS_DISPOSITION_SECTION_ENTRY4__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+  
 
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * self.getEntries()->select(entry : cda::Entry | not entry.oclIsUndefined() and entry.oclIsKindOf(emspcr::DerivedEntry))->asSequence()->any(true).oclAsType(emspcr::DerivedEntry)
+   * self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(cda::Observation))
    * @param emsDispositionSection The receiving '<em><b>EMS Disposition Section</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
    * @generated
    */
   
-  public static  DerivedEntry getEntry6(EMSDispositionSection emsDispositionSection)
+  public static  boolean validateEMSDispositionSectionEntry4(EMSDispositionSection emsDispositionSection, DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    if (GET_ENTRY6__EOCL_QRY == null)
-    {
+  	  
+    if (VALIDATE_EMS_DISPOSITION_SECTION_ENTRY4__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(EmspcrPackage.Literals.EMS_DISPOSITION_SECTION, EmspcrPackage.Literals.EMS_DISPOSITION_SECTION.getEAllOperations().get(69));
+      helper.setContext(EmspcrPackage.Literals.EMS_DISPOSITION_SECTION);
       try
       {
-        GET_ENTRY6__EOCL_QRY = helper.createQuery(GET_ENTRY6__EOCL_EXP);
+        VALIDATE_EMS_DISPOSITION_SECTION_ENTRY4__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_DISPOSITION_SECTION_ENTRY4__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
       }
       catch (ParserException pe)
       {
         throw new UnsupportedOperationException(pe.getLocalizedMessage());
       }
     }
-    OCL.Query query = EOCL_ENV.createQuery(GET_ENTRY6__EOCL_QRY);
-    return (DerivedEntry) query.evaluate(emsDispositionSection);
+    if (!EOCL_ENV.createQuery(VALIDATE_EMS_DISPOSITION_SECTION_ENTRY4__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(emsDispositionSection))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             EmspcrValidator.DIAGNOSTIC_SOURCE,
+             EmspcrValidator.EMS_DISPOSITION_SECTION__EMS_DISPOSITION_SECTION_ENTRY4,
+             EmspcrPlugin.INSTANCE.getString("EMSDispositionSectionEntry4"),
+             new Object [] { emsDispositionSection }));
+      }
+       
+      return false;
+    }
+    return true;
   }
 
 } // EMSDispositionSectionOperations

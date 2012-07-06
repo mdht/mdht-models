@@ -17,6 +17,8 @@ import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 
 import org.openhealthtools.mdht.uml.cda.emspcr.operations.EMSAllergiesAndAdverseReactionsSectionOperations;
 
+import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
+
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
@@ -28,7 +30,7 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  *
  * @generated
  */
-public class EMSAllergiesAndAdverseReactionsSectionImpl extends DerivedCDASectionImpl implements EMSAllergiesAndAdverseReactionsSection
+public class EMSAllergiesAndAdverseReactionsSectionImpl extends SectionImpl implements EMSAllergiesAndAdverseReactionsSection
 {
   /**
    * <!-- begin-user-doc -->

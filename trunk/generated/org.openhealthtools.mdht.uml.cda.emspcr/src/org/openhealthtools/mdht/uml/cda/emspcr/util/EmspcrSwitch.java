@@ -121,30 +121,9 @@ public class EmspcrSwitch<T>
       {
         EMSBillingSection emsBillingSection = (EMSBillingSection)theEObject;
         T result = caseEMSBillingSection(emsBillingSection);
-        if (result == null) result = caseDerivedCDASection(emsBillingSection);
         if (result == null) result = caseSection(emsBillingSection);
         if (result == null) result = caseAct(emsBillingSection);
         if (result == null) result = caseInfrastructureRoot(emsBillingSection);
-        if (result == null) result = defaultCase(theEObject);
-        return result;
-      }
-      case EmspcrPackage.DERIVED_CDA_SECTION:
-      {
-        DerivedCDASection derivedCDASection = (DerivedCDASection)theEObject;
-        T result = caseDerivedCDASection(derivedCDASection);
-        if (result == null) result = caseSection(derivedCDASection);
-        if (result == null) result = caseAct(derivedCDASection);
-        if (result == null) result = caseInfrastructureRoot(derivedCDASection);
-        if (result == null) result = defaultCase(theEObject);
-        return result;
-      }
-      case EmspcrPackage.DERIVED_ENTRY:
-      {
-        DerivedEntry derivedEntry = (DerivedEntry)theEObject;
-        T result = caseDerivedEntry(derivedEntry);
-        if (result == null) result = caseEntry(derivedEntry);
-        if (result == null) result = caseActRelationship(derivedEntry);
-        if (result == null) result = caseInfrastructureRoot(derivedEntry);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -152,7 +131,6 @@ public class EmspcrSwitch<T>
       {
         EMSInjuryIncidentDescriptionSection emsInjuryIncidentDescriptionSection = (EMSInjuryIncidentDescriptionSection)theEObject;
         T result = caseEMSInjuryIncidentDescriptionSection(emsInjuryIncidentDescriptionSection);
-        if (result == null) result = caseDerivedCDASection(emsInjuryIncidentDescriptionSection);
         if (result == null) result = caseSection(emsInjuryIncidentDescriptionSection);
         if (result == null) result = caseAct(emsInjuryIncidentDescriptionSection);
         if (result == null) result = caseInfrastructureRoot(emsInjuryIncidentDescriptionSection);
@@ -163,7 +141,6 @@ public class EmspcrSwitch<T>
       {
         EMSCurrentMedicationSection emsCurrentMedicationSection = (EMSCurrentMedicationSection)theEObject;
         T result = caseEMSCurrentMedicationSection(emsCurrentMedicationSection);
-        if (result == null) result = caseDerivedCDASection(emsCurrentMedicationSection);
         if (result == null) result = caseSection(emsCurrentMedicationSection);
         if (result == null) result = caseAct(emsCurrentMedicationSection);
         if (result == null) result = caseInfrastructureRoot(emsCurrentMedicationSection);
@@ -174,7 +151,6 @@ public class EmspcrSwitch<T>
       {
         EMSCardiacArrestEventSection emsCardiacArrestEventSection = (EMSCardiacArrestEventSection)theEObject;
         T result = caseEMSCardiacArrestEventSection(emsCardiacArrestEventSection);
-        if (result == null) result = caseDerivedCDASection(emsCardiacArrestEventSection);
         if (result == null) result = caseSection(emsCardiacArrestEventSection);
         if (result == null) result = caseAct(emsCardiacArrestEventSection);
         if (result == null) result = caseInfrastructureRoot(emsCardiacArrestEventSection);
@@ -185,7 +161,6 @@ public class EmspcrSwitch<T>
       {
         EMSAdvanceDirectivesSection emsAdvanceDirectivesSection = (EMSAdvanceDirectivesSection)theEObject;
         T result = caseEMSAdvanceDirectivesSection(emsAdvanceDirectivesSection);
-        if (result == null) result = caseDerivedCDASection(emsAdvanceDirectivesSection);
         if (result == null) result = caseSection(emsAdvanceDirectivesSection);
         if (result == null) result = caseAct(emsAdvanceDirectivesSection);
         if (result == null) result = caseInfrastructureRoot(emsAdvanceDirectivesSection);
@@ -196,32 +171,29 @@ public class EmspcrSwitch<T>
       {
         EMSAllergiesAndAdverseReactionsSection emsAllergiesAndAdverseReactionsSection = (EMSAllergiesAndAdverseReactionsSection)theEObject;
         T result = caseEMSAllergiesAndAdverseReactionsSection(emsAllergiesAndAdverseReactionsSection);
-        if (result == null) result = caseDerivedCDASection(emsAllergiesAndAdverseReactionsSection);
         if (result == null) result = caseSection(emsAllergiesAndAdverseReactionsSection);
         if (result == null) result = caseAct(emsAllergiesAndAdverseReactionsSection);
         if (result == null) result = caseInfrastructureRoot(emsAllergiesAndAdverseReactionsSection);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
-      case EmspcrPackage.EMS_PAST_MEDICAL_HISTORY:
+      case EmspcrPackage.EMS_PAST_MEDICAL_HISTORY_SECTION:
       {
-        EMSPastMedicalHistory emsPastMedicalHistory = (EMSPastMedicalHistory)theEObject;
-        T result = caseEMSPastMedicalHistory(emsPastMedicalHistory);
-        if (result == null) result = caseDerivedCDASection(emsPastMedicalHistory);
-        if (result == null) result = caseSection(emsPastMedicalHistory);
-        if (result == null) result = caseAct(emsPastMedicalHistory);
-        if (result == null) result = caseInfrastructureRoot(emsPastMedicalHistory);
+        EMSPastMedicalHistorySection emsPastMedicalHistorySection = (EMSPastMedicalHistorySection)theEObject;
+        T result = caseEMSPastMedicalHistorySection(emsPastMedicalHistorySection);
+        if (result == null) result = caseSection(emsPastMedicalHistorySection);
+        if (result == null) result = caseAct(emsPastMedicalHistorySection);
+        if (result == null) result = caseInfrastructureRoot(emsPastMedicalHistorySection);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
-      case EmspcrPackage.EMS_SOCIAL_HISTORY:
+      case EmspcrPackage.EMS_SOCIAL_HISTORY_SECTION:
       {
-        EMSSocialHistory emsSocialHistory = (EMSSocialHistory)theEObject;
-        T result = caseEMSSocialHistory(emsSocialHistory);
-        if (result == null) result = caseDerivedCDASection(emsSocialHistory);
-        if (result == null) result = caseSection(emsSocialHistory);
-        if (result == null) result = caseAct(emsSocialHistory);
-        if (result == null) result = caseInfrastructureRoot(emsSocialHistory);
+        EMSSocialHistorySection emsSocialHistorySection = (EMSSocialHistorySection)theEObject;
+        T result = caseEMSSocialHistorySection(emsSocialHistorySection);
+        if (result == null) result = caseSection(emsSocialHistorySection);
+        if (result == null) result = caseAct(emsSocialHistorySection);
+        if (result == null) result = caseInfrastructureRoot(emsSocialHistorySection);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -229,7 +201,6 @@ public class EmspcrSwitch<T>
       {
         EMSPhysicalAssessmentSection emsPhysicalAssessmentSection = (EMSPhysicalAssessmentSection)theEObject;
         T result = caseEMSPhysicalAssessmentSection(emsPhysicalAssessmentSection);
-        if (result == null) result = caseDerivedCDASection(emsPhysicalAssessmentSection);
         if (result == null) result = caseSection(emsPhysicalAssessmentSection);
         if (result == null) result = caseAct(emsPhysicalAssessmentSection);
         if (result == null) result = caseInfrastructureRoot(emsPhysicalAssessmentSection);
@@ -240,7 +211,6 @@ public class EmspcrSwitch<T>
       {
         EMSMedicationsAdministeredSection emsMedicationsAdministeredSection = (EMSMedicationsAdministeredSection)theEObject;
         T result = caseEMSMedicationsAdministeredSection(emsMedicationsAdministeredSection);
-        if (result == null) result = caseDerivedCDASection(emsMedicationsAdministeredSection);
         if (result == null) result = caseSection(emsMedicationsAdministeredSection);
         if (result == null) result = caseAct(emsMedicationsAdministeredSection);
         if (result == null) result = caseInfrastructureRoot(emsMedicationsAdministeredSection);
@@ -251,20 +221,19 @@ public class EmspcrSwitch<T>
       {
         EMSProceduresPerformedSection emsProceduresPerformedSection = (EMSProceduresPerformedSection)theEObject;
         T result = caseEMSProceduresPerformedSection(emsProceduresPerformedSection);
-        if (result == null) result = caseDerivedCDASection(emsProceduresPerformedSection);
         if (result == null) result = caseSection(emsProceduresPerformedSection);
         if (result == null) result = caseAct(emsProceduresPerformedSection);
         if (result == null) result = caseInfrastructureRoot(emsProceduresPerformedSection);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
-      case EmspcrPackage.EMS_PATIENT_CARE_NARRATIVE:
+      case EmspcrPackage.EMS_PATIENT_CARE_NARRATIVE_SECTION:
       {
-        EMSPatientCareNarrative emsPatientCareNarrative = (EMSPatientCareNarrative)theEObject;
-        T result = caseEMSPatientCareNarrative(emsPatientCareNarrative);
-        if (result == null) result = caseSection(emsPatientCareNarrative);
-        if (result == null) result = caseAct(emsPatientCareNarrative);
-        if (result == null) result = caseInfrastructureRoot(emsPatientCareNarrative);
+        EMSPatientCareNarrativeSection emsPatientCareNarrativeSection = (EMSPatientCareNarrativeSection)theEObject;
+        T result = caseEMSPatientCareNarrativeSection(emsPatientCareNarrativeSection);
+        if (result == null) result = caseSection(emsPatientCareNarrativeSection);
+        if (result == null) result = caseAct(emsPatientCareNarrativeSection);
+        if (result == null) result = caseInfrastructureRoot(emsPatientCareNarrativeSection);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -272,43 +241,19 @@ public class EmspcrSwitch<T>
       {
         EMSSceneSection emsSceneSection = (EMSSceneSection)theEObject;
         T result = caseEMSSceneSection(emsSceneSection);
-        if (result == null) result = caseDerivedCDASection(emsSceneSection);
         if (result == null) result = caseSection(emsSceneSection);
         if (result == null) result = caseAct(emsSceneSection);
         if (result == null) result = caseInfrastructureRoot(emsSceneSection);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
-      case EmspcrPackage.EMS_VITAL_SIGNS_SECTION:
+      case EmspcrPackage.EMS_DISPATCH_SECTION:
       {
-        EMSVitalSignsSection emsVitalSignsSection = (EMSVitalSignsSection)theEObject;
-        T result = caseEMSVitalSignsSection(emsVitalSignsSection);
-        if (result == null) result = caseDerivedCDASection(emsVitalSignsSection);
-        if (result == null) result = caseSection(emsVitalSignsSection);
-        if (result == null) result = caseAct(emsVitalSignsSection);
-        if (result == null) result = caseInfrastructureRoot(emsVitalSignsSection);
-        if (result == null) result = defaultCase(theEObject);
-        return result;
-      }
-      case EmspcrPackage.EMS_DISPATCH:
-      {
-        EMSDispatch emsDispatch = (EMSDispatch)theEObject;
-        T result = caseEMSDispatch(emsDispatch);
-        if (result == null) result = caseDerivedCDASection(emsDispatch);
-        if (result == null) result = caseSection(emsDispatch);
-        if (result == null) result = caseAct(emsDispatch);
-        if (result == null) result = caseInfrastructureRoot(emsDispatch);
-        if (result == null) result = defaultCase(theEObject);
-        return result;
-      }
-      case EmspcrPackage.EMS_RESPONSE:
-      {
-        EMSResponse emsResponse = (EMSResponse)theEObject;
-        T result = caseEMSResponse(emsResponse);
-        if (result == null) result = caseDerivedCDASection(emsResponse);
-        if (result == null) result = caseSection(emsResponse);
-        if (result == null) result = caseAct(emsResponse);
-        if (result == null) result = caseInfrastructureRoot(emsResponse);
+        EMSDispatchSection emsDispatchSection = (EMSDispatchSection)theEObject;
+        T result = caseEMSDispatchSection(emsDispatchSection);
+        if (result == null) result = caseSection(emsDispatchSection);
+        if (result == null) result = caseAct(emsDispatchSection);
+        if (result == null) result = caseInfrastructureRoot(emsDispatchSection);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -316,21 +261,19 @@ public class EmspcrSwitch<T>
       {
         EMSDispositionSection emsDispositionSection = (EMSDispositionSection)theEObject;
         T result = caseEMSDispositionSection(emsDispositionSection);
-        if (result == null) result = caseDerivedCDASection(emsDispositionSection);
         if (result == null) result = caseSection(emsDispositionSection);
         if (result == null) result = caseAct(emsDispositionSection);
         if (result == null) result = caseInfrastructureRoot(emsDispositionSection);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
-      case EmspcrPackage.EMS_PERSONNEL_ADVERSE_EVENT:
+      case EmspcrPackage.EMS_PERSONNEL_ADVERSE_EVENT_SECTION:
       {
-        EMSPersonnelAdverseEvent emsPersonnelAdverseEvent = (EMSPersonnelAdverseEvent)theEObject;
-        T result = caseEMSPersonnelAdverseEvent(emsPersonnelAdverseEvent);
-        if (result == null) result = caseDerivedCDASection(emsPersonnelAdverseEvent);
-        if (result == null) result = caseSection(emsPersonnelAdverseEvent);
-        if (result == null) result = caseAct(emsPersonnelAdverseEvent);
-        if (result == null) result = caseInfrastructureRoot(emsPersonnelAdverseEvent);
+        EMSPersonnelAdverseEventSection emsPersonnelAdverseEventSection = (EMSPersonnelAdverseEventSection)theEObject;
+        T result = caseEMSPersonnelAdverseEventSection(emsPersonnelAdverseEventSection);
+        if (result == null) result = caseSection(emsPersonnelAdverseEventSection);
+        if (result == null) result = caseAct(emsPersonnelAdverseEventSection);
+        if (result == null) result = caseInfrastructureRoot(emsPersonnelAdverseEventSection);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -338,10 +281,19 @@ public class EmspcrSwitch<T>
       {
         EMSProtocolSection emsProtocolSection = (EMSProtocolSection)theEObject;
         T result = caseEMSProtocolSection(emsProtocolSection);
-        if (result == null) result = caseDerivedCDASection(emsProtocolSection);
         if (result == null) result = caseSection(emsProtocolSection);
         if (result == null) result = caseAct(emsProtocolSection);
         if (result == null) result = caseInfrastructureRoot(emsProtocolSection);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case EmspcrPackage.EMS_RESPONSE_SECTION:
+      {
+        EMSResponseSection emsResponseSection = (EMSResponseSection)theEObject;
+        T result = caseEMSResponseSection(emsResponseSection);
+        if (result == null) result = caseSection(emsResponseSection);
+        if (result == null) result = caseAct(emsResponseSection);
+        if (result == null) result = caseInfrastructureRoot(emsResponseSection);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -349,7 +301,6 @@ public class EmspcrSwitch<T>
       {
         EMSSituationSection emsSituationSection = (EMSSituationSection)theEObject;
         T result = caseEMSSituationSection(emsSituationSection);
-        if (result == null) result = caseDerivedCDASection(emsSituationSection);
         if (result == null) result = caseSection(emsSituationSection);
         if (result == null) result = caseAct(emsSituationSection);
         if (result == null) result = caseInfrastructureRoot(emsSituationSection);
@@ -360,10 +311,29 @@ public class EmspcrSwitch<T>
       {
         EMSTimesSection emsTimesSection = (EMSTimesSection)theEObject;
         T result = caseEMSTimesSection(emsTimesSection);
-        if (result == null) result = caseDerivedCDASection(emsTimesSection);
         if (result == null) result = caseSection(emsTimesSection);
         if (result == null) result = caseAct(emsTimesSection);
         if (result == null) result = caseInfrastructureRoot(emsTimesSection);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case EmspcrPackage.EMS_VITAL_SIGNS_SECTION:
+      {
+        EMSVitalSignsSection emsVitalSignsSection = (EMSVitalSignsSection)theEObject;
+        T result = caseEMSVitalSignsSection(emsVitalSignsSection);
+        if (result == null) result = caseSection(emsVitalSignsSection);
+        if (result == null) result = caseAct(emsVitalSignsSection);
+        if (result == null) result = caseInfrastructureRoot(emsVitalSignsSection);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case EmspcrPackage.DERIVED_ENTRY:
+      {
+        DerivedEntry derivedEntry = (DerivedEntry)theEObject;
+        T result = caseDerivedEntry(derivedEntry);
+        if (result == null) result = caseEntry(derivedEntry);
+        if (result == null) result = caseActRelationship(derivedEntry);
+        if (result == null) result = caseInfrastructureRoot(derivedEntry);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -399,22 +369,6 @@ public class EmspcrSwitch<T>
    * @generated
    */
   public T caseEMSBillingSection(EMSBillingSection object)
-  {
-    return null;
-  }
-
-  /**
-   * Returns the result of interpreting the object as an instance of '<em>Derived CDA Section</em>'.
-   * <!-- begin-user-doc -->
-   * This implementation returns null;
-   * returning a non-null result will terminate the switch.
-   * <!-- end-user-doc -->
-   * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Derived CDA Section</em>'.
-   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-   * @generated
-   */
-  public T caseDerivedCDASection(DerivedCDASection object)
   {
     return null;
   }
@@ -516,33 +470,33 @@ public class EmspcrSwitch<T>
   }
 
   /**
-   * Returns the result of interpreting the object as an instance of '<em>EMS Past Medical History</em>'.
+   * Returns the result of interpreting the object as an instance of '<em>EMS Past Medical History Section</em>'.
    * <!-- begin-user-doc -->
    * This implementation returns null;
    * returning a non-null result will terminate the switch.
    * <!-- end-user-doc -->
    * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>EMS Past Medical History</em>'.
+   * @return the result of interpreting the object as an instance of '<em>EMS Past Medical History Section</em>'.
    * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
    * @generated
    */
-  public T caseEMSPastMedicalHistory(EMSPastMedicalHistory object)
+  public T caseEMSPastMedicalHistorySection(EMSPastMedicalHistorySection object)
   {
     return null;
   }
 
   /**
-   * Returns the result of interpreting the object as an instance of '<em>EMS Social History</em>'.
+   * Returns the result of interpreting the object as an instance of '<em>EMS Social History Section</em>'.
    * <!-- begin-user-doc -->
    * This implementation returns null;
    * returning a non-null result will terminate the switch.
    * <!-- end-user-doc -->
    * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>EMS Social History</em>'.
+   * @return the result of interpreting the object as an instance of '<em>EMS Social History Section</em>'.
    * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
    * @generated
    */
-  public T caseEMSSocialHistory(EMSSocialHistory object)
+  public T caseEMSSocialHistorySection(EMSSocialHistorySection object)
   {
     return null;
   }
@@ -596,17 +550,17 @@ public class EmspcrSwitch<T>
   }
 
   /**
-   * Returns the result of interpreting the object as an instance of '<em>EMS Patient Care Narrative</em>'.
+   * Returns the result of interpreting the object as an instance of '<em>EMS Patient Care Narrative Section</em>'.
    * <!-- begin-user-doc -->
    * This implementation returns null;
    * returning a non-null result will terminate the switch.
    * <!-- end-user-doc -->
    * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>EMS Patient Care Narrative</em>'.
+   * @return the result of interpreting the object as an instance of '<em>EMS Patient Care Narrative Section</em>'.
    * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
    * @generated
    */
-  public T caseEMSPatientCareNarrative(EMSPatientCareNarrative object)
+  public T caseEMSPatientCareNarrativeSection(EMSPatientCareNarrativeSection object)
   {
     return null;
   }
@@ -628,6 +582,22 @@ public class EmspcrSwitch<T>
   }
 
   /**
+   * Returns the result of interpreting the object as an instance of '<em>EMS Dispatch Section</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>EMS Dispatch Section</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseEMSDispatchSection(EMSDispatchSection object)
+  {
+    return null;
+  }
+
+  /**
    * Returns the result of interpreting the object as an instance of '<em>EMS Vital Signs Section</em>'.
    * <!-- begin-user-doc -->
    * This implementation returns null;
@@ -639,38 +609,6 @@ public class EmspcrSwitch<T>
    * @generated
    */
   public T caseEMSVitalSignsSection(EMSVitalSignsSection object)
-  {
-    return null;
-  }
-
-  /**
-   * Returns the result of interpreting the object as an instance of '<em>EMS Dispatch</em>'.
-   * <!-- begin-user-doc -->
-   * This implementation returns null;
-   * returning a non-null result will terminate the switch.
-   * <!-- end-user-doc -->
-   * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>EMS Dispatch</em>'.
-   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-   * @generated
-   */
-  public T caseEMSDispatch(EMSDispatch object)
-  {
-    return null;
-  }
-
-  /**
-   * Returns the result of interpreting the object as an instance of '<em>EMS Response</em>'.
-   * <!-- begin-user-doc -->
-   * This implementation returns null;
-   * returning a non-null result will terminate the switch.
-   * <!-- end-user-doc -->
-   * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>EMS Response</em>'.
-   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-   * @generated
-   */
-  public T caseEMSResponse(EMSResponse object)
   {
     return null;
   }
@@ -692,17 +630,17 @@ public class EmspcrSwitch<T>
   }
 
   /**
-   * Returns the result of interpreting the object as an instance of '<em>EMS Personnel Adverse Event</em>'.
+   * Returns the result of interpreting the object as an instance of '<em>EMS Personnel Adverse Event Section</em>'.
    * <!-- begin-user-doc -->
    * This implementation returns null;
    * returning a non-null result will terminate the switch.
    * <!-- end-user-doc -->
    * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>EMS Personnel Adverse Event</em>'.
+   * @return the result of interpreting the object as an instance of '<em>EMS Personnel Adverse Event Section</em>'.
    * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
    * @generated
    */
-  public T caseEMSPersonnelAdverseEvent(EMSPersonnelAdverseEvent object)
+  public T caseEMSPersonnelAdverseEventSection(EMSPersonnelAdverseEventSection object)
   {
     return null;
   }
@@ -719,6 +657,22 @@ public class EmspcrSwitch<T>
    * @generated
    */
   public T caseEMSProtocolSection(EMSProtocolSection object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>EMS Response Section</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>EMS Response Section</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseEMSResponseSection(EMSResponseSection object)
   {
     return null;
   }
