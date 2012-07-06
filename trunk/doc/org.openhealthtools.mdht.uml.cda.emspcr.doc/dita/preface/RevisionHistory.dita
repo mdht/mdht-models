@@ -185,8 +185,8 @@
           <row>
             <entry>20</entry>
             <entry>9/2011 #7, 68: Included vocabularies in appendix</entry>
-            <entry>IP</entry>
-            <entry> </entry>
+            <entry>JLyle</entry>
+            <entry>Jun-12 </entry>
           </row>
           <row>
             <entry>21</entry>
@@ -235,8 +235,8 @@
           <row>
             <entry>28</entry>
             <entry>9/2011 #22: Updated optionality constraints</entry>
-            <entry>IP</entry>
-            <entry> </entry>
+            <entry>JLyle</entry>
+            <entry>Jun-12 </entry>
           </row>
           <row>
             <entry>29</entry>
@@ -310,8 +310,8 @@
           <row>
             <entry>40</entry>
             <entry>9/2011 #59, 61: Update conformance criterion numbering</entry>
-            <entry>IP</entry>
-            <entry> </entry>
+            <entry>JLyle</entry>
+            <entry>Jun-12 </entry>
           </row>
           <row>
             <entry>41</entry>
@@ -322,7 +322,7 @@
           <row>
             <entry>42</entry>
             <entry>9/2011 #70: Add “open” to template definitions</entry>
-            <entry>IP</entry>
+            <entry>Stet</entry>
             <entry> </entry>
           </row>
           <row>
@@ -330,6 +330,21 @@
             <entry>Changed CONF-34 destination entity from id to name</entry>
             <entry>JLyle</entry>
             <entry>Dec-11</entry>
+          </row>
+          <row>
+            <entry>44</entry>
+            <entry>Removed "EN" recommendation from language code constraint</entry>
+            <entry>JLyle</entry>
+            <entry>Jun-12</entry>
+            <entry/>
+          </row>
+          <row>
+            <entry>45</entry>
+            <entry>Left Consolidated guidance out of core spec (e.g., TEL regex; requirement to
+              avoid mixed content</entry>
+            <entry>JLyle</entry>
+            <entry>Jun-12</entry>
+            <entry/>
           </row>
         </tbody>
       </tgroup>

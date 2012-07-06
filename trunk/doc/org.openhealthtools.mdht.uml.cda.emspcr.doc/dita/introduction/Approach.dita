@@ -26,8 +26,15 @@
 		in medical records, application of business rules, or other computable services. This 
 		iteration also includes changes to the level two template assignments, so the
 		May 2011 iteration is no longer correct.</p>
-		<p>Harmonization with Emergency Department specifications and <i>Data Elements for Emergency
-		Department Systems</i>(DEEDS) involved use of extant LOINC codes for shared elements.</p>
+		<p>Harmonization has been approached semantically rather than syntactically. There are clear
+			parallels, but few exact matches, with the CDA Consolidation project--an effort by the
+			Office of the National Coordinator's Standards &amp; Interoperability initiative in
+			collaboration with HL7 to bring together several similar extant CDA specifications. We
+			expect that LOINC codes will offer the ability to identify consistent information
+			elements, even when the structures they inhabit (templates) may be subject to differing
+			requirements. Similarly, harmonization with the Emergency Department specification
+				<i>Data Elements for Emergency Department Systems</i>(DEEDS) involved use of extant
+			LOINC codes for shared elements. </p>
 		<p>This release is generated from UML models developed in the Open Health Tools (OHT)
 			Model-Driven Health Tools (MDHT) project. The data specifications have been formalized
 			into computational models expressed in UML. These models are used by automated tooling

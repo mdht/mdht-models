@@ -12,8 +12,9 @@
 		vocabularies referred to in the constraints.</p>
 		<p>The CDA schema is published by Health Level 7, and is available at 
 		http://www.hl7.org/implement/standards.</p>
-		<p>This guide defines the information payload only. Implementers are encouraged to coordinate 
-		with one another by using the IHE framework (available at http://www.ihe.net/) to address 
-		expected capabilities of participating systems, including security and audit considerations.</p>
+		<p>This guide defines the information payload only. Implementers are encouraged to coordinate with
+			one another by using the IHE framework (available at http://www.ihe.net) to address
+			expected capabilities of participating systems, including security and audit
+			considerations.</p>
 	</body>
 </topic>
