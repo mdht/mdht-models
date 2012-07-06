@@ -2,11 +2,28 @@
 <!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
 <bookmap id="cdabook">
     <booktitle>
-        <booklibrary>Implementation Guide for CDA Release 2</booklibrary>
-        <mainbooktitle>Emergency Medical Services Patient Care Report</mainbooktitle>
-        <booktitlealt>(US REALM)</booktitlealt>
+        <booklibrary>HL7 Draft Standard for Trial Use</booklibrary>
+        <mainbooktitle>CDAR2L3_IG_EMSRUNRPT_DSTUR1_2012JUL</mainbooktitle>
+        <booktitlealt>HL7 Implementation Guide for CDA® Release 2 - Level 3: Emergency Medical Services; Patient Care Report, Release 1 (US Realm)</booktitlealt>
         <booktitlealt><image href="images/hl7logo.gif"/></booktitlealt>
         <booktitlealt audience="developer">(Developer Documentation)</booktitlealt>
+        <colophon>
+            <p>Publication of this draft standard for trial use and comment has been approved by Health Level Seven 
+            International (HL7). This draft standard is not an accredited American National Standard.  The comment 
+            period for use of this draft standard shall end 12 months from the date of publication. Suggestions 
+            for revision should be submitted at http://www.hl7.org/dstucomments/index.cfm.</p>
+            
+            <p>Following this 12 month evaluation period, this draft standard, revised as necessary, will be submitted 
+            to a normative ballot in preparation for approval by ANSI as an American National Standard. 
+            Implementations of this draft standard shall be viable throughout the normative ballot process and for 
+            up to six months after publication of the relevant normative standard.</p>
+        
+            <p>Copyright © 2012 Health Level Seven International ® ALL RIGHTS RESERVED. The reproduction of this 
+            material in any form is strictly forbidden without the written permission of the publisher.  HL7 
+            International and Health Level Seven are registered trademarks of Health Level Seven International. 
+            Reg. U.S. Pat &amp; TM Off.</p>
+            
+        </colophon>
     </booktitle>
     <bookmeta>
         <bookid>
@@ -30,6 +47,7 @@
     </bookmeta>
     <frontmatter>
         <preface>
+            <topicref href="preface/IP.dita" navtitle="Intellectual Property Notes" type="topic"/>
             <topicref href="preface/Acknowledgments.dita" navtitle="Acknowledgments" type="topic"/>
             <topicref href="preface/RevisionHistory.dita" navtitle="Authors" type="topic"/>
         </preface>
