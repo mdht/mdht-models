@@ -37,21 +37,12 @@
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aMW4oWeSEeGtXKebdWh3hg" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aMW4omeSEeGtXKebdWh3hg" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_8SKMcGlXEeG4boS-IbG8Zw" name="author" type="_SIol8GlXEeG4boS-IbG8Zw" association="_8SKzgWlXEeG4boS-IbG8Zw">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6IhxIMcHEeGjDJAyT0XW9Q" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6IhxIccHEeGjDJAyT0XW9Q" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="__QdwoGlXEeG4boS-IbG8Zw" name="recordTarget" type="_uSg6UGetEeGtXKebdWh3hg" association="__QeXsWlXEeG4boS-IbG8Zw">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4LmI8JkpEeGXp8PvMoofsw" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4LmI8ZkpEeGXp8PvMoofsw" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_cabJYGlYEeG4boS-IbG8Zw" name="humanAuthor" type="_D_JtUGlYEeG4boS-IbG8Zw" association="_cabJYmlYEeG4boS-IbG8Zw">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eVcroGlYEeG4boS-IbG8Zw" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eVcroWlYEeG4boS-IbG8Zw"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_jO5UkGldEeG4boS-IbG8Zw" name="billing" type="_S-YTcGldEeG4boS-IbG8Zw" association="_jO5UkmldEeG4boS-IbG8Zw">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CEgwoIy6EeGnhceUMXltng" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CEhXsIy6EeGnhceUMXltng" value="1"/>
+      <ownedAttribute xmi:id="_djmMUHs9EeGs2I-Db78R9w" name="title" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_djmMUXs9EeGs2I-Db78R9w" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_djmMUns9EeGs2I-Db78R9w" value="1"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_2DNR9xSVEeGGzu7fmW9pXw"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="__XwowIy0EeGnhceUMXltng" value="EMS Patient Care Report"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_HWSHgHs7EeGs2I-Db78R9w" name="versionNumber" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_x3spkHs7EeGs2I-Db78R9w">
@@ -72,12 +63,21 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NNkrAns7EeGs2I-Db78R9w" value="1"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_2DNR7RSVEeGGzu7fmW9pXw"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_djmMUHs9EeGs2I-Db78R9w" name="title" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_djmMUXs9EeGs2I-Db78R9w" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_djmMUns9EeGs2I-Db78R9w" value="1"/>
-        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_2DNR9xSVEeGGzu7fmW9pXw"/>
-        <defaultValue xmi:type="uml:LiteralString" xmi:id="__XwowIy0EeGnhceUMXltng" value="EMS Patient Care Report"/>
+      <ownedAttribute xmi:id="_8SKMcGlXEeG4boS-IbG8Zw" name="author" type="_SIol8GlXEeG4boS-IbG8Zw" association="_8SKzgWlXEeG4boS-IbG8Zw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6IhxIMcHEeGjDJAyT0XW9Q" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6IhxIccHEeGjDJAyT0XW9Q" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="__QdwoGlXEeG4boS-IbG8Zw" name="recordTarget" type="_uSg6UGetEeGtXKebdWh3hg" association="__QeXsWlXEeG4boS-IbG8Zw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4LmI8JkpEeGXp8PvMoofsw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4LmI8ZkpEeGXp8PvMoofsw" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_cabJYGlYEeG4boS-IbG8Zw" name="humanAuthor" type="_D_JtUGlYEeG4boS-IbG8Zw" association="_cabJYmlYEeG4boS-IbG8Zw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eVcroGlYEeG4boS-IbG8Zw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_eVcroWlYEeG4boS-IbG8Zw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_jO5UkGldEeG4boS-IbG8Zw" name="billing" type="_S-YTcGldEeG4boS-IbG8Zw" association="_jO5UkmldEeG4boS-IbG8Zw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CEgwoIy6EeGnhceUMXltng" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CEhXsIy6EeGnhceUMXltng" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_psU8gIchEeGqF6qfYwLiQw" name="section" type="_3dRe0HSUEeGa4IXs2ghZEw" association="_psU8gochEeGqF6qfYwLiQw">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_psU8gYchEeGqF6qfYwLiQw"/>
@@ -784,6 +784,12 @@ DProfessional.03 Middle: @ENXP=&quot;GIV&quot;</body>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IxBcMMnUEeG5-4TLRzrz-A" value="1"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_RxRkoIzfEeGnhceUMXltng" value="EMS Past Medical History"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_53-H0MnUEeG5-4TLRzrz-A" name="text" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_53-H0cnUEeG5-4TLRzrz-A" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_53-H0snUEeG5-4TLRzrz-A" value="1"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
+      </ownedAttribute>
       <ownedAttribute xmi:id="_atHzosH4EeGOXu0EprM3pw" name="entry1" type="_VoChcMH-EeGOXu0EprM3pw" association="_atHzoMH4EeGOXu0EprM3pw">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_atHzo8H4EeGOXu0EprM3pw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_atHzpMH4EeGOXu0EprM3pw" value="1"/>
@@ -791,12 +797,6 @@ DProfessional.03 Middle: @ENXP=&quot;GIV&quot;</body>
       <ownedAttribute xmi:id="_a-YiwsH4EeGOXu0EprM3pw" name="entry2" type="_WU0u8MH-EeGOXu0EprM3pw" association="_a-YiwMH4EeGOXu0EprM3pw">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_a-Yiw8H4EeGOXu0EprM3pw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_a-YixMH4EeGOXu0EprM3pw" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_53-H0MnUEeG5-4TLRzrz-A" name="text" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_53-H0cnUEeG5-4TLRzrz-A" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_53-H0snUEeG5-4TLRzrz-A" value="1"/>
-        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_VoChcMH-EeGOXu0EprM3pw" name="DerivedEntry">
         <generalization xmi:id="_VoChccH-EeGOXu0EprM3pw" general="_9YwisMHsEeGOXu0EprM3pw"/>
@@ -934,14 +934,6 @@ If NEMSIS EHistory. 08 is &quot;None Reported,&quot; the value should be FALSE.<
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BsrPsMnUEeG5-4TLRzrz-A" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Bsr2wMnUEeG5-4TLRzrz-A" value="1"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_oVLU0MHkEeGspaMtPNX3NA" name="billingConditionentry" visibility="private" type="_pPyi8MHkEeGspaMtPNX3NA" aggregation="composite" association="_oVUewsHkEeGspaMtPNX3NA">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yHEFoMHkEeGspaMtPNX3NA" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yHEFocHkEeGspaMtPNX3NA" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_HHHB4MHuEeGOXu0EprM3pw" name="losentry" type="_NUntAMHuEeGOXu0EprM3pw" association="_HHHo8MHuEeGOXu0EprM3pw">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HHHB4cHuEeGOXu0EprM3pw" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HHHB4sHuEeGOXu0EprM3pw" value="1"/>
-      </ownedAttribute>
       <ownedAttribute xmi:id="_CB5cUMnVEeG5-4TLRzrz-A" name="title" visibility="private" aggregation="composite">
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_D1cdkMnVEeG5-4TLRzrz-A" value="1"/>
@@ -953,6 +945,14 @@ If NEMSIS EHistory. 08 is &quot;None Reported,&quot; the value should be FALSE.<
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2kj2UcnUEeG5-4TLRzrz-A" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2kj2UsnUEeG5-4TLRzrz-A" value="1"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_oVLU0MHkEeGspaMtPNX3NA" name="billingConditionentry" visibility="private" type="_pPyi8MHkEeGspaMtPNX3NA" aggregation="composite" association="_oVUewsHkEeGspaMtPNX3NA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yHEFoMHkEeGspaMtPNX3NA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yHEFocHkEeGspaMtPNX3NA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_HHHB4MHuEeGOXu0EprM3pw" name="losentry" type="_NUntAMHuEeGOXu0EprM3pw" association="_HHHo8MHuEeGOXu0EprM3pw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HHHB4cHuEeGOXu0EprM3pw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HHHB4sHuEeGOXu0EprM3pw" value="1"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_pPyi8MHkEeGspaMtPNX3NA" name="BillingConditionEntry">
         <generalization xmi:id="_pPyi8cHkEeGspaMtPNX3NA" general="_9YwisMHsEeGOXu0EprM3pw"/>
@@ -1337,15 +1337,15 @@ If NEMSIS EHistory. 08 is &quot;None Reported,&quot; the value should be FALSE.<
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_ob8r8IfgEeGgT-SDukOzlw" value="EMS Cardiac Arrest Event"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_p4qjAsHzEeGOXu0EprM3pw" name="entry1" type="_vbOTAMH7EeGOXu0EprM3pw" association="_p4qjAMHzEeGOXu0EprM3pw">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_p4qjA8HzEeGOXu0EprM3pw" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_p4qjBMHzEeGOXu0EprM3pw" value="1"/>
-      </ownedAttribute>
       <ownedAttribute xmi:id="_3O6a4MnUEeG5-4TLRzrz-A" name="text" visibility="private" aggregation="composite">
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3O6a4cnUEeG5-4TLRzrz-A" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3O6a4snUEeG5-4TLRzrz-A" value="1"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_p4qjAsHzEeGOXu0EprM3pw" name="entry1" type="_vbOTAMH7EeGOXu0EprM3pw" association="_p4qjAMHzEeGOXu0EprM3pw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_p4qjA8HzEeGOXu0EprM3pw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_p4qjBMHzEeGOXu0EprM3pw" value="1"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_vbOTAMH7EeGOXu0EprM3pw" name="DerivedEntry">
         <generalization xmi:id="_vbPhIMH7EeGOXu0EprM3pw" general="_9YwisMHsEeGOXu0EprM3pw"/>
@@ -1812,15 +1812,15 @@ If NEMSIS EHistory. 08 is &quot;None Reported,&quot; the value should be FALSE.<
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_CXoKUH9bEeGht55Sz1eBOw" value="EMS Advance Directives"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_lS1nYMHzEeGOXu0EprM3pw" name="entry1" type="_bvOCcMH7EeGOXu0EprM3pw" association="_lS1nY8HzEeGOXu0EprM3pw">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lS1nYcHzEeGOXu0EprM3pw" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lS1nYsHzEeGOXu0EprM3pw" value="1"/>
-      </ownedAttribute>
       <ownedAttribute xmi:id="_s-ZNUMnUEeG5-4TLRzrz-A" name="text" visibility="private" aggregation="composite">
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_um9toMnUEeG5-4TLRzrz-A" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_unAJ4MnUEeG5-4TLRzrz-A" value="1"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_lS1nYMHzEeGOXu0EprM3pw" name="entry1" type="_bvOCcMH7EeGOXu0EprM3pw" association="_lS1nY8HzEeGOXu0EprM3pw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lS1nYcHzEeGOXu0EprM3pw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lS1nYsHzEeGOXu0EprM3pw" value="1"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_bvOCcMH7EeGOXu0EprM3pw" name="DerivedEntry">
         <generalization xmi:id="_bvOCccH7EeGOXu0EprM3pw" general="_9YwisMHsEeGOXu0EprM3pw"/>
@@ -1862,6 +1862,12 @@ If NEMSIS EHistory. 08 is &quot;None Reported,&quot; the value should be FALSE.<
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_I5fuoIy-EeGnhceUMXltng" value="EMS Allergies and Adverse Reactions"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_1PkZUMnUEeG5-4TLRzrz-A" name="text" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1PkZUcnUEeG5-4TLRzrz-A" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1PkZUsnUEeG5-4TLRzrz-A" value="1"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
+      </ownedAttribute>
       <ownedAttribute xmi:id="_ojtiQsHzEeGOXu0EprM3pw" name="entry1" type="_il8psMH7EeGOXu0EprM3pw" association="_ojtiQMHzEeGOXu0EprM3pw">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ojtiQ8HzEeGOXu0EprM3pw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ojtiRMHzEeGOXu0EprM3pw" value="1"/>
@@ -1869,12 +1875,6 @@ If NEMSIS EHistory. 08 is &quot;None Reported,&quot; the value should be FALSE.<
       <ownedAttribute xmi:id="_pM63UsHzEeGOXu0EprM3pw" name="entry2" type="_jWvNcMH7EeGOXu0EprM3pw" association="_pM63UMHzEeGOXu0EprM3pw">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pM63U8HzEeGOXu0EprM3pw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pM63VMHzEeGOXu0EprM3pw" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_1PkZUMnUEeG5-4TLRzrz-A" name="text" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1PkZUcnUEeG5-4TLRzrz-A" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1PkZUsnUEeG5-4TLRzrz-A" value="1"/>
-        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_il8psMH7EeGOXu0EprM3pw" name="DerivedEntry">
         <generalization xmi:id="_il8pscH7EeGOXu0EprM3pw" general="_9YwisMHsEeGOXu0EprM3pw"/>
@@ -2035,6 +2035,12 @@ If NEMSIS EHistory. 08 is &quot;None Reported,&quot; the value should be FALSE.<
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_pCtwEIcnEeGqF6qfYwLiQw" value="EMS Current Medications"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_4MjH0MnUEeG5-4TLRzrz-A" name="text" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4MjH0cnUEeG5-4TLRzrz-A" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4MjH0snUEeG5-4TLRzrz-A" value="1"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
+      </ownedAttribute>
       <ownedAttribute xmi:id="_q0w-4sHzEeGOXu0EprM3pw" name="entry1" type="_0YJgAMH7EeGOXu0EprM3pw" association="_q0w-4MHzEeGOXu0EprM3pw">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_q0w-48HzEeGOXu0EprM3pw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_q0w-5MHzEeGOXu0EprM3pw" value="1"/>
@@ -2046,12 +2052,6 @@ If NEMSIS EHistory. 08 is &quot;None Reported,&quot; the value should be FALSE.<
       <ownedAttribute xmi:id="_rgp0gsHzEeGOXu0EprM3pw" name="entry3" type="_1-M30MH7EeGOXu0EprM3pw" association="_rgp0gMHzEeGOXu0EprM3pw">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rgp0g8HzEeGOXu0EprM3pw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rgp0hMHzEeGOXu0EprM3pw" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_4MjH0MnUEeG5-4TLRzrz-A" name="text" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4MjH0cnUEeG5-4TLRzrz-A" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4MjH0snUEeG5-4TLRzrz-A" value="1"/>
-        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_0YJgAMH7EeGOXu0EprM3pw" name="DerivedEntry">
         <generalization xmi:id="_0YJgAcH7EeGOXu0EprM3pw" general="_9YwisMHsEeGOXu0EprM3pw"/>
@@ -2265,6 +2265,12 @@ This nulled notional class is parallel to the explicit question &quot;patient on
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NcgT4MnUEeG5-4TLRzrz-A" value="1"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_-Wm-4IziEeGnhceUMXltng" value="EMS Social History"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_9HuBUMnUEeG5-4TLRzrz-A" name="text" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9HuBUcnUEeG5-4TLRzrz-A" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9HuBUsnUEeG5-4TLRzrz-A" value="1"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
+      </ownedAttribute>
       <ownedAttribute xmi:id="_DpAXwsH4EeGOXu0EprM3pw" name="entry1" type="_CYMlQMH6EeGOXu0EprM3pw" association="_DpAXwMH4EeGOXu0EprM3pw">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DpAXw8H4EeGOXu0EprM3pw" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DpAXxMH4EeGOXu0EprM3pw" value="1"/>
@@ -2272,12 +2278,6 @@ This nulled notional class is parallel to the explicit question &quot;patient on
       <ownedAttribute xmi:id="_JGU8EsH4EeGOXu0EprM3pw" name="entry2" type="_DI1_EMH6EeGOXu0EprM3pw" association="_JGU8EMH4EeGOXu0EprM3pw">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_O1mNwMnUEeG5-4TLRzrz-A" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_O1m00MnUEeG5-4TLRzrz-A" value="1"/>
-      </ownedAttribute>
-      <ownedAttribute xmi:id="_9HuBUMnUEeG5-4TLRzrz-A" name="text" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9HuBUcnUEeG5-4TLRzrz-A" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9HuBUsnUEeG5-4TLRzrz-A" value="1"/>
-        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_CYMlQMH6EeGOXu0EprM3pw" name="DerivedEntry">
         <generalization xmi:id="_CYMlQcH6EeGOXu0EprM3pw" general="_9YwisMHsEeGOXu0EprM3pw"/>
@@ -2344,15 +2344,15 @@ This nulled notional class is parallel to the explicit question &quot;patient on
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vnyvIIzkEeGnhceUMXltng" value="1"/>
         <defaultValue xmi:type="uml:LiteralString" xmi:id="_spxe0IzkEeGnhceUMXltng" value="EMS Vital Signs"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_AqXcYMH4EeGOXu0EprM3pw" name="entry1" type="_fDog4MH4EeGOXu0EprM3pw" association="_AqXcY8H4EeGOXu0EprM3pw">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AqXcYcH4EeGOXu0EprM3pw" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AqXcYsH4EeGOXu0EprM3pw" value="1"/>
-      </ownedAttribute>
       <ownedAttribute xmi:id="_-G4_UMnUEeG5-4TLRzrz-A" name="text" visibility="private" aggregation="composite">
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-G4_UcnUEeG5-4TLRzrz-A" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-G4_UsnUEeG5-4TLRzrz-A" value="1"/>
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_AqXcYMH4EeGOXu0EprM3pw" name="entry1" type="_fDog4MH4EeGOXu0EprM3pw" association="_AqXcY8H4EeGOXu0EprM3pw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AqXcYcH4EeGOXu0EprM3pw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AqXcYsH4EeGOXu0EprM3pw" value="1"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_fDog4MH4EeGOXu0EprM3pw" name="DerivedEntry">
         <generalization xmi:id="_fDog4cH4EeGOXu0EprM3pw" general="_9YwisMHsEeGOXu0EprM3pw"/>
