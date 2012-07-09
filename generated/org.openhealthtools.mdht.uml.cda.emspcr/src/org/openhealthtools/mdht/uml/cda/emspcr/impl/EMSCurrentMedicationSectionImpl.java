@@ -88,6 +88,16 @@ public class EMSCurrentMedicationSectionImpl extends SectionImpl implements EMSC
    * <!-- end-user-doc -->
    * @generated
    */
+  public boolean validateEMSCurrentMedicationSectionText(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return EMSCurrentMedicationSectionOperations.validateEMSCurrentMedicationSectionText(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public boolean validateEMSCurrentMedicationSectionEntry1(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return EMSCurrentMedicationSectionOperations.validateEMSCurrentMedicationSectionEntry1(this, diagnostics, context);

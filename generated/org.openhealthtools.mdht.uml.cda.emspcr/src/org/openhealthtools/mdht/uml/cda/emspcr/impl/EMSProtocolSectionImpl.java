@@ -78,6 +78,26 @@ public class EMSProtocolSectionImpl extends SectionImpl implements EMSProtocolSe
    * <!-- end-user-doc -->
    * @generated
    */
+  public boolean validateEMSProtocolSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return EMSProtocolSectionOperations.validateEMSProtocolSectionTitle(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateEMSProtocolSectionText(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return EMSProtocolSectionOperations.validateEMSProtocolSectionText(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public boolean validateEMSProtocolSectionEntry1(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return EMSProtocolSectionOperations.validateEMSProtocolSectionEntry1(this, diagnostics, context);

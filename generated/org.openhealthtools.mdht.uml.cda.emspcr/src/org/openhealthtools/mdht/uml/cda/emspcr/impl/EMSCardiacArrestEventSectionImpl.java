@@ -88,6 +88,16 @@ public class EMSCardiacArrestEventSectionImpl extends SectionImpl implements EMS
    * <!-- end-user-doc -->
    * @generated
    */
+  public boolean validateEMSCardiacArrestEventSectionText(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return EMSCardiacArrestEventSectionOperations.validateEMSCardiacArrestEventSectionText(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public boolean validateEMSCardiacArrestEventSectionEntry1(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return EMSCardiacArrestEventSectionOperations.validateEMSCardiacArrestEventSectionEntry1(this, diagnostics, context);

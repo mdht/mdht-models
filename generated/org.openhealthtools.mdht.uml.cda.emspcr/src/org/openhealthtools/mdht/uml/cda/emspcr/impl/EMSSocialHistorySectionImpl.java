@@ -98,6 +98,16 @@ public class EMSSocialHistorySectionImpl extends SectionImpl implements EMSSocia
    * <!-- end-user-doc -->
    * @generated
    */
+  public boolean validateEMSSocialHistorySectionText(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return EMSSocialHistorySectionOperations.validateEMSSocialHistorySectionText(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public boolean validateEMSSocialHistorySectionEntry1(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return EMSSocialHistorySectionOperations.validateEMSSocialHistorySectionEntry1(this, diagnostics, context);

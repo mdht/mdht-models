@@ -88,6 +88,16 @@ public class EMSVitalSignsSectionImpl extends SectionImpl implements EMSVitalSig
    * <!-- end-user-doc -->
    * @generated
    */
+  public boolean validateEMSVitalSignsSectionText(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return EMSVitalSignsSectionOperations.validateEMSVitalSignsSectionText(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public boolean validateEMSVitalSignsSectionEntry1(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return EMSVitalSignsSectionOperations.validateEMSVitalSignsSectionEntry1(this, diagnostics, context);
