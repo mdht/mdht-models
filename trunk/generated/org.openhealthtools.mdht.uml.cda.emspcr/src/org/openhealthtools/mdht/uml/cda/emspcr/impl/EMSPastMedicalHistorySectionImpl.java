@@ -98,6 +98,16 @@ public class EMSPastMedicalHistorySectionImpl extends SectionImpl implements EMS
    * <!-- end-user-doc -->
    * @generated
    */
+  public boolean validateEMSPastMedicalHistorySectionText(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return EMSPastMedicalHistorySectionOperations.validateEMSPastMedicalHistorySectionText(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public boolean validateEMSPastMedicalHistorySectionEntry1(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return EMSPastMedicalHistorySectionOperations.validateEMSPastMedicalHistorySectionEntry1(this, diagnostics, context);

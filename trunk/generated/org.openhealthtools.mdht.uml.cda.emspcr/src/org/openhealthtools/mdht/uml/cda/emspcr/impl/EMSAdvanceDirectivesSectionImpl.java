@@ -88,6 +88,16 @@ public class EMSAdvanceDirectivesSectionImpl extends SectionImpl implements EMSA
    * <!-- end-user-doc -->
    * @generated
    */
+  public boolean validateEMSAdvanceDirectivesSectionText(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return EMSAdvanceDirectivesSectionOperations.validateEMSAdvanceDirectivesSectionText(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public boolean validateEMSAdvanceDirectivesSectionEntry1(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return EMSAdvanceDirectivesSectionOperations.validateEMSAdvanceDirectivesSectionEntry1(this, diagnostics, context);

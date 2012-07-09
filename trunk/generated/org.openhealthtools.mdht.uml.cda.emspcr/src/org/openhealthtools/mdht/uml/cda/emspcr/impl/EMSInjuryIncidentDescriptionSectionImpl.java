@@ -78,6 +78,26 @@ public class EMSInjuryIncidentDescriptionSectionImpl extends SectionImpl impleme
    * <!-- end-user-doc -->
    * @generated
    */
+  public boolean validateEMSInjuryIncidentDescriptionSectionText(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return EMSInjuryIncidentDescriptionSectionOperations.validateEMSInjuryIncidentDescriptionSectionText(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateEMSInjuryIncidentDescriptionSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return EMSInjuryIncidentDescriptionSectionOperations.validateEMSInjuryIncidentDescriptionSectionTitle(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public boolean validateEMSInjuryIncidentDescriptionSectionEntry3(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return EMSInjuryIncidentDescriptionSectionOperations.validateEMSInjuryIncidentDescriptionSectionEntry3(this, diagnostics, context);

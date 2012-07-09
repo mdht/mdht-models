@@ -88,6 +88,16 @@ public class EMSAllergiesAndAdverseReactionsSectionImpl extends SectionImpl impl
    * <!-- end-user-doc -->
    * @generated
    */
+  public boolean validateEMSAllergiesAndAdverseReactionsSectionText(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return EMSAllergiesAndAdverseReactionsSectionOperations.validateEMSAllergiesAndAdverseReactionsSectionText(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public boolean validateEMSAllergiesAndAdverseReactionsSectionEntry1(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return EMSAllergiesAndAdverseReactionsSectionOperations.validateEMSAllergiesAndAdverseReactionsSectionEntry1(this, diagnostics, context);

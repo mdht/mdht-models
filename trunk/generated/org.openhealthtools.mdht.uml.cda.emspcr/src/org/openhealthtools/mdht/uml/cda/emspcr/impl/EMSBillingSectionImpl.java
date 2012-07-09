@@ -78,6 +78,26 @@ public class EMSBillingSectionImpl extends SectionImpl implements EMSBillingSect
    * <!-- end-user-doc -->
    * @generated
    */
+  public boolean validateEMSBillingSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return EMSBillingSectionOperations.validateEMSBillingSectionTitle(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateEMSBillingSectionText(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return EMSBillingSectionOperations.validateEMSBillingSectionText(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public boolean validateEMSBillingSectionBillingConditionentry(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
     return EMSBillingSectionOperations.validateEMSBillingSectionBillingConditionentry(this, diagnostics, context);

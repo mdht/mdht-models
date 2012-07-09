@@ -19,7 +19,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage#getEMSMedicationsAdministeredSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='EMSMedicationsAdministeredSectionTemplateId EMSMedicationsAdministeredSectionCode EMSMedicationsAdministeredSectionCodeP EMSMedicationsAdministeredSectionText EMSMedicationsAdministeredSectionTitle EMSMedicationsAdministeredSectionEntry1' templateId.root='2.16.840.1.113883.17.3.10.1.18' code.code='67849-0' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Medications Administered Section' constraints.validation.dependOn.EMSMedicationsAdministeredSectionCode='EMSMedicationsAdministeredSectionCodeP'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='EMSMedicationsAdministeredSectionTemplateId EMSMedicationsAdministeredSectionCode EMSMedicationsAdministeredSectionCodeP EMSMedicationsAdministeredSectionTitle EMSMedicationsAdministeredSectionText EMSMedicationsAdministeredSectionEntry1' templateId.root='2.16.840.1.113883.17.3.10.1.18' code.code='67849-0' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Medications Administered Section' title.mixed='Medications Administered Section'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntry constraints.validation.warning='DerivedEntryEMSMedicationAdministered'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministered classCode='SBADM' constraints.validation.error='EMSMedicationAdministeredClassCode EMSMedicationAdministeredDoseQuantity EMSMedicationAdministeredEffectiveTime EMSMedicationAdministeredRouteCode EMSMedicationAdministeredRouteCodeP EMSMedicationAdministeredEMSMedicationConsumable EMSMedicationAdministeredMedicationAdministeredResponseRelationship EMSMedicationAdministeredEMSMedicationComplicationRelationship EMSMedicationAdministeredEMSMedicationPriorAdministrationRelationship' constraints.validation.info='EMSMedicationAdministeredNegationInd EMSMedicationAdministeredMedicationNotAdministeredEntryRelationship EMSMedicationAdministeredEMSMedicationPerformerParticipation EMSMedicationAdministeredEMSMedicationAuthorizationRelationship' routeCode.codeSystem='2.16.840.1.113883.6.1' routeCode.codeSystemName='LOINC' constraints.validation.dependOn.EMSMedicationAdministeredRouteCode='EMSMedicationAdministeredRouteCodeP'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrEMSMedicationsAdministeredSectionDerivedEntryEMSMedicationAdministeredMedicationNotAdministeredEntryRelationship inversionInd='TRUE' constraints.validation.error='MedicationNotAdministeredEntryRelationshipInversionInd MedicationNotAdministeredEntryRelationshipTypeCode MedicationNotAdministeredEntryRelationshipTypeCodeP MedicationNotAdministeredEntryRelationshipMedicationNotAdministeredReasonObservation' typeCode='RSON' constraints.validation.dependOn.MedicationNotAdministeredEntryRelationshipTypeCode='MedicationNotAdministeredEntryRelationshipTypeCodeP'"
@@ -99,11 +99,11 @@ public interface EMSMedicationsAdministeredSection extends Section
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined())
+   * (self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined() and self.title.getText() = 'Medications Administered Section')
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined())'"
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined() and self.title.getText() = \'Medications Administered Section\')'"
    * @generated
    */
   boolean validateEMSMedicationsAdministeredSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context);
