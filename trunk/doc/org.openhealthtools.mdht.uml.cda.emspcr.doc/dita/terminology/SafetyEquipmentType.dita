@@ -15,27 +15,26 @@
 <row><entry>Value Set</entry><entry>SafetyEquipmentType - 2.16.840.1.113883.17.3.5.7</entry></row>
 <row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="4">
+<table><tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
-<colspec colname="col2" colwidth="2*"/>
-<colspec colname="col3" colwidth="1*"/>
-<colspec colname="col4" colwidth="3*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
 <thead><row>
-<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
-<row><entry>LA137-2</entry><entry>LA137-2</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17375-9</entry><entry>LA17375-9</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17376-7</entry><entry>LA17376-7</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17377-5</entry><entry>LA17377-5</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17378-3</entry><entry>LA17378-3</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17379-1</entry><entry>LA17379-1</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17380-9</entry><entry>LA17380-9</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17382-5</entry><entry>LA17382-5</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA46-8</entry><entry>LA46-8</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA9381-0</entry><entry>LA9381-0</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA9391-9</entry><entry>LA9391-9</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA9392-7</entry><entry>LA9392-7</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA9393-5</entry><entry>LA9393-5</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA137-2</entry><entry>LOINC</entry><entry>None</entry></row>
+<row><entry>LA17375-9</entry><entry>LOINC</entry><entry>Child booster seat</entry></row>
+<row><entry>LA17376-7</entry><entry>LOINC</entry><entry>Helmet worn</entry></row>
+<row><entry>LA17377-5</entry><entry>LOINC</entry><entry>Infant car seat forward facing</entry></row>
+<row><entry>LA17378-3</entry><entry>LOINC</entry><entry>Infant car seat rear facing</entry></row>
+<row><entry>LA17379-1</entry><entry>LOINC</entry><entry>Lap belt with shoulder belt</entry></row>
+<row><entry>LA17380-9</entry><entry>LOINC</entry><entry>Lap belt without shoulder belt</entry></row>
+<row><entry>LA17382-5</entry><entry>LOINC</entry><entry>Protective non-clothing gear</entry></row>
+<row><entry>LA46-8</entry><entry>LOINC</entry><entry>Other</entry></row>
+<row><entry>LA9381-0</entry><entry>LOINC</entry><entry>Shoulder belt</entry></row>
+<row><entry>LA9391-9</entry><entry>LOINC</entry><entry>Eye protection</entry></row>
+<row><entry>LA9392-7</entry><entry>LOINC</entry><entry>Protective clothing</entry></row>
+<row><entry>LA9393-5</entry><entry>LOINC</entry><entry>Personal flotation device</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

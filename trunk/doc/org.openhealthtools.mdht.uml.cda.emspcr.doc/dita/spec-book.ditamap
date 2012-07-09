@@ -2,14 +2,19 @@
 <!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
 <bookmap id="cdabook">
     <booktitle>
-        <booklibrary>HL7 Draft Standard for Trial Use</booklibrary>
-        <mainbooktitle>CDAR2L3_IG_EMSRUNRPT_DSTUR1_2012JUL</mainbooktitle>
-        <booktitlealt>HL7 Implementation Guide for CDA® Release 2 - Level 3: Emergency Medical Services; Patient Care Report, Release 1 (US Realm)</booktitlealt>
+        <booklibrary>HL7 Draft Standard for Trial Use</booklibrary>        
+        <mainbooktitle>Emergency Medical Services; Patient Care Report</mainbooktitle>
+        <booktitlealt>HL7 Draft Standard for Trial Use</booktitlealt>
         <booktitlealt><image href="images/hl7logo.gif"/></booktitlealt>
         <booktitlealt audience="developer">(Developer Documentation)</booktitlealt>
-
     </booktitle>
     <bookmeta>
+    <prodinfo>
+					<prodname>CDAR2L3_IG_EMSRUNRPT_DSTUR1_2012JUL</prodname>
+					<vrmlist>
+						<vrm release="DSTUR1" version="2012JUL" ></vrm>
+					</vrmlist>
+				</prodinfo>
         <bookid>
             <booknumber/>
             <maintainer>
@@ -17,6 +22,8 @@
                 <person/>
             </maintainer>
         </bookid>
+        
+        
         <bookrights>
             <copyrfirst>
                 <year>2009</year>
@@ -31,9 +38,8 @@
     </bookmeta>
     <frontmatter>
         <preface>
-            <topicref href="preface/IP.dita" navtitle="Intellectual Property Notes" type="topic"/>
-            <topicref href="preface/Acknowledgments.dita" navtitle="Acknowledgments" type="topic"/>
-            <topicref href="preface/RevisionHistory.dita" navtitle="Authors" type="topic"/>
+            <topicref href="preface/IP.dita" navtitle="Intellectual Property Notes" type="topic"/> 
+           <topicref href="preface/Acknowledgments.dita" navtitle="Acknowledgments" type="topic"/>
         </preface>
         <booklists>
             <toc/>

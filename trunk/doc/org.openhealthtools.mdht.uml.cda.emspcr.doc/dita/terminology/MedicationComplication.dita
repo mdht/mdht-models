@@ -15,35 +15,34 @@
 <row><entry>Value Set</entry><entry>MedicationComplication - 2.16.840.1.113883.17.3.5.45</entry></row>
 <row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="4">
+<table><tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
-<colspec colname="col2" colwidth="2*"/>
-<colspec colname="col3" colwidth="1*"/>
-<colspec colname="col4" colwidth="3*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
 <thead><row>
-<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
-<row><entry>LA137-2</entry><entry>LA137-2</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA15098-9</entry><entry>LA15098-9</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA15099-7</entry><entry>LA15099-7</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA15424-7</entry><entry>LA15424-7</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17059-9</entry><entry>LA17059-9</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17392-4</entry><entry>LA17392-4</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17393-2</entry><entry>LA17393-2</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17394-0</entry><entry>LA17394-0</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17396-5</entry><entry>LA17396-5</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17397-3</entry><entry>LA17397-3</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17713-1</entry><entry>LA17713-1</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17714-9</entry><entry>LA17714-9</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA18266-9</entry><entry>LA18266-9</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA18267-7</entry><entry>LA18267-7</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA7418-2</entry><entry>LA7418-2</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA7434-9</entry><entry>LA7434-9</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA7443-0</entry><entry>LA7443-0</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA7444-8</entry><entry>LA7444-8</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA9540-1</entry><entry>LA9540-1</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA9541-9</entry><entry>LA9541-9</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA9548-4</entry><entry>LA9548-4</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA137-2</entry><entry>LOINC</entry><entry>None</entry></row>
+<row><entry>LA15098-9</entry><entry>LOINC</entry><entry>Nausea</entry></row>
+<row><entry>LA15099-7</entry><entry>LOINC</entry><entry>Vomiting</entry></row>
+<row><entry>LA15424-7</entry><entry>LOINC</entry><entry>Diarrhea</entry></row>
+<row><entry>LA17059-9</entry><entry>LOINC</entry><entry>Other (not listed)</entry></row>
+<row><entry>LA17392-4</entry><entry>LOINC</entry><entry>Altered mental status</entry></row>
+<row><entry>LA17393-2</entry><entry>LOINC</entry><entry>Apnea</entry></row>
+<row><entry>LA17394-0</entry><entry>LOINC</entry><entry>Bradycardia</entry></row>
+<row><entry>LA17396-5</entry><entry>LOINC</entry><entry>Hypoxia</entry></row>
+<row><entry>LA17397-3</entry><entry>LOINC</entry><entry>Itching/urticaria</entry></row>
+<row><entry>LA17713-1</entry><entry>LOINC</entry><entry>Injury</entry></row>
+<row><entry>LA17714-9</entry><entry>LOINC</entry><entry>Tachycardia</entry></row>
+<row><entry>LA18266-9</entry><entry>LOINC</entry><entry>Bradypnea</entry></row>
+<row><entry>LA18267-7</entry><entry>LOINC</entry><entry>Tachypnea</entry></row>
+<row><entry>LA7418-2</entry><entry>LOINC</entry><entry>Bleeding</entry></row>
+<row><entry>LA7434-9</entry><entry>LOINC</entry><entry>Extravasation</entry></row>
+<row><entry>LA7443-0</entry><entry>LOINC</entry><entry>Hypotension</entry></row>
+<row><entry>LA7444-8</entry><entry>LOINC</entry><entry>Hypertension</entry></row>
+<row><entry>LA9540-1</entry><entry>LOINC</entry><entry>Hyperthermia</entry></row>
+<row><entry>LA9541-9</entry><entry>LOINC</entry><entry>Hypothermia</entry></row>
+<row><entry>LA9548-4</entry><entry>LOINC</entry><entry>Respiratory distress</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>
