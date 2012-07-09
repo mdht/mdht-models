@@ -15,17 +15,16 @@
 <row><entry>Value Set</entry><entry>ExistenceOfContraindicationsToThrombolyticUse - 2.16.840.1.113883.17.3.5.41</entry></row>
 <row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="4">
+<table><tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
-<colspec colname="col2" colwidth="2*"/>
-<colspec colname="col3" colwidth="1*"/>
-<colspec colname="col4" colwidth="3*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
 <thead><row>
-<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
-<row><entry>LA17114-2</entry><entry>LA17114-2</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17115-9</entry><entry>LA17115-9</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17116-7</entry><entry>LA17116-7</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17114-2</entry><entry>LOINC</entry><entry>Definite contraindications to thrombolytic use</entry></row>
+<row><entry>LA17115-9</entry><entry>LOINC</entry><entry>Possible contraindications to thrombolytic Use</entry></row>
+<row><entry>LA17116-7</entry><entry>LOINC</entry><entry>No contraindications to thrombolytic Use</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

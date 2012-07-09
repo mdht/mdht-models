@@ -15,18 +15,17 @@
 <row><entry>Value Set</entry><entry>EMDPerformed - 2.16.840.1.113883.17.3.5.48</entry></row>
 <row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="4">
+<table><tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
-<colspec colname="col2" colwidth="2*"/>
-<colspec colname="col3" colwidth="1*"/>
-<colspec colname="col4" colwidth="3*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
 <thead><row>
-<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
-<row><entry>LA17151-4</entry><entry>LA17151-4</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17152-2</entry><entry>LA17152-2</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17153-0</entry><entry>LA17153-0</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA32-8</entry><entry>LA32-8</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17151-4</entry><entry>LOINC</entry><entry>Yes, with pre-arrival instructions</entry></row>
+<row><entry>LA17152-2</entry><entry>LOINC</entry><entry>Yes, without pre-arrival instructions</entry></row>
+<row><entry>LA17153-0</entry><entry>LOINC</entry><entry>Yes, unknown if pre-arrival instructions given</entry></row>
+<row><entry>LA32-8</entry><entry>LOINC</entry><entry>No</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

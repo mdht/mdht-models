@@ -15,18 +15,17 @@
 <row><entry>Value Set</entry><entry>MethodOfECGInterpretation - 2.16.840.1.113883.17.3.5.20</entry></row>
 <row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="4">
+<table><tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
-<colspec colname="col2" colwidth="2*"/>
-<colspec colname="col3" colwidth="1*"/>
-<colspec colname="col4" colwidth="3*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
 <thead><row>
-<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
-<row><entry>LA18682-7</entry><entry>LA18682-7</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA18683-5</entry><entry>LA18683-5</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA18684-3</entry><entry>LA18684-3</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA18685-0</entry><entry>LA18685-0</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA18682-7</entry><entry>LOINC</entry><entry>Computer interpretation</entry></row>
+<row><entry>LA18683-5</entry><entry>LOINC</entry><entry>Manual interpretation</entry></row>
+<row><entry>LA18684-3</entry><entry>LOINC</entry><entry>Transmission with no interpretation</entry></row>
+<row><entry>LA18685-0</entry><entry>LOINC</entry><entry>Transmission with remote interpretation</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

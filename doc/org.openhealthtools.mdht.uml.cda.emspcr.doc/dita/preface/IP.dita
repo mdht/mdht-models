@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
-<topic id="topic_jbw_dmy_5g">
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN"
+ "topic.dtd">
+<topic id="topicId" xml:lang="en-us">
   <title>Licensing and Intellectual Property </title>
   <body>
     <p/>
@@ -21,29 +22,29 @@
       International and Health Level Seven are registered trademarks of Health Level Seven
       International. Reg. U.S. Pat &amp;amp; TM Off.</p>
     <p/>
-    <p> A.         <b>If you are the individual that downloaded or ordered this HL7 Standard,
+    <p> A.<b>If you are the individual that downloaded or ordered this HL7 Standard,
         specification or other work (in each and every instance "Material")</b>, the following
-      describes the permitted uses of the Material.   </p>
-    <p>B.         <b>If you are NOT such individual,</b> you are not authorized to make any use of
-      the Material.  To obtain an authorized copy of this Material, please visit
-      http://www.hl7.org/implement/standards/index.cfm.   </p>
-    <p>C.         <b>If you are not an HL7 Organizational Member</b>, the following are your
-      permitted uses of this Material:   </p>
-    <p>1.         <b>Read and Copy License Only</b>.  HL7 hereby grants you the right, without
-      charge, to download and copy (for personal use only) this Material for study purposes only. 
+      describes the permitted uses of the Material.  </p>
+    <p>B. <b>If you are NOT such individual,</b> you are not authorized to make any use of
+      the Material. To obtain an authorized copy of this Material, please visit
+      http://www.hl7.org/implement/standards/index.cfm.  </p>
+    <p>C. <b>If you are not an HL7 Organizational Member</b>, the following are your
+      permitted uses of this Material:  </p>
+    <p>1. <b>Read and Copy License Only</b>. HL7 hereby grants you the right, without
+      charge, to download and copy (for personal use only) this Material for study purposes only.
       This license grant does not include the right to sublicense or modify the Material, or to
-      implement the Material, either in whole in part, in any product or service.   Please see
-      http://www.hl7.org/legal/ippolicy.cfm for the full license terms governing the Material.   </p>
-    <p>D.         <b>If you are an HL7 Organizational Member</b>, the following are your permitted
-      uses of this Material.   </p>
-    <p>1.         <b>Implementation License Terms</b>.    </p>
-    <p>1.1       <b> Definitions</b>.  As used in this Agreement, the following terms shall have the
-      following definitions:   </p>
+      implement the Material, either in whole in part, in any product or service.  Please see
+      http://www.hl7.org/legal/ippolicy.cfm for the full license terms governing the Material.  </p>
+    <p>D. <b>If you are an HL7 Organizational Member</b>, the following are your permitted
+      uses of this Material.  </p>
+    <p>1. <b>Implementation License Terms</b>.  </p>
+    <p>1.1 <b> Definitions</b>. As used in this Agreement, the following terms shall have the
+      following definitions:  </p>
     <p>"<b>Compliant Product</b>" is a product or service that implements Material that is an HL7
-      Specification in whole or in part.   </p>
+      Specification in whole or in part.  </p>
     <p>"<b>End User</b>" is a company, entity or individual that is the ultimate purchaser or
-      licensee from Licensee of a Compliant Product.   </p>
-    <p>1.2        <b>License</b>.   In consideration of becoming an Organizational member of HL7 and
+      licensee from Licensee of a Compliant Product.  </p>
+    <p>1.2  <b>License</b>. In consideration of becoming an Organizational member of HL7 and
       continuing to pay the appropriate HL7 Organizational membership fees in full, HL7 hereby
       grants to you without additional charge, on a perpetual (except as provided for in the full
       license terms governing the Material), non-exclusive and worldwide basis, the right to (a)
@@ -52,8 +53,8 @@
       making, having made, using, marketing, importing, offering to sell or license, and selling or
       licensing, and to otherwise distribute, Compliant Products, in all cases subject to the
       conditions set forth in this Agreement and any relevant patent and other intellectual property
-      rights of third parties (which may include members of HL7).   No other license, sublicense, or
-      other rights of any kind are granted under this Agreement.    </p>
+      rights of third parties (which may include members of HL7). No other license, sublicense, or
+      other rights of any kind are granted under this Agreement.  </p>
     <p>Please see http://www.hl7.org/legal/ippolicy.cfm for the full license terms governing the
       Material. </p>
   </body>

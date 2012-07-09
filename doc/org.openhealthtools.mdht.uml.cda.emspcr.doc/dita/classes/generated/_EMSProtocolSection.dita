@@ -13,79 +13,78 @@
 <section id="description">
 </section>
 <ol id="conformance">
-<li><b>SHALL</b> conform to <xref href="../DerivedCDASection.dita">Derived CDA Section</xref></li>
-<li><b>SHALL</b> contain zero or one [0..1] <tt><b>code</b></tt><tt><b>/@code</b>="67537?1" </tt><i>EMS Protocol</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67537-1" </tt><i>EMS Protocol Section</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10713)
 </li>
-<li>Contains zero or one [0..1] <tt><b>text</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> = "EMS Protocol Section"
 </li>
-<li>Contains zero or one [0..1] <tt><b>title</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67537?1" </tt><i>EMS protocol</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/Protocol.dita">Protocol</xref> 2.16.840.1.113883.17.3.5.73</tt><b> STATIC</b></li></ol></li></ol>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10714) <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> (CONF:10717) <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10719)<tt><b>/@code</b>="67537-1" </tt><i>EMS protocol</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10718)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:10720), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/Protocol.dita">Protocol</xref> 2.16.840.1.113883.17.3.5.73</tt><b> STATIC</b> (CONF:10721)</li></ol></li></ol>
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67538?9" </tt><i>EMS Protocol age category</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ProtocolAgeCategory.dita">ProtocolAgeCategory</xref> 2.16.840.1.113883.17.3.5.86</tt><b> STATIC</b></li></ol></li></ol>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10715) <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> (CONF:10722) <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10723)<tt><b>/@code</b>="67538-9" </tt><i>EMS Protocol age category</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10724)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:10725), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ProtocolAgeCategory.dita">ProtocolAgeCategory</xref> 2.16.840.1.113883.17.3.5.86</tt><b> STATIC</b> (CONF:10726)</li></ol></li></ol>
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67553?8" </tt><i>EMS candidate patient registry</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/RegistryType.dita">RegistryType</xref> 2.16.840.1.113883.17.3.5.74</tt><b> STATIC</b></li></ol></li></ol>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10716) <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> (CONF:10727) <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10728)<tt><b>/@code</b>="67553-8" </tt><i>EMS candidate patient registry</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10729)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:10730), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/RegistryType.dita">RegistryType</xref> 2.16.840.1.113883.17.3.5.74</tt><b> STATIC</b> (CONF:10731)</li></ol></li></ol>
 </li>
 </ol>
 <ol id="aggregate">
-<li><b>SHALL</b> conform to <xref href="../DerivedCDASection.dita">Derived CDA Section</xref></li>
-<li><b>SHALL</b> contain zero or one [0..1] <tt><b>code</b></tt><tt><b>/@code</b>="67537?1" </tt><i>EMS Protocol</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67537-1" </tt><i>EMS Protocol Section</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10713)
 </li>
-<li>Contains zero or one [0..1] <tt><b>title</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> = "EMS Protocol Section"
 </li>
-<li>Contains zero or one [0..1] <tt><b>text</b></tt>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt>
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67537?1" </tt><i>EMS protocol</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/Protocol.dita">Protocol</xref> 2.16.840.1.113883.17.3.5.73</tt><b> STATIC</b></li></ol></li></ol>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10714) <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> (CONF:10717) <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10719)<tt><b>/@code</b>="67537-1" </tt><i>EMS protocol</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10718)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:10720), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/Protocol.dita">Protocol</xref> 2.16.840.1.113883.17.3.5.73</tt><b> STATIC</b> (CONF:10721)</li></ol></li></ol>
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67538?9" </tt><i>EMS Protocol age category</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ProtocolAgeCategory.dita">ProtocolAgeCategory</xref> 2.16.840.1.113883.17.3.5.86</tt><b> STATIC</b></li></ol></li></ol>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10715) <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> (CONF:10722) <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10723)<tt><b>/@code</b>="67538-9" </tt><i>EMS Protocol age category</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10724)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:10725), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/ProtocolAgeCategory.dita">ProtocolAgeCategory</xref> 2.16.840.1.113883.17.3.5.86</tt><b> STATIC</b> (CONF:10726)</li></ol></li></ol>
 </li>
-<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="67553?8" </tt><i>EMS candidate patient registry</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD, where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/RegistryType.dita">RegistryType</xref> 2.16.840.1.113883.17.3.5.74</tt><b> STATIC</b></li></ol></li></ol>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt> (CONF:10716) <ol><li> This entry <b>SHALL</b> conform to <xref href="../DerivedEntry.dita">Derived Entry</xref> template (templateId: <tt>2.16.840.1.1133883.17.3.10.1.24</tt>)</li><li> This entry <b>SHALL</b> contain exactly one [1..1] <tt><b>observation</b></tt> (CONF:10727) <ol><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt> (CONF:10728)<tt><b>/@code</b>="67553-8" </tt><i>EMS candidate patient registry</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:10729)</li><li> This observation <b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt> with data type CD (CONF:10730), where the @code <b>SHALL</b> be selected from ValueSet<tt> <xref href="../../terminology/RegistryType.dita">RegistryType</xref> 2.16.840.1.113883.17.3.5.74</tt><b> STATIC</b> (CONF:10731)</li></ol></li></ol>
 </li>
 </ol>
 <section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >emspcr::EMSProtocolSection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section[cda:templateId/@root = 2.16.840.1.113883.17.3.10.1.7]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>ActClass</entry><entry></entry><entry> DOCSECT</entry></row> 
 <row><entry>moodCode</entry><entry>@moodCode</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>ActMood</entry><entry></entry><entry> EVN</entry></row> 
 <row><entry>nullFlavor</entry><entry>@nullFlavor</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>NullFlavor</entry><entry></entry><entry> ASKU</entry></row> 
 <row><entry>sectionId</entry><entry>@sectionId</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>String</entry><entry></entry><entry> </entry></row> 
-<row><entry>code</entry><entry>code</entry><entry>0..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry></entry><entry>LOINC 2.16.840.1.113883.6.1 67537?1</entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:10713</entry><entry>LOINC 2.16.840.1.113883.6.1 67537-1</entry></row> 
 <row><entry>confidentialityCode</entry><entry>confidentialityCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
 <row><entry>id</entry><entry>id</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> </entry></row> 
 <row><entry>languageCode</entry><entry>languageCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
 <row><entry>realmCode</entry><entry>realmCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
 <row><entry>templateId</entry><entry>templateId</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> 2.16.840.1.113883.17.3.10.1.7</entry></row> 
-<row><entry>title</entry><entry>title</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>ST</entry><entry></entry><entry> </entry></row> 
+<row><entry>title</entry><entry>title</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ST</entry><entry></entry><entry> MISSINGTYPE</entry></row> 
 <row><entry>author</entry><entry>author</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Author</entry><entry></entry><entry> </entry></row> 
 <row><entry>component</entry><entry>component</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Component5</entry><entry></entry><entry> </entry></row> 
 <row><entry>entry</entry><entry>entry</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Entry</entry><entry></entry><entry> </entry></row> 
-<row><entry>entry1</entry><entry>entry1</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>DerivedEntry</entry><entry></entry><entry> </entry></row> 
-<row><entry>entry2</entry><entry>entry2</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>DerivedEntry</entry><entry></entry><entry> </entry></row> 
-<row><entry>entry3</entry><entry>entry3</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>DerivedEntry</entry><entry></entry><entry> </entry></row> 
+<row><entry>entry1</entry><entry>entry1</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>DerivedEntry</entry><entry>CONF:10714</entry><entry> </entry></row> 
+<row><entry>entry2</entry><entry>entry2</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>DerivedEntry</entry><entry>CONF:10715</entry><entry> </entry></row> 
+<row><entry>entry3</entry><entry>entry3</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>DerivedEntry</entry><entry>CONF:10716</entry><entry> </entry></row> 
 <row><entry>informant</entry><entry>informant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Informant12</entry><entry></entry><entry> </entry></row> 
 <row><entry>subject</entry><entry>subject</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>Subject</entry><entry></entry><entry> </entry></row> 
-<row><entry>text</entry><entry>text</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>StrucDocText</entry><entry></entry><entry> </entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry></entry><entry> </entry></row> 
 <row><entry>typeId</entry><entry>typeId</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>InfrastructureRootTypeId</entry><entry></entry><entry> </entry></row> 
 </tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
   <templateId root="2.16.840.1.113883.17.3.10.1.7"/>
-  <id root="561312100" extension="MDHT"/>
-  <code code="67537?1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS Protocol"/>
-  <title>TEXT FOR TITLE</title>
+  <id root="MDHT" extension="1067810581"/>
+  <code code="67537-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS Protocol Section"/>
+  <title>EMS Protocol Section</title>
+  <text/>
   <entry>
     <observation>
-      <code code="67537?1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS protocol"/>
-      <value xsi:type="CD" code="67396975"/>
+      <code code="67537-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS protocol"/>
+      <value xsi:type="CD" code="190099494"/>
     </observation>
   </entry>
   <entry>
     <observation>
-      <code code="67538?9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS Protocol age category"/>
-      <value xsi:type="CD" code="1066193889"/>
+      <code code="67538-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS Protocol age category"/>
+      <value xsi:type="CD" code="597199603"/>
     </observation>
   </entry>
   <entry>
     <observation>
-      <code code="67553?8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS candidate patient registry"/>
-      <value xsi:type="CD" code="205359808"/>
+      <code code="67553-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="EMS candidate patient registry"/>
+      <value xsi:type="CD" code="1928549895"/>
     </observation>
   </entry>
 </section>]]></codeblock>

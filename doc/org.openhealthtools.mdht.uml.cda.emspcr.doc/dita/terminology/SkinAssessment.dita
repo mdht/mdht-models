@@ -15,31 +15,30 @@
 <row><entry>Value Set</entry><entry>SkinAssessment - 2.16.840.1.113883.17.3.5.25</entry></row>
 <row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="4">
+<table><tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
-<colspec colname="col2" colwidth="2*"/>
-<colspec colname="col3" colwidth="1*"/>
-<colspec colname="col4" colwidth="3*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
 <thead><row>
-<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
-<row><entry>LA15475-9</entry><entry>LA15475-9</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17197-7</entry><entry>LA17197-7</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17198-5</entry><entry>LA17198-5</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17199-3</entry><entry>LA17199-3</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17200-9</entry><entry>LA17200-9</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17201-7</entry><entry>LA17201-7</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17202-5</entry><entry>LA17202-5</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17203-3</entry><entry>LA17203-3</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17204-1</entry><entry>LA17204-1</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17205-8</entry><entry>LA17205-8</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17206-6</entry><entry>LA17206-6</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17207-4</entry><entry>LA17207-4</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA18217-2</entry><entry>LA18217-2</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA18218-0</entry><entry>LA18218-0</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA18219-8</entry><entry>LA18219-8</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA6626-1</entry><entry>LA6626-1</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA6630-3</entry><entry>LA6630-3</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA15475-9</entry><entry>LOINC</entry><entry>Cold</entry></row>
+<row><entry>LA17197-7</entry><entry>LOINC</entry><entry>Clammy</entry></row>
+<row><entry>LA17198-5</entry><entry>LOINC</entry><entry>Cyanotic</entry></row>
+<row><entry>LA17199-3</entry><entry>LOINC</entry><entry>Dry</entry></row>
+<row><entry>LA17200-9</entry><entry>LOINC</entry><entry>Red (erythematous)</entry></row>
+<row><entry>LA17201-7</entry><entry>LOINC</entry><entry>Flushed</entry></row>
+<row><entry>LA17202-5</entry><entry>LOINC</entry><entry>Hot</entry></row>
+<row><entry>LA17203-3</entry><entry>LOINC</entry><entry>Jaundiced</entry></row>
+<row><entry>LA17204-1</entry><entry>LOINC</entry><entry>Lividity</entry></row>
+<row><entry>LA17205-8</entry><entry>LOINC</entry><entry>Mottled</entry></row>
+<row><entry>LA17206-6</entry><entry>LOINC</entry><entry>Pale</entry></row>
+<row><entry>LA17207-4</entry><entry>LOINC</entry><entry>Warm</entry></row>
+<row><entry>LA18217-2</entry><entry>LOINC</entry><entry>Diaphoretic</entry></row>
+<row><entry>LA18218-0</entry><entry>LOINC</entry><entry>Poor turgor</entry></row>
+<row><entry>LA18219-8</entry><entry>LOINC</entry><entry>Tenting</entry></row>
+<row><entry>LA6626-1</entry><entry>LOINC</entry><entry>Normal</entry></row>
+<row><entry>LA6630-3</entry><entry>LOINC</entry><entry>Not done</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>

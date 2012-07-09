@@ -15,22 +15,21 @@
 <row><entry>Value Set</entry><entry>CardiacArrestCause - 2.16.840.1.113883.17.3.5.10</entry></row>
 <row><entry>Code System</entry><entry>LOINC - 2.16.840.1.113883.6.1</entry></row>
 </tbody></tgroup></table>
-<table><tgroup cols="4">
+<table><tgroup cols="3">
 <colspec colname="col1" colwidth="1*"/>
-<colspec colname="col2" colwidth="2*"/>
-<colspec colname="col3" colwidth="1*"/>
-<colspec colname="col4" colwidth="3*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
 <thead><row>
-<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
 </row></thead><tbody>
-<row><entry>LA17056-5</entry><entry>LA17056-5</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17058-1</entry><entry>LA17058-1</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17059-9</entry><entry>LA17059-9</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17977-2</entry><entry>LA17977-2</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17978-0</entry><entry>LA17978-0</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17979-8</entry><entry>LA17979-8</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA17980-6</entry><entry>LA17980-6</entry><entry>LOINC</entry><entry></entry></row>
-<row><entry>LA9539-3</entry><entry>LA9539-3</entry><entry>LOINC</entry><entry></entry></row>
+<row><entry>LA17056-5</entry><entry>LOINC</entry><entry>Cardiac (presumed)</entry></row>
+<row><entry>LA17058-1</entry><entry>LOINC</entry><entry>Trauma</entry></row>
+<row><entry>LA17059-9</entry><entry>LOINC</entry><entry>Other (not listed)</entry></row>
+<row><entry>LA17977-2</entry><entry>LOINC</entry><entry>Drowning/submersion</entry></row>
+<row><entry>LA17978-0</entry><entry>LOINC</entry><entry>Drug overdose</entry></row>
+<row><entry>LA17979-8</entry><entry>LOINC</entry><entry>Exsanguination</entry></row>
+<row><entry>LA17980-6</entry><entry>LOINC</entry><entry>Respiratory/asphyxia</entry></row>
+<row><entry>LA9539-3</entry><entry>LOINC</entry><entry>Electrocution</entry></row>
 </tbody></tgroup></table>
 </section>
 </body>
