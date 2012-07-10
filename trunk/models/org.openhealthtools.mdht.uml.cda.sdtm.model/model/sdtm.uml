@@ -2836,7 +2836,7 @@ Study arm information may refer either to the planned arm for a subject or to th
           </ownedAttribute>
           <nestedClassifier xmi:type="uml:Class" xmi:id="_JuIBEMRXEeGx2-Pp6bmfHQ" name="specializedKind">
             <generalization xmi:id="_JuIoIMRXEeGx2-Pp6bmfHQ">
-              <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.rim/model/rim.uml#_eITxUIVfEd-9G7Mk0NuIMg"/>
+              <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_4_GbMEcZEd6besF9iFIJkQ"/>
             </generalization>
             <ownedAttribute xmi:id="_PcpqIMRXEeGx2-Pp6bmfHQ" name="classCode" isReadOnly="true">
               <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
@@ -9372,8 +9372,10 @@ Study arm information may refer either to the planned arm for a subject or to th
             <instance xmi:type="uml:EnumerationLiteral" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeZukDcEd6xYZuu1VKCVw"/>
           </defaultValue>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_4Xow0MaPEeGigrTqdSb8gg" name="exposureSubCategoryAssociation" type="_fWmVQMaPEeGigrTqdSb8gg" association="_4Xow0saPEeGigrTqdSb8gg">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4Xow0caPEeGigrTqdSb8gg"/>
+        <ownedAttribute xmi:id="_YO5p8MqZEeG3ie8UA_dJ3g" name="observation" visibility="private" type="_IKvvuX2_EeGAsPcSe7A-ZA" aggregation="composite" association="_YO64EMqZEeG3ie8UA_dJ3g">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YO5p8cqZEeG3ie8UA_dJ3g" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YO5p8sqZEeG3ie8UA_dJ3g"/>
+          <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_VmlJEUcGEd6besF9iFIJkQ"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_fWmVSsaPEeGigrTqdSb8gg" name="exposureEventSubCategory">
           <ownedComment xmi:id="_fWmVS8aPEeGigrTqdSb8gg">
@@ -13956,8 +13958,8 @@ mass identifier. The mass identification should be unique within the subject, re
     <packagedElement xmi:type="uml:Association" xmi:id="_z77agsaPEeGigrTqdSb8gg" memberEnd="_z77agMaPEeGigrTqdSb8gg _z77ag8aPEeGigrTqdSb8gg">
       <ownedEnd xmi:id="_z77ag8aPEeGigrTqdSb8gg" type="_daE-MMaPEeGigrTqdSb8gg" association="_z77agsaPEeGigrTqdSb8gg"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_4Xow0saPEeGigrTqdSb8gg" memberEnd="_4Xow0MaPEeGigrTqdSb8gg _4Xow08aPEeGigrTqdSb8gg">
-      <ownedEnd xmi:id="_4Xow08aPEeGigrTqdSb8gg" type="_fWmVQMaPEeGigrTqdSb8gg" association="_4Xow0saPEeGigrTqdSb8gg"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_YO64EMqZEeG3ie8UA_dJ3g" memberEnd="_YO5p8MqZEeG3ie8UA_dJ3g _YO7fIMqZEeG3ie8UA_dJ3g">
+      <ownedEnd xmi:id="_YO7fIMqZEeG3ie8UA_dJ3g" type="_fWmVQMaPEeGigrTqdSb8gg" association="_YO64EMqZEeG3ie8UA_dJ3g"/>
     </packagedElement>
     <profileApplication xmi:id="_BK1HwV10EeGh_7NFCJ3fGA">
       <eAnnotations xmi:id="_BK1Hwl10EeGh_7NFCJ3fGA" source="http://www.eclipse.org/uml2/2.0.0/UML">
