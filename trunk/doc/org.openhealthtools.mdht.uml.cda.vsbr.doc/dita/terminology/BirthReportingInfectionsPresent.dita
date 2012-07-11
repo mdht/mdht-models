@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Birth Reporting - Infections Present</title>
+<prolog id="prolog">
+<resourceid id="not specified"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table><tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>Birth Reporting - Infections Present - (OID not specified)</entry></row>
+<row><entry>Description</entry><entry>A list of infections which may be present during pregnancy.  Note, the codes used are imaginary and will be replaced with code values from a widely used code system.
+</entry></row>
+</tbody></tgroup></table>
+<table><tgroup cols="3">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
+<thead><row>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+</row></thead><tbody>
+<row><entry>GON</entry><entry></entry><entry>Gonorrhea</entry></row>
+<row><entry>SYP</entry><entry></entry><entry>Syphilis</entry></row>
+<row><entry>CLM</entry><entry></entry><entry>Chlamydia</entry></row>
+<row><entry>HPB</entry><entry></entry><entry>Hepatitis B</entry></row>
+<row><entry>HPC</entry><entry></entry><entry>Hepatitis C</entry></row>
+<row><entry>NONE</entry><entry></entry><entry>None of the Cited Infections</entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>

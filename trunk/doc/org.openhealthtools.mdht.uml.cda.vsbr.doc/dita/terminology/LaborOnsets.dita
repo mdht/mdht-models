@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Labor Onsets</title>
+<prolog id="prolog">
+<resourceid id="not specified"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table><tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>Labor Onsets - (OID not specified)</entry></row>
+</tbody></tgroup></table>
+<table><tgroup cols="3">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="1*"/>
+<colspec colname="col3" colwidth="2*"/>
+<thead><row>
+<entry>Code</entry><entry>Code System</entry><entry>Print Name</entry>
+</row></thead><tbody>
+<row><entry>PR</entry><entry></entry><entry>Premature Rupture</entry></row>
+<row><entry>PPL</entry><entry></entry><entry>Precipitous labor</entry></row>
+<row><entry>PLL</entry><entry></entry><entry>Prolonged Labor</entry></row>
+<row><entry>NONE</entry><entry></entry><entry>Note of the cited unusual onsets</entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>
