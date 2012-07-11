@@ -2024,7 +2024,7 @@ Study arm information may refer either to the planned arm for a subject or to th
       </ownedAttribute>
       <ownedAttribute xmi:id="_A7FWA2cAEeGjiJmz4TzZew" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_MDjfQGcAEeGjiJmz4TzZew">
-          <body>A coded indication of the reason that information relating to the intended activity or measure was not collected.  [SDTM: CMREASND, SUREASND, MHREASND, CEREASND, EGREASND, LBREASND, PEREASND, QSREASND, SCREASND, VSREASND, DAREASND, MBREASND, MSREASND, PCREASND, PRREASND, FAREASND], [SEND: BWREASND, BGREASND, FWREASND, LBREASND, MAREASND,MIREASND, OMREASND, PMREASND, PCREASND, PPREASND, TFREASND, VSREASND, EGREASND]</body>
+          <body>A coded indication of the reason that information relating to the intended activity or measure was not collected.  [SDTM: CMREASND, SUREASND, MHREASND, CEREASND, EGREASND, LBREASND, PEREASND, QSREASND, SCREASND, VSREASND, DAREASND, MBREASND, MSREASND, PCREASND, PRREASND, FAREASND], [SEND: BWREASND, BGREASND, FWREASND, LBREASND, MAREASND,MIREASND, OMREASND, PMREASND, PCREASND, PPREASND, TFREASND, VSREASND, EGREASND],  [Study Data Tablulation Model: -REASND]</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HbwfsI-7EeGSf7-C4p-dMA" value="1"/>
@@ -2233,7 +2233,7 @@ Study arm information may refer either to the planned arm for a subject or to th
       </ownedAttribute>
       <ownedAttribute xmi:id="_9fZsUGn_EeGH0KSwdtr7gA" name="id" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_iq5ksGojEeGH0KSwdtr7gA">
-          <body>The group code value.  [SDTM: CMGRPID, EXGRPID, SUGRPID, AEGRPID, DSGRPID, MHGRPID, CEGRPID, EGGRPID, LBGRPID, PEGRPID, QSGRPID, SCGRPID, VSGRPID,  DAGRPID, MBGRPID, MSGRPID,  PCGRPID, PPGRPID,  FAGRPID] [SEND: CLGRPID, LBGRPID, MAGRPID, PPGRPID, TFGRPID, EGGPID]</body>
+          <body>The group code value.  [SDTM: CMGRPID, EXGRPID, SUGRPID, AEGRPID, DSGRPID, MHGRPID, CEGRPID, EGGRPID, LBGRPID, PEGRPID, QSGRPID, SCGRPID, VSGRPID,  DAGRPID, MBGRPID, MSGRPID,  PCGRPID, PPGRPID,  FAGRPID] [SEND: CLGRPID, FWGRPID, LBGRPID, MAGRPID, PPGRPID, TFGRPID, EGGPID]</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7d1kcIjQEeGwjb3wu_tBLA" value="1"/>
@@ -2800,7 +2800,7 @@ Study arm information may refer either to the planned arm for a subject or to th
           </ownedAttribute>
           <ownedAttribute xmi:id="_1jWEYHIFEeGL-K1S1E9LrQ" name="code" visibility="private" aggregation="composite">
             <ownedComment xmi:id="_EErfgHIJEeGL-K1S1E9LrQ">
-              <body>The code attribute captures information about the nature of the drug, medication or therapy.  Within SDTM, medication information can appear as a concommitant medication, as the study medication within the exposure domain, or as a substance that is used. [SDTM: CMTRT, CMMODIFY, CMDECOD, EXTRT, SUTRT, SUMODIFY, SUDECOD], [SEND: EXTRT]</body>
+              <body>The code attribute captures information about the nature of the drug, medication or therapy.  Within SDTM, medication information can appear as a concommitant medication, as the study medication within the exposure domain, or as a substance that is used. [SDTM: CMTRT, CMMODIFY, CMDECOD, EXTRT, SUTRT, SUMODIFY, SUDECOD], [SEND: EXTRT]'  [Study Data Tablulation Model: -TRT, MODIFY, DECOD]</body>
             </ownedComment>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JNXX8HIGEeGL-K1S1E9LrQ" value="1"/>
@@ -2831,66 +2831,66 @@ Study arm information may refer either to the planned arm for a subject or to th
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5bHmoKm9EeGxNZJ-RFOuKQ" value="1"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5bHmoam9EeGxNZJ-RFOuKQ"/>
           </ownedAttribute>
-          <ownedAttribute xmi:id="_BlLO4MRVEeGx2-Pp6bmfHQ" name="role" type="_JuIBEMRXEeGx2-Pp6bmfHQ" association="_BlLO4sRVEeGx2-Pp6bmfHQ">
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BlLO4cRVEeGx2-Pp6bmfHQ"/>
+          <ownedAttribute xmi:id="_o2pOkMq1EeGIJb16OdqGaQ" name="asSpecializedKind" type="_3f7BkMq0EeGIJb16OdqGaQ" association="_o2pOksq1EeGIJb16OdqGaQ">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_o2pOkcq1EeGIJb16OdqGaQ"/>
           </ownedAttribute>
-          <nestedClassifier xmi:type="uml:Class" xmi:id="_JuIBEMRXEeGx2-Pp6bmfHQ" name="specializedKind">
-            <generalization xmi:id="_JuIoIMRXEeGx2-Pp6bmfHQ">
-              <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_4_GbMEcZEd6besF9iFIJkQ"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_3f7BkMq0EeGIJb16OdqGaQ" name="asSpecializedKind">
+            <generalization xmi:id="_8riK0Mq0EeGIJb16OdqGaQ">
+              <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_6qmVsEcDEd6besF9iFIJkQ"/>
             </generalization>
-            <ownedAttribute xmi:id="_PcpqIMRXEeGx2-Pp6bmfHQ" name="classCode" isReadOnly="true">
-              <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
-              <defaultValue xmi:type="uml:LiteralString" xmi:id="_yOILYMRfEeGx2-Pp6bmfHQ" value="GEN"/>
+            <ownedAttribute xmi:id="_AVG5kMq1EeGIJb16OdqGaQ" name="classCode" visibility="private" isReadOnly="true">
+              <ownedComment xmi:id="_PeZM4Mq1EeGIJb16OdqGaQ">
+                <body>The assigned class code is included here due to limitations of the MDHT tooling.  The actual preferred class code is &quot;GEN&quot; generalization.</body>
+              </ownedComment>
+              <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zE3AkDcEd6xYZuu1VKCVw"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Fa3dAMq2EeG3m89ZGmmeBA" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Fa3dAcq2EeG3m89ZGmmeBA" value="1"/>
+              <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_AVG5k8q1EeGIJb16OdqGaQ">
+                <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zE3AkDcEd6xYZuu1VKCVw"/>
+                <body>ASSIGNED</body>
+              </defaultValue>
             </ownedAttribute>
-            <ownedAttribute xmi:id="_lzuZ0MRXEeGx2-Pp6bmfHQ" name="code">
-              <ownedComment xmi:id="_7d8J4MRfEeGx2-Pp6bmfHQ">
+            <ownedAttribute xmi:id="_AVG5lMq1EeGIJb16OdqGaQ" name="code" visibility="private" aggregation="composite">
+              <ownedComment xmi:id="_J4AMIMq1EeGIJb16OdqGaQ">
                 <body>May specify a certain use of the generalization relationship. Since things may be classified in various ways, this code may be used to allow systems with limited understanding of the classes to show the classes in distinguished slots (e.g., product by effect, by mechanism of action, by chemical nature, etc.</body>
               </ownedComment>
-              <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_u63D0MRfEeGx2-Pp6bmfHQ" value="1"/>
-              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_u63D0cRfEeGx2-Pp6bmfHQ"/>
+              <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EyGz4Mq2EeG3m89ZGmmeBA" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EyGz4cq2EeG3m89ZGmmeBA" value="1"/>
             </ownedAttribute>
-            <ownedAttribute xmi:id="_ZlsdEMRfEeGx2-Pp6bmfHQ" name="playingEntity" type="_fhPOcMRfEeGx2-Pp6bmfHQ" association="_ZlsdEsRfEeGx2-Pp6bmfHQ">
-              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tZafMMRfEeGx2-Pp6bmfHQ" value="1"/>
-              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tZafMcRfEeGx2-Pp6bmfHQ" value="1"/>
+            <ownedAttribute xmi:id="_7ZCEUMq4EeG3m89ZGmmeBA" name="representedOrganization" visibility="private" type="_Aud38Mq5EeG3m89ZGmmeBA" aggregation="composite" association="_7ZCEU8q4EeG3m89ZGmmeBA">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UM4_gMq5EeG3m89ZGmmeBA" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UM4_gcq5EeG3m89ZGmmeBA" value="1"/>
             </ownedAttribute>
-            <nestedClassifier xmi:type="uml:Class" xmi:id="_fhPOcMRfEeGx2-Pp6bmfHQ" name="MaterialKind">
-              <generalization xmi:id="_fhPOccRfEeGx2-Pp6bmfHQ">
-                <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_Lr9i8EcaEd6besF9iFIJkQ"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_Aud38Mq5EeG3m89ZGmmeBA" name="substanceClass">
+              <generalization xmi:id="_AunB4Mq5EeG3m89ZGmmeBA">
+                <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_zjKW8EcZEd6besF9iFIJkQ"/>
               </generalization>
-              <ownedAttribute xmi:id="_iTeFgMRfEeGx2-Pp6bmfHQ" name="classCode" visibility="private">
-                <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yoL-EDcEd6xYZuu1VKCVw"/>
-                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rroHsMRfEeGx2-Pp6bmfHQ" value="1"/>
-                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rroHscRfEeGx2-Pp6bmfHQ" value="1"/>
-                <defaultValue xmi:type="uml:InstanceValue" xmi:id="_iTeFg8RfEeGx2-Pp6bmfHQ" name="ENT">
-                  <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yoL-EDcEd6xYZuu1VKCVw"/>
-                  <instance xmi:type="uml:EnumerationLiteral" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yoL-UDcEd6xYZuu1VKCVw"/>
+              <ownedAttribute xmi:id="_CXWhUMq5EeG3m89ZGmmeBA" name="classCode" visibility="private" isReadOnly="true">
+                <ownedComment xmi:id="_G5dakMq5EeG3m89ZGmmeBA">
+                  <body>The proper class code is &quot;MAT&quot;, material.</body>
+                </ownedComment>
+                <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yoL40DcEd6xYZuu1VKCVw"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Rz8yMMq5EeG3m89ZGmmeBA" value="1"/>
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Rz8yMcq5EeG3m89ZGmmeBA" value="1"/>
+                <defaultValue xmi:type="uml:InstanceValue" xmi:id="_CXWhU8q5EeG3m89ZGmmeBA" name="ORG">
+                  <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yoL40DcEd6xYZuu1VKCVw"/>
+                  <instance xmi:type="uml:EnumerationLiteral" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yoL5EDcEd6xYZuu1VKCVw"/>
                 </defaultValue>
               </ownedAttribute>
-              <ownedAttribute xmi:id="_iTxAcMRfEeGx2-Pp6bmfHQ" name="code" visibility="private" aggregation="composite">
-                <ownedComment xmi:id="_L_3rIMRgEeGx2-Pp6bmfHQ">
-                  <body>Code specifying a kind of medicine, food material, or any product. The code may refer to any of various classifications and abstractions of products by any aspect, including, mechanism of action category, physiologic effect category, chemical structure category, or &quot;clinical drug&quot; category. It may also represent a specific material or an ingredient of material. [SDTM: CMCLASCD]</body>
-                </ownedComment>
-                <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iTxAccRfEeGx2-Pp6bmfHQ" value="1"/>
-                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iTxAcsRfEeGx2-Pp6bmfHQ"/>
-              </ownedAttribute>
-              <ownedAttribute xmi:id="_iTxAc8RfEeGx2-Pp6bmfHQ" name="determinerCode" visibility="private">
+              <ownedAttribute xmi:id="_CXWhVMq5EeG3m89ZGmmeBA" name="determinerCode" visibility="private" isReadOnly="true">
                 <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yoOBUDcEd6xYZuu1VKCVw"/>
-                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_quB3AMRfEeGx2-Pp6bmfHQ" value="1"/>
-                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_quB3AcRfEeGx2-Pp6bmfHQ" value="1"/>
-                <defaultValue xmi:type="uml:InstanceValue" xmi:id="_iTxAdsRfEeGx2-Pp6bmfHQ" name="INSTANCE">
-                  <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yoOBUDcEd6xYZuu1VKCVw"/>
-                  <instance xmi:type="uml:EnumerationLiteral" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yoOBkDcEd6xYZuu1VKCVw"/>
-                </defaultValue>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RN3CkMq5EeG3m89ZGmmeBA" value="1"/>
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RN3Ckcq5EeG3m89ZGmmeBA" value="1"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_KYUuIMq5EeG3m89ZGmmeBA" value="KIND"/>
               </ownedAttribute>
-              <ownedAttribute xmi:id="_kNwn8MRfEeGx2-Pp6bmfHQ" name="name" visibility="private" aggregation="composite">
-                <ownedComment xmi:id="_OV_N8MRgEeGx2-Pp6bmfHQ">
-                  <body>A text name for the material or drug class.</body>
+              <ownedAttribute xmi:id="_CXWhWMq5EeG3m89ZGmmeBA" name="name" visibility="private" aggregation="composite">
+                <ownedComment xmi:id="_QHpBYMq5EeG3m89ZGmmeBA">
+                  <body>A text name for the substance (typically a drug) classification.</body>
                 </ownedComment>
-                <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_3VD9wD5yEd6cla2oXsPtlA"/>
-                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_p7JokMRfEeGx2-Pp6bmfHQ" value="1"/>
-                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_p7JokcRfEeGx2-Pp6bmfHQ"/>
+                <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_6WoRUD5yEd6cla2oXsPtlA"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QyVkMMq5EeG3m89ZGmmeBA" value="1"/>
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QyVkMcq5EeG3m89ZGmmeBA" value="1"/>
               </ownedAttribute>
             </nestedClassifier>
           </nestedClassifier>
@@ -3968,7 +3968,7 @@ Study arm information may refer either to the planned arm for a subject or to th
       <ownedAttribute xmi:id="__G5hgXIJEeGL-K1S1E9LrQ" name="value" visibility="private" aggregation="composite">
         <ownedComment xmi:id="__G5hgnIJEeGL-K1S1E9LrQ">
           <body>Indicate whether or not the the indicated activity or event&#xD;
- was prespecified on the CRF. [SDTM: CMPRESP. SUPRESP, AEPRESP, MHPRESP, CEPRESP]</body>
+ was prespecified on the CRF. [SDTM: CMPRESP, SUPRESP, AEPRESP, MHPRESP, CEPHRESP  ], [Study Data Tablulation Model: -PRESP]</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_r1WssDxjEd6JwqSGecoePg"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qp0g4Jh3EeGrqNwK10mI-w" value="1"/>
@@ -4221,7 +4221,7 @@ Study arm information may refer either to the planned arm for a subject or to th
       </ownedAttribute>
       <ownedAttribute xmi:id="_ko7zoIsdEeGEXvbgIb1duQ" name="negationInd" visibility="private">
         <ownedComment xmi:id="_R09h0IseEeGEXvbgIb1duQ">
-          <body>When information about an event or activity is pre-specified, the negation indicator may be used to state that the information was not collected.  Value the indicator as TRUE if the information item was not elicited.  [SDTM: CMSTAT, SUSTAT, MHSTAT, CESTAT, MSSTAT]</body>
+          <body>When information about an event or activity is pre-specified, the negation indicator may be used to state that the information was not collected.  Value the indicator as TRUE if the information item was not elicited.  [SDTM: CMSTAT, SUSTAT, MHSTAT, CESTAT, MSSTAT],  [Study Data Tablulation Model: -STAT]</body>
         </ownedComment>
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBooleanObject"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ko7zoYsdEeGEXvbgIb1duQ" value="1"/>
@@ -5643,11 +5643,11 @@ Study arm information may refer either to the planned arm for a subject or to th
       </ownedAttribute>
       <ownedAttribute xmi:id="_K0AiAMV-EeG8rqKJL8nD4g" name="interpretationCode" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_ahknEMV-EeG8rqKJL8nD4g">
-          <body>Includes information used to better interpret the observation value (result).  [SEND:LBBLFL, LBDRVFL]</body>
+          <body>Includes information used to better interpret the observation value (result).  [SEND:LBBLFL, LBDRVFL, LBEXCLFL]</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SdeNwMV-EeG8rqKJL8nD4g" value="2"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SdeNwcV-EeG8rqKJL8nD4g"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yCrosMqnEeGIJb16OdqGaQ" value="3"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yCroscqnEeGIJb16OdqGaQ"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_ED0xAI-vEeGSf7-C4p-dMA" name="laboratoryTestResultCategoryAssociation">
         <ownedComment xmi:id="_ED0xAY-vEeGSf7-C4p-dMA">
@@ -7893,7 +7893,7 @@ Study arm information may refer either to the planned arm for a subject or to th
         <ownedComment xmi:id="_olGlQpOXEeGM5Pa1LbomZA">
           <body>The pharmacokinetics parameter result, using both original units and a standard format or set of units.  [SDTM: PPORRES, PPORRESU, PPSTRESC, PPSTRESN, PPSTRESU],  [SEND: PPORRES, PPORRESU, PPSTRESC, PPSTRESN, PPSTRESU]</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#__I8BwDxZEd6JwqSGecoePg"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_olGlQ5OXEeGM5Pa1LbomZA" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_olGlRJOXEeGM5Pa1LbomZA"/>
       </ownedAttribute>
@@ -9372,10 +9372,8 @@ Study arm information may refer either to the planned arm for a subject or to th
             <instance xmi:type="uml:EnumerationLiteral" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeZukDcEd6xYZuu1VKCVw"/>
           </defaultValue>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_YO5p8MqZEeG3ie8UA_dJ3g" name="observation" visibility="private" type="_IKvvuX2_EeGAsPcSe7A-ZA" aggregation="composite" association="_YO64EMqZEeG3ie8UA_dJ3g">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YO5p8cqZEeG3ie8UA_dJ3g" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YO5p8sqZEeG3ie8UA_dJ3g"/>
-          <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_VmlJEUcGEd6besF9iFIJkQ"/>
+        <ownedAttribute xmi:id="_4Xow0MaPEeGigrTqdSb8gg" name="exposureSubCategoryAssociation" type="_fWmVQMaPEeGigrTqdSb8gg" association="_4Xow0saPEeGigrTqdSb8gg">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4Xow0caPEeGigrTqdSb8gg"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_fWmVSsaPEeGigrTqdSb8gg" name="exposureEventSubCategory">
           <ownedComment xmi:id="_fWmVS8aPEeGigrTqdSb8gg">
@@ -9853,8 +9851,8 @@ Study arm information may refer either to the planned arm for a subject or to th
           <body>The recorded test result.  [SEND: BWORRES, BWORRESU, BWSTRESC, BWSTRESN, BWSTRESU]</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#__I8BwDxZEd6JwqSGecoePg"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XO9Z15obEeG78ZMLtGK0RQ" value="*"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XO9Z2JobEeG78ZMLtGK0RQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0zx-sMqkEeGIJb16OdqGaQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0z7vsMqkEeGIJb16OdqGaQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_yddlEKnKEeGxNZJ-RFOuKQ" name="non Performance Reason" type="_xvcSQGb_EeGjiJmz4TzZew" association="_yddlEqnKEeGxNZJ-RFOuKQ">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yddlEanKEeGxNZJ-RFOuKQ"/>
@@ -9958,8 +9956,8 @@ Study arm information may refer either to the planned arm for a subject or to th
           <body>The recorded test result.  [SEND: BGORRES, BGORRESU, BGSTRESC, BGSTRESN, BGSTRESU]</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#__I8BwDxZEd6JwqSGecoePg"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_e9VaypobEeG78ZMLtGK0RQ" value="*"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_e9Vay5obEeG78ZMLtGK0RQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jRxEAMqlEeGIJb16OdqGaQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jRxEAcqlEeGIJb16OdqGaQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_sFoWMLWEEeGLXdg8xIiGrA" name="statusCode" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_uQIe4LWEEeGLXdg8xIiGrA">
@@ -10013,7 +10011,7 @@ Study arm information may refer either to the planned arm for a subject or to th
       </ownedAttribute>
       <ownedAttribute xmi:id="_l-7ONJobEeG78ZMLtGK0RQ" name="code" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_uAj1ALWIEeGLXdg8xIiGrA">
-          <body>A value to indicate the observation records the subject's change in weight. [SEND: CLTESTCD, CLTEST]</body>
+          <body>A value to indicate the nature of the observation being recorded. [SEND: CLTESTCD, CLTEST]</body>
         </ownedComment>
         <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
       </ownedAttribute>
@@ -10033,7 +10031,7 @@ Study arm information may refer either to the planned arm for a subject or to th
         <ownedComment xmi:id="_CEiAALWREeGoyLVp-ZM50A">
           <body>The recorded test result.  [SEND: CLORRES, CLSTRESC]</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#__I8BwDxZEd6JwqSGecoePg"/>
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8Z9p4LWQEeGoyLVp-ZM50A" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8Z9p4bWQEeGoyLVp-ZM50A"/>
       </ownedAttribute>
@@ -10118,9 +10116,9 @@ Study arm information may refer either to the planned arm for a subject or to th
             <instance xmi:type="uml:EnumerationLiteral" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeZukDcEd6xYZuu1VKCVw"/>
           </defaultValue>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_XbCK57WOEeGoyLVp-ZM50A" name="clinicalObservationCategory" type="_XbCK6rWOEeGoyLVp-ZM50A">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XbCK6LWOEeGoyLVp-ZM50A" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XbCK6bWOEeGoyLVp-ZM50A" value="1"/>
+        <ownedAttribute xmi:id="_KerIYMqmEeGIJb16OdqGaQ" name="clinicalObservationCategoryAssociation" type="_XbCK4LWOEeGoyLVp-ZM50A" association="_KerIYsqmEeGIJb16OdqGaQ">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_O2EmcMqmEeGIJb16OdqGaQ" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_O2EmccqmEeGIJb16OdqGaQ" value="1"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_XbCK6rWOEeGoyLVp-ZM50A" name="clinicalObservationCategory">
           <ownedComment xmi:id="_XbCK67WOEeGoyLVp-ZM50A">
@@ -10169,9 +10167,9 @@ Study arm information may refer either to the planned arm for a subject or to th
             <instance xmi:type="uml:EnumerationLiteral" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeZukDcEd6xYZuu1VKCVw"/>
           </defaultValue>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_bYPnV7WOEeGoyLVp-ZM50A" name="clinicalObservationSubCategory" type="_bYPnWbWOEeGoyLVp-ZM50A">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8_89wLWOEeGoyLVp-ZM50A" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8_89wbWOEeGoyLVp-ZM50A" value="1"/>
+        <ownedAttribute xmi:id="_Rxrb8MqmEeGIJb16OdqGaQ" name="clinicalObservationSubCategory" type="_bYPnWbWOEeGoyLVp-ZM50A" association="_Rxrb8sqmEeGIJb16OdqGaQ">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TR7twMqmEeGIJb16OdqGaQ" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TR7twcqmEeGIJb16OdqGaQ" value="1"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_bYPnWbWOEeGoyLVp-ZM50A" name="clinicalObservationSubCategory">
           <ownedComment xmi:id="_bYPnWrWOEeGoyLVp-ZM50A">
@@ -10222,9 +10220,9 @@ Study arm information may refer either to the planned arm for a subject or to th
             <instance xmi:type="uml:EnumerationLiteral" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeZukDcEd6xYZuu1VKCVw"/>
           </defaultValue>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_gMVhF7WREeGoyLVp-ZM50A" name="clinicalObservationResultCategory" type="_gMVhGrWREeGoyLVp-ZM50A">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gMVhGLWREeGoyLVp-ZM50A" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gMVhGbWREeGoyLVp-ZM50A" value="1"/>
+        <ownedAttribute xmi:id="_XU83QMqmEeGIJb16OdqGaQ" name="clinicalObservationResultCategory" type="_gMVhGrWREeGoyLVp-ZM50A" association="_XU83QsqmEeGIJb16OdqGaQ">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Yim9MMqmEeGIJb16OdqGaQ" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Yim9McqmEeGIJb16OdqGaQ" value="1"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_gMVhGrWREeGoyLVp-ZM50A" name="clinicalObservationResultCategory">
           <ownedComment xmi:id="_gMVhG7WREeGoyLVp-ZM50A">
@@ -10427,6 +10425,9 @@ Study arm information may refer either to the planned arm for a subject or to th
       <ownedAttribute xmi:id="_TmJ_oMUnEeGz4OogUTGcuA" name="exclusion Reason" type="_mZNiwLWAEeGLXdg8xIiGrA" association="_TmJ_osUnEeGz4OogUTGcuA">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TmJ_ocUnEeGz4OogUTGcuA"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_zeAMoMqmEeGIJb16OdqGaQ" name="group Identifier" type="_8Ae3QGn_EeGH0KSwdtr7gA" association="_zeAMosqmEeGIJb16OdqGaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zeAMocqmEeGIJb16OdqGaQ"/>
+      </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_Lrb20JocEeG78ZMLtGK0RQ" name="Macroscopic Finding">
       <ownedComment xmi:id="_Lrb20ZocEeG78ZMLtGK0RQ">
@@ -10461,7 +10462,7 @@ Study arm information may refer either to the planned arm for a subject or to th
         <ownedComment xmi:id="_c8MucLcwEeGbTfv2pIp07Q">
           <body>The recorded macroscopic finding.  [SEND: MAORRES, MASTRESC]</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#__I8BwDxZEd6JwqSGecoePg"/>
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XevAMLcwEeGbTfv2pIp07Q" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XevAMbcwEeGbTfv2pIp07Q"/>
       </ownedAttribute>
@@ -10516,8 +10517,8 @@ Study arm information may refer either to the planned arm for a subject or to th
           <defaultValue xmi:type="uml:LiteralString" xmi:id="_Mydt8Lc0EeGbTfv2pIp07Q" value="COMP"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_Jedmkbc0EeGbTfv2pIp07Q" name="observation" visibility="private" type="_P_ecgLc0EeGbTfv2pIp07Q" aggregation="composite" association="_JedmlLc0EeGbTfv2pIp07Q">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Jedmkrc0EeGbTfv2pIp07Q" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Jedmk7c0EeGbTfv2pIp07Q"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mPiVUMqoEeGIJb16OdqGaQ" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mPiVUcqoEeGIJb16OdqGaQ" value="1"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_P_ecgLc0EeGbTfv2pIp07Q" name="deathRelationship">
           <generalization xmi:id="_P_ecgbc0EeGbTfv2pIp07Q">
@@ -10545,108 +10546,6 @@ Study arm information may refer either to the planned arm for a subject or to th
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hqTfgLc0EeGbTfv2pIp07Q" value="1"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hqTfgbc0EeGbTfv2pIp07Q" value="1"/>
           </ownedAttribute>
-        </nestedClassifier>
-        <nestedClassifier xmi:type="uml:Class" xmi:id="_SwLzwLlcEeGiKOTkJtG-hw" name="deathDiagnosisResultCategoryAssociation">
-          <ownedComment xmi:id="_SwLzwblcEeGiKOTkJtG-hw">
-            <body>INLINE</body>
-          </ownedComment>
-          <generalization xmi:id="_SwLzwrlcEeGiKOTkJtG-hw">
-            <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
-          </generalization>
-          <ownedAttribute xmi:id="_SwLzw7lcEeGiKOTkJtG-hw" name="typeCode" visibility="private" isReadOnly="true">
-            <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeZuUDcEd6xYZuu1VKCVw"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SwLzxLlcEeGiKOTkJtG-hw" value="1"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SwLzxblcEeGiKOTkJtG-hw" value="1"/>
-            <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_zYLLgEolEd6c3qsAxlFHaQ"/>
-            <defaultValue xmi:type="uml:InstanceValue" xmi:id="_SwLzxrlcEeGiKOTkJtG-hw" name="COMP">
-              <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeZuUDcEd6xYZuu1VKCVw"/>
-              <instance xmi:type="uml:EnumerationLiteral" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeZukDcEd6xYZuu1VKCVw"/>
-            </defaultValue>
-          </ownedAttribute>
-          <ownedAttribute xmi:id="_SwLzx7lcEeGiKOTkJtG-hw" name="deathDiagnosisResultCategory" type="_SwLzyrlcEeGiKOTkJtG-hw">
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SwLzyLlcEeGiKOTkJtG-hw" value="1"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SwLzyblcEeGiKOTkJtG-hw" value="1"/>
-          </ownedAttribute>
-          <nestedClassifier xmi:type="uml:Class" xmi:id="_SwLzyrlcEeGiKOTkJtG-hw" name="deathDiagnosisResultCategory">
-            <ownedComment xmi:id="_SwLzy7lcEeGiKOTkJtG-hw">
-              <body>INLINE</body>
-            </ownedComment>
-            <generalization xmi:id="_SwLzzLlcEeGiKOTkJtG-hw">
-              <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
-            </generalization>
-            <ownedAttribute xmi:id="_SwLzzblcEeGiKOTkJtG-hw" name="classCode" visibility="private" isReadOnly="true">
-              <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
-              <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
-            </ownedAttribute>
-            <ownedAttribute xmi:id="_SwLzzrlcEeGiKOTkJtG-hw" name="code" visibility="private" isReadOnly="true" aggregation="composite">
-              <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-              <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
-            </ownedAttribute>
-            <ownedAttribute xmi:id="_SwLzz7lcEeGiKOTkJtG-hw" name="moodCode" visibility="private" isReadOnly="true">
-              <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
-              <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
-            </ownedAttribute>
-            <ownedAttribute xmi:id="_SwLz0LlcEeGiKOTkJtG-hw" name="value" visibility="private" aggregation="composite">
-              <ownedComment xmi:id="_SwLz0blcEeGiKOTkJtG-hw">
-                <body>Provide the death diagnosis result category value.  [SEND: DDRESCAT]</body>
-              </ownedComment>
-              <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SwLz0rlcEeGiKOTkJtG-hw" value="1"/>
-              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SwLz07lcEeGiKOTkJtG-hw" value="1"/>
-              <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
-            </ownedAttribute>
-          </nestedClassifier>
-        </nestedClassifier>
-        <nestedClassifier xmi:type="uml:Class" xmi:id="_bbQGcLlcEeGiKOTkJtG-hw" name="deathDiagnosisResultCategoryAssociation">
-          <ownedComment xmi:id="_bbQGcblcEeGiKOTkJtG-hw">
-            <body>INLINE</body>
-          </ownedComment>
-          <generalization xmi:id="_bbQGcrlcEeGiKOTkJtG-hw">
-            <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
-          </generalization>
-          <ownedAttribute xmi:id="_bbQGc7lcEeGiKOTkJtG-hw" name="typeCode" visibility="private" isReadOnly="true">
-            <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeZuUDcEd6xYZuu1VKCVw"/>
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bbQGdLlcEeGiKOTkJtG-hw" value="1"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bbQGdblcEeGiKOTkJtG-hw" value="1"/>
-            <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_zYLLgEolEd6c3qsAxlFHaQ"/>
-            <defaultValue xmi:type="uml:InstanceValue" xmi:id="_bbQGdrlcEeGiKOTkJtG-hw" name="COMP">
-              <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeZuUDcEd6xYZuu1VKCVw"/>
-              <instance xmi:type="uml:EnumerationLiteral" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeZukDcEd6xYZuu1VKCVw"/>
-            </defaultValue>
-          </ownedAttribute>
-          <ownedAttribute xmi:id="_bbQGd7lcEeGiKOTkJtG-hw" name="deathDiagnosisResultCategory" type="_bbQGerlcEeGiKOTkJtG-hw">
-            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bbQGeLlcEeGiKOTkJtG-hw" value="1"/>
-            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bbQGeblcEeGiKOTkJtG-hw" value="1"/>
-          </ownedAttribute>
-          <nestedClassifier xmi:type="uml:Class" xmi:id="_bbQGerlcEeGiKOTkJtG-hw" name="deathDiagnosisResultCategory">
-            <ownedComment xmi:id="_bbQGe7lcEeGiKOTkJtG-hw">
-              <body>INLINE</body>
-            </ownedComment>
-            <generalization xmi:id="_bbQGfLlcEeGiKOTkJtG-hw">
-              <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
-            </generalization>
-            <ownedAttribute xmi:id="_bbQGfblcEeGiKOTkJtG-hw" name="classCode" visibility="private" isReadOnly="true">
-              <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
-              <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
-            </ownedAttribute>
-            <ownedAttribute xmi:id="_bbQGfrlcEeGiKOTkJtG-hw" name="code" visibility="private" isReadOnly="true" aggregation="composite">
-              <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-              <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
-            </ownedAttribute>
-            <ownedAttribute xmi:id="_bbQGf7lcEeGiKOTkJtG-hw" name="moodCode" visibility="private" isReadOnly="true">
-              <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
-              <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
-            </ownedAttribute>
-            <ownedAttribute xmi:id="_bbQGgLlcEeGiKOTkJtG-hw" name="value" visibility="private" aggregation="composite">
-              <ownedComment xmi:id="_bbQGgblcEeGiKOTkJtG-hw">
-                <body>Provide the death diagnosis result category value.  [SEND: DDRESCAT]</body>
-              </ownedComment>
-              <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bbQGgrlcEeGiKOTkJtG-hw" value="1"/>
-              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bbQGg7lcEeGiKOTkJtG-hw" value="1"/>
-              <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
-            </ownedAttribute>
-          </nestedClassifier>
         </nestedClassifier>
       </nestedClassifier>
     </packagedElement>
@@ -10683,9 +10582,9 @@ Study arm information may refer either to the planned arm for a subject or to th
         <ownedComment xmi:id="_wgjFkLc1EeGbTfv2pIp07Q">
           <body>The recorded microscopic finding.  [SEND: MIORRES, MISTRESC]</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#__I8BwDxZEd6JwqSGecoePg"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mxZXipocEeG78ZMLtGK0RQ" value="*"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mxZXi5ocEeG78ZMLtGK0RQ"/>
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_81mGwMqpEeGIJb16OdqGaQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_81mGwcqpEeGIJb16OdqGaQ"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_NRJYkLc1EeGbTfv2pIp07Q" name="statusCode" visibility="private" aggregation="composite">
         <ownedComment xmi:id="_uV4r0LlZEeGiKOTkJtG-hw">
@@ -10727,6 +10626,15 @@ Study arm information may refer either to the planned arm for a subject or to th
       <ownedAttribute xmi:id="_0xVk8LlcEeGiKOTkJtG-hw" name="data Collection" type="_YOwMEIjGEeGwjb3wu_tBLA" association="_0xeu4LlcEeGiKOTkJtG-hw">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0xVk8blcEeGiKOTkJtG-hw"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_C8clsMqpEeGIJb16OdqGaQ" name="group Identifier" type="_8Ae3QGn_EeGH0KSwdtr7gA" association="_C8mWsMqpEeGIJb16OdqGaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_C8clscqpEeGIJb16OdqGaQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_KQyWAMqpEeGIJb16OdqGaQ" name="mass Identification" type="_VqsWALWLEeGLXdg8xIiGrA" association="_KQyWAsqpEeGIJb16OdqGaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KQyWAcqpEeGIJb16OdqGaQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_QieWgMqpEeGIJb16OdqGaQ" name="body System or Organ Class" type="_QmoEwGoUEeGH0KSwdtr7gA" association="_QieWgsqpEeGIJb16OdqGaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QieWgcqpEeGIJb16OdqGaQ"/>
+      </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_XCUCMLlaEeGiKOTkJtG-hw" name="microscopicFindingResultCategoryAssociation">
         <ownedComment xmi:id="_XCUCMblaEeGiKOTkJtG-hw">
           <body>INLINE</body>
@@ -10744,9 +10652,9 @@ Study arm information may refer either to the planned arm for a subject or to th
             <instance xmi:type="uml:EnumerationLiteral" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeZukDcEd6xYZuu1VKCVw"/>
           </defaultValue>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_XCUCN7laEeGiKOTkJtG-hw" name="microscopicFindingResultCategory" type="_XCUCOrlaEeGiKOTkJtG-hw">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XCUCOLlaEeGiKOTkJtG-hw" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XCUCOblaEeGiKOTkJtG-hw" value="1"/>
+        <ownedAttribute xmi:id="_Z2QPAMqpEeGIJb16OdqGaQ" name="microscopicFindingResultCategory" type="_XCUCOrlaEeGiKOTkJtG-hw" association="_Z2QPAsqpEeGIJb16OdqGaQ">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bFGnwMqpEeGIJb16OdqGaQ" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bFGnwcqpEeGIJb16OdqGaQ" value="1"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_XCUCOrlaEeGiKOTkJtG-hw" name="microscopicFindingResultCategory">
           <ownedComment xmi:id="_XCUCO7laEeGiKOTkJtG-hw">
@@ -10786,9 +10694,9 @@ Study arm information may refer either to the planned arm for a subject or to th
           <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoTEDcEd6xYZuu1VKCVw"/>
           <defaultValue xmi:type="uml:LiteralString" xmi:id="_faGho7lcEeGiKOTkJtG-hw" value="COMP"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_faGhpLlcEeGiKOTkJtG-hw" name="observation" visibility="private" type="_faGhp7lcEeGiKOTkJtG-hw" aggregation="composite">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_faGhpblcEeGiKOTkJtG-hw" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_faGhprlcEeGiKOTkJtG-hw"/>
+        <ownedAttribute xmi:id="_niFF0MqpEeGIJb16OdqGaQ" name="deathRelationship" type="_P_ecgLc0EeGbTfv2pIp07Q" association="_niFF0sqpEeGIJb16OdqGaQ">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ofhlgMqpEeGIJb16OdqGaQ" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ofhlgcqpEeGIJb16OdqGaQ" value="1"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_faGhp7lcEeGiKOTkJtG-hw" name="deathRelationship">
           <generalization xmi:id="_faGhqLlcEeGiKOTkJtG-hw">
@@ -10876,6 +10784,14 @@ Study arm information may refer either to the planned arm for a subject or to th
       <ownedAttribute xmi:id="_JW7eALlfEeGiKOTkJtG-hw" name="data Collection" type="_YOwMEIjGEeGwjb3wu_tBLA" association="_JW7eArlfEeGiKOTkJtG-hw">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JW7eAblfEeGiKOTkJtG-hw"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_QHhDYMqqEeGIJb16OdqGaQ" name="interpretationCode" visibility="private" aggregation="composite">
+        <ownedComment xmi:id="_V87-oMqqEeGIJb16OdqGaQ">
+          <body>Includes information used to better interpret the observation value (result).  [SEND: OMEXCLFL]</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dVvYMMqqEeGIJb16OdqGaQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dVvYMcqqEeGIJb16OdqGaQ"/>
+      </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_0rD0wJrGEeGpk_Q1ImbEig" name="Palpable Mass">
       <ownedComment xmi:id="_0rD0wZrGEeGpk_Q1ImbEig">
@@ -10942,10 +10858,13 @@ Study arm information may refer either to the planned arm for a subject or to th
       <ownedAttribute xmi:id="_DDxzALlhEeGiKOTkJtG-hw" name="data Collection" type="_YOwMEIjGEeGwjb3wu_tBLA" association="_DDxzArlhEeGiKOTkJtG-hw">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DDxzAblhEeGiKOTkJtG-hw"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_P4ONsMqrEeGIJb16OdqGaQ" name="mass Identification" type="_VqsWALWLEeGLXdg8xIiGrA" association="_P4ONssqrEeGIJb16OdqGaQ">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_P4ONscqrEeGIJb16OdqGaQ"/>
+      </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_1B8qwJrGEeGpk_Q1ImbEig" name="Tumor Finding">
       <ownedComment xmi:id="_1B8qwZrGEeGpk_Q1ImbEig">
-        <body>Findings for tumors related to the study subject</body>
+        <body>The template is used to represent findings for tumors related to the study subject.</body>
       </ownedComment>
       <generalization xmi:id="_1B8qwprGEeGpk_Q1ImbEig">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
@@ -10976,7 +10895,7 @@ Study arm information may refer either to the planned arm for a subject or to th
         <ownedComment xmi:id="_zO6ssLocEeGWIctMxnxaiQ">
           <body>The recorded organ measurement finding.  [SEND: TFORRES, TFSTRESC]</body>
         </ownedComment>
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#__I8BwDxZEd6JwqSGecoePg"/>
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QnALkLoeEeGWIctMxnxaiQ" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QnALkboeEeGWIctMxnxaiQ"/>
       </ownedAttribute>
@@ -11912,23 +11831,22 @@ mass identifier. The mass identification should be unique within the subject, re
       <generalization xmi:id="_VqsWAbWLEeGLXdg8xIiGrA">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_51DLwEcZEd6besF9iFIJkQ"/>
       </generalization>
-      <ownedAttribute xmi:id="_WvR_gLWLEeGLXdg8xIiGrA" name="typeId" visibility="private" aggregation="composite">
-        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_sKX1MEb9Ed6besF9iFIJkQ"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WvR_gbWLEeGLXdg8xIiGrA" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WvR_grWLEeGLXdg8xIiGrA"/>
-      </ownedAttribute>
       <ownedAttribute xmi:id="_WvR_g7WLEeGLXdg8xIiGrA" name="participantRole" visibility="private" type="_lwD3ELWLEeGLXdg8xIiGrA" aggregation="composite" association="_WvR_hrWLEeGLXdg8xIiGrA">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WvR_hLWLEeGLXdg8xIiGrA" value="1"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WvR_hbWLEeGLXdg8xIiGrA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_-JFScMqqEeGIJb16OdqGaQ" name="typeCode" visibility="private" isReadOnly="true">
+        <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__y7BekDcEd6xYZuu1VKCVw"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_CJt2UMqrEeGIJb16OdqGaQ" value="SBJ"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_lwD3ELWLEeGLXdg8xIiGrA" name="MassRole">
         <generalization xmi:id="_lwD3EbWLEeGLXdg8xIiGrA">
           <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#__QZaIEcZEd6besF9iFIJkQ"/>
         </generalization>
-        <ownedAttribute xmi:id="_pDnSgLWLEeGLXdg8xIiGrA" name="classCode" visibility="private">
+        <ownedAttribute xmi:id="_pDnSgLWLEeGLXdg8xIiGrA" name="classCode" visibility="private" isReadOnly="true">
           <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zE4tEDcEd6xYZuu1VKCVw"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pDnSgbWLEeGLXdg8xIiGrA" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pDnSgrWLEeGLXdg8xIiGrA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7mLQ0MqqEeGIJb16OdqGaQ" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7mLQ0cqqEeGIJb16OdqGaQ" value="1"/>
           <defaultValue xmi:type="uml:InstanceValue" xmi:id="_pDnSg7WLEeGLXdg8xIiGrA" name="ROL">
             <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zE4tEDcEd6xYZuu1VKCVw"/>
             <instance xmi:type="uml:EnumerationLiteral" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zE4tUDcEd6xYZuu1VKCVw"/>
@@ -12064,6 +11982,26 @@ mass identifier. The mass identification should be unique within the subject, re
       <ownedAttribute xmi:id="_TZE48MYDEeGm37yStrzg9w" name="interventionRegimenAssociation" type="_YbythLZmEeGvx_6yr-0T9g" association="_TZE48sYDEeGm37yStrzg9w">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TZE48cYDEeGm37yStrzg9w"/>
       </ownedAttribute>
+      <ownedAttribute xmi:id="_-M0rgMrBEeGJHocgP_8Fjw" name="pre-Specified Event" type="__G5heXIJEeGL-K1S1E9LrQ" association="_-M0rgsrBEeGJHocgP_8Fjw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-M0rgcrBEeGJHocgP_8Fjw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_UxaSwMrCEeGJHocgP_8Fjw" name="statusCode" visibility="private" aggregation="composite">
+        <ownedComment xmi:id="_ZP86oMrCEeGJHocgP_8Fjw">
+          <body>Used to indicate whether the activity - use of a particular medication or treatment - did occur.  Use statusCode &quot;Completed&quot; if the use occurred.  [Study Data Tablulation Model: -OCCUR]</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UxaSwcrCEeGJHocgP_8Fjw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UxaSwsrCEeGJHocgP_8Fjw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_kg2nIMrCEeGJHocgP_8Fjw" name="data Collection" type="_YOwMEIjGEeGwjb3wu_tBLA" association="_kg2nIsrCEeGJHocgP_8Fjw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kg2nIcrCEeGJHocgP_8Fjw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_MT1-oMrEEeGJHocgP_8Fjw" name="non Performance Reason" type="_xvcSQGb_EeGjiJmz4TzZew" association="_MT1-osrEEeGJHocgP_8Fjw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MT1-ocrEEeGJHocgP_8Fjw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_NRnZAMrFEeGJHocgP_8Fjw" name="interventionIndicationAssociation" type="_xQc0UMrEEeGJHocgP_8Fjw" association="_NRnZAsrFEeGJHocgP_8Fjw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NRnZAcrFEeGJHocgP_8Fjw"/>
+      </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_YbytWLZmEeGvx_6yr-0T9g" name="interventionCategoryAssociation">
         <ownedComment xmi:id="_YbytWbZmEeGvx_6yr-0T9g">
           <body>INLINE</body>
@@ -12108,7 +12046,7 @@ mass identifier. The mass identification should be unique within the subject, re
           </ownedAttribute>
           <ownedAttribute xmi:id="_YbytarZmEeGvx_6yr-0T9g" name="value" visibility="private" aggregation="composite">
             <ownedComment xmi:id="_Ybyta7ZmEeGvx_6yr-0T9g">
-              <body>Provide the intervention category value.</body>
+              <body>Provide the intervention category value.  [Study Data Tablulation Model: -CAT]</body>
             </ownedComment>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YbytbLZmEeGvx_6yr-0T9g" value="1"/>
@@ -12161,7 +12099,7 @@ mass identifier. The mass identification should be unique within the subject, re
           </ownedAttribute>
           <ownedAttribute xmi:id="_YbytgLZmEeGvx_6yr-0T9g" name="value" visibility="private" aggregation="composite">
             <ownedComment xmi:id="_YbytgbZmEeGvx_6yr-0T9g">
-              <body>Provide the applicable intervention sub-category value.</body>
+              <body>Provide the applicable intervention sub-category value.  [Study Data Tablulation Model: -SCAT]</body>
             </ownedComment>
             <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YbytgrZmEeGvx_6yr-0T9g" value="1"/>
@@ -12302,6 +12240,49 @@ mass identifier. The mass identification should be unique within the subject, re
           </ownedAttribute>
         </nestedClassifier>
       </nestedClassifier>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_xQc0UMrEEeGJHocgP_8Fjw" name="interventionIndicationAssociation">
+        <ownedComment xmi:id="_xQc0UcrEEeGJHocgP_8Fjw">
+          <body>INLINE</body>
+        </ownedComment>
+        <generalization xmi:id="_xQc0UsrEEeGJHocgP_8Fjw">
+          <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BoxMQEcFEd6besF9iFIJkQ"/>
+        </generalization>
+        <ownedAttribute xmi:id="_xQc0U8rEEeGJHocgP_8Fjw" name="typeCode" visibility="private" isReadOnly="true">
+          <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoTEDcEd6xYZuu1VKCVw"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_xQc0VMrEEeGJHocgP_8Fjw" value="CAUS"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_JA6Y0MrFEeGJHocgP_8Fjw" name="interventionIndication" type="_xQc0WMrEEeGJHocgP_8Fjw" association="_JA6Y0srFEeGJHocgP_8Fjw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KVQ8oMrFEeGJHocgP_8Fjw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KVQ8ocrFEeGJHocgP_8Fjw" value="1"/>
+        </ownedAttribute>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_xQc0WMrEEeGJHocgP_8Fjw" name="interventionIndication">
+          <ownedComment xmi:id="_xQc0WcrEEeGJHocgP_8Fjw">
+            <body>INLINE</body>
+          </ownedComment>
+          <generalization xmi:id="_xQc0WsrEEeGJHocgP_8Fjw">
+            <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+          </generalization>
+          <ownedAttribute xmi:id="_xQc0W8rEEeGJHocgP_8Fjw" name="classCode" visibility="private" isReadOnly="true">
+            <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_xQc0XMrEEeGJHocgP_8Fjw" value="OBS"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_xQc0XcrEEeGJHocgP_8Fjw" name="moodCode" visibility="private" isReadOnly="true">
+            <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_xQc0XsrEEeGJHocgP_8Fjw" value="EVN"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_xQc0X8rEEeGJHocgP_8Fjw" name="code" visibility="private" aggregation="composite">
+            <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_xQc0YMrEEeGJHocgP_8Fjw" name="value" visibility="private" aggregation="composite">
+            <ownedComment xmi:id="_xQc0YcrEEeGJHocgP_8Fjw">
+              <body>Information about the reason for the intervention.  [Study Data Tablulation Model: -INDC]</body>
+            </ownedComment>
+            <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xQc0YsrEEeGJHocgP_8Fjw" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xQc0Y8rEEeGJHocgP_8Fjw" value="1"/>
+          </ownedAttribute>
+        </nestedClassifier>
+      </nestedClassifier>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_sYRCoLZmEeGvx_6yr-0T9g" name="Study Subject Event">
       <ownedComment xmi:id="_sYRCobZmEeGvx_6yr-0T9g">
@@ -12390,9 +12371,6 @@ mass identifier. The mass identification should be unique within the subject, re
       <ownedAttribute xmi:id="_UgMMcMXLEeGAALP3Wz5mAg" name="group Identifier" type="_8Ae3QGn_EeGH0KSwdtr7gA" association="_UgMMcsXLEeGAALP3Wz5mAg">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UgMMccXLEeGAALP3Wz5mAg"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_bCFzMMXLEeGAALP3Wz5mAg" name="body System or Organ Class2" type="_QmoEwGoUEeGH0KSwdtr7gA" association="_bCFzMsXLEeGAALP3Wz5mAg">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bCFzMcXLEeGAALP3Wz5mAg"/>
-      </ownedAttribute>
       <ownedAttribute xmi:id="_q8MS4MXgEeGAALP3Wz5mAg" name="event Severity" type="_nrFiEGoYEeGH0KSwdtr7gA" association="_q8MS4sXgEeGAALP3Wz5mAg">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_q8MS4cXgEeGAALP3Wz5mAg"/>
       </ownedAttribute>
@@ -12434,6 +12412,9 @@ mass identifier. The mass identification should be unique within the subject, re
       </ownedAttribute>
       <ownedAttribute xmi:id="_Dd8k4MX2EeGra4vMSZIJ6A" name="study Day Period" type="_1TzacJk_EeGGPbk7a3RIVg" association="_Dd8k4sX2EeGra4vMSZIJ6A">
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Dd8k4cX2EeGra4vMSZIJ6A"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_ANUdQMq6EeG3m89ZGmmeBA" name="body System or Organ Class" type="_QmoEwGoUEeGH0KSwdtr7gA" association="_ANUdQsq6EeG3m89ZGmmeBA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ANUdQcq6EeG3m89ZGmmeBA"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_sYRC47ZmEeGvx_6yr-0T9g" name="eventSubCategoryAssociation">
         <ownedComment xmi:id="_sYRC5LZmEeGvx_6yr-0T9g">
@@ -13496,7 +13477,7 @@ mass identifier. The mass identification should be unique within the subject, re
     <packagedElement xmi:type="uml:Association" xmi:id="_qBWQgrcUEeGK_ZDUrEhURQ" memberEnd="_qBWQgLcUEeGK_ZDUrEhURQ _qBWQg7cUEeGK_ZDUrEhURQ">
       <ownedEnd xmi:id="_qBWQg7cUEeGK_ZDUrEhURQ" type="__eYEEJobEeG78ZMLtGK0RQ" association="_qBWQgrcUEeGK_ZDUrEhURQ"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_bZShUrccEeGK_ZDUrEhURQ" memberEnd="_bZShULccEeGK_ZDUrEhURQ _bZShU7ccEeGK_ZDUrEhURQ">
+    <packagedElement xmi:type="uml:Association" xmi:id="_bZShUrccEeGK_ZDUrEhURQ" name="exclusionReason" memberEnd="_bZShULccEeGK_ZDUrEhURQ _bZShU7ccEeGK_ZDUrEhURQ">
       <ownedEnd xmi:id="_bZShU7ccEeGK_ZDUrEhURQ" type="_L1vSUI-oEeGSf7-C4p-dMA" association="_bZShUrccEeGK_ZDUrEhURQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_2ChpwLccEeGK_ZDUrEhURQ" memberEnd="_2CYf0LccEeGK_ZDUrEhURQ _2ChpwbccEeGK_ZDUrEhURQ">
@@ -13592,7 +13573,7 @@ mass identifier. The mass identification should be unique within the subject, re
     <packagedElement xmi:type="uml:Association" xmi:id="_ITNMorleEeGiKOTkJtG-hw" memberEnd="_ITNMoLleEeGiKOTkJtG-hw _ITNMo7leEeGiKOTkJtG-hw">
       <ownedEnd xmi:id="_ITNMo7leEeGiKOTkJtG-hw" type="_0P_DkJocEeG78ZMLtGK0RQ" association="_ITNMorleEeGiKOTkJtG-hw"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_uB8p4rleEeGiKOTkJtG-hw" memberEnd="_uB8p4LleEeGiKOTkJtG-hw _uB8p47leEeGiKOTkJtG-hw">
+    <packagedElement xmi:type="uml:Association" xmi:id="_uB8p4rleEeGiKOTkJtG-hw" name="exlcusionReason" memberEnd="_uB8p4LleEeGiKOTkJtG-hw _uB8p47leEeGiKOTkJtG-hw">
       <ownedEnd xmi:id="_uB8p47leEeGiKOTkJtG-hw" type="_0P_DkJocEeG78ZMLtGK0RQ" association="_uB8p4rleEeGiKOTkJtG-hw"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_JW7eArlfEeGiKOTkJtG-hw" memberEnd="_JW7eALlfEeGiKOTkJtG-hw _JW7eA7lfEeGiKOTkJtG-hw">
@@ -13700,15 +13681,6 @@ mass identifier. The mass identification should be unique within the subject, re
     <packagedElement xmi:type="uml:Association" xmi:id="_tvx_pMBgEeGEqY2P_xVcGw" memberEnd="_tvx_ocBgEeGEqY2P_xVcGw _tvx_pcBgEeGEqY2P_xVcGw">
       <ownedEnd xmi:id="_tvx_pcBgEeGEqY2P_xVcGw" type="_sWXVoMBgEeGEqY2P_xVcGw" association="_tvx_pMBgEeGEqY2P_xVcGw"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_BlLO4sRVEeGx2-Pp6bmfHQ" name="asSpecializedKind" memberEnd="_BlLO4MRVEeGx2-Pp6bmfHQ _BlLO48RVEeGx2-Pp6bmfHQ">
-      <ownedComment xmi:id="_50wlkMRfEeGx2-Pp6bmfHQ">
-        <body>Record the drug or material class for the substance.  The association is relevant for concommintant medications.</body>
-      </ownedComment>
-      <ownedEnd xmi:id="_BlLO48RVEeGx2-Pp6bmfHQ" type="_aoQW8HIFEeGL-K1S1E9LrQ" association="_BlLO4sRVEeGx2-Pp6bmfHQ"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_ZlsdEsRfEeGx2-Pp6bmfHQ" memberEnd="_ZlsdEMRfEeGx2-Pp6bmfHQ _Zl2OEMRfEeGx2-Pp6bmfHQ">
-      <ownedEnd xmi:id="_Zl2OEMRfEeGx2-Pp6bmfHQ" type="_JuIBEMRXEeGx2-Pp6bmfHQ" association="_ZlsdEsRfEeGx2-Pp6bmfHQ"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_GIKNosUgEeG8jq8t2wxAbw" memberEnd="_GIKNoMUgEeG8jq8t2wxAbw _GIKNo8UgEeG8jq8t2wxAbw">
       <ownedEnd xmi:id="_GIKNo8UgEeG8jq8t2wxAbw" type="_jQ-2sJoaEeG78ZMLtGK0RQ" association="_GIKNosUgEeG8jq8t2wxAbw"/>
     </packagedElement>
@@ -13753,9 +13725,6 @@ mass identifier. The mass identification should be unique within the subject, re
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_UgMMcsXLEeGAALP3Wz5mAg" memberEnd="_UgMMcMXLEeGAALP3Wz5mAg _UgMMc8XLEeGAALP3Wz5mAg">
       <ownedEnd xmi:id="_UgMMc8XLEeGAALP3Wz5mAg" type="_sYRCoLZmEeGvx_6yr-0T9g" association="_UgMMcsXLEeGAALP3Wz5mAg"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_bCFzMsXLEeGAALP3Wz5mAg" memberEnd="_bCFzMMXLEeGAALP3Wz5mAg _bCFzM8XLEeGAALP3Wz5mAg">
-      <ownedEnd xmi:id="_bCFzM8XLEeGAALP3Wz5mAg" type="_sYRCoLZmEeGvx_6yr-0T9g" association="_bCFzMsXLEeGAALP3Wz5mAg"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_59e34sXMEeGAALP3Wz5mAg" memberEnd="_59e34MXMEeGAALP3Wz5mAg _59e348XMEeGAALP3Wz5mAg">
       <ownedEnd xmi:id="_59e348XMEeGAALP3Wz5mAg" type="_pxvVsGSrEeGaWrlBtEAvSQ" association="_59e34sXMEeGAALP3Wz5mAg"/>
@@ -13958,8 +13927,62 @@ mass identifier. The mass identification should be unique within the subject, re
     <packagedElement xmi:type="uml:Association" xmi:id="_z77agsaPEeGigrTqdSb8gg" memberEnd="_z77agMaPEeGigrTqdSb8gg _z77ag8aPEeGigrTqdSb8gg">
       <ownedEnd xmi:id="_z77ag8aPEeGigrTqdSb8gg" type="_daE-MMaPEeGigrTqdSb8gg" association="_z77agsaPEeGigrTqdSb8gg"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_YO64EMqZEeG3ie8UA_dJ3g" memberEnd="_YO5p8MqZEeG3ie8UA_dJ3g _YO7fIMqZEeG3ie8UA_dJ3g">
-      <ownedEnd xmi:id="_YO7fIMqZEeG3ie8UA_dJ3g" type="_fWmVQMaPEeGigrTqdSb8gg" association="_YO64EMqZEeG3ie8UA_dJ3g"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_4Xow0saPEeGigrTqdSb8gg" memberEnd="_4Xow0MaPEeGigrTqdSb8gg _4Xow08aPEeGigrTqdSb8gg">
+      <ownedEnd xmi:id="_4Xow08aPEeGigrTqdSb8gg" type="_fWmVQMaPEeGigrTqdSb8gg" association="_4Xow0saPEeGigrTqdSb8gg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_KerIYsqmEeGIJb16OdqGaQ" memberEnd="_KerIYMqmEeGIJb16OdqGaQ _KerIY8qmEeGIJb16OdqGaQ">
+      <ownedEnd xmi:id="_KerIY8qmEeGIJb16OdqGaQ" type="_XbCK4LWOEeGoyLVp-ZM50A" association="_KerIYsqmEeGIJb16OdqGaQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Rxrb8sqmEeGIJb16OdqGaQ" memberEnd="_Rxrb8MqmEeGIJb16OdqGaQ _Rxrb88qmEeGIJb16OdqGaQ">
+      <ownedEnd xmi:id="_Rxrb88qmEeGIJb16OdqGaQ" type="_bYPnULWOEeGoyLVp-ZM50A" association="_Rxrb8sqmEeGIJb16OdqGaQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_XU83QsqmEeGIJb16OdqGaQ" memberEnd="_XU83QMqmEeGIJb16OdqGaQ _XU83Q8qmEeGIJb16OdqGaQ">
+      <ownedEnd xmi:id="_XU83Q8qmEeGIJb16OdqGaQ" type="_gMVhELWREeGoyLVp-ZM50A" association="_XU83QsqmEeGIJb16OdqGaQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_zeAMosqmEeGIJb16OdqGaQ" memberEnd="_zeAMoMqmEeGIJb16OdqGaQ _zeAMo8qmEeGIJb16OdqGaQ">
+      <ownedEnd xmi:id="_zeAMo8qmEeGIJb16OdqGaQ" type="__eYEEJobEeG78ZMLtGK0RQ" association="_zeAMosqmEeGIJb16OdqGaQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_C8mWsMqpEeGIJb16OdqGaQ" memberEnd="_C8clsMqpEeGIJb16OdqGaQ _C8mWscqpEeGIJb16OdqGaQ">
+      <ownedEnd xmi:id="_C8mWscqpEeGIJb16OdqGaQ" type="_mxZXgJocEeG78ZMLtGK0RQ" association="_C8mWsMqpEeGIJb16OdqGaQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_KQyWAsqpEeGIJb16OdqGaQ" memberEnd="_KQyWAMqpEeGIJb16OdqGaQ _KQyWA8qpEeGIJb16OdqGaQ">
+      <ownedEnd xmi:id="_KQyWA8qpEeGIJb16OdqGaQ" type="_mxZXgJocEeG78ZMLtGK0RQ" association="_KQyWAsqpEeGIJb16OdqGaQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_QieWgsqpEeGIJb16OdqGaQ" memberEnd="_QieWgMqpEeGIJb16OdqGaQ _QieWg8qpEeGIJb16OdqGaQ">
+      <ownedEnd xmi:id="_QieWg8qpEeGIJb16OdqGaQ" type="_mxZXgJocEeG78ZMLtGK0RQ" association="_QieWgsqpEeGIJb16OdqGaQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Z2QPAsqpEeGIJb16OdqGaQ" memberEnd="_Z2QPAMqpEeGIJb16OdqGaQ _Z2QPA8qpEeGIJb16OdqGaQ">
+      <ownedEnd xmi:id="_Z2QPA8qpEeGIJb16OdqGaQ" type="_XCUCMLlaEeGiKOTkJtG-hw" association="_Z2QPAsqpEeGIJb16OdqGaQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_niFF0sqpEeGIJb16OdqGaQ" memberEnd="_niFF0MqpEeGIJb16OdqGaQ _niFF08qpEeGIJb16OdqGaQ">
+      <ownedEnd xmi:id="_niFF08qpEeGIJb16OdqGaQ" type="_faGhoLlcEeGiKOTkJtG-hw" association="_niFF0sqpEeGIJb16OdqGaQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_P4ONssqrEeGIJb16OdqGaQ" memberEnd="_P4ONsMqrEeGIJb16OdqGaQ _P4ONs8qrEeGIJb16OdqGaQ">
+      <ownedEnd xmi:id="_P4ONs8qrEeGIJb16OdqGaQ" type="_0rD0wJrGEeGpk_Q1ImbEig" association="_P4ONssqrEeGIJb16OdqGaQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_o2pOksq1EeGIJb16OdqGaQ" memberEnd="_o2pOkMq1EeGIJb16OdqGaQ _o2pOk8q1EeGIJb16OdqGaQ">
+      <ownedEnd xmi:id="_o2pOk8q1EeGIJb16OdqGaQ" type="_aoQW8HIFEeGL-K1S1E9LrQ" association="_o2pOksq1EeGIJb16OdqGaQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_7ZCEU8q4EeG3m89ZGmmeBA" memberEnd="_7ZCEUMq4EeG3m89ZGmmeBA _7ZCEVMq4EeG3m89ZGmmeBA">
+      <ownedEnd xmi:id="_7ZCEVMq4EeG3m89ZGmmeBA" type="_3f7BkMq0EeGIJb16OdqGaQ" association="_7ZCEU8q4EeG3m89ZGmmeBA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ANUdQsq6EeG3m89ZGmmeBA" memberEnd="_ANUdQMq6EeG3m89ZGmmeBA _ANUdQ8q6EeG3m89ZGmmeBA">
+      <ownedEnd xmi:id="_ANUdQ8q6EeG3m89ZGmmeBA" type="_sYRCoLZmEeGvx_6yr-0T9g" association="_ANUdQsq6EeG3m89ZGmmeBA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_-M0rgsrBEeGJHocgP_8Fjw" memberEnd="_-M0rgMrBEeGJHocgP_8Fjw _-M0rg8rBEeGJHocgP_8Fjw">
+      <ownedEnd xmi:id="_-M0rg8rBEeGJHocgP_8Fjw" type="_YbytILZmEeGvx_6yr-0T9g" association="_-M0rgsrBEeGJHocgP_8Fjw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_kg2nIsrCEeGJHocgP_8Fjw" memberEnd="_kg2nIMrCEeGJHocgP_8Fjw _kg2nI8rCEeGJHocgP_8Fjw">
+      <ownedEnd xmi:id="_kg2nI8rCEeGJHocgP_8Fjw" type="_YbytILZmEeGvx_6yr-0T9g" association="_kg2nIsrCEeGJHocgP_8Fjw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_MT1-osrEEeGJHocgP_8Fjw" memberEnd="_MT1-oMrEEeGJHocgP_8Fjw _MT1-o8rEEeGJHocgP_8Fjw">
+      <ownedEnd xmi:id="_MT1-o8rEEeGJHocgP_8Fjw" type="_YbytILZmEeGvx_6yr-0T9g" association="_MT1-osrEEeGJHocgP_8Fjw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_JA6Y0srFEeGJHocgP_8Fjw" memberEnd="_JA6Y0MrFEeGJHocgP_8Fjw _JA6Y08rFEeGJHocgP_8Fjw">
+      <ownedEnd xmi:id="_JA6Y08rFEeGJHocgP_8Fjw" type="_xQc0UMrEEeGJHocgP_8Fjw" association="_JA6Y0srFEeGJHocgP_8Fjw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NRnZAsrFEeGJHocgP_8Fjw" memberEnd="_NRnZAMrFEeGJHocgP_8Fjw _NRwi8MrFEeGJHocgP_8Fjw">
+      <ownedEnd xmi:id="_NRwi8MrFEeGJHocgP_8Fjw" type="_YbytILZmEeGvx_6yr-0T9g" association="_NRnZAsrFEeGJHocgP_8Fjw"/>
     </packagedElement>
     <profileApplication xmi:id="_BK1HwV10EeGh_7NFCJ3fGA">
       <eAnnotations xmi:id="_BK1Hwl10EeGh_7NFCJ3fGA" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -14071,9 +14094,6 @@ mass identifier. The mass identification should be unique within the subject, re
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_yqC6UGb0EeGjiJmz4TzZew" severity="INFO" base_Property="_tFb7FmSrEeGaWrlBtEAvSQ"/>
   <CDA:PropertyValidation xmi:id="_PF1lgGb1EeGjiJmz4TzZew" base_Property="_M0fN8Gb1EeGjiJmz4TzZew"/>
-  <CDA:CodeSystemConstraint xmi:id="_SeTWIGb1EeGjiJmz4TzZew" base_Property="_M0fN8Gb1EeGjiJmz4TzZew">
-    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
-  </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_yMrW8Gb2EeGjiJmz4TzZew" severity="WARNING" base_Property="_ftoowGb2EeGjiJmz4TzZew"/>
   <CDA:CodeSystemConstraint xmi:id="_zrJgEGb2EeGjiJmz4TzZew" name="TrialDataIntepretations" base_Property="_ftoowGb2EeGjiJmz4TzZew"/>
   <uml:Association xmi:id="_oUC2Mmb8EeGjiJmz4TzZew" memberEnd="_oUC2MGb8EeGjiJmz4TzZew _oUC2M2b8EeGjiJmz4TzZew">
@@ -14900,7 +14920,7 @@ mass identifier. The mass identification should be unique within the subject, re
   <CDA:PropertyValidation xmi:id="_FRWUE4-vEeGSf7-C4p-dMA" base_Property="_FRVtD4-vEeGSf7-C4p-dMA"/>
   <CDA:PropertyValidation xmi:id="_FRWUFI-vEeGSf7-C4p-dMA" base_Property="_FRVtEI-vEeGSf7-C4p-dMA"/>
   <CDA:PropertyValidation xmi:id="_FRWUFY-vEeGSf7-C4p-dMA" base_Property="_FRVtEo-vEeGSf7-C4p-dMA"/>
-  <CDA:AssociationValidation xmi:id="_jo1vkI-yEeGSf7-C4p-dMA" severity="INFO" base_Association="_is99MI-yEeGSf7-C4p-dMA"/>
+  <CDA:AssociationValidation xmi:id="_jo1vkI-yEeGSf7-C4p-dMA" severity="WARNING" base_Association="_is99MI-yEeGSf7-C4p-dMA"/>
   <CDA:AssociationValidation xmi:id="_oeDyEI-yEeGSf7-C4p-dMA" severity="INFO" base_Association="_msH6YI-yEeGSf7-C4p-dMA"/>
   <CDA:AssociationValidation xmi:id="_WD1yII-1EeGSf7-C4p-dMA" severity="WARNING" base_Association="_UEqIoY-1EeGSf7-C4p-dMA"/>
   <CDA:PropertyValidation xmi:id="_XYkwcI-1EeGSf7-C4p-dMA" base_Property="_vD3d4I-xEeGSf7-C4p-dMA"/>
@@ -15640,8 +15660,6 @@ mass identifier. The mass identification should be unique within the subject, re
   <CDA:PropertyValidation xmi:id="_bYPnabWOEeGoyLVp-ZM50A" base_Property="_bYPnX7WOEeGoyLVp-ZM50A"/>
   <CDA:PropertyValidation xmi:id="_bYPnarWOEeGoyLVp-ZM50A" base_Property="_bYPnYbWOEeGoyLVp-ZM50A"/>
   <CDA:AssociationValidation xmi:id="_vHCGILWOEeGoyLVp-ZM50A" base_Association="_rqGsQrWOEeGoyLVp-ZM50A"/>
-  <CDA:PropertyValidation xmi:id="_wSdXcLWOEeGoyLVp-ZM50A" base_Property="_XbCK57WOEeGoyLVp-ZM50A"/>
-  <CDA:PropertyValidation xmi:id="_-MH18LWOEeGoyLVp-ZM50A" base_Property="_bYPnV7WOEeGoyLVp-ZM50A"/>
   <CDA:AssociationValidation xmi:id="_GFXDELWPEeGoyLVp-ZM50A" severity="INFO" base_Association="_FKvN4rWPEeGoyLVp-ZM50A"/>
   <CDA:AssociationValidation xmi:id="_RVpPELWQEeGoyLVp-ZM50A" severity="INFO" base_Association="_PnsfgrWQEeGoyLVp-ZM50A"/>
   <CDA:PropertyValidation xmi:id="_2dtG0LWQEeGoyLVp-ZM50A" severity="INFO" base_Property="_1vR6kLWQEeGoyLVp-ZM50A"/>
@@ -15928,7 +15946,6 @@ mass identifier. The mass identification should be unique within the subject, re
   <CDA:PropertyValidation xmi:id="_YMOmELc1EeGbTfv2pIp07Q" base_Property="_Lrb21ZocEeG78ZMLtGK0RQ"/>
   <CDA:PropertyValidation xmi:id="_9-QA0Lc1EeGbTfv2pIp07Q" severity="WARNING" base_Property="_mxZXiZocEeG78ZMLtGK0RQ"/>
   <CDA:PropertyValidation xmi:id="_XCUCRLlaEeGiKOTkJtG-hw" base_Property="_XCUCM7laEeGiKOTkJtG-hw"/>
-  <CDA:PropertyValidation xmi:id="_XCUCRblaEeGiKOTkJtG-hw" base_Property="_XCUCN7laEeGiKOTkJtG-hw"/>
   <CDA:PropertyValidation xmi:id="_XCUCRrlaEeGiKOTkJtG-hw" base_Property="_XCUCPblaEeGiKOTkJtG-hw"/>
   <CDA:PropertyValidation xmi:id="_XCUCR7laEeGiKOTkJtG-hw" base_Property="_XCUCPrlaEeGiKOTkJtG-hw"/>
   <CDA:CodeSystemConstraint xmi:id="_XCUCSLlaEeGiKOTkJtG-hw" code="C83218" displayName="Concomitant Medication Category Code" base_Property="_XCUCPrlaEeGiKOTkJtG-hw">
@@ -15944,24 +15961,6 @@ mass identifier. The mass identification should be unique within the subject, re
   <CDA:AssociationValidation xmi:id="_2YjP0LlbEeGiKOTkJtG-hw" severity="INFO" base_Association="_yOPykrlbEeGiKOTkJtG-hw"/>
   <CDA:EntryRelationship xmi:id="_DtnzgLlcEeGiKOTkJtG-hw" severity="WARNING" base_Association="_BLwTsrlcEeGiKOTkJtG-hw" typeCode="COMP"/>
   <CDA:AssociationValidation xmi:id="_RddnoLlcEeGiKOTkJtG-hw" severity="INFO" base_Association="_Owu7orlcEeGiKOTkJtG-hw"/>
-  <CDA:PropertyValidation xmi:id="_SwLz1LlcEeGiKOTkJtG-hw" base_Property="_SwLzw7lcEeGiKOTkJtG-hw"/>
-  <CDA:PropertyValidation xmi:id="_SwLz1blcEeGiKOTkJtG-hw" base_Property="_SwLzx7lcEeGiKOTkJtG-hw"/>
-  <CDA:PropertyValidation xmi:id="_SwLz1rlcEeGiKOTkJtG-hw" base_Property="_SwLzzblcEeGiKOTkJtG-hw"/>
-  <CDA:PropertyValidation xmi:id="_SwLz17lcEeGiKOTkJtG-hw" base_Property="_SwLzzrlcEeGiKOTkJtG-hw"/>
-  <CDA:CodeSystemConstraint xmi:id="_SwLz2LlcEeGiKOTkJtG-hw" code="C83218" displayName="Concomitant Medication Category Code" base_Property="_SwLzzrlcEeGiKOTkJtG-hw">
-    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dWKSsaDqEd-dVeaMP0XXQw"/>
-  </CDA:CodeSystemConstraint>
-  <CDA:PropertyValidation xmi:id="_SwLz2blcEeGiKOTkJtG-hw" base_Property="_SwLzz7lcEeGiKOTkJtG-hw"/>
-  <CDA:PropertyValidation xmi:id="_SwLz2rlcEeGiKOTkJtG-hw" base_Property="_SwLz0LlcEeGiKOTkJtG-hw"/>
-  <CDA:PropertyValidation xmi:id="_bbQGhLlcEeGiKOTkJtG-hw" base_Property="_bbQGc7lcEeGiKOTkJtG-hw"/>
-  <CDA:PropertyValidation xmi:id="_bbQGhblcEeGiKOTkJtG-hw" base_Property="_bbQGd7lcEeGiKOTkJtG-hw"/>
-  <CDA:PropertyValidation xmi:id="_bbQGhrlcEeGiKOTkJtG-hw" base_Property="_bbQGfblcEeGiKOTkJtG-hw"/>
-  <CDA:PropertyValidation xmi:id="_bbQGh7lcEeGiKOTkJtG-hw" base_Property="_bbQGfrlcEeGiKOTkJtG-hw"/>
-  <CDA:CodeSystemConstraint xmi:id="_bbQGiLlcEeGiKOTkJtG-hw" code="C83218" displayName="Concomitant Medication Category Code" base_Property="_bbQGfrlcEeGiKOTkJtG-hw">
-    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dWKSsaDqEd-dVeaMP0XXQw"/>
-  </CDA:CodeSystemConstraint>
-  <CDA:PropertyValidation xmi:id="_bbQGiblcEeGiKOTkJtG-hw" base_Property="_bbQGf7lcEeGiKOTkJtG-hw"/>
-  <CDA:PropertyValidation xmi:id="_bbQGirlcEeGiKOTkJtG-hw" base_Property="_bbQGgLlcEeGiKOTkJtG-hw"/>
   <CDA:PropertyValidation xmi:id="_faQSoLlcEeGiKOTkJtG-hw" base_Property="_faGhorlcEeGiKOTkJtG-hw"/>
   <CDA:PropertyValidation xmi:id="_faQSoblcEeGiKOTkJtG-hw" base_Property="_faGhqblcEeGiKOTkJtG-hw"/>
   <CDA:PropertyValidation xmi:id="_faQSorlcEeGiKOTkJtG-hw" base_Property="_faGhq7lcEeGiKOTkJtG-hw"/>
@@ -16049,11 +16048,6 @@ mass identifier. The mass identification should be unique within the subject, re
   <CDA:PropertyValidation xmi:id="_vF6sIMBgEeGEqY2P_xVcGw" base_Property="_tvx_oMBgEeGEqY2P_xVcGw"/>
   <CDA:PropertyValidation xmi:id="_6rGmkMBgEeGEqY2P_xVcGw" base_Property="_4ofOkMBgEeGEqY2P_xVcGw"/>
   <CDA:PropertyValidation xmi:id="_7R79EMBgEeGEqY2P_xVcGw" base_Property="_4ofOk8BgEeGEqY2P_xVcGw"/>
-  <CDA:PropertyValidation xmi:id="_mY3NkMRfEeGx2-Pp6bmfHQ" base_Property="_iTeFgMRfEeGx2-Pp6bmfHQ"/>
-  <CDA:PropertyValidation xmi:id="_nbXzcMRfEeGx2-Pp6bmfHQ" severity="WARNING" base_Property="_iTxAcMRfEeGx2-Pp6bmfHQ"/>
-  <CDA:PropertyValidation xmi:id="_oKh_gMRfEeGx2-Pp6bmfHQ" base_Property="_iTxAc8RfEeGx2-Pp6bmfHQ"/>
-  <CDA:PropertyValidation xmi:id="_otfioMRfEeGx2-Pp6bmfHQ" severity="INFO" base_Property="_kNwn8MRfEeGx2-Pp6bmfHQ"/>
-  <CDA:AssociationValidation xmi:id="_zVYuYMRfEeGx2-Pp6bmfHQ" severity="INFO" base_Association="_BlLO4sRVEeGx2-Pp6bmfHQ"/>
   <CDA:EntryRelationship xmi:id="__hz-AMUaEeG8jq8t2wxAbw" base_Association="_H8uJ8rpIEeGg2Yguv5tTYw" typeCode="REFR"/>
   <CDA:AssociationValidation xmi:id="_JA7xkMUgEeG8jq8t2wxAbw" severity="WARNING" base_Association="_GIKNosUgEeG8jq8t2wxAbw"/>
   <CDA:AssociationValidation xmi:id="_eC4hYMUgEeG8jq8t2wxAbw" base_Association="_RKiV8sUgEeG8jq8t2wxAbw"/>
@@ -16082,7 +16076,6 @@ mass identifier. The mass identification should be unique within the subject, re
   <CDA:EntryRelationship xmi:id="_jb198MV_EeG8rqKJL8nD4g" severity="INFO" base_Association="_g9jWksV_EeG8rqKJL8nD4g" typeCode="COMP"/>
   <CDA:PropertyValidation xmi:id="_NN5foMWAEeG8rqKJL8nD4g" severity="WARNING" base_Property="_J9UfsMWAEeG8rqKJL8nD4g"/>
   <CDA:EntryRelationship xmi:id="_XL3vkMXLEeGAALP3Wz5mAg" severity="INFO" base_Association="_UgMMcsXLEeGAALP3Wz5mAg" typeCode="COMP"/>
-  <CDA:EntryRelationship xmi:id="_eCwH0MXLEeGAALP3Wz5mAg" severity="INFO" base_Association="_bCFzMsXLEeGAALP3Wz5mAg" typeCode="COMP"/>
   <CDA:AssociationValidation xmi:id="_8GDt8MXMEeGAALP3Wz5mAg" severity="INFO" base_Association="_59e34sXMEeGAALP3Wz5mAg"/>
   <CDA:EntryRelationship xmi:id="_yELpQMXgEeGAALP3Wz5mAg" severity="INFO" base_Association="_q8MS4sXgEeGAALP3Wz5mAg" typeCode="COMP"/>
   <CDA:AssociationValidation xmi:id="_ymtukMXgEeGAALP3Wz5mAg" severity="INFO" base_Association="_t0YA8sXgEeGAALP3Wz5mAg"/>
@@ -16163,7 +16156,44 @@ mass identifier. The mass identification should be unique within the subject, re
   <CDA:PropertyValidation xmi:id="_fWmVWcaPEeGigrTqdSb8gg" base_Property="_fWmVUMaPEeGigrTqdSb8gg"/>
   <CDA:PropertyValidation xmi:id="_fWmVWsaPEeGigrTqdSb8gg" base_Property="_fWmVUsaPEeGigrTqdSb8gg"/>
   <CDA:PropertyValidation xmi:id="_T030IMazEeGigrTqdSb8gg" base_Property="_XO9Z1ZobEeG78ZMLtGK0RQ"/>
-  <CDA:CodeSystemConstraint xmi:id="_-Hvy0MbSEeGwbZ25JrRzcg" base_Property="_BymLUHINEeGL-K1S1E9LrQ">
-    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+  <CDA:AssociationValidation xmi:id="_PQtUAMqmEeGIJb16OdqGaQ" base_Association="_KerIYsqmEeGIJb16OdqGaQ"/>
+  <CDA:AssociationValidation xmi:id="_TrOXgMqmEeGIJb16OdqGaQ" base_Association="_Rxrb8sqmEeGIJb16OdqGaQ"/>
+  <CDA:AssociationValidation xmi:id="_Y8DX8MqmEeGIJb16OdqGaQ" base_Association="_XU83QsqmEeGIJb16OdqGaQ"/>
+  <CDA:EntryRelationship xmi:id="_2SKWUMqmEeGIJb16OdqGaQ" severity="INFO" base_Association="_zeAMosqmEeGIJb16OdqGaQ" typeCode="COMP"/>
+  <CDA:PropertyValidation xmi:id="_FH0GgMqoEeGIJb16OdqGaQ" base_Property="_Lrb21JocEeG78ZMLtGK0RQ"/>
+  <CDA:AssociationValidation xmi:id="_mrXVsMqoEeGIJb16OdqGaQ" base_Association="_JedmlLc0EeGbTfv2pIp07Q"/>
+  <CDA:EntryRelationship xmi:id="_EhdbsMqpEeGIJb16OdqGaQ" severity="INFO" base_Association="_C8mWsMqpEeGIJb16OdqGaQ" typeCode="COMP"/>
+  <CDA:AssociationValidation xmi:id="_LnXucMqpEeGIJb16OdqGaQ" severity="INFO" base_Association="_KQyWAsqpEeGIJb16OdqGaQ"/>
+  <CDA:EntryRelationship xmi:id="_SvmVYMqpEeGIJb16OdqGaQ" severity="INFO" base_Association="_QieWgsqpEeGIJb16OdqGaQ" typeCode="COMP"/>
+  <CDA:AssociationValidation xmi:id="_be19cMqpEeGIJb16OdqGaQ" base_Association="_Z2QPAsqpEeGIJb16OdqGaQ"/>
+  <CDA:AssociationValidation xmi:id="_jcPR0MqpEeGIJb16OdqGaQ" severity="INFO" base_Association="_ia6nQrlcEeGiKOTkJtG-hw"/>
+  <CDA:AssociationValidation xmi:id="_o0zR8MqpEeGIJb16OdqGaQ" base_Association="_niFF0sqpEeGIJb16OdqGaQ"/>
+  <CDA:PropertyValidation xmi:id="_7kXIYMqpEeGIJb16OdqGaQ" severity="INFO" base_Property="_NRJYkLc1EeGbTfv2pIp07Q"/>
+  <CDA:PropertyValidation xmi:id="_SofyYMqqEeGIJb16OdqGaQ" severity="INFO" base_Property="_QHhDYMqqEeGIJb16OdqGaQ"/>
+  <CDA:PropertyValidation xmi:id="_Dx240MqrEeGIJb16OdqGaQ" base_Property="_-JFScMqqEeGIJb16OdqGaQ"/>
+  <CDA:AssociationValidation xmi:id="_ETMEQMqrEeGIJb16OdqGaQ" base_Association="_WvR_hrWLEeGLXdg8xIiGrA"/>
+  <CDA:PropertyValidation xmi:id="_E_0gwMqrEeGIJb16OdqGaQ" base_Property="_pDnSgLWLEeGLXdg8xIiGrA"/>
+  <CDA:AssociationValidation xmi:id="_Q8qGMMqrEeGIJb16OdqGaQ" severity="WARNING" base_Association="_P4ONssqrEeGIJb16OdqGaQ"/>
+  <CDA:AssociationValidation xmi:id="_HEMyUMq2EeG3m89ZGmmeBA" severity="INFO" base_Association="_o2pOksq1EeGIJb16OdqGaQ"/>
+  <CDA:PropertyValidation xmi:id="_HrxvsMq2EeG3m89ZGmmeBA" base_Property="_AVG5kMq1EeGIJb16OdqGaQ"/>
+  <CDA:PropertyValidation xmi:id="_ISTkMMq2EeG3m89ZGmmeBA" base_Property="_AVG5lMq1EeGIJb16OdqGaQ"/>
+  <CDA:PropertyValidation xmi:id="_E75hsMq5EeG3m89ZGmmeBA" base_Property="_CXWhUMq5EeG3m89ZGmmeBA"/>
+  <CDA:PropertyValidation xmi:id="_SZS68Mq5EeG3m89ZGmmeBA" base_Property="_CXWhWMq5EeG3m89ZGmmeBA"/>
+  <CDA:PropertyValidation xmi:id="_S1aPMMq5EeG3m89ZGmmeBA" base_Property="_CXWhVMq5EeG3m89ZGmmeBA"/>
+  <CDA:AssociationValidation xmi:id="_UqWXkMq5EeG3m89ZGmmeBA" base_Association="_7ZCEU8q4EeG3m89ZGmmeBA"/>
+  <CDA:EntryRelationship xmi:id="_B0RM8Mq6EeG3m89ZGmmeBA" severity="INFO" base_Association="_ANUdQsq6EeG3m89ZGmmeBA" typeCode="COMP"/>
+  <CDA:EntryRelationship xmi:id="_BNoxIMrCEeGJHocgP_8Fjw" severity="INFO" base_Association="_-M0rgsrBEeGJHocgP_8Fjw" typeCode="COMP"/>
+  <CDA:PropertyValidation xmi:id="_bXyJ0MrCEeGJHocgP_8Fjw" severity="INFO" base_Property="_UxaSwMrCEeGJHocgP_8Fjw"/>
+  <CDA:EntryRelationship xmi:id="_mwRFAMrCEeGJHocgP_8Fjw" severity="INFO" base_Association="_kg2nIsrCEeGJHocgP_8Fjw" typeCode="COMP"/>
+  <CDA:EntryRelationship xmi:id="_PvSKwMrEEeGJHocgP_8Fjw" severity="INFO" base_Association="_MT1-osrEEeGJHocgP_8Fjw" typeCode="COMP"/>
+  <CDA:PropertyValidation xmi:id="_xQc0ZMrEEeGJHocgP_8Fjw" base_Property="_xQc0U8rEEeGJHocgP_8Fjw"/>
+  <CDA:PropertyValidation xmi:id="_xQc0ZcrEEeGJHocgP_8Fjw" base_Property="_xQc0W8rEEeGJHocgP_8Fjw"/>
+  <CDA:PropertyValidation xmi:id="_xQc0ZsrEEeGJHocgP_8Fjw" base_Property="_xQc0XcrEEeGJHocgP_8Fjw"/>
+  <CDA:PropertyValidation xmi:id="_xQc0Z8rEEeGJHocgP_8Fjw" base_Property="_xQc0X8rEEeGJHocgP_8Fjw"/>
+  <CDA:CodeSystemConstraint xmi:id="_xQc0aMrEEeGJHocgP_8Fjw" code="C83085" displayName="Concomitant Medication Indication" base_Property="_xQc0X8rEEeGJHocgP_8Fjw">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dWKSsaDqEd-dVeaMP0XXQw"/>
   </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_xQc0acrEEeGJHocgP_8Fjw" base_Property="_xQc0YMrEEeGJHocgP_8Fjw"/>
+  <CDA:AssociationValidation xmi:id="_K1_rIMrFEeGJHocgP_8Fjw" base_Association="_JA6Y0srFEeGJHocgP_8Fjw"/>
+  <CDA:AssociationValidation xmi:id="_N5fRUMrFEeGJHocgP_8Fjw" severity="INFO" base_Association="_NRnZAsrFEeGJHocgP_8Fjw"/>
 </xmi:XMI>
