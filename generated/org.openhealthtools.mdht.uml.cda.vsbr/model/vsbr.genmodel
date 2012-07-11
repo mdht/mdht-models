@@ -1,0 +1,1182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:genmodel="http://www.eclipse.org/uml2/2.2.0/GenModel" modelDirectory="org.openhealthtools.mdht.uml.cda.vsbr/src"
+    modelPluginID="org.openhealthtools.mdht.uml.cda.vsbr" templateDirectory="/org.openhealthtools.mdht.uml.cda/templates"
+    dynamicTemplates="true" modelName="vsbr_Ecore" modelPluginClass="VsbrPlugin" importerID="org.eclipse.uml2.uml.ecore.importer"
+    complianceLevel="5.0" copyrightFields="false" runtimeVersion="2.5" usedGenPackages="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.genmodel#//cda platform:/plugin/org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.genmodel#//vocab platform:/plugin/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.genmodel#//datatypes platform:/plugin/org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore ../../org.openhealthtools.mdht.uml.hl7.rim/model/rim.genmodel#//rim"
+    pluralizedGetters="true" invariantPrefix="validate">
+  <genAnnotations source="http://www.eclipse.org/emf/2002/GenModel/importer/org.eclipse.uml2.uml.ecore.importer">
+    <details key="ECORE_TAGGED_VALUES" value="PROCESS"/>
+    <details key="UNION_PROPERTIES" value="PROCESS"/>
+    <details key="DUPLICATE_FEATURES" value="PROCESS"/>
+    <details key="SUBSETTING_PROPERTIES" value="PROCESS"/>
+    <details key="COMMENTS" value="PROCESS"/>
+    <details key="DUPLICATE_FEATURE_INHERITANCE" value="PROCESS"/>
+    <details key="DUPLICATE_OPERATIONS" value="PROCESS"/>
+    <details key="INVARIANT_CONSTRAINTS" value="PROCESS"/>
+    <details key="REDEFINING_PROPERTIES" value="PROCESS"/>
+    <details key="ANNOTATION_DETAILS" value="PROCESS"/>
+    <details key="DUPLICATE_OPERATION_INHERITANCE" value="PROCESS"/>
+    <details key="REDEFINING_OPERATIONS" value="PROCESS"/>
+    <details key="DERIVED_FEATURES" value="IGNORE"/>
+    <details key="OPERATION_BODIES" value="PROCESS"/>
+    <details key="CAMEL_CASE_NAMES" value="IGNORE"/>
+    <details key="SUPER_CLASS_ORDER" value="PROCESS"/>
+  </genAnnotations>
+  <foreignModel>vsbr_Ecore.uml</foreignModel>
+  <genPackages xsi:type="genmodel:GenPackage" prefix="Vsbr" basePackage="org.openhealthtools.mdht.uml.cda"
+      disposableProviderFactory="true" ecorePackage="vsbr.ecore#/" operationsPackage="org.openhealthtools.mdht.uml.cda.vsbr.operations">
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="vsbr.ecore#//ReportingBirthInformationfromaclinicalsettingtovitalrecords">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//ReportingBirthInformationfromaclinicalsettingtovitalrecords/ReportingBirthInformationfromaclinicalsettingtovitalrecordsTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ReportingBirthInformationfromaclinicalsettingtovitalrecords/ReportingBirthInformationfromaclinicalsettingtovitalrecordsTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ReportingBirthInformationfromaclinicalsettingtovitalrecords/ReportingBirthInformationfromaclinicalsettingtovitalrecordsTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//ReportingBirthInformationfromaclinicalsettingtovitalrecords/ReportingBirthInformationfromaclinicalsettingtovitalrecordsCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ReportingBirthInformationfromaclinicalsettingtovitalrecords/ReportingBirthInformationfromaclinicalsettingtovitalrecordsCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ReportingBirthInformationfromaclinicalsettingtovitalrecords/ReportingBirthInformationfromaclinicalsettingtovitalrecordsCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//ReportingBirthInformationfromaclinicalsettingtovitalrecords/ReportingBirthInformationfromaclinicalsettingtovitalrecordsCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ReportingBirthInformationfromaclinicalsettingtovitalrecords/ReportingBirthInformationfromaclinicalsettingtovitalrecordsCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ReportingBirthInformationfromaclinicalsettingtovitalrecords/ReportingBirthInformationfromaclinicalsettingtovitalrecordsCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//ReportingBirthInformationfromaclinicalsettingtovitalrecords/ReportingBirthInformationfromaclinicalsettingtovitalrecordsConfidentialityCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ReportingBirthInformationfromaclinicalsettingtovitalrecords/ReportingBirthInformationfromaclinicalsettingtovitalrecordsConfidentialityCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ReportingBirthInformationfromaclinicalsettingtovitalrecords/ReportingBirthInformationfromaclinicalsettingtovitalrecordsConfidentialityCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//ReportingBirthInformationfromaclinicalsettingtovitalrecords/ReportingBirthInformationfromaclinicalsettingtovitalrecordsConfidentialityCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ReportingBirthInformationfromaclinicalsettingtovitalrecords/ReportingBirthInformationfromaclinicalsettingtovitalrecordsConfidentialityCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ReportingBirthInformationfromaclinicalsettingtovitalrecords/ReportingBirthInformationfromaclinicalsettingtovitalrecordsConfidentialityCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//ReportingBirthInformationfromaclinicalsettingtovitalrecords/ReportingBirthInformationfromaclinicalsettingtovitalrecordsMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ReportingBirthInformationfromaclinicalsettingtovitalrecords/ReportingBirthInformationfromaclinicalsettingtovitalrecordsMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ReportingBirthInformationfromaclinicalsettingtovitalrecords/ReportingBirthInformationfromaclinicalsettingtovitalrecordsMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//ReportingBirthInformationfromaclinicalsettingtovitalrecords/ReportingBirthInformationfromaclinicalsettingtovitalrecordsEffectiveTime">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ReportingBirthInformationfromaclinicalsettingtovitalrecords/ReportingBirthInformationfromaclinicalsettingtovitalrecordsEffectiveTime/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ReportingBirthInformationfromaclinicalsettingtovitalrecords/ReportingBirthInformationfromaclinicalsettingtovitalrecordsEffectiveTime/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//ReportingBirthInformationfromaclinicalsettingtovitalrecords/ReportingBirthInformationfromaclinicalsettingtovitalrecordsId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ReportingBirthInformationfromaclinicalsettingtovitalrecords/ReportingBirthInformationfromaclinicalsettingtovitalrecordsId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ReportingBirthInformationfromaclinicalsettingtovitalrecords/ReportingBirthInformationfromaclinicalsettingtovitalrecordsId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//ReportingBirthInformationfromaclinicalsettingtovitalrecords/ReportingBirthInformationfromaclinicalsettingtovitalrecordsLanguageCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ReportingBirthInformationfromaclinicalsettingtovitalrecords/ReportingBirthInformationfromaclinicalsettingtovitalrecordsLanguageCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ReportingBirthInformationfromaclinicalsettingtovitalrecords/ReportingBirthInformationfromaclinicalsettingtovitalrecordsLanguageCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//ReportingBirthInformationfromaclinicalsettingtovitalrecords/ReportingBirthInformationfromaclinicalsettingtovitalrecordsRealmCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ReportingBirthInformationfromaclinicalsettingtovitalrecords/ReportingBirthInformationfromaclinicalsettingtovitalrecordsRealmCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ReportingBirthInformationfromaclinicalsettingtovitalrecords/ReportingBirthInformationfromaclinicalsettingtovitalrecordsRealmCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//ReportingBirthInformationfromaclinicalsettingtovitalrecords/ReportingBirthInformationfromaclinicalsettingtovitalrecordsRealmCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ReportingBirthInformationfromaclinicalsettingtovitalrecords/ReportingBirthInformationfromaclinicalsettingtovitalrecordsRealmCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ReportingBirthInformationfromaclinicalsettingtovitalrecords/ReportingBirthInformationfromaclinicalsettingtovitalrecordsRealmCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//ReportingBirthInformationfromaclinicalsettingtovitalrecords/ReportingBirthInformationfromaclinicalsettingtovitalrecordsTitle">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ReportingBirthInformationfromaclinicalsettingtovitalrecords/ReportingBirthInformationfromaclinicalsettingtovitalrecordsTitle/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ReportingBirthInformationfromaclinicalsettingtovitalrecords/ReportingBirthInformationfromaclinicalsettingtovitalrecordsTitle/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//ReportingBirthInformationfromaclinicalsettingtovitalrecords/ReportingBirthInformationfromaclinicalsettingtovitalrecordsAuthor">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ReportingBirthInformationfromaclinicalsettingtovitalrecords/ReportingBirthInformationfromaclinicalsettingtovitalrecordsAuthor/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ReportingBirthInformationfromaclinicalsettingtovitalrecords/ReportingBirthInformationfromaclinicalsettingtovitalrecordsAuthor/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//ReportingBirthInformationfromaclinicalsettingtovitalrecords/ReportingBirthInformationfromaclinicalsettingtovitalrecordsCustodian">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ReportingBirthInformationfromaclinicalsettingtovitalrecords/ReportingBirthInformationfromaclinicalsettingtovitalrecordsCustodian/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ReportingBirthInformationfromaclinicalsettingtovitalrecords/ReportingBirthInformationfromaclinicalsettingtovitalrecordsCustodian/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//ReportingBirthInformationfromaclinicalsettingtovitalrecords/ReportingBirthInformationfromaclinicalsettingtovitalrecordsRecordTarget">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ReportingBirthInformationfromaclinicalsettingtovitalrecords/ReportingBirthInformationfromaclinicalsettingtovitalrecordsRecordTarget/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ReportingBirthInformationfromaclinicalsettingtovitalrecords/ReportingBirthInformationfromaclinicalsettingtovitalrecordsRecordTarget/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//ReportingBirthInformationfromaclinicalsettingtovitalrecords/ReportingBirthInformationfromaclinicalsettingtovitalrecordsBirthReportingPrenatalExperienceSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ReportingBirthInformationfromaclinicalsettingtovitalrecords/ReportingBirthInformationfromaclinicalsettingtovitalrecordsBirthReportingPrenatalExperienceSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ReportingBirthInformationfromaclinicalsettingtovitalrecords/ReportingBirthInformationfromaclinicalsettingtovitalrecordsBirthReportingPrenatalExperienceSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//ReportingBirthInformationfromaclinicalsettingtovitalrecords/ReportingBirthInformationfromaclinicalsettingtovitalrecordsLaborandDeliverySection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ReportingBirthInformationfromaclinicalsettingtovitalrecords/ReportingBirthInformationfromaclinicalsettingtovitalrecordsLaborandDeliverySection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ReportingBirthInformationfromaclinicalsettingtovitalrecords/ReportingBirthInformationfromaclinicalsettingtovitalrecordsLaborandDeliverySection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//ReportingBirthInformationfromaclinicalsettingtovitalrecords/ReportingBirthInformationfromaclinicalsettingtovitalrecordsNewbornSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ReportingBirthInformationfromaclinicalsettingtovitalrecords/ReportingBirthInformationfromaclinicalsettingtovitalrecordsNewbornSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ReportingBirthInformationfromaclinicalsettingtovitalrecords/ReportingBirthInformationfromaclinicalsettingtovitalrecordsNewbornSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//ReportingBirthInformationfromaclinicalsettingtovitalrecords/getBirthReportingPrenatalExperienceSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//ReportingBirthInformationfromaclinicalsettingtovitalrecords/getLaborandDeliverySection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//ReportingBirthInformationfromaclinicalsettingtovitalrecords/getNewbornSection"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="vsbr.ecore#//BirthReportingPrenatalExperienceSection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//BirthReportingPrenatalExperienceSection/BirthReportingPrenatalExperienceSectionTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//BirthReportingPrenatalExperienceSection/BirthReportingPrenatalExperienceSectionTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//BirthReportingPrenatalExperienceSection/BirthReportingPrenatalExperienceSectionTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//BirthReportingPrenatalExperienceSection/BirthReportingPrenatalExperienceSectionClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//BirthReportingPrenatalExperienceSection/BirthReportingPrenatalExperienceSectionClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//BirthReportingPrenatalExperienceSection/BirthReportingPrenatalExperienceSectionClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//BirthReportingPrenatalExperienceSection/BirthReportingPrenatalExperienceSectionCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//BirthReportingPrenatalExperienceSection/BirthReportingPrenatalExperienceSectionCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//BirthReportingPrenatalExperienceSection/BirthReportingPrenatalExperienceSectionCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//BirthReportingPrenatalExperienceSection/BirthReportingPrenatalExperienceSectionMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//BirthReportingPrenatalExperienceSection/BirthReportingPrenatalExperienceSectionMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//BirthReportingPrenatalExperienceSection/BirthReportingPrenatalExperienceSectionMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//BirthReportingPrenatalExperienceSection/BirthReportingPrenatalExperienceSectionText">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//BirthReportingPrenatalExperienceSection/BirthReportingPrenatalExperienceSectionText/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//BirthReportingPrenatalExperienceSection/BirthReportingPrenatalExperienceSectionText/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//BirthReportingPrenatalExperienceSection/BirthReportingPrenatalExperienceSectionPreNatalCare">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//BirthReportingPrenatalExperienceSection/BirthReportingPrenatalExperienceSectionPreNatalCare/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//BirthReportingPrenatalExperienceSection/BirthReportingPrenatalExperienceSectionPreNatalCare/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//BirthReportingPrenatalExperienceSection/BirthReportingPrenatalExperienceSectionHeight">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//BirthReportingPrenatalExperienceSection/BirthReportingPrenatalExperienceSectionHeight/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//BirthReportingPrenatalExperienceSection/BirthReportingPrenatalExperienceSectionHeight/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//BirthReportingPrenatalExperienceSection/BirthReportingPrenatalExperienceSectionDateofLastLiveBirth">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//BirthReportingPrenatalExperienceSection/BirthReportingPrenatalExperienceSectionDateofLastLiveBirth/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//BirthReportingPrenatalExperienceSection/BirthReportingPrenatalExperienceSectionDateofLastLiveBirth/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//BirthReportingPrenatalExperienceSection/BirthReportingPrenatalExperienceSectionLastMenstrualPeriodDate">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//BirthReportingPrenatalExperienceSection/BirthReportingPrenatalExperienceSectionLastMenstrualPeriodDate/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//BirthReportingPrenatalExperienceSection/BirthReportingPrenatalExperienceSectionLastMenstrualPeriodDate/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//BirthReportingPrenatalExperienceSection/BirthReportingPrenatalExperienceSectionNumberofBirthsStillLiving">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//BirthReportingPrenatalExperienceSection/BirthReportingPrenatalExperienceSectionNumberofBirthsStillLiving/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//BirthReportingPrenatalExperienceSection/BirthReportingPrenatalExperienceSectionNumberofBirthsStillLiving/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//BirthReportingPrenatalExperienceSection/BirthReportingPrenatalExperienceSectionNumberofLiveBirthsnowDead">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//BirthReportingPrenatalExperienceSection/BirthReportingPrenatalExperienceSectionNumberofLiveBirthsnowDead/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//BirthReportingPrenatalExperienceSection/BirthReportingPrenatalExperienceSectionNumberofLiveBirthsnowDead/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//BirthReportingPrenatalExperienceSection/BirthReportingPrenatalExperienceSectionOtherPreganancyOutcomes">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//BirthReportingPrenatalExperienceSection/BirthReportingPrenatalExperienceSectionOtherPreganancyOutcomes/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//BirthReportingPrenatalExperienceSection/BirthReportingPrenatalExperienceSectionOtherPreganancyOutcomes/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//BirthReportingPrenatalExperienceSection/BirthReportingPrenatalExperienceSectionRiskFactor">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//BirthReportingPrenatalExperienceSection/BirthReportingPrenatalExperienceSectionRiskFactor/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//BirthReportingPrenatalExperienceSection/BirthReportingPrenatalExperienceSectionRiskFactor/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//BirthReportingPrenatalExperienceSection/BirthReportingPrenatalExperienceSectionBirthReportingInfectionsPresent">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//BirthReportingPrenatalExperienceSection/BirthReportingPrenatalExperienceSectionBirthReportingInfectionsPresent/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//BirthReportingPrenatalExperienceSection/BirthReportingPrenatalExperienceSectionBirthReportingInfectionsPresent/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//BirthReportingPrenatalExperienceSection/getPreNatalCare"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//BirthReportingPrenatalExperienceSection/getHeight"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//BirthReportingPrenatalExperienceSection/getDateofLastLiveBirth"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//BirthReportingPrenatalExperienceSection/getLastMenstrualPeriodDate"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//BirthReportingPrenatalExperienceSection/getNumberofBirthsStillLiving"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//BirthReportingPrenatalExperienceSection/getNumberofLiveBirthsnowDead"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//BirthReportingPrenatalExperienceSection/getOtherPreganancyOutcomes"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//BirthReportingPrenatalExperienceSection/getRiskFactors"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//BirthReportingPrenatalExperienceSection/getBirthReportingInfectionsPresents"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="vsbr.ecore#//PreNatalCare">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//PreNatalCare/PreNatalCareTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//PreNatalCare/PreNatalCareTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//PreNatalCare/PreNatalCareTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//PreNatalCare/PreNatalCareClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//PreNatalCare/PreNatalCareClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//PreNatalCare/PreNatalCareClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//PreNatalCare/PreNatalCareCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//PreNatalCare/PreNatalCareCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//PreNatalCare/PreNatalCareCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//PreNatalCare/PreNatalCareEffectiveTime">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//PreNatalCare/PreNatalCareEffectiveTime/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//PreNatalCare/PreNatalCareEffectiveTime/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//PreNatalCare/PreNatalCareMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//PreNatalCare/PreNatalCareMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//PreNatalCare/PreNatalCareMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//PreNatalCare/PreNatalCareNegationInd">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//PreNatalCare/PreNatalCareNegationInd/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//PreNatalCare/PreNatalCareNegationInd/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//PreNatalCare/PreNatalCareEntryRelationship">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//PreNatalCare/PreNatalCareEntryRelationship/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//PreNatalCare/PreNatalCareEntryRelationship/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="vsbr.ecore#//Height">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//Height/HeightTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//Height/HeightTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//Height/HeightTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//Height/HeightClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//Height/HeightClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//Height/HeightClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//Height/HeightCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//Height/HeightCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//Height/HeightCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//Height/HeightMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//Height/HeightMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//Height/HeightMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//Height/HeightValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//Height/HeightValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//Height/HeightValue/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="vsbr.ecore#//DateofLastLiveBirth">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//DateofLastLiveBirth/DateofLastLiveBirthTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//DateofLastLiveBirth/DateofLastLiveBirthTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//DateofLastLiveBirth/DateofLastLiveBirthTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//DateofLastLiveBirth/DateofLastLiveBirthCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//DateofLastLiveBirth/DateofLastLiveBirthCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//DateofLastLiveBirth/DateofLastLiveBirthCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//DateofLastLiveBirth/DateofLastLiveBirthMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//DateofLastLiveBirth/DateofLastLiveBirthMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//DateofLastLiveBirth/DateofLastLiveBirthMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//DateofLastLiveBirth/DateofLastLiveBirthValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//DateofLastLiveBirth/DateofLastLiveBirthValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//DateofLastLiveBirth/DateofLastLiveBirthValue/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="vsbr.ecore#//LastMenstrualPeriodDate">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//LastMenstrualPeriodDate/LastMenstrualPeriodDateTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//LastMenstrualPeriodDate/LastMenstrualPeriodDateTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//LastMenstrualPeriodDate/LastMenstrualPeriodDateTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//LastMenstrualPeriodDate/LastMenstrualPeriodDateClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//LastMenstrualPeriodDate/LastMenstrualPeriodDateClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//LastMenstrualPeriodDate/LastMenstrualPeriodDateClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//LastMenstrualPeriodDate/LastMenstrualPeriodDateCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//LastMenstrualPeriodDate/LastMenstrualPeriodDateCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//LastMenstrualPeriodDate/LastMenstrualPeriodDateCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//LastMenstrualPeriodDate/LastMenstrualPeriodDateMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//LastMenstrualPeriodDate/LastMenstrualPeriodDateMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//LastMenstrualPeriodDate/LastMenstrualPeriodDateMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//LastMenstrualPeriodDate/LastMenstrualPeriodDateValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//LastMenstrualPeriodDate/LastMenstrualPeriodDateValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//LastMenstrualPeriodDate/LastMenstrualPeriodDateValue/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="vsbr.ecore#//NumberofBirthsStillLiving">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//NumberofBirthsStillLiving/NumberofBirthsStillLivingTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//NumberofBirthsStillLiving/NumberofBirthsStillLivingTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//NumberofBirthsStillLiving/NumberofBirthsStillLivingTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//NumberofBirthsStillLiving/NumberofBirthsStillLivingClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//NumberofBirthsStillLiving/NumberofBirthsStillLivingClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//NumberofBirthsStillLiving/NumberofBirthsStillLivingClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//NumberofBirthsStillLiving/NumberofBirthsStillLivingCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//NumberofBirthsStillLiving/NumberofBirthsStillLivingCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//NumberofBirthsStillLiving/NumberofBirthsStillLivingCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//NumberofBirthsStillLiving/NumberofBirthsStillLivingMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//NumberofBirthsStillLiving/NumberofBirthsStillLivingMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//NumberofBirthsStillLiving/NumberofBirthsStillLivingMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//NumberofBirthsStillLiving/NumberofBirthsStillLivingValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//NumberofBirthsStillLiving/NumberofBirthsStillLivingValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//NumberofBirthsStillLiving/NumberofBirthsStillLivingValue/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="vsbr.ecore#//NumberofLiveBirthsnowDead">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//NumberofLiveBirthsnowDead/NumberofLiveBirthsnowDeadTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//NumberofLiveBirthsnowDead/NumberofLiveBirthsnowDeadTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//NumberofLiveBirthsnowDead/NumberofLiveBirthsnowDeadTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//NumberofLiveBirthsnowDead/NumberofLiveBirthsnowDeadClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//NumberofLiveBirthsnowDead/NumberofLiveBirthsnowDeadClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//NumberofLiveBirthsnowDead/NumberofLiveBirthsnowDeadClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//NumberofLiveBirthsnowDead/NumberofLiveBirthsnowDeadCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//NumberofLiveBirthsnowDead/NumberofLiveBirthsnowDeadCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//NumberofLiveBirthsnowDead/NumberofLiveBirthsnowDeadCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//NumberofLiveBirthsnowDead/NumberofLiveBirthsnowDeadMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//NumberofLiveBirthsnowDead/NumberofLiveBirthsnowDeadMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//NumberofLiveBirthsnowDead/NumberofLiveBirthsnowDeadMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//NumberofLiveBirthsnowDead/NumberofLiveBirthsnowDeadValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//NumberofLiveBirthsnowDead/NumberofLiveBirthsnowDeadValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//NumberofLiveBirthsnowDead/NumberofLiveBirthsnowDeadValue/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="vsbr.ecore#//OtherPregnancyOutcomes">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//OtherPregnancyOutcomes/OtherPregnancyOutcomesTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//OtherPregnancyOutcomes/OtherPregnancyOutcomesTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//OtherPregnancyOutcomes/OtherPregnancyOutcomesTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//OtherPregnancyOutcomes/OtherPregnancyOutcomesClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//OtherPregnancyOutcomes/OtherPregnancyOutcomesClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//OtherPregnancyOutcomes/OtherPregnancyOutcomesClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//OtherPregnancyOutcomes/OtherPregnancyOutcomesCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//OtherPregnancyOutcomes/OtherPregnancyOutcomesCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//OtherPregnancyOutcomes/OtherPregnancyOutcomesCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//OtherPregnancyOutcomes/OtherPregnancyOutcomesMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//OtherPregnancyOutcomes/OtherPregnancyOutcomesMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//OtherPregnancyOutcomes/OtherPregnancyOutcomesMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//OtherPregnancyOutcomes/OtherPregnancyOutcomesValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//OtherPregnancyOutcomes/OtherPregnancyOutcomesValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//OtherPregnancyOutcomes/OtherPregnancyOutcomesValue/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//OtherPregnancyOutcomes/OtherPregnancyOutcomesEffectiveTime">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//OtherPregnancyOutcomes/OtherPregnancyOutcomesEffectiveTime/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//OtherPregnancyOutcomes/OtherPregnancyOutcomesEffectiveTime/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="vsbr.ecore#//BirthReportingInfectionsPresent">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//BirthReportingInfectionsPresent/BirthReportingInfectionsPresentTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//BirthReportingInfectionsPresent/BirthReportingInfectionsPresentTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//BirthReportingInfectionsPresent/BirthReportingInfectionsPresentTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//BirthReportingInfectionsPresent/BirthReportingInfectionsPresentClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//BirthReportingInfectionsPresent/BirthReportingInfectionsPresentClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//BirthReportingInfectionsPresent/BirthReportingInfectionsPresentClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//BirthReportingInfectionsPresent/BirthReportingInfectionsPresentCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//BirthReportingInfectionsPresent/BirthReportingInfectionsPresentCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//BirthReportingInfectionsPresent/BirthReportingInfectionsPresentCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//BirthReportingInfectionsPresent/BirthReportingInfectionsPresentMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//BirthReportingInfectionsPresent/BirthReportingInfectionsPresentMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//BirthReportingInfectionsPresent/BirthReportingInfectionsPresentMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//BirthReportingInfectionsPresent/BirthReportingInfectionsPresentValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//BirthReportingInfectionsPresent/BirthReportingInfectionsPresentValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//BirthReportingInfectionsPresent/BirthReportingInfectionsPresentValue/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="vsbr.ecore#//LaborandDeliverySection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//LaborandDeliverySection/LaborandDeliverySectionTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//LaborandDeliverySection/LaborandDeliverySectionTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//LaborandDeliverySection/LaborandDeliverySectionTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//LaborandDeliverySection/LaborandDeliverySectionClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//LaborandDeliverySection/LaborandDeliverySectionClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//LaborandDeliverySection/LaborandDeliverySectionClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//LaborandDeliverySection/LaborandDeliverySectionCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//LaborandDeliverySection/LaborandDeliverySectionCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//LaborandDeliverySection/LaborandDeliverySectionCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//LaborandDeliverySection/LaborandDeliverySectionMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//LaborandDeliverySection/LaborandDeliverySectionMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//LaborandDeliverySection/LaborandDeliverySectionMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//LaborandDeliverySection/LaborandDeliverySectionText">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//LaborandDeliverySection/LaborandDeliverySectionText/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//LaborandDeliverySection/LaborandDeliverySectionText/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//LaborandDeliverySection/LaborandDeliverySectionLaborandDeliveryInformation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//LaborandDeliverySection/LaborandDeliverySectionLaborandDeliveryInformation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//LaborandDeliverySection/LaborandDeliverySectionLaborandDeliveryInformation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//LaborandDeliverySection/LaborandDeliverySectionBodyWeightatDelivery">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//LaborandDeliverySection/LaborandDeliverySectionBodyWeightatDelivery/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//LaborandDeliverySection/LaborandDeliverySectionBodyWeightatDelivery/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//LaborandDeliverySection/getLaborandDeliveryInformation"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//LaborandDeliverySection/getBodyWeightatDelivery"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="vsbr.ecore#//LaborandDeliveryInformation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//LaborandDeliveryInformation/LaborandDeliveryInformationTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//LaborandDeliveryInformation/LaborandDeliveryInformationTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//LaborandDeliveryInformation/LaborandDeliveryInformationTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//LaborandDeliveryInformation/LaborandDeliveryInformationClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//LaborandDeliveryInformation/LaborandDeliveryInformationClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//LaborandDeliveryInformation/LaborandDeliveryInformationClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//LaborandDeliveryInformation/LaborandDeliveryInformationCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//LaborandDeliveryInformation/LaborandDeliveryInformationCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//LaborandDeliveryInformation/LaborandDeliveryInformationCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//LaborandDeliveryInformation/LaborandDeliveryInformationMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//LaborandDeliveryInformation/LaborandDeliveryInformationMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//LaborandDeliveryInformation/LaborandDeliveryInformationMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//LaborandDeliveryInformation/LaborandDeliveryInformationParticipant">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//LaborandDeliveryInformation/LaborandDeliveryInformationParticipant/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//LaborandDeliveryInformation/LaborandDeliveryInformationParticipant/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//LaborandDeliveryInformation/LaborandDeliveryInformationPerformer">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//LaborandDeliveryInformation/LaborandDeliveryInformationPerformer/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//LaborandDeliveryInformation/LaborandDeliveryInformationPerformer/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//LaborandDeliveryInformation/LaborandDeliveryInformationAttendantParticipation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//LaborandDeliveryInformation/LaborandDeliveryInformationAttendantParticipation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//LaborandDeliveryInformation/LaborandDeliveryInformationAttendantParticipation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//LaborandDeliveryInformation/LaborandDeliveryInformationHomeBirthPlanAssociation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//LaborandDeliveryInformation/LaborandDeliveryInformationHomeBirthPlanAssociation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//LaborandDeliveryInformation/LaborandDeliveryInformationHomeBirthPlanAssociation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//LaborandDeliveryInformation/LaborandDeliveryInformationTransferAssociation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//LaborandDeliveryInformation/LaborandDeliveryInformationTransferAssociation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//LaborandDeliveryInformation/LaborandDeliveryInformationTransferAssociation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//LaborandDeliveryInformation/LaborandDeliveryInformationEntryRelationship">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//LaborandDeliveryInformation/LaborandDeliveryInformationEntryRelationship/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//LaborandDeliveryInformation/LaborandDeliveryInformationEntryRelationship/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//LaborandDeliveryInformation/LaborandDeliveryInformationMaternalMorbidities">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//LaborandDeliveryInformation/LaborandDeliveryInformationMaternalMorbidities/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//LaborandDeliveryInformation/LaborandDeliveryInformationMaternalMorbidities/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//LaborandDeliveryInformation/LaborandDeliveryInformationCharacteristicsofLaborandDelivery">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//LaborandDeliveryInformation/LaborandDeliveryInformationCharacteristicsofLaborandDelivery/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//LaborandDeliveryInformation/LaborandDeliveryInformationCharacteristicsofLaborandDelivery/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//LaborandDeliveryInformation/LaborandDeliveryInformationLaborOnsets">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//LaborandDeliveryInformation/LaborandDeliveryInformationLaborOnsets/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//LaborandDeliveryInformation/LaborandDeliveryInformationLaborOnsets/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//LaborandDeliveryInformation/LaborandDeliveryInformationObstetricProcedures">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//LaborandDeliveryInformation/LaborandDeliveryInformationObstetricProcedures/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//LaborandDeliveryInformation/LaborandDeliveryInformationObstetricProcedures/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//LaborandDeliveryInformation/LaborandDeliveryInformationAttemptedForcepsDelivery">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//LaborandDeliveryInformation/LaborandDeliveryInformationAttemptedForcepsDelivery/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//LaborandDeliveryInformation/LaborandDeliveryInformationAttemptedForcepsDelivery/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//LaborandDeliveryInformation/LaborandDeliveryInformationAttemptedVacuumExtraction">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//LaborandDeliveryInformation/LaborandDeliveryInformationAttemptedVacuumExtraction/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//LaborandDeliveryInformation/LaborandDeliveryInformationAttemptedVacuumExtraction/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//LaborandDeliveryInformation/LaborandDeliveryInformationFetalPresentation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//LaborandDeliveryInformation/LaborandDeliveryInformationFetalPresentation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//LaborandDeliveryInformation/LaborandDeliveryInformationFetalPresentation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//LaborandDeliveryInformation/LaborandDeliveryInformationRouteandMethodofDelivery">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//LaborandDeliveryInformation/LaborandDeliveryInformationRouteandMethodofDelivery/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//LaborandDeliveryInformation/LaborandDeliveryInformationRouteandMethodofDelivery/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//LaborandDeliveryInformation/LaborandDeliveryInformationBodyWeightatDelivery">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//LaborandDeliveryInformation/LaborandDeliveryInformationBodyWeightatDelivery/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//LaborandDeliveryInformation/LaborandDeliveryInformationBodyWeightatDelivery/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//LaborandDeliveryInformation/LaborandDeliveryInformationHysterotomyHysterectomyAssociation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//LaborandDeliveryInformation/LaborandDeliveryInformationHysterotomyHysterectomyAssociation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//LaborandDeliveryInformation/LaborandDeliveryInformationHysterotomyHysterectomyAssociation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//LaborandDeliveryInformation/getMaternalMorbiditiess"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//LaborandDeliveryInformation/getCharacteristicsofLaborandDeliveries"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//LaborandDeliveryInformation/getLaborOnsetss"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//LaborandDeliveryInformation/getObstetricProceduress"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//LaborandDeliveryInformation/getAttemptedForcepsDelivery"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//LaborandDeliveryInformation/getAttemptedVacuumExtraction"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//LaborandDeliveryInformation/getFetalPresentation"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//LaborandDeliveryInformation/getRouteandMethodofDelivery"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//LaborandDeliveryInformation/getBodyWeightatDelivery"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="vsbr.ecore#//MaternalMorbidities">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//MaternalMorbidities/MaternalMorbiditiesTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//MaternalMorbidities/MaternalMorbiditiesTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//MaternalMorbidities/MaternalMorbiditiesTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//MaternalMorbidities/MaternalMorbiditiesClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//MaternalMorbidities/MaternalMorbiditiesClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//MaternalMorbidities/MaternalMorbiditiesClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//MaternalMorbidities/MaternalMorbiditiesCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//MaternalMorbidities/MaternalMorbiditiesCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//MaternalMorbidities/MaternalMorbiditiesCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//MaternalMorbidities/MaternalMorbiditiesMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//MaternalMorbidities/MaternalMorbiditiesMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//MaternalMorbidities/MaternalMorbiditiesMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//MaternalMorbidities/MaternalMorbiditiesValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//MaternalMorbidities/MaternalMorbiditiesValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//MaternalMorbidities/MaternalMorbiditiesValue/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="vsbr.ecore#//CharacteristicsofLaborandDelivery">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//CharacteristicsofLaborandDelivery/CharacteristicsofLaborandDeliveryTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//CharacteristicsofLaborandDelivery/CharacteristicsofLaborandDeliveryTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//CharacteristicsofLaborandDelivery/CharacteristicsofLaborandDeliveryTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//CharacteristicsofLaborandDelivery/CharacteristicsofLaborandDeliveryClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//CharacteristicsofLaborandDelivery/CharacteristicsofLaborandDeliveryClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//CharacteristicsofLaborandDelivery/CharacteristicsofLaborandDeliveryClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//CharacteristicsofLaborandDelivery/CharacteristicsofLaborandDeliveryCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//CharacteristicsofLaborandDelivery/CharacteristicsofLaborandDeliveryCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//CharacteristicsofLaborandDelivery/CharacteristicsofLaborandDeliveryCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//CharacteristicsofLaborandDelivery/CharacteristicsofLaborandDeliveryMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//CharacteristicsofLaborandDelivery/CharacteristicsofLaborandDeliveryMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//CharacteristicsofLaborandDelivery/CharacteristicsofLaborandDeliveryMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//CharacteristicsofLaborandDelivery/CharacteristicsofLaborandDeliveryValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//CharacteristicsofLaborandDelivery/CharacteristicsofLaborandDeliveryValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//CharacteristicsofLaborandDelivery/CharacteristicsofLaborandDeliveryValue/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="vsbr.ecore#//LaborOnsets">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//LaborOnsets/LaborOnsetsTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//LaborOnsets/LaborOnsetsTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//LaborOnsets/LaborOnsetsTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//LaborOnsets/LaborOnsetsClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//LaborOnsets/LaborOnsetsClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//LaborOnsets/LaborOnsetsClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//LaborOnsets/LaborOnsetsCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//LaborOnsets/LaborOnsetsCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//LaborOnsets/LaborOnsetsCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//LaborOnsets/LaborOnsetsMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//LaborOnsets/LaborOnsetsMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//LaborOnsets/LaborOnsetsMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//LaborOnsets/LaborOnsetsValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//LaborOnsets/LaborOnsetsValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//LaborOnsets/LaborOnsetsValue/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="vsbr.ecore#//ObstetricProcedures">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//ObstetricProcedures/ObstetricProceduresTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ObstetricProcedures/ObstetricProceduresTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ObstetricProcedures/ObstetricProceduresTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//ObstetricProcedures/ObstetricProceduresClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ObstetricProcedures/ObstetricProceduresClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ObstetricProcedures/ObstetricProceduresClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//ObstetricProcedures/ObstetricProceduresCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ObstetricProcedures/ObstetricProceduresCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ObstetricProcedures/ObstetricProceduresCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//ObstetricProcedures/ObstetricProceduresMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ObstetricProcedures/ObstetricProceduresMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ObstetricProcedures/ObstetricProceduresMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//ObstetricProcedures/ObstetricProceduresValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ObstetricProcedures/ObstetricProceduresValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ObstetricProcedures/ObstetricProceduresValue/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="vsbr.ecore#//AttemptedForcepsDelivery">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//AttemptedForcepsDelivery/AttemptedForcepsDeliveryTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//AttemptedForcepsDelivery/AttemptedForcepsDeliveryTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//AttemptedForcepsDelivery/AttemptedForcepsDeliveryTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//AttemptedForcepsDelivery/AttemptedForcepsDeliveryClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//AttemptedForcepsDelivery/AttemptedForcepsDeliveryClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//AttemptedForcepsDelivery/AttemptedForcepsDeliveryClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//AttemptedForcepsDelivery/AttemptedForcepsDeliveryCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//AttemptedForcepsDelivery/AttemptedForcepsDeliveryCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//AttemptedForcepsDelivery/AttemptedForcepsDeliveryCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//AttemptedForcepsDelivery/AttemptedForcepsDeliveryMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//AttemptedForcepsDelivery/AttemptedForcepsDeliveryMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//AttemptedForcepsDelivery/AttemptedForcepsDeliveryMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//AttemptedForcepsDelivery/AttemptedForcepsDeliveryValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//AttemptedForcepsDelivery/AttemptedForcepsDeliveryValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//AttemptedForcepsDelivery/AttemptedForcepsDeliveryValue/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="vsbr.ecore#//AttemptedVacuumExtraction">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//AttemptedVacuumExtraction/AttemptedVacuumExtractionTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//AttemptedVacuumExtraction/AttemptedVacuumExtractionTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//AttemptedVacuumExtraction/AttemptedVacuumExtractionTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//AttemptedVacuumExtraction/AttemptedVacuumExtractionClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//AttemptedVacuumExtraction/AttemptedVacuumExtractionClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//AttemptedVacuumExtraction/AttemptedVacuumExtractionClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//AttemptedVacuumExtraction/AttemptedVacuumExtractionCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//AttemptedVacuumExtraction/AttemptedVacuumExtractionCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//AttemptedVacuumExtraction/AttemptedVacuumExtractionCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//AttemptedVacuumExtraction/AttemptedVacuumExtractionMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//AttemptedVacuumExtraction/AttemptedVacuumExtractionMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//AttemptedVacuumExtraction/AttemptedVacuumExtractionMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//AttemptedVacuumExtraction/AttemptedVacuumExtractionValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//AttemptedVacuumExtraction/AttemptedVacuumExtractionValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//AttemptedVacuumExtraction/AttemptedVacuumExtractionValue/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="vsbr.ecore#//FetalPresentation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//FetalPresentation/FetalPresentationTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//FetalPresentation/FetalPresentationTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//FetalPresentation/FetalPresentationTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//FetalPresentation/FetalPresentationClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//FetalPresentation/FetalPresentationClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//FetalPresentation/FetalPresentationClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//FetalPresentation/FetalPresentationCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//FetalPresentation/FetalPresentationCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//FetalPresentation/FetalPresentationCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//FetalPresentation/FetalPresentationMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//FetalPresentation/FetalPresentationMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//FetalPresentation/FetalPresentationMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//FetalPresentation/FetalPresentationValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//FetalPresentation/FetalPresentationValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//FetalPresentation/FetalPresentationValue/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="vsbr.ecore#//RouteandMethodofDelivery">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//RouteandMethodofDelivery/RouteandMethodofDeliveryTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//RouteandMethodofDelivery/RouteandMethodofDeliveryTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//RouteandMethodofDelivery/RouteandMethodofDeliveryTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//RouteandMethodofDelivery/RouteandMethodofDeliveryClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//RouteandMethodofDelivery/RouteandMethodofDeliveryClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//RouteandMethodofDelivery/RouteandMethodofDeliveryClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//RouteandMethodofDelivery/RouteandMethodofDeliveryCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//RouteandMethodofDelivery/RouteandMethodofDeliveryCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//RouteandMethodofDelivery/RouteandMethodofDeliveryCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//RouteandMethodofDelivery/RouteandMethodofDeliveryMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//RouteandMethodofDelivery/RouteandMethodofDeliveryMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//RouteandMethodofDelivery/RouteandMethodofDeliveryMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//RouteandMethodofDelivery/RouteandMethodofDeliveryValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//RouteandMethodofDelivery/RouteandMethodofDeliveryValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//RouteandMethodofDelivery/RouteandMethodofDeliveryValue/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//RouteandMethodofDelivery/RouteandMethodofDeliveryEntryRelationship">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//RouteandMethodofDelivery/RouteandMethodofDeliveryEntryRelationship/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//RouteandMethodofDelivery/RouteandMethodofDeliveryEntryRelationship/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="vsbr.ecore#//BodyWeightatDelivery">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//BodyWeightatDelivery/BodyWeightatDeliveryTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//BodyWeightatDelivery/BodyWeightatDeliveryTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//BodyWeightatDelivery/BodyWeightatDeliveryTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//BodyWeightatDelivery/BodyWeightatDeliveryClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//BodyWeightatDelivery/BodyWeightatDeliveryClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//BodyWeightatDelivery/BodyWeightatDeliveryClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//BodyWeightatDelivery/BodyWeightatDeliveryCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//BodyWeightatDelivery/BodyWeightatDeliveryCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//BodyWeightatDelivery/BodyWeightatDeliveryCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//BodyWeightatDelivery/BodyWeightatDeliveryValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//BodyWeightatDelivery/BodyWeightatDeliveryValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//BodyWeightatDelivery/BodyWeightatDeliveryValue/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="vsbr.ecore#//NewbornSection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//NewbornSection/NewbornSectionTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//NewbornSection/NewbornSectionTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//NewbornSection/NewbornSectionTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//NewbornSection/NewbornSectionClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//NewbornSection/NewbornSectionClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//NewbornSection/NewbornSectionClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//NewbornSection/NewbornSectionCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//NewbornSection/NewbornSectionCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//NewbornSection/NewbornSectionCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//NewbornSection/NewbornSectionMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//NewbornSection/NewbornSectionMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//NewbornSection/NewbornSectionMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//NewbornSection/NewbornSectionText">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//NewbornSection/NewbornSectionText/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//NewbornSection/NewbornSectionText/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//NewbornSection/NewbornSectionSubject">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//NewbornSection/NewbornSectionSubject/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//NewbornSection/NewbornSectionSubject/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//NewbornSection/NewbornSectionEstimateofGestation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//NewbornSection/NewbornSectionEstimateofGestation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//NewbornSection/NewbornSectionEstimateofGestation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//NewbornSection/NewbornSectionApgarScore">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//NewbornSection/NewbornSectionApgarScore/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//NewbornSection/NewbornSectionApgarScore/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//NewbornSection/NewbornSectionPlurality">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//NewbornSection/NewbornSectionPlurality/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//NewbornSection/NewbornSectionPlurality/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//NewbornSection/NewbornSectionBirthOrder">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//NewbornSection/NewbornSectionBirthOrder/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//NewbornSection/NewbornSectionBirthOrder/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//NewbornSection/NewbornSectionNumberofInfantsBornAlive">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//NewbornSection/NewbornSectionNumberofInfantsBornAlive/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//NewbornSection/NewbornSectionNumberofInfantsBornAlive/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//NewbornSection/NewbornSectionCongenitalAnomaliesoftheNewborn">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//NewbornSection/NewbornSectionCongenitalAnomaliesoftheNewborn/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//NewbornSection/NewbornSectionCongenitalAnomaliesoftheNewborn/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//NewbornSection/NewbornSectionWeight">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//NewbornSection/NewbornSectionWeight/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//NewbornSection/NewbornSectionWeight/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//NewbornSection/getEstimateofGestation"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//NewbornSection/getApgarScores"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//NewbornSection/getPlurality"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//NewbornSection/getBirthOrder"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//NewbornSection/getNumberofInfantsBornAlive"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//NewbornSection/getCongenitalAnomaliesoftheNewborns"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//NewbornSection/getWeight"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="vsbr.ecore#//EstimateofGestation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//EstimateofGestation/EstimateofGestationTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//EstimateofGestation/EstimateofGestationTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//EstimateofGestation/EstimateofGestationTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//EstimateofGestation/EstimateofGestationClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//EstimateofGestation/EstimateofGestationClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//EstimateofGestation/EstimateofGestationClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//EstimateofGestation/EstimateofGestationCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//EstimateofGestation/EstimateofGestationCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//EstimateofGestation/EstimateofGestationCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//EstimateofGestation/EstimateofGestationMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//EstimateofGestation/EstimateofGestationMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//EstimateofGestation/EstimateofGestationMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//EstimateofGestation/EstimateofGestationValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//EstimateofGestation/EstimateofGestationValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//EstimateofGestation/EstimateofGestationValue/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="vsbr.ecore#//ApgarScore">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//ApgarScore/ApgarScoreTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ApgarScore/ApgarScoreTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ApgarScore/ApgarScoreTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//ApgarScore/ApgarScoreClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ApgarScore/ApgarScoreClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ApgarScore/ApgarScoreClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//ApgarScore/ApgarScoreCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ApgarScore/ApgarScoreCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ApgarScore/ApgarScoreCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//ApgarScore/ApgarScoreMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ApgarScore/ApgarScoreMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ApgarScore/ApgarScoreMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//ApgarScore/ApgarScoreValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ApgarScore/ApgarScoreValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ApgarScore/ApgarScoreValue/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="vsbr.ecore#//Plurality">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//Plurality/PluralityTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//Plurality/PluralityTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//Plurality/PluralityTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//Plurality/PluralityClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//Plurality/PluralityClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//Plurality/PluralityClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//Plurality/PluralityCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//Plurality/PluralityCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//Plurality/PluralityCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//Plurality/PluralityMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//Plurality/PluralityMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//Plurality/PluralityMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//Plurality/PluralityValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//Plurality/PluralityValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//Plurality/PluralityValue/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="vsbr.ecore#//BirthOrder">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//BirthOrder/BirthOrderTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//BirthOrder/BirthOrderTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//BirthOrder/BirthOrderTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//BirthOrder/BirthOrderClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//BirthOrder/BirthOrderClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//BirthOrder/BirthOrderClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//BirthOrder/BirthOrderCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//BirthOrder/BirthOrderCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//BirthOrder/BirthOrderCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//BirthOrder/BirthOrderCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//BirthOrder/BirthOrderCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//BirthOrder/BirthOrderCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//BirthOrder/BirthOrderMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//BirthOrder/BirthOrderMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//BirthOrder/BirthOrderMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//BirthOrder/BirthOrderValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//BirthOrder/BirthOrderValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//BirthOrder/BirthOrderValue/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="vsbr.ecore#//NumberofInfantsBornAlive">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//NumberofInfantsBornAlive/NumberofInfantsBornAliveTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//NumberofInfantsBornAlive/NumberofInfantsBornAliveTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//NumberofInfantsBornAlive/NumberofInfantsBornAliveTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//NumberofInfantsBornAlive/NumberofInfantsBornAliveClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//NumberofInfantsBornAlive/NumberofInfantsBornAliveClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//NumberofInfantsBornAlive/NumberofInfantsBornAliveClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//NumberofInfantsBornAlive/NumberofInfantsBornAliveCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//NumberofInfantsBornAlive/NumberofInfantsBornAliveCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//NumberofInfantsBornAlive/NumberofInfantsBornAliveCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//NumberofInfantsBornAlive/NumberofInfantsBornAliveMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//NumberofInfantsBornAlive/NumberofInfantsBornAliveMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//NumberofInfantsBornAlive/NumberofInfantsBornAliveMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//NumberofInfantsBornAlive/NumberofInfantsBornAliveValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//NumberofInfantsBornAlive/NumberofInfantsBornAliveValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//NumberofInfantsBornAlive/NumberofInfantsBornAliveValue/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="vsbr.ecore#//CongenitalAnomaliesoftheNewborn">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//CongenitalAnomaliesoftheNewborn/CongenitalAnomaliesoftheNewbornTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//CongenitalAnomaliesoftheNewborn/CongenitalAnomaliesoftheNewbornTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//CongenitalAnomaliesoftheNewborn/CongenitalAnomaliesoftheNewbornTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//CongenitalAnomaliesoftheNewborn/CongenitalAnomaliesoftheNewbornClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//CongenitalAnomaliesoftheNewborn/CongenitalAnomaliesoftheNewbornClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//CongenitalAnomaliesoftheNewborn/CongenitalAnomaliesoftheNewbornClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//CongenitalAnomaliesoftheNewborn/CongenitalAnomaliesoftheNewbornCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//CongenitalAnomaliesoftheNewborn/CongenitalAnomaliesoftheNewbornCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//CongenitalAnomaliesoftheNewborn/CongenitalAnomaliesoftheNewbornCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//CongenitalAnomaliesoftheNewborn/CongenitalAnomaliesoftheNewbornMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//CongenitalAnomaliesoftheNewborn/CongenitalAnomaliesoftheNewbornMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//CongenitalAnomaliesoftheNewborn/CongenitalAnomaliesoftheNewbornMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//CongenitalAnomaliesoftheNewborn/CongenitalAnomaliesoftheNewbornValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//CongenitalAnomaliesoftheNewborn/CongenitalAnomaliesoftheNewbornValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//CongenitalAnomaliesoftheNewborn/CongenitalAnomaliesoftheNewbornValue/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="vsbr.ecore#//Weight">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//Weight/WeightTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//Weight/WeightTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//Weight/WeightTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//Weight/WeightClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//Weight/WeightClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//Weight/WeightClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//Weight/WeightCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//Weight/WeightCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//Weight/WeightCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//Weight/WeightMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//Weight/WeightMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//Weight/WeightMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//Weight/WeightValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//Weight/WeightValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//Weight/WeightValue/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="vsbr.ecore#//FetalDeathReportingPrenatalExperienceSection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//FetalDeathReportingPrenatalExperienceSection/FetalDeathReportingPrenatalExperienceSectionTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//FetalDeathReportingPrenatalExperienceSection/FetalDeathReportingPrenatalExperienceSectionTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//FetalDeathReportingPrenatalExperienceSection/FetalDeathReportingPrenatalExperienceSectionTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//FetalDeathReportingPrenatalExperienceSection/FetalDeathReportingPrenatalExperienceSectionClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//FetalDeathReportingPrenatalExperienceSection/FetalDeathReportingPrenatalExperienceSectionClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//FetalDeathReportingPrenatalExperienceSection/FetalDeathReportingPrenatalExperienceSectionClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//FetalDeathReportingPrenatalExperienceSection/FetalDeathReportingPrenatalExperienceSectionCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//FetalDeathReportingPrenatalExperienceSection/FetalDeathReportingPrenatalExperienceSectionCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//FetalDeathReportingPrenatalExperienceSection/FetalDeathReportingPrenatalExperienceSectionCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//FetalDeathReportingPrenatalExperienceSection/FetalDeathReportingPrenatalExperienceSectionMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//FetalDeathReportingPrenatalExperienceSection/FetalDeathReportingPrenatalExperienceSectionMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//FetalDeathReportingPrenatalExperienceSection/FetalDeathReportingPrenatalExperienceSectionMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//FetalDeathReportingPrenatalExperienceSection/FetalDeathReportingPrenatalExperienceSectionText">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//FetalDeathReportingPrenatalExperienceSection/FetalDeathReportingPrenatalExperienceSectionText/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//FetalDeathReportingPrenatalExperienceSection/FetalDeathReportingPrenatalExperienceSectionText/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//FetalDeathReportingPrenatalExperienceSection/FetalDeathReportingPrenatalExperienceSectionPreNatalCare">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//FetalDeathReportingPrenatalExperienceSection/FetalDeathReportingPrenatalExperienceSectionPreNatalCare/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//FetalDeathReportingPrenatalExperienceSection/FetalDeathReportingPrenatalExperienceSectionPreNatalCare/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//FetalDeathReportingPrenatalExperienceSection/FetalDeathReportingPrenatalExperienceSectionHeight">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//FetalDeathReportingPrenatalExperienceSection/FetalDeathReportingPrenatalExperienceSectionHeight/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//FetalDeathReportingPrenatalExperienceSection/FetalDeathReportingPrenatalExperienceSectionHeight/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//FetalDeathReportingPrenatalExperienceSection/FetalDeathReportingPrenatalExperienceSectionDateofLastLiveBirth">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//FetalDeathReportingPrenatalExperienceSection/FetalDeathReportingPrenatalExperienceSectionDateofLastLiveBirth/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//FetalDeathReportingPrenatalExperienceSection/FetalDeathReportingPrenatalExperienceSectionDateofLastLiveBirth/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//FetalDeathReportingPrenatalExperienceSection/FetalDeathReportingPrenatalExperienceSectionNumberofBirthsStillLiving">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//FetalDeathReportingPrenatalExperienceSection/FetalDeathReportingPrenatalExperienceSectionNumberofBirthsStillLiving/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//FetalDeathReportingPrenatalExperienceSection/FetalDeathReportingPrenatalExperienceSectionNumberofBirthsStillLiving/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//FetalDeathReportingPrenatalExperienceSection/FetalDeathReportingPrenatalExperienceSectionNumberofLiveBirthsnowDead">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//FetalDeathReportingPrenatalExperienceSection/FetalDeathReportingPrenatalExperienceSectionNumberofLiveBirthsnowDead/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//FetalDeathReportingPrenatalExperienceSection/FetalDeathReportingPrenatalExperienceSectionNumberofLiveBirthsnowDead/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//FetalDeathReportingPrenatalExperienceSection/FetalDeathReportingPrenatalExperienceSectionOtherPreganancyOutcomes">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//FetalDeathReportingPrenatalExperienceSection/FetalDeathReportingPrenatalExperienceSectionOtherPreganancyOutcomes/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//FetalDeathReportingPrenatalExperienceSection/FetalDeathReportingPrenatalExperienceSectionOtherPreganancyOutcomes/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//FetalDeathReportingPrenatalExperienceSection/FetalDeathReportingPrenatalExperienceSectionRiskFactor">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//FetalDeathReportingPrenatalExperienceSection/FetalDeathReportingPrenatalExperienceSectionRiskFactor/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//FetalDeathReportingPrenatalExperienceSection/FetalDeathReportingPrenatalExperienceSectionRiskFactor/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//FetalDeathReportingPrenatalExperienceSection/FetalDeathReportingPrenatalExperienceSectionFetalDeathReportingInfectionsPresent">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//FetalDeathReportingPrenatalExperienceSection/FetalDeathReportingPrenatalExperienceSectionFetalDeathReportingInfectionsPresent/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//FetalDeathReportingPrenatalExperienceSection/FetalDeathReportingPrenatalExperienceSectionFetalDeathReportingInfectionsPresent/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//FetalDeathReportingPrenatalExperienceSection/getPreNatalCare"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//FetalDeathReportingPrenatalExperienceSection/getHeight"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//FetalDeathReportingPrenatalExperienceSection/getDateofLastLiveBirth"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//FetalDeathReportingPrenatalExperienceSection/getLastMenstrualPeriodDate"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//FetalDeathReportingPrenatalExperienceSection/getNumberofBirthsStillLiving"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//FetalDeathReportingPrenatalExperienceSection/getNumberofLiveBirthsnowDead"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//FetalDeathReportingPrenatalExperienceSection/getOtherPreganancyOutcomes"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//FetalDeathReportingPrenatalExperienceSection/getRiskFactors"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//FetalDeathReportingPrenatalExperienceSection/getFetalDeathReportingInfectionsPresents"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="vsbr.ecore#//FetalDeathReportingInfectionsPresent">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//FetalDeathReportingInfectionsPresent/FetalDeathReportingInfectionsPresentTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//FetalDeathReportingInfectionsPresent/FetalDeathReportingInfectionsPresentTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//FetalDeathReportingInfectionsPresent/FetalDeathReportingInfectionsPresentTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//FetalDeathReportingInfectionsPresent/FetalDeathReportingInfectionsPresentClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//FetalDeathReportingInfectionsPresent/FetalDeathReportingInfectionsPresentClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//FetalDeathReportingInfectionsPresent/FetalDeathReportingInfectionsPresentClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//FetalDeathReportingInfectionsPresent/FetalDeathReportingInfectionsPresentCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//FetalDeathReportingInfectionsPresent/FetalDeathReportingInfectionsPresentCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//FetalDeathReportingInfectionsPresent/FetalDeathReportingInfectionsPresentCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//FetalDeathReportingInfectionsPresent/FetalDeathReportingInfectionsPresentMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//FetalDeathReportingInfectionsPresent/FetalDeathReportingInfectionsPresentMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//FetalDeathReportingInfectionsPresent/FetalDeathReportingInfectionsPresentMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//FetalDeathReportingInfectionsPresent/FetalDeathReportingInfectionsPresentValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//FetalDeathReportingInfectionsPresent/FetalDeathReportingInfectionsPresentValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//FetalDeathReportingInfectionsPresent/FetalDeathReportingInfectionsPresentValue/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="vsbr.ecore#//FetusSection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//FetusSection/FetusSectionTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//FetusSection/FetusSectionTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//FetusSection/FetusSectionTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//FetusSection/FetusSectionClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//FetusSection/FetusSectionClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//FetusSection/FetusSectionClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//FetusSection/FetusSectionCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//FetusSection/FetusSectionCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//FetusSection/FetusSectionCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//FetusSection/FetusSectionMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//FetusSection/FetusSectionMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//FetusSection/FetusSectionMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//FetusSection/FetusSectionText">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//FetusSection/FetusSectionText/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//FetusSection/FetusSectionText/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//FetusSection/FetusSectionSubject">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//FetusSection/FetusSectionSubject/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//FetusSection/FetusSectionSubject/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//FetusSection/FetusSectionAbnormalConditionsoftheNewborn">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//FetusSection/FetusSectionAbnormalConditionsoftheNewborn/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//FetusSection/FetusSectionAbnormalConditionsoftheNewborn/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//FetusSection/FetusSectionBirthOrder">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//FetusSection/FetusSectionBirthOrder/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//FetusSection/FetusSectionBirthOrder/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//FetusSection/FetusSectionNumberofInfantsBornAlive">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//FetusSection/FetusSectionNumberofInfantsBornAlive/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//FetusSection/FetusSectionNumberofInfantsBornAlive/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//FetusSection/FetusSectionCongenitalAnomaliesoftheNewborn2">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//FetusSection/FetusSectionCongenitalAnomaliesoftheNewborn2/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//FetusSection/FetusSectionCongenitalAnomaliesoftheNewborn2/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//FetusSection/FetusSectionWeight">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//FetusSection/FetusSectionWeight/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//FetusSection/FetusSectionWeight/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//FetusSection/getAbnormalConditionsoftheNewborns"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//FetusSection/getBirthOrder"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//FetusSection/getNumberofInfantsBornAlive"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//FetusSection/getCongenitalAnomaliesoftheNewborn2s"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//FetusSection/getWeight"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="vsbr.ecore#//AbnormalConditionsoftheNewborn">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//AbnormalConditionsoftheNewborn/AbnormalConditionsoftheNewbornTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//AbnormalConditionsoftheNewborn/AbnormalConditionsoftheNewbornTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//AbnormalConditionsoftheNewborn/AbnormalConditionsoftheNewbornTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//AbnormalConditionsoftheNewborn/AbnormalConditionsoftheNewbornClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//AbnormalConditionsoftheNewborn/AbnormalConditionsoftheNewbornClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//AbnormalConditionsoftheNewborn/AbnormalConditionsoftheNewbornClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//AbnormalConditionsoftheNewborn/AbnormalConditionsoftheNewbornCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//AbnormalConditionsoftheNewborn/AbnormalConditionsoftheNewbornCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//AbnormalConditionsoftheNewborn/AbnormalConditionsoftheNewbornCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//AbnormalConditionsoftheNewborn/AbnormalConditionsoftheNewbornMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//AbnormalConditionsoftheNewborn/AbnormalConditionsoftheNewbornMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//AbnormalConditionsoftheNewborn/AbnormalConditionsoftheNewbornMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//AbnormalConditionsoftheNewborn/AbnormalConditionsoftheNewbornValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//AbnormalConditionsoftheNewborn/AbnormalConditionsoftheNewbornValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//AbnormalConditionsoftheNewborn/AbnormalConditionsoftheNewbornValue/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="vsbr.ecore#//ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords/ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords/ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords/ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords/ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords/ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords/ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords/ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords/ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords/ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords/ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsConfidentialityCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords/ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsConfidentialityCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords/ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsConfidentialityCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords/ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsConfidentialityCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords/ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsConfidentialityCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords/ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsConfidentialityCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords/ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEffectiveTime">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords/ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEffectiveTime/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords/ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEffectiveTime/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords/ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords/ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords/ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords/ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsLanguageCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords/ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsLanguageCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords/ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsLanguageCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords/ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords/ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords/ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords/ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsRealmCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords/ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsRealmCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords/ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsRealmCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords/ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsRealmCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords/ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsRealmCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords/ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsRealmCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords/ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsTitle">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords/ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsTitle/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords/ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsTitle/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords/ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsAuthor">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords/ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsAuthor/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords/ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsAuthor/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords/ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsCustodian">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords/ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsCustodian/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords/ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsCustodian/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords/ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsRecordTarget">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords/ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsRecordTarget/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords/ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsRecordTarget/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords/ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsFetalDeathReportingPrenatalExperienceSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords/ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsFetalDeathReportingPrenatalExperienceSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords/ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsFetalDeathReportingPrenatalExperienceSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords/ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsLaborandDeliverySection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords/ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsLaborandDeliverySection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords/ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsLaborandDeliverySection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords/ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsFetusSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords/ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsFetusSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords/ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsFetusSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords/getFetalDeathReportingPrenatalExperienceSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords/getLaborandDeliverySection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords/getFetusSection"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="vsbr.ecore#//PrepregnancyBodyWeight">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//PrepregnancyBodyWeight/PrepregnancyBodyWeightTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//PrepregnancyBodyWeight/PrepregnancyBodyWeightTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//PrepregnancyBodyWeight/PrepregnancyBodyWeightTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//PrepregnancyBodyWeight/PrepregnancyBodyWeightClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//PrepregnancyBodyWeight/PrepregnancyBodyWeightClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//PrepregnancyBodyWeight/PrepregnancyBodyWeightClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//PrepregnancyBodyWeight/PrepregnancyBodyWeightCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//PrepregnancyBodyWeight/PrepregnancyBodyWeightCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//PrepregnancyBodyWeight/PrepregnancyBodyWeightCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//PrepregnancyBodyWeight/PrepregnancyBodyWeightMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//PrepregnancyBodyWeight/PrepregnancyBodyWeightMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//PrepregnancyBodyWeight/PrepregnancyBodyWeightMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//PrepregnancyBodyWeight/PrepregnancyBodyWeightValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//PrepregnancyBodyWeight/PrepregnancyBodyWeightValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//PrepregnancyBodyWeight/PrepregnancyBodyWeightValue/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="vsbr.ecore#//RiskFactors">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//RiskFactors/RiskFactorsTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//RiskFactors/RiskFactorsTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//RiskFactors/RiskFactorsTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//RiskFactors/RiskFactorsClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//RiskFactors/RiskFactorsClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//RiskFactors/RiskFactorsClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//RiskFactors/RiskFactorsCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//RiskFactors/RiskFactorsCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//RiskFactors/RiskFactorsCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//RiskFactors/RiskFactorsMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//RiskFactors/RiskFactorsMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//RiskFactors/RiskFactorsMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//RiskFactors/RiskFactorsValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//RiskFactors/RiskFactorsValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//RiskFactors/RiskFactorsValue/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//RiskFactors/RiskFactorsEntryRelationship">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//RiskFactors/RiskFactorsEntryRelationship/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//RiskFactors/RiskFactorsEntryRelationship/context"/>
+      </genOperations>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
