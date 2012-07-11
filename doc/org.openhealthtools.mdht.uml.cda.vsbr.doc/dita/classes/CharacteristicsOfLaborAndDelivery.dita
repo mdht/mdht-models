@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Characteristics of Labor and Delivery</title>
+<shortdesc conref="generated/_CharacteristicsOfLaborAndDelivery.dita#classId/shortdesc"></shortdesc>
+<prolog conref="generated/_CharacteristicsOfLaborAndDelivery.dita#classId/prolog"></prolog>
+<body>
+<section conref="generated/_CharacteristicsOfLaborAndDelivery.dita#classId/knownSubclasses">
+</section>
+<!-- TODO: insert non-model class description markup here -->
+<section conref="generated/_CharacteristicsOfLaborAndDelivery.dita#classId/description">
+</section>
+<!-- TODO: insert UML class diagram here -->
+
+<ol audience="standards" conref="generated/_CharacteristicsOfLaborAndDelivery.dita#classId/conformance">
+<li></li>
+</ol>
+<ol audience="developer" conref="generated/_CharacteristicsOfLaborAndDelivery.dita#classId/aggregate">
+<li></li>
+</ol>
+<p> </p>
+<p><b>Characteristics of Labor and Delivery example</b></p>
+<!-- TODO: insert custom instance example here -->
+<!-- generated instance example follows -->
+<codeblock conref="generated/_CharacteristicsOfLaborAndDelivery.dita#classId/example">
+</codeblock>
+</body>
+</topic>

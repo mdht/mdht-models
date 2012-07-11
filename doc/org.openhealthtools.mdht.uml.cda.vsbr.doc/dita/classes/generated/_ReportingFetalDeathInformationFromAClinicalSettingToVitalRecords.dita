@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Reporting Fetal Death Information from a clinical setting to vital records - conformance rules</title>
+<shortdesc id="shortdesc">[ClinicalDocument: templateId <tt>2.16.840.1.113883.10.20.26.2</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>ClinicalDocument</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.26.2"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+<p><lines><i>The document definition captures the information represented on the US Facility Worksheet for the Live Birth Certificate, which is used to record and register the birth of a child.  In the United States, registration of vital events is the responsibility of 57 vital records jurisdictions representing 50 states, 5 territories, Washington, DC and New York City.  Vital statistics are reported to the National Center for Health Statistics, a Center within the Centers for Disease Control and Prevention (CDC).  The experience of state and federal vital records officials has been drawn on for the contents of the document.
+
+The collection of birth event data is required whether the birth takes place in a facility, at home (planned or unplanned), or en route to a facility.</i></lines></p>
+</section>
+<ol id="conformance">
+<li>Contains zero or one [0..1] <tt><b>@classCode</b>="DOCCLIN" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+<ul><li><p><lines><i>The code value indicates this is a clincial document.</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+<ul><li><p><lines><i>The value indicates the included information refers to an existing document - as opposed to an intended one.</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+<ul><li><p><lines><i>The value provided indicates that the document is a live birth report.</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>confidentialityCode</b></tt>, where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.11.3883.5.25 Confidentiality</tt>)
+<ul><li><p><lines><i>An indication of the level of confidentiality with which the document needs to be managed.</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt>
+<ul><li><p><lines><i>The point in time the document was created at.</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt>
+<ul><li><p><lines><i>Provide the identifier assigned to the document by the healthcare provider acting as a custodian of the
+information.</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>languageCode</b></tt>
+<ul><li><p><lines><i>The language used for recording information within the document.</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>realmCode</b></tt><tt><b>/@code</b>="US" </tt> (CodeSystem:<tt> 1.0.3166.1 Country (ISO 3166-1)</tt>)
+<ul><li><p><lines><i>The realm that the document is relevant for.  This specification is a US realm product.</i></lines></p></li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>title</b></tt>
+<ul><li><p><lines><i>A text title for the document.</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>author</b></tt> <ol><li> This author Contains exactly one [1..1] <tt><b>@typeCode</b>="AUT" </tt></li><li> This author <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedAuthor</b></tt> <ol><li> This assignedAuthor <b>SHOULD</b> contain zero or one [0..1] <tt><b>id</b></tt><p><lines><i>An identifier for the author of the live birth report.  Normally this is the certifying clinician.</i></lines></p></li><li> This assignedAuthor <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedPerson</b></tt></li></ol> </li></ol>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>custodian</b></tt> <ol><li> This custodian <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="CST" </tt></li></ol>
+</li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>recordTarget</b></tt> <ol><li> This recordTarget <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="RCT" </tt></li><li> This recordTarget <b>SHALL</b> contain exactly one [1..1] <tt><b>patientRole</b></tt> <ol><li> This patientRole <b>SHALL</b> contain zero or one [0..1] <tt><b>@classCode</b>="PAT" </tt></li><li> This patientRole <b>SHOULD</b> contain zero or more [0..*] <tt><b>addr</b></tt><p><lines><i>The current postal address for the mother.</i></lines></p></li><li> This patientRole <b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt><p><lines><i>The medical record number assigned to the mother by the health care facility.</i></lines></p></li><li> This patientRole Contains zero or one [0..1] <tt><b>patient</b></tt> with data type <xref href="../Patient.dita">Patient</xref></li></ol> </li></ol>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../FetalDeathReportingPrenatalExperienceSection.dita">Fetal Death Reporting - Prenatal Experience Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.4</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../LaborAndDeliverySection.dita">Labor and Delivery Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.5</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../FetusSection.dita">Fetus Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.7</tt>)</li></ol></li>
+</ol>
+<ol id="aggregate">
+<li>Contains zero or one [0..1] <tt><b>@classCode</b>="DOCCLIN" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+<ul><li><p><lines><i>The code value indicates this is a clincial document.</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+<ul><li><p><lines><i>The value indicates the included information refers to an existing document - as opposed to an intended one.</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>realmCode</b></tt><tt><b>/@code</b>="US" </tt> (CodeSystem:<tt> 1.0.3166.1 Country (ISO 3166-1)</tt>)
+<ul><li><p><lines><i>The realm that the document is relevant for.  This specification is a US realm product.</i></lines></p></li></ul></li>
+<li>Contains exactly one [1..1] <tt><b>typeId</b></tt> with data type <xref href="../InfrastructureRootTypeId.dita">Infrastructure Root Type Id</xref>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt>
+<ul><li><p><lines><i>Provide the identifier assigned to the document by the healthcare provider acting as a custodian of the
+information.</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>)
+<ul><li><p><lines><i>The value provided indicates that the document is a live birth report.</i></lines></p></li></ul></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>title</b></tt>
+<ul><li><p><lines><i>A text title for the document.</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>effectiveTime</b></tt>
+<ul><li><p><lines><i>The point in time the document was created at.</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>confidentialityCode</b></tt>, where the @code <b>SHALL</b> be selected from (CodeSystem:<tt> 2.16.840.1.11.3883.5.25 Confidentiality</tt>)
+<ul><li><p><lines><i>An indication of the level of confidentiality with which the document needs to be managed.</i></lines></p></li></ul></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>languageCode</b></tt>
+<ul><li><p><lines><i>The language used for recording information within the document.</i></lines></p></li></ul></li>
+<li>Contains exactly one [1..1] <tt><b>component</b></tt>, where its type is <xref href="../Component2.dita">Component2</xref>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../Component2.dita">Component2</xref></li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>author</b></tt> <ol><li> This author Contains exactly one [1..1] <tt><b>@typeCode</b>="AUT" </tt></li><li> This author <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedAuthor</b></tt> <ol><li> This assignedAuthor <b>SHOULD</b> contain zero or one [0..1] <tt><b>id</b></tt><p><lines><i>An identifier for the author of the live birth report.  Normally this is the certifying clinician.</i></lines></p></li><li> This assignedAuthor <b>SHALL</b> contain exactly one [1..1] <tt><b>assignedPerson</b></tt></li></ol> </li></ol>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>custodian</b></tt> <ol><li> This custodian <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="CST" </tt></li></ol>
+</li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>recordTarget</b></tt> <ol><li> This recordTarget <b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="RCT" </tt></li><li> This recordTarget <b>SHALL</b> contain exactly one [1..1] <tt><b>patientRole</b></tt> <ol><li> This patientRole <b>SHALL</b> contain zero or one [0..1] <tt><b>@classCode</b>="PAT" </tt></li><li> This patientRole <b>SHOULD</b> contain zero or more [0..*] <tt><b>addr</b></tt><p><lines><i>The current postal address for the mother.</i></lines></p></li><li> This patientRole <b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt><p><lines><i>The medical record number assigned to the mother by the health care facility.</i></lines></p></li><li> This patientRole Contains zero or one [0..1] <tt><b>patient</b></tt> with data type <xref href="../Patient.dita">Patient</xref></li></ol> </li></ol>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../FetalDeathReportingPrenatalExperienceSection.dita">Fetal Death Reporting - Prenatal Experience Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.4</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../LaborAndDeliverySection.dita">Labor and Delivery Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.5</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../FetusSection.dita">Fetus Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.26.7</tt>)</li></ol></li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >vsbr::Reporting Fetal Death Information from a clinical setting to vital records</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::clinicaldocument[cda:templateId/@root = 2.16.840.1.113883.10.20.26.2]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>ActClinicalDocument</entry><entry></entry><entry> DOCCLIN</entry></row> 
+<row><entry>moodCode</entry><entry>@moodCode</entry><entry>0..1</entry><entry>SHALL</entry><entry>NO</entry><entry>ActMood</entry><entry></entry><entry> EVN</entry></row> 
+<row><entry>nullFlavor</entry><entry>@nullFlavor</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>NullFlavor</entry><entry></entry><entry> ASKU</entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry></entry><entry>LOINC 2.16.840.1.113883.6.1 null</entry></row> 
+<row><entry>confidentialityCode</entry><entry>confidentialityCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry></entry><entry>Confidentiality 2.16.840.1.11.3883.5.25 </entry></row> 
+<row><entry>copyTime</entry><entry>copyTime</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>TS</entry><entry></entry><entry> </entry></row> 
+<row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>TS</entry><entry></entry><entry> </entry></row> 
+<row><entry>id</entry><entry>id</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>II</entry><entry></entry><entry> </entry></row> 
+<row><entry>languageCode</entry><entry>languageCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
+<row><entry>realmCode</entry><entry>realmCode</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CS</entry><entry></entry><entry>Country (ISO 3166-1) 1.0.3166.1 </entry></row> 
+<row><entry>setId</entry><entry>setId</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> </entry></row> 
+<row><entry>templateId</entry><entry>templateId</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> 2.16.840.1.113883.10.20.26.2</entry></row> 
+<row><entry>title</entry><entry>title</entry><entry>0..1</entry><entry>MAY</entry><entry>YES</entry><entry>ST</entry><entry></entry><entry> </entry></row> 
+<row><entry>versionNumber</entry><entry>versionNumber</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>INT</entry><entry></entry><entry> </entry></row> 
+<row><entry>authenticator</entry><entry>authenticator</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Authenticator</entry><entry></entry><entry> </entry></row> 
+<row><entry>author</entry><entry>author</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Author</entry><entry></entry><entry> </entry></row> 
+<row><entry>authorization</entry><entry>authorization</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Authorization</entry><entry></entry><entry> </entry></row> 
+<row><entry>component</entry><entry>component</entry><entry>1..1</entry><entry></entry><entry>YES</entry><entry>Component2</entry><entry></entry><entry> </entry></row> 
+<row><entry>componentOf</entry><entry>componentOf</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>Component1</entry><entry></entry><entry> </entry></row> 
+<row><entry>custodian</entry><entry>custodian</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Custodian</entry><entry></entry><entry> </entry></row> 
+<row><entry>dataEnterer</entry><entry>dataEnterer</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>DataEnterer</entry><entry></entry><entry> </entry></row> 
+<row><entry>documentationOf</entry><entry>documentationOf</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>DocumentationOf</entry><entry></entry><entry> </entry></row> 
+<row><entry>fetal Death Reporting - Prenatal Experience Section</entry><entry>fetal Death Reporting - Prenatal Experience Section</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Fetal Death Reporting - Prenatal Experience Section</entry><entry></entry><entry> </entry></row> 
+<row><entry>fetus Section</entry><entry>fetus Section</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Fetus Section</entry><entry></entry><entry> </entry></row> 
+<row><entry>informant</entry><entry>informant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Informant12</entry><entry></entry><entry> </entry></row> 
+<row><entry>informationRecipient</entry><entry>informationRecipient</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>InformationRecipient</entry><entry></entry><entry> </entry></row> 
+<row><entry>inFulfillmentOf</entry><entry>inFulfillmentOf</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>InFulfillmentOf</entry><entry></entry><entry> </entry></row> 
+<row><entry>labor and Delivery Section</entry><entry>labor and Delivery Section</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>Labor and Delivery Section</entry><entry></entry><entry> </entry></row> 
+<row><entry>legalAuthenticator</entry><entry>legalAuthenticator</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>LegalAuthenticator</entry><entry></entry><entry> </entry></row> 
+<row><entry>participant</entry><entry>participant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Participant1</entry><entry></entry><entry> </entry></row> 
+<row><entry>recordTarget</entry><entry>recordTarget</entry><entry>0..1</entry><entry>SHALL</entry><entry>YES</entry><entry>RecordTarget</entry><entry></entry><entry> </entry></row> 
+<row><entry>relatedDocument</entry><entry>relatedDocument</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>RelatedDocument</entry><entry></entry><entry> </entry></row> 
+<row><entry>typeId</entry><entry>typeId</entry><entry>1..1</entry><entry></entry><entry>YES</entry><entry>InfrastructureRootTypeId</entry><entry></entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="DOCCLIN">
+  <realmCode code="Code forrealmCode"/>
+  <typeId root="2.16.840.1.113883.1.3"/>
+  <templateId root="2.16.840.1.113883.10.20.26.2"/>
+  <id root="MDHT" extension="1512565177"/>
+  <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+  <title>TEXT FOR TITLE</title>
+  <effectiveTime/>
+  <confidentialityCode code="1304369991"/>
+  <languageCode code="Code forlanguageCode"/>
+  <recordTarget typeCode="RCT">
+    <patientRole classCode="PAT">
+      <id root="MDHT" extension="214837595"/>
+      <addr/>
+    </patientRole>
+  </recordTarget>
+  <author typeCode="AUT">
+    <time/>
+    <assignedAuthor>
+      <id root="MDHT" extension="1565975230"/>
+      <assignedPerson/>
+    </assignedAuthor>
+  </author>
+  <custodian typeCode="CST">
+    <assignedCustodian/>
+  </custodian>
+  <component>
+    <structuredBody>
+      <component>
+        <section/>
+      </component>
+      <component>
+        <section/>
+      </component>
+      <component>
+        <section classCode="DOCSECT" moodCode="EVN">
+          <realmCode code="Code forrealmCode"/>
+          <templateId root="2.16.840.1.113883.10.20.26.7"/>
+          <id root="MDHT" extension="1074859845"/>
+          <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+          <title>TEXT FOR TITLE</title>
+          <confidentialityCode code="683986205"/>
+          <languageCode code="Code forlanguageCode"/>
+          <subject/>
+          <entry>
+            <observation/>
+          </entry>
+          <entry>
+            <observation classCode="OBS">
+              <realmCode code="Code forrealmCode"/>
+              <templateId root="2.16.840.1.113883.10.20.26.12"/>
+              <id root="MDHT" extension="1425732118"/>
+              <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+              <effectiveTime>
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+              <languageCode code="Code forlanguageCode"/>
+            </observation>
+          </entry>
+          <entry>
+            <observation/>
+          </entry>
+          <entry>
+            <observation/>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <realmCode code="Code forrealmCode"/>
+              <templateId root="2.16.840.1.113883.10.20.26.36"/>
+              <id root="MDHT" extension="1164171262"/>
+              <code code="1589030696"/>
+              <effectiveTime>
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+              <languageCode code="Code forlanguageCode"/>
+            </observation>
+          </entry>
+        </section>
+      </component>
+    </structuredBody>
+  </component>
+</ClinicalDocument>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Reporting Fetal Death Information from a clinical setting to vital records</ph></p>
+<p id="shortdesc">[ClinicalDocument: templateId <tt>2.16.840.1.113883.10.20.26.2</tt>]</p>
+</body>
+</topic>

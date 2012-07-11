@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Labor & Delivery Characteristics</title>
+<prolog id="prolog">
+<resourceid id="not specified"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table><tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>Labor & Delivery Characteristics - (OID not specified)</entry></row>
+</tbody></tgroup></table>
+<table><tgroup cols="4">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="2*"/>
+<colspec colname="col3" colwidth="1*"/>
+<colspec colname="col4" colwidth="3*"/>
+<thead><row>
+<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
+</row></thead><tbody>
+<row><entry>IL</entry><entry>Induction of Labor</entry><entry></entry><entry></entry></row>
+<row><entry>AL</entry><entry>Augmentation of Labor</entry><entry></entry><entry></entry></row>
+<row><entry>NVP</entry><entry>Non-vertex Presentation</entry><entry></entry><entry></entry></row>
+<row><entry>STU</entry><entry>Use of Steroids</entry><entry></entry><entry></entry></row>
+<row><entry>ANU</entry><entry>Use of Antibiotics</entry><entry></entry><entry></entry></row>
+<row><entry>CH</entry><entry>Chorioamnionitis</entry><entry></entry><entry></entry></row>
+<row><entry>NewCode</entry><entry></entry><entry></entry><entry></entry></row>
+<row><entry>MC</entry><entry>Meconium staining</entry><entry></entry><entry></entry></row>
+<row><entry>FI</entry><entry>Fetal intolerance</entry><entry></entry><entry></entry></row>
+<row><entry>ANES</entry><entry>Anesthesia</entry><entry></entry><entry></entry></row>
+<row><entry>NONE</entry><entry>None of the cited characteristics</entry><entry></entry><entry></entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>
