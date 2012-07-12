@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" classCode="DOCCLIN" moodCode="EVN">
+  <realmCode/>
+  <typeId root="2.16.840.1.113883.1.3"/>
+  <templateId root="2.16.840.1.113883.10.20.24.1"/>
+  <id root="764849994"/>
+  <code code="LOINC TBD" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+  <title> Reporting Death Information from a Clinical Setting </title>
+  <effectiveTime/>
+  <confidentialityCode codeSystem="2.16.840.1.11.3883.5.25" codeSystemName="Confidentiality"/>
+  <languageCode/>
+  <recordTarget typeCode="RCT">
+    <patientRole classCode="PAT">
+      <id root="1693095598"/>
+      <addr/>
+      <patient classCode="PSN" determinerCode="INSTANCE">
+        <name/>
+        <administrativeGenderCode codeSystem="2.16.840.1.113883.5.1" codeSystemName="AdministrativeGenderCode"/>
+        <birthTime/>
+      </patient>
+    </patientRole>
+  </recordTarget>
+  <author typeCode="AUT">
+    <time/>
+    <assignedAuthor classCode="ASSIGNED">
+      <id root="1841409819"/>
+      <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+        <name/>
+      </assignedPerson>
+    </assignedAuthor>
+  </author>
+  <custodian>
+    <assignedCustodian>
+      <representedCustodianOrganization>
+        <id root="414283016"/>
+        <name/>
+      </representedCustodianOrganization>
+    </assignedCustodian>
+  </custodian>
+  <component>
+    <structuredBody>
+      <component>
+        <section>
+          <realmCode/>
+          <templateId root="2.16.840.1.113883.10.20.24.1.2"/>
+          <id root="375189674"/>
+          <code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+          <title/>
+          <confidentialityCode code="Value"/>
+          <languageCode/>
+          <author typeCode="AUT">
+            <time/>
+            <assignedAuthor classCode="ASSIGNED">
+              <id root="1877511049"/>
+              <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+                <name/>
+              </assignedPerson>
+            </assignedAuthor>
+          </author>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <realmCode/>
+              <templateId root="2.16.840.1.113883.10.20.24.1.3"/>
+              <id root="405639908"/>
+              <code code="31211-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Date of Death"/>
+              <effectiveTime>
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+              <languageCode/>
+              <author typeCode="AUT">
+                <time/>
+                <assignedAuthor classCode="ASSIGNED">
+                  <id root="889699233"/>
+                  <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+                    <name/>
+                  </assignedPerson>
+                </assignedAuthor>
+              </author>
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <realmCode/>
+              <templateId root="2.16.840.1.113883.10.20.24.1.4"/>
+              <id root="679945207"/>
+              <code code="LOINC TBD" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Location of Death"/>
+              <effectiveTime>
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+              <languageCode/>
+              <author typeCode="AUT">
+                <time/>
+                <assignedAuthor classCode="ASSIGNED">
+                  <id root="1674959210"/>
+                  <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+                    <name/>
+                  </assignedPerson>
+                </assignedAuthor>
+              </author>
+            </observation>
+          </entry>
+          <entry>
+            <observation>
+              <realmCode/>
+              <templateId root="2.16.840.1.113883.10.20.24.1.5"/>
+              <id root="321854388"/>
+              <code code="LOINC TBD" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Death Certified"/>
+              <effectiveTime>
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+              <languageCode/>
+              <author typeCode="AUT">
+                <time/>
+                <assignedAuthor classCode="ASSIGNED">
+                  <id root="203334152"/>
+                  <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+                    <name/>
+                  </assignedPerson>
+                </assignedAuthor>
+              </author>
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <realmCode/>
+              <templateId root="2.16.840.1.113883.10.20.24.1.7"/>
+              <id root="1822817467"/>
+              <code code="LOINC TBD" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Manner of Death"/>
+              <effectiveTime>
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+              <languageCode/>
+              <author typeCode="AUT">
+                <time/>
+                <assignedAuthor classCode="ASSIGNED">
+                  <id root="1017791836"/>
+                  <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+                    <name/>
+                  </assignedPerson>
+                </assignedAuthor>
+              </author>
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <realmCode/>
+              <templateId root="2.16.840.1.113883.10.20.24.1.8"/>
+              <id root="530998967"/>
+              <code code="11449-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Pregnancy Status"/>
+              <effectiveTime>
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+              <languageCode/>
+              <author typeCode="AUT">
+                <time/>
+                <assignedAuthor classCode="ASSIGNED">
+                  <id root="2093663467"/>
+                  <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+                    <name/>
+                  </assignedPerson>
+                </assignedAuthor>
+              </author>
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <realmCode/>
+              <templateId root="2.16.840.1.113883.10.20.24.1.9"/>
+              <id root="1547186934"/>
+              <code code="LOINC TBD" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Tobacco Use"/>
+              <effectiveTime>
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+              <languageCode/>
+              <author typeCode="AUT">
+                <time/>
+                <assignedAuthor classCode="ASSIGNED">
+                  <id root="1559218081"/>
+                  <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+                    <name/>
+                  </assignedPerson>
+                </assignedAuthor>
+              </author>
+            </observation>
+          </entry>
+          <entry>
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <realmCode/>
+              <templateId root="2.16.840.1.113883.10.20.24.1.10"/>
+              <id root="93958518"/>
+              <code code="LOINC TBD" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Injury Cluster"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+              <author typeCode="AUT">
+                <time/>
+                <assignedAuthor classCode="ASSIGNED">
+                  <id root="2081617498"/>
+                  <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+                    <name/>
+                  </assignedPerson>
+                </assignedAuthor>
+              </author>
+            </organizer>
+          </entry>
+          <entry>
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <realmCode/>
+              <templateId root="2.16.840.1.113883.10.20.24.1.6"/>
+              <id root="1342073676"/>
+              <code code="LOINC TBD" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Cause Of Death Cluster"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+              <author typeCode="AUT">
+                <time/>
+                <assignedAuthor classCode="ASSIGNED">
+                  <id root="1190717589"/>
+                  <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+                    <name/>
+                  </assignedPerson>
+                </assignedAuthor>
+              </author>
+            </organizer>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <realmCode/>
+              <templateId root="2.16.840.1.113883.10.20.24.1.11"/>
+              <id root="99193947"/>
+              <code code="21986-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Autopsy Status"/>
+              <effectiveTime>
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+              <languageCode/>
+              <author typeCode="AUT">
+                <time/>
+                <assignedAuthor classCode="ASSIGNED">
+                  <id root="712885511"/>
+                  <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+                    <name/>
+                  </assignedPerson>
+                </assignedAuthor>
+              </author>
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <realmCode/>
+              <templateId root="2.16.840.1.113883.10.20.24.1.13"/>
+              <id root="1535121548"/>
+              <code code="LOINC TBD" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Autopsy Result Availability"/>
+              <effectiveTime>
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+              <languageCode/>
+              <author typeCode="AUT">
+                <time/>
+                <assignedAuthor classCode="ASSIGNED">
+                  <id root="2137090181"/>
+                  <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+                    <name/>
+                  </assignedPerson>
+                </assignedAuthor>
+              </author>
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <realmCode/>
+              <templateId root="2.16.840.1.113883.10.20.24.1.14"/>
+              <id root="295030701"/>
+              <code code="LOINC TBD" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Coroner Referral Reason"/>
+              <effectiveTime>
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+              <languageCode/>
+              <author typeCode="AUT">
+                <time/>
+                <assignedAuthor classCode="ASSIGNED">
+                  <id root="331114069"/>
+                  <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+                    <name/>
+                  </assignedPerson>
+                </assignedAuthor>
+              </author>
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <realmCode/>
+              <templateId root="2.16.840.1.113883.10.20.24.1.12"/>
+              <id root="1711884102"/>
+              <code code="LOINC TBD" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Coroner Assignment"/>
+              <effectiveTime>
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+              <languageCode/>
+              <author typeCode="AUT">
+                <time/>
+                <assignedAuthor classCode="ASSIGNED">
+                  <id root="161694691"/>
+                  <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+                    <name/>
+                  </assignedPerson>
+                </assignedAuthor>
+              </author>
+            </observation>
+          </entry>
+          <entry>
+            <observation>
+              <realmCode/>
+              <id root="1829439237"/>
+              <code code="119157788"/>
+              <effectiveTime>
+                <low value="2012"/>
+                <high value="2012"/>
+              </effectiveTime>
+              <languageCode/>
+              <author typeCode="AUT">
+                <time/>
+                <assignedAuthor classCode="ASSIGNED">
+                  <id root="442508084"/>
+                  <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+                    <name/>
+                  </assignedPerson>
+                </assignedAuthor>
+              </author>
+            </observation>
+          </entry>
+        </section>
+      </component>
+    </structuredBody>
+  </component>
+</ClinicalDocument>
