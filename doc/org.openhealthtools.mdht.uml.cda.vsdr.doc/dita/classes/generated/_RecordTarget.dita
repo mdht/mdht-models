@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Record Target - conformance rules</title>
+<shortdesc id="shortdesc">[RecordTarget: templateId <tt>null</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>RecordTarget</category></metadata>
+<resourceid id="null"/>
+</prolog>
+<body>
+<section id="description">
+<p>INLINE</p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="RCT" </tt>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>patientRole</b></tt> <ol><li> This patientRole <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="PAT" </tt></li><li> This patientRole <b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt><p><i>.   It is expected that Social Security Number will be provided if it is available.  .   The value "99999999" should be used for persons who do not have a social security number.</i></p></li><li> This patientRole <b>SHOULD</b> contain exactly one [1..1] <tt><b>addr</b></tt><p><i>Street address, city, state and zip code are expected.</i></p></li><li> This patientRole <b>SHALL</b> contain exactly one [1..1] <tt><b>patient</b></tt> <ol><li> This patient <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="PSN" </tt></li><li> This patient <b>SHALL</b> contain exactly one [1..1] <tt><b>@determinerCode</b>="INSTANCE" </tt></li><li> This patient <b>SHALL</b> contain exactly one [1..1] <tt><b>administrativeGenderCode</b></tt> (CodeSystem:<tt> 2.16.840.1.113883.5.1 AdministrativeGenderCode</tt>)</li><li> This patient <b>SHOULD</b> contain exactly one [1..1] <tt><b>birthTime</b></tt></li><li> This patient <b>SHALL</b> contain exactly one [1..1] <tt><b>name</b></tt></li></ol> </li></ol> 
+</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@typeCode</b>="RCT" </tt>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>patientRole</b></tt> <ol><li> This patientRole <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="PAT" </tt></li><li> This patientRole <b>SHALL</b> contain exactly one [1..1] <tt><b>id</b></tt><p><i>.   It is expected that Social Security Number will be provided if it is available.  .   The value "99999999" should be used for persons who do not have a social security number.</i></p></li><li> This patientRole <b>SHOULD</b> contain exactly one [1..1] <tt><b>addr</b></tt><p><i>Street address, city, state and zip code are expected.</i></p></li><li> This patientRole <b>SHALL</b> contain exactly one [1..1] <tt><b>patient</b></tt> <ol><li> This patient <b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="PSN" </tt></li><li> This patient <b>SHALL</b> contain exactly one [1..1] <tt><b>@determinerCode</b>="INSTANCE" </tt></li><li> This patient <b>SHALL</b> contain exactly one [1..1] <tt><b>administrativeGenderCode</b></tt> (CodeSystem:<tt> 2.16.840.1.113883.5.1 AdministrativeGenderCode</tt>)</li><li> This patient <b>SHOULD</b> contain exactly one [1..1] <tt><b>birthTime</b></tt></li><li> This patient <b>SHALL</b> contain exactly one [1..1] <tt><b>name</b></tt></li></ol> </li></ol> 
+</li>
+</ol>
+
+<codeblock id="example"><![CDATA[]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Record Target</ph></p>
+<p id="shortdesc">[RecordTarget: templateId <tt>null</tt>]</p>
+</body>
+</topic>

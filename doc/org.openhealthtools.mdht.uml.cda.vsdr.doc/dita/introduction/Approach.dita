@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN"
+ "topic.dtd">
+<topic id="topicId" xml:lang="en-us">
+	<title>Approach</title>
+	<body>
+		
+					<p>The document focuses on
+			 the use case describing the communication of that portion of the death record
+			  collected by clinicians to appropriate local, state, and territorial vital
+			   statistics agencies using the HL7 Clinical Document Architecture. The goal
+			    of the implementation guide is to provide safe, reliable delivery of 
+			    relevant clinical information to vital records. The use case supported by
+			    this implementation guide does not cover the data that is reported by 
+			    funeral directors.</p>
+			    
+			    <p>This use case is not intended to cover reporting to national public
+			     health agencies (NCHS).</p>
+			     
+			     <p>The following assumption is a precondition for the use of this 
+                 implementation guide: The data requirements for clinician supplied death
+                  information for items to be completed by the medical certifier according
+                   to the Edit Specifications for the U.S. Standard Certificate of Death. 
+                   The jurisdiction may have additional data requirements and edit
+                    specifications that will be addressed at the jurisdictional level.</p>
+	
+			<p>This project supports reusability and ease of data collection
+			through a standard data representation harmonized with work developed
+			through Health Information Technology Expert Panel (HITEP), and balloted
+			through Health Level Seven (HL7).</p>
+		
+	</body>
+</topic>

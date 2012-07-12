@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map title="Value Sets">
+<topicref href="CertifierTypeCodes.dita" type="topic" />
+<topicref href="CertifierTypes.dita" type="topic" />
+<topicref href="DeathLocationTypeCodes.dita" type="topic" />
+<topicref href="DeathLocationTypes.dita" type="topic" />
+<topicref href="MannerOfDeathCodes.dita" type="topic" />
+<topicref href="MannersOfDeath.dita" type="topic" />
+<topicref href="PregnancyStatusCodes.dita" type="topic" />
+<topicref href="PregnancyStatuses.dita" type="topic" />
+<topicref href="TobaccoUse.dita" type="topic" />
+<topicref href="TobaccoUseCodes.dita" type="topic" />
+<topicref href="TransportationRelationshipCodes.dita" type="topic" />
+<topicref href="TransportationRelationships.dita" type="topic" />
+</map>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en-us" xml:lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="topic"/>
+<meta name="DC.Title" content="HL7 Modeling Conventions"/>
+<meta name="DC.Relation" scheme="URI" content="../introduction/Introduction.html"/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="topicId"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="../css/commonltr.css"/>
+<title>HL7 Modeling Conventions</title>
+</head>
+<body id="topicId"><a name="topicId"><!-- --></a>
+<div>
+	<p><b>For Discussion and Demonstration Only</b> The normative content for these specifications
+	may be found on the HL7 and CDC NCHS web sites.</p>
+</div>
+
+	<h1 class="title topictitle1">HL7 Modeling Conventions</h1>
+
+	<div class="body">
+		<p class="p"/>
+
+	</div>
+
+	
+	 <div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../introduction/Introduction.html">INTRODUCTION</a></div>
+</div>
+</div>
+<div class="topic nested1" id="participations"><a name="participations"><!-- --></a>
+    <h2 class="title topictitle2">Participations, Roles and Entities</h2>
+
+    <div class="body">
+      <p class="p">Recording information about the person or organization that participates in an act is an important feature of the
+       CDA structure.  To cite the most salient examples, the CDA document header has information about the document author, 
+       its custodian, and the associated person - the "record target". Some of the other observations or acts within the
+       Implementation Guide, also include participations such as "location".   According to the HL7 Reference Information Model, this
+       information is captured in a specific way.  For example, a "Person"", playing the role of "Assigned Entity", participates
+   	   in the document as its "Author". In each case, the relevant information is spread across three implementation guide elements: there
+   	   is a participation, a role, and an entity.  In some cases, the names are very similar, so that it looks as if information is 
+   	   being repeated.
+    template. </p>
+
+    </div>
+
+</div>
+
+
+ <div class="topic nested1" id="multiplicity"><a name="multiplicity"><!-- --></a>
+    <h2 class="title topictitle2">Multiplicity within Act Relationships and Participations</h2>
+
+    <div class="body">
+      <p class="p">A key task for the implementation guide is to convey information about which items are optional and which are required.  You can see
+      this information next to the elements within the document by viewing the statements of multiplicity, e.g., 0..1, and by reviewing
+       the conditional       expressions, SHALL, SHOULD, MAY.  While reviewing the document it is important to keep in mind that much
+        information is captured as an observation.  In the typical case, there will be an observation that is associated, as an entry,
+         with the document body.  In each case, there is an act relationship class that associates the observation with the document body.
+          The relevant multiplicity is captured within the document body section, and shows whether the observation is required or not, and whether
+          it repeats.  However, within each observation, the multipicity indicates that, if the observation is present, it must have a value for code,
+          for value, for class code, for mood code.
+       
+     </p>
+
+    </div>
+
+</div>
+
+
+</body>
+</html>
