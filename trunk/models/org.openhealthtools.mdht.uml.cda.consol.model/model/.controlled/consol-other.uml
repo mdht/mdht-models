@@ -109,13 +109,17 @@ The Assessment and Plan section represents both the clinician's conclusions and 
         <ownedRule xmi:id="_7iHw4HegEeGLwesdFe7o6w" name="hasPersonOrOrganization" constrainedElement="_PfJ8gHegEeGLwesdFe7o6w">
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_-5PdsHegEeGLwesdFe7o6w">
             <language>Analysis</language>
+            <language>OCL</language>
             <body>include assignedPerson/name or representedOrganization/name</body>
+            <body>self.assignedPerson.name->size() = 1 xor self.representedOrganization.name->size() = 1</body>
           </specification>
         </ownedRule>
         <ownedRule xmi:id="_QL-JwHehEeGLwesdFe7o6w" name="assignPersonName" constrainedElement="_PfJ8gHegEeGLwesdFe7o6w">
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_R5xIUHehEeGLwesdFe7o6w">
             <language>Analysis</language>
+            <language>OCL</language>
             <body>An  assignedPerson/name SHALL be a conformant US Realm Person Name (PN.US.FIELDED) (2.16.840.1.113883.10.20.22.5.1.1)</body>
+            <body>self.assignedPerson.name->forAll(name | name.oclIsTypeOf(datatypes::PN))</body>
           </specification>
         </ownedRule>
         <generalization xmi:id="_PfJ8gXegEeGLwesdFe7o6w">
@@ -368,6 +372,9 @@ The Assessment and Plan section represents both the clinician's conclusions and 
       <body>The Indication Observation documents the rationale for an activity. It can do this with the id element to reference a problem recorded elsewhere in the document or with a code and value to record the problem type and problem within the Indication. For example, the indication for a prescription of a painkiller might be a headache that is documented in the Problems Section</body>
     </ownedComment>
     <ownedRule xmi:id="_5t29wB-XEeGtfPlBCjHWkw" name="problemIndication" constrainedElement="_sHrUoBUSEeG6PvUxSTZnaw">
+      <ownedComment xmi:id="_376EIMetEeGbEIO0uZ0_SA">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_8g8JYB-XEeGtfPlBCjHWkw">
         <language>Analysis</language>
         <body>Set the observation/id equal to an ID on the problem list to signify that problem as an indication</body>
@@ -382,9 +389,12 @@ The Assessment and Plan section represents both the clinician's conclusions and 
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_vEvqAB-XEeGtfPlBCjHWkw" name="codeNullFlavorValue" constrainedElement="_MtdoIB7kEeGEaLkc3UAsAg">
+      <ownedComment xmi:id="_5vgIsMetEeGbEIO0uZ0_SA">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_xNAXAB-XEeGtfPlBCjHWkw">
         <language>Analysis</language>
-        <body>If the diagnosis is unkown or the SNOMED code is unknown, @nullFlavor SHOULD be “UNK”.  If the code is something other than SNOMED, @nullFlavor SHOULD be “OTH” and the other code SHOULD be placed in the translation element.</body>
+        <body>If the diagnosis is unkown or the SNOMED code is unknown, @nullFlavor SHOULD be �UNK�.  If the code is something other than SNOMED, @nullFlavor SHOULD be �OTH� and the other code SHOULD be placed in the translation element.</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_sHrUoRUSEeG6PvUxSTZnaw">
@@ -451,7 +461,7 @@ The Assessment and Plan section represents both the clinician's conclusions and 
         <language>Analysis</language>
         <language>OCL</language>
         <body>reference/@value SHALL begin with a '#' and SHALL point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1)</body>
-        <body>not self.getSection().text.getText(self.text.reference.value.substring(2, self.text.reference.value.size())).oclIsUndefined()</body>
+        <body>not self.text.reference.value.oclIsUndefined() implies not self.getSection().text.getText(self.text.reference.value.substring(2, self.text.reference.value.size())).oclIsUndefined()</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_2HCBgRSVEeGGzu7fmW9pXw">
@@ -544,6 +554,9 @@ The Assessment and Plan section represents both the clinician's conclusions and 
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_X2UwsB-ZEeGtfPlBCjHWkw" name="hasPlayingEntityClassCodeName" constrainedElement="_W3fw8B-ZEeGtfPlBCjHWkw">
+      <ownedComment xmi:id="__RR5wMeuEeGbEIO0uZ0_SA">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_gzccsB-ZEeGtfPlBCjHWkw">
         <language>Analysis</language>
         <body>@classCode MAY contain zero or one [0..1] name</body>

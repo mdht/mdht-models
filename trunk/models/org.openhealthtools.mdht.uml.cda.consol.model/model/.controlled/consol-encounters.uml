@@ -93,11 +93,15 @@
         <language>Analysis</language>
         <language>OCL</language>
         <body>reference/@value SHALL begin with a '#' and SHALL point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1)</body>
-        <body>not self.getSection().text.getText(self.code.originalText.reference.value.substring(2, self.code.originalText.reference.value.size())).oclIsUndefined()</body>
+       <body>not self.code.originalText.reference.value.oclIsUndefined() implies not self.getSection().text.getText(self.code.originalText.reference.value.substring(2, self.code.originalText.reference.value.size())).oclIsUndefined()</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_neVLQCwZEeGKLc4ckmfDag" name="dischargeDispositionCode" constrainedElement="_2LayQBSVEeGGzu7fmW9pXw">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_vCFQkCwZEeGKLc4ckmfDag">
+  
+        <ownedComment xmi:id="_PZlsAMetEeGbEIO0uZ0_SA">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
+    <specification xmi:type="uml:OpaqueExpression" xmi:id="_vCFQkCwZEeGKLc4ckmfDag">
         <language>Analysis</language>
         <body>MAY have a sdtc:dischargeDispositionCode which SHALL be  selected from ValueSet 2.16.840.1.113883.3.88.12.80.33 NUBC UB-04 FL17-Patient Status DYNAMIC or, if access to NUBC is unavailable, from CodeSystem 2.16.840.1.113883.12.112 HL7 Discharge Disposition. The prefix sdtc: SHALL be bound to the namespace “urn:hl7-org:sdtc�?. The use of the namespace provides a necessary extension to CDA R2 for the use of the dischargeDispositionCode element</body>
       </specification>

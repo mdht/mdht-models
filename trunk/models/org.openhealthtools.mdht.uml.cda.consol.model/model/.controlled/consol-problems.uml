@@ -157,7 +157,7 @@ historical purposes.&#xD;
         <language>Analysis</language>
         <language>OCL</language>
         <body>reference/@value SHALL begin with a '#' and SHALL point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1)</body>
-        <body>not self.getSection().text.getText(self.text.reference.value.substring(2, self.text.reference.value.size())).oclIsUndefined()</body>
+        <body>not self.text.reference.value.oclIsUndefined() implies not self.getSection().text.getText(self.text.reference.value.substring(2, self.text.reference.value.size())).oclIsUndefined()</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_2E56kRSVEeGGzu7fmW9pXw">
@@ -260,7 +260,7 @@ historical purposes.&#xD;
         <language>Analysis</language>
         <language>OCL</language>
         <body>reference/@value SHALL begin with a '#' and SHALL point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1)</body>
-        <body>not self.getSection().text.getText(self.text.reference.value.substring(2, self.text.reference.value.size())).oclIsUndefined()</body>
+        <body>not self.text.reference.value.oclIsUndefined() implies not self.getSection().text.getText(self.text.reference.value.substring(2, self.text.reference.value.size())).oclIsUndefined()</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_SjN_8RUzEeGbmN_W114JUw">
@@ -323,22 +323,31 @@ historical purposes.&#xD;
         <language>Analysis</language>
         <language>OCL</language>
         <body>reference/@value SHALL begin with a '#' and SHALL point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1)</body>
-        <body>not self.getSection().text.getText(self.text.reference.value.substring(2, self.text.reference.value.size())).oclIsUndefined()</body>
+        <body>not self.text.reference.value.oclIsUndefined() implies not self.getSection().text.getText(self.text.reference.value.substring(2, self.text.reference.value.size())).oclIsUndefined()</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_5_4wYCAwEeGetMjKLkqR8g" name="hasOnsetDate">
+      <ownedComment xmi:id="_Xy-jcMbqEeGp28IjMvW3Ag">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_5_4wYSAwEeGetMjKLkqR8g">
         <language>Analysis</language>
         <body>onset date SHALL be recorded in the low element of the effectiveTime element when known</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_6nx20CAwEeGetMjKLkqR8g" name="hasResolutionDate">
+      <ownedComment xmi:id="_ZHoCMMbqEeGp28IjMvW3Ag">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_6nx20SAwEeGetMjKLkqR8g">
         <language>Analysis</language>
         <body>resolution date SHALL be recorded in the high element of the effectiveTime element when known</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_7ZTaYCAwEeGetMjKLkqR8g" name="hasUnknownResolutionDate">
+      <ownedComment xmi:id="_b08kEMbqEeGp28IjMvW3Ag">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_7ZTaYSAwEeGetMjKLkqR8g">
         <language>Analysis</language>
         <body>If the problem is known to be resolved, but the date of resolution is not known, then the high element SHALL be present, and the nullFlavor attribute SHALL be set to 'UNK'. Therefore, the existence of an high element within a problem does indicate that the problem has been resolved</body>
@@ -347,13 +356,18 @@ historical purposes.&#xD;
     <ownedRule xmi:id="_jlZuoCf3EeGO5_JBy9h6BA" name="valueNullFlavor" constrainedElement="_5Ha7ABUyEeGbmN_W114JUw">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_r1sJ0Cf3EeGO5_JBy9h6BA">
         <language>Analysis</language>
+         <language>OCL</language>
         <body>value MAY contain zero or one [0..1] @nullFlavor</body>
+        <body>self.value->forAll(val | not val.isNullFlavorUndefined())</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_p2pDMCf3EeGO5_JBy9h6BA" name="valueNullFlavorUnknown" constrainedElement="_jlZuoCf3EeGO5_JBy9h6BA">
+      <ownedComment xmi:id="_CwJ0cMbrEeGp28IjMvW3Ag">
+        <body>UNIMPLEMENTABLE</body>
+     </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_tRojYCf3EeGO5_JBy9h6BA">
         <language>Analysis</language>
-        <body>If the diagnosis is unkown or the SNOMED code is unknown, @nullFlavor SHOULD be �UNK�.  If the code is something other than SNOMED, @nullFlavor SHOULD be �OTH� and the other code SHOULD be placed in the translation element</body>
+        <body>If the diagnosis is unkown or the SNOMED code is unknown, @nullFlavor SHOULD be ?UNK?.  If the code is something other than SNOMED, @nullFlavor SHOULD be ?OTH? and the other code SHOULD be placed in the translation element</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_1fQFECf3EeGO5_JBy9h6BA" name="ageObservationInversion" constrainedElement="_p2pDMCf3EeGO5_JBy9h6BA">
@@ -446,7 +460,9 @@ historical purposes.&#xD;
     <ownedRule xmi:id="_sPoAUCBCEeG938evaWkvcA" name="valueUnits" constrainedElement="_2EqqABSVEeGGzu7fmW9pXw">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_yRGakCBCEeG938evaWkvcA">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>This value SHALL contain exactly one [1..1] @unit, which SHALL be selected from ValueSet AgePQ_UCUM 2.16.840.1.113883.11.20.9.21 DYNAMIC</body>
+        <body>self.value.oclAsType(datatypes::PQ).unit->size() = 1</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_2EvigBSVEeGGzu7fmW9pXw">

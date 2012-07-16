@@ -102,26 +102,32 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
     <ownedRule xmi:id="_ouJssCFKEeG9m6LRl9ardQ" name="valueOriginalText" constrainedElement="_2EaLUBSVEeGGzu7fmW9pXw">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_5qNlMCFKEeG9m6LRl9ardQ">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>value SHOULD contain zero or one [0..1] originalText</body>
+        <body>self.value.oclAsType(datatypes::CD).originalText->size() = 1</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_cf38gCFLEeG9m6LRl9ardQ" name="originalTextReference" constrainedElement="_2EaLUBSVEeGGzu7fmW9pXw">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_iuCH4CFLEeG9m6LRl9ardQ">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>originalText, if present, SHOULD contain zero or one [0..1] reference/@value</body>
+        <body>self.value.oclAsType(datatypes::CD).originalText->size() = 1 implies self.value.oclAsType(datatypes::CD).originalText.reference.value->size() = 1</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_nV_8ECFMEeG9m6LRl9ardQ" name="referenceValue" constrainedElement="_2EaLUBSVEeGGzu7fmW9pXw">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_j5kg4CKeEeG9m6LRl9ardQ">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>reference/@value SHALL begin with a '#' and SHALL point to its corresponding narrative</body>
+        <body>self.value.oclAsType(datatypes::CD).originalText.reference.value->size() = 1 implies not self.getSection().text.getText(self.value.oclAsType(datatypes::CD).originalText.reference.value.substring(2, self.value.oclAsType(datatypes::CD).originalText.reference.value.size())).oclIsUndefined()</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_8gb1UCFTEeG9m6LRl9ardQ" name="allergyStatusInversionIndicator" constrainedElement="_2EaLUBSVEeGGzu7fmW9pXw">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_L6csQCFUEeG9m6LRl9ardQ">
         <language>Analysis</language>
         <language>OCL</language>
-        <body>SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot; True</body>
+        <body>entryRelationship with target entry AllergyStatusObservation SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot; True</body>
         <body>self.entryRelationship->select(er : cda::EntryRelationship | er.observation.oclIsKindOf(consol::AllergyStatusObservation))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
       </specification>
     </ownedRule>
@@ -129,7 +135,7 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_f5vPwCFVEeG9m6LRl9ardQ">
         <language>Analysis</language>
         <language>OCL</language>
-        <body>SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot; True</body>
+        <body>entryRelationship with target entry Reaction Observation SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot; True</body>
         <body>self.entryRelationship->select(er : cda::EntryRelationship | er.observation.oclIsKindOf(consol::ReactionObservation))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
       </specification>
     </ownedRule>
@@ -137,7 +143,7 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_2EaLcBSVEeGGzu7fmW9pXw">
         <language>Analysis</language>
         <language>OCL</language>
-        <body>SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot; True</body>
+        <body>entryRelationship with target entry Severity Observation SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot; True</body>
         <body>self.entryRelationship->select(er : cda::EntryRelationship | er.observation.oclIsKindOf(consol::SeverityObservation))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
       </specification>
     </ownedRule>
@@ -193,6 +199,9 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ToPtMXhuEeGJtvg2iiStYg" value="1"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_0HgNkDJAEeG6R8Pb5FT2Ow" name="AllergyObservationParticipant">
+      <ownedComment xmi:id="_UJ7XoM-GEeG0zqUqBXbhpA">
+        <body>INLINE</body>
+      </ownedComment>
       <generalization xmi:id="_0HgNkTJAEeG6R8Pb5FT2Ow">
         <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_51DLwEcZEd6besF9iFIJkQ"/>
       </generalization>
@@ -222,19 +231,25 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
           <ownedRule xmi:id="_Q7cdkDJCEeG6R8Pb5FT2Ow" name="allergySpecificMedication" constrainedElement="_E1B60DJBEeG6R8Pb5FT2Ow">
             <specification xmi:type="uml:OpaqueExpression" xmi:id="_irU_sDJCEeG6R8Pb5FT2Ow">
               <language>Analysis</language>
+              <language>OCL</language>
               <body>In an allergy to a specific medication the code SHALL be selected from the ValueSet 2.16.840.1.113883.3.88.12.80.16 Medication Brand Name DYNAMIC or the ValueSet 2.16.840.1.113883.3.88.12.80.17 Medication Clinical Drug DYNAMIC</body>
+              <body>self.code.codeSystem = '2.16.840.1.113883.6.88'</body>
             </specification>
           </ownedRule>
           <ownedRule xmi:id="_UYE8gDJCEeG6R8Pb5FT2Ow" name="allergyClassMedication" constrainedElement="_Q7cdkDJCEeG6R8Pb5FT2Ow">
             <specification xmi:type="uml:OpaqueExpression" xmi:id="_5MrFsDJCEeG6R8Pb5FT2Ow">
               <language>Analysis</language>
+              <language>OCL</language>
               <body>In an allergy to a class of medications the code SHALL be selected from the ValueSet 2.16.840.1.113883.3.88.12.80.18 Medication Drug Class DYNAMIC</body>
+              <body>self.code.codeSystem = '2.16.840.1.113883.3.26.1.5'</body>
             </specification>
           </ownedRule>
           <ownedRule xmi:id="_WDVkcDJCEeG6R8Pb5FT2Ow" name="allergyFoodOtherSubstance" constrainedElement="_UYE8gDJCEeG6R8Pb5FT2Ow">
             <specification xmi:type="uml:OpaqueExpression" xmi:id="_1ChZcDJCEeG6R8Pb5FT2Ow">
               <language>Analysis</language>
+              <language>OCL</language>
               <body>In an allergy to a food or other substance the code SHALL be selected from the ValueSet 2.16.840.1.113883.3.88.12.80.20 Ingredient Name DYNAMIC</body>
+              <body>self.code.codeSystem = '2.16.840.1.113883.4.9'</body>
             </specification>
           </ownedRule>
           <ownedRule xmi:id="_ZIdiUDJCEeG6R8Pb5FT2Ow" name="codeOriginalText" constrainedElement="_WDVkcDJCEeG6R8Pb5FT2Ow">
@@ -248,7 +263,9 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
           <ownedRule xmi:id="_aK9hIDJCEeG6R8Pb5FT2Ow" name="originalTextReference" constrainedElement="_ZIdiUDJCEeG6R8Pb5FT2Ow">
             <specification xmi:type="uml:OpaqueExpression" xmi:id="_uNieoDJCEeG6R8Pb5FT2Ow">
               <language>Analysis</language>
+              <language>OCL</language>
               <body>originalText, if present, SHOULD contain zero or one [0..1] reference</body>
+              <body>not self.code.originalText.oclIsUndefined() implies not self.code.originalText.reference.oclIsUndefined()</body>
             </specification>
           </ownedRule>
           <ownedRule xmi:id="_c0knsDJCEeG6R8Pb5FT2Ow" name="originalTextReferenceValue" constrainedElement="_aK9hIDJCEeG6R8Pb5FT2Ow">
@@ -516,7 +533,7 @@ historical purposes.&#xD;
         <language>Analysis</language>
         <language>OCL</language>
         <body>reference/@value SHALL begin with a '#' and SHALL point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1)</body>
-        <body>not self.getSection().text.getText(self.text.reference.value.substring(2, self.text.reference.value.size())).oclIsUndefined()</body>
+        <body>not self.text.reference.value.oclIsUndefined() implies not self.getSection().text.getText(self.text.reference.value.substring(2, self.text.reference.value.size())).oclIsUndefined()</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_2FODoBSVEeGGzu7fmW9pXw">
@@ -579,6 +596,9 @@ historical purposes.&#xD;
       <body>This clinical statement represents an undesired symptom, finding, etc., due to an administered or exposed substance. A reaction can be defined with respect to its severity, and can have been treated by one or more interventions.</body>
     </ownedComment>
     <ownedRule xmi:id="_UJVqICIhEeG9m6LRl9ardQ" name="codeValueSet" constrainedElement="_2E_aIRSVEeGGzu7fmW9pXw">
+      <ownedComment xmi:id="_5lu20MbrEeGp28IjMvW3Ag">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_soybkCIhEeG9m6LRl9ardQ">
         <language>Analysis</language>
         <body>The value set for this code element has not been specified.  Implementers are allowed to use any code system, such as SNOMED CT, a locally determined code, or a nullFlavor</body>
@@ -597,7 +617,7 @@ historical purposes.&#xD;
         <language>Analysis</language>
         <language>OCL</language>
         <body>reference/@value SHALL begin with a '#' and SHALL point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1)</body>
-        <body>not self.getSection().text.getText(self.text.reference.value.substring(2, self.text.reference.value.size())).oclIsUndefined()</body>
+        <body>not self.text.reference.value.oclIsUndefined() implies not self.getSection().text.getText(self.text.reference.value.substring(2, self.text.reference.value.size())).oclIsUndefined()</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_1SPc4CKeEeG9m6LRl9ardQ" name="effectiveTimeLow" constrainedElement="_2E_aIRSVEeGGzu7fmW9pXw">

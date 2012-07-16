@@ -113,10 +113,13 @@ This clinical statement represents procedures that result in new information abo
         <language>Analysis</language>
         <language>OCL</language>
         <body>reference/@value SHALL begin with a '#' and SHALL point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1)</body>
-        <body>not self.getSection().text.getText(self.code.originalText.reference.value.substring(2, self.code.originalText.reference.value.size())).oclIsUndefined()</body>
+        <body>not self.code.originalText.reference.value.oclIsUndefined() implies not self.getSection().text.getText(self.code.originalText.reference.value.substring(2, self.code.originalText.reference.value.size())).oclIsUndefined()</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_I_JDoBxwEeGXP8PxDYviDg" name="methodCodeConflict" constrainedElement="_SSUWwBrREeGxIZCGAXKxsQ">
+      <ownedComment xmi:id="_MNOL0MbrEeGp28IjMvW3Ag">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_I_JDoRxwEeGXP8PxDYviDg">
         <language>Analysis</language>
         <body>methodCode SHALL NOT conflict with the method inherent in Procedure / code</body>
@@ -268,7 +271,7 @@ This clinical statement represents any procedure that cannot be classified as an
         <language>Analysis</language>
         <language>OCL</language>
         <body>reference/@value SHALL begin with a '#' and SHALL point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1)</body>
-        <body>not self.getSection().text.getText(self.code.originalText.reference.value.substring(2, self.code.originalText.reference.value.size())).oclIsUndefined()</body>
+        <body>not self.code.originalText.reference.value.oclIsUndefined() implies not self.getSection().text.getText(self.code.originalText.reference.value.substring(2, self.code.originalText.reference.value.size())).oclIsUndefined()</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_ATZYUBxsEeGXP8PxDYviDg" name="encounterInversion" constrainedElement="_tJGGcBxGEeGIELeDlfT77A">
@@ -399,10 +402,13 @@ This clinical statement represents procedures whose immediate and primary outcom
         <language>Analysis</language>
         <language>OCL</language>
         <body>reference/@value SHALL begin with a '#' and SHALL point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1)</body>
-        <body>not self.getSection().text.getText(self.code.originalText.reference.value.substring(2, self.code.originalText.reference.value.size())).oclIsUndefined()</body>
+        <body>not self.code.originalText.reference.value.oclIsUndefined() implies not self.getSection().text.getText(self.code.originalText.reference.value.substring(2, self.code.originalText.reference.value.size())).oclIsUndefined()</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_tJGGcBxGEeGIELeDlfT77A" name="methodCodeConflict" constrainedElement="_SSUWwBrREeGxIZCGAXKxsQ">
+      <ownedComment xmi:id="_O7vAgMbrEeGp28IjMvW3Ag">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_wGC_wBxGEeGIELeDlfT77A">
         <language>Analysis</language>
         <body>methodCode SHALL NOT conflict with the method inherent in Procedure / code</body>
@@ -771,6 +777,9 @@ This clinical statement represents procedures whose immediate and primary outcom
   </CDA:ConstraintValidation>
   <uml:Class xmi:id="_qeLqQBxEEeGIELeDlfT77A" name="ProcedureEncounter">
     <ownedRule xmi:id="_UWwzQBxcEeGXP8PxDYviDg" name="sameEncounter" constrainedElement="_qeLqQBxEEeGIELeDlfT77A">
+      <ownedComment xmi:id="_TLy84MeuEeGbEIO0uZ0_SA">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_WsHhEBxcEeGXP8PxDYviDg">
         <language>Analysis</language>
         <body>Set the encounter ID to the ID of an encounter in another section to signify they are the same encounter.</body>
@@ -935,6 +944,9 @@ This clinical statement represents procedures whose immediate and primary outcom
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_1NFlgBxbEeGXP8PxDYviDg" name="sameSpecimen" constrainedElement="_JIc0oBxEEeGIELeDlfT77A">
+      <ownedComment xmi:id="_WjhGoMeuEeGbEIO0uZ0_SA">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_5DeoQBxbEeGXP8PxDYviDg">
         <language>Analysis</language>
         <body>To indicate that the Procedure and the Results are referring to the same specimen, the Procedure/specimen/specimenRole/id SHOULD be set to equal an Organizer/specimen/ specimenRole/id.</body>
@@ -1037,6 +1049,9 @@ This clinical statement represents procedures whose immediate and primary outcom
       <body>The Complications section records problems that occurred during the procedure or other activity. The complications may have been known risks or unanticipated problems.</body>
     </ownedComment>
     <ownedRule xmi:id="_z_CwYFjoEeGRqYkwoeymcA" name="explicitComplications" constrainedElement="_R1OXcDVyEeGaW4kr-GbV8Q">
+      <ownedComment xmi:id="_kXnboMbdEeGp28IjMvW3Ag">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_12zjQFjoEeGRqYkwoeymcA">
         <language>Analysis</language>
         <body>There SHALL be a statement providing details of the complication(s) or it SHALL explicitly state there were no complications.</body>
@@ -1074,6 +1089,9 @@ This clinical statement represents procedures whose immediate and primary outcom
       <body>The Operative Note Fluids section may be used to record fluids administered during the surgical procedure.</body>
     </ownedComment>
     <ownedRule xmi:id="_ZcsLoFmvEeGRqYkwoeymcA" name="fluidsAdministered" constrainedElement="_vHfXoDVyEeGaW4kr-GbV8Q">
+      <ownedComment xmi:id="_k6QKcMbkEeGp28IjMvW3Ag">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_c2YrUFmvEeGRqYkwoeymcA">
         <language>Analysis</language>
         <body>If the Operative Note Fluids section is present, there SHALL be a statement providing details of the fluids administered or SHALL explicitly state there were no fluids administered</body>
@@ -1106,6 +1124,9 @@ This clinical statement represents procedures whose immediate and primary outcom
       <body>The Operative Note Surgical Procedure section can be used to restate the procedures performed if appropriate for an enterprise workflow.  The procedure(s) performed associated with the Operative Note are formally modeled in the header using serviceEvent.</body>
     </ownedComment>
     <ownedRule xmi:id="_MAXA0EEuEeGdmoWy_aLP0Q" name="hasProcedureText" constrainedElement="_zel6wDVyEeGaW4kr-GbV8Q">
+      <ownedComment xmi:id="_oi8IYMbkEeGp28IjMvW3Ag">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_O6eBgEEuEeGdmoWy_aLP0Q">
         <language>Analysis</language>
         <body>If the surgical procedure section is present there SHALL be text indicating the procedure performed.</body>
@@ -1305,6 +1326,9 @@ This clinical statement represents procedures whose immediate and primary outcom
       <body>The Estimated Blood Loss section may be a subsection of another section such as the Procedure Description section. The Estimated Blood Loss section records the approximate amount of blood that the patient lost during the procedure or surgery. It may be an accurate quantitative amount, e.g., 250 milliliters, or it may be descriptive, e.g., &quot;minimal&quot; or &quot;none&quot;.</body>
     </ownedComment>
     <ownedRule xmi:id="_Jw_CYEEyEeGdmoWy_aLP0Q" name="bloodLossEstimate" constrainedElement="_TvcL8DVzEeGaW4kr-GbV8Q">
+      <ownedComment xmi:id="_sly1oMbrEeGp28IjMvW3Ag">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_LuTqsEEyEeGdmoWy_aLP0Q">
         <language>Analysis</language>
         <body>The Estimated Blood Loss section SHALL include a statement providing an estimate of the amount of blood lost during the procedure, even if the estimate is text, such as &quot;minimal&quot; or &quot;none&quot;</body>
@@ -1368,6 +1392,9 @@ This clinical statement represents procedures whose immediate and primary outcom
       <body>The Procedure Implants section records any materials placed during the procedure including stents, tubes, and drains.</body>
     </ownedComment>
     <ownedRule xmi:id="_L5NdsEEzEeGdmoWy_aLP0Q" name="hasImplantDetails" constrainedElement="_Z662wDVzEeGaW4kr-GbV8Q">
+      <ownedComment xmi:id="_wXGkEMbrEeGp28IjMvW3Ag">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_NTg4gEEzEeGdmoWy_aLP0Q">
         <language>Analysis</language>
         <body>The Implants section SHALL include a statement providing details of the implants placed, or assert no implants were placed</body>
@@ -1431,6 +1458,9 @@ This clinical statement represents procedures whose immediate and primary outcom
       <body>The Surgical Drains section may be used to record drains placed during the surgical procedure. Optionally, surgical drain placement may be represented with a text element in the Procedure Description Section.</body>
     </ownedComment>
     <ownedRule xmi:id="__OWpwEE0EeGdmoWy_aLP0Q" name="hasDrainsListed" constrainedElement="_luQh8DVzEeGaW4kr-GbV8Q">
+      <ownedComment xmi:id="_JBX-EMbvEeGp28IjMvW3Ag">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_At37wEE1EeGdmoWy_aLP0Q">
         <language>Analysis</language>
         <body>If the Surgical Drains section is present, there SHALL be a statement providing details of the drains placed or SHALL explicitly state there were no drains placed.</body>
@@ -1463,6 +1493,9 @@ This clinical statement represents procedures whose immediate and primary outcom
       <body>The Procedure Specimens Taken section records the tissues, objects, or samples taken from the patient during the procedure including biopsies, aspiration fluid, or other samples sent for pathological analysis. The narrative may include a description of the specimens.</body>
     </ownedComment>
     <ownedRule xmi:id="_GvCCYEE0EeGdmoWy_aLP0Q" name="hasAllSpecimensListed" constrainedElement="_gSUdsDVzEeGaW4kr-GbV8Q">
+      <ownedComment xmi:id="_z3AZcMbrEeGp28IjMvW3Ag">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_JuD_UEE0EeGdmoWy_aLP0Q">
         <language>Analysis</language>
         <body>The Procedure Specimens Taken section SHALL list all specimens removed or SHALL explicitly state that no specimens were taken.</body>

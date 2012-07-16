@@ -65,12 +65,6 @@ with respect to the payer, so that the identifiers can be recorded.&#xD;
     <ownedComment xmi:id="_p8E5gFzAEeGt2doqSDULjA">
       <body>A policy activity represents the policy or program providing the coverage.</body>
     </ownedComment>
-    <ownedRule xmi:id="_37c9MDZaEeGUovy31cP2ng" name="policyActivityCode" constrainedElement="_UdHpMBUlEeGvPruliC3crg">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="__3JBYDZaEeGUovy31cP2ng">
-        <language>Analysis</language>
-        <body>The code, if present, SHOULD contain zero or one [0..1] code, where the @code SHOULD be selected from ValueSet Health Insurance Type Value Set 2.16.840.1.113883.3.88.12.3221.5.2 DYNAMIC (CONF:8904)</body>
-      </specification>
-    </ownedRule>
     <generalization xmi:id="_PZBdMRUlEeGvPruliC3crg">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_YiANsDxYEd6JwqSGecoePg"/>
     </generalization>
@@ -146,9 +140,12 @@ with respect to the payer, so that the identifiers can be recorded.&#xD;
           <body>INLINE</body>
         </ownedComment>
         <ownedRule xmi:id="_bk4HkG7hEeGO5JJTinolhw" name="usRealmAddress" constrainedElement="_deYl8F0REeGt2doqSDULjA">
+          <ownedComment xmi:id="_jBN6UMbmEeGp28IjMvW3Ag">
+            <body>UNIMPLEMENTABLE</body>
+          </ownedComment>
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_dIxjQG7hEeGO5JJTinolhw">
             <language>Analysis</language>
-            <body>1.	The content of addr SHALL be a conformant US Realm Address (AD.US.FIELDED) (2.16.840.1.113883.10.20.22.5.2)</body>
+            <body>The content of addr SHALL be a conformant US Realm Address (AD.US.FIELDED) (2.16.840.1.113883.10.20.22.5.2)</body>
           </specification>
         </ownedRule>
         <generalization xmi:id="_hzOfQF0REeGt2doqSDULjA">
@@ -226,6 +223,9 @@ with respect to the payer, so that the identifiers can be recorded.&#xD;
           </specification>
         </ownedRule>
         <ownedRule xmi:id="_HFsGkG7hEeGO5JJTinolhw" name="usRealmAddress" constrainedElement="_NgEewF13EeGt2doqSDULjA">
+          <ownedComment xmi:id="_sZEagMbmEeGp28IjMvW3Ag">
+            <body>UNIMPLEMENTABLE</body>
+          </ownedComment>
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_KeJ3MG7hEeGO5JJTinolhw">
             <language>Analysis</language>
             <body>The content of addr SHALL be a conformant US Realm Address (AD.US.FIELDED) (2.16.840.1.113883.10.20.22.5.2)</body>
@@ -261,13 +261,17 @@ with respect to the payer, so that the identifiers can be recorded.&#xD;
       <ownedRule xmi:id="_J4Vk4F-tEeGt2doqSDULjA" name="lowTime" constrainedElement="_G5CNEF-rEeGt2doqSDULjA">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_R9JI0F-tEeGt2doqSDULjA">
           <language>Analysis</language>
+          <language>OCL</language>
           <body>The time, if present, SHOULD contain zero or one [0..1] low</body>
+          <body>not self.time.oclIsUndefined() implies not self.time.low.oclIsUndefined()</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_Z7L9cF-tEeGt2doqSDULjA" name="highTime" constrainedElement="_G5CNEF-rEeGt2doqSDULjA">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_fRnPkF-tEeGt2doqSDULjA">
           <language>Analysis</language>
+          <language>OCL</language>
           <body>The time, if present, SHOULD contain zero or one [0..1] high</body>
+          <body>not self.time.oclIsUndefined() implies not self.time.high.oclIsUndefined()</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_KcDA0F-rEeGt2doqSDULjA">
@@ -383,7 +387,9 @@ with respect to the payer, so that the identifiers can be recorded.&#xD;
     <ownedRule xmi:id="_xtqFkDZXEeGUovy31cP2ng" name="coverageActivityRelationshipSequenceNumber" constrainedElement="_Cg3pkBUmEeGvPruliC3crg">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_-gLV0DZXEeGUovy31cP2ng">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>MAY contain zero or one [0..1] sequenceNumber/@value (CONF:8973)</body>
+        <body>self.entryRelationship->forAll(er : cda::EntryRelationship | not er.sequenceNumber.oclIsUndefined())</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_Cg3pkRUmEeGvPruliC3crg">
@@ -463,13 +469,17 @@ Authorizations are represented using an act subordinate to the policy or program
       <ownedRule xmi:id="_Lo6NMHhwEeGJtvg2iiStYg" name="hasClinicalStatement" constrainedElement="_sWZMgHhvEeGJtvg2iiStYg">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_NLlg4HhwEeGJtvg2iiStYg">
           <language>Analysis</language>
+          <language>OCL</language>
           <body>The target of an authorization activity with act/entryRelationship/@typeCode=&quot;SUBJ&quot; SHALL be a clinical statement with moodCode=&quot;PRMS&quot; Promise (CONF:8951).</body>
+          <body>self.act->forAll(moodCode = vocab::x_DocumentActMood::PRMS) or  self.encounter->forAll(moodCode = vocab::x_DocumentEncounterMood::PRMS) or self.observation->forAll(moodCode = vocab::x_ActMoodDocumentObservation::PRMS) or  self.observationMedia->forAll(moodCode = vocab::ActMood::PRMS) or self.organizer->forAll(moodCode = vocab::ActMood::PRMS) or self.procedure->forAll(moodCode = vocab::x_DocumentProcedureMood::PRMS) or  self.regionOfInterest->forAll(moodCode = vocab::ActMood::PRMS) or self.substanceAdministration->forAll(moodCode = vocab::x_DocumentSubstanceMood::PRMS) or  self.supply->forAll(moodCode = vocab::x_DocumentSubstanceMood::PRMS)</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_b7HQYHhwEeGJtvg2iiStYg" name="hasAuhtorixedPerformers" constrainedElement="_sWZMgHhvEeGJtvg2iiStYg">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_egCrQHhwEeGJtvg2iiStYg">
           <language>Analysis</language>
+          <language>OCL</language>
           <body>The target of an authorization activity MAY contain one or more performer, to indicate the providers that have been authorized to provide treatment.</body>
+          <body>self.act->forAll(performer->size() > 0) or  self.encounter->forAll(performer->size() > 0) or self.observation->forAll(performer->size() > 0) or  self.observationMedia->forAll(performer->size() > 0) or self.organizer->forAll(performer->size() > 0) or self.procedure->forAll(performer->size() > 0) or  self.regionOfInterest->forAll(performer->size() > 0) or self.substanceAdministration->forAll(performer->size() > 0) or  self.supply->forAll(performer->size() > 0)</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_sWZzkHhvEeGJtvg2iiStYg">
@@ -527,7 +537,6 @@ Authorizations are represented using an act subordinate to the policy or program
   <CDA:PropertyValidation xmi:id="_s5Fb8DZaEeGUovy31cP2ng" severity="WARNING" base_Property="_UdHpMBUlEeGvPruliC3crg">
     <ruleId>CONF:8903</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ConstraintValidation xmi:id="_AVRH0DZbEeGUovy31cP2ng" severity="WARNING" base_Constraint="_37c9MDZaEeGUovy31cP2ng"/>
   <CDA:PropertyValidation xmi:id="_sHmwUDaJEeGUovy31cP2ng">
     <ruleId>CONF:8906</ruleId>
   </CDA:PropertyValidation>
@@ -704,4 +713,5 @@ Authorizations are represented using an act subordinate to the policy or program
   <CDA:ConstraintValidation xmi:id="_kWQQsHhwEeGJtvg2iiStYg" severity="INFO" base_Constraint="_b7HQYHhwEeGJtvg2iiStYg">
     <ruleId>CONF:8952</ruleId>
   </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="__3W-8MxnEeGfv7E-ZT7xSw" base_Constraint="_Lo6NMHhwEeGJtvg2iiStYg"/>
 </xmi:XMI>

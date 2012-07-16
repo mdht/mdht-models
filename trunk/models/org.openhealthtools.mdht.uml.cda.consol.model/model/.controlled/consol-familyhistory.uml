@@ -272,8 +272,10 @@
     <ownedRule xmi:id="_-uQ2ACHbEeGFLIX-2_sWzA" name="relatedSubjectSubjectId" constrainedElement="_4MXPQCHbEeGFLIX-2_sWzA">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_C5oDMCHcEeGFLIX-2_sWzA">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>subject SHOULD contain zero or more [0..*] sdtc:id. The prefix sdtc: SHALL be bound to the namespace “urn:hl7-org:sdtc�?. The use of the namespace provides a necessary extension to CDA R2 for the use of the id element</body>
-      </specification>
+      <body>self.relatedSubject.subject.sDTCId->size() > 0</body>
+       </specification>
     </ownedRule>
     <ownedRule xmi:id="_Fra1YCHcEeGFLIX-2_sWzA" name="relatedSubjectSubjectAdmGenderCode" constrainedElement="_4MXPQCHbEeGFLIX-2_sWzA">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_JlW7YCHcEeGFLIX-2_sWzA">
@@ -308,12 +310,18 @@
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_aExz0CHfEeGFLIX-2_sWzA" name="ageOfRelative" constrainedElement="_WX7uoCHfEeGFLIX-2_sWzA">
+      <ownedComment xmi:id="_weMVYMetEeGbEIO0uZ0_SA">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_fzzMICHfEeGFLIX-2_sWzA">
         <language>Analysis</language>
         <body>age of a relative at the time of a family history observation SHOULD be inferred by comparing RelatedSubject/subject/birthTime with Observation/effectiveTime</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_hwxPICHfEeGFLIX-2_sWzA" name="ageOfRelativeDeath" constrainedElement="_aExz0CHfEeGFLIX-2_sWzA">
+      <ownedComment xmi:id="_xaJnUMetEeGbEIO0uZ0_SA">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_jRBg8CHfEeGFLIX-2_sWzA">
         <language>Analysis</language>
         <body>age of a relative at the time of death MAY be inferred by comparing RelatedSubject/subject/birthTime with RelatedSubject/subject/sdwg:deceasedTime</body>
