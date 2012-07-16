@@ -41,7 +41,7 @@
   <CDA:ConstraintValidation xmi:id="_2NJ3wBSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_2NJ3xBSVEeGGzu7fmW9pXw" severity="INFO"/>
   <CDA:PropertyValidation xmi:id="_2NJ3pxSVEeGGzu7fmW9pXw" base_Property="_2NJ3phSVEeGGzu7fmW9pXw">
-    <ruleId>CONF:7793</ruleId>
+    <ruleId>CONF:7570</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_2NJ3qxSVEeGGzu7fmW9pXw" base_Property="_2NJ3qBSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7571</ruleId>
@@ -74,7 +74,9 @@ Medication timing is complex. This template requires that there be a substanceAd
     <ownedRule xmi:id="_ukkeIEFiEeG2TLeVPbv7pg" name="textReferenceValue" constrainedElement="_nSTKYEFiEeG2TLeVPbv7pg">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_wqKRoEFiEeG2TLeVPbv7pg">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>reference/@value SHALL begin with a '#' and SHALL point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1)</body>
+        <body>not self.text.reference.value.oclIsUndefined() implies not self.getSection().text.getText(self.text.reference.value.substring(2, self.text.reference.value.size())).oclIsUndefined()</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_5BnBgEIiEeG4bZAl2IGXmQ" name="effectiveTimeIVLTS" constrainedElement="_4CqJMEFiEeG2TLeVPbv7pg">
@@ -82,19 +84,23 @@ Medication timing is complex. This template requires that there be a substanceAd
         <language>Analysis</language>
         <language>OCL</language>
         <body>SHALL contain exactly one [1..1] effectiveTime such that it SHALL contain exactly one [1..1] @xsi:type = &quot;IVL_TS&quot;</body>
-        <body>self.effectiveTime->exists(ef : datatypes::SXCM_TS | ef.oclIsTypeOf(datatypes::IVL_TS))</body>
+        <body>self.effectiveTime->select(ef | ef.oclIsTypeOf(datatypes::IVL_TS))->size() = 1</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_4CqJMEFiEeG2TLeVPbv7pg" name="effectiveTimeLow" constrainedElement="_ukkeIEFiEeG2TLeVPbv7pg">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_pwzXsEFjEeG2TLeVPbv7pg">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>effectiveTime with @xsi:type=&quot;IVL_TS&quot; SHALL contain exactly one [1..1] low</body>
+        <body>self.effectiveTime->select(ef | ef.oclIsTypeOf(datatypes::IVL_TS))->forAll( eff | eff.oclAsType(datatypes::IVL_TS).low->size() = 1)</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_6ODpwEFiEeG2TLeVPbv7pg" name="effectiveTimeHigh" constrainedElement="_4CqJMEFiEeG2TLeVPbv7pg">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_6jRPUEFjEeG2TLeVPbv7pg">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>effectiveTime with @xsi:type=&quot;IVL_TS&quot; SHALL contain exactly one [1..1] high</body>
+        <body>self.effectiveTime->select(ef | ef.oclIsTypeOf(datatypes::IVL_TS))->forAll( eff | eff.oclAsType(datatypes::IVL_TS).high->size() = 1)</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_0bGJYEIiEeG4bZAl2IGXmQ" name="effectiveTimePIVLTS" constrainedElement="_6ODpwEFiEeG2TLeVPbv7pg">
@@ -102,13 +108,15 @@ Medication timing is complex. This template requires that there be a substanceAd
         <language>Analysis</language>
         <language>OCL</language>
         <body>SHOULD contain zero or one [0..1] effectiveTime such that it SHALL contain exactly one [1..1] @xsi:type = &quot;PIVL_TS&quot; or &quot;EIVL_TS&quot;</body>
-        <body>self.effectiveTime->exists(ef : datatypes::SXCM_TS | ef.oclIsTypeOf(datatypes::PIVL_TS) xor ef.oclIsTypeOf(datatypes::EIVL_TS))</body>
+        <body>self.effectiveTime->select(ef | ef.oclIsTypeOf(datatypes::PIVL_TS) or ef.oclIsTypeOf(datatypes::EIVL_TS))->size() = 1</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_Ldxa0EIjEeG4bZAl2IGXmQ" name="effectiveTimeOperator" constrainedElement="_0bGJYEIiEeG4bZAl2IGXmQ">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_VcK9oEIjEeG4bZAl2IGXmQ">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>effectiveTime with @xsi:type = &quot;PIVL_TS&quot; or &quot;EIVL_TS&quot; SHALL contain exactly one [1..1] @operator=&quot;A&quot; and</body>
+        <body>self.effectiveTime->select(ef | ef.oclIsTypeOf(datatypes::PIVL_TS) or ef.oclIsTypeOf(datatypes::EIVL_TS))->forAll(eff | eff.operator = vocab::SetOperator::A and eff.operator->size() = 1)</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_cWfuoEInEeG4bZAl2IGXmQ" name="doseQuantityUnit" constrainedElement="_Ldxa0EIjEeG4bZAl2IGXmQ">
@@ -426,7 +434,9 @@ Not pre-coordinated consumable: If the consumable code is not pre-coordinated (e
       <ownedRule xmi:id="_cJ5wsUhUEeGoJ-JrsiBorA" name="containsMedicationOrImmunization" constrainedElement="_iZPioB7lEeGEaLkc3UAsAg">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_cJ5wskhUEeGoJ-JrsiBorA">
           <language>Analysis</language>
+          <language>OCL</language>
           <body>supply act SHALL contain one product/Medication Information or one product/Immunization Medication Information template</body>
+          <body>self.manufacturedProduct.oclIsTypeOf(consol::MedicationInformation) xor self.manufacturedProduct.oclIsTypeOf(consol::ImmunizationMedicationInformation)</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_cJ5ws0hUEeGoJ-JrsiBorA">
@@ -882,7 +892,7 @@ The UDI should be sent in the participantRole/id.</body>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_l6ZVMB7lEeGEaLkc3UAsAg">
         <language>Analysis</language>
         <language>OCL</language>
-        <body>This entryRelationship, if present, SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot; True</body>
+        <body>entryRelationship with target entry Instructions if present, SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot; True</body>
         <body>self.entryRelationship->select(er : cda::EntryRelationship | er.act.oclIsKindOf(consol::Instructions))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
       </specification>
     </ownedRule>
@@ -956,7 +966,9 @@ The UDI should be sent in the participantRole/id.</body>
       <ownedRule xmi:id="_pvZ9UELTEeGo1o5_NrjDhQ" name="containsMedicationOrImmunization" constrainedElement="_iZPioB7lEeGEaLkc3UAsAg">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_1GULMELTEeGo1o5_NrjDhQ">
           <language>Analysis</language>
+          <language>OCL</language>
           <body>supply act SHALL contain one product/Medication Information or one product/Immunization Medication Information template</body>
+          <body>self.manufacturedProduct.oclIsTypeOf(consol::MedicationInformation) xor self.manufacturedProduct.oclIsTypeOf(consol::ImmunizationMedicationInformation)</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_c7HPMEgoEeGdscQrYjYKFw">
@@ -1274,6 +1286,9 @@ The UDI should be sent in the participantRole/id.</body>
   </CDA:PropertyValidation>
   <uml:Class xmi:id="_M7xhgEIxEeG4bZAl2IGXmQ" name="MedicationDispenseAssignedEntity">
     <ownedRule xmi:id="_yWhZkELSEeGo1o5_NrjDhQ" name="addrUSRealm" constrainedElement="_M7xhgEIxEeG4bZAl2IGXmQ">
+      <ownedComment xmi:id="_1NQUUMbjEeGp28IjMvW3Ag">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_0mX8UELSEeGo1o5_NrjDhQ">
         <language>Analysis</language>
         <body>The content of addr SHALL be a conformant US Realm Address (AD.US.FIELDED) (2.16.840.1.113883.10.20.22.5.2)</body>
@@ -1348,4 +1363,6 @@ The UDI should be sent in the participantRole/id.</body>
   <CDA:AssociationValidation xmi:id="_Hfl-kHK2EeGig5KF4CgPyw" base_Association="_FewvQHK2EeGig5KF4CgPyw">
     <ruleId>CONF:7521</ruleId>
   </CDA:AssociationValidation>
+  <CDA:ConstraintValidation xmi:id="_nkhuYMUuEeGigaKyc-jgFA" severity="INFO" base_Constraint="_2NJ3tRSVEeGGzu7fmW9pXw"/>
+  <CDA:ConstraintValidation xmi:id="_t5o2UMUuEeGigaKyc-jgFA" severity="INFO" base_Constraint="_iAoXFhVdEeGQCvUGzi1kDQ"/>
 </xmi:XMI>

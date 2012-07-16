@@ -6,6 +6,9 @@
 DICOM Object Catalog sections are not intended for viewing and contain empty section text.</body>
     </ownedComment>
     <ownedRule xmi:id="_7McMIFwSEeG0y_7i0ygc4g" name="DICOMObjectCatalog" constrainedElement="_WPTWEDVyEeGaW4kr-GbV8Q">
+      <ownedComment xmi:id="_MhkuYMbvEeGp28IjMvW3Ag">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_A2tAQFwTEeG0y_7i0ygc4g">
         <language>Analysis</language>
         <body>A DICOM Object Catalog SHALL be present if the document contains references to DICOM Images. If present, it SHALL be the first section in the document.</body>
@@ -26,6 +29,9 @@ DICOM Object Catalog sections are not intended for viewing and contain empty sec
   </uml:Class>
   <uml:Class xmi:id="_ZcC-4DVyEeGaW4kr-GbV8Q" name="FindingsSection">
     <ownedRule xmi:id="_oD0Z4ECREeGELr7uj3LK_Q" name="findingSectionText" constrainedElement="_ZcC-4DVyEeGaW4kr-GbV8Q">
+      <ownedComment xmi:id="_GBBlwMbfEeGp28IjMvW3Ag">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_rDl9sECREeGELr7uj3LK_Q">
         <language>Analysis</language>
         <body>This section SHOULD contain only the direct observations in the report, with topics such as Reason for Study, History, and Impression placed in separate sections. However, in cases where the source of report content provides a single block of text not separated into these sections, that text SHALL be placed in the Findings section.</body>
@@ -67,19 +73,25 @@ DICOM Object Catalog sections are not intended for viewing and contain empty sec
       <ownedRule xmi:id="_JHwgQEVFEeGAh_iQGJvI5w" name="hasNationalProviderId" constrainedElement="_kAWv0EVEEeGAh_iQGJvI5w">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_MuIKAEVFEeGAh_iQGJvI5w">
           <language>Analysis</language>
+          <language>OCL</language>
           <body>The id SHOULD include zero or one [0..1] id where id/@root =&quot;2.16.840.1.113883.4.6&quot; National Provider Identifier</body>
+          <body>self.id->exists( root='2.16.840.1.113883.4.6' )</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_iiXSYEVFEeGAh_iQGJvI5w" name="hasDICOM" constrainedElement="_kAWv0EVEEeGAh_iQGJvI5w">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_j-wX4EVFEeGAh_iQGJvI5w">
           <language>Analysis</language>
+          <language>OCL</language>
           <body>SHALL contain a valid DICOM personal identification code sequence (@codeSystem is 1.2.840.10008.2.16.4) or an appropriate national health care provider coding system (e.g., NUCC in the U.S., where @code is 2.16.840.1.113883.6.101).</body>
+          <body>self.code.codesystem = '1.2.840.10008.2.16.4' or self.code.codesystem = '2.16.840.1.113883.6.101'</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_OdeLQEVGEeGAh_iQGJvI5w" name="hasAssignedPersonOrRepresentedOrganization" constrainedElement="_kAWv0EVEEeGAh_iQGJvI5w">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_RgOxoEVGEeGAh_iQGJvI5w">
           <language>Analysis</language>
+          <language>OCL</language>
           <body>Every assignedEntity element SHALL have at least one assignedPerson or representedOrganization.</body>
+          <body>not self.assignedPerson->isEmpty() or  not self.representedOrganization->isEmpty()</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_n5NQsEVEEeGAh_iQGJvI5w">
@@ -146,7 +158,9 @@ DICOM Object Catalog sections are not intended for viewing and contain empty sec
       <ownedRule xmi:id="_Lp03oEb2EeGp67IkyTw1fg" name="hasDICOMOrNUCCCode" constrainedElement="_lCnhUEb1EeGp67IkyTw1fg">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_NNEMAEb2EeGp67IkyTw1fg">
           <language>Analysis</language>
+          <language>OCL</language>
           <body>SHALL contain a valid DICOM Organizational Role from DICOM CID 7452  (Value Set 1.2.840.10008.6.1.516)(@codeSystem is 1.2.840.10008.2.16.4) or an appropriate national health care provider coding system (e.g., NUCC in the U.S., where @codeSystem is 2.16.840.1.113883.6.101) (CONF:8889).</body>
+          <body>self.code.codesystem = '1.2.840.10008.2.16.4' or self.code.codesystem = '2.16.840.1.113883.6.101'</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_pdJL4Eb1EeGp67IkyTw1fg">
@@ -214,7 +228,9 @@ DICOM Object Catalog sections are not intended for viewing and contain empty sec
       </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_zyh7IFwZEeG0y_7i0ygc4g">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>code SHOULD contain zero or one [0..1] code=&quot;ASSERTION&quot; (CodeSystem: ActCode 2.16.840.1.113883.5.4)</body>
+        <body>self.code.code = 'ASSERTION' and self.code.codeSystem = '2.16.840.1.113883.5.4'</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_J-F8UUb7EeGp67IkyTw1fg">
@@ -291,10 +307,15 @@ DICOM Object Catalog sections are not intended for viewing and contain empty sec
     <ownedRule xmi:id="_2p6msFwTEeG0y_7i0ygc4g" name="idHasRoot" constrainedElement="_N2wscEb6EeGp67IkyTw1fg">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_5kx1UFwTEeG0y_7i0ygc4g">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>ids SHALL contain exactly one [1..1] @root</body>
+        <body>self.id->forAll( not root.oclIsUndefined() )</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_8ZPhAFwTEeG0y_7i0ygc4g" name="rootHasOID" constrainedElement="_2p6msFwTEeG0y_7i0ygc4g">
+      <ownedComment xmi:id="_JtBqgMbsEeGp28IjMvW3Ag">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="__1uO8FwTEeG0y_7i0ygc4g">
         <language>Analysis</language>
         <body>The @root contains the OID of the study instance UID since DICOM study ids consist only of an OID</body>
@@ -303,31 +324,41 @@ DICOM Object Catalog sections are not intended for viewing and contain empty sec
     <ownedRule xmi:id="_EbZZkFwUEeG0y_7i0ygc4g" name="idNoExtension" constrainedElement="_8ZPhAFwTEeG0y_7i0ygc4g">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_GNg3cFwUEeG0y_7i0ygc4g">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>ids SHALL NOT contain [0..0] @extension</body>
+        <body>self.id->forAll(  extension.oclIsUndefined() )</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_arA2YFwUEeG0y_7i0ygc4g" name="codeQualifier" constrainedElement="_EbZZkFwUEeG0y_7i0ygc4g">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_eVe9AFwUEeG0y_7i0ygc4g">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>code SHALL contain exactly one [1..1] qualifier</body>
+        <body>self.code.qualifier->size() = 1</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_hmNt8FwUEeG0y_7i0ygc4g" name="codeQualifierCode" constrainedElement="_arA2YFwUEeG0y_7i0ygc4g">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_ie5CYFwUEeG0y_7i0ygc4g">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>This qualifier SHALL contain exactly one [1..1] name=&quot;121139&quot; Modality (CodeSystem: DCM 1.2.840.10008.2.16.4)</body>
+        <body>self.code.qualifier.name->one(name : datatypes::CV | name.code = '121139' and name.codeSystem = '1.2.840.10008.2.16.4')</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_oCw6oFwUEeG0y_7i0ygc4g" name="codeQualifierValue" constrainedElement="_hmNt8FwUEeG0y_7i0ygc4g">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_pP0joFwUEeG0y_7i0ygc4g">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>This qualifier SHALL contain exactly one [1..1] value with @xsi:type=&quot;ANY&quot;</body>
+        <body>self.code.qualifier.value->one(val | not val.oclIsUndefined() and val.oclIsKindOf(datatypes::ANY))</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_sPmHcFwUEeG0y_7i0ygc4g" name="codeQualifierValueCode" constrainedElement="_oCw6oFwUEeG0y_7i0ygc4g">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_t8fuIFwUEeG0y_7i0ygc4g">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>The value element code contains a modality code and codeSystem is 1.2.840.10008.2.16.4</body>
+        <body>self.code.qualifier.value->one(val | not val.oclIsUndefined() and val.oclIsKindOf(datatypes::ANY) and val.codeSystem = '1.2.840.10008.2.16.4')</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_N2wscUb6EeGp67IkyTw1fg">
@@ -390,22 +421,31 @@ DICOM Object Catalog sections are not intended for viewing and contain empty sec
     <ownedRule xmi:id="_vIPrMErfEeGJpZWiuxRVIw" name="effectiveTimeHasValue" constrainedElement="_9o7WcEb6EeGp67IkyTw1fg">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_wVIVEErfEeGJpZWiuxRVIw">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>The effectiveTime, if present, SHALL contain exactly one [1..1] @value</body>
+        <body>not self.effectiveTime.oclIsUndefined() implies not self.effectiveTime.value.oclIsUndefined()</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_0eEgYErfEeGJpZWiuxRVIw" name="effectiveTimeNoLow" constrainedElement="_9o7WcEb6EeGp67IkyTw1fg">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_1WsxgErfEeGJpZWiuxRVIw">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>The effectiveTime, if present, SHALL NOT contain [0..0] low</body>
+        <body>not self.effectiveTime.oclIsUndefined() implies self.effectiveTime.low.oclIsUndefined()</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_5IsccErfEeGJpZWiuxRVIw" name="effectiveTimeNoHigh" constrainedElement="_9o7WcEb6EeGp67IkyTw1fg">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_6KtTEErfEeGJpZWiuxRVIw">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>The effectiveTime, if present, SHALL NOT contain [0..0] high</body>
+        <body>not self.effectiveTime.oclIsUndefined() implies self.effectiveTime.high.oclIsUndefined()</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_lZadUFwVEeG0y_7i0ygc4g" name="codeCodeSystem" constrainedElement="_5IsccErfEeGJpZWiuxRVIw">
+      <ownedComment xmi:id="_foULMMbuEeGp28IjMvW3Ag">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_oaEx8FwVEeG0y_7i0ygc4g">
         <language>Analysis</language>
         <body>code SHALL contain codeSystem 1.2.840.10008.2.6.1 DCMUID and @code is an OID for a valid SOP class name UID</body>
@@ -414,19 +454,25 @@ DICOM Object Catalog sections are not intended for viewing and contain empty sec
     <ownedRule xmi:id="_H4BmkFwWEeG0y_7i0ygc4g" name="textMediaType" constrainedElement="_lZadUFwVEeG0y_7i0ygc4g">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_MEj4cFwWEeG0y_7i0ygc4g">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>text, if present, SHALL contain exactly one [1..1] @mediaType=&quot;application/dicom&quot;</body>
+        <body>not self.text.oclIsUndefined() implies self.text.mediaType = 'application/dicom'</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_QcZbYFwWEeG0y_7i0ygc4g" name="textReference" constrainedElement="_H4BmkFwWEeG0y_7i0ygc4g">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_SRyPsFwWEeG0y_7i0ygc4g">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>The text, if present, SHALL contain exactly one [1..1] reference</body>
+        <body>not self.text.oclIsUndefined() implies self.text.reference->size() = 1</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_VYPqUFwWEeG0y_7i0ygc4g" name="textReferenceValue" constrainedElement="_QcZbYFwWEeG0y_7i0ygc4g">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_XhkHQFwWEeG0y_7i0ygc4g">
         <language>Analysis</language>
-        <body>SHALL contain a @value which contains a WADO reference as a URI</body>
+        <language>OCL</language>
+        <body>text/reference SHALL contain a @value which contains a WADO reference as a URI</body>
+        <body>not self.text.oclIsUndefined() implies self.text.reference.value->size() = 1</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_9o7WcUb6EeGp67IkyTw1fg">
@@ -488,10 +534,15 @@ DICOM Object Catalog sections are not intended for viewing and contain empty sec
     <ownedRule xmi:id="_d5wtUErcEeGJpZWiuxRVIw" name="idsHaveRoot" constrainedElement="_vjf-wEb4EeGp67IkyTw1fg">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_etURMErcEeGJpZWiuxRVIw">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>ids SHALL contain exactly one [1..1] @root</body>
+        <body>self.id->forAll( not root.oclIsUndefined() )</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_tQ8SsErcEeGJpZWiuxRVIw" name="rootIsOID" constrainedElement="_vjf-wEb4EeGp67IkyTw1fg">
+      <ownedComment xmi:id="_FYP7QMbvEeGp28IjMvW3Ag">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_0lb0AErcEeGJpZWiuxRVIw">
         <language>Analysis</language>
         <body>The @root contains the OID of the study instance UID since DICOM study ids consist only of an OID</body>
@@ -500,7 +551,9 @@ DICOM Object Catalog sections are not intended for viewing and contain empty sec
     <ownedRule xmi:id="_Be9EIErdEeGJpZWiuxRVIw" name="noIdExtension" constrainedElement="_vjf-wEb4EeGp67IkyTw1fg">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_EVWCcErdEeGJpZWiuxRVIw">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>Such ids SHALL NOT contain [0..0] @extension</body>
+        <body>self.id->forAll(  extension.oclIsUndefined() )</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_vjpIsEb4EeGp67IkyTw1fg">
@@ -929,4 +982,9 @@ In both cases, inFulfillmentOf/order/id is mapped to the DICOM Accession Number 
   <CDA:ConstraintValidation xmi:id="_0JlwQFwZEeG0y_7i0ygc4g" severity="WARNING" base_Constraint="_x-fKoFwZEeG0y_7i0ygc4g">
     <ruleId>CONF:9268</ruleId>
   </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_-7P9MMUuEeGigaKyc-jgFA" base_Constraint="_Lp03oEb2EeGp67IkyTw1fg"/>
+  <CDA:ConstraintValidation xmi:id="_GpCIQMUvEeGigaKyc-jgFA" base_Constraint="_iiXSYEVFEeGAh_iQGJvI5w"/>
+  <CDA:CodeSystemConstraint xmi:id="_Qo4XcMbuEeGp28IjMvW3Ag" base_Property="_g5YnsFwVEeG0y_7i0ygc4g">
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
 </xmi:XMI>

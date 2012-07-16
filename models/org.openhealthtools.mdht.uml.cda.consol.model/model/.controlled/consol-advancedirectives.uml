@@ -85,13 +85,17 @@
         <ownedRule xmi:id="_mZCKQCsgEeGQ5rkpDKAt8A" name="textMediaType" constrainedElement="_TrqsMCsgEeGQ5rkpDKAt8A">
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_0V2qcCsgEeGQ5rkpDKAt8A">
             <language>Analysis</language>
+            <language>OCL</language>
             <body>The text, if present, MAY contain zero or one [0..1] @mediaType</body>
+            <body>not self.text.mediaType.oclIsUndefined()</body>
           </specification>
         </ownedRule>
         <ownedRule xmi:id="_ujQZsCsgEeGQ5rkpDKAt8A" name="textReference" constrainedElement="_TrqsMCsgEeGQ5rkpDKAt8A">
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_5Py04CsgEeGQ5rkpDKAt8A">
             <language>Analysis</language>
+            <language>OCL</language>
             <body>The text, if present, MAY contain zero or one [0..1] reference.&#xA;a. The URL of a referenced advance directive document MAY be present, and SHALL be represented in Observation/reference/ExternalDocument/text/reference.&#xA;b. If a URL is referenced, then it SHOULD have a corresponding linkHTML element in narrative block.</body>
+            <body>not self.text.oclIsUndefined() implies not self.text.reference.oclIsUndefined()</body>
           </specification>
         </ownedRule>
         <generalization xmi:id="_TrqsMSsgEeGQ5rkpDKAt8A">
@@ -161,6 +165,9 @@
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="__8j5wCseEeGQ5rkpDKAt8A" name="CustodianEntity">
           <ownedRule xmi:id="_eIraoCtBEeGqDO62uYTlKA" name="agentName" constrainedElement="__8j5wCseEeGQ5rkpDKAt8A">
+            <ownedComment xmi:id="_CLSysMbREeGp28IjMvW3Ag">
+              <body>UNIMPLEMENTABLE</body>
+            </ownedComment>
             <specification xmi:type="uml:OpaqueExpression" xmi:id="_gUQhYCtBEeGqDO62uYTlKA">
               <language>Analysis</language>
               <body>The name of the agent who can provide a copy of the Advance Directive SHALL be recorded in the &lt;name> element inside the &lt;playingEntity> element</body>

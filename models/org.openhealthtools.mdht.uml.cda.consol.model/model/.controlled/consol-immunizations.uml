@@ -36,7 +36,9 @@
     <ownedRule xmi:id="_4_lrIEX6EeG6e5lG0YsSyQ" name="textReferenceValue" constrainedElement="_aXWsMCQ9EeG4DdjGPr5_Vg">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_92QfIEX6EeG6e5lG0YsSyQ">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>This reference/@value SHALL begin with a '#' and SHALL point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1.</body>
+        <body>not self.text.reference.value.oclIsUndefined() implies not self.getSection().text.getText(self.text.reference.value.substring(2, self.text.reference.value.size())).oclIsUndefined()</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_COIeUEX7EeG6e5lG0YsSyQ" name="doseQuantityUnit" constrainedElement="_aXWsMCQ9EeG4DdjGPr5_Vg">

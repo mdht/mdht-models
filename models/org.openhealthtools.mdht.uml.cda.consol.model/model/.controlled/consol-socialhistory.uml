@@ -79,7 +79,7 @@
         <language>Analysis</language>
         <language>OCL</language>
         <body>reference/@value SHALL begin with a '#' and SHALL point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1) (CONF:8895).</body>
-        <body>not self.getSection().text.getText(self.code.originalText.reference.value.substring(2, self.code.originalText.reference.value.size())).oclIsUndefined()</body>
+        <body>not self.code.originalText.reference.value.oclIsUndefined() implies not self.getSection().text.getText(self.code.originalText.reference.value.substring(2, self.code.originalText.reference.value.size())).oclIsUndefined()</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_2Jii8hSVEeGGzu7fmW9pXw">

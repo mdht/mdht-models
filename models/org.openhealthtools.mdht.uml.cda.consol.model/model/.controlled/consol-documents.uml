@@ -19,6 +19,9 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_NiUccFcfEeGCdLgBm6VHOQ" name="USRealmDateAndTime" constrainedElement="_2DNRcBSVEeGGzu7fmW9pXw">
+      <ownedComment xmi:id="_3X_-UMbHEeGp28IjMvW3Ag">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_U7RnAFcfEeGCdLgBm6VHOQ">
         <language>Analysis</language>
         <body>The US Realm Clinical Document Date and Time datatype flavor records date and time information. If no time zone offset &#xD;&#xA;is provided, you can make no assumption about time, unless you have made a local exchange agreement.&#xD;&#xA;This data type uses the same rules as US Realm Date and Time (DTM.US.FIELDED),  but is used with the effectiveTime &#xD;&#xA;element.</body>
@@ -33,6 +36,56 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
         <language>OCL</language>
         <body>The US Realm Patient Name datatype flavor is a set of reusable constraints that can be used for the patient or any other&#xD;&#xA; person. It requires a first (given) and last (family) name. If a patient or person has only one name part (e.g., &#xD;&#xA;patient with first name only) place the name part in the field required by the organization. Use the appropriate &#xD;&#xA;nullFlavor, &quot;Not Applicable&quot; (NA), in the other field.</body>
         <body>datatypes::PN.allInstances()->reject(&#xD;&#xA;    name : datatypes::PN |&#xD;&#xA;    name.use->forAll(&#xD;&#xA;        use : vocab::EntityNameUse |&#xD;&#xA;        use=vocab::EntityNameUse::A or&#xD;&#xA;        use=vocab::EntityNameUse::ABC or&#xD;&#xA;        use=vocab::EntityNameUse::ASGN or&#xD;&#xA;        use=vocab::EntityNameUse::C or&#xD;&#xA;        use=vocab::EntityNameUse::I or&#xD;&#xA;        use=vocab::EntityNameUse::IDE or&#xD;&#xA;        use=vocab::EntityNameUse::L or&#xD;&#xA;        use=vocab::EntityNameUse::P or&#xD;&#xA;        use=vocab::EntityNameUse::PHON or&#xD;&#xA;        use=vocab::EntityNameUse::R or&#xD;&#xA;        use=vocab::EntityNameUse::SNDX or&#xD;&#xA;        use=vocab::EntityNameUse::SRCH or&#xD;&#xA;        use=vocab::EntityNameUse::SYL&#xD;&#xA;    ) and&#xD;&#xA;    name.prefix->forAll(&#xD;&#xA;        prefix : datatypes::ENXP |&#xD;&#xA;        prefix.qualifier->forAll(&#xD;&#xA;            qualifier : vocab::EntityNamePartQualifier |&#xD;&#xA;            qualifier=vocab::EntityNamePartQualifier::AC or&#xD;&#xA;            qualifier=vocab::EntityNamePartQualifier::AD or&#xD;&#xA;            qualifier=vocab::EntityNamePartQualifier::BR or&#xD;&#xA;            qualifier=vocab::EntityNamePartQualifier::CL or&#xD;&#xA;            qualifier=vocab::EntityNamePartQualifier::IN or&#xD;&#xA;            qualifier=vocab::EntityNamePartQualifier::NB or&#xD;&#xA;            qualifier=vocab::EntityNamePartQualifier::PR or&#xD;&#xA;            qualifier=vocab::EntityNamePartQualifier::SP or&#xD;&#xA;            qualifier=vocab::EntityNamePartQualifier::TITLE or&#xD;&#xA;            qualifier=vocab::EntityNamePartQualifier::VV&#xD;&#xA;        )&#xD;&#xA;    ) and&#xD;&#xA;    name.given->size() >= 1 and&#xD;&#xA;    name.given->forAll(&#xD;&#xA;        given : datatypes::ENXP |&#xD;&#xA;        given.qualifier->forAll(&#xD;&#xA;            qualifier : vocab::EntityNamePartQualifier |&#xD;&#xA;&#x9;    qualifier=vocab::EntityNamePartQualifier::AC or&#xD;&#xA;&#x9;    qualifier=vocab::EntityNamePartQualifier::AD or&#xD;&#xA;&#x9;    qualifier=vocab::EntityNamePartQualifier::BR or&#xD;&#xA;&#x9;    qualifier=vocab::EntityNamePartQualifier::CL or&#xD;&#xA;&#x9;    qualifier=vocab::EntityNamePartQualifier::IN or&#xD;&#xA;&#x9;    qualifier=vocab::EntityNamePartQualifier::NB or&#xD;&#xA;&#x9;    qualifier=vocab::EntityNamePartQualifier::PR or&#xD;&#xA;&#x9;    qualifier=vocab::EntityNamePartQualifier::SP or&#xD;&#xA;&#x9;    qualifier=vocab::EntityNamePartQualifier::TITLE or&#xD;&#xA;&#x9;    qualifier=vocab::EntityNamePartQualifier::VV&#xD;&#xA;        )&#xD;&#xA;    ) and&#xD;&#xA;    name.family->size() = 1 and&#xD;&#xA;    name.family->forAll(&#xD;&#xA;        family : datatypes::ENXP |&#xD;&#xA;        family.qualifier->forAll(&#xD;&#xA;            qualifier : vocab::EntityNamePartQualifier |&#xD;&#xA;&#x9;    qualifier=vocab::EntityNamePartQualifier::AC or&#xD;&#xA;&#x9;    qualifier=vocab::EntityNamePartQualifier::AD or&#xD;&#xA;&#x9;    qualifier=vocab::EntityNamePartQualifier::BR or&#xD;&#xA;&#x9;    qualifier=vocab::EntityNamePartQualifier::CL or&#xD;&#xA;&#x9;    qualifier=vocab::EntityNamePartQualifier::IN or&#xD;&#xA;&#x9;    qualifier=vocab::EntityNamePartQualifier::NB or&#xD;&#xA;&#x9;    qualifier=vocab::EntityNamePartQualifier::PR or&#xD;&#xA;&#x9;    qualifier=vocab::EntityNamePartQualifier::SP or&#xD;&#xA;&#x9;    qualifier=vocab::EntityNamePartQualifier::TITLE or&#xD;&#xA;&#x9;    qualifier=vocab::EntityNamePartQualifier::VV&#xD;&#xA;        )&#xD;&#xA;    ) and&#xD;&#xA;    name.suffix->size() &lt;= 1 and&#xD;&#xA;    name.suffix->forAll(&#xD;&#xA;        suffix : datatypes::ENXP |&#xD;&#xA;        suffix.qualifier->forAll(&#xD;&#xA;            qualifier : vocab::EntityNamePartQualifier |&#xD;&#xA;&#x9;    qualifier=vocab::EntityNamePartQualifier::AC or&#xD;&#xA;&#x9;    qualifier=vocab::EntityNamePartQualifier::AD or&#xD;&#xA;&#x9;    qualifier=vocab::EntityNamePartQualifier::BR or&#xD;&#xA;&#x9;    qualifier=vocab::EntityNamePartQualifier::CL or&#xD;&#xA;&#x9;    qualifier=vocab::EntityNamePartQualifier::IN or&#xD;&#xA;&#x9;    qualifier=vocab::EntityNamePartQualifier::NB or&#xD;&#xA;&#x9;    qualifier=vocab::EntityNamePartQualifier::PR or&#xD;&#xA;&#x9;    qualifier=vocab::EntityNamePartQualifier::SP or&#xD;&#xA;&#x9;    qualifier=vocab::EntityNamePartQualifier::TITLE or&#xD;&#xA;&#x9;    qualifier=vocab::EntityNamePartQualifier::VV&#xD;&#xA;        )&#xD;&#xA;    )&#xD;&#xA;)</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_jXOYoMa8EeGp28IjMvW3Ag" name="typeIdRoot" constrainedElement="_2DNRcBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_p0SisMa8EeGp28IjMvW3Ag">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>typeId SHALL contain exactly one [1..1] @root=&quot;2.16.840.1.113883.1.3&quot;</body>
+        <body>not self.typeId.oclIsUndefined() and self.typeId.root = '2.16.840.1.113883.1.3'</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_meGqAMa8EeGp28IjMvW3Ag" name="typeIdExtension" constrainedElement="_2DNRcBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_q-aMcMa8EeGp28IjMvW3Ag">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>typeId SHALL contain exactly one [1..1] @extension=&quot;POCD_HD000040&quot;</body>
+        <body>not self.typeId.oclIsUndefined() and self.typeId.extension = 'POCD_HD000040'</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_BEBYsMa9EeGp28IjMvW3Ag" name="idUniqueIdentifier" constrainedElement="_2DNRcBSVEeGGzu7fmW9pXw">
+      <ownedComment xmi:id="_5B0b0MbHEeGp28IjMvW3Ag">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_GDzscMa9EeGp28IjMvW3Ag">
+        <language>Analysis</language>
+        <body>id SHALL be a globally unique identifier for the document</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_JVk_MMa9EeGp28IjMvW3Ag" name="codeDocumentType" constrainedElement="_BEBYsMa9EeGp28IjMvW3Ag">
+      <ownedComment xmi:id="_5YLtYMbHEeGp28IjMvW3Ag">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_NAJMcMa9EeGp28IjMvW3Ag">
+        <language>Analysis</language>
+        <body>code SHALL specify the particular kind of document (e.g. History and Physical, Discharge Summary, Progress Note).</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_QNCUUMa_EeGp28IjMvW3Ag" name="setIdVersionNumber" constrainedElement="_2DNRcBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_YGu0cMa_EeGp28IjMvW3Ag">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>If setId is present versionNumber SHALL be present</body>
+        <body>not self.setId.oclIsUndefined() implies not self.versionNumber.oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_SYLWMMa_EeGp28IjMvW3Ag" name="VersionNumberSetId" constrainedElement="_QNCUUMa_EeGp28IjMvW3Ag">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_cEBwcMa_EeGp28IjMvW3Ag">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>If versionNumber is present setId SHALL be present</body>
+        <body>not self.versionNumber.oclIsUndefined() implies not self.setId.oclIsUndefined()</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_2D-tgBSVEeGGzu7fmW9pXw">
@@ -64,6 +117,9 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2DNR-hSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2DNR6xSVEeGGzu7fmW9pXw" name="effectiveTime" visibility="private" aggregation="composite">
+      <ownedComment xmi:id="_SCfsAMa9EeGp28IjMvW3Ag">
+        <body>Signifies the document creation time, when the document first came into being. Where the CDA document is a transform from an original document in some other format, the ClinicalDocument.effectiveTime is the time the original document is created. The time when the transform occurred is not currently represented in CDA (CONF:9995)</body>
+      </ownedComment>
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_4ysYYD59Ed6cla2oXsPtlA"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2DNR6RSVEeGGzu7fmW9pXw" name="confidentialityCode" visibility="private" aggregation="composite">
@@ -410,7 +466,7 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
             <language>Analysis</language>
             <language>OCL</language>
             <body>This assignedAuthor SHALL contain exactly one  [1..1] assignedPerson or assignedAuthoringDevice</body>
-            <body>assignedPerson.oclIsUndefined() xor assignedAuthoringDevice.oclIsUndefined()</body>
+            <body>not assignedPerson.oclIsUndefined() xor not assignedAuthoringDevice.oclIsUndefined()</body>
           </specification>
         </ownedRule>
         <ownedRule xmi:id="_BEoOQDVVEeGIw7CntkyPQw" name="hasNationalProviderIdentifier" constrainedElement="_6j680CytEeGMXrZ0DiQwGg">
@@ -866,7 +922,9 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
       <ownedRule xmi:id="_PAeEwDVaEeGIw7CntkyPQw" name="useINDRoleclassCodes" constrainedElement="_Zi4mACzHEeGMXrZ0DiQwGg">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_QbEagDVaEeGIw7CntkyPQw">
           <language>Analysis</language>
+          <language>OCL</language>
           <body>Unless otherwise specified by the document specific header constraints, when participant/@typeCode is IND, associatedEntity/@classCode SHALL be selected from ValueSet INDRoleclassCodes 2.16.840.1.113883.11.20.9.33 STATIC 2011-09-30.</body>
+          <body>self.typeCode = vocab::ParticipationType::IND implies (self.associatedEntity.classCode = vocab::RoleClassAssociative::PRS or self.associatedEntity.classCode = vocab::RoleClassAssociative::NOK or self.associatedEntity.classCode = vocab::RoleClassAssociative::CAREGIVER or self.associatedEntity.classCode = vocab::RoleClassAssociative::AGNT or self.associatedEntity.classCode = vocab::RoleClassAssociative::GUAR or self.associatedEntity.classCode = vocab::RoleClassAssociative::ECON)</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_Zi4mASzHEeGMXrZ0DiQwGg">
@@ -1470,10 +1528,15 @@ The CCD is a core data set of the most relevant administrative, demographic, and
         <ownedRule xmi:id="_ZnQjMEIREeGfG6GbxF_VQQ" name="hasAssignedPersonOrRepresentedOrganization" constrainedElement="_Q-uAEEIREeGfG6GbxF_VQQ">
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_be6oYEIREeGfG6GbxF_VQQ">
             <language>Analysis</language>
+            <language>OCL</language>
             <body>SHALL contain exactly one [1..1] assignedPerson or exactly one one [1..1]  representedOrganization.</body>
+            <body>(not self.assignedPerson.oclIsUndefined()) xor (not self.representedOrganization.oclIsUndefined())</body>
           </specification>
         </ownedRule>
         <ownedRule xmi:id="_iAmMsEIREeGfG6GbxF_VQQ" name="hasRepresentOrganization" constrainedElement="_Q-uAEEIREeGfG6GbxF_VQQ">
+          <ownedComment xmi:id="_6Q1VMMbeEeGp28IjMvW3Ag">
+            <body>UNIMPLEMENTABLE</body>
+          </ownedComment>
           <specification xmi:type="uml:OpaqueExpression" xmi:id="_jklH8EIREeGfG6GbxF_VQQ">
             <language>Analysis</language>
             <body>If assignedAuthor has an associated representedOrganization with no assignedPerson or assignedAuthoringDevice, then the value for &quot;ClinicalDocument/author/assignedAuthor/id/@NullFlavor&quot; SHALL be &quot;NA&quot; &quot;Not applicable&quot; 2.16.840.1.113883.5.1008 NullFlavor STATIC.</body>
@@ -4036,10 +4099,15 @@ The Progress Note recommends use of a single document type code, 11506-3 &quot;S
     <ownedRule xmi:id="__CBy8EUvEeGdQ4KWAmnbhw" name="useDiagnosticImagingCode" constrainedElement="_XwBooEUuEeGdQ4KWAmnbhw">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_RwFNgEUwEeGdQ4KWAmnbhw">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>This code SHOULD contain zero or one [0..1] @code=&quot;18748-4&quot; Diagnostic Imaging Report (CodeSystem: LOINC2.16.840.1.113883.6.1)</body>
+        <body>not self.code.oclIsUndefined() and self.code.code = '18748-4'</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_wectUErYEeGJpZWiuxRVIw" name="objectCatalogSectionIsFirst" constrainedElement="_XwBooEUuEeGdQ4KWAmnbhw">
+      <ownedComment xmi:id="_ew2iQMbvEeGp28IjMvW3Ag">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_yz6I0ErYEeGJpZWiuxRVIw">
         <language>Analysis</language>
         <body>The DICOM Object Catalog section (templateId 2.16.840.1.113883.10.20.6.1.1), if present, SHALL be the first section in the document Body</body>
@@ -4048,7 +4116,9 @@ The Progress Note recommends use of a single document type code, 11506-3 &quot;S
     <ownedRule xmi:id="_CldWAErZEeGJpZWiuxRVIw" name="allSectionsHaveTitle" constrainedElement="_XwBooEUuEeGdQ4KWAmnbhw">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_DuVCkErZEeGJpZWiuxRVIw">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>With the exception of the DICOM Object Catalog (templateId 2.16.840.1.113883.10.20.6.1.1), all sections within the Diagnostic Imaging Report content SHOULD contain a title element</body>
+        <body>self.getAllSections()->forAll(section : cda::Section | not section.title.oclIsUndefined())</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_OjhqgErZEeGJpZWiuxRVIw" name="sectionCodes" constrainedElement="_XwBooEUuEeGdQ4KWAmnbhw">
@@ -4075,7 +4145,9 @@ The Progress Note recommends use of a single document type code, 11506-3 &quot;S
     <ownedRule xmi:id="_5AKaQErZEeGJpZWiuxRVIw" name="sectionsHaveText" constrainedElement="_XwBooEUuEeGdQ4KWAmnbhw">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_6sfZMErZEeGJpZWiuxRVIw">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>Apart from the DICOM Object Catalog (templateId 2.16.840.1.113883.10.20.6.1.1), all other instances of section SHALL contain at least one text element or one or more component elements</body>
+        <body>self.getAllSections()->forAll(section : cda::Section | not section.text.oclIsUndefined())</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_E-0koEraEeGJpZWiuxRVIw" name="hasPCDATA" constrainedElement="_XwBooEUuEeGdQ4KWAmnbhw">
@@ -4105,7 +4177,6 @@ The DIR document recommends use of a single document type code, 18748-4 &quot;Di
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Z-7JIUUuEeGdQ4KWAmnbhw" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Z-7JIkUuEeGdQ4KWAmnbhw" value="1"/>
-      <defaultValue xmi:type="uml:LiteralString" xmi:id="_8mwqYEUvEeGdQ4KWAmnbhw" value="18748-4"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_Z_g_AEUuEeGdQ4KWAmnbhw" name="id" visibility="private" aggregation="composite" redefinedProperty="_2DNR7RSVEeGGzu7fmW9pXw">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
@@ -4366,7 +4437,7 @@ OIDs SHALL be no more than 64 characters in length..</body>
   <CDA:PropertyValidation xmi:id="_25HzYEb2EeGp67IkyTw1fg" base_Property="_yjuD4EVKEeGAh_iQGJvI5w">
     <ruleId>CONF:8437</ruleId>
   </CDA:PropertyValidation>
-  <CDA:ConstraintValidation xmi:id="_GXwi8ErZEeGJpZWiuxRVIw" base_Constraint="_CldWAErZEeGJpZWiuxRVIw">
+  <CDA:ConstraintValidation xmi:id="_GXwi8ErZEeGJpZWiuxRVIw" severity="WARNING" base_Constraint="_CldWAErZEeGJpZWiuxRVIw">
     <ruleId>CONF:9409</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_bXivkErZEeGJpZWiuxRVIw" severity="WARNING" base_Constraint="_OjhqgErZEeGJpZWiuxRVIw">
@@ -4503,4 +4574,31 @@ OIDs SHALL be no more than 64 characters in length..</body>
   <CDA:PropertyValidation xmi:id="_8ccgkHK9EeGig5KF4CgPyw" severity="WARNING" base_Property="_nLKckSymEeGMXrZ0DiQwGg"/>
   <CDA:PropertyValidation xmi:id="_Q2rJEHK-EeGig5KF4CgPyw" severity="INFO" base_Property="_ZGMo0CytEeGMXrZ0DiQwGg"/>
   <CDA:PropertyValidation xmi:id="_fgoHwHT9EeGB7fSw5LjeyA" base_Property="_tzLskDzEEeGMk58Mp9-wVA"/>
+  <CDA:ConstraintValidation xmi:id="_j5wYsMUhEeGigaKyc-jgFA" severity="WARNING" base_Constraint="_BEoOQDVVEeGIw7CntkyPQw"/>
+  <CDA:ConstraintValidation xmi:id="_v79mUMUhEeGigaKyc-jgFA" severity="WARNING" base_Constraint="_nlqjwTVYEeGIw7CntkyPQw"/>
+  <CDA:ConstraintValidation xmi:id="_z9MAEMUhEeGigaKyc-jgFA" severity="WARNING" base_Constraint="__ERYsDVXEeGIw7CntkyPQw"/>
+  <CDA:ConstraintValidation xmi:id="_25YrcMUhEeGigaKyc-jgFA" severity="WARNING" base_Constraint="_UfqGwDVZEeGIw7CntkyPQw"/>
+  <CDA:ConstraintValidation xmi:id="_5CaNcMUhEeGigaKyc-jgFA" severity="WARNING" base_Constraint="_JKUtkDVWEeGIw7CntkyPQw"/>
+  <CDA:ConstraintValidation xmi:id="__LnnYMUhEeGigaKyc-jgFA" base_Constraint="_CAPIoDVaEeGIw7CntkyPQw"/>
+  <CDA:ConstraintValidation xmi:id="_AcjDwMUiEeGigaKyc-jgFA" base_Constraint="_PAeEwDVaEeGIw7CntkyPQw"/>
+  <CDA:ConstraintValidation xmi:id="_sR3YYMa8EeGp28IjMvW3Ag" base_Constraint="_jXOYoMa8EeGp28IjMvW3Ag">
+    <ruleId>CONF:5250</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_uWPq8Ma8EeGp28IjMvW3Ag" base_Constraint="_meGqAMa8EeGp28IjMvW3Ag">
+    <ruleId>CONF:5251</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_GZZh8Ma9EeGp28IjMvW3Ag" base_Constraint="_BEBYsMa9EeGp28IjMvW3Ag">
+    <ruleId>CONF:9991</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_K5ea4Ma9EeGp28IjMvW3Ag" base_Constraint="_JVk_MMa9EeGp28IjMvW3Ag">
+    <ruleId>CONF:9992</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_VcpMwMa_EeGp28IjMvW3Ag" base_Constraint="_QNCUUMa_EeGp28IjMvW3Ag">
+    <ruleId>CONF:6380</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_V4fbQMa_EeGp28IjMvW3Ag" base_Constraint="_SYLWMMa_EeGp28IjMvW3Ag">
+    <ruleId>CONF:6387</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_do2YYMbvEeGp28IjMvW3Ag" base_Constraint="_wectUErYEeGJpZWiuxRVIw"/>
+  <CDA:ConstraintValidation xmi:id="_yT_xwMbvEeGp28IjMvW3Ag" base_Constraint="_gAs2kEraEeGJpZWiuxRVIw"/>
 </xmi:XMI>
