@@ -57,8 +57,7 @@ public class MedicationInformationManufacturedMaterialImpl extends MaterialImpl 
 	 */
 	public boolean validateMedicationInformationManufacturedMaterialCodeOriginalText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationInformationManufacturedMaterialOperations.validateMedicationInformationManufacturedMaterialCodeOriginalText(
-			this, diagnostics, context);
+		return MedicationInformationManufacturedMaterialOperations.validateMedicationInformationManufacturedMaterialCodeOriginalText(this, diagnostics, context);
 	}
 
 	/**
@@ -68,8 +67,7 @@ public class MedicationInformationManufacturedMaterialImpl extends MaterialImpl 
 	 */
 	public boolean validateMedicationInformationManufacturedMaterialReference(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationInformationManufacturedMaterialOperations.validateMedicationInformationManufacturedMaterialReference(
-			this, diagnostics, context);
+		return MedicationInformationManufacturedMaterialOperations.validateMedicationInformationManufacturedMaterialReference(this, diagnostics, context);
 	}
 
 	/**
@@ -79,8 +77,7 @@ public class MedicationInformationManufacturedMaterialImpl extends MaterialImpl 
 	 */
 	public boolean validateMedicationInformationManufacturedMaterialCodeTranslation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationInformationManufacturedMaterialOperations.validateMedicationInformationManufacturedMaterialCodeTranslation(
-			this, diagnostics, context);
+		return MedicationInformationManufacturedMaterialOperations.validateMedicationInformationManufacturedMaterialCodeTranslation(this, diagnostics, context);
 	}
 
 	/**
@@ -90,8 +87,7 @@ public class MedicationInformationManufacturedMaterialImpl extends MaterialImpl 
 	 */
 	public boolean validateMedicationInformationManufacturedMaterialCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationInformationManufacturedMaterialOperations.validateMedicationInformationManufacturedMaterialCode(
-			this, diagnostics, context);
+		return MedicationInformationManufacturedMaterialOperations.validateMedicationInformationManufacturedMaterialCode(this, diagnostics, context);
 	}
 
 	/**
@@ -100,7 +96,7 @@ public class MedicationInformationManufacturedMaterialImpl extends MaterialImpl 
 	 * @generated
 	 */
 	public MedicationInformationManufacturedMaterial init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // MedicationInformationManufacturedMaterialImpl

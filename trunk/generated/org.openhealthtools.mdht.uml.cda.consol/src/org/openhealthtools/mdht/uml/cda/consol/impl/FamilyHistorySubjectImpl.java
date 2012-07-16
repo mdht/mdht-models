@@ -56,8 +56,7 @@ public class FamilyHistorySubjectImpl extends SubjectImpl implements FamilyHisto
 	 */
 	public boolean validateFamilyHistorySubjectRelatedSubjectClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FamilyHistorySubjectOperations.validateFamilyHistorySubjectRelatedSubjectClassCode(
-			this, diagnostics, context);
+		return FamilyHistorySubjectOperations.validateFamilyHistorySubjectRelatedSubjectClassCode(this, diagnostics, context);
 	}
 
 	/**
@@ -77,8 +76,7 @@ public class FamilyHistorySubjectImpl extends SubjectImpl implements FamilyHisto
 	 */
 	public boolean validateFamilyHistorySubjectRelatedSubjectCodeValueSet(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FamilyHistorySubjectOperations.validateFamilyHistorySubjectRelatedSubjectCodeValueSet(
-			this, diagnostics, context);
+		return FamilyHistorySubjectOperations.validateFamilyHistorySubjectRelatedSubjectCodeValueSet(this, diagnostics, context);
 	}
 
 	/**
@@ -88,8 +86,16 @@ public class FamilyHistorySubjectImpl extends SubjectImpl implements FamilyHisto
 	 */
 	public boolean validateFamilyHistorySubjectRelatedSubjectSubject(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FamilyHistorySubjectOperations.validateFamilyHistorySubjectRelatedSubjectSubject(
-			this, diagnostics, context);
+		return FamilyHistorySubjectOperations.validateFamilyHistorySubjectRelatedSubjectSubject(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateFamilyHistorySubjectRelatedSubjectSubjectId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return FamilyHistorySubjectOperations.validateFamilyHistorySubjectRelatedSubjectSubjectId(this, diagnostics, context);
 	}
 
 	/**
@@ -99,8 +105,7 @@ public class FamilyHistorySubjectImpl extends SubjectImpl implements FamilyHisto
 	 */
 	public boolean validateFamilyHistorySubjectRelatedSubjectSubjectAdmGenderCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FamilyHistorySubjectOperations.validateFamilyHistorySubjectRelatedSubjectSubjectAdmGenderCode(
-			this, diagnostics, context);
+		return FamilyHistorySubjectOperations.validateFamilyHistorySubjectRelatedSubjectSubjectAdmGenderCode(this, diagnostics, context);
 	}
 
 	/**
@@ -110,8 +115,7 @@ public class FamilyHistorySubjectImpl extends SubjectImpl implements FamilyHisto
 	 */
 	public boolean validateFamilyHistorySubjectRelatedSubjectSubjectBirthTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FamilyHistorySubjectOperations.validateFamilyHistorySubjectRelatedSubjectSubjectBirthTime(
-			this, diagnostics, context);
+		return FamilyHistorySubjectOperations.validateFamilyHistorySubjectRelatedSubjectSubjectBirthTime(this, diagnostics, context);
 	}
 
 	/**
@@ -121,8 +125,7 @@ public class FamilyHistorySubjectImpl extends SubjectImpl implements FamilyHisto
 	 */
 	public boolean validateFamilyHistorySubjectRelatedSubjectSubjectDeceasedInd(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FamilyHistorySubjectOperations.validateFamilyHistorySubjectRelatedSubjectSubjectDeceasedInd(
-			this, diagnostics, context);
+		return FamilyHistorySubjectOperations.validateFamilyHistorySubjectRelatedSubjectSubjectDeceasedInd(this, diagnostics, context);
 	}
 
 	/**
@@ -132,8 +135,7 @@ public class FamilyHistorySubjectImpl extends SubjectImpl implements FamilyHisto
 	 */
 	public boolean validateFamilyHistorySubjectRelatedSubjectSubjectDeceasedTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FamilyHistorySubjectOperations.validateFamilyHistorySubjectRelatedSubjectSubjectDeceasedTime(
-			this, diagnostics, context);
+		return FamilyHistorySubjectOperations.validateFamilyHistorySubjectRelatedSubjectSubjectDeceasedTime(this, diagnostics, context);
 	}
 
 	/**
@@ -142,7 +144,7 @@ public class FamilyHistorySubjectImpl extends SubjectImpl implements FamilyHisto
 	 * @generated
 	 */
 	public FamilyHistorySubject init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // FamilyHistorySubjectImpl

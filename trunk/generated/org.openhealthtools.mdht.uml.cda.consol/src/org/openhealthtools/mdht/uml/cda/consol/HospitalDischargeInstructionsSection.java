@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getHospitalDischargeInstructionsSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.displayName='Hospital Discharge Instructions' templateId.root='2.16.840.1.113883.10.20.22.2.41' constraints.validation.error='HospitalDischargeInstructionsSectionTemplateId HospitalDischargeInstructionsSectionCode HospitalDischargeInstructionsSectionTitle HospitalDischargeInstructionsSectionText' code.codeSystemName='LOINC' code.code='8653-8'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='HospitalDischargeInstructionsSectionTemplateId HospitalDischargeInstructionsSectionCode HospitalDischargeInstructionsSectionTitle HospitalDischargeInstructionsSectionText' templateId.root='2.16.840.1.113883.10.20.22.2.41' code.code='8653-8' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Hospital Discharge Instructions'"
  * @generated
  */
 public interface HospitalDischargeInstructionsSection extends Section {

@@ -109,7 +109,7 @@ public class AllergyStatusObservationImpl extends ObservationImpl implements All
 	 * @generated
 	 */
 	public AllergyStatusObservation init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // AllergyStatusObservationImpl

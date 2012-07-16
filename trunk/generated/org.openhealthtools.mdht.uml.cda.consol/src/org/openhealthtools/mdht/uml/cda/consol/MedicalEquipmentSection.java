@@ -23,7 +23,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getMedicalEquipmentSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.displayName='Medical Equipment' templateId.root='2.16.840.1.113883.10.20.22.2.23' constraints.validation.error='MedicalEquipmentSectionTemplateId MedicalEquipmentSectionCode MedicalEquipmentSectionTitle MedicalEquipmentSectionText' code.codeSystemName='LOINC' constraints.validation.warning='MedicalEquipmentSectionNonMedicinalSupplyActivity' code.code='46264-8'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MedicalEquipmentSectionTemplateId MedicalEquipmentSectionCode MedicalEquipmentSectionTitle MedicalEquipmentSectionText' templateId.root='2.16.840.1.113883.10.20.22.2.23' code.code='46264-8' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Medical Equipment' constraints.validation.warning='MedicalEquipmentSectionNonMedicinalSupplyActivity'"
  * @generated
  */
 public interface MedicalEquipmentSection extends Section {

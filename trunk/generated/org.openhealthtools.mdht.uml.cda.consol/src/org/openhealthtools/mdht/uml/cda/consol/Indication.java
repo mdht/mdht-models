@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getIndication()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation value.codeSystemName='SNOMEDCT' statusCode.code='completed' code.codeSystem='2.16.840.1.113883.6.96' templateId.root='2.16.840.1.113883.10.20.22.4.19' constraints.validation.error='IndicationTemplateId IndicationClassCode IndicationMoodCode IndicationId IndicationStatusCode' code.codeSystemName='SNOMEDCT' constraints.validation.warning='IndicationCode IndicationEffectiveTime IndicationValue IndicationValueP' classCode='OBS' moodCode='EVN' constraints.validation.info='IndicationCodeNullFlavor' value.codeSystem='2.16.840.1.113883.6.96'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='IndicationTemplateId IndicationClassCode IndicationMoodCode IndicationId IndicationStatusCode' templateId.root='2.16.840.1.113883.10.20.22.4.19' constraints.validation.info='IndicationCodeNullFlavor' classCode='OBS' moodCode='EVN' code.codeSystem='2.16.840.1.113883.6.96' code.codeSystemName='SNOMEDCT' constraints.validation.warning='IndicationCode IndicationEffectiveTime IndicationValue IndicationValueP' statusCode.code='completed' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT'"
  * @generated
  */
 public interface Indication extends Observation {

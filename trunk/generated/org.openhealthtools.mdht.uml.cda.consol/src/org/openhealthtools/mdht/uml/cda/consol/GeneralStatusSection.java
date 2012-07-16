@@ -26,7 +26,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getGeneralStatusSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.displayName='GENERAL STATUS' templateId.root='2.16.840.1.113883.10.20.2.5' constraints.validation.error='GeneralStatusSectionTemplateId GeneralStatusSectionCode GeneralStatusSectionTitle GeneralStatusSectionText' code.codeSystemName='LOINC' code.code='10210-3'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='GeneralStatusSectionTemplateId GeneralStatusSectionCode GeneralStatusSectionTitle GeneralStatusSectionText' templateId.root='2.16.840.1.113883.10.20.2.5' code.code='10210-3' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='GENERAL STATUS'"
  * @generated
  */
 public interface GeneralStatusSection extends Section {

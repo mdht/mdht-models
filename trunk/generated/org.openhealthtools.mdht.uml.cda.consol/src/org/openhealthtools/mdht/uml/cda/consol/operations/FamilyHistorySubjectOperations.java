@@ -36,6 +36,7 @@ import org.openhealthtools.mdht.uml.cda.operations.SubjectOperations;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FamilyHistorySubject#validateFamilyHistorySubjectRelatedSubjectCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Subject Related Subject Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FamilyHistorySubject#validateFamilyHistorySubjectRelatedSubjectCodeValueSet(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Subject Related Subject Code Value Set</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FamilyHistorySubject#validateFamilyHistorySubjectRelatedSubjectSubject(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Subject Related Subject Subject</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FamilyHistorySubject#validateFamilyHistorySubjectRelatedSubjectSubjectId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Subject Related Subject Subject Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FamilyHistorySubject#validateFamilyHistorySubjectRelatedSubjectSubjectAdmGenderCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Subject Related Subject Subject Adm Gender Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FamilyHistorySubject#validateFamilyHistorySubjectRelatedSubjectSubjectBirthTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Subject Related Subject Subject Birth Time</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.FamilyHistorySubject#validateFamilyHistorySubjectRelatedSubjectSubjectDeceasedInd(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Subject Related Subject Subject Deceased Ind</em>}</li>
@@ -88,27 +89,28 @@ public class FamilyHistorySubjectOperations extends SubjectOperations {
 	 */
 	public static boolean validateFamilyHistorySubjectRelatedSubjectClassCode(
 			FamilyHistorySubject familyHistorySubject, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_FAMILY_HISTORY_SUBJECT_RELATED_SUBJECT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.FAMILY_HISTORY_SUBJECT);
 			try {
 				VALIDATE_FAMILY_HISTORY_SUBJECT_RELATED_SUBJECT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FAMILY_HISTORY_SUBJECT_RELATED_SUBJECT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_FAMILY_HISTORY_SUBJECT_RELATED_SUBJECT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			familyHistorySubject)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_FAMILY_HISTORY_SUBJECT_RELATED_SUBJECT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(familyHistorySubject)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.FAMILY_HISTORY_SUBJECT__FAMILY_HISTORY_SUBJECT_RELATED_SUBJECT_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("FamilyHistorySubjectRelatedSubjectClassCode"),
-					new Object[] { familyHistorySubject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.FAMILY_HISTORY_SUBJECT__FAMILY_HISTORY_SUBJECT_RELATED_SUBJECT_CLASS_CODE,
+						 ConsolPlugin.INSTANCE.getString("FamilyHistorySubjectRelatedSubjectClassCode"),
+						 new Object [] { familyHistorySubject }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -147,26 +149,28 @@ public class FamilyHistorySubjectOperations extends SubjectOperations {
 	 */
 	public static boolean validateFamilyHistorySubjectRelatedSubjectCode(FamilyHistorySubject familyHistorySubject,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_FAMILY_HISTORY_SUBJECT_RELATED_SUBJECT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.FAMILY_HISTORY_SUBJECT);
 			try {
 				VALIDATE_FAMILY_HISTORY_SUBJECT_RELATED_SUBJECT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FAMILY_HISTORY_SUBJECT_RELATED_SUBJECT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_FAMILY_HISTORY_SUBJECT_RELATED_SUBJECT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			familyHistorySubject)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_FAMILY_HISTORY_SUBJECT_RELATED_SUBJECT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(familyHistorySubject)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.FAMILY_HISTORY_SUBJECT__FAMILY_HISTORY_SUBJECT_RELATED_SUBJECT_CODE,
-					ConsolPlugin.INSTANCE.getString("FamilyHistorySubjectRelatedSubjectCode"),
-					new Object[] { familyHistorySubject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.FAMILY_HISTORY_SUBJECT__FAMILY_HISTORY_SUBJECT_RELATED_SUBJECT_CODE,
+						 ConsolPlugin.INSTANCE.getString("FamilyHistorySubjectRelatedSubjectCode"),
+						 new Object [] { familyHistorySubject }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -205,27 +209,28 @@ public class FamilyHistorySubjectOperations extends SubjectOperations {
 	 */
 	public static boolean validateFamilyHistorySubjectRelatedSubjectCodeValueSet(
 			FamilyHistorySubject familyHistorySubject, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_FAMILY_HISTORY_SUBJECT_RELATED_SUBJECT_CODE_VALUE_SET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.FAMILY_HISTORY_SUBJECT);
 			try {
 				VALIDATE_FAMILY_HISTORY_SUBJECT_RELATED_SUBJECT_CODE_VALUE_SET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FAMILY_HISTORY_SUBJECT_RELATED_SUBJECT_CODE_VALUE_SET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_FAMILY_HISTORY_SUBJECT_RELATED_SUBJECT_CODE_VALUE_SET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			familyHistorySubject)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_FAMILY_HISTORY_SUBJECT_RELATED_SUBJECT_CODE_VALUE_SET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(familyHistorySubject)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.FAMILY_HISTORY_SUBJECT__FAMILY_HISTORY_SUBJECT_RELATED_SUBJECT_CODE_VALUE_SET,
-					ConsolPlugin.INSTANCE.getString("FamilyHistorySubjectRelatedSubjectCodeValueSet"),
-					new Object[] { familyHistorySubject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.FAMILY_HISTORY_SUBJECT__FAMILY_HISTORY_SUBJECT_RELATED_SUBJECT_CODE_VALUE_SET,
+						 ConsolPlugin.INSTANCE.getString("FamilyHistorySubjectRelatedSubjectCodeValueSet"),
+						 new Object [] { familyHistorySubject }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -264,27 +269,89 @@ public class FamilyHistorySubjectOperations extends SubjectOperations {
 	 */
 	public static boolean validateFamilyHistorySubjectRelatedSubjectSubject(FamilyHistorySubject familyHistorySubject,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_FAMILY_HISTORY_SUBJECT_RELATED_SUBJECT_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.FAMILY_HISTORY_SUBJECT);
 			try {
 				VALIDATE_FAMILY_HISTORY_SUBJECT_RELATED_SUBJECT_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FAMILY_HISTORY_SUBJECT_RELATED_SUBJECT_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_FAMILY_HISTORY_SUBJECT_RELATED_SUBJECT_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			familyHistorySubject)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_FAMILY_HISTORY_SUBJECT_RELATED_SUBJECT_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(familyHistorySubject)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.FAMILY_HISTORY_SUBJECT__FAMILY_HISTORY_SUBJECT_RELATED_SUBJECT_SUBJECT,
-					ConsolPlugin.INSTANCE.getString("FamilyHistorySubjectRelatedSubjectSubject"),
-					new Object[] { familyHistorySubject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.FAMILY_HISTORY_SUBJECT__FAMILY_HISTORY_SUBJECT_RELATED_SUBJECT_SUBJECT,
+						 ConsolPlugin.INSTANCE.getString("FamilyHistorySubjectRelatedSubjectSubject"),
+						 new Object [] { familyHistorySubject }));
 			}
+			 
+			return false;
+		}
+		return true;
+	}
 
+	/**
+	 * The cached OCL expression body for the '{@link #validateFamilyHistorySubjectRelatedSubjectSubjectId(FamilyHistorySubject, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Subject Related Subject Subject Id</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateFamilyHistorySubjectRelatedSubjectSubjectId(FamilyHistorySubject, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_FAMILY_HISTORY_SUBJECT_RELATED_SUBJECT_SUBJECT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.relatedSubject.subject.sDTCId->size() > 0";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateFamilyHistorySubjectRelatedSubjectSubjectId(FamilyHistorySubject, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Family History Subject Related Subject Subject Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateFamilyHistorySubjectRelatedSubjectSubjectId(FamilyHistorySubject, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static Constraint VALIDATE_FAMILY_HISTORY_SUBJECT_RELATED_SUBJECT_SUBJECT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.relatedSubject.subject.sDTCId->size() > 0
+	 * @param familyHistorySubject The receiving '<em><b>Family History Subject</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+	
+	public static  boolean validateFamilyHistorySubjectRelatedSubjectSubjectId(FamilyHistorySubject familyHistorySubject, DiagnosticChain diagnostics, Map<Object, Object> context) {
+  	  
+		if (VALIDATE_FAMILY_HISTORY_SUBJECT_RELATED_SUBJECT_SUBJECT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.FAMILY_HISTORY_SUBJECT);
+			try {
+				VALIDATE_FAMILY_HISTORY_SUBJECT_RELATED_SUBJECT_SUBJECT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FAMILY_HISTORY_SUBJECT_RELATED_SUBJECT_SUBJECT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_FAMILY_HISTORY_SUBJECT_RELATED_SUBJECT_SUBJECT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(familyHistorySubject)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.FAMILY_HISTORY_SUBJECT__FAMILY_HISTORY_SUBJECT_RELATED_SUBJECT_SUBJECT_ID,
+						 ConsolPlugin.INSTANCE.getString("FamilyHistorySubjectRelatedSubjectSubjectId"),
+						 new Object [] { familyHistorySubject }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -323,28 +390,28 @@ public class FamilyHistorySubjectOperations extends SubjectOperations {
 	 */
 	public static boolean validateFamilyHistorySubjectRelatedSubjectSubjectAdmGenderCode(
 			FamilyHistorySubject familyHistorySubject, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_FAMILY_HISTORY_SUBJECT_RELATED_SUBJECT_SUBJECT_ADM_GENDER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.FAMILY_HISTORY_SUBJECT);
 			try {
 				VALIDATE_FAMILY_HISTORY_SUBJECT_RELATED_SUBJECT_SUBJECT_ADM_GENDER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FAMILY_HISTORY_SUBJECT_RELATED_SUBJECT_SUBJECT_ADM_GENDER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_FAMILY_HISTORY_SUBJECT_RELATED_SUBJECT_SUBJECT_ADM_GENDER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			familyHistorySubject)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_FAMILY_HISTORY_SUBJECT_RELATED_SUBJECT_SUBJECT_ADM_GENDER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(familyHistorySubject)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.FAMILY_HISTORY_SUBJECT__FAMILY_HISTORY_SUBJECT_RELATED_SUBJECT_SUBJECT_ADM_GENDER_CODE,
-					ConsolPlugin.INSTANCE.getString("FamilyHistorySubjectRelatedSubjectSubjectAdmGenderCode"),
-					new Object[] { familyHistorySubject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.FAMILY_HISTORY_SUBJECT__FAMILY_HISTORY_SUBJECT_RELATED_SUBJECT_SUBJECT_ADM_GENDER_CODE,
+						 ConsolPlugin.INSTANCE.getString("FamilyHistorySubjectRelatedSubjectSubjectAdmGenderCode"),
+						 new Object [] { familyHistorySubject }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -383,27 +450,28 @@ public class FamilyHistorySubjectOperations extends SubjectOperations {
 	 */
 	public static boolean validateFamilyHistorySubjectRelatedSubjectSubjectBirthTime(
 			FamilyHistorySubject familyHistorySubject, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_FAMILY_HISTORY_SUBJECT_RELATED_SUBJECT_SUBJECT_BIRTH_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.FAMILY_HISTORY_SUBJECT);
 			try {
 				VALIDATE_FAMILY_HISTORY_SUBJECT_RELATED_SUBJECT_SUBJECT_BIRTH_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FAMILY_HISTORY_SUBJECT_RELATED_SUBJECT_SUBJECT_BIRTH_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_FAMILY_HISTORY_SUBJECT_RELATED_SUBJECT_SUBJECT_BIRTH_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			familyHistorySubject)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_FAMILY_HISTORY_SUBJECT_RELATED_SUBJECT_SUBJECT_BIRTH_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(familyHistorySubject)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.FAMILY_HISTORY_SUBJECT__FAMILY_HISTORY_SUBJECT_RELATED_SUBJECT_SUBJECT_BIRTH_TIME,
-					ConsolPlugin.INSTANCE.getString("FamilyHistorySubjectRelatedSubjectSubjectBirthTime"),
-					new Object[] { familyHistorySubject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.FAMILY_HISTORY_SUBJECT__FAMILY_HISTORY_SUBJECT_RELATED_SUBJECT_SUBJECT_BIRTH_TIME,
+						 ConsolPlugin.INSTANCE.getString("FamilyHistorySubjectRelatedSubjectSubjectBirthTime"),
+						 new Object [] { familyHistorySubject }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -442,28 +510,28 @@ public class FamilyHistorySubjectOperations extends SubjectOperations {
 	 */
 	public static boolean validateFamilyHistorySubjectRelatedSubjectSubjectDeceasedInd(
 			FamilyHistorySubject familyHistorySubject, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_FAMILY_HISTORY_SUBJECT_RELATED_SUBJECT_SUBJECT_DECEASED_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.FAMILY_HISTORY_SUBJECT);
 			try {
 				VALIDATE_FAMILY_HISTORY_SUBJECT_RELATED_SUBJECT_SUBJECT_DECEASED_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FAMILY_HISTORY_SUBJECT_RELATED_SUBJECT_SUBJECT_DECEASED_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_FAMILY_HISTORY_SUBJECT_RELATED_SUBJECT_SUBJECT_DECEASED_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			familyHistorySubject)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_FAMILY_HISTORY_SUBJECT_RELATED_SUBJECT_SUBJECT_DECEASED_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(familyHistorySubject)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.FAMILY_HISTORY_SUBJECT__FAMILY_HISTORY_SUBJECT_RELATED_SUBJECT_SUBJECT_DECEASED_IND,
-					ConsolPlugin.INSTANCE.getString("FamilyHistorySubjectRelatedSubjectSubjectDeceasedInd"),
-					new Object[] { familyHistorySubject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.FAMILY_HISTORY_SUBJECT__FAMILY_HISTORY_SUBJECT_RELATED_SUBJECT_SUBJECT_DECEASED_IND,
+						 ConsolPlugin.INSTANCE.getString("FamilyHistorySubjectRelatedSubjectSubjectDeceasedInd"),
+						 new Object [] { familyHistorySubject }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -502,28 +570,28 @@ public class FamilyHistorySubjectOperations extends SubjectOperations {
 	 */
 	public static boolean validateFamilyHistorySubjectRelatedSubjectSubjectDeceasedTime(
 			FamilyHistorySubject familyHistorySubject, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_FAMILY_HISTORY_SUBJECT_RELATED_SUBJECT_SUBJECT_DECEASED_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.FAMILY_HISTORY_SUBJECT);
 			try {
 				VALIDATE_FAMILY_HISTORY_SUBJECT_RELATED_SUBJECT_SUBJECT_DECEASED_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FAMILY_HISTORY_SUBJECT_RELATED_SUBJECT_SUBJECT_DECEASED_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_FAMILY_HISTORY_SUBJECT_RELATED_SUBJECT_SUBJECT_DECEASED_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			familyHistorySubject)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_FAMILY_HISTORY_SUBJECT_RELATED_SUBJECT_SUBJECT_DECEASED_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(familyHistorySubject)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO,
-					ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.FAMILY_HISTORY_SUBJECT__FAMILY_HISTORY_SUBJECT_RELATED_SUBJECT_SUBJECT_DECEASED_TIME,
-					ConsolPlugin.INSTANCE.getString("FamilyHistorySubjectRelatedSubjectSubjectDeceasedTime"),
-					new Object[] { familyHistorySubject }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.FAMILY_HISTORY_SUBJECT__FAMILY_HISTORY_SUBJECT_RELATED_SUBJECT_SUBJECT_DECEASED_TIME,
+						 ConsolPlugin.INSTANCE.getString("FamilyHistorySubjectRelatedSubjectSubjectDeceasedTime"),
+						 new Object [] { familyHistorySubject }));
 			}
-
+			 
 			return false;
 		}
 		return true;

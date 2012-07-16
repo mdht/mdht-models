@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getProblemStatus()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation value.codeSystemName='SNOMEDCT' statusCode.code='completed' code.codeSystem='2.16.840.1.113883.6.1' code.displayName='Status' templateId.root='2.16.840.1.113883.10.20.22.4.6' constraints.validation.error='ProblemStatusTemplateId ProblemStatusTextReferenceValue ProblemStatusClassCode ProblemStatusMoodCode ProblemStatusCode ProblemStatusStatusCode ProblemStatusValue' code.codeSystemName='LOINC' classCode='OBS' constraints.validation.warning='ProblemStatusTextReference ProblemStatusText' code.code='33999-4' moodCode='EVN' value.codeSystem='2.16.840.1.113883.6.96'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProblemStatusTemplateId ProblemStatusTextReferenceValue ProblemStatusClassCode ProblemStatusMoodCode ProblemStatusCode ProblemStatusStatusCode ProblemStatusValue' templateId.root='2.16.840.1.113883.10.20.22.4.6' constraints.validation.warning='ProblemStatusTextReference ProblemStatusText' classCode='OBS' moodCode='EVN' code.code='33999-4' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Status' statusCode.code='completed' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT'"
  * @generated
  */
 public interface ProblemStatus extends Observation {
@@ -43,11 +43,11 @@ public interface ProblemStatus extends Observation {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * not self.getSection().text.getText(self.text.reference.value.substring(2, self.text.reference.value.size())).oclIsUndefined()
+	 * not self.text.reference.value.oclIsUndefined() implies not self.getSection().text.getText(self.text.reference.value.substring(2, self.text.reference.value.size())).oclIsUndefined()
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.getSection().text.getText(self.text.reference.value.substring(2, self.text.reference.value.size())).oclIsUndefined()'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.text.reference.value.oclIsUndefined() implies not self.getSection().text.getText(self.text.reference.value.substring(2, self.text.reference.value.size())).oclIsUndefined()'"
 	 * @generated
 	 */
 	boolean validateProblemStatusTextReferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context);

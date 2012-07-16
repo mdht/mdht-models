@@ -56,8 +56,7 @@ public class PhysicianofRecordParticipantImpl extends EncounterParticipantImpl i
 	 */
 	public boolean validatePhysicianofRecordParticipantTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PhysicianofRecordParticipantOperations.validatePhysicianofRecordParticipantTemplateId(
-			this, diagnostics, context);
+		return PhysicianofRecordParticipantOperations.validatePhysicianofRecordParticipantTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -66,8 +65,7 @@ public class PhysicianofRecordParticipantImpl extends EncounterParticipantImpl i
 	 * @generated
 	 */
 	public boolean validatePhysicianofRecordParticipantTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhysicianofRecordParticipantOperations.validatePhysicianofRecordParticipantTypeCode(
-			this, diagnostics, context);
+		return PhysicianofRecordParticipantOperations.validatePhysicianofRecordParticipantTypeCode(this, diagnostics, context);
 	}
 
 	/**
@@ -77,8 +75,7 @@ public class PhysicianofRecordParticipantImpl extends EncounterParticipantImpl i
 	 */
 	public boolean validatePhysicianofRecordParticipantAssignedEntity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PhysicianofRecordParticipantOperations.validatePhysicianofRecordParticipantAssignedEntity(
-			this, diagnostics, context);
+		return PhysicianofRecordParticipantOperations.validatePhysicianofRecordParticipantAssignedEntity(this, diagnostics, context);
 	}
 
 	/**
@@ -87,7 +84,7 @@ public class PhysicianofRecordParticipantImpl extends EncounterParticipantImpl i
 	 * @generated
 	 */
 	public PhysicianofRecordParticipant init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // PhysicianofRecordParticipantImpl

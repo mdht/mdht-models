@@ -54,6 +54,15 @@ public class AgeObservationImpl extends ObservationImpl implements AgeObservatio
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateAgeObservationValueUnits(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AgeObservationOperations.validateAgeObservationValueUnits(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateAgeObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AgeObservationOperations.validateAgeObservationTemplateId(this, diagnostics, context);
 	}
@@ -109,7 +118,7 @@ public class AgeObservationImpl extends ObservationImpl implements AgeObservatio
 	 * @generated
 	 */
 	public AgeObservation init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // AgeObservationImpl

@@ -28,7 +28,7 @@ import org.openhealthtools.mdht.uml.cda.ParticipantRole;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getProductInstance()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.22.4.37' constraints.validation.error='ProductInstanceTemplateId ProductInstanceClassCode ProductInstanceId ProductInstanceScopingEntity ProductInstancePlayingDevice ProductInstanceScopingEntityId' constraints.validation.warning='ProductInstancePlayingDeviceCode' classCode='MANU' constraints.validation.query='ProductInstanceScopingEntityId ProductInstancePlayingDeviceCode'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProductInstanceTemplateId ProductInstanceClassCode ProductInstanceId ProductInstanceScopingEntity ProductInstancePlayingDevice ProductInstanceScopingEntityId' templateId.root='2.16.840.1.113883.10.20.22.4.37' classCode='MANU' constraints.validation.query='ProductInstanceScopingEntityId ProductInstancePlayingDeviceCode' constraints.validation.warning='ProductInstancePlayingDeviceCode'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProductInstanceScopingEntity constraints.validation.error='ScopingEntityId'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolProductInstancePlayingDevice constraints.validation.warning='PlayingDeviceCode'"
  * @generated

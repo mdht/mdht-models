@@ -22,10 +22,88 @@ import org.openhealthtools.mdht.uml.cda.Act;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getSeriesAct()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='1.2.840.10008.2.16.4' templateId.root='2.16.840.1.113883.10.20.22.4.63' constraints.validation.error='SeriesActTemplateId SeriesActClassCode SeriesActMoodCode SeriesActCode SeriesActId SeriesActSOPInstanceObservation' code.codeSystemName='DCM' constraints.validation.warning='SeriesActEffectiveTime' classCode='ACT' code.code='113015' constraints.validation.info='SeriesActText' moodCode='EVN'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SeriesActTemplateId SeriesActIdHasRoot SeriesActIdNoExtension SeriesActCodeQualifier SeriesActCodeQualifierCode SeriesActCodeQualifierValue SeriesActCodeQualifierValueCode SeriesActClassCode SeriesActMoodCode SeriesActCode SeriesActId SeriesActSOPInstanceObservation' templateId.root='2.16.840.1.113883.10.20.22.4.63' classCode='ACT' moodCode='EVN' code.code='113015' code.codeSystem='1.2.840.10008.2.16.4' code.codeSystemName='DCM' constraints.validation.warning='SeriesActEffectiveTime' constraints.validation.info='SeriesActText'"
  * @generated
  */
 public interface SeriesAct extends Act {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.id->forAll( not root.oclIsUndefined() )
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.id->forAll( not root.oclIsUndefined() )'"
+	 * @generated
+	 */
+	boolean validateSeriesActIdHasRoot(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.id->forAll(  extension.oclIsUndefined() )
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.id->forAll(  extension.oclIsUndefined() )'"
+	 * @generated
+	 */
+	boolean validateSeriesActIdNoExtension(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.code.qualifier->size() = 1
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.code.qualifier->size() = 1'"
+	 * @generated
+	 */
+	boolean validateSeriesActCodeQualifier(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.code.qualifier.name->one(name : datatypes::CV | name.code = '121139' and name.codeSystem = '1.2.840.10008.2.16.4')
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.code.qualifier.name->one(name : datatypes::CV | name.code = \'121139\' and name.codeSystem = \'1.2.840.10008.2.16.4\')'"
+	 * @generated
+	 */
+	boolean validateSeriesActCodeQualifierCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.code.qualifier.value->one(val | not val.oclIsUndefined() and val.oclIsKindOf(datatypes::ANY))
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.code.qualifier.value->one(val | not val.oclIsUndefined() and val.oclIsKindOf(datatypes::ANY))'"
+	 * @generated
+	 */
+	boolean validateSeriesActCodeQualifierValue(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.code.qualifier.value->one(val | not val.oclIsUndefined() and val.oclIsKindOf(datatypes::ANY) and val.codeSystem = '1.2.840.10008.2.16.4')
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.code.qualifier.value->one(val | not val.oclIsUndefined() and val.oclIsKindOf(datatypes::ANY) and val.codeSystem = \'1.2.840.10008.2.16.4\')'"
+	 * @generated
+	 */
+	boolean validateSeriesActCodeQualifierValueCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

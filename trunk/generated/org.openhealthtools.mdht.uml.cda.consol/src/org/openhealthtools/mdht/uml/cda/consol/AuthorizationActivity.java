@@ -22,8 +22,8 @@ import org.openhealthtools.mdht.uml.cda.Act;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getAuthorizationActivity()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.1.19' constraints.validation.error='AuthorizationActivityTemplateId AuthorizationActivityClassCode AuthorizationActivityId AuthorizationActivityMoodCode AuthorizationActivityEntryRelationship AuthorizationActivityEntryRelationshipTypeCode' classCode='ACT' constraints.validation.query='AuthorizationActivityEntryRelationshipTypeCode' moodCode='EVN'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolAuthorizationActivityEntryRelationship constraints.validation.error='EntryRelationshipTypeCode' typeCode='SUBJ'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AuthorizationActivityTemplateId AuthorizationActivityClassCode AuthorizationActivityId AuthorizationActivityMoodCode AuthorizationActivityEntryRelationship AuthorizationActivityEntryRelationshipHasClinicalStatement AuthorizationActivityEntryRelationshipTypeCode' templateId.root='2.16.840.1.113883.10.20.1.19' classCode='ACT' moodCode='EVN' constraints.validation.query='AuthorizationActivityEntryRelationshipHasClinicalStatement AuthorizationActivityEntryRelationshipHasAuhtorixedPerformers AuthorizationActivityEntryRelationshipTypeCode' constraints.validation.info='AuthorizationActivityEntryRelationshipHasAuhtorixedPerformers'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolAuthorizationActivityEntryRelationship constraints.validation.error='EntryRelationshipHasClinicalStatement EntryRelationshipTypeCode' constraints.validation.info='EntryRelationshipHasAuhtorixedPerformers' typeCode='SUBJ'"
  * @generated
  */
 public interface AuthorizationActivity extends Act {
@@ -91,6 +91,32 @@ public interface AuthorizationActivity extends Act {
 	 * @generated
 	 */
 	boolean validateAuthorizationActivityEntryRelationship(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.entryRelationship->excluding(null)->reject(act->forAll(moodCode = vocab::x_DocumentActMood::PRMS) or  encounter->forAll(moodCode = vocab::x_DocumentEncounterMood::PRMS) or observation->forAll(moodCode = vocab::x_ActMoodDocumentObservation::PRMS) or  observationMedia->forAll(moodCode = vocab::ActMood::PRMS) or organizer->forAll(moodCode = vocab::ActMood::PRMS) or procedure->forAll(moodCode = vocab::x_DocumentProcedureMood::PRMS) or  regionOfInterest->forAll(moodCode = vocab::ActMood::PRMS) or substanceAdministration->forAll(moodCode = vocab::x_DocumentSubstanceMood::PRMS) or  supply->forAll(moodCode = vocab::x_DocumentSubstanceMood::PRMS))
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(act->forAll(moodCode = vocab::x_DocumentActMood::PRMS) or  encounter->forAll(moodCode = vocab::x_DocumentEncounterMood::PRMS) or observation->forAll(moodCode = vocab::x_ActMoodDocumentObservation::PRMS) or  observationMedia->forAll(moodCode = vocab::ActMood::PRMS) or organizer->forAll(moodCode = vocab::ActMood::PRMS) or procedure->forAll(moodCode = vocab::x_DocumentProcedureMood::PRMS) or  regionOfInterest->forAll(moodCode = vocab::ActMood::PRMS) or substanceAdministration->forAll(moodCode = vocab::x_DocumentSubstanceMood::PRMS) or  supply->forAll(moodCode = vocab::x_DocumentSubstanceMood::PRMS))'"
+	 * @generated
+	 */
+	boolean validateAuthorizationActivityEntryRelationshipHasClinicalStatement(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.entryRelationship->excluding(null)->reject(act->forAll(performer->size() > 0) or  encounter->forAll(performer->size() > 0) or observation->forAll(performer->size() > 0) or  observationMedia->forAll(performer->size() > 0) or organizer->forAll(performer->size() > 0) or procedure->forAll(performer->size() > 0) or  regionOfInterest->forAll(performer->size() > 0) or substanceAdministration->forAll(performer->size() > 0) or  supply->forAll(performer->size() > 0))
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(act->forAll(performer->size() > 0) or  encounter->forAll(performer->size() > 0) or observation->forAll(performer->size() > 0) or  observationMedia->forAll(performer->size() > 0) or organizer->forAll(performer->size() > 0) or procedure->forAll(performer->size() > 0) or  regionOfInterest->forAll(performer->size() > 0) or substanceAdministration->forAll(performer->size() > 0) or  supply->forAll(performer->size() > 0))'"
+	 * @generated
+	 */
+	boolean validateAuthorizationActivityEntryRelationshipHasAuhtorixedPerformers(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

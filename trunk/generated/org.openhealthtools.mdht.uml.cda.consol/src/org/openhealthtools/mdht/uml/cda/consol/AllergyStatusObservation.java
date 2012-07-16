@@ -26,7 +26,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getAllergyStatusObservation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation value.codeSystemName='SNOMEDCT' statusCode.code='completed' code.codeSystem='2.16.840.1.113883.6.1' code.displayName='Status' templateId.root='2.16.840.1.113883.10.20.22.4.28' constraints.validation.error='AllergyStatusObservationTemplateId AllergyStatusObservationClassCode AllergyStatusObservationMoodCode AllergyStatusObservationCode AllergyStatusObservationStatusCode AllergyStatusObservationValue' code.codeSystemName='LOINC' classCode='OBS' code.code='33999-4' moodCode='EVN' value.codeSystem='2.16.840.1.113883.6.96'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AllergyStatusObservationTemplateId AllergyStatusObservationClassCode AllergyStatusObservationMoodCode AllergyStatusObservationCode AllergyStatusObservationStatusCode AllergyStatusObservationValue' templateId.root='2.16.840.1.113883.10.20.22.4.28' classCode='OBS' moodCode='EVN' code.code='33999-4' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Status' statusCode.code='completed' value.codeSystem='2.16.840.1.113883.6.96' value.codeSystemName='SNOMEDCT'"
  * @generated
  */
 public interface AllergyStatusObservation extends Observation {

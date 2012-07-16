@@ -56,6 +56,15 @@ public class CoverageActivityImpl extends ActImpl implements CoverageActivity {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateCoverageActivityRelationshipSequenceNumber(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CoverageActivityOperations.validateCoverageActivityRelationshipSequenceNumber(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateCoverageActivityTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return CoverageActivityOperations.validateCoverageActivityTemplateId(this, diagnostics, context);
 	}
@@ -129,7 +138,7 @@ public class CoverageActivityImpl extends ActImpl implements CoverageActivity {
 	 * @generated
 	 */
 	public CoverageActivity init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // CoverageActivityImpl

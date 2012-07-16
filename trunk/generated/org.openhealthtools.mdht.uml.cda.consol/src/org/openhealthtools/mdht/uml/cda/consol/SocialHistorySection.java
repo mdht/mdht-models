@@ -23,7 +23,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getSocialHistorySection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.displayName='Social history' templateId.root='2.16.840.1.113883.10.20.22.2.17' constraints.validation.error='SocialHistorySectionTemplateId SocialHistorySectionCode SocialHistorySectionTitle SocialHistorySectionText' code.codeSystemName='LOINC' code.code='29762-2' constraints.validation.info='SocialHistorySectionSocialHistoryObservation SocialHistorySectionPregnancyObservation'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SocialHistorySectionTemplateId SocialHistorySectionCode SocialHistorySectionTitle SocialHistorySectionText' templateId.root='2.16.840.1.113883.10.20.22.2.17' code.code='29762-2' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Social history' constraints.validation.info='SocialHistorySectionSocialHistoryObservation SocialHistorySectionPregnancyObservation'"
  * @generated
  */
 public interface SocialHistorySection extends Section {

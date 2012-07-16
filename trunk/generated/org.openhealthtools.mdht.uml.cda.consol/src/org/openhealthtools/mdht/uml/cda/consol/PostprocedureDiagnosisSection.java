@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getPostprocedureDiagnosisSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.displayName='Postprocedure Diagnosis' templateId.root='2.16.840.1.113883.10.20.22.2.36' constraints.validation.error='PostprocedureDiagnosisSectionTemplateId PostprocedureDiagnosisSectionCode PostprocedureDiagnosisSectionText PostprocedureDiagnosisSectionTitle' code.codeSystemName='LOINC' constraints.validation.warning='PostprocedureDiagnosisSectionPostprocedureDiagnosis' code.code='59769-0'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PostprocedureDiagnosisSectionTemplateId PostprocedureDiagnosisSectionCode PostprocedureDiagnosisSectionText PostprocedureDiagnosisSectionTitle' templateId.root='2.16.840.1.113883.10.20.22.2.36' code.code='59769-0' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Postprocedure Diagnosis' constraints.validation.warning='PostprocedureDiagnosisSectionPostprocedureDiagnosis'"
  * @generated
  */
 public interface PostprocedureDiagnosisSection extends Section {

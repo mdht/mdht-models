@@ -22,7 +22,7 @@ import org.eclipse.emf.common.util.EList;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getMedicationsSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation title.mixed='Medications' code.codeSystem='2.16.840.1.113883.6.1' code.displayName='History of medication use' templateId.root='2.16.840.1.113883.10.20.22.2.1.1' constraints.validation.error='MedicationsSectionTemplateId MedicationsSectionEntriesOptionalCode MedicationsSectionTitle MedicationsSectionText MedicationsSectionMedication' code.codeSystemName='LOINC' code.code='10160-0'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MedicationsSectionTemplateId MedicationsSectionEntriesOptionalCode MedicationsSectionTitle MedicationsSectionText MedicationsSectionMedication' templateId.root='2.16.840.1.113883.10.20.22.2.1.1' code.code='10160-0' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='History of medication use' title.mixed='Medications'"
  * @generated
  */
 public interface MedicationsSection extends MedicationsSectionEntriesOptional {

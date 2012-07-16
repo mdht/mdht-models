@@ -113,8 +113,7 @@ public class ProcedurePerformerImpl extends Performer2Impl implements ProcedureP
 	 */
 	public boolean validateProcedurePerformerAssignedEntityRepOrgName(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedurePerformerOperations.validateProcedurePerformerAssignedEntityRepOrgName(
-			this, diagnostics, context);
+		return ProcedurePerformerOperations.validateProcedurePerformerAssignedEntityRepOrgName(this, diagnostics, context);
 	}
 
 	/**
@@ -124,8 +123,7 @@ public class ProcedurePerformerImpl extends Performer2Impl implements ProcedureP
 	 */
 	public boolean validateProcedurePerformerAssignedEntityRepOrgAddr(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedurePerformerOperations.validateProcedurePerformerAssignedEntityRepOrgAddr(
-			this, diagnostics, context);
+		return ProcedurePerformerOperations.validateProcedurePerformerAssignedEntityRepOrgAddr(this, diagnostics, context);
 	}
 
 	/**
@@ -135,8 +133,7 @@ public class ProcedurePerformerImpl extends Performer2Impl implements ProcedureP
 	 */
 	public boolean validateProcedurePerformerAssignedEntityRepOrgTelecom(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedurePerformerOperations.validateProcedurePerformerAssignedEntityRepOrgTelecom(
-			this, diagnostics, context);
+		return ProcedurePerformerOperations.validateProcedurePerformerAssignedEntityRepOrgTelecom(this, diagnostics, context);
 	}
 
 	/**
@@ -145,7 +142,7 @@ public class ProcedurePerformerImpl extends Performer2Impl implements ProcedureP
 	 * @generated
 	 */
 	public ProcedurePerformer init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // ProcedurePerformerImpl
