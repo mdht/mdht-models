@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getPreoperativeDiagnosisSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.displayName='Preoperative Diagnosis' templateId.root='2.16.840.1.113883.10.20.22.2.34' constraints.validation.error='PreoperativeDiagnosisSectionTemplateId PreoperativeDiagnosisSectionCode PreoperativeDiagnosisSectionText PreoperativeDiagnosisSectionTitle' code.codeSystemName='LOINC' constraints.validation.warning='PreoperativeDiagnosisSectionPreoperativeDiagnosis' code.code='10219-4'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PreoperativeDiagnosisSectionTemplateId PreoperativeDiagnosisSectionCode PreoperativeDiagnosisSectionText PreoperativeDiagnosisSectionTitle' templateId.root='2.16.840.1.113883.10.20.22.2.34' code.code='10219-4' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Preoperative Diagnosis' constraints.validation.warning='PreoperativeDiagnosisSectionPreoperativeDiagnosis'"
  * @generated
  */
 public interface PreoperativeDiagnosisSection extends Section {

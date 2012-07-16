@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getProcedureSpecimensTakenSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.displayName='Procedure Specimens Taken' templateId.root='2.16.840.1.113883.10.20.22.2.31' constraints.validation.error='ProcedureSpecimensTakenSectionTemplateId ProcedureSpecimensTakenSectionCode ProcedureSpecimensTakenSectionText ProcedureSpecimensTakenSectionTitle' code.codeSystemName='LOINC' code.code='59773-2'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProcedureSpecimensTakenSectionTemplateId ProcedureSpecimensTakenSectionCode ProcedureSpecimensTakenSectionText ProcedureSpecimensTakenSectionTitle' templateId.root='2.16.840.1.113883.10.20.22.2.31' code.code='59773-2' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Procedure Specimens Taken'"
  * @generated
  */
 public interface ProcedureSpecimensTakenSection extends Section {

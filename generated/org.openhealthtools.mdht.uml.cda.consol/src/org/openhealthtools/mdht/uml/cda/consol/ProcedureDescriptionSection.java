@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getProcedureDescriptionSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.displayName='Procedure Description' templateId.root='2.16.840.1.113883.10.20.22.2.27' constraints.validation.error='ProcedureDescriptionSectionTemplateId ProcedureDescriptionSectionCode ProcedureDescriptionSectionText ProcedureDescriptionSectionTitle' code.codeSystemName='LOINC' code.code='29554-3'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProcedureDescriptionSectionTemplateId ProcedureDescriptionSectionCode ProcedureDescriptionSectionText ProcedureDescriptionSectionTitle' templateId.root='2.16.840.1.113883.10.20.22.2.27' code.code='29554-3' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Procedure Description'"
  * @generated
  */
 public interface ProcedureDescriptionSection extends Section {

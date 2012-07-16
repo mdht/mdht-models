@@ -85,8 +85,7 @@ public class FamilyHistoryOrganizerImpl extends OrganizerImpl implements FamilyH
 	 */
 	public boolean validateFamilyHistoryOrganizerFamilyHistoryObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FamilyHistoryOrganizerOperations.validateFamilyHistoryOrganizerFamilyHistoryObservation(
-			this, diagnostics, context);
+		return FamilyHistoryOrganizerOperations.validateFamilyHistoryOrganizerFamilyHistoryObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -113,7 +112,7 @@ public class FamilyHistoryOrganizerImpl extends OrganizerImpl implements FamilyH
 	 * @generated
 	 */
 	public FamilyHistoryOrganizer init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // FamilyHistoryOrganizerImpl

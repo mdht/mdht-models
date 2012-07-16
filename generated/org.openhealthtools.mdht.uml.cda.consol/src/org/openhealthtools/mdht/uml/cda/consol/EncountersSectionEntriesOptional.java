@@ -27,7 +27,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getEncountersSectionEntriesOptional()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.displayName='Encounters' templateId.root='2.16.840.1.113883.10.20.22.2.22' constraints.validation.error='EncountersSectionEntriesOptionalTemplateId EncountersSectionEntriesOptionalCode EncountersSectionEntriesOptionalTitle EncountersSectionEntriesOptionalText' code.codeSystemName='LOINC' constraints.validation.warning='EncountersSectionEntriesOptionalEncounterActivities' code.code='46240-8'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='EncountersSectionEntriesOptionalTemplateId EncountersSectionEntriesOptionalCode EncountersSectionEntriesOptionalTitle EncountersSectionEntriesOptionalText' templateId.root='2.16.840.1.113883.10.20.22.2.22' code.code='46240-8' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Encounters' constraints.validation.warning='EncountersSectionEntriesOptionalEncounterActivities'"
  * @generated
  */
 public interface EncountersSectionEntriesOptional extends Section {

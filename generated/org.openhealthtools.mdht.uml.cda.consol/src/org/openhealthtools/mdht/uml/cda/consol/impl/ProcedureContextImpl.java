@@ -64,7 +64,7 @@ public class ProcedureContextImpl extends ActImpl implements ProcedureContext {
 	 * @generated
 	 */
 	public ProcedureContext init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // ProcedureContextImpl

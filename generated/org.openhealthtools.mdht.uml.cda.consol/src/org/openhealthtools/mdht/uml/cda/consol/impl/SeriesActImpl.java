@@ -55,6 +55,60 @@ public class SeriesActImpl extends ActImpl implements SeriesAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateSeriesActIdHasRoot(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SeriesActOperations.validateSeriesActIdHasRoot(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSeriesActIdNoExtension(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SeriesActOperations.validateSeriesActIdNoExtension(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSeriesActCodeQualifier(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SeriesActOperations.validateSeriesActCodeQualifier(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSeriesActCodeQualifierCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SeriesActOperations.validateSeriesActCodeQualifierCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSeriesActCodeQualifierValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SeriesActOperations.validateSeriesActCodeQualifierValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSeriesActCodeQualifierValueCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SeriesActOperations.validateSeriesActCodeQualifierValueCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateSeriesActTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SeriesActOperations.validateSeriesActTemplateId(this, diagnostics, context);
 	}
@@ -137,7 +191,7 @@ public class SeriesActImpl extends ActImpl implements SeriesAct {
 	 * @generated
 	 */
 	public SeriesAct init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // SeriesActImpl

@@ -99,8 +99,7 @@ public class PlanOfCareSectionImpl extends SectionImpl implements PlanOfCareSect
 	 */
 	public boolean validatePlanOfCareSectionPlanOfCareActivityEncounter(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlanOfCareSectionOperations.validatePlanOfCareSectionPlanOfCareActivityEncounter(
-			this, diagnostics, context);
+		return PlanOfCareSectionOperations.validatePlanOfCareSectionPlanOfCareActivityEncounter(this, diagnostics, context);
 	}
 
 	/**
@@ -110,8 +109,7 @@ public class PlanOfCareSectionImpl extends SectionImpl implements PlanOfCareSect
 	 */
 	public boolean validatePlanOfCareSectionPlanOfCareActivityObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlanOfCareSectionOperations.validatePlanOfCareSectionPlanOfCareActivityObservation(
-			this, diagnostics, context);
+		return PlanOfCareSectionOperations.validatePlanOfCareSectionPlanOfCareActivityObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -121,8 +119,7 @@ public class PlanOfCareSectionImpl extends SectionImpl implements PlanOfCareSect
 	 */
 	public boolean validatePlanOfCareSectionPlanOfCareActivityProcedure(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlanOfCareSectionOperations.validatePlanOfCareSectionPlanOfCareActivityProcedure(
-			this, diagnostics, context);
+		return PlanOfCareSectionOperations.validatePlanOfCareSectionPlanOfCareActivityProcedure(this, diagnostics, context);
 	}
 
 	/**
@@ -132,8 +129,7 @@ public class PlanOfCareSectionImpl extends SectionImpl implements PlanOfCareSect
 	 */
 	public boolean validatePlanOfCareSectionPlanOfCareActivitySubstanceAdministration(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlanOfCareSectionOperations.validatePlanOfCareSectionPlanOfCareActivitySubstanceAdministration(
-			this, diagnostics, context);
+		return PlanOfCareSectionOperations.validatePlanOfCareSectionPlanOfCareActivitySubstanceAdministration(this, diagnostics, context);
 	}
 
 	/**
@@ -206,7 +202,7 @@ public class PlanOfCareSectionImpl extends SectionImpl implements PlanOfCareSect
 	 * @generated
 	 */
 	public PlanOfCareSection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // PlanOfCareSectionImpl

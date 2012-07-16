@@ -26,7 +26,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getProceduresSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation title.mixed='Procedures' code.codeSystem='2.16.840.1.113883.6.1' code.displayName='History of procedures' templateId.root='2.16.840.1.113883.10.20.22.2.7.1' constraints.validation.error='ProceduresSectionTemplateId ProceduresSectionHasProcedureActivity ProceduresSectionTitle ProceduresSectionEntriesOptionalCode ProceduresSectionText' code.codeSystemName='LOINC' code.code='47519-4'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProceduresSectionTemplateId ProceduresSectionHasProcedureActivity ProceduresSectionTitle ProceduresSectionEntriesOptionalCode ProceduresSectionText' templateId.root='2.16.840.1.113883.10.20.22.2.7.1' title.mixed='Procedures' code.code='47519-4' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='History of procedures'"
  * @generated
  */
 public interface ProceduresSection extends ProceduresSectionEntriesOptional {

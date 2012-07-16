@@ -22,7 +22,7 @@ import org.eclipse.emf.common.util.EList;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getVitalSignsSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' templateId.root='2.16.840.1.113883.10.20.22.2.4.1' constraints.validation.error='VitalSignsSectionTemplateId VitalSignsSectionEntriesOptionalCode VitalSignsSectionText VitalSignsSectionTitle VitalSignsSectionVitalSignsOrganizer' code.codeSystemName='LOINC' code.code='8716-3'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='VitalSignsSectionTemplateId VitalSignsSectionEntriesOptionalCode VitalSignsSectionText VitalSignsSectionTitle VitalSignsSectionVitalSignsOrganizer' templateId.root='2.16.840.1.113883.10.20.22.2.4.1' code.code='8716-3' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC'"
  * @generated
  */
 public interface VitalSignsSection extends VitalSignsSectionEntriesOptional {

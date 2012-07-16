@@ -57,6 +57,60 @@ public class SOPInstanceObservationImpl extends ObservationImpl implements SOPIn
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateSOPInstanceObservationEffectiveTimeHasValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SOPInstanceObservationOperations.validateSOPInstanceObservationEffectiveTimeHasValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSOPInstanceObservationEffectiveTimeNoLow(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SOPInstanceObservationOperations.validateSOPInstanceObservationEffectiveTimeNoLow(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSOPInstanceObservationEffectiveTimeNoHigh(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SOPInstanceObservationOperations.validateSOPInstanceObservationEffectiveTimeNoHigh(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSOPInstanceObservationTextMediaType(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SOPInstanceObservationOperations.validateSOPInstanceObservationTextMediaType(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSOPInstanceObservationTextReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SOPInstanceObservationOperations.validateSOPInstanceObservationTextReference(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSOPInstanceObservationTextReferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SOPInstanceObservationOperations.validateSOPInstanceObservationTextReferenceValue(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateSOPInstanceObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SOPInstanceObservationOperations.validateSOPInstanceObservationTemplateId(this, diagnostics, context);
 	}
@@ -111,6 +165,15 @@ public class SOPInstanceObservationImpl extends ObservationImpl implements SOPIn
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateSOPInstanceObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SOPInstanceObservationOperations.validateSOPInstanceObservationCodeP(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateSOPInstanceObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SOPInstanceObservationOperations.validateSOPInstanceObservationCode(this, diagnostics, context);
 	}
@@ -122,8 +185,7 @@ public class SOPInstanceObservationImpl extends ObservationImpl implements SOPIn
 	 */
 	public boolean validateSOPInstanceObservationSOPInstanceObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return SOPInstanceObservationOperations.validateSOPInstanceObservationSOPInstanceObservation(
-			this, diagnostics, context);
+		return SOPInstanceObservationOperations.validateSOPInstanceObservationSOPInstanceObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -133,8 +195,7 @@ public class SOPInstanceObservationImpl extends ObservationImpl implements SOPIn
 	 */
 	public boolean validateSOPInstanceObservationPurposeofReferenceObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return SOPInstanceObservationOperations.validateSOPInstanceObservationPurposeofReferenceObservation(
-			this, diagnostics, context);
+		return SOPInstanceObservationOperations.validateSOPInstanceObservationPurposeofReferenceObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -144,8 +205,7 @@ public class SOPInstanceObservationImpl extends ObservationImpl implements SOPIn
 	 */
 	public boolean validateSOPInstanceObservationReferencedFramesObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return SOPInstanceObservationOperations.validateSOPInstanceObservationReferencedFramesObservation(
-			this, diagnostics, context);
+		return SOPInstanceObservationOperations.validateSOPInstanceObservationReferencedFramesObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -181,7 +241,7 @@ public class SOPInstanceObservationImpl extends ObservationImpl implements SOPIn
 	 * @generated
 	 */
 	public SOPInstanceObservation init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // SOPInstanceObservationImpl

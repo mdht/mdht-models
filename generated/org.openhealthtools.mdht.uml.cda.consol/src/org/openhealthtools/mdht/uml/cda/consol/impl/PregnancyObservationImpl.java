@@ -120,8 +120,7 @@ public class PregnancyObservationImpl extends ObservationImpl implements Pregnan
 	 */
 	public boolean validatePregnancyObservationEstimatedDateOfDelivery(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PregnancyObservationOperations.validatePregnancyObservationEstimatedDateOfDelivery(
-			this, diagnostics, context);
+		return PregnancyObservationOperations.validatePregnancyObservationEstimatedDateOfDelivery(this, diagnostics, context);
 	}
 
 	/**
@@ -139,7 +138,7 @@ public class PregnancyObservationImpl extends ObservationImpl implements Pregnan
 	 * @generated
 	 */
 	public PregnancyObservation init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // PregnancyObservationImpl

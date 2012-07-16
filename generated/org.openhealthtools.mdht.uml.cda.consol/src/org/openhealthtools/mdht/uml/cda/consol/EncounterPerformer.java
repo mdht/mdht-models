@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.Performer2;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getEncounterPerformer()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='EncounterPerformerEncounterPerformerAssignedEntity' constraints.validation.query='EncounterPerformerEncounterPerformerAssignedEntityCode' constraints.validation.info='EncounterPerformerEncounterPerformerAssignedEntityCode'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='EncounterPerformerEncounterPerformerAssignedEntity' constraints.validation.info='EncounterPerformerEncounterPerformerAssignedEntityCode' constraints.validation.query='EncounterPerformerEncounterPerformerAssignedEntityCode'"
  * @generated
  */
 public interface EncounterPerformer extends Performer2 {

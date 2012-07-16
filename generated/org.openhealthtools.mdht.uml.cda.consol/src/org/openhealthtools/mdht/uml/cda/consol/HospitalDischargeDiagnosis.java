@@ -23,7 +23,7 @@ import org.openhealthtools.mdht.uml.cda.Act;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getHospitalDischargeDiagnosis()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.displayName='Hospital Discharge Diagnosis' templateId.root='2.16.840.1.113883.10.20.22.4.33' constraints.validation.error='HospitalDischargeDiagnosisProblemObservation HospitalDischargeDiagnosisTemplateId HospitalDischargeDiagnosisClassCode HospitalDischargeDiagnosisMoodCode HospitalDischargeDiagnosisCode' code.codeSystemName='LOINC' classCode='ACT' code.code='11535-2' moodCode='EVN'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='HospitalDischargeDiagnosisProblemObservation HospitalDischargeDiagnosisTemplateId HospitalDischargeDiagnosisClassCode HospitalDischargeDiagnosisMoodCode HospitalDischargeDiagnosisCode' templateId.root='2.16.840.1.113883.10.20.22.4.33' classCode='ACT' moodCode='EVN' code.code='11535-2' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Hospital Discharge Diagnosis'"
  * @generated
  */
 public interface HospitalDischargeDiagnosis extends Act {

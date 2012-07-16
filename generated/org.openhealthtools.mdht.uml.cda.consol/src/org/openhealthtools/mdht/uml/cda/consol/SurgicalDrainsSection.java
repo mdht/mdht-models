@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getSurgicalDrainsSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.displayName='Surgical Drains' templateId.root='2.16.840.1.113883.10.20.7.13' constraints.validation.error='SurgicalDrainsSectionTemplateId SurgicalDrainsSectionCode SurgicalDrainsSectionText SurgicalDrainsSectionTitle' code.codeSystemName='LOINC' code.code='11537-8'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='SurgicalDrainsSectionTemplateId SurgicalDrainsSectionCode SurgicalDrainsSectionText SurgicalDrainsSectionTitle' templateId.root='2.16.840.1.113883.10.20.7.13' code.code='11537-8' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Surgical Drains'"
  * @generated
  */
 public interface SurgicalDrainsSection extends Section {

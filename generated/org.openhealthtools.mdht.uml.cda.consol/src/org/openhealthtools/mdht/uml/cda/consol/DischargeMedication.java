@@ -22,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.Act;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getDischargeMedication()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.displayName='Discharge Medication' templateId.root='2.16.840.1.113883.10.20.22.4.35' constraints.validation.error='DischargeMedicationMedicationActivity DischargeMedicationTemplateId DischargeMedicationClassCode DischargeMedicationMoodCode DischargeMedicationCode' code.codeSystemName='LOINC' classCode='ACT' code.code='10183-2' moodCode='EVN'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='DischargeMedicationMedicationActivity DischargeMedicationTemplateId DischargeMedicationClassCode DischargeMedicationMoodCode DischargeMedicationCode' templateId.root='2.16.840.1.113883.10.20.22.4.35' classCode='ACT' moodCode='EVN' code.code='10183-2' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Discharge Medication'"
  * @generated
  */
 public interface DischargeMedication extends Act {

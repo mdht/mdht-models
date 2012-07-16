@@ -91,7 +91,7 @@ public class MedicalHistorySectionImpl extends SectionImpl implements MedicalHis
 	 * @generated
 	 */
 	public MedicalHistorySection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // MedicalHistorySectionImpl

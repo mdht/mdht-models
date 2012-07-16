@@ -57,8 +57,7 @@ public class OperativeNoteSurgicalProcedureSectionImpl extends SectionImpl imple
 	 */
 	public boolean validateOperativeNoteSurgicalProcedureSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return OperativeNoteSurgicalProcedureSectionOperations.validateOperativeNoteSurgicalProcedureSectionTemplateId(
-			this, diagnostics, context);
+		return OperativeNoteSurgicalProcedureSectionOperations.validateOperativeNoteSurgicalProcedureSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -68,8 +67,7 @@ public class OperativeNoteSurgicalProcedureSectionImpl extends SectionImpl imple
 	 */
 	public boolean validateOperativeNoteSurgicalProcedureSectionCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return OperativeNoteSurgicalProcedureSectionOperations.validateOperativeNoteSurgicalProcedureSectionCode(
-			this, diagnostics, context);
+		return OperativeNoteSurgicalProcedureSectionOperations.validateOperativeNoteSurgicalProcedureSectionCode(this, diagnostics, context);
 	}
 
 	/**
@@ -79,8 +77,7 @@ public class OperativeNoteSurgicalProcedureSectionImpl extends SectionImpl imple
 	 */
 	public boolean validateOperativeNoteSurgicalProcedureSectionText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return OperativeNoteSurgicalProcedureSectionOperations.validateOperativeNoteSurgicalProcedureSectionText(
-			this, diagnostics, context);
+		return OperativeNoteSurgicalProcedureSectionOperations.validateOperativeNoteSurgicalProcedureSectionText(this, diagnostics, context);
 	}
 
 	/**
@@ -90,8 +87,7 @@ public class OperativeNoteSurgicalProcedureSectionImpl extends SectionImpl imple
 	 */
 	public boolean validateOperativeNoteSurgicalProcedureSectionTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return OperativeNoteSurgicalProcedureSectionOperations.validateOperativeNoteSurgicalProcedureSectionTitle(
-			this, diagnostics, context);
+		return OperativeNoteSurgicalProcedureSectionOperations.validateOperativeNoteSurgicalProcedureSectionTitle(this, diagnostics, context);
 	}
 
 	/**
@@ -100,7 +96,7 @@ public class OperativeNoteSurgicalProcedureSectionImpl extends SectionImpl imple
 	 * @generated
 	 */
 	public OperativeNoteSurgicalProcedureSection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // OperativeNoteSurgicalProcedureSectionImpl

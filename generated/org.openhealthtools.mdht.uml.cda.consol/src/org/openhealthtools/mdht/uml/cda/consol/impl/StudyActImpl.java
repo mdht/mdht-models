@@ -55,6 +55,24 @@ public class StudyActImpl extends ActImpl implements StudyAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateStudyActIdsHaveRoot(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return StudyActOperations.validateStudyActIdsHaveRoot(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateStudyActNoIdExtension(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return StudyActOperations.validateStudyActNoIdExtension(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateStudyActTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return StudyActOperations.validateStudyActTemplateId(this, diagnostics, context);
 	}
@@ -137,7 +155,7 @@ public class StudyActImpl extends ActImpl implements StudyAct {
 	 * @generated
 	 */
 	public StudyAct init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // StudyActImpl

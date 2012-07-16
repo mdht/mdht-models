@@ -53,7 +53,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getFunctionalStatusSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.displayName='Functional status assessment' templateId.root='2.16.840.1.113883.10.20.22.2.14' constraints.validation.error='FunctionalStatusSectionTemplateId FunctionalStatusSectionCode FunctionalStatusSectionTitle FunctionalStatusSectionText' code.codeSystemName='LOINC' code.code='47420-5' constraints.validation.info='FunctionalStatusSectionProblemObservation FunctionalStatusSectionResultObservation'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='FunctionalStatusSectionTemplateId FunctionalStatusSectionCode FunctionalStatusSectionTitle FunctionalStatusSectionText' templateId.root='2.16.840.1.113883.10.20.22.2.14' code.code='47420-5' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Functional status assessment' constraints.validation.info='FunctionalStatusSectionProblemObservation FunctionalStatusSectionResultObservation'"
  * @generated
  */
 public interface FunctionalStatusSection extends Section {

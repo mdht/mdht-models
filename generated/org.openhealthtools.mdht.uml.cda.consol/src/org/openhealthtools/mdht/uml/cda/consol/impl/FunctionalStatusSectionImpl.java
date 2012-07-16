@@ -95,8 +95,7 @@ public class FunctionalStatusSectionImpl extends SectionImpl implements Function
 	 */
 	public boolean validateFunctionalStatusSectionProblemObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FunctionalStatusSectionOperations.validateFunctionalStatusSectionProblemObservation(
-			this, diagnostics, context);
+		return FunctionalStatusSectionOperations.validateFunctionalStatusSectionProblemObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -106,8 +105,7 @@ public class FunctionalStatusSectionImpl extends SectionImpl implements Function
 	 */
 	public boolean validateFunctionalStatusSectionResultObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FunctionalStatusSectionOperations.validateFunctionalStatusSectionResultObservation(
-			this, diagnostics, context);
+		return FunctionalStatusSectionOperations.validateFunctionalStatusSectionResultObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -134,7 +132,7 @@ public class FunctionalStatusSectionImpl extends SectionImpl implements Function
 	 * @generated
 	 */
 	public FunctionalStatusSection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // FunctionalStatusSectionImpl

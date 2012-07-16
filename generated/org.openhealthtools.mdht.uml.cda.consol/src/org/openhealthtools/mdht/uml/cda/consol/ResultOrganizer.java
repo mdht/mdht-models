@@ -23,7 +23,7 @@ import org.openhealthtools.mdht.uml.cda.Organizer;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getResultOrganizer()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation statusCode.code='completed' templateId.root='2.16.840.1.113883.10.20.22.4.1' constraints.validation.error='ResultOrganizerTemplateId ResultOrganizerClassCode ResultOrganizerMoodCode ResultOrganizerId ResultOrganizerStatusCode ResultOrganizerCode ResultOrganizerResultObservation' classCode='' constraints.validation.warning='ResultOrganizerCodeValue ResultOrganizerClassCodeValue' moodCode='EVN'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ResultOrganizerTemplateId ResultOrganizerClassCode ResultOrganizerMoodCode ResultOrganizerId ResultOrganizerStatusCode ResultOrganizerCode ResultOrganizerResultObservation' templateId.root='2.16.840.1.113883.10.20.22.4.1' constraints.validation.warning='ResultOrganizerCodeValue ResultOrganizerClassCodeValue' classCode='' moodCode='EVN' statusCode.code='completed'"
  * @generated
  */
 public interface ResultOrganizer extends Organizer {

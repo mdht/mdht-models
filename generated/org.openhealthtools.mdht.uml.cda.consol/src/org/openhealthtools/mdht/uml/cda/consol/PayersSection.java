@@ -45,7 +45,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getPayersSection()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' code.displayName='Payers' templateId.root='2.16.840.1.113883.10.20.22.2.18' constraints.validation.error='PayersSectionTemplateId PayersSectionCode PayersSectionTitle PayersSectionText' code.codeSystemName='LOINC' constraints.validation.warning='PayersSectionCoverageActivity' code.code='48768-6'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PayersSectionTemplateId PayersSectionCode PayersSectionTitle PayersSectionText' templateId.root='2.16.840.1.113883.10.20.22.2.18' code.code='48768-6' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Payers' constraints.validation.warning='PayersSectionCoverageActivity'"
  * @generated
  */
 public interface PayersSection extends Section {
