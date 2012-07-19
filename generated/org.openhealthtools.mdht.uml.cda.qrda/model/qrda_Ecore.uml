@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
+  <uml:Package xmi:id="_Xo_VANEyEeGkR_Op8LWYpA" name="qrda">
+    <packageImport xmi:id="_Xvry4NEyEeGkR_Op8LWYpA">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ii81kjxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_Xvry4dEyEeGkR_Op8LWYpA">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_XgMSwzxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_Xvry4tEyEeGkR_Op8LWYpA">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.cda.qrda.model/model/qrda-vocab.uml#_Xpr4kNEyEeGkR_Op8LWYpA"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_XsnQwdEyEeGkR_Op8LWYpA" name="QualityMeasureReport">
+      <ownedRule xmi:id="_1GRyENE1EeGkR_Op8LWYpA" name="QualityMeasureReportTemplateId" constrainedElement="_XsnQwdEyEeGkR_Op8LWYpA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_1GRyEdE1EeGkR_Op8LWYpA">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.12')</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_Xsoe4dEyEeGkR_Op8LWYpA">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_S9OzADxXEd6JwqSGecoePg"/>
+      </generalization>
+    </packagedElement>
+    <profileApplication xmi:id="_Xo_8ENEyEeGkR_Op8LWYpA">
+      <eAnnotations xmi:id="_Xo_8EdEyEeGkR_Op8LWYpA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_Xo_8EtEyEeGkR_Op8LWYpA">
+      <eAnnotations xmi:id="_Xo_8E9EyEeGkR_Op8LWYpA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/cda/4#/"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://CDA_PROFILES/CDA.profile.uml#_cxOJEIEVEd6H8o-hO3-B4Q"/>
+    </profileApplication>
+    <profileApplication xmi:id="_1GQj8NE1EeGkR_Op8LWYpA">
+      <eAnnotations xmi:id="_1GQj8dE1EeGkR_Op8LWYpA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Ecore.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Package>
+  <CDA:CodegenSupport xmi:id="_XsnQwNEyEeGkR_Op8LWYpA" basePackage="org.openhealthtools.mdht.uml.cda" nsPrefix="qrda" nsURI="http://www.openhealthtools.org/mdht/uml/cda/qrda" packageName="qrda" prefix="QRDA" base_Namespace="_Xo_VANEyEeGkR_Op8LWYpA"/>
+  <CDA:CDATemplate xmi:id="_Xsoe4NEyEeGkR_Op8LWYpA" base_Class="_XsnQwdEyEeGkR_Op8LWYpA" templateId="2.16.840.1.113883.10.20.12" assigningAuthorityName=""/>
+  <Ecore:EPackage xmi:id="_1GRLANE1EeGkR_Op8LWYpA" base_Package="_Xo_VANEyEeGkR_Op8LWYpA" packageName="qrda" nsPrefix="qrda" nsURI="http://www.openhealthtools.org/mdht/uml/cda/qrda" basePackage="org.openhealthtools.mdht.uml.cda" prefix="QRDA"/>
+  <Ecore:EClass xmi:id="_1GTAMNE1EeGkR_Op8LWYpA" base_Class="_XsnQwdEyEeGkR_Op8LWYpA">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='QualityMeasureReportTemplateId' templateId.root='2.16.840.1.113883.10.20.12'</annotation>
+  </Ecore:EClass>
+</xmi:XMI>
