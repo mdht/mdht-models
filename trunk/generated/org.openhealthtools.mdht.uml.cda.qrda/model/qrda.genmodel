@@ -27,10 +27,57 @@
   <foreignModel>qrda_Ecore.uml</foreignModel>
   <genPackages xsi:type="genmodel:GenPackage" prefix="QRDA" basePackage="org.openhealthtools.mdht.uml.cda"
       disposableProviderFactory="true" ecorePackage="qrda.ecore#/" operationsPackage="org.openhealthtools.mdht.uml.cda.qrda.operations">
-    <genClasses xsi:type="genmodel:GenClass" ecoreClass="qrda.ecore#//QualityMeasureReport">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrda.ecore#//QualityMeasureReport/QualityMeasureReportTemplateId">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrda.ecore#//QualityMeasureReport/QualityMeasureReportTemplateId/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrda.ecore#//QualityMeasureReport/QualityMeasureReportTemplateId/context"/>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="qrda.ecore#//QualityReportingDocumentArchitectureDocument">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrda.ecore#//QualityReportingDocumentArchitectureDocument/QualityReportingDocumentArchitectureDocumentTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrda.ecore#//QualityReportingDocumentArchitectureDocument/QualityReportingDocumentArchitectureDocumentTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrda.ecore#//QualityReportingDocumentArchitectureDocument/QualityReportingDocumentArchitectureDocumentTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrda.ecore#//QualityReportingDocumentArchitectureDocument/QualityReportingDocumentArchitectureDocumentCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrda.ecore#//QualityReportingDocumentArchitectureDocument/QualityReportingDocumentArchitectureDocumentCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrda.ecore#//QualityReportingDocumentArchitectureDocument/QualityReportingDocumentArchitectureDocumentCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrda.ecore#//QualityReportingDocumentArchitectureDocument/QualityReportingDocumentArchitectureDocumentCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrda.ecore#//QualityReportingDocumentArchitectureDocument/QualityReportingDocumentArchitectureDocumentCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrda.ecore#//QualityReportingDocumentArchitectureDocument/QualityReportingDocumentArchitectureDocumentCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrda.ecore#//QualityReportingDocumentArchitectureDocument/QualityReportingDocumentArchitectureDocumentTitle">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrda.ecore#//QualityReportingDocumentArchitectureDocument/QualityReportingDocumentArchitectureDocumentTitle/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrda.ecore#//QualityReportingDocumentArchitectureDocument/QualityReportingDocumentArchitectureDocumentTitle/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrda.ecore#//QualityReportingDocumentArchitectureDocument/QualityReportingDocumentArchitectureDocumentCustodian">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrda.ecore#//QualityReportingDocumentArchitectureDocument/QualityReportingDocumentArchitectureDocumentCustodian/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrda.ecore#//QualityReportingDocumentArchitectureDocument/QualityReportingDocumentArchitectureDocumentCustodian/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrda.ecore#//QualityReportingDocumentArchitectureDocument/QualityReportingDocumentArchitectureDocumentLegalAuthenticator">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrda.ecore#//QualityReportingDocumentArchitectureDocument/QualityReportingDocumentArchitectureDocumentLegalAuthenticator/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrda.ecore#//QualityReportingDocumentArchitectureDocument/QualityReportingDocumentArchitectureDocumentLegalAuthenticator/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrda.ecore#//QualityReportingDocumentArchitectureDocument/QualityReportingDocumentArchitectureDocumentRecordTarget">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrda.ecore#//QualityReportingDocumentArchitectureDocument/QualityReportingDocumentArchitectureDocumentRecordTarget/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrda.ecore#//QualityReportingDocumentArchitectureDocument/QualityReportingDocumentArchitectureDocumentRecordTarget/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrda.ecore#//QualityReportingDocumentArchitectureDocument/QualityReportingDocumentArchitectureDocumentMeasureSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrda.ecore#//QualityReportingDocumentArchitectureDocument/QualityReportingDocumentArchitectureDocumentMeasureSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrda.ecore#//QualityReportingDocumentArchitectureDocument/QualityReportingDocumentArchitectureDocumentMeasureSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrda.ecore#//QualityReportingDocumentArchitectureDocument/getMeasureSection"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="qrda.ecore#//MeasureSection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrda.ecore#//MeasureSection/MeasureSectionTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrda.ecore#//MeasureSection/MeasureSectionTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrda.ecore#//MeasureSection/MeasureSectionTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrda.ecore#//MeasureSection/MeasureSectionCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrda.ecore#//MeasureSection/MeasureSectionCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrda.ecore#//MeasureSection/MeasureSectionCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrda.ecore#//MeasureSection/MeasureSectionText">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrda.ecore#//MeasureSection/MeasureSectionText/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrda.ecore#//MeasureSection/MeasureSectionText/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrda.ecore#//MeasureSection/MeasureSectionTitle">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrda.ecore#//MeasureSection/MeasureSectionTitle/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrda.ecore#//MeasureSection/MeasureSectionTitle/context"/>
       </genOperations>
     </genClasses>
   </genPackages>
