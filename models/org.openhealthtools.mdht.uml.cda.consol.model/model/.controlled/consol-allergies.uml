@@ -120,7 +120,7 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
         <language>Analysis</language>
         <language>OCL</language>
         <body>reference/@value SHALL begin with a '#' and SHALL point to its corresponding narrative</body>
-        <body>self.value.oclAsType(datatypes::CD).originalText.reference.value->size() = 1 implies not self.getSection().text.getText(self.value.oclAsType(datatypes::CD).originalText.reference.value.substring(2, self.value.oclAsType(datatypes::CD).originalText.reference.value.size())).oclIsUndefined()</body>
+        <body>not self.code.originalText.reference.value.oclIsUndefined() implies not self.getSection().text.getText(self.code.originalText.reference.value.substring(2, self.code.originalText.reference.value.size())).oclIsUndefined()</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_8gb1UCFTEeG9m6LRl9ardQ" name="allergyStatusInversionIndicator" constrainedElement="_2EaLUBSVEeGGzu7fmW9pXw">
@@ -231,25 +231,19 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
           <ownedRule xmi:id="_Q7cdkDJCEeG6R8Pb5FT2Ow" name="allergySpecificMedication" constrainedElement="_E1B60DJBEeG6R8Pb5FT2Ow">
             <specification xmi:type="uml:OpaqueExpression" xmi:id="_irU_sDJCEeG6R8Pb5FT2Ow">
               <language>Analysis</language>
-              <language>OCL</language>
               <body>In an allergy to a specific medication the code SHALL be selected from the ValueSet 2.16.840.1.113883.3.88.12.80.16 Medication Brand Name DYNAMIC or the ValueSet 2.16.840.1.113883.3.88.12.80.17 Medication Clinical Drug DYNAMIC</body>
-              <body>self.code.codeSystem = '2.16.840.1.113883.6.88'</body>
             </specification>
           </ownedRule>
           <ownedRule xmi:id="_UYE8gDJCEeG6R8Pb5FT2Ow" name="allergyClassMedication" constrainedElement="_Q7cdkDJCEeG6R8Pb5FT2Ow">
             <specification xmi:type="uml:OpaqueExpression" xmi:id="_5MrFsDJCEeG6R8Pb5FT2Ow">
               <language>Analysis</language>
-              <language>OCL</language>
               <body>In an allergy to a class of medications the code SHALL be selected from the ValueSet 2.16.840.1.113883.3.88.12.80.18 Medication Drug Class DYNAMIC</body>
-              <body>self.code.codeSystem = '2.16.840.1.113883.3.26.1.5'</body>
             </specification>
           </ownedRule>
           <ownedRule xmi:id="_WDVkcDJCEeG6R8Pb5FT2Ow" name="allergyFoodOtherSubstance" constrainedElement="_UYE8gDJCEeG6R8Pb5FT2Ow">
             <specification xmi:type="uml:OpaqueExpression" xmi:id="_1ChZcDJCEeG6R8Pb5FT2Ow">
               <language>Analysis</language>
-              <language>OCL</language>
               <body>In an allergy to a food or other substance the code SHALL be selected from the ValueSet 2.16.840.1.113883.3.88.12.80.20 Ingredient Name DYNAMIC</body>
-              <body>self.code.codeSystem = '2.16.840.1.113883.4.9'</body>
             </specification>
           </ownedRule>
           <ownedRule xmi:id="_ZIdiUDJCEeG6R8Pb5FT2Ow" name="codeOriginalText" constrainedElement="_WDVkcDJCEeG6R8Pb5FT2Ow">
@@ -271,7 +265,9 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
           <ownedRule xmi:id="_c0knsDJCEeG6R8Pb5FT2Ow" name="originalTextReferenceValue" constrainedElement="_aK9hIDJCEeG6R8Pb5FT2Ow">
             <specification xmi:type="uml:OpaqueExpression" xmi:id="_ol9LEDJCEeG6R8Pb5FT2Ow">
               <language>Analysis</language>
+              <language>OCL</language>
               <body>reference/@value SHALL begin with a '#' and SHALL point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1</body>
+              <body>not self.code.originalText.reference.value.oclIsUndefined() implies not self.getSection().text.getText(self.code.originalText.reference.value.substring(2, self.code.originalText.reference.value.size())).oclIsUndefined()</body>
             </specification>
           </ownedRule>
           <ownedRule xmi:id="_eR_n8DJCEeG6R8Pb5FT2Ow" name="codeTranslation" constrainedElement="_c0knsDJCEeG6R8Pb5FT2Ow">

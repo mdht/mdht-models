@@ -88,6 +88,17 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
         <body>not self.versionNumber.oclIsUndefined() implies not self.setId.oclIsUndefined()</body>
       </specification>
     </ownedRule>
+    <ownedRule xmi:id="_0u47sNEHEeG1XvWcjsOnlQ" name="USRealmPatientNameMixedContent" constrainedElement="_2DNRcBSVEeGGzu7fmW9pXw">
+      <ownedComment xmi:id="_1CoykNEREeG1XvWcjsOnlQ">
+        <body>QUERY</body>
+      </ownedComment>
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_-QRLUNEHEeG1XvWcjsOnlQ">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>US Realm Patient Name SHALL NOT contain any mixed content other than whitespace</body>
+        <body>datatypes::PN.allInstances()->reject(name : datatypes::PN | name.getText(true) = '')</body>
+      </specification>
+    </ownedRule>
     <generalization xmi:id="_2D-tgBSVEeGGzu7fmW9pXw">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_S9OzADxXEd6JwqSGecoePg"/>
     </generalization>
@@ -298,6 +309,11 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
           <ownedAttribute xmi:id="_GmM4YCytEeGMXrZ0DiQwGg" name="languageCommunication" type="_hrAmsCymEeGMXrZ0DiQwGg" association="_GmNfcCytEeGMXrZ0DiQwGg">
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GmM4YSytEeGMXrZ0DiQwGg"/>
           </ownedAttribute>
+          <ownedAttribute xmi:id="_d3LCgNBWEeGg9eE98HsYZw" name="sDTCRaceCode" visibility="private" aggregation="composite">
+            <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_d3LCgdBWEeGg9eE98HsYZw" value="*"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_d3LCgtBWEeGg9eE98HsYZw"/>
+          </ownedAttribute>
           <nestedClassifier xmi:type="uml:Class" xmi:id="_-vjwcCylEeGMXrZ0DiQwGg" name="Guardian">
             <generalization xmi:id="_-vjwcSylEeGMXrZ0DiQwGg">
               <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_liVJMEcIEd6besF9iFIJkQ"/>
@@ -328,12 +344,6 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
             <generalization xmi:id="_hrAmsSymEeGMXrZ0DiQwGg">
               <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_cHD44EcZEd6besF9iFIJkQ"/>
             </generalization>
-            <ownedAttribute xmi:id="_nLJOcCymEeGMXrZ0DiQwGg" name="languageCode" visibility="private" aggregation="composite">
-              <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
-              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ra2twCytEeGMXrZ0DiQwGg" value="1"/>
-              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ra2twSytEeGMXrZ0DiQwGg" value="1"/>
-              <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_baR34Eo5Ed6c3qsAxlFHaQ"/>
-            </ownedAttribute>
             <ownedAttribute xmi:id="_nLJ1gCymEeGMXrZ0DiQwGg" name="preferenceInd" visibility="private" aggregation="composite">
               <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_r1WssDxjEd6JwqSGecoePg"/>
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nLJ1gSymEeGMXrZ0DiQwGg" value="1"/>
@@ -351,6 +361,11 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZGMo0SytEeGMXrZ0DiQwGg" value="1"/>
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZGMo0iytEeGMXrZ0DiQwGg"/>
               <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_g17BMEo5Ed6c3qsAxlFHaQ"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_DKwi4NBZEeG2b5vwscX4AA" name="languageCode" visibility="private" aggregation="composite">
+              <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KJ0mwNBZEeG2b5vwscX4AA" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KJ0mwdBZEeG2b5vwscX4AA" value="1"/>
             </ownedAttribute>
           </nestedClassifier>
           <nestedClassifier xmi:type="uml:Class" xmi:id="_NOxMACymEeGMXrZ0DiQwGg" name="Birthplace">
@@ -1780,8 +1795,9 @@ For conformance with both specifications, please review the appendix on XDS-SD a
   <CDA:ValueSetConstraint xmi:id="_2Odn4DVSEeGIw7CntkyPQw" base_Property="_7Otf4SylEeGMXrZ0DiQwGg" severity="WARNING">
     <reference href="../consol-vocab.uml#_9lb5cEFbEeGFqszUdHc61Q"/>
   </CDA:ValueSetConstraint>
-  <CDA:ValueSetConstraint xmi:id="_4sRHEDVSEeGIw7CntkyPQw" base_Property="_7OuuACylEeGMXrZ0DiQwGg" severity="INFO">
+  <CDA:ValueSetConstraint xmi:id="_4sRHEDVSEeGIw7CntkyPQw" base_Property="_7OuuACylEeGMXrZ0DiQwGg">
     <reference href="../consol-vocab.uml#_0Uo48EFaEeGFqszUdHc61Q"/>
+    <ruleId>CONF:5322</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ConstraintValidation xmi:id="_trWscDVUEeGIw7CntkyPQw" severity="WARNING" base_Constraint="_oGeuoDVUEeGIw7CntkyPQw">
     <ruleId>CONF:9996</ruleId>
@@ -4601,4 +4617,18 @@ OIDs SHALL be no more than 64 characters in length..</body>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_do2YYMbvEeGp28IjMvW3Ag" base_Constraint="_wectUErYEeGJpZWiuxRVIw"/>
   <CDA:ConstraintValidation xmi:id="_yT_xwMbvEeGp28IjMvW3Ag" base_Constraint="_gAs2kEraEeGJpZWiuxRVIw"/>
+  <CDA:PropertyValidation xmi:id="_qfj70NBVEeGg9eE98HsYZw" severity="INFO" base_Property="_7OuuACylEeGMXrZ0DiQwGg"/>
+  <CDA:ValueSetConstraint xmi:id="_kzAzQNBWEeGg9eE98HsYZw" base_Property="_d3LCgNBWEeGg9eE98HsYZw">
+    <reference href="../consol-vocab.uml#_0Uo48EFaEeGFqszUdHc61Q"/>
+    <ruleId>CONF:7263</ruleId>
+  </CDA:ValueSetConstraint>
+  <CDA:PropertyValidation xmi:id="_mcDNoNBWEeGg9eE98HsYZw" severity="INFO" base_Property="_d3LCgNBWEeGg9eE98HsYZw"/>
+  <CDA:PropertyValidation xmi:id="_G_Cs0NBZEeG2b5vwscX4AA" base_Property="_DKwi4NBZEeG2b5vwscX4AA"/>
+  <CDA:ValueSetConstraint xmi:id="_oIdS0NBbEeGF655cTEGY8Q" base_Property="_DKwi4NBZEeG2b5vwscX4AA">
+    <reference href="../consol-vocab.uml#_2SbZNRSVEeGGzu7fmW9pXw"/>
+    <ruleId>CONF:5407</ruleId>
+  </CDA:ValueSetConstraint>
+  <CDA:ConstraintValidation xmi:id="_D3hc0NEKEeG1XvWcjsOnlQ" base_Constraint="_0u47sNEHEeG1XvWcjsOnlQ">
+    <ruleId>CONF:7278</ruleId>
+  </CDA:ConstraintValidation>
 </xmi:XMI>
