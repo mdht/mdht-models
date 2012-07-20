@@ -33,93 +33,93 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 public class HospitalDischargeMedicationsSectionImpl extends HospitalDischargeMedicationsSectionEntriesOptionalImpl
 		implements HospitalDischargeMedicationsSection {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected HospitalDischargeMedicationsSectionImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return ConsolPackage.Literals.HOSPITAL_DISCHARGE_MEDICATIONS_SECTION;
-	}
+    return ConsolPackage.Literals.HOSPITAL_DISCHARGE_MEDICATIONS_SECTION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateHospitalDischargeMedicationsSectionText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalDischargeMedicationsSectionOperations.validateHospitalDischargeMedicationsSectionText(this, diagnostics, context);
-	}
+    return HospitalDischargeMedicationsSectionOperations.validateHospitalDischargeMedicationsSectionText(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateHospitalDischargeMedicationsSectionTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalDischargeMedicationsSectionOperations.validateHospitalDischargeMedicationsSectionTitle(this, diagnostics, context);
-	}
+    return HospitalDischargeMedicationsSectionOperations.validateHospitalDischargeMedicationsSectionTitle(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateHospitalDischargeMedicationsSectionDischargeMedication(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalDischargeMedicationsSectionOperations.validateHospitalDischargeMedicationsSectionDischargeMedication(this, diagnostics, context);
-	}
+    return HospitalDischargeMedicationsSectionOperations.validateHospitalDischargeMedicationsSectionDischargeMedication(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EList<DischargeMedication> getConsolDischargeMedications() {
-		return HospitalDischargeMedicationsSectionOperations.getConsolDischargeMedications(this);
-	}
+    return HospitalDischargeMedicationsSectionOperations.getConsolDischargeMedications(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public boolean validateHospitalDischargeMedicationsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalDischargeMedicationsSectionOperations.validateHospitalDischargeMedicationsSectionEntriesOptionalTemplateId(this, diagnostics, context);
-	}
+    return HospitalDischargeMedicationsSectionOperations.validateHospitalDischargeMedicationsSectionEntriesOptionalTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public boolean validateHospitalDischargeMedicationsSectionEntriesOptionalCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalDischargeMedicationsSectionOperations.validateHospitalDischargeMedicationsSectionEntriesOptionalCode(this, diagnostics, context);
-	}
+    return HospitalDischargeMedicationsSectionOperations.validateHospitalDischargeMedicationsSectionEntriesOptionalCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public HospitalDischargeMedicationsSection init() {
     	CDAUtil.init(this);
     	return this;
-	}
+  }
 } // HospitalDischargeMedicationsSectionImpl

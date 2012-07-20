@@ -31,67 +31,67 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class ObjectiveSectionImpl extends SectionImpl implements ObjectiveSection {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected ObjectiveSectionImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return ConsolPackage.Literals.OBJECTIVE_SECTION;
-	}
+    return ConsolPackage.Literals.OBJECTIVE_SECTION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateObjectiveSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ObjectiveSectionOperations.validateObjectiveSectionTemplateId(this, diagnostics, context);
-	}
+    return ObjectiveSectionOperations.validateObjectiveSectionTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateObjectiveSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ObjectiveSectionOperations.validateObjectiveSectionCode(this, diagnostics, context);
-	}
+    return ObjectiveSectionOperations.validateObjectiveSectionCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateObjectiveSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ObjectiveSectionOperations.validateObjectiveSectionText(this, diagnostics, context);
-	}
+    return ObjectiveSectionOperations.validateObjectiveSectionText(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateObjectiveSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ObjectiveSectionOperations.validateObjectiveSectionTitle(this, diagnostics, context);
-	}
+    return ObjectiveSectionOperations.validateObjectiveSectionTitle(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public ObjectiveSection init() {
     	CDAUtil.init(this);
     	return this;
-	}
+  }
 } // ObjectiveSectionImpl

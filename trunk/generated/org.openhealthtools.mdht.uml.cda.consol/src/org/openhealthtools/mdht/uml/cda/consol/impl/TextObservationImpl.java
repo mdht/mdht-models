@@ -31,40 +31,40 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class TextObservationImpl extends ObservationImpl implements TextObservation {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected TextObservationImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return ConsolPackage.Literals.TEXT_OBSERVATION;
-	}
+    return ConsolPackage.Literals.TEXT_OBSERVATION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateTextObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return TextObservationOperations.validateTextObservationTemplateId(this, diagnostics, context);
-	}
+    return TextObservationOperations.validateTextObservationTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public TextObservation init() {
     	CDAUtil.init(this);
     	return this;
-	}
+  }
 } // TextObservationImpl

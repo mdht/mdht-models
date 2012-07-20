@@ -32,158 +32,158 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class MedicationSupplyOrderImpl extends SupplyImpl implements MedicationSupplyOrder {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected MedicationSupplyOrderImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return ConsolPackage.Literals.MEDICATION_SUPPLY_ORDER;
-	}
+    return ConsolPackage.Literals.MEDICATION_SUPPLY_ORDER;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateMedicationSupplyOrderInstructionInversionInd(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationSupplyOrderOperations.validateMedicationSupplyOrderInstructionInversionInd(this, diagnostics, context);
-	}
+    return MedicationSupplyOrderOperations.validateMedicationSupplyOrderInstructionInversionInd(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateMedicationSupplyOrderTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationSupplyOrderOperations.validateMedicationSupplyOrderTemplateId(this, diagnostics, context);
-	}
+    return MedicationSupplyOrderOperations.validateMedicationSupplyOrderTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateMedicationSupplyOrderClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationSupplyOrderOperations.validateMedicationSupplyOrderClassCode(this, diagnostics, context);
-	}
+    return MedicationSupplyOrderOperations.validateMedicationSupplyOrderClassCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateMedicationSupplyOrderEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationSupplyOrderOperations.validateMedicationSupplyOrderEffectiveTime(this, diagnostics, context);
-	}
+    return MedicationSupplyOrderOperations.validateMedicationSupplyOrderEffectiveTime(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateMedicationSupplyOrderMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationSupplyOrderOperations.validateMedicationSupplyOrderMoodCode(this, diagnostics, context);
-	}
+    return MedicationSupplyOrderOperations.validateMedicationSupplyOrderMoodCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateMedicationSupplyOrderQuantity(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationSupplyOrderOperations.validateMedicationSupplyOrderQuantity(this, diagnostics, context);
-	}
+    return MedicationSupplyOrderOperations.validateMedicationSupplyOrderQuantity(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateMedicationSupplyOrderRepeatNumber(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationSupplyOrderOperations.validateMedicationSupplyOrderRepeatNumber(this, diagnostics, context);
-	}
+    return MedicationSupplyOrderOperations.validateMedicationSupplyOrderRepeatNumber(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateMedicationSupplyOrderStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationSupplyOrderOperations.validateMedicationSupplyOrderStatusCode(this, diagnostics, context);
-	}
+    return MedicationSupplyOrderOperations.validateMedicationSupplyOrderStatusCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateMedicationSupplyOrderId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationSupplyOrderOperations.validateMedicationSupplyOrderId(this, diagnostics, context);
-	}
+    return MedicationSupplyOrderOperations.validateMedicationSupplyOrderId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateMedicationSupplyOrderProduct(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationSupplyOrderOperations.validateMedicationSupplyOrderProduct(this, diagnostics, context);
-	}
+    return MedicationSupplyOrderOperations.validateMedicationSupplyOrderProduct(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateMedicationSupplyOrderAuthor(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationSupplyOrderOperations.validateMedicationSupplyOrderAuthor(this, diagnostics, context);
-	}
+    return MedicationSupplyOrderOperations.validateMedicationSupplyOrderAuthor(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateMedicationSupplyOrderInstructions(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationSupplyOrderOperations.validateMedicationSupplyOrderInstructions(this, diagnostics, context);
-	}
+    return MedicationSupplyOrderOperations.validateMedicationSupplyOrderInstructions(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateMedicationSupplyOrderProductContainsMedicationOrImmunization(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationSupplyOrderOperations.validateMedicationSupplyOrderProductContainsMedicationOrImmunization(this, diagnostics, context);
-	}
+    return MedicationSupplyOrderOperations.validateMedicationSupplyOrderProductContainsMedicationOrImmunization(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public Instructions getInstructions() {
-		return MedicationSupplyOrderOperations.getInstructions(this);
-	}
+    return MedicationSupplyOrderOperations.getInstructions(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public MedicationSupplyOrder init() {
     	CDAUtil.init(this);
     	return this;
-	}
+  }
 } // MedicationSupplyOrderImpl

@@ -46,143 +46,149 @@ import org.openhealthtools.mdht.uml.cda.operations.Performer2Operations;
  */
 public class EncounterPerformerOperations extends Performer2Operations {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected EncounterPerformerOperations() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateEncounterPerformerEncounterPerformerAssignedEntity(EncounterPerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounter Performer Encounter Performer Assigned Entity</em>}' operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #validateEncounterPerformerEncounterPerformerAssignedEntity(EncounterPerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounter Performer Encounter Performer Assigned Entity</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateEncounterPerformerEncounterPerformerAssignedEntity(EncounterPerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateEncounterPerformerEncounterPerformerAssignedEntity(EncounterPerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static final String VALIDATE_ENCOUNTER_PERFORMER_ENCOUNTER_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.assignedEntity->one(assignedEntity : cda::AssignedEntity | not assignedEntity.oclIsUndefined() and assignedEntity.oclIsKindOf(cda::AssignedEntity))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateEncounterPerformerEncounterPerformerAssignedEntity(EncounterPerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounter Performer Encounter Performer Assigned Entity</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL invariant for the '{@link #validateEncounterPerformerEncounterPerformerAssignedEntity(EncounterPerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounter Performer Encounter Performer Assigned Entity</em>}' invariant operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateEncounterPerformerEncounterPerformerAssignedEntity(EncounterPerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateEncounterPerformerEncounterPerformerAssignedEntity(EncounterPerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 
 	protected static Constraint VALIDATE_ENCOUNTER_PERFORMER_ENCOUNTER_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.assignedEntity->one(assignedEntity : cda::AssignedEntity | not assignedEntity.oclIsUndefined() and assignedEntity.oclIsKindOf(cda::AssignedEntity))
-	 * @param encounterPerformer The receiving '<em><b>Encounter Performer</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * self.assignedEntity->one(assignedEntity : cda::AssignedEntity | not assignedEntity.oclIsUndefined() and assignedEntity.oclIsKindOf(cda::AssignedEntity))
+   * @param encounterPerformer The receiving '<em><b>Encounter Performer</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
 
 	public static boolean validateEncounterPerformerEncounterPerformerAssignedEntity(
 			EncounterPerformer encounterPerformer, DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
-		if (VALIDATE_ENCOUNTER_PERFORMER_ENCOUNTER_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.ENCOUNTER_PERFORMER);
-			try {
-				VALIDATE_ENCOUNTER_PERFORMER_ENCOUNTER_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ENCOUNTER_PERFORMER_ENCOUNTER_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ENCOUNTER_PERFORMER_ENCOUNTER_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(encounterPerformer)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.ENCOUNTER_PERFORMER__ENCOUNTER_PERFORMER_ENCOUNTER_PERFORMER_ASSIGNED_ENTITY,
-						 ConsolPlugin.INSTANCE.getString("EncounterPerformerEncounterPerformerAssignedEntity"),
-						 new Object [] { encounterPerformer }));
-			}
-			 
-			return false;
-		}
-		return true;
-	}
+    if (VALIDATE_ENCOUNTER_PERFORMER_ENCOUNTER_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(ConsolPackage.Literals.ENCOUNTER_PERFORMER);
+      try
+      {
+        VALIDATE_ENCOUNTER_PERFORMER_ENCOUNTER_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ENCOUNTER_PERFORMER_ENCOUNTER_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    }
+    if (!EOCL_ENV.createQuery(VALIDATE_ENCOUNTER_PERFORMER_ENCOUNTER_PERFORMER_ASSIGNED_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(encounterPerformer))
+    {
+      if (diagnostics != null)
+      {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.ERROR,
+             ConsolValidator.DIAGNOSTIC_SOURCE,
+             ConsolValidator.ENCOUNTER_PERFORMER__ENCOUNTER_PERFORMER_ENCOUNTER_PERFORMER_ASSIGNED_ENTITY,
+             ConsolPlugin.INSTANCE.getString("EncounterPerformerEncounterPerformerAssignedEntity"),
+             new Object [] { encounterPerformer }));
+      }
+       
+      return false;
+    }
+    return true;
+  }
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateEncounterPerformerEncounterPerformerAssignedEntityCode(EncounterPerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounter Performer Encounter Performer Assigned Entity Code</em>}' operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL expression body for the '{@link #validateEncounterPerformerEncounterPerformerAssignedEntityCode(EncounterPerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounter Performer Encounter Performer Assigned Entity Code</em>}' operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateEncounterPerformerEncounterPerformerAssignedEntityCode(EncounterPerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateEncounterPerformerEncounterPerformerAssignedEntityCode(EncounterPerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 	protected static final String VALIDATE_ENCOUNTER_PERFORMER_ENCOUNTER_PERFORMER_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.assignedEntity->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateEncounterPerformerEncounterPerformerAssignedEntityCode(EncounterPerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounter Performer Encounter Performer Assigned Entity Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+   * The cached OCL invariant for the '{@link #validateEncounterPerformerEncounterPerformerAssignedEntityCode(EncounterPerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Encounter Performer Encounter Performer Assigned Entity Code</em>}' invariant operation.
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateEncounterPerformerEncounterPerformerAssignedEntityCode(EncounterPerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+   * @see #validateEncounterPerformerEncounterPerformerAssignedEntityCode(EncounterPerformer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+   * @generated
+   * @ordered
+   */
 
 	protected static Query<?, ?, ?> VALIDATE_ENCOUNTER_PERFORMER_ENCOUNTER_PERFORMER_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.assignedEntity->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))
-	 * @param encounterPerformer The receiving '<em><b>Encounter Performer</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+   * <!-- begin-model-doc -->
+   * self.assignedEntity->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))
+   * @param encounterPerformer The receiving '<em><b>Encounter Performer</b></em>' model object.
+   * @param diagnostics The chain of diagnostics to which problems are to be appended.
+   * @param context The cache of context-specific information.
+   * <!-- end-model-doc -->
+   * @generated
+   */
 
 	@SuppressWarnings("unchecked")
 	public static boolean validateEncounterPerformerEncounterPerformerAssignedEntityCode(
 			EncounterPerformer encounterPerformer, DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
-		
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.ENCOUNTER_PERFORMER);
-			try {
-				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_ENCOUNTER_PERFORMER_ENCOUNTER_PERFORMER_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_ENCOUNTER_PERFORMER_ENCOUNTER_PERFORMER_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		
-		Object oclResult = VALIDATE_ENCOUNTER_PERFORMER_ENCOUNTER_PERFORMER_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(encounterPerformer);		
-		if (oclResult != null && oclResult instanceof Collection) {
-			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
+    
+      OCL.Helper helper = EOCL_ENV.createOCLHelper();
+      helper.setContext(ConsolPackage.Literals.ENCOUNTER_PERFORMER);
+      try
+      {
+        OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_ENCOUNTER_PERFORMER_ENCOUNTER_PERFORMER_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+        VALIDATE_ENCOUNTER_PERFORMER_ENCOUNTER_PERFORMER_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+      }
+      catch (ParserException pe)
+      {
+        throw new UnsupportedOperationException(pe.getLocalizedMessage());
+      }
+    
+    Object oclResult = VALIDATE_ENCOUNTER_PERFORMER_ENCOUNTER_PERFORMER_ASSIGNED_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(encounterPerformer);		
+    if (oclResult != null && oclResult instanceof Collection) {
+      Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
   			
-			if (diagnostics != null) {
-				for (EObject eObject : oclResultSet) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.INFO,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.ENCOUNTER_PERFORMER__ENCOUNTER_PERFORMER_ENCOUNTER_PERFORMER_ASSIGNED_ENTITY_CODE,
-						 ConsolPlugin.INSTANCE.getString("EncounterPerformerEncounterPerformerAssignedEntityCode"),
-						 new Object [] { eObject }));
-				}
-				 
-			}
-			return oclResultSet.isEmpty();
-		}
-		return true;
-	}
+      if (diagnostics != null) {
+        for (EObject eObject : oclResultSet) {
+        diagnostics.add
+          (new BasicDiagnostic
+            (Diagnostic.INFO,
+             ConsolValidator.DIAGNOSTIC_SOURCE,
+             ConsolValidator.ENCOUNTER_PERFORMER__ENCOUNTER_PERFORMER_ENCOUNTER_PERFORMER_ASSIGNED_ENTITY_CODE,
+             ConsolPlugin.INSTANCE.getString("EncounterPerformerEncounterPerformerAssignedEntityCode"),
+             new Object [] { eObject }));
+        }
+         
+      }
+      return oclResultSet.isEmpty();
+    }
+    return true;
+  }
 
 } // EncounterPerformerOperations

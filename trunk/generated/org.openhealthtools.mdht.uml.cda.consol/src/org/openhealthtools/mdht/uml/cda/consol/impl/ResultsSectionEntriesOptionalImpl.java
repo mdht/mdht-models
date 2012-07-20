@@ -33,87 +33,87 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class ResultsSectionEntriesOptionalImpl extends SectionImpl implements ResultsSectionEntriesOptional {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected ResultsSectionEntriesOptionalImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return ConsolPackage.Literals.RESULTS_SECTION_ENTRIES_OPTIONAL;
-	}
+    return ConsolPackage.Literals.RESULTS_SECTION_ENTRIES_OPTIONAL;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateResultsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ResultsSectionEntriesOptionalOperations.validateResultsSectionEntriesOptionalTemplateId(this, diagnostics, context);
-	}
+    return ResultsSectionEntriesOptionalOperations.validateResultsSectionEntriesOptionalTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateResultsSectionEntriesOptionalCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResultsSectionEntriesOptionalOperations.validateResultsSectionEntriesOptionalCode(this, diagnostics, context);
-	}
+    return ResultsSectionEntriesOptionalOperations.validateResultsSectionEntriesOptionalCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateResultsSectionEntriesOptionalTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResultsSectionEntriesOptionalOperations.validateResultsSectionEntriesOptionalTitle(this, diagnostics, context);
-	}
+    return ResultsSectionEntriesOptionalOperations.validateResultsSectionEntriesOptionalTitle(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateResultsSectionEntriesOptionalText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResultsSectionEntriesOptionalOperations.validateResultsSectionEntriesOptionalText(this, diagnostics, context);
-	}
+    return ResultsSectionEntriesOptionalOperations.validateResultsSectionEntriesOptionalText(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateResultsSectionEntriesOptionalResultOrganizer(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ResultsSectionEntriesOptionalOperations.validateResultsSectionEntriesOptionalResultOrganizer(this, diagnostics, context);
-	}
+    return ResultsSectionEntriesOptionalOperations.validateResultsSectionEntriesOptionalResultOrganizer(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EList<ResultOrganizer> getResultOrganizers() {
-		return ResultsSectionEntriesOptionalOperations.getResultOrganizers(this);
-	}
+    return ResultsSectionEntriesOptionalOperations.getResultOrganizers(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public ResultsSectionEntriesOptional init() {
     	CDAUtil.init(this);
     	return this;
-	}
+  }
 } // ResultsSectionEntriesOptionalImpl

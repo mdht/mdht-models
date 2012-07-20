@@ -32,89 +32,89 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class EncountersSectionImpl extends EncountersSectionEntriesOptionalImpl implements EncountersSection {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected EncountersSectionImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return ConsolPackage.Literals.ENCOUNTERS_SECTION;
-	}
+    return ConsolPackage.Literals.ENCOUNTERS_SECTION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateEncountersSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EncountersSectionOperations.validateEncountersSectionText(this, diagnostics, context);
-	}
+    return EncountersSectionOperations.validateEncountersSectionText(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateEncountersSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EncountersSectionOperations.validateEncountersSectionTitle(this, diagnostics, context);
-	}
+    return EncountersSectionOperations.validateEncountersSectionTitle(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateEncountersSectionEncounterActivities(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EncountersSectionOperations.validateEncountersSectionEncounterActivities(this, diagnostics, context);
-	}
+    return EncountersSectionOperations.validateEncountersSectionEncounterActivities(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EList<EncounterActivities> getConsolEncounterActivitiess() {
-		return EncountersSectionOperations.getConsolEncounterActivitiess(this);
-	}
+    return EncountersSectionOperations.getConsolEncounterActivitiess(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public boolean validateEncountersSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return EncountersSectionOperations.validateEncountersSectionEntriesOptionalTemplateId(this, diagnostics, context);
-	}
+    return EncountersSectionOperations.validateEncountersSectionEntriesOptionalTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public boolean validateEncountersSectionEntriesOptionalCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EncountersSectionOperations.validateEncountersSectionEntriesOptionalCode(this, diagnostics, context);
-	}
+    return EncountersSectionOperations.validateEncountersSectionEntriesOptionalCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	public EncountersSection init() {
     	CDAUtil.init(this);
     	return this;
-	}
+  }
 } // EncountersSectionImpl

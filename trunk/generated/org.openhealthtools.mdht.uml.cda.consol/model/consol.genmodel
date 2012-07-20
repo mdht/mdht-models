@@ -54,6 +54,10 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsVersionNumberSetId/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsVersionNumberSetId/context"/>
       </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsUSRealmPatientNameMixedContent">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsUSRealmPatientNameMixedContent/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsUSRealmPatientNameMixedContent/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsTemplateId">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsTemplateId/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsTemplateId/context"/>
@@ -370,10 +374,6 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationTelecom/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationTelecom/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode/context"/>
-      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationPreferenceInd">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationPreferenceInd/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationPreferenceInd/context"/>
@@ -393,6 +393,14 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationModeCode">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationModeCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationModeCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlaceAddr">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlaceAddr/diagnostics"/>
@@ -458,6 +466,10 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRolePatientName/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRolePatientName/context"/>
       </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode/context"/>
@@ -465,6 +477,14 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRolePatientReligiousAffiliationCode">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRolePatientReligiousAffiliationCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRolePatientReligiousAffiliationCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRolePatientSDTCRaceCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRolePatientSDTCRaceCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRolePatientSDTCRaceCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRolePatientSDTCRaceCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRolePatientSDTCRaceCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRolePatientSDTCRaceCode/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRolePatientGuardian">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRolePatientGuardian/diagnostics"/>
@@ -691,18 +711,6 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AllergyObservation/AllergyObservationParticipant/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AllergyObservation/AllergyObservationParticipant/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//AllergyObservation/AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityAllergySpecificMedication">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AllergyObservation/AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityAllergySpecificMedication/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AllergyObservation/AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityAllergySpecificMedication/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//AllergyObservation/AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityAllergyClassMedication">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AllergyObservation/AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityAllergyClassMedication/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AllergyObservation/AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityAllergyClassMedication/context"/>
-      </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//AllergyObservation/AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityAllergyFoodOtherSubstance">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AllergyObservation/AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityAllergyFoodOtherSubstance/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AllergyObservation/AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityAllergyFoodOtherSubstance/context"/>
-      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//AllergyObservation/AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCodeOriginalText">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AllergyObservation/AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCodeOriginalText/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AllergyObservation/AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCodeOriginalText/context"/>
@@ -710,6 +718,10 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//AllergyObservation/AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityOriginalTextReference">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AllergyObservation/AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityOriginalTextReference/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AllergyObservation/AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityOriginalTextReference/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//AllergyObservation/AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityOriginalTextReferenceValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AllergyObservation/AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityOriginalTextReferenceValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AllergyObservation/AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityOriginalTextReferenceValue/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//AllergyObservation/AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCodeTranslation">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//AllergyObservation/AllergyObservationAllergyObservationParticipantAllergyObservationParticipantRoleAllergyObservationPlayingEntityCodeTranslation/diagnostics"/>

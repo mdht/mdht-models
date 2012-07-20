@@ -33,90 +33,90 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 public class AdvanceDirectivesSectionEntriesOptionalImpl extends SectionImpl implements
 		AdvanceDirectivesSectionEntriesOptional {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected AdvanceDirectivesSectionEntriesOptionalImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return ConsolPackage.Literals.ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL;
-	}
+    return ConsolPackage.Literals.ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateAdvanceDirectivesSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdvanceDirectivesSectionEntriesOptionalOperations.validateAdvanceDirectivesSectionEntriesOptionalTemplateId(this, diagnostics, context);
-	}
+    return AdvanceDirectivesSectionEntriesOptionalOperations.validateAdvanceDirectivesSectionEntriesOptionalTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateAdvanceDirectivesSectionEntriesOptionalCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdvanceDirectivesSectionEntriesOptionalOperations.validateAdvanceDirectivesSectionEntriesOptionalCode(this, diagnostics, context);
-	}
+    return AdvanceDirectivesSectionEntriesOptionalOperations.validateAdvanceDirectivesSectionEntriesOptionalCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateAdvanceDirectivesSectionEntriesOptionalTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdvanceDirectivesSectionEntriesOptionalOperations.validateAdvanceDirectivesSectionEntriesOptionalTitle(this, diagnostics, context);
-	}
+    return AdvanceDirectivesSectionEntriesOptionalOperations.validateAdvanceDirectivesSectionEntriesOptionalTitle(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateAdvanceDirectivesSectionEntriesOptionalText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdvanceDirectivesSectionEntriesOptionalOperations.validateAdvanceDirectivesSectionEntriesOptionalText(this, diagnostics, context);
-	}
+    return AdvanceDirectivesSectionEntriesOptionalOperations.validateAdvanceDirectivesSectionEntriesOptionalText(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateAdvanceDirectivesSectionEntriesOptionalAdvanceDirectiveObservation(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdvanceDirectivesSectionEntriesOptionalOperations.validateAdvanceDirectivesSectionEntriesOptionalAdvanceDirectiveObservation(this, diagnostics, context);
-	}
+    return AdvanceDirectivesSectionEntriesOptionalOperations.validateAdvanceDirectivesSectionEntriesOptionalAdvanceDirectiveObservation(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public AdvanceDirectiveObservation getAdvanceDirectiveObservation() {
-		return AdvanceDirectivesSectionEntriesOptionalOperations.getAdvanceDirectiveObservation(this);
-	}
+    return AdvanceDirectivesSectionEntriesOptionalOperations.getAdvanceDirectiveObservation(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public AdvanceDirectivesSectionEntriesOptional init() {
     	CDAUtil.init(this);
     	return this;
-	}
+  }
 } // AdvanceDirectivesSectionEntriesOptionalImpl

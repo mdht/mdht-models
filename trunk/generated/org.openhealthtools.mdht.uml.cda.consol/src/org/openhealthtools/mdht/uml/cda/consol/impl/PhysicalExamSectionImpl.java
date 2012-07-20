@@ -31,67 +31,67 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class PhysicalExamSectionImpl extends SectionImpl implements PhysicalExamSection {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected PhysicalExamSectionImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return ConsolPackage.Literals.PHYSICAL_EXAM_SECTION;
-	}
+    return ConsolPackage.Literals.PHYSICAL_EXAM_SECTION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePhysicalExamSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhysicalExamSectionOperations.validatePhysicalExamSectionTemplateId(this, diagnostics, context);
-	}
+    return PhysicalExamSectionOperations.validatePhysicalExamSectionTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePhysicalExamSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhysicalExamSectionOperations.validatePhysicalExamSectionCode(this, diagnostics, context);
-	}
+    return PhysicalExamSectionOperations.validatePhysicalExamSectionCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePhysicalExamSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhysicalExamSectionOperations.validatePhysicalExamSectionTitle(this, diagnostics, context);
-	}
+    return PhysicalExamSectionOperations.validatePhysicalExamSectionTitle(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePhysicalExamSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PhysicalExamSectionOperations.validatePhysicalExamSectionText(this, diagnostics, context);
-	}
+    return PhysicalExamSectionOperations.validatePhysicalExamSectionText(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public PhysicalExamSection init() {
     	CDAUtil.init(this);
     	return this;
-	}
+  }
 } // PhysicalExamSectionImpl
