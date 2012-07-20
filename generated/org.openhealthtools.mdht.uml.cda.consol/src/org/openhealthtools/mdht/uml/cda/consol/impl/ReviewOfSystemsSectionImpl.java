@@ -31,67 +31,67 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class ReviewOfSystemsSectionImpl extends SectionImpl implements ReviewOfSystemsSection {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected ReviewOfSystemsSectionImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return ConsolPackage.Literals.REVIEW_OF_SYSTEMS_SECTION;
-	}
+    return ConsolPackage.Literals.REVIEW_OF_SYSTEMS_SECTION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateReviewOfSystemsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ReviewOfSystemsSectionOperations.validateReviewOfSystemsSectionTemplateId(this, diagnostics, context);
-	}
+    return ReviewOfSystemsSectionOperations.validateReviewOfSystemsSectionTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateReviewOfSystemsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ReviewOfSystemsSectionOperations.validateReviewOfSystemsSectionCode(this, diagnostics, context);
-	}
+    return ReviewOfSystemsSectionOperations.validateReviewOfSystemsSectionCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateReviewOfSystemsSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ReviewOfSystemsSectionOperations.validateReviewOfSystemsSectionTitle(this, diagnostics, context);
-	}
+    return ReviewOfSystemsSectionOperations.validateReviewOfSystemsSectionTitle(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateReviewOfSystemsSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ReviewOfSystemsSectionOperations.validateReviewOfSystemsSectionText(this, diagnostics, context);
-	}
+    return ReviewOfSystemsSectionOperations.validateReviewOfSystemsSectionText(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public ReviewOfSystemsSection init() {
     	CDAUtil.init(this);
     	return this;
-	}
+  }
 } // ReviewOfSystemsSectionImpl

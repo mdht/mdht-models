@@ -31,40 +31,40 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class CodeObservationsImpl extends ObservationImpl implements CodeObservations {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected CodeObservationsImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return ConsolPackage.Literals.CODE_OBSERVATIONS;
-	}
+    return ConsolPackage.Literals.CODE_OBSERVATIONS;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateCodeObservationsTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CodeObservationsOperations.validateCodeObservationsTemplateId(this, diagnostics, context);
-	}
+    return CodeObservationsOperations.validateCodeObservationsTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public CodeObservations init() {
     	CDAUtil.init(this);
     	return this;
-	}
+  }
 } // CodeObservationsImpl

@@ -31,41 +31,41 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class QuantityMeasurementObservationImpl extends ObservationImpl implements QuantityMeasurementObservation {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected QuantityMeasurementObservationImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return ConsolPackage.Literals.QUANTITY_MEASUREMENT_OBSERVATION;
-	}
+    return ConsolPackage.Literals.QUANTITY_MEASUREMENT_OBSERVATION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateQuantityMeasurementObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return QuantityMeasurementObservationOperations.validateQuantityMeasurementObservationTemplateId(this, diagnostics, context);
-	}
+    return QuantityMeasurementObservationOperations.validateQuantityMeasurementObservationTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public QuantityMeasurementObservation init() {
     	CDAUtil.init(this);
     	return this;
-	}
+  }
 } // QuantityMeasurementObservationImpl

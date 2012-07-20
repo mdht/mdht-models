@@ -31,70 +31,70 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class PlanOfCareActivityObservationImpl extends ObservationImpl implements PlanOfCareActivityObservation {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected PlanOfCareActivityObservationImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return ConsolPackage.Literals.PLAN_OF_CARE_ACTIVITY_OBSERVATION;
-	}
+    return ConsolPackage.Literals.PLAN_OF_CARE_ACTIVITY_OBSERVATION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePlanOfCareActivityObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlanOfCareActivityObservationOperations.validatePlanOfCareActivityObservationTemplateId(this, diagnostics, context);
-	}
+    return PlanOfCareActivityObservationOperations.validatePlanOfCareActivityObservationTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePlanOfCareActivityObservationClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlanOfCareActivityObservationOperations.validatePlanOfCareActivityObservationClassCode(this, diagnostics, context);
-	}
+    return PlanOfCareActivityObservationOperations.validatePlanOfCareActivityObservationClassCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePlanOfCareActivityObservationMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PlanOfCareActivityObservationOperations.validatePlanOfCareActivityObservationMoodCode(this, diagnostics, context);
-	}
+    return PlanOfCareActivityObservationOperations.validatePlanOfCareActivityObservationMoodCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validatePlanOfCareActivityObservationId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlanOfCareActivityObservationOperations.validatePlanOfCareActivityObservationId(this, diagnostics, context);
-	}
+    return PlanOfCareActivityObservationOperations.validatePlanOfCareActivityObservationId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public PlanOfCareActivityObservation init() {
     	CDAUtil.init(this);
     	return this;
-	}
+  }
 } // PlanOfCareActivityObservationImpl

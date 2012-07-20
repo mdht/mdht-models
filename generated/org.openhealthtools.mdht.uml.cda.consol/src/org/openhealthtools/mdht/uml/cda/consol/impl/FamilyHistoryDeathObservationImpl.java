@@ -31,89 +31,89 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class FamilyHistoryDeathObservationImpl extends ObservationImpl implements FamilyHistoryDeathObservation {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected FamilyHistoryDeathObservationImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return ConsolPackage.Literals.FAMILY_HISTORY_DEATH_OBSERVATION;
-	}
+    return ConsolPackage.Literals.FAMILY_HISTORY_DEATH_OBSERVATION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateFamilyHistoryDeathObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationTemplateId(this, diagnostics, context);
-	}
+    return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateFamilyHistoryDeathObservationClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationClassCode(this, diagnostics, context);
-	}
+    return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationClassCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateFamilyHistoryDeathObservationMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationMoodCode(this, diagnostics, context);
-	}
+    return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationMoodCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateFamilyHistoryDeathObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationCode(this, diagnostics, context);
-	}
+    return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateFamilyHistoryDeathObservationStatusCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationStatusCode(this, diagnostics, context);
-	}
+    return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationStatusCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateFamilyHistoryDeathObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationValue(this, diagnostics, context);
-	}
+    return FamilyHistoryDeathObservationOperations.validateFamilyHistoryDeathObservationValue(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public FamilyHistoryDeathObservation init() {
     	CDAUtil.init(this);
     	return this;
-	}
+  }
 } // FamilyHistoryDeathObservationImpl

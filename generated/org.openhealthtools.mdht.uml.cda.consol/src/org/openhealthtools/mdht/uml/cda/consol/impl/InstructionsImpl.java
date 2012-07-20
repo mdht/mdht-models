@@ -31,103 +31,103 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class InstructionsImpl extends ActImpl implements Instructions {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected InstructionsImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return ConsolPackage.Literals.INSTRUCTIONS;
-	}
+    return ConsolPackage.Literals.INSTRUCTIONS;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateInstructionsTextReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return InstructionsOperations.validateInstructionsTextReference(this, diagnostics, context);
-	}
+    return InstructionsOperations.validateInstructionsTextReference(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateInstructionsTextReferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return InstructionsOperations.validateInstructionsTextReferenceValue(this, diagnostics, context);
-	}
+    return InstructionsOperations.validateInstructionsTextReferenceValue(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateInstructionsTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return InstructionsOperations.validateInstructionsTemplateId(this, diagnostics, context);
-	}
+    return InstructionsOperations.validateInstructionsTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateInstructionsClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return InstructionsOperations.validateInstructionsClassCode(this, diagnostics, context);
-	}
+    return InstructionsOperations.validateInstructionsClassCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateInstructionsMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return InstructionsOperations.validateInstructionsMoodCode(this, diagnostics, context);
-	}
+    return InstructionsOperations.validateInstructionsMoodCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateInstructionsCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return InstructionsOperations.validateInstructionsCode(this, diagnostics, context);
-	}
+    return InstructionsOperations.validateInstructionsCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateInstructionsText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return InstructionsOperations.validateInstructionsText(this, diagnostics, context);
-	}
+    return InstructionsOperations.validateInstructionsText(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateInstructionsStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return InstructionsOperations.validateInstructionsStatusCode(this, diagnostics, context);
-	}
+    return InstructionsOperations.validateInstructionsStatusCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public Instructions init() {
     	CDAUtil.init(this);
     	return this;
-	}
+  }
 } // InstructionsImpl

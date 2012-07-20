@@ -31,68 +31,68 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class ProcedureDispositionSectionImpl extends SectionImpl implements ProcedureDispositionSection {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected ProcedureDispositionSectionImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return ConsolPackage.Literals.PROCEDURE_DISPOSITION_SECTION;
-	}
+    return ConsolPackage.Literals.PROCEDURE_DISPOSITION_SECTION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateProcedureDispositionSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureDispositionSectionOperations.validateProcedureDispositionSectionTemplateId(this, diagnostics, context);
-	}
+    return ProcedureDispositionSectionOperations.validateProcedureDispositionSectionTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateProcedureDispositionSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureDispositionSectionOperations.validateProcedureDispositionSectionCode(this, diagnostics, context);
-	}
+    return ProcedureDispositionSectionOperations.validateProcedureDispositionSectionCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateProcedureDispositionSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureDispositionSectionOperations.validateProcedureDispositionSectionText(this, diagnostics, context);
-	}
+    return ProcedureDispositionSectionOperations.validateProcedureDispositionSectionText(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateProcedureDispositionSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureDispositionSectionOperations.validateProcedureDispositionSectionTitle(this, diagnostics, context);
-	}
+    return ProcedureDispositionSectionOperations.validateProcedureDispositionSectionTitle(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public ProcedureDispositionSection init() {
     	CDAUtil.init(this);
     	return this;
-	}
+  }
 } // ProcedureDispositionSectionImpl

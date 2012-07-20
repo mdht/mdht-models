@@ -34,105 +34,105 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class FunctionalStatusSectionImpl extends SectionImpl implements FunctionalStatusSection {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected FunctionalStatusSectionImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return ConsolPackage.Literals.FUNCTIONAL_STATUS_SECTION;
-	}
+    return ConsolPackage.Literals.FUNCTIONAL_STATUS_SECTION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateFunctionalStatusSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FunctionalStatusSectionOperations.validateFunctionalStatusSectionTemplateId(this, diagnostics, context);
-	}
+    return FunctionalStatusSectionOperations.validateFunctionalStatusSectionTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateFunctionalStatusSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FunctionalStatusSectionOperations.validateFunctionalStatusSectionCode(this, diagnostics, context);
-	}
+    return FunctionalStatusSectionOperations.validateFunctionalStatusSectionCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateFunctionalStatusSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FunctionalStatusSectionOperations.validateFunctionalStatusSectionTitle(this, diagnostics, context);
-	}
+    return FunctionalStatusSectionOperations.validateFunctionalStatusSectionTitle(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateFunctionalStatusSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FunctionalStatusSectionOperations.validateFunctionalStatusSectionText(this, diagnostics, context);
-	}
+    return FunctionalStatusSectionOperations.validateFunctionalStatusSectionText(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateFunctionalStatusSectionProblemObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FunctionalStatusSectionOperations.validateFunctionalStatusSectionProblemObservation(this, diagnostics, context);
-	}
+    return FunctionalStatusSectionOperations.validateFunctionalStatusSectionProblemObservation(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateFunctionalStatusSectionResultObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FunctionalStatusSectionOperations.validateFunctionalStatusSectionResultObservation(this, diagnostics, context);
-	}
+    return FunctionalStatusSectionOperations.validateFunctionalStatusSectionResultObservation(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EList<ProblemObservation> getProblemObservations() {
-		return FunctionalStatusSectionOperations.getProblemObservations(this);
-	}
+    return FunctionalStatusSectionOperations.getProblemObservations(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public EList<ResultObservation> getResultObservations() {
-		return FunctionalStatusSectionOperations.getResultObservations(this);
-	}
+    return FunctionalStatusSectionOperations.getResultObservations(this);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public FunctionalStatusSection init() {
     	CDAUtil.init(this);
     	return this;
-	}
+  }
 } // FunctionalStatusSectionImpl

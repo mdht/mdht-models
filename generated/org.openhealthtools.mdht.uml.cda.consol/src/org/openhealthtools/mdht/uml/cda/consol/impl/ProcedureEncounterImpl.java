@@ -31,58 +31,58 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class ProcedureEncounterImpl extends EncounterImpl implements ProcedureEncounter {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected ProcedureEncounterImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return ConsolPackage.Literals.PROCEDURE_ENCOUNTER;
-	}
+    return ConsolPackage.Literals.PROCEDURE_ENCOUNTER;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateProcedureEncounterClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureEncounterOperations.validateProcedureEncounterClassCode(this, diagnostics, context);
-	}
+    return ProcedureEncounterOperations.validateProcedureEncounterClassCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateProcedureEncounterMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureEncounterOperations.validateProcedureEncounterMoodCode(this, diagnostics, context);
-	}
+    return ProcedureEncounterOperations.validateProcedureEncounterMoodCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateProcedureEncounterId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureEncounterOperations.validateProcedureEncounterId(this, diagnostics, context);
-	}
+    return ProcedureEncounterOperations.validateProcedureEncounterId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public ProcedureEncounter init() {
     	CDAUtil.init(this);
     	return this;
-	}
+  }
 } // ProcedureEncounterImpl

@@ -31,68 +31,68 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class HistoryOfPresentIllnessSectionImpl extends SectionImpl implements HistoryOfPresentIllnessSection {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected HistoryOfPresentIllnessSectionImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return ConsolPackage.Literals.HISTORY_OF_PRESENT_ILLNESS_SECTION;
-	}
+    return ConsolPackage.Literals.HISTORY_OF_PRESENT_ILLNESS_SECTION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateHistoryOfPresentIllnessSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HistoryOfPresentIllnessSectionOperations.validateHistoryOfPresentIllnessSectionTemplateId(this, diagnostics, context);
-	}
+    return HistoryOfPresentIllnessSectionOperations.validateHistoryOfPresentIllnessSectionTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateHistoryOfPresentIllnessSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HistoryOfPresentIllnessSectionOperations.validateHistoryOfPresentIllnessSectionCode(this, diagnostics, context);
-	}
+    return HistoryOfPresentIllnessSectionOperations.validateHistoryOfPresentIllnessSectionCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateHistoryOfPresentIllnessSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HistoryOfPresentIllnessSectionOperations.validateHistoryOfPresentIllnessSectionTitle(this, diagnostics, context);
-	}
+    return HistoryOfPresentIllnessSectionOperations.validateHistoryOfPresentIllnessSectionTitle(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateHistoryOfPresentIllnessSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HistoryOfPresentIllnessSectionOperations.validateHistoryOfPresentIllnessSectionText(this, diagnostics, context);
-	}
+    return HistoryOfPresentIllnessSectionOperations.validateHistoryOfPresentIllnessSectionText(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public HistoryOfPresentIllnessSection init() {
     	CDAUtil.init(this);
     	return this;
-	}
+  }
 } // HistoryOfPresentIllnessSectionImpl

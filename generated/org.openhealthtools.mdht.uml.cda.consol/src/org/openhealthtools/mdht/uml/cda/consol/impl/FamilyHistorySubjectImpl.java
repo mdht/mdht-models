@@ -31,120 +31,120 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class FamilyHistorySubjectImpl extends SubjectImpl implements FamilyHistorySubject {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected FamilyHistorySubjectImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return ConsolPackage.Literals.FAMILY_HISTORY_SUBJECT;
-	}
+    return ConsolPackage.Literals.FAMILY_HISTORY_SUBJECT;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateFamilyHistorySubjectRelatedSubjectClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FamilyHistorySubjectOperations.validateFamilyHistorySubjectRelatedSubjectClassCode(this, diagnostics, context);
-	}
+    return FamilyHistorySubjectOperations.validateFamilyHistorySubjectRelatedSubjectClassCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateFamilyHistorySubjectRelatedSubjectCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FamilyHistorySubjectOperations.validateFamilyHistorySubjectRelatedSubjectCode(this, diagnostics, context);
-	}
+    return FamilyHistorySubjectOperations.validateFamilyHistorySubjectRelatedSubjectCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateFamilyHistorySubjectRelatedSubjectCodeValueSet(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FamilyHistorySubjectOperations.validateFamilyHistorySubjectRelatedSubjectCodeValueSet(this, diagnostics, context);
-	}
+    return FamilyHistorySubjectOperations.validateFamilyHistorySubjectRelatedSubjectCodeValueSet(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateFamilyHistorySubjectRelatedSubjectSubject(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FamilyHistorySubjectOperations.validateFamilyHistorySubjectRelatedSubjectSubject(this, diagnostics, context);
-	}
+    return FamilyHistorySubjectOperations.validateFamilyHistorySubjectRelatedSubjectSubject(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateFamilyHistorySubjectRelatedSubjectSubjectId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return FamilyHistorySubjectOperations.validateFamilyHistorySubjectRelatedSubjectSubjectId(this, diagnostics, context);
-	}
+    return FamilyHistorySubjectOperations.validateFamilyHistorySubjectRelatedSubjectSubjectId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateFamilyHistorySubjectRelatedSubjectSubjectAdmGenderCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FamilyHistorySubjectOperations.validateFamilyHistorySubjectRelatedSubjectSubjectAdmGenderCode(this, diagnostics, context);
-	}
+    return FamilyHistorySubjectOperations.validateFamilyHistorySubjectRelatedSubjectSubjectAdmGenderCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateFamilyHistorySubjectRelatedSubjectSubjectBirthTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FamilyHistorySubjectOperations.validateFamilyHistorySubjectRelatedSubjectSubjectBirthTime(this, diagnostics, context);
-	}
+    return FamilyHistorySubjectOperations.validateFamilyHistorySubjectRelatedSubjectSubjectBirthTime(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateFamilyHistorySubjectRelatedSubjectSubjectDeceasedInd(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FamilyHistorySubjectOperations.validateFamilyHistorySubjectRelatedSubjectSubjectDeceasedInd(this, diagnostics, context);
-	}
+    return FamilyHistorySubjectOperations.validateFamilyHistorySubjectRelatedSubjectSubjectDeceasedInd(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateFamilyHistorySubjectRelatedSubjectSubjectDeceasedTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FamilyHistorySubjectOperations.validateFamilyHistorySubjectRelatedSubjectSubjectDeceasedTime(this, diagnostics, context);
-	}
+    return FamilyHistorySubjectOperations.validateFamilyHistorySubjectRelatedSubjectSubjectDeceasedTime(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public FamilyHistorySubject init() {
     	CDAUtil.init(this);
     	return this;
-	}
+  }
 } // FamilyHistorySubjectImpl

@@ -31,67 +31,67 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class ProcedureImplantsSectionImpl extends SectionImpl implements ProcedureImplantsSection {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected ProcedureImplantsSectionImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return ConsolPackage.Literals.PROCEDURE_IMPLANTS_SECTION;
-	}
+    return ConsolPackage.Literals.PROCEDURE_IMPLANTS_SECTION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateProcedureImplantsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureImplantsSectionOperations.validateProcedureImplantsSectionTemplateId(this, diagnostics, context);
-	}
+    return ProcedureImplantsSectionOperations.validateProcedureImplantsSectionTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateProcedureImplantsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureImplantsSectionOperations.validateProcedureImplantsSectionCode(this, diagnostics, context);
-	}
+    return ProcedureImplantsSectionOperations.validateProcedureImplantsSectionCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateProcedureImplantsSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureImplantsSectionOperations.validateProcedureImplantsSectionText(this, diagnostics, context);
-	}
+    return ProcedureImplantsSectionOperations.validateProcedureImplantsSectionText(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateProcedureImplantsSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureImplantsSectionOperations.validateProcedureImplantsSectionTitle(this, diagnostics, context);
-	}
+    return ProcedureImplantsSectionOperations.validateProcedureImplantsSectionTitle(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public ProcedureImplantsSection init() {
     	CDAUtil.init(this);
     	return this;
-	}
+  }
 } // ProcedureImplantsSectionImpl

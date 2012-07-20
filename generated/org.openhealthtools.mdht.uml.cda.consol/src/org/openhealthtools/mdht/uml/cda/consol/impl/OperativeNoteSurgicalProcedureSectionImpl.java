@@ -32,71 +32,71 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 public class OperativeNoteSurgicalProcedureSectionImpl extends SectionImpl implements
 		OperativeNoteSurgicalProcedureSection {
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	protected OperativeNoteSurgicalProcedureSectionImpl() {
-		super();
-	}
+    super();
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	@Override
 	protected EClass eStaticClass() {
-		return ConsolPackage.Literals.OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION;
-	}
+    return ConsolPackage.Literals.OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION;
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateOperativeNoteSurgicalProcedureSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return OperativeNoteSurgicalProcedureSectionOperations.validateOperativeNoteSurgicalProcedureSectionTemplateId(this, diagnostics, context);
-	}
+    return OperativeNoteSurgicalProcedureSectionOperations.validateOperativeNoteSurgicalProcedureSectionTemplateId(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateOperativeNoteSurgicalProcedureSectionCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return OperativeNoteSurgicalProcedureSectionOperations.validateOperativeNoteSurgicalProcedureSectionCode(this, diagnostics, context);
-	}
+    return OperativeNoteSurgicalProcedureSectionOperations.validateOperativeNoteSurgicalProcedureSectionCode(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateOperativeNoteSurgicalProcedureSectionText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return OperativeNoteSurgicalProcedureSectionOperations.validateOperativeNoteSurgicalProcedureSectionText(this, diagnostics, context);
-	}
+    return OperativeNoteSurgicalProcedureSectionOperations.validateOperativeNoteSurgicalProcedureSectionText(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public boolean validateOperativeNoteSurgicalProcedureSectionTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return OperativeNoteSurgicalProcedureSectionOperations.validateOperativeNoteSurgicalProcedureSectionTitle(this, diagnostics, context);
-	}
+    return OperativeNoteSurgicalProcedureSectionOperations.validateOperativeNoteSurgicalProcedureSectionTitle(this, diagnostics, context);
+  }
 
 	/**
-	 * <!-- begin-user-doc -->
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+   * @generated
+   */
 	public OperativeNoteSurgicalProcedureSection init() {
     	CDAUtil.init(this);
     	return this;
-	}
+  }
 } // OperativeNoteSurgicalProcedureSectionImpl
