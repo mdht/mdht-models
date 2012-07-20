@@ -464,14 +464,14 @@ Authorizations are represented using an act subordinate to the policy or program
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_sWZMgHhvEeGJtvg2iiStYg" name="EntryRelationship">
       <ownedComment xmi:id="_zCcYUHhwEeGJtvg2iiStYg">
-        <body>INLINE</body>
+        <body>INLINE&amp;typeCode=vocab::x_ActRelationshipEntryRelationship::SUBJ</body>
       </ownedComment>
       <ownedRule xmi:id="_Lo6NMHhwEeGJtvg2iiStYg" name="hasClinicalStatement" constrainedElement="_sWZMgHhvEeGJtvg2iiStYg">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_NLlg4HhwEeGJtvg2iiStYg">
           <language>Analysis</language>
           <language>OCL</language>
           <body>The target of an authorization activity with act/entryRelationship/@typeCode=&quot;SUBJ&quot; SHALL be a clinical statement with moodCode=&quot;PRMS&quot; Promise (CONF:8951).</body>
-          <body>self.act->forAll(moodCode = vocab::x_DocumentActMood::PRMS) or  self.encounter->forAll(moodCode = vocab::x_DocumentEncounterMood::PRMS) or self.observation->forAll(moodCode = vocab::x_ActMoodDocumentObservation::PRMS) or  self.observationMedia->forAll(moodCode = vocab::ActMood::PRMS) or self.organizer->forAll(moodCode = vocab::ActMood::PRMS) or self.procedure->forAll(moodCode = vocab::x_DocumentProcedureMood::PRMS) or  self.regionOfInterest->forAll(moodCode = vocab::ActMood::PRMS) or self.substanceAdministration->forAll(moodCode = vocab::x_DocumentSubstanceMood::PRMS) or  self.supply->forAll(moodCode = vocab::x_DocumentSubstanceMood::PRMS)</body>
+          <body>self.act->exists(moodCode = vocab::x_DocumentActMood::PRMS) or  self.encounter->exists(moodCode = vocab::x_DocumentEncounterMood::PRMS) or self.observation->exists(moodCode = vocab::x_ActMoodDocumentObservation::PRMS) or  self.observationMedia->exists(moodCode = vocab::ActMood::PRMS) or self.organizer->exists(moodCode = vocab::ActMood::PRMS) or self.procedure->exists(moodCode = vocab::x_DocumentProcedureMood::PRMS) or  self.regionOfInterest->exists(moodCode = vocab::ActMood::PRMS) or self.substanceAdministration->exists(moodCode = vocab::x_DocumentSubstanceMood::PRMS) or  self.supply->exists(moodCode = vocab::x_DocumentSubstanceMood::PRMS)</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_b7HQYHhwEeGJtvg2iiStYg" name="hasAuhtorixedPerformers" constrainedElement="_sWZMgHhvEeGJtvg2iiStYg">
@@ -479,7 +479,7 @@ Authorizations are represented using an act subordinate to the policy or program
           <language>Analysis</language>
           <language>OCL</language>
           <body>The target of an authorization activity MAY contain one or more performer, to indicate the providers that have been authorized to provide treatment.</body>
-          <body>self.act->forAll(performer->size() > 0) or  self.encounter->forAll(performer->size() > 0) or self.observation->forAll(performer->size() > 0) or  self.observationMedia->forAll(performer->size() > 0) or self.organizer->forAll(performer->size() > 0) or self.procedure->forAll(performer->size() > 0) or  self.regionOfInterest->forAll(performer->size() > 0) or self.substanceAdministration->forAll(performer->size() > 0) or  self.supply->forAll(performer->size() > 0)</body>
+          <body>self.act->forAll( (moodCode = vocab::x_DocumentActMood::PRMS and performer->size() > 0) or moodCode &lt;> vocab::x_DocumentActMood::PRMS ) and &#xD;&#xA;self.encounter->forAll((moodCode = vocab::x_DocumentEncounterMood::PRMS and performer->size() > 0) or moodCode &lt;>  vocab::x_DocumentEncounterMood::PRMS) and &#xD;&#xA;self.observation->forAll((moodCode = vocab::x_ActMoodDocumentObservation::PRMS and performer->size() > 0)  or moodCode &lt;>  vocab::x_ActMoodDocumentObservation::PRMS) and &#xD;&#xA;self.observationMedia->forAll((moodCode = vocab::ActMood::PRMS and performer->size() > 0) or moodCode &lt;>  vocab::ActMood::PRMS) and &#xD;&#xA;self.organizer->forAll((moodCode = vocab::ActMood::PRMS and performer->size() > 0)  or moodCode &lt;>  vocab::ActMood::PRMS) and &#xD;&#xA;self.procedure->forAll((moodCode = vocab::x_DocumentProcedureMood::PRMS and performer->size() > 0)  or moodCode &lt;>  vocab::x_DocumentProcedureMood::PRMS) and &#xD;&#xA;self.regionOfInterest->forAll((moodCode = vocab::ActMood::PRMS and performer->size() > 0) or moodCode &lt;>  vocab::ActMood::PRMS) and &#xD;&#xA;self.substanceAdministration->forAll((moodCode = vocab::x_DocumentSubstanceMood::PRMS and performer->size() > 0)  or moodCode &lt;>  vocab::x_DocumentSubstanceMood::PRMS) and &#xD;&#xA;self.supply->forAll((moodCode = vocab::x_DocumentSubstanceMood::PRMS and performer->size() > 0) or moodCode &lt;>  vocab::x_DocumentSubstanceMood::PRMS)</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_sWZzkHhvEeGJtvg2iiStYg">
