@@ -12,6 +12,7 @@
 
 	<property name="cdaPluginPath" location="${basedir}/../org.openhealthtools.mdht.uml.cda"/>
 	<property name="modelName" value="consol"/>
+	<property name="validation.failOnError" value="false"/>
 	
 	<macrodef name="convertEcorePaths">
 		<attribute name="filePath"/>
