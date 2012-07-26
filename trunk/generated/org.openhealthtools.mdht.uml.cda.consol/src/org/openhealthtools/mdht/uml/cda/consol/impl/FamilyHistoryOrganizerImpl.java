@@ -90,14 +90,125 @@ public class FamilyHistoryOrganizerImpl extends OrganizerImpl implements FamilyH
 
 	/**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateFamilyHistoryOrganizerSubject(DiagnosticChain diagnostics, Map<Object, Object> context) {
+  public boolean validateFamilyHistoryOrganizerSubject(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return FamilyHistoryOrganizerOperations.validateFamilyHistoryOrganizerSubject(this, diagnostics, context);
   }
 
-	/**
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonAdministrativeGenderCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return FamilyHistoryOrganizerOperations.validateFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonAdministrativeGenderCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonAdministrativeGenderCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return FamilyHistoryOrganizerOperations.validateFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonAdministrativeGenderCodeP(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonBirthTime(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return FamilyHistoryOrganizerOperations.validateFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonBirthTime(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonSDTCDeceasedInd(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return FamilyHistoryOrganizerOperations.validateFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonSDTCDeceasedInd(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonSDTCDeceasedTime(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return FamilyHistoryOrganizerOperations.validateFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonSDTCDeceasedTime(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonSDTCId(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return FamilyHistoryOrganizerOperations.validateFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonSDTCId(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateFamilyHistoryOrganizerSubjectRelatedSubjectClassCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return FamilyHistoryOrganizerOperations.validateFamilyHistoryOrganizerSubjectRelatedSubjectClassCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateFamilyHistoryOrganizerSubjectRelatedSubjectCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return FamilyHistoryOrganizerOperations.validateFamilyHistoryOrganizerSubjectRelatedSubjectCode(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateFamilyHistoryOrganizerSubjectRelatedSubjectCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return FamilyHistoryOrganizerOperations.validateFamilyHistoryOrganizerSubjectRelatedSubjectCodeP(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateFamilyHistoryOrganizerSubjectRelatedSubjectSubject(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return FamilyHistoryOrganizerOperations.validateFamilyHistoryOrganizerSubjectRelatedSubjectSubject(this, diagnostics, context);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public boolean validateFamilyHistoryOrganizerSubjectRelatedSubject(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+    return FamilyHistoryOrganizerOperations.validateFamilyHistoryOrganizerSubjectRelatedSubject(this, diagnostics, context);
+  }
+
+  /**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * @generated

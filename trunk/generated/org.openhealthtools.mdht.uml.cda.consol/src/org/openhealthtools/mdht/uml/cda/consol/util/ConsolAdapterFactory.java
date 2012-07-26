@@ -636,11 +636,6 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
         return createMedicationInformationManufacturedMaterialAdapter();
       }
       @Override
-      public Adapter caseFamilyHistorySubject(FamilyHistorySubject object)
-      {
-        return createFamilyHistorySubjectAdapter();
-      }
-      @Override
       public Adapter caseHospitalDischargeMedicationsSection(HospitalDischargeMedicationsSection object)
       {
         return createHospitalDischargeMedicationsSectionAdapter();
@@ -989,11 +984,6 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
       public Adapter caseMaterial(Material object)
       {
         return createMaterialAdapter();
-      }
-      @Override
-      public Adapter caseSubject(Subject object)
-      {
-        return createSubjectAdapter();
       }
       @Override
       public Adapter caseAssignedEntity(AssignedEntity object)
@@ -2077,20 +2067,6 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
    * @generated
    */
 	public Adapter createMedicationInformationManufacturedMaterialAdapter() {
-    return null;
-  }
-
-	/**
-   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.FamilyHistorySubject <em>Family History Subject</em>}'.
-   * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-   * @return the new adapter.
-   * @see org.openhealthtools.mdht.uml.cda.consol.FamilyHistorySubject
-   * @generated
-   */
-	public Adapter createFamilyHistorySubjectAdapter() {
     return null;
   }
 
@@ -3533,20 +3509,6 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
    * @generated
    */
 	public Adapter createMaterialAdapter() {
-    return null;
-  }
-
-	/**
-   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.Subject <em>Subject</em>}'.
-   * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-   * @return the new adapter.
-   * @see org.openhealthtools.mdht.uml.cda.Subject
-   * @generated
-   */
-	public Adapter createSubjectAdapter() {
     return null;
   }
 
