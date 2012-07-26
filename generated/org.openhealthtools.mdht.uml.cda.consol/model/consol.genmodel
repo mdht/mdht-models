@@ -4929,10 +4929,6 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SOPInstanceObservation/SOPInstanceObservationText/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SOPInstanceObservation/SOPInstanceObservationText/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//SOPInstanceObservation/SOPInstanceObservationCodeP">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SOPInstanceObservation/SOPInstanceObservationCodeP/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SOPInstanceObservation/SOPInstanceObservationCodeP/context"/>
-      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="consol.ecore#//SOPInstanceObservation/SOPInstanceObservationCode">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SOPInstanceObservation/SOPInstanceObservationCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="consol.ecore#//SOPInstanceObservation/SOPInstanceObservationCode/context"/>

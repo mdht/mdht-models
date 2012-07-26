@@ -51,7 +51,6 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SOPInstanceObservation#validateSOPInstanceObservationId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate SOP Instance Observation Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SOPInstanceObservation#validateSOPInstanceObservationMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate SOP Instance Observation Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SOPInstanceObservation#validateSOPInstanceObservationText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate SOP Instance Observation Text</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SOPInstanceObservation#validateSOPInstanceObservationCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate SOP Instance Observation Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SOPInstanceObservation#validateSOPInstanceObservationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate SOP Instance Observation Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SOPInstanceObservation#validateSOPInstanceObservationSOPInstanceObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate SOP Instance Observation SOP Instance Observation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.SOPInstanceObservation#validateSOPInstanceObservationPurposeofReferenceObservation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate SOP Instance Observation Purposeof Reference Observation</em>}</li>
@@ -849,83 +848,6 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
   }
 
 	/**
-   * The cached OCL expression body for the '{@link #validateSOPInstanceObservationCodeP(SOPInstanceObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate SOP Instance Observation Code P</em>}' operation.
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @see #validateSOPInstanceObservationCodeP(SOPInstanceObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-	protected static final String VALIDATE_SOP_INSTANCE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
-
-	/**
-   * The cached OCL invariant for the '{@link #validateSOPInstanceObservationCodeP(SOPInstanceObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate SOP Instance Observation Code P</em>}' invariant operation.
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @see #validateSOPInstanceObservationCodeP(SOPInstanceObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-	
-	protected static Constraint VALIDATE_SOP_INSTANCE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
-   * @param sopInstanceObservation The receiving '<em><b>SOP Instance Observation</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
-	
-	public static  boolean validateSOPInstanceObservationCodeP(SOPInstanceObservation sopInstanceObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    if (VALIDATE_SOP_INSTANCE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(ConsolPackage.Literals.SOP_INSTANCE_OBSERVATION);
-      try
-      {
-        VALIDATE_SOP_INSTANCE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SOP_INSTANCE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_SOP_INSTANCE_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(sopInstanceObservation))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             ConsolValidator.DIAGNOSTIC_SOURCE,
-             ConsolValidator.SOP_INSTANCE_OBSERVATION__SOP_INSTANCE_OBSERVATION_CODE_P,
-             ConsolPlugin.INSTANCE.getString("SOPInstanceObservationCodeP"),
-             new Object [] { sopInstanceObservation }));
-      }
-      
-      if (context != null) {
-        // generate a pass token for my dependent constraints to short-circuit or filter results
-        @SuppressWarnings("unchecked")
-        Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.SOPInstanceObservationCodeP");
-        if (passToken == null) {
-          // anticipate a reasonably healthy model
-          passToken = new java.util.ArrayList<Object>(3);
-          context.put("org.openhealthtools.mdht.uml.cda.consol.SOPInstanceObservationCodeP", passToken);
-        }
-        passToken.add(sopInstanceObservation);
-      }
-       
-      return false;
-    }
-    return true;
-  }
-
-	/**
    * The cached OCL expression body for the '{@link #validateSOPInstanceObservationCode(SOPInstanceObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate SOP Instance Observation Code</em>}' operation.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -933,9 +855,7 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
    * @generated
    * @ordered
    */
-	protected static final String VALIDATE_SOP_INSTANCE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
-"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
-"value.codeSystem = '1.2.840.10008.2.6.1')";
+	protected static final String VALIDATE_SOP_INSTANCE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
 
 	/**
    * The cached OCL invariant for the '{@link #validateSOPInstanceObservationCode(SOPInstanceObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate SOP Instance Observation Code</em>}' invariant operation.
@@ -952,9 +872,7 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
-   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and 
-   * let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in 
-   * value.codeSystem = '1.2.840.10008.2.6.1')
+   * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())
    * @param sopInstanceObservation The receiving '<em><b>SOP Instance Observation</b></em>' model object.
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
@@ -964,12 +882,6 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
 
 	public static boolean validateSOPInstanceObservationCode(SOPInstanceObservation sopInstanceObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-    Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.consol.SOPInstanceObservationCodeP");
-    if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(sopInstanceObservation)) {
-      // I have a free pass to short-circuit
-      return true;
-    }
   	  
     if (VALIDATE_SOP_INSTANCE_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -1227,7 +1139,7 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
     if (GET_SOP_INSTANCE_OBSERVATIONS__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(ConsolPackage.Literals.SOP_INSTANCE_OBSERVATION, ConsolPackage.Literals.SOP_INSTANCE_OBSERVATION.getEAllOperations().get(68));
+      helper.setOperationContext(ConsolPackage.Literals.SOP_INSTANCE_OBSERVATION, ConsolPackage.Literals.SOP_INSTANCE_OBSERVATION.getEAllOperations().get(67));
       try
       {
         GET_SOP_INSTANCE_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_SOP_INSTANCE_OBSERVATIONS__EOCL_EXP);
@@ -1278,7 +1190,7 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
     if (GET_PURPOSEOF_REFERENCE_OBSERVATIONS__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(ConsolPackage.Literals.SOP_INSTANCE_OBSERVATION, ConsolPackage.Literals.SOP_INSTANCE_OBSERVATION.getEAllOperations().get(69));
+      helper.setOperationContext(ConsolPackage.Literals.SOP_INSTANCE_OBSERVATION, ConsolPackage.Literals.SOP_INSTANCE_OBSERVATION.getEAllOperations().get(68));
       try
       {
         GET_PURPOSEOF_REFERENCE_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_PURPOSEOF_REFERENCE_OBSERVATIONS__EOCL_EXP);
@@ -1329,7 +1241,7 @@ public class SOPInstanceObservationOperations extends ClinicalStatementOperation
     if (GET_REFERENCED_FRAMES_OBSERVATIONS__EOCL_QRY == null)
     {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setOperationContext(ConsolPackage.Literals.SOP_INSTANCE_OBSERVATION, ConsolPackage.Literals.SOP_INSTANCE_OBSERVATION.getEAllOperations().get(70));
+      helper.setOperationContext(ConsolPackage.Literals.SOP_INSTANCE_OBSERVATION, ConsolPackage.Literals.SOP_INSTANCE_OBSERVATION.getEAllOperations().get(69));
       try
       {
         GET_REFERENCED_FRAMES_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_REFERENCED_FRAMES_OBSERVATIONS__EOCL_EXP);

@@ -139,14 +139,15 @@ public class ReactionObservationImpl extends ObservationImpl implements Reaction
 
 	/**
    * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+   * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateReactionObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+  public boolean validateReactionObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
     return ReactionObservationOperations.validateReactionObservationMoodCode(this, diagnostics, context);
   }
 
-	/**
+  /**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * @generated
