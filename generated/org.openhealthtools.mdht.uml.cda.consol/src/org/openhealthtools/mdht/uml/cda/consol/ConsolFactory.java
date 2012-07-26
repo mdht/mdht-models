@@ -1389,15 +1389,6 @@ public interface ConsolFactory extends EFactory {
 	MedicationInformationManufacturedMaterial createMedicationInformationManufacturedMaterial();
 
 	/**
-   * Returns a new object of class '<em>Family History Subject</em>'.
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @return a new object of class '<em>Family History Subject</em>'.
-   * @generated
-   */
-	FamilyHistorySubject createFamilyHistorySubject();
-
-	/**
    * Returns a new object of class '<em>Hospital Discharge Studies Summary Section</em>'.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
