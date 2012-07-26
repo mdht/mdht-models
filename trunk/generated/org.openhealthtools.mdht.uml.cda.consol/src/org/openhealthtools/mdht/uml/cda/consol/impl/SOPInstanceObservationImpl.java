@@ -165,15 +165,6 @@ public class SOPInstanceObservationImpl extends ObservationImpl implements SOPIn
 	 * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateSOPInstanceObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return SOPInstanceObservationOperations.validateSOPInstanceObservationCodeP(this, diagnostics, context);
-  }
-
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
 	public boolean validateSOPInstanceObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
     return SOPInstanceObservationOperations.validateSOPInstanceObservationCode(this, diagnostics, context);
   }
