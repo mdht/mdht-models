@@ -83,7 +83,7 @@ DICOM Object Catalog sections are not intended for viewing and contain empty sec
           <language>Analysis</language>
           <language>OCL</language>
           <body>SHALL contain a valid DICOM personal identification code sequence (@codeSystem is 1.2.840.10008.2.16.4) or an appropriate national health care provider coding system (e.g., NUCC in the U.S., where @code is 2.16.840.1.113883.6.101).</body>
-          <body>self.code.codesystem = '1.2.840.10008.2.16.4' or self.code.codesystem = '2.16.840.1.113883.6.101'</body>
+          <body>self.code.codeSystem = '1.2.840.10008.2.16.4' or self.code.codeSystem = '2.16.840.1.113883.6.101'</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_OdeLQEVGEeGAh_iQGJvI5w" name="hasAssignedPersonOrRepresentedOrganization" constrainedElement="_kAWv0EVEEeGAh_iQGJvI5w">
@@ -160,7 +160,7 @@ DICOM Object Catalog sections are not intended for viewing and contain empty sec
           <language>Analysis</language>
           <language>OCL</language>
           <body>SHALL contain a valid DICOM Organizational Role from DICOM CID 7452  (Value Set 1.2.840.10008.6.1.516)(@codeSystem is 1.2.840.10008.2.16.4) or an appropriate national health care provider coding system (e.g., NUCC in the U.S., where @codeSystem is 2.16.840.1.113883.6.101) (CONF:8889).</body>
-          <body>self.code.codesystem = '1.2.840.10008.2.16.4' or self.code.codesystem = '2.16.840.1.113883.6.101'</body>
+          <body>self.code.codeSystem = '1.2.840.10008.2.16.4' or self.code.codeSystem = '2.16.840.1.113883.6.101'</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_pdJL4Eb1EeGp67IkyTw1fg">

@@ -89,7 +89,7 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_0u47sNEHEeG1XvWcjsOnlQ" name="USRealmPatientNameMixedContent" constrainedElement="_2DNRcBSVEeGGzu7fmW9pXw">
-      <ownedComment xmi:id="_1CoykNEREeG1XvWcjsOnlQ">
+      <ownedComment xmi:id="_ti6scNcWEeGfQ6frO0B-Jg">
         <body>QUERY</body>
       </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_-QRLUNEHEeG1XvWcjsOnlQ">
