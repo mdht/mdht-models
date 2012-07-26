@@ -667,11 +667,8 @@ historical purposes.&#xD;
       </defaultValue>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2FAoQhSVEeGGzu7fmW9pXw" name="moodCode" visibility="private" isReadOnly="true">
-      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeW3UDcEd6xYZuu1VKCVw"/>
-      <defaultValue xmi:type="uml:InstanceValue" xmi:id="_2FAoQxSVEeGGzu7fmW9pXw" name="EVN">
-        <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeW3UDcEd6xYZuu1VKCVw"/>
-        <instance xmi:type="uml:EnumerationLiteral" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yeW30DcEd6xYZuu1VKCVw"/>
-      </defaultValue>
+      <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_vhOLMNchEeGfQ6frO0B-Jg" value="EVN"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2FBPUBSVEeGGzu7fmW9pXw" name="id" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
