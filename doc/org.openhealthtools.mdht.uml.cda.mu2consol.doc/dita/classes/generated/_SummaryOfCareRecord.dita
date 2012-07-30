@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Summary Of Care Record - conformance rules</title>
+<shortdesc id="shortdesc">[ClinicalDocument: templateId <tt>1.1.1.1.1.1.1.1.1.1.1</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>ClinicalDocument</category></metadata>
+<resourceid id="1.1.1.1.1.1.1.1.1.1.1"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+<p><lines><i>A dummy document level template Id has been assigned for Summary Of Care Record.</i></lines></p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> conform to <xref href="../GeneralHeaderConstraints.dita">General Header Constraints</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.1.1</tt>)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> (MDHT-11111)
+<ul><li><p><lines><i>Captured in Encounters section if using CCD</i></lines></p></li></ul><ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/EncountersSection.html">Consol Encounters Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.22.1</tt>)</li></ol></li>
+<li>Contains zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/PlanOfCareSection.html">Consol Plan Of Care Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.10</tt>)</li></ol></li>
+<li>Contains zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/AssessmentAndPlanSection.html">Consol Assessment And Plan Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.9</tt>)</li></ol></li>
+<li>Contains zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/InterventionsSection.html">Consol Interventions Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.21.2.3</tt>)</li></ol></li>
+<li>Contains zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/InstructionsSection.html">Consol Instructions Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.45</tt>)</li></ol></li>
+<li>Contains zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/HospitalDischargeInstructionsSection.html">Consol Hospital Discharge Instructions Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.41</tt>)</li></ol></li>
+<li>Contains zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/AssessmentSection.html">Consol Assessment Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.8</tt>)</li></ol></li>
+<li>Contains zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/HospitalAdmissionDiagnosisSection.html">Consol Hospital Admission Diagnosis Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.43</tt>)</li></ol></li>
+<li>Contains zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/HospitalDischargeDiagnosisSection.html">Consol Hospital Discharge Diagnosis Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.24</tt>)</li></ol></li>
+<li>Contains zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/PostoperativeDiagnosisSection.html">Consol Postoperative Diagnosis Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.35</tt>)</li></ol></li>
+<li>Contains zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/EncountersSection.html">Consol Encounters Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.22.1</tt>)</li></ol></li>
+<li>Contains zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/ProblemSection.html">Consol Problem Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.5.1</tt>)</li></ol></li>
+<li>Contains zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/AllergiesSection.html">Consol Allergies Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.6.1</tt>)</li></ol></li>
+<li>Contains zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/HistoryOfPastIllnessSection.html">Consol History Of Past Illness Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.20</tt>)</li></ol></li>
+<li>Contains zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/ReasonForVisitSection.html">Consol Reason For Visit Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.12</tt>)</li></ol></li>
+<li>Contains zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/ChiefComplaintSection.html">Consol Chief Complaint Section</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.1.13.2.1</tt>)</li></ol></li>
+<li>Contains zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/ChiefComplaintAndReasonForVisitSection.html">Consol Chief Complaint And Reason For Visit Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.13</tt>)</li></ol></li>
+<li>Contains zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/PreoperativeDiagnosisSection.html">Consol Preoperative Diagnosis Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.34</tt>)</li></ol></li>
+<li>Contains zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/ImmunizationsSection.html">Consol Immunizations Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.2.1</tt>)</li></ol></li>
+<li>Contains zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/MedicationsAdministeredSection.html">Consol Medications Administered Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.38</tt>)</li></ol></li>
+<li>Contains zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/MedicationsSection.html">Consol Medications Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.1.1</tt>)</li></ol></li>
+<li>Contains zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/HospitalAdmissionMedicationsSectionEntriesOptional.html">Consol Hospital Admission Medications Section Entries Optional</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.44</tt>)</li></ol></li>
+<li>Contains zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/HospitalDischargeMedicationsSection.html">Consol Hospital Discharge Medications Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.11.1</tt>)</li></ol></li>
+<li>Contains zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/SocialHistorySection.html">Consol Social History Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.17</tt>)</li></ol></li>
+<li>Contains zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/ResultsSection.html">Consol Results Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.3.1</tt>)</li></ol></li>
+<li>Contains zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/VitalSignsSection.html">Consol Vital Signs Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.4.1</tt>)</li></ol></li>
+<li>Contains zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/VitalSignsSectionEntriesOptional.html">Consol Vital Signs Section Entries Optional</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.4</tt>)</li></ol></li>
+<li>Contains zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/ProceduresSection.html">Consol Procedures Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.7.1</tt>)</li></ol></li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> conform to <xref href="../GeneralHeaderConstraints.dita">General Header Constraints</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.1.1</tt>)</li>
+<li>Contains exactly one [1..1] <tt><b>typeId</b></tt> with data type <xref href="../InfrastructureRootTypeId.dita">Infrastructure Root Type Id</xref>
+</li>
+<li>Contains exactly one [1..1] <tt><b>id</b></tt> with data type II
+</li>
+<li>Contains exactly one [1..1] <tt><b>code</b></tt> with data type CE
+</li>
+<li>Contains exactly one [1..1] <tt><b>effectiveTime</b></tt> with data type TS
+</li>
+<li>Contains exactly one [1..1] <tt><b>confidentialityCode</b></tt> with data type CE
+</li>
+<li>Contains at least one [1..*] <tt><b>author</b></tt>, where its type is <xref href="../Author.dita">Author</xref>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../Author.dita">Author</xref></li></ol></li>
+<li>Contains exactly one [1..1] <tt><b>custodian</b></tt>, where its type is <xref href="../Custodian.dita">Custodian</xref>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../Custodian.dita">Custodian</xref></li></ol></li>
+<li>Contains exactly one [1..1] <tt><b>component</b></tt>, where its type is <xref href="../Component2.dita">Component2</xref>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../Component2.dita">Component2</xref></li></ol></li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>recordTarget</b></tt> <ol><li> Such recordTargets <b>SHALL</b> contain exactly one [1..1] <tt><b>patientRole</b></tt> <ol><li> This patientRole <b>SHALL</b> contain exactly one [1..1] <tt><b>patient</b></tt> <ol><li> This patient Contains exactly one [1..1] <tt><b>name</b></tt></li><li> This patient Contains exactly one [1..1] <tt><b>administrativeGenderCode</b></tt></li><li> This patient Contains exactly one [1..1] <tt><b>ethnicGroupCode</b></tt></li><li> This patient Contains exactly one [1..1] <tt><b>raceCode</b></tt></li><li> This patient <b>SHALL</b> contain exactly one [1..1] <tt><b>languageCommunication</b></tt> <ol><li> This languageCommunication Contains exactly one [1..1] <tt><b>languageCode</b></tt></li></ol> </li><li> This patient Contains exactly one [1..1] <tt><b>birthTime</b></tt></li></ol> </li></ol> </li></ol>
+</li>
+<li>Contains zero or more [0..*] <tt><b>documentationOf</b></tt> <ol><li> Such documentationOfs Contains exactly one [1..1] <tt><b>serviceEvent</b></tt> <ol><li> This serviceEvent Contains at least one [1..*] <tt><b>performer</b></tt> <ol><li> Such performers Contains exactly one [1..1] <tt><b>assignedEntity</b></tt>, where its type is CDA Assigned Entity<ol>
+<li>Contains exactly one [1..1] CDA Assigned Entity</li></ol></li></ol> </li></ol> </li></ol>
+</li>
+<li>Contains zero or one [0..1] <tt><b>componentOf</b></tt> <ol><li> This componentOf Contains exactly one [1..1] <tt><b>encompassingEncounter</b></tt>, where its type is CDA Encompassing Encounter<ol>
+<li>Contains exactly one [1..1] CDA Encompassing Encounter</li></ol></li></ol>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt> (MDHT-11111)
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/EncountersSection.html">Consol Encounters Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.22.1</tt>)</li></ol><ul><li><p><lines><i>Captured in Encounters section if using CCD</i></lines></p></li></ul></li>
+<li>Contains zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/PlanOfCareSection.html">Consol Plan Of Care Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.10</tt>)</li></ol></li>
+<li>Contains zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/AssessmentAndPlanSection.html">Consol Assessment And Plan Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.9</tt>)</li></ol></li>
+<li>Contains zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/InterventionsSection.html">Consol Interventions Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.21.2.3</tt>)</li></ol></li>
+<li>Contains zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/InstructionsSection.html">Consol Instructions Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.45</tt>)</li></ol></li>
+<li>Contains zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/HospitalDischargeInstructionsSection.html">Consol Hospital Discharge Instructions Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.41</tt>)</li></ol></li>
+<li>Contains zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/AssessmentSection.html">Consol Assessment Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.8</tt>)</li></ol></li>
+<li>Contains zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/HospitalAdmissionDiagnosisSection.html">Consol Hospital Admission Diagnosis Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.43</tt>)</li></ol></li>
+<li>Contains zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/HospitalDischargeDiagnosisSection.html">Consol Hospital Discharge Diagnosis Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.24</tt>)</li></ol></li>
+<li>Contains zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/PostoperativeDiagnosisSection.html">Consol Postoperative Diagnosis Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.35</tt>)</li></ol></li>
+<li>Contains zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/EncountersSection.html">Consol Encounters Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.22.1</tt>)</li></ol></li>
+<li>Contains zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/ProblemSection.html">Consol Problem Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.5.1</tt>)</li></ol></li>
+<li>Contains zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/AllergiesSection.html">Consol Allergies Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.6.1</tt>)</li></ol></li>
+<li>Contains zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/HistoryOfPastIllnessSection.html">Consol History Of Past Illness Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.20</tt>)</li></ol></li>
+<li>Contains zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/ReasonForVisitSection.html">Consol Reason For Visit Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.12</tt>)</li></ol></li>
+<li>Contains zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/ChiefComplaintSection.html">Consol Chief Complaint Section</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.1.13.2.1</tt>)</li></ol></li>
+<li>Contains zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/ChiefComplaintAndReasonForVisitSection.html">Consol Chief Complaint And Reason For Visit Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.13</tt>)</li></ol></li>
+<li>Contains zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/PreoperativeDiagnosisSection.html">Consol Preoperative Diagnosis Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.34</tt>)</li></ol></li>
+<li>Contains zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/ImmunizationsSection.html">Consol Immunizations Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.2.1</tt>)</li></ol></li>
+<li>Contains zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/MedicationsAdministeredSection.html">Consol Medications Administered Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.38</tt>)</li></ol></li>
+<li>Contains zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/MedicationsSection.html">Consol Medications Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.1.1</tt>)</li></ol></li>
+<li>Contains zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/HospitalAdmissionMedicationsSectionEntriesOptional.html">Consol Hospital Admission Medications Section Entries Optional</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.44</tt>)</li></ol></li>
+<li>Contains zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/HospitalDischargeMedicationsSection.html">Consol Hospital Discharge Medications Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.11.1</tt>)</li></ol></li>
+<li>Contains zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/SocialHistorySection.html">Consol Social History Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.17</tt>)</li></ol></li>
+<li>Contains zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/ResultsSection.html">Consol Results Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.3.1</tt>)</li></ol></li>
+<li>Contains zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/VitalSignsSection.html">Consol Vital Signs Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.4.1</tt>)</li></ol></li>
+<li>Contains zero or one [0..1] <tt><b>component</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/ProceduresSection.html">Consol Procedures Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.7.1</tt>)</li></ol></li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >mu2consol::SummaryOfCareRecord</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::clinicaldocument[cda:templateId/@root = 1.1.1.1.1.1.1.1.1.1.1]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>ActClinicalDocument</entry><entry></entry><entry> DOCCLIN</entry></row> 
+<row><entry>moodCode</entry><entry>@moodCode</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>ActMood</entry><entry></entry><entry> EVN</entry></row> 
+<row><entry>nullFlavor</entry><entry>@nullFlavor</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>NullFlavor</entry><entry></entry><entry> ASKU</entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry></entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
+<row><entry>confidentialityCode</entry><entry>confidentialityCode</entry><entry>1..1</entry><entry></entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
+<row><entry>copyTime</entry><entry>copyTime</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>TS</entry><entry></entry><entry> </entry></row> 
+<row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>1..1</entry><entry></entry><entry>YES</entry><entry>TS</entry><entry></entry><entry> </entry></row> 
+<row><entry>id</entry><entry>id</entry><entry>1..1</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> </entry></row> 
+<row><entry>languageCode</entry><entry>languageCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
+<row><entry>realmCode</entry><entry>realmCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
+<row><entry>setId</entry><entry>setId</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> </entry></row> 
+<row><entry>templateId</entry><entry>templateId</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> 1.1.1.1.1.1.1.1.1.1.1</entry></row> 
+<row><entry>title</entry><entry>title</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>ST</entry><entry></entry><entry> </entry></row> 
+<row><entry>versionNumber</entry><entry>versionNumber</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>INT</entry><entry></entry><entry> </entry></row> 
+<row><entry>allergiesSection</entry><entry>allergiesSection</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>AllergiesSection</entry><entry></entry><entry> </entry></row> 
+<row><entry>assessmentAndPlanSection</entry><entry>assessmentAndPlanSection</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>AssessmentAndPlanSection</entry><entry></entry><entry> </entry></row> 
+<row><entry>assessmentSection</entry><entry>assessmentSection</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>AssessmentSection</entry><entry></entry><entry> </entry></row> 
+<row><entry>authenticator</entry><entry>authenticator</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Authenticator</entry><entry></entry><entry> </entry></row> 
+<row><entry>author</entry><entry>author</entry><entry>1..*</entry><entry></entry><entry>YES</entry><entry>Author</entry><entry></entry><entry> </entry></row> 
+<row><entry>authorization</entry><entry>authorization</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Authorization</entry><entry></entry><entry> </entry></row> 
+<row><entry>chiefComplaintAndReasonForVisitSection</entry><entry>chiefComplaintAndReasonForVisitSection</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>ChiefComplaintAndReasonForVisitSection</entry><entry></entry><entry> </entry></row> 
+<row><entry>chiefComplaintSection</entry><entry>chiefComplaintSection</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>ChiefComplaintSection</entry><entry></entry><entry> </entry></row> 
+<row><entry>component</entry><entry>component</entry><entry>1..1</entry><entry></entry><entry>YES</entry><entry>Component2</entry><entry></entry><entry> </entry></row> 
+<row><entry>componentOf</entry><entry>componentOf</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>Component1</entry><entry></entry><entry> </entry></row> 
+<row><entry>custodian</entry><entry>custodian</entry><entry>1..1</entry><entry></entry><entry>YES</entry><entry>Custodian</entry><entry></entry><entry> </entry></row> 
+<row><entry>dataEnterer</entry><entry>dataEnterer</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>DataEnterer</entry><entry></entry><entry> </entry></row> 
+<row><entry>documentationOf</entry><entry>documentationOf</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>DocumentationOf</entry><entry></entry><entry> </entry></row> 
+<row><entry>encountersSection</entry><entry>encountersSection</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>EncountersSection</entry><entry>MDHT-11111</entry><entry> </entry></row> 
+<row><entry>encountersSection2</entry><entry>encountersSection2</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>EncountersSection</entry><entry></entry><entry> </entry></row> 
+<row><entry>historyOfPastIllnessSection</entry><entry>historyOfPastIllnessSection</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>HistoryOfPastIllnessSection</entry><entry></entry><entry> </entry></row> 
+<row><entry>hospitalAdmissionDiagnosisSection</entry><entry>hospitalAdmissionDiagnosisSection</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>HospitalAdmissionDiagnosisSection</entry><entry></entry><entry> </entry></row> 
+<row><entry>hospitalAdmissionMedicationsSectionEntriesOptional</entry><entry>hospitalAdmissionMedicationsSectionEntriesOptional</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>HospitalAdmissionMedicationsSectionEntriesOptional</entry><entry></entry><entry> </entry></row> 
+<row><entry>hospitalDischargeDiagnosisSection</entry><entry>hospitalDischargeDiagnosisSection</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>HospitalDischargeDiagnosisSection</entry><entry></entry><entry> </entry></row> 
+<row><entry>hospitalDischargeInstructionsSection</entry><entry>hospitalDischargeInstructionsSection</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>HospitalDischargeInstructionsSection</entry><entry></entry><entry> </entry></row> 
+<row><entry>hospitalDischargeMedicationsSection</entry><entry>hospitalDischargeMedicationsSection</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>HospitalDischargeMedicationsSection</entry><entry></entry><entry> </entry></row> 
+<row><entry>immunizationsSection</entry><entry>immunizationsSection</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>ImmunizationsSection</entry><entry></entry><entry> </entry></row> 
+<row><entry>informant</entry><entry>informant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Informant12</entry><entry></entry><entry> </entry></row> 
+<row><entry>informationRecipient</entry><entry>informationRecipient</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>InformationRecipient</entry><entry></entry><entry> </entry></row> 
+<row><entry>inFulfillmentOf</entry><entry>inFulfillmentOf</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>InFulfillmentOf</entry><entry></entry><entry> </entry></row> 
+<row><entry>instructionsSection</entry><entry>instructionsSection</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>InstructionsSection</entry><entry></entry><entry> </entry></row> 
+<row><entry>interventionsSection</entry><entry>interventionsSection</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>InterventionsSection</entry><entry></entry><entry> </entry></row> 
+<row><entry>legalAuthenticator</entry><entry>legalAuthenticator</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>LegalAuthenticator</entry><entry></entry><entry> </entry></row> 
+<row><entry>medicationsAdministeredSection</entry><entry>medicationsAdministeredSection</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>MedicationsAdministeredSection</entry><entry></entry><entry> </entry></row> 
+<row><entry>medicationsSection</entry><entry>medicationsSection</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>MedicationsSection</entry><entry></entry><entry> </entry></row> 
+<row><entry>participant</entry><entry>participant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Participant1</entry><entry></entry><entry> </entry></row> 
+<row><entry>planOfCareSection</entry><entry>planOfCareSection</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>PlanOfCareSection</entry><entry></entry><entry> </entry></row> 
+<row><entry>postoperativeDiagnosisSection</entry><entry>postoperativeDiagnosisSection</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>PostoperativeDiagnosisSection</entry><entry></entry><entry> </entry></row> 
+<row><entry>preoperativeDiagnosisSection</entry><entry>preoperativeDiagnosisSection</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>PreoperativeDiagnosisSection</entry><entry></entry><entry> </entry></row> 
+<row><entry>problemSection</entry><entry>problemSection</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>ProblemSection</entry><entry></entry><entry> </entry></row> 
+<row><entry>proceduresSection</entry><entry>proceduresSection</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>ProceduresSection</entry><entry></entry><entry> </entry></row> 
+<row><entry>reasonForVisitSection</entry><entry>reasonForVisitSection</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>ReasonForVisitSection</entry><entry></entry><entry> </entry></row> 
+<row><entry>recordTarget</entry><entry>recordTarget</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>RecordTarget</entry><entry></entry><entry> </entry></row> 
+<row><entry>relatedDocument</entry><entry>relatedDocument</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>RelatedDocument</entry><entry></entry><entry> </entry></row> 
+<row><entry>resultsSection</entry><entry>resultsSection</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>ResultsSection</entry><entry></entry><entry> </entry></row> 
+<row><entry>socialHistorySection</entry><entry>socialHistorySection</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>SocialHistorySection</entry><entry></entry><entry> </entry></row> 
+<row><entry>typeId</entry><entry>typeId</entry><entry>1..1</entry><entry></entry><entry>YES</entry><entry>InfrastructureRootTypeId</entry><entry></entry><entry> </entry></row> 
+<row><entry>vitalSignsSection</entry><entry>vitalSignsSection</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>VitalSignsSection</entry><entry></entry><entry> </entry></row> 
+<row><entry>vitalSignsSectionEntriesOptional</entry><entry>vitalSignsSectionEntriesOptional</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>VitalSignsSectionEntriesOptional</entry><entry></entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <typeId root="2.16.840.1.113883.1.3"/>
+  <templateId root="2.16.840.1.113883.10.20.22.1.1"/>
+  <templateId root="1.1.1.1.1.1.1.1.1.1.1"/>
+  <id root="MDHT" extension="1412078364"/>
+  <code code="2133281226"/>
+  <title>TEXT FOR TITLE</title>
+  <effectiveTime/>
+  <confidentialityCode code="1115300392"/>
+  <recordTarget>
+    <patientRole/>
+  </recordTarget>
+  <author>
+    <time/>
+    <assignedAuthor/>
+  </author>
+  <custodian/>
+  <component>
+    <structuredBody>
+      <component>
+        <section/>
+      </component>
+      <component>
+        <section/>
+      </component>
+      <component>
+        <section/>
+      </component>
+      <component>
+        <section/>
+      </component>
+      <component>
+        <section/>
+      </component>
+      <component>
+        <section/>
+      </component>
+      <component>
+        <section/>
+      </component>
+      <component>
+        <section/>
+      </component>
+      <component>
+        <section/>
+      </component>
+      <component>
+        <section/>
+      </component>
+      <component>
+        <section/>
+      </component>
+      <component>
+        <section/>
+      </component>
+      <component>
+        <section/>
+      </component>
+      <component>
+        <section/>
+      </component>
+      <component>
+        <section/>
+      </component>
+      <component>
+        <section/>
+      </component>
+      <component>
+        <section/>
+      </component>
+      <component>
+        <section/>
+      </component>
+      <component>
+        <section/>
+      </component>
+      <component>
+        <section/>
+      </component>
+      <component>
+        <section/>
+      </component>
+      <component>
+        <section/>
+      </component>
+      <component>
+        <section/>
+      </component>
+      <component>
+        <section/>
+      </component>
+    </structuredBody>
+  </component>
+</ClinicalDocument>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Summary Of Care Record</ph></p>
+<p id="shortdesc">[ClinicalDocument: templateId <tt>1.1.1.1.1.1.1.1.1.1.1</tt>]</p>
+</body>
+</topic>
