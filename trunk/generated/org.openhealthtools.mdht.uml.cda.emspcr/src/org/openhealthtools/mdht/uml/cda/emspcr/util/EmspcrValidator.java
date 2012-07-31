@@ -78,7 +78,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_VERSION_NUMBER = 4;
+  public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_VERSION_NUMBER = 5;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Care Report Id' of 'Patient Care Report'.
@@ -86,7 +86,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_ID = 5;
+  public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_ID = 6;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Care Report Title' of 'Patient Care Report'.
@@ -94,7 +94,7 @@ public class EmspcrValidator extends EObjectValidator
    * <!-- end-user-doc -->
    * @generated
    */
-  public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_TITLE = 6;
+  public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_TITLE = 4;
 
   /**
    * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Care Report Author' of 'Patient Care Report'.
@@ -1826,6 +1826,11 @@ public class EmspcrValidator extends EObjectValidator
     if (result || diagnostics != null) result &= cdaValidator.validateClinicalDocument_validateMoodCode(patientCareReport, diagnostics, context);
     if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsUSRealmAddress(patientCareReport, diagnostics, context);
     if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsUSRealmPatientName(patientCareReport, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeIdRoot(patientCareReport, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeIdExtension(patientCareReport, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSetIdVersionNumber(patientCareReport, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsVersionNumberSetId(patientCareReport, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsUSRealmPatientNameMixedContent(patientCareReport, diagnostics, context);
     if (result || diagnostics != null) result &= validatePatientCareReport_validateGeneralHeaderConstraintsTemplateId(patientCareReport, diagnostics, context);
     if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRealmCode(patientCareReport, diagnostics, context);
     if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeId(patientCareReport, diagnostics, context);
@@ -1905,12 +1910,13 @@ public class EmspcrValidator extends EObjectValidator
     if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationId(patientCareReport, diagnostics, context);
     if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationName(patientCareReport, diagnostics, context);
     if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationTelecom(patientCareReport, diagnostics, context);
-    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode(patientCareReport, diagnostics, context);
     if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationPreferenceInd(patientCareReport, diagnostics, context);
     if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationProficiencyLevelCodeP(patientCareReport, diagnostics, context);
     if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationProficiencyLevelCode(patientCareReport, diagnostics, context);
     if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationModeCodeP(patientCareReport, diagnostics, context);
     if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationModeCode(patientCareReport, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode(patientCareReport, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP(patientCareReport, diagnostics, context);
     if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlaceAddr(patientCareReport, diagnostics, context);
     if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlace(patientCareReport, diagnostics, context);
     if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianPersonName(patientCareReport, diagnostics, context);
@@ -1927,8 +1933,11 @@ public class EmspcrValidator extends EObjectValidator
     if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode(patientCareReport, diagnostics, context);
     if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientMaritalStatusCode(patientCareReport, diagnostics, context);
     if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientName(patientCareReport, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP(patientCareReport, diagnostics, context);
     if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode(patientCareReport, diagnostics, context);
     if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientReligiousAffiliationCode(patientCareReport, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientSDTCRaceCodeP(patientCareReport, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientSDTCRaceCode(patientCareReport, diagnostics, context);
     if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardian(patientCareReport, diagnostics, context);
     if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplace(patientCareReport, diagnostics, context);
     if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication(patientCareReport, diagnostics, context);
@@ -1952,15 +1961,16 @@ public class EmspcrValidator extends EObjectValidator
     if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityPerson(patientCareReport, diagnostics, context);
     if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantHasAssignedEntityOrRelatedEntity(patientCareReport, diagnostics, context);
     if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsParticipantSupportAssociatedEntityHasAssociatedPersonOrScopingOrganization(patientCareReport, diagnostics, context);
+    if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsParticipantSupportUseINDRoleclassCodes(patientCareReport, diagnostics, context);
     if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsParticipantSupportTime(patientCareReport, diagnostics, context);
     if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInFulfillmentOfOrderId(patientCareReport, diagnostics, context);
     if (result || diagnostics != null) result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInFulfillmentOfOrder(patientCareReport, diagnostics, context);
     if (result || diagnostics != null) result &= validatePatientCareReport_validatePatientCareReportClassCode(patientCareReport, diagnostics, context);
     if (result || diagnostics != null) result &= validatePatientCareReport_validatePatientCareReportMoodCode(patientCareReport, diagnostics, context);
     if (result || diagnostics != null) result &= validatePatientCareReport_validatePatientCareReportCode(patientCareReport, diagnostics, context);
+    if (result || diagnostics != null) result &= validatePatientCareReport_validatePatientCareReportTitle(patientCareReport, diagnostics, context);
     if (result || diagnostics != null) result &= validatePatientCareReport_validatePatientCareReportVersionNumber(patientCareReport, diagnostics, context);
     if (result || diagnostics != null) result &= validatePatientCareReport_validatePatientCareReportId(patientCareReport, diagnostics, context);
-    if (result || diagnostics != null) result &= validatePatientCareReport_validatePatientCareReportTitle(patientCareReport, diagnostics, context);
     if (result || diagnostics != null) result &= validatePatientCareReport_validatePatientCareReportAuthor(patientCareReport, diagnostics, context);
     if (result || diagnostics != null) result &= validatePatientCareReport_validatePatientCareReportRecordTarget(patientCareReport, diagnostics, context);
     if (result || diagnostics != null) result &= validatePatientCareReport_validatePatientCareReportHumanAuthor(patientCareReport, diagnostics, context);

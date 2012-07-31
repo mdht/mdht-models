@@ -686,6 +686,15 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
     g1.getETypeArguments().add(g2);
     addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
+    op = addEOperation(patientCareReportEClass, ecorePackage.getEBoolean(), "validatePatientCareReportTitle", 0, 1, IS_UNIQUE, IS_ORDERED);
+    addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+    g1 = createEGenericType(ecorePackage.getEMap());
+    g2 = createEGenericType(ecorePackage.getEJavaObject());
+    g1.getETypeArguments().add(g2);
+    g2 = createEGenericType(ecorePackage.getEJavaObject());
+    g1.getETypeArguments().add(g2);
+    addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
     op = addEOperation(patientCareReportEClass, ecorePackage.getEBoolean(), "validatePatientCareReportVersionNumber", 0, 1, IS_UNIQUE, IS_ORDERED);
     addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
     g1 = createEGenericType(ecorePackage.getEMap());
@@ -696,15 +705,6 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
     addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
     op = addEOperation(patientCareReportEClass, ecorePackage.getEBoolean(), "validatePatientCareReportId", 0, 1, IS_UNIQUE, IS_ORDERED);
-    addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
-    g1 = createEGenericType(ecorePackage.getEMap());
-    g2 = createEGenericType(ecorePackage.getEJavaObject());
-    g1.getETypeArguments().add(g2);
-    g2 = createEGenericType(ecorePackage.getEJavaObject());
-    g1.getETypeArguments().add(g2);
-    addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
-
-    op = addEOperation(patientCareReportEClass, ecorePackage.getEBoolean(), "validatePatientCareReportTitle", 0, 1, IS_UNIQUE, IS_ORDERED);
     addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
     g1 = createEGenericType(ecorePackage.getEMap());
     g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -3088,7 +3088,7 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        source, 
        new String[] 
        {
-       "constraints.validation.error", "PatientCareReportTemplateId PatientCareReportClassCode PatientCareReportMoodCode GeneralHeaderConstraintsCode PatientCareReportCode PatientCareReportId PatientCareReportTitle PatientCareReportAuthor PatientCareReportRecordTarget PatientCareReportBilling PatientCareReportEMSCurrentMedication PatientCareReportEMSAllergiesAndAdverseReactionsSection PatientCareReportEMSPastMedicalHistory PatientCareReportEMSSocialHistory PatientCareReportEMSPhysicalAssessmentSection PatientCareReportEMSProceduresPerformedSection PatientCareReportEMSPatientCareNarrative PatientCareReportEMSSceneSection PatientCareReportComponentOf PatientCareReportEMSDispatchSection PatientCareReportEMSPersonnelAdverseEventSection PatientCareReportEMSProtocolSection PatientCareReportEMSResponseSection PatientCareReportEMSSituationSection PatientCareReportEMSVitalSignsSection PatientCareReportCustodian PatientCareReportDocumentationOf PatientCareReportRelatedDocument PatientCareReportParticipant",
+       "constraints.validation.error", "PatientCareReportTemplateId PatientCareReportClassCode PatientCareReportMoodCode GeneralHeaderConstraintsCode PatientCareReportCode PatientCareReportTitle PatientCareReportId PatientCareReportAuthor PatientCareReportRecordTarget PatientCareReportBilling PatientCareReportEMSCurrentMedication PatientCareReportEMSAllergiesAndAdverseReactionsSection PatientCareReportEMSPastMedicalHistory PatientCareReportEMSSocialHistory PatientCareReportEMSPhysicalAssessmentSection PatientCareReportEMSProceduresPerformedSection PatientCareReportEMSPatientCareNarrative PatientCareReportEMSSceneSection PatientCareReportComponentOf PatientCareReportEMSDispatchSection PatientCareReportEMSPersonnelAdverseEventSection PatientCareReportEMSProtocolSection PatientCareReportEMSResponseSection PatientCareReportEMSSituationSection PatientCareReportEMSVitalSignsSection PatientCareReportCustodian PatientCareReportDocumentationOf PatientCareReportRelatedDocument PatientCareReportParticipant",
        "templateId.root", "2.16.840.1.113883.17.3.10.1",
        "classCode", "DOCCLIN",
        "moodCode", "EVN",
@@ -3097,8 +3097,8 @@ public class EmspcrPackageImpl extends EPackageImpl implements EmspcrPackage
        "code.codeSystemName", "LOINC",
        "code.displayName", "EMS Patient Care Report",
        "constraints.validation.dependOn.GeneralHeaderConstraintsCode", "PatientCareReportCode",
-       "constraints.validation.info", "PatientCareReportVersionNumber PatientCareReportHumanAuthor PatientCareReportSection PatientCareReportEMSCardiacArrestEvent PatientCareReportEMSMedicationsAdministeredSection PatientCareReportEMSDispositionSection PatientCareReportEMSTimesSection",
        "title.mixed", "EMS Patient Care Report",
+       "constraints.validation.info", "PatientCareReportVersionNumber PatientCareReportHumanAuthor PatientCareReportSection PatientCareReportEMSCardiacArrestEvent PatientCareReportEMSMedicationsAdministeredSection PatientCareReportEMSDispositionSection PatientCareReportEMSTimesSection",
        "constraints.validation.warning", "PatientCareReportEMSAdvanceDirectives PatientCareReportEMSHumanAuthorParticipation"
        });																																																																																																																																																																																																																
     addAnnotation
