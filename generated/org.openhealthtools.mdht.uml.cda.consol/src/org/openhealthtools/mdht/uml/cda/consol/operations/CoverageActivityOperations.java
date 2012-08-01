@@ -80,7 +80,7 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
    * @generated
    * @ordered
    */
-	
+
 	protected static Constraint VALIDATE_COVERAGE_ACTIVITY_RELATIONSHIP_SEQUENCE_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -94,8 +94,9 @@ public class CoverageActivityOperations extends ClinicalStatementOperations {
    * <!-- end-model-doc -->
    * @generated
    */
-	
-	public static  boolean validateCoverageActivityRelationshipSequenceNumber(CoverageActivity coverageActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateCoverageActivityRelationshipSequenceNumber(CoverageActivity coverageActivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
     if (VALIDATE_COVERAGE_ACTIVITY_RELATIONSHIP_SEQUENCE_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();

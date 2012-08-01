@@ -56,7 +56,8 @@ public class CoverageActivityImpl extends ActImpl implements CoverageActivity {
 	 * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateCoverageActivityRelationshipSequenceNumber(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateCoverageActivityRelationshipSequenceNumber(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
     return CoverageActivityOperations.validateCoverageActivityRelationshipSequenceNumber(this, diagnostics, context);
   }
 

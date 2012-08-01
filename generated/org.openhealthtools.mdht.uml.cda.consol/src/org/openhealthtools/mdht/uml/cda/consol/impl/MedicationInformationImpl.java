@@ -88,6 +88,46 @@ public class MedicationInformationImpl extends ManufacturedProductImpl implement
 
 	/**
    * <!-- begin-user-doc -->
+	* <!-- end-user-doc -->
+   * @generated
+   */
+	public boolean validateMedicationInformationMedicationInformationManufacturedMaterialCodeOriginalText(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+    return MedicationInformationOperations.validateMedicationInformationMedicationInformationManufacturedMaterialCodeOriginalText(this, diagnostics, context);
+  }
+
+	/**
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public boolean validateMedicationInformationMedicationInformationManufacturedMaterialReference(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+    return MedicationInformationOperations.validateMedicationInformationMedicationInformationManufacturedMaterialReference(this, diagnostics, context);
+  }
+
+	/**
+   * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+   * @generated
+   */
+	public boolean validateMedicationInformationMedicationInformationManufacturedMaterialCodeTranslation(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+    return MedicationInformationOperations.validateMedicationInformationMedicationInformationManufacturedMaterialCodeTranslation(this, diagnostics, context);
+  }
+
+	/**
+   * <!-- begin-user-doc -->
+	* <!-- end-user-doc -->
+   * @generated
+   */
+	public boolean validateMedicationInformationMedicationInformationManufacturedMaterialCode(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+    return MedicationInformationOperations.validateMedicationInformationMedicationInformationManufacturedMaterialCode(this, diagnostics, context);
+  }
+
+	/**
+   * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * @generated
    */

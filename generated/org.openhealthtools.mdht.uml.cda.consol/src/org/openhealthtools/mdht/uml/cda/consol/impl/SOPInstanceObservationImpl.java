@@ -57,7 +57,8 @@ public class SOPInstanceObservationImpl extends ObservationImpl implements SOPIn
 	 * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateSOPInstanceObservationEffectiveTimeHasValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateSOPInstanceObservationEffectiveTimeHasValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
     return SOPInstanceObservationOperations.validateSOPInstanceObservationEffectiveTimeHasValue(this, diagnostics, context);
   }
 
@@ -66,7 +67,8 @@ public class SOPInstanceObservationImpl extends ObservationImpl implements SOPIn
 	 * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateSOPInstanceObservationEffectiveTimeNoLow(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateSOPInstanceObservationEffectiveTimeNoLow(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
     return SOPInstanceObservationOperations.validateSOPInstanceObservationEffectiveTimeNoLow(this, diagnostics, context);
   }
 
@@ -75,7 +77,8 @@ public class SOPInstanceObservationImpl extends ObservationImpl implements SOPIn
 	 * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateSOPInstanceObservationEffectiveTimeNoHigh(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateSOPInstanceObservationEffectiveTimeNoHigh(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
     return SOPInstanceObservationOperations.validateSOPInstanceObservationEffectiveTimeNoHigh(this, diagnostics, context);
   }
 
@@ -102,7 +105,8 @@ public class SOPInstanceObservationImpl extends ObservationImpl implements SOPIn
 	 * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateSOPInstanceObservationTextReferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateSOPInstanceObservationTextReferenceValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
     return SOPInstanceObservationOperations.validateSOPInstanceObservationTextReferenceValue(this, diagnostics, context);
   }
 

@@ -179,7 +179,7 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
    * @generated
    * @ordered
    */
-	
+
 	protected static Constraint VALIDATE_IMMUNIZATION_ACTIVITY_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -193,8 +193,9 @@ public class ImmunizationActivityOperations extends SubstanceAdministrationOpera
    * <!-- end-model-doc -->
    * @generated
    */
-	
-	public static  boolean validateImmunizationActivityTextReferenceValue(ImmunizationActivity immunizationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateImmunizationActivityTextReferenceValue(ImmunizationActivity immunizationActivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
     if (VALIDATE_IMMUNIZATION_ACTIVITY_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();

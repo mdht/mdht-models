@@ -267,7 +267,8 @@ public class AdvanceDirectiveObservationImpl extends ObservationImpl implements 
 	 * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateAdvanceDirectiveObservationReferenceExternalDocumentTextMediaType(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateAdvanceDirectiveObservationReferenceExternalDocumentTextMediaType(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
     return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationReferenceExternalDocumentTextMediaType(this, diagnostics, context);
   }
 
@@ -276,7 +277,8 @@ public class AdvanceDirectiveObservationImpl extends ObservationImpl implements 
 	 * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateAdvanceDirectiveObservationReferenceExternalDocumentTextReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateAdvanceDirectiveObservationReferenceExternalDocumentTextReference(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
     return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationReferenceExternalDocumentTextReference(this, diagnostics, context);
   }
 

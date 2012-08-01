@@ -30,7 +30,6 @@ import org.openhealthtools.mdht.uml.cda.Precondition;
 import org.openhealthtools.mdht.uml.cda.Procedure;
 import org.openhealthtools.mdht.uml.cda.Section;
 import org.openhealthtools.mdht.uml.cda.Specimen;
-import org.openhealthtools.mdht.uml.cda.Subject;
 import org.openhealthtools.mdht.uml.cda.SubstanceAdministration;
 import org.openhealthtools.mdht.uml.cda.Supply;
 import org.openhealthtools.mdht.uml.cda.consol.*;
@@ -1236,16 +1235,6 @@ public class ConsolSwitch<T> {
         if (result == null) result = caseClinicalStatement(procedureEncounter);
         if (result == null) result = caseAct(procedureEncounter);
         if (result == null) result = caseInfrastructureRoot(procedureEncounter);
-        if (result == null) result = defaultCase(theEObject);
-        return result;
-      }
-      case ConsolPackage.MEDICATION_INFORMATION_MANUFACTURED_MATERIAL:
-      {
-        MedicationInformationManufacturedMaterial medicationInformationManufacturedMaterial = (MedicationInformationManufacturedMaterial)theEObject;
-        T result = caseMedicationInformationManufacturedMaterial(medicationInformationManufacturedMaterial);
-        if (result == null) result = caseMaterial(medicationInformationManufacturedMaterial);
-        if (result == null) result = caseEntity(medicationInformationManufacturedMaterial);
-        if (result == null) result = caseInfrastructureRoot(medicationInformationManufacturedMaterial);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -2859,21 +2848,6 @@ public class ConsolSwitch<T> {
    * @generated
    */
 	public T caseProcedureEncounter(ProcedureEncounter object) {
-    return null;
-  }
-
-	/**
-   * Returns the result of interpreting the object as an instance of '<em>Medication Information Manufactured Material</em>'.
-   * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-   * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Medication Information Manufactured Material</em>'.
-   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-   * @generated
-   */
-	public T caseMedicationInformationManufacturedMaterial(MedicationInformationManufacturedMaterial object) {
     return null;
   }
 

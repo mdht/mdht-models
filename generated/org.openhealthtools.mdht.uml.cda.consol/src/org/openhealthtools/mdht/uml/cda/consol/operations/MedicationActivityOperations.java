@@ -247,7 +247,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
    * @generated
    * @ordered
    */
-	
+
 	protected static Constraint VALIDATE_MEDICATION_ACTIVITY_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -261,8 +261,9 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
    * <!-- end-model-doc -->
    * @generated
    */
-	
-	public static  boolean validateMedicationActivityTextReferenceValue(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateMedicationActivityTextReferenceValue(MedicationActivity medicationActivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
     if (VALIDATE_MEDICATION_ACTIVITY_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -376,7 +377,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
    * @generated
    * @ordered
    */
-	
+
 	protected static Constraint VALIDATE_MEDICATION_ACTIVITY_EFFECTIVE_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -390,8 +391,9 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
    * <!-- end-model-doc -->
    * @generated
    */
-	
-	public static  boolean validateMedicationActivityEffectiveTimeLow(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateMedicationActivityEffectiveTimeLow(MedicationActivity medicationActivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
     if (VALIDATE_MEDICATION_ACTIVITY_EFFECTIVE_TIME_LOW__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -441,7 +443,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
    * @generated
    * @ordered
    */
-	
+
 	protected static Constraint VALIDATE_MEDICATION_ACTIVITY_EFFECTIVE_TIME_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -455,8 +457,9 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
    * <!-- end-model-doc -->
    * @generated
    */
-	
-	public static  boolean validateMedicationActivityEffectiveTimeHigh(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateMedicationActivityEffectiveTimeHigh(MedicationActivity medicationActivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
     if (VALIDATE_MEDICATION_ACTIVITY_EFFECTIVE_TIME_HIGH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -570,7 +573,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
    * @generated
    * @ordered
    */
-	
+
 	protected static Constraint VALIDATE_MEDICATION_ACTIVITY_EFFECTIVE_TIME_OPERATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -584,8 +587,9 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
    * <!-- end-model-doc -->
    * @generated
    */
-	
-	public static  boolean validateMedicationActivityEffectiveTimeOperator(MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateMedicationActivityEffectiveTimeOperator(MedicationActivity medicationActivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
     if (VALIDATE_MEDICATION_ACTIVITY_EFFECTIVE_TIME_OPERATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();

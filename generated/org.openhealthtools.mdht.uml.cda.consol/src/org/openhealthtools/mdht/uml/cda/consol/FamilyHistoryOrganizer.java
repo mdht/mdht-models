@@ -85,7 +85,7 @@ public interface FamilyHistoryOrganizer extends Organizer {
 
 	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
    * <!-- begin-model-doc -->
    * self.subject->one(subject : cda::Subject | not subject.oclIsUndefined() and subject.oclIsKindOf(cda::Subject))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
@@ -94,11 +94,11 @@ public interface FamilyHistoryOrganizer extends Organizer {
    * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.subject->one(subject : cda::Subject | not subject.oclIsUndefined() and subject.oclIsKindOf(cda::Subject))'"
    * @generated
    */
-  boolean validateFamilyHistoryOrganizerSubject(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateFamilyHistoryOrganizerSubject(DiagnosticChain diagnostics, Map<Object, Object> context);
 
-  /**
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
    * self.subject->excluding(null).relatedSubject->excluding(null).subject->excluding(null)->reject((administrativeGenderCode.oclIsUndefined() or administrativeGenderCode.isNullFlavorUndefined()) implies (not administrativeGenderCode.oclIsUndefined() and administrativeGenderCode.oclIsKindOf(datatypes::CE) and 
    * let value : datatypes::CE = administrativeGenderCode.oclAsType(datatypes::CE) in 
@@ -106,14 +106,15 @@ public interface FamilyHistoryOrganizer extends Organizer {
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.subject->excluding(null).relatedSubject->excluding(null).subject->excluding(null)->reject((administrativeGenderCode.oclIsUndefined() or administrativeGenderCode.isNullFlavorUndefined()) implies (not administrativeGenderCode.oclIsUndefined() and administrativeGenderCode.oclIsKindOf(datatypes::CE) and \nlet value : datatypes::CE = administrativeGenderCode.oclAsType(datatypes::CE) in \nvalue.codeSystem = \'2.16.840.1.113883.5.1\' and (value.code = \'F\' or value.code = \'M\' or value.code = \'UN\')))'"
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.subject->excluding(null).relatedSubject->excluding(null).subject->excluding(null)->reject((administrativeGenderCode.oclIsUndefined() or administrativeGenderCode.isNullFlavorUndefined()) implies (not administrativeGenderCode.oclIsUndefined() and administrativeGenderCode.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = administrativeGenderCode.oclAsType(datatypes::CE) in \r\nvalue.codeSystem = \'2.16.840.1.113883.5.1\' and (value.code = \'F\' or value.code = \'M\' or value.code = \'UN\')))'"
    * @generated
    */
-  boolean validateFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonAdministrativeGenderCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonAdministrativeGenderCode(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
 
-  /**
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
    * self.subject->excluding(null).relatedSubject->excluding(null).subject->excluding(null)->reject((administrativeGenderCode.oclIsUndefined() or administrativeGenderCode.isNullFlavorUndefined()) implies (not administrativeGenderCode.oclIsUndefined()))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
@@ -122,11 +123,12 @@ public interface FamilyHistoryOrganizer extends Organizer {
    * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.subject->excluding(null).relatedSubject->excluding(null).subject->excluding(null)->reject((administrativeGenderCode.oclIsUndefined() or administrativeGenderCode.isNullFlavorUndefined()) implies (not administrativeGenderCode.oclIsUndefined()))'"
    * @generated
    */
-  boolean validateFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonAdministrativeGenderCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonAdministrativeGenderCodeP(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
 
-  /**
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
    * self.subject->excluding(null).relatedSubject->excluding(null).subject->excluding(null)->reject((birthTime.oclIsUndefined() or birthTime.isNullFlavorUndefined()) implies (not birthTime.oclIsUndefined()))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
@@ -135,11 +137,12 @@ public interface FamilyHistoryOrganizer extends Organizer {
    * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.subject->excluding(null).relatedSubject->excluding(null).subject->excluding(null)->reject((birthTime.oclIsUndefined() or birthTime.isNullFlavorUndefined()) implies (not birthTime.oclIsUndefined()))'"
    * @generated
    */
-  boolean validateFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonBirthTime(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonBirthTime(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
-  /**
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
    * self.subject->excluding(null).relatedSubject->excluding(null).subject->excluding(null)->reject((sDTCDeceasedInd.oclIsUndefined() or sDTCDeceasedInd.isNullFlavorUndefined()) implies (not sDTCDeceasedInd.oclIsUndefined()))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
@@ -148,11 +151,12 @@ public interface FamilyHistoryOrganizer extends Organizer {
    * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.subject->excluding(null).relatedSubject->excluding(null).subject->excluding(null)->reject((sDTCDeceasedInd.oclIsUndefined() or sDTCDeceasedInd.isNullFlavorUndefined()) implies (not sDTCDeceasedInd.oclIsUndefined()))'"
    * @generated
    */
-  boolean validateFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonSDTCDeceasedInd(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonSDTCDeceasedInd(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
 
-  /**
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
    * self.subject->excluding(null).relatedSubject->excluding(null).subject->excluding(null)->reject((sDTCDeceasedTime.oclIsUndefined() or sDTCDeceasedTime.isNullFlavorUndefined()) implies (not sDTCDeceasedTime.oclIsUndefined()))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
@@ -161,11 +165,12 @@ public interface FamilyHistoryOrganizer extends Organizer {
    * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.subject->excluding(null).relatedSubject->excluding(null).subject->excluding(null)->reject((sDTCDeceasedTime.oclIsUndefined() or sDTCDeceasedTime.isNullFlavorUndefined()) implies (not sDTCDeceasedTime.oclIsUndefined()))'"
    * @generated
    */
-  boolean validateFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonSDTCDeceasedTime(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonSDTCDeceasedTime(
+			DiagnosticChain diagnostics, Map<Object, Object> context);
 
-  /**
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
    * self.subject->excluding(null).relatedSubject->excluding(null).subject->excluding(null)->reject((sDTCId->isEmpty() or sDTCId->exists(element | element.isNullFlavorUndefined())) implies (not sDTCId->isEmpty()))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
@@ -174,11 +179,12 @@ public interface FamilyHistoryOrganizer extends Organizer {
    * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.subject->excluding(null).relatedSubject->excluding(null).subject->excluding(null)->reject((sDTCId->isEmpty() or sDTCId->exists(element | element.isNullFlavorUndefined())) implies (not sDTCId->isEmpty()))'"
    * @generated
    */
-  boolean validateFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonSDTCId(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateFamilyHistoryOrganizerSubjectRelatedSubjectSubjectPersonSDTCId(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
-  /**
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
    * self.subject->excluding(null).relatedSubject->excluding(null)->reject(isDefined('classCode'))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
@@ -187,11 +193,12 @@ public interface FamilyHistoryOrganizer extends Organizer {
    * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.subject->excluding(null).relatedSubject->excluding(null)->reject(isDefined(\'classCode\'))'"
    * @generated
    */
-  boolean validateFamilyHistoryOrganizerSubjectRelatedSubjectClassCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateFamilyHistoryOrganizerSubjectRelatedSubjectClassCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
-  /**
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
    * self.subject->excluding(null).relatedSubject->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CE) and 
    * let value : datatypes::CE = code.oclAsType(datatypes::CE) in 
@@ -199,14 +206,15 @@ public interface FamilyHistoryOrganizer extends Organizer {
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
    * @param context The cache of context-specific information.
    * <!-- end-model-doc -->
-   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.subject->excluding(null).relatedSubject->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CE) and \nlet value : datatypes::CE = code.oclAsType(datatypes::CE) in \nvalue.codeSystem = \'2.16.840.1.113883.5.111\' and not value.code.oclIsUndefined()))'"
+   * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.subject->excluding(null).relatedSubject->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined() and code.oclIsKindOf(datatypes::CE) and \r\nlet value : datatypes::CE = code.oclAsType(datatypes::CE) in \r\nvalue.codeSystem = \'2.16.840.1.113883.5.111\' and not value.code.oclIsUndefined()))'"
    * @generated
    */
-  boolean validateFamilyHistoryOrganizerSubjectRelatedSubjectCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateFamilyHistoryOrganizerSubjectRelatedSubjectCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
-  /**
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
    * self.subject->excluding(null).relatedSubject->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
@@ -215,11 +223,12 @@ public interface FamilyHistoryOrganizer extends Organizer {
    * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.subject->excluding(null).relatedSubject->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))'"
    * @generated
    */
-  boolean validateFamilyHistoryOrganizerSubjectRelatedSubjectCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateFamilyHistoryOrganizerSubjectRelatedSubjectCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
-  /**
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
    * self.subject->excluding(null).relatedSubject->excluding(null)->reject(subject->one(subject : cda::SubjectPerson | not subject.oclIsUndefined() and subject.oclIsKindOf(cda::SubjectPerson)))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
@@ -228,11 +237,12 @@ public interface FamilyHistoryOrganizer extends Organizer {
    * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.subject->excluding(null).relatedSubject->excluding(null)->reject(subject->one(subject : cda::SubjectPerson | not subject.oclIsUndefined() and subject.oclIsKindOf(cda::SubjectPerson)))'"
    * @generated
    */
-  boolean validateFamilyHistoryOrganizerSubjectRelatedSubjectSubject(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateFamilyHistoryOrganizerSubjectRelatedSubjectSubject(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
-  /**
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
    * self.subject->excluding(null)->reject(relatedSubject->one(relatedSubject : cda::RelatedSubject | not relatedSubject.oclIsUndefined() and relatedSubject.oclIsKindOf(cda::RelatedSubject)))
    * @param diagnostics The chain of diagnostics to which problems are to be appended.
@@ -241,9 +251,9 @@ public interface FamilyHistoryOrganizer extends Organizer {
    * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.subject->excluding(null)->reject(relatedSubject->one(relatedSubject : cda::RelatedSubject | not relatedSubject.oclIsUndefined() and relatedSubject.oclIsKindOf(cda::RelatedSubject)))'"
    * @generated
    */
-  boolean validateFamilyHistoryOrganizerSubjectRelatedSubject(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateFamilyHistoryOrganizerSubjectRelatedSubject(DiagnosticChain diagnostics, Map<Object, Object> context);
 
-  /**
+	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->

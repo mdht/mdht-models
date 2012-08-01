@@ -195,7 +195,8 @@ public interface MedicationSupplyOrder extends Supply {
    * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.product->excluding(null)->reject(manufacturedProduct.oclIsTypeOf(consol::MedicationInformation) xor manufacturedProduct.oclIsTypeOf(consol::ImmunizationMedicationInformation))'"
    * @generated
    */
-	boolean validateMedicationSupplyOrderProductContainsMedicationOrImmunization(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationSupplyOrderProductContainsMedicationOrImmunization(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
    * <!-- begin-user-doc -->

@@ -588,7 +588,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
    * @generated
    * @ordered
    */
-	
+
 	protected static Constraint VALIDATE_GENERAL_HEADER_CONSTRAINTS_TYPE_ID_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -602,8 +602,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
    * <!-- end-model-doc -->
    * @generated
    */
-	
-	public static  boolean validateGeneralHeaderConstraintsTypeIdRoot(GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateGeneralHeaderConstraintsTypeIdRoot(GeneralHeaderConstraints generalHeaderConstraints,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
     if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_TYPE_ID_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -653,7 +654,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
    * @generated
    * @ordered
    */
-	
+
 	protected static Constraint VALIDATE_GENERAL_HEADER_CONSTRAINTS_TYPE_ID_EXTENSION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -667,8 +668,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
    * <!-- end-model-doc -->
    * @generated
    */
-	
-	public static  boolean validateGeneralHeaderConstraintsTypeIdExtension(GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateGeneralHeaderConstraintsTypeIdExtension(
+			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
     if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_TYPE_ID_EXTENSION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -718,7 +720,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
    * @generated
    * @ordered
    */
-	
+
 	protected static Constraint VALIDATE_GENERAL_HEADER_CONSTRAINTS_SET_ID_VERSION_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -732,8 +734,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
    * <!-- end-model-doc -->
    * @generated
    */
-	
-	public static  boolean validateGeneralHeaderConstraintsSetIdVersionNumber(GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateGeneralHeaderConstraintsSetIdVersionNumber(
+			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
     if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_SET_ID_VERSION_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -783,7 +786,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
    * @generated
    * @ordered
    */
-	
+
 	protected static Constraint VALIDATE_GENERAL_HEADER_CONSTRAINTS_VERSION_NUMBER_SET_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -797,8 +800,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
    * <!-- end-model-doc -->
    * @generated
    */
-	
-	public static  boolean validateGeneralHeaderConstraintsVersionNumberSetId(GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateGeneralHeaderConstraintsVersionNumberSetId(
+			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
     if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_VERSION_NUMBER_SET_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -833,27 +837,27 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	/**
    * The cached OCL expression body for the '{@link #validateGeneralHeaderConstraintsUSRealmPatientNameMixedContent(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints US Realm Patient Name Mixed Content</em>}' operation.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
    * @see #validateGeneralHeaderConstraintsUSRealmPatientNameMixedContent(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_US_REALM_PATIENT_NAME_MIXED_CONTENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "datatypes::PN.allInstances()->reject(name : datatypes::PN | name.getText(true) = '')";
+	protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_US_REALM_PATIENT_NAME_MIXED_CONTENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "datatypes::PN.allInstances()->reject(name : datatypes::PN | name.getText(true) = '')";
 
-  /**
+	/**
    * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsUSRealmPatientNameMixedContent(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints US Realm Patient Name Mixed Content</em>}' invariant operation.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @see #validateGeneralHeaderConstraintsUSRealmPatientNameMixedContent(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-  
-  protected static Query<?, ?, ?> VALIDATE_GENERAL_HEADER_CONSTRAINTS_US_REALM_PATIENT_NAME_MIXED_CONTENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
-  /**
+	protected static Query<?, ?, ?> VALIDATE_GENERAL_HEADER_CONSTRAINTS_US_REALM_PATIENT_NAME_MIXED_CONTENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
    * datatypes::PN.allInstances()->reject(name : datatypes::PN | name.getText(true) = '')
    * @param generalHeaderConstraints The receiving '<em><b>General Header Constraints</b></em>' model object.
@@ -862,9 +866,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
    * <!-- end-model-doc -->
    * @generated
    */
-  @SuppressWarnings("unchecked")
-  public static  boolean validateGeneralHeaderConstraintsUSRealmPatientNameMixedContent(GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
+	@SuppressWarnings("unchecked")
+	public static boolean validateGeneralHeaderConstraintsUSRealmPatientNameMixedContent(
+			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
     
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -900,7 +904,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
     return true;
   }
 
-  /**
+	/**
    * The cached OCL expression body for the '{@link #validateGeneralHeaderConstraintsTemplateId(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Template Id</em>}' operation.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -7260,7 +7264,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 
 	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
    * <!-- begin-model-doc -->
    * self.recordTarget->excluding(null).patientRole->excluding(null).patient->excluding(null)->reject((raceCode.oclIsUndefined() or raceCode.isNullFlavorUndefined()) implies (not raceCode.oclIsUndefined()))
    * @param generalHeaderConstraints The receiving '<em><b>General Header Constraints</b></em>' model object.
@@ -7269,9 +7273,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
    * <!-- end-model-doc -->
    * @generated
    */
-  @SuppressWarnings("unchecked")
-  public static  boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP(GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
+	@SuppressWarnings("unchecked")
+	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP(
+			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
     
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -7318,7 +7322,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
     return true;
   }
 
-  /**
+	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
@@ -7429,7 +7433,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 
 	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
    * <!-- begin-model-doc -->
    * self.recordTarget->excluding(null).patientRole->excluding(null).patient->excluding(null)->reject((sDTCRaceCode->isEmpty() or sDTCRaceCode->exists(element | element.isNullFlavorUndefined())) implies (not sDTCRaceCode->isEmpty()))
    * @param generalHeaderConstraints The receiving '<em><b>General Header Constraints</b></em>' model object.
@@ -7438,9 +7442,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
    * <!-- end-model-doc -->
    * @generated
    */
-  @SuppressWarnings("unchecked")
-  public static  boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientSDTCRaceCodeP(GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
+	@SuppressWarnings("unchecked")
+	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientSDTCRaceCodeP(
+			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
     
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -7487,9 +7491,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
     return true;
   }
 
-  /**
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
    * self.recordTarget->excluding(null).patientRole->excluding(null).patient->excluding(null)->reject((sDTCRaceCode->isEmpty() or sDTCRaceCode->exists(element | element.isNullFlavorUndefined())) implies (sDTCRaceCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CE) and 
    * let value : datatypes::CE = element.oclAsType(datatypes::CE) in 
@@ -7500,9 +7504,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
    * <!-- end-model-doc -->
    * @generated
    */
-  @SuppressWarnings("unchecked")
-  public static  boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientSDTCRaceCode(GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
+	@SuppressWarnings("unchecked")
+	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientSDTCRaceCode(
+			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
     
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -7545,7 +7549,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
     return true;
   }
 
-  /**
+	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
@@ -8081,7 +8085,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 
 	protected static Query<?, ?, ?> VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION_MODE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
-  /**
+	/**
    * The cached OCL expression body for the '{@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Language Communication Language Code</em>}' operation.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -8093,7 +8097,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 "let value : datatypes::CS = languageCode.oclAsType(datatypes::CS) in "+
 "not value.code.oclIsUndefined()))";
 
-  /**
+	/**
    * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Language Communication Language Code</em>}' invariant operation.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -8158,25 +8162,25 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 	/**
    * The cached OCL expression body for the '{@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Language Communication Language Code P</em>}' operation.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
    * @see #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION_LANGUAGE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.recordTarget->excluding(null).patientRole->excluding(null).patient->excluding(null).languageCommunication->excluding(null)->reject((languageCode.oclIsUndefined() or languageCode.isNullFlavorUndefined()) implies (not languageCode.oclIsUndefined()))";
+	protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION_LANGUAGE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.recordTarget->excluding(null).patientRole->excluding(null).patient->excluding(null).languageCommunication->excluding(null)->reject((languageCode.oclIsUndefined() or languageCode.isNullFlavorUndefined()) implies (not languageCode.oclIsUndefined()))";
 
-  /**
+	/**
    * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Language Communication Language Code P</em>}' invariant operation.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @see #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-  
-  protected static Query<?, ?, ?> VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION_LANGUAGE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
-  /**
+	protected static Query<?, ?, ?> VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION_LANGUAGE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
    * The cached OCL expression body for the '{@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlaceAddr(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Birthplace Place Addr</em>}' operation.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -8186,7 +8190,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
    */
 	protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_BIRTHPLACE_PLACE_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.recordTarget->excluding(null).patientRole->excluding(null).patient->excluding(null).birthplace->excluding(null).place->excluding(null)->reject((addr.oclIsUndefined() or addr.isNullFlavorUndefined()) implies (not addr.oclIsUndefined()))";
 
-  /**
+	/**
    * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlaceAddr(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Birthplace Place Addr</em>}' invariant operation.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -8197,7 +8201,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 
 	protected static Query<?, ?, ?> VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_BIRTHPLACE_PLACE_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
-  /**
+	/**
    * The cached OCL expression body for the '{@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlace(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Birthplace Place</em>}' operation.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -8207,7 +8211,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
    */
 	protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_BIRTHPLACE_PLACE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.recordTarget->excluding(null).patientRole->excluding(null).patient->excluding(null).birthplace->excluding(null)->reject(place->one(place : cda::Place | not place.oclIsUndefined() and place.oclIsKindOf(cda::Place)))";
 
-  /**
+	/**
    * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlace(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Birthplace Place</em>}' invariant operation.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -8218,7 +8222,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 
 	protected static Query<?, ?, ?> VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_BIRTHPLACE_PLACE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
-  /**
+	/**
    * The cached OCL expression body for the '{@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianPersonName(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Guardian Person Name</em>}' operation.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -8228,7 +8232,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
    */
 	protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.recordTarget->excluding(null).patientRole->excluding(null).patient->excluding(null).guardian->excluding(null).guardianPerson->excluding(null)->reject((name->isEmpty() or name->exists(element | element.isNullFlavorUndefined())) implies (not name->isEmpty()))";
 
-  /**
+	/**
    * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianPersonName(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Guardian Person Name</em>}' invariant operation.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -8239,7 +8243,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 
 	protected static Query<?, ?, ?> VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
-  /**
+	/**
    * The cached OCL expression body for the '{@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianAddr(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Guardian Addr</em>}' operation.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -8249,7 +8253,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
    */
 	protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.recordTarget->excluding(null).patientRole->excluding(null).patient->excluding(null).guardian->excluding(null)->reject((addr->isEmpty() or addr->exists(element | element.isNullFlavorUndefined())) implies (not addr->isEmpty()))";
 
-  /**
+	/**
    * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianAddr(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Guardian Addr</em>}' invariant operation.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -8260,7 +8264,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 
 	protected static Query<?, ?, ?> VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
-  /**
+	/**
    * The cached OCL expression body for the '{@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCodeP(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Guardian Code P</em>}' operation.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -8270,7 +8274,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
    */
 	protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.recordTarget->excluding(null).patientRole->excluding(null).patient->excluding(null).guardian->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))";
 
-  /**
+	/**
    * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCodeP(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Guardian Code P</em>}' invariant operation.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -8281,7 +8285,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 
 	protected static Query<?, ?, ?> VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
-  /**
+	/**
    * The cached OCL expression body for the '{@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCode(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Guardian Code</em>}' operation.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -8293,7 +8297,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 "let value : datatypes::CE = code.oclAsType(datatypes::CE) in "+
 "value.codeSystem = '2.16.840.1.113883.5.111' and not value.code.oclIsUndefined()))";
 
-  /**
+	/**
    * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCode(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Guardian Code</em>}' invariant operation.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -8304,7 +8308,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 
 	protected static Query<?, ?, ?> VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
-  /**
+	/**
    * The cached OCL expression body for the '{@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTelecom(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Guardian Telecom</em>}' operation.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -8314,7 +8318,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
    */
 	protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.recordTarget->excluding(null).patientRole->excluding(null).patient->excluding(null).guardian->excluding(null)->reject((telecom->isEmpty() or telecom->exists(element | element.isNullFlavorUndefined())) implies (not telecom->isEmpty()))";
 
-  /**
+	/**
    * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTelecom(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Guardian Telecom</em>}' invariant operation.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -8325,7 +8329,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 
 	protected static Query<?, ?, ?> VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
-  /**
+	/**
    * The cached OCL expression body for the '{@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGuardianPerson(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Guardian Guardian Person</em>}' operation.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -8335,7 +8339,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
    */
 	protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_GUARDIAN_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.recordTarget->excluding(null).patientRole->excluding(null).patient->excluding(null).guardian->excluding(null)->reject(guardianPerson->one(guardianPerson : cda::Person | not guardianPerson.oclIsUndefined() and guardianPerson.oclIsKindOf(cda::Person)))";
 
-  /**
+	/**
    * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGuardianPerson(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Guardian Guardian Person</em>}' invariant operation.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -8346,7 +8350,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 
 	protected static Query<?, ?, ?> VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN_GUARDIAN_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
-  /**
+	/**
    * The cached OCL expression body for the '{@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTimePreciseToYear(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Birth Time Precise To Year</em>}' operation.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -8356,7 +8360,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
    */
 	protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_BIRTH_TIME_PRECISE_TO_YEAR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.recordTarget->excluding(null).patientRole->excluding(null).patient->excluding(null)->reject(not birthTime.value.oclIsUndefined() and birthTime.value.size() >= 4)";
 
-  /**
+	/**
    * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTimePreciseToYear(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Birth Time Precise To Year</em>}' invariant operation.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -8367,7 +8371,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 
 	protected static Query<?, ?, ?> VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_BIRTH_TIME_PRECISE_TO_YEAR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
-  /**
+	/**
    * The cached OCL expression body for the '{@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTimePreciseToDay(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Birth Time Precise To Day</em>}' operation.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -8377,7 +8381,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
    */
 	protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_BIRTH_TIME_PRECISE_TO_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.recordTarget->excluding(null).patientRole->excluding(null).patient->excluding(null)->reject(not birthTime.value.oclIsUndefined()  and birthTime.value.size() >= 6)";
 
-  /**
+	/**
    * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTimePreciseToDay(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Birth Time Precise To Day</em>}' invariant operation.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -8388,7 +8392,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 
 	protected static Query<?, ?, ?> VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_BIRTH_TIME_PRECISE_TO_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
-  /**
+	/**
    * The cached OCL expression body for the '{@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientAdministrativeGenderCode(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Administrative Gender Code</em>}' operation.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -8400,7 +8404,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 "let value : datatypes::CE = administrativeGenderCode.oclAsType(datatypes::CE) in "+
 "value.codeSystem = '2.16.840.1.113883.5.1' and (value.code = 'F' or value.code = 'M' or value.code = 'UN')))";
 
-  /**
+	/**
    * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientAdministrativeGenderCode(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Administrative Gender Code</em>}' invariant operation.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -8411,7 +8415,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 
 	protected static Query<?, ?, ?> VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_ADMINISTRATIVE_GENDER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
-  /**
+	/**
    * The cached OCL expression body for the '{@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTime(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Birth Time</em>}' operation.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -8421,7 +8425,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
    */
 	protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_BIRTH_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.recordTarget->excluding(null).patientRole->excluding(null).patient->excluding(null)->reject((birthTime.oclIsUndefined() or birthTime.isNullFlavorUndefined()) implies (not birthTime.oclIsUndefined()))";
 
-  /**
+	/**
    * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTime(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Birth Time</em>}' invariant operation.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -8432,7 +8436,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 
 	protected static Query<?, ?, ?> VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_BIRTH_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
-  /**
+	/**
    * The cached OCL expression body for the '{@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeP(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Ethnic Group Code P</em>}' operation.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -8442,7 +8446,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
    */
 	protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_ETHNIC_GROUP_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.recordTarget->excluding(null).patientRole->excluding(null).patient->excluding(null)->reject((ethnicGroupCode.oclIsUndefined() or ethnicGroupCode.isNullFlavorUndefined()) implies (not ethnicGroupCode.oclIsUndefined()))";
 
-  /**
+	/**
    * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeP(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Ethnic Group Code P</em>}' invariant operation.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -8453,7 +8457,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 
 	protected static Query<?, ?, ?> VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_ETHNIC_GROUP_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
-  /**
+	/**
    * The cached OCL expression body for the '{@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Ethnic Group Code</em>}' operation.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -8465,7 +8469,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 "let value : datatypes::CE = ethnicGroupCode.oclAsType(datatypes::CE) in "+
 "value.codeSystem = '2.16.840.1.113883.6.238' and not value.code.oclIsUndefined()))";
 
-  /**
+	/**
    * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Ethnic Group Code</em>}' invariant operation.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -8476,7 +8480,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 
 	protected static Query<?, ?, ?> VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_ETHNIC_GROUP_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
-  /**
+	/**
    * The cached OCL expression body for the '{@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientMaritalStatusCode(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Marital Status Code</em>}' operation.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -8488,7 +8492,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 "let value : datatypes::CE = maritalStatusCode.oclAsType(datatypes::CE) in "+
 "value.codeSystem = '2.16.840.1.113883.5.2' and (value.code = 'A' or value.code = 'D' or value.code = 'T' or value.code = 'I' or value.code = 'L' or value.code = 'M' or value.code = 'S' or value.code = 'P' or value.code = 'W')))";
 
-  /**
+	/**
    * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientMaritalStatusCode(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Marital Status Code</em>}' invariant operation.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -8499,7 +8503,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 
 	protected static Query<?, ?, ?> VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_MARITAL_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
-  /**
+	/**
    * The cached OCL expression body for the '{@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientName(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Name</em>}' operation.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -8509,7 +8513,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
    */
 	protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.recordTarget->excluding(null).patientRole->excluding(null).patient->excluding(null)->reject((name->isEmpty() or name->exists(element | element.isNullFlavorUndefined())) implies (name->size() = 1))";
 
-  /**
+	/**
    * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientName(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Name</em>}' invariant operation.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -8520,28 +8524,28 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 
 	protected static Query<?, ?, ?> VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
-  /**
+	/**
    * The cached OCL expression body for the '{@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Race Code P</em>}' operation.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @see #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_RACE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.recordTarget->excluding(null).patientRole->excluding(null).patient->excluding(null)->reject((raceCode.oclIsUndefined() or raceCode.isNullFlavorUndefined()) implies (not raceCode.oclIsUndefined()))";
+	protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_RACE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.recordTarget->excluding(null).patientRole->excluding(null).patient->excluding(null)->reject((raceCode.oclIsUndefined() or raceCode.isNullFlavorUndefined()) implies (not raceCode.oclIsUndefined()))";
 
-  /**
+	/**
    * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Race Code P</em>}' invariant operation.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @see #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-  
-  protected static Query<?, ?, ?> VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_RACE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
-  /**
+	protected static Query<?, ?, ?> VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_RACE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
    * The cached OCL expression body for the '{@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Race Code</em>}' operation.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -8553,7 +8557,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 "let value : datatypes::CE = raceCode.oclAsType(datatypes::CE) in "+
 "value.codeSystem = '2.16.840.1.113883.6.238' and not value.code.oclIsUndefined()))";
 
-  /**
+	/**
    * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Race Code</em>}' invariant operation.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -8564,7 +8568,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 
 	protected static Query<?, ?, ?> VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_RACE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
-  /**
+	/**
    * The cached OCL expression body for the '{@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientReligiousAffiliationCode(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Religious Affiliation Code</em>}' operation.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -8576,7 +8580,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 "let value : datatypes::CE = religiousAffiliationCode.oclAsType(datatypes::CE) in "+
 "not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))";
 
-  /**
+	/**
    * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientReligiousAffiliationCode(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Religious Affiliation Code</em>}' invariant operation.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -8587,51 +8591,51 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 
 	protected static Query<?, ?, ?> VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_RELIGIOUS_AFFILIATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
-  /**
+	/**
    * The cached OCL expression body for the '{@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientSDTCRaceCodeP(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient SDTC Race Code P</em>}' operation.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @see #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientSDTCRaceCodeP(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_SDTC_RACE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.recordTarget->excluding(null).patientRole->excluding(null).patient->excluding(null)->reject((sDTCRaceCode->isEmpty() or sDTCRaceCode->exists(element | element.isNullFlavorUndefined())) implies (not sDTCRaceCode->isEmpty()))";
+	protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_SDTC_RACE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.recordTarget->excluding(null).patientRole->excluding(null).patient->excluding(null)->reject((sDTCRaceCode->isEmpty() or sDTCRaceCode->exists(element | element.isNullFlavorUndefined())) implies (not sDTCRaceCode->isEmpty()))";
 
-  /**
+	/**
    * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientSDTCRaceCodeP(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient SDTC Race Code P</em>}' invariant operation.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @see #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientSDTCRaceCodeP(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-  
-  protected static Query<?, ?, ?> VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_SDTC_RACE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
-  /**
+	protected static Query<?, ?, ?> VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_SDTC_RACE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
    * The cached OCL expression body for the '{@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientSDTCRaceCode(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient SDTC Race Code</em>}' operation.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @see #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientSDTCRaceCode(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-  protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_SDTC_RACE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.recordTarget->excluding(null).patientRole->excluding(null).patient->excluding(null)->reject((sDTCRaceCode->isEmpty() or sDTCRaceCode->exists(element | element.isNullFlavorUndefined())) implies (sDTCRaceCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CE) and "+
+	protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_SDTC_RACE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.recordTarget->excluding(null).patientRole->excluding(null).patient->excluding(null)->reject((sDTCRaceCode->isEmpty() or sDTCRaceCode->exists(element | element.isNullFlavorUndefined())) implies (sDTCRaceCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CE) and "+
 "let value : datatypes::CE = element.oclAsType(datatypes::CE) in "+
 "value.codeSystem = '2.16.840.1.113883.6.238' and not value.code.oclIsUndefined())))";
 
-  /**
+	/**
    * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientSDTCRaceCode(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient SDTC Race Code</em>}' invariant operation.
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @see #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientSDTCRaceCode(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
    * @generated
    * @ordered
    */
-  
-  protected static Query<?, ?, ?> VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_SDTC_RACE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
-  /**
+	protected static Query<?, ?, ?> VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_SDTC_RACE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
+
+	/**
    * The cached OCL expression body for the '{@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardian(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Guardian</em>}' operation.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -8641,7 +8645,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
    */
 	protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.recordTarget->excluding(null).patientRole->excluding(null).patient->excluding(null)->reject(guardian->exists(guardian : cda::Guardian | not guardian.oclIsUndefined() and guardian.oclIsKindOf(cda::Guardian)))";
 
-  /**
+	/**
    * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardian(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Guardian</em>}' invariant operation.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -8652,7 +8656,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 
 	protected static Query<?, ?, ?> VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_GUARDIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
-  /**
+	/**
    * The cached OCL expression body for the '{@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplace(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Birthplace</em>}' operation.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -8662,7 +8666,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
    */
 	protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_BIRTHPLACE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.recordTarget->excluding(null).patientRole->excluding(null).patient->excluding(null)->reject(birthplace->one(birthplace : cda::Birthplace | not birthplace.oclIsUndefined() and birthplace.oclIsKindOf(cda::Birthplace)))";
 
-  /**
+	/**
    * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplace(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Birthplace</em>}' invariant operation.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -8673,7 +8677,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 
 	protected static Query<?, ?, ?> VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_BIRTHPLACE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
-  /**
+	/**
    * The cached OCL expression body for the '{@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Language Communication</em>}' operation.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -8683,7 +8687,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
    */
 	protected static final String VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.recordTarget->excluding(null).patientRole->excluding(null).patient->excluding(null)->reject(languageCommunication->one(languageCommunication : cda::LanguageCommunication | not languageCommunication.oclIsUndefined() and languageCommunication.oclIsKindOf(cda::LanguageCommunication)))";
 
-  /**
+	/**
    * The cached OCL invariant for the '{@link #validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Patient Language Communication</em>}' invariant operation.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -8694,9 +8698,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
 
 	protected static Query<?, ?, ?> VALIDATE_GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
-  /**
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * <!-- begin-model-doc -->
    * self.recordTarget->excluding(null).patientRole->excluding(null).patient->excluding(null).languageCommunication->excluding(null)->reject((languageCode.oclIsUndefined() or languageCode.isNullFlavorUndefined()) implies (not languageCode.oclIsUndefined()))
    * @param generalHeaderConstraints The receiving '<em><b>General Header Constraints</b></em>' model object.
@@ -8705,9 +8709,9 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
    * <!-- end-model-doc -->
    * @generated
    */
-  @SuppressWarnings("unchecked")
-  public static  boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP(GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
+	@SuppressWarnings("unchecked")
+	public static boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP(
+			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
     
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -8743,7 +8747,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
     return true;
   }
 
-  /**
+	/**
    * The cached OCL expression body for the '{@link #validateGeneralHeaderConstraintsRecordTargetPatientRoleAddr(GeneralHeaderConstraints, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate General Header Constraints Record Target Patient Role Addr</em>}' operation.
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -9750,7 +9754,8 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
    * @generated
    */
 	@SuppressWarnings("unchecked")
-	public static  boolean validateGeneralHeaderConstraintsParticipantSupportUseINDRoleclassCodes(GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateGeneralHeaderConstraintsParticipantSupportUseINDRoleclassCodes(
+			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
     
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -10185,7 +10190,7 @@ public class GeneralHeaderConstraintsOperations extends ClinicalDocumentOperatio
    * @generated
    * @ordered
    */
-	
+
 	protected static Query<?, ?, ?> VALIDATE_GENERAL_HEADER_CONSTRAINTS_PARTICIPANT_SUPPORT_USE_IND_ROLECLASS_CODES__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**

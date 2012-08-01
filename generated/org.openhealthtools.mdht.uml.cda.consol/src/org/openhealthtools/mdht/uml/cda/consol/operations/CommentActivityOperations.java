@@ -482,7 +482,7 @@ public class CommentActivityOperations extends ClinicalStatementOperations {
    * @generated
    * @ordered
    */
-	
+
 	protected static Query<?, ?, ?> VALIDATE_COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_HAS_PERSON_OR_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
@@ -497,7 +497,8 @@ public class CommentActivityOperations extends ClinicalStatementOperations {
    * @generated
    */
 	@SuppressWarnings("unchecked")
-	public static  boolean validateCommentActivityAuthorAssignedAuthorHasPersonOrOrganization(CommentActivity commentActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateCommentActivityAuthorAssignedAuthorHasPersonOrOrganization(
+			CommentActivity commentActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
     
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -551,7 +552,7 @@ public class CommentActivityOperations extends ClinicalStatementOperations {
    * @generated
    * @ordered
    */
-	
+
 	protected static Query<?, ?, ?> VALIDATE_COMMENT_ACTIVITY_AUTHOR_ASSIGNED_AUTHOR_ASSIGN_PERSON_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
@@ -566,7 +567,8 @@ public class CommentActivityOperations extends ClinicalStatementOperations {
    * @generated
    */
 	@SuppressWarnings("unchecked")
-	public static  boolean validateCommentActivityAuthorAssignedAuthorAssignPersonName(CommentActivity commentActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateCommentActivityAuthorAssignedAuthorAssignPersonName(CommentActivity commentActivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
     
       OCL.Helper helper = EOCL_ENV.createOCLHelper();

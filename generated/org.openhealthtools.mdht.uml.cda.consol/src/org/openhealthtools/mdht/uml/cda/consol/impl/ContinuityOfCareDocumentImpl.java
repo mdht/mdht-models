@@ -306,7 +306,8 @@ public class ContinuityOfCareDocumentImpl extends GeneralHeaderConstraintsImpl i
 	 * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateContinuityOfCareDocumentAuthorAssignedAuthorHasAssignedPersonOrRepresentedOrganization(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateContinuityOfCareDocumentAuthorAssignedAuthorHasAssignedPersonOrRepresentedOrganization(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
     return ContinuityOfCareDocumentOperations.validateContinuityOfCareDocumentAuthorAssignedAuthorHasAssignedPersonOrRepresentedOrganization(this, diagnostics, context);
   }
 

@@ -70,7 +70,8 @@ public class ImmunizationActivityImpl extends SubstanceAdministrationImpl implem
 	 * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateImmunizationActivityTextReferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateImmunizationActivityTextReferenceValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
     return ImmunizationActivityOperations.validateImmunizationActivityTextReferenceValue(this, diagnostics, context);
   }
 

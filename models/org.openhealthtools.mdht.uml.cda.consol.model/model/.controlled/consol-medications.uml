@@ -481,6 +481,53 @@ Not pre-coordinated consumable: If the consumable code is not pre-coordinated (e
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-iKJ4EIrEeG4bZAl2IGXmQ" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-iKJ4UIrEeG4bZAl2IGXmQ" value="1"/>
     </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="__WUM4CAMEeGKirKJsFylGA" name="MedicationInformationManufacturedMaterial">
+      <ownedComment xmi:id="_piYCENueEeGaiuMcT06VUQ">
+        <body>INLINE</body>
+      </ownedComment>
+      <ownedRule xmi:id="_GyKRMEIsEeG4bZAl2IGXmQ" name="codeOriginalText" constrainedElement="_WONKoCANEeGKirKJsFylGA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_WLekkEIsEeG4bZAl2IGXmQ">
+          <language>Analysis</language>
+          <language>OCL</language>
+          <body>code SHOULD contain zero or one [0..1] originalText</body>
+          <body>not self.code.oclIsUndefined() implies self.code.originalText->size() = 1</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_WONKoCANEeGKirKJsFylGA" name="reference" constrainedElement="__WUM4CAMEeGKirKJsFylGA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Z8LRMCANEeGKirKJsFylGA">
+          <language>Analysis</language>
+          <language>OCL</language>
+          <body>originalText, if present, SHOULD contain zero or one [0..1] reference/@value</body>
+          <body>self.code.originalText->size() = 1 implies not self.code.originalText.reference.value.oclIsUndefined()</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_P3HqkEIsEeG4bZAl2IGXmQ" name="referenceValue" constrainedElement="_WONKoCANEeGKirKJsFylGA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_guBWQEIsEeG4bZAl2IGXmQ">
+          <language>Analysis</language>
+          <body>reference/@value SHALL begin with a '#' and SHALL point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_dYj4gCANEeGKirKJsFylGA" name="codeTranslation" constrainedElement="__WUM4CAMEeGKirKJsFylGA">
+        <ownedComment xmi:id="_ro9Z0EIsEeG4bZAl2IGXmQ">
+          <body>Translations can be used to represent generic product name, packaged product code, etc</body>
+        </ownedComment>
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_hGPEICANEeGKirKJsFylGA">
+          <language>Analysis</language>
+          <language>OCL</language>
+          <body>code MAY contain zero or more [0..*] translation</body>
+          <body>self.code->size() = 1 implies self.code.translation->size() > 0</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="__WUM4SAMEeGKirKJsFylGA">
+        <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_rFzJEEcZEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_Dh74wCANEeGKirKJsFylGA" name="code" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_H6VkwEItEeG4bZAl2IGXmQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_H6VkwUItEeG4bZAl2IGXmQ" value="1"/>
+        <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qgWpsEo6Ed6c3qsAxlFHaQ"/>
+      </ownedAttribute>
+    </nestedClassifier>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_LKvGYBncEeGs5a462vYX5Q" base_Class="_2T9DQBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.23">
     <ruleId>CONF:7409</ruleId>
@@ -1082,53 +1129,6 @@ The UDI should be sent in the participantRole/id.</body>
   <CDA:PropertyValidation xmi:id="_qbvQYCAMEeGKirKJsFylGA" base_Property="_pUNnoCAMEeGKirKJsFylGA">
     <ruleId>CONF:7408</ruleId>
   </CDA:PropertyValidation>
-  <uml:Class xmi:id="__WUM4CAMEeGKirKJsFylGA" name="MedicationInformationManufacturedMaterial">
-    <ownedRule xmi:id="_GyKRMEIsEeG4bZAl2IGXmQ" name="codeOriginalText" constrainedElement="_WONKoCANEeGKirKJsFylGA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_WLekkEIsEeG4bZAl2IGXmQ">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>code SHOULD contain zero or one [0..1] originalText</body>
-        <body>not self.code.oclIsUndefined() implies self.code.originalText->size() = 1</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_WONKoCANEeGKirKJsFylGA" name="reference" constrainedElement="__WUM4CAMEeGKirKJsFylGA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_Z8LRMCANEeGKirKJsFylGA">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>originalText, if present, SHOULD contain zero or one [0..1] reference/@value</body>
-        <body>self.code.originalText->size() = 1 implies not self.code.originalText.reference.value.oclIsUndefined()</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_P3HqkEIsEeG4bZAl2IGXmQ" name="referenceValue" constrainedElement="_WONKoCANEeGKirKJsFylGA">
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_guBWQEIsEeG4bZAl2IGXmQ">
-        <language>Analysis</language>
-        <body>reference/@value SHALL begin with a '#' and SHALL point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1)</body>
-      </specification>
-    </ownedRule>
-    <ownedRule xmi:id="_dYj4gCANEeGKirKJsFylGA" name="codeTranslation" constrainedElement="__WUM4CAMEeGKirKJsFylGA">
-      <ownedComment xmi:id="_ro9Z0EIsEeG4bZAl2IGXmQ">
-        <body>Translations can be used to represent generic product name, packaged product code, etc</body>
-      </ownedComment>
-      <specification xmi:type="uml:OpaqueExpression" xmi:id="_hGPEICANEeGKirKJsFylGA">
-        <language>Analysis</language>
-        <language>OCL</language>
-        <body>code MAY contain zero or more [0..*] translation</body>
-        <body>self.code->size() = 1 implies self.code.translation->size() > 0</body>
-      </specification>
-    </ownedRule>
-    <generalization xmi:id="__WUM4SAMEeGKirKJsFylGA">
-      <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_rFzJEEcZEd6besF9iFIJkQ"/>
-    </generalization>
-    <ownedAttribute xmi:id="_Dh74wCANEeGKirKJsFylGA" name="code" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_H6VkwEItEeG4bZAl2IGXmQ" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_H6VkwUItEeG4bZAl2IGXmQ" value="1"/>
-      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qgWpsEo6Ed6c3qsAxlFHaQ"/>
-    </ownedAttribute>
-  </uml:Class>
-  <CDA:ValueSetConstraint xmi:id="_KhRCYCANEeGKirKJsFylGA" base_Property="_Dh74wCANEeGKirKJsFylGA">
-    <reference href="../consol-vocab.uml#_uPu0oCXZEeGD8_EQPvfzIQ"/>
-  </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_oCgAwCAPEeGKirKJsFylGA" base_Property="_2GlVkBSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7507</ruleId>
   </CDA:PropertyValidation>
@@ -1269,18 +1269,6 @@ The UDI should be sent in the participantRole/id.</body>
   <CDA:ConstraintValidation xmi:id="_WUhoUEIrEeG4bZAl2IGXmQ" base_Constraint="_Mu_RcEIrEeG4bZAl2IGXmQ">
     <ruleId>CONF:7550</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_UC6VkEIsEeG4bZAl2IGXmQ" severity="WARNING" base_Constraint="_WONKoCANEeGKirKJsFylGA">
-    <ruleId>CONF:7417</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_XJXwMEIsEeG4bZAl2IGXmQ" severity="WARNING" base_Constraint="_GyKRMEIsEeG4bZAl2IGXmQ">
-    <ruleId>CONF:7413</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_hM0LEEIsEeG4bZAl2IGXmQ" base_Constraint="_P3HqkEIsEeG4bZAl2IGXmQ">
-    <ruleId>CONF:7418</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_nz7pAEIsEeG4bZAl2IGXmQ" severity="INFO" base_Constraint="_dYj4gCANEeGKirKJsFylGA">
-    <ruleId>CONF:7414</ruleId>
-  </CDA:ConstraintValidation>
   <CDA:PropertyValidation xmi:id="_I_lOMEIwEeG4bZAl2IGXmQ" severity="WARNING" base_Property="_IQt9EEIwEeG4bZAl2IGXmQ">
     <ruleId>CONF:7458</ruleId>
   </CDA:PropertyValidation>
@@ -1365,4 +1353,8 @@ The UDI should be sent in the participantRole/id.</body>
   </CDA:AssociationValidation>
   <CDA:ConstraintValidation xmi:id="_nkhuYMUuEeGigaKyc-jgFA" severity="INFO" base_Constraint="_2NJ3tRSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_t5o2UMUuEeGigaKyc-jgFA" severity="INFO" base_Constraint="_iAoXFhVdEeGQCvUGzi1kDQ"/>
+  <CDA:ValueSetConstraint xmi:id="_W_OvoNuhEeGaiuMcT06VUQ" base_Property="_Dh74wCANEeGKirKJsFylGA">
+    <reference href="../consol-vocab.uml#_uPu0oCXZEeGD8_EQPvfzIQ"/>
+    <ruleId>CONF:7412</ruleId>
+  </CDA:ValueSetConstraint>
 </xmi:XMI>

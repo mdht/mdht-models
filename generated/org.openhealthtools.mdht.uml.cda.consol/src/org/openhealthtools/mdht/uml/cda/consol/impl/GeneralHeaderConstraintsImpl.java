@@ -83,7 +83,8 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateGeneralHeaderConstraintsTypeIdExtension(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateGeneralHeaderConstraintsTypeIdExtension(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
     return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsTypeIdExtension(this, diagnostics, context);
   }
 
@@ -92,7 +93,8 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateGeneralHeaderConstraintsSetIdVersionNumber(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateGeneralHeaderConstraintsSetIdVersionNumber(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
     return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsSetIdVersionNumber(this, diagnostics, context);
   }
 
@@ -101,21 +103,22 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateGeneralHeaderConstraintsVersionNumberSetId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateGeneralHeaderConstraintsVersionNumberSetId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
     return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsVersionNumberSetId(this, diagnostics, context);
   }
 
 	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateGeneralHeaderConstraintsUSRealmPatientNameMixedContent(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
+	public boolean validateGeneralHeaderConstraintsUSRealmPatientNameMixedContent(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
     return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsUSRealmPatientNameMixedContent(this, diagnostics, context);
   }
 
-  /**
+	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * @generated
@@ -1063,15 +1066,15 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 
 	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
+	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
     return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP(this, diagnostics, context);
   }
 
-  /**
+	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * @generated
@@ -1093,25 +1096,25 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 
 	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientSDTCRaceCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
+	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientSDTCRaceCodeP(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
     return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientSDTCRaceCodeP(this, diagnostics, context);
   }
 
-  /**
+	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientSDTCRaceCode(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
+	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientSDTCRaceCode(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
     return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientSDTCRaceCode(this, diagnostics, context);
   }
 
-  /**
+	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * @generated
@@ -1193,15 +1196,15 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 
 	/**
    * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
    * @generated
    */
-  public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
+	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
     return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP(this, diagnostics, context);
   }
 
-  /**
+	/**
    * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
    * @generated
@@ -1366,7 +1369,8 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl implement
 	 * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateGeneralHeaderConstraintsParticipantSupportUseINDRoleclassCodes(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateGeneralHeaderConstraintsParticipantSupportUseINDRoleclassCodes(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
     return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsParticipantSupportUseINDRoleclassCodes(this, diagnostics, context);
   }
 

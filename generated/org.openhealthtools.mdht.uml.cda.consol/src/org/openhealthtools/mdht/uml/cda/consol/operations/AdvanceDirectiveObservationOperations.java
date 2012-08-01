@@ -1596,7 +1596,7 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
    * @generated
    * @ordered
    */
-	
+
 	protected static Query<?, ?, ?> VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE_EXTERNAL_DOCUMENT_TEXT_MEDIA_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
@@ -1611,7 +1611,9 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
    * @generated
    */
 	@SuppressWarnings("unchecked")
-	public static  boolean validateAdvanceDirectiveObservationReferenceExternalDocumentTextMediaType(AdvanceDirectiveObservation advanceDirectiveObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateAdvanceDirectiveObservationReferenceExternalDocumentTextMediaType(
+			AdvanceDirectiveObservation advanceDirectiveObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
   	  
     
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -1665,7 +1667,7 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
    * @generated
    * @ordered
    */
-	
+
 	protected static Query<?, ?, ?> VALIDATE_ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE_EXTERNAL_DOCUMENT_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
@@ -1680,7 +1682,9 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
    * @generated
    */
 	@SuppressWarnings("unchecked")
-	public static  boolean validateAdvanceDirectiveObservationReferenceExternalDocumentTextReference(AdvanceDirectiveObservation advanceDirectiveObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateAdvanceDirectiveObservationReferenceExternalDocumentTextReference(
+			AdvanceDirectiveObservation advanceDirectiveObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
   	  
     
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
