@@ -79,7 +79,7 @@ public class StudyActOperations extends ClinicalStatementOperations {
    * @generated
    * @ordered
    */
-	
+
 	protected static Constraint VALIDATE_STUDY_ACT_IDS_HAVE_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -93,8 +93,9 @@ public class StudyActOperations extends ClinicalStatementOperations {
    * <!-- end-model-doc -->
    * @generated
    */
-	
-	public static  boolean validateStudyActIdsHaveRoot(StudyAct studyAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateStudyActIdsHaveRoot(StudyAct studyAct, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
   	  
     if (VALIDATE_STUDY_ACT_IDS_HAVE_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -144,7 +145,7 @@ public class StudyActOperations extends ClinicalStatementOperations {
    * @generated
    * @ordered
    */
-	
+
 	protected static Constraint VALIDATE_STUDY_ACT_NO_ID_EXTENSION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -158,8 +159,9 @@ public class StudyActOperations extends ClinicalStatementOperations {
    * <!-- end-model-doc -->
    * @generated
    */
-	
-	public static  boolean validateStudyActNoIdExtension(StudyAct studyAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateStudyActNoIdExtension(StudyAct studyAct, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
   	  
     if (VALIDATE_STUDY_ACT_NO_ID_EXTENSION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();

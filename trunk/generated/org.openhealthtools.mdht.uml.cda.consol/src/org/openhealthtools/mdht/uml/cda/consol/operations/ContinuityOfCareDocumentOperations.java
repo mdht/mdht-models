@@ -1351,7 +1351,8 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
    * @generated
    */
 	@SuppressWarnings("unchecked")
-	public static  boolean validateContinuityOfCareDocumentAuthorAssignedAuthorHasAssignedPersonOrRepresentedOrganization(ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateContinuityOfCareDocumentAuthorAssignedAuthorHasAssignedPersonOrRepresentedOrganization(
+			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
     
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -2124,7 +2125,7 @@ public class ContinuityOfCareDocumentOperations extends GeneralHeaderConstraints
    * @generated
    * @ordered
    */
-	
+
 	protected static Query<?, ?, ?> VALIDATE_CONTINUITY_OF_CARE_DOCUMENT_AUTHOR_ASSIGNED_AUTHOR_HAS_ASSIGNED_PERSON_OR_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**

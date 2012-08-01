@@ -749,7 +749,8 @@ public class MedicationDispenseOperations extends SupplyOperations {
    * @generated
    */
 	@SuppressWarnings("unchecked")
-	public static  boolean validateMedicationDispenseProductContainsMedicationOrImmunization(MedicationDispense medicationDispense, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateMedicationDispenseProductContainsMedicationOrImmunization(
+			MedicationDispense medicationDispense, DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
     
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -863,7 +864,7 @@ public class MedicationDispenseOperations extends SupplyOperations {
    * @generated
    * @ordered
    */
-	
+
 	protected static Query<?, ?, ?> VALIDATE_MEDICATION_DISPENSE_PRODUCT_CONTAINS_MEDICATION_OR_IMMUNIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**

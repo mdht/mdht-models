@@ -71,7 +71,7 @@ public class PurposeofReferenceObservationOperations extends ClinicalStatementOp
    * @generated
    * @ordered
    */
-	
+
 	protected static Constraint VALIDATE_PURPOSEOF_REFERENCE_OBSERVATION_CODE_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -85,8 +85,10 @@ public class PurposeofReferenceObservationOperations extends ClinicalStatementOp
    * <!-- end-model-doc -->
    * @generated
    */
-	
-	public static  boolean validatePurposeofReferenceObservationCodeCodeSystem(PurposeofReferenceObservation purposeofReferenceObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validatePurposeofReferenceObservationCodeCodeSystem(
+			PurposeofReferenceObservation purposeofReferenceObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
   	  
     if (VALIDATE_PURPOSEOF_REFERENCE_OBSERVATION_CODE_CODE_SYSTEM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();

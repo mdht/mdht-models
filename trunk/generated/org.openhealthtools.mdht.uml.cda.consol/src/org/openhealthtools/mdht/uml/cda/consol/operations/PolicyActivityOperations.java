@@ -2354,7 +2354,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
    * @generated
    * @ordered
    */
-	
+
 	protected static Query<?, ?, ?> VALIDATE_POLICY_ACTIVITY_COVERAGE_LOW_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
@@ -2369,7 +2369,8 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
    * @generated
    */
 	@SuppressWarnings("unchecked")
-	public static  boolean validatePolicyActivityCoverageLowTime(PolicyActivity policyActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validatePolicyActivityCoverageLowTime(PolicyActivity policyActivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
     
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -2423,7 +2424,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
    * @generated
    * @ordered
    */
-	
+
 	protected static Query<?, ?, ?> VALIDATE_POLICY_ACTIVITY_COVERAGE_HIGH_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
@@ -2438,7 +2439,8 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
    * @generated
    */
 	@SuppressWarnings("unchecked")
-	public static  boolean validatePolicyActivityCoverageHighTime(PolicyActivity policyActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validatePolicyActivityCoverageHighTime(PolicyActivity policyActivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
     
       OCL.Helper helper = EOCL_ENV.createOCLHelper();

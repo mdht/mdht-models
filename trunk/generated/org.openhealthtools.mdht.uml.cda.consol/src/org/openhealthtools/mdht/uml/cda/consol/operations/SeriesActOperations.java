@@ -83,7 +83,7 @@ public class SeriesActOperations extends ClinicalStatementOperations {
    * @generated
    * @ordered
    */
-	
+
 	protected static Constraint VALIDATE_SERIES_ACT_ID_HAS_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -97,8 +97,9 @@ public class SeriesActOperations extends ClinicalStatementOperations {
    * <!-- end-model-doc -->
    * @generated
    */
-	
-	public static  boolean validateSeriesActIdHasRoot(SeriesAct seriesAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateSeriesActIdHasRoot(SeriesAct seriesAct, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
   	  
     if (VALIDATE_SERIES_ACT_ID_HAS_ROOT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -148,7 +149,7 @@ public class SeriesActOperations extends ClinicalStatementOperations {
    * @generated
    * @ordered
    */
-	
+
 	protected static Constraint VALIDATE_SERIES_ACT_ID_NO_EXTENSION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -162,8 +163,9 @@ public class SeriesActOperations extends ClinicalStatementOperations {
    * <!-- end-model-doc -->
    * @generated
    */
-	
-	public static  boolean validateSeriesActIdNoExtension(SeriesAct seriesAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateSeriesActIdNoExtension(SeriesAct seriesAct, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
   	  
     if (VALIDATE_SERIES_ACT_ID_NO_EXTENSION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -213,7 +215,7 @@ public class SeriesActOperations extends ClinicalStatementOperations {
    * @generated
    * @ordered
    */
-	
+
 	protected static Constraint VALIDATE_SERIES_ACT_CODE_QUALIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -227,8 +229,9 @@ public class SeriesActOperations extends ClinicalStatementOperations {
    * <!-- end-model-doc -->
    * @generated
    */
-	
-	public static  boolean validateSeriesActCodeQualifier(SeriesAct seriesAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateSeriesActCodeQualifier(SeriesAct seriesAct, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
   	  
     if (VALIDATE_SERIES_ACT_CODE_QUALIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -278,7 +281,7 @@ public class SeriesActOperations extends ClinicalStatementOperations {
    * @generated
    * @ordered
    */
-	
+
 	protected static Constraint VALIDATE_SERIES_ACT_CODE_QUALIFIER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -292,8 +295,9 @@ public class SeriesActOperations extends ClinicalStatementOperations {
    * <!-- end-model-doc -->
    * @generated
    */
-	
-	public static  boolean validateSeriesActCodeQualifierCode(SeriesAct seriesAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateSeriesActCodeQualifierCode(SeriesAct seriesAct, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
   	  
     if (VALIDATE_SERIES_ACT_CODE_QUALIFIER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -343,7 +347,7 @@ public class SeriesActOperations extends ClinicalStatementOperations {
    * @generated
    * @ordered
    */
-	
+
 	protected static Constraint VALIDATE_SERIES_ACT_CODE_QUALIFIER_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -357,8 +361,9 @@ public class SeriesActOperations extends ClinicalStatementOperations {
    * <!-- end-model-doc -->
    * @generated
    */
-	
-	public static  boolean validateSeriesActCodeQualifierValue(SeriesAct seriesAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateSeriesActCodeQualifierValue(SeriesAct seriesAct, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
   	  
     if (VALIDATE_SERIES_ACT_CODE_QUALIFIER_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -408,7 +413,7 @@ public class SeriesActOperations extends ClinicalStatementOperations {
    * @generated
    * @ordered
    */
-	
+
 	protected static Constraint VALIDATE_SERIES_ACT_CODE_QUALIFIER_VALUE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -422,8 +427,9 @@ public class SeriesActOperations extends ClinicalStatementOperations {
    * <!-- end-model-doc -->
    * @generated
    */
-	
-	public static  boolean validateSeriesActCodeQualifierValueCode(SeriesAct seriesAct, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateSeriesActCodeQualifierValueCode(SeriesAct seriesAct, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
   	  
     if (VALIDATE_SERIES_ACT_CODE_QUALIFIER_VALUE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();

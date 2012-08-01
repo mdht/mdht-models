@@ -218,7 +218,7 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
    * @generated
    * @ordered
    */
-	
+
 	protected static Constraint VALIDATE_PROBLEM_OBSERVATION_VALUE_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -232,8 +232,9 @@ public class ProblemObservationOperations extends ClinicalStatementOperations {
    * <!-- end-model-doc -->
    * @generated
    */
-	
-	public static  boolean validateProblemObservationValueNullFlavor(ProblemObservation problemObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateProblemObservationValueNullFlavor(ProblemObservation problemObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
     if (VALIDATE_PROBLEM_OBSERVATION_VALUE_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();

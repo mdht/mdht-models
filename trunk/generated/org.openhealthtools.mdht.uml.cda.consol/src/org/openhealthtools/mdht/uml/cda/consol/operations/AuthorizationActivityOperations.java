@@ -406,7 +406,7 @@ public class AuthorizationActivityOperations extends ClinicalStatementOperations
    * @generated
    * @ordered
    */
-	
+
 	protected static Query<?, ?, ?> VALIDATE_AUTHORIZATION_ACTIVITY_ENTRY_RELATIONSHIP_HAS_CLINICAL_STATEMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
@@ -421,7 +421,8 @@ public class AuthorizationActivityOperations extends ClinicalStatementOperations
    * @generated
    */
 	@SuppressWarnings("unchecked")
-	public static  boolean validateAuthorizationActivityEntryRelationshipHasClinicalStatement(AuthorizationActivity authorizationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateAuthorizationActivityEntryRelationshipHasClinicalStatement(
+			AuthorizationActivity authorizationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
     
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -483,7 +484,7 @@ public class AuthorizationActivityOperations extends ClinicalStatementOperations
    * @generated
    * @ordered
    */
-	
+
 	protected static Query<?, ?, ?> VALIDATE_AUTHORIZATION_ACTIVITY_ENTRY_RELATIONSHIP_HAS_AUHTORIXED_PERFORMERS__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 
 	/**
@@ -506,7 +507,8 @@ public class AuthorizationActivityOperations extends ClinicalStatementOperations
    * @generated
    */
 	@SuppressWarnings("unchecked")
-	public static  boolean validateAuthorizationActivityEntryRelationshipHasAuhtorixedPerformers(AuthorizationActivity authorizationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateAuthorizationActivityEntryRelationshipHasAuhtorixedPerformers(
+			AuthorizationActivity authorizationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
     
       OCL.Helper helper = EOCL_ENV.createOCLHelper();

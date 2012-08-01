@@ -219,7 +219,6 @@
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-allergies.uml#_lqJOQh0aEeGGdsHVD60BZA"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-medications.uml#_FsPZUh-uEeGKirKJsFylGA"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-medications.uml#_f6p3QiAMEeGKirKJsFylGA"/>
-    <packagedElement xmi:type="uml:Class" href=".controlled/consol-medications.uml#__WUM4CAMEeGKirKJsFylGA"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-results.uml#_GXXWwBrIEeGZ46SdiDZtPQ"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-results.uml#_wGY9IBrJEeGZ46SdiDZtPQ"/>
     <packagedElement xmi:type="uml:Association" href=".controlled/consol-immunizations.uml#_qfAzoiQ6EeG4DdjGPr5_Vg"/>

@@ -44,7 +44,8 @@ public interface DiagnosticImagingReport extends GeneralHeaderConstraints {
    * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='not self.code.oclIsUndefined() and self.code.code = \'18748-4\''"
    * @generated
    */
-	boolean validateDiagnosticImagingReportUseDiagnosticImagingCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateDiagnosticImagingReportUseDiagnosticImagingCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
    * <!-- begin-user-doc -->

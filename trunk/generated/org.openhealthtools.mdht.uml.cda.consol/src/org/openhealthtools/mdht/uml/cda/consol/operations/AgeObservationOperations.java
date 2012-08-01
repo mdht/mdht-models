@@ -72,7 +72,7 @@ public class AgeObservationOperations extends ClinicalStatementOperations {
    * @generated
    * @ordered
    */
-	
+
 	protected static Constraint VALIDATE_AGE_OBSERVATION_VALUE_UNITS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -86,8 +86,9 @@ public class AgeObservationOperations extends ClinicalStatementOperations {
    * <!-- end-model-doc -->
    * @generated
    */
-	
-	public static  boolean validateAgeObservationValueUnits(AgeObservation ageObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateAgeObservationValueUnits(AgeObservation ageObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
   	  
     if (VALIDATE_AGE_OBSERVATION_VALUE_UNITS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();

@@ -126,7 +126,8 @@ public class MedicationActivityImpl extends SubstanceAdministrationImpl implemen
 	 * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateMedicationActivityEffectiveTimeOperator(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMedicationActivityEffectiveTimeOperator(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
     return MedicationActivityOperations.validateMedicationActivityEffectiveTimeOperator(this, diagnostics, context);
   }
 

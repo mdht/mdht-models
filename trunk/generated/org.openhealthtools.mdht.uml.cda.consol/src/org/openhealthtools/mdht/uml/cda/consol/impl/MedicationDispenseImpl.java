@@ -155,7 +155,8 @@ public class MedicationDispenseImpl extends SupplyImpl implements MedicationDisp
 	 * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateMedicationDispenseProductContainsMedicationOrImmunization(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMedicationDispenseProductContainsMedicationOrImmunization(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
     return MedicationDispenseOperations.validateMedicationDispenseProductContainsMedicationOrImmunization(this, diagnostics, context);
   }
 

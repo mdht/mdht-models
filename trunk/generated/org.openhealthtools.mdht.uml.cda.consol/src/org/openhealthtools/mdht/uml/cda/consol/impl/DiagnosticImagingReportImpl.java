@@ -54,7 +54,8 @@ public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl im
 	 * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateDiagnosticImagingReportUseDiagnosticImagingCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateDiagnosticImagingReportUseDiagnosticImagingCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
     return DiagnosticImagingReportOperations.validateDiagnosticImagingReportUseDiagnosticImagingCode(this, diagnostics, context);
   }
 
@@ -63,7 +64,8 @@ public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl im
 	 * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateDiagnosticImagingReportAllSectionsHaveTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateDiagnosticImagingReportAllSectionsHaveTitle(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
     return DiagnosticImagingReportOperations.validateDiagnosticImagingReportAllSectionsHaveTitle(this, diagnostics, context);
   }
 
@@ -72,7 +74,8 @@ public class DiagnosticImagingReportImpl extends GeneralHeaderConstraintsImpl im
 	 * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateDiagnosticImagingReportSectionsHaveText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateDiagnosticImagingReportSectionsHaveText(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
     return DiagnosticImagingReportOperations.validateDiagnosticImagingReportSectionsHaveText(this, diagnostics, context);
   }
 

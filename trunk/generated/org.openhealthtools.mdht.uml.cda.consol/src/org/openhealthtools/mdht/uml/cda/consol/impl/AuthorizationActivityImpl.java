@@ -100,7 +100,8 @@ public class AuthorizationActivityImpl extends ActImpl implements AuthorizationA
 	 * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateAuthorizationActivityEntryRelationshipHasClinicalStatement(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateAuthorizationActivityEntryRelationshipHasClinicalStatement(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
     return AuthorizationActivityOperations.validateAuthorizationActivityEntryRelationshipHasClinicalStatement(this, diagnostics, context);
   }
 
@@ -109,7 +110,8 @@ public class AuthorizationActivityImpl extends ActImpl implements AuthorizationA
 	 * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateAuthorizationActivityEntryRelationshipHasAuhtorixedPerformers(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateAuthorizationActivityEntryRelationshipHasAuhtorixedPerformers(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
     return AuthorizationActivityOperations.validateAuthorizationActivityEntryRelationshipHasAuhtorixedPerformers(this, diagnostics, context);
   }
 

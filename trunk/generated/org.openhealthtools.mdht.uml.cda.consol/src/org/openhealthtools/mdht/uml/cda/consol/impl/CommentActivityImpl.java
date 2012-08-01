@@ -108,7 +108,8 @@ public class CommentActivityImpl extends ActImpl implements CommentActivity {
 	 * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateCommentActivityAuthorAssignedAuthorHasPersonOrOrganization(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateCommentActivityAuthorAssignedAuthorHasPersonOrOrganization(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
     return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorHasPersonOrOrganization(this, diagnostics, context);
   }
 
@@ -117,7 +118,8 @@ public class CommentActivityImpl extends ActImpl implements CommentActivity {
 	 * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validateCommentActivityAuthorAssignedAuthorAssignPersonName(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateCommentActivityAuthorAssignedAuthorAssignPersonName(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
     return CommentActivityOperations.validateCommentActivityAuthorAssignedAuthorAssignPersonName(this, diagnostics, context);
   }
 

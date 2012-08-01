@@ -54,7 +54,8 @@ public class PurposeofReferenceObservationImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
    * @generated
    */
-	public boolean validatePurposeofReferenceObservationCodeCodeSystem(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePurposeofReferenceObservationCodeCodeSystem(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
     return PurposeofReferenceObservationOperations.validatePurposeofReferenceObservationCodeCodeSystem(this, diagnostics, context);
   }
 

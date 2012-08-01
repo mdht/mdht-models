@@ -30,7 +30,6 @@ import org.openhealthtools.mdht.uml.cda.Precondition;
 import org.openhealthtools.mdht.uml.cda.Procedure;
 import org.openhealthtools.mdht.uml.cda.Section;
 import org.openhealthtools.mdht.uml.cda.Specimen;
-import org.openhealthtools.mdht.uml.cda.Subject;
 import org.openhealthtools.mdht.uml.cda.SubstanceAdministration;
 import org.openhealthtools.mdht.uml.cda.Supply;
 import org.openhealthtools.mdht.uml.cda.consol.*;
@@ -631,11 +630,6 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
         return createProcedureEncounterAdapter();
       }
       @Override
-      public Adapter caseMedicationInformationManufacturedMaterial(MedicationInformationManufacturedMaterial object)
-      {
-        return createMedicationInformationManufacturedMaterialAdapter();
-      }
-      @Override
       public Adapter caseHospitalDischargeMedicationsSection(HospitalDischargeMedicationsSection object)
       {
         return createHospitalDischargeMedicationsSectionAdapter();
@@ -976,6 +970,11 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
         return createPerformer2Adapter();
       }
       @Override
+      public Adapter caseAssignedEntity(AssignedEntity object)
+      {
+        return createAssignedEntityAdapter();
+      }
+      @Override
       public Adapter caseEntity(Entity object)
       {
         return createEntityAdapter();
@@ -984,11 +983,6 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
       public Adapter caseMaterial(Material object)
       {
         return createMaterialAdapter();
-      }
-      @Override
-      public Adapter caseAssignedEntity(AssignedEntity object)
-      {
-        return createAssignedEntityAdapter();
       }
       @Override
       public Adapter casePerformer1(Performer1 object)
@@ -2053,20 +2047,6 @@ public class ConsolAdapterFactory extends AdapterFactoryImpl {
    * @generated
    */
 	public Adapter createProcedureEncounterAdapter() {
-    return null;
-  }
-
-	/**
-   * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.MedicationInformationManufacturedMaterial <em>Medication Information Manufactured Material</em>}'.
-   * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-   * @return the new adapter.
-   * @see org.openhealthtools.mdht.uml.cda.consol.MedicationInformationManufacturedMaterial
-   * @generated
-   */
-	public Adapter createMedicationInformationManufacturedMaterialAdapter() {
     return null;
   }
 

@@ -82,7 +82,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
    * @generated
    * @ordered
    */
-	
+
 	protected static Constraint VALIDATE_DIAGNOSTIC_IMAGING_REPORT_USE_DIAGNOSTIC_IMAGING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -96,8 +96,9 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
    * <!-- end-model-doc -->
    * @generated
    */
-	
-	public static  boolean validateDiagnosticImagingReportUseDiagnosticImagingCode(DiagnosticImagingReport diagnosticImagingReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateDiagnosticImagingReportUseDiagnosticImagingCode(
+			DiagnosticImagingReport diagnosticImagingReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
     if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT_USE_DIAGNOSTIC_IMAGING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -147,7 +148,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
    * @generated
    * @ordered
    */
-	
+
 	protected static Constraint VALIDATE_DIAGNOSTIC_IMAGING_REPORT_ALL_SECTIONS_HAVE_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -161,8 +162,9 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
    * <!-- end-model-doc -->
    * @generated
    */
-	
-	public static  boolean validateDiagnosticImagingReportAllSectionsHaveTitle(DiagnosticImagingReport diagnosticImagingReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateDiagnosticImagingReportAllSectionsHaveTitle(
+			DiagnosticImagingReport diagnosticImagingReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
     if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT_ALL_SECTIONS_HAVE_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();
@@ -212,7 +214,7 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
    * @generated
    * @ordered
    */
-	
+
 	protected static Constraint VALIDATE_DIAGNOSTIC_IMAGING_REPORT_SECTIONS_HAVE_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
@@ -226,8 +228,9 @@ public class DiagnosticImagingReportOperations extends GeneralHeaderConstraintsO
    * <!-- end-model-doc -->
    * @generated
    */
-	
-	public static  boolean validateDiagnosticImagingReportSectionsHaveText(DiagnosticImagingReport diagnosticImagingReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
+
+	public static boolean validateDiagnosticImagingReportSectionsHaveText(
+			DiagnosticImagingReport diagnosticImagingReport, DiagnosticChain diagnostics, Map<Object, Object> context) {
   	  
     if (VALIDATE_DIAGNOSTIC_IMAGING_REPORT_SECTIONS_HAVE_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
       OCL.Helper helper = EOCL_ENV.createOCLHelper();

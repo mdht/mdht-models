@@ -171,7 +171,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
       case ConsolPackage.PROCEDURE_SPECIMEN: return createProcedureSpecimen();
       case ConsolPackage.PROCEDURE_PERFORMER: return createProcedurePerformer();
       case ConsolPackage.PROCEDURE_ENCOUNTER: return createProcedureEncounter();
-      case ConsolPackage.MEDICATION_INFORMATION_MANUFACTURED_MATERIAL: return createMedicationInformationManufacturedMaterial();
       case ConsolPackage.HOSPITAL_DISCHARGE_MEDICATIONS_SECTION: return createHospitalDischargeMedicationsSection();
       case ConsolPackage.ENCOUNTER_PERFORMER: return createEncounterPerformer();
       case ConsolPackage.ENCOUNTER_PERFORMER_ASSIGNED_ENTITY: return createEncounterPerformerAssignedEntity();
@@ -1723,16 +1722,6 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	public ProcedureEncounter createProcedureEncounter() {
     ProcedureEncounterImpl procedureEncounter = new ProcedureEncounterImpl();
     return procedureEncounter;
-  }
-
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	public MedicationInformationManufacturedMaterial createMedicationInformationManufacturedMaterial() {
-    MedicationInformationManufacturedMaterialImpl medicationInformationManufacturedMaterial = new MedicationInformationManufacturedMaterialImpl();
-    return medicationInformationManufacturedMaterial;
   }
 
 	/**
