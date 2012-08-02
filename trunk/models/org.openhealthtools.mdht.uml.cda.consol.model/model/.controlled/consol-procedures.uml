@@ -146,7 +146,7 @@ This clinical statement represents procedures that result in new information abo
         <language>Analysis</language>
         <language>OCL</language>
         <body>entryRelationship with target class Instructions SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot;</body>
-        <body>self.entryRelationship->select(er : cda::EntryRelationship | er.act.oclIsKindOf(consol::Instructions))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
+        <body>self.entryRelationship->select(er : cda::EntryRelationship | er.act.oclIsTypeOf(consol::Instructions))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_Aj7JkRg4EeGs5a462vYX5Q">
@@ -295,7 +295,7 @@ This clinical statement represents any procedure that cannot be classified as an
         <language>Analysis</language>
         <language>OCL</language>
         <body>entryRelationship with target class Instructions SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot;</body>
-        <body>self.entryRelationship->select(er : cda::EntryRelationship | er.act.oclIsKindOf(consol::Instructions))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
+        <body>self.entryRelationship->select(er : cda::EntryRelationship | er.act.oclIsTypeOf(consol::Instructions))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_awdH4Rg4EeGs5a462vYX5Q">
@@ -443,7 +443,7 @@ This clinical statement represents procedures whose immediate and primary outcom
         <language>Analysis</language>
         <language>OCL</language>
         <body>entryRelationship with target entry Instructions SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot;</body>
-        <body>self.entryRelationship->select(er : cda::EntryRelationship | er.act.oclIsKindOf(consol::Instructions))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
+        <body>self.entryRelationship->select(er : cda::EntryRelationship | er.act.oclIsTypeOf(consol::Instructions))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_2OZN6RSVEeGGzu7fmW9pXw">

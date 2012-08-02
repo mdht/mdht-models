@@ -985,6 +985,6 @@ In both cases, inFulfillmentOf/order/id is mapped to the DICOM Accession Number 
   <CDA:ConstraintValidation xmi:id="_-7P9MMUuEeGigaKyc-jgFA" base_Constraint="_Lp03oEb2EeGp67IkyTw1fg"/>
   <CDA:ConstraintValidation xmi:id="_GpCIQMUvEeGigaKyc-jgFA" base_Constraint="_iiXSYEVFEeGAh_iQGJvI5w"/>
   <CDA:CodeSystemConstraint xmi:id="_Qo4XcMbuEeGp28IjMvW3Ag" base_Property="_g5YnsFwVEeG0y_7i0ygc4g">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_0MGUYNAaEeGzoIRAHHQK_A"/>
+    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_vhyX0NdhEeGlV9-AkwqSzg"/>
   </CDA:CodeSystemConstraint>
 </xmi:XMI>

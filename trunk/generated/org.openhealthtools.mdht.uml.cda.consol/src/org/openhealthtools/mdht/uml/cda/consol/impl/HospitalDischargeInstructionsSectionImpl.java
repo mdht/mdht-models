@@ -32,71 +32,75 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 public class HospitalDischargeInstructionsSectionImpl extends SectionImpl implements
 		HospitalDischargeInstructionsSection {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected HospitalDischargeInstructionsSectionImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return ConsolPackage.Literals.HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION;
-  }
+		return ConsolPackage.Literals.HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateHospitalDischargeInstructionsSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return HospitalDischargeInstructionsSectionOperations.validateHospitalDischargeInstructionsSectionTemplateId(this, diagnostics, context);
-  }
+		return HospitalDischargeInstructionsSectionOperations.validateHospitalDischargeInstructionsSectionTemplateId(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateHospitalDischargeInstructionsSectionCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return HospitalDischargeInstructionsSectionOperations.validateHospitalDischargeInstructionsSectionCode(this, diagnostics, context);
-  }
+		return HospitalDischargeInstructionsSectionOperations.validateHospitalDischargeInstructionsSectionCode(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateHospitalDischargeInstructionsSectionText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return HospitalDischargeInstructionsSectionOperations.validateHospitalDischargeInstructionsSectionText(this, diagnostics, context);
-  }
+		return HospitalDischargeInstructionsSectionOperations.validateHospitalDischargeInstructionsSectionText(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateHospitalDischargeInstructionsSectionTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return HospitalDischargeInstructionsSectionOperations.validateHospitalDischargeInstructionsSectionTitle(this, diagnostics, context);
-  }
+		return HospitalDischargeInstructionsSectionOperations.validateHospitalDischargeInstructionsSectionTitle(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public HospitalDischargeInstructionsSection init() {
-    	CDAUtil.init(this);
-    	return this;
-  }
+		CDAUtil.init(this);
+		return this;
+	}
 } // HospitalDischargeInstructionsSectionImpl

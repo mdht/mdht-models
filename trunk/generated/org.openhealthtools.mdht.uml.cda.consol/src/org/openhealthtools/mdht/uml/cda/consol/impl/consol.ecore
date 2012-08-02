@@ -3702,15 +3702,15 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="HealthStatusObservation" eSuperTypes="urn:hl7-org:v3#//Observation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="HealthStatusObservationTemplateId HealthStatusObservationHasTextReference HealthStatusObservationHasTextReferenceValue HealthStatusObservationClassCode HealthStatusObservationMoodCode HealthStatusObservationCode HealthStatusObservationStatusCode HealthStatusObservationValue"/>
+      <details key="constraints.validation.error" value="HealthStatusObservationTemplateId HealthStatusObservationHasTextReferenceValue HealthStatusObservationClassCode HealthStatusObservationMoodCode HealthStatusObservationCode HealthStatusObservationStatusCode HealthStatusObservationValue"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.22.4.5"/>
+      <details key="constraints.validation.warning" value="HealthStatusObservationHasTextReference HealthStatusObservationText"/>
       <details key="classCode" value="OBS"/>
       <details key="moodCode" value="EVN"/>
       <details key="code.code" value="11323-3"/>
       <details key="code.codeSystem" value="2.16.840.1.113883.6.1"/>
       <details key="code.codeSystemName" value="LOINC"/>
       <details key="code.displayName" value="Health status"/>
-      <details key="constraints.validation.warning" value="HealthStatusObservationText"/>
       <details key="statusCode.code" value="completed"/>
       <details key="value.codeSystem" value="2.16.840.1.113883.6.96"/>
       <details key="value.codeSystemName" value="SNOMEDCT"/>
@@ -12441,12 +12441,14 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="SOPInstanceObservation" eSuperTypes="urn:hl7-org:v3#//Observation">
     <eAnnotations source="http://www.openhealthtools.org/mdht/uml/cda/annotation">
-      <details key="constraints.validation.error" value="SOPInstanceObservationTemplateId SOPInstanceObservationEffectiveTimeHasValue SOPInstanceObservationEffectiveTimeNoLow SOPInstanceObservationEffectiveTimeNoHigh SOPInstanceObservationTextMediaType SOPInstanceObservationTextReference SOPInstanceObservationTextReferenceValue SOPInstanceObservationClassCode SOPInstanceObservationId SOPInstanceObservationMoodCode SOPInstanceObservationCode"/>
+      <details key="constraints.validation.error" value="SOPInstanceObservationTemplateId SOPInstanceObservationEffectiveTimeHasValue SOPInstanceObservationEffectiveTimeNoLow SOPInstanceObservationEffectiveTimeNoHigh SOPInstanceObservationTextMediaType SOPInstanceObservationTextReference SOPInstanceObservationTextReferenceValue SOPInstanceObservationClassCode SOPInstanceObservationId SOPInstanceObservationMoodCode SOPInstanceObservationCode SOPInstanceObservationCodeP"/>
       <details key="templateId.root" value="2.16.840.1.113883.10.20.6.2.8"/>
       <details key="classCode" value="DGIMG"/>
       <details key="constraints.validation.warning" value="SOPInstanceObservationEffectiveTime SOPInstanceObservationText"/>
       <details key="moodCode" value="EVN"/>
-      <details key="code.codeSystemName" value=""/>
+      <details key="code.codeSystem" value="1.2.840.10008.2.6.1"/>
+      <details key="code.codeSystemName" value="DCMUID"/>
+      <details key="constraints.validation.dependOn.SOPInstanceObservationCode" value="SOPInstanceObservationCodeP"/>
       <details key="constraints.validation.info" value="SOPInstanceObservationSOPInstanceObservation SOPInstanceObservationPurposeofReferenceObservation SOPInstanceObservationReferencedFramesObservation"/>
     </eAnnotations>
     <eOperations name="SOPInstanceObservationEffectiveTimeHasValue" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
@@ -12549,6 +12551,15 @@
       </eParameters>
     </eOperations>
     <eOperations name="SOPInstanceObservationText" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
+      <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
+      <eParameters name="context">
+        <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+          <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EJavaObject"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations name="SOPInstanceObservationCodeP" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean">
       <eParameters name="diagnostics" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDiagnosticChain"/>
       <eParameters name="context">
         <eGenericType eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EMap">

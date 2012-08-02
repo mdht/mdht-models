@@ -32,130 +32,130 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class StudyActImpl extends ActImpl implements StudyAct {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected StudyActImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return ConsolPackage.Literals.STUDY_ACT;
-  }
+		return ConsolPackage.Literals.STUDY_ACT;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateStudyActIdsHaveRoot(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return StudyActOperations.validateStudyActIdsHaveRoot(this, diagnostics, context);
-  }
+		return StudyActOperations.validateStudyActIdsHaveRoot(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateStudyActNoIdExtension(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return StudyActOperations.validateStudyActNoIdExtension(this, diagnostics, context);
-  }
+		return StudyActOperations.validateStudyActNoIdExtension(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateStudyActTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return StudyActOperations.validateStudyActTemplateId(this, diagnostics, context);
-  }
+		return StudyActOperations.validateStudyActTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateStudyActClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return StudyActOperations.validateStudyActClassCode(this, diagnostics, context);
-  }
+		return StudyActOperations.validateStudyActClassCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateStudyActMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return StudyActOperations.validateStudyActMoodCode(this, diagnostics, context);
-  }
+		return StudyActOperations.validateStudyActMoodCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateStudyActId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return StudyActOperations.validateStudyActId(this, diagnostics, context);
-  }
+		return StudyActOperations.validateStudyActId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateStudyActCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return StudyActOperations.validateStudyActCode(this, diagnostics, context);
-  }
+		return StudyActOperations.validateStudyActCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateStudyActEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return StudyActOperations.validateStudyActEffectiveTime(this, diagnostics, context);
-  }
+		return StudyActOperations.validateStudyActEffectiveTime(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateStudyActText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return StudyActOperations.validateStudyActText(this, diagnostics, context);
-  }
+		return StudyActOperations.validateStudyActText(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateStudyActSeriesAct(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return StudyActOperations.validateStudyActSeriesAct(this, diagnostics, context);
-  }
+		return StudyActOperations.validateStudyActSeriesAct(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public SeriesAct getSeriesAct() {
-    return StudyActOperations.getSeriesAct(this);
-  }
+		return StudyActOperations.getSeriesAct(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public StudyAct init() {
-    	CDAUtil.init(this);
-    	return this;
-  }
+		CDAUtil.init(this);
+		return this;
+	}
 } // StudyActImpl

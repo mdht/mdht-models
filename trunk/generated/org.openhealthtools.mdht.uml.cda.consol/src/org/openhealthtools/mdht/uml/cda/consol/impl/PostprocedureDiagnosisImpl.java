@@ -33,86 +33,87 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class PostprocedureDiagnosisImpl extends ActImpl implements PostprocedureDiagnosis {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected PostprocedureDiagnosisImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return ConsolPackage.Literals.POSTPROCEDURE_DIAGNOSIS;
-  }
+		return ConsolPackage.Literals.POSTPROCEDURE_DIAGNOSIS;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePostprocedureDiagnosisTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PostprocedureDiagnosisOperations.validatePostprocedureDiagnosisTemplateId(this, diagnostics, context);
-  }
+		return PostprocedureDiagnosisOperations.validatePostprocedureDiagnosisTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePostprocedureDiagnosisClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PostprocedureDiagnosisOperations.validatePostprocedureDiagnosisClassCode(this, diagnostics, context);
-  }
+		return PostprocedureDiagnosisOperations.validatePostprocedureDiagnosisClassCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePostprocedureDiagnosisCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PostprocedureDiagnosisOperations.validatePostprocedureDiagnosisCode(this, diagnostics, context);
-  }
+		return PostprocedureDiagnosisOperations.validatePostprocedureDiagnosisCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePostprocedureDiagnosisMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PostprocedureDiagnosisOperations.validatePostprocedureDiagnosisMoodCode(this, diagnostics, context);
-  }
+		return PostprocedureDiagnosisOperations.validatePostprocedureDiagnosisMoodCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePostprocedureDiagnosisProblemObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return PostprocedureDiagnosisOperations.validatePostprocedureDiagnosisProblemObservation(this, diagnostics, context);
-  }
+		return PostprocedureDiagnosisOperations.validatePostprocedureDiagnosisProblemObservation(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public EList<ProblemObservation> getProblemObservations() {
-    return PostprocedureDiagnosisOperations.getProblemObservations(this);
-  }
+		return PostprocedureDiagnosisOperations.getProblemObservations(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public PostprocedureDiagnosis init() {
-    	CDAUtil.init(this);
-    	return this;
-  }
+		CDAUtil.init(this);
+		return this;
+	}
 } // PostprocedureDiagnosisImpl

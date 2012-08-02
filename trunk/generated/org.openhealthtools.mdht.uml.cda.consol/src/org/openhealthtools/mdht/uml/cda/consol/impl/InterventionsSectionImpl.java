@@ -31,67 +31,67 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class InterventionsSectionImpl extends SectionImpl implements InterventionsSection {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected InterventionsSectionImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return ConsolPackage.Literals.INTERVENTIONS_SECTION;
-  }
+		return ConsolPackage.Literals.INTERVENTIONS_SECTION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateInterventionsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return InterventionsSectionOperations.validateInterventionsSectionTemplateId(this, diagnostics, context);
-  }
+		return InterventionsSectionOperations.validateInterventionsSectionTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateInterventionsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return InterventionsSectionOperations.validateInterventionsSectionCode(this, diagnostics, context);
-  }
+		return InterventionsSectionOperations.validateInterventionsSectionCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateInterventionsSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return InterventionsSectionOperations.validateInterventionsSectionText(this, diagnostics, context);
-  }
+		return InterventionsSectionOperations.validateInterventionsSectionText(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateInterventionsSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return InterventionsSectionOperations.validateInterventionsSectionTitle(this, diagnostics, context);
-  }
+		return InterventionsSectionOperations.validateInterventionsSectionTitle(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public InterventionsSection init() {
-    	CDAUtil.init(this);
-    	return this;
-  }
+		CDAUtil.init(this);
+		return this;
+	}
 } // InterventionsSectionImpl

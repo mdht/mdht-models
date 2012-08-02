@@ -31,68 +31,72 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class PostoperativeDiagnosisSectionImpl extends SectionImpl implements PostoperativeDiagnosisSection {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected PostoperativeDiagnosisSectionImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return ConsolPackage.Literals.POSTOPERATIVE_DIAGNOSIS_SECTION;
-  }
+		return ConsolPackage.Literals.POSTOPERATIVE_DIAGNOSIS_SECTION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePostoperativeDiagnosisSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return PostoperativeDiagnosisSectionOperations.validatePostoperativeDiagnosisSectionTemplateId(this, diagnostics, context);
-  }
+		return PostoperativeDiagnosisSectionOperations.validatePostoperativeDiagnosisSectionTemplateId(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePostoperativeDiagnosisSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PostoperativeDiagnosisSectionOperations.validatePostoperativeDiagnosisSectionCode(this, diagnostics, context);
-  }
+		return PostoperativeDiagnosisSectionOperations.validatePostoperativeDiagnosisSectionCode(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePostoperativeDiagnosisSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PostoperativeDiagnosisSectionOperations.validatePostoperativeDiagnosisSectionText(this, diagnostics, context);
-  }
+		return PostoperativeDiagnosisSectionOperations.validatePostoperativeDiagnosisSectionText(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePostoperativeDiagnosisSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PostoperativeDiagnosisSectionOperations.validatePostoperativeDiagnosisSectionTitle(this, diagnostics, context);
-  }
+		return PostoperativeDiagnosisSectionOperations.validatePostoperativeDiagnosisSectionTitle(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public PostoperativeDiagnosisSection init() {
-    	CDAUtil.init(this);
-    	return this;
-  }
+		CDAUtil.init(this);
+		return this;
+	}
 } // PostoperativeDiagnosisSectionImpl

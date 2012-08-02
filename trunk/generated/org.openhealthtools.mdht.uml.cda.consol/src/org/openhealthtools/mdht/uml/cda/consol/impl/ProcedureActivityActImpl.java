@@ -37,281 +37,285 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class ProcedureActivityActImpl extends ActImpl implements ProcedureActivityAct {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected ProcedureActivityActImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return ConsolPackage.Literals.PROCEDURE_ACTIVITY_ACT;
-  }
+		return ConsolPackage.Literals.PROCEDURE_ACTIVITY_ACT;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateProcedureActivityActCodeCodeSystems(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ProcedureActivityActOperations.validateProcedureActivityActCodeCodeSystems(this, diagnostics, context);
-  }
+		return ProcedureActivityActOperations.validateProcedureActivityActCodeCodeSystems(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateProcedureActivityActCodeOriginalText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ProcedureActivityActOperations.validateProcedureActivityActCodeOriginalText(this, diagnostics, context);
-  }
+		return ProcedureActivityActOperations.validateProcedureActivityActCodeOriginalText(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateProcedureActivityActOriginalTextReferenceValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return ProcedureActivityActOperations.validateProcedureActivityActOriginalTextReferenceValue(this, diagnostics, context);
-  }
+		return ProcedureActivityActOperations.validateProcedureActivityActOriginalTextReferenceValue(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateProcedureActivityActReferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ProcedureActivityActOperations.validateProcedureActivityActReferenceValue(this, diagnostics, context);
-  }
+		return ProcedureActivityActOperations.validateProcedureActivityActReferenceValue(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateProcedureActivityActEncounterInversion(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return ProcedureActivityActOperations.validateProcedureActivityActEncounterInversion(this, diagnostics, context);
-  }
+		return ProcedureActivityActOperations.validateProcedureActivityActEncounterInversion(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateProcedureActivityActServiceDeliveryLocationTypeCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return ProcedureActivityActOperations.validateProcedureActivityActServiceDeliveryLocationTypeCode(this, diagnostics, context);
-  }
+		return ProcedureActivityActOperations.validateProcedureActivityActServiceDeliveryLocationTypeCode(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateProcedureActivityActInstructionsInversion(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return ProcedureActivityActOperations.validateProcedureActivityActInstructionsInversion(this, diagnostics, context);
-  }
+		return ProcedureActivityActOperations.validateProcedureActivityActInstructionsInversion(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateProcedureActivityActTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ProcedureActivityActOperations.validateProcedureActivityActTemplateId(this, diagnostics, context);
-  }
+		return ProcedureActivityActOperations.validateProcedureActivityActTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateProcedureActivityActClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ProcedureActivityActOperations.validateProcedureActivityActClassCode(this, diagnostics, context);
-  }
+		return ProcedureActivityActOperations.validateProcedureActivityActClassCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateProcedureActivityActMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ProcedureActivityActOperations.validateProcedureActivityActMoodCode(this, diagnostics, context);
-  }
+		return ProcedureActivityActOperations.validateProcedureActivityActMoodCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateProcedureActivityActId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ProcedureActivityActOperations.validateProcedureActivityActId(this, diagnostics, context);
-  }
+		return ProcedureActivityActOperations.validateProcedureActivityActId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateProcedureActivityActCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ProcedureActivityActOperations.validateProcedureActivityActCode(this, diagnostics, context);
-  }
+		return ProcedureActivityActOperations.validateProcedureActivityActCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateProcedureActivityActStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ProcedureActivityActOperations.validateProcedureActivityActStatusCode(this, diagnostics, context);
-  }
+		return ProcedureActivityActOperations.validateProcedureActivityActStatusCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateProcedureActivityActEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ProcedureActivityActOperations.validateProcedureActivityActEffectiveTime(this, diagnostics, context);
-  }
+		return ProcedureActivityActOperations.validateProcedureActivityActEffectiveTime(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateProcedureActivityActPriorityCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ProcedureActivityActOperations.validateProcedureActivityActPriorityCode(this, diagnostics, context);
-  }
+		return ProcedureActivityActOperations.validateProcedureActivityActPriorityCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateProcedureActivityActPriorityCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ProcedureActivityActOperations.validateProcedureActivityActPriorityCodeP(this, diagnostics, context);
-  }
+		return ProcedureActivityActOperations.validateProcedureActivityActPriorityCodeP(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateProcedureActivityActPerformer(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ProcedureActivityActOperations.validateProcedureActivityActPerformer(this, diagnostics, context);
-  }
+		return ProcedureActivityActOperations.validateProcedureActivityActPerformer(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateProcedureActivityActServiceDeliveryLocation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return ProcedureActivityActOperations.validateProcedureActivityActServiceDeliveryLocation(this, diagnostics, context);
-  }
+		return ProcedureActivityActOperations.validateProcedureActivityActServiceDeliveryLocation(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateProcedureActivityActProcedureEncounter(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return ProcedureActivityActOperations.validateProcedureActivityActProcedureEncounter(this, diagnostics, context);
-  }
+		return ProcedureActivityActOperations.validateProcedureActivityActProcedureEncounter(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateProcedureActivityActInstructions(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ProcedureActivityActOperations.validateProcedureActivityActInstructions(this, diagnostics, context);
-  }
+		return ProcedureActivityActOperations.validateProcedureActivityActInstructions(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateProcedureActivityActIndication(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ProcedureActivityActOperations.validateProcedureActivityActIndication(this, diagnostics, context);
-  }
+		return ProcedureActivityActOperations.validateProcedureActivityActIndication(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateProcedureActivityActMedicationActivity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return ProcedureActivityActOperations.validateProcedureActivityActMedicationActivity(this, diagnostics, context);
-  }
+		return ProcedureActivityActOperations.validateProcedureActivityActMedicationActivity(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public EList<ServiceDeliveryLocation> getServiceDeliveryLocations() {
-    return ProcedureActivityActOperations.getServiceDeliveryLocations(this);
-  }
+		return ProcedureActivityActOperations.getServiceDeliveryLocations(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public EList<Encounter> getProcedureEncounters() {
-    return ProcedureActivityActOperations.getProcedureEncounters(this);
-  }
+		return ProcedureActivityActOperations.getProcedureEncounters(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public Instructions getInstructions() {
-    return ProcedureActivityActOperations.getInstructions(this);
-  }
+		return ProcedureActivityActOperations.getInstructions(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public EList<Indication> getIndications() {
-    return ProcedureActivityActOperations.getIndications(this);
-  }
+		return ProcedureActivityActOperations.getIndications(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public MedicationActivity getMedicationActivity() {
-    return ProcedureActivityActOperations.getMedicationActivity(this);
-  }
+		return ProcedureActivityActOperations.getMedicationActivity(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public ProcedureActivityAct init() {
-    	CDAUtil.init(this);
-    	return this;
-  }
+		CDAUtil.init(this);
+		return this;
+	}
 } // ProcedureActivityActImpl

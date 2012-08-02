@@ -32,40 +32,41 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 public class MedicationDispenseAssignedEntityImpl extends AssignedEntityImpl implements
 		MedicationDispenseAssignedEntity {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected MedicationDispenseAssignedEntityImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return ConsolPackage.Literals.MEDICATION_DISPENSE_ASSIGNED_ENTITY;
-  }
+		return ConsolPackage.Literals.MEDICATION_DISPENSE_ASSIGNED_ENTITY;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateMedicationDispenseAssignedEntityAddr(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return MedicationDispenseAssignedEntityOperations.validateMedicationDispenseAssignedEntityAddr(this, diagnostics, context);
-  }
+		return MedicationDispenseAssignedEntityOperations.validateMedicationDispenseAssignedEntityAddr(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public MedicationDispenseAssignedEntity init() {
-    	CDAUtil.init(this);
-    	return this;
-  }
+		CDAUtil.init(this);
+		return this;
+	}
 } // MedicationDispenseAssignedEntityImpl

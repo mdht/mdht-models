@@ -32,89 +32,89 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class ResultsSectionImpl extends ResultsSectionEntriesOptionalImpl implements ResultsSection {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected ResultsSectionImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return ConsolPackage.Literals.RESULTS_SECTION;
-  }
+		return ConsolPackage.Literals.RESULTS_SECTION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateResultsSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ResultsSectionOperations.validateResultsSectionTitle(this, diagnostics, context);
-  }
+		return ResultsSectionOperations.validateResultsSectionTitle(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateResultsSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ResultsSectionOperations.validateResultsSectionText(this, diagnostics, context);
-  }
+		return ResultsSectionOperations.validateResultsSectionText(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateResultsSectionResultOrganizer(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ResultsSectionOperations.validateResultsSectionResultOrganizer(this, diagnostics, context);
-  }
+		return ResultsSectionOperations.validateResultsSectionResultOrganizer(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public EList<ResultOrganizer> getConsolResultOrganizers() {
-    return ResultsSectionOperations.getConsolResultOrganizers(this);
-  }
+		return ResultsSectionOperations.getConsolResultOrganizers(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validateResultsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return ResultsSectionOperations.validateResultsSectionEntriesOptionalTemplateId(this, diagnostics, context);
-  }
+		return ResultsSectionOperations.validateResultsSectionEntriesOptionalTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validateResultsSectionEntriesOptionalCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ResultsSectionOperations.validateResultsSectionEntriesOptionalCode(this, diagnostics, context);
-  }
+		return ResultsSectionOperations.validateResultsSectionEntriesOptionalCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public ResultsSection init() {
-    	CDAUtil.init(this);
-    	return this;
-  }
+		CDAUtil.init(this);
+		return this;
+	}
 } // ResultsSectionImpl
