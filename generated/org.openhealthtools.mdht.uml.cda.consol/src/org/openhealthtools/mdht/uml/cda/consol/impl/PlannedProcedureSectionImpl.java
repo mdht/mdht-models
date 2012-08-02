@@ -33,86 +33,87 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class PlannedProcedureSectionImpl extends SectionImpl implements PlannedProcedureSection {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected PlannedProcedureSectionImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return ConsolPackage.Literals.PLANNED_PROCEDURE_SECTION;
-  }
+		return ConsolPackage.Literals.PLANNED_PROCEDURE_SECTION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePlannedProcedureSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PlannedProcedureSectionOperations.validatePlannedProcedureSectionTemplateId(this, diagnostics, context);
-  }
+		return PlannedProcedureSectionOperations.validatePlannedProcedureSectionTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePlannedProcedureSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PlannedProcedureSectionOperations.validatePlannedProcedureSectionCode(this, diagnostics, context);
-  }
+		return PlannedProcedureSectionOperations.validatePlannedProcedureSectionCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePlannedProcedureSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PlannedProcedureSectionOperations.validatePlannedProcedureSectionText(this, diagnostics, context);
-  }
+		return PlannedProcedureSectionOperations.validatePlannedProcedureSectionText(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePlannedProcedureSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PlannedProcedureSectionOperations.validatePlannedProcedureSectionTitle(this, diagnostics, context);
-  }
+		return PlannedProcedureSectionOperations.validatePlannedProcedureSectionTitle(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validatePlannedProcedureSectionPlanOfCareActivityProcedure(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return PlannedProcedureSectionOperations.validatePlannedProcedureSectionPlanOfCareActivityProcedure(this, diagnostics, context);
-  }
+		return PlannedProcedureSectionOperations.validatePlannedProcedureSectionPlanOfCareActivityProcedure(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public EList<PlanOfCareActivityProcedure> getPlanOfCareActivityProcedures() {
-    return PlannedProcedureSectionOperations.getPlanOfCareActivityProcedures(this);
-  }
+		return PlannedProcedureSectionOperations.getPlanOfCareActivityProcedures(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public PlannedProcedureSection init() {
-    	CDAUtil.init(this);
-    	return this;
-  }
+		CDAUtil.init(this);
+		return this;
+	}
 } // PlannedProcedureSectionImpl

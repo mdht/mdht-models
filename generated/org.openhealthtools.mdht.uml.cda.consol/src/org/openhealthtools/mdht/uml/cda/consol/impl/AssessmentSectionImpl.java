@@ -31,58 +31,58 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class AssessmentSectionImpl extends SectionImpl implements AssessmentSection {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected AssessmentSectionImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return ConsolPackage.Literals.ASSESSMENT_SECTION;
-  }
+		return ConsolPackage.Literals.ASSESSMENT_SECTION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateAssessmentSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return AssessmentSectionOperations.validateAssessmentSectionTemplateId(this, diagnostics, context);
-  }
+		return AssessmentSectionOperations.validateAssessmentSectionTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateAssessmentSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return AssessmentSectionOperations.validateAssessmentSectionCode(this, diagnostics, context);
-  }
+		return AssessmentSectionOperations.validateAssessmentSectionCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateAssessmentSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return AssessmentSectionOperations.validateAssessmentSectionText(this, diagnostics, context);
-  }
+		return AssessmentSectionOperations.validateAssessmentSectionText(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public AssessmentSection init() {
-    	CDAUtil.init(this);
-    	return this;
-  }
+		CDAUtil.init(this);
+		return this;
+	}
 } // AssessmentSectionImpl

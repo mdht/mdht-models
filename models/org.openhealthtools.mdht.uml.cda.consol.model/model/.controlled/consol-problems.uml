@@ -192,7 +192,7 @@ historical purposes.&#xD;
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
   </uml:Class>
-  <CDA:ConstraintValidation xmi:id="_2Ezz8BSVEeGGzu7fmW9pXw" base_Constraint="_2ExXshSVEeGGzu7fmW9pXw">
+  <CDA:ConstraintValidation xmi:id="_2Ezz8BSVEeGGzu7fmW9pXw" severity="WARNING" base_Constraint="_2ExXshSVEeGGzu7fmW9pXw">
     <ruleId>CONF:9271</ruleId>
   </CDA:ConstraintValidation>
   <CDA:PropertyValidation xmi:id="_2E0bAhSVEeGGzu7fmW9pXw" base_Property="_2E0bABSVEeGGzu7fmW9pXw">
@@ -356,7 +356,7 @@ historical purposes.&#xD;
     <ownedRule xmi:id="_jlZuoCf3EeGO5_JBy9h6BA" name="valueNullFlavor" constrainedElement="_5Ha7ABUyEeGbmN_W114JUw">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_r1sJ0Cf3EeGO5_JBy9h6BA">
         <language>Analysis</language>
-         <language>OCL</language>
+        <language>OCL</language>
         <body>value MAY contain zero or one [0..1] @nullFlavor</body>
         <body>self.value->forAll(val | not val.isNullFlavorUndefined())</body>
       </specification>
@@ -364,7 +364,7 @@ historical purposes.&#xD;
     <ownedRule xmi:id="_p2pDMCf3EeGO5_JBy9h6BA" name="valueNullFlavorUnknown" constrainedElement="_jlZuoCf3EeGO5_JBy9h6BA">
       <ownedComment xmi:id="_CwJ0cMbrEeGp28IjMvW3Ag">
         <body>UNIMPLEMENTABLE</body>
-     </ownedComment>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_tRojYCf3EeGO5_JBy9h6BA">
         <language>Analysis</language>
         <body>If the diagnosis is unkown or the SNOMED code is unknown, @nullFlavor SHOULD be ?UNK?.  If the code is something other than SNOMED, @nullFlavor SHOULD be ?OTH? and the other code SHOULD be placed in the translation element</body>

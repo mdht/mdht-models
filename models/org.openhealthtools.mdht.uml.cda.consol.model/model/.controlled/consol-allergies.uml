@@ -128,7 +128,7 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
         <language>Analysis</language>
         <language>OCL</language>
         <body>entryRelationship with target entry AllergyStatusObservation SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot; True</body>
-        <body>self.entryRelationship->select(er : cda::EntryRelationship | er.observation.oclIsKindOf(consol::AllergyStatusObservation))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
+        <body>self.entryRelationship->select(er : cda::EntryRelationship | er.observation.oclIsTypeOf(consol::AllergyStatusObservation))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_VBabUCFVEeG9m6LRl9ardQ" name="reactionInversionIndicator" constrainedElement="_2EaLUBSVEeGGzu7fmW9pXw">
@@ -136,7 +136,7 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
         <language>Analysis</language>
         <language>OCL</language>
         <body>entryRelationship with target entry Reaction Observation SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot; True</body>
-        <body>self.entryRelationship->select(er : cda::EntryRelationship | er.observation.oclIsKindOf(consol::ReactionObservation))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
+        <body>self.entryRelationship->select(er : cda::EntryRelationship | er.observation.oclIsTypeOf(consol::ReactionObservation))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_2EaLbxSVEeGGzu7fmW9pXw" name="severityInversionIndicator">
@@ -144,7 +144,7 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
         <language>Analysis</language>
         <language>OCL</language>
         <body>entryRelationship with target entry Severity Observation SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot; True</body>
-        <body>self.entryRelationship->select(er : cda::EntryRelationship | er.observation.oclIsKindOf(consol::SeverityObservation))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
+        <body>self.entryRelationship->select(er : cda::EntryRelationship | er.observation.oclIsTypeOf(consol::SeverityObservation))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_2F5ZERSVEeGGzu7fmW9pXw">
@@ -636,24 +636,24 @@ historical purposes.&#xD;
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_qNTDsCYKEeGWfpmyutaqOA">
         <language>Analysis</language>
         <language>OCL</language>
-        <body>SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot; TRUE</body>
-        <body>self.entryRelationship->select(er : cda::EntryRelationship | er.observation.oclIsKindOf(consol::SeverityObservation))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
+        <body>entryRelationship with target entry Severity Observation SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot; TRUE</body>
+        <body>self.entryRelationship->select(er : cda::EntryRelationship | er.observation.oclIsTypeOf(consol::SeverityObservation))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_IvIIQBrcEeGo461UQq-B1g" name="procedureActivityProcedureInversionInd" constrainedElement="_2E_aIRSVEeGGzu7fmW9pXw">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_XcWKoBrcEeGo461UQq-B1g">
         <language>Analysis</language>
         <language>OCL</language>
-        <body>SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot; True(CONF:7343).</body>
-        <body>self.entryRelationship->select(er : cda::EntryRelationship | er.procedure.oclIsKindOf(consol::ProcedureActivityProcedure))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
+        <body>entryRelationship with target entry ProcedureActivityProcedure SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot; True(CONF:7343).</body>
+        <body>self.entryRelationship->select(er : cda::EntryRelationship | er.procedure.oclIsTypeOf(consol::ProcedureActivityProcedure))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_P3TE0BrcEeGo461UQq-B1g" name="medicationActivityInversionInd" constrainedElement="_2E_aIRSVEeGGzu7fmW9pXw">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_U-Q-oBrcEeGo461UQq-B1g">
         <language>Analysis</language>
         <language>OCL</language>
-        <body>SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot; True.</body>
-        <body>self.entryRelationship->select(er : cda::EntryRelationship | er.substanceAdministration.oclIsKindOf(consol::MedicationActivity))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
+        <body>entryRelationship with target entry MedicationActivity SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot; True.</body>
+        <body>self.entryRelationship->select(er : cda::EntryRelationship | er.substanceAdministration.oclIsTypeOf(consol::MedicationActivity))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_2FwPIhSVEeGGzu7fmW9pXw">

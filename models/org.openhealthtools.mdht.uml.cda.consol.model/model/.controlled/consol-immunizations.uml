@@ -53,8 +53,8 @@
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_i2pMsCQ9EeG4DdjGPr5_Vg">
         <language>Analysis</language>
         <language>OCL</language>
-        <body>SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot; True</body>
-        <body>self.entryRelationship->select(er : cda::EntryRelationship | not er.act.oclIsUndefined() and er.act.oclIsKindOf(consol::Instructions))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
+        <body>entryRelationship with target entry Instructions SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot; True</body>
+        <body>self.entryRelationship->select(er : cda::EntryRelationship | er.act.oclIsTypeOf(consol::Instructions))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_bnbB0EX7EeG6e5lG0YsSyQ" name="drugVehicleTypeCode" constrainedElement="_aXWsMCQ9EeG4DdjGPr5_Vg">

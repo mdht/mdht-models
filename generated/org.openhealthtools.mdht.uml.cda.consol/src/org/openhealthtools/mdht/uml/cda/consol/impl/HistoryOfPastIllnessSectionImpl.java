@@ -33,87 +33,90 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class HistoryOfPastIllnessSectionImpl extends SectionImpl implements HistoryOfPastIllnessSection {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected HistoryOfPastIllnessSectionImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return ConsolPackage.Literals.HISTORY_OF_PAST_ILLNESS_SECTION;
-  }
+		return ConsolPackage.Literals.HISTORY_OF_PAST_ILLNESS_SECTION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateHistoryOfPastIllnessSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return HistoryOfPastIllnessSectionOperations.validateHistoryOfPastIllnessSectionTemplateId(this, diagnostics, context);
-  }
+		return HistoryOfPastIllnessSectionOperations.validateHistoryOfPastIllnessSectionTemplateId(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateHistoryOfPastIllnessSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return HistoryOfPastIllnessSectionOperations.validateHistoryOfPastIllnessSectionCode(this, diagnostics, context);
-  }
+		return HistoryOfPastIllnessSectionOperations.validateHistoryOfPastIllnessSectionCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateHistoryOfPastIllnessSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return HistoryOfPastIllnessSectionOperations.validateHistoryOfPastIllnessSectionTitle(this, diagnostics, context);
-  }
+		return HistoryOfPastIllnessSectionOperations.validateHistoryOfPastIllnessSectionTitle(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateHistoryOfPastIllnessSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return HistoryOfPastIllnessSectionOperations.validateHistoryOfPastIllnessSectionText(this, diagnostics, context);
-  }
+		return HistoryOfPastIllnessSectionOperations.validateHistoryOfPastIllnessSectionText(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public boolean validateHistoryOfPastIllnessSectionProblemObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-    return HistoryOfPastIllnessSectionOperations.validateHistoryOfPastIllnessSectionProblemObservation(this, diagnostics, context);
-  }
+		return HistoryOfPastIllnessSectionOperations.validateHistoryOfPastIllnessSectionProblemObservation(
+			this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public EList<ProblemObservation> getProblemObservations() {
-    return HistoryOfPastIllnessSectionOperations.getProblemObservations(this);
-  }
+		return HistoryOfPastIllnessSectionOperations.getProblemObservations(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public HistoryOfPastIllnessSection init() {
-    	CDAUtil.init(this);
-    	return this;
-  }
+		CDAUtil.init(this);
+		return this;
+	}
 } // HistoryOfPastIllnessSectionImpl

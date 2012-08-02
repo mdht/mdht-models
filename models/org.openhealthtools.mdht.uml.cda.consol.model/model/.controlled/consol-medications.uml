@@ -140,7 +140,7 @@ Medication timing is complex. This template requires that there be a substanceAd
         <language>Analysis</language>
         <language>OCL</language>
         <body>entryRelationship with target entry Instructions SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot; True</body>
-        <body>self.entryRelationship->select(er : cda::EntryRelationship | er.act.oclIsKindOf(consol::Instructions))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
+        <body>self.entryRelationship->select(er : cda::EntryRelationship | er.act.oclIsTypeOf(consol::Instructions))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_Mu_RcEIrEeG4bZAl2IGXmQ" name="preconditionSubstanceAdmTypeCode" constrainedElement="_L0emcEIqEeG4bZAl2IGXmQ">
@@ -422,7 +422,8 @@ Not pre-coordinated consumable: If the consumable code is not pre-coordinated (e
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__c0hcULSEeGo1o5_NrjDhQ" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_ikLsgEhUEeGoJ-JrsiBorA" name="product" type="_cJ5wsEhUEeGoJ-JrsiBorA" association="_ikMTkEhUEeGoJ-JrsiBorA">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ikLsgUhUEeGoJ-JrsiBorA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Y8xJUNg-EeGHOoVvEzXcpg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Y8xJUdg-EeGHOoVvEzXcpg" value="1"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_cJ5wsEhUEeGoJ-JrsiBorA" name="Product">
       <ownedComment xmi:id="_Z1CVoEhVEeGoJ-JrsiBorA">
@@ -940,7 +941,7 @@ The UDI should be sent in the participantRole/id.</body>
         <language>Analysis</language>
         <language>OCL</language>
         <body>entryRelationship with target entry Instructions if present, SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot; True</body>
-        <body>self.entryRelationship->select(er : cda::EntryRelationship | er.act.oclIsKindOf(consol::Instructions))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
+        <body>self.entryRelationship->select(er : cda::EntryRelationship | er.act.oclIsTypeOf(consol::Instructions))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_j3aTQRrTEeGo461UQq-B1g">
@@ -993,7 +994,8 @@ The UDI should be sent in the participantRole/id.</body>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_x1NnEErtEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="__4pJYBrTEeGo461UQq-B1g" name="product" type="_UIaqgEgoEeGdscQrYjYKFw" association="__4pwcRrTEeGo461UQq-B1g">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__4pwcBrTEeGo461UQq-B1g"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_btu1ENg-EeGHOoVvEzXcpg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_btu1Edg-EeGHOoVvEzXcpg" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_IxCtcBrUEeGo461UQq-B1g" name="author" association="_IxDUgBrUEeGo461UQq-B1g">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ChEisEcEEd6besF9iFIJkQ"/>

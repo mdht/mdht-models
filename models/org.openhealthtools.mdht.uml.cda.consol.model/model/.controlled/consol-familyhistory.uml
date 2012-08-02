@@ -52,7 +52,7 @@
         <language>Analysis</language>
         <language>OCL</language>
         <body>entryRelationship with target entry Age Observation SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot; True</body>
-        <body>self.entryRelationship->select(er : cda::EntryRelationship | er.act.oclIsKindOf(consol::AgeObservation))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
+        <body>self.entryRelationship->forAll(ent : cda::EntryRelationship | ent.observation.oclIsTypeOf(consol::AgeObservation) implies ent.inversionInd=true)</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_2I5CsRSVEeGGzu7fmW9pXw">
