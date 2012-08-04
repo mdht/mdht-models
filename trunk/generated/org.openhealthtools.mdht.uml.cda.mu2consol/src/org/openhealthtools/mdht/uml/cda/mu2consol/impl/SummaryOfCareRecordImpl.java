@@ -79,8 +79,98 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSummaryOfCareRecordEncountersSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordEncountersSection(this, diagnostics, context);
+	public boolean validateSummaryOfCareRecordCannotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordCannotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSummaryOfCareRecordMu2EncounterDiagnosesRequirementsOCL(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordMu2EncounterDiagnosesRequirementsOCL(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSummaryOfCareRecordCanHaveEitherRequiredOrOptionalVitalSignsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordCanHaveEitherRequiredOrOptionalVitalSignsSection(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSummaryOfCareRecordMedicationListConstraint(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordMedicationListConstraint(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSummaryOfCareRecordPlanOfCareSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordPlanOfCareSection(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSummaryOfCareRecordInstructionsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordInstructionsSection(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSummaryOfCareRecordHospitalDischargeInstructionsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordHospitalDischargeInstructionsSection(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSummaryOfCareRecordMedicationsAdministeredSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordMedicationsAdministeredSection(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSummaryOfCareRecordSocialHistorySection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordSocialHistorySection(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSummaryOfCareRecordResultsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordResultsSection(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSummaryOfCareRecordProceduresSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordProceduresSection(this, diagnostics, context);
 	}
 
 	/**
@@ -171,15 +261,6 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl implem
 	 */
 	public PostoperativeDiagnosisSection getPostoperativeDiagnosisSection() {
 		return SummaryOfCareRecordOperations.getPostoperativeDiagnosisSection(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EncountersSection getEncountersSection2() {
-		return SummaryOfCareRecordOperations.getEncountersSection2(this);
 	}
 
 	/**
