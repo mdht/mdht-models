@@ -55,9 +55,9 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//SummaryOfCareRecord/SummaryOfCareRecordCannotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//SummaryOfCareRecord/SummaryOfCareRecordCannotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//SummaryOfCareRecord/SummaryOfCareRecordMu2EncounterDiagnosesRequirementsOCL">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//SummaryOfCareRecord/SummaryOfCareRecordMu2EncounterDiagnosesRequirementsOCL/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//SummaryOfCareRecord/SummaryOfCareRecordMu2EncounterDiagnosesRequirementsOCL/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//SummaryOfCareRecord/SummaryOfCareRecordMu2EncounterDiagnosesRequirements">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//SummaryOfCareRecord/SummaryOfCareRecordMu2EncounterDiagnosesRequirements/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//SummaryOfCareRecord/SummaryOfCareRecordMu2EncounterDiagnosesRequirements/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//SummaryOfCareRecord/SummaryOfCareRecordCanHaveEitherRequiredOrOptionalVitalSignsSection">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//SummaryOfCareRecord/SummaryOfCareRecordCanHaveEitherRequiredOrOptionalVitalSignsSection/diagnostics"/>
@@ -122,6 +122,81 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//SummaryOfCareRecord/getVitalSignsSection"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//SummaryOfCareRecord/getVitalSignsSectionEntriesOptional"/>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//SummaryOfCareRecord/getProceduresSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//SummaryOfCareRecord/getAllergiesSectionEntriesOptional"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//SummaryOfCareRecord/getPostprocedureDiagnosisSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//SummaryOfCareRecord/getReasonForReferralSection"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="mu2consol.ecore#//VDTAmbulatoryPatientInfo">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//VDTAmbulatoryPatientInfo/VDTAmbulatoryPatientInfoCannotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//VDTAmbulatoryPatientInfo/VDTAmbulatoryPatientInfoCannotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//VDTAmbulatoryPatientInfo/VDTAmbulatoryPatientInfoCannotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//VDTAmbulatoryPatientInfo/VDTAmbulatoryPatientInfoMu2EncounterDiagnosesRequirements">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//VDTAmbulatoryPatientInfo/VDTAmbulatoryPatientInfoMu2EncounterDiagnosesRequirements/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//VDTAmbulatoryPatientInfo/VDTAmbulatoryPatientInfoMu2EncounterDiagnosesRequirements/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//VDTAmbulatoryPatientInfo/VDTAmbulatoryPatientInfoCanHaveEitherRequiredOrOptionalVitalSignsSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//VDTAmbulatoryPatientInfo/VDTAmbulatoryPatientInfoCanHaveEitherRequiredOrOptionalVitalSignsSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//VDTAmbulatoryPatientInfo/VDTAmbulatoryPatientInfoCanHaveEitherRequiredOrOptionalVitalSignsSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//VDTAmbulatoryPatientInfo/VDTAmbulatoryPatientInfoMedicationListConstraint">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//VDTAmbulatoryPatientInfo/VDTAmbulatoryPatientInfoMedicationListConstraint/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//VDTAmbulatoryPatientInfo/VDTAmbulatoryPatientInfoMedicationListConstraint/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="mu2consol.ecore#//CreateTransmitSummaryOfCareRecord">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//CreateTransmitSummaryOfCareRecord/CreateTransmitSummaryOfCareRecordCannotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//CreateTransmitSummaryOfCareRecord/CreateTransmitSummaryOfCareRecordCannotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//CreateTransmitSummaryOfCareRecord/CreateTransmitSummaryOfCareRecordCannotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//CreateTransmitSummaryOfCareRecord/CreateTransmitSummaryOfCareRecordMu2EncounterDiagnosesRequirements">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//CreateTransmitSummaryOfCareRecord/CreateTransmitSummaryOfCareRecordMu2EncounterDiagnosesRequirements/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//CreateTransmitSummaryOfCareRecord/CreateTransmitSummaryOfCareRecordMu2EncounterDiagnosesRequirements/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//CreateTransmitSummaryOfCareRecord/CreateTransmitSummaryOfCareRecordCanHaveEitherRequiredOrOptionalVitalSignsSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//CreateTransmitSummaryOfCareRecord/CreateTransmitSummaryOfCareRecordCanHaveEitherRequiredOrOptionalVitalSignsSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//CreateTransmitSummaryOfCareRecord/CreateTransmitSummaryOfCareRecordCanHaveEitherRequiredOrOptionalVitalSignsSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//CreateTransmitSummaryOfCareRecord/CreateTransmitSummaryOfCareRecordMedicationListConstraint">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//CreateTransmitSummaryOfCareRecord/CreateTransmitSummaryOfCareRecordMedicationListConstraint/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//CreateTransmitSummaryOfCareRecord/CreateTransmitSummaryOfCareRecordMedicationListConstraint/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="mu2consol.ecore#//VDTInpatientPatientInfo">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//VDTInpatientPatientInfo/VDTInpatientPatientInfoCannotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//VDTInpatientPatientInfo/VDTInpatientPatientInfoCannotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//VDTInpatientPatientInfo/VDTInpatientPatientInfoCannotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//VDTInpatientPatientInfo/VDTInpatientPatientInfoMu2EncounterDiagnosesRequirements">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//VDTInpatientPatientInfo/VDTInpatientPatientInfoMu2EncounterDiagnosesRequirements/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//VDTInpatientPatientInfo/VDTInpatientPatientInfoMu2EncounterDiagnosesRequirements/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//VDTInpatientPatientInfo/VDTInpatientPatientInfoCanHaveEitherRequiredOrOptionalVitalSignsSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//VDTInpatientPatientInfo/VDTInpatientPatientInfoCanHaveEitherRequiredOrOptionalVitalSignsSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//VDTInpatientPatientInfo/VDTInpatientPatientInfoCanHaveEitherRequiredOrOptionalVitalSignsSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//VDTInpatientPatientInfo/VDTInpatientPatientInfoMedicationListConstraint">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//VDTInpatientPatientInfo/VDTInpatientPatientInfoMedicationListConstraint/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//VDTInpatientPatientInfo/VDTInpatientPatientInfoMedicationListConstraint/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="mu2consol.ecore#//ClinicalOfficeVisitSummary">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//ClinicalOfficeVisitSummary/ClinicalOfficeVisitSummaryCannotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//ClinicalOfficeVisitSummary/ClinicalOfficeVisitSummaryCannotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//ClinicalOfficeVisitSummary/ClinicalOfficeVisitSummaryCannotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//ClinicalOfficeVisitSummary/ClinicalOfficeVisitSummaryMu2EncounterDiagnosesRequirements">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//ClinicalOfficeVisitSummary/ClinicalOfficeVisitSummaryMu2EncounterDiagnosesRequirements/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//ClinicalOfficeVisitSummary/ClinicalOfficeVisitSummaryMu2EncounterDiagnosesRequirements/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//ClinicalOfficeVisitSummary/ClinicalOfficeVisitSummaryCanHaveEitherRequiredOrOptionalVitalSignsSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//ClinicalOfficeVisitSummary/ClinicalOfficeVisitSummaryCanHaveEitherRequiredOrOptionalVitalSignsSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//ClinicalOfficeVisitSummary/ClinicalOfficeVisitSummaryCanHaveEitherRequiredOrOptionalVitalSignsSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//ClinicalOfficeVisitSummary/ClinicalOfficeVisitSummaryMedicationListConstraint">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//ClinicalOfficeVisitSummary/ClinicalOfficeVisitSummaryMedicationListConstraint/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//ClinicalOfficeVisitSummary/ClinicalOfficeVisitSummaryMedicationListConstraint/context"/>
+      </genOperations>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

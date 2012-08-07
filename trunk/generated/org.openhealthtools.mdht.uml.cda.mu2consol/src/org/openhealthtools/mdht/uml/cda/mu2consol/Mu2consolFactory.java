@@ -44,6 +44,42 @@ public interface Mu2consolFactory extends EFactory {
 	SummaryOfCareRecord createSummaryOfCareRecord();
 
 	/**
+	 * Returns a new object of class '<em>VDT Ambulatory Patient Info</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>VDT Ambulatory Patient Info</em>'.
+	 * @generated
+	 */
+	VDTAmbulatoryPatientInfo createVDTAmbulatoryPatientInfo();
+
+	/**
+	 * Returns a new object of class '<em>Clinical Office Visit Summary</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Clinical Office Visit Summary</em>'.
+	 * @generated
+	 */
+	ClinicalOfficeVisitSummary createClinicalOfficeVisitSummary();
+
+	/**
+	 * Returns a new object of class '<em>VDT Inpatient Patient Info</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>VDT Inpatient Patient Info</em>'.
+	 * @generated
+	 */
+	VDTInpatientPatientInfo createVDTInpatientPatientInfo();
+
+	/**
+	 * Returns a new object of class '<em>Create Transmit Summary Of Care Record</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Create Transmit Summary Of Care Record</em>'.
+	 * @generated
+	 */
+	CreateTransmitSummaryOfCareRecord createCreateTransmitSummaryOfCareRecord();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

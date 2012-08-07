@@ -27,7 +27,7 @@ public class Test {
 	 */
 	public static void main(String[] args) {
 
-//		testSOCR("socr_sample");
+		testSOCR("socr_sample");
 		validateSOCR("socr_sample");
 	}
 	
