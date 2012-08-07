@@ -62,6 +62,10 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements Mu2consolFacto
 		switch (eClass.getClassifierID()) {
 			case Mu2consolPackage.GENERAL_HEADER_CONSTRAINTS: return createGeneralHeaderConstraints();
 			case Mu2consolPackage.SUMMARY_OF_CARE_RECORD: return createSummaryOfCareRecord();
+			case Mu2consolPackage.VDT_AMBULATORY_PATIENT_INFO: return createVDTAmbulatoryPatientInfo();
+			case Mu2consolPackage.CREATE_TRANSMIT_SUMMARY_OF_CARE_RECORD: return createCreateTransmitSummaryOfCareRecord();
+			case Mu2consolPackage.VDT_INPATIENT_PATIENT_INFO: return createVDTInpatientPatientInfo();
+			case Mu2consolPackage.CLINICAL_OFFICE_VISIT_SUMMARY: return createClinicalOfficeVisitSummary();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -85,6 +89,46 @@ public class Mu2consolFactoryImpl extends EFactoryImpl implements Mu2consolFacto
 	public SummaryOfCareRecord createSummaryOfCareRecord() {
 		SummaryOfCareRecordImpl summaryOfCareRecord = new SummaryOfCareRecordImpl();
 		return summaryOfCareRecord;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public VDTAmbulatoryPatientInfo createVDTAmbulatoryPatientInfo() {
+		VDTAmbulatoryPatientInfoImpl vdtAmbulatoryPatientInfo = new VDTAmbulatoryPatientInfoImpl();
+		return vdtAmbulatoryPatientInfo;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ClinicalOfficeVisitSummary createClinicalOfficeVisitSummary() {
+		ClinicalOfficeVisitSummaryImpl clinicalOfficeVisitSummary = new ClinicalOfficeVisitSummaryImpl();
+		return clinicalOfficeVisitSummary;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public VDTInpatientPatientInfo createVDTInpatientPatientInfo() {
+		VDTInpatientPatientInfoImpl vdtInpatientPatientInfo = new VDTInpatientPatientInfoImpl();
+		return vdtInpatientPatientInfo;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public CreateTransmitSummaryOfCareRecord createCreateTransmitSummaryOfCareRecord() {
+		CreateTransmitSummaryOfCareRecordImpl createTransmitSummaryOfCareRecord = new CreateTransmitSummaryOfCareRecordImpl();
+		return createTransmitSummaryOfCareRecord;
 	}
 
 	/**

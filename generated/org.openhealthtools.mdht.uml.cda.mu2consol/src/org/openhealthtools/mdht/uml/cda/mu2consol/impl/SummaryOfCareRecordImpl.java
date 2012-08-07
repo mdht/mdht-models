@@ -11,6 +11,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 
 import org.openhealthtools.mdht.uml.cda.consol.AllergiesSection;
+import org.openhealthtools.mdht.uml.cda.consol.AllergiesSectionEntriesOptional;
 import org.openhealthtools.mdht.uml.cda.consol.AssessmentAndPlanSection;
 import org.openhealthtools.mdht.uml.cda.consol.AssessmentSection;
 import org.openhealthtools.mdht.uml.cda.consol.ChiefComplaintAndReasonForVisitSection;
@@ -29,9 +30,11 @@ import org.openhealthtools.mdht.uml.cda.consol.MedicationsAdministeredSection;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationsSection;
 import org.openhealthtools.mdht.uml.cda.consol.PlanOfCareSection;
 import org.openhealthtools.mdht.uml.cda.consol.PostoperativeDiagnosisSection;
+import org.openhealthtools.mdht.uml.cda.consol.PostprocedureDiagnosisSection;
 import org.openhealthtools.mdht.uml.cda.consol.PreoperativeDiagnosisSection;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemSection;
 import org.openhealthtools.mdht.uml.cda.consol.ProceduresSection;
+import org.openhealthtools.mdht.uml.cda.consol.ReasonForReferralSection;
 import org.openhealthtools.mdht.uml.cda.consol.ReasonForVisitSection;
 
 import org.openhealthtools.mdht.uml.cda.consol.ResultsSection;
@@ -88,8 +91,8 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSummaryOfCareRecordMu2EncounterDiagnosesRequirementsOCL(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordMu2EncounterDiagnosesRequirementsOCL(this, diagnostics, context);
+	public boolean validateSummaryOfCareRecordMu2EncounterDiagnosesRequirements(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordMu2EncounterDiagnosesRequirements(this, diagnostics, context);
 	}
 
 	/**
@@ -414,6 +417,33 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl implem
 	 */
 	public ProceduresSection getProceduresSection() {
 		return SummaryOfCareRecordOperations.getProceduresSection(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AllergiesSectionEntriesOptional getAllergiesSectionEntriesOptional() {
+		return SummaryOfCareRecordOperations.getAllergiesSectionEntriesOptional(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public PostprocedureDiagnosisSection getPostprocedureDiagnosisSection() {
+		return SummaryOfCareRecordOperations.getPostprocedureDiagnosisSection(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public ReasonForReferralSection getReasonForReferralSection() {
+		return SummaryOfCareRecordOperations.getReasonForReferralSection(this);
 	}
 
 	/**

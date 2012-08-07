@@ -18,10 +18,14 @@ import org.openhealthtools.mdht.uml.cda.CDAPackage;
 
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 
+import org.openhealthtools.mdht.uml.cda.mu2consol.ClinicalOfficeVisitSummary;
+import org.openhealthtools.mdht.uml.cda.mu2consol.CreateTransmitSummaryOfCareRecord;
 import org.openhealthtools.mdht.uml.cda.mu2consol.GeneralHeaderConstraints;
 import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolFactory;
 import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage;
 import org.openhealthtools.mdht.uml.cda.mu2consol.SummaryOfCareRecord;
+import org.openhealthtools.mdht.uml.cda.mu2consol.VDTAmbulatoryPatientInfo;
+import org.openhealthtools.mdht.uml.cda.mu2consol.VDTInpatientPatientInfo;
 import org.openhealthtools.mdht.uml.cda.mu2consol.util.Mu2consolValidator;
 
 /**
@@ -44,6 +48,34 @@ public class Mu2consolPackageImpl extends EPackageImpl implements Mu2consolPacka
 	 * @generated
 	 */
 	private EClass summaryOfCareRecordEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass vdtAmbulatoryPatientInfoEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass clinicalOfficeVisitSummaryEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass vdtInpatientPatientInfoEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass createTransmitSummaryOfCareRecordEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -141,6 +173,42 @@ public class Mu2consolPackageImpl extends EPackageImpl implements Mu2consolPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getVDTAmbulatoryPatientInfo() {
+		return vdtAmbulatoryPatientInfoEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getClinicalOfficeVisitSummary() {
+		return clinicalOfficeVisitSummaryEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getVDTInpatientPatientInfo() {
+		return vdtInpatientPatientInfoEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getCreateTransmitSummaryOfCareRecord() {
+		return createTransmitSummaryOfCareRecordEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public Mu2consolFactory getMu2consolFactory() {
 		return (Mu2consolFactory)getEFactoryInstance();
 	}
@@ -167,6 +235,14 @@ public class Mu2consolPackageImpl extends EPackageImpl implements Mu2consolPacka
 		generalHeaderConstraintsEClass = createEClass(GENERAL_HEADER_CONSTRAINTS);
 
 		summaryOfCareRecordEClass = createEClass(SUMMARY_OF_CARE_RECORD);
+
+		vdtAmbulatoryPatientInfoEClass = createEClass(VDT_AMBULATORY_PATIENT_INFO);
+
+		createTransmitSummaryOfCareRecordEClass = createEClass(CREATE_TRANSMIT_SUMMARY_OF_CARE_RECORD);
+
+		vdtInpatientPatientInfoEClass = createEClass(VDT_INPATIENT_PATIENT_INFO);
+
+		clinicalOfficeVisitSummaryEClass = createEClass(CLINICAL_OFFICE_VISIT_SUMMARY);
 	}
 
 	/**
@@ -203,6 +279,10 @@ public class Mu2consolPackageImpl extends EPackageImpl implements Mu2consolPacka
 		// Add supertypes to classes
 		generalHeaderConstraintsEClass.getESuperTypes().add(theCDAPackage.getClinicalDocument());
 		summaryOfCareRecordEClass.getESuperTypes().add(this.getGeneralHeaderConstraints());
+		vdtAmbulatoryPatientInfoEClass.getESuperTypes().add(this.getGeneralHeaderConstraints());
+		createTransmitSummaryOfCareRecordEClass.getESuperTypes().add(this.getGeneralHeaderConstraints());
+		vdtInpatientPatientInfoEClass.getESuperTypes().add(this.getGeneralHeaderConstraints());
+		clinicalOfficeVisitSummaryEClass.getESuperTypes().add(this.getGeneralHeaderConstraints());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(generalHeaderConstraintsEClass, GeneralHeaderConstraints.class, "GeneralHeaderConstraints", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -263,7 +343,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements Mu2consolPacka
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		op = addEOperation(summaryOfCareRecordEClass, ecorePackage.getEBoolean(), "validateSummaryOfCareRecordMu2EncounterDiagnosesRequirementsOCL", 0, 1, IS_UNIQUE, IS_ORDERED);
+		op = addEOperation(summaryOfCareRecordEClass, ecorePackage.getEBoolean(), "validateSummaryOfCareRecordMu2EncounterDiagnosesRequirements", 0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -407,6 +487,164 @@ public class Mu2consolPackageImpl extends EPackageImpl implements Mu2consolPacka
 
 		addEOperation(summaryOfCareRecordEClass, theConsolPackage.getProceduresSection(), "getProceduresSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
+		addEOperation(summaryOfCareRecordEClass, theConsolPackage.getAllergiesSectionEntriesOptional(), "getAllergiesSectionEntriesOptional", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		addEOperation(summaryOfCareRecordEClass, theConsolPackage.getPostprocedureDiagnosisSection(), "getPostprocedureDiagnosisSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		addEOperation(summaryOfCareRecordEClass, theConsolPackage.getReasonForReferralSection(), "getReasonForReferralSection", 1, 1, IS_UNIQUE, !IS_ORDERED);
+
+		initEClass(vdtAmbulatoryPatientInfoEClass, VDTAmbulatoryPatientInfo.class, "VDTAmbulatoryPatientInfo", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		op = addEOperation(vdtAmbulatoryPatientInfoEClass, ecorePackage.getEBoolean(), "validateVDTAmbulatoryPatientInfoCannotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(vdtAmbulatoryPatientInfoEClass, ecorePackage.getEBoolean(), "validateVDTAmbulatoryPatientInfoMu2EncounterDiagnosesRequirements", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(vdtAmbulatoryPatientInfoEClass, ecorePackage.getEBoolean(), "validateVDTAmbulatoryPatientInfoCanHaveEitherRequiredOrOptionalVitalSignsSection", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(vdtAmbulatoryPatientInfoEClass, ecorePackage.getEBoolean(), "validateVDTAmbulatoryPatientInfoMedicationListConstraint", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		initEClass(createTransmitSummaryOfCareRecordEClass, CreateTransmitSummaryOfCareRecord.class, "CreateTransmitSummaryOfCareRecord", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		op = addEOperation(createTransmitSummaryOfCareRecordEClass, ecorePackage.getEBoolean(), "validateCreateTransmitSummaryOfCareRecordCannotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(createTransmitSummaryOfCareRecordEClass, ecorePackage.getEBoolean(), "validateCreateTransmitSummaryOfCareRecordMu2EncounterDiagnosesRequirements", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(createTransmitSummaryOfCareRecordEClass, ecorePackage.getEBoolean(), "validateCreateTransmitSummaryOfCareRecordCanHaveEitherRequiredOrOptionalVitalSignsSection", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(createTransmitSummaryOfCareRecordEClass, ecorePackage.getEBoolean(), "validateCreateTransmitSummaryOfCareRecordMedicationListConstraint", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		initEClass(vdtInpatientPatientInfoEClass, VDTInpatientPatientInfo.class, "VDTInpatientPatientInfo", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		op = addEOperation(vdtInpatientPatientInfoEClass, ecorePackage.getEBoolean(), "validateVDTInpatientPatientInfoCannotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(vdtInpatientPatientInfoEClass, ecorePackage.getEBoolean(), "validateVDTInpatientPatientInfoMu2EncounterDiagnosesRequirements", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(vdtInpatientPatientInfoEClass, ecorePackage.getEBoolean(), "validateVDTInpatientPatientInfoCanHaveEitherRequiredOrOptionalVitalSignsSection", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(vdtInpatientPatientInfoEClass, ecorePackage.getEBoolean(), "validateVDTInpatientPatientInfoMedicationListConstraint", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		initEClass(clinicalOfficeVisitSummaryEClass, ClinicalOfficeVisitSummary.class, "ClinicalOfficeVisitSummary", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		op = addEOperation(clinicalOfficeVisitSummaryEClass, ecorePackage.getEBoolean(), "validateClinicalOfficeVisitSummaryCannotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(clinicalOfficeVisitSummaryEClass, ecorePackage.getEBoolean(), "validateClinicalOfficeVisitSummaryMu2EncounterDiagnosesRequirements", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(clinicalOfficeVisitSummaryEClass, ecorePackage.getEBoolean(), "validateClinicalOfficeVisitSummaryCanHaveEitherRequiredOrOptionalVitalSignsSection", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(clinicalOfficeVisitSummaryEClass, ecorePackage.getEBoolean(), "validateClinicalOfficeVisitSummaryMedicationListConstraint", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
 		// Create resource
 		createResource(eNS_URI);
 
@@ -443,9 +681,37 @@ public class Mu2consolPackageImpl extends EPackageImpl implements Mu2consolPacka
 		  (summaryOfCareRecordEClass, 
 		   source, 
 		   new String[] {
-			 "constraints.validation.error", "SummaryOfCareRecordTemplateId SummaryOfCareRecordCannotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection SummaryOfCareRecordMu2EncounterDiagnosesRequirementsOCL SummaryOfCareRecordCanHaveEitherRequiredOrOptionalVitalSignsSection SummaryOfCareRecordMedicationListConstraint SummaryOfCareRecordPlanOfCareSection SummaryOfCareRecordInstructionsSection SummaryOfCareRecordHospitalDischargeInstructionsSection SummaryOfCareRecordMedicationsAdministeredSection SummaryOfCareRecordSocialHistorySection SummaryOfCareRecordResultsSection SummaryOfCareRecordProceduresSection",
-			 "templateId.root", "1.1.1.1.1.1.1.1.1.1.1"
-		   });																																																																																																			
+			 "constraints.validation.error", "SummaryOfCareRecordTemplateId SummaryOfCareRecordCannotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection SummaryOfCareRecordMu2EncounterDiagnosesRequirements SummaryOfCareRecordCanHaveEitherRequiredOrOptionalVitalSignsSection SummaryOfCareRecordMedicationListConstraint SummaryOfCareRecordPlanOfCareSection SummaryOfCareRecordInstructionsSection SummaryOfCareRecordHospitalDischargeInstructionsSection SummaryOfCareRecordMedicationsAdministeredSection SummaryOfCareRecordSocialHistorySection SummaryOfCareRecordResultsSection SummaryOfCareRecordProceduresSection",
+			 "templateId.root", "2.16.840.1.113883.11.11.11.1.1"
+		   });																																																																																																											
+		addAnnotation
+		  (vdtAmbulatoryPatientInfoEClass, 
+		   source, 
+		   new String[] {
+			 "constraints.validation.error", "VDTAmbulatoryPatientInfoTemplateId VDTAmbulatoryPatientInfoCannotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection VDTAmbulatoryPatientInfoMu2EncounterDiagnosesRequirements VDTAmbulatoryPatientInfoCanHaveEitherRequiredOrOptionalVitalSignsSection VDTAmbulatoryPatientInfoMedicationListConstraint",
+			 "templateId.root", "2.16.840.1.113883.11.11.11.1.3"
+		   });																			
+		addAnnotation
+		  (createTransmitSummaryOfCareRecordEClass, 
+		   source, 
+		   new String[] {
+			 "constraints.validation.error", "CreateTransmitSummaryOfCareRecordTemplateId CreateTransmitSummaryOfCareRecordCannotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection CreateTransmitSummaryOfCareRecordMu2EncounterDiagnosesRequirements CreateTransmitSummaryOfCareRecordCanHaveEitherRequiredOrOptionalVitalSignsSection CreateTransmitSummaryOfCareRecordMedicationListConstraint",
+			 "templateId.root", "2.16.840.1.113883.11.11.11.1.2"
+		   });																			
+		addAnnotation
+		  (vdtInpatientPatientInfoEClass, 
+		   source, 
+		   new String[] {
+			 "constraints.validation.error", "VDTInpatientPatientInfoTemplateId VDTInpatientPatientInfoCannotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection VDTInpatientPatientInfoMu2EncounterDiagnosesRequirements VDTInpatientPatientInfoCanHaveEitherRequiredOrOptionalVitalSignsSection VDTInpatientPatientInfoMedicationListConstraint",
+			 "templateId.root", "2.16.840.1.113883.11.11.11.1.4"
+		   });																			
+		addAnnotation
+		  (clinicalOfficeVisitSummaryEClass, 
+		   source, 
+		   new String[] {
+			 "constraints.validation.error", "ClinicalOfficeVisitSummaryTemplateId ClinicalOfficeVisitSummaryCannotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection ClinicalOfficeVisitSummaryMu2EncounterDiagnosesRequirements ClinicalOfficeVisitSummaryCanHaveEitherRequiredOrOptionalVitalSignsSection ClinicalOfficeVisitSummaryMedicationListConstraint",
+			 "templateId.root", "2.16.840.1.113883.11.11.11.1.5"
+		   });																	
 	}
 
 	/**
@@ -461,7 +727,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements Mu2consolPacka
 		   source, 
 		   new String[] {
 			 "constraints.validation.error", "RecordTargetPatientRole"
-		   });																																																																																																																										
+		   });																																																																																																																																																																																																								
 	}
 
 	/**
@@ -477,7 +743,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements Mu2consolPacka
 		   source, 
 		   new String[] {
 			 "constraints.validation.error", "PatientRolePatient"
-		   });																																																																																																																									
+		   });																																																																																																																																																																																																							
 	}
 
 	/**
@@ -493,7 +759,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements Mu2consolPacka
 		   source, 
 		   new String[] {
 			 "constraints.validation.error", "PatientLanguageCommunication"
-		   });																																																																																																																								
+		   });																																																																																																																																																																																																						
 	}
 
 	/**
@@ -508,7 +774,27 @@ public class Mu2consolPackageImpl extends EPackageImpl implements Mu2consolPacka
 		  (summaryOfCareRecordEClass, 
 		   source, 
 		   new String[] {
-		   });																																																																																																		
+		   });																																																																																																											
+		addAnnotation
+		  (vdtAmbulatoryPatientInfoEClass, 
+		   source, 
+		   new String[] {
+		   });																			
+		addAnnotation
+		  (createTransmitSummaryOfCareRecordEClass, 
+		   source, 
+		   new String[] {
+		   });																			
+		addAnnotation
+		  (vdtInpatientPatientInfoEClass, 
+		   source, 
+		   new String[] {
+		   });																			
+		addAnnotation
+		  (clinicalOfficeVisitSummaryEClass, 
+		   source, 
+		   new String[] {
+		   });																
 	}
 
 } //Mu2consolPackageImpl
