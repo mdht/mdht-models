@@ -1,0 +1,714 @@
+﻿<?xml version="1.0"?>
+
+<!-- The following sample document depicts a fictional character’s health summary. Any resemblance to a real person is coincidental. -->
+<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="urn:hl7-org:v3 http://xreg2.nist.gov:8080/hitspValidation/schema/cdar2c32/infrastructure/cda/C32_CDA.xsd"
+ xmlns="urn:hl7-org:v3"
+ xmlns:voc="urn:hl7-org:v3/voc">
+	<!-- 
+*****************************************************
+CDA Header
+********************************************************
+	-->
+	
+	<realmCode code="US"/>
+	<typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+	<!-- CCD v1.0 Template Root -->
+	<templateId root="2.16.840.1.113883.10.20.1"/>
+	<!-- HITSP C32 CCD Template Id -->
+	<templateId root="2.16.840.1.113883.3.88.11.32.1"/>
+	<!-- HITSP C83 Template Id -->
+	<templateId root="2.16.840.1.113883.3.88.11.83.1"/>
+	<!-- IHE Medical Summary Document Template Id -->
+	<templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.1"/>
+	<!-- General Header constraint Templates Id -->
+	<templateId root="2.16.840.1.113883.10.20.3"/>
+	<id root="db734647-fc99-424c-a864-7e3cda82e703"/>
+	<code code="34133-9" codeSystem="2.16.840.1.113883.6.1"
+		displayName="Summarization of episode note"/>
+	<title>Good Behavior Health Clinic Continuity of Care Document</title>
+	<effectiveTime value="20100407130000+0500"/>
+	<confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25"/>
+	<languageCode code="en-US"/>
+	<recordTarget>
+		<patientRole>
+			<!-- Patient Information with "Personal Information" HITSP templateID -->
+			<templateId root="2.16.840.1.113883.3.88.11.83.1"/>
+			<!-- example ID (HITSP allows only one patientRole Id)-->
+			<id root="2.16.840.1.113883.3.468" extension="996-756-495"/>
+			<!-- Address Info -->
+			<addr>
+				<streetAddressLine>2222 Home Street</streetAddressLine>
+				<city>Ann Arbor</city>
+				<state>MI</state>
+				<postalCode>99999</postalCode>
+				<country>USA</country>
+			</addr>
+			<!-- Patient phone numbers -->
+			<telecom use="HP" value="tel:+1-555-555-5003"/>
+			<patient>
+				<!-- Patient birth first and last name "BR" = birth -->
+				<name>
+					<given qualifier="BR">Eve</given>
+					<family qualifier="BR">Kidd</family>
+				</name>
+				<!-- Patient (legal)  first ,middle, last name and suffix -->
+				<name use="L">
+					<given>Eve</given>
+					<given>Ann</given>
+					<family>Everywoman</family>
+					<suffix>JR</suffix>
+				</name>
+				<!-- Patient alias last name -->
+				<name use="P">
+					<family>Smith</family>
+				</name>
+				<!-- Patient gender -->
+				<administrativeGenderCode code="F" displayName="Female"
+					codeSystem="2.16.840.1.113883.5.1" codeSystemName="administrativeGender"/>
+				<birthTime value="19780924"/>
+				<maritalStatusCode code="T" displayName="Domestic partner"
+					codeSystem="2.16.840.1.113883.5.2" codeSystemName="MaritalStatus"/>
+				<!-- patient Religious Affiliation -->
+				<religiousAffiliationCode code="1013"
+					displayName="Christian (non-Catholic, non-specific)"
+					codeSystem="2.16.840.1.113883.5.1076" codeSystemName="ReligiousAffiliation"/>
+				<ethnicGroupCode code="2135-2" codeSystem="2.16.840.1.113883.6.238"
+					displayName="HISPANIC OR LATINO"/>
+				<!-- Patient Guardian -->
+				<guardian>
+					<id extension="23456" root="2.16.840.1.113883.19.5"/>
+					<addr>
+						<streetAddressLine>4444 Home Street</streetAddressLine>
+						<city>Ann Arbor</city>
+						<state>MI</state>
+						<postalCode>99999</postalCode>
+						<country>USA</country>
+					</addr>
+					<telecom value="tel:(555)555-2004" use="HP"/>
+					<guardianPerson>
+						<name>
+							<given>Ralph</given>
+							<family>Relative</family>
+						</name>
+					</guardianPerson>
+				</guardian>
+				<!-- Patient Birthplace -->
+				<birthplace>
+					<place>
+						<name> </name>
+						<addr>
+							<city>Ann Arbor</city>
+							<state>MI</state>
+							<country>USA</country>
+						</addr>
+					</place>
+				</birthplace>
+				<!-- Language example 1 -->
+				<languageCommunication>
+					<!-- HITSP LANGUAGE SPOKEN Template Id -->
+					<templateId root="2.16.840.1.113883.3.88.11.83.2"/>
+					<!-- IHE Language Communication Template Id -->
+					<templateId root="1.3.6.1.4.1.19376.1.5.3.1.2.1"/>
+					<languageCode code="fr-CN"/>
+					<preferenceInd value="true"/>
+				</languageCommunication>
+				<!-- Language example 2 Patient English Fluency Key  HITSP compliant-->
+				<languageCommunication>
+					<!-- HITSP LANGUAGE SPOKEN Template Id -->
+					<templateId root="2.16.840.1.113883.3.88.11.83.2"/>
+					<!-- IHE Language Communication Template Id -->
+					<templateId root="1.3.6.1.4.1.19376.1.5.3.1.2.1"/>
+					<!-- IHE template -->
+					<languageCode code="en-US"/>
+					<modeCode code="RWR" displayName="Receive Written"
+						codeSystem="2.16.840.1.113883.5.60" codeSystemName="LanguageAbilityMode"/>
+					<preferenceInd value="false"/>
+				</languageCommunication>
+				<!-- language example 3 Patient English Fluency Key  (base CDA and IHE compliant) -->
+				<languageCommunication>
+					<!-- Using proficiency level code which is a "SHOULD NOT" as per HITSP-->
+					<!-- HITSP LANGUAGE SPOKEN Template Id -->
+					<templateId root="2.16.840.1.113883.3.88.11.83.2"/>
+					<!-- IHE Language Communication Template Id -->
+					<templateId root="1.3.6.1.4.1.19376.1.5.3.1.2.1"/>
+					<languageCode code="sgn-US"/>
+					<proficiencyLevelCode code="E" displayName="Excellent"
+						codeSystem="2.16.840.1.113883.5.61"
+						codeSystemName="LanguageAbilityProficiency"> </proficiencyLevelCode>
+					<preferenceInd value="true"/>
+				</languageCommunication>
+				<!-- example 4 – not known-->
+				<languageCommunication>
+					<!-- HITSP LANGUAGE SPOKEN Template Id -->
+					<templateId root="2.16.840.1.113883.3.88.11.83.2"/>
+					<!-- IHE Language Communication Template Id -->
+					<templateId root="1.3.6.1.4.1.19376.1.5.3.1.2.1"/>
+					<languageCode nullFlavor="UNK"/>
+					<preferenceInd value="false"/>
+				</languageCommunication>
+
+			</patient>
+			<providerOrganization>
+				<id root="2.16.840.1.113883.19.5"/>
+				<name>Good Behavior Health Clinic</name>
+				<telecom value="tel:+1-888-888-8888;ext=9998"/>
+				<addr use="WP">
+					<streetAddressLine>432 Any Health Street</streetAddressLine>
+					<postBox>24</postBox>
+					<city>Ann Arbor</city>
+					<state>MI</state>
+					<postalCode>12345</postalCode>
+					<country>US</country>
+				</addr>
+			</providerOrganization>
+		</patientRole>
+	</recordTarget>
+	<author>
+		<time value="20100407130000+0500"/>
+		<assignedAuthor>
+			<id root="20cf14fb-b65c-4c8c-a54d-b0cca834c18c"/>
+			<code code="2084A0401X " codeSystem="2.16.840.1.113883.11.19465" codeSystemName="NUCC"
+				displayName="Addiction Psychiatry"/>
+			<addr use="WP">
+				<streetAddressLine>432 Any Health Street</streetAddressLine>
+				<postBox>24</postBox>
+				<city>Ann Arbor</city>
+				<state>MI</state>
+				<postalCode>12345</postalCode>
+				<country>US</country>
+			</addr>
+			<telecom value="tel:+1-888-888-8888;ext=9998"/>
+			<assignedPerson>
+				<name>
+					<prefix>Dr.</prefix>
+					<given>Robert</given>
+					<family>Roundtable</family>
+					<suffix qualifier="AC">MD</suffix>
+				</name>
+			</assignedPerson>
+			<representedOrganization>
+				<id root="2.16.840.1.113883.19.5"/>
+				<name>Good Behavior Health Clinic</name>
+				<telecom value="tel:+1-888-888-8888;ext=9998"/>
+				<addr use="WP">
+					<streetAddressLine>432 Any Health Street</streetAddressLine>
+					<postBox>24</postBox>
+					<city>Ann Arbor</city>
+					<state>MI</state>
+					<postalCode>12345</postalCode>
+					<country>US</country>
+				</addr>
+			</representedOrganization>
+		</assignedAuthor>
+	</author>
+	<custodian>
+		<assignedCustodian>
+			<representedCustodianOrganization>
+				<id root="2.16.840.1.113883.19.5"/>
+				<name>Good Behavior Health Clinic</name>
+				<telecom value="tel:+1-888-888-8888;ext=9998"/>
+				<addr use="WP">
+					<streetAddressLine>432 Any Health Street</streetAddressLine>
+					<postBox>24</postBox>
+					<city>Ann Arbor</city>
+					<state>MI</state>
+					<postalCode>12345</postalCode>
+					<country>US</country>
+				</addr>
+			</representedCustodianOrganization>
+		</assignedCustodian>
+	</custodian>
+	<legalAuthenticator>
+		<time value="20100407130000+0500"/>
+		<signatureCode code="S"/>
+		<assignedEntity>
+			<id nullFlavor="NI"/>
+			<addr use="WP">
+				<streetAddressLine>432 Any Health Street</streetAddressLine>
+				<postBox>24</postBox>
+				<city>Ann Arbor</city>
+				<state>MI</state>
+				<postalCode>12345</postalCode>
+				<country>US</country>
+			</addr>
+			<telecom value="tel:+1-888-888-8888;ext=9998"/>
+			<assignedPerson>
+				<name>
+					<prefix>Dr.</prefix>
+					<given>Robert</given>
+					<family>Roundtable</family>
+					<suffix qualifier="AC">MD</suffix>
+				</name>
+			</assignedPerson>
+			<representedOrganization>
+				<id root="2.16.840.1.113883.19.5"/>
+				<name>Good Behavior Health Clinic</name>
+				<telecom value="tel:+1-888-888-8888;ext=9998"/>
+				<addr use="WP">
+					<streetAddressLine>432 Any Health Street</streetAddressLine>
+					<postBox>24</postBox>
+					<city>Ann Arbor</city>
+					<state>MI</state>
+					<postalCode>12345</postalCode>
+					<country>US</country>
+				</addr>
+			</representedOrganization>
+		</assignedEntity>
+	</legalAuthenticator>
+	<!--A CCD covers the provision of healthcare over a period of time.   -->
+	<documentationOf>
+		<!-- Healthcare provider Information -->
+		<serviceEvent classCode="PCPR">
+			<!-- PCPR effectiveTime cover's the "CASE" time period -->
+			<effectiveTime>
+				<low value="20100320"/>
+				<high value="20100607"/>
+			</effectiveTime>
+			<performer typeCode="PRF">
+				<!-- HITSP  Healthcare Provider template ID-->
+				<templateId root="2.16.840.1.113883.3.88.11.83.4"/>
+				<!-- IHE Healthcare Providers template ID -->
+				<templateId root="1.3.6.1.4.1.19376.1.5.3.1.2.3"/>
+				<!-- Healthcare Provider (Organization) Role -->
+				<functionCode code="PP" codeSystem="2.16.840.1.113883.12.443"
+					codeSystemName="HL7 V2 ProviderRole" displayName="Medical Home"/>
+				<!-- HealthCare provider effective time -->
+				<time>
+					<low value="20100120"/>
+					<high value="20100407"/>
+				</time>
+				<assignedEntity>
+					<!-- Provider Id with National provider ID OID as root OID-->
+					<id extension="12345" root="2.16.840.1.113883.4.6"/>
+					<!-- Healthcare Provider (Organization) Type. 
+						The NUCC HITSP valuset for use off of the serviceEvent/assignedEntity/code is limited to 23 (category) codes - 
+						that are not available at this time code "dd0000000X" is a "dummy code" in the same pattern as the codes will be - see gap note) -->
+					<code code="dd0000000X" codeSystem="2.16.840.1.113883.6.101"
+						codeSystemName="NUCC" displayName="Behavioral Health and Social Services"/>
+					<!-- Healthcare Provider (Organization) Address  -->
+					<addr use="WP">
+						<streetAddressLine>432 Any Health Street</streetAddressLine>
+						<postBox>24</postBox>
+						<city>Ann Arbor</city>
+						<state>MI</state>
+						<postalCode>12345</postalCode>
+						<country>US</country>
+					</addr>
+					<!-- Healthcare Provider (Organization) Phone numbers -->
+					<telecom value="tel:+1-888-888-8888;ext=9998"/>
+					<!-- primary (Enterprise level) Provider Name -->
+					<assignedPerson>
+						<name>
+							<prefix>Dr.</prefix>
+							<given>Sally</given>
+							<family>Savior</family>
+							<suffix qualifier="AC">MD MSW</suffix>
+						</name>
+					</assignedPerson>
+					<!-- (Enterprise) Organization  name and Id -->
+					<representedOrganization>
+						<id extension="10010" root="2.16.840.1.113883.3.468"/>
+						<name>Good Behavior Health Enterprise</name>
+						<telecom value="tel:+1-888-888-8888;ext=9998"/>
+						<addr use="WP">
+							<streetAddressLine>432 Any Health Street</streetAddressLine>
+							<postBox>24</postBox>
+							<city>Ann Arbor</city>
+							<state>MI</state>
+							<postalCode>12345</postalCode>
+							<country>US</country>
+						</addr>
+					</representedOrganization>
+				</assignedEntity>
+			</performer>
+		</serviceEvent>
+	</documentationOf>
+	<!-- 
+********************************************************
+CDA Body
+********************************************************
+-->
+	<component>
+		<structuredBody>
+
+			<!-- 
+********************************************************
+Problems section
+********************************************************
+			-->
+
+			<!-- **** Comment patterns	
+<SHALL/SHOULD/MAY>+ <[cardinality]> + <CONF reference>
+example: SHALL [1..1]  per base CDA
+When adding C32, flag conflicts, ambiguities issues with <**>		
+****-->
+			<component>
+				<section>
+					<!-- NEW CONSOLIDATED Problems Section with Entries TemplateId -->					
+					<templateId root="2.16.840.1.113883.10.20.21.2.5.1" />
+					
+					<!-- PREVIOUS templateId requirements
+						assigningAuthorityName="HITSP/C83"/>
+					<templateId root="2.16.840.1.113883.10.20.1.11" assigningAuthorityName="HL7 CCD"/>
+					<templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.6" assigningAuthorityName="IHE PCC"/> -->
+					
+				
+					<!-- SHALL [1..1] @ code=11450-4 CCD -141/142-->
+					<code code="11450-4" displayName="Problems" codeSystem="2.16.840.1.113883.6.1"
+						codeSystemName="LOINC"/>
+					<!-- SHALL [1..1] title CCD -143-->
+					<!-- CCD - 144 Not testable  -->
+					<title>Problems</title>
+					<!--SHALL [1..1] text CCD -140 -->
+					<text>
+						<table border="1" width="100%">
+							<thead>
+								<tr>
+									<th>Condition</th>
+									<th>Effective Dates</th>
+									<th>Condition Status</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Asthma</td>
+									<td>1950</td>
+									<td>Active</td>
+								</tr>
+							</tbody>
+						</table>
+					</text>
+					<!-- SHOULD [0..*] CCD-140, ALL ENTRIES ARE SHOULD -->
+					<entry typeCode="DRIV">
+						<!-- SHALL [1..1]  be represented by an ACT CCD-145 -->
+						<!-- SHALL [1..1] @ classCode="ACT" CCD-146-->
+						<!-- SHALL [1..1] @ moodCode="EVN" CCD -147-->
+						<act classCode="ACT" moodCode="EVN">
+							<!-- NEW CONSOLIDATED Problem Act TemplateId -->					
+							<templateId root="2.16.840.1.113883.10.20.21.4.3" />
+							
+							<!-- PREVIOUS templateId requirements
+								SHOULD [0..*] templateId problem act CCD-140 
+							<templateId root="2.16.840.1.113883.10.20.1.27"
+								assigningAuthorityName="HL7"/>
+							SHALL [1..1] templateId HITSP Condition 
+							<templateId root="2.16.840.1.113883.3.88.11.83.7"
+								assigningAuthorityName="HITSP"/>
+							 SHALL [1..1] templateId IHE Problem Concern Entry -
+							<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.2"
+							assigningAuthorityName="IHE"/>
+							SHALL [1..1] templateId IHE Concern Entry 
+							<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.1"
+								assigningAuthorityName="IHE"/>
+							-->
+							<!-- Problem act template -->
+							
+							
+							<!-- SHALL [1..*] id CCD-148 -->
+							<id root="6a2fa88d-4174-4909-aece-db44b60a3abb"/>
+							<!-- SHALL [1..1]  actCode@null flavor = "NA" CCD-149-->
+							<code nullFlavor="NA"/>
+							
+							<!-- <**> IHE PCC Requires status code with values: active, suspended, aborted or completed  IHE PCC-6.3.4.11.7-->
+							<!--Proposed Consolidation Constraint:
+								SHALL [1..1] statusCode 
+								SHALL [1..1] statusCode/@code from value set TEMP-OID-PROBLEM-STATUS-CODE ProblemStatusCode   (values active, suspended, aborted or completed)-->							
+							<statusCode code="active"/>
+							
+							<!-- MAY [0..1]  act/effectiveTime CCD-150-->
+							<!-- <**> SHALL [1..1] low element IHE PCC-6.3.4.11.7 -->
+							<!-- SHALL [1..1] high elment if statusCode@code=completed or aborted IHE PCC-6.3.4.11.7-->				
+							<!--Proposed Consolidation Constraint:
+								SHALL [1..1] low element
+								SHALL [1..1] high elment if statusCode@code=completed or aborted
+								<***> SHALL NOT [1..1] high element if statusCode@code=active or suspended
+							-->
+							<effectiveTime>
+								<low value="1950"/>
+							</effectiveTime>
+							
+							
+							<!-- MAY [0..1] HITSP Table 2-11 Data Element 7.05 Treating Provider, performer optional -->
+							<performer>
+								<assignedEntity>
+									<!-- SHALL [1..1] SHALL [1..*] performer/id HITSP Table 2-11 Data Element 7.11 Treating Provider ID, (required by CDA R2)
+										The performer/id SHALL link to a provider in the header under cda:ClinicalDocument/cda:documentationOf/cda:serviceEvent/cda:performer.
+										(Additional prose: Using a link between provider in the problems entry and the provider in the header eliminates duplicate information.)
+										-->
+									<id root="20cf14fb-b65c-4c8c-a54d-b0cca834c18c" extension="NA"/>
+									<!-- SHALL [1..1] - CONF-HP-7, all assignedEntity must have addr and telecom -->
+									<addr nullFlavor="NA"/>
+									<telecom nullFlavor="NA"/>
+								</assignedEntity>
+							</performer>
+							
+							
+							
+							<!-- *************PATIENT AWARENESS************* -->
+							<!-- <**> Neither HITSP nor IHE mention or reference the Patient awareness Template  -->
+							<!-- Proposed Consolidation Constraint: Do not include Patient Awareness (CCD-178-183) in consolidated guide  -->
+							
+							<!-- MAY [0..1] problem act template MAY contain Patient awareness template CCD-179-->
+							<!-- MAY [0..1] problem observation template MAY contain Patient awareness template CCD-179-->
+							<!-- SHALL [1..1] participant  CCD- 178-->
+							<!-- SHALL [1..1] typeCode "SBJ" 2.16.840.1.113883.5.90  "STATIC" CCD-181-->
+							<participant typeCode="SBJ">
+								<!-- Patient awareness template ID -->
+								<templateId root="2.16.840.1.113883.10.20.1.48"/>
+								<!-- SHALL [1..1] awarenessCode from valueSet 2.16.840.1.113883.1.11.10310 TargetAwareness STATIC? ** CCD- 182
+									(  there are the 6 total codes in the HL7 codesystem) 
+									ValueSet/codeSystem members: D (denying), F (full awareness), I (incapable), M (marginal), P (partical), U (uninformed) -->
+								<awarenessCode code="F" displayName="full awareness"
+									codeSystem="2.16.840.1.113883.5.137"
+									codeSystemName="TargetAwarness"> </awarenessCode>
+								<!-- SHALL [1..1] participant Role CCD-183-->
+								<participantRole>
+									<!-- SHALL [1..1] id CCD -183-->
+									<!-- Primitive/narrative: participant/participantRole/id SHALL = ClinicalDocument/recordTarget/patientRole/id CCD-183-->
+									<!-- Id flags an incorrect error in schematron. Schematron for CCD should be fixed. -->
+									<id root="2.16.840.1.113883.3.468" extension="996-756-495"/>
+									<!-- ** This id is the same as the
+										ClinicalDocument / recordTarget / patientRole / id, yet the Lanatana and  NIST validator throws the 
+										following error: The value of the participant/participantRole/id) SHALL also be present in ClinicalDocument / recordTarget / patientRole / id **-->
+									<addr>
+										<!-- SHALL [1..3] streetAddressLine -->
+										<streetAddressLine>21 North Ave.</streetAddressLine>
+										<!-- SHALL [1..1] ...-->
+										<city>Burlington</city>
+										<!-- SHALL [1..1] HITSP/C80 Section 2.2.1.1.1 State-->
+										<state>MA</state>
+										<!-- SHALL [1..1] HITSP/C80 Section 2.2.1.1.2 Postal Code-->
+										<postalCode>02368</postalCode>
+										<!-- SHOULD [0..1] country HITSP/C80 Section 2.2.1.1.3 Country -->
+										<country>USA</country>
+									</addr>
+									<!-- SHOULD [ 1..*] -->
+									<telecom value="tel:(555)555-1003"/>	
+								</participantRole>
+							</participant>
+							<!-- *************END OF PATIENT AWARENESS************* -->
+							
+							
+							
+							<!-- SHALL [1..*]  act/entryRelationship CCD-151-->
+							<!-- MAY [0..1]  @typeCode="SUBJ" CCD-152-->
+							<!-- SHOULD [0..1] CCD-153  The target of a problem act with 
+							Act / entryRelationship / @typeCode=”SUBJ” SHOULD be a problem observation -->
+							<!-- SHALL [1..1] @inversionInd=False -->
+							<!--<**> SHALL [1..*] entryRelationship @typeCode="SUBJ", entryRelationship SHALL [1..1] Problem Observation or Allergy Observartion (branch=yes) IHE PCC 6.3.4.11.9-->
+							<!-- Proposed resolution: 
+								SHALL [1..*] entryRelationship @typeCode="SUBJ", entryRelationship SHALL [1..1] Problem Observation or Allergy Observation
+							-->
+														
+							<!-- in tdb: problem act template SHALL contain and [1..*]entryRelationship, 
+							MAY contain typeCode [0..1]SUBJ which SHOULD [0..1]problem observation template ID ..28 
+							(or whatever the new tid will be)-->
+							<entryRelationship typeCode="SUBJ" inversionInd="false">
+								<!-- SHALL  [1..1] observation (Problem template) CCD-154-->
+								<!-- SHALL  [1..1] @moodCode= "EVN" CCD-155-->
+								<observation classCode="OBS" moodCode="EVN">
+									
+									<!-- NEW CONSOLIDATED Problem ObservationTemplateId -->
+									<templateId root="2.16.840.1.113883.10.20.21.4.4"/>
+									
+									<!-- PREVIOUS templateId requirements
+									 SHOULD [0..*] CCD-140 A problem act contain problem templateId
+									<templateId root="2.16.840.1.113883.10.20.1.28"/>
+									<**>  IHE PCC Problem Entry
+									<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5" assigningAuthorityName="IHE PCC"/> -->
+									<!-- Problem observation template -->
+									
+									<!-- <**> SHALL [1..*] id IHE PCC 6.3.4.14.6 -->								
+									<!-- additional guidance:  If the source EMR does not or cannot supply an intrinsic identifier, then a GUID shall be provided as the root, with no extension. At least one identifier must be present, more than one may appear. -->
+									<!-- Proposed resolution: 
+										SHALL [1..*] id 
+									-->
+									<id root="d11275e7-67ae-11db-bd13-0800200c9a66"/>
+									
+									<!-- SHALL [1..1] code  and MAY be selected from ValueSet 2.16.840.1.113883.1.11.20.14 ProblemTypeCode CCD-159-->
+									<!-- SHALL [1..1] code and SHALL be selected from C83 2.2.3.1.2 Problem Type (HITSP 7.02) -->
+									<!-- <**> The value for “Observation / code” in a problem observation SHOULD be selected from ValueSet 2.16.840.1.113883.1.11.20.14 ProblemTypeCode STATIC 20061017.  (IHE 6.3.4.14.7) -->
+									<!-- Proposed resolution:
+										SHALL [1..1] code  and SHOULD be selected from HITSP C80 ValueSet 2.16.840.1.113883.3.88.12.3221.7.2 ProblemTypeCode
+									-->
+									<code code="64572001" codeSystem="2.16.840.1.113883.6.96" displayName="Condition"/>
+									
+									<!-- <**> SHALL [1..1] text HITSP HITSP/C83 Table 2-11, Data Element 7.03 and Section 2.2.2.7.4 -->
+									<text>
+										<!-- To be discussed on 2/22-SHALL contain @value pointing to narrative text -->
+										<reference value="ASTHMA"/>
+									</text>
+									<!-- SHALL [1..1]  statusCode = "completed"  CCD-156-->
+									<!-- SHALL [1..1]  ActStatus = "STATIC" 2.16.840.1.113883.5.14 CCD-157 -->
+									<statusCode code="completed"/>
+									<!-- SHOULD [0..1] effectiveTime  CCD-158-->
+									<effectiveTime>
+										<low value="1950"/>
+									</effectiveTime>
+									
+									<!-- MAY [0..1] value be present. HITSP 7.04
+										If present, SHALL be coded as specified in HITSP/C80 Section 2.2.3.1.1 Problem 
+									-->
+									
+									<!-- SHALL [1..1] value be present. xsi:type=’CD’
+										If coded value, @code and @codeSystem SHALL be present
+										If uncoded, all attributes other than xsi:type='CD' SHALL NOT be present. IHE 6.3.4.14.11
+									-->
+									<!-- Proposed resolution:
+										SHALL [1..1] value be present. xsi:type=’CD’
+										SHALL be coded as specified in HITSP/C80 Section 2.2.3.1.1 Problem
+									-->
+									<value xsi:type="CD" code="195967001"
+										codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED"
+										displayName="Asthma"/>
+									
+									<!-- MAY [0..1] entryRelationship of @TypeCode SUBJ containing 
+										(templateId 2.16.840.1.113883.10.20.1.38 age observation template CCD-160
+									-->
+									<!--SHALL [1..1]  @typeCode SUBJ CCD-160-->
+									<!--SHALL [1..1]  inversionInd="true" -->
+									<entryRelationship typeCode="SUBJ" inversionInd="true">
+										<!--SHALL [1..1]  @alassCode="OBS" CCD-226 -->
+										<!--SHALL [1..1]  @moodCode="EVN" -->
+										<observation classCode="OBS" moodCode="EVN">
+											<!--SHALL [1..1] templateId CCD-227-->
+											<!--SHALL [1..1] @root="2.16.840.1.113883.10.20.1.38" CCD-225-->
+											<templateId root="2.16.840.1.113883.10.20.1.38"/>
+											<!--SHALL [1..1] @code="397659008" CCD-228-->
+											<!--SHALL [1..1] @codeSystem="2.16.840.1.113883.6.96" CCD-228-->
+											<code code="397659008" codeSystem="2.16.840.1.113883.6.96" displayName="Age"/>
+											<!--SHALL [1..1] statusCode CCD-229-->
+											<!--SHALL [1..1] @code="completed" CCD-230-->
+											<statusCode code="completed"/>
+											<!-- SHALL [1..1] value element CCD-231-->
+											<value xsi:type="INT" value="57"/>
+										</observation>
+									</entryRelationship>
+									
+									
+									
+									<!-- SHALL [1..*]  Source CCD-161 ** What to do with this "source" REQ must be put discussed.-->
+									<!-- MAY [0..1] problem status observation (templateId 2.16.840.1.113883.10.20.1.50) CCD-162-->
+									<!-- NOTE: Create problem status template which will be contained in the problem observation template as MAY [0..1] 
+										and will conform to (imply) the status observation template 2.16.840.1.113883.10.20.1.57-->
+									<!-- SHALL [1..1] @type code "REFR" STATIC CCD-509 -->
+									<entryRelationship typeCode="REFR">
+										<!-- SHALL conform to status observation (templateId 2.16.840.1.113883.10.20.1.57) CCD-163 -->
+										<!-- SHALL [1..1] Observation (a status observation SHALL be an observation CCD-508] -->
+										<!-- SHALL [1..1] @ classCode "OBS" CCD-510-->
+										<!-- SHALL [1..1] @moodCode "EVN" CCD-511 -->
+										<observation classCode="OBS" moodCode="EVN">
+											<!-- NEW CONSOLIDATED Problem Status ObservationTemplateId -->
+											<templateId root="2.16.840.1.113883.10.20.21.4.6"/>
+											
+											<!-- PREVIOUS templateId requirements
+											status observation template 
+											<templateId root="2.16.840.1.113883.10.20.1.57"/>
+											 Problem status observation template 
+											<templateId root="2.16.840.1.113883.10.20.1.50"/>-->
+																						
+											<!-- SHALL [1..1] observation/code ="33999-4" STATIC CCD-513 -->
+											<code code="33999-4" codeSystem="2.16.840.1.113883.6.1"
+												codeSystemName="LOINC" displayName="Status"/>
+											<!-- SHALL [1..1] statusCode CCD- 514-->
+											<!-- SHALL [1..1] @code= completed CCD-515 -->
+											<statusCode code="completed"/>
+											<!-- SHALL [1..1] observationValue ="CE" CCD-516 (.57)-->
+											<!-- SHALL [1..1] observationValue ="CE" SHALL be from ValueSet 2.16.840.1.113883.1.11.20.13 ProblemStatusCode STATIC CCD-164 (.50)-->
+											<value xsi:type="CE" code="55561003"
+												codeSystem="2.16.840.1.113883.6.96"
+												codeSystemName="SNOMED" displayName="Active"/>
+											<!-- SHALL NOT  contain any additional Observation attributes CCD-517-->
+											<!-- SHALL NOT  contain any additional Observation participants CCD-518-->
+											<!-- SHALL NOT  contain any additional Observation relationships CCD-519-->
+										</observation>
+									</entryRelationship>
+									
+									<!-- MAY [0..1] problem healthstatus observation (templateId 2.16.840.1.113883.10.20.1.51) CCD-165-->
+									<!-- NOTE: Create problem healthstatus template which will be contained in the problem observation template as MAY [0..1] 
+										and will conform to (imply) the status observation template 2.16.840.1.113883.10.20.1.57-->
+									<!-- SHALL [1..1] @type code "REFR" STATIC CCD-509 -->
+									<entryRelationship typeCode="REFR">
+										<!-- SHALL conform to status observation (templateId 2.16.840.1.113883.10.20.1.57) CCD-166 -->
+										<!-- SHALL [1..1) Observation (a status observation SHALL be an observation CCD-508] -->
+										<!-- SHALL [1..1] @ classCode "OBS" CCD-510-->
+										<!-- SHALL [1..1] @moodCode "EVN" CCD-511 -->
+										<observation classCode="OBS" moodCode="EVN">
+											
+											<!-- NEW CONSOLIDATED Heatlh Status ObservationTemplateId -->
+											<templateId root="2.16.840.1.113883.10.20.21.4.5"/>
+											
+											<!-- PREVIOUS templateId requirements
+											status observation template -
+											<templateId root="2.16.840.1.113883.10.20.1.57"/>
+											Problem health status observation template 
+											<templateId root="2.16.840.1.113883.10.20.1.51"/>-->
+											
+											
+											<!-- SHALL [1..1] observation/code ="11323-3" "Health Status" LOINC STATIC CCD- 166 -->
+											<code code="11323-3" codeSystem="2.16.840.1.113883.6.1"
+												codeSystemName="LOINC" displayName="Health Status"/>
+											<!-- SHALL [1..1] statusCode CCD- 514-->
+											<!-- SHALL [1..1] @code= completed CCD-515 -->
+											<statusCode code="completed"/>
+											<!-- SHALL [1..1] observationValue ="CE" CCD-516-->
+											<!-- SHALL [1..1] observationValue ="CE" SHALL be from ValueSet 2.16.840.1.113883.1.11.20.12 ProblemHelathStatusCode STATIC CCD-167 -->
+											<value xsi:type="CE" code="161901003"
+												codeSystem="2.16.840.1.113883.6.96"
+												codeSystemName="SNOMED"
+												displayName="Chronically ill"/>
+											<!-- SHALL NOT [0..0] contain any additional Observation attributes CCD-517-->
+											<!-- SHALL NOT [0..0] contain any additional Observation participants CCD-518-->
+											<!-- SHALL NOT [0..0] contain any additional Observation relationships CCD-519-->
+										</observation>
+									</entryRelationship>
+								</observation>
+							</entryRelationship>
+							
+							
+							<!-- MAY [0..1]Episode observation templates CCD 168 -->
+							<!-- SHALL [1..1] "typeCode” is “SUBJ” CCD-176 2.16.840.1.113883.5.1002  STATIC CCD-176-->
+							<!-- SHALL [1..1] inversionInd is "true" CCD 176-->
+							<entryRelationship typeCode="SUBJ" inversionInd="true">
+								<!-- SHALL [1..1] Observation CCD-169] -->
+								<!-- SHALL [1..1] “OBS” 2.16.840.1.113883.5.6 ActClass STATIC. CCD-170-->
+								<!-- SHALL [1..1] “EVN” 2.16.840.1.113883.5.1001 ActMood STATIC. CCD-171-->
+								<observation classCode="OBS" moodCode="EVN">
+									<!-- Episode observation template -->
+									<templateId root="2.16.840.1.113883.10.20.1.41"/>
+									<!-- SHOULD [1..1] “ASSERTION”  2.16.840.1.113883.5.4 ActCode STATIC. CCD-174-->
+									<code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
+									<!-- SHALL [1..1 statusCode] CCD-172-->
+									<!-- SHALL [1..1] ObservationStatus/code ="completed" CCD-173 -->
+									<statusCode code="completed"/>
+									<!-- SHOULD [0..1] observationValue = "CD"  code ="404684003"  
+										(Clinical finding) codesystem="2.16.840.1.113883.6.96" (SNOMED) STATIC CCD-175-->
+									<value xsi:type="CD" code="404684003"
+										codeSystem="2.16.840.1.113883.6.96"
+										codeSystemName="SNOMED-CT" displayName="Clinical finding">
+										<!-- SHALL [0..1] qualifier -->
+										<qualifier>
+											<!-- name (as below) code system SNOMED CT STATIC CCD-175-->
+											<name code="246456000" displayName="Episodicity"/>
+											<!-- value (as below) code system SNOMED CT STATIC CCD-175-->
+											<value code="288527008" displayName="New episode"/>
+										</qualifier>
+									</value>
+									<!-- MAY [0..1] type code = SAS CCD-177 STATIC CCD-177-->
+									<entryRelationship typeCode="SAS">
+										<!-- SHALL  2.16.840.1.113883.5.1002 "Act" STATIC CCD-177-->
+										<act classCode="ACT" moodCode="EVN">
+											<id root="ec8a6ff8-ed4b-4f7e-82c3-e98e58b45de7"/>
+											<code nullFlavor="NA"/>
+										</act>
+									</entryRelationship>
+								</observation>
+							</entryRelationship>
+						</act>
+					</entry>
+				</section>
+			</component>
+		</structuredBody>
+	</component>
+</ClinicalDocument>
