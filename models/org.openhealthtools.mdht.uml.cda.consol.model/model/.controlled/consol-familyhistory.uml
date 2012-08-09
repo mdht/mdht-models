@@ -7,7 +7,7 @@
     <generalization xmi:id="_2SPMABSVEeGGzu7fmW9pXw">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
     </generalization>
-    <ownedAttribute xmi:id="_2SC-tBSVEeGGzu7fmW9pXw" name="classCode" visibility="private">
+    <ownedAttribute xmi:id="_2SC-tBSVEeGGzu7fmW9pXw" name="classCode" visibility="private" isReadOnly="true">
       <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_kthXUCHjEeGFLIX-2_sWzA" value="OBS"/>
     </ownedAttribute>
@@ -58,11 +58,11 @@
     <generalization xmi:id="_2I5CsRSVEeGGzu7fmW9pXw">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
     </generalization>
-    <ownedAttribute xmi:id="_2Is1cBSVEeGGzu7fmW9pXw" name="classCode" visibility="private">
+    <ownedAttribute xmi:id="_2Is1cBSVEeGGzu7fmW9pXw" name="classCode" visibility="private" isReadOnly="true">
       <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_8yTtYCHgEeGFLIX-2_sWzA" value="OBS"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_2Is1chSVEeGGzu7fmW9pXw" name="moodCode" visibility="private">
+    <ownedAttribute xmi:id="_2Is1chSVEeGGzu7fmW9pXw" name="moodCode" visibility="private" isReadOnly="true">
       <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_BWV5QCHhEeGFLIX-2_sWzA" value="EVN"/>
     </ownedAttribute>

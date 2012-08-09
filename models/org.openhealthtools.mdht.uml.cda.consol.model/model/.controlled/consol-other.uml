@@ -400,12 +400,12 @@ The Assessment and Plan section represents both the clinician's conclusions and 
     <generalization xmi:id="_sHrUoRUSEeG6PvUxSTZnaw">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
     </generalization>
-    <ownedAttribute xmi:id="_2MdMQBUSEeG6PvUxSTZnaw" name="classCode" visibility="private">
+    <ownedAttribute xmi:id="_2MdMQBUSEeG6PvUxSTZnaw" name="classCode" visibility="private" isReadOnly="true">
       <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_2PtmcBq2EeGo461UQq-B1g" value="OBS"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_2MdMTBUSEeG6PvUxSTZnaw" name="moodCode" visibility="private">
+    <ownedAttribute xmi:id="_2MdMTBUSEeG6PvUxSTZnaw" name="moodCode" visibility="private" isReadOnly="true">
       <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_4IjXYBq2EeGo461UQq-B1g" value="EVN"/>
@@ -467,7 +467,7 @@ The Assessment and Plan section represents both the clinician's conclusions and 
     <generalization xmi:id="_2HCBgRSVEeGGzu7fmW9pXw">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_YiANsDxYEd6JwqSGecoePg"/>
     </generalization>
-    <ownedAttribute xmi:id="_2G8h-BSVEeGGzu7fmW9pXw" name="classCode" visibility="private">
+    <ownedAttribute xmi:id="_2G8h-BSVEeGGzu7fmW9pXw" name="classCode" visibility="private" isReadOnly="true">
       <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOntkDcEd6xYZuu1VKCVw"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_1DWqEEbnEd6besF9iFIJkQ"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_2G8h-RSVEeGGzu7fmW9pXw" value="ACT"/>
@@ -487,11 +487,10 @@ The Assessment and Plan section represents both the clinician's conclusions and 
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2G8iAhSVEeGGzu7fmW9pXw" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2G8iAxSVEeGGzu7fmW9pXw"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_2G8h-xSVEeGGzu7fmW9pXw" name="statusCode" visibility="private" isReadOnly="true" aggregation="composite">
+    <ownedAttribute xmi:id="_2G8h-xSVEeGGzu7fmW9pXw" name="statusCode" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2G8h_RSVEeGGzu7fmW9pXw" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2G8h_hSVEeGGzu7fmW9pXw"/>
-      <defaultValue xmi:type="uml:LiteralString" xmi:id="_2G8h_xSVEeGGzu7fmW9pXw" value="completed"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_c4-VENywEeG3d7pEoxuOZA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_c4-VEdywEeG3d7pEoxuOZA" value="1"/>
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_3iHhABnbEeGs5a462vYX5Q" base_Class="_2G8h9RSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.20">
@@ -565,7 +564,7 @@ The Assessment and Plan section represents both the clinician's conclusions and 
     <generalization xmi:id="_c7QfoB-YEeGtfPlBCjHWkw">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#__QZaIEcZEd6besF9iFIJkQ"/>
     </generalization>
-    <ownedAttribute xmi:id="_nD-cEB-YEeGtfPlBCjHWkw" name="classCode" visibility="private">
+    <ownedAttribute xmi:id="_nD-cEB-YEeGtfPlBCjHWkw" name="classCode" visibility="private" isReadOnly="true">
       <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zE4tEDcEd6xYZuu1VKCVw"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vCKaoB-YEeGtfPlBCjHWkw" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vCKaoR-YEeGtfPlBCjHWkw" value="1"/>
@@ -643,7 +642,7 @@ The Assessment and Plan section represents both the clinician's conclusions and 
     <reference href="../consol-vocab.uml#_DhjiABueEeGnMahsPjlwOw"/>
     <ruleId>CONF:7394</ruleId>
   </CDA:ValueSetConstraint>
-  <CDA:CodeSystemConstraint xmi:id="_wN9NcBq4EeGo461UQq-B1g" code="completed" base_Property="_2G8h-xSVEeGGzu7fmW9pXw">
+  <CDA:CodeSystemConstraint xmi:id="_wN9NcBq4EeGo461UQq-B1g" code="completed" displayName="Completed" base_Property="_2G8h-xSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:7396</ruleId>
   </CDA:CodeSystemConstraint>
@@ -671,10 +670,6 @@ The Assessment and Plan section represents both the clinician's conclusions and 
   <CDA:PropertyValidation xmi:id="_tIwpAB-YEeGtfPlBCjHWkw" severity="WARNING" base_Property="_nEARQB-YEeGtfPlBCjHWkw">
     <ruleId>CONF:7761</ruleId>
   </CDA:PropertyValidation>
-  <CDA:CodeSystemConstraint xmi:id="_2cHDsB-YEeGtfPlBCjHWkw" base_Property="_nD-cEB-YEeGtfPlBCjHWkw">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ywdZ4Gg7Ed-ilOLYnIx0jA"/>
-    <ruleId>CONF:7758</ruleId>
-  </CDA:CodeSystemConstraint>
   <CDA:ValueSetConstraint xmi:id="_B4zJcB-ZEeGtfPlBCjHWkw" base_Property="_nD_qMB-YEeGtfPlBCjHWkw">
     <reference href="../consol-vocab.uml#_IzJFYR-ZEeGtfPlBCjHWkw"/>
     <ruleId>CONF:7759</ruleId>
@@ -867,7 +862,7 @@ The Assessment and Plan section represents both the clinician's conclusions and 
     <generalization xmi:id="_mEIgwTVyEeGaW4kr-GbV8Q">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
     </generalization>
-    <ownedAttribute xmi:id="_U8WH0ECTEeGELr7uj3LK_Q" name="code" visibility="private" isReadOnly="true" aggregation="composite">
+    <ownedAttribute xmi:id="_U8WH0ECTEeGELr7uj3LK_Q" name="code" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WA5VEECTEeGELr7uj3LK_Q" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WA5VEUCTEeGELr7uj3LK_Q" value="1"/>
@@ -1165,4 +1160,7 @@ The Assessment and Plan section represents both the clinician's conclusions and 
   <CDA:ConstraintValidation xmi:id="_Te7vUHehEeGLwesdFe7o6w" base_Constraint="_QL-JwHehEeGLwesdFe7o6w">
     <ruleId>CONF:9439</ruleId>
   </CDA:ConstraintValidation>
+  <CDA:PropertyValidation xmi:id="_xA5L8Ny4EeG3d7pEoxuOZA" base_Property="_nD-cEB-YEeGtfPlBCjHWkw">
+    <ruleId>CONF:7758</ruleId>
+  </CDA:PropertyValidation>
 </xmi:XMI>

@@ -91,7 +91,7 @@ public class ReasonForVisitSectionImpl extends SectionImpl implements ReasonForV
 	 * @generated
 	 */
 	public ReasonForVisitSection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // ReasonForVisitSectionImpl

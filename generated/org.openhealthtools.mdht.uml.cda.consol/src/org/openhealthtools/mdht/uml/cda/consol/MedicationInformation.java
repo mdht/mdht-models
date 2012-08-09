@@ -22,8 +22,8 @@ import org.openhealthtools.mdht.uml.cda.ManufacturedProduct;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.consol.ConsolPackage#getMedicationInformation()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MedicationInformationTemplateId MedicationInformationClassCode MedicationInformationManufacturedMaterial MedicationInformationMedicationInformationManufacturedMaterialCodeOriginalText MedicationInformationMedicationInformationManufacturedMaterialReference MedicationInformationMedicationInformationManufacturedMaterialCodeTranslation MedicationInformationMedicationInformationManufacturedMaterialCode' templateId.root='2.16.840.1.113883.10.20.22.4.23' constraints.validation.info='MedicationInformationId MedicationInformationManufacturerOrganization' classCode='MANU' constraints.validation.query='MedicationInformationMedicationInformationManufacturedMaterialCodeOriginalText MedicationInformationMedicationInformationManufacturedMaterialReference MedicationInformationMedicationInformationManufacturedMaterialCodeTranslation MedicationInformationMedicationInformationManufacturedMaterialCode'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolMedicationInformationMedicationInformationManufacturedMaterial constraints.validation.error='MedicationInformationManufacturedMaterialCodeOriginalText MedicationInformationManufacturedMaterialReference MedicationInformationManufacturedMaterialCodeTranslation MedicationInformationManufacturedMaterialCode' code.codeSystem='2.16.840.1.113883.6.88' code.codeSystemName='RxNorm'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MedicationInformationTemplateId MedicationInformationClassCode MedicationInformationManufacturedMaterial MedicationInformationMedicationInformationManufacturedMaterialCode' templateId.root='2.16.840.1.113883.10.20.22.4.23' constraints.validation.info='MedicationInformationId MedicationInformationManufacturerOrganization MedicationInformationMedicationInformationManufacturedMaterialCodeTranslation' classCode='MANU' constraints.validation.warning='MedicationInformationMedicationInformationManufacturedMaterialCodeOriginalText MedicationInformationMedicationInformationManufacturedMaterialReference' constraints.validation.query='MedicationInformationMedicationInformationManufacturedMaterialCodeOriginalText MedicationInformationMedicationInformationManufacturedMaterialReference MedicationInformationMedicationInformationManufacturedMaterialCodeTranslation MedicationInformationMedicationInformationManufacturedMaterialCode'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolMedicationInformationMedicationInformationManufacturedMaterial constraints.validation.warning='MedicationInformationManufacturedMaterialCodeOriginalText MedicationInformationManufacturedMaterialReference' constraints.validation.info='MedicationInformationManufacturedMaterialCodeTranslation' code.codeSystem='2.16.840.1.113883.6.88' code.codeSystemName='RxNorm' constraints.validation.error='MedicationInformationManufacturedMaterialCode'"
  * @generated
  */
 public interface MedicationInformation extends ManufacturedProduct {
@@ -57,11 +57,11 @@ public interface MedicationInformation extends ManufacturedProduct {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * isDefined('classCode')
+	 * isDefined('classCode') and self.classCode=vocab::RoleClassManufacturedProduct::MANU
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='isDefined(\'classCode\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='isDefined(\'classCode\') and self.classCode=vocab::RoleClassManufacturedProduct::MANU'"
 	 * @generated
 	 */
 	boolean validateMedicationInformationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context);

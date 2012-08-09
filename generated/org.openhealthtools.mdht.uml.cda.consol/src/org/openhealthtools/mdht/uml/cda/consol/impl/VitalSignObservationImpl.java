@@ -173,7 +173,7 @@ public class VitalSignObservationImpl extends ObservationImpl implements VitalSi
 	 * @generated
 	 */
 	public VitalSignObservation init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // VitalSignObservationImpl

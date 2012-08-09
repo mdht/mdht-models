@@ -13,6 +13,7 @@ package org.openhealthtools.mdht.uml.cda.consol.impl;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.SOPInstanceObservation;
@@ -178,11 +179,11 @@ public class SeriesActImpl extends ActImpl implements SeriesAct {
 
 	/**
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SOPInstanceObservation getSOPInstanceObservation() {
-		return SeriesActOperations.getSOPInstanceObservation(this);
+	public EList<SOPInstanceObservation> getSOPInstanceObservations() {
+		return SeriesActOperations.getSOPInstanceObservations(this);
 	}
 
 	/**
@@ -191,7 +192,7 @@ public class SeriesActImpl extends ActImpl implements SeriesAct {
 	 * @generated
 	 */
 	public SeriesAct init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // SeriesActImpl

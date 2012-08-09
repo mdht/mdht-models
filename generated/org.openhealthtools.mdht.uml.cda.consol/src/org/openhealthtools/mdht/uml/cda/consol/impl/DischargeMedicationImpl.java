@@ -111,7 +111,7 @@ public class DischargeMedicationImpl extends ActImpl implements DischargeMedicat
 	 * @generated
 	 */
 	public DischargeMedication init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // DischargeMedicationImpl

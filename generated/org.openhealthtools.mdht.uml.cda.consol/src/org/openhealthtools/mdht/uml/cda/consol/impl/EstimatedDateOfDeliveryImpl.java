@@ -109,7 +109,7 @@ public class EstimatedDateOfDeliveryImpl extends ObservationImpl implements Esti
 	 * @generated
 	 */
 	public EstimatedDateOfDelivery init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // EstimatedDateOfDeliveryImpl

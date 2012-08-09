@@ -15,7 +15,6 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
-import org.openhealthtools.mdht.uml.cda.Encounter;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.Indication;
 import org.openhealthtools.mdht.uml.cda.consol.Instructions;
@@ -80,8 +79,7 @@ public class ProcedureActivityActImpl extends ActImpl implements ProcedureActivi
 	 */
 	public boolean validateProcedureActivityActOriginalTextReferenceValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureActivityActOperations.validateProcedureActivityActOriginalTextReferenceValue(
-			this, diagnostics, context);
+		return ProcedureActivityActOperations.validateProcedureActivityActOriginalTextReferenceValue(this, diagnostics, context);
 	}
 
 	/**
@@ -110,8 +108,7 @@ public class ProcedureActivityActImpl extends ActImpl implements ProcedureActivi
 	 */
 	public boolean validateProcedureActivityActServiceDeliveryLocationTypeCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureActivityActOperations.validateProcedureActivityActServiceDeliveryLocationTypeCode(
-			this, diagnostics, context);
+		return ProcedureActivityActOperations.validateProcedureActivityActServiceDeliveryLocationTypeCode(this, diagnostics, context);
 	}
 
 	/**
@@ -121,8 +118,7 @@ public class ProcedureActivityActImpl extends ActImpl implements ProcedureActivi
 	 */
 	public boolean validateProcedureActivityActInstructionsInversion(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureActivityActOperations.validateProcedureActivityActInstructionsInversion(
-			this, diagnostics, context);
+		return ProcedureActivityActOperations.validateProcedureActivityActInstructionsInversion(this, diagnostics, context);
 	}
 
 	/**
@@ -222,18 +218,7 @@ public class ProcedureActivityActImpl extends ActImpl implements ProcedureActivi
 	 */
 	public boolean validateProcedureActivityActServiceDeliveryLocation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureActivityActOperations.validateProcedureActivityActServiceDeliveryLocation(
-			this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateProcedureActivityActProcedureEncounter(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return ProcedureActivityActOperations.validateProcedureActivityActProcedureEncounter(this, diagnostics, context);
+		return ProcedureActivityActOperations.validateProcedureActivityActServiceDeliveryLocation(this, diagnostics, context);
 	}
 
 	/**
@@ -266,11 +251,12 @@ public class ProcedureActivityActImpl extends ActImpl implements ProcedureActivi
 
 	/**
 	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	* <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<ServiceDeliveryLocation> getServiceDeliveryLocations() {
-		return ProcedureActivityActOperations.getServiceDeliveryLocations(this);
+	public boolean validateProcedureActivityActEntryRelationship(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureActivityActOperations.validateProcedureActivityActEntryRelationship(this, diagnostics, context);
 	}
 
 	/**
@@ -278,8 +264,158 @@ public class ProcedureActivityActImpl extends ActImpl implements ProcedureActivi
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Encounter> getProcedureEncounters() {
-		return ProcedureActivityActOperations.getProcedureEncounters(this);
+	public boolean validateProcedureActivityActProcedureActPerformerAssignedEntity(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureActivityActOperations.validateProcedureActivityActProcedureActPerformerAssignedEntity(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureActivityActProcedureActPerformerAssignedEntityId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureActivityActOperations.validateProcedureActivityActProcedureActPerformerAssignedEntityId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureActivityActProcedureActPerformerAssignedEntityAddr(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureActivityActOperations.validateProcedureActivityActProcedureActPerformerAssignedEntityAddr(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureActivityActProcedureActPerformerAssignedEntityTelecom(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureActivityActOperations.validateProcedureActivityActProcedureActPerformerAssignedEntityTelecom(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrg(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureActivityActOperations.validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrg(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureActivityActOperations.validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgName(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureActivityActOperations.validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgName(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgAddr(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureActivityActOperations.validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgAddr(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgTelecom(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureActivityActOperations.validateProcedureActivityActProcedureActPerformerAssignedEntityRepOrgTelecom(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureActivityActEntryRelationshipProcedureActEncounterClassCode(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureActivityActOperations.validateProcedureActivityActEntryRelationshipProcedureActEncounterClassCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureActivityActEntryRelationshipProcedureActEncounterMoodCode(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureActivityActOperations.validateProcedureActivityActEntryRelationshipProcedureActEncounterMoodCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureActivityActEntryRelationshipProcedureActEncounterId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureActivityActOperations.validateProcedureActivityActEntryRelationshipProcedureActEncounterId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureActivityActEntryRelationshipInversionInd(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureActivityActOperations.validateProcedureActivityActEntryRelationshipInversionInd(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureActivityActEntryRelationshipTypeCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureActivityActOperations.validateProcedureActivityActEntryRelationshipTypeCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureActivityActEntryRelationshipProcedureActEncounter(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return ProcedureActivityActOperations.validateProcedureActivityActEntryRelationshipProcedureActEncounter(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<ServiceDeliveryLocation> getServiceDeliveryLocations() {
+		return ProcedureActivityActOperations.getServiceDeliveryLocations(this);
 	}
 
 	/**
@@ -315,7 +451,7 @@ public class ProcedureActivityActImpl extends ActImpl implements ProcedureActivi
 	 * @generated
 	 */
 	public ProcedureActivityAct init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // ProcedureActivityActImpl

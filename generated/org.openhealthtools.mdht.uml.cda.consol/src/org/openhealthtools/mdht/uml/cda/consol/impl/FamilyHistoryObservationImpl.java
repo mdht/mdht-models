@@ -58,8 +58,7 @@ public class FamilyHistoryObservationImpl extends ObservationImpl implements Fam
 	 */
 	public boolean validateFamilyHistoryObservationAgeObservationInversion(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationAgeObservationInversion(
-			this, diagnostics, context);
+		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationAgeObservationInversion(this, diagnostics, context);
 	}
 
 	/**
@@ -132,8 +131,7 @@ public class FamilyHistoryObservationImpl extends ObservationImpl implements Fam
 	 */
 	public boolean validateFamilyHistoryObservationEffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationEffectiveTime(
-			this, diagnostics, context);
+		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationEffectiveTime(this, diagnostics, context);
 	}
 
 	/**
@@ -152,8 +150,7 @@ public class FamilyHistoryObservationImpl extends ObservationImpl implements Fam
 	 */
 	public boolean validateFamilyHistoryObservationAgeObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationAgeObservation(
-			this, diagnostics, context);
+		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationAgeObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -163,8 +160,7 @@ public class FamilyHistoryObservationImpl extends ObservationImpl implements Fam
 	 */
 	public boolean validateFamilyHistoryObservationFamilyHistoryDeathObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationFamilyHistoryDeathObservation(
-			this, diagnostics, context);
+		return FamilyHistoryObservationOperations.validateFamilyHistoryObservationFamilyHistoryDeathObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -191,7 +187,7 @@ public class FamilyHistoryObservationImpl extends ObservationImpl implements Fam
 	 * @generated
 	 */
 	public FamilyHistoryObservation init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // FamilyHistoryObservationImpl

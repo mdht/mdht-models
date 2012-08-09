@@ -85,26 +85,28 @@ public class BoundaryObservationOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateBoundaryObservationTemplateId(BoundaryObservation boundaryObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_BOUNDARY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.BOUNDARY_OBSERVATION);
 			try {
 				VALIDATE_BOUNDARY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_BOUNDARY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_BOUNDARY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			boundaryObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_BOUNDARY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(boundaryObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.BOUNDARY_OBSERVATION__BOUNDARY_OBSERVATION_TEMPLATE_ID,
-					ConsolPlugin.INSTANCE.getString("BoundaryObservationTemplateId"),
-					new Object[] { boundaryObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.BOUNDARY_OBSERVATION__BOUNDARY_OBSERVATION_TEMPLATE_ID,
+						 ConsolPlugin.INSTANCE.getString("BoundaryObservationTemplateId"),
+						 new Object [] { boundaryObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -143,26 +145,28 @@ public class BoundaryObservationOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateBoundaryObservationClassCode(BoundaryObservation boundaryObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_BOUNDARY_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.BOUNDARY_OBSERVATION);
 			try {
 				VALIDATE_BOUNDARY_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_BOUNDARY_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_BOUNDARY_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			boundaryObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_BOUNDARY_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(boundaryObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.BOUNDARY_OBSERVATION__BOUNDARY_OBSERVATION_CLASS_CODE,
-					ConsolPlugin.INSTANCE.getString("BoundaryObservationClassCode"),
-					new Object[] { boundaryObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.BOUNDARY_OBSERVATION__BOUNDARY_OBSERVATION_CLASS_CODE,
+						 ConsolPlugin.INSTANCE.getString("BoundaryObservationClassCode"),
+						 new Object [] { boundaryObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -176,9 +180,9 @@ public class BoundaryObservationOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_BOUNDARY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '113036' and value.codeSystem = '1.2.840.10008.2.16.4')";
+	protected static final String VALIDATE_BOUNDARY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = '113036' and value.codeSystem = '1.2.840.10008.2.16.4')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateBoundaryObservationCode(BoundaryObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Boundary Observation Code</em>}' invariant operation.
@@ -205,25 +209,28 @@ public class BoundaryObservationOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateBoundaryObservationCode(BoundaryObservation boundaryObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_BOUNDARY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.BOUNDARY_OBSERVATION);
 			try {
 				VALIDATE_BOUNDARY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_BOUNDARY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_BOUNDARY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			boundaryObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_BOUNDARY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(boundaryObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.BOUNDARY_OBSERVATION__BOUNDARY_OBSERVATION_CODE,
-					ConsolPlugin.INSTANCE.getString("BoundaryObservationCode"), new Object[] { boundaryObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.BOUNDARY_OBSERVATION__BOUNDARY_OBSERVATION_CODE,
+						 ConsolPlugin.INSTANCE.getString("BoundaryObservationCode"),
+						 new Object [] { boundaryObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -262,26 +269,28 @@ public class BoundaryObservationOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateBoundaryObservationMoodCode(BoundaryObservation boundaryObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_BOUNDARY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.BOUNDARY_OBSERVATION);
 			try {
 				VALIDATE_BOUNDARY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_BOUNDARY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_BOUNDARY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			boundaryObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_BOUNDARY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(boundaryObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.BOUNDARY_OBSERVATION__BOUNDARY_OBSERVATION_MOOD_CODE,
-					ConsolPlugin.INSTANCE.getString("BoundaryObservationMoodCode"),
-					new Object[] { boundaryObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.BOUNDARY_OBSERVATION__BOUNDARY_OBSERVATION_MOOD_CODE,
+						 ConsolPlugin.INSTANCE.getString("BoundaryObservationMoodCode"),
+						 new Object [] { boundaryObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -320,25 +329,28 @@ public class BoundaryObservationOperations extends ClinicalStatementOperations {
 	 */
 	public static boolean validateBoundaryObservationValue(BoundaryObservation boundaryObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_BOUNDARY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.BOUNDARY_OBSERVATION);
 			try {
 				VALIDATE_BOUNDARY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_BOUNDARY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_BOUNDARY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			boundaryObservation)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_BOUNDARY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(boundaryObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
-					ConsolValidator.BOUNDARY_OBSERVATION__BOUNDARY_OBSERVATION_VALUE,
-					ConsolPlugin.INSTANCE.getString("BoundaryObservationValue"), new Object[] { boundaryObservation }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 ConsolValidator.DIAGNOSTIC_SOURCE,
+						 ConsolValidator.BOUNDARY_OBSERVATION__BOUNDARY_OBSERVATION_VALUE,
+						 ConsolPlugin.INSTANCE.getString("BoundaryObservationValue"),
+						 new Object [] { boundaryObservation }));
 			}
-
+			 
 			return false;
 		}
 		return true;

@@ -26,7 +26,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolAdvanceDirectiveObservationReference typeCode='REFR' constraints.validation.error='ReferenceTypeCode ReferenceExternalDocument'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolAdvanceDirectiveObservationReferenceExternalDocument constraints.validation.info='ExternalDocumentTextMediaType ExternalDocumentTextReference ExternalDocumentText' constraints.validation.error='ExternalDocumentId'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolAdvanceDirectiveObservationCustodian typeCode='CST' constraints.validation.error='CustodianTypeCode CustodianAdvanceDirectiveObservationCustodianRole'"
- *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolAdvanceDirectiveObservationCustodianCustodianRole constraints.validation.warning='CustodianRoleAddr CustodianRoleTelecom' classCode='ROL' constraints.validation.error='CustodianRoleClassCode CustodianRolePlayingEntity'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolAdvanceDirectiveObservationCustodianCustodianRole constraints.validation.warning='CustodianRoleAddr CustodianRoleTelecom' classCode='AGNT' constraints.validation.error='CustodianRoleClassCode CustodianRolePlayingEntity'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolAdvanceDirectiveObservationCustodianCustodianRoleCustodianEntity constraints.validation.error='CustodianEntityName'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/consolAdvanceDirectiveObservationVerifier constraints.validation.error='VerifierTime VerifierTypeCode VerifierParticipantRole' typeCode='VRF'"
  * @generated
@@ -264,11 +264,11 @@ public interface AdvanceDirectiveObservation extends Observation {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.participant->excluding(null)->select(typeCode=vocab::ParticipationType::CST).participantRole->excluding(null)->reject(isDefined('classCode') and classCode=vocab::RoleClassRoot::ROL)
+	 * self.participant->excluding(null)->select(typeCode=vocab::ParticipationType::CST).participantRole->excluding(null)->reject(isDefined('classCode') and classCode=vocab::RoleClassRoot::AGNT)
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant->excluding(null)->select(typeCode=vocab::ParticipationType::CST).participantRole->excluding(null)->reject(isDefined(\'classCode\') and classCode=vocab::RoleClassRoot::ROL)'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant->excluding(null)->select(typeCode=vocab::ParticipationType::CST).participantRole->excluding(null)->reject(isDefined(\'classCode\') and classCode=vocab::RoleClassRoot::AGNT)'"
 	 * @generated
 	 */
 	boolean validateAdvanceDirectiveObservationCustodianCustodianRoleClassCode(DiagnosticChain diagnostics,

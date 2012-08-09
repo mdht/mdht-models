@@ -111,7 +111,7 @@ public class AdmissionMedicationImpl extends ActImpl implements AdmissionMedicat
 	 * @generated
 	 */
 	public AdmissionMedication init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // AdmissionMedicationImpl

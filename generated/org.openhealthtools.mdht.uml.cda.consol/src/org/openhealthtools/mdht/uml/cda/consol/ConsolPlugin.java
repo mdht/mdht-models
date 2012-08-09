@@ -43,7 +43,7 @@ public final class ConsolPlugin extends EMFPlugin {
 	 * @generated
 	 */
 	public ConsolPlugin() {
-		super(new ResourceLocator[] {});
+		super(new ResourceLocator [] {});
 	}
 
 	/**

@@ -51,11 +51,11 @@ public interface DiagnosticImagingReport extends GeneralHeaderConstraints {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->forAll(section : cda::Section | not section.title.oclIsUndefined())
+	 * self.getAllSections()->reject(section : cda::Section | section.templateId->exists(root = '2.16.840.1.113883.10.20.6.1.1'))->forAll(section : cda::Section | not section.title.oclIsUndefined())
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->forAll(section : cda::Section | not section.title.oclIsUndefined())'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->reject(section : cda::Section | section.templateId->exists(root = \'2.16.840.1.113883.10.20.6.1.1\'))->forAll(section : cda::Section | not section.title.oclIsUndefined())'"
 	 * @generated
 	 */
 	boolean validateDiagnosticImagingReportAllSectionsHaveTitle(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -64,11 +64,11 @@ public interface DiagnosticImagingReport extends GeneralHeaderConstraints {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * self.getAllSections()->forAll(section : cda::Section | not section.text.oclIsUndefined())
+	 * self.getAllSections()->reject(section : cda::Section | section.templateId->exists(root = '2.16.840.1.113883.10.20.6.1.1'))->forAll(section : cda::Section | not section.text.oclIsUndefined())
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->forAll(section : cda::Section | not section.text.oclIsUndefined())'"
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->reject(section : cda::Section | section.templateId->exists(root = \'2.16.840.1.113883.10.20.6.1.1\'))->forAll(section : cda::Section | not section.text.oclIsUndefined())'"
 	 * @generated
 	 */
 	boolean validateDiagnosticImagingReportSectionsHaveText(DiagnosticChain diagnostics, Map<Object, Object> context);

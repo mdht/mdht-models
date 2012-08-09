@@ -786,24 +786,6 @@ public interface ConsolFactory extends EFactory {
 	ReasonForVisitSection createReasonForVisitSection();
 
 	/**
-	 * Returns a new object of class '<em>Encounter Performer</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Encounter Performer</em>'.
-	 * @generated
-	 */
-	EncounterPerformer createEncounterPerformer();
-
-	/**
-	 * Returns a new object of class '<em>Encounter Performer Assigned Entity</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Encounter Performer Assigned Entity</em>'.
-	 * @generated
-	 */
-	EncounterPerformerAssignedEntity createEncounterPerformerAssignedEntity();
-
-	/**
 	 * Returns a new object of class '<em>Anesthesia Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1146,24 +1128,6 @@ public interface ConsolFactory extends EFactory {
 	HospitalAdmissionDiagnosis createHospitalAdmissionDiagnosis();
 
 	/**
-	 * Returns a new object of class '<em>Medication Dispense Assigned Entity</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Medication Dispense Assigned Entity</em>'.
-	 * @generated
-	 */
-	MedicationDispenseAssignedEntity createMedicationDispenseAssignedEntity();
-
-	/**
-	 * Returns a new object of class '<em>Immunization Medication Information Manufactured Material</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Immunization Medication Information Manufactured Material</em>'.
-	 * @generated
-	 */
-	ImmunizationMedicationInformationManufacturedMaterial createImmunizationMedicationInformationManufacturedMaterial();
-
-	/**
 	 * Returns a new object of class '<em>Diagnostic Imaging Report</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1351,33 +1315,6 @@ public interface ConsolFactory extends EFactory {
 	 * @generated
 	 */
 	ImmunizationMedicationInformation createImmunizationMedicationInformation();
-
-	/**
-	 * Returns a new object of class '<em>Procedure Specimen</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Procedure Specimen</em>'.
-	 * @generated
-	 */
-	ProcedureSpecimen createProcedureSpecimen();
-
-	/**
-	 * Returns a new object of class '<em>Procedure Performer</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Procedure Performer</em>'.
-	 * @generated
-	 */
-	ProcedurePerformer createProcedurePerformer();
-
-	/**
-	 * Returns a new object of class '<em>Procedure Encounter</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Procedure Encounter</em>'.
-	 * @generated
-	 */
-	ProcedureEncounter createProcedureEncounter();
 
 	/**
 	 * Returns a new object of class '<em>Hospital Discharge Studies Summary Section</em>'.

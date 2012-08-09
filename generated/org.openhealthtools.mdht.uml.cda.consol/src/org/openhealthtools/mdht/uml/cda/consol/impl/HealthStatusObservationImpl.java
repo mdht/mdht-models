@@ -56,8 +56,7 @@ public class HealthStatusObservationImpl extends ObservationImpl implements Heal
 	 */
 	public boolean validateHealthStatusObservationHasTextReference(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HealthStatusObservationOperations.validateHealthStatusObservationHasTextReference(
-			this, diagnostics, context);
+		return HealthStatusObservationOperations.validateHealthStatusObservationHasTextReference(this, diagnostics, context);
 	}
 
 	/**
@@ -67,8 +66,7 @@ public class HealthStatusObservationImpl extends ObservationImpl implements Heal
 	 */
 	public boolean validateHealthStatusObservationHasTextReferenceValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HealthStatusObservationOperations.validateHealthStatusObservationHasTextReferenceValue(
-			this, diagnostics, context);
+		return HealthStatusObservationOperations.validateHealthStatusObservationHasTextReferenceValue(this, diagnostics, context);
 	}
 
 	/**
@@ -140,7 +138,7 @@ public class HealthStatusObservationImpl extends ObservationImpl implements Heal
 	 * @generated
 	 */
 	public HealthStatusObservation init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // HealthStatusObservationImpl
