@@ -20,18 +20,18 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.operations.VDTInpatientPatient
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>VDT Inpatient Patient Info</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object '
+ * <em><b>VDT Inpatient Patient Info</b></em>'. <!-- end-user-doc -->
  * <p>
  * </p>
- *
+ * 
  * @generated
  */
-public class VDTInpatientPatientInfoImpl extends GeneralHeaderConstraintsImpl implements VDTInpatientPatientInfo {
+public class VDTInpatientPatientInfoImpl extends GeneralHeaderConstraintsImpl
+		implements VDTInpatientPatientInfo {
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected VDTInpatientPatientInfoImpl() {
@@ -39,8 +39,8 @@ public class VDTInpatientPatientInfoImpl extends GeneralHeaderConstraintsImpl im
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -49,58 +49,74 @@ public class VDTInpatientPatientInfoImpl extends GeneralHeaderConstraintsImpl im
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
-	public boolean validateVDTInpatientPatientInfoCannotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return VDTInpatientPatientInfoOperations.validateVDTInpatientPatientInfoCannotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection(this, diagnostics, context);
+	public boolean validateVDTInpatientPatientInfoCannotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return VDTInpatientPatientInfoOperations
+				.validateVDTInpatientPatientInfoCannotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection(
+						this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
-	public boolean validateVDTInpatientPatientInfoMu2EncounterDiagnosesRequirements(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return VDTInpatientPatientInfoOperations.validateVDTInpatientPatientInfoMu2EncounterDiagnosesRequirements(this, diagnostics, context);
+	public boolean validateVDTInpatientPatientInfoMu2EncounterDiagnosesRequirements(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return VDTInpatientPatientInfoOperations
+				.validateVDTInpatientPatientInfoMu2EncounterDiagnosesRequirements(
+						this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
-	public boolean validateVDTInpatientPatientInfoCanHaveEitherRequiredOrOptionalVitalSignsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return VDTInpatientPatientInfoOperations.validateVDTInpatientPatientInfoCanHaveEitherRequiredOrOptionalVitalSignsSection(this, diagnostics, context);
+	public boolean validateVDTInpatientPatientInfoCanHaveEitherRequiredOrOptionalVitalSignsSection(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return VDTInpatientPatientInfoOperations
+				.validateVDTInpatientPatientInfoCanHaveEitherRequiredOrOptionalVitalSignsSection(
+						this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
-	public boolean validateVDTInpatientPatientInfoMedicationListConstraint(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return VDTInpatientPatientInfoOperations.validateVDTInpatientPatientInfoMedicationListConstraint(this, diagnostics, context);
+	public boolean validateVDTInpatientPatientInfoMedicationListConstraint(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return VDTInpatientPatientInfoOperations
+				.validateVDTInpatientPatientInfoMedicationListConstraint(this,
+						diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
-	public boolean validateGeneralHeaderConstraintsTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return VDTInpatientPatientInfoOperations.validateGeneralHeaderConstraintsTemplateId(this, diagnostics, context);
+	public boolean validateGeneralHeaderConstraintsTemplateId(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return VDTInpatientPatientInfoOperations
+				.validateGeneralHeaderConstraintsTemplateId(this, diagnostics,
+						context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
+	@Override
 	public VDTInpatientPatientInfo init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //VDTInpatientPatientInfoImpl
+} // VDTInpatientPatientInfoImpl

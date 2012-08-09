@@ -30,14 +30,15 @@ public class Test {
 		testSOCR("socr_sample");
 		validateSOCR("socr_sample");
 	}
-	
+
 	public static void testSOCR(String fileName) {
 		new StringBuffer();
 		String path = "samples/";
 		Mu2consolPackage.eINSTANCE.eClass();
 		ValidationResult result = new ValidationResult();
 		try {
-			ClinicalDocument clinicalDocument = CDAUtil.load((new FileInputStream(path + fileName + ".xml")), result);
+			ClinicalDocument clinicalDocument = CDAUtil.load(
+					(new FileInputStream(path + fileName + ".xml")), result);
 			System.out.println(clinicalDocument);
 			System.out.println(clinicalDocument.getAllSections().size());
 			for (Object j : clinicalDocument.getAllSections()) {
@@ -49,18 +50,20 @@ public class Test {
 		}
 	}
 
-	
 	public static void validateSOCR(String fileName) {
 		StringBuffer sb = new StringBuffer();
 		String path = "samples/";
 		Mu2consolPackage.eINSTANCE.eClass();
 		ValidationResult result = new ValidationResult();
 		try {
-			CDAUtil.load((new FileInputStream(path + fileName + ".xml")), result);
+			CDAUtil.load((new FileInputStream(path + fileName + ".xml")),
+					result);
 			for (Diagnostic dq : result.getErrorDiagnostics()) {
 				CDADiagnostic cdaDiagnosticq = new CDADiagnostic(dq);
-				sb.append("ERROR|" + cdaDiagnosticq.getMessage() + "|" + cdaDiagnosticq.getPath() + "|" +
-						cdaDiagnosticq.getCode() + "|" + cdaDiagnosticq.getSource());
+				sb.append("ERROR|" + cdaDiagnosticq.getMessage() + "|"
+						+ cdaDiagnosticq.getPath() + "|"
+						+ cdaDiagnosticq.getCode() + "|"
+						+ cdaDiagnosticq.getSource());
 				sb.append("\n");
 			}
 		} catch (Exception e) {
