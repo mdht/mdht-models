@@ -381,9 +381,10 @@ historical purposes.&#xD;
     <generalization xmi:id="_5Ha7ARUyEeGbmN_W114JUw">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
     </generalization>
-    <ownedAttribute xmi:id="_6-B3UBUyEeGbmN_W114JUw" name="classCode" visibility="private">
+    <ownedAttribute xmi:id="_6-B3UBUyEeGbmN_W114JUw" name="classCode" visibility="private" isReadOnly="true">
       <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_OTwl4Ny1EeG3d7pEoxuOZA" value="OBS"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_6-ejRBUyEeGbmN_W114JUw" name="moodCode" visibility="private" isReadOnly="true">
       <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>

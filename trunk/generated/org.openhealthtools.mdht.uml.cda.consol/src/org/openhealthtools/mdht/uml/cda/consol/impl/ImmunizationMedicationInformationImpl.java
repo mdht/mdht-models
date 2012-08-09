@@ -57,8 +57,7 @@ public class ImmunizationMedicationInformationImpl extends ManufacturedProductIm
 	 */
 	public boolean validateImmunizationMedicationInformationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ImmunizationMedicationInformationOperations.validateImmunizationMedicationInformationTemplateId(
-			this, diagnostics, context);
+		return ImmunizationMedicationInformationOperations.validateImmunizationMedicationInformationTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -68,8 +67,7 @@ public class ImmunizationMedicationInformationImpl extends ManufacturedProductIm
 	 */
 	public boolean validateImmunizationMedicationInformationClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ImmunizationMedicationInformationOperations.validateImmunizationMedicationInformationClassCode(
-			this, diagnostics, context);
+		return ImmunizationMedicationInformationOperations.validateImmunizationMedicationInformationClassCode(this, diagnostics, context);
 	}
 
 	/**
@@ -78,8 +76,7 @@ public class ImmunizationMedicationInformationImpl extends ManufacturedProductIm
 	 * @generated
 	 */
 	public boolean validateImmunizationMedicationInformationId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ImmunizationMedicationInformationOperations.validateImmunizationMedicationInformationId(
-			this, diagnostics, context);
+		return ImmunizationMedicationInformationOperations.validateImmunizationMedicationInformationId(this, diagnostics, context);
 	}
 
 	/**
@@ -89,8 +86,7 @@ public class ImmunizationMedicationInformationImpl extends ManufacturedProductIm
 	 */
 	public boolean validateImmunizationMedicationInformationManufacturerOrganization(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ImmunizationMedicationInformationOperations.validateImmunizationMedicationInformationManufacturerOrganization(
-			this, diagnostics, context);
+		return ImmunizationMedicationInformationOperations.validateImmunizationMedicationInformationManufacturerOrganization(this, diagnostics, context);
 	}
 
 	/**
@@ -100,8 +96,57 @@ public class ImmunizationMedicationInformationImpl extends ManufacturedProductIm
 	 */
 	public boolean validateImmunizationMedicationInformationManufacturedMaterial(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ImmunizationMedicationInformationOperations.validateImmunizationMedicationInformationManufacturedMaterial(
-			this, diagnostics, context);
+		return ImmunizationMedicationInformationOperations.validateImmunizationMedicationInformationManufacturedMaterial(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	* <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCodeOriginalText(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ImmunizationMedicationInformationOperations.validateImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCodeOriginalText(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialOriginalTextReference(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ImmunizationMedicationInformationOperations.validateImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialOriginalTextReference(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCodeTranslation(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ImmunizationMedicationInformationOperations.validateImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCodeTranslation(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCode(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ImmunizationMedicationInformationOperations.validateImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialLotNumberText(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ImmunizationMedicationInformationOperations.validateImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialLotNumberText(this, diagnostics, context);
 	}
 
 	/**
@@ -110,7 +155,7 @@ public class ImmunizationMedicationInformationImpl extends ManufacturedProductIm
 	 * @generated
 	 */
 	public ImmunizationMedicationInformation init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // ImmunizationMedicationInformationImpl

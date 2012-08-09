@@ -156,7 +156,7 @@ public class AllergyProblemActImpl extends ActImpl implements AllergyProblemAct 
 	 * @generated
 	 */
 	public AllergyProblemAct init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // AllergyProblemActImpl

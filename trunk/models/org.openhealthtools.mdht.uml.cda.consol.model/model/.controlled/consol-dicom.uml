@@ -152,9 +152,13 @@ DICOM Object Catalog sections are not intended for viewing and contain empty sec
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_hBIB0Eb1EeGp67IkyTw1fg" value="ATND"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_QLNPcErYEeGJpZWiuxRVIw" name="assignedEntity" type="_lCnhUEb1EeGp67IkyTw1fg" association="_QLNPckrYEeGJpZWiuxRVIw">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QLNPcUrYEeGJpZWiuxRVIw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NmvnoOASEeGixf7d-KaCvw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NmwOsOASEeGixf7d-KaCvw" value="1"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_lCnhUEb1EeGp67IkyTw1fg" name="AssignedEntity">
+      <ownedComment xmi:id="_PnBdUOASEeGixf7d-KaCvw">
+        <body>INLINE</body>
+      </ownedComment>
       <ownedRule xmi:id="_Lp03oEb2EeGp67IkyTw1fg" name="hasDICOMOrNUCCCode" constrainedElement="_lCnhUEb1EeGp67IkyTw1fg">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_NNEMAEb2EeGp67IkyTw1fg">
           <language>Analysis</language>
@@ -285,7 +289,7 @@ DICOM Object Catalog sections are not intended for viewing and contain empty sec
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_M7NSwEriEeGJpZWiuxRVIw" value="ROIBND"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_Hv8u0UriEeGJpZWiuxRVIw" name="code" visibility="private" isReadOnly="true" aggregation="composite">
+    <ownedAttribute xmi:id="_Hv8u0UriEeGJpZWiuxRVIw" name="code" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
@@ -374,7 +378,7 @@ DICOM Object Catalog sections are not intended for viewing and contain empty sec
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_yWn-AEocEd6c3qsAxlFHaQ"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_x6jFoErdEeGJpZWiuxRVIw" value="EVN"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_6tqhEErdEeGJpZWiuxRVIw" name="code" visibility="private" isReadOnly="true" aggregation="composite">
+    <ownedAttribute xmi:id="_6tqhEErdEeGJpZWiuxRVIw" name="code" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_HUTHQEocEd6c3qsAxlFHaQ"/>
     </ownedAttribute>
@@ -403,8 +407,8 @@ DICOM Object Catalog sections are not intended for viewing and contain empty sec
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_Njf0cEocEd6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_0dvlsEreEeGJpZWiuxRVIw" name="sOPInstanceObservation" type="_9o7WcEb6EeGp67IkyTw1fg" association="_0dvlskreEeGJpZWiuxRVIw">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9Rc3AEreEeGJpZWiuxRVIw" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9Rc3AUreEeGJpZWiuxRVIw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_j5EJUNzUEeGlwYKHyWQyhQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_j5EJUdzUEeGlwYKHyWQyhQ" value="1"/>
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_O_B8EEb6EeGp67IkyTw1fg" base_Class="_N2wscEb6EeGp67IkyTw1fg" templateId="2.16.840.1.113883.10.20.22.4.63"/>
@@ -559,12 +563,12 @@ DICOM Object Catalog sections are not intended for viewing and contain empty sec
     <generalization xmi:id="_vjpIsEb4EeGp67IkyTw1fg">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_YiANsDxYEd6JwqSGecoePg"/>
     </generalization>
-    <ownedAttribute xmi:id="_5xNI4Eb4EeGp67IkyTw1fg" name="classCode" visibility="private">
+    <ownedAttribute xmi:id="_5xNI4Eb4EeGp67IkyTw1fg" name="classCode" visibility="private" isReadOnly="true">
       <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOntkDcEd6xYZuu1VKCVw"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_1DWqEEbnEd6besF9iFIJkQ"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_CyLaIEb5EeGp67IkyTw1fg" value="ACT"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_5xNI4Ub4EeGp67IkyTw1fg" name="moodCode" visibility="private">
+    <ownedAttribute xmi:id="_5xNI4Ub4EeGp67IkyTw1fg" name="moodCode" visibility="private" isReadOnly="true">
       <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOpkkDcEd6xYZuu1VKCVw"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_yWn-AEocEd6c3qsAxlFHaQ"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_BlI_QEb5EeGp67IkyTw1fg" value="EVN"/>
@@ -575,7 +579,7 @@ DICOM Object Catalog sections are not intended for viewing and contain empty sec
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RgOXQVwTEeG0y_7i0ygc4g" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FHobYEocEd6c3qsAxlFHaQ"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_I445sEb5EeGp67IkyTw1fg" name="code" visibility="private" isReadOnly="true" aggregation="composite">
+    <ownedAttribute xmi:id="_I445sEb5EeGp67IkyTw1fg" name="code" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_HUTHQEocEd6c3qsAxlFHaQ"/>
     </ownedAttribute>
@@ -987,4 +991,5 @@ In both cases, inFulfillmentOf/order/id is mapped to the DICOM Accession Number 
   <CDA:CodeSystemConstraint xmi:id="_Qo4XcMbuEeGp28IjMvW3Ag" base_Property="_g5YnsFwVEeG0y_7i0ygc4g">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_vhyX0NdhEeGlV9-AkwqSzg"/>
   </CDA:CodeSystemConstraint>
+  <CDA:AssociationValidation xmi:id="_15MPIOC_EeG_7ZQp-aLqLw" severity="WARNING" base_Association="_g5aSIkrYEeGJpZWiuxRVIw"/>
 </xmi:XMI>

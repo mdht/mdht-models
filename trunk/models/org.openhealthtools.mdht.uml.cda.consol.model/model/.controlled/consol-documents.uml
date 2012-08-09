@@ -3301,12 +3301,10 @@ A History and Physical Examination is required upon hospital admission as well a
       <generalization xmi:id="_gzxUoD7ZEeGvOdejHZ7dYg">
         <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_4_GbMEcZEd6besF9iFIJkQ"/>
       </generalization>
-      <ownedAttribute xmi:id="_jS1_ID7ZEeGvOdejHZ7dYg" name="typeId" visibility="private" isReadOnly="true" aggregation="composite">
-        <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_sKX1MEb9Ed6besF9iFIJkQ"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yMSIQD-MEeGvOdejHZ7dYg" value="1"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yMSIQT-MEeGvOdejHZ7dYg" value="1"/>
-        <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_fSVT5kxwEd6h-an5IXo-DA"/>
-        <defaultValue xmi:type="uml:LiteralString" xmi:id="_lVnvMD7ZEeGvOdejHZ7dYg" value="IND"/>
+      <ownedAttribute xmi:id="_gPGX4ODYEeG_7ZQp-aLqLw" name="typeCode" visibility="private" isReadOnly="true">
+        <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__y7BekDcEd6xYZuu1VKCVw"/>
+        <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bmsJsErdEd6FXKclYGEDCw"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_mkZGAODYEeG_7ZQp-aLqLw" value="IND"/>
       </ownedAttribute>
     </nestedClassifier>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_UAm-YD-NEeGvOdejHZ7dYg" name="PrimaryCarePhysician">
@@ -3334,6 +3332,11 @@ A History and Physical Examination is required upon hospital admission as well a
         <ownedAttribute xmi:id="_azxe0D-OEeGvOdejHZ7dYg" name="associatedPerson" association="_azyF4D-OEeGvOdejHZ7dYg">
           <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_Je2yMEcaEd6besF9iFIJkQ"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_azxe0T-OEeGvOdejHZ7dYg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_wge7sODYEeG_7ZQp-aLqLw" name="classCode" visibility="private">
+          <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zE3C0DcEd6xYZuu1VKCVw"/>
+          <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_AkaAcEofEd6c3qsAxlFHaQ"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_89bkkODYEeG_7ZQp-aLqLw" value="PROV"/>
         </ownedAttribute>
       </nestedClassifier>
     </nestedClassifier>
@@ -3539,7 +3542,7 @@ A History and Physical Examination is required upon hospital admission as well a
   <CDA:PropertyValidation xmi:id="_-6EQMD-REeGvOdejHZ7dYg" base_Property="_u9YxED-REeGvOdejHZ7dYg">
     <ruleId>CONF:8503</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_m8tBwD7ZEeGvOdejHZ7dYg" base_Property="_jS1_ID7ZEeGvOdejHZ7dYg"/>
+  <CDA:PropertyValidation xmi:id="_m8tBwD7ZEeGvOdejHZ7dYg"/>
   <CDA:ConstraintValidation xmi:id="_3lrxsD-TEeGvOdejHZ7dYg" base_Constraint="_1M1D8D-TEeGvOdejHZ7dYg">
     <ruleId>CONF:8511</ruleId>
   </CDA:ConstraintValidation>
@@ -4134,7 +4137,7 @@ The Progress Note recommends use of a single document type code, 11506-3 &quot;S
         <language>Analysis</language>
         <language>OCL</language>
         <body>With the exception of the DICOM Object Catalog (templateId 2.16.840.1.113883.10.20.6.1.1), all sections within the Diagnostic Imaging Report content SHOULD contain a title element</body>
-        <body>self.getAllSections()->forAll(section : cda::Section | not section.title.oclIsUndefined())</body>
+        <body>self.getAllSections()->reject(section : cda::Section | section.templateId->exists(root = '2.16.840.1.113883.10.20.6.1.1'))->forAll(section : cda::Section | not section.title.oclIsUndefined())</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_OjhqgErZEeGJpZWiuxRVIw" name="sectionCodes" constrainedElement="_XwBooEUuEeGdQ4KWAmnbhw">
@@ -4163,7 +4166,7 @@ The Progress Note recommends use of a single document type code, 11506-3 &quot;S
         <language>Analysis</language>
         <language>OCL</language>
         <body>Apart from the DICOM Object Catalog (templateId 2.16.840.1.113883.10.20.6.1.1), all other instances of section SHALL contain at least one text element or one or more component elements</body>
-        <body>self.getAllSections()->forAll(section : cda::Section | not section.text.oclIsUndefined())</body>
+        <body>self.getAllSections()->reject(section : cda::Section | section.templateId->exists(root = '2.16.840.1.113883.10.20.6.1.1'))->forAll(section : cda::Section | not section.text.oclIsUndefined())</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_E-0koEraEeGJpZWiuxRVIw" name="hasPCDATA" constrainedElement="_XwBooEUuEeGdQ4KWAmnbhw">
@@ -4631,4 +4634,10 @@ OIDs SHALL be no more than 64 characters in length..</body>
   <CDA:ConstraintValidation xmi:id="_D3hc0NEKEeG1XvWcjsOnlQ" base_Constraint="_0u47sNEHEeG1XvWcjsOnlQ">
     <ruleId>CONF:7278</ruleId>
   </CDA:ConstraintValidation>
+  <CDA:PropertyValidation xmi:id="_iWTU8ODYEeG_7ZQp-aLqLw" base_Property="_gPGX4ODYEeG_7ZQp-aLqLw">
+    <ruleId>CONF:8505</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_xTaNcODYEeG_7ZQp-aLqLw" base_Property="_wge7sODYEeG_7ZQp-aLqLw">
+    <ruleId>CONF:8507</ruleId>
+  </CDA:PropertyValidation>
 </xmi:XMI>

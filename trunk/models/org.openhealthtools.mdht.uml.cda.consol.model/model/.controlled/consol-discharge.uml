@@ -39,12 +39,12 @@
     <generalization xmi:id="_hD_a4CUPEeGiOPpZVnfEJA">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_YiANsDxYEd6JwqSGecoePg"/>
     </generalization>
-    <ownedAttribute xmi:id="_iYa3MCUPEeGiOPpZVnfEJA" name="classCode" visibility="private">
+    <ownedAttribute xmi:id="_iYa3MCUPEeGiOPpZVnfEJA" name="classCode" visibility="private" isReadOnly="true">
       <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOntkDcEd6xYZuu1VKCVw"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_1DWqEEbnEd6besF9iFIJkQ"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_qbpGwCUPEeGiOPpZVnfEJA" value="ACT"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_iYdTcCUPEeGiOPpZVnfEJA" name="moodCode" visibility="private">
+    <ownedAttribute xmi:id="_iYdTcCUPEeGiOPpZVnfEJA" name="moodCode" visibility="private" isReadOnly="true">
       <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOpkkDcEd6xYZuu1VKCVw"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_yWn-AEocEd6c3qsAxlFHaQ"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_sLnPkCUPEeGiOPpZVnfEJA" value="EVN"/>
@@ -119,12 +119,12 @@
     <generalization xmi:id="_Ktw8kCULEeGiOPpZVnfEJA">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_YiANsDxYEd6JwqSGecoePg"/>
     </generalization>
-    <ownedAttribute xmi:id="_MwNVcCULEeGiOPpZVnfEJA" name="classCode" visibility="private">
+    <ownedAttribute xmi:id="_MwNVcCULEeGiOPpZVnfEJA" name="classCode" visibility="private" isReadOnly="true">
       <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOntkDcEd6xYZuu1VKCVw"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_1DWqEEbnEd6besF9iFIJkQ"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_izuP8CULEeGiOPpZVnfEJA" value="ACT"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_MwPKoCULEeGiOPpZVnfEJA" name="moodCode" visibility="private">
+    <ownedAttribute xmi:id="_MwPKoCULEeGiOPpZVnfEJA" name="moodCode" visibility="private" isReadOnly="true">
       <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOpkkDcEd6xYZuu1VKCVw"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_yWn-AEocEd6c3qsAxlFHaQ"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_jWJnkCULEeGiOPpZVnfEJA" value="EVN"/>

@@ -14,7 +14,6 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
-import org.openhealthtools.mdht.uml.cda.AssignedEntity;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationDispense;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationSupplyOrder;
@@ -128,26 +127,17 @@ public class MedicationDispenseImpl extends SupplyImpl implements MedicationDisp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationDispensePerformer2(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationDispenseOperations.validateMedicationDispensePerformer2(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateMedicationDispenseAssignedEntity(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationDispenseOperations.validateMedicationDispenseAssignedEntity(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public boolean validateMedicationDispenseProduct(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationDispenseOperations.validateMedicationDispenseProduct(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	* <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedicationDispensePerformer(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicationDispenseOperations.validateMedicationDispensePerformer(this, diagnostics, context);
 	}
 
 	/**
@@ -157,8 +147,27 @@ public class MedicationDispenseImpl extends SupplyImpl implements MedicationDisp
 	 */
 	public boolean validateMedicationDispenseProductContainsMedicationOrImmunization(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationDispenseOperations.validateMedicationDispenseProductContainsMedicationOrImmunization(
-			this, diagnostics, context);
+		return MedicationDispenseOperations.validateMedicationDispenseProductContainsMedicationOrImmunization(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	* <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedicationDispensePerformerMedicationDispenseAssignedEntityAddr(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationDispenseOperations.validateMedicationDispensePerformerMedicationDispenseAssignedEntityAddr(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateMedicationDispensePerformerMedicationDispenseAssignedEntity(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return MedicationDispenseOperations.validateMedicationDispensePerformerMedicationDispenseAssignedEntity(this, diagnostics, context);
 	}
 
 	/**
@@ -176,15 +185,6 @@ public class MedicationDispenseImpl extends SupplyImpl implements MedicationDisp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AssignedEntity getAssignedEntity() {
-		return MedicationDispenseOperations.getAssignedEntity(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public MedicationSupplyOrder getMedicationSupplyOrder() {
 		return MedicationDispenseOperations.getMedicationSupplyOrder(this);
 	}
@@ -195,7 +195,7 @@ public class MedicationDispenseImpl extends SupplyImpl implements MedicationDisp
 	 * @generated
 	 */
 	public MedicationDispense init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // MedicationDispenseImpl

@@ -139,7 +139,7 @@ public class VitalSignsOrganizerImpl extends OrganizerImpl implements VitalSigns
 	 * @generated
 	 */
 	public VitalSignsOrganizer init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // VitalSignsOrganizerImpl

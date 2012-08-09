@@ -93,7 +93,7 @@ with respect to the payer, so that the identifiers can be recorded.&#xD;
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_yWn-AEocEd6c3qsAxlFHaQ"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_1XH0sDZZEeGUovy31cP2ng" value="EVN"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_UdHpOBUlEeGvPruliC3crg" name="statusCode" visibility="private" isReadOnly="true" aggregation="composite">
+    <ownedAttribute xmi:id="_UdHpOBUlEeGvPruliC3crg" name="statusCode" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UdHpORUlEeGvPruliC3crg" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UdHpOhUlEeGvPruliC3crg"/>

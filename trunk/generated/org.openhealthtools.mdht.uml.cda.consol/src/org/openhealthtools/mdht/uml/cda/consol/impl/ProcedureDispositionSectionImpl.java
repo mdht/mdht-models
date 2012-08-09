@@ -56,8 +56,7 @@ public class ProcedureDispositionSectionImpl extends SectionImpl implements Proc
 	 */
 	public boolean validateProcedureDispositionSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureDispositionSectionOperations.validateProcedureDispositionSectionTemplateId(
-			this, diagnostics, context);
+		return ProcedureDispositionSectionOperations.validateProcedureDispositionSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -84,8 +83,7 @@ public class ProcedureDispositionSectionImpl extends SectionImpl implements Proc
 	 * @generated
 	 */
 	public boolean validateProcedureDispositionSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProcedureDispositionSectionOperations.validateProcedureDispositionSectionTitle(
-			this, diagnostics, context);
+		return ProcedureDispositionSectionOperations.validateProcedureDispositionSectionTitle(this, diagnostics, context);
 	}
 
 	/**
@@ -94,7 +92,7 @@ public class ProcedureDispositionSectionImpl extends SectionImpl implements Proc
 	 * @generated
 	 */
 	public ProcedureDispositionSection init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // ProcedureDispositionSectionImpl

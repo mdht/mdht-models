@@ -58,8 +58,7 @@ public class ImmunizationsSectionEntriesOptionalImpl extends SectionImpl impleme
 	 */
 	public boolean validateImmunizationsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ImmunizationsSectionEntriesOptionalOperations.validateImmunizationsSectionEntriesOptionalTemplateId(
-			this, diagnostics, context);
+		return ImmunizationsSectionEntriesOptionalOperations.validateImmunizationsSectionEntriesOptionalTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -69,8 +68,7 @@ public class ImmunizationsSectionEntriesOptionalImpl extends SectionImpl impleme
 	 */
 	public boolean validateImmunizationsSectionEntriesOptionalCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ImmunizationsSectionEntriesOptionalOperations.validateImmunizationsSectionEntriesOptionalCode(
-			this, diagnostics, context);
+		return ImmunizationsSectionEntriesOptionalOperations.validateImmunizationsSectionEntriesOptionalCode(this, diagnostics, context);
 	}
 
 	/**
@@ -80,8 +78,7 @@ public class ImmunizationsSectionEntriesOptionalImpl extends SectionImpl impleme
 	 */
 	public boolean validateImmunizationsSectionEntriesOptionalTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ImmunizationsSectionEntriesOptionalOperations.validateImmunizationsSectionEntriesOptionalTitle(
-			this, diagnostics, context);
+		return ImmunizationsSectionEntriesOptionalOperations.validateImmunizationsSectionEntriesOptionalTitle(this, diagnostics, context);
 	}
 
 	/**
@@ -91,8 +88,7 @@ public class ImmunizationsSectionEntriesOptionalImpl extends SectionImpl impleme
 	 */
 	public boolean validateImmunizationsSectionEntriesOptionalText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ImmunizationsSectionEntriesOptionalOperations.validateImmunizationsSectionEntriesOptionalText(
-			this, diagnostics, context);
+		return ImmunizationsSectionEntriesOptionalOperations.validateImmunizationsSectionEntriesOptionalText(this, diagnostics, context);
 	}
 
 	/**
@@ -102,8 +98,7 @@ public class ImmunizationsSectionEntriesOptionalImpl extends SectionImpl impleme
 	 */
 	public boolean validateImmunizationsSectionEntriesOptionalImmunizationActivity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ImmunizationsSectionEntriesOptionalOperations.validateImmunizationsSectionEntriesOptionalImmunizationActivity(
-			this, diagnostics, context);
+		return ImmunizationsSectionEntriesOptionalOperations.validateImmunizationsSectionEntriesOptionalImmunizationActivity(this, diagnostics, context);
 	}
 
 	/**
@@ -121,7 +116,7 @@ public class ImmunizationsSectionEntriesOptionalImpl extends SectionImpl impleme
 	 * @generated
 	 */
 	public ImmunizationsSectionEntriesOptional init() {
-		CDAUtil.init(this);
-		return this;
+    	CDAUtil.init(this);
+    	return this;
 	}
 } // ImmunizationsSectionEntriesOptionalImpl
