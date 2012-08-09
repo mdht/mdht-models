@@ -20,18 +20,18 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.operations.ClinicalOfficeVisit
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Clinical Office Visit Summary</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object '
+ * <em><b>Clinical Office Visit Summary</b></em>'. <!-- end-user-doc -->
  * <p>
  * </p>
- *
+ * 
  * @generated
  */
-public class ClinicalOfficeVisitSummaryImpl extends GeneralHeaderConstraintsImpl implements ClinicalOfficeVisitSummary {
+public class ClinicalOfficeVisitSummaryImpl extends
+		GeneralHeaderConstraintsImpl implements ClinicalOfficeVisitSummary {
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected ClinicalOfficeVisitSummaryImpl() {
@@ -39,8 +39,8 @@ public class ClinicalOfficeVisitSummaryImpl extends GeneralHeaderConstraintsImpl
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -49,58 +49,74 @@ public class ClinicalOfficeVisitSummaryImpl extends GeneralHeaderConstraintsImpl
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
-	public boolean validateClinicalOfficeVisitSummaryCannotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ClinicalOfficeVisitSummaryOperations.validateClinicalOfficeVisitSummaryCannotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection(this, diagnostics, context);
+	public boolean validateClinicalOfficeVisitSummaryCannotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ClinicalOfficeVisitSummaryOperations
+				.validateClinicalOfficeVisitSummaryCannotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection(
+						this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
-	public boolean validateClinicalOfficeVisitSummaryMu2EncounterDiagnosesRequirements(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ClinicalOfficeVisitSummaryOperations.validateClinicalOfficeVisitSummaryMu2EncounterDiagnosesRequirements(this, diagnostics, context);
+	public boolean validateClinicalOfficeVisitSummaryMu2EncounterDiagnosesRequirements(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ClinicalOfficeVisitSummaryOperations
+				.validateClinicalOfficeVisitSummaryMu2EncounterDiagnosesRequirements(
+						this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
-	public boolean validateClinicalOfficeVisitSummaryCanHaveEitherRequiredOrOptionalVitalSignsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ClinicalOfficeVisitSummaryOperations.validateClinicalOfficeVisitSummaryCanHaveEitherRequiredOrOptionalVitalSignsSection(this, diagnostics, context);
+	public boolean validateClinicalOfficeVisitSummaryCanHaveEitherRequiredOrOptionalVitalSignsSection(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ClinicalOfficeVisitSummaryOperations
+				.validateClinicalOfficeVisitSummaryCanHaveEitherRequiredOrOptionalVitalSignsSection(
+						this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
-	public boolean validateClinicalOfficeVisitSummaryMedicationListConstraint(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ClinicalOfficeVisitSummaryOperations.validateClinicalOfficeVisitSummaryMedicationListConstraint(this, diagnostics, context);
+	public boolean validateClinicalOfficeVisitSummaryMedicationListConstraint(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ClinicalOfficeVisitSummaryOperations
+				.validateClinicalOfficeVisitSummaryMedicationListConstraint(
+						this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
-	public boolean validateGeneralHeaderConstraintsTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ClinicalOfficeVisitSummaryOperations.validateGeneralHeaderConstraintsTemplateId(this, diagnostics, context);
+	public boolean validateGeneralHeaderConstraintsTemplateId(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ClinicalOfficeVisitSummaryOperations
+				.validateGeneralHeaderConstraintsTemplateId(this, diagnostics,
+						context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
+	@Override
 	public ClinicalOfficeVisitSummary init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //ClinicalOfficeVisitSummaryImpl
+} // ClinicalOfficeVisitSummaryImpl

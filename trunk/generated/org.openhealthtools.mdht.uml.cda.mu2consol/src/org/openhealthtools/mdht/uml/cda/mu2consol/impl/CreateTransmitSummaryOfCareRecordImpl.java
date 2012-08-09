@@ -20,18 +20,20 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.operations.CreateTransmitSumma
 import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Create Transmit Summary Of Care Record</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object '
+ * <em><b>Create Transmit Summary Of Care Record</b></em>'. <!-- end-user-doc
+ * -->
  * <p>
  * </p>
- *
+ * 
  * @generated
  */
-public class CreateTransmitSummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl implements CreateTransmitSummaryOfCareRecord {
+public class CreateTransmitSummaryOfCareRecordImpl extends
+		GeneralHeaderConstraintsImpl implements
+		CreateTransmitSummaryOfCareRecord {
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected CreateTransmitSummaryOfCareRecordImpl() {
@@ -39,8 +41,8 @@ public class CreateTransmitSummaryOfCareRecordImpl extends GeneralHeaderConstrai
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -49,58 +51,74 @@ public class CreateTransmitSummaryOfCareRecordImpl extends GeneralHeaderConstrai
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
-	public boolean validateCreateTransmitSummaryOfCareRecordCannotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CreateTransmitSummaryOfCareRecordOperations.validateCreateTransmitSummaryOfCareRecordCannotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection(this, diagnostics, context);
+	public boolean validateCreateTransmitSummaryOfCareRecordCannotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CreateTransmitSummaryOfCareRecordOperations
+				.validateCreateTransmitSummaryOfCareRecordCannotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection(
+						this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
-	public boolean validateCreateTransmitSummaryOfCareRecordMu2EncounterDiagnosesRequirements(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CreateTransmitSummaryOfCareRecordOperations.validateCreateTransmitSummaryOfCareRecordMu2EncounterDiagnosesRequirements(this, diagnostics, context);
+	public boolean validateCreateTransmitSummaryOfCareRecordMu2EncounterDiagnosesRequirements(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CreateTransmitSummaryOfCareRecordOperations
+				.validateCreateTransmitSummaryOfCareRecordMu2EncounterDiagnosesRequirements(
+						this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
-	public boolean validateCreateTransmitSummaryOfCareRecordCanHaveEitherRequiredOrOptionalVitalSignsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CreateTransmitSummaryOfCareRecordOperations.validateCreateTransmitSummaryOfCareRecordCanHaveEitherRequiredOrOptionalVitalSignsSection(this, diagnostics, context);
+	public boolean validateCreateTransmitSummaryOfCareRecordCanHaveEitherRequiredOrOptionalVitalSignsSection(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CreateTransmitSummaryOfCareRecordOperations
+				.validateCreateTransmitSummaryOfCareRecordCanHaveEitherRequiredOrOptionalVitalSignsSection(
+						this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
-	public boolean validateCreateTransmitSummaryOfCareRecordMedicationListConstraint(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CreateTransmitSummaryOfCareRecordOperations.validateCreateTransmitSummaryOfCareRecordMedicationListConstraint(this, diagnostics, context);
+	public boolean validateCreateTransmitSummaryOfCareRecordMedicationListConstraint(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CreateTransmitSummaryOfCareRecordOperations
+				.validateCreateTransmitSummaryOfCareRecordMedicationListConstraint(
+						this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
-	public boolean validateGeneralHeaderConstraintsTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return CreateTransmitSummaryOfCareRecordOperations.validateGeneralHeaderConstraintsTemplateId(this, diagnostics, context);
+	public boolean validateGeneralHeaderConstraintsTemplateId(
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return CreateTransmitSummaryOfCareRecordOperations
+				.validateGeneralHeaderConstraintsTemplateId(this, diagnostics,
+						context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
+	@Override
 	public CreateTransmitSummaryOfCareRecord init() {
-    	CDAUtil.init(this);
-    	return this;
+		CDAUtil.init(this);
+		return this;
 	}
-} //CreateTransmitSummaryOfCareRecordImpl
+} // CreateTransmitSummaryOfCareRecordImpl
