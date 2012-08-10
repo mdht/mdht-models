@@ -6,16 +6,17 @@
  */
 package org.openhealthtools.mdht.uml.cda.mu2consol.impl;
 
-import org.eclipse.emf.ecore.EClass;
+import java.util.Map;
 
+import org.eclipse.emf.common.util.DiagnosticChain;
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemObservation;
 import org.openhealthtools.mdht.uml.cda.consol.impl.AssessmentAndPlanSectionImpl;
 import org.openhealthtools.mdht.uml.cda.mu2consol.AssessmentAndPlanForConditionOrConcern;
 import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage;
-
 import org.openhealthtools.mdht.uml.cda.mu2consol.operations.AssessmentAndPlanForConditionOrConcernOperations;
-
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc --> An implementation of the model object '
@@ -23,7 +24,7 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  * end-user-doc -->
  * <p>
  * </p>
- * 
+ *
  * @generated
  */
 public class AssessmentAndPlanForConditionOrConcernImpl extends
@@ -31,7 +32,6 @@ public class AssessmentAndPlanForConditionOrConcernImpl extends
 		AssessmentAndPlanForConditionOrConcern {
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	protected AssessmentAndPlanForConditionOrConcernImpl() {
@@ -40,7 +40,6 @@ public class AssessmentAndPlanForConditionOrConcernImpl extends
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
@@ -49,23 +48,38 @@ public class AssessmentAndPlanForConditionOrConcernImpl extends
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ProblemObservation getProblemObservation() {
-		return AssessmentAndPlanForConditionOrConcernOperations
-				.getProblemObservation(this);
+	public boolean validateAssessmentAndPlanForConditionOrConcernProblemObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AssessmentAndPlanForConditionOrConcernOperations.validateAssessmentAndPlanForConditionOrConcernProblemObservation(this, diagnostics, context);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * @generated
+	 */
+	public ProblemObservation getProblemObservation() {
+		return AssessmentAndPlanForConditionOrConcernOperations.getProblemObservation(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
 	public AssessmentAndPlanForConditionOrConcern init() {
-		CDAUtil.init(this);
-		return this;
+	    return Initializer.Util.init(this);
 	}
+
+	/**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public AssessmentAndPlanForConditionOrConcern init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // AssessmentAndPlanForConditionOrConcernImpl

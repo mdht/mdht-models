@@ -34,19 +34,15 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.util.Mu2consolValidator;
  * <!-- begin-user-doc --> A static utility class that provides operations
  * related to '<em><b>Instructions Section</b></em>' model objects. <!--
  * end-user-doc -->
- * 
+ *
  * <p>
  * The following operations are supported:
  * <ul>
- * <li>
- * {@link org.openhealthtools.mdht.uml.cda.mu2consol.InstructionsSection#validateMu2consolInstructionsSectionInstructions(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
- * <em>Validate Mu2consol Instructions Section Instructions</em>}</li>
- * <li>
- * {@link org.openhealthtools.mdht.uml.cda.mu2consol.InstructionsSection#getmu2consolInstructionss()
- * <em>Getmu2consol Instructionss</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.InstructionsSection#validateMu2consolInstructionsSectionInstructions(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mu2consol Instructions Section Instructions</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.InstructionsSection#getmu2consolInstructionss() <em>Getmu2consol Instructionss</em>}</li>
  * </ul>
  * </p>
- * 
+ *
  * @generated
  */
 public class InstructionsSectionOperations
@@ -54,7 +50,6 @@ public class InstructionsSectionOperations
 		org.openhealthtools.mdht.uml.cda.consol.operations.InstructionsSectionOperations {
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	protected InstructionsSectionOperations() {
@@ -62,26 +57,18 @@ public class InstructionsSectionOperations
 	}
 
 	/**
-	 * The cached OCL expression body for the '
-	 * {@link #validateMu2consolInstructionsSectionInstructions(InstructionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * <em>Validate Mu2consol Instructions Section Instructions</em>}'
-	 * operation. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @see #validateMu2consolInstructionsSectionInstructions(InstructionsSection,
-	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * The cached OCL expression body for the '{@link #validateMu2consolInstructionsSectionInstructions(InstructionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mu2consol Instructions Section Instructions</em>}' operation.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @see #validateMu2consolInstructionsSectionInstructions(InstructionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
 	protected static final String VALIDATE_MU2CONSOL_INSTRUCTIONS_SECTION_INSTRUCTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::Instructions))";
 
 	/**
-	 * The cached OCL invariant for the '
-	 * {@link #validateMu2consolInstructionsSectionInstructions(InstructionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * <em>Validate Mu2consol Instructions Section Instructions</em>}' invariant
-	 * operation. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @see #validateMu2consolInstructionsSectionInstructions(InstructionsSection,
-	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * The cached OCL invariant for the '{@link #validateMu2consolInstructionsSectionInstructions(InstructionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mu2consol Instructions Section Instructions</em>}' invariant operation.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @see #validateMu2consolInstructionsSectionInstructions(InstructionsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
@@ -107,51 +94,37 @@ public class InstructionsSectionOperations
 	public static boolean validateMu2consolInstructionsSectionInstructions(
 			InstructionsSection instructionsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_MU2CONSOL_INSTRUCTIONS_SECTION_INSTRUCTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(Mu2consolPackage.Literals.INSTRUCTIONS_SECTION);
 			try {
-				VALIDATE_MU2CONSOL_INSTRUCTIONS_SECTION_INSTRUCTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper
-						.createInvariant(VALIDATE_MU2CONSOL_INSTRUCTIONS_SECTION_INSTRUCTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(
-						pe.getLocalizedMessage());
+				VALIDATE_MU2CONSOL_INSTRUCTIONS_SECTION_INSTRUCTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MU2CONSOL_INSTRUCTIONS_SECTION_INSTRUCTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV
-				.createQuery(
-						VALIDATE_MU2CONSOL_INSTRUCTIONS_SECTION_INSTRUCTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV)
-				.check(instructionsSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MU2CONSOL_INSTRUCTIONS_SECTION_INSTRUCTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(instructionsSection)) {
 			if (diagnostics != null) {
-				diagnostics
-						.add(new BasicDiagnostic(
-								Diagnostic.ERROR,
-								Mu2consolValidator.DIAGNOSTIC_SOURCE,
-								Mu2consolValidator.INSTRUCTIONS_SECTION__MU2CONSOL_INSTRUCTIONS_SECTION_INSTRUCTIONS,
-								org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE
-										.getString(
-												"_UI_GenericInvariant_diagnostic",
-												new Object[] {
-														"Mu2consolInstructionsSectionInstructions",
-														org.eclipse.emf.ecore.util.EObjectValidator
-																.getObjectLabel(
-																		instructionsSection,
-																		context) }),
-								new Object[] { instructionsSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
+						 Mu2consolValidator.INSTRUCTIONS_SECTION__MU2CONSOL_INSTRUCTIONS_SECTION_INSTRUCTIONS,
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "Mu2consolInstructionsSectionInstructions", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(instructionsSection, context) }),
+						 new Object [] { instructionsSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '
-	 * {@link #getmu2consolInstructionss(InstructionsSection)
-	 * <em>Getmu2consol Instructionss</em>}' operation. <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #getmu2consolInstructionss(InstructionsSection) <em>Getmu2consol Instructionss</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * 
 	 * @see #getmu2consolInstructionss(InstructionsSection)
 	 * @generated
 	 * @ordered
@@ -185,25 +158,18 @@ public class InstructionsSectionOperations
 			InstructionsSection instructionsSection) {
 		if (GETMU2CONSOL_INSTRUCTIONSS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-					Mu2consolPackage.Literals.INSTRUCTIONS_SECTION,
-					Mu2consolPackage.Literals.INSTRUCTIONS_SECTION
-							.getEAllOperations().get(62));
+			helper.setOperationContext(Mu2consolPackage.Literals.INSTRUCTIONS_SECTION, Mu2consolPackage.Literals.INSTRUCTIONS_SECTION.getEAllOperations().get(62));
 			try {
-				GETMU2CONSOL_INSTRUCTIONSS__EOCL_QRY = helper
-						.createQuery(GETMU2CONSOL_INSTRUCTIONSS__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(
-						pe.getLocalizedMessage());
+				GETMU2CONSOL_INSTRUCTIONSS__EOCL_QRY = helper.createQuery(GETMU2CONSOL_INSTRUCTIONSS__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV
-				.createQuery(GETMU2CONSOL_INSTRUCTIONSS__EOCL_QRY);
+		OCL.Query query = EOCL_ENV.createQuery(GETMU2CONSOL_INSTRUCTIONSS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<Instructions> result = (Collection<Instructions>) query
-				.evaluate(instructionsSection);
-		return new BasicEList.UnmodifiableEList<Instructions>(result.size(),
-				result.toArray());
+		Collection<Instructions> result = (Collection<Instructions>) query.evaluate(instructionsSection);
+		return new BasicEList.UnmodifiableEList<Instructions>(result.size(), result.toArray());
 	}
 
 } // InstructionsSectionOperations

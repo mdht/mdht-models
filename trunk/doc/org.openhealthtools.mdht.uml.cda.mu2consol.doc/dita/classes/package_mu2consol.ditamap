@@ -1,9 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
 <map title="Package: mu2consol">
+<topicref href="AllergiesSectionEntriesOptional.dita" type="topic" />
+<topicref href="AssessmentAndPlanForCarePlanning.dita" type="topic" />
+<topicref href="AssessmentAndPlanForConditionOrConcern.dita" type="topic" />
+<topicref href="AssessmentAndPlanSection.dita" type="topic" />
+<topicref href="AssessmentSection.dita" type="topic" />
 <topicref href="ClinicalOfficeVisitSummary.dita" type="topic" />
 <topicref href="CreateTransmitSummaryOfCareRecord.dita" type="topic" />
 <topicref href="GeneralHeaderConstraints.dita" type="topic" />
+<topicref href="HospitalAdmissionDiagnosisSection.dita" type="topic" />
+<topicref href="HospitalAdmissionMedicationsSectionEntriesOptional.dita" type="topic" />
+<topicref href="HospitalDischargeDiagnosisSection.dita" type="topic" />
+<topicref href="InstructionsSection.dita" type="topic" />
+<topicref href="MedicationsAdministeredSection.dita" type="topic" />
+<topicref href="PlanOfCareSection.dita" type="topic" />
+<topicref href="PostoperativeDiagnosisSection.dita" type="topic" />
+<topicref href="PostprocedureDiagnosisSection.dita" type="topic" />
+<topicref href="PreoperativeDiagnosisSection.dita" type="topic" />
 <topicref href="SummaryOfCareRecord.dita" type="topic" />
 <topicref href="VDTAmbulatoryPatientInfo.dita" type="topic" />
 <topicref href="VDTInpatientPatientInfo.dita" type="topic" />

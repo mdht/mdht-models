@@ -10,17 +10,13 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
-
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.AdmissionMedication;
-import org.openhealthtools.mdht.uml.cda.consol.MedicationActivity;
 import org.openhealthtools.mdht.uml.cda.mu2consol.HospitalAdmissionMedicationsSectionEntriesOptional;
 import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage;
-
 import org.openhealthtools.mdht.uml.cda.mu2consol.operations.HospitalAdmissionMedicationsSectionEntriesOptionalOperations;
-
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc --> An implementation of the model object '
@@ -28,7 +24,7 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  * <!-- end-user-doc -->
  * <p>
  * </p>
- * 
+ *
  * @generated
  */
 public class HospitalAdmissionMedicationsSectionEntriesOptionalImpl
@@ -37,7 +33,6 @@ public class HospitalAdmissionMedicationsSectionEntriesOptionalImpl
 		implements HospitalAdmissionMedicationsSectionEntriesOptional {
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	protected HospitalAdmissionMedicationsSectionEntriesOptionalImpl() {
@@ -46,7 +41,6 @@ public class HospitalAdmissionMedicationsSectionEntriesOptionalImpl
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
@@ -56,56 +50,37 @@ public class HospitalAdmissionMedicationsSectionEntriesOptionalImpl
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	public boolean validateMu2consolHospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedication(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HospitalAdmissionMedicationsSectionEntriesOptionalOperations
-				.validateMu2consolHospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedication(
-						this, diagnostics, context);
+		return HospitalAdmissionMedicationsSectionEntriesOptionalOperations.validateMu2consolHospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedication(this, diagnostics, context);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public boolean validateMu2consolHospitalAdmissionMedicationsSectionEntriesOptionalMedicationActivity(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HospitalAdmissionMedicationsSectionEntriesOptionalOperations
-				.validateMu2consolHospitalAdmissionMedicationsSectionEntriesOptionalMedicationActivity(
-						this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	public EList<AdmissionMedication> getmu2consolAdmissionMedications() {
-		return HospitalAdmissionMedicationsSectionEntriesOptionalOperations
-				.getmu2consolAdmissionMedications(this);
+		return HospitalAdmissionMedicationsSectionEntriesOptionalOperations.getmu2consolAdmissionMedications(this);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public MedicationActivity getMedicationActivity() {
-		return HospitalAdmissionMedicationsSectionEntriesOptionalOperations
-				.getMedicationActivity(this);
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
 	public HospitalAdmissionMedicationsSectionEntriesOptional init() {
-		CDAUtil.init(this);
-		return this;
+	    return Initializer.Util.init(this);
 	}
+
+	/**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public HospitalAdmissionMedicationsSectionEntriesOptional init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // HospitalAdmissionMedicationsSectionEntriesOptionalImpl

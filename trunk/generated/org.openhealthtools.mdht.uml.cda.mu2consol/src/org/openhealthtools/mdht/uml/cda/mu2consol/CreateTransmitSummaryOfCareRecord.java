@@ -6,9 +6,12 @@
  */
 package org.openhealthtools.mdht.uml.cda.mu2consol;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 
 /**
  * <!-- begin-user-doc --> A representation of the model object '
@@ -120,8 +123,14 @@ public interface CreateTransmitSummaryOfCareRecord extends
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	public CreateTransmitSummaryOfCareRecord init();
+
+	/**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public CreateTransmitSummaryOfCareRecord init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // CreateTransmitSummaryOfCareRecord

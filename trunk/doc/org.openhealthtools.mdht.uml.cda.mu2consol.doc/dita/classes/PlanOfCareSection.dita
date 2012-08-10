@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Plan Of Care Section</title>
+<shortdesc conref="generated/_PlanOfCareSection.dita#classId/shortdesc"></shortdesc>
+<prolog conref="generated/_PlanOfCareSection.dita#classId/prolog"></prolog>
+<body>
+<section conref="generated/_PlanOfCareSection.dita#classId/knownSubclasses">
+</section>
+<!-- TODO: insert non-model class description markup here -->
+<section conref="generated/_PlanOfCareSection.dita#classId/description">
+</section>
+<!-- TODO: insert UML class diagram here -->
+
+<ol audience="standards" conref="generated/_PlanOfCareSection.dita#classId/conformance">
+<li></li>
+</ol>
+<ol audience="developer" conref="generated/_PlanOfCareSection.dita#classId/aggregate">
+<li></li>
+</ol>
+<p> </p>
+<p><b>Plan Of Care Section example</b></p>
+<!-- TODO: insert custom instance example here -->
+<!-- generated instance example follows -->
+<codeblock conref="generated/_PlanOfCareSection.dita#classId/example">
+</codeblock>
+</body>
+</topic>

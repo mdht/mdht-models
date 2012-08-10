@@ -31,20 +31,15 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.util.Mu2consolValidator;
  * <!-- begin-user-doc --> A static utility class that provides operations
  * related to '<em><b>Preoperative Diagnosis Section</b></em>' model objects.
  * <!-- end-user-doc -->
- * 
+ *
  * <p>
  * The following operations are supported:
  * <ul>
- * <li>
- * {@link org.openhealthtools.mdht.uml.cda.mu2consol.PreoperativeDiagnosisSection#validateMu2consolPreoperativeDiagnosisSectionPreoperativeDiagnosis(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
- * <em>Validate Mu2consol Preoperative Diagnosis Section Preoperative Diagnosis
- * </em>}</li>
- * <li>
- * {@link org.openhealthtools.mdht.uml.cda.mu2consol.PreoperativeDiagnosisSection#getmu2consolPreoperativeDiagnosis()
- * <em>Getmu2consol Preoperative Diagnosis</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.PreoperativeDiagnosisSection#validateMu2consolPreoperativeDiagnosisSectionPreoperativeDiagnosis(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mu2consol Preoperative Diagnosis Section Preoperative Diagnosis</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.PreoperativeDiagnosisSection#getmu2consolPreoperativeDiagnosis() <em>Getmu2consol Preoperative Diagnosis</em>}</li>
  * </ul>
  * </p>
- * 
+ *
  * @generated
  */
 public class PreoperativeDiagnosisSectionOperations
@@ -52,7 +47,6 @@ public class PreoperativeDiagnosisSectionOperations
 		org.openhealthtools.mdht.uml.cda.consol.operations.PreoperativeDiagnosisSectionOperations {
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	protected PreoperativeDiagnosisSectionOperations() {
@@ -60,26 +54,18 @@ public class PreoperativeDiagnosisSectionOperations
 	}
 
 	/**
-	 * The cached OCL expression body for the '
-	 * {@link #validateMu2consolPreoperativeDiagnosisSectionPreoperativeDiagnosis(PreoperativeDiagnosisSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * <em>Validate Mu2consol Preoperative Diagnosis Section Preoperative Diagnosis</em>}
-	 * ' operation. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @see #validateMu2consolPreoperativeDiagnosisSectionPreoperativeDiagnosis(PreoperativeDiagnosisSection,
-	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * The cached OCL expression body for the '{@link #validateMu2consolPreoperativeDiagnosisSectionPreoperativeDiagnosis(PreoperativeDiagnosisSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mu2consol Preoperative Diagnosis Section Preoperative Diagnosis</em>}' operation.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @see #validateMu2consolPreoperativeDiagnosisSectionPreoperativeDiagnosis(PreoperativeDiagnosisSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
 	protected static final String VALIDATE_MU2CONSOL_PREOPERATIVE_DIAGNOSIS_SECTION_PREOPERATIVE_DIAGNOSIS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::PreoperativeDiagnosis))";
 
 	/**
-	 * The cached OCL invariant for the '
-	 * {@link #validateMu2consolPreoperativeDiagnosisSectionPreoperativeDiagnosis(PreoperativeDiagnosisSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * <em>Validate Mu2consol Preoperative Diagnosis Section Preoperative Diagnosis</em>}
-	 * ' invariant operation. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @see #validateMu2consolPreoperativeDiagnosisSectionPreoperativeDiagnosis(PreoperativeDiagnosisSection,
-	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * The cached OCL invariant for the '{@link #validateMu2consolPreoperativeDiagnosisSectionPreoperativeDiagnosis(PreoperativeDiagnosisSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mu2consol Preoperative Diagnosis Section Preoperative Diagnosis</em>}' invariant operation.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @see #validateMu2consolPreoperativeDiagnosisSectionPreoperativeDiagnosis(PreoperativeDiagnosisSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
@@ -105,40 +91,28 @@ public class PreoperativeDiagnosisSectionOperations
 	public static boolean validateMu2consolPreoperativeDiagnosisSectionPreoperativeDiagnosis(
 			PreoperativeDiagnosisSection preoperativeDiagnosisSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_MU2CONSOL_PREOPERATIVE_DIAGNOSIS_SECTION_PREOPERATIVE_DIAGNOSIS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(Mu2consolPackage.Literals.PREOPERATIVE_DIAGNOSIS_SECTION);
 			try {
-				VALIDATE_MU2CONSOL_PREOPERATIVE_DIAGNOSIS_SECTION_PREOPERATIVE_DIAGNOSIS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper
-						.createInvariant(VALIDATE_MU2CONSOL_PREOPERATIVE_DIAGNOSIS_SECTION_PREOPERATIVE_DIAGNOSIS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(
-						pe.getLocalizedMessage());
+				VALIDATE_MU2CONSOL_PREOPERATIVE_DIAGNOSIS_SECTION_PREOPERATIVE_DIAGNOSIS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MU2CONSOL_PREOPERATIVE_DIAGNOSIS_SECTION_PREOPERATIVE_DIAGNOSIS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV
-				.createQuery(
-						VALIDATE_MU2CONSOL_PREOPERATIVE_DIAGNOSIS_SECTION_PREOPERATIVE_DIAGNOSIS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV)
-				.check(preoperativeDiagnosisSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MU2CONSOL_PREOPERATIVE_DIAGNOSIS_SECTION_PREOPERATIVE_DIAGNOSIS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(preoperativeDiagnosisSection)) {
 			if (diagnostics != null) {
-				diagnostics
-						.add(new BasicDiagnostic(
-								Diagnostic.ERROR,
-								Mu2consolValidator.DIAGNOSTIC_SOURCE,
-								Mu2consolValidator.PREOPERATIVE_DIAGNOSIS_SECTION__MU2CONSOL_PREOPERATIVE_DIAGNOSIS_SECTION_PREOPERATIVE_DIAGNOSIS,
-								org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE
-										.getString(
-												"_UI_GenericInvariant_diagnostic",
-												new Object[] {
-														"Mu2consolPreoperativeDiagnosisSectionPreoperativeDiagnosis",
-														org.eclipse.emf.ecore.util.EObjectValidator
-																.getObjectLabel(
-																		preoperativeDiagnosisSection,
-																		context) }),
-								new Object[] { preoperativeDiagnosisSection }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
+						 Mu2consolValidator.PREOPERATIVE_DIAGNOSIS_SECTION__MU2CONSOL_PREOPERATIVE_DIAGNOSIS_SECTION_PREOPERATIVE_DIAGNOSIS,
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "Mu2consolPreoperativeDiagnosisSectionPreoperativeDiagnosis", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(preoperativeDiagnosisSection, context) }),
+						 new Object [] { preoperativeDiagnosisSection }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -185,22 +159,16 @@ public class PreoperativeDiagnosisSectionOperations
 			PreoperativeDiagnosisSection preoperativeDiagnosisSection) {
 		if (GETMU2CONSOL_PREOPERATIVE_DIAGNOSIS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-					Mu2consolPackage.Literals.PREOPERATIVE_DIAGNOSIS_SECTION,
-					Mu2consolPackage.Literals.PREOPERATIVE_DIAGNOSIS_SECTION
-							.getEAllOperations().get(62));
+			helper.setOperationContext(Mu2consolPackage.Literals.PREOPERATIVE_DIAGNOSIS_SECTION, Mu2consolPackage.Literals.PREOPERATIVE_DIAGNOSIS_SECTION.getEAllOperations().get(62));
 			try {
-				GETMU2CONSOL_PREOPERATIVE_DIAGNOSIS__EOCL_QRY = helper
-						.createQuery(GETMU2CONSOL_PREOPERATIVE_DIAGNOSIS__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(
-						pe.getLocalizedMessage());
+				GETMU2CONSOL_PREOPERATIVE_DIAGNOSIS__EOCL_QRY = helper.createQuery(GETMU2CONSOL_PREOPERATIVE_DIAGNOSIS__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV
-				.createQuery(GETMU2CONSOL_PREOPERATIVE_DIAGNOSIS__EOCL_QRY);
-		return (PreoperativeDiagnosis) query
-				.evaluate(preoperativeDiagnosisSection);
+		OCL.Query query = EOCL_ENV.createQuery(GETMU2CONSOL_PREOPERATIVE_DIAGNOSIS__EOCL_QRY);
+		return (PreoperativeDiagnosis) query.evaluate(preoperativeDiagnosisSection);
 	}
 
 } // PreoperativeDiagnosisSectionOperations
