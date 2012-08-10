@@ -9,7 +9,7 @@
 </prolog>
 <body>
 <section id="knownSubclasses">
-<p>Known Subclasses: <xref href="../SummaryOfCareRecord.dita">Summary Of Care Record</xref>, <xref href="../VDTAmbulatoryPatientInfo.dita">VDT Ambulatory Patient Info</xref>, <xref href="../CreateTransmitSummaryOfCareRecord.dita">Create Transmit Summary Of Care Record</xref>, <xref href="../VDTInpatientPatientInfo.dita">VDT Inpatient Patient Info</xref>, <xref href="../ClinicalOfficeVisitSummary.dita">Clinical Office Visit Summary</xref></p>
+<p>Known Subclasses: <xref href="../SummaryOfCareRecord.dita">Summary Of Care Record</xref></p>
 </section>
 <section id="description">
 </section>
@@ -87,14 +87,14 @@
 <ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
   <typeId root="2.16.840.1.113883.1.3"/>
   <templateId root="2.16.840.1.113883.10.20.22.1.1"/>
-  <id root="MDHT" extension="1037291972"/>
-  <code code="928335929"/>
+  <id root="MDHT" extension="1348194232"/>
+  <code code="978253346"/>
   <title>TEXT FOR TITLE</title>
   <effectiveTime/>
-  <confidentialityCode code="1047087315"/>
+  <confidentialityCode code="1429566101"/>
   <recordTarget>
     <patientRole>
-      <id root="MDHT" extension="2146004197"/>
+      <id root="MDHT" extension="2022686351"/>
       <patient/>
     </patientRole>
   </recordTarget>

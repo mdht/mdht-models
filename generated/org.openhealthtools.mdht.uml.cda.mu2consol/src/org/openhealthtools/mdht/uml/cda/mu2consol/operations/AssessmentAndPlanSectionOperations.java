@@ -25,25 +25,17 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage;
  * <!-- begin-user-doc --> A static utility class that provides operations
  * related to '<em><b>Assessment And Plan Section</b></em>' model objects. <!--
  * end-user-doc -->
- * 
+ *
  * <p>
  * The following operations are supported:
  * <ul>
- * <li>
- * {@link org.openhealthtools.mdht.uml.cda.mu2consol.AssessmentAndPlanSection#getPlanOfCareActivityProcedure()
- * <em>Get Plan Of Care Activity Procedure</em>}</li>
- * <li>
- * {@link org.openhealthtools.mdht.uml.cda.mu2consol.AssessmentAndPlanSection#getPlanOfCareActivitySubstanceAdministration()
- * <em>Get Plan Of Care Activity Substance Administration</em>}</li>
- * <li>
- * {@link org.openhealthtools.mdht.uml.cda.mu2consol.AssessmentAndPlanSection#getPlanOfCareActivitySupply()
- * <em>Get Plan Of Care Activity Supply</em>}</li>
- * <li>
- * {@link org.openhealthtools.mdht.uml.cda.mu2consol.AssessmentAndPlanSection#getProblemObservation()
- * <em>Get Problem Observation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.AssessmentAndPlanSection#getPlanOfCareActivityProcedure() <em>Get Plan Of Care Activity Procedure</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.AssessmentAndPlanSection#getPlanOfCareActivitySubstanceAdministration() <em>Get Plan Of Care Activity Substance Administration</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.AssessmentAndPlanSection#getPlanOfCareActivitySupply() <em>Get Plan Of Care Activity Supply</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.AssessmentAndPlanSection#getProblemObservation() <em>Get Problem Observation</em>}</li>
  * </ul>
  * </p>
- * 
+ *
  * @generated
  */
 public class AssessmentAndPlanSectionOperations
@@ -51,7 +43,6 @@ public class AssessmentAndPlanSectionOperations
 		org.openhealthtools.mdht.uml.cda.consol.operations.AssessmentAndPlanSectionOperations {
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	protected AssessmentAndPlanSectionOperations() {
@@ -100,30 +91,21 @@ public class AssessmentAndPlanSectionOperations
 			AssessmentAndPlanSection assessmentAndPlanSection) {
 		if (GET_PLAN_OF_CARE_ACTIVITY_PROCEDURE__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-					Mu2consolPackage.Literals.ASSESSMENT_AND_PLAN_SECTION,
-					Mu2consolPackage.Literals.ASSESSMENT_AND_PLAN_SECTION
-							.getEAllOperations().get(60));
+			helper.setOperationContext(Mu2consolPackage.Literals.ASSESSMENT_AND_PLAN_SECTION, Mu2consolPackage.Literals.ASSESSMENT_AND_PLAN_SECTION.getEAllOperations().get(60));
 			try {
-				GET_PLAN_OF_CARE_ACTIVITY_PROCEDURE__EOCL_QRY = helper
-						.createQuery(GET_PLAN_OF_CARE_ACTIVITY_PROCEDURE__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(
-						pe.getLocalizedMessage());
+				GET_PLAN_OF_CARE_ACTIVITY_PROCEDURE__EOCL_QRY = helper.createQuery(GET_PLAN_OF_CARE_ACTIVITY_PROCEDURE__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV
-				.createQuery(GET_PLAN_OF_CARE_ACTIVITY_PROCEDURE__EOCL_QRY);
-		return (PlanOfCareActivityProcedure) query
-				.evaluate(assessmentAndPlanSection);
+		OCL.Query query = EOCL_ENV.createQuery(GET_PLAN_OF_CARE_ACTIVITY_PROCEDURE__EOCL_QRY);
+		return (PlanOfCareActivityProcedure) query.evaluate(assessmentAndPlanSection);
 	}
 
 	/**
-	 * The cached OCL expression body for the '
-	 * {@link #getPlanOfCareActivitySubstanceAdministration(AssessmentAndPlanSection)
-	 * <em>Get Plan Of Care Activity Substance Administration</em>}' operation.
+	 * The cached OCL expression body for the '{@link #getPlanOfCareActivitySubstanceAdministration(AssessmentAndPlanSection) <em>Get Plan Of Care Activity Substance Administration</em>}' operation.
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @see #getPlanOfCareActivitySubstanceAdministration(AssessmentAndPlanSection)
 	 * @generated
 	 * @ordered
@@ -131,11 +113,8 @@ public class AssessmentAndPlanSectionOperations
 	protected static final String GET_PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION__EOCL_EXP = "self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(consol::PlanOfCareActivitySubstanceAdministration))->asSequence()->any(true).oclAsType(consol::PlanOfCareActivitySubstanceAdministration)";
 
 	/**
-	 * The cached OCL query for the '
-	 * {@link #getPlanOfCareActivitySubstanceAdministration(AssessmentAndPlanSection)
-	 * <em>Get Plan Of Care Activity Substance Administration</em>}' query
-	 * operation. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * The cached OCL query for the '{@link #getPlanOfCareActivitySubstanceAdministration(AssessmentAndPlanSection) <em>Get Plan Of Care Activity Substance Administration</em>}' query operation.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @see #getPlanOfCareActivitySubstanceAdministration(AssessmentAndPlanSection)
 	 * @generated
 	 * @ordered
@@ -162,22 +141,16 @@ public class AssessmentAndPlanSectionOperations
 			AssessmentAndPlanSection assessmentAndPlanSection) {
 		if (GET_PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-					Mu2consolPackage.Literals.ASSESSMENT_AND_PLAN_SECTION,
-					Mu2consolPackage.Literals.ASSESSMENT_AND_PLAN_SECTION
-							.getEAllOperations().get(61));
+			helper.setOperationContext(Mu2consolPackage.Literals.ASSESSMENT_AND_PLAN_SECTION, Mu2consolPackage.Literals.ASSESSMENT_AND_PLAN_SECTION.getEAllOperations().get(61));
 			try {
-				GET_PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION__EOCL_QRY = helper
-						.createQuery(GET_PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(
-						pe.getLocalizedMessage());
+				GET_PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION__EOCL_QRY = helper.createQuery(GET_PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV
-				.createQuery(GET_PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION__EOCL_QRY);
-		return (PlanOfCareActivitySubstanceAdministration) query
-				.evaluate(assessmentAndPlanSection);
+		OCL.Query query = EOCL_ENV.createQuery(GET_PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION__EOCL_QRY);
+		return (PlanOfCareActivitySubstanceAdministration) query.evaluate(assessmentAndPlanSection);
 	}
 
 	/**
@@ -221,30 +194,22 @@ public class AssessmentAndPlanSectionOperations
 			AssessmentAndPlanSection assessmentAndPlanSection) {
 		if (GET_PLAN_OF_CARE_ACTIVITY_SUPPLY__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-					Mu2consolPackage.Literals.ASSESSMENT_AND_PLAN_SECTION,
-					Mu2consolPackage.Literals.ASSESSMENT_AND_PLAN_SECTION
-							.getEAllOperations().get(62));
+			helper.setOperationContext(Mu2consolPackage.Literals.ASSESSMENT_AND_PLAN_SECTION, Mu2consolPackage.Literals.ASSESSMENT_AND_PLAN_SECTION.getEAllOperations().get(62));
 			try {
-				GET_PLAN_OF_CARE_ACTIVITY_SUPPLY__EOCL_QRY = helper
-						.createQuery(GET_PLAN_OF_CARE_ACTIVITY_SUPPLY__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(
-						pe.getLocalizedMessage());
+				GET_PLAN_OF_CARE_ACTIVITY_SUPPLY__EOCL_QRY = helper.createQuery(GET_PLAN_OF_CARE_ACTIVITY_SUPPLY__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV
-				.createQuery(GET_PLAN_OF_CARE_ACTIVITY_SUPPLY__EOCL_QRY);
-		return (PlanOfCareActivitySupply) query
-				.evaluate(assessmentAndPlanSection);
+		OCL.Query query = EOCL_ENV.createQuery(GET_PLAN_OF_CARE_ACTIVITY_SUPPLY__EOCL_QRY);
+		return (PlanOfCareActivitySupply) query.evaluate(assessmentAndPlanSection);
 	}
 
 	/**
-	 * The cached OCL expression body for the '
-	 * {@link #getProblemObservation(AssessmentAndPlanSection)
-	 * <em>Get Problem Observation</em>}' operation. <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #getProblemObservation(AssessmentAndPlanSection) <em>Get Problem Observation</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * 
 	 * @see #getProblemObservation(AssessmentAndPlanSection)
 	 * @generated
 	 * @ordered
@@ -252,11 +217,9 @@ public class AssessmentAndPlanSectionOperations
 	protected static final String GET_PROBLEM_OBSERVATION__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProblemObservation))->asSequence()->any(true).oclAsType(consol::ProblemObservation)";
 
 	/**
-	 * The cached OCL query for the '
-	 * {@link #getProblemObservation(AssessmentAndPlanSection)
-	 * <em>Get Problem Observation</em>}' query operation. <!-- begin-user-doc
+	 * The cached OCL query for the '{@link #getProblemObservation(AssessmentAndPlanSection) <em>Get Problem Observation</em>}' query operation.
+	 * <!-- begin-user-doc
 	 * --> <!-- end-user-doc -->
-	 * 
 	 * @see #getProblemObservation(AssessmentAndPlanSection)
 	 * @generated
 	 * @ordered
@@ -280,20 +243,15 @@ public class AssessmentAndPlanSectionOperations
 			AssessmentAndPlanSection assessmentAndPlanSection) {
 		if (GET_PROBLEM_OBSERVATION__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-					Mu2consolPackage.Literals.ASSESSMENT_AND_PLAN_SECTION,
-					Mu2consolPackage.Literals.ASSESSMENT_AND_PLAN_SECTION
-							.getEAllOperations().get(63));
+			helper.setOperationContext(Mu2consolPackage.Literals.ASSESSMENT_AND_PLAN_SECTION, Mu2consolPackage.Literals.ASSESSMENT_AND_PLAN_SECTION.getEAllOperations().get(63));
 			try {
-				GET_PROBLEM_OBSERVATION__EOCL_QRY = helper
-						.createQuery(GET_PROBLEM_OBSERVATION__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(
-						pe.getLocalizedMessage());
+				GET_PROBLEM_OBSERVATION__EOCL_QRY = helper.createQuery(GET_PROBLEM_OBSERVATION__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV
-				.createQuery(GET_PROBLEM_OBSERVATION__EOCL_QRY);
+		OCL.Query query = EOCL_ENV.createQuery(GET_PROBLEM_OBSERVATION__EOCL_QRY);
 		return (ProblemObservation) query.evaluate(assessmentAndPlanSection);
 	}
 

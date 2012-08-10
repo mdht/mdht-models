@@ -6,20 +6,22 @@
  */
 package org.openhealthtools.mdht.uml.cda.mu2consol;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.AllergyProblemAct;
 
 /**
  * <!-- begin-user-doc --> A representation of the model object '
  * <em><b>Allergies Section Entries Optional</b></em>'. <!-- end-user-doc -->
- * 
- * 
+ *
+ *
  * @see org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage#getAllergiesSectionEntriesOptional()
- * @model annotation=
- *        "http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='mu2consolAllergiesSectionEntriesOptionalAllergyProblemAct'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='mu2consolAllergiesSectionEntriesOptionalAllergyProblemAct'"
  * @generated
  */
 public interface AllergiesSectionEntriesOptional extends
@@ -56,8 +58,14 @@ public interface AllergiesSectionEntriesOptional extends
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	public AllergiesSectionEntriesOptional init();
+
+	/**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public AllergiesSectionEntriesOptional init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // AllergiesSectionEntriesOptional

@@ -1,37 +1,22 @@
-/**
- * <copyright>
- * </copyright>
- *
- * $Id$
- */
 package org.openhealthtools.mdht.uml.cda.mu2consol.impl;
 
+
 import java.util.Map;
+
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
-
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.AllergiesSection;
-import org.openhealthtools.mdht.uml.cda.consol.AllergiesSectionEntriesOptional;
-import org.openhealthtools.mdht.uml.cda.consol.AssessmentAndPlanSection;
-import org.openhealthtools.mdht.uml.cda.consol.AssessmentSection;
 import org.openhealthtools.mdht.uml.cda.consol.ChiefComplaintAndReasonForVisitSection;
 import org.openhealthtools.mdht.uml.cda.consol.ChiefComplaintSection;
 import org.openhealthtools.mdht.uml.cda.consol.EncountersSection;
 import org.openhealthtools.mdht.uml.cda.consol.HistoryOfPastIllnessSection;
-import org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionDiagnosisSection;
-import org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionMedicationsSectionEntriesOptional;
-import org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeDiagnosisSection;
 import org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeInstructionsSection;
 import org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeMedicationsSection;
 import org.openhealthtools.mdht.uml.cda.consol.ImmunizationsSection;
-import org.openhealthtools.mdht.uml.cda.consol.InstructionsSection;
 import org.openhealthtools.mdht.uml.cda.consol.InterventionsSection;
-import org.openhealthtools.mdht.uml.cda.consol.MedicationsAdministeredSection;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationsSection;
-import org.openhealthtools.mdht.uml.cda.consol.PlanOfCareSection;
-import org.openhealthtools.mdht.uml.cda.consol.PostoperativeDiagnosisSection;
-import org.openhealthtools.mdht.uml.cda.consol.PostprocedureDiagnosisSection;
-import org.openhealthtools.mdht.uml.cda.consol.PreoperativeDiagnosisSection;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemSection;
 import org.openhealthtools.mdht.uml.cda.consol.ProceduresSection;
 import org.openhealthtools.mdht.uml.cda.consol.ReasonForReferralSection;
@@ -40,26 +25,35 @@ import org.openhealthtools.mdht.uml.cda.consol.ResultsSection;
 import org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection;
 import org.openhealthtools.mdht.uml.cda.consol.VitalSignsSection;
 import org.openhealthtools.mdht.uml.cda.consol.VitalSignsSectionEntriesOptional;
+import org.openhealthtools.mdht.uml.cda.mu2consol.AllergiesSectionEntriesOptional;
+import org.openhealthtools.mdht.uml.cda.mu2consol.AssessmentAndPlanSection;
+import org.openhealthtools.mdht.uml.cda.mu2consol.AssessmentSection;
+import org.openhealthtools.mdht.uml.cda.mu2consol.HospitalAdmissionDiagnosisSection;
+import org.openhealthtools.mdht.uml.cda.mu2consol.HospitalAdmissionMedicationsSectionEntriesOptional;
+import org.openhealthtools.mdht.uml.cda.mu2consol.HospitalDischargeDiagnosisSection;
+import org.openhealthtools.mdht.uml.cda.mu2consol.InstructionsSection;
+import org.openhealthtools.mdht.uml.cda.mu2consol.MedicationsAdministeredSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage;
+import org.openhealthtools.mdht.uml.cda.mu2consol.PlanOfCareSection;
+import org.openhealthtools.mdht.uml.cda.mu2consol.PostoperativeDiagnosisSection;
+import org.openhealthtools.mdht.uml.cda.mu2consol.PostprocedureDiagnosisSection;
+import org.openhealthtools.mdht.uml.cda.mu2consol.PreoperativeDiagnosisSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.SummaryOfCareRecord;
-
 import org.openhealthtools.mdht.uml.cda.mu2consol.operations.SummaryOfCareRecordOperations;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-
 /**
- * <!-- begin-user-doc --> An implementation of the model object '
- * <em><b>Summary Of Care Record</b></em>'. <!-- end-user-doc -->
+ * <!-- begin-user-doc -->
+ * An implementation of the model object '<em><b>Summary Of Care Record</b></em>'.
+ * <!-- end-user-doc -->
  * <p>
  * </p>
- * 
+ *
  * @generated
  */
-public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
-		implements SummaryOfCareRecord {
+public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl implements SummaryOfCareRecord {
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	protected SummaryOfCareRecordImpl() {
@@ -67,8 +61,8 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -77,368 +71,215 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSummaryOfCareRecordCannotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SummaryOfCareRecordOperations
-				.validateSummaryOfCareRecordCannotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection(
-						this, diagnostics, context);
+	public boolean validateSummaryOfCareRecordCannotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordCannotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSummaryOfCareRecordMu2EncounterDiagnosesRequirements(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SummaryOfCareRecordOperations
-				.validateSummaryOfCareRecordMu2EncounterDiagnosesRequirements(
-						this, diagnostics, context);
+	public boolean validateSummaryOfCareRecordMu2EncounterDiagnosesRequirements(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordMu2EncounterDiagnosesRequirements(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSummaryOfCareRecordCanHaveEitherRequiredOrOptionalVitalSignsSection(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SummaryOfCareRecordOperations
-				.validateSummaryOfCareRecordCanHaveEitherRequiredOrOptionalVitalSignsSection(
-						this, diagnostics, context);
+	public boolean validateSummaryOfCareRecordCanHaveEitherRequiredOrOptionalVitalSignsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordCanHaveEitherRequiredOrOptionalVitalSignsSection(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSummaryOfCareRecordMedicationListConstraint(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SummaryOfCareRecordOperations
-				.validateSummaryOfCareRecordMedicationListConstraint(this,
-						diagnostics, context);
+	public boolean validateSummaryOfCareRecordMedicationListConstraint(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordMedicationListConstraint(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSummaryOfCareRecordPlanOfCareSection(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SummaryOfCareRecordOperations
-				.validateSummaryOfCareRecordPlanOfCareSection(this,
-						diagnostics, context);
+	public boolean validateSummaryOfCareRecordPlanOfCareSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordPlanOfCareSection(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSummaryOfCareRecordInstructionsSection(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SummaryOfCareRecordOperations
-				.validateSummaryOfCareRecordInstructionsSection(this,
-						diagnostics, context);
+	public boolean validateSummaryOfCareRecordInstructionsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordInstructionsSection(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSummaryOfCareRecordHospitalDischargeInstructionsSection(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SummaryOfCareRecordOperations
-				.validateSummaryOfCareRecordHospitalDischargeInstructionsSection(
-						this, diagnostics, context);
+	public boolean validateSummaryOfCareRecordHospitalDischargeInstructionsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordHospitalDischargeInstructionsSection(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSummaryOfCareRecordProblemSection(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SummaryOfCareRecordOperations
-				.validateSummaryOfCareRecordProblemSection(this, diagnostics,
-						context);
+	public boolean validateSummaryOfCareRecordProblemSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordProblemSection(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSummaryOfCareRecordMedicationsAdministeredSection(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SummaryOfCareRecordOperations
-				.validateSummaryOfCareRecordMedicationsAdministeredSection(
-						this, diagnostics, context);
+	public boolean validateSummaryOfCareRecordMedicationsAdministeredSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordMedicationsAdministeredSection(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSummaryOfCareRecordSocialHistorySection(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SummaryOfCareRecordOperations
-				.validateSummaryOfCareRecordSocialHistorySection(this,
-						diagnostics, context);
+	public boolean validateSummaryOfCareRecordSocialHistorySection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordSocialHistorySection(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSummaryOfCareRecordResultsSection(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SummaryOfCareRecordOperations
-				.validateSummaryOfCareRecordResultsSection(this, diagnostics,
-						context);
+	public boolean validateSummaryOfCareRecordResultsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordResultsSection(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSummaryOfCareRecordProceduresSection(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SummaryOfCareRecordOperations
-				.validateSummaryOfCareRecordProceduresSection(this,
-						diagnostics, context);
+	public boolean validateSummaryOfCareRecordProceduresSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordProceduresSection(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSummaryOfCareRecordmu2consolEncountersSectionEncounterActivities(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SummaryOfCareRecordOperations
-				.validateSummaryOfCareRecordmu2consolEncountersSectionEncounterActivities(
-						this, diagnostics, context);
+	public boolean validateSummaryOfCareRecordmu2consolHospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedication(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordmu2consolHospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedication(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSummaryOfCareRecordmu2consolPlanOfCareSectionCarePlanningForPlanOfCareSection(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SummaryOfCareRecordOperations
-				.validateSummaryOfCareRecordmu2consolPlanOfCareSectionCarePlanningForPlanOfCareSection(
-						this, diagnostics, context);
+	public boolean validateSummaryOfCareRecordmu2consolAllergiesSectionEntriesOptionalAllergyProblemAct(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordmu2consolAllergiesSectionEntriesOptionalAllergyProblemAct(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSummaryOfCareRecordmu2consolPlanOfCareSectionMu2consolPlanOfCareSectionPlanOfCareActivityAct(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SummaryOfCareRecordOperations
-				.validateSummaryOfCareRecordmu2consolPlanOfCareSectionMu2consolPlanOfCareSectionPlanOfCareActivityAct(
-						this, diagnostics, context);
+	public boolean validateSummaryOfCareRecordmu2consolPlanOfCareSectionCarePlanningForPlanOfCareSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordmu2consolPlanOfCareSectionCarePlanningForPlanOfCareSection(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSummaryOfCareRecordmu2consolPlanOfCareSectionMu2consolPlanOfCareSectionPlanOfCareActivityEncounter(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SummaryOfCareRecordOperations
-				.validateSummaryOfCareRecordmu2consolPlanOfCareSectionMu2consolPlanOfCareSectionPlanOfCareActivityEncounter(
-						this, diagnostics, context);
+	public boolean validateSummaryOfCareRecordmu2consolMedicationsAdministeredSectionMedicationActivity(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordmu2consolMedicationsAdministeredSectionMedicationActivity(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSummaryOfCareRecordmu2consolPlanOfCareSectionMu2consolPlanOfCareSectionPlanOfCareActivityObservation(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SummaryOfCareRecordOperations
-				.validateSummaryOfCareRecordmu2consolPlanOfCareSectionMu2consolPlanOfCareSectionPlanOfCareActivityObservation(
-						this, diagnostics, context);
+	public boolean validateSummaryOfCareRecordmu2consolInstructionsSectionInstructions(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordmu2consolInstructionsSectionInstructions(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSummaryOfCareRecordmu2consolInstructionsSectionInstructions(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SummaryOfCareRecordOperations
-				.validateSummaryOfCareRecordmu2consolInstructionsSectionInstructions(
-						this, diagnostics, context);
+	public boolean validateSummaryOfCareRecordmu2consolAssessmentSectionProblemObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordmu2consolAssessmentSectionProblemObservation(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSummaryOfCareRecordmu2consolAssessmentSectionProblemObservation(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SummaryOfCareRecordOperations
-				.validateSummaryOfCareRecordmu2consolAssessmentSectionProblemObservation(
-						this, diagnostics, context);
+	public boolean validateSummaryOfCareRecordmu2consolHospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosis(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordmu2consolHospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosis(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSummaryOfCareRecordmu2consolHospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosis(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SummaryOfCareRecordOperations
-				.validateSummaryOfCareRecordmu2consolHospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosis(
-						this, diagnostics, context);
+	public boolean validateSummaryOfCareRecordmu2consolHospitalDischargeDiagnosisSectionHospitalDischargeDiagnosis(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordmu2consolHospitalDischargeDiagnosisSectionHospitalDischargeDiagnosis(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSummaryOfCareRecordmu2consolHospitalDischargeDiagnosisSectionHospitalDischargeDiagnosis(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SummaryOfCareRecordOperations
-				.validateSummaryOfCareRecordmu2consolHospitalDischargeDiagnosisSectionHospitalDischargeDiagnosis(
-						this, diagnostics, context);
+	public boolean validateSummaryOfCareRecordmu2consolPostoperativeDiagnosisSectionProblemObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordmu2consolPostoperativeDiagnosisSectionProblemObservation(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSummaryOfCareRecordmu2consolPostoperativeDiagnosisSectionProblemObservation(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SummaryOfCareRecordOperations
-				.validateSummaryOfCareRecordmu2consolPostoperativeDiagnosisSectionProblemObservation(
-						this, diagnostics, context);
+	public boolean validateSummaryOfCareRecordmu2consolPostprocedureDiagnosisSectionPostprocedureDiagnosis(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordmu2consolPostprocedureDiagnosisSectionPostprocedureDiagnosis(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSummaryOfCareRecordmu2consolPreoperativeDiagnosisSectionPreoperativeDiagnosis(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SummaryOfCareRecordOperations
-				.validateSummaryOfCareRecordmu2consolPreoperativeDiagnosisSectionPreoperativeDiagnosis(
-						this, diagnostics, context);
+	public boolean validateSummaryOfCareRecordmu2consolPreoperativeDiagnosisSectionPreoperativeDiagnosis(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordmu2consolPreoperativeDiagnosisSectionPreoperativeDiagnosis(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public boolean validateSummaryOfCareRecordmu2consolMedicationsAdministeredSectionMedicationActivity(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SummaryOfCareRecordOperations
-				.validateSummaryOfCareRecordmu2consolMedicationsAdministeredSectionMedicationActivity(
-						this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public boolean validateSummaryOfCareRecordmu2consolHospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedication(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SummaryOfCareRecordOperations
-				.validateSummaryOfCareRecordmu2consolHospitalAdmissionMedicationsSectionEntriesOptionalAdmissionMedication(
-						this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public boolean validateSummaryOfCareRecordmu2consolHospitalAdmissionMedicationsSectionEntriesOptionalMedicationActivity(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SummaryOfCareRecordOperations
-				.validateSummaryOfCareRecordmu2consolHospitalAdmissionMedicationsSectionEntriesOptionalMedicationActivity(
-						this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public boolean validateSummaryOfCareRecordmu2consolHospitalDischargeMedicationsSectionDischargeMedication(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SummaryOfCareRecordOperations
-				.validateSummaryOfCareRecordmu2consolHospitalDischargeMedicationsSectionDischargeMedication(
-						this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public boolean validateSummaryOfCareRecordmu2consolHospitalDischargeMedicationsSectionMedicationActivity(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SummaryOfCareRecordOperations
-				.validateSummaryOfCareRecordmu2consolHospitalDischargeMedicationsSectionMedicationActivity(
-						this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public boolean validateSummaryOfCareRecordmu2consolAllergiesSectionEntriesOptionalAllergyProblemAct(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SummaryOfCareRecordOperations
-				.validateSummaryOfCareRecordmu2consolAllergiesSectionEntriesOptionalAllergyProblemAct(
-						this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public boolean validateSummaryOfCareRecordmu2consolPostprocedureDiagnosisSectionPostprocedureDiagnosis(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SummaryOfCareRecordOperations
-				.validateSummaryOfCareRecordmu2consolPostprocedureDiagnosisSectionPostprocedureDiagnosis(
-						this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public EncountersSection getEncountersSection() {
@@ -446,8 +287,8 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public PlanOfCareSection getPlanOfCareSection() {
@@ -455,8 +296,8 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public AssessmentAndPlanSection getAssessmentAndPlanSection() {
@@ -464,8 +305,8 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public InterventionsSection getInterventionsSection() {
@@ -473,8 +314,8 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public InstructionsSection getInstructionsSection() {
@@ -482,18 +323,17 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public HospitalDischargeInstructionsSection getHospitalDischargeInstructionsSection() {
-		return SummaryOfCareRecordOperations
-				.getHospitalDischargeInstructionsSection(this);
+		return SummaryOfCareRecordOperations.getHospitalDischargeInstructionsSection(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public AssessmentSection getAssessmentSection() {
@@ -501,38 +341,35 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public HospitalAdmissionDiagnosisSection getHospitalAdmissionDiagnosisSection() {
-		return SummaryOfCareRecordOperations
-				.getHospitalAdmissionDiagnosisSection(this);
+		return SummaryOfCareRecordOperations.getHospitalAdmissionDiagnosisSection(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public HospitalDischargeDiagnosisSection getHospitalDischargeDiagnosisSection() {
-		return SummaryOfCareRecordOperations
-				.getHospitalDischargeDiagnosisSection(this);
+		return SummaryOfCareRecordOperations.getHospitalDischargeDiagnosisSection(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public PostoperativeDiagnosisSection getPostoperativeDiagnosisSection() {
-		return SummaryOfCareRecordOperations
-				.getPostoperativeDiagnosisSection(this);
+		return SummaryOfCareRecordOperations.getPostoperativeDiagnosisSection(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public ProblemSection getProblemSection() {
@@ -540,8 +377,8 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public AllergiesSection getAllergiesSection() {
@@ -549,18 +386,17 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public HistoryOfPastIllnessSection getHistoryOfPastIllnessSection() {
-		return SummaryOfCareRecordOperations
-				.getHistoryOfPastIllnessSection(this);
+		return SummaryOfCareRecordOperations.getHistoryOfPastIllnessSection(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public ReasonForVisitSection getReasonForVisitSection() {
@@ -568,8 +404,8 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public ChiefComplaintSection getChiefComplaintSection() {
@@ -577,28 +413,26 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public ChiefComplaintAndReasonForVisitSection getChiefComplaintAndReasonForVisitSection() {
-		return SummaryOfCareRecordOperations
-				.getChiefComplaintAndReasonForVisitSection(this);
+		return SummaryOfCareRecordOperations.getChiefComplaintAndReasonForVisitSection(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public PreoperativeDiagnosisSection getPreoperativeDiagnosisSection() {
-		return SummaryOfCareRecordOperations
-				.getPreoperativeDiagnosisSection(this);
+		return SummaryOfCareRecordOperations.getPreoperativeDiagnosisSection(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public ImmunizationsSection getImmunizationsSection() {
@@ -606,18 +440,17 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public MedicationsAdministeredSection getMedicationsAdministeredSection() {
-		return SummaryOfCareRecordOperations
-				.getMedicationsAdministeredSection(this);
+		return SummaryOfCareRecordOperations.getMedicationsAdministeredSection(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public MedicationsSection getMedicationsSection() {
@@ -625,28 +458,26 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public HospitalAdmissionMedicationsSectionEntriesOptional getHospitalAdmissionMedicationsSectionEntriesOptional() {
-		return SummaryOfCareRecordOperations
-				.getHospitalAdmissionMedicationsSectionEntriesOptional(this);
+		return SummaryOfCareRecordOperations.getHospitalAdmissionMedicationsSectionEntriesOptional(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public HospitalDischargeMedicationsSection getHospitalDischargeMedicationsSection() {
-		return SummaryOfCareRecordOperations
-				.getHospitalDischargeMedicationsSection(this);
+		return SummaryOfCareRecordOperations.getHospitalDischargeMedicationsSection(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public SocialHistorySection getSocialHistorySection() {
@@ -654,8 +485,8 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public ResultsSection getResultsSection() {
@@ -663,8 +494,8 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public VitalSignsSection getVitalSignsSection() {
@@ -672,18 +503,17 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public VitalSignsSectionEntriesOptional getVitalSignsSectionEntriesOptional() {
-		return SummaryOfCareRecordOperations
-				.getVitalSignsSectionEntriesOptional(this);
+		return SummaryOfCareRecordOperations.getVitalSignsSectionEntriesOptional(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public ProceduresSection getProceduresSection() {
@@ -691,28 +521,26 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public AllergiesSectionEntriesOptional getAllergiesSectionEntriesOptional() {
-		return SummaryOfCareRecordOperations
-				.getAllergiesSectionEntriesOptional(this);
+		return SummaryOfCareRecordOperations.getAllergiesSectionEntriesOptional(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public PostprocedureDiagnosisSection getPostprocedureDiagnosisSection() {
-		return SummaryOfCareRecordOperations
-				.getPostprocedureDiagnosisSection(this);
+		return SummaryOfCareRecordOperations.getPostprocedureDiagnosisSection(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public ReasonForReferralSection getReasonForReferralSection() {
@@ -720,26 +548,32 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public boolean validateGeneralHeaderConstraintsTemplateId(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SummaryOfCareRecordOperations
-				.validateGeneralHeaderConstraintsTemplateId(this, diagnostics,
-						context);
+	public boolean validateGeneralHeaderConstraintsTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SummaryOfCareRecordOperations.validateGeneralHeaderConstraintsTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
 	public SummaryOfCareRecord init() {
-		CDAUtil.init(this);
-		return this;
+	    return Initializer.Util.init(this);
 	}
-} // SummaryOfCareRecordImpl
+    /**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    @Override
+	public SummaryOfCareRecord init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
+} //SummaryOfCareRecordImpl

@@ -6,21 +6,23 @@
  */
 package org.openhealthtools.mdht.uml.cda.mu2consol;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.Instructions;
 
 /**
  * <!-- begin-user-doc --> A representation of the model object '
  * <em><b>Instructions Section</b></em>'. <!-- end-user-doc -->
- * 
- * 
+ *
+ *
  * @see org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage#getInstructionsSection()
- * @model annotation=
- *        "http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='mu2consolInstructionsSectionInstructions'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='mu2consolInstructionsSectionInstructions'"
  * @generated
  */
 public interface InstructionsSection extends
@@ -56,8 +58,14 @@ public interface InstructionsSection extends
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	public InstructionsSection init();
+
+	/**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public InstructionsSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // InstructionsSection

@@ -32,20 +32,15 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.util.Mu2consolValidator;
  * <!-- begin-user-doc --> A static utility class that provides operations
  * related to '<em><b>Allergies Section Entries Optional</b></em>' model
  * objects. <!-- end-user-doc -->
- * 
+ *
  * <p>
  * The following operations are supported:
  * <ul>
- * <li>
- * {@link org.openhealthtools.mdht.uml.cda.mu2consol.AllergiesSectionEntriesOptional#validateMu2consolAllergiesSectionEntriesOptionalAllergyProblemAct(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
- * <em>Validate Mu2consol Allergies Section Entries Optional Allergy Problem Act
- * </em>}</li>
- * <li>
- * {@link org.openhealthtools.mdht.uml.cda.mu2consol.AllergiesSectionEntriesOptional#getmu2consolAllergyProblemAct()
- * <em>Getmu2consol Allergy Problem Act</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.AllergiesSectionEntriesOptional#validateMu2consolAllergiesSectionEntriesOptionalAllergyProblemAct(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mu2consol Allergies Section Entries Optional Allergy Problem Act</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.AllergiesSectionEntriesOptional#getmu2consolAllergyProblemAct() <em>Getmu2consol Allergy Problem Act</em>}</li>
  * </ul>
  * </p>
- * 
+ *
  * @generated
  */
 public class AllergiesSectionEntriesOptionalOperations
@@ -53,7 +48,6 @@ public class AllergiesSectionEntriesOptionalOperations
 		org.openhealthtools.mdht.uml.cda.consol.operations.AllergiesSectionEntriesOptionalOperations {
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	protected AllergiesSectionEntriesOptionalOperations() {
@@ -61,26 +55,18 @@ public class AllergiesSectionEntriesOptionalOperations
 	}
 
 	/**
-	 * The cached OCL expression body for the '
-	 * {@link #validateMu2consolAllergiesSectionEntriesOptionalAllergyProblemAct(AllergiesSectionEntriesOptional, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * <em>Validate Mu2consol Allergies Section Entries Optional Allergy Problem Act</em>}
-	 * ' operation. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @see #validateMu2consolAllergiesSectionEntriesOptionalAllergyProblemAct(AllergiesSectionEntriesOptional,
-	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * The cached OCL expression body for the '{@link #validateMu2consolAllergiesSectionEntriesOptionalAllergyProblemAct(AllergiesSectionEntriesOptional, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mu2consol Allergies Section Entries Optional Allergy Problem Act</em>}' operation.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @see #validateMu2consolAllergiesSectionEntriesOptionalAllergyProblemAct(AllergiesSectionEntriesOptional, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
 	protected static final String VALIDATE_MU2CONSOL_ALLERGIES_SECTION_ENTRIES_OPTIONAL_ALLERGY_PROBLEM_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::AllergyProblemAct))";
 
 	/**
-	 * The cached OCL invariant for the '
-	 * {@link #validateMu2consolAllergiesSectionEntriesOptionalAllergyProblemAct(AllergiesSectionEntriesOptional, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * <em>Validate Mu2consol Allergies Section Entries Optional Allergy Problem Act</em>}
-	 * ' invariant operation. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @see #validateMu2consolAllergiesSectionEntriesOptionalAllergyProblemAct(AllergiesSectionEntriesOptional,
-	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * The cached OCL invariant for the '{@link #validateMu2consolAllergiesSectionEntriesOptionalAllergyProblemAct(AllergiesSectionEntriesOptional, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mu2consol Allergies Section Entries Optional Allergy Problem Act</em>}' invariant operation.
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @see #validateMu2consolAllergiesSectionEntriesOptionalAllergyProblemAct(AllergiesSectionEntriesOptional, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
@@ -107,40 +93,28 @@ public class AllergiesSectionEntriesOptionalOperations
 	public static boolean validateMu2consolAllergiesSectionEntriesOptionalAllergyProblemAct(
 			AllergiesSectionEntriesOptional allergiesSectionEntriesOptional,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
+  	  
 		if (VALIDATE_MU2CONSOL_ALLERGIES_SECTION_ENTRIES_OPTIONAL_ALLERGY_PROBLEM_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(Mu2consolPackage.Literals.ALLERGIES_SECTION_ENTRIES_OPTIONAL);
 			try {
-				VALIDATE_MU2CONSOL_ALLERGIES_SECTION_ENTRIES_OPTIONAL_ALLERGY_PROBLEM_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper
-						.createInvariant(VALIDATE_MU2CONSOL_ALLERGIES_SECTION_ENTRIES_OPTIONAL_ALLERGY_PROBLEM_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(
-						pe.getLocalizedMessage());
+				VALIDATE_MU2CONSOL_ALLERGIES_SECTION_ENTRIES_OPTIONAL_ALLERGY_PROBLEM_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MU2CONSOL_ALLERGIES_SECTION_ENTRIES_OPTIONAL_ALLERGY_PROBLEM_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV
-				.createQuery(
-						VALIDATE_MU2CONSOL_ALLERGIES_SECTION_ENTRIES_OPTIONAL_ALLERGY_PROBLEM_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV)
-				.check(allergiesSectionEntriesOptional)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_MU2CONSOL_ALLERGIES_SECTION_ENTRIES_OPTIONAL_ALLERGY_PROBLEM_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(allergiesSectionEntriesOptional)) {
 			if (diagnostics != null) {
-				diagnostics
-						.add(new BasicDiagnostic(
-								Diagnostic.ERROR,
-								Mu2consolValidator.DIAGNOSTIC_SOURCE,
-								Mu2consolValidator.ALLERGIES_SECTION_ENTRIES_OPTIONAL__MU2CONSOL_ALLERGIES_SECTION_ENTRIES_OPTIONAL_ALLERGY_PROBLEM_ACT,
-								org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE
-										.getString(
-												"_UI_GenericInvariant_diagnostic",
-												new Object[] {
-														"Mu2consolAllergiesSectionEntriesOptionalAllergyProblemAct",
-														org.eclipse.emf.ecore.util.EObjectValidator
-																.getObjectLabel(
-																		allergiesSectionEntriesOptional,
-																		context) }),
-								new Object[] { allergiesSectionEntriesOptional }));
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 Mu2consolValidator.DIAGNOSTIC_SOURCE,
+						 Mu2consolValidator.ALLERGIES_SECTION_ENTRIES_OPTIONAL__MU2CONSOL_ALLERGIES_SECTION_ENTRIES_OPTIONAL_ALLERGY_PROBLEM_ACT,
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "Mu2consolAllergiesSectionEntriesOptionalAllergyProblemAct", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(allergiesSectionEntriesOptional, context) }),
+						 new Object [] { allergiesSectionEntriesOptional }));
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -188,22 +162,16 @@ public class AllergiesSectionEntriesOptionalOperations
 			AllergiesSectionEntriesOptional allergiesSectionEntriesOptional) {
 		if (GETMU2CONSOL_ALLERGY_PROBLEM_ACT__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-					Mu2consolPackage.Literals.ALLERGIES_SECTION_ENTRIES_OPTIONAL,
-					Mu2consolPackage.Literals.ALLERGIES_SECTION_ENTRIES_OPTIONAL
-							.getEAllOperations().get(62));
+			helper.setOperationContext(Mu2consolPackage.Literals.ALLERGIES_SECTION_ENTRIES_OPTIONAL, Mu2consolPackage.Literals.ALLERGIES_SECTION_ENTRIES_OPTIONAL.getEAllOperations().get(62));
 			try {
-				GETMU2CONSOL_ALLERGY_PROBLEM_ACT__EOCL_QRY = helper
-						.createQuery(GETMU2CONSOL_ALLERGY_PROBLEM_ACT__EOCL_EXP);
-			} catch (ParserException pe) {
-				throw new UnsupportedOperationException(
-						pe.getLocalizedMessage());
+				GETMU2CONSOL_ALLERGY_PROBLEM_ACT__EOCL_QRY = helper.createQuery(GETMU2CONSOL_ALLERGY_PROBLEM_ACT__EOCL_EXP);
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV
-				.createQuery(GETMU2CONSOL_ALLERGY_PROBLEM_ACT__EOCL_QRY);
-		return (AllergyProblemAct) query
-				.evaluate(allergiesSectionEntriesOptional);
+		OCL.Query query = EOCL_ENV.createQuery(GETMU2CONSOL_ALLERGY_PROBLEM_ACT__EOCL_QRY);
+		return (AllergyProblemAct) query.evaluate(allergiesSectionEntriesOptional);
 	}
 
 } // AllergiesSectionEntriesOptionalOperations

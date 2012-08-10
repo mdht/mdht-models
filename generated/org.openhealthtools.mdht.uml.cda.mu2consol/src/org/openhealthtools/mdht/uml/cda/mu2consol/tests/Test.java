@@ -27,8 +27,16 @@ public class Test {
 	 */
 	public static void main(String[] args) {
 
+		System.out.println("======testSOCR=========");
 		testSOCR("socr_sample");
-		validateSOCR("socr_sample");
+		System.out.println("=====testSOCR==========");
+		
+		System.out.println("======testAsSOCR=========");
+		testAsSOCR("socr_sample_withDSTemplateId");
+		System.out.println("=====testAsSOCR==========");
+		
+//		validateSOCR("socr_sample");
+//		testAsSOCR("socr_sample");
 	}
 
 	public static void testSOCR(String fileName) {
@@ -42,6 +50,25 @@ public class Test {
 			System.out.println(clinicalDocument);
 			System.out.println(clinicalDocument.getAllSections().size());
 			for (Object j : clinicalDocument.getAllSections()) {
+				System.out.println(j);
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public static void testAsSOCR(String fileName) {
+		new StringBuffer();
+		String path = "samples/";
+		Mu2consolPackage.eINSTANCE.eClass();
+		ValidationResult result = new ValidationResult();
+		try {
+			ClinicalDocument cDoc = CDAUtil.loadAs(new FileInputStream(path + fileName + ".xml"), Mu2consolPackage.eINSTANCE.getSummaryOfCareRecord(), result);
+			
+			System.out.println(cDoc);
+			System.out.println(cDoc.getAllSections().size());
+			for (Object j : cDoc.getAllSections()) {
 				System.out.println(j);
 			}
 

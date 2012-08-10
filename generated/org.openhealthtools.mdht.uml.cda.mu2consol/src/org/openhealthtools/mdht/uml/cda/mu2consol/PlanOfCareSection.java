@@ -6,10 +6,13 @@
  */
 package org.openhealthtools.mdht.uml.cda.mu2consol;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.PlanOfCareActivityAct;
 import org.openhealthtools.mdht.uml.cda.consol.PlanOfCareActivityEncounter;
 import org.openhealthtools.mdht.uml.cda.consol.PlanOfCareActivityObservation;
@@ -17,11 +20,10 @@ import org.openhealthtools.mdht.uml.cda.consol.PlanOfCareActivityObservation;
 /**
  * <!-- begin-user-doc --> A representation of the model object '
  * <em><b>Plan Of Care Section</b></em>'. <!-- end-user-doc -->
- * 
- * 
+ *
+ *
  * @see org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage#getPlanOfCareSection()
- * @model annotation=
- *        "http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='mu2consolPlanOfCareSectionPlanOfCareActivityAct mu2consolPlanOfCareSectionPlanOfCareActivityEncounter mu2consolPlanOfCareSectionPlanOfCareActivityObservation mu2consolPlanOfCareSectionCarePlanningForPlanOfCareSection mu2consolPlanOfCareSectionMu2consolPlanOfCareSectionPlanOfCareActivityAct mu2consolPlanOfCareSectionMu2consolPlanOfCareSectionPlanOfCareActivityEncounter mu2consolPlanOfCareSectionMu2consolPlanOfCareSectionPlanOfCareActivityObservation'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='mu2consolPlanOfCareSectionCarePlanningForPlanOfCareSection'"
  * @generated
  */
 public interface PlanOfCareSection extends
@@ -45,58 +47,6 @@ public interface PlanOfCareSection extends
 	 * @generated
 	 */
 	boolean validateMu2consolPlanOfCareSectionCarePlanningForPlanOfCareSection(
-			DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * self.entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and
-	 * entry.act.oclIsKindOf(consol::PlanOfCareActivityAct))
-	 * 
-	 * @param diagnostics
-	 *            The chain of diagnostics to which problems are to be appended.
-	 * @param context
-	 *            The cache of context-specific information. <!-- end-model-doc
-	 *            -->
-	 * @model annotation=
-	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::PlanOfCareActivityAct))'"
-	 * @generated
-	 */
-	boolean validateMu2consolPlanOfCareSectionMu2consolPlanOfCareSectionPlanOfCareActivityAct(
-			DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * self.entry->one(entry : cda::Entry | not entry.encounter.oclIsUndefined()
-	 * and entry.encounter.oclIsKindOf(consol::PlanOfCareActivityEncounter))
-	 * 
-	 * @param diagnostics
-	 *            The chain of diagnostics to which problems are to be appended.
-	 * @param context
-	 *            The cache of context-specific information. <!-- end-model-doc
-	 *            -->
-	 * @model annotation=
-	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->one(entry : cda::Entry | not entry.encounter.oclIsUndefined() and entry.encounter.oclIsKindOf(consol::PlanOfCareActivityEncounter))'"
-	 * @generated
-	 */
-	boolean validateMu2consolPlanOfCareSectionMu2consolPlanOfCareSectionPlanOfCareActivityEncounter(
-			DiagnosticChain diagnostics, Map<Object, Object> context);
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
-	 * self.entry->one(entry : cda::Entry | not
-	 * entry.observation.oclIsUndefined() and
-	 * entry.observation.oclIsKindOf(consol::PlanOfCareActivityObservation))
-	 * 
-	 * @param diagnostics
-	 *            The chain of diagnostics to which problems are to be appended.
-	 * @param context
-	 *            The cache of context-specific information. <!-- end-model-doc
-	 *            -->
-	 * @model annotation=
-	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(consol::PlanOfCareActivityObservation))'"
-	 * @generated
-	 */
-	boolean validateMu2consolPlanOfCareSectionMu2consolPlanOfCareSectionPlanOfCareActivityObservation(
 			DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
@@ -144,8 +94,14 @@ public interface PlanOfCareSection extends
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	public PlanOfCareSection init();
+
+	/**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public PlanOfCareSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PlanOfCareSection

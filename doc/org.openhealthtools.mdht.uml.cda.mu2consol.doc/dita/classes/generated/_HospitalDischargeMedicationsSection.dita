@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Hospital Discharge Medications Section - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.11.1</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.22.2.11.1"/>
+</prolog>
+<body>
+<section id="knownSubclasses">
+</section>
+<section id="description">
+<p><lines><i>INLINE</i></lines></p>
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/HospitalDischargeMedicationsSection.html">Consol Hospital Discharge Medications Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.2.11.1</tt>)</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt> (CONF:7827)
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/DischargeMedication.html">Consol Discharge Medication</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.35</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/MedicationActivity.html">Consol Medication Activity</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.16</tt>)</li></ol></li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/HospitalDischargeMedicationsSectionEntriesOptional.html">Consol Hospital Discharge Medications Section Entries Optional</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.2.11</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/HospitalDischargeMedicationsSection.html">Consol Hospital Discharge Medications Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.2.11.1</tt>)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="10183-2" </tt><i>HOSPITAL DISCHARGE MEDICATIONS</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:7823)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> (CONF:7824)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:7825)
+</li>
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:7883)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../DischargeMedication.dita">Discharge Medication</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.35</tt>)</li></ol></li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt> (CONF:7827)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../DischargeMedication.dita">Discharge Medication</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.35</tt>)</li></ol></li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt> (CONF:7827)
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/DischargeMedication.html">Consol Discharge Medication</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.35</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/MedicationActivity.html">Consol Medication Activity</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.16</tt>)</li></ol></li>
+</ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >mu2consol::HospitalDischargeMedicationsSection</entry>  </row>  <row><entry namest="col0" nameend="col7" >/cda:ClinicalDocument/cda:component/cda:structuredBody/cda:component/cda:section/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>ActClass</entry><entry></entry><entry> DOCSECT</entry></row> 
+<row><entry>moodCode</entry><entry>@moodCode</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>ActMood</entry><entry></entry><entry> EVN</entry></row> 
+<row><entry>nullFlavor</entry><entry>@nullFlavor</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>NullFlavor</entry><entry></entry><entry> ASKU</entry></row> 
+<row><entry>sectionId</entry><entry>@sectionId</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>String</entry><entry></entry><entry> </entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>CE</entry><entry>CONF:7823</entry><entry>LOINC 2.16.840.1.113883.6.1LOINC 2.16.840.1.113883.6.1 </entry></row> 
+<row><entry>confidentialityCode</entry><entry>confidentialityCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
+<row><entry>id</entry><entry>id</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> </entry></row> 
+<row><entry>languageCode</entry><entry>languageCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
+<row><entry>realmCode</entry><entry>realmCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
+<row><entry>templateId</entry><entry>templateId</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> </entry></row> 
+<row><entry>title</entry><entry>title</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ST</entry><entry>CONF:7824</entry><entry> </entry></row> 
+<row><entry>author</entry><entry>author</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Author</entry><entry></entry><entry> </entry></row> 
+<row><entry>component</entry><entry>component</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Component5</entry><entry></entry><entry> </entry></row> 
+<row><entry>dischargeMedication</entry><entry>cda:entry/cda:act</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>DischargeMedication</entry><entry>CONF:7827</entry><entry> </entry></row> 
+<row><entry>entry</entry><entry>entry</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Entry</entry><entry></entry><entry> MISSINGTYPE</entry></row> 
+<row><entry>informant</entry><entry>informant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Informant12</entry><entry></entry><entry> </entry></row> 
+<row><entry>medicationActivity</entry><entry>cda:entry/cda:substanceAdministration</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>MedicationActivity</entry><entry></entry><entry> </entry></row> 
+<row><entry>subject</entry><entry>subject</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>Subject</entry><entry></entry><entry> </entry></row> 
+<row><entry>text</entry><entry>text</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>StrucDocText</entry><entry>CONF:7825</entry><entry> </entry></row> 
+<row><entry>typeId</entry><entry>typeId</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>InfrastructureRootTypeId</entry><entry></entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <id root="MDHT" extension="1448984165"/>
+  <title>TEXT FOR TITLE</title>
+  <text/>
+  <entry>
+    <act/>
+  </entry>
+  <entry>
+    <substanceAdministration/>
+  </entry>
+</section>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Hospital Discharge Medications Section</ph></p>
+<p id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.11.1</tt>]</p>
+</body>
+</topic>

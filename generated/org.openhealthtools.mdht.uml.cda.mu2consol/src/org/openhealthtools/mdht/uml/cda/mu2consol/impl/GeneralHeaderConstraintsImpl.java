@@ -7,30 +7,28 @@
 package org.openhealthtools.mdht.uml.cda.mu2consol.impl;
 
 import java.util.Map;
+
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
-
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.impl.ClinicalDocumentImpl;
-
 import org.openhealthtools.mdht.uml.cda.mu2consol.GeneralHeaderConstraints;
 import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage;
-
 import org.openhealthtools.mdht.uml.cda.mu2consol.operations.GeneralHeaderConstraintsOperations;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc --> An implementation of the model object '
  * <em><b>General Header Constraints</b></em>'. <!-- end-user-doc -->
  * <p>
  * </p>
- * 
+ *
  * @generated
  */
 public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl
 		implements GeneralHeaderConstraints {
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	protected GeneralHeaderConstraintsImpl() {
@@ -39,7 +37,6 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
@@ -49,71 +46,64 @@ public class GeneralHeaderConstraintsImpl extends ClinicalDocumentImpl
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	public boolean validateGeneralHeaderConstraintsTemplateId(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations
-				.validateGeneralHeaderConstraintsTemplateId(this, diagnostics,
-						context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsTemplateId(this, diagnostics, context);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTarget(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations
-				.validateGeneralHeaderConstraintsRecordTarget(this,
-						diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTarget(this, diagnostics, context);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations
-				.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication(
-						this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication(this, diagnostics, context);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatient(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations
-				.validateGeneralHeaderConstraintsRecordTargetPatientRolePatient(
-						this, diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatient(this, diagnostics, context);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRole(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations
-				.validateGeneralHeaderConstraintsRecordTargetPatientRole(this,
-						diagnostics, context);
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRole(this, diagnostics, context);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	public GeneralHeaderConstraints init() {
-		CDAUtil.init(this);
-		return this;
+	    return Initializer.Util.init(this);
 	}
+
+	/**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public GeneralHeaderConstraints init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // GeneralHeaderConstraintsImpl

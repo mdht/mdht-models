@@ -9,25 +9,22 @@ package org.openhealthtools.mdht.uml.cda.mu2consol.impl;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
-
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.PlanOfCareActivityAct;
 import org.openhealthtools.mdht.uml.cda.consol.PlanOfCareActivityEncounter;
 import org.openhealthtools.mdht.uml.cda.consol.PlanOfCareActivityObservation;
 import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage;
 import org.openhealthtools.mdht.uml.cda.mu2consol.PlanOfCareSection;
-
 import org.openhealthtools.mdht.uml.cda.mu2consol.operations.PlanOfCareSectionOperations;
-
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc --> An implementation of the model object '
  * <em><b>Plan Of Care Section</b></em>'. <!-- end-user-doc -->
  * <p>
  * </p>
- * 
+ *
  * @generated
  */
 public class PlanOfCareSectionImpl extends
@@ -35,7 +32,6 @@ public class PlanOfCareSectionImpl extends
 		implements PlanOfCareSection {
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	protected PlanOfCareSectionImpl() {
@@ -44,7 +40,6 @@ public class PlanOfCareSectionImpl extends
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
@@ -54,90 +49,53 @@ public class PlanOfCareSectionImpl extends
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	public boolean validateMu2consolPlanOfCareSectionCarePlanningForPlanOfCareSection(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlanOfCareSectionOperations
-				.validateMu2consolPlanOfCareSectionCarePlanningForPlanOfCareSection(
-						this, diagnostics, context);
+		return PlanOfCareSectionOperations.validateMu2consolPlanOfCareSectionCarePlanningForPlanOfCareSection(this, diagnostics, context);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public boolean validateMu2consolPlanOfCareSectionMu2consolPlanOfCareSectionPlanOfCareActivityAct(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlanOfCareSectionOperations
-				.validateMu2consolPlanOfCareSectionMu2consolPlanOfCareSectionPlanOfCareActivityAct(
-						this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public boolean validateMu2consolPlanOfCareSectionMu2consolPlanOfCareSectionPlanOfCareActivityEncounter(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlanOfCareSectionOperations
-				.validateMu2consolPlanOfCareSectionMu2consolPlanOfCareSectionPlanOfCareActivityEncounter(
-						this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	public boolean validateMu2consolPlanOfCareSectionMu2consolPlanOfCareSectionPlanOfCareActivityObservation(
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PlanOfCareSectionOperations
-				.validateMu2consolPlanOfCareSectionMu2consolPlanOfCareSectionPlanOfCareActivityObservation(
-						this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	public PlanOfCareActivityAct getmu2consolPlanOfCareActivityAct() {
-		return PlanOfCareSectionOperations
-				.getmu2consolPlanOfCareActivityAct(this);
+		return PlanOfCareSectionOperations.getmu2consolPlanOfCareActivityAct(this);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	public PlanOfCareActivityEncounter getmu2consolPlanOfCareActivityEncounter() {
-		return PlanOfCareSectionOperations
-				.getmu2consolPlanOfCareActivityEncounter(this);
+		return PlanOfCareSectionOperations.getmu2consolPlanOfCareActivityEncounter(this);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	public PlanOfCareActivityObservation getmu2consolPlanOfCareActivityObservation() {
-		return PlanOfCareSectionOperations
-				.getmu2consolPlanOfCareActivityObservation(this);
+		return PlanOfCareSectionOperations.getmu2consolPlanOfCareActivityObservation(this);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
 	public PlanOfCareSection init() {
-		CDAUtil.init(this);
-		return this;
+	    return Initializer.Util.init(this);
 	}
+
+	/**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public PlanOfCareSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+        Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // PlanOfCareSectionImpl

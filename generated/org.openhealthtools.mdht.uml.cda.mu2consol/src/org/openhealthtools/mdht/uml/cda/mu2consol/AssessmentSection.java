@@ -6,20 +6,22 @@
  */
 package org.openhealthtools.mdht.uml.cda.mu2consol;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemObservation;
 
 /**
  * <!-- begin-user-doc --> A representation of the model object '
  * <em><b>Assessment Section</b></em>'. <!-- end-user-doc -->
- * 
- * 
+ *
+ *
  * @see org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage#getAssessmentSection()
- * @model annotation=
- *        "http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='mu2consolAssessmentSectionProblemObservation'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='mu2consolAssessmentSectionProblemObservation'"
  * @generated
  */
 public interface AssessmentSection extends
@@ -58,8 +60,14 @@ public interface AssessmentSection extends
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	public AssessmentSection init();
+
+	/**
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    public AssessmentSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // AssessmentSection
