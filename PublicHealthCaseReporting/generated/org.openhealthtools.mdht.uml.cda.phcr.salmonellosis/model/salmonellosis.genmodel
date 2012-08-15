@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:genmodel="http://www.eclipse.org/uml2/2.2.0/GenModel" modelDirectory="org.openhealthtools.mdht.uml.cda.phcr.salmonellosis/src"
+    editDirectory="/org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.edit/src"
+    editorDirectory="/org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.editor/src"
+    modelPluginID="org.openhealthtools.mdht.uml.cda.phcr.salmonellosis" templateDirectory="/org.openhealthtools.mdht.uml.cda/templates"
+    dynamicTemplates="true" modelName="salmonellosis_Ecore" modelPluginClass="SalmonellosisPlugin"
+    editPluginClass="org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.provider.salmonellosis_EcoreEditPlugin"
+    editorPluginClass="org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.presentation.salmonellosis_EcoreEditorPlugin"
+    testSuiteClass="org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.tests.salmonellosis_EcoreAllTests"
+    importerID="org.eclipse.uml2.uml.ecore.importer" complianceLevel="5.0" copyrightFields="false"
+    editPluginID="org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.edit" editorPluginID="org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.editor"
+    runtimeVersion="2.5" usedGenPackages="platform:/plugin/org.openhealthtools.mdht.uml.cda.ccd/model/ccd.genmodel#//ccd platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.genmodel#//cda platform:/plugin/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.genmodel#//datatypes platform:/plugin/org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore ../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr.genmodel#//phcr platform:/plugin/org.openhealthtools.mdht.uml.hl7.rim/model/rim.genmodel#//rim platform:/plugin/org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.genmodel#//vocab"
+    pluralizedGetters="true" invariantPrefix="validate">
+  <genAnnotations source="http://www.eclipse.org/emf/2002/GenModel/importer/org.eclipse.uml2.uml.ecore.importer">
+    <details key="ECORE_TAGGED_VALUES" value="PROCESS"/>
+    <details key="UNION_PROPERTIES" value="PROCESS"/>
+    <details key="DUPLICATE_FEATURES" value="PROCESS"/>
+    <details key="SUBSETTING_PROPERTIES" value="PROCESS"/>
+    <details key="COMMENTS" value="PROCESS"/>
+    <details key="DUPLICATE_FEATURE_INHERITANCE" value="PROCESS"/>
+    <details key="DUPLICATE_OPERATIONS" value="PROCESS"/>
+    <details key="INVARIANT_CONSTRAINTS" value="PROCESS"/>
+    <details key="REDEFINING_PROPERTIES" value="PROCESS"/>
+    <details key="ANNOTATION_DETAILS" value="PROCESS"/>
+    <details key="DUPLICATE_OPERATION_INHERITANCE" value="PROCESS"/>
+    <details key="REDEFINING_OPERATIONS" value="PROCESS"/>
+    <details key="DERIVED_FEATURES" value="IGNORE"/>
+    <details key="OPERATION_BODIES" value="PROCESS"/>
+    <details key="CAMEL_CASE_NAMES" value="IGNORE"/>
+    <details key="SUPER_CLASS_ORDER" value="PROCESS"/>
+  </genAnnotations>
+  <foreignModel>salmonellosis_Ecore.uml</foreignModel>
+  <genPackages xsi:type="genmodel:GenPackage" prefix="Salmonellosis" basePackage="org.openhealthtools.mdht.uml.cda.phcr"
+      resource="XML" disposableProviderFactory="true" ecorePackage="salmonellosis.ecore#/"
+      operationsPackage="org.openhealthtools.mdht.uml.cda.phcr.salmonellosis.operations">
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="salmonellosis.ecore#//SalmonellosisCaseReport">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="salmonellosis.ecore#//SalmonellosisCaseReport/SalmonellosisCaseReportTitle">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="salmonellosis.ecore#//SalmonellosisCaseReport/SalmonellosisCaseReportTitle/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="salmonellosis.ecore#//SalmonellosisCaseReport/SalmonellosisCaseReportTitle/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="salmonellosis.ecore#//SalmonellosisCaseReport/SalmonellosisCaseReportSalmonellosisSocialHistorySection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="salmonellosis.ecore#//SalmonellosisCaseReport/SalmonellosisCaseReportSalmonellosisSocialHistorySection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="salmonellosis.ecore#//SalmonellosisCaseReport/SalmonellosisCaseReportSalmonellosisSocialHistorySection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="salmonellosis.ecore#//SalmonellosisCaseReport/SalmonellosisCaseReportSalmonellosisRelevantDxTestsSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="salmonellosis.ecore#//SalmonellosisCaseReport/SalmonellosisCaseReportSalmonellosisRelevantDxTestsSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="salmonellosis.ecore#//SalmonellosisCaseReport/SalmonellosisCaseReportSalmonellosisRelevantDxTestsSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="salmonellosis.ecore#//SalmonellosisCaseReport/SalmonellosisCaseReportSalmonellosisPHCRClinicalInformationSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="salmonellosis.ecore#//SalmonellosisCaseReport/SalmonellosisCaseReportSalmonellosisPHCRClinicalInformationSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="salmonellosis.ecore#//SalmonellosisCaseReport/SalmonellosisCaseReportSalmonellosisPHCRClinicalInformationSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="salmonellosis.ecore#//SalmonellosisCaseReport/getSalmonellosisSocialHistorySection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="salmonellosis.ecore#//SalmonellosisCaseReport/getSalmonellosisRelevantDxTestsSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="salmonellosis.ecore#//SalmonellosisCaseReport/getSalmonellosisPHCRClinicalInformationSection"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="salmonellosis.ecore#//SalmonellosisPHCRSocialHistorySection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="salmonellosis.ecore#//SalmonellosisPHCRSocialHistorySection/SalmonellosisPHCRSocialHistorySectionSalmonellosisPossibleExposureLocationAndTypeAct">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="salmonellosis.ecore#//SalmonellosisPHCRSocialHistorySection/SalmonellosisPHCRSocialHistorySectionSalmonellosisPossibleExposureLocationAndTypeAct/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="salmonellosis.ecore#//SalmonellosisPHCRSocialHistorySection/SalmonellosisPHCRSocialHistorySectionSalmonellosisPossibleExposureLocationAndTypeAct/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="salmonellosis.ecore#//SalmonellosisPHCRSocialHistorySection/SalmonellosisPHCRSocialHistorySectionHIVStatusObservation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="salmonellosis.ecore#//SalmonellosisPHCRSocialHistorySection/SalmonellosisPHCRSocialHistorySectionHIVStatusObservation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="salmonellosis.ecore#//SalmonellosisPHCRSocialHistorySection/SalmonellosisPHCRSocialHistorySectionHIVStatusObservation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="salmonellosis.ecore#//SalmonellosisPHCRSocialHistorySection/getSalmonellosisPossibleExposureLocationAndTypeActs"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="salmonellosis.ecore#//SalmonellosisPHCRSocialHistorySection/getHIVStatusObservation"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="salmonellosis.ecore#//SalmonellosisPossibleExposureLocationAndTypeAct">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="salmonellosis.ecore#//SalmonellosisPossibleExposureLocationAndTypeAct/SalmonellosisPossibleExposureLocationAndTypeActTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="salmonellosis.ecore#//SalmonellosisPossibleExposureLocationAndTypeAct/SalmonellosisPossibleExposureLocationAndTypeActTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="salmonellosis.ecore#//SalmonellosisPossibleExposureLocationAndTypeAct/SalmonellosisPossibleExposureLocationAndTypeActTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="salmonellosis.ecore#//SalmonellosisPossibleExposureLocationAndTypeAct/SalmonellosisPossibleExposureLocationAndTypeActCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="salmonellosis.ecore#//SalmonellosisPossibleExposureLocationAndTypeAct/SalmonellosisPossibleExposureLocationAndTypeActCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="salmonellosis.ecore#//SalmonellosisPossibleExposureLocationAndTypeAct/SalmonellosisPossibleExposureLocationAndTypeActCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="salmonellosis.ecore#//SalmonellosisPossibleExposureLocationAndTypeAct/SalmonellosisPossibleExposureLocationAndTypeActStatusCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="salmonellosis.ecore#//SalmonellosisPossibleExposureLocationAndTypeAct/SalmonellosisPossibleExposureLocationAndTypeActStatusCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="salmonellosis.ecore#//SalmonellosisPossibleExposureLocationAndTypeAct/SalmonellosisPossibleExposureLocationAndTypeActStatusCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="salmonellosis.ecore#//SalmonellosisPossibleExposureLocationAndTypeAct/SalmonellosisPossibleExposureLocationAndTypeActClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="salmonellosis.ecore#//SalmonellosisPossibleExposureLocationAndTypeAct/SalmonellosisPossibleExposureLocationAndTypeActClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="salmonellosis.ecore#//SalmonellosisPossibleExposureLocationAndTypeAct/SalmonellosisPossibleExposureLocationAndTypeActClassCode/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="salmonellosis.ecore#//HIVStatusObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="salmonellosis.ecore#//HIVStatusObservation/HIVStatusObservationTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="salmonellosis.ecore#//HIVStatusObservation/HIVStatusObservationTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="salmonellosis.ecore#//HIVStatusObservation/HIVStatusObservationTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="salmonellosis.ecore#//HIVStatusObservation/HIVStatusObservationCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="salmonellosis.ecore#//HIVStatusObservation/HIVStatusObservationCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="salmonellosis.ecore#//HIVStatusObservation/HIVStatusObservationCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="salmonellosis.ecore#//HIVStatusObservation/HIVStatusObservationStatusCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="salmonellosis.ecore#//HIVStatusObservation/HIVStatusObservationStatusCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="salmonellosis.ecore#//HIVStatusObservation/HIVStatusObservationStatusCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="salmonellosis.ecore#//HIVStatusObservation/HIVStatusObservationClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="salmonellosis.ecore#//HIVStatusObservation/HIVStatusObservationClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="salmonellosis.ecore#//HIVStatusObservation/HIVStatusObservationClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="salmonellosis.ecore#//HIVStatusObservation/HIVStatusObservationMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="salmonellosis.ecore#//HIVStatusObservation/HIVStatusObservationMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="salmonellosis.ecore#//HIVStatusObservation/HIVStatusObservationMoodCode/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="salmonellosis.ecore#//SalmonellosisPHCRRelevantDxTestsSection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="salmonellosis.ecore#//SalmonellosisPHCRRelevantDxTestsSection/SalmonellosisPHCRRelevantDxTestsSectionSalmonellosisResultOrganizer">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="salmonellosis.ecore#//SalmonellosisPHCRRelevantDxTestsSection/SalmonellosisPHCRRelevantDxTestsSectionSalmonellosisResultOrganizer/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="salmonellosis.ecore#//SalmonellosisPHCRRelevantDxTestsSection/SalmonellosisPHCRRelevantDxTestsSectionSalmonellosisResultOrganizer/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="salmonellosis.ecore#//SalmonellosisPHCRRelevantDxTestsSection/SalmonellosisPHCRRelevantDxTestsSectionSalmonellosisResultObservation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="salmonellosis.ecore#//SalmonellosisPHCRRelevantDxTestsSection/SalmonellosisPHCRRelevantDxTestsSectionSalmonellosisResultObservation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="salmonellosis.ecore#//SalmonellosisPHCRRelevantDxTestsSection/SalmonellosisPHCRRelevantDxTestsSectionSalmonellosisResultObservation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="salmonellosis.ecore#//SalmonellosisPHCRRelevantDxTestsSection/getSalmonellosisResultOrganizers"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="salmonellosis.ecore#//SalmonellosisPHCRRelevantDxTestsSection/getSalmonellosisResultObservations"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="salmonellosis.ecore#//SalmonellosisResultOrganizer">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="salmonellosis.ecore#//SalmonellosisResultOrganizer/SalmonellosisResultOrganizerSalmonellosisResultObservation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="salmonellosis.ecore#//SalmonellosisResultOrganizer/SalmonellosisResultOrganizerSalmonellosisResultObservation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="salmonellosis.ecore#//SalmonellosisResultOrganizer/SalmonellosisResultOrganizerSalmonellosisResultObservation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="salmonellosis.ecore#//SalmonellosisResultOrganizer/getSalmonellosisResultObservations"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="salmonellosis.ecore#//SalmonellosisResultObservation"/>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="salmonellosis.ecore#//SalmonellosisPHCRClinicalInformationSection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="salmonellosis.ecore#//SalmonellosisPHCRClinicalInformationSection/SalmonellosisPHCRClinicalInformationSectionSalmonellosisCaseObservation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="salmonellosis.ecore#//SalmonellosisPHCRClinicalInformationSection/SalmonellosisPHCRClinicalInformationSectionSalmonellosisCaseObservation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="salmonellosis.ecore#//SalmonellosisPHCRClinicalInformationSection/SalmonellosisPHCRClinicalInformationSectionSalmonellosisCaseObservation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="salmonellosis.ecore#//SalmonellosisPHCRClinicalInformationSection/getSalmonellosisCaseObservation"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="salmonellosis.ecore#//SalmonellosisCaseObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="salmonellosis.ecore#//SalmonellosisCaseObservation/SalmonellosisCaseObservationSalmonellosisSignsAndSymptomsObservation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="salmonellosis.ecore#//SalmonellosisCaseObservation/SalmonellosisCaseObservationSalmonellosisSignsAndSymptomsObservation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="salmonellosis.ecore#//SalmonellosisCaseObservation/SalmonellosisCaseObservationSalmonellosisSignsAndSymptomsObservation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="salmonellosis.ecore#//SalmonellosisCaseObservation/getSalmonellosisSignsAndSymptomsObservations"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="salmonellosis.ecore#//SalmonellosisSignsAndSymptomsObservation"/>
+  </genPackages>
+</genmodel:GenModel>

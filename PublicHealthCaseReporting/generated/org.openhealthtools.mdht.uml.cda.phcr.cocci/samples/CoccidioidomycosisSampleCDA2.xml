@@ -1,0 +1,713 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+  <templateId root="2.16.840.1.113883.10.20.15"/>
+  <templateId root="2.16.840.1.113883.10.20.15.1.10"/>
+  <id root="37b9cb9d-82a1-4030-b99b-57fd1d5e8e0d"/>
+  <code code="55751-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Public Health Case Report"/>
+  <title>Public Health Case Report - Coccidioidomycosis</title>
+  <effectiveTime value="20110907143000-0700"/>
+  <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25"/>
+  <languageCode code="en-US"/>
+  <versionNumber value="2"/>
+  <recordTarget>
+    <patientRole>
+      <id root="1.3.6.1.4.1.19376.1.3.4" extension="AZ35988134"/>
+      <addr><streetAddressLine>18 W Diamond Bell Ranch Rd</streetAddressLine><city>Three Points</city><state>AZ</state><postalCode>85736</postalCode></addr>
+      <telecom value="tel:+1-520-555-5555"/>
+      <patient>
+        <name><family>Rodriguez</family><given>Manuel</given></name>
+        <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1" codeSystemName="HL7" displayName="Male"/>
+        <birthTime value="19650402000000-0700"/>
+        <raceCode code="2106-3" codeSystem="2.16.840.1.113883.1.11.14914" codeSystemName="Race &amp; Ethnicity - CDC" displayName="White"/>
+        <ethnicGroupCode code="2135-2" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Ethnicity Group" displayName="Hispanic or Latino"/>
+      </patient>
+    </patientRole>
+  </recordTarget>
+  <author>
+    <time value="20110907143000-0700"/>
+    <assignedAuthor>
+      <id nullFlavor="UNK"/>
+      <addr><streetAddressLine>1501 N. Campbell Ave</streetAddressLine><city>Tucson</city><state>AZ</state><postalCode>85724</postalCode></addr>
+      <telecom value="tel:+1-520-694-0111"/>
+      <assignedPerson>
+        <name><family>Trenton</family><given>Betty</given><prefix>Dr.</prefix><suffix>MD</suffix></name>
+      </assignedPerson>
+    </assignedAuthor>
+  </author>
+  <custodian>
+    <assignedCustodian>
+      <representedCustodianOrganization>
+        <id nullFlavor="UNK"/>
+        <name>State Of Arizona Health Information Exchange</name>
+        <telecom value="tel:+1-602-881-5738"/>
+        <addr><streetAddressLine>100 N. 15th Ave, #400</streetAddressLine><city>Phoenix</city><state>AZ</state><postalCode>85007</postalCode></addr>
+      </representedCustodianOrganization>
+    </assignedCustodian>
+  </custodian>
+  <legalAuthenticator>
+    <time value="20110907143000-0700"/>
+    <signatureCode code="S"/>
+    <assignedEntity>
+      <id nullFlavor="UNK"/>
+      <addr><streetAddressLine>1501 N. Campbell Av</streetAddressLine><city>Tucson</city><state>AZ</state><postalCode>85724</postalCode></addr>
+      <telecom value="tel:+1-520-694-0111"/>
+      <assignedPerson>
+        <name><family>Trenton</family><given>Betty</given><prefix>Dr.</prefix><suffix>MD</suffix></name>
+      </assignedPerson>
+    </assignedEntity>
+  </legalAuthenticator>
+  <relatedDocument typeCode="RPLC">
+    <parentDocument>
+      <id root="b48d37ef-afd4-448f-8098-2ad4f6e7ab13"/>
+    </parentDocument>
+  </relatedDocument>
+  <component>
+    <structuredBody>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.1.15"/>
+          <templateId root="2.16.840.1.113883.10.20.15.2.22"/>
+          <templateId root="2.16.840.1.113883.10.20.15.2.29"/>
+          <code code="29762-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Social History"/>
+          <title>Social History</title>
+          <text><list>
+                        <caption>Coccidioidomycosis Social History Section</caption>
+                        <item>Race - White</item>
+                        <item>Occupation - Construction and Extraction, June 2009 - present</item>
+                        <item>Occupation Location - Arizona Construction LLC, Commercial and Institutional Building Construction in Tucson, AZ  85710</item>
+                        <item>Possible Exposure Location - Work Environment, Tucson, AZ</item>
+            </list></text>
+          <entry typeCode="DRIV">
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.15.3.9"/>
+              <code code="32624-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Race"/>
+              <statusCode code="completed"/>
+              <value xsi:type="CD" code="2106-3" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC" displayName="White"/>
+            </observation>
+          </entry>
+          <entry typeCode="DRIV">
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.15.3.7"/>
+              <code code="11341-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of Occupation"/>
+              <statusCode code="completed"/>
+              <effectiveTime value="20090600000000-0700"/>
+              <value xsi:type="CD" code="47-0000" codeSystem="2.16.840.1.113883.6.243" codeSystemName="Occupation (SOC 2000)" displayName="Construction and Extraction Occupations"/>
+              <participant typeCode="LOC">
+                <participantRole classCode="LOCE">
+                  <addr><city>Tucson</city><state>AZ</state><postalCode>85710</postalCode></addr>
+                  <telecom value="tel:+1-520-558-5858"/>
+                  <playingEntity classCode="PLC">
+                    <name>Arizona Construction LLC</name>
+                  </playingEntity>
+                </participantRole>
+              </participant>
+              <entryRelationship typeCode="REFR">
+                <observation classCode="OBS" moodCode="EVN">
+                  <code code="21844-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Industry Hx"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20090600000000-0700"/>
+                  <value xsi:type="CD" code="23622" codeSystem="2.16.840.1.113883.6.85" codeSystemName="Industry (NAICS)" displayName="Commercial and Institutional Building Construction"/>
+                </observation>
+              </entryRelationship>
+            </observation>
+          </entry>
+          <entry typeCode="DRIV">
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.15.3.86"/>
+              <code code="413350009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Finding with explicit context">
+                <qualifier>
+                  <name code="246090004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Associated finding"/>
+                  <value code="TBD" codeSystem="2.16.840.1.114222.4.5.274" codeSystemName="PHIN VADS" displayName="Coccidioides immitis exposure"/>
+                </qualifier>
+                <qualifier>
+                  <name code="408729009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Finding context"/>
+                  <value code="410590009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Known possible"/>
+                </qualifier>
+              </code>
+              <statusCode code="completed"/>
+              <participant typeCode="LOC">
+                <time value="20110907143000-0700"/>
+                <participantRole classCode="LOCE">
+                  <addr><city>Tucson</city><state>AZ</state></addr>
+                  <telecom nullFlavor="UNK"/>
+                  <playingEntity classCode="PLC">
+                    <code code="285141008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Work Environment"/>
+                  </playingEntity>
+                </participantRole>
+              </participant>
+            </act>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.15.2.1"/>
+          <templateId root="2.16.840.1.113883.10.20.15.2.30"/>
+          <code code="55752-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Clinical Information"/>
+          <title>Clinical Information</title>
+          <text><list>
+                        <caption>Coccidioides Clinical Information Section</caption>
+                        <item>Condition - Coccidioidomycosis</item>
+                        <item>Condition diagnosed 2011/08/08</item>
+                        <item>Condition diagnosed by Dr Betty Trenton MD</item>
+                        <item>Problem remains active at time of report</item>
+                        <item>Signs and Symptoms - Fever REPORTED starting on 2011/07/16</item>
+                        <item>Signs and Symptoms - Fatigue REPORTED starting on 2011/07/16</item>
+                        <item>Signs and Symptoms - Persistent Cough REPORTED starting on 2011/07/16</item>
+                        <item>Signs and Symptoms - Pneumonia REPORTED starting on 2011/07/16</item>
+                        <item>Relevant medical history includes Chronic Asthma</item>
+                        <item>Relevant medical history includes Active Diabetes type II</item>
+                        <item>Patient is alive 2011/09/07</item>
+            </list></text>
+          <entry typeCode="DRIV">
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.28"/>
+              <templateId root="2.16.840.1.113883.10.20.15.3.54"/>
+              <templateId root="2.16.840.1.113883.10.20.15.3.87"/>
+              <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="20110808102500-0700"/>
+              </effectiveTime>
+              <value xsi:type="CD" code="60826002" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Coccidioidomycosis"/>
+              <author>
+                <time value="20110907143000-0700"/>
+                <assignedAuthor>
+                  <id nullFlavor="UNK"/>
+                  <addr><streetAddressLine>1501 N. Campbell Ave</streetAddressLine><city>Tucson</city><state>AZ</state><postalCode>85724</postalCode></addr>
+                  <telecom value="tel:+1-520-694-0111"/>
+                  <assignedPerson>
+                    <name><family>Trenton</family><given>Betty</given><prefix>Dr.</prefix><suffix>MD</suffix></name>
+                  </assignedPerson>
+                </assignedAuthor>
+              </author>
+              <informant>
+                <assignedEntity>
+                  <id nullFlavor="UNK"/>
+                  <assignedPerson>
+                    <name><family>Trenton</family><given>Betty</given><prefix>Dr.</prefix><suffix>MD</suffix></name>
+                  </assignedPerson>
+                </assignedEntity>
+              </informant>
+              <entryRelationship typeCode="REFR">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.57"/>
+                  <templateId root="2.16.840.1.113883.10.20.1.50"/>
+                  <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+                  <statusCode code="completed"/>
+                  <value xsi:type="CE" code="55561003" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Active"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="MFST" inversionInd="true">
+                <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                  <templateId root="2.16.840.1.113883.10.20.15.3.53"/>
+                  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20110716000000-0700"/>
+                  <value xsi:type="CD" code="386661006" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Fever"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="MFST" inversionInd="true">
+                <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                  <templateId root="2.16.840.1.113883.10.20.15.3.53"/>
+                  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20110716000000-0700"/>
+                  <value xsi:type="CD" code="84229001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Fatigue"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="MFST" inversionInd="true">
+                <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                  <templateId root="2.16.840.1.113883.10.20.15.3.53"/>
+                  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20110716000000-0700"/>
+                  <value xsi:type="CD" code="284523002" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Persistent Cough"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="MFST" inversionInd="true">
+                <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                  <templateId root="2.16.840.1.113883.10.20.15.3.53"/>
+                  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20110716000000-0700"/>
+                  <value xsi:type="CD" code="233604007" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Pneumonia"/>
+                </observation>
+              </entryRelationship>
+            </observation>
+          </entry>
+          <entry typeCode="DRIV">
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.15.3.62"/>
+              <templateId root="2.16.840.1.113883.10.20.15.3.94"/>
+              <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/>
+              <statusCode code="completed"/>
+              <value xsi:type="CD" code="370391006" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Patient immunosuppressed"/>
+              <entryRelationship typeCode="REFR" inversionInd="true">
+                <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                  <templateId root="2.16.840.1.113883.10.20.1.28"/>
+                  <templateId root="2.16.840.1.113883.10.20.15.3.95"/>
+                  <code code="64572001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Condition"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="20110808102500-0700"/>
+                  </effectiveTime>
+                  <value xsi:type="CD" code="195967001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Asthma"/>
+                  <informant>
+                    <assignedEntity>
+                      <id nullFlavor="UNK"/>
+                      <representedOrganization>
+                        <name>University of Arizona Medical Center</name>
+                      </representedOrganization>
+                    </assignedEntity>
+                  </informant>
+                  <entryRelationship typeCode="REFR">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.1.57"/>
+                      <templateId root="2.16.840.1.113883.10.20.1.50"/>
+                      <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+                      <statusCode code="completed"/>
+                      <value xsi:type="CE" code="90734009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Chronic"/>
+                    </observation>
+                  </entryRelationship>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="REFR" inversionInd="true">
+                <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                  <templateId root="2.16.840.1.113883.10.20.1.28"/>
+                  <templateId root="2.16.840.1.113883.10.20.15.3.95"/>
+                  <code code="64572001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Condition"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="20110808102500-0700"/>
+                  </effectiveTime>
+                  <value xsi:type="CD" code="44054006" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Diabetes type II"/>
+                  <informant>
+                    <assignedEntity>
+                      <id nullFlavor="UNK"/>
+                      <representedOrganization>
+                        <name>University of Arizona Medical Center</name>
+                      </representedOrganization>
+                    </assignedEntity>
+                  </informant>
+                  <entryRelationship typeCode="REFR">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.1.57"/>
+                      <templateId root="2.16.840.1.113883.10.20.1.50"/>
+                      <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+                      <statusCode code="completed"/>
+                      <value xsi:type="CE" code="55561003" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Active"/>
+                    </observation>
+                  </entryRelationship>
+                </observation>
+              </entryRelationship>
+            </observation>
+          </entry>
+          <entry typeCode="DRIV">
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.15.3.42"/>
+              <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/>
+              <statusCode code="completed"/>
+              <effectiveTime value="20110907114500-0700"/>
+              <value xsi:type="CD" code="438949009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Alive"/>
+            </observation>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.15.2.4"/>
+          <templateId root="2.16.840.1.113883.10.20.15.2.31"/>
+          <code code="55753-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treatment Information"/>
+          <title>Treatment Information</title>
+          <text><list>
+                        <caption>Coccidioides Treatment Information Section</caption>
+                        <item>Condition ID - AZ35988134</item>
+                        <item>Prescribed Fluconazole four times daily for 30 days prescribed on 2011/09/07</item>
+            </list></text>
+          <entry typeCode="DRIV">
+            <act classCode="ACT" moodCode="EVN" negationInd="false">
+              <templateId root="2.16.840.1.113883.10.20.15.3.57"/>
+              <templateId root="2.16.840.1.113883.10.20.15.3.89"/>
+              <code code="133877004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Therapeutic regimen"/>
+              <statusCode code="completed"/>
+              <entryRelationship typeCode="REFR">
+                <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                  <id root="1.3.6.1.4.1.19376.1.3.4" extension="AZ35988134"/>
+                  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/>
+                  <value xsi:type="CD" code="60826002" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Coccidioidomycosis"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="COMP">
+                <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+                  <templateId root="2.16.840.1.113883.10.20.15.3.55"/>
+                  <templateId root="2.16.840.1.113883.10.20.15.3.90"/>
+                  <statusCode code="active"/>
+                  <effectiveTime xsi:type="IVL_TS">
+                    <low value="20110907114500-0700"/>
+                    <high value="20111007114500-0700"/>
+                  </effectiveTime>
+                  <routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Oral"/>
+                  <doseQuantity value="4.0"/>
+                  <rateQuantity value="24.0" unit="H"/>
+                  <consumable>
+                    <manufacturedProduct>
+                      <manufacturedMaterial>
+                        <code code="4450" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" displayName="Fluconazole"/>
+                        <name>Fluconazole 200 MG Oral Tablet</name>
+                      </manufacturedMaterial>
+                    </manufacturedProduct>
+                  </consumable>
+                </substanceAdministration>
+              </entryRelationship>
+            </act>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.1.3"/>
+          <templateId root="2.16.840.1.113883.10.20.15.2.2"/>
+          <code code="46240-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of encounters"/>
+          <title>Encounters</title>
+          <text><list>
+                        <caption>Encounters Section</caption>
+                        <item>2011/07/19 at University of Arizona Medical Center, Tucson, AZ</item>
+                        <item>Ambulatory encounter with Dr. Betty Trenton MD</item>
+                        <item>2011/08/08 at University of Arizona Medical Center, Tucson, AZ</item>
+                        <item>Ambulatory encounter with Dr. Betty Trenton MD</item>
+                        <item>2011/09/07 at University of Arizona Medical Center, Tucson, AZ</item>
+                        <item>Ambulatory encounter with Dr. Betty Trenton MD</item>
+            </list></text>
+          <entry typeCode="DRIV">
+            <encounter classCode="ENC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.21"/>
+              <id root="1.3.6.1.4.1.19376.1.3.4" extension="AZ35988134-1"/>
+              <code code="AMB" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7 ActEncounterCode" displayName="Ambulatory"/>
+              <effectiveTime value="20110719094500-0700"/>
+              <performer typeCode="PRF">
+                <assignedEntity classCode="ASSIGNED">
+                  <id nullFlavor="UNK"/>
+                  <addr><streetAddressLine>1501 N. Campbell Ave</streetAddressLine><city>Tucson</city><state>AZ</state><postalCode>85724</postalCode></addr>
+                  <telecom value="tel:+1-520-694-0111"/>
+                  <assignedPerson>
+                    <name><family>Trenton</family><given>Betty</given><prefix>Dr.</prefix><suffix>MD</suffix></name>
+                  </assignedPerson>
+                </assignedEntity>
+              </performer>
+              <participant typeCode="LOC">
+                <participantRole classCode="SDLOC">
+                  <id nullFlavor="UNK"/>
+                  <addr><streetAddressLine>1501 N. Campbell Ave</streetAddressLine><city>Tucson</city><state>AZ</state><postalCode>85724</postalCode></addr>
+                  <telecom value="tel:+1-520-694-0111"/>
+                  <playingEntity classCode="PLC">
+                    <name>University of Arizona Medical Center</name>
+                  </playingEntity>
+                </participantRole>
+              </participant>
+            </encounter>
+          </entry>
+          <entry typeCode="DRIV">
+            <encounter classCode="ENC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.21"/>
+              <id root="1.3.6.1.4.1.19376.1.3.4" extension="AZ35988134-2"/>
+              <code code="AMB" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7 ActEncounterCode" displayName="Ambulatory"/>
+              <effectiveTime value="20110808102500-0700"/>
+              <performer typeCode="PRF">
+                <assignedEntity classCode="ASSIGNED">
+                  <id nullFlavor="UNK"/>
+                  <addr><streetAddressLine>1501 N. Campbell Ave</streetAddressLine><city>Tucson</city><state>AZ</state><postalCode>85724</postalCode></addr>
+                  <telecom value="tel:+1-520-694-0111"/>
+                  <assignedPerson>
+                    <name><family>Trenton</family><given>Betty</given><prefix>Dr.</prefix><suffix>MD</suffix></name>
+                  </assignedPerson>
+                </assignedEntity>
+              </performer>
+              <participant typeCode="LOC">
+                <participantRole classCode="SDLOC">
+                  <id nullFlavor="UNK"/>
+                  <addr><streetAddressLine>1501 N. Campbell Ave</streetAddressLine><city>Tucson</city><state>AZ</state><postalCode>85724</postalCode></addr>
+                  <telecom value="tel:+1-520-694-0111"/>
+                  <playingEntity classCode="PLC">
+                    <name>University of Arizona Medical Center</name>
+                  </playingEntity>
+                </participantRole>
+              </participant>
+            </encounter>
+          </entry>
+          <entry typeCode="DRIV">
+            <encounter classCode="ENC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.21"/>
+              <id root="1.3.6.1.4.1.19376.1.3.4" extension="AZ35988134-3"/>
+              <code code="AMB" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7 ActEncounterCode" displayName="Ambulatory"/>
+              <effectiveTime value="20110907114500-0700"/>
+              <performer typeCode="PRF">
+                <assignedEntity classCode="ASSIGNED">
+                  <id nullFlavor="UNK"/>
+                  <addr><streetAddressLine>1501 N. Campbell Ave</streetAddressLine><city>Tucson</city><state>AZ</state><postalCode>85724</postalCode></addr>
+                  <telecom value="tel:+1-520-694-0111"/>
+                  <assignedPerson>
+                    <name><family>Trenton</family><given>Betty</given><prefix>Dr.</prefix><suffix>MD</suffix></name>
+                  </assignedPerson>
+                </assignedEntity>
+              </performer>
+              <participant typeCode="LOC">
+                <participantRole classCode="SDLOC">
+                  <id nullFlavor="UNK"/>
+                  <addr><streetAddressLine>1501 N. Campbell Ave</streetAddressLine><city>Tucson</city><state>AZ</state><postalCode>85724</postalCode></addr>
+                  <telecom value="tel:+1-520-694-0111"/>
+                  <playingEntity classCode="PLC">
+                    <name>University of Arizona Medical Center</name>
+                  </playingEntity>
+                </participantRole>
+              </participant>
+            </encounter>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.1.14"/>
+          <templateId root="2.16.840.1.113883.10.20.15.2.3"/>
+          <templateId root="2.16.840.1.113883.10.20.15.2.32"/>
+          <code code="30954-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Relevant diagnostic tests and/or laboratory data"/>
+          <title>Relevant diagnostic tests and/or laboratory data</title>
+          <text><list>
+                        <caption>Coccidioides Diagnostic Tests Section</caption>
+                        <item>Serum collected on 2011/08/08, C immitis IgG Ser Ql EIA result: Positive</item>
+                        <item>Serum collected on 2011/08/08, C immitis IgM Ser Ql EIA result: Positive</item>
+                        <item>Serum collected on 2011/08/08, C immitis IgG Ser Ql ID result: Positive</item>
+                        <item>Serum collected on 2011/08/08, C immitis IgM Ser Ql ID result: Positive</item>
+                        <item>Serum collected on 2011/08/08, C immitis Ab Titr Ser CF result: 1:16</item>
+                        <item>University of Arizona Medical Center Laboratory, 1501 N. Campbell Ave, Tucson, AZ  (tel:520-694-0111)</item>
+                        <item>Serum collected on 2011/09/07, C immitis Ab Titr Ser CF result: 1:64</item>
+                        <item>University of Arizona Medical Center Laboratory, 1501 N. Campbell Ave, Tucson, AZ  (tel:520-694-0111)</item>
+                        <item>Standard chest X-ray from 2011/09/07 - radiologic infiltrate with localized nodules</item>
+            </list><renderMultiMedia referencedObject="ABC"/></text>
+          <entry typeCode="DRIV">
+            <organizer classCode="BATTERY" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.32"/>
+              <templateId root="2.16.840.1.113883.10.20.15.3.59"/>
+              <templateId root="2.16.840.1.113883.10.20.15.3.92"/>
+              <id nullFlavor="NI"/>
+              <code code="68793005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Serology"/>
+              <statusCode code="completed"/>
+              <effectiveTime value="20110808102500-0700"/>
+              <specimen>
+                <specimenRole>
+                  <specimenPlayingEntity>
+                    <code code="119364003" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Serum"/>
+                  </specimenPlayingEntity>
+                </specimenRole>
+              </specimen>
+              <informant>
+                <assignedEntity>
+                  <id nullFlavor="UNK"/>
+                  <addr><streetAddressLine>1501 N. Campbell Ave</streetAddressLine><city>Tucson</city><state>AZ</state><postalCode>85724</postalCode></addr>
+                  <telecom value="tel:+1-520-694-0111"/>
+                  <representedOrganization>
+                    <name>University of Arizona Medical Center</name>
+                  </representedOrganization>
+                </assignedEntity>
+              </informant>
+              <component>
+                <procedure classCode="PROC" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.15.3.2"/>
+                  <code code="22778000" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Venipuncture (procedure)"/>
+                  <effectiveTime value="20110808102500-0700"/>
+                  <targetSiteCode code="66480008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Left forearm"/>
+                  <performer>
+                    <assignedEntity>
+                      <id nullFlavor="UNK"/>
+                      <representedOrganization>
+                        <name>University of Arizona Medical Center</name>
+                      </representedOrganization>
+                    </assignedEntity>
+                  </performer>
+                  <participant typeCode="PRD">
+                    <participantRole classCode="SPEC">
+                      <playingEntity>
+                        <code code="119364003" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Serum"/>
+                      </playingEntity>
+                    </participantRole>
+                  </participant>
+                </procedure>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                  <templateId root="2.16.840.1.113883.10.20.15.3.58"/>
+                  <templateId root="2.16.840.1.113883.10.20.15.3.93"/>
+                  <id nullFlavor="NI"/>
+                  <code code="13947-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="C immitis IgG Ser Ql EIA"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20110808102500-0700"/>
+                  <value xsi:type="CD" code="10828004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Positive"/>
+                  <informant>
+                    <assignedEntity>
+                      <id nullFlavor="NI"/>
+                      <addr><streetAddressLine>1501 N. Campbell Ave</streetAddressLine><city>Tucson</city><state>AZ</state><postalCode>85724</postalCode></addr>
+                      <telecom value="tel:+1-520-694-0111"/>
+                      <representedOrganization>
+                        <name>University of Arizona Medical Center Laboratory</name>
+                      </representedOrganization>
+                    </assignedEntity>
+                  </informant>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                  <templateId root="2.16.840.1.113883.10.20.15.3.58"/>
+                  <templateId root="2.16.840.1.113883.10.20.15.3.93"/>
+                  <id nullFlavor="NI"/>
+                  <code code="13948-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="C immitis IgM Ser Ql EIA"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20110808102500-0700"/>
+                  <value xsi:type="CD" code="10828004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Positive"/>
+                  <informant>
+                    <assignedEntity>
+                      <id nullFlavor="NI"/>
+                      <addr><streetAddressLine>1501 N. Campbell Ave</streetAddressLine><city>Tucson</city><state>AZ</state><postalCode>85724</postalCode></addr>
+                      <telecom value="tel:+1-520-694-0111"/>
+                      <representedOrganization>
+                        <name>University of Arizona Medical Center Laboratory</name>
+                      </representedOrganization>
+                    </assignedEntity>
+                  </informant>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                  <templateId root="2.16.840.1.113883.10.20.15.3.58"/>
+                  <templateId root="2.16.840.1.113883.10.20.15.3.93"/>
+                  <id nullFlavor="NI"/>
+                  <code code="62459-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="C immitis IgG Ser Ql ID"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20110808102500-0700"/>
+                  <value xsi:type="CD" code="10828004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Positive"/>
+                  <informant>
+                    <assignedEntity>
+                      <id nullFlavor="NI"/>
+                      <addr><streetAddressLine>1501 N. Campbell Ave</streetAddressLine><city>Tucson</city><state>AZ</state><postalCode>85724</postalCode></addr>
+                      <telecom value="tel:+1-520-694-0111"/>
+                      <representedOrganization>
+                        <name>University of Arizona Medical Center Laboratory</name>
+                      </representedOrganization>
+                    </assignedEntity>
+                  </informant>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                  <templateId root="2.16.840.1.113883.10.20.15.3.58"/>
+                  <templateId root="2.16.840.1.113883.10.20.15.3.93"/>
+                  <id nullFlavor="NI"/>
+                  <code code="62458-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="C immitis IgM Ser Ql ID"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20110808102500-0700"/>
+                  <value xsi:type="CD" code="10828004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Positive"/>
+                  <informant>
+                    <assignedEntity>
+                      <id nullFlavor="NI"/>
+                      <addr><streetAddressLine>1501 N. Campbell Ave</streetAddressLine><city>Tucson</city><state>AZ</state><postalCode>85724</postalCode></addr>
+                      <telecom value="tel:+1-520-694-0111"/>
+                      <representedOrganization>
+                        <name>University of Arizona Medical Center Laboratory</name>
+                      </representedOrganization>
+                    </assignedEntity>
+                  </informant>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                  <templateId root="2.16.840.1.113883.10.20.15.3.58"/>
+                  <templateId root="2.16.840.1.113883.10.20.15.3.93"/>
+                  <id nullFlavor="NI"/>
+                  <code code="5096-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="C immitis Ab Titr Ser CF"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20110808102500-0700"/>
+                  <value xsi:type="RTO">
+                    <numerator xsi:type="INT" value="1"/>
+                    <denominator xsi:type="INT" value="16"/>
+                  </value>
+                  <informant>
+                    <assignedEntity>
+                      <id nullFlavor="NI"/>
+                      <addr><streetAddressLine>1501 N. Campbell Ave</streetAddressLine><city>Tucson</city><state>AZ</state><postalCode>85724</postalCode></addr>
+                      <telecom value="tel:+1-520-694-0111"/>
+                      <representedOrganization>
+                        <name>University of Arizona Medical Center Laboratory</name>
+                      </representedOrganization>
+                    </assignedEntity>
+                  </informant>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <entry typeCode="DRIV">
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.31"/>
+              <templateId root="2.16.840.1.113883.10.20.15.3.58"/>
+              <templateId root="2.16.840.1.113883.10.20.15.3.93"/>
+              <id nullFlavor="NI"/>
+              <code code="5096-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="C immitis Ab Titr Ser CF"/>
+              <statusCode code="completed"/>
+              <effectiveTime value="20110808102500-0700"/>
+              <value xsi:type="RTO">
+                <numerator xsi:type="INT" value="1"/>
+                <denominator xsi:type="INT" value="64"/>
+              </value>
+              <specimen>
+                <specimenRole>
+                  <specimenPlayingEntity>
+                    <code code="119364003" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Serum"/>
+                  </specimenPlayingEntity>
+                </specimenRole>
+              </specimen>
+              <informant>
+                <assignedEntity>
+                  <id nullFlavor="NI"/>
+                  <addr><streetAddressLine>1501 N. Campbell Ave</streetAddressLine><city>Tucson</city><state>AZ</state><postalCode>85724</postalCode></addr>
+                  <telecom value="tel:+1-520-694-0111"/>
+                  <representedOrganization>
+                    <name>University of Arizona Medical Center Laboratory</name>
+                  </representedOrganization>
+                </assignedEntity>
+              </informant>
+            </observation>
+          </entry>
+          <entry typeCode="DRIV">
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.28"/>
+              <templateId root="2.16.840.1.113883.10.20.15.3.5"/>
+              <id root="1.3.6.1.4.1.19376.1.3.4" extension="ABC"/>
+              <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/>
+              <statusCode code="completed"/>
+              <effectiveTime value="20110907114500-0700"/>
+              <value xsi:type="CD" code="128309002" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT" displayName="Radiologic infiltrate"/>
+              <methodCode code="168731009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT" displayName="Standard chest X-ray"/>
+              <informant>
+                <assignedEntity>
+                  <id root="1.3.6.1.4.1.19376.1.3.4" extension="2872927"/>
+                  <representedOrganization>
+                    <name>Radiology Clinic</name>
+                  </representedOrganization>
+                </assignedEntity>
+              </informant>
+              <entryRelationship typeCode="COMP">
+                <observationMedia ID="ABC" classCode="OBS" moodCode="EVN">
+                  <value representation="B64" mediaType="image/jpeg"><reference value="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"/></value>
+                </observationMedia>
+              </entryRelationship>
+            </observation>
+          </entry>
+        </section>
+      </component>
+    </structuredBody>
+  </component>
+</ClinicalDocument>

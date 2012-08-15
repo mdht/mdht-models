@@ -1,0 +1,91 @@
+/**
+ * <copyright>
+ * </copyright>
+ *
+ * $Id$
+ */
+package org.openhealthtools.mdht.uml.cda.phcr.flu.impl;
+
+import java.util.Map;
+
+import org.eclipse.emf.common.util.DiagnosticChain;
+
+import org.eclipse.emf.ecore.EClass;
+
+import org.openhealthtools.mdht.uml.cda.phcr.flu.InfluenzaCaseObservation;
+import org.openhealthtools.mdht.uml.cda.phcr.flu.InfluenzaPHCRClinicalInformationSection;
+import org.openhealthtools.mdht.uml.cda.phcr.flu.fluPackage;
+
+import org.openhealthtools.mdht.uml.cda.phcr.flu.operations.InfluenzaPHCRClinicalInformationSectionOperations;
+
+import org.openhealthtools.mdht.uml.cda.phcr.impl.PhcrClinicalInformationSectionImpl;
+
+import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
+
+/**
+ * <!-- begin-user-doc -->
+ * An implementation of the model object '<em><b>Influenza PHCR Clinical Information Section</b></em>'.
+ * <!-- end-user-doc -->
+ * <p>
+ * </p>
+ *
+ * @generated
+ */
+public class InfluenzaPHCRClinicalInformationSectionImpl extends PhcrClinicalInformationSectionImpl implements InfluenzaPHCRClinicalInformationSection {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected InfluenzaPHCRClinicalInformationSectionImpl() {
+		super();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return fluPackage.Literals.INFLUENZA_PHCR_CLINICAL_INFORMATION_SECTION;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateInfluenzaPHCRClinicalInformationSectionInfluenzaCaseObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return InfluenzaPHCRClinicalInformationSectionOperations.validateInfluenzaPHCRClinicalInformationSectionInfluenzaCaseObservation(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public InfluenzaCaseObservation getInfluenzaCaseObservation() {
+		return InfluenzaPHCRClinicalInformationSectionOperations.getInfluenzaCaseObservation(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validatePhcrClinicalInformationSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return InfluenzaPHCRClinicalInformationSectionOperations.validatePhcrClinicalInformationSectionTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public InfluenzaPHCRClinicalInformationSection init() {
+    	CDAUtil.init(this);
+    	return this;
+	}
+} //InfluenzaPHCRClinicalInformationSectionImpl

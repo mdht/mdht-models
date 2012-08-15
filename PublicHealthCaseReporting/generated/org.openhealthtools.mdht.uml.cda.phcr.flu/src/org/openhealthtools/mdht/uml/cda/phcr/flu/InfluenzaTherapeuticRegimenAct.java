@@ -1,0 +1,83 @@
+/**
+ * <copyright>
+ * </copyright>
+ *
+ * $Id$
+ */
+package org.openhealthtools.mdht.uml.cda.phcr.flu;
+
+import java.util.Map;
+
+import org.eclipse.emf.common.util.DiagnosticChain;
+import org.eclipse.emf.common.util.EList;
+
+import org.openhealthtools.mdht.uml.cda.phcr.TherapeuticRegimenAct;
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>Influenza Therapeutic Regimen Act</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ *
+ * @see org.openhealthtools.mdht.uml.cda.phcr.flu.fluPackage#getInfluenzaTherapeuticRegimenAct()
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.3.75' constraints.validation.error='InfluenzaTherapeuticRegimenActTemplateId' constraints.validation.warning='InfluenzaTherapeuticRegimenActInfluenzaTreatmentGivenSubstanceAdministration' constraints.validation.info='InfluenzaTherapeuticRegimenActInfluenzaTreatmentNotGivenSubstanceAdministration'"
+ * @generated
+ */
+public interface InfluenzaTherapeuticRegimenAct extends TherapeuticRegimenAct {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.substanceAdministration.oclIsUndefined() and entryRelationship.substanceAdministration.oclIsKindOf(flu::InfluenzaTreatmentGivenSubstanceAdministration) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.substanceAdministration.oclIsUndefined() and entryRelationship.substanceAdministration.oclIsKindOf(flu::InfluenzaTreatmentGivenSubstanceAdministration) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)'"
+	 * @generated
+	 */
+	boolean validateInfluenzaTherapeuticRegimenActInfluenzaTreatmentGivenSubstanceAdministration(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.substanceAdministration.oclIsUndefined() and entryRelationship.substanceAdministration.oclIsKindOf(flu::InfluenzaTreatmentNotGivenSubstanceAdministration) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.substanceAdministration.oclIsUndefined() and entryRelationship.substanceAdministration.oclIsKindOf(flu::InfluenzaTreatmentNotGivenSubstanceAdministration) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)'"
+	 * @generated
+	 */
+	boolean validateInfluenzaTherapeuticRegimenActInfluenzaTreatmentNotGivenSubstanceAdministration(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(flu::InfluenzaTreatmentGivenSubstanceAdministration)).oclAsType(flu::InfluenzaTreatmentGivenSubstanceAdministration)
+	 * <!-- end-model-doc -->
+	 * @model kind="operation" required="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(flu::InfluenzaTreatmentGivenSubstanceAdministration)).oclAsType(flu::InfluenzaTreatmentGivenSubstanceAdministration)'"
+	 * @generated
+	 */
+	EList<InfluenzaTreatmentGivenSubstanceAdministration> getInfluenzaTreatmentGivenSubstanceAdministrations();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(flu::InfluenzaTreatmentNotGivenSubstanceAdministration)).oclAsType(flu::InfluenzaTreatmentNotGivenSubstanceAdministration)
+	 * <!-- end-model-doc -->
+	 * @model kind="operation" required="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(flu::InfluenzaTreatmentNotGivenSubstanceAdministration)).oclAsType(flu::InfluenzaTreatmentNotGivenSubstanceAdministration)'"
+	 * @generated
+	 */
+	EList<InfluenzaTreatmentNotGivenSubstanceAdministration> getInfluenzaTreatmentNotGivenSubstanceAdministrations();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public InfluenzaTherapeuticRegimenAct init();
+} // InfluenzaTherapeuticRegimenAct

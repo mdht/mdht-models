@@ -1,0 +1,111 @@
+/*******************************************************************************
+ * Copyright (c) 2012, Public Health Data Standards Consortium (PHDSC)
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
+ *
+ * Contributors:
+ *     PHDSC - initial API and implementation
+ *******************************************************************************/
+package org.openhealthtools.mdht.uml.cda.phcr.streppneumo.impl;
+
+import java.util.Map;
+
+import org.eclipse.emf.common.util.DiagnosticChain;
+
+import org.eclipse.emf.ecore.EClass;
+
+import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
+
+import org.openhealthtools.mdht.uml.cda.phcr.streppneumo.StrepPneumoPackage;
+import org.openhealthtools.mdht.uml.cda.phcr.streppneumo.StrepPneumoPossibleExposureLocationAct;
+
+import org.openhealthtools.mdht.uml.cda.phcr.streppneumo.operations.StrepPneumoPossibleExposureLocationActOperations;
+
+import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
+
+/**
+ * <!-- begin-user-doc -->
+ * An implementation of the model object '<em><b>Possible Exposure Location Act</b></em>'.
+ * <!-- end-user-doc -->
+ * <p>
+ * </p>
+ *
+ * @generated
+ */
+public class StrepPneumoPossibleExposureLocationActImpl extends ActImpl implements StrepPneumoPossibleExposureLocationAct {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected StrepPneumoPossibleExposureLocationActImpl() {
+		super();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return StrepPneumoPackage.Literals.STREP_PNEUMO_POSSIBLE_EXPOSURE_LOCATION_ACT;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateStrepPneumoPossibleExposureLocationActTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return StrepPneumoPossibleExposureLocationActOperations.validateStrepPneumoPossibleExposureLocationActTemplateId(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateStrepPneumoPossibleExposureLocationActClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return StrepPneumoPossibleExposureLocationActOperations.validateStrepPneumoPossibleExposureLocationActClassCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateStrepPneumoPossibleExposureLocationActCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return StrepPneumoPossibleExposureLocationActOperations.validateStrepPneumoPossibleExposureLocationActCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateStrepPneumoPossibleExposureLocationActMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return StrepPneumoPossibleExposureLocationActOperations.validateStrepPneumoPossibleExposureLocationActMoodCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateStrepPneumoPossibleExposureLocationActStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return StrepPneumoPossibleExposureLocationActOperations.validateStrepPneumoPossibleExposureLocationActStatusCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public StrepPneumoPossibleExposureLocationAct init() {
+    	CDAUtil.init(this);
+    	return this;
+	}
+} //StrepPneumoPossibleExposureLocationActImpl

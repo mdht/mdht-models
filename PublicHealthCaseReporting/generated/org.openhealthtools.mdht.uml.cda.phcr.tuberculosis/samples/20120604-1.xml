@@ -1,0 +1,246 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ClinicalDocument xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' moodCode='EVN' xmlns='urn:hl7-org:v3'>
+    <typeId root='2.16.840.1.113883.1.3' extension='POCD_HD000040' />
+    <templateId root='2.16.840.1.113883.10.20.15' />
+    <templateId root='2.16.840.1.113883.10.20.15.1.1' />
+    <id root='ad614517-0ec2-459c-84ac-7b9ad41383bd' />
+    <code code='55751-2' codeSystem='2.16.840.1.113883.6.1' codeSystemName='LOINC' displayName='Public Health Case Report' />
+    <title>Public Health Case Report - Tuberculosis</title>
+    <effectiveTime value='20120604133805-0400' />
+    <confidentialityCode code='N' codeSystem='2.16.840.1.113883.5.25' />
+    <languageCode code=' en-US' />
+    <recordTarget>
+        <patientRole classCode='PAT'>
+            <id root='1.3.6.1.4.1.19376.1.3.4' extension='1456310' />
+            <addr>
+                <streetAddressLine>911   CEDARTREE LNAPT 6</streetAddressLine>
+                <city>CLAYMONT</city>
+                <state>DE</state>
+                <postalCode>19703</postalCode>
+            </addr>
+            <telecom value='tel:(302) 377-0626' />
+            <patient classCode='PSN' determinerCode='INSTANCE'>
+                <name>
+                    <family>MARTINEZ</family>
+                    <given>EZEQUIEL</given>
+                </name>
+                <administrativeGenderCode code='M' codeSystem='2.16.840.1.113883.5.1' codeSystemName='HL7' displayName='Male' />
+                <birthTime value='19720410' />
+                <maritalStatusCode code='001' codeSystem='2.16.840.1.113883.5.2' codeSystemName='HL7' displayName='Single' />
+                <raceCode code='HS' codeSystem='2.16.840.1.113883.1.11.14914' codeSystemName='Race &amp; Ethnicity - CDC' displayName='Hispanic' />
+                <ethnicGroupCode code='H' codeSystem='2.16.840.1.113883.6.238' codeSystemName='Ethnicity Group' displayName='Hispanic or Latino' />
+                <birthplace classCode='BIRTHPL'>
+                    <place determinerCode='INSTANCE'>
+                        <name />
+                    </place>
+                </birthplace>
+                <languageCommunication>
+                    <languageCode code='en' />
+                    <preferenceInd value='true' />
+                </languageCommunication>
+            </patient>
+        </patientRole>
+    </recordTarget>
+    <author>
+        <time value='20120604000000-0400' />
+        <assignedAuthor classCode='ASSIGNED'>
+            <id nullFlavor='UNK' />
+            <addr>
+                <streetAddressLine>501 Ogletown Road </streetAddressLine>
+                <city>Newark</city>
+                <state>DE</state>
+                <postalCode>19711</postalCode>
+            </addr>
+            <telecom value='tel:(302) 283-7565' />
+            <assignedPerson classCode='PSN' determinerCode='INSTANCE'>
+                <name>
+                    <given>Guiliano Candy G</given>
+                </name>
+            </assignedPerson>
+        </assignedAuthor>
+    </author>
+    <custodian>
+        <assignedCustodian classCode='ASSIGNED'>
+            <representedCustodianOrganization classCode='ORG' determinerCode='INSTANCE'>
+                <id nullFlavor='UNK' />
+                <name>Division of Public Health</name>
+                <telecom value='tel:(302) 283-7565' />
+                <addr>
+                    <streetAddressLine>501 Ogletown Road </streetAddressLine>
+                    <city>Newark</city>
+                    <state>DE</state>
+                    <postalCode>19711</postalCode>
+                </addr>
+            </representedCustodianOrganization>
+        </assignedCustodian>
+    </custodian>
+    <legalAuthenticator>
+        <time value='20120604133805' />
+        <signatureCode code='S' />
+        <assignedEntity classCode='ASSIGNED'>
+            <id nullFlavor='UNK' />
+            <addr>
+                <streetAddressLine>256 Chapman Rd. Suite 100 </streetAddressLine>
+                <city>Newark</city>
+                <state>DE</state>
+                <postalCode>19702</postalCode>
+            </addr>
+            <assignedPerson classCode='PSN' determinerCode='INSTANCE'>
+                <name>
+                    <given>Muir Anita </given>
+                </name>
+            </assignedPerson>
+            <representedOrganization classCode='ORG' determinerCode='INSTANCE'>
+                <id nullFlavor='UNK' />
+                <name>Division of Public Health</name>
+                <telecom value='tel:(111) 111-1111' />
+            </representedOrganization>
+        </assignedEntity>
+    </legalAuthenticator>
+    <component>
+        <structuredBody classCode='DOCBODY' moodCode='EVN'>
+            <component>
+                <section>
+                    <templateId root='2.16.840.1.113883.10.20.15.2.1' />
+                    <templateId root='2.16.840.1.113883.10.20.15.2.5' />
+                    <code code='55752-0' codeSystem='2.16.840.1.113883.6.1' codeSystemName='LOINC' displayName='Clinical Information' />
+                    <title>Clinical Information</title>
+                    <text>
+                        <list>
+                            <caption>Tuberculosis Clinical Information Section</caption>
+                            <item>Condition - Active tuberculosis</item>
+                            <item>Signs and Symptoms - Non-productive cough</item>
+                            <item>Signs and Symptoms - Fever</item>
+                            <item>Signs and Symptoms -Chills</item>
+                            <item>Signs and Symptoms - Night sweats</item>
+                            <item>Signs and Symptoms - Hemoptysis</item>
+                            <item>Signs and Symptoms - Chest Pain</item>
+                        </list>
+                    </text>
+                    <entry typeCode='DRIV'>
+                        <observation classCode='OBS' moodCode='EVN'>
+                            <templateId root='2.16.840.1.113883.10.20.1.28' />
+                            <templateId root='2.16.840.1.113883.10.20.15.3.54' />
+                            <templateId root='2.16.840.1.113883.10.20.15.3.11' />
+                            <code code='ASSERTION' codeSystem='2.16.840.1.113883.5.4' codeSystemName='HL7ActCode' />
+                            <statusCode code='completed' />
+                            <effectiveTime>
+                                <low nullFlavor='UNK' />
+                            </effectiveTime>
+                            <value xsi:type='CD' code='27836007' codeSystem='2.16.840.1.113883.6.96' codeSystemName='SNOMEDCT' displayName='Tuberculosis' />
+                            <author typeCode='AUT' contextControlCode='OP'>
+                                <time value='20120604000000-0400' />
+                                <assignedAuthor classCode='ASSIGNED'>
+                                    <id nullFlavor='UNK' />
+                                    <addr>
+                                        <streetAddressLine>501 Ogletown Road </streetAddressLine>
+                                        <city>Newark</city>
+                                        <state>DE</state>
+                                        <postalCode>19711</postalCode>
+                                    </addr>
+                                    <telecom value='tel:(302) 283-7565' />
+                                    <assignedPerson classCode='PSN' determinerCode='INSTANCE'>
+                                        <name>
+                                            <family>Guiliano</family>
+                                            <given>Candy</given>
+                                        </name>
+                                    </assignedPerson>
+                                </assignedAuthor>
+                            </author>
+                            <informant typeCode='INF' contextControlCode='OP'>
+                                <assignedEntity classCode='ASSIGNED'>
+                                    <id nullFlavor='UNK' />
+                                    <addr>
+                                        <streetAddressLine>256 Chapman Rd. Suite 100 </streetAddressLine>
+                                        <city>Newark</city>
+                                        <state>DE</state>
+                                        <postalCode>19702</postalCode>
+                                    </addr>
+                                    <telecom value='tel:(111) 111-1111' />
+                                    <assignedPerson classCode='PSN' determinerCode='INSTANCE'>
+                                        <name>
+                                            <family>Muir</family>
+                                            <given>Anita</given>
+                                        </name>
+                                    </assignedPerson>
+                                </assignedEntity>
+                            </informant>
+                            <entryRelationship typeCode='COMP'>
+                                <observation classCode='OBS' moodCode='EVN' negationInd='false'>
+                                    <templateId root='2.16.840.1.113883.10.20.15.3.53' />
+                                    <templateId root='2.16.840.1.113883.10.20.15.3.14' />
+                                    <code code='ASSERTION' codeSystem='2.16.840.1.113883.5.4' codeSystemName='HL7ActCode' />
+                                    <statusCode code='completed' />
+                                    <effectiveTime>
+                                        <low nullFlavor='UNK' />
+                                    </effectiveTime>
+                                    <value xsi:type='CD' code='409596002' codeSystem='2.16.840.1.113883.6.96' codeSystemName='SNOMEDCT' displayName='Cough' />
+                                </observation>
+                            </entryRelationship>
+                            <entryRelationship typeCode='COMP'>
+                                <observation classCode='OBS' moodCode='EVN' negationInd='true'>
+                                    <templateId root='2.16.840.1.113883.10.20.15.3.53' />
+                                    <templateId root='2.16.840.1.113883.10.20.15.3.14' />
+                                    <code code='ASSERTION' codeSystem='2.16.840.1.113883.5.4' codeSystemName='HL7ActCode' />
+                                    <statusCode code='completed' />
+                                    <effectiveTime>
+                                        <low nullFlavor='UNK' />
+                                    </effectiveTime>
+                                    <value xsi:type='CD' code='386661006' codeSystem='2.16.840.1.113883.6.96' codeSystemName='SNOMEDCT' displayName='Fever' />
+                                </observation>
+                            </entryRelationship>
+                            <entryRelationship typeCode='COMP'>
+                                <observation classCode='OBS' moodCode='EVN' negationInd='true'>
+                                    <templateId root='2.16.840.1.113883.10.20.15.3.53' />
+                                    <templateId root='2.16.840.1.113883.10.20.15.3.14' />
+                                    <code code='ASSERTION' codeSystem='2.16.840.1.113883.5.4' codeSystemName='HL7ActCode' />
+                                    <statusCode code='completed' />
+                                    <effectiveTime>
+                                        <low nullFlavor='UNK' />
+                                    </effectiveTime>
+                                    <value xsi:type='CD' code='43724002' codeSystem='2.16.840.1.113883.6.96' codeSystemName='SNOMEDCT' displayName='Chills' />
+                                </observation>
+                            </entryRelationship>
+                            <entryRelationship typeCode='COMP'>
+                                <observation classCode='OBS' moodCode='EVN' negationInd='false'>
+                                    <templateId root='2.16.840.1.113883.10.20.15.3.53' />
+                                    <templateId root='2.16.840.1.113883.10.20.15.3.14' />
+                                    <code code='ASSERTION' codeSystem='2.16.840.1.113883.5.4' codeSystemName='HL7ActCode' />
+                                    <statusCode code='completed' />
+                                    <effectiveTime>
+                                        <low nullFlavor='UNK' />
+                                    </effectiveTime>
+                                    <value xsi:type='CD' code='42984000' codeSystem='2.16.840.1.113883.6.96' codeSystemName='SNOMEDCT' displayName='Night Sweats' />
+                                </observation>
+                            </entryRelationship>
+                            <entryRelationship typeCode='COMP'>
+                                <observation classCode='OBS' moodCode='EVN' negationInd='false'>
+                                    <templateId root='2.16.840.1.113883.10.20.15.3.53' />
+                                    <templateId root='2.16.840.1.113883.10.20.15.3.14' />
+                                    <code code='ASSERTION' codeSystem='2.16.840.1.113883.5.4' codeSystemName='HL7ActCode' />
+                                    <statusCode code='completed' />
+                                    <effectiveTime>
+                                        <low nullFlavor='UNK' />
+                                    </effectiveTime>
+                                    <value xsi:type='CD' code='66857006' codeSystem='2.16.840.1.113883.6.96' codeSystemName='SNOMEDCT' displayName='Hemoptysis' />
+                                </observation>
+                            </entryRelationship>
+                            <entryRelationship typeCode='COMP'>
+                                <observation classCode='OBS' moodCode='EVN' negationInd='true'>
+                                    <templateId root='2.16.840.1.113883.10.20.15.3.53' />
+                                    <templateId root='2.16.840.1.113883.10.20.15.3.14' />
+                                    <code code='ASSERTION' codeSystem='2.16.840.1.113883.5.4' codeSystemName='HL7ActCode' />
+                                    <statusCode code='completed' />
+                                    <effectiveTime>
+                                        <low nullFlavor='UNK' />
+                                    </effectiveTime>
+                                    <value xsi:type='CD' code='29857009' codeSystem='2.16.840.1.113883.6.96' codeSystemName='SNOMEDCT' displayName='Chest pain' />
+                                </observation>
+                            </entryRelationship>
+                        </observation>
+                    </entry>
+                </section>
+            </component>
+        </structuredBody>
+    </component>
+</ClinicalDocument>
