@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML">
+  <uml:Package xmi:id="_coIXQEOSEeGGsOswcKrH-Q" name="tularemia">
+    <packageImport xmi:id="_czTsgEOSEeGGsOswcKrH-Q">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_6MwukMgnEeCI5ZpfyBisiQ"/>
+    </packageImport>
+    <packageImport xmi:id="_czTsgUOSEeGGsOswcKrH-Q">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.cda.ccd.model/model/ccd.uml#_qQyD8jxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_czTsgkOSEeGGsOswcKrH-Q">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ii81kjxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_czTsg0OSEeGGsOswcKrH-Q">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_XgMSwzxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_czTshEOSEeGGsOswcKrH-Q">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVbeUDcEd6xYZuu1VKCVw"/>
+    </packageImport>
+    <packageImport xmi:id="_czTshUOSEeGGsOswcKrH-Q">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_KnCD4CFjEd-3s7f6mWX-3A"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_cya7sUOSEeGGsOswcKrH-Q" name="TularemiaCaseReport">
+      <generalization xmi:id="_cykFoEOSEeGGsOswcKrH-Q">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_6PmAIcgnEeCI5ZpfyBisiQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_c7_R8EOTEeGGsOswcKrH-Q" name="title" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ixtIIEOTEeGGsOswcKrH-Q" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ixtIIUOTEeGGsOswcKrH-Q" value="1"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_Bn1soEAJEd6wZe6nFLrjsw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_ICN70EOVEeGGsOswcKrH-Q" name="tularemiaPHCRSocialHistorySection" type="_DxrTsEOVEeGGsOswcKrH-Q" association="_ICN70kOVEeGGsOswcKrH-Q">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ICN70UOVEeGGsOswcKrH-Q"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_It7eMEX5EeGZdYfG-NMkTg" name="tularemiaPHCRClinicalInformationSection" type="_Fkm80EX5EeGZdYfG-NMkTg" association="_It7eMkX5EeGZdYfG-NMkTg">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JqudoEX5EeGZdYfG-NMkTg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JqudoUX5EeGZdYfG-NMkTg" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_V6XLoEhcEeGmba0DT84XoA" name="tularemiaPHCRTreatmentInformationSection" type="_68stgEX5EeGZdYfG-NMkTg" association="_V6XLokhcEeGmba0DT84XoA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_V6XLoUhcEeGmba0DT84XoA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_izlg0EhcEeGmba0DT84XoA" name="phcrEncountersSection" association="_izlg0khcEeGmba0DT84XoA">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_2SAeUMqaEeCRBIG_Gkv9FQ"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_izlg0UhcEeGmba0DT84XoA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_7IH6AJPPEeGtRL6wslt-Mg" name="tularemiaPHCRRelevantDxTestsSection" type="_ewp5EEX6EeGZdYfG-NMkTg" association="_7IH6ApPPEeGtRL6wslt-Mg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7IH6AZPPEeGtRL6wslt-Mg"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_DxrTsEOVEeGGsOswcKrH-Q" name="TularemiaPHCRSocialHistorySection">
+      <generalization xmi:id="_DxrTsUOVEeGGsOswcKrH-Q">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_Fw7f4MgpEeCI5ZpfyBisiQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_iVuv0EaeEeGQ-4A9ys2BsA" name="tularemiaPossibleExposureLocationAndTypeAct" type="_xb6B0EX7EeGZdYfG-NMkTg" association="_iVuv0kaeEeGQ-4A9ys2BsA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jZ1RIEaeEeGQ-4A9ys2BsA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jZ1RIUaeEeGQ-4A9ys2BsA"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ICN70kOVEeGGsOswcKrH-Q" memberEnd="_ICN70EOVEeGGsOswcKrH-Q _ICN700OVEeGGsOswcKrH-Q">
+      <ownedEnd xmi:id="_ICN700OVEeGGsOswcKrH-Q" type="_cya7sUOSEeGGsOswcKrH-Q" association="_ICN70kOVEeGGsOswcKrH-Q"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Fkm80EX5EeGZdYfG-NMkTg" name="TularemiaPHCRClinicalInformationSection">
+      <generalization xmi:id="_Fkm80UX5EeGZdYfG-NMkTg">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_84uJEMqZEeCRBIG_Gkv9FQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_Jd2X4EX8EeGZdYfG-NMkTg" name="tularemiaCaseObservation" type="_FjXfUEX8EeGZdYfG-NMkTg" association="_Jd2X4kX8EeGZdYfG-NMkTg">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_K_dUkEX8EeGZdYfG-NMkTg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_K_dUkUX8EeGZdYfG-NMkTg" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_It7eMkX5EeGZdYfG-NMkTg" memberEnd="_It7eMEX5EeGZdYfG-NMkTg _It7eM0X5EeGZdYfG-NMkTg">
+      <ownedEnd xmi:id="_It7eM0X5EeGZdYfG-NMkTg" type="_cya7sUOSEeGGsOswcKrH-Q" association="_It7eMkX5EeGZdYfG-NMkTg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_V6XLokhcEeGmba0DT84XoA" memberEnd="_V6XLoEhcEeGmba0DT84XoA _V6XLo0hcEeGmba0DT84XoA">
+      <ownedEnd xmi:id="_V6XLo0hcEeGmba0DT84XoA" type="_cya7sUOSEeGGsOswcKrH-Q" association="_V6XLokhcEeGmba0DT84XoA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_68stgEX5EeGZdYfG-NMkTg" name="TularemiaPHCRTreatmentInformationSection">
+      <generalization xmi:id="_68stgUX5EeGZdYfG-NMkTg">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_XTjpIMqaEeCRBIG_Gkv9FQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_5MuRAH2ZEeGdF60gQ6b8Pg" name="tularemiaTherapeuticRegimenAct" type="_cbZnAEX8EeGZdYfG-NMkTg" association="_5MuRAn2ZEeGdF60gQ6b8Pg">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7v4xUH2ZEeGdF60gQ6b8Pg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7v4xUX2ZEeGdF60gQ6b8Pg" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ewp5EEX6EeGZdYfG-NMkTg" name="TularemiaPHCRRelevantDxTestsSection">
+      <generalization xmi:id="_czZXQJPPEeGtRL6wslt-Mg">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_2dxgkNM5EeCbJdgmSYxI0g"/>
+      </generalization>
+      <ownedAttribute xmi:id="_BNIUUEX7EeGZdYfG-NMkTg" name="tularemiaResultOrganizer" type="_40iRsEX6EeGZdYfG-NMkTg" association="_BNIUUkX7EeGZdYfG-NMkTg">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Q-rhgEX7EeGZdYfG-NMkTg" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Q-rhgUX7EeGZdYfG-NMkTg"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_SaLPIEX7EeGZdYfG-NMkTg" name="tularemiaResultObservation" type="_--OMwEX6EeGZdYfG-NMkTg" association="_SaVAIEX7EeGZdYfG-NMkTg">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UYYoQEX7EeGZdYfG-NMkTg" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UYYoQUX7EeGZdYfG-NMkTg"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_YofLgEX7EeGZdYfG-NMkTg" name="imagingObservation" association="_YofLgkX7EeGZdYfG-NMkTg">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_C5IPgPQfEeCOm7Y48UO5Tg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_b23MAEX7EeGZdYfG-NMkTg" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_b23MAUX7EeGZdYfG-NMkTg"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_40iRsEX6EeGZdYfG-NMkTg" name="TularemiaResultOrganizer">
+      <generalization xmi:id="_40iRsUX6EeGZdYfG-NMkTg">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_0r8IYPNrEeCOm7Y48UO5Tg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_YqCmgEYCEeGCFIO3VfsPaQ" name="tularemiaResultObservation" type="_--OMwEX6EeGZdYfG-NMkTg" association="_YqCmgkYCEeGCFIO3VfsPaQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_agWn4EYCEeGCFIO3VfsPaQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_agWn4UYCEeGCFIO3VfsPaQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_h0QTUEYCEeGCFIO3VfsPaQ" name="code" visibility="private">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-results.uml#_UbVD8K6uEd6_ioDelDcPPg"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_wE70IDL9EeGXS8s8x7j2Fg"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_--OMwEX6EeGZdYfG-NMkTg" name="TularemiaResultObservation">
+      <generalization xmi:id="_--OMwUX6EeGZdYfG-NMkTg">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#__3pL0PNrEeCOm7Y48UO5Tg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_zfXfoEYBEeGCFIO3VfsPaQ" name="code" visibility="private">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-results.uml#_H1HqAK6xEd6_ioDelDcPPg"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_BNIUUkX7EeGZdYfG-NMkTg" memberEnd="_BNIUUEX7EeGZdYfG-NMkTg _BNIUU0X7EeGZdYfG-NMkTg">
+      <ownedEnd xmi:id="_BNIUU0X7EeGZdYfG-NMkTg" type="_ewp5EEX6EeGZdYfG-NMkTg" association="_BNIUUkX7EeGZdYfG-NMkTg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_SaVAIEX7EeGZdYfG-NMkTg" memberEnd="_SaLPIEX7EeGZdYfG-NMkTg _SaVAIUX7EeGZdYfG-NMkTg">
+      <ownedEnd xmi:id="_SaVAIUX7EeGZdYfG-NMkTg" type="_ewp5EEX6EeGZdYfG-NMkTg" association="_SaVAIEX7EeGZdYfG-NMkTg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_YofLgkX7EeGZdYfG-NMkTg" memberEnd="_YofLgEX7EeGZdYfG-NMkTg _YofLg0X7EeGZdYfG-NMkTg">
+      <ownedEnd xmi:id="_YofLg0X7EeGZdYfG-NMkTg" type="_ewp5EEX6EeGZdYfG-NMkTg" association="_YofLgkX7EeGZdYfG-NMkTg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xb6B0EX7EeGZdYfG-NMkTg" name="TularemiaPossibleExposureLocationAndTypeAct">
+      <ownedRule xmi:id="_tk_8MEdwEeGmba0DT84XoA" name="ActCodeQualifierTularemiaExposure" constrainedElement="_xb6B0EX7EeGZdYfG-NMkTg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_MEoZ4J_CEeGpRtS_7CxGlA">
+          <language>Analysis</language>
+          <body>SHALL contain [1..1] qualifier, SHALL contain [1..1] name/@code=&quot;246090004&quot; Associated finding (CodeSystem: 2.16.840.1.113883.6.96 SNOMEDCT) STATIC, SHALL contain [1..1] value/@code=&quot;PHC818&quot; Tularemia exposure (CodeSystem: 2.16.840.1.114222.4.5.274 PHIN VADS code system) STATIC</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_0xmFwEdwEeGmba0DT84XoA" name="ActCodeQualifierKnownPossible" constrainedElement="_xb6B0EX7EeGZdYfG-NMkTg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_gpTX0J_CEeGpRtS_7CxGlA">
+          <language>Analysis</language>
+          <body>SHALL contain [1..1] qualifier, which SHALL contain [1..1] name/@code=&quot;408729009&quot; Finding context (CodeSystem: 2.16.840.1.113883.6.96 SNOMEDCT) STATIC, SHALL contain [1..1] value/@code=&quot;410590009&quot; Known possible (CodeSystem: 2.16.840.1.113883.6.96 SNOMEDCT) STATIC</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_JHnWIEeREeGmba0DT84XoA" name="ParticipantLocation" constrainedElement="_xb6B0EX7EeGZdYfG-NMkTg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_o4NS8J_CEeGpRtS_7CxGlA">
+          <language>Analysis</language>
+          <body>SHALL contain [1..*] participant, which SHALL contain [1..1] @typeCode=&quot;LOC&quot; Location (CodeSystem: 2.16.840.1.113883.5.90 HL7ParticipationType) STATIC</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_MjaHkEeREeGmba0DT84XoA" name="ParticipantEntityAnimal" constrainedElement="_xb6B0EX7EeGZdYfG-NMkTg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_xGXnMJ_CEeGpRtS_7CxGlA">
+          <language>Analysis</language>
+          <body>MAY contain [0..*] participant, which if present SHALL contain [1..1] @typeCode=&quot;DIR&quot; Direct target (CodeSystem: 2.16.840.1.113883.5.90 HL7ParticipationType) STATIC</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_PeuCIEeREeGmba0DT84XoA" name="ParticipantEntityMaterial" constrainedElement="_xb6B0EX7EeGZdYfG-NMkTg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_2UTEoJ_CEeGpRtS_7CxGlA">
+          <language>Analysis</language>
+          <body>MAY contain [0..*] participant, which if present SHALL contain [1..1] @typeCode=&quot;DIR&quot; Direct target (CodeSystem: 2.16.840.1.113883.5.90 HL7ParticipationType) STATIC</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_MtpeQEYIEeGCFIO3VfsPaQ">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_YiANsDxYEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_TD2yYEYIEeGCFIO3VfsPaQ" name="classCode" visibility="private" isReadOnly="true">
+        <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOntkDcEd6xYZuu1VKCVw"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_1DWqEEbnEd6besF9iFIJkQ"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_Ucq_cEYIEeGCFIO3VfsPaQ" value="ACT"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_TD2yYkYIEeGCFIO3VfsPaQ" name="moodCode" visibility="private" isReadOnly="true">
+        <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOpkkDcEd6xYZuu1VKCVw"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_yWn-AEocEd6c3qsAxlFHaQ"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_gMCXAEdwEeGmba0DT84XoA" value="EVN"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_TD2yYUYIEeGCFIO3VfsPaQ" name="code" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_HUTHQEocEd6c3qsAxlFHaQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_TD2yY0YIEeGCFIO3VfsPaQ" name="statusCode" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5jEQsEdwEeGmba0DT84XoA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5jEQsUdwEeGmba0DT84XoA" value="1"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_Q0j8kEocEd6c3qsAxlFHaQ"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_FjXfUEX8EeGZdYfG-NMkTg" name="TularemiaCaseObservation">
+      <generalization xmi:id="_FjXfUUX8EeGZdYfG-NMkTg">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_p8bDQNTCEeC18pmrrt-Mbg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_JdnccEX-EeGZdYfG-NMkTg" name="value" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JdnccUX-EeGZdYfG-NMkTg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JdncckX-EeGZdYfG-NMkTg" value="1"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_0_CcKdTCEeC18pmrrt-Mbg"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_sPYF0EhcEeGmba0DT84XoA" name="tularemiaSignsAndSymptomsObservation" type="_yioR8EX-EeGZdYfG-NMkTg" association="_sPYF0khcEeGmba0DT84XoA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wG4i4EhcEeGmba0DT84XoA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wG4i4UhcEeGmba0DT84XoA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_0idWUEhcEeGmba0DT84XoA" name="locationOfLesionObservation" type="_pc808EYAEeGCFIO3VfsPaQ" association="_0idWUkhcEeGmba0DT84XoA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_33GW4EhcEeGmba0DT84XoA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_33GW4UhcEeGmba0DT84XoA"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Jd2X4kX8EeGZdYfG-NMkTg" memberEnd="_Jd2X4EX8EeGZdYfG-NMkTg _Jd2X40X8EeGZdYfG-NMkTg">
+      <ownedEnd xmi:id="_Jd2X40X8EeGZdYfG-NMkTg" type="_Fkm80EX5EeGZdYfG-NMkTg" association="_Jd2X4kX8EeGZdYfG-NMkTg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_cbZnAEX8EeGZdYfG-NMkTg" name="TularemiaTherapeuticRegimenAct">
+      <ownedRule xmi:id="_SnVgYEYGEeGCFIO3VfsPaQ" name="TularemiaTherapeuticRegimenActObservation" constrainedElement="_cbZnAEX8EeGZdYfG-NMkTg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Mx9kgJ_DEeGpRtS_7CxGlA">
+          <language>Analysis</language>
+          <body>SHALL contain [1..1] entryRelationship, which SHALL contain [1..1] @typeCode=&quot;REFR&quot; Refers to (CodeSystem:&#xD;&#xA;2.16.840.1.113883.5.1002 HL7ActRelationshipType) STATIC, SHALL contain [1..1] observation</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_cbZnAUX8EeGZdYfG-NMkTg">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_2p558NSrEeC18pmrrt-Mbg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_rWQQcH2ZEeGdF60gQ6b8Pg" name="tularemiaTreatmentGivenSubstanceAdministration" type="_Z8RtoEYGEeGCFIO3VfsPaQ" association="_rWQQcn2ZEeGdF60gQ6b8Pg">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sG-iwH2ZEeGdF60gQ6b8Pg" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sG-iwX2ZEeGdF60gQ6b8Pg"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_v7zfQH2ZEeGdF60gQ6b8Pg" name="tularemiaTreatmentNotGivenSubstanceAdministration" type="_eUj8gEYGEeGCFIO3VfsPaQ" association="_v7zfQn2ZEeGdF60gQ6b8Pg">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zfMtgH2ZEeGdF60gQ6b8Pg" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zfMtgX2ZEeGdF60gQ6b8Pg"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_yioR8EX-EeGZdYfG-NMkTg" name="TularemiaSignsAndSymptomsObservation">
+      <generalization xmi:id="_yioR8UX-EeGZdYfG-NMkTg">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#__cLgwNQPEeC4C5jYVS2kfQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_pnrsAEYFEeGCFIO3VfsPaQ" name="value" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pnrsAUYFEeGCFIO3VfsPaQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pnrsAkYFEeGCFIO3VfsPaQ" value="1"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_BZzEBdQQEeC4C5jYVS2kfQ"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_pc808EYAEeGCFIO3VfsPaQ" name="LocationOfLesionObservation">
+      <generalization xmi:id="_pc808UYAEeGCFIO3VfsPaQ">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_J6OtsEYDEeGCFIO3VfsPaQ" name="classCode" visibility="private" isReadOnly="true">
+        <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVecEDcEd6xYZuu1VKCVw"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FcjT0EbtEd6besF9iFIJkQ"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_MZ-GkEYDEeGCFIO3VfsPaQ" value="OBS"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_J6OttUYDEeGCFIO3VfsPaQ" name="moodCode" visibility="private" isReadOnly="true">
+        <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOoCEDcEd6xYZuu1VKCVw"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BLZhcEo_Ed6c3qsAxlFHaQ"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_T9hXkEYDEeGCFIO3VfsPaQ" value="EVN"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_J6OtsUYDEeGCFIO3VfsPaQ" name="code" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_J6OttkYDEeGCFIO3VfsPaQ" name="statusCode" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Tn-rAH2eEeGdF60gQ6b8Pg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Tn-rAX2eEeGdF60gQ6b8Pg" value="1"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_c-D3cEo8Ed6c3qsAxlFHaQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_J6OtskYDEeGCFIO3VfsPaQ" name="effectiveTime" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_J6Ots0YDEeGCFIO3VfsPaQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_J6OttEYDEeGCFIO3VfsPaQ"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_fUQ50Eo8Ed6c3qsAxlFHaQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_J6OtvEYDEeGCFIO3VfsPaQ" name="value" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bDSq8EYEEeGCFIO3VfsPaQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bDSq8UYEEeGCFIO3VfsPaQ" value="1"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_J6OtuUYDEeGCFIO3VfsPaQ" name="targetSiteCode" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cVZMAEYEEeGCFIO3VfsPaQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cVZMAUYEEeGCFIO3VfsPaQ" value="1"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_339AIEo-Ed6c3qsAxlFHaQ"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_YqCmgkYCEeGCFIO3VfsPaQ" memberEnd="_YqCmgEYCEeGCFIO3VfsPaQ _YqCmg0YCEeGCFIO3VfsPaQ">
+      <ownedEnd xmi:id="_YqCmg0YCEeGCFIO3VfsPaQ" type="_40iRsEX6EeGZdYfG-NMkTg" association="_YqCmgkYCEeGCFIO3VfsPaQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Z8RtoEYGEeGCFIO3VfsPaQ" name="TularemiaTreatmentGivenSubstanceAdministration">
+      <ownedRule xmi:id="_3h8VgEYHEeGCFIO3VfsPaQ" name="TreatmentGivenManufacturedMaterial" constrainedElement="_Z8RtoEYGEeGCFIO3VfsPaQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_hl1cEJ_DEeGpRtS_7CxGlA">
+          <language>Analysis</language>
+          <body>SHALL contain [1..1] consumable, SHALL contain [1..1] manufacturedProduct, SHALL contain [1..1] manufacturedMaterial, which SHALL contain [1..1] code/@code, which SHALL be selected from ValueSet 2.16.840.1.114222.4.11.3217 Medication Treatment (Tularemia)</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_Z8RtoUYGEeGCFIO3VfsPaQ">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_XOKZ4NStEeC18pmrrt-Mbg"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_eUj8gEYGEeGCFIO3VfsPaQ" name="TularemiaTreatmentNotGivenSubstanceAdministration">
+      <ownedRule xmi:id="_C0860EYIEeGCFIO3VfsPaQ" name="TreatmentNotGivenManufacturedMaterial" constrainedElement="_eUj8gEYGEeGCFIO3VfsPaQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ng66cJ_DEeGpRtS_7CxGlA">
+          <language>Analysis</language>
+          <body>SHALL contain [1..1] consumable, SHALL contain [1..1] manufacturedProduct, SHALL contain [1..1] manufacturedMaterial, which SHALL contain [1..1] code/@code, which SHALL be selected from ValueSet 2.16.840.1.114222.4.11.3217 Medication Treatment (Tularemia)</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_eUj8gUYGEeGCFIO3VfsPaQ">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_NbgssNSwEeC18pmrrt-Mbg"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_iVuv0kaeEeGQ-4A9ys2BsA" memberEnd="_iVuv0EaeEeGQ-4A9ys2BsA _iVuv00aeEeGQ-4A9ys2BsA">
+      <ownedEnd xmi:id="_iVuv00aeEeGQ-4A9ys2BsA" type="_DxrTsEOVEeGGsOswcKrH-Q" association="_iVuv0kaeEeGQ-4A9ys2BsA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_izlg0khcEeGmba0DT84XoA" memberEnd="_izlg0EhcEeGmba0DT84XoA _izlg00hcEeGmba0DT84XoA">
+      <ownedEnd xmi:id="_izlg00hcEeGmba0DT84XoA" type="_cya7sUOSEeGGsOswcKrH-Q" association="_izlg0khcEeGmba0DT84XoA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_sPYF0khcEeGmba0DT84XoA" memberEnd="_sPYF0EhcEeGmba0DT84XoA _sPYF00hcEeGmba0DT84XoA">
+      <ownedEnd xmi:id="_sPYF00hcEeGmba0DT84XoA" type="_FjXfUEX8EeGZdYfG-NMkTg" association="_sPYF0khcEeGmba0DT84XoA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_0idWUkhcEeGmba0DT84XoA" memberEnd="_0idWUEhcEeGmba0DT84XoA _0idWU0hcEeGmba0DT84XoA">
+      <ownedEnd xmi:id="_0idWU0hcEeGmba0DT84XoA" type="_FjXfUEX8EeGZdYfG-NMkTg" association="_0idWUkhcEeGmba0DT84XoA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_rWQQcn2ZEeGdF60gQ6b8Pg" memberEnd="_rWQQcH2ZEeGdF60gQ6b8Pg _rWQQc32ZEeGdF60gQ6b8Pg">
+      <ownedEnd xmi:id="_rWQQc32ZEeGdF60gQ6b8Pg" type="_cbZnAEX8EeGZdYfG-NMkTg" association="_rWQQcn2ZEeGdF60gQ6b8Pg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_v7zfQn2ZEeGdF60gQ6b8Pg" memberEnd="_v7zfQH2ZEeGdF60gQ6b8Pg _v7zfQ32ZEeGdF60gQ6b8Pg">
+      <ownedEnd xmi:id="_v7zfQ32ZEeGdF60gQ6b8Pg" type="_cbZnAEX8EeGZdYfG-NMkTg" association="_v7zfQn2ZEeGdF60gQ6b8Pg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_5MuRAn2ZEeGdF60gQ6b8Pg" memberEnd="_5MuRAH2ZEeGdF60gQ6b8Pg _5MuRA32ZEeGdF60gQ6b8Pg">
+      <ownedEnd xmi:id="_5MuRA32ZEeGdF60gQ6b8Pg" type="_68stgEX5EeGZdYfG-NMkTg" association="_5MuRAn2ZEeGdF60gQ6b8Pg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_7IH6ApPPEeGtRL6wslt-Mg" memberEnd="_7IH6AJPPEeGtRL6wslt-Mg _7IH6A5PPEeGtRL6wslt-Mg">
+      <ownedEnd xmi:id="_7IH6A5PPEeGtRL6wslt-Mg" type="_cya7sUOSEeGGsOswcKrH-Q" association="_7IH6ApPPEeGtRL6wslt-Mg"/>
+    </packagedElement>
+    <profileApplication xmi:id="_coIXSUOSEeGGsOswcKrH-Q">
+      <eAnnotations xmi:id="_coIXSkOSEeGGsOswcKrH-Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_coIXS0OSEeGGsOswcKrH-Q">
+      <eAnnotations xmi:id="_coIXTEOSEeGGsOswcKrH-Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/cda/4#/"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://CDA_PROFILES/CDA.profile.uml#_cxOJEIEVEd6H8o-hO3-B4Q"/>
+    </profileApplication>
+  </uml:Package>
+  <CDA:CodegenSupport xmi:id="_cya7sEOSEeGGsOswcKrH-Q" basePackage="org.openhealthtools.mdht.uml.cda.phcr" nsPrefix="tularemia" nsURI="http://www.openhealthtools.org/mdht/uml/cda/phcr/tularemia" packageName="tularemia" prefix="tularemia" base_Namespace="_coIXQEOSEeGGsOswcKrH-Q"/>
+  <CDA:CDATemplate xmi:id="_cya7skOSEeGGsOswcKrH-Q" base_Class="_cya7sUOSEeGGsOswcKrH-Q" templateId="2.16.840.1.113883.10.20.15.1.4" assigningAuthorityName="">
+    <ruleId>CONF:1839</ruleId>
+  </CDA:CDATemplate>
+  <CDA:TextValue xmi:id="_hbuMoEOTEeGGsOswcKrH-Q" base_Property="_c7_R8EOTEeGGsOswcKrH-Q" value="Public Health Case Report - Tularemia">
+    <ruleId>CONF:1840</ruleId>
+  </CDA:TextValue>
+  <CDA:CDATemplate xmi:id="_XDfioEOVEeGGsOswcKrH-Q" base_Class="_DxrTsEOVEeGGsOswcKrH-Q" templateId="2.16.840.1.113883.10.20.15.2.18">
+    <ruleId>CONF:1653</ruleId>
+  </CDA:CDATemplate>
+  <CDA:AssociationValidation xmi:id="_ZRC_UEOVEeGGsOswcKrH-Q" severity="WARNING" base_Association="_ICN70kOVEeGGsOswcKrH-Q">
+    <ruleId>CONF:1842</ruleId>
+    <ruleId>CONF:1843</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:CDATemplate xmi:id="_HHQbUEX5EeGZdYfG-NMkTg" base_Class="_Fkm80EX5EeGZdYfG-NMkTg" templateId="2.16.840.1.113883.10.20.15.2.19">
+    <ruleId>CONF:1717</ruleId>
+  </CDA:CDATemplate>
+  <CDA:AssociationValidation xmi:id="_J9zKoEX5EeGZdYfG-NMkTg" base_Association="_It7eMkX5EeGZdYfG-NMkTg">
+    <ruleId>CONF:1844</ruleId>
+    <ruleId>CONF:1845</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:CDATemplate xmi:id="_9RtdEEX5EeGZdYfG-NMkTg" base_Class="_68stgEX5EeGZdYfG-NMkTg" templateId="2.16.840.1.113883.10.20.15.2.20">
+    <ruleId>CONF:1781</ruleId>
+  </CDA:CDATemplate>
+  <CDA:AssociationValidation xmi:id="_DsiygEX6EeGZdYfG-NMkTg" severity="WARNING">
+    <ruleId>CONF:1846</ruleId>
+    <ruleId>CONF:1847</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_Q3DE8EX6EeGZdYfG-NMkTg" severity="WARNING">
+    <ruleId>CONF:1848</ruleId>
+    <ruleId>CONF:1849</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:CDATemplate xmi:id="_g0h1UEX6EeGZdYfG-NMkTg" base_Class="_ewp5EEX6EeGZdYfG-NMkTg" templateId="2.16.840.1.113883.10.20.15.2.21">
+    <ruleId>CONF:1829</ruleId>
+  </CDA:CDATemplate>
+  <CDA:AssociationValidation xmi:id="_jZCZcEX6EeGZdYfG-NMkTg" severity="WARNING">
+    <ruleId>CONF:1850</ruleId>
+    <ruleId>CONF:1851</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:CDATemplate xmi:id="_znhk0EX7EeGZdYfG-NMkTg" base_Class="_xb6B0EX7EeGZdYfG-NMkTg" templateId="2.16.840.1.113883.10.20.15.3.43"/>
+  <CDA:AssociationValidation xmi:id="_4b1BUEX7EeGZdYfG-NMkTg" severity="INFO">
+    <ruleId>CONF:1669</ruleId>
+    <ruleId>CONF:1670</ruleId>
+    <ruleId>CONF:1671</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:CDATemplate xmi:id="_HtM5oEX8EeGZdYfG-NMkTg" base_Class="_FjXfUEX8EeGZdYfG-NMkTg" templateId="2.16.840.1.113883.10.20.15.3.46"/>
+  <CDA:Entry xmi:id="_O0lMAEX8EeGZdYfG-NMkTg" base_Association="_Jd2X4kX8EeGZdYfG-NMkTg" typeCode="DRIV">
+    <ruleId>CONF:1718</ruleId>
+    <ruleId>CONF:1719</ruleId>
+  </CDA:Entry>
+  <CDA:CDATemplate xmi:id="_eQh8oEX8EeGZdYfG-NMkTg" base_Class="_cbZnAEX8EeGZdYfG-NMkTg" templateId="2.16.840.1.113883.10.20.15.3.48"/>
+  <CDA:Entry xmi:id="_jq-zIEX8EeGZdYfG-NMkTg" typeCode="DRIV">
+    <ruleId>CONF:1782</ruleId>
+    <ruleId>CONF:1783</ruleId>
+    <ruleId>CONF:1784</ruleId>
+  </CDA:Entry>
+  <CDA:PropertyValidation xmi:id="_Jdncc0X-EeGZdYfG-NMkTg" base_Property="_JdnccEX-EeGZdYfG-NMkTg">
+    <ruleId>CONF:1693</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ValueSetConstraint xmi:id="_PQ9UEEX-EeGZdYfG-NMkTg" base_Property="_JdnccEX-EeGZdYfG-NMkTg">
+    <reference href="tularemia-vocab.uml#_lu4vIEX9EeGZdYfG-NMkTg"/>
+    <ruleId>CONF:1693</ruleId>
+  </CDA:ValueSetConstraint>
+  <CDA:CDATemplate xmi:id="_1kybYEX-EeGZdYfG-NMkTg" base_Class="_yioR8EX-EeGZdYfG-NMkTg" templateId="2.16.840.1.113883.10.20.15.3.45"/>
+  <CDA:EntryRelationship xmi:id="_VimmYEYAEeGCFIO3VfsPaQ" severity="WARNING" typeCode="MFST">
+    <ruleId>CONF:1706</ruleId>
+    <ruleId>CONF:1708</ruleId>
+    <ruleId>CONF:1709</ruleId>
+  </CDA:EntryRelationship>
+  <CDA:CDATemplate xmi:id="_rQIp0EYAEeGCFIO3VfsPaQ" base_Class="_pc808EYAEeGCFIO3VfsPaQ" templateId="2.16.840.1.113883.10.20.15.3.44">
+    <ruleId>CONF:1713</ruleId>
+  </CDA:CDATemplate>
+  <CDA:EntryRelationship xmi:id="_vQlngEYAEeGCFIO3VfsPaQ" severity="INFO" typeCode="MFST">
+    <ruleId>CONF:1710</ruleId>
+    <ruleId>CONF:1711</ruleId>
+    <ruleId>CONF:1712</ruleId>
+    <ruleId>CONF:1713</ruleId>
+  </CDA:EntryRelationship>
+  <CDA:CDATemplate xmi:id="_Uyp6sEYBEeGCFIO3VfsPaQ" base_Class="_--OMwEX6EeGZdYfG-NMkTg" templateId="2.16.840.1.113883.10.20.15.3.51"/>
+  <CDA:PropertyValidation xmi:id="_zfXfoUYBEeGCFIO3VfsPaQ" base_Property="_zfXfoEYBEeGCFIO3VfsPaQ">
+    <ruleId>CONF:1788</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ValueSetConstraint xmi:id="_D_HPkEYCEeGCFIO3VfsPaQ" base_Property="_zfXfoEYBEeGCFIO3VfsPaQ">
+    <reference href="tularemia-vocab.uml#_js66kEYBEeGCFIO3VfsPaQ"/>
+    <ruleId>CONF:1788</ruleId>
+  </CDA:ValueSetConstraint>
+  <CDA:CDATemplate xmi:id="_U3TUsEYCEeGCFIO3VfsPaQ" base_Class="_40iRsEX6EeGZdYfG-NMkTg" templateId="2.16.840.1.113883.10.20.15.3.52"/>
+  <CDA:AssociationValidation xmi:id="_a2HcgEYCEeGCFIO3VfsPaQ" base_Association="_YqCmgkYCEeGCFIO3VfsPaQ">
+    <ruleId>CONF:1825</ruleId>
+    <ruleId>CONF:1826</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="_h0QTUUYCEeGCFIO3VfsPaQ" base_Property="_h0QTUEYCEeGCFIO3VfsPaQ">
+    <ruleId>CONF:1877</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ValueSetConstraint xmi:id="_kJj90EYCEeGCFIO3VfsPaQ" base_Property="_h0QTUEYCEeGCFIO3VfsPaQ">
+    <reference href="tularemia-vocab.uml#_js66kEYBEeGCFIO3VfsPaQ"/>
+    <ruleId>CONF:1877</ruleId>
+  </CDA:ValueSetConstraint>
+  <CDA:PropertyValidation xmi:id="_O0DjYEYDEeGCFIO3VfsPaQ" base_Property="_J6OtsEYDEeGCFIO3VfsPaQ">
+    <ruleId>CONF:1672</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_SKxnkEYDEeGCFIO3VfsPaQ" base_Property="_J6OttUYDEeGCFIO3VfsPaQ">
+    <ruleId>CONF:1673</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_WPZTkEYDEeGCFIO3VfsPaQ" code="ASSERTION" base_Property="_J6OtsUYDEeGCFIO3VfsPaQ">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:1675</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:CodeSystemConstraint xmi:id="_c7qXQEYDEeGCFIO3VfsPaQ" code="completed" base_Property="_J6OttkYDEeGCFIO3VfsPaQ">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:1676</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_iFkQUEYDEeGCFIO3VfsPaQ" severity="WARNING" base_Property="_J6OtskYDEeGCFIO3VfsPaQ">
+    <ruleId>CONF:1677</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ValueSetConstraint xmi:id="_W68VgEYEEeGCFIO3VfsPaQ" base_Property="_J6OtvEYDEeGCFIO3VfsPaQ">
+    <reference href="tularemia-vocab.uml#_EciggEYEEeGCFIO3VfsPaQ"/>
+    <ruleId>CONF:1678</ruleId>
+  </CDA:ValueSetConstraint>
+  <CDA:ValueSetConstraint xmi:id="_dVLOAEYEEeGCFIO3VfsPaQ" base_Property="_J6OtuUYDEeGCFIO3VfsPaQ">
+    <reference href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr-vocab.uml#_0NOq8TMYEeGXS8s8x7j2Fg"/>
+    <ruleId>CONF:1679</ruleId>
+  </CDA:ValueSetConstraint>
+  <CDA:CodeSystemConstraint xmi:id="_ndQb0UYFEeGCFIO3VfsPaQ" code="ASSERTION">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:1864</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_pnrsA0YFEeGCFIO3VfsPaQ" base_Property="_pnrsAEYFEeGCFIO3VfsPaQ">
+    <ruleId>CONF:1686</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ValueSetConstraint xmi:id="_r780sEYFEeGCFIO3VfsPaQ" base_Property="_pnrsAEYFEeGCFIO3VfsPaQ">
+    <reference href="tularemia-vocab.uml#_EciggEYEEeGCFIO3VfsPaQ"/>
+    <ruleId>CONF:1686</ruleId>
+  </CDA:ValueSetConstraint>
+  <CDA:CDATemplate xmi:id="_gjKiEEYGEeGCFIO3VfsPaQ" base_Class="_Z8RtoEYGEeGCFIO3VfsPaQ" templateId="2.16.840.1.113883.10.20.15.3.47"/>
+  <CDA:CDATemplate xmi:id="_i4n9kEYGEeGCFIO3VfsPaQ" base_Class="_eUj8gEYGEeGCFIO3VfsPaQ" templateId="2.16.840.1.113883.10.20.15.3.50"/>
+  <CDA:EntryRelationship xmi:id="_n1bOwEYGEeGCFIO3VfsPaQ" severity="WARNING" typeCode="COMP">
+    <ruleId>CONF:1753</ruleId>
+    <ruleId>CONF:1754</ruleId>
+    <ruleId>CONF:1755</ruleId>
+  </CDA:EntryRelationship>
+  <CDA:EntryRelationship xmi:id="_vrcv0EYGEeGCFIO3VfsPaQ" severity="INFO" typeCode="COMP">
+    <ruleId>CONF:1778</ruleId>
+    <ruleId>CONF:1779</ruleId>
+    <ruleId>CONF:1790</ruleId>
+  </CDA:EntryRelationship>
+  <CDA:PropertyValidation xmi:id="_VIVLkEYIEeGCFIO3VfsPaQ" base_Property="_TD2yYEYIEeGCFIO3VfsPaQ">
+    <ruleId>CONF:1617</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:Entry xmi:id="_SLSZEEdwEeGmba0DT84XoA" severity="INFO" base_Association="_iVuv0kaeEeGQ-4A9ys2BsA" typeCode="DRIV">
+    <ruleId>CONF:1669</ruleId>
+    <ruleId>CONF:1670</ruleId>
+  </CDA:Entry>
+  <CDA:PropertyValidation xmi:id="_hSXs8EdwEeGmba0DT84XoA" base_Property="_TD2yYkYIEeGCFIO3VfsPaQ">
+    <ruleId>CONF:1618</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_kre90EdwEeGmba0DT84XoA" base_Property="_TD2yYUYIEeGCFIO3VfsPaQ">
+    <ruleId>CONF:1619</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_nADBcEdwEeGmba0DT84XoA" code="413350009" displayName="Finding with explicit context" base_Property="_TD2yYUYIEeGCFIO3VfsPaQ">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:1619</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:CodeSystemConstraint xmi:id="_6nxO8EdwEeGmba0DT84XoA" code="completed" base_Property="_TD2yY0YIEeGCFIO3VfsPaQ">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:1626</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:AssociationValidation xmi:id="_Y4V_sEhcEeGmba0DT84XoA" severity="WARNING" base_Association="_V6XLokhcEeGmba0DT84XoA">
+    <ruleId>CONF:1846</ruleId>
+    <ruleId>CONF:1847</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_jaB1wEhcEeGmba0DT84XoA" severity="WARNING" base_Association="_izlg0khcEeGmba0DT84XoA">
+    <ruleId>CONF:1848</ruleId>
+    <ruleId>CONF:1849</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:EntryRelationship xmi:id="_uPh_sEhcEeGmba0DT84XoA" base_Association="_sPYF0khcEeGmba0DT84XoA" typeCode="MFST">
+    <ruleId>CONF:1706</ruleId>
+    <ruleId>CONF:1708</ruleId>
+    <ruleId>CONF:1709</ruleId>
+  </CDA:EntryRelationship>
+  <CDA:EntryRelationship xmi:id="_2Knm8EhcEeGmba0DT84XoA" severity="INFO" base_Association="_0idWUkhcEeGmba0DT84XoA" typeCode="MFST">
+    <ruleId>CONF:1710</ruleId>
+  </CDA:EntryRelationship>
+  <CDA:EntryRelationship xmi:id="_sUsOoH2ZEeGdF60gQ6b8Pg" severity="WARNING" base_Association="_rWQQcn2ZEeGdF60gQ6b8Pg" typeCode="COMP">
+    <ruleId>CONF:1753</ruleId>
+    <ruleId>CONF:1754</ruleId>
+    <ruleId>CONF:1755</ruleId>
+  </CDA:EntryRelationship>
+  <CDA:EntryRelationship xmi:id="_xPZ1IH2ZEeGdF60gQ6b8Pg" severity="INFO" base_Association="_v7zfQn2ZEeGdF60gQ6b8Pg" typeCode="COMP">
+    <ruleId>CONF:1778</ruleId>
+    <ruleId>CONF:1779</ruleId>
+    <ruleId>CONF:1790</ruleId>
+  </CDA:EntryRelationship>
+  <CDA:Entry xmi:id="_5lwcEH2ZEeGdF60gQ6b8Pg" base_Association="_5MuRAn2ZEeGdF60gQ6b8Pg" typeCode="DRIV">
+    <ruleId>CONF:1782</ruleId>
+    <ruleId>CONF:1783</ruleId>
+    <ruleId>CONF:1784</ruleId>
+  </CDA:Entry>
+  <CDA:Entry xmi:id="_yv-J0H22EeGdF60gQ6b8Pg" severity="INFO" base_Association="_BNIUUkX7EeGZdYfG-NMkTg" typeCode="DRIV">
+    <ruleId>CONF:1830</ruleId>
+  </CDA:Entry>
+  <CDA:Entry xmi:id="_ziVa4H22EeGdF60gQ6b8Pg" severity="WARNING" base_Association="_SaVAIEX7EeGZdYfG-NMkTg" typeCode="DRIV">
+    <ruleId>CONF:1833</ruleId>
+  </CDA:Entry>
+  <CDA:Entry xmi:id="_4wRfYH22EeGdF60gQ6b8Pg" severity="INFO" base_Association="_YofLgkX7EeGZdYfG-NMkTg" typeCode="DRIV">
+    <ruleId>CONF:1836</ruleId>
+  </CDA:Entry>
+  <CDA:PropertyValidation xmi:id="_MmKmkJPCEeGtRL6wslt-Mg" base_Property="_J6OtuUYDEeGCFIO3VfsPaQ">
+    <ruleId>CONF:1679</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:AssociationValidation xmi:id="_8KumgJPPEeGtRL6wslt-Mg" severity="WARNING" base_Association="_7IH6ApPPEeGtRL6wslt-Mg">
+    <ruleId>CONF:1850</ruleId>
+    <ruleId>CONF:1851</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:PropertyValidation xmi:id="_iudYYJ_AEeGpRtS_7CxGlA" base_Property="_J6OtsUYDEeGCFIO3VfsPaQ">
+    <ruleId>CONF:1675</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_kOkgQJ_AEeGpRtS_7CxGlA" base_Property="_J6OttkYDEeGCFIO3VfsPaQ">
+    <ruleId>CONF:1676</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_mDPi4J_AEeGpRtS_7CxGlA" base_Property="_J6OtvEYDEeGCFIO3VfsPaQ">
+    <ruleId>CONF:1678</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_sTrJsJ_BEeGpRtS_7CxGlA" base_Property="_c7_R8EOTEeGGsOswcKrH-Q">
+    <ruleId>CONF:1840</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_DefDcJ_CEeGpRtS_7CxGlA" base_Property="_TD2yY0YIEeGCFIO3VfsPaQ">
+    <ruleId>CONF:1626</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ConstraintValidation xmi:id="_IxVdIJ_CEeGpRtS_7CxGlA" base_Constraint="_tk_8MEdwEeGmba0DT84XoA">
+    <ruleId>CONF:1620</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_X0QCsJ_CEeGpRtS_7CxGlA" base_Constraint="_0xmFwEdwEeGmba0DT84XoA">
+    <ruleId>CONF:1623</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_kXReYJ_CEeGpRtS_7CxGlA" base_Constraint="_JHnWIEeREeGmba0DT84XoA">
+    <ruleId>CONF:1627</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_tmtCYJ_CEeGpRtS_7CxGlA" severity="INFO" base_Constraint="_MjaHkEeREeGmba0DT84XoA">
+    <ruleId>CONF:1637</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_zGXwEJ_CEeGpRtS_7CxGlA" severity="INFO" base_Constraint="_PeuCIEeREeGmba0DT84XoA">
+    <ruleId>CONF:1645</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_FapYsJ_DEeGpRtS_7CxGlA" base_Constraint="_SnVgYEYGEeGCFIO3VfsPaQ">
+    <ruleId>CONF:1745</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_XmIRsJ_DEeGpRtS_7CxGlA" base_Constraint="_3h8VgEYHEeGCFIO3VfsPaQ">
+    <ruleId>CONF:1736</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_nxdQ0J_DEeGpRtS_7CxGlA" base_Constraint="_C0860EYIEeGCFIO3VfsPaQ">
+    <ruleId>CONF:1770</ruleId>
+  </CDA:ConstraintValidation>
+</xmi:XMI>
