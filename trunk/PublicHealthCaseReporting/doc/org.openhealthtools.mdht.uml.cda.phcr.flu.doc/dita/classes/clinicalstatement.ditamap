@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map title="Clinical Statement Templates">
+<topicref href="influenzaCaseObservation.dita" type="topic" />
+<topicref href="influenzaEmploymentStatusObservation.dita" type="topic" />
+<topicref href="influenzaImagingObservation.dita" type="topic" />
+<topicref href="influenzaImmunizationActivity.dita" type="topic" />
+<topicref href="influenzaPossibleExposureLocationAct.dita" type="topic" />
+<topicref href="influenzaResultObservation.dita" type="topic" />
+<topicref href="influenzaSignsAndSymptomsObservation.dita" type="topic" />
+<topicref href="influenzaTherapeuticRegimenAct.dita" type="topic" />
+<topicref href="influenzaTreatmentGivenSubstanceAdministration.dita" type="topic" />
+<topicref href="influenzaTreatmentNotGivenSubstanceAdministration.dita" type="topic" />
+</map>

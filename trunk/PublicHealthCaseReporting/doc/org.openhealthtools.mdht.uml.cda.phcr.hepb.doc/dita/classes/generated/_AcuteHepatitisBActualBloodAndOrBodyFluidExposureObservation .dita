@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation  - conformance rules</title>
+<shortdesc id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.15.3.26</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Observation</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.15.3.26"/>
+</prolog>
+<body>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> 2.16.840.1.114222.4.11.3224 <xref href="../../terminology/PHVS_BloodOrBodyFluidExposureEvent_CDC.dita">PHVS_BloodOrBodyFluidExposureEvent_CDC</xref></tt><b> DYNAMIC</b> (CONF:1067)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF:1068)
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt>
+</li>
+<li>Contains exactly one [1..1] <tt><b>value</b></tt>
+</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+</li>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>id</b></tt>
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> 2.16.840.1.114222.4.11.3224 <xref href="../../terminology/PHVS_BloodOrBodyFluidExposureEvent_CDC.dita">PHVS_BloodOrBodyFluidExposureEvent_CDC</xref></tt><b> DYNAMIC</b> (CONF:1067)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF:1068)
+</li>
+<li>Contains exactly one [1..1] <tt><b>value</b></tt>
+</li>
+</ol>
+
+<codeblock id="example"><![CDATA[]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">AcuteHepatitisBActualBloodAndOrBodyFluidExposureObservation </ph></p>
+<p id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.15.3.26</tt>]</p>
+</body>
+</topic>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Result Organizer</title>
+<shortdesc conref="generated/_ResultOrganizer.dita#classId/shortdesc"></shortdesc>
+<prolog conref="generated/_ResultOrganizer.dita#classId/prolog"></prolog>
+<body>
+<p>The PHCR result organizer identifies an observation set, contained within the result
+organizer as a set of result observations. It contains information applicable to all of the
+contained result observations. It is particularly useful to group a number of tests, such
+as culture results, that are performed on a common specimen. Note: Where there is a
+specimen, one can set the specimenRole/id to equal the specimen collection procedure's
+participantRole[@classCode="SPEC"]/id in order to assert that this observation is being
+made on the specimen collected in the corresponding specimen collection procedure.</p>
+<section conref="generated/_ResultOrganizer.dita#classId/description">
+</section>
+<!-- TODO: insert UML class diagram here -->
+
+<ol audience="standards" conref="generated/_ResultOrganizer.dita#classId/conformance">
+<li></li>
+</ol>
+<ol audience="developer" conref="generated/_ResultOrganizer.dita#classId/aggregate">
+<li></li>
+</ol>
+<p> </p>
+<section conref="generated/_ResultOrganizer.dita#classId/tableconformance">
+</section>
+<p> </p>
+<p> </p>
+<p><b>Result Organizer example</b></p>
+<!-- TODO: insert custom instance example here -->
+<!-- generated instance example follows -->
+<codeblock conref="generated/_ResultOrganizer.dita#classId/example">
+</codeblock>
+</body>
+</topic>

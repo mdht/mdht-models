@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Specimen Collection Procedure - conformance rules</title>
+<shortdesc id="shortdesc">[Procedure: templateId <tt>2.16.840.1.113883.10.20.15.3.2</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Procedure</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.15.3.2"/>
+</prolog>
+<body>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="PROC" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:691)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:692)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> 2.16.840.1.114222.4.11.3204 Non-Laboratory Intervention and Procedure</tt><b> STATIC</b> (CONF:693)
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:694)
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>targetSiteCode</b></tt>, which <b>SHOULD</b> be selected from ValueSet<tt> 2.16.840.1.113883.3.88.12.3221.8.9 Body Site</tt><b> DYNAMIC</b> (CONF:695)
+</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="PROC" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:691)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:692)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> 2.16.840.1.114222.4.11.3204 Non-Laboratory Intervention and Procedure</tt><b> STATIC</b> (CONF:693)
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:694)
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>targetSiteCode</b></tt>, which <b>SHOULD</b> be selected from ValueSet<tt> 2.16.840.1.113883.3.88.12.3221.8.9 Body Site</tt><b> DYNAMIC</b> (CONF:695)
+</li>
+</ol>
+
+<codeblock id="example"><![CDATA[]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Specimen Collection Procedure</ph></p>
+<p id="shortdesc">[Procedure: templateId <tt>2.16.840.1.113883.10.20.15.3.2</tt>]</p>
+</body>
+</topic>

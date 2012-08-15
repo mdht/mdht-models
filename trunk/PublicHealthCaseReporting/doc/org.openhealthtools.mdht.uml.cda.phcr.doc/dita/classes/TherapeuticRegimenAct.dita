@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Therapeutic Regimen Act</title>
+<shortdesc conref="generated/_TherapeuticRegimenAct.dita#classId/shortdesc"></shortdesc>
+<prolog conref="generated/_TherapeuticRegimenAct.dita#classId/prolog"></prolog>
+<body>
+<p>This clinical statement represents if treatment was administered for the reported
+condition. A negationInd "false" means treatment was given. A negationInd "true" means
+treatment was not given. If treatment(s) were given, they should be reflected in
+corresponding "PHCR treatment given" template(s). "PHCR treatment not given"
+templates may also be present.</p>
+<section conref="generated/_TherapeuticRegimenAct.dita#classId/description">
+</section>
+<!-- TODO: insert UML class diagram here -->
+
+<ol audience="standards" conref="generated/_TherapeuticRegimenAct.dita#classId/conformance">
+<li></li>
+</ol>
+<ol audience="developer" conref="generated/_TherapeuticRegimenAct.dita#classId/aggregate">
+<li></li>
+</ol>
+<p> </p>
+<section conref="generated/_TherapeuticRegimenAct.dita#classId/tableconformance">
+</section>
+<p> </p>
+<p> </p>
+<p><b>Therapeutic Regimen Act example</b></p>
+<!-- TODO: insert custom instance example here -->
+<!-- generated instance example follows -->
+<codeblock conref="generated/_TherapeuticRegimenAct.dita#classId/example">
+</codeblock>
+</body>
+</topic>

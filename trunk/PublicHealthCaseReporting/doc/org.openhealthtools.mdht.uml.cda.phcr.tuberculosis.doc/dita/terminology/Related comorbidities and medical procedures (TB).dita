@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Related comorbidities and medical procedures (TB)</title>
+<prolog id="prolog">
+<resourceid id="not specified"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table><tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>Related comorbidities and medical procedures (TB) - (OID not specified)</entry></row>
+<row><entry>Definition</entry><entry>Underlying complaints or concerns prompting a patient-initiated encounter related to their TB or any co-morbid conditions.</entry></row>
+</tbody></tgroup></table>
+<table><tgroup cols="4">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="2*"/>
+<colspec colname="col3" colwidth="1*"/>
+<colspec colname="col4" colwidth="3*"/>
+<thead><row>
+<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
+</row></thead><tbody>
+<row><entry>86406008</entry><entry>Human immunodeficiency virus infection (disorder)</entry><entry></entry><entry></entry></row>
+<row><entry>47515009</entry><entry>Simple silicosis</entry><entry></entry><entry></entry></row>
+<row><entry>73211009</entry><entry>Diabetes mellitus disorder</entry><entry></entry><entry></entry></row>
+<row><entry>46177005</entry><entry>End-stage renal disease disorder</entry><entry></entry><entry></entry></row>
+<row><entry>90688005</entry><entry>Chronic renal failure syndrome (disorder)</entry><entry></entry><entry></entry></row>
+<row><entry>93143009</entry><entry>93143009</entry><entry></entry><entry></entry></row>
+<row><entry>86049000</entry><entry>Malignant neoplasm, primary (morphologic abnormality)</entry><entry></entry><entry></entry></row>
+<row><entry>32230006</entry><entry>Malabsorption syndrome (disorder)</entry><entry></entry><entry></entry></row>
+<row><entry>6525002</entry><entry>Dependent drug abuse (disorder)</entry><entry></entry><entry></entry></row>
+<row><entry>399600009</entry><entry>Lymphoma (finding)</entry><entry></entry><entry></entry></row>
+<row><entry>302497006</entry><entry>Hemodialysis (procedure)</entry><entry></entry><entry></entry></row>
+<row><entry>313039003</entry><entry>Solid organ transplant (procedure)</entry><entry></entry><entry></entry></row>
+<row><entry>53442002</entry><entry>Gastrectomy (procedure)</entry><entry></entry><entry></entry></row>
+<row><entry>61600000</entry><entry>Take-down of jejunoileal bypass (procedure)</entry><entry></entry><entry></entry></row>
+<row><entry>10088002</entry><entry>Revision of jejunoileal bypass (procedure)</entry><entry></entry><entry></entry></row>
+<row><entry>401244004</entry><entry>History of - prolonged corticosteroid therapy (situation)</entry><entry></entry><entry></entry></row>
+<row><entry>86406008</entry><entry>Human immunodeficiency virus infection (disorder)</entry><entry></entry><entry></entry></row>
+<row><entry>73211009</entry><entry>Diabetes mellitus (disorder)</entry><entry></entry><entry></entry></row>
+<row><entry>15167005</entry><entry>Alcohol abuse (disorder)</entry><entry></entry><entry></entry></row>
+<row><entry>235856003</entry><entry>Disorder of liver (disorder)</entry><entry></entry><entry></entry></row>
+<row><entry>42399005</entry><entry>Renal failure syndrome (disorder)</entry><entry></entry><entry></entry></row>
+<row><entry>46177005</entry><entry>End-stage renal disease disorder</entry><entry></entry><entry></entry></row>
+<row><entry>248985009</entry><entry>Presentation of pregnancy (finding)</entry><entry></entry><entry></entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Silicosis PHCR Clinical Information Section - conformance rules</title>
+<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.15.2.34</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Section</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.15.2.34"/>
+</prolog>
+<body>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.phcr.doc/classes/PhcrClinicalInformationSection.html">PHCR Phcr Clinical Information Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.15.2.1</tt>)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../SilicosisCaseObservation.dita">Silicosis Case Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.15.3.111</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../SilicosisHistoryOfTuberculosisObservation.dita">Silicosis History Of Tuberculosis Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.15.3.107</tt>)</li></ol></li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.phcr.doc/classes/PhcrClinicalInformationSection.html">PHCR Phcr Clinical Information Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.15.2.1</tt>)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="55752-0" </tt><i>Clinical Information</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:540)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> = "Clinical Information" (CONF:541)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>text</b></tt> (CONF:542)
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entry</b></tt> (CONF:1912, CONF:1913, CONF:1914)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PatientConditionAliveObservation.dita">Patient Condition Alive Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.15.3.42</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entry</b></tt> (CONF:1915, CONF:1916, CONF:1917)
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PatientConditionDeceasedObservation.dita">Patient Condition Deceased Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.15.3.17</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../SilicosisCaseObservation.dita">Silicosis Case Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.15.3.111</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entry</b></tt>
+<ol>
+<li>Contains exactly one [1..1] <xref href="../SilicosisHistoryOfTuberculosisObservation.dita">Silicosis History Of Tuberculosis Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.15.3.107</tt>)</li></ol></li>
+<li>TemplateId 2.16.840.1.113883.10.20.15.3.42 (Patient condition alive) and templateId 2.16.840.1.113883.10.20.15.3.17 (Patient condition deceased) <b>SHALL NOT</b> be present together in a CDA PHCR instance. (CONF:1918)</li>
+</ol>
+<codeblock id="example"><![CDATA[]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Silicosis PHCR Clinical Information Section</ph></p>
+<p id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.15.2.34</tt>]</p>
+</body>
+</topic>

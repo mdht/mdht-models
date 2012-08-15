@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Salmonellosis Case Report - conformance rules</title>
+<shortdesc id="shortdesc">[ClinicalDocument: templateId <tt>2.16.840.1.113883.10.20.15.1.9</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>ClinicalDocument</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.15.1.9"/>
+</prolog>
+<body>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.phcr.doc/classes/PublicHealthCaseReport.html">PHCR Public Health Case Report</xref> template (templateId: <tt>2.16.840.1.113883.10.20.15</tt>)</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt>, such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../SalmonellosisPHCRSocialHistorySection.dita">Salmonellosis PHCR Social History Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.15.2.36</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt>, such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../SalmonellosisPHCRRelevantDxTestsSection.dita">Salmonellosis PHCR Relevant Dx Tests Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.15.2.38</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt>, such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../SalmonellosisPHCRClinicalInformationSection.dita">Salmonellosis PHCR Clinical Information Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.15.2.37</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> = "Public Health Case Report -  Salmonellosis"
+</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.phcr.doc/classes/PublicHealthCaseReport.html">PHCR Public Health Case Report</xref> template (templateId: <tt>2.16.840.1.113883.10.20.15</tt>)</li>
+<li>Contains exactly one [1..1] <tt><b>typeId</b></tt>, where its data type is InfrastructureRootTypeId
+</li>
+<li>Contains exactly one [1..1] <tt><b>id</b></tt>, where its data type is II
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="55751-2" </tt><i>Public Health Case Report</i> (CodeSystem:<tt> 2.16.840.1.113883.6.1 LOINC</tt>) (CONF:546)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>title</b></tt> = "Public Health Case Report -  Salmonellosis"
+</li>
+<li>Contains exactly one [1..1] <tt><b>effectiveTime</b></tt>, where its data type is TS
+</li>
+<li>Contains exactly one [1..1] <tt><b>confidentialityCode</b></tt>, where its data type is CE
+</li>
+<li>Contains at least one [1..*] <tt><b>recordTarget</b></tt>, where its type is <xref href="../RecordTarget.dita">Record Target</xref>
+</li>
+<li>Contains at least one [1..*] <tt><b>author</b></tt>, where its type is <xref href="../Author.dita">Author</xref>
+</li>
+<li>Contains exactly one [1..1] <tt><b>custodian</b></tt>, where its type is <xref href="../Custodian.dita">Custodian</xref>
+</li>
+<li>Contains exactly one [1..1] <tt><b>component</b></tt>, where its type is <xref href="../Component2.dita">Component2</xref>
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF:742, CONF:674), such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PhcrTreatmentInformationSection.dita">Phcr Treatment Information Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.15.2.4</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt> (CONF:643, CONF:609), such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../PhcrEncountersSection.dita">Phcr Encounters Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.15.2.2</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>component</b></tt>, such that
+<ol>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/ImmunizationsSection.html">CCD Immunizations Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.6</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt>, such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../SalmonellosisPHCRSocialHistorySection.dita">Salmonellosis PHCR Social History Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.15.2.36</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>component</b></tt>, such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../SalmonellosisPHCRRelevantDxTestsSection.dita">Salmonellosis PHCR Relevant Dx Tests Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.15.2.38</tt>)</li></ol></li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt>, such that
+<ol>
+<li>Contains exactly one [1..1] <xref href="../SalmonellosisPHCRClinicalInformationSection.dita">Salmonellosis PHCR Clinical Information Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.15.2.37</tt>)</li></ol></li>
+<li><b>SHALL</b> contain [1..1] recordTarget (CONF:547)<ul><li><codeblock>[OCL]: self.recordTarget-&gt;one(recordTarget : cda::RecordTarget | not recordTarget.oclIsUndefined())</codeblock></li></ul></li>
+<li>RecordTarget <b>SHALL</b> contain [1..1] patientRole (CONF:548)<ul><li><codeblock>[OCL]: self.recordTarget.patientRole-&gt;one(patientRole : cda::PatientRole | not patientRole.oclIsUndefined())</codeblock></li></ul></li>
+<li>RecordTarget / PatientRole <b>SHALL</b> contain [1..*] id (CONF:549)<ul><li><codeblock>[OCL]: self.recordTarget.patientRole.id-&gt;exists(id : datatypes::II | not id.root.oclIsUndefined() or not id.extension.oclIsUndefined() or not id.nullFlavor.oclIsUndefined())</codeblock></li></ul></li>
+<li>RecordTarget / PatientRole <b>SHOULD</b> contain [0..*] addr (CONF:550)</li>
+<li>RecordTarget / PatientRole <b>SHOULD</b> contain [0..*] telecom (CONF:551)</li>
+<li>RecordTarget / PatientRole <b>SHOULD</b> contain [0..1] patient (CONF:552)</li>
+<li>RecordTarget / PatientRole / Patient <b>SHOULD</b> contain [0..*] name (CONF:553)</li>
+<li>RecordTarget / PatientRole / Patient <b>SHOULD</b> contain [0..1] administrativeGenderCode/@code, which <b>SHALL</b> be selected from ValueSet 2.16.840.1.113883.1.11.1 Administrative Gender (HL7 V3) DYNAMIC (CONF:554)</li>
+<li>RecordTarget / PatientRole / Patient <b>SHOULD</b> contain [0..1] birthTime (CONF:555)</li>
+<li>RecordTarget / PatientRole / Patient <b>SHOULD</b> contain [0..1] ethnicGroupCode, which <b>SHALL</b> be selected from ValueSet 2.16.840.1.114222.4.11.837 Ethnicity group DYNAMIC (CONF:556)</li>
+<li>RecordTarget / PatientRole / Patient <b>SHOULD</b> contain [0..1] birthplace/place, which <b>SHALL</b> be selected from ValueSet 2.16.840.1.114222.4.11.3200 Birth Country DYNAMIC (CONF:557)</li>
+<li><b>SHALL</b> contain [1..*] author (CONF:1853)<ul><li><codeblock>[OCL]: self.author-&gt;exists(author : cda::Author | not author.oclIsUndefined())</codeblock></li></ul></li>
+<li>Author <b>SHALL</b> contain [1..1] time (CONF:560)<ul><li><codeblock>[OCL]: self.author.time-&gt;one(time : datatypes::TS | not time.value.oclIsUndefined() or not time.nullFlavor.oclIsUndefined())</codeblock></li></ul></li>
+<li>Author <b>SHALL</b> contain [1..1] assignedAuthor (CONF:561)<ul><li><codeblock>[OCL]: self.author.assignedAuthor-&gt;one(assignedAuthor : cda::AssignedAuthor | not assignedAuthor.oclIsUndefined())</codeblock></li></ul></li>
+<li>Author / AssignedAuthor <b>SHALL</b> contain [1..*] id (CONF:562)<ul><li><codeblock>[OCL]: self.author.assignedAuthor.id-&gt;exists(id : datatypes::II | not id.root.oclIsUndefined() or not id.extension.oclIsUndefined() or not id.nullFlavor.oclIsUndefined())</codeblock></li></ul></li>
+<li>Author / AssignedAuthor <b>SHALL</b> contain [1..1] addr (CONF:562)<ul><li><codeblock>[OCL]: self.author.assignedAuthor.addr-&gt;one(addr : datatypes::AD | not addr.oclIsUndefined())</codeblock></li></ul></li>
+<li>Author / AssignedAuthor <b>SHALL</b> contain [1..1] telecom (CONF:564)<ul><li><codeblock>[OCL]: self.author.assignedAuthor.telecom-&gt;one(tel : datatypes::TEL | not tel.oclIsUndefined())</codeblock></li></ul></li>
+<li>Author / AssignedAuthor <b>SHALL</b> contain [1..1] assignedPerson/name (CONF:565)<ul><li><codeblock>[OCL]: self.author.assignedAuthor.assignedPerson-&gt;one(assignedPerson : cda::Person | not assignedPerson.oclIsUndefined()) and self.author.assignedAuthor.assignedPerson.name-&gt;one(name : datatypes::PN | not name.oclIsUndefined())</codeblock></li></ul></li>
+<li>The custodian of a public health case report <b>SHALL</b> be the reporting organization. (CONF:1616)</li>
+<li><b>SHALL</b> contain [1..1] legalAuthenticator (CONF:1854)<ul><li><codeblock>[OCL]: self.legalAuthenticator-&gt;one(legalAuthenticator : cda::LegalAuthenticator | not legalAuthenticator.oclIsUndefined())</codeblock></li></ul></li>
+<li>LegalAuthenticator <b>SHALL</b> contain [1..1] time (CONF:1855)<ul><li><codeblock>[OCL]: self.legalAuthenticator.time-&gt;one(time : datatypes::TS | not time.value.oclIsUndefined() or not time.nullFlavor.oclIsUndefined())</codeblock></li></ul></li>
+<li>LegalAuthenticator <b>SHALL</b> contain [1..1] assignedEntity (CONF:1856)<ul><li><codeblock>[OCL]: self.legalAuthenticator.assignedEntity-&gt;one(assignedEntity : cda::AssignedEntity | not assignedEntity.oclIsUndefined())</codeblock></li></ul></li>
+<li>LegalAuthenticator / AssignedEntity <b>SHALL</b> contain [1..*] id (CONF:1857)<ul><li><codeblock>[OCL]: self.legalAuthenticator.assignedEntity.id-&gt;exists(id : datatypes::II | not id.root.oclIsUndefined() or not id.extension.oclIsUndefined() or not id.nullFlavor.oclIsUndefined())</codeblock></li></ul></li>
+<li>LegalAuthenticator / AssignedEntity <b>SHALL</b> contain [1..1] addr (CONF:1857)<ul><li><codeblock>[OCL]: self.legalAuthenticator.assignedEntity.addr-&gt;one(addr : datatypes::AD | not addr.oclIsUndefined())</codeblock></li></ul></li>
+<li>LegalAuthenticator / AssignedEntity <b>SHALL</b> contain [1..1] telecom (CONF:1859)</li>
+<li>LegalAuthenticator / AssignedEntity <b>SHALL</b> contain [1..1] assignedPerson/name (CONF:1860)<ul><li><codeblock>[OCL]: self.legalAuthenticator.assignedEntity.assignedPerson-&gt;one(assignedPerson : cda::Person | not assignedPerson.oclIsUndefined()) and self.legalAuthenticator.assignedEntity.assignedPerson.name-&gt;one(name : datatypes::PN | not name.oclIsUndefined())</codeblock></li></ul></li>
+<li>Where a Public Health Case Report CDA R2 document contains any of the section or clinical statement templates defined in this implementation guide, such section or clinical statement <b>SHALL</b> include a templateId/@root valued with the corresponding template's identifier. (CONF:2017)</li>
+</ol>
+
+<codeblock id="example"><![CDATA[]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Salmonellosis Case Report</ph></p>
+<p id="shortdesc">[ClinicalDocument: templateId <tt>2.16.840.1.113883.10.20.15.1.9</tt>]</p>
+</body>
+</topic>

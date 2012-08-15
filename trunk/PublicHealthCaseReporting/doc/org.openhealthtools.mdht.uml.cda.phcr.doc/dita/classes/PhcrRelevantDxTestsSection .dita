@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>PhcrRelevantDxTestsSection </title>
+<shortdesc conref="generated/_PhcrRelevantDxTestsSection .dita#classId/shortdesc"></shortdesc>
+<prolog conref="generated/_PhcrRelevantDxTestsSection .dita#classId/prolog"></prolog>
+<body>
+<p>The PHCR relevant diagnostic tests and/or laboratory data section defines the code and
+title for all PHCR relevant diagnostic tests and/or laboratory data sections. This generic
+section also describes clinical statement templates that might be included in a generic
+PHCR report.</p>
+<section conref="generated/_PhcrRelevantDxTestsSection .dita#classId/description">
+</section>
+<!-- TODO: insert UML class diagram here -->
+
+<ol audience="standards" conref="generated/_PhcrRelevantDxTestsSection .dita#classId/conformance">
+<li></li>
+</ol>
+<ol audience="developer" conref="generated/_PhcrRelevantDxTestsSection .dita#classId/aggregate">
+<li></li>
+</ol>
+<p> </p>
+<section conref="generated/_PhcrRelevantDxTestsSection .dita#classId/tableconformance">
+</section>
+<p> </p>
+<p> </p>
+<p><b>PhcrRelevantDxTestsSection  example</b></p>
+<!-- TODO: insert custom instance example here -->
+<!-- generated instance example follows -->
+<codeblock conref="generated/_PhcrRelevantDxTestsSection .dita#classId/example">
+</codeblock>
+</body>
+</topic>

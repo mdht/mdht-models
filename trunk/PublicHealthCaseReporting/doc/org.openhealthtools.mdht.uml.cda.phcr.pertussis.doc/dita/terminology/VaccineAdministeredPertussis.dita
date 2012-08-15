@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Vaccine Administered (Pertussis)</title>
+<prolog id="prolog">
+<resourceid id="2.16.840.1.114222.4.11.6015"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table><tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>Vaccine Administered (Pertussis) - 2.16.840.1.114222.4.11.6015</entry></row>
+<row><entry>Code System</entry><entry>Vaccines administered (CVX) - 2.16.840.1.113883.6.59</entry></row>
+<row><entry>Source</entry><entry>PHIN VADS</entry></row>
+<row><entry>Source URL</entry><entry>https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.6015</entry></row>
+</tbody></tgroup></table>
+<table><tgroup cols="4">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="2*"/>
+<colspec colname="col3" colwidth="1*"/>
+<colspec colname="col4" colwidth="3*"/>
+<thead><row>
+<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
+</row></thead><tbody>
+<row><entry>01</entry><entry>DTP</entry><entry>Vaccines administered (CVX)</entry><entry></entry></row>
+<row><entry>11</entry><entry>Pertussis</entry><entry>Vaccines administered (CVX)</entry><entry></entry></row>
+<row><entry>20</entry><entry>DTaP</entry><entry>Vaccines administered (CVX)</entry><entry></entry></row>
+<row><entry>22</entry><entry>DTP-Hib</entry><entry>Vaccines administered (CVX)</entry><entry></entry></row>
+<row><entry>50</entry><entry>DTaP-Hib</entry><entry>Vaccines administered (CVX)</entry><entry></entry></row>
+<row><entry>102</entry><entry>DTP-Hib-Hep B</entry><entry>Vaccines administered (CVX)</entry><entry></entry></row>
+<row><entry>106</entry><entry>DTaP, 5 pertussis antigens</entry><entry>Vaccines administered (CVX)</entry><entry></entry></row>
+<row><entry>107</entry><entry>DTaP, unspecified formulation</entry><entry>Vaccines administered (CVX)</entry><entry></entry></row>
+<row><entry>110</entry><entry>DTaP-IPV-HepB</entry><entry>Vaccines administered (CVX)</entry><entry></entry></row>
+<row><entry>115</entry><entry>Tdap</entry><entry>Vaccines administered (CVX)</entry><entry></entry></row>
+<row><entry>120</entry><entry>DTaP-IPV-Hib</entry><entry>Vaccines administered (CVX)</entry><entry></entry></row>
+<row><entry>130</entry><entry>DTaP-IPV</entry><entry>Vaccines administered (CVX)</entry><entry></entry></row>
+<row><entry>146</entry><entry>DTaP,IPV,Hib,HepB</entry><entry>Vaccines administered (CVX)</entry><entry></entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>

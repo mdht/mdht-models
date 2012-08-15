@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Tuberculosis Possible Exposure Location Act - conformance rules</title>
+<shortdesc id="shortdesc">[Act: templateId <tt>2.16.840.1.113883.10.20.15.3.12</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Act</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.15.3.12"/>
+</prolog>
+<body>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ACT" </tt><i>Act</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:746)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:747)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="413350009" </tt><i>Finding with explicit context</i> (CodeSystem:<tt> 2.16.840.1.113883.6.96 SNOMEDCT</tt>) (CONF:753)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF:750)
+</li>
+<li><b>SHALL</b> contain qualifier (CONF:754, CONF:755, CONF:756)</li>
+<li><b>SHALL</b> contain qualifier (CONF:757, CONF:765, CONF:766)</li>
+<li><b>SHALL</b> contain participant (CONF:758, CONF:767, CONF:860, CONF:759, CONF:768, CONF:761, CONF:762, CONF:763, CONF:769, CONF:764)</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ACT" </tt><i>Act</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:746)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:747)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="413350009" </tt><i>Finding with explicit context</i> (CodeSystem:<tt> 2.16.840.1.113883.6.96 SNOMEDCT</tt>) (CONF:753)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF:750)
+</li>
+<li><b>SHALL</b> contain qualifier (CONF:754, CONF:755, CONF:756)</li>
+<li><b>SHALL</b> contain qualifier (CONF:757, CONF:765, CONF:766)</li>
+<li><b>SHALL</b> contain participant (CONF:758, CONF:767, CONF:860, CONF:759, CONF:768, CONF:761, CONF:762, CONF:763, CONF:769, CONF:764)</li>
+</ol>
+
+<codeblock id="example"><![CDATA[]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Tuberculosis Possible Exposure Location Act</ph></p>
+<p id="shortdesc">[Act: templateId <tt>2.16.840.1.113883.10.20.15.3.12</tt>]</p>
+</body>
+</topic>

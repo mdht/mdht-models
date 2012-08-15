@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>PHV S_ Specimen_ Flu</title>
+<prolog id="prolog">
+<resourceid id="2.16.840.1.114222.4.11.3246"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table><tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>PHVS_Specimen_Flu - 2.16.840.1.114222.4.11.3246</entry></row>
+<row><entry>Code System</entry><entry>SNOMEDCT - 2.16.840.1.113883.6.96</entry></row>
+<row><entry>Source</entry><entry>PHIN-VADS</entry></row>
+<row><entry>Source URL</entry><entry>https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.3246</entry></row>
+<row><entry>Definition</entry><entry>List of specimen sources related to Flu.</entry></row>
+</tbody></tgroup></table>
+<table><tgroup cols="4">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="2*"/>
+<colspec colname="col3" colwidth="1*"/>
+<colspec colname="col4" colwidth="3*"/>
+<thead><row>
+<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
+</row></thead><tbody>
+<row><entry>258607008</entry><entry>Bronchoalveolar lavage fluid sample (specimen)</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>258450006</entry><entry>Cerebrospinal fluid sample (specimen)</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>PHC837</entry><entry>Chest Fluid (specimen)</entry><entry>PHIN VS (CDC Local Coding System)</entry><entry></entry></row>
+<row><entry>119307008</entry><entry>Endotracheal aspirate</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>168141000</entry><entry>Nasal fluid sample (specimen)</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>258411007</entry><entry>Nasopharyngeal aspirate (specimen)</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>258500001</entry><entry>Nasopharyngeal swab (specimen)</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>OTH</entry><entry>Other</entry><entry>NullFlavor</entry><entry></entry></row>
+<row><entry>122571007</entry><entry>Pericardial fluid specimen (specimen)</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>168139001</entry><entry>Peritoneal fluid sample (specimen)</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>418564007</entry><entry>Pleural fluid specimen (specimen)</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>119364003</entry><entry>Serum specimen</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>119334006</entry><entry>Sputum specimen (specimen)</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>119339001</entry><entry>Stool specimen (specimen)</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>258529004</entry><entry>Throat swab (specimen)</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>119376003</entry><entry>Tissue specimen (specimen)</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>122575003</entry><entry>Urine specimen (specimen)</entry><entry>SNOMEDCT</entry><entry></entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Coccidioides Signs And Symptoms Observation - conformance rules</title>
+<shortdesc id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.15.3.88</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Observation</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.15.3.88"/>
+</prolog>
+<body>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.phcr.doc/classes/SignsAndSymptomsObservation.html">PHCR Signs And Symptoms Observation</xref> template (templateId: <tt>2.16.840.1.113883.10.20.15.3.53</tt>)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> 2.16.840.1.114222.4.11.6025 <xref href="../../terminology/Signs and Symptoms (Coccidioidomycosis).dita">Signs and Symptoms (Coccidioidomycosis)</xref></tt><b> DYNAMIC</b>, where its data type is CD
+</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.phcr.doc/classes/SignsAndSymptomsObservation.html">PHCR Signs And Symptoms Observation</xref> template (templateId: <tt>2.16.840.1.113883.10.20.15.3.53</tt>)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:1861)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:1862)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@negationInd</b></tt> (CONF:1863)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="ASSERTION" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.4 HL7ActCode</tt>) (CONF:1864)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF:1865)
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:1866)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> 2.16.840.1.114222.4.11.6025 <xref href="../../terminology/Signs and Symptoms (Coccidioidomycosis).dita">Signs and Symptoms (Coccidioidomycosis)</xref></tt><b> DYNAMIC</b>, where its data type is CD
+</li>
+<li>PHCR Case Observation <b>SHOULD</b> contain zero or more [0..*] entryRelationship (CONF:1887, CONF:1888, CONF:1890), such that Contains @typeCode="MFST" MFST (is manifestation of), such that Contains @inversionInd="true", and Contains exactly one [1..1] Signs And Symptoms Observation (templateId: 2.16.840.1.113883.10.20.15.3.53) (CONF:1889)</li>
+</ol>
+
+<codeblock id="example"><![CDATA[]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Coccidioides Signs And Symptoms Observation</ph></p>
+<p id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.15.3.88</tt>]</p>
+</body>
+</topic>

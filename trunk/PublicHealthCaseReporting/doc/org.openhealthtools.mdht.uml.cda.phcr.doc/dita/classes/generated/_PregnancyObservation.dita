@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Pregnancy Observation - conformance rules</title>
+<shortdesc id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.15.3.8</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Observation</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.15.3.8"/>
+</prolog>
+<body>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:451)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:452)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="ASSERTION" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.4 HL7ActCode</tt>) (CONF:454)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF:455)
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:2018)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt><tt><b>/@code</b>="77386006" </tt><i>Pregnant</i> (CodeSystem:<tt> 2.16.840.1.113883.6.96 SNOMEDCT</tt>), where its data type is CD (CONF:457)
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:458, CONF:459, CONF:460), such that
+<ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR (refers to)</i></li>
+<li>Contains exactly one [1..1] <xref href="../EstimatedDateOfDeliveryObservation.dita">Estimated Date Of Delivery Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.15.3.1</tt>)</li></ol></li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:451)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:452)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="ASSERTION" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.4 HL7ActCode</tt>) (CONF:454)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF:455)
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:2018)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt><tt><b>/@code</b>="77386006" </tt><i>Pregnant</i> (CodeSystem:<tt> 2.16.840.1.113883.6.96 SNOMEDCT</tt>), where its data type is CD (CONF:457)
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:458, CONF:459, CONF:460), such that
+<ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR (refers to)</i></li>
+<li>Contains exactly one [1..1] <xref href="../EstimatedDateOfDeliveryObservation.dita">Estimated Date Of Delivery Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.15.3.1</tt>)</li></ol></li>
+</ol>
+
+<codeblock id="example"><![CDATA[]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Pregnancy Observation</ph></p>
+<p id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.15.3.8</tt>]</p>
+</body>
+</topic>

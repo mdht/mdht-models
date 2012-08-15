@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Signs and Symptoms (Pertussis)</title>
+<prolog id="prolog">
+<resourceid id="2.16.840.1.114222.4.11.6016"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table><tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>Signs and Symptoms (Pertussis) - 2.16.840.1.114222.4.11.6016</entry></row>
+<row><entry>Code System</entry><entry>SNOMEDCT - 2.16.840.1.113883.6.96</entry></row>
+<row><entry>Source</entry><entry>PHIN VADS</entry></row>
+<row><entry>Source URL</entry><entry>https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.6016</entry></row>
+</tbody></tgroup></table>
+<table><tgroup cols="4">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="2*"/>
+<colspec colname="col3" colwidth="1*"/>
+<colspec colname="col4" colwidth="3*"/>
+<thead><row>
+<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
+</row></thead><tbody>
+<row><entry>49727002</entry><entry>Cough</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>284523002</entry><entry>Persistent cough</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>60537006</entry><entry>Whooping respiration</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>43025008</entry><entry>Paroxysms of coughing</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>422400008</entry><entry>Vomiting</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>424580008</entry><entry>Post-tussive vomiting</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>1023001</entry><entry>Apnea</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>3415004</entry><entry>Cyanosis</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>233604007</entry><entry>Pneumonia</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>70995007</entry><entry>Pulmonary Hypertension</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>91175000</entry><entry>Seizures</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>44186003</entry><entry>Dyssomnia</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>405737000</entry><entry>Pharyngitis</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>304213008</entry><entry>Low grade pyrexia</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>76067001</entry><entry>Sneezing</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>60119000</entry><entry>Exhaustion</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>267102003</entry><entry>Sore throat</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>81308009</entry><entry>Acute Encephalopathy</entry><entry>SNOMEDCT</entry><entry></entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>

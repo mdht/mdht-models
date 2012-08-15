@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map title="Value Sets">
+<topicref href="Animal.dita" type="topic" />
+<topicref href="Disease Type (Tularemia).dita" type="topic" />
+<topicref href="Lab Test Result Name (Tularemia).dita" type="topic" />
+<topicref href="Material Exposure Type.dita" type="topic" />
+<topicref href="Medication Treatment (Tularemia).dita" type="topic" />
+<topicref href="Signs and Symptoms (Tularemia).dita" type="topic" />
+</map>
