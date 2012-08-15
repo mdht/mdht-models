@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
-<map title="Section Templates">
-<topicref href="influenzaImmunizationSection.dita" type="topic" />
-<topicref href="influenzaPHCRClinicalInformationSection.dita" type="topic" />
-<topicref href="influenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection.dita" type="topic" />
-<topicref href="influenzaPHCRSocialHistorySection.dita" type="topic" />
-<topicref href="influenzaPHCRTreatmentInformationSection.dita" type="topic" />
-</map>
