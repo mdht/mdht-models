@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML">
+  <uml:Package xmi:id="_THOGsGMYEeGnDN0cn7G69Q" name="chlamydiatrachomatis">
+    <packageImport xmi:id="_TKLUEGMYEeGnDN0cn7G69Q">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_6MwukMgnEeCI5ZpfyBisiQ"/>
+    </packageImport>
+    <packageImport xmi:id="_TKLUEWMYEeGnDN0cn7G69Q">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.cda.ccd.model/model/ccd.uml#_qQyD8jxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_TKLUEmMYEeGnDN0cn7G69Q">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ii81kjxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_TKLUE2MYEeGnDN0cn7G69Q">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_XgMSwzxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_TKLUFGMYEeGnDN0cn7G69Q">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVbeUDcEd6xYZuu1VKCVw"/>
+    </packageImport>
+    <packageImport xmi:id="_TKLUFWMYEeGnDN0cn7G69Q">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_KnCD4CFjEd-3s7f6mWX-3A"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_TJmsUWMYEeGnDN0cn7G69Q" name="ChlamydiatrachomatisPublicHealthCaseReport">
+      <generalization xmi:id="_TJmsU2MYEeGnDN0cn7G69Q">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_6PmAIcgnEeCI5ZpfyBisiQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_g3MIMIAYEeGJRbKnXRYheg" name="title" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_i0HH4IAYEeGJRbKnXRYheg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_i0HH4YAYEeGJRbKnXRYheg" value="1"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_Bn1soEAJEd6wZe6nFLrjsw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_kihEUMFcEeGQ1oYRXtYJxg" name="chlamydiatrachomatisPHCRClinicalInformationSection" type="_GQkbUG4DEeGR6InYYxBT1g" association="_kihEUsFcEeGQ1oYRXtYJxg">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lX3X8MFcEeGQ1oYRXtYJxg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lX3X8cFcEeGQ1oYRXtYJxg" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_nx8NsMFcEeGQ1oYRXtYJxg" name="chlamydiatrachomatisPHCRRelevantDxTestsSection" type="_zCSMEG4DEeGR6InYYxBT1g" association="_nyF-scFcEeGQ1oYRXtYJxg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nyF-sMFcEeGQ1oYRXtYJxg"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_qeDOoMFcEeGQ1oYRXtYJxg" name="chlamydiatrachomatisPHCRTreatmentInformationSection" type="_DLSvoG4HEeGR6InYYxBT1g" association="_qeDOosFcEeGQ1oYRXtYJxg">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qeDOocFcEeGQ1oYRXtYJxg"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_GQkbUG4DEeGR6InYYxBT1g" name="ChlamydiatrachomatisPHCRClinicalInformationSection">
+      <generalization xmi:id="_GRVQUG4DEeGR6InYYxBT1g">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_84uJEMqZEeCRBIG_Gkv9FQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_RIC0MMFSEeGQ1oYRXtYJxg" name="chlamydiatrachomatisCaseObservation" type="_zNTFgHdUEeG2xNcT95jmyg" association="_RIC0MsFSEeGQ1oYRXtYJxg">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Siy68MFSEeGQ1oYRXtYJxg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Siy68cFSEeGQ1oYRXtYJxg" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_zCSMEG4DEeGR6InYYxBT1g" name="ChlamydiatrachomatisPHCRRelevantDxTestsSection">
+      <generalization xmi:id="_zCSMEW4DEeGR6InYYxBT1g">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_2dxgkNM5EeCbJdgmSYxI0g"/>
+      </generalization>
+      <ownedAttribute xmi:id="_OXjqQIC_EeGJRbKnXRYheg" name="chlamydiatrachomatisResultObservation" type="_pleNUIAgEeGJRbKnXRYheg" association="_OXjqQoC_EeGJRbKnXRYheg">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jPWX0MFSEeGQ1oYRXtYJxg" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jPWX0cFSEeGQ1oYRXtYJxg"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_VYqwEIKBEeGJRbKnXRYheg" name="chlamydiatrachomatisResultOrganizer" type="_u6lQoIJsEeGJRbKnXRYheg" association="_VYqwEoKBEeGJRbKnXRYheg">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_thPC8MCEEeGGU7JFW58CtA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_thPC8cCEEeGGU7JFW58CtA"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_DLSvoG4HEeGR6InYYxBT1g" name="ChlamydiatrachomatisPHCRTreatmentInformationSection">
+      <ownedRule xmi:id="_jj0CUIAfEeGJRbKnXRYheg" constrainedElement="_DLSvoG4HEeGR6InYYxBT1g">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_4RIl8IAfEeGJRbKnXRYheg">
+          <language>Analysis</language>
+          <body>This should be constrained to the Medication given, which is medication treatment.</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_DLSvoW4HEeGR6InYYxBT1g">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_XTjpIMqaEeCRBIG_Gkv9FQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_vTakYIAcEeGJRbKnXRYheg" name="chlamydiatrachomatisTherapeuticRegimenAct" type="_mqiDAIAcEeGJRbKnXRYheg" association="_vTakYoAcEeGJRbKnXRYheg">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3_De0IAcEeGJRbKnXRYheg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3_De0YAcEeGJRbKnXRYheg" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_zNTFgHdUEeG2xNcT95jmyg" name="ChlamydiatrachomatisCaseObservation">
+      <generalization xmi:id="_zNTFgXdUEeG2xNcT95jmyg">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_p8bDQNTCEeC18pmrrt-Mbg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_gLwvQMCHEeGGU7JFW58CtA" name="value" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gLwvQcCHEeGGU7JFW58CtA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gLwvQsCHEeGGU7JFW58CtA" value="1"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_0_CcKdTCEeC18pmrrt-Mbg"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_mqiDAIAcEeGJRbKnXRYheg" name="ChlamydiatrachomatisTherapeuticRegimenAct">
+      <generalization xmi:id="_mqiDAYAcEeGJRbKnXRYheg">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_2p558NSrEeC18pmrrt-Mbg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_RvYCQIAdEeGJRbKnXRYheg" name="chlamydiatrachomatisTreatmentGivenSubstanceAdministration" type="_L9xQAIAdEeGJRbKnXRYheg" association="_RvYCQoAdEeGJRbKnXRYheg">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YbVj8IAdEeGJRbKnXRYheg" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YbVj8YAdEeGJRbKnXRYheg"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_uVJv4IAdEeGJRbKnXRYheg" name="chlamydiatrachomatisTreatmentNotGivenSubstanceAdministration" type="_rHVwEIAdEeGJRbKnXRYheg" association="_uVJv4oAdEeGJRbKnXRYheg">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xUcykIAdEeGJRbKnXRYheg" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xUcykYAdEeGJRbKnXRYheg"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_vTakYoAcEeGJRbKnXRYheg" memberEnd="_vTakYIAcEeGJRbKnXRYheg _vTakY4AcEeGJRbKnXRYheg">
+      <ownedEnd xmi:id="_vTakY4AcEeGJRbKnXRYheg" type="_DLSvoG4HEeGR6InYYxBT1g" association="_vTakYoAcEeGJRbKnXRYheg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_L9xQAIAdEeGJRbKnXRYheg" name="ChlamydiatrachomatisTreatmentGivenSubstanceAdministration">
+      <ownedRule xmi:id="_Fup-UMCHEeGGU7JFW58CtA" name="TreatmentGivenValueSet" constrainedElement="_L9xQAIAdEeGJRbKnXRYheg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_Pm5OwMCHEeGGU7JFW58CtA">
+          <language>Analysis</language>
+          <body>Shall use value set: Medication Treatment (Chlamydia trachomatis)</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_L9xQAYAdEeGJRbKnXRYheg">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_XOKZ4NStEeC18pmrrt-Mbg"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_RvYCQoAdEeGJRbKnXRYheg" memberEnd="_RvYCQIAdEeGJRbKnXRYheg _RvYCQ4AdEeGJRbKnXRYheg">
+      <ownedEnd xmi:id="_RvYCQ4AdEeGJRbKnXRYheg" type="_mqiDAIAcEeGJRbKnXRYheg" association="_RvYCQoAdEeGJRbKnXRYheg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_rHVwEIAdEeGJRbKnXRYheg" name="ChlamydiatrachomatisTreatmentNotGivenSubstanceAdministration">
+      <ownedRule xmi:id="_pVJiUMFbEeGQ1oYRXtYJxg" name="TreatmentNotGivenValueSet" constrainedElement="_rHVwEIAdEeGJRbKnXRYheg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_tnoEIMFbEeGQ1oYRXtYJxg">
+          <language>Analysis</language>
+          <body>Shall use value set: Medication Treatment (Chlamydia trachomatis)</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_rHVwEYAdEeGJRbKnXRYheg">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_NbgssNSwEeC18pmrrt-Mbg"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_uVJv4oAdEeGJRbKnXRYheg" memberEnd="_uVJv4IAdEeGJRbKnXRYheg _uVJv44AdEeGJRbKnXRYheg">
+      <ownedEnd xmi:id="_uVJv44AdEeGJRbKnXRYheg" type="_mqiDAIAcEeGJRbKnXRYheg" association="_uVJv4oAdEeGJRbKnXRYheg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_pleNUIAgEeGJRbKnXRYheg" name="ChlamydiatrachomatisResultObservation">
+      <generalization xmi:id="_pleNUYAgEeGJRbKnXRYheg">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#__3pL0PNrEeCOm7Y48UO5Tg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_7f8ZgMCEEeGGU7JFW58CtA" name="code" visibility="private">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-results.uml#_H1HqAK6xEd6_ioDelDcPPg"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_OXjqQoC_EeGJRbKnXRYheg" memberEnd="_OXjqQIC_EeGJRbKnXRYheg _OXjqQ4C_EeGJRbKnXRYheg">
+      <ownedEnd xmi:id="_OXjqQ4C_EeGJRbKnXRYheg" type="_zCSMEG4DEeGR6InYYxBT1g" association="_OXjqQoC_EeGJRbKnXRYheg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_u6lQoIJsEeGJRbKnXRYheg" name="chlamydiatrachomatisResultOrganizer">
+      <generalization xmi:id="_u6lQoYJsEeGJRbKnXRYheg">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_0r8IYPNrEeCOm7Y48UO5Tg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_4tSg0IJsEeGJRbKnXRYheg" name="code">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_VYqwEoKBEeGJRbKnXRYheg" memberEnd="_VYqwEIKBEeGJRbKnXRYheg _VYqwE4KBEeGJRbKnXRYheg">
+      <ownedEnd xmi:id="_VYqwE4KBEeGJRbKnXRYheg" type="_zCSMEG4DEeGR6InYYxBT1g" association="_VYqwEoKBEeGJRbKnXRYheg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_RIC0MsFSEeGQ1oYRXtYJxg" memberEnd="_RIC0MMFSEeGQ1oYRXtYJxg _RIC0M8FSEeGQ1oYRXtYJxg">
+      <ownedEnd xmi:id="_RIC0M8FSEeGQ1oYRXtYJxg" type="_GQkbUG4DEeGR6InYYxBT1g" association="_RIC0MsFSEeGQ1oYRXtYJxg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_kihEUsFcEeGQ1oYRXtYJxg" memberEnd="_kihEUMFcEeGQ1oYRXtYJxg _kihEU8FcEeGQ1oYRXtYJxg">
+      <ownedEnd xmi:id="_kihEU8FcEeGQ1oYRXtYJxg" type="_TJmsUWMYEeGnDN0cn7G69Q" association="_kihEUsFcEeGQ1oYRXtYJxg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_nyF-scFcEeGQ1oYRXtYJxg" memberEnd="_nx8NsMFcEeGQ1oYRXtYJxg _nyF-ssFcEeGQ1oYRXtYJxg">
+      <ownedEnd xmi:id="_nyF-ssFcEeGQ1oYRXtYJxg" type="_TJmsUWMYEeGnDN0cn7G69Q" association="_nyF-scFcEeGQ1oYRXtYJxg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_qeDOosFcEeGQ1oYRXtYJxg" memberEnd="_qeDOoMFcEeGQ1oYRXtYJxg _qeDOo8FcEeGQ1oYRXtYJxg">
+      <ownedEnd xmi:id="_qeDOo8FcEeGQ1oYRXtYJxg" type="_TJmsUWMYEeGnDN0cn7G69Q" association="_qeDOosFcEeGQ1oYRXtYJxg"/>
+    </packagedElement>
+    <profileApplication xmi:id="_THOGuWMYEeGnDN0cn7G69Q">
+      <eAnnotations xmi:id="_THOGumMYEeGnDN0cn7G69Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_THOGu2MYEeGnDN0cn7G69Q">
+      <eAnnotations xmi:id="_THOGvGMYEeGnDN0cn7G69Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/cda/4#/"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://CDA_PROFILES/CDA.profile.uml#_cxOJEIEVEd6H8o-hO3-B4Q"/>
+    </profileApplication>
+  </uml:Package>
+  <CDA:CodegenSupport xmi:id="_TJmsUGMYEeGnDN0cn7G69Q" basePackage="org.openhealthtools.mdht.uml.cda.phcr" nsPrefix="chlamydiatrachomatis" nsURI="http://www.openhealthtools.org/mdht/uml/cda/phcr/chlamydiatrachomatis" packageName="chlamydiatrachomatis" prefix="chlamydiatrachomatis" base_Namespace="_THOGsGMYEeGnDN0cn7G69Q"/>
+  <CDA:CDATemplate xmi:id="_TJmsUmMYEeGnDN0cn7G69Q" base_Class="_TJmsUWMYEeGnDN0cn7G69Q" templateId="2.16.840.1.113883.10.20.15.1.13" assigningAuthorityName=""/>
+  <CDA:CodeSystemConstraint xmi:id="_NgIF4GMZEeGnDN0cn7G69Q" identifier="" code="105629000" displayName="Chlamydia trachomatis infection" mandatory="true">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:CodeSystemConstraint xmi:id="_AyPokWMaEeGnDN0cn7G69Q" code="29762-2" displayName="Social history">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:TextValue xmi:id="_AyVvMWMaEeGnDN0cn7G69Q"/>
+  <CDA:ClassValidation xmi:id="_ErR4oGx7EeGzZv7YeV7LUw" severity="WARNING"/>
+  <CDA:PropertyValidation xmi:id="_INDWQGx7EeGzZv7YeV7LUw"/>
+  <CDA:PropertyValidation xmi:id="_ME-qEGx7EeGzZv7YeV7LUw"/>
+  <CDA:PropertyValidation xmi:id="_RJtSw2x8EeGzZv7YeV7LUw"/>
+  <CDA:CodeSystemConstraint xmi:id="_bE9QQ24DEeGR6InYYxBT1g" code="55752-0" displayName="Clinical Information">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:540</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_bFDW424DEeGR6InYYxBT1g">
+    <ruleId>CONF:542</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:TextValue xmi:id="_bFDW524DEeGR6InYYxBT1g" value="Clinical Information">
+    <ruleId>CONF:541</ruleId>
+  </CDA:TextValue>
+  <CDA:CodeSystemConstraint xmi:id="_HAzwAW4EEeGR6InYYxBT1g" code="30954-2" displayName="Relevant diagnostic tests and/or laboratory data">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF-389</ruleId>
+    <ruleId>CONF:735</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_HA52o24EEeGR6InYYxBT1g">
+    <ruleId>CONF-388</ruleId>
+    <ruleId>CONF:737</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:TextValue xmi:id="_HA52pW4EEeGR6InYYxBT1g" value="Relevant diagnostic tests and/or laboratory data">
+    <ruleId>CONF-391</ruleId>
+    <ruleId>CONF:736</ruleId>
+  </CDA:TextValue>
+  <CDA:CodeSystemConstraint xmi:id="_sMOy4W4GEeGR6InYYxBT1g" code="46240-8" displayName="History of encounters">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_sMOy5W4GEeGR6InYYxBT1g">
+    <ruleId>CONF:599</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:TextValue xmi:id="_sMOy6W4GEeGR6InYYxBT1g" value="Encounters">
+    <ruleId>CONF:598</ruleId>
+  </CDA:TextValue>
+  <CDA:Entry xmi:id="_sMU5hW4GEeGR6InYYxBT1g" typeCode="DRIV">
+    <ruleId>CONF:602</ruleId>
+    <ruleId>CONF:603</ruleId>
+    <ruleId>CONF:604</ruleId>
+  </CDA:Entry>
+  <CDA:CodeSystemConstraint xmi:id="_FXNNk24HEeGR6InYYxBT1g" code="55753-8" displayName="Treatment Information">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:663</ruleId>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_FXNNl24HEeGR6InYYxBT1g">
+    <ruleId>CONF:665</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:TextValue xmi:id="_FXNNm24HEeGR6InYYxBT1g" value="Treatment Information">
+    <ruleId>CONF:664</ruleId>
+  </CDA:TextValue>
+  <CDA:ValueSetConstraint xmi:id="_PpY6UHz1EeGY2JAjGcOe5Q"/>
+  <CDA:TextValue xmi:id="_u-R-sIAYEeGJRbKnXRYheg" base_Property="_g3MIMIAYEeGJRbKnXRYheg" value="Public Health Case Report - Chlamydia trachomatis"/>
+  <CDA:Entry xmi:id="_yLDnQIAZEeGJRbKnXRYheg" typeCode="DRIV"/>
+  <CDA:PropertyValidation xmi:id="_guxhI4AaEeGJRbKnXRYheg">
+    <ruleId>CONF:1867</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_k8Z_MIAaEeGJRbKnXRYheg">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:AssociationValidation xmi:id="_RwypcIAbEeGJRbKnXRYheg" severity="WARNING"/>
+  <CDA:AssociationValidation xmi:id="_5eX8gIAcEeGJRbKnXRYheg" base_Association="_vTakYoAcEeGJRbKnXRYheg"/>
+  <CDA:EntryRelationship xmi:id="_dTQVIIAdEeGJRbKnXRYheg" severity="WARNING" base_Association="_RvYCQoAdEeGJRbKnXRYheg" typeCode="COMP"/>
+  <CDA:EntryRelationship xmi:id="_zB5L0IAdEeGJRbKnXRYheg" severity="INFO" base_Association="_uVJv4oAdEeGJRbKnXRYheg" typeCode="COMP"/>
+  <CDA:PropertyValidation xmi:id="_IG7SUIDCEeGJRbKnXRYheg"/>
+  <CDA:PropertyValidation xmi:id="_AnFHkIJtEeGJRbKnXRYheg" base_Property="_4tSg0IJsEeGJRbKnXRYheg"/>
+  <CDA:ClassValidation xmi:id="_PsaX4IKBEeGJRbKnXRYheg" base_Class="_u6lQoIJsEeGJRbKnXRYheg"/>
+  <CDA:Entry xmi:id="_wcDOQMCEEeGGU7JFW58CtA" severity="WARNING" base_Association="_OXjqQoC_EeGJRbKnXRYheg" typeCode="DRIV"/>
+  <CDA:Entry xmi:id="_zjdrIMCEEeGGU7JFW58CtA" severity="INFO" base_Association="_VYqwEoKBEeGJRbKnXRYheg" typeCode="DRIV"/>
+  <CDA:PropertyValidation xmi:id="_7f8ZgcCEEeGGU7JFW58CtA" base_Property="_7f8ZgMCEEeGGU7JFW58CtA">
+    <ruleId>CONF-412</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ValueSetConstraint xmi:id="_F-xv4MCFEeGGU7JFW58CtA" base_Property="_7f8ZgMCEEeGGU7JFW58CtA">
+    <reference href="chlamydiatrachomatis-vocab.uml#_ZYuAEcCFEeGGU7JFW58CtA"/>
+  </CDA:ValueSetConstraint>
+  <CDA:ValueSetConstraint xmi:id="_2GCgIMCFEeGGU7JFW58CtA" base_Property="_4tSg0IJsEeGJRbKnXRYheg">
+    <reference href="chlamydiatrachomatis-vocab.uml#_ZYuAEcCFEeGGU7JFW58CtA"/>
+  </CDA:ValueSetConstraint>
+  <CDA:PropertyValidation xmi:id="_gLwvQ8CHEeGGU7JFW58CtA" base_Property="_gLwvQMCHEeGGU7JFW58CtA">
+    <ruleId>CONF:1874</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_joYAEMCHEeGGU7JFW58CtA" code="105629000" displayName="Chlamydial infection" base_Property="_gLwvQMCHEeGGU7JFW58CtA">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:AssociationValidation xmi:id="_MNoIoMFSEeGQ1oYRXtYJxg"/>
+  <CDA:Entry xmi:id="_TnfSIMFSEeGQ1oYRXtYJxg" base_Association="_RIC0MsFSEeGQ1oYRXtYJxg" typeCode="DRIV"/>
+  <CDA:ConstraintValidation xmi:id="_t-IfoMFbEeGQ1oYRXtYJxg" base_Constraint="_pVJiUMFbEeGQ1oYRXtYJxg"/>
+  <CDA:ConstraintValidation xmi:id="_uf9aUMFbEeGQ1oYRXtYJxg" base_Constraint="_Fup-UMCHEeGGU7JFW58CtA"/>
+  <CDA:CDATemplate xmi:id="_N35GgMFcEeGQ1oYRXtYJxg" base_Class="_GQkbUG4DEeGR6InYYxBT1g" templateId="2.16.840.1.113883.10.20.15.2.39"/>
+  <CDA:CDATemplate xmi:id="_PgfcAMFcEeGQ1oYRXtYJxg" base_Class="_DLSvoG4HEeGR6InYYxBT1g" templateId="2.16.840.1.113883.10.20.15.2.40"/>
+  <CDA:CDATemplate xmi:id="_TcLOcMFcEeGQ1oYRXtYJxg" base_Class="_zCSMEG4DEeGR6InYYxBT1g" templateId="2.16.840.1.113883.10.20.15.2.41"/>
+  <CDA:AssociationValidation xmi:id="_lpmBIMFcEeGQ1oYRXtYJxg" base_Association="_kihEUsFcEeGQ1oYRXtYJxg"/>
+  <CDA:AssociationValidation xmi:id="_odwK0MFcEeGQ1oYRXtYJxg" severity="WARNING" base_Association="_nyF-scFcEeGQ1oYRXtYJxg"/>
+  <CDA:AssociationValidation xmi:id="_rGlOQMFcEeGQ1oYRXtYJxg" severity="WARNING" base_Association="_qeDOosFcEeGQ1oYRXtYJxg"/>
+  <CDA:CDATemplate xmi:id="_ANEf0MFdEeGQ1oYRXtYJxg" base_Class="_zNTFgHdUEeG2xNcT95jmyg" templateId="2.16.840.1.113883.10.20.15.3.113"/>
+  <CDA:CDATemplate xmi:id="_CYi44MFdEeGQ1oYRXtYJxg" base_Class="_u6lQoIJsEeGJRbKnXRYheg" templateId="2.16.840.1.113883.10.20.15.3.114"/>
+  <CDA:CDATemplate xmi:id="_F2bVAMFdEeGQ1oYRXtYJxg" base_Class="_pleNUIAgEeGJRbKnXRYheg" templateId="2.16.840.1.113883.10.20.15.3.120"/>
+  <CDA:CDATemplate xmi:id="_Q8wwQMFdEeGQ1oYRXtYJxg" base_Class="_mqiDAIAcEeGJRbKnXRYheg" templateId="2.16.840.1.113883.10.20.15.3.131"/>
+  <CDA:CDATemplate xmi:id="_RwLKMMFdEeGQ1oYRXtYJxg" base_Class="_L9xQAIAdEeGJRbKnXRYheg" templateId="2.16.840.1.113883.10.20.15.3.132"/>
+  <CDA:CDATemplate xmi:id="_SHalgMFdEeGQ1oYRXtYJxg" base_Class="_rHVwEIAdEeGJRbKnXRYheg" templateId="2.16.840.1.113883.10.20.15.3.133"/>
+</xmi:XMI>

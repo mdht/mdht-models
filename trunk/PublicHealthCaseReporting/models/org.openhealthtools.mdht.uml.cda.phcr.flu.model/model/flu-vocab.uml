@@ -1,0 +1,697 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:term="http://www.openhealthtools.org/mdht/schemas/term/1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML">
+  <uml:Package xmi:id="_KnCD4CFjEd-3s7f6mWX-3A" name="flu-vocab">
+    <packageImport xmi:id="_2Ce8sCTOEd-ZbpoADxtvhg">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_KnCD4CFjEd-3s7f6mWX-3A"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_kNX9kKPKEeGdKsw0tXkvXQ" name="PHVS_SignsSymptoms_Flu ">
+      <ownedLiteral xmi:id="_L-e7MKPLEeGdKsw0tXkvXQ" name="2667000"/>
+      <ownedLiteral xmi:id="_UHuTMKPLEeGdKsw0tXkvXQ" name="373933003"/>
+      <ownedLiteral xmi:id="_WcGwoKPLEeGdKsw0tXkvXQ" name="43724002"/>
+      <ownedLiteral xmi:id="_ZAbukKPLEeGdKsw0tXkvXQ" name="62315008"/>
+      <ownedLiteral xmi:id="_ZIHD4KPLEeGdKsw0tXkvXQ" name="9826008"/>
+      <ownedLiteral xmi:id="_au2YMKPLEeGdKsw0tXkvXQ" name="49727002"/>
+      <ownedLiteral xmi:id="_eRHlEKPLEeGdKsw0tXkvXQ" name="267036007"/>
+      <ownedLiteral xmi:id="_gHyy0KPLEeGdKsw0tXkvXQ" name="84946008"/>
+      <ownedLiteral xmi:id="_hg8-IKPLEeGdKsw0tXkvXQ" name="103001002"/>
+      <ownedLiteral xmi:id="_jB2wMKPLEeGdKsw0tXkvXQ" name="386661006"/>
+      <ownedLiteral xmi:id="_oCpJgKPLEeGdKsw0tXkvXQ" name="25064002"/>
+      <ownedLiteral xmi:id="_pe6TMKPLEeGdKsw0tXkvXQ" name="79890006"/>
+      <ownedLiteral xmi:id="_rj8GAKPLEeGdKsw0tXkvXQ" name="255604002"/>
+      <ownedLiteral xmi:id="_tch_UKPLEeGdKsw0tXkvXQ" name="6736007"/>
+      <ownedLiteral xmi:id="_vcj9YKPLEeGdKsw0tXkvXQ" name="68962001"/>
+      <ownedLiteral xmi:id="_xAkGwKPLEeGdKsw0tXkvXQ" name="64531003"/>
+      <ownedLiteral xmi:id="_yhOoQKPLEeGdKsw0tXkvXQ" name="162397003"/>
+      <ownedLiteral xmi:id="_0Ez64KPLEeGdKsw0tXkvXQ" name="52101004"/>
+      <ownedLiteral xmi:id="_2DPWcKPLEeGdKsw0tXkvXQ" name="91175000"/>
+      <ownedLiteral xmi:id="_3nhMoKPLEeGdKsw0tXkvXQ" name="24484000"/>
+      <ownedLiteral xmi:id="_5SaBIKPLEeGdKsw0tXkvXQ" name="267102003"/>
+      <ownedLiteral xmi:id="_6lh14KPLEeGdKsw0tXkvXQ" name="56302003"/>
+      <ownedLiteral xmi:id="_772voKPLEeGdKsw0tXkvXQ" name="422400008"/>
+      <ownedLiteral xmi:id="_vhi3wMqeEeGgc5A9WNznfg" name="84387000"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_gLQCIKk_EeGC1bRFR6-SQw" name="PHVS_VaccinesAdministered_Flu">
+      <ownedLiteral xmi:id="_5qCJoKk_EeGC1bRFR6-SQw" name="127"/>
+      <ownedLiteral xmi:id="_MFKoMKlAEeGC1bRFR6-SQw" name="125"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_8J1TQKlHEeGC1bRFR6-SQw" name="PHVS_MedicationTreatment_Flu">
+      <ownedLiteral xmi:id="_V2dCcKlIEeGC1bRFR6-SQw" name="69722"/>
+      <ownedLiteral xmi:id="_XsZ3cKlIEeGC1bRFR6-SQw" name="9386"/>
+      <ownedLiteral xmi:id="_Zg23oKlIEeGC1bRFR6-SQw" name="260101"/>
+      <ownedLiteral xmi:id="_cTTKEKlIEeGC1bRFR6-SQw" name="620"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_cEPTAKlLEeGC1bRFR6-SQw" name="PHVS_LabTestProcedure_Flu">
+      <ownedLiteral xmi:id="_zLeUUKlLEeGC1bRFR6-SQw" name="10072002"/>
+      <ownedLiteral xmi:id="_1Oet4KlLEeGC1bRFR6-SQw" name="34733005"/>
+      <ownedLiteral xmi:id="_3Nk30KlLEeGC1bRFR6-SQw" name="117617002"/>
+      <ownedLiteral xmi:id="_5RURMKlLEeGC1bRFR6-SQw" name="35849006"/>
+      <ownedLiteral xmi:id="_7Cpr8KlLEeGC1bRFR6-SQw" name="9718006"/>
+      <ownedLiteral xmi:id="_8-E20KlLEeGC1bRFR6-SQw" name="12717000"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_9m_bgKlMEeGC1bRFR6-SQw" name="PHVS_LabTestInterpretation_Flu">
+      <ownedLiteral xmi:id="_FWgr8KlNEeGC1bRFR6-SQw" name="82334004"/>
+      <ownedLiteral xmi:id="_Jt7YIKlNEeGC1bRFR6-SQw" name="PLR1"/>
+      <ownedLiteral xmi:id="_i8SeAKlNEeGC1bRFR6-SQw" name="PLR3"/>
+      <ownedLiteral xmi:id="_mB_qsKlNEeGC1bRFR6-SQw" name="PLR19"/>
+      <ownedLiteral xmi:id="_pFbmgKlNEeGC1bRFR6-SQw" name="407479009"/>
+      <ownedLiteral xmi:id="_qvmpUKlNEeGC1bRFR6-SQw" name="442352004"/>
+      <ownedLiteral xmi:id="_sThTIKlNEeGC1bRFR6-SQw" name="407480007"/>
+      <ownedLiteral xmi:id="_t-KQAKlNEeGC1bRFR6-SQw" name="260385009"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_ekSwwKlSEeGC1bRFR6-SQw" name="PHVS_DiseaseAcquiredJurisdiction_NND">
+      <ownedLiteral xmi:id="_l0Q-cKlSEeGC1bRFR6-SQw" name="PHC244"/>
+      <ownedLiteral xmi:id="_pPnrAKlSEeGC1bRFR6-SQw" name="C1512888"/>
+      <ownedLiteral xmi:id="_r4tNIKlSEeGC1bRFR6-SQw" name="PHC245"/>
+      <ownedLiteral xmi:id="_u3NloKlSEeGC1bRFR6-SQw" name="PHC246"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_xPNGYK6lEeGvorhCWvMgmA" name="PHVS_ChestImagingTests_PHCR">
+      <ownedLiteral xmi:id="_64f74K6lEeGvorhCWvMgmA" name="24642-1"/>
+      <ownedLiteral xmi:id="__Emv8K6lEeGvorhCWvMgmA" name="36687-2"/>
+      <ownedLiteral xmi:id="_Aue30K6mEeGvorhCWvMgmA" name="30745-4"/>
+      <ownedLiteral xmi:id="_C2EPYK6mEeGvorhCWvMgmA" name="37439-7"/>
+      <ownedLiteral xmi:id="_EovG4K6mEeGvorhCWvMgmA" name="37441-3"/>
+      <ownedLiteral xmi:id="_GUrrUK6mEeGvorhCWvMgmA" name="39341-3"/>
+      <ownedLiteral xmi:id="_HqoxoK6mEeGvorhCWvMgmA" name="42272-5"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_wJVfYKlTEeGC1bRFR6-SQw" name="PHVS_ChestXRayResult_CDC">
+      <ownedLiteral xmi:id="_4O21AKlTEeGC1bRFR6-SQw" name="A"/>
+      <ownedLiteral xmi:id="_AWcnMKlUEeGC1bRFR6-SQw" name="N"/>
+      <ownedLiteral xmi:id="_BmTFgKlUEeGC1bRFR6-SQw" name="385660001"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_w789MKlVEeGC1bRFR6-SQw" name="PHVS_EmploymentStatus_Flu">
+      <ownedLiteral xmi:id="_swwjQK0zEeGiKq3XX8XCzA" name="224372004"/>
+      <ownedLiteral xmi:id="_vN1CoK0zEeGiKq3XX8XCzA" name="275139002"/>
+      <ownedLiteral xmi:id="_xc3GAK0zEeGiKq3XX8XCzA" name="406156006"/>
+      <ownedLiteral xmi:id="_zUTIwK0zEeGiKq3XX8XCzA" name="105493001"/>
+      <ownedLiteral xmi:id="_1GHrsK0zEeGiKq3XX8XCzA" name="160906004"/>
+      <ownedLiteral xmi:id="_2uBdoK0zEeGiKq3XX8XCzA" name="65853000"/>
+      <ownedLiteral xmi:id="_4VXO4K0zEeGiKq3XX8XCzA" name="440337002"/>
+      <ownedLiteral xmi:id="_6OALgK0zEeGiKq3XX8XCzA" name="73438004"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_impPEKlWEeGC1bRFR6-SQw" name="PHVS_Relationship_Flu">
+      <ownedLiteral xmi:id="_uTB9sKlWEeGC1bRFR6-SQw" name="AUNT"/>
+      <ownedLiteral xmi:id="_xjoLwKlWEeGC1bRFR6-SQw" name="BRO"/>
+      <ownedLiteral xmi:id="_ythMAKlWEeGC1bRFR6-SQw" name="CHD"/>
+      <ownedLiteral xmi:id="_1B63kKlWEeGC1bRFR6-SQw" name="COUSN"/>
+      <ownedLiteral xmi:id="_2f8UwKlWEeGC1bRFR6-SQw" name="FTH"/>
+      <ownedLiteral xmi:id="_4WF-EKlWEeGC1bRFR6-SQw" name="GRFTH"/>
+      <ownedLiteral xmi:id="_5-YKgKlWEeGC1bRFR6-SQw" name="GRMTH"/>
+      <ownedLiteral xmi:id="_7yJ1QKlWEeGC1bRFR6-SQw" name="MTH"/>
+      <ownedLiteral xmi:id="__KvhsKlWEeGC1bRFR6-SQw" name="SIS"/>
+      <ownedLiteral xmi:id="_ArFTEKlXEeGC1bRFR6-SQw" name="SPO"/>
+      <ownedLiteral xmi:id="_CE6z0KlXEeGC1bRFR6-SQw" name="UNCLE"/>
+      <ownedLiteral xmi:id="_D5kBQKlXEeGC1bRFR6-SQw" name="262241003"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_v9PnUKlXEeGC1bRFR6-SQw" name="PHVS_Specimen_Flu">
+      <ownedLiteral xmi:id="_ChEu4KlYEeGC1bRFR6-SQw" name="258607008"/>
+      <ownedLiteral xmi:id="_HD0hUKlYEeGC1bRFR6-SQw" name="258450006"/>
+      <ownedLiteral xmi:id="_JecwsKlYEeGC1bRFR6-SQw" name="PHC837"/>
+      <ownedLiteral xmi:id="_MsA44KlYEeGC1bRFR6-SQw" name="119307008"/>
+      <ownedLiteral xmi:id="_Q1vuYKlYEeGC1bRFR6-SQw" name="168141000"/>
+      <ownedLiteral xmi:id="_Tq7y0KlYEeGC1bRFR6-SQw" name="258411007"/>
+      <ownedLiteral xmi:id="_WbaWYKlYEeGC1bRFR6-SQw" name="258500001"/>
+      <ownedLiteral xmi:id="_aqJAoKlYEeGC1bRFR6-SQw" name="122571007"/>
+      <ownedLiteral xmi:id="_cKCGEKlYEeGC1bRFR6-SQw" name="168139001"/>
+      <ownedLiteral xmi:id="_e4VfYKlYEeGC1bRFR6-SQw" name="418564007"/>
+      <ownedLiteral xmi:id="_glngkKlYEeGC1bRFR6-SQw" name="119364003"/>
+      <ownedLiteral xmi:id="_iNVFQKlYEeGC1bRFR6-SQw" name="119334006"/>
+      <ownedLiteral xmi:id="_kA8X8KlYEeGC1bRFR6-SQw" name="119339001"/>
+      <ownedLiteral xmi:id="_l3RncKlYEeGC1bRFR6-SQw" name="258529004"/>
+      <ownedLiteral xmi:id="_nVR2gKlYEeGC1bRFR6-SQw" name="119376003"/>
+      <ownedLiteral xmi:id="_qUfZoKlYEeGC1bRFR6-SQw" name="122575003"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_XEyQ8KrAEeGIk6WTSrP2zg" name="PHVS_LabTestName_NovelInfluenza_PHCR">
+      <ownedLiteral xmi:id="_aPJWUK1AEeGiKq3XX8XCzA" name="PLT244"/>
+      <ownedLiteral xmi:id="_fVaFgK1AEeGiKq3XX8XCzA" name="PLT245"/>
+      <ownedLiteral xmi:id="_qc0e0K1AEeGiKq3XX8XCzA" name="PLT246"/>
+      <ownedLiteral xmi:id="_sbRvkK1AEeGiKq3XX8XCzA" name="67805-2"/>
+      <ownedLiteral xmi:id="_uCV0AK1AEeGiKq3XX8XCzA" name="67808-6"/>
+      <ownedLiteral xmi:id="_veoL0K1AEeGiKq3XX8XCzA" name="67809-4"/>
+      <ownedLiteral xmi:id="_w_8NkK1AEeGiKq3XX8XCzA" name="67810-2"/>
+      <ownedLiteral xmi:id="_yiEusK1AEeGiKq3XX8XCzA" name="67811-0"/>
+      <ownedLiteral xmi:id="_0AKdUK1AEeGiKq3XX8XCzA" name="68460-5"/>
+      <ownedLiteral xmi:id="_1tQ4UK1AEeGiKq3XX8XCzA" name="68986-9"/>
+      <ownedLiteral xmi:id="_3S6AcK1AEeGiKq3XX8XCzA" name="68987-7"/>
+      <ownedLiteral xmi:id="_4zEysK1AEeGiKq3XX8XCzA" name="68993-5"/>
+      <ownedLiteral xmi:id="_6McZYK1AEeGiKq3XX8XCzA" name="PLT263"/>
+      <ownedLiteral xmi:id="_0RdMMK1BEeGiKq3XX8XCzA" name="NOT AVAILABLE"/>
+      <ownedLiteral xmi:id="_2hOPYK1BEeGiKq3XX8XCzA" name="48310-7"/>
+      <ownedLiteral xmi:id="_5F-EEK1BEeGiKq3XX8XCzA" name="49538-2"/>
+      <ownedLiteral xmi:id="_69QV0K1BEeGiKq3XX8XCzA" name="6601-9"/>
+      <ownedLiteral xmi:id="_8vV-gK1BEeGiKq3XX8XCzA" name="6602-7"/>
+      <ownedLiteral xmi:id="_-NDSoK1BEeGiKq3XX8XCzA" name="6603-5"/>
+      <ownedLiteral xmi:id="__u1OcK1BEeGiKq3XX8XCzA" name="6604-3"/>
+      <ownedLiteral xmi:id="_BaZYYK1CEeGiKq3XX8XCzA" name="6608-4"/>
+      <ownedLiteral xmi:id="_C5PU8K1CEeGiKq3XX8XCzA" name="14454-3"/>
+      <ownedLiteral xmi:id="_EOjiEK1CEeGiKq3XX8XCzA" name="5887-5"/>
+      <ownedLiteral xmi:id="_EQFMEK1CEeGiKq3XX8XCzA" name="14455-0"/>
+      <ownedLiteral xmi:id="_F9yEAK1CEeGiKq3XX8XCzA" name="14458-4"/>
+      <ownedLiteral xmi:id="_KV1CUK1CEeGiKq3XX8XCzA" name="5888-3"/>
+      <ownedLiteral xmi:id="_MOEWUK1CEeGiKq3XX8XCzA" name="6584-7"/>
+      <ownedLiteral xmi:id="_M0xJ8K1CEeGiKq3XX8XCzA" name="50024-9"/>
+      <ownedLiteral xmi:id="_QWrxgK1CEeGiKq3XX8XCzA" name="34487-9"/>
+      <ownedLiteral xmi:id="_VOhqMK1CEeGiKq3XX8XCzA" name="44263-2"/>
+      <ownedLiteral xmi:id="_YqQKMK1CEeGiKq3XX8XCzA" name="49531-7"/>
+      <ownedLiteral xmi:id="_aH3XsK1CEeGiKq3XX8XCzA" name="53250-7"/>
+      <ownedLiteral xmi:id="_eCbv0K1CEeGiKq3XX8XCzA" name="22827-0"/>
+      <ownedLiteral xmi:id="_fnx9AK1CEeGiKq3XX8XCzA" name="44795-3"/>
+      <ownedLiteral xmi:id="_g7gOsK1CEeGiKq3XX8XCzA" name="38272-1"/>
+      <ownedLiteral xmi:id="_jNrssK1CEeGiKq3XX8XCzA" name="44264-0"/>
+      <ownedLiteral xmi:id="_kkaPEK1CEeGiKq3XX8XCzA" name="49526-7"/>
+      <ownedLiteral xmi:id="_l4H5sK1CEeGiKq3XX8XCzA" name="38271-3"/>
+      <ownedLiteral xmi:id="_nbH9gK1CEeGiKq3XX8XCzA" name="44265-7"/>
+      <ownedLiteral xmi:id="_tRSfoK1CEeGiKq3XX8XCzA" name="38270-5"/>
+      <ownedLiteral xmi:id="_vF0_YK1CEeGiKq3XX8XCzA" name="44266-5"/>
+      <ownedLiteral xmi:id="_w87q8K1CEeGiKq3XX8XCzA" name="49527-5"/>
+      <ownedLiteral xmi:id="_0lCaEK1CEeGiKq3XX8XCzA" name="49528-3"/>
+      <ownedLiteral xmi:id="_192AEK1CEeGiKq3XX8XCzA" name="48509-4"/>
+      <ownedLiteral xmi:id="_3bjUMK1CEeGiKq3XX8XCzA" name="49537-4"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_L3d-wK1DEeGiKq3XX8XCzA" name="PHVS_DiseaseType_Flu">
+      <ownedLiteral xmi:id="_uSWCEK1EEeGiKq3XX8XCzA" name="442696006"/>
+      <ownedLiteral xmi:id="_08HycK1EEeGiKq3XX8XCzA" name="442438000"/>
+      <ownedLiteral xmi:id="_3VQNAK1EEeGiKq3XX8XCzA" name="441345003"/>
+      <ownedLiteral xmi:id="_42LNMK1EEeGiKq3XX8XCzA" name="441049004"/>
+      <ownedLiteral xmi:id="_6RoekK1EEeGiKq3XX8XCzA" name="441043003"/>
+      <ownedLiteral xmi:id="_7w1AcK1EEeGiKq3XX8XCzA" name="427873006"/>
+      <ownedLiteral xmi:id="_9piOgK1EEeGiKq3XX8XCzA" name="408687004"/>
+      <ownedLiteral xmi:id="__UpsgK1EEeGiKq3XX8XCzA" name="406588006"/>
+      <ownedLiteral xmi:id="_ArYO4K1FEeGiKq3XX8XCzA" name="315642008"/>
+      <ownedLiteral xmi:id="_CE8C0K1FEeGiKq3XX8XCzA" name="195929004"/>
+      <ownedLiteral xmi:id="_DZIOkK1FEeGiKq3XX8XCzA" name="195924009"/>
+      <ownedLiteral xmi:id="_Espr8K1FEeGiKq3XX8XCzA" name="195923003"/>
+      <ownedLiteral xmi:id="_GKKy0K1FEeGiKq3XX8XCzA" name="195920000"/>
+      <ownedLiteral xmi:id="_HXHHEK1FEeGiKq3XX8XCzA" name="195878008"/>
+      <ownedLiteral xmi:id="_I61joK1FEeGiKq3XX8XCzA" name="194946005"/>
+      <ownedLiteral xmi:id="_Kcim8K1FEeGiKq3XX8XCzA" name="95891005"/>
+      <ownedLiteral xmi:id="_L0BXQK1FEeGiKq3XX8XCzA" name="88152000"/>
+      <ownedLiteral xmi:id="_M90Q4K1FEeGiKq3XX8XCzA" name="81524006"/>
+      <ownedLiteral xmi:id="_QJZcEK1FEeGiKq3XX8XCzA" name="78046005"/>
+      <ownedLiteral xmi:id="_Q8vkkK1FEeGiKq3XX8XCzA" name="74644004"/>
+      <ownedLiteral xmi:id="_SVXkYK1FEeGiKq3XX8XCzA" name="63039003"/>
+      <ownedLiteral xmi:id="_T2FJMK1FEeGiKq3XX8XCzA" name="61700007"/>
+      <ownedLiteral xmi:id="_VLgrEK1FEeGiKq3XX8XCzA" name="55604004"/>
+      <ownedLiteral xmi:id="_XrXYsK1FEeGiKq3XX8XCzA" name="43692000"/>
+      <ownedLiteral xmi:id="_Y5bHQK1FEeGiKq3XX8XCzA" name="41269000"/>
+      <ownedLiteral xmi:id="_aO8IsK1FEeGiKq3XX8XCzA" name="24662006"/>
+      <ownedLiteral xmi:id="_boxpcK1FEeGiKq3XX8XCzA" name="6142004"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_lPqAcMIHEeG2u52rMiBZyw" name="PHVS_MedicationTreatment_Flu_PHCR"/>
+    <profileApplication xmi:id="_H1PoACF_Ed-M3adQxwHq4g">
+      <eAnnotations xmi:id="_H1Q2ICF_Ed-M3adQxwHq4g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://MDHT_TERM_PROFILES/Terminology.profile.uml#_cxOJEIEVEd6H8o-hO3-B4Q"/>
+    </profileApplication>
+  </uml:Package>
+  <term:ValueSetVersion xmi:id="_ZjSOgGg1Ed-ilOLYnIx0jA" identifier="51968-6" fullName="Genetic disease analysis overall interpretation" source="LOINC" definition="Defines concept codes for LOINC answer list.">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetVersion xmi:id="_MJvLwGg7Ed-ilOLYnIx0jA" source="Health Level Seven (HL7)">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ywdZ4Gg7Ed-ilOLYnIx0jA"/>
+  </term:ValueSetVersion>
+  <term:ValueSetVersion xmi:id="_XKjcgWj5Ed-tUpkWYQgJlQ" identifier="2.16.840.1.113883.1.11.20.22" source="Health Level Seven (HL7)" definition="Valid codes are those whose scale is DOC and whose type of service is some variation of History and Physical." type="Intensional" binding="Dynamic">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_zzWFgKMbEd-Dh_ByAMpa4Q" conceptName="Positive">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_1C9TQaMbEd-Dh_ByAMpa4Q" conceptName="Negative">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_1nXn4aMbEd-Dh_ByAMpa4Q" conceptName="Inconclusive">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="__zAZwKP9Ed-Voq1mbCWOXg" conceptName="Failure">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetVersion xmi:id="_EvdQMKP_Ed-KyIUEioSKfA" identifier="53037-8" fullName="Genetic disease sequence variation interpretation">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_R9G9QaP_Ed-KyIUEioSKfA" conceptName="Pathogenic">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_c3vJEaRSEd-KyIUEioSKfA" conceptName="Presumed pathogenic"/>
+  <term:ValueSetCode xmi:id="_f8vLIaRSEd-KyIUEioSKfA" conceptName="Unknown significance"/>
+  <term:ValueSetCode xmi:id="_jXVCsaRSEd-KyIUEioSKfA" conceptName="Benign"/>
+  <term:ValueSetCode xmi:id="_l9OG4aRSEd-KyIUEioSKfA" conceptName="Presumed benign"/>
+  <term:ValueSetVersion xmi:id="_DbG1gaSFEd-KyIUEioSKfA" identifier="53039-4" fullName="Overall Interpretive Phenotype Observation Genetic Disease Carrier">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_KiAmwaSFEd-KyIUEioSKfA" conceptName="Carrier">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_NlDhAKSFEd-KyIUEioSKfA" conceptName="Negative">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_QRJT0aSFEd-KyIUEioSKfA" conceptName="Inconclusive">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_S1WV8aSFEd-KyIUEioSKfA" conceptName="Failure">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetVersion xmi:id="_kLh-oaSFEd-KyIUEioSKfA" identifier="51964-5" fullName="Overall Interpretive Phenotype Observation Pharmacogenomic Drug Efficacy"/>
+  <term:ValueSetCode xmi:id="_pXo3IaSFEd-KyIUEioSKfA" conceptName="Responsive">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_r4QZwaSFEd-KyIUEioSKfA" conceptName="Resistant">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_tyvJcaSFEd-KyIUEioSKfA" conceptName="Negative">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_weYQUaSFEd-KyIUEioSKfA" conceptName="Inconclusive">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_zjgOMaSFEd-KyIUEioSKfA" conceptName="Failure">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetVersion xmi:id="_AXgFIaSGEd-KyIUEioSKfA" identifier="51971-0" fullName="Overall Interpretive Phenotype Observation Pharmacogenomic Drug Metabolism"/>
+  <term:ValueSetCode xmi:id="_EqEtkaSGEd-KyIUEioSKfA" conceptName="Ultrarapid metabolizer">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_IAt5QaSGEd-KyIUEioSKfA" conceptName="Extensive metabolizer">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_KM1LgaSGEd-KyIUEioSKfA" conceptName="Intermediate metabolizer">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_OUNQkaSGEd-KyIUEioSKfA" conceptName="Poor metabolizer">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:CodeSystemVersion xmi:id="_boejAaSGEd-KyIUEioSKfA" identifier="51961-1" fullName="Interpretive Phenotype Observation Pharmacogenomic Drug Efficacy"/>
+  <term:ValueSetVersion xmi:id="_UMI30KSHEd-5DI1h1u7pqA" identifier="51961-1" fullName="Interpretive Phenotype Observation Pharmacogenomic Drug Efficacy"/>
+  <term:ValueSetCode xmi:id="_ZgoQQaSHEd-5DI1h1u7pqA" conceptName="Resistant">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_cew1UaSHEd-5DI1h1u7pqA" conceptName="Responsive">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_ehcewaSHEd-5DI1h1u7pqA" conceptName="Presumed resistant">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_gpo6UaSHEd-5DI1h1u7pqA" conceptName="Presumed responsive">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_jJExMaSHEd-5DI1h1u7pqA" conceptName="Unknown Significance">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_lYICsaSHEd-5DI1h1u7pqA" conceptName="Benign">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_nYbGgKSHEd-5DI1h1u7pqA" conceptName="Presumed Benign">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_pNGJIaSHEd-5DI1h1u7pqA" conceptName="Presumed non-responsive">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_qbB74aSHEd-5DI1h1u7pqA"/>
+  <term:ValueSetVersion xmi:id="_4t9ZgKSIEd-ej7xk_jityQ" identifier="53040-2" fullName="Interpretive Phenotype Observation Pharmacogenomic Drug Metabolism"/>
+  <term:ValueSetCode xmi:id="_8bKEAaSIEd-ej7xk_jityQ" conceptName="Ultrarapid metabolizer">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_Afwh4aSJEd-ej7xk_jityQ" conceptName="Extensive metabolizer">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_CjBaIaSJEd-ej7xk_jityQ" conceptName="Intermediate metabolizer">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_EpbF8aSJEd-ej7xk_jityQ" conceptName="Poor metabolizer">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetVersion xmi:id="_NwYwgKX0Ed-zPt4IL3ladg" identifier="48019-4" fullName="Clinical Genomic Statement Genetic Variation DNA Change">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_ZLI8kaX0Ed-zPt4IL3ladg" conceptName="Wild type">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_e0fxwaX0Ed-zPt4IL3ladg" conceptName="Deletion">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_ghuIkaX0Ed-zPt4IL3ladg" conceptName="Duplication">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_kB-jQaX0Ed-zPt4IL3ladg" conceptName="Insertion">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_rJDToaX0Ed-zPt4IL3ladg" conceptName="Insertion/Deletion">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_uwAzQaX0Ed-zPt4IL3ladg" conceptName="Inversion">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_yRUW0aX0Ed-zPt4IL3ladg" conceptName="Substitution">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetVersion xmi:id="_GAB9IaX1Ed-zPt4IL3ladg" identifier="48006-1" fullName="Clinical Genomic Statement Genetic Variation Amino Acid Change">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_L2yVIaX1Ed-zPt4IL3ladg" conceptName="Wild type">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_RHidEKX1Ed-zPt4IL3ladg" conceptName="Deletion">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_TiXgwaX1Ed-zPt4IL3ladg" conceptName="Duplication">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_XTAg0aX1Ed-zPt4IL3ladg" conceptName="Frameshift">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_aUulYaX1Ed-zPt4IL3ladg" conceptName="Initiating Methionine">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_dFv7gaX1Ed-zPt4IL3ladg" conceptName="Insertion">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_gDuvkaX1Ed-zPt4IL3ladg" conceptName="Insertion and Deletion">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_iyrCEaX1Ed-zPt4IL3ladg" conceptName="Missense">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_k-4a8aX1Ed-zPt4IL3ladg" conceptName="Nonsense">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_oj6n8aX1Ed-zPt4IL3ladg" conceptName="Silent">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_rFJOkaX1Ed-zPt4IL3ladg" conceptName="Stop Codon Mutation">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetVersion xmi:id="_G32U8KriEd-sBpGQmfQVSQ" identifier="53034-5" fullName="Allelic State"/>
+  <term:ValueSetCode xmi:id="_KPeYEariEd-sBpGQmfQVSQ" conceptName="Homozygous">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_pOa8gariEd-sBpGQmfQVSQ" conceptName="Heterozygous">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_xsriQariEd-sBpGQmfQVSQ" conceptName="Heteroplasmic">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_2yF84ariEd-sBpGQmfQVSQ" conceptName="Homoplasmic">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_72nmsariEd-sBpGQmfQVSQ" conceptName="Hemizygous">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetVersion xmi:id="_R9te0AoIEeCEl6wJQrTI9w"/>
+  <term:ValueSetVersion xmi:id="_BnCKUAoTEeCYR7evJOaYUg" identifier="1.2.3.4.100.1" fullName="My Problem Types" definition="The SNOMED CT has been limited to a value set that indicates the level of medical judgment used to determine the existence of a problem." effectiveDate="20081218" releaseDate="20081218">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetVersion xmi:id="_DEV10AoTEeCYR7evJOaYUg" identifier="1.2.3.4.100.2" fullName="My Problem Values" source="Veterans Administration/Kaiser Permanente (VA/KP)" url="http://evs.nci.nih.gov/ftp1/FDA/ProblemList/" definition="This describes the problem. Diagnosis/Problem List is broadly defined as a series of brief statements that catalog a patient s medical, nursing, dental, social, preventative and psychiatric events and issues that are relevant to that patient s healthcare (e.g., signs, symptoms, and defined conditions).">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_o6zrsAoTEeCYR7evJOaYUg" conceptName="Finding"/>
+  <term:ValueSetCode xmi:id="_p6QWgAoTEeCYR7evJOaYUg" conceptName="Complaint"/>
+  <term:ValueSetCode xmi:id="_qtGvwAoTEeCYR7evJOaYUg" conceptName="Diagnosis"/>
+  <term:ValueSetCode xmi:id="_reyrYAoTEeCYR7evJOaYUg" conceptName="Condition"/>
+  <term:ValueSetCode xmi:id="_sUIX8AoTEeCYR7evJOaYUg" conceptName="Functional limitation"/>
+  <term:ValueSetCode xmi:id="_tKL2MAoTEeCYR7evJOaYUg" conceptName="Symptom"/>
+  <term:ValueSetCode xmi:id="_t7xrMAoTEeCYR7evJOaYUg" conceptName="Problem"/>
+  <term:ValueSetVersion xmi:id="_9ys50SM8EeCxCon8a79rfA"/>
+  <term:ValueSetCode xmi:id="_Fh4MACM9EeCxCon8a79rfA" usageNote="A concern that is still being tracked."/>
+  <term:ValueSetCode xmi:id="_LNm_wSM9EeCxCon8a79rfA" usageNote="A concern that is active, but which may be set aside. For example, this value might be used to suspend concern about a patient problem after some period of remission, but before assumption that the concern has been resolved."/>
+  <term:ValueSetCode xmi:id="_MZdu4CM9EeCxCon8a79rfA" usageNote="A concern that is no longer actively being tracked, but for reasons other than because the problem was resolved. This value might be used to mark a concern as being aborted after a patient leaves care against medical advice."/>
+  <term:ValueSetCode xmi:id="_NURKQSM9EeCxCon8a79rfA" usageNote="The problem, allergy or medical state has been resolved and the concern no longer needs to be tracked except for historical purposes."/>
+  <term:ValueSetVersion xmi:id="_qhpCUCQMEeCxCon8a79rfA">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_hSRvwSQMEeCxCon8a79rfA"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_vRyXkCQMEeCxCon8a79rfA" conceptName="High"/>
+  <term:ValueSetCode xmi:id="_zqF0kCQMEeCxCon8a79rfA" conceptName="Moderate"/>
+  <term:ValueSetCode xmi:id="_0OLZECQMEeCxCon8a79rfA" conceptName="Low"/>
+  <term:ValueSetVersion xmi:id="_-YF9cSQOEeCxCon8a79rfA">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_JzPLECQPEeCxCon8a79rfA" conceptName="Active"/>
+  <term:ValueSetCode xmi:id="_M01T0SQPEeCxCon8a79rfA" conceptName="Inactive"/>
+  <term:ValueSetCode xmi:id="_PiM5ASQPEeCxCon8a79rfA" conceptName="Chronic"/>
+  <term:ValueSetCode xmi:id="_SLhrsSQPEeCxCon8a79rfA" conceptName="Intermittent"/>
+  <term:ValueSetCode xmi:id="_VG2NUSQPEeCxCon8a79rfA" conceptName="Recurrent"/>
+  <term:ValueSetCode xmi:id="_XDxNACQPEeCxCon8a79rfA" conceptName="Rule out"/>
+  <term:ValueSetCode xmi:id="_ZOtakSQPEeCxCon8a79rfA" conceptName="Ruled out"/>
+  <term:ValueSetCode xmi:id="_bCnBICQPEeCxCon8a79rfA" conceptName="Resolved"/>
+  <term:ValueSetVersion xmi:id="_LSa-gSQSEeCxCon8a79rfA">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_PxTkoSQSEeCxCon8a79rfA" conceptName="Alive and well"/>
+  <term:ValueSetCode xmi:id="_R72XUCQXEeCxCon8a79rfA" conceptName="In remission"/>
+  <term:ValueSetCode xmi:id="_UDagwSQXEeCxCon8a79rfA" conceptName="Symptom free"/>
+  <term:ValueSetCode xmi:id="_Wz8HoSQXEeCxCon8a79rfA" conceptName="Chronically ill"/>
+  <term:ValueSetCode xmi:id="_ZR5-4SQXEeCxCon8a79rfA" conceptName="Severely ill"/>
+  <term:ValueSetCode xmi:id="_bPtvYSQXEeCxCon8a79rfA" conceptName="Disabled"/>
+  <term:ValueSetCode xmi:id="_dX_qgCQXEeCxCon8a79rfA" conceptName="Severely disabled"/>
+  <term:ValueSetCode xmi:id="_fjcOYSQXEeCxCon8a79rfA" conceptName="Deceased"/>
+  <term:ValueSetVersion xmi:id="_kNYkoKPKEeGdKsw0tXkvXQ" identifier="2.16.840.1.114222.4.11.3240" fullName="Flu Signs and Symptoms" source="PHIN-VADS" definition="Signs and Symptoms of  Flu" binding="Dynamic" base_Enumeration="_kNX9kKPKEeGdKsw0tXkvXQ">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_L-e7MaPLEeGdKsw0tXkvXQ" conceptName="Absent (qualifier value)" base_EnumerationLiteral="_L-e7MKPLEeGdKsw0tXkvXQ"/>
+  <term:ValueSetCode xmi:id="_UHuTMaPLEeGdKsw0tXkvXQ" conceptName="Acute onset (qualifier value)" base_EnumerationLiteral="_UHuTMKPLEeGdKsw0tXkvXQ"/>
+  <term:ValueSetCode xmi:id="_WcHXsKPLEeGdKsw0tXkvXQ" conceptName="Chill (finding)" base_EnumerationLiteral="_WcGwoKPLEeGdKsw0tXkvXQ"/>
+  <term:ValueSetCode xmi:id="_ZAbukaPLEeGdKsw0tXkvXQ" conceptName="Diarrhea (finding)" base_EnumerationLiteral="_ZAbukKPLEeGdKsw0tXkvXQ"/>
+  <term:ValueSetCode xmi:id="_ZIHD4aPLEeGdKsw0tXkvXQ" conceptName="Conjunctivitis (disorder)" base_EnumerationLiteral="_ZIHD4KPLEeGdKsw0tXkvXQ"/>
+  <term:ValueSetCode xmi:id="_au2YMaPLEeGdKsw0tXkvXQ" conceptName="Cough (finding)" base_EnumerationLiteral="_au2YMKPLEeGdKsw0tXkvXQ"/>
+  <term:ValueSetCode xmi:id="_eRIMIKPLEeGdKsw0tXkvXQ" conceptName="Dyspnea (finding)" base_EnumerationLiteral="_eRHlEKPLEeGdKsw0tXkvXQ"/>
+  <term:ValueSetCode xmi:id="_gHzZ4KPLEeGdKsw0tXkvXQ" conceptName="Extreme exhaustion (finding)" base_EnumerationLiteral="_gHyy0KPLEeGdKsw0tXkvXQ"/>
+  <term:ValueSetCode xmi:id="_hg9lMKPLEeGdKsw0tXkvXQ" conceptName="Feeling feverish (finding)" base_EnumerationLiteral="_hg8-IKPLEeGdKsw0tXkvXQ"/>
+  <term:ValueSetCode xmi:id="_jB3XQKPLEeGdKsw0tXkvXQ" conceptName="Fever (finding)" base_EnumerationLiteral="_jB2wMKPLEeGdKsw0tXkvXQ"/>
+  <term:ValueSetCode xmi:id="_oCpJgaPLEeGdKsw0tXkvXQ" conceptName="Headache (finding)" base_EnumerationLiteral="_oCpJgKPLEeGdKsw0tXkvXQ"/>
+  <term:ValueSetCode xmi:id="_pe6TMaPLEeGdKsw0tXkvXQ" conceptName="Loss of appetite (finding)" base_EnumerationLiteral="_pe6TMKPLEeGdKsw0tXkvXQ"/>
+  <term:ValueSetCode xmi:id="_rj8tEKPLEeGdKsw0tXkvXQ" conceptName="Mild (qualifier value)" base_EnumerationLiteral="_rj8GAKPLEeGdKsw0tXkvXQ"/>
+  <term:ValueSetCode xmi:id="_tch_UaPLEeGdKsw0tXkvXQ" conceptName="Moderate (severity modifier) (qualifier value)" base_EnumerationLiteral="_tch_UKPLEeGdKsw0tXkvXQ"/>
+  <term:ValueSetCode xmi:id="_vckkcKPLEeGdKsw0tXkvXQ" conceptName="Muscle pain (finding)" base_EnumerationLiteral="_vcj9YKPLEeGdKsw0tXkvXQ"/>
+  <term:ValueSetCode xmi:id="_xAkt0KPLEeGdKsw0tXkvXQ" conceptName="Nasal discharge (disorder)" base_EnumerationLiteral="_xAkGwKPLEeGdKsw0tXkvXQ"/>
+  <term:ValueSetCode xmi:id="_yhOoQaPLEeGdKsw0tXkvXQ" conceptName="Pain in throat (finding)" base_EnumerationLiteral="_yhOoQKPLEeGdKsw0tXkvXQ"/>
+  <term:ValueSetCode xmi:id="_0Ez64aPLEeGdKsw0tXkvXQ" conceptName="Present (qualifier value)" base_EnumerationLiteral="_0Ez64KPLEeGdKsw0tXkvXQ"/>
+  <term:ValueSetCode xmi:id="_2DQkkKPLEeGdKsw0tXkvXQ" conceptName="Seizure (finding)" base_EnumerationLiteral="_2DPWcKPLEeGdKsw0tXkvXQ"/>
+  <term:ValueSetCode xmi:id="_3nhMoaPLEeGdKsw0tXkvXQ" conceptName="Severe (severity modifier) (qualifier value)" base_EnumerationLiteral="_3nhMoKPLEeGdKsw0tXkvXQ"/>
+  <term:ValueSetCode xmi:id="_5SaBIaPLEeGdKsw0tXkvXQ" conceptName="Sore throat symptom (finding)" base_EnumerationLiteral="_5SaBIKPLEeGdKsw0tXkvXQ"/>
+  <term:ValueSetCode xmi:id="_6lh14aPLEeGdKsw0tXkvXQ" conceptName="Toxic state (finding)" base_EnumerationLiteral="_6lh14KPLEeGdKsw0tXkvXQ"/>
+  <term:ValueSetCode xmi:id="_772voaPLEeGdKsw0tXkvXQ" conceptName="Vomiting (disorder)" base_EnumerationLiteral="_772voKPLEeGdKsw0tXkvXQ"/>
+  <term:ValueSetVersion xmi:id="_O3MGUKPOEeGdKsw0tXkvXQ" fullName="Influenza Disease Type" binding="Dynamic"/>
+  <term:ValueSetVersion xmi:id="_gLQpMKk_EeGC1bRFR6-SQw" identifier="2.16.840.1.114222.4.11.3250" fullName="Vaccines Administered (Flu)" source="PHIN-VADS" url="https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.3250" definition="Influenza vaccine received before illness onset." binding="Dynamic" base_Enumeration="_gLQCIKk_EeGC1bRFR6-SQw">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dk7ugKDqEd-dVeaMP0XXQw"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_5qCwsKk_EeGC1bRFR6-SQw" conceptName="Novel influenza-H1N1-09" base_EnumerationLiteral="_5qCJoKk_EeGC1bRFR6-SQw">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dk7ugKDqEd-dVeaMP0XXQw"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_MFKoMalAEeGC1bRFR6-SQw" conceptName="Novel Influenza-H1N1-09, nasal" base_EnumerationLiteral="_MFKoMKlAEeGC1bRFR6-SQw"/>
+  <term:ValueSetVersion xmi:id="_8J1TQalHEeGC1bRFR6-SQw" identifier="2.16.840.1.114222.4.11.3244" fullName="Medication Treatment (Flu)" source="PHIN-VADS" url="https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.3244" definition="List of Medications related to Flu" binding="Dynamic" base_Enumeration="_8J1TQKlHEeGC1bRFR6-SQw">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dSLxoaDqEd-dVeaMP0XXQw"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_V2dCcalIEeGC1bRFR6-SQw" conceptName="ZANAMIVIR" base_EnumerationLiteral="_V2dCcKlIEeGC1bRFR6-SQw">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dSLxoaDqEd-dVeaMP0XXQw"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_XsaegKlIEeGC1bRFR6-SQw" conceptName="RIMANTADINE" base_EnumerationLiteral="_XsZ3cKlIEeGC1bRFR6-SQw">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dSLxoaDqEd-dVeaMP0XXQw"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_Zg23oalIEeGC1bRFR6-SQw" conceptName="OSELTAMIVIR" base_EnumerationLiteral="_Zg23oKlIEeGC1bRFR6-SQw">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dSLxoaDqEd-dVeaMP0XXQw"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_cTTxIKlIEeGC1bRFR6-SQw" conceptName="AMANTADINE" base_EnumerationLiteral="_cTTKEKlIEeGC1bRFR6-SQw">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dSLxoaDqEd-dVeaMP0XXQw"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_egNtkKlIEeGC1bRFR6-SQw" conceptName="Other">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_6VcAwZ3_EeGFifiMpnccVA"/>
+  </term:ValueSetCode>
+  <term:ValueSetVersion xmi:id="_cEPTAalLEeGC1bRFR6-SQw" identifier="2.16.840.1.114222.4.11.3251" fullName="Lab Test Procedure (Flu)" source="PHIN-VADS" url="https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.3251" definition="Epidemiologic interpretation of the type of test(s) performed for Influenza Case." binding="Dynamic" base_Enumeration="_cEPTAKlLEeGC1bRFR6-SQw">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_zLe7YKlLEeGC1bRFR6-SQw" conceptName="Fluorescent antibody measurement (procedure)" base_EnumerationLiteral="_zLeUUKlLEeGC1bRFR6-SQw"/>
+  <term:ValueSetCode xmi:id="_1OfU8KlLEeGC1bRFR6-SQw" conceptName="Hemagglutination inhibition assay (procedure)" base_EnumerationLiteral="_1Oet4KlLEeGC1bRFR6-SQw"/>
+  <term:ValueSetCode xmi:id="_3Nle4KlLEeGC1bRFR6-SQw" conceptName="Immunohistochemistry procedure (procedure)" base_EnumerationLiteral="_3Nk30KlLEeGC1bRFR6-SQw"/>
+  <term:ValueSetCode xmi:id="_5RU4QKlLEeGC1bRFR6-SQw" conceptName="Microbial identification, rapid kit method (procedure)" base_EnumerationLiteral="_5RURMKlLEeGC1bRFR6-SQw"/>
+  <term:ValueSetCode xmi:id="_7Cpr8alLEeGC1bRFR6-SQw" conceptName="Polymerase chain reaction analysis (procedure)" base_EnumerationLiteral="_7Cpr8KlLEeGC1bRFR6-SQw"/>
+  <term:ValueSetCode xmi:id="_8-Fd4KlLEeGC1bRFR6-SQw" conceptName="Viral culture (procedure)" base_EnumerationLiteral="_8-E20KlLEeGC1bRFR6-SQw"/>
+  <term:ValueSetVersion xmi:id="_9nACkKlMEeGC1bRFR6-SQw" identifier="2.16.840.1.114222.4.11.3252" fullName="Lab Test Interpretation (Flu)" source="PHIN-VADS" url="https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.3252" definition="Epidemiologic interpretation of the results of the tests performed for Influenza Case." binding="Dynamic" base_Enumeration="_9m_bgKlMEeGC1bRFR6-SQw">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_FWhTAKlNEeGC1bRFR6-SQw" conceptName="Indeterminate (qualifier value)" base_EnumerationLiteral="_FWgr8KlNEeGC1bRFR6-SQw"/>
+  <term:ValueSetCode xmi:id="_Jt7YIalNEeGC1bRFR6-SQw" conceptName="Influenza A (H1)" base_EnumerationLiteral="_Jt7YIKlNEeGC1bRFR6-SQw">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_1dcbUKFkEd-dVeaMP0XXQw"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_i8SeAalNEeGC1bRFR6-SQw" conceptName="Influenza A (H3)" base_EnumerationLiteral="_i8SeAKlNEeGC1bRFR6-SQw">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_1dcbUKFkEd-dVeaMP0XXQw"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_mCARwKlNEeGC1bRFR6-SQw" conceptName="Influenza A (unsubtypeable)" base_EnumerationLiteral="_mB_qsKlNEeGC1bRFR6-SQw">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_1dcbUKFkEd-dVeaMP0XXQw"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_pFc0oKlNEeGC1bRFR6-SQw" conceptName="Influenza A virus (organism)" base_EnumerationLiteral="_pFbmgKlNEeGC1bRFR6-SQw"/>
+  <term:ValueSetCode xmi:id="_qvmpUalNEeGC1bRFR6-SQw" conceptName="Influenza A virus subtype H1N1 (organism)" base_EnumerationLiteral="_qvmpUKlNEeGC1bRFR6-SQw"/>
+  <term:ValueSetCode xmi:id="_sThTIalNEeGC1bRFR6-SQw" conceptName="Influenza B virus (organism)" base_EnumerationLiteral="_sThTIKlNEeGC1bRFR6-SQw"/>
+  <term:ValueSetCode xmi:id="_t-K3EKlNEeGC1bRFR6-SQw" conceptName="Negative (qualifier value)" base_EnumerationLiteral="_t-KQAKlNEeGC1bRFR6-SQw"/>
+  <term:ValueSetVersion xmi:id="_ekTX0KlSEeGC1bRFR6-SQw" identifier="2.16.840.1.114222.4.11.3030" fullName="Disease Acquired Jurisdiction" source="PHIN-VADS" url="https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.3030" definition="Codes specifying where the disease/condition was likely acquired." binding="Dynamic" base_Enumeration="_ekSwwKlSEeGC1bRFR6-SQw"/>
+  <term:ValueSetCode xmi:id="_l0Q-calSEeGC1bRFR6-SQw" conceptName="Indigenous, within jurisdiction" base_EnumerationLiteral="_l0Q-cKlSEeGC1bRFR6-SQw"/>
+  <term:ValueSetCode xmi:id="_pPoSEKlSEeGC1bRFR6-SQw" conceptName="International" base_EnumerationLiteral="_pPnrAKlSEeGC1bRFR6-SQw">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_1dllQaFkEd-dVeaMP0XXQw"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_r4t0MKlSEeGC1bRFR6-SQw" conceptName="Out of jurisdiction, from another jurisdiction within state" base_EnumerationLiteral="_r4tNIKlSEeGC1bRFR6-SQw">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_1dcbUKFkEd-dVeaMP0XXQw"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_u3NloalSEeGC1bRFR6-SQw" conceptName="Out of state" base_EnumerationLiteral="_u3NloKlSEeGC1bRFR6-SQw">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_1dcbUKFkEd-dVeaMP0XXQw"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_yIa3sKlSEeGC1bRFR6-SQw" conceptName="unknown">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_1dcbUKFkEd-dVeaMP0XXQw"/>
+  </term:ValueSetCode>
+  <term:ValueSetVersion xmi:id="_wJWGcKlTEeGC1bRFR6-SQw" identifier="2.16.840.1.114222.4.11.930" fullName="Chest XRay Result" source="PHIN-VADS" url="https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.930" definition="Chest X-ray Results" binding="Dynamic" base_Enumeration="_wJVfYKlTEeGC1bRFR6-SQw"/>
+  <term:ValueSetCode xmi:id="_4O21AalTEeGC1bRFR6-SQw" conceptName="Abnormal (applies to non-numeric results)" base_EnumerationLiteral="_4O21AKlTEeGC1bRFR6-SQw"/>
+  <term:ValueSetCode xmi:id="_AWdOQKlUEeGC1bRFR6-SQw" conceptName="Normal (applies to non-numeric results)" base_EnumerationLiteral="_AWcnMKlUEeGC1bRFR6-SQw"/>
+  <term:ValueSetCode xmi:id="_BmTskKlUEeGC1bRFR6-SQw" conceptName="Not done (qualifier value)" base_EnumerationLiteral="_BmTFgKlUEeGC1bRFR6-SQw">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_EW2hkKlUEeGC1bRFR6-SQw" conceptName="unknown">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_6VcAwZ3_EeGFifiMpnccVA"/>
+  </term:ValueSetCode>
+  <term:ValueSetVersion xmi:id="_w79kQKlVEeGC1bRFR6-SQw" identifier="2.16.840.1.114222.4.11.3254" fullName="Employment Status (Flu)" source="PHIN-VADS" url="https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.3254" definition="Type of work at the time of hospitalization within 7 days prior to illness onset" binding="Dynamic" base_Enumeration="_w789MKlVEeGC1bRFR6-SQw">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetVersion xmi:id="_impPEalWEeGC1bRFR6-SQw" identifier="2.16.840.1.114222.4.11.3275" fullName="Relationship (Flu)" source="PHIN-VADS" url="https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.3275" definition="Relationship of contact, i.e., a contact is anyone who stayed overnight in the household, with the subject, 7 days before to 7 days after the subject's illness onset date." binding="Dynamic" base_Enumeration="_impPEKlWEeGC1bRFR6-SQw">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_dHx4caDqEd-dVeaMP0XXQw"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_uTCkwKlWEeGC1bRFR6-SQw" conceptName="aunt" base_EnumerationLiteral="_uTB9sKlWEeGC1bRFR6-SQw"/>
+  <term:ValueSetCode xmi:id="_xjoy0KlWEeGC1bRFR6-SQw" conceptName="Brother" base_EnumerationLiteral="_xjoLwKlWEeGC1bRFR6-SQw"/>
+  <term:ValueSetCode xmi:id="_ythMAalWEeGC1bRFR6-SQw" conceptName="Child" base_EnumerationLiteral="_ythMAKlWEeGC1bRFR6-SQw"/>
+  <term:ValueSetCode xmi:id="_1B7eoKlWEeGC1bRFR6-SQw" conceptName="cousin" base_EnumerationLiteral="_1B63kKlWEeGC1bRFR6-SQw"/>
+  <term:ValueSetCode xmi:id="_2f870KlWEeGC1bRFR6-SQw" conceptName="Father" base_EnumerationLiteral="_2f8UwKlWEeGC1bRFR6-SQw"/>
+  <term:ValueSetCode xmi:id="_4WGlIKlWEeGC1bRFR6-SQw" conceptName="Grandfather" base_EnumerationLiteral="_4WF-EKlWEeGC1bRFR6-SQw"/>
+  <term:ValueSetCode xmi:id="_5-YxkKlWEeGC1bRFR6-SQw" conceptName="Grandmother" base_EnumerationLiteral="_5-YKgKlWEeGC1bRFR6-SQw"/>
+  <term:ValueSetCode xmi:id="_7yJ1QalWEeGC1bRFR6-SQw" conceptName="Mother" base_EnumerationLiteral="_7yJ1QKlWEeGC1bRFR6-SQw"/>
+  <term:ValueSetCode xmi:id="_9VEZgKlWEeGC1bRFR6-SQw" conceptName="Other"/>
+  <term:ValueSetCode xmi:id="__KvhsalWEeGC1bRFR6-SQw" conceptName="Sister" base_EnumerationLiteral="__KvhsKlWEeGC1bRFR6-SQw"/>
+  <term:ValueSetCode xmi:id="_ArF6IKlXEeGC1bRFR6-SQw" conceptName="Spouse" base_EnumerationLiteral="_ArFTEKlXEeGC1bRFR6-SQw"/>
+  <term:ValueSetCode xmi:id="_CE7a4KlXEeGC1bRFR6-SQw" conceptName="uncle" base_EnumerationLiteral="_CE6z0KlXEeGC1bRFR6-SQw"/>
+  <term:ValueSetCode xmi:id="_D5koUKlXEeGC1bRFR6-SQw" conceptName="Unrelated" base_EnumerationLiteral="_D5kBQKlXEeGC1bRFR6-SQw">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetCode>
+  <term:ValueSetVersion xmi:id="_v9QOYKlXEeGC1bRFR6-SQw" identifier="2.16.840.1.114222.4.11.3246" fullName="Specimen (Flu)" source="PHIN-VADS" url="https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.3246" definition="List of specimen sources related to Flu." binding="Dynamic" base_Enumeration="_v9PnUKlXEeGC1bRFR6-SQw">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_ChF9AKlYEeGC1bRFR6-SQw" conceptName="Bronchoalveolar lavage fluid sample (specimen)" base_EnumerationLiteral="_ChEu4KlYEeGC1bRFR6-SQw"/>
+  <term:ValueSetCode xmi:id="_HD1IYKlYEeGC1bRFR6-SQw" conceptName="Cerebrospinal fluid sample (specimen)" base_EnumerationLiteral="_HD0hUKlYEeGC1bRFR6-SQw"/>
+  <term:ValueSetCode xmi:id="_JedXwKlYEeGC1bRFR6-SQw" conceptName="Chest Fluid (specimen)" base_EnumerationLiteral="_JecwsKlYEeGC1bRFR6-SQw">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_1dcbUKFkEd-dVeaMP0XXQw"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_MsBf8KlYEeGC1bRFR6-SQw" conceptName="Endotracheal aspirate" base_EnumerationLiteral="_MsA44KlYEeGC1bRFR6-SQw"/>
+  <term:ValueSetCode xmi:id="_Q1wVcKlYEeGC1bRFR6-SQw" conceptName="Nasal fluid sample (specimen)" base_EnumerationLiteral="_Q1vuYKlYEeGC1bRFR6-SQw"/>
+  <term:ValueSetCode xmi:id="_Tq7y0alYEeGC1bRFR6-SQw" conceptName="Nasopharyngeal aspirate (specimen)" base_EnumerationLiteral="_Tq7y0KlYEeGC1bRFR6-SQw"/>
+  <term:ValueSetCode xmi:id="_WbaWYalYEeGC1bRFR6-SQw" conceptName="Nasopharyngeal swab (specimen)" base_EnumerationLiteral="_WbaWYKlYEeGC1bRFR6-SQw"/>
+  <term:ValueSetCode xmi:id="_YNBd8KlYEeGC1bRFR6-SQw" conceptName="Other">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_6VcAwZ3_EeGFifiMpnccVA"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_aqJAoalYEeGC1bRFR6-SQw" conceptName="Pericardial fluid specimen (specimen)" base_EnumerationLiteral="_aqJAoKlYEeGC1bRFR6-SQw"/>
+  <term:ValueSetCode xmi:id="_cKCGEalYEeGC1bRFR6-SQw" conceptName="Peritoneal fluid sample (specimen)" base_EnumerationLiteral="_cKCGEKlYEeGC1bRFR6-SQw"/>
+  <term:ValueSetCode xmi:id="_e4WGcKlYEeGC1bRFR6-SQw" conceptName="Pleural fluid specimen (specimen)" base_EnumerationLiteral="_e4VfYKlYEeGC1bRFR6-SQw"/>
+  <term:ValueSetCode xmi:id="_glngkalYEeGC1bRFR6-SQw" conceptName="Serum specimen" base_EnumerationLiteral="_glngkKlYEeGC1bRFR6-SQw"/>
+  <term:ValueSetCode xmi:id="_iNVsUKlYEeGC1bRFR6-SQw" conceptName="Sputum specimen (specimen)" base_EnumerationLiteral="_iNVFQKlYEeGC1bRFR6-SQw"/>
+  <term:ValueSetCode xmi:id="_kA8X8alYEeGC1bRFR6-SQw" conceptName="Stool specimen (specimen)" base_EnumerationLiteral="_kA8X8KlYEeGC1bRFR6-SQw"/>
+  <term:ValueSetCode xmi:id="_l3SOgKlYEeGC1bRFR6-SQw" conceptName="Throat swab (specimen)" base_EnumerationLiteral="_l3RncKlYEeGC1bRFR6-SQw"/>
+  <term:ValueSetCode xmi:id="_nVR2galYEeGC1bRFR6-SQw" conceptName="Tissue specimen (specimen)" base_EnumerationLiteral="_nVR2gKlYEeGC1bRFR6-SQw"/>
+  <term:ValueSetCode xmi:id="_qUgAsKlYEeGC1bRFR6-SQw" conceptName="Urine specimen (specimen)" base_EnumerationLiteral="_qUfZoKlYEeGC1bRFR6-SQw"/>
+  <term:ValueSetVersion xmi:id="_XEyQ8arAEeGIk6WTSrP2zg" identifier="2.16.840.1.114222.4.11.6035" fullName="Lab Test Name (Novel Influenza PHCR)" source="PHIN-VADS" url="https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.6035" definition="Name of Influenza test result." binding="Dynamic" base_Enumeration="_XEyQ8KrAEeGIk6WTSrP2zg">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_sw4fEK0zEeGiKq3XX8XCzA" conceptName="Does voluntary work (finding)" base_EnumerationLiteral="_swwjQK0zEeGiKq3XX8XCzA"/>
+  <term:ValueSetCode xmi:id="_vN1Coa0zEeGiKq3XX8XCzA" conceptName="Homemaker (situation)" base_EnumerationLiteral="_vN1CoK0zEeGiKq3XX8XCzA"/>
+  <term:ValueSetCode xmi:id="_xc3tEK0zEeGiKq3XX8XCzA" conceptName="In paid employment (finding)" base_EnumerationLiteral="_xc3GAK0zEeGiKq3XX8XCzA"/>
+  <term:ValueSetCode xmi:id="_zUTv0K0zEeGiKq3XX8XCzA" conceptName="Retired, life event (finding)" base_EnumerationLiteral="_zUTIwK0zEeGiKq3XX8XCzA"/>
+  <term:ValueSetCode xmi:id="_1GHrsa0zEeGiKq3XX8XCzA" conceptName="Self-employed (finding)" base_EnumerationLiteral="_1GHrsK0zEeGiKq3XX8XCzA"/>
+  <term:ValueSetCode xmi:id="_2uCEsK0zEeGiKq3XX8XCzA" conceptName="Student (occupation)" base_EnumerationLiteral="_2uBdoK0zEeGiKq3XX8XCzA"/>
+  <term:ValueSetCode xmi:id="_4VXO4a0zEeGiKq3XX8XCzA" conceptName="Temporarily unable to perform work activities due to medical condition (finding)" base_EnumerationLiteral="_4VXO4K0zEeGiKq3XX8XCzA"/>
+  <term:ValueSetCode xmi:id="_6OAykK0zEeGiKq3XX8XCzA" conceptName="Unemployed (finding)" base_EnumerationLiteral="_6OALgK0zEeGiKq3XX8XCzA"/>
+  <term:ValueSetCode xmi:id="_8Kkl4K0zEeGiKq3XX8XCzA" conceptName="Unknown">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_6VcAwZ3_EeGFifiMpnccVA"/>
+  </term:ValueSetCode>
+  <term:ValueSetCode xmi:id="_aPJ9YK1AEeGiKq3XX8XCzA" conceptName="FluAV RNA.NA  Rto XXX SNP" base_EnumerationLiteral="_aPJWUK1AEeGiKq3XX8XCzA"/>
+  <term:ValueSetCode xmi:id="_fVaFga1AEeGiKq3XX8XCzA" conceptName="FluAV RNA.NA XXX amp/seq" base_EnumerationLiteral="_fVaFgK1AEeGiKq3XX8XCzA"/>
+  <term:ValueSetCode xmi:id="_qc1F4K1AEeGiKq3XX8XCzA" conceptName="FluAV RNA.M2 XXX amp/seq" base_EnumerationLiteral="_qc0e0K1AEeGiKq3XX8XCzA"/>
+  <term:ValueSetCode xmi:id="_sbSWoK1AEeGiKq3XX8XCzA" conceptName="CMV Ag Islt Ql IF" base_EnumerationLiteral="_sbRvkK1AEeGiKq3XX8XCzA"/>
+  <term:ValueSetCode xmi:id="_uCV0Aa1AEeGiKq3XX8XCzA" conceptName="HPIV1 Ag Islt Ql IF" base_EnumerationLiteral="_uCV0AK1AEeGiKq3XX8XCzA"/>
+  <term:ValueSetCode xmi:id="_veoL0a1AEeGiKq3XX8XCzA" conceptName="HPIV2 Ag Islt Ql IF" base_EnumerationLiteral="_veoL0K1AEeGiKq3XX8XCzA"/>
+  <term:ValueSetCode xmi:id="_w_80oK1AEeGiKq3XX8XCzA" conceptName="HPIV3 Ag Islt Ql IF" base_EnumerationLiteral="_w_8NkK1AEeGiKq3XX8XCzA"/>
+  <term:ValueSetCode xmi:id="_yiFVwK1AEeGiKq3XX8XCzA" conceptName="HPIV4 Ag Islt Ql IF" base_EnumerationLiteral="_yiEusK1AEeGiKq3XX8XCzA"/>
+  <term:ValueSetCode xmi:id="_0ALEYK1AEeGiKq3XX8XCzA" conceptName="Picornavirus AG Islt Ql IF" base_EnumerationLiteral="_0AKdUK1AEeGiKq3XX8XCzA"/>
+  <term:ValueSetCode xmi:id="_1tQ4Ua1AEeGiKq3XX8XCzA" conceptName="FLUAV A H5a RNA XXX Ql PCR" base_EnumerationLiteral="_1tQ4UK1AEeGiKq3XX8XCzA"/>
+  <term:ValueSetCode xmi:id="_3S6Aca1AEeGiKq3XX8XCzA" conceptName="FLUAV A H5b RNA XXX Ql PCR" base_EnumerationLiteral="_3S6AcK1AEeGiKq3XX8XCzA"/>
+  <term:ValueSetCode xmi:id="_4zFZwK1AEeGiKq3XX8XCzA" conceptName="Human Rnase P RNA XXX Ql PCR" base_EnumerationLiteral="_4zEysK1AEeGiKq3XX8XCzA"/>
+  <term:ValueSetCode xmi:id="_6McZYa1AEeGiKq3XX8XCzA" conceptName="Enterovirus AG Islt Ql DFA" base_EnumerationLiteral="_6McZYK1AEeGiKq3XX8XCzA"/>
+  <term:ValueSetCode xmi:id="_qtbRMK1BEeGiKq3XX8XCzA" conceptName="Chest XR"/>
+  <term:ValueSetCode xmi:id="_tCNXQK1BEeGiKq3XX8XCzA" conceptName="Chest XR Lat+PA W insp+exp"/>
+  <term:ValueSetCode xmi:id="_vikbMK1BEeGiKq3XX8XCzA" conceptName="Chest XR PA+Lat"/>
+  <term:ValueSetCode xmi:id="_0RdMMa1BEeGiKq3XX8XCzA" conceptName="Influenza A, rapid diagnostic test" base_EnumerationLiteral="_0RdMMK1BEeGiKq3XX8XCzA"/>
+  <term:ValueSetCode xmi:id="_2hOPYa1BEeGiKq3XX8XCzA" conceptName="FLUAV XXX Ql Cult" base_EnumerationLiteral="_2hOPYK1BEeGiKq3XX8XCzA"/>
+  <term:ValueSetCode xmi:id="_5F-EEa1BEeGiKq3XX8XCzA" conceptName="FLUV XXX Shell Vial Cult" base_EnumerationLiteral="_5F-EEK1BEeGiKq3XX8XCzA"/>
+  <term:ValueSetCode xmi:id="_69QV0a1BEeGiKq3XX8XCzA" conceptName="FLUV Spt Cult" base_EnumerationLiteral="_69QV0K1BEeGiKq3XX8XCzA"/>
+  <term:ValueSetCode xmi:id="_8vWlkK1BEeGiKq3XX8XCzA" conceptName="FLUV Sputum trach asp Cult" base_EnumerationLiteral="_8vV-gK1BEeGiKq3XX8XCzA"/>
+  <term:ValueSetCode xmi:id="_-ND5sK1BEeGiKq3XX8XCzA" conceptName="FLUV Throat Cult" base_EnumerationLiteral="_-NDSoK1BEeGiKq3XX8XCzA"/>
+  <term:ValueSetCode xmi:id="__u1Oca1BEeGiKq3XX8XCzA" conceptName="FLUV XXX Cult" base_EnumerationLiteral="__u1OcK1BEeGiKq3XX8XCzA"/>
+  <term:ValueSetCode xmi:id="_BaZ_cK1CEeGiKq3XX8XCzA" conceptName="Virus Islt Cult" base_EnumerationLiteral="_BaZYYK1CEeGiKq3XX8XCzA"/>
+  <term:ValueSetCode xmi:id="_C5P8AK1CEeGiKq3XX8XCzA" conceptName="Virus Nose Cult" base_EnumerationLiteral="_C5PU8K1CEeGiKq3XX8XCzA"/>
+  <term:ValueSetCode xmi:id="_EOkJIK1CEeGiKq3XX8XCzA" conceptName="Virus Throat Cult" base_EnumerationLiteral="_EOjiEK1CEeGiKq3XX8XCzA"/>
+  <term:ValueSetCode xmi:id="_EQFMEa1CEeGiKq3XX8XCzA" conceptName="Virus Plr Cult" base_EnumerationLiteral="_EQFMEK1CEeGiKq3XX8XCzA"/>
+  <term:ValueSetCode xmi:id="_F9yrEK1CEeGiKq3XX8XCzA" conceptName="Virus Spt Cult" base_EnumerationLiteral="_F9yEAK1CEeGiKq3XX8XCzA"/>
+  <term:ValueSetCode xmi:id="_KV1CUa1CEeGiKq3XX8XCzA" conceptName="Virus Tiss Cult" base_EnumerationLiteral="_KV1CUK1CEeGiKq3XX8XCzA"/>
+  <term:ValueSetCode xmi:id="_MOE9YK1CEeGiKq3XX8XCzA" conceptName="Virus XXX Cult" base_EnumerationLiteral="_MOEWUK1CEeGiKq3XX8XCzA"/>
+  <term:ValueSetCode xmi:id="_M0xJ8a1CEeGiKq3XX8XCzA" conceptName="Virus XXX Shell Vial Cult" base_EnumerationLiteral="_M0xJ8K1CEeGiKq3XX8XCzA"/>
+  <term:ValueSetCode xmi:id="_QWsYkK1CEeGiKq3XX8XCzA" conceptName="FLUAV RNA XXX Ql PCR" base_EnumerationLiteral="_QWrxgK1CEeGiKq3XX8XCzA"/>
+  <term:ValueSetCode xmi:id="_VOhqMa1CEeGiKq3XX8XCzA" conceptName="FLUAV RNA XXX PCR-aCnc" base_EnumerationLiteral="_VOhqMK1CEeGiKq3XX8XCzA"/>
+  <term:ValueSetCode xmi:id="_YqQKMa1CEeGiKq3XX8XCzA" conceptName="FLUAV RNA Islt Ql PCR" base_EnumerationLiteral="_YqQKMK1CEeGiKq3XX8XCzA"/>
+  <term:ValueSetCode xmi:id="_aH3-wK1CEeGiKq3XX8XCzA" conceptName="FLUAV RNA # XXX PCR" base_EnumerationLiteral="_aH3XsK1CEeGiKq3XX8XCzA"/>
+  <term:ValueSetCode xmi:id="_ceyLwK1CEeGiKq3XX8XCzA" conceptName="FLUAV Subtyp XXX PCR"/>
+  <term:ValueSetCode xmi:id="_eCcW4K1CEeGiKq3XX8XCzA" conceptName="FLUAV Subtyp XXX PCR" base_EnumerationLiteral="_eCbv0K1CEeGiKq3XX8XCzA"/>
+  <term:ValueSetCode xmi:id="_fnykEK1CEeGiKq3XX8XCzA" conceptName="FLUAV HA H5 Asian RNA XXX Ql PCR" base_EnumerationLiteral="_fnx9AK1CEeGiKq3XX8XCzA"/>
+  <term:ValueSetCode xmi:id="_g7gOsa1CEeGiKq3XX8XCzA" conceptName="FLUAV HA H5 RNA XXX Ql PCR" base_EnumerationLiteral="_g7gOsK1CEeGiKq3XX8XCzA"/>
+  <term:ValueSetCode xmi:id="_jNrssa1CEeGiKq3XX8XCzA" conceptName="FLUAV HA H5 RNA XXX PCR-aCnc" base_EnumerationLiteral="_jNrssK1CEeGiKq3XX8XCzA"/>
+  <term:ValueSetCode xmi:id="_kka2IK1CEeGiKq3XX8XCzA" conceptName="FLUAV HA H5 RNA Islt Ql PCR" base_EnumerationLiteral="_kkaPEK1CEeGiKq3XX8XCzA"/>
+  <term:ValueSetCode xmi:id="_l4IgwK1CEeGiKq3XX8XCzA" conceptName="FLUAV HA H6 RNA XXX Ql PCR" base_EnumerationLiteral="_l4H5sK1CEeGiKq3XX8XCzA"/>
+  <term:ValueSetCode xmi:id="_nbIkkK1CEeGiKq3XX8XCzA" conceptName="FLUAV HA H6 RNA XXX PCR-aCnc" base_EnumerationLiteral="_nbH9gK1CEeGiKq3XX8XCzA"/>
+  <term:ValueSetCode xmi:id="_tRSfoa1CEeGiKq3XX8XCzA" conceptName="FLUAV HA H7 RNA XXX Ql PCR" base_EnumerationLiteral="_tRSfoK1CEeGiKq3XX8XCzA"/>
+  <term:ValueSetCode xmi:id="_vF0_Ya1CEeGiKq3XX8XCzA" conceptName="FLUAV HA H7 RNA XXX PCR-aCnc" base_EnumerationLiteral="_vF0_YK1CEeGiKq3XX8XCzA"/>
+  <term:ValueSetCode xmi:id="_w88SAK1CEeGiKq3XX8XCzA" conceptName="FLUAV HA H7 RNA Islt Ql PCR" base_EnumerationLiteral="_w87q8K1CEeGiKq3XX8XCzA"/>
+  <term:ValueSetCode xmi:id="_0lCaEa1CEeGiKq3XX8XCzA" conceptName="FLUAV HA H9 RNA XXX Ql PCR" base_EnumerationLiteral="_0lCaEK1CEeGiKq3XX8XCzA"/>
+  <term:ValueSetCode xmi:id="_192nIK1CEeGiKq3XX8XCzA" conceptName="FLUAV+FLUBV RNA XXX PCR" base_EnumerationLiteral="_192AEK1CEeGiKq3XX8XCzA"/>
+  <term:ValueSetCode xmi:id="_3bjUMa1CEeGiKq3XX8XCzA" conceptName="FLUAV+FLUBV RNA Islt PCR" base_EnumerationLiteral="_3bjUMK1CEeGiKq3XX8XCzA"/>
+  <term:ValueSetVersion xmi:id="_L3el0K1DEeGiKq3XX8XCzA" identifier="2.16.840.1.114222.4.11.6034" fullName="Disease Type (Flu)" source="PHIN-VADS" url="https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.6034" definition="Influenza disease type value set has problems or disease related to influenza. &#xD;&#xA;This value set is based upon SNOMED CT" binding="Dynamic" base_Enumeration="_L3d-wK1DEeGiKq3XX8XCzA">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_uSWpIK1EEeGiKq3XX8XCzA" conceptName="Influenza due to Influenza A virus subtype H1N1 (disorder)" base_EnumerationLiteral="_uSWCEK1EEeGiKq3XX8XCzA"/>
+  <term:ValueSetCode xmi:id="_08Hyca1EEeGiKq3XX8XCzA" conceptName="Influenza due to Influenza A virus (disorder)" base_EnumerationLiteral="_08HycK1EEeGiKq3XX8XCzA"/>
+  <term:ValueSetCode xmi:id="_3VQ0EK1EEeGiKq3XX8XCzA" conceptName="Influenza B virus present (finding)" base_EnumerationLiteral="_3VQNAK1EEeGiKq3XX8XCzA"/>
+  <term:ValueSetCode xmi:id="_42LNMa1EEeGiKq3XX8XCzA" conceptName="Influenza A virus subtype H3 present (finding)" base_EnumerationLiteral="_42LNMK1EEeGiKq3XX8XCzA"/>
+  <term:ValueSetCode xmi:id="_6Roeka1EEeGiKq3XX8XCzA" conceptName="Influenza A virus subtype H1 present (finding)" base_EnumerationLiteral="_6RoekK1EEeGiKq3XX8XCzA"/>
+  <term:ValueSetCode xmi:id="_7w1ngK1EEeGiKq3XX8XCzA" conceptName="Influenza due to influenza virus type A, avian, H5N1 strain (disorder)" base_EnumerationLiteral="_7w1AcK1EEeGiKq3XX8XCzA"/>
+  <term:ValueSetCode xmi:id="_9pi1kK1EEeGiKq3XX8XCzA" conceptName="Healthcare associated influenza disease (disorder)" base_EnumerationLiteral="_9piOgK1EEeGiKq3XX8XCzA"/>
+  <term:ValueSetCode xmi:id="__UqTkK1EEeGiKq3XX8XCzA" conceptName="Influenza of the central nervous system (disorder)" base_EnumerationLiteral="__UpsgK1EEeGiKq3XX8XCzA"/>
+  <term:ValueSetCode xmi:id="_ArYO4a1FEeGiKq3XX8XCzA" conceptName="Influenza-like symptoms (finding)" base_EnumerationLiteral="_ArYO4K1FEeGiKq3XX8XCzA"/>
+  <term:ValueSetCode xmi:id="_CE8p4K1FEeGiKq3XX8XCzA" conceptName="Influenza with gastrointestinal tract involvement (disorder)" base_EnumerationLiteral="_CE8C0K1FEeGiKq3XX8XCzA"/>
+  <term:ValueSetCode xmi:id="_DZIOka1FEeGiKq3XX8XCzA" conceptName="Influenza with pharyngitis (disorder)" base_EnumerationLiteral="_DZIOkK1FEeGiKq3XX8XCzA"/>
+  <term:ValueSetCode xmi:id="_Espr8a1FEeGiKq3XX8XCzA" conceptName="Influenza with laryngitis (disorder)" base_EnumerationLiteral="_Espr8K1FEeGiKq3XX8XCzA"/>
+  <term:ValueSetCode xmi:id="_GKLZ4K1FEeGiKq3XX8XCzA" conceptName="Influenza with pneumonia, influenza virus identified (disorder)" base_EnumerationLiteral="_GKKy0K1FEeGiKq3XX8XCzA"/>
+  <term:ValueSetCode xmi:id="_HXHHEa1FEeGiKq3XX8XCzA" conceptName="Pneumonia and influenza (disorder)" base_EnumerationLiteral="_HXHHEK1FEeGiKq3XX8XCzA"/>
+  <term:ValueSetCode xmi:id="_I62KsK1FEeGiKq3XX8XCzA" conceptName="Acute myocarditis - influenzal (disorder)" base_EnumerationLiteral="_I61joK1FEeGiKq3XX8XCzA"/>
+  <term:ValueSetCode xmi:id="_KcjOAK1FEeGiKq3XX8XCzA" conceptName="Influenza-like illness (finding)" base_EnumerationLiteral="_Kcim8K1FEeGiKq3XX8XCzA"/>
+  <term:ValueSetCode xmi:id="_L0B-UK1FEeGiKq3XX8XCzA" conceptName="Equine influenza (disorder)" base_EnumerationLiteral="_L0BXQK1FEeGiKq3XX8XCzA"/>
+  <term:ValueSetCode xmi:id="_M90Q4a1FEeGiKq3XX8XCzA" conceptName="Influenza due to Influenza virus, type C (disorder)" base_EnumerationLiteral="_M90Q4K1FEeGiKq3XX8XCzA"/>
+  <term:ValueSetCode xmi:id="_QJaDIK1FEeGiKq3XX8XCzA" conceptName="Myocarditis due to influenza virus (disorder)" base_EnumerationLiteral="_QJZcEK1FEeGiKq3XX8XCzA"/>
+  <term:ValueSetCode xmi:id="_Q8wLoK1FEeGiKq3XX8XCzA" conceptName="Influenza with encephalopathy (disorder)" base_EnumerationLiteral="_Q8vkkK1FEeGiKq3XX8XCzA"/>
+  <term:ValueSetCode xmi:id="_SVYLcK1FEeGiKq3XX8XCzA" conceptName="Influenza with respiratory manifestation other than pneumonia (disorder)" base_EnumerationLiteral="_SVXkYK1FEeGiKq3XX8XCzA"/>
+  <term:ValueSetCode xmi:id="_T2FwQK1FEeGiKq3XX8XCzA" conceptName="Influenza with non-respiratory manifestation (disorder)" base_EnumerationLiteral="_T2FJMK1FEeGiKq3XX8XCzA"/>
+  <term:ValueSetCode xmi:id="_VLhSIK1FEeGiKq3XX8XCzA" conceptName="Avian influenza (disorder)" base_EnumerationLiteral="_VLgrEK1FEeGiKq3XX8XCzA"/>
+  <term:ValueSetCode xmi:id="_XrX_wK1FEeGiKq3XX8XCzA" conceptName="Influenzal acute upper respiratory infection (disorder)" base_EnumerationLiteral="_XrXYsK1FEeGiKq3XX8XCzA"/>
+  <term:ValueSetCode xmi:id="_Y5buUK1FEeGiKq3XX8XCzA" conceptName="Influenzal bronchopneumonia (disorder)" base_EnumerationLiteral="_Y5bHQK1FEeGiKq3XX8XCzA"/>
+  <term:ValueSetCode xmi:id="_aO8Isa1FEeGiKq3XX8XCzA" conceptName="Influenza due to Influenza virus, type B (disorder)" base_EnumerationLiteral="_aO8IsK1FEeGiKq3XX8XCzA"/>
+  <term:ValueSetCode xmi:id="_boxpca1FEeGiKq3XX8XCzA" conceptName="Influenza (disorder)" base_EnumerationLiteral="_boxpcK1FEeGiKq3XX8XCzA"/>
+  <term:ValueSetVersion xmi:id="_xTiz0K6lEeGvorhCWvMgmA" identifier="2.16.840.1.114222.4.11.6019" fullName="Chest Imaging Tests" source="PHIN-VADS" url="https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.6019" definition="chest imaging tests associated with case reporting" binding="Dynamic" base_Enumeration="_xPNGYK6lEeGvorhCWvMgmA">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_64f74a6lEeGvorhCWvMgmA" conceptName="Chest XR AP+PA Upr" base_EnumerationLiteral="_64f74K6lEeGvorhCWvMgmA"/>
+  <term:ValueSetCode xmi:id="__EnXAK6lEeGvorhCWvMgmA" conceptName="Chest XR AP+Lat" base_EnumerationLiteral="__Emv8K6lEeGvorhCWvMgmA"/>
+  <term:ValueSetCode xmi:id="_Aufe4K6mEeGvorhCWvMgmA" conceptName="Chest XR" base_EnumerationLiteral="_Aue30K6mEeGvorhCWvMgmA"/>
+  <term:ValueSetCode xmi:id="_C2EPYa6mEeGvorhCWvMgmA" conceptName="Chest CT High Res" base_EnumerationLiteral="_C2EPYK6mEeGvorhCWvMgmA"/>
+  <term:ValueSetCode xmi:id="_Eovt8K6mEeGvorhCWvMgmA" conceptName="Chest CT High Res WO contr" base_EnumerationLiteral="_EovG4K6mEeGvorhCWvMgmA"/>
+  <term:ValueSetCode xmi:id="_GUrrUa6mEeGvorhCWvMgmA" conceptName="Chest XR Lat+PA W insp+exp" base_EnumerationLiteral="_GUrrUK6mEeGvorhCWvMgmA"/>
+  <term:ValueSetCode xmi:id="_HqpYsK6mEeGvorhCWvMgmA" conceptName="Chest XR PA+Lat" base_EnumerationLiteral="_HqoxoK6mEeGvorhCWvMgmA"/>
+  <term:ValueSetVersion xmi:id="_lPqAccIHEeG2u52rMiBZyw" identifier="2.16.840.1.114222.4.11.6029" source="PHIN-VADS" base_Enumeration="_lPqAcMIHEeG2u52rMiBZyw"/>
+  <term:ValueSetCode xmi:id="_vhplcMqeEeGgc5A9WNznfg" conceptName="Asymptomatic" base_EnumerationLiteral="_vhi3wMqeEeGgc5A9WNznfg"/>
+  <term:ValueSetCode xmi:id="_0nWT8MqeEeGgc5A9WNznfg"/>
+</xmi:XMI>

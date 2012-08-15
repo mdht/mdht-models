@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML">
+  <uml:Package xmi:id="_8GrssE6yEeG_dcj91TvCTg" name="cocci">
+    <packageImport xmi:id="_8KQlIE6yEeG_dcj91TvCTg">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_6MwukMgnEeCI5ZpfyBisiQ"/>
+    </packageImport>
+    <packageImport xmi:id="_8KQlIU6yEeG_dcj91TvCTg">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.cda.ccd.model/model/ccd.uml#_qQyD8jxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_8KQlIk6yEeG_dcj91TvCTg">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ii81kjxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_8KQlI06yEeG_dcj91TvCTg">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_XgMSwzxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_8KQlJE6yEeG_dcj91TvCTg">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVbeUDcEd6xYZuu1VKCVw"/>
+    </packageImport>
+    <packageImport xmi:id="_8KQlJU6yEeG_dcj91TvCTg">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_KnCD4CFjEd-3s7f6mWX-3A"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Association" xmi:id="_8GrssU6yEeG_dcj91TvCTg" memberEnd="_8Grssk6yEeG_dcj91TvCTg">
+      <ownedEnd xmi:id="_8Grssk6yEeG_dcj91TvCTg" name="" visibility="private" association="_8GrssU6yEeG_dcj91TvCTg">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8Grss06yEeG_dcj91TvCTg" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8GrstE6yEeG_dcj91TvCTg"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_8GrstU6yEeG_dcj91TvCTg" memberEnd="_8Grstk6yEeG_dcj91TvCTg">
+      <ownedEnd xmi:id="_8Grstk6yEeG_dcj91TvCTg" name="" visibility="private" association="_8GrstU6yEeG_dcj91TvCTg">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8Grst06yEeG_dcj91TvCTg" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8GrsuE6yEeG_dcj91TvCTg"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_8Jg-QU6yEeG_dcj91TvCTg" name="CoccidioidesCaseReport">
+      <generalization xmi:id="_8Jg-Q06yEeG_dcj91TvCTg">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_6PmAIcgnEeCI5ZpfyBisiQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_qIFt4FNMEeGtHuzb-BTYvw" name="coccidioidesPHCRSocialHistorySection" type="_l3PjwFNMEeGtHuzb-BTYvw" association="_qIFt4lNMEeGtHuzb-BTYvw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qIFt4VNMEeGtHuzb-BTYvw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_1apAMFNMEeGtHuzb-BTYvw" name="title" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2aRRMFNMEeGtHuzb-BTYvw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2aRRMVNMEeGtHuzb-BTYvw" value="1"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_Bn1soEAJEd6wZe6nFLrjsw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_8nFYwFNMEeGtHuzb-BTYvw" name="coccidioidesPHCRClinicalInformationSection" type="_xMe9sFNMEeGtHuzb-BTYvw" association="_8nFYwlNMEeGtHuzb-BTYvw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9erIEFNMEeGtHuzb-BTYvw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9erIEVNMEeGtHuzb-BTYvw" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_H3QsgFNNEeGtHuzb-BTYvw" name="coccidioidesPHCRTreatmentInformationSection" type="_GDoLsFNNEeGtHuzb-BTYvw" association="_H3QsglNNEeGtHuzb-BTYvw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_H3QsgVNNEeGtHuzb-BTYvw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_UiCWAFNNEeGtHuzb-BTYvw" name="coccidioidesPHCRRelevantDxTestsSection" type="_SGUhgFNNEeGtHuzb-BTYvw" association="_UiCWAlNNEeGtHuzb-BTYvw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UiCWAVNNEeGtHuzb-BTYvw"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_l3PjwFNMEeGtHuzb-BTYvw" name="CoccidioidesPHCRSocialHistorySection">
+      <generalization xmi:id="_l3ZUwFNMEeGtHuzb-BTYvw">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_Fw7f4MgpEeCI5ZpfyBisiQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_6aFBMKOGEeG3gKoyOiGNFA" name="coccidioidesPossibleExposureLocationAct" type="_UrjaoKNrEeG3gKoyOiGNFA" association="_6aFBMqOGEeG3gKoyOiGNFA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7ZQmQKOGEeG3gKoyOiGNFA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7ZQmQaOGEeG3gKoyOiGNFA"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_qIFt4lNMEeGtHuzb-BTYvw" memberEnd="_qIFt4FNMEeGtHuzb-BTYvw _qIFt41NMEeGtHuzb-BTYvw">
+      <ownedEnd xmi:id="_qIFt41NMEeGtHuzb-BTYvw" type="_8Jg-QU6yEeG_dcj91TvCTg" association="_qIFt4lNMEeGtHuzb-BTYvw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_xMe9sFNMEeGtHuzb-BTYvw" name="CoccidioidesPHCRClinicalInformationSection">
+      <generalization xmi:id="_xMe9sVNMEeGtHuzb-BTYvw">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_84uJEMqZEeCRBIG_Gkv9FQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_n-bdQFNNEeGtHuzb-BTYvw" name="coccidioidesCaseObservation" type="_gJAZIFNNEeGtHuzb-BTYvw" association="_n-bdQlNNEeGtHuzb-BTYvw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ozLT8FNNEeGtHuzb-BTYvw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ozLT8VNNEeGtHuzb-BTYvw" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_MiAK4KO-EeG3gKoyOiGNFA" name="coccidioidesImmunosuppressedMedicalConditionHistoryObservation" type="_pq31kIrzEeGZSJwvmfGvgw" association="_MiAK4qO-EeG3gKoyOiGNFA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NWmQkKO-EeG3gKoyOiGNFA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NWmQkaO-EeG3gKoyOiGNFA"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_8nFYwlNMEeGtHuzb-BTYvw" memberEnd="_8nFYwFNMEeGtHuzb-BTYvw _8nFYw1NMEeGtHuzb-BTYvw">
+      <ownedEnd xmi:id="_8nFYw1NMEeGtHuzb-BTYvw" type="_8Jg-QU6yEeG_dcj91TvCTg" association="_8nFYwlNMEeGtHuzb-BTYvw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_GDoLsFNNEeGtHuzb-BTYvw" name="CoccidioidesPHCRTreatmentInformationSection">
+      <generalization xmi:id="_GDoLsVNNEeGtHuzb-BTYvw">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_XTjpIMqaEeCRBIG_Gkv9FQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_3CsNcKNsEeG3gKoyOiGNFA" name="coccidioidesTherapeuticRegimenAct" type="_zrXsUKNsEeG3gKoyOiGNFA" association="_3C1-caNsEeG3gKoyOiGNFA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_obbtQKQpEeG3gKoyOiGNFA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_obk3MKQpEeG3gKoyOiGNFA" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_H3QsglNNEeGtHuzb-BTYvw" memberEnd="_H3QsgFNNEeGtHuzb-BTYvw _H3Qsg1NNEeGtHuzb-BTYvw">
+      <ownedEnd xmi:id="_H3Qsg1NNEeGtHuzb-BTYvw" type="_8Jg-QU6yEeG_dcj91TvCTg" association="_H3QsglNNEeGtHuzb-BTYvw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_SGUhgFNNEeGtHuzb-BTYvw" name="CoccidioidesPHCRRelevantDxTestsSection">
+      <generalization xmi:id="_SGUhgVNNEeGtHuzb-BTYvw">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_2dxgkNM5EeCbJdgmSYxI0g"/>
+      </generalization>
+      <ownedAttribute xmi:id="_pxg3sJiqEeGnvPbsE6qbcQ" name="coccidioidesResultOrganizer" type="_m6OhgJiqEeGnvPbsE6qbcQ" association="_pxg3spiqEeGnvPbsE6qbcQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qpY64JiqEeGnvPbsE6qbcQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qpY64ZiqEeGnvPbsE6qbcQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_MfbggFQIEeGtHuzb-BTYvw" name="coccidioidesResultObservation" type="_KWyZAFQIEeGtHuzb-BTYvw" association="_MfbgglQIEeGtHuzb-BTYvw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rjWowJiqEeGnvPbsE6qbcQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rjWowZiqEeGnvPbsE6qbcQ"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_UiCWAlNNEeGtHuzb-BTYvw" memberEnd="_UiCWAFNNEeGtHuzb-BTYvw _UiCWA1NNEeGtHuzb-BTYvw">
+      <ownedEnd xmi:id="_UiCWA1NNEeGtHuzb-BTYvw" type="_8Jg-QU6yEeG_dcj91TvCTg" association="_UiCWAlNNEeGtHuzb-BTYvw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_asBMAFNNEeGtHuzb-BTYvw" name="CoccidioidesSignsAndSymptomsObservation">
+      <generalization xmi:id="_asBMAVNNEeGtHuzb-BTYvw">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#__cLgwNQPEeC4C5jYVS2kfQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_3TM-AKWCEeG5_K9BCQxvMA" name="value" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3TM-AaWCEeG5_K9BCQxvMA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3TM-AqWCEeG5_K9BCQxvMA" value="1"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_gJAZIFNNEeGtHuzb-BTYvw" name="CoccidioidesCaseObservation">
+      <generalization xmi:id="_gJAZIVNNEeGtHuzb-BTYvw">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_p8bDQNTCEeC18pmrrt-Mbg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_jsP2YFNNEeGtHuzb-BTYvw" name="coccidioidesSignsAndSymptomsObservation" type="_asBMAFNNEeGtHuzb-BTYvw" association="_jsP2YlNNEeGtHuzb-BTYvw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_k7OK8FNNEeGtHuzb-BTYvw" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_k7OK8VNNEeGtHuzb-BTYvw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_vh22sKWEEeG5_K9BCQxvMA" name="value" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vh22saWEEeG5_K9BCQxvMA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vh22sqWEEeG5_K9BCQxvMA" value="1"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_tRpv0Eo-Ed6c3qsAxlFHaQ"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_jsP2YlNNEeGtHuzb-BTYvw" memberEnd="_jsP2YFNNEeGtHuzb-BTYvw _jsP2Y1NNEeGtHuzb-BTYvw">
+      <ownedEnd xmi:id="_jsP2Y1NNEeGtHuzb-BTYvw" type="_gJAZIFNNEeGtHuzb-BTYvw" association="_jsP2YlNNEeGtHuzb-BTYvw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_n-bdQlNNEeGtHuzb-BTYvw" memberEnd="_n-bdQFNNEeGtHuzb-BTYvw _n-bdQ1NNEeGtHuzb-BTYvw">
+      <ownedEnd xmi:id="_n-bdQ1NNEeGtHuzb-BTYvw" type="_xMe9sFNMEeGtHuzb-BTYvw" association="_n-bdQlNNEeGtHuzb-BTYvw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_KWyZAFQIEeGtHuzb-BTYvw" name="CoccidioidesResultObservation">
+      <generalization xmi:id="_KWyZAVQIEeGtHuzb-BTYvw">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#__3pL0PNrEeCOm7Y48UO5Tg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_PIoiEKWDEeG5_K9BCQxvMA" name="code" visibility="private">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_MfbgglQIEeGtHuzb-BTYvw" memberEnd="_MfbggFQIEeGtHuzb-BTYvw _Mfbgg1QIEeGtHuzb-BTYvw">
+      <ownedEnd xmi:id="_Mfbgg1QIEeGtHuzb-BTYvw" type="_SGUhgFNNEeGtHuzb-BTYvw" association="_MfbgglQIEeGtHuzb-BTYvw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_pq31kIrzEeGZSJwvmfGvgw" name="CoccidioidesImmunosuppressedMedicalConditionHistoryObservation">
+      <generalization xmi:id="_MQMm0KOKEeG3gKoyOiGNFA">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#__6FcQKBIEeGDSOGpMxCO3w"/>
+      </generalization>
+      <ownedAttribute xmi:id="_QW1HYKO-EeG3gKoyOiGNFA" name="coccidioidesImmunosuppressedMedicalConditionProblemObservation" type="_0X9QEKNtEeG3gKoyOiGNFA" association="_QW1HYqO-EeG3gKoyOiGNFA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RmQH4KO-EeG3gKoyOiGNFA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RmQH4aO-EeG3gKoyOiGNFA"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_m6OhgJiqEeGnvPbsE6qbcQ" name="CoccidioidesResultOrganizer">
+      <generalization xmi:id="_m6YSgJiqEeGnvPbsE6qbcQ">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_0r8IYPNrEeCOm7Y48UO5Tg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_Dj7E4KQnEeG3gKoyOiGNFA" name="coccidioidesResultObservation" type="_KWyZAFQIEeGtHuzb-BTYvw" association="_Dj7E4qQnEeG3gKoyOiGNFA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_E4j8kKQnEeG3gKoyOiGNFA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_E4j8kaQnEeG3gKoyOiGNFA" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_zGNN4KQpEeG3gKoyOiGNFA" name="code" visibility="private">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-results.uml#_UbVD8K6uEd6_ioDelDcPPg"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_pxg3spiqEeGnvPbsE6qbcQ" memberEnd="_pxg3sJiqEeGnvPbsE6qbcQ _pxg3s5iqEeGnvPbsE6qbcQ">
+      <ownedEnd xmi:id="_pxg3s5iqEeGnvPbsE6qbcQ" type="_SGUhgFNNEeGtHuzb-BTYvw" association="_pxg3spiqEeGnvPbsE6qbcQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_UrjaoKNrEeG3gKoyOiGNFA" name="CoccidioidesPossibleExposureLocationAct">
+      <ownedRule xmi:id="_p7fkUKOFEeG3gKoyOiGNFA" name="ParticipantLocation" constrainedElement="_UrjaoKNrEeG3gKoyOiGNFA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_r_hRkKOFEeG3gKoyOiGNFA">
+          <language>Analysis</language>
+          <body>SHALL contain [1..*] participant, which SHALL contain [1..1] @typeCode=&quot;LOC&quot; Location (CodeSystem: 2.16.840.1.113883.5.90 HL7ParticipationType) STATIC</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_UrjaoaNrEeG3gKoyOiGNFA">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_YiANsDxYEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_WDYxcKOFEeG3gKoyOiGNFA" name="classCode" visibility="private" isReadOnly="true">
+        <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOntkDcEd6xYZuu1VKCVw"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_YxR7EKOFEeG3gKoyOiGNFA" value="ACT"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_WDYxcaOFEeG3gKoyOiGNFA" name="code" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_WDYxcqOFEeG3gKoyOiGNFA" name="moodCode" visibility="private" isReadOnly="true">
+        <type xmi:type="uml:Enumeration" href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOpkkDcEd6xYZuu1VKCVw"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_bQkoAKOFEeG3gKoyOiGNFA" value="EVN"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_WDYxc6OFEeG3gKoyOiGNFA" name="statusCode" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_iYn74D55Ed6cla2oXsPtlA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WDYxdKOFEeG3gKoyOiGNFA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WDYxdaOFEeG3gKoyOiGNFA"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_zrXsUKNsEeG3gKoyOiGNFA" name="CoccidioidesTherapeuticRegimenAct">
+      <generalization xmi:id="_zrXsUaNsEeG3gKoyOiGNFA">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_2p558NSrEeC18pmrrt-Mbg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_oqPFoKQmEeG3gKoyOiGNFA" name="coccidioidesTreatmentGivenSubstanceAdministration" type="_I9owEKNtEeG3gKoyOiGNFA" association="_oqPFoqQmEeG3gKoyOiGNFA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rhrM0KQmEeG3gKoyOiGNFA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rhrM0aQmEeG3gKoyOiGNFA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_qEsRcKQmEeG3gKoyOiGNFA" name="coccidioidesTreatmentNotGivenSubstanceAdministration" type="_PvZ-0KNtEeG3gKoyOiGNFA" association="_qEsRcqQmEeG3gKoyOiGNFA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sT4s4KQmEeG3gKoyOiGNFA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sT4s4aQmEeG3gKoyOiGNFA"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_3C1-caNsEeG3gKoyOiGNFA" memberEnd="_3CsNcKNsEeG3gKoyOiGNFA _3C1-cqNsEeG3gKoyOiGNFA">
+      <ownedEnd xmi:id="_3C1-cqNsEeG3gKoyOiGNFA" type="_GDoLsFNNEeGtHuzb-BTYvw" association="_3C1-caNsEeG3gKoyOiGNFA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_I9owEKNtEeG3gKoyOiGNFA" name="CoccidioidesTreatmentGivenSubstanceAdministration">
+      <ownedRule xmi:id="_6bMl0KQmEeG3gKoyOiGNFA" name="GivenMaterialCodeConstraint" constrainedElement="_I9owEKNtEeG3gKoyOiGNFA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_cbuaAKQpEeG3gKoyOiGNFA">
+          <language>Analysis</language>
+          <body>SHALL be selected from ValueSet TBD PHVS_MedicationTreatment_Coccidioidomycosis</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_I9yhEKNtEeG3gKoyOiGNFA">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_XOKZ4NStEeC18pmrrt-Mbg"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_PvZ-0KNtEeG3gKoyOiGNFA" name="CoccidioidesTreatmentNotGivenSubstanceAdministration">
+      <ownedRule xmi:id="_7UHx4KQmEeG3gKoyOiGNFA" name="NotGivenMaterialCodeConstraint" constrainedElement="_PvZ-0KNtEeG3gKoyOiGNFA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_YLCA4KQpEeG3gKoyOiGNFA">
+          <language>Analysis</language>
+          <body>SHALL be selected from ValueSet TBD PHVS_MedicationTreatment_Coccidioidomycosis</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_PvZ-0aNtEeG3gKoyOiGNFA">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr.model/model/phcr.uml#_NbgssNSwEeC18pmrrt-Mbg"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_0X9QEKNtEeG3gKoyOiGNFA" name="CoccidioidesImmunosuppressedMedicalConditionProblemObservation">
+      <generalization xmi:id="_0X9QEaNtEeG3gKoyOiGNFA">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ccd.model/model/.controlled/ccd-problem.uml#_IjIO0DxbEd6JwqSGecoePg"/>
+      </generalization>
+      <ownedAttribute xmi:id="_o_aagKQdEeG3gKoyOiGNFA" name="value" visibility="private" aggregation="composite">
+        <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_o_aagaQdEeG3gKoyOiGNFA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_o_aagqQdEeG3gKoyOiGNFA"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_6aFBMqOGEeG3gKoyOiGNFA" memberEnd="_6aFBMKOGEeG3gKoyOiGNFA _6aFBM6OGEeG3gKoyOiGNFA">
+      <ownedEnd xmi:id="_6aFBM6OGEeG3gKoyOiGNFA" type="_l3PjwFNMEeGtHuzb-BTYvw" association="_6aFBMqOGEeG3gKoyOiGNFA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_MiAK4qO-EeG3gKoyOiGNFA" memberEnd="_MiAK4KO-EeG3gKoyOiGNFA _MiAK46O-EeG3gKoyOiGNFA">
+      <ownedEnd xmi:id="_MiAK46O-EeG3gKoyOiGNFA" type="_xMe9sFNMEeGtHuzb-BTYvw" association="_MiAK4qO-EeG3gKoyOiGNFA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_QW1HYqO-EeG3gKoyOiGNFA" memberEnd="_QW1HYKO-EeG3gKoyOiGNFA _QW1HY6O-EeG3gKoyOiGNFA">
+      <ownedEnd xmi:id="_QW1HY6O-EeG3gKoyOiGNFA" type="_pq31kIrzEeGZSJwvmfGvgw" association="_QW1HYqO-EeG3gKoyOiGNFA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_oqPFoqQmEeG3gKoyOiGNFA" memberEnd="_oqPFoKQmEeG3gKoyOiGNFA _oqPFo6QmEeG3gKoyOiGNFA">
+      <ownedEnd xmi:id="_oqPFo6QmEeG3gKoyOiGNFA" type="_zrXsUKNsEeG3gKoyOiGNFA" association="_oqPFoqQmEeG3gKoyOiGNFA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_qEsRcqQmEeG3gKoyOiGNFA" memberEnd="_qEsRcKQmEeG3gKoyOiGNFA _qEsRc6QmEeG3gKoyOiGNFA">
+      <ownedEnd xmi:id="_qEsRc6QmEeG3gKoyOiGNFA" type="_zrXsUKNsEeG3gKoyOiGNFA" association="_qEsRcqQmEeG3gKoyOiGNFA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Dj7E4qQnEeG3gKoyOiGNFA" memberEnd="_Dj7E4KQnEeG3gKoyOiGNFA _Dj7E46QnEeG3gKoyOiGNFA">
+      <ownedEnd xmi:id="_Dj7E46QnEeG3gKoyOiGNFA" type="_m6OhgJiqEeGnvPbsE6qbcQ" association="_Dj7E4qQnEeG3gKoyOiGNFA"/>
+    </packagedElement>
+    <profileApplication xmi:id="_8GrsuU6yEeG_dcj91TvCTg">
+      <eAnnotations xmi:id="_8Grsuk6yEeG_dcj91TvCTg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_8Grsu06yEeG_dcj91TvCTg">
+      <eAnnotations xmi:id="_8GrsvE6yEeG_dcj91TvCTg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/cda/4#/"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://CDA_PROFILES/CDA.profile.uml#_cxOJEIEVEd6H8o-hO3-B4Q"/>
+    </profileApplication>
+  </uml:Package>
+  <CDA:CodegenSupport xmi:id="_8Jg-QE6yEeG_dcj91TvCTg" basePackage="org.openhealthtools.mdht.uml.cda.phcr" nsPrefix="cocci" nsURI="http://www.openhealthtools.org/mdht/uml/cda/phcr/coccidioides" packageName="cocci" prefix="cocci" base_Namespace="_8GrssE6yEeG_dcj91TvCTg"/>
+  <CDA:CDATemplate xmi:id="_8Jg-Qk6yEeG_dcj91TvCTg" base_Class="_8Jg-QU6yEeG_dcj91TvCTg" templateId="2.16.840.1.113883.10.20.15.1.10" assigningAuthorityName=""/>
+  <CDA:TextValue xmi:id="_4n-e4FNMEeGtHuzb-BTYvw" base_Property="_1apAMFNMEeGtHuzb-BTYvw" value="Public Health Case Report - Coccidioidomycosis"/>
+  <CDA:AssociationValidation xmi:id="_I2SgkFNNEeGtHuzb-BTYvw" severity="WARNING" base_Association="_qIFt4lNMEeGtHuzb-BTYvw"/>
+  <CDA:AssociationValidation xmi:id="_JclrkFNNEeGtHuzb-BTYvw" base_Association="_8nFYwlNMEeGtHuzb-BTYvw"/>
+  <CDA:AssociationValidation xmi:id="_KBP30FNNEeGtHuzb-BTYvw" severity="WARNING" base_Association="_H3QsglNNEeGtHuzb-BTYvw"/>
+  <CDA:AssociationValidation xmi:id="_Vm33IFNNEeGtHuzb-BTYvw" severity="WARNING" base_Association="_UiCWAlNNEeGtHuzb-BTYvw"/>
+  <CDA:CDATemplate xmi:id="_7G5GcFNOEeGtHuzb-BTYvw" base_Class="_gJAZIFNNEeGtHuzb-BTYvw" templateId="2.16.840.1.113883.10.20.15.3.87"/>
+  <CDA:CDATemplate xmi:id="_7mVbgFNOEeGtHuzb-BTYvw" base_Class="_xMe9sFNMEeGtHuzb-BTYvw" templateId="2.16.840.1.113883.10.20.15.2.30"/>
+  <CDA:CDATemplate xmi:id="_8I59EFNOEeGtHuzb-BTYvw" base_Class="_SGUhgFNNEeGtHuzb-BTYvw" templateId="2.16.840.1.113883.10.20.15.2.32"/>
+  <CDA:CDATemplate xmi:id="_8kwyoFNOEeGtHuzb-BTYvw" base_Class="_l3PjwFNMEeGtHuzb-BTYvw" templateId="2.16.840.1.113883.10.20.15.2.29"/>
+  <CDA:CDATemplate xmi:id="_9IhnAFNOEeGtHuzb-BTYvw" base_Class="_GDoLsFNNEeGtHuzb-BTYvw" templateId="2.16.840.1.113883.10.20.15.2.31"/>
+  <CDA:CDATemplate xmi:id="_9pdw4FNOEeGtHuzb-BTYvw" base_Class="_asBMAFNNEeGtHuzb-BTYvw" templateId="2.16.840.1.113883.10.20.15.3.88"/>
+  <CDA:CDATemplate xmi:id="_SDHykFQIEeGtHuzb-BTYvw" base_Class="_KWyZAFQIEeGtHuzb-BTYvw" templateId="2.16.840.1.113883.10.20.15.3.93"/>
+  <CDA:Entry xmi:id="_5fl2EIr0EeGZSJwvmfGvgw" base_Association="_n-bdQlNNEeGtHuzb-BTYvw" typeCode="DRIV"/>
+  <CDA:CDATemplate xmi:id="_8YEfEIr0EeGZSJwvmfGvgw" base_Class="_pq31kIrzEeGZSJwvmfGvgw" templateId="2.16.840.1.113883.10.20.15.3.94"/>
+  <CDA:PropertyValidation xmi:id="_LQ_bIIr1EeGZSJwvmfGvgw"/>
+  <CDA:CodeSystemConstraint xmi:id="_Par0YIr1EeGZSJwvmfGvgw" code="ASSERTION">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_VNuKAIr1EeGZSJwvmfGvgw"/>
+  <CDA:PropertyValidation xmi:id="_WqaKcIr1EeGZSJwvmfGvgw" severity="WARNING"/>
+  <CDA:PropertyValidation xmi:id="_ioUt8Ir1EeGZSJwvmfGvgw"/>
+  <CDA:PropertyValidation xmi:id="_usgRgIr1EeGZSJwvmfGvgw" severity="INFO"/>
+  <CDA:Entry xmi:id="_t0pV8JiqEeGnvPbsE6qbcQ" severity="INFO" base_Association="_pxg3spiqEeGnvPbsE6qbcQ" typeCode="DRIV"/>
+  <CDA:Entry xmi:id="_vbKn0JiqEeGnvPbsE6qbcQ" severity="WARNING" base_Association="_MfbgglQIEeGtHuzb-BTYvw" typeCode="DRIV"/>
+  <CDA:ValueSetConstraint xmi:id="_-HDB0Jl4EeGWPdiKsT3JOQ">
+    <reference href="cocci-vocab.uml#_P02VwZl4EeGWPdiKsT3JOQ"/>
+  </CDA:ValueSetConstraint>
+  <CDA:CDATemplate xmi:id="_aeu6MKNrEeG3gKoyOiGNFA" base_Class="_UrjaoKNrEeG3gKoyOiGNFA" templateId="2.16.840.1.113883.10.20.15.3.86"/>
+  <CDA:CDATemplate xmi:id="_1HdP0KNsEeG3gKoyOiGNFA" base_Class="_zrXsUKNsEeG3gKoyOiGNFA" templateId="2.16.840.1.113883.10.20.15.3.89"/>
+  <CDA:CDATemplate xmi:id="_KSuTsKNtEeG3gKoyOiGNFA" base_Class="_I9owEKNtEeG3gKoyOiGNFA" templateId="2.16.840.1.113883.10.20.15.3.90"/>
+  <CDA:CDATemplate xmi:id="_Q1vUwKNtEeG3gKoyOiGNFA" base_Class="_PvZ-0KNtEeG3gKoyOiGNFA" templateId="2.16.840.1.113883.10.20.15.3.91"/>
+  <CDA:CDATemplate xmi:id="_4iFuMKNtEeG3gKoyOiGNFA" base_Class="_0X9QEKNtEeG3gKoyOiGNFA" templateId="2.16.840.1.113883.10.20.15.3.95"/>
+  <CDA:CDATemplate xmi:id="_6f3CcKNtEeG3gKoyOiGNFA" base_Class="_m6OhgJiqEeGnvPbsE6qbcQ" templateId="2.16.840.1.113883.10.20.15.3.92"/>
+  <CDA:PropertyValidation xmi:id="_ZrsU4KOFEeG3gKoyOiGNFA" base_Property="_WDYxcKOFEeG3gKoyOiGNFA"/>
+  <CDA:PropertyValidation xmi:id="_b9IMAKOFEeG3gKoyOiGNFA" base_Property="_WDYxcqOFEeG3gKoyOiGNFA"/>
+  <CDA:CodeSystemConstraint xmi:id="_gX8xgKOFEeG3gKoyOiGNFA" code="413350009" displayName="Finding with explicit context" base_Property="_WDYxcaOFEeG3gKoyOiGNFA">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:PropertyValidation xmi:id="_kaVo4KOFEeG3gKoyOiGNFA" base_Property="_WDYxc6OFEeG3gKoyOiGNFA"/>
+  <CDA:CodeSystemConstraint xmi:id="_k28sYKOFEeG3gKoyOiGNFA" code="completed" base_Property="_WDYxc6OFEeG3gKoyOiGNFA">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:ConstraintValidation xmi:id="_qeEF4KOFEeG3gKoyOiGNFA" base_Constraint="_p7fkUKOFEeG3gKoyOiGNFA"/>
+  <CDA:Entry xmi:id="_8ECBkKOGEeG3gKoyOiGNFA" severity="INFO" base_Association="_6aFBMqOGEeG3gKoyOiGNFA" typeCode="DRIV"/>
+  <CDA:Entry xmi:id="_N6g18KO-EeG3gKoyOiGNFA" severity="INFO" base_Association="_MiAK4qO-EeG3gKoyOiGNFA" typeCode="DRIV"/>
+  <CDA:EntryRelationship xmi:id="_TS4BwKO-EeG3gKoyOiGNFA" severity="WARNING" base_Association="_QW1HYqO-EeG3gKoyOiGNFA" typeCode="REFR"/>
+  <CDA:PropertyValidation xmi:id="_r8z_wKQdEeG3gKoyOiGNFA" base_Property="_o_aagKQdEeG3gKoyOiGNFA"/>
+  <CDA:ValueSetConstraint xmi:id="_tOwv0KQdEeG3gKoyOiGNFA" base_Property="_o_aagKQdEeG3gKoyOiGNFA">
+    <reference href="cocci-vocab.uml#_f2ffwLPXEeGZv8rS8bsYCw"/>
+  </CDA:ValueSetConstraint>
+  <CDA:EntryRelationship xmi:id="_wmETwKQmEeG3gKoyOiGNFA" severity="WARNING" base_Association="_oqPFoqQmEeG3gKoyOiGNFA" typeCode="COMP"/>
+  <CDA:EntryRelationship xmi:id="_xO51YKQmEeG3gKoyOiGNFA" severity="INFO" base_Association="_qEsRcqQmEeG3gKoyOiGNFA" typeCode="COMP"/>
+  <CDA:AssociationValidation xmi:id="_HC2C0KQnEeG3gKoyOiGNFA" base_Association="_Dj7E4qQnEeG3gKoyOiGNFA"/>
+  <CDA:ConstraintValidation xmi:id="_fhdb4KQpEeG3gKoyOiGNFA" base_Constraint="_6bMl0KQmEeG3gKoyOiGNFA"/>
+  <CDA:ConstraintValidation xmi:id="_gZpBEKQpEeG3gKoyOiGNFA" base_Constraint="_7UHx4KQmEeG3gKoyOiGNFA"/>
+  <CDA:Entry xmi:id="_p0-6IKQpEeG3gKoyOiGNFA" base_Association="_3C1-caNsEeG3gKoyOiGNFA" typeCode="DRIV"/>
+  <CDA:PropertyValidation xmi:id="_zGNN4aQpEeG3gKoyOiGNFA" base_Property="_zGNN4KQpEeG3gKoyOiGNFA">
+    <ruleId>CONF-397</ruleId>
+    <ruleId>CONF:1999</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_3TM-A6WCEeG5_K9BCQxvMA" base_Property="_3TM-AKWCEeG5_K9BCQxvMA"/>
+  <CDA:ValueSetConstraint xmi:id="_4k2zIKWCEeG5_K9BCQxvMA" base_Property="_3TM-AKWCEeG5_K9BCQxvMA">
+    <reference href="cocci-vocab.uml#_ZFBqkaYDEeGa0qcW_cdRCg"/>
+  </CDA:ValueSetConstraint>
+  <CDA:PropertyValidation xmi:id="_MiCTQaWDEeG5_K9BCQxvMA">
+    <ruleId>CONF-416</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_PIoiEaWDEeG5_K9BCQxvMA" base_Property="_PIoiEKWDEeG5_K9BCQxvMA">
+    <ruleId>CONF-412</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ValueSetConstraint xmi:id="_QjrjwKWDEeG5_K9BCQxvMA" base_Property="_PIoiEKWDEeG5_K9BCQxvMA">
+    <reference href="cocci-vocab.uml#_SeVx0KYAEeGa0qcW_cdRCg"/>
+  </CDA:ValueSetConstraint>
+  <CDA:PropertyValidation xmi:id="_vh22s6WEEeG5_K9BCQxvMA" base_Property="_vh22sKWEEeG5_K9BCQxvMA">
+    <ruleId>CONF:1874</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CodeSystemConstraint xmi:id="_2iiEIKWEEeG5_K9BCQxvMA" code="60826002" displayName="Coccidioidomycosis" base_Property="_vh22sKWEEeG5_K9BCQxvMA">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </CDA:CodeSystemConstraint>
+</xmi:XMI>
