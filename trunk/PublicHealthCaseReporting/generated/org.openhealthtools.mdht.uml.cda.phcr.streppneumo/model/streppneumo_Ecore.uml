@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
+  <uml:Package xmi:id="_8BmxsE6tEeG_dcj91TvCTg" name="streppneumo">
+    <packageImport xmi:id="_8F7RAE6tEeG_dcj91TvCTg">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_6MwukMgnEeCI5ZpfyBisiQ"/>
+    </packageImport>
+    <packageImport xmi:id="_8F7RAU6tEeG_dcj91TvCTg">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.cda.ccd/model/ccd_Ecore.uml#_qQyD8jxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_8F7RAk6tEeG_dcj91TvCTg">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ii81kjxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_8F7RA06tEeG_dcj91TvCTg">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_XgMSwzxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_8F7RBE6tEeG_dcj91TvCTg">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVbeUDcEd6xYZuu1VKCVw"/>
+    </packageImport>
+    <packageImport xmi:id="_8F7RBU6tEeG_dcj91TvCTg">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_KnCD4CFjEd-3s7f6mWX-3A"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_8El0QU6tEeG_dcj91TvCTg" name="StrepPneumoCaseReport">
+      <ownedRule xmi:id="_oVG70cakEeGsjdPVKt6Unw" name="PublicHealthCaseReportTemplateId" constrainedElement="_8El0QU6tEeG_dcj91TvCTg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_oVG70sakEeGsjdPVKt6Unw">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.1.12')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_oVjAsMakEeGsjdPVKt6Unw" name="StrepPneumoCaseReportTitle" constrainedElement="_8El0QU6tEeG_dcj91TvCTg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_oVjAscakEeGsjdPVKt6Unw">
+          <language>OCL</language>
+          <body>(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined() and self.title.getText() = 'Public Health Case Report - Streptococcus pneumoniae')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_oWJdosakEeGsjdPVKt6Unw" name="StrepPneumoCaseReportStrepPneumoPHCRClinicalInformationSection" constrainedElement="_8El0QU6tEeG_dcj91TvCTg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_oWJdo8akEeGsjdPVKt6Unw">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(streppneumo::StrepPneumoPHCRClinicalInformationSection))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_oWmJlcakEeGsjdPVKt6Unw" name="StrepPneumoCaseReportStrepPneumoPHCRTreatmentInformationSection" constrainedElement="_8El0QU6tEeG_dcj91TvCTg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_oWmJlsakEeGsjdPVKt6Unw">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(streppneumo::StrepPneumoPHCRTreatmentInformationSection))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_oWvThcakEeGsjdPVKt6Unw" name="StrepPneumoCaseReportStrepPneumoRelevantDiagnosticTestsAndOrLaboratoryDataSection" constrainedElement="_8El0QU6tEeG_dcj91TvCTg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_oWvThsakEeGsjdPVKt6Unw">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(streppneumo::StrepPneumoRelevantDiagnosticTestsAndOrLaboratoryDataSection))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_oWvTjMakEeGsjdPVKt6Unw" name="StrepPneumoCaseReportStrepPneumoSocialHistorySection" constrainedElement="_8El0QU6tEeG_dcj91TvCTg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_oWvTjcakEeGsjdPVKt6Unw">
+          <language>OCL</language>
+          <body>self.getAllSections()->exists(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(streppneumo::StrepPneumoSocialHistorySection))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_oYiDUcakEeGsjdPVKt6Unw" name="StrepPneumoCaseReportStrepPneumoImmunizationSection" constrainedElement="_8El0QU6tEeG_dcj91TvCTg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_oYiDUsakEeGsjdPVKt6Unw">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(streppneumo::StrepPneumoImmunizationSection))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_8El0Q06tEeG_dcj91TvCTg">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_6PmAIcgnEeCI5ZpfyBisiQ"/>
+      </generalization>
+      <ownedOperation xmi:id="_oWmJkMakEeGsjdPVKt6Unw" name="getStrepPneumoPHCRClinicalInformationSection" isQuery="true" bodyCondition="_oWmJk8akEeGsjdPVKt6Unw">
+        <ownedRule xmi:id="_oWmJk8akEeGsjdPVKt6Unw" name="body" constrainedElement="_oWmJkMakEeGsjdPVKt6Unw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_oWmJlMakEeGsjdPVKt6Unw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(streppneumo::StrepPneumoPHCRClinicalInformationSection))->asSequence()->first().oclAsType(streppneumo::StrepPneumoPHCRClinicalInformationSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_oWmJkcakEeGsjdPVKt6Unw" type="_em2vEKPMEeGdKsw0tXkvXQ" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oWmJksakEeGsjdPVKt6Unw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_oWvTgMakEeGsjdPVKt6Unw" name="getStrepPneumoPHCRTreatmentInformationSection" isQuery="true" bodyCondition="_oWvTg8akEeGsjdPVKt6Unw">
+        <ownedRule xmi:id="_oWvTg8akEeGsjdPVKt6Unw" name="body" constrainedElement="_oWvTgMakEeGsjdPVKt6Unw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_oWvThMakEeGsjdPVKt6Unw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(streppneumo::StrepPneumoPHCRTreatmentInformationSection))->asSequence()->first().oclAsType(streppneumo::StrepPneumoPHCRTreatmentInformationSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_oWvTgcakEeGsjdPVKt6Unw" type="_k71UIKPMEeGdKsw0tXkvXQ" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oWvTgsakEeGsjdPVKt6Unw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_oWvTh8akEeGsjdPVKt6Unw" name="getStrepPneumoRelevantDiagnosticTestsAndOrLaboratoryDataSection" isQuery="true" bodyCondition="_oWvTisakEeGsjdPVKt6Unw">
+        <ownedRule xmi:id="_oWvTisakEeGsjdPVKt6Unw" name="body" constrainedElement="_oWvTh8akEeGsjdPVKt6Unw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_oWvTi8akEeGsjdPVKt6Unw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(streppneumo::StrepPneumoRelevantDiagnosticTestsAndOrLaboratoryDataSection))->asSequence()->first().oclAsType(streppneumo::StrepPneumoRelevantDiagnosticTestsAndOrLaboratoryDataSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_oWvTiMakEeGsjdPVKt6Unw" type="_ybeJEKPMEeGdKsw0tXkvXQ" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oWvTicakEeGsjdPVKt6Unw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_oWvTjsakEeGsjdPVKt6Unw" name="getStrepPneumoSocialHistorySections" isQuery="true" bodyCondition="_oWvTkcakEeGsjdPVKt6Unw">
+        <ownedRule xmi:id="_oWvTkcakEeGsjdPVKt6Unw" name="body" constrainedElement="_oWvTjsakEeGsjdPVKt6Unw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_oWvTksakEeGsjdPVKt6Unw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(streppneumo::StrepPneumoSocialHistorySection)).oclAsType(streppneumo::StrepPneumoSocialHistorySection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_oWvTj8akEeGsjdPVKt6Unw" type="_Knig8KPMEeGdKsw0tXkvXQ" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oWvTkMakEeGsjdPVKt6Unw" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_oYr0QMakEeGsjdPVKt6Unw" name="getStrepPneumoImmunizationSection" isQuery="true" bodyCondition="_oYr0Q8akEeGsjdPVKt6Unw">
+        <ownedRule xmi:id="_oYr0Q8akEeGsjdPVKt6Unw" name="body" constrainedElement="_oYr0QMakEeGsjdPVKt6Unw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_oYr0RMakEeGsjdPVKt6Unw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(streppneumo::StrepPneumoImmunizationSection))->asSequence()->first().oclAsType(streppneumo::StrepPneumoImmunizationSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_oYr0QcakEeGsjdPVKt6Unw" type="_VQO98KPMEeGdKsw0tXkvXQ" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oYr0QsakEeGsjdPVKt6Unw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Knig8KPMEeGdKsw0tXkvXQ" name="StrepPneumoSocialHistorySection">
+      <ownedRule xmi:id="_oVsxsMakEeGsjdPVKt6Unw" name="SocialHistorySectionTemplateId" constrainedElement="_Knig8KPMEeGdKsw0tXkvXQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_oVsxscakEeGsjdPVKt6Unw">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.54')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_oYPIUMakEeGsjdPVKt6Unw" name="StrepPneumoSocialHistorySectionStrepPneumoPossibleExposureLocationAndTypeAct" constrainedElement="_Knig8KPMEeGdKsw0tXkvXQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_oYPIUcakEeGsjdPVKt6Unw">
+          <language>OCL</language>
+          <body>self.entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(streppneumo::StrepPneumoPossibleExposureLocationAct) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_KnjIAKPMEeGdKsw0tXkvXQ">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_Fw7f4MgpEeCI5ZpfyBisiQ"/>
+      </generalization>
+      <ownedOperation xmi:id="_oYPIUsakEeGsjdPVKt6Unw" name="getStrepPneumoPossibleExposureLocationAndTypeActs" isQuery="true" bodyCondition="_oYPIVcakEeGsjdPVKt6Unw">
+        <ownedRule xmi:id="_oYPIVcakEeGsjdPVKt6Unw" name="body" constrainedElement="_oYPIUsakEeGsjdPVKt6Unw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_oYPIVsakEeGsjdPVKt6Unw">
+            <language>OCL</language>
+            <body>self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(streppneumo::StrepPneumoPossibleExposureLocationAct)).oclAsType(streppneumo::StrepPneumoPossibleExposureLocationAct)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_oYPIU8akEeGsjdPVKt6Unw" type="_rucyIKpIEeGIk6WTSrP2zg" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oYPIVMakEeGsjdPVKt6Unw" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_VQO98KPMEeGdKsw0tXkvXQ" name="StrepPneumoImmunizationSection">
+      <ownedRule xmi:id="_oVsxtMakEeGsjdPVKt6Unw" name="ImmunizationsSectionTemplateId" constrainedElement="_VQO98KPMEeGdKsw0tXkvXQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_oVsxtcakEeGsjdPVKt6Unw">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.52')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_oXVwfMakEeGsjdPVKt6Unw" name="StrepPneumoImmunizationSectionStrepPneumoImmunizationActivity" constrainedElement="_VQO98KPMEeGdKsw0tXkvXQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_oXVwfcakEeGsjdPVKt6Unw">
+          <language>OCL</language>
+          <body>self.entry->exists(entry : cda::Entry | not entry.substanceAdministration.oclIsUndefined() and entry.substanceAdministration.oclIsKindOf(streppneumo::StrepPneumoImmunizationActivity) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_VQO98aPMEeGdKsw0tXkvXQ">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ccd/model/ccd_Ecore.uml#_CinbMHDPEd6eItyqb1FoWg"/>
+      </generalization>
+      <ownedOperation xmi:id="_oXfhcMakEeGsjdPVKt6Unw" name="getStrepPneumoImmunizationActivities" isQuery="true" bodyCondition="_oXfhc8akEeGsjdPVKt6Unw">
+        <ownedRule xmi:id="_oXfhc8akEeGsjdPVKt6Unw" name="body" constrainedElement="_oXfhcMakEeGsjdPVKt6Unw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_oXfhdMakEeGsjdPVKt6Unw">
+            <language>OCL</language>
+            <body>self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(streppneumo::StrepPneumoImmunizationActivity)).oclAsType(streppneumo::StrepPneumoImmunizationActivity)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_oXfhccakEeGsjdPVKt6Unw" type="_Utq7AKmAEeGIk6WTSrP2zg" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oXfhcsakEeGsjdPVKt6Unw" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_em2vEKPMEeGdKsw0tXkvXQ" name="StrepPneumoPHCRClinicalInformationSection">
+      <ownedRule xmi:id="_oVsxuMakEeGsjdPVKt6Unw" name="PhcrClinicalInformationSectionTemplateId" constrainedElement="_em2vEKPMEeGdKsw0tXkvXQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_oVsxucakEeGsjdPVKt6Unw">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.55')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_oXL_dcakEeGsjdPVKt6Unw" name="StrepPneumoPHCRClinicalInformationSectionStrepPneumoCaseObservation" constrainedElement="_em2vEKPMEeGdKsw0tXkvXQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_oXL_dsakEeGsjdPVKt6Unw">
+          <language>OCL</language>
+          <body>self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(streppneumo::StrepPneumoCaseObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_em2vEaPMEeGdKsw0tXkvXQ">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_84uJEMqZEeCRBIG_Gkv9FQ"/>
+      </generalization>
+      <ownedOperation xmi:id="_oXVwcMakEeGsjdPVKt6Unw" name="getStrepPneumoCaseObservation" isQuery="true" bodyCondition="_oXVwc8akEeGsjdPVKt6Unw">
+        <ownedRule xmi:id="_oXVwc8akEeGsjdPVKt6Unw" name="body" constrainedElement="_oXVwcMakEeGsjdPVKt6Unw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_oXVwdMakEeGsjdPVKt6Unw">
+            <language>OCL</language>
+            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(streppneumo::StrepPneumoCaseObservation))->asSequence()->first().oclAsType(streppneumo::StrepPneumoCaseObservation)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_oXVwccakEeGsjdPVKt6Unw" type="_3faHkKPNEeGdKsw0tXkvXQ" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oXVwcsakEeGsjdPVKt6Unw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_k71UIKPMEeGdKsw0tXkvXQ" name="StrepPneumoPHCRTreatmentInformationSection">
+      <ownedRule xmi:id="_oV2iscakEeGsjdPVKt6Unw" name="PhcrTreatmentInformationSectionTemplateId" constrainedElement="_k71UIKPMEeGdKsw0tXkvXQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_oV2issakEeGsjdPVKt6Unw">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.53')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_oXorZMakEeGsjdPVKt6Unw" name="StrepPneumoPHCRTreatmentInformationSectionStrepPneumoTherapeuticRegimenAct" constrainedElement="_k71UIKPMEeGdKsw0tXkvXQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_oXorZcakEeGsjdPVKt6Unw">
+          <language>OCL</language>
+          <body>self.entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(streppneumo::StrepPneumoTherapeuticRegimenAct) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_k717MKPMEeGdKsw0tXkvXQ">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_XTjpIMqaEeCRBIG_Gkv9FQ"/>
+      </generalization>
+      <ownedOperation xmi:id="_oXorZsakEeGsjdPVKt6Unw" name="getStrepPneumoTherapeuticRegimenAct" isQuery="true" bodyCondition="_oXoracakEeGsjdPVKt6Unw">
+        <ownedRule xmi:id="_oXoracakEeGsjdPVKt6Unw" name="body" constrainedElement="_oXorZsakEeGsjdPVKt6Unw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_oXorasakEeGsjdPVKt6Unw">
+            <language>OCL</language>
+            <body>self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(streppneumo::StrepPneumoTherapeuticRegimenAct))->asSequence()->first().oclAsType(streppneumo::StrepPneumoTherapeuticRegimenAct)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_oXorZ8akEeGsjdPVKt6Unw" type="_hcBOMKmGEeGIk6WTSrP2zg" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oXoraMakEeGsjdPVKt6Unw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ybeJEKPMEeGdKsw0tXkvXQ" name="StrepPneumoRelevantDiagnosticTestsAndOrLaboratoryDataSection">
+      <ownedRule xmi:id="_oV2itsakEeGsjdPVKt6Unw" name="ResultsSectionTemplateId" constrainedElement="_ybeJEKPMEeGdKsw0tXkvXQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_oV2it8akEeGsjdPVKt6Unw">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.56')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_oXycYsakEeGsjdPVKt6Unw" name="StrepPneumoRelevantDiagnosticTestsAndOrLaboratoryDataSectionStrepPneumoResultObservation" constrainedElement="_ybeJEKPMEeGdKsw0tXkvXQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_oXycY8akEeGsjdPVKt6Unw">
+          <language>OCL</language>
+          <body>self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(streppneumo::StrepPneumoResultObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_oYYSSMakEeGsjdPVKt6Unw" name="StrepPneumoRelevantDiagnosticTestsAndOrLaboratoryDataSectionStrepPneumoResultOrganizer" constrainedElement="_ybeJEKPMEeGdKsw0tXkvXQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_oYYSScakEeGsjdPVKt6Unw">
+          <language>OCL</language>
+          <body>self.entry->exists(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(streppneumo::StrepPneumoResultOrganizer) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_ybewIKPMEeGdKsw0tXkvXQ">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_2dxgkNM5EeCbJdgmSYxI0g"/>
+      </generalization>
+      <ownedOperation xmi:id="_oXycZMakEeGsjdPVKt6Unw" name="getStrepPneumoResultObservations" isQuery="true" bodyCondition="_oXycZ8akEeGsjdPVKt6Unw">
+        <ownedRule xmi:id="_oXycZ8akEeGsjdPVKt6Unw" name="body" constrainedElement="_oXycZMakEeGsjdPVKt6Unw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_oXycaMakEeGsjdPVKt6Unw">
+            <language>OCL</language>
+            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(streppneumo::StrepPneumoResultObservation)).oclAsType(streppneumo::StrepPneumoResultObservation)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_oXycZcakEeGsjdPVKt6Unw" type="_6xj9UKmKEeGIk6WTSrP2zg" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oXycZsakEeGsjdPVKt6Unw" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_oYYSSsakEeGsjdPVKt6Unw" name="getStrepPneumoResultOrganizers" isQuery="true" bodyCondition="_oYiDQcakEeGsjdPVKt6Unw">
+        <ownedRule xmi:id="_oYiDQcakEeGsjdPVKt6Unw" name="body" constrainedElement="_oYYSSsakEeGsjdPVKt6Unw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_oYiDQsakEeGsjdPVKt6Unw">
+            <language>OCL</language>
+            <body>self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(streppneumo::StrepPneumoResultOrganizer)).oclAsType(streppneumo::StrepPneumoResultOrganizer)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_oYYSS8akEeGsjdPVKt6Unw" type="_p8aAIMEaEeG-Z92mbpCVHw" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oYiDQMakEeGsjdPVKt6Unw" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3faHkKPNEeGdKsw0tXkvXQ" name="StrepPneumoCaseObservation">
+      <ownedRule xmi:id="_oV_socakEeGsjdPVKt6Unw" name="ProblemObservationTemplateId" constrainedElement="_3faHkKPNEeGdKsw0tXkvXQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_oV_sosakEeGsjdPVKt6Unw">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.125')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_oW5EgMakEeGsjdPVKt6Unw" name="StrepPneumoCaseObservationStrepPneumoSignsAndSymptomsObservation" constrainedElement="_3faHkKPNEeGdKsw0tXkvXQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_oW5EgcakEeGsjdPVKt6Unw">
+          <language>OCL</language>
+          <body>self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(streppneumo::StrepPneumoSignsAndSymptomsObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::MFST)</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_L0_ykMEYEeG-Z92mbpCVHw">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_p8bDQNTCEeC18pmrrt-Mbg"/>
+      </generalization>
+      <ownedOperation xmi:id="_oXL_cMakEeGsjdPVKt6Unw" name="getStrepPneumoSignsAndSymptomsObservations" isQuery="true" bodyCondition="_oXL_c8akEeGsjdPVKt6Unw">
+        <ownedRule xmi:id="_oXL_c8akEeGsjdPVKt6Unw" name="body" constrainedElement="_oXL_cMakEeGsjdPVKt6Unw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_oXL_dMakEeGsjdPVKt6Unw">
+            <language>OCL</language>
+            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(streppneumo::StrepPneumoSignsAndSymptomsObservation)).oclAsType(streppneumo::StrepPneumoSignsAndSymptomsObservation)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_oXL_ccakEeGsjdPVKt6Unw" type="_yQIJ0KPOEeGdKsw0tXkvXQ" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oXL_csakEeGsjdPVKt6Unw" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_yQIJ0KPOEeGdKsw0tXkvXQ" name="StrepPneumoSignsAndSymptomsObservation">
+      <ownedRule xmi:id="_oV_spMakEeGsjdPVKt6Unw" name="SignsAndSymptomsObservationTemplateId" constrainedElement="_yQIJ0KPOEeGdKsw0tXkvXQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_oV_spcakEeGsjdPVKt6Unw">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.121')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_oWJdoMakEeGsjdPVKt6Unw" name="SignsAndSymptomsObservationValue" constrainedElement="_yQIJ0KPOEeGdKsw0tXkvXQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_oWJdocakEeGsjdPVKt6Unw">
+          <language>OCL</language>
+          <body>(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = element.oclAsType(datatypes::CD) in &#xD;&#xA;value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined()))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_80rGoKPOEeGdKsw0tXkvXQ">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#__cLgwNQPEeC4C5jYVS2kfQ"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Utq7AKmAEeGIk6WTSrP2zg" name="StrepPneumoImmunizationActivity">
+      <ownedRule xmi:id="_oXVwdsakEeGsjdPVKt6Unw" name="MedicationActivityTemplateId" constrainedElement="_Utq7AKmAEeGIk6WTSrP2zg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_oXVwd8akEeGsjdPVKt6Unw">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.124')</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_UtriEKmAEeGIk6WTSrP2zg">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ccd/model/ccd_Ecore.uml#_W6aMoHfTEd6ZeOKq_2_a9g"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_hTDRsKmBEeGIk6WTSrP2zg" name="StrepPneumoImmunizationProduct">
+      <ownedRule xmi:id="_t1vWMKmBEeGIk6WTSrP2zg" constrainedElement="_hTDRsKmBEeGIk6WTSrP2zg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_2YfaYKmBEeGIk6WTSrP2zg">
+          <language>Analysis</language>
+          <body>2.&#x9;SHALL contain [1..1] manufacturedMaterial, which &#xD;&#xA;a.&#x9;SHALL contain [1..1] code/@code, which SHALL be selected from ValueSet 2.16.840.1.114222.4.11.6032 PHVS_VaccinesAdministered_StrepPneumo DYNAMIC</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_oXVwecakEeGsjdPVKt6Unw" name="StrepPneumoImmunizationProductTemplateId" constrainedElement="_hTDRsKmBEeGIk6WTSrP2zg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_oXVwesakEeGsjdPVKt6Unw">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.123')</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_hTDRsamBEeGIk6WTSrP2zg">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_UCUw8EcaEd6besF9iFIJkQ"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_hcBOMKmGEeGIk6WTSrP2zg" name="StrepPneumoTherapeuticRegimenAct">
+      <ownedRule xmi:id="_oXfhdsakEeGsjdPVKt6Unw" name="TherapeuticRegimenActTemplateId" constrainedElement="_hcBOMKmGEeGIk6WTSrP2zg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_oXfhd8akEeGsjdPVKt6Unw">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.122')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_oYiDQ8akEeGsjdPVKt6Unw" name="StrepPneumoTherapeuticRegimenActStrepPneumoTreatmentGivenSubstanceAdministration" constrainedElement="_hcBOMKmGEeGIk6WTSrP2zg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_oYiDRMakEeGsjdPVKt6Unw">
+          <language>OCL</language>
+          <body>self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.substanceAdministration.oclIsUndefined() and entryRelationship.substanceAdministration.oclIsKindOf(streppneumo::StrepPneumoTreatmentGivenSubstanceAdministration) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_oYiDSsakEeGsjdPVKt6Unw" name="StrepPneumoTherapeuticRegimenActStrepPneumoTreatmentNotGivenSubstanceAdministration" constrainedElement="_hcBOMKmGEeGIk6WTSrP2zg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_oYiDS8akEeGsjdPVKt6Unw">
+          <language>OCL</language>
+          <body>self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.substanceAdministration.oclIsUndefined() and entryRelationship.substanceAdministration.oclIsKindOf(streppneumo::StrepPneumoTreatmentNotGivenSubstanceAdministration) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_mJ3dYKmGEeGIk6WTSrP2zg">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_2p558NSrEeC18pmrrt-Mbg"/>
+      </generalization>
+      <ownedOperation xmi:id="_oYiDRcakEeGsjdPVKt6Unw" name="getStrepPneumoTreatmentGivenSubstanceAdministrations" isQuery="true" bodyCondition="_oYiDSMakEeGsjdPVKt6Unw">
+        <ownedRule xmi:id="_oYiDSMakEeGsjdPVKt6Unw" name="body" constrainedElement="_oYiDRcakEeGsjdPVKt6Unw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_oYiDScakEeGsjdPVKt6Unw">
+            <language>OCL</language>
+            <body>self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(streppneumo::StrepPneumoTreatmentGivenSubstanceAdministration)).oclAsType(streppneumo::StrepPneumoTreatmentGivenSubstanceAdministration)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_oYiDRsakEeGsjdPVKt6Unw" type="_UJ6NAKmIEeGIk6WTSrP2zg" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oYiDR8akEeGsjdPVKt6Unw" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_oYiDTMakEeGsjdPVKt6Unw" name="getStrepPneumoTreatmentNotGivenSubstanceAdministrations" isQuery="true" bodyCondition="_oYiDT8akEeGsjdPVKt6Unw">
+        <ownedRule xmi:id="_oYiDT8akEeGsjdPVKt6Unw" name="body" constrainedElement="_oYiDTMakEeGsjdPVKt6Unw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_oYiDUMakEeGsjdPVKt6Unw">
+            <language>OCL</language>
+            <body>self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(streppneumo::StrepPneumoTreatmentNotGivenSubstanceAdministration)).oclAsType(streppneumo::StrepPneumoTreatmentNotGivenSubstanceAdministration)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_oYiDTcakEeGsjdPVKt6Unw" type="_9SEdIKmIEeGIk6WTSrP2zg" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oYiDTsakEeGsjdPVKt6Unw" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_UJ6NAKmIEeGIk6WTSrP2zg" name="StrepPneumoTreatmentGivenSubstanceAdministration">
+      <ownedRule xmi:id="_oXfhesakEeGsjdPVKt6Unw" name="TreatmentGivenSubstanceAdministrationTemplateId" constrainedElement="_UJ6NAKmIEeGIk6WTSrP2zg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_oXfhe8akEeGsjdPVKt6Unw">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.126')</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_itEocMEWEeG-Z92mbpCVHw">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_XOKZ4NStEeC18pmrrt-Mbg"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_9SEdIKmIEeGIk6WTSrP2zg" name="StrepPneumoTreatmentNotGivenSubstanceAdministration">
+      <ownedRule xmi:id="_oXorYcakEeGsjdPVKt6Unw" name="TreatmentNotGivenSubstanceAdministrationTemplateId" constrainedElement="_9SEdIKmIEeGIk6WTSrP2zg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_oXorYsakEeGsjdPVKt6Unw">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.127')</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_mPuP0MEWEeG-Z92mbpCVHw">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_NbgssNSwEeC18pmrrt-Mbg"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_6xj9UKmKEeGIk6WTSrP2zg" name="StrepPneumoResultObservation">
+      <ownedRule xmi:id="_oXorbcakEeGsjdPVKt6Unw" name="ResultObservationTemplateId" constrainedElement="_6xj9UKmKEeGIk6WTSrP2zg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_oXycYMakEeGsjdPVKt6Unw">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.128')</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_6xj9UamKEeGIk6WTSrP2zg">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#__3pL0PNrEeCOm7Y48UO5Tg"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_rucyIKpIEeGIk6WTSrP2zg" name="StrepPneumoPossibleExposureLocationAct">
+      <ownedRule xmi:id="_oXycacakEeGsjdPVKt6Unw" name="StrepPneumoPossibleExposureLocationActTemplateId" constrainedElement="_rucyIKpIEeGIk6WTSrP2zg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_oXycasakEeGsjdPVKt6Unw">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.129')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_oX7mUcakEeGsjdPVKt6Unw" name="StrepPneumoPossibleExposureLocationActClassCode" constrainedElement="_rucyIKpIEeGIk6WTSrP2zg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_oX7mUsakEeGsjdPVKt6Unw">
+          <language>OCL</language>
+          <body>isDefined('classCode')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_oX7mU8akEeGsjdPVKt6Unw" name="StrepPneumoPossibleExposureLocationActCode" constrainedElement="_rucyIKpIEeGIk6WTSrP2zg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_oX7mVMakEeGsjdPVKt6Unw">
+          <language>OCL</language>
+          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (&#xD;&#xA;value.code = '413350009' and value.codeSystem = '2.16.840.1.113883.6.96'))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_oYFXUMakEeGsjdPVKt6Unw" name="StrepPneumoPossibleExposureLocationActMoodCode" constrainedElement="_rucyIKpIEeGIk6WTSrP2zg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_oYFXUcakEeGsjdPVKt6Unw">
+          <language>OCL</language>
+          <body>isDefined('moodCode')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_oYFXUsakEeGsjdPVKt6Unw" name="StrepPneumoPossibleExposureLocationActStatusCode" constrainedElement="_rucyIKpIEeGIk6WTSrP2zg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_oYFXU8akEeGsjdPVKt6Unw">
+          <language>OCL</language>
+          <body>(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and &#xD;&#xA;let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in (&#xD;&#xA;value.code = 'completed'))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_rucyIapIEeGIk6WTSrP2zg">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_YiANsDxYEd6JwqSGecoePg"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_p8aAIMEaEeG-Z92mbpCVHw" name="StrepPneumoResultOrganizer">
+      <ownedRule xmi:id="_oYPIWcakEeGsjdPVKt6Unw" name="ResultOrganizerTemplateId" constrainedElement="_p8aAIMEaEeG-Z92mbpCVHw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_oYPIWsakEeGsjdPVKt6Unw">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.130')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_oYYSQcakEeGsjdPVKt6Unw" name="StrepPneumoResultOrganizerStrepPneumoResultObservation" constrainedElement="_p8aAIMEaEeG-Z92mbpCVHw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_oYYSQsakEeGsjdPVKt6Unw">
+          <language>OCL</language>
+          <body>self.component->exists(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(streppneumo::StrepPneumoResultObservation))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_p8anMMEaEeG-Z92mbpCVHw">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_0r8IYPNrEeCOm7Y48UO5Tg"/>
+      </generalization>
+      <ownedOperation xmi:id="_oYYSQ8akEeGsjdPVKt6Unw" name="getStrepPneumoResultObservations" isQuery="true" bodyCondition="_oYYSRsakEeGsjdPVKt6Unw">
+        <ownedRule xmi:id="_oYYSRsakEeGsjdPVKt6Unw" name="body" constrainedElement="_oYYSQ8akEeGsjdPVKt6Unw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_oYYSR8akEeGsjdPVKt6Unw">
+            <language>OCL</language>
+            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(streppneumo::StrepPneumoResultObservation)).oclAsType(streppneumo::StrepPneumoResultObservation)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_oYYSRMakEeGsjdPVKt6Unw" type="_6xj9UKmKEeGIk6WTSrP2zg" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oYYSRcakEeGsjdPVKt6Unw" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <profileApplication xmi:id="_8BmxuU6tEeG_dcj91TvCTg">
+      <eAnnotations xmi:id="_8Bmxuk6tEeG_dcj91TvCTg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_8Bmxu06tEeG_dcj91TvCTg">
+      <eAnnotations xmi:id="_8BmxvE6tEeG_dcj91TvCTg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/cda/4#/"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://CDA_PROFILES/CDA.profile.uml#_cxOJEIEVEd6H8o-hO3-B4Q"/>
+    </profileApplication>
+    <profileApplication xmi:id="_oUzZ0MakEeGsjdPVKt6Unw">
+      <eAnnotations xmi:id="_oUzZ0cakEeGsjdPVKt6Unw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Ecore.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Package>
+  <CDA:CodegenSupport xmi:id="_8El0QE6tEeG_dcj91TvCTg" basePackage="org.openhealthtools.mdht.uml.cda.phcr" nsPrefix="streppneumo" nsURI="http://www.openhealthtools.org/mdht/uml/cda/phcr/streppneumo" packageName="streppneumo" prefix="StrepPneumo" base_Namespace="_8BmxsE6tEeG_dcj91TvCTg"/>
+  <CDA:CDATemplate xmi:id="_8El0Qk6tEeG_dcj91TvCTg" base_Class="_8El0QU6tEeG_dcj91TvCTg" templateId="2.16.840.1.113883.10.20.15.1.12" assigningAuthorityName=""/>
+  <CDA:AssociationValidation xmi:id="_LLdQ4KPNEeGdKsw0tXkvXQ"/>
+  <CDA:AssociationValidation xmi:id="_MYEN8KPNEeGdKsw0tXkvXQ" severity="WARNING"/>
+  <CDA:AssociationValidation xmi:id="_NPAdAKPNEeGdKsw0tXkvXQ" severity="WARNING"/>
+  <CDA:AssociationValidation xmi:id="_OKVc0KPNEeGdKsw0tXkvXQ" severity="WARNING"/>
+  <CDA:AssociationValidation xmi:id="_PTby4KPNEeGdKsw0tXkvXQ" severity="WARNING"/>
+  <CDA:ConformsTo xmi:id="_ImRscKPPEeGdKsw0tXkvXQ" base_Generalization="_80rGoKPOEeGdKsw0tXkvXQ"/>
+  <CDA:AssociationValidation xmi:id="_pKovgKPPEeGdKsw0tXkvXQ"/>
+  <CDA:EntryRelationship xmi:id="_CQNs0KPQEeGdKsw0tXkvXQ" typeCode="MFST"/>
+  <CDA:ActRelationship xmi:id="_HJvAgKPQEeGdKsw0tXkvXQ"/>
+  <CDA:CDATemplate xmi:id="_dTNC4Kl_EeGIk6WTSrP2zg" base_Class="_VQO98KPMEeGdKsw0tXkvXQ" templateId="2.16.840.1.113883.10.20.15.2.52"/>
+  <CDA:CDATemplate xmi:id="_ftIusKl_EeGIk6WTSrP2zg" base_Class="_k71UIKPMEeGdKsw0tXkvXQ" templateId="2.16.840.1.113883.10.20.15.2.53"/>
+  <CDA:CDATemplate xmi:id="_iBIKkKl_EeGIk6WTSrP2zg" base_Class="_Knig8KPMEeGdKsw0tXkvXQ" templateId="2.16.840.1.113883.10.20.15.2.54"/>
+  <CDA:CDATemplate xmi:id="_jvyEwKl_EeGIk6WTSrP2zg" base_Class="_em2vEKPMEeGdKsw0tXkvXQ" templateId="2.16.840.1.113883.10.20.15.2.55"/>
+  <CDA:CDATemplate xmi:id="_llNVUKl_EeGIk6WTSrP2zg" base_Class="_ybeJEKPMEeGdKsw0tXkvXQ" templateId="2.16.840.1.113883.10.20.15.2.56"/>
+  <CDA:CDATemplate xmi:id="_HuXL8KmAEeGIk6WTSrP2zg" base_Class="_yQIJ0KPOEeGdKsw0tXkvXQ" templateId="2.16.840.1.113883.10.20.15.3.121"/>
+  <CDA:CDATemplate xmi:id="_TI-YoKmBEeGIk6WTSrP2zg" base_Class="_Utq7AKmAEeGIk6WTSrP2zg" templateId="2.16.840.1.113883.10.20.15.3.124"/>
+  <CDA:CDATemplate xmi:id="_jq1ocKmBEeGIk6WTSrP2zg" base_Class="_hTDRsKmBEeGIk6WTSrP2zg" templateId="2.16.840.1.113883.10.20.15.3.123"/>
+  <CDA:ConstraintValidation xmi:id="_KsEBQKmCEeGIk6WTSrP2zg" base_Constraint="_t1vWMKmBEeGIk6WTSrP2zg"/>
+  <CDA:AssociationValidation xmi:id="_1KXk8KmCEeGIk6WTSrP2zg" severity="WARNING"/>
+  <CDA:ActRelationship xmi:id="_D8_rwKmDEeGIk6WTSrP2zg"/>
+  <CDA:CDATemplate xmi:id="_l9gHQKmEEeGIk6WTSrP2zg" base_Class="_3faHkKPNEeGdKsw0tXkvXQ" templateId="2.16.840.1.113883.10.20.15.3.125"/>
+  <CDA:PropertyValidation xmi:id="_VM7wQKmIEeGIk6WTSrP2zg">
+    <ruleId>CONF:1942</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_94F7UKmIEeGIk6WTSrP2zg">
+    <ruleId>CONF:1942</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CDATemplate xmi:id="_BW3IQKmJEeGIk6WTSrP2zg" base_Class="_9SEdIKmIEeGIk6WTSrP2zg" templateId="2.16.840.1.113883.10.20.15.3.127"/>
+  <CDA:CDATemplate xmi:id="_QXE_IKmJEeGIk6WTSrP2zg" base_Class="_UJ6NAKmIEeGIk6WTSrP2zg" templateId="2.16.840.1.113883.10.20.15.3.126"/>
+  <CDA:EntryRelationship xmi:id="_Z-xSIKmJEeGIk6WTSrP2zg" severity="WARNING" typeCode="COMP"/>
+  <CDA:ActRelationship xmi:id="_arwT8KmJEeGIk6WTSrP2zg"/>
+  <CDA:EntryRelationship xmi:id="_diLugKmJEeGIk6WTSrP2zg" severity="INFO" typeCode="COMP"/>
+  <CDA:ActRelationship xmi:id="_eNZOsKmJEeGIk6WTSrP2zg"/>
+  <CDA:CDATemplate xmi:id="_v9S-8KmJEeGIk6WTSrP2zg" base_Class="_hcBOMKmGEeGIk6WTSrP2zg" templateId="2.16.840.1.113883.10.20.15.3.122"/>
+  <CDA:PropertyValidation xmi:id="_BokRYKmLEeGIk6WTSrP2zg" severity="WARNING">
+    <ruleId>CONF-418</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_y9GtEKmLEeGIk6WTSrP2zg">
+    <ruleId>CONF-416</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ValueSetConstraint xmi:id="_6B928KmLEeGIk6WTSrP2zg">
+    <reference href="../../org.openhealthtools.mdht.uml.cda.phcr.streppneumo.model/model/streppneumo-vocab.uml#_7By8QamLEeGIk6WTSrP2zg"/>
+  </CDA:ValueSetConstraint>
+  <CDA:CDATemplate xmi:id="_aScUsKmMEeGIk6WTSrP2zg" base_Class="_6xj9UKmKEeGIk6WTSrP2zg" templateId="2.16.840.1.113883.10.20.15.3.128"/>
+  <CDA:AssociationValidation xmi:id="_wFtekKpOEeGIk6WTSrP2zg" severity="WARNING"/>
+  <CDA:CDATemplate xmi:id="_DfazUKpREeGIk6WTSrP2zg" base_Class="_rucyIKpIEeGIk6WTSrP2zg" templateId="2.16.840.1.113883.10.20.15.3.129"/>
+  <CDA:CDATemplate xmi:id="_3mE8cK0yEeGiKq3XX8XCzA" message="NOT CURRENTLY USED" templateId="2.16.840.1.113883.10.20.15.3.130"/>
+  <CDA:CDATemplate xmi:id="_EfopYMEqEeG-Z92mbpCVHw" base_Class="_p8aAIMEaEeG-Z92mbpCVHw" templateId="2.16.840.1.113883.10.20.15.3.130"/>
+  <Ecore:EPackage xmi:id="_oU9K0MakEeGsjdPVKt6Unw" base_Package="_8BmxsE6tEeG_dcj91TvCTg" packageName="streppneumo" nsPrefix="streppneumo" nsURI="http://www.openhealthtools.org/mdht/uml/cda/phcr/streppneumo" basePackage="org.openhealthtools.mdht.uml.cda.phcr" prefix="StrepPneumo"/>
+  <CDA:ConformsTo xmi:id="_oVG70MakEeGsjdPVKt6Unw" base_Generalization="_8El0Q06tEeG_dcj91TvCTg"/>
+  <Ecore:EClass xmi:id="_oVQFwMakEeGsjdPVKt6Unw" base_Class="_8El0QU6tEeG_dcj91TvCTg">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation title.mixed='Public Health Case Report - Streptococcus pneumoniae' templateId.root='2.16.840.1.113883.10.20.15.1.12' constraints.validation.error='StrepPneumoCaseReportTemplateId StrepPneumoCaseReportTitle StrepPneumoCaseReportStrepPneumoPHCRClinicalInformationSection' constraints.validation.warning='StrepPneumoCaseReportStrepPneumoPHCRTreatmentInformationSection StrepPneumoCaseReportStrepPneumoRelevantDiagnosticTestsAndOrLaboratoryDataSection StrepPneumoCaseReportStrepPneumoSocialHistorySection StrepPneumoCaseReportStrepPneumoImmunizationSection'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_oVjAssakEeGsjdPVKt6Unw" base_Generalization="_KnjIAKPMEeGdKsw0tXkvXQ"/>
+  <Ecore:EClass xmi:id="_oVsxssakEeGsjdPVKt6Unw" base_Class="_Knig8KPMEeGdKsw0tXkvXQ">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.2.54' constraints.validation.error='StrepPneumoSocialHistorySectionTemplateId' constraints.validation.warning='StrepPneumoSocialHistorySectionStrepPneumoPossibleExposureLocationAndTypeAct'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_oVsxs8akEeGsjdPVKt6Unw" base_Generalization="_VQO98aPMEeGdKsw0tXkvXQ"/>
+  <Ecore:EClass xmi:id="_oVsxtsakEeGsjdPVKt6Unw" base_Class="_VQO98KPMEeGdKsw0tXkvXQ">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.2.52' constraints.validation.error='StrepPneumoImmunizationSectionTemplateId StrepPneumoImmunizationSectionStrepPneumoImmunizationActivity'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_oVsxt8akEeGsjdPVKt6Unw" base_Generalization="_em2vEaPMEeGdKsw0tXkvXQ"/>
+  <Ecore:EClass xmi:id="_oVsxusakEeGsjdPVKt6Unw" base_Class="_em2vEKPMEeGdKsw0tXkvXQ">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.2.55' constraints.validation.error='StrepPneumoPHCRClinicalInformationSectionTemplateId StrepPneumoPHCRClinicalInformationSectionStrepPneumoCaseObservation'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_oV2isMakEeGsjdPVKt6Unw" base_Generalization="_k717MKPMEeGdKsw0tXkvXQ"/>
+  <Ecore:EClass xmi:id="_oV2is8akEeGsjdPVKt6Unw" base_Class="_k71UIKPMEeGdKsw0tXkvXQ">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.2.53' constraints.validation.error='StrepPneumoPHCRTreatmentInformationSectionTemplateId StrepPneumoPHCRTreatmentInformationSectionStrepPneumoTherapeuticRegimenAct'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_oV2itMakEeGsjdPVKt6Unw" base_Generalization="_ybewIKPMEeGdKsw0tXkvXQ"/>
+  <Ecore:EClass xmi:id="_oV2iuMakEeGsjdPVKt6Unw" base_Class="_ybeJEKPMEeGdKsw0tXkvXQ">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.2.56' constraints.validation.error='StrepPneumoRelevantDiagnosticTestsAndOrLaboratoryDataSectionTemplateId' constraints.validation.warning='StrepPneumoRelevantDiagnosticTestsAndOrLaboratoryDataSectionStrepPneumoResultObservation' constraints.validation.info='StrepPneumoRelevantDiagnosticTestsAndOrLaboratoryDataSectionStrepPneumoResultOrganizer'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_oV2iucakEeGsjdPVKt6Unw" base_Generalization="_L0_ykMEYEeG-Z92mbpCVHw"/>
+  <Ecore:EClass xmi:id="_oV_so8akEeGsjdPVKt6Unw" base_Class="_3faHkKPNEeGdKsw0tXkvXQ">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.3.125' constraints.validation.error='StrepPneumoCaseObservationTemplateId' constraints.validation.warning='StrepPneumoCaseObservationStrepPneumoSignsAndSymptomsObservation'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_oV_spsakEeGsjdPVKt6Unw" base_Class="_yQIJ0KPOEeGdKsw0tXkvXQ">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation value.codeSystemName='SNOMEDCT' templateId.root='2.16.840.1.113883.10.20.15.3.121' constraints.validation.error='StrepPneumoSignsAndSymptomsObservationTemplateId SignsAndSymptomsObservationValue' value.codeSystem='2.16.840.1.113883.6.96'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_oXVwdcakEeGsjdPVKt6Unw" base_Generalization="_UtriEKmAEeGIk6WTSrP2zg"/>
+  <Ecore:EClass xmi:id="_oXVweMakEeGsjdPVKt6Unw" base_Class="_Utq7AKmAEeGIk6WTSrP2zg">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.3.124' constraints.validation.error='StrepPneumoImmunizationActivityTemplateId'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_oXVwe8akEeGsjdPVKt6Unw" base_Class="_hTDRsKmBEeGIk6WTSrP2zg">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.3.123' constraints.validation.error='StrepPneumoImmunizationProductTemplateId'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_oXfhdcakEeGsjdPVKt6Unw" base_Generalization="_mJ3dYKmGEeGIk6WTSrP2zg"/>
+  <Ecore:EClass xmi:id="_oXfheMakEeGsjdPVKt6Unw" base_Class="_hcBOMKmGEeGIk6WTSrP2zg">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.3.122' constraints.validation.error='StrepPneumoTherapeuticRegimenActTemplateId' constraints.validation.warning='StrepPneumoTherapeuticRegimenActStrepPneumoTreatmentGivenSubstanceAdministration' constraints.validation.info='StrepPneumoTherapeuticRegimenActStrepPneumoTreatmentNotGivenSubstanceAdministration'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_oXfhecakEeGsjdPVKt6Unw" base_Generalization="_itEocMEWEeG-Z92mbpCVHw"/>
+  <Ecore:EClass xmi:id="_oXfhfMakEeGsjdPVKt6Unw" base_Class="_UJ6NAKmIEeGIk6WTSrP2zg">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.3.126' constraints.validation.error='StrepPneumoTreatmentGivenSubstanceAdministrationTemplateId'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_oXorYMakEeGsjdPVKt6Unw" base_Generalization="_mPuP0MEWEeG-Z92mbpCVHw"/>
+  <Ecore:EClass xmi:id="_oXorY8akEeGsjdPVKt6Unw" base_Class="_9SEdIKmIEeGIk6WTSrP2zg">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.3.127' constraints.validation.error='StrepPneumoTreatmentNotGivenSubstanceAdministrationTemplateId'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_oXora8akEeGsjdPVKt6Unw" base_Generalization="_6xj9UamKEeGIk6WTSrP2zg"/>
+  <Ecore:EClass xmi:id="_oXycYcakEeGsjdPVKt6Unw" base_Class="_6xj9UKmKEeGIk6WTSrP2zg">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.3.128' constraints.validation.error='StrepPneumoResultObservationTemplateId'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_oX7mUMakEeGsjdPVKt6Unw" base_Class="_rucyIKpIEeGIk6WTSrP2zg">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation statusCode.code='completed' code.codeSystem='2.16.840.1.113883.6.96' templateId.root='2.16.840.1.113883.10.20.15.3.129' constraints.validation.error='StrepPneumoPossibleExposureLocationActTemplateId StrepPneumoPossibleExposureLocationActClassCode StrepPneumoPossibleExposureLocationActCode StrepPneumoPossibleExposureLocationActMoodCode StrepPneumoPossibleExposureLocationActStatusCode' code.codeSystemName='SNOMEDCT' classCode='ACT' code.code='413350009' moodCode='EVN'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_oYPIV8akEeGsjdPVKt6Unw" base_Generalization="_p8anMMEaEeG-Z92mbpCVHw"/>
+  <Ecore:EClass xmi:id="_oYYSQMakEeGsjdPVKt6Unw" base_Class="_p8aAIMEaEeG-Z92mbpCVHw">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.3.130' constraints.validation.error='StrepPneumoResultOrganizerTemplateId StrepPneumoResultOrganizerStrepPneumoResultObservation'</annotation>
+  </Ecore:EClass>
+</xmi:XMI>

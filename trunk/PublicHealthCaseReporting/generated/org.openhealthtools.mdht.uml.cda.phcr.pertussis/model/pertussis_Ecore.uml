@@ -1,0 +1,669 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
+  <uml:Package xmi:id="_27mpEEOoEeGGsOswcKrH-Q" name="pertussis">
+    <packageImport xmi:id="_2_VSgEOoEeGGsOswcKrH-Q">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_6MwukMgnEeCI5ZpfyBisiQ"/>
+    </packageImport>
+    <packageImport xmi:id="_2_VSgUOoEeGGsOswcKrH-Q">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.cda.ccd/model/ccd_Ecore.uml#_qQyD8jxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_2_VSgkOoEeGGsOswcKrH-Q">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ii81kjxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_2_VSg0OoEeGGsOswcKrH-Q">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_XgMSwzxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_2_VShEOoEeGGsOswcKrH-Q">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVbeUDcEd6xYZuu1VKCVw"/>
+    </packageImport>
+    <packageImport xmi:id="_2_VShUOoEeGGsOswcKrH-Q">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_KnCD4CFjEd-3s7f6mWX-3A"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_2-b6oUOoEeGGsOswcKrH-Q" name="PertussisCaseReport">
+      <ownedRule xmi:id="_dh7Q8K9JEeGf5Na7Ui4G6A" name="PublicHealthCaseReportTemplateId" constrainedElement="_2-b6oUOoEeGGsOswcKrH-Q">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_dh7Q8a9JEeGf5Na7Ui4G6A">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.1.5')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_dihG0K9JEeGf5Na7Ui4G6A" name="PertussisCaseReportTitle" constrainedElement="_2-b6oUOoEeGGsOswcKrH-Q">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_dihG0a9JEeGf5Na7Ui4G6A">
+          <language>OCL</language>
+          <body>(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (self.title.getText() = 'Public Health Case Report - Pertussis')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_di0Bwq9JEeGf5Na7Ui4G6A" name="PertussisCaseReportPertussisSocialHistorySection" constrainedElement="_2-b6oUOoEeGGsOswcKrH-Q">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_di0Bw69JEeGf5Na7Ui4G6A">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(pertussis::PertussisSocialHistorySection))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_dj3Koq9JEeGf5Na7Ui4G6A" name="PertussisCaseReportPertussisClinicalInformationSection" constrainedElement="_2-b6oUOoEeGGsOswcKrH-Q">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_dj3Ko69JEeGf5Na7Ui4G6A">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(pertussis::PertussisClinicalInformationSection))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_dk5scK9JEeGf5Na7Ui4G6A" name="PertussisCaseReportPertussisTreatmentInformationSection" constrainedElement="_2-b6oUOoEeGGsOswcKrH-Q">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_dk5sca9JEeGf5Na7Ui4G6A">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(pertussis::PertussisTreatmentInformationSection))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_dnSSFa9JEeGf5Na7Ui4G6A" name="PertussisCaseReportPertussisRelevantDxTestsSection" constrainedElement="_2-b6oUOoEeGGsOswcKrH-Q">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_dnSSFq9JEeGf5Na7Ui4G6A">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(pertussis::PertussisRelevantDxTestsSection))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_dnSSHK9JEeGf5Na7Ui4G6A" name="PertussisCaseReportPertussisImmunizationsSection" constrainedElement="_2-b6oUOoEeGGsOswcKrH-Q">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_dnSSHa9JEeGf5Na7Ui4G6A">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(pertussis::PertussisImmunizationsSection))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_2-b6o0OoEeGGsOswcKrH-Q">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_6PmAIcgnEeCI5ZpfyBisiQ"/>
+      </generalization>
+      <ownedOperation xmi:id="_di9ywK9JEeGf5Na7Ui4G6A" name="getPertussisSocialHistorySection" isQuery="true" bodyCondition="_di9yw69JEeGf5Na7Ui4G6A">
+        <ownedRule xmi:id="_di9yw69JEeGf5Na7Ui4G6A" name="body" constrainedElement="_di9ywK9JEeGf5Na7Ui4G6A">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_di9yxK9JEeGf5Na7Ui4G6A">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(pertussis::PertussisSocialHistorySection))->asSequence()->first().oclAsType(pertussis::PertussisSocialHistorySection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_di9ywa9JEeGf5Na7Ui4G6A" type="_364u4HHWEeG8655npWXf9Q" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_di9ywq9JEeGf5Na7Ui4G6A" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_dkAUkK9JEeGf5Na7Ui4G6A" name="getPertussisClinicalInformationSection" isQuery="true" bodyCondition="_dkAUk69JEeGf5Na7Ui4G6A">
+        <ownedRule xmi:id="_dkAUk69JEeGf5Na7Ui4G6A" name="body" constrainedElement="_dkAUkK9JEeGf5Na7Ui4G6A">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_dkAUlK9JEeGf5Na7Ui4G6A">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(pertussis::PertussisClinicalInformationSection))->asSequence()->first().oclAsType(pertussis::PertussisClinicalInformationSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_dkAUka9JEeGf5Na7Ui4G6A" type="_U93D8HHZEeG8655npWXf9Q" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dkAUkq9JEeGf5Na7Ui4G6A" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_dk5scq9JEeGf5Na7Ui4G6A" name="getPertussisTreatmentInformationSection" isQuery="true" bodyCondition="_dk5sda9JEeGf5Na7Ui4G6A">
+        <ownedRule xmi:id="_dk5sda9JEeGf5Na7Ui4G6A" name="body" constrainedElement="_dk5scq9JEeGf5Na7Ui4G6A">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_dk5sdq9JEeGf5Na7Ui4G6A">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(pertussis::PertussisTreatmentInformationSection))->asSequence()->first().oclAsType(pertussis::PertussisTreatmentInformationSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_dk5sc69JEeGf5Na7Ui4G6A" type="_24RgsHHpEeG8655npWXf9Q" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dk5sdK9JEeGf5Na7Ui4G6A" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_dnSSF69JEeGf5Na7Ui4G6A" name="getPertussisRelevantDxTestsSection" isQuery="true" bodyCondition="_dnSSGq9JEeGf5Na7Ui4G6A">
+        <ownedRule xmi:id="_dnSSGq9JEeGf5Na7Ui4G6A" name="body" constrainedElement="_dnSSF69JEeGf5Na7Ui4G6A">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_dnSSG69JEeGf5Na7Ui4G6A">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(pertussis::PertussisRelevantDxTestsSection))->asSequence()->first().oclAsType(pertussis::PertussisRelevantDxTestsSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_dnSSGK9JEeGf5Na7Ui4G6A" type="_is9gIHH4EeG8655npWXf9Q" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dnSSGa9JEeGf5Na7Ui4G6A" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_dncDEK9JEeGf5Na7Ui4G6A" name="getPertussisImmunizationsSection" isQuery="true" bodyCondition="_dncDE69JEeGf5Na7Ui4G6A">
+        <ownedRule xmi:id="_dncDE69JEeGf5Na7Ui4G6A" name="body" constrainedElement="_dncDEK9JEeGf5Na7Ui4G6A">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_dncDFK9JEeGf5Na7Ui4G6A">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(pertussis::PertussisImmunizationsSection))->asSequence()->first().oclAsType(pertussis::PertussisImmunizationsSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_dncDEa9JEeGf5Na7Ui4G6A" type="_LMImAHHrEeG8655npWXf9Q" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dncDEq9JEeGf5Na7Ui4G6A" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_364u4HHWEeG8655npWXf9Q" name="PertussisSocialHistorySection">
+      <ownedRule xmi:id="_diq30q9JEeGf5Na7Ui4G6A" name="SocialHistorySectionTemplateId" constrainedElement="_364u4HHWEeG8655npWXf9Q">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_di0BwK9JEeGf5Na7Ui4G6A">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.24')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_dm_XJK9JEeGf5Na7Ui4G6A" name="PertussisSocialHistorySectionPertussisPossibleExposureLocationAct" constrainedElement="_364u4HHWEeG8655npWXf9Q">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_dm_XJa9JEeGf5Na7Ui4G6A">
+          <language>OCL</language>
+          <body>self.entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(pertussis::PertussisPossibleExposureLocationAct) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_doLp8K9JEeGf5Na7Ui4G6A" name="PertussisSocialHistorySectionPertussisPossibleCaseContactLocationAct" constrainedElement="_364u4HHWEeG8655npWXf9Q">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_doLp8a9JEeGf5Na7Ui4G6A">
+          <language>OCL</language>
+          <body>self.entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(pertussis::PertussisPossibleCaseContactLocationAct) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_37Lp0HHWEeG8655npWXf9Q">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_Fw7f4MgpEeCI5ZpfyBisiQ"/>
+      </generalization>
+      <ownedOperation xmi:id="_dnJIIK9JEeGf5Na7Ui4G6A" name="getPertussisPossibleExposureLocationActs" isQuery="true" bodyCondition="_dnJII69JEeGf5Na7Ui4G6A">
+        <ownedRule xmi:id="_dnJII69JEeGf5Na7Ui4G6A" name="body" constrainedElement="_dnJIIK9JEeGf5Na7Ui4G6A">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_dnJIJK9JEeGf5Na7Ui4G6A">
+            <language>OCL</language>
+            <body>self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(pertussis::PertussisPossibleExposureLocationAct)).oclAsType(pertussis::PertussisPossibleExposureLocationAct)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_dnJIIa9JEeGf5Na7Ui4G6A" type="_eTCVgHHXEeG8655npWXf9Q" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dnJIIq9JEeGf5Na7Ui4G6A" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_doLp8q9JEeGf5Na7Ui4G6A" name="getPertussisPossibleCaseContactLocationActs" isQuery="true" bodyCondition="_doLp9a9JEeGf5Na7Ui4G6A">
+        <ownedRule xmi:id="_doLp9a9JEeGf5Na7Ui4G6A" name="body" constrainedElement="_doLp8q9JEeGf5Na7Ui4G6A">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_doLp9q9JEeGf5Na7Ui4G6A">
+            <language>OCL</language>
+            <body>self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(pertussis::PertussisPossibleCaseContactLocationAct)).oclAsType(pertussis::PertussisPossibleCaseContactLocationAct)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_doLp869JEeGf5Na7Ui4G6A" type="_M9fSgJOjEeGHE73moKNrdA" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_doLp9K9JEeGf5Na7Ui4G6A" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_eTCVgHHXEeG8655npWXf9Q" name="PertussisPossibleExposureLocationAct">
+      <ownedRule xmi:id="_di9yxa9JEeGf5Na7Ui4G6A" name="PertussisPossibleExposureLocationActTemplateId" constrainedElement="_eTCVgHHXEeG8655npWXf9Q">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_di9yxq9JEeGf5Na7Ui4G6A">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.63')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_djHjwa9JEeGf5Na7Ui4G6A" name="PertussisPossibleExposureLocationActClassCode" constrainedElement="_eTCVgHHXEeG8655npWXf9Q">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_djHjwq9JEeGf5Na7Ui4G6A">
+          <language>OCL</language>
+          <body>self.classCode=vocab::x_ActClassDocumentEntryAct::ACT</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_djaesK9JEeGf5Na7Ui4G6A" name="PertussisPossibleExposureLocationActCode" constrainedElement="_eTCVgHHXEeG8655npWXf9Q">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_djaesa9JEeGf5Na7Ui4G6A">
+          <language>OCL</language>
+          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (&#xD;&#xA;value.code = '413350009' and value.codeSystem = '2.16.840.1.113883.6.96'))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_djkPsK9JEeGf5Na7Ui4G6A" name="PertussisPossibleExposureLocationActMoodCode" constrainedElement="_eTCVgHHXEeG8655npWXf9Q">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_djkPsa9JEeGf5Na7Ui4G6A">
+          <language>OCL</language>
+          <body>self.moodCode=vocab::x_DocumentActMood::EVN</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_djtZoK9JEeGf5Na7Ui4G6A" name="PertussisPossibleExposureLocationActStatusCode" constrainedElement="_eTCVgHHXEeG8655npWXf9Q">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_djtZoa9JEeGf5Na7Ui4G6A">
+          <language>OCL</language>
+          <body>(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and &#xD;&#xA;let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in (&#xD;&#xA;value.code = 'completed'))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_eTCVgXHXEeG8655npWXf9Q">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_YiANsDxYEd6JwqSGecoePg"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_U93D8HHZEeG8655npWXf9Q" name="PertussisClinicalInformationSection">
+      <ownedRule xmi:id="_djtZo69JEeGf5Na7Ui4G6A" name="PhcrClinicalInformationSectionTemplateId" constrainedElement="_U93D8HHZEeG8655npWXf9Q">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_dj3KoK9JEeGf5Na7Ui4G6A">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.25')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_dnJIJa9JEeGf5Na7Ui4G6A" name="PertussisClinicalInformationSectionPertussisCaseObservation" constrainedElement="_U93D8HHZEeG8655npWXf9Q">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_dnJIJq9JEeGf5Na7Ui4G6A">
+          <language>OCL</language>
+          <body>self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(pertussis::PertussisCaseObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_U93D8XHZEeG8655npWXf9Q">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_84uJEMqZEeCRBIG_Gkv9FQ"/>
+      </generalization>
+      <ownedOperation xmi:id="_dnSSEK9JEeGf5Na7Ui4G6A" name="getPertussisCaseObservation" isQuery="true" bodyCondition="_dnSSE69JEeGf5Na7Ui4G6A">
+        <ownedRule xmi:id="_dnSSE69JEeGf5Na7Ui4G6A" name="body" constrainedElement="_dnSSEK9JEeGf5Na7Ui4G6A">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_dnSSFK9JEeGf5Na7Ui4G6A">
+            <language>OCL</language>
+            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(pertussis::PertussisCaseObservation))->asSequence()->first().oclAsType(pertussis::PertussisCaseObservation)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_dnSSEa9JEeGf5Na7Ui4G6A" type="_f-PoMHHZEeG8655npWXf9Q" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dnSSEq9JEeGf5Na7Ui4G6A" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_f-PoMHHZEeG8655npWXf9Q" name="PertussisCaseObservation">
+      <ownedRule xmi:id="_dkAUl69JEeGf5Na7Ui4G6A" name="ProblemObservationTemplateId" constrainedElement="_f-PoMHHZEeG8655npWXf9Q">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_dkAUmK9JEeGf5Na7Ui4G6A">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.65')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_dkKFkK9JEeGf5Na7Ui4G6A" name="CaseObservationValue" constrainedElement="_f-PoMHHZEeG8655npWXf9Q">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_dkKFka9JEeGf5Na7Ui4G6A">
+          <language>OCL</language>
+          <body>(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = element.oclAsType(datatypes::CD) in &#xD;&#xA;value.code = '27836007' and value.codeSystem = '2.16.840.1.113883.6.96'))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_dkmxgK9JEeGf5Na7Ui4G6A" name="PertussisCaseObservationPertussisSignsAndSymptomsObservation" constrainedElement="_f-PoMHHZEeG8655npWXf9Q">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_dkmxga9JEeGf5Na7Ui4G6A">
+          <language>OCL</language>
+          <body>self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(pertussis::PertussisSignsAndSymptomsObservation))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_f-PoMXHZEeG8655npWXf9Q">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_p8bDQNTCEeC18pmrrt-Mbg"/>
+      </generalization>
+      <ownedOperation xmi:id="_dkwigK9JEeGf5Na7Ui4G6A" name="getPertussisSignsAndSymptomsObservations" isQuery="true" bodyCondition="_dkwig69JEeGf5Na7Ui4G6A">
+        <ownedRule xmi:id="_dkwig69JEeGf5Na7Ui4G6A" name="body" constrainedElement="_dkwigK9JEeGf5Na7Ui4G6A">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_dkwihK9JEeGf5Na7Ui4G6A">
+            <language>OCL</language>
+            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(pertussis::PertussisSignsAndSymptomsObservation)).oclAsType(pertussis::PertussisSignsAndSymptomsObservation)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_dkwiga9JEeGf5Na7Ui4G6A" type="_TTY0QHHbEeG8655npWXf9Q" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dkwigq9JEeGf5Na7Ui4G6A" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_TTY0QHHbEeG8655npWXf9Q" name="PertussisSignsAndSymptomsObservation">
+      <ownedRule xmi:id="_dkT2ka9JEeGf5Na7Ui4G6A" name="SignsAndSymptomsObservationTemplateId" constrainedElement="_TTY0QHHbEeG8655npWXf9Q">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_dkT2kq9JEeGf5Na7Ui4G6A">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.66')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_dkdAgK9JEeGf5Na7Ui4G6A" name="SignsAndSymptomsObservationValue" constrainedElement="_TTY0QHHbEeG8655npWXf9Q">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_dkdAga9JEeGf5Na7Ui4G6A">
+          <language>OCL</language>
+          <body>(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = element.oclAsType(datatypes::CD) in &#xD;&#xA;value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '49727002' or value.code = '284523002' or value.code = '60537006' or value.code = '43025008' or value.code = '422400008' or value.code = '424580008' or value.code = '1023001' or value.code = '3415004' or value.code = '233604007' or value.code = '70995007' or value.code = '91175000' or value.code = '44186003' or value.code = '405737000' or value.code = '304213008' or value.code = '76067001' or value.code = '60119000' or value.code = '267102003' or value.code = '81308009')))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_TTY0QXHbEeG8655npWXf9Q">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#__cLgwNQPEeC4C5jYVS2kfQ"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_24RgsHHpEeG8655npWXf9Q" name="PertussisTreatmentInformationSection">
+      <ownedRule xmi:id="_dkwihq9JEeGf5Na7Ui4G6A" name="PhcrTreatmentInformationSectionTemplateId" constrainedElement="_24RgsHHpEeG8655npWXf9Q">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_dkwih69JEeGf5Na7Ui4G6A">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.26')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_dlDdca9JEeGf5Na7Ui4G6A" name="PertussisTreatmentInformationSectionPertussisTherapeuticRegimen" constrainedElement="_24RgsHHpEeG8655npWXf9Q">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_dlDdcq9JEeGf5Na7Ui4G6A">
+          <language>OCL</language>
+          <body>self.entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(pertussis::PertussisTherapeuticRegimenAct) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_24RgsXHpEeG8655npWXf9Q">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_XTjpIMqaEeCRBIG_Gkv9FQ"/>
+      </generalization>
+      <ownedOperation xmi:id="_dlMnYK9JEeGf5Na7Ui4G6A" name="getPertussisTherapeuticRegimen" isQuery="true" bodyCondition="_dlMnY69JEeGf5Na7Ui4G6A">
+        <ownedRule xmi:id="_dlMnY69JEeGf5Na7Ui4G6A" name="body" constrainedElement="_dlMnYK9JEeGf5Na7Ui4G6A">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_dlMnZK9JEeGf5Na7Ui4G6A">
+            <language>OCL</language>
+            <body>self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(pertussis::PertussisTherapeuticRegimenAct))->asSequence()->first().oclAsType(pertussis::PertussisTherapeuticRegimenAct)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_dlMnYa9JEeGf5Na7Ui4G6A" type="_D069UHHqEeG8655npWXf9Q" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dlMnYq9JEeGf5Na7Ui4G6A" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_D069UHHqEeG8655npWXf9Q" name="PertussisTherapeuticRegimenAct">
+      <ownedRule xmi:id="_dk5seK9JEeGf5Na7Ui4G6A" name="TherapeuticRegimenActTemplateId" constrainedElement="_D069UHHqEeG8655npWXf9Q">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_dk5sea9JEeGf5Na7Ui4G6A">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.67')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_dlWYYK9JEeGf5Na7Ui4G6A" name="PertussisTherapeuticRegimenActPertussisTreatmentGivenSubstanceAdministration" constrainedElement="_D069UHHqEeG8655npWXf9Q">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_dlWYYa9JEeGf5Na7Ui4G6A">
+          <language>OCL</language>
+          <body>self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.substanceAdministration.oclIsUndefined() and entryRelationship.substanceAdministration.oclIsKindOf(pertussis::PertussisTreatmentGivenSubstanceAdministration) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_dlgJYa9JEeGf5Na7Ui4G6A" name="PertussisTherapeuticRegimenActPertussisTreatmentNotGivenSubstanceAdministration" constrainedElement="_D069UHHqEeG8655npWXf9Q">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_dlgJYq9JEeGf5Na7Ui4G6A">
+          <language>OCL</language>
+          <body>self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.substanceAdministration.oclIsUndefined() and entryRelationship.substanceAdministration.oclIsKindOf(pertussis::PertussisTreatmentNotGivenSubstanceAdministration) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_D069UXHqEeG8655npWXf9Q">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_2p558NSrEeC18pmrrt-Mbg"/>
+      </generalization>
+      <ownedOperation xmi:id="_dlWYYq9JEeGf5Na7Ui4G6A" name="getPertussisTreatmentGivenSubstanceAdministrations" isQuery="true" bodyCondition="_dlWYZa9JEeGf5Na7Ui4G6A">
+        <ownedRule xmi:id="_dlWYZa9JEeGf5Na7Ui4G6A" name="body" constrainedElement="_dlWYYq9JEeGf5Na7Ui4G6A">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_dlWYZq9JEeGf5Na7Ui4G6A">
+            <language>OCL</language>
+            <body>self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(pertussis::PertussisTreatmentGivenSubstanceAdministration)).oclAsType(pertussis::PertussisTreatmentGivenSubstanceAdministration)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_dlWYY69JEeGf5Na7Ui4G6A" type="_nHfTEHHqEeG8655npWXf9Q" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dlWYZK9JEeGf5Na7Ui4G6A" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_dlpTUK9JEeGf5Na7Ui4G6A" name="getPertussisTreatmentNotGivenSubstanceAdministrations" isQuery="true" bodyCondition="_dlpTU69JEeGf5Na7Ui4G6A">
+        <ownedRule xmi:id="_dlpTU69JEeGf5Na7Ui4G6A" name="body" constrainedElement="_dlpTUK9JEeGf5Na7Ui4G6A">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_dlpTVK9JEeGf5Na7Ui4G6A">
+            <language>OCL</language>
+            <body>self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(pertussis::PertussisTreatmentNotGivenSubstanceAdministration)).oclAsType(pertussis::PertussisTreatmentNotGivenSubstanceAdministration)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_dlpTUa9JEeGf5Na7Ui4G6A" type="_y5fhgHHqEeG8655npWXf9Q" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dlpTUq9JEeGf5Na7Ui4G6A" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_nHfTEHHqEeG8655npWXf9Q" name="PertussisTreatmentGivenSubstanceAdministration">
+      <ownedRule xmi:id="_dlMnZq9JEeGf5Na7Ui4G6A" name="TreatmentGivenSubstanceAdministrationTemplateId" constrainedElement="_nHfTEHHqEeG8655npWXf9Q">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_dlMnZ69JEeGf5Na7Ui4G6A">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.68')</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_nHfTEXHqEeG8655npWXf9Q">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_XOKZ4NStEeC18pmrrt-Mbg"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_y5fhgHHqEeG8655npWXf9Q" name="PertussisTreatmentNotGivenSubstanceAdministration">
+      <ownedRule xmi:id="_dlWYaK9JEeGf5Na7Ui4G6A" name="TreatmentNotGivenSubstanceAdministrationTemplateId" constrainedElement="_y5fhgHHqEeG8655npWXf9Q">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_dlWYaa9JEeGf5Na7Ui4G6A">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.69')</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_y5fhgXHqEeG8655npWXf9Q">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_NbgssNSwEeC18pmrrt-Mbg"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_LMImAHHrEeG8655npWXf9Q" name="PertussisImmunizationsSection">
+      <ownedRule xmi:id="_dlpTVq9JEeGf5Na7Ui4G6A" name="ImmunizationsSectionTemplateId" constrainedElement="_LMImAHHrEeG8655npWXf9Q">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_dlpTV69JEeGf5Na7Ui4G6A">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.28')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_dm1mIK9JEeGf5Na7Ui4G6A" name="PertussisImmunizationsSectionPertussisImmunizationActivity" constrainedElement="_LMImAHHrEeG8655npWXf9Q">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_dm1mIa9JEeGf5Na7Ui4G6A">
+          <language>OCL</language>
+          <body>self.entry->exists(entry : cda::Entry | not entry.substanceAdministration.oclIsUndefined() and entry.substanceAdministration.oclIsKindOf(pertussis::PertussisImmunizationActivity))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_LMImAXHrEeG8655npWXf9Q">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ccd/model/ccd_Ecore.uml#_CinbMHDPEd6eItyqb1FoWg"/>
+      </generalization>
+      <ownedOperation xmi:id="_dm1mIq9JEeGf5Na7Ui4G6A" name="getPertussisImmunizationActivities" isQuery="true" bodyCondition="_dm1mJa9JEeGf5Na7Ui4G6A">
+        <ownedRule xmi:id="_dm1mJa9JEeGf5Na7Ui4G6A" name="body" constrainedElement="_dm1mIq9JEeGf5Na7Ui4G6A">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_dm1mJq9JEeGf5Na7Ui4G6A">
+            <language>OCL</language>
+            <body>self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(pertussis::PertussisImmunizationActivity)).oclAsType(pertussis::PertussisImmunizationActivity)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_dm1mI69JEeGf5Na7Ui4G6A" type="_451GIH6JEeGdF60gQ6b8Pg" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dm1mJK9JEeGf5Na7Ui4G6A" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_UOGp4HH4EeG8655npWXf9Q" name="PertussisResultObservation">
+      <ownedRule xmi:id="_dlzEUq9JEeGf5Na7Ui4G6A" name="ResultObservationTemplateId" constrainedElement="_UOGp4HH4EeG8655npWXf9Q">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_dlzEU69JEeGf5Na7Ui4G6A">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.71')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_dl81UK9JEeGf5Na7Ui4G6A" name="ResultObservationCode" constrainedElement="_UOGp4HH4EeG8655npWXf9Q">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_dl81Ua9JEeGf5Na7Ui4G6A">
+          <language>OCL</language>
+          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (&#xD;&#xA;value.codeSystem = '2.16.840.1.113883.6.1' and not value.code.oclIsUndefined()))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_UOGp4XH4EeG8655npWXf9Q">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#__3pL0PNrEeCOm7Y48UO5Tg"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_is9gIHH4EeG8655npWXf9Q" name="PertussisRelevantDxTestsSection">
+      <ownedRule xmi:id="_dmF_Qq9JEeGf5Na7Ui4G6A" name="ResultsSectionTemplateId" constrainedElement="_is9gIHH4EeG8655npWXf9Q">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_dmF_Q69JEeGf5Na7Ui4G6A">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.27')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_dmPwQK9JEeGf5Na7Ui4G6A" name="PertussisRelevantDxTestsSectionPertussisResultObservation" constrainedElement="_is9gIHH4EeG8655npWXf9Q">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_dmPwQa9JEeGf5Na7Ui4G6A">
+          <language>OCL</language>
+          <body>self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(pertussis::PertussisResultObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_dmirMK9JEeGf5Na7Ui4G6A" name="PertussisRelevantDxTestsSectionPertussisResultOrganizer" constrainedElement="_is9gIHH4EeG8655npWXf9Q">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_dmirMa9JEeGf5Na7Ui4G6A">
+          <language>OCL</language>
+          <body>self.entry->exists(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(pertussis::PertussisResultOrganizer) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_is9gIXH4EeG8655npWXf9Q">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_2dxgkNM5EeCbJdgmSYxI0g"/>
+      </generalization>
+      <ownedOperation xmi:id="_dmPwQq9JEeGf5Na7Ui4G6A" name="getPertussisResultObservations" isQuery="true" bodyCondition="_dmPwRa9JEeGf5Na7Ui4G6A">
+        <ownedRule xmi:id="_dmPwRa9JEeGf5Na7Ui4G6A" name="body" constrainedElement="_dmPwQq9JEeGf5Na7Ui4G6A">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_dmPwRq9JEeGf5Na7Ui4G6A">
+            <language>OCL</language>
+            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(pertussis::PertussisResultObservation)).oclAsType(pertussis::PertussisResultObservation)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_dmPwQ69JEeGf5Na7Ui4G6A" type="_UOGp4HH4EeG8655npWXf9Q" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dmPwRK9JEeGf5Na7Ui4G6A" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_dmirMq9JEeGf5Na7Ui4G6A" name="getPertussisResultOrganizers" isQuery="true" bodyCondition="_dmirNa9JEeGf5Na7Ui4G6A">
+        <ownedRule xmi:id="_dmirNa9JEeGf5Na7Ui4G6A" name="body" constrainedElement="_dmirMq9JEeGf5Na7Ui4G6A">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_dmirNq9JEeGf5Na7Ui4G6A">
+            <language>OCL</language>
+            <body>self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(pertussis::PertussisResultOrganizer)).oclAsType(pertussis::PertussisResultOrganizer)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_dmirM69JEeGf5Na7Ui4G6A" type="_52bWEHH4EeG8655npWXf9Q" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dmirNK9JEeGf5Na7Ui4G6A" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_52bWEHH4EeG8655npWXf9Q" name="PertussisResultOrganizer">
+      <ownedRule xmi:id="_dmPwSa9JEeGf5Na7Ui4G6A" name="ResultOrganizerTemplateId" constrainedElement="_52bWEHH4EeG8655npWXf9Q">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_dmY6MK9JEeGf5Na7Ui4G6A">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.70')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_dmY6Mq9JEeGf5Na7Ui4G6A" name="PertussisResultOrganizerCode" constrainedElement="_52bWEHH4EeG8655npWXf9Q">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_dmY6M69JEeGf5Na7Ui4G6A">
+          <language>OCL</language>
+          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_doLp969JEeGf5Na7Ui4G6A" name="PertussisResultOrganizerPertussisResultObservation" constrainedElement="_52bWEHH4EeG8655npWXf9Q">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_doLp-K9JEeGf5Na7Ui4G6A">
+          <language>OCL</language>
+          <body>self.component->exists(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(pertussis::PertussisResultObservation))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_52bWEXH4EeG8655npWXf9Q">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_0r8IYPNrEeCOm7Y48UO5Tg"/>
+      </generalization>
+      <ownedOperation xmi:id="_doVa8K9JEeGf5Na7Ui4G6A" name="getPertussisResultObservations" isQuery="true" bodyCondition="_doVa869JEeGf5Na7Ui4G6A">
+        <ownedRule xmi:id="_doVa869JEeGf5Na7Ui4G6A" name="body" constrainedElement="_doVa8K9JEeGf5Na7Ui4G6A">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_doVa9K9JEeGf5Na7Ui4G6A">
+            <language>OCL</language>
+            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(pertussis::PertussisResultObservation)).oclAsType(pertussis::PertussisResultObservation)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_doVa8a9JEeGf5Na7Ui4G6A" type="_UOGp4HH4EeG8655npWXf9Q" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_doVa8q9JEeGf5Na7Ui4G6A" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_451GIH6JEeGdF60gQ6b8Pg" name="PertussisImmunizationActivity">
+      <ownedRule xmi:id="_dmirOK9JEeGf5Na7Ui4G6A" name="MedicationActivityTemplateId" constrainedElement="_451GIH6JEeGdF60gQ6b8Pg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_dmirOa9JEeGf5Na7Ui4G6A">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.72')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_dmscMa9JEeGf5Na7Ui4G6A" name="PertussisImmunizationActivityMoodCode" constrainedElement="_451GIH6JEeGdF60gQ6b8Pg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_dmscMq9JEeGf5Na7Ui4G6A">
+          <language>OCL</language>
+          <body>isDefined('moodCode')</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_451GIX6JEeGdF60gQ6b8Pg">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ccd/model/ccd_Ecore.uml#_W6aMoHfTEd6ZeOKq_2_a9g"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_LMUmEH6KEeGdF60gQ6b8Pg" name="PertussisImmunizationProduct">
+      <ownedRule xmi:id="_dm_XIa9JEeGf5Na7Ui4G6A" name="ProductTemplateId" constrainedElement="_LMUmEH6KEeGdF60gQ6b8Pg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_dm_XIq9JEeGf5Na7Ui4G6A">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.73')</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_LMUmEX6KEeGdF60gQ6b8Pg">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ccd/model/ccd_Ecore.uml#_8Xj7UIiBEd66cKocspyVOg"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_M9fSgJOjEeGHE73moKNrdA" name="PertussisPossibleCaseContactLocationAct">
+      <ownedRule xmi:id="_dncDFa9JEeGf5Na7Ui4G6A" name="PertussisPossibleCaseContactLocationActTemplateId" constrainedElement="_M9fSgJOjEeGHE73moKNrdA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_dncDFq9JEeGf5Na7Ui4G6A">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.64')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_dnlNAK9JEeGf5Na7Ui4G6A" name="PertussisPossibleCaseContactLocationActClassCode" constrainedElement="_M9fSgJOjEeGHE73moKNrdA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_dnlNAa9JEeGf5Na7Ui4G6A">
+          <language>OCL</language>
+          <body>self.classCode=vocab::x_ActClassDocumentEntryAct::ACT</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_dnu-AK9JEeGf5Na7Ui4G6A" name="PertussisPossibleCaseContactLocationActCode" constrainedElement="_M9fSgJOjEeGHE73moKNrdA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_dnu-Aa9JEeGf5Na7Ui4G6A">
+          <language>OCL</language>
+          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (&#xD;&#xA;value.code = '413350009' and value.codeSystem = '2.16.840.1.113883.6.96'))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_dn4vAK9JEeGf5Na7Ui4G6A" name="PertussisPossibleCaseContactLocationActMoodCode" constrainedElement="_M9fSgJOjEeGHE73moKNrdA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_dn4vAa9JEeGf5Na7Ui4G6A">
+          <language>OCL</language>
+          <body>self.moodCode=vocab::x_DocumentActMood::EVN</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_doB48K9JEeGf5Na7Ui4G6A" name="PertussisPossibleCaseContactLocationActStatusCode" constrainedElement="_M9fSgJOjEeGHE73moKNrdA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_doB48a9JEeGf5Na7Ui4G6A">
+          <language>OCL</language>
+          <body>(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and &#xD;&#xA;let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in (&#xD;&#xA;value.code = 'completed'))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_M9fSgZOjEeGHE73moKNrdA">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_YiANsDxYEd6JwqSGecoePg"/>
+      </generalization>
+    </packagedElement>
+    <profileApplication xmi:id="_27mpGUOoEeGGsOswcKrH-Q">
+      <eAnnotations xmi:id="_27mpGkOoEeGGsOswcKrH-Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_27mpG0OoEeGGsOswcKrH-Q">
+      <eAnnotations xmi:id="_27mpHEOoEeGGsOswcKrH-Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/cda/4#/"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://CDA_PROFILES/CDA.profile.uml#_cxOJEIEVEd6H8o-hO3-B4Q"/>
+    </profileApplication>
+    <profileApplication xmi:id="_dhU0AK9JEeGf5Na7Ui4G6A">
+      <eAnnotations xmi:id="_dhelAK9JEeGf5Na7Ui4G6A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Ecore.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Package>
+  <CDA:CodegenSupport xmi:id="_2-b6oEOoEeGGsOswcKrH-Q" basePackage="org.openhealthtools.mdht.uml.cda.phcr" nsPrefix="pertussis" nsURI="http://www.openhealthtools.org/mdht/uml/cda/phcr/pertussis" packageName="pertussis" prefix="pertussis" base_Namespace="_27mpEEOoEeGGsOswcKrH-Q"/>
+  <CDA:CDATemplate xmi:id="_2-b6okOoEeGGsOswcKrH-Q" base_Class="_2-b6oUOoEeGGsOswcKrH-Q" templateId="2.16.840.1.113883.10.20.15.1.5" assigningAuthorityName=""/>
+  <CDA:CDATemplate xmi:id="_Aqaq0HHXEeG8655npWXf9Q" base_Class="_364u4HHWEeG8655npWXf9Q" templateId="2.16.840.1.113883.10.20.15.2.24"/>
+  <CDA:CDATemplate xmi:id="_kEcTcHHXEeG8655npWXf9Q" base_Class="_eTCVgHHXEeG8655npWXf9Q" templateId="2.16.840.1.113883.10.20.15.3.63"/>
+  <CDA:CDATemplate xmi:id="_j3ZEAHHZEeG8655npWXf9Q" base_Class="_f-PoMHHZEeG8655npWXf9Q" templateId="2.16.840.1.113883.10.20.15.3.65"/>
+  <CDA:CDATemplate xmi:id="_HBqYYHHlEeG8655npWXf9Q" base_Class="_TTY0QHHbEeG8655npWXf9Q" templateId="2.16.840.1.113883.10.20.15.3.66"/>
+  <CDA:CDATemplate xmi:id="_Ikmx0HHlEeG8655npWXf9Q" base_Class="_U93D8HHZEeG8655npWXf9Q" templateId="2.16.840.1.113883.10.20.15.2.25"/>
+  <CDA:CDATemplate xmi:id="_41SnAHHpEeG8655npWXf9Q" base_Class="_24RgsHHpEeG8655npWXf9Q" templateId="2.16.840.1.113883.10.20.15.2.26"/>
+  <CDA:CDATemplate xmi:id="_GEt1sHHqEeG8655npWXf9Q" base_Class="_D069UHHqEeG8655npWXf9Q" templateId="2.16.840.1.113883.10.20.15.3.67"/>
+  <CDA:CDATemplate xmi:id="_q0ko0HHqEeG8655npWXf9Q" base_Class="_nHfTEHHqEeG8655npWXf9Q" templateId="2.16.840.1.113883.10.20.15.3.68"/>
+  <CDA:CDATemplate xmi:id="_0hW3MHHqEeG8655npWXf9Q" base_Class="_y5fhgHHqEeG8655npWXf9Q" templateId="2.16.840.1.113883.10.20.15.3.69"/>
+  <CDA:CDATemplate xmi:id="_hMI5gHHrEeG8655npWXf9Q" base_Class="_LMImAHHrEeG8655npWXf9Q" templateId="2.16.840.1.113883.10.20.15.2.28"/>
+  <CDA:CDATemplate xmi:id="_nWrdQHH4EeG8655npWXf9Q" base_Class="_is9gIHH4EeG8655npWXf9Q" templateId="2.16.840.1.113883.10.20.15.2.27"/>
+  <CDA:CDATemplate xmi:id="__zTkMHH4EeG8655npWXf9Q" base_Class="_UOGp4HH4EeG8655npWXf9Q" templateId="2.16.840.1.113883.10.20.15.3.71"/>
+  <CDA:CDATemplate xmi:id="_AcbZsHH5EeG8655npWXf9Q" base_Class="_52bWEHH4EeG8655npWXf9Q" templateId="2.16.840.1.113883.10.20.15.3.70"/>
+  <CDA:CDATemplate xmi:id="_72VTgH6JEeGdF60gQ6b8Pg" base_Class="_451GIH6JEeGdF60gQ6b8Pg" templateId="2.16.840.1.113883.10.20.15.3.72"/>
+  <CDA:CDATemplate xmi:id="_YmPioH6MEeGdF60gQ6b8Pg" base_Class="_LMUmEH6KEeGdF60gQ6b8Pg" templateId="2.16.840.1.113883.10.20.15.3.73"/>
+  <CDA:CDATemplate xmi:id="_UN9PcJOjEeGHE73moKNrdA" severity="WARNING" base_Class="_M9fSgJOjEeGHE73moKNrdA" templateId="2.16.840.1.113883.10.20.15.3.64"/>
+  <Ecore:EPackage xmi:id="_dhnu8K9JEeGf5Na7Ui4G6A" base_Package="_27mpEEOoEeGGsOswcKrH-Q" packageName="pertussis" nsPrefix="pertussis" nsURI="http://www.openhealthtools.org/mdht/uml/cda/phcr/pertussis" basePackage="org.openhealthtools.mdht.uml.cda.phcr" prefix="pertussis"/>
+  <CDA:ConformsTo xmi:id="_dhxf8K9JEeGf5Na7Ui4G6A" base_Generalization="_2-b6o0OoEeGGsOswcKrH-Q"/>
+  <Ecore:EClass xmi:id="_diOL4K9JEeGf5Na7Ui4G6A" base_Class="_2-b6oUOoEeGGsOswcKrH-Q">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation title.mixed='Public Health Case Report - Pertussis' templateId.root='2.16.840.1.113883.10.20.15.1.5' constraints.validation.error='PertussisCaseReportTemplateId PertussisCaseReportTitle PertussisCaseReportPertussisClinicalInformationSection' constraints.validation.warning='PertussisCaseReportPertussisSocialHistorySection PertussisCaseReportPertussisTreatmentInformationSection PertussisCaseReportPertussisRelevantDxTestsSection PertussisCaseReportPertussisImmunizationsSection'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_diq30K9JEeGf5Na7Ui4G6A" base_Generalization="_37Lp0HHWEeG8655npWXf9Q"/>
+  <Ecore:EClass xmi:id="_di0Bwa9JEeGf5Na7Ui4G6A" base_Class="_364u4HHWEeG8655npWXf9Q">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.2.24' constraints.validation.error='PertussisSocialHistorySectionTemplateId' constraints.validation.info='PertussisSocialHistorySectionPertussisPossibleExposureLocationAct PertussisSocialHistorySectionPertussisPossibleCaseContactLocationAct'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_djHjwK9JEeGf5Na7Ui4G6A" base_Class="_eTCVgHHXEeG8655npWXf9Q">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation statusCode.code='completed' code.codeSystem='2.16.840.1.113883.6.96' templateId.root='2.16.840.1.113883.10.20.15.3.63' code.displayName='Finding with explicit context' constraints.validation.error='PertussisPossibleExposureLocationActTemplateId PertussisPossibleExposureLocationActClassCode PertussisPossibleExposureLocationActCode PertussisPossibleExposureLocationActMoodCode PertussisPossibleExposureLocationActStatusCode' code.codeSystemName='SNOMEDCT' classCode='ACT' code.code='413350009' moodCode='EVN'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_djtZoq9JEeGf5Na7Ui4G6A" base_Generalization="_U93D8XHZEeG8655npWXf9Q"/>
+  <Ecore:EClass xmi:id="_dj3Koa9JEeGf5Na7Ui4G6A" base_Class="_U93D8HHZEeG8655npWXf9Q">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.2.25' constraints.validation.error='PertussisClinicalInformationSectionTemplateId PertussisClinicalInformationSectionPertussisCaseObservation'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_dkAUla9JEeGf5Na7Ui4G6A" base_Generalization="_f-PoMXHZEeG8655npWXf9Q"/>
+  <Ecore:EClass xmi:id="_dkAUma9JEeGf5Na7Ui4G6A" base_Class="_f-PoMHHZEeG8655npWXf9Q">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation value.displayName='Pertussis' value.codeSystemName='SNOMEDCT' templateId.root='2.16.840.1.113883.10.20.15.3.65' value.code='27836007' constraints.validation.error='PertussisCaseObservationTemplateId CaseObservationValue' constraints.validation.warning='PertussisCaseObservationPertussisSignsAndSymptomsObservation' value.codeSystem='2.16.840.1.113883.6.96'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_dkT2kK9JEeGf5Na7Ui4G6A" base_Generalization="_TTY0QXHbEeG8655npWXf9Q"/>
+  <Ecore:EClass xmi:id="_dkT2k69JEeGf5Na7Ui4G6A" base_Class="_TTY0QHHbEeG8655npWXf9Q">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation value.codeSystemName='SNOMEDCT' templateId.root='2.16.840.1.113883.10.20.15.3.66' constraints.validation.error='PertussisSignsAndSymptomsObservationTemplateId SignsAndSymptomsObservationValue' value.codeSystem='2.16.840.1.113883.6.96'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_dkwiha9JEeGf5Na7Ui4G6A" base_Generalization="_24RgsXHpEeG8655npWXf9Q"/>
+  <Ecore:EClass xmi:id="_dkwiiK9JEeGf5Na7Ui4G6A" base_Class="_24RgsHHpEeG8655npWXf9Q">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.2.26' constraints.validation.error='PertussisTreatmentInformationSectionTemplateId PertussisTreatmentInformationSectionPertussisTherapeuticRegimen'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_dk5sd69JEeGf5Na7Ui4G6A" base_Generalization="_D069UXHqEeG8655npWXf9Q"/>
+  <Ecore:EClass xmi:id="_dlDdcK9JEeGf5Na7Ui4G6A" base_Class="_D069UHHqEeG8655npWXf9Q">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.3.67' constraints.validation.error='PertussisTherapeuticRegimenActTemplateId' constraints.validation.warning='PertussisTherapeuticRegimenActPertussisTreatmentGivenSubstanceAdministration' constraints.validation.info='PertussisTherapeuticRegimenActPertussisTreatmentNotGivenSubstanceAdministration'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_dlMnZa9JEeGf5Na7Ui4G6A" base_Generalization="_nHfTEXHqEeG8655npWXf9Q"/>
+  <Ecore:EClass xmi:id="_dlMnaK9JEeGf5Na7Ui4G6A" base_Class="_nHfTEHHqEeG8655npWXf9Q">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.3.68' constraints.validation.error='PertussisTreatmentGivenSubstanceAdministrationTemplateId'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_dlWYZ69JEeGf5Na7Ui4G6A" base_Generalization="_y5fhgXHqEeG8655npWXf9Q"/>
+  <Ecore:EClass xmi:id="_dlgJYK9JEeGf5Na7Ui4G6A" base_Class="_y5fhgHHqEeG8655npWXf9Q">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.3.69' constraints.validation.error='PertussisTreatmentNotGivenSubstanceAdministrationTemplateId'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_dlpTVa9JEeGf5Na7Ui4G6A" base_Generalization="_LMImAXHrEeG8655npWXf9Q"/>
+  <Ecore:EClass xmi:id="_dlpTWK9JEeGf5Na7Ui4G6A" base_Class="_LMImAHHrEeG8655npWXf9Q">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.2.28' constraints.validation.error='PertussisImmunizationsSectionTemplateId' constraints.validation.warning='PertussisImmunizationsSectionPertussisImmunizationActivity'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_dlzEUK9JEeGf5Na7Ui4G6A" base_Generalization="_UOGp4XH4EeG8655npWXf9Q"/>
+  <Ecore:EClass xmi:id="_dlzEVK9JEeGf5Na7Ui4G6A" base_Class="_UOGp4HH4EeG8655npWXf9Q">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation code.codeSystem='2.16.840.1.113883.6.1' templateId.root='2.16.840.1.113883.10.20.15.3.71' constraints.validation.error='PertussisResultObservationTemplateId ResultObservationCode' code.codeSystemName='LOINC'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_dmF_QK9JEeGf5Na7Ui4G6A" base_Generalization="_is9gIXH4EeG8655npWXf9Q"/>
+  <Ecore:EClass xmi:id="_dmF_RK9JEeGf5Na7Ui4G6A" base_Class="_is9gIHH4EeG8655npWXf9Q">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.2.27' constraints.validation.error='PertussisRelevantDxTestsSectionTemplateId' constraints.validation.warning='PertussisRelevantDxTestsSectionPertussisResultObservation' constraints.validation.info='PertussisRelevantDxTestsSectionPertussisResultOrganizer'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_dmPwR69JEeGf5Na7Ui4G6A" base_Generalization="_52bWEXH4EeG8655npWXf9Q"/>
+  <Ecore:EClass xmi:id="_dmY6Ma9JEeGf5Na7Ui4G6A" base_Class="_52bWEHH4EeG8655npWXf9Q">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.3.70' constraints.validation.error='PertussisResultOrganizerTemplateId PertussisResultOrganizerCode PertussisResultOrganizerPertussisResultObservation'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_dmirN69JEeGf5Na7Ui4G6A" base_Generalization="_451GIX6JEeGdF60gQ6b8Pg"/>
+  <Ecore:EClass xmi:id="_dmscMK9JEeGf5Na7Ui4G6A" base_Class="_451GIH6JEeGdF60gQ6b8Pg">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.3.72' constraints.validation.error='PertussisImmunizationActivityTemplateId PertussisImmunizationActivityMoodCode'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_dm_XIK9JEeGf5Na7Ui4G6A" base_Generalization="_LMUmEX6KEeGdF60gQ6b8Pg"/>
+  <Ecore:EClass xmi:id="_dm_XI69JEeGf5Na7Ui4G6A" base_Class="_LMUmEH6KEeGdF60gQ6b8Pg">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.3.73' constraints.validation.error='PertussisImmunizationProductTemplateId'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_dncDF69JEeGf5Na7Ui4G6A" base_Class="_M9fSgJOjEeGHE73moKNrdA">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation statusCode.code='completed' code.codeSystem='2.16.840.1.113883.6.96' templateId.root='2.16.840.1.113883.10.20.15.3.64' code.displayName='Finding with explicit context' constraints.validation.error='PertussisPossibleCaseContactLocationActTemplateId PertussisPossibleCaseContactLocationActClassCode PertussisPossibleCaseContactLocationActCode PertussisPossibleCaseContactLocationActMoodCode PertussisPossibleCaseContactLocationActStatusCode' code.codeSystemName='SNOMEDCT' classCode='ACT' code.code='413350009' moodCode='EVN'</annotation>
+  </Ecore:EClass>
+</xmi:XMI>

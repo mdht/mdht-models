@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
+  <uml:Package xmi:id="_8HnGsEx2EeGUf_gP0Xp-cg" name="tss">
+    <packageImport xmi:id="_8J17UEx2EeGUf_gP0Xp-cg">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_6MwukMgnEeCI5ZpfyBisiQ"/>
+    </packageImport>
+    <packageImport xmi:id="_8J17UUx2EeGUf_gP0Xp-cg">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.cda.ccd/model/ccd_Ecore.uml#_qQyD8jxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_8J17Ukx2EeGUf_gP0Xp-cg">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ii81kjxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_8J17U0x2EeGUf_gP0Xp-cg">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_XgMSwzxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_8J17VEx2EeGUf_gP0Xp-cg">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVbeUDcEd6xYZuu1VKCVw"/>
+    </packageImport>
+    <packageImport xmi:id="_8J17VUx2EeGUf_gP0Xp-cg">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_KnCD4CFjEd-3s7f6mWX-3A"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_8JZPYUx2EeGUf_gP0Xp-cg" name="ToxicShockSyndromeCaseReport">
+      <ownedRule xmi:id="_yeWjUbAUEeGiuM6eykFnIA" name="PublicHealthCaseReportTemplateId" constrainedElement="_8JZPYUx2EeGUf_gP0Xp-cg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_yeWjUrAUEeGiuM6eykFnIA">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.1.6')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_yeqFULAUEeGiuM6eykFnIA" name="ToxicShockSyndromeCaseReportTitle" constrainedElement="_8JZPYUx2EeGUf_gP0Xp-cg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_yeqFUbAUEeGiuM6eykFnIA">
+          <language>OCL</language>
+          <body>(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined() and self.title.getText() = 'Public Health Case Report - Toxic Shock Syndrome')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_yezPRbAUEeGiuM6eykFnIA" name="ToxicShockSyndromeCaseReportTssPhcrClinicalInformationSection" constrainedElement="_8JZPYUx2EeGUf_gP0Xp-cg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_yezPRrAUEeGiuM6eykFnIA">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(tss::TssPhcrClinicalInformationSection))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_ye9ARbAUEeGiuM6eykFnIA" name="ToxicShockSyndromeCaseReportTssPhcrRelevantDxTestsSection" constrainedElement="_8JZPYUx2EeGUf_gP0Xp-cg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ye9ARrAUEeGiuM6eykFnIA">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(tss::TssPhcrRelevantDxTestsSection))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_8JZPY0x2EeGUf_gP0Xp-cg">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_6PmAIcgnEeCI5ZpfyBisiQ"/>
+      </generalization>
+      <ownedOperation xmi:id="_ye9AQLAUEeGiuM6eykFnIA" name="getTssPhcrClinicalInformationSection" isQuery="true" bodyCondition="_ye9AQ7AUEeGiuM6eykFnIA">
+        <ownedRule xmi:id="_ye9AQ7AUEeGiuM6eykFnIA" name="body" constrainedElement="_ye9AQLAUEeGiuM6eykFnIA">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_ye9ARLAUEeGiuM6eykFnIA">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(tss::TssPhcrClinicalInformationSection))->asSequence()->first().oclAsType(tss::TssPhcrClinicalInformationSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_ye9AQbAUEeGiuM6eykFnIA" type="_SA0bwJYPEeGloY5sHBJ_mQ" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ye9AQrAUEeGiuM6eykFnIA" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_ye9AR7AUEeGiuM6eykFnIA" name="getTssPhcrRelevantDxTestsSection" isQuery="true" bodyCondition="_ye9ASrAUEeGiuM6eykFnIA">
+        <ownedRule xmi:id="_ye9ASrAUEeGiuM6eykFnIA" name="body" constrainedElement="_ye9AR7AUEeGiuM6eykFnIA">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_yfGKMLAUEeGiuM6eykFnIA">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(tss::TssPhcrRelevantDxTestsSection))->asSequence()->first().oclAsType(tss::TssPhcrRelevantDxTestsSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_ye9ASLAUEeGiuM6eykFnIA" type="_zV7mUJYPEeGloY5sHBJ_mQ" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ye9ASbAUEeGiuM6eykFnIA" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_SA0bwJYPEeGloY5sHBJ_mQ" name="TssPhcrClinicalInformationSection">
+      <ownedRule xmi:id="_yeqFU7AUEeGiuM6eykFnIA" name="PhcrClinicalInformationSectionTemplateId" constrainedElement="_SA0bwJYPEeGloY5sHBJ_mQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_yeqFVLAUEeGiuM6eykFnIA">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.42')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_ymZsFbAUEeGiuM6eykFnIA" name="TssPhcrClinicalInformationSectionTssCaseObservation" constrainedElement="_SA0bwJYPEeGloY5sHBJ_mQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ymZsFrAUEeGiuM6eykFnIA">
+          <language>OCL</language>
+          <body>self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(tss::TssCaseObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_SA0bwZYPEeGloY5sHBJ_mQ">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_84uJEMqZEeCRBIG_Gkv9FQ"/>
+      </generalization>
+      <ownedOperation xmi:id="_ymZsF7AUEeGiuM6eykFnIA" name="getTssCaseObservation" isQuery="true" bodyCondition="_ymZsGrAUEeGiuM6eykFnIA">
+        <ownedRule xmi:id="_ymZsGrAUEeGiuM6eykFnIA" name="body" constrainedElement="_ymZsF7AUEeGiuM6eykFnIA">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_ymZsG7AUEeGiuM6eykFnIA">
+            <language>OCL</language>
+            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(tss::TssCaseObservation))->asSequence()->first().oclAsType(tss::TssCaseObservation)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_ymZsGLAUEeGiuM6eykFnIA" type="_TKLDAJfcEeGIls8OsXqV-w" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ymZsGbAUEeGiuM6eykFnIA" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_zV7mUJYPEeGloY5sHBJ_mQ" name="TssPhcrRelevantDxTestsSection">
+      <ownedRule xmi:id="_yezPQrAUEeGiuM6eykFnIA" name="ResultsSectionTemplateId" constrainedElement="_zV7mUJYPEeGloY5sHBJ_mQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_yezPQ7AUEeGiuM6eykFnIA">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.43')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_ymP7FbAUEeGiuM6eykFnIA" name="TssPhcrRelevantDxTestsSectionTssResultOrganizer" constrainedElement="_zV7mUJYPEeGloY5sHBJ_mQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ymP7FrAUEeGiuM6eykFnIA">
+          <language>OCL</language>
+          <body>self.entry->exists(entry : cda::Entry | not entry.organizer.oclIsUndefined() and entry.organizer.oclIsKindOf(tss::TssResultOrganizer) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_ymP7HLAUEeGiuM6eykFnIA" name="TssPhcrRelevantDxTestsSectionTssResultObservation" constrainedElement="_zV7mUJYPEeGloY5sHBJ_mQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ymP7HbAUEeGiuM6eykFnIA">
+          <language>OCL</language>
+          <body>self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(tss::TssResultObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_zV7mUZYPEeGloY5sHBJ_mQ">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_2dxgkNM5EeCbJdgmSYxI0g"/>
+      </generalization>
+      <ownedOperation xmi:id="_ymP7F7AUEeGiuM6eykFnIA" name="getTssResultOrganizers" isQuery="true" bodyCondition="_ymP7GrAUEeGiuM6eykFnIA">
+        <ownedRule xmi:id="_ymP7GrAUEeGiuM6eykFnIA" name="body" constrainedElement="_ymP7F7AUEeGiuM6eykFnIA">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_ymP7G7AUEeGiuM6eykFnIA">
+            <language>OCL</language>
+            <body>self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(tss::TssResultOrganizer)).oclAsType(tss::TssResultOrganizer)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_ymP7GLAUEeGiuM6eykFnIA" type="_8H8MQKCIEeGzToMRDovxkA" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ymP7GbAUEeGiuM6eykFnIA" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_ymP7HrAUEeGiuM6eykFnIA" name="getTssResultObservations" isQuery="true" bodyCondition="_ymP7IbAUEeGiuM6eykFnIA">
+        <ownedRule xmi:id="_ymP7IbAUEeGiuM6eykFnIA" name="body" constrainedElement="_ymP7HrAUEeGiuM6eykFnIA">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_ymP7IrAUEeGiuM6eykFnIA">
+            <language>OCL</language>
+            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(tss::TssResultObservation)).oclAsType(tss::TssResultObservation)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_ymP7H7AUEeGiuM6eykFnIA" type="_Jiz18KCJEeGzToMRDovxkA" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ymP7ILAUEeGiuM6eykFnIA" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_TKLDAJfcEeGIls8OsXqV-w" name="TssCaseObservation">
+      <ownedRule xmi:id="_yfGKM7AUEeGiuM6eykFnIA" name="ProblemObservationTemplateId" constrainedElement="_TKLDAJfcEeGIls8OsXqV-w">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_yfGKNLAUEeGiuM6eykFnIA">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.99')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_ylqFMLAUEeGiuM6eykFnIA" name="CaseObservationValue" constrainedElement="_TKLDAJfcEeGIls8OsXqV-w">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ylqFMbAUEeGiuM6eykFnIA">
+          <language>OCL</language>
+          <body>(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = element.oclAsType(datatypes::CD) in &#xD;&#xA;value.code = '240450004' and value.codeSystem = '2.16.840.1.113883.6.96'))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_ymGxIrAUEeGiuM6eykFnIA" name="TssCaseObservationTssSignsAndSymptomsObservation" constrainedElement="_TKLDAJfcEeGIls8OsXqV-w">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ymGxI7AUEeGiuM6eykFnIA">
+          <language>OCL</language>
+          <body>self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(tss::TssSignsAndSymptomsObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::MFST)</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_TKLDAZfcEeGIls8OsXqV-w">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_p8bDQNTCEeC18pmrrt-Mbg"/>
+      </generalization>
+      <ownedOperation xmi:id="_ymP7ELAUEeGiuM6eykFnIA" name="getTssSignsAndSymptomsObservations" isQuery="true" bodyCondition="_ymP7E7AUEeGiuM6eykFnIA">
+        <ownedRule xmi:id="_ymP7E7AUEeGiuM6eykFnIA" name="body" constrainedElement="_ymP7ELAUEeGiuM6eykFnIA">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_ymP7FLAUEeGiuM6eykFnIA">
+            <language>OCL</language>
+            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(tss::TssSignsAndSymptomsObservation)).oclAsType(tss::TssSignsAndSymptomsObservation)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_ymP7EbAUEeGiuM6eykFnIA" type="_if0XUJfcEeGIls8OsXqV-w" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ymP7ErAUEeGiuM6eykFnIA" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_if0XUJfcEeGIls8OsXqV-w" name="TssSignsAndSymptomsObservation">
+      <ownedRule xmi:id="_ylqFM7AUEeGiuM6eykFnIA" name="SignsAndSymptomsObservationTemplateId" constrainedElement="_if0XUJfcEeGIls8OsXqV-w">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ylqFNLAUEeGiuM6eykFnIA">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.100')</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_if0XUZfcEeGIls8OsXqV-w">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#__cLgwNQPEeC4C5jYVS2kfQ"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_8H8MQKCIEeGzToMRDovxkA" name="TssResultOrganizer">
+      <ownedRule xmi:id="_ylz2MrAUEeGiuM6eykFnIA" name="ResultOrganizerTemplateId" constrainedElement="_8H8MQKCIEeGzToMRDovxkA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ylz2M7AUEeGiuM6eykFnIA">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.101')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_ylz2NbAUEeGiuM6eykFnIA" name="ResultOrganizerCode" constrainedElement="_8H8MQKCIEeGzToMRDovxkA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ylz2NrAUEeGiuM6eykFnIA">
+          <language>OCL</language>
+          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (&#xD;&#xA;value.code = '23934-3' or value.code = '44880-3' or value.code = '25822-8' or value.code = '25823-6' or value.code = '23933-5' or value.code = '41855-8' or value.code = '25824-4' or value.code = '25825-1' or value.code = '51856-3' or value.code = '51863-9' or value.code = '23936-8' or value.code = '23935-0' or value.code = '50683-2' or value.code = '44881-1')))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_ymP7I7AUEeGiuM6eykFnIA" name="TssResultOrganizerTssResultObservation" constrainedElement="_8H8MQKCIEeGzToMRDovxkA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ymP7JLAUEeGiuM6eykFnIA">
+          <language>OCL</language>
+          <body>self.component->exists(component : cda::Component4 | not component.observation.oclIsUndefined() and component.observation.oclIsKindOf(tss::TssResultObservation))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_8H8MQaCIEeGzToMRDovxkA">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_0r8IYPNrEeCOm7Y48UO5Tg"/>
+      </generalization>
+      <ownedOperation xmi:id="_ymZsELAUEeGiuM6eykFnIA" name="getTssResultObservations" isQuery="true" bodyCondition="_ymZsE7AUEeGiuM6eykFnIA">
+        <ownedRule xmi:id="_ymZsE7AUEeGiuM6eykFnIA" name="body" constrainedElement="_ymZsELAUEeGiuM6eykFnIA">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_ymZsFLAUEeGiuM6eykFnIA">
+            <language>OCL</language>
+            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(tss::TssResultObservation)).oclAsType(tss::TssResultObservation)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_ymZsEbAUEeGiuM6eykFnIA" type="_Jiz18KCJEeGzToMRDovxkA" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ymZsErAUEeGiuM6eykFnIA" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Jiz18KCJEeGzToMRDovxkA" name="TssResultObservation">
+      <ownedRule xmi:id="_yl9AIrAUEeGiuM6eykFnIA" name="ResultObservationTemplateId" constrainedElement="_Jiz18KCJEeGzToMRDovxkA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_yl9AI7AUEeGiuM6eykFnIA">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.102')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_ymGxILAUEeGiuM6eykFnIA" name="ResultObservationCode" constrainedElement="_Jiz18KCJEeGzToMRDovxkA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ymGxIbAUEeGiuM6eykFnIA">
+          <language>OCL</language>
+          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (&#xD;&#xA;value.code = '23934-3' or value.code = '44880-3' or value.code = '25822-8' or value.code = '25823-6' or value.code = '23933-5' or value.code = '41855-8' or value.code = '25824-4' or value.code = '25825-1' or value.code = '51856-3' or value.code = '51863-9' or value.code = '23936-8' or value.code = '23935-0' or value.code = '50683-2' or value.code = '44881-1')))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_Jiz18aCJEeGzToMRDovxkA">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#__3pL0PNrEeCOm7Y48UO5Tg"/>
+      </generalization>
+    </packagedElement>
+    <profileApplication xmi:id="_8HnGuUx2EeGUf_gP0Xp-cg">
+      <eAnnotations xmi:id="_8HnGukx2EeGUf_gP0Xp-cg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_8HnGu0x2EeGUf_gP0Xp-cg">
+      <eAnnotations xmi:id="_8HnGvEx2EeGUf_gP0Xp-cg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/cda/4#/"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://CDA_PROFILES/CDA.profile.uml#_cxOJEIEVEd6H8o-hO3-B4Q"/>
+    </profileApplication>
+    <profileApplication xmi:id="_yeDoYLAUEeGiuM6eykFnIA">
+      <eAnnotations xmi:id="_yeNZYLAUEeGiuM6eykFnIA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Ecore.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Package>
+  <CDA:CodegenSupport xmi:id="_8JZPYEx2EeGUf_gP0Xp-cg" basePackage="org.openhealthtools.mdht.uml.cda.phcr" nsPrefix="tss" nsURI="http://www.openhealthtools.org/mdht/uml/cda/phcr/tss" packageName="tss" prefix="tss" base_Namespace="_8HnGsEx2EeGUf_gP0Xp-cg"/>
+  <CDA:CDATemplate xmi:id="_8JZPYkx2EeGUf_gP0Xp-cg" base_Class="_8JZPYUx2EeGUf_gP0Xp-cg" templateId="2.16.840.1.113883.10.20.15.1.6" assigningAuthorityName=""/>
+  <CDA:ClassValidation xmi:id="_e7OSIJYOEeGloY5sHBJ_mQ"/>
+  <CDA:AssociationValidation xmi:id="_OycqQJfbEeGIls8OsXqV-w" severity="WARNING"/>
+  <CDA:AssociationValidation xmi:id="_QA2XEJfbEeGIls8OsXqV-w" severity="WARNING"/>
+  <CDA:CDATemplate xmi:id="_67CJsKCHEeGzToMRDovxkA" base_Class="_TKLDAJfcEeGIls8OsXqV-w" templateId="2.16.840.1.113883.10.20.15.3.99"/>
+  <CDA:CDATemplate xmi:id="_MlQvwKCIEeGzToMRDovxkA" base_Class="_SA0bwJYPEeGloY5sHBJ_mQ" templateId="2.16.840.1.113883.10.20.15.2.42"/>
+  <CDA:CDATemplate xmi:id="_PqieoKCIEeGzToMRDovxkA" base_Class="_zV7mUJYPEeGloY5sHBJ_mQ" templateId="2.16.840.1.113883.10.20.15.2.43"/>
+  <CDA:CDATemplate xmi:id="_XA0IoKCIEeGzToMRDovxkA" base_Class="_if0XUJfcEeGIls8OsXqV-w" templateId="2.16.840.1.113883.10.20.15.3.100"/>
+  <CDA:CDATemplate xmi:id="_CDBDkKCJEeGzToMRDovxkA" base_Class="_8H8MQKCIEeGzToMRDovxkA" templateId="2.16.840.1.113883.10.20.15.3.101"/>
+  <CDA:CDATemplate xmi:id="_N3O4gKCJEeGzToMRDovxkA" base_Class="_Jiz18KCJEeGzToMRDovxkA" templateId="2.16.840.1.113883.10.20.15.3.102"/>
+  <Ecore:EPackage xmi:id="_yeNZYbAUEeGiuM6eykFnIA" base_Package="_8HnGsEx2EeGUf_gP0Xp-cg" packageName="tss" nsPrefix="tss" nsURI="http://www.openhealthtools.org/mdht/uml/cda/phcr/tss" basePackage="org.openhealthtools.mdht.uml.cda.phcr" prefix="tss"/>
+  <CDA:ConformsTo xmi:id="_yeWjULAUEeGiuM6eykFnIA" base_Generalization="_8JZPY0x2EeGUf_gP0Xp-cg"/>
+  <Ecore:EClass xmi:id="_yeWjU7AUEeGiuM6eykFnIA" base_Class="_8JZPYUx2EeGUf_gP0Xp-cg">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation title.mixed='Public Health Case Report - Toxic Shock Syndrome' templateId.root='2.16.840.1.113883.10.20.15.1.6' constraints.validation.error='ToxicShockSyndromeCaseReportTemplateId ToxicShockSyndromeCaseReportTitle ToxicShockSyndromeCaseReportTssPhcrClinicalInformationSection' constraints.validation.warning='ToxicShockSyndromeCaseReportTssPhcrRelevantDxTestsSection'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_yeqFUrAUEeGiuM6eykFnIA" base_Generalization="_SA0bwZYPEeGloY5sHBJ_mQ"/>
+  <Ecore:EClass xmi:id="_yeqFVbAUEeGiuM6eykFnIA" base_Class="_SA0bwJYPEeGloY5sHBJ_mQ">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.2.42' constraints.validation.error='TssPhcrClinicalInformationSectionTemplateId TssPhcrClinicalInformationSectionTssCaseObservation'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_yezPQLAUEeGiuM6eykFnIA" base_Generalization="_zV7mUZYPEeGloY5sHBJ_mQ"/>
+  <Ecore:EClass xmi:id="_yezPRLAUEeGiuM6eykFnIA" base_Class="_zV7mUJYPEeGloY5sHBJ_mQ">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.2.43' constraints.validation.error='TssPhcrRelevantDxTestsSectionTemplateId' constraints.validation.warning='TssPhcrRelevantDxTestsSectionTssResultObservation' constraints.validation.info='TssPhcrRelevantDxTestsSectionTssResultOrganizer'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_yfGKMbAUEeGiuM6eykFnIA" base_Generalization="_TKLDAZfcEeGIls8OsXqV-w"/>
+  <Ecore:EClass xmi:id="_yfGKNbAUEeGiuM6eykFnIA" base_Class="_TKLDAJfcEeGIls8OsXqV-w">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation value.codeSystemName='SNOMEDCT' templateId.root='2.16.840.1.113883.10.20.15.3.99' value.code='240450004' constraints.validation.error='TssCaseObservationTemplateId CaseObservationValue' constraints.validation.warning='TssCaseObservationTssSignsAndSymptomsObservation' value.codeSystem='2.16.840.1.113883.6.96'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_ylqFMrAUEeGiuM6eykFnIA" base_Generalization="_if0XUZfcEeGIls8OsXqV-w"/>
+  <Ecore:EClass xmi:id="_ylqFNbAUEeGiuM6eykFnIA" base_Class="_if0XUJfcEeGIls8OsXqV-w">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.3.100' constraints.validation.error='TssSignsAndSymptomsObservationTemplateId'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_ylz2MLAUEeGiuM6eykFnIA" base_Generalization="_8H8MQaCIEeGzToMRDovxkA"/>
+  <Ecore:EClass xmi:id="_ylz2NLAUEeGiuM6eykFnIA" base_Class="_8H8MQKCIEeGzToMRDovxkA">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.3.101' constraints.validation.error='TssResultOrganizerTemplateId ResultOrganizerCode TssResultOrganizerTssResultObservation' code.codeSystemName=''</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_yl9AILAUEeGiuM6eykFnIA" base_Generalization="_Jiz18aCJEeGzToMRDovxkA"/>
+  <Ecore:EClass xmi:id="_yl9AJLAUEeGiuM6eykFnIA" base_Class="_Jiz18KCJEeGzToMRDovxkA">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.3.102' constraints.validation.error='TssResultObservationTemplateId ResultObservationCode' code.codeSystemName=''</annotation>
+  </Ecore:EClass>
+</xmi:XMI>

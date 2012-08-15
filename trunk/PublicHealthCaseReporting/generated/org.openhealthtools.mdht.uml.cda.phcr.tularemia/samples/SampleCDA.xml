@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+  <templateId root="2.16.840.1.113883.10.20.15"/>
+  <templateId root="2.16.840.1.113883.10.20.15.1.4"/>
+  <id root="11c38671-4166-43e5-83da-eb5bf054dfcf"/>
+  <code code="55751-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Public Health Case Report"/>
+  <title>Public Health Case Report - Tularemia</title>
+  <effectiveTime value="20110802081400-0600"/>
+  <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25"/>
+  <languageCode code="en-US"/>
+  <recordTarget>
+    <patientRole>
+      <id root="1.3.6.1.4.1.19376.1.3.4" extension="ID80214365"/>
+      <addr><streetAddressLine>2485 E Floating Feather Rd.</streetAddressLine><city>Eagle</city><state>ID</state><postalCode>83616</postalCode></addr>
+      <telecom value="tel:+1-208-555-5555"/>
+      <patient>
+        <name><family>Trenton</family><given>Michael</given></name>
+        <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1" codeSystemName="HL7" displayName="Male"/>
+        <birthTime value="19730920000000-0600"/>
+        <maritalStatusCode code="M" codeSystem="2.16.840.1.113883.5.2" codeSystemName="HL7" displayName="Married"/>
+        <raceCode code="2106-3" codeSystem="2.16.840.1.113883.1.11.14914" codeSystemName="Race &amp; Ethnicity - CDC" displayName="White"/>
+        <ethnicGroupCode code="2186-5" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Ethnicity Group" displayName="Not Hispanic or Latino"/>
+        <birthplace>
+          <place>
+            <addr><country>USA</country></addr>
+          </place>
+        </birthplace>
+      </patient>
+    </patientRole>
+  </recordTarget>
+  <author>
+    <time value="20110802081400-0600"/>
+    <assignedAuthor>
+      <id nullFlavor="UNK"/>
+      <addr><streetAddressLine>190 East Bannock Street</streetAddressLine><city>Boise</city><state>ID</state><postalCode>83712</postalCode></addr>
+      <telecom value="tel:+1-208-381-2222"/>
+      <assignedPerson>
+        <name><family>Johnson</family><given>Matthew</given><prefix>Dr.</prefix><suffix>MD</suffix></name>
+      </assignedPerson>
+    </assignedAuthor>
+  </author>
+  <custodian>
+    <assignedCustodian>
+      <representedCustodianOrganization>
+        <id nullFlavor="UNK"/>
+        <name>Idaho Health Data Exchange</name>
+        <telecom value="tel:+1-208-332-7253"/>
+        <addr><streetAddressLine>450 West State Street</streetAddressLine><streetAddressLine>P.O. Box 6978</streetAddressLine><city>Boise</city><state>ID</state><postalCode>83707</postalCode></addr>
+      </representedCustodianOrganization>
+    </assignedCustodian>
+  </custodian>
+  <legalAuthenticator>
+    <time value="20110802081400-0600"/>
+    <signatureCode code="S"/>
+    <assignedEntity>
+      <id nullFlavor="UNK"/>
+      <addr><streetAddressLine>190 East Bannock Street</streetAddressLine><city>Boise</city><state>ID</state><postalCode>83712</postalCode></addr>
+      <telecom value="tel:+1-208-381-2222"/>
+      <assignedPerson>
+        <name><family>Johnson</family><given>Matthew</given><prefix>Dr.</prefix><suffix>MD</suffix></name>
+      </assignedPerson>
+    </assignedEntity>
+  </legalAuthenticator>
+  <component>
+    <structuredBody>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.1.15"/>
+          <templateId root="2.16.840.1.113883.10.20.15.2.22"/>
+          <templateId root="2.16.840.1.113883.10.20.15.2.18"/>
+          <code code="29762-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Social History"/>
+          <title>Social History</title>
+          <text><list>
+                        <caption>Tularemia Social History Section</caption>
+                        <item>Geotemporal history - Missouri, July 15,2011 - July 17,2011</item>
+                        <item>Race - White</item>
+                        <item>Occupation - Advertising, Marketing, Promotion, March 2006 - present</item>
+                        <item>Occupation Location - Sysco Food Services, Food Manufacturing 5710 Pan Am Ave, Boise, ID (tel:208-345-9500)</item>
+                        <item>Possible Exposure Location - Wooded Area in Van Buren, MO  63965</item>
+                        <item>Possible Exposure to Tick</item>
+            </list></text>
+          <entry typeCode="DRIV">
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.15.3.3"/>
+              <code code="55210-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Geotemporal History"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="20110715000000-0600"/>
+                <high value="20110717000000-0600"/>
+              </effectiveTime>
+              <value xsi:type="CD" code="29" codeSystem="2.16.840.1.113883.6.92" codeSystemName="FIPS 5-2 (State)" displayName="Missouri"/>
+            </observation>
+          </entry>
+          <entry typeCode="DRIV">
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.15.3.9"/>
+              <code code="32624-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Race"/>
+              <statusCode code="completed"/>
+              <value xsi:type="CD" code="2106-3" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC" displayName="White"/>
+            </observation>
+          </entry>
+          <entry typeCode="DRIV">
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.15.3.7"/>
+              <code code="11341-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of Occupation"/>
+              <statusCode code="completed"/>
+              <effectiveTime value="20060300000000-0600"/>
+              <value xsi:type="CD" code="11-2000" codeSystem="2.16.840.1.113883.6.243" codeSystemName="Occupation (SOC 2000)" displayName="Advertising, Marketing, Promotions, Public Relations, and Sales Managers"/>
+              <participant typeCode="LOC">
+                <participantRole classCode="LOCE">
+                  <addr><streetAddressLine>5710 Pan Am Ave</streetAddressLine><city>Boise</city><state>ID</state><postalCode>83716</postalCode></addr>
+                  <telecom value="tel:+1-208-345-9500"/>
+                  <playingEntity classCode="PLC">
+                    <name>Sysco Food Services</name>
+                  </playingEntity>
+                </participantRole>
+              </participant>
+              <entryRelationship typeCode="REFR">
+                <observation classCode="OBS" moodCode="EVN">
+                  <code code="21844-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Industry Hx"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20060301000000-0600"/>
+                  <value xsi:type="CD" code="311" codeSystem="2.16.840.1.113883.6.85" codeSystemName="Industry (NAICS)" displayName="Food Manufacturing"/>
+                </observation>
+              </entryRelationship>
+            </observation>
+          </entry>
+          <entry typeCode="DRIV">
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.15.3.43"/>
+              <code code="413350009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Finding with explicit context">
+                <qualifier>
+                  <name code="246090004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Associated finding"/>
+                  <value code="PHC818" codeSystem="2.16.840.1.114222.4.5.274" codeSystemName="PHIN VADS" displayName="Tularemia exposure"/>
+                </qualifier>
+                <qualifier>
+                  <name code="408729009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Finding context"/>
+                  <value code="410590009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Known possible"/>
+                </qualifier>
+              </code>
+              <statusCode code="completed"/>
+              <participant typeCode="LOC">
+                <time>
+                  <low value="20110715000000-0600"/>
+                  <high value="20110717000000-0600"/>
+                </time>
+                <participantRole classCode="LOCE">
+                  <addr><city>Van Buren</city><state>MO</state><postalCode>63965</postalCode></addr>
+                  <telecom nullFlavor="NASK"/>
+                  <playingEntity classCode="PLC">
+                    <code code="272500005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Wooded area"/>
+                  </playingEntity>
+                </participantRole>
+              </participant>
+              <participant typeCode="DIR">
+                <participantRole classCode="EXPR">
+                  <scopingEntity classCode="ANM">
+                    <code code="106832007" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Ixodes Tick"/>
+                  </scopingEntity>
+                </participantRole>
+              </participant>
+            </act>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.15.2.1"/>
+          <templateId root="2.16.840.1.113883.10.20.15.2.19"/>
+          <code code="55752-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Clinical Information"/>
+          <title>Clinical Information</title>
+          <text><list>
+                        <caption>Tularemia Clinical Information Section</caption>
+                        <item>Condition - Tularemia</item>
+                        <item>Condition diagnosed 2011/07/26</item>
+                        <item>Condition diagnosed by Dr Matthew Johnson, MD</item>
+                        <item>Problem remains active at time of report</item>
+                        <item>Signs and Symptoms - Fever REPORTED starting on 2011/07/19</item>
+                        <item>Signs and Symptoms - Lymphadenopathy REPORTED starting on 2011/07/19</item>
+                        <item>Signs and Symptoms - Skin ulcer REPORTED starting on 2011/07/19</item>
+                        <item>Lesion Location - Right Lower Leg starting on 2011/07/19</item>
+                        <item>Patient alive 2011/08/02</item>
+            </list></text>
+          <entry typeCode="DRIV">
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.28"/>
+              <templateId root="2.16.840.1.113883.10.20.15.3.54"/>
+              <templateId root="2.16.840.1.113883.10.20.15.3.46"/>
+              <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="20110726102500-0600"/>
+              </effectiveTime>
+              <value xsi:type="CD" code="19265001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Tularemia"/>
+              <author>
+                <time value="20110802081400-0600"/>
+                <assignedAuthor>
+                  <id nullFlavor="UNK"/>
+                  <addr><streetAddressLine>190 East Bannock Street</streetAddressLine><city>Boise</city><state>ID</state><postalCode>83712</postalCode></addr>
+                  <telecom value="tel:+1-208-381-2222"/>
+                  <assignedPerson>
+                    <name><family>Johnson</family><given>Matthew</given><prefix>Dr.</prefix><suffix>MD</suffix></name>
+                  </assignedPerson>
+                </assignedAuthor>
+              </author>
+              <informant>
+                <assignedEntity>
+                  <id nullFlavor="UNK"/>
+                  <assignedPerson>
+                    <name><family>Johnson</family><given>Matthew</given><prefix>Dr.</prefix><suffix>MD</suffix></name>
+                  </assignedPerson>
+                </assignedEntity>
+              </informant>
+              <entryRelationship typeCode="REFR">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.57"/>
+                  <templateId root="2.16.840.1.113883.10.20.1.50"/>
+                  <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+                  <statusCode code="completed"/>
+                  <value xsi:type="CE" code="55561003" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Active"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="MFST" inversionInd="true">
+                <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                  <templateId root="2.16.840.1.113883.10.20.15.3.53"/>
+                  <templateId root="2.16.840.1.113883.10.20.15.3.45"/>
+                  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20110719000000-0600"/>
+                  <value xsi:type="CD" code="386661006" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Fever"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="MFST" inversionInd="true">
+                <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                  <templateId root="2.16.840.1.113883.10.20.15.3.53"/>
+                  <templateId root="2.16.840.1.113883.10.20.15.3.45"/>
+                  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20110719000000-0600"/>
+                  <value xsi:type="CD" code="30746006" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Lymphadenopathy"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="MFST" inversionInd="true">
+                <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                  <templateId root="2.16.840.1.113883.10.20.15.3.53"/>
+                  <templateId root="2.16.840.1.113883.10.20.15.3.45"/>
+                  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20110719000000-0600"/>
+                  <value xsi:type="CD" code="46742003" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Skin ulcer"/>
+                </observation>
+              </entryRelationship>
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.15.3.44"/>
+              <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/>
+              <statusCode code="completed"/>
+              <effectiveTime value="20110719000000-0600"/>
+              <value xsi:type="CD" code="46742003" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Skin ulcer"/>
+              <targetSiteCode code="32696007" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Right Lower Leg"/>
+            </observation>
+          </entry>
+          <entry typeCode="DRIV">
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.15.3.42"/>
+              <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/>
+              <statusCode code="completed"/>
+              <effectiveTime value="20110802081400-0600"/>
+              <value xsi:type="CD" code="438949009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Alive"/>
+            </observation>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.15.2.4"/>
+          <templateId root="2.16.840.1.113883.10.20.15.2.20"/>
+          <code code="55753-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treatment Information"/>
+          <title>Treatment Information</title>
+          <text><list>
+                        <caption>Tularemia Treatment Information Section</caption>
+                        <item>Condition ID - ID80214365</item>
+                        <item>Condition Type - Tularemia</item>
+                        <item>Prescribed Doxycycline 100mg Oral Tablet twice daily for 14 days prescribed on 2011/07/26</item>
+            </list></text>
+          <entry typeCode="DRIV">
+            <act classCode="ACT" moodCode="EVN" negationInd="false">
+              <templateId root="2.16.840.1.113883.10.20.15.3.57"/>
+              <templateId root="2.16.840.1.113883.10.20.15.3.48"/>
+              <code code="133877004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Therapeutic regimen"/>
+              <statusCode code="completed"/>
+              <entryRelationship typeCode="REFR">
+                <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                  <id root="1.3.6.1.4.1.19376.1.3.4" extension="ID80214365"/>
+                  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/>
+                  <value xsi:type="CD" code="19265001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Tularemia"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="COMP">
+                <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+                  <templateId root="2.16.840.1.113883.10.20.15.3.55"/>
+                  <templateId root="2.16.840.1.113883.10.20.15.3.47"/>
+                  <statusCode code="active"/>
+                  <effectiveTime xsi:type="IVL_TS">
+                    <low value="20110726102500-0600"/>
+                    <high value="20110808000000-0600"/>
+                  </effectiveTime>
+                  <routeCode code="C38288" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus" displayName="Oral"/>
+                  <doseQuantity value="2.0"/>
+                  <rateQuantity value="24.0" unit="H"/>
+                  <consumable>
+                    <manufacturedProduct>
+                      <manufacturedMaterial>
+                        <code code="197633" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" displayName="Doxycycline 100mg Oral Tablet"/>
+                        <name>Doxycycline 100mg Oral Tablet</name>
+                      </manufacturedMaterial>
+                    </manufacturedProduct>
+                  </consumable>
+                </substanceAdministration>
+              </entryRelationship>
+            </act>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.1.3"/>
+          <templateId root="2.16.840.1.113883.10.20.15.2.2"/>
+          <code code="46240-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of encounters"/>
+          <title>Encounters</title>
+          <text><list>
+                        <caption>Tularemia Encounters Section</caption>
+                        <item>2011/07/24 at St. Luke's Eagle Urgent Care Center, 3101 East State Street, Eagle, Idaho (tel:208-473-3100)</item>
+                        <item>Ambulatory encounter with Dr. Lisa Miller MD</item>
+                        <item>2011/07/26 at St. Luke's Boise Medical Center Emergency Department, 190 East Bannock Street, Boise, Idaho (tel:208-381-2222)</item>
+                        <item>Emergency encounter with Dr. Matthew Johnson MD</item>
+            </list></text>
+          <entry typeCode="DRIV">
+            <encounter classCode="ENC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.21"/>
+              <id root="1.3.6.1.4.1.19376.1.3.4" extension="ID80214365-1"/>
+              <code code="AMB" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7 ActEncounterCode" displayName="Ambulatory"/>
+              <effectiveTime value="20110724110000-0600"/>
+              <performer typeCode="PRF">
+                <assignedEntity classCode="ASSIGNED">
+                  <id nullFlavor="UNK"/>
+                  <addr><streetAddressLine>3101 East State Street</streetAddressLine><city>Eagle</city><state>ID</state><postalCode>83616</postalCode></addr>
+                  <telecom value="tel:+1-208-473-3100"/>
+                  <assignedPerson>
+                    <name><family>Miller</family><given>Lisa</given><prefix>Dr.</prefix><suffix>MD</suffix></name>
+                  </assignedPerson>
+                </assignedEntity>
+              </performer>
+              <participant typeCode="LOC">
+                <participantRole classCode="SDLOC">
+                  <id nullFlavor="UNK"/>
+                  <addr><streetAddressLine>3101 East State Street</streetAddressLine><city>Eagle</city><state>ID</state><postalCode>83616</postalCode></addr>
+                  <telecom value="tel:+1-208-473-3100"/>
+                  <playingEntity classCode="PLC">
+                    <name>St. Luke's Eagle Urgent Care Center</name>
+                  </playingEntity>
+                </participantRole>
+              </participant>
+            </encounter>
+          </entry>
+          <entry typeCode="DRIV">
+            <encounter classCode="ENC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.21"/>
+              <id root="1.3.6.1.4.1.19376.1.3.4" extension="ID80214365-2"/>
+              <code code="EMER" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7 ActEncounterCode" displayName="Emergency"/>
+              <effectiveTime value="20110726102500-0600"/>
+              <performer typeCode="PRF">
+                <assignedEntity classCode="ASSIGNED">
+                  <id nullFlavor="UNK"/>
+                  <addr><streetAddressLine>190 East Bannock Street</streetAddressLine><city>Boise</city><state>ID</state><postalCode>83712</postalCode></addr>
+                  <telecom value="tel:+1-208-381-2222"/>
+                  <assignedPerson>
+                    <name><family>Johnson</family><given>Matthew</given><prefix>Dr.</prefix><suffix>MD</suffix></name>
+                  </assignedPerson>
+                </assignedEntity>
+              </performer>
+              <participant typeCode="LOC">
+                <participantRole classCode="SDLOC">
+                  <id nullFlavor="UNK"/>
+                  <addr><streetAddressLine>190 East Bannock Street</streetAddressLine><city>Boise</city><state>ID</state><postalCode>83712</postalCode></addr>
+                  <telecom value="tel:+1-208-381-2222"/>
+                  <playingEntity classCode="PLC">
+                    <name>St. Luke's Boise Medical Center Emergency Department</name>
+                  </playingEntity>
+                </participantRole>
+              </participant>
+            </encounter>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.1.14"/>
+          <templateId root="2.16.840.1.113883.10.20.15.2.3"/>
+          <templateId root="2.16.840.1.113883.10.20.15.2.21"/>
+          <code code="30954-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Relevant diagnostic tests and/or laboratory data"/>
+          <title>Relevant diagnostic tests and/or laboratory data</title>
+          <text><list>
+                        <caption>Tularemia Relevant Diagnostics Tests Section</caption>
+                        <item>Collected 2011/07/26 Whole Blood - Gram Stain, Gram-negative coccobacillus</item>
+                        <item>St. Luke's Boise Medical Center, Boise, ID 83712 (tel: 208-381-2222)</item>
+                        <item>Collected 2011/07/26 Whole Blood - F tular DNA XXX Ql PCR, Positive</item>
+                        <item>Idaho Bureau of Laboratories, Boise, ID 83712 (tel: 208-334-2235)</item>
+            </list></text>
+          <entry typeCode="DRIV">
+            <organizer classCode="BATTERY" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.32"/>
+              <templateId root="2.16.840.1.113883.10.20.15.3.59"/>
+              <templateId root="2.16.840.1.113883.10.20.15.3.52"/>
+              <id nullFlavor="NI"/>
+              <code code="17928-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Bacteria Bld Aerobe Cult"/>
+              <statusCode code="completed"/>
+              <effectiveTime value="20110726102500-0600"/>
+              <specimen>
+                <specimenRole>
+                  <specimenPlayingEntity>
+                    <code code="258580003" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Whole Blood"/>
+                  </specimenPlayingEntity>
+                </specimenRole>
+              </specimen>
+              <informant>
+                <assignedEntity>
+                  <id nullFlavor="NI"/>
+                  <addr><city>Boise</city><state>ID</state><postalCode>83712</postalCode></addr>
+                  <telecom value="tel:+1-208-381-2222"/>
+                  <representedOrganization>
+                    <name>St. Luke's Boise Medical Center</name>
+                  </representedOrganization>
+                </assignedEntity>
+              </informant>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                  <templateId root="2.16.840.1.113883.10.20.15.3.58"/>
+                  <templateId root="2.16.840.1.113883.10.20.15.3.51"/>
+                  <id nullFlavor="NI"/>
+                  <code code="664-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Gram Stain"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20110726102500-0600"/>
+                  <value xsi:type="CD" code="53932007" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Gram-negative coccobacillus"/>
+                  <informant>
+                    <assignedEntity>
+                      <id nullFlavor="NI"/>
+                      <addr><city>Boise</city><state>ID</state><postalCode>83712</postalCode></addr>
+                      <telecom value="tel:+1-208-381-2222"/>
+                      <representedOrganization>
+                        <name>St. Luke's Boise Medical Center</name>
+                      </representedOrganization>
+                    </assignedEntity>
+                  </informant>
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.31"/>
+                  <templateId root="2.16.840.1.113883.10.20.15.3.58"/>
+                  <templateId root="2.16.840.1.113883.10.20.15.3.51"/>
+                  <id nullFlavor="NI"/>
+                  <code code="33679-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="F tular DNA XXX Ql PCR"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20110726102500-0600"/>
+                  <value xsi:type="CD" code="10828004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Positive"/>
+                  <methodCode code="258066000" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Polymerase chain reaction"/>
+                  <informant>
+                    <assignedEntity>
+                      <id nullFlavor="NI"/>
+                      <addr><city>Boise</city><state>ID</state><postalCode>83712</postalCode></addr>
+                      <telecom value="tel:+1-208-334-2235"/>
+                      <representedOrganization>
+                        <name>Idaho Bureau of Laboratories</name>
+                      </representedOrganization>
+                    </assignedEntity>
+                  </informant>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+        </section>
+      </component>
+    </structuredBody>
+  </component>
+</ClinicalDocument>

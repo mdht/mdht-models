@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+  <templateId root="2.16.840.1.113883.10.20.15"/>
+  <templateId root="2.16.840.1.113883.10.20.15.1.9"/>
+  <id root="e77f32a3-a933-4039-a882-ca0aa04ce591"/>
+  <code code="55751-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Public Health Case Report"/>
+  <title>Public Health Case Report -  Salmonellosis</title>
+  <effectiveTime value="20071107094500-0700"/>
+  <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25"/>
+  <languageCode code="en-US"/>
+  <recordTarget>
+    <patientRole>
+      <id root="1.3.6.1.4.1.19376.1.3.4" extension="HI11221122"/>
+      <addr><streetAddressLine>98-299A Moanalua Road</streetAddressLine><city>Wahiawa</city><state>HI</state><postalCode>96786</postalCode></addr>
+      <telecom value="tel:+1-808-123-4567"/>
+      <patient>
+        <name><family>Fong</family><given>Noah</given></name>
+        <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1" codeSystemName="HL7" displayName="Male"/>
+        <birthTime value="19970201000000-0700"/>
+        <maritalStatusCode code="S" codeSystem="2.16.840.1.113883.5.2" codeSystemName="HL7" displayName="Single"/>
+        <raceCode code="2079-2" codeSystem="2.16.840.1.113883.1.11.14914" codeSystemName="Race &amp; Ethnicity - CDC" displayName="Native Hawaiian"/>
+        <ethnicGroupCode code="2186-5" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Ethnicity Group" displayName="Not Hispanic or Latino"/>
+        <birthplace>
+          <place>
+            <addr><country>US</country></addr>
+          </place>
+        </birthplace>
+        <languageCommunication>
+          <languageCode code="en"/>
+          <preferenceInd value="true"/>
+        </languageCommunication>
+      </patient>
+    </patientRole>
+  </recordTarget>
+  <author>
+    <time value="20071107094500-0700"/>
+    <assignedAuthor>
+      <id nullFlavor="UNK"/>
+      <addr><streetAddressLine>128 Lehua Street</streetAddressLine><city>Wahiawa</city><state>HI</state><postalCode>96786</postalCode></addr>
+      <telecom value="tel:+1-808-621-8411"/>
+      <assignedPerson>
+        <name><family>Thomas</family><given>Kosasa</given><prefix>Dr</prefix><suffix>MD</suffix></name>
+      </assignedPerson>
+    </assignedAuthor>
+  </author>
+  <custodian>
+    <assignedCustodian>
+      <representedCustodianOrganization>
+        <id nullFlavor="UNK"/>
+        <name>Hawaii Health Information Exchange</name>
+        <telecom value="tel:+1-808-111-2222"/>
+        <addr><streetAddressLine>900 Fort Street Mall, Suite 1300</streetAddressLine><city>Wahiawa</city><state>HI</state><postalCode>96786</postalCode></addr>
+      </representedCustodianOrganization>
+    </assignedCustodian>
+  </custodian>
+  <legalAuthenticator>
+    <time value="20071107094500-0700"/>
+    <signatureCode code="S"/>
+    <assignedEntity>
+      <id nullFlavor="UNK"/>
+      <addr><streetAddressLine>128 Lehua Street</streetAddressLine><city>Wahiawa</city><state>HI</state><postalCode>96786</postalCode></addr>
+      <telecom value="tel:+1-808-621-8411"/>
+      <assignedPerson>
+        <name><family>Thomas</family><given>Kosasa</given><prefix>Dr</prefix><suffix>MD</suffix></name>
+      </assignedPerson>
+    </assignedEntity>
+  </legalAuthenticator>
+  <component>
+    <structuredBody>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.1.15"/>
+          <templateId root="2.16.840.1.113883.10.20.15.2.22"/>
+          <templateId root="2.16.840.1.113883.10.20.15.2.36"/>
+          <code code="29762-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Social History"/>
+          <title>Social History</title>
+          <text><list>
+                        <caption>Salmonellosis Social History Section</caption>
+                        <item>Race - Native Hawaiian</item>
+                        <item>Possible Exposure Location - Home</item>
+                        <item>Possible Exposure to chicken</item>
+                        <item>Possible Exposure to cat</item>
+                        <item>Possible Exposure to dog</item>
+                        <item>Patient HIV negative</item>
+            </list></text>
+          <entry typeCode="DRIV">
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.15.3.9"/>
+              <code code="32624-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Race"/>
+              <statusCode code="completed"/>
+              <value xsi:type="CD" code="2079-2" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC" displayName="Native Hawaiian"/>
+            </observation>
+          </entry>
+          <entry typeCode="DRIV">
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.15.3.115"/>
+              <code code="413350009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Finding with explicit context">
+                <qualifier>
+                  <name code="246090004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Associated finding"/>
+                  <value code="444493007" codeSystem="2.16.840.1.114222.4.5.274" codeSystemName="PHIN VADS" displayName="Salmonellosis contact"/>
+                </qualifier>
+                <qualifier>
+                  <name code="408729009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Finding context"/>
+                  <value code="410590009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Known possible"/>
+                </qualifier>
+              </code>
+              <statusCode code="completed"/>
+              <participant typeCode="LOC">
+                <time>
+                  <low value="20071101000000-0600"/>
+                  <high value="20071104000000-0600"/>
+                </time>
+                <participantRole classCode="LOCE">
+                  <addr><city>Wahiawa</city><state>HI</state><postalCode>96786</postalCode></addr>
+                  <telecom nullFlavor="NASK"/>
+                  <playingEntity classCode="PLC">
+                    <code code="264362003" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Home"/>
+                  </playingEntity>
+                </participantRole>
+              </participant>
+              <participant typeCode="DIR">
+                <participantRole classCode="EXPR">
+                  <scopingEntity classCode="ANM">
+                    <code code="132834009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Chicken"/>
+                  </scopingEntity>
+                </participantRole>
+              </participant>
+              <participant typeCode="DIR">
+                <participantRole classCode="EXPR">
+                  <scopingEntity classCode="ANM">
+                    <code code="33384004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Cat"/>
+                  </scopingEntity>
+                </participantRole>
+              </participant>
+              <participant typeCode="DIR">
+                <participantRole classCode="EXPR">
+                  <scopingEntity classCode="ANM">
+                    <code code="68014009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Dog"/>
+                  </scopingEntity>
+                </participantRole>
+              </participant>
+            </act>
+          </entry>
+          <entry typeCode="DRIV">
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.15.3.4"/>
+              <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/>
+              <statusCode code="completed"/>
+              <effectiveTime value="20071107094500-0700"/>
+              <value xsi:type="CD" code="165815009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="HIV negative"/>
+            </observation>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.15.2.1"/>
+          <templateId root="2.16.840.1.113883.10.20.15.2.37"/>
+          <code code="55752-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Clinical Information"/>
+          <title>Clinical Information</title>
+          <text><list>
+                        <caption>Salmonellosis Clinical Information Section</caption>
+                        <item>Condition - Active Salmonellosis</item>
+                        <item>Condition diagnosed 2007/11/07</item>
+                        <item>Diagnosed by Dr Kosasa Thomas, MD</item>
+                        <item>Problem remains active at time of report</item>
+                        <item>Signs and Symptoms - Asthenia REPORTED starting on 2007/11/04</item>
+                        <item>Signs and Symptoms - Backache REPORTED starting on 2007/11/04</item>
+                        <item>Signs and Symptoms - BloodyDiarrhea REPORTED starting on 2007/11/04</item>
+                        <item>Signs and Symptoms - Diarrhea REPORTED starting on 2007/11/04</item>
+                        <item>Signs and Symptoms - Fatigue REPORTED starting on 2007/11/04</item>
+                        <item>Signs and Symptoms - Fever REPORTED starting on 2007/11/04</item>
+                        <item>Signs and Symptoms - Headache REPORTED starting on 2007/11/04</item>
+                        <item>Signs and Symptoms -  Nausea REPORTED starting on 2007/11/04</item>
+                        <item>Signs and Symptoms - Stomach cramps REPORTED starting on 2007/11/04</item>
+                        <item>Signs and Symptoms - Vomitting REPORTED starting on 2007/11/04</item>
+                        <item>Patient alive 2007/11/07</item>
+            </list></text>
+          <entry typeCode="DRIV">
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.28"/>
+              <templateId root="2.16.840.1.113883.10.20.15.3.54"/>
+              <templateId root="2.16.840.1.113883.10.20.15.3.116"/>
+              <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/>
+              <statusCode code="completed"/>
+              <effectiveTime>
+                <low value="20071107094500-0700"/>
+              </effectiveTime>
+              <value xsi:type="CD" code="57322006" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Active Salmonellosis"/>
+              <author>
+                <time value="20071107094500-0700"/>
+                <assignedAuthor>
+                  <id nullFlavor="UNK"/>
+                  <addr><streetAddressLine>128 Lehua Street</streetAddressLine><city>Wahiawa</city><state>HI</state><postalCode>96786</postalCode></addr>
+                  <telecom value="tel:+808-621-8411"/>
+                  <assignedPerson>
+                    <name><family>Thomas</family><given>Kosasa</given><prefix>Dr</prefix><suffix>MD</suffix></name>
+                  </assignedPerson>
+                </assignedAuthor>
+              </author>
+              <informant>
+                <assignedEntity>
+                  <id nullFlavor="UNK"/>
+                  <assignedPerson>
+                    <name><family>Thomas</family><given>Kosasa</given><prefix>Dr</prefix><suffix>MD</suffix></name>
+                  </assignedPerson>
+                </assignedEntity>
+              </informant>
+              <entryRelationship typeCode="REFR">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.57"/>
+                  <templateId root="2.16.840.1.113883.10.20.1.50"/>
+                  <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+                  <statusCode code="completed"/>
+                  <value xsi:type="CE" code="55561003" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Active"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="MFST" inversionInd="true">
+                <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                  <templateId root="2.16.840.1.113883.10.20.15.3.53"/>
+                  <templateId root="2.16.840.1.113883.10.20.15.3.117"/>
+                  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20071104000000-0700"/>
+                  <value xsi:type="CD" code="13791008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Asthenia"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="MFST" inversionInd="true">
+                <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                  <templateId root="2.16.840.1.113883.10.20.15.3.53"/>
+                  <templateId root="2.16.840.1.113883.10.20.15.3.117"/>
+                  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20071104000000-0700"/>
+                  <value xsi:type="CD" code="161891005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Backache"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="MFST" inversionInd="true">
+                <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                  <templateId root="2.16.840.1.113883.10.20.15.3.53"/>
+                  <templateId root="2.16.840.1.113883.10.20.15.3.117"/>
+                  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20071104000000-0700"/>
+                  <value xsi:type="CD" code="95545007" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Bloody Diarrhea"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="MFST" inversionInd="true">
+                <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                  <templateId root="2.16.840.1.113883.10.20.15.3.53"/>
+                  <templateId root="2.16.840.1.113883.10.20.15.3.117"/>
+                  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20071104000000-0700"/>
+                  <value xsi:type="CD" code="62315008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Diarrhea"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="MFST" inversionInd="true">
+                <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                  <templateId root="2.16.840.1.113883.10.20.15.3.53"/>
+                  <templateId root="2.16.840.1.113883.10.20.15.3.117"/>
+                  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20071104000000-0700"/>
+                  <value xsi:type="CD" code="84229001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Fatigue"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="MFST" inversionInd="true">
+                <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                  <templateId root="2.16.840.1.113883.10.20.15.3.53"/>
+                  <templateId root="2.16.840.1.113883.10.20.15.3.117"/>
+                  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20071104000000-0700"/>
+                  <value xsi:type="CD" code="386661006" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Fever"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="MFST" inversionInd="true">
+                <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                  <templateId root="2.16.840.1.113883.10.20.15.3.53"/>
+                  <templateId root="2.16.840.1.113883.10.20.15.3.117"/>
+                  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20071104000000-0700"/>
+                  <value xsi:type="CD" code="25064002" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Headache"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="MFST" inversionInd="true">
+                <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                  <templateId root="2.16.840.1.113883.10.20.15.3.53"/>
+                  <templateId root="2.16.840.1.113883.10.20.15.3.117"/>
+                  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20071104000000-0700"/>
+                  <value xsi:type="CD" code="422587007" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Nausea"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="MFST" inversionInd="true">
+                <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                  <templateId root="2.16.840.1.113883.10.20.15.3.53"/>
+                  <templateId root="2.16.840.1.113883.10.20.15.3.117"/>
+                  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20071104000000-0700"/>
+                  <value xsi:type="CD" code="51197009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Stomach cramps"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="MFST" inversionInd="true">
+                <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                  <templateId root="2.16.840.1.113883.10.20.15.3.53"/>
+                  <templateId root="2.16.840.1.113883.10.20.15.3.117"/>
+                  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime value="20071104000000-0700"/>
+                  <value xsi:type="CD" code="422400008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Vomitting"/>
+                </observation>
+              </entryRelationship>
+            </observation>
+          </entry>
+          <entry typeCode="DRIV">
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.15.3.42"/>
+              <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode"/>
+              <statusCode code="completed"/>
+              <effectiveTime value="20071107094500-0700"/>
+              <value xsi:type="CD" code="438949009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Alive"/>
+            </observation>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.1.3"/>
+          <templateId root="2.16.840.1.113883.10.20.15.2.2"/>
+          <code code="46240-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of encounters"/>
+          <title>Encounters</title>
+          <text><list>
+                        <caption>Encounters Section</caption>
+                        <item>2007/11/05 at Wahiawa General Hospital, 128 Lehua Street, Seattle, WA (tel:206-367-0150)</item>
+                        <item>Inpatient encounter encounter with Dr. Kosasa Thomas MD</item>
+                        <item>2007/11/07 at Wahiawa General Hospital, 128 Lehua Street, Seattle, WA (tel:206-367-0150)</item>
+                        <item>Inpatient encounter encounter with Dr. Kosasa Thomas MD</item>
+            </list></text>
+          <entry typeCode="DRIV">
+            <encounter classCode="ENC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.21"/>
+              <id root="1.3.6.1.4.1.19376.1.3.4" extension="WA28932881-1"/>
+              <code code="IMP" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7 ActEncounterCode" displayName="Inpatient encounter"/>
+              <effectiveTime value="20071105000000-0700"/>
+              <performer typeCode="PRF">
+                <assignedEntity classCode="ASSIGNED">
+                  <id nullFlavor="UNK"/>
+                  <addr><streetAddressLine>128 Lehua Street</streetAddressLine><city>Wahiawa</city><state>HI</state><postalCode>96786</postalCode></addr>
+                  <telecom value="tel:+1-808-621-8411"/>
+                  <assignedPerson>
+                    <name><family>Thomas</family><given>Kososa</given><prefix>Dr.</prefix><suffix>MD</suffix></name>
+                  </assignedPerson>
+                </assignedEntity>
+              </performer>
+              <participant typeCode="LOC">
+                <participantRole classCode="SDLOC">
+                  <id nullFlavor="UNK"/>
+                  <addr><streetAddressLine>128 Lehua Street</streetAddressLine><city>Wahiawa</city><state>HI</state><postalCode>96786</postalCode></addr>
+                  <telecom value="tel:+1-808-621-8411"/>
+                  <playingEntity classCode="PLC">
+                    <name>Wahiawa General Hospital</name>
+                  </playingEntity>
+                </participantRole>
+              </participant>
+            </encounter>
+          </entry>
+          <entry>
+            <encounter classCode="ENC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.21"/>
+              <id root="1.3.6.1.4.1.19376.1.3.4" extension="WA28932881-2"/>
+              <code code="IMP" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7 ActEncounterCode" displayName="Inpatient encounter"/>
+              <effectiveTime value="20071107094500-0700"/>
+              <performer typeCode="PRF">
+                <assignedEntity classCode="ASSIGNED">
+                  <id nullFlavor="UNK"/>
+                  <addr><streetAddressLine>128 Lehua Street</streetAddressLine><city>Wahiawa</city><state>HI</state><postalCode>96786</postalCode></addr>
+                  <telecom value="tel:+1-808-621-8411"/>
+                  <assignedPerson>
+                    <name><family>Thomas</family><given>Kososa</given><prefix>Dr.</prefix><suffix>MD</suffix></name>
+                  </assignedPerson>
+                </assignedEntity>
+              </performer>
+              <participant typeCode="LOC">
+                <participantRole classCode="SDLOC">
+                  <id nullFlavor="UNK"/>
+                  <addr><streetAddressLine>128 Lehua Street</streetAddressLine><city>Wahiawa</city><state>HI</state><postalCode>96786</postalCode></addr>
+                  <telecom value="tel:+1-808-621-8411"/>
+                  <playingEntity classCode="PLC">
+                    <name>Wahiawa General Hospital</name>
+                  </playingEntity>
+                </participantRole>
+              </participant>
+            </encounter>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <templateId root="2.16.840.1.113883.10.20.1.14"/>
+          <templateId root="2.16.840.1.113883.10.20.15.2.3"/>
+          <templateId root="2.16.840.1.113883.10.20.15.2.38"/>
+          <code code="30954-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Relevant diagnostic tests and/or laboratory data"/>
+          <title>Relevant diagnostic tests and/or laboratory data</title>
+          <text><list>
+                        <caption>Salmonellosis Relevant Diagnostics Tests Section</caption>
+                        <item>Stool collected on 2007/11/05, S enteritid H Ab Titr Ser result: Salmonella enteritidis Detected</item>
+                        <item>Wahiawa General Hospital Laboratory, 128 Lehua Street, Wahiawa, Hawaii 96786  (tel:808-621-8411)</item>
+            </list></text>
+          <entry typeCode="DRIV">
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.1.31"/>
+              <templateId root="2.16.840.1.113883.10.20.15.3.58"/>
+              <templateId root="2.16.840.1.113883.10.20.15.3.119"/>
+              <id nullFlavor="UNK"/>
+              <code code="34423-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="S enteritid H Ab Titr Ser"/>
+              <statusCode code="completed"/>
+              <effectiveTime value="20071105000000-0700"/>
+              <value xsi:type="CD" code="73525009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Salmonella Enteritidis">
+                <qualifier>
+                  <name code="408729009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Finding context"/>
+                  <value code="260373001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Detected"/>
+                </qualifier>
+              </value>
+              <methodCode code="0278" codeSystem="2.16.840.1.113883.5.84" codeSystemName="ObservationMethod" displayName="Agar screen"/>
+              <informant>
+                <assignedEntity>
+                  <id nullFlavor="UNK"/>
+                  <addr><streetAddressLine>128 Lehua Street</streetAddressLine><city>Wahiawa</city><state>HI</state><postalCode>96786</postalCode></addr>
+                  <telecom value="tel:+1-206-367-0150"/>
+                  <representedOrganization>
+                    <name>Wahiawa General Hospital Laboratory</name>
+                  </representedOrganization>
+                </assignedEntity>
+              </informant>
+            </observation>
+          </entry>
+        </section>
+      </component>
+    </structuredBody>
+  </component>
+</ClinicalDocument>
