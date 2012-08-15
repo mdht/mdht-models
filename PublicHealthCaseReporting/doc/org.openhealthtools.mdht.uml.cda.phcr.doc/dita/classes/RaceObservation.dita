@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Race Observation</title>
+<shortdesc conref="generated/_RaceObservation.dita#classId/shortdesc"></shortdesc>
+<prolog conref="generated/_RaceObservation.dita#classId/prolog"></prolog>
+<body>
+<p>This clinical statement represents the race of the subject of the case report.</p>
+<section conref="generated/_RaceObservation.dita#classId/description">
+</section>
+<!-- TODO: insert UML class diagram here -->
+
+<ol audience="standards" conref="generated/_RaceObservation.dita#classId/conformance">
+<li></li>
+</ol>
+<ol audience="developer" conref="generated/_RaceObservation.dita#classId/aggregate">
+<li></li>
+</ol>
+<p> </p>
+<section conref="generated/_RaceObservation.dita#classId/tableconformance">
+</section>
+<p> </p>
+<p> </p>
+<p><b>Race Observation example</b></p>
+<codeblock id="example"><![CDATA[
+<entry typeCode="DRIV">
+  <!-- Race observations -->
+  <observation classCode="OBS" moodCode="EVN">
+    <templateId root="2.16.840.1.113883.10.20.15.3.9" />
+    <code code="32624-9" codeSystem="2.16.840.1.113883.6.1" displayName="Race" />
+    <statusCode code="completed" />
+    <value xsi:type="CD" code="1002-5" codeSystem="2.16.840.1.113883.6.238"
+           displayName="AMERICAN INDIAN OR ALASKA NATIVE" />
+  </observation>
+</entry>]]></codeblock>
+<!-- generated instance example follows -->
+<codeblock conref="generated/_RaceObservation.dita#classId/example">
+</codeblock>
+</body>
+</topic>

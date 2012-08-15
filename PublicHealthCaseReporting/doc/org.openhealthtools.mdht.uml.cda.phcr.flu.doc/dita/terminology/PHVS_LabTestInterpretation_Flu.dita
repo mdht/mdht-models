@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>PHV S_ Lab Test Interpretation_ Flu</title>
+<prolog id="prolog">
+<resourceid id="2.16.840.1.114222.4.11.3252"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table><tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>PHVS_LabTestInterpretation_Flu - 2.16.840.1.114222.4.11.3252</entry></row>
+<row><entry>Code System</entry><entry>SNOMEDCT - 2.16.840.1.113883.6.96</entry></row>
+<row><entry>Source</entry><entry>PHIN-VADS</entry></row>
+<row><entry>Source URL</entry><entry>https://phinvads.cdc.gov/vads/ViewValueSet.action?oid=2.16.840.1.114222.4.11.3252</entry></row>
+<row><entry>Definition</entry><entry>Epidemiologic interpretation of the results of the tests performed for Influenza Case.</entry></row>
+</tbody></tgroup></table>
+<table><tgroup cols="4">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="2*"/>
+<colspec colname="col3" colwidth="1*"/>
+<colspec colname="col4" colwidth="3*"/>
+<thead><row>
+<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
+</row></thead><tbody>
+<row><entry>82334004</entry><entry>Indeterminate (qualifier value)</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>PLR1</entry><entry>Influenza A (H1)</entry><entry>PHIN VS (CDC Local Coding System)</entry><entry></entry></row>
+<row><entry>PLR3</entry><entry>Influenza A (H3)</entry><entry>PHIN VS (CDC Local Coding System)</entry><entry></entry></row>
+<row><entry>PLR19</entry><entry>Influenza A (unsubtypeable)</entry><entry>PHIN VS (CDC Local Coding System)</entry><entry></entry></row>
+<row><entry>407479009</entry><entry>Influenza A virus (organism)</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>442352004</entry><entry>Influenza A virus subtype H1N1 (organism)</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>407480007</entry><entry>Influenza B virus (organism)</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>260385009</entry><entry>Negative (qualifier value)</entry><entry>SNOMEDCT</entry><entry></entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>

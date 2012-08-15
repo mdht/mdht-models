@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Job Related Body Fluid Exposure Risk Frequency Observation</title>
+<shortdesc conref="generated/_JobRelatedBodyFluidExposureRiskFrequencyObservation.dita#classId/shortdesc"></shortdesc>
+<prolog conref="generated/_JobRelatedBodyFluidExposureRiskFrequencyObservation.dita#classId/prolog"></prolog>
+<body>
+<!-- TODO: insert non-model class description markup here -->
+<section conref="generated/_JobRelatedBodyFluidExposureRiskFrequencyObservation.dita#classId/description">
+</section>
+<!-- TODO: insert UML class diagram here -->
+
+<ol audience="standards" conref="generated/_JobRelatedBodyFluidExposureRiskFrequencyObservation.dita#classId/conformance">
+<li></li>
+</ol>
+<ol audience="developer" conref="generated/_JobRelatedBodyFluidExposureRiskFrequencyObservation.dita#classId/aggregate">
+<li></li>
+</ol>
+<p> </p>
+<section conref="generated/_JobRelatedBodyFluidExposureRiskFrequencyObservation.dita#classId/tableconformance">
+</section>
+<p> </p>
+<p> </p>
+<p><b>Job Related Body Fluid Exposure Risk Frequency Observation example</b></p>
+<!-- TODO: insert custom instance example here -->
+<!-- generated instance example follows -->
+<codeblock conref="generated/_JobRelatedBodyFluidExposureRiskFrequencyObservation.dita#classId/example">
+</codeblock>
+</body>
+</topic>

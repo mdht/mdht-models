@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Patient Condition Deceased Observation</title>
+<shortdesc conref="generated/_PatientConditionDeceasedObservation.dita#classId/shortdesc"></shortdesc>
+<prolog conref="generated/_PatientConditionDeceasedObservation.dita#classId/prolog"></prolog>
+<body>
+<p>This clinical statement represents the observation that the subject of the case report
+was deceased at the time of the report. It also represents if the death was caused by the
+condition being reported. The entryRelationship type of CAUS provides the link together
+with the observation/id and observation value as to whether or not the condition
+caused the death. A negationIndicator of false means the condition caused the death. A
+negationIndicator of true means the condition did not cause the death.</p>
+<section conref="generated/_PatientConditionDeceasedObservation.dita#classId/description">
+</section>
+<!-- TODO: insert UML class diagram here -->
+
+<ol audience="standards" conref="generated/_PatientConditionDeceasedObservation.dita#classId/conformance">
+<li></li>
+</ol>
+<ol audience="developer" conref="generated/_PatientConditionDeceasedObservation.dita#classId/aggregate">
+<li></li>
+</ol>
+<p> </p>
+<section conref="generated/_PatientConditionDeceasedObservation.dita#classId/tableconformance">
+</section>
+<p> </p>
+<p> </p>
+<p><b>Patient Condition Deceased Observation example</b></p>
+<!-- TODO: insert custom instance example here -->
+<!-- generated instance example follows -->
+<codeblock conref="generated/_PatientConditionDeceasedObservation.dita#classId/example">
+</codeblock>
+</body>
+</topic>

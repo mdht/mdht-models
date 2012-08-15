@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Acute Hepatitis B Possible Exposure Location And Type Act - conformance rules</title>
+<shortdesc id="shortdesc">[Act: templateId <tt>2.16.840.1.113883.10.20.15.3.27</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Act</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.15.3.27"/>
+</prolog>
+<body>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ACT" </tt><i>Act</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="413350009" </tt> (CodeSystem:<tt> 2.16.840.1.113883.6.96 SNOMEDCT</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt>
+</li>
+<li>5.	<b>SHALL</b> contain [1..*] participant (CONF:1083) (specialized branch), which 
+a.	<b>SHALL</b> contain [1..1] @typeCode="LOC" Location (CodeSystem: 2.16.840.1.113883.5.90 HL7ParticipationType) STATIC (CONF:1084) 
+b.	<b>SHOULD</b> contain [0..1] time (CONF:1085) 
+c.	<b>SHALL</b> contain [1..1] participantRole (CONF:1086), which 
+i.	<b>SHALL</b> contain [1..1] @classCode="LOCE" Located entity (CodeSystem: 2.16.840.1.113883.5.110 HL7RoleClass) STATIC (CONF:1087) 
+ii.	<b>SHOULD</b> contain [0..*] addr (CONF:1088) 
+iii.	<b>SHOULD</b> contain [0..*] telecom (CONF:1089) 
+iv.	<b>SHOULD</b> contain [0..1] playingEntity (CONF:1090), which if present 
+1.	<b>SHALL</b> contain [1..1] @classCode="PLC" Place (CodeSystem: 2.16.840.1.113883.5.41 HL7EntityClass) STATIC (CONF:1091) 
+2.	<b>SHALL</b> contain [1..1] code/@code, which <b>SHALL</b> be selected from ValueSet 2.16.840.1.114222.4.11.3209 Exposure Location DYNAMIC (CONF:1092)</li>
+<li>6.	<b>SHOULD</b> contain [0..*] participant (CONF:1565) (specialized branch), which if present 
+a.	<b>SHALL</b> contain [1..1] @typeCode="DIR" Direct target (CodeSystem: 2.16.840.1.113883.5.90 HL7ParticipationType) STATIC (CONF:1566) 
+b.	<b>SHOULD</b> contain [0..1] time (CONF:1567) 
+c.	<b>SHALL</b> contain [1..1] participantRole (CONF:1568), which 
+i.	<b>SHALL</b> contain [1..1] @classCode="EXPR" Exposed entity (CodeSystem: 2.16.840.1.113883.5.110 HL7RoleClass) STATIC (CONF:1569) 
+ii.	<b>SHALL</b> contain [1..1] scopingEntity (CONF:1852) 
+iii.	<b>SHALL</b> contain [1..1] code/@code, which <b>SHALL</b> be selected from ValueSet 2.16.840.1.114222.4.11.3210 Contact Type (Hepatitis B) DYNAMIC (CONF:1572)</li>
+<li>3.	<b>SHALL</b> contain [1..1] code/@code="413350009" Finding with explicit context (CodeSystem: 2.16.840.1.113883.6.96 SNOMEDCT) STATIC (CONF:1076), which 
+a.	<b>SHALL</b> contain [1..1] qualifier (CONF:1077) (specialized branch), which 
+i.	<b>SHALL</b> contain [1..1] name/@code="246090004" Associated finding (CodeSystem: 2.16.840.1.113883.6.96 SNOMEDCT) STATIC (CONF:1078) 
+ii.	<b>SHALL</b> contain [1..1] value/@code="281638009" Hepatitis B contact (CodeSystem: 2.16.840.1.113883.6.96 SNOMEDCT) STATIC (CONF:1079) 
+b.	<b>SHALL</b> contain [1..1] qualifier (CONF:1080) (specialized branch), which 
+i.	<b>SHALL</b> contain [1..1] name/@code="408729009" Finding context (CodeSystem: 2.16.840.1.113883.6.96 SNOMEDCT) STATIC (CONF:1081) 
+ii.	<b>SHALL</b> contain [1..1] value/@code="410590009" Known possible (CodeSystem: 2.16.840.1.113883.6.96 SNOMEDCT) STATIC (CONF:1082)</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="ACT" </tt><i>Act</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="413350009" </tt> (CodeSystem:<tt> 2.16.840.1.113883.6.96 SNOMEDCT</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt>
+</li>
+<li>5.	<b>SHALL</b> contain [1..*] participant (CONF:1083) (specialized branch), which 
+a.	<b>SHALL</b> contain [1..1] @typeCode="LOC" Location (CodeSystem: 2.16.840.1.113883.5.90 HL7ParticipationType) STATIC (CONF:1084) 
+b.	<b>SHOULD</b> contain [0..1] time (CONF:1085) 
+c.	<b>SHALL</b> contain [1..1] participantRole (CONF:1086), which 
+i.	<b>SHALL</b> contain [1..1] @classCode="LOCE" Located entity (CodeSystem: 2.16.840.1.113883.5.110 HL7RoleClass) STATIC (CONF:1087) 
+ii.	<b>SHOULD</b> contain [0..*] addr (CONF:1088) 
+iii.	<b>SHOULD</b> contain [0..*] telecom (CONF:1089) 
+iv.	<b>SHOULD</b> contain [0..1] playingEntity (CONF:1090), which if present 
+1.	<b>SHALL</b> contain [1..1] @classCode="PLC" Place (CodeSystem: 2.16.840.1.113883.5.41 HL7EntityClass) STATIC (CONF:1091) 
+2.	<b>SHALL</b> contain [1..1] code/@code, which <b>SHALL</b> be selected from ValueSet 2.16.840.1.114222.4.11.3209 Exposure Location DYNAMIC (CONF:1092)</li>
+<li>6.	<b>SHOULD</b> contain [0..*] participant (CONF:1565) (specialized branch), which if present 
+a.	<b>SHALL</b> contain [1..1] @typeCode="DIR" Direct target (CodeSystem: 2.16.840.1.113883.5.90 HL7ParticipationType) STATIC (CONF:1566) 
+b.	<b>SHOULD</b> contain [0..1] time (CONF:1567) 
+c.	<b>SHALL</b> contain [1..1] participantRole (CONF:1568), which 
+i.	<b>SHALL</b> contain [1..1] @classCode="EXPR" Exposed entity (CodeSystem: 2.16.840.1.113883.5.110 HL7RoleClass) STATIC (CONF:1569) 
+ii.	<b>SHALL</b> contain [1..1] scopingEntity (CONF:1852) 
+iii.	<b>SHALL</b> contain [1..1] code/@code, which <b>SHALL</b> be selected from ValueSet 2.16.840.1.114222.4.11.3210 Contact Type (Hepatitis B) DYNAMIC (CONF:1572)</li>
+<li>3.	<b>SHALL</b> contain [1..1] code/@code="413350009" Finding with explicit context (CodeSystem: 2.16.840.1.113883.6.96 SNOMEDCT) STATIC (CONF:1076), which 
+a.	<b>SHALL</b> contain [1..1] qualifier (CONF:1077) (specialized branch), which 
+i.	<b>SHALL</b> contain [1..1] name/@code="246090004" Associated finding (CodeSystem: 2.16.840.1.113883.6.96 SNOMEDCT) STATIC (CONF:1078) 
+ii.	<b>SHALL</b> contain [1..1] value/@code="281638009" Hepatitis B contact (CodeSystem: 2.16.840.1.113883.6.96 SNOMEDCT) STATIC (CONF:1079) 
+b.	<b>SHALL</b> contain [1..1] qualifier (CONF:1080) (specialized branch), which 
+i.	<b>SHALL</b> contain [1..1] name/@code="408729009" Finding context (CodeSystem: 2.16.840.1.113883.6.96 SNOMEDCT) STATIC (CONF:1081) 
+ii.	<b>SHALL</b> contain [1..1] value/@code="410590009" Known possible (CodeSystem: 2.16.840.1.113883.6.96 SNOMEDCT) STATIC (CONF:1082)</li>
+</ol>
+
+<codeblock id="example"><![CDATA[]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Acute Hepatitis B Possible Exposure Location And Type Act</ph></p>
+<p id="shortdesc">[Act: templateId <tt>2.16.840.1.113883.10.20.15.3.27</tt>]</p>
+</body>
+</topic>

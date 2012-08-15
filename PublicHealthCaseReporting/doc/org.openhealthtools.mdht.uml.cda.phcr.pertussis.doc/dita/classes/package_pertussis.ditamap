@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map title="Package: pertussis">
+<topicref href="PertussisCaseObservation.dita" type="topic" />
+<topicref href="PertussisCaseReport.dita" type="topic" />
+<topicref href="PertussisClinicalInformationSection.dita" type="topic" />
+<topicref href="PertussisImmunizationActivity.dita" type="topic" />
+<topicref href="PertussisImmunizationProduct.dita" type="topic" />
+<topicref href="PertussisImmunizationsSection.dita" type="topic" />
+<topicref href="PertussisPossibleCaseContactLocationAct.dita" type="topic" />
+<topicref href="PertussisPossibleExposureLocationAct.dita" type="topic" />
+<topicref href="PertussisRelevantDxTestsSection.dita" type="topic" />
+<topicref href="PertussisResultObservation.dita" type="topic" />
+<topicref href="PertussisResultOrganizer.dita" type="topic" />
+<topicref href="PertussisSignsAndSymptomsObservation.dita" type="topic" />
+<topicref href="PertussisSocialHistorySection.dita" type="topic" />
+<topicref href="PertussisTherapeuticRegimenAct.dita" type="topic" />
+<topicref href="PertussisTreatmentGivenSubstanceAdministration.dita" type="topic" />
+<topicref href="PertussisTreatmentInformationSection.dita" type="topic" />
+<topicref href="PertussisTreatmentNotGivenSubstanceAdministration.dita" type="topic" />
+</map>

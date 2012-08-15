@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map title="Value Sets">
+<topicref href="Lab Test Result Name (Tss).dita" type="topic" />
+<topicref href="Signs and Symptoms (Tss).dita" type="topic" />
+</map>

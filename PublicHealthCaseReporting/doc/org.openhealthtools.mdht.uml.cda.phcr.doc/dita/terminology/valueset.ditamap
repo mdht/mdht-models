@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map title="Value Sets">
+<topicref href="Administrative Gender (HL7 V3).dita" type="topic" />
+<topicref href="Birth Country.dita" type="topic" />
+<topicref href="Body Site.dita" type="topic" />
+<topicref href="Drug Susceptibility Test Result Name.dita" type="topic" />
+<topicref href="Ethnicity Group.dita" type="topic" />
+<topicref href="Exposure Location.dita" type="topic" />
+<topicref href="Geographical location history.dita" type="topic" />
+<topicref href="Industry (NAICS).dita" type="topic" />
+<topicref href="Medication Route FDA.dita" type="topic" />
+<topicref href="Microorganism.dita" type="topic" />
+<topicref href="Non-Laboratory Intervention and Procedure.dita" type="topic" />
+<topicref href="Observation Interpretation (HL7).dita" type="topic" />
+<topicref href="Occupation.dita" type="topic" />
+<topicref href="Race.dita" type="topic" />
+<topicref href="Relevant Medical Condition Type.dita" type="topic" />
+<topicref href="Specimen.dita" type="topic" />
+</map>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map title="Clinical Statement Templates">
+<topicref href="LocationOfLesionObservation.dita" type="topic" />
+<topicref href="TularemiaCaseObservation.dita" type="topic" />
+<topicref href="TularemiaPossibleExposureLocationAndTypeAct.dita" type="topic" />
+<topicref href="TularemiaResultObservation.dita" type="topic" />
+<topicref href="TularemiaResultOrganizer.dita" type="topic" />
+<topicref href="TularemiaSignsAndSymptomsObservation.dita" type="topic" />
+<topicref href="TularemiaTherapeuticRegimenAct.dita" type="topic" />
+<topicref href="TularemiaTreatmentGivenSubstanceAdministration.dita" type="topic" />
+<topicref href="TularemiaTreatmentNotGivenSubstanceAdministration.dita" type="topic" />
+</map>

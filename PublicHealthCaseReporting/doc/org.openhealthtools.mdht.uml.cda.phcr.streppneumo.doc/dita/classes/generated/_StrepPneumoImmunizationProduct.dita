@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Strep Pneumo Immunization Product - conformance rules</title>
+<shortdesc id="shortdesc">[Product: templateId <tt>2.16.840.1.113883.10.20.15.3.123</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Product</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.15.3.123"/>
+</prolog>
+<body>
+<section id="description">
+</section>
+<ol id="conformance">
+<li>2.	<b>SHALL</b> contain [1..1] manufacturedMaterial, which 
+a.	<b>SHALL</b> contain [1..1] code/@code, which <b>SHALL</b> be selected from ValueSet 2.16.840.1.114222.4.11.6032 PHVS_VaccinesAdministered_StrepPneumo DYNAMIC</li>
+</ol>
+<ol id="aggregate">
+<li>Contains exactly one [1..1] <tt><b>manufacturedProduct</b></tt>, where its type is <xref href="../ManufacturedProduct.dita">Manufactured Product</xref>
+</li>
+<li>2.	<b>SHALL</b> contain [1..1] manufacturedMaterial, which 
+a.	<b>SHALL</b> contain [1..1] code/@code, which <b>SHALL</b> be selected from ValueSet 2.16.840.1.114222.4.11.6032 PHVS_VaccinesAdministered_StrepPneumo DYNAMIC</li>
+</ol>
+
+<codeblock id="example"><![CDATA[]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Strep Pneumo Immunization Product</ph></p>
+<p id="shortdesc">[Product: templateId <tt>2.16.840.1.113883.10.20.15.3.123</tt>]</p>
+</body>
+</topic>

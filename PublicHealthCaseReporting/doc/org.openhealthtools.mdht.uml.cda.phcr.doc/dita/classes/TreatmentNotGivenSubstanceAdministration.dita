@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Treatment Not Given Substance Administration</title>
+<shortdesc conref="generated/_TreatmentNotGivenSubstanceAdministration.dita#classId/shortdesc"></shortdesc>
+<prolog conref="generated/_TreatmentNotGivenSubstanceAdministration.dita#classId/prolog"></prolog>
+<body>
+<p>This clinical statement represents treatments not administered to the subject of the
+case report for the treatment of the reported condition. Some workflows may require
+reporting of typical treatments that were NOT administered.</p>
+<section conref="generated/_TreatmentNotGivenSubstanceAdministration.dita#classId/description">
+</section>
+<!-- TODO: insert UML class diagram here -->
+
+<ol audience="standards" conref="generated/_TreatmentNotGivenSubstanceAdministration.dita#classId/conformance">
+<li></li>
+</ol>
+<ol audience="developer" conref="generated/_TreatmentNotGivenSubstanceAdministration.dita#classId/aggregate">
+<li></li>
+</ol>
+<p> </p>
+<section conref="generated/_TreatmentNotGivenSubstanceAdministration.dita#classId/tableconformance">
+</section>
+<p> </p>
+<p> </p>
+<p><b>Treatment Not Given Substance Administration example</b></p>
+<!-- TODO: insert custom instance example here -->
+<!-- generated instance example follows -->
+<codeblock conref="generated/_TreatmentNotGivenSubstanceAdministration.dita#classId/example">
+</codeblock>
+</body>
+</topic>

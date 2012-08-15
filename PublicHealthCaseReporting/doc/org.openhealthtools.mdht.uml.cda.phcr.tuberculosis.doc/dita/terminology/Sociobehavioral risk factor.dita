@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Sociobehavioral risk factor</title>
+<prolog id="prolog">
+<resourceid id="2.16.840.1.114222.4.11.3228"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table><tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>Sociobehavioral risk factor - 2.16.840.1.114222.4.11.3228</entry></row>
+<row><entry>Version</entry><entry>1</entry></row>
+<row><entry>Definition</entry><entry>Socio-behavioral risk factor related to infectious disease.</entry></row>
+</tbody></tgroup></table>
+<table><tgroup cols="4">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="2*"/>
+<colspec colname="col3" colwidth="1*"/>
+<colspec colname="col4" colwidth="3*"/>
+<thead><row>
+<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
+</row></thead><tbody>
+<row><entry>160592001</entry><entry>Alcohol intake above recommended sensible limits</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>32911000</entry><entry>Homeless</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>45361006</entry><entry>Imprisonment</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>226034001</entry><entry>Injecting drug user</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>413096007</entry><entry>Never injecting drug user</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>55211-7</entry><entry>Shared razor, toothbrushes or nail care items:Find:Pt:Patient:Ord:</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>228395002</entry><entry>Shares drug injecting equipment</entry><entry>SNOMEDCT</entry><entry></entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>

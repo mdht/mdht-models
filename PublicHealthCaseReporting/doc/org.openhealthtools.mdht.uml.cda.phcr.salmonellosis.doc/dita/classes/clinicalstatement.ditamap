@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map title="Clinical Statement Templates">
+<topicref href="HIVStatusObservation.dita" type="topic" />
+<topicref href="SalmonellosisCaseObservation.dita" type="topic" />
+<topicref href="SalmonellosisPossibleExposureLocationAndTypeAct.dita" type="topic" />
+<topicref href="SalmonellosisResultObservation.dita" type="topic" />
+<topicref href="SalmonellosisResultOrganizer.dita" type="topic" />
+<topicref href="SalmonellosisSignsAndSymptomsObservation.dita" type="topic" />
+</map>

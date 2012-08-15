@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN"
+ "dtd/topic.dtd">
+<topic id="topicId" xml:lang="en-us">
+	<title>Audience</title>
+	<body>
+		<p>The audience for this document includes software developers and implementers with
+reporting capabilities within their EHR systems, and developers and analysts in public
+health departments who wish to create and/or process CDA PHCR documents created
+according to this specification. The intended audience also includes public health
+domain experts.</p>
+	</body>
+</topic>

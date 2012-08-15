@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>influenza Treatment Not Given Substance Administration - conformance rules</title>
+<shortdesc id="shortdesc">[SubstanceAdministration: templateId <tt>2.16.840.1.113883.10.20.15.3.80</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>SubstanceAdministration</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.15.3.80"/>
+</prolog>
+<body>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.phcr.doc/classes/TreatmentNotGivenSubstanceAdministration.html">PHCR Treatment Not Given Substance Administration</xref> template (templateId: <tt>2.16.840.1.113883.10.20.15.3.56</tt>)</li>
+<li>6.	<b>SHALL</b> contain [1..1] consumable , which 
+a.	<b>SHALL</b> contain [1..1] manufacturedProduct , which 
+i.	<b>SHALL</b> contain [1..1] manufacturedMaterial ), which 
+1.	<b>SHALL</b> contain [1..1] code/@code, which <b>SHALL</b> be selected from ValueSet 2.16.840.1.114222.4.11.3244 PHVS_MedicationTreatment_Flu DYNAMIC ), which 
+a.	<b>SHOULD</b> contain [0..1] originalText</li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.phcr.doc/classes/TreatmentNotGivenSubstanceAdministration.html">PHCR Treatment Not Given Substance Administration</xref> template (templateId: <tt>2.16.840.1.113883.10.20.15.3.56</tt>)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="SBADM" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:1931)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:1932)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@negationInd</b></tt> (CONF:1933)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF:1934)
+</li>
+<li>Contains exactly one [1..1] <tt><b>consumable</b></tt>, where its type is <xref href="../Consumable.dita">Consumable</xref>
+</li>
+<li><b>SHALL</b> satisfy: Shall contain consumable (CONF:1935)</li>
+<li><b>SHALL</b> contain exactly one [1..1] @negationInd="true" (CONF:1933)<ul><li><codeblock>[OCL]: self.negationInd=true</codeblock></li></ul></li>
+<li>6.	<b>SHALL</b> contain [1..1] consumable , which 
+a.	<b>SHALL</b> contain [1..1] manufacturedProduct , which 
+i.	<b>SHALL</b> contain [1..1] manufacturedMaterial ), which 
+1.	<b>SHALL</b> contain [1..1] code/@code, which <b>SHALL</b> be selected from ValueSet 2.16.840.1.114222.4.11.3244 PHVS_MedicationTreatment_Flu DYNAMIC ), which 
+a.	<b>SHOULD</b> contain [0..1] originalText</li>
+</ol>
+
+<codeblock id="example"><![CDATA[]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">influenza Treatment Not Given Substance Administration</ph></p>
+<p id="shortdesc">[SubstanceAdministration: templateId <tt>2.16.840.1.113883.10.20.15.3.80</tt>]</p>
+</body>
+</topic>

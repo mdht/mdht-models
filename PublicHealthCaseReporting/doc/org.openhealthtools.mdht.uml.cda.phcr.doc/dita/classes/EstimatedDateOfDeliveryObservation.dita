@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Estimated Date Of Delivery Observation</title>
+<shortdesc conref="generated/_EstimatedDateOfDeliveryObservation.dita#classId/shortdesc"></shortdesc>
+<prolog conref="generated/_EstimatedDateOfDeliveryObservation.dita#classId/prolog"></prolog>
+<body>
+<p>This clinical statement represents the anticipated date when a woman will give birth.</p>
+<section conref="generated/_EstimatedDateOfDeliveryObservation.dita#classId/description">
+</section>
+<!-- TODO: insert UML class diagram here -->
+
+<ol audience="standards" conref="generated/_EstimatedDateOfDeliveryObservation.dita#classId/conformance">
+<li></li>
+</ol>
+<ol audience="developer" conref="generated/_EstimatedDateOfDeliveryObservation.dita#classId/aggregate">
+<li></li>
+</ol>
+<p> </p>
+<section conref="generated/_EstimatedDateOfDeliveryObservation.dita#classId/tableconformance">
+</section>
+<p> </p>
+<p> </p>
+<p><b>Estimated Date Of Delivery Observation example</b></p>
+<codeblock id="example"><![CDATA[<entryRelationship typeCode="REFR">
+  <!-- Estimated date of Delivery entry -->
+  <observation classCode="OBS" moodCode="EVN">
+    <templateId root="2.16.840.1.113883.10.20.15.3.1" />
+    <code code="11778-8" codeSystem="2.16.840.1.113883.6.1" displayName="Estimated delivery date" />
+    <statusCode code="completed" />
+    <value xsi:type="TS" value="20090215" />
+  </observation>
+</entryRelationship>]]></codeblock>
+<!-- generated instance example follows -->
+<codeblock conref="generated/_EstimatedDateOfDeliveryObservation.dita#classId/example">
+</codeblock>
+</body>
+</topic>
