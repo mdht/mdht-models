@@ -286,7 +286,7 @@
   </CDA:CDATemplate>
   <CDA:CodeSystemConstraint xmi:id="_2KiogBSVEeGGzu7fmW9pXw" code="42348-3" displayName="Advance directives" base_Property="_2KiBcBSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:8644</ruleId>
+    <ruleId>CONF:15344</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:TextValue xmi:id="_2Kj2oBSVEeGGzu7fmW9pXw" base_Property="_2KjPkBSVEeGGzu7fmW9pXw"/>
   <CDA:PropertyValidation xmi:id="_2Kj2pBSVEeGGzu7fmW9pXw" base_Property="_2Kj2oRSVEeGGzu7fmW9pXw">
@@ -320,7 +320,8 @@ NOTE: The descriptions in this section differentiate between &quot;advance direc
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1RZdKxVdEeGQCvUGzi1kDQ" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_m-ey8CsbEeGQ5rkpDKAt8A" name="advanceDirectiveObservation" type="_2KlEwBSVEeGGzu7fmW9pXw" association="_m-faACsbEeGQ5rkpDKAt8A">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_m-ey8SsbEeGQ5rkpDKAt8A"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G_hzEOMzEeGfv4R-kzpM0g" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G_hzEeMzEeGfv4R-kzpM0g"/>
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_VLe-sBVfEeGQCvUGzi1kDQ" base_Class="_1RZdIBVdEeGQCvUGzi1kDQ" templateId="2.16.840.1.113883.10.20.22.2.21">
@@ -329,7 +330,7 @@ NOTE: The descriptions in this section differentiate between &quot;advance direc
   </CDA:CDATemplate>
   <CDA:CodeSystemConstraint xmi:id="_DLW4YCscEeGQ5rkpDKAt8A" code="42348-3" displayName="Advance Directives" base_Property="_1RZdJxVdEeGQCvUGzi1kDQ">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:7929</ruleId>
+    <ruleId>CONF:15342</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:TextValue xmi:id="_SzayYCscEeGQ5rkpDKAt8A" base_Property="_1RZdKBVdEeGQCvUGzi1kDQ">
     <ruleId>CONF:7930</ruleId>
@@ -354,5 +355,11 @@ NOTE: The descriptions in this section differentiate between &quot;advance direc
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_iJJAQHhtEeGJtvg2iiStYg" base_Property="_2KjPkBSVEeGGzu7fmW9pXw">
     <ruleId>CONF:8645</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_K97iUOMzEeGfv4R-kzpM0g" base_Property="_2KiBcBSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:15343</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_MlCDAOMzEeGfv4R-kzpM0g" base_Property="_1RZdJxVdEeGQCvUGzi1kDQ">
+    <ruleId>CONF:15340</ruleId>
   </CDA:PropertyValidation>
 </xmi:XMI>

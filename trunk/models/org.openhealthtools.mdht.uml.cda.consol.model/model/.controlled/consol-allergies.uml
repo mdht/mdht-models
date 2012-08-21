@@ -34,7 +34,7 @@
   </CDA:CDATemplate>
   <CDA:CodeSystemConstraint xmi:id="_2LN98RSVEeGGzu7fmW9pXw" code="48765-2" displayName="Allergies, adverse reactions, alerts" base_Property="_2LN98BSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:7528</ruleId>
+    <ruleId>CONF:15350</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_2LPMERSVEeGGzu7fmW9pXw" base_Property="_2LPMEBSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7534</ruleId>
@@ -78,7 +78,7 @@
       <details xmi:id="_2EaLUhSVEeGGzu7fmW9pXw" key="Allergies and Intolerances"/>
     </eAnnotations>
     <ownedComment xmi:id="_2F5ZEBSVEeGGzu7fmW9pXw" annotatedElement="_2EaLUBSVEeGGzu7fmW9pXw">
-      <body>This clinical statement represents that an allergy or adverse reaction exists or does not exist. The agent that is the cause of the allergy or adverse reaction is represented as a manufactured material participant playing entity in the allergy observation. While the agent is often implicit in the alert observation (e.g. &quot;allergy to penicillin&quot;), it should also be asserted explicitly as an entity. The manufactured material participant is used to represent natural and non-natural occuring substances.&#xD;
+      <body>This clinical statement represents that an allergy or adverse reaction exists or does not exist. The agent that is the cause of the allergy or adverse reaction is represented as a manufactured material participant playing entity in the allergy - intolerance observation. While the agent is often implicit in the alert observation (e.g. &quot;allergy to penicillin&quot;), it should also be asserted explicitly as an entity. The manufactured material participant is used to represent natural and non-natural occurring substances.&#xD;
 NOTE: The agent responsible for an allergy or adverse reaction is not always a manufactured material (for example, food allergies), nor is it necessarily consumed. The following constraints reflect limitations in the base CDA R2 specification, and should be used to represent any type of responsible agent.</body>
     </ownedComment>
     <ownedRule xmi:id="_2l9d8CEyEeG9m6LRl9ardQ" name="effectiveTimeLow" constrainedElement="_2EaLUBSVEeGGzu7fmW9pXw">
@@ -111,8 +111,16 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_iuCH4CFLEeG9m6LRl9ardQ">
         <language>Analysis</language>
         <language>OCL</language>
-        <body>originalText, if present, SHOULD contain zero or one [0..1] reference/@value</body>
-        <body>self.value.oclAsType(datatypes::CD).originalText->size() = 1 implies self.value.oclAsType(datatypes::CD).originalText.reference.value->size() = 1</body>
+        <body>originalText, if present, MAY contain zero or one [0..1] reference</body>
+        <body>self.value.oclAsType(datatypes::CD).originalText->size() = 1 implies self.value.oclAsType(datatypes::CD).originalText->one(reference->size() = 1)</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_bTC9MOJPEeG3cO7ebC3QuA" name="originalTextReferenceValue" constrainedElement="_cf38gCFLEeG9m6LRl9ardQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_e7dOUOJPEeG3cO7ebC3QuA">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>reference, if present, SHOULD contain zero or one [0..1] reference/@value</body>
+        <body>self.value.oclAsType(datatypes::CD).originalText.reference->size() = 1 implies self.value.oclAsType(datatypes::CD).originalText.reference.value->size() = 1</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_nV_8ECFMEeG9m6LRl9ardQ" name="referenceValue" constrainedElement="_2EaLUBSVEeGGzu7fmW9pXw">
@@ -184,12 +192,12 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2EaLeBSVEeGGzu7fmW9pXw" name="problemEntryReactionObservationContainer" type="_2E_aIRSVEeGGzu7fmW9pXw" association="_2Ej8URSVEeGGzu7fmW9pXw">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SkWAMHhuEeGJtvg2iiStYg" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SkWAMXhuEeGJtvg2iiStYg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0W64EOJUEeG3cO7ebC3QuA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0W64EeJUEeG3cO7ebC3QuA"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2EaLexSVEeGGzu7fmW9pXw" name="severity" type="_2FGu4hSVEeGGzu7fmW9pXw" association="_2EkjYBSVEeGGzu7fmW9pXw">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TN23QHhuEeGJtvg2iiStYg" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TN23QXhuEeGJtvg2iiStYg" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_90gz4OJUEeG3cO7ebC3QuA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_90gz4eJUEeG3cO7ebC3QuA"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_-xkhwBUvEeGbmN_W114JUw" name="allergyStatusObservation" type="_2FRuAhSVEeGGzu7fmW9pXw" association="_-xkhwhUvEeGbmN_W114JUw">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-xkhwRUvEeGbmN_W114JUw"/>
@@ -260,6 +268,14 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
               <language>OCL</language>
               <body>originalText, if present, SHOULD contain zero or one [0..1] reference</body>
               <body>not self.code.originalText.oclIsUndefined() implies not self.code.originalText.reference.oclIsUndefined()</body>
+            </specification>
+          </ownedRule>
+          <ownedRule xmi:id="_WQI8oOJSEeG3cO7ebC3QuA" name="referenceValue" constrainedElement="_aK9hIDJCEeG6R8Pb5FT2Ow">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_af_oQOJSEeG3cO7ebC3QuA">
+              <language>Analysis</language>
+              <language>OCL</language>
+              <body>reference, if present, SHOULD contain zero or one [0..1] @value (CONF:15952)</body>
+              <body>not self.code.originalText.reference.oclIsUndefined() implies self.code.originalText.reference.value->size() = 1</body>
             </specification>
           </ownedRule>
           <ownedRule xmi:id="_c0knsDJCEeG6R8Pb5FT2Ow" name="originalTextReferenceValue" constrainedElement="_aK9hIDJCEeG6R8Pb5FT2Ow">
@@ -351,7 +367,7 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_2EbZcRSVEeGGzu7fmW9pXw" code="ASSERTION" base_Property="_2EaLdBSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:7383</ruleId>
+    <ruleId>CONF:15948</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_2EoNwhSVEeGGzu7fmW9pXw" severity="WARNING">
     <ruleId>CONF:7422</ruleId>
@@ -366,12 +382,12 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
   <CDA:EntryRelationship xmi:id="_2Ej8UxSVEeGGzu7fmW9pXw" severity="WARNING" base_Association="_2Ej8URSVEeGGzu7fmW9pXw" typeCode="MFST">
     <ruleId>CONF:7447</ruleId>
     <ruleId>CONF:7907</ruleId>
-    <ruleId>CONF:7450</ruleId>
+    <ruleId>CONF:15955</ruleId>
   </CDA:EntryRelationship>
-  <CDA:EntryRelationship xmi:id="_2EkjYhSVEeGGzu7fmW9pXw" base_Association="_2EkjYBSVEeGGzu7fmW9pXw" typeCode="SUBJ">
+  <CDA:EntryRelationship xmi:id="_2EkjYhSVEeGGzu7fmW9pXw" severity="WARNING" base_Association="_2EkjYBSVEeGGzu7fmW9pXw" typeCode="SUBJ">
     <ruleId>CONF:9961</ruleId>
     <ruleId>CONF:9962</ruleId>
-    <ruleId>CONF:9963</ruleId>
+    <ruleId>CONF:15956</ruleId>
   </CDA:EntryRelationship>
   <uml:Class xmi:id="_2EAisBSVEeGGzu7fmW9pXw" name="AllergyProblemAct">
     <eAnnotations xmi:id="_2EAisRSVEeGGzu7fmW9pXw" source="uml2.alias">
@@ -387,16 +403,16 @@ NOTE: The agent responsible for an allergy or adverse reaction is not always a m
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_UD7aQCWFEeGWfpmyutaqOA">
         <language>OCL</language>
         <language>Analysis</language>
-        <body>(self.statusCode.code = '55561003') implies not self.effectiveTime.low.oclIsUndefined()</body>
-        <body>If statusCode = &quot;55561003&quot; Active, then effectiveTime SHALL contain [1..1] low (CONF:7504).</body>
+        <body>(self.statusCode.code = 'active') implies not self.effectiveTime.low.oclIsUndefined()</body>
+        <body>If statusCode = &quot;active&quot; Active, then effectiveTime SHALL contain [1..1] low (CONF:7504).</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_2F-RkBSVEeGGzu7fmW9pXw" name="effectiveTimeHigh">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_2F-RkRSVEeGGzu7fmW9pXw">
         <language>Analysis</language>
         <language>OCL</language>
-        <body>If statusCode = &quot;413322009&quot;, then effectiveTime SHALL contain  high [1..1] (CONF:10085).</body>
-        <body>(self.statusCode.code = '413322009') implies not self.effectiveTime.high.oclIsUndefined()</body>
+        <body>If statusCode = &quot;completed&quot; Completed, then effectiveTime SHALL contain  high [1..1] (CONF:10085).</body>
+        <body>(self.statusCode.code = 'completed') implies not self.effectiveTime.high.oclIsUndefined()</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_2GDKExSVEeGGzu7fmW9pXw">
@@ -501,7 +517,7 @@ historical purposes.&#xD;
     <ruleId>CONF:7472</ruleId>
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_2EN-ERSVEeGGzu7fmW9pXw" base_Property="_2ENXABSVEeGGzu7fmW9pXw">
-    <reference href="../consol-vocab.uml#_2FctIBSVEeGGzu7fmW9pXw"/>
+    <reference href="../consol-vocab.uml#_2GDxJhSVEeGGzu7fmW9pXw"/>
     <ruleId>CONF:7485</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_2EPMNBSVEeGGzu7fmW9pXw" base_Property="_2EPMMBSVEeGGzu7fmW9pXw">
@@ -510,7 +526,7 @@ historical purposes.&#xD;
   <CDA:EntryRelationship xmi:id="_2F6nMhSVEeGGzu7fmW9pXw" base_Association="_2F6nMBSVEeGGzu7fmW9pXw" typeCode="SUBJ">
     <ruleId>CONF:7509</ruleId>
     <ruleId>CONF:7915</ruleId>
-    <ruleId>CONF:7510</ruleId>
+    <ruleId>CONF:14925</ruleId>
   </CDA:EntryRelationship>
   <uml:Class xmi:id="_2FGu4hSVEeGGzu7fmW9pXw" name="SeverityObservation">
     <ownedComment xmi:id="_2FGu4xSVEeGGzu7fmW9pXw" annotatedElement="_2FGu4hSVEeGGzu7fmW9pXw">
@@ -520,8 +536,16 @@ historical purposes.&#xD;
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_wsR1ACK3EeG9m6LRl9ardQ">
         <language>Analysis</language>
         <language>OCL</language>
-        <body>text, if present, SHOULD contain zero or one [0..1] reference/@value</body>
-        <body>not self.text.oclIsUndefined() implies not self.text.reference.value.oclIsUndefined()</body>
+        <body>text, if present, SHOULD contain zero or one [0..1] reference</body>
+        <body>not self.text.oclIsUndefined() implies self.text->forAll(reference->size() = 1)</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_wNrf4OJWEeG3cO7ebC3QuA" name="textReferenceValue" constrainedElement="_sBN0ECK3EeG9m6LRl9ardQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ztTocOJWEeG3cO7ebC3QuA">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>reference, if present, SHOULD contain zero or one [0..1] @value</body>
+        <body>self.text->forAll(reference->size() = 1) implies self.text->forAll(reference->one(value->size() = 1))</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_0IXhYCK3EeG9m6LRl9ardQ" name="referenceValue" constrainedElement="_2FGu4hSVEeGGzu7fmW9pXw">
@@ -546,7 +570,7 @@ historical purposes.&#xD;
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_2FLAURSVEeGGzu7fmW9pXw" value="EVN"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2FLAUxSVEeGGzu7fmW9pXw" name="code" visibility="private">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2FGu5xSVEeGGzu7fmW9pXw" name="text" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
@@ -604,8 +628,16 @@ historical purposes.&#xD;
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_sG9OgCKdEeG9m6LRl9ardQ">
         <language>Analysis</language>
         <language>OCL</language>
-        <body>text, if present, SHOULD contain zero or one [0..1] reference/@value</body>
-        <body>not self.text.oclIsUndefined() implies not self.text.reference.value.oclIsUndefined()</body>
+        <body>text, if present, SHOULD contain zero or one [0..1] reference</body>
+        <body>not self.text.oclIsUndefined() implies self.text->forAll(reference->size() = 1)</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_l-kdAOJVEeG3cO7ebC3QuA" name="textReferenceValue" constrainedElement="_gBlYICKdEeG9m6LRl9ardQ">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_qB5IgOJVEeG3cO7ebC3QuA">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>reference, if present, SHOULD contain zero or one [0..1] @value</body>
+        <body>self.text->forAll(reference->size() = 1) implies self.text->forAll(reference->one(value->size() = 1))</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_0eDcUCKdEeG9m6LRl9ardQ" name="referenceValue" constrainedElement="_2E_aIRSVEeGGzu7fmW9pXw">
@@ -726,7 +758,7 @@ historical purposes.&#xD;
     <ruleId>CONF:7329</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_2FB2YBSVEeGGzu7fmW9pXw" base_Property="_2FBPVRSVEeGGzu7fmW9pXw">
-    <ruleId>CONF:7327</ruleId>
+    <ruleId>CONF:16851</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_2FDrkBSVEeGGzu7fmW9pXw" severity="WARNING" base_Property="_2FDEgBSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7330</ruleId>
@@ -744,11 +776,11 @@ historical purposes.&#xD;
   <CDA:EntryRelationship xmi:id="_bF9LEBrbEeGo461UQq-B1g" severity="WARNING" base_Association="_2FRG8RSVEeGGzu7fmW9pXw" typeCode="SUBJ">
     <ruleId>CONF:7580</ruleId>
     <ruleId>CONF:7581</ruleId>
-    <ruleId>CONF:7582</ruleId>
+    <ruleId>CONF:15922</ruleId>
   </CDA:EntryRelationship>
   <CDA:CodeSystemConstraint xmi:id="_KuCXYBwNEeGlALrr33gUJg" code="48765-2" displayName="Allergies, adverse reactions, alerts" base_Property="_bGzYihVdEeGQCvUGzi1kDQ">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:7801</ruleId>
+    <ruleId>CONF:15346</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:TextValue xmi:id="_skqTkBwNEeGlALrr33gUJg" base_Property="_bGzYixVdEeGQCvUGzi1kDQ">
     <ruleId>CONF:7802</ruleId>
@@ -844,15 +876,15 @@ historical purposes.&#xD;
     <ruleId>CONF:7422</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_mSUG8CFLEeG9m6LRl9ardQ" severity="WARNING" base_Constraint="_cf38gCFLEeG9m6LRl9ardQ">
-    <ruleId>CONF:7400</ruleId>
+    <ruleId>CONF:15949</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_xUgzoCFMEeG9m6LRl9ardQ" base_Constraint="_nV_8ECFMEeG9m6LRl9ardQ">
-    <ruleId>CONF:7401</ruleId>
+    <ruleId>CONF:15951</ruleId>
   </CDA:ConstraintValidation>
   <CDA:EntryRelationship xmi:id="_gj6AYCFQEeG9m6LRl9ardQ" severity="INFO" base_Association="_-xkhwhUvEeGbmN_W114JUw" typeCode="SUBJ">
     <ruleId>CONF:7440</ruleId>
     <ruleId>CONF:7906</ruleId>
-    <ruleId>CONF:7441</ruleId>
+    <ruleId>CONF:15954</ruleId>
   </CDA:EntryRelationship>
   <CDA:ActRelationship xmi:id="_5HFbQCFQEeG9m6LRl9ardQ" base_Association="_-xkhwhUvEeGbmN_W114JUw"/>
   <CDA:ConstraintValidation xmi:id="_UHQ8sCFUEeG9m6LRl9ardQ" base_Constraint="_8gb1UCFTEeG9m6LRl9ardQ">
@@ -863,13 +895,13 @@ historical purposes.&#xD;
   </CDA:ConstraintValidation>
   <CDA:ActRelationship xmi:id="_J-iHQCFWEeG9m6LRl9ardQ" base_Association="_2EkjYBSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_vIFIgCIhEeG9m6LRl9ardQ" base_Constraint="_UJVqICIhEeG9m6LRl9ardQ">
-    <ruleId>CONF:9107</ruleId>
+    <ruleId>CONF:16852</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_kAPmECKdEeG9m6LRl9ardQ" severity="WARNING" base_Constraint="_gBlYICKdEeG9m6LRl9ardQ">
-    <ruleId>CONF:7331</ruleId>
+    <ruleId>CONF:15917</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_5EW5ECKdEeG9m6LRl9ardQ" base_Constraint="_0eDcUCKdEeG9m6LRl9ardQ">
-    <ruleId>CONF:7377</ruleId>
+    <ruleId>CONF:15919</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_DpWFUCKfEeG9m6LRl9ardQ" severity="WARNING" base_Constraint="_3qPPACKeEeG9m6LRl9ardQ">
     <ruleId>CONF:7334</ruleId>
@@ -882,10 +914,10 @@ historical purposes.&#xD;
     <ruleId>CONF:9118</ruleId>
   </CDA:PropertyValidation>
   <CDA:ConstraintValidation xmi:id="_xKFLUCK3EeG9m6LRl9ardQ" severity="WARNING" base_Constraint="_sBN0ECK3EeG9m6LRl9ardQ">
-    <ruleId>CONF:7351</ruleId>
+    <ruleId>CONF:15928</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_3ucQMCK3EeG9m6LRl9ardQ" base_Constraint="_0IXhYCK3EeG9m6LRl9ardQ">
-    <ruleId>CONF:7378</ruleId>
+    <ruleId>CONF:15930</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_gBGW4CWFEeGWfpmyutaqOA" base_Constraint="_L5MNcCWFEeGWfpmyutaqOA">
     <ruleId>CONF:7504</ruleId>
@@ -941,7 +973,7 @@ historical purposes.&#xD;
   <CDA:ValueSetConstraint xmi:id="_AIIMsCnDEeGHDN_aHIiN8Q" base_Property="_6lCXkCnCEeGHDN_aHIiN8Q" severity="WARNING">
     <reference href="../consol-vocab.uml#_xQv28CXLEeGnSfJ2zNllag"/>
     <ruleId>CONF:9117</ruleId>
-    <ruleId>CONF:9118</ruleId>
+    <ruleId>CONF:16038</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ActRelationship xmi:id="_whZe4Cx0EeG6iqE9PBsDjg" base_Association="_2FRG8RSVEeGGzu7fmW9pXw"/>
   <CDA:ValueSetConstraint xmi:id="_j6I_oCzFEeG6iqE9PBsDjg" base_Property="_2FFgwRSVEeGGzu7fmW9pXw">
@@ -969,7 +1001,7 @@ historical purposes.&#xD;
     <ruleId>CONF:7431</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_pb9mADJCEeG6R8Pb5FT2Ow" base_Constraint="_c0knsDJCEeG6R8Pb5FT2Ow">
-    <ruleId>CONF:7426</ruleId>
+    <ruleId>CONF:15953</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_uwgBwDJCEeG6R8Pb5FT2Ow" severity="WARNING" base_Constraint="_aK9hIDJCEeG6R8Pb5FT2Ow">
     <ruleId>CONF:7425</ruleId>
@@ -992,4 +1024,23 @@ historical purposes.&#xD;
   <uml:Association xmi:id="_FQD_EjJDEeG6R8Pb5FT2Ow" memberEnd="_FQD_EDJDEeG6R8Pb5FT2Ow _FQD_EzJDEeG6R8Pb5FT2Ow">
     <ownedEnd xmi:id="_FQD_EzJDEeG6R8Pb5FT2Ow" type="_2EaLUBSVEeGGzu7fmW9pXw" association="_FQD_EjJDEeG6R8Pb5FT2Ow"/>
   </uml:Association>
+  <CDA:PropertyValidation xmi:id="_lqjE4OJBEeG3cO7ebC3QuA" base_Property="_bGzYihVdEeGQCvUGzi1kDQ">
+    <ruleId>CONF:15345</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_cdsB0OJDEeG3cO7ebC3QuA" base_Property="_2LN98BSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:15349</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_Gt6FMOJPEeG3cO7ebC3QuA" base_Property="_2EaLdBSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:15947</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ConstraintValidation xmi:id="_fXgRIOJPEeG3cO7ebC3QuA" severity="WARNING" base_Constraint="_bTC9MOJPEeG3cO7ebC3QuA">
+    <ruleId>CONF:15950</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_kop6UOJSEeG3cO7ebC3QuA" severity="WARNING" base_Constraint="_WQI8oOJSEeG3cO7ebC3QuA"/>
+  <CDA:ConstraintValidation xmi:id="_q_Ja8OJVEeG3cO7ebC3QuA" severity="WARNING" base_Constraint="_l-kdAOJVEeG3cO7ebC3QuA">
+    <ruleId>CONF:15918</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_0mkLsOJWEeG3cO7ebC3QuA" severity="WARNING" base_Constraint="_wNrf4OJWEeG3cO7ebC3QuA">
+    <ruleId>CONF:15929</ruleId>
+  </CDA:ConstraintValidation>
 </xmi:XMI>

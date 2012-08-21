@@ -24,11 +24,12 @@ The Assessment and Plan section represents both the clinician's conclusions and 
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_r3b7QBkaEeGs5a462vYX5Q" base_Class="_2Rwq0BSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.2.9" assigningAuthorityName="HL7">
+    <ruleId>CONF:7705</ruleId>
     <ruleId>CONF:10381</ruleId>
   </CDA:CDATemplate>
   <CDA:CodeSystemConstraint xmi:id="_2Rwq7xSVEeGGzu7fmW9pXw" code="51847-2" displayName="ASSESSMENT AND PLAN" base_Property="_2Rwq7hSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:7706</ruleId>
+    <ruleId>CONF:15354</ruleId>
   </CDA:CodeSystemConstraint>
   <uml:Class xmi:id="_2PWQCBSVEeGGzu7fmW9pXw" name="ChiefComplaintSection">
     <ownedComment xmi:id="_2PWQFRSVEeGGzu7fmW9pXw" annotatedElement="_2PWQCBSVEeGGzu7fmW9pXw">
@@ -59,12 +60,36 @@ The Assessment and Plan section represents both the clinician's conclusions and 
   </CDA:CDATemplate>
   <CDA:CodeSystemConstraint xmi:id="_2PWQFBSVEeGGzu7fmW9pXw" code="10154-3" displayName="CHIEF COMPLAINT" base_Property="_2PWQExSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:7833</ruleId>
+    <ruleId>CONF:15452</ruleId>
   </CDA:CodeSystemConstraint>
   <uml:Class xmi:id="_2FhloBSVEeGGzu7fmW9pXw" name="CommentActivity">
     <ownedComment xmi:id="_70j2oHeeEeGLwesdFe7o6w">
       <body>Comments are free text data that cannot otherwise be recorded using data elements already defined by this specification. They are not to be used to record information that can be recorded elsewhere. For example, a free text description of the severity of an allergic reaction would not be recorded in a comment.</body>
     </ownedComment>
+    <ownedRule xmi:id="_kCuRsOZCEeGINOJ_SD9_dA" name="textReference" constrainedElement="_2FhloBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_pkWuQOZCEeGINOJ_SD9_dA">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>text SHALL contain exactly one [1..1] reference</body>
+        <body>not self.text.oclIsUndefined() implies self.text->forAll(reference->size() = 1)</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_mmOwQOZCEeGINOJ_SD9_dA" name="textReferenceValue" constrainedElement="_kCuRsOZCEeGINOJ_SD9_dA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_rrcWkOZCEeGINOJ_SD9_dA">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>reference SHALL contain exactly one [1..1] @value</body>
+        <body>self.text->forAll(reference->size() = 1) implies self.text->forAll(reference->one(value->size() = 1))</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_npxQ4OZCEeGINOJ_SD9_dA" name="referenceValue" constrainedElement="_mmOwQOZCEeGINOJ_SD9_dA">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_wZmu0OZCEeGINOJ_SD9_dA">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>reference/@value SHALL begin with a '#' and SHALL point to its corresponding narrative (using the approach defined in CDA Release 2, section 4.3.5.1)</body>
+        <body>not self.text.reference.value.oclIsUndefined() implies not self.getSection().text.getText(self.text.reference.value.substring(2, self.text.reference.value.size())).oclIsUndefined()</body>
+      </specification>
+    </ownedRule>
     <generalization xmi:id="_2FrWohSVEeGGzu7fmW9pXw">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_YiANsDxYEd6JwqSGecoePg"/>
     </generalization>
@@ -111,7 +136,7 @@ The Assessment and Plan section represents both the clinician's conclusions and 
             <language>Analysis</language>
             <language>OCL</language>
             <body>include assignedPerson/name or representedOrganization/name</body>
-            <body>self.assignedPerson.name->size() = 1 xor self.representedOrganization.name->size() = 1</body>
+            <body>self.assignedPerson->one(element | not element.oclIsUndefined() and element.name->size() = 1) xor self.representedOrganization->one(element | not element.oclIsUndefined() and element.name->size() = 1)</body>
           </specification>
         </ownedRule>
         <ownedRule xmi:id="_QL-JwHehEeGLwesdFe7o6w" name="assignPersonName" constrainedElement="_PfJ8gHegEeGLwesdFe7o6w">
@@ -141,7 +166,10 @@ The Assessment and Plan section represents both the clinician's conclusions and 
   <uml:Association xmi:id="_2FizwRSVEeGGzu7fmW9pXw" memberEnd="_2FhlpxSVEeGGzu7fmW9pXw _2FizwhSVEeGGzu7fmW9pXw">
     <ownedEnd xmi:id="_2FizwhSVEeGGzu7fmW9pXw" type="_2FhloBSVEeGGzu7fmW9pXw" association="_2FizwRSVEeGGzu7fmW9pXw"/>
   </uml:Association>
-  <CDA:CDATemplate xmi:id="_JkL0wBnbEeGs5a462vYX5Q" base_Class="_2FhloBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.64"/>
+  <CDA:CDATemplate xmi:id="_JkL0wBnbEeGs5a462vYX5Q" base_Class="_2FhloBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.64">
+    <ruleId>CONF:9427</ruleId>
+    <ruleId>CONF:10491</ruleId>
+  </CDA:CDATemplate>
   <CDA:PropertyValidation xmi:id="_2Fja0hSVEeGGzu7fmW9pXw" base_Property="_2Fja0BSVEeGGzu7fmW9pXw">
     <ruleId>CONF:9425</ruleId>
   </CDA:PropertyValidation>
@@ -161,33 +189,29 @@ The Assessment and Plan section represents both the clinician's conclusions and 
   </CDA:AssociationValidation>
   <uml:Class xmi:id="_2KKOBhSVEeGGzu7fmW9pXw" name="FunctionalStatusSection">
     <ownedComment xmi:id="_2KTX8xSVEeGGzu7fmW9pXw" annotatedElement="_2KKOBhSVEeGGzu7fmW9pXw">
-      <body>&lt;p>&#xD;
-    &lt;i>Functional Status&lt;/i> describes the patient's status of normal functioning at the time the Care Record&#xD;
-    was created. Functional statuses include information regarding the patient relative to:&#xD;
-&lt;/p>&#xD;
-&#xD;
-    &lt;ul>&lt;li>Ambulatory ability&lt;/li>&#xD;
-       &lt;li>Mental status or competency&lt;/li>&#xD;
-        &lt;li>Activities of Daily Living (ADLs), including bathing, dressing, feeding, grooming&lt;/li>&#xD;
-        &lt;li>Home / living situation having an effect on the health status of the patient&lt;/li>&#xD;
-        &lt;li>Ability to care for self&lt;/li>&#xD;
-        &lt;li>Social activity, including issues with social cognition, participation with&#xD;
-        friends and acquaintances other than family members&lt;/li>&#xD;
-       &lt;li>Occupation activity, including activities partly or directly related to working, housework or volunteering, family&#xD;
-        and home responsibilities or activities related to home and family&lt;/li>&#xD;
-      &lt;li>Communication ability, including issues with speech, writing or cognition required for communication&lt;/li>&#xD;
-       &lt;li> Perception, including sight, hearing, taste, skin sensation, kinesthetic sense, proprioception, or&#xD;
-        balance&lt;/li>&#xD;
-&lt;/ul>&#xD;
-&lt;p>&#xD;
-    Any&#xD;
-    deviation from normal function that the patient displays and is recorded in the record should be included. Of&#xD;
-    particular interest are those limitations that would in any way interfere with self care or the medical therapeutic&#xD;
-    process. In addition, an improvement, any change in or noting that the patient has normal functioning status is also&#xD;
-    valid for inclusion.&#xD;
-&lt;/p>&#xD;
-&lt;p>Functional Statuses can be expressed in 3 different forms. They can occur as a Problem, a Result or as text. Text can be employed if and only if the Functional Status is neither a Problem nor a Result. Functional Statuses expressed as Problems include relevant clinical conditions, diagnoses, symptoms and findings. Results are the interpretation or conclusion derived from a clinical assessment or test battery, such as the Instrumental Activities of Daily Living (IADL) scale or the Functional Status Index (FSI).&#xD;
-&lt;/p></body>
+      <body>The Functional Status section describes the patient's physical state, status of functioning, and environmental status at the time the document was created. &#xD;
+A patient's physical state may include information regarding the patient's physical findings as they relate to problems, including but not limited to:&#xD;
+Pressure Ulcers&#xD;
+Amputations&#xD;
+Heart murmur&#xD;
+Ostomies&#xD;
+A patient's functional status may include information regarding the patient relative to their general functional and cognitive ability, including:&#xD;
+Ambulatory ability&#xD;
+Mental status or competency&#xD;
+Activities of Daily Living (ADLs), including bathing, dressing, feeding, grooming&#xD;
+Home or living situation having an effect on the health status of the patient&#xD;
+Ability to care for self&#xD;
+Social activity, including issues with social cognition, participation with friends and acquaintances other than family members&#xD;
+Occupation activity, including activities partly or directly related to working, housework or volunteering, family and home responsibilities or activities related to home and family&#xD;
+Communication ability, including issues with speech, writing or cognition required for communication&#xD;
+Perception, including sight, hearing, taste, skin sensation, kinesthetic sense, proprioception, or balance&#xD;
+A patient's environmental status may include information regarding the patient's current exposures from their daily environment, including but not limited to:&#xD;
+Airborne hazards such as second-hand smoke, volatile organic compounds, dust, or other allergens&#xD;
+Radiation&#xD;
+Safety hazards in home, such as throw rugs, poor lighting, lack of railings/grab bars, etc.&#xD;
+Safety hazards at work, such as communicable diseases, excessive heat, excessive noise, etc.&#xD;
+The patient's functional status may be expressed as a problem or as a result observation. A functional or cognitive status problem observation describes a patient's problem, symptoms or condition. A functional or cognitive status result observation may include observations resulting from an assessment scale, evaluation or question and answer assessment.&#xD;
+Any deviation from normal function displayed by the patient and recorded in the record should be included. Of particular interest are those limitations that would interfere with self-care or the medical therapeutic process in any way. In addition, a note of normal function, an improvement, or a change in functioning status may be included.</body>
     </ownedComment>
     <generalization xmi:id="_2KT_ABSVEeGGzu7fmW9pXw">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
@@ -203,23 +227,67 @@ The Assessment and Plan section represents both the clinician's conclusions and 
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2KNRURSVEeGGzu7fmW9pXw" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2KNRUhSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_jCDa0BU8EeGbmN_W114JUw" name="problemObservation" association="_jCNL0BU8EeGbmN_W114JUw">
-      <type xmi:type="uml:Class" href="consol-problems.uml#_5Ha7ABUyEeGbmN_W114JUw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4UEk4EbqEeGjG5GFhhP4eQ" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4UEk4UbqEeGjG5GFhhP4eQ"/>
+    <ownedAttribute xmi:id="_gmf20OcQEeGINOJ_SD9_dA" name="functionalStatusResultOrganizer" association="_gmf20ucQEeGINOJ_SD9_dA">
+      <type xmi:type="uml:Class" href="../consol.uml#_zBlUUOZbEeGINOJ_SD9_dA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7oSpMOcQEeGINOJ_SD9_dA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7obzIOcQEeGINOJ_SD9_dA"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_lr7nIBU8EeGbmN_W114JUw" name="resultObservation" association="_lr7nIhU8EeGbmN_W114JUw">
-      <type xmi:type="uml:Class" href="consol-results.uml#_2J1d4BSVEeGGzu7fmW9pXw"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6DCBEEbqEeGjG5GFhhP4eQ" value="*"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6DCBEUbqEeGjG5GFhhP4eQ"/>
+    <ownedAttribute xmi:id="_iy8gQOcQEeGINOJ_SD9_dA" name="cognitiveStatusResultOrganizer" association="_iy8gQucQEeGINOJ_SD9_dA">
+      <type xmi:type="uml:Class" href="../consol.uml#_jfoCUOZbEeGINOJ_SD9_dA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_77VhAOcQEeGINOJ_SD9_dA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_77eq8OcQEeGINOJ_SD9_dA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_lOjnEOcQEeGINOJ_SD9_dA" name="functionalStatusResultObservation" association="_lOjnEucQEeGINOJ_SD9_dA">
+      <type xmi:type="uml:Class" href="../consol.uml#_viRU0OZbEeGINOJ_SD9_dA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8O-OsOcQEeGINOJ_SD9_dA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8O-OsecQEeGINOJ_SD9_dA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_oUSB4OcQEeGINOJ_SD9_dA" name="cognitiveStatusResultObservation" association="_oUbL0ecQEeGINOJ_SD9_dA">
+      <type xmi:type="uml:Class" href="../consol.uml#_gkBM0OZbEeGINOJ_SD9_dA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8iBGgOcQEeGINOJ_SD9_dA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8iKQcOcQEeGINOJ_SD9_dA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_rciMQOcQEeGINOJ_SD9_dA" name="functionalStatusProblemObservation" association="_rcrWMecQEeGINOJ_SD9_dA">
+      <type xmi:type="uml:Class" href="../consol.uml#_rVl5AOZbEeGINOJ_SD9_dA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_818vIOcQEeGINOJ_SD9_dA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_818vIecQEeGINOJ_SD9_dA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_tJI4AOcQEeGINOJ_SD9_dA" name="cognitiveStatusProblemObservation" association="_tJSB8ecQEeGINOJ_SD9_dA">
+      <type xmi:type="uml:Class" href="../consol.uml#_dXKPQOZbEeGINOJ_SD9_dA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9IZxEOcQEeGINOJ_SD9_dA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9Ii7AOcQEeGINOJ_SD9_dA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_uw-YgOcQEeGINOJ_SD9_dA" name="caregiverCharacteristics" association="_uxIJgecQEeGINOJ_SD9_dA">
+      <type xmi:type="uml:Class" href="../consol.uml#__pNCUOY-EeGINOJ_SD9_dA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9bS34OcQEeGINOJ_SD9_dA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9bS34ecQEeGINOJ_SD9_dA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_wDizoOcQEeGINOJ_SD9_dA" name="assessmentScaleObservation" association="_wDizoucQEeGINOJ_SD9_dA">
+      <type xmi:type="uml:Class" href="../consol.uml#_Zi33YOYxEeGINOJ_SD9_dA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_96rikOcQEeGINOJ_SD9_dA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_961TkOcQEeGINOJ_SD9_dA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_x0LDwOcQEeGINOJ_SD9_dA" name="nonMedicinalSupplyActivity" association="_x0LDwucQEeGINOJ_SD9_dA">
+      <type xmi:type="uml:Class" href="consol-medications.uml#_2HIvMBSVEeGGzu7fmW9pXw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-M1pkOcQEeGINOJ_SD9_dA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-M-zgOcQEeGINOJ_SD9_dA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_zgVDkOcQEeGINOJ_SD9_dA" name="pressureUlcerObservation" association="_zgeNgOcQEeGINOJ_SD9_dA">
+      <type xmi:type="uml:Class" href="../consol.uml#_9rQowOZbEeGINOJ_SD9_dA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-fSEcOcQEeGINOJ_SD9_dA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-fb1cOcQEeGINOJ_SD9_dA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_0hfloOcQEeGINOJ_SD9_dA" name="numberOfPressureUlcersObservation" association="_0hfloucQEeGINOJ_SD9_dA">
+      <type xmi:type="uml:Class" href="../consol.uml#_7c4ssOZbEeGINOJ_SD9_dA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-v8WoOcQEeGINOJ_SD9_dA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-wGHoOcQEeGINOJ_SD9_dA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_18F7YOcQEeGINOJ_SD9_dA" name="highestPressureUlcerStage" association="_18F7YucQEeGINOJ_SD9_dA">
+      <type xmi:type="uml:Class" href="../consol.uml#_4YgVsOZbEeGINOJ_SD9_dA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__ELhQOcQEeGINOJ_SD9_dA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__ELhQecQEeGINOJ_SD9_dA"/>
     </ownedAttribute>
   </uml:Class>
-  <uml:Association xmi:id="_jCNL0BU8EeGbmN_W114JUw" memberEnd="_jCDa0BU8EeGbmN_W114JUw _jCNL0RU8EeGbmN_W114JUw">
-    <ownedEnd xmi:id="_jCNL0RU8EeGbmN_W114JUw" type="_2KKOBhSVEeGGzu7fmW9pXw" association="_jCNL0BU8EeGbmN_W114JUw"/>
-  </uml:Association>
-  <uml:Association xmi:id="_lr7nIhU8EeGbmN_W114JUw" memberEnd="_lr7nIBU8EeGbmN_W114JUw _lr7nIxU8EeGbmN_W114JUw">
-    <ownedEnd xmi:id="_lr7nIxU8EeGbmN_W114JUw" type="_2KKOBhSVEeGGzu7fmW9pXw" association="_lr7nIhU8EeGbmN_W114JUw"/>
-  </uml:Association>
   <CDA:CDATemplate xmi:id="_2KK1EBSVEeGGzu7fmW9pXw" base_Class="_2KKOBhSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.2.14" assigningAuthorityName="HL7">
     <ruleId>CONF:10389</ruleId>
   </CDA:CDATemplate>
@@ -271,7 +339,7 @@ The Assessment and Plan section represents both the clinician's conclusions and 
   </CDA:PropertyValidation>
   <uml:Class xmi:id="_2PQJcxSVEeGGzu7fmW9pXw" name="HistoryOfPastIllnessSection">
     <ownedComment xmi:id="_2PWQBRSVEeGGzu7fmW9pXw" annotatedElement="_2PQJcxSVEeGGzu7fmW9pXw">
-      <body>This section describes the history related to the patient's current complaints, problems, or diagnoses. It records the historical details leading up to and pertaining to the patient's current complaint or reason for seeking medical care.</body>
+      <body>This section describes the history related to the patient's past complaints, problems, or diagnoses. It records these details up until and possibly pertinent to the patient's current complaint or reason for seeking medical care.</body>
     </ownedComment>
     <generalization xmi:id="_2PWQBxSVEeGGzu7fmW9pXw">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
@@ -303,6 +371,7 @@ The Assessment and Plan section represents both the clinician's conclusions and 
   <CDA:ConstraintValidation xmi:id="_2PWQBBSVEeGGzu7fmW9pXw" severity="WARNING"/>
   <CDA:CodeSystemConstraint xmi:id="_2PWQARSVEeGGzu7fmW9pXw" code="11348-0" displayName="HISTORY OF PAST ILLNESS" base_Property="_2PWQABSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:15475</ruleId>
   </CDA:CodeSystemConstraint>
   <uml:Class xmi:id="_2PcWsRSVEeGGzu7fmW9pXw" name="HistoryOfPresentIllnessSection">
     <ownedComment xmi:id="_2PidQBSVEeGGzu7fmW9pXw" annotatedElement="_2PcWsRSVEeGGzu7fmW9pXw">
@@ -332,7 +401,7 @@ The Assessment and Plan section represents both the clinician's conclusions and 
   </CDA:CDATemplate>
   <CDA:CodeSystemConstraint xmi:id="_2PcWtxSVEeGGzu7fmW9pXw" code="10164-2" displayName="HISTORY OF PRESENT ILLNESS" base_Property="_2PcWthSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:7849</ruleId>
+    <ruleId>CONF:15478</ruleId>
   </CDA:CodeSystemConstraint>
   <uml:Class xmi:id="_2PidQhSVEeGGzu7fmW9pXw" name="HospitalAdmissionDiagnosisSection">
     <ownedComment xmi:id="_2PidTxSVEeGGzu7fmW9pXw" annotatedElement="_2PidQhSVEeGGzu7fmW9pXw">
@@ -366,6 +435,7 @@ The Assessment and Plan section represents both the clinician's conclusions and 
   </CDA:CDATemplate>
   <CDA:CodeSystemConstraint xmi:id="_2PidThSVEeGGzu7fmW9pXw" code="46241-6" displayName="HOSPITAL ADMISSION DX" base_Property="_2PidTRSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
+    <ruleId>CONF:15480</ruleId>
   </CDA:CodeSystemConstraint>
   <uml:Class xmi:id="_sHrUoBUSEeG6PvUxSTZnaw" name="Indication">
     <ownedComment xmi:id="_CjRfQB-YEeGtfPlBCjHWkw">
@@ -385,7 +455,7 @@ The Assessment and Plan section represents both the clinician's conclusions and 
         <language>Analysis</language>
         <language>OCL</language>
         <body>The value element MAY contain @nullFlavor</body>
-        <body>self.value.nullFlavor->size() > 0</body>
+        <body>self.value.nullFlavor->size() = 1</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_vEvqAB-XEeGtfPlBCjHWkw" name="codeNullFlavorValue" constrainedElement="_MtdoIB7kEeGEaLkc3UAsAg">
@@ -394,7 +464,7 @@ The Assessment and Plan section represents both the clinician's conclusions and 
       </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_xNAXAB-XEeGtfPlBCjHWkw">
         <language>Analysis</language>
-        <body>If the diagnosis is unkown or the SNOMED code is unknown, @nullFlavor SHOULD be �UNK�.  If the code is something other than SNOMED, @nullFlavor SHOULD be �OTH� and the other code SHOULD be placed in the translation element.</body>
+        <body>If the diagnosis is unkown or the SNOMED code is unknown, @nullFlavor SHOULD be &quot;UNK&quot;.  If the code is something other than SNOMED, @nullFlavor SHOULD be &quot;OTH&quot; and the other code SHOULD be placed in the translation element.</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_sHrUoRUSEeG6PvUxSTZnaw">
@@ -418,8 +488,8 @@ The Assessment and Plan section represents both the clinician's conclusions and 
     </ownedAttribute>
     <ownedAttribute xmi:id="_2MdMQhUSEeG6PvUxSTZnaw" name="code" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RBJTgB-XEeGtfPlBCjHWkw" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RBJ6kB-XEeGtfPlBCjHWkw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__xHe4OMiEeGfv4R-kzpM0g" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__xHe4eMiEeGfv4R-kzpM0g" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_WEYp4Eo8Ed6c3qsAxlFHaQ"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2MmWMRUSEeG6PvUxSTZnaw" name="statusCode" visibility="private" aggregation="composite">
@@ -443,6 +513,7 @@ The Assessment and Plan section represents both the clinician's conclusions and 
   </uml:Class>
   <CDA:CDATemplate xmi:id="_4MwQEBUSEeG6PvUxSTZnaw" base_Class="_sHrUoBUSEeG6PvUxSTZnaw" templateId="2.16.840.1.113883.10.20.22.4.19">
     <ruleId>CONF:7482</ruleId>
+    <ruleId>CONF:10502</ruleId>
   </CDA:CDATemplate>
   <uml:Class xmi:id="_2G8h9RSVEeGGzu7fmW9pXw" name="Instructions">
     <ownedComment xmi:id="_-HE7oB7lEeGEaLkc3UAsAg">
@@ -452,8 +523,16 @@ The Assessment and Plan section represents both the clinician's conclusions and 
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_Y-ZeEBueEeGnMahsPjlwOw">
         <language>Analysis</language>
         <language>OCL</language>
-        <body>This text, if present, SHOULD contain zero or one [0..1] reference/@value (CONF:7397)</body>
-        <body>not self.text.oclIsUndefined() implies not self.text.reference.value.oclIsUndefined()</body>
+        <body>This text, if present, SHOULD contain zero or one [0..1] reference</body>
+        <body>not self.text.oclIsUndefined() implies self.text->forAll(reference->size() = 1)</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_1sHS4OMkEeGfv4R-kzpM0g" name="referenceValue" constrainedElement="_VsoLUBueEeGnMahsPjlwOw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_5-UH4OMkEeGfv4R-kzpM0g">
+        <language>OCL</language>
+        <language>Analysis</language>
+        <body>self.text->forAll(reference->size() = 1) implies self.text->forAll(reference->one(value->size() = 1))</body>
+        <body>reference SHOULD contain exactly one [1..1] @value</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_8FmGoB-WEeGtfPlBCjHWkw" name="textReferenceValue" constrainedElement="_VsoLUBueEeGnMahsPjlwOw">
@@ -480,7 +559,7 @@ The Assessment and Plan section represents both the clinician's conclusions and 
       </defaultValue>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2G8h-hSVEeGGzu7fmW9pXw" name="code" visibility="private" aggregation="composite">
-      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_VKl7EDxaEd6JwqSGecoePg"/>
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2G8iABSVEeGGzu7fmW9pXw" name="text" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_CowXkDxaEd6JwqSGecoePg"/>
@@ -495,6 +574,7 @@ The Assessment and Plan section represents both the clinician's conclusions and 
   </uml:Class>
   <CDA:CDATemplate xmi:id="_3iHhABnbEeGs5a462vYX5Q" base_Class="_2G8h9RSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.20">
     <ruleId>CONF:7393</ruleId>
+    <ruleId>CONF:10503</ruleId>
   </CDA:CDATemplate>
   <CDA:PropertyValidation xmi:id="_2G9JABSVEeGGzu7fmW9pXw" base_Property="_2G8h-BSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7391</ruleId>
@@ -533,7 +613,7 @@ The Assessment and Plan section represents both the clinician's conclusions and 
   </CDA:CDATemplate>
   <CDA:CodeSystemConstraint xmi:id="_2PcWqBSVEeGGzu7fmW9pXw" code="42349-1" displayName="REASON FOR REFERRAL" base_Property="_2PcWpxSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:7845</ruleId>
+    <ruleId>CONF:15428</ruleId>
   </CDA:CodeSystemConstraint>
   <uml:Class xmi:id="_2LiHABSVEeGGzu7fmW9pXw" name="ServiceDeliveryLocation">
     <ownedRule xmi:id="_U1PlUB-ZEeGtfPlBCjHWkw" name="hasPlayingEntity" constrainedElement="_2LiHABSVEeGGzu7fmW9pXw">
@@ -541,7 +621,7 @@ The Assessment and Plan section represents both the clinician's conclusions and 
         <language>Analysis</language>
         <language>OCL</language>
         <body>MAY contain zero or one [0..1] playingEntity</body>
-        <body>self.playingEntity->size() > 0</body>
+        <body>self.playingEntity->size() = 1</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_W3fw8B-ZEeGtfPlBCjHWkw" name="hasPlayingEntityClassCode" constrainedElement="_U1PlUB-ZEeGtfPlBCjHWkw">
@@ -552,13 +632,12 @@ The Assessment and Plan section represents both the clinician's conclusions and 
         <body>self.playingEntity->size()>0 implies self.playingEntity.classCode=vocab::EntityClassRoot::PLC</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_X2UwsB-ZEeGtfPlBCjHWkw" name="hasPlayingEntityClassCodeName" constrainedElement="_W3fw8B-ZEeGtfPlBCjHWkw">
-      <ownedComment xmi:id="__RR5wMeuEeGbEIO0uZ0_SA">
-        <body>UNIMPLEMENTABLE</body>
-      </ownedComment>
+    <ownedRule xmi:id="_X2UwsB-ZEeGtfPlBCjHWkw" name="hasPlayingEntityName" constrainedElement="_W3fw8B-ZEeGtfPlBCjHWkw">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_gzccsB-ZEeGtfPlBCjHWkw">
         <language>Analysis</language>
-        <body>@classCode MAY contain zero or one [0..1] name</body>
+        <language>OCL</language>
+        <body>playingEntity, if present, MAY contain zero or one [0..1] name</body>
+        <body>self.playingEntity->size()>0 implies self.playingEntity.name->size() = 1</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_c7QfoB-YEeGtfPlBCjHWkw">
@@ -592,6 +671,7 @@ The Assessment and Plan section represents both the clinician's conclusions and 
   </uml:Class>
   <CDA:CDATemplate xmi:id="_2LiuEBSVEeGGzu7fmW9pXw" base_Class="_2LiHABSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.32" assigningAuthorityName="HL7">
     <ruleId>CONF:7635</ruleId>
+    <ruleId>CONF:10524</ruleId>
   </CDA:CDATemplate>
   <CDA:ConstraintValidation xmi:id="_2LjVIRSVEeGGzu7fmW9pXw">
     <ruleId>CONF-474</ruleId>
@@ -622,7 +702,7 @@ The Assessment and Plan section represents both the clinician's conclusions and 
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_Bo-kwBq3EeGo461UQq-B1g" base_Property="_2MdMQhUSEeG6PvUxSTZnaw" severity="WARNING">
     <reference href="../consol-vocab.uml#_2Fw2OBSVEeGGzu7fmW9pXw"/>
-    <ruleId>CONF:7484</ruleId>
+    <ruleId>CONF:16886</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:CodeSystemConstraint xmi:id="_Gb3E8Bq3EeGo461UQq-B1g" code="completed" base_Property="_2MmWMRUSEeG6PvUxSTZnaw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
@@ -636,7 +716,7 @@ The Assessment and Plan section represents both the clinician's conclusions and 
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_U4xacBq3EeGo461UQq-B1g" base_Property="_2MmWNRUSEeG6PvUxSTZnaw" severity="WARNING">
     <reference href="../consol-vocab.uml#_2SVSkRSVEeGGzu7fmW9pXw"/>
-    <ruleId>CONF:7991</ruleId>
+    <ruleId>CONF:CONF:15985</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ValueSetConstraint xmi:id="_hBSO8Bq4EeGo461UQq-B1g" base_Property="_2G8h-hSVEeGGzu7fmW9pXw">
     <reference href="../consol-vocab.uml#_DhjiABueEeGnMahsPjlwOw"/>
@@ -647,22 +727,22 @@ The Assessment and Plan section represents both the clinician's conclusions and 
     <ruleId>CONF:7396</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:ConstraintValidation xmi:id="_XbW-ABueEeGnMahsPjlwOw" severity="WARNING" base_Constraint="_VsoLUBueEeGnMahsPjlwOw">
-    <ruleId>CONF:7397</ruleId>
+    <ruleId>CONF:15577</ruleId>
   </CDA:ConstraintValidation>
   <CDA:PropertyValidation xmi:id="_Wy2XEBufEeGnMahsPjlwOw" base_Property="_2MdMSBUSEeG6PvUxSTZnaw">
     <ruleId>CONF:7483</ruleId>
   </CDA:PropertyValidation>
   <CDA:ConstraintValidation xmi:id="_-oUiEB-WEeGtfPlBCjHWkw" base_Constraint="_8FmGoB-WEeGtfPlBCjHWkw">
-    <ruleId>CONF:7398</ruleId>
+    <ruleId>CONF:15579</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_y16OgB-XEeGtfPlBCjHWkw" severity="INFO" base_Constraint="_MtdoIB7kEeGEaLkc3UAsAg">
-    <ruleId>CONF:10088</ruleId>
+    <ruleId>CONF:15990</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_0n2tQB-XEeGtfPlBCjHWkw" severity="WARNING" base_Constraint="_vEvqAB-XEeGtfPlBCjHWkw">
-    <ruleId>CONF:10089</ruleId>
+    <ruleId>CONF:15991</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_80CEgB-XEeGtfPlBCjHWkw" severity="INFO" base_Constraint="_5t29wB-XEeGtfPlBCjHWkw">
-    <ruleId>CONF:9321</ruleId>
+    <ruleId>CONF:16885</ruleId>
   </CDA:ConstraintValidation>
   <CDA:PropertyValidation xmi:id="_suiLIB-YEeGtfPlBCjHWkw" severity="WARNING" base_Property="_nD7_0B-YEeGtfPlBCjHWkw">
     <ruleId>CONF:7760</ruleId>
@@ -672,7 +752,7 @@ The Assessment and Plan section represents both the clinician's conclusions and 
   </CDA:PropertyValidation>
   <CDA:ValueSetConstraint xmi:id="_B4zJcB-ZEeGtfPlBCjHWkw" base_Property="_nD_qMB-YEeGtfPlBCjHWkw">
     <reference href="../consol-vocab.uml#_IzJFYR-ZEeGtfPlBCjHWkw"/>
-    <ruleId>CONF:7759</ruleId>
+    <ruleId>CONF:16850</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ConstraintValidation xmi:id="_bC3lMB-ZEeGtfPlBCjHWkw" severity="INFO" base_Constraint="_U1PlUB-ZEeGtfPlBCjHWkw">
     <ruleId>CONF:7762</ruleId>
@@ -681,7 +761,7 @@ The Assessment and Plan section represents both the clinician's conclusions and 
     <ruleId>CONF:7763</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_h8UJQB-ZEeGtfPlBCjHWkw" severity="INFO" base_Constraint="_X2UwsB-ZEeGtfPlBCjHWkw">
-    <ruleId>CONF:7764</ruleId>
+    <ruleId>CONF:16037</ruleId>
   </CDA:ConstraintValidation>
   <CDA:PropertyValidation xmi:id="_aUzlACrAEeGHF88-qhhUMA" base_Property="_YgtKICrAEeGHF88-qhhUMA">
     <ruleId>CONF:7835</ruleId>
@@ -721,7 +801,7 @@ The Assessment and Plan section represents both the clinician's conclusions and 
   </CDA:CDATemplate>
   <CDA:CodeSystemConstraint xmi:id="_BJSvcCsbEeGHF88-qhhUMA" code="46239-0" displayName="Chief Complaint and Reason for Visit" base_Property="_wl51oCsaEeGHF88-qhhUMA">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:7841</ruleId>
+    <ruleId>CONF:15450</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_amaqECsbEeGHF88-qhhUMA" base_Property="_wl6csCsaEeGHF88-qhhUMA">
     <ruleId>CONF:7843</ruleId>
@@ -762,7 +842,7 @@ The Assessment and Plan section represents both the clinician's conclusions and 
   <CDA:CDATemplate xmi:id="_Xl_wkCscEeGHF88-qhhUMA" base_Class="_Nm64UCscEeGHF88-qhhUMA" templateId="2.16.840.1.113883.10.20.22.2.12"/>
   <CDA:CodeSystemConstraint xmi:id="_dR48YCscEeGHF88-qhhUMA" identifier="" code="29299-5" displayName="Reason for Visit" base_Property="_Q7bWACscEeGHF88-qhhUMA">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:7837</ruleId>
+    <ruleId>CONF:15430</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_xUrVQCscEeGHF88-qhhUMA" base_Property="_Q7b9ESscEeGHF88-qhhUMA">
     <ruleId>CONF:7839</ruleId>
@@ -770,12 +850,6 @@ The Assessment and Plan section represents both the clinician's conclusions and 
   <CDA:TextValue xmi:id="_tMsMMCscEeGHF88-qhhUMA" base_Property="_Q7ckICscEeGHF88-qhhUMA">
     <ruleId>CONF:7838</ruleId>
   </CDA:TextValue>
-  <CDA:AssociationValidation xmi:id="_Oo9AcCtFEeGlWN0TVxk9LA" severity="INFO" base_Association="_jCNL0BU8EeGbmN_W114JUw">
-    <ruleId>CONF:9080</ruleId>
-  </CDA:AssociationValidation>
-  <CDA:AssociationValidation xmi:id="_PisE0CtFEeGlWN0TVxk9LA" severity="INFO" base_Association="_lr7nIhU8EeGbmN_W114JUw">
-    <ruleId>CONF:9082</ruleId>
-  </CDA:AssociationValidation>
   <CDA:PropertyValidation xmi:id="_MmipgCtVEeGlWN0TVxk9LA" base_Property="_L_zZoCtVEeGlWN0TVxk9LA">
     <ruleId>CONF:7851</ruleId>
   </CDA:PropertyValidation>
@@ -957,7 +1031,7 @@ The Assessment and Plan section represents both the clinician's conclusions and 
   </CDA:CDATemplate>
   <uml:Class xmi:id="_W8pI4DszEeGvzMYhXuqAEA" name="AssessmentSection">
     <ownedComment xmi:id="_SHlZkEE1EeGdmoWy_aLP0Q">
-      <body>The Assessment section (also called impression or diagnoses) represents the clinician's conclusions and working assumptions that will guide treatment of the patient. The assessment formulates a specific plan or set of recommendations. The assessment may be a list of specific disease entities or a narrative block.</body>
+      <body>The Assessment section (also referred to as impression or diagnoses outside of the context of CDA) represents the clinician's conclusions and working assumptions that will guide treatment of the patient. The assessment may be a list of specific disease entities or a narrative block.</body>
     </ownedComment>
     <generalization xmi:id="_W8pI4TszEeGvzMYhXuqAEA">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
@@ -974,6 +1048,12 @@ The Assessment and Plan section represents both the clinician's conclusions and 
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jHr2sXhuEeGJtvg2iiStYg" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
     </ownedAttribute>
+    <ownedAttribute xmi:id="_1a_oEOYhEeGINOJ_SD9_dA" name="title" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2OBngOYhEeGINOJ_SD9_dA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2OBngeYhEeGINOJ_SD9_dA" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
+    </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_aByU4DszEeGvzMYhXuqAEA" base_Class="_W8pI4DszEeGvzMYhXuqAEA" templateId="2.16.840.1.113883.10.20.22.2.8">
     <ruleId>CONF:7711</ruleId>
@@ -981,7 +1061,7 @@ The Assessment and Plan section represents both the clinician's conclusions and 
   </CDA:CDATemplate>
   <CDA:CodeSystemConstraint xmi:id="_83CjQD32EeGYzOhiGkMbTA" code="51848-0" displayName="Assessments" base_Property="_8PsPYD32EeGYzOhiGkMbTA">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:10382</ruleId>
+    <ruleId>CONF:14758</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_IWSNwD33EeGYzOhiGkMbTA" base_Property="_8PsPYz32EeGYzOhiGkMbTA">
     <ruleId>CONF:7713</ruleId>
@@ -994,7 +1074,7 @@ The Assessment and Plan section represents both the clinician's conclusions and 
   </CDA:TextValue>
   <CDA:CodeSystemConstraint xmi:id="_OyoNAECSEeGELr7uj3LK_Q" code="18841-7" base_Property="__fxG8ECREeGELr7uj3LK_Q">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:9916</ruleId>
+    <ruleId>CONF:15486</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_2l1cYECSEeGELr7uj3LK_Q" base_Property="_la3lM0CSEeGELr7uj3LK_Q">
     <ruleId>CONF:8683</ruleId>
@@ -1004,7 +1084,7 @@ The Assessment and Plan section represents both the clinician's conclusions and 
   </CDA:TextValue>
   <CDA:CodeSystemConstraint xmi:id="_4jJdoECSEeGELr7uj3LK_Q" code="62387-6" base_Property="_la3lMECSEeGELr7uj3LK_Q">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:8681</ruleId>
+    <ruleId>CONF:15378</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_YH5d0ECTEeGELr7uj3LK_Q" base_Property="_U8WH00CTEeGELr7uj3LK_Q">
     <ruleId>CONF:8163</ruleId>
@@ -1014,7 +1094,7 @@ The Assessment and Plan section represents both the clinician's conclusions and 
   </CDA:TextValue>
   <CDA:CodeSystemConstraint xmi:id="_aeZbIECTEeGELr7uj3LK_Q" code="11329-0" base_Property="_U8WH0ECTEeGELr7uj3LK_Q">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:8161</ruleId>
+    <ruleId>CONF:15380</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_1YYVUECTEeGELr7uj3LK_Q" base_Property="_z5J-Q0CTEeGELr7uj3LK_Q">
     <ruleId>CONF:7872</ruleId>
@@ -1024,11 +1104,11 @@ The Assessment and Plan section represents both the clinician's conclusions and 
   </CDA:TextValue>
   <CDA:CodeSystemConstraint xmi:id="_22ZygECTEeGELr7uj3LK_Q" code="61149-1" displayName="Objective" base_Property="_z5J-QECTEeGELr7uj3LK_Q">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:7870</ruleId>
+    <ruleId>CONF:15390</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_dN41EEE0EeGdmoWy_aLP0Q" code="61150-9" displayName="Subjective" base_Property="_bLDaoEE0EeGdmoWy_aLP0Q">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:7874</ruleId>
+    <ruleId>CONF:15438</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_jYBcEEE0EeGdmoWy_aLP0Q" base_Property="_bLDao0E0EeGdmoWy_aLP0Q">
     <ruleId>CONF:7876</ruleId>
@@ -1038,7 +1118,7 @@ The Assessment and Plan section represents both the clinician's conclusions and 
   </CDA:TextValue>
   <uml:Class xmi:id="_4qKukEE1EeGdmoWy_aLP0Q" name="InstructionsSection">
     <ownedComment xmi:id="_9It9gEE1EeGdmoWy_aLP0Q">
-      <body>The Instructions section records instructions given to a patient.</body>
+      <body>The Instructions section records instructions given to a patient. List patient decision aids here.</body>
     </ownedComment>
     <generalization xmi:id="_4qKukUE1EeGdmoWy_aLP0Q">
       <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
@@ -1071,7 +1151,7 @@ The Assessment and Plan section represents both the clinician's conclusions and 
   </uml:Association>
   <CDA:CodeSystemConstraint xmi:id="_BDgYEEE2EeGdmoWy_aLP0Q" code="69730-0" displayName="Instructions" base_Property="_6PzPoEE1EeGdmoWy_aLP0Q">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:10113</ruleId>
+    <ruleId>CONF:15376</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_JQeZgEE2EeGdmoWy_aLP0Q" base_Property="_6PzPo0E1EeGdmoWy_aLP0Q">
     <ruleId>CONF:10115</ruleId>
@@ -1113,7 +1193,10 @@ The Assessment and Plan section represents both the clinician's conclusions and 
   <uml:Association xmi:id="_SgUIAkFIEeGorO80f-Cppg" memberEnd="_SgUIAEFIEeGorO80f-Cppg _SgUIA0FIEeGorO80f-Cppg">
     <ownedEnd xmi:id="_SgUIA0FIEeGorO80f-Cppg" type="_5K6mAEFHEeGorO80f-Cppg" association="_SgUIAkFIEeGorO80f-Cppg"/>
   </uml:Association>
-  <CDA:CDATemplate xmi:id="__hRrIEFHEeGorO80f-Cppg" base_Class="_5K6mAEFHEeGorO80f-Cppg" templateId="2.16.840.1.113883.10.20.22.4.34"/>
+  <CDA:CDATemplate xmi:id="__hRrIEFHEeGorO80f-Cppg" base_Class="_5K6mAEFHEeGorO80f-Cppg" templateId="2.16.840.1.113883.10.20.22.4.34">
+    <ruleId>CONF:16747</ruleId>
+    <ruleId>CONF:16748</ruleId>
+  </CDA:CDATemplate>
   <CDA:PropertyValidation xmi:id="_CFLyUEFIEeGorO80f-Cppg" base_Property="_7tCkgEFHEeGorO80f-Cppg"/>
   <CDA:CodeSystemConstraint xmi:id="_F24iUEFIEeGorO80f-Cppg" code="46241-6" displayName="Admission diagnosis" base_Property="_7tCkgUFHEeGorO80f-Cppg">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
@@ -1123,7 +1206,7 @@ The Assessment and Plan section represents both the clinician's conclusions and 
   <CDA:EntryRelationship xmi:id="_U-aiIEFIEeGorO80f-Cppg" base_Association="_SgUIAkFIEeGorO80f-Cppg" typeCode="SUBJ">
     <ruleId>CONF:7674</ruleId>
     <ruleId>CONF:7675</ruleId>
-    <ruleId>CONF:7676</ruleId>
+    <ruleId>CONF:15535</ruleId>
   </CDA:EntryRelationship>
   <CDA:TextValue xmi:id="_aPoWcFjpEeGRqYkwoeymcA" base_Property="_V3B-gFjpEeGRqYkwoeymcA">
     <ruleId>CONF:9932</ruleId>
@@ -1163,4 +1246,149 @@ The Assessment and Plan section represents both the clinician's conclusions and 
   <CDA:PropertyValidation xmi:id="_xA5L8Ny4EeG3d7pEoxuOZA" base_Property="_nD-cEB-YEeGtfPlBCjHWkw">
     <ruleId>CONF:7758</ruleId>
   </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_-zFJUOMiEeGfv4R-kzpM0g" base_Property="_2MdMQhUSEeG6PvUxSTZnaw"/>
+  <CDA:ConstraintValidation xmi:id="_9hDO0OMkEeGfv4R-kzpM0g" severity="WARNING" base_Constraint="_1sHS4OMkEeGfv4R-kzpM0g">
+    <ruleId>CONF:15578</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:PropertyValidation xmi:id="_bVvWcOYhEeGINOJ_SD9_dA" base_Property="_2Rwq7hSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:15353</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_mPfuQOYhEeGINOJ_SD9_dA" base_Property="_8PsPYD32EeGYzOhiGkMbTA">
+    <ruleId>CONF:14757</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_2mkqYOYhEeGINOJ_SD9_dA" base_Property="_1a_oEOYhEeGINOJ_SD9_dA">
+    <ruleId>CONF:16774</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="__bnYcOYhEeGINOJ_SD9_dA" base_Property="_wl51oCsaEeGHF88-qhhUMA">
+    <ruleId>CONF:15449</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_CIfOYOYiEeGINOJ_SD9_dA" base_Property="_2PWQExSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:15451</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_VPBk8OYjEeGINOJ_SD9_dA" base_Property="_2PWQABSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:15474</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_Z3YQIOYjEeGINOJ_SD9_dA" base_Property="_2PcWthSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:15477</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_dIHBEOYjEeGINOJ_SD9_dA" base_Property="_2PidTRSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:15479</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_nOFLgOYjEeGINOJ_SD9_dA" base_Property="__fxG8ECREeGELr7uj3LK_Q">
+    <ruleId>CONF:15485</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_Eo8msOYnEeGINOJ_SD9_dA" base_Property="_6PzPoEE1EeGdmoWy_aLP0Q">
+    <ruleId>CONF:15375</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_JKBlMOYnEeGINOJ_SD9_dA" base_Property="_la3lMECSEeGELr7uj3LK_Q">
+    <ruleId>CONF:15377</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_QCyMwOYnEeGINOJ_SD9_dA" base_Property="_U8WH0ECTEeGELr7uj3LK_Q">
+    <ruleId>CONF:15379</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_XFaiAOYnEeGINOJ_SD9_dA" base_Property="_z5J-QECTEeGELr7uj3LK_Q">
+    <ruleId>CONF:15389</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_9hS8oOYoEeGINOJ_SD9_dA" base_Property="_2PcWpxSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:15427</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_AliwwOYpEeGINOJ_SD9_dA" base_Property="_Q7bWACscEeGHF88-qhhUMA">
+    <ruleId>CONF:15429</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_MInyYOYpEeGINOJ_SD9_dA" base_Property="_bLDaoEE0EeGdmoWy_aLP0Q">
+    <ruleId>CONF:15437</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ConstraintValidation xmi:id="_qO6HIOZCEeGINOJ_SD9_dA" base_Constraint="_kCuRsOZCEeGINOJ_SD9_dA">
+    <ruleId>CONF:15967</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_tBb5IOZCEeGINOJ_SD9_dA" base_Constraint="_mmOwQOZCEeGINOJ_SD9_dA">
+    <ruleId>CONF:15968</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_xXWJcOZCEeGINOJ_SD9_dA" base_Constraint="_npxQ4OZCEeGINOJ_SD9_dA">
+    <ruleId>CONF:15969</ruleId>
+  </CDA:ConstraintValidation>
+  <uml:Association xmi:id="_gmf20ucQEeGINOJ_SD9_dA" memberEnd="_gmf20OcQEeGINOJ_SD9_dA _gmf20-cQEeGINOJ_SD9_dA">
+    <ownedEnd xmi:id="_gmf20-cQEeGINOJ_SD9_dA" type="_2KKOBhSVEeGGzu7fmW9pXw" association="_gmf20ucQEeGINOJ_SD9_dA"/>
+  </uml:Association>
+  <uml:Association xmi:id="_iy8gQucQEeGINOJ_SD9_dA" memberEnd="_iy8gQOcQEeGINOJ_SD9_dA _iy8gQ-cQEeGINOJ_SD9_dA">
+    <ownedEnd xmi:id="_iy8gQ-cQEeGINOJ_SD9_dA" type="_2KKOBhSVEeGGzu7fmW9pXw" association="_iy8gQucQEeGINOJ_SD9_dA"/>
+  </uml:Association>
+  <uml:Association xmi:id="_lOjnEucQEeGINOJ_SD9_dA" memberEnd="_lOjnEOcQEeGINOJ_SD9_dA _lOjnE-cQEeGINOJ_SD9_dA">
+    <ownedEnd xmi:id="_lOjnE-cQEeGINOJ_SD9_dA" type="_2KKOBhSVEeGGzu7fmW9pXw" association="_lOjnEucQEeGINOJ_SD9_dA"/>
+  </uml:Association>
+  <uml:Association xmi:id="_oUbL0ecQEeGINOJ_SD9_dA" memberEnd="_oUSB4OcQEeGINOJ_SD9_dA _oUbL0ucQEeGINOJ_SD9_dA">
+    <ownedEnd xmi:id="_oUbL0ucQEeGINOJ_SD9_dA" type="_2KKOBhSVEeGGzu7fmW9pXw" association="_oUbL0ecQEeGINOJ_SD9_dA"/>
+  </uml:Association>
+  <uml:Association xmi:id="_rcrWMecQEeGINOJ_SD9_dA" memberEnd="_rciMQOcQEeGINOJ_SD9_dA _rcrWMucQEeGINOJ_SD9_dA">
+    <ownedEnd xmi:id="_rcrWMucQEeGINOJ_SD9_dA" type="_2KKOBhSVEeGGzu7fmW9pXw" association="_rcrWMecQEeGINOJ_SD9_dA"/>
+  </uml:Association>
+  <uml:Association xmi:id="_tJSB8ecQEeGINOJ_SD9_dA" memberEnd="_tJI4AOcQEeGINOJ_SD9_dA _tJSB8ucQEeGINOJ_SD9_dA">
+    <ownedEnd xmi:id="_tJSB8ucQEeGINOJ_SD9_dA" type="_2KKOBhSVEeGGzu7fmW9pXw" association="_tJSB8ecQEeGINOJ_SD9_dA"/>
+  </uml:Association>
+  <uml:Association xmi:id="_uxIJgecQEeGINOJ_SD9_dA" memberEnd="_uw-YgOcQEeGINOJ_SD9_dA _uxIJgucQEeGINOJ_SD9_dA">
+    <ownedEnd xmi:id="_uxIJgucQEeGINOJ_SD9_dA" type="_2KKOBhSVEeGGzu7fmW9pXw" association="_uxIJgecQEeGINOJ_SD9_dA"/>
+  </uml:Association>
+  <uml:Association xmi:id="_wDizoucQEeGINOJ_SD9_dA" memberEnd="_wDizoOcQEeGINOJ_SD9_dA _wDizo-cQEeGINOJ_SD9_dA">
+    <ownedEnd xmi:id="_wDizo-cQEeGINOJ_SD9_dA" type="_2KKOBhSVEeGGzu7fmW9pXw" association="_wDizoucQEeGINOJ_SD9_dA"/>
+  </uml:Association>
+  <uml:Association xmi:id="_x0LDwucQEeGINOJ_SD9_dA" memberEnd="_x0LDwOcQEeGINOJ_SD9_dA _x0LDw-cQEeGINOJ_SD9_dA">
+    <ownedEnd xmi:id="_x0LDw-cQEeGINOJ_SD9_dA" type="_2KKOBhSVEeGGzu7fmW9pXw" association="_x0LDwucQEeGINOJ_SD9_dA"/>
+  </uml:Association>
+  <uml:Association xmi:id="_zgeNgOcQEeGINOJ_SD9_dA" memberEnd="_zgVDkOcQEeGINOJ_SD9_dA _zgeNgecQEeGINOJ_SD9_dA">
+    <ownedEnd xmi:id="_zgeNgecQEeGINOJ_SD9_dA" type="_2KKOBhSVEeGGzu7fmW9pXw" association="_zgeNgOcQEeGINOJ_SD9_dA"/>
+  </uml:Association>
+  <uml:Association xmi:id="_0hfloucQEeGINOJ_SD9_dA" memberEnd="_0hfloOcQEeGINOJ_SD9_dA _0hflo-cQEeGINOJ_SD9_dA">
+    <ownedEnd xmi:id="_0hflo-cQEeGINOJ_SD9_dA" type="_2KKOBhSVEeGGzu7fmW9pXw" association="_0hfloucQEeGINOJ_SD9_dA"/>
+  </uml:Association>
+  <uml:Association xmi:id="_18F7YucQEeGINOJ_SD9_dA" memberEnd="_18F7YOcQEeGINOJ_SD9_dA _18F7Y-cQEeGINOJ_SD9_dA">
+    <ownedEnd xmi:id="_18F7Y-cQEeGINOJ_SD9_dA" type="_2KKOBhSVEeGGzu7fmW9pXw" association="_18F7YucQEeGINOJ_SD9_dA"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_A65yUOcREeGINOJ_SD9_dA" severity="INFO" base_Association="_gmf20ucQEeGINOJ_SD9_dA">
+    <ruleId>CONF:14414</ruleId>
+    <ruleId>CONF:14415</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_K4F0MOcREeGINOJ_SD9_dA" severity="INFO" base_Association="_iy8gQucQEeGINOJ_SD9_dA">
+    <ruleId>CONF:14416</ruleId>
+    <ruleId>CONF:14417</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_Ny9C0OcREeGINOJ_SD9_dA" severity="INFO" base_Association="_lOjnEucQEeGINOJ_SD9_dA">
+    <ruleId>CONF:14418</ruleId>
+    <ruleId>CONF:14419</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_PiiKEOcREeGINOJ_SD9_dA" severity="INFO" base_Association="_oUbL0ecQEeGINOJ_SD9_dA">
+    <ruleId>CONF:14420</ruleId>
+    <ruleId>CONF:14421</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_TnChUOcREeGINOJ_SD9_dA" severity="INFO" base_Association="_rcrWMecQEeGINOJ_SD9_dA">
+    <ruleId>CONF:14422</ruleId>
+    <ruleId>CONF:14423</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_cCyloOcREeGINOJ_SD9_dA" severity="INFO" base_Association="_tJSB8ecQEeGINOJ_SD9_dA">
+    <ruleId>CONF:14424</ruleId>
+    <ruleId>CONF:14425</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_ey7yAOcREeGINOJ_SD9_dA" severity="INFO" base_Association="_uxIJgecQEeGINOJ_SD9_dA">
+    <ruleId>CONF:14426</ruleId>
+    <ruleId>CONF:14427</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_6A7NUOcREeGINOJ_SD9_dA" severity="INFO" base_Association="_wDizoucQEeGINOJ_SD9_dA">
+    <ruleId>CONF:14580</ruleId>
+    <ruleId>CONF:14581</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_8SRk4OcREeGINOJ_SD9_dA" severity="INFO" base_Association="_x0LDwucQEeGINOJ_SD9_dA">
+    <ruleId>CONF:14582</ruleId>
+    <ruleId>CONF:14583</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_--jk8OcREeGINOJ_SD9_dA" severity="INFO" base_Association="_zgeNgOcQEeGINOJ_SD9_dA">
+    <ruleId>CONF:16777</ruleId>
+    <ruleId>CONF:16778</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_BM7hAOcSEeGINOJ_SD9_dA" severity="INFO" base_Association="_0hfloucQEeGINOJ_SD9_dA">
+    <ruleId>CONF:16779</ruleId>
+    <ruleId>CONF:16780</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_DBICgOcSEeGINOJ_SD9_dA" severity="INFO" base_Association="_18F7YucQEeGINOJ_SD9_dA">
+    <ruleId>CONF:16781</ruleId>
+    <ruleId>CONF:16782</ruleId>
+  </CDA:AssociationValidation>
 </xmi:XMI>

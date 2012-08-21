@@ -30,7 +30,7 @@
   </CDA:CDATemplate>
   <CDA:CodeSystemConstraint xmi:id="_2Pxt9RSVEeGGzu7fmW9pXw" code="10210-3" displayName="GENERAL STATUS" base_Property="_2Pxt7hSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:7986</ruleId>
+    <ruleId>CONF:15473</ruleId>
   </CDA:CodeSystemConstraint>
   <uml:Class xmi:id="_2Pxt0hSVEeGGzu7fmW9pXw" name="PhysicalExamSection">
     <ownedComment xmi:id="_2RkdqBSVEeGGzu7fmW9pXw" annotatedElement="_2Pxt0hSVEeGGzu7fmW9pXw">
@@ -55,6 +55,21 @@ The Physical Exam section may contain multiple nested subsections: Vital Signs, 
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jVS4QCzoEeG29eivM7bhbw" value="1"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vJtnoEAMEd6wZe6nFLrjsw"/>
     </ownedAttribute>
+    <ownedAttribute xmi:id="_sWz4oOcPEeGINOJ_SD9_dA" name="pressureUlcerObservation" association="_sWz4oucPEeGINOJ_SD9_dA">
+      <type xmi:type="uml:Class" href="../consol.uml#_9rQowOZbEeGINOJ_SD9_dA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wJm00OcPEeGINOJ_SD9_dA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wJwl0OcPEeGINOJ_SD9_dA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_t1utsOcPEeGINOJ_SD9_dA" name="numberOfPressureUlcersObservation" association="_t133oOcPEeGINOJ_SD9_dA">
+      <type xmi:type="uml:Class" href="../consol.uml#_7c4ssOZbEeGINOJ_SD9_dA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wf7DEOcPEeGINOJ_SD9_dA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wgE0EOcPEeGINOJ_SD9_dA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_u7gC8OcPEeGINOJ_SD9_dA" name="highestPressureUlcerStage" association="_u7pz8ecPEeGINOJ_SD9_dA">
+      <type xmi:type="uml:Class" href="../consol.uml#_4YgVsOZbEeGINOJ_SD9_dA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wyq_8OcPEeGINOJ_SD9_dA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wy0J4OcPEeGINOJ_SD9_dA"/>
+    </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_ZHedIBnTEeGs5a462vYX5Q" base_Class="_2Pxt0hSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.2.10" assigningAuthorityName="HL7">
     <ruleId>CONF:10465</ruleId>
@@ -62,7 +77,7 @@ The Physical Exam section may contain multiple nested subsections: Vital Signs, 
   <CDA:ConstraintValidation xmi:id="_2Pxt3RSVEeGGzu7fmW9pXw" severity="WARNING"/>
   <CDA:CodeSystemConstraint xmi:id="_2Pxt4xSVEeGGzu7fmW9pXw" code="29545-1" displayName="PHYSICAL EXAMINATION" base_Property="_2Pxt4hSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:7807</ruleId>
+    <ruleId>CONF:15398</ruleId>
   </CDA:CodeSystemConstraint>
   <uml:Class xmi:id="_2RqkMBSVEeGGzu7fmW9pXw" name="ReviewOfSystemsSection">
     <ownedComment xmi:id="_2RqkOBSVEeGGzu7fmW9pXw" annotatedElement="_2RqkMBSVEeGGzu7fmW9pXw">
@@ -92,7 +107,7 @@ The Physical Exam section may contain multiple nested subsections: Vital Signs, 
   </CDA:CDATemplate>
   <CDA:CodeSystemConstraint xmi:id="_2RqkNxSVEeGGzu7fmW9pXw" code="10187-3" displayName="REVIEW OF SYSTEMS" base_Property="_2RqkNhSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:7813</ruleId>
+    <ruleId>CONF:15436</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:TextValue xmi:id="_lr2roCtWEeGlWN0TVxk9LA" base_Property="_VzwKhCtWEeGlWN0TVxk9LA">
     <ruleId>CONF:7814</ruleId>
@@ -112,4 +127,34 @@ The Physical Exam section may contain multiple nested subsections: Vital Signs, 
   <CDA:TextValue xmi:id="_xiTwkCzoEeG29eivM7bhbw" base_Property="_qrBvsCzoEeG29eivM7bhbw">
     <ruleId>CONF:7987</ruleId>
   </CDA:TextValue>
+  <CDA:PropertyValidation xmi:id="_vAIA8OYiEeGINOJ_SD9_dA" base_Property="_2Pxt7hSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:15472</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_EmalMOYpEeGINOJ_SD9_dA" base_Property="_2RqkNhSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:15435</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_oxszIOcPEeGINOJ_SD9_dA" base_Property="_2Pxt4hSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:15397</ruleId>
+  </CDA:PropertyValidation>
+  <uml:Association xmi:id="_sWz4oucPEeGINOJ_SD9_dA" memberEnd="_sWz4oOcPEeGINOJ_SD9_dA _sWz4o-cPEeGINOJ_SD9_dA">
+    <ownedEnd xmi:id="_sWz4o-cPEeGINOJ_SD9_dA" type="_2Pxt0hSVEeGGzu7fmW9pXw" association="_sWz4oucPEeGINOJ_SD9_dA"/>
+  </uml:Association>
+  <uml:Association xmi:id="_t133oOcPEeGINOJ_SD9_dA" memberEnd="_t1utsOcPEeGINOJ_SD9_dA _t133oecPEeGINOJ_SD9_dA">
+    <ownedEnd xmi:id="_t133oecPEeGINOJ_SD9_dA" type="_2Pxt0hSVEeGGzu7fmW9pXw" association="_t133oOcPEeGINOJ_SD9_dA"/>
+  </uml:Association>
+  <uml:Association xmi:id="_u7pz8ecPEeGINOJ_SD9_dA" memberEnd="_u7gC8OcPEeGINOJ_SD9_dA _u7pz8ucPEeGINOJ_SD9_dA">
+    <ownedEnd xmi:id="_u7pz8ucPEeGINOJ_SD9_dA" type="_2Pxt0hSVEeGGzu7fmW9pXw" association="_u7pz8ecPEeGINOJ_SD9_dA"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_xNc3cOcPEeGINOJ_SD9_dA" severity="INFO" base_Association="_sWz4oucPEeGINOJ_SD9_dA">
+    <ruleId>CONF:17094</ruleId>
+    <ruleId>CONF:17095</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_xrgFYOcPEeGINOJ_SD9_dA" severity="INFO" base_Association="_t133oOcPEeGINOJ_SD9_dA">
+    <ruleId>CONF:17096</ruleId>
+    <ruleId>CONF:17097</ruleId>
+  </CDA:AssociationValidation>
+  <CDA:AssociationValidation xmi:id="_yKvmIOcPEeGINOJ_SD9_dA" severity="INFO" base_Association="_u7pz8ecPEeGINOJ_SD9_dA">
+    <ruleId>CONF:17098</ruleId>
+    <ruleId>CONF:17099</ruleId>
+  </CDA:AssociationValidation>
 </xmi:XMI>

@@ -67,8 +67,16 @@ Medication timing is complex. This template requires that there be a substanceAd
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_qEPtkEFiEeG2TLeVPbv7pg">
         <language>Analysis</language>
         <language>OCL</language>
-        <body>text, if present, SHOULD contain zero or one [0..1] reference/@value</body>
-        <body>not self.text.oclIsUndefined() implies not self.text.reference.value.oclIsUndefined()</body>
+        <body>text, if present, SHOULD contain zero or one [0..1] reference</body>
+        <body>not self.text.oclIsUndefined() implies self.text->forAll(reference->size() = 1)</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_ovaIgOL7EeGfv4R-kzpM0g" name="referenceValue" constrainedElement="_nSTKYEFiEeG2TLeVPbv7pg">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_rICz0OL7EeGfv4R-kzpM0g">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>reference, if present, SHOULD contain zero or one [0..1] @value</body>
+        <body>self.text->forAll(reference->size() = 1) implies self.text->forAll(reference->one(value->size() = 1))</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_ukkeIEFiEeG2TLeVPbv7pg" name="textReferenceValue" constrainedElement="_nSTKYEFiEeG2TLeVPbv7pg">
@@ -115,7 +123,7 @@ Medication timing is complex. This template requires that there be a substanceAd
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_VcK9oEIjEeG4bZAl2IGXmQ">
         <language>Analysis</language>
         <language>OCL</language>
-        <body>effectiveTime with @xsi:type = &quot;PIVL_TS&quot; or &quot;EIVL_TS&quot; SHALL contain exactly one [1..1] @operator=&quot;A&quot; and</body>
+        <body>effectiveTime with @xsi:type = &quot;PIVL_TS&quot; or &quot;EIVL_TS&quot; SHALL contain exactly one [1..1] @operator=&quot;A&quot;</body>
         <body>self.effectiveTime->select(ef | ef.oclIsTypeOf(datatypes::PIVL_TS) or ef.oclIsTypeOf(datatypes::EIVL_TS))->forAll(eff | eff.operator = vocab::SetOperator::A and eff.operator->size() = 1)</body>
       </specification>
     </ownedRule>
@@ -192,8 +200,10 @@ Medication timing is complex. This template requires that there be a substanceAd
     </ownedAttribute>
     <ownedAttribute xmi:id="_2GHbwhSVEeGGzu7fmW9pXw" name="doseQuantity" visibility="private" aggregation="composite">
       <ownedComment xmi:id="_aSOw0EInEeG4bZAl2IGXmQ">
-        <body>Pre-coordinated consumable: If the consumable code is a precoordinated unit dose (e.g. metoprolol 25mg tablet) then doseQuantity is a unitless number that indicates the number of products given per administration (e.g. 2, meaning 2 x metoprolol 25mg tablet) 
-Not pre-coordinated consumable: If the consumable code is not pre-coordinated (e.g. is simply metoprolol), then doseQuantity must represent a physical quantity with @unit, e.g. 25 and mg, specifying the amount of product given per administration</body>
+        <body>&lt;p>Pre-coordinated consumable: If the consumable code is a precoordinated unit dose (e.g. metoprolol 25mg tablet) then doseQuantity is a unitless number that indicates the number of products given per administration (e.g. 2, meaning 2 x metoprolol 25mg tablet) &#xD;
+&lt;/p>&#xD;
+&lt;p>Not pre-coordinated consumable: If the consumable code is not pre-coordinated (e.g. is simply metoprolol), then doseQuantity must represent a physical quantity with @unit, e.g. 25 and mg, specifying the amount of product given per administration&#xD;
+&lt;/p></body>
       </ownedComment>
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_1VHHUErrEd6FXKclYGEDCw"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_fyAg8B-xEeGKirKJsFylGA" value="1"/>
@@ -350,16 +360,23 @@ Not pre-coordinated consumable: If the consumable code is not pre-coordinated (e
     <ruleId>CONF:7522</ruleId>
   </CDA:AssociationValidation>
   <CDA:EntryRelationship xmi:id="_ETweIBUTEeG6PvUxSTZnaw" severity="INFO" base_Association="_7USBshUSEeG6PvUxSTZnaw" typeCode="RSON">
-    <ruleId>CONF:7538</ruleId>
+    <ruleId>CONF:7536</ruleId>
+    <ruleId>CONF:7537</ruleId>
+    <ruleId>CONF:16087</ruleId>
   </CDA:EntryRelationship>
   <CDA:EntryRelationship xmi:id="_SLdYUBUUEeG6PvUxSTZnaw" severity="INFO" base_Association="_H7DfghUUEeG6PvUxSTZnaw" typeCode="REFR">
-    <ruleId>CONF:7554</ruleId>
+    <ruleId>CONF:7549</ruleId>
+    <ruleId>CONF:7553</ruleId>
+    <ruleId>CONF:16090</ruleId>
   </CDA:EntryRelationship>
   <CDA:AssociationValidation xmi:id="_t5u2MBUUEeG6PvUxSTZnaw" severity="INFO" base_Association="_tZZwUBUUEeG6PvUxSTZnaw">
     <ruleId>CONF:7546</ruleId>
+    <ruleId>CONF:16092</ruleId>
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_ZRrXoBUVEeG6PvUxSTZnaw" severity="INFO" base_Association="_U6R5khUVEeG6PvUxSTZnaw">
     <ruleId>CONF:7523</ruleId>
+    <ruleId>CONF:7524</ruleId>
+    <ruleId>CONF:16086</ruleId>
   </CDA:AssociationValidation>
   <uml:Class xmi:id="_DpoGkBUUEeG6PvUxSTZnaw" name="MedicationDispense">
     <generalization xmi:id="_DpoGkRUUEeG6PvUxSTZnaw">
@@ -392,7 +409,7 @@ Not pre-coordinated consumable: If the consumable code is not pre-coordinated (e
     </ownedAttribute>
     <ownedAttribute xmi:id="_ThIPEBrYEeGo461UQq-B1g" name="repeatNumber" visibility="private" aggregation="composite">
       <ownedComment xmi:id="_JYsjsEIuEeG4bZAl2IGXmQ">
-        <body>In &quot;EVN&quot; (event) mood, the repeatNumber is the number of occurrences. For example, a repeatNumber of &quot;3&quot; in a dispense act means that the current dispensation is the 3rd</body>
+        <body>In &quot;EVN&quot; (event) mood, the repeatNumber is the number of occurrences. For example, a repeatNumber of &quot;3&quot; in a dispense act means that the current dispensation is the 3rd (CONF: 16876)</body>
       </ownedComment>
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_wDsPEEo9Ed6c3qsAxlFHaQ"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ThIPERrYEeGo461UQq-B1g" value="1"/>
@@ -474,7 +491,8 @@ Not pre-coordinated consumable: If the consumable code is not pre-coordinated (e
     </nestedClassifier>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_HlZ-cBncEeGs5a462vYX5Q" base_Class="_DpoGkBUUEeG6PvUxSTZnaw" templateId="2.16.840.1.113883.10.20.22.4.18">
-    <ruleId>CONF:7454</ruleId>
+    <ruleId>CONF:7453</ruleId>
+    <ruleId>CONF:10505</ruleId>
   </CDA:CDATemplate>
   <uml:Class xmi:id="_2T9DQBSVEeGGzu7fmW9pXw" name="MedicationInformation">
     <ownedComment xmi:id="_RzpgUCAMEeGKirKJsFylGA">
@@ -519,15 +537,23 @@ Not pre-coordinated consumable: If the consumable code is not pre-coordinated (e
           <language>Analysis</language>
           <language>OCL</language>
           <body>code SHOULD contain zero or one [0..1] originalText</body>
-          <body>not self.code.oclIsUndefined() implies self.code.originalText->size() = 1</body>
+          <body>self.code.originalText->size() = 1</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_WONKoCANEeGKirKJsFylGA" name="reference" constrainedElement="__WUM4CAMEeGKirKJsFylGA">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_Z8LRMCANEeGKirKJsFylGA">
           <language>Analysis</language>
           <language>OCL</language>
-          <body>originalText, if present, SHOULD contain zero or one [0..1] reference/@value</body>
-          <body>self.code.originalText->size() = 1 implies not self.code.originalText.reference.value.oclIsUndefined()</body>
+          <body>originalText, if present, SHOULD contain zero or one [0..1] reference</body>
+          <body>self.code.originalText->size() = 1 implies self.code.originalText->one(reference->size() = 1)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_J2P5oOMUEeGfv4R-kzpM0g" name="originalTextReferenceValue" constrainedElement="_WONKoCANEeGKirKJsFylGA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_hlYBYOMUEeGfv4R-kzpM0g">
+          <language>Analysis</language>
+          <language>OCL</language>
+          <body>reference, if present, SHOULD contain zero or one [0..1] @value</body>
+          <body>self.code.originalText.reference->size() = 1 implies self.code.originalText.reference.value->size() = 1</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_P3HqkEIsEeG4bZAl2IGXmQ" name="referenceValue" constrainedElement="_WONKoCANEeGKirKJsFylGA">
@@ -538,7 +564,7 @@ Not pre-coordinated consumable: If the consumable code is not pre-coordinated (e
       </ownedRule>
       <ownedRule xmi:id="_dYj4gCANEeGKirKJsFylGA" name="codeTranslation" constrainedElement="__WUM4CAMEeGKirKJsFylGA">
         <ownedComment xmi:id="_ro9Z0EIsEeG4bZAl2IGXmQ">
-          <body>Translations can be used to represent generic product name, packaged product code, etc</body>
+          <body>Translations can be used to represent generic product name, packaged product code, etc (CONF:16875)</body>
         </ownedComment>
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_hGPEICANEeGKirKJsFylGA">
           <language>Analysis</language>
@@ -560,6 +586,7 @@ Not pre-coordinated consumable: If the consumable code is not pre-coordinated (e
   </uml:Class>
   <CDA:CDATemplate xmi:id="_LKvGYBncEeGs5a462vYX5Q" base_Class="_2T9DQBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.23">
     <ruleId>CONF:7409</ruleId>
+    <ruleId>CONF:10506</ruleId>
   </CDA:CDATemplate>
   <CDA:PropertyValidation xmi:id="_2UDJ2RSVEeGGzu7fmW9pXw" severity="INFO" base_Property="_2UDJ1RSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7410</ruleId>
@@ -597,7 +624,7 @@ Not pre-coordinated consumable: If the consumable code is not pre-coordinated (e
   </CDA:CDATemplate>
   <CDA:CodeSystemConstraint xmi:id="_2PokAhSVEeGGzu7fmW9pXw" code="29549-3" displayName="Medications Administered" base_Property="_2PokARSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:8153</ruleId>
+    <ruleId>CONF:15384</ruleId>
   </CDA:CodeSystemConstraint>
   <uml:Class xmi:id="_iAoXEBVdEeGQCvUGzi1kDQ" name="MedicationsSectionEntriesOptional">
     <ownedComment xmi:id="_S0qoIB-uEeGKirKJsFylGA">
@@ -666,7 +693,7 @@ This section requires that there be either an entry indicating the subject is no
   </CDA:CDATemplate>
   <CDA:CodeSystemConstraint xmi:id="_2KF8kRSVEeGGzu7fmW9pXw" code="46264-8" displayName="Medical Equipment" base_Property="_2KF8kBSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:7945</ruleId>
+    <ruleId>CONF:15382</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_2KHKsRSVEeGGzu7fmW9pXw" base_Property="_2KHKsBSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7946</ruleId>
@@ -684,7 +711,9 @@ This section requires that there be either an entry indicating the subject is no
     <ownedRule xmi:id="_uejSEEa6EeG7gbamepbPeA" name="effectiveTimeHigh" constrainedElement="_2HIvMBSVEeGGzu7fmW9pXw">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_BKhB8Ea7EeG7gbamepbPeA">
         <language>Analysis</language>
+        <language>OCL</language>
         <body>SHOULD contain zero or one [0..1] effectiveTime/high</body>
+        <body>self.effectiveTime->size() = 1 implies self.effectiveTime.oclAsType(datatypes::IVL_TS)->forAll(high->size() = 1)</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_fELj4Ea8EeG75M7WNoZ4Xg" name="productInstanceTypeCode" constrainedElement="_uejSEEa6EeG7gbamepbPeA">
@@ -718,8 +747,8 @@ This section requires that there be either an entry indicating the subject is no
     </ownedAttribute>
     <ownedAttribute xmi:id="_5f05oDiBEeGSytqLITd2FA" name="effectiveTime" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_kSZ5QD5_Ed6cla2oXsPtlA"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__DsK0DiBEeGSytqLITd2FA" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__DsK0TiBEeGSytqLITd2FA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KxiQIOu6EeGU4e2Grhba1w" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KxiQIeu6EeGU4e2Grhba1w"/>
       <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_8voGMErtEd6FXKclYGEDCw"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2HUVYBSVEeGGzu7fmW9pXw" name="quantity" visibility="private" aggregation="composite">
@@ -736,6 +765,7 @@ This section requires that there be either an entry indicating the subject is no
     <ownedEnd xmi:id="_2HVjhBSVEeGGzu7fmW9pXw" type="_2HIvMBSVEeGGzu7fmW9pXw" association="_2HVjgxSVEeGGzu7fmW9pXw"/>
   </uml:Association>
   <CDA:CDATemplate xmi:id="_2HIvYRSVEeGGzu7fmW9pXw" base_Class="_2HIvMBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.50">
+    <ruleId>CONF:8747</ruleId>
     <ruleId>CONF:10509</ruleId>
   </CDA:CDATemplate>
   <CDA:PropertyValidation xmi:id="_2HTHRRSVEeGGzu7fmW9pXw" base_Property="_2HTHQhSVEeGGzu7fmW9pXw">
@@ -748,7 +778,8 @@ This section requires that there be either an entry indicating the subject is no
     <ruleId>CONF:8751</ruleId>
   </CDA:PropertyValidation>
   <CDA:AssociationValidation xmi:id="_2HVjhRSVEeGGzu7fmW9pXw" base_Association="_2HVjgxSVEeGGzu7fmW9pXw">
-    <ruleId>CONF:8753</ruleId>
+    <ruleId>CONF:8752</ruleId>
+    <ruleId>CONF:15900</ruleId>
   </CDA:AssociationValidation>
   <uml:Class xmi:id="_2G2bUxSVEeGGzu7fmW9pXw" name="ProductInstance">
     <ownedComment xmi:id="_2G2bVBSVEeGGzu7fmW9pXw" annotatedElement="_2G2bUxSVEeGGzu7fmW9pXw">
@@ -834,7 +865,7 @@ The UDI should be sent in the participantRole/id.</body>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_2wfjABrcEeGo461UQq-B1g">
         <language>Analysis</language>
         <language>OCL</language>
-        <body>This criterion SHOULD contain zero or one [0..1] value with @xsi:type=&quot;CD&quot; (CONF:7369).</body>
+        <body>This criterion SHOULD contain zero or one [0..1] value with @xsi:type=&quot;CD&quot;</body>
         <body>(self.criterion.value.oclIsUndefined() or self.criterion.value.isNullFlavorUndefined()) implies (self.criterion.value.oclIsTypeOf(datatypes::CD))</body>
       </specification>
     </ownedRule>
@@ -852,16 +883,20 @@ The UDI should be sent in the participantRole/id.</body>
   </uml:Association>
   <CDA:CDATemplate xmi:id="_gOTA8BUUEeG6PvUxSTZnaw" base_Class="_chEhQBUUEeG6PvUxSTZnaw" templateId="2.16.840.1.113883.10.20.22.4.25">
     <ruleId>CONF:7372</ruleId>
+    <ruleId>CONF:10517</ruleId>
   </CDA:CDATemplate>
   <CDA:AssociationValidation xmi:id="_nE_L8BUUEeG6PvUxSTZnaw" base_Association="_lie3YhUUEeG6PvUxSTZnaw">
     <ruleId>CONF:7366</ruleId>
   </CDA:AssociationValidation>
   <uml:Class xmi:id="_VBXq8BUTEeG6PvUxSTZnaw" name="DrugVehicle">
     <ownedRule xmi:id="_G1AaMBq2EeGo461UQq-B1g" name="playingEntityCode" constrainedElement="_VBXq8BUTEeG6PvUxSTZnaw">
+      <ownedComment xmi:id="_rjDdYOMSEeGfv4R-kzpM0g">
+        <body>This playingEntity/code is used to supply a coded term for the drug vehicle.</body>
+      </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_IGiTgBq2EeGo461UQq-B1g">
         <language>Analysis</language>
         <language>OCL</language>
-        <body>This playingEntity SHALL contain exactly one [1..1] code (CONF:7493). &#xA;&#x9;This playingEntity/code is used to supply a coded term for the drug  vehicle (CONF:10086)</body>
+        <body>This playingEntity SHALL contain exactly one [1..1] code</body>
         <body>not self.playingEntity.oclIsUndefined() implies self.playingEntity.code->size() =1</body>
       </specification>
     </ownedRule>
@@ -869,7 +904,8 @@ The UDI should be sent in the participantRole/id.</body>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_Y9oMcBq2EeGo461UQq-B1g">
         <language>Analysis</language>
         <language>OCL</language>
-        <body>This playingEntity MAY contain zero or one [0..1] name (CONF:7494). &#xA;&#x9;This playingEntity/name MAY be used for the vehicle name in text, such as Normal Saline (CONF:10087)</body>
+        <body>This playingEntity MAY contain zero or one [0..1] name (CONF:7494). 
+	This playingEntity/name MAY be used for the vehicle name in text, such as Normal Saline (CONF:10087)</body>
         <body>not self.playingEntity.oclIsUndefined() implies self.playingEntity.name->size() =1</body>
       </specification>
     </ownedRule>
@@ -935,7 +971,7 @@ The UDI should be sent in the participantRole/id.</body>
   </CDA:CDATemplate>
   <CDA:CodeSystemConstraint xmi:id="_2Poj6hSVEeGGzu7fmW9pXw" code="42346-7" displayName="MEDICATIONS ON ADMISSION" base_Property="_2Poj6RSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:10099</ruleId>
+    <ruleId>CONF:15483</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_3jQucBq1EeGo461UQq-B1g" code="412307009" base_Property="_ZXk2NRUTEeG6PvUxSTZnaw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
@@ -958,7 +994,7 @@ The UDI should be sent in the participantRole/id.</body>
     <ruleId>CONF:7455</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:ConstraintValidation xmi:id="_xlA8oBrcEeGo461UQq-B1g" severity="WARNING" base_Constraint="_pHR7UBrcEeGo461UQq-B1g">
-    <ruleId>CONF:7367</ruleId>
+    <ruleId>CONF:16854</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_zB2uEBrcEeGo461UQq-B1g" severity="INFO" base_Constraint="_tZn6QBrcEeGo461UQq-B1g">
     <ruleId>CONF:7373</ruleId>
@@ -970,6 +1006,14 @@ The UDI should be sent in the participantRole/id.</body>
         <language>OCL</language>
         <body>entryRelationship with target entry Instructions if present, SHALL contain exactly one [1..1] @inversionInd=&quot;true&quot; True</body>
         <body>self.entryRelationship->select(er : cda::EntryRelationship | er.act.oclIsTypeOf(consol::Instructions))->forAll(ent : cda::EntryRelationship | ent.inversionInd=true)</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_vah94OMVEeGfv4R-kzpM0g" name="effectiveTimeHigh" constrainedElement="_j3aTQBrTEeGo461UQq-B1g">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_ydkREOMVEeGfv4R-kzpM0g">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>effectiveTime SHALL contain exactly one [1..1] high</body>
+        <body>self.effectiveTime->size() = 1 implies self.effectiveTime.oclAsType(datatypes::IVL_TS)->forAll(high->size() = 1)</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_j3aTQRrTEeGo461UQq-B1g">
@@ -1002,7 +1046,7 @@ The UDI should be sent in the participantRole/id.</body>
     </ownedAttribute>
     <ownedAttribute xmi:id="_p1rBcRrTEeGo461UQq-B1g" name="repeatNumber" visibility="private" aggregation="composite">
       <ownedComment xmi:id="_akLwUELTEeGo1o5_NrjDhQ">
-        <body>In &quot;INT&quot; (intent) mood, the repeatNumber defines the number of allowed fills. For example, a repeatNumber of &quot;3&quot; means that the substance can be supplied up to 3 times (or, can be dispensed, with 2 refills)</body>
+        <body>In &quot;INT&quot; (intent) mood, the repeatNumber defines the number of allowed fills. For example, a repeatNumber of &quot;3&quot; means that the substance can be supplied up to 3 times (or, can be dispensed, with 2 refills) (CONF:16869)</body>
       </ownedComment>
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_wDsPEEo9Ed6c3qsAxlFHaQ"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_p1rBchrTEeGo461UQq-B1g" value="1"/>
@@ -1064,12 +1108,13 @@ The UDI should be sent in the participantRole/id.</body>
   </uml:Association>
   <CDA:CDATemplate xmi:id="_uFl-gBrTEeGo461UQq-B1g" base_Class="_j3aTQBrTEeGo461UQq-B1g" templateId="2.16.840.1.113883.10.20.22.4.17">
     <ruleId>CONF:7429</ruleId>
+    <ruleId>CONF:10507</ruleId>
   </CDA:CDATemplate>
   <CDA:PropertyValidation xmi:id="_v_02kBrTEeGo461UQq-B1g" base_Property="_p1olMBrTEeGo461UQq-B1g">
     <ruleId>CONF:7427</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_5Dz_kBrTEeGo461UQq-B1g" severity="WARNING" base_Property="_p1pzUBrTEeGo461UQq-B1g">
-    <ruleId>CONF:7433</ruleId>
+    <ruleId>CONF:15143</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_2R5RkBrTEeGo461UQq-B1g" base_Property="_p1qaYBrTEeGo461UQq-B1g">
     <ruleId>CONF:7428</ruleId>
@@ -1108,6 +1153,7 @@ The UDI should be sent in the participantRole/id.</body>
   <CDA:EntryRelationship xmi:id="_L1MeEBucEeGnMahsPjlwOw" severity="INFO" base_Association="_PrLOARrUEeGo461UQq-B1g" typeCode="SUBJ">
     <ruleId>CONF:7442</ruleId>
     <ruleId>CONF:7444</ruleId>
+    <ruleId>CONF:16095</ruleId>
   </CDA:EntryRelationship>
   <CDA:PropertyValidation xmi:id="_HfkKcB7lEeGEaLkc3UAsAg" base_Property="_p1rogRrTEeGo461UQq-B1g">
     <ruleId>CONF:7432</ruleId>
@@ -1118,7 +1164,7 @@ The UDI should be sent in the participantRole/id.</body>
   <CDA:EntryRelationship xmi:id="_yvMA4B7mEeGEaLkc3UAsAg" severity="INFO" base_Association="_3-ztEBrYEeGo461UQq-B1g" typeCode="REFR">
     <ruleId>CONF:7473</ruleId>
     <ruleId>CONF:7474</ruleId>
-    <ruleId>CONF:7476</ruleId>
+    <ruleId>CONF:15606</ruleId>
   </CDA:EntryRelationship>
   <CDA:ConstraintValidation xmi:id="_CGugsB7pEeGEaLkc3UAsAg" severity="WARNING" base_Constraint="_vY4cQBrcEeGo461UQq-B1g">
     <ruleId>CONF:7369</ruleId>
@@ -1145,13 +1191,19 @@ The UDI should be sent in the participantRole/id.</body>
   </CDA:PropertyValidation>
   <CDA:ConstraintValidation xmi:id="_VmSo8B-zEeGKirKJsFylGA" severity="WARNING" base_Constraint="_K_ZiwB-zEeGKirKJsFylGA"/>
   <CDA:EntryRelationship xmi:id="_XLpnwB-0EeGKirKJsFylGA" severity="INFO" base_Association="_2GjgZRSVEeGGzu7fmW9pXw">
-    <ruleId>CONF:7548</ruleId>
+    <ruleId>CONF:7552</ruleId>
+    <ruleId>CONF:7544</ruleId>
+    <ruleId>CONF:16091</ruleId>
   </CDA:EntryRelationship>
   <CDA:EntryRelationship xmi:id="_fPPDsB-0EeGKirKJsFylGA" severity="INFO" base_Association="_2GjgYxSVEeGGzu7fmW9pXw" typeCode="REFR">
-    <ruleId>CONF:7545</ruleId>
+    <ruleId>CONF:7543</ruleId>
+    <ruleId>CONF:7547</ruleId>
+    <ruleId>CONF:16089</ruleId>
   </CDA:EntryRelationship>
   <CDA:EntryRelationship xmi:id="_hNSr0B-0EeGKirKJsFylGA" severity="INFO" base_Association="_2HCokBSVEeGGzu7fmW9pXw" typeCode="SUBJ">
-    <ruleId>CONF:7541</ruleId>
+    <ruleId>CONF:7539</ruleId>
+    <ruleId>CONF:7540</ruleId>
+    <ruleId>CONF:16088</ruleId>
   </CDA:EntryRelationship>
   <CDA:PropertyValidation xmi:id="_qbvQYCAMEeGKirKJsFylGA" base_Property="_pUNnoCAMEeGKirKJsFylGA">
     <ruleId>CONF:7408</ruleId>
@@ -1188,7 +1240,7 @@ The UDI should be sent in the participantRole/id.</body>
     <ruleId>CONF:8746</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:PropertyValidation xmi:id="_61IfsDiBEeGSytqLITd2FA" severity="WARNING" base_Property="_5f05oDiBEeGSytqLITd2FA">
-    <ruleId>CONF:8750</ruleId>
+    <ruleId>CONF:15498</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_utQ5gDiCEeGSytqLITd2FA" base_Property="_tsW2IDiCEeGSytqLITd2FA">
     <ruleId>CONF:7900</ruleId>
@@ -1246,13 +1298,16 @@ The UDI should be sent in the participantRole/id.</body>
   <uml:Association xmi:id="_lThaQkFGEeGorO80f-Cppg" memberEnd="_lThaQEFGEeGorO80f-Cppg _lThaQ0FGEeGorO80f-Cppg">
     <ownedEnd xmi:id="_lThaQ0FGEeGorO80f-Cppg" type="_LNP08EFGEeGorO80f-Cppg" association="_lThaQkFGEeGorO80f-Cppg"/>
   </uml:Association>
-  <CDA:CDATemplate xmi:id="_RCX1QEFGEeGorO80f-Cppg" base_Class="_LNP08EFGEeGorO80f-Cppg" templateId="2.16.840.1.113883.10.20.22.4.36"/>
+  <CDA:CDATemplate xmi:id="_RCX1QEFGEeGorO80f-Cppg" base_Class="_LNP08EFGEeGorO80f-Cppg" templateId="2.16.840.1.113883.10.20.22.4.36">
+    <ruleId>CONF:16758</ruleId>
+    <ruleId>CONF:16759</ruleId>
+  </CDA:CDATemplate>
   <CDA:PropertyValidation xmi:id="_T1CxMEFGEeGorO80f-Cppg" base_Property="_OJAbcEFGEeGorO80f-Cppg">
     <ruleId>CONF:7698</ruleId>
   </CDA:PropertyValidation>
-  <CDA:CodeSystemConstraint xmi:id="_aeBQUEFGEeGorO80f-Cppg" code="42346-7" base_Property="_OJAbcUFGEeGorO80f-Cppg">
+  <CDA:CodeSystemConstraint xmi:id="_aeBQUEFGEeGorO80f-Cppg" code="42346-7" displayName="Medications on Admission" base_Property="_OJAbcUFGEeGorO80f-Cppg" severity="INFO">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:7700</ruleId>
+    <ruleId>CONF:15519</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_f8MwQEFGEeGorO80f-Cppg" base_Property="_OJAbckFGEeGorO80f-Cppg">
     <ruleId>CONF:7699</ruleId>
@@ -1260,16 +1315,16 @@ The UDI should be sent in the participantRole/id.</body>
   <CDA:EntryRelationship xmi:id="_qr4mEEFGEeGorO80f-Cppg" base_Association="_lThaQkFGEeGorO80f-Cppg" typeCode="SUBJ">
     <ruleId>CONF:7701</ruleId>
     <ruleId>CONF:7702</ruleId>
-    <ruleId>CONF:7703</ruleId>
+    <ruleId>CONF:15520</ruleId>
   </CDA:EntryRelationship>
   <uml:Association xmi:id="_IfrmAkFHEeGorO80f-Cppg" memberEnd="_IfrmAEFHEeGorO80f-Cppg _IfrmA0FHEeGorO80f-Cppg">
     <ownedEnd xmi:id="_IfrmA0FHEeGorO80f-Cppg" type="_2Poj5BSVEeGGzu7fmW9pXw" association="_IfrmAkFHEeGorO80f-Cppg"/>
   </uml:Association>
   <CDA:ConstraintValidation xmi:id="_rnBu8EFiEeG2TLeVPbv7pg" severity="WARNING" base_Constraint="_nSTKYEFiEeG2TLeVPbv7pg">
-    <ruleId>CONF:7502</ruleId>
+    <ruleId>CONF:15977</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_w4S0QEFiEeG2TLeVPbv7pg" base_Constraint="_ukkeIEFiEeG2TLeVPbv7pg">
-    <ruleId>CONF:7503</ruleId>
+    <ruleId>CONF:15979</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_tP3_QEFmEeG2TLeVPbv7pg" base_Constraint="_6ODpwEFiEeG2TLeVPbv7pg"/>
   <CDA:ConstraintValidation xmi:id="_t6RnIEFmEeG2TLeVPbv7pg" base_Constraint="_4CqJMEFiEeG2TLeVPbv7pg"/>
@@ -1300,12 +1355,12 @@ The UDI should be sent in the participantRole/id.</body>
     <ruleId>CONF:7458</ruleId>
   </CDA:PropertyValidation>
   <CDA:ConstraintValidation xmi:id="_1l1YwELTEeGo1o5_NrjDhQ" base_Constraint="_pvZ9UELTEeGo1o5_NrjDhQ">
-    <ruleId>CONF:7437</ruleId>
-    <ruleId>CONF:9335</ruleId>
-    <ruleId>CONF:9336</ruleId>
+    <ruleId>CONF:16093</ruleId>
+    <ruleId>CONF:16094</ruleId>
+    <ruleId>CONF:16870</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_Dl9JoEa7EeG7gbamepbPeA" severity="WARNING" base_Constraint="_uejSEEa6EeG7gbamepbPeA">
-    <ruleId>CONF:8750</ruleId>
+    <ruleId>CONF:16867</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_moUDsEa8EeG75M7WNoZ4Xg" base_Constraint="_fELj4Ea8EeG75M7WNoZ4Xg">
     <ruleId>CONF:8754</ruleId>
@@ -1324,8 +1379,8 @@ The UDI should be sent in the participantRole/id.</body>
     <memberEnd href="#_oodkUEX9EeG6e5lG0YsSyQ"/>
   </uml:Association>
   <CDA:ConstraintValidation xmi:id="_S8AoUEhVEeGoJ-JrsiBorA" base_Constraint="_cJ5wsUhUEeGoJ-JrsiBorA">
-    <ruleId>CONF:7460</ruleId>
-    <ruleId>CONF:9332</ruleId>
+    <ruleId>CONF:15607</ruleId>
+    <ruleId>CONF:15608</ruleId>
     <ruleId>CONF:9333</ruleId>
   </CDA:ConstraintValidation>
   <uml:Association xmi:id="_ikMTkEhUEeGoJ-JrsiBorA" memberEnd="_ikLsgEhUEeGoJ-JrsiBorA _ikMTkUhUEeGoJ-JrsiBorA">
@@ -1347,7 +1402,7 @@ The UDI should be sent in the participantRole/id.</body>
     <ownedEnd xmi:id="_FewvQXK2EeGig5KF4CgPyw" type="_ou3j0G65EeGeVrQbtyMiPg" association="_FewvQHK2EeGig5KF4CgPyw"/>
   </uml:Association>
   <CDA:AssociationValidation xmi:id="_Hfl-kHK2EeGig5KF4CgPyw" base_Association="_FewvQHK2EeGig5KF4CgPyw">
-    <ruleId>CONF:7521</ruleId>
+    <ruleId>CONF:16085</ruleId>
   </CDA:AssociationValidation>
   <CDA:ConstraintValidation xmi:id="_nkhuYMUuEeGigaKyc-jgFA" severity="INFO" base_Constraint="_2NJ3tRSVEeGGzu7fmW9pXw"/>
   <CDA:ConstraintValidation xmi:id="_t5o2UMUuEeGigaKyc-jgFA" severity="INFO" base_Constraint="_iAoXFhVdEeGQCvUGzi1kDQ"/>
@@ -1377,4 +1432,25 @@ The UDI should be sent in the participantRole/id.</body>
   <CDA:AssociationValidation xmi:id="_DW6EoOAUEeGlGcipF_0y2A" severity="INFO" base_Association="_vTgnwOATEeGlGcipF_0y2A">
     <ruleId>CONF:7461</ruleId>
   </CDA:AssociationValidation>
+  <CDA:ConstraintValidation xmi:id="_reXCEOL7EeGfv4R-kzpM0g" severity="WARNING" base_Constraint="_ovaIgOL7EeGfv4R-kzpM0g">
+    <ruleId>CONF:15978</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_n2VpIOMUEeGfv4R-kzpM0g" severity="WARNING" base_Constraint="_J2P5oOMUEeGfv4R-kzpM0g">
+    <ruleId>CONF:15987</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_zaRJ4OMVEeGfv4R-kzpM0g" base_Constraint="_vah94OMVEeGfv4R-kzpM0g">
+    <ruleId>CONF:15144</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:PropertyValidation xmi:id="_kcvsUOYjEeGINOJ_SD9_dA" base_Property="_2Poj6RSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:15482</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_M5NMsOYnEeGINOJ_SD9_dA" base_Property="_2KF8kBSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:15381</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_TQOZIOYnEeGINOJ_SD9_dA" base_Property="_2PokARSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:15383</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_3kdjEOYuEeGINOJ_SD9_dA" base_Property="_OJAbcUFGEeGorO80f-Cppg">
+    <ruleId>CONF:15518</ruleId>
+  </CDA:PropertyValidation>
 </xmi:XMI>
