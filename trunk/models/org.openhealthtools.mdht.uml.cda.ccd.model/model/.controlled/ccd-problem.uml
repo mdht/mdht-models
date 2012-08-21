@@ -78,8 +78,7 @@
         <language>Analysis</language>
         <language>OCL</language>
         <body>The target of a problem act with Act / entryRelationship / @typeCode=&quot;SUBJ&quot; SHOULD be a problem observation (in the Problem section) or alert observation (in the Alert section), but MAY be some other clinical statement.</body>
-        <body>self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::SUBJ, cda::ClinicalStatement)->forAll(target : cda::ClinicalStatement | not target.oclIsUndefined() and &#xD;
-  (target.oclIsKindOf(ccd::ProblemObservation) or target.oclIsKindOf(ccd::AlertObservation)))</body>
+        <body>self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::SUBJ, cda::ClinicalStatement)->forAll(target : cda::ClinicalStatement | not target.oclIsUndefined() and &#xD;&#xA;  (target.oclIsKindOf(ccd::ProblemObservation) or target.oclIsKindOf(ccd::AlertObservation)))</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_tL4b0BTdEd-6K-YJpbwRmQ" name="containsProblemObservation" constrainedElement="_GgvgUDxbEd6JwqSGecoePg">
@@ -87,8 +86,7 @@
         <language>Analysis</language>
         <language>OCL</language>
         <body>In Problem Section, a Problem Act SHOULD contain one or more Problem Observations.</body>
-        <body>self.getSection().oclIsKindOf(ccd::ProblemSection) implies self.getObservations()&#xD;
-   ->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::ProblemObservation))</body>
+        <body>self.getSection().oclIsKindOf(ccd::ProblemSection) implies self.getObservations()&#xD;&#xA;   ->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::ProblemObservation))</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_hVw60Bg9Ed-PS-Y_2ABBMQ" name="containsAlertObservation" constrainedElement="_GgvgUDxbEd6JwqSGecoePg">
@@ -96,8 +94,7 @@
         <language>Analysis</language>
         <language>OCL</language>
         <body>In Alert Section, a ProblemAct SHOULD contain one or more Alert Observations.</body>
-        <body>self.getSection().oclIsKindOf(ccd::AlertsSection) implies self.getObservations()&#xD;
-   ->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation))</body>
+        <body>self.getSection().oclIsKindOf(ccd::AlertsSection) implies self.getObservations()&#xD;&#xA;   ->exists(obs : cda::Observation | obs.oclIsKindOf(ccd::AlertObservation))</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_WdDEkBZrEd-kKd2N285_Sw" name="containsPatientAwareness" constrainedElement="_GgvgUDxbEd6JwqSGecoePg">
@@ -154,13 +151,7 @@
         <language>Analysis</language>
         <language>OCL</language>
         <body>SHALL contain one or more sources of information.</body>
-        <body>not self.informant->isEmpty() &#xD;
-or not self.getSection().informant->isEmpty()&#xD;
-or not self.getClinicalDocument().informant->isEmpty()&#xD;
-or self.reference->exists(ref : cda::Reference | ref.typeCode = vocab::x_ActRelationshipExternalReference::XCRPT)&#xD;
-or (self.entryRelationship->exists(rel : cda::EntryRelationship | &#xD;
-   rel.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR&#xD;
-   and rel.observation.code.code = '48766-0'))</body>
+        <body>not self.informant->isEmpty() &#xD;&#xA;or not self.getSection().informant->isEmpty()&#xD;&#xA;or not self.getClinicalDocument().informant->isEmpty()&#xD;&#xA;or self.reference->exists(ref : cda::Reference | ref.typeCode = vocab::x_ActRelationshipExternalReference::XCRPT)&#xD;&#xA;or (self.entryRelationship->exists(rel : cda::EntryRelationship | &#xD;&#xA;   rel.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR&#xD;&#xA;   and rel.observation.code.code = '48766-0'))</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_vL9Y4BZsEd-kKd2N285_Sw" name="containsPatientAwareness" constrainedElement="_IjIO0DxbEd6JwqSGecoePg">

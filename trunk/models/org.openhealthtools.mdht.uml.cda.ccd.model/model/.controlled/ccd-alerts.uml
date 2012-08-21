@@ -59,13 +59,7 @@
         <language>Analysis</language>
         <language>OCL</language>
         <body>An alert observation contains one or more sources of information.</body>
-        <body>not self.informant->isEmpty() &#xD;
-or not self.getSection().informant->isEmpty()&#xD;
-or not self.getClinicalDocument().informant->isEmpty()&#xD;
-or self.reference->exists(ref : cda::Reference | ref.typeCode = vocab::x_ActRelationshipExternalReference::XCRPT)&#xD;
-or (self.entryRelationship->exists(rel : cda::EntryRelationship | &#xD;
-   rel.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR&#xD;
-   and rel.observation.code.code = '48766-0'))</body>
+        <body>not self.informant->isEmpty() &#xD;&#xA;or not self.getSection().informant->isEmpty()&#xD;&#xA;or not self.getClinicalDocument().informant->isEmpty()&#xD;&#xA;or self.reference->exists(ref : cda::Reference | ref.typeCode = vocab::x_ActRelationshipExternalReference::XCRPT)&#xD;&#xA;or (self.entryRelationship->exists(rel : cda::EntryRelationship | &#xD;&#xA;   rel.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR&#xD;&#xA;   and rel.observation.code.code = '48766-0'))</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_byigoBW9Ed-6K-YJpbwRmQ" name="agentRepresentation" constrainedElement="_qV72IHrREd68l9lQ-TLEBQ">
@@ -89,8 +83,7 @@ or (self.entryRelationship->exists(rel : cda::EntryRelationship | &#xD;
         <language>Analysis</language>
         <language>OCL</language>
         <body>The value for participant / @typeCode in an agent participation SHALL be &quot;CSM&quot; &quot;Consumable&quot; 2.16.840.1.113883.5.90 ParticipationType STATIC.</body>
-        <body>self.participant->one(entity : cda::Participant2 |&#xD;
-  entity.typeCode = vocab::ParticipationType::CSM)</body>
+        <body>self.participant->one(entity : cda::Participant2 |&#xD;&#xA;  entity.typeCode = vocab::ParticipationType::CSM)</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_HuDFIFfhEeCQ8PeHNHg5Pw" name="participantRoleClassCode" constrainedElement="_IEdXABW-Ed-6K-YJpbwRmQ">
@@ -98,8 +91,7 @@ or (self.entryRelationship->exists(rel : cda::EntryRelationship | &#xD;
         <language>Analysis</language>
         <language>OCL</language>
         <body>The value for Observation / participant / participantRole / @classCode in an agent participation SHALL be &quot;MANU&quot; &quot;Manufactured&quot; 2.16.840.1.113883.5.110 RoleClass STATIC.</body>
-        <body>self.participant.participantRole->one(entity : cda::ParticipantRole |&#xD;
-  entity.classCode = vocab::RoleClassRoot::MANU)</body>
+        <body>self.participant.participantRole->one(entity : cda::ParticipantRole |&#xD;&#xA;  entity.classCode = vocab::RoleClassRoot::MANU)</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_e5Zm4FfgEeCQ8PeHNHg5Pw" name="playingEntityClassCode" constrainedElement="_qV72IHrREd68l9lQ-TLEBQ">
@@ -107,8 +99,7 @@ or (self.entryRelationship->exists(rel : cda::EntryRelationship | &#xD;
         <language>Analysis</language>
         <language>OCL</language>
         <body>The value for participant / participantRole / playingEntity / @classCode in an agent participation SHALL be &quot;MMAT&quot; &quot;Manufactured material&quot; 2.16.840.1.113883.5.41 EntityClass STATIC.</body>
-        <body>self.participant.participantRole.playingEntity->one(entity : cda::PlayingEntity |&#xD;
-  entity.classCode = vocab::EntityClassRoot::MMAT and not entity.code.oclIsUndefined())</body>
+        <body>self.participant.participantRole.playingEntity->one(entity : cda::PlayingEntity |&#xD;&#xA;  entity.classCode = vocab::EntityClassRoot::MMAT and not entity.code.oclIsUndefined())</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_udUAsFfgEeCQ8PeHNHg5Pw" name="playingEntityCode" constrainedElement="_e5Zm4FfgEeCQ8PeHNHg5Pw">
