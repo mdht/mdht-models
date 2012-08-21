@@ -52,7 +52,10 @@
         <language>Analysis</language>
         <language>OCL</language>
         <body>Contains one or more sources of information.</body>
-        <body>not self.informant->isEmpty() &#xD;&#xA;or not self.getSection().informant->isEmpty()&#xD;&#xA;or not self.getClinicalDocument().informant->isEmpty()&#xD;&#xA;or self.reference->exists(ref : cda::Reference | ref.typeCode = vocab::x_ActRelationshipExternalReference::XCRPT)</body>
+        <body>not self.informant->isEmpty() &#xD;
+or not self.getSection().informant->isEmpty()&#xD;
+or not self.getClinicalDocument().informant->isEmpty()&#xD;
+or self.reference->exists(ref : cda::Reference | ref.typeCode = vocab::x_ActRelationshipExternalReference::XCRPT)</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_1CKdMK3zEd6_ioDelDcPPg">
