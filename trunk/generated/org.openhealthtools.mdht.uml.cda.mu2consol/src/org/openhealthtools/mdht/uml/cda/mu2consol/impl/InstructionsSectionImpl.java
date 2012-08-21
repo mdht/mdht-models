@@ -6,6 +6,7 @@
  */
 package org.openhealthtools.mdht.uml.cda.mu2consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -61,6 +62,16 @@ public class InstructionsSectionImpl extends
 	 */
 	public EList<Instructions> getmu2consolInstructionss() {
 		return InstructionsSectionOperations.getmu2consolInstructionss(this);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateInstructionsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return InstructionsSectionOperations.validateInstructionsSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**

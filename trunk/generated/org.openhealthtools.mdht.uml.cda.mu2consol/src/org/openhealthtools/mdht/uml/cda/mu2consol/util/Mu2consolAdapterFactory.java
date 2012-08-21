@@ -92,10 +92,6 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 				return createAssessmentAndPlanSectionAdapter();
 			}
 			@Override
-			public Adapter caseInstructionsSection(InstructionsSection object) {
-				return createInstructionsSectionAdapter();
-			}
-			@Override
 			public Adapter caseAssessmentSection(AssessmentSection object) {
 				return createAssessmentSectionAdapter();
 			}
@@ -140,6 +136,10 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 				return createAssessmentAndPlanForConditionOrConcernAdapter();
 			}
 			@Override
+			public Adapter caseInstructionsSection(InstructionsSection object) {
+				return createInstructionsSectionAdapter();
+			}
+			@Override
 			public Adapter caseInfrastructureRoot(InfrastructureRoot object) {
 				return createInfrastructureRootAdapter();
 			}
@@ -162,10 +162,6 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseConsol_AssessmentAndPlanSection(org.openhealthtools.mdht.uml.cda.consol.AssessmentAndPlanSection object) {
 				return createConsol_AssessmentAndPlanSectionAdapter();
-			}
-			@Override
-			public Adapter caseConsol_InstructionsSection(org.openhealthtools.mdht.uml.cda.consol.InstructionsSection object) {
-				return createConsol_InstructionsSectionAdapter();
 			}
 			@Override
 			public Adapter caseConsol_AssessmentSection(org.openhealthtools.mdht.uml.cda.consol.AssessmentSection object) {
@@ -202,6 +198,10 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseConsol_PostprocedureDiagnosisSection(org.openhealthtools.mdht.uml.cda.consol.PostprocedureDiagnosisSection object) {
 				return createConsol_PostprocedureDiagnosisSectionAdapter();
+			}
+			@Override
+			public Adapter caseConsol_InstructionsSection(org.openhealthtools.mdht.uml.cda.consol.InstructionsSection object) {
+				return createConsol_InstructionsSectionAdapter();
 			}
 			@Override
 			public Adapter defaultCase(EObject object) {

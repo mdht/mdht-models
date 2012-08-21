@@ -14,6 +14,9 @@
       <importedPackage href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_XgMSwzxVEd6JwqSGecoePg"/>
     </packageImport>
     <packagedElement xmi:type="uml:Class" xmi:id="_v-6qsNkMEeGsqcJR8eqiMw" name="GeneralHeaderConstraints">
+      <ownedComment xmi:id="_BHY70OMDEeGwErp-HM3_kQ">
+        <body>INLINE</body>
+      </ownedComment>
       <generalization xmi:id="_v-6qsdkMEeGsqcJR8eqiMw">
         <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_S9OzADxXEd6JwqSGecoePg"/>
       </generalization>
@@ -201,7 +204,7 @@
           <body>(self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::AssessmentSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::AssessmentAndPlanSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::HospitalAdmissionDiagnosisSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::HospitalDischargeDiagnosisSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::PostoperativeDiagnosisSection)) or  &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::PostprocedureDiagnosisSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::EncountersSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::ProblemSection)) )</body>
         </specification>
       </ownedRule>
-      <ownedRule xmi:id="_n-eIsN32EeGdQcioKnmIhA" name="canHaveEitherRequiredOrOptionalVitalSignsSection" constrainedElement="_VG3DUNkxEeGsqcJR8eqiMw">
+      <ownedRule xmi:id="_n-eIsN32EeGdQcioKnmIhA" name="canHaveEitherRequiredOrOptionalVitalSigns" constrainedElement="_VG3DUNkxEeGsqcJR8eqiMw">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_wbQu0N32EeGdQcioKnmIhA">
           <language>OCL</language>
           <body>(self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::VitalSignsSection)) or  &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::VitalSignsSectionEntriesOptional)))</body>
@@ -211,12 +214,6 @@
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_o21eoN33EeGdQcioKnmIhA">
           <language>OCL</language>
           <body>(self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::MedicationsSection)) or  &#xD;&#xA; self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::HospitalAdmissionMedicationsSectionEntriesOptional)) or &#xD;&#xA; self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::HospitalDischargeMedicationsSection)))</body>
-        </specification>
-      </ownedRule>
-      <ownedRule xmi:id="_VYAjsOBCEeGioIEuA5-ofg" name="problemEntry" constrainedElement="_VG3DUNkxEeGsqcJR8eqiMw">
-        <specification xmi:type="uml:OpaqueExpression" xmi:id="_aTtBoOBCEeGioIEuA5-ofg">
-          <language>Java</language>
-          <body>org.openhealthtools.mdht.uml.cda.mu2consol.validation.Mu2consolConstraintValidator</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_VG3qYNkxEeGsqcJR8eqiMw" general="_v-6qsNkMEeGsqcJR8eqiMw"/>
@@ -537,7 +534,7 @@
       <ownedComment xmi:id="_wajPYOFzEeGlJOFzBdwM6w">
         <body>INLINE</body>
       </ownedComment>
-      <ownedRule xmi:id="_j1rcwOF3EeGlJOFzBdwM6w" name="carePlanningForPlanOfCareSection" constrainedElement="_svnagODKEeGdSJSga09Dyg">
+      <ownedRule xmi:id="_j1rcwOF3EeGlJOFzBdwM6w" name="carePlanningForPlanOfCare" constrainedElement="_svnagODKEeGdSJSga09Dyg">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_qaLEgOF3EeGlJOFzBdwM6w">
           <language>OCL</language>
           <language>Analysis</language>
@@ -823,7 +820,6 @@
   <CDA:AssociationValidation xmi:id="_-SBDQN32EeGdQcioKnmIhA" base_Association="_2mtwsdpiEeGzu8-aAsCS4g"/>
   <CDA:ConstraintValidation xmi:id="_pMEu0N33EeGdQcioKnmIhA" base_Constraint="_kx5CgN33EeGdQcioKnmIhA"/>
   <CDA:AssociationValidation xmi:id="_04kyMN33EeGdQcioKnmIhA" base_Association="_cgJ3gdpiEeGzu8-aAsCS4g"/>
-  <CDA:ConstraintValidation xmi:id="_6jUHQOBDEeGioIEuA5-ofg" base_Constraint="_VYAjsOBCEeGioIEuA5-ofg"/>
   <CDA:AssociationValidation xmi:id="_c4jm8eDlEeGdSJSga09Dyg" base_Association="_c4i_4-DlEeGdSJSga09Dyg"/>
   <CDA:AssociationValidation xmi:id="_kTLwAODmEeGdSJSga09Dyg" base_Association="_kTKh4uDmEeGdSJSga09Dyg"/>
   <CDA:AssociationValidation xmi:id="_r6pQoODmEeGdSJSga09Dyg" base_Association="_r6oCguDmEeGdSJSga09Dyg">
@@ -845,4 +841,5 @@
   <CDA:AssociationValidation xmi:id="_wF4Q0OF8EeGlJOFzBdwM6w" base_Association="_wF3pwOF8EeGlJOFzBdwM6w"/>
   <CDA:AssociationValidation xmi:id="_d0roAOGVEeG708usbCxwpw" base_Association="_bvo0gdk5EeGsqcJR8eqiMw"/>
   <CDA:AssociationValidation xmi:id="_7Y9e0OJREeGzd4w2xo094w" base_Association="_kGkCkeDhEeGdSJSga09Dyg"/>
+  <CDA:CDATemplate xmi:id="_gWeuwOmKEeGNCuDrPdW6ZA" base_Class="_ZK4bUODlEeGdSJSga09Dyg"/>
 </xmi:XMI>

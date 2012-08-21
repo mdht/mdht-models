@@ -1,6 +1,7 @@
 package org.openhealthtools.mdht.uml.cda.mu2consol.impl;
 
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
@@ -15,6 +16,7 @@ import org.openhealthtools.mdht.uml.cda.consol.HistoryOfPastIllnessSection;
 import org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeInstructionsSection;
 import org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeMedicationsSection;
 import org.openhealthtools.mdht.uml.cda.consol.ImmunizationsSection;
+import org.openhealthtools.mdht.uml.cda.consol.InstructionsSection;
 import org.openhealthtools.mdht.uml.cda.consol.InterventionsSection;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationsSection;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemSection;
@@ -31,7 +33,6 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.AssessmentSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.HospitalAdmissionDiagnosisSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.HospitalAdmissionMedicationsSectionEntriesOptional;
 import org.openhealthtools.mdht.uml.cda.mu2consol.HospitalDischargeDiagnosisSection;
-import org.openhealthtools.mdht.uml.cda.mu2consol.InstructionsSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.MedicationsAdministeredSection;
 import org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage;
 import org.openhealthtools.mdht.uml.cda.mu2consol.PlanOfCareSection;
@@ -93,8 +94,8 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSummaryOfCareRecordCanHaveEitherRequiredOrOptionalVitalSignsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordCanHaveEitherRequiredOrOptionalVitalSignsSection(this, diagnostics, context);
+	public boolean validateSummaryOfCareRecordCanHaveEitherRequiredOrOptionalVitalSigns(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordCanHaveEitherRequiredOrOptionalVitalSigns(this, diagnostics, context);
 	}
 
 	/**
@@ -201,8 +202,8 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSummaryOfCareRecordmu2consolPlanOfCareSectionCarePlanningForPlanOfCareSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordmu2consolPlanOfCareSectionCarePlanningForPlanOfCareSection(this, diagnostics, context);
+	public boolean validateSummaryOfCareRecordmu2consolPlanOfCareSectionCarePlanningForPlanOfCare(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordmu2consolPlanOfCareSectionCarePlanningForPlanOfCare(this, diagnostics, context);
 	}
 
 	/**
@@ -212,6 +213,15 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl implem
 	 */
 	public boolean validateSummaryOfCareRecordmu2consolMedicationsAdministeredSectionMedicationActivity(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordmu2consolMedicationsAdministeredSectionMedicationActivity(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSummaryOfCareRecordInstructionsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordInstructionsSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
