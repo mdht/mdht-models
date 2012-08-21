@@ -342,6 +342,41 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_Ekou8G1IEeGCevFpokwODw" name="SupportedFileFormats"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_Z9814G1IEeGCevFpokwODw" name="Telecom Use (US Realm Header)"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_d-Ts8G1IEeGCevFpokwODw" name="UCUM Units of Measure (case sensitive)"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_NOFMoOJaEeG3cO7ebC3QuA" name="Result Status">
+      <ownedLiteral xmi:id="_bTGmkOJaEeG3cO7ebC3QuA" name="aborted"/>
+      <ownedLiteral xmi:id="_eGq6YOJaEeG3cO7ebC3QuA" name="active"/>
+      <ownedLiteral xmi:id="_h-p4kOJaEeG3cO7ebC3QuA" name="cancelled"/>
+      <ownedLiteral xmi:id="_jYEikOJaEeG3cO7ebC3QuA" name="completed"/>
+      <ownedLiteral xmi:id="_kvdMQOJaEeG3cO7ebC3QuA" name="held"/>
+      <ownedLiteral xmi:id="_mBZ8UOJaEeG3cO7ebC3QuA" name="suspended"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_MTK-YOJsEeG3cO7ebC3QuA" name="HealthStatus">
+      <ownedLiteral xmi:id="_TMveQOJsEeG3cO7ebC3QuA" name="81323004"/>
+      <ownedLiteral xmi:id="_U4AtQOJsEeG3cO7ebC3QuA" name="313386006"/>
+      <ownedLiteral xmi:id="_YOruIOJsEeG3cO7ebC3QuA" name="162467007"/>
+      <ownedLiteral xmi:id="_aYmoAOJsEeG3cO7ebC3QuA" name="161901003"/>
+      <ownedLiteral xmi:id="_bwOiQOJsEeG3cO7ebC3QuA" name="271593001"/>
+      <ownedLiteral xmi:id="_eIRXsOJsEeG3cO7ebC3QuA" name="21134002"/>
+      <ownedLiteral xmi:id="_gxSBUOJsEeG3cO7ebC3QuA" name="161045001"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_EA1dEOWTEeGKmvzED_He2w" name="Tobacco Use"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_bgiMQOWUEeGKmvzED_He2w" name="Smoking Status">
+      <ownedLiteral xmi:id="_kObwgOWUEeGKmvzED_He2w" name="449868002"/>
+      <ownedLiteral xmi:id="_mSsHQOWUEeGKmvzED_He2w" name="428041000124106"/>
+      <ownedLiteral xmi:id="_pdLGQOWUEeGKmvzED_He2w" name="8517006"/>
+      <ownedLiteral xmi:id="_qu2JgOWUEeGKmvzED_He2w" name="266919005"/>
+      <ownedLiteral xmi:id="_shQiUOWUEeGKmvzED_He2w" name="77176002"/>
+      <ownedLiteral xmi:id="_uoyPgOWUEeGKmvzED_He2w" name="266927001"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_3NDnQOcAEeGINOJ_SD9_dA" name="Pressure Ulcer Stage">
+      <ownedLiteral xmi:id="_9AUmYOcAEeGINOJ_SD9_dA" name="421076008"/>
+      <ownedLiteral xmi:id="_-tWI4OcAEeGINOJ_SD9_dA" name="420324007"/>
+      <ownedLiteral xmi:id="__iPwkOcAEeGINOJ_SD9_dA" name="421927004"/>
+      <ownedLiteral xmi:id="_ADHpAOcBEeGINOJ_SD9_dA" name="420597008"/>
+      <ownedLiteral xmi:id="_A67awOcBEeGINOJ_SD9_dA" name="421594008"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_VwxrcOcFEeGINOJ_SD9_dA" name="Pressure Point"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_tCvWEOcFEeGINOJ_SD9_dA" name="TargetSite Qualifiers"/>
     <profileApplication xmi:id="_2B97WxSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97XBSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
@@ -740,4 +775,49 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_lC2TwGSiEeGWUMIQLWW7Kg"/>
   </term:ValueSetVersion>
   <term:ValueSetVersion xmi:id="_d-UUAG1IEeGCevFpokwODw" identifier="2.16.840.1.113883.1.11.12839" base_Enumeration="_d-Ts8G1IEeGCevFpokwODw"/>
+  <term:ValueSetVersion xmi:id="_NOFzsOJaEeG3cO7ebC3QuA" identifier="2.16.840.1.113883.11.20.9.39" version="2012-04-27" definition="This value set indicates the status of the results observation or organizer" base_Enumeration="_NOFMoOJaEeG3cO7ebC3QuA">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_bTHNoOJaEeG3cO7ebC3QuA" conceptName="aborted" base_EnumerationLiteral="_bTGmkOJaEeG3cO7ebC3QuA"/>
+  <term:ValueSetCode xmi:id="_eGq6YeJaEeG3cO7ebC3QuA" conceptName="active" base_EnumerationLiteral="_eGq6YOJaEeG3cO7ebC3QuA"/>
+  <term:ValueSetCode xmi:id="_h-p4keJaEeG3cO7ebC3QuA" conceptName="cancelled" base_EnumerationLiteral="_h-p4kOJaEeG3cO7ebC3QuA"/>
+  <term:ValueSetCode xmi:id="_jYEikeJaEeG3cO7ebC3QuA" conceptName="completed" base_EnumerationLiteral="_jYEikOJaEeG3cO7ebC3QuA"/>
+  <term:ValueSetCode xmi:id="_kvdMQeJaEeG3cO7ebC3QuA" conceptName="held" base_EnumerationLiteral="_kvdMQOJaEeG3cO7ebC3QuA"/>
+  <term:ValueSetCode xmi:id="_mBZ8UeJaEeG3cO7ebC3QuA" conceptName="suspended" base_EnumerationLiteral="_mBZ8UOJaEeG3cO7ebC3QuA"/>
+  <term:ValueSetVersion xmi:id="_MTK-YeJsEeG3cO7ebC3QuA" identifier="2.16.840.1.113883.1.11.20.12" definition="Represents the general health status of the patient." binding="Dynamic" base_Enumeration="_MTK-YOJsEeG3cO7ebC3QuA">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_TMveQeJsEeG3cO7ebC3QuA" conceptName="Alive and well" base_EnumerationLiteral="_TMveQOJsEeG3cO7ebC3QuA"/>
+  <term:ValueSetCode xmi:id="_U4AtQeJsEeG3cO7ebC3QuA" conceptName="In remission" base_EnumerationLiteral="_U4AtQOJsEeG3cO7ebC3QuA"/>
+  <term:ValueSetCode xmi:id="_YOruIeJsEeG3cO7ebC3QuA" conceptName="Symptom free" base_EnumerationLiteral="_YOruIOJsEeG3cO7ebC3QuA"/>
+  <term:ValueSetCode xmi:id="_aYmoAeJsEeG3cO7ebC3QuA" conceptName="Chronically ill" base_EnumerationLiteral="_aYmoAOJsEeG3cO7ebC3QuA"/>
+  <term:ValueSetCode xmi:id="_bwOiQeJsEeG3cO7ebC3QuA" conceptName="Severely ill" base_EnumerationLiteral="_bwOiQOJsEeG3cO7ebC3QuA"/>
+  <term:ValueSetCode xmi:id="_eIRXseJsEeG3cO7ebC3QuA" conceptName="Disabled" base_EnumerationLiteral="_eIRXsOJsEeG3cO7ebC3QuA"/>
+  <term:ValueSetCode xmi:id="_gxSBUeJsEeG3cO7ebC3QuA" conceptName="Severely disabled" base_EnumerationLiteral="_gxSBUOJsEeG3cO7ebC3QuA"/>
+  <term:ValueSetVersion xmi:id="_EA1dEeWTEeGKmvzED_He2w" identifier="2.16.840.1.113883.11.20.9.41" definition="Contains all values descending from the SNOMED CT® 365980008 tobacco use and exposure - finding hierarchy&#xD;&#xA;http://www.nlm.nih.gov/research/umls/Snomed/snomed_main.html" binding="Dynamic" base_Enumeration="_EA1dEOWTEeGKmvzED_He2w">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetVersion xmi:id="_bgrWMOWUEeGKmvzED_He2w" identifier="2.16.840.1.113883.11.20.9.38" version="2012-07-01" definition="This value set indicates the current smoking status of a patient" base_Enumeration="_bgiMQOWUEeGKmvzED_He2w">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_kObwgeWUEeGKmvzED_He2w" conceptName="Current every day smoker" base_EnumerationLiteral="_kObwgOWUEeGKmvzED_He2w"/>
+  <term:ValueSetCode xmi:id="_mSsHQeWUEeGKmvzED_He2w" conceptName="Current some day smoker" base_EnumerationLiteral="_mSsHQOWUEeGKmvzED_He2w"/>
+  <term:ValueSetCode xmi:id="_pdLGQeWUEeGKmvzED_He2w" conceptName="Former smoker" base_EnumerationLiteral="_pdLGQOWUEeGKmvzED_He2w"/>
+  <term:ValueSetCode xmi:id="_qu2JgeWUEeGKmvzED_He2w" conceptName="Never smoker (Never Smoked)" base_EnumerationLiteral="_qu2JgOWUEeGKmvzED_He2w"/>
+  <term:ValueSetCode xmi:id="_shQiUeWUEeGKmvzED_He2w" conceptName="Smoker, current status unknown" base_EnumerationLiteral="_shQiUOWUEeGKmvzED_He2w"/>
+  <term:ValueSetCode xmi:id="_uoyPgeWUEeGKmvzED_He2w" conceptName="Unknown if ever smoked" base_EnumerationLiteral="_uoyPgOWUEeGKmvzED_He2w"/>
+  <term:ValueSetVersion xmi:id="_3NE1YOcAEeGINOJ_SD9_dA" identifier="2.16.840.1.113883.11.20.9.35" definition="This value set enumerates the type of a pressure ulcer" binding="Dynamic" base_Enumeration="_3NDnQOcAEeGINOJ_SD9_dA">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetCode xmi:id="_9AVNcOcAEeGINOJ_SD9_dA" conceptName="Pressure Ulcer Stage 1" base_EnumerationLiteral="_9AUmYOcAEeGINOJ_SD9_dA"/>
+  <term:ValueSetCode xmi:id="_-tWI4ecAEeGINOJ_SD9_dA" conceptName="Pressure Ulcer Stage 2" base_EnumerationLiteral="_-tWI4OcAEeGINOJ_SD9_dA"/>
+  <term:ValueSetCode xmi:id="__iPwkecAEeGINOJ_SD9_dA" conceptName="Pressure Ulcer Stage 3" base_EnumerationLiteral="__iPwkOcAEeGINOJ_SD9_dA"/>
+  <term:ValueSetCode xmi:id="_ADIQEOcBEeGINOJ_SD9_dA" conceptName="Pressure Ulcer Stage 4" base_EnumerationLiteral="_ADHpAOcBEeGINOJ_SD9_dA"/>
+  <term:ValueSetCode xmi:id="_A67awecBEeGINOJ_SD9_dA" conceptName="Nonstageable pressure ulcer" base_EnumerationLiteral="_A67awOcBEeGINOJ_SD9_dA"/>
+  <term:ValueSetVersion xmi:id="_VwxrcecFEeGINOJ_SD9_dA" identifier="2.16.840.1.113883.11.20.9.36" definition="This value set represents points on the body that are susceptible to pressure ulcer development" binding="Dynamic" base_Enumeration="_VwxrcOcFEeGINOJ_SD9_dA">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
+  <term:ValueSetVersion xmi:id="_tCvWEecFEeGINOJ_SD9_dA" identifier="2.16.840.1.113883.11.20.9.37" binding="Dynamic" base_Enumeration="_tCvWEOcFEeGINOJ_SD9_dA">
+    <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
+  </term:ValueSetVersion>
 </xmi:XMI>

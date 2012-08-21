@@ -31,6 +31,7 @@
   </uml:Class>
   <CDA:CDATemplate xmi:id="_2SC-shSVEeGGzu7fmW9pXw" base_Class="_2SC-sBSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.47" assigningAuthorityName="HL7">
     <ruleId>CONF:8623</ruleId>
+    <ruleId>CONF:10495</ruleId>
   </CDA:CDATemplate>
   <CDA:ConstraintValidation xmi:id="_2SJFYxSVEeGGzu7fmW9pXw" severity="WARNING"/>
   <CDA:ConstraintValidation xmi:id="_2SJFahSVEeGGzu7fmW9pXw" severity="WARNING"/>
@@ -124,7 +125,9 @@
     <ruleId>CONF:8590</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:EntryRelationship xmi:id="_2Iv4whSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2Iv4wBSVEeGGzu7fmW9pXw" typeCode="SUBJ">
-    <ruleId>CONF:8619</ruleId>
+    <ruleId>CONF:8675</ruleId>
+    <ruleId>CONF:8676</ruleId>
+    <ruleId>CONF:15526</ruleId>
   </CDA:EntryRelationship>
   <uml:Class xmi:id="_2IbIoBSVEeGGzu7fmW9pXw" name="FamilyHistoryOrganizer">
     <ownedComment xmi:id="_nxLqwCEhEeGCQOQgxKvcXw">
@@ -175,7 +178,7 @@
         <generalization xmi:id="_nSFvINc4EeGfQ6frO0B-Jg">
           <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_grTqsEcaEd6besF9iFIJkQ"/>
         </generalization>
-        <ownedAttribute xmi:id="_uHs8ENc4EeGfQ6frO0B-Jg" name="classCode" visibility="private">
+        <ownedAttribute xmi:id="_uHs8ENc4EeGfQ6frO0B-Jg" name="classCode" visibility="private" isReadOnly="true">
           <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOpv0DcEd6xYZuu1VKCVw"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uHs8Edc4EeGfQ6frO0B-Jg" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uHs8Etc4EeGfQ6frO0B-Jg"/>
@@ -232,11 +235,17 @@
             <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_v0X4EErqEd6FXKclYGEDCw"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_QeHLkNc5EeGfQ6frO0B-Jg" name="sDTCDeceasedInd" visibility="private" aggregation="composite">
+            <ownedComment xmi:id="_5-YtcOMxEeGfv4R-kzpM0g">
+              <body>The prefix sdtc: SHALL be bound to the namespace &quot;urn:hl7-org:sdtc&quot;. The use of the namespace provides a necessary extension to CDA R2 for the use of the deceasedInd element</body>
+            </ownedComment>
             <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_r1WssDxjEd6JwqSGecoePg"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QeHLkdc5EeGfQ6frO0B-Jg"/>
             <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_rS5VoAPjEeGdM61FsLhcmQ"/>
           </ownedAttribute>
           <ownedAttribute xmi:id="_QeHLktc5EeGfQ6frO0B-Jg" name="sDTCDeceasedTime" visibility="private" aggregation="composite">
+            <ownedComment xmi:id="_FMN30OMyEeGfv4R-kzpM0g">
+              <body>The prefix sdtc: SHALL be bound to the namespace &quot;urn:hl7-org:sdtc&quot;. The use of the namespace provides a necessary extension to CDA R2 for the use of the deceasedTime element</body>
+            </ownedComment>
             <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_4ysYYD59Ed6cla2oXsPtlA"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QeHLk9c5EeGfQ6frO0B-Jg"/>
             <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_LJEdAAPkEeGdM61FsLhcmQ"/>
@@ -287,6 +296,7 @@
   </CDA:CodeSystemConstraint>
   <CDA:AssociationValidation xmi:id="_2I6Q0hSVEeGGzu7fmW9pXw" base_Association="_2I6Q0BSVEeGGzu7fmW9pXw">
     <ruleId>CONF:8607</ruleId>
+    <ruleId>CONF:16888</ruleId>
   </CDA:AssociationValidation>
   <uml:Class xmi:id="_2IWQIxSVEeGGzu7fmW9pXw" name="FamilyHistorySection">
     <ownedComment xmi:id="_2JJhYBSVEeGGzu7fmW9pXw" annotatedElement="_2IWQIxSVEeGGzu7fmW9pXw">
@@ -319,7 +329,7 @@
   </CDA:CDATemplate>
   <CDA:CodeSystemConstraint xmi:id="_2IYsYRSVEeGGzu7fmW9pXw" code="10157-6" displayName="Family History" base_Property="_2IYsYBSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:7933</ruleId>
+    <ruleId>CONF:15470</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_2IZ6gRSVEeGGzu7fmW9pXw" base_Property="_2IZ6gBSVEeGGzu7fmW9pXw">
     <ruleId>CONF:7934</ruleId>
@@ -344,7 +354,9 @@
     <ruleId>CONF:8591</ruleId>
   </CDA:ValueSetConstraint>
   <CDA:EntryRelationship xmi:id="_t5S_0CHiEeGFLIX-2_sWzA" severity="INFO" base_Association="_Z-2U8hU8EeGbmN_W114JUw">
-    <ruleId>CONF:8629</ruleId>
+    <ruleId>CONF:8678</ruleId>
+    <ruleId>CONF:8679</ruleId>
+    <ruleId>CONF:15527</ruleId>
   </CDA:EntryRelationship>
   <CDA:ConstraintValidation xmi:id="_2HqIYCHiEeGFLIX-2_sWzA" base_Constraint="_web2ECHiEeGFLIX-2_sWzA">
     <ruleId>CONF:8677</ruleId>
@@ -354,40 +366,49 @@
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_x-uHoCHjEeGFLIX-2_sWzA" code="ASSERTION" displayName="Assertion" base_Property="_2SC-vRSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_4AnRQCYWEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:8624</ruleId>
+    <ruleId>CONF:16889</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:CodeSystemConstraint xmi:id="_Ow2PMCHkEeGFLIX-2_sWzA" code="419099009" displayName="Dead" base_Property="_8y9tUCHjEeGFLIX-2_sWzA">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:8626</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:PropertyValidation xmi:id="_G2dBIHnsEeGgiPp0lBONag" base_Property="_2IpyJhSVEeGGzu7fmW9pXw"/>
-  <CDA:PropertyValidation xmi:id="_xoDdYNc4EeGfQ6frO0B-Jg" base_Property="_uHs8ENc4EeGfQ6frO0B-Jg"/>
-  <CDA:ValueSetConstraint xmi:id="_-8ThsNc4EeGfQ6frO0B-Jg" base_Property="_6_OoINc4EeGfQ6frO0B-Jg">
+  <CDA:PropertyValidation xmi:id="_xoDdYNc4EeGfQ6frO0B-Jg" base_Property="_uHs8ENc4EeGfQ6frO0B-Jg">
+    <ruleId>CONF:15245</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ValueSetConstraint xmi:id="_-8ThsNc4EeGfQ6frO0B-Jg" base_Property="_6_OoINc4EeGfQ6frO0B-Jg" severity="WARNING">
     <reference href="../consol-vocab.uml#_bkwYcW1EEeGCevFpokwODw"/>
+    <ruleId>CONF:15247</ruleId>
   </CDA:ValueSetConstraint>
-  <CDA:PropertyValidation xmi:id="_CY-c4Nc5EeGfQ6frO0B-Jg" severity="WARNING" base_Property="_6_OoINc4EeGfQ6frO0B-Jg"/>
+  <CDA:PropertyValidation xmi:id="_CY-c4Nc5EeGfQ6frO0B-Jg" base_Property="_6_OoINc4EeGfQ6frO0B-Jg">
+    <ruleId>CONF:15246</ruleId>
+  </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_UVIgcNc5EeGfQ6frO0B-Jg" severity="WARNING" base_Property="_QeHLlNc5EeGfQ6frO0B-Jg">
-    <ruleId>CONF:8618</ruleId>
+    <ruleId>CONF:15249</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_VkoZcNc5EeGfQ6frO0B-Jg" base_Property="_QeGkgNc5EeGfQ6frO0B-Jg">
-    <ruleId>CONF:8614</ruleId>
+    <ruleId>CONF:15974</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_WfOZcNc5EeGfQ6frO0B-Jg" severity="WARNING" base_Property="_QeGkg9c5EeGfQ6frO0B-Jg">
-    <ruleId>CONF:8615</ruleId>
+    <ruleId>CONF:15976</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_XHprYNc5EeGfQ6frO0B-Jg" severity="INFO" base_Property="_QeHLkNc5EeGfQ6frO0B-Jg">
-    <ruleId>CONF:8616</ruleId>
+    <ruleId>CONF:15981</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_X9cD4Nc5EeGfQ6frO0B-Jg" severity="INFO" base_Property="_QeHLktc5EeGfQ6frO0B-Jg">
-    <ruleId>CONF:8617</ruleId>
+    <ruleId>CONF:15982</ruleId>
   </CDA:PropertyValidation>
   <CDA:ConstraintValidation xmi:id="_oC2BM9c5EeGfQ6frO0B-Jg" severity="WARNING" base_Constraint="_oC2BMNc5EeGfQ6frO0B-Jg">
-    <ruleId>CONF:8631</ruleId>
+    <ruleId>CONF:15983</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ConstraintValidation xmi:id="_p1-LsNc5EeGfQ6frO0B-Jg" severity="INFO" base_Constraint="_p19koNc5EeGfQ6frO0B-Jg">
     <ruleId>CONF:8632</ruleId>
   </CDA:ConstraintValidation>
   <CDA:ValueSetConstraint xmi:id="_BVPq0NdAEeGfQ6frO0B-Jg" base_Property="_QeGkgNc5EeGfQ6frO0B-Jg">
     <reference href="../consol-vocab.uml#_LGTEUDVREeGIw7CntkyPQw"/>
+    <ruleId>CONF:15975</ruleId>
   </CDA:ValueSetConstraint>
+  <CDA:PropertyValidation xmi:id="_CXj0UOMxEeGfv4R-kzpM0g" base_Property="_2IYsYBSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:15469</ruleId>
+  </CDA:PropertyValidation>
 </xmi:XMI>

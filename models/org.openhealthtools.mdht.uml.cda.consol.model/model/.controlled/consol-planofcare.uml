@@ -10,34 +10,45 @@
     <ownedAttribute xmi:id="_2NP-XRSVEeGGzu7fmW9pXw" name="code" visibility="private">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
     </ownedAttribute>
+    <ownedAttribute xmi:id="_jNy_oOMzEeGfv4R-kzpM0g" name="title" visibility="private" aggregation="composite">
+      <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_EaTNsDxaEd6JwqSGecoePg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_meO1oOMzEeGfv4R-kzpM0g" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_meO1oeMzEeGfv4R-kzpM0g" value="1"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_AP-EoErnEd6FXKclYGEDCw"/>
+    </ownedAttribute>
     <ownedAttribute xmi:id="_2NWE4BSVEeGGzu7fmW9pXw" name="text" visibility="private" aggregation="composite">
       <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_0jvq8E8AEd6ohP_YEXs4Wg"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2NWE4RSVEeGGzu7fmW9pXw" value="1"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2NWE4hSVEeGGzu7fmW9pXw" value="1"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2NWE5BSVEeGGzu7fmW9pXw" name="planOfCareActivityAct" visibility="private" type="_2NWE5xSVEeGGzu7fmW9pXw" association="_2NWE_hSVEeGGzu7fmW9pXw">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2NWE5RSVEeGGzu7fmW9pXw" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2NWE5hSVEeGGzu7fmW9pXw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7-YkYOMzEeGfv4R-kzpM0g" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7-YkYeMzEeGfv4R-kzpM0g"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2NWFARSVEeGGzu7fmW9pXw" name="planOfCareActivityEncounter" visibility="private" type="_2NWFBBSVEeGGzu7fmW9pXw" association="_2NcLiBSVEeGGzu7fmW9pXw">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2NWFAhSVEeGGzu7fmW9pXw" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2NWFAxSVEeGGzu7fmW9pXw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8Qr1UOMzEeGfv4R-kzpM0g" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8Qr1UeMzEeGfv4R-kzpM0g"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2NcLixSVEeGGzu7fmW9pXw" name="planOfCareActivityObservation" visibility="private" type="_2NcLjhSVEeGGzu7fmW9pXw" association="_2NiSJBSVEeGGzu7fmW9pXw">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2NcLjBSVEeGGzu7fmW9pXw" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2NcLjRSVEeGGzu7fmW9pXw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8jIQMOMzEeGfv4R-kzpM0g" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8jIQMeMzEeGfv4R-kzpM0g"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2NiSJxSVEeGGzu7fmW9pXw" name="planOfCareActivityProcedure" visibility="private" type="_2NiSKhSVEeGGzu7fmW9pXw" association="_2NiSPxSVEeGGzu7fmW9pXw">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2NiSKBSVEeGGzu7fmW9pXw" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2NiSKRSVEeGGzu7fmW9pXw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_80-1MOMzEeGfv4R-kzpM0g" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_80-1MeMzEeGfv4R-kzpM0g"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2NoYwBSVEeGGzu7fmW9pXw" name="planOfCareActivitySubstanceAdministration" visibility="private" type="_2NoYwxSVEeGGzu7fmW9pXw" association="_2NoY3hSVEeGGzu7fmW9pXw">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2NoYwRSVEeGGzu7fmW9pXw" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2NoYwhSVEeGGzu7fmW9pXw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9PwssOMzEeGfv4R-kzpM0g" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9PwsseMzEeGfv4R-kzpM0g"/>
     </ownedAttribute>
     <ownedAttribute xmi:id="_2NoY4RSVEeGGzu7fmW9pXw" name="planOfCareActivitySupply" visibility="private" type="_2NoY5BSVEeGGzu7fmW9pXw" association="_2NufZxSVEeGGzu7fmW9pXw">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2NoY4hSVEeGGzu7fmW9pXw" value="1"/>
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2NoY4xSVEeGGzu7fmW9pXw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9kltMOMzEeGfv4R-kzpM0g" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9kltMeMzEeGfv4R-kzpM0g"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_4g3UoOMzEeGfv4R-kzpM0g" name="instructions" association="_4g3UouMzEeGfv4R-kzpM0g">
+      <type xmi:type="uml:Class" href="consol-other.uml#_2G8h9RSVEeGGzu7fmW9pXw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-Q7OwOMzEeGfv4R-kzpM0g" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-Q7OweMzEeGfv4R-kzpM0g"/>
     </ownedAttribute>
   </uml:Class>
   <uml:Association xmi:id="_2NWE_hSVEeGGzu7fmW9pXw" memberEnd="_2NWE5BSVEeGGzu7fmW9pXw _2NWE_xSVEeGGzu7fmW9pXw">
@@ -66,7 +77,7 @@
   </CDA:ConstraintValidation>
   <CDA:CodeSystemConstraint xmi:id="_2NP-XhSVEeGGzu7fmW9pXw" code="18776-5" displayName="Treatment plan" base_Property="_2NP-XRSVEeGGzu7fmW9pXw">
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_3-cwsCWrEd-iTYfpNb4PkQ"/>
-    <ruleId>CONF:7724</ruleId>
+    <ruleId>CONF:14750</ruleId>
   </CDA:CodeSystemConstraint>
   <CDA:TextValue xmi:id="_2NP-YBSVEeGGzu7fmW9pXw">
     <ruleId>CONF-483</ruleId>
@@ -95,7 +106,7 @@
   </CDA:AssociationValidation>
   <CDA:AssociationValidation xmi:id="_2NufaRSVEeGGzu7fmW9pXw" severity="INFO" base_Association="_2NufZxSVEeGGzu7fmW9pXw">
     <ruleId>CONF:8813</ruleId>
-    <ruleId>CONF:8814</ruleId>
+    <ruleId>CONF:14756</ruleId>
   </CDA:AssociationValidation>
   <uml:Class xmi:id="_2NWE5xSVEeGGzu7fmW9pXw" name="PlanOfCareActivityAct">
     <generalization xmi:id="_2NWE_RSVEeGGzu7fmW9pXw">
@@ -116,7 +127,8 @@
     </ownedAttribute>
   </uml:Class>
   <CDA:CDATemplate xmi:id="_2NWE8xSVEeGGzu7fmW9pXw" base_Class="_2NWE5xSVEeGGzu7fmW9pXw" templateId="2.16.840.1.113883.10.20.22.4.39">
-    <ruleId>CONF:8544.CONF:10510</ruleId>
+    <ruleId>CONF:8544</ruleId>
+    <ruleId>CONF:10510</ruleId>
   </CDA:CDATemplate>
   <CDA:ConstraintValidation xmi:id="_2NWE9hSVEeGGzu7fmW9pXw">
     <ruleId>CONF-488</ruleId>
@@ -332,4 +344,17 @@
   <CDA:PropertyValidation xmi:id="__uzHoNy0EeG3d7pEoxuOZA" base_Property="_2NufYxSVEeGGzu7fmW9pXw">
     <ruleId>CONF:8577</ruleId>
   </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_loOasOMzEeGfv4R-kzpM0g" base_Property="_jNy_oOMzEeGfv4R-kzpM0g">
+    <ruleId>CONF:16986</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_u1XfsOMzEeGfv4R-kzpM0g" base_Property="_2NP-XRSVEeGGzu7fmW9pXw">
+    <ruleId>CONF:14749</ruleId>
+  </CDA:PropertyValidation>
+  <uml:Association xmi:id="_4g3UouMzEeGfv4R-kzpM0g" memberEnd="_4g3UoOMzEeGfv4R-kzpM0g _4g3Uo-MzEeGfv4R-kzpM0g">
+    <ownedEnd xmi:id="_4g3Uo-MzEeGfv4R-kzpM0g" type="_2NP-QxSVEeGGzu7fmW9pXw" association="_4g3UouMzEeGfv4R-kzpM0g"/>
+  </uml:Association>
+  <CDA:AssociationValidation xmi:id="_AZDY4OM0EeGfv4R-kzpM0g" severity="INFO" base_Association="_4g3UouMzEeGfv4R-kzpM0g">
+    <ruleId>CONF:14695</ruleId>
+    <ruleId>CONF:16751</ruleId>
+  </CDA:AssociationValidation>
 </xmi:XMI>
