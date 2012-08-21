@@ -6,8 +6,6 @@
 <topicref href="AssessmentAndPlanForConditionOrConcern.dita" type="topic" />
 <topicref href="AssessmentAndPlanSection.dita" type="topic" />
 <topicref href="AssessmentSection.dita" type="topic" />
-<topicref href="ClinicalOfficeVisitSummary.dita" type="topic" />
-<topicref href="CreateTransmitSummaryOfCareRecord.dita" type="topic" />
 <topicref href="GeneralHeaderConstraints.dita" type="topic" />
 <topicref href="HospitalAdmissionDiagnosisSection.dita" type="topic" />
 <topicref href="HospitalAdmissionMedicationsSectionEntriesOptional.dita" type="topic" />
@@ -19,6 +17,4 @@
 <topicref href="PostprocedureDiagnosisSection.dita" type="topic" />
 <topicref href="PreoperativeDiagnosisSection.dita" type="topic" />
 <topicref href="SummaryOfCareRecord.dita" type="topic" />
-<topicref href="VDTAmbulatoryPatientInfo.dita" type="topic" />
-<topicref href="VDTInpatientPatientInfo.dita" type="topic" />
 </map>

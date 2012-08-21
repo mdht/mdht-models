@@ -73,7 +73,7 @@
 <ul><li><p><lines><i>Instructions Section will satisfy the following MU2 elements :
 - Clinical instructions
 - Recommended patient decision aids (if applicable to the visit)</i></lines></p></li></ul><ol>
-<li>Contains exactly one [1..1] <xref href="../InstructionsSection.dita">Instructions Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.45</tt>)</li></ol></li>
+<li>Contains exactly one [1..1] <xref href="../InstructionsSection.dita">Instructions Section</xref></li></ol></li>
 <li>Contains zero or one [0..1] <tt><b>component</b></tt>
 <ol>
 <li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/InterventionsSection.html">Consol Interventions Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.21.2.3</tt>)</li></ol></li>
@@ -110,9 +110,8 @@
 <li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/ReasonForReferralSection.html">Consol Reason For Referral Section</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.3.1</tt>)</li></ol></li>
 <li><b>SHALL</b> satisfy: cannotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection (CONF:10055)</li>
 <li><b>SHALL</b> have one of Assessment (2.16.840.1.113883.10.20.22.2.8) or Assessment and Plan (2.16.840.1.113883.10.20.22.2.9) or  Hospital Admission Diagnosis (2.16.840.1.113883.10.20.22.2.43) or Hospital Discharge Diagnosis (2.16.840.1.113883.10.20.22.2.24) or Postoperative Diagnosis (2.16.840.1.113883.10.20.22.2.35)  or  Postprocedure Diagnosis (2.16.840.1.113883.10.20.22.2.36) or Encounters (entries required: 2.16.840.1.113883.10.20.22.2.22.1) or Problem (entries required: 2.16.840.1.113883.10.20.22.2.5.1)</li>
-<li><b>SHALL</b> satisfy: canHaveEitherRequiredOrOptionalVitalSignsSection</li>
+<li><b>SHALL</b> satisfy: canHaveEitherRequiredOrOptionalVitalSigns</li>
 <li><b>SHALL</b> satisfy: medicationListConstraint</li>
-<li><b>SHALL</b> satisfy: problemEntry</li>
 </ol>
 <ol id="aggregate">
 <li><b>SHALL</b> conform to <xref href="../GeneralHeaderConstraints.dita">General Header Constraints</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.1.1</tt>)</li>
@@ -196,7 +195,7 @@
 <li>Contains exactly one [1..1] <xref href="../AssessmentAndPlanSection.dita">Assessment And Plan Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.9</tt>)</li></ol></li>
 <li><b>SHALL</b> contain exactly one [1..1] <tt><b>component</b></tt>
 <ol>
-<li>Contains exactly one [1..1] <xref href="../InstructionsSection.dita">Instructions Section</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.2.45</tt>)</li></ol><ul><li><p><lines><i>Instructions Section will satisfy the following MU2 elements :
+<li>Contains exactly one [1..1] <xref href="../InstructionsSection.dita">Instructions Section</xref></li></ol><ul><li><p><lines><i>Instructions Section will satisfy the following MU2 elements :
 - Clinical instructions
 - Recommended patient decision aids (if applicable to the visit)</i></lines></p></li></ul></li>
 <li>Contains zero or one [0..1] <tt><b>component</b></tt>
@@ -235,7 +234,271 @@
 <li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/ReasonForReferralSection.html">Consol Reason For Referral Section</xref> (templateId: <tt>1.3.6.1.4.1.19376.1.5.3.1.3.1</tt>)</li></ol></li>
 <li><b>SHALL</b> satisfy: cannotHaveChiefComplaintAndReasonForVisitWithChiefComplaintSectionOrReasonSection (CONF:10055)</li>
 <li><b>SHALL</b> have one of Assessment (2.16.840.1.113883.10.20.22.2.8) or Assessment and Plan (2.16.840.1.113883.10.20.22.2.9) or  Hospital Admission Diagnosis (2.16.840.1.113883.10.20.22.2.43) or Hospital Discharge Diagnosis (2.16.840.1.113883.10.20.22.2.24) or Postoperative Diagnosis (2.16.840.1.113883.10.20.22.2.35)  or  Postprocedure Diagnosis (2.16.840.1.113883.10.20.22.2.36) or Encounters (entries required: 2.16.840.1.113883.10.20.22.2.22.1) or Problem (entries required: 2.16.840.1.113883.10.20.22.2.5.1)</li>
-<li><b>SHALL</b> satisfy: canHaveEitherRequiredOrOptionalVitalSignsSection</li>
+<li><b>SHALL</b> satisfy: canHaveEitherRequiredOrOptionalVitalSigns</li>
 <li><b>SHALL</b> satisfy: medicationListConstraint</li>
-<li><b>SHALL</b> satisfy: problemEntry</li>
 </ol>
+<section id="tableconformance"><p><table frame="all" scale="80" pgwide="1" ><tgroup cols="8" align="left" colsep = "1" rowsep = "1" > <colspec colname="col0" colnum="0" /><colspec colname="col1" colnum="1" /><colspec colname="col2" colnum="2" /><colspec colname="col3" colnum="3" /><colspec colname="col4" colnum="4" /><colspec colname="col5" colnum="5" /><colspec colname="col6" colnum="6" /><colspec colname="col7" colnum="7" /><thead> <row><entry namest="col0" nameend="col7" >mu2consol::SummaryOfCareRecord</entry>  </row>  <row><entry namest="col0" nameend="col7" >cda::clinicaldocument[cda:templateId/@root = ]/</entry>  </row>  <row><entry>Name</entry><entry>XPath</entry><entry>Cardinality</entry><entry>Severity</entry><entry>Nullable</entry><entry>Data Type</entry><entry>Conformance</entry><entry>Value(s)</entry></row></thead><tbody><row><entry>classCode</entry><entry>@classCode</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>ActClinicalDocument</entry><entry></entry><entry> DOCCLIN</entry></row> 
+<row><entry>moodCode</entry><entry>@moodCode</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>ActMood</entry><entry></entry><entry> EVN</entry></row> 
+<row><entry>nullFlavor</entry><entry>@nullFlavor</entry><entry>0..1</entry><entry></entry><entry>NO</entry><entry>NullFlavor</entry><entry></entry><entry> ASKU</entry></row> 
+<row><entry>code</entry><entry>code</entry><entry>1..1</entry><entry></entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
+<row><entry>confidentialityCode</entry><entry>confidentialityCode</entry><entry>1..1</entry><entry></entry><entry>YES</entry><entry>CE</entry><entry></entry><entry> </entry></row> 
+<row><entry>copyTime</entry><entry>copyTime</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>TS</entry><entry></entry><entry> </entry></row> 
+<row><entry>effectiveTime</entry><entry>effectiveTime</entry><entry>1..1</entry><entry></entry><entry>YES</entry><entry>TS</entry><entry></entry><entry> </entry></row> 
+<row><entry>id</entry><entry>id</entry><entry>1..1</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> </entry></row> 
+<row><entry>languageCode</entry><entry>languageCode</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
+<row><entry>realmCode</entry><entry>realmCode</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>CS</entry><entry></entry><entry> </entry></row> 
+<row><entry>setId</entry><entry>setId</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> </entry></row> 
+<row><entry>templateId</entry><entry>templateId</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>II</entry><entry></entry><entry> </entry></row> 
+<row><entry>title</entry><entry>title</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>ST</entry><entry></entry><entry> </entry></row> 
+<row><entry>versionNumber</entry><entry>versionNumber</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>INT</entry><entry></entry><entry> </entry></row> 
+<row><entry>allergiesSection</entry><entry>allergiesSection</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>AllergiesSection</entry><entry></entry><entry> </entry></row> 
+<row><entry>allergiesSectionEntriesOptional</entry><entry>allergiesSectionEntriesOptional</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>AllergiesSectionEntriesOptional</entry><entry></entry><entry> </entry></row> 
+<row><entry>assessmentAndPlanSection</entry><entry>assessmentAndPlanSection</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>AssessmentAndPlanSection</entry><entry></entry><entry> </entry></row> 
+<row><entry>assessmentSection</entry><entry>assessmentSection</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>AssessmentSection</entry><entry></entry><entry> </entry></row> 
+<row><entry>authenticator</entry><entry>authenticator</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Authenticator</entry><entry></entry><entry> </entry></row> 
+<row><entry>author</entry><entry>author</entry><entry>1..*</entry><entry></entry><entry>YES</entry><entry>Author</entry><entry></entry><entry> </entry></row> 
+<row><entry>authorization</entry><entry>authorization</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Authorization</entry><entry></entry><entry> </entry></row> 
+<row><entry>chiefComplaintAndReasonForVisitSection</entry><entry>chiefComplaintAndReasonForVisitSection</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>ChiefComplaintAndReasonForVisitSection</entry><entry></entry><entry> </entry></row> 
+<row><entry>chiefComplaintSection</entry><entry>chiefComplaintSection</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>ChiefComplaintSection</entry><entry></entry><entry> </entry></row> 
+<row><entry>component</entry><entry>component</entry><entry>1..1</entry><entry></entry><entry>YES</entry><entry>Component2</entry><entry></entry><entry> </entry></row> 
+<row><entry>componentOf</entry><entry>componentOf</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>Component1</entry><entry></entry><entry> </entry></row> 
+<row><entry>custodian</entry><entry>custodian</entry><entry>1..1</entry><entry></entry><entry>YES</entry><entry>Custodian</entry><entry></entry><entry> </entry></row> 
+<row><entry>dataEnterer</entry><entry>dataEnterer</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>DataEnterer</entry><entry></entry><entry> </entry></row> 
+<row><entry>documentationOf</entry><entry>documentationOf</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>DocumentationOf</entry><entry></entry><entry> </entry></row> 
+<row><entry>encountersSection</entry><entry>encountersSection</entry><entry>0..1</entry><entry>SHALL</entry><entry>YES</entry><entry>EncountersSection</entry><entry></entry><entry> </entry></row> 
+<row><entry>historyOfPastIllnessSection</entry><entry>historyOfPastIllnessSection</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>HistoryOfPastIllnessSection</entry><entry></entry><entry> </entry></row> 
+<row><entry>hospitalAdmissionDiagnosisSection</entry><entry>hospitalAdmissionDiagnosisSection</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>HospitalAdmissionDiagnosisSection</entry><entry></entry><entry> </entry></row> 
+<row><entry>hospitalAdmissionMedicationsSectionEntriesOptional</entry><entry>hospitalAdmissionMedicationsSectionEntriesOptional</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>HospitalAdmissionMedicationsSectionEntriesOptional</entry><entry></entry><entry> </entry></row> 
+<row><entry>hospitalDischargeDiagnosisSection</entry><entry>hospitalDischargeDiagnosisSection</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>HospitalDischargeDiagnosisSection</entry><entry></entry><entry> </entry></row> 
+<row><entry>hospitalDischargeInstructionsSection</entry><entry>hospitalDischargeInstructionsSection</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>HospitalDischargeInstructionsSection</entry><entry></entry><entry> </entry></row> 
+<row><entry>hospitalDischargeMedicationsSection</entry><entry>hospitalDischargeMedicationsSection</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>HospitalDischargeMedicationsSection</entry><entry></entry><entry> </entry></row> 
+<row><entry>immunizationsSection</entry><entry>immunizationsSection</entry><entry>1..1</entry><entry></entry><entry>YES</entry><entry>ImmunizationsSection</entry><entry></entry><entry> </entry></row> 
+<row><entry>informant</entry><entry>informant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Informant12</entry><entry></entry><entry> </entry></row> 
+<row><entry>informationRecipient</entry><entry>informationRecipient</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>InformationRecipient</entry><entry></entry><entry> </entry></row> 
+<row><entry>inFulfillmentOf</entry><entry>inFulfillmentOf</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>InFulfillmentOf</entry><entry></entry><entry> </entry></row> 
+<row><entry>instructionsSection</entry><entry>instructionsSection</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>InstructionsSection</entry><entry></entry><entry> </entry></row> 
+<row><entry>interventionsSection</entry><entry>interventionsSection</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>InterventionsSection</entry><entry></entry><entry> </entry></row> 
+<row><entry>legalAuthenticator</entry><entry>legalAuthenticator</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>LegalAuthenticator</entry><entry></entry><entry> </entry></row> 
+<row><entry>medicationsAdministeredSection</entry><entry>medicationsAdministeredSection</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>MedicationsAdministeredSection</entry><entry></entry><entry> </entry></row> 
+<row><entry>medicationsSection</entry><entry>medicationsSection</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>MedicationsSection</entry><entry></entry><entry> </entry></row> 
+<row><entry>participant</entry><entry>participant</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>Participant1</entry><entry></entry><entry> </entry></row> 
+<row><entry>planOfCareSection</entry><entry>planOfCareSection</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>PlanOfCareSection</entry><entry></entry><entry> </entry></row> 
+<row><entry>postoperativeDiagnosisSection</entry><entry>postoperativeDiagnosisSection</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>PostoperativeDiagnosisSection</entry><entry></entry><entry> </entry></row> 
+<row><entry>postprocedureDiagnosisSection</entry><entry>postprocedureDiagnosisSection</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>PostprocedureDiagnosisSection</entry><entry></entry><entry> </entry></row> 
+<row><entry>preoperativeDiagnosisSection</entry><entry>preoperativeDiagnosisSection</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>PreoperativeDiagnosisSection</entry><entry></entry><entry> </entry></row> 
+<row><entry>problemSection</entry><entry>problemSection</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ProblemSection</entry><entry></entry><entry> </entry></row> 
+<row><entry>proceduresSection</entry><entry>proceduresSection</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ProceduresSection</entry><entry></entry><entry> </entry></row> 
+<row><entry>reasonForReferralSection</entry><entry>reasonForReferralSection</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>ReasonForReferralSection</entry><entry></entry><entry> </entry></row> 
+<row><entry>reasonForVisitSection</entry><entry>reasonForVisitSection</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>ReasonForVisitSection</entry><entry></entry><entry> </entry></row> 
+<row><entry>recordTarget</entry><entry>recordTarget</entry><entry>1..*</entry><entry>SHALL</entry><entry>YES</entry><entry>RecordTarget</entry><entry></entry><entry> </entry></row> 
+<row><entry>relatedDocument</entry><entry>relatedDocument</entry><entry>0..*</entry><entry></entry><entry>YES</entry><entry>RelatedDocument</entry><entry></entry><entry> </entry></row> 
+<row><entry>resultsSection</entry><entry>resultsSection</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>ResultsSection</entry><entry></entry><entry> </entry></row> 
+<row><entry>socialHistorySection</entry><entry>socialHistorySection</entry><entry>1..1</entry><entry>SHALL</entry><entry>YES</entry><entry>SocialHistorySection</entry><entry></entry><entry> </entry></row> 
+<row><entry>typeId</entry><entry>typeId</entry><entry>1..1</entry><entry></entry><entry>YES</entry><entry>InfrastructureRootTypeId</entry><entry></entry><entry> </entry></row> 
+<row><entry>vitalSignsSection</entry><entry>vitalSignsSection</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>VitalSignsSection</entry><entry></entry><entry> </entry></row> 
+<row><entry>vitalSignsSectionEntriesOptional</entry><entry>vitalSignsSectionEntriesOptional</entry><entry>0..1</entry><entry></entry><entry>YES</entry><entry>VitalSignsSectionEntriesOptional</entry><entry></entry><entry> </entry></row> 
+</tbody></tgroup></table></p></section>
+<codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+  <typeId root="2.16.840.1.113883.1.3"/>
+  <id root="MDHT" extension="1896199359"/>
+  <code code="700315202"/>
+  <title>TEXT FOR TITLE</title>
+  <effectiveTime/>
+  <confidentialityCode code="1672736178"/>
+  <recordTarget>
+    <patientRole/>
+  </recordTarget>
+  <author>
+    <time/>
+    <assignedAuthor/>
+  </author>
+  <custodian/>
+  <component>
+    <structuredBody>
+      <component>
+        <section/>
+      </component>
+      <component>
+        <section>
+          <id root="MDHT" extension="1138499332"/>
+          <title>TEXT FOR TITLE</title>
+          <entry>
+            <act/>
+          </entry>
+          <entry>
+            <encounter/>
+          </entry>
+          <entry>
+            <observation/>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <id root="MDHT" extension="648372633"/>
+          <title>TEXT FOR TITLE</title>
+          <entry>
+            <procedure/>
+          </entry>
+          <entry>
+            <substanceAdministration classCode="SBADM"/>
+          </entry>
+          <entry>
+            <supply classCode="SPLY"/>
+          </entry>
+          <entry>
+            <observation/>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section/>
+      </component>
+      <component>
+        <section>
+          <id root="MDHT" extension="1667315587"/>
+          <title>TEXT FOR TITLE</title>
+          <entry>
+            <act/>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section/>
+      </component>
+      <component>
+        <section>
+          <id root="MDHT" extension="911465970"/>
+          <title>TEXT FOR TITLE</title>
+          <entry>
+            <observation/>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <id root="MDHT" extension="1663489477"/>
+          <title>TEXT FOR TITLE</title>
+          <entry>
+            <act/>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <id root="MDHT" extension="1057928068"/>
+          <title>TEXT FOR TITLE</title>
+          <entry>
+            <act/>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <id root="MDHT" extension="278515232"/>
+          <title>TEXT FOR TITLE</title>
+          <entry>
+            <observation/>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section/>
+      </component>
+      <component>
+        <section/>
+      </component>
+      <component>
+        <section/>
+      </component>
+      <component>
+        <section/>
+      </component>
+      <component>
+        <section/>
+      </component>
+      <component>
+        <section/>
+      </component>
+      <component>
+        <section>
+          <id root="MDHT" extension="320136053"/>
+          <title>TEXT FOR TITLE</title>
+          <entry>
+            <act/>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section/>
+      </component>
+      <component>
+        <section>
+          <id root="MDHT" extension="123504326"/>
+          <title>TEXT FOR TITLE</title>
+          <entry>
+            <substanceAdministration classCode="SBADM"/>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section/>
+      </component>
+      <component>
+        <section>
+          <id root="MDHT" extension="666247041"/>
+          <title>TEXT FOR TITLE</title>
+          <entry>
+            <act/>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section/>
+      </component>
+      <component>
+        <section/>
+      </component>
+      <component>
+        <section/>
+      </component>
+      <component>
+        <section/>
+      </component>
+      <component>
+        <section/>
+      </component>
+      <component>
+        <section/>
+      </component>
+      <component>
+        <section>
+          <id root="MDHT" extension="1555468814"/>
+          <title>TEXT FOR TITLE</title>
+          <entry>
+            <act/>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section>
+          <id root="MDHT" extension="912934191"/>
+          <title>TEXT FOR TITLE</title>
+          <entry>
+            <act/>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section/>
+      </component>
+    </structuredBody>
+  </component>
+</ClinicalDocument>]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Summary Of Care Record</ph></p>
+<p id="shortdesc">[ClinicalDocument: templateId <tt>2.16.840.1.113883.11.11.11.1.1</tt>]</p>
+</body>
+</topic>

@@ -2,10 +2,10 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="classId" xml:lang="en-us">
 <title>Instructions Section - conformance rules</title>
-<shortdesc id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.45</tt>]</shortdesc>
+<shortdesc id="shortdesc">[Section: templateId <tt>null</tt>]</shortdesc>
 <prolog id="prolog">
 <metadata><category>Section</category></metadata>
-<resourceid id="2.16.840.1.113883.10.20.22.2.45"/>
+<resourceid id="null"/>
 </prolog>
 <body>
 <section id="knownSubclasses">
@@ -15,7 +15,7 @@
 </section>
 <ol id="conformance">
 <li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/InstructionsSection.html">Consol Instructions Section</xref> template (templateId: <tt>2.16.840.1.113883.10.20.22.2.45</tt>)</li>
-<li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt>, where its type is <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/Instructions.html">Consol Instructions</xref>
 <ol>
 <li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/Instructions.html">Consol Instructions</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.20</tt>)</li></ol></li>
 </ol>
@@ -30,7 +30,7 @@
 <li><b>SHOULD</b> contain zero or more [0..*] <tt><b>entry</b></tt> (CONF:10116, CONF:10117)
 <ol>
 <li>Contains exactly one [1..1] <xref href="../Instructions.dita">Instructions</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.20</tt>)</li></ol></li>
-<li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt>
+<li><b>SHALL</b> contain at least one [1..*] <tt><b>entry</b></tt>, where its type is <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/Instructions.html">Consol Instructions</xref>
 <ol>
 <li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.consol.doc/classes/Instructions.html">Consol Instructions</xref> (templateId: <tt>2.16.840.1.113883.10.20.22.4.20</tt>)</li></ol></li>
 </ol>
@@ -56,7 +56,7 @@
 </tbody></tgroup></table></p></section>
 <codeblock id="example"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
-  <id root="MDHT" extension="809982874"/>
+  <id root="MDHT" extension="176502921"/>
   <title>TEXT FOR TITLE</title>
   <text/>
   <entry>
@@ -66,6 +66,6 @@
 <section id="changes">
 </section>
 <p><ph id="classformalname">Instructions Section</ph></p>
-<p id="shortdesc">[Section: templateId <tt>2.16.840.1.113883.10.20.22.2.45</tt>]</p>
+<p id="shortdesc">[Section: templateId <tt>null</tt>]</p>
 </body>
 </topic>
