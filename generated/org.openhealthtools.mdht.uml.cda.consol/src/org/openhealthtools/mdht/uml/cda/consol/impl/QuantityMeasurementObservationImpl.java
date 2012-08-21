@@ -10,15 +10,19 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.QuantityMeasurementObservation;
+import org.openhealthtools.mdht.uml.cda.consol.SOPInstanceObservation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.QuantityMeasurementObservationOperations;
 import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -31,12 +35,33 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class QuantityMeasurementObservationImpl extends ObservationImpl implements QuantityMeasurementObservation {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected QuantityMeasurementObservationImpl() {
 		super();
+	}
+
+	/**
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @generated
+	*/
+	@Override
+	protected EClass eStaticClass() {
+		return ConsolPackage.Literals.QUANTITY_MEASUREMENT_OBSERVATION;
+	}
+
+	/**
+	* <!-- begin-user-doc -->
+	* <!-- end-user-doc -->
+	* @generated
+	*/
+	public boolean validateQuantityMeasurementObservationCodeCodeSystemDIR(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return QuantityMeasurementObservationOperations.validateQuantityMeasurementObservationCodeCodeSystemDIR(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -44,9 +69,10 @@ public class QuantityMeasurementObservationImpl extends ObservationImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	protected EClass eStaticClass() {
-		return ConsolPackage.Literals.QUANTITY_MEASUREMENT_OBSERVATION;
+	public boolean validateQuantityMeasurementObservationCodeCodeSystemDICOM(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return QuantityMeasurementObservationOperations.validateQuantityMeasurementObservationCodeCodeSystemDICOM(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -56,7 +82,81 @@ public class QuantityMeasurementObservationImpl extends ObservationImpl implemen
 	 */
 	public boolean validateQuantityMeasurementObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return QuantityMeasurementObservationOperations.validateQuantityMeasurementObservationTemplateId(this, diagnostics, context);
+		return QuantityMeasurementObservationOperations.validateQuantityMeasurementObservationTemplateId(
+			this, diagnostics, context);
+	}
+
+	/**
+	* <!-- begin-user-doc -->
+	* <!-- end-user-doc -->
+	* @generated
+	*/
+	public boolean validateQuantityMeasurementObservationClassCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return QuantityMeasurementObservationOperations.validateQuantityMeasurementObservationClassCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateQuantityMeasurementObservationMoodCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return QuantityMeasurementObservationOperations.validateQuantityMeasurementObservationMoodCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateQuantityMeasurementObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return QuantityMeasurementObservationOperations.validateQuantityMeasurementObservationCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateQuantityMeasurementObservationEffectiveTime(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return QuantityMeasurementObservationOperations.validateQuantityMeasurementObservationEffectiveTime(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateQuantityMeasurementObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return QuantityMeasurementObservationOperations.validateQuantityMeasurementObservationValue(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateQuantityMeasurementObservationSOPInstanceObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return QuantityMeasurementObservationOperations.validateQuantityMeasurementObservationSOPInstanceObservation(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<SOPInstanceObservation> getSOPInstanceObservations() {
+		return QuantityMeasurementObservationOperations.getSOPInstanceObservations(this);
 	}
 
 	/**
@@ -65,7 +165,16 @@ public class QuantityMeasurementObservationImpl extends ObservationImpl implemen
 	 * @generated
 	 */
 	public QuantityMeasurementObservation init() {
-    	CDAUtil.init(this);
-    	return this;
+		return Initializer.Util.init(this);
+	}
+
+	/**
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   */
+	public QuantityMeasurementObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
 	}
 } // QuantityMeasurementObservationImpl

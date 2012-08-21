@@ -10,15 +10,17 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.HospitalConsultationsSection;
 import org.openhealthtools.mdht.uml.cda.consol.operations.HospitalConsultationsSectionOperations;
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -31,41 +33,53 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class HospitalConsultationsSectionImpl extends SectionImpl implements HospitalConsultationsSection {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected HospitalConsultationsSectionImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.HOSPITAL_CONSULTATIONS_SECTION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHospitalConsultationsSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalConsultationsSectionOperations.validateHospitalConsultationsSectionTemplateId(this, diagnostics, context);
+		return HospitalConsultationsSectionOperations.validateHospitalConsultationsSectionTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHospitalConsultationsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HospitalConsultationsSectionOperations.validateHospitalConsultationsSectionCode(this, diagnostics, context);
+		return HospitalConsultationsSectionOperations.validateHospitalConsultationsSectionCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	* <!-- begin-user-doc -->
+	* <!-- end-user-doc -->
+	* @generated
+	*/
+	public boolean validateHospitalConsultationsSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HospitalConsultationsSectionOperations.validateHospitalConsultationsSectionCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -74,25 +88,36 @@ public class HospitalConsultationsSectionImpl extends SectionImpl implements Hos
 	 * @generated
 	 */
 	public boolean validateHospitalConsultationsSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HospitalConsultationsSectionOperations.validateHospitalConsultationsSectionText(this, diagnostics, context);
+		return HospitalConsultationsSectionOperations.validateHospitalConsultationsSectionText(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHospitalConsultationsSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return HospitalConsultationsSectionOperations.validateHospitalConsultationsSectionTitle(this, diagnostics, context);
+		return HospitalConsultationsSectionOperations.validateHospitalConsultationsSectionTitle(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public HospitalConsultationsSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		return Initializer.Util.init(this);
+	}
+
+	/**
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   */
+	public HospitalConsultationsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
 	}
 } // HospitalConsultationsSectionImpl
