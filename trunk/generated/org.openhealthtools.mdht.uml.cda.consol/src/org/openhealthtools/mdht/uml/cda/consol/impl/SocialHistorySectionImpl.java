@@ -10,18 +10,22 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.PregnancyObservation;
+import org.openhealthtools.mdht.uml.cda.consol.SmokingStatusObservation;
 import org.openhealthtools.mdht.uml.cda.consol.SocialHistoryObservation;
 import org.openhealthtools.mdht.uml.cda.consol.SocialHistorySection;
+import org.openhealthtools.mdht.uml.cda.consol.TobaccoUse;
 import org.openhealthtools.mdht.uml.cda.consol.operations.SocialHistorySectionOperations;
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -34,40 +38,49 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class SocialHistorySectionImpl extends SectionImpl implements SocialHistorySection {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected SocialHistorySectionImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.SOCIAL_HISTORY_SECTION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateSocialHistorySectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SocialHistorySectionOperations.validateSocialHistorySectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateSocialHistorySectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SocialHistorySectionOperations.validateSocialHistorySectionCode(this, diagnostics, context);
+	}
+
+	/**
+	* <!-- begin-user-doc -->
+	* <!-- end-user-doc -->
+	* @generated
+	*/
+	public boolean validateSocialHistorySectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SocialHistorySectionOperations.validateSocialHistorySectionCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -80,22 +93,45 @@ public class SocialHistorySectionImpl extends SectionImpl implements SocialHisto
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateSocialHistorySectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SocialHistorySectionOperations.validateSocialHistorySectionText(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateSocialHistorySectionSocialHistoryObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return SocialHistorySectionOperations.validateSocialHistorySectionSocialHistoryObservation(this, diagnostics, context);
+		return SocialHistorySectionOperations.validateSocialHistorySectionSocialHistoryObservation(
+			this, diagnostics, context);
+	}
+
+	/**
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @generated
+	*/
+	public boolean validateSocialHistorySectionPregnancyObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return SocialHistorySectionOperations.validateSocialHistorySectionPregnancyObservation(
+			this, diagnostics, context);
+	}
+
+	/**
+	* <!-- begin-user-doc -->
+	* <!-- end-user-doc -->
+	* @generated
+	*/
+	public boolean validateSocialHistorySectionSmokingStatusObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return SocialHistorySectionOperations.validateSocialHistorySectionSmokingStatusObservation(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -103,9 +139,8 @@ public class SocialHistorySectionImpl extends SectionImpl implements SocialHisto
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSocialHistorySectionPregnancyObservation(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return SocialHistorySectionOperations.validateSocialHistorySectionPregnancyObservation(this, diagnostics, context);
+	public boolean validateSocialHistorySectionTobaccoUse(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SocialHistorySectionOperations.validateSocialHistorySectionTobaccoUse(this, diagnostics, context);
 	}
 
 	/**
@@ -118,12 +153,30 @@ public class SocialHistorySectionImpl extends SectionImpl implements SocialHisto
 	}
 
 	/**
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @generated
+	*/
+	public EList<PregnancyObservation> getPregnancyObservations() {
+		return SocialHistorySectionOperations.getPregnancyObservations(this);
+	}
+
+	/**
+	* <!-- begin-user-doc -->
+	* <!-- end-user-doc -->
+	* @generated
+	*/
+	public EList<SmokingStatusObservation> getSmokingStatusObservations() {
+		return SocialHistorySectionOperations.getSmokingStatusObservations(this);
+	}
+
+	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<PregnancyObservation> getPregnancyObservations() {
-		return SocialHistorySectionOperations.getPregnancyObservations(this);
+	public EList<TobaccoUse> getTobaccoUses() {
+		return SocialHistorySectionOperations.getTobaccoUses(this);
 	}
 
 	/**
@@ -132,7 +185,16 @@ public class SocialHistorySectionImpl extends SectionImpl implements SocialHisto
 	 * @generated
 	 */
 	public SocialHistorySection init() {
-    	CDAUtil.init(this);
-    	return this;
+		return Initializer.Util.init(this);
+	}
+
+	/**
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   */
+	public SocialHistorySection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
 	}
 } // SocialHistorySectionImpl

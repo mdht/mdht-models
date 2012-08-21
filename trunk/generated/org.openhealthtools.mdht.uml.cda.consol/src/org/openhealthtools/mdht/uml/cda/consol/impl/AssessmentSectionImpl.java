@@ -10,15 +10,17 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.AssessmentSection;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.operations.AssessmentSectionOperations;
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -31,40 +33,49 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class AssessmentSectionImpl extends SectionImpl implements AssessmentSection {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected AssessmentSectionImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.ASSESSMENT_SECTION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateAssessmentSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AssessmentSectionOperations.validateAssessmentSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateAssessmentSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AssessmentSectionOperations.validateAssessmentSectionCode(this, diagnostics, context);
+	}
+
+	/**
+	* <!-- begin-user-doc -->
+	* <!-- end-user-doc -->
+	* @generated
+	*/
+	public boolean validateAssessmentSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AssessmentSectionOperations.validateAssessmentSectionCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -77,12 +88,30 @@ public class AssessmentSectionImpl extends SectionImpl implements AssessmentSect
 	}
 
 	/**
+	* <!-- begin-user-doc -->
+	* <!-- end-user-doc -->
+	* @generated
+	*/
+	public boolean validateAssessmentSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AssessmentSectionOperations.validateAssessmentSectionTitle(this, diagnostics, context);
+	}
+
+	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public AssessmentSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		return Initializer.Util.init(this);
+	}
+
+	/**
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   */
+	public AssessmentSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
 	}
 } // AssessmentSectionImpl

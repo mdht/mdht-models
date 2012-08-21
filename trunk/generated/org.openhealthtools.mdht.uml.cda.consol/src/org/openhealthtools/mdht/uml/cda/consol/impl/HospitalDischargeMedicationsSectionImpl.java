@@ -10,16 +10,18 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.DischargeMedication;
 import org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeMedicationsSection;
 import org.openhealthtools.mdht.uml.cda.consol.operations.HospitalDischargeMedicationsSectionOperations;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -33,12 +35,33 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 public class HospitalDischargeMedicationsSectionImpl extends HospitalDischargeMedicationsSectionEntriesOptionalImpl
 		implements HospitalDischargeMedicationsSection {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected HospitalDischargeMedicationsSectionImpl() {
 		super();
+	}
+
+	/**
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @generated
+	*/
+	@Override
+	protected EClass eStaticClass() {
+		return ConsolPackage.Literals.HOSPITAL_DISCHARGE_MEDICATIONS_SECTION;
+	}
+
+	/**
+	* <!-- begin-user-doc -->
+	* <!-- end-user-doc -->
+	* @generated
+	*/
+	public boolean validateHospitalDischargeMedicationsSectionCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return HospitalDischargeMedicationsSectionOperations.validateHospitalDischargeMedicationsSectionCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -46,9 +69,10 @@ public class HospitalDischargeMedicationsSectionImpl extends HospitalDischargeMe
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	protected EClass eStaticClass() {
-		return ConsolPackage.Literals.HOSPITAL_DISCHARGE_MEDICATIONS_SECTION;
+	public boolean validateHospitalDischargeMedicationsSectionCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return HospitalDischargeMedicationsSectionOperations.validateHospitalDischargeMedicationsSectionCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -58,68 +82,71 @@ public class HospitalDischargeMedicationsSectionImpl extends HospitalDischargeMe
 	 */
 	public boolean validateHospitalDischargeMedicationsSectionText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalDischargeMedicationsSectionOperations.validateHospitalDischargeMedicationsSectionText(this, diagnostics, context);
+		return HospitalDischargeMedicationsSectionOperations.validateHospitalDischargeMedicationsSectionText(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHospitalDischargeMedicationsSectionTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalDischargeMedicationsSectionOperations.validateHospitalDischargeMedicationsSectionTitle(this, diagnostics, context);
+		return HospitalDischargeMedicationsSectionOperations.validateHospitalDischargeMedicationsSectionTitle(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHospitalDischargeMedicationsSectionDischargeMedication(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalDischargeMedicationsSectionOperations.validateHospitalDischargeMedicationsSectionDischargeMedication(this, diagnostics, context);
+		return HospitalDischargeMedicationsSectionOperations.validateHospitalDischargeMedicationsSectionDischargeMedication(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EList<DischargeMedication> getConsolDischargeMedications() {
 		return HospitalDischargeMedicationsSectionOperations.getConsolDischargeMedications(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	public boolean validateHospitalDischargeMedicationsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalDischargeMedicationsSectionOperations.validateHospitalDischargeMedicationsSectionEntriesOptionalTemplateId(this, diagnostics, context);
+		return HospitalDischargeMedicationsSectionOperations.validateHospitalDischargeMedicationsSectionEntriesOptionalTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateHospitalDischargeMedicationsSectionEntriesOptionalCode(DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
-		return HospitalDischargeMedicationsSectionOperations.validateHospitalDischargeMedicationsSectionEntriesOptionalCode(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	public HospitalDischargeMedicationsSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		return Initializer.Util.init(this);
+	}
+
+	/**
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   */
+	@Override
+	public HospitalDischargeMedicationsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
 	}
 } // HospitalDischargeMedicationsSectionImpl

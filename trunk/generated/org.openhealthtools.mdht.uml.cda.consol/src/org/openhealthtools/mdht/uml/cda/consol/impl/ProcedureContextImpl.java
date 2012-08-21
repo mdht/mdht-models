@@ -10,15 +10,17 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureContext;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ProcedureContextOperations;
 import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -31,22 +33,31 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class ProcedureContextImpl extends ActImpl implements ProcedureContext {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected ProcedureContextImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.PROCEDURE_CONTEXT;
+	}
+
+	/**
+	* <!-- begin-user-doc -->
+	* <!-- end-user-doc -->
+	* @generated
+	*/
+	public boolean validateProcedureContextEffectiveTimeValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureContextOperations.validateProcedureContextEffectiveTimeValue(this, diagnostics, context);
 	}
 
 	/**
@@ -59,12 +70,39 @@ public class ProcedureContextImpl extends ActImpl implements ProcedureContext {
 	}
 
 	/**
+	* <!-- begin-user-doc -->
+	* <!-- end-user-doc -->
+	* @generated
+	*/
+	public boolean validateProcedureContextCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureContextOperations.validateProcedureContextCode(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateProcedureContextEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProcedureContextOperations.validateProcedureContextEffectiveTime(this, diagnostics, context);
+	}
+
+	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public ProcedureContext init() {
-    	CDAUtil.init(this);
-    	return this;
+		return Initializer.Util.init(this);
+	}
+
+	/**
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   */
+	public ProcedureContext init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
 	}
 } // ProcedureContextImpl

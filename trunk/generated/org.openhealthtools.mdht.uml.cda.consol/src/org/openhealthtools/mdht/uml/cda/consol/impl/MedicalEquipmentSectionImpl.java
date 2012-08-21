@@ -10,17 +10,19 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.MedicalEquipmentSection;
 import org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivity;
 import org.openhealthtools.mdht.uml.cda.consol.operations.MedicalEquipmentSectionOperations;
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -33,40 +35,49 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class MedicalEquipmentSectionImpl extends SectionImpl implements MedicalEquipmentSection {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected MedicalEquipmentSectionImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.MEDICAL_EQUIPMENT_SECTION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMedicalEquipmentSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicalEquipmentSectionOperations.validateMedicalEquipmentSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMedicalEquipmentSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicalEquipmentSectionOperations.validateMedicalEquipmentSectionCode(this, diagnostics, context);
+	}
+
+	/**
+	* <!-- begin-user-doc -->
+	* <!-- end-user-doc -->
+	* @generated
+	*/
+	public boolean validateMedicalEquipmentSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return MedicalEquipmentSectionOperations.validateMedicalEquipmentSectionCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -79,40 +90,50 @@ public class MedicalEquipmentSectionImpl extends SectionImpl implements MedicalE
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMedicalEquipmentSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicalEquipmentSectionOperations.validateMedicalEquipmentSectionText(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMedicalEquipmentSectionNonMedicinalSupplyActivity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicalEquipmentSectionOperations.validateMedicalEquipmentSectionNonMedicinalSupplyActivity(this, diagnostics, context);
+		return MedicalEquipmentSectionOperations.validateMedicalEquipmentSectionNonMedicinalSupplyActivity(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EList<NonMedicinalSupplyActivity> getNonMedicinalSupplyActivities() {
 		return MedicalEquipmentSectionOperations.getNonMedicinalSupplyActivities(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public MedicalEquipmentSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		return Initializer.Util.init(this);
+	}
+
+	/**
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   */
+	public MedicalEquipmentSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
 	}
 } // MedicalEquipmentSectionImpl

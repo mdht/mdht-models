@@ -10,15 +10,17 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeStudiesSummarySection;
 import org.openhealthtools.mdht.uml.cda.consol.operations.HospitalDischargeStudiesSummarySectionOperations;
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -32,42 +34,55 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 public class HospitalDischargeStudiesSummarySectionImpl extends SectionImpl implements
 		HospitalDischargeStudiesSummarySection {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected HospitalDischargeStudiesSummarySectionImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.HOSPITAL_DISCHARGE_STUDIES_SUMMARY_SECTION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHospitalDischargeStudiesSummarySectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalDischargeStudiesSummarySectionOperations.validateHospitalDischargeStudiesSummarySectionTemplateId(this, diagnostics, context);
+		return HospitalDischargeStudiesSummarySectionOperations.validateHospitalDischargeStudiesSummarySectionTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHospitalDischargeStudiesSummarySectionCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalDischargeStudiesSummarySectionOperations.validateHospitalDischargeStudiesSummarySectionCode(this, diagnostics, context);
+		return HospitalDischargeStudiesSummarySectionOperations.validateHospitalDischargeStudiesSummarySectionCode(
+			this, diagnostics, context);
+	}
+
+	/**
+	* <!-- begin-user-doc -->
+	* <!-- end-user-doc -->
+	* @generated
+	*/
+	public boolean validateHospitalDischargeStudiesSummarySectionCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return HospitalDischargeStudiesSummarySectionOperations.validateHospitalDischargeStudiesSummarySectionCodeP(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -77,26 +92,37 @@ public class HospitalDischargeStudiesSummarySectionImpl extends SectionImpl impl
 	 */
 	public boolean validateHospitalDischargeStudiesSummarySectionTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalDischargeStudiesSummarySectionOperations.validateHospitalDischargeStudiesSummarySectionTitle(this, diagnostics, context);
+		return HospitalDischargeStudiesSummarySectionOperations.validateHospitalDischargeStudiesSummarySectionTitle(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHospitalDischargeStudiesSummarySectionText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HospitalDischargeStudiesSummarySectionOperations.validateHospitalDischargeStudiesSummarySectionText(this, diagnostics, context);
+		return HospitalDischargeStudiesSummarySectionOperations.validateHospitalDischargeStudiesSummarySectionText(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public HospitalDischargeStudiesSummarySection init() {
-    	CDAUtil.init(this);
-    	return this;
+		return Initializer.Util.init(this);
+	}
+
+	/**
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   */
+	public HospitalDischargeStudiesSummarySection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
 	}
 } // HospitalDischargeStudiesSummarySectionImpl

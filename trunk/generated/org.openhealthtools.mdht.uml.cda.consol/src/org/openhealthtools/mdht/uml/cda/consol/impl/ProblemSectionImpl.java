@@ -10,16 +10,18 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemSection;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ProblemSectionOperations;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -32,12 +34,31 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class ProblemSectionImpl extends ProblemSectionEntriesOptionalImpl implements ProblemSection {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected ProblemSectionImpl() {
 		super();
+	}
+
+	/**
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @generated
+	*/
+	@Override
+	protected EClass eStaticClass() {
+		return ConsolPackage.Literals.PROBLEM_SECTION;
+	}
+
+	/**
+	* <!-- begin-user-doc -->
+	* <!-- end-user-doc -->
+	* @generated
+	*/
+	public boolean validateProblemSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemSectionOperations.validateProblemSectionCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -45,9 +66,8 @@ public class ProblemSectionImpl extends ProblemSectionEntriesOptionalImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	protected EClass eStaticClass() {
-		return ConsolPackage.Literals.PROBLEM_SECTION;
+	public boolean validateProblemSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ProblemSectionOperations.validateProblemSectionCode(this, diagnostics, context);
 	}
 
 	/**
@@ -60,37 +80,37 @@ public class ProblemSectionImpl extends ProblemSectionEntriesOptionalImpl implem
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateProblemSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemSectionOperations.validateProblemSectionTitle(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateProblemSectionProblemConcern(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemSectionOperations.validateProblemSectionProblemConcern(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EList<ProblemConcernAct> getConsolProblemConcerns() {
 		return ProblemSectionOperations.getConsolProblemConcerns(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	public boolean validateProblemSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -98,23 +118,23 @@ public class ProblemSectionImpl extends ProblemSectionEntriesOptionalImpl implem
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
-	public boolean validateProblemSectionEntriesOptionalCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ProblemSectionOperations.validateProblemSectionEntriesOptionalCode(this, diagnostics, context);
+	public ProblemSection init() {
+		return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   */
 	@Override
-	public ProblemSection init() {
-    	CDAUtil.init(this);
-    	return this;
+	public ProblemSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
 	}
 } // ProblemSectionImpl

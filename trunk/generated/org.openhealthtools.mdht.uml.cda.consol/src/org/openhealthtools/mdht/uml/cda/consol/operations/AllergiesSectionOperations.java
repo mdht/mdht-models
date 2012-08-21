@@ -37,12 +37,13 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergiesSection#validateAllergiesSectionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergies Section Code P</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergiesSection#validateAllergiesSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergies Section Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergiesSection#validateAllergiesSectionTitle(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergies Section Title</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergiesSection#validateAllergiesSectionText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergies Section Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergiesSection#validateAllergiesSectionAllergyProblemAct(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergies Section Allergy Problem Act</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergiesSection#getConsolAllergyProblemActs() <em>Get Consol Allergy Problem Acts</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergiesSection#validateAllergiesSectionEntriesOptionalTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergies Section Entries Optional Template Id</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.consol.AllergiesSection#validateAllergiesSectionEntriesOptionalCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergies Section Entries Optional Code</em>}</li>
  * </ul>
  * </p>
  *
@@ -50,12 +51,150 @@ import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
  */
 public class AllergiesSectionOperations extends AllergiesSectionEntriesOptionalOperations {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected AllergiesSectionOperations() {
 		super();
+	}
+
+	/**
+	* The cached OCL expression body for the '{@link #validateAllergiesSectionCodeP(AllergiesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergies Section Code P</em>}' operation.
+	* <!-- begin-user-doc -->
+	* <!-- end-user-doc -->
+	* @see #validateAllergiesSectionCodeP(AllergiesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
+	protected static final String VALIDATE_ALLERGIES_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateAllergiesSectionCodeP(AllergiesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergies Section Code P</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateAllergiesSectionCodeP(AllergiesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_ALLERGIES_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param allergiesSection The receiving '<em><b>Allergies Section</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validateAllergiesSectionCodeP(AllergiesSection allergiesSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		if (VALIDATE_ALLERGIES_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.ALLERGIES_SECTION);
+			try {
+				VALIDATE_ALLERGIES_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGIES_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGIES_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			allergiesSection)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.ALLERGIES_SECTION__ALLERGIES_SECTION_CODE_P,
+					ConsolPlugin.INSTANCE.getString("AllergiesSectionCodeP"), new Object[] { allergiesSection }));
+			}
+
+			if (context != null) {
+				// generate a pass token for my dependent constraints to short-circuit or filter results
+				@SuppressWarnings("unchecked")
+				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.consol.AllergiesSectionCodeP");
+				if (passToken == null) {
+					// anticipate a reasonably healthy model
+					passToken = new java.util.ArrayList<Object>(3);
+					context.put("org.openhealthtools.mdht.uml.cda.consol.AllergiesSectionCodeP", passToken);
+				}
+				passToken.add(allergiesSection);
+			}
+
+			return false;
+		}
+		return true;
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateAllergiesSectionCode(AllergiesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergies Section Code</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateAllergiesSectionCode(AllergiesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_ALLERGIES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
+			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
+			+ "value.code = '48765-2' and value.codeSystem = '2.16.840.1.113883.6.1')";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateAllergiesSectionCode(AllergiesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergies Section Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateAllergiesSectionCode(AllergiesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+
+	protected static Constraint VALIDATE_ALLERGIES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * <!-- begin-model-doc -->
+	 * @param allergiesSection The receiving '<em><b>Allergies Section</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
+
+	public static boolean validateAllergiesSectionCode(AllergiesSection allergiesSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+
+		Object passToken = (context == null)
+				? null
+				: context.get("org.openhealthtools.mdht.uml.cda.consol.AllergiesSectionCodeP");
+		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(allergiesSection)) {
+			// I have a free pass to short-circuit
+			return true;
+		}
+
+		if (VALIDATE_ALLERGIES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
+			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+			helper.setContext(ConsolPackage.Literals.ALLERGIES_SECTION);
+			try {
+				VALIDATE_ALLERGIES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGIES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+			} catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+		}
+		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGIES_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			allergiesSection)) {
+			if (diagnostics != null) {
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.ALLERGIES_SECTION__ALLERGIES_SECTION_CODE,
+					ConsolPlugin.INSTANCE.getString("AllergiesSectionCode"), new Object[] { allergiesSection }));
+			}
+
+			return false;
+		}
+		return true;
 	}
 
 	/**
@@ -69,215 +208,201 @@ public class AllergiesSectionOperations extends AllergiesSectionEntriesOptionalO
 	protected static final String VALIDATE_ALLERGIES_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined())";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateAllergiesSectionTitle(AllergiesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergies Section Title</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateAllergiesSectionTitle(AllergiesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergies Section Title</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateAllergiesSectionTitle(AllergiesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateAllergiesSectionTitle(AllergiesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static Constraint VALIDATE_ALLERGIES_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * (self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined())
-	 * @param allergiesSection The receiving '<em><b>Allergies Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param allergiesSection The receiving '<em><b>Allergies Section</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 	public static boolean validateAllergiesSectionTitle(AllergiesSection allergiesSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-  	  
+
 		if (VALIDATE_ALLERGIES_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ALLERGIES_SECTION);
 			try {
 				VALIDATE_ALLERGIES_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGIES_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGIES_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(allergiesSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGIES_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			allergiesSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.ALLERGIES_SECTION__ALLERGIES_SECTION_TITLE,
-						 ConsolPlugin.INSTANCE.getString("AllergiesSectionTitle"),
-						 new Object [] { allergiesSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.ALLERGIES_SECTION__ALLERGIES_SECTION_TITLE,
+					ConsolPlugin.INSTANCE.getString("AllergiesSectionTitle"), new Object[] { allergiesSection }));
 			}
-			 
+
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateAllergiesSectionText(AllergiesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergies Section Text</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateAllergiesSectionText(AllergiesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergies Section Text</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateAllergiesSectionText(AllergiesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateAllergiesSectionText(AllergiesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_ALLERGIES_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.text.oclIsUndefined()";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateAllergiesSectionText(AllergiesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergies Section Text</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateAllergiesSectionText(AllergiesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergies Section Text</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateAllergiesSectionText(AllergiesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateAllergiesSectionText(AllergiesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static Constraint VALIDATE_ALLERGIES_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * not self.text.oclIsUndefined()
-	 * @param allergiesSection The receiving '<em><b>Allergies Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param allergiesSection The receiving '<em><b>Allergies Section</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 	public static boolean validateAllergiesSectionText(AllergiesSection allergiesSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-  	  
+
 		if (VALIDATE_ALLERGIES_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ALLERGIES_SECTION);
 			try {
 				VALIDATE_ALLERGIES_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGIES_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGIES_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(allergiesSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGIES_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			allergiesSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.ALLERGIES_SECTION__ALLERGIES_SECTION_TEXT,
-						 ConsolPlugin.INSTANCE.getString("AllergiesSectionText"),
-						 new Object [] { allergiesSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.ALLERGIES_SECTION__ALLERGIES_SECTION_TEXT,
+					ConsolPlugin.INSTANCE.getString("AllergiesSectionText"), new Object[] { allergiesSection }));
 			}
-			 
+
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateAllergiesSectionAllergyProblemAct(AllergiesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergies Section Allergy Problem Act</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateAllergiesSectionAllergyProblemAct(AllergiesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergies Section Allergy Problem Act</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateAllergiesSectionAllergyProblemAct(AllergiesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateAllergiesSectionAllergyProblemAct(AllergiesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_ALLERGIES_SECTION_ALLERGY_PROBLEM_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::AllergyProblemAct))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateAllergiesSectionAllergyProblemAct(AllergiesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergies Section Allergy Problem Act</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateAllergiesSectionAllergyProblemAct(AllergiesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergies Section Allergy Problem Act</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateAllergiesSectionAllergyProblemAct(AllergiesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateAllergiesSectionAllergyProblemAct(AllergiesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_ALLERGIES_SECTION_ALLERGY_PROBLEM_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::AllergyProblemAct))
-	 * @param allergiesSection The receiving '<em><b>Allergies Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param allergiesSection The receiving '<em><b>Allergies Section</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateAllergiesSectionAllergyProblemAct(AllergiesSection allergiesSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
 		if (VALIDATE_ALLERGIES_SECTION_ALLERGY_PROBLEM_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ALLERGIES_SECTION);
 			try {
 				VALIDATE_ALLERGIES_SECTION_ALLERGY_PROBLEM_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGIES_SECTION_ALLERGY_PROBLEM_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGIES_SECTION_ALLERGY_PROBLEM_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(allergiesSection)) {
+		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGIES_SECTION_ALLERGY_PROBLEM_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			allergiesSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.ALLERGIES_SECTION__ALLERGIES_SECTION_ALLERGY_PROBLEM_ACT,
-						 ConsolPlugin.INSTANCE.getString("AllergiesSectionAllergyProblemAct"),
-						 new Object [] { allergiesSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.ALLERGIES_SECTION__ALLERGIES_SECTION_ALLERGY_PROBLEM_ACT,
+					ConsolPlugin.INSTANCE.getString("AllergiesSectionAllergyProblemAct"),
+					new Object[] { allergiesSection }));
 			}
-			 
+
 			return false;
 		}
 		return true;
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getConsolAllergyProblemActs(AllergiesSection) <em>Get Consol Allergy Problem Acts</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #getConsolAllergyProblemActs(AllergiesSection) <em>Get Consol Allergy Problem Acts</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getConsolAllergyProblemActs(AllergiesSection)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getConsolAllergyProblemActs(AllergiesSection)
+	* @generated
+	* @ordered
+	*/
 	protected static final String GET_CONSOL_ALLERGY_PROBLEM_ACTS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::AllergyProblemAct)).oclAsType(consol::AllergyProblemAct)";
 
 	/**
-	 * The cached OCL query for the '{@link #getConsolAllergyProblemActs(AllergiesSection) <em>Get Consol Allergy Problem Acts</em>}' query operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL query for the '{@link #getConsolAllergyProblemActs(AllergiesSection) <em>Get Consol Allergy Problem Acts</em>}' query operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getConsolAllergyProblemActs(AllergiesSection)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getConsolAllergyProblemActs(AllergiesSection)
+	* @generated
+	* @ordered
+	*/
 	protected static OCLExpression<EClassifier> GET_CONSOL_ALLERGY_PROBLEM_ACTS__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::AllergyProblemAct)).oclAsType(consol::AllergyProblemAct)
-	 * @param allergiesSection The receiving '<em><b>Allergies Section</b></em>' model object.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 
 	public static EList<AllergyProblemAct> getConsolAllergyProblemActs(AllergiesSection allergiesSection) {
 		if (GET_CONSOL_ALLERGY_PROBLEM_ACTS__EOCL_QRY == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(ConsolPackage.Literals.ALLERGIES_SECTION, ConsolPackage.Literals.ALLERGIES_SECTION.getEAllOperations().get(64));
+			helper.setOperationContext(
+				ConsolPackage.Literals.ALLERGIES_SECTION,
+				ConsolPackage.Literals.ALLERGIES_SECTION.getEAllOperations().get(67));
 			try {
 				GET_CONSOL_ALLERGY_PROBLEM_ACTS__EOCL_QRY = helper.createQuery(GET_CONSOL_ALLERGY_PROBLEM_ACTS__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
@@ -288,126 +413,62 @@ public class AllergiesSectionOperations extends AllergiesSectionEntriesOptionalO
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateAllergiesSectionEntriesOptionalTemplateId(AllergiesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergies Section Entries Optional Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateAllergiesSectionEntriesOptionalTemplateId(AllergiesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergies Section Entries Optional Template Id</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateAllergiesSectionEntriesOptionalTemplateId(AllergiesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateAllergiesSectionEntriesOptionalTemplateId(AllergiesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_ALLERGIES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.6.1')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateAllergiesSectionEntriesOptionalTemplateId(AllergiesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergies Section Entries Optional Template Id</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateAllergiesSectionEntriesOptionalTemplateId(AllergiesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergies Section Entries Optional Template Id</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateAllergiesSectionEntriesOptionalTemplateId(AllergiesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateAllergiesSectionEntriesOptionalTemplateId(AllergiesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static Constraint VALIDATE_ALLERGIES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.6.1')
-	 * @param allergiesSection The receiving '<em><b>Allergies Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param allergiesSection The receiving '<em><b>Allergies Section</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 	public static boolean validateAllergiesSectionEntriesOptionalTemplateId(AllergiesSection allergiesSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
+
 		if (VALIDATE_ALLERGIES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
 			OCL.Helper helper = EOCL_ENV.createOCLHelper();
 			helper.setContext(ConsolPackage.Literals.ALLERGIES_SECTION);
 			try {
 				VALIDATE_ALLERGIES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGIES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
+			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGIES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(allergiesSection)) {
+		if (!EOCL_ENV.createQuery(
+			VALIDATE_ALLERGIES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+			allergiesSection)) {
 			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.ALLERGIES_SECTION__ALLERGIES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AllergiesSectionEntriesOptionalTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(allergiesSection, context) }),
-						 new Object [] { allergiesSection }));
+				diagnostics.add(new BasicDiagnostic(
+					Diagnostic.ERROR,
+					ConsolValidator.DIAGNOSTIC_SOURCE,
+					ConsolValidator.ALLERGIES_SECTION__ALLERGIES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID,
+					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+						"_UI_GenericInvariant_diagnostic", new Object[] {
+								"AllergiesSectionEntriesOptionalTemplateId",
+								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(allergiesSection, context) }),
+					new Object[] { allergiesSection }));
 			}
-			 
-			return false;
-		}
-		return true;
-	}
 
-	/**
-	 * The cached OCL expression body for the '{@link #validateAllergiesSectionEntriesOptionalCode(AllergiesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergies Section Entries Optional Code</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateAllergiesSectionEntriesOptionalCode(AllergiesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_ALLERGIES_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
-"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "+
-"value.code = '48765-2' and value.codeSystem = '2.16.840.1.113883.6.1')";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateAllergiesSectionEntriesOptionalCode(AllergiesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Allergies Section Entries Optional Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateAllergiesSectionEntriesOptionalCode(AllergiesSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-
-	protected static Constraint VALIDATE_ALLERGIES_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * (self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
-	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in 
-	 * value.code = '48765-2' and value.codeSystem = '2.16.840.1.113883.6.1')
-	 * @param allergiesSection The receiving '<em><b>Allergies Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
-
-	public static boolean validateAllergiesSectionEntriesOptionalCode(AllergiesSection allergiesSection,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
-  	  
-		if (VALIDATE_ALLERGIES_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setContext(ConsolPackage.Literals.ALLERGIES_SECTION);
-			try {
-				VALIDATE_ALLERGIES_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALLERGIES_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			}
-			catch (ParserException pe) {
-				throw new UnsupportedOperationException(pe.getLocalizedMessage());
-			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALLERGIES_SECTION_ENTRIES_OPTIONAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(allergiesSection)) {
-			if (diagnostics != null) {
-				diagnostics.add
-					(new BasicDiagnostic
-						(Diagnostic.ERROR,
-						 ConsolValidator.DIAGNOSTIC_SOURCE,
-						 ConsolValidator.ALLERGIES_SECTION__ALLERGIES_SECTION_ENTRIES_OPTIONAL_CODE,
-						 ConsolPlugin.INSTANCE.getString("AllergiesSectionEntriesOptionalCode"),
-						 new Object [] { allergiesSection }));
-			}
-			 
 			return false;
 		}
 		return true;

@@ -10,17 +10,19 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.AssessmentAndPlanSection;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.PlanOfCareActivityAct;
 import org.openhealthtools.mdht.uml.cda.consol.operations.AssessmentAndPlanSectionOperations;
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -33,40 +35,49 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class AssessmentAndPlanSectionImpl extends SectionImpl implements AssessmentAndPlanSection {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected AssessmentAndPlanSectionImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.ASSESSMENT_AND_PLAN_SECTION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateAssessmentAndPlanSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AssessmentAndPlanSectionOperations.validateAssessmentAndPlanSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateAssessmentAndPlanSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AssessmentAndPlanSectionOperations.validateAssessmentAndPlanSectionCode(this, diagnostics, context);
+	}
+
+	/**
+	* <!-- begin-user-doc -->
+	* <!-- end-user-doc -->
+	* @generated
+	*/
+	public boolean validateAssessmentAndPlanSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return AssessmentAndPlanSectionOperations.validateAssessmentAndPlanSectionCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -79,31 +90,41 @@ public class AssessmentAndPlanSectionImpl extends SectionImpl implements Assessm
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateAssessmentAndPlanSectionPlanOfCareActivityAct(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AssessmentAndPlanSectionOperations.validateAssessmentAndPlanSectionPlanOfCareActivityAct(this, diagnostics, context);
+		return AssessmentAndPlanSectionOperations.validateAssessmentAndPlanSectionPlanOfCareActivityAct(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EList<PlanOfCareActivityAct> getPlanOfCareActivityActs() {
 		return AssessmentAndPlanSectionOperations.getPlanOfCareActivityActs(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public AssessmentAndPlanSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		return Initializer.Util.init(this);
+	}
+
+	/**
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   */
+	public AssessmentAndPlanSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
 	}
 } // AssessmentAndPlanSectionImpl

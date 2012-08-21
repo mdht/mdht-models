@@ -10,15 +10,17 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.SurgicalDrainsSection;
 import org.openhealthtools.mdht.uml.cda.consol.operations.SurgicalDrainsSectionOperations;
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -31,40 +33,49 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class SurgicalDrainsSectionImpl extends SectionImpl implements SurgicalDrainsSection {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected SurgicalDrainsSectionImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.SURGICAL_DRAINS_SECTION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateSurgicalDrainsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SurgicalDrainsSectionOperations.validateSurgicalDrainsSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateSurgicalDrainsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SurgicalDrainsSectionOperations.validateSurgicalDrainsSectionCode(this, diagnostics, context);
+	}
+
+	/**
+	* <!-- begin-user-doc -->
+	* <!-- end-user-doc -->
+	* @generated
+	*/
+	public boolean validateSurgicalDrainsSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SurgicalDrainsSectionOperations.validateSurgicalDrainsSectionCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -77,21 +88,30 @@ public class SurgicalDrainsSectionImpl extends SectionImpl implements SurgicalDr
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateSurgicalDrainsSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SurgicalDrainsSectionOperations.validateSurgicalDrainsSectionTitle(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public SurgicalDrainsSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		return Initializer.Util.init(this);
+	}
+
+	/**
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   */
+	public SurgicalDrainsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
 	}
 } // SurgicalDrainsSectionImpl

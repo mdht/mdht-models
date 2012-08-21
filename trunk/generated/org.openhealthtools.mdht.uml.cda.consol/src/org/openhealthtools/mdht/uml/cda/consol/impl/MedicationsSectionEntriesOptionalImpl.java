@@ -10,17 +10,19 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationActivity;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationsSectionEntriesOptional;
 import org.openhealthtools.mdht.uml.cda.consol.operations.MedicationsSectionEntriesOptionalOperations;
 import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -33,90 +35,104 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class MedicationsSectionEntriesOptionalImpl extends SectionImpl implements MedicationsSectionEntriesOptional {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected MedicationsSectionEntriesOptionalImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.MEDICATIONS_SECTION_ENTRIES_OPTIONAL;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMedicationsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationsSectionEntriesOptionalOperations.validateMedicationsSectionEntriesOptionalTemplateId(this, diagnostics, context);
+		return MedicationsSectionEntriesOptionalOperations.validateMedicationsSectionEntriesOptionalTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMedicationsSectionEntriesOptionalCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationsSectionEntriesOptionalOperations.validateMedicationsSectionEntriesOptionalCode(this, diagnostics, context);
+		return MedicationsSectionEntriesOptionalOperations.validateMedicationsSectionEntriesOptionalCode(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMedicationsSectionEntriesOptionalTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationsSectionEntriesOptionalOperations.validateMedicationsSectionEntriesOptionalTitle(this, diagnostics, context);
+		return MedicationsSectionEntriesOptionalOperations.validateMedicationsSectionEntriesOptionalTitle(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMedicationsSectionEntriesOptionalText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationsSectionEntriesOptionalOperations.validateMedicationsSectionEntriesOptionalText(this, diagnostics, context);
+		return MedicationsSectionEntriesOptionalOperations.validateMedicationsSectionEntriesOptionalText(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMedicationsSectionEntriesOptionalMedicationActivity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationsSectionEntriesOptionalOperations.validateMedicationsSectionEntriesOptionalMedicationActivity(this, diagnostics, context);
+		return MedicationsSectionEntriesOptionalOperations.validateMedicationsSectionEntriesOptionalMedicationActivity(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EList<MedicationActivity> getMedicationActivities() {
 		return MedicationsSectionEntriesOptionalOperations.getMedicationActivities(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public MedicationsSectionEntriesOptional init() {
-    	CDAUtil.init(this);
-    	return this;
+		return Initializer.Util.init(this);
+	}
+
+	/**
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   */
+	public MedicationsSectionEntriesOptional init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
 	}
 } // MedicationsSectionEntriesOptionalImpl

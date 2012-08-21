@@ -10,15 +10,17 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.HealthStatusObservation;
 import org.openhealthtools.mdht.uml.cda.consol.operations.HealthStatusObservationOperations;
 import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -31,32 +33,44 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class HealthStatusObservationImpl extends ObservationImpl implements HealthStatusObservation {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected HealthStatusObservationImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.HEALTH_STATUS_OBSERVATION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHealthStatusObservationHasTextReference(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HealthStatusObservationOperations.validateHealthStatusObservationHasTextReference(this, diagnostics, context);
+		return HealthStatusObservationOperations.validateHealthStatusObservationHasTextReference(
+			this, diagnostics, context);
+	}
+
+	/**
+	* <!-- begin-user-doc -->
+	* <!-- end-user-doc -->
+	* @generated
+	*/
+	public boolean validateHealthStatusObservationTextReferenceValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return HealthStatusObservationOperations.validateHealthStatusObservationTextReferenceValue(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -66,70 +80,80 @@ public class HealthStatusObservationImpl extends ObservationImpl implements Heal
 	 */
 	public boolean validateHealthStatusObservationHasTextReferenceValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HealthStatusObservationOperations.validateHealthStatusObservationHasTextReferenceValue(this, diagnostics, context);
+		return HealthStatusObservationOperations.validateHealthStatusObservationHasTextReferenceValue(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHealthStatusObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HealthStatusObservationOperations.validateHealthStatusObservationTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHealthStatusObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HealthStatusObservationOperations.validateHealthStatusObservationClassCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHealthStatusObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HealthStatusObservationOperations.validateHealthStatusObservationMoodCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHealthStatusObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HealthStatusObservationOperations.validateHealthStatusObservationCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHealthStatusObservationText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HealthStatusObservationOperations.validateHealthStatusObservationText(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHealthStatusObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HealthStatusObservationOperations.validateHealthStatusObservationStatusCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHealthStatusObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HealthStatusObservationOperations.validateHealthStatusObservationValue(this, diagnostics, context);
+	}
+
+	/**
+	* <!-- begin-user-doc -->
+	* <!-- end-user-doc -->
+	* @generated
+	*/
+	public boolean validateHealthStatusObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return HealthStatusObservationOperations.validateHealthStatusObservationValueP(this, diagnostics, context);
 	}
 
 	/**
@@ -138,7 +162,16 @@ public class HealthStatusObservationImpl extends ObservationImpl implements Heal
 	 * @generated
 	 */
 	public HealthStatusObservation init() {
-    	CDAUtil.init(this);
-    	return this;
+		return Initializer.Util.init(this);
+	}
+
+	/**
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   */
+	public HealthStatusObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
 	}
 } // HealthStatusObservationImpl

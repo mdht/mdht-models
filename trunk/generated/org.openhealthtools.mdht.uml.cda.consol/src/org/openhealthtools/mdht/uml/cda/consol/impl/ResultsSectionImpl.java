@@ -10,16 +10,18 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ResultOrganizer;
 import org.openhealthtools.mdht.uml.cda.consol.ResultsSection;
 import org.openhealthtools.mdht.uml.cda.consol.operations.ResultsSectionOperations;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -32,12 +34,31 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class ResultsSectionImpl extends ResultsSectionEntriesOptionalImpl implements ResultsSection {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected ResultsSectionImpl() {
 		super();
+	}
+
+	/**
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @generated
+	*/
+	@Override
+	protected EClass eStaticClass() {
+		return ConsolPackage.Literals.RESULTS_SECTION;
+	}
+
+	/**
+	* <!-- begin-user-doc -->
+	* <!-- end-user-doc -->
+	* @generated
+	*/
+	public boolean validateResultsSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ResultsSectionOperations.validateResultsSectionCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -45,9 +66,8 @@ public class ResultsSectionImpl extends ResultsSectionEntriesOptionalImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	protected EClass eStaticClass() {
-		return ConsolPackage.Literals.RESULTS_SECTION;
+	public boolean validateResultsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return ResultsSectionOperations.validateResultsSectionCode(this, diagnostics, context);
 	}
 
 	/**
@@ -60,37 +80,37 @@ public class ResultsSectionImpl extends ResultsSectionEntriesOptionalImpl implem
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateResultsSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResultsSectionOperations.validateResultsSectionText(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateResultsSectionResultOrganizer(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResultsSectionOperations.validateResultsSectionResultOrganizer(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EList<ResultOrganizer> getConsolResultOrganizers() {
 		return ResultsSectionOperations.getConsolResultOrganizers(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	public boolean validateResultsSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -98,23 +118,23 @@ public class ResultsSectionImpl extends ResultsSectionEntriesOptionalImpl implem
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
-	public boolean validateResultsSectionEntriesOptionalCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ResultsSectionOperations.validateResultsSectionEntriesOptionalCode(this, diagnostics, context);
+	public ResultsSection init() {
+		return Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   */
 	@Override
-	public ResultsSection init() {
-    	CDAUtil.init(this);
-    	return this;
+	public ResultsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
 	}
 } // ResultsSectionImpl

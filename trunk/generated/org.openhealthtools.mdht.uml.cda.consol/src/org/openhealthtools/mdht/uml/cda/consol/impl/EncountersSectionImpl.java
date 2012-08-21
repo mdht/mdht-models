@@ -10,16 +10,18 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.EncounterActivities;
 import org.openhealthtools.mdht.uml.cda.consol.EncountersSection;
 import org.openhealthtools.mdht.uml.cda.consol.operations.EncountersSectionOperations;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -32,12 +34,31 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class EncountersSectionImpl extends EncountersSectionEntriesOptionalImpl implements EncountersSection {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected EncountersSectionImpl() {
 		super();
+	}
+
+	/**
+	* <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	* @generated
+	*/
+	@Override
+	protected EClass eStaticClass() {
+		return ConsolPackage.Literals.ENCOUNTERS_SECTION;
+	}
+
+	/**
+	* <!-- begin-user-doc -->
+	* <!-- end-user-doc -->
+	* @generated
+	*/
+	public boolean validateEncountersSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EncountersSectionOperations.validateEncountersSectionCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -45,9 +66,8 @@ public class EncountersSectionImpl extends EncountersSectionEntriesOptionalImpl 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@Override
-	protected EClass eStaticClass() {
-		return ConsolPackage.Literals.ENCOUNTERS_SECTION;
+	public boolean validateEncountersSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return EncountersSectionOperations.validateEncountersSectionCode(this, diagnostics, context);
 	}
 
 	/**
@@ -60,61 +80,62 @@ public class EncountersSectionImpl extends EncountersSectionEntriesOptionalImpl 
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateEncountersSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EncountersSectionOperations.validateEncountersSectionTitle(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateEncountersSectionEncounterActivities(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EncountersSectionOperations.validateEncountersSectionEncounterActivities(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EList<EncounterActivities> getConsolEncounterActivitiess() {
 		return EncountersSectionOperations.getConsolEncounterActivitiess(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	public boolean validateEncountersSectionEntriesOptionalTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return EncountersSectionOperations.validateEncountersSectionEntriesOptionalTemplateId(this, diagnostics, context);
+		return EncountersSectionOperations.validateEncountersSectionEntriesOptionalTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean validateEncountersSectionEntriesOptionalCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EncountersSectionOperations.validateEncountersSectionEntriesOptionalCode(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	public EncountersSection init() {
-    	CDAUtil.init(this);
-    	return this;
+		return Initializer.Util.init(this);
+	}
+
+	/**
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   */
+	@Override
+	public EncountersSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
 	}
 } // EncountersSectionImpl

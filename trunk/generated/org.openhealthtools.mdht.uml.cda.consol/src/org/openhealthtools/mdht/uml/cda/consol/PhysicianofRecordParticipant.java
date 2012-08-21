@@ -10,9 +10,12 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.EncounterParticipant;
 
 /**
@@ -29,118 +32,117 @@ import org.openhealthtools.mdht.uml.cda.EncounterParticipant;
  */
 public interface PhysicianofRecordParticipant extends EncounterParticipant {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.6.2.2')
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.6.2.2\')'"
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.6.2.2\')'"
+	* @generated
+	*/
 	boolean validatePhysicianofRecordParticipantTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.typeCode=vocab::x_EncounterParticipant::ATND
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.typeCode=vocab::x_EncounterParticipant::ATND'"
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.typeCode=vocab::x_EncounterParticipant::ATND'"
+	* @generated
+	*/
 	boolean validatePhysicianofRecordParticipantTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.assignedEntity->one(assignedEntity : cda::AssignedEntity | not assignedEntity.oclIsUndefined() and assignedEntity.oclIsKindOf(cda::AssignedEntity))
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.assignedEntity->one(assignedEntity : cda::AssignedEntity | not assignedEntity.oclIsUndefined() and assignedEntity.oclIsKindOf(cda::AssignedEntity))'"
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.assignedEntity->one(assignedEntity : cda::AssignedEntity | not assignedEntity.oclIsUndefined() and assignedEntity.oclIsKindOf(cda::AssignedEntity))'"
+	* @generated
+	*/
 	boolean validatePhysicianofRecordParticipantAssignedEntity(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.assignedEntity->excluding(null).assignedPerson->excluding(null)->reject((name->isEmpty() or name->exists(element | element.isNullFlavorUndefined())) implies (not name->isEmpty()))
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.assignedEntity->excluding(null).assignedPerson->excluding(null)->reject((name->isEmpty() or name->exists(element | element.isNullFlavorUndefined())) implies (not name->isEmpty()))'"
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.assignedEntity->excluding(null).assignedPerson->excluding(null)->reject((name->isEmpty() or name->exists(element | element.isNullFlavorUndefined())) implies (not name->isEmpty()))'"
+	* @generated
+	*/
 	boolean validatePhysicianofRecordParticipantAssignedEntityAssignedPersonName(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.assignedEntity->excluding(null)->reject(code.codeSystem = '1.2.840.10008.2.16.4' or code.codeSystem = '2.16.840.1.113883.6.101')
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.assignedEntity->excluding(null)->reject(code.codeSystem = \'1.2.840.10008.2.16.4\' or code.codeSystem = \'2.16.840.1.113883.6.101\')'"
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.assignedEntity->excluding(null)->reject(code.codeSystem = \'1.2.840.10008.2.16.4\' or code.codeSystem = \'2.16.840.1.113883.6.101\')'"
+	* @generated
+	*/
 	boolean validatePhysicianofRecordParticipantAssignedEntityHasDICOMOrNUCCCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.assignedEntity->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.assignedEntity->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))'"
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.assignedEntity->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))'"
+	* @generated
+	*/
 	boolean validatePhysicianofRecordParticipantAssignedEntityCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.assignedEntity->excluding(null)->reject((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (not id->isEmpty()))
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.assignedEntity->excluding(null)->reject((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (not id->isEmpty()))'"
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.assignedEntity->excluding(null)->reject((id->isEmpty() or id->exists(element | element.isNullFlavorUndefined())) implies (not id->isEmpty()))'"
+	* @generated
+	*/
 	boolean validatePhysicianofRecordParticipantAssignedEntityId(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * self.assignedEntity->excluding(null)->reject(assignedPerson->one(assignedPerson : cda::Person | not assignedPerson.oclIsUndefined() and assignedPerson.oclIsKindOf(cda::Person)))
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.assignedEntity->excluding(null)->reject(assignedPerson->one(assignedPerson : cda::Person | not assignedPerson.oclIsUndefined() and assignedPerson.oclIsKindOf(cda::Person)))'"
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.assignedEntity->excluding(null)->reject(assignedPerson->one(assignedPerson : cda::Person | not assignedPerson.oclIsUndefined() and assignedPerson.oclIsKindOf(cda::Person)))'"
+	* @generated
+	*/
 	boolean validatePhysicianofRecordParticipantAssignedEntityAssignedPerson(DiagnosticChain diagnostics,
 			Map<Object, Object> context);
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public PhysicianofRecordParticipant init();
+
+	/**
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   */
+	public PhysicianofRecordParticipant init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PhysicianofRecordParticipant

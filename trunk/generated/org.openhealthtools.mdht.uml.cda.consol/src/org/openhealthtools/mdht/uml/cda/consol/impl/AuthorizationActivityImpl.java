@@ -10,15 +10,17 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.consol.impl;
 
+import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.AuthorizationActivity;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.operations.AuthorizationActivityOperations;
 import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
 
 /**
  * <!-- begin-user-doc -->
@@ -31,88 +33,91 @@ import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
  */
 public class AuthorizationActivityImpl extends ActImpl implements AuthorizationActivity {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected AuthorizationActivityImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.AUTHORIZATION_ACTIVITY;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateAuthorizationActivityTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AuthorizationActivityOperations.validateAuthorizationActivityTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateAuthorizationActivityClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AuthorizationActivityOperations.validateAuthorizationActivityClassCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateAuthorizationActivityId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AuthorizationActivityOperations.validateAuthorizationActivityId(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateAuthorizationActivityMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AuthorizationActivityOperations.validateAuthorizationActivityMoodCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateAuthorizationActivityEntryRelationship(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AuthorizationActivityOperations.validateAuthorizationActivityEntryRelationship(this, diagnostics, context);
+		return AuthorizationActivityOperations.validateAuthorizationActivityEntryRelationship(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateAuthorizationActivityEntryRelationshipHasClinicalStatement(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AuthorizationActivityOperations.validateAuthorizationActivityEntryRelationshipHasClinicalStatement(this, diagnostics, context);
+		return AuthorizationActivityOperations.validateAuthorizationActivityEntryRelationshipHasClinicalStatement(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public boolean validateAuthorizationActivityEntryRelationshipHasAuhtorixedPerformers(DiagnosticChain diagnostics,
+	* <!-- begin-user-doc -->
+	* <!-- end-user-doc -->
+	* @generated
+	*/
+	public boolean validateAuthorizationActivityEntryRelationshipHasAuthorizedPerformers(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AuthorizationActivityOperations.validateAuthorizationActivityEntryRelationshipHasAuhtorixedPerformers(this, diagnostics, context);
+		return AuthorizationActivityOperations.validateAuthorizationActivityEntryRelationshipHasAuthorizedPerformers(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -122,16 +127,26 @@ public class AuthorizationActivityImpl extends ActImpl implements AuthorizationA
 	 */
 	public boolean validateAuthorizationActivityEntryRelationshipTypeCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AuthorizationActivityOperations.validateAuthorizationActivityEntryRelationshipTypeCode(this, diagnostics, context);
+		return AuthorizationActivityOperations.validateAuthorizationActivityEntryRelationshipTypeCode(
+			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public AuthorizationActivity init() {
-    	CDAUtil.init(this);
-    	return this;
+		return Initializer.Util.init(this);
+	}
+
+	/**
+	   * <!-- begin-user-doc -->
+	   * <!-- end-user-doc -->
+	   * @generated
+	   */
+	public AuthorizationActivity init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+		Initializer.Util.init(this, initializers);
+		return this;
 	}
 } // AuthorizationActivityImpl
