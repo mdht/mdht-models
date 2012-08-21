@@ -35,8 +35,7 @@
         <language>Analysis</language>
         <language>OCL</language>
         <body>Contains one or more Problem Act and/or Result Organizer</body>
-        <body>self.getEntryTargets(ccd::ProblemAct)->size() > 0&#xD;
-  or self.getEntryTargets(ccd::ResultOrganizer)->size() > 0</body>
+        <body>self.getEntryTargets(ccd::ProblemAct)->size() > 0&#xD;&#xA;  or self.getEntryTargets(ccd::ResultOrganizer)->size() > 0</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_xpwBIMgmEeCHk-lvWGDTdA" name="titleValue" constrainedElement="_GoctIKPdEd6t_4WfM070fA">
@@ -132,8 +131,7 @@
         <language>Analysis</language>
         <language>OCL</language>
         <body>A result observation in the functional status section SHALL contain exactly one status of functional status observation.</body>
-        <body>self.getObservations()->select(obs : cda::Observation | (obs.oclIsKindOf(ccd::ResultObservation) or obs.oclIsKindOf(ccd::ProblemObservation)))->&#xD;
-forAll(ob : cda::Observation | ob.getObservations()->select(o: cda::Observation | o.oclIsKindOf(ccd::FunctionalStatusObservation))->size() = 1)</body>
+        <body>self.getObservations()->select(obs : cda::Observation | (obs.oclIsKindOf(ccd::ResultObservation) or obs.oclIsKindOf(ccd::ProblemObservation)))->&#xD;&#xA;forAll(ob : cda::Observation | ob.getObservations()->select(o: cda::Observation | o.oclIsKindOf(ccd::FunctionalStatusObservation))->size() = 1)</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_Ju45oKPdEd6t_4WfM070fA">

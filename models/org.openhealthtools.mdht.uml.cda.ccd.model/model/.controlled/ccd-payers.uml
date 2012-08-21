@@ -59,13 +59,7 @@
         <language>Analysis</language>
         <language>OCL</language>
         <body>An alert observation contains one or more sources of information.</body>
-        <body>not self.informant->isEmpty() &#xD;
-  or not self.getSection().informant->isEmpty()&#xD;
-  or not self.getClinicalDocument().informant->isEmpty()&#xD;
-  or self.reference->exists(ref : cda::Reference | ref.typeCode = vocab::x_ActRelationshipExternalReference::XCRPT)&#xD;
-  or (self.entryRelationship->exists(rel : cda::EntryRelationship | &#xD;
-   rel.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR&#xD;
-   and rel.observation.code.code = '48766-0'))</body>
+        <body>not self.informant->isEmpty() &#xD;&#xA;  or not self.getSection().informant->isEmpty()&#xD;&#xA;  or not self.getClinicalDocument().informant->isEmpty()&#xD;&#xA;  or self.reference->exists(ref : cda::Reference | ref.typeCode = vocab::x_ActRelationshipExternalReference::XCRPT)&#xD;&#xA;  or (self.entryRelationship->exists(rel : cda::EntryRelationship | &#xD;&#xA;   rel.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR&#xD;&#xA;   and rel.observation.code.code = '48766-0'))</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_d2ohIHmbEd-pnJdGZX6q4Q" name="sequenceNumber" constrainedElement="_4A1mMMJqEd6-XpBv2uxYrQ">
@@ -144,8 +138,7 @@
         <language>Analysis</language>
         <language>OCL</language>
         <body>A covered party in a policy activity MAY contain exactly one participant / time, to represent the time period over which the patient is covered.</body>
-        <body>self.participant->one(part : cda::Participant2 | part.typeCode = vocab::ParticipationType::COV&#xD;
-  implies not part.time.oclIsUndefined())</body>
+        <body>self.participant->one(part : cda::Participant2 | part.typeCode = vocab::ParticipationType::COV&#xD;&#xA;  implies not part.time.oclIsUndefined())</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_qbNg8HooEd-OuuwcsTsBUQ" name="subscriberIsAllowed" constrainedElement="_6M-toMJqEd6-XpBv2uxYrQ">
@@ -161,8 +154,7 @@
         <language>Analysis</language>
         <language>OCL</language>
         <body>A subscriber in a policy activity MAY contain exactly one participant / time, to represent the time period for which the subscriber is enrolled.</body>
-        <body>self.participant->one(part : cda::Participant2 | part.typeCode = vocab::ParticipationType::HLD&#xD;
-  implies not part.time.oclIsUndefined())</body>
+        <body>self.participant->one(part : cda::Participant2 | part.typeCode = vocab::ParticipationType::HLD&#xD;&#xA;  implies not part.time.oclIsUndefined())</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_tMMhYHpVEd-OuuwcsTsBUQ" name="entryRelationshipREFR" constrainedElement="_6M-toMJqEd6-XpBv2uxYrQ">
@@ -178,8 +170,7 @@
         <language>Analysis</language>
         <language>OCL</language>
         <body>The target of a policy activity with entryRelationship / @typeCode='REFR' SHALL be an Authorization Activity or an Act, with Act [@classCode = 'ACT'] and Act [@moodCode = 'DEF'], representing a description of the coverage plan.</body>
-        <body>self.entryRelationship->forAll(rel : cda::EntryRelationship | rel.act.oclIsKindOf(ccd::AuthorizationActivity)&#xD;
-  or rel.act.oclIsKindOf(ccd::CoveragePlanDescription))</body>
+        <body>self.entryRelationship->forAll(rel : cda::EntryRelationship | rel.act.oclIsKindOf(ccd::AuthorizationActivity)&#xD;&#xA;  or rel.act.oclIsKindOf(ccd::CoveragePlanDescription))</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_-W-B0MJqEd6-XpBv2uxYrQ">

@@ -75,9 +75,7 @@
     <ownedRule xmi:id="_QLZmcDHtEd-saqiXO4OYhQ" name="moodCodeValue" constrainedElement="_tIW-oDHlEd-saqiXO4OYhQ">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_QLZmcTHtEd-saqiXO4OYhQ">
         <language>OCL</language>
-        <body>self.moodCode = vocab::x_DocumentActMood::INT or self.moodCode = vocab::x_DocumentActMood::ARQ&#xD;
-  or self.moodCode = vocab::x_DocumentActMood::PRMS or self.moodCode = vocab::x_DocumentActMood::PRP&#xD;
-  or self.moodCode = vocab::x_DocumentActMood::RQO</body>
+        <body>self.moodCode = vocab::x_DocumentActMood::INT or self.moodCode = vocab::x_DocumentActMood::ARQ&#xD;&#xA;  or self.moodCode = vocab::x_DocumentActMood::PRMS or self.moodCode = vocab::x_DocumentActMood::PRP&#xD;&#xA;  or self.moodCode = vocab::x_DocumentActMood::RQO</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_hzmlIMICEeCSK-pDGcrZ1w" name="hasInformation" constrainedElement="_azWbgMJuEd6-XpBv2uxYrQ">
@@ -107,9 +105,7 @@
     <ownedRule xmi:id="_PNzgUDHuEd-saqiXO4OYhQ" name="moodCodeValue" constrainedElement="_DWAvwDHqEd-saqiXO4OYhQ">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_PNzgUTHuEd-saqiXO4OYhQ">
         <language>OCL</language>
-        <body>self.moodCode = vocab::x_ActMoodDocumentObservation::INT or self.moodCode = vocab::x_ActMoodDocumentObservation::GOL&#xD;
-  or self.moodCode = vocab::x_ActMoodDocumentObservation::PRMS or self.moodCode = vocab::x_ActMoodDocumentObservation::PRP&#xD;
-  or self.moodCode = vocab::x_ActMoodDocumentObservation::RQO</body>
+        <body>self.moodCode = vocab::x_ActMoodDocumentObservation::INT or self.moodCode = vocab::x_ActMoodDocumentObservation::GOL&#xD;&#xA;  or self.moodCode = vocab::x_ActMoodDocumentObservation::PRMS or self.moodCode = vocab::x_ActMoodDocumentObservation::PRP&#xD;&#xA;  or self.moodCode = vocab::x_ActMoodDocumentObservation::RQO</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_tTS7kMICEeCSK-pDGcrZ1w" name="hasInformation" constrainedElement="_7I79cDHlEd-saqiXO4OYhQ">
@@ -139,9 +135,7 @@
     <ownedRule xmi:id="_rXlD4DHtEd-saqiXO4OYhQ" name="moodCodeValue" constrainedElement="_F3vCcDHmEd-saqiXO4OYhQ">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_rXlq8DHtEd-saqiXO4OYhQ">
         <language>OCL</language>
-        <body>self.moodCode = vocab::x_DocumentEncounterMood::INT or self.moodCode = vocab::x_DocumentEncounterMood::ARQ&#xD;
-  or self.moodCode = vocab::x_DocumentEncounterMood::PRMS or self.moodCode = vocab::x_DocumentEncounterMood::PRP&#xD;
-  or self.moodCode = vocab::x_DocumentEncounterMood::RQO</body>
+        <body>self.moodCode = vocab::x_DocumentEncounterMood::INT or self.moodCode = vocab::x_DocumentEncounterMood::ARQ&#xD;&#xA;  or self.moodCode = vocab::x_DocumentEncounterMood::PRMS or self.moodCode = vocab::x_DocumentEncounterMood::PRP&#xD;&#xA;  or self.moodCode = vocab::x_DocumentEncounterMood::RQO</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_qPDugMICEeCSK-pDGcrZ1w" name="hasInformation" constrainedElement="_EGZnsDHmEd-saqiXO4OYhQ">
@@ -174,9 +168,7 @@
     <ownedRule xmi:id="_v3_UADHtEd-saqiXO4OYhQ" name="moodCodeValue" constrainedElement="_3eAnADHpEd-saqiXO4OYhQ">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_v3_7EDHtEd-saqiXO4OYhQ">
         <language>OCL</language>
-        <body>self.moodCode = vocab::x_DocumentProcedureMood::INT or self.moodCode = vocab::x_DocumentProcedureMood::ARQ&#xD;
-  or self.moodCode = vocab::x_DocumentProcedureMood::PRMS or self.moodCode = vocab::x_DocumentProcedureMood::PRP&#xD;
-  or self.moodCode = vocab::x_DocumentProcedureMood::RQO</body>
+        <body>self.moodCode = vocab::x_DocumentProcedureMood::INT or self.moodCode = vocab::x_DocumentProcedureMood::ARQ&#xD;&#xA;  or self.moodCode = vocab::x_DocumentProcedureMood::PRMS or self.moodCode = vocab::x_DocumentProcedureMood::PRP&#xD;&#xA;  or self.moodCode = vocab::x_DocumentProcedureMood::RQO</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_vmuWwMICEeCSK-pDGcrZ1w" name="hasInformation" constrainedElement="_1z0WEDHpEd-saqiXO4OYhQ">
@@ -207,8 +199,7 @@
     <ownedRule xmi:id="_4p844DHtEd-saqiXO4OYhQ" name="moodCodeValue" constrainedElement="_-UyRkDHpEd-saqiXO4OYhQ">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_4p844THtEd-saqiXO4OYhQ">
         <language>OCL</language>
-        <body>self.moodCode = vocab::x_DocumentSubstanceMood::INT or self.moodCode = vocab::x_DocumentSubstanceMood::RQO&#xD;
-  or self.moodCode = vocab::x_DocumentSubstanceMood::PRMS or self.moodCode = vocab::x_DocumentSubstanceMood::PRP</body>
+        <body>self.moodCode = vocab::x_DocumentSubstanceMood::INT or self.moodCode = vocab::x_DocumentSubstanceMood::RQO&#xD;&#xA;  or self.moodCode = vocab::x_DocumentSubstanceMood::PRMS or self.moodCode = vocab::x_DocumentSubstanceMood::PRP</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_zGfCMMICEeCSK-pDGcrZ1w" name="hasInformation" constrainedElement="_9Yav8DHpEd-saqiXO4OYhQ">
@@ -239,8 +230,7 @@
     <ownedRule xmi:id="_CMr98DHvEd-saqiXO4OYhQ" name="moodCodeValue" constrainedElement="_BpotgDHqEd-saqiXO4OYhQ">
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_CMr98THvEd-saqiXO4OYhQ">
         <language>OCL</language>
-        <body>self.moodCode = vocab::x_DocumentSubstanceMood::INT or self.moodCode = vocab::x_DocumentSubstanceMood::RQO&#xD;
-  or self.moodCode = vocab::x_DocumentSubstanceMood::PRMS or self.moodCode = vocab::x_DocumentSubstanceMood::PRP</body>
+        <body>self.moodCode = vocab::x_DocumentSubstanceMood::INT or self.moodCode = vocab::x_DocumentSubstanceMood::RQO&#xD;&#xA;  or self.moodCode = vocab::x_DocumentSubstanceMood::PRMS or self.moodCode = vocab::x_DocumentSubstanceMood::PRP</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_0cB40MICEeCSK-pDGcrZ1w" name="hasInformation" constrainedElement="_A9YrgDHqEd-saqiXO4OYhQ">

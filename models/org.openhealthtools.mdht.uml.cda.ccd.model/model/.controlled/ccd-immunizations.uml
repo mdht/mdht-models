@@ -19,8 +19,7 @@
         <language>Analysis</language>
         <language>OCL</language>
         <body>Clinical statements include one or more Medication Activity and/or one or more Supply Activity.</body>
-        <body>self.getSubstanceAdministrations()->exists(activity : cda::SubstanceAdministration | activity.oclIsKindOf(ccd::MedicationActivity))&#xD;
-   or self.getSupplies()->exists(activity : cda::Supply | activity.oclIsKindOf(ccd::SupplyActivity))</body>
+        <body>self.getSubstanceAdministrations()->exists(activity : cda::SubstanceAdministration | activity.oclIsKindOf(ccd::MedicationActivity))&#xD;&#xA;   or self.getSupplies()->exists(activity : cda::Supply | activity.oclIsKindOf(ccd::SupplyActivity))</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_hth8UFaBEeGCdLgBm6VHOQ" name="absenceOfMedications" constrainedElement="_CinbMHDPEd6eItyqb1FoWg">
