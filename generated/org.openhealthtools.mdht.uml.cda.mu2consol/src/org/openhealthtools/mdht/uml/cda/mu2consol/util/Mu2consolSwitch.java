@@ -129,16 +129,6 @@ public class Mu2consolSwitch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case Mu2consolPackage.INSTRUCTIONS_SECTION: {
-				InstructionsSection instructionsSection = (InstructionsSection)theEObject;
-				T result = caseInstructionsSection(instructionsSection);
-				if (result == null) result = caseConsol_InstructionsSection(instructionsSection);
-				if (result == null) result = caseSection(instructionsSection);
-				if (result == null) result = caseAct(instructionsSection);
-				if (result == null) result = caseInfrastructureRoot(instructionsSection);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
 			case Mu2consolPackage.ASSESSMENT_SECTION: {
 				AssessmentSection assessmentSection = (AssessmentSection)theEObject;
 				T result = caseAssessmentSection(assessmentSection);
@@ -246,6 +236,16 @@ public class Mu2consolSwitch<T> {
 				if (result == null) result = caseSection(assessmentAndPlanForConditionOrConcern);
 				if (result == null) result = caseAct(assessmentAndPlanForConditionOrConcern);
 				if (result == null) result = caseInfrastructureRoot(assessmentAndPlanForConditionOrConcern);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case Mu2consolPackage.INSTRUCTIONS_SECTION: {
+				InstructionsSection instructionsSection = (InstructionsSection)theEObject;
+				T result = caseInstructionsSection(instructionsSection);
+				if (result == null) result = caseConsol_InstructionsSection(instructionsSection);
+				if (result == null) result = caseSection(instructionsSection);
+				if (result == null) result = caseAct(instructionsSection);
+				if (result == null) result = caseInfrastructureRoot(instructionsSection);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
