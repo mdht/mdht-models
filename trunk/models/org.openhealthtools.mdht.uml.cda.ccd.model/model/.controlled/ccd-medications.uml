@@ -15,7 +15,8 @@
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_WEN48OtCEd-aaJELhEID-A">
         <language>OCL</language>
         <language>Analysis</language>
-        <body>self.getSubstanceAdministrations()->exists(activity : cda::SubstanceAdministration | activity.oclIsKindOf(ccd::MedicationActivity))&#xD;&#xA;   or self.getSupplies()->exists(activity : cda::Supply | activity.oclIsKindOf(ccd::SupplyActivity))</body>
+        <body>self.getSubstanceAdministrations()->exists(activity : cda::SubstanceAdministration | activity.oclIsKindOf(ccd::MedicationActivity))&#xD;
+   or self.getSupplies()->exists(activity : cda::Supply | activity.oclIsKindOf(ccd::SupplyActivity))</body>
         <body>Clinical statements include one or more Medication Activity and/or one or more Supply Activity.</body>
       </specification>
     </ownedRule>
@@ -98,7 +99,13 @@
         <language>Analysis</language>
         <language>OCL</language>
         <body>Contains one or more sources of information.</body>
-        <body>not self.informant->isEmpty() &#xD;&#xA;or not self.getSection().informant->isEmpty()&#xD;&#xA;or not self.getClinicalDocument().informant->isEmpty()&#xD;&#xA;or self.reference->exists(ref : cda::Reference | ref.typeCode = vocab::x_ActRelationshipExternalReference::XCRPT)&#xD;&#xA;or (self.entryRelationship->exists(rel : cda::EntryRelationship | &#xD;&#xA;   rel.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR&#xD;&#xA;   and rel.observation.code.code = '48766-0'))</body>
+        <body>not self.informant->isEmpty() &#xD;
+or not self.getSection().informant->isEmpty()&#xD;
+or not self.getClinicalDocument().informant->isEmpty()&#xD;
+or self.reference->exists(ref : cda::Reference | ref.typeCode = vocab::x_ActRelationshipExternalReference::XCRPT)&#xD;
+or (self.entryRelationship->exists(rel : cda::EntryRelationship | &#xD;
+   rel.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR&#xD;
+   and rel.observation.code.code = '48766-0'))</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_a-4ucOuKEd-HcKrkbxroPA" name="hasPreconditionCriterion" constrainedElement="_W6aMoHfTEd6ZeOKq_2_a9g">
@@ -128,7 +135,9 @@
         <language>Analysis</language>
         <language>OCL</language>
         <body>entryRelationship / @typeCode=&quot;RSON&quot; in a medication activity has a target of problem act (templateId 2.16.840.1.113883.10.20.1.27), problem observation (templateId 2.16.840.1.113883.10.20.1.28), or some other clinical statement.</body>
-        <body>self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::RSON, cda::ClinicalStatement)->forAll(target : &#xD;&#xD;&#xA;cda::ClinicalStatement | not target.oclIsUndefined() and &#xD;&#xA;  (target.oclIsKindOf(ccd::ProblemAct) or target.oclIsKindOf(ccd::ProblemObservation)))</body>
+        <body>self.getEntryRelationshipTargets(vocab::x_ActRelationshipEntryRelationship::RSON, cda::ClinicalStatement)->forAll(target : &#xD;&#xD;
+cda::ClinicalStatement | not target.oclIsUndefined() and &#xD;
+  (target.oclIsKindOf(ccd::ProblemAct) or target.oclIsKindOf(ccd::ProblemObservation)))</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_KmHj8Cp6EeCuGIaOlnUvyw" name="hasProduct" constrainedElement="_W6aMoHfTEd6ZeOKq_2_a9g">
@@ -267,7 +276,13 @@
         <language>Analysis</language>
         <language>OCL</language>
         <body>Contains one or more sources of information.</body>
-        <body>not self.informant->isEmpty() &#xD;&#xA;or not self.getSection().informant->isEmpty()&#xD;&#xA;or not self.getClinicalDocument().informant->isEmpty()&#xD;&#xA;or self.reference->exists(ref : cda::Reference | ref.typeCode = vocab::x_ActRelationshipExternalReference::XCRPT)&#xD;&#xA;or (self.entryRelationship->exists(rel : cda::EntryRelationship | &#xD;&#xA;   rel.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR&#xD;&#xA;   and rel.observation.code.code = '48766-0'))</body>
+        <body>not self.informant->isEmpty() &#xD;
+or not self.getSection().informant->isEmpty()&#xD;
+or not self.getClinicalDocument().informant->isEmpty()&#xD;
+or self.reference->exists(ref : cda::Reference | ref.typeCode = vocab::x_ActRelationshipExternalReference::XCRPT)&#xD;
+or (self.entryRelationship->exists(rel : cda::EntryRelationship | &#xD;
+   rel.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR&#xD;
+   and rel.observation.code.code = '48766-0'))</body>
       </specification>
     </ownedRule>
     <ownedRule xmi:id="_s53hACp6EeCuGIaOlnUvyw" name="hasProduct" constrainedElement="_dAAnAHfVEd6ZeOKq_2_a9g">
