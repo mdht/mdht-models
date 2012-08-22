@@ -7,7 +7,7 @@
 Document Type Codes
 CDA R2 states that LOINC is the preferred vocabulary for document type codes, which specify the type of document being exchanged (e.g., History and Physical). Each document type in this guide recommends a single preferred clinicalDocument/code, with further specification provided by author or performer, setting, or specialty</body>
     </ownedComment>
-    <ownedRule xmi:id="_Fz5m8FcZEeGCdLgBm6VHOQ" name="USRealmAddress" constrainedElement="_2DNRcBSVEeGGzu7fmW9pXw">
+    <ownedRule xmi:id="_Fz5m8FcZEeGCdLgBm6VHOQ" name="USRealmAddressSHALL" constrainedElement="_2DNRcBSVEeGGzu7fmW9pXw">
       <ownedComment xmi:id="_eXOy0FcZEeGCdLgBm6VHOQ">
         <body>QUERY</body>
       </ownedComment>
@@ -15,14 +15,34 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
         <language>Analysis</language>
         <language>OCL</language>
         <body>The US Realm Clinical Document Address datatype flavor is used by US Realm Clinical Document Header for the patient or any other person or organization mentioned within it.</body>
-        <body>datatypes::AD.allInstances()->reject(&#xD;&#xA;    addr : datatypes::AD | &#xD;&#xA;    addr.isNullFlavorDefined() or ( &#xD;&#xA;&#x9;&#x9;not addr.use->isEmpty() and&#xD;&#xA;&#x9;&#x9;addr.use->forAll(&#xD;&#xA;&#x9;&#x9;&#x9;use : vocab::PostalAddressUse |&#xD;&#xA;&#x9;&#x9;&#x9;use=vocab::PostalAddressUse::BAD or&#xD;&#xA;&#x9;&#x9;&#x9;use=vocab::PostalAddressUse::DIR or&#xD;&#xA;&#x9;&#x9;&#x9;use=vocab::PostalAddressUse::H or&#xD;&#xA;&#x9;&#x9;&#x9;use=vocab::PostalAddressUse::HP or&#xD;&#xA;&#x9;&#x9;&#x9;use=vocab::PostalAddressUse::HV or&#xD;&#xA;&#x9;&#x9;&#x9;use=vocab::PostalAddressUse::PHYS or&#xD;&#xA;&#x9;&#x9;&#x9;use=vocab::PostalAddressUse::PST or&#xD;&#xA;&#x9;&#x9;&#x9;use=vocab::PostalAddressUse::PUB or&#xD;&#xA;&#x9;&#x9;&#x9;use=vocab::PostalAddressUse::TMP or&#xD;&#xA;&#x9;&#x9;&#x9;use=vocab::PostalAddressUse::WP&#xD;&#xA;&#x9;&#x9;) and&#xD;&#xA;&#x9;&#x9;addr.streetAddressLine->size() >= 1 and&#xD;&#xA;&#x9;&#x9;addr.streetAddressLine->size() &lt;= 4 and&#xD;&#xA;&#x9;&#x9;addr.city->size() = 1 and&#xD;&#xA;&#x9;&#x9;addr.country->size() &lt;= 1 and&#xD;&#xA;&#x9;&#x9;(&#xD;&#xA;&#x9;&#x9;&#x9;(&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;addr.country->size() = 0 or&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;(&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;addr.country->size() = 1 and addr.country->asSequence()->first().getText()='US'&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;)&#xD;&#xA;&#x9;&#x9;&#x9;) implies addr.state->size() = 1 and addr.postalCode->size() = 1&#xD;&#xA;&#x9;&#x9;)&#xD;&#xA;&#x9;)&#xD;&#xA;)</body>
+        <body>datatypes::AD.allInstances()->reject(&#xD;&#xA;    addr : datatypes::AD | &#xD;&#xA;    addr.isNullFlavorDefined() or ( &#xD;&#xA;&#x9;&#x9;addr.streetAddressLine->size() >= 1 and&#xD;&#xA;&#x9;&#x9;addr.streetAddressLine->size() &lt;= 4 and&#xD;&#xA;&#x9;&#x9;addr.city->size() = 1 &#xD;&#xA;&#x9;)&#xD;&#xA;)</body>
       </specification>
     </ownedRule>
-    <ownedRule xmi:id="_NiUccFcfEeGCdLgBm6VHOQ" name="USRealmDateAndTime" constrainedElement="_2DNRcBSVEeGGzu7fmW9pXw">
+    <ownedRule xmi:id="_cD9wQOx1EeG7k4bbVdXbXw" name="USRealmAddressSHOULD" constrainedElement="_2DNRcBSVEeGGzu7fmW9pXw">
+      <ownedComment xmi:id="_cD9wQex1EeG7k4bbVdXbXw">
+        <body>QUERY</body>
+      </ownedComment>
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_cD9wQux1EeG7k4bbVdXbXw">
+        <language>Analysis</language>
+        <language>OCL</language>
+        <body>The US Realm Clinical Document Address datatype flavor is used by US Realm Clinical Document Header for the patient or any other person or organization mentioned within it.</body>
+        <body>datatypes::AD.allInstances()->reject(&#xD;&#xA;    addr : datatypes::AD | &#xD;&#xA;    addr.isNullFlavorDefined() or ( &#xD;&#xA;&#x9;&#x9;not addr.use->isEmpty() and&#xD;&#xA;&#x9;&#x9;addr.use->forAll(&#xD;&#xA;&#x9;&#x9;&#x9;use : vocab::PostalAddressUse |&#xD;&#xA;&#x9;&#x9;&#x9;use=vocab::PostalAddressUse::BAD or&#xD;&#xA;&#x9;&#x9;&#x9;use=vocab::PostalAddressUse::DIR or&#xD;&#xA;&#x9;&#x9;&#x9;use=vocab::PostalAddressUse::H or&#xD;&#xA;&#x9;&#x9;&#x9;use=vocab::PostalAddressUse::HP or&#xD;&#xA;&#x9;&#x9;&#x9;use=vocab::PostalAddressUse::HV or&#xD;&#xA;&#x9;&#x9;&#x9;use=vocab::PostalAddressUse::PHYS or&#xD;&#xA;&#x9;&#x9;&#x9;use=vocab::PostalAddressUse::PST or&#xD;&#xA;&#x9;&#x9;&#x9;use=vocab::PostalAddressUse::PUB or&#xD;&#xA;&#x9;&#x9;&#x9;use=vocab::PostalAddressUse::TMP or&#xD;&#xA;&#x9;&#x9;&#x9;use=vocab::PostalAddressUse::WP&#xD;&#xA;&#x9;&#x9;)  and&#xD;&#xA;&#x9;&#x9;addr.country->size() &lt;= 1 and&#xD;&#xA;&#x9;&#x9;(&#xD;&#xA;&#x9;&#x9;&#x9;(&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;addr.country->size() = 0 or&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;(&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;addr.country->size() = 1 and addr.country->asSequence()->first().getText()='US'&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;)&#xD;&#xA;&#x9;&#x9;&#x9;) implies addr.state->size() = 1 and addr.postalCode->size() = 1&#xD;&#xA;&#x9;&#x9;)&#xD;&#xA;&#x9;)&#xD;&#xA;)</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_NiUccFcfEeGCdLgBm6VHOQ" name="USRealmDateAndTimeEffectiveTime" constrainedElement="_2DNRcBSVEeGGzu7fmW9pXw">
       <ownedComment xmi:id="_3X_-UMbHEeGp28IjMvW3Ag">
         <body>UNIMPLEMENTABLE</body>
       </ownedComment>
       <specification xmi:type="uml:OpaqueExpression" xmi:id="_U7RnAFcfEeGCdLgBm6VHOQ">
+        <language>Analysis</language>
+        <body>The US Realm Clinical Document Date and Time datatype flavor records date and time information. If no time zone offset &#xD;&#xA;is provided, you can make no assumption about time, unless you have made a local exchange agreement.&#xD;&#xA;This data type uses the same rules as US Realm Date and Time (DTM.US.FIELDED),  but is used with the effectiveTime &#xD;&#xA;element.</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_GTIrwOx2EeG7k4bbVdXbXw" name="USRealmDateAndTime" constrainedElement="_2DNRcBSVEeGGzu7fmW9pXw">
+      <ownedComment xmi:id="_GTIrwex2EeG7k4bbVdXbXw">
+        <body>UNIMPLEMENTABLE</body>
+      </ownedComment>
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_GTIrwux2EeG7k4bbVdXbXw">
         <language>Analysis</language>
         <body>The US Realm Clinical Document Date and Time datatype flavor records date and time information. If no time zone offset &#xD;&#xA;is provided, you can make no assumption about time, unless you have made a local exchange agreement.&#xD;&#xA;This data type uses the same rules as US Realm Date and Time (DTM.US.FIELDED),  but is used with the effectiveTime &#xD;&#xA;element.</body>
       </specification>
@@ -97,6 +117,12 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
         <language>OCL</language>
         <body>US Realm Patient Name SHALL NOT contain any mixed content other than whitespace</body>
         <body>datatypes::PN.allInstances()->reject(name : datatypes::PN | name.getText(true) = '')</body>
+      </specification>
+    </ownedRule>
+    <ownedRule xmi:id="_xwE-wOxyEeG7k4bbVdXbXw" name="consent" constrainedElement="_2DNRcBSVEeGGzu7fmW9pXw">
+      <specification xmi:type="uml:OpaqueExpression" xmi:id="_1HdKQOxyEeG7k4bbVdXbXw">
+        <language>Analysis</language>
+        <body>When consent is recorded, it SHALL be represented as ClinicalDocument/authorization/consent.</body>
       </specification>
     </ownedRule>
     <generalization xmi:id="_2D-tgBSVEeGGzu7fmW9pXw">
@@ -193,6 +219,12 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
     <ownedAttribute xmi:id="_5T_nMCzHEeGMXrZ0DiQwGg" name="inFulfillmentOf" type="_yamekCyoEeGMXrZ0DiQwGg" association="_5UAOQSzHEeGMXrZ0DiQwGg">
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_K4dXkDsuEeGvzMYhXuqAEA" value="*"/>
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_K4dXkTsuEeGvzMYhXuqAEA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_wZOLcOxwEeG7k4bbVdXbXw" name="documentationOf" visibility="private" type="_2aslsOxwEeG7k4bbVdXbXw" aggregation="composite">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wZOLcexwEeG7k4bbVdXbXw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wZOLcuxwEeG7k4bbVdXbXw"/>
+      <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_4mW64UoVEd6c3qsAxlFHaQ"/>
+      <association href="../consol.uml#_wZOygOxwEeG7k4bbVdXbXw"/>
     </ownedAttribute>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_jPhi4CylEeGMXrZ0DiQwGg" name="RecordTarget">
       <ownedComment xmi:id="_SsXIMCzJEeGMXrZ0DiQwGg">
@@ -330,15 +362,45 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Cm0V4iymEeGMXrZ0DiQwGg"/>
               <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_pgeocEo3Ed6c3qsAxlFHaQ"/>
             </ownedAttribute>
-            <ownedAttribute xmi:id="_Cm088CymEeGMXrZ0DiQwGg" name="telecom" visibility="private" aggregation="composite">
-              <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_22o_kD52Ed6cla2oXsPtlA"/>
+            <ownedAttribute xmi:id="_Cm088CymEeGMXrZ0DiQwGg" name="telecom" visibility="private" type="_TJgmcOxkEeG7k4bbVdXbXw" aggregation="composite">
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Cm088SymEeGMXrZ0DiQwGg" value="*"/>
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Cm088iymEeGMXrZ0DiQwGg"/>
               <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_vEd1cEo3Ed6c3qsAxlFHaQ"/>
             </ownedAttribute>
-            <ownedAttribute xmi:id="_M_vCwCysEeGMXrZ0DiQwGg" name="guardianPerson" type="_HcPMsCymEeGMXrZ0DiQwGg" association="_M_vp0CysEeGMXrZ0DiQwGg">
-              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_M_vCwSysEeGMXrZ0DiQwGg"/>
+            <ownedAttribute xmi:id="_PFeT0OxlEeG7k4bbVdXbXw" name="guardianPerson" visibility="private" type="_Qh844OxlEeG7k4bbVdXbXw" aggregation="composite">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Zxa5IOxlEeG7k4bbVdXbXw" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Zxa5IexlEeG7k4bbVdXbXw" value="1"/>
+              <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_sGovcUcjEd6besF9iFIJkQ"/>
+              <association href="../consol.uml#_PFfh8OxlEeG7k4bbVdXbXw"/>
             </ownedAttribute>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_TJgmcOxkEeG7k4bbVdXbXw" name="TEL">
+              <generalization xmi:id="_TKoAwOxkEeG7k4bbVdXbXw">
+                <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_22o_kD52Ed6cla2oXsPtlA"/>
+              </generalization>
+              <ownedAttribute xmi:id="_T-Xx4OxkEeG7k4bbVdXbXw" name="use" visibility="private">
+                <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zFEA0DcEd6xYZuu1VKCVw"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_d8C78OxkEeG7k4bbVdXbXw" value="1"/>
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_d8DjAOxkEeG7k4bbVdXbXw"/>
+                <redefinedProperty href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_5iTUkD52Ed6cla2oXsPtlA"/>
+              </ownedAttribute>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_Qh844OxlEeG7k4bbVdXbXw" name="Person">
+              <ownedRule xmi:id="_gAUEUOxlEeG7k4bbVdXbXw" name="USRealmPatientName" constrainedElement="_Qh844OxlEeG7k4bbVdXbXw">
+                <specification xmi:type="uml:OpaqueExpression" xmi:id="_nroxQOxlEeG7k4bbVdXbXw">
+                  <language>Analysis</language>
+                  <body>The content of name SHALL be a conformant US Realm Patient Name (PTN.US.FIELDED) (2.16.840.1.113883.10.20.22.5.1.1)</body>
+                </specification>
+              </ownedRule>
+              <generalization xmi:id="_Qh844exlEeG7k4bbVdXbXw">
+                <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_Je2yMEcaEd6besF9iFIJkQ"/>
+              </generalization>
+              <ownedAttribute xmi:id="_RBsv8OxlEeG7k4bbVdXbXw" name="name" visibility="private" aggregation="composite">
+                <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_3VD9wD5yEd6cla2oXsPtlA"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_V-tcgOxlEeG7k4bbVdXbXw" value="*"/>
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_V-tcgexlEeG7k4bbVdXbXw" value="1"/>
+                <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_L08A0ErgEd6FXKclYGEDCw"/>
+              </ownedAttribute>
+            </nestedClassifier>
           </nestedClassifier>
           <nestedClassifier xmi:type="uml:Class" xmi:id="_hrAmsCymEeGMXrZ0DiQwGg" name="LanguageCommunication">
             <generalization xmi:id="_hrAmsSymEeGMXrZ0DiQwGg">
@@ -373,16 +435,35 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
               <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_Y18S8EcEEd6besF9iFIJkQ"/>
             </generalization>
             <ownedAttribute xmi:id="_5KzqQCysEeGMXrZ0DiQwGg" name="place" type="_TGgbcCymEeGMXrZ0DiQwGg" association="_5K0RUSysEeGMXrZ0DiQwGg">
-              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5K0RUCysEeGMXrZ0DiQwGg"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_z4ehkOxlEeG7k4bbVdXbXw" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_z4ehkexlEeG7k4bbVdXbXw" value="1"/>
             </ownedAttribute>
             <nestedClassifier xmi:type="uml:Class" xmi:id="_TGgbcCymEeGMXrZ0DiQwGg" name="Place">
+              <ownedRule xmi:id="_7XFBIOxlEeG7k4bbVdXbXw" name="HasState" constrainedElement="_TGgbcCymEeGMXrZ0DiQwGg">
+                <specification xmi:type="uml:OpaqueExpression" xmi:id="__kVEsOxlEeG7k4bbVdXbXw">
+                  <language>Analysis</language>
+                  <body>If country is US, this addr SHALL contain exactly one [1..1] state, which SHALL be selected from ValueSet StateValueSet 2.16.840.1.113883.3.88.12.80.1 DYNAMIC</body>
+                </specification>
+              </ownedRule>
+              <ownedRule xmi:id="_79bPcOxlEeG7k4bbVdXbXw" name="hasPostalCode" constrainedElement="_TGgbcCymEeGMXrZ0DiQwGg">
+                <specification xmi:type="uml:OpaqueExpression" xmi:id="_B7izsOxmEeG7k4bbVdXbXw">
+                  <language>Analysis</language>
+                  <body>This addr MAY contain zero or one [0..1] postalCode, which SHALL be selected from ValueSet PostalCodeValueSet 2.16.840.1.113883.3.88.12.80.2 DYNAMIC</body>
+                </specification>
+              </ownedRule>
+              <ownedRule xmi:id="_8kl9IOxlEeG7k4bbVdXbXw" name="hasCountryValue" constrainedElement="_TGgbcCymEeGMXrZ0DiQwGg">
+                <specification xmi:type="uml:OpaqueExpression" xmi:id="_E8wh8OxmEeG7k4bbVdXbXw">
+                  <language>Analysis</language>
+                  <body>This addr SHOULD contain zero or one [0..1] country, which SHALL be selected from ValueSet CountryValueSet 2.16.840.1.113883.3.88.12.80.63 DYNAMIC</body>
+                </specification>
+              </ownedRule>
               <generalization xmi:id="_TGgbcSymEeGMXrZ0DiQwGg">
                 <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_KY0gEEcaEd6besF9iFIJkQ"/>
               </generalization>
               <ownedAttribute xmi:id="_bs30UCymEeGMXrZ0DiQwGg" name="addr" visibility="private" aggregation="composite">
                 <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_v0zRUD5yEd6cla2oXsPtlA"/>
-                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bs30USymEeGMXrZ0DiQwGg" value="1"/>
-                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bs30UiymEeGMXrZ0DiQwGg"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2CY0YOxlEeG7k4bbVdXbXw" value="1"/>
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2CZbcOxlEeG7k4bbVdXbXw" value="1"/>
                 <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_sK2_QErgEd6FXKclYGEDCw"/>
               </ownedAttribute>
             </nestedClassifier>
@@ -395,6 +476,12 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
               <language>OCL</language>
               <body>The id SHOULD include zero or one [0..1] id where id/@root =&quot;2.16.840.1.113883.4.6&quot; National Provider Identifier (CONF:9996)</body>
               <body>self.id->exists( root='2.16.840.1.113883.4.6' )</body>
+            </specification>
+          </ownedRule>
+          <ownedRule xmi:id="_936JsOxmEeG7k4bbVdXbXw" name="hasUSRealmAddress" constrainedElement="_6j680CytEeGMXrZ0DiQwGg">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="__DtOcOxmEeG7k4bbVdXbXw">
+              <language>Analysis</language>
+              <body>The content of addr SHALL be a conformant US Realm Address (AD.US.FIELDED)(2.16.840.1.113883.10.20.22.5.2)</body>
             </specification>
           </ownedRule>
           <generalization xmi:id="_6j680SytEeGMXrZ0DiQwGg">
@@ -418,12 +505,22 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZFRI0Sy6EeGMXrZ0DiQwGg" value="1"/>
             <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_BicPkErbEd6FXKclYGEDCw"/>
           </ownedAttribute>
-          <ownedAttribute xmi:id="_-Z1edCytEeGMXrZ0DiQwGg" name="telecom" visibility="private" aggregation="composite">
-            <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_22o_kD52Ed6cla2oXsPtlA"/>
+          <ownedAttribute xmi:id="_-Z1edCytEeGMXrZ0DiQwGg" name="telecom" visibility="private" type="_xDVD8OxmEeG7k4bbVdXbXw" aggregation="composite">
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cbvVYCy6EeGMXrZ0DiQwGg" value="*"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cbvVYSy6EeGMXrZ0DiQwGg" value="1"/>
             <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FEMfEErbEd6FXKclYGEDCw"/>
           </ownedAttribute>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_xDVD8OxmEeG7k4bbVdXbXw" name="TEL">
+            <generalization xmi:id="_xDYHQOxmEeG7k4bbVdXbXw">
+              <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_22o_kD52Ed6cla2oXsPtlA"/>
+            </generalization>
+            <ownedAttribute xmi:id="_xqTkYOxmEeG7k4bbVdXbXw" name="use" visibility="private">
+              <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zFEA0DcEd6xYZuu1VKCVw"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_y-qvQOxmEeG7k4bbVdXbXw" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_y-rWUOxmEeG7k4bbVdXbXw" value="1"/>
+              <redefinedProperty href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_5iTUkD52Ed6cla2oXsPtlA"/>
+            </ownedAttribute>
+          </nestedClassifier>
         </nestedClassifier>
       </nestedClassifier>
     </nestedClassifier>
@@ -464,6 +561,12 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
       <ownedComment xmi:id="_kQ25sCzJEeGMXrZ0DiQwGg">
         <body>INLINE</body>
       </ownedComment>
+      <ownedRule xmi:id="_KHg6IOxnEeG7k4bbVdXbXw" name="USRealmDateTime" constrainedElement="_xw9WkCymEeGMXrZ0DiQwGg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_N40BgOxnEeG7k4bbVdXbXw">
+          <language>Analysis</language>
+          <body>This time SHALL contain exactly one [1..1] US Realm Date and Time (DTM.US.FIELDED) (2.16.840.1.113883.10.20.22.5.4)</body>
+        </specification>
+      </ownedRule>
       <generalization xmi:id="_xw9WkSymEeGMXrZ0DiQwGg">
         <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ChEisEcEEd6besF9iFIJkQ"/>
       </generalization>
@@ -519,11 +622,14 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_J1-esSy7EeGMXrZ0DiQwGg" value="1"/>
           <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_RHqpUEodEd6c3qsAxlFHaQ"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_rUGegCy_EeGMXrZ0DiQwGg" name="assignedPerson" type="_HcPMsCymEeGMXrZ0DiQwGg" association="_rUHFkCy_EeGMXrZ0DiQwGg">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rUGegSy_EeGMXrZ0DiQwGg"/>
-        </ownedAttribute>
         <ownedAttribute xmi:id="_G7YjkCzAEeGMXrZ0DiQwGg" name="assignedAuthoringDevice" type="_1_b_0Cy_EeGMXrZ0DiQwGg" association="_G7ZKoSzAEeGMXrZ0DiQwGg">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G7ZKoCzAEeGMXrZ0DiQwGg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_BwGpoOxvEeG7k4bbVdXbXw" name="assignedPerson" visibility="private" type="_ClARUOxvEeG7k4bbVdXbXw" aggregation="composite">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BwGpoexvEeG7k4bbVdXbXw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BwGpouxvEeG7k4bbVdXbXw"/>
+          <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_9_sjEUcgEd6besF9iFIJkQ"/>
+          <association href="../consol.uml#_BwHQsOxvEeG7k4bbVdXbXw"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_1_b_0Cy_EeGMXrZ0DiQwGg" name="AuthoringDevice">
           <generalization xmi:id="_1_b_0Sy_EeGMXrZ0DiQwGg">
@@ -540,6 +646,17 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-dpiQCy_EeGMXrZ0DiQwGg" value="1"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-dpiQSy_EeGMXrZ0DiQwGg" value="1"/>
             <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_lSMhkEogEd6c3qsAxlFHaQ"/>
+          </ownedAttribute>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_ClARUOxvEeG7k4bbVdXbXw" name="Person">
+          <generalization xmi:id="_ClARUexvEeG7k4bbVdXbXw">
+            <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_Je2yMEcaEd6besF9iFIJkQ"/>
+          </generalization>
+          <ownedAttribute xmi:id="_DF0fYOxvEeG7k4bbVdXbXw" name="name" visibility="private" aggregation="composite">
+            <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_3VD9wD5yEd6cla2oXsPtlA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EqSi0OxvEeG7k4bbVdXbXw" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EqTw8OxvEeG7k4bbVdXbXw" value="1"/>
+            <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_L08A0ErgEd6FXKclYGEDCw"/>
           </ownedAttribute>
         </nestedClassifier>
       </nestedClassifier>
@@ -605,10 +722,23 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vqXpQSzBEeGMXrZ0DiQwGg" value="1"/>
           <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_D01r4EoeEd6c3qsAxlFHaQ"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_3EIhkCzAEeGMXrZ0DiQwGg" name="assignedPerson" type="_HcPMsCymEeGMXrZ0DiQwGg" association="_3EIhkizAEeGMXrZ0DiQwGg">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Xg9KsFjeEeGKdMKWzrgL_Q" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Xg9KsVjeEeGKdMKWzrgL_Q" value="1"/>
+        <ownedAttribute xmi:id="_XaJUMOxvEeG7k4bbVdXbXw" name="assignedPerson" visibility="private" type="_YHe7UOxvEeG7k4bbVdXbXw" aggregation="composite">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XaJUMexvEeG7k4bbVdXbXw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XaJUMuxvEeG7k4bbVdXbXw"/>
+          <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#__A5zUUceEd6besF9iFIJkQ"/>
+          <association href="../consol.uml#_XaJ7QOxvEeG7k4bbVdXbXw"/>
         </ownedAttribute>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_YHe7UOxvEeG7k4bbVdXbXw" name="Person">
+          <generalization xmi:id="_YHe7UexvEeG7k4bbVdXbXw">
+            <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_Je2yMEcaEd6besF9iFIJkQ"/>
+          </generalization>
+          <ownedAttribute xmi:id="_YggfUOxvEeG7k4bbVdXbXw" name="name" visibility="private" aggregation="composite">
+            <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_3VD9wD5yEd6cla2oXsPtlA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ZQ9E0OxvEeG7k4bbVdXbXw" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZQ-S8OxvEeG7k4bbVdXbXw" value="1"/>
+            <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_L08A0ErgEd6FXKclYGEDCw"/>
+          </ownedAttribute>
+        </nestedClassifier>
       </nestedClassifier>
     </nestedClassifier>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_lU63MCynEeGMXrZ0DiQwGg" name="Custodian">
@@ -772,10 +902,23 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nlqjzzVYEeGIw7CntkyPQw" value="1"/>
           <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_D01r4EoeEd6c3qsAxlFHaQ"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="__eO7YDVYEeGIw7CntkyPQw" name="assignedPerson" type="_HcPMsCymEeGMXrZ0DiQwGg" association="__eO7YjVYEeGIw7CntkyPQw">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_d-Q8YEEkEeGdmoWy_aLP0Q" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_d-Q8YUEkEeGdmoWy_aLP0Q" value="1"/>
+        <ownedAttribute xmi:id="_6IwBQOxvEeG7k4bbVdXbXw" name="assignedPerson" visibility="private" type="_6xk70OxvEeG7k4bbVdXbXw" aggregation="composite">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6IwBQexvEeG7k4bbVdXbXw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6IwBQuxvEeG7k4bbVdXbXw"/>
+          <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#__A5zUUceEd6besF9iFIJkQ"/>
+          <association href="../consol.uml#_6IwoUOxvEeG7k4bbVdXbXw"/>
         </ownedAttribute>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_6xk70OxvEeG7k4bbVdXbXw" name="Person">
+          <generalization xmi:id="_6xk70exvEeG7k4bbVdXbXw">
+            <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_Je2yMEcaEd6besF9iFIJkQ"/>
+          </generalization>
+          <ownedAttribute xmi:id="_7LnMcOxvEeG7k4bbVdXbXw" name="name" visibility="private" aggregation="composite">
+            <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_3VD9wD5yEd6cla2oXsPtlA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_75j3kOxvEeG7k4bbVdXbXw" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_75lswOxvEeG7k4bbVdXbXw" value="1"/>
+            <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_L08A0ErgEd6FXKclYGEDCw"/>
+          </ownedAttribute>
+        </nestedClassifier>
       </nestedClassifier>
     </nestedClassifier>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_cqzKQCyoEeGMXrZ0DiQwGg" name="Authenticator">
@@ -835,9 +978,23 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qBkJATVZEeGIw7CntkyPQw" value="1"/>
           <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_D01r4EoeEd6c3qsAxlFHaQ"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_p2jmkDTPEeGuZq9ndAdRXA" name="assignedPerson" type="_HcPMsCymEeGMXrZ0DiQwGg" association="_p2jmkjTPEeGuZq9ndAdRXA">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_p2jmkTTPEeGuZq9ndAdRXA"/>
+        <ownedAttribute xmi:id="_C7aJsOxwEeG7k4bbVdXbXw" name="assignedPerson" visibility="private" type="_DeFY8OxwEeG7k4bbVdXbXw" aggregation="composite">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_C7aJsexwEeG7k4bbVdXbXw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_C7aJsuxwEeG7k4bbVdXbXw"/>
+          <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#__A5zUUceEd6besF9iFIJkQ"/>
+          <association href="../consol.uml#_C7bX0OxwEeG7k4bbVdXbXw"/>
         </ownedAttribute>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_DeFY8OxwEeG7k4bbVdXbXw" name="Person">
+          <generalization xmi:id="_DeGAAOxwEeG7k4bbVdXbXw">
+            <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_Je2yMEcaEd6besF9iFIJkQ"/>
+          </generalization>
+          <ownedAttribute xmi:id="_Dy1g8OxwEeG7k4bbVdXbXw" name="name" visibility="private" aggregation="composite">
+            <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_3VD9wD5yEd6cla2oXsPtlA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EjDc8OxwEeG7k4bbVdXbXw" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EjFSIOxwEeG7k4bbVdXbXw" value="1"/>
+            <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_L08A0ErgEd6FXKclYGEDCw"/>
+          </ownedAttribute>
+        </nestedClassifier>
       </nestedClassifier>
     </nestedClassifier>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_RS-y4CynEeGMXrZ0DiQwGg" name="Informant">
@@ -898,9 +1055,23 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NmVGuizCEeGMXrZ0DiQwGg" value="1"/>
           <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_9JenIEodEd6c3qsAxlFHaQ"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="__gk3gCzCEeGMXrZ0DiQwGg" name="person" type="_HcPMsCymEeGMXrZ0DiQwGg" association="__glekSzCEeGMXrZ0DiQwGg">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__glekCzCEeGMXrZ0DiQwGg"/>
+        <ownedAttribute xmi:id="_f4q_sOxvEeG7k4bbVdXbXw" name="assignedPerson" visibility="private" type="_gidjkOxvEeG7k4bbVdXbXw" aggregation="composite">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_f4q_sexvEeG7k4bbVdXbXw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_f4q_suxvEeG7k4bbVdXbXw"/>
+          <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#__A5zUUceEd6besF9iFIJkQ"/>
+          <association href="../consol.uml#_f4rmwOxvEeG7k4bbVdXbXw"/>
         </ownedAttribute>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_gidjkOxvEeG7k4bbVdXbXw" name="Person">
+          <generalization xmi:id="_gieKoOxvEeG7k4bbVdXbXw">
+            <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_Je2yMEcaEd6besF9iFIJkQ"/>
+          </generalization>
+          <ownedAttribute xmi:id="_g5RhEOxvEeG7k4bbVdXbXw" name="name" visibility="private" aggregation="composite">
+            <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_3VD9wD5yEd6cla2oXsPtlA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iF99sOxvEeG7k4bbVdXbXw" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iF_L0OxvEeG7k4bbVdXbXw" value="1"/>
+            <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_L08A0ErgEd6FXKclYGEDCw"/>
+          </ownedAttribute>
+        </nestedClassifier>
       </nestedClassifier>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_ou68wDVWEeGIw7CntkyPQw" name="RelatedEntity">
         <generalization xmi:id="_ou68wTVWEeGIw7CntkyPQw">
@@ -976,6 +1147,91 @@ CDA R2 states that LOINC is the preferred vocabulary for document type codes, wh
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_44iLUiyoEeGMXrZ0DiQwGg" value="1"/>
           <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_XKImMEraEd6FXKclYGEDCw"/>
         </ownedAttribute>
+      </nestedClassifier>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_2aslsOxwEeG7k4bbVdXbXw" name="DocumentationOf">
+      <generalization xmi:id="_2atMwOxwEeG7k4bbVdXbXw">
+        <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_1fhigEcEEd6besF9iFIJkQ"/>
+      </generalization>
+      <ownedAttribute xmi:id="_23GN0OxwEeG7k4bbVdXbXw" name="serviceEvent" visibility="private" type="_7HSQoOxwEeG7k4bbVdXbXw" aggregation="composite">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_23GN0exwEeG7k4bbVdXbXw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_23GN0uxwEeG7k4bbVdXbXw" value="1"/>
+        <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_5Z6ewUoVEd6c3qsAxlFHaQ"/>
+        <association href="../consol.uml#_23G04OxwEeG7k4bbVdXbXw"/>
+      </ownedAttribute>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_7HSQoOxwEeG7k4bbVdXbXw" name="ServiceEvent">
+        <generalization xmi:id="_7HS3sOxwEeG7k4bbVdXbXw">
+          <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_lriDUEcaEd6besF9iFIJkQ"/>
+        </generalization>
+        <ownedAttribute xmi:id="__z2GYOxwEeG7k4bbVdXbXw" name="effectiveTime" visibility="private" type="_Ban28OxxEeG7k4bbVdXbXw" aggregation="composite">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__z2GYexwEeG7k4bbVdXbXw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__z2GYuxwEeG7k4bbVdXbXw"/>
+          <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_OYDkMEroEd6FXKclYGEDCw"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_IT-UYOxxEeG7k4bbVdXbXw" name="performer" visibility="private" type="_Kb1YwOxxEeG7k4bbVdXbXw" aggregation="composite">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IT-UYexxEeG7k4bbVdXbXw" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IT-UYuxxEeG7k4bbVdXbXw"/>
+          <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_6MIl4EoVEd6c3qsAxlFHaQ"/>
+          <association href="../consol.uml#_IT_igOxxEeG7k4bbVdXbXw"/>
+        </ownedAttribute>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_Ban28OxxEeG7k4bbVdXbXw" name="EffectiveTime">
+          <generalization xmi:id="_BaqTMOxxEeG7k4bbVdXbXw">
+            <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+          </generalization>
+          <ownedAttribute xmi:id="_B1TAwOxxEeG7k4bbVdXbXw" name="low" visibility="private" aggregation="composite">
+            <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_BY5uUD6AEd6cla2oXsPtlA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_B1TAwexxEeG7k4bbVdXbXw" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_B1TAwuxxEeG7k4bbVdXbXw"/>
+            <redefinedProperty href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_fmxbID6AEd6cla2oXsPtlA"/>
+          </ownedAttribute>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_Kb1YwOxxEeG7k4bbVdXbXw" name="Performer1">
+          <generalization xmi:id="_Kb1YwexxEeG7k4bbVdXbXw">
+            <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_FvF74EcaEd6besF9iFIJkQ"/>
+          </generalization>
+          <ownedAttribute xmi:id="_NMTVQOxxEeG7k4bbVdXbXw" name="functionCode" visibility="private" aggregation="composite">
+            <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NMTVQexxEeG7k4bbVdXbXw" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NMTVQuxxEeG7k4bbVdXbXw"/>
+            <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_xEWTMErfEd6FXKclYGEDCw"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_NMTVQ-xxEeG7k4bbVdXbXw" name="typeCode" visibility="private">
+            <type xmi:type="uml:Enumeration" href="../../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__zOqckDcEd6xYZuu1VKCVw"/>
+            <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_3_p4cErfEd6FXKclYGEDCw"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_Rle8AOxxEeG7k4bbVdXbXw" value="PRF"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_NMT8UOxxEeG7k4bbVdXbXw" name="assignedEntity" visibility="private" type="_YzQKQOxxEeG7k4bbVdXbXw" aggregation="composite">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NMT8UexxEeG7k4bbVdXbXw" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NMT8UuxxEeG7k4bbVdXbXw" value="1"/>
+            <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_670WYUoVEd6c3qsAxlFHaQ"/>
+            <association href="../consol.uml#_NMUjYOxxEeG7k4bbVdXbXw"/>
+          </ownedAttribute>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_YzQKQOxxEeG7k4bbVdXbXw" name="AssignedEntity">
+            <ownedRule xmi:id="_jsztwOxxEeG7k4bbVdXbXw" name="hasNationalProviderIdentifier" constrainedElement="_6j680CytEeGMXrZ0DiQwGg">
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_jsztwexxEeG7k4bbVdXbXw">
+                <language>Analysis</language>
+                <language>OCL</language>
+                <body>The id SHOULD include zero or one [0..1] id where id/@root =&quot;2.16.840.1.113883.4.6&quot; National Provider Identifier (CONF:9996)</body>
+                <body>self.id->exists( root='2.16.840.1.113883.4.6' )</body>
+              </specification>
+            </ownedRule>
+            <generalization xmi:id="_YzQxUOxxEeG7k4bbVdXbXw">
+              <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_6qmVsEcDEd6besF9iFIJkQ"/>
+            </generalization>
+            <ownedAttribute xmi:id="_Zphq8OxxEeG7k4bbVdXbXw" name="code" visibility="private" aggregation="composite">
+              <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_Z1EGIDxaEd6JwqSGecoePg"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Zphq8exxEeG7k4bbVdXbXw" value="1"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Zphq8uxxEeG7k4bbVdXbXw"/>
+              <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_CDS1wEoeEd6c3qsAxlFHaQ"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_Zphq8-xxEeG7k4bbVdXbXw" name="id" visibility="private" aggregation="composite">
+              <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_culQ8DxaEd6JwqSGecoePg"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Zphq9OxxEeG7k4bbVdXbXw" value="*"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Zphq9exxEeG7k4bbVdXbXw" value="1"/>
+              <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_9JenIEodEd6c3qsAxlFHaQ"/>
+            </ownedAttribute>
+          </nestedClassifier>
+        </nestedClassifier>
       </nestedClassifier>
     </nestedClassifier>
   </uml:Class>
@@ -1448,23 +1704,6 @@ The CCD is a core data set of the most relevant administrative, demographic, and
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__1jfsUIQEeGfG6GbxF_VQQ" value="1"/>
       </ownedAttribute>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_tY10IEINEeGfG6GbxF_VQQ" name="ServiceEvent">
-        <ownedRule xmi:id="_Bt7MAEIQEeGfG6GbxF_VQQ" name="effectiveTimeLow">
-          <constrainedElement xmi:type="uml:Class" href="consol-allergies.uml#_2EAisBSVEeGGzu7fmW9pXw"/>
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_Bt7MAUIQEeGfG6GbxF_VQQ">
-            <language>OCL</language>
-            <language>Analysis</language>
-            <body>not self.effectiveTime.low.oclIsUndefined()</body>
-            <body>This effectiveTime SHALL contain exactly one [1..1] low</body>
-          </specification>
-        </ownedRule>
-        <ownedRule xmi:id="_DJkDkEIQEeGfG6GbxF_VQQ" name="effectiveTimeHigh">
-          <specification xmi:type="uml:OpaqueExpression" xmi:id="_DJkDkUIQEeGfG6GbxF_VQQ">
-            <language>Analysis</language>
-            <language>OCL</language>
-            <body>This effectiveTime SHALL contain exactly one [1..1] high</body>
-            <body>not self.effectiveTime.high.oclIsUndefined()</body>
-          </specification>
-        </ownedRule>
         <generalization xmi:id="_xOtScEINEeGfG6GbxF_VQQ">
           <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_lriDUEcaEd6besF9iFIJkQ"/>
         </generalization>
@@ -1475,8 +1714,7 @@ The CCD is a core data set of the most relevant administrative, demographic, and
           <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_U70MIEroEd6FXKclYGEDCw"/>
           <defaultValue xmi:type="uml:LiteralString" xmi:id="_F_cWcEIOEeGfG6GbxF_VQQ" value="PCPR"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="__7a-gEINEeGfG6GbxF_VQQ" name="effectiveTime" visibility="private" aggregation="composite">
-          <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+        <ownedAttribute xmi:id="__7a-gEINEeGfG6GbxF_VQQ" name="effectiveTime" visibility="private" type="_praxgOyCEeG7k4bbVdXbXw" aggregation="composite">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__7a-gUINEeGfG6GbxF_VQQ" value="1"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__7a-gkINEeGfG6GbxF_VQQ"/>
           <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_OYDkMEroEd6FXKclYGEDCw"/>
@@ -1525,6 +1763,23 @@ The CCD is a core data set of the most relevant administrative, demographic, and
               <redefinedProperty href="../../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_9JenIEodEd6c3qsAxlFHaQ"/>
             </ownedAttribute>
           </nestedClassifier>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_praxgOyCEeG7k4bbVdXbXw" name="EffectiveTime">
+          <generalization xmi:id="_preb4OyCEeG7k4bbVdXbXw">
+            <general xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_QYeW4D5-Ed6cla2oXsPtlA"/>
+          </generalization>
+          <ownedAttribute xmi:id="_qRn14OyCEeG7k4bbVdXbXw" name="high" visibility="private" aggregation="composite">
+            <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_BY5uUD6AEd6cla2oXsPtlA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_serjUOyCEeG7k4bbVdXbXw" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_seumoOyCEeG7k4bbVdXbXw" value="1"/>
+            <redefinedProperty href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_jfCGID6AEd6cla2oXsPtlA"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_qRn14-yCEeG7k4bbVdXbXw" name="low" visibility="private" aggregation="composite">
+            <type xmi:type="uml:Class" href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_BY5uUD6AEd6cla2oXsPtlA"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_s90WYOyCEeG7k4bbVdXbXw" value="1"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_s92yoOyCEeG7k4bbVdXbXw" value="1"/>
+            <redefinedProperty href="../../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_fmxbID6AEd6cla2oXsPtlA"/>
+          </ownedAttribute>
         </nestedClassifier>
       </nestedClassifier>
     </nestedClassifier>
@@ -1828,9 +2083,6 @@ For conformance with both specifications, please review the appendix on XDS-SD a
     <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_xwG2cGdIEeGkeaezs0FtvA"/>
     <ruleId>CONF:5610</ruleId>
   </CDA:CodeSystemConstraint>
-  <uml:Association xmi:id="__eO7YjVYEeGIw7CntkyPQw" memberEnd="__eO7YDVYEeGIw7CntkyPQw __eO7YzVYEeGIw7CntkyPQw">
-    <ownedEnd xmi:id="__eO7YzVYEeGIw7CntkyPQw" type="_nlqjwDVYEeGIw7CntkyPQw" association="__eO7YjVYEeGIw7CntkyPQw"/>
-  </uml:Association>
   <uml:Association xmi:id="_1mbIwjVYEeGIw7CntkyPQw" memberEnd="_1mbIwDVYEeGIw7CntkyPQw _1mbIwzVYEeGIw7CntkyPQw">
     <ownedEnd xmi:id="_1mbIwzVYEeGIw7CntkyPQw" type="_TpC14CyoEeGMXrZ0DiQwGg" association="_1mbIwjVYEeGIw7CntkyPQw"/>
   </uml:Association>
@@ -1839,9 +2091,6 @@ For conformance with both specifications, please review the appendix on XDS-SD a
   </uml:Association>
   <uml:Association xmi:id="_5sn0AjVWEeGIw7CntkyPQw" memberEnd="_5sn0ADVWEeGIw7CntkyPQw _5sn0AzVWEeGIw7CntkyPQw">
     <ownedEnd xmi:id="_5sn0AzVWEeGIw7CntkyPQw" type="_RS-y4CynEeGMXrZ0DiQwGg" association="_5sn0AjVWEeGIw7CntkyPQw"/>
-  </uml:Association>
-  <uml:Association xmi:id="_p2jmkjTPEeGuZq9ndAdRXA" memberEnd="_p2jmkDTPEeGuZq9ndAdRXA _p2jmkzTPEeGuZq9ndAdRXA">
-    <ownedEnd xmi:id="_p2jmkzTPEeGuZq9ndAdRXA" type="_GEiMYCzGEeGMXrZ0DiQwGg" association="_p2jmkjTPEeGuZq9ndAdRXA"/>
   </uml:Association>
   <uml:Association xmi:id="_lwJK0jTPEeGuZq9ndAdRXA" memberEnd="_lwJK0DTPEeGuZq9ndAdRXA _lwJK0zTPEeGuZq9ndAdRXA">
     <ownedEnd xmi:id="_lwJK0zTPEeGuZq9ndAdRXA" type="_cqzKQCyoEeGMXrZ0DiQwGg" association="_lwJK0jTPEeGuZq9ndAdRXA"/>
@@ -1867,20 +2116,11 @@ For conformance with both specifications, please review the appendix on XDS-SD a
   <uml:Association xmi:id="_XnGLkizDEeGMXrZ0DiQwGg" memberEnd="_XnGLkCzDEeGMXrZ0DiQwGg _XnGyoCzDEeGMXrZ0DiQwGg">
     <ownedEnd xmi:id="_XnGyoCzDEeGMXrZ0DiQwGg" type="_lU63MCynEeGMXrZ0DiQwGg" association="_XnGLkizDEeGMXrZ0DiQwGg"/>
   </uml:Association>
-  <uml:Association xmi:id="__glekSzCEeGMXrZ0DiQwGg" memberEnd="__gk3gCzCEeGMXrZ0DiQwGg __glekizCEeGMXrZ0DiQwGg">
-    <ownedEnd xmi:id="__glekizCEeGMXrZ0DiQwGg" type="_NmVGsCzCEeGMXrZ0DiQwGg" association="__glekSzCEeGMXrZ0DiQwGg"/>
-  </uml:Association>
-  <uml:Association xmi:id="_3EIhkizAEeGMXrZ0DiQwGg" memberEnd="_3EIhkCzAEeGMXrZ0DiQwGg _3EJIoCzAEeGMXrZ0DiQwGg">
-    <ownedEnd xmi:id="_3EJIoCzAEeGMXrZ0DiQwGg" type="_HOG0oCynEeGMXrZ0DiQwGg" association="_3EIhkizAEeGMXrZ0DiQwGg"/>
-  </uml:Association>
   <uml:Association xmi:id="_jXh0ECzAEeGMXrZ0DiQwGg" memberEnd="_jXhNACzAEeGMXrZ0DiQwGg _jXh0ESzAEeGMXrZ0DiQwGg">
     <ownedEnd xmi:id="_jXh0ESzAEeGMXrZ0DiQwGg" type="_BArpECynEeGMXrZ0DiQwGg" association="_jXh0ECzAEeGMXrZ0DiQwGg"/>
   </uml:Association>
   <uml:Association xmi:id="_G7ZKoSzAEeGMXrZ0DiQwGg" memberEnd="_G7YjkCzAEeGMXrZ0DiQwGg _G7ZKoizAEeGMXrZ0DiQwGg">
     <ownedEnd xmi:id="_G7ZKoizAEeGMXrZ0DiQwGg" type="_344-ICymEeGMXrZ0DiQwGg" association="_G7ZKoSzAEeGMXrZ0DiQwGg"/>
-  </uml:Association>
-  <uml:Association xmi:id="_rUHFkCy_EeGMXrZ0DiQwGg" memberEnd="_rUGegCy_EeGMXrZ0DiQwGg _rUHFkSy_EeGMXrZ0DiQwGg">
-    <ownedEnd xmi:id="_rUHFkSy_EeGMXrZ0DiQwGg" type="_344-ICymEeGMXrZ0DiQwGg" association="_rUHFkCy_EeGMXrZ0DiQwGg"/>
   </uml:Association>
   <uml:Association xmi:id="_4VNWoCy6EeGMXrZ0DiQwGg" memberEnd="_4VMvkCy6EeGMXrZ0DiQwGg _4VNWoSy6EeGMXrZ0DiQwGg">
     <ownedEnd xmi:id="_4VNWoSy6EeGMXrZ0DiQwGg" type="_xw9WkCymEeGMXrZ0DiQwGg" association="_4VNWoCy6EeGMXrZ0DiQwGg"/>
@@ -1896,9 +2136,6 @@ For conformance with both specifications, please review the appendix on XDS-SD a
   </uml:Association>
   <uml:Association xmi:id="_ypItASysEeGMXrZ0DiQwGg" memberEnd="_ypIF8CysEeGMXrZ0DiQwGg _ypItAiysEeGMXrZ0DiQwGg">
     <ownedEnd xmi:id="_ypItAiysEeGMXrZ0DiQwGg" type="_wfQTkCylEeGMXrZ0DiQwGg" association="_ypItASysEeGMXrZ0DiQwGg"/>
-  </uml:Association>
-  <uml:Association xmi:id="_M_vp0CysEeGMXrZ0DiQwGg" memberEnd="_M_vCwCysEeGMXrZ0DiQwGg _M_vp0SysEeGMXrZ0DiQwGg">
-    <ownedEnd xmi:id="_M_vp0SysEeGMXrZ0DiQwGg" type="_-vjwcCylEeGMXrZ0DiQwGg" association="_M_vp0CysEeGMXrZ0DiQwGg"/>
   </uml:Association>
   <uml:Association xmi:id="_2jzoQCyrEeGMXrZ0DiQwGg" memberEnd="_2jzBMCyrEeGMXrZ0DiQwGg _2jzoQSyrEeGMXrZ0DiQwGg">
     <ownedEnd xmi:id="_2jzoQSyrEeGMXrZ0DiQwGg" type="_wfQTkCylEeGMXrZ0DiQwGg" association="_2jzoQCyrEeGMXrZ0DiQwGg"/>
@@ -4039,12 +4276,6 @@ The Progress Note recommends use of a single document type code, 11506-3 &quot;S
   <CDA:ConstraintValidation xmi:id="_jU3i4EIPEeGfG6GbxF_VQQ" severity="WARNING" base_Constraint="_f4CPoEIPEeGfG6GbxF_VQQ">
     <ruleId>CONF:10027</ruleId>
   </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_MTLTcEIQEeGfG6GbxF_VQQ" base_Constraint="_DJkDkEIQEeGfG6GbxF_VQQ">
-    <ruleId>CONF:8455</ruleId>
-  </CDA:ConstraintValidation>
-  <CDA:ConstraintValidation xmi:id="_Mrd3oEIQEeGfG6GbxF_VQQ" base_Constraint="_Bt7MAEIQEeGfG6GbxF_VQQ">
-    <ruleId>CONF:8454</ruleId>
-  </CDA:ConstraintValidation>
   <CDA:PropertyValidation xmi:id="_nqzy8EIQEeGfG6GbxF_VQQ" base_Property="__7a-gEINEeGfG6GbxF_VQQ">
     <ruleId>CONF:8481</ruleId>
   </CDA:PropertyValidation>
@@ -4639,5 +4870,51 @@ OIDs SHALL be no more than 64 characters in length..</body>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_xTaNcODYEeG_7ZQp-aLqLw" base_Property="_wge7sODYEeG_7ZQp-aLqLw">
     <ruleId>CONF:8507</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_Vj9PoOxkEeG7k4bbVdXbXw" severity="WARNING" base_Property="_T-Xx4OxkEeG7k4bbVdXbXw">
+    <ruleId>CONF:7993</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_WW6hIOxlEeG7k4bbVdXbXw" base_Property="_RBsv8OxlEeG7k4bbVdXbXw"/>
+  <CDA:ConstraintValidation xmi:id="_ow8McOxlEeG7k4bbVdXbXw" base_Constraint="_gAUEUOxlEeG7k4bbVdXbXw">
+    <ruleId>CONF:10414</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_NwqnkOxmEeG7k4bbVdXbXw" severity="WARNING" base_Constraint="_8kl9IOxlEeG7k4bbVdXbXw"/>
+  <CDA:ConstraintValidation xmi:id="_OOyuAOxmEeG7k4bbVdXbXw" severity="INFO" base_Constraint="_79bPcOxlEeG7k4bbVdXbXw"/>
+  <CDA:ConstraintValidation xmi:id="_PktYEOxmEeG7k4bbVdXbXw" base_Constraint="_7XFBIOxlEeG7k4bbVdXbXw"/>
+  <CDA:PropertyValidation xmi:id="_zpgcAOxmEeG7k4bbVdXbXw" base_Property="_xqTkYOxmEeG7k4bbVdXbXw">
+    <ruleId>CONF:7994</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ConstraintValidation xmi:id="_OLu9gOxnEeG7k4bbVdXbXw" base_Constraint="_KHg6IOxnEeG7k4bbVdXbXw">
+    <ruleId>CONF:5446</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:PropertyValidation xmi:id="_D8oLkOxvEeG7k4bbVdXbXw" base_Property="_DF0fYOxvEeG7k4bbVdXbXw">
+    <ruleId>CONF:5431</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_Z_NR8OxvEeG7k4bbVdXbXw" base_Property="_YggfUOxvEeG7k4bbVdXbXw"/>
+  <CDA:PropertyValidation xmi:id="_iZ60cOxvEeG7k4bbVdXbXw" base_Property="_g5RhEOxvEeG7k4bbVdXbXw"/>
+  <CDA:PropertyValidation xmi:id="_E62R4OxwEeG7k4bbVdXbXw" base_Property="_Dy1g8OxwEeG7k4bbVdXbXw"/>
+  <CDA:PropertyValidation xmi:id="_D3Kx4OxxEeG7k4bbVdXbXw" base_Property="__z2GYOxwEeG7k4bbVdXbXw"/>
+  <CDA:PropertyValidation xmi:id="_EUKP4OxxEeG7k4bbVdXbXw" base_Property="_B1TAwOxxEeG7k4bbVdXbXw"/>
+  <CDA:PropertyValidation xmi:id="_PoV54OxxEeG7k4bbVdXbXw" severity="INFO" base_Property="_NMTVQOxxEeG7k4bbVdXbXw"/>
+  <CDA:PropertyValidation xmi:id="_RFWqcOxxEeG7k4bbVdXbXw" base_Property="_NMTVQ-xxEeG7k4bbVdXbXw"/>
+  <CDA:PropertyValidation xmi:id="_cFxq8OxxEeG7k4bbVdXbXw" severity="WARNING" base_Property="_Zphq8OxxEeG7k4bbVdXbXw"/>
+  <CDA:PropertyValidation xmi:id="_cmRI4OxxEeG7k4bbVdXbXw" base_Property="_Zphq8-xxEeG7k4bbVdXbXw"/>
+  <CDA:ConstraintValidation xmi:id="_js0U0OxxEeG7k4bbVdXbXw" severity="WARNING" base_Constraint="_jsztwOxxEeG7k4bbVdXbXw"/>
+  <CDA:ValueSetConstraint xmi:id="_oXabsOxxEeG7k4bbVdXbXw" base_Property="_Zphq8OxxEeG7k4bbVdXbXw">
+    <reference href="../consol-vocab.uml#_-bWMgT-UEeGvOdejHZ7dYg"/>
+  </CDA:ValueSetConstraint>
+  <CDA:CodeSystemConstraint xmi:id="_t3eyAOxxEeG7k4bbVdXbXw" base_Property="_NMTVQOxxEeG7k4bbVdXbXw">
+    <reference href="../consol-vocab.uml#_Si0RgOxyEeG7k4bbVdXbXw"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:ConstraintValidation xmi:id="_2CCjMOxyEeG7k4bbVdXbXw" base_Constraint="_xwE-wOxyEeG7k4bbVdXbXw">
+    <ruleId>CONF:9960</ruleId>
+  </CDA:ConstraintValidation>
+  <CDA:ConstraintValidation xmi:id="_cD9wQ-x1EeG7k4bbVdXbXw" severity="WARNING" base_Constraint="_cD9wQOx1EeG7k4bbVdXbXw"/>
+  <CDA:ConstraintValidation xmi:id="_GTIrw-x2EeG7k4bbVdXbXw" base_Constraint="_GTIrwOx2EeG7k4bbVdXbXw"/>
+  <CDA:PropertyValidation xmi:id="_q3QSgOyCEeG7k4bbVdXbXw" base_Property="_qRn14OyCEeG7k4bbVdXbXw">
+    <ruleId>CONF:8455</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_rWOGcOyCEeG7k4bbVdXbXw" base_Property="_qRn14-yCEeG7k4bbVdXbXw">
+    <ruleId>CONF:8454</ruleId>
   </CDA:PropertyValidation>
 </xmi:XMI>
