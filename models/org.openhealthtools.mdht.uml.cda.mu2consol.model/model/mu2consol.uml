@@ -201,19 +201,55 @@
           <language>Analysis</language>
           <language>OCL</language>
           <body>SHALL have one of Assessment (2.16.840.1.113883.10.20.22.2.8) or Assessment and Plan (2.16.840.1.113883.10.20.22.2.9) or  Hospital Admission Diagnosis (2.16.840.1.113883.10.20.22.2.43) or Hospital Discharge Diagnosis (2.16.840.1.113883.10.20.22.2.24) or Postoperative Diagnosis (2.16.840.1.113883.10.20.22.2.35)  or  Postprocedure Diagnosis (2.16.840.1.113883.10.20.22.2.36) or Encounters (entries required: 2.16.840.1.113883.10.20.22.2.22.1) or Problem (entries required: 2.16.840.1.113883.10.20.22.2.5.1)</body>
-          <body>(self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::AssessmentSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::AssessmentAndPlanSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::HospitalAdmissionDiagnosisSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::HospitalDischargeDiagnosisSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::PostoperativeDiagnosisSection)) or  &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::PostprocedureDiagnosisSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::EncountersSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::ProblemSection)) )</body>
+          <body>(self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::AssessmentSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::AssessmentAndPlanSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::HospitalAdmissionDiagnosisSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::HospitalDischargeDiagnosisSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::PostoperativeDiagnosisSection)) or  &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::PostprocedureDiagnosisSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::EncountersSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::ProblemSection)) )</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_n-eIsN32EeGdQcioKnmIhA" name="canHaveEitherRequiredOrOptionalVitalSigns" constrainedElement="_VG3DUNkxEeGsqcJR8eqiMw">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_wbQu0N32EeGdQcioKnmIhA">
           <language>OCL</language>
+          <language>Analysis</language>
           <body>(self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::VitalSignsSection)) or  &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::VitalSignsSectionEntriesOptional)))</body>
+          <body>SHALL have one of Vital Signs (entries optional: 2.16.840.1.113883.10.20.22.2.4 or entries required: 2.16.840.1.113883.10.20.22.2.4.1)</body>
         </specification>
       </ownedRule>
       <ownedRule xmi:id="_kx5CgN33EeGdQcioKnmIhA" name="medicationListConstraint" constrainedElement="_VG3DUNkxEeGsqcJR8eqiMw">
         <specification xmi:type="uml:OpaqueExpression" xmi:id="_o21eoN33EeGdQcioKnmIhA">
           <language>OCL</language>
+          <language>Analysis</language>
           <body>(self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::MedicationsSection)) or  &#xD;&#xA; self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::HospitalAdmissionMedicationsSectionEntriesOptional)) or &#xD;&#xA; self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::HospitalDischargeMedicationsSection)))</body>
+          <body>SHALL have one of Medications (entries required: 2.16.840.1.113883.10.20.22.2.1.1) or Hospital Admission Medications (2.16.840.1.113883.10.20.22.2.44 ) or Hospital Discharge Medications (entries required: 2.16.840.1.113883.10.20.22.2.11.1)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_gfm_8OvXEeGkopdZmUN1Xw" name="carePlanning" constrainedElement="_VG3DUNkxEeGsqcJR8eqiMw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_jopNcOvXEeGkopdZmUN1Xw">
+          <language>OCL</language>
+          <language>Analysis</language>
+          <body>(self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::PlanOfCareSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::AssessmentAndPlanSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::InterventionsSection)))</body>
+          <body>SHALL have one of Plan of Care (2.16.840.1.113883.10.20.22.2.10) or Assessment and Plan (2.16.840.1.113883.10.20.22.2.9) or Interventions (2.16.840.1.113883.10.20.21.2.3)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_n8bhYOvYEeGkopdZmUN1Xw" name="medicationAllergy" constrainedElement="_VG3DUNkxEeGsqcJR8eqiMw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_tP9QgOvYEeGkopdZmUN1Xw">
+          <language>OCL</language>
+          <language>Analysis</language>
+          <body>(self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::AllergiesSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::AllergiesSectionEntriesOptional)))</body>
+          <body>SHALL have one of Allergies (entries optional: 2.16.840.1.113883.10.20.22.2.6 or entries required: 2.16.840.1.113883.10.20.22.2.6.1)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_VUReAOvZEeGkopdZmUN1Xw" name="reasonForHospitalization" constrainedElement="_VG3DUNkxEeGsqcJR8eqiMw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZBL0oOvZEeGkopdZmUN1Xw">
+          <language>OCL</language>
+          <language>Analysis</language>
+          <body>(self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::HospitalAdmissionDiagnosisSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::PreoperativeDiagnosisSection)))</body>
+          <body>SHALL have one of Hospital Admission Diagnosis (2.16.840.1.113883.10.20.22.2.43) or Preoperative Diagnosis (2.16.840.1.113883.10.20.22.2.35)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_izlGUOvaEeGkopdZmUN1Xw" name="medicationList" constrainedElement="_VG3DUNkxEeGsqcJR8eqiMw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_pYRiYOvaEeGkopdZmUN1Xw">
+          <language>OCL</language>
+          <language>Analysis</language>
+          <body>(self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::MedicationsSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::HospitalDischargeMedicationsSection)) or &#xD;&#xA;self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(mu2consol::HospitalAdmissionMedicationsSectionEntriesOptional)))</body>
+          <body>SHALL have one of Medications (entries required: 2.16.840.1.113883.10.20.22.2.1.1) or Hospital Admission Medications (2.16.840.1.113883.10.20.22.2.44 ) or Hospital Discharge Medications (entries required: 2.16.840.1.113883.10.20.22.2.11.1)</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_VG3qYNkxEeGsqcJR8eqiMw" general="_v-6qsNkMEeGsqcJR8eqiMw"/>
@@ -842,4 +878,9 @@
   <CDA:AssociationValidation xmi:id="_d0roAOGVEeG708usbCxwpw" base_Association="_bvo0gdk5EeGsqcJR8eqiMw"/>
   <CDA:AssociationValidation xmi:id="_7Y9e0OJREeGzd4w2xo094w" base_Association="_kGkCkeDhEeGdSJSga09Dyg"/>
   <CDA:CDATemplate xmi:id="_gWeuwOmKEeGNCuDrPdW6ZA" base_Class="_ZK4bUODlEeGdSJSga09Dyg"/>
+  <CDA:ConstraintValidation xmi:id="_7vlYQOvXEeGkopdZmUN1Xw" base_Constraint="_gfm_8OvXEeGkopdZmUN1Xw"/>
+  <CDA:ConstraintValidation xmi:id="_62L1oOvYEeGkopdZmUN1Xw" base_Constraint="_n8bhYOvYEeGkopdZmUN1Xw"/>
+  <CDA:ConstraintValidation xmi:id="_rb7RoOvZEeGkopdZmUN1Xw" base_Constraint="_VUReAOvZEeGkopdZmUN1Xw"/>
+  <CDA:ConstraintValidation xmi:id="_eegHAOvbEeGkopdZmUN1Xw" base_Constraint="_izlGUOvaEeGkopdZmUN1Xw"/>
+  <CDA:ConstraintValidation xmi:id="_f8jZYOvbEeGkopdZmUN1Xw" base_Constraint="_2nwZAN3EEeGdQcioKnmIhA"/>
 </xmi:XMI>

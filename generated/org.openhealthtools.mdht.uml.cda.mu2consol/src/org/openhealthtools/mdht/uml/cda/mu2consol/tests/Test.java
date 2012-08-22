@@ -27,15 +27,15 @@ public class Test {
 	 */
 	public static void main(String[] args) {
 
-		System.out.println("======testSOCR=========");
-		testSOCR("socr_sample");
-		System.out.println("=====testSOCR==========");
+//		System.out.println("======testSOCR=========");
+//		testSOCR("socr_sample");
+//		System.out.println("=====testSOCR==========");
+//		
+//		System.out.println("======testAsSOCR=========");
+//		testAsSOCR("socr_sample_withDSTemplateId");
+//		System.out.println("=====testAsSOCR==========");
 		
-		System.out.println("======testAsSOCR=========");
-		testAsSOCR("socr_sample_withDSTemplateId");
-		System.out.println("=====testAsSOCR==========");
-		
-//		validateSOCR("socr_sample");
+		validateSOCR("socr_sample");
 //		testAsSOCR("socr_sample");
 	}
 
