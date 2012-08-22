@@ -112,6 +112,42 @@ public class SummaryOfCareRecordImpl extends GeneralHeaderConstraintsImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public boolean validateSummaryOfCareRecordCarePlanning(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordCarePlanning(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSummaryOfCareRecordMedicationAllergy(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordMedicationAllergy(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSummaryOfCareRecordReasonForHospitalization(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordReasonForHospitalization(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateSummaryOfCareRecordMedicationList(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordMedicationList(this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public boolean validateSummaryOfCareRecordPlanOfCareSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SummaryOfCareRecordOperations.validateSummaryOfCareRecordPlanOfCareSection(this, diagnostics, context);
 	}
