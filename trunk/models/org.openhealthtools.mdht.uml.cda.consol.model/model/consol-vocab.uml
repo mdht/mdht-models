@@ -377,6 +377,7 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
     </packagedElement>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_VwxrcOcFEeGINOJ_SD9_dA" name="Pressure Point"/>
     <packagedElement xmi:type="uml:Enumeration" xmi:id="_tCvWEOcFEeGINOJ_SD9_dA" name="TargetSite Qualifiers"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_SizqcOxyEeG7k4bbVdXbXw" name="ParticiaptionFunction"/>
     <profileApplication xmi:id="_2B97WxSVEeGGzu7fmW9pXw">
       <eAnnotations xmi:id="_2B97XBSVEeGGzu7fmW9pXw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/term/1#/"/>
@@ -820,4 +821,5 @@ http://www.fda.gov/ForIndustry/DataStandards/StructuredProductLabeling/ucm162523
   <term:ValueSetVersion xmi:id="_tCvWEecFEeGINOJ_SD9_dA" identifier="2.16.840.1.113883.11.20.9.37" binding="Dynamic" base_Enumeration="_tCvWEOcFEeGINOJ_SD9_dA">
     <codeSystem href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_ya6aMCWsEd-iTYfpNb4PkQ"/>
   </term:ValueSetVersion>
+  <term:CodeSystemVersion xmi:id="_Si0RgOxyEeG7k4bbVdXbXw" identifier="2.16.840.1.113883.5.88" fullName="Participation Function" base_Enumeration="_SizqcOxyEeG7k4bbVdXbXw"/>
 </xmi:XMI>
