@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Influenza Possible Exposure Location Act - conformance rules</title>
+<shortdesc id="shortdesc">[Act: templateId <tt>2.16.840.1.113883.10.20.15.3.82</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Act</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.15.3.82"/>
+</prolog>
+<body>
+<section id="description">
+</section>
+<ol id="conformance">
+<li>Contains exactly one [1..1] <tt><b>@classCode</b>="ACT" </tt><i>Act</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+</li>
+<li>Contains exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="413350009" </tt> (CodeSystem:<tt> 2.16.840.1.113883.6.96 SNOMEDCT</tt>)
+</li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.14 ActStatus</tt>)
+</li>
+<li>1, <b>SHALL</b> contain [1..*] participant (specialized branch), which 
+a.	<b>SHALL</b> contain [1..1] @typeCode="LOC" Location (CodeSystem: 2.16.840.1.113883.5.90 HL7ParticipationType) STATIC 
+b.	<b>SHOULD</b> contain [0..1] time  
+c.	<b>SHALL</b> contain [1..1] participantRole , which 
+i.	<b>SHALL</b> contain [1..1] @classCode="LOCE" Located entity (CodeSystem: 2.16.840.1.113883.5.110 HL7RoleClass) STATIC 
+ii.	<b>SHOULD</b> contain [0..*] addr 
+iii.	<b>SHOULD</b> contain [0..*] telecom 
+iv.	<b>SHOULD</b> contain [0..1] playingEntity , which if present 
+1.	<b>SHALL</b> contain [1..1] @classCode="PLC" Place (CodeSystem: 2.16.840.1.113883.5.41 HL7EntityClass) STATIC 
+2.	<b>SHALL</b> contain [1..1] code/@code, which <b>SHALL</b> be selected from ValueSet 2.16.840.1.114222.4.11.3030 PHVS_DiseaseAcquiredJurisdiction_NND  DYNAMIC</li>
+<li>1, <b>SHALL</b> contain [1..*] participant (specialized branch), which 
+a.	<b>SHALL</b> contain [1..1] @typeCode="DIR" Location (CodeSystem: 2.16.840.1.113883.5.90 HL7ParticipationType) STATIC 
+b.	<b>SHOULD</b> contain [0..1] time  
+c.	<b>SHALL</b> contain [1..1] participantRole , which 
+i.	<b>SHALL</b> contain [1..1] @classCode="EXPR" Located entity (CodeSystem: 2.16.840.1.113883.5.110 HL7RoleClass) STATIC 
+ii.	<b>SHOULD</b> contain [0..*] addr 
+iii.	<b>SHOULD</b> contain [0..*] telecom 
+iv.	<b>SHOULD</b> contain [0..1] playingEntity , which if present 
+1.	<b>SHALL</b> contain [1..1] @classCode="PSN" Place (CodeSystem: 2.16.840.1.113883.5.41 HL7EntityClass) STATIC 
+2.	<b>SHALL</b> contain [1..1] code/@code, which <b>SHALL</b> be selected from ValueSet  2.16.840.1.114222.4.11.3275 PHVS_Relationship_Flu DYNAMIC</li>
+<li><b>SHALL</b> have code qualifier associated finding, 444426005 - Exposure to Influenza A virus subtype H1N1</li>
+</ol>
+<ol id="aggregate">
+<li>Contains exactly one [1..1] <tt><b>@classCode</b>="ACT" </tt><i>Act</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>)
+</li>
+<li>Contains exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="413350009" </tt> (CodeSystem:<tt> 2.16.840.1.113883.6.96 SNOMEDCT</tt>)
+</li>
+<li><b>SHALL</b> contain zero or one [0..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.14 ActStatus</tt>)
+</li>
+<li>1, <b>SHALL</b> contain [1..*] participant (specialized branch), which 
+a.	<b>SHALL</b> contain [1..1] @typeCode="LOC" Location (CodeSystem: 2.16.840.1.113883.5.90 HL7ParticipationType) STATIC 
+b.	<b>SHOULD</b> contain [0..1] time  
+c.	<b>SHALL</b> contain [1..1] participantRole , which 
+i.	<b>SHALL</b> contain [1..1] @classCode="LOCE" Located entity (CodeSystem: 2.16.840.1.113883.5.110 HL7RoleClass) STATIC 
+ii.	<b>SHOULD</b> contain [0..*] addr 
+iii.	<b>SHOULD</b> contain [0..*] telecom 
+iv.	<b>SHOULD</b> contain [0..1] playingEntity , which if present 
+1.	<b>SHALL</b> contain [1..1] @classCode="PLC" Place (CodeSystem: 2.16.840.1.113883.5.41 HL7EntityClass) STATIC 
+2.	<b>SHALL</b> contain [1..1] code/@code, which <b>SHALL</b> be selected from ValueSet 2.16.840.1.114222.4.11.3030 PHVS_DiseaseAcquiredJurisdiction_NND  DYNAMIC</li>
+<li>1, <b>SHALL</b> contain [1..*] participant (specialized branch), which 
+a.	<b>SHALL</b> contain [1..1] @typeCode="DIR" Location (CodeSystem: 2.16.840.1.113883.5.90 HL7ParticipationType) STATIC 
+b.	<b>SHOULD</b> contain [0..1] time  
+c.	<b>SHALL</b> contain [1..1] participantRole , which 
+i.	<b>SHALL</b> contain [1..1] @classCode="EXPR" Located entity (CodeSystem: 2.16.840.1.113883.5.110 HL7RoleClass) STATIC 
+ii.	<b>SHOULD</b> contain [0..*] addr 
+iii.	<b>SHOULD</b> contain [0..*] telecom 
+iv.	<b>SHOULD</b> contain [0..1] playingEntity , which if present 
+1.	<b>SHALL</b> contain [1..1] @classCode="PSN" Place (CodeSystem: 2.16.840.1.113883.5.41 HL7EntityClass) STATIC 
+2.	<b>SHALL</b> contain [1..1] code/@code, which <b>SHALL</b> be selected from ValueSet  2.16.840.1.114222.4.11.3275 PHVS_Relationship_Flu DYNAMIC</li>
+<li><b>SHALL</b> have code qualifier associated finding, 444426005 - Exposure to Influenza A virus subtype H1N1</li>
+</ol>
+
+<codeblock id="example"><![CDATA[]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Influenza Possible Exposure Location Act</ph></p>
+<p id="shortdesc">[Act: templateId <tt>2.16.840.1.113883.10.20.15.3.82</tt>]</p>
+</body>
+</topic>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>PHVS_SignsSymptoms_Flu </title>
+<prolog id="prolog">
+<resourceid id="2.16.840.1.114222.4.11.3240"/>
+</prolog>
+<body>
+<!-- THIS IS GENERATED CONTENT, DO NOT EDIT -->
+<section id="definition">
+<table><tgroup cols="2">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="4*"/>
+<tbody>
+<row><entry>Value Set</entry><entry>PHVS_SignsSymptoms_Flu  - 2.16.840.1.114222.4.11.3240</entry></row>
+<row><entry>Code System</entry><entry>SNOMEDCT - 2.16.840.1.113883.6.96</entry></row>
+<row><entry>Source</entry><entry>PHIN-VADS</entry></row>
+<row><entry>Definition</entry><entry>Signs and Symptoms of  Flu</entry></row>
+</tbody></tgroup></table>
+<table><tgroup cols="4">
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="2*"/>
+<colspec colname="col3" colwidth="1*"/>
+<colspec colname="col4" colwidth="3*"/>
+<thead><row>
+<entry>Concept Code</entry><entry>Concept Name</entry><entry>Code System</entry><entry>Description</entry>
+</row></thead><tbody>
+<row><entry>2667000</entry><entry>Absent (qualifier value)</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>373933003</entry><entry>Acute onset (qualifier value)</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>43724002</entry><entry>Chill (finding)</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>62315008</entry><entry>Diarrhea (finding)</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>9826008</entry><entry>Conjunctivitis (disorder)</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>49727002</entry><entry>Cough (finding)</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>267036007</entry><entry>Dyspnea (finding)</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>84946008</entry><entry>Extreme exhaustion (finding)</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>103001002</entry><entry>Feeling feverish (finding)</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>386661006</entry><entry>Fever (finding)</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>25064002</entry><entry>Headache (finding)</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>79890006</entry><entry>Loss of appetite (finding)</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>255604002</entry><entry>Mild (qualifier value)</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>6736007</entry><entry>Moderate (severity modifier) (qualifier value)</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>68962001</entry><entry>Muscle pain (finding)</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>64531003</entry><entry>Nasal discharge (disorder)</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>162397003</entry><entry>Pain in throat (finding)</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>52101004</entry><entry>Present (qualifier value)</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>91175000</entry><entry>Seizure (finding)</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>24484000</entry><entry>Severe (severity modifier) (qualifier value)</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>267102003</entry><entry>Sore throat symptom (finding)</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>56302003</entry><entry>Toxic state (finding)</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>422400008</entry><entry>Vomiting (disorder)</entry><entry>SNOMEDCT</entry><entry></entry></row>
+<row><entry>84387000</entry><entry>Asymptomatic</entry><entry>SNOMEDCT</entry><entry></entry></row>
+</tbody></tgroup></table>
+</section>
+</body>
+</topic>
