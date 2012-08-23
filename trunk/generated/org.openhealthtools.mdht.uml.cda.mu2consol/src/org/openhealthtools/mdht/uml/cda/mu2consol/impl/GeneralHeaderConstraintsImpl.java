@@ -94,15 +94,6 @@ public class GeneralHeaderConstraintsImpl extends org.openhealthtools.mdht.uml.c
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateGeneralHeaderConstraintsComponent1EncompassingEncounter(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsComponent1EncompassingEncounter(this, diagnostics, context);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	@Override
 	public boolean validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode(this, diagnostics, context);
