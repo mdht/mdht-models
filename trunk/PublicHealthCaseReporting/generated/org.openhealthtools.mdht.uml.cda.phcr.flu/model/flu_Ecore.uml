@@ -1,0 +1,680 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
+  <uml:Package xmi:id="_8BmxsE6tEeG_dcj91TvCTg" name="flu">
+    <packageImport xmi:id="_8F7RAE6tEeG_dcj91TvCTg">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_6MwukMgnEeCI5ZpfyBisiQ"/>
+    </packageImport>
+    <packageImport xmi:id="_8F7RAU6tEeG_dcj91TvCTg">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.cda.ccd/model/ccd_Ecore.uml#_qQyD8jxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_8F7RAk6tEeG_dcj91TvCTg">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ii81kjxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_8F7RA06tEeG_dcj91TvCTg">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_XgMSwzxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_8F7RBE6tEeG_dcj91TvCTg">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVbeUDcEd6xYZuu1VKCVw"/>
+    </packageImport>
+    <packageImport xmi:id="_8F7RBU6tEeG_dcj91TvCTg">
+      <importedPackage href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_KnCD4CFjEd-3s7f6mWX-3A"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_8El0QU6tEeG_dcj91TvCTg" name="InfluenzaCaseReport">
+      <ownedRule xmi:id="_S3MO9OyGEeGTq5iwfcrWEw" name="PublicHealthCaseReportTemplateId" constrainedElement="_8El0QU6tEeG_dcj91TvCTg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_S3MO9eyGEeGTq5iwfcrWEw">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.1.11')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_S3V_8eyGEeGTq5iwfcrWEw" name="InfluenzaCaseReportTitle" constrainedElement="_8El0QU6tEeG_dcj91TvCTg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_S3V_8uyGEeGTq5iwfcrWEw">
+          <language>OCL</language>
+          <body>(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined() and self.title.getText() = 'Public Health Case Report - Influenza')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_S3fw-uyGEeGTq5iwfcrWEw" name="InfluenzaCaseReportInfluenzaImmunizationSection" constrainedElement="_8El0QU6tEeG_dcj91TvCTg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_S3fw--yGEeGTq5iwfcrWEw">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(flu::InfluenzaImmunizationSection))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_S3o65eyGEeGTq5iwfcrWEw" name="InfluenzaCaseReportInfluenzaPHCRClinicalInformationSection" constrainedElement="_8El0QU6tEeG_dcj91TvCTg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_S3o65uyGEeGTq5iwfcrWEw">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(flu::InfluenzaPHCRClinicalInformationSection))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_S3o67OyGEeGTq5iwfcrWEw" name="InfluenzaCaseReportInfluenzaPHCRTreatmentInformationSection" constrainedElement="_8El0QU6tEeG_dcj91TvCTg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_S3o67eyGEeGTq5iwfcrWEw">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(flu::InfluenzaPHCRTreatmentInformationSection))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_S54Wm-yGEeGTq5iwfcrWEw" name="InfluenzaCaseReportInfluenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection" constrainedElement="_8El0QU6tEeG_dcj91TvCTg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_S6BggOyGEeGTq5iwfcrWEw">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(flu::InfluenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_S6BghuyGEeGTq5iwfcrWEw" name="InfluenzaCaseReportInfluenzaPHCRSocialHistorySection" constrainedElement="_8El0QU6tEeG_dcj91TvCTg">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_S6Bgh-yGEeGTq5iwfcrWEw">
+          <language>OCL</language>
+          <body>self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(flu::InfluenzaPHCRSocialHistorySection))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_8El0Q06tEeG_dcj91TvCTg">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_6PmAIcgnEeCI5ZpfyBisiQ"/>
+      </generalization>
+      <ownedOperation xmi:id="_S3o64OyGEeGTq5iwfcrWEw" name="getInfluenzaImmunizationSection" isQuery="true" bodyCondition="_S3o64-yGEeGTq5iwfcrWEw">
+        <ownedRule xmi:id="_S3o64-yGEeGTq5iwfcrWEw" name="body" constrainedElement="_S3o64OyGEeGTq5iwfcrWEw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_S3o65OyGEeGTq5iwfcrWEw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(flu::InfluenzaImmunizationSection))->asSequence()->first().oclAsType(flu::InfluenzaImmunizationSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_S3o64eyGEeGTq5iwfcrWEw" type="_VQO98KPMEeGdKsw0tXkvXQ" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_S3o64uyGEeGTq5iwfcrWEw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_S3o65-yGEeGTq5iwfcrWEw" name="getInfluenzaPHCRClinicalInformationSection" isQuery="true" bodyCondition="_S3o66uyGEeGTq5iwfcrWEw">
+        <ownedRule xmi:id="_S3o66uyGEeGTq5iwfcrWEw" name="body" constrainedElement="_S3o65-yGEeGTq5iwfcrWEw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_S3o66-yGEeGTq5iwfcrWEw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(flu::InfluenzaPHCRClinicalInformationSection))->asSequence()->first().oclAsType(flu::InfluenzaPHCRClinicalInformationSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_S3o66OyGEeGTq5iwfcrWEw" type="_em2vEKPMEeGdKsw0tXkvXQ" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_S3o66eyGEeGTq5iwfcrWEw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_S3o67uyGEeGTq5iwfcrWEw" name="getInfluenzaPHCRTreatmentInformationSection" isQuery="true" bodyCondition="_S3o68eyGEeGTq5iwfcrWEw">
+        <ownedRule xmi:id="_S3o68eyGEeGTq5iwfcrWEw" name="body" constrainedElement="_S3o67uyGEeGTq5iwfcrWEw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_S3o68uyGEeGTq5iwfcrWEw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(flu::InfluenzaPHCRTreatmentInformationSection))->asSequence()->first().oclAsType(flu::InfluenzaPHCRTreatmentInformationSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_S3o67-yGEeGTq5iwfcrWEw" type="_k71UIKPMEeGdKsw0tXkvXQ" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_S3o68OyGEeGTq5iwfcrWEw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_S6BggeyGEeGTq5iwfcrWEw" name="getInfluenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection" isQuery="true" bodyCondition="_S6BghOyGEeGTq5iwfcrWEw">
+        <ownedRule xmi:id="_S6BghOyGEeGTq5iwfcrWEw" name="body" constrainedElement="_S6BggeyGEeGTq5iwfcrWEw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_S6BgheyGEeGTq5iwfcrWEw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(flu::InfluenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection))->asSequence()->first().oclAsType(flu::InfluenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_S6BgguyGEeGTq5iwfcrWEw" type="_ybeJEKPMEeGdKsw0tXkvXQ" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_S6Bgg-yGEeGTq5iwfcrWEw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_S6BgiOyGEeGTq5iwfcrWEw" name="getInfluenzaPHCRSocialHistorySection" isQuery="true" bodyCondition="_S6Bgi-yGEeGTq5iwfcrWEw">
+        <ownedRule xmi:id="_S6Bgi-yGEeGTq5iwfcrWEw" name="body" constrainedElement="_S6BgiOyGEeGTq5iwfcrWEw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_S6BgjOyGEeGTq5iwfcrWEw">
+            <language>OCL</language>
+            <body>self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(flu::InfluenzaPHCRSocialHistorySection))->asSequence()->first().oclAsType(flu::InfluenzaPHCRSocialHistorySection)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_S6BgieyGEeGTq5iwfcrWEw" type="_Knig8KPMEeGdKsw0tXkvXQ" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_S6BgiuyGEeGTq5iwfcrWEw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_VQO98KPMEeGdKsw0tXkvXQ" name="InfluenzaImmunizationSection">
+      <ownedRule xmi:id="_S3V_9OyGEeGTq5iwfcrWEw" name="ImmunizationsSectionTemplateId" constrainedElement="_VQO98KPMEeGdKsw0tXkvXQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_S3V_9eyGEeGTq5iwfcrWEw">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.47')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_S4YhxOyGEeGTq5iwfcrWEw" name="InfluenzaImmunizationSectionInfluenzaImmunizationActivity" constrainedElement="_VQO98KPMEeGdKsw0tXkvXQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_S4YhxeyGEeGTq5iwfcrWEw">
+          <language>OCL</language>
+          <body>self.entry->exists(entry : cda::Entry | not entry.substanceAdministration.oclIsUndefined() and entry.substanceAdministration.oclIsKindOf(flu::InfluenzaImmunizationActivity) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_VQO98aPMEeGdKsw0tXkvXQ">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ccd/model/ccd_Ecore.uml#_CinbMHDPEd6eItyqb1FoWg"/>
+      </generalization>
+      <ownedOperation xmi:id="_S4YhxuyGEeGTq5iwfcrWEw" name="getInfluenzaImmunizationActivities" isQuery="true" bodyCondition="_S4YhyeyGEeGTq5iwfcrWEw">
+        <ownedRule xmi:id="_S4YhyeyGEeGTq5iwfcrWEw" name="body" constrainedElement="_S4YhxuyGEeGTq5iwfcrWEw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_S4YhyuyGEeGTq5iwfcrWEw">
+            <language>OCL</language>
+            <body>self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(flu::InfluenzaImmunizationActivity)).oclAsType(flu::InfluenzaImmunizationActivity)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_S4Yhx-yGEeGTq5iwfcrWEw" type="_ZPaDoKk6EeGC1bRFR6-SQw" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_S4YhyOyGEeGTq5iwfcrWEw" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_em2vEKPMEeGdKsw0tXkvXQ" name="InfluenzaPHCRClinicalInformationSection">
+      <ownedRule xmi:id="_S3V_-OyGEeGTq5iwfcrWEw" name="PhcrClinicalInformationSectionTemplateId" constrainedElement="_em2vEKPMEeGdKsw0tXkvXQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_S3V_-eyGEeGTq5iwfcrWEw">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.50')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_S4Fm0OyGEeGTq5iwfcrWEw" name="InfluenzaPHCRClinicalInformationSectionInfluenzaCaseObservation" constrainedElement="_em2vEKPMEeGdKsw0tXkvXQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_S4Fm0eyGEeGTq5iwfcrWEw">
+          <language>OCL</language>
+          <body>self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(flu::InfluenzaCaseObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_em2vEaPMEeGdKsw0tXkvXQ">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_84uJEMqZEeCRBIG_Gkv9FQ"/>
+      </generalization>
+      <ownedOperation xmi:id="_S4PX0OyGEeGTq5iwfcrWEw" name="getInfluenzaCaseObservation" isQuery="true" bodyCondition="_S4PX0-yGEeGTq5iwfcrWEw">
+        <ownedRule xmi:id="_S4PX0-yGEeGTq5iwfcrWEw" name="body" constrainedElement="_S4PX0OyGEeGTq5iwfcrWEw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_S4PX1OyGEeGTq5iwfcrWEw">
+            <language>OCL</language>
+            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(flu::InfluenzaCaseObservation))->asSequence()->first().oclAsType(flu::InfluenzaCaseObservation)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_S4PX0eyGEeGTq5iwfcrWEw" type="_3faHkKPNEeGdKsw0tXkvXQ" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_S4PX0uyGEeGTq5iwfcrWEw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_k71UIKPMEeGdKsw0tXkvXQ" name="InfluenzaPHCRTreatmentInformationSection">
+      <ownedRule xmi:id="_S3fw8uyGEeGTq5iwfcrWEw" name="PhcrTreatmentInformationSectionTemplateId" constrainedElement="_k71UIKPMEeGdKsw0tXkvXQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_S3fw8-yGEeGTq5iwfcrWEw">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.48')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_S4sDxOyGEeGTq5iwfcrWEw" name="InfluenzaPHCRTreatmentInformationSectionInfluenzaTherapeuticRegimenAct" constrainedElement="_k71UIKPMEeGdKsw0tXkvXQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_S4sDxeyGEeGTq5iwfcrWEw">
+          <language>OCL</language>
+          <body>self.entry->one(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(flu::InfluenzaTherapeuticRegimenAct) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_k717MKPMEeGdKsw0tXkvXQ">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_XTjpIMqaEeCRBIG_Gkv9FQ"/>
+      </generalization>
+      <ownedOperation xmi:id="_S4sDxuyGEeGTq5iwfcrWEw" name="getInfluenzaTherapeuticRegimenAct" isQuery="true" bodyCondition="_S4sDyeyGEeGTq5iwfcrWEw">
+        <ownedRule xmi:id="_S4sDyeyGEeGTq5iwfcrWEw" name="body" constrainedElement="_S4sDxuyGEeGTq5iwfcrWEw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_S4sDyuyGEeGTq5iwfcrWEw">
+            <language>OCL</language>
+            <body>self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(flu::InfluenzaTherapeuticRegimenAct))->asSequence()->first().oclAsType(flu::InfluenzaTherapeuticRegimenAct)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_S4sDx-yGEeGTq5iwfcrWEw" type="_pZDcMKlEEeGC1bRFR6-SQw" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_S4sDyOyGEeGTq5iwfcrWEw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ybeJEKPMEeGdKsw0tXkvXQ" name="InfluenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection">
+      <ownedRule xmi:id="_S3fw9-yGEeGTq5iwfcrWEw" name="ResultsSectionTemplateId" constrainedElement="_ybeJEKPMEeGdKsw0tXkvXQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_S3fw-OyGEeGTq5iwfcrWEw">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.51')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_S4--suyGEeGTq5iwfcrWEw" name="InfluenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSectionInfluenzaResultObservation" constrainedElement="_ybeJEKPMEeGdKsw0tXkvXQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_S4--s-yGEeGTq5iwfcrWEw">
+          <language>OCL</language>
+          <body>self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(flu::InfluenzaResultObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_S5bqoOyGEeGTq5iwfcrWEw" name="InfluenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSectionInfluenzaImagingObservation" constrainedElement="_ybeJEKPMEeGdKsw0tXkvXQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_S5bqoeyGEeGTq5iwfcrWEw">
+          <language>OCL</language>
+          <body>self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(flu::InfluenzaImagingObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_ybewIKPMEeGdKsw0tXkvXQ">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_2dxgkNM5EeCbJdgmSYxI0g"/>
+      </generalization>
+      <ownedOperation xmi:id="_S4--tOyGEeGTq5iwfcrWEw" name="getInfluenzaResultObservations" isQuery="true" bodyCondition="_S4--t-yGEeGTq5iwfcrWEw">
+        <ownedRule xmi:id="_S4--t-yGEeGTq5iwfcrWEw" name="body" constrainedElement="_S4--tOyGEeGTq5iwfcrWEw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_S4--uOyGEeGTq5iwfcrWEw">
+            <language>OCL</language>
+            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(flu::InfluenzaResultObservation)).oclAsType(flu::InfluenzaResultObservation)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_S4--teyGEeGTq5iwfcrWEw" type="_DHNNsKlLEeGC1bRFR6-SQw" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_S4--tuyGEeGTq5iwfcrWEw" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_S5bqouyGEeGTq5iwfcrWEw" name="getInfluenzaImagingObservations" isQuery="true" bodyCondition="_S5bqpeyGEeGTq5iwfcrWEw">
+        <ownedRule xmi:id="_S5bqpeyGEeGTq5iwfcrWEw" name="body" constrainedElement="_S5bqouyGEeGTq5iwfcrWEw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_S5bqpuyGEeGTq5iwfcrWEw">
+            <language>OCL</language>
+            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(flu::InfluenzaImagingObservation)).oclAsType(flu::InfluenzaImagingObservation)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_S5bqo-yGEeGTq5iwfcrWEw" type="_O9PckK6mEeGvorhCWvMgmA" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_S5bqpOyGEeGTq5iwfcrWEw" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3faHkKPNEeGdKsw0tXkvXQ" name="InfluenzaCaseObservation">
+      <ownedRule xmi:id="_S3yr4OyGEeGTq5iwfcrWEw" name="ProblemObservationTemplateId" constrainedElement="_3faHkKPNEeGdKsw0tXkvXQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_S3yr4eyGEeGTq5iwfcrWEw">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.78')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_S3yr4-yGEeGTq5iwfcrWEw" name="CaseObservationValue" constrainedElement="_3faHkKPNEeGdKsw0tXkvXQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_S3yr5OyGEeGTq5iwfcrWEw">
+          <language>OCL</language>
+          <body>(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = element.oclAsType(datatypes::CD) in &#xD;&#xA;value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined()))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_S4PX1eyGEeGTq5iwfcrWEw" name="InfluenzaCaseObservationInfluenzaSignsAndSymptomsObservation" constrainedElement="_3faHkKPNEeGdKsw0tXkvXQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_S4PX1uyGEeGTq5iwfcrWEw">
+          <language>OCL</language>
+          <body>self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(flu::InfluenzaSignsAndSymptomsObservation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::MFST)</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="__uXjQKlCEeGC1bRFR6-SQw">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_p8bDQNTCEeC18pmrrt-Mbg"/>
+      </generalization>
+      <ownedOperation xmi:id="_S4PX1-yGEeGTq5iwfcrWEw" name="getInfluenzaSignsAndSymptomsObservations" isQuery="true" bodyCondition="_S4PX2uyGEeGTq5iwfcrWEw">
+        <ownedRule xmi:id="_S4PX2uyGEeGTq5iwfcrWEw" name="body" constrainedElement="_S4PX1-yGEeGTq5iwfcrWEw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_S4PX2-yGEeGTq5iwfcrWEw">
+            <language>OCL</language>
+            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(flu::InfluenzaSignsAndSymptomsObservation)).oclAsType(flu::InfluenzaSignsAndSymptomsObservation)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_S4PX2OyGEeGTq5iwfcrWEw" type="_yQIJ0KPOEeGdKsw0tXkvXQ" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_S4PX2eyGEeGTq5iwfcrWEw" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_yQIJ0KPOEeGdKsw0tXkvXQ" name="InfluenzaSignsAndSymptomsObservation">
+      <ownedRule xmi:id="_S3710OyGEeGTq5iwfcrWEw" name="SignsAndSymptomsObservationTemplateId" constrainedElement="_yQIJ0KPOEeGdKsw0tXkvXQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_S3710eyGEeGTq5iwfcrWEw">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.74')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_S3710-yGEeGTq5iwfcrWEw" name="SignsAndSymptomsObservationValue" constrainedElement="_yQIJ0KPOEeGdKsw0tXkvXQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_S3711OyGEeGTq5iwfcrWEw">
+          <language>OCL</language>
+          <body>(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = element.oclAsType(datatypes::CD) in &#xD;&#xA;value.codeSystem = '2.16.840.1.113883.6.96' and not value.code.oclIsUndefined()))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_80rGoKPOEeGdKsw0tXkvXQ">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#__cLgwNQPEeC4C5jYVS2kfQ"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ZPaDoKk6EeGC1bRFR6-SQw" name="InfluenzaImmunizationActivity">
+      <ownedRule xmi:id="_S4YhweyGEeGTq5iwfcrWEw" name="MedicationActivityTemplateId" constrainedElement="_ZPaDoKk6EeGC1bRFR6-SQw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_S4YhwuyGEeGTq5iwfcrWEw">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.77')</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_MO8WoKk9EeGC1bRFR6-SQw">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ccd/model/ccd_Ecore.uml#_W6aMoHfTEd6ZeOKq_2_a9g"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_fMNccKk-EeGC1bRFR6-SQw" name="InfluenzaImmunizationProduct ">
+      <ownedRule xmi:id="_S4YhzOyGEeGTq5iwfcrWEw" name="ProductTemplateId" constrainedElement="_fMNccKk-EeGC1bRFR6-SQw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_S4YhzeyGEeGTq5iwfcrWEw">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.76')</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_fMODgKk-EeGC1bRFR6-SQw">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.ccd/model/ccd_Ecore.uml#_8Xj7UIiBEd66cKocspyVOg"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_pZDcMKlEEeGC1bRFR6-SQw" name="InfluenzaTherapeuticRegimenAct">
+      <ownedRule xmi:id="_S4iSwuyGEeGTq5iwfcrWEw" name="TherapeuticRegimenActTemplateId" constrainedElement="_pZDcMKlEEeGC1bRFR6-SQw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_S4iSw-yGEeGTq5iwfcrWEw">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.75')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_S5bqp-yGEeGTq5iwfcrWEw" name="InfluenzaTherapeuticRegimenActInfluenzaTreatmentGivenSubstanceAdministration" constrainedElement="_pZDcMKlEEeGC1bRFR6-SQw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_S5bqqOyGEeGTq5iwfcrWEw">
+          <language>OCL</language>
+          <body>self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.substanceAdministration.oclIsUndefined() and entryRelationship.substanceAdministration.oclIsKindOf(flu::InfluenzaTreatmentGivenSubstanceAdministration) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_S5bqruyGEeGTq5iwfcrWEw" name="InfluenzaTherapeuticRegimenActInfluenzaTreatmentNotGivenSubstanceAdministration" constrainedElement="_pZDcMKlEEeGC1bRFR6-SQw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_S5bqr-yGEeGTq5iwfcrWEw">
+          <language>OCL</language>
+          <body>self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.substanceAdministration.oclIsUndefined() and entryRelationship.substanceAdministration.oclIsKindOf(flu::InfluenzaTreatmentNotGivenSubstanceAdministration) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_pZEDQKlEEeGC1bRFR6-SQw">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_2p558NSrEeC18pmrrt-Mbg"/>
+      </generalization>
+      <ownedOperation xmi:id="_S5bqqeyGEeGTq5iwfcrWEw" name="getInfluenzaTreatmentGivenSubstanceAdministrations" isQuery="true" bodyCondition="_S5bqrOyGEeGTq5iwfcrWEw">
+        <ownedRule xmi:id="_S5bqrOyGEeGTq5iwfcrWEw" name="body" constrainedElement="_S5bqqeyGEeGTq5iwfcrWEw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_S5bqreyGEeGTq5iwfcrWEw">
+            <language>OCL</language>
+            <body>self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(flu::InfluenzaTreatmentGivenSubstanceAdministration)).oclAsType(flu::InfluenzaTreatmentGivenSubstanceAdministration)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_S5bqquyGEeGTq5iwfcrWEw" type="_HR3NEKlHEeGC1bRFR6-SQw" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_S5bqq-yGEeGTq5iwfcrWEw" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_S5k0kOyGEeGTq5iwfcrWEw" name="getInfluenzaTreatmentNotGivenSubstanceAdministrations" isQuery="true" bodyCondition="_S5k0k-yGEeGTq5iwfcrWEw">
+        <ownedRule xmi:id="_S5k0k-yGEeGTq5iwfcrWEw" name="body" constrainedElement="_S5k0kOyGEeGTq5iwfcrWEw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_S5k0lOyGEeGTq5iwfcrWEw">
+            <language>OCL</language>
+            <body>self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(flu::InfluenzaTreatmentNotGivenSubstanceAdministration)).oclAsType(flu::InfluenzaTreatmentNotGivenSubstanceAdministration)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_S5k0keyGEeGTq5iwfcrWEw" type="_t2AL0KlIEeGC1bRFR6-SQw" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_S5k0kuyGEeGTq5iwfcrWEw" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_HR3NEKlHEeGC1bRFR6-SQw" name="InfluenzaTreatmentGivenSubstanceAdministration">
+      <ownedRule xmi:id="_S4iSxuyGEeGTq5iwfcrWEw" name="TreatmentGivenSubstanceAdministrationTemplateId" constrainedElement="_HR3NEKlHEeGC1bRFR6-SQw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_S4iSx-yGEeGTq5iwfcrWEw">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.79')</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_HR30IKlHEeGC1bRFR6-SQw">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_XOKZ4NStEeC18pmrrt-Mbg"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_t2AL0KlIEeGC1bRFR6-SQw" name="InfluenzaTreatmentNotGivenSubstanceAdministration">
+      <ownedRule xmi:id="_S4sDweyGEeGTq5iwfcrWEw" name="TreatmentNotGivenSubstanceAdministrationTemplateId" constrainedElement="_t2AL0KlIEeGC1bRFR6-SQw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_S4sDwuyGEeGTq5iwfcrWEw">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.80')</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_t2AL0alIEeGC1bRFR6-SQw">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_NbgssNSwEeC18pmrrt-Mbg"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_DHNNsKlLEeGC1bRFR6-SQw" name="InfluenzaResultObservation">
+      <ownedRule xmi:id="_S4sDzeyGEeGTq5iwfcrWEw" name="ResultObservationTemplateId" constrainedElement="_DHNNsKlLEeGC1bRFR6-SQw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_S4sDzuyGEeGTq5iwfcrWEw">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.81')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_S41NseyGEeGTq5iwfcrWEw" name="ResultObservationCode" constrainedElement="_DHNNsKlLEeGC1bRFR6-SQw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_S41NsuyGEeGTq5iwfcrWEw">
+          <language>OCL</language>
+          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (&#xD;&#xA;value.codeSystem = '2.16.840.1.113883.6.1' and not value.code.oclIsUndefined()))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_S4--sOyGEeGTq5iwfcrWEw" name="InfluenzaResultObservationInterpretationCode" constrainedElement="_DHNNsKlLEeGC1bRFR6-SQw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_S4--seyGEeGTq5iwfcrWEw">
+          <language>OCL</language>
+          <body>(self.interpretationCode->isEmpty() or self.interpretationCode->exists(element | element.isNullFlavorUndefined())) implies (self.interpretationCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CE) and &#xD;&#xA;let value : datatypes::CE = element.oclAsType(datatypes::CE) in &#xD;&#xA;value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '82334004' or value.code = 'PLR1' or value.code = 'PLR3' or value.code = 'PLR19' or value.code = '407479009' or value.code = '442352004' or value.code = '407480007' or value.code = '260385009')))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_DHN0wKlLEeGC1bRFR6-SQw">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#__3pL0PNrEeCOm7Y48UO5Tg"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_dH6K8KlVEeGC1bRFR6-SQw" name="InfluenzaEmploymentStatusObservation">
+      <ownedRule xmi:id="_S4--ueyGEeGTq5iwfcrWEw" name="InfluenzaEmploymentStatusObservationTemplateId" constrainedElement="_dH6K8KlVEeGC1bRFR6-SQw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_S4--uuyGEeGTq5iwfcrWEw">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.84')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_S5IIoeyGEeGTq5iwfcrWEw" name="InfluenzaEmploymentStatusObservationCode" constrainedElement="_dH6K8KlVEeGC1bRFR6-SQw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_S5IIouyGEeGTq5iwfcrWEw">
+          <language>OCL</language>
+          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (&#xD;&#xA;value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.6'))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_S5IIo-yGEeGTq5iwfcrWEw" name="InfluenzaEmploymentStatusObservationValue" constrainedElement="_dH6K8KlVEeGC1bRFR6-SQw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_S5IIpOyGEeGTq5iwfcrWEw">
+          <language>OCL</language>
+          <body>(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = element.oclAsType(datatypes::CD) in &#xD;&#xA;value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '224372004' or value.code = '275139002' or value.code = '406156006' or value.code = '105493001' or value.code = '160906004' or value.code = '65853000' or value.code = '440337002' or value.code = '73438004')))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_dH6K8alVEeGC1bRFR6-SQw">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_O9PckK6mEeGvorhCWvMgmA" name="InfluenzaImagingObservation">
+      <ownedRule xmi:id="_S5R5ouyGEeGTq5iwfcrWEw" name="ProblemObservationTemplateId" constrainedElement="_O9PckK6mEeGvorhCWvMgmA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_S5R5o-yGEeGTq5iwfcrWEw">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.83')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_S5R5peyGEeGTq5iwfcrWEw" name="InfluenzaImagingObservationMethodCode" constrainedElement="_O9PckK6mEeGvorhCWvMgmA">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_S5R5puyGEeGTq5iwfcrWEw">
+          <language>OCL</language>
+          <body>(self.methodCode->isEmpty() or self.methodCode->exists(element | element.isNullFlavorUndefined())) implies (self.methodCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CE) and &#xD;&#xA;let value : datatypes::CE = element.oclAsType(datatypes::CE) in &#xD;&#xA;not value.codeSystem.oclIsUndefined() or not value.codeSystemName.oclIsUndefined()))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_O9RRwK6mEeGvorhCWvMgmA">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_C5IPgPQfEeCOm7Y48UO5Tg"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_5QzxwMEvEeG-Z92mbpCVHw" name="InfluenzaPossibleExposureLocationAct">
+      <ownedRule xmi:id="_S5k0neyGEeGTq5iwfcrWEw" name="InfluenzaPossibleExposureLocationActTemplateId" constrainedElement="_5QzxwMEvEeG-Z92mbpCVHw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_S5k0nuyGEeGTq5iwfcrWEw">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.3.82')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_S5ulkOyGEeGTq5iwfcrWEw" name="InfluenzaPossibleExposureLocationActCode" constrainedElement="_5QzxwMEvEeG-Z92mbpCVHw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_S5ulkeyGEeGTq5iwfcrWEw">
+          <language>OCL</language>
+          <body>(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and &#xD;&#xA;let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in (&#xD;&#xA;value.code = '413350009' and value.codeSystem = '2.16.840.1.113883.6.96'))</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_S5ulkuyGEeGTq5iwfcrWEw" name="InfluenzaPossibleExposureLocationActStatusCode" constrainedElement="_5QzxwMEvEeG-Z92mbpCVHw">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_S5ulk-yGEeGTq5iwfcrWEw">
+          <language>OCL</language>
+          <body>(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (self.statusCode.oclIsKindOf(datatypes::CS) and &#xD;&#xA;let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in (&#xD;&#xA;value.code = 'completed'))</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_L8ZuMMEwEeG-Z92mbpCVHw">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_YiANsDxYEd6JwqSGecoePg"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Knig8KPMEeGdKsw0tXkvXQ" name="InfluenzaPHCRSocialHistorySection">
+      <ownedRule xmi:id="_S5k0leyGEeGTq5iwfcrWEw" name="InfluenzaPHCRSocialHistorySectionInfluenzaEmploymentStatusObservation" constrainedElement="_Knig8KPMEeGdKsw0tXkvXQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_S5k0luyGEeGTq5iwfcrWEw">
+          <language>OCL</language>
+          <body>self.entry->one(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(flu::InfluenzaEmploymentStatusObservation) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_S54WkuyGEeGTq5iwfcrWEw" name="SocialHistorySectionTemplateId" constrainedElement="_Knig8KPMEeGdKsw0tXkvXQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_S54Wk-yGEeGTq5iwfcrWEw">
+          <language>OCL</language>
+          <body>self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.15.2.49')</body>
+        </specification>
+      </ownedRule>
+      <ownedRule xmi:id="_S54WlOyGEeGTq5iwfcrWEw" name="InfluenzaPHCRSocialHistorySectionInfluenzaPossibleExposureLocationAct" constrainedElement="_Knig8KPMEeGdKsw0tXkvXQ">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_S54WleyGEeGTq5iwfcrWEw">
+          <language>OCL</language>
+          <body>self.entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(flu::InfluenzaPossibleExposureLocationAct) and entry.typeCode = vocab::x_ActRelationshipEntry::DRIV)</body>
+        </specification>
+      </ownedRule>
+      <generalization xmi:id="_KnjIAKPMEeGdKsw0tXkvXQ">
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr_Ecore.uml#_Fw7f4MgpEeCI5ZpfyBisiQ"/>
+      </generalization>
+      <ownedOperation xmi:id="_S5k0mOyGEeGTq5iwfcrWEw" name="getInfluenzaEmploymentStatusObservation" isQuery="true" bodyCondition="_S5k0m-yGEeGTq5iwfcrWEw">
+        <ownedRule xmi:id="_S5k0m-yGEeGTq5iwfcrWEw" name="body" constrainedElement="_S5k0mOyGEeGTq5iwfcrWEw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_S5k0nOyGEeGTq5iwfcrWEw">
+            <language>OCL</language>
+            <body>self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(flu::InfluenzaEmploymentStatusObservation))->asSequence()->first().oclAsType(flu::InfluenzaEmploymentStatusObservation)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_S5k0meyGEeGTq5iwfcrWEw" type="_dH6K8KlVEeGC1bRFR6-SQw" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_S5k0muyGEeGTq5iwfcrWEw" value="1"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_S54WluyGEeGTq5iwfcrWEw" name="getInfluenzaPossibleExposureLocationActs" isQuery="true" bodyCondition="_S54WmeyGEeGTq5iwfcrWEw">
+        <ownedRule xmi:id="_S54WmeyGEeGTq5iwfcrWEw" name="body" constrainedElement="_S54WluyGEeGTq5iwfcrWEw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_S54WmuyGEeGTq5iwfcrWEw">
+            <language>OCL</language>
+            <body>self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(flu::InfluenzaPossibleExposureLocationAct)).oclAsType(flu::InfluenzaPossibleExposureLocationAct)</body>
+          </specification>
+        </ownedRule>
+        <ownedParameter xmi:id="_S54Wl-yGEeGTq5iwfcrWEw" type="_5QzxwMEvEeG-Z92mbpCVHw" direction="return">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_S54WmOyGEeGTq5iwfcrWEw" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <profileApplication xmi:id="_8BmxuU6tEeG_dcj91TvCTg">
+      <eAnnotations xmi:id="_8Bmxuk6tEeG_dcj91TvCTg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_8Bmxu06tEeG_dcj91TvCTg">
+      <eAnnotations xmi:id="_8BmxvE6tEeG_dcj91TvCTg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.openhealthtools.org/mdht/schemas/cda/4#/"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://CDA_PROFILES/CDA.profile.uml#_cxOJEIEVEd6H8o-hO3-B4Q"/>
+    </profileApplication>
+    <profileApplication xmi:id="_S3MO8OyGEeGTq5iwfcrWEw">
+      <eAnnotations xmi:id="_S3MO8eyGEeGTq5iwfcrWEw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Ecore.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Package>
+  <CDA:CodegenSupport xmi:id="_8El0QE6tEeG_dcj91TvCTg" basePackage="org.openhealthtools.mdht.uml.cda.phcr" nsPrefix="flu" nsURI="http://www.openhealthtools.org/mdht/uml/cda/phcr/flu" packageName="flu" prefix="flu" base_Namespace="_8BmxsE6tEeG_dcj91TvCTg"/>
+  <CDA:CDATemplate xmi:id="_8El0Qk6tEeG_dcj91TvCTg" base_Class="_8El0QU6tEeG_dcj91TvCTg" templateId="2.16.840.1.113883.10.20.15.1.11" assigningAuthorityName=""/>
+  <CDA:AssociationValidation xmi:id="_OKVc0KPNEeGdKsw0tXkvXQ" severity="WARNING"/>
+  <CDA:AssociationValidation xmi:id="_PTby4KPNEeGdKsw0tXkvXQ" severity="WARNING"/>
+  <CDA:ConformsTo xmi:id="_ImRscKPPEeGdKsw0tXkvXQ" base_Generalization="_80rGoKPOEeGdKsw0tXkvXQ"/>
+  <CDA:CDATemplate xmi:id="_cwTiEKk7EeGC1bRFR6-SQw" base_Class="_VQO98KPMEeGdKsw0tXkvXQ" templateId="2.16.840.1.113883.10.20.15.2.47"/>
+  <CDA:CDATemplate xmi:id="_gE4RMKk7EeGC1bRFR6-SQw" base_Class="_k71UIKPMEeGdKsw0tXkvXQ" templateId="2.16.840.1.113883.10.20.15.2.48"/>
+  <CDA:CDATemplate xmi:id="_pN5EIKk7EeGC1bRFR6-SQw" base_Class="_Knig8KPMEeGdKsw0tXkvXQ" templateId="2.16.840.1.113883.10.20.15.2.49"/>
+  <CDA:CDATemplate xmi:id="_sE8JwKk7EeGC1bRFR6-SQw" base_Class="_em2vEKPMEeGdKsw0tXkvXQ" templateId="2.16.840.1.113883.10.20.15.2.50"/>
+  <CDA:CDATemplate xmi:id="_vYqkUKk7EeGC1bRFR6-SQw" base_Class="_ybeJEKPMEeGdKsw0tXkvXQ" templateId="2.16.840.1.113883.10.20.15.2.51"/>
+  <CDA:CDATemplate xmi:id="_uFG1QKk8EeGC1bRFR6-SQw" base_Class="_ZPaDoKk6EeGC1bRFR6-SQw" templateId="2.16.840.1.113883.10.20.15.3.77"/>
+  <CDA:CDATemplate xmi:id="_moLM0KlAEeGC1bRFR6-SQw" base_Class="_fMNccKk-EeGC1bRFR6-SQw" templateId="2.16.840.1.113883.10.20.15.3.76"/>
+  <CDA:CDATemplate xmi:id="_Y_0O0KlCEeGC1bRFR6-SQw" base_Class="_yQIJ0KPOEeGdKsw0tXkvXQ" templateId="2.16.840.1.113883.10.20.15.3.74"/>
+  <CDA:CDATemplate xmi:id="_zf3mEKlCEeGC1bRFR6-SQw" base_Class="_3faHkKPNEeGdKsw0tXkvXQ" templateId="2.16.840.1.113883.10.20.15.3.78"/>
+  <CDA:CDATemplate xmi:id="_vPgSMKlEEeGC1bRFR6-SQw" base_Class="_pZDcMKlEEeGC1bRFR6-SQw" templateId="2.16.840.1.113883.10.20.15.3.75"/>
+  <CDA:CDATemplate xmi:id="_K0aGwKlHEeGC1bRFR6-SQw" base_Class="_HR3NEKlHEeGC1bRFR6-SQw" templateId="2.16.840.1.113883.10.20.15.3.79"/>
+  <CDA:PropertyValidation xmi:id="_VCMJYKlHEeGC1bRFR6-SQw">
+    <ruleId>CONF:1921</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:CDATemplate xmi:id="_yBswMKlIEeGC1bRFR6-SQw" base_Class="_t2AL0KlIEeGC1bRFR6-SQw" templateId="2.16.840.1.113883.10.20.15.3.80"/>
+  <CDA:PropertyValidation xmi:id="_29ulUKlIEeGC1bRFR6-SQw">
+    <ruleId>CONF:1933</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:EntryRelationship xmi:id="_kUgyAKlJEeGC1bRFR6-SQw" severity="WARNING" typeCode="COMP"/>
+  <CDA:ActRelationship xmi:id="_lPLDcKlJEeGC1bRFR6-SQw"/>
+  <CDA:EntryRelationship xmi:id="_sWRpAKlJEeGC1bRFR6-SQw" severity="INFO" typeCode="COMP"/>
+  <CDA:ActRelationship xmi:id="_s7z_AKlJEeGC1bRFR6-SQw"/>
+  <CDA:CDATemplate xmi:id="_Fza8UKlLEeGC1bRFR6-SQw" base_Class="_DHNNsKlLEeGC1bRFR6-SQw" templateId="2.16.840.1.113883.10.20.15.3.81"/>
+  <CDA:Entry xmi:id="_yX-BgKlQEeGC1bRFR6-SQw" severity="INFO" typeCode="DRIV"/>
+  <CDA:ActRelationship xmi:id="_y-HbgKlQEeGC1bRFR6-SQw"/>
+  <CDA:PropertyValidation xmi:id="_JTqrwKlSEeGC1bRFR6-SQw"/>
+  <CDA:PropertyValidation xmi:id="_LEZpkKlSEeGC1bRFR6-SQw"/>
+  <CDA:PropertyValidation xmi:id="_L6rxUKlSEeGC1bRFR6-SQw"/>
+  <CDA:PropertyValidation xmi:id="_QaF74KlSEeGC1bRFR6-SQw"/>
+  <CDA:PropertyValidation xmi:id="_R_1KoKlSEeGC1bRFR6-SQw"/>
+  <CDA:PropertyValidation xmi:id="_XSunoKlSEeGC1bRFR6-SQw"/>
+  <CDA:CDATemplate xmi:id="_L6tKAKlTEeGC1bRFR6-SQw" templateId="2.16.840.1.113883.10.20.15.3.82"/>
+  <CDA:Entry xmi:id="_TFzewKlTEeGC1bRFR6-SQw" severity="WARNING" typeCode="DRIV"/>
+  <CDA:ActRelationship xmi:id="_T3YFoKlTEeGC1bRFR6-SQw"/>
+  <CDA:Entry xmi:id="_8yo3UKlVEeGC1bRFR6-SQw" severity="WARNING" typeCode="DRIV"/>
+  <CDA:ActRelationship xmi:id="_9cNYwKlVEeGC1bRFR6-SQw"/>
+  <CDA:CDATemplate xmi:id="_Ub81gKlXEeGC1bRFR6-SQw" templateId="2.16.840.1.113883.10.20.15.3.83"/>
+  <CDA:Entry xmi:id="_WCjm8KlXEeGC1bRFR6-SQw" severity="WARNING" typeCode="DRIV"/>
+  <CDA:ActRelationship xmi:id="_WopWkKlXEeGC1bRFR6-SQw"/>
+  <CDA:CDATemplate xmi:id="_SIL-oK0yEeGiKq3XX8XCzA" base_Class="_dH6K8KlVEeGC1bRFR6-SQw" templateId="2.16.840.1.113883.10.20.15.3.84"/>
+  <CDA:PropertyValidation xmi:id="_dV4EIK6oEeGvorhCWvMgmA">
+    <ruleId>CONF:825</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:ValueSetConstraint xmi:id="_dV4rMK6oEeGvorhCWvMgmA">
+    <reference href="../../org.openhealthtools.mdht.uml.cda.phcr.flu.model/model/flu-vocab.uml#_wJWGcKlTEeGC1bRFR6-SQw"/>
+  </CDA:ValueSetConstraint>
+  <CDA:CDATemplate xmi:id="_QYX2cK6pEeGvorhCWvMgmA" base_Class="_O9PckK6mEeGvorhCWvMgmA" templateId="2.16.840.1.113883.10.20.15.3.83"/>
+  <CDA:PropertyValidation xmi:id="_btCOQMCUEeGpDImUeTJ6Hw"/>
+  <CDA:PropertyValidation xmi:id="_cZS3UMCUEeGpDImUeTJ6Hw"/>
+  <CDA:PropertyValidation xmi:id="_c8KT0MCUEeGpDImUeTJ6Hw"/>
+  <CDA:PropertyValidation xmi:id="_dqNFkMCUEeGpDImUeTJ6Hw"/>
+  <CDA:Entry xmi:id="_vTROAMCUEeGpDImUeTJ6Hw" severity="WARNING" typeCode="DRIV"/>
+  <CDA:Entry xmi:id="_xZFD8MCUEeGpDImUeTJ6Hw" severity="WARNING" typeCode="DRIV"/>
+  <CDA:ValueSetConstraint xmi:id="_jDUUgMEyEeG-Z92mbpCVHw">
+    <reference href="../../org.openhealthtools.mdht.uml.cda.phcr.flu.model/model/flu-vocab.uml#_impPEalWEeGC1bRFR6-SQw"/>
+  </CDA:ValueSetConstraint>
+  <CDA:CodeSystemConstraint xmi:id="_nwZusMEyEeG-Z92mbpCVHw" code="ASSERTION">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_wOhRcE6REeC5ttwajeXVXg"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:ValueSetConstraint xmi:id="_UxafsMEzEeG-Z92mbpCVHw">
+    <reference href="../../org.openhealthtools.mdht.uml.cda.phcr.flu.model/model/flu-vocab.uml#_ekTX0KlSEeGC1bRFR6-SQw"/>
+  </CDA:ValueSetConstraint>
+  <CDA:CodeSystemConstraint xmi:id="_XsCdwMEzEeG-Z92mbpCVHw" code="ASSERTION">
+    <reference href="../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_wOhRcE6REeC5ttwajeXVXg"/>
+  </CDA:CodeSystemConstraint>
+  <CDA:CDATemplate xmi:id="_yh9ZcMIGEeG2u52rMiBZyw" base_Class="_5QzxwMEvEeG-Z92mbpCVHw" templateId="2.16.840.1.113883.10.20.15.3.82"/>
+  <Ecore:EPackage xmi:id="_S3MO8uyGEeGTq5iwfcrWEw" base_Package="_8BmxsE6tEeG_dcj91TvCTg" packageName="flu" nsPrefix="flu" nsURI="http://www.openhealthtools.org/mdht/uml/cda/phcr/flu" basePackage="org.openhealthtools.mdht.uml.cda.phcr" prefix="flu"/>
+  <CDA:ConformsTo xmi:id="_S3MO8-yGEeGTq5iwfcrWEw" base_Generalization="_8El0Q06tEeG_dcj91TvCTg"/>
+  <Ecore:EClass xmi:id="_S3V_8OyGEeGTq5iwfcrWEw" base_Class="_8El0QU6tEeG_dcj91TvCTg">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation title.mixed='Public Health Case Report - Influenza' templateId.root='2.16.840.1.113883.10.20.15.1.11' constraints.validation.error='InfluenzaCaseReportTemplateId InfluenzaCaseReportTitle InfluenzaCaseReportInfluenzaPHCRClinicalInformationSection' constraints.validation.warning='InfluenzaCaseReportInfluenzaImmunizationSection InfluenzaCaseReportInfluenzaPHCRTreatmentInformationSection InfluenzaCaseReportInfluenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection InfluenzaCaseReportInfluenzaPHCRSocialHistorySection'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_S3V_8-yGEeGTq5iwfcrWEw" base_Generalization="_VQO98aPMEeGdKsw0tXkvXQ"/>
+  <Ecore:EClass xmi:id="_S3V_9uyGEeGTq5iwfcrWEw" base_Class="_VQO98KPMEeGdKsw0tXkvXQ">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.2.47' constraints.validation.error='InfluenzaImmunizationSectionTemplateId InfluenzaImmunizationSectionInfluenzaImmunizationActivity'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_S3V_9-yGEeGTq5iwfcrWEw" base_Generalization="_em2vEaPMEeGdKsw0tXkvXQ"/>
+  <Ecore:EClass xmi:id="_S3fw8OyGEeGTq5iwfcrWEw" base_Class="_em2vEKPMEeGdKsw0tXkvXQ">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.2.50' constraints.validation.error='InfluenzaPHCRClinicalInformationSectionTemplateId InfluenzaPHCRClinicalInformationSectionInfluenzaCaseObservation'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_S3fw8eyGEeGTq5iwfcrWEw" base_Generalization="_k717MKPMEeGdKsw0tXkvXQ"/>
+  <Ecore:EClass xmi:id="_S3fw9OyGEeGTq5iwfcrWEw" base_Class="_k71UIKPMEeGdKsw0tXkvXQ">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.2.48' constraints.validation.error='InfluenzaPHCRTreatmentInformationSectionTemplateId InfluenzaPHCRTreatmentInformationSectionInfluenzaTherapeuticRegimenAct'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_S3fw9eyGEeGTq5iwfcrWEw" base_Generalization="_ybewIKPMEeGdKsw0tXkvXQ"/>
+  <Ecore:EClass xmi:id="_S3fw-eyGEeGTq5iwfcrWEw" base_Class="_ybeJEKPMEeGdKsw0tXkvXQ">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.2.51' constraints.validation.error='InfluenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSectionTemplateId' constraints.validation.warning='InfluenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSectionInfluenzaResultObservation' constraints.validation.info='InfluenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSectionInfluenzaImagingObservation'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_S3o68-yGEeGTq5iwfcrWEw" base_Generalization="__uXjQKlCEeGC1bRFR6-SQw"/>
+  <Ecore:EClass xmi:id="_S3yr4uyGEeGTq5iwfcrWEw" base_Class="_3faHkKPNEeGdKsw0tXkvXQ">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation value.codeSystemName='SNOMEDCT' templateId.root='2.16.840.1.113883.10.20.15.3.78' constraints.validation.error='InfluenzaCaseObservationTemplateId CaseObservationValue' constraints.validation.warning='InfluenzaCaseObservationInfluenzaSignsAndSymptomsObservation' value.codeSystem='2.16.840.1.113883.6.96'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_S3710uyGEeGTq5iwfcrWEw" base_Class="_yQIJ0KPOEeGdKsw0tXkvXQ">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation value.codeSystemName='SNOMEDCT' templateId.root='2.16.840.1.113883.10.20.15.3.74' constraints.validation.error='InfluenzaSignsAndSymptomsObservationTemplateId SignsAndSymptomsObservationValue' value.codeSystem='2.16.840.1.113883.6.96'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_S4YhwOyGEeGTq5iwfcrWEw" base_Generalization="_MO8WoKk9EeGC1bRFR6-SQw"/>
+  <Ecore:EClass xmi:id="_S4Yhw-yGEeGTq5iwfcrWEw" base_Class="_ZPaDoKk6EeGC1bRFR6-SQw">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.3.77' constraints.validation.error='InfluenzaImmunizationActivityTemplateId'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_S4Yhy-yGEeGTq5iwfcrWEw" base_Generalization="_fMODgKk-EeGC1bRFR6-SQw"/>
+  <Ecore:EClass xmi:id="_S4iSwOyGEeGTq5iwfcrWEw" base_Class="_fMNccKk-EeGC1bRFR6-SQw">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.3.76' constraints.validation.error='InfluenzaImmunizationProduct TemplateId'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_S4iSweyGEeGTq5iwfcrWEw" base_Generalization="_pZEDQKlEEeGC1bRFR6-SQw"/>
+  <Ecore:EClass xmi:id="_S4iSxOyGEeGTq5iwfcrWEw" base_Class="_pZDcMKlEEeGC1bRFR6-SQw">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.3.75' constraints.validation.error='InfluenzaTherapeuticRegimenActTemplateId' constraints.validation.warning='InfluenzaTherapeuticRegimenActInfluenzaTreatmentGivenSubstanceAdministration' constraints.validation.info='InfluenzaTherapeuticRegimenActInfluenzaTreatmentNotGivenSubstanceAdministration'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_S4iSxeyGEeGTq5iwfcrWEw" base_Generalization="_HR30IKlHEeGC1bRFR6-SQw"/>
+  <Ecore:EClass xmi:id="_S4iSyOyGEeGTq5iwfcrWEw" base_Class="_HR3NEKlHEeGC1bRFR6-SQw">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.3.79' constraints.validation.error='InfluenzaTreatmentGivenSubstanceAdministrationTemplateId'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_S4sDwOyGEeGTq5iwfcrWEw" base_Generalization="_t2AL0alIEeGC1bRFR6-SQw"/>
+  <Ecore:EClass xmi:id="_S4sDw-yGEeGTq5iwfcrWEw" base_Class="_t2AL0KlIEeGC1bRFR6-SQw">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.3.80' constraints.validation.error='InfluenzaTreatmentNotGivenSubstanceAdministrationTemplateId'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_S4sDy-yGEeGTq5iwfcrWEw" base_Generalization="_DHN0wKlLEeGC1bRFR6-SQw"/>
+  <Ecore:EClass xmi:id="_S41NsOyGEeGTq5iwfcrWEw" base_Class="_DHNNsKlLEeGC1bRFR6-SQw">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation interpretationCode.codeSystemName='SNOMEDCT' code.codeSystem='2.16.840.1.113883.6.1' templateId.root='2.16.840.1.113883.10.20.15.3.81' constraints.validation.error='InfluenzaResultObservationTemplateId ResultObservationCode' code.codeSystemName='LOINC' constraints.validation.warning='InfluenzaResultObservationInterpretationCode' interpretationCode.codeSystem='2.16.840.1.113883.6.96'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_S5IIoOyGEeGTq5iwfcrWEw" base_Class="_dH6K8KlVEeGC1bRFR6-SQw">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation value.codeSystemName='SNOMEDCT' code.codeSystem='2.16.840.1.113883.5.6' templateId.root='2.16.840.1.113883.10.20.15.3.84' constraints.validation.error='InfluenzaEmploymentStatusObservationTemplateId InfluenzaEmploymentStatusObservationCode InfluenzaEmploymentStatusObservationValue' code.codeSystemName='HL7ActClass' classCode='OBS' code.code='ASSERTION' moodCode='EVN' value.codeSystem='2.16.840.1.113883.6.96'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_S5R5oOyGEeGTq5iwfcrWEw" base_Generalization="_O9RRwK6mEeGvorhCWvMgmA"/>
+  <Ecore:EClass xmi:id="_S5R5pOyGEeGTq5iwfcrWEw" base_Class="_O9PckK6mEeGvorhCWvMgmA">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.3.83' constraints.validation.error='InfluenzaImagingObservationTemplateId' constraints.validation.info='InfluenzaImagingObservationMethodCode'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_S5k0l-yGEeGTq5iwfcrWEw" base_Class="_Knig8KPMEeGdKsw0tXkvXQ">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation templateId.root='2.16.840.1.113883.10.20.15.2.49' constraints.validation.error='InfluenzaPHCRSocialHistorySectionTemplateId InfluenzaPHCRSocialHistorySectionInfluenzaEmploymentStatusObservation' constraints.validation.warning='InfluenzaPHCRSocialHistorySectionInfluenzaEmploymentStatusObservation InfluenzaPHCRSocialHistorySectionInfluenzaPossibleExposureLocationAct'</annotation>
+  </Ecore:EClass>
+  <Ecore:EClass xmi:id="_S5k0n-yGEeGTq5iwfcrWEw" base_Class="_5QzxwMEvEeG-Z92mbpCVHw">
+    <annotation>http://www.openhealthtools.org/mdht/uml/cda/annotation statusCode.code='completed' code.codeSystem='2.16.840.1.113883.6.96' templateId.root='2.16.840.1.113883.10.20.15.3.82' constraints.validation.error='InfluenzaPossibleExposureLocationActTemplateId InfluenzaPossibleExposureLocationActCode InfluenzaPossibleExposureLocationActStatusCode' code.codeSystemName='SNOMEDCT' classCode='ACT' code.code='413350009' moodCode='EVN'</annotation>
+  </Ecore:EClass>
+  <CDA:ConformsTo xmi:id="_S54WkOyGEeGTq5iwfcrWEw" base_Generalization="_KnjIAKPMEeGdKsw0tXkvXQ"/>
+</xmi:XMI>

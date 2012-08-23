@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:genmodel="http://www.eclipse.org/uml2/2.2.0/GenModel" modelDirectory="org.openhealthtools.mdht.uml.cda.phcr.flu/src"
+    editDirectory="/org.openhealthtools.mdht.uml.cda.phcr.flu.edit/src" editorDirectory="/org.openhealthtools.mdht.uml.cda.phcr.flu.editor/src"
+    modelPluginID="org.openhealthtools.mdht.uml.cda.phcr.flu" templateDirectory="/org.openhealthtools.mdht.uml.cda/templates"
+    dynamicTemplates="true" modelName="flu_Ecore" modelPluginClass="FluPlugin" editPluginClass="org.openhealthtools.mdht.uml.cda.phcr.flu.provider.flu_EcoreEditPlugin"
+    editorPluginClass="org.openhealthtools.mdht.uml.cda.phcr.flu.presentation.flu_EcoreEditorPlugin"
+    importerID="org.eclipse.uml2.uml.ecore.importer" complianceLevel="5.0" copyrightFields="false"
+    editPluginID="org.openhealthtools.mdht.uml.phcr.cda.flu.edit" editorPluginID="org.openhealthtools.mdht.uml.cda.phcr.flu.editor"
+    runtimeVersion="2.5" usedGenPackages="platform:/plugin/org.openhealthtools.mdht.uml.cda.ccd/model/ccd.genmodel#//ccd platform:/plugin/org.openhealthtools.mdht.uml.hl7.rim/model/rim.genmodel#//rim platform:/plugin/org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore ../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.genmodel#//vocab platform:/plugin/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.genmodel#//datatypes platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.genmodel#//cda ../../org.openhealthtools.mdht.uml.cda.phcr/model/phcr.genmodel#//phcr"
+    pluralizedGetters="true" invariantPrefix="validate">
+  <genAnnotations source="http://www.eclipse.org/emf/2002/GenModel/importer/org.eclipse.uml2.uml.ecore.importer">
+    <details key="ECORE_TAGGED_VALUES" value="PROCESS"/>
+    <details key="UNION_PROPERTIES" value="PROCESS"/>
+    <details key="DUPLICATE_FEATURES" value="PROCESS"/>
+    <details key="SUBSETTING_PROPERTIES" value="PROCESS"/>
+    <details key="COMMENTS" value="PROCESS"/>
+    <details key="DUPLICATE_FEATURE_INHERITANCE" value="PROCESS"/>
+    <details key="DUPLICATE_OPERATIONS" value="PROCESS"/>
+    <details key="INVARIANT_CONSTRAINTS" value="PROCESS"/>
+    <details key="REDEFINING_PROPERTIES" value="PROCESS"/>
+    <details key="ANNOTATION_DETAILS" value="PROCESS"/>
+    <details key="DUPLICATE_OPERATION_INHERITANCE" value="PROCESS"/>
+    <details key="REDEFINING_OPERATIONS" value="PROCESS"/>
+    <details key="DERIVED_FEATURES" value="IGNORE"/>
+    <details key="OPERATION_BODIES" value="PROCESS"/>
+    <details key="CAMEL_CASE_NAMES" value="IGNORE"/>
+    <details key="SUPER_CLASS_ORDER" value="PROCESS"/>
+  </genAnnotations>
+  <foreignModel>flu_Ecore.uml</foreignModel>
+  <genPackages xsi:type="genmodel:GenPackage" prefix="flu" basePackage="org.openhealthtools.mdht.uml.cda.phcr"
+      resource="XML" disposableProviderFactory="true" ecorePackage="flu.ecore#/" operationsPackage="org.openhealthtools.mdht.uml.cda.phcr.flu.operations">
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="flu.ecore#//InfluenzaCaseReport">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="flu.ecore#//InfluenzaCaseReport/InfluenzaCaseReportTitle">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="flu.ecore#//InfluenzaCaseReport/InfluenzaCaseReportTitle/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="flu.ecore#//InfluenzaCaseReport/InfluenzaCaseReportTitle/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="flu.ecore#//InfluenzaCaseReport/InfluenzaCaseReportInfluenzaImmunizationSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="flu.ecore#//InfluenzaCaseReport/InfluenzaCaseReportInfluenzaImmunizationSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="flu.ecore#//InfluenzaCaseReport/InfluenzaCaseReportInfluenzaImmunizationSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="flu.ecore#//InfluenzaCaseReport/InfluenzaCaseReportInfluenzaPHCRClinicalInformationSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="flu.ecore#//InfluenzaCaseReport/InfluenzaCaseReportInfluenzaPHCRClinicalInformationSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="flu.ecore#//InfluenzaCaseReport/InfluenzaCaseReportInfluenzaPHCRClinicalInformationSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="flu.ecore#//InfluenzaCaseReport/InfluenzaCaseReportInfluenzaPHCRTreatmentInformationSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="flu.ecore#//InfluenzaCaseReport/InfluenzaCaseReportInfluenzaPHCRTreatmentInformationSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="flu.ecore#//InfluenzaCaseReport/InfluenzaCaseReportInfluenzaPHCRTreatmentInformationSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="flu.ecore#//InfluenzaCaseReport/InfluenzaCaseReportInfluenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="flu.ecore#//InfluenzaCaseReport/InfluenzaCaseReportInfluenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="flu.ecore#//InfluenzaCaseReport/InfluenzaCaseReportInfluenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="flu.ecore#//InfluenzaCaseReport/InfluenzaCaseReportInfluenzaPHCRSocialHistorySection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="flu.ecore#//InfluenzaCaseReport/InfluenzaCaseReportInfluenzaPHCRSocialHistorySection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="flu.ecore#//InfluenzaCaseReport/InfluenzaCaseReportInfluenzaPHCRSocialHistorySection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="flu.ecore#//InfluenzaCaseReport/getInfluenzaImmunizationSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="flu.ecore#//InfluenzaCaseReport/getInfluenzaPHCRClinicalInformationSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="flu.ecore#//InfluenzaCaseReport/getInfluenzaPHCRTreatmentInformationSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="flu.ecore#//InfluenzaCaseReport/getInfluenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="flu.ecore#//InfluenzaCaseReport/getInfluenzaPHCRSocialHistorySection"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="flu.ecore#//InfluenzaImmunizationSection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="flu.ecore#//InfluenzaImmunizationSection/InfluenzaImmunizationSectionInfluenzaImmunizationActivity">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="flu.ecore#//InfluenzaImmunizationSection/InfluenzaImmunizationSectionInfluenzaImmunizationActivity/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="flu.ecore#//InfluenzaImmunizationSection/InfluenzaImmunizationSectionInfluenzaImmunizationActivity/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="flu.ecore#//InfluenzaImmunizationSection/getInfluenzaImmunizationActivities"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="flu.ecore#//InfluenzaImmunizationActivity"/>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="flu.ecore#//InfluenzaPHCRClinicalInformationSection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="flu.ecore#//InfluenzaPHCRClinicalInformationSection/InfluenzaPHCRClinicalInformationSectionInfluenzaCaseObservation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="flu.ecore#//InfluenzaPHCRClinicalInformationSection/InfluenzaPHCRClinicalInformationSectionInfluenzaCaseObservation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="flu.ecore#//InfluenzaPHCRClinicalInformationSection/InfluenzaPHCRClinicalInformationSectionInfluenzaCaseObservation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="flu.ecore#//InfluenzaPHCRClinicalInformationSection/getInfluenzaCaseObservation"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="flu.ecore#//InfluenzaCaseObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="flu.ecore#//InfluenzaCaseObservation/InfluenzaCaseObservationInfluenzaSignsAndSymptomsObservation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="flu.ecore#//InfluenzaCaseObservation/InfluenzaCaseObservationInfluenzaSignsAndSymptomsObservation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="flu.ecore#//InfluenzaCaseObservation/InfluenzaCaseObservationInfluenzaSignsAndSymptomsObservation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="flu.ecore#//InfluenzaCaseObservation/getInfluenzaSignsAndSymptomsObservations"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="flu.ecore#//InfluenzaSignsAndSymptomsObservation"/>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="flu.ecore#//InfluenzaPHCRTreatmentInformationSection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="flu.ecore#//InfluenzaPHCRTreatmentInformationSection/InfluenzaPHCRTreatmentInformationSectionInfluenzaTherapeuticRegimenAct">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="flu.ecore#//InfluenzaPHCRTreatmentInformationSection/InfluenzaPHCRTreatmentInformationSectionInfluenzaTherapeuticRegimenAct/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="flu.ecore#//InfluenzaPHCRTreatmentInformationSection/InfluenzaPHCRTreatmentInformationSectionInfluenzaTherapeuticRegimenAct/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="flu.ecore#//InfluenzaPHCRTreatmentInformationSection/getInfluenzaTherapeuticRegimenAct"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="flu.ecore#//InfluenzaTherapeuticRegimenAct">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="flu.ecore#//InfluenzaTherapeuticRegimenAct/InfluenzaTherapeuticRegimenActInfluenzaTreatmentGivenSubstanceAdministration">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="flu.ecore#//InfluenzaTherapeuticRegimenAct/InfluenzaTherapeuticRegimenActInfluenzaTreatmentGivenSubstanceAdministration/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="flu.ecore#//InfluenzaTherapeuticRegimenAct/InfluenzaTherapeuticRegimenActInfluenzaTreatmentGivenSubstanceAdministration/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="flu.ecore#//InfluenzaTherapeuticRegimenAct/InfluenzaTherapeuticRegimenActInfluenzaTreatmentNotGivenSubstanceAdministration">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="flu.ecore#//InfluenzaTherapeuticRegimenAct/InfluenzaTherapeuticRegimenActInfluenzaTreatmentNotGivenSubstanceAdministration/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="flu.ecore#//InfluenzaTherapeuticRegimenAct/InfluenzaTherapeuticRegimenActInfluenzaTreatmentNotGivenSubstanceAdministration/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="flu.ecore#//InfluenzaTherapeuticRegimenAct/getInfluenzaTreatmentGivenSubstanceAdministrations"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="flu.ecore#//InfluenzaTherapeuticRegimenAct/getInfluenzaTreatmentNotGivenSubstanceAdministrations"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="flu.ecore#//InfluenzaTreatmentGivenSubstanceAdministration"/>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="flu.ecore#//InfluenzaTreatmentNotGivenSubstanceAdministration"/>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="flu.ecore#//InfluenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="flu.ecore#//InfluenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection/InfluenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSectionInfluenzaResultObservation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="flu.ecore#//InfluenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection/InfluenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSectionInfluenzaResultObservation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="flu.ecore#//InfluenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection/InfluenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSectionInfluenzaResultObservation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="flu.ecore#//InfluenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection/InfluenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSectionInfluenzaImagingObservation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="flu.ecore#//InfluenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection/InfluenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSectionInfluenzaImagingObservation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="flu.ecore#//InfluenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection/InfluenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSectionInfluenzaImagingObservation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="flu.ecore#//InfluenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection/getInfluenzaResultObservations"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="flu.ecore#//InfluenzaPHCRRelevantDiagnosticTestsAndOrLaboratoryDataSection/getInfluenzaImagingObservations"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="flu.ecore#//InfluenzaResultObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="flu.ecore#//InfluenzaResultObservation/InfluenzaResultObservationInterpretationCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="flu.ecore#//InfluenzaResultObservation/InfluenzaResultObservationInterpretationCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="flu.ecore#//InfluenzaResultObservation/InfluenzaResultObservationInterpretationCode/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="flu.ecore#//InfluenzaImagingObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="flu.ecore#//InfluenzaImagingObservation/InfluenzaImagingObservationMethodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="flu.ecore#//InfluenzaImagingObservation/InfluenzaImagingObservationMethodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="flu.ecore#//InfluenzaImagingObservation/InfluenzaImagingObservationMethodCode/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="flu.ecore#//InfluenzaPHCRSocialHistorySection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="flu.ecore#//InfluenzaPHCRSocialHistorySection/InfluenzaPHCRSocialHistorySectionInfluenzaEmploymentStatusObservation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="flu.ecore#//InfluenzaPHCRSocialHistorySection/InfluenzaPHCRSocialHistorySectionInfluenzaEmploymentStatusObservation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="flu.ecore#//InfluenzaPHCRSocialHistorySection/InfluenzaPHCRSocialHistorySectionInfluenzaEmploymentStatusObservation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="flu.ecore#//InfluenzaPHCRSocialHistorySection/InfluenzaPHCRSocialHistorySectionInfluenzaPossibleExposureLocationAct">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="flu.ecore#//InfluenzaPHCRSocialHistorySection/InfluenzaPHCRSocialHistorySectionInfluenzaPossibleExposureLocationAct/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="flu.ecore#//InfluenzaPHCRSocialHistorySection/InfluenzaPHCRSocialHistorySectionInfluenzaPossibleExposureLocationAct/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="flu.ecore#//InfluenzaPHCRSocialHistorySection/getInfluenzaEmploymentStatusObservation"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="flu.ecore#//InfluenzaPHCRSocialHistorySection/getInfluenzaPossibleExposureLocationActs"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="flu.ecore#//InfluenzaEmploymentStatusObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="flu.ecore#//InfluenzaEmploymentStatusObservation/InfluenzaEmploymentStatusObservationTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="flu.ecore#//InfluenzaEmploymentStatusObservation/InfluenzaEmploymentStatusObservationTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="flu.ecore#//InfluenzaEmploymentStatusObservation/InfluenzaEmploymentStatusObservationTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="flu.ecore#//InfluenzaEmploymentStatusObservation/InfluenzaEmploymentStatusObservationCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="flu.ecore#//InfluenzaEmploymentStatusObservation/InfluenzaEmploymentStatusObservationCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="flu.ecore#//InfluenzaEmploymentStatusObservation/InfluenzaEmploymentStatusObservationCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="flu.ecore#//InfluenzaEmploymentStatusObservation/InfluenzaEmploymentStatusObservationValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="flu.ecore#//InfluenzaEmploymentStatusObservation/InfluenzaEmploymentStatusObservationValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="flu.ecore#//InfluenzaEmploymentStatusObservation/InfluenzaEmploymentStatusObservationValue/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="flu.ecore#//InfluenzaPossibleExposureLocationAct">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="flu.ecore#//InfluenzaPossibleExposureLocationAct/InfluenzaPossibleExposureLocationActTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="flu.ecore#//InfluenzaPossibleExposureLocationAct/InfluenzaPossibleExposureLocationActTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="flu.ecore#//InfluenzaPossibleExposureLocationAct/InfluenzaPossibleExposureLocationActTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="flu.ecore#//InfluenzaPossibleExposureLocationAct/InfluenzaPossibleExposureLocationActCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="flu.ecore#//InfluenzaPossibleExposureLocationAct/InfluenzaPossibleExposureLocationActCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="flu.ecore#//InfluenzaPossibleExposureLocationAct/InfluenzaPossibleExposureLocationActCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="flu.ecore#//InfluenzaPossibleExposureLocationAct/InfluenzaPossibleExposureLocationActStatusCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="flu.ecore#//InfluenzaPossibleExposureLocationAct/InfluenzaPossibleExposureLocationActStatusCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="flu.ecore#//InfluenzaPossibleExposureLocationAct/InfluenzaPossibleExposureLocationActStatusCode/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="flu.ecore#//InfluenzaImmunizationProduct"/>
+  </genPackages>
+</genmodel:GenModel>
