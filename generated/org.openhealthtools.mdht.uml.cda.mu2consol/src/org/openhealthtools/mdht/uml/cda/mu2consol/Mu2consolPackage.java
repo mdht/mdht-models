@@ -9,7 +9,6 @@ package org.openhealthtools.mdht.uml.cda.mu2consol;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
 
-import org.openhealthtools.mdht.uml.cda.CDAPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 
 /**
@@ -73,7 +72,7 @@ public interface Mu2consolPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int GENERAL_HEADER_CONSTRAINTS__REALM_CODE = CDAPackage.CLINICAL_DOCUMENT__REALM_CODE;
+	int GENERAL_HEADER_CONSTRAINTS__REALM_CODE = ConsolPackage.GENERAL_HEADER_CONSTRAINTS__REALM_CODE;
 
 	/**
      * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -81,7 +80,7 @@ public interface Mu2consolPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int GENERAL_HEADER_CONSTRAINTS__TYPE_ID = CDAPackage.CLINICAL_DOCUMENT__TYPE_ID;
+	int GENERAL_HEADER_CONSTRAINTS__TYPE_ID = ConsolPackage.GENERAL_HEADER_CONSTRAINTS__TYPE_ID;
 
 	/**
      * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -89,7 +88,7 @@ public interface Mu2consolPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int GENERAL_HEADER_CONSTRAINTS__TEMPLATE_ID = CDAPackage.CLINICAL_DOCUMENT__TEMPLATE_ID;
+	int GENERAL_HEADER_CONSTRAINTS__TEMPLATE_ID = ConsolPackage.GENERAL_HEADER_CONSTRAINTS__TEMPLATE_ID;
 
 	/**
 	 * The feature id for the '<em><b>Id</b></em>' containment reference. <!--
@@ -98,7 +97,7 @@ public interface Mu2consolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GENERAL_HEADER_CONSTRAINTS__ID = CDAPackage.CLINICAL_DOCUMENT__ID;
+	int GENERAL_HEADER_CONSTRAINTS__ID = ConsolPackage.GENERAL_HEADER_CONSTRAINTS__ID;
 
 	/**
 	 * The feature id for the '<em><b>Code</b></em>' containment reference. <!--
@@ -107,7 +106,7 @@ public interface Mu2consolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GENERAL_HEADER_CONSTRAINTS__CODE = CDAPackage.CLINICAL_DOCUMENT__CODE;
+	int GENERAL_HEADER_CONSTRAINTS__CODE = ConsolPackage.GENERAL_HEADER_CONSTRAINTS__CODE;
 
 	/**
      * The feature id for the '<em><b>Title</b></em>' containment reference.
@@ -115,7 +114,7 @@ public interface Mu2consolPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int GENERAL_HEADER_CONSTRAINTS__TITLE = CDAPackage.CLINICAL_DOCUMENT__TITLE;
+	int GENERAL_HEADER_CONSTRAINTS__TITLE = ConsolPackage.GENERAL_HEADER_CONSTRAINTS__TITLE;
 
 	/**
      * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
@@ -123,7 +122,7 @@ public interface Mu2consolPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int GENERAL_HEADER_CONSTRAINTS__EFFECTIVE_TIME = CDAPackage.CLINICAL_DOCUMENT__EFFECTIVE_TIME;
+	int GENERAL_HEADER_CONSTRAINTS__EFFECTIVE_TIME = ConsolPackage.GENERAL_HEADER_CONSTRAINTS__EFFECTIVE_TIME;
 
 	/**
      * The feature id for the '<em><b>Confidentiality Code</b></em>' containment reference.
@@ -131,7 +130,7 @@ public interface Mu2consolPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int GENERAL_HEADER_CONSTRAINTS__CONFIDENTIALITY_CODE = CDAPackage.CLINICAL_DOCUMENT__CONFIDENTIALITY_CODE;
+	int GENERAL_HEADER_CONSTRAINTS__CONFIDENTIALITY_CODE = ConsolPackage.GENERAL_HEADER_CONSTRAINTS__CONFIDENTIALITY_CODE;
 
 	/**
      * The feature id for the '<em><b>Language Code</b></em>' containment reference.
@@ -139,7 +138,7 @@ public interface Mu2consolPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int GENERAL_HEADER_CONSTRAINTS__LANGUAGE_CODE = CDAPackage.CLINICAL_DOCUMENT__LANGUAGE_CODE;
+	int GENERAL_HEADER_CONSTRAINTS__LANGUAGE_CODE = ConsolPackage.GENERAL_HEADER_CONSTRAINTS__LANGUAGE_CODE;
 
 	/**
      * The feature id for the '<em><b>Set Id</b></em>' containment reference.
@@ -147,7 +146,7 @@ public interface Mu2consolPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int GENERAL_HEADER_CONSTRAINTS__SET_ID = CDAPackage.CLINICAL_DOCUMENT__SET_ID;
+	int GENERAL_HEADER_CONSTRAINTS__SET_ID = ConsolPackage.GENERAL_HEADER_CONSTRAINTS__SET_ID;
 
 	/**
      * The feature id for the '<em><b>Version Number</b></em>' containment reference.
@@ -155,7 +154,7 @@ public interface Mu2consolPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int GENERAL_HEADER_CONSTRAINTS__VERSION_NUMBER = CDAPackage.CLINICAL_DOCUMENT__VERSION_NUMBER;
+	int GENERAL_HEADER_CONSTRAINTS__VERSION_NUMBER = ConsolPackage.GENERAL_HEADER_CONSTRAINTS__VERSION_NUMBER;
 
 	/**
      * The feature id for the '<em><b>Copy Time</b></em>' containment reference.
@@ -163,7 +162,7 @@ public interface Mu2consolPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int GENERAL_HEADER_CONSTRAINTS__COPY_TIME = CDAPackage.CLINICAL_DOCUMENT__COPY_TIME;
+	int GENERAL_HEADER_CONSTRAINTS__COPY_TIME = ConsolPackage.GENERAL_HEADER_CONSTRAINTS__COPY_TIME;
 
 	/**
      * The feature id for the '<em><b>Record Target</b></em>' containment reference list.
@@ -171,7 +170,7 @@ public interface Mu2consolPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int GENERAL_HEADER_CONSTRAINTS__RECORD_TARGET = CDAPackage.CLINICAL_DOCUMENT__RECORD_TARGET;
+	int GENERAL_HEADER_CONSTRAINTS__RECORD_TARGET = ConsolPackage.GENERAL_HEADER_CONSTRAINTS__RECORD_TARGET;
 
 	/**
      * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -179,7 +178,7 @@ public interface Mu2consolPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int GENERAL_HEADER_CONSTRAINTS__AUTHOR = CDAPackage.CLINICAL_DOCUMENT__AUTHOR;
+	int GENERAL_HEADER_CONSTRAINTS__AUTHOR = ConsolPackage.GENERAL_HEADER_CONSTRAINTS__AUTHOR;
 
 	/**
      * The feature id for the '<em><b>Data Enterer</b></em>' containment reference.
@@ -187,7 +186,7 @@ public interface Mu2consolPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int GENERAL_HEADER_CONSTRAINTS__DATA_ENTERER = CDAPackage.CLINICAL_DOCUMENT__DATA_ENTERER;
+	int GENERAL_HEADER_CONSTRAINTS__DATA_ENTERER = ConsolPackage.GENERAL_HEADER_CONSTRAINTS__DATA_ENTERER;
 
 	/**
      * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -195,7 +194,7 @@ public interface Mu2consolPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int GENERAL_HEADER_CONSTRAINTS__INFORMANT = CDAPackage.CLINICAL_DOCUMENT__INFORMANT;
+	int GENERAL_HEADER_CONSTRAINTS__INFORMANT = ConsolPackage.GENERAL_HEADER_CONSTRAINTS__INFORMANT;
 
 	/**
      * The feature id for the '<em><b>Custodian</b></em>' containment reference.
@@ -203,7 +202,7 @@ public interface Mu2consolPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int GENERAL_HEADER_CONSTRAINTS__CUSTODIAN = CDAPackage.CLINICAL_DOCUMENT__CUSTODIAN;
+	int GENERAL_HEADER_CONSTRAINTS__CUSTODIAN = ConsolPackage.GENERAL_HEADER_CONSTRAINTS__CUSTODIAN;
 
 	/**
      * The feature id for the '<em><b>Information Recipient</b></em>' containment reference list.
@@ -211,7 +210,7 @@ public interface Mu2consolPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int GENERAL_HEADER_CONSTRAINTS__INFORMATION_RECIPIENT = CDAPackage.CLINICAL_DOCUMENT__INFORMATION_RECIPIENT;
+	int GENERAL_HEADER_CONSTRAINTS__INFORMATION_RECIPIENT = ConsolPackage.GENERAL_HEADER_CONSTRAINTS__INFORMATION_RECIPIENT;
 
 	/**
      * The feature id for the '<em><b>Legal Authenticator</b></em>' containment reference.
@@ -219,7 +218,7 @@ public interface Mu2consolPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int GENERAL_HEADER_CONSTRAINTS__LEGAL_AUTHENTICATOR = CDAPackage.CLINICAL_DOCUMENT__LEGAL_AUTHENTICATOR;
+	int GENERAL_HEADER_CONSTRAINTS__LEGAL_AUTHENTICATOR = ConsolPackage.GENERAL_HEADER_CONSTRAINTS__LEGAL_AUTHENTICATOR;
 
 	/**
      * The feature id for the '<em><b>Authenticator</b></em>' containment reference list.
@@ -227,7 +226,7 @@ public interface Mu2consolPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int GENERAL_HEADER_CONSTRAINTS__AUTHENTICATOR = CDAPackage.CLINICAL_DOCUMENT__AUTHENTICATOR;
+	int GENERAL_HEADER_CONSTRAINTS__AUTHENTICATOR = ConsolPackage.GENERAL_HEADER_CONSTRAINTS__AUTHENTICATOR;
 
 	/**
      * The feature id for the '<em><b>Participant</b></em>' containment reference list.
@@ -235,7 +234,7 @@ public interface Mu2consolPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int GENERAL_HEADER_CONSTRAINTS__PARTICIPANT = CDAPackage.CLINICAL_DOCUMENT__PARTICIPANT;
+	int GENERAL_HEADER_CONSTRAINTS__PARTICIPANT = ConsolPackage.GENERAL_HEADER_CONSTRAINTS__PARTICIPANT;
 
 	/**
      * The feature id for the '<em><b>In Fulfillment Of</b></em>' containment reference list.
@@ -243,7 +242,7 @@ public interface Mu2consolPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int GENERAL_HEADER_CONSTRAINTS__IN_FULFILLMENT_OF = CDAPackage.CLINICAL_DOCUMENT__IN_FULFILLMENT_OF;
+	int GENERAL_HEADER_CONSTRAINTS__IN_FULFILLMENT_OF = ConsolPackage.GENERAL_HEADER_CONSTRAINTS__IN_FULFILLMENT_OF;
 
 	/**
      * The feature id for the '<em><b>Documentation Of</b></em>' containment reference list.
@@ -251,7 +250,7 @@ public interface Mu2consolPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int GENERAL_HEADER_CONSTRAINTS__DOCUMENTATION_OF = CDAPackage.CLINICAL_DOCUMENT__DOCUMENTATION_OF;
+	int GENERAL_HEADER_CONSTRAINTS__DOCUMENTATION_OF = ConsolPackage.GENERAL_HEADER_CONSTRAINTS__DOCUMENTATION_OF;
 
 	/**
      * The feature id for the '<em><b>Related Document</b></em>' containment reference list.
@@ -259,7 +258,7 @@ public interface Mu2consolPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int GENERAL_HEADER_CONSTRAINTS__RELATED_DOCUMENT = CDAPackage.CLINICAL_DOCUMENT__RELATED_DOCUMENT;
+	int GENERAL_HEADER_CONSTRAINTS__RELATED_DOCUMENT = ConsolPackage.GENERAL_HEADER_CONSTRAINTS__RELATED_DOCUMENT;
 
 	/**
      * The feature id for the '<em><b>Authorization</b></em>' containment reference list.
@@ -267,7 +266,7 @@ public interface Mu2consolPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int GENERAL_HEADER_CONSTRAINTS__AUTHORIZATION = CDAPackage.CLINICAL_DOCUMENT__AUTHORIZATION;
+	int GENERAL_HEADER_CONSTRAINTS__AUTHORIZATION = ConsolPackage.GENERAL_HEADER_CONSTRAINTS__AUTHORIZATION;
 
 	/**
      * The feature id for the '<em><b>Component Of</b></em>' containment reference.
@@ -275,7 +274,7 @@ public interface Mu2consolPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int GENERAL_HEADER_CONSTRAINTS__COMPONENT_OF = CDAPackage.CLINICAL_DOCUMENT__COMPONENT_OF;
+	int GENERAL_HEADER_CONSTRAINTS__COMPONENT_OF = ConsolPackage.GENERAL_HEADER_CONSTRAINTS__COMPONENT_OF;
 
 	/**
      * The feature id for the '<em><b>Component</b></em>' containment reference.
@@ -283,7 +282,7 @@ public interface Mu2consolPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int GENERAL_HEADER_CONSTRAINTS__COMPONENT = CDAPackage.CLINICAL_DOCUMENT__COMPONENT;
+	int GENERAL_HEADER_CONSTRAINTS__COMPONENT = ConsolPackage.GENERAL_HEADER_CONSTRAINTS__COMPONENT;
 
 	/**
 	 * The feature id for the '<em><b>Null Flavor</b></em>' attribute. <!--
@@ -292,7 +291,7 @@ public interface Mu2consolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GENERAL_HEADER_CONSTRAINTS__NULL_FLAVOR = CDAPackage.CLINICAL_DOCUMENT__NULL_FLAVOR;
+	int GENERAL_HEADER_CONSTRAINTS__NULL_FLAVOR = ConsolPackage.GENERAL_HEADER_CONSTRAINTS__NULL_FLAVOR;
 
 	/**
 	 * The feature id for the '<em><b>Class Code</b></em>' attribute. <!--
@@ -301,7 +300,7 @@ public interface Mu2consolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GENERAL_HEADER_CONSTRAINTS__CLASS_CODE = CDAPackage.CLINICAL_DOCUMENT__CLASS_CODE;
+	int GENERAL_HEADER_CONSTRAINTS__CLASS_CODE = ConsolPackage.GENERAL_HEADER_CONSTRAINTS__CLASS_CODE;
 
 	/**
 	 * The feature id for the '<em><b>Mood Code</b></em>' attribute. <!--
@@ -310,7 +309,7 @@ public interface Mu2consolPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GENERAL_HEADER_CONSTRAINTS__MOOD_CODE = CDAPackage.CLINICAL_DOCUMENT__MOOD_CODE;
+	int GENERAL_HEADER_CONSTRAINTS__MOOD_CODE = ConsolPackage.GENERAL_HEADER_CONSTRAINTS__MOOD_CODE;
 
 	/**
      * The number of structural features of the '<em>General Header Constraints</em>' class.
@@ -319,7 +318,7 @@ public interface Mu2consolPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int GENERAL_HEADER_CONSTRAINTS_FEATURE_COUNT = CDAPackage.CLINICAL_DOCUMENT_FEATURE_COUNT + 0;
+	int GENERAL_HEADER_CONSTRAINTS_FEATURE_COUNT = ConsolPackage.GENERAL_HEADER_CONSTRAINTS_FEATURE_COUNT + 0;
 
 	/**
      * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.mu2consol.impl.SummaryOfCareRecordImpl <em>Summary Of Care Record</em>}' class.

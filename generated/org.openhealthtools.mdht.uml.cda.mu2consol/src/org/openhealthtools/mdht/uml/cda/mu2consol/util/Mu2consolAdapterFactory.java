@@ -152,6 +152,10 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 				return createClinicalDocumentAdapter();
 			}
 			@Override
+			public Adapter caseConsol_GeneralHeaderConstraints(org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraints object) {
+				return createConsol_GeneralHeaderConstraintsAdapter();
+			}
+			@Override
 			public Adapter caseSection(Section object) {
 				return createSectionAdapter();
 			}
@@ -476,6 +480,20 @@ public class Mu2consolAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createClinicalDocumentAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraints <em>General Header Constraints</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraints
+	 * @generated
+	 */
+	public Adapter createConsol_GeneralHeaderConstraintsAdapter() {
 		return null;
 	}
 

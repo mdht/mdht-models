@@ -13,7 +13,6 @@ import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EValidator;
 import org.eclipse.emf.ecore.impl.EPackageImpl;
 import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-import org.openhealthtools.mdht.uml.cda.CDAPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.mu2consol.AllergiesSectionEntriesOptional;
 import org.openhealthtools.mdht.uml.cda.mu2consol.AssessmentAndPlanForCarePlanning;
@@ -428,7 +427,6 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
         setNsURI(eNS_URI);
 
         // Obtain other dependent packages
-        CDAPackage theCDAPackage = (CDAPackage)EPackage.Registry.INSTANCE.getEPackage(CDAPackage.eNS_URI);
         ConsolPackage theConsolPackage = (ConsolPackage)EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI);
 
         // Create type parameters
@@ -436,7 +434,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
         // Set bounds for type parameters
 
         // Add supertypes to classes
-        generalHeaderConstraintsEClass.getESuperTypes().add(theCDAPackage.getClinicalDocument());
+        generalHeaderConstraintsEClass.getESuperTypes().add(theConsolPackage.getGeneralHeaderConstraints());
         summaryOfCareRecordEClass.getESuperTypes().add(this.getGeneralHeaderConstraints());
         planOfCareSectionEClass.getESuperTypes().add(theConsolPackage.getPlanOfCareSection());
         assessmentAndPlanSectionEClass.getESuperTypes().add(theConsolPackage.getAssessmentAndPlanSection());
@@ -456,7 +454,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
         // Initialize classes and features; add operations and parameters
         initEClass(generalHeaderConstraintsEClass, GeneralHeaderConstraints.class, "GeneralHeaderConstraints", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-        EOperation op = addEOperation(generalHeaderConstraintsEClass, ecorePackage.getEBoolean(), "validateGeneralHeaderConstraintsTemplateId", 0, 1, IS_UNIQUE, IS_ORDERED);
+        EOperation op = addEOperation(generalHeaderConstraintsEClass, ecorePackage.getEBoolean(), "validateMu2consolGeneralHeaderConstraintsRecordTarget", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         EGenericType g1 = createEGenericType(ecorePackage.getEMap());
         EGenericType g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -465,7 +463,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
         g1.getETypeArguments().add(g2);
         addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-        op = addEOperation(generalHeaderConstraintsEClass, ecorePackage.getEBoolean(), "validateGeneralHeaderConstraintsRecordTarget", 0, 1, IS_UNIQUE, IS_ORDERED);
+        op = addEOperation(generalHeaderConstraintsEClass, ecorePackage.getEBoolean(), "validateMu2consolGeneralHeaderConstraintsDocumentationOf", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
         g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -474,7 +472,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
         g1.getETypeArguments().add(g2);
         addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-        op = addEOperation(generalHeaderConstraintsEClass, ecorePackage.getEBoolean(), "validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication", 0, 1, IS_UNIQUE, IS_ORDERED);
+        op = addEOperation(generalHeaderConstraintsEClass, ecorePackage.getEBoolean(), "validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntity", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
         g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -483,7 +481,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
         g1.getETypeArguments().add(g2);
         addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-        op = addEOperation(generalHeaderConstraintsEClass, ecorePackage.getEBoolean(), "validateGeneralHeaderConstraintsRecordTargetPatientRolePatient", 0, 1, IS_UNIQUE, IS_ORDERED);
+        op = addEOperation(generalHeaderConstraintsEClass, ecorePackage.getEBoolean(), "validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
         g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -492,7 +490,16 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
         g1.getETypeArguments().add(g2);
         addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-        op = addEOperation(generalHeaderConstraintsEClass, ecorePackage.getEBoolean(), "validateGeneralHeaderConstraintsRecordTargetPatientRole", 0, 1, IS_UNIQUE, IS_ORDERED);
+        op = addEOperation(generalHeaderConstraintsEClass, ecorePackage.getEBoolean(), "validateGeneralHeaderConstraintsDocumentationOfServiceEvent", 0, 1, IS_UNIQUE, IS_ORDERED);
+        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+        g1 = createEGenericType(ecorePackage.getEMap());
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+        op = addEOperation(generalHeaderConstraintsEClass, ecorePackage.getEBoolean(), "validateGeneralHeaderConstraintsComponent1EncompassingEncounter", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
         g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1016,6 +1023,18 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
         createMu2consolGeneralHeaderConstraintsRecordTargetPatientRoleAnnotations();
         // http://www.openhealthtools.org/mdht/uml/cda/annotation/mu2consolGeneralHeaderConstraintsRecordTargetPatientRolePatient
         createMu2consolGeneralHeaderConstraintsRecordTargetPatientRolePatientAnnotations();
+        // http://www.openhealthtools.org/mdht/uml/cda/annotation/mu2consolGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication
+        createMu2consolGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationAnnotations();
+        // http://www.openhealthtools.org/mdht/uml/cda/annotation/mu2consolGeneralHeaderConstraintsDocumentationOf
+        createMu2consolGeneralHeaderConstraintsDocumentationOfAnnotations();
+        // http://www.openhealthtools.org/mdht/uml/cda/annotation/mu2consolGeneralHeaderConstraintsDocumentationOfServiceEvent
+        createMu2consolGeneralHeaderConstraintsDocumentationOfServiceEventAnnotations();
+        // http://www.openhealthtools.org/mdht/uml/cda/annotation/mu2consolGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1
+        createMu2consolGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1Annotations();
+        // http://www.openhealthtools.org/mdht/uml/cda/annotation/mu2consolGeneralHeaderConstraintsComponent1
+        createMu2consolGeneralHeaderConstraintsComponent1Annotations();
+        // http://www.openhealthtools.org/mdht/uml/cda/annotation/mu2consolGeneralHeaderConstraintsComponent1EncompassingEncounter
+        createMu2consolGeneralHeaderConstraintsComponent1EncompassingEncounterAnnotations();
         // duplicates
         createDuplicatesAnnotations();
     }
@@ -1033,7 +1052,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
            source, 
            new String[] {
              "initializers", "org.openhealthtools.mdht.uml.cda.mu2consol"
-           });                                                                                                                                                                                                                                                                                                                 
+           });                                                                                                                                                                                                                                                                                                                            
     }
 
 	/**
@@ -1049,10 +1068,9 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
           (generalHeaderConstraintsEClass, 
            source, 
            new String[] {
-             "constraints.validation.error", "GeneralHeaderConstraintsTemplateId GeneralHeaderConstraintsRecordTarget GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication GeneralHeaderConstraintsRecordTargetPatientRolePatient GeneralHeaderConstraintsRecordTargetPatientRole",
-             "templateId.root", "2.16.840.1.113883.10.20.22.1.1",
-             "constraints.validation.query", "GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication GeneralHeaderConstraintsRecordTargetPatientRolePatient GeneralHeaderConstraintsRecordTargetPatientRole"
-           });                            
+             "constraints.validation.error", "mu2consolGeneralHeaderConstraintsRecordTarget mu2consolGeneralHeaderConstraintsDocumentationOf GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode GeneralHeaderConstraintsRecordTargetPatientRolePatientName GeneralHeaderConstraintsRecordTargetPatientRolePatientAdministrativeGenderCode GeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode GeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode GeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTime GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication GeneralHeaderConstraintsRecordTargetPatientRolePatient GeneralHeaderConstraintsRecordTargetPatientRole GeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntity GeneralHeaderConstraintsDocumentationOfServiceEventPerformer GeneralHeaderConstraintsDocumentationOfServiceEvent GeneralHeaderConstraintsComponent1EncompassingEncounter",
+             "constraints.validation.query", "GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode GeneralHeaderConstraintsRecordTargetPatientRolePatientName GeneralHeaderConstraintsRecordTargetPatientRolePatientAdministrativeGenderCode GeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode GeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode GeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTime GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication GeneralHeaderConstraintsRecordTargetPatientRolePatient GeneralHeaderConstraintsRecordTargetPatientRole GeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntity GeneralHeaderConstraintsDocumentationOfServiceEventPerformer GeneralHeaderConstraintsDocumentationOfServiceEvent GeneralHeaderConstraintsComponent1EncompassingEncounter"
+           });                                       
         addAnnotation
           (summaryOfCareRecordEClass, 
            source, 
@@ -1151,7 +1169,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
            source, 
            new String[] {
              "constraints.validation.error", "RecordTargetPatientRole"
-           });                                                                                                                                                                                                                                                                                                               
+           });                                                                                                                                                                                                                                                                                                                          
     }
 
 	/**
@@ -1166,7 +1184,7 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
            source, 
            new String[] {
              "constraints.validation.error", "PatientRolePatient"
-           });                                                                                                                                                                                                                                                                                                              
+           });                                                                                                                                                                                                                                                                                                                         
     }
 
 	/**
@@ -1183,8 +1201,104 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
           (generalHeaderConstraintsEClass, 
            source, 
            new String[] {
-             "constraints.validation.error", "PatientLanguageCommunication"
-           });                                                                                                                                                                                                                                                                                                             
+             "constraints.validation.error", "PatientName PatientAdministrativeGenderCode PatientEthnicGroupCode PatientRaceCode PatientBirthTime PatientLanguageCommunication"
+           });                                                                                                                                                                                                                                                                                                                        
+    }
+
+	/**
+     * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/mu2consolGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication</b>.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    protected void createMu2consolGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationAnnotations() {
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/mu2consolGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication";          
+        addAnnotation
+          (generalHeaderConstraintsEClass, 
+           source, 
+           new String[] {
+             "constraints.validation.error", "LanguageCommunicationLanguageCode"
+           });                                                                                                                                                                                                                                                                                                                       
+    }
+
+	/**
+     * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/mu2consolGeneralHeaderConstraintsDocumentationOf</b>.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    protected void createMu2consolGeneralHeaderConstraintsDocumentationOfAnnotations() {
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/mu2consolGeneralHeaderConstraintsDocumentationOf";           
+        addAnnotation
+          (generalHeaderConstraintsEClass, 
+           source, 
+           new String[] {
+             "constraints.validation.error", "DocumentationOfServiceEvent"
+           });                                                                                                                                                                                                                                                                                                                      
+    }
+
+	/**
+     * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/mu2consolGeneralHeaderConstraintsDocumentationOfServiceEvent</b>.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    protected void createMu2consolGeneralHeaderConstraintsDocumentationOfServiceEventAnnotations() {
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/mu2consolGeneralHeaderConstraintsDocumentationOfServiceEvent";            
+        addAnnotation
+          (generalHeaderConstraintsEClass, 
+           source, 
+           new String[] {
+             "constraints.validation.error", "ServiceEventPerformer"
+           });                                                                                                                                                                                                                                                                                                                     
+    }
+
+	/**
+     * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/mu2consolGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1</b>.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    protected void createMu2consolGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1Annotations() {
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/mu2consolGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1";             
+        addAnnotation
+          (generalHeaderConstraintsEClass, 
+           source, 
+           new String[] {
+             "constraints.validation.error", "Performer1AssignedEntity"
+           });                                                                                                                                                                                                                                                                                                                    
+    }
+
+	/**
+     * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/mu2consolGeneralHeaderConstraintsComponent1</b>.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    protected void createMu2consolGeneralHeaderConstraintsComponent1Annotations() {
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/mu2consolGeneralHeaderConstraintsComponent1";              
+        addAnnotation
+          (generalHeaderConstraintsEClass, 
+           source, 
+           new String[] {
+             "constraints.validation.error", "Component1EncompassingEncounter"
+           });                                                                                                                                                                                                                                                                                                                   
+    }
+
+	/**
+     * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation/mu2consolGeneralHeaderConstraintsComponent1EncompassingEncounter</b>.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    protected void createMu2consolGeneralHeaderConstraintsComponent1EncompassingEncounterAnnotations() {
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/mu2consolGeneralHeaderConstraintsComponent1EncompassingEncounter";               
+        addAnnotation
+          (generalHeaderConstraintsEClass, 
+           source, 
+           new String[] {
+             "constraints.validation.error", "EncompassingEncounterEffectiveTime EncompassingEncounterLocation EncompassingEncounterResponsibleParty"
+           });                                                                                                                                                                                                                                                                                                                  
     }
 
 	/**
@@ -1194,7 +1308,12 @@ public class Mu2consolPackageImpl extends EPackageImpl implements
      * @generated
      */
 	protected void createDuplicatesAnnotations() {
-        String source = "duplicates";                               
+        String source = "duplicates";                
+        addAnnotation
+          (generalHeaderConstraintsEClass, 
+           source, 
+           new String[] {
+           });                              
         addAnnotation
           (summaryOfCareRecordEClass, 
            source, 
