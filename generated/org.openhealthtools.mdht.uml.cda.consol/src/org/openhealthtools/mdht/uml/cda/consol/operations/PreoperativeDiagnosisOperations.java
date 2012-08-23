@@ -357,20 +357,20 @@ public class PreoperativeDiagnosisOperations extends ClinicalStatementOperations
 	protected static final String GET_PROBLEM_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProblemObservation)).oclAsType(consol::ProblemObservation)";
 
 	/**
-	 * The cached OCL query for the '{@link #getProblemObservations(PreoperativeDiagnosis) <em>Get Problem Observations</em>}' query operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL query for the '{@link #getProblemObservations(PreoperativeDiagnosis) <em>Get Problem Observations</em>}' query operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getProblemObservations(PreoperativeDiagnosis)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getProblemObservations(PreoperativeDiagnosis)
+	* @generated
+	* @ordered
+	*/
 	protected static OCLExpression<EClassifier> GET_PROBLEM_OBSERVATIONS__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 
 	public static EList<ProblemObservation> getProblemObservations(PreoperativeDiagnosis preoperativeDiagnosis) {
 		if (GET_PROBLEM_OBSERVATIONS__EOCL_QRY == null) {

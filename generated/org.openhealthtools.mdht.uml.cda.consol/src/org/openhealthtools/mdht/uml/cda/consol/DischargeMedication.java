@@ -100,16 +100,16 @@ public interface DischargeMedication extends Act {
 	EList<MedicationActivity> getMedicationActivities();
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public DischargeMedication init();
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public DischargeMedication init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // DischargeMedication

@@ -88,10 +88,10 @@ public class ProceduresSectionEntriesOptionalImpl extends SectionImpl implements
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateProceduresSectionEntriesOptionalTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProceduresSectionEntriesOptionalOperations.validateProceduresSectionEntriesOptionalTitle(
@@ -99,10 +99,10 @@ public class ProceduresSectionEntriesOptionalImpl extends SectionImpl implements
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateProceduresSectionEntriesOptionalText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProceduresSectionEntriesOptionalOperations.validateProceduresSectionEntriesOptionalText(
 			this, diagnostics, context);
@@ -178,10 +178,10 @@ public class ProceduresSectionEntriesOptionalImpl extends SectionImpl implements
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public ProceduresSectionEntriesOptional init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

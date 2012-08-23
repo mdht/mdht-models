@@ -79,10 +79,10 @@ public class DischargeDietSectionImpl extends SectionImpl implements DischargeDi
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateDischargeDietSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DischargeDietSectionOperations.validateDischargeDietSectionTitle(this, diagnostics, context);
 	}
@@ -106,10 +106,10 @@ public class DischargeDietSectionImpl extends SectionImpl implements DischargeDi
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public DischargeDietSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

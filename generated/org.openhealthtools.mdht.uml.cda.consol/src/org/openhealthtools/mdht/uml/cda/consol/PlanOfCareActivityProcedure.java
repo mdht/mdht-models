@@ -85,9 +85,9 @@ public interface PlanOfCareActivityProcedure extends Procedure {
 	public PlanOfCareActivityProcedure init();
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public PlanOfCareActivityProcedure init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PlanOfCareActivityProcedure

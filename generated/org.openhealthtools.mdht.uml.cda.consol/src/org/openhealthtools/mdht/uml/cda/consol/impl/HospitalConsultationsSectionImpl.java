@@ -83,10 +83,10 @@ public class HospitalConsultationsSectionImpl extends SectionImpl implements Hos
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHospitalConsultationsSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HospitalConsultationsSectionOperations.validateHospitalConsultationsSectionText(
 			this, diagnostics, context);
@@ -112,10 +112,10 @@ public class HospitalConsultationsSectionImpl extends SectionImpl implements Hos
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public HospitalConsultationsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

@@ -82,10 +82,10 @@ public class ProcedureDispositionSectionImpl extends SectionImpl implements Proc
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateProcedureDispositionSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureDispositionSectionOperations.validateProcedureDispositionSectionText(this, diagnostics, context);
 	}
@@ -110,10 +110,10 @@ public class ProcedureDispositionSectionImpl extends SectionImpl implements Proc
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public ProcedureDispositionSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

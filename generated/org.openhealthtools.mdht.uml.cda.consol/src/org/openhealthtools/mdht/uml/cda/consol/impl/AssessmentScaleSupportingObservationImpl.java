@@ -36,29 +36,29 @@ import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 public class AssessmentScaleSupportingObservationImpl extends ObservationImpl implements
 		AssessmentScaleSupportingObservation {
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	protected AssessmentScaleSupportingObservationImpl() {
 		super();
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	@Override
 	protected EClass eStaticClass() {
 		return ConsolPackage.Literals.ASSESSMENT_SCALE_SUPPORTING_OBSERVATION;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateAssessmentScaleSupportingObservationCodeCodeSystem(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AssessmentScaleSupportingObservationOperations.validateAssessmentScaleSupportingObservationCodeCodeSystem(
@@ -66,10 +66,10 @@ public class AssessmentScaleSupportingObservationImpl extends ObservationImpl im
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateAssessmentScaleSupportingObservationValueTranslation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AssessmentScaleSupportingObservationOperations.validateAssessmentScaleSupportingObservationValueTranslation(
@@ -77,10 +77,10 @@ public class AssessmentScaleSupportingObservationImpl extends ObservationImpl im
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateAssessmentScaleSupportingObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AssessmentScaleSupportingObservationOperations.validateAssessmentScaleSupportingObservationTemplateId(
@@ -88,10 +88,10 @@ public class AssessmentScaleSupportingObservationImpl extends ObservationImpl im
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateAssessmentScaleSupportingObservationClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AssessmentScaleSupportingObservationOperations.validateAssessmentScaleSupportingObservationClassCode(
@@ -99,10 +99,10 @@ public class AssessmentScaleSupportingObservationImpl extends ObservationImpl im
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateAssessmentScaleSupportingObservationMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AssessmentScaleSupportingObservationOperations.validateAssessmentScaleSupportingObservationMoodCode(
@@ -110,10 +110,10 @@ public class AssessmentScaleSupportingObservationImpl extends ObservationImpl im
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateAssessmentScaleSupportingObservationCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AssessmentScaleSupportingObservationOperations.validateAssessmentScaleSupportingObservationCode(
@@ -121,10 +121,10 @@ public class AssessmentScaleSupportingObservationImpl extends ObservationImpl im
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateAssessmentScaleSupportingObservationId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AssessmentScaleSupportingObservationOperations.validateAssessmentScaleSupportingObservationId(
@@ -132,10 +132,10 @@ public class AssessmentScaleSupportingObservationImpl extends ObservationImpl im
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateAssessmentScaleSupportingObservationStatusCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AssessmentScaleSupportingObservationOperations.validateAssessmentScaleSupportingObservationStatusCode(
@@ -143,10 +143,10 @@ public class AssessmentScaleSupportingObservationImpl extends ObservationImpl im
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateAssessmentScaleSupportingObservationStatusCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AssessmentScaleSupportingObservationOperations.validateAssessmentScaleSupportingObservationStatusCodeP(
@@ -154,10 +154,10 @@ public class AssessmentScaleSupportingObservationImpl extends ObservationImpl im
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateAssessmentScaleSupportingObservationValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AssessmentScaleSupportingObservationOperations.validateAssessmentScaleSupportingObservationValue(
@@ -165,10 +165,10 @@ public class AssessmentScaleSupportingObservationImpl extends ObservationImpl im
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public AssessmentScaleSupportingObservation init() {
 		return Initializer.Util.init(this);
 	}

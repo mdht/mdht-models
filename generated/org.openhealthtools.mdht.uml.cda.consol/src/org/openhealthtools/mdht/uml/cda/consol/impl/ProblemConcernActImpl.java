@@ -117,10 +117,10 @@ public class ProblemConcernActImpl extends ActImpl implements ProblemConcernAct 
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateProblemConcernActCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemConcernActOperations.validateProblemConcernActCode(this, diagnostics, context);
 	}
@@ -171,10 +171,10 @@ public class ProblemConcernActImpl extends ActImpl implements ProblemConcernAct 
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public ProblemConcernAct init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

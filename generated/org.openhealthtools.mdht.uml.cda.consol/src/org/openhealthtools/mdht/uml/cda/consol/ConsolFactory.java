@@ -516,21 +516,21 @@ public interface ConsolFactory extends EFactory {
 	SmokingStatusObservation createSmokingStatusObservation();
 
 	/**
-	 * Returns a new object of class '<em>Tobacco Use</em>'.
-	 * <!-- begin-user-doc -->
+	* Returns a new object of class '<em>Tobacco Use</em>'.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Tobacco Use</em>'.
-	 * @generated
-	 */
+	* @return a new object of class '<em>Tobacco Use</em>'.
+	* @generated
+	*/
 	TobaccoUse createTobaccoUse();
 
 	/**
-	 * Returns a new object of class '<em>Results Section</em>'.
-	 * <!-- begin-user-doc -->
+	* Returns a new object of class '<em>Results Section</em>'.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Results Section</em>'.
-	 * @generated
-	 */
+	* @return a new object of class '<em>Results Section</em>'.
+	* @generated
+	*/
 	ResultsSection createResultsSection();
 
 	/**
@@ -588,111 +588,111 @@ public interface ConsolFactory extends EFactory {
 	FunctionalStatusResultOrganizer createFunctionalStatusResultOrganizer();
 
 	/**
-	 * Returns a new object of class '<em>Functional Status Result Observation</em>'.
-	 * <!-- begin-user-doc -->
+	* Returns a new object of class '<em>Functional Status Result Observation</em>'.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Functional Status Result Observation</em>'.
-	 * @generated
-	 */
+	* @return a new object of class '<em>Functional Status Result Observation</em>'.
+	* @generated
+	*/
 	FunctionalStatusResultObservation createFunctionalStatusResultObservation();
 
 	/**
-	 * Returns a new object of class '<em>Caregiver Characteristics</em>'.
-	 * <!-- begin-user-doc -->
+	* Returns a new object of class '<em>Caregiver Characteristics</em>'.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Caregiver Characteristics</em>'.
-	 * @generated
-	 */
+	* @return a new object of class '<em>Caregiver Characteristics</em>'.
+	* @generated
+	*/
 	CaregiverCharacteristics createCaregiverCharacteristics();
 
 	/**
-	 * Returns a new object of class '<em>Assessment Scale Observation</em>'.
-	 * <!-- begin-user-doc -->
+	* Returns a new object of class '<em>Assessment Scale Observation</em>'.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Assessment Scale Observation</em>'.
-	 * @generated
-	 */
+	* @return a new object of class '<em>Assessment Scale Observation</em>'.
+	* @generated
+	*/
 	AssessmentScaleObservation createAssessmentScaleObservation();
 
 	/**
-	 * Returns a new object of class '<em>Assessment Scale Supporting Observation</em>'.
-	 * <!-- begin-user-doc -->
+	* Returns a new object of class '<em>Assessment Scale Supporting Observation</em>'.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Assessment Scale Supporting Observation</em>'.
-	 * @generated
-	 */
+	* @return a new object of class '<em>Assessment Scale Supporting Observation</em>'.
+	* @generated
+	*/
 	AssessmentScaleSupportingObservation createAssessmentScaleSupportingObservation();
 
 	/**
-	 * Returns a new object of class '<em>Cognitive Status Result Organizer</em>'.
-	 * <!-- begin-user-doc -->
+	* Returns a new object of class '<em>Cognitive Status Result Organizer</em>'.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Cognitive Status Result Organizer</em>'.
-	 * @generated
-	 */
+	* @return a new object of class '<em>Cognitive Status Result Organizer</em>'.
+	* @generated
+	*/
 	CognitiveStatusResultOrganizer createCognitiveStatusResultOrganizer();
 
 	/**
-	 * Returns a new object of class '<em>Cognitive Status Result Observation</em>'.
-	 * <!-- begin-user-doc -->
+	* Returns a new object of class '<em>Cognitive Status Result Observation</em>'.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Cognitive Status Result Observation</em>'.
-	 * @generated
-	 */
+	* @return a new object of class '<em>Cognitive Status Result Observation</em>'.
+	* @generated
+	*/
 	CognitiveStatusResultObservation createCognitiveStatusResultObservation();
 
 	/**
-	 * Returns a new object of class '<em>Functional Status Problem Observation</em>'.
-	 * <!-- begin-user-doc -->
+	* Returns a new object of class '<em>Functional Status Problem Observation</em>'.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Functional Status Problem Observation</em>'.
-	 * @generated
-	 */
+	* @return a new object of class '<em>Functional Status Problem Observation</em>'.
+	* @generated
+	*/
 	FunctionalStatusProblemObservation createFunctionalStatusProblemObservation();
 
 	/**
-	 * Returns a new object of class '<em>Cognitive Status Problem Observation</em>'.
-	 * <!-- begin-user-doc -->
+	* Returns a new object of class '<em>Cognitive Status Problem Observation</em>'.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Cognitive Status Problem Observation</em>'.
-	 * @generated
-	 */
+	* @return a new object of class '<em>Cognitive Status Problem Observation</em>'.
+	* @generated
+	*/
 	CognitiveStatusProblemObservation createCognitiveStatusProblemObservation();
 
 	/**
-	 * Returns a new object of class '<em>Pressure Ulcer Observation</em>'.
-	 * <!-- begin-user-doc -->
+	* Returns a new object of class '<em>Pressure Ulcer Observation</em>'.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Pressure Ulcer Observation</em>'.
-	 * @generated
-	 */
+	* @return a new object of class '<em>Pressure Ulcer Observation</em>'.
+	* @generated
+	*/
 	PressureUlcerObservation createPressureUlcerObservation();
 
 	/**
-	 * Returns a new object of class '<em>Number Of Pressure Ulcers Observation</em>'.
-	 * <!-- begin-user-doc -->
+	* Returns a new object of class '<em>Number Of Pressure Ulcers Observation</em>'.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Number Of Pressure Ulcers Observation</em>'.
-	 * @generated
-	 */
+	* @return a new object of class '<em>Number Of Pressure Ulcers Observation</em>'.
+	* @generated
+	*/
 	NumberOfPressureUlcersObservation createNumberOfPressureUlcersObservation();
 
 	/**
-	 * Returns a new object of class '<em>Highest Pressure Ulcer Stage</em>'.
-	 * <!-- begin-user-doc -->
+	* Returns a new object of class '<em>Highest Pressure Ulcer Stage</em>'.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Highest Pressure Ulcer Stage</em>'.
-	 * @generated
-	 */
+	* @return a new object of class '<em>Highest Pressure Ulcer Stage</em>'.
+	* @generated
+	*/
 	HighestPressureUlcerStage createHighestPressureUlcerStage();
 
 	/**
-	 * Returns a new object of class '<em>Problem Section</em>'.
-	 * <!-- begin-user-doc -->
+	* Returns a new object of class '<em>Problem Section</em>'.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Problem Section</em>'.
-	 * @generated
-	 */
+	* @return a new object of class '<em>Problem Section</em>'.
+	* @generated
+	*/
 	ProblemSection createProblemSection();
 
 	/**
@@ -750,12 +750,12 @@ public interface ConsolFactory extends EFactory {
 	EncounterDiagnosis createEncounterDiagnosis();
 
 	/**
-	 * Returns a new object of class '<em>Service Delivery Location</em>'.
-	 * <!-- begin-user-doc -->
+	* Returns a new object of class '<em>Service Delivery Location</em>'.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Service Delivery Location</em>'.
-	 * @generated
-	 */
+	* @return a new object of class '<em>Service Delivery Location</em>'.
+	* @generated
+	*/
 	ServiceDeliveryLocation createServiceDeliveryLocation();
 
 	/**
@@ -1335,21 +1335,21 @@ public interface ConsolFactory extends EFactory {
 	MedicationUseNoneKnown createMedicationUseNoneKnown();
 
 	/**
-	 * Returns a new object of class '<em>Deceased Observation</em>'.
-	 * <!-- begin-user-doc -->
+	* Returns a new object of class '<em>Deceased Observation</em>'.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Deceased Observation</em>'.
-	 * @generated
-	 */
+	* @return a new object of class '<em>Deceased Observation</em>'.
+	* @generated
+	*/
 	DeceasedObservation createDeceasedObservation();
 
 	/**
-	 * Returns a new object of class '<em>Medications Administered Section</em>'.
-	 * <!-- begin-user-doc -->
+	* Returns a new object of class '<em>Medications Administered Section</em>'.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Medications Administered Section</em>'.
-	 * @generated
-	 */
+	* @return a new object of class '<em>Medications Administered Section</em>'.
+	* @generated
+	*/
 	MedicationsAdministeredSection createMedicationsAdministeredSection();
 
 	/**

@@ -109,15 +109,15 @@ public interface HistoryAndPhysicalNote extends GeneralHeaderConstraints {
 	boolean validateHistoryAndPhysicalNoteCode(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.inFulfillmentOf->exists(inFulfillmentOf : cda::InFulfillmentOf | not inFulfillmentOf.oclIsUndefined() and inFulfillmentOf.oclIsKindOf(rim::ActRelationship))'"
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.inFulfillmentOf->exists(inFulfillmentOf : cda::InFulfillmentOf | not inFulfillmentOf.oclIsUndefined() and inFulfillmentOf.oclIsKindOf(rim::ActRelationship))'"
+	* @generated
+	*/
 	boolean validateHistoryAndPhysicalNoteInFulfillmentOf(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 	/**
@@ -702,9 +702,9 @@ public interface HistoryAndPhysicalNote extends GeneralHeaderConstraints {
 	public HistoryAndPhysicalNote init();
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public HistoryAndPhysicalNote init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // HistoryAndPhysicalNote

@@ -80,28 +80,28 @@ public class StudyActImpl extends ActImpl implements StudyAct {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateStudyActTextReferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return StudyActOperations.validateStudyActTextReferenceValue(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateStudyActReferenceValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return StudyActOperations.validateStudyActReferenceValue(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateStudyActTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return StudyActOperations.validateStudyActTemplateId(this, diagnostics, context);
 	}
@@ -188,10 +188,10 @@ public class StudyActImpl extends ActImpl implements StudyAct {
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public StudyAct init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

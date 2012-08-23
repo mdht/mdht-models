@@ -85,10 +85,10 @@ public class ProblemSectionEntriesOptionalImpl extends SectionImpl implements Pr
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateProblemSectionEntriesOptionalTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemSectionEntriesOptionalOperations.validateProblemSectionEntriesOptionalTitle(
 			this, diagnostics, context);
@@ -134,10 +134,10 @@ public class ProblemSectionEntriesOptionalImpl extends SectionImpl implements Pr
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public ProblemSectionEntriesOptional init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

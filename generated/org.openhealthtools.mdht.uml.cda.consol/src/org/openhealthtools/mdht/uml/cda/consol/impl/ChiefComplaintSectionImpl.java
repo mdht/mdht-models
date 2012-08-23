@@ -79,10 +79,10 @@ public class ChiefComplaintSectionImpl extends SectionImpl implements ChiefCompl
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateChiefComplaintSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ChiefComplaintSectionOperations.validateChiefComplaintSectionText(this, diagnostics, context);
 	}
@@ -106,10 +106,10 @@ public class ChiefComplaintSectionImpl extends SectionImpl implements ChiefCompl
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public ChiefComplaintSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

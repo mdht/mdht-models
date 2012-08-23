@@ -422,17 +422,17 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	private EClass smokingStatusObservationEClass = null;
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	private EClass tobaccoUseEClass = null;
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	private EClass resultsSectionEClass = null;
 
 	/**
@@ -478,87 +478,87 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	private EClass functionalStatusResultOrganizerEClass = null;
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	private EClass functionalStatusResultObservationEClass = null;
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	private EClass caregiverCharacteristicsEClass = null;
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	private EClass assessmentScaleObservationEClass = null;
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	private EClass assessmentScaleSupportingObservationEClass = null;
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	private EClass cognitiveStatusResultOrganizerEClass = null;
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	private EClass cognitiveStatusResultObservationEClass = null;
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	private EClass functionalStatusProblemObservationEClass = null;
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	private EClass cognitiveStatusProblemObservationEClass = null;
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	private EClass pressureUlcerObservationEClass = null;
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	private EClass numberOfPressureUlcersObservationEClass = null;
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	private EClass highestPressureUlcerStageEClass = null;
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	private EClass problemSectionEClass = null;
 
 	/**
@@ -604,10 +604,10 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	private EClass encounterDiagnosisEClass = null;
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	private EClass serviceDeliveryLocationEClass = null;
 
 	/**
@@ -1059,17 +1059,17 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	private EClass medicationUseNoneKnownEClass = null;
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	private EClass deceasedObservationEClass = null;
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	private EClass medicationsAdministeredSectionEClass = null;
 
 	/**
@@ -1971,10 +1971,10 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public EClass getTobaccoUse() {
 		if (tobaccoUseEClass == null) {
 			tobaccoUseEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
@@ -1984,10 +1984,10 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public EClass getResultsSection() {
 		if (resultsSectionEClass == null) {
 			resultsSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
@@ -2075,10 +2075,10 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public EClass getFunctionalStatusResultObservation() {
 		if (functionalStatusResultObservationEClass == null) {
 			functionalStatusResultObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
@@ -2088,10 +2088,10 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public EClass getCaregiverCharacteristics() {
 		if (caregiverCharacteristicsEClass == null) {
 			caregiverCharacteristicsEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
@@ -2101,10 +2101,10 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public EClass getAssessmentScaleObservation() {
 		if (assessmentScaleObservationEClass == null) {
 			assessmentScaleObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
@@ -2114,10 +2114,10 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public EClass getAssessmentScaleSupportingObservation() {
 		if (assessmentScaleSupportingObservationEClass == null) {
 			assessmentScaleSupportingObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
@@ -2127,10 +2127,10 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public EClass getCognitiveStatusResultOrganizer() {
 		if (cognitiveStatusResultOrganizerEClass == null) {
 			cognitiveStatusResultOrganizerEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
@@ -2140,10 +2140,10 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public EClass getCognitiveStatusResultObservation() {
 		if (cognitiveStatusResultObservationEClass == null) {
 			cognitiveStatusResultObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
@@ -2153,10 +2153,10 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public EClass getFunctionalStatusProblemObservation() {
 		if (functionalStatusProblemObservationEClass == null) {
 			functionalStatusProblemObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
@@ -2166,10 +2166,10 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public EClass getCognitiveStatusProblemObservation() {
 		if (cognitiveStatusProblemObservationEClass == null) {
 			cognitiveStatusProblemObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
@@ -2179,10 +2179,10 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public EClass getPressureUlcerObservation() {
 		if (pressureUlcerObservationEClass == null) {
 			pressureUlcerObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
@@ -2192,10 +2192,10 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public EClass getNumberOfPressureUlcersObservation() {
 		if (numberOfPressureUlcersObservationEClass == null) {
 			numberOfPressureUlcersObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
@@ -2205,10 +2205,10 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public EClass getHighestPressureUlcerStage() {
 		if (highestPressureUlcerStageEClass == null) {
 			highestPressureUlcerStageEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
@@ -2218,10 +2218,10 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public EClass getProblemSection() {
 		if (problemSectionEClass == null) {
 			problemSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
@@ -2309,10 +2309,10 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public EClass getServiceDeliveryLocation() {
 		if (serviceDeliveryLocationEClass == null) {
 			serviceDeliveryLocationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
@@ -3154,10 +3154,10 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public EClass getDeceasedObservation() {
 		if (deceasedObservationEClass == null) {
 			deceasedObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI).getEClassifiers().get(
@@ -3167,10 +3167,10 @@ public class ConsolPackageImpl extends EPackageImpl implements ConsolPackage {
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public EClass getMedicationsAdministeredSection() {
 		if (medicationsAdministeredSectionEClass == null) {
 			medicationsAdministeredSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(

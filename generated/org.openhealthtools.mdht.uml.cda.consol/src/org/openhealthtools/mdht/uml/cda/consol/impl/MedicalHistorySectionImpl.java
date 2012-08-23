@@ -79,10 +79,10 @@ public class MedicalHistorySectionImpl extends SectionImpl implements MedicalHis
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMedicalHistorySectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicalHistorySectionOperations.validateMedicalHistorySectionText(this, diagnostics, context);
 	}
@@ -106,10 +106,10 @@ public class MedicalHistorySectionImpl extends SectionImpl implements MedicalHis
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public MedicalHistorySection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

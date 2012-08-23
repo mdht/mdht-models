@@ -107,9 +107,9 @@ public interface PostprocedureDiagnosis extends Act {
 	public PostprocedureDiagnosis init();
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public PostprocedureDiagnosis init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PostprocedureDiagnosis
