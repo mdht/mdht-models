@@ -62,19 +62,19 @@ public class ProblemSectionImpl extends ProblemSectionEntriesOptionalImpl implem
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateProblemSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemSectionOperations.validateProblemSectionCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateProblemSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemSectionOperations.validateProblemSectionText(this, diagnostics, context);
 	}
@@ -128,10 +128,10 @@ public class ProblemSectionImpl extends ProblemSectionEntriesOptionalImpl implem
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	@Override
 	public ProblemSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);

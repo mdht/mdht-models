@@ -129,9 +129,9 @@ public interface ProductInstance extends ParticipantRole {
 	public ProductInstance init();
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public ProductInstance init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ProductInstance

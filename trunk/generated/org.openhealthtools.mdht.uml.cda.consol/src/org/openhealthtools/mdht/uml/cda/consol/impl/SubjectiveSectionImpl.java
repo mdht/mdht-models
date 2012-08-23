@@ -79,10 +79,10 @@ public class SubjectiveSectionImpl extends SectionImpl implements SubjectiveSect
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateSubjectiveSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SubjectiveSectionOperations.validateSubjectiveSectionText(this, diagnostics, context);
 	}
@@ -106,10 +106,10 @@ public class SubjectiveSectionImpl extends SectionImpl implements SubjectiveSect
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public SubjectiveSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

@@ -201,9 +201,9 @@ public interface FamilyHistoryObservation extends Observation {
 	public FamilyHistoryObservation init();
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public FamilyHistoryObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // FamilyHistoryObservation

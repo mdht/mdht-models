@@ -122,10 +122,10 @@ public class HospitalDischargeDiagnosisImpl extends ActImpl implements HospitalD
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public HospitalDischargeDiagnosis init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

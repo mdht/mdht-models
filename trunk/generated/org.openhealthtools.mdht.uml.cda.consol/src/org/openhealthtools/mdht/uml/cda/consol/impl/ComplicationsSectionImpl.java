@@ -81,10 +81,10 @@ public class ComplicationsSectionImpl extends SectionImpl implements Complicatio
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateComplicationsSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ComplicationsSectionOperations.validateComplicationsSectionTitle(this, diagnostics, context);
 	}
@@ -127,10 +127,10 @@ public class ComplicationsSectionImpl extends SectionImpl implements Complicatio
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public ComplicationsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

@@ -123,10 +123,10 @@ public class MedicationInformationImpl extends ManufacturedProductImpl implement
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMedicationInformationMedicationInformationManufacturedMaterialCodeTranslation(
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationInformationOperations.validateMedicationInformationMedicationInformationManufacturedMaterialCodeTranslation(
@@ -165,10 +165,10 @@ public class MedicationInformationImpl extends ManufacturedProductImpl implement
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public MedicationInformation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

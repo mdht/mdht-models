@@ -80,10 +80,10 @@ public class AdmissionMedicationImpl extends ActImpl implements AdmissionMedicat
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateAdmissionMedicationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AdmissionMedicationOperations.validateAdmissionMedicationCode(this, diagnostics, context);
 	}
@@ -126,10 +126,10 @@ public class AdmissionMedicationImpl extends ActImpl implements AdmissionMedicat
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public AdmissionMedication init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

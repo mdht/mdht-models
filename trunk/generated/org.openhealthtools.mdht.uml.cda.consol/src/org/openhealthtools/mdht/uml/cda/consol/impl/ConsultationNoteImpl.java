@@ -123,10 +123,10 @@ public class ConsultationNoteImpl extends GeneralHeaderConstraintsImpl implement
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateConsultationNoteInFulfillmentOf(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ConsultationNoteOperations.validateConsultationNoteInFulfillmentOf(this, diagnostics, context);
 	}
@@ -667,10 +667,10 @@ public class ConsultationNoteImpl extends GeneralHeaderConstraintsImpl implement
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	@Override
 	public ConsultationNote init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);

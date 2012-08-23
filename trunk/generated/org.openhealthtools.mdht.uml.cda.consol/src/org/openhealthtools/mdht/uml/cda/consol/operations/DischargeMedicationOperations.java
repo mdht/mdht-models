@@ -356,20 +356,20 @@ public class DischargeMedicationOperations extends ClinicalStatementOperations {
 	protected static final String GET_MEDICATION_ACTIVITIES__EOCL_EXP = "self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(consol::MedicationActivity)).oclAsType(consol::MedicationActivity)";
 
 	/**
-	 * The cached OCL query for the '{@link #getMedicationActivities(DischargeMedication) <em>Get Medication Activities</em>}' query operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL query for the '{@link #getMedicationActivities(DischargeMedication) <em>Get Medication Activities</em>}' query operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getMedicationActivities(DischargeMedication)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getMedicationActivities(DischargeMedication)
+	* @generated
+	* @ordered
+	*/
 	protected static OCLExpression<EClassifier> GET_MEDICATION_ACTIVITIES__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 
 	public static EList<MedicationActivity> getMedicationActivities(DischargeMedication dischargeMedication) {
 		if (GET_MEDICATION_ACTIVITIES__EOCL_QRY == null) {

@@ -85,10 +85,10 @@ public class ResultsSectionEntriesOptionalImpl extends SectionImpl implements Re
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateResultsSectionEntriesOptionalTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ResultsSectionEntriesOptionalOperations.validateResultsSectionEntriesOptionalTitle(
 			this, diagnostics, context);
@@ -134,10 +134,10 @@ public class ResultsSectionEntriesOptionalImpl extends SectionImpl implements Re
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public ResultsSectionEntriesOptional init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

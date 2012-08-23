@@ -79,10 +79,10 @@ public class HospitalCourseSectionImpl extends SectionImpl implements HospitalCo
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHospitalCourseSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HospitalCourseSectionOperations.validateHospitalCourseSectionTitle(this, diagnostics, context);
 	}
@@ -106,10 +106,10 @@ public class HospitalCourseSectionImpl extends SectionImpl implements HospitalCo
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public HospitalCourseSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

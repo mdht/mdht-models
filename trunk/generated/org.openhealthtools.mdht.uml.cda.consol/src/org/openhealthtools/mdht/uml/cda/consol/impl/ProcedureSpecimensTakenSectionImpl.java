@@ -83,10 +83,10 @@ public class ProcedureSpecimensTakenSectionImpl extends SectionImpl implements P
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateProcedureSpecimensTakenSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureSpecimensTakenSectionOperations.validateProcedureSpecimensTakenSectionText(
 			this, diagnostics, context);
@@ -112,10 +112,10 @@ public class ProcedureSpecimensTakenSectionImpl extends SectionImpl implements P
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public ProcedureSpecimensTakenSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

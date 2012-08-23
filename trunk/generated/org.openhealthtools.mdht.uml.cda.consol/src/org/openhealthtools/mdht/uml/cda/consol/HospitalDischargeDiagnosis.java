@@ -108,9 +108,9 @@ public interface HospitalDischargeDiagnosis extends Act {
 	public HospitalDischargeDiagnosis init();
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public HospitalDischargeDiagnosis init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // HospitalDischargeDiagnosis

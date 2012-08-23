@@ -203,26 +203,26 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 	protected static final String VALIDATE_PLAN_OF_CARE_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validatePlanOfCareSectionCodeP(PlanOfCareSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Section Code P</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validatePlanOfCareSectionCodeP(PlanOfCareSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Section Code P</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validatePlanOfCareSectionCodeP(PlanOfCareSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validatePlanOfCareSectionCodeP(PlanOfCareSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_PLAN_OF_CARE_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param planOfCareSection The receiving '<em><b>Plan Of Care Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param planOfCareSection The receiving '<em><b>Plan Of Care Section</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validatePlanOfCareSectionCodeP(PlanOfCareSection planOfCareSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -251,36 +251,36 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validatePlanOfCareSectionTitle(PlanOfCareSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Section Title</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validatePlanOfCareSectionTitle(PlanOfCareSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Section Title</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validatePlanOfCareSectionTitle(PlanOfCareSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validatePlanOfCareSectionTitle(PlanOfCareSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_PLAN_OF_CARE_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined())";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validatePlanOfCareSectionTitle(PlanOfCareSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Section Title</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validatePlanOfCareSectionTitle(PlanOfCareSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Section Title</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validatePlanOfCareSectionTitle(PlanOfCareSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validatePlanOfCareSectionTitle(PlanOfCareSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_PLAN_OF_CARE_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param planOfCareSection The receiving '<em><b>Plan Of Care Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param planOfCareSection The receiving '<em><b>Plan Of Care Section</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validatePlanOfCareSectionTitle(PlanOfCareSection planOfCareSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -309,13 +309,13 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validatePlanOfCareSectionText(PlanOfCareSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Section Text</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validatePlanOfCareSectionText(PlanOfCareSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Section Text</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validatePlanOfCareSectionText(PlanOfCareSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validatePlanOfCareSectionText(PlanOfCareSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_PLAN_OF_CARE_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.text.oclIsUndefined()";
 
 	/**
@@ -724,26 +724,26 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 	protected static final String VALIDATE_PLAN_OF_CARE_SECTION_INSTRUCTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::Instructions))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validatePlanOfCareSectionInstructions(PlanOfCareSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Section Instructions</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validatePlanOfCareSectionInstructions(PlanOfCareSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Plan Of Care Section Instructions</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validatePlanOfCareSectionInstructions(PlanOfCareSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validatePlanOfCareSectionInstructions(PlanOfCareSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_PLAN_OF_CARE_SECTION_INSTRUCTIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param planOfCareSection The receiving '<em><b>Plan Of Care Section</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param planOfCareSection The receiving '<em><b>Plan Of Care Section</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validatePlanOfCareSectionInstructions(PlanOfCareSection planOfCareSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
@@ -773,30 +773,30 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getPlanOfCareActivityActs(PlanOfCareSection) <em>Get Plan Of Care Activity Acts</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #getPlanOfCareActivityActs(PlanOfCareSection) <em>Get Plan Of Care Activity Acts</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPlanOfCareActivityActs(PlanOfCareSection)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getPlanOfCareActivityActs(PlanOfCareSection)
+	* @generated
+	* @ordered
+	*/
 	protected static final String GET_PLAN_OF_CARE_ACTIVITY_ACTS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::PlanOfCareActivityAct)).oclAsType(consol::PlanOfCareActivityAct)";
 
 	/**
-	 * The cached OCL query for the '{@link #getPlanOfCareActivityActs(PlanOfCareSection) <em>Get Plan Of Care Activity Acts</em>}' query operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL query for the '{@link #getPlanOfCareActivityActs(PlanOfCareSection) <em>Get Plan Of Care Activity Acts</em>}' query operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPlanOfCareActivityActs(PlanOfCareSection)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getPlanOfCareActivityActs(PlanOfCareSection)
+	* @generated
+	* @ordered
+	*/
 	protected static OCLExpression<EClassifier> GET_PLAN_OF_CARE_ACTIVITY_ACTS__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 
 	public static EList<PlanOfCareActivityAct> getPlanOfCareActivityActs(PlanOfCareSection planOfCareSection) {
 		if (GET_PLAN_OF_CARE_ACTIVITY_ACTS__EOCL_QRY == null) {
@@ -817,30 +817,30 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getPlanOfCareActivityEncounters(PlanOfCareSection) <em>Get Plan Of Care Activity Encounters</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #getPlanOfCareActivityEncounters(PlanOfCareSection) <em>Get Plan Of Care Activity Encounters</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPlanOfCareActivityEncounters(PlanOfCareSection)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getPlanOfCareActivityEncounters(PlanOfCareSection)
+	* @generated
+	* @ordered
+	*/
 	protected static final String GET_PLAN_OF_CARE_ACTIVITY_ENCOUNTERS__EOCL_EXP = "self.getEncounters()->select(encounter : cda::Encounter | not encounter.oclIsUndefined() and encounter.oclIsKindOf(consol::PlanOfCareActivityEncounter)).oclAsType(consol::PlanOfCareActivityEncounter)";
 
 	/**
-	 * The cached OCL query for the '{@link #getPlanOfCareActivityEncounters(PlanOfCareSection) <em>Get Plan Of Care Activity Encounters</em>}' query operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL query for the '{@link #getPlanOfCareActivityEncounters(PlanOfCareSection) <em>Get Plan Of Care Activity Encounters</em>}' query operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPlanOfCareActivityEncounters(PlanOfCareSection)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getPlanOfCareActivityEncounters(PlanOfCareSection)
+	* @generated
+	* @ordered
+	*/
 	protected static OCLExpression<EClassifier> GET_PLAN_OF_CARE_ACTIVITY_ENCOUNTERS__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 
 	public static EList<PlanOfCareActivityEncounter> getPlanOfCareActivityEncounters(PlanOfCareSection planOfCareSection) {
 		if (GET_PLAN_OF_CARE_ACTIVITY_ENCOUNTERS__EOCL_QRY == null) {
@@ -861,30 +861,30 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getPlanOfCareActivityObservations(PlanOfCareSection) <em>Get Plan Of Care Activity Observations</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #getPlanOfCareActivityObservations(PlanOfCareSection) <em>Get Plan Of Care Activity Observations</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPlanOfCareActivityObservations(PlanOfCareSection)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getPlanOfCareActivityObservations(PlanOfCareSection)
+	* @generated
+	* @ordered
+	*/
 	protected static final String GET_PLAN_OF_CARE_ACTIVITY_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::PlanOfCareActivityObservation)).oclAsType(consol::PlanOfCareActivityObservation)";
 
 	/**
-	 * The cached OCL query for the '{@link #getPlanOfCareActivityObservations(PlanOfCareSection) <em>Get Plan Of Care Activity Observations</em>}' query operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL query for the '{@link #getPlanOfCareActivityObservations(PlanOfCareSection) <em>Get Plan Of Care Activity Observations</em>}' query operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPlanOfCareActivityObservations(PlanOfCareSection)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getPlanOfCareActivityObservations(PlanOfCareSection)
+	* @generated
+	* @ordered
+	*/
 	protected static OCLExpression<EClassifier> GET_PLAN_OF_CARE_ACTIVITY_OBSERVATIONS__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 
 	public static EList<PlanOfCareActivityObservation> getPlanOfCareActivityObservations(
 			PlanOfCareSection planOfCareSection) {
@@ -906,30 +906,30 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getPlanOfCareActivityProcedures(PlanOfCareSection) <em>Get Plan Of Care Activity Procedures</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #getPlanOfCareActivityProcedures(PlanOfCareSection) <em>Get Plan Of Care Activity Procedures</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPlanOfCareActivityProcedures(PlanOfCareSection)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getPlanOfCareActivityProcedures(PlanOfCareSection)
+	* @generated
+	* @ordered
+	*/
 	protected static final String GET_PLAN_OF_CARE_ACTIVITY_PROCEDURES__EOCL_EXP = "self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(consol::PlanOfCareActivityProcedure)).oclAsType(consol::PlanOfCareActivityProcedure)";
 
 	/**
-	 * The cached OCL query for the '{@link #getPlanOfCareActivityProcedures(PlanOfCareSection) <em>Get Plan Of Care Activity Procedures</em>}' query operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL query for the '{@link #getPlanOfCareActivityProcedures(PlanOfCareSection) <em>Get Plan Of Care Activity Procedures</em>}' query operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPlanOfCareActivityProcedures(PlanOfCareSection)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getPlanOfCareActivityProcedures(PlanOfCareSection)
+	* @generated
+	* @ordered
+	*/
 	protected static OCLExpression<EClassifier> GET_PLAN_OF_CARE_ACTIVITY_PROCEDURES__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 
 	public static EList<PlanOfCareActivityProcedure> getPlanOfCareActivityProcedures(PlanOfCareSection planOfCareSection) {
 		if (GET_PLAN_OF_CARE_ACTIVITY_PROCEDURES__EOCL_QRY == null) {
@@ -950,30 +950,30 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getPlanOfCareActivitySubstanceAdministrations(PlanOfCareSection) <em>Get Plan Of Care Activity Substance Administrations</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #getPlanOfCareActivitySubstanceAdministrations(PlanOfCareSection) <em>Get Plan Of Care Activity Substance Administrations</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPlanOfCareActivitySubstanceAdministrations(PlanOfCareSection)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getPlanOfCareActivitySubstanceAdministrations(PlanOfCareSection)
+	* @generated
+	* @ordered
+	*/
 	protected static final String GET_PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATIONS__EOCL_EXP = "self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(consol::PlanOfCareActivitySubstanceAdministration)).oclAsType(consol::PlanOfCareActivitySubstanceAdministration)";
 
 	/**
-	 * The cached OCL query for the '{@link #getPlanOfCareActivitySubstanceAdministrations(PlanOfCareSection) <em>Get Plan Of Care Activity Substance Administrations</em>}' query operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL query for the '{@link #getPlanOfCareActivitySubstanceAdministrations(PlanOfCareSection) <em>Get Plan Of Care Activity Substance Administrations</em>}' query operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPlanOfCareActivitySubstanceAdministrations(PlanOfCareSection)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getPlanOfCareActivitySubstanceAdministrations(PlanOfCareSection)
+	* @generated
+	* @ordered
+	*/
 	protected static OCLExpression<EClassifier> GET_PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATIONS__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 
 	public static EList<PlanOfCareActivitySubstanceAdministration> getPlanOfCareActivitySubstanceAdministrations(
 			PlanOfCareSection planOfCareSection) {
@@ -996,30 +996,30 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getPlanOfCareActivitySupplies(PlanOfCareSection) <em>Get Plan Of Care Activity Supplies</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #getPlanOfCareActivitySupplies(PlanOfCareSection) <em>Get Plan Of Care Activity Supplies</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPlanOfCareActivitySupplies(PlanOfCareSection)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getPlanOfCareActivitySupplies(PlanOfCareSection)
+	* @generated
+	* @ordered
+	*/
 	protected static final String GET_PLAN_OF_CARE_ACTIVITY_SUPPLIES__EOCL_EXP = "self.getSupplies()->select(supply : cda::Supply | not supply.oclIsUndefined() and supply.oclIsKindOf(consol::PlanOfCareActivitySupply)).oclAsType(consol::PlanOfCareActivitySupply)";
 
 	/**
-	 * The cached OCL query for the '{@link #getPlanOfCareActivitySupplies(PlanOfCareSection) <em>Get Plan Of Care Activity Supplies</em>}' query operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL query for the '{@link #getPlanOfCareActivitySupplies(PlanOfCareSection) <em>Get Plan Of Care Activity Supplies</em>}' query operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getPlanOfCareActivitySupplies(PlanOfCareSection)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getPlanOfCareActivitySupplies(PlanOfCareSection)
+	* @generated
+	* @ordered
+	*/
 	protected static OCLExpression<EClassifier> GET_PLAN_OF_CARE_ACTIVITY_SUPPLIES__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 
 	public static EList<PlanOfCareActivitySupply> getPlanOfCareActivitySupplies(PlanOfCareSection planOfCareSection) {
 		if (GET_PLAN_OF_CARE_ACTIVITY_SUPPLIES__EOCL_QRY == null) {
@@ -1040,30 +1040,30 @@ public class PlanOfCareSectionOperations extends SectionOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #getInstructionss(PlanOfCareSection) <em>Get Instructionss</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #getInstructionss(PlanOfCareSection) <em>Get Instructionss</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getInstructionss(PlanOfCareSection)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getInstructionss(PlanOfCareSection)
+	* @generated
+	* @ordered
+	*/
 	protected static final String GET_INSTRUCTIONSS__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::Instructions)).oclAsType(consol::Instructions)";
 
 	/**
-	 * The cached OCL query for the '{@link #getInstructionss(PlanOfCareSection) <em>Get Instructionss</em>}' query operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL query for the '{@link #getInstructionss(PlanOfCareSection) <em>Get Instructionss</em>}' query operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getInstructionss(PlanOfCareSection)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getInstructionss(PlanOfCareSection)
+	* @generated
+	* @ordered
+	*/
 	protected static OCLExpression<EClassifier> GET_INSTRUCTIONSS__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 
 	public static EList<Instructions> getInstructionss(PlanOfCareSection planOfCareSection) {
 		if (GET_INSTRUCTIONSS__EOCL_QRY == null) {

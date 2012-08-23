@@ -74,10 +74,10 @@ public class PostprocedureDiagnosisSectionImpl extends SectionImpl implements Po
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePostprocedureDiagnosisSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PostprocedureDiagnosisSectionOperations.validatePostprocedureDiagnosisSectionCode(
 			this, diagnostics, context);
@@ -133,10 +133,10 @@ public class PostprocedureDiagnosisSectionImpl extends SectionImpl implements Po
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public PostprocedureDiagnosisSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

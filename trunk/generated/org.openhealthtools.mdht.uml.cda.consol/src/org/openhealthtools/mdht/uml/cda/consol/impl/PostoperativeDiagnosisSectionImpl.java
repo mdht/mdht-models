@@ -83,10 +83,10 @@ public class PostoperativeDiagnosisSectionImpl extends SectionImpl implements Po
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePostoperativeDiagnosisSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PostoperativeDiagnosisSectionOperations.validatePostoperativeDiagnosisSectionText(
 			this, diagnostics, context);
@@ -112,10 +112,10 @@ public class PostoperativeDiagnosisSectionImpl extends SectionImpl implements Po
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public PostoperativeDiagnosisSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

@@ -193,26 +193,26 @@ public class AdvanceDirectivesSectionEntriesOptionalOperations extends SectionOp
 	protected static final String VALIDATE_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateAdvanceDirectivesSectionEntriesOptionalCodeP(AdvanceDirectivesSectionEntriesOptional, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directives Section Entries Optional Code P</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateAdvanceDirectivesSectionEntriesOptionalCodeP(AdvanceDirectivesSectionEntriesOptional, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directives Section Entries Optional Code P</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateAdvanceDirectivesSectionEntriesOptionalCodeP(AdvanceDirectivesSectionEntriesOptional, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateAdvanceDirectivesSectionEntriesOptionalCodeP(AdvanceDirectivesSectionEntriesOptional, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param advanceDirectivesSectionEntriesOptional The receiving '<em><b>Advance Directives Section Entries Optional</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param advanceDirectivesSectionEntriesOptional The receiving '<em><b>Advance Directives Section Entries Optional</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateAdvanceDirectivesSectionEntriesOptionalCodeP(
 			AdvanceDirectivesSectionEntriesOptional advanceDirectivesSectionEntriesOptional,
@@ -245,13 +245,13 @@ public class AdvanceDirectivesSectionEntriesOptionalOperations extends SectionOp
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateAdvanceDirectivesSectionEntriesOptionalTitle(AdvanceDirectivesSectionEntriesOptional, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directives Section Entries Optional Title</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateAdvanceDirectivesSectionEntriesOptionalTitle(AdvanceDirectivesSectionEntriesOptional, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Advance Directives Section Entries Optional Title</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateAdvanceDirectivesSectionEntriesOptionalTitle(AdvanceDirectivesSectionEntriesOptional, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateAdvanceDirectivesSectionEntriesOptionalTitle(AdvanceDirectivesSectionEntriesOptional, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_ADVANCE_DIRECTIVES_SECTION_ENTRIES_OPTIONAL_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.title.oclIsUndefined() or self.title.isNullFlavorUndefined()) implies (not self.title.oclIsUndefined())";
 
 	/**
@@ -435,20 +435,20 @@ public class AdvanceDirectivesSectionEntriesOptionalOperations extends SectionOp
 	protected static final String GET_ADVANCE_DIRECTIVE_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::AdvanceDirectiveObservation)).oclAsType(consol::AdvanceDirectiveObservation)";
 
 	/**
-	 * The cached OCL query for the '{@link #getAdvanceDirectiveObservations(AdvanceDirectivesSectionEntriesOptional) <em>Get Advance Directive Observations</em>}' query operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL query for the '{@link #getAdvanceDirectiveObservations(AdvanceDirectivesSectionEntriesOptional) <em>Get Advance Directive Observations</em>}' query operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getAdvanceDirectiveObservations(AdvanceDirectivesSectionEntriesOptional)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #getAdvanceDirectiveObservations(AdvanceDirectivesSectionEntriesOptional)
+	* @generated
+	* @ordered
+	*/
 	protected static OCLExpression<EClassifier> GET_ADVANCE_DIRECTIVE_OBSERVATIONS__EOCL_QRY;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 
 	public static EList<AdvanceDirectiveObservation> getAdvanceDirectiveObservations(
 			AdvanceDirectivesSectionEntriesOptional advanceDirectivesSectionEntriesOptional) {

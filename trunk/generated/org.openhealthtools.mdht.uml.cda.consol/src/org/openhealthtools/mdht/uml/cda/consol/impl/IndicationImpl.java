@@ -115,10 +115,10 @@ public class IndicationImpl extends ObservationImpl implements Indication {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateIndicationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return IndicationOperations.validateIndicationMoodCode(this, diagnostics, context);
 	}
@@ -160,10 +160,10 @@ public class IndicationImpl extends ObservationImpl implements Indication {
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public Indication init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

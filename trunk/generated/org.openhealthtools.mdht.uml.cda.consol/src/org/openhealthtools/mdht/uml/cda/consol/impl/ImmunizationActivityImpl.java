@@ -77,10 +77,10 @@ public class ImmunizationActivityImpl extends SubstanceAdministrationImpl implem
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateImmunizationActivityTextReferenceValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ImmunizationActivityOperations.validateImmunizationActivityTextReferenceValue(this, diagnostics, context);
@@ -456,10 +456,10 @@ public class ImmunizationActivityImpl extends SubstanceAdministrationImpl implem
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public ImmunizationActivity init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

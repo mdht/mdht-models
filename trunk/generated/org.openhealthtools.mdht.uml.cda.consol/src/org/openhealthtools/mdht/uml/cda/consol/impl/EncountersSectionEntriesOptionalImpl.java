@@ -86,10 +86,10 @@ public class EncountersSectionEntriesOptionalImpl extends SectionImpl implements
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateEncountersSectionEntriesOptionalTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return EncountersSectionEntriesOptionalOperations.validateEncountersSectionEntriesOptionalTitle(
@@ -136,10 +136,10 @@ public class EncountersSectionEntriesOptionalImpl extends SectionImpl implements
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public EncountersSectionEntriesOptional init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

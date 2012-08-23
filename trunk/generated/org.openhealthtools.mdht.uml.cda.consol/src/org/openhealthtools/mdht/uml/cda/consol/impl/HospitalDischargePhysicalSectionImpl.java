@@ -84,10 +84,10 @@ public class HospitalDischargePhysicalSectionImpl extends SectionImpl implements
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHospitalDischargePhysicalSectionTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HospitalDischargePhysicalSectionOperations.validateHospitalDischargePhysicalSectionTitle(
@@ -114,10 +114,10 @@ public class HospitalDischargePhysicalSectionImpl extends SectionImpl implements
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public HospitalDischargePhysicalSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

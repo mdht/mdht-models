@@ -189,26 +189,26 @@ public class StudyActOperations extends ClinicalStatementOperations {
 	protected static final String VALIDATE_STUDY_ACT_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.text.oclIsUndefined() implies self.text->forAll(reference->size() = 1)";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateStudyActTextReference(StudyAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Study Act Text Reference</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateStudyActTextReference(StudyAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Study Act Text Reference</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateStudyActTextReference(StudyAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateStudyActTextReference(StudyAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_STUDY_ACT_TEXT_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param studyAct The receiving '<em><b>Study Act</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param studyAct The receiving '<em><b>Study Act</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateStudyActTextReference(StudyAct studyAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -236,36 +236,36 @@ public class StudyActOperations extends ClinicalStatementOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateStudyActTextReferenceValue(StudyAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Study Act Text Reference Value</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateStudyActTextReferenceValue(StudyAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Study Act Text Reference Value</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateStudyActTextReferenceValue(StudyAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateStudyActTextReferenceValue(StudyAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_STUDY_ACT_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.text->forAll(reference->size() = 1) implies self.text->forAll(reference->one(value->size() = 1))";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateStudyActTextReferenceValue(StudyAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Study Act Text Reference Value</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateStudyActTextReferenceValue(StudyAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Study Act Text Reference Value</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateStudyActTextReferenceValue(StudyAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateStudyActTextReferenceValue(StudyAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_STUDY_ACT_TEXT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param studyAct The receiving '<em><b>Study Act</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param studyAct The receiving '<em><b>Study Act</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateStudyActTextReferenceValue(StudyAct studyAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -294,36 +294,36 @@ public class StudyActOperations extends ClinicalStatementOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateStudyActReferenceValue(StudyAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Study Act Reference Value</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateStudyActReferenceValue(StudyAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Study Act Reference Value</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateStudyActReferenceValue(StudyAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateStudyActReferenceValue(StudyAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_STUDY_ACT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "not self.text.reference.value.oclIsUndefined() implies not self.getSection().text.getText(self.text.reference.value.substring(2, self.text.reference.value.size())).oclIsUndefined()";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateStudyActReferenceValue(StudyAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Study Act Reference Value</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateStudyActReferenceValue(StudyAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Study Act Reference Value</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateStudyActReferenceValue(StudyAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateStudyActReferenceValue(StudyAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 
 	protected static Constraint VALIDATE_STUDY_ACT_REFERENCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * <!-- begin-model-doc -->
-	 * @param studyAct The receiving '<em><b>Study Act</b></em>' model object.
-	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
-	 * @param context The cache of context-specific information.
-	 * <!-- end-model-doc -->
-	 * @generated
-	 */
+	* <!-- begin-model-doc -->
+	* @param studyAct The receiving '<em><b>Study Act</b></em>' model object.
+	* @param diagnostics The chain of diagnostics to which problems are to be appended.
+	* @param context The cache of context-specific information.
+	* <!-- end-model-doc -->
+	* @generated
+	*/
 
 	public static boolean validateStudyActReferenceValue(StudyAct studyAct, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
@@ -351,13 +351,13 @@ public class StudyActOperations extends ClinicalStatementOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateStudyActTemplateId(StudyAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Study Act Template Id</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateStudyActTemplateId(StudyAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Study Act Template Id</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateStudyActTemplateId(StudyAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateStudyActTemplateId(StudyAct, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_STUDY_ACT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.6.2.6')";
 
 	/**

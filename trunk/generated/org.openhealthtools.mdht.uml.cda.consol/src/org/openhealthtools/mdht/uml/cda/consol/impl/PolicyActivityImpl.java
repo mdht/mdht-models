@@ -160,10 +160,10 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityPayerPayerAssignedEntityPayerOrganizationName(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityPayerPayerAssignedEntityPayerOrganizationName(
@@ -201,10 +201,10 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityPayerPayerAssignedEntityAddr(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityPayerPayerAssignedEntityAddr(this, diagnostics, context);
@@ -242,10 +242,10 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityPayerTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityPayerTypeCode(this, diagnostics, context);
 	}
@@ -294,10 +294,10 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityGuarantorGuarantorAssignedEntityAddr(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityGuarantorGuarantorAssignedEntityAddr(
@@ -325,10 +325,10 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityGuarantorTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityGuarantorTime(this, diagnostics, context);
 	}
@@ -394,10 +394,10 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityCoverageCoverageRoleAddr(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityCoverageCoverageRoleAddr(this, diagnostics, context);
@@ -442,10 +442,10 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityCoverageTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityCoverageTypeCode(this, diagnostics, context);
 	}
@@ -496,10 +496,10 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityHolderTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityHolderTypeCode(this, diagnostics, context);
 	}
@@ -534,10 +534,10 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityEntryRelationshipDescriptionCoveragePlan(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityEntryRelationshipDescriptionCoveragePlan(
@@ -545,29 +545,29 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePolicyActivityEntryRelationshipTypeCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityEntryRelationshipTypeCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public PolicyActivity init() {
 		return Initializer.Util.init(this);
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public PolicyActivity init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

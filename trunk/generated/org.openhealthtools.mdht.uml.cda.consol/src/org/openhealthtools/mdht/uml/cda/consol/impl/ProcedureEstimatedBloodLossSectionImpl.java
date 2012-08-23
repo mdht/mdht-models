@@ -85,10 +85,10 @@ public class ProcedureEstimatedBloodLossSectionImpl extends SectionImpl implemen
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateProcedureEstimatedBloodLossSectionText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProcedureEstimatedBloodLossSectionOperations.validateProcedureEstimatedBloodLossSectionText(
@@ -116,10 +116,10 @@ public class ProcedureEstimatedBloodLossSectionImpl extends SectionImpl implemen
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public ProcedureEstimatedBloodLossSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

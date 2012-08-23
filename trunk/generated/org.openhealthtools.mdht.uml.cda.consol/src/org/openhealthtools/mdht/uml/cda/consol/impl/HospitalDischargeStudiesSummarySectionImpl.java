@@ -86,10 +86,10 @@ public class HospitalDischargeStudiesSummarySectionImpl extends SectionImpl impl
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHospitalDischargeStudiesSummarySectionTitle(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HospitalDischargeStudiesSummarySectionOperations.validateHospitalDischargeStudiesSummarySectionTitle(
@@ -117,10 +117,10 @@ public class HospitalDischargeStudiesSummarySectionImpl extends SectionImpl impl
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public HospitalDischargeStudiesSummarySection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

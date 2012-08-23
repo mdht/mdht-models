@@ -79,10 +79,10 @@ public class InterventionsSectionImpl extends SectionImpl implements Interventio
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateInterventionsSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InterventionsSectionOperations.validateInterventionsSectionText(this, diagnostics, context);
 	}
@@ -106,10 +106,10 @@ public class InterventionsSectionImpl extends SectionImpl implements Interventio
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public InterventionsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

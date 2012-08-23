@@ -79,10 +79,10 @@ public class SurgicalDrainsSectionImpl extends SectionImpl implements SurgicalDr
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateSurgicalDrainsSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SurgicalDrainsSectionOperations.validateSurgicalDrainsSectionText(this, diagnostics, context);
 	}
@@ -106,10 +106,10 @@ public class SurgicalDrainsSectionImpl extends SectionImpl implements SurgicalDr
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public SurgicalDrainsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

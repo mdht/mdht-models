@@ -130,10 +130,10 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateProcedureNoteIndividual(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureNoteOperations.validateProcedureNoteIndividual(this, diagnostics, context);
 	}
@@ -807,10 +807,10 @@ public class ProcedureNoteImpl extends GeneralHeaderConstraintsImpl implements P
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	@Override
 	public ProcedureNote init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);

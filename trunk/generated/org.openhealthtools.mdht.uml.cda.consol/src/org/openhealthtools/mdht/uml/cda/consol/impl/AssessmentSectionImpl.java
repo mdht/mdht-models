@@ -79,10 +79,10 @@ public class AssessmentSectionImpl extends SectionImpl implements AssessmentSect
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateAssessmentSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AssessmentSectionOperations.validateAssessmentSectionText(this, diagnostics, context);
 	}
@@ -97,19 +97,19 @@ public class AssessmentSectionImpl extends SectionImpl implements AssessmentSect
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public AssessmentSection init() {
 		return Initializer.Util.init(this);
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public AssessmentSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

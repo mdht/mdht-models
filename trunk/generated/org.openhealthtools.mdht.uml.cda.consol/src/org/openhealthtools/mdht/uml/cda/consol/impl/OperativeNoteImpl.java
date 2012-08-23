@@ -85,10 +85,10 @@ public class OperativeNoteImpl extends GeneralHeaderConstraintsImpl implements O
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateOperativeNoteDocumentationOf(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return OperativeNoteOperations.validateOperativeNoteDocumentationOf(this, diagnostics, context);
 	}
@@ -513,10 +513,10 @@ public class OperativeNoteImpl extends GeneralHeaderConstraintsImpl implements O
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	@Override
 	public OperativeNote init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);

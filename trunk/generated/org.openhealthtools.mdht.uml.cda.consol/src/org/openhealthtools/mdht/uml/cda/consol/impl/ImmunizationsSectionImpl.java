@@ -62,19 +62,19 @@ public class ImmunizationsSectionImpl extends ImmunizationsSectionEntriesOptiona
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateImmunizationsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ImmunizationsSectionOperations.validateImmunizationsSectionCode(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateImmunizationsSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ImmunizationsSectionOperations.validateImmunizationsSectionTitle(this, diagnostics, context);
 	}
@@ -129,10 +129,10 @@ public class ImmunizationsSectionImpl extends ImmunizationsSectionEntriesOptiona
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	@Override
 	public ImmunizationsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);

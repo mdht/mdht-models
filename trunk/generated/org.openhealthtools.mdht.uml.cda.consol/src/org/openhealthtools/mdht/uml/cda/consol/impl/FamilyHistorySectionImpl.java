@@ -81,10 +81,10 @@ public class FamilyHistorySectionImpl extends SectionImpl implements FamilyHisto
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateFamilyHistorySectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FamilyHistorySectionOperations.validateFamilyHistorySectionTitle(this, diagnostics, context);
 	}
@@ -126,10 +126,10 @@ public class FamilyHistorySectionImpl extends SectionImpl implements FamilyHisto
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public FamilyHistorySection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

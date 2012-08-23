@@ -85,10 +85,10 @@ public class AllergiesSectionEntriesOptionalImpl extends SectionImpl implements 
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateAllergiesSectionEntriesOptionalTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AllergiesSectionEntriesOptionalOperations.validateAllergiesSectionEntriesOptionalTitle(
 			this, diagnostics, context);
@@ -134,10 +134,10 @@ public class AllergiesSectionEntriesOptionalImpl extends SectionImpl implements 
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public AllergiesSectionEntriesOptional init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

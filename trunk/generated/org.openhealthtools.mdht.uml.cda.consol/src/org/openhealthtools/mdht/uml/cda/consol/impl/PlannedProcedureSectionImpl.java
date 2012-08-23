@@ -81,10 +81,10 @@ public class PlannedProcedureSectionImpl extends SectionImpl implements PlannedP
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePlannedProcedureSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlannedProcedureSectionOperations.validatePlannedProcedureSectionText(this, diagnostics, context);
 	}
@@ -128,10 +128,10 @@ public class PlannedProcedureSectionImpl extends SectionImpl implements PlannedP
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public PlannedProcedureSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

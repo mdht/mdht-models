@@ -65,10 +65,10 @@ public class QuantityMeasurementObservationImpl extends ObservationImpl implemen
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateQuantityMeasurementObservationCodeCodeSystemDICOM(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return QuantityMeasurementObservationOperations.validateQuantityMeasurementObservationCodeCodeSystemDICOM(
@@ -76,10 +76,10 @@ public class QuantityMeasurementObservationImpl extends ObservationImpl implemen
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateQuantityMeasurementObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return QuantityMeasurementObservationOperations.validateQuantityMeasurementObservationTemplateId(
@@ -98,10 +98,10 @@ public class QuantityMeasurementObservationImpl extends ObservationImpl implemen
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateQuantityMeasurementObservationMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return QuantityMeasurementObservationOperations.validateQuantityMeasurementObservationMoodCode(
@@ -109,20 +109,20 @@ public class QuantityMeasurementObservationImpl extends ObservationImpl implemen
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateQuantityMeasurementObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return QuantityMeasurementObservationOperations.validateQuantityMeasurementObservationCode(
 			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateQuantityMeasurementObservationEffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return QuantityMeasurementObservationOperations.validateQuantityMeasurementObservationEffectiveTime(
@@ -130,20 +130,20 @@ public class QuantityMeasurementObservationImpl extends ObservationImpl implemen
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateQuantityMeasurementObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return QuantityMeasurementObservationOperations.validateQuantityMeasurementObservationValue(
 			this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateQuantityMeasurementObservationSOPInstanceObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return QuantityMeasurementObservationOperations.validateQuantityMeasurementObservationSOPInstanceObservation(
@@ -151,28 +151,28 @@ public class QuantityMeasurementObservationImpl extends ObservationImpl implemen
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EList<SOPInstanceObservation> getSOPInstanceObservations() {
 		return QuantityMeasurementObservationOperations.getSOPInstanceObservations(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public QuantityMeasurementObservation init() {
 		return Initializer.Util.init(this);
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public QuantityMeasurementObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

@@ -79,10 +79,10 @@ public class ReviewOfSystemsSectionImpl extends SectionImpl implements ReviewOfS
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateReviewOfSystemsSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ReviewOfSystemsSectionOperations.validateReviewOfSystemsSectionTitle(this, diagnostics, context);
 	}
@@ -106,10 +106,10 @@ public class ReviewOfSystemsSectionImpl extends SectionImpl implements ReviewOfS
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public ReviewOfSystemsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

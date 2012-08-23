@@ -49,9 +49,9 @@ public interface FindingsSection extends Section {
 	public FindingsSection init();
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public FindingsSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // FindingsSection

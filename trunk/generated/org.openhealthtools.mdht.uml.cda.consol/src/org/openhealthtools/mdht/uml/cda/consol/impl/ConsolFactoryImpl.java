@@ -934,20 +934,20 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public TobaccoUse createTobaccoUse() {
 		TobaccoUseImpl tobaccoUse = new TobaccoUseImpl();
 		return tobaccoUse;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public ResultsSection createResultsSection() {
 		ResultsSectionImpl resultsSection = new ResultsSectionImpl();
 		return resultsSection;
@@ -1014,120 +1014,120 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public FunctionalStatusResultObservation createFunctionalStatusResultObservation() {
 		FunctionalStatusResultObservationImpl functionalStatusResultObservation = new FunctionalStatusResultObservationImpl();
 		return functionalStatusResultObservation;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public CaregiverCharacteristics createCaregiverCharacteristics() {
 		CaregiverCharacteristicsImpl caregiverCharacteristics = new CaregiverCharacteristicsImpl();
 		return caregiverCharacteristics;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public AssessmentScaleObservation createAssessmentScaleObservation() {
 		AssessmentScaleObservationImpl assessmentScaleObservation = new AssessmentScaleObservationImpl();
 		return assessmentScaleObservation;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public AssessmentScaleSupportingObservation createAssessmentScaleSupportingObservation() {
 		AssessmentScaleSupportingObservationImpl assessmentScaleSupportingObservation = new AssessmentScaleSupportingObservationImpl();
 		return assessmentScaleSupportingObservation;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public CognitiveStatusResultOrganizer createCognitiveStatusResultOrganizer() {
 		CognitiveStatusResultOrganizerImpl cognitiveStatusResultOrganizer = new CognitiveStatusResultOrganizerImpl();
 		return cognitiveStatusResultOrganizer;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public CognitiveStatusResultObservation createCognitiveStatusResultObservation() {
 		CognitiveStatusResultObservationImpl cognitiveStatusResultObservation = new CognitiveStatusResultObservationImpl();
 		return cognitiveStatusResultObservation;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public FunctionalStatusProblemObservation createFunctionalStatusProblemObservation() {
 		FunctionalStatusProblemObservationImpl functionalStatusProblemObservation = new FunctionalStatusProblemObservationImpl();
 		return functionalStatusProblemObservation;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public CognitiveStatusProblemObservation createCognitiveStatusProblemObservation() {
 		CognitiveStatusProblemObservationImpl cognitiveStatusProblemObservation = new CognitiveStatusProblemObservationImpl();
 		return cognitiveStatusProblemObservation;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public PressureUlcerObservation createPressureUlcerObservation() {
 		PressureUlcerObservationImpl pressureUlcerObservation = new PressureUlcerObservationImpl();
 		return pressureUlcerObservation;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public NumberOfPressureUlcersObservation createNumberOfPressureUlcersObservation() {
 		NumberOfPressureUlcersObservationImpl numberOfPressureUlcersObservation = new NumberOfPressureUlcersObservationImpl();
 		return numberOfPressureUlcersObservation;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public HighestPressureUlcerStage createHighestPressureUlcerStage() {
 		HighestPressureUlcerStageImpl highestPressureUlcerStage = new HighestPressureUlcerStageImpl();
 		return highestPressureUlcerStage;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public ProblemSection createProblemSection() {
 		ProblemSectionImpl problemSection = new ProblemSectionImpl();
 		return problemSection;
@@ -1194,10 +1194,10 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public ServiceDeliveryLocation createServiceDeliveryLocation() {
 		ServiceDeliveryLocationImpl serviceDeliveryLocation = new ServiceDeliveryLocationImpl();
 		return serviceDeliveryLocation;
@@ -1844,20 +1844,20 @@ public class ConsolFactoryImpl extends EFactoryImpl implements ConsolFactory {
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public DeceasedObservation createDeceasedObservation() {
 		DeceasedObservationImpl deceasedObservation = new DeceasedObservationImpl();
 		return deceasedObservation;
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public MedicationsAdministeredSection createMedicationsAdministeredSection() {
 		MedicationsAdministeredSectionImpl medicationsAdministeredSection = new MedicationsAdministeredSectionImpl();
 		return medicationsAdministeredSection;

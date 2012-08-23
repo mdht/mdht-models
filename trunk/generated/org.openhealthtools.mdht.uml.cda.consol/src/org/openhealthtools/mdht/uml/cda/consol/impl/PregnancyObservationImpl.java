@@ -98,10 +98,10 @@ public class PregnancyObservationImpl extends ObservationImpl implements Pregnan
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePregnancyObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PregnancyObservationOperations.validatePregnancyObservationStatusCode(this, diagnostics, context);
 	}
@@ -154,10 +154,10 @@ public class PregnancyObservationImpl extends ObservationImpl implements Pregnan
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public PregnancyObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

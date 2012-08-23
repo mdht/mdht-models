@@ -62,10 +62,10 @@ public class MedicationsSectionImpl extends MedicationsSectionEntriesOptionalImp
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMedicationsSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationsSectionOperations.validateMedicationsSectionTitle(this, diagnostics, context);
 	}
@@ -120,10 +120,10 @@ public class MedicationsSectionImpl extends MedicationsSectionEntriesOptionalImp
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	@Override
 	public MedicationsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);

@@ -79,10 +79,10 @@ public class ObjectiveSectionImpl extends SectionImpl implements ObjectiveSectio
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateObjectiveSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ObjectiveSectionOperations.validateObjectiveSectionText(this, diagnostics, context);
 	}
@@ -106,10 +106,10 @@ public class ObjectiveSectionImpl extends SectionImpl implements ObjectiveSectio
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public ObjectiveSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

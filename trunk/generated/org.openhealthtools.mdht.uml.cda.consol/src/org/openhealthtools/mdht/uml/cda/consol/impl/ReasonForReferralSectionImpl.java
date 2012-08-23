@@ -79,10 +79,10 @@ public class ReasonForReferralSectionImpl extends SectionImpl implements ReasonF
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateReasonForReferralSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ReasonForReferralSectionOperations.validateReasonForReferralSectionTitle(this, diagnostics, context);
 	}
@@ -106,10 +106,10 @@ public class ReasonForReferralSectionImpl extends SectionImpl implements ReasonF
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public ReasonForReferralSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

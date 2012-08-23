@@ -85,10 +85,10 @@ public class MedicationsAdministeredSectionImpl extends SectionImpl implements M
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateMedicationsAdministeredSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MedicationsAdministeredSectionOperations.validateMedicationsAdministeredSectionText(
 			this, diagnostics, context);
@@ -134,10 +134,10 @@ public class MedicationsAdministeredSectionImpl extends SectionImpl implements M
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public MedicationsAdministeredSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

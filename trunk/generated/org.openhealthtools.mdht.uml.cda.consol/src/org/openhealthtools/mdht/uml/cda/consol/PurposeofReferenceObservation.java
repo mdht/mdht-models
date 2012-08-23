@@ -109,9 +109,9 @@ public interface PurposeofReferenceObservation extends Observation {
 	public PurposeofReferenceObservation init();
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public PurposeofReferenceObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // PurposeofReferenceObservation

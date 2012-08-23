@@ -87,19 +87,19 @@ public class PlanOfCareSectionImpl extends SectionImpl implements PlanOfCareSect
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePlanOfCareSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlanOfCareSectionOperations.validatePlanOfCareSectionTitle(this, diagnostics, context);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePlanOfCareSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PlanOfCareSectionOperations.validatePlanOfCareSectionText(this, diagnostics, context);
 	}
@@ -178,82 +178,82 @@ public class PlanOfCareSectionImpl extends SectionImpl implements PlanOfCareSect
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EList<PlanOfCareActivityAct> getPlanOfCareActivityActs() {
 		return PlanOfCareSectionOperations.getPlanOfCareActivityActs(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EList<PlanOfCareActivityEncounter> getPlanOfCareActivityEncounters() {
 		return PlanOfCareSectionOperations.getPlanOfCareActivityEncounters(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EList<PlanOfCareActivityObservation> getPlanOfCareActivityObservations() {
 		return PlanOfCareSectionOperations.getPlanOfCareActivityObservations(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EList<PlanOfCareActivityProcedure> getPlanOfCareActivityProcedures() {
 		return PlanOfCareSectionOperations.getPlanOfCareActivityProcedures(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EList<PlanOfCareActivitySubstanceAdministration> getPlanOfCareActivitySubstanceAdministrations() {
 		return PlanOfCareSectionOperations.getPlanOfCareActivitySubstanceAdministrations(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EList<PlanOfCareActivitySupply> getPlanOfCareActivitySupplies() {
 		return PlanOfCareSectionOperations.getPlanOfCareActivitySupplies(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public EList<Instructions> getInstructionss() {
 		return PlanOfCareSectionOperations.getInstructionss(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public PlanOfCareSection init() {
 		return Initializer.Util.init(this);
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public PlanOfCareSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

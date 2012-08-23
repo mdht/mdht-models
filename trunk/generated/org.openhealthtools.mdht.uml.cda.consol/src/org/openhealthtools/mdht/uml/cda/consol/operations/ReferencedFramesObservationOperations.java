@@ -231,25 +231,25 @@ public class ReferencedFramesObservationOperations extends ClinicalStatementOper
 	protected static Constraint VALIDATE_REFERENCED_FRAMES_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateReferencedFramesObservationCode(ReferencedFramesObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Referenced Frames Observation Code</em>}' operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL expression body for the '{@link #validateReferencedFramesObservationCode(ReferencedFramesObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Referenced Frames Observation Code</em>}' operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateReferencedFramesObservationCode(ReferencedFramesObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateReferencedFramesObservationCode(ReferencedFramesObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static final String VALIDATE_REFERENCED_FRAMES_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
 			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
 			+ "value.code = '121190' and value.codeSystem = '1.2.840.10008.2.16.4')";
 
 	/**
-	 * The cached OCL invariant for the '{@link #validateReferencedFramesObservationCode(ReferencedFramesObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Referenced Frames Observation Code</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
+	* The cached OCL invariant for the '{@link #validateReferencedFramesObservationCode(ReferencedFramesObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Referenced Frames Observation Code</em>}' invariant operation.
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #validateReferencedFramesObservationCode(ReferencedFramesObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
+	* @see #validateReferencedFramesObservationCode(ReferencedFramesObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	* @generated
+	* @ordered
+	*/
 	protected static Constraint VALIDATE_REFERENCED_FRAMES_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**

@@ -79,10 +79,10 @@ public class ProcedureImplantsSectionImpl extends SectionImpl implements Procedu
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateProcedureImplantsSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProcedureImplantsSectionOperations.validateProcedureImplantsSectionText(this, diagnostics, context);
 	}
@@ -106,10 +106,10 @@ public class ProcedureImplantsSectionImpl extends SectionImpl implements Procedu
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public ProcedureImplantsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

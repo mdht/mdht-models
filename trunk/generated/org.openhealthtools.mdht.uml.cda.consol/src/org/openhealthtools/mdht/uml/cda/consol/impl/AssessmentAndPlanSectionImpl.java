@@ -81,10 +81,10 @@ public class AssessmentAndPlanSectionImpl extends SectionImpl implements Assessm
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateAssessmentAndPlanSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return AssessmentAndPlanSectionOperations.validateAssessmentAndPlanSectionText(this, diagnostics, context);
 	}
@@ -119,10 +119,10 @@ public class AssessmentAndPlanSectionImpl extends SectionImpl implements Assessm
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public AssessmentAndPlanSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

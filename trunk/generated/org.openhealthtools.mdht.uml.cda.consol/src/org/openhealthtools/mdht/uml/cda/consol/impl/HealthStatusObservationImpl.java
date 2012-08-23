@@ -74,10 +74,10 @@ public class HealthStatusObservationImpl extends ObservationImpl implements Heal
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHealthStatusObservationHasTextReferenceValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return HealthStatusObservationOperations.validateHealthStatusObservationHasTextReferenceValue(
@@ -157,19 +157,19 @@ public class HealthStatusObservationImpl extends ObservationImpl implements Heal
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public HealthStatusObservation init() {
 		return Initializer.Util.init(this);
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public HealthStatusObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

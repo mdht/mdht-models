@@ -79,10 +79,10 @@ public class ReasonForVisitSectionImpl extends SectionImpl implements ReasonForV
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateReasonForVisitSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ReasonForVisitSectionOperations.validateReasonForVisitSectionText(this, diagnostics, context);
 	}
@@ -106,10 +106,10 @@ public class ReasonForVisitSectionImpl extends SectionImpl implements ReasonForV
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public ReasonForVisitSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

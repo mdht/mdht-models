@@ -84,10 +84,10 @@ public class PreoperativeDiagnosisSectionImpl extends SectionImpl implements Pre
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validatePreoperativeDiagnosisSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PreoperativeDiagnosisSectionOperations.validatePreoperativeDiagnosisSectionText(
 			this, diagnostics, context);
@@ -133,10 +133,10 @@ public class PreoperativeDiagnosisSectionImpl extends SectionImpl implements Pre
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public PreoperativeDiagnosisSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

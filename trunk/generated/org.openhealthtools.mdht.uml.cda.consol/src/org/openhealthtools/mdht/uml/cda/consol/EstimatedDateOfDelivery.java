@@ -109,9 +109,9 @@ public interface EstimatedDateOfDelivery extends Observation {
 	public EstimatedDateOfDelivery init();
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public EstimatedDateOfDelivery init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // EstimatedDateOfDelivery

@@ -84,10 +84,10 @@ public class HistoryOfPastIllnessSectionImpl extends SectionImpl implements Hist
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateHistoryOfPastIllnessSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return HistoryOfPastIllnessSectionOperations.validateHistoryOfPastIllnessSectionTitle(
 			this, diagnostics, context);
@@ -132,10 +132,10 @@ public class HistoryOfPastIllnessSectionImpl extends SectionImpl implements Hist
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public HistoryOfPastIllnessSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

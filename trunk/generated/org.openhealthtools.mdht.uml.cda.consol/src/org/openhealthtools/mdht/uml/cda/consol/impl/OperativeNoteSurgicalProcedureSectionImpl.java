@@ -86,10 +86,10 @@ public class OperativeNoteSurgicalProcedureSectionImpl extends SectionImpl imple
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateOperativeNoteSurgicalProcedureSectionText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return OperativeNoteSurgicalProcedureSectionOperations.validateOperativeNoteSurgicalProcedureSectionText(
@@ -117,10 +117,10 @@ public class OperativeNoteSurgicalProcedureSectionImpl extends SectionImpl imple
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public OperativeNoteSurgicalProcedureSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

@@ -79,10 +79,10 @@ public class GeneralStatusSectionImpl extends SectionImpl implements GeneralStat
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateGeneralStatusSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return GeneralStatusSectionOperations.validateGeneralStatusSectionTitle(this, diagnostics, context);
 	}
@@ -106,10 +106,10 @@ public class GeneralStatusSectionImpl extends SectionImpl implements GeneralStat
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public GeneralStatusSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

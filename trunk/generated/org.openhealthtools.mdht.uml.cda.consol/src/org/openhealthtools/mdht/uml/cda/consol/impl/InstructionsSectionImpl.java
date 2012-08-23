@@ -81,10 +81,10 @@ public class InstructionsSectionImpl extends SectionImpl implements Instructions
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateInstructionsSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return InstructionsSectionOperations.validateInstructionsSectionText(this, diagnostics, context);
 	}
@@ -126,10 +126,10 @@ public class InstructionsSectionImpl extends SectionImpl implements Instructions
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public InstructionsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

@@ -121,10 +121,10 @@ public class AuthorizationActivityImpl extends ActImpl implements AuthorizationA
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateAuthorizationActivityEntryRelationshipTypeCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AuthorizationActivityOperations.validateAuthorizationActivityEntryRelationshipTypeCode(
@@ -141,10 +141,10 @@ public class AuthorizationActivityImpl extends ActImpl implements AuthorizationA
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public AuthorizationActivity init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;

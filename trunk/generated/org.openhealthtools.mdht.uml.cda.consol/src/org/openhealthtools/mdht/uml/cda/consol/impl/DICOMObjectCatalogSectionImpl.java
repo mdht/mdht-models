@@ -82,10 +82,10 @@ public class DICOMObjectCatalogSectionImpl extends SectionImpl implements DICOMO
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public boolean validateDICOMObjectCatalogSectionStudyAct(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return DICOMObjectCatalogSectionOperations.validateDICOMObjectCatalogSectionStudyAct(this, diagnostics, context);
 	}
@@ -100,19 +100,19 @@ public class DICOMObjectCatalogSectionImpl extends SectionImpl implements DICOMO
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+	* <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+	* @generated
+	*/
 	public DICOMObjectCatalogSection init() {
 		return Initializer.Util.init(this);
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+	 * @generated
+	 */
 	public DICOMObjectCatalogSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
 		Initializer.Util.init(this, initializers);
 		return this;
