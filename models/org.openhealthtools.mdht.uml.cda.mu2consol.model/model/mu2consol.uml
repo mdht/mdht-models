@@ -147,11 +147,14 @@
         </generalization>
         <ownedAttribute xmi:id="_PBQIQNk3EeGsqcJR8eqiMw" name="encompassingEncounter" visibility="private" aggregation="composite" association="_PBQvUNk3EeGsqcJR8eqiMw">
           <type xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_j5JZsEAJEd6wZe6nFLrjsw"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PBQIQdk3EeGsqcJR8eqiMw" value="1"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PBQIQtk3EeGsqcJR8eqiMw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5z5zMOzeEeGT-eFu7Ghgjw" value="1"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5z5zMezeEeGT-eFu7Ghgjw" value="1"/>
           <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_4f5bQUAJEd6wZe6nFLrjsw"/>
         </ownedAttribute>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_kpbKkNk3EeGsqcJR8eqiMw" name="EncompassingEncounter">
+          <ownedComment xmi:id="_Q3kqgOzcEeGT-eFu7Ghgjw">
+            <body>INLINE</body>
+          </ownedComment>
           <generalization xmi:id="_l2YF4Nk3EeGsqcJR8eqiMw">
             <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_j5JZsEAJEd6wZe6nFLrjsw"/>
           </generalization>
@@ -892,7 +895,6 @@
   <CDA:AssociationValidation xmi:id="_ZDxecOyxEeGT-eFu7Ghgjw" base_Association="_bims0NkzEeGsqcJR8eqiMw"/>
   <CDA:AssociationValidation xmi:id="_aMqZIOyxEeGT-eFu7Ghgjw" base_Association="_jc97U9kzEeGsqcJR8eqiMw"/>
   <CDA:AssociationValidation xmi:id="_iJEPAOyxEeGT-eFu7Ghgjw" base_Association="_u7f0I9kzEeGsqcJR8eqiMw"/>
-  <CDA:AssociationValidation xmi:id="_mTDjMOyxEeGT-eFu7Ghgjw" base_Association="_PBQvUNk3EeGsqcJR8eqiMw"/>
   <CDA:PropertyValidation xmi:id="_njlW8OyxEeGT-eFu7Ghgjw" base_Property="_peFMYNk3EeGsqcJR8eqiMw"/>
   <CDA:AssociationValidation xmi:id="_oar-EOyxEeGT-eFu7Ghgjw" base_Association="_peFMZNk3EeGsqcJR8eqiMw"/>
   <CDA:AssociationValidation xmi:id="_pMBUYOyxEeGT-eFu7Ghgjw" base_Association="_peFzdNk3EeGsqcJR8eqiMw"/>
