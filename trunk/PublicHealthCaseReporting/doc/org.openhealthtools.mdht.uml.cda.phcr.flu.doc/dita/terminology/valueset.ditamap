@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map title="Value Sets">
+<topicref href="PHVS_ChestImagingTests_PHCR.dita" type="topic" />
+<topicref href="PHVS_ChestXRayResult_CDC.dita" type="topic" />
+<topicref href="PHVS_DiseaseAcquiredJurisdiction_NND.dita" type="topic" />
+<topicref href="PHVS_DiseaseType_Flu.dita" type="topic" />
+<topicref href="PHVS_EmploymentStatus_Flu.dita" type="topic" />
+<topicref href="PHVS_LabTestInterpretation_Flu.dita" type="topic" />
+<topicref href="PHVS_LabTestName_NovelInfluenza_PHCR.dita" type="topic" />
+<topicref href="PHVS_LabTestProcedure_Flu.dita" type="topic" />
+<topicref href="PHVS_MedicationTreatment_Flu.dita" type="topic" />
+<topicref href="PHVS_MedicationTreatment_Flu_PHCR.dita" type="topic" />
+<topicref href="PHVS_Relationship_Flu.dita" type="topic" />
+<topicref href="PHVS_SignsSymptoms_Flu .dita" type="topic" />
+<topicref href="PHVS_Specimen_Flu.dita" type="topic" />
+<topicref href="PHVS_VaccinesAdministered_Flu.dita" type="topic" />
+</map>

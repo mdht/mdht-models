@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="classId" xml:lang="en-us">
+<title>Influenza Case Observation - conformance rules</title>
+<shortdesc id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.15.3.78</tt>]</shortdesc>
+<prolog id="prolog">
+<metadata><category>Observation</category></metadata>
+<resourceid id="2.16.840.1.113883.10.20.15.3.78"/>
+</prolog>
+<body>
+<section id="description">
+</section>
+<ol id="conformance">
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.phcr.doc/classes/CaseObservation.html">PHCR Case Observation</xref> template (templateId: <tt>2.16.840.1.113883.10.20.15.3.54</tt>)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> 2.16.840.1.114222.4.11.6034 <xref href="../../terminology/PHVS_DiseaseType_Flu.dita">PHVS_DiseaseType_Flu</xref></tt><b> DYNAMIC</b>, where its data type is CD
+</li>
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt>, such that
+<ol>
+<li>Contains <tt><b>@typeCode="</b>MFST" </tt><i>MFST (is manifestation of)</i></li>
+<li>Contains exactly one [1..1] <xref href="../InfluenzaSignsAndSymptomsObservation.dita">Influenza Signs And Symptoms Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.15.3.74</tt>)</li></ol></li>
+</ol>
+<ol id="aggregate">
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/ProblemObservation.html">CCD Problem Observation</xref> template (templateId: <tt>2.16.840.1.113883.10.20.1.28</tt>)</li>
+<li><b>SHALL</b> conform to <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.phcr.doc/classes/CaseObservation.html">PHCR Case Observation</xref> template (templateId: <tt>2.16.840.1.113883.10.20.15.3.54</tt>)</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@classCode</b>="OBS" </tt><i>Observation</i> (CodeSystem:<tt> 2.16.840.1.113883.5.6 HL7ActClass</tt>) (CONF:1868)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>@moodCode</b>="EVN" </tt><i>Event</i> (CodeSystem:<tt> 2.16.840.1.113883.5.1001 HL7ActMood</tt>) (CONF:1869)
+</li>
+<li><b>MAY</b> contain zero or more [0..*] <tt><b>id</b></tt> (CONF:1870)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>code</b></tt><tt><b>/@code</b>="ASSERTION" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.4 HL7ActCode</tt>) (CONF:1871)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>statusCode</b></tt><tt><b>/@code</b>="completed" </tt> (CodeSystem:<tt> 2.16.840.1.113883.5.14 ActStatus</tt>) (CONF:1872)
+</li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>effectiveTime</b></tt> (CONF:1873)
+</li>
+<li><b>SHALL</b> contain exactly one [1..1] <tt><b>value</b></tt>, which <b>SHALL</b> be selected from ValueSet<tt> 2.16.840.1.114222.4.11.6034 <xref href="../../terminology/PHVS_DiseaseType_Flu.dita">PHVS_DiseaseType_Flu</xref></tt><b> DYNAMIC</b>, where its data type is CD
+</li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF-162), such that
+<ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR (refers to)</i></li>
+<li>Contains exactly one [1..1] <xref href="../ProblemStatusObservation.dita">Problem Status Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.50</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF-165), such that
+<ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR (refers to)</i></li>
+<li>Contains exactly one [1..1] <xref href="../ProblemHealthStatusObservation.dita">Problem Health Status Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.51</tt>)</li></ol></li>
+<li><b>MAY</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF-160), such that
+<ol>
+<li>Contains <tt><b>@typeCode="</b>SUBJ" </tt><i>SUBJ (has subject)</i></li>
+<li>Contains exactly one [1..1] <xref href="../AgeObservation.dita">Age Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.38</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain zero or one [0..1] <tt><b>entryRelationship</b></tt> (CONF:1884, CONF:1885, CONF:1886), such that
+<ol>
+<li>Contains <tt><b>@typeCode="</b>REFR" </tt><i>REFR (refers to)</i></li>
+<li>Contains exactly one [1..1] <xref format="html" href="http://www.cdatools.org/infocenter/topic/org.openhealthtools.mdht.uml.cda.ccd.doc/classes/ProblemStatusObservation.html">CCD Problem Status Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.1.50</tt>)</li></ol></li>
+<li><b>SHOULD</b> contain zero or more [0..*] <tt><b>entryRelationship</b></tt>, such that
+<ol>
+<li>Contains <tt><b>@typeCode="</b>MFST" </tt><i>MFST (is manifestation of)</i></li>
+<li>Contains exactly one [1..1] <xref href="../InfluenzaSignsAndSymptomsObservation.dita">Influenza Signs And Symptoms Observation</xref> (templateId: <tt>2.16.840.1.113883.10.20.15.3.74</tt>)</li></ol></li>
+<li><b>SHALL</b> contain one or more sources of information. (CONF-161)<ul><li><codeblock>[OCL]: not self.informant-&gt;isEmpty() 
+or not self.getSection().informant-&gt;isEmpty()
+or not self.getClinicalDocument().informant-&gt;isEmpty()
+or self.reference-&gt;exists(ref : cda::Reference | ref.typeCode = vocab::x_ActRelationshipExternalReference::XCRPT)
+or (self.entryRelationship-&gt;exists(rel : cda::EntryRelationship | 
+   rel.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR
+   and rel.observation.code.code = '48766-0'))</codeblock></li></ul></li>
+<li><b>MAY</b> contain exactly one Patient Awareness (CONF-180)<ul><li><codeblock>[OCL]: self.participant-&gt;one(partic : cda::Participant2 | partic.oclIsKindOf(ccd::PatientAwareness))</codeblock></li></ul></li>
+<li><b>SHOULD</b> contain [0..1] effectiveTime/low (CONF:1873)<ul><li><codeblock>[OCL]: self.effectiveTime-&gt;exists(time : datatypes::IVL_TS | not time.low.oclIsUndefined())</codeblock></li></ul></li>
+<li><b>SHOULD</b> contain [0..1] author (CONF:1875)<ul><li><codeblock>[OCL]: self.author-&gt;exists(author : cda::Author | not author.oclIsUndefined())</codeblock></li></ul></li>
+<li>Author <b>SHALL</b> contain [1..1] time (CONF:1876)</li>
+<li>Author <b>SHALL</b> contain [1..1] assignedAuthor (CONF:1877)<ul><li><codeblock>[OCL]: self.author.assignedAuthor-&gt;exists(assignedAuthor : cda::AssignedAuthor | not assignedAuthor.oclIsUndefined())</codeblock></li></ul></li>
+<li>Author / AssignedAuthor <b>SHALL</b> contain [1..*] id (CONF:1878)</li>
+<li>Author / AssignedAuthor <b>MAY</b> contain [0..*] addr (CONF:1879)</li>
+<li>Author / AssignedAuthor <b>MAY</b> contain [0..*] telecom (CONF:1880)</li>
+<li>Author / AssignedAuthor <b>MAY</b> contain [0..1] assignedPerson (CONF:1881)</li>
+<li>Author / AssignedAuthor / Person <b>MAY</b> contain [0..1] name (CONF:1882)</li>
+<li>Author / AssignedAuthor <b>MAY</b> contain [0..1] representedOrganization (CONF:1883)</li>
+</ol>
+
+<codeblock id="example"><![CDATA[]]></codeblock>
+<section id="changes">
+</section>
+<p><ph id="classformalname">Influenza Case Observation</ph></p>
+<p id="shortdesc">[Observation: templateId <tt>2.16.840.1.113883.10.20.15.3.78</tt>]</p>
+</body>
+</topic>
