@@ -4,6 +4,7 @@
 	<comment></comment>
 	<projects>
 		<project>org.openhealthtools.mdht.uml.cda.flu</project>
+		<project>org.openhealthtools.mdht.uml.cda.phcr.streppneumo</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
