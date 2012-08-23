@@ -18,7 +18,7 @@
         <body>INLINE</body>
       </ownedComment>
       <generalization xmi:id="_v-6qsdkMEeGsqcJR8eqiMw">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_S9OzADxXEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda.consol.model/model/.controlled/consol-documents.uml#_2DNRcBSVEeGGzu7fmW9pXw"/>
       </generalization>
       <ownedAttribute xmi:id="_zQyEENkMEeGsqcJR8eqiMw" name="recordTarget" visibility="private" type="_3AG1gNkMEeGsqcJR8eqiMw" aggregation="composite" association="_zQyEE9kMEeGsqcJR8eqiMw">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zQyEEdkMEeGsqcJR8eqiMw" value="*"/>
@@ -26,8 +26,8 @@
         <redefinedProperty href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_EC35wUALEd6wZe6nFLrjsw"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_UQ1vYNkzEeGsqcJR8eqiMw" name="documentationOf" visibility="private" type="_WwN74NkzEeGsqcJR8eqiMw" aggregation="composite" association="_UQ1IUNkzEeGsqcJR8eqiMw">
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UQ1vYdkzEeGsqcJR8eqiMw" value="*"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UQ1vYtkzEeGsqcJR8eqiMw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ck6EsOyxEeGT-eFu7Ghgjw" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ck6rwOyxEeGT-eFu7Ghgjw" value="1"/>
       </ownedAttribute>
       <ownedAttribute xmi:id="_IXAd0Nk3EeGsqcJR8eqiMw" name="componentOf" visibility="private" type="_LVzxQNk3EeGsqcJR8eqiMw" aggregation="composite" association="_IW_2wNk3EeGsqcJR8eqiMw">
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IXAd0dk3EeGsqcJR8eqiMw" value="1"/>
@@ -838,7 +838,6 @@
   <Ecore:EReference xmi:id="_WqzTY9kSEeGsqcJR8eqiMw" xmlName="administrativeGenderCode" xmlNamespace="##targetNamespace" xmlFeatureKind="Element" base_Property="_WqzTYNkSEeGsqcJR8eqiMw"/>
   <Ecore:EReference xmi:id="_4hjPwNkwEeGsqcJR8eqiMw" xmlName="birthTime" xmlNamespace="##targetNamespace" xmlFeatureKind="Element" base_Property="_4hiosNkwEeGsqcJR8eqiMw"/>
   <CDA:CDATemplate xmi:id="_Su_88NpWEeGzu8-aAsCS4g" base_Class="_VG3DUNkxEeGsqcJR8eqiMw" templateId="2.16.840.1.113883.11.11.11.1.1" assigningAuthorityName="TEMP"/>
-  <CDA:CDATemplate xmi:id="_dKwKINpWEeGzu8-aAsCS4g" base_Class="_v-6qsNkMEeGsqcJR8eqiMw" templateId="2.16.840.1.113883.10.20.22.1.1"/>
   <CDA:AssociationValidation xmi:id="_-OBq4NpjEeGzu8-aAsCS4g" base_Association="_zQyEE9kMEeGsqcJR8eqiMw"/>
   <CDA:AssociationValidation xmi:id="_BDI20NpkEeGzu8-aAsCS4g" base_Association="_5PVGINkMEeGsqcJR8eqiMw"/>
   <CDA:AssociationValidation xmi:id="_CepykNpkEeGzu8-aAsCS4g" base_Association="_W2CP0NkOEeGsqcJR8eqiMw"/>
@@ -883,4 +882,18 @@
   <CDA:ConstraintValidation xmi:id="_rb7RoOvZEeGkopdZmUN1Xw" base_Constraint="_VUReAOvZEeGkopdZmUN1Xw"/>
   <CDA:ConstraintValidation xmi:id="_eegHAOvbEeGkopdZmUN1Xw" base_Constraint="_izlGUOvaEeGkopdZmUN1Xw"/>
   <CDA:ConstraintValidation xmi:id="_f8jZYOvbEeGkopdZmUN1Xw" base_Constraint="_2nwZAN3EEeGdQcioKnmIhA"/>
+  <CDA:PropertyValidation xmi:id="_1EOt8OywEeGT-eFu7Ghgjw" base_Property="_KHKMoNkSEeGsqcJR8eqiMw"/>
+  <CDA:PropertyValidation xmi:id="_12QAwOywEeGT-eFu7Ghgjw" base_Property="_WqzTYNkSEeGsqcJR8eqiMw"/>
+  <CDA:PropertyValidation xmi:id="_2a0GYOywEeGT-eFu7Ghgjw" base_Property="_dBj98NkOEeGsqcJR8eqiMw"/>
+  <CDA:PropertyValidation xmi:id="_3TWQ4OywEeGT-eFu7Ghgjw" base_Property="_dBklANkOEeGsqcJR8eqiMw"/>
+  <CDA:PropertyValidation xmi:id="_4ilEIOywEeGT-eFu7Ghgjw" base_Property="_4hiosNkwEeGsqcJR8eqiMw"/>
+  <CDA:PropertyValidation xmi:id="_5_P2cOywEeGT-eFu7Ghgjw" base_Property="_LWYIENkuEeGsqcJR8eqiMw"/>
+  <CDA:AssociationValidation xmi:id="_C3dNQOyxEeGT-eFu7Ghgjw" base_Association="_UQ1IUNkzEeGsqcJR8eqiMw"/>
+  <CDA:AssociationValidation xmi:id="_ZDxecOyxEeGT-eFu7Ghgjw" base_Association="_bims0NkzEeGsqcJR8eqiMw"/>
+  <CDA:AssociationValidation xmi:id="_aMqZIOyxEeGT-eFu7Ghgjw" base_Association="_jc97U9kzEeGsqcJR8eqiMw"/>
+  <CDA:AssociationValidation xmi:id="_iJEPAOyxEeGT-eFu7Ghgjw" base_Association="_u7f0I9kzEeGsqcJR8eqiMw"/>
+  <CDA:AssociationValidation xmi:id="_mTDjMOyxEeGT-eFu7Ghgjw" base_Association="_PBQvUNk3EeGsqcJR8eqiMw"/>
+  <CDA:PropertyValidation xmi:id="_njlW8OyxEeGT-eFu7Ghgjw" base_Property="_peFMYNk3EeGsqcJR8eqiMw"/>
+  <CDA:AssociationValidation xmi:id="_oar-EOyxEeGT-eFu7Ghgjw" base_Association="_peFMZNk3EeGsqcJR8eqiMw"/>
+  <CDA:AssociationValidation xmi:id="_pMBUYOyxEeGT-eFu7Ghgjw" base_Association="_peFzdNk3EeGsqcJR8eqiMw"/>
 </xmi:XMI>

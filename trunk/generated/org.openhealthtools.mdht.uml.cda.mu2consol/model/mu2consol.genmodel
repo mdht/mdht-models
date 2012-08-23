@@ -29,25 +29,29 @@
   <genPackages xsi:type="genmodel:GenPackage" prefix="Mu2consol" basePackage="org.openhealthtools.mdht.uml.cda"
       disposableProviderFactory="true" ecorePackage="mu2consol.ecore#/" operationsPackage="org.openhealthtools.mdht.uml.cda.mu2consol.operations">
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="mu2consol.ecore#//GeneralHeaderConstraints">
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsTemplateId">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsTemplateId/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsTemplateId/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//GeneralHeaderConstraints/mu2consolGeneralHeaderConstraintsRecordTarget">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//GeneralHeaderConstraints/mu2consolGeneralHeaderConstraintsRecordTarget/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//GeneralHeaderConstraints/mu2consolGeneralHeaderConstraintsRecordTarget/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTarget">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTarget/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTarget/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//GeneralHeaderConstraints/mu2consolGeneralHeaderConstraintsDocumentationOf">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//GeneralHeaderConstraints/mu2consolGeneralHeaderConstraintsDocumentationOf/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//GeneralHeaderConstraints/mu2consolGeneralHeaderConstraintsDocumentationOf/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntity">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntity/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntity/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRolePatient">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRolePatient/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRolePatient/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsDocumentationOfServiceEventPerformer">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsDocumentationOfServiceEventPerformer/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsDocumentationOfServiceEventPerformer/context"/>
       </genOperations>
-      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRole">
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRole/diagnostics"/>
-        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsRecordTargetPatientRole/context"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsDocumentationOfServiceEvent">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsDocumentationOfServiceEvent/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsDocumentationOfServiceEvent/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="mu2consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsComponent1EncompassingEncounter">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsComponent1EncompassingEncounter/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="mu2consol.ecore#//GeneralHeaderConstraints/GeneralHeaderConstraintsComponent1EncompassingEncounter/context"/>
       </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="mu2consol.ecore#//SummaryOfCareRecord">
