@@ -645,7 +645,7 @@ public class StrepPneumoCDACreate {
 			qualifierValue1.setCodeSystemName(SNOMED_SYSTEM_NAME);
 			qualifierValue1.setDisplayName("Associated finding");
 
-			CD qualifierCode1 = Datatypes.createCD("TBD", "2.16.840.1.114222.4.5.274", "PHIN VADS", "Streptococcus pneumoniae exposure");
+			CD qualifierCode1 = Datatypes.createCD("444400000", SNOMED_OID, SNOMED_SYSTEM_NAME, "Exposure to Streptococcus");
 
 			CV qualifierValue2 = Datatypes.createCV();
 			qualifierValue2.setCode("408729009");
@@ -1434,94 +1434,94 @@ public class StrepPneumoCDACreate {
 		organizer.getInformants().add(organizerInformant);
 		
 		
-		// Result Observation
-		List<II> stainObservationIdList = new ArrayList<II>();
-		stainObservationIdList.add(Datatypes.createII(NullFlavor.NI));
-		CD stainObservationCode = Datatypes.createCD("664-3", LOINC_OID, LOINC_SYSTEM_NAME, "Gram Stain");
-		IVL_TS stainObservationEffectiveTime = Datatypes.createIVL_TS(TIME_STAMP_ENCOUNTER);
-		ANY stainValue = Datatypes.createCD("11471007", SNOMED_OID, SNOMED_SYSTEM_NAME, "Gram-positive diplococcus");
+		// Streptococcus pneumoniae Ag [Presence] in Serum - Result Observation
+		List<II> serumObservationIdList = new ArrayList<II>();
+		serumObservationIdList.add(Datatypes.createII(NullFlavor.NI));
+		CD serumObservationCode = Datatypes.createCD("11086-6", LOINC_OID, LOINC_SYSTEM_NAME, "S pneum Ag Ser Ql");
+		IVL_TS serumObservationEffectiveTime = Datatypes.createIVL_TS(TIME_STAMP_ENCOUNTER);
+		ANY serumValue = Datatypes.createCD("409807008", SNOMED_OID, SNOMED_SYSTEM_NAME, "Penicillin resistant Streptococcus pneumoniae");
 		
-		String stainObservationSectionText1 = "Collected " + timeStampFormat(TIME_STAMP_ENCOUNTER, TEST_DATE_FORMAT) + " " + organizerSpecimenType.getDisplayName() + " - " + stainObservationCode.getDisplayName() + ", Gram-positive diplococcus";
-		String stainObservationSectionText2 = "Fort Myers Hospital Laboratory, 175 Coral Drive, Fort Myers, FL 06475 (tel:+1-239-555-5401)";
+		String serumObservationSectionText1 = "Collected " + timeStampFormat(TIME_STAMP_ENCOUNTER, TEST_DATE_FORMAT) + " " + organizerSpecimenType.getDisplayName() + " - " + serumObservationCode.getDisplayName() + ", Penicillin resistant Streptococcus pneumoniae";
+		String serumObservationSectionText2 = "Fort Myers Hospital Laboratory, 175 Coral Drive, Fort Myers, FL 06475 (tel:+1-239-555-5401)";
 		
-		StrepPneumoResultObservation stainObservation = SP.createStrepPneumoResultObservation().init();
-		organizer.addObservation(stainObservation);
+		StrepPneumoResultObservation serumObservation = SP.createStrepPneumoResultObservation().init();
+		organizer.addObservation(serumObservation);
 		
-		for (int i=0; i < stainObservationIdList.size(); i++) {
-			stainObservation.getIds().add(stainObservationIdList.get(i));
+		for (int i=0; i < serumObservationIdList.size(); i++) {
+			serumObservation.getIds().add(serumObservationIdList.get(i));
 		}
-		if (stainObservationCode != null) stainObservation.setCode(stainObservationCode);
-		if (stainObservationEffectiveTime != null) stainObservation.setEffectiveTime(stainObservationEffectiveTime);
-		if (stainValue != null) stainObservation.getValues().add(stainValue);
+		if (serumObservationCode != null) serumObservation.setCode(serumObservationCode);
+		if (serumObservationEffectiveTime != null) serumObservation.setEffectiveTime(serumObservationEffectiveTime);
+		if (serumValue != null) serumObservation.getValues().add(serumValue);
 		
 		// Result Observation Informant (required)
-		II stainObservationInformantId = Datatypes.createII(NullFlavor.NI);
+		II serumObservationInformantId = Datatypes.createII(NullFlavor.NI);
 		
-		ON stainObservationOrganizationName = Datatypes.createON();
-		stainObservationOrganizationName.addText("Fort Myers Hospital Laboratory");	
+		ON serumObservationOrganizationName = Datatypes.createON();
+		serumObservationOrganizationName.addText("Fort Myers Hospital Laboratory");	
 		
-		AD stainObservationOrganizationAddress = Datatypes.createAD();
-		stainObservationOrganizationAddress.addStreetAddressLine("175 Coral Drive");
-		stainObservationOrganizationAddress.addCity(TEST_CITY);
-		stainObservationOrganizationAddress.addState(TEST_STATE);
-		stainObservationOrganizationAddress.addPostalCode(TEST_POSTALCODE);	
+		AD serumObservationOrganizationAddress = Datatypes.createAD();
+		serumObservationOrganizationAddress.addStreetAddressLine("175 Coral Drive");
+		serumObservationOrganizationAddress.addCity(TEST_CITY);
+		serumObservationOrganizationAddress.addState(TEST_STATE);
+		serumObservationOrganizationAddress.addPostalCode(TEST_POSTALCODE);	
 		
-		TEL stainObservationOrganizationTelecom = Datatypes.createTEL(TEST_TELECOM);
+		TEL serumObservationOrganizationTelecom = Datatypes.createTEL(TEST_TELECOM);
 		
-		Informant12 stainObservationInformant = CDA.createInformant12();
-		AssignedEntity stainObservationInformantEntity = CDA.createAssignedEntity();
-		Organization stainObservationOrganization = CDA.createOrganization();
-		stainObservationInformantEntity.getIds().add(stainObservationInformantId);
-		stainObservationInformantEntity.getAddrs().add(stainObservationOrganizationAddress);
-		stainObservationInformantEntity.getTelecoms().add(stainObservationOrganizationTelecom);
-		stainObservationOrganization.getNames().add(stainObservationOrganizationName);
-		stainObservationInformantEntity.getRepresentedOrganizations().add(stainObservationOrganization);
-		stainObservationInformant.setAssignedEntity(stainObservationInformantEntity);
-		stainObservation.getInformants().add(stainObservationInformant);
+		Informant12 serumObservationInformant = CDA.createInformant12();
+		AssignedEntity serumObservationInformantEntity = CDA.createAssignedEntity();
+		Organization serumObservationOrganization = CDA.createOrganization();
+		serumObservationInformantEntity.getIds().add(serumObservationInformantId);
+		serumObservationInformantEntity.getAddrs().add(serumObservationOrganizationAddress);
+		serumObservationInformantEntity.getTelecoms().add(serumObservationOrganizationTelecom);
+		serumObservationOrganization.getNames().add(serumObservationOrganizationName);
+		serumObservationInformantEntity.getRepresentedOrganizations().add(serumObservationOrganization);
+		serumObservationInformant.setAssignedEntity(serumObservationInformantEntity);
+		serumObservation.getInformants().add(serumObservationInformant);
 		
-		// Result Observation
-		List<II> idObservationIdList = new ArrayList<II>();
-		idObservationIdList.add(Datatypes.createII(NullFlavor.NI));
-		CD idObservationCode = Datatypes.createCD("45335-7", LOINC_OID, LOINC_SYSTEM_NAME, "Bacteria ID test Islt Ql Cult");
-		IVL_TS idObservationEffectiveTime = Datatypes.createIVL_TS(TIME_STAMP_ENCOUNTER);
-		ANY idValue = Datatypes.createCD("9861002", SNOMED_OID, SNOMED_SYSTEM_NAME, "Streptococcus pneumoniae");
+		// Streptococcus pneumoniae Ag [Presence] in Sputum - Result Observation
+		List<II> sputumObservationIdList = new ArrayList<II>();
+		sputumObservationIdList.add(Datatypes.createII(NullFlavor.NI));
+		CD sputumObservationCode = Datatypes.createCD("31968-1", LOINC_OID, LOINC_SYSTEM_NAME, "S pneum Ag Spt Ql");
+		IVL_TS sputumObservationEffectiveTime = Datatypes.createIVL_TS(TIME_STAMP_ENCOUNTER);
+		ANY sputumValue = Datatypes.createCD("9861002", SNOMED_OID, SNOMED_SYSTEM_NAME, "Streptococcus pneumoniae");
 		
-		String idObservationSectionText1 = "Collected " + timeStampFormat(TIME_STAMP_ENCOUNTER, TEST_DATE_FORMAT) + " " + organizerSpecimenType.getDisplayName() + " - " + idObservationCode.getDisplayName() + ", Streptococcus pneumoniae";
+		String sputumObservationSectionText1 = "Collected " + timeStampFormat(TIME_STAMP_ENCOUNTER, TEST_DATE_FORMAT) + " " + organizerSpecimenType.getDisplayName() + " - " + sputumObservationCode.getDisplayName() + ", Streptococcus pneumoniae";
 	
-		StrepPneumoResultObservation idObservation = SP.createStrepPneumoResultObservation().init();
-		organizer.addObservation(idObservation);
+		StrepPneumoResultObservation sputumObservation = SP.createStrepPneumoResultObservation().init();
+		organizer.addObservation(sputumObservation);
 		
-		for (int i=0; i < idObservationIdList.size(); i++) {
-			idObservation.getIds().add(idObservationIdList.get(i));
+		for (int i=0; i < sputumObservationIdList.size(); i++) {
+			sputumObservation.getIds().add(sputumObservationIdList.get(i));
 		}
-		if (idObservationCode != null) idObservation.setCode(idObservationCode);
-		if (idObservationEffectiveTime != null) idObservation.setEffectiveTime(idObservationEffectiveTime);
-		if (idValue != null) idObservation.getValues().add(idValue);
+		if (sputumObservationCode != null) sputumObservation.setCode(sputumObservationCode);
+		if (sputumObservationEffectiveTime != null) sputumObservation.setEffectiveTime(sputumObservationEffectiveTime);
+		if (sputumValue != null) sputumObservation.getValues().add(sputumValue);
 		
 		// Result Observation Informant (required)
-		II idObservationInformantId = Datatypes.createII(NullFlavor.NI);
+		II sputumObservationInformantId = Datatypes.createII(NullFlavor.NI);
 		
-		ON idObservationOrganizationName = Datatypes.createON();
-		idObservationOrganizationName.addText("Fort Myers Hospital Laboratory");	
+		ON sputumObservationOrganizationName = Datatypes.createON();
+		sputumObservationOrganizationName.addText("Fort Myers Hospital Laboratory");	
 		
-		AD idObservationOrganizationAddress = Datatypes.createAD();
-		idObservationOrganizationAddress.addStreetAddressLine("175 Coral Drive");
-		idObservationOrganizationAddress.addCity(TEST_CITY); 
-		idObservationOrganizationAddress.addState(TEST_STATE);
-		idObservationOrganizationAddress.addPostalCode(TEST_POSTALCODE);	
+		AD sputumObservationOrganizationAddress = Datatypes.createAD();
+		sputumObservationOrganizationAddress.addStreetAddressLine("175 Coral Drive");
+		sputumObservationOrganizationAddress.addCity(TEST_CITY); 
+		sputumObservationOrganizationAddress.addState(TEST_STATE);
+		sputumObservationOrganizationAddress.addPostalCode(TEST_POSTALCODE);	
 		
-		TEL idObservationOrganizationTelecom = Datatypes.createTEL(TEST_TELECOM);
+		TEL sputumObservationOrganizationTelecom = Datatypes.createTEL(TEST_TELECOM);
 		
-		Informant12 idObservationInformant = CDA.createInformant12();
-		AssignedEntity idObservationInformantEntity = CDA.createAssignedEntity();
-		Organization idObservationOrganization = CDA.createOrganization();
-		idObservationInformantEntity.getIds().add(idObservationInformantId);
-		idObservationInformantEntity.getAddrs().add(idObservationOrganizationAddress);
-		idObservationInformantEntity.getTelecoms().add(idObservationOrganizationTelecom);
-		idObservationOrganization.getNames().add(idObservationOrganizationName);
-		idObservationInformantEntity.getRepresentedOrganizations().add(idObservationOrganization);
-		idObservationInformant.setAssignedEntity(idObservationInformantEntity);
-		idObservation.getInformants().add(idObservationInformant);
+		Informant12 sputumObservationInformant = CDA.createInformant12();
+		AssignedEntity sputumObservationInformantEntity = CDA.createAssignedEntity();
+		Organization sputumObservationOrganization = CDA.createOrganization();
+		sputumObservationInformantEntity.getIds().add(sputumObservationInformantId);
+		sputumObservationInformantEntity.getAddrs().add(sputumObservationOrganizationAddress);
+		sputumObservationInformantEntity.getTelecoms().add(sputumObservationOrganizationTelecom);
+		sputumObservationOrganization.getNames().add(sputumObservationOrganizationName);
+		sputumObservationInformantEntity.getRepresentedOrganizations().add(sputumObservationOrganization);
+		sputumObservationInformant.setAssignedEntity(sputumObservationInformantEntity);
+		sputumObservation.getInformants().add(sputumObservationInformant);
 		
 		
 		// create <text> block
@@ -1538,13 +1538,13 @@ public class StrepPneumoCDACreate {
 		List<String> items = new ArrayList<String>();
 		
 		// lab observation 1
-		items.add(stainObservationSectionText1);
+		items.add(serumObservationSectionText1);
 		 
 		// lab observation 2
-		items.add(idObservationSectionText1);
+		items.add(sputumObservationSectionText1);
 		
 		// laboratory
-		items.add(stainObservationSectionText2);
+		items.add(serumObservationSectionText2);
 
 
 		buffer = new StringBuffer();

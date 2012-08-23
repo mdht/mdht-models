@@ -3,7 +3,7 @@
   <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
   <templateId root="2.16.840.1.113883.10.20.15"/>
   <templateId root="2.16.840.1.113883.10.20.15.1.12"/>
-  <id root="6f46ec33-29df-493c-848a-070130b186d3"/>
+  <id root="29235227-791e-468f-b686-fce41f54eeb0"/>
   <code code="55751-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Public Health Case Report"/>
   <title>Public Health Case Report - Streptococcus pneumoniae</title>
   <effectiveTime value="20120226151500-0500"/>
@@ -106,7 +106,7 @@
               <code code="413350009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT">
                 <qualifier>
                   <name code="246090004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Associated finding"/>
-                  <value code="TBD" codeSystem="2.16.840.1.114222.4.5.274" codeSystemName="PHIN VADS" displayName="Streptococcus pneumoniae exposure"/>
+                  <value code="444400000" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Exposure to Streptococcus"/>
                 </qualifier>
                 <qualifier>
                   <name code="408729009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Finding context"/>
@@ -374,8 +374,8 @@
           <title>Relevant diagnostic tests and/or laboratory data</title>
           <text><list>
                         <caption>Relevant Diagnostic Tests and/or Laboratory Data Section</caption>
-                        <item>Collected 2012/02/22 Coughed Sputum - Gram Stain, Gram-positive diplococcus</item>
-                        <item>Collected 2012/02/22 Coughed Sputum - Bacteria ID test Islt Ql Cult, Streptococcus pneumoniae</item>
+                        <item>Collected 2012/02/22 Coughed Sputum - S pneum Ag Ser Ql, Penicillin resistant Streptococcus pneumoniae</item>
+                        <item>Collected 2012/02/22 Coughed Sputum - S pneum Ag Spt Ql, Streptococcus pneumoniae</item>
                         <item>Fort Myers Hospital Laboratory, 175 Coral Drive, Fort Myers, FL 06475 (tel:+1-239-555-5401)</item>
             </list></text>
           <entry typeCode="DRIV">
@@ -409,10 +409,10 @@
                   <templateId root="2.16.840.1.113883.10.20.15.3.58"/>
                   <templateId root="2.16.840.1.113883.10.20.15.3.128"/>
                   <id nullFlavor="NI"/>
-                  <code code="664-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Gram Stain"/>
+                  <code code="11086-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="S pneum Ag Ser Ql"/>
                   <statusCode code="completed"/>
                   <effectiveTime value="20120222080000-0500"/>
-                  <value xsi:type="CD" code="11471007" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Gram-positive diplococcus"/>
+                  <value xsi:type="CD" code="409807008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Penicillin resistant Streptococcus pneumoniae"/>
                   <informant>
                     <assignedEntity>
                       <id nullFlavor="NI"/>
@@ -431,7 +431,7 @@
                   <templateId root="2.16.840.1.113883.10.20.15.3.58"/>
                   <templateId root="2.16.840.1.113883.10.20.15.3.128"/>
                   <id nullFlavor="NI"/>
-                  <code code="45335-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Bacteria ID test Islt Ql Cult"/>
+                  <code code="31968-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="S pneum Ag Spt Ql"/>
                   <statusCode code="completed"/>
                   <effectiveTime value="20120222080000-0500"/>
                   <value xsi:type="CD" code="9861002" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Streptococcus pneumoniae"/>
